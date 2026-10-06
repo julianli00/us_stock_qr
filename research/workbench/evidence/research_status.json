@@ -1,0 +1,65 @@
+{
+  "capital_usd": 10000,
+  "common_research_end": "2026-10-05",
+  "current_broker_positions_included": false,
+  "current_trade_ideas": [],
+  "evidence": {
+    "all_configurations": "evidence/all_52_summary.json",
+    "trial_inventory": "evidence/backtest_inventory.json"
+  },
+  "exported_at": "2026-10-06T15:00:54.461020+00:00",
+  "incumbent_stock_strategy_replacement_authorized": false,
+  "independent_accounting_paths": 212,
+  "investment_objective_verified": false,
+  "joint_base_and_stress_pass_count": 0,
+  "joint_base_pass_count": 0,
+  "limitations": [
+    "Retrospectively chosen ETF methods are not evidence of independent future alpha.",
+    "Some configurations are data/capital variants rather than independent statistical experiments.",
+    "Some high-fee stress paths stopped when fees became unfundable; they cannot qualify.",
+    "The incumbent Top30 saved backtest uses different capital, universe, cutoff and possibly Sharpe convention.",
+    "The original publication and broker configurations are not included in this source bundle."
+  ],
+  "optimization_priorities": [
+    "Refresh and date-check incumbent market/signal inputs before generating actionable reports.",
+    "Preserve Top30 stock research, top-five early opportunity watch ideas, and user holdings as distinct products.",
+    "Compare matching dates, capital, risk-free Sharpe, transaction costs, and point-in-time universes.",
+    "Preregister new hypotheses and report all failures; do not erase trial history or tune old holdouts.",
+    "Separate real forward observations and executions from historical proxies and hypothetical recommendations."
+  ],
+  "order_authority": false,
+  "original_forward_state": {
+    "last_observed_session": "2026-09-30",
+    "missing_dates_were_not_backfilled": true,
+    "observed_forward_days": 2,
+    "status": "paused_continuity_and_data_gap"
+  },
+  "role": "research_archive_not_current_trade_recommendation",
+  "schema_version": 1,
+  "source_system": "us-quant research workbench",
+  "strategy_id": "us_quant_research_catalogue_52",
+  "targets": {
+    "beat_spy": true,
+    "cagr_strictly_above": 0.2,
+    "excess_sharpe_strictly_above": 1.0,
+    "max_drawdown_at_most": 0.15,
+    "same_rule_must_pass_10_and_5_years": true
+  },
+  "trial_count": 52,
+  "window_definitions": [
+    {
+      "calendar_anchor": "2016-10-05",
+      "first_return_session": "2016-10-06",
+      "last_session": "2026-10-05",
+      "sessions": 2512,
+      "years": 10
+    },
+    {
+      "calendar_anchor": "2021-10-05",
+      "first_return_session": "2021-10-06",
+      "last_session": "2026-10-05",
+      "sessions": 1254,
+      "years": 5
+    }
+  ]
+}

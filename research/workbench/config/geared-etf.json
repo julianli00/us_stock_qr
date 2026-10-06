@@ -1,0 +1,98 @@
+{
+  "protocol_version": 1,
+  "registered_on": "2026-09-30",
+  "purpose": "Bounded round testing actual daily-reset 2x ETFs with strict volatility, drawdown, cost, and reused-history disclosures.",
+  "data_start": "2007-01-03",
+  "simulation_start": "2008-01-02",
+  "development_end": "2021-12-31",
+  "holdout_start": "2022-01-03",
+  "as_of": "2026-09-29",
+  "symbols": ["SPY", "QQQ", "QLD", "SSO", "GLD", "TLT", "IEF", "SHY"],
+  "risk_free_symbol": "^IRX",
+  "primary_benchmark": "SPY",
+  "secondary_benchmark": "QQQ",
+  "initial_capital": 10000.0,
+  "cash_interest": 0.0,
+  "cost_bps_per_side": 7.5,
+  "commission_per_order": 1.0,
+  "execution_delay_sessions": 1,
+  "cash_reserve": 0.02,
+  "momentum_lookbacks": [63, 126, 252],
+  "trend_lookback": 200,
+  "volatility_lookback": 63,
+  "selection": {
+    "training_years": 6,
+    "test_years": 2,
+    "first_test_year": 2014,
+    "max_training_drawdown": 0.15,
+    "minimum_training_cagr": 0.0,
+    "ranking": ["sharpe", "cagr", "candidate_id"],
+    "no_eligible_candidate": "cash",
+    "final_training_start": "2016-01-01"
+  },
+  "targets": {
+    "cagr_strictly_above": 0.20,
+    "sharpe_strictly_above": 1.0,
+    "max_drawdown_at_most": 0.15,
+    "beat_primary_benchmark": true,
+    "minimum_holdout_sessions": 504,
+    "minimum_forward_paper_sessions": 63
+  },
+  "stress": {
+    "cost_bps_per_side": 30.0,
+    "extra_execution_delay_sessions": 1,
+    "bootstrap_samples": 1000,
+    "bootstrap_block_sessions": 21,
+    "bootstrap_seed": 20260930
+  },
+  "candidates": [
+    {
+      "id": "qld_trend_15",
+      "universe": ["QLD"],
+      "kind": "trend",
+      "top_k": 1,
+      "max_weight": 0.98,
+      "target_volatility": 0.15
+    },
+    {
+      "id": "qld_trend_18",
+      "universe": ["QLD"],
+      "kind": "trend",
+      "top_k": 1,
+      "max_weight": 0.98,
+      "target_volatility": 0.18
+    },
+    {
+      "id": "geared_top2_15",
+      "universe": ["QLD", "SSO", "GLD", "TLT"],
+      "kind": "momentum",
+      "top_k": 2,
+      "max_weight": 0.50,
+      "target_volatility": 0.15
+    },
+    {
+      "id": "geared_top2_18",
+      "universe": ["QLD", "SSO", "GLD", "TLT"],
+      "kind": "momentum",
+      "top_k": 2,
+      "max_weight": 0.50,
+      "target_volatility": 0.18
+    },
+    {
+      "id": "geared_top1_18",
+      "universe": ["QLD", "SSO", "GLD", "TLT"],
+      "kind": "momentum",
+      "top_k": 1,
+      "max_weight": 0.98,
+      "target_volatility": 0.18
+    },
+    {
+      "id": "diversified_geared_trend_12",
+      "universe": ["QLD", "SSO", "GLD", "TLT", "IEF", "SHY"],
+      "kind": "trend",
+      "top_k": 6,
+      "max_weight": 0.30,
+      "target_volatility": 0.12
+    }
+  ]
+}

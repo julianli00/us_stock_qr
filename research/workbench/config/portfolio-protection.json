@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "registered_on": "2026-10-06",
+  "prior_disclosed_trials": 48,
+  "data_start": "2010-03-01",
+  "as_of": "2026-10-05",
+  "horizons_years": [10, 5],
+  "capital_usd": 10000.0,
+  "cash_reserve": 0.02,
+  "defensive_asset": "BIL",
+  "risk_symbols": ["TQQQ", "UPRO"],
+  "floor_fraction_of_high_water": 0.90,
+  "rebalance_band": 0.01,
+  "cost_bps_per_side": 7.5,
+  "stress_cost_bps_per_side": 30.0,
+  "commission_per_order": 1.0,
+  "base_delay_sessions": 1,
+  "stress_delay_sessions": 2,
+  "candidates": [
+    {"id": "tipp_tqqq_m3", "risk_asset": "TQQQ", "cushion_multiplier": 3.0},
+    {"id": "tipp_tqqq_m6", "risk_asset": "TQQQ", "cushion_multiplier": 6.0},
+    {"id": "tipp_upro_m3", "risk_asset": "UPRO", "cushion_multiplier": 3.0},
+    {"id": "tipp_upro_m6", "risk_asset": "UPRO", "cushion_multiplier": 6.0}
+  ],
+  "rules": {
+    "floor": "At each close, floor is 90% of the maximum observed closing account equity, including initial capital. No annual or post-loss reset.",
+    "risk_weight": "Cushion multiplier times positive equity-minus-floor divided by equity, capped to the 98% investable budget.",
+    "defense": "Remaining investable weight goes to actual BIL ETF, with a separate 2% zero-interest cash reserve at rebalance.",
+    "decision_timing": "Compute only at completed closes; each signal executes after one session (base) or two sessions (stress). A later close cannot cancel a queued signal retrospectively.",
+    "rebalance_trigger": "Risk-weight deviation from the computed target at least one percentage point, or complete risk exit when the floor is breached.",
+    "initial_entry": "Each ten/five-year account starts with USD10,000 and a known initial floor; initial allocation is decided at the session immediately before the evaluation window.",
+    "stress_state": "Higher cost and delay alter actual account state and hence future rule outputs. Same feedback law, not artificially held-identical target weights.",
+    "numerical_no_trade": "If all intended pre-cost dollar changes are at most 1e-6 USD, there is no order and no fixed commission."
+  },
+  "disclosures": [
+    "TIPP-inspired discrete-time ratcheting-floor implementation, not a claim of reproducing the original paper's exact product, data, or returns.",
+    "Original publication metadata is verified; publisher full-text access was unavailable.",
+    "TQQQ and UPRO have embedded daily leverage; no broker borrowing is used.",
+    "A theoretical floor is not guaranteed with discrete trading, opening gaps, fees, and a non-guaranteed bond ETF.",
+    "Floor breaches and prolonged low risky exposure are measured, not repaired by new capital or history resets.",
+    "The strategy must still pass all existing ten/five-year return, Sharpe, drawdown and SPY gates; the 90% floor is only a mechanism hypothesis.",
+    "Recent history was previously examined and cannot be relabeled as an independent holdout."
+  ],
+  "parameter_search": false,
+  "broker_order_authority": false,
+  "investment_objective_verified": false
+}

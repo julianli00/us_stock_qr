@@ -1,0 +1,23 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.pytest_cache/
+.mypy_cache/
+data/raw/sec_companyfacts/
+.env
+.env.local
+.env.*.local
+
+# Local research inputs, delivery state, and user-maintained financial records.
+/artifacts/
+/data/
+/reports/
+/runtime/
+/config/account_config.json
+/config/ibkr_pro_account_config.json
+/scripts/import_personal_signal_existing_holdings_fifo_v1.py
+**/.venv/
+**/.pytest_cache/
+**/.ruff_cache/
+**/*.egg-info/

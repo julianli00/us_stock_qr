@@ -1,0 +1,28 @@
+# Runtime/test constraints observed on macOS arm64, Python 3.10, 2026-09-29.
+# Install with: python -m pip install -e '.[paper,dev]' -c requirements.lock
+# Build-system dependencies are resolved separately by pip's isolated build.
+aeventkit==2.1.0
+certifi==2025.1.31
+charset-normalizer==3.4.1
+exceptiongroup==1.2.2
+exchange-calendars==4.13.2
+ib-async==2.1.0
+idna==3.10
+iniconfig==2.0.0
+korean-lunar-calendar==0.4.0
+nest-asyncio==1.6.0
+numpy==2.2.6
+packaging==24.2
+pandas==2.3.3
+pluggy==1.5.0
+pyluach==2.3.0
+pytest==8.3.4
+python-dateutil==2.9.0.post0
+pytz==2024.1
+requests==2.33.1
+ruff==0.8.3
+six==1.17.0
+tomli==2.2.1
+toolz==1.0.0
+tzdata==2025.3
+urllib3==2.3.0

@@ -1,0 +1,24 @@
+{
+  "host": "127.0.0.1",
+  "port": 7497,
+  "client_id": 29,
+  "account": "DU_REPLACE_WITH_YOUR_PAPER_ACCOUNT",
+  "paper_acknowledged": false,
+  "allow_submit": false,
+  "initial_equity_usd": 10000.0,
+  "max_gross_exposure": 0.98,
+  "max_position_weight": 0.40,
+  "max_order_notional": 4000.0,
+  "max_daily_loss": 0.02,
+  "max_drawdown": 0.10,
+  "max_spread_bps": 20.0,
+  "max_quote_age_seconds": 15,
+  "limit_buffer_bps": 5.0,
+  "minimum_trade_notional": 100.0,
+  "commission_reserve_per_order": 1.0,
+  "execution_window_minutes": 15,
+  "allowed_symbols": ["SPY", "QQQ", "IWM", "EFA", "EEM", "IEF", "TLT", "GLD", "SHY"],
+  "state_file": "runtime/paper.sqlite3",
+  "kill_switch_file": "runtime/STOP"
+}
+

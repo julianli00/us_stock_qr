@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "files": [
+    "LICENSE",
+    ".gitignore",
+    "README.md",
+    "requirements-reporting.txt",
+    "config/nyse_calendar.json",
+    "config/research_strategy_registry.json",
+    "config/publication_allowlist.json",
+    "docs/research_progress.json",
+    "docs/integration/STATUS.md",
+    "src/us_quant/__init__.py",
+    "src/us_quant/paths.py",
+    "src/us_quant/research_reporting.py",
+    "src/us_quant/research_delivery.py",
+    "src/us_quant/slack_signal_notifier.py",
+    "scripts/send_slack_signal_once.py",
+    "scripts/slack_signal_monitor.py",
+    "scripts/test_research_reporting_guard.py",
+    "scripts/check_publication.py"
+  ],
+  "bundle_manifest": "research/workbench/IMPORT_MANIFEST.json",
+  "bundle_manifest_sha256": "3b2ef6789348ac88b8fdf82805415f518da85bb72c1d652735e7aeaaa63666b6"
+}

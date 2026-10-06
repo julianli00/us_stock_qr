@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "canonical_repository": "julianli00/us_stock_qr",
+  "baseline_checked_on": "2026-10-06",
+  "incumbent": {
+    "origin": "us_stock_qr",
+    "strategy_id": "user_nolev_top30_m126_invvol_m",
+    "price_session": "2026-05-08",
+    "signal_session": "2026-05-08",
+    "universe_size": 699,
+    "top_n": 30,
+    "momentum_days": 126,
+    "volatility_days": 63,
+    "rebalance": "last_available_row_of_month",
+    "historical_result": {
+      "start": "2015-01-02",
+      "end": "2026-05-08",
+      "cagr": 0.2954317770095063,
+      "sharpe": 1.1866577419239672,
+      "max_drawdown": 0.2831093559417621,
+      "independent_oos": false,
+      "matched_10y_5y_evaluation": false
+    },
+    "source_hashes": {
+      "user_ibkr_best_config.json": "9ba95a05e31b887362c4627cb61664d4890e8e70a0642e59c4d30be994dfa2d6",
+      "user_ibkr_no_leverage_status.json": "b93782aa23bee5998f549b63088fe515dd59a5698f411b476e7ed58ff0b2d4ad",
+      "run_user_ibkr_no_leverage_iteration.py": "11d0d1161ae287e48989d592fa1c90820d3bf49d236cd7907ea02a6c23c44384",
+      "run_all_stock_pool_iteration.py": "2eb267f05330c425d3b5409e3c38269ff7bee9a7fccec95c5841eaf450711e0a"
+    }
+  },
+  "early_watch": {
+    "origin": "us_stock_qr",
+    "strategy_id": "early_accumulation_signal_v1",
+    "price_session": "2026-08-20",
+    "signal_session": "2026-08-20",
+    "news_start": "2026-09-07",
+    "news_end": "2026-09-21",
+    "reddit_session": "2026-09-21",
+    "published_and_known_at_proven": false,
+    "historical_news_reddit_full_year_available": false,
+    "legacy_candidate_count": 12,
+    "new_idea_limit": 5,
+    "source_sha256": "98050fe7c9a7127c9e6fe7082fe7ff27ca0f0b1e68aea656558b68ae8875408e"
+  },
+  "manual_holdings": {
+    "included": false,
+    "authority": "private_user_maintained_records"
+  },
+  "automatic_retuning_enabled": false,
+  "order_authority": false
+}

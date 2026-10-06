@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "registered_on": "2026-10-06",
+  "prior_disclosed_trials": 46,
+  "as_of": "2026-10-05",
+  "horizons_years": [10, 5],
+  "capital_usd": 10000.0,
+  "cash_reserve": 0.02,
+  "warmup_sessions": 6,
+  "rebalance": "daily_after_close_next_open",
+  "parameter_search": false,
+  "candidates": [
+    {"id": "olmar_w5_eps10", "method": "olmar", "window": 5, "epsilon": 10.0},
+    {"id": "pamr_eps05", "method": "pamr", "window": 1, "epsilon": 0.5}
+  ],
+  "universe": "The 19 unleveraged ETFs already registered in config/dual-horizon.json; no new selected winners.",
+  "execution": "Signals observe the current adjusted close and take effect at the following session open; costs use actual weight drift. No close-to-same-close fill.",
+  "state": "Equal initial algorithm weights; sequential updates from the start of the fixed 2010 history; no reset or re-fit for the five-year window.",
+  "deviations": [
+    "Port of the public update rules; invalid/nonfinite values are rejected instead of repaired.",
+    "The initial six price observations are warmup; the algorithm then starts from uniform weights.",
+    "2% fixed idle cash is outside the unit-simplex algorithm weights.",
+    "No allocation cap beyond long-only/unit simplex, so research can expose concentration risk explicitly.",
+    "Costs do not feed back into model updates; target weights remain identical between base and stress.",
+    "Zero-cost results are diagnostic only, never substituted for acceptance."
+  ],
+  "upstream": {
+    "repository": "OLPS/OLPS",
+    "commit": "9120783cd59a7966b0f78e2b5668030a4378b8af",
+    "license": "Apache-2.0",
+    "paper": "https://arxiv.org/abs/1206.4626",
+    "toolbox_reference": "Bin Li, Doyen Sahoo, Steven C.H. Hoi (2015), OLPS: A Toolbox for On-Line Portfolio Selection."
+  },
+  "research_history_previously_viewed": true,
+  "broker_order_authority": false,
+  "investment_objective_verified": false
+}
