@@ -40,6 +40,12 @@ def publication_paths(root: Path = ROOT) -> list[str]:
 
 def check(staged: bool = False, root: Path = ROOT) -> list[str]:
     allowed = publication_paths(root)
+    tracked_result = subprocess.run(
+        ["git", "--no-optional-locks", "ls-files", "-z"], cwd=root, capture_output=True, check=True,
+    )
+    tracked = {name.decode() for name in tracked_result.stdout.split(b"\0") if name}
+    if tracked - set(allowed):
+        raise RuntimeError("unapproved_tracked_publication_path")
     if staged:
         proc = subprocess.run(
             ["git", "--no-optional-locks", "diff", "--cached", "--name-only", "-z", "--diff-filter=ACMR"],

@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "strategy_id": "user_nolev_top30_m126_invvol_m",
+  "extracted_from": "scripts/run_all_stock_pool_iteration.py",
+  "original_source_sha256": "2eb267f05330c425d3b5409e3c38269ff7bee9a7fccec95c5841eaf450711e0a",
+  "original_function_ast_sha256": {
+    "rebalance_dates": "ae9c361fc15765d368989e7ad155764a4c4c1604178e3e1dbbdc9f01b242e123",
+    "tradable_on_date": "926ee1b21762cdf3183b63ef8b4f0f80feb9efdc594905372493807ee76ac8f9",
+    "inverse_vol_weights": "f3a5e25ad254728b7e105667324dd371078fd281d281ce3c47e7388c638efbef",
+    "build_all_stock_weights": "2482733cbe57c2ec0566bbb67f6800694e496e9184454cfb13eb6430d071179f"
+  },
+  "byte_preserved_files": {
+    "config/incumbent_top30.json": "9ba95a05e31b887362c4627cb61664d4890e8e70a0642e59c4d30be994dfa2d6",
+    "src/us_quant/us_realistic_backtest_engine.py": "0df1ec66df0c8acf3afb29c93c40a5ee54ee8acd4eee30c3c86cfb2e278a923e",
+    "scripts/run_early_accumulation_signal_v1.py": "98050fe7c9a7127c9e6fe7082fe7ff27ca0f0b1e68aea656558b68ae8875408e"
+  },
+  "preserved_quirks": [
+    "Monthly selection uses each month's last available row, including a partial last month.",
+    "Missing VIX passes the historical risk filter.",
+    "Risk filter is evaluated at rebalance dates and weights are forward-filled between them.",
+    "Static saved 699-stock universe is not proof of point-in-time membership.",
+    "The legacy early scanner's date-only external evidence is not eligible for canonical watch reporting."
+  ],
+  "automatic_execution_enabled": false,
+  "historical_result_reproduced_in_this_integration": false
+}

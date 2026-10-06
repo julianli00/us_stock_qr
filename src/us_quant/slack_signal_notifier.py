@@ -9,7 +9,6 @@ from pathlib import Path
 from typing import Any
 
 import pandas as pd
-import requests
 from zoneinfo import ZoneInfo
 
 from src.us_quant.paths import ARTIFACT_DIR, ROOT
@@ -1307,6 +1306,13 @@ def build_signal_message(config: SlackSignalConfig) -> tuple[str, str, dict[str,
         dry_run=True,
     )
     return result["text"], result["digest"], {key: value for key, value in result.items() if key != "text"}
+
+
+def build_legacy_single_stock_artifact(config: SlackSignalConfig) -> tuple[str, str, dict[str, Any]]:
+    """Preserve the independent Discord selection artifact, not a Slack send path."""
+    if not config.single_stock:
+        raise ValueError("legacy_artifact_requires_single_stock")
+    return _legacy_build_signal_message(config)
 
 
 def _legacy_build_signal_message(config: SlackSignalConfig) -> tuple[str, str, dict[str, Any]]:

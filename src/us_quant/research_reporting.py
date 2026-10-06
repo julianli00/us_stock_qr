@@ -22,6 +22,8 @@ SHANGHAI = ZoneInfo("Asia/Shanghai")
 PRIVATE_KEYS = {
     "account_id", "account_number", "holdings", "positions", "fills", "orders",
     "webhook_url", "authorization", "api_key", "access_token", "password",
+    "account_equity", "net_liquidation", "shares", "quantity", "current_shares",
+    "average_cost", "cost_basis", "unrealized_pnl",
 }
 SECRET_TEXT = re.compile(
     r"hooks\.slack(?:-gov)?\.com|discord(?:app)?\.com/api/webhooks"
@@ -29,6 +31,33 @@ SECRET_TEXT = re.compile(
     r"|(?:authorization|api[_-]?key|access[_-]?token|password)\s*[:=]",
     re.IGNORECASE,
 )
+BLOCKERS_ZH = {
+    "top30_price_session_mismatch": "Top30行情仍停在历史截止日，未覆盖本次已收盘交易日。",
+    "top30_signal_session_mismatch": "Top30信号尚未按本次交易日重新验证，不能当作今日新信号。",
+    "early_watch_price_session_mismatch": "旧早期观察行情已过期，与本次交易日不一致。",
+    "early_watch_signal_session_mismatch": "旧早期观察信号已过期，不能改写日期后重新推荐。",
+    "early_watch_future_news_vs_signal": "资讯晚于旧信号日期，不能证明当时已知的催化。",
+    "early_watch_known_at_unproven": "旧资讯缺少首次可得时间，点时证据尚未证明。",
+    "no_hash_verified_watch_snapshot": "尚无通过来源哈希与同截止日校验的独立观察快照。",
+    "source_archive_endpoint_mismatch": "导入研究的历史终点不是本次交易日，仍只作为历史证据。",
+    "watch_input_missing": "独立观察所需输入缺失。",
+    "watch_input_hash_mismatch": "独立观察输入与来源哈希不一致。",
+    "watch_input_manifest_missing": "独立观察缺少完整的来源清单。",
+    "watch_identity_or_session_mismatch": "独立观察的策略身份、交易日或权限声明不符合约定。",
+    "watch_price_session_mismatch": "至少一项必要价格不属于本次交易日。",
+    "watch_required_price_missing": "候选或基准标的缺少必要价格，不能用全表最新日期代替完整覆盖。",
+    "watch_price_known_at_invalid": "价格首次可得时间不在规定的决策窗口内。",
+    "watch_event_known_at_invalid": "事件发布时间或首次可得时间不满足点时约束。",
+    "watch_universe_not_point_in_time": "历史股票池的点时身份或可得时间尚未证明。",
+    "watch_decision_outside_cutoff": "观察决策必须在收盘数据缓冲后、下次开盘前，且不能晚于报告生成时间。",
+    "watch_next_open_unavailable": "日历未覆盖下次开盘时间，暂不能验证观察决策窗口。",
+    "watch_not_new_session": "观察不是本次交易日首次出现，不能作为新增想法。",
+    "timestamp_missing": "必要的发布时间或首次可得时间缺失。",
+    "timestamp_invalid": "必要时间字段格式无效。",
+    "timestamp_timezone_missing": "必要时间字段缺少时区。",
+    "private_fields_rejected": "输入含不应进入研究日报的私人字段，已拒绝使用。",
+    "credential_text_rejected": "输入含敏感内容，已拒绝使用。",
+}
 
 
 class ReportError(RuntimeError):
@@ -36,9 +65,11 @@ class ReportError(RuntimeError):
 
 
 def canonical_hash(value: Any) -> str:
-    return hashlib.sha256(
-        json.dumps(value, sort_keys=True, separators=(",", ":"), allow_nan=False).encode()
-    ).hexdigest()
+    try:
+        data = json.dumps(value, sort_keys=True, separators=(",", ":"), allow_nan=False).encode()
+    except (TypeError, ValueError):
+        raise ReportError("provenance_serialization_invalid") from None
+    return hashlib.sha256(data).hexdigest()
 
 
 def checked_public(value: Any) -> None:
@@ -105,9 +136,12 @@ def positive_number(value: Any) -> float:
 
 
 def source_url(value: Any) -> str:
-    if not isinstance(value, str):
+    if not isinstance(value, str) or len(value) > 2048:
         raise ReportError("evidence_url_missing")
-    parsed = urlsplit(value)
+    try:
+        parsed = urlsplit(value)
+    except ValueError:
+        raise ReportError("evidence_url_rejected") from None
     if (
         parsed.scheme != "https" or not parsed.hostname or parsed.username or parsed.password
         or SECRET_TEXT.search(value) or any(char in value for char in "<>|\r\n")
@@ -122,7 +156,8 @@ class MarketSession:
     day: str
     opened: datetime
     closed: datetime
-    decision_deadline: datetime
+    decision_not_before: datetime
+    next_open: datetime | None
     report_after: datetime
 
 
@@ -132,6 +167,9 @@ class ExchangeCalendar:
             payload.get("schema_version") != 1 or payload.get("calendar_id") != "XNYS"
             or payload.get("provider_version") != "4.13.2"
             or payload.get("sessions_sha256") != CALENDAR_HASH
+            or payload.get("coverage_start") != "2024-01-01"
+            or payload.get("coverage_end") != "2028-12-31"
+            or payload.get("data_finalization_buffer_minutes") != 30
         ):
             raise ReportError("calendar_identity_invalid")
         rows = payload.get("sessions")
@@ -144,7 +182,7 @@ class ExchangeCalendar:
         self.end = date.fromisoformat(session_date(payload.get("coverage_end")))
         self.sessions: dict[str, MarketSession] = {}
         previous = ""
-        for row in rows:
+        for index, row in enumerate(rows):
             day = session_date(row.get("session"))
             opened, closed = instant(row.get("open_utc")), instant(row.get("close_utc"))
             if day <= previous or opened >= closed or closed.astimezone(NY).date().isoformat() != day:
@@ -153,7 +191,10 @@ class ExchangeCalendar:
             due = datetime.combine(close_local.date(), time(6), SHANGHAI)
             if due <= close_local:
                 due += timedelta(days=1)
-            self.sessions[day] = MarketSession(day, opened, closed, closed + timedelta(minutes=30), due)
+            next_open = instant(rows[index + 1].get("open_utc")) if index + 1 < len(rows) else None
+            self.sessions[day] = MarketSession(
+                day, opened, closed, closed + timedelta(minutes=30), next_open, due,
+            )
             previous = day
 
     def latest_completed(self, now: datetime) -> MarketSession:
@@ -187,6 +228,8 @@ def load_inputs(root: Path) -> ReportInputs:
     watch_error = None
     if snapshot_path.exists():
         try:
+            if watch_dir.is_symlink() or snapshot_path.is_symlink():
+                raise ReportError("watch_input_path_rejected")
             watch = read_json(snapshot_path)
             hashes = watch.get("input_sha256")
             if not isinstance(hashes, dict) or set(hashes) != {"prices", "events", "universe"}:
@@ -211,7 +254,7 @@ def load_inputs(root: Path) -> ReportInputs:
 
 
 def validate_watch(
-    snapshot: dict[str, Any], session: MarketSession, seen: Iterable[str],
+    snapshot: dict[str, Any], session: MarketSession, seen: Iterable[str], *, now: datetime,
 ) -> list[dict[str, Any]]:
     checked_public(snapshot)
     if (
@@ -222,11 +265,15 @@ def validate_watch(
     ):
         raise ReportError("watch_identity_or_session_mismatch")
     decision = instant(snapshot.get("decision_at"))
-    if not session.closed <= decision <= session.decision_deadline:
+    if session.next_open is None:
+        raise ReportError("watch_next_open_unavailable")
+    if not session.decision_not_before <= decision < session.next_open or decision > now:
         raise ReportError("watch_decision_outside_cutoff")
     inputs = snapshot.get("inputs")
     if not isinstance(inputs, dict) or set(inputs) != {"prices", "events", "universe"}:
         raise ReportError("watch_inputs_missing")
+    if not all(isinstance(value, dict) for value in inputs.values()):
+        raise ReportError("watch_inputs_invalid")
     hashes = snapshot.get("input_sha256")
     if (
         not isinstance(hashes, dict) or set(hashes) != set(inputs)
@@ -249,6 +296,8 @@ def validate_watch(
     if not all(isinstance(value, list) for value in (price_rows, event_rows, ideas)):
         raise ReportError("watch_rows_invalid")
     for row in price_rows:
+        if not isinstance(row, dict):
+            raise ReportError("watch_price_row_invalid")
         symbol = row.get("ticker")
         if not isinstance(symbol, str) or symbol in prices:
             raise ReportError("watch_price_identity_invalid")
@@ -263,6 +312,8 @@ def validate_watch(
     required = {"SPY", "QQQ", "^VIX"}
     events = {}
     for event in event_rows:
+        if not isinstance(event, dict):
+            raise ReportError("watch_event_row_invalid")
         event_id = event.get("event_id")
         if not isinstance(event_id, str) or event_id in events:
             raise ReportError("watch_event_identity_invalid")
@@ -275,6 +326,8 @@ def validate_watch(
     seen_keys = set(seen)
     tickers = set()
     for idea in ideas:
+        if not isinstance(idea, dict):
+            raise ReportError("watch_idea_row_invalid")
         ticker = idea.get("ticker")
         signal_id = idea.get("signal_id")
         if (
@@ -288,7 +341,7 @@ def validate_watch(
         if idea.get("signal_session") != session.day or idea.get("first_observed_session") != session.day:
             raise ReportError("watch_not_new_session")
         event_ids = idea.get("event_ids")
-        if not isinstance(event_ids, list) or not event_ids:
+        if not isinstance(event_ids, list) or not event_ids or not all(isinstance(key, str) for key in event_ids):
             raise ReportError("watch_evidence_missing")
         if any(key not in events or events[key].get("ticker") != ticker for key in event_ids):
             raise ReportError("watch_evidence_identity_mismatch")
@@ -323,12 +376,13 @@ class ResearchReport:
     due: bool
     idea_keys: tuple[str, ...]
     blockers: tuple[str, ...]
+    watch_data_ready: bool = False
 
     def metadata(self) -> dict[str, Any]:
         return {
             "report_stream": STREAM,
             "session": self.session,
-            "signal_date": self.session,
+            "signal_date": self.session if self.idea_keys else None,
             "signal_rows": len(self.idea_keys),
             "new_watch_ideas": len(self.idea_keys),
             "status_only": not self.idea_keys,
@@ -336,6 +390,7 @@ class ResearchReport:
             "digest": self.digest,
             "due": self.due,
             "order_authority": False,
+            "watch_data_ready": self.watch_data_ready,
         }
 
 
@@ -377,13 +432,15 @@ def build_report(
     if early.get("published_and_known_at_proven") is not True:
         blockers.append("early_watch_known_at_unproven")
     ideas = []
+    watch_ready = False
     if inputs.watch_error:
         blockers.append(inputs.watch_error)
     elif inputs.watch is None:
         blockers.append("no_hash_verified_watch_snapshot")
     else:
         try:
-            ideas = validate_watch(inputs.watch, session, seen)
+            ideas = validate_watch(inputs.watch, session, seen, now=now)
+            watch_ready = True
         except ReportError as exc:
             blockers.append(str(exc))
     result = incumbent.get("historical_result", {})
@@ -403,15 +460,23 @@ def build_report(
         raise ReportError("source_archive_contract_invalid")
     if source_end != session.day:
         blockers.append("source_archive_endpoint_mismatch")
-    completed = progress.get("completed")
-    priorities = progress.get("next")
+    zh = language == "zh"
+    completed = progress.get("completed_zh" if zh else "completed")
+    priorities = progress.get("next_zh" if zh else "next")
     if not isinstance(completed, list) or not isinstance(priorities, list):
         raise ReportError("progress_contract_invalid")
     completed_text = [public_text(item) for item in completed[-3:]]
     priorities_text = [public_text(item) for item in priorities[:3]]
     generated = now.astimezone(NY).strftime("%Y-%m-%d %H:%M %Z")
     close = session.closed.astimezone(NY).strftime("%Y-%m-%d %H:%M %Z")
-    zh = language == "zh"
+    github = progress.get("github_progress", {})
+    if not isinstance(github, dict):
+        raise ReportError("progress_contract_invalid")
+    progress_link = github.get("pull_request_url") or github.get("branch_url")
+    if progress_link is not None:
+        progress_link = source_url(progress_link)
+        if not progress_link.startswith("https://github.com/julianli00/us_stock_qr/"):
+            raise ReportError("canonical_progress_link_invalid")
     lines = [
         "*每日研究 / 策略状态*" if zh else "*Daily research / strategy status*",
         f"NYSE 已收盘交易日：{session.day}；收盘：{close}" if zh else f"Completed NYSE session: {session.day}; close: {close}",
@@ -420,16 +485,18 @@ def build_report(
         f"*主研究：Top30* `{INCUMBENT_ID}`" if zh else f"*Incumbent Top30* `{INCUMBENT_ID}`",
         "静态699只股票；126日动量前30；63日逆波动权重；月度调仓。QQQ/SPY150MA、VIX和回撤过滤，风险关闭转BIL；不融资、不做空。"
         if zh else "Static 699-stock universe; top30 126-day momentum; inverse 63-day volatility; monthly. QQQ/SPY150MA, VIX and drawdown filters; BIL risk-off; no leverage/shorts.",
+        f"记录的行情/信号截止：{incumbent['price_session']} / {incumbent['signal_session']}。"
+        if zh else f"Recorded price/signal cutoff: {incumbent['price_session']} / {incumbent['signal_session']}.",
         f"保存的历史结果 {start}–{end}：CAGR {cagr:.2%}，Sharpe {sharpe:.4f}，最大回撤 {drawdown:.2%}。"
         if zh else f"Saved historical result {start}–{end}: CAGR {cagr:.2%}, Sharpe {sharpe:.4f}, max drawdown {drawdown:.2%}.",
         "未满足15%回撤门槛；全样本选参，缺少同规则10年/5年独立评估。以上不是账户收益或样本外证明。"
         if zh else "Fails the 15% drawdown gate; full-sample selection, without matching-rule independent 10y/5y evaluation. Not account returns or OOS proof.",
         "",
-        f"*早期观察独立产品* `{WATCH_ID}`",
+        f"{'*早期观察独立产品*' if zh else '*Independent early watch*'} `{WATCH_ID}`",
         f"已记录的价格/信号截止：{early['price_session']} / {early['signal_session']}；新闻截至{early['news_end']}。9月事件不能验证8月信号。"
         if zh else f"Recorded price/signal cutoff: {early['price_session']} / {early['signal_session']}; news through {early['news_end']}. September events cannot validate August signals.",
         "",
-        f"*独立导入研究* `{SOURCE_ID}`",
+        f"{'*独立导入研究*' if zh else '*Independent imported research*'} `{SOURCE_ID}`",
         f"历史研究截至{source_end}；{source_count}个配置，同规则10年/5年联合通过{pass_count}个。未取代Top30，也不继承其业绩。"
         if zh else f"Historical research through {source_end}; {source_count} configurations, {pass_count} joint matching-rule 10y/5y passes. Does not replace or inherit Top30.",
         "前瞻记录因连续性/数据缺口暂停；不回填，不自动重启。"
@@ -448,11 +515,17 @@ def build_report(
                 )
         lines.append(f"独立观察数据截止：{session.day}；仅研究观察，不代表成交。" if zh else f"Independent watch cutoff: {session.day}; research only, not executions.")
     else:
-        lines.append("*本次新增观察：0。数据仍未就绪，不提供新的买卖或价格区间建议。*" if zh else "*NEW watch ideas: 0. Data not ready; no fresh trade or price-level guidance.*")
+        if watch_ready:
+            lines.append("*本次新增观察：0。没有尚未发布且符合条件的新观察，不凑数。*" if zh else "*NEW watch ideas: 0. No unpublished qualifying ideas; no quota filling.*")
+        else:
+            lines.append("*本次新增观察：0。数据仍未就绪，不提供新的买卖或价格区间建议。*" if zh else "*NEW watch ideas: 0. Data not ready; no fresh trade or price-level guidance.*")
     lines.extend([
         "",
         "*数据阻断*" if zh else "*Data blockers*",
-        ", ".join(blockers) if blockers else ("无日期/证据阻断；仍仅研究。" if zh else "No date/evidence blockers; research only."),
+        "\n".join(
+            "- " + (BLOCKERS_ZH.get(code, "独立观察输入校验未通过；详细原因保留在结构化状态中。") if zh else code)
+            for code in blockers
+        ) if blockers else ("无日期/证据阻断；仍仅研究。" if zh else "No date/evidence blockers; research only."),
         "",
         "*最新研究进展*" if zh else "*Research progress*",
         *[f"- {item}" for item in completed_text],
@@ -463,9 +536,15 @@ def build_report(
         if zh else "Manual holdings, executions and Discord remain separate and unread/unmodified. Automatic retuning is disabled.",
         "GitHub进展采用审阅后的显式提交；未配置每日自动推送。" if zh else "GitHub progress uses reviewed explicit commits; no automatic daily push is configured.",
     ])
+    if progress_link:
+        merged = github.get("merged") is True
+        lines.append(
+            f"GitHub进展：<{progress_link}|整合进展与PR>（{'已合并到main' if merged else '尚未合并到main'}）。"
+            if zh else f"GitHub progress: <{progress_link}|integration progress and PR> ({'merged' if merged else 'not merged'} into main)."
+        )
     keys = tuple(idea["key"] for idea in ideas)
     digest = canonical_hash({"session": session.day, "registry": registry, "source": source, "progress": progress, "ideas": ideas, "blockers": blockers})
-    return ResearchReport("\n".join(lines), session.day, digest, now >= session.report_after, keys, tuple(blockers))
+    return ResearchReport("\n".join(lines), session.day, digest, now >= session.report_after, keys, tuple(blockers), watch_ready)
 
 
 def report_from_root(

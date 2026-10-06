@@ -18,16 +18,21 @@ The checked baseline is in
 It is a dated, curated record, **not a live market refresh**. Existing local
 strategy and holdings material is preserved; only an audited subset is published.
 No existing parameter search or broker workflow is automatically activated.
+The [incumbent source slice](research/incumbent/README.md) includes the pure
+Top30 algorithm, its original 699-stock configuration and cost engine, and the
+distinct original early scanner. This is runnable strategy code, not only
+descriptive metadata; the full legacy search/holdings application is not merged.
 
 ## Safe daily research report (Python 3.9+)
 
 The local incumbent environment is retained. A new installation can use a
 separate Python environment and `pip install -r requirements-reporting.txt`.
 The reporting core itself uses only the standard library; the compatibility
-module retains its existing pandas/requests dependencies.
+module retains its pandas dependency.
 
 ```bash
 .venv/bin/python -B scripts/test_research_reporting_guard.py
+.venv/bin/python -B scripts/test_incumbent_baseline_guard.py
 .venv/bin/python -B scripts/send_slack_signal_once.py --dry-run
 ```
 
@@ -36,6 +41,9 @@ writes no outbox, legacy state, logs, positions or fills. Legacy Slack callers
 and previews now use the same canonical bridge before the old mixed-date
 builder/hash. Legacy `force`, signal paths and account options cannot opt back
 into that trading payload. Discord behavior is unchanged.
+Its existing single-stock selection artifact has an explicit legacy-only
+compatibility builder so the canonical Slack formatter does not remove the
+independent Discord selection metadata. The reporter never invokes that path.
 
 Real delivery requires explicit `--send` and the locally configured
 `SLACK_WEBHOOK_URL`; never put its value in a command, repository or issue.
@@ -44,6 +52,9 @@ catch-up invocation and one report per completed NYSE session. The pinned
 calendar covers 2024-2028, including known early closes and ad-hoc closures;
 missing, modified or out-of-range calendars fail closed. Future unexpected
 exchange closures require a reviewed snapshot update.
+The machine must be awake and online; 06:00 is the earliest eligible time,
+not a promise of an exact wakeup. Missed polls coalesce into the latest
+completed session, without backfilling forward research observations.
 
 The private outbox is under `artifacts/private/research_reporting/`. Its lock
 and atomic writes prevent ordinary repeat/restart/concurrent duplicate sends.
@@ -51,6 +62,16 @@ A timeout or crash after reservation is **UNKNOWN**, not success or permission
 to retry. Incoming webhooks cannot prove remote exactly-once delivery after an
 ambiguous acknowledgement; reconciliation is required. An HTTP 200/`ok`
 receipt is not a claim that channel history was independently read.
+The approved first receipt and actual scheduler verification are recorded in
+[`docs/integration/DELIVERY_RECEIPT.json`](docs/integration/DELIVERY_RECEIPT.json).
+
+The installed job runs from this in-place checkout. Keep the tested code and
+environment available: changing branches, deleting the environment or moving
+the checkout affects the job. It does not fetch, switch branches or auto-merge
+the integration PR. After a reviewed deployment, the guarded installer can be
+inspected with `scripts/install_research_report_launchd.py --dry-run`; `--install`
+requires an already-confirmed current-session outbox receipt and persistent
+containment of the old service before bootstrapping.
 
 ## Point-in-time watch input contract
 
@@ -76,8 +97,11 @@ An optional local producer may supply four files under
 
 The three input files use canonical JSON (`sort_keys=True`,
 `separators=(",", ":")`, no trailing newline); their SHA256 values must match
-`input_sha256`. The decision must be between exchange close and the pinned
-30-minute finalization deadline. An idea references matching event IDs, has
+`input_sha256`. The decision must be at or after exchange close plus the pinned
+30-minute minimum data-finalization buffer and before the **next session open**,
+and must not be later than report generation. The buffer is an earliest
+availability time, not a deadline: a 17:30 ET post-close producer is valid.
+An idea references matching event IDs, has
 its original signal/first-observed session, a stable signal ID and rationale.
 Optional research levels must form a valid entry/stop/target range. All inputs
 are checked, not just a global maximum date. Published idea identities are

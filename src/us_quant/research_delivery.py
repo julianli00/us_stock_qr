@@ -87,6 +87,8 @@ def outbox_path(root: Path) -> Path:
 
 
 def read_outbox(path: Path) -> dict[str, Any]:
+    if path.is_symlink():
+        raise ReportError("outbox_symlink_rejected")
     if not path.exists():
         return {"schema_version": 1, "deliveries": {}, "published_ideas": {}}
     state = read_json(path)
@@ -177,6 +179,8 @@ def deliver_report(
         receipt = transport(report.text)
         if receipt.state not in {"SENT", "FAILED", "UNKNOWN"}:
             raise ReportError("transport_receipt_invalid")
+        if receipt.state == "SENT" and receipt.http_status != 200:
+            raise ReportError("transport_success_without_receipt")
         attempt.update({"state": receipt.state, "code": receipt.code, "http_status": receipt.http_status})
         if receipt.state == "SENT":
             attempt["receipt_at_utc"] = datetime.now(timezone.utc).isoformat()

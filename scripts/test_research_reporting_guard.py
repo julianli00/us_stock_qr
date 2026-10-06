@@ -6,13 +6,13 @@ import json
 import multiprocessing
 import os
 import shutil
-import subprocess
 import sys
 import tempfile
 import time
 import unittest
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from types import SimpleNamespace
 from unittest.mock import patch
 from urllib.error import HTTPError, URLError
 
@@ -67,7 +67,7 @@ class ResearchReportingTests(unittest.TestCase):
     def snapshot(self, count: int = 1) -> dict:
         session = self.calendar.latest_completed(NOW)
         names = [f"AA{chr(ord('A') + index)}" for index in range(count)]
-        decision = session.closed + timedelta(minutes=15)
+        decision = session.closed + timedelta(minutes=45)
         inputs = {
             "prices": {"rows": [
                 {
@@ -134,6 +134,9 @@ class ResearchReportingTests(unittest.TestCase):
         self.assertIn("2026-05-08", report.text)
         self.assertIn("early_watch_future_news_vs_signal", report.blockers)
         self.assertNotIn("Research levels:", report.text)
+        english = report_from_root(self.root, NOW, language="en")
+        self.assertIn("*Independent early watch*", english.text)
+        self.assertIn("*Independent imported research*", english.text)
 
     def test_preview_has_no_state_or_input_mutation(self) -> None:
         before = {name: (self.root / name).read_bytes() for name in PUBLIC_INPUTS}
@@ -189,6 +192,39 @@ class ResearchReportingTests(unittest.TestCase):
                 self.assertEqual(len(report.idea_keys), expected)
                 self.assertEqual(report.text.count("Research levels:"), expected)
 
+    def test_postclose_1730_decision_is_valid(self) -> None:
+        snapshot = self.snapshot()
+        snapshot["decision_at"] = "2026-10-06T17:30:00-04:00"
+        self.write_snapshot(snapshot)
+        self.assertEqual(len(report_from_root(self.root, NOW).idea_keys), 1)
+
+    def test_decision_before_close_buffer_is_incomplete(self) -> None:
+        snapshot = self.snapshot()
+        snapshot["decision_at"] = "2026-10-06T16:29:59-04:00"
+        self.assert_blocked(snapshot, "watch_decision_outside_cutoff")
+
+    def test_decision_at_next_open_is_too_late(self) -> None:
+        snapshot = self.snapshot()
+        snapshot["decision_at"] = "2026-10-07T09:30:00-04:00"
+        self.write_snapshot(snapshot)
+        report = report_from_root(self.root, datetime(2026, 10, 7, 14, tzinfo=timezone.utc))
+        self.assertEqual(report.idea_keys, ())
+        self.assertIn("watch_decision_outside_cutoff", report.blockers)
+
+    def test_decision_cannot_follow_report_generation(self) -> None:
+        snapshot = self.snapshot()
+        snapshot["decision_at"] = (NOW + timedelta(minutes=1)).isoformat()
+        self.assert_blocked(snapshot, "watch_decision_outside_cutoff")
+
+    def test_zh_blockers_and_progress_are_readable_with_real_canonical_link(self) -> None:
+        report = report_from_root(self.root, NOW)
+        self.assertNotIn("top30_price_session_mismatch", report.text)
+        self.assertIn("Top30行情仍停在历史截止日", report.text)
+        self.assertIn("同一截止日", report.text)
+        self.assertIn("https://github.com/julianli00/us_stock_qr/pull/1", report.text)
+        self.assertIsNone(report.metadata()["signal_date"])
+        self.assertEqual(report.metadata()["session"], "2026-10-06")
+
     def test_future_or_old_price_any_required_symbol_blocks_lane(self) -> None:
         for symbol, bad_day in (("AAA", "2026-10-05"), ("SPY", "2026-10-07")):
             with self.subTest(symbol=symbol):
@@ -233,6 +269,20 @@ class ResearchReportingTests(unittest.TestCase):
         self.assertIn("watch_input_hash_mismatch", report_from_root(self.root, NOW).blockers)
         path.unlink()
         self.assertIn("watch_input_missing", report_from_root(self.root, NOW).blockers)
+
+    def test_malformed_rows_are_explicitly_blocked(self) -> None:
+        snapshot = self.snapshot()
+        snapshot["inputs"]["prices"]["rows"][0] = 42
+        self.assert_blocked(snapshot, "watch_price_row_invalid")
+        snapshot = self.snapshot()
+        snapshot["ideas"][0]["event_ids"] = [{}]
+        self.assert_blocked(snapshot, "watch_evidence_missing")
+
+    def test_nonfinite_provenance_is_not_accepted(self) -> None:
+        with self.assertRaisesRegex(ReportError, "provenance_serialization_invalid"):
+            canonical_hash({"value": float("nan")})
+        with self.assertRaisesRegex(ReportError, "provenance_serialization_invalid"):
+            canonical_hash({"value": float("inf")})
 
     def test_old_idea_cannot_be_relabelled_new(self) -> None:
         snapshot = self.snapshot()
@@ -367,6 +417,13 @@ class ResearchReportingTests(unittest.TestCase):
         with self.assertRaisesRegex(ReportError, "input_unreadable"):
             deliver_report(self.root, now=NOW, dry_run=False, transport=lambda _: self.fail("corrupt state"))
 
+    def test_outbox_symlink_is_rejected_before_reading(self) -> None:
+        path = outbox_path(self.root)
+        path.parent.mkdir(parents=True)
+        path.symlink_to(self.root / "private-do-not-read.json")
+        with self.assertRaisesRegex(ReportError, "symlink_rejected"):
+            deliver_report(self.root, now=NOW, dry_run=True)
+
     def test_legacy_force_and_preview_never_enter_legacy_builder(self) -> None:
         from src.us_quant.slack_signal_notifier import SlackSignalConfig, build_signal_message, send_latest_signal
 
@@ -399,6 +456,17 @@ class ResearchReportingTests(unittest.TestCase):
         self.assertTrue(sender.call_args.kwargs["dry_run"])
         self.assertIsNone(sender.call_args.kwargs["transport"])
 
+    def test_independent_discord_artifact_preserves_selected_metadata(self) -> None:
+        import scripts.generate_personal_single_stock_signal_v1 as generator
+        import src.us_quant.slack_signal_notifier as notifier
+
+        config = notifier.SlackSignalConfig(webhook_url="", single_stock=True)
+        original = ("synthetic artifact", "digest", {"selected_ticker": "SYNTHETIC", "selected_action": "watch"})
+        with patch.object(notifier, "_legacy_build_signal_message", return_value=original):
+            self.assertEqual(generator.build_legacy_single_stock_artifact(config), original)
+        with self.assertRaisesRegex(ValueError, "requires_single_stock"):
+            notifier.build_legacy_single_stock_artifact(notifier.SlackSignalConfig(webhook_url=""))
+
     def test_transport_errors_never_expose_secret_urls(self) -> None:
         from src.us_quant.research_delivery import validate_webhook
 
@@ -413,6 +481,63 @@ class ResearchReportingTests(unittest.TestCase):
                 receipt = post_to_slack(webhook, "synthetic report")
                 self.assertEqual(receipt.state, expected)
                 self.assertNotIn("PRIVATE_CANARY", repr(receipt))
+
+    def test_only_real_ok_response_is_a_successful_receipt(self) -> None:
+        class Response:
+            status = 200
+
+            def __init__(self, body: bytes) -> None:
+                self.body = body
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *args):
+                return False
+
+            def read(self, limit: int) -> bytes:
+                return self.body[:limit]
+
+        webhook = "https://" + "hooks.slack.com/services/TEST/TEST/SYNTHETIC"
+        for body, state in ((b"ok", "SENT"), (b"unexpected response", "UNKNOWN")):
+            with patch("src.us_quant.research_delivery.urlopen", return_value=Response(body)):
+                self.assertEqual(post_to_slack(webhook, "synthetic").state, state)
+
+    def test_scheduler_uses_exact_bounded_reporter_and_no_broker_flags(self) -> None:
+        import scripts.install_research_report_launchd as installer
+
+        config = installer.configuration(self.root)
+        self.assertEqual(config["Label"], "com.usstockqr.daily-research-report")
+        self.assertEqual(config["StartInterval"], 900)
+        self.assertTrue(config["RunAtLoad"])
+        self.assertNotIn("KeepAlive", config)
+        self.assertEqual(config["EnvironmentVariables"], {"TZ": "Asia/Shanghai"})
+        self.assertEqual(config["ProgramArguments"], [
+            str(self.root / ".venv/bin/python"), "-B", str(self.root / "scripts/send_slack_signal_once.py"),
+            "--send", "--env-file", ".env.local", "--channel-alias", "canonical-slack", "--language", "zh",
+        ])
+        self.assertFalse((self.root / "artifacts/private").exists())
+
+    def test_scheduler_requires_reviewed_receipt_before_bootstrap(self) -> None:
+        import scripts.install_research_report_launchd as installer
+
+        with self.assertRaisesRegex(ReportError, "receipt_required"):
+            installer.reviewed_session_receipt(self.root, NOW)
+        deliver_report(self.root, now=NOW, dry_run=False, transport=lambda _: Receipt("SENT", "ok", 200))
+        self.assertEqual(installer.reviewed_session_receipt(self.root, NOW), "2026-10-06")
+
+    def test_scheduler_accepts_both_launchctl_disabled_formats(self) -> None:
+        import scripts.install_research_report_launchd as installer
+
+        for value in ("true", "disabled"):
+            responses = [
+                SimpleNamespace(returncode=113, stdout="", stderr="Could not find service"),
+                SimpleNamespace(returncode=0, stdout=f'"{installer.OLD_LABEL}" => {value}', stderr=""),
+            ]
+            with patch.object(installer.subprocess, "run", side_effect=responses):
+                self.assertTrue(installer.old_monitor_contained("gui/501"))
+        with patch.object(installer.subprocess, "run", return_value=SimpleNamespace(returncode=0, stdout="", stderr="")):
+            self.assertFalse(installer.old_monitor_contained("gui/501"))
 
     def test_env_configuration_is_explicit_and_not_serialized(self) -> None:
         env = self.root / ".env.local"
