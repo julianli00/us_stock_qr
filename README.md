@@ -188,6 +188,27 @@ reproduction uses commit `3656e098`, and second-round reproduction uses
 not a valid reproduction. New experiments use the
 `register` stage with a new policy and a new registration path.
 
+The [third-round results](research/workbench/evidence/implementation_round_20261007_results.json)
+retain all six implementation variants. Two pass the registered latest
+two-metric target in both horizons and both base/stress scenarios:
+`growth_gold_target_change_band` and
+`equal_growth_gold_min_variance_ensemble`. They do not satisfy the earlier
+15% drawdown cap and are not independently validated future strategies.
+
+An independently specified validation plan checks every retained accounting
+path and every success flag, then reports rolling endpoint sensitivity and
+50bp/three-session execution diagnostics for **both** qualified candidates:
+
+```bash
+.venv/bin/python -I -B -m pytest tests/test_factor_validation.py -q
+.venv/bin/python -I -B -m us_quant.factor_validation
+```
+
+This requires the retained local ledgers from all three implementation
+revisions. It uses `bt` equity and independent `ffn`/excess-return statistics;
+it does not change strategy parameters. Its stronger scenarios and all
+failures are additional diagnostics, not substituted primary windows.
+
 The [first-round evidence](research/workbench/evidence/factor_round_20261007_results.json)
 contains all eight configurations. The growth/gold inverse-volatility control
 passes the latest two primary gates in the base ten/five-year windows, but

@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-07",
-  "phase": "third_factor_round_preregistered",
+  "phase": "historical_primary_candidates_pending_independent_audit",
   "completed": [
     "Preserved runnable incumbent strategy/engine and early-scanner source alongside the isolated 52-configuration workbench.",
     "Verified 50 target integration tests and 357 isolated workbench tests; original strategy functions and synthetic weight matrices match.",
     "Verified one status-only Slack receipt and the new guarded scheduler; the old KeepAlive service is disabled.",
     "Evaluated eight frozen new factor/control configurations: one base-only joint pass, zero base-plus-stress passes; all 60 configurations remain disclosed.",
     "Evaluated six separately registered covariance/diversification and trend hypotheses; no joint primary pass among 66 completed configurations.",
-    "Preregistered six implementation-stability and fixed-mixture configurations; 72 total registered, with previous decisions and results preserved."
+    "Evaluated six implementation-stability and fixed-mixture configurations; two pass the latest primary goals in both windows and both base/stress scenarios. All 72 configurations remain disclosed."
   ],
   "completed_zh": [
     "已保留可运行的原Top30算法、成本引擎和独立早期扫描器，并隔离导入52配置研究工作台。",
@@ -16,16 +16,16 @@
     "已验证一条仅状态Slack回执及新定时任务；旧常驻心跳服务已停用，未改变持仓或Discord任务。",
     "已评估8个冻结新因子及对照：基础情景联合通过1个，基础及压力联合通过0个；累计60个配置全部保留。",
     "已评估第二轮6个协方差分散及趋势假设，无联合通过；累计完成66个配置。",
-    "另行预注册6个执行稳定性及固定组合配置，累计登记72个；之前决策和结果均保留。"
+    "第三轮6个配置评估完成，2个通过最新两项目标的双窗口基础及压力门槛；全部72个配置保留，尚未满足旧回撤上限。"
   ],
   "next": [
-    "Evaluate the six implementation-stability and fixed-mixture configurations without fitting fractions, changing costs or calling reused history a holdout.",
+    "Independently audit all new ledgers and target flags, then report rolling-window and stronger execution sensitivity without modifying strategy parameters.",
     "Publish only date-aligned, timestamped and hash-verified watch evidence; never relabel old signals.",
     "Compare identical windows, costs and Sharpe definitions before comparing strategies.",
     "Preregister bounded hypotheses and preserve failures and the paused forward record."
   ],
   "next_zh": [
-    "评估6个执行稳定性及固定组合配置，不拟合比例、不修改成本、不把复用历史称为独立样本外。",
+    "独立复算全部新账本及达标标记，再披露滚动窗口和更严执行敏感性，不修改策略参数。",
     "先取得同一截止日、可证明首次可得时间并通过来源哈希校验的观察输入，不改写旧信号日期。",
     "使用相同窗口、成本与Sharpe定义比较策略，再讨论优化，不混用不同策略的历史业绩。",
     "预注册有界研究假设，保留失败结果和暂停的前瞻记录；不回填、不自动调参。"
@@ -61,8 +61,16 @@
     "round_id": "implementation_round_20261007",
     "registered_configurations": 6,
     "total_disclosed_configurations": 72,
-    "evaluation_state": "registered_not_evaluated",
+    "evaluation_state": "primary_thresholds_passed_pending_independent_metric_audit",
     "registration": "research/workbench/evidence/implementation_round_20261007_registration.json",
+    "results": "research/workbench/evidence/implementation_round_20261007_results.json",
+    "base_joint_pass_count": 3,
+    "base_and_stress_joint_pass_count": 2,
+    "old_all_four_goals_joint_pass_count": 0,
+    "primary_candidates": [
+      "growth_gold_target_change_band",
+      "equal_growth_gold_min_variance_ensemble"
+    ],
     "history_previously_exposed": true,
     "independent_forward_validation": false,
     "order_authority": false
