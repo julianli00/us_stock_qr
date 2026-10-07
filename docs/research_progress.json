@@ -1,14 +1,16 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-07",
-  "phase": "historical_primary_candidates_pending_independent_audit",
+  "phase": "historical_primary_thresholds_verified_forward_unverified",
   "completed": [
     "Preserved runnable incumbent strategy/engine and early-scanner source alongside the isolated 52-configuration workbench.",
     "Verified 50 target integration tests and 357 isolated workbench tests; original strategy functions and synthetic weight matrices match.",
     "Verified one status-only Slack receipt and the new guarded scheduler; the old KeepAlive service is disabled.",
     "Evaluated eight frozen new factor/control configurations: one base-only joint pass, zero base-plus-stress passes; all 60 configurations remain disclosed.",
     "Evaluated six separately registered covariance/diversification and trend hypotheses; no joint primary pass among 66 completed configurations.",
-    "Evaluated six implementation-stability and fixed-mixture configurations; two pass the latest primary goals in both windows and both base/stress scenarios. All 72 configurations remain disclosed."
+    "Evaluated six implementation-stability and fixed-mixture configurations; two pass the latest primary goals in both windows and both base/stress scenarios. All 72 configurations remain disclosed.",
+    "Independent equity and metric audit confirms all 20 new configurations and 162 original/additional paths. The growth/gold plus minimum-variance ensemble has base Sharpe 1.187/1.105 and stress Sharpe 1.137/1.016.",
+    "The ensemble still has approximately 20% drawdown; 50bp costs and some rolling windows fail. No selection-adjusted alpha, independent forward result or live trading authority is claimed."
   ],
   "completed_zh": [
     "已保留可运行的原Top30算法、成本引擎和独立早期扫描器，并隔离导入52配置研究工作台。",
@@ -16,16 +18,20 @@
     "已验证一条仅状态Slack回执及新定时任务；旧常驻心跳服务已停用，未改变持仓或Discord任务。",
     "已评估8个冻结新因子及对照：基础情景联合通过1个，基础及压力联合通过0个；累计60个配置全部保留。",
     "已评估第二轮6个协方差分散及趋势假设，无联合通过；累计完成66个配置。",
-    "第三轮6个配置评估完成，2个通过最新两项目标的双窗口基础及压力门槛；全部72个配置保留，尚未满足旧回撤上限。"
+    "第三轮6个配置评估完成，2个通过最新两项目标的双窗口基础及压力门槛；全部72个配置保留，尚未满足旧回撤上限。",
+    "独立账本与指标复算确认20个新配置及162条原始/追加路径；成长黄金与最小方差组合基础Sharpe为1.187/1.105，压力为1.137/1.016。",
+    "组合回撤仍约20%；50bp成本及部分滚动窗口失败，尚无经多重选择修正的alpha或独立前瞻证明，不产生实盘权限。"
   ],
   "next": [
-    "Independently audit all new ledgers and target flags, then report rolling-window and stronger execution sensitivity without modifying strategy parameters.",
+    "Keep candidate rules frozen and obtain genuinely new timestamped forward observations before any trading promotion; do not backfill or restart paused ledgers implicitly.",
+    "Retain higher-cost and rolling-window failures as open robustness limitations, not hidden exceptions or reasons to rewrite frozen evidence.",
     "Publish only date-aligned, timestamped and hash-verified watch evidence; never relabel old signals.",
     "Compare identical windows, costs and Sharpe definitions before comparing strategies.",
     "Preregister bounded hypotheses and preserve failures and the paused forward record."
   ],
   "next_zh": [
-    "独立复算全部新账本及达标标记，再披露滚动窗口和更严执行敏感性，不修改策略参数。",
+    "保持候选规则冻结；交易升级前需要真实新增、可证明时点的前瞻观察，不补造数据或隐式重启暂停记录。",
+    "保留更高成本及滚动窗口失败作为未解决的稳健性限制，不隐藏例外或重写冻结证据。",
     "先取得同一截止日、可证明首次可得时间并通过来源哈希校验的观察输入，不改写旧信号日期。",
     "使用相同窗口、成本与Sharpe定义比较策略，再讨论优化，不混用不同策略的历史业绩。",
     "预注册有界研究假设，保留失败结果和暂停的前瞻记录；不回填、不自动调参。"
@@ -61,7 +67,7 @@
     "round_id": "implementation_round_20261007",
     "registered_configurations": 6,
     "total_disclosed_configurations": 72,
-    "evaluation_state": "primary_thresholds_passed_pending_independent_metric_audit",
+    "evaluation_state": "historical_primary_thresholds_independently_verified",
     "registration": "research/workbench/evidence/implementation_round_20261007_registration.json",
     "results": "research/workbench/evidence/implementation_round_20261007_results.json",
     "base_joint_pass_count": 3,
@@ -73,6 +79,18 @@
     ],
     "history_previously_exposed": true,
     "independent_forward_validation": false,
+    "order_authority": false
+  },
+  "factor_validation": {
+    "validation_state": "completed",
+    "results": "research/workbench/evidence/factor_validation_20261007.json",
+    "new_configurations_audited": 20,
+    "original_accounting_paths_audited": 138,
+    "additional_accounting_paths": 24,
+    "latest_requested_historical_thresholds_verified": true,
+    "selection_adjusted_statistical_alpha_verified": false,
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
     "order_authority": false
   },
   "delivery": {
@@ -87,10 +105,11 @@
   "github_progress": {
     "mode": "reviewed_explicit_commits",
     "automatic_daily_push_enabled": false,
-    "branch": "integrate-research-reporting",
-    "branch_url": "https://github.com/julianli00/us_stock_qr/tree/integrate-research-reporting",
-    "pull_request_url": "https://github.com/julianli00/us_stock_qr/pull/1",
+    "branch": "julianli00-factor-research",
+    "branch_url": "https://github.com/julianli00/us_stock_qr/tree/julianli00-factor-research",
+    "integration_pull_request_url": "https://github.com/julianli00/us_stock_qr/pull/1",
     "merged": false,
-    "initial_verified_checkpoint": "4a183a09c2d9"
+    "initial_verified_checkpoint": "3656e098",
+    "deployment": "research_branch_only_no_service_changes"
   }
 }

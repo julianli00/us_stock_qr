@@ -539,8 +539,8 @@ def build_report(
     if progress_link:
         merged = github.get("merged") is True
         lines.append(
-            f"GitHub进展：<{progress_link}|整合进展与PR>（{'已合并到main' if merged else '尚未合并到main'}）。"
-            if zh else f"GitHub progress: <{progress_link}|integration progress and PR> ({'merged' if merged else 'not merged'} into main)."
+            f"GitHub进展：<{progress_link}|研究进展>（{'已合并到main' if merged else '尚未合并到main'}）。"
+            if zh else f"GitHub progress: <{progress_link}|research progress> ({'merged' if merged else 'not merged'} into main)."
         )
     keys = tuple(idea["key"] for idea in ideas)
     digest = canonical_hash({"session": session.day, "registry": registry, "source": source, "progress": progress, "ideas": ideas, "blockers": blockers})

@@ -209,6 +209,39 @@ revisions. It uses `bt` equity and independent `ffn`/excess-return statistics;
 it does not change strategy parameters. Its stronger scenarios and all
 failures are additional diagnostics, not substituted primary windows.
 
+The [completed independent validation](research/workbench/evidence/factor_validation_20261007.json)
+confirms all 20 new configurations, 138 original accounting paths and 24
+additional paths. All 72 registered configurations, including the original
+archive, remain disclosed. The latest requested **historical** two-metric
+thresholds are met, but selection-adjusted alpha and future performance are
+not established.
+
+The stronger candidate is `equal_growth_gold_min_variance_ensemble`:
+half of the 98% invested budget follows the QLD/GLD inverse-volatility
+allocation; half follows the fixed six-month momentum selection and
+minimum-variance allocation among QLD, GLD, TLT, IEF and DBC. Remaining
+defensive allocation is actual BIL, with 2% idle cash. Targets combine before
+trading one account. There is no account borrowing, but QLD has embedded
+daily leverage; the observed approximate underlying gross exposure can
+exceed one.
+
+| Window/scenario | Net CAGR | Excess Sharpe | Maximum drawdown | Base-cost SPY CAGR |
+| --- | ---: | ---: | ---: | ---: |
+| Ten years, base | 20.37% | 1.1870 | 19.97% | 15.46% |
+| Five years, base | 22.14% | 1.1045 | 20.06% | 14.04% |
+| Ten years, 20bp/two-session stress | 19.58% | 1.1373 | 19.68% | 15.46% |
+| Five years, 20bp/two-session stress | 20.59% | 1.0160 | 19.78% | 14.04% |
+
+These are USD10,000 historical accounts ending October 5, 2026, before
+personal tax, with fractional units, modeled costs and USD1 per order.
+Base execution uses 5bp per side at the next session open. **Limitations are
+material:** at 50bp per side the candidate's five-year Sharpe falls to
+0.9674; only 19/45 rolling ten-year and 53/105 rolling five-year stress
+windows meet the primary goal. Its old 15% drawdown target fails, and
+conditional excess-CAGR confidence intervals include zero. The target-band
+alternative also has rolling-window and stronger-stress failures. No live
+signal, order, Slack post or restart of paused forward records resulted.
+
 The [first-round evidence](research/workbench/evidence/factor_round_20261007_results.json)
 contains all eight configurations. The growth/gold inverse-volatility control
 passes the latest two primary gates in the base ten/five-year windows, but
