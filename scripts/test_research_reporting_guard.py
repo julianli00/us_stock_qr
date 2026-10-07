@@ -234,6 +234,7 @@ class ResearchReportingTests(unittest.TestCase):
         path = self.root / "docs/research_progress.json"
         progress = read_json(path)
         progress["github_progress"]["pull_request_url"] = "https://github.com/julianli00/us_stock_qr/pull/1"
+        progress["next_zh"] = ["先核对同一截止日和来源哈希，再研究可执行观察。"]
         path.write_bytes(json_bytes(progress))
         report = report_from_root(self.root, NOW)
         self.assertNotIn("top30_price_session_mismatch", report.text)

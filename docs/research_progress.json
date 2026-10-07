@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-07",
-  "phase": "portfolio_refinement_preregistered",
+  "phase": "portfolio_refinement_complete_incumbent_retained",
   "completed": [
     "Preserved runnable incumbent strategy/engine and early-scanner source alongside the isolated 52-configuration workbench.",
     "Verified 50 target integration tests and 357 isolated workbench tests; original strategy functions and synthetic weight matrices match.",
@@ -11,7 +11,9 @@
     "Evaluated six implementation-stability and fixed-mixture configurations; two pass the latest primary goals in both windows and both base/stress scenarios. All 72 configurations remain disclosed.",
     "Independent equity and metric audit confirms all 20 new configurations and 162 original/additional paths. The growth/gold plus minimum-variance ensemble has base Sharpe 1.187/1.105 and stress Sharpe 1.137/1.016.",
     "The ensemble still has approximately 20% drawdown; 50bp costs and some rolling windows fail. No selection-adjusted alpha, independent forward result or live trading authority is claimed.",
-    "Preregistered six aggregate-risk and actual-holdings turnover controls, raising the registered count to78; the72 previously evaluated configurations and the qualified incumbent remain unchanged."
+    "Evaluated all six preregistered aggregate-risk and actual-holdings controls across72 independently audited paths. All78 configurations remain disclosed; two new variants retain the primary base/stress goal but none meets the frozen upgrade contract.",
+    "The observed-weight band reduces five-year order tickets167 to94 and raises stressed Sharpe1.0160 to1.0417, but50bp Sharpe0.9957 and about5% turnover reduction still fail the upgrade criteria.",
+    "Volatility controls reduce some drawdowns to about18% but increase turnover and fail five-year stress. The incumbent, prior results and old paused forward ledgers remain unchanged."
   ],
   "completed_zh": [
     "已保留可运行的原Top30算法、成本引擎和独立早期扫描器，并隔离导入52配置研究工作台。",
@@ -22,10 +24,12 @@
     "第三轮6个配置评估完成，2个通过最新两项目标的双窗口基础及压力门槛；全部72个配置保留，尚未满足旧回撤上限。",
     "独立账本与指标复算确认20个新配置及162条原始/追加路径；成长黄金与最小方差组合基础Sharpe为1.187/1.105，压力为1.137/1.016。",
     "组合回撤仍约20%；50bp成本及部分滚动窗口失败，尚无经多重选择修正的alpha或独立前瞻证明，不产生实盘权限。",
-    "另行预注册6个组合风险及实际持仓调仓控制，累计登记78个；之前72个已评估配置及达标基线均保持不变。"
+    "已完成6个预注册风险及调仓对照、72条独立记账路径；累计78个配置全部披露，2个保留原基础及压力门槛，但0个满足预设升级标准。",
+    "实际持仓交易带将五年订单从167笔减至94笔、压力Sharpe从1.0160升至1.0417；50bp时仍为0.9957，金额换手仅降约5%，未达升级条件。",
+    "波动率控制把部分回撤降至约18%，但增加换手并未通过五年压力门槛；原策略、历史结果和暂停前瞻记录保持不变。"
   ],
   "next": [
-    "Evaluate all six frozen controls against the unchanged incumbent, including50bp costs; require retained primary performance plus genuine risk or turnover improvement.",
+    "Seek verifiable historical execution or publication-time fundamental data for new hypotheses; do not retune the near-threshold band on the same exposed history.",
     "Keep candidate rules frozen and obtain genuinely new timestamped forward observations before any trading promotion; do not backfill or restart paused ledgers implicitly.",
     "Retain higher-cost and rolling-window failures as open robustness limitations, not hidden exceptions or reasons to rewrite frozen evidence.",
     "Publish only date-aligned, timestamped and hash-verified watch evidence; never relabel old signals.",
@@ -33,7 +37,7 @@
     "Preregister bounded hypotheses and preserve failures and the paused forward record."
   ],
   "next_zh": [
-    "评估6个冻结风险及低换手对照，纳入50bp成本；只有保留原绩效门槛且实质改善回撤或换手才算进步。",
+    "下一类假设先补可核实的历史执行数据或带披露时间的基本面证据，不在同一已见历史上微调接近门槛的交易带。",
     "保持候选规则冻结；交易升级前需要真实新增、可证明时点的前瞻观察，不补造数据或隐式重启暂停记录。",
     "保留更高成本及滚动窗口失败作为未解决的稳健性限制，不隐藏例外或重写冻结证据。",
     "先取得同一截止日、可证明首次可得时间并通过来源哈希校验的观察输入，不改写旧信号日期。",
@@ -99,10 +103,16 @@
   },
   "portfolio_refinement": {
     "round_id": "portfolio_refinement_20261007",
-    "evaluation_state": "registered_not_evaluated",
+    "evaluation_state": "evaluated_no_qualified_upgrade",
     "new_configurations": 6,
     "total_registered_configurations": 78,
     "registration": "research/workbench/evidence/portfolio_refinement_20261007_registration.json",
+    "results": "research/workbench/evidence/portfolio_refinement_20261007_results.json",
+    "base_only_joint_pass_count": 6,
+    "base_and_stress_joint_pass_count": 2,
+    "research_improvement_qualified_count": 0,
+    "independent_accounting_paths": 72,
+    "baseline_preserved": true,
     "history_previously_exposed": true,
     "automatic_baseline_replacement": false,
     "independent_forward_validation": false,

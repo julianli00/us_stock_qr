@@ -267,7 +267,7 @@ weight limit or maximum drawdown: between-decision drift and opening gaps
 remain possible. Fractional units, modeled costs and pre-tax returns are
 unchanged assumptions; no broker account is accessed.
 
-Registration raises the disclosed count from 72 to 78. The unchanged
+This round raises the disclosed count from 72 to 78. The unchanged
 incumbent is also replayed, but is not counted as another independent trial.
 The primary ten/five-year Sharpe and SPY conditions stay unchanged, including
 20bp/delayed stress. To qualify as a research improvement, a new configuration
@@ -289,6 +289,36 @@ control to reproduce the complete original ledgers. It retains every new
 failure and conditionally adds rolling-window comparisons for qualified
 improvements. The original snapshot remains dated October 5; another
 historical experiment is not a new independent forward observation.
+
+The [completed six-configuration evidence](research/workbench/evidence/portfolio_refinement_20261007_results.json)
+retains every result and 72 independently audited paths, including six
+full-ledger matches to the original incumbent. All six variants pass the
+base-only ten/five-year primary target; two retain it under stress, but
+**none qualifies as an upgrade under the frozen promotion contract**.
+The incumbent remains unchanged.
+
+The actual-holdings band gives a modest improvement, not a new validated
+strategy. Its five-year results illustrate why order count and dollar
+turnover must not be confused:
+
+| Five-year measure | Unchanged incumbent | Actual-holdings 2.5pp band |
+| --- | ---: | ---: |
+| Base net CAGR | 22.14% | 22.33% |
+| Base excess Sharpe | 1.1045 | 1.1118 |
+| Base maximum drawdown | 20.06% | 19.78% |
+| Base order tickets | 167 | 94 |
+| 20bp delayed-stress Sharpe | 1.0160 | 1.0417 |
+| 50bp delayed-stress Sharpe | 0.9674 | 0.9957 |
+| 50bp annualized turnover | 2.5121 | 2.3860 |
+
+The band removes about 44% of order tickets but only about 5% of traded-dollar
+turnover. Sharpe 0.9957 is **below**, not equal to or above, the strict threshold.
+The 12% volatility variants reduce some drawdowns to approximately 18%, not
+15%, and increase turnover; all fail the five-year stressed Sharpe gate.
+These results do not justify tuning the band until it crosses one, changing
+cost assumptions, or treating the reused history as independent evidence.
+There is no automatic baseline replacement, paper order or persistent
+research/notification automation created by this round.
 
 ## Progress and publication
 
