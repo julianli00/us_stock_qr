@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-07",
-  "phase": "historical_primary_thresholds_verified_forward_unverified",
+  "phase": "portfolio_refinement_preregistered",
   "completed": [
     "Preserved runnable incumbent strategy/engine and early-scanner source alongside the isolated 52-configuration workbench.",
     "Verified 50 target integration tests and 357 isolated workbench tests; original strategy functions and synthetic weight matrices match.",
@@ -10,7 +10,8 @@
     "Evaluated six separately registered covariance/diversification and trend hypotheses; no joint primary pass among 66 completed configurations.",
     "Evaluated six implementation-stability and fixed-mixture configurations; two pass the latest primary goals in both windows and both base/stress scenarios. All 72 configurations remain disclosed.",
     "Independent equity and metric audit confirms all 20 new configurations and 162 original/additional paths. The growth/gold plus minimum-variance ensemble has base Sharpe 1.187/1.105 and stress Sharpe 1.137/1.016.",
-    "The ensemble still has approximately 20% drawdown; 50bp costs and some rolling windows fail. No selection-adjusted alpha, independent forward result or live trading authority is claimed."
+    "The ensemble still has approximately 20% drawdown; 50bp costs and some rolling windows fail. No selection-adjusted alpha, independent forward result or live trading authority is claimed.",
+    "Preregistered six aggregate-risk and actual-holdings turnover controls, raising the registered count to78; the72 previously evaluated configurations and the qualified incumbent remain unchanged."
   ],
   "completed_zh": [
     "已保留可运行的原Top30算法、成本引擎和独立早期扫描器，并隔离导入52配置研究工作台。",
@@ -20,9 +21,11 @@
     "已评估第二轮6个协方差分散及趋势假设，无联合通过；累计完成66个配置。",
     "第三轮6个配置评估完成，2个通过最新两项目标的双窗口基础及压力门槛；全部72个配置保留，尚未满足旧回撤上限。",
     "独立账本与指标复算确认20个新配置及162条原始/追加路径；成长黄金与最小方差组合基础Sharpe为1.187/1.105，压力为1.137/1.016。",
-    "组合回撤仍约20%；50bp成本及部分滚动窗口失败，尚无经多重选择修正的alpha或独立前瞻证明，不产生实盘权限。"
+    "组合回撤仍约20%；50bp成本及部分滚动窗口失败，尚无经多重选择修正的alpha或独立前瞻证明，不产生实盘权限。",
+    "另行预注册6个组合风险及实际持仓调仓控制，累计登记78个；之前72个已评估配置及达标基线均保持不变。"
   ],
   "next": [
+    "Evaluate all six frozen controls against the unchanged incumbent, including50bp costs; require retained primary performance plus genuine risk or turnover improvement.",
     "Keep candidate rules frozen and obtain genuinely new timestamped forward observations before any trading promotion; do not backfill or restart paused ledgers implicitly.",
     "Retain higher-cost and rolling-window failures as open robustness limitations, not hidden exceptions or reasons to rewrite frozen evidence.",
     "Publish only date-aligned, timestamped and hash-verified watch evidence; never relabel old signals.",
@@ -30,6 +33,7 @@
     "Preregister bounded hypotheses and preserve failures and the paused forward record."
   ],
   "next_zh": [
+    "评估6个冻结风险及低换手对照，纳入50bp成本；只有保留原绩效门槛且实质改善回撤或换手才算进步。",
     "保持候选规则冻结；交易升级前需要真实新增、可证明时点的前瞻观察，不补造数据或隐式重启暂停记录。",
     "保留更高成本及滚动窗口失败作为未解决的稳健性限制，不隐藏例外或重写冻结证据。",
     "先取得同一截止日、可证明首次可得时间并通过来源哈希校验的观察输入，不改写旧信号日期。",
@@ -91,6 +95,17 @@
     "selection_adjusted_statistical_alpha_verified": false,
     "independent_forward_validation": false,
     "investment_objective_verified": false,
+    "order_authority": false
+  },
+  "portfolio_refinement": {
+    "round_id": "portfolio_refinement_20261007",
+    "evaluation_state": "registered_not_evaluated",
+    "new_configurations": 6,
+    "total_registered_configurations": 78,
+    "registration": "research/workbench/evidence/portfolio_refinement_20261007_registration.json",
+    "history_previously_exposed": true,
+    "automatic_baseline_replacement": false,
+    "independent_forward_validation": false,
     "order_authority": false
   },
   "delivery": {

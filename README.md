@@ -250,6 +250,46 @@ It is **not** a base-plus-stress qualified result and fails the old drawdown
 goal. The first non-overlapping five-year diagnostic also fails; no forward
 performance or statistically established alpha is claimed.
 
+## Portfolio-level refinement
+
+The next bounded round preserves all earlier rules and tests six separately
+registered portfolio controls in
+`research/workbench/config/portfolio-refinement.json`: a 30% aggregate QLD
+target cap, a 12% ex-ante portfolio-volatility ceiling, a 2.5-percentage-point
+actual-holdings no-trade band, and the declared combinations. All controls
+operate on the combined portfolio rather than separately on its two sleeves.
+Reductions move to actual BIL, not fictitious cash interest.
+
+The band compares current closing holdings with the desired target, unlike
+the earlier target-change-only experiment. A breached risk limit overrides
+the band at the monthly decision. This does **not** guarantee a continuous
+weight limit or maximum drawdown: between-decision drift and opening gaps
+remain possible. Fractional units, modeled costs and pre-tax returns are
+unchanged assumptions; no broker account is accessed.
+
+Registration raises the disclosed count from 72 to 78. The unchanged
+incumbent is also replayed, but is not counted as another independent trial.
+The primary ten/five-year Sharpe and SPY conditions stay unchanged, including
+20bp/delayed stress. To qualify as a research improvement, a new configuration
+must additionally either satisfy the old 15% drawdown goal in all primary
+paths, or pass both 50bp windows with at least 10% lower turnover. It may
+not worsen drawdown by more than one percentage point in any primary path.
+No rule is automatically promoted to trading or substituted for the incumbent.
+
+From `research/workbench`, after preserving the original local ledgers:
+
+```bash
+.venv/bin/python -I -B -m pytest tests/test_portfolio_refinement.py -q
+.venv/bin/python -I -B -m us_quant.portfolio_refinement evaluate
+```
+
+The evaluator checks all decisions through the original cash-funded simulator
+and independent `bt` accounting, recomputes metrics, and requires the unchanged
+control to reproduce the complete original ledgers. It retains every new
+failure and conditionally adds rolling-window comparisons for qualified
+improvements. The original snapshot remains dated October 5; another
+historical experiment is not a new independent forward observation.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
