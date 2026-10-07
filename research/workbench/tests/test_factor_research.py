@@ -17,9 +17,11 @@ from us_quant.factor_research import (
     factor_scores,
     fingerprint,
     goal_gates,
+    growth_gold_weights,
     information_discreteness,
     inverse_variance_scale,
     macro_weights,
+    rebalance_due,
     snapshot_descriptor,
     validate_policy,
     verify_registration,
@@ -40,6 +42,11 @@ def comparison():
 @pytest.fixture
 def allocation_policy():
     return read_json(Path(__file__).parents[1] / "config/allocation-research.json")
+
+
+@pytest.fixture
+def implementation_policy():
+    return read_json(Path(__file__).parents[1] / "config/implementation-research.json")
 
 
 @pytest.fixture
@@ -143,6 +150,70 @@ def test_allocation_round_signals_are_causal_and_preserve_cash(allocation_policy
         assert (defined >= 0).all().all()
         assert all(is_month_end(day) for day in defined.index)
         pd.testing.assert_frame_equal(frame.loc[:boundary], observed[identifier].loc[:boundary])
+
+
+def test_quarterly_and_target_band_rules_have_no_date_specific_exceptions():
+    weight = pd.Series({"QLD": 0.3, "GLD": 0.68, "BIL": 0.0})
+    candidate = {"rebalance": "quarterly"}
+    assert not rebalance_due(pd.Timestamp("2020-02-28"), weight, None, candidate)
+    assert rebalance_due(pd.Timestamp("2020-03-31"), weight, None, candidate)
+    candidate = {"target_change_band": 0.05}
+    assert rebalance_due(pd.Timestamp("2020-02-28"), weight, None, candidate)
+    assert not rebalance_due(pd.Timestamp("2020-02-28"), weight, weight, candidate)
+    prior = pd.Series({"QLD": 0.35, "GLD": 0.63, "BIL": 0.0})
+    assert rebalance_due(pd.Timestamp("2020-02-28"), weight, prior, candidate)
+
+
+def test_implementation_round_combines_targets_not_compounded_returns(
+    implementation_policy, factor_market
+):
+    validate_policy(implementation_policy)
+    assert implementation_policy["prior_disclosed_configurations"] == 66
+    signals = build_signals(factor_market, implementation_policy)
+    quarterly = signals["growth_gold_quarterly_risk"].dropna(how="all")
+    assert all(day.month % 3 == 0 for day in quarterly.index)
+    fixed = signals["growth_gold_equal_notional_control"].dropna(how="all")
+    assert np.allclose(fixed["QLD"], 0.98 / 3)
+    assert np.allclose(fixed["GLD"], 0.98 * 2 / 3)
+    ensemble = signals["equal_growth_gold_min_variance_ensemble"].dropna(how="all")
+    day = ensemble.index[-1]
+    history = factor_market.close.loc[:day]
+    expected = (
+        macro_weights(
+            history, {"family": "macro", "allocation": "minimum_variance"}, implementation_policy
+        )
+        / 2
+    )
+    expected.loc[["QLD", "GLD"]] += growth_gold_weights(history, implementation_policy) / 2
+    expected["BIL"] = 0.98 - expected.sum()
+    np.testing.assert_allclose(ensemble.loc[day], expected, atol=1e-12)
+    for frame in signals.values():
+        defined = frame.dropna(how="all")
+        assert np.allclose(defined.sum(axis=1), 0.98)
+        assert (defined >= 0).all().all()
+
+
+def test_embedded_leverage_cannot_be_relabelled_as_unleveraged(implementation_policy):
+    implementation_policy["candidates"][0]["embedded_leverage"] = False
+    with pytest.raises(QuantError, match="leverage"):
+        validate_policy(implementation_policy)
+
+
+def test_implementation_round_is_causal_including_hysteresis(implementation_policy, factor_market):
+    original = build_signals(factor_market, implementation_policy)
+    boundary = pd.Timestamp("2013-09-30")
+    close = factor_market.close.copy()
+    later = close.index > boundary
+    close.loc[later, "GLD"] *= np.exp(np.linspace(0, 0.4, later.sum()))
+    changed = replace(factor_market, close=close, raw_close=close.copy(), open=close * 0.999)
+    observed = build_signals(changed, implementation_policy)
+    for identifier in original:
+        pd.testing.assert_frame_equal(
+            original[identifier].loc[:boundary], observed[identifier].loc[:boundary]
+        )
+    issued = original["growth_gold_target_change_band"].dropna(how="all")
+    if len(issued) > 1:
+        assert (issued.diff().abs().max(axis=1).iloc[1:] >= 0.05 - 1e-12).all()
 
 
 def test_residual_factor_removes_exact_market_loading(policy, factor_market):

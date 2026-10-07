@@ -121,6 +121,7 @@ def validate_policy(policy: dict) -> None:
         ):
             raise QuantError("Invalid fixed macro allocation experiment.")
     known = set()
+    leveraged = {}
     for candidate in policy["candidates"]:
         identifier = candidate.get("id")
         if (
@@ -156,11 +157,43 @@ def validate_policy(policy: dict) -> None:
                 "sma",
                 "multi_horizon",
             }
+        elif family == "fixed_growth_gold":
+            valid = candidate.get("qld_fraction") in {1 / 3, 0.5}
+        elif family == "allocation_ensemble":
+            valid = (
+                "macro_universe" in policy
+                and candidate.get("mixture_weight") == 0.5
+                and candidate.get("allocation")
+                in {
+                    "minimum_variance",
+                    "maximum_diversification",
+                }
+            )
         else:
             valid = False
         if not valid:
             raise QuantError("Unsupported or incomplete preregistered factor candidate.")
+        embedded = (
+            family
+            in {
+                "growth_gold",
+                "growth_gold_trend",
+                "fixed_growth_gold",
+                "allocation_ensemble",
+            }
+            or (family == "variance" and candidate["asset"] == "QLD")
+            or (family in {"macro", "macro_rank"} and "QLD" in policy["macro_universe"])
+        )
+        if family == "ensemble":
+            embedded = any(leveraged[name] for name in candidate["components"])
+        if candidate["embedded_leverage"] != embedded:
+            raise QuantError("An ETF's embedded leverage may not be hidden by its metadata.")
+        if candidate.get("rebalance", "monthly") not in {"monthly", "quarterly"} or (
+            "target_change_band" in candidate and candidate["target_change_band"] != 0.05
+        ):
+            raise QuantError("Unsupported preregistered rebalance schedule or target-change band.")
         known.add(identifier)
+        leveraged[identifier] = embedded
     count = policy.get("new_configuration_count", 8)
     if (
         type(count) is not int
@@ -410,6 +443,29 @@ def covariance_weights(covariance: np.ndarray, method: str, cap: float) -> np.nd
     return weights
 
 
+def growth_gold_weights(history: pd.DataFrame, policy: dict) -> pd.Series:
+    assets = ["QLD", "GLD"]
+    returns = history.loc[:, assets].pct_change(fill_method=None).iloc[1:]
+    volatility = returns.tail(policy["parameters"]["volatility_sessions"]).std(ddof=1)
+    if (volatility <= 1e-10).any() or not np.isfinite(volatility).all():
+        raise QuantError("Growth/gold risk weights need nonconstant observed returns.")
+    return (1 / volatility) / (1 / volatility).sum() * (1 - policy["cash_reserve"])
+
+
+def rebalance_due(
+    day: pd.Timestamp, weight: pd.Series, previous: pd.Series | None, candidate: dict
+) -> bool:
+    if candidate.get("rebalance") == "quarterly" and day.month % 3:
+        return False
+    band = candidate.get("target_change_band")
+    if band is not None and previous is not None:
+        if not previous.index.equals(weight.index):
+            raise QuantError("Target-change bands require aligned prior issued targets.")
+        if float(abs(weight - previous).max()) + 1e-12 < band:
+            return False
+    return True
+
+
 def macro_weights(history: pd.DataFrame, candidate: dict, policy: dict) -> pd.Series:
     p, universe = policy["parameters"], policy["macro_universe"]
     budget = 1 - policy["cash_reserve"]
@@ -504,6 +560,7 @@ def build_signals(data: MarketData, policy: dict) -> dict[str, pd.DataFrame]:
         candidate["id"]: pd.DataFrame(np.nan, index=data.close.index, columns=data.close.columns)
         for candidate in policy["candidates"]
     }
+    last_issued = {}
     p, budget = policy["parameters"], 1 - policy["cash_reserve"]
     for i, day in enumerate(data.close.index):
         if i < p["residual_fit_sessions"] or not is_month_end(day):
@@ -539,10 +596,7 @@ def build_signals(data: MarketData, policy: dict) -> dict[str, pd.DataFrame]:
                 weight[asset] = budget * inverse_variance_scale(variance, p[candidate["reference"]])
             elif family in {"growth_gold", "growth_gold_trend"}:
                 assets = ["QLD", "GLD"]
-                volatility = daily.loc[:, assets].tail(p["volatility_sessions"]).std(ddof=1)
-                if (volatility <= 1e-10).any() or not np.isfinite(volatility).all():
-                    raise QuantError("Growth/gold risk weights need nonconstant observed returns.")
-                allocated = (1 / volatility) / (1 / volatility).sum() * budget
+                allocated = growth_gold_weights(history, policy)
                 if family == "growth_gold" and candidate["managed"]:
                     covariance = daily.loc[:, assets].tail(p["variance_sessions"]).cov() * 252
                     variance = float(
@@ -569,6 +623,16 @@ def build_signals(data: MarketData, policy: dict) -> dict[str, pd.DataFrame]:
                         ) / len(p["trend_horizons"])
                     allocated *= active
                 weight.loc[assets] = allocated
+            elif family == "fixed_growth_gold":
+                weight["QLD"] = budget * candidate["qld_fraction"]
+                weight["GLD"] = budget * (1 - candidate["qld_fraction"])
+            elif family == "allocation_ensemble":
+                component = {
+                    "family": "macro",
+                    "allocation": candidate["allocation"],
+                }
+                weight = macro_weights(history, component, policy) / 2
+                weight.loc[["QLD", "GLD"]] += growth_gold_weights(history, policy) / 2
             else:
                 weight = macro_weights(history, candidate, policy)
             if family != "ensemble":
@@ -579,7 +643,10 @@ def build_signals(data: MarketData, policy: dict) -> dict[str, pd.DataFrame]:
                 or not np.isclose(weight.sum(), budget, atol=1e-10)
             ):
                 raise QuantError("Factor target violates its cash-funded long-only budget.")
+            if not rebalance_due(day, weight, last_issued.get(candidate["id"]), candidate):
+                continue
             signals[candidate["id"]].loc[day] = weight.clip(lower=0)
+            last_issued[candidate["id"]] = weight.copy()
     if any(frame.dropna(how="all").empty for frame in signals.values()):
         raise QuantError("No complete post-warmup factor decisions are available.")
     return signals

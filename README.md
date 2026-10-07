@@ -150,21 +150,26 @@ The second round adds six separately registered covariance/diversification
 and trend-filter configurations. It was designed after the first results,
 so its adaptive research status is explicitly disclosed in
 `config/allocation-research.json`. It does not modify the first eight rules.
+All six second-round configurations fail the joint primary goal; their
+[complete results](research/workbench/evidence/allocation_round_20261007_results.json)
+remain available. A third, separately registered six-configuration round
+tests quarterly or target-band rebalancing, mechanically fixed weights and
+equal mixtures of the already disclosed allocation components.
 
-The published second-round registration can be used directly. Run from
+The published third-round registration can be used directly. Run from
 `research/workbench` using its isolated environment:
 
 ```bash
 .venv/bin/python -I -B -m pytest tests/test_factor_research.py -q
 .venv/bin/python -I -B -m us_quant.factor_research stage-data \
-  --policy config/allocation-research.json \
-  --registration evidence/allocation_round_20261007_registration.json \
+  --policy config/implementation-research.json \
+  --registration evidence/implementation_round_20261007_registration.json \
   --source-base /path/to/verified/dual-horizon/market \
   --source-supplement /path/to/verified/dual-horizon/legacy-supplement
 .venv/bin/python -I -B -m us_quant.factor_research evaluate \
-  --policy config/allocation-research.json \
-  --registration evidence/allocation_round_20261007_registration.json \
-  --output reports/allocation-round-20261007
+  --policy config/implementation-research.json \
+  --registration evidence/implementation_round_20261007_registration.json \
+  --output reports/implementation-round-20261007
 ```
 
 Registration binds code, parameters and both existing snapshot manifests
@@ -178,8 +183,9 @@ bootstrap intervals are not independent forward validation or a correction
 for selecting the best of many configurations. The old paused forward
 ledger and all broker, holdings and messaging services remain untouched.
 Each registration is bound to its implementation revision. First-round
-reproduction uses commit `3656e098`; changing its recorded hash to accept a
-later implementation is not a valid reproduction. New experiments use the
+reproduction uses commit `3656e098`, and second-round reproduction uses
+`56d95478`; changing a recorded hash to accept a later implementation is
+not a valid reproduction. New experiments use the
 `register` stage with a new policy and a new registration path.
 
 The [first-round evidence](research/workbench/evidence/factor_round_20261007_results.json)
