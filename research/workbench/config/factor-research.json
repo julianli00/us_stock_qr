@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "round_id": "factor_round_20261007",
+  "prior_disclosed_configurations": 52,
+  "request": "Continue researching new factors: Sharpe above 1 and outperform the broad market.",
+  "primary_goal": {
+    "same_rule_in_both_windows": true,
+    "net_excess_sharpe_strictly_above": 1.0,
+    "net_cagr_above_spy": true,
+    "base_and_stress_required": true
+  },
+  "retained_secondary_goals": {
+    "net_cagr_strictly_above": 0.20,
+    "max_drawdown_at_most": 0.15
+  },
+  "capital_usd": 10000.0,
+  "cash_reserve": 0.02,
+  "commission_per_order": 1.0,
+  "cost_bps_per_side": 5.0,
+  "stress_cost_bps_per_side": 20.0,
+  "base_delay_sessions": 1,
+  "stress_delay_sessions": 2,
+  "sector_universe": ["XLB", "XLE", "XLF", "XLI", "XLK", "XLP", "XLU", "XLV", "XLY"],
+  "supplement_symbols": ["QLD", "SSO", "XLB", "XLE", "XLF", "XLI", "XLK", "XLP", "XLU", "XLV", "XLY"],
+  "parameters": {
+    "momentum_sessions": 252,
+    "skip_sessions": 21,
+    "residual_fit_sessions": 756,
+    "volatility_sessions": 63,
+    "variance_sessions": 21,
+    "trend_sessions": 200,
+    "top_k": 3,
+    "max_sector_weight": 0.40,
+    "qqq_reference_volatility": 0.20,
+    "qld_reference_volatility": 0.40,
+    "growth_gold_reference_volatility": 0.20
+  },
+  "candidates": [
+    {"id": "sector_skip_momentum_control", "family": "sector", "factor": "momentum", "embedded_leverage": false},
+    {"id": "sector_residual_momentum", "family": "sector", "factor": "residual", "embedded_leverage": false},
+    {"id": "sector_continuous_momentum", "family": "sector", "factor": "continuity", "embedded_leverage": false},
+    {"id": "sector_fixed_factor_ensemble", "family": "ensemble", "components": ["sector_skip_momentum_control", "sector_residual_momentum", "sector_continuous_momentum"], "embedded_leverage": false},
+    {"id": "variance_managed_qqq", "family": "variance", "asset": "QQQ", "reference": "qqq_reference_volatility", "embedded_leverage": false},
+    {"id": "variance_managed_qld", "family": "variance", "asset": "QLD", "reference": "qld_reference_volatility", "embedded_leverage": true},
+    {"id": "growth_gold_equal_risk_control", "family": "growth_gold", "managed": false, "embedded_leverage": true},
+    {"id": "growth_gold_variance_managed", "family": "growth_gold", "managed": true, "embedded_leverage": true}
+  ],
+  "sources": [
+    {
+      "title": "Residual momentum",
+      "authors": "Blitz, Huij and Martens",
+      "year": 2011,
+      "url": "https://doi.org/10.1016/j.jempfin.2011.01.003",
+      "adaptation": "Daily 756-session SPY-only excess-return regression, not the paper's stock-level multifactor replication. Rank the last 12-minus-1-month residual sum divided by its residual standard deviation."
+    },
+    {
+      "title": "Frog in the Pan: Continuous Information and Momentum",
+      "authors": "Da, Gurun and Warachka",
+      "year": 2014,
+      "url": "https://doi.org/10.1093/rfs/hhu003",
+      "adaptation": "ETF proxy: equal rank mixture of 12-minus-1-month return and negative information discreteness. Discreteness is the sign of that return times the fraction of negative minus positive daily returns."
+    },
+    {
+      "title": "Volatility-Managed Portfolios",
+      "authors": "Moreira and Muir",
+      "year": 2017,
+      "url": "https://doi.org/10.1111/jofi.12513",
+      "adaptation": "Monthly inverse-realized-variance exposure with ex-ante fixed reference volatility, capped at the cash-funded budget. No full-sample normalization, shorting or margin."
+    }
+  ],
+  "methodology": {
+    "observation": "Only completed NYSE month ends; decisions use observations through that close and execute at a later session open.",
+    "sector_allocation": "Positive raw skip-month momentum and price above trailing 200-session mean; rank the declared factor, allocate inverse trailing 63-session volatility across at most three ETFs, scale missing slots proportionally, cap each at 40%, put remaining invested budget in actual BIL.",
+    "residual_information": "The intercept and market beta are estimated anew from trailing data at each decision. Fitted coefficients and all residual-score observations precede execution.",
+    "growth_gold": "QLD and GLD receive inverse-63-session-volatility weights. The managed variant scales the risky basket by fixed reference variance divided by its last-21-session covariance estimate, at most one; residual budget goes to BIL.",
+    "leverage": "No account borrowing or synthetic leveraged history. QLD has actual embedded daily-reset 2x leverage, whose historical fees and decay remain in observed prices.",
+    "benchmark": "SPY buy-and-hold, same starting capital, sessions and modeled transaction assumptions; stress must also beat the base-cost SPY CAGR.",
+    "data": "Reuse existing hashed historical snapshots without changing retrieval timestamps or treating old data as first observed today.",
+    "selection": "All eight configurations, including controls, are disclosed. No parameter grid, post-result retuning, random train/test split or promotion of an exposed interval to a holdout.",
+    "uncertainty": "Paired 21-session block bootstrap intervals are conditional diagnostics, not selection-adjusted confidence or future-return guarantees.",
+    "forward": "Old paused forward observations remain untouched. No broker, holdings, Slack send or automatic trading action.",
+    "order_authority": false,
+    "independent_future_performance_claim": false
+  }
+}

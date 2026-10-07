@@ -113,8 +113,10 @@ automatic adapter from the old news CSVs, broker snapshots or holdings importer.
 
 ## Isolated imported runtime
 
-`research/workbench` contains exactly the manifest-selected source, tests,
+`research/workbench` preserves the manifest-selected source, tests,
 public configuration, dependency constraints, notices and sanitized evidence.
+New research is added in separately allowlisted files; the imported manifest
+and its original payload remain unchanged.
 Its `us_quant` package requires Python 3.10+ and must not be installed into the
 incumbent Python 3.9 environment or added globally to `PYTHONPATH`.
 
@@ -128,6 +130,45 @@ python3.12 -m venv .venv
 Paper adapter source is retained for reproducibility, not activated. No broker
 configuration, raw cache or evolving forward ledger was imported. The reporter
 reads only `evidence/research_status.json`, never invokes the workbench CLI.
+
+## Preregistered factor research
+
+The October 7 continuation introduces eight fixed configurations covering
+sector residual momentum, price-trend continuity, inverse-variance exposure
+and a growth/gold diversification control. Definitions and paper attribution
+are in `research/workbench/config/factor-research.json`; these ETF adaptations
+are not claims to replicate the original papers' stock-level results.
+
+The latest explicit primary objective is net excess-return Sharpe above one
+and higher net CAGR than SPY, using the same rule in both original ten-year and
+five-year windows and in both base and stressed execution. The earlier 20%
+CAGR and 15% drawdown thresholds remain separately reported. QLD variants use
+real embedded daily-reset leverage, not borrowing or synthetic pre-inception
+prices. No result is promoted to live trading authority.
+
+Run from `research/workbench` using its isolated environment:
+
+```bash
+.venv/bin/python -I -B -m pytest tests/test_factor_research.py -q
+.venv/bin/python -I -B -m us_quant.factor_research register \
+  --source-base /path/to/verified/dual-horizon/market \
+  --source-supplement /path/to/verified/dual-horizon/legacy-supplement
+.venv/bin/python -I -B -m us_quant.factor_research stage-data \
+  --source-base /path/to/verified/dual-horizon/market \
+  --source-supplement /path/to/verified/dual-horizon/legacy-supplement
+.venv/bin/python -I -B -m us_quant.factor_research evaluate
+```
+
+Registration binds code, parameters and both existing snapshot manifests
+before evaluation. Staging copies only verified market artifacts into ignored
+local data directories and preserves their original retrieval timestamps.
+Results, independent accounting paths and all failures stay in a new,
+non-overwritten output directory. Sanitized summaries can be published
+explicitly; raw prices are not part of the publication boundary.
+The historical intervals were already exposed and overlap. Conditional
+bootstrap intervals are not independent forward validation or a correction
+for selecting the best of many configurations. The old paused forward
+ledger and all broker, holdings and messaging services remain untouched.
 
 ## Progress and publication
 

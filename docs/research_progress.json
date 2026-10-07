@@ -1,27 +1,42 @@
 {
   "schema_version": 1,
-  "updated_on": "2026-10-06",
-  "phase": "guarded_reporting_live_integration_under_review",
+  "updated_on": "2026-10-07",
+  "phase": "new_factor_research_preregistered",
   "completed": [
     "Preserved runnable incumbent strategy/engine and early-scanner source alongside the isolated 52-configuration workbench.",
     "Verified 50 target integration tests and 357 isolated workbench tests; original strategy functions and synthetic weight matrices match.",
-    "Verified one status-only Slack receipt and the new guarded scheduler; the old KeepAlive service is disabled."
+    "Verified one status-only Slack receipt and the new guarded scheduler; the old KeepAlive service is disabled.",
+    "Preregistered eight new factor/control configurations with frozen code, policy and original historical snapshot hashes; no new results yet."
   ],
   "completed_zh": [
     "已保留可运行的原Top30算法、成本引擎和独立早期扫描器，并隔离导入52配置研究工作台。",
     "目标整合50项测试及独立研究357项测试通过；原算法函数与五组完整合成权重矩阵保持等价。",
-    "已验证一条仅状态Slack回执及新定时任务；旧常驻心跳服务已停用，未改变持仓或Discord任务。"
+    "已验证一条仅状态Slack回执及新定时任务；旧常驻心跳服务已停用，未改变持仓或Discord任务。",
+    "已预注册8个新因子及对照配置，冻结代码、规则和原历史快照哈希；尚无新结果。"
   ],
   "next": [
+    "Evaluate the eight fixed configurations against net Sharpe above one and same-window SPY; retain old return/drawdown targets separately.",
     "Publish only date-aligned, timestamped and hash-verified watch evidence; never relabel old signals.",
     "Compare identical windows, costs and Sharpe definitions before comparing strategies.",
     "Preregister bounded hypotheses and preserve failures and the paused forward record."
   ],
   "next_zh": [
+    "评估8个冻结配置的净Sharpe与同期SPY收益；原年化20%及回撤15%目标继续单独披露。",
     "先取得同一截止日、可证明首次可得时间并通过来源哈希校验的观察输入，不改写旧信号日期。",
     "使用相同窗口、成本与Sharpe定义比较策略，再讨论优化，不混用不同策略的历史业绩。",
     "预注册有界研究假设，保留失败结果和暂停的前瞻记录；不回填、不自动调参。"
   ],
+  "factor_research": {
+    "round_id": "factor_round_20261007",
+    "registered_configurations": 8,
+    "total_disclosed_configurations": 60,
+    "evaluation_state": "registered_not_evaluated",
+    "registration": "research/workbench/evidence/factor_round_20261007_registration.json",
+    "data_end": "2026-10-05",
+    "history_previously_exposed": true,
+    "independent_forward_validation": false,
+    "order_authority": false
+  },
   "delivery": {
     "receipt_verified": true,
     "channel_history_verified": false,
