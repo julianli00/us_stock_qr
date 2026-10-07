@@ -170,6 +170,14 @@ bootstrap intervals are not independent forward validation or a correction
 for selecting the best of many configurations. The old paused forward
 ledger and all broker, holdings and messaging services remain untouched.
 
+The [first-round evidence](research/workbench/evidence/factor_round_20261007_results.json)
+contains all eight configurations. The growth/gold inverse-volatility control
+passes the latest two primary gates in the base ten/five-year windows, but
+its ten-year stressed Sharpe is 0.9913 and drawdown is approximately 25%.
+It is **not** a base-plus-stress qualified result and fails the old drawdown
+goal. The first non-overlapping five-year diagnostic also fails; no forward
+performance or statistically established alpha is claimed.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
