@@ -11,6 +11,7 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
+from scipy.optimize import minimize
 
 from us_quant.backtest import simulate
 from us_quant.bt_audit import independent_equity
@@ -104,6 +105,21 @@ def validate_policy(policy: dict) -> None:
             raise QuantError("Invalid declared ETF universe.")
     if not set(policy["sector_universe"]) | {"QLD"} <= set(policy["supplement_symbols"]):
         raise QuantError("The supplemental universe omits a required factor input.")
+    if "macro_universe" in policy:
+        universe = policy["macro_universe"]
+        if (
+            not universe
+            or len(universe) != len(set(universe))
+            or not set(universe) <= {"QLD", "GLD", "TLT", "IEF", "DBC"}
+            or not 2 <= parameters.get("macro_top_k", 0) <= len(universe)
+            or not 1 <= parameters.get("rank_top_k", 0) <= len(universe)
+            or parameters.get("covariance_sessions") != 252
+            or parameters.get("macro_momentum_sessions") != 126
+            or parameters.get("covariance_diagonal_shrinkage") != 0.10
+            or parameters.get("max_macro_weight") != 0.80
+            or parameters.get("trend_horizons") != [63, 126, 252]
+        ):
+            raise QuantError("Invalid fixed macro allocation experiment.")
     known = set()
     for candidate in policy["candidates"]:
         identifier = candidate.get("id")
@@ -127,13 +143,32 @@ def validate_policy(policy: dict) -> None:
             }
         elif family == "growth_gold":
             valid = type(candidate.get("managed")) is bool
+        elif family == "macro":
+            valid = "macro_universe" in policy and candidate.get("allocation") in {
+                "equal",
+                "minimum_variance",
+                "maximum_diversification",
+            }
+        elif family == "macro_rank":
+            valid = "macro_universe" in policy
+        elif family == "growth_gold_trend":
+            valid = "macro_universe" in policy and candidate.get("trend") in {
+                "sma",
+                "multi_horizon",
+            }
         else:
             valid = False
         if not valid:
             raise QuantError("Unsupported or incomplete preregistered factor candidate.")
         known.add(identifier)
-    if len(known) != 8 or not policy.get("sources"):
-        raise QuantError("This factor round requires all eight disclosed configurations.")
+    count = policy.get("new_configuration_count", 8)
+    if (
+        type(count) is not int
+        or not 1 <= count <= 8
+        or len(known) != count
+        or not policy.get("sources")
+    ):
+        raise QuantError("The factor round must retain its complete declared candidate list.")
 
 
 def fingerprint() -> str:
@@ -144,7 +179,8 @@ def fingerprint() -> str:
             "dual_horizon": file_digest(Path(__file__).with_name("dual_horizon.py")),
             "bt_audit": file_digest(Path(__file__).with_name("bt_audit.py")),
             "versions": {
-                name: version(name) for name in ("numpy", "pandas", "bt", "exchange-calendars")
+                name: version(name)
+                for name in ("numpy", "pandas", "bt", "exchange-calendars", "scipy")
             },
         }
     )
@@ -192,6 +228,15 @@ def register(
     validate_policy(policy)
     if output.exists():
         raise QuantError("Refusing to replace a factor preregistration.")
+    if "previous_round" in policy:
+        root = Path(__file__).resolve().parents[2]
+        previous = root / policy["previous_round"]["results"]
+        if (
+            previous.is_symlink()
+            or not previous.resolve().is_relative_to(root)
+            or file_digest(previous) != policy["previous_round"]["sha256"]
+        ):
+            raise QuantError("The disclosed previous-round evidence changed.")
     record = {
         "schema_version": 1,
         "registered_at": utc_now(),
@@ -208,7 +253,9 @@ def register(
             ),
         },
         "prior_disclosed_configurations": policy["prior_disclosed_configurations"],
-        "total_disclosed_after_round": policy["prior_disclosed_configurations"] + 8,
+        "total_disclosed_after_round": (
+            policy["prior_disclosed_configurations"] + len(policy["candidates"])
+        ),
         "history_previously_exposed": True,
         "new_data_or_independent_holdout": False,
         "old_forward_ledger_modified": False,
@@ -312,6 +359,95 @@ def inverse_variance_scale(variance: float, reference_volatility: float) -> floa
     return min(1.0, reference_volatility**2 / variance) if variance > 1e-12 else 1.0
 
 
+def covariance_weights(covariance: np.ndarray, method: str, cap: float) -> np.ndarray:
+    count = len(covariance)
+    if (
+        covariance.shape != (count, count)
+        or count < 2
+        or not np.isfinite(covariance).all()
+        or not np.allclose(covariance, covariance.T)
+        or (np.diag(covariance) <= 0).any()
+        or np.linalg.eigvalsh(covariance).min() < -1e-10
+        or not math.isfinite(cap)
+        or not 1 / count <= cap <= 1
+        or method not in {"minimum_variance", "maximum_diversification"}
+    ):
+        raise QuantError("Invalid causal covariance or allocation constraints.")
+    matrix = covariance / np.trace(covariance)
+    volatility = np.sqrt(np.diag(matrix))
+
+    def objective(weight: np.ndarray) -> float:
+        variance = float(weight @ matrix @ weight)
+        if method == "minimum_variance":
+            return variance
+        return -float(volatility @ weight) / math.sqrt(variance)
+
+    def gradient(weight: np.ndarray) -> np.ndarray:
+        if method == "minimum_variance":
+            return 2 * matrix @ weight
+        variance = float(weight @ matrix @ weight)
+        numerator = float(volatility @ weight)
+        return -volatility / np.sqrt(variance) + numerator * (matrix @ weight) / variance**1.5
+
+    result = minimize(
+        objective,
+        np.full(count, 1 / count),
+        jac=gradient,
+        method="SLSQP",
+        bounds=[(0, cap)] * count,
+        constraints={"type": "eq", "fun": lambda w: w.sum() - 1, "jac": lambda w: np.ones(count)},
+        options={"ftol": 1e-12, "maxiter": 500},
+    )
+    weights = result.x
+    if (
+        not result.success
+        or not np.isfinite(weights).all()
+        or abs(weights.sum() - 1) > 1e-8
+        or (weights < -1e-10).any()
+        or (weights > cap + 1e-10).any()
+    ):
+        raise QuantError("Constrained allocation solver failed; no equal-weight fallback.")
+    return weights
+
+
+def macro_weights(history: pd.DataFrame, candidate: dict, policy: dict) -> pd.Series:
+    p, universe = policy["parameters"], policy["macro_universe"]
+    budget = 1 - policy["cash_reserve"]
+    weight = pd.Series(0.0, index=history.columns)
+    returns = history.loc[:, universe].pct_change(fill_method=None).iloc[1:]
+    score = (
+        history.loc[:, universe].iloc[-1]
+        / history.loc[:, universe].iloc[-p["macro_momentum_sessions"] - 1]
+        - 1
+    )
+    eligible = list(score.index[score > 0])
+    if candidate["family"] == "macro_rank":
+        recent = returns.tail(p["volatility_sessions"])
+        volatility = recent.std(ddof=1)
+        correlation = recent.corr()
+        if not np.isfinite(correlation.to_numpy()).all():
+            raise QuantError("Correlation ranks require nonconstant observed returns.")
+        mean_correlation = (correlation.sum() - 1) / (len(universe) - 1)
+        score = (
+            score.rank(pct=True) + (-volatility).rank(pct=True) + (-mean_correlation).rank(pct=True)
+        ) / 3
+        top_k = p["rank_top_k"]
+    else:
+        top_k = p["macro_top_k"]
+    selected = sorted(eligible, key=lambda symbol: (-float(score[symbol]), symbol))[:top_k]
+    if not selected:
+        return weight
+    allocated = np.full(len(selected), 1 / len(selected))
+    method = candidate.get("allocation", "equal")
+    if len(selected) > 1 and method != "equal":
+        covariance = returns.loc[:, selected].tail(p["covariance_sessions"]).cov().to_numpy()
+        shrinkage = p["covariance_diagonal_shrinkage"]
+        covariance = (1 - shrinkage) * covariance + shrinkage * np.diag(np.diag(covariance))
+        allocated = covariance_weights(covariance, method, p["max_macro_weight"])
+    weight.loc[selected] = allocated * budget * len(selected) / top_k
+    return weight
+
+
 def factor_scores(history: pd.DataFrame, risk_free: pd.Series, policy: dict) -> pd.DataFrame:
     p = policy["parameters"]
     if len(history) <= p["residual_fit_sessions"]:
@@ -401,13 +537,13 @@ def build_signals(data: MarketData, policy: dict) -> dict[str, pd.DataFrame]:
                 asset = candidate["asset"]
                 variance = float(daily[asset].tail(p["variance_sessions"]).var(ddof=1) * 252)
                 weight[asset] = budget * inverse_variance_scale(variance, p[candidate["reference"]])
-            else:
+            elif family in {"growth_gold", "growth_gold_trend"}:
                 assets = ["QLD", "GLD"]
                 volatility = daily.loc[:, assets].tail(p["volatility_sessions"]).std(ddof=1)
                 if (volatility <= 1e-10).any() or not np.isfinite(volatility).all():
                     raise QuantError("Growth/gold risk weights need nonconstant observed returns.")
                 allocated = (1 / volatility) / (1 / volatility).sum() * budget
-                if candidate["managed"]:
+                if family == "growth_gold" and candidate["managed"]:
                     covariance = daily.loc[:, assets].tail(p["variance_sessions"]).cov() * 252
                     variance = float(
                         allocated.to_numpy() @ covariance.to_numpy() @ allocated.to_numpy()
@@ -415,7 +551,26 @@ def build_signals(data: MarketData, policy: dict) -> dict[str, pd.DataFrame]:
                     allocated *= inverse_variance_scale(
                         variance, p["growth_gold_reference_volatility"]
                     )
+                if family == "growth_gold_trend":
+                    if candidate["trend"] == "sma":
+                        active = (
+                            history.loc[:, assets].iloc[-1]
+                            > history.loc[:, assets].tail(p["trend_sessions"]).mean()
+                        )
+                    else:
+                        active = sum(
+                            (
+                                history.loc[:, assets].iloc[-1]
+                                / history.loc[:, assets].iloc[-lookback - 1]
+                                - 1
+                            )
+                            > (history["BIL"].iloc[-1] / history["BIL"].iloc[-lookback - 1] - 1)
+                            for lookback in p["trend_horizons"]
+                        ) / len(p["trend_horizons"])
+                    allocated *= active
                 weight.loc[assets] = allocated
+            else:
+                weight = macro_weights(history, candidate, policy)
             if family != "ensemble":
                 weight["BIL"] = budget - weight.sum()
             if (

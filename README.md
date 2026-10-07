@@ -133,7 +133,7 @@ reads only `evidence/research_status.json`, never invokes the workbench CLI.
 
 ## Preregistered factor research
 
-The October 7 continuation introduces eight fixed configurations covering
+The first October 7 round introduces eight fixed configurations covering
 sector residual momentum, price-trend continuity, inverse-variance exposure
 and a growth/gold diversification control. Definitions and paper attribution
 are in `research/workbench/config/factor-research.json`; these ETF adaptations
@@ -146,17 +146,25 @@ CAGR and 15% drawdown thresholds remain separately reported. QLD variants use
 real embedded daily-reset leverage, not borrowing or synthetic pre-inception
 prices. No result is promoted to live trading authority.
 
-Run from `research/workbench` using its isolated environment:
+The second round adds six separately registered covariance/diversification
+and trend-filter configurations. It was designed after the first results,
+so its adaptive research status is explicitly disclosed in
+`config/allocation-research.json`. It does not modify the first eight rules.
+
+The published second-round registration can be used directly. Run from
+`research/workbench` using its isolated environment:
 
 ```bash
 .venv/bin/python -I -B -m pytest tests/test_factor_research.py -q
-.venv/bin/python -I -B -m us_quant.factor_research register \
-  --source-base /path/to/verified/dual-horizon/market \
-  --source-supplement /path/to/verified/dual-horizon/legacy-supplement
 .venv/bin/python -I -B -m us_quant.factor_research stage-data \
+  --policy config/allocation-research.json \
+  --registration evidence/allocation_round_20261007_registration.json \
   --source-base /path/to/verified/dual-horizon/market \
   --source-supplement /path/to/verified/dual-horizon/legacy-supplement
-.venv/bin/python -I -B -m us_quant.factor_research evaluate
+.venv/bin/python -I -B -m us_quant.factor_research evaluate \
+  --policy config/allocation-research.json \
+  --registration evidence/allocation_round_20261007_registration.json \
+  --output reports/allocation-round-20261007
 ```
 
 Registration binds code, parameters and both existing snapshot manifests
@@ -169,6 +177,10 @@ The historical intervals were already exposed and overlap. Conditional
 bootstrap intervals are not independent forward validation or a correction
 for selecting the best of many configurations. The old paused forward
 ledger and all broker, holdings and messaging services remain untouched.
+Each registration is bound to its implementation revision. First-round
+reproduction uses commit `3656e098`; changing its recorded hash to accept a
+later implementation is not a valid reproduction. New experiments use the
+`register` stage with a new policy and a new registration path.
 
 The [first-round evidence](research/workbench/evidence/factor_round_20261007_results.json)
 contains all eight configurations. The growth/gold inverse-volatility control

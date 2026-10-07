@@ -13,11 +13,13 @@ from us_quant.config import QuantError
 from us_quant.dual_horizon import load_protocol
 from us_quant.factor_research import (
     build_signals,
+    covariance_weights,
     factor_scores,
     fingerprint,
     goal_gates,
     information_discreteness,
     inverse_variance_scale,
+    macro_weights,
     snapshot_descriptor,
     validate_policy,
     verify_registration,
@@ -33,6 +35,11 @@ def policy():
 @pytest.fixture
 def comparison():
     return load_protocol(Path(__file__).parents[1] / "config/dual-horizon.json")
+
+
+@pytest.fixture
+def allocation_policy():
+    return read_json(Path(__file__).parents[1] / "config/allocation-research.json")
 
 
 @pytest.fixture
@@ -83,6 +90,59 @@ def test_variance_management_is_not_inverse_volatility():
     assert inverse_variance_scale(0.0, 0.2) == 1
     with pytest.raises(QuantError):
         inverse_variance_scale(float("nan"), 0.2)
+
+
+def test_covariance_allocation_has_known_closed_form_answers():
+    covariance = np.diag([0.04, 0.01])
+    minimum = covariance_weights(covariance, "minimum_variance", 0.8)
+    diversified = covariance_weights(covariance, "maximum_diversification", 0.8)
+    np.testing.assert_allclose(minimum, [0.2, 0.8], atol=1e-6)
+    np.testing.assert_allclose(diversified, [1 / 3, 2 / 3], atol=1e-6)
+    with pytest.raises(QuantError):
+        covariance_weights(np.array([[1.0, 2.0], [2.0, 1.0]]), "minimum_variance", 0.8)
+
+
+def test_second_round_does_not_hide_first_round_or_change_primary_goal(policy, allocation_policy):
+    validate_policy(allocation_policy)
+    assert allocation_policy["primary_goal"] == policy["primary_goal"]
+    assert allocation_policy["prior_disclosed_configurations"] == 60
+    assert len(allocation_policy["candidates"]) == 6
+    assert (
+        "not an independent holdout" in (allocation_policy["previous_round"]["development_status"])
+    )
+
+
+def test_macro_allocation_uses_identical_selection_for_controls(allocation_policy, factor_market):
+    history = factor_market.close.copy()
+    length = len(history)
+    for symbol, growth in (("QLD", 0.8), ("GLD", 0.4), ("TLT", -0.1), ("IEF", -0.2), ("DBC", -0.3)):
+        history[symbol] = 100 * np.exp(np.linspace(0, growth, length))
+    for candidate in allocation_policy["candidates"][:3]:
+        weights = macro_weights(history, candidate, allocation_policy)
+        assert set(weights[weights > 0].index) == {"QLD", "GLD"}
+        assert weights.sum() == pytest.approx(0.98)
+        assert weights.max() <= 0.98 * 0.8 + 1e-10
+
+
+def test_allocation_round_signals_are_causal_and_preserve_cash(allocation_policy, factor_market):
+    original = build_signals(factor_market, allocation_policy)
+    boundary = pd.Timestamp("2013-09-30")
+    changed_close = factor_market.close.copy()
+    later = changed_close.index > boundary
+    changed_close.loc[later, "QLD"] *= np.exp(np.linspace(0, -0.3, later.sum()))
+    changed = replace(
+        factor_market,
+        close=changed_close,
+        raw_close=changed_close.copy(),
+        open=changed_close * 0.999,
+    )
+    observed = build_signals(changed, allocation_policy)
+    for identifier, frame in original.items():
+        defined = frame.dropna(how="all")
+        assert np.allclose(defined.sum(axis=1), 0.98)
+        assert (defined >= 0).all().all()
+        assert all(is_month_end(day) for day in defined.index)
+        pd.testing.assert_frame_equal(frame.loc[:boundary], observed[identifier].loc[:boundary])
 
 
 def test_residual_factor_removes_exact_market_loading(policy, factor_market):

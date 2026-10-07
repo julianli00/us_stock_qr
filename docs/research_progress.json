@@ -1,27 +1,29 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-07",
-  "phase": "first_factor_round_evaluated_not_qualified",
+  "phase": "second_factor_round_preregistered",
   "completed": [
     "Preserved runnable incumbent strategy/engine and early-scanner source alongside the isolated 52-configuration workbench.",
     "Verified 50 target integration tests and 357 isolated workbench tests; original strategy functions and synthetic weight matrices match.",
     "Verified one status-only Slack receipt and the new guarded scheduler; the old KeepAlive service is disabled.",
-    "Evaluated eight frozen new factor/control configurations: one base-only joint pass, zero base-plus-stress passes; all 60 configurations remain disclosed."
+    "Evaluated eight frozen new factor/control configurations: one base-only joint pass, zero base-plus-stress passes; all 60 configurations remain disclosed.",
+    "Separately preregistered six covariance/diversification and trend hypotheses after disclosing the first-round outcomes; 66 total registered configurations."
   ],
   "completed_zh": [
     "已保留可运行的原Top30算法、成本引擎和独立早期扫描器，并隔离导入52配置研究工作台。",
     "目标整合50项测试及独立研究357项测试通过；原算法函数与五组完整合成权重矩阵保持等价。",
     "已验证一条仅状态Slack回执及新定时任务；旧常驻心跳服务已停用，未改变持仓或Discord任务。",
-    "已评估8个冻结新因子及对照：基础情景联合通过1个，基础及压力联合通过0个；累计60个配置全部保留。"
+    "已评估8个冻结新因子及对照：基础情景联合通过1个，基础及压力联合通过0个；累计60个配置全部保留。",
+    "披露首轮结果后，另行预注册6个协方差分散及趋势假设，累计登记66个配置。"
   ],
   "next": [
-    "Preregister separate covariance/diversification and trend hypotheses; do not retune the eight completed configurations or call reused history a holdout.",
+    "Evaluate the six newly frozen configurations without retuning first-round parameters or calling reused history a holdout.",
     "Publish only date-aligned, timestamped and hash-verified watch evidence; never relabel old signals.",
     "Compare identical windows, costs and Sharpe definitions before comparing strategies.",
     "Preregister bounded hypotheses and preserve failures and the paused forward record."
   ],
   "next_zh": [
-    "另行预注册协方差分散及趋势假设，不重调已完成8个配置，不把复用历史称为独立样本外。",
+    "评估新冻结6个配置，不重调首轮参数，不把复用历史称为独立样本外。",
     "先取得同一截止日、可证明首次可得时间并通过来源哈希校验的观察输入，不改写旧信号日期。",
     "使用相同窗口、成本与Sharpe定义比较策略，再讨论优化，不混用不同策略的历史业绩。",
     "预注册有界研究假设，保留失败结果和暂停的前瞻记录；不回填、不自动调参。"
@@ -36,6 +38,16 @@
     "base_joint_pass_count": 1,
     "base_and_stress_joint_pass_count": 0,
     "data_end": "2026-10-05",
+    "history_previously_exposed": true,
+    "independent_forward_validation": false,
+    "order_authority": false
+  },
+  "allocation_research": {
+    "round_id": "allocation_round_20261007",
+    "registered_configurations": 6,
+    "total_disclosed_configurations": 66,
+    "evaluation_state": "registered_not_evaluated",
+    "registration": "research/workbench/evidence/allocation_round_20261007_registration.json",
     "history_previously_exposed": true,
     "independent_forward_validation": false,
     "order_authority": false
