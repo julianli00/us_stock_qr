@@ -1,0 +1,83 @@
+{
+  "investment_objective_verified": false,
+  "modelled_fills_are_actual_orders": false,
+  "new_historical_strategy_evaluations": 0,
+  "old_paused_forward_ledgers_modified": false,
+  "order_authority": false,
+  "policy": {
+    "automatic_live_deployment": false,
+    "backfill_missing_observations": false,
+    "benchmark_symbol": "SPY",
+    "capital_usd_per_account": 10000.0,
+    "commission_per_order": 1.0,
+    "experiment_id": "prospective_rejected_candidate_accounts_v1",
+    "initial_capital_anchor_has_zero_return_and_no_interest": true,
+    "methodology": {
+      "inference": "Before63real account sessions,do not report a Sharpe estimate. Even later simulated performance is not live performance,complete search-bias correction or research-champion qualification. Historical gates remain failed and the investment objective remains unverified.",
+      "limitations": "Fractional normalized units,modelled next-open fills,model fees and no personal taxes; quote revisions and missing observations can pause the study. Recording a target is not a fill,and modelled fills are not orders or actual execution.",
+      "observations": "Each modelled session requires its own actually captured parent snapshot and target-observation receipt. Missing sessions cannot be recovered from historical rows in later downloads; processing can occur later only if the original receipts were captured on time.",
+      "registration": "Freeze the initial target receipt and register before its first future hypothetical execution open. Initial cash is a bookkeeping anchor only,not backdated investment or interest.",
+      "scope": "A new, separate prospective research simulation for an already registered, historically rejected candidate. Never restart or read old paused shadow ledgers,connect a broker or promote the source candidate.",
+      "timing": "Use only target records generated before the applicable next-open or extra-delay model fill. Base and stress accounts share USD10,000 initial capital,USD1 commissions and their respective cost/delay assumptions. SPY accounts use the same initial timing and execution costs.",
+      "verification": "Rebuild the entire observed path with the frozen funded-account simulator and independent bt before appending. Earlier account records must agree with replay; all source and target receipt hashes remain bound.",
+      "vintage": "Chain the adjusted open/close ratios measured against the previous close within each actually acquired daily snapshot. This removes arbitrary total-return price-level renormalization across snapshots without inventing returns. Units are normalized model units,not broker shares. A changed previous raw-close quote pauses accounting for source/corporate-action review rather than silently rewriting history."
+    },
+    "minimum_observed_sessions_for_reported_sharpe": 63,
+    "model_fills_are_broker_fills": false,
+    "order_authority": false,
+    "pause_on_unexplained_previous_raw_close_revision": true,
+    "price_encoding": "within_snapshot_ratio_chain",
+    "require_each_market_session_actual_input_receipt": true,
+    "require_each_market_session_target_observation": true,
+    "scenarios": [
+      {
+        "cost_bps": 5.0,
+        "delay_sessions": 1,
+        "id": "base"
+      },
+      {
+        "cost_bps": 20.0,
+        "delay_sessions": 2,
+        "id": "stress"
+      }
+    ],
+    "schema_version": 1,
+    "source_candidate_id": "macro_real_yield_factor_tilt",
+    "source_historical_status": "rejected_historical",
+    "symbols": [
+      "SPY",
+      "IEF",
+      "GLD",
+      "BIL",
+      "MTUM",
+      "VLUE",
+      "QUAL",
+      "USMV"
+    ],
+    "target_journal": "data/prospective-target-observations-v1",
+    "target_must_be_recorded_before_model_execution_open": true,
+    "target_policy": "config/prospective-target-observations.json",
+    "update_research_champion": false
+  },
+  "registered_before_first_future_model_open": true,
+  "registration": {
+    "accounting_sha256": "d5d08419a7760ca2c1cf4ceb1b73c12be99a22fd852b8dfe36dbd013f2df1dbc",
+    "actual_orders_or_broker_account": false,
+    "baseline_session": "2026-10-09",
+    "first_model_session": "2026-10-12",
+    "initial_target_receipt_sha256": "6f3de02c50da60a2c6d1d7103d80ed47bd0462818e81e42178255fc0a14d5e00",
+    "mode": "prospective_research_simulation_only",
+    "order_authority": false,
+    "parent_registration_sha256": "91f33b965d5a36205c79e16a6da0aeee6c00844748909cf452324477bd7fccf5",
+    "policy_sha256": "378c648d33972d8e491cf59959b37a396fa76944b77ceb1fa4b8a654c84d6b9a",
+    "registered_at": "2026-10-10T22:10:59.950314+00:00",
+    "research_champion_updated": false,
+    "schema_version": 1,
+    "source_historical_status": "rejected_historical",
+    "target_journal_registration_sha256": "2c3c5a50fb7f2e870089429446c1616b9eee76bee34d0e4057439d7cb28da44d"
+  },
+  "registration_sha256": "f2f5d822db1b875c15a5d05861e9ecdc10b63d62748c729ab6d2b992930b1d1f",
+  "schema_version": 1,
+  "source_candidate_historical_gates_passed": false,
+  "source_code_commit": "de613df0"
+}

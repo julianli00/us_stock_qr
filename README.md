@@ -1823,6 +1823,29 @@ is reported. Even later modelled returns are not broker performance,
 independent selection-adjusted alpha or qualification of the historically
 rejected source strategy. No orders or live deployment are authorized.
 
+The [actual experiment registration](research/workbench/evidence/prospective_research_accounts_v1_registration.json)
+occurred at **2026-10-10T22:10:59.950314Z**, before the first possible
+October 12 model open, and binds the previously recorded target receipt.
+The [initial status](research/workbench/evidence/prospective_research_accounts_v1_initial_status.json)
+has **zero observed model sessions**. Four USD10,000 cash anchors are
+bookkeeping initial capital, not four strategy discoveries or past returns.
+Total return, Sharpe, CAGR and drawdown are unreported rather than
+manufactured as a successful zero-risk performance history.
+
+The [initial verification](research/workbench/evidence/prospective_research_accounts_v1_initial_verification.json)
+actually calls advancement twice without new inputs and records no model
+rows or costs. Parent/target receipt heads remain unchanged; the source
+candidate is still historically rejected and 108 prior evaluations are
+unchanged. Missing observations, revised raw quotes and independent-account
+disagreement preserve failure attempts rather than produce success-shaped
+fallbacks.
+
+The [latest native daily sequence](research/workbench/evidence/prospective_data_automation_v8.json)
+collects parent data, expanded data and target observations, then advances
+only this separate registered research model. It does not trade, restart
+old paused portfolios or claim that October 12/13 execution already occurred.
+Future automatic execution and Sharpe qualification remain unverified.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
