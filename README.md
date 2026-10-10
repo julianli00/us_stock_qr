@@ -1846,6 +1846,39 @@ only this separate registered research model. It does not trade, restart
 old paused portfolios or claim that October 12/13 execution already occurred.
 Future automatic execution and Sharpe qualification remain unverified.
 
+### Descriptive factor-risk structure before the eligible new-family cycle
+
+`config/factor-risk-structure.json` fixes a read-only study of actual asset
+returns, **not the queued six-family strategies' performance**. The original
+four equity funds, six equity-family funds and six-plus-GLD/IEF diagnostic
+cohorts share the exact ten/five-year windows and verified source panels.
+No allocation weights, portfolio returns, CAGR or Sharpe are calculated.
+
+The report separates correlation-based and covariance-based effective risk
+dimensions. Correlation normalizes asset volatilities; covariance retains
+their actual observed scale. Neither dimension counts proven independent
+economic alpha. The old four-factor helper is preserved and cross-checked;
+its historically named `covariance_effective_dimension` field is in fact
+correlation-based, not silently rewritten.
+
+Full-sample SPY excess-return regressions describe beta and market R-squared.
+Their residual dependence is an **in-sample, non-investable diagnostic**,
+not a forecast or permitted beta hedge. Near-zero residual variance is
+marked explicitly unestimable rather than assigned fake zero correlation.
+Overlapping trailing 252-session month-end slices describe risk persistence,
+not independent validation samples.
+
+```bash
+cd research/workbench
+.venv/bin/python -I -B -m us_quant.factor_risk_structure register
+# Publish the frozen source/method registration before computing statistics.
+.venv/bin/python -I -B -m us_quant.factor_risk_structure run
+```
+
+The sources, cohorts and event head are bound before results. Registered
+factor definitions, the weekly allowance, queued October 17 eligibility,
+108 completed evaluations and original outcomes are unchanged.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
