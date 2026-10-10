@@ -1699,6 +1699,29 @@ No real candidate outcome is computed merely because the code is prepared;
 the earlier 108 trials and 22-candidate statistical diagnostic are not
 rewritten or silently extended.
 
+The [complete prepared specifications](research/workbench/evidence/six_factor_strategy_preparation_v1.json)
+freeze both implementations and all source dependencies. On the real
+2,805-session / ten-asset panel, each has 131 complete monthly targets.
+The budget audit verifies positive six-family shares, fixed share limits,
+98% target investment and unchanged aggregate equity/gold targets.
+**No actual strategy-account performance was computed.**
+
+The [actual eligibility checks](research/workbench/evidence/six_factor_strategy_eligibility_v1.json)
+refused both source-backed candidates because their new definitions are not
+yet registered; the independent real-clock gate also refused early execution.
+These checks add no candidates or strategy trials. The
+[history-preserving engine snapshot](research/workbench/evidence/research_program_2026-W41_six_factor_v28.json)
+still has 108 completed configurations, 24 reviews and six registered
+definitions. The [latest 96-path audit](research/workbench/evidence/research_program_source_bound_audit_v8.json)
+reproduces every old metric and gate after adding the new generator.
+
+The [native execution instructions](research/workbench/evidence/prospective_data_automation_v6.json)
+prepare fresh evidence at the real eligible cycle, register definitions
+before candidates, publish the actual candidate receipt, and only then
+evaluate performance. They do not fabricate a registration receipt or
+pretend prepared targets establish Sharpe above one. Both data baselines
+and the earlier performance/selection limitations remain unchanged.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
