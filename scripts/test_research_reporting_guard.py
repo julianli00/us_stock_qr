@@ -161,6 +161,18 @@ class ResearchReportingTests(unittest.TestCase):
         self.assertNotIn("progress and PR", english.text)
         self.assertEqual(chinese.idea_keys, ())
 
+    def test_scheduled_research_checkpoints_do_not_claim_reporter_git_side_effects(self) -> None:
+        path = self.root / "docs/research_progress.json"
+        progress = read_json(path)
+        progress["github_progress"]["scheduled_agent_checkpoints"] = True
+        path.write_bytes(json_bytes(progress))
+        self.assertIn("日报本身不执行git或自动部署", report_from_root(self.root, NOW).text)
+        self.assertIn("reporter itself runs no git", report_from_root(self.root, NOW, language="en").text)
+        progress["github_progress"]["scheduled_agent_checkpoints"] = "yes"
+        path.write_bytes(json_bytes(progress))
+        with self.assertRaises(ReportError):
+            report_from_root(self.root, NOW)
+
     def test_calendar_before_close_after_close_and_six_am(self) -> None:
         before = self.calendar.latest_completed(datetime(2026, 10, 6, 19, 59, tzinfo=timezone.utc))
         after = self.calendar.latest_completed(datetime(2026, 10, 6, 20, 1, tzinfo=timezone.utc))

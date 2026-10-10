@@ -964,19 +964,36 @@ the latest snapshot's input hashes detect changed or partially committed
 records. Old failed attempts and old independent forward ledgers remain
 unchanged.
 
-Collection is planned for 09:00 Asia/Shanghai daily, while new-factor
-discovery remains Saturday 09:00. This archive contains no account, orders,
+Collection is configured for approximately 09:00 Asia/Shanghai daily, while
+new-factor discovery remains Saturday 09:00. This archive contains no account, orders,
 positions or strategy-return calculation. Its snapshot count is not a
 forward Sharpe, a 63-session trading qualification or an investment success.
 The app/host must be available, and real future observations require actual
 market time to pass.
 
+The [first acquisition receipt](research/workbench/evidence/prospective_data_baseline_receipt_v1.json)
+confirms 14 real public sources and 35 retained input files for the October 9,
+2026 closing-session baseline. Repeating collection skips network acquisition
+and preserves the receipt-chain head. It records **zero** post-baseline
+observations and zero strategy returns. The next new NYSE market session is
+October 12; no later observation has been fabricated.
+
+The [updated native schedule](research/workbench/evidence/prospective_data_automation_v1.json)
+was saved and read back as daily. Its next invocation observed at configuration
+time is October 11, 2026, approximately 09:01 Asia/Shanghai; weekend duplicate
+sessions are skipped. On non-Saturdays, the agent collects data and handles
+already registered work without launching new factor searches. On Saturdays,
+the bounded weekly discovery/review process continues.
+Scheduled agents may publish explicitly checked metadata checkpoints; the
+standalone Slack reporter still performs no git, trading or deployment.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
 [`docs/research_progress.json`](docs/research_progress.json). GitHub progress
-uses reviewed explicit commits/PRs, **not a configured daily automatic push**.
-The Slack job cannot run git or publish files.
+uses reviewed explicit commits/PRs, not an unconditional git-push cron job.
+The scheduled agent may create checked data/research checkpoints; the
+standalone Slack job cannot run git or publish files.
 
 ```bash
 .venv/bin/python -B scripts/check_publication.py

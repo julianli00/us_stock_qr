@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "updated_on": "2026-10-10",
-  "phase": "defensive_rotation_rejected_prospective_data_preparation",
+  "updated_on": "2026-10-11",
+  "phase": "prospective_data_baseline_captured_96_evaluations_no_qualified_strategy",
   "active_research_focus": "recurring_fundamental_multifactor_research",
   "completed": [
     "Preserved runnable incumbent strategy/engine and early-scanner source alongside the isolated 52-configuration workbench.",
@@ -35,7 +35,9 @@
     "Reproduced and fixed three synthetic review gaps: altered submitted risk-free values, targets unrelated to registered code, and unsupported generators. Reviews now regenerate targets and bind accounting/replay dependencies.",
     "Read-only source-bound audit regenerated40paths for all10existing program reviews with frozen market risk-free data; metrics,gates and rejection records unchanged.94evaluations,no new trials or qualifying champion.",
     "Two fixed defensive-allocation variants completed the generic source-bound evaluator and were rejected; winner/diversified10y/5ybaseSharpe0.6922/0.7815 and0.5320/0.4078.96evaluations,no qualified champion.",
-    "Added a separate data-only prospective archive with actual acquisition times, first-snapshot baseline, immutable receipts, same-session dedupe and explicit missed-observation gaps; no strategy returns or live trading."
+    "Added a separate data-only prospective archive with actual acquisition times, first-snapshot baseline, immutable receipts, same-session dedupe and explicit missed-observation gaps; no strategy returns or live trading.",
+    "Captured and verified14public sources for the2026-10-09 baseline; duplicate collection skips network and leaves the receipt head unchanged. Zero post-baseline observations and no strategy-return proof.",
+    "Native automation now collects data daily around09:00Asia/Shanghai; factor discovery remains Saturday09:00. Next invocation at configuration was2026-10-11 around09:01; old forward ledgers and notification services remain untouched."
   ],
   "completed_zh": [
     "已保留可运行的原Top30算法、成本引擎和独立早期扫描器，并隔离导入52配置研究工作台。",
@@ -69,9 +71,12 @@
     "已复现并修复三个审阅反例：提交表替换无风险利率、仓位与登记代码无关、未知生成器；现在从冻结代码重生仓位并绑定会计/重放依赖。",
     "只读复核重新生成10个既有候选的40条策略路径，使用冻结市场无风险收益，指标、门槛和拒绝记录均未改变；仍为94次评估，没有新增试验或合格策略。",
     "两个固定防御资产配置已由通用源码绑定评估器完成并拒绝，单一/分散防御十年五年基础Sharpe为0.6922/0.7815及0.5320/0.4078；累计96项，无合格策略。",
-    "新增独立数据归档：记录实际获取时间、首份仅作基线、同交易日去重及明确漏记日期；不计算策略收益或执行交易。"
+    "新增独立数据归档：记录实际获取时间、首份仅作基线、同交易日去重及明确漏记日期；不计算策略收益或执行交易。",
+    "已实际采集并核验14个公开来源的2026-10-09基线；重复运行不联网且收据链不变。基线之后新观察为0，没有前瞻策略收益证明。",
+    "调度已改为每天北京时间09:00左右采集数据，因子探索仍每周六09:00；配置时下次为2026-10-11约09:01，旧前瞻账本和通知服务未改动。"
   ],
   "next": [
+    "Archive genuinely new market observations after the baseline, preserve missing sessions, and keep weekly discovery separate; snapshot counts cannot establish Sharpe or investment qualification.",
     "Use an explicitly authorized, coverage-verified historical stock dataset for the fundamental proposals; do not buy a subscription, create an account or substitute current survivors without authorization.",
     "Seek genuinely new, source-verified economic information and independent validation data in the weekly process; preserve all92outcomes and do not retune rejected term-risk or adaptive-allocation rules merely to cross one.",
     "At the next weekly cycle, verify legitimate data access and historical coverage before evaluating the new fundamental proposals; record unavailable sources rather than bypassing403 or manufacturing histories.",
@@ -84,6 +89,7 @@
     "Preregister bounded hypotheses and preserve failures and the paused forward record."
   ],
   "next_zh": [
+    "继续归档基线之后真实新观察，保留漏记日期并将数据采集与周因子研究分开；快照数量不能证明夏普或投资资格。",
     "基本面提案需要明确授权且历史覆盖可核验的数据；不擅自购买订阅、注册账户或用当前幸存股票替代历史股票池。",
     "周研究优先寻找真实新经济信息与独立验证数据；92项结果保留，不为凑过1而继续重调已失败的期限结构和动态组合。",
     "下个周周期先核对合规数据访问与历史覆盖，再评估基本面提案；不可绕过403或造数据，缺失就明确记为阻断。",
@@ -201,11 +207,12 @@
     "order_authority": false
   },
   "recurring_research_program": {
-    "state": "weekly_enabled_stock_data_blocked_etf_candidates_reviewed_rejected",
+    "state": "daily_data_weekly_research_no_qualified_candidate",
     "policy": "research/workbench/config/research-program.json",
     "cycle_snapshot": "research/workbench/evidence/research_program_2026-W41_results_v11.json",
     "initial_cycle_snapshot": "research/workbench/evidence/research_program_2026-W41.json",
-    "automation_receipt": "research/workbench/evidence/research_program_automation_20261010.json",
+    "automation_receipt": "research/workbench/evidence/prospective_data_automation_v1.json",
+    "initial_weekly_automation_receipt": "research/workbench/evidence/research_program_automation_20261010.json",
     "readiness": "research/workbench/evidence/research_program_data_readiness_20261010.json",
     "new_factor_proposals": 2,
     "known_factor_definitions": 6,
@@ -218,13 +225,27 @@
     "data_blockers": 5,
     "blocked_scope": "direct_stock",
     "verified_scope": "factor_etf_portfolio",
-    "automation_scope_instructions_updated_at": "2026-10-10T09:11:02.075Z",
-    "schedule": "Saturday09:00Asia/Shanghai",
-    "next_scheduled_run_at_receipt_utc": "2026-10-17T01:00:28.000Z",
+    "automation_scope_instructions_updated_at": "2026-10-10T16:48:24.187Z",
+    "schedule": "factor_discovery_Saturday09:00Asia/Shanghai",
+    "native_wakeup_schedule": "daily_around09:00Asia/Shanghai",
+    "next_scheduled_run_at_receipt_utc": "2026-10-11T01:01:22.000Z",
+    "next_factor_discovery_date_at_receipt": "2026-10-17",
     "future_scheduled_run_observed": false,
     "investment_objective_verified": false,
     "independent_forward_validation": false,
     "automatic_live_deployment": false,
+    "order_authority": false
+  },
+  "prospective_data_archive": {
+    "policy": "research/workbench/config/prospective-data.json",
+    "baseline_receipt": "research/workbench/evidence/prospective_data_baseline_receipt_v1.json",
+    "initial_status": "research/workbench/evidence/prospective_data_initial_status_v1.json",
+    "automation_receipt": "research/workbench/evidence/prospective_data_automation_v1.json",
+    "baseline_session": "2026-10-09",
+    "complete_snapshots_at_checkpoint": 1,
+    "observations_after_baseline_at_checkpoint": 0,
+    "strategy_returns_calculated": false,
+    "independent_strategy_performance_verified": false,
     "order_authority": false
   },
   "source_bound_review": {
@@ -313,6 +334,7 @@
   "github_progress": {
     "mode": "reviewed_explicit_commits",
     "automatic_daily_push_enabled": false,
+    "scheduled_agent_checkpoints": true,
     "branch": "julianli00-factor-research",
     "branch_url": "https://github.com/julianli00/us_stock_qr/tree/julianli00-factor-research",
     "integration_pull_request_url": "https://github.com/julianli00/us_stock_qr/pull/1",

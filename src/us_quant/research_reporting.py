@@ -472,6 +472,9 @@ def build_report(
     github = progress.get("github_progress", {})
     if not isinstance(github, dict):
         raise ReportError("progress_contract_invalid")
+    scheduled_checkpoints = github.get("scheduled_agent_checkpoints", False)
+    if type(scheduled_checkpoints) is not bool:
+        raise ReportError("progress_contract_invalid")
     progress_link = github.get("pull_request_url") or github.get("branch_url")
     if progress_link is not None:
         progress_link = source_url(progress_link)
@@ -534,7 +537,13 @@ def build_report(
         "",
         "手工持仓、成交和Discord通知独立维护，本报告不读取或改写。策略自动调参关闭。"
         if zh else "Manual holdings, executions and Discord remain separate and unread/unmodified. Automatic retuning is disabled.",
-        "GitHub进展采用审阅后的显式提交；未配置每日自动推送。" if zh else "GitHub progress uses reviewed explicit commits; no automatic daily push is configured.",
+        (
+            "研究自动任务可生成经核验的GitHub检查点；日报本身不执行git或自动部署。"
+            if zh else "Scheduled research agents can publish verified GitHub checkpoints; the reporter itself runs no git or deployment."
+        ) if scheduled_checkpoints else (
+            "GitHub进展采用审阅后的显式提交；未配置每日自动推送。"
+            if zh else "GitHub progress uses reviewed explicit commits; no automatic daily push is configured."
+        ),
     ])
     if progress_link:
         merged = github.get("merged") is True
