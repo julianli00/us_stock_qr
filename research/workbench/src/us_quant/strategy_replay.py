@@ -22,6 +22,7 @@ GENERATORS = {
     "trend_factor_guard": "config/trend-factor-guard.json",
     "momentum_implementation": "config/momentum-implementation.json",
     "credit_factor_guard": "config/credit-factor-guard.json",
+    "six_factor_strategy": "config/six-factor-strategy.json",
 }
 
 
@@ -76,6 +77,16 @@ def registered_generator(spec: dict, root: Path) -> tuple[str, dict]:
                 "data/credit-spread-source-20261011/BAA10Y.csv",
                 "data/credit-spread-source-20261011/BAA10Y-source.html",
                 "data/credit-spread-source-20261011/ICE-source-restriction.html",
+            ]
+        elif name == "six_factor_strategy":
+            required += [
+                "src/us_quant/factor_gold_risk.py",
+                "config/factor-gold-risk.json",
+                "src/us_quant/factor_family_sources.py",
+                "config/factor-family-expansion.json",
+                "src/us_quant/multifactor_stability.py",
+                "src/us_quant/factor_replication.py",
+                "data/new-factor-family-source-20261011/manifest.json",
             ]
         if any(relative not in frozen for relative in required):
             raise QuantError("The registered strategy is missing a frozen helper dependency.")
@@ -173,6 +184,10 @@ def registered_targets(
             cache[key] = build_targets(data, policy)[spec["id"]]
         elif name == "credit_factor_guard":
             from us_quant.credit_factor_guard import build_targets
+
+            cache[key] = build_targets(data, policy)[spec["id"]]
+        elif name == "six_factor_strategy":
+            from us_quant.six_factor_strategy import build_targets
 
             cache[key] = build_targets(data, policy)[spec["id"]]
     return seed_window(cache[key], start)

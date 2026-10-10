@@ -1664,6 +1664,41 @@ without reinitializing either archive. Future execution has not been
 observed or claimed. The original collector fingerprint, old forward
 ledgers and weekly research eligibility remain untouched.
 
+### Frozen six-family candidate implementations for the eligible cycle
+
+`config/six-factor-strategy.json` defines two complete candidate rules for
+momentum, value, quality, low-volatility, size and net-share-reduction
+exposures through the six actually verified ETFs. One uses equal equity
+family shares; the other reuses the unchanged `bounded_factor_shares`
+helper on trailing 63-session volatility, bounding every family between
+half and one-and-a-half times the equal share.
+
+Both inherit the original four-factor/gold baseline's identical monthly
+equity/gold totals, cash reserve and issue dates. The comparison changes
+only family composition, not benchmark costs or aggregate defensive
+exposure. All six equity sleeves remain positive. Inverse marginal
+volatility is **not full-covariance equal-risk contribution**, and six
+economic characteristics are not six orthogonal alpha sources.
+
+```bash
+cd research/workbench
+.venv/bin/python -I -B -m us_quant.six_factor_strategy prepare
+# After the actual eligible weekly factor registration:
+.venv/bin/python -I -B -m us_quant.six_factor_strategy register \
+  --prepared data/six-factor-prepared-20261017 \
+  --receipt evidence/six_factor_strategy_20261017_registration.json
+```
+
+Preparation creates source-bound specifications, not performance results.
+Registration is explicitly blocked until October 17 at 09:00 Asia/Shanghai
+and requires the new definitions already present in the real journal.
+The source-bound replay registry supports both implementations; they
+cannot qualify using arbitrary submitted curves. Costs, fresh capital,
+execution delay, drawdown and Sharpe/SPY goals remain unchanged.
+No real candidate outcome is computed merely because the code is prepared;
+the earlier 108 trials and 22-candidate statistical diagnostic are not
+rewritten or silently extended.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
