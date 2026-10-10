@@ -748,6 +748,23 @@ candidate outcomes must still go through the existing recurring reviewer.
 Historical end-of-day index availability is not an independently proven
 intraday release timestamp and cannot authorize a live decision.
 
+The [actual term-risk outcomes](research/workbench/evidence/term_risk_20261010_results.json)
+were also rejected by the recurring reviewer. Halving equity on inversion
+gives ten/five-year base Sharpe 0.8692/0.8403 and stress Sharpe 0.7274/0.7688.
+Exiting the equity sleeve gives base Sharpe 0.8270/0.7240 and stress
+0.5663/0.6309. Transaction activity, delayed execution and missed recoveries
+do not provide an improvement under these frozen rules; both outcomes remain
+visible rather than being retuned to cross a threshold.
+
+The [latest weekly research snapshot](research/workbench/evidence/research_program_2026-W41_results_v7.json)
+contains 92 evaluated configurations in total and eight actual recurring
+candidate reviews, all rejected. Two fundamental factor definitions remain
+proposals with missing stock data, not completed strategy trials.
+There is still no qualified unleveraged multifactor research champion or
+independent forward result. The standing weekly process continues to seek
+new justified evidence; it does not promise that repeated searches will
+necessarily discover a strategy satisfying the requested return/risk goals.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
