@@ -1,0 +1,249 @@
+{
+  "candidates": [
+    {
+      "registration": {
+        "candidate_id": "factor_gold_term_half_risk",
+        "data_scope": "factor_etf_portfolio",
+        "families": [
+          "earnings_quality",
+          "low_volatility",
+          "momentum",
+          "value"
+        ],
+        "order_authority": false,
+        "readiness_sha256": "79fadddf5cc6cdb99473d8dd48e1eb9d5a5fb034302167fd307af2e3f7e46e2d",
+        "registered_at": "2026-10-10T15:26:59.558198+00:00",
+        "spec_sha256": "3c2b6ea4e574e415e21a666eeb8219a4e2771e40fca7af349eb7e403433a2e9d"
+      },
+      "spec": {
+        "asset_leverage": {
+          "BIL": 1.0,
+          "GLD": 1.0,
+          "IEF": 1.0,
+          "MTUM": 1.0,
+          "QUAL": 1.0,
+          "SPY": 1.0,
+          "USMV": 1.0,
+          "VLUE": 1.0
+        },
+        "configuration": {
+          "id": "factor_gold_term_half_risk",
+          "inverted_equity_scale": 0.5
+        },
+        "data_scope": "factor_etf_portfolio",
+        "evaluation_as_of": "2026-10-05",
+        "factor_ids": [
+          "price_momentum",
+          "value_exposure",
+          "quality_exposure",
+          "low_volatility_exposure"
+        ],
+        "frozen_files": {
+          "config/factor-gold-risk.json": "6c550602c98fa5b09e5b59791bdbbe569c9b4082e2d1dfc9ba4cd5639a25ec63",
+          "config/volatility-term-risk.json": "bc0327b59de212739e2888a545d6b35d9626ee1e599e6a1d29a3fec1d950e89b",
+          "data/volatility-term-source-20261010/VIX.csv": "51ea1e59bfeaf400f6816300c39145df5e3fb437e7c60bdb8ca2178f8c96f436",
+          "data/volatility-term-source-20261010/VIX3M.csv": "f706a0f3b2adb442676514682cabf47556c43a6d465498a7d6da463cc3361281",
+          "data/volatility-term-source-20261010/manifest.json": "7dfbc2854f15c77b8316b401b798b0a9ffb9edbefce07fdc022102af2e5daedd",
+          "src/us_quant/factor_gold_risk.py": "412a80a5d608a3cb0ad3bce6b2861b80fcc73b7f28f27697ccd60528874bf8d5",
+          "src/us_quant/volatility_term_risk.py": "ad2c75386c86c1e1e12491563b6a12d5e38daa0d082d0f0e805edcb9cc027176"
+        },
+        "history_status": "exposed_history_not_independent_holdout",
+        "id": "factor_gold_term_half_risk",
+        "leveraged_products_allowed": false,
+        "market": {
+          "close": {
+            "path": "data/term-risk-prepared-20261010/close.csv",
+            "sha256": "b098f783bbf7a4ca56520e11c6e13edbb0eb2673ed7aaec02b89981ff74fabce"
+          },
+          "open": {
+            "path": "data/term-risk-prepared-20261010/open.csv",
+            "sha256": "dc2e1cf8c83c8731a03452eec60ad3cc036b8534cfed94b054c8f883b459273f"
+          },
+          "raw_close": {
+            "path": "data/term-risk-prepared-20261010/raw_close.csv",
+            "sha256": "82eae7514bf8de48bfe07cc72331ed758a27f561180ff5ad44d5d70e0dca71f9"
+          },
+          "risk_free": {
+            "path": "data/term-risk-prepared-20261010/risk_free.csv",
+            "sha256": "3b59869f597ac9d2573ffca1616938da4c2df0da24bd38799ce3e39b1f0509cc"
+          },
+          "volume": {
+            "path": "data/term-risk-prepared-20261010/volume.csv",
+            "sha256": "7ab6fbbe413fee994f65e27ebfbf15e28aa18055acdc12bd527918d5bbe60830"
+          }
+        },
+        "order_authority": false
+      }
+    },
+    {
+      "registration": {
+        "candidate_id": "factor_gold_term_equity_exit",
+        "data_scope": "factor_etf_portfolio",
+        "families": [
+          "earnings_quality",
+          "low_volatility",
+          "momentum",
+          "value"
+        ],
+        "order_authority": false,
+        "readiness_sha256": "79fadddf5cc6cdb99473d8dd48e1eb9d5a5fb034302167fd307af2e3f7e46e2d",
+        "registered_at": "2026-10-10T15:27:00.689301+00:00",
+        "spec_sha256": "65e925342d7488f715f3f6bd9943abfa155b2bff025b2e2e22b7168ee4e95b5a"
+      },
+      "spec": {
+        "asset_leverage": {
+          "BIL": 1.0,
+          "GLD": 1.0,
+          "IEF": 1.0,
+          "MTUM": 1.0,
+          "QUAL": 1.0,
+          "SPY": 1.0,
+          "USMV": 1.0,
+          "VLUE": 1.0
+        },
+        "configuration": {
+          "id": "factor_gold_term_equity_exit",
+          "inverted_equity_scale": 0.0
+        },
+        "data_scope": "factor_etf_portfolio",
+        "evaluation_as_of": "2026-10-05",
+        "factor_ids": [
+          "price_momentum",
+          "value_exposure",
+          "quality_exposure",
+          "low_volatility_exposure"
+        ],
+        "frozen_files": {
+          "config/factor-gold-risk.json": "6c550602c98fa5b09e5b59791bdbbe569c9b4082e2d1dfc9ba4cd5639a25ec63",
+          "config/volatility-term-risk.json": "bc0327b59de212739e2888a545d6b35d9626ee1e599e6a1d29a3fec1d950e89b",
+          "data/volatility-term-source-20261010/VIX.csv": "51ea1e59bfeaf400f6816300c39145df5e3fb437e7c60bdb8ca2178f8c96f436",
+          "data/volatility-term-source-20261010/VIX3M.csv": "f706a0f3b2adb442676514682cabf47556c43a6d465498a7d6da463cc3361281",
+          "data/volatility-term-source-20261010/manifest.json": "7dfbc2854f15c77b8316b401b798b0a9ffb9edbefce07fdc022102af2e5daedd",
+          "src/us_quant/factor_gold_risk.py": "412a80a5d608a3cb0ad3bce6b2861b80fcc73b7f28f27697ccd60528874bf8d5",
+          "src/us_quant/volatility_term_risk.py": "ad2c75386c86c1e1e12491563b6a12d5e38daa0d082d0f0e805edcb9cc027176"
+        },
+        "history_status": "exposed_history_not_independent_holdout",
+        "id": "factor_gold_term_equity_exit",
+        "leveraged_products_allowed": false,
+        "market": {
+          "close": {
+            "path": "data/term-risk-prepared-20261010/close.csv",
+            "sha256": "b098f783bbf7a4ca56520e11c6e13edbb0eb2673ed7aaec02b89981ff74fabce"
+          },
+          "open": {
+            "path": "data/term-risk-prepared-20261010/open.csv",
+            "sha256": "dc2e1cf8c83c8731a03452eec60ad3cc036b8534cfed94b054c8f883b459273f"
+          },
+          "raw_close": {
+            "path": "data/term-risk-prepared-20261010/raw_close.csv",
+            "sha256": "82eae7514bf8de48bfe07cc72331ed758a27f561180ff5ad44d5d70e0dca71f9"
+          },
+          "risk_free": {
+            "path": "data/term-risk-prepared-20261010/risk_free.csv",
+            "sha256": "3b59869f597ac9d2573ffca1616938da4c2df0da24bd38799ce3e39b1f0509cc"
+          },
+          "volume": {
+            "path": "data/term-risk-prepared-20261010/volume.csv",
+            "sha256": "7ab6fbbe413fee994f65e27ebfbf15e28aa18055acdc12bd527918d5bbe60830"
+          }
+        },
+        "order_authority": false
+      }
+    }
+  ],
+  "readiness": {
+    "capabilities": {
+      "actual_fund_history": {
+        "evidence_path": "config/multifactor-stability.json",
+        "evidence_sha256": "197892d844fd749c1ef06cda8b1eeb025b6edfe546e42f020dc721bc09209715",
+        "verified": true
+      },
+      "factor_mandates": {
+        "evidence_path": "config/multifactor-stability.json",
+        "evidence_sha256": "197892d844fd749c1ef06cda8b1eeb025b6edfe546e42f020dc721bc09209715",
+        "verified": true
+      },
+      "post_inception_and_actions": {
+        "evidence_path": "config/multifactor-stability.json",
+        "evidence_sha256": "197892d844fd749c1ef06cda8b1eeb025b6edfe546e42f020dc721bc09209715",
+        "verified": true
+      },
+      "unleveraged_fund_identity": {
+        "evidence_path": "config/multifactor-stability.json",
+        "evidence_sha256": "197892d844fd749c1ef06cda8b1eeb025b6edfe546e42f020dc721bc09209715",
+        "verified": true
+      }
+    },
+    "checked_at": "2026-10-10T15:26:57.304846+00:00",
+    "data_scope": "factor_etf_portfolio",
+    "new_market_observations": false,
+    "schema_version": 1,
+    "stock_data_still_blocked": true,
+    "verified_etf_source": {
+      "adapter": "frozen_multifactor_etf_20261010",
+      "base_manifest": "data/factor-round-20261007/base/manifest.json",
+      "base_manifest_sha256": "8cc85f89a05c0324571abc1cb44d8a1d7dfd76d55271f34ad4da973e5c0f9f6d",
+      "factor_manifest": "data/multifactor-stability-20261010/manifest.json",
+      "factor_manifest_sha256": "ea128cfe0fa71db93080234787f0779f0236b88466ab01f8e78336bc03652aa5",
+      "policy": "config/multifactor-stability.json",
+      "policy_sha256": "197892d844fd749c1ef06cda8b1eeb025b6edfe546e42f020dc721bc09209715",
+      "registration": "evidence/multifactor_stability_20261010_registration_v2.json",
+      "registration_sha256": "721932a098fb8061d58e8c402bb74ade08512007c13f17be91512c2b4f940d8e"
+    }
+  },
+  "study": {
+    "as_of": "2026-10-05",
+    "candidates": [
+      {
+        "id": "factor_gold_term_half_risk",
+        "inverted_equity_scale": 0.5
+      },
+      {
+        "id": "factor_gold_term_equity_exit",
+        "inverted_equity_scale": 0.0
+      }
+    ],
+    "capital_usd": 10000,
+    "cash_reserve": 0.02,
+    "data_scope": "factor_etf_portfolio",
+    "factor_ids": [
+      "price_momentum",
+      "value_exposure",
+      "quality_exposure",
+      "low_volatility_exposure"
+    ],
+    "factor_symbols": [
+      "MTUM",
+      "VLUE",
+      "QUAL",
+      "USMV"
+    ],
+    "methodology": {
+      "baseline": "Use the existing unleveraged equal-four-factor/gold monthly inverse-volatility risk balance with63observed sessions and30%-70%equity share. Its fixed code is included in the new registration hashes.",
+      "costs": "Unchanged USD10,000,2%target idle cash,USD1per order,5bp next-open base and20bp extra-session stress. No leverage, derivatives trading or synthetic returns.",
+      "data": "Official Cboe CSVs cover every required trading session. VIX3M downloaded history starts2009-09-18, not the earlier date claimed by some summaries. Source bytes and dates are frozen; no forward fill.",
+      "independent_forward_validation": false,
+      "indicator_not_investment": "The indices are not traded or included in portfolio returns. Cboe CLOSE observations are used after their daily publication; first-known intraday availability is not proven by this historical download.",
+      "interpretation": "Two risk-overlay configurations on existing factor exposures. This is not a newly verified independent alpha factor or an exact VIX trading strategy.",
+      "multiple_testing": "Proposed after90prior configurations; retain both outcomes and no subsequent threshold search. The same historical ten/five-year and risk/benchmark gates remain in force.",
+      "new_information": "Cboe VIX measures30-day option-implied volatility; VIX3M measures the longer three-month horizon. Their relative level is risk information from option prices, not another equity moving-average parameter.",
+      "order_authority": false,
+      "orders": "Issue an absolute target on a month-end allocation or a change of the binary risk state. Daily dated targets execute on distinct subsequent opens after1or2sessions. Queued targets are not overwritten, and no current-close information affects an earlier opening fill.",
+      "rule": "After a daily close, if VIX is greater than or equal to VIX3M, multiply the equity sleeve by the fixed candidate scale and transfer removed equity exposure to BIL. Preserve gold allocation and relative weights of the four equity factors. Restore the known monthly allocation when inversion ends.",
+      "sources": [
+        "https://www.cboe.com/us/indices/dashboard/VIX3M/",
+        "https://www.cboe.com/en/tradable-products/vix/vix-historical-data/"
+      ]
+    },
+    "new_configurations": 2,
+    "prior_evaluated_configurations": 90,
+    "risk_indicator": "VIX/VIX3M",
+    "risk_off_threshold": 1.0,
+    "schema_version": 1,
+    "source_urls": {
+      "VIX": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv",
+      "VIX3M": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX3M_History.csv"
+    },
+    "study_id": "volatility_term_risk_20261010"
+  }
+}
