@@ -1171,10 +1171,13 @@ cd research/workbench
 ```
 
 Preparation revalidates existing provider snapshots and reuses their hashed
-panels; it computes no strategy returns. Freeze and register both
-specifications before using the generic source-bound evaluator. Preserve
-all outcomes, the identical budgets, costs and retained qualification gates.
-The previously exposed history is not an independent holdout.
+panels; it computes no strategy returns. Both
+[specifications were registered before outcomes](research/workbench/evidence/factor_momentum_comparison_20261011_registration.json)
+after an exact-anchor engine migration preserved all 16 old reviews and both
+technical failures. The two new candidates remain pending at registration;
+the completed count is still 100, not 102. Preserve all outcomes, the
+identical budgets, costs and retained qualification gates. The previously
+exposed history is not an independent holdout.
 
 ## Progress and publication
 
