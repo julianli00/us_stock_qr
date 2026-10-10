@@ -1237,9 +1237,12 @@ cd research/workbench
 ```
 
 Preparation revalidates and reuses the old hashed actual-fund snapshots;
-it computes no strategy outcomes. Register both fixed implementations
-before evaluation, retaining the original dual windows, execution delays,
-capital, costs and Sharpe/SPY/drawdown gates.
+it computes no strategy outcomes. Both
+[fixed implementations are registered before outcomes](research/workbench/evidence/trend_factor_guard_20261011_registration.json).
+At registration the completed count remains 102, with two pending
+candidates. Exact-anchor migration preserved all 18 previous reviews and
+both technical failures. The original dual windows, execution delays,
+capital, costs and Sharpe/SPY/drawdown gates remain unchanged.
 
 ## Progress and publication
 
