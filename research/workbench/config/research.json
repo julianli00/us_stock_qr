@@ -1,0 +1,99 @@
+{
+  "protocol_version": 1,
+  "registered_on": "2026-09-29",
+  "purpose": "Test an aspirational objective, not promise future returns.",
+  "data_start": "2004-12-01",
+  "simulation_start": "2006-01-03",
+  "development_end": "2021-12-31",
+  "holdout_start": "2022-01-03",
+  "as_of": "2026-09-28",
+  "symbols": ["SPY", "QQQ", "IWM", "EFA", "EEM", "IEF", "TLT", "GLD", "SHY"],
+  "risk_free_symbol": "^IRX",
+  "primary_benchmark": "SPY",
+  "secondary_benchmark": "QQQ",
+  "initial_capital": 100000.0,
+  "cash_interest": 0.0,
+  "cost_bps_per_side": 5.0,
+  "commission_per_order": 1.0,
+  "execution_delay_sessions": 1,
+  "cash_reserve": 0.02,
+  "momentum_lookbacks": [63, 126, 252],
+  "trend_lookback": 200,
+  "volatility_lookback": 63,
+  "selection": {
+    "training_years": 6,
+    "test_years": 2,
+    "first_test_year": 2012,
+    "max_training_drawdown": 0.15,
+    "minimum_training_cagr": 0.0,
+    "ranking": ["sharpe", "cagr", "candidate_id"],
+    "no_eligible_candidate": "cash",
+    "final_training_start": "2016-01-01"
+  },
+  "targets": {
+    "cagr_strictly_above": 0.20,
+    "sharpe_strictly_above": 1.0,
+    "max_drawdown_at_most": 0.15,
+    "beat_primary_benchmark": true,
+    "minimum_holdout_sessions": 504,
+    "minimum_forward_paper_sessions": 63
+  },
+  "stress": {
+    "cost_bps_per_side": 20.0,
+    "extra_execution_delay_sessions": 1,
+    "bootstrap_samples": 1000,
+    "bootstrap_block_sessions": 21,
+    "bootstrap_seed": 20260929
+  },
+  "candidates": [
+    {
+      "id": "diversified_trend_10",
+      "universe": ["SPY", "QQQ", "IWM", "EFA", "EEM", "IEF", "TLT", "GLD", "SHY"],
+      "kind": "trend",
+      "top_k": 9,
+      "max_weight": 0.30,
+      "target_volatility": 0.10
+    },
+    {
+      "id": "cross_asset_top3_12",
+      "universe": ["SPY", "QQQ", "IWM", "EFA", "EEM", "IEF", "TLT", "GLD"],
+      "kind": "momentum",
+      "top_k": 3,
+      "max_weight": 0.40,
+      "target_volatility": 0.12
+    },
+    {
+      "id": "cross_asset_top2_15",
+      "universe": ["SPY", "QQQ", "IWM", "EFA", "EEM", "IEF", "TLT", "GLD"],
+      "kind": "momentum",
+      "top_k": 2,
+      "max_weight": 0.50,
+      "target_volatility": 0.15
+    },
+    {
+      "id": "cross_asset_top1_15",
+      "universe": ["SPY", "QQQ", "IWM", "EFA", "EEM", "IEF", "TLT", "GLD"],
+      "kind": "momentum",
+      "top_k": 1,
+      "max_weight": 0.98,
+      "target_volatility": 0.15
+    },
+    {
+      "id": "us_equity_top2_12",
+      "universe": ["SPY", "QQQ", "IWM"],
+      "kind": "momentum",
+      "top_k": 2,
+      "max_weight": 0.50,
+      "target_volatility": 0.12
+    },
+    {
+      "id": "qqq_trend_15",
+      "universe": ["QQQ"],
+      "kind": "trend",
+      "top_k": 1,
+      "max_weight": 0.98,
+      "target_volatility": 0.15
+    }
+  ]
+}
+

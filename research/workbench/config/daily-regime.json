@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "round": 5,
+  "registered_on": "2026-09-30",
+  "base_protocol_sha256": "80bc01cd2d473d87c115aa63c2d3237f4c7969427989054afd9f20683cb54aac",
+  "prior_disclosed_trials": 28,
+  "rebalance_band": 0.05,
+  "candidates": [
+    {
+      "id": "qld_sma200_v15",
+      "family": "single_trend",
+      "universe": ["QLD"],
+      "fast_average": 0,
+      "slow_average": 200,
+      "momentum_lookback": 0,
+      "top_k": 1,
+      "target_volatility": 0.15,
+      "max_weight": 0.98
+    },
+    {
+      "id": "qld_sma150_v15",
+      "family": "single_trend",
+      "universe": ["QLD"],
+      "fast_average": 0,
+      "slow_average": 150,
+      "momentum_lookback": 0,
+      "top_k": 1,
+      "target_volatility": 0.15,
+      "max_weight": 0.98
+    },
+    {
+      "id": "qld_dual50_200_v15",
+      "family": "single_trend",
+      "universe": ["QLD"],
+      "fast_average": 50,
+      "slow_average": 200,
+      "momentum_lookback": 0,
+      "top_k": 1,
+      "target_volatility": 0.15,
+      "max_weight": 0.98
+    },
+    {
+      "id": "qld_dual100_200_v18",
+      "family": "single_trend",
+      "universe": ["QLD"],
+      "fast_average": 100,
+      "slow_average": 200,
+      "momentum_lookback": 0,
+      "top_k": 1,
+      "target_volatility": 0.18,
+      "max_weight": 0.98
+    },
+    {
+      "id": "sso_dual50_200_v15",
+      "family": "single_trend",
+      "universe": ["SSO"],
+      "fast_average": 50,
+      "slow_average": 200,
+      "momentum_lookback": 0,
+      "top_k": 1,
+      "target_volatility": 0.15,
+      "max_weight": 0.98
+    },
+    {
+      "id": "geared_rotation_dual_v15",
+      "family": "rotation",
+      "universe": ["QLD", "SSO", "GLD", "TLT"],
+      "fast_average": 50,
+      "slow_average": 200,
+      "momentum_lookback": 126,
+      "top_k": 1,
+      "target_volatility": 0.15,
+      "max_weight": 0.98
+    }
+  ]
+}

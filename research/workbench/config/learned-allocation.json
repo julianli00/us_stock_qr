@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "registered_on": "2026-10-06",
+  "prior_disclosed_trials": 42,
+  "capital_usd": 10000.0,
+  "as_of": "2026-10-05",
+  "horizons_years": [10, 5],
+  "training_months": 60,
+  "minimum_training_months": 36,
+  "minimum_predicted_excess_return": 0.005,
+  "volatility_window": 63,
+  "cash_reserve": 0.02,
+  "cost_bps_per_side": 7.5,
+  "stress_cost_bps_per_side": 30.0,
+  "commission_per_order": 1.0,
+  "label": "Next-session open after one month end to the next month-end-plus-one-session open, minus BIL over the same interval. A label is trainable only after its exit open has occurred.",
+  "features": ["return_1m", "return_3m", "return_6m", "return_12m", "volatility_21d", "volatility_63d", "trend_200d", "drawdown_63d", "spy_return_3m", "spy_volatility_63d", "ief_return_3m", "tip_return_3m", "symbol"],
+  "model_parameters": {
+    "ridge": {"alpha": 10.0, "solver": "svd"},
+    "hist_gradient_boosting": {"learning_rate": 0.05, "max_iter": 150, "max_leaf_nodes": 7, "max_depth": 3, "min_samples_leaf": 30, "l2_regularization": 10.0, "max_bins": 64, "early_stopping": false, "random_state": 20261006}
+  },
+  "candidates": [
+    {"id": "ridge_forward_top1", "model": "ridge", "top_k": 1, "max_weight": 0.98, "target_volatility": 0.18},
+    {"id": "ridge_forward_top3", "model": "ridge", "top_k": 3, "max_weight": 0.40, "target_volatility": 0.15},
+    {"id": "boosted_forward_top1", "model": "hist_gradient_boosting", "top_k": 1, "max_weight": 0.98, "target_volatility": 0.18},
+    {"id": "boosted_forward_top3", "model": "hist_gradient_boosting", "top_k": 3, "max_weight": 0.40, "target_volatility": 0.15}
+  ],
+  "hyperparameter_search": false,
+  "random_train_test_split": false,
+  "auto_order_submission": false,
+  "remaining_risk_budget": "Unallocated model risk budget is held in actual BIL ETF; 2% is idle cash.",
+  "data_reuse_disclosed": true,
+  "goal": "One unchanged model/allocation policy must pass all registered CAGR, Sharpe, drawdown and SPY gates over both trailing horizons."
+}

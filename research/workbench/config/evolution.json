@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "seed_candidate": "cross_asset_top3_12",
+  "capital_usd": 10000.0,
+  "prior_trials": 14,
+  "max_candidates": 8,
+  "max_active_candidates": 3,
+  "proposal_interval_sessions": 5,
+  "minimum_forward_sessions": 63,
+  "max_cycle_sessions": 80,
+  "stop_after": "2027-01-15",
+  "minimum_historical_score_improvement": 0.05,
+  "parent_feedback": "historical_plus_mature_forward_shortfall",
+  "auto_order_submission": false,
+  "mutations": [
+    {"id": "shorter_trend", "field": "trend_lookback", "value": 150},
+    {"id": "faster_momentum", "field": "momentum_lookbacks", "value": [21, 63, 126]},
+    {"id": "slower_momentum", "field": "momentum_lookbacks", "value": [126, 189, 252]},
+    {"id": "longer_risk_window", "field": "volatility_lookback", "value": 126},
+    {"id": "lower_vol_target", "field": "target_volatility", "value": 0.10},
+    {"id": "higher_vol_target", "field": "target_volatility", "value": 0.15},
+    {"id": "more_diversified", "field": "top_k", "value": 4}
+  ]
+}

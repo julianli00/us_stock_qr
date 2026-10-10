@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "evidence_scope": "First approved status-only receipt and immediate scheduler verification; not a Slack history export.",
+  "session": "2026-10-05",
+  "approved_delivery": {
+    "sent": true,
+    "status_only": true,
+    "new_watch_ideas": 0,
+    "http_status": 200,
+    "response_body_matched_ok": true,
+    "outbox_state": "SENT",
+    "attempt_count": 1,
+    "receipt_at_utc": "2026-10-06T16:49:58.130508+00:00",
+    "input_digest": "398c8a9e945c32d090b1deadcab06079c445ec1f677e31dcfd65f676af6ca9cc"
+  },
+  "duplicate_checks": {
+    "manual_repeat_reason": "session_already_reported",
+    "initial_launchd_reason": "session_already_reported",
+    "initial_launchd_sent": false,
+    "outbox_attempt_count_after_checks": 1
+  },
+  "scheduler": {
+    "label": "com.usstockqr.daily-research-report",
+    "loaded": true,
+    "initial_runs_observed": 1,
+    "initial_exit_code": 0,
+    "start_interval_seconds": 900,
+    "run_at_load": true,
+    "keepalive": false,
+    "timezone": "Asia/Shanghai",
+    "eligible_after_local_time": "06:00",
+    "old_monitor_persistently_disabled": true,
+    "old_monitor_unloaded": true,
+    "old_plist_and_private_backup_preserved": true,
+    "other_three_job_configurations_unchanged": true
+  },
+  "verification_limits": {
+    "channel_history_verified": false,
+    "remote_exactly_once_after_lost_ack_guaranteed": false,
+    "no_further_manual_live_post_required": true
+  }
+}

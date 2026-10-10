@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "updated_on": "2026-10-06",
+  "phase": "guarded_reporting_live_integration_under_review",
+  "completed": [
+    "Preserved runnable incumbent strategy/engine and early-scanner source alongside the isolated 52-configuration workbench.",
+    "Verified 50 target integration tests and 357 isolated workbench tests; original strategy functions and synthetic weight matrices match.",
+    "Verified one status-only Slack receipt and the new guarded scheduler; the old KeepAlive service is disabled."
+  ],
+  "completed_zh": [
+    "已保留可运行的原Top30算法、成本引擎和独立早期扫描器，并隔离导入52配置研究工作台。",
+    "目标整合50项测试及独立研究357项测试通过；原算法函数与五组完整合成权重矩阵保持等价。",
+    "已验证一条仅状态Slack回执及新定时任务；旧常驻心跳服务已停用，未改变持仓或Discord任务。"
+  ],
+  "next": [
+    "Publish only date-aligned, timestamped and hash-verified watch evidence; never relabel old signals.",
+    "Compare identical windows, costs and Sharpe definitions before comparing strategies.",
+    "Preregister bounded hypotheses and preserve failures and the paused forward record."
+  ],
+  "next_zh": [
+    "先取得同一截止日、可证明首次可得时间并通过来源哈希校验的观察输入，不改写旧信号日期。",
+    "使用相同窗口、成本与Sharpe定义比较策略，再讨论优化，不混用不同策略的历史业绩。",
+    "预注册有界研究假设，保留失败结果和暂停的前瞻记录；不回填、不自动调参。"
+  ],
+  "delivery": {
+    "receipt_verified": true,
+    "channel_history_verified": false,
+    "scheduler": "installed_and_initial_dedupe_verified",
+    "external_post_review": "one_approved_status_only_report_accepted",
+    "receipt_session": "2026-10-05",
+    "receipt_at_utc": "2026-10-06T16:49:58.130508+00:00",
+    "receipt_artifact": "docs/integration/DELIVERY_RECEIPT.json"
+  },
+  "github_progress": {
+    "mode": "reviewed_explicit_commits",
+    "automatic_daily_push_enabled": false,
+    "branch": "integrate-research-reporting",
+    "branch_url": "https://github.com/julianli00/us_stock_qr/tree/integrate-research-reporting",
+    "pull_request_url": "https://github.com/julianli00/us_stock_qr/pull/1",
+    "merged": false,
+    "initial_verified_checkpoint": "4a183a09c2d9"
+  }
+}

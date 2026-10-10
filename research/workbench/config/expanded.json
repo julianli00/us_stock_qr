@@ -1,0 +1,106 @@
+{
+  "round": 2,
+  "registered_on": "2026-09-29",
+  "base_protocol_sha256": "f35d8249418997a2c7edc0580418a2798a157abd28ab18935436dcd19585d685",
+  "data_start": "2000-01-03",
+  "simulation_start": "2001-01-02",
+  "development_end": "2021-12-31",
+  "reused_diagnostic_start": "2022-01-03",
+  "as_of": "2026-09-28",
+  "first_test_year": 2007,
+  "training_years": 6,
+  "test_years": 2,
+  "final_training_start": "2016-01-01",
+  "sectors": ["XLB", "XLE", "XLF", "XLI", "XLK", "XLP", "XLU", "XLV", "XLY"],
+  "indices": ["SPY", "QQQ"],
+  "momentum_lookback": 252,
+  "momentum_skip": 21,
+  "trend_lookback": 200,
+  "volatility_lookback": 63,
+  "rsi_period": 2,
+  "rsi_entry": 10.0,
+  "rsi_exit": 70.0,
+  "pullback_exit_average": 5,
+  "maximum_holding_sessions": 10,
+  "weight_rebalance_band": 0.02,
+  "cash_reserve": 0.02,
+  "prior_candidate_trials": 6,
+  "reuse_disclosure": "2022-2026 market history was already examined in round 1. It is diagnostic only, not an untouched holdout. New candidates cannot qualify for deployment from this reused history.",
+  "universe_rationale": "All nine original Select Sector SPDR funds plus SPY/QQQ; not selected from today's winning sectors or current stock constituents. Sector definitions evolved and remain a limitation.",
+  "candidates": [
+    {
+      "id": "sector_monthly_momentum_15",
+      "family": "momentum",
+      "universe": "sectors",
+      "rebalance": "monthly",
+      "top_k": 3,
+      "max_weight": 0.40,
+      "target_volatility": 0.15
+    },
+    {
+      "id": "sector_weekly_momentum_15",
+      "family": "momentum",
+      "universe": "sectors",
+      "rebalance": "weekly",
+      "top_k": 3,
+      "max_weight": 0.40,
+      "target_volatility": 0.15
+    },
+    {
+      "id": "sector_weekly_momentum_18",
+      "family": "momentum",
+      "universe": "sectors",
+      "rebalance": "weekly",
+      "top_k": 3,
+      "max_weight": 0.40,
+      "target_volatility": 0.18
+    },
+    {
+      "id": "sector_weekly_top2_18",
+      "family": "momentum",
+      "universe": "sectors",
+      "rebalance": "weekly",
+      "top_k": 2,
+      "max_weight": 0.50,
+      "target_volatility": 0.18
+    },
+    {
+      "id": "index_daily_trend_15",
+      "family": "trend",
+      "universe": "indices",
+      "rebalance": "daily",
+      "top_k": 2,
+      "max_weight": 0.50,
+      "target_volatility": 0.15
+    },
+    {
+      "id": "sector_pullback_15",
+      "family": "pullback",
+      "universe": "sectors",
+      "rebalance": "daily",
+      "top_k": 4,
+      "max_weight": 0.25,
+      "target_volatility": 0.15
+    },
+    {
+      "id": "index_pullback_15",
+      "family": "pullback",
+      "universe": "indices",
+      "rebalance": "daily",
+      "top_k": 2,
+      "max_weight": 0.50,
+      "target_volatility": 0.15
+    },
+    {
+      "id": "sector_balanced_15",
+      "family": "blend",
+      "universe": "sectors",
+      "rebalance": "daily",
+      "top_k": 7,
+      "max_weight": 0.40,
+      "target_volatility": 0.15,
+      "components": ["sector_weekly_momentum_15", "sector_pullback_15"]
+    }
+  ]
+}
+
