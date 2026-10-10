@@ -987,6 +987,38 @@ the bounded weekly discovery/review process continues.
 Scheduled agents may publish explicitly checked metadata checkpoints; the
 standalone Slack reporter still performs no git, trading or deployment.
 
+### Static-allocation feasibility diagnostic
+
+The [recorded diagnostic](research/workbench/evidence/static_allocation_feasibility_v1.json)
+uses the existing nine unleveraged assets, including SPY and defensive funds,
+with 2% idle cash. It deliberately uses the entire historical window and
+zero transaction costs to inspect a **fixed-weight, daily-close,
+daily-rebalanced arithmetic-return class**. Each horizon is optimized
+separately. This is not a causal strategy, a deployable backtest, or an
+independent validation result.
+
+The convex normalized-mean problem and a numerical dual certificate agree:
+the specified class has an optimistic ten-year Sharpe ceiling about 0.93375
+and five-year ceiling about 0.99439. Mean/covariance inputs and floating-point
+tolerances are recorded; optimal portfolio weights are not presented as
+trade recommendations. Analytical synthetic cases verify the diagnostic.
+
+```bash
+.venv/bin/python -I -B -m us_quant.allocation_feasibility \
+  --output evidence/static_allocation_feasibility_v1.json
+```
+
+The result adds **zero** strategy trials and cannot be submitted as a
+qualifying strategy through the source-bound reviewer. It does not bound
+dynamic strategies, different assets, different initial-entry assumptions
+or every cost-bearing execution model. Its purpose is to discourage
+unproductive static-mix tuning, not to prove that the overall research goal
+is impossible. Credible progress needs predictive information, a justified
+and verified broader universe, or genuinely new observations.
+The [ordinary-client SEC recheck](research/workbench/evidence/sec_normal_client_check_v1.json)
+still returned 403 under the same identity/network settings; no archive
+download or access-control bypass occurred.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

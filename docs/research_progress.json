@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-11",
-  "phase": "prospective_data_baseline_captured_96_evaluations_no_qualified_strategy",
+  "phase": "static_scope_diagnosed_prospective_data_collecting_goal_unmet",
   "active_research_focus": "recurring_fundamental_multifactor_research",
   "completed": [
     "Preserved runnable incumbent strategy/engine and early-scanner source alongside the isolated 52-configuration workbench.",
@@ -37,7 +37,8 @@
     "Two fixed defensive-allocation variants completed the generic source-bound evaluator and were rejected; winner/diversified10y/5ybaseSharpe0.6922/0.7815 and0.5320/0.4078.96evaluations,no qualified champion.",
     "Added a separate data-only prospective archive with actual acquisition times, first-snapshot baseline, immutable receipts, same-session dedupe and explicit missed-observation gaps; no strategy returns or live trading.",
     "Captured and verified14public sources for the2026-10-09 baseline; duplicate collection skips network and leaves the receipt head unchanged. Zero post-baseline observations and no strategy-return proof.",
-    "Native automation now collects data daily around09:00Asia/Shanghai; factor discovery remains Saturday09:00. Next invocation at configuration was2026-10-11 around09:01; old forward ledgers and notification services remain untouched."
+    "Native automation now collects data daily around09:00Asia/Shanghai; factor discovery remains Saturday09:00. Next invocation at configuration was2026-10-11 around09:01; old forward ledgers and notification services remain untouched.",
+    "A separately labeled full-sample,zero-cost fixed-weight feasibility diagnostic gives numerical Sharpe ceilings about0.93375/0.99439 for10y/5y. It is not a causal strategy or a bound for dynamic trading; adds zero trials and no investment success."
   ],
   "completed_zh": [
     "已保留可运行的原Top30算法、成本引擎和独立早期扫描器，并隔离导入52配置研究工作台。",
@@ -73,9 +74,11 @@
     "两个固定防御资产配置已由通用源码绑定评估器完成并拒绝，单一/分散防御十年五年基础Sharpe为0.6922/0.7815及0.5320/0.4078；累计96项，无合格策略。",
     "新增独立数据归档：记录实际获取时间、首份仅作基线、同交易日去重及明确漏记日期；不计算策略收益或执行交易。",
     "已实际采集并核验14个公开来源的2026-10-09基线；重复运行不联网且收据链不变。基线之后新观察为0，没有前瞻策略收益证明。",
-    "调度已改为每天北京时间09:00左右采集数据，因子探索仍每周六09:00；配置时下次为2026-10-11约09:01，旧前瞻账本和通知服务未改动。"
+    "调度已改为每天北京时间09:00左右采集数据，因子探索仍每周六09:00；配置时下次为2026-10-11约09:01，旧前瞻账本和通知服务未改动。",
+    "另做明确标注的完整样本、零成本固定配比诊断，十年/五年夏普数值上界约0.93375/0.99439；不是可交易策略，也不限制所有动态策略，不增加回测计数或宣称达标。"
   ],
   "next": [
+    "Avoid further static-mix tuning justified only by this exposed sample; the feasibility diagnostic is not a trading rule. Seek credible predictive data or economically justified new information while collecting real new observations.",
     "Archive genuinely new market observations after the baseline, preserve missing sessions, and keep weekly discovery separate; snapshot counts cannot establish Sharpe or investment qualification.",
     "Use an explicitly authorized, coverage-verified historical stock dataset for the fundamental proposals; do not buy a subscription, create an account or substitute current survivors without authorization.",
     "Seek genuinely new, source-verified economic information and independent validation data in the weekly process; preserve all92outcomes and do not retune rejected term-risk or adaptive-allocation rules merely to cross one.",
@@ -89,6 +92,7 @@
     "Preregister bounded hypotheses and preserve failures and the paused forward record."
   ],
   "next_zh": [
+    "不要仅凭已见历史继续调固定配比；可行性诊断不是交易规则。寻找可信预测数据或有经济依据的新信息，并持续采集真实新观察。",
     "继续归档基线之后真实新观察，保留漏记日期并将数据采集与周因子研究分开；快照数量不能证明夏普或投资资格。",
     "基本面提案需要明确授权且历史覆盖可核验的数据；不擅自购买订阅、注册账户或用当前幸存股票替代历史股票池。",
     "周研究优先寻找真实新经济信息与独立验证数据；92项结果保留，不为凑过1而继续重调已失败的期限结构和动态组合。",
@@ -247,6 +251,15 @@
     "strategy_returns_calculated": false,
     "independent_strategy_performance_verified": false,
     "order_authority": false
+  },
+  "static_allocation_diagnostic": {
+    "evidence": "research/workbench/evidence/static_allocation_feasibility_v1.json",
+    "scope": "fixed_weight_daily_close_rebalancing_zero_cost_hindsight",
+    "numeric_sharpe_ceiling_10y": 0.9337478432435221,
+    "numeric_sharpe_ceiling_5y": 0.9943876823088549,
+    "not_a_dynamic_strategy_bound": true,
+    "new_strategy_evaluations": 0,
+    "investment_objective_verified": false
   },
   "source_bound_review": {
     "audit": "research/workbench/evidence/research_program_source_bound_audit_v1.json",
