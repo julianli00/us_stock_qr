@@ -1376,7 +1376,7 @@ Adding the second momentum fund raises five-year tickets from 305 to 366,
 and five-year stress costs from USD434.31 for full PDP to USD496.29 for
 the implementation mix. No mix optimization is justified by these outcomes.
 
-The [latest program state](research/workbench/evidence/research_program_2026-W41_results_v24.json)
+The [momentum-round program state](research/workbench/evidence/research_program_2026-W41_results_v24.json)
 retains **106 complete configurations, 22 reviews, two terminal invalid
 strategy-code versions, the separately resolved accounting incident, no
 pending candidates and no qualified research champion**.
@@ -1508,6 +1508,36 @@ costs, execution delays, fresh
 capital and Sharpe/SPY/drawdown goals stay unchanged. The existing data-only
 prospective archive does not yet contain BAA10Y; no new independent
 credit-strategy observations or future results are claimed.
+
+The [completed credit results](research/workbench/evidence/credit_factor_guard_20261011_results.json)
+reject both fixed hypotheses:
+
+| Credit rule | Ten-year base/stress Sharpe | Five-year base/stress Sharpe | Ten/five-year base drawdown |
+|---|---|---|---|
+| Below trailing median only | 0.8125 / 0.7649 | 0.6711 / 0.4926 | 15.65% / 15.80% |
+| Also recover on compression | 0.8756 / 0.8472 | 0.6793 / 0.5100 | 16.67% / 16.90% |
+
+Neither meets any full path's Sharpe/SPY/drawdown contract. The
+[control attribution](research/workbench/evidence/credit_factor_guard_20261011_attribution.json)
+verifies identical issue dates, unchanged gold, original family budgets
+when equity is enabled, and actual BIL holding for every removed equity
+budget. The strict guard reduces some drawdown but misses return.
+Recovery improves ten-year Sharpe versus the original static control, but
+still reduces CAGR by about 2.58 percentage points; its five-year Sharpe
+and CAGR are lower. Both variants miss the index return goal.
+This does not establish that every credit indicator is useless, and does
+not justify tuning the rejected recovery/median windows on exposed history.
+
+The [current program snapshot](research/workbench/evidence/research_program_2026-W41_results_v26.json)
+retains **108 complete configurations, 24 completed reviews, two terminal
+invalid code versions, the separately resolved accounting incident, no
+pending candidates and no qualified champion**.
+The [96-path source-bound audit](research/workbench/evidence/research_program_source_bound_audit_v6.json)
+preserves all original outcomes, including 19 legacy and five explicit
+version-two reviews. The earlier joint-selection audit still applies only
+to its frozen 22-candidate cohort, not the two new credit candidates.
+The original prospective archive stays unchanged, with zero new
+observations and no Baa/credit-strategy forward-performance proof.
 
 ## Progress and publication
 
