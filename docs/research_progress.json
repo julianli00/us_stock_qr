@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-10",
-  "phase": "audited_etf_scope_ready_two_candidates_registered",
+  "phase": "recurring_research_two_real_etf_candidates_rejected",
   "active_research_focus": "recurring_fundamental_multifactor_research",
   "completed": [
     "Preserved runnable incumbent strategy/engine and early-scanner source alongside the isolated 52-configuration workbench.",
@@ -24,7 +24,8 @@
     "Implemented a weekly evidence-gated factor journal and research-version review that freezes code/data/cutoffs and reexecutes actual market/target costs and independent accounting; no live promotion.",
     "The first2026-W41 cycle registered cash-flow accrual quality and conservative asset growth; six definitions across five economic families,84evaluated configurations unchanged, no qualified research champion. SEC403 and full-universe historical-data blockers remain.",
     "Native session automation is enabled for Saturday09:00Asia/Shanghai; next scheduled invocation observed2026-10-17. Duplicate weeks are skipped, incomplete registered work is resumed, and all failed research remains recorded.",
-    "Added a separate verified actual-factor-ETF scope through an exact-hash engine migration; all prior events, factors and stock-data blockers remain intact. Registered two fixed factor/gold risk candidates before computing outcomes."
+    "Added a separate verified actual-factor-ETF scope through an exact-hash engine migration; all prior events, factors and stock-data blockers remain intact. Registered two fixed factor/gold risk candidates before computing outcomes.",
+    "Both actual candidates completed recurring review and were rejected: monthly risk-balance Sharpe0.9055/0.9602 and daily-control0.8367/0.8896 in10y/5y base windows, with worse stress results. Evaluated configurations now86; no research champion or live update."
   ],
   "completed_zh": [
     "已保留可运行的原Top30算法、成本引擎和独立早期扫描器，并隔离导入52配置研究工作台。",
@@ -47,10 +48,11 @@
     "已实现按周因子账本和研究版本审阅：冻结代码、数据及截止日，实际重跑交易成本和独立记账；不自动实盘升级。",
     "首轮2026-W41登记现金流应计质量、保守资产增长两个提案；共6个定义、5个经济家族，已回测仍84个，新合格策略为0，SEC403和完整历史股票数据缺口未解决。",
     "已启用每周六北京时间09:00的本会话自动研究，下次计划为2026-10-17；重复周不重复登记，中断候选继续原版本，失败记录保留。",
-    "通过精确哈希迁移增加实际因子ETF专用数据入口，原事件、因子和个股数据阻断全部保留；已在业绩计算前登记两个固定因子/黄金风险候选。"
+    "通过精确哈希迁移增加实际因子ETF专用数据入口，原事件、因子和个股数据阻断全部保留；已在业绩计算前登记两个固定因子/黄金风险候选。",
+    "两个真实候选已由周期审阅器完成评估并拒绝：月度风险平衡十年/五年基础Sharpe0.9055/0.9602，每日风控0.8367/0.8896，压力更低；累计已评估86个，未更新合格策略或交易权限。"
   ],
   "next": [
-    "Evaluate the two preregistered unleveraged ETF candidates through the actual recurring review gates; do not relax performance goals or pretend stock fundamentals are available.",
+    "Continue the weekly evidence-driven search with both explicit data scopes; do not repeat the rejected factor/gold configurations or treat negative outcomes as a qualified strategy.",
     "At the next weekly cycle, verify legitimate data access and historical coverage before evaluating the new fundamental proposals; record unavailable sources rather than bypassing403 or manufacturing histories.",
     "Require at least three economic factor families and unchanged Sharpe/SPY/drawdown gates before advancing a research version; no qualified current champion exists.",
     "Seek verifiable historical execution or publication-time fundamental data for new hypotheses; do not retune the near-threshold band on the same exposed history.",
@@ -61,7 +63,7 @@
     "Preregister bounded hypotheses and preserve failures and the paused forward record."
   ],
   "next_zh": [
-    "将两个预注册无杠杆ETF候选送入真实周期审阅器；绩效门槛不放宽，也不假装个股基本面数据已齐备。",
+    "按周继续有证据的因子研究，区分实际ETF与个股数据范围；不重复已拒绝的因子/黄金配置，不把失败当合格策略。",
     "下个周周期先核对合规数据访问与历史覆盖，再评估基本面提案；不可绕过403或造数据，缺失就明确记为阻断。",
     "至少三个经济因子家族、原Sharpe/SPY/回撤门槛不放宽，符合才推进研究版本；当前没有新合格策略。",
     "下一类假设先补可核实的历史执行数据或带披露时间的基本面证据，不在同一已见历史上微调接近门槛的交易带。",
@@ -177,20 +179,24 @@
     "order_authority": false
   },
   "recurring_research_program": {
-    "state": "weekly_enabled_stock_data_blocked_etf_candidates_registered",
+    "state": "weekly_enabled_stock_data_blocked_etf_candidates_reviewed_rejected",
     "policy": "research/workbench/config/research-program.json",
-    "cycle_snapshot": "research/workbench/evidence/research_program_2026-W41.json",
+    "cycle_snapshot": "research/workbench/evidence/research_program_2026-W41_results_v3.json",
+    "initial_cycle_snapshot": "research/workbench/evidence/research_program_2026-W41.json",
     "automation_receipt": "research/workbench/evidence/research_program_automation_20261010.json",
     "readiness": "research/workbench/evidence/research_program_data_readiness_20261010.json",
     "new_factor_proposals": 2,
     "known_factor_definitions": 6,
     "economic_factor_families": 5,
     "independent_factor_count_verified": false,
-    "new_strategy_evaluations": 0,
-    "total_evaluated_configurations": 84,
+    "new_strategy_evaluations": 2,
+    "total_evaluated_configurations": 86,
     "research_champion": null,
     "research_versions": 0,
     "data_blockers": 5,
+    "blocked_scope": "direct_stock",
+    "verified_scope": "factor_etf_portfolio",
+    "automation_scope_instructions_updated_at": "2026-10-10T09:11:02.075Z",
     "schedule": "Saturday09:00Asia/Shanghai",
     "next_scheduled_run_at_receipt_utc": "2026-10-17T01:00:28.000Z",
     "future_scheduled_run_observed": false,
@@ -203,7 +209,10 @@
     "migration_snapshot": "research/workbench/evidence/research_program_2026-W41_scope_v2.json",
     "registration": "research/workbench/evidence/factor_gold_risk_20261010_registration.json",
     "new_registered_candidates": 2,
-    "new_evaluated_candidates": 0,
+    "new_evaluated_candidates": 2,
+    "results": "research/workbench/evidence/factor_gold_risk_20261010_results.json",
+    "accepted_candidates": 0,
+    "rejected_candidates": 2,
     "stock_data_blockers_unchanged": true,
     "goals_unchanged": true,
     "order_authority": false

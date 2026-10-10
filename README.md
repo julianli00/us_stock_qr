@@ -592,6 +592,30 @@ evaluation. Outcomes go through its market/target/cost and independent `bt`
 replay, not a parallel success flag. Already registered or reviewed work is
 preserved and resumed without duplicating trials.
 
+The explicit migration and both preregistrations are recorded in
+[the scope snapshot](research/workbench/evidence/research_program_2026-W41_scope_v2.json)
+and [candidate receipts](research/workbench/evidence/factor_gold_risk_20261010_registration.json).
+The [actual evaluated outcomes](research/workbench/evidence/factor_gold_risk_20261010_results.json)
+were submitted through the recurring reviewer, which regenerated all strategy
+and SPY paths from market data/targets and independent `bt` accounting.
+Both candidates were recorded as `rejected_historical`:
+
+| Rule | Window | Base net CAGR | Base Sharpe | Base drawdown | Stress Sharpe |
+| --- | --- | ---: | ---: | ---: | ---: |
+| Four-factor/gold monthly risk balance | Ten years | 13.19% | 0.9055 | 20.20% | 0.8776 |
+| Four-factor/gold monthly risk balance | Five years | 16.10% | 0.9602 | 18.22% | 0.9200 |
+| Same baseline with daily volatility control | Ten years | 11.17% | 0.8367 | 18.19% | 0.7788 |
+| Same baseline with daily volatility control | Five years | 13.96% | 0.8896 | 18.35% | 0.8523 |
+
+The [updated program snapshot](research/workbench/evidence/research_program_2026-W41_results_v3.json)
+has 86 evaluated configurations, two new completed strategy reviews, and
+still no qualifying research champion or version update. The two new
+fundamental-factor proposals and all five direct-stock data blockers are
+unchanged. ETF research is no longer blocked merely because stock fundamentals
+are missing, but working data access does not make either strategy successful.
+Weekly automation instructions now distinguish both scopes and retain every
+failure; no performance threshold, old ledger or trading permission changed.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
