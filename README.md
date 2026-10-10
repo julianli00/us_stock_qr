@@ -1311,6 +1311,48 @@ while requiring explicit new-accounting references and preserved failure
 evidence. No future scheduled execution is claimed. Duplicate collection
 again leaves one October 9 baseline and zero post-baseline observations.
 
+### Alternative implementation within the momentum family
+
+`config/momentum-implementation.json` freezes two alternatives after 104
+completed configurations: replace MTUM's original momentum-family budget
+with PDP, or use equal MTUM/PDP shares within that same budget. Value,
+quality, low-volatility and aggregate equity/gold target budgets stay
+identical to the already evaluated original factor/gold control.
+The second momentum fund is not a fifth independent economic factor.
+
+PDP's actually retrieved official
+[product page](https://www.invesco.com/us/en/financial-products/etfs/invesco-dorsey-wright-momentum-etf.html)
+identifies US passive equity, ISIN US46137V8375, March 1, 2007 inception,
+and the Dorsey Wright Technical Leaders mandate. The directly retrieved
+[Nasdaq methodology](https://indexes.nasdaqomx.com/docs/Methodology_DorseyWrightTechnicalIndexes.pdf)
+and [index page](https://indexes.nasdaq.com/Index/Overview/DWTL) confirm DWTL's
+proprietary relative-strength selection. These are actual current primary
+sources, not proof that all historical methodology versions were identical.
+The issuer factsheet URL returned audience-selection HTML, not a PDF;
+neither that gate nor Stooq's browser verification was bypassed.
+
+The new actual PDP history has 2,805 complete sessions over the unchanged
+factor-data interval, positive volume throughout, and explained adjustment
+changes. The adapter reparses raw OHLCV and corporate actions, compares
+the retained CSV and binds the actual document hashes. It never fills
+SPMO's previously rejected zero-volume records or shortens either formal
+return window. The
+[source audit](research/workbench/evidence/momentum_implementation_source_audit_v1.json)
+retains SPMO's 238 zero-volume rejection, Stooq's HTML verification response
+and the issuer's non-PDF factsheet response. Current primary documents
+support PDP's mandate without claiming a complete historical method archive.
+
+```bash
+cd research/workbench
+.venv/bin/python -I -B -m us_quant.momentum_implementation
+```
+
+Preparation creates hashed panels but computes no strategy outcomes.
+Register both fixed configurations before the generic versioned-accounting
+evaluator; preserve failures and unchanged costs, delay and full gates.
+Actual fund returns are not a recreated proprietary stock-score strategy
+or independent forward evidence.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

@@ -20,6 +20,7 @@ GENERATORS = {
     "conditional_factor_model": "config/conditional-factor-model.json",
     "factor_momentum_comparison": "config/factor-momentum-comparison.json",
     "trend_factor_guard": "config/trend-factor-guard.json",
+    "momentum_implementation": "config/momentum-implementation.json",
 }
 
 
@@ -55,6 +56,13 @@ def registered_generator(spec: dict, root: Path) -> tuple[str, dict]:
             required += [
                 "src/us_quant/factor_gold_risk.py",
                 "config/factor-gold-risk.json",
+                "src/us_quant/multifactor_stability.py",
+            ]
+        elif name == "momentum_implementation":
+            required += [
+                "src/us_quant/factor_gold_risk.py",
+                "config/factor-gold-risk.json",
+                "src/us_quant/factor_replication.py",
                 "src/us_quant/multifactor_stability.py",
             ]
         if any(relative not in frozen for relative in required):
@@ -145,6 +153,10 @@ def registered_targets(
             cache[key] = build_targets(data, policy)[spec["id"]]
         elif name == "trend_factor_guard":
             from us_quant.trend_factor_guard import build_targets
+
+            cache[key] = build_targets(data, policy)[spec["id"]]
+        elif name == "momentum_implementation":
+            from us_quant.momentum_implementation import build_targets
 
             cache[key] = build_targets(data, policy)[spec["id"]]
     return seed_window(cache[key], start)
