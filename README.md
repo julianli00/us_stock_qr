@@ -1598,6 +1598,43 @@ before any candidate relying on them. They do not invent a future execution
 or use a synthetic clock. Minimum economic-family, weekly-definition,
 cost, risk and return criteria remain unchanged.
 
+### Separate expanded prospective input archive
+
+`config/prospective-factor-inputs.json` defines a new data-only archive for
+IJR, PKW and BAA10Y in addition to the existing 14 public sources.
+`prospective_factor_inputs.py` composes the unchanged parent archive's
+receipt, lock, gap and deadline logic. It never changes the original
+collector, parent registration, receipt chain or paused strategy ledgers.
+
+The new collector requires a verified parent snapshot for the **same
+completed session**. It copies the exact parent input bytes and retains
+their actual acquisition times, then requests only the two extra fund
+histories and one extra credit series. Expanded records have their own
+collector hash and receipt chain, tied to the parent's registration and
+same-session receipt hash. A missing parent, changed source, failed fetch
+or next-open deadline miss cannot produce a completed expanded snapshot.
+
+The first expanded snapshot is another **baseline**, not a second
+independent market observation. Snapshot counts never imply a strategy
+Sharpe, P&L or trading qualification. Capturing IJR/PKW data does not
+register the queued factor definitions early; their weekly eligibility
+still applies. The proprietary Baa observations and aligned values remain
+private. All price/macro rows are current-vendor context, not proof they
+were first available when those historical rows occurred.
+
+```bash
+cd research/workbench
+.venv/bin/python -I -B -m us_quant.prospective_factor_inputs init
+.venv/bin/python -I -B -m us_quant.prospective_data collect
+.venv/bin/python -I -B -m us_quant.prospective_factor_inputs collect
+.venv/bin/python -I -B -m us_quant.prospective_factor_inputs status
+```
+
+Initialize only the new explicitly named expanded archive, never the
+existing parent. Daily execution collects the parent first and expanded
+inputs second; same-session duplicates make no network requests.
+Both archives preserve missed sessions without retroactive backfill.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

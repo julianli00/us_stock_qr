@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "collector_id": "prospective_factor_inputs_v2",
+  "timezone": "Asia/Shanghai",
+  "collection_hour": 9,
+  "parent_policy": "config/prospective-data.json",
+  "parent_archive": "data/prospective-market-v1",
+  "additional_symbols": ["IJR", "PKW"],
+  "additional_macro_series": ["BAA10Y"],
+  "publication_delay_sessions": 2,
+  "maximum_observation_age_days": 7,
+  "inherit_only_matching_completed_session": true,
+  "retain_parent_acquisition_times": true,
+  "record_before_next_open": true,
+  "first_snapshot_is_baseline_only": true,
+  "backfill_missed_observations": false,
+  "compute_strategy_returns": false,
+  "order_authority": false,
+  "purpose": "Capture genuinely acquired extra factor/risk inputs after a completed session, using the already verified same-session parent snapshot without refetching or rewriting its14sources.",
+  "limitations": "An expanded baseline is not a new post-baseline observation or strategy return. New catalog definitions still require an eligible weekly cycle. BAA10Y is a proprietary Baa/Treasury proxy,not high-yield OAS; raw inputs and aligned credit values stay private. Current vendor downloads do not prove unrevised point-in-time history."
+}
