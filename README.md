@@ -1757,6 +1757,10 @@ the original rejected status must verify. Capture is restricted to actual
 known inputs before the next open; same-session duplicates do not regenerate
 targets. The existing 108 historical configurations and queued six-family
 definitions/candidates remain unchanged.
+The [observer registration](research/workbench/evidence/prospective_target_observations_v1_registration.json)
+pins the rule and recording policy before the first generated target.
+The source candidate remains rejected, and registration itself creates
+zero target observations, orders, portfolios or strategy-performance paths.
 
 ## Progress and publication
 
