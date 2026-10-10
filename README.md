@@ -1762,6 +1762,28 @@ pins the rule and recording policy before the first generated target.
 The source candidate remains rejected, and registration itself creates
 zero target observations, orders, portfolios or strategy-performance paths.
 
+The [first actual intent record](research/workbench/evidence/prospective_target_observations_v1_first_target.json)
+was generated at **2026-10-10T21:59:17.810517Z**, using the October 9 input
+snapshot actually captured at 16:44:09.524784Z. The latest completed rule
+month is September 30; the output is **not backdated to September 30**.
+Hypothetical next-open/extra-delay dates October 12/13 are unfilled research
+intent, not a claim to have traded or earned returns.
+
+The [first receipt](research/workbench/evidence/prospective_target_observations_v1_first_receipt.json)
+binds the target to the original source snapshot and observation-policy
+registration. The [status](research/workbench/evidence/prospective_target_observations_v1_initial_status.json)
+has one target observation and zero portfolios, orders, returns or research
+champion updates. Same-session reruns are verified not to regenerate or
+change the receipt. Full target weights are retained privately rather than
+published as an actionable allocation. The source strategy remains
+historically rejected; the 108 completed configurations are unchanged.
+
+The [updated daily instructions](research/workbench/evidence/prospective_data_automation_v7.json)
+collect parent inputs, then expanded inputs, then target observations.
+They preserve the old monthly target until a new month is actually
+available and never restart a paused forward account. Actual future
+automated execution, strategy fills or Sharpe qualification is not claimed.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
