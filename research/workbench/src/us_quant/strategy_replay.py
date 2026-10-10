@@ -17,6 +17,7 @@ GENERATORS = {
     "macro_factor_tilt": "config/macro-factor-tilt.json",
     "defensive_factor_rotation": "config/defensive-factor-rotation.json",
     "growth_factor_satellite": "config/growth-factor-satellite.json",
+    "conditional_factor_model": "config/conditional-factor-model.json",
 }
 
 
@@ -114,6 +115,10 @@ def registered_targets(
             cache[key] = build_targets(data, policy)[spec["id"]]
         elif name == "growth_factor_satellite":
             from us_quant.growth_factor_satellite import build_targets
+
+            cache[key] = build_targets(data, policy)[spec["id"]]
+        elif name == "conditional_factor_model":
+            from us_quant.conditional_factor_model import build_targets
 
             cache[key] = build_targets(data, policy)[spec["id"]]
     return seed_window(cache[key], start)

@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "study_id": "conditional_factor_model_20261011",
+  "prior_evaluated_configurations": 98,
+  "new_configurations": 2,
+  "as_of": "2026-10-05",
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "factor_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "training_months": 36,
+  "minimum_training_months": 9,
+  "model_parameters": {"ridge": {"alpha": 10.0, "solver": "svd"}},
+  "clip_current_features_to_training_range": true,
+  "minimum_predicted_excess_return": 0.005,
+  "ranked_factor_shares": [0.35, 0.30, 0.20, 0.15],
+  "maximum_single_risk_sleeve": 0.70,
+  "cash_reserve": 0.02,
+  "candidates": [
+    {"id": "conditional_price_factor_model", "augmented_information": false},
+    {"id": "conditional_macro_option_factor_model", "augmented_information": true}
+  ],
+  "methodology": {
+    "label": "Per fund: next-session open after a completed month end to the next completed-month-end-plus-one-session open, minus BIL over the same interval. Train a label only after its actual exit open occurred.",
+    "price_features": "Observed21/63-session returns,63-session volatility/drawdown,SPY63-session return/volatility and fund identity.",
+    "augmented_features": "Same price features plus explicitly lagged FRED term spread,real yield and63-session real-yield change, and completed-day official VIX level/VIX-to-VIX3M ratio.",
+    "training": "Pooled five-fund model for the four factor funds and GLD, refit at each completed month end using at most36months of matured labels. Standardization uses training rows only; current numerical predictors are clipped to observed training ranges.",
+    "early_sample_limit": "The earliest formal evaluation starts after only9distinct matured months due actual factor-fund history availability. Cross-sectional rows are not independent months. This weak early training sample is disclosed, not filled with synthetic history.",
+    "allocation": "Rank four factor forecasts into fixed35/30/20/15%equity shares. The composite equity forecast and gold forecast each need expected monthly excess return above0.5%. Both positive: inverse63-session-volatility balance with30%-70%equity bounds. Only one positive: allocate70%of98%invested budget to it and the remainder toBIL. Neither positive: BIL98%.",
+    "factors": "Existing economic exposures are retained; rolling coefficient/weight adaptation is not discovery of new independent economic factors.",
+    "validation": "Freeze both models before outcomes. No hyperparameter search, random train/test split or future labels. Retain same10y/5y windows,actual costs,source-bound regeneration and original Sharpe/SPY/15%drawdown gates.",
+    "history_status": "exposed_history_not_independent_holdout",
+    "order_authority": false,
+    "independent_forward_validation": false
+  }
+}

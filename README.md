@@ -1068,6 +1068,40 @@ not a strategy, not a joint shared-weight result, and not a bound on all
 dynamic or cost-bearing execution. It adds zero strategy trials and cannot
 qualify as investment success.
 
+### Causally trained conditional forecasts
+
+`config/conditional-factor-model.json` freezes a price-only pooled ridge model
+and the same model augmented with the previously verified macro/option risk
+inputs. Both predict each factor fund's and gold's next monthly open-to-open
+return relative to BIL. A training label is eligible only after its exit open
+has occurred; neither the current holding period nor a future label can enter
+the training set. Training-window selection and the fixed ridge pipeline
+reuse the imported workbench helpers.
+
+The model uses at most 36 distinct months, training-only standardization,
+and current-feature clipping to observed training ranges. The earliest fit
+has only nine matured months due actual fund-history availability; five
+cross-sectional observations per month are not five independent months.
+The weak initial sample is disclosed rather than replaced with synthetic
+pre-inception histories.
+
+Forecasts rank the four factor funds into fixed 35/30/20/15% equity shares.
+Equity and gold allocations require a fixed positive-excess forecast hurdle;
+risk balance and BIL handle the declared active/inactive cases. Model
+coefficients and allocations update chronologically, but this is not
+discovery of new independent economic factors or a live strategy update.
+Price-only predictions must remain unchanged when only macro/option data
+are perturbed, and future prices/labels cannot change earlier predictions.
+
+```bash
+.venv/bin/python -I -B -m us_quant.conditional_factor_model
+# Register both specs with the recurring program, then evaluate-candidate.
+```
+
+The source-bound reviewer regenerates the whole forecasting sequence before
+checking actual costs and performance. No hyperparameter search, random split
+or weakening of the original Sharpe/SPY/drawdown gates is part of this study.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
