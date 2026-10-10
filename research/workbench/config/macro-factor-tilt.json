@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "study_id": "macro_factor_tilt_20261010",
+  "prior_evaluated_configurations": 92,
+  "new_configurations": 2,
+  "as_of": "2026-10-05",
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "factor_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "publication_delay_sessions": 2,
+  "maximum_observation_age_days": 7,
+  "real_yield_change_sessions": 63,
+  "rising_real_yield_factor_shares": [0.15, 0.35, 0.15, 0.35],
+  "nonrising_real_yield_factor_shares": [0.35, 0.15, 0.35, 0.15],
+  "inverted_curve_equity_scale": 0.50,
+  "candidates": [
+    {"id": "macro_real_yield_factor_tilt", "curve_defense": false},
+    {"id": "macro_real_yield_tilt_curve_defense", "curve_defense": true}
+  ],
+  "source_definitions": {
+    "T10Y3M": "10-year minus3-month Treasury constant-maturity yield spread, percentage points; Federal Reserve Bank of St.Louis, https://fred.stlouisfed.org/series/T10Y3M",
+    "DFII10": "10-year inflation-indexed Treasury constant-maturity real yield, percent; Federal Reserve Board H.15, https://fred.stlouisfed.org/series/DFII10"
+  },
+  "methodology": {
+    "hypothesis": "A rising real discount rate may favor value/low-volatility exposures over growth-sensitive momentum/quality. Test a fixed bounded factor-share tilt, not an optimized rule.",
+    "macro_timing": "An observation is usable only at the close of the secondNYSEsession strictly after its calendar date. Carry the last available published level across missing release days only while its observation date is at most7calendar days old. Do not synthesize a new observation.",
+    "macro_vintage": "Current historical FRED downloads are not ALFRED vintages. The conservative publication lag is explicit but does not prove that the provider never revised past values.",
+    "allocation": "Use the unchanged original four-factor/gold63-session monthly risk-balance equity/gold totals. If laggedDFII10 rose over63trading sessions, factor shares are15/35/15/35%; otherwise35/15/35/15%. All four economic factor exposures remain positive.",
+    "curve_defense": "Only the second configuration halves total equity when laggedT10Y3M is nonpositive, moving the reduction to BIL. Gold remains unchanged.",
+    "execution": "Completed month-end decisions only; same USD10,000,2%cash,USD1commission,5bp next-open base and20bp extra-session stress. No leverage or macro-index trading.",
+    "research_status": "Two fixed new configurations after92prior evaluations. Macro risk inputs are not verified new alpha factors. No threshold/window sweep or altered benchmark goals.",
+    "order_authority": false,
+    "independent_forward_validation": false
+  }
+}

@@ -790,6 +790,44 @@ purchase, account creation or current-stock-list substitution is implicit.
 The strategy objective remains unfulfilled and the weekly research schedule
 does not guarantee that a qualifying strategy exists.
 
+### Public macro information without a subscription
+
+With no authorization to buy data or open accounts, the next fixed study
+uses two public FRED series: T10Y3M (ten-year minus three-month Treasury
+constant-maturity yield spread) and DFII10 (ten-year inflation-indexed real
+Treasury yield). The source pages identify the Federal Reserve Bank of
+St. Louis and Federal Reserve Board H.15, respectively. Standard Python
+HTTP requests had transport errors; `curl` using the existing network
+configuration obtained the official CSV files. No access-control or
+proxy bypass was used.
+
+The [source manifest](research/workbench/evidence/macro_rate_source_20261010.json)
+retains both CSV fingerprints and their real missing-release counts.
+`config/macro-factor-tilt.json` preregisters two configurations: a fixed
+factor-share tilt when lagged real yields rise, and the same tilt with
+equity reduction during a nonpositive nominal yield-curve spread.
+Allocation is evaluated only at completed month ends; the original aggregate
+equity/gold risk balance is preserved before the declared defense.
+
+An observation is usable only after two complete NYSE sessions strictly
+following its date. The last available observation can be carried across
+release holidays only while its actual observation date is at most seven
+calendar days old; each decision's observation/availability dates are recorded.
+Negative rates are preserved, missing values are not invented, and future
+observations cannot change earlier signals. These are current historical
+downloads, not vintage ALFRED proof of unrevised past data.
+
+```bash
+.venv/bin/python -I -B -m us_quant.macro_factor_tilt prepare
+.venv/bin/python -I -B -m us_quant.macro_factor_tilt register
+.venv/bin/python -I -B -m us_quant.macro_factor_tilt evaluate
+```
+
+Both configurations still require real recurring-program registration and
+independent market/target/accounting review. Macro information is not a
+substitute for the missing individual-stock financial dataset and does not
+itself establish a profitable or independently verified factor.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
