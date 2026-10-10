@@ -1,0 +1,181 @@
+{
+  "QQQ_is_growth_beta_not_independent_factor": true,
+  "interpretation": "The monthly growth core only barely crosses one in the5ybaseSharpe path,not joint horizons/costs or retained drawdown. Ratchet protection meets modeled drawdown gates in these paths but loses netSharpe/CAGR and SPYadvantage. High costs,larger turnover and defensive cash allocation are measured,not a new alpha claim;gaps/delay/bands can still breach protection targets.",
+  "new_strategy_evaluations": 0,
+  "old22candidate_statistical_cohort_extended": false,
+  "order_authority": false,
+  "queued_six_family_strategy_returns_computed": false,
+  "rows": [
+    {
+      "accounts": [
+        {
+          "candidate_id": "four_factor_growth_gold_monthly_control",
+          "cost_paid_usd": 820.9818372377426,
+          "dollar_turnover_usd": 189963.6744754852,
+          "mean_realized_QQQ_share": 0.2342930883334514,
+          "mean_realized_bil_share": 0.0,
+          "mean_realized_four_factor_share": 0.23377045537828084,
+          "model_order_tickets": 726,
+          "summed_turnover_ratio": 10.25657272669143,
+          "defined_target_rows_in_complete_stored_matrix": 132
+        },
+        {
+          "candidate_id": "four_factor_growth_gold_ratchet_protection",
+          "cost_paid_usd": 3551.3705194187883,
+          "dollar_turnover_usd": 904741.0388375764,
+          "mean_realized_QQQ_share": 0.1794164651563993,
+          "mean_realized_bil_share": 0.24953280351875917,
+          "mean_realized_four_factor_share": 0.17908612643130048,
+          "model_order_tickets": 3099,
+          "summed_turnover_ratio": 59.20830545053871,
+          "defined_target_rows_in_complete_stored_matrix": 443
+        }
+      ],
+      "actual_closing_peak_and_cost_feedback_verified": true,
+      "all_targets_cash_funded": true,
+      "detailed_causal_decisions_sha256": "e12db085e220bd9440c92181d6ceedfea9d8a076817df63070b6345f5ebc7362",
+      "fresh_initial_nav_and_peak_usd": 10000,
+      "pending_requests_never_overwritten": true,
+      "protected_minus_control_cagr": -0.0636155600165873,
+      "protected_minus_control_drawdown": -0.06335944541565308,
+      "protected_minus_control_sharpe": -0.2872055421509264,
+      "protection_decision_reasons": {
+        "actual_weight_protection_band": 322,
+        "initial_capital": 1,
+        "monthly_target": 120
+      },
+      "same_four_factor_QQQ_ratio_in_issued_risky_targets": true,
+      "scenario": "base",
+      "years": 10
+    },
+    {
+      "accounts": [
+        {
+          "candidate_id": "four_factor_growth_gold_monthly_control",
+          "cost_paid_usd": 1094.922785458488,
+          "dollar_turnover_usd": 184461.39272924385,
+          "mean_realized_QQQ_share": 0.23447097044743775,
+          "mean_realized_bil_share": 0.0,
+          "mean_realized_four_factor_share": 0.23393831348841193,
+          "model_order_tickets": 726,
+          "summed_turnover_ratio": 10.172925782927305,
+          "defined_target_rows_in_complete_stored_matrix": 132
+        },
+        {
+          "candidate_id": "four_factor_growth_gold_ratchet_protection",
+          "cost_paid_usd": 4059.7385193793025,
+          "dollar_turnover_usd": 672369.2596896511,
+          "mean_realized_QQQ_share": 0.16260612511190414,
+          "mean_realized_bil_share": 0.3273940711130358,
+          "mean_realized_four_factor_share": 0.1623977370787406,
+          "model_order_tickets": 2715,
+          "summed_turnover_ratio": 49.90212120570502,
+          "defined_target_rows_in_complete_stored_matrix": 388
+        }
+      ],
+      "actual_closing_peak_and_cost_feedback_verified": true,
+      "all_targets_cash_funded": true,
+      "detailed_causal_decisions_sha256": "b0ef98a0c16e2e53417a0706ead74f1f484f5989a7ac30d9786fd6f20762704d",
+      "fresh_initial_nav_and_peak_usd": 10000,
+      "pending_requests_never_overwritten": true,
+      "protected_minus_control_cagr": -0.08195788826677641,
+      "protected_minus_control_drawdown": -0.05749884739145872,
+      "protected_minus_control_sharpe": -0.46786729411966277,
+      "protection_decision_reasons": {
+        "actual_weight_protection_band": 267,
+        "initial_capital": 1,
+        "monthly_target": 120
+      },
+      "same_four_factor_QQQ_ratio_in_issued_risky_targets": true,
+      "scenario": "stress",
+      "years": 10
+    },
+    {
+      "accounts": [
+        {
+          "candidate_id": "four_factor_growth_gold_monthly_control",
+          "cost_paid_usd": 403.0956396953903,
+          "dollar_turnover_usd": 74191.27939078053,
+          "mean_realized_QQQ_share": 0.2407428815311643,
+          "mean_realized_bil_share": 0.0,
+          "mean_realized_four_factor_share": 0.24024673722251394,
+          "model_order_tickets": 366,
+          "summed_turnover_ratio": 5.3353612171251665,
+          "defined_target_rows_in_complete_stored_matrix": 132
+        },
+        {
+          "candidate_id": "four_factor_growth_gold_ratchet_protection",
+          "cost_paid_usd": 1901.885665019033,
+          "dollar_turnover_usd": 433771.33003806515,
+          "mean_realized_QQQ_share": 0.18001395556709995,
+          "mean_realized_bil_share": 0.2710525405463973,
+          "mean_realized_four_factor_share": 0.17969562344289922,
+          "model_order_tickets": 1685,
+          "summed_turnover_ratio": 33.085694202806984,
+          "defined_target_rows_in_complete_stored_matrix": 241
+        }
+      ],
+      "actual_closing_peak_and_cost_feedback_verified": true,
+      "all_targets_cash_funded": true,
+      "detailed_causal_decisions_sha256": "5cfed42e13da242e9ee7bd000d38fec44ad3e47d0d5f8859bd5e9267b31e6645",
+      "fresh_initial_nav_and_peak_usd": 10000,
+      "pending_requests_never_overwritten": true,
+      "protected_minus_control_cagr": -0.07056647059203747,
+      "protected_minus_control_drawdown": -0.06511954807787412,
+      "protected_minus_control_sharpe": -0.30310256382806045,
+      "protection_decision_reasons": {
+        "actual_weight_protection_band": 180,
+        "initial_capital": 1,
+        "monthly_target": 60
+      },
+      "same_four_factor_QQQ_ratio_in_issued_risky_targets": true,
+      "scenario": "base",
+      "years": 5
+    },
+    {
+      "accounts": [
+        {
+          "candidate_id": "four_factor_growth_gold_monthly_control",
+          "cost_paid_usd": 510.2644756835757,
+          "dollar_turnover_usd": 72132.23784178779,
+          "mean_realized_QQQ_share": 0.2406958016478467,
+          "mean_realized_bil_share": 0.0,
+          "mean_realized_four_factor_share": 0.2402512667026118,
+          "model_order_tickets": 366,
+          "summed_turnover_ratio": 5.267399673704544,
+          "defined_target_rows_in_complete_stored_matrix": 132
+        },
+        {
+          "candidate_id": "four_factor_growth_gold_ratchet_protection",
+          "cost_paid_usd": 2422.6759056796964,
+          "dollar_turnover_usd": 400337.9528398479,
+          "mean_realized_QQQ_share": 0.17542128566222162,
+          "mean_realized_bil_share": 0.2904702502809597,
+          "mean_realized_four_factor_share": 0.1752951782015932,
+          "model_order_tickets": 1622,
+          "summed_turnover_ratio": 32.356836753140854,
+          "defined_target_rows_in_complete_stored_matrix": 232
+        }
+      ],
+      "actual_closing_peak_and_cost_feedback_verified": true,
+      "all_targets_cash_funded": true,
+      "detailed_causal_decisions_sha256": "01a7ae8b84b9eb544dd3e602a2168eda9688d483ee1bb6cf1bfaff3d028a36a0",
+      "fresh_initial_nav_and_peak_usd": 10000,
+      "pending_requests_never_overwritten": true,
+      "protected_minus_control_cagr": -0.08219435106243722,
+      "protected_minus_control_drawdown": -0.06451405172509983,
+      "protected_minus_control_sharpe": -0.430153113112677,
+      "protection_decision_reasons": {
+        "actual_weight_protection_band": 171,
+        "initial_capital": 1,
+        "monthly_target": 60
+      },
+      "same_four_factor_QQQ_ratio_in_issued_risky_targets": true,
+      "scenario": "stress",
+      "years": 5
+    }
+  ],
+  "schema_version": 1,
+  "source_bound_feedback_regenerated_per_path": true,
+  "study": "growth_portfolio_protection_20261011"
+}

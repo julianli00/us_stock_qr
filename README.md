@@ -1957,6 +1957,48 @@ All original dual-window costs, Sharpe/SPY/drawdown criteria and paused
 ledgers remain unchanged. The current prospective archive lacks QQQ;
 no independent future result for this new study is claimed.
 
+The [actual complete results](research/workbench/evidence/growth_portfolio_protection_20261011_results.json)
+reject both fixed rules:
+
+| Growth/factor/gold rule | Ten-year base/stress Sharpe | Five-year base/stress Sharpe | Ten/five-year base drawdown |
+|---|---|---|---|
+| Monthly unprotected control | 0.9762 / 0.9470 | **1.000447** / 0.9548 | 19.16% / 19.31% |
+| Ratcheted protection | 0.6890 / 0.4791 | 0.6973 / 0.5246 | 12.82% / 12.80% |
+
+The control's single five-year base Sharpe barely exceeds one, but its
+ten-year/stress Sharpe, ten-year SPY comparison and drawdown gates fail.
+It is **not a qualified strategy**. Protection satisfies the modeled
+drawdown gates in these four paths, with stress drawdown 13.51%/12.96%,
+but has much lower net CAGR/Sharpe and misses SPY. These observed outcomes
+do not guarantee protection against different gaps, costs or delays.
+
+The [feedback/account attribution](research/workbench/evidence/growth_portfolio_protection_20261011_attribution.json)
+checks each request against the actual closing NAV and high-water mark,
+including fresh capital, incurred costs and original delay. Pending targets
+are never overwritten. For five-year stress, protection pays USD2,422.68
+across 1,622 tickets versus USD510.26 and 366 tickets for the control.
+Its mean realized BIL share is about 29%, and CAGR is lower by about
+8.22 percentage points. More frequent protection trades and lower risk
+exposure are not incremental factor alpha.
+
+The [latest program snapshot](research/workbench/evidence/research_program_2026-W41_results_v30.json)
+retains **110 completed configurations, 26 reviews, six registered
+definitions, two terminal invalid code versions, the separately resolved
+accounting incident, no pending registered candidates and no qualified
+champion**. These two completed rules use only existing families; the
+queued six-family strategies remain unregistered and unevaluated.
+The [104-path read-only re-audit](research/workbench/evidence/research_program_source_bound_audit_v9.json)
+confirms all 26 original outcomes, including 19 legacy and seven explicit
+version-two reviews. The fixed 22-candidate selection diagnostic is not
+silently extended to these later four candidates.
+
+The [updated native instructions](research/workbench/evidence/prospective_data_automation_v9.json)
+preserve data/target/model collection and the queued October 17 eligibility,
+and do not treat the one barely passing base metric as success or authorize
+post-result parameter tuning. The separately registered forward model still
+has zero observed return sessions; no future scheduled execution, live
+orders or objective completion is claimed.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
