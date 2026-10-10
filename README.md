@@ -828,6 +828,23 @@ independent market/target/accounting review. Macro information is not a
 substitute for the missing individual-stock financial dataset and does not
 itself establish a profitable or independently verified factor.
 
+The [two actual macro reviews](research/workbench/evidence/macro_tilt_20261010_results.json)
+remain rejected. The factor tilt has ten/five-year base Sharpe 0.9420/0.9850
+and stress Sharpe 0.9107/0.9553. The version with curve defense has base
+Sharpe 0.9589/0.9143 and stress 0.9179/0.8556. Neither meets the strict
+Sharpe threshold, ten-year SPY outperformance and 15% drawdown requirements.
+The published availability audit covers 2,805 decision sessions per series;
+the largest actual observation age is five calendar days, below the
+registered seven-day maximum.
+
+The [eighth program snapshot](research/workbench/evidence/research_program_2026-W41_results_v8.json)
+preserves 94 completed configurations and ten rejected recurring-program
+candidate reviews. The official free macro-data route is now working,
+but the complete individual-stock fundamental dataset remains unavailable.
+There is no qualified research champion or live strategy change.
+This unresolved research goal is not converted to success by rounding
+0.9850 upward, shortening windows, or hiding the risk/benchmark failures.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

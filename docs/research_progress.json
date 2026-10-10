@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-10",
-  "phase": "fundamental_data_access_unresolved_92_evaluated_no_qualified_strategy",
+  "phase": "public_macro_inputs_verified_94_evaluated_no_qualified_strategy",
   "active_research_focus": "recurring_fundamental_multifactor_research",
   "completed": [
     "Preserved runnable incumbent strategy/engine and early-scanner source alongside the isolated 52-configuration workbench.",
@@ -29,7 +29,9 @@
     "Source-screened SPMO replication plans were rejected on238zero-volume records. A documented pre-result quality-only replacement with SPHQ completed two more recurring reviews: monthly baseSharpe0.9054/0.9627,daily0.8397/0.8979; both rejected.88evaluated configurations remain disclosed.",
     "A frozen static-versus-causal-adaptive factor comparison completed two further rejections. Adaptive10y/5ySharpe0.8294/0.8125,stress0.7658/0.6630;90evaluated configurations, no qualifying research champion.",
     "Official Cboe VIX/VIX3M data supported two fixed risk-overlay experiments. Half-equity baseSharpe0.8692/0.8403 and equity-exit0.8270/0.7240; stress is lower. Both rejected,92evaluated configurations and eight real program reviews retained; no qualified champion.",
-    "Checked official SEC quarterly bulk data and documentation: both403. Federal metadata is accessible but not data. Verified provider limitations for historical identity/prices; no complete authorized stock-factor dataset or new strategy result acquired."
+    "Checked official SEC quarterly bulk data and documentation: both403. Federal metadata is accessible but not data. Verified provider limitations for historical identity/prices; no complete authorized stock-factor dataset or new strategy result acquired.",
+    "Without purchases or account creation, obtained official FRED yield-curve and real-yield histories through standardcurl after transport failures. Two-session release lag and bounded observation carry are audited for every decision.",
+    "Two fixed macro factor tilts completed real review and rejection: baseSharpe0.9420/0.9850 and0.9589/0.9143; neither satisfies the retained Sharpe/risk/benchmark contract.94evaluated configurations and ten recurring reviews remain preserved; no research champion."
   ],
   "completed_zh": [
     "已保留可运行的原Top30算法、成本引擎和独立早期扫描器，并隔离导入52配置研究工作台。",
@@ -57,7 +59,9 @@
     "SPMO因238条零成交量记录未通过来源检查；保留该失败后只替换质量基金为SPHQ，两个真实复现版本仍被拒绝，基础Sharpe分别0.9054/0.9627及0.8397/0.8979；累计已评估88个，仍无合格策略。",
     "固定静态权重与因果动态组合又完成两项真实拒绝；动态组合十年/五年基础Sharpe0.8294/0.8125、压力0.7658/0.6630，累计已评估90个，仍无新合格策略。",
     "官方Cboe VIX/VIX3M期限结构两个固定覆盖层也被拒绝：减半股票十年/五年基础Sharpe0.8692/0.8403，退出股票0.8270/0.7240，压力更低；累计已评估92个、8项真实周期审阅，仍无合格策略。",
-    "进一步核查SEC官方季度压缩包及文档均403；联邦目录说明可访问但不是数据。已核对其他提供方的历史身份/价格限制，尚未取得完整授权股票因子数据，也未新增策略业绩。"
+    "进一步核查SEC官方季度压缩包及文档均403；联邦目录说明可访问但不是数据。已核对其他提供方的历史身份/价格限制，尚未取得完整授权股票因子数据，也未新增策略业绩。",
+    "在不付费、不注册账户的边界内，标准curl成功取得官方FRED曲线和实际利率历史；每个决策的两交易日发布滞后及有限旧值保留均已审计。",
+    "两个固定宏观因子倾斜完成真实审阅并拒绝，十年/五年基础Sharpe分别0.9420/0.9850及0.9589/0.9143；原夏普/回撤/SPY条件未通过，累计94个已评估配置、10项周期审阅，仍无合格策略。"
   ],
   "next": [
     "Use an explicitly authorized, coverage-verified historical stock dataset for the fundamental proposals; do not buy a subscription, create an account or substitute current survivors without authorization.",
@@ -191,7 +195,7 @@
   "recurring_research_program": {
     "state": "weekly_enabled_stock_data_blocked_etf_candidates_reviewed_rejected",
     "policy": "research/workbench/config/research-program.json",
-    "cycle_snapshot": "research/workbench/evidence/research_program_2026-W41_results_v7.json",
+    "cycle_snapshot": "research/workbench/evidence/research_program_2026-W41_results_v8.json",
     "initial_cycle_snapshot": "research/workbench/evidence/research_program_2026-W41.json",
     "automation_receipt": "research/workbench/evidence/research_program_automation_20261010.json",
     "readiness": "research/workbench/evidence/research_program_data_readiness_20261010.json",
@@ -199,8 +203,8 @@
     "known_factor_definitions": 6,
     "economic_factor_families": 5,
     "independent_factor_count_verified": false,
-    "new_strategy_evaluations": 8,
-    "total_evaluated_configurations": 92,
+    "new_strategy_evaluations": 10,
+    "total_evaluated_configurations": 94,
     "research_champion": null,
     "research_versions": 0,
     "data_blockers": 5,
@@ -259,6 +263,17 @@
     "paid_subscription_purchased": false,
     "existing_ETF_scope_still_available": true,
     "new_strategy_evaluations": 0
+  },
+  "macro_factor_tilt": {
+    "registration": "research/workbench/evidence/macro_tilt_20261010_registration.json",
+    "results": "research/workbench/evidence/macro_tilt_20261010_results.json",
+    "source_manifest": "research/workbench/evidence/macro_rate_source_20261010.json",
+    "evaluated_candidates": 2,
+    "accepted_candidates": 0,
+    "actual_maximum_observation_age_days": 5,
+    "release_lag_sessions": 2,
+    "no_paid_data_or_new_account": true,
+    "order_authority": false
   },
   "delivery": {
     "receipt_verified": true,
