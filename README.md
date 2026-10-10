@@ -1133,13 +1133,13 @@ records 121 fits per model, first fitted September 30, 2016 with nine
 distinct matured months. All label-availability dates precede decisions,
 and regenerated target matrices match the evaluated account inputs.
 
-The [latest program snapshot](research/workbench/evidence/research_program_2026-W41_results_v16.json)
-has 100 complete strategy evaluations and 16 completed recurring reviews,
+The [conditional-round program snapshot](research/workbench/evidence/research_program_2026-W41_results_v16.json)
+had 100 complete strategy evaluations and 16 completed recurring reviews,
 all rejected under the current full gates. Two separate, invalid first code
 versions remain as technical failures, not hidden or falsely counted as
 complete performance evaluations. There is still no qualifying research
 champion or live strategy update.
-The [latest read-only source-bound audit](research/workbench/evidence/research_program_source_bound_audit_v2.json)
+The [conditional-round read-only source-bound audit](research/workbench/evidence/research_program_source_bound_audit_v2.json)
 regenerated all 64 paths for those 16 completed reviews and confirmed every
 recorded metric/gate without changing the ledger. The two technical failures
 remain outside the completed-performance count.
@@ -1174,10 +1174,38 @@ Preparation revalidates existing provider snapshots and reuses their hashed
 panels; it computes no strategy returns. Both
 [specifications were registered before outcomes](research/workbench/evidence/factor_momentum_comparison_20261011_registration.json)
 after an exact-anchor engine migration preserved all 16 old reviews and both
-technical failures. The two new candidates remain pending at registration;
-the completed count is still 100, not 102. Preserve all outcomes, the
-identical budgets, costs and retained qualification gates. The previously
-exposed history is not an independent holdout.
+technical failures. At registration both were pending and the completed
+count was still 100, not 102. The previously exposed history is not an
+independent holdout.
+
+The [actual source-bound results](research/workbench/evidence/factor_momentum_comparison_20261011_results.json)
+now reject both configurations:
+
+| Factor ranking | Ten-year base/stress Sharpe | Five-year base/stress Sharpe | Ten/five-year base drawdown |
+|---|---|---|---|
+| Total momentum | 0.8993 / 0.8590 | 0.9628 / 0.9101 | 20.52% / 18.04% |
+| SPY-residual momentum | 0.9037 / 0.8567 | 0.9526 / 0.8907 | 20.52% / 17.69% |
+
+Both beat SPY's five-year net CAGR, but fail the ten-year benchmark and all
+Sharpe/drawdown paths. The
+[paired attribution](research/workbench/evidence/factor_momentum_comparison_20261011_attribution_v2.json)
+verifies identical target issue dates and equity/gold budgets within
+numerical tolerance. Residual scoring raises dollar turnover despite the
+same 605/305 ten/five-year order tickets. For five-year stress its traded
+volume is about USD143,656 versus USD116,561 and costs USD592.31 versus
+USD538.12, with lower Sharpe. Dollar turnover is independently reconstructed
+from opening holdings/cash and checked against transaction charges; it is
+not the dimensionless sum of the ledger's turnover ratios.
+
+The [current snapshot](research/workbench/evidence/research_program_2026-W41_results_v18.json)
+retains **102 complete configurations, 18 recurring reviews, two separate
+technical failures, no pending candidates and no qualified champion**.
+The [read-only re-audit](research/workbench/evidence/research_program_source_bound_audit_v3.json)
+regenerated every one of the 72 completed strategy paths without changing
+history or conclusions. Do not tune these rejected lookbacks or shares
+merely to cross one on the exposed sample. Daily collection again skipped
+the existing October 9 baseline; there are still zero new prospective
+observations and no strategy-return proof.
 
 ## Progress and publication
 
