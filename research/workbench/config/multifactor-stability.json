@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "round_id": "multifactor_stability_20261010",
+  "prior_disclosed_configurations": 78,
+  "new_configurations": 6,
+  "data_start": "2014-01-02",
+  "as_of": "2026-10-05",
+  "capital_usd": 10000.0,
+  "cash_reserve": 0.02,
+  "commission_per_order": 1.0,
+  "factor_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "base_symbols": ["SPY", "IEF", "GLD", "BIL"],
+  "factors": [
+    {
+      "symbol": "MTUM",
+      "factor": "momentum",
+      "economic_basis": "Relative persistence of recent stock price performance.",
+      "instrument": "iShares MSCI USA Momentum Factor ETF",
+      "inception": "2013-04-16",
+      "issuer_url": "https://www.ishares.com/us/products/251614/ishares-msci-usa-momentum-factor-etf",
+      "current_index": "MSCI USA Momentum SR Variant Index",
+      "intended_daily_leverage": 1.0
+    },
+    {
+      "symbol": "VLUE",
+      "factor": "value",
+      "economic_basis": "Equity valuation characteristics rather than price-momentum ranking.",
+      "instrument": "iShares MSCI USA Value Factor ETF",
+      "inception": "2013-04-16",
+      "issuer_url": "https://www.ishares.com/us/products/251616/ishares-msci-usa-value-factor-etf",
+      "current_index": "MSCI USA Enhanced Value Index",
+      "intended_daily_leverage": 1.0
+    },
+    {
+      "symbol": "QUAL",
+      "factor": "quality",
+      "economic_basis": "The issuer describes high return on equity, stable earnings and low debt.",
+      "instrument": "iShares MSCI USA Quality Factor ETF",
+      "inception": "2013-07-16",
+      "issuer_url": "https://www.ishares.com/us/products/256101/ishares-msci-usa-quality-factor-etf",
+      "current_index": "MSCI USA Sector Neutral Quality Index",
+      "intended_daily_leverage": 1.0
+    },
+    {
+      "symbol": "USMV",
+      "factor": "low_volatility",
+      "economic_basis": "Lower-volatility stock portfolio characteristics; not a guaranteed loss limit.",
+      "instrument": "iShares MSCI USA Min Vol Factor ETF",
+      "inception": "2011-10-18",
+      "issuer_url": "https://www.ishares.com/us/products/239695/ishares-msci-usa-minimum-volatility-etf",
+      "current_index": "MSCI USA Minimum Volatility Index",
+      "intended_daily_leverage": 1.0
+    }
+  ],
+  "parameters": {
+    "volatility_sessions": 63,
+    "breadth_horizons": [63, 126, 252],
+    "factor_share_min": 0.15,
+    "factor_share_max": 0.35,
+    "volatility_target": 0.10
+  },
+  "scenarios": [
+    {"id": "base", "cost_bps_per_side": 5.0, "delay_sessions": 1},
+    {"id": "stress", "cost_bps_per_side": 20.0, "delay_sessions": 2},
+    {"id": "higher_cost", "cost_bps_per_side": 50.0, "delay_sessions": 2}
+  ],
+  "candidates": [
+    {"id": "four_factor_equity_control", "factor_weighting": "equal", "equity_budget": 1.0, "ief_budget": 0.0, "gold_budget": 0.0, "breadth_defense": false, "volatility_cap": false},
+    {"id": "four_factor_balanced", "factor_weighting": "equal", "equity_budget": 0.6, "ief_budget": 0.2, "gold_budget": 0.2, "breadth_defense": false, "volatility_cap": false},
+    {"id": "four_factor_balanced_vol10", "factor_weighting": "equal", "equity_budget": 0.6, "ief_budget": 0.2, "gold_budget": 0.2, "breadth_defense": false, "volatility_cap": true},
+    {"id": "four_factor_breadth_defense", "factor_weighting": "equal", "equity_budget": 0.6, "ief_budget": 0.2, "gold_budget": 0.2, "breadth_defense": true, "volatility_cap": false},
+    {"id": "four_factor_bounded_inverse_vol", "factor_weighting": "inverse_volatility", "equity_budget": 0.6, "ief_budget": 0.2, "gold_budget": 0.2, "breadth_defense": false, "volatility_cap": false},
+    {"id": "four_factor_bounded_defense_vol10", "factor_weighting": "inverse_volatility", "equity_budget": 0.6, "ief_budget": 0.2, "gold_budget": 0.2, "breadth_defense": true, "volatility_cap": true}
+  ],
+  "goals": {
+    "same_rule_in_10y_and_5y": true,
+    "base_and_stress_required": true,
+    "net_excess_sharpe_strictly_above": 1.0,
+    "net_cagr_above_spy": true,
+    "max_drawdown_at_most": 0.15,
+    "lower_volatility_and_drawdown_than_prior_strategy": true,
+    "retained_old_cagr_goal": 0.20,
+    "no_leveraged_products": true
+  },
+  "comparison": {
+    "old_candidate": "equal_growth_gold_min_variance_ensemble",
+    "old_results": "evidence/implementation_round_20261007_results.json",
+    "old_results_sha256": "1df24ddd1d873b364cf0f621ae5c7d7626d25a658ad25d5657926f67ca4c9e23",
+    "old_data_registration": "evidence/implementation_round_20261007_registration.json"
+  },
+  "methodology": {
+    "implementation_type": "multi_factor_etf_sleeve_portfolio_not_direct_stock_scoring",
+    "distinct_exposures": "Momentum, value, quality and low-volatility are distinct economic exposures, not assumed statistically independent. Value/quality implementation is delegated to the actual funds, not synthesized from current fundamental ratios.",
+    "sleeve_weights": "Equal factor shares or bounded inverse trailing63-session volatility. All four factors have15%-35% of the intended equity sleeve before defense. No factor winner selection or fit to future returns.",
+    "risk_breadth": "If enabled, multiply the entire equity sleeve by the fraction of12 factor/horizon observations whose63/126/252-session returns exceed BIL. A common scale preserves factor proportions; zero means no equity exposure. Freed budget goes to actual BIL.",
+    "defense": "Balanced rules start with60% factor equities,20% IEF and20% GLD of the98% invested budget. Bonds and gold are diversifying assets, not extra equity factors.",
+    "volatility": "If enabled, cap predicted total portfolio volatility at10% using trailing63-session covariance, including BIL. Scale down all non-BIL holdings together and move freed budget into BIL. Never scale up or borrow.",
+    "timing": "Only completed NYSE month-end decisions, then next-open execution or one additional session under stress. Each10y/5y account starts fresh using the last known completed-month target.",
+    "data": "Actual factor ETF histories from2014 onward, after every fund's inception. Reuse the original benchmark/defensive/risk-free snapshot with its unchanged hashes and dates. Different download vintages are disclosed; all compared return windows end2026-10-05.",
+    "issuer_evidence": "Current issuer definitions and index labels establish the products' economic exposures, not historically unchanged methodologies or PIT constituent-level verification. Historical fund returns embed actual constituent and methodology changes.",
+    "costs": "Identical USD10,000 capital,2% idle cash,USD1 commissions and5/20/50bp per-side cost scenarios. Fund-level expenses already affect prices; do not subtract current expense ratios again. Fractional units and personal-tax exclusion remain limitations.",
+    "concentration": "Audit actual time-series correlations, market beta and covariance effective dimension; four funds may hold overlapping stocks and share market risk. Do not call them four independent alpha sources.",
+    "evaluation": "Preserve six fixed hypotheses and all failures. Audit equity through bt, independently recompute CAGR/drawdown/Sharpe, report every available month-end rolling10y/5y base/stress window.",
+    "research_selection": "Among candidates meeting all stability gates, select the smallest worst primary-path drawdown, then the highest worst-path Sharpe, then identifier. Report return-goal failures separately; this is research selection, never trading promotion.",
+    "stock_data_limit": "Existing filing-date financial utilities do not establish complete historical security identities, membership and delisted prices. No claim of a direct stock-level multifactor backtest.",
+    "history_previously_exposed": true,
+    "independent_forward_validation": false,
+    "automatic_baseline_replacement": false,
+    "order_authority": false,
+    "persistent_automation_started": false
+  }
+}

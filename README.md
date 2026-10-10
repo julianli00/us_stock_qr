@@ -322,6 +322,58 @@ research/notification automation created by this round.
 
 ## Progress and publication
 
+### Unleveraged multifactor stability research
+
+The October 10 request prioritizes genuine multifactor exposure and lower
+risk. The new research lane uses four actual, unleveraged US equity factor
+ETFs: MTUM (momentum), VLUE (value), QUAL (quality) and USMV (low volatility).
+Issuer URLs, economic definitions, inception dates and current benchmark
+labels are recorded in
+`research/workbench/config/multifactor-stability.json`.
+
+This is explicitly a **multifactor ETF-sleeve portfolio, not direct
+stock-level fundamental scoring**. Value and quality exposure comes through
+the funds' actual historical portfolios. Today's holdings or financial ratios
+are not used to manufacture historical selections. Existing SEC filing-date
+utilities do not provide complete historical security identities, constituent
+membership and delisted prices; that missing evidence still blocks a qualified
+direct-stock backtest. Current issuer definitions do not establish unchanged
+index rules throughout the fund's history.
+
+Six fixed configurations compare equal factor exposure, a 60/20/20
+factor-equity/IEF/GLD allocation, bounded inverse-volatility factor shares,
+common equity-breadth defense, and a 10% portfolio-volatility target.
+There is no QLD, leveraged product, shorting or account borrowing. The
+four-factor equity control deliberately has no bond/gold defense: it tests
+whether adding equity factors alone actually reduces risk.
+Every nonzero equity allocation retains all four factor sleeves; defense
+scales them together rather than selecting the historical winner.
+
+The stability criterion requires maximum drawdown at most 15% and both lower
+drawdown and lower volatility than the prior QLD-containing candidate in
+the same ten/five-year base/stress windows. Sharpe above one and outperformance
+of SPY remain separately reported; a lower-risk result cannot be silently
+declared to satisfy those return objectives. Higher-cost and rolling-window
+failures must remain visible. Correlations, market betas and the covariance
+effective dimension are diagnostics, not a claim that four funds produce
+four independent alpha sources or avoid overlapping stock holdings.
+
+The registration preserves the previous 78 configurations and records six
+new ones, for 84 total. From `research/workbench`:
+
+```bash
+.venv/bin/python -I -B -m pytest tests/test_multifactor_stability.py -q
+.venv/bin/python -I -B -m us_quant.multifactor_stability fetch
+.venv/bin/python -I -B -m us_quant.multifactor_stability evaluate
+```
+
+The new factor history starts in 2014, after all four funds were launched.
+The common comparison endpoint remains October 5, 2026. Original benchmark,
+defensive-asset and risk-free snapshot hashes are preserved; the different
+factor-fund download vintage is explicitly recorded. Raw prices and issuer
+documents remain ignored local inputs. No old strategy is overwritten and
+no trading, notification or persistent automation is activated.
+
 See [integration status](docs/integration/STATUS.md) and
 [`docs/research_progress.json`](docs/research_progress.json). GitHub progress
 uses reviewed explicit commits/PRs, **not a configured daily automatic push**.
