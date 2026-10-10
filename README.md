@@ -765,6 +765,31 @@ independent forward result. The standing weekly process continues to seek
 new justified evidence; it does not promise that repeated searches will
 necessarily discover a strategy satisfying the requested return/risk goals.
 
+### Fundamental-data feasibility checkpoint
+
+The [official bulk-access record](research/workbench/evidence/sec_bulk_availability_20261010.json)
+confirms that a historical SEC quarterly ZIP and the official format document
+also returned HTTP 403. Each distribution received one normal request; no
+proxy, identity impersonation or access-control bypass was used. The federal
+Data.gov catalog was accessible, but its description cannot substitute for
+the underlying filings or prove historical security/return coverage.
+
+The [source assessment](research/workbench/evidence/fundamental_source_feasibility_20261010.json)
+keeps actual provider statements separate from search summaries.
+QuantConnect explicitly distinguishes its security master from the separately
+licensed equity price data. Sharadar's free entry-level offering covers
+current Dow30 companies, not a verified full historical universe. A search
+summary describing HistPrice as complete US-stock PIT data was not confirmed:
+the actual page demonstrated cryptocurrency data tooling. None of these
+checks admits a complete new stock-factor dataset or a new performance result.
+
+The existing ETF research scope remains available, but its completed candidates
+have failed the retained performance goals. A new direct-stock fundamental
+backtest requires an authorized and coverage-verified source; no subscription
+purchase, account creation or current-stock-list substitution is implicit.
+The strategy objective remains unfulfilled and the weekly research schedule
+does not guarantee that a qualifying strategy exists.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

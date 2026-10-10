@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "scope": "historical_US_stock_fundamentals_and_security_identity",
+  "official_bulk_access": {
+    "evidence": "evidence/sec_bulk_availability_20261010.json",
+    "sha256": "250c4ba965606564b889e15260babb371bd50c301f6cb22480ec81f104fdf676",
+    "quarterly_archive_download_admitted": false,
+    "documentation_download_admitted": false,
+    "access_restrictions_bypassed": false
+  },
+  "source_assessments": [
+    {
+      "url": "https://catalog.data.gov/dataset/financial-statement-data-sets",
+      "source_type": "official_federal_catalog_metadata",
+      "page_accessible": true,
+      "observation": "Describes XBRL as-filed financial-statement data and warns about extraction errors and missing metadata. Metadata is not the actual quarterly data archive.",
+      "complete_data_acquired": false
+    },
+    {
+      "url": "https://www.quantconnect.com/docs/v2/writing-algorithms/datasets/quantconnect/us-equity-security-master",
+      "source_type": "provider_primary_documentation",
+      "page_accessible": true,
+      "observation": "Security master covers historical corporate actions and identities, but the provider explicitly states it is not the underlying equity-price dataset; that requires a separate AlgoSeek license.",
+      "user_license_verified": false,
+      "complete_data_acquired": false
+    },
+    {
+      "url": "https://sharadar.com/",
+      "source_type": "provider_primary_product_page",
+      "page_accessible": true,
+      "observation": "Advertises broader active/delisted PIT-ready coverage and a free entry-level dataset for current Dow30 companies. A free sample or product description does not establish a complete historical universe or current user authorization.",
+      "user_license_verified": false,
+      "complete_data_acquired": false
+    },
+    {
+      "url": "https://histprice.com/",
+      "source_type": "unverified_alternative",
+      "page_accessible": true,
+      "observation": "The actual page demonstrates cryptocurrency dataset/backtest tooling. Search-generated claims of complete US-stock security-master and delisting coverage were not verified and are not admitted as evidence.",
+      "US_stock_coverage_verified": false,
+      "complete_data_acquired": false
+    }
+  ],
+  "verified_complete_stock_factor_dataset": false,
+  "existing_ETF_scope_still_available": true,
+  "ETF_strategy_goal_already_achieved": false,
+  "paid_subscription_purchased": false,
+  "account_created": false,
+  "new_strategy_evaluations": 0,
+  "total_evaluated_configurations": 92,
+  "investment_objective_verified": false,
+  "order_authority": false
+}
