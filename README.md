@@ -413,12 +413,39 @@ decision dates and costs. It includes both stability-qualified candidates,
 not just the most favorable one:
 
 ```bash
-.venv/bin/python -I -B -m us_quant.multifactor_attribution evaluate
+.venv/bin/python -I -B -m us_quant.multifactor_attribution evaluate \
+  --output reports/multifactor-attribution-20261010-replay
 ```
 
 This is an equity-budget ablation, not equal-risk matching or an independent
 SPY timing strategy. It distinguishes the contribution of factor fund
 selection from simply reducing stock exposure; no candidate is retuned.
+
+The [completed attribution audit](research/workbench/evidence/multifactor_attribution_20261010.json)
+recomputes all 77 original paths, reproduces all six complete target matrices
+and checks 12 budget-matched SPY control paths. The first attribution command
+was interrupted; its partial output was not treated as a result. The unchanged
+plan was rerun into the new `-replay` directory without overwriting evidence.
+
+In **all 12 comparisons**, the factor portfolio has lower net CAGR and lower
+Sharpe than its equity-budget-matched SPY control. For the selected low-risk
+prototype under base costs:
+
+| Window | Four-factor CAGR | Same-equity-budget SPY CAGR | Four-factor drawdown | Control drawdown |
+| --- | ---: | ---: | ---: | ---: |
+| Ten years | 6.90% | 7.54% | 13.93% | 13.82% |
+| Five years | 7.04% | 7.82% | 13.05% | 13.16% |
+
+This comparison includes actual differences in modeled order costs from
+holding four equity funds rather than one. It does not prove statistical
+underperformance or match market beta exactly, but it **does not establish
+incremental net value from the factor-fund selection**. Lower equity exposure,
+defensive allocation and removal of embedded leverage must not be presented
+as newly discovered factor alpha. The research direction remains unleveraged
+multifactor stability; the old leveraged strategy is preserved only as a
+historical comparison, not promoted as a suitable solution to the new risk
+preference. No replacement or live recommendation is authorized by these
+results.
 
 ## Progress and publication
 
