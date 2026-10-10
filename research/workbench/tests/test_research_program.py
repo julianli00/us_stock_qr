@@ -499,6 +499,23 @@ def test_dependency_changes_invalidate_program_verification(program, monkeypatch
         program.status()
 
 
+def test_generic_evaluator_uses_registered_generator_and_reviews_without_duplicate_trials(
+    program, policy, tmp_path, registered_generator
+):
+    program.register_candidate(candidate_spec(tmp_path), readiness(policy, tmp_path, ready=True))
+    result = program.evaluate_registered("test_multifactor", Path("reports/generic-study"))
+    assert result["historical_gates_passed"]
+    assert all(row["registered_strategy_targets_regenerated"] for row in result["paths"])
+    assert (tmp_path / "reports/generic-study/test_multifactor/bundle.json").is_file()
+    before = program.status()
+    again = program.evaluate_registered("test_multifactor", Path("reports/generic-study"))
+    assert again["evaluation_action"] == "already_reviewed"
+    assert program.status() == before
+    audit = program.audit_reviews()
+    assert audit["reviewed_candidates"] == 1 and audit["regenerated_strategy_paths"] == 4
+    assert program.status() == before
+
+
 def test_engine_migration_preserves_history_and_requires_exact_anchors(policy, tmp_path, proposals):
     path = tmp_path / "migrate.sqlite3"
     old = ResearchProgram(path, policy, root=tmp_path, create=True)

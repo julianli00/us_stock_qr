@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "study_id": "defensive_factor_rotation_20261011",
+  "prior_evaluated_configurations": 94,
+  "new_configurations": 2,
+  "as_of": "2026-10-05",
+  "data_scope": "factor_etf_portfolio",
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "factor_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "defensive_assets": ["GLD", "TLT", "IEF"],
+  "cash_asset": "BIL",
+  "momentum_sessions": 126,
+  "volatility_sessions": 63,
+  "equity_share_min": 0.30,
+  "equity_share_max": 0.70,
+  "cash_reserve": 0.02,
+  "candidates": [
+    {"id": "four_factor_defense_momentum", "defense_method": "highest_positive_excess"},
+    {"id": "four_factor_defense_diversified", "defense_method": "all_positive_inverse_volatility"}
+  ],
+  "methodology": {
+    "hypothesis": "A permanently held gold defense may fail in some regimes. Compare an unchanged four-factor equity core with defensive selection across gold,long-duration Treasuries,intermediate Treasuries and actual bills.",
+    "equity": "Each equity factor retains25%of the equity sleeve. Balance this aggregate sleeve and the selected defensive sleeve using trailing63-session volatility; constrain the equity share to30%-70%of98%invested capital.",
+    "defensive_selection": "At completed month ends, retain defensive funds whose126-session adjusted return strictly exceeds BIL over the same interval. One method selects the highest return, ticker as tie-breaker. The other inverse-volatility weights all eligible defensive funds.",
+    "cash_state": "If none qualify, defensive allocation is BIL and the equity sleeve is fixed at its30%minimum; do not divide by near-zero bill volatility or invent interest.",
+    "data": "Use the previously verified original factor-fund and benchmark snapshots. TLT comes from the exact same already-audited base manifest, with no new adjusted-price vintage or fabricated history.",
+    "timing": "Only completed month-end information; next-session-open base or one-extra-session stressed execution. Original USD10,000,USD1commissions,5/20bp costs and all program Sharpe/SPY/15%drawdown gates remain unchanged.",
+    "risks": "Treasury duration and gold can both lose money. Relative momentum and diversification do not guarantee any maximum drawdown.",
+    "interpretation": "Two defensive-allocation hypotheses on four existing economic factor exposures, not two newly discovered independent factors. They are formed after94prior configurations; preserve all failures.",
+    "order_authority": false,
+    "independent_forward_validation": false
+  }
+}

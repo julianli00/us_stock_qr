@@ -895,6 +895,42 @@ the replay/accounting dependencies. An exact stored `metadata.engine_sha`
 and event-chain head are required for reviewed migrations; a single-file
 checksum is no longer the complete engine identity.
 
+### Defensive asset selection and a generic evaluation runner
+
+The next fixed study keeps the four equity factor funds and selects defense
+from GLD, TLT and IEF using 126-session returns above actual BIL. One variant
+holds the highest positive-excess defensive fund; the other inverse-volatility
+weights all qualifying defensive funds. If none qualify, defense is BIL.
+The equity/defense budget uses the same 63-session risk balance and 30%-70%
+equity limits as before. This is two allocation hypotheses, not a new
+independent economic factor. Duration and gold risks remain explicit.
+
+`config/defensive-factor-rotation.json` freezes the rules. TLT is loaded from
+the same previously audited base snapshot, not a changed historical vendor
+vintage. Every non-cash equity sleeve keeps all four factor funds equally
+weighted, and no leverage, new market account or paid data is introduced.
+
+The recurring program now has a generic `evaluate-candidate` operation.
+It generates targets through the supported frozen implementation, runs
+the exact market/cost and independent `bt` paths, creates the hashed bundle,
+and sends that bundle through the stronger reviewer. Already reviewed
+candidates are returned without another evaluation or trial increment.
+This avoids writing a new bespoke accounting runner for each future study.
+
+```bash
+.venv/bin/python -I -B -m us_quant.defensive_factor_rotation
+.venv/bin/python -I -B -m us_quant.research_program register-candidate \
+  --candidate data/defensive-factor-rotation-20261011/four_factor_defense_momentum-spec.json \
+  --readiness data/defensive-factor-rotation-20261011/readiness.json
+.venv/bin/python -I -B -m us_quant.research_program evaluate-candidate \
+  --candidate-id four_factor_defense_momentum
+```
+
+The second candidate uses `four_factor_defense_diversified` and its matching
+specification. Both must be registered before any outcome is computed.
+Interrupted output remains evidence; a new explicit output directory is
+required for replay, and original candidate code/data cannot be changed.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

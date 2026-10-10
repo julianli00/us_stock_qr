@@ -196,6 +196,11 @@ def verified_etf_market(readiness: dict, root: Path) -> MarketData:
     from us_quant.multifactor_stability import load_market
 
     source = readiness.get("verified_etf_source", {})
+    if source.get("adapter") == "defensive_factor_rotation_20261011":
+        from us_quant.defensive_factor_rotation import verified_market
+
+        policy = read_json(safe_file(root, source["policy"], source["policy_sha256"]))
+        return verified_market(policy)
     if source.get("adapter") == "factor_implementation_replication_20261010":
         from us_quant.factor_replication import load_replication_market
 
@@ -960,6 +965,118 @@ class ResearchProgram:
             "order_authority": False,
         }
 
+    def evaluate_registered(self, candidate_id: str, output: Path) -> dict:
+        from us_quant.storage import new_output_directory, write_text_atomic
+
+        self.verify()
+        candidate = self.db.execute(
+            "SELECT body,spec_sha FROM candidates WHERE id=?", (candidate_id,)
+        ).fetchone()
+        if candidate is None:
+            raise QuantError("Register the frozen candidate before automatic evaluation.")
+        existing = self.db.execute(
+            "SELECT body FROM reviews WHERE candidate_id=?", (candidate_id,)
+        ).fetchone()
+        if existing is not None:
+            return {"evaluation_action": "already_reviewed", "review": json.loads(existing["body"])}
+        spec = json.loads(candidate["body"])
+        for relative, expected in spec["frozen_files"].items():
+            safe_file(self.root, relative, expected)
+        data = review_market({"market": spec["market"]}, self.root)
+        output = output if output.is_absolute() else self.root / output
+        directory = output / candidate_id
+        if output.is_symlink() or not directory.resolve().is_relative_to(self.root.resolve()):
+            raise QuantError("Automatic research outputs must remain inside the workbench.")
+        new_output_directory(directory)
+        cache, paths = {}, []
+        goals = self.policy["goals"]
+        end = pd.Timestamp(spec["evaluation_as_of"])
+        for years in goals["horizons_years"]:
+            dates = sessions(end - pd.DateOffset(years=years) + pd.Timedelta(days=1), end)
+            first, last = str(dates[0].date()), str(dates[-1].date())
+            for scenario in goals["scenarios"]:
+                cost, delay = goals[f"{scenario}_cost_bps"], goals[f"{scenario}_delay_sessions"]
+                targets = registered_targets(spec, data, first, last, cost, delay, self.root, cache)
+                own = simulate(
+                    data,
+                    targets,
+                    first,
+                    last,
+                    initial_capital=goals["capital_usd"],
+                    cost_bps=cost,
+                    commission=goals["commission_per_order"],
+                    delay=delay,
+                )
+                independent = independent_equity(
+                    data,
+                    targets,
+                    first,
+                    last,
+                    capital=goals["capital_usd"],
+                    cost_bps=cost,
+                    commission=goals["commission_per_order"],
+                    delay=delay,
+                )
+                benchmark_targets = buy_and_hold_signals(data.close, "SPY", first)
+                spy = simulate(
+                    data,
+                    benchmark_targets,
+                    first,
+                    last,
+                    initial_capital=goals["capital_usd"],
+                    cost_bps=cost,
+                    commission=goals["commission_per_order"],
+                    delay=delay,
+                )
+                spy_bt = independent_equity(
+                    data,
+                    benchmark_targets,
+                    first,
+                    last,
+                    capital=goals["capital_usd"],
+                    cost_bps=cost,
+                    commission=goals["commission_per_order"],
+                    delay=delay,
+                )
+                record = {
+                    "years": years,
+                    "scenario": scenario,
+                    "capital_usd": goals["capital_usd"],
+                    "cost_bps": cost,
+                    "commission_per_order": goals["commission_per_order"],
+                    "delay_sessions": delay,
+                }
+                for name, frame in (
+                    ("strategy", own.frame),
+                    ("strategy_bt", independent),
+                    ("spy", spy.frame),
+                    ("spy_bt", spy_bt),
+                    ("targets", targets),
+                    ("weights", own.weights),
+                ):
+                    path = directory / f"{years}y-{scenario}-{name}.csv"
+                    write_text_atomic(path, frame.to_csv(float_format="%.17g"))
+                    record[name] = {
+                        "path": path.relative_to(self.root).as_posix(),
+                        "sha256": file_digest(path),
+                    }
+                paths.append(record)
+        bundle = {
+            "candidate_spec_sha256": candidate["spec_sha"],
+            "completed_at": timestamp().isoformat(),
+            "as_of": spec["evaluation_as_of"],
+            "market": spec["market"],
+            "data_scope": spec.get("data_scope", "direct_stock"),
+            "history_status": spec["history_status"],
+            "leveraged_products_allowed": False,
+            "order_authority": False,
+            "paths": paths,
+        }
+        write_json(directory / "bundle.json", bundle)
+        result = self.review(candidate_id, bundle)
+        write_json(directory / "review.json", result)
+        return result
+
     def status(self) -> dict:
         self.verify()
         factors = [
@@ -1033,6 +1150,7 @@ def main() -> None:
             "status",
             "migrate-engine",
             "audit-reviews",
+            "evaluate-candidate",
         ),
     )
     parser.add_argument("--policy", type=Path, default=Path("config/research-program.json"))
@@ -1045,6 +1163,7 @@ def main() -> None:
     parser.add_argument("--export", type=Path)
     parser.add_argument("--expected-engine-sha")
     parser.add_argument("--expected-event-sha")
+    parser.add_argument("--output", type=Path, default=Path("reports/program-evaluations"))
     args = parser.parse_args()
     program = None
     try:
@@ -1085,6 +1204,10 @@ def main() -> None:
             result = program.review(args.candidate_id, read_json(args.bundle))
         elif args.action == "audit-reviews":
             result = program.audit_reviews()
+        elif args.action == "evaluate-candidate":
+            if not args.candidate_id:
+                raise QuantError("Automatic evaluation needs a registered candidate identifier.")
+            result = program.evaluate_registered(args.candidate_id, args.output)
         else:
             result = program.status()
         if args.export is not None:
