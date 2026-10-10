@@ -664,6 +664,20 @@ replication runner avoids invalidating those frozen implementation hashes
 and is tested against the original algorithm. No name substitution is
 made in the actual market data or evaluated holdings.
 
+The [quality implementation results](research/workbench/evidence/factor_replication_20261010_results.json)
+are actual recurring-program reviews, not just standalone backtests.
+Both fixed variants were rejected. Monthly risk balance has ten/five-year
+base Sharpe 0.9054/0.9627 and stressed Sharpe 0.8780/0.9237; daily risk control
+has base Sharpe 0.8397/0.8979 and stressed Sharpe 0.7869/0.8666. Drawdown remains
+approximately 18%-20%. Changing the quality implementation did not solve the
+target shortfall.
+
+The [fifth weekly snapshot](research/workbench/evidence/research_program_2026-W41_results_v5.json)
+retains 88 evaluated configurations and four rejected program candidates.
+The source-rejected SPMO plans are separately disclosed but are not counted as
+completed strategy evaluations. There is still no qualified research champion,
+live deployment or new independent forward evidence.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
