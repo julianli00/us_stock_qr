@@ -880,6 +880,21 @@ accounting paths, compares metrics and gates with the existing review, and
 asserts that the ledger is unchanged. Disagreement is an error, not permission
 to rewrite old results or promote a previously rejected candidate.
 
+The [actual source-bound re-audit](research/workbench/evidence/research_program_source_bound_audit_v1.json)
+regenerated all 40 strategy paths for the ten existing recurring-program
+reviews. Every stored metric and gate agreed; all ten candidates remain
+rejected. The
+[migration snapshot](research/workbench/evidence/research_program_2026-W41_review_v9.json)
+preserves all 94 evaluated configurations, prior factor definitions,
+blocked-stock-data cycle and candidate histories. This audit adds zero new
+strategy trials and no investment success claim.
+
+The native weekly instructions now require a supported source-bound generator
+for new candidate implementations and explain that engine identity includes
+the replay/accounting dependencies. An exact stored `metadata.engine_sha`
+and event-chain head are required for reviewed migrations; a single-file
+checksum is no longer the complete engine identity.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
