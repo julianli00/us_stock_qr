@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-10",
-  "phase": "multifactor_stability_audited_no_incremental_return_evidence",
-  "active_research_focus": "unleveraged_multifactor_stability",
+  "phase": "recurring_factor_research_enabled_strategy_goal_blocked_by_data",
+  "active_research_focus": "recurring_fundamental_multifactor_research",
   "completed": [
     "Preserved runnable incumbent strategy/engine and early-scanner source alongside the isolated 52-configuration workbench.",
     "Verified 50 target integration tests and 357 isolated workbench tests; original strategy functions and synthetic weight matrices match.",
@@ -20,7 +20,10 @@
     "Verified2805 complete actual sessions for all four factor ETFs, including corporate-action checks and issuer-source hashes; the benchmark/defensive/risk-free source remains unchanged.",
     "All six unleveraged multifactor portfolios evaluated over77 independently accounted paths: two meet stability criteria, none meets the unchanged Sharpe/SPY return goals;84 configurations remain disclosed.",
     "Selected low-risk prototype has10y/5y drawdown13.93%/13.05% but CAGR6.90%/7.04% and Sharpe0.6063/0.4374. Four-factor equity alone still has34.38%drawdown; factor daily correlations0.736-0.894.",
-    "Final audit reproduces77 original paths and all six target matrices plus12 matched-equity-budget SPY controls. Factor net CAGR/Sharpe is lower in all12 comparisons; five-year CAGR7.04% versus7.82% with similar drawdown. No incremental factor value or full-goal success is established."
+    "Final audit reproduces77 original paths and all six target matrices plus12 matched-equity-budget SPY controls. Factor net CAGR/Sharpe is lower in all12 comparisons; five-year CAGR7.04% versus7.82% with similar drawdown. No incremental factor value or full-goal success is established.",
+    "Implemented a weekly evidence-gated factor journal and research-version review that freezes code/data/cutoffs and reexecutes actual market/target costs and independent accounting; no live promotion.",
+    "The first2026-W41 cycle registered cash-flow accrual quality and conservative asset growth; six definitions across five economic families,84evaluated configurations unchanged, no qualified research champion. SEC403 and full-universe historical-data blockers remain.",
+    "Native session automation is enabled for Saturday09:00Asia/Shanghai; next scheduled invocation observed2026-10-17. Duplicate weeks are skipped, incomplete registered work is resumed, and all failed research remains recorded."
   ],
   "completed_zh": [
     "已保留可运行的原Top30算法、成本引擎和独立早期扫描器，并隔离导入52配置研究工作台。",
@@ -39,10 +42,14 @@
     "四类因子ETF各2805个真实交易日已通过价格、公司行动及来源哈希核对；原基准、防御资产和无风险数据未变。",
     "6个无杠杆多因子组合已完成77条独立记账路径，2个达到稳定性门槛，0个达到原Sharpe/SPY目标；累计84个配置全部保留。",
     "低风险原型十年/五年回撤降至13.93%/13.05%，但年化仅6.90%/7.04%、Sharpe仅0.6063/0.4374；纯四因子股票组合回撤仍34.38%，相关性0.736-0.894。",
-    "最终复算77条原始路径、6组完整目标矩阵及12条同股票预算SPY对照；因子净年化/Sharpe在12项比较中均较低，五年年化7.04%对7.82%、回撤相近，尚未证明新增因子价值。"
+    "最终复算77条原始路径、6组完整目标矩阵及12条同股票预算SPY对照；因子净年化/Sharpe在12项比较中均较低，五年年化7.04%对7.82%、回撤相近，尚未证明新增因子价值。",
+    "已实现按周因子账本和研究版本审阅：冻结代码、数据及截止日，实际重跑交易成本和独立记账；不自动实盘升级。",
+    "首轮2026-W41登记现金流应计质量、保守资产增长两个提案；共6个定义、5个经济家族，已回测仍84个，新合格策略为0，SEC403和完整历史股票数据缺口未解决。",
+    "已启用每周六北京时间09:00的本会话自动研究，下次计划为2026-10-17；重复周不重复登记，中断候选继续原版本，失败记录保留。"
   ],
   "next": [
-    "Keep the unleveraged multifactor research direction, but do not promote a factor portfolio without incremental net evidence against a simple matched-budget control.",
+    "At the next weekly cycle, verify legitimate data access and historical coverage before evaluating the new fundamental proposals; record unavailable sources rather than bypassing403 or manufacturing histories.",
+    "Require at least three economic factor families and unchanged Sharpe/SPY/drawdown gates before advancing a research version; no qualified current champion exists.",
     "Seek verifiable historical execution or publication-time fundamental data for new hypotheses; do not retune the near-threshold band on the same exposed history.",
     "Keep candidate rules frozen and obtain genuinely new timestamped forward observations before any trading promotion; do not backfill or restart paused ledgers implicitly.",
     "Retain higher-cost and rolling-window failures as open robustness limitations, not hidden exceptions or reasons to rewrite frozen evidence.",
@@ -51,7 +58,8 @@
     "Preregister bounded hypotheses and preserve failures and the paused forward record."
   ],
   "next_zh": [
-    "保持无杠杆多因子研究方向；没有超越简单同预算对照的净增益证据前不升级，不把减仓和防御当成因子alpha。",
+    "下个周周期先核对合规数据访问与历史覆盖，再评估基本面提案；不可绕过403或造数据，缺失就明确记为阻断。",
+    "至少三个经济因子家族、原Sharpe/SPY/回撤门槛不放宽，符合才推进研究版本；当前没有新合格策略。",
     "下一类假设先补可核实的历史执行数据或带披露时间的基本面证据，不在同一已见历史上微调接近门槛的交易带。",
     "保持候选规则冻结；交易升级前需要真实新增、可证明时点的前瞻观察，不补造数据或隐式重启暂停记录。",
     "保留更高成本及滚动窗口失败作为未解决的稳健性限制，不隐藏例外或重写冻结证据。",
@@ -162,6 +170,29 @@
     "data_end": "2026-10-05",
     "independent_forward_validation": false,
     "automatic_baseline_replacement": false,
+    "order_authority": false
+  },
+  "recurring_research_program": {
+    "state": "weekly_enabled_first_cycle_blocked_data",
+    "policy": "research/workbench/config/research-program.json",
+    "cycle_snapshot": "research/workbench/evidence/research_program_2026-W41.json",
+    "automation_receipt": "research/workbench/evidence/research_program_automation_20261010.json",
+    "readiness": "research/workbench/evidence/research_program_data_readiness_20261010.json",
+    "new_factor_proposals": 2,
+    "known_factor_definitions": 6,
+    "economic_factor_families": 5,
+    "independent_factor_count_verified": false,
+    "new_strategy_evaluations": 0,
+    "total_evaluated_configurations": 84,
+    "research_champion": null,
+    "research_versions": 0,
+    "data_blockers": 5,
+    "schedule": "Saturday09:00Asia/Shanghai",
+    "next_scheduled_run_at_receipt_utc": "2026-10-17T01:00:28.000Z",
+    "future_scheduled_run_observed": false,
+    "investment_objective_verified": false,
+    "independent_forward_validation": false,
+    "automatic_live_deployment": false,
     "order_authority": false
   },
   "delivery": {

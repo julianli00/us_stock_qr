@@ -531,6 +531,23 @@ schedule is not proof of an actual future execution. Integrity errors must
 pause automation for review; supplier access failures are recorded as data
 blockers, never bypassed with fake prices or silently relaxed objectives.
 
+The native weekly automation is now configured and read back successfully.
+The [schedule receipt](research/workbench/evidence/research_program_automation_20261010.json)
+records the next invocation observed at configuration time: **October 17,
+2026, approximately 09:00 Asia/Shanghai**. It wakes this same session rather
+than modifying the old Slack/Discord services. Pending registered candidates
+are resumed under their original frozen inputs, not discarded or counted again.
+
+The [first real cycle](research/workbench/evidence/research_program_2026-W41.json)
+registered two new factor definitions and recorded five explicit stock-data
+blockers. Together with four prior definitions, the catalog has six definitions
+in five economic families; it does not prove five independent sources of
+alpha. The number of evaluated strategy configurations is still **84**, with
+zero new evaluations, zero qualified research versions and no research
+champion. Repeating the same week leaves the event chain and counts unchanged.
+**The requested Sharpe/robustness objective remains unfulfilled.** Neither
+working automation nor passing synthetic tests constitutes investment evidence.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
