@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-11",
-  "phase": "matched_growth_exposure_rejected_98_evaluations_goal_unmet",
+  "phase": "conditional_forecasts_evaluated_100_completed_strategy_goal_unmet",
   "active_research_focus": "recurring_fundamental_multifactor_research",
   "completed": [
     "Preserved runnable incumbent strategy/engine and early-scanner source alongside the isolated 52-configuration workbench.",
@@ -40,7 +40,9 @@
     "Native automation now collects data daily around09:00Asia/Shanghai; factor discovery remains Saturday09:00. Next invocation at configuration was2026-10-11 around09:01; old forward ledgers and notification services remain untouched.",
     "A separately labeled full-sample,zero-cost fixed-weight feasibility diagnostic gives numerical Sharpe ceilings about0.93375/0.99439 for10y/5y. It is not a causal strategy or a bound for dynamic trading; adds zero trials and no investment success.",
     "Two matched-risk growth/core portfolios completed real source-bound reviews and were rejected. AddingQQQraises10y/5ybaseSharpe0.8347/0.8878 to0.8865/0.9131 but drawdown also rises;98actual evaluations,no qualifying champion.",
-    "Equivalent volatility-coordinate scaling repaired a failed diagnostic certificate without changing constraints or tolerances. QQQ-inclusive hindsight fixed-weight bounds are1.00333/0.99622, not tradable results or strategy qualifications."
+    "Equivalent volatility-coordinate scaling repaired a failed diagnostic certificate without changing constraints or tolerances. QQQ-inclusive hindsight fixed-weight bounds are1.00333/0.99622, not tradable results or strategy qualifications.",
+    "Two conditional predictor v1code versions failed pre-accounting on BIL roundoff at1.11e-16. Version2 changes only that numeric residue; all training audits and other target weights remain identical. Original technical failures are retained separately.",
+    "Corrected price-only and macro/option models completed real review and were rejected. BaseSharpe0.5460/0.6239 versus0.5462/0.7765;121causal fits per model, no future labels.100complete strategy evaluations,16program reviews and2technical code failures remain visible; no champion."
   ],
   "completed_zh": [
     "已保留可运行的原Top30算法、成本引擎和独立早期扫描器，并隔离导入52配置研究工作台。",
@@ -79,7 +81,9 @@
     "调度已改为每天北京时间09:00左右采集数据，因子探索仍每周六09:00；配置时下次为2026-10-11约09:01，旧前瞻账本和通知服务未改动。",
     "另做明确标注的完整样本、零成本固定配比诊断，十年/五年夏普数值上界约0.93375/0.99439；不是可交易策略，也不限制所有动态策略，不增加回测计数或宣称达标。",
     "有/无QQQ的匹配风险对照已完成并拒绝，十年/五年基础Sharpe由0.8347/0.8878升至0.8865/0.9131，但回撤略增；累计98个真实评估，仍无合格策略。",
-    "以等价波动率坐标修复诊断数值条件，未放宽约束或容差；含QQQ的事后固定组合上界约1.00333/0.99622，不能当可交易结果或达标策略。"
+    "以等价波动率坐标修复诊断数值条件，未放宽约束或容差；含QQQ的事后固定组合上界约1.00333/0.99622，不能当可交易结果或达标策略。",
+    "两个条件模型原版在计价前因BIL负残差1.11e-16失败；纠正版仅修数值零，训练审计和其他仓位不变，原技术失败单独保留。",
+    "纠正后的价格/宏观期权模型已完成真实审阅并拒绝，基础Sharpe为0.5460/0.6239和0.5462/0.7765；每个模型121次因果训练，无未来标签。累计100项完整策略评估、16项周期审阅及2个技术失败版本，仍无合格策略。"
   ],
   "next": [
     "Avoid further static-mix tuning justified only by this exposed sample; the feasibility diagnostic is not a trading rule. Seek credible predictive data or economically justified new information while collecting real new observations.",
@@ -217,7 +221,7 @@
   "recurring_research_program": {
     "state": "daily_data_weekly_research_no_qualified_candidate",
     "policy": "research/workbench/config/research-program.json",
-    "cycle_snapshot": "research/workbench/evidence/research_program_2026-W41_results_v13.json",
+    "cycle_snapshot": "research/workbench/evidence/research_program_2026-W41_results_v16.json",
     "initial_cycle_snapshot": "research/workbench/evidence/research_program_2026-W41.json",
     "automation_receipt": "research/workbench/evidence/prospective_data_automation_v1.json",
     "initial_weekly_automation_receipt": "research/workbench/evidence/research_program_automation_20261010.json",
@@ -226,8 +230,9 @@
     "known_factor_definitions": 6,
     "economic_factor_families": 5,
     "independent_factor_count_verified": false,
-    "new_strategy_evaluations": 14,
-    "total_evaluated_configurations": 98,
+    "new_strategy_evaluations": 16,
+    "total_evaluated_configurations": 100,
+    "technical_rejected_code_versions": 2,
     "research_champion": null,
     "research_versions": 0,
     "data_blockers": 5,
@@ -274,10 +279,23 @@
     "QQQ_is_beta_not_a_new_factor": true,
     "diagnostic": "research/workbench/evidence/growth_scope_feasibility_v1.json"
   },
+  "conditional_factor_model": {
+    "registration": "research/workbench/evidence/conditional_factor_model_20261011_registration_v2.json",
+    "results": "research/workbench/evidence/conditional_factor_model_20261011_results_v2.json",
+    "training_audit": "research/workbench/evidence/conditional_model_training_audit_v2.json",
+    "numeric_correction": "research/workbench/evidence/conditional_model_numeric_fix_v2.json",
+    "new_completed_strategy_evaluations": 2,
+    "accepted_candidates": 0,
+    "preserved_invalid_code_versions": 2,
+    "fits_per_model": 121,
+    "future_labels_used": false,
+    "order_authority": false
+  },
   "source_bound_review": {
-    "audit": "research/workbench/evidence/research_program_source_bound_audit_v1.json",
-    "reviewed_candidates": 10,
-    "regenerated_strategy_paths": 40,
+    "audit": "research/workbench/evidence/research_program_source_bound_audit_v2.json",
+    "prior_audit": "research/workbench/evidence/research_program_source_bound_audit_v1.json",
+    "reviewed_candidates": 16,
+    "regenerated_strategy_paths": 64,
     "registered_code_targets_required": true,
     "risk_free_from_frozen_market_required": true,
     "engine_identity_includes_replay_dependencies": true,

@@ -1122,6 +1122,28 @@ Corrected specifications use new IDs and a `supersedes_candidate` link.
 `pending_candidate_ids` excludes terminal technical failures, so future runs
 do not repeatedly retry an immutable invalid version.
 
+The [corrected model results](research/workbench/evidence/conditional_factor_model_20261011_results_v2.json)
+completed actual source-bound review and were both rejected. Price-only
+base Sharpe is 0.5460/0.6239 for ten/five years; macro/option augmentation
+gives 0.5462/0.7765. Stressed Sharpe is lower and drawdown remains above 15%.
+The added information improves the five-year comparison but does not satisfy
+the target.
+The [training audit](research/workbench/evidence/conditional_model_training_audit_v2.json)
+records 121 fits per model, first fitted September 30, 2016 with nine
+distinct matured months. All label-availability dates precede decisions,
+and regenerated target matrices match the evaluated account inputs.
+
+The [latest program snapshot](research/workbench/evidence/research_program_2026-W41_results_v16.json)
+has 100 complete strategy evaluations and 16 completed recurring reviews,
+all rejected under the current full gates. Two separate, invalid first code
+versions remain as technical failures, not hidden or falsely counted as
+complete performance evaluations. There is still no qualifying research
+champion or live strategy update.
+The [latest read-only source-bound audit](research/workbench/evidence/research_program_source_bound_audit_v2.json)
+regenerated all 64 paths for those 16 completed reviews and confirmed every
+recorded metric/gate without changing the ledger. The two technical failures
+remain outside the completed-performance count.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
