@@ -1949,7 +1949,10 @@ cd research/workbench
 ```
 
 Preparation revalidates the original growth ETF snapshot and computes no
-outcomes. Register both fixed rules before the generic source-bound evaluator.
+outcomes. Both [fixed rules were registered before outcomes](research/workbench/evidence/growth_portfolio_protection_20261011_registration.json).
+Exact-anchor migration preserves all 108 prior configurations and 24
+reviews, and adds no new factor definition. The two actual candidates
+are pending; the queued six-family rules remain unregistered and unevaluated.
 All original dual-window costs, Sharpe/SPY/drawdown criteria and paused
 ledgers remain unchanged. The current prospective archive lacks QQQ;
 no independent future result for this new study is claimed.
