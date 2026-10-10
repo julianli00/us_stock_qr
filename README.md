@@ -1528,7 +1528,7 @@ and CAGR are lower. Both variants miss the index return goal.
 This does not establish that every credit indicator is useless, and does
 not justify tuning the rejected recovery/median windows on exposed history.
 
-The [current program snapshot](research/workbench/evidence/research_program_2026-W41_results_v26.json)
+The [credit-round program snapshot](research/workbench/evidence/research_program_2026-W41_results_v26.json)
 retains **108 complete configurations, 24 completed reviews, two terminal
 invalid code versions, the separately resolved accounting incident, no
 pending candidates and no qualified champion**.
@@ -1582,6 +1582,21 @@ remain unchanged until a real eligible cycle occurs.
 
 The current prospective archive does not yet include IJR or PKW; no
 independent new-family strategy performance is claimed.
+The [real-clock queue check](research/workbench/evidence/factor_family_queue_receipt_v1.json)
+actually rejected premature discovery and verified that the live catalog,
+cycles, candidates, results and event head did not change after rejection.
+The [history-preserving migration snapshot](research/workbench/evidence/research_program_2026-W41_families_v27.json)
+still has **108 completed configurations, 24 reviews, six registered
+definitions across five families and no qualified champion**. Two queued
+definitions are not counted as registered discoveries.
+
+The [latest 96-path source-bound audit](research/workbench/evidence/research_program_source_bound_audit_v7.json)
+reproduces all existing outcomes after the adapter change without modifying
+the journal. The [native queue instructions](research/workbench/evidence/prospective_data_automation_v4.json)
+refresh readiness only at a real eligible cycle and register definitions
+before any candidate relying on them. They do not invent a future execution
+or use a synthetic clock. Minimum economic-family, weekly-definition,
+cost, risk and return criteria remain unchanged.
 
 ## Progress and publication
 
