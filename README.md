@@ -845,6 +845,41 @@ There is no qualified research champion or live strategy change.
 This unresolved research goal is not converted to success by rounding
 0.9850 upward, shortening windows, or hiding the risk/benchmark failures.
 
+### Source-bound strategy review
+
+Three synthetic regression cases exposed missing review boundaries: the
+reviewer previously accepted a self-consistent but unrelated target matrix,
+an unsupported frozen-code placeholder, or an altered submitted risk-free
+series. None of these fixtures represents an actual market strategy result.
+The corrected reviewer rejects all three before advancing a research version.
+
+`strategy_replay.py` now reconstructs targets from the exact registered,
+supported implementation and its frozen policy. It preserves the actual
+cost-dependent feedback for daily-risk strategies and reuses the causal
+indicator builders for adaptive, option-implied and macro rules. The complete
+target matrix, including its missing/non-decision rows, must match submitted
+targets. Unknown strategy generators cannot qualify merely by supplying an
+equity curve; new implementations require an explicit reviewed replay adapter
+and causality tests.
+
+Sharpe is recalculated using the risk-free series in the **registered market
+snapshot**, not a submitted return-table column. The program engine fingerprint
+also binds the replay adapter and shared accounting/metric dependencies.
+An explicit event-anchored migration preserves earlier records; an unexplained
+engine/dependency change still fails verification.
+
+Existing reviews can be rechecked without replacing or recounting them:
+
+```bash
+.venv/bin/python -I -B -m us_quant.research_program audit-reviews \
+  --export evidence/research_program_source_bound_audit_v1.json
+```
+
+This action finds the original hashed bundles, regenerates targets and both
+accounting paths, compares metrics and gates with the existing review, and
+asserts that the ledger is unchanged. Disagreement is an error, not permission
+to rewrite old results or promote a previously rejected candidate.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

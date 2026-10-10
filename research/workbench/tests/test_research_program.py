@@ -43,6 +43,14 @@ def program(tmp_path, policy):
     instance.close()
 
 
+@pytest.fixture
+def registered_generator(monkeypatch):
+    def generate(spec, data, start, end, cost, delay, root, cache):
+        return buy_and_hold_signals(data.close, "TEST", start) * 0.98
+
+    monkeypatch.setattr("us_quant.research_program.registered_targets", generate, raising=False)
+
+
 def readiness(policy, root, now=None, *, ready=False):
     now = timestamp(now)
     proof = root / "proof.json"
@@ -328,7 +336,7 @@ def make_bundle(tmp_path, registration, *, winning=True):
 
 @pytest.mark.parametrize("winning", [True, False])
 def test_independent_review_records_success_or_failure_without_live_promotion(
-    program, policy, tmp_path, winning
+    program, policy, tmp_path, winning, registered_generator
 ):
     registered = program.register_candidate(
         candidate_spec(tmp_path, winning=winning), readiness(policy, tmp_path, ready=True)
@@ -370,7 +378,7 @@ def test_invalid_evaluation_cannot_update_research_champion(program, policy, tmp
 
 
 def test_self_consistent_curve_cannot_replace_real_market_and_cost_replay(
-    program, policy, tmp_path
+    program, policy, tmp_path, registered_generator
 ):
     registered = program.register_candidate(
         candidate_spec(tmp_path), readiness(policy, tmp_path, ready=True)
@@ -385,6 +393,110 @@ def test_self_consistent_curve_cannot_replace_real_market_and_cost_replay(
     with pytest.raises(QuantError, match="replay"):
         program.review("test_multifactor", bundle)
     assert program.status()["research_champion"] is None
+
+
+def test_review_refuses_submitted_risk_free_different_from_frozen_market(
+    program, policy, tmp_path, registered_generator
+):
+    registered = program.register_candidate(
+        candidate_spec(tmp_path), readiness(policy, tmp_path, ready=True)
+    )
+    bundle = make_bundle(tmp_path, registered)
+    for item in bundle["paths"]:
+        for name in ("strategy", "spy"):
+            path = tmp_path / item[name]["path"]
+            frame = pd.read_csv(path, index_col=0)
+            frame["risk_free"] = -0.01
+            frame.to_csv(path)
+            item[name]["sha256"] = file_digest(path)
+    with pytest.raises(QuantError, match="inconsistent|risk.free"):
+        program.review("test_multifactor", bundle)
+    assert program.status()["research_champion"] is None
+
+
+def test_consistent_ledgers_cannot_use_targets_unrelated_to_the_registered_rule(
+    program, policy, tmp_path, registered_generator
+):
+    from us_quant.research_program import review_market
+
+    registered = program.register_candidate(
+        candidate_spec(tmp_path), readiness(policy, tmp_path, ready=True)
+    )
+    bundle = make_bundle(tmp_path, registered)
+    market = review_market(bundle, tmp_path)
+    for item in bundle["paths"]:
+        path = tmp_path / item["targets"]["path"]
+        targets = pd.read_csv(path, index_col=0, parse_dates=True)
+        targets["TEST"] *= 0.5
+        targets.to_csv(path)
+        item["targets"]["sha256"] = file_digest(path)
+        start = str(
+            (
+                pd.Timestamp(bundle["as_of"])
+                - pd.DateOffset(years=item["years"])
+                + pd.Timedelta(days=1)
+            ).date()
+        )
+        altered = simulate(
+            market,
+            targets,
+            start,
+            bundle["as_of"],
+            initial_capital=10000,
+            cost_bps=item["cost_bps"],
+            commission=1,
+            delay=item["delay_sessions"],
+        )
+        for name, frame in (
+            ("strategy", altered.frame),
+            ("strategy_bt", altered.frame[["equity", "return"]]),
+            ("weights", altered.weights),
+        ):
+            path = tmp_path / item[name]["path"]
+            frame.to_csv(path)
+            item[name]["sha256"] = file_digest(path)
+    bundle["completed_at"] = timestamp().isoformat()
+    with pytest.raises(QuantError, match="registered strategy"):
+        program.review("test_multifactor", bundle)
+    assert program.status()["research_champion"] is None
+
+
+def test_unknown_strategy_code_cannot_qualify_from_a_submitted_equity_curve(
+    program, policy, tmp_path
+):
+    registered = program.register_candidate(
+        candidate_spec(tmp_path), readiness(policy, tmp_path, ready=True)
+    )
+    with pytest.raises(QuantError, match="registered strategy"):
+        program.review("test_multifactor", make_bundle(tmp_path, registered))
+    assert program.status()["research_champion"] is None
+
+
+def test_read_only_reaudit_preserves_the_entire_program_ledger(
+    program, policy, tmp_path, registered_generator
+):
+    record = program.register_candidate(
+        candidate_spec(tmp_path), readiness(policy, tmp_path, ready=True)
+    )
+    bundle = make_bundle(tmp_path, record)
+    program.review("test_multifactor", bundle)
+    before = program.status()
+    result = program.review("test_multifactor", bundle, audit_existing=True)
+    assert result["read_only_reaudit"] and result["original_record_unchanged"]
+    assert all(row["registered_strategy_targets_regenerated"] for row in result["paths"])
+    assert all(row["frozen_market_risk_free_used"] for row in result["paths"])
+    assert program.status() == before
+    changed = deepcopy(bundle)
+    changed["completed_at"] = timestamp().isoformat()
+    with pytest.raises(QuantError, match="unchanged original"):
+        program.review("test_multifactor", changed, audit_existing=True)
+    assert program.status() == before
+
+
+def test_dependency_changes_invalidate_program_verification(program, monkeypatch):
+    monkeypatch.setattr("us_quant.research_program.replay_dependencies_hash", lambda: "changed")
+    with pytest.raises(QuantError, match="engine"):
+        program.status()
 
 
 def test_engine_migration_preserves_history_and_requires_exact_anchors(policy, tmp_path, proposals):

@@ -21,8 +21,18 @@ from us_quant.factor_validation import check_metrics, independent_metrics
 from us_quant.metrics import performance
 from us_quant.storage import digest_json, file_digest, read_json, write_json
 from us_quant.strategy import buy_and_hold_signals
+from us_quant.strategy_replay import registered_targets, replay_dependencies_hash
 
 ROOT = Path(__file__).resolve().parents[2]
+
+
+def engine_fingerprint() -> str:
+    return digest_json(
+        {
+            "program": file_digest(Path(__file__)),
+            "replay_dependencies": replay_dependencies_hash(),
+        }
+    )
 
 
 def timestamp(now: datetime | None = None) -> datetime:
@@ -297,7 +307,7 @@ class ResearchProgram:
                 now = timestamp()
                 self.db.execute(
                     "INSERT INTO metadata VALUES (1,?,?)",
-                    (digest_json(policy), file_digest(Path(__file__))),
+                    (digest_json(policy), engine_fingerprint()),
                 )
                 initial_factors = {}
                 for factor in policy["seed_factors"]:
@@ -335,7 +345,7 @@ class ResearchProgram:
                     if (
                         metadata["engine_sha"] != expected_previous_engine
                         or head["sha"] != expected_previous_event
-                        or expected_previous_engine == file_digest(Path(__file__))
+                        or expected_previous_engine == engine_fingerprint()
                     ):
                         raise QuantError(
                             "Engine migration preconditions changed; no ledger reset allowed."
@@ -344,16 +354,17 @@ class ResearchProgram:
                         "engine_migrated",
                         {
                             "from_engine_sha256": expected_previous_engine,
-                            "to_engine_sha256": file_digest(Path(__file__)),
+                            "to_engine_sha256": engine_fingerprint(),
                             "prior_event_sha256": expected_previous_event,
                             "policy_unchanged": True,
-                            "reason": "Add ETF scope; keep stock-data and performance gates.",
+                            "reason": "Reviewed engine update; preserve history, policy and goals.",
+                            "fingerprint_scheme": "program_and_replay_dependencies",
                         },
                         timestamp(),
                     )
                     self.db.execute(
                         "UPDATE metadata SET engine_sha=? WHERE id=1",
-                        (file_digest(Path(__file__)),),
+                        (engine_fingerprint(),),
                     )
                 self.previous_engine = None
                 self.verify()
@@ -387,7 +398,7 @@ class ResearchProgram:
             row is None
             or row["policy_sha"] != digest_json(self.policy)
             or (
-                row["engine_sha"] != file_digest(Path(__file__))
+                row["engine_sha"] != engine_fingerprint()
                 and (self.previous_engine is None or row["engine_sha"] != self.previous_engine)
             )
         ):
@@ -634,7 +645,14 @@ class ResearchProgram:
             self._event("candidate", record, now)
         return record
 
-    def review(self, candidate_id: str, bundle: dict, *, now: datetime | None = None) -> dict:
+    def review(
+        self,
+        candidate_id: str,
+        bundle: dict,
+        *,
+        now: datetime | None = None,
+        audit_existing: bool = False,
+    ) -> dict:
         now = timestamp(now)
         self.verify()
         candidate = self.db.execute(
@@ -642,9 +660,14 @@ class ResearchProgram:
         ).fetchone()
         if candidate is None:
             raise QuantError("A strategy cannot be evaluated before registration.")
-        if self.db.execute(
-            "SELECT 1 FROM reviews WHERE candidate_id=?", (candidate_id,)
-        ).fetchone():
+        previous_review = self.db.execute(
+            "SELECT body,evidence_sha FROM reviews WHERE candidate_id=?", (candidate_id,)
+        ).fetchone()
+        if audit_existing and (
+            previous_review is None or previous_review["evidence_sha"] != digest_json(bundle)
+        ):
+            raise QuantError("Read-only audit requires the unchanged original review evidence.")
+        if previous_review is not None and not audit_existing:
             raise QuantError(
                 "Preserve the earlier review; changed rules need a new registered version."
             )
@@ -681,6 +704,7 @@ class ResearchProgram:
         ):
             raise QuantError("Market panels differ from the registered universe or endpoint.")
         checked = []
+        target_cache = {}
         for item in records:
             years, scenario = item["years"], item["scenario"]
             expected = sessions(end - pd.DateOffset(years=years) + pd.Timedelta(days=1), end)
@@ -705,6 +729,23 @@ class ResearchProgram:
                 frames[key] = frame
             target_path = safe_file(self.root, item["targets"]["path"], item["targets"]["sha256"])
             targets = pd.read_csv(target_path, index_col=0, parse_dates=True)
+            generated = registered_targets(
+                spec,
+                data,
+                str(expected[0].date()),
+                str(expected[-1].date()),
+                item["cost_bps"],
+                item["delay_sessions"],
+                self.root,
+                target_cache,
+            )
+            if (
+                not targets.index.equals(generated.index)
+                or not targets.columns.equals(generated.columns)
+                or not targets.isna().equals(generated.isna())
+                or not np.allclose(targets, generated, rtol=0, atol=1e-10, equal_nan=True)
+            ):
+                raise QuantError("Submitted targets do not match the frozen registered strategy.")
             replay = simulate(
                 data,
                 targets,
@@ -761,13 +802,13 @@ class ResearchProgram:
             values, error = independent_metrics(
                 frames["strategy"],
                 frames["strategy_bt"],
-                frames["strategy"]["risk_free"],
+                data.risk_free.loc[expected],
                 goals["capital_usd"],
             )
             benchmark, benchmark_error = independent_metrics(
                 frames["spy"],
                 frames["spy_bt"],
-                frames["strategy"]["risk_free"],
+                data.risk_free.loc[expected],
                 goals["capital_usd"],
             )
             check_metrics(
@@ -817,6 +858,8 @@ class ResearchProgram:
                     "max_independent_equity_error_usd": max(error, benchmark_error),
                     "market_and_target_replay_passed": True,
                     "independent_bt_reexecuted": True,
+                    "registered_strategy_targets_regenerated": True,
+                    "frozen_market_risk_free_used": True,
                 }
             )
         for item in checked:
@@ -844,6 +887,23 @@ class ResearchProgram:
             "live_strategy_update": False,
             "data_scope": spec.get("data_scope", "direct_stock"),
         }
+        if audit_existing:
+            original = json.loads(previous_review["body"])
+            if (
+                original["historical_gates_passed"] != result["historical_gates_passed"]
+                or original["status"] != result["status"]
+            ):
+                raise QuantError(
+                    "Reverification disagrees with the prior outcome; do not rewrite it."
+                )
+            prior_paths = {(row["years"], row["scenario"]): row for row in original["paths"]}
+            for row in result["paths"]:
+                prior = prior_paths[row["years"], row["scenario"]]
+                check_metrics(row["metrics"], prior["metrics"])
+                check_metrics(row["benchmark"], prior["benchmark"])
+                if row["gates"] != prior["gates"]:
+                    raise QuantError("A prior review gate disagrees with regenerated evidence.")
+            return {**result, "read_only_reaudit": True, "original_record_unchanged": True}
         with self.db:
             self.db.execute("BEGIN IMMEDIATE")
             self.verify()
@@ -864,6 +924,41 @@ class ResearchProgram:
                 ),
             )
         return result
+
+    def audit_reviews(self) -> dict:
+        before = self.status()
+        results = []
+        for previous in before["candidate_reviews"]:
+            candidate = previous["candidate_id"]
+            bundles = sorted((self.root / "reports").glob(f"*/{candidate}/bundle.json"))
+            original = None
+            for path in bundles:
+                safe_file(self.root, path.relative_to(self.root).as_posix())
+                value = read_json(path)
+                if digest_json(value) == previous["evidence_sha256"]:
+                    original = value
+                    break
+            if original is None:
+                raise QuantError(
+                    "Original candidate bundle is unavailable for source-bound re-audit."
+                )
+            results.append(self.review(candidate, original, audit_existing=True))
+        if self.status() != before:
+            raise QuantError("Read-only re-audit unexpectedly changed the program ledger.")
+        return {
+            "schema_version": 1,
+            "audited_at": timestamp().isoformat(),
+            "engine_sha256": engine_fingerprint(),
+            "event_chain_sha256": before["event_chain_sha256"],
+            "reviewed_candidates": len(results),
+            "regenerated_strategy_paths": sum(len(row["paths"]) for row in results),
+            "total_evaluated_configurations": before["total_evaluated_configurations"],
+            "ledger_unchanged": True,
+            "reviews": results,
+            "new_strategy_evaluations": 0,
+            "investment_objective_verified": False,
+            "order_authority": False,
+        }
 
     def status(self) -> dict:
         self.verify()
@@ -930,7 +1025,15 @@ def main() -> None:
     )
     parser.add_argument(
         "action",
-        choices=("init", "cycle", "register-candidate", "review", "status", "migrate-engine"),
+        choices=(
+            "init",
+            "cycle",
+            "register-candidate",
+            "review",
+            "status",
+            "migrate-engine",
+            "audit-reviews",
+        ),
     )
     parser.add_argument("--policy", type=Path, default=Path("config/research-program.json"))
     parser.add_argument("--ledger", type=Path, default=Path("runtime/research-program.sqlite3"))
@@ -980,10 +1083,12 @@ def main() -> None:
                     "Review requires a registered candidate and hashed accounting bundle."
                 )
             result = program.review(args.candidate_id, read_json(args.bundle))
+        elif args.action == "audit-reviews":
+            result = program.audit_reviews()
         else:
             result = program.status()
         if args.export is not None:
-            state = program.status()
+            state = result if args.action == "audit-reviews" else program.status()
             if args.export.exists() and read_json(args.export) != state:
                 raise QuantError(
                     "A published research snapshot changed; choose a new versioned export."
