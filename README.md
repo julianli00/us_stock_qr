@@ -1580,8 +1580,9 @@ queue rather than inventing a future timestamp or silently bypassing the
 weekly limit. Existing factor counts and all 108 completed configurations
 remain unchanged until a real eligible cycle occurs.
 
-The current prospective archive does not yet include IJR or PKW; no
-independent new-family strategy performance is claimed.
+The original prospective archive does not include IJR or PKW. The separate
+extension below adds only a new data baseline; no independent new-family
+strategy performance is claimed.
 The [real-clock queue check](research/workbench/evidence/factor_family_queue_receipt_v1.json)
 actually rejected premature discovery and verified that the live catalog,
 cycles, candidates, results and event head did not change after rejection.
@@ -1639,6 +1640,29 @@ pins the new collector and policy before acquisition. It initializes only
 `data/prospective-factor-inputs-v2`; the original parent's receipt head,
 registration and source inputs remain unchanged. At registration the new
 archive has zero snapshots and no independent strategy performance.
+
+The [actual expanded baseline receipt](research/workbench/evidence/prospective_factor_inputs_v2_baseline_receipt.json)
+records the October 9 session acquired at
+**2026-10-10T21:22:03.497540Z**, before the next NYSE open.
+The [capture audit](research/workbench/evidence/prospective_factor_inputs_v2_capture_audit.json)
+verifies all 35 inherited input files and their acquisition timestamps,
+unchanged parent receipt head, and the three actually acquired new sources.
+The expanded archive has 17 source streams and 502 sessions of price context.
+Those historical rows, and the two same-day parent/expanded snapshots, are
+not extra independent market observations.
+
+The [expanded status](research/workbench/evidence/prospective_factor_inputs_v2_initial_status.json)
+has one baseline and **zero observations after baseline**, just like the
+unchanged original archive. A duplicate call is verified to skip fetching
+and leave both receipt hashes unchanged. No strategy account, P&L,
+candidate evaluation or factor registration was added; all 108 research
+configurations and the queued October 17 definitions remain unchanged.
+
+The [latest native instructions](research/workbench/evidence/prospective_data_automation_v5.json)
+collect the parent first and extension second at the existing daily cadence,
+without reinitializing either archive. Future execution has not been
+observed or claimed. The original collector fingerprint, old forward
+ledgers and weekly research eligibility remain untouched.
 
 ## Progress and publication
 
