@@ -1634,6 +1634,11 @@ Initialize only the new explicitly named expanded archive, never the
 existing parent. Daily execution collects the parent first and expanded
 inputs second; same-session duplicates make no network requests.
 Both archives preserve missed sessions without retroactive backfill.
+The [extension registration](research/workbench/evidence/prospective_factor_inputs_v2_registration.json)
+pins the new collector and policy before acquisition. It initializes only
+`data/prospective-factor-inputs-v2`; the original parent's receipt head,
+registration and source inputs remain unchanged. At registration the new
+archive has zero snapshots and no independent strategy performance.
 
 ## Progress and publication
 

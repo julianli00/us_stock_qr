@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-11",
-  "phase": "additional_families_source_verified_and_queued_108_completed_goal_unmet",
+  "phase": "expanded_prospective_archive_registered_108_completed_goal_unmet",
   "active_research_focus": "source_verified_multifactor_research_and_independent_data",
   "completed": [
     "Preserved runnable incumbent strategy/engine and early-scanner source alongside the isolated 52-configuration workbench.",
@@ -59,7 +59,8 @@
     "Both credit guards completed real source-bound review and rejection. Level-only10y/5ybaseSharpe0.8125/0.6711,stress0.7649/0.4926;recovery0.8756/0.6793,stress0.8472/0.5100. All paths fail Sharpe1,15%drawdown and SPY gates. Early recovery improves ten-year Sharpe versus static control but reduces CAGR in both horizons and fails five-year Sharpe.108complete configurations,24reviews,no pending candidates or champion.",
     "Read-only source-bound re-audit regenerated96paths for24reviews with unchanged metrics,gates and history;19legacy-engine and5versioned-accounting reviews retained. The earlier22candidate joint-selection result does not cover the2new credit candidates. Private Baa inputs were not published; the prospective archive still lacks BAA10Y and has zero new observations.",
     "Verified actual IJR small-cap and PKW net-share-reduction fund sources,each2805complete sessions with positive volume and explained corporate actions. Prepared size/share_issuance definitions for a real eligible weekly cycle,not new strategy results. Current issuer rules do not establish historical method continuity;S&Pmethodology403was not bypassed.",
-    "Replaced the four-fixed-label ETF restriction with complete definitions bound to finite audited source adapters. Exact engine migration and96pathre-audit preserve all108configurations,24reviews,6registered definitions/5families and terminal failures. A real-clock early queue call is rejected with an unchanged ledger;2newdefinitions stay queued until2026-10-17T09:00Asia/Shanghai,with0newcandidates/evaluations."
+    "Replaced the four-fixed-label ETF restriction with complete definitions bound to finite audited source adapters. Exact engine migration and96pathre-audit preserve all108configurations,24reviews,6registered definitions/5families and terminal failures. A real-clock early queue call is rejected with an unchanged ledger;2newdefinitions stay queued until2026-10-17T09:00Asia/Shanghai,with0newcandidates/evaluations.",
+    "Registered a separate prospective input extension for IJR,PKW andBAA10Y. It reuses the unchanged parent receipt/gap/lock logic and same-session source bytes with original acquisition timestamps,then fetches only3extra sources. Parent archive and108strategy results remain unchanged; extension registration has0snapshots and no new strategy or factor registration."
   ],
   "completed_zh": [
     "已保留可运行的原Top30算法、成本引擎和独立早期扫描器，并隔离导入52配置研究工作台。",
@@ -117,7 +118,8 @@
     "两个信用门已完成真实源码绑定审阅并拒绝：水平门基础十年/五年Sharpe0.8125/0.6711、压力0.7649/0.4926；恢复门基础0.8756/0.6793、压力0.8472/0.5100。所有路径都未达Sharpe1、15%回撤及SPY门槛。提前恢复改善十年相对静态对照的夏普，却降低双窗口年化、五年夏普不达标。累计108项完整配置、24项审阅，无待办候选或合格策略。",
     "只读审计复核24项审阅、96条路径，原指标/门槛/历史不变，保留19项旧引擎和5项纠正记账版本结果。更早22候选联合选择结果不覆盖新增2个信用候选；Baa原始数据未发布，前瞻归档仍不含BAA10Y，真实新增观察仍0。",
     "核验IJR小盘和PKW净回购实际基金来源，各2805个完整交易日、正成交量及可解释公司行动；规模/股份发行家族定义已准备，待真实周周期登记，不冒充新策略收益。当前官方规则不证明全部历年方法连续，S&P方法403未绕过。",
-    "已将固定四标签限制改为有限适配器绑定完整来源定义；精确引擎迁移及96路径重审保留108项配置、24项审阅、6个已登记定义/5个家族和技术失败。真实时钟下提前执行新队列会被拒，账本不变；2个新定义等到2026-10-17北京时间09:00才可登记，本轮未增加候选或完整评估。"
+    "已将固定四标签限制改为有限适配器绑定完整来源定义；精确引擎迁移及96路径重审保留108项配置、24项审阅、6个已登记定义/5个家族和技术失败。真实时钟下提前执行新队列会被拒，账本不变；2个新定义等到2026-10-17北京时间09:00才可登记，本轮未增加候选或完整评估。",
+    "已登记独立前瞻输入扩展，新增IJR/PKW/BAA10Y；复用未改的父归档收据/漏记/锁逻辑及同交易日原字节、保留原获取时间，只请求3个额外来源。父归档及108项结果未变，扩展登记时0快照，未新增策略或登记因子。"
   ],
   "next": [
     "At the real eligible2026-10-17Saturday09:00cycle,refresh audited IJR/PKW readiness in a new output path and register the queued definitions before proposing strategy candidates. Do not change their eligibility timestamp or count the queue as completed discoveries.",
@@ -309,6 +311,21 @@
     "observations_after_baseline_at_checkpoint": 0,
     "strategy_returns_calculated": false,
     "independent_strategy_performance_verified": false,
+    "order_authority": false
+  },
+  "expanded_prospective_input_archive": {
+    "policy": "research/workbench/config/prospective-factor-inputs.json",
+    "registration": "research/workbench/evidence/prospective_factor_inputs_v2_registration.json",
+    "extra_quote_symbols": ["IJR", "PKW"],
+    "extra_macro_series": ["BAA10Y"],
+    "parent_snapshot_same_session_required": true,
+    "parent_source_bytes_and_acquisition_times_retained": true,
+    "parent_archive_modified": false,
+    "complete_snapshots_at_checkpoint": 0,
+    "observations_after_expanded_baseline_at_checkpoint": 0,
+    "strategy_returns_calculated": false,
+    "queued_factors_registered_by_data_collection": false,
+    "investment_objective_verified": false,
     "order_authority": false
   },
   "static_allocation_diagnostic": {
