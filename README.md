@@ -708,6 +708,17 @@ evaluation and meet its unchanged actual-cost, independent-accounting and
 dual-horizon performance gates. No historical data is relabeled as a new
 independent holdout.
 
+The [adaptive comparison results](research/workbench/evidence/adaptive_factors_20261010_results.json)
+record two actual rejections. The static control has ten/five-year base
+Sharpe 0.8367/0.8042. Adaptive allocation has base Sharpe 0.8294/0.8125 and
+stress Sharpe 0.7658/0.6630, with stressed drawdown approximately 17.5%-17.9%.
+It reduces some drawdown but does not meet the original objective.
+SLSQP reported intermediate bound-clipping warnings; final optimizer success,
+feasibility, actual targets and independent accounting were checked. No
+fallback allocation or warning suppression converted a failure to success.
+The [sixth weekly snapshot](research/workbench/evidence/research_program_2026-W41_results_v6.json)
+retains 90 completed configurations and an empty research-champion slot.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

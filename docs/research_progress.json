@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-10",
-  "phase": "recurring_research_quality_replication_rejected",
+  "phase": "adaptive_factor_combination_rejected",
   "active_research_focus": "recurring_fundamental_multifactor_research",
   "completed": [
     "Preserved runnable incumbent strategy/engine and early-scanner source alongside the isolated 52-configuration workbench.",
@@ -26,7 +26,8 @@
     "Native session automation is enabled for Saturday09:00Asia/Shanghai; next scheduled invocation observed2026-10-17. Duplicate weeks are skipped, incomplete registered work is resumed, and all failed research remains recorded.",
     "Added a separate verified actual-factor-ETF scope through an exact-hash engine migration; all prior events, factors and stock-data blockers remain intact. Registered two fixed factor/gold risk candidates before computing outcomes.",
     "Both actual candidates completed recurring review and were rejected: monthly risk-balance Sharpe0.9055/0.9602 and daily-control0.8367/0.8896 in10y/5y base windows, with worse stress results. Evaluated configurations now86; no research champion or live update.",
-    "Source-screened SPMO replication plans were rejected on238zero-volume records. A documented pre-result quality-only replacement with SPHQ completed two more recurring reviews: monthly baseSharpe0.9054/0.9627,daily0.8397/0.8979; both rejected.88evaluated configurations remain disclosed."
+    "Source-screened SPMO replication plans were rejected on238zero-volume records. A documented pre-result quality-only replacement with SPHQ completed two more recurring reviews: monthly baseSharpe0.9054/0.9627,daily0.8397/0.8979; both rejected.88evaluated configurations remain disclosed.",
+    "A frozen static-versus-causal-adaptive factor comparison completed two further rejections. Adaptive10y/5ySharpe0.8294/0.8125,stress0.7658/0.6630;90evaluated configurations, no qualifying research champion."
   ],
   "completed_zh": [
     "已保留可运行的原Top30算法、成本引擎和独立早期扫描器，并隔离导入52配置研究工作台。",
@@ -51,10 +52,11 @@
     "已启用每周六北京时间09:00的本会话自动研究，下次计划为2026-10-17；重复周不重复登记，中断候选继续原版本，失败记录保留。",
     "通过精确哈希迁移增加实际因子ETF专用数据入口，原事件、因子和个股数据阻断全部保留；已在业绩计算前登记两个固定因子/黄金风险候选。",
     "两个真实候选已由周期审阅器完成评估并拒绝：月度风险平衡十年/五年基础Sharpe0.9055/0.9602，每日风控0.8367/0.8896，压力更低；累计已评估86个，未更新合格策略或交易权限。",
-    "SPMO因238条零成交量记录未通过来源检查；保留该失败后只替换质量基金为SPHQ，两个真实复现版本仍被拒绝，基础Sharpe分别0.9054/0.9627及0.8397/0.8979；累计已评估88个，仍无合格策略。"
+    "SPMO因238条零成交量记录未通过来源检查；保留该失败后只替换质量基金为SPHQ，两个真实复现版本仍被拒绝，基础Sharpe分别0.9054/0.9627及0.8397/0.8979；累计已评估88个，仍无合格策略。",
+    "固定静态权重与因果动态组合又完成两项真实拒绝；动态组合十年/五年基础Sharpe0.8294/0.8125、压力0.7658/0.6630，累计已评估90个，仍无新合格策略。"
   ],
   "next": [
-    "Test causal dynamic factor-combination hypotheses against fixed-weight controls; do not repeat rejected quality-fund replacements or relabel existing failures as new independent factors.",
+    "Verify official option-implied volatility term-structure data before a fixed risk-overlay experiment; do not tune rejected adaptive-allocation parameters until they cross a threshold.",
     "At the next weekly cycle, verify legitimate data access and historical coverage before evaluating the new fundamental proposals; record unavailable sources rather than bypassing403 or manufacturing histories.",
     "Require at least three economic factor families and unchanged Sharpe/SPY/drawdown gates before advancing a research version; no qualified current champion exists.",
     "Seek verifiable historical execution or publication-time fundamental data for new hypotheses; do not retune the near-threshold band on the same exposed history.",
@@ -65,7 +67,7 @@
     "Preregister bounded hypotheses and preserve failures and the paused forward record."
   ],
   "next_zh": [
-    "检验严格依赖历史信息的动态因子组合，并与固定权重对照；不继续重复已失败的质量基金替换，也不把失败版本改名算新因子。",
+    "先核验官方期权隐含波动率期限结构历史，再登记固定风险覆盖层；不继续调失败的动态组合参数直到碰巧跨过门槛。",
     "下个周周期先核对合规数据访问与历史覆盖，再评估基本面提案；不可绕过403或造数据，缺失就明确记为阻断。",
     "至少三个经济因子家族、原Sharpe/SPY/回撤门槛不放宽，符合才推进研究版本；当前没有新合格策略。",
     "下一类假设先补可核实的历史执行数据或带披露时间的基本面证据，不在同一已见历史上微调接近门槛的交易带。",
@@ -183,7 +185,7 @@
   "recurring_research_program": {
     "state": "weekly_enabled_stock_data_blocked_etf_candidates_reviewed_rejected",
     "policy": "research/workbench/config/research-program.json",
-    "cycle_snapshot": "research/workbench/evidence/research_program_2026-W41_results_v5.json",
+    "cycle_snapshot": "research/workbench/evidence/research_program_2026-W41_results_v6.json",
     "initial_cycle_snapshot": "research/workbench/evidence/research_program_2026-W41.json",
     "automation_receipt": "research/workbench/evidence/research_program_automation_20261010.json",
     "readiness": "research/workbench/evidence/research_program_data_readiness_20261010.json",
@@ -191,8 +193,8 @@
     "known_factor_definitions": 6,
     "economic_factor_families": 5,
     "independent_factor_count_verified": false,
-    "new_strategy_evaluations": 4,
-    "total_evaluated_configurations": 88,
+    "new_strategy_evaluations": 6,
+    "total_evaluated_configurations": 90,
     "research_champion": null,
     "research_versions": 0,
     "data_blockers": 5,
@@ -226,6 +228,13 @@
     "evaluated_candidates": 2,
     "accepted_candidates": 0,
     "source_rejected_planned_variants": 2,
+    "order_authority": false
+  },
+  "adaptive_factor_combination": {
+    "registration": "research/workbench/evidence/adaptive_factors_20261010_registration.json",
+    "results": "research/workbench/evidence/adaptive_factors_20261010_results.json",
+    "evaluated_candidates": 2,
+    "accepted_candidates": 0,
     "order_authority": false
   },
   "delivery": {
