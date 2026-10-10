@@ -28,7 +28,7 @@ from us_quant.strategy import buy_and_hold_signals
 
 ROOT = Path(__file__).resolve().parents[2]
 POLICY = ROOT / "config/factor-implementation-replication.json"
-FACTORS = ("SPMO", "VLUE", "SPHQ", "USMV")
+FACTORS = ("MTUM", "VLUE", "SPHQ", "USMV")
 COLUMNS = ("SPY", "IEF", "GLD", "BIL", *FACTORS)
 
 
@@ -47,21 +47,35 @@ def validate_policy(policy: dict) -> None:
         or policy.get("candidates")
         != [
             {
-                "id": "sp_implementations_gold_monthly",
+                "id": "quality_implementation_gold_monthly",
                 "daily_volatility_target": None,
                 "daily_weight_band": None,
             },
             {
-                "id": "sp_implementations_gold_daily_vol12",
+                "id": "quality_implementation_gold_daily_vol12",
                 "daily_volatility_target": 0.12,
                 "daily_weight_band": 0.05,
             },
         ]
-        or [row.get("symbol") for row in policy.get("replacement_funds", [])] != ["SPMO", "SPHQ"]
+        or [row.get("symbol") for row in policy.get("replacement_funds", [])] != ["SPHQ"]
         or any(row.get("daily_leverage") != 1 for row in policy["replacement_funds"])
         or policy.get("methodology", {}).get("order_authority") is not False
     ):
         raise QuantError("The fixed factor-implementation replication was altered.")
+    revision = policy.get("data_quality_revision", {})
+    audit_path = ROOT / revision["quality_audit"]
+    if file_digest(audit_path) != revision["quality_audit_sha256"] or any(
+        revision.get(key) is not False
+        for key in (
+            "strategy_outcomes_seen_before_revision",
+            "formal_windows_changed",
+            "allocation_rules_changed",
+        )
+    ):
+        raise QuantError("The data-only revision cannot conceal performance selection.")
+    records = {row["symbol"]: row for row in read_json(audit_path)["records"]}
+    if records["SPMO"]["bad_rows"] != 238 or records["SPHQ"]["bad_rows"] != 0:
+        raise QuantError("The quality-only replacement must follow the preserved source audit.")
 
 
 def original_market() -> MarketData:
@@ -149,7 +163,7 @@ def load_replication_market(policy: dict, directory: Path) -> MarketData:
     manifest = read_json(directory / "manifest.json")
     required = {
         f"{p}{symbol}{s}"
-        for symbol in ("SPMO", "SPHQ")
+        for symbol in ("SPHQ",)
         for p, s in (("", ".csv"), ("raw/", ".json"), ("issuer/", ".html"))
     }
     if (
@@ -172,7 +186,7 @@ def load_replication_market(policy: dict, directory: Path) -> MarketData:
     index = sessions(policy["data_start"], policy["as_of"])
     new = {
         symbol: pd.read_csv(directory / f"{symbol}.csv", index_col="date", parse_dates=True)
-        for symbol in ("SPMO", "SPHQ")
+        for symbol in ("SPHQ",)
     }
 
     def panel(old_frame: pd.DataFrame, field: str) -> pd.DataFrame:

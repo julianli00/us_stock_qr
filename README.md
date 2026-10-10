@@ -619,8 +619,17 @@ failure; no performance threshold, old ledger or trading permission changed.
 ### Factor implementation replication
 
 The next controlled comparison changes fund implementations rather than
-searching more allocation parameters. It replaces MTUM momentum with SPMO
-and QUAL quality with SPHQ, retaining VLUE value and USMV low volatility.
+searching more allocation parameters. The initial intent attempted replacing
+MTUM with SPMO and QUAL with SPHQ. Before any candidate performance calculation,
+the provider's SPMO history failed the data gate: 238 zero-volume records,
+including the formal ten-year interval. The
+[source-quality audit](research/workbench/evidence/factor_replication_quality_audit_20261010.json)
+and initial intent commit `be2aaaaf` remain preserved. These two initially
+planned variants were not admitted as complete strategy backtests.
+
+The data-only revision replaces QUAL quality with SPHQ and retains MTUM
+momentum, VLUE value and USMV low volatility. It does not fill volume, shorten
+the formal windows, or change the allocation rules after seeing outcomes.
 The two variants retain the preceding study's exact monthly risk balance
 and optional daily volatility control. Identical synthetic return inputs
 produce identical complete targets and accounting in both implementations.
@@ -648,8 +657,8 @@ must be recorded through the same recurring program:
 .venv/bin/python -I -B -m us_quant.factor_replication evaluate
 ```
 
-The adapter revalidates the two actual fund histories and retains the
-previously hashed value/low-volatility, defensive and benchmark data.
+The adapter revalidates SPHQ's actual history and retains the previously
+hashed momentum/value/low-volatility, defensive and benchmark data.
 Old source and candidate modules remain byte-preserved; the small separate
 replication runner avoids invalidating those frozen implementation hashes
 and is tested against the original algorithm. No name substitution is

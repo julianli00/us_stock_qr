@@ -28,7 +28,7 @@ def markets(market_factory):
         "2017-06-30",
         ("SPY", "IEF", "GLD", "BIL", "MTUM", "VLUE", "QUAL", "USMV"),
     )
-    rename = {"MTUM": "SPMO", "QUAL": "SPHQ"}
+    rename = {"QUAL": "SPHQ"}
     after = replace(
         before,
         open=before.open.rename(columns=rename),
@@ -44,7 +44,7 @@ def test_fund_identity_change_keeps_allocation_rule_exactly_equivalent_on_equal_
 ):
     before, after = markets
     original = read_json(ROOT / "config/factor-gold-risk.json")
-    actual = monthly_targets(after, policy).rename(columns={"SPMO": "MTUM", "SPHQ": "QUAL"})
+    actual = monthly_targets(after, policy).rename(columns={"SPHQ": "QUAL"})
     pd.testing.assert_frame_equal(original_targets(before, original), actual)
     weights = monthly_targets(after, policy).dropna(how="all")
     assert np.allclose(weights.sum(axis=1), 0.98)
@@ -73,9 +73,7 @@ def test_original_and_replicated_accounting_match_with_identical_return_inputs(
         after, policy["candidates"][index], policy, "2016-10-06", "2017-06-30", cost, delay
     )
     pd.testing.assert_frame_equal(reference.frame, actual.frame)
-    pd.testing.assert_frame_equal(
-        targets, decisions.rename(columns={"SPMO": "MTUM", "SPHQ": "QUAL"})
-    )
+    pd.testing.assert_frame_equal(targets, decisions.rename(columns={"SPHQ": "QUAL"}))
     assert (actual.frame["cash"] >= 0).all()
     assert (actual.weights.sum(axis=1) <= 1 + 1e-12).all()
 

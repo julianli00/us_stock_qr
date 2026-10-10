@@ -5,19 +5,20 @@
   "new_configurations": 2,
   "data_start": "2016-07-01",
   "as_of": "2026-10-05",
-  "factor_symbols": ["SPMO", "VLUE", "SPHQ", "USMV"],
+  "factor_symbols": ["MTUM", "VLUE", "SPHQ", "USMV"],
+  "data_quality_revision": {
+    "prior_intent_commit": "be2aaaaf",
+    "prior_policy_sha256": "3fb467f5513acbe33f6a2745b872a839572322a55f49035f1ef61f0824a95e7e",
+    "quality_audit": "evidence/factor_replication_quality_audit_20261010.json",
+    "quality_audit_sha256": "432196a11128d2518b276f893412a4e480045461eb8179d8a8be2a6976de7169",
+    "reason": "SPMO has238 zero-volume records, including the formal ten-year period. Do not fabricate volume or shorten the window. Retain original MTUM momentum and replace only QUAL with data-valid SPHQ.",
+    "strategy_outcomes_seen_before_revision": false,
+    "formal_windows_changed": false,
+    "allocation_rules_changed": false,
+    "source_rejected_planned_variants": 2
+  },
   "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
   "replacement_funds": [
-    {
-      "symbol": "SPMO",
-      "replaces": "MTUM",
-      "economic_family": "momentum",
-      "issuer_url": "https://www.invesco.com/us/en/financial-products/etfs/invesco-sp-500-momentum-etf.html",
-      "issuer_title": "Invesco S&P 500",
-      "mandate_keyword": "Momentum",
-      "reported_inception": "2015-10-09",
-      "daily_leverage": 1.0
-    },
     {
       "symbol": "SPHQ",
       "replaces": "QUAL",
@@ -37,11 +38,11 @@
   "capital_usd": 10000,
   "commission_per_order": 1.0,
   "candidates": [
-    {"id": "sp_implementations_gold_monthly", "daily_volatility_target": null, "daily_weight_band": null},
-    {"id": "sp_implementations_gold_daily_vol12", "daily_volatility_target": 0.12, "daily_weight_band": 0.05}
+    {"id": "quality_implementation_gold_monthly", "daily_volatility_target": null, "daily_weight_band": null},
+    {"id": "quality_implementation_gold_daily_vol12", "daily_volatility_target": 0.12, "daily_weight_band": 0.05}
   ],
   "methodology": {
-    "controlled_change": "Replace the momentum and quality fund implementations only. Keep VLUE value and USMV low-volatility, equal four-factor equity shares, gold risk balance,63-session lookback,30%-70%equity share, costs and execution rules unchanged.",
+    "controlled_change": "After a documented pre-result data gate, replace only the quality fund QUAL with SPHQ. Retain MTUM momentum,VLUE value,USMV low-volatility, equal four-factor equity shares,gold risk balance,63-session lookback,30%-70%equity share,costs and execution rules.",
     "fund_scope": "Actual live ETF returns, not a reconstruction of historical factor constituents. Current issuer product identity verifies the broad mandates; no claim that today's precise index rules applied unchanged throughout history.",
     "quality_hypothesis": "The S&P quality implementation is described in indexed issuer material using ROE, accruals and leverage; compare the actual fund, not fabricated cash-flow stock scores.",
     "identity_caution": "The legacy SPVU issuer link now resolves to a Concentrated QVM product, so SPVU is excluded and the verified VLUE value implementation is retained.",
