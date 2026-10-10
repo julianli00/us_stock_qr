@@ -1348,10 +1348,13 @@ cd research/workbench
 ```
 
 Preparation creates hashed panels but computes no strategy outcomes.
-Register both fixed configurations before the generic versioned-accounting
-evaluator; preserve failures and unchanged costs, delay and full gates.
-Actual fund returns are not a recreated proprietary stock-score strategy
-or independent forward evidence.
+Both [fixed configurations were registered before outcomes](research/workbench/evidence/momentum_implementation_20261011_registration.json),
+after exact provider-engine migration preserved all 104 completed
+configurations and 20 reviews. At registration two candidates remain
+pending; no new independent factor family or completed evaluation is
+claimed. Use the generic versioned-accounting evaluator and retain all
+costs, delay and full gates. Actual fund returns are not a recreated
+proprietary stock-score strategy or independent forward evidence.
 
 ## Progress and publication
 

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-11",
-  "phase": "trend_guards_evaluated_104_completed_strategy_goal_unmet",
+  "phase": "momentum_implementations_registered_104_completed_strategy_goal_unmet",
   "active_research_focus": "source_verified_multifactor_research_and_independent_data",
   "completed": [
     "Preserved runnable incumbent strategy/engine and early-scanner source alongside the isolated 52-configuration workbench.",
@@ -49,7 +49,8 @@
     "Preregistered two fixed200-session risk gates: jointly time an untraded baseline-weighted index, or separately gate equity/gold. Risk removed goes only to actual bills; active equity retains all four factors equally. Exact migration preserves18oldreviews and2technical failures; at registration two pending candidates,102completed configurations and no new factor-family claims.",
     "Joint trend guard completed a real rejection: base10y/5ySharpe0.8878/0.9076,drawdown13.18%/11.76%; stressed drawdown exceeds15%and Sharpe is lower. Component guard was blocked before completed review by a reproduced floating-point phantom-commission discrepancy. Original paths and minimal counterexample were preserved; at that incident checkpoint103complete evaluations,one pending candidate and two invalid strategy-code versions remained distinct.",
     "Registered corrected cash-funded accounting before replay, using the existing1e-6order threshold without changing the imported core, any strategy rule, targets or audit tolerance. All four component target CSVs remain byte-identical; corrected accounts and independent bt agree within1.06e-10USD. Component net Sharpe0.6813/0.7175base,0.4131/0.4168stress; rejected.104complete configurations,20reviews,2terminal code failures,one separately retained and resolved accounting incident,no pending candidates or champion.",
-    "Read-only mixed-version audit regenerated all80paths for20reviews:19legacy reviews retain the original engine and one corrected review uses its exact version2hash. Old metrics/gates and ledger unchanged. Native instructions now require explicit accounting references for new reviews; daily collection/weekly discovery cadence and one baseline/zero new prospective observations remain unchanged."
+    "Read-only mixed-version audit regenerated all80paths for20reviews:19legacy reviews retain the original engine and one corrected review uses its exact version2hash. Old metrics/gates and ledger unchanged. Native instructions now require explicit accounting references for new reviews; daily collection/weekly discovery cadence and one baseline/zero new prospective observations remain unchanged.",
+    "SPMO still fails the preserved238zero-volume audit; an ordinary Stooq check returned a browser-verification page, not CSV, and was not bypassed. PDP's actual issuer page and Nasdaq PDF definition were verified, with2805positive-volume sessions and explained actions. Preregistered full-PDPor50/50MTUM/PDPwithin the unchanged momentum-family budget; two pending candidates,104complete configurations,no new economic factor family."
   ],
   "completed_zh": [
     "已保留可运行的原Top30算法、成本引擎和独立早期扫描器，并隔离导入52配置研究工作台。",
@@ -97,7 +98,8 @@
     "预注册两个固定200日风险门：整体组合指示指数，或股票/黄金分别判断；被移除预算只进入真实BIL，股票启用时仍等配四因子。精确迁移保留18项旧审阅和2项技术失败；登记时两个候选待评估、完整配置102项，不宣称新增因子家族。",
     "整体趋势门已完成真实拒绝：基础十年/五年Sharpe0.8878/0.9076，回撤13.18%/11.76%，但压力回撤超过15%且夏普更低。分资产版本在完整审阅前发现浮点误收固定佣金，已保留原路径和最小反例；当时完整评估103项、1个待办，该事故不冒充策略结果，也不增加两个原无效策略代码版本的计数。",
     "纠正记账版本先登记再重放：仅沿用原1e-6订单阈值，原核心、策略、目标及审计容差不变。分资产四组目标CSV逐字节相同，纠正账户与独立bt误差不超过1.06e-10美元；基础Sharpe0.6813/0.7175、压力0.4131/0.4168，拒绝。累计104项完整配置、20项审阅、2个终止代码失败，另保留1个已解决记账事故；没有待办候选或合格策略。",
-    "混合版本只读审计复核20项审阅、80条路径：19项旧结果使用原引擎，1项新结果按精确版本2哈希重放，旧指标/门槛和账本未变。自动指令已要求新审阅明确记账版本；每日采集/每周探索节奏不变，仍只有1份基线和0个真实新观察。"
+    "混合版本只读审计复核20项审阅、80条路径：19项旧结果使用原引擎，1项新结果按精确版本2哈希重放，旧指标/门槛和账本未变。自动指令已要求新审阅明确记账版本；每日采集/每周探索节奏不变，仍只有1份基线和0个真实新观察。",
+    "SPMO的238条零量失败保留，Stooq普通请求仅返回浏览器验证页、未绕过。已真实核验PDP官方产品页和Nasdaq方法PDF，取得2805个正成交量交易日且复权事件有解释；动量家族内全PDP或MTUM/PDP各半两个配置已预注册，其他家族和总风险预算不变。两个候选待评估、完整配置仍104项，不冒充新独立因子。"
   ],
   "next": [
     "Both fixed trend guards are evaluated and rejected. Do not turn risk-gate lookback, shares or whipsaw thresholds into an exposed-history sweep; seek genuinely new predictive evidence and independent observations.",
@@ -237,9 +239,9 @@
     "order_authority": false
   },
   "recurring_research_program": {
-    "state": "daily_data_weekly_research_no_qualified_candidate",
+    "state": "momentum_implementations_pending_daily_data_weekly_discovery",
     "policy": "research/workbench/config/research-program.json",
-    "cycle_snapshot": "research/workbench/evidence/research_program_2026-W41_results_v22.json",
+    "cycle_snapshot": "research/workbench/evidence/research_program_2026-W41_momentum_provider_v23.json",
     "initial_cycle_snapshot": "research/workbench/evidence/research_program_2026-W41.json",
     "automation_receipt": "research/workbench/evidence/prospective_data_automation_v2.json",
     "initial_weekly_automation_receipt": "research/workbench/evidence/research_program_automation_20261010.json",
@@ -251,7 +253,7 @@
     "new_strategy_evaluations": 20,
     "total_evaluated_configurations": 104,
     "technical_rejected_code_versions": 2,
-    "pending_candidate_ids": [],
+    "pending_candidate_ids": ["four_factor_pdp_momentum_implementation", "four_factor_dual_momentum_implementation"],
     "research_champion": null,
     "research_versions": 0,
     "data_blockers": 5,
@@ -353,6 +355,20 @@
     "resolved_incidents": 1,
     "component_target_csv_hashes_unchanged": true,
     "maximum_independent_equity_error_usd": 0.00000000010550138540565968
+  },
+  "momentum_implementation_comparison": {
+    "source_audit": "research/workbench/evidence/momentum_implementation_source_audit_v1.json",
+    "registration": "research/workbench/evidence/momentum_implementation_20261011_registration.json",
+    "new_registered_candidates": 2,
+    "new_completed_strategy_evaluations": 0,
+    "new_economic_factor_definitions": 0,
+    "verified_PDP_history_sessions": 2805,
+    "full_historical_methodology_versions_verified": false,
+    "other_economic_family_budgets_unchanged": true,
+    "original_equity_gold_total_budgets_unchanged": true,
+    "SPMO_original_source_rejection_preserved": true,
+    "Stooq_browser_challenge_bypassed": false,
+    "order_authority": false
   },
   "source_bound_review": {
     "audit": "research/workbench/evidence/research_program_source_bound_audit_v4.json",
