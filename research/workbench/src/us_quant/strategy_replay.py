@@ -21,6 +21,7 @@ GENERATORS = {
     "factor_momentum_comparison": "config/factor-momentum-comparison.json",
     "trend_factor_guard": "config/trend-factor-guard.json",
     "momentum_implementation": "config/momentum-implementation.json",
+    "credit_factor_guard": "config/credit-factor-guard.json",
 }
 
 
@@ -64,6 +65,16 @@ def registered_generator(spec: dict, root: Path) -> tuple[str, dict]:
                 "config/factor-gold-risk.json",
                 "src/us_quant/factor_replication.py",
                 "src/us_quant/multifactor_stability.py",
+            ]
+        elif name == "credit_factor_guard":
+            required += [
+                "src/us_quant/adaptive_factor_allocation.py",
+                "config/adaptive-factor-allocation.json",
+                "src/us_quant/macro_factor_tilt.py",
+                "data/credit-spread-source-20261011/acquisition.json",
+                "data/credit-spread-source-20261011/BAA10Y.csv",
+                "data/credit-spread-source-20261011/BAA10Y-source.html",
+                "data/credit-spread-source-20261011/ICE-source-restriction.html",
             ]
         if any(relative not in frozen for relative in required):
             raise QuantError("The registered strategy is missing a frozen helper dependency.")
@@ -157,6 +168,10 @@ def registered_targets(
             cache[key] = build_targets(data, policy)[spec["id"]]
         elif name == "momentum_implementation":
             from us_quant.momentum_implementation import build_targets
+
+            cache[key] = build_targets(data, policy)[spec["id"]]
+        elif name == "credit_factor_guard":
+            from us_quant.credit_factor_guard import build_targets
 
             cache[key] = build_targets(data, policy)[spec["id"]]
     return seed_window(cache[key], start)

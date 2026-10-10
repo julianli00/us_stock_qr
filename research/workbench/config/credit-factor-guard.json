@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "study_id": "credit_factor_guard_20261011",
+  "data_scope": "factor_etf_portfolio",
+  "as_of": "2026-10-05",
+  "prior_evaluated_configurations": 106,
+  "new_configurations": 2,
+  "new_economic_factor_definitions": 0,
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "factor_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "credit_series": "BAA10Y",
+  "credit_level_sessions": 252,
+  "credit_change_sessions": 21,
+  "publication_delay_sessions": 2,
+  "maximum_observation_age_days": 7,
+  "original_control_policy": "config/adaptive-factor-allocation.json",
+  "original_control_candidate": "four_factor_static70_gold30",
+  "cash_reserve": 0.02,
+  "candidates": [
+    {"id": "credit_baa_level_guard", "allow_compression_recovery": false},
+    {"id": "credit_baa_compression_recovery", "allow_compression_recovery": true}
+  ],
+  "source": {
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=BAA10Y&cosd=2014-01-01&coed=2026-10-05",
+    "definition_url": "https://fred.stlouisfed.org/series/BAA10Y",
+    "rejected_high_yield_source_url": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
+    "meaning": "Moody's seasoned Baa corporate bond yield minus10-year Treasury yield,percentage points. Long-maturity investment-grade credit proxy,not option-adjusted high-yield spread.",
+    "source_change": "FRED notes that the Treasury input changed to direct US Treasury data beginning2019-06-21; retain this historical provider-definition caveat.",
+    "license": "Proprietary underlying data. Internal research only; do not publish or redistribute the raw observations,aligned values or rolling credit features.",
+    "high_yield_access_limit": "The originally considered ICE high-yield OAS has only3years on FRED beginningApril2026. Do not bypass the restriction,use unauthorized mirrors or shorten formal evaluation windows."
+  },
+  "methodology": {
+    "hypothesis": "Credit-market risk may add information not represented by a moving-average price gate. Compare a fixed level-only defense with a fixed early-recovery rule; do not fit thresholds or tune the earlier rejected strategies.",
+    "base": "Reuse the existing frozen static70%equal-four-factor equity/30%GLD target for98%invested capital. Use the same253-observation prehistory and monthly decisions as the evaluated control.",
+    "level_condition": "At a completed month end, risk-on means the latest safely available BAA10Y is strictly below the median of its last252alignedNYSE-session values,including that available value. Equality is risk-off.",
+    "recovery_condition": "Only the second candidate also permits risk-on when the safely available BAA10Y is strictly below its value21NYSE sessions ago,even if the level remains elevated. This is a predetermined monthly compression rule,not a fitted recovery threshold.",
+    "risk_off": "Remove the original70%equity sleeve and hold its weight in actual BIL; retain the original30%gold sleeve without increasing it. When equity is enabled,all four existing factor funds receive identical original family budgets.",
+    "availability": "Reuse the unchanged align_observations helper: each raw observation becomes usable at the close of the secondNYSEsession strictly after its date; carry only the last actual observation while it is at most7calendar days old. No unlimited forward-fill or same-date macro use.",
+    "vintage_limits": "A current FRED historical download is not ALFRED vintage proof or exact original intraday publication timestamps. The explicit two-session lag is conservative but cannot establish that no historical value was revised.",
+    "interpretation": "BAA10Y compares20-plus-year corporate bonds with10-year Treasuries and includes duration,liquidity and quality effects. It is not a pure default-risk or high-yield OAS factor. This is a risk-input experiment on four existing economic families,not a new independent alpha source.",
+    "execution": "Same formal10y/5yaccounts,USD10,000fresh capital,2%target idle cash,USD1orders,next-open5bpbase and one-extra-session20bpstress. Versioned cash-funded accounting and independent bt; original Sharpe/SPY/15%drawdown goals unchanged.",
+    "selection": "Proposed after106completed configurations on exposed history. Only these two fixed hypotheses; no parameter grid,retrospective date exception or independent-holdout claim. The prior22candidate statistical diagnostic does not cover these new candidates.",
+    "existing_forward_archive_includes_BAA10Y": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

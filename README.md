@@ -1459,6 +1459,52 @@ selection scope, and require a newly registered statistical plan if the
 cohort changes. The frozen 22-candidate result cannot be silently applied
 to future candidates. No future scheduled execution is claimed.
 
+### Credit-risk information and fixed recovery rules
+
+`config/credit-factor-guard.json` freezes two risk-input experiments after
+106 completed configurations. They use the previously evaluated static
+70% equal-four-factor / 30% gold portfolio, not a newly optimized mix.
+At completed month ends, the level guard enables equity only while the
+lagged Baa/Treasury spread is below its trailing 252-session median.
+The second rule also permits equity when that spread has declined over
+21 sessions, a predefined early-recovery condition. Risk-off moves the
+original equity budget to actual BIL; gold is never increased.
+
+The initially considered
+[ICE high-yield OAS](https://fred.stlouisfed.org/series/BAMLH0A0HYM2)
+now has only three years on FRED, so it cannot support the formal windows.
+The study explicitly uses a **different credit proxy**:
+[BAA10Y](https://fred.stlouisfed.org/series/BAA10Y), long-maturity seasoned
+investment-grade Baa yield minus ten-year Treasury yield. It includes
+duration/liquidity/quality effects and is not a high-yield option-adjusted
+spread. The Treasury input provider changed in June 2019; this limitation
+is retained, not erased. Proprietary input observations and derived
+credit-value series stay private and are not published.
+
+The actual public CSV covers the requested 2014-2026 range. The unchanged
+macro availability helper delays every observation until the second
+strictly later NYSE session and caps its age at seven calendar days.
+The [source and timing audit](research/workbench/evidence/credit_factor_guard_source_20261011.json)
+records 3,186 actual observations, 2,805 ETF decision sessions, 22 bounded
+carry sessions and a maximum observation age of five days. The source
+restriction and different proxy definition are preserved before outcomes.
+Current historical extraction is not an ALFRED vintage or exact original
+release-time archive. Credit is a risk input, not another independent
+return factor, and the frozen earlier 22-candidate joint diagnostic does
+not cover these new candidates.
+
+```bash
+cd research/workbench
+.venv/bin/python -I -B -m us_quant.credit_factor_guard
+```
+
+Preparation revalidates the original ETF panels and actual credit timing
+without computing strategy outcomes. Register both fixed rules before
+the source-bound evaluator. Original costs, execution delays, fresh
+capital and Sharpe/SPY/drawdown goals stay unchanged. The existing data-only
+prospective archive does not yet contain BAA10Y; no new independent
+credit-strategy observations or future results are claimed.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
