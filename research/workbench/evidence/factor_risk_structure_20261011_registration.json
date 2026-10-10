@@ -1,0 +1,80 @@
+{
+  "auditor_sha256": "8e0ccbafee249ebffe05abb7527928c0a1e4d343678d4b9aa9152feb7e6b4394",
+  "candidate_performance_computed": false,
+  "event_chain_sha256": "d90c2746f86cb2f08ef6b2d2b39c54b5e4c543dca63df1875caacfb86de8a9f2",
+  "new_strategy_evaluations": 0,
+  "order_authority": false,
+  "policy": {
+    "annualization_sessions": 252,
+    "as_of": "2026-10-05",
+    "cohorts": {
+      "original_four_equity": [
+        "MTUM",
+        "VLUE",
+        "QUAL",
+        "USMV"
+      ],
+      "six_equity_families": [
+        "MTUM",
+        "VLUE",
+        "QUAL",
+        "USMV",
+        "IJR",
+        "PKW"
+      ],
+      "six_equity_plus_defensive_assets": [
+        "MTUM",
+        "VLUE",
+        "QUAL",
+        "USMV",
+        "IJR",
+        "PKW",
+        "GLD",
+        "IEF"
+      ]
+    },
+    "diagnostic_id": "factor_risk_structure_20261011",
+    "horizons_years": [
+      10,
+      5
+    ],
+    "market_symbol": "SPY",
+    "methodology": {
+      "inputs": "Observed adjusted-close fund returns on the exact formal windows,including the first day's return from its actual previous close. No target weights,account simulation,fees,Sharpe,CAGR or strategy selection is calculated.",
+      "interpretation": "New source-verified size and share-issuance definitions remain queued and unregistered. A different catalog family does not establish uncorrelated returns,incremental alpha or improvement of the pending six-family candidate strategies.",
+      "market_model": "In-sample OLS with an intercept and SPY excess return,using the frozen lagged risk-free series. Report beta,R-squared and residual dependence;do not use fitted coefficients as forecasts or pretend residual series are tradable long-only investments.",
+      "prior_art": "Cross-check the original four-asset results with the unchanged exposure_diagnostics helper. Its preserved legacy covariance_effective_dimension field is correlation-based;do not silently rewrite old reports.",
+      "risk_dimensions": "Report both covariance and correlation participation-ratio dimensions. Covariance reflects unscaled observed variance; correlation normalizes asset volatilities. Neither is the number of proven independent economic alpha factors.",
+      "rolling": "The same descriptive analysis on252-session trailing windows ending at completed month ends. Overlapping rolling windows are not independent validation samples or bootstrap confidence.",
+      "scope": "Read-only post-source-check descriptive research. All108complete strategy trials,24reviews,weekly definition limits,queued eligibility,source receipts and investment goals remain unchanged."
+    },
+    "new_strategy_evaluations": 0,
+    "order_authority": false,
+    "pending_candidate_performance_computed": false,
+    "register_queued_factors_early": false,
+    "research_snapshot": {
+      "path": "evidence/research_program_2026-W41_six_factor_v28.json",
+      "sha256": "f2ad71e6ae44e1c50e73f276409e174f354ecf447f4c92e5fac5dd5bf211ed1e"
+    },
+    "rolling_endpoints": "completed_NYSE_month_ends",
+    "rolling_sessions": 252,
+    "schema_version": 1,
+    "source_audit": {
+      "path": "evidence/factor_family_source_expansion_20261011.json",
+      "sha256": "6f19a6c1b9184e6ed69932bdf9ae9586491068ccf5f22cd6a4fff595a40b4dc9"
+    },
+    "source_manifest": {
+      "path": "data/new-factor-family-source-20261011/manifest.json",
+      "sha256": "05c7068757f444d94a20338148b21f352346a2301fd29e719859cfd31ca0963b"
+    },
+    "source_policy": {
+      "path": "config/factor-family-expansion.json",
+      "sha256": "6109980a5f0d1bdb0518b1c7017eef5dde6fd7c6b93c5c4d981d57bb75a08bdf"
+    }
+  },
+  "policy_sha256": "09b08fd38e63ab3ebd686e969de54ba5b2b80dba9f7259bf7c4b7ebeab6f73b0",
+  "registered_at": "2026-10-10T22:27:05.782103+00:00",
+  "risk_structure_results_computed": false,
+  "schema_version": 1,
+  "source_market_sessions": 2805
+}

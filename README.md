@@ -1878,6 +1878,9 @@ cd research/workbench
 The sources, cohorts and event head are bound before results. Registered
 factor definitions, the weekly allowance, queued October 17 eligibility,
 108 completed evaluations and original outcomes are unchanged.
+The [risk-study registration](research/workbench/evidence/factor_risk_structure_20261011_registration.json)
+pins all sources and descriptive cohorts before statistics; it computes no
+pending candidate performance or additional strategy evaluations.
 
 ## Progress and publication
 
