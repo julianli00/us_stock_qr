@@ -1882,6 +1882,38 @@ The [risk-study registration](research/workbench/evidence/factor_risk_structure_
 pins all sources and descriptive cohorts before statistics; it computes no
 pending candidate performance or additional strategy evaluations.
 
+The [actual dependence results](research/workbench/evidence/factor_risk_structure_20261011_results.json)
+show that extra equity-family labels provide only a small increase in
+volatility-normalized risk dimensions:
+
+| Descriptive asset cohort | Ten/five-year correlation dimensions | Ten/five-year covariance dimensions |
+|---|---|---|
+| Original four equity families | 1.314 / 1.450 | 1.313 / 1.404 |
+| Six equity families | 1.354 / 1.473 | 1.360 / 1.466 |
+| Six equity plus GLD/IEF | 2.201 / 2.368 | 1.711 / 2.011 |
+
+For the six equity funds, the first standardized component explains
+85.57%/81.81% of observed ten/five-year variance. All six fund returns have
+substantial in-sample market exposure; individual SPY R-squared ranges
+are about 0.697-0.964 and 0.670-0.951. These are not forecasts, residual
+alpha returns or proof of constituent overlap. GLD/IEF broaden the
+descriptive risk space, but no capital allocation or portfolio performance
+is computed from that comparison.
+
+The [arithmetic/replay check](research/workbench/evidence/factor_risk_structure_20261011_reproducibility.json)
+reproduces every full-window and overlapping rolling statistic exactly.
+Independent singular-value decomposition of centered/raw and standardized
+return matrices verifies the risk dimensions and leading components;
+covariance slopes and squared Pearson correlations verify beta/R-squared
+within 1e-12. The original four-asset helper also agrees unchanged.
+
+This evidence does not retune the frozen equal/inverse-volatility
+six-family candidates, register their queued definitions early, create a
+historical trial or claim six independent return sources. All 108
+completed configurations, 24 reviews and future-cycle eligibility remain
+unchanged. Greater diversification must be verified in an actual
+portfolio, not inferred simply by counting economic labels.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

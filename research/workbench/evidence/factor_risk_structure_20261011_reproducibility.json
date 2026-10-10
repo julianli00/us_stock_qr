@@ -1,0 +1,73 @@
+{
+  "auditor_sha256": "8e0ccbafee249ebffe05abb7527928c0a1e4d343678d4b9aa9152feb7e6b4394",
+  "candidate_weights_or_performance_computed": false,
+  "event_chain_unchanged": true,
+  "full_and_rolling_statistics_exactly_reproduced": true,
+  "independent_svd_covariance_slope_check": {
+    "all_dimensions_leading_components_betas_and_R_squared_match": true,
+    "candidate_weights_or_performance_computed": false,
+    "checked_at": "2026-10-10T22:31:01.923622+00:00",
+    "checks": [
+      {
+        "actual_sessions": 2512,
+        "cohort": "original_four_equity",
+        "correlation_dimension_svd_reference": 1.3137740936814906,
+        "covariance_dimension_svd_reference": 1.3128799123975046,
+        "covariance_slope_and_squared_correlation_match_OLS": true,
+        "largest_dimension_error": 6.661338147750939e-16,
+        "years": 10
+      },
+      {
+        "actual_sessions": 2512,
+        "cohort": "six_equity_families",
+        "correlation_dimension_svd_reference": 1.3539642845329105,
+        "covariance_dimension_svd_reference": 1.3603401471138823,
+        "covariance_slope_and_squared_correlation_match_OLS": true,
+        "largest_dimension_error": 1.5543122344752192e-15,
+        "years": 10
+      },
+      {
+        "actual_sessions": 2512,
+        "cohort": "six_equity_plus_defensive_assets",
+        "correlation_dimension_svd_reference": 2.200603485551882,
+        "covariance_dimension_svd_reference": 1.7108242389270931,
+        "covariance_slope_and_squared_correlation_match_OLS": true,
+        "largest_dimension_error": 4.440892098500626e-16,
+        "years": 10
+      },
+      {
+        "actual_sessions": 1254,
+        "cohort": "original_four_equity",
+        "correlation_dimension_svd_reference": 1.4498922876771523,
+        "covariance_dimension_svd_reference": 1.4038834965375786,
+        "covariance_slope_and_squared_correlation_match_OLS": true,
+        "largest_dimension_error": 1.5543122344752192e-15,
+        "years": 5
+      },
+      {
+        "actual_sessions": 1254,
+        "cohort": "six_equity_families",
+        "correlation_dimension_svd_reference": 1.4734641267526976,
+        "covariance_dimension_svd_reference": 1.465987505280588,
+        "covariance_slope_and_squared_correlation_match_OLS": true,
+        "largest_dimension_error": 6.661338147750939e-16,
+        "years": 5
+      },
+      {
+        "actual_sessions": 1254,
+        "cohort": "six_equity_plus_defensive_assets",
+        "correlation_dimension_svd_reference": 2.36834290435277,
+        "covariance_dimension_svd_reference": 2.0106206884936944,
+        "covariance_slope_and_squared_correlation_match_OLS": true,
+        "largest_dimension_error": 4.440892098500626e-16,
+        "years": 5
+      }
+    ],
+    "independent_method": "Singular-value decomposition of centered raw and standardized return matrices,plus covariance slope and squared Pearson correlation;does not call the implemented diagnostic helpers.",
+    "new_strategy_evaluations": 0,
+    "order_authority": false
+  },
+  "new_strategy_evaluations": 0,
+  "order_authority": false,
+  "schema_version": 1
+}
