@@ -1,0 +1,268 @@
+{
+  "availability_audit": {
+    "DFII10": {
+      "carried_after_availability_sessions": 20,
+      "decisions": 2805,
+      "maximum_age_days": 5,
+      "sha256": "135cd99e4e5b8f42d87c1d32c5cda4e73cecd5cca47c805ae5292ce5bd7ff1ff"
+    },
+    "T10Y3M": {
+      "carried_after_availability_sessions": 20,
+      "decisions": 2805,
+      "maximum_age_days": 5,
+      "sha256": "135cd99e4e5b8f42d87c1d32c5cda4e73cecd5cca47c805ae5292ce5bd7ff1ff"
+    }
+  },
+  "candidates": [
+    {
+      "registration": {
+        "candidate_id": "macro_real_yield_factor_tilt",
+        "data_scope": "factor_etf_portfolio",
+        "families": [
+          "earnings_quality",
+          "low_volatility",
+          "momentum",
+          "value"
+        ],
+        "order_authority": false,
+        "readiness_sha256": "1f91ef63bf69ca6acb6facbcc494ebf6667c4025c2ea0671a5f6486c099ce8d2",
+        "registered_at": "2026-10-10T15:53:49.512619+00:00",
+        "spec_sha256": "b9a581c1dac686b26fa780fb97fbea76521e7b1d9e9522408ac89396f3d549c2"
+      },
+      "spec": {
+        "asset_leverage": {
+          "BIL": 1.0,
+          "GLD": 1.0,
+          "IEF": 1.0,
+          "MTUM": 1.0,
+          "QUAL": 1.0,
+          "SPY": 1.0,
+          "USMV": 1.0,
+          "VLUE": 1.0
+        },
+        "configuration": {
+          "curve_defense": false,
+          "id": "macro_real_yield_factor_tilt"
+        },
+        "data_scope": "factor_etf_portfolio",
+        "evaluation_as_of": "2026-10-05",
+        "factor_ids": [
+          "price_momentum",
+          "value_exposure",
+          "quality_exposure",
+          "low_volatility_exposure"
+        ],
+        "frozen_files": {
+          "config/factor-gold-risk.json": "6c550602c98fa5b09e5b59791bdbbe569c9b4082e2d1dfc9ba4cd5639a25ec63",
+          "config/macro-factor-tilt.json": "6a7b9b0042cd1429b1ca8886c5dbc98c9f0356ab33ebbe0fa2a8ff7d0b33d867",
+          "data/macro-rate-access-20261010/DFII10-curl-response.csv": "b9e7817be5c95412df6a000b8f12f4228db580923f5ad530d942aa558eade429",
+          "data/macro-rate-access-20261010/T10Y3M-curl-response.csv": "97d5e143555d1a06289ece3608dd8548f1530a82905b284c6485d327c83ba9dc",
+          "data/macro-rate-access-20261010/verified-manifest.json": "08443821e368f9769716e5f7a4bbcf6d94a9476076ecbb389257ca75280d97e3",
+          "src/us_quant/factor_gold_risk.py": "412a80a5d608a3cb0ad3bce6b2861b80fcc73b7f28f27697ccd60528874bf8d5",
+          "src/us_quant/macro_factor_tilt.py": "40a2fec8b2502bd8cba21a1ac8b16397d98ed77d8c2cd304ba814c20eaf623b0"
+        },
+        "history_status": "exposed_history_not_independent_holdout",
+        "id": "macro_real_yield_factor_tilt",
+        "leveraged_products_allowed": false,
+        "market": {
+          "close": {
+            "path": "data/macro-tilt-prepared-20261010/close.csv",
+            "sha256": "b098f783bbf7a4ca56520e11c6e13edbb0eb2673ed7aaec02b89981ff74fabce"
+          },
+          "open": {
+            "path": "data/macro-tilt-prepared-20261010/open.csv",
+            "sha256": "dc2e1cf8c83c8731a03452eec60ad3cc036b8534cfed94b054c8f883b459273f"
+          },
+          "raw_close": {
+            "path": "data/macro-tilt-prepared-20261010/raw_close.csv",
+            "sha256": "82eae7514bf8de48bfe07cc72331ed758a27f561180ff5ad44d5d70e0dca71f9"
+          },
+          "risk_free": {
+            "path": "data/macro-tilt-prepared-20261010/risk_free.csv",
+            "sha256": "3b59869f597ac9d2573ffca1616938da4c2df0da24bd38799ce3e39b1f0509cc"
+          },
+          "volume": {
+            "path": "data/macro-tilt-prepared-20261010/volume.csv",
+            "sha256": "7ab6fbbe413fee994f65e27ebfbf15e28aa18055acdc12bd527918d5bbe60830"
+          }
+        },
+        "order_authority": false
+      }
+    },
+    {
+      "registration": {
+        "candidate_id": "macro_real_yield_tilt_curve_defense",
+        "data_scope": "factor_etf_portfolio",
+        "families": [
+          "earnings_quality",
+          "low_volatility",
+          "momentum",
+          "value"
+        ],
+        "order_authority": false,
+        "readiness_sha256": "1f91ef63bf69ca6acb6facbcc494ebf6667c4025c2ea0671a5f6486c099ce8d2",
+        "registered_at": "2026-10-10T15:53:50.710915+00:00",
+        "spec_sha256": "5c9bb5dcdace94705057905420462ad4c0ce6f4af5ec5c413aba401346842797"
+      },
+      "spec": {
+        "asset_leverage": {
+          "BIL": 1.0,
+          "GLD": 1.0,
+          "IEF": 1.0,
+          "MTUM": 1.0,
+          "QUAL": 1.0,
+          "SPY": 1.0,
+          "USMV": 1.0,
+          "VLUE": 1.0
+        },
+        "configuration": {
+          "curve_defense": true,
+          "id": "macro_real_yield_tilt_curve_defense"
+        },
+        "data_scope": "factor_etf_portfolio",
+        "evaluation_as_of": "2026-10-05",
+        "factor_ids": [
+          "price_momentum",
+          "value_exposure",
+          "quality_exposure",
+          "low_volatility_exposure"
+        ],
+        "frozen_files": {
+          "config/factor-gold-risk.json": "6c550602c98fa5b09e5b59791bdbbe569c9b4082e2d1dfc9ba4cd5639a25ec63",
+          "config/macro-factor-tilt.json": "6a7b9b0042cd1429b1ca8886c5dbc98c9f0356ab33ebbe0fa2a8ff7d0b33d867",
+          "data/macro-rate-access-20261010/DFII10-curl-response.csv": "b9e7817be5c95412df6a000b8f12f4228db580923f5ad530d942aa558eade429",
+          "data/macro-rate-access-20261010/T10Y3M-curl-response.csv": "97d5e143555d1a06289ece3608dd8548f1530a82905b284c6485d327c83ba9dc",
+          "data/macro-rate-access-20261010/verified-manifest.json": "08443821e368f9769716e5f7a4bbcf6d94a9476076ecbb389257ca75280d97e3",
+          "src/us_quant/factor_gold_risk.py": "412a80a5d608a3cb0ad3bce6b2861b80fcc73b7f28f27697ccd60528874bf8d5",
+          "src/us_quant/macro_factor_tilt.py": "40a2fec8b2502bd8cba21a1ac8b16397d98ed77d8c2cd304ba814c20eaf623b0"
+        },
+        "history_status": "exposed_history_not_independent_holdout",
+        "id": "macro_real_yield_tilt_curve_defense",
+        "leveraged_products_allowed": false,
+        "market": {
+          "close": {
+            "path": "data/macro-tilt-prepared-20261010/close.csv",
+            "sha256": "b098f783bbf7a4ca56520e11c6e13edbb0eb2673ed7aaec02b89981ff74fabce"
+          },
+          "open": {
+            "path": "data/macro-tilt-prepared-20261010/open.csv",
+            "sha256": "dc2e1cf8c83c8731a03452eec60ad3cc036b8534cfed94b054c8f883b459273f"
+          },
+          "raw_close": {
+            "path": "data/macro-tilt-prepared-20261010/raw_close.csv",
+            "sha256": "82eae7514bf8de48bfe07cc72331ed758a27f561180ff5ad44d5d70e0dca71f9"
+          },
+          "risk_free": {
+            "path": "data/macro-tilt-prepared-20261010/risk_free.csv",
+            "sha256": "3b59869f597ac9d2573ffca1616938da4c2df0da24bd38799ce3e39b1f0509cc"
+          },
+          "volume": {
+            "path": "data/macro-tilt-prepared-20261010/volume.csv",
+            "sha256": "7ab6fbbe413fee994f65e27ebfbf15e28aa18055acdc12bd527918d5bbe60830"
+          }
+        },
+        "order_authority": false
+      }
+    }
+  ],
+  "readiness": {
+    "capabilities": {
+      "actual_fund_history": {
+        "evidence_path": "config/multifactor-stability.json",
+        "evidence_sha256": "197892d844fd749c1ef06cda8b1eeb025b6edfe546e42f020dc721bc09209715",
+        "verified": true
+      },
+      "factor_mandates": {
+        "evidence_path": "config/multifactor-stability.json",
+        "evidence_sha256": "197892d844fd749c1ef06cda8b1eeb025b6edfe546e42f020dc721bc09209715",
+        "verified": true
+      },
+      "post_inception_and_actions": {
+        "evidence_path": "config/multifactor-stability.json",
+        "evidence_sha256": "197892d844fd749c1ef06cda8b1eeb025b6edfe546e42f020dc721bc09209715",
+        "verified": true
+      },
+      "unleveraged_fund_identity": {
+        "evidence_path": "config/multifactor-stability.json",
+        "evidence_sha256": "197892d844fd749c1ef06cda8b1eeb025b6edfe546e42f020dc721bc09209715",
+        "verified": true
+      }
+    },
+    "checked_at": "2026-10-10T15:53:47.303199+00:00",
+    "data_scope": "factor_etf_portfolio",
+    "new_market_observations": false,
+    "schema_version": 1,
+    "stock_data_still_blocked": true,
+    "verified_etf_source": {
+      "adapter": "frozen_multifactor_etf_20261010",
+      "base_manifest": "data/factor-round-20261007/base/manifest.json",
+      "base_manifest_sha256": "8cc85f89a05c0324571abc1cb44d8a1d7dfd76d55271f34ad4da973e5c0f9f6d",
+      "factor_manifest": "data/multifactor-stability-20261010/manifest.json",
+      "factor_manifest_sha256": "ea128cfe0fa71db93080234787f0779f0236b88466ab01f8e78336bc03652aa5",
+      "policy": "config/multifactor-stability.json",
+      "policy_sha256": "197892d844fd749c1ef06cda8b1eeb025b6edfe546e42f020dc721bc09209715",
+      "registration": "evidence/multifactor_stability_20261010_registration_v2.json",
+      "registration_sha256": "721932a098fb8061d58e8c402bb74ade08512007c13f17be91512c2b4f940d8e"
+    }
+  },
+  "study": {
+    "as_of": "2026-10-05",
+    "candidates": [
+      {
+        "curve_defense": false,
+        "id": "macro_real_yield_factor_tilt"
+      },
+      {
+        "curve_defense": true,
+        "id": "macro_real_yield_tilt_curve_defense"
+      }
+    ],
+    "factor_ids": [
+      "price_momentum",
+      "value_exposure",
+      "quality_exposure",
+      "low_volatility_exposure"
+    ],
+    "factor_symbols": [
+      "MTUM",
+      "VLUE",
+      "QUAL",
+      "USMV"
+    ],
+    "inverted_curve_equity_scale": 0.5,
+    "maximum_observation_age_days": 7,
+    "methodology": {
+      "allocation": "Use the unchanged original four-factor/gold63-session monthly risk-balance equity/gold totals. If laggedDFII10 rose over63trading sessions, factor shares are15/35/15/35%; otherwise35/15/35/15%. All four economic factor exposures remain positive.",
+      "curve_defense": "Only the second configuration halves total equity when laggedT10Y3M is nonpositive, moving the reduction to BIL. Gold remains unchanged.",
+      "execution": "Completed month-end decisions only; same USD10,000,2%cash,USD1commission,5bp next-open base and20bp extra-session stress. No leverage or macro-index trading.",
+      "hypothesis": "A rising real discount rate may favor value/low-volatility exposures over growth-sensitive momentum/quality. Test a fixed bounded factor-share tilt, not an optimized rule.",
+      "independent_forward_validation": false,
+      "macro_timing": "An observation is usable only at the close of the secondNYSEsession strictly after its calendar date. Carry the last available published level across missing release days only while its observation date is at most7calendar days old. Do not synthesize a new observation.",
+      "macro_vintage": "Current historical FRED downloads are not ALFRED vintages. The conservative publication lag is explicit but does not prove that the provider never revised past values.",
+      "order_authority": false,
+      "research_status": "Two fixed new configurations after92prior evaluations. Macro risk inputs are not verified new alpha factors. No threshold/window sweep or altered benchmark goals."
+    },
+    "new_configurations": 2,
+    "nonrising_real_yield_factor_shares": [
+      0.35,
+      0.15,
+      0.35,
+      0.15
+    ],
+    "prior_evaluated_configurations": 92,
+    "publication_delay_sessions": 2,
+    "real_yield_change_sessions": 63,
+    "rising_real_yield_factor_shares": [
+      0.15,
+      0.35,
+      0.15,
+      0.35
+    ],
+    "schema_version": 1,
+    "source_definitions": {
+      "DFII10": "10-year inflation-indexed Treasury constant-maturity real yield, percent; Federal Reserve Board H.15, https://fred.stlouisfed.org/series/DFII10",
+      "T10Y3M": "10-year minus3-month Treasury constant-maturity yield spread, percentage points; Federal Reserve Bank of St.Louis, https://fred.stlouisfed.org/series/T10Y3M"
+    },
+    "study_id": "macro_factor_tilt_20261010"
+  }
+}
