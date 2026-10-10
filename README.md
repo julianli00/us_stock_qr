@@ -1784,6 +1784,45 @@ They preserve the old monthly target until a new month is actually
 available and never restart a paused forward account. Actual future
 automated execution, strategy fills or Sharpe qualification is not claimed.
 
+### Separately registered prospective research model accounts
+
+`config/prospective-research-accounts.json` defines a new research-only
+simulation for the already recorded, historically rejected macro-factor
+candidate. It is not a live account, research champion or restart of any
+paused shadow ledger. Four fresh USD10,000 model accounts compare the
+strategy and SPY under original 5/20bp costs, USD1 ticket charges and
+one/two-session delays. Registration must precede the first model open.
+
+Each modelled session requires its own actually captured parent data receipt
+and target-observation receipt. Targets must have been recorded before the
+applicable open. A later download's historical rows cannot fill a missing
+observation; missing inputs explicitly stop the model. Late processing of
+already captured, on-time immutable inputs is not relabelled as earlier
+processing or actual execution.
+
+Adjusted total-return price levels may be renormalized in successive vendor
+downloads. The model chains actual within-snapshot open/close ratios against
+that snapshot's previous close, using **normalized model units rather than
+broker shares**. This does not invent asset returns. A changed previous
+raw-close quote pauses the experiment for source/corporate-action review,
+rather than silently accepting a revision. Frozen funded-account simulation
+and independent `bt` must agree before any new row is recorded; prior model
+rows must also reproduce unchanged.
+
+```bash
+cd research/workbench
+.venv/bin/python -I -B -m us_quant.prospective_research_accounts init
+.venv/bin/python -I -B -m us_quant.prospective_research_accounts advance
+.venv/bin/python -I -B -m us_quant.prospective_research_accounts status
+```
+
+Initialize only this new explicitly named model journal, never the existing
+archives or old paused ledgers. The initial cash anchor has zero return and
+no invented interest. Before 63 actual model sessions, no Sharpe estimate
+is reported. Even later modelled returns are not broker performance,
+independent selection-adjusted alpha or qualification of the historically
+rejected source strategy. No orders or live deployment are authorized.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

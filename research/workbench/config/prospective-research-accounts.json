@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "experiment_id": "prospective_rejected_candidate_accounts_v1",
+  "source_candidate_id": "macro_real_yield_factor_tilt",
+  "source_historical_status": "rejected_historical",
+  "target_policy": "config/prospective-target-observations.json",
+  "target_journal": "data/prospective-target-observations-v1",
+  "symbols": ["SPY", "IEF", "GLD", "BIL", "MTUM", "VLUE", "QUAL", "USMV"],
+  "capital_usd_per_account": 10000.0,
+  "commission_per_order": 1.0,
+  "scenarios": [
+    {"id": "base", "cost_bps": 5.0, "delay_sessions": 1},
+    {"id": "stress", "cost_bps": 20.0, "delay_sessions": 2}
+  ],
+  "minimum_observed_sessions_for_reported_sharpe": 63,
+  "benchmark_symbol": "SPY",
+  "price_encoding": "within_snapshot_ratio_chain",
+  "pause_on_unexplained_previous_raw_close_revision": true,
+  "require_each_market_session_actual_input_receipt": true,
+  "require_each_market_session_target_observation": true,
+  "target_must_be_recorded_before_model_execution_open": true,
+  "initial_capital_anchor_has_zero_return_and_no_interest": true,
+  "model_fills_are_broker_fills": false,
+  "backfill_missing_observations": false,
+  "automatic_live_deployment": false,
+  "update_research_champion": false,
+  "order_authority": false,
+  "methodology": {
+    "scope": "A new, separate prospective research simulation for an already registered, historically rejected candidate. Never restart or read old paused shadow ledgers,connect a broker or promote the source candidate.",
+    "registration": "Freeze the initial target receipt and register before its first future hypothetical execution open. Initial cash is a bookkeeping anchor only,not backdated investment or interest.",
+    "observations": "Each modelled session requires its own actually captured parent snapshot and target-observation receipt. Missing sessions cannot be recovered from historical rows in later downloads; processing can occur later only if the original receipts were captured on time.",
+    "timing": "Use only target records generated before the applicable next-open or extra-delay model fill. Base and stress accounts share USD10,000 initial capital,USD1 commissions and their respective cost/delay assumptions. SPY accounts use the same initial timing and execution costs.",
+    "vintage": "Chain the adjusted open/close ratios measured against the previous close within each actually acquired daily snapshot. This removes arbitrary total-return price-level renormalization across snapshots without inventing returns. Units are normalized model units,not broker shares. A changed previous raw-close quote pauses accounting for source/corporate-action review rather than silently rewriting history.",
+    "verification": "Rebuild the entire observed path with the frozen funded-account simulator and independent bt before appending. Earlier account records must agree with replay; all source and target receipt hashes remain bound.",
+    "inference": "Before63real account sessions,do not report a Sharpe estimate. Even later simulated performance is not live performance,complete search-bias correction or research-champion qualification. Historical gates remain failed and the investment objective remains unverified.",
+    "limitations": "Fractional normalized units,modelled next-open fills,model fees and no personal taxes; quote revisions and missing observations can pause the study. Recording a target is not a fill,and modelled fills are not orders or actual execution."
+  }
+}
