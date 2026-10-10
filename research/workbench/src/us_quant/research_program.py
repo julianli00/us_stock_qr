@@ -196,6 +196,11 @@ def verified_etf_market(readiness: dict, root: Path) -> MarketData:
     from us_quant.multifactor_stability import load_market
 
     source = readiness.get("verified_etf_source", {})
+    if source.get("adapter") == "growth_factor_satellite_20261011":
+        from us_quant.growth_factor_satellite import verified_market
+
+        policy = read_json(safe_file(root, source["policy"], source["policy_sha256"]))
+        return verified_market(policy)
     if source.get("adapter") == "defensive_factor_rotation_20261011":
         from us_quant.defensive_factor_rotation import verified_market
 

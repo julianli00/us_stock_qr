@@ -1019,6 +1019,33 @@ The [ordinary-client SEC recheck](research/workbench/evidence/sec_normal_client_
 still returned 403 under the same identity/network settings; no archive
 download or access-control bypass occurred.
 
+### Matched-risk growth exposure comparison
+
+`config/growth-factor-satellite.json` introduces two fixed matched-risk
+configurations. The control retains the original four-factor equity sleeve;
+the other uses half that sleeve in the unleveraged Nasdaq-100 ETF QQQ and
+half equally across the four factor funds. QQQ is explicitly growth/market
+beta, **not a newly discovered factor or assumed independent alpha**.
+
+Both use identical 63-session equity/gold risk balance, daily 12% predicted
+volatility projection, a 5-percentage-point target-change band, 2% idle cash,
+and the existing base/stress execution costs. The experiment does not raise
+the risk target, remove the factor core or silently substitute leveraged
+products. QQQ comes from the previously audited base-data manifest.
+Actual drawdown, return and Sharpe gates remain required.
+
+```bash
+.venv/bin/python -I -B -m us_quant.growth_factor_satellite
+# Register both matching spec files with research_program register-candidate,
+# then use evaluate-candidate; no outcomes are computed by preparation.
+```
+
+The source-bound generator reproduces the actual composed sleeve risk, not
+the volatility of the factor-only control. Any gains must be attributed
+honestly to additional growth exposure rather than presented as factor
+discovery. The prior static-mix diagnostic did not include QQQ and is not
+a bound on this enlarged asset scope.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

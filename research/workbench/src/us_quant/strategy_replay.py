@@ -16,6 +16,7 @@ GENERATORS = {
     "volatility_term_risk": "config/volatility-term-risk.json",
     "macro_factor_tilt": "config/macro-factor-tilt.json",
     "defensive_factor_rotation": "config/defensive-factor-rotation.json",
+    "growth_factor_satellite": "config/growth-factor-satellite.json",
 }
 
 
@@ -109,6 +110,10 @@ def registered_targets(
             cache[key] = build_targets(data, macro, candidate, policy)
         elif name == "defensive_factor_rotation":
             from us_quant.defensive_factor_rotation import build_targets
+
+            cache[key] = build_targets(data, policy)[spec["id"]]
+        elif name == "growth_factor_satellite":
+            from us_quant.growth_factor_satellite import build_targets
 
             cache[key] = build_targets(data, policy)[spec["id"]]
     return seed_window(cache[key], start)
