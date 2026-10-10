@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-11",
-  "phase": "static_scope_diagnosed_prospective_data_collecting_goal_unmet",
+  "phase": "matched_growth_exposure_rejected_98_evaluations_goal_unmet",
   "active_research_focus": "recurring_fundamental_multifactor_research",
   "completed": [
     "Preserved runnable incumbent strategy/engine and early-scanner source alongside the isolated 52-configuration workbench.",
@@ -38,7 +38,9 @@
     "Added a separate data-only prospective archive with actual acquisition times, first-snapshot baseline, immutable receipts, same-session dedupe and explicit missed-observation gaps; no strategy returns or live trading.",
     "Captured and verified14public sources for the2026-10-09 baseline; duplicate collection skips network and leaves the receipt head unchanged. Zero post-baseline observations and no strategy-return proof.",
     "Native automation now collects data daily around09:00Asia/Shanghai; factor discovery remains Saturday09:00. Next invocation at configuration was2026-10-11 around09:01; old forward ledgers and notification services remain untouched.",
-    "A separately labeled full-sample,zero-cost fixed-weight feasibility diagnostic gives numerical Sharpe ceilings about0.93375/0.99439 for10y/5y. It is not a causal strategy or a bound for dynamic trading; adds zero trials and no investment success."
+    "A separately labeled full-sample,zero-cost fixed-weight feasibility diagnostic gives numerical Sharpe ceilings about0.93375/0.99439 for10y/5y. It is not a causal strategy or a bound for dynamic trading; adds zero trials and no investment success.",
+    "Two matched-risk growth/core portfolios completed real source-bound reviews and were rejected. AddingQQQraises10y/5ybaseSharpe0.8347/0.8878 to0.8865/0.9131 but drawdown also rises;98actual evaluations,no qualifying champion.",
+    "Equivalent volatility-coordinate scaling repaired a failed diagnostic certificate without changing constraints or tolerances. QQQ-inclusive hindsight fixed-weight bounds are1.00333/0.99622, not tradable results or strategy qualifications."
   ],
   "completed_zh": [
     "已保留可运行的原Top30算法、成本引擎和独立早期扫描器，并隔离导入52配置研究工作台。",
@@ -75,7 +77,9 @@
     "新增独立数据归档：记录实际获取时间、首份仅作基线、同交易日去重及明确漏记日期；不计算策略收益或执行交易。",
     "已实际采集并核验14个公开来源的2026-10-09基线；重复运行不联网且收据链不变。基线之后新观察为0，没有前瞻策略收益证明。",
     "调度已改为每天北京时间09:00左右采集数据，因子探索仍每周六09:00；配置时下次为2026-10-11约09:01，旧前瞻账本和通知服务未改动。",
-    "另做明确标注的完整样本、零成本固定配比诊断，十年/五年夏普数值上界约0.93375/0.99439；不是可交易策略，也不限制所有动态策略，不增加回测计数或宣称达标。"
+    "另做明确标注的完整样本、零成本固定配比诊断，十年/五年夏普数值上界约0.93375/0.99439；不是可交易策略，也不限制所有动态策略，不增加回测计数或宣称达标。",
+    "有/无QQQ的匹配风险对照已完成并拒绝，十年/五年基础Sharpe由0.8347/0.8878升至0.8865/0.9131，但回撤略增；累计98个真实评估，仍无合格策略。",
+    "以等价波动率坐标修复诊断数值条件，未放宽约束或容差；含QQQ的事后固定组合上界约1.00333/0.99622，不能当可交易结果或达标策略。"
   ],
   "next": [
     "Avoid further static-mix tuning justified only by this exposed sample; the feasibility diagnostic is not a trading rule. Seek credible predictive data or economically justified new information while collecting real new observations.",
@@ -213,7 +217,7 @@
   "recurring_research_program": {
     "state": "daily_data_weekly_research_no_qualified_candidate",
     "policy": "research/workbench/config/research-program.json",
-    "cycle_snapshot": "research/workbench/evidence/research_program_2026-W41_results_v11.json",
+    "cycle_snapshot": "research/workbench/evidence/research_program_2026-W41_results_v13.json",
     "initial_cycle_snapshot": "research/workbench/evidence/research_program_2026-W41.json",
     "automation_receipt": "research/workbench/evidence/prospective_data_automation_v1.json",
     "initial_weekly_automation_receipt": "research/workbench/evidence/research_program_automation_20261010.json",
@@ -222,8 +226,8 @@
     "known_factor_definitions": 6,
     "economic_factor_families": 5,
     "independent_factor_count_verified": false,
-    "new_strategy_evaluations": 12,
-    "total_evaluated_configurations": 96,
+    "new_strategy_evaluations": 14,
+    "total_evaluated_configurations": 98,
     "research_champion": null,
     "research_versions": 0,
     "data_blockers": 5,
@@ -253,13 +257,22 @@
     "order_authority": false
   },
   "static_allocation_diagnostic": {
-    "evidence": "research/workbench/evidence/static_allocation_feasibility_v1.json",
+    "evidence": "research/workbench/evidence/static_allocation_feasibility_v2.json",
+    "original_version": "research/workbench/evidence/static_allocation_feasibility_v1.json",
     "scope": "fixed_weight_daily_close_rebalancing_zero_cost_hindsight",
-    "numeric_sharpe_ceiling_10y": 0.9337478432435221,
-    "numeric_sharpe_ceiling_5y": 0.9943876823088549,
+    "numeric_sharpe_ceiling_10y": 0.933747821731788,
+    "numeric_sharpe_ceiling_5y": 0.9943876823088551,
     "not_a_dynamic_strategy_bound": true,
     "new_strategy_evaluations": 0,
     "investment_objective_verified": false
+  },
+  "growth_factor_satellite": {
+    "registration": "research/workbench/evidence/growth_factor_satellite_20261011_registration.json",
+    "results": "research/workbench/evidence/growth_factor_satellite_20261011_results.json",
+    "new_evaluated_candidates": 2,
+    "accepted_candidates": 0,
+    "QQQ_is_beta_not_a_new_factor": true,
+    "diagnostic": "research/workbench/evidence/growth_scope_feasibility_v1.json"
   },
   "source_bound_review": {
     "audit": "research/workbench/evidence/research_program_source_bound_audit_v1.json",

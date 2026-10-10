@@ -1005,7 +1005,7 @@ trade recommendations. Analytical synthetic cases verify the diagnostic.
 
 ```bash
 .venv/bin/python -I -B -m us_quant.allocation_feasibility \
-  --output evidence/static_allocation_feasibility_v1.json
+  --output reports/static-allocation-feasibility-replay.json
 ```
 
 The result adds **zero** strategy trials and cannot be submitted as a
@@ -1045,6 +1045,28 @@ the volatility of the factor-only control. Any gains must be attributed
 honestly to additional growth exposure rather than presented as factor
 discovery. The prior static-mix diagnostic did not include QQQ and is not
 a bound on this enlarged asset scope.
+
+The [actual matched-risk results](research/workbench/evidence/growth_factor_satellite_20261011_results.json)
+were both rejected. Growth exposure raises ten/five-year base Sharpe from
+0.8347/0.8878 to 0.8865/0.9131, but drawdowns increase slightly to about
+18.5%-18.7%; stressed Sharpe remains 0.8298/0.8739. This is a modest growth-beta
+effect, not evidence that a new factor or qualifying strategy was found.
+The [current program snapshot](research/workbench/evidence/research_program_2026-W41_results_v13.json)
+retains 98 actual evaluations and fourteen rejected recurring reviews.
+
+The enlarged-scope feasibility diagnostic initially failed its five-year
+numerical certificate. A mathematically equivalent unit-volatility coordinate
+transformation fixes numerical conditioning without changing the objective,
+constraints or tolerances. A new disparate-volatility regression case passes,
+and the [original-scope v2 result](research/workbench/evidence/static_allocation_feasibility_v2.json)
+agrees with v1 within numerical tolerance; v1 remains preserved with its own
+implementation hash.
+The [QQQ-inclusive diagnostic](research/workbench/evidence/growth_scope_feasibility_v1.json)
+gives zero-cost, full-sample fixed-weight numerical bounds of about 1.00333
+for ten years and 0.99622 for five years. It remains a hindsight diagnostic,
+not a strategy, not a joint shared-weight result, and not a bound on all
+dynamic or cost-bearing execution. It adds zero strategy trials and cannot
+qualify as investment success.
 
 ## Progress and publication
 

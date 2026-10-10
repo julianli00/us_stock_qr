@@ -46,16 +46,23 @@ def static_sharpe_envelope(excess: pd.DataFrame) -> dict:
             "strategy_qualified": False,
             "scope": "fixed_nonnegative_weights_only",
         }
+    volatility = np.sqrt(np.diag(covariance))
+    scaled_mean = mean / volatility
+    correlation = covariance / np.outer(volatility, volatility)
     start = np.zeros(len(mean))
-    winner = int(mean.argmax())
-    start[winner] = 1 / mean[winner]
+    winner = int(scaled_mean.argmax())
+    start[winner] = 1 / scaled_mean[winner]
     solution = minimize(
-        lambda x: 0.5 * float(x @ covariance @ x),
+        lambda x: 0.5 * float(x @ correlation @ x),
         start,
-        jac=lambda x: covariance @ x,
+        jac=lambda x: correlation @ x,
         method="SLSQP",
         bounds=[(0, None)] * len(mean),
-        constraints={"type": "eq", "fun": lambda x: float(mean @ x) - 1, "jac": lambda x: mean},
+        constraints={
+            "type": "eq",
+            "fun": lambda x: float(scaled_mean @ x) - 1,
+            "jac": lambda x: scaled_mean,
+        },
         options={"ftol": 1e-13, "maxiter": 3000},
     )
     x = solution.x
@@ -63,20 +70,20 @@ def static_sharpe_envelope(excess: pd.DataFrame) -> dict:
         not solution.success
         or not np.isfinite(x).all()
         or (x < -1e-10).any()
-        or abs(float(mean @ x) - 1) > 1e-8
+        or abs(float(scaled_mean @ x) - 1) > 1e-8
     ):
         raise QuantError("The optimistic fixed-weight problem did not solve within tolerance.")
-    variance = float(x @ covariance @ x)
-    residual = covariance @ x - variance * mean
+    variance = float(x @ correlation @ x)
+    residual = correlation @ x - variance * scaled_mean
     multipliers = np.maximum(residual, 0)
-    dual_vector = variance * mean + multipliers
-    dual = variance - 0.5 * float(dual_vector @ np.linalg.solve(covariance, dual_vector))
+    dual_vector = variance * scaled_mean + multipliers
+    dual = variance - 0.5 * float(dual_vector @ np.linalg.solve(correlation, dual_vector))
     margin = 1e-9 * max(abs(dual), 1.0)
     lower_variance = 2 * (dual - margin)
     gap = 0.5 * variance - dual
     if lower_variance <= 0 or gap < -1e-8 or gap > 1e-7:
         raise QuantError("A sufficiently tight numerical dual certificate was not established.")
-    weights = np.maximum(x, 0)
+    weights = np.maximum(x, 0) / volatility
     weights /= weights.sum()
     portfolio_excess = excess.to_numpy() @ weights
     attained = float(portfolio_excess.mean() / portfolio_excess.std(ddof=1) * np.sqrt(252))
@@ -89,6 +96,7 @@ def static_sharpe_envelope(excess: pd.DataFrame) -> dict:
         "numerical_upper_bound": upper,
         "primal_dual_gap": gap,
         "floating_point_safety_margin": margin,
+        "coordinate_system": "equivalent_unit_volatility_coordinates_without_regularization",
         "annualized_sample_excess_means": dict(zip(excess.columns, mean.tolist(), strict=True)),
         "annualized_sample_covariance": covariance.tolist(),
         "asset_order": list(excess.columns),
@@ -144,7 +152,7 @@ def main() -> None:
         description="Optimistic static-allocation diagnostic; not a strategy."
     )
     parser.add_argument(
-        "--output", type=Path, default=ROOT / "evidence/static_allocation_feasibility_v1.json"
+        "--output", type=Path, default=ROOT / "evidence/static_allocation_feasibility_v2.json"
     )
     args = parser.parse_args()
     try:

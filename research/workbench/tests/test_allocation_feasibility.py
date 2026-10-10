@@ -65,3 +65,15 @@ def test_large_hindsight_sharpe_does_not_qualify_as_a_strategy():
     assert result["attained_in_sample_sharpe"] > 1
     assert result["strategy_qualified"] is False
     assert result["optimal_weights_not_published_as_trade_recommendations"]
+
+
+def test_disparate_stock_and_bill_volatility_scales_keep_a_tight_certificate():
+    volatility = np.array([0.18, 0.20, 0.00001])
+    correlation = np.array([[1.0, 0.5, 0.1], [0.5, 1.0, 0.1], [0.1, 0.1, 1.0]])
+    covariance = correlation * np.outer(volatility, volatility)
+    mean = np.array([0.12, 0.15, -0.002])
+    result = static_sharpe_envelope(exact_sample(mean, covariance))
+    expected = float(np.sqrt(mean[:2] @ np.linalg.solve(covariance[:2, :2], mean[:2])))
+    assert result["attained_in_sample_sharpe"] == pytest.approx(expected, abs=1e-7)
+    assert result["numerical_upper_bound"] >= expected - 1e-10
+    assert result["primal_dual_gap"] < 1e-7
