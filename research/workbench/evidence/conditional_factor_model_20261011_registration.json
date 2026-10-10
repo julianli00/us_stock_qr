@@ -1,0 +1,263 @@
+{
+  "candidates": [
+    {
+      "registration": {
+        "candidate_id": "conditional_price_factor_model",
+        "data_scope": "factor_etf_portfolio",
+        "families": [
+          "earnings_quality",
+          "low_volatility",
+          "momentum",
+          "value"
+        ],
+        "order_authority": false,
+        "readiness_sha256": "bf95cf5a50f10a50b11df43f8664397804a1f73b1d4acf0e3fe256391fe7169c",
+        "registered_at": "2026-10-10T18:04:13.388610+00:00",
+        "spec_sha256": "dbefdcdfb0b59a51f731e563a031e241f11b2bcf15c2530bf990de011a3499ef"
+      },
+      "spec": {
+        "asset_leverage": {
+          "BIL": 1.0,
+          "GLD": 1.0,
+          "IEF": 1.0,
+          "MTUM": 1.0,
+          "QUAL": 1.0,
+          "SPY": 1.0,
+          "USMV": 1.0,
+          "VLUE": 1.0
+        },
+        "configuration": {
+          "augmented_information": false,
+          "id": "conditional_price_factor_model"
+        },
+        "data_scope": "factor_etf_portfolio",
+        "evaluation_as_of": "2026-10-05",
+        "factor_ids": [
+          "price_momentum",
+          "value_exposure",
+          "quality_exposure",
+          "low_volatility_exposure"
+        ],
+        "frozen_files": {
+          "config/conditional-factor-model.json": "d2999e391440de211e5cdfe7649932c3f9157f3026047ebc62bd1181a1e94253",
+          "data/macro-rate-access-20261010/DFII10-curl-response.csv": "b9e7817be5c95412df6a000b8f12f4228db580923f5ad530d942aa558eade429",
+          "data/macro-rate-access-20261010/T10Y3M-curl-response.csv": "97d5e143555d1a06289ece3608dd8548f1530a82905b284c6485d327c83ba9dc",
+          "data/macro-rate-access-20261010/verified-manifest.json": "08443821e368f9769716e5f7a4bbcf6d94a9476076ecbb389257ca75280d97e3",
+          "data/volatility-term-source-20261010/VIX.csv": "51ea1e59bfeaf400f6816300c39145df5e3fb437e7c60bdb8ca2178f8c96f436",
+          "data/volatility-term-source-20261010/VIX3M.csv": "f706a0f3b2adb442676514682cabf47556c43a6d465498a7d6da463cc3361281",
+          "data/volatility-term-source-20261010/manifest.json": "7dfbc2854f15c77b8316b401b798b0a9ffb9edbefce07fdc022102af2e5daedd",
+          "src/us_quant/conditional_factor_model.py": "9769651b1bea108703202472f6f2128338ea51461cb694ba589abba13b0f82f9",
+          "src/us_quant/learned_allocation.py": "9dbe60d8bf16108e83ab163442774606781d5c456d7a2839b02729961e7f36b8",
+          "src/us_quant/macro_factor_tilt.py": "40a2fec8b2502bd8cba21a1ac8b16397d98ed77d8c2cd304ba814c20eaf623b0",
+          "src/us_quant/volatility_term_risk.py": "ad2c75386c86c1e1e12491563b6a12d5e38daa0d082d0f0e805edcb9cc027176"
+        },
+        "history_status": "exposed_history_not_independent_holdout",
+        "id": "conditional_price_factor_model",
+        "leveraged_products_allowed": false,
+        "market": {
+          "close": {
+            "path": "data/conditional-factor-model-20261011/close.csv",
+            "sha256": "b098f783bbf7a4ca56520e11c6e13edbb0eb2673ed7aaec02b89981ff74fabce"
+          },
+          "open": {
+            "path": "data/conditional-factor-model-20261011/open.csv",
+            "sha256": "dc2e1cf8c83c8731a03452eec60ad3cc036b8534cfed94b054c8f883b459273f"
+          },
+          "raw_close": {
+            "path": "data/conditional-factor-model-20261011/raw_close.csv",
+            "sha256": "82eae7514bf8de48bfe07cc72331ed758a27f561180ff5ad44d5d70e0dca71f9"
+          },
+          "risk_free": {
+            "path": "data/conditional-factor-model-20261011/risk_free.csv",
+            "sha256": "3b59869f597ac9d2573ffca1616938da4c2df0da24bd38799ce3e39b1f0509cc"
+          },
+          "volume": {
+            "path": "data/conditional-factor-model-20261011/volume.csv",
+            "sha256": "7ab6fbbe413fee994f65e27ebfbf15e28aa18055acdc12bd527918d5bbe60830"
+          }
+        },
+        "order_authority": false
+      }
+    },
+    {
+      "registration": {
+        "candidate_id": "conditional_macro_option_factor_model",
+        "data_scope": "factor_etf_portfolio",
+        "families": [
+          "earnings_quality",
+          "low_volatility",
+          "momentum",
+          "value"
+        ],
+        "order_authority": false,
+        "readiness_sha256": "bf95cf5a50f10a50b11df43f8664397804a1f73b1d4acf0e3fe256391fe7169c",
+        "registered_at": "2026-10-10T18:04:14.592264+00:00",
+        "spec_sha256": "ae708e7ffc3c4f71b89ced124fe63cbf69a9667fbe35d2b05d297a8990fc3f17"
+      },
+      "spec": {
+        "asset_leverage": {
+          "BIL": 1.0,
+          "GLD": 1.0,
+          "IEF": 1.0,
+          "MTUM": 1.0,
+          "QUAL": 1.0,
+          "SPY": 1.0,
+          "USMV": 1.0,
+          "VLUE": 1.0
+        },
+        "configuration": {
+          "augmented_information": true,
+          "id": "conditional_macro_option_factor_model"
+        },
+        "data_scope": "factor_etf_portfolio",
+        "evaluation_as_of": "2026-10-05",
+        "factor_ids": [
+          "price_momentum",
+          "value_exposure",
+          "quality_exposure",
+          "low_volatility_exposure"
+        ],
+        "frozen_files": {
+          "config/conditional-factor-model.json": "d2999e391440de211e5cdfe7649932c3f9157f3026047ebc62bd1181a1e94253",
+          "data/macro-rate-access-20261010/DFII10-curl-response.csv": "b9e7817be5c95412df6a000b8f12f4228db580923f5ad530d942aa558eade429",
+          "data/macro-rate-access-20261010/T10Y3M-curl-response.csv": "97d5e143555d1a06289ece3608dd8548f1530a82905b284c6485d327c83ba9dc",
+          "data/macro-rate-access-20261010/verified-manifest.json": "08443821e368f9769716e5f7a4bbcf6d94a9476076ecbb389257ca75280d97e3",
+          "data/volatility-term-source-20261010/VIX.csv": "51ea1e59bfeaf400f6816300c39145df5e3fb437e7c60bdb8ca2178f8c96f436",
+          "data/volatility-term-source-20261010/VIX3M.csv": "f706a0f3b2adb442676514682cabf47556c43a6d465498a7d6da463cc3361281",
+          "data/volatility-term-source-20261010/manifest.json": "7dfbc2854f15c77b8316b401b798b0a9ffb9edbefce07fdc022102af2e5daedd",
+          "src/us_quant/conditional_factor_model.py": "9769651b1bea108703202472f6f2128338ea51461cb694ba589abba13b0f82f9",
+          "src/us_quant/learned_allocation.py": "9dbe60d8bf16108e83ab163442774606781d5c456d7a2839b02729961e7f36b8",
+          "src/us_quant/macro_factor_tilt.py": "40a2fec8b2502bd8cba21a1ac8b16397d98ed77d8c2cd304ba814c20eaf623b0",
+          "src/us_quant/volatility_term_risk.py": "ad2c75386c86c1e1e12491563b6a12d5e38daa0d082d0f0e805edcb9cc027176"
+        },
+        "history_status": "exposed_history_not_independent_holdout",
+        "id": "conditional_macro_option_factor_model",
+        "leveraged_products_allowed": false,
+        "market": {
+          "close": {
+            "path": "data/conditional-factor-model-20261011/close.csv",
+            "sha256": "b098f783bbf7a4ca56520e11c6e13edbb0eb2673ed7aaec02b89981ff74fabce"
+          },
+          "open": {
+            "path": "data/conditional-factor-model-20261011/open.csv",
+            "sha256": "dc2e1cf8c83c8731a03452eec60ad3cc036b8534cfed94b054c8f883b459273f"
+          },
+          "raw_close": {
+            "path": "data/conditional-factor-model-20261011/raw_close.csv",
+            "sha256": "82eae7514bf8de48bfe07cc72331ed758a27f561180ff5ad44d5d70e0dca71f9"
+          },
+          "risk_free": {
+            "path": "data/conditional-factor-model-20261011/risk_free.csv",
+            "sha256": "3b59869f597ac9d2573ffca1616938da4c2df0da24bd38799ce3e39b1f0509cc"
+          },
+          "volume": {
+            "path": "data/conditional-factor-model-20261011/volume.csv",
+            "sha256": "7ab6fbbe413fee994f65e27ebfbf15e28aa18055acdc12bd527918d5bbe60830"
+          }
+        },
+        "order_authority": false
+      }
+    }
+  ],
+  "outcomes_computed": false,
+  "readiness": {
+    "capabilities": {
+      "actual_fund_history": {
+        "evidence_path": "config/multifactor-stability.json",
+        "evidence_sha256": "197892d844fd749c1ef06cda8b1eeb025b6edfe546e42f020dc721bc09209715",
+        "verified": true
+      },
+      "factor_mandates": {
+        "evidence_path": "config/multifactor-stability.json",
+        "evidence_sha256": "197892d844fd749c1ef06cda8b1eeb025b6edfe546e42f020dc721bc09209715",
+        "verified": true
+      },
+      "post_inception_and_actions": {
+        "evidence_path": "config/multifactor-stability.json",
+        "evidence_sha256": "197892d844fd749c1ef06cda8b1eeb025b6edfe546e42f020dc721bc09209715",
+        "verified": true
+      },
+      "unleveraged_fund_identity": {
+        "evidence_path": "config/multifactor-stability.json",
+        "evidence_sha256": "197892d844fd749c1ef06cda8b1eeb025b6edfe546e42f020dc721bc09209715",
+        "verified": true
+      }
+    },
+    "checked_at": "2026-10-10T18:02:59.694639+00:00",
+    "data_scope": "factor_etf_portfolio",
+    "new_market_observations": false,
+    "schema_version": 1,
+    "stock_data_still_blocked": true,
+    "verified_etf_source": {
+      "adapter": "frozen_multifactor_etf_20261010",
+      "base_manifest": "data/factor-round-20261007/base/manifest.json",
+      "base_manifest_sha256": "8cc85f89a05c0324571abc1cb44d8a1d7dfd76d55271f34ad4da973e5c0f9f6d",
+      "factor_manifest": "data/multifactor-stability-20261010/manifest.json",
+      "factor_manifest_sha256": "ea128cfe0fa71db93080234787f0779f0236b88466ab01f8e78336bc03652aa5",
+      "policy": "config/multifactor-stability.json",
+      "policy_sha256": "197892d844fd749c1ef06cda8b1eeb025b6edfe546e42f020dc721bc09209715",
+      "registration": "evidence/multifactor_stability_20261010_registration_v2.json",
+      "registration_sha256": "721932a098fb8061d58e8c402bb74ade08512007c13f17be91512c2b4f940d8e"
+    }
+  },
+  "study": {
+    "as_of": "2026-10-05",
+    "candidates": [
+      {
+        "augmented_information": false,
+        "id": "conditional_price_factor_model"
+      },
+      {
+        "augmented_information": true,
+        "id": "conditional_macro_option_factor_model"
+      }
+    ],
+    "cash_reserve": 0.02,
+    "clip_current_features_to_training_range": true,
+    "factor_ids": [
+      "price_momentum",
+      "value_exposure",
+      "quality_exposure",
+      "low_volatility_exposure"
+    ],
+    "factor_symbols": [
+      "MTUM",
+      "VLUE",
+      "QUAL",
+      "USMV"
+    ],
+    "maximum_single_risk_sleeve": 0.7,
+    "methodology": {
+      "allocation": "Rank four factor forecasts into fixed35/30/20/15%equity shares. The composite equity forecast and gold forecast each need expected monthly excess return above0.5%. Both positive: inverse63-session-volatility balance with30%-70%equity bounds. Only one positive: allocate70%of98%invested budget to it and the remainder toBIL. Neither positive: BIL98%.",
+      "augmented_features": "Same price features plus explicitly lagged FRED term spread,real yield and63-session real-yield change, and completed-day official VIX level/VIX-to-VIX3M ratio.",
+      "early_sample_limit": "The earliest formal evaluation starts after only9distinct matured months due actual factor-fund history availability. Cross-sectional rows are not independent months. This weak early training sample is disclosed, not filled with synthetic history.",
+      "factors": "Existing economic exposures are retained; rolling coefficient/weight adaptation is not discovery of new independent economic factors.",
+      "history_status": "exposed_history_not_independent_holdout",
+      "independent_forward_validation": false,
+      "label": "Per fund: next-session open after a completed month end to the next completed-month-end-plus-one-session open, minus BIL over the same interval. Train a label only after its actual exit open occurred.",
+      "order_authority": false,
+      "price_features": "Observed21/63-session returns,63-session volatility/drawdown,SPY63-session return/volatility and fund identity.",
+      "training": "Pooled five-fund model for the four factor funds and GLD, refit at each completed month end using at most36months of matured labels. Standardization uses training rows only; current numerical predictors are clipped to observed training ranges.",
+      "validation": "Freeze both models before outcomes. No hyperparameter search, random train/test split or future labels. Retain same10y/5y windows,actual costs,source-bound regeneration and original Sharpe/SPY/15%drawdown gates."
+    },
+    "minimum_predicted_excess_return": 0.005,
+    "minimum_training_months": 9,
+    "model_parameters": {
+      "ridge": {
+        "alpha": 10.0,
+        "solver": "svd"
+      }
+    },
+    "new_configurations": 2,
+    "prior_evaluated_configurations": 98,
+    "ranked_factor_shares": [
+      0.35,
+      0.3,
+      0.2,
+      0.15
+    ],
+    "schema_version": 1,
+    "study_id": "conditional_factor_model_20261011",
+    "training_months": 36
+  }
+}
