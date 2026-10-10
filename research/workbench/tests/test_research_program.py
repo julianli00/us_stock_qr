@@ -173,6 +173,140 @@ def test_weekly_cycle_logs_data_blockers_and_deduplicates(program, proposals, po
     assert third["new_factors"] == [] and len(third["duplicate_definitions"]) == 2
 
 
+def test_new_family_queue_refuses_premature_clock_without_changing_any_history(
+    program, policy, tmp_path
+):
+    queue = read_json(ROOT / "config/factor-family-expansion.json")
+    now = pd.Timestamp(queue["eligible_not_before"]).to_pydatetime() - timedelta(seconds=1)
+    before = program.status()
+    with pytest.raises(QuantError, match="not eligible"):
+        program.cycle(queue, readiness(policy, tmp_path, now), now=now)
+    assert program.status() == before
+
+
+@pytest.mark.parametrize("value", ["not-a-date", "2026-10-17", None])
+def test_queue_eligibility_requires_an_explicit_timezone(program, proposals, value, policy, tmp_path):
+    proposals["eligible_not_before"] = value
+    before = program.status()
+    with pytest.raises(QuantError, match="timezone-aware"):
+        program.cycle(proposals, readiness(policy, tmp_path))
+    assert program.status() == before
+
+
+def test_real_eligible_week_registers_two_new_families_without_creating_strategy_returns(
+    program, policy, tmp_path
+):
+    queue = read_json(ROOT / "config/factor-family-expansion.json")
+    now = pd.Timestamp(queue["eligible_not_before"]).to_pydatetime()
+    result = program.cycle(queue, readiness(policy, tmp_path, now), now=now)
+    state = program.status()
+    assert result["week"] == "2026-W42"
+    assert set(result["new_factors"]) == {row["id"] for row in queue["factors"]}
+    assert state["known_factor_definition_count"] == 6
+    assert state["economic_factor_family_count"] == 6
+    assert state["total_evaluated_configurations"] == 84
+    assert state["candidate_reviews"] == []
+
+
+def additional_family_readiness(policy, root, now, *, queued=True):
+    proof = root / "proof.json"
+    if not proof.exists():
+        write_json(proof, {"synthetic_unit_test_source": True})
+    source_policy = root / "family-policy.json"
+    write_json(source_policy, read_json(ROOT / "config/factor-family-expansion.json"))
+    return {
+        "schema_version": 1,
+        "checked_at": timestamp(now).isoformat(),
+        "data_scope": "factor_etf_portfolio",
+        "verified_etf_source": {
+            "adapter": "additional_factor_families_20261011"
+            if queued
+            else "frozen_multifactor_etf_20261010",
+            "policy": source_policy.name,
+            "policy_sha256": file_digest(source_policy),
+        },
+        "capabilities": {
+            key: {
+                "verified": True,
+                "evidence_path": proof.name,
+                "evidence_sha256": file_digest(proof),
+            }
+            for key in (
+                "factor_mandates",
+                "actual_fund_history",
+                "post_inception_and_actions",
+                "unleveraged_fund_identity",
+            )
+        },
+    }
+
+
+def test_new_etf_adapter_requires_actual_cycle_registration_before_candidate(
+    program, policy, tmp_path, monkeypatch
+):
+    queue = read_json(ROOT / "config/factor-family-expansion.json")
+    now = pd.Timestamp(queue["eligible_not_before"]).to_pydatetime()
+    market, _ = synthetic_market(tmp_path)
+    monkeypatch.setattr("us_quant.research_program.verified_etf_market", lambda *args: market)
+    inputs = additional_family_readiness(policy, tmp_path, now)
+    candidate = candidate_spec(tmp_path)
+    candidate["data_scope"] = "factor_etf_portfolio"
+    candidate["factor_ids"] = [row["id"] for row in policy["seed_factors"]] + [
+        row["id"] for row in queue["factors"]
+    ]
+    before = program.status()
+    with pytest.raises(QuantError, match="unregistered"):
+        program.register_candidate(candidate, inputs, now=now)
+    assert program.status() == before
+    program.cycle(queue, inputs, now=now)
+    registration = program.register_candidate(candidate, inputs, now=now)
+    assert set(registration["families"]) == {
+        "momentum", "value", "earnings_quality", "low_volatility", "size", "share_issuance"
+    }
+    assert program.status()["total_evaluated_configurations"] == 84
+    assert program.status()["pending_candidate_ids"] == [candidate["id"]]
+
+
+def test_same_family_label_cannot_hide_a_definition_different_from_the_audited_fund(
+    program, policy, tmp_path, monkeypatch
+):
+    queue = read_json(ROOT / "config/factor-family-expansion.json")
+    now = pd.Timestamp(queue["eligible_not_before"]).to_pydatetime()
+    market, _ = synthetic_market(tmp_path)
+    monkeypatch.setattr("us_quant.research_program.verified_etf_market", lambda *args: market)
+    inputs = additional_family_readiness(policy, tmp_path, now)
+    altered = deepcopy(queue)
+    altered["factors"][0]["definition"] = "A different, unrelated construction in the same named family."
+    program.cycle(altered, inputs, now=now)
+    candidate = candidate_spec(tmp_path)
+    candidate["data_scope"] = "factor_etf_portfolio"
+    candidate["factor_ids"] = [row["id"] for row in policy["seed_factors"]] + [
+        row["id"] for row in queue["factors"]
+    ]
+    before = program.status()
+    with pytest.raises(QuantError, match="exposure bindings"):
+        program.register_candidate(candidate, inputs, now=now)
+    assert program.status() == before
+
+
+def test_legacy_etf_adapter_still_requires_the_four_original_economic_definitions(
+    program, policy, tmp_path, monkeypatch
+):
+    now = timestamp()
+    market, _ = synthetic_market(tmp_path)
+    monkeypatch.setattr("us_quant.research_program.verified_etf_market", lambda *args: market)
+    inputs = additional_family_readiness(policy, tmp_path, now, queued=False)
+    candidate = candidate_spec(tmp_path)
+    candidate["data_scope"] = "factor_etf_portfolio"
+    before = program.status()
+    with pytest.raises(QuantError, match="fund mandates"):
+        program.register_candidate(candidate, inputs, now=now)
+    assert program.status() == before
+    candidate["factor_ids"] = [row["id"] for row in policy["seed_factors"]]
+    program.register_candidate(candidate, inputs, now=now)
+    assert program.status()["total_evaluated_configurations"] == 84
+
+
 def test_concurrent_cycle_runs_do_not_duplicate_discoveries(program, proposals, policy, tmp_path):
     inputs = readiness(policy, tmp_path)
 

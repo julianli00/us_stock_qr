@@ -1,0 +1,120 @@
+{
+  "additional_sources": [
+    {
+      "current_index_identity_verified": true,
+      "http_status": 200,
+      "kind": "Nasdaq_buyback_index_overview",
+      "source_sha256": "09c64bba5cc4b7c2bda8ebc6e4627c5d2bbc46cf1cf4f8eb8e4e10ab62c94919",
+      "url": "https://indexes.nasdaqomx.com/Index/Overview/DRB"
+    },
+    {
+      "http_status": 403,
+      "kind": "SP_index_methodology",
+      "restriction_bypassed": false,
+      "source_sha256": "0e1371d4226023ded052cd3a1847cfbce72157d4c19796bb0d6de0abfb1c952d",
+      "url": "https://www.spglobal.com/spdji/en/documents/methodologies/methodology-sp-us-indices.pdf",
+      "valid_pdf": false
+    }
+  ],
+  "complete_market_sessions": 2805,
+  "current_issuer_rules_not_historical_continuity_proof": true,
+  "data_scope": "factor_etf_portfolio",
+  "definition_policy": {
+    "path": "config/factor-family-expansion.json",
+    "sha256": "6109980a5f0d1bdb0518b1c7017eef5dde6fd7c6b93c5c4d981d57bb75a08bdf"
+  },
+  "economic_sources_not_claimed_orthogonal_alpha": true,
+  "existing_prospective_archive_includes_these_funds": false,
+  "extended_panel_symbols": [
+    "SPY",
+    "IEF",
+    "GLD",
+    "BIL",
+    "MTUM",
+    "VLUE",
+    "QUAL",
+    "USMV",
+    "IJR",
+    "PKW"
+  ],
+  "factor_queue_counts_not_added_to_live_catalog": true,
+  "fund_sources": [
+    {
+      "actual_acquired_at": "2026-10-10T20:56:30.957631+00:00",
+      "complete_sessions": 2805,
+      "corporate_actions": {
+        "dividend_events": 45,
+        "split_events": 1,
+        "unexplained_adjustment_jumps": 0
+      },
+      "first_session": "2015-08-10",
+      "input_sha256": {
+        "IJR-issuer.html": "5c52331f82cfa03737bfa089526c935463d914509cc3b0592e1563b2ee459e0c",
+        "IJR-raw.json": "d34ac4f5e7236f27f7f1917fd5554d524babcb8f2ad5d3c37722a98c6333b67a",
+        "IJR.csv": "3712504478aa965d78f911e5f998a9046464da53e653577c1aed840de20104c8"
+      },
+      "issuer_definition": {
+        "benchmark": "S&P SmallCap 600 Index",
+        "family": "size",
+        "full_historical_methodology_verified": false,
+        "fund_inception": "2000-05-22",
+        "futures_may_offset_cash_for_tracking": true,
+        "nominal_daily_return_multiple": 1.0,
+        "symbol": "IJR"
+      },
+      "issuer_url": "https://www.ishares.com/us/products/239774/ishares-core-sp-smallcap-etf",
+      "last_session": "2026-10-05",
+      "minimum_volume": 636000.0,
+      "price_url": "https://query2.finance.yahoo.com/v8/finance/chart/IJR?period1=1439164800&period2=1791244800&interval=1d&events=div%2Csplits",
+      "symbol": "IJR"
+    },
+    {
+      "actual_acquired_at": "2026-10-10T20:56:33.443651+00:00",
+      "complete_sessions": 2805,
+      "corporate_actions": {
+        "dividend_events": 44,
+        "split_events": 0,
+        "unexplained_adjustment_jumps": 0
+      },
+      "first_session": "2015-08-10",
+      "input_sha256": {
+        "PKW-issuer.html": "3934f564d2da0e99c0b9865abbf930c4e28d014900e4f091504a04b156bb9c62",
+        "PKW-raw.json": "ad55a26367d49ee1071f59de301aa2ddb1127c43286ee93016d62632dca2495f",
+        "PKW.csv": "05601fb186252c25167a551d950d696a32b0020aff9e15af270f72c3725ea0a9"
+      },
+      "issuer_definition": {
+        "benchmark": "Nasdaq US BuyBack Achievers",
+        "family": "share_issuance",
+        "full_historical_methodology_verified": false,
+        "fund_inception": "2006-12-20",
+        "index_code": "DRB",
+        "lookback_months": 12,
+        "minimum_net_share_reduction": 0.05,
+        "nominal_daily_return_multiple": 1.0,
+        "symbol": "PKW"
+      },
+      "issuer_url": "https://www.invesco.com/us/en/financial-products/etfs/invesco-buyback-achievers-etf.html",
+      "last_session": "2026-10-05",
+      "minimum_volume": 3500.0,
+      "price_url": "https://query2.finance.yahoo.com/v8/finance/chart/PKW?period1=1439164800&period2=1791244800&interval=1d&events=div%2Csplits",
+      "symbol": "PKW"
+    }
+  ],
+  "independent_forward_validation": false,
+  "new_candidate_specifications": 0,
+  "new_completed_strategy_evaluations": 0,
+  "order_authority": false,
+  "queue": {
+    "actual_registration_performed": false,
+    "current_week_two_definition_budget_preserved": true,
+    "eligible_not_before": "2026-10-17T09:00:00+08:00",
+    "planned_week": "2026-W42",
+    "queued_factor_ids": [
+      "size_exposure_ijr_v1",
+      "net_buyback_exposure_pkw_v1"
+    ]
+  },
+  "schema_version": 1,
+  "source_manifest_sha256": "05c7068757f444d94a20338148b21f352346a2301fd29e719859cfd31ca0963b",
+  "verified_at": "2026-10-10T21:06:48.509997+00:00"
+}

@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "study_id": "factor_family_source_expansion_20261011",
+  "data_scope": "factor_etf_portfolio",
+  "data_start": "2015-08-10",
+  "as_of": "2026-10-05",
+  "eligible_not_before": "2026-10-17T09:00:00+08:00",
+  "planned_week": "2026-W42",
+  "new_factor_definitions_in_queue": 2,
+  "new_strategy_configurations": 0,
+  "funds": [
+    {"symbol": "IJR", "factor_id": "size_exposure_ijr_v1", "family": "size"},
+    {"symbol": "PKW", "factor_id": "net_buyback_exposure_pkw_v1", "family": "share_issuance"}
+  ],
+  "factors": [
+    {
+      "id": "size_exposure_ijr_v1",
+      "family": "size",
+      "name": "US small-company equity exposure through IJR",
+      "definition": "Long-only actual IJR fund exposure to the S&P SmallCap600Index,used as a size-family sleeve rather than a recreated academic small-minus-big portfolio.",
+      "direction": "higher",
+      "inputs": ["actual_fund_total_returns", "issuer_mandate", "decision_session"],
+      "parameters": {"symbol": "IJR", "implementation": "actual_ETF_exposure", "nominal_product_multiple": 1.0},
+      "sources": [
+        "https://www.ishares.com/us/products/239774/ishares-core-sp-smallcap-etf",
+        "https://doi.org/10.1016/0304-405X(93)90023-5"
+      ],
+      "rationale": "Company scale is a different economic characteristic from momentum,value,quality and low-volatility; this adds a new family to this research catalog,not a globally new anomaly.",
+      "limitations": "IJR is a long-only small-cap index fund,not zero-cost SMB. Index eligibility and sector exposures can mix size with other characteristics. The S&P methodology request returned403; historical screen continuity and independent alpha are not established. Tracking futures can offset cash,so no claim of a derivatives-free fund."
+    },
+    {
+      "id": "net_buyback_exposure_pkw_v1",
+      "family": "share_issuance",
+      "name": "Net share-reduction exposure through PKW",
+      "definition": "Actual PKW fund exposure to US companies meeting the NasdaqBuyBackAchievers criterion of a net reduction in outstanding shares of5%or more over the trailing12months. Fund returns are the implementation proxy,not recreated stock-level issuance scores.",
+      "direction": "higher",
+      "inputs": ["actual_fund_total_returns", "issuer_mandate", "decision_session"],
+      "parameters": {"symbol": "PKW", "implementation": "actual_ETF_exposure", "nominal_product_multiple": 1.0, "minimum_net_share_reduction": 0.05, "lookback_months": 12},
+      "sources": [
+        "https://www.invesco.com/us/en/financial-products/etfs/invesco-buyback-achievers-etf.html",
+        "https://indexes.nasdaqomx.com/Index/Overview/DRB",
+        "https://doi.org/10.1111/j.1540-6261.2008.01335.x"
+      ],
+      "rationale": "Net equity issuance/repurchase is a financing and capital-return characteristic,not another moving-average parameter. The paper motivates the family but is not an exact replication or a profitability guarantee.",
+      "limitations": "Repurchases may reflect leverage,valuation or market timing and may overlap existing quality/value exposures. The issuer/index describe current rules; a complete historical mandate archive and independent return source are not proven."
+    }
+  ],
+  "source_policy": {
+    "use_actual_post_inception_fund_prices": true,
+    "synthetic_index_history_allowed": false,
+    "current_issuer_definition_not_historical_continuity_proof": true,
+    "source_checked_before_strategy_returns": true,
+    "new_catalog_families_not_claimed_independent_alpha": true
+  },
+  "lifecycle": {
+    "status": "source_verified_definitions_queued_not_registered",
+    "current_week_already_has_two_definitions": true,
+    "do_not_invent_future_cycle_timestamps": true,
+    "weekly_registration_required_before_candidate_evaluation": true,
+    "preserve_existing_minimum_three_family_rule": true,
+    "existing_prospective_archive_includes_IJR_PKW": false
+  },
+  "order_authority": false,
+  "automatic_live_deployment": false
+}

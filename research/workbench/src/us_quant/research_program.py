@@ -206,6 +206,12 @@ def verified_etf_market(readiness: dict, root: Path) -> MarketData:
     from us_quant.multifactor_stability import load_market
 
     source = readiness.get("verified_etf_source", {})
+    if source.get("adapter") == "additional_factor_families_20261011":
+        from us_quant.factor_family_sources import verified_market
+
+        policy = read_json(safe_file(root, source["policy"], source["policy_sha256"]))
+        safe_file(root, source["factor_manifest"], source["factor_manifest_sha256"])
+        return verified_market(policy)
     if source.get("adapter") == "momentum_implementation_20261011":
         from us_quant.momentum_implementation import verified_market
 
@@ -235,6 +241,17 @@ def verified_etf_market(readiness: dict, root: Path) -> MarketData:
     base_manifest = safe_file(root, source["base_manifest"], source["base_manifest_sha256"])
     factor_manifest = safe_file(root, source["factor_manifest"], source["factor_manifest_sha256"])
     return load_market(policy, registration, base_manifest.parent, factor_manifest.parent)
+
+
+def verified_etf_definitions(readiness: dict, root: Path, policy: dict) -> dict:
+    expected = {factor["id"]: factor for factor in policy["seed_factors"]}
+    source = readiness.get("verified_etf_source", {})
+    if source.get("adapter") == "additional_factor_families_20261011":
+        from us_quant.factor_family_sources import definitions
+
+        source_policy = read_json(safe_file(root, source["policy"], source["policy_sha256"]))
+        expected.update(definitions(source_policy))
+    return expected
 
 
 def review_market(bundle: dict, root: Path) -> MarketData:
@@ -610,6 +627,19 @@ class ResearchProgram:
         week = now.astimezone(ZoneInfo(self.policy["timezone"])).strftime("%G-W%V")
         if proposals.get("schema_version") != 1 or not isinstance(proposals.get("factors"), list):
             raise QuantError("Factor discovery requires a versioned proposal list.")
+        if "eligible_not_before" in proposals:
+            try:
+                eligible = pd.Timestamp(proposals["eligible_not_before"])
+            except (TypeError, ValueError) as exc:
+                raise QuantError(
+                    "Queued definitions need a timezone-aware eligibility timestamp."
+                ) from exc
+            if pd.isna(eligible) or eligible.tzinfo is None:
+                raise QuantError("Queued definitions need a timezone-aware eligibility timestamp.")
+            if eligible > pd.Timestamp(now):
+                raise QuantError(
+                    f"Queued factor definitions are not eligible before {eligible.isoformat()}."
+                )
         blockers = readiness_blockers(readiness, self.policy, self.root, now=now)
         factors = proposals["factors"]
         if len(factors) > self.policy["maximum_new_factors_per_cycle"]:
@@ -707,14 +737,15 @@ class ResearchProgram:
             or scope != readiness.get("data_scope", "direct_stock")
         ):
             raise QuantError("Candidate must declare its factors, data limitations and authority.")
-        families = set()
+        families, catalog = set(), {}
         for identifier_factor in spec["factor_ids"]:
             row = self.db.execute(
                 "SELECT body FROM factors WHERE id=?", (identifier_factor,)
             ).fetchone()
             if not row:
                 raise QuantError("Candidate references an unregistered factor.")
-            families.add(json.loads(row["body"])["family"])
+            catalog[identifier_factor] = json.loads(row["body"])
+            families.add(catalog[identifier_factor]["family"])
         if len(families) < self.policy["minimum_economic_factor_families"]:
             raise QuantError(
                 "Multiple versions of one factor do not make a diversified multifactor strategy."
@@ -726,14 +757,17 @@ class ResearchProgram:
         market = review_market({"market": spec.get("market")}, self.root)
         if scope == "factor_etf_portfolio":
             etf_market = verified_etf_market(readiness, self.root)
-            if set(spec["factor_ids"]) != {
-                "price_momentum",
-                "value_exposure",
-                "quality_exposure",
-                "low_volatility_exposure",
-            }:
+            expected = verified_etf_definitions(readiness, self.root, self.policy)
+            if set(spec["factor_ids"]) != set(expected):
                 raise QuantError(
                     "ETF research must identify fund mandates, not missing stock signals."
+                )
+            if any(
+                digest_json(catalog[identifier]) != digest_json(definition)
+                for identifier, definition in expected.items()
+            ):
+                raise QuantError(
+                    "The catalog definitions do not match the audited ETF exposure bindings."
                 )
             for name in ("open", "close", "raw_close", "volume"):
                 actual, verified = getattr(market, name), getattr(etf_market, name)

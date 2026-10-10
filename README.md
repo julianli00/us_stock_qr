@@ -1539,6 +1539,50 @@ to its frozen 22-candidate cohort, not the two new credit candidates.
 The original prospective archive stays unchanged, with zero new
 observations and no Baa/credit-strategy forward-performance proof.
 
+### Audited additional ETF families and a future-cycle queue
+
+`config/factor-family-expansion.json` prepares two **new-to-this-catalog**
+economic families: small-company exposure through actual IJR and net-share
+reduction exposure through actual PKW. This is not a claim to discover
+globally new anomalies or independently profitable factor returns.
+The issuer confirms PKW's trailing-twelve-month net-share reduction
+threshold of at least 5%; IJR tracks the S&P SmallCap 600, not academic
+zero-cost SMB. IJR can use futures to offset cash for tracking, so it is
+not described as derivatives-free.
+
+Both actual fund panels cover the unchanged 2,805-session interval.
+The [source preparation audit](research/workbench/evidence/factor_family_source_expansion_20261011.json)
+preserves the actual issuer snapshots, acquisition times, positive volumes
+and company-action checks for both funds.
+The S&P methodology request returned 403; it is not bypassed or reported
+as verified. Current issuer definitions do not prove historical screen
+continuity. Raw current holdings, back-tested index returns and recreated
+stock-level scores are not used as fund-price substitutes.
+
+The factor-ETF registration path now accepts the complete definitions
+bound by an explicitly audited source adapter, rather than always forcing
+the same four fixed labels. Catalog bodies must match the audited
+definitions, not just similarly named families. Legacy adapters retain
+the original four definitions; unknown adapters and mislabeled direct-stock
+signals still fail closed. Minimum three economic families, leverage,
+capital, costs and performance objectives are unchanged.
+
+```bash
+cd research/workbench
+.venv/bin/python -I -B -m us_quant.factor_family_sources
+```
+
+Preparation creates source-verified panels, not strategy results or new
+candidate registrations. The two definitions are queued with an explicit
+**not-before October 17, 2026 at 09:00 Asia/Shanghai** constraint. This week's
+two-definition allowance has already been used. `cycle` rejects a premature
+queue rather than inventing a future timestamp or silently bypassing the
+weekly limit. Existing factor counts and all 108 completed configurations
+remain unchanged until a real eligible cycle occurs.
+
+The current prospective archive does not yet include IJR or PKW; no
+independent new-family strategy performance is claimed.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
