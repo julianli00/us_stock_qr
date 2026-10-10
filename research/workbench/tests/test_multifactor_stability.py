@@ -9,7 +9,7 @@ import pandas as pd
 import pytest
 import requests
 
-from us_quant.calendar import is_month_end
+from us_quant.calendar import is_month_end, sessions
 from us_quant.config import QuantError
 from us_quant.multifactor_stability import (
     BASE,
@@ -27,6 +27,7 @@ from us_quant.multifactor_stability import (
     register,
     target_weights,
     validate_policy,
+    verify_quality_revision,
     verify_registration,
 )
 from us_quant.storage import digest_json, read_json, write_json
@@ -88,9 +89,18 @@ def test_risk_limit_and_fund_inception_cannot_be_relaxed(policy):
     policy["goals"]["max_drawdown_at_most"] = 0.25
     with pytest.raises(QuantError):
         validate_policy(policy)
-    original["factors"][2]["inception"] = "2015-01-01"
+    original["factors"][2]["inception"] = "2016-01-01"
     with pytest.raises(QuantError):
         validate_policy(original)
+
+
+def test_data_quality_revision_preserves_formal_windows_and_does_not_forge_volume(policy):
+    verify_quality_revision(policy)
+    assert len(sessions(policy["data_start"], "2016-09-30")) >= 253
+    assert policy["as_of"] == "2026-10-05"
+    policy["data_quality_revision"]["candidate_returns_seen_before_revision"] = True
+    with pytest.raises(QuantError, match="data-driven"):
+        verify_quality_revision(policy)
 
 
 @pytest.mark.parametrize(

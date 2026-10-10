@@ -60,7 +60,7 @@ def validate_policy(policy: dict) -> None:
         policy.get("schema_version") != 1
         or policy.get("prior_disclosed_configurations") != 78
         or policy.get("new_configurations") != 6
-        or policy.get("data_start") != "2014-01-02"
+        or policy.get("data_start") != "2015-08-10"
         or policy.get("as_of") != "2026-10-05"
         or policy.get("capital_usd") != 10000
         or policy.get("cash_reserve") != 0.02
@@ -183,10 +183,42 @@ def prior_evidence(policy: dict) -> dict:
     return read_json(path)
 
 
+def verify_quality_revision(policy: dict) -> None:
+    revision = policy["data_quality_revision"]
+    records = {}
+    for key in ("prior_registration", "audit"):
+        path = ROOT / revision[key]
+        if (
+            path.is_symlink()
+            or not path.resolve().is_relative_to(ROOT)
+            or file_digest(path) != revision[f"{key}_sha256"]
+        ):
+            raise QuantError("The original registration or warmup data-quality evidence changed.")
+        records[key] = read_json(path)
+    bad_dates = [date for record in records["audit"]["records"] for date in record["bad_dates"]]
+    if (
+        not bad_dates
+        or str(next_session(max(bad_dates)).date()) != policy["data_start"]
+        or records["prior_registration"]["candidate_ids"]
+        != [candidate["id"] for candidate in policy["candidates"]]
+        or records["audit"].get("candidate_returns_computed") is not False
+        or any(
+            revision.get(key) is not False
+            for key in (
+                "candidate_returns_seen_before_revision",
+                "candidate_rules_changed",
+                "formal_evaluation_windows_changed",
+            )
+        )
+    ):
+        raise QuantError("The warmup revision must be data-driven, not a performance selection.")
+
+
 def register(policy: dict, base_path: Path, output: Path) -> dict:
     validate_policy(policy)
     if output.exists():
         raise QuantError("Refusing to overwrite a multifactor preregistration.")
+    verify_quality_revision(policy)
     prior_evidence(policy)
     comparison = load_protocol(ROOT / "config/dual-horizon.json")
     descriptor = snapshot_descriptor(base_path, set(comparison.symbols) | {"IRX"}, comparison)
@@ -203,6 +235,7 @@ def register(policy: dict, base_path: Path, output: Path) -> dict:
         "base_source": descriptor,
         "candidate_ids": [item["id"] for item in policy["candidates"]],
         "factor_symbols": list(FACTORS),
+        "data_quality_revision": policy["data_quality_revision"],
         "prior_disclosed_configurations": 78,
         "new_configurations": 6,
         "total_disclosed_configurations": 84,
@@ -216,6 +249,7 @@ def register(policy: dict, base_path: Path, output: Path) -> dict:
 
 def verify_registration(policy: dict, record: dict) -> None:
     validate_policy(policy)
+    verify_quality_revision(policy)
     comparison = load_protocol(ROOT / "config/dual-horizon.json")
     if (
         record.get("round_id") != policy["round_id"]
@@ -224,6 +258,7 @@ def verify_registration(policy: dict, record: dict) -> None:
         or record.get("windows") != comparison.windows()
         or record.get("candidate_ids") != [item["id"] for item in policy["candidates"]]
         or record.get("factor_symbols") != list(FACTORS)
+        or record.get("data_quality_revision") != policy["data_quality_revision"]
         or record.get("total_disclosed_configurations") != 84
         or record.get("history_previously_exposed") is not True
         or record.get("order_authority") is not False
@@ -722,6 +757,7 @@ def evaluate(policy: dict, registration: dict, base_path: Path, source: Path, ou
             "Four economic labels do not imply independent holdings, returns or alpha.",
             "Actual fund returns embed historical constituent and methodology changes.",
             "Factor prices and preserved benchmark history have different retrieval vintages.",
+            "Warmup begins after27 early flat zero-volume bars; rolling10y coverage is limited.",
             "Known historical windows overlap; no new independent forward observations.",
             "Monthly volatility targeting cannot guarantee a drawdown or intraday loss ceiling.",
             "Bonds/gold may fall together with equities; fund expenses are already in prices.",
@@ -905,7 +941,7 @@ def main() -> None:
     parser.add_argument(
         "--registration",
         type=Path,
-        default=Path("evidence/multifactor_stability_20261010_registration.json"),
+        default=Path("evidence/multifactor_stability_20261010_registration_v2.json"),
     )
     parser.add_argument("--base-data", type=Path, default=Path("data/factor-round-20261007/base"))
     parser.add_argument("--data", type=Path, default=Path("data/multifactor-stability-20261010"))

@@ -320,9 +320,7 @@ cost assumptions, or treating the reused history as independent evidence.
 There is no automatic baseline replacement, paper order or persistent
 research/notification automation created by this round.
 
-## Progress and publication
-
-### Unleveraged multifactor stability research
+## Unleveraged multifactor stability research
 
 The October 10 request prioritizes genuine multifactor exposure and lower
 risk. The new research lane uses four actual, unleveraged US equity factor
@@ -367,12 +365,23 @@ new ones, for 84 total. From `research/workbench`:
 .venv/bin/python -I -B -m us_quant.multifactor_stability evaluate
 ```
 
-The new factor history starts in 2014, after all four funds were launched.
+The initial 2014 warmup request was rejected before any candidate evaluation:
+VLUE contains 27 flat zero-volume bars, the last on August 7, 2015. The
+[quality audit](research/workbench/evidence/multifactor_data_quality_20261010.json)
+and original registration remain preserved. Registration v2 starts all series
+on August 10, 2015, the next real session, without inventing volume or changing
+any candidate rule or either formal return window. There are still 290
+sessions through the last pre-evaluation month end, enough for the registered
+252-session warmup. Available rolling ten-year windows are consequently few;
+this reduced diagnostic coverage must not be concealed.
+
 The common comparison endpoint remains October 5, 2026. Original benchmark,
 defensive-asset and risk-free snapshot hashes are preserved; the different
 factor-fund download vintage is explicitly recorded. Raw prices and issuer
 documents remain ignored local inputs. No old strategy is overwritten and
 no trading, notification or persistent automation is activated.
+
+## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
 [`docs/research_progress.json`](docs/research_progress.json). GitHub progress
