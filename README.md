@@ -1269,6 +1269,10 @@ checkpoint there are **103 complete configurations, 19 completed reviews,
 one pending candidate, and two separately indexed invalid strategy-code
 versions**. The accounting incident is neither a third invalid strategy
 definition nor an additional performance trial.
+The [accounting-version registration](research/workbench/evidence/cash_funded_accounting_v2_registration.json)
+pins the corrective source hash before a new replay; exact migration
+preserved the original policy, candidate definitions, all 19 reviews and
+both indexed strategy-code failures.
 
 ## Progress and publication
 
