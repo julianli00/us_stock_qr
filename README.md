@@ -1197,7 +1197,7 @@ USD538.12, with lower Sharpe. Dollar turnover is independently reconstructed
 from opening holdings/cash and checked against transaction charges; it is
 not the dimensionless sum of the ledger's turnover ratios.
 
-The [current snapshot](research/workbench/evidence/research_program_2026-W41_results_v18.json)
+The [factor-momentum snapshot](research/workbench/evidence/research_program_2026-W41_results_v18.json)
 retains **102 complete configurations, 18 recurring reviews, two separate
 technical failures, no pending candidates and no qualified champion**.
 The [read-only re-audit](research/workbench/evidence/research_program_source_bound_audit_v3.json)
@@ -1273,6 +1273,43 @@ The [accounting-version registration](research/workbench/evidence/cash_funded_ac
 pins the corrective source hash before a new replay; exact migration
 preserved the original policy, candidate definitions, all 19 reviews and
 both indexed strategy-code failures.
+
+The [corrected component replay](research/workbench/evidence/trend_guard_accounting_recovery_v2.json)
+now agrees with independent `bt` within USD1.06e-10 on all four account
+paths. Every target CSV hash is identical to the interrupted attempt;
+parameters, data, costs, delay and audit tolerance did not change. The
+original failed bundle is retained. The completed
+[two-candidate results](research/workbench/evidence/trend_factor_guard_20261011_results.json)
+reject both risk gates:
+
+| Risk gate | Ten-year base/stress Sharpe | Five-year base/stress Sharpe | Ten/five-year base drawdown |
+|---|---|---|---|
+| Joint portfolio | 0.8878 / 0.7518 | 0.9076 / 0.7933 | 13.18% / 11.76% |
+| Separate equity/gold | 0.6813 / 0.4131 | 0.7175 / 0.4168 | 15.78% / 14.69% |
+
+The joint gate's base drawdown improves, but stress drawdowns are
+15.26%/15.63% and neither horizon beats SPY's net CAGR. Component stress
+drawdowns reach 21.61%/21.11%.
+The [existing-control attribution](research/workbench/evidence/trend_factor_guard_20261011_attribution.json)
+shows lower net CAGR and Sharpe versus the ungated core in every comparison.
+Daily gate changes increase order tickets and charged turnover: component
+five-year stress pays USD2,153.83 across 615 tickets. Risk reduction and
+whipsaw costs are not new factor alpha or a guaranteed risk ceiling.
+
+The [latest ledger snapshot](research/workbench/evidence/research_program_2026-W41_results_v22.json)
+retains **104 complete configurations, 20 completed reviews, two terminal
+strategy-code failures, one separately preserved/resolved accounting
+incident, no pending candidates and no qualified research champion**.
+The [80-path mixed-version audit](research/workbench/evidence/research_program_source_bound_audit_v4.json)
+preserves every old conclusion: 19 reviews use the original engine and the
+corrected component review uses its frozen version-two reference. Do not
+retune these windows or gate thresholds merely to cross one on this sample.
+
+The [updated automation receipt](research/workbench/evidence/prospective_data_automation_v2.json)
+keeps daily data acquisition and Saturday factor exploration unchanged,
+while requiring explicit new-accounting references and preserved failure
+evidence. No future scheduled execution is claimed. Duplicate collection
+again leaves one October 9 baseline and zero post-baseline observations.
 
 ## Progress and publication
 
