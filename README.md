@@ -678,6 +678,36 @@ The source-rejected SPMO plans are separately disclosed but are not counted as
 completed strategy evaluations. There is still no qualified research champion,
 live deployment or new independent forward evidence.
 
+### Causal adaptive factor-combination comparison
+
+The next two fixed hypotheses use the original verified four factor funds
+plus GLD and BIL. One control keeps 70% of the invested budget in equal factor
+equities and 30% in gold. The adaptive method estimates trailing excess means
+with a fixed exponential half-life, shrinks the mean/covariance estimates and
+solves a constrained mean-variance problem with an explicit turnover penalty.
+It updates only at completed month ends from already observed data.
+
+The protocol is `research/workbench/config/adaptive-factor-allocation.json`.
+Every factor fund retains at least 2.5% and at most 25% of total capital;
+gold is capped at 50%, total investment at 98%, and no leverage is allowed.
+All estimation windows, bounds and penalties are fixed before results.
+The implementation uses an epigraph for the absolute turnover cost and
+checks solver success and final bounds; it does not return equal weights
+as a hidden fallback on optimization failure.
+This is adaptive allocation of existing exposures, not new economic-factor
+discovery and not a replication of Bayesian Dynamic Model Averaging.
+
+```bash
+.venv/bin/python -I -B -m us_quant.adaptive_factor_allocation prepare
+.venv/bin/python -I -B -m us_quant.adaptive_factor_allocation register
+.venv/bin/python -I -B -m us_quant.adaptive_factor_allocation evaluate
+```
+
+Both configurations must be registered in the recurring program before
+evaluation and meet its unchanged actual-cost, independent-accounting and
+dual-horizon performance gates. No historical data is relabeled as a new
+independent holdout.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
