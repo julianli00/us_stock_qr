@@ -381,6 +381,45 @@ factor-fund download vintage is explicitly recorded. Raw prices and issuer
 documents remain ignored local inputs. No old strategy is overwritten and
 no trading, notification or persistent automation is activated.
 
+The [six complete multifactor results](research/workbench/evidence/multifactor_stability_20261010_results.json)
+contain 77 independently accounted paths. Two defense variants satisfy the
+registered stability criteria, but **none satisfies the unchanged Sharpe/SPY
+return goals**, and none qualifies for a full strategy upgrade.
+The lowest worst-drawdown candidate selected by the frozen rule is
+`four_factor_bounded_defense_vol10`:
+
+| Window / base costs | Net CAGR | Excess Sharpe | Maximum drawdown | Annual volatility |
+| --- | ---: | ---: | ---: | ---: |
+| Ten years, prior QLD-containing comparison | 20.37% | 1.1870 | 19.97% | 14.48% |
+| Ten years, unleveraged four-factor defense | 6.90% | 0.6063 | 13.93% | 7.42% |
+| Five years, prior QLD-containing comparison | 22.14% | 1.1045 | 20.06% | 15.86% |
+| Five years, unleveraged four-factor defense | 7.04% | 0.4374 | 13.05% | 7.46% |
+
+This is a lower-risk research prototype, **not a recommendation to replace
+the old strategy**. Its defensive assets, lower equity exposure and absence
+of embedded leverage matter materially. The all-equity four-factor control
+still suffers 34.38% ten-year maximum drawdown. The four factor funds'
+ten-year daily-return correlations range from 0.736 to 0.894; their covariance
+effective dimension is about 1.31, not four independent return sources.
+These diagnostics do not measure historical constituent-level overlap.
+There are only two complete rolling ten-year endpoints and 62 five-year
+endpoints; overlapping windows are not independent confirmations.
+
+A separately frozen
+[attribution plan](research/workbench/evidence/multifactor_attribution_20261010_plan.json)
+audits all original paths and replaces the four factor funds with SPY at
+exactly the same aggregate equity target, preserving IEF/GLD/BIL allocations,
+decision dates and costs. It includes both stability-qualified candidates,
+not just the most favorable one:
+
+```bash
+.venv/bin/python -I -B -m us_quant.multifactor_attribution evaluate
+```
+
+This is an equity-budget ablation, not equal-risk matching or an independent
+SPY timing strategy. It distinguishes the contribution of factor fund
+selection from simply reducing stock exposure; no candidate is retuned.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

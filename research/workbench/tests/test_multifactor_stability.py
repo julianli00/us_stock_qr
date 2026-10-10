@@ -11,6 +11,7 @@ import requests
 
 from us_quant.calendar import is_month_end, sessions
 from us_quant.config import QuantError
+from us_quant.multifactor_attribution import spy_budget_ablation
 from us_quant.multifactor_stability import (
     BASE,
     FACTORS,
@@ -331,3 +332,29 @@ def test_load_refuses_a_relabelled_market_snapshot(policy, registration, tmp_pat
     )
     with pytest.raises(QuantError, match="snapshot"):
         load_market(policy, registration, tmp_path, source)
+
+
+def test_attribution_preserves_observation_dates_total_equity_and_defensive_weights(market, policy):
+    original = build_targets(market, policy)["four_factor_bounded_defense_vol10"]
+    control = spy_budget_ablation(original)
+    assert control.index.equals(original.index)
+    assert control.isna().all(axis=1).equals(original.isna().all(axis=1))
+    known = original.dropna(how="all").index
+    np.testing.assert_allclose(
+        control.loc[known, "SPY"], original.loc[known, list(FACTORS)].sum(axis=1)
+    )
+    assert control.loc[known, list(FACTORS)].eq(0).all().all()
+    pd.testing.assert_frame_equal(control[["BIL", "IEF", "GLD"]], original[["BIL", "IEF", "GLD"]])
+    np.testing.assert_allclose(control.loc[known].sum(axis=1), original.loc[known].sum(axis=1))
+    invalid = original.copy()
+    invalid.loc[known[0], "SPY"] = 0.1
+    with pytest.raises(QuantError):
+        spy_budget_ablation(invalid)
+
+
+def test_attribution_does_not_fill_missing_target_rows(market, policy):
+    original = build_targets(market, policy)["four_factor_balanced"]
+    day = original.dropna(how="all").index[0]
+    original.loc[day, "MTUM"] = np.nan
+    with pytest.raises(QuantError, match="partially"):
+        spy_budget_ablation(original)

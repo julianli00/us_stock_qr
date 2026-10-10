@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-10",
-  "phase": "unleveraged_multifactor_stability_preregistered",
+  "phase": "multifactor_risk_improved_return_goals_unmet",
   "completed": [
     "Preserved runnable incumbent strategy/engine and early-scanner source alongside the isolated 52-configuration workbench.",
     "Verified 50 target integration tests and 357 isolated workbench tests; original strategy functions and synthetic weight matrices match.",
@@ -16,7 +16,9 @@
     "Volatility controls reduce some drawdowns to about18% but increase turnover and fail five-year stress. The incumbent, prior results and old paused forward ledgers remain unchanged.",
     "For the user's lower-risk request, preregistered six unleveraged portfolios using actual momentum/value/quality/low-volatility ETFs;84 total configurations, no results yet for the new lane.",
     "An explicit pre-result data-quality revision excludes27 early zero-volume VLUE warmup bars; formal10y/5y windows and all candidate rules stay unchanged, with reduced rolling-window coverage disclosed.",
-    "Verified2805 complete actual sessions for all four factor ETFs, including corporate-action checks and issuer-source hashes; the benchmark/defensive/risk-free source remains unchanged."
+    "Verified2805 complete actual sessions for all four factor ETFs, including corporate-action checks and issuer-source hashes; the benchmark/defensive/risk-free source remains unchanged.",
+    "All six unleveraged multifactor portfolios evaluated over77 independently accounted paths: two meet stability criteria, none meets the unchanged Sharpe/SPY return goals;84 configurations remain disclosed.",
+    "Selected low-risk prototype has10y/5y drawdown13.93%/13.05% but CAGR6.90%/7.04% and Sharpe0.6063/0.4374. Four-factor equity alone still has34.38%drawdown; factor daily correlations0.736-0.894."
   ],
   "completed_zh": [
     "已保留可运行的原Top30算法、成本引擎和独立早期扫描器，并隔离导入52配置研究工作台。",
@@ -32,10 +34,12 @@
     "波动率控制把部分回撤降至约18%，但增加换手并未通过五年压力门槛；原策略、历史结果和暂停前瞻记录保持不变。",
     "针对降低风险的要求，已预注册6个无杠杆动量/价值/质量/低波动ETF组合，累计登记84个；新研究尚未出结果，不混称个股基本面选股。",
     "业绩计算前发现VLUE早期27条零成交量记录，已保留证据并修订预热起点；正式双窗口及策略不变，滚动覆盖减少如实披露。",
-    "四类因子ETF各2805个真实交易日已通过价格、公司行动及来源哈希核对；原基准、防御资产和无风险数据未变。"
+    "四类因子ETF各2805个真实交易日已通过价格、公司行动及来源哈希核对；原基准、防御资产和无风险数据未变。",
+    "6个无杠杆多因子组合已完成77条独立记账路径，2个达到稳定性门槛，0个达到原Sharpe/SPY目标；累计84个配置全部保留。",
+    "低风险原型十年/五年回撤降至13.93%/13.05%，但年化仅6.90%/7.04%、Sharpe仅0.6063/0.4374；纯四因子股票组合回撤仍34.38%，相关性0.736-0.894。"
   ],
   "next": [
-    "Obtain provenance-checked factor ETF history and evaluate true dependence,15%drawdown, lower volatility, and unchanged Sharpe/SPY goals without declaring correlated funds independent.",
+    "Independently audit all multifactor paths and the frozen same-equity-budget SPY ablation; do not equate cash/defense-driven risk reduction with factor alpha.",
     "Seek verifiable historical execution or publication-time fundamental data for new hypotheses; do not retune the near-threshold band on the same exposed history.",
     "Keep candidate rules frozen and obtain genuinely new timestamped forward observations before any trading promotion; do not backfill or restart paused ledgers implicitly.",
     "Retain higher-cost and rolling-window failures as open robustness limitations, not hidden exceptions or reasons to rewrite frozen evidence.",
@@ -44,7 +48,7 @@
     "Preregister bounded hypotheses and preserve failures and the paused forward record."
   ],
   "next_zh": [
-    "核验新因子ETF历史并评估相关性、15%回撤及波动改善；Sharpe与SPY目标不放宽，不把四只相关基金称为四份独立收益。",
+    "独立复算多因子路径与预先固定的同股票预算SPY归因对照；不把减仓和防御带来的低回撤当作因子alpha。",
     "下一类假设先补可核实的历史执行数据或带披露时间的基本面证据，不在同一已见历史上微调接近门槛的交易带。",
     "保持候选规则冻结；交易升级前需要真实新增、可证明时点的前瞻观察，不补造数据或隐式重启暂停记录。",
     "保留更高成本及滚动窗口失败作为未解决的稳健性限制，不隐藏例外或重写冻结证据。",
@@ -128,7 +132,7 @@
   },
   "multifactor_stability": {
     "round_id": "multifactor_stability_20261010",
-    "state": "prices_verified_ready_for_frozen_evaluation",
+    "state": "stability_improved_return_goals_unmet_attribution_pending",
     "implementation_type": "multi_factor_etf_sleeve_portfolio_not_direct_stock_scoring",
     "factor_sleeves": ["momentum", "value", "quality", "low_volatility"],
     "leveraged_products_allowed": false,
@@ -138,6 +142,14 @@
     "original_registration": "research/workbench/evidence/multifactor_stability_20261010_registration.json",
     "data_quality_audit": "research/workbench/evidence/multifactor_data_quality_20261010.json",
     "market_manifest": "research/workbench/evidence/multifactor_stability_20261010_market.json",
+    "results": "research/workbench/evidence/multifactor_stability_20261010_results.json",
+    "stability_qualified_count": 2,
+    "return_goal_qualified_count": 0,
+    "full_goal_qualified_count": 0,
+    "selected_stability_research_candidate": "four_factor_bounded_defense_vol10",
+    "selected_candidate_is_live_recommendation": false,
+    "independent_accounting_paths": 77,
+    "attribution_plan": "research/workbench/evidence/multifactor_attribution_20261010_plan.json",
     "data_end": "2026-10-05",
     "independent_forward_validation": false,
     "automatic_baseline_replacement": false,
