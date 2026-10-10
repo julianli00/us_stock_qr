@@ -1144,6 +1144,38 @@ regenerated all 64 paths for those 16 completed reviews and confirmed every
 recorded metric/gate without changing the ledger. The two technical failures
 remain outside the completed-performance count.
 
+### Matched-budget total versus residual factor momentum
+
+`config/factor-momentum-comparison.json` freezes two bounded allocation
+hypotheses after the 100 completed configurations: total-return momentum
+versus SPY-regression residual momentum in the same four actual factor ETFs.
+Both inherit identical equity/gold totals from the unchanged monthly
+factor/gold baseline, and rank funds into fixed 35/30/20/15% equity-sleeve
+shares. All four economic exposures remain held; beta removal in the score
+does not create a beta hedge in the long-only portfolio.
+
+The unchanged original `factor_scores` helper fits trailing 252-session
+daily excess returns and scores the last 126 sessions excluding the latest
+21. This shorter ETF adaptation fits the available pre-account history
+without moving either formal return window. It is not a stock-level
+multifactor or academic long-short replication, and does not add an
+independent factor definition. Source metadata verifies Ehsani and
+Linnainmaa's journal article as **2022, DOI `10.1111/jofi.13131`**, distinct
+from their 2019 [NBER working paper](https://www.nber.org/papers/w25551).
+The residual-momentum motivation is the
+[2011 Blitz/Huij/Martens article](https://repub.eur.nl/pub/22252/).
+
+```bash
+cd research/workbench
+.venv/bin/python -I -B -m us_quant.factor_momentum_comparison
+```
+
+Preparation revalidates existing provider snapshots and reuses their hashed
+panels; it computes no strategy returns. Freeze and register both
+specifications before using the generic source-bound evaluator. Preserve
+all outcomes, the identical budgets, costs and retained qualification gates.
+The previously exposed history is not an independent holdout.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

@@ -18,6 +18,7 @@ GENERATORS = {
     "defensive_factor_rotation": "config/defensive-factor-rotation.json",
     "growth_factor_satellite": "config/growth-factor-satellite.json",
     "conditional_factor_model": "config/conditional-factor-model.json",
+    "factor_momentum_comparison": "config/factor-momentum-comparison.json",
 }
 
 
@@ -41,7 +42,16 @@ def registered_generator(spec: dict, root: Path) -> tuple[str, dict]:
         source = f"src/us_quant/{name}.py"
         if source not in frozen or policy_path not in frozen:
             continue
-        for relative in (source, policy_path):
+        required = [source, policy_path]
+        if name == "factor_momentum_comparison":
+            required += [
+                "src/us_quant/factor_gold_risk.py",
+                "config/factor-gold-risk.json",
+                "src/us_quant/factor_research.py",
+            ]
+        if any(relative not in frozen for relative in required):
+            raise QuantError("The registered strategy is missing a frozen helper dependency.")
+        for relative in required:
             path = root / relative
             if (
                 path.is_symlink()
@@ -119,6 +129,10 @@ def registered_targets(
             cache[key] = build_targets(data, policy)[spec["id"]]
         elif name == "conditional_factor_model":
             from us_quant.conditional_factor_model import build_targets
+
+            cache[key] = build_targets(data, policy)[spec["id"]]
+        elif name == "factor_momentum_comparison":
+            from us_quant.factor_momentum_comparison import build_targets
 
             cache[key] = build_targets(data, policy)[spec["id"]]
     return seed_window(cache[key], start)
