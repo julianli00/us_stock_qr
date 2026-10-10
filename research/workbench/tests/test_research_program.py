@@ -516,6 +516,89 @@ def test_generic_evaluator_uses_registered_generator_and_reviews_without_duplica
     assert program.status() == before
 
 
+def numeric_failure_evidence(tmp_path, spec, registration):
+    path = tmp_path / "numeric-failure.json"
+    write_json(
+        path,
+        {
+            "stage": "target_validation_before_completed_strategy_accounting",
+            "source_sha256": next(iter(spec["frozen_files"].values())),
+            "strategy_return_outcomes_computed": False,
+            "order_authority": False,
+            "records": [
+                {
+                    "candidate_id": spec["id"],
+                    "candidate_spec_sha256": registration["spec_sha256"],
+                    "minimum_weight": -1.1102230246251565e-16,
+                    "negative_rows": 1,
+                    "negative_assets": ["BIL"],
+                    "maximum_target_sum": 0.98,
+                    "performance_review_exists": False,
+                }
+            ],
+        },
+    )
+    return path
+
+
+def test_technical_rejection_preserves_registered_attempt_without_counting_performance(
+    program, policy, tmp_path
+):
+    spec = candidate_spec(tmp_path)
+    record = program.register_candidate(spec, readiness(policy, tmp_path, ready=True))
+    evidence = numeric_failure_evidence(tmp_path, spec, record)
+    failure = program.record_numeric_failure(spec["id"], evidence)
+    state = program.status()
+    assert failure["new_strategy_evaluations"] == 0
+    assert state["technical_rejected_code_versions"] == 1
+    assert state["pending_candidate_ids"] == []
+    assert state["total_evaluated_configurations"] == 84
+    assert (
+        program.evaluate_registered(spec["id"], Path("reports/technical"))["evaluation_action"]
+        == "technically_rejected"
+    )
+    assert program.record_numeric_failure(spec["id"], evidence) == failure
+    assert program.status() == state
+    corrected = candidate_spec(tmp_path, identifier="test_multifactor_v2")
+    corrected["supersedes_candidate"] = spec["id"]
+    program.register_candidate(corrected, readiness(policy, tmp_path, ready=True))
+    assert program.status()["pending_candidate_ids"] == ["test_multifactor_v2"]
+
+
+def test_technical_rejection_cannot_erase_a_completed_review(
+    program, policy, tmp_path, registered_generator
+):
+    spec = candidate_spec(tmp_path)
+    record = program.register_candidate(spec, readiness(policy, tmp_path, ready=True))
+    program.review(spec["id"], make_bundle(tmp_path, record))
+    before = program.status()
+    with pytest.raises(QuantError, match="unreviewed"):
+        program.record_numeric_failure(spec["id"], numeric_failure_evidence(tmp_path, spec, record))
+    assert program.status() == before
+
+
+def test_large_negative_weight_cannot_be_relabelled_as_roundoff(program, policy, tmp_path):
+    spec = candidate_spec(tmp_path)
+    record = program.register_candidate(spec, readiness(policy, tmp_path, ready=True))
+    path = numeric_failure_evidence(tmp_path, spec, record)
+    evidence = read_json(path)
+    evidence["records"][0]["minimum_weight"] = -0.01
+    write_json(path, evidence)
+    with pytest.raises(QuantError, match="tiny-negative"):
+        program.record_numeric_failure(spec["id"], path)
+    assert program.status()["technical_rejected_code_versions"] == 0
+
+
+def test_deleting_terminal_technical_failure_event_is_detected(program, policy, tmp_path):
+    spec = candidate_spec(tmp_path)
+    record = program.register_candidate(spec, readiness(policy, tmp_path, ready=True))
+    program.record_numeric_failure(spec["id"], numeric_failure_evidence(tmp_path, spec, record))
+    with program.db:
+        program.db.execute("DELETE FROM events WHERE kind='technical_failure'")
+    with pytest.raises(QuantError, match="Technical failure history"):
+        program.status()
+
+
 def test_engine_migration_preserves_history_and_requires_exact_anchors(policy, tmp_path, proposals):
     path = tmp_path / "migrate.sqlite3"
     old = ResearchProgram(path, policy, root=tmp_path, create=True)

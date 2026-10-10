@@ -313,6 +313,9 @@ class ResearchProgram:
                         candidate_id TEXT PRIMARY KEY, at TEXT NOT NULL,
                         evidence_sha TEXT NOT NULL, body TEXT NOT NULL
                     );
+                    CREATE TABLE technical_failures (
+                        candidate_id TEXT PRIMARY KEY, at TEXT NOT NULL, body TEXT NOT NULL
+                    );
                 """)
                 now = timestamp()
                 self.db.execute(
@@ -360,6 +363,10 @@ class ResearchProgram:
                         raise QuantError(
                             "Engine migration preconditions changed; no ledger reset allowed."
                         )
+                    self.db.execute(
+                        "CREATE TABLE IF NOT EXISTS technical_failures "
+                        "(candidate_id TEXT PRIMARY KEY, at TEXT NOT NULL, body TEXT NOT NULL)"
+                    )
                     self._event(
                         "engine_migrated",
                         {
@@ -416,7 +423,7 @@ class ResearchProgram:
                 "Research policy/engine changed; preserve the ledger and review migration."
             )
         previous = "0" * 64
-        bodies = {"cycle": {}, "candidate": {}, "review": {}}
+        bodies = {"cycle": {}, "candidate": {}, "review": {}, "technical_failure": {}}
         factor_records = {}
         for event in self.db.execute("SELECT * FROM events ORDER BY seq"):
             body = json.loads(event["body"])
@@ -433,6 +440,8 @@ class ResearchProgram:
                 factor_records.update(body.get("factor_records", {}))
             if event["kind"] in bodies:
                 key = body["week"] if event["kind"] == "cycle" else body["candidate_id"]
+                if key in bodies[event["kind"]]:
+                    raise QuantError("A terminal research lifecycle event was duplicated.")
                 bodies[event["kind"]][key] = body
         for row in self.db.execute("SELECT * FROM factors"):
             factor = json.loads(row["body"])
@@ -468,6 +477,117 @@ class ResearchProgram:
             raise QuantError("A recorded review was removed from the research history.")
         if self.db.execute("SELECT COUNT(*) FROM cycles").fetchone()[0] != len(bodies["cycle"]):
             raise QuantError("A completed research cycle was removed.")
+        for candidate_id, failure in bodies["technical_failure"].items():
+            candidate = self.db.execute(
+                "SELECT spec_sha FROM candidates WHERE id=?", (candidate_id,)
+            ).fetchone()
+            if (
+                candidate is None
+                or candidate["spec_sha"] != failure["candidate_spec_sha256"]
+                or candidate_id in bodies["review"]
+                or failure.get("new_strategy_evaluations") != 0
+                or failure.get("order_authority") is not False
+            ):
+                raise QuantError("A technical rejection contradicts registered research history.")
+            safe_file(self.root, failure["evidence_path"], failure["evidence_sha256"])
+        has_failures = self.db.execute(
+            "SELECT 1 FROM sqlite_master WHERE type='table' AND name='technical_failures'"
+        ).fetchone()
+        if not has_failures and bodies["technical_failure"]:
+            raise QuantError("Technical failure index is missing.")
+        if has_failures:
+            rows = self.db.execute("SELECT candidate_id,body FROM technical_failures").fetchall()
+            if len(rows) != len(bodies["technical_failure"]) or any(
+                json.loads(row["body"]) != bodies["technical_failure"].get(row["candidate_id"])
+                for row in rows
+            ):
+                raise QuantError("Technical failure history was removed or changed.")
+
+    def technical_failures(self) -> dict:
+        return {
+            value["candidate_id"]: value
+            for value in (
+                json.loads(row["body"])
+                for row in self.db.execute(
+                    "SELECT body FROM technical_failures ORDER BY at,candidate_id"
+                )
+            )
+        }
+
+    def record_numeric_failure(self, candidate_id: str, evidence_path: Path) -> dict:
+        relative = (
+            evidence_path.relative_to(self.root).as_posix()
+            if evidence_path.is_absolute()
+            else evidence_path.as_posix()
+        )
+        source = safe_file(self.root, relative)
+        evidence = read_json(source)
+        with self.db:
+            self.db.execute("BEGIN IMMEDIATE")
+            self.verify()
+            candidate = self.db.execute(
+                "SELECT spec_sha,body FROM candidates WHERE id=?", (candidate_id,)
+            ).fetchone()
+            if (
+                candidate is None
+                or self.db.execute(
+                    "SELECT 1 FROM reviews WHERE candidate_id=?", (candidate_id,)
+                ).fetchone()
+            ):
+                raise QuantError(
+                    "Only an unreviewed registered candidate can receive a technical rejection."
+                )
+            matching = [
+                row
+                for row in evidence.get("records", [])
+                if row.get("candidate_id") == candidate_id
+            ]
+            if len(matching) != 1:
+                raise QuantError("Technical evidence must identify exactly one matching candidate.")
+            row = matching[0]
+            negative = row.get("minimum_weight")
+            total = row.get("maximum_target_sum")
+            if (
+                evidence.get("stage") != "target_validation_before_completed_strategy_accounting"
+                or evidence.get("strategy_return_outcomes_computed") is not False
+                or evidence.get("order_authority") is not False
+                or row.get("candidate_spec_sha256") != candidate["spec_sha"]
+                or row.get("performance_review_exists") is not False
+                or row.get("negative_assets") != ["BIL"]
+                or type(negative) not in (int, float)
+                or not -1e-12 <= negative < 0
+                or type(total) not in (int, float)
+                or not 0 <= total <= 0.98 + 1e-12
+                or type(row.get("negative_rows")) is not int
+                or row["negative_rows"] < 1
+                or evidence.get("source_sha256")
+                not in json.loads(candidate["body"])["frozen_files"].values()
+            ):
+                raise QuantError(
+                    "The technical evidence does not prove the declared tiny-negative target issue."
+                )
+            previous = self.technical_failures().get(candidate_id)
+            if previous:
+                if previous["evidence_sha256"] != file_digest(source):
+                    raise QuantError("Do not replace an earlier technical failure record.")
+                return previous
+            result = {
+                "candidate_id": candidate_id,
+                "candidate_spec_sha256": candidate["spec_sha"],
+                "at": timestamp().isoformat(),
+                "status": "technical_rejected_before_performance",
+                "reason": "Negative BIL roundoff requires a new frozen code version.",
+                "evidence_path": relative,
+                "evidence_sha256": file_digest(source),
+                "new_strategy_evaluations": 0,
+                "order_authority": False,
+            }
+            self._event("technical_failure", result, timestamp())
+            self.db.execute(
+                "INSERT INTO technical_failures VALUES (?,?,?)",
+                (candidate_id, result["at"], json.dumps(result, sort_keys=True, allow_nan=False)),
+            )
+        return result
 
     def cycle(self, proposals: dict, readiness: dict, *, now: datetime | None = None) -> dict:
         now = timestamp(now)
@@ -555,6 +675,11 @@ class ResearchProgram:
             )
         identifier = spec.get("id")
         scope = spec.get("data_scope", "direct_stock")
+        parent = spec.get("supersedes_candidate")
+        if parent is not None and parent not in self.technical_failures():
+            raise QuantError(
+                "A technical correction must reference a recorded failed code version."
+            )
         if (
             not isinstance(identifier, str)
             or not re.fullmatch(r"[a-z][a-z0-9_]{2,80}", identifier)
@@ -682,6 +807,10 @@ class ResearchProgram:
                 "Preserve the earlier review; changed rules need a new registered version."
             )
         spec = json.loads(candidate["body"])
+        if candidate_id in self.technical_failures():
+            raise QuantError(
+                "This code version is technically rejected; use a newly registered correction."
+            )
         for relative, sha in spec["frozen_files"].items():
             safe_file(self.root, relative, sha)
         finish = pd.Timestamp(bundle.get("completed_at"))
@@ -984,6 +1113,9 @@ class ResearchProgram:
         ).fetchone()
         if existing is not None:
             return {"evaluation_action": "already_reviewed", "review": json.loads(existing["body"])}
+        failure = self.technical_failures().get(candidate_id)
+        if failure is not None:
+            return {"evaluation_action": "technically_rejected", "failure": failure}
         spec = json.loads(candidate["body"])
         for relative, expected in spec["frozen_files"].items():
             safe_file(self.root, relative, expected)
@@ -1097,6 +1229,8 @@ class ResearchProgram:
             for row in self.db.execute("SELECT body FROM reviews ORDER BY at,candidate_id")
         ]
         latest = self.db.execute("SELECT result FROM cycles ORDER BY at DESC LIMIT 1").fetchone()
+        failures = self.technical_failures()
+        completed = {row["candidate_id"] for row in reviews} | set(failures)
         tail = self.db.execute("SELECT seq,sha FROM events ORDER BY seq DESC LIMIT 1").fetchone()
         qualified = [row for row in reviews if row["historical_gates_passed"]]
         champion, best_score, versions = None, None, []
@@ -1119,6 +1253,11 @@ class ResearchProgram:
             "factor_proposals": factors,
             "registered_candidates": candidates,
             "candidate_reviews": reviews,
+            "technical_failure_records": list(failures.values()),
+            "technical_rejected_code_versions": len(failures),
+            "pending_candidate_ids": [
+                candidate["id"] for candidate in candidates if candidate["id"] not in completed
+            ],
             "known_factor_definition_count": len(factors),
             "new_factor_proposal_count": len(factors) - len(self.policy["seed_factors"]),
             "economic_factor_family_count": len({factor["family"] for factor in factors}),
@@ -1156,6 +1295,7 @@ def main() -> None:
             "migrate-engine",
             "audit-reviews",
             "evaluate-candidate",
+            "record-numeric-failure",
         ),
     )
     parser.add_argument("--policy", type=Path, default=Path("config/research-program.json"))
@@ -1169,6 +1309,7 @@ def main() -> None:
     parser.add_argument("--expected-engine-sha")
     parser.add_argument("--expected-event-sha")
     parser.add_argument("--output", type=Path, default=Path("reports/program-evaluations"))
+    parser.add_argument("--failure-evidence", type=Path)
     args = parser.parse_args()
     program = None
     try:
@@ -1213,6 +1354,12 @@ def main() -> None:
             if not args.candidate_id:
                 raise QuantError("Automatic evaluation needs a registered candidate identifier.")
             result = program.evaluate_registered(args.candidate_id, args.output)
+        elif args.action == "record-numeric-failure":
+            if not args.candidate_id or args.failure_evidence is None:
+                raise QuantError(
+                    "Technical rejection requires a candidate and preserved numeric evidence."
+                )
+            result = program.record_numeric_failure(args.candidate_id, args.failure_evidence)
         else:
             result = program.status()
         if args.export is not None:

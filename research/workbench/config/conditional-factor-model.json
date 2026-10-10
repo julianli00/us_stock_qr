@@ -1,5 +1,13 @@
 {
   "schema_version": 1,
+  "implementation_revision": 2,
+  "technical_correction": {
+    "original_code_commit": "183140a4",
+    "evidence": "evidence/conditional_model_numeric_diagnostic_v1.json",
+    "scope": "Clamp only BIL allocation residue within1e-12 of zero; reject any material budget excess. Predictions, training, allocation fractions and performance thresholds are unchanged.",
+    "economic_parameters_changed": false,
+    "strategy_return_outcomes_seen_before_correction": false
+  },
   "study_id": "conditional_factor_model_20261011",
   "prior_evaluated_configurations": 98,
   "new_configurations": 2,
@@ -15,8 +23,8 @@
   "maximum_single_risk_sleeve": 0.70,
   "cash_reserve": 0.02,
   "candidates": [
-    {"id": "conditional_price_factor_model", "augmented_information": false},
-    {"id": "conditional_macro_option_factor_model", "augmented_information": true}
+    {"id": "conditional_price_factor_model_v2", "augmented_information": false},
+    {"id": "conditional_macro_option_factor_model_v2", "augmented_information": true}
   ],
   "methodology": {
     "label": "Per fund: next-session open after a completed month end to the next completed-month-end-plus-one-session open, minus BIL over the same interval. Train a label only after its actual exit open occurred.",

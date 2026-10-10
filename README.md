@@ -1102,6 +1102,26 @@ The source-bound reviewer regenerates the whole forecasting sequence before
 checking actual costs and performance. No hyperparameter search, random split
 or weakening of the original Sharpe/SPY/drawdown gates is part of this study.
 
+The first conditional-model code version failed **before complete account
+evaluation** because the residual BIL weight was negative by only
+1.1102230246251565e-16. The
+[original numeric diagnostic](research/workbench/evidence/conditional_model_numeric_diagnostic_v1.json)
+is preserved. Revision 2 clamps only a cash-budget residue within 1e-12 of
+zero and still rejects a material overspend. The
+[complete-matrix correction check](research/workbench/evidence/conditional_model_numeric_fix_v2.json)
+shows that training audits and every non-BIL weight are unchanged; the largest
+target difference is the original roundoff magnitude. No economic parameter
+or strategy outcome was used to select this correction.
+
+The program supports an explicit `record-numeric-failure` lifecycle event
+for this narrow, evidenced pre-accounting failure. It cannot erase a completed
+review, overwrite an earlier failure or relabel a materially negative weight
+as roundoff. Technically rejected code versions are retained separately from
+completed strategy evaluations; they do not create a false return result.
+Corrected specifications use new IDs and a `supersedes_candidate` link.
+`pending_candidate_ids` excludes terminal technical failures, so future runs
+do not repeatedly retry an immutable invalid version.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

@@ -35,6 +35,7 @@ EXTERNAL_FEATURES = ("term_spread", "real_yield", "real_yield_change63", "vix", 
 def validate_policy(policy: dict) -> None:
     if (
         policy.get("schema_version") != 1
+        or policy.get("implementation_revision") != 2
         or policy.get("as_of") != "2026-10-05"
         or policy.get("factor_symbols") != list(FACTORS)
         or policy.get("training_months") != 36
@@ -45,10 +46,15 @@ def validate_policy(policy: dict) -> None:
         or policy.get("ranked_factor_shares") != [0.35, 0.30, 0.20, 0.15]
         or policy.get("maximum_single_risk_sleeve") != 0.70
         or policy.get("cash_reserve") != 0.02
+        or policy.get("technical_correction", {}).get("economic_parameters_changed") is not False
+        or policy.get("technical_correction", {}).get(
+            "strategy_return_outcomes_seen_before_correction"
+        )
+        is not False
         or policy.get("candidates")
         != [
-            {"id": "conditional_price_factor_model", "augmented_information": False},
-            {"id": "conditional_macro_option_factor_model", "augmented_information": True},
+            {"id": "conditional_price_factor_model_v2", "augmented_information": False},
+            {"id": "conditional_macro_option_factor_model_v2", "augmented_information": True},
         ]
         or policy.get("methodology", {}).get("order_authority") is not False
     ):
@@ -196,7 +202,10 @@ def allocation(
     weights = pd.Series(0.0, index=data.close.columns)
     weights.loc[order] = 0.98 * equity * shares
     weights["GLD"] = 0.98 * gold
-    weights["BIL"] = 0.98 - weights.sum()
+    remaining = float(0.98 - weights.sum())
+    if remaining < -1e-12:
+        raise QuantError("Forecast allocation materially exceeds its registered budget.")
+    weights["BIL"] = max(0.0, remaining)
     return weights
 
 
@@ -259,6 +268,7 @@ def prepare(output: Path):
     for candidate in policy["candidates"]:
         spec = {
             "id": candidate["id"],
+            "supersedes_candidate": candidate["id"].removesuffix("_v2"),
             "configuration": candidate,
             "data_scope": "factor_etf_portfolio",
             "factor_ids": policy["factor_ids"],
@@ -281,7 +291,7 @@ def main():
         description="Prepare fixed causal conditional-factor predictors."
     )
     parser.add_argument(
-        "--output", type=Path, default=ROOT / "data/conditional-factor-model-20261011"
+        "--output", type=Path, default=ROOT / "data/conditional-factor-model-20261011-v2"
     )
     args = parser.parse_args()
     try:

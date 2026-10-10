@@ -114,3 +114,25 @@ def test_no_hidden_hyperparameter_or_hurdle_tuning(policy):
     policy["model_parameters"]["ridge"]["alpha"] = 0.01
     with pytest.raises(QuantError):
         validate_policy(policy)
+
+
+def test_zero_cash_residue_is_not_emitted_as_a_short_position(inputs, policy):
+    data, _, _ = inputs
+    prediction = pd.Series({"MTUM": 0.04, "VLUE": 0.03, "QUAL": 0.02, "USMV": 0.01, "GLD": 0.03})
+    for day in data.close.index[63:]:
+        weights = allocation(data, day, prediction, policy)
+        assert (weights >= 0).all()
+        assert weights.sum() == pytest.approx(0.98, abs=1e-12)
+
+
+def test_revision_does_not_change_economic_parameters(policy):
+    before = read_json(
+        Path(__file__).parents[1] / "evidence/conditional_factor_model_20261011_registration.json"
+    )["study"]
+    after = dict(policy)
+    after.pop("implementation_revision")
+    after.pop("technical_correction")
+    after["candidates"] = [
+        {**row, "id": row["id"].removesuffix("_v2")} for row in after["candidates"]
+    ]
+    assert after == before

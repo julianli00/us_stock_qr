@@ -1,0 +1,25 @@
+{
+  "checks": [
+    {
+      "all_training_audit_records_unchanged": true,
+      "candidate_id": "conditional_price_factor_model_v2",
+      "maximum_weight_difference": 1.1102230246251565e-16,
+      "nonnegative_targets": true,
+      "supersedes": "conditional_price_factor_model"
+    },
+    {
+      "all_training_audit_records_unchanged": true,
+      "candidate_id": "conditional_macro_option_factor_model_v2",
+      "maximum_weight_difference": 1.1102230246251565e-16,
+      "nonnegative_targets": true,
+      "supersedes": "conditional_macro_option_factor_model"
+    }
+  ],
+  "economic_parameters_changed": false,
+  "new_evaluated_strategies": 0,
+  "new_source_sha256": "66c871e6515b0e96336570891d8a03394b87000b275ba90524d42ef56e33ee80",
+  "order_authority": false,
+  "original_code_commit": "183140a4",
+  "schema_version": 1,
+  "strategy_performance_computed": false
+}
