@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "study_id": "factor_implementation_replication_20261010",
+  "prior_evaluated_configurations": 86,
+  "new_configurations": 2,
+  "data_start": "2016-07-01",
+  "as_of": "2026-10-05",
+  "factor_symbols": ["SPMO", "VLUE", "SPHQ", "USMV"],
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "replacement_funds": [
+    {
+      "symbol": "SPMO",
+      "replaces": "MTUM",
+      "economic_family": "momentum",
+      "issuer_url": "https://www.invesco.com/us/en/financial-products/etfs/invesco-sp-500-momentum-etf.html",
+      "issuer_title": "Invesco S&P 500",
+      "mandate_keyword": "Momentum",
+      "reported_inception": "2015-10-09",
+      "daily_leverage": 1.0
+    },
+    {
+      "symbol": "SPHQ",
+      "replaces": "QUAL",
+      "economic_family": "earnings_quality",
+      "issuer_url": "https://www.invesco.com/us/en/financial-products/etfs/invesco-sp-500-quality-etf.html",
+      "issuer_title": "Invesco S&P 500",
+      "mandate_keyword": "Quality",
+      "reported_inception": "2005-12-06",
+      "daily_leverage": 1.0,
+      "reported_index_change": "2016-03-18"
+    }
+  ],
+  "risk_lookback": 63,
+  "equity_sleeve_min": 0.30,
+  "equity_sleeve_max": 0.70,
+  "cash_reserve": 0.02,
+  "capital_usd": 10000,
+  "commission_per_order": 1.0,
+  "candidates": [
+    {"id": "sp_implementations_gold_monthly", "daily_volatility_target": null, "daily_weight_band": null},
+    {"id": "sp_implementations_gold_daily_vol12", "daily_volatility_target": 0.12, "daily_weight_band": 0.05}
+  ],
+  "methodology": {
+    "controlled_change": "Replace the momentum and quality fund implementations only. Keep VLUE value and USMV low-volatility, equal four-factor equity shares, gold risk balance,63-session lookback,30%-70%equity share, costs and execution rules unchanged.",
+    "fund_scope": "Actual live ETF returns, not a reconstruction of historical factor constituents. Current issuer product identity verifies the broad mandates; no claim that today's precise index rules applied unchanged throughout history.",
+    "quality_hypothesis": "The S&P quality implementation is described in indexed issuer material using ROE, accruals and leverage; compare the actual fund, not fabricated cash-flow stock scores.",
+    "identity_caution": "The legacy SPVU issuer link now resolves to a Concentrated QVM product, so SPVU is excluded and the verified VLUE value implementation is retained.",
+    "document_access_caution": "Current issuer product pages were accessible, but factsheet PDF links returned HTML rather than valid PDFs. Do not claim the PDF bytes or full historical methodology were independently verified.",
+    "warmup": "Begin2016-07-01, after reported inception/index changes, providing enough63-session observations before the unchanged first10-year window. No pre-inception synthetic series or backfilled volume.",
+    "parameters": "No parameter tuning, no fund selection by backtest results, no leveraged products. These are two implementation variants of existing factors, not new independent factors.",
+    "validation": "Register actual input hashes and code before evaluation. Use recurring-program review to replay costs, targets and independent bt under unchanged netSharpe>1,SPY and15%drawdown gates.",
+    "history_previously_exposed": true,
+    "independent_forward_validation": false,
+    "order_authority": false
+  }
+}

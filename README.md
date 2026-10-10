@@ -616,6 +616,45 @@ are missing, but working data access does not make either strategy successful.
 Weekly automation instructions now distinguish both scopes and retain every
 failure; no performance threshold, old ledger or trading permission changed.
 
+### Factor implementation replication
+
+The next controlled comparison changes fund implementations rather than
+searching more allocation parameters. It replaces MTUM momentum with SPMO
+and QUAL quality with SPHQ, retaining VLUE value and USMV low volatility.
+The two variants retain the preceding study's exact monthly risk balance
+and optional daily volatility control. Identical synthetic return inputs
+produce identical complete targets and accounting in both implementations.
+This is two new configurations of existing factor families, not a claim
+of two new independent factors.
+
+The current Invesco product pages identify SPMO and SPHQ. The old SPVU
+link resolves to a Concentrated QVM product, so it is not used as a stable
+value implementation. The public factsheet links returned HTML rather
+than PDF; their contents are not claimed as directly verified. Current
+product names and actual fund returns do not establish unchanged historical
+index methodology. The protocol records the reported SPHQ benchmark change
+and starts input history in July 2016; the original ten/five-year return
+windows stay unchanged.
+
+Definitions and limitations are in
+`research/workbench/config/factor-implementation-replication.json`.
+Before calculating returns, the source fingerprints and candidate receipts
+must be recorded through the same recurring program:
+
+```bash
+.venv/bin/python -I -B -m us_quant.factor_replication fetch
+.venv/bin/python -I -B -m us_quant.factor_replication prepare
+.venv/bin/python -I -B -m us_quant.factor_replication register
+.venv/bin/python -I -B -m us_quant.factor_replication evaluate
+```
+
+The adapter revalidates the two actual fund histories and retains the
+previously hashed value/low-volatility, defensive and benchmark data.
+Old source and candidate modules remain byte-preserved; the small separate
+replication runner avoids invalidating those frozen implementation hashes
+and is tested against the original algorithm. No name substitution is
+made in the actual market data or evaluated holdings.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

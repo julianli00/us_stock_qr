@@ -186,6 +186,12 @@ def verified_etf_market(readiness: dict, root: Path) -> MarketData:
     from us_quant.multifactor_stability import load_market
 
     source = readiness.get("verified_etf_source", {})
+    if source.get("adapter") == "factor_implementation_replication_20261010":
+        from us_quant.factor_replication import load_replication_market
+
+        policy = read_json(safe_file(root, source["policy"], source["policy_sha256"]))
+        manifest = safe_file(root, source["factor_manifest"], source["factor_manifest_sha256"])
+        return load_replication_market(policy, manifest.parent)
     if source.get("adapter") != "frozen_multifactor_etf_20261010":
         raise QuantError("ETF readiness needs the explicitly audited actual-fund adapter.")
     policy = read_json(safe_file(root, source["policy"], source["policy_sha256"]))
