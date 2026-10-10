@@ -931,6 +931,46 @@ specification. Both must be registered before any outcome is computed.
 Interrupted output remains evidence; a new explicit output directory is
 required for replay, and original candidate code/data cannot be changed.
 
+Both defensive variants completed the real generic evaluator and were
+rejected. The [complete results](research/workbench/evidence/defensive_rotation_20261011_results.json)
+show ten/five-year base Sharpe 0.6922/0.7815 for the defensive winner and
+0.5320/0.4078 for diversified defense, with lower stressed results.
+The [updated snapshot](research/workbench/evidence/research_program_2026-W41_results_v11.json)
+retains 96 completed configurations and twelve rejected recurring reviews.
+No qualifying research champion exists.
+
+### Prospective data acquisition, not simulated trading
+
+`config/prospective-data.json` defines a separate data-only archive. Its
+collector acquires actual ETF/IRX data and official FRED/Cboe risk inputs
+after the latest NYSE close plus the existing data buffer, and before the
+next open. It retains original source bytes and hashes, performs the same
+market/calendar/release-lag checks, and records actual acquisition time.
+Older rows in a downloaded history are **not** relabeled as observations
+made on their historical dates.
+
+```bash
+.venv/bin/python -I -B -m us_quant.prospective_data init
+.venv/bin/python -I -B -m us_quant.prospective_data collect
+.venv/bin/python -I -B -m us_quant.prospective_data status
+```
+
+The first successful snapshot is a baseline only. Repeated calls for the
+same completed session skip acquisition and do not increment counts.
+Missing observed sessions are listed explicitly and never backfilled;
+late or incomplete fetches do not create completed receipts. Concurrent
+collectors serialize through a file lock. Receipt-chain/head checks and
+the latest snapshot's input hashes detect changed or partially committed
+records. Old failed attempts and old independent forward ledgers remain
+unchanged.
+
+Collection is planned for 09:00 Asia/Shanghai daily, while new-factor
+discovery remains Saturday 09:00. This archive contains no account, orders,
+positions or strategy-return calculation. Its snapshot count is not a
+forward Sharpe, a 63-session trading qualification or an investment success.
+The app/host must be available, and real future observations require actual
+market time to pass.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

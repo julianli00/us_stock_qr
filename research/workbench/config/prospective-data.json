@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "collector_id": "prospective_public_market_data_v1",
+  "timezone": "Asia/Shanghai",
+  "collection_hour": 9,
+  "factor_discovery_schedule": "Saturday09:00Asia/Shanghai",
+  "symbols": ["SPY", "MTUM", "VLUE", "QUAL", "USMV", "GLD", "IEF", "TLT", "BIL"],
+  "risk_free_symbol": "^IRX",
+  "lookback_years": 2,
+  "macro_series": ["T10Y3M", "DFII10"],
+  "option_indices": ["VIX", "VIX3M"],
+  "record_before_next_open": true,
+  "first_snapshot_is_baseline_only": true,
+  "backfill_missed_observations": false,
+  "compute_strategy_returns": false,
+  "order_authority": false,
+  "purpose": "Archive data actually acquired after a completed market session and before the next open, without claiming to have observed historical rows when they originally occurred.",
+  "limitations": "This is data collection, not a broker or simulated portfolio. Snapshot counts are not forward strategy returns, Sharpe estimates or proof of independent factor alpha. Current vendor histories can be revised; raw retrieved bytes remain versioned."
+}
