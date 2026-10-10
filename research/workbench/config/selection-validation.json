@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "audit_id": "recurring_selection_validation_20261011",
+  "scope": "completed_recurring_reviews_only",
+  "as_of": "2026-10-05",
+  "source_snapshot": {
+    "path": "evidence/research_program_2026-W41_results_v24.json",
+    "sha256": "026140649a5d3415e8f23c86e7de6f618b86c0a74085fb2114d3fe18aa38d99b"
+  },
+  "source_bound_audit": {
+    "path": "evidence/research_program_source_bound_audit_v5.json",
+    "sha256": "b8423b5c8bd6c37deaa5b17f13e02ffc71b59f8db81084367fa6647dfe7f4034"
+  },
+  "included_candidate_count": 22,
+  "earlier_configurations_not_in_joint_inference": 84,
+  "total_disclosed_configurations": 106,
+  "horizons_years": [10, 5],
+  "cost_comparisons": [
+    {"strategy_scenario": "base", "spy_scenario": "base"},
+    {"strategy_scenario": "stress", "spy_scenario": "stress"},
+    {"strategy_scenario": "stress", "spy_scenario": "base"}
+  ],
+  "capital_usd": 10000.0,
+  "bootstrap_samples": 4000,
+  "block_sessions": 21,
+  "seed": 20261011,
+  "familywise_alpha": 0.05,
+  "annualization_sessions": 252,
+  "methodology": {
+    "outcome": "Daily log of actual strategy wealth growth minus daily log of actual SPY wealth growth. All modeled deployment costs,order charges and execution delays remain in the input accounts. Annualized log-growth advantage is not a CAGR percentage-point difference.",
+    "null": "Mean-center each comparison under the least-favourable zero-advantage null. The statistic is the positive part of the largest sample mean. Each bootstrap takes the positive part of the maximum resampled centered mean across all candidates and cost comparisons.",
+    "resampling": "Use the existing research convention of21-session circular moving blocks, with the same sampled session indices for every comparison within each horizon. Preserve contemporaneous candidate,benchmark and cost-scenario dependence; do not bootstrap each strategy independently.",
+    "multiple_windows": "The five-year window overlaps the ten-year window. Allocate half the global alpha to each horizon via Bonferroni, not an independence assumption. The omnibus adjusted p-value is twice the minimum horizon p-value,capped at1.",
+    "simultaneous_lower_bounds": "For each horizon subtract its97.5percentile maximum centered bootstrap mean from every observed comparison mean. These are approximate,scope-limited,one-sided simultaneous log-growth bounds, not future-return guarantees.",
+    "selection_limits": "Rules and outcomes were already exposed before this audit was proposed. The22review subset is not the entire106configuration search;84earlier trials,other unrecorded choices,regime nonstationarity and publication/data revisions are not corrected. Do not label this complete selection-adjusted alpha or an independent holdout.",
+    "source_policy": "Locate each original bundle by the exact review evidence digest; verify strategy,SPY,independent-account and frozen risk-free files and recompute original metrics before admitting returns. Require the frozen source-bound audit and an unchanged live event-chain head.",
+    "authority": "Read-only diagnostic: no new factor,candidate,backtest,review,policy migration,research-version promotion or order. A statistically favourable result cannot override original Sharpe/SPY/drawdown gates or absent independent future evidence."
+  },
+  "order_authority": false,
+  "change_research_qualification_policy": false,
+  "independent_forward_validation": false
+}

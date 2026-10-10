@@ -1386,6 +1386,44 @@ explicit version-two reviews. The newly verified history does not create
 future observations; daily collection still has one baseline and zero
 post-baseline observations.
 
+### Joint selection diagnostics on completed recurring research
+
+`config/selection-validation.json` freezes a read-only diagnostic for the
+22 completed recurring reviews. It does **not** pretend to cover the whole
+106-configuration search: the earlier 84 trials remain outside joint
+inference. Nor does it change qualification, create a strategy or provide
+independent forward observations.
+
+The auditor verifies each original hashed bundle and actual strategy/SPY
+account path, including initial fees, cost scenarios and execution delays.
+Within each horizon it simultaneously resamples all 66 comparisons:
+base versus base SPY, stress versus stress SPY, and stress versus base SPY.
+Identical sampled 21-session circular blocks preserve contemporaneous
+dependence across candidates and cost comparisons. A least-favourable
+mean-centered maximum statistic accounts for searching within this cohort,
+rather than reporting a separately bootstrapped favourite.
+
+The five-year window overlaps the ten-year window. Global 5% diagnostic
+alpha is split across horizons by Bonferroni, not by assuming independence.
+One-sided simultaneous bounds concern annualized **log-growth advantage**,
+not CAGR percentage-point differences or future success probabilities.
+The method adapts White's
+[2000 data-snooping reality check](https://doi.org/10.1111/1468-0262.00152);
+the finite-block bootstrap remains approximate and conditional on exposed
+history, with stationarity and uncounted-selection limitations.
+
+```bash
+cd research/workbench
+.venv/bin/python -I -B -m us_quant.selection_validation register
+# Commit the fixed code/settings and registration before computing joint outcomes.
+.venv/bin/python -I -B -m us_quant.selection_validation run
+```
+
+The audit fails on changed source hashes, a changed cohort/event head or
+different settings. Both live journal and original review outcomes remain
+unchanged. Even favourable scoped evidence cannot override Sharpe, SPY,
+drawdown or absent independent-validation requirements.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
