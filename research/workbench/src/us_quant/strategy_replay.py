@@ -32,6 +32,7 @@ def replay_dependencies_hash() -> str:
             "independent_accounting": file_digest(directory / "bt_audit.py"),
             "independent_metrics": file_digest(directory / "factor_validation.py"),
             "window_logic": file_digest(directory / "dual_horizon.py"),
+            "cash_funded_accounting_v2": file_digest(directory / "cash_funded_accounting_v2.py"),
         }
     )
 

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-11",
-  "phase": "trend_risk_guards_registered_102_completed_strategy_goal_unmet",
+  "phase": "trend_guard_accounting_recovery_pending_103_completed_strategy_goal_unmet",
   "active_research_focus": "recurring_fundamental_multifactor_research",
   "completed": [
     "Preserved runnable incumbent strategy/engine and early-scanner source alongside the isolated 52-configuration workbench.",
@@ -46,7 +46,8 @@
     "Preregistered total-versus-SPY-residual factor momentum with identical aggregate equity/gold budgets and positive35/30/20/15%factor shares. Source-bound replay freezes the unchanged score and risk helpers; exact engine migration preserved every old review and technical failure. At registration two candidates were pending,100configurations complete and zero new economic factor definitions.",
     "Both factor-momentum tilts completed real source-bound review and were rejected. Total/residual10ybaseSharpe0.8993/0.9037 and5y0.9628/0.9526; every path fails the1.0Sharpe and15%drawdown gates. Residual scoring has lower Sharpe in both stressed comparisons and higher dollar turnover despite identical tickets and target budgets.102completed configurations,18program reviews,2technical failures and zero champions.",
     "Read-only re-audit regenerated all72paths for18completed program reviews with unchanged ledger and conclusions. Actual data collection again skipped the already captured2026-10-09baseline; no new prospective observations or strategy returns.",
-    "Preregistered two fixed200-session risk gates: jointly time an untraded baseline-weighted index, or separately gate equity/gold. Risk removed goes only to actual bills; active equity retains all four factors equally. Exact migration preserves18oldreviews and2technical failures; two pending candidates,102completed configurations and no new factor-family claims."
+    "Preregistered two fixed200-session risk gates: jointly time an untraded baseline-weighted index, or separately gate equity/gold. Risk removed goes only to actual bills; active equity retains all four factors equally. Exact migration preserves18oldreviews and2technical failures; at registration two pending candidates,102completed configurations and no new factor-family claims.",
+    "Joint trend guard completed a real rejection: base10y/5ySharpe0.8878/0.9076,drawdown13.18%/11.76%; stressed drawdown exceeds15%and Sharpe is lower. Component guard was blocked before completed review by a reproduced floating-point phantom-commission discrepancy. Original paths and minimal counterexample are preserved;103complete evaluations,one pending candidate and two invalid strategy-code versions remain distinct."
   ],
   "completed_zh": [
     "已保留可运行的原Top30算法、成本引擎和独立早期扫描器，并隔离导入52配置研究工作台。",
@@ -91,7 +92,8 @@
     "已预注册价格动量与扣SPY残差动量对照：股票/黄金总预算完全相同，四因子份额为35/30/20/15%；重放绑定未改的评分和风险助手，精确引擎迁移保留全部旧审阅及技术失败。登记时两个候选待评估、完整回测100项，未新增独立经济因子。",
     "两个动量倾斜版本已完成真实源码绑定审阅并拒绝：价格/残差十年基础Sharpe0.8993/0.9037，五年0.9628/0.9526；全部路径都未达到Sharpe1和15%回撤。总预算及票数相同，残差法在两组压力比较中夏普更低、美元换手更高。累计102项完整评估、18项周期审阅、2个技术失败，合格策略仍0。",
     "只读审计复核全部18项周期审阅、72条账户路径，账本和结论不变；实际采集再次去重已有2026-10-09基线，真实前瞻新观察及策略收益仍0。",
-    "预注册两个固定200日风险门：整体组合指示指数，或股票/黄金分别判断；被移除预算只进入真实BIL，股票启用时仍等配四因子。精确迁移保留18项旧审阅和2项技术失败，两个候选待评估、完整配置仍102项，不宣称新增因子家族。"
+    "预注册两个固定200日风险门：整体组合指示指数，或股票/黄金分别判断；被移除预算只进入真实BIL，股票启用时仍等配四因子。精确迁移保留18项旧审阅和2项技术失败；登记时两个候选待评估、完整配置102项，不宣称新增因子家族。",
+    "整体趋势门已完成真实拒绝：基础十年/五年Sharpe0.8878/0.9076，回撤13.18%/11.76%，但压力回撤超过15%且夏普更低。分资产版本在完整审阅前发现浮点误收固定佣金，已保留原路径和最小反例。完整评估103项、仍有1个待办；该记账事故不冒充策略结果，也不增加两个原无效策略代码版本的计数。"
   ],
   "next": [
     "The bounded factor-momentum comparison is complete and rejected. Do not retune its ranking shares or lookbacks on this same sample; residual ranking did not establish consistent net value.",
@@ -229,9 +231,9 @@
     "order_authority": false
   },
   "recurring_research_program": {
-    "state": "trend_risk_guards_pending_daily_data_weekly_discovery",
+    "state": "accounting_recovery_pending_daily_data_weekly_discovery",
     "policy": "research/workbench/config/research-program.json",
-    "cycle_snapshot": "research/workbench/evidence/research_program_2026-W41_trend_v19.json",
+    "cycle_snapshot": "research/workbench/evidence/research_program_2026-W41_accounting_failure_v20.json",
     "initial_cycle_snapshot": "research/workbench/evidence/research_program_2026-W41.json",
     "automation_receipt": "research/workbench/evidence/prospective_data_automation_v1.json",
     "initial_weekly_automation_receipt": "research/workbench/evidence/research_program_automation_20261010.json",
@@ -240,10 +242,10 @@
     "known_factor_definitions": 6,
     "economic_factor_families": 5,
     "independent_factor_count_verified": false,
-    "new_strategy_evaluations": 18,
-    "total_evaluated_configurations": 102,
+    "new_strategy_evaluations": 19,
+    "total_evaluated_configurations": 103,
     "technical_rejected_code_versions": 2,
-    "pending_candidate_ids": ["four_factor_gold_joint_trend_guard", "four_factor_gold_component_trend_guard"],
+    "pending_candidate_ids": ["four_factor_gold_component_trend_guard"],
     "research_champion": null,
     "research_versions": 0,
     "data_blockers": 5,
@@ -318,12 +320,24 @@
   "trend_risk_guards": {
     "registration": "research/workbench/evidence/trend_factor_guard_20261011_registration.json",
     "new_registered_candidates": 2,
-    "new_completed_strategy_evaluations": 0,
+    "new_completed_strategy_evaluations": 1,
     "new_economic_factor_definitions": 0,
     "risk_budget_increases_allowed": false,
     "indicator_returns_are_account_returns": false,
     "independent_holdout": false,
     "order_authority": false
+  },
+  "versioned_cash_funded_accounting": {
+    "incident": "research/workbench/evidence/trend_guard_accounting_incident_v1.json",
+    "engine_id": "cash_funded_noop_v2",
+    "existing_order_notional_threshold_usd": 0.000001,
+    "legacy_imported_engine_unchanged": true,
+    "legacy_reviews_replayed_with_original_engine": true,
+    "future_reviews_require_explicit_accounting_reference": true,
+    "strategy_targets_or_parameters_changed": false,
+    "audit_tolerances_changed": false,
+    "incident_counted_as_complete_strategy_evaluation": false,
+    "component_recovery_completed": false
   },
   "source_bound_review": {
     "audit": "research/workbench/evidence/research_program_source_bound_audit_v3.json",

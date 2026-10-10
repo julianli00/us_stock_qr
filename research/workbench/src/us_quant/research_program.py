@@ -35,6 +35,16 @@ def engine_fingerprint() -> str:
     )
 
 
+def accounting_simulator(bundle: dict, *, legacy_allowed: bool = False):
+    from us_quant.cash_funded_accounting_v2 import engine_reference, simulate as corrected
+
+    if "accounting_engine" not in bundle and legacy_allowed:
+        return simulate
+    if bundle.get("accounting_engine") != engine_reference():
+        raise QuantError("The frozen accounting engine reference changed or is unsupported.")
+    return corrected
+
+
 def timestamp(now: datetime | None = None) -> datetime:
     now = datetime.now(timezone.utc) if now is None else now
     if now.tzinfo is None or now.utcoffset() is None:
@@ -844,6 +854,7 @@ class ResearchProgram:
             raise QuantError("Market panels differ from the registered universe or endpoint.")
         checked = []
         target_cache = {}
+        account = accounting_simulator(bundle, legacy_allowed=audit_existing)
         for item in records:
             years, scenario = item["years"], item["scenario"]
             expected = sessions(end - pd.DateOffset(years=years) + pd.Timedelta(days=1), end)
@@ -885,7 +896,7 @@ class ResearchProgram:
                 or not np.allclose(targets, generated, rtol=0, atol=1e-10, equal_nan=True)
             ):
                 raise QuantError("Submitted targets do not match the frozen registered strategy.")
-            replay = simulate(
+            replay = account(
                 data,
                 targets,
                 str(expected[0].date()),
@@ -906,7 +917,7 @@ class ResearchProgram:
                 delay=item["delay_sessions"],
             )
             benchmark_targets = buy_and_hold_signals(data.close, "SPY", str(expected[0].date()))
-            benchmark_replay = simulate(
+            benchmark_replay = account(
                 data,
                 benchmark_targets,
                 str(expected[0].date()),
@@ -1026,6 +1037,8 @@ class ResearchProgram:
             "live_strategy_update": False,
             "data_scope": spec.get("data_scope", "direct_stock"),
         }
+        if "accounting_engine" in bundle:
+            result["accounting_engine"] = bundle["accounting_engine"]
         if audit_existing:
             original = json.loads(previous_review["body"])
             if (
@@ -1100,6 +1113,7 @@ class ResearchProgram:
         }
 
     def evaluate_registered(self, candidate_id: str, output: Path) -> dict:
+        from us_quant.cash_funded_accounting_v2 import engine_reference
         from us_quant.storage import new_output_directory, write_text_atomic
 
         self.verify()
@@ -1126,6 +1140,8 @@ class ResearchProgram:
             raise QuantError("Automatic research outputs must remain inside the workbench.")
         new_output_directory(directory)
         cache, paths = {}, []
+        accounting = engine_reference()
+        account = accounting_simulator({"accounting_engine": accounting})
         goals = self.policy["goals"]
         end = pd.Timestamp(spec["evaluation_as_of"])
         for years in goals["horizons_years"]:
@@ -1134,7 +1150,7 @@ class ResearchProgram:
             for scenario in goals["scenarios"]:
                 cost, delay = goals[f"{scenario}_cost_bps"], goals[f"{scenario}_delay_sessions"]
                 targets = registered_targets(spec, data, first, last, cost, delay, self.root, cache)
-                own = simulate(
+                own = account(
                     data,
                     targets,
                     first,
@@ -1155,7 +1171,7 @@ class ResearchProgram:
                     delay=delay,
                 )
                 benchmark_targets = buy_and_hold_signals(data.close, "SPY", first)
-                spy = simulate(
+                spy = account(
                     data,
                     benchmark_targets,
                     first,
@@ -1199,6 +1215,7 @@ class ResearchProgram:
                     }
                 paths.append(record)
         bundle = {
+            "accounting_engine": accounting,
             "candidate_spec_sha256": candidate["spec_sha"],
             "completed_at": timestamp().isoformat(),
             "as_of": spec["evaluation_as_of"],

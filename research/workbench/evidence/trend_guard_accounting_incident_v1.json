@@ -1,0 +1,138 @@
+{
+  "candidate_id": "four_factor_gold_component_trend_guard",
+  "cause": "A nonzero floating-point proportional charge below the existing1e-6order threshold enters the legacy bisection solver and can select a fixed-commission branch, manufacturing a real trade despite an already-balanced account. Independent bt correctly makes no trade.",
+  "complete_strategy_evaluations_added_by_this_incident": 0,
+  "engine_sha256": "d7a31a5993acbab8170f586b87351c9d712bde5a39d26ad7c03a699d9f649792",
+  "invalid_strategy_code_versions_added": 0,
+  "minimal_counterexample": {
+    "asset_values_usd": [
+      9268.842267867001
+    ],
+    "cash_usd": 189.1600462829999,
+    "commission_per_order_usd": 1,
+    "cost_bps": 20,
+    "existing_order_notional_threshold_usd": 1e-06,
+    "legacy_cost_usd": 1.0019638491443257,
+    "legacy_order_tickets": 1,
+    "pre_fee_differences_usd": [
+      -1.8189894035458565e-12
+    ],
+    "target_weights": [
+      0.98
+    ]
+  },
+  "order_authority": false,
+  "original_bundle": {
+    "path": "reports/trend-factor-guard-20261011/four_factor_gold_component_trend_guard/bundle.json",
+    "sha256": "8c681936dbede4a2494684c09c1afa3de313a5f77a3ca03595b2980b3243e663"
+  },
+  "original_primary_engine_sha256": "ba99627330a40f74ecce4daf096ea8a530d7598820c836e16f4f3996bcfeff6c",
+  "planned_correction": "Preserve the frozen imported engine. Introduce a versioned reviewed accounting adapter that keeps actual holdings/cash and charges nothing when every requested delta is below the existing order threshold. No wider audit tolerance, target adjustment, parameter change or return-window change.",
+  "recorded_at": "2026-10-10T19:29:27.822634+00:00",
+  "records": [
+    {
+      "first_disagreement_session": null,
+      "maximum_independent_equity_error_usd": 2.000888343900442e-11,
+      "performance_review_recorded": false,
+      "scenario": "base",
+      "source_ledgers": {
+        "strategy": {
+          "path": "reports/trend-factor-guard-20261011/four_factor_gold_component_trend_guard/10y-base-strategy.csv",
+          "sha256": "6d0c6c08a58b6ca33349fe004df85d85ca455150a630bb7669ffc4912136f189"
+        },
+        "strategy_bt": {
+          "path": "reports/trend-factor-guard-20261011/four_factor_gold_component_trend_guard/10y-base-strategy_bt.csv",
+          "sha256": "75f322df4b63f7cde76b8da8bbe1205184e965e72552a46856c969a2a59eca71"
+        },
+        "targets": {
+          "path": "reports/trend-factor-guard-20261011/four_factor_gold_component_trend_guard/10y-base-targets.csv",
+          "sha256": "c35d2cc090790f31ad81093a2c67e7f87be45df50f0342a64618fb6ae218d422"
+        },
+        "weights": {
+          "path": "reports/trend-factor-guard-20261011/four_factor_gold_component_trend_guard/10y-base-weights.csv",
+          "sha256": "734883cf01cb641c286080af9c884bf4ab03eedb2f50e9978a5186d9416cbfba"
+        }
+      },
+      "years": 10
+    },
+    {
+      "first_disagreement_session": "2022-02-02",
+      "maximum_independent_equity_error_usd": 1.6797217117527907,
+      "performance_review_recorded": false,
+      "scenario": "stress",
+      "source_ledgers": {
+        "strategy": {
+          "path": "reports/trend-factor-guard-20261011/four_factor_gold_component_trend_guard/10y-stress-strategy.csv",
+          "sha256": "bc5db0325d9f33c0cdf1272fb3abce8b50afb3a2bf4b5ee2c1fde37de7c4439a"
+        },
+        "strategy_bt": {
+          "path": "reports/trend-factor-guard-20261011/four_factor_gold_component_trend_guard/10y-stress-strategy_bt.csv",
+          "sha256": "5835ba753755e35410994d1adc5f54e02f56cfa5ec23e0c995d15af1f0e83ed9"
+        },
+        "targets": {
+          "path": "reports/trend-factor-guard-20261011/four_factor_gold_component_trend_guard/10y-stress-targets.csv",
+          "sha256": "c35d2cc090790f31ad81093a2c67e7f87be45df50f0342a64618fb6ae218d422"
+        },
+        "weights": {
+          "path": "reports/trend-factor-guard-20261011/four_factor_gold_component_trend_guard/10y-stress-weights.csv",
+          "sha256": "7f1e64bad7a53f6a0e648539b5b9d42437093c828dc394de8967ad744ab23400"
+        }
+      },
+      "years": 10
+    },
+    {
+      "first_disagreement_session": null,
+      "maximum_independent_equity_error_usd": 2.1827872842550278e-11,
+      "performance_review_recorded": false,
+      "scenario": "base",
+      "source_ledgers": {
+        "strategy": {
+          "path": "reports/trend-factor-guard-20261011/four_factor_gold_component_trend_guard/5y-base-strategy.csv",
+          "sha256": "b60a363a504ab0a938ce0d3f03785d5a0c0335e05f1c6f3c22469847daab85ab"
+        },
+        "strategy_bt": {
+          "path": "reports/trend-factor-guard-20261011/four_factor_gold_component_trend_guard/5y-base-strategy_bt.csv",
+          "sha256": "41721c105b4b672c5fe8fcf8c4304571912f992676031d861ed77cdfacbf549a"
+        },
+        "targets": {
+          "path": "reports/trend-factor-guard-20261011/four_factor_gold_component_trend_guard/5y-base-targets.csv",
+          "sha256": "385f89ce5929efc806018e8c3151fcccc8d790f721c31955b8e219899df8af9b"
+        },
+        "weights": {
+          "path": "reports/trend-factor-guard-20261011/four_factor_gold_component_trend_guard/5y-base-weights.csv",
+          "sha256": "d38810733617dc3008c26649471f043d1b1b1feceba7befc5f2f01d0e0445435"
+        }
+      },
+      "years": 5
+    },
+    {
+      "first_disagreement_session": "2022-02-02",
+      "maximum_independent_equity_error_usd": 1.679721711687307,
+      "performance_review_recorded": false,
+      "scenario": "stress",
+      "source_ledgers": {
+        "strategy": {
+          "path": "reports/trend-factor-guard-20261011/four_factor_gold_component_trend_guard/5y-stress-strategy.csv",
+          "sha256": "aa4feba1474d583488d4cae1150880833700122cc661c6b411dfc7e8759a3e85"
+        },
+        "strategy_bt": {
+          "path": "reports/trend-factor-guard-20261011/four_factor_gold_component_trend_guard/5y-stress-strategy_bt.csv",
+          "sha256": "8a5751dc3468486af5052c76c4fe99174eafa11786db30c7cedf0f47a30084b6"
+        },
+        "targets": {
+          "path": "reports/trend-factor-guard-20261011/four_factor_gold_component_trend_guard/5y-stress-targets.csv",
+          "sha256": "385f89ce5929efc806018e8c3151fcccc8d790f721c31955b8e219899df8af9b"
+        },
+        "weights": {
+          "path": "reports/trend-factor-guard-20261011/four_factor_gold_component_trend_guard/5y-stress-weights.csv",
+          "sha256": "ee045948ace06a684045d64f1cef6426a6d11e63cc1c3349bf12636122a1f9ea"
+        }
+      },
+      "years": 5
+    }
+  ],
+  "registered_source_unchanged": true,
+  "schema_version": 1,
+  "stage": "independent_accounting_before_completed_review",
+  "technical_failure_counts_unchanged": 2
+}

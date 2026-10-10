@@ -1244,6 +1244,32 @@ candidates. Exact-anchor migration preserved all 18 previous reviews and
 both technical failures. The original dual windows, execution delays,
 capital, costs and Sharpe/SPY/drawdown gates remain unchanged.
 
+The joint guard completed its review, but the component guard's first
+attempt stopped **before a completed review** on an independent accounting
+disagreement. The
+[preserved diagnostic](research/workbench/evidence/trend_guard_accounting_incident_v1.json)
+reproduces a legacy solver corner: a rounding-only requested change of
+about USD1.82e-12 enters the fixed-commission branch and manufactures a
+USD1.00196 charge. The independent engine correctly performs no trade.
+Do not count the interrupted attempt as a completed strategy evaluation.
+
+`cash_funded_accounting_v2.py` keeps holdings and cash unchanged when every
+pre-fee delta is below the **existing USD1e-6 order-notional threshold**.
+Real trades reuse the original cash-budget solver, fees and execution
+assumptions. This is a versioned accounting correction, not a different
+portfolio rule or wider audit tolerance. The imported `backtest.py` and
+all old frozen sources remain unchanged.
+
+New reviews require an explicit, exact-source-hash
+`cash_funded_noop_v2` bundle reference. Read-only audits of the previously
+completed legacy bundles continue using their original engine; they are
+not silently rescored. The original failed component output is retained,
+and recovery must write to a fresh replay directory. At this incident
+checkpoint there are **103 complete configurations, 19 completed reviews,
+one pending candidate, and two separately indexed invalid strategy-code
+versions**. The accounting incident is neither a third invalid strategy
+definition nor an additional performance trial.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

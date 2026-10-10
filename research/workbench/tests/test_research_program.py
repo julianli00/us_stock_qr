@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from us_quant.backtest import simulate
+from us_quant.cash_funded_accounting_v2 import engine_reference, simulate
 from us_quant.calendar import sessions
 from us_quant.config import QuantError
 from us_quant.data import MarketData
@@ -323,6 +323,7 @@ def make_bundle(tmp_path, registration, *, winning=True):
             rec["targets"] = {"path": path.name, "sha256": file_digest(path)}
             records.append(rec)
     return {
+        "accounting_engine": engine_reference(),
         "candidate_spec_sha256": registration["spec_sha256"],
         "completed_at": timestamp().isoformat(),
         "as_of": "2026-10-05",
@@ -332,6 +333,19 @@ def make_bundle(tmp_path, registration, *, winning=True):
         "paths": records,
         "market": market,
     }
+
+
+def test_new_review_cannot_silently_use_unversioned_legacy_accounting(
+    program, policy, tmp_path, registered_generator
+):
+    spec = candidate_spec(tmp_path)
+    record = program.register_candidate(spec, readiness(policy, tmp_path, ready=True))
+    bundle = make_bundle(tmp_path, record)
+    bundle.pop("accounting_engine")
+    before = program.status()
+    with pytest.raises(QuantError, match="accounting engine"):
+        program.review(spec["id"], bundle)
+    assert program.status() == before
 
 
 @pytest.mark.parametrize("winning", [True, False])
