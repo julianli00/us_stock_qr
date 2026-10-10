@@ -1423,6 +1423,10 @@ The audit fails on changed source hashes, a changed cohort/event head or
 different settings. Both live journal and original review outcomes remain
 unchanged. Even favourable scoped evidence cannot override Sharpe, SPY,
 drawdown or absent independent-validation requirements.
+The [fixed audit registration](research/workbench/evidence/selection_validation_20261011_registration.json)
+pins code, settings, the 22-review cohort and source hashes before joint
+resampling. At registration no statistical outcome, new strategy trial or
+research-version update is claimed.
 
 ## Progress and publication
 
