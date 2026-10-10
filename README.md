@@ -1428,6 +1428,37 @@ pins code, settings, the 22-review cohort and source hashes before joint
 resampling. At registration no statistical outcome, new strategy trial or
 research-version update is claimed.
 
+The [actual joint results](research/workbench/evidence/selection_validation_20261011_results.json)
+find **no positive simultaneous lower outperformance bound**:
+
+| Scope | Candidate/cost comparisons | Scoped omnibus p-value | Positive simultaneous lower bounds |
+|---|---|---|---|
+| Ten years | 66 | 1.0000 | 0 |
+| Five years | 66 | 0.5881 | 0 |
+
+The two-horizon Bonferroni omnibus p-value is 1.0. Some five-year curves
+have positive historical net growth differences, but this least-favourable
+joint diagnostic does not establish statistically significant advantage
+within the declared cohort. It is conservative and conditional, **not a
+probability of future failure or proof that profitable trading is
+impossible**. The excluded 84 earlier trials and uncounted research choices
+remain limitations; there is still no full-search selection-adjusted alpha
+or independent future evidence.
+
+The [reproducibility check](research/workbench/evidence/selection_validation_20261011_reproducibility.json)
+replays all statistics exactly and independently reconstructs all 4,000
+samples per horizon through direct indexing rather than the implemented
+matrix-count shortcut. Omnibus p-values agree exactly; critical values
+agree within 1e-15. Source hashes, journal events, 106 completed
+configurations, 22 reviews and all prior qualification outcomes remain
+unchanged. This audit adds **zero strategy evaluations**.
+
+The [updated native instructions](research/workbench/evidence/prospective_data_automation_v3.json)
+preserve daily collection and weekly discovery, explain the limited
+selection scope, and require a newly registered statistical plan if the
+cohort changes. The frozen 22-candidate result cannot be silently applied
+to future candidates. No future scheduled execution is claimed.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

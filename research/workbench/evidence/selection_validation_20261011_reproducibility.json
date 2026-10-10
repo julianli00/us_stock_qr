@@ -1,0 +1,35 @@
+{
+  "direct_arithmetic_reference": {
+    "all_p_values_reproduced": true,
+    "checked_at": "2026-10-10T20:28:21.103573+00:00",
+    "checks": [
+      {
+        "comparisons": 66,
+        "critical_value_error": 2.168404344971009e-19,
+        "p_value_exactly_reproduced": true,
+        "samples": 4000,
+        "scope_limited_p_value": 1.0,
+        "years": 10
+      },
+      {
+        "comparisons": 66,
+        "critical_value_error": 9.75781955236954e-19,
+        "p_value_exactly_reproduced": true,
+        "samples": 4000,
+        "scope_limited_p_value": 0.5881029742564359,
+        "years": 5
+      }
+    ],
+    "method": "Independent direct-index arithmetic means and explicit sorted order statistic; does not call the implemented joint_maximum or circular_positions helpers.",
+    "no_new_strategy_evaluations": true,
+    "order_authority": false,
+    "source_hashes_checked": true
+  },
+  "event_chain_head_unchanged": true,
+  "full_replay_all_joint_statistics_identical": true,
+  "order_authority": false,
+  "registered_audit_code_sha256": "62dc62b44f804adb8b7a1def7b0553edd032ac92dff196334fa36af779f6f46f",
+  "schema_version": 1,
+  "source_bundle_references_unchanged": true,
+  "strategy_evaluations_added": 0
+}

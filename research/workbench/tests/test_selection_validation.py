@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import math
 from pathlib import Path
 
 import numpy as np
@@ -77,6 +78,35 @@ def test_including_more_candidates_never_narrows_the_common_maximum_bound():
     assert multiple["bootstrap_maximum_critical_daily_log_advantage"] >= single[
         "bootstrap_maximum_critical_daily_log_advantage"
     ] - 1e-15
+
+
+def test_joint_maximum_matches_independent_direct_index_resampling():
+    frame = inputs(137)
+    samples, block, seed, alpha = 256, 21, 8, 0.025
+    result = joint_maximum(frame, samples=samples, block=block, seed=seed, alpha=alpha)
+    means = frame.to_numpy().mean(axis=0)
+    centered = frame.to_numpy() - means
+    rng = np.random.default_rng(seed)
+    reference = []
+    for _ in range(samples):
+        starts = rng.integers(0, len(frame), size=math.ceil(len(frame) / block))
+        positions = np.concatenate(
+            [(start + np.arange(block)) % len(frame) for start in starts]
+        )[: len(frame)]
+        reference.append(max(0.0, float(centered[positions].mean(axis=0).max())))
+    critical = sorted(reference)[math.ceil((samples - 1) * (1 - alpha))]
+    observed = max(0.0, float(means.max()))
+    p_value = (1 + sum(value >= observed for value in reference)) / (samples + 1)
+    assert result["scope_limited_omnibus_p_value"] == p_value
+    assert result["bootstrap_maximum_critical_daily_log_advantage"] == pytest.approx(
+        critical, abs=1e-15
+    )
+    np.testing.assert_allclose(
+        [row["simultaneous_lower_mean_daily_log_advantage"] for row in result["comparison_results"]],
+        means - critical,
+        rtol=0,
+        atol=1e-15,
+    )
 
 
 def test_nonpositive_observed_advantage_has_positive_part_omnibus_p_value_one():
