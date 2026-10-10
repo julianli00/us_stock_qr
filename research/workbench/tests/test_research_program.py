@@ -385,3 +385,79 @@ def test_self_consistent_curve_cannot_replace_real_market_and_cost_replay(
     with pytest.raises(QuantError, match="replay"):
         program.review("test_multifactor", bundle)
     assert program.status()["research_champion"] is None
+
+
+def test_engine_migration_preserves_history_and_requires_exact_anchors(policy, tmp_path, proposals):
+    path = tmp_path / "migrate.sqlite3"
+    old = ResearchProgram(path, policy, root=tmp_path, create=True)
+    old.cycle(proposals, readiness(policy, tmp_path))
+    before = old.status()
+    with old.db:
+        old.db.execute("UPDATE metadata SET engine_sha=?", ("0" * 64,))
+    old.close()
+    with pytest.raises(QuantError, match="migration"):
+        ResearchProgram(path, policy, root=tmp_path)
+    with pytest.raises(QuantError, match="preconditions"):
+        ResearchProgram(
+            path,
+            policy,
+            root=tmp_path,
+            expected_previous_engine="0" * 64,
+            expected_previous_event="1" * 64,
+        )
+    new = ResearchProgram(
+        path,
+        policy,
+        root=tmp_path,
+        expected_previous_engine="0" * 64,
+        expected_previous_event=before["event_chain_sha256"],
+    )
+    try:
+        after = new.status()
+        assert after["factor_proposals"] == before["factor_proposals"]
+        assert after["latest_cycle"] == before["latest_cycle"]
+        assert after["event_count"] == before["event_count"] + 1
+        assert after["total_evaluated_configurations"] == 84
+        assert after["research_champion"] is None
+    finally:
+        new.close()
+
+
+def test_corrupt_missing_engine_hash_never_bypasses_verification(program):
+    with program.db:
+        program.db.execute("UPDATE metadata SET engine_sha=NULL")
+    with pytest.raises(QuantError, match="engine"):
+        program.status()
+
+
+def test_etf_scope_does_not_mark_stock_history_ready(policy, tmp_path, monkeypatch):
+    raw = readiness(policy, tmp_path)
+    assert len(readiness_blockers(raw, policy, tmp_path)) == 5
+    etf = {
+        "schema_version": 1,
+        "checked_at": timestamp().isoformat(),
+        "data_scope": "factor_etf_portfolio",
+        "capabilities": {
+            key: {
+                "verified": True,
+                "evidence_path": "proof.json",
+                "evidence_sha256": file_digest(tmp_path / "proof.json"),
+            }
+            for key in (
+                "factor_mandates",
+                "actual_fund_history",
+                "post_inception_and_actions",
+                "unleveraged_fund_identity",
+            )
+        },
+    }
+    with pytest.raises(QuantError, match="adapter"):
+        readiness_blockers(etf, policy, tmp_path)
+    invoked = []
+    monkeypatch.setattr(
+        "us_quant.research_program.verified_etf_market",
+        lambda *args: invoked.append("verified_actual_ETF_snapshot"),
+    )
+    assert readiness_blockers(etf, policy, tmp_path) == []
+    assert invoked == ["verified_actual_ETF_snapshot"]
+    assert len(readiness_blockers(raw, policy, tmp_path)) == 5

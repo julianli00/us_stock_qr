@@ -154,8 +154,20 @@ def readiness_blockers(
     source = readiness.get("source_check")
     if source is not None:
         safe_file(root, source["path"], source["sha256"])
+    scope = readiness.get("data_scope", "direct_stock")
+    if scope == "direct_stock":
+        required = policy["required_stock_data"]
+    elif scope == "factor_etf_portfolio":
+        required = [
+            "factor_mandates",
+            "actual_fund_history",
+            "post_inception_and_actions",
+            "unleveraged_fund_identity",
+        ]
+    else:
+        raise QuantError("Unknown research data scope; do not relabel stock-data requirements.")
     blockers = []
-    for name in policy["required_stock_data"]:
+    for name in required:
         item = readiness["capabilities"].get(name)
         if not isinstance(item, dict) or type(item.get("verified")) is not bool:
             raise QuantError(f"Data readiness is unspecified: {name}")
@@ -165,7 +177,22 @@ def readiness_blockers(
             blockers.append(f"{name}: {item['reason']}")
         else:
             safe_file(root, item["evidence_path"], item["evidence_sha256"])
+    if scope == "factor_etf_portfolio" and not blockers:
+        verified_etf_market(readiness, root)
     return blockers
+
+
+def verified_etf_market(readiness: dict, root: Path) -> MarketData:
+    from us_quant.multifactor_stability import load_market
+
+    source = readiness.get("verified_etf_source", {})
+    if source.get("adapter") != "frozen_multifactor_etf_20261010":
+        raise QuantError("ETF readiness needs the explicitly audited actual-fund adapter.")
+    policy = read_json(safe_file(root, source["policy"], source["policy_sha256"]))
+    registration = read_json(safe_file(root, source["registration"], source["registration_sha256"]))
+    base_manifest = safe_file(root, source["base_manifest"], source["base_manifest_sha256"])
+    factor_manifest = safe_file(root, source["factor_manifest"], source["factor_manifest_sha256"])
+    return load_market(policy, registration, base_manifest.parent, factor_manifest.parent)
 
 
 def review_market(bundle: dict, root: Path) -> MarketData:
@@ -198,7 +225,16 @@ def review_market(bundle: dict, root: Path) -> MarketData:
 
 
 class ResearchProgram:
-    def __init__(self, path: Path, policy: dict, *, root: Path = ROOT, create: bool = False):
+    def __init__(
+        self,
+        path: Path,
+        policy: dict,
+        *,
+        root: Path = ROOT,
+        create: bool = False,
+        expected_previous_engine: str | None = None,
+        expected_previous_event: str | None = None,
+    ):
         validate_policy(policy)
         if path.is_symlink() or not path.resolve().is_relative_to(root.resolve()):
             raise QuantError("The program ledger must stay inside this isolated workbench.")
@@ -210,7 +246,17 @@ class ResearchProgram:
         elif not path.is_file():
             raise QuantError("Initialize the research program explicitly before cycles.")
         path.chmod(0o600)
+        if (expected_previous_engine is None) != (expected_previous_event is None) or (
+            create and expected_previous_engine is not None
+        ):
+            raise QuantError("Engine migration requires both prior hashes and an existing ledger.")
+        if expected_previous_engine is not None and any(
+            not re.fullmatch(r"[0-9a-f]{64}", value)
+            for value in (expected_previous_engine, expected_previous_event)
+        ):
+            raise QuantError("Migration anchors must be exact SHA256 values.")
         self.root, self.policy = root, policy
+        self.previous_engine = expected_previous_engine
         self.db = sqlite3.connect(path, timeout=10)
         self.db.row_factory = sqlite3.Row
         if create:
@@ -270,6 +316,41 @@ class ResearchProgram:
                 )
         try:
             self.verify()
+            if expected_previous_engine is not None:
+                with self.db:
+                    self.db.execute("BEGIN IMMEDIATE")
+                    self.verify()
+                    metadata = self.db.execute(
+                        "SELECT engine_sha FROM metadata WHERE id=1"
+                    ).fetchone()
+                    head = self.db.execute(
+                        "SELECT sha FROM events ORDER BY seq DESC LIMIT 1"
+                    ).fetchone()
+                    if (
+                        metadata["engine_sha"] != expected_previous_engine
+                        or head["sha"] != expected_previous_event
+                        or expected_previous_engine == file_digest(Path(__file__))
+                    ):
+                        raise QuantError(
+                            "Engine migration preconditions changed; no ledger reset allowed."
+                        )
+                    self._event(
+                        "engine_migrated",
+                        {
+                            "from_engine_sha256": expected_previous_engine,
+                            "to_engine_sha256": file_digest(Path(__file__)),
+                            "prior_event_sha256": expected_previous_event,
+                            "policy_unchanged": True,
+                            "reason": "Add ETF scope; keep stock-data and performance gates.",
+                        },
+                        timestamp(),
+                    )
+                    self.db.execute(
+                        "UPDATE metadata SET engine_sha=? WHERE id=1",
+                        (file_digest(Path(__file__)),),
+                    )
+                self.previous_engine = None
+                self.verify()
         except (QuantError, sqlite3.Error):
             self.db.close()
             raise
@@ -299,7 +380,10 @@ class ResearchProgram:
         if (
             row is None
             or row["policy_sha"] != digest_json(self.policy)
-            or row["engine_sha"] != file_digest(Path(__file__))
+            or (
+                row["engine_sha"] != file_digest(Path(__file__))
+                and (self.previous_engine is None or row["engine_sha"] != self.previous_engine)
+            )
         ):
             raise QuantError(
                 "Research policy/engine changed; preserve the ledger and review migration."
@@ -418,6 +502,7 @@ class ResearchProgram:
                     item["id"]: signature for item, signature in identities if item["id"] in added
                 },
                 "order_authority": False,
+                "data_scope": readiness.get("data_scope", "direct_stock"),
             }
             self._event("cycle", result, now)
             self.db.execute(
@@ -438,10 +523,11 @@ class ResearchProgram:
         blockers = readiness_blockers(readiness, self.policy, self.root, now=now)
         if blockers:
             raise QuantError(
-                "Candidate evaluation blocked by missing point-in-time stock data: "
+                "Candidate blocked by missing point-in-time data for its scope: "
                 + "; ".join(blockers)
             )
         identifier = spec.get("id")
+        scope = spec.get("data_scope", "direct_stock")
         if (
             not isinstance(identifier, str)
             or not re.fullmatch(r"[a-z][a-z0-9_]{2,80}", identifier)
@@ -450,6 +536,7 @@ class ResearchProgram:
             or spec.get("order_authority") is not False
             or spec.get("leveraged_products_allowed") is not False
             or spec.get("history_status") != "exposed_history_not_independent_holdout"
+            or scope != readiness.get("data_scope", "direct_stock")
         ):
             raise QuantError("Candidate must declare its factors, data limitations and authority.")
         families = set()
@@ -469,6 +556,27 @@ class ResearchProgram:
         for relative, sha in spec["frozen_files"].items():
             safe_file(self.root, relative, sha)
         market = review_market({"market": spec.get("market")}, self.root)
+        if scope == "factor_etf_portfolio":
+            etf_market = verified_etf_market(readiness, self.root)
+            if set(spec["factor_ids"]) != {
+                "price_momentum",
+                "value_exposure",
+                "quality_exposure",
+                "low_volatility_exposure",
+            }:
+                raise QuantError(
+                    "ETF research must identify fund mandates, not missing stock signals."
+                )
+            for name in ("open", "close", "raw_close", "volume"):
+                actual, verified = getattr(market, name), getattr(etf_market, name)
+                if (
+                    not actual.index.equals(verified.index)
+                    or not actual.columns.equals(verified.columns)
+                    or not np.allclose(actual, verified, rtol=1e-10, atol=1e-9)
+                ):
+                    raise QuantError("ETF market differs from the audited provider snapshot.")
+            if not np.allclose(market.risk_free, etf_market.risk_free, rtol=0, atol=1e-12):
+                raise QuantError("ETF review must retain the audited risk-free series.")
         end = pd.Timestamp(spec.get("evaluation_as_of"))
         if (
             pd.isna(end)
@@ -514,6 +622,7 @@ class ResearchProgram:
                 "spec_sha256": signature,
                 "readiness_sha256": digest_json(readiness),
                 "families": sorted(families),
+                "data_scope": scope,
                 "order_authority": False,
             }
             self._event("candidate", record, now)
@@ -542,6 +651,7 @@ class ResearchProgram:
             bundle.get("candidate_spec_sha256") != candidate["spec_sha"]
             or bundle.get("as_of") != spec["evaluation_as_of"]
             or bundle.get("market") != spec["market"]
+            or bundle.get("data_scope", "direct_stock") != spec.get("data_scope", "direct_stock")
             or pd.isna(finish)
             or finish.tzinfo is None
             or not pd.Timestamp(candidate["registered_at"]) <= finish <= pd.Timestamp(now)
@@ -726,6 +836,7 @@ class ResearchProgram:
             "independent_forward_validation": False,
             "order_authority": False,
             "live_strategy_update": False,
+            "data_scope": spec.get("data_scope", "direct_stock"),
         }
         with self.db:
             self.db.execute("BEGIN IMMEDIATE")
@@ -812,7 +923,8 @@ def main() -> None:
         description="Recurring evidence-driven factor research; no orders."
     )
     parser.add_argument(
-        "action", choices=("init", "cycle", "register-candidate", "review", "status")
+        "action",
+        choices=("init", "cycle", "register-candidate", "review", "status", "migrate-engine"),
     )
     parser.add_argument("--policy", type=Path, default=Path("config/research-program.json"))
     parser.add_argument("--ledger", type=Path, default=Path("runtime/research-program.sqlite3"))
@@ -822,10 +934,26 @@ def main() -> None:
     parser.add_argument("--candidate-id")
     parser.add_argument("--bundle", type=Path)
     parser.add_argument("--export", type=Path)
+    parser.add_argument("--expected-engine-sha")
+    parser.add_argument("--expected-event-sha")
     args = parser.parse_args()
     program = None
     try:
-        program = ResearchProgram(args.ledger, read_json(args.policy), create=args.action == "init")
+        if args.action == "migrate-engine" and (
+            not args.expected_engine_sha or not args.expected_event_sha
+        ):
+            raise QuantError("Migration needs exact previously observed engine and event hashes.")
+        program = ResearchProgram(
+            args.ledger,
+            read_json(args.policy),
+            create=args.action == "init",
+            expected_previous_engine=args.expected_engine_sha
+            if args.action == "migrate-engine"
+            else None,
+            expected_previous_event=args.expected_event_sha
+            if args.action == "migrate-engine"
+            else None,
+        )
         if args.action == "cycle":
             if args.proposals is None or args.readiness is None:
                 raise QuantError(

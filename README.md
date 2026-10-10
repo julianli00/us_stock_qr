@@ -548,6 +548,50 @@ champion. Repeating the same week leaves the event chain and counts unchanged.
 **The requested Sharpe/robustness objective remains unfulfilled.** Neither
 working automation nor passing synthetic tests constitutes investment evidence.
 
+### Separate actual-fund data scope
+
+The recurring reviewer also supports the explicitly labeled
+`factor_etf_portfolio` scope. It validates the original four-factor fund
+mandates, actual post-inception history, corporate-action evidence and
+unleveraged product identities by loading the frozen multifactor provider
+snapshot. Candidate panels must match that snapshot. This is **not** permission
+to mark missing stock fundamentals, historical constituents or delistings
+as available: the `direct_stock` readiness requirements remain unchanged.
+Candidates and reviews record their scope, and an ETF candidate must use the
+four actual fund-factor references rather than claiming direct stock signals.
+
+Existing ledgers refuse a changed engine unless an explicit `migrate-engine`
+operation supplies the exact previous engine hash and event-chain head.
+The migration verifies existing history in a transaction, appends an engine
+transition event and preserves the policy, all factors, blocked cycles,
+candidates and reviews. It does not reset trial counts or change performance
+or live-deployment gates. Migrations require a reviewed code change, not
+automatic recovery from unexplained corruption.
+
+The next fixed two-configuration study is in
+`research/workbench/config/factor-gold-risk.json`. It preserves equal exposure
+to the four factor funds within an equity sleeve and balances that sleeve
+against GLD using trailing 63-session volatility. The two variants compare
+monthly rebalancing with an additional daily 12% volatility target and
+5-percentage-point trade band. Neither uses QLD, leverage or fixed bond
+duration. Monthly requests are retained during modeled execution delays;
+pending targets cannot be overwritten. A volatility target is not a loss
+guarantee, and two allocation variants are not two newly discovered factors.
+
+From the workbench, after the explicit engine migration:
+
+```bash
+.venv/bin/python -I -B -m us_quant.factor_gold_risk prepare
+.venv/bin/python -I -B -m us_quant.factor_gold_risk register
+.venv/bin/python -I -B -m us_quant.factor_gold_risk evaluate
+```
+
+Preparation verifies and freezes real inputs but does not compute strategy
+performance. Registration goes through the actual recurring program before
+evaluation. Outcomes go through its market/target/cost and independent `bt`
+replay, not a parallel success flag. Already registered or reviewed work is
+preserved and resumed without duplicating trials.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
