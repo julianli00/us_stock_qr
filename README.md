@@ -1499,8 +1499,12 @@ cd research/workbench
 ```
 
 Preparation revalidates the original ETF panels and actual credit timing
-without computing strategy outcomes. Register both fixed rules before
-the source-bound evaluator. Original costs, execution delays, fresh
+without computing strategy outcomes. Both
+[fixed rules are registered before outcomes](research/workbench/evidence/credit_factor_guard_20261011_registration.json).
+Exact-anchor engine migration preserved all 106 prior configurations,
+22 completed reviews and the two terminal invalid code versions. The
+two credit candidates are pending, not completed evaluations. Original
+costs, execution delays, fresh
 capital and Sharpe/SPY/drawdown goals stay unchanged. The existing data-only
 prospective archive does not yet contain BAA10Y; no new independent
 credit-strategy observations or future results are claimed.
