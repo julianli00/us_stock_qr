@@ -1207,6 +1207,40 @@ merely to cross one on the exposed sample. Daily collection again skipped
 the existing October 9 baseline; there are still zero new prospective
 observations and no strategy-return proof.
 
+### Joint versus component trend risk gates
+
+`config/trend-factor-guard.json` freezes two risk-management hypotheses
+after 102 completed configurations, without changing factor rankings or
+adding an economic factor definition. Both start from the unchanged
+four-factor/gold monthly risk targets. At every completed close, a strict
+200-session moving-average gate can disable risk; the removed weight goes
+to actual BIL, never into a larger surviving risk sleeve.
+
+The joint variant observes an **untraded signal index** compounded from
+daily returns and the baseline target known at the preceding close. The
+component variant separately gates an equal-weight four-factor return index
+and GLD. These indices are not cost-free account returns or investment
+evidence. Missing pre-target history is not filled with artificial cash
+observations. Only complete 200-observation windows can issue decisions.
+Both methods request orders on gate changes and month-end target updates;
+unchanged daily states do not rebalance.
+
+This daily adaptation is motivated by Faber's 2007 article,
+DOI [`10.3905/jwm.2007.674809`](https://doi.org/10.3905/jwm.2007.674809),
+not a replication of its monthly ten-month timing rule. Trend risk gates
+can whipsaw, gap through a threshold and incur extra costs. They do not
+guarantee a maximum drawdown or Sharpe above one.
+
+```bash
+cd research/workbench
+.venv/bin/python -I -B -m us_quant.trend_factor_guard
+```
+
+Preparation revalidates and reuses the old hashed actual-fund snapshots;
+it computes no strategy outcomes. Register both fixed implementations
+before evaluation, retaining the original dual windows, execution delays,
+capital, costs and Sharpe/SPY/drawdown gates.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
