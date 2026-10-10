@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "study_id": "volatility_term_risk_20261010",
+  "prior_evaluated_configurations": 90,
+  "new_configurations": 2,
+  "data_scope": "factor_etf_portfolio",
+  "as_of": "2026-10-05",
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "factor_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "risk_indicator": "VIX/VIX3M",
+  "risk_off_threshold": 1.0,
+  "capital_usd": 10000,
+  "cash_reserve": 0.02,
+  "source_urls": {
+    "VIX": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv",
+    "VIX3M": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX3M_History.csv"
+  },
+  "candidates": [
+    {"id": "factor_gold_term_half_risk", "inverted_equity_scale": 0.5},
+    {"id": "factor_gold_term_equity_exit", "inverted_equity_scale": 0.0}
+  ],
+  "methodology": {
+    "baseline": "Use the existing unleveraged equal-four-factor/gold monthly inverse-volatility risk balance with63observed sessions and30%-70%equity share. Its fixed code is included in the new registration hashes.",
+    "new_information": "Cboe VIX measures30-day option-implied volatility; VIX3M measures the longer three-month horizon. Their relative level is risk information from option prices, not another equity moving-average parameter.",
+    "indicator_not_investment": "The indices are not traded or included in portfolio returns. Cboe CLOSE observations are used after their daily publication; first-known intraday availability is not proven by this historical download.",
+    "rule": "After a daily close, if VIX is greater than or equal to VIX3M, multiply the equity sleeve by the fixed candidate scale and transfer removed equity exposure to BIL. Preserve gold allocation and relative weights of the four equity factors. Restore the known monthly allocation when inversion ends.",
+    "orders": "Issue an absolute target on a month-end allocation or a change of the binary risk state. Daily dated targets execute on distinct subsequent opens after1or2sessions. Queued targets are not overwritten, and no current-close information affects an earlier opening fill.",
+    "costs": "Unchanged USD10,000,2%target idle cash,USD1per order,5bp next-open base and20bp extra-session stress. No leverage, derivatives trading or synthetic returns.",
+    "data": "Official Cboe CSVs cover every required trading session. VIX3M downloaded history starts2009-09-18, not the earlier date claimed by some summaries. Source bytes and dates are frozen; no forward fill.",
+    "interpretation": "Two risk-overlay configurations on existing factor exposures. This is not a newly verified independent alpha factor or an exact VIX trading strategy.",
+    "multiple_testing": "Proposed after90prior configurations; retain both outcomes and no subsequent threshold search. The same historical ten/five-year and risk/benchmark gates remain in force.",
+    "sources": ["https://www.cboe.com/us/indices/dashboard/VIX3M/", "https://www.cboe.com/en/tradable-products/vix/vix-historical-data/"],
+    "order_authority": false,
+    "independent_forward_validation": false
+  }
+}

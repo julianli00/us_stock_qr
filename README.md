@@ -719,6 +719,35 @@ fallback allocation or warning suppression converted a failure to success.
 The [sixth weekly snapshot](research/workbench/evidence/research_program_2026-W41_results_v6.json)
 retains 90 completed configurations and an empty research-champion slot.
 
+### Option-implied term-structure risk information
+
+The next two preregistered risk overlays use official Cboe daily VIX and
+VIX3M observations. These indices measure different option-implied volatility
+horizons; they are risk inputs, not tradable holdings or fabricated index
+returns. The [source manifest](research/workbench/evidence/volatility_term_source_20261010.json)
+records complete coverage of the existing ETF research sessions. The actual
+downloaded VIX3M series starts September 18, 2009; no earlier history is assumed.
+
+`config/volatility-term-risk.json` fixes the inversion boundary at VIX
+greater than or equal to VIX3M. On inversion, the candidates either halve
+or remove the equity sleeve of the unchanged four-factor/gold monthly risk
+balance, moving the reduction to BIL while retaining gold. Month-end changes
+and binary state transitions issue dated absolute targets for subsequent
+opens. Costs and delayed-stress execution remain unchanged. No threshold
+grid, index trading, same-close fill or missing-session forward fill is allowed.
+
+```bash
+.venv/bin/python -I -B -m us_quant.volatility_term_risk prepare
+.venv/bin/python -I -B -m us_quant.volatility_term_risk register
+.venv/bin/python -I -B -m us_quant.volatility_term_risk evaluate
+```
+
+This adds option-implied risk information rather than modifying the rejected
+adaptive allocator. It is not yet evidence of incremental alpha. All
+candidate outcomes must still go through the existing recurring reviewer.
+Historical end-of-day index availability is not an independently proven
+intraday release timestamp and cannot authorize a live decision.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
