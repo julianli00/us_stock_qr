@@ -1296,7 +1296,7 @@ Daily gate changes increase order tickets and charged turnover: component
 five-year stress pays USD2,153.83 across 615 tickets. Risk reduction and
 whipsaw costs are not new factor alpha or a guaranteed risk ceiling.
 
-The [latest ledger snapshot](research/workbench/evidence/research_program_2026-W41_results_v22.json)
+The [trend-guard ledger snapshot](research/workbench/evidence/research_program_2026-W41_results_v22.json)
 retains **104 complete configurations, 20 completed reviews, two terminal
 strategy-code failures, one separately preserved/resolved accounting
 incident, no pending candidates and no qualified research champion**.
@@ -1355,6 +1355,36 @@ pending; no new independent factor family or completed evaluation is
 claimed. Use the generic versioned-accounting evaluator and retain all
 costs, delay and full gates. Actual fund returns are not a recreated
 proprietary stock-score strategy or independent forward evidence.
+
+The [completed implementation results](research/workbench/evidence/momentum_implementation_20261011_results.json)
+reject both alternatives:
+
+| Momentum-family implementation | Ten-year base/stress Sharpe | Five-year base/stress Sharpe | Ten/five-year base drawdown |
+|---|---|---|---|
+| PDP only | 0.8594 / 0.8295 | 0.9089 / 0.8634 | 20.25% / 18.14% |
+| Equal MTUM/PDP | 0.8764 / 0.8473 | 0.9277 / 0.8846 | 20.23% / 18.23% |
+
+Both beat SPY's five-year CAGR but not its ten-year CAGR; every path misses
+the net Sharpe and retained drawdown gates. The
+[matched-budget attribution](research/workbench/evidence/momentum_implementation_20261011_attribution.json)
+confirms identical target issue dates, momentum-family totals, other factor
+budgets and equity/gold totals. Net Sharpe and CAGR are lower than the
+already evaluated MTUM control in all eight comparisons.
+PDP/MTUM daily return correlations are 0.931/0.907 for ten/five years;
+the different implementation is not an independent return source.
+Adding the second momentum fund raises five-year tickets from 305 to 366,
+and five-year stress costs from USD434.31 for full PDP to USD496.29 for
+the implementation mix. No mix optimization is justified by these outcomes.
+
+The [latest program state](research/workbench/evidence/research_program_2026-W41_results_v24.json)
+retains **106 complete configurations, 22 reviews, two terminal invalid
+strategy-code versions, the separately resolved accounting incident, no
+pending candidates and no qualified research champion**.
+The [88-path read-only audit](research/workbench/evidence/research_program_source_bound_audit_v5.json)
+preserves all outcomes, including 19 legacy-engine reviews and three
+explicit version-two reviews. The newly verified history does not create
+future observations; daily collection still has one baseline and zero
+post-baseline observations.
 
 ## Progress and publication
 
