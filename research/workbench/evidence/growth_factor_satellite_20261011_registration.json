@@ -1,0 +1,233 @@
+{
+  "candidates": [
+    {
+      "registration": {
+        "candidate_id": "four_factor_daily_target_control",
+        "data_scope": "factor_etf_portfolio",
+        "families": [
+          "earnings_quality",
+          "low_volatility",
+          "momentum",
+          "value"
+        ],
+        "order_authority": false,
+        "readiness_sha256": "4b932f026350716c17e79cb68e3ebf292d2702c2cf2a273a966e4c4395c83fd2",
+        "registered_at": "2026-10-10T17:27:49.576785+00:00",
+        "spec_sha256": "f896e81edd5e6b570faa642667aa3c06f1481ec5dc04d6aef48d45017c4276ae"
+      },
+      "spec": {
+        "asset_leverage": {
+          "BIL": 1.0,
+          "GLD": 1.0,
+          "IEF": 1.0,
+          "MTUM": 1.0,
+          "QQQ": 1.0,
+          "QUAL": 1.0,
+          "SPY": 1.0,
+          "TLT": 1.0,
+          "USMV": 1.0,
+          "VLUE": 1.0
+        },
+        "configuration": {
+          "growth_share_of_equity": 0.0,
+          "id": "four_factor_daily_target_control"
+        },
+        "data_scope": "factor_etf_portfolio",
+        "evaluation_as_of": "2026-10-05",
+        "factor_ids": [
+          "price_momentum",
+          "value_exposure",
+          "quality_exposure",
+          "low_volatility_exposure"
+        ],
+        "frozen_files": {
+          "config/growth-factor-satellite.json": "7f53dffeafdea3211980a7c6704c450f6142ff99fbf1332772f6e5969bd9b837",
+          "src/us_quant/growth_factor_satellite.py": "a83f647efa43becd7538c421ff3ba512f6951f6f2f90e8a447b53732e8b18f90"
+        },
+        "history_status": "exposed_history_not_independent_holdout",
+        "id": "four_factor_daily_target_control",
+        "leveraged_products_allowed": false,
+        "market": {
+          "close": {
+            "path": "data/growth-factor-satellite-20261011/close.csv",
+            "sha256": "274b9ae54ae2809b63ca280209f35a65046b913ea5f4c1de74b47e5de1a19e23"
+          },
+          "open": {
+            "path": "data/growth-factor-satellite-20261011/open.csv",
+            "sha256": "ffb261dd3a7220675e484df51f85bb9bd3fa6a3a277c50affc7677c323e28daa"
+          },
+          "raw_close": {
+            "path": "data/growth-factor-satellite-20261011/raw_close.csv",
+            "sha256": "4c3e3d4a088844f4cb99f21fc536d04d0d841da654d25f1ad44485639f49edb8"
+          },
+          "risk_free": {
+            "path": "data/growth-factor-satellite-20261011/risk_free.csv",
+            "sha256": "3b59869f597ac9d2573ffca1616938da4c2df0da24bd38799ce3e39b1f0509cc"
+          },
+          "volume": {
+            "path": "data/growth-factor-satellite-20261011/volume.csv",
+            "sha256": "8a392c7da1bbc0230038b4c48a232923c86a1e43fd2fa30fca7eb2a352cf8343"
+          }
+        },
+        "order_authority": false
+      }
+    },
+    {
+      "registration": {
+        "candidate_id": "four_factor_growth_satellite50",
+        "data_scope": "factor_etf_portfolio",
+        "families": [
+          "earnings_quality",
+          "low_volatility",
+          "momentum",
+          "value"
+        ],
+        "order_authority": false,
+        "readiness_sha256": "4b932f026350716c17e79cb68e3ebf292d2702c2cf2a273a966e4c4395c83fd2",
+        "registered_at": "2026-10-10T17:27:51.666963+00:00",
+        "spec_sha256": "c0ed62493e35e59dab41f6ef9bbf1d435417008e65ad882cdff9a880193a4bd3"
+      },
+      "spec": {
+        "asset_leverage": {
+          "BIL": 1.0,
+          "GLD": 1.0,
+          "IEF": 1.0,
+          "MTUM": 1.0,
+          "QQQ": 1.0,
+          "QUAL": 1.0,
+          "SPY": 1.0,
+          "TLT": 1.0,
+          "USMV": 1.0,
+          "VLUE": 1.0
+        },
+        "configuration": {
+          "growth_share_of_equity": 0.5,
+          "id": "four_factor_growth_satellite50"
+        },
+        "data_scope": "factor_etf_portfolio",
+        "evaluation_as_of": "2026-10-05",
+        "factor_ids": [
+          "price_momentum",
+          "value_exposure",
+          "quality_exposure",
+          "low_volatility_exposure"
+        ],
+        "frozen_files": {
+          "config/growth-factor-satellite.json": "7f53dffeafdea3211980a7c6704c450f6142ff99fbf1332772f6e5969bd9b837",
+          "src/us_quant/growth_factor_satellite.py": "a83f647efa43becd7538c421ff3ba512f6951f6f2f90e8a447b53732e8b18f90"
+        },
+        "history_status": "exposed_history_not_independent_holdout",
+        "id": "four_factor_growth_satellite50",
+        "leveraged_products_allowed": false,
+        "market": {
+          "close": {
+            "path": "data/growth-factor-satellite-20261011/close.csv",
+            "sha256": "274b9ae54ae2809b63ca280209f35a65046b913ea5f4c1de74b47e5de1a19e23"
+          },
+          "open": {
+            "path": "data/growth-factor-satellite-20261011/open.csv",
+            "sha256": "ffb261dd3a7220675e484df51f85bb9bd3fa6a3a277c50affc7677c323e28daa"
+          },
+          "raw_close": {
+            "path": "data/growth-factor-satellite-20261011/raw_close.csv",
+            "sha256": "4c3e3d4a088844f4cb99f21fc536d04d0d841da654d25f1ad44485639f49edb8"
+          },
+          "risk_free": {
+            "path": "data/growth-factor-satellite-20261011/risk_free.csv",
+            "sha256": "3b59869f597ac9d2573ffca1616938da4c2df0da24bd38799ce3e39b1f0509cc"
+          },
+          "volume": {
+            "path": "data/growth-factor-satellite-20261011/volume.csv",
+            "sha256": "8a392c7da1bbc0230038b4c48a232923c86a1e43fd2fa30fca7eb2a352cf8343"
+          }
+        },
+        "order_authority": false
+      }
+    }
+  ],
+  "outcomes_computed": false,
+  "readiness": {
+    "QQQ_is_growth_beta_not_a_new_factor": true,
+    "capabilities": {
+      "actual_fund_history": {
+        "evidence_path": "config/growth-factor-satellite.json",
+        "evidence_sha256": "7f53dffeafdea3211980a7c6704c450f6142ff99fbf1332772f6e5969bd9b837",
+        "verified": true
+      },
+      "factor_mandates": {
+        "evidence_path": "config/growth-factor-satellite.json",
+        "evidence_sha256": "7f53dffeafdea3211980a7c6704c450f6142ff99fbf1332772f6e5969bd9b837",
+        "verified": true
+      },
+      "post_inception_and_actions": {
+        "evidence_path": "config/growth-factor-satellite.json",
+        "evidence_sha256": "7f53dffeafdea3211980a7c6704c450f6142ff99fbf1332772f6e5969bd9b837",
+        "verified": true
+      },
+      "unleveraged_fund_identity": {
+        "evidence_path": "config/growth-factor-satellite.json",
+        "evidence_sha256": "7f53dffeafdea3211980a7c6704c450f6142ff99fbf1332772f6e5969bd9b837",
+        "verified": true
+      }
+    },
+    "checked_at": "2026-10-10T17:27:06.442200+00:00",
+    "data_scope": "factor_etf_portfolio",
+    "schema_version": 1,
+    "stock_fundamental_data_still_blocked": true,
+    "verified_etf_source": {
+      "adapter": "growth_factor_satellite_20261011",
+      "policy": "config/growth-factor-satellite.json",
+      "policy_sha256": "7f53dffeafdea3211980a7c6704c450f6142ff99fbf1332772f6e5969bd9b837"
+    }
+  },
+  "study": {
+    "as_of": "2026-10-05",
+    "candidates": [
+      {
+        "growth_share_of_equity": 0.0,
+        "id": "four_factor_daily_target_control"
+      },
+      {
+        "growth_share_of_equity": 0.5,
+        "id": "four_factor_growth_satellite50"
+      }
+    ],
+    "cash_reserve": 0.02,
+    "equity_share_max": 0.7,
+    "equity_share_min": 0.3,
+    "factor_ids": [
+      "price_momentum",
+      "value_exposure",
+      "quality_exposure",
+      "low_volatility_exposure"
+    ],
+    "factor_symbols": [
+      "MTUM",
+      "VLUE",
+      "QUAL",
+      "USMV"
+    ],
+    "growth_asset": "QQQ",
+    "growth_asset_is_new_factor": false,
+    "methodology": {
+      "attribution": "Any improvement may come from growth/technology market beta, not independent factor alpha. No diversification benefit is assumed; risk/return outcomes must be reported against the matched control.",
+      "controlled_comparison": "Keep identical equity/gold risk balance, daily volatility target and target-change band. Compare the original four-factor equity sleeve against a50%four-factor/50%unleveragedNasdaq100equity sleeve.",
+      "costs": "Same USD10,000,USD1per order,5bpnext-open base and20bpone-extra-session stress. The source-bound generic reviewer regenerates every target and cash path.",
+      "daily_risk": "Project the latest monthly target to12%predicted annual volatility using trailing63-session covariance, including BIL. Scale down all risky positions together and put the reduction in BIL. Never lever up.",
+      "data": "QQQ comes from the same previously audited original source manifest as SPY and defensive ETFs. No new provider vintage, synthetic history or leverage.",
+      "factor_core": "The four factor ETFs are equally weighted inside the factor core. The satellite cannot replace the entire core or be presented as a new economic factor.",
+      "independent_forward_validation": false,
+      "order_authority": false,
+      "risk_balance": "At completed month ends, estimate63-session volatility of the actual composed equity sleeve and GLD. Inverse-volatility balance them with30%-70%equity bounds and2%idle cash.",
+      "selection_bias": "This fixed experiment is motivated after96prior trials. No growth-weight grid or subsequent volatility/band tuning is permitted in this version.",
+      "trading": "Emit a target at month ends or when the projected allocation differs by at least5percentage points from the last issued target. This is target-change hysteresis, not an actual-position or continuous drawdown guarantee."
+    },
+    "new_configurations": 2,
+    "prior_evaluated_configurations": 96,
+    "schema_version": 1,
+    "study_id": "growth_factor_satellite_20261011",
+    "target_change_band": 0.05,
+    "target_volatility": 0.12,
+    "volatility_sessions": 63
+  }
+}
