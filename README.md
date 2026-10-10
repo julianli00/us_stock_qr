@@ -1722,6 +1722,42 @@ evaluate performance. They do not fabricate a registration receipt or
 pretend prepared targets establish Sharpe above one. Both data baselines
 and the earlier performance/selection limitations remain unchanged.
 
+### Prospective target provenance, not execution or performance
+
+`config/prospective-target-observations.json` freezes an independent
+observation profile for the already registered `macro_real_yield_factor_tilt`
+rule. This candidate **failed the historical qualification gates** and
+remains rejected; recording its future targets does not promote it or claim
+a profitable strategy.
+
+The observer reuses the exact original rule and parameters with an actually
+captured same-session parent ETF/macro snapshot. It records the real
+generation time, original source receipt and most recent completed rule
+month. The initial target is generated from the latest known completed
+month, not backdated to that month's close. New input days cannot silently
+retune an old monthly target; it is retained until a newly observed completed
+month exists.
+
+Hypothetical base/stress execution dates are later than the actual observed
+market session. They are **not fills or submitted orders**. The journal
+never creates positions, computes P&L, starts a portfolio or changes the
+research champion. Data gaps stay explicit and cannot become manufactured
+earlier signals or proof of continuous forward performance.
+
+```bash
+cd research/workbench
+.venv/bin/python -I -B -m us_quant.prospective_target_observations init
+.venv/bin/python -I -B -m us_quant.prospective_target_observations collect
+.venv/bin/python -I -B -m us_quant.prospective_target_observations status
+```
+
+Initialize only this new named observation journal, never the existing
+data archives or old paused strategy ledgers. Source code/parameters and
+the original rejected status must verify. Capture is restricted to actual
+known inputs before the next open; same-session duplicates do not regenerate
+targets. The existing 108 historical configurations and queued six-family
+definitions/candidates remain unchanged.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

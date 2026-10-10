@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "observer_id": "prospective_rejected_candidate_targets_v1",
+  "parent_policy": "config/prospective-data.json",
+  "parent_archive": "data/prospective-market-v1",
+  "source_registration": {
+    "path": "evidence/macro_tilt_20261010_registration.json",
+    "sha256": "172fde23ff19e0a42c9c46f492d1230f88c2036e409f643148f862f2ff840e25"
+  },
+  "source_candidate_id": "macro_real_yield_factor_tilt",
+  "source_candidate_spec_sha256": "b9a581c1dac686b26fa780fb97fbea76521e7b1d9e9522408ac89396f3d549c2",
+  "required_original_review_status": "rejected_historical",
+  "initial_target_from_latest_known_completed_month": true,
+  "update_only_for_new_completed_month": true,
+  "retain_recorded_target_when_no_new_month": true,
+  "target_investment_budget": 0.98,
+  "hypothetical_base_delay_sessions": 1,
+  "hypothetical_stress_delay_sessions": 2,
+  "compute_strategy_returns": false,
+  "initialize_portfolio": false,
+  "submit_orders": false,
+  "update_research_champion": false,
+  "order_authority": false,
+  "purpose": "Record a previously registered but rejected rule's target from inputs actually known before a possible later execution session. This is a target-observation experiment,not deployment or a new historical backtest.",
+  "limitations": "The rule was chosen after exposed historical research and remains unqualified. A recorded target is not a fill,account return,Sharpe estimate or independent strategy qualification. Actual generation time must not be relabelled as the source month's historical close. The initial target and missed-month recovery use only the latest actually captured snapshot,not fabricated earlier decisions."
+}
