@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "study_id": "growth_portfolio_protection_20261011",
+  "data_scope": "factor_etf_portfolio",
+  "as_of": "2026-10-05",
+  "prior_evaluated_configurations": 108,
+  "new_configurations": 2,
+  "new_economic_factor_definitions": 0,
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "factor_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "growth_share_of_equity": 0.50,
+  "drawdown_target": 0.15,
+  "actual_weight_trade_band": 0.05,
+  "cash_reserve": 0.02,
+  "capital_usd": 10000.0,
+  "commission_per_order": 1.0,
+  "candidates": [
+    {"id": "four_factor_growth_gold_monthly_control", "portfolio_insurance": false},
+    {"id": "four_factor_growth_gold_ratchet_protection", "portfolio_insurance": true}
+  ],
+  "methodology": {
+    "core": "Reuse composed_monthly_target from the frozen growth-satellite helper:half of equity in actual unleveragedQQQ,and half equally divided across4existing factor families. Monthly inverse63-session aggregate-equity/gold volatility balance with30%-70%equity bounds. No daily12%volatility cap in this new control.",
+    "protection": "Ratchet a floor to85%of the highest actual closing model-account NAV,including initialUSD10,000anchor. At a known close scale the monthly non-BIL target by the positive wealth cushion divided by15%of currentNAV,capped at1. The implied cushion multiplier is1/0.15,derived from the retained drawdown target rather than fitted.",
+    "cash": "The control keeps98%target investment. The protected portfolio moves every removed risky weight to actualBIL,with no borrowing,synthetic interest or upward leverage. All4economic equity families remain proportional within the current risky core.",
+    "trigger": "Initial and monthly updates request trades. Between month ends,only the protected rule trades when some desired target differs from actual closing holding weight by at least5percentage points. High-water mark and cushion update only from already realized closing NAV.",
+    "pending": "One pending request at a time;fills at its original delayed open,never overwritten. A monthly update that occurs while another request is pending remains requested until the next eligible close. Protection depends on cost/delay/fresh-window account state and must regenerate separately for every path.",
+    "execution": "PreserveUSD10,000fresh10y/5yaccounts,USD1tickets,5bpnext-openbaseand20bpextra-sessionstress. Versioned funded-accounting replay and independentbt required;original netSharpe/SPY/15%drawdown gates unchanged.",
+    "limitations": "This is an unleveraged ratcheted-floor adaptation motivated byCPPI,not the paper's exact implementation or guaranteed capital protection. Gaps,execution delay,trade band,costs and cash lock-in can breach the target or reduce return.",
+    "factors": "QQQis concentrated growth/market beta,not an independent fifth factor or a new definition. This experiment uses only already registered families;it does not register queued IJR/PKWearly,change their Oct17eligibility or compute six-family outcomes.",
+    "selection": "Two fixed hypotheses after108exposed historical configurations,no multiplier/window/asset-share grid. Historical qualification would still not establish independent forward results;the prior22candidate selection diagnostic does not cover these new candidates.",
+    "source": "Original actual growth/factor/defense snapshots and helper versions remain frozen. Current17source prospective archive does not includeQQQ,so no prospective performance for this new study is claimed.",
+    "reference": {
+      "title": "Theory of constant proportion portfolio insurance",
+      "authors": "Black and Perold",
+      "year": 1992,
+      "doi": "10.1016/0165-1889(92)90043-e",
+      "url": "https://doi.org/10.1016/0165-1889(92)90043-e"
+    },
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

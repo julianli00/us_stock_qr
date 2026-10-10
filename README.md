@@ -1914,6 +1914,46 @@ completed configurations, 24 reviews and future-cycle eligibility remain
 unchanged. Greater diversification must be verified in an actual
 portfolio, not inferred simply by counting economic labels.
 
+### Growth/factor/gold core with ratcheted portfolio protection
+
+`config/growth-portfolio-protection.json` freezes two experiments using only
+the four **already registered** families and actual unleveraged QQQ/GLD
+inputs. They do not advance the queued size/share-issuance registration,
+change weekly-definition eligibility or compute queued six-family outcomes.
+QQQ is growth/market beta, not an independent new alpha family.
+
+The monthly control reuses the frozen growth-satellite composition/risk
+helper but does not impose its earlier daily 12% volatility cap. Half of
+the equity sleeve goes to QQQ; the other half remains equally allocated to
+the four factor funds. Equity/gold inverse-volatility balance and the
+30%-70% equity bounds stay unchanged.
+
+The second rule adds an unleveraged ratcheted-floor adaptation motivated by
+Black and Perold's [1992 CPPI paper](https://doi.org/10.1016/0165-1889(92)90043-e).
+The wealth floor is 85% of the highest actual closing account NAV,
+including initial capital. Risk scaling is derived from the retained
+15% drawdown target, capped at the monthly cash-funded budget; reduced
+investment goes to actual BIL. There is no fitted cushion multiplier,
+borrowed capital, synthetic interest or risk-ceiling guarantee.
+
+Targets depend on fresh-window capital, incurred fees and execution delay,
+so each path regenerates its own causal decisions. A five-percentage-point
+actual-holdings band limits daily requests, pending targets are never
+overwritten, and monthly updates remain queued until eligible. Gaps,
+delayed execution, costs and cash lock-in can still defeat the drawdown or
+return goals; this is not a paper replication or guaranteed insurance.
+
+```bash
+cd research/workbench
+.venv/bin/python -I -B -m us_quant.growth_portfolio_protection
+```
+
+Preparation revalidates the original growth ETF snapshot and computes no
+outcomes. Register both fixed rules before the generic source-bound evaluator.
+All original dual-window costs, Sharpe/SPY/drawdown criteria and paused
+ledgers remain unchanged. The current prospective archive lacks QQQ;
+no independent future result for this new study is claimed.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

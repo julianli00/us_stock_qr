@@ -23,6 +23,7 @@ GENERATORS = {
     "momentum_implementation": "config/momentum-implementation.json",
     "credit_factor_guard": "config/credit-factor-guard.json",
     "six_factor_strategy": "config/six-factor-strategy.json",
+    "growth_portfolio_protection": "config/growth-portfolio-protection.json",
 }
 
 
@@ -88,6 +89,13 @@ def registered_generator(spec: dict, root: Path) -> tuple[str, dict]:
                 "src/us_quant/factor_replication.py",
                 "data/new-factor-family-source-20261011/manifest.json",
             ]
+        elif name == "growth_portfolio_protection":
+            required += [
+                "src/us_quant/growth_factor_satellite.py",
+                "config/growth-factor-satellite.json",
+                "src/us_quant/multifactor_stability.py",
+                "src/us_quant/cash_funded_accounting_v2.py",
+            ]
         if any(relative not in frozen for relative in required):
             raise QuantError("The registered strategy is missing a frozen helper dependency.")
         for relative in required:
@@ -142,6 +150,12 @@ def registered_targets(
         from us_quant.factor_replication import run
 
         return run(data, candidate, policy, start, end, cost, delay)[1]
+    if name == "growth_portfolio_protection":
+        from us_quant.growth_portfolio_protection import monthly_targets, run
+
+        if key not in cache:
+            cache[key] = monthly_targets(data, policy)
+        return run(data, cache[key], candidate, policy, start, end, cost, delay)[1]
     if key not in cache:
         if name == "adaptive_factor_allocation":
             from us_quant.adaptive_factor_allocation import build_targets
