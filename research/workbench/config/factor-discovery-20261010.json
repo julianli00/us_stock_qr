@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "factors": [
+    {
+      "id": "cashflow_accrual_quality_v1",
+      "family": "earnings_quality",
+      "name": "Cash-flow-based accrual quality",
+      "definition": "Annual operating cash flow minus annual net income, divided by average beginning/end fiscal-year assets; higher means more cash-backed earnings.",
+      "direction": "higher",
+      "inputs": ["NetCashProvidedByUsedInOperatingActivities", "NetIncomeLoss", "Assets", "prior_Assets", "filing_date", "accession"],
+      "parameters": {"period": "annual", "availability": "first_complete_NYSE_session_after_filing"},
+      "sources": [
+        "https://www.jstor.org/stable/248290",
+        "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1793364"
+      ],
+      "rationale": "Cash and accrual components can differ in persistence. This cash-flow proxy is related to the accrual literature, not an exact replication of Sloan's original balance-sheet construction.",
+      "limitations": "Accrual quality is related to existing quality exposures, not a proven independent alpha source. Firms with different industries/accounting treatments require comparability checks."
+    },
+    {
+      "id": "conservative_asset_growth_v1",
+      "family": "investment",
+      "name": "Conservative asset growth",
+      "definition": "One minus fiscal-year ending assets divided by beginning assets; higher corresponds to lower annual asset growth.",
+      "direction": "higher",
+      "inputs": ["Assets", "prior_Assets", "fiscal_period", "filing_date", "accession"],
+      "parameters": {"period": "annual", "availability": "first_complete_NYSE_session_after_filing"},
+      "sources": [
+        "https://doi.org/10.1111/j.1540-6261.2008.01370.x"
+      ],
+      "rationale": "Conservative investment may differ from high-growth extrapolation. Corporate acquisitions, divestitures and changing accounting scope must remain visible rather than be removed after seeing returns.",
+      "limitations": "A factor definition is not proof of profitability. Security identities, fiscal-period alignment, delisting returns and complete historical membership are required."
+    }
+  ],
+  "candidate_strategy_created": false,
+  "strategy_return_claim": false
+}

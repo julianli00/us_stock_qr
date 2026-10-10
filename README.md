@@ -447,6 +447,90 @@ historical comparison, not promoted as a suitable solution to the new risk
 preference. No replacement or live recommendation is authorized by these
 results.
 
+## Recurring factor discovery and research versions
+
+The recurring program in `research/workbench/config/research-program.json`
+separates new factor **definitions**, registered strategy **configurations**,
+audited historical results and actual independent forward evidence. Its
+weekly cadence is Saturday 09:00 Asia/Shanghai, with at most two new economic
+definitions per cycle. The Copilot session automation performs the literature
+and implementation work; the CLI below enforces the journal and review
+boundaries. The CLI does not independently invent factors, download arbitrary
+code or execute commands stored in a proposal.
+
+The original four studied factor families are retained as references.
+This first new discovery batch proposes cash-flow accrual quality and
+conservative asset growth. Cash-flow accrual quality is related to the
+already studied earnings-quality family, not a new independent source of
+alpha. `fundamental_signals.py` reuses the filing-time, period-matched
+financial helpers to compute both features without changing the frozen
+imported module. Unit fixtures establish calculation behavior, not profitable
+stock selection.
+
+Actual public SEC Company Facts requests returned HTTP 403. The
+[source availability evidence](research/workbench/evidence/factor_program_source_availability_20261010.json)
+and [readiness record](research/workbench/evidence/research_program_data_readiness_20261010.json)
+also disclose the missing historical security master, constituent membership,
+delisting returns and matched stock prices. A two-company sample, current
+stock list or fabricated data must not substitute for these requirements.
+No new stock strategy has been evaluated from the new proposals.
+
+From the isolated `research/workbench` environment:
+
+```bash
+# Initialize once; existing ledgers cannot be reset with this command.
+.venv/bin/python -I -B -m us_quant.research_program init
+.venv/bin/python -I -B -m us_quant.research_program cycle \
+  --proposals config/factor-discovery-20261010.json \
+  --readiness evidence/research_program_data_readiness_20261010.json
+.venv/bin/python -I -B -m us_quant.research_program status
+```
+
+The private, ignored SQLite journal is `runtime/research-program.sqlite3`.
+Transactions and ISO-week keys prevent concurrent/restarted cycles from
+registering duplicates. The event hash chain, policy/engine binding and
+reconstructed factor/candidate/review records detect altered or removed
+history. Reusing a factor under another name does not create a new trial.
+Proposals and data-blocked cycles do not increment the 84 previously
+evaluated configurations. Readiness must be checked within eight days;
+verified capabilities require hashed evidence, not a missing-data default.
+These readiness attestations still require source/coverage review: a hash
+does not itself establish point-in-time completeness.
+
+Once data is genuinely available, `register-candidate --candidate <spec.json>
+--readiness <readiness.json>` freezes at least three economic factor families,
+code/configuration hashes, actual market panels, instrument leverage and the
+evaluation cutoff **before** testing. A candidate specification supplies
+`id`, `factor_ids`, `frozen_files`, `asset_leverage`, `evaluation_as_of`,
+`market`, `history_status: exposed_history_not_independent_holdout`,
+`leveraged_products_allowed: false` and `order_authority: false`.
+`market` holds `open`, `close`, `raw_close`, `volume`, and `risk_free`
+CSV references, each with a workbench-relative `path` and `sha256`.
+
+`review --candidate-id <id> --bundle <bundle.json>` does not trust a submitted
+Sharpe number or a success boolean. The bundle repeats the frozen market,
+cutoff and candidate-spec hash and supplies four `paths`: ten/five years
+under base/stress conditions. Each path includes hashed strategy, `strategy_bt`,
+SPY, `spy_bt`, weights and target CSVs, plus the prescribed capital, costs,
+commission and delay. The reviewer reexecutes the original simulator and
+independent `bt` engine from market data/targets, reconstructs metrics and
+weights, and checks the exact date ranges. Only net excess Sharpe above one,
+drawdown at most 15% and outperformance of SPY in all four paths can qualify.
+Stressed strategies must also exceed base-cost SPY.
+
+Qualified results may advance the **research** version ranked by worst-path
+Sharpe; rejected versions stay recorded. This is not trading promotion.
+The program never enables brokerage submission, automatically deploys a
+live strategy, invents forward observations or resumes old paused ledgers.
+The recorded 63-session forward-review requirement is a future minimum,
+not evidence already collected and not proof of long-run performance.
+Versioned `--export` snapshots cannot overwrite changed earlier exports.
+
+The app and host must be available for session automation to run; a saved
+schedule is not proof of an actual future execution. Integrity errors must
+pause automation for review; supplier access failures are recorded as data
+blockers, never bypassed with fake prices or silently relaxed objectives.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
