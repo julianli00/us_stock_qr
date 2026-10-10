@@ -1,0 +1,249 @@
+{
+  "candidates": [
+    {
+      "registration": {
+        "candidate_id": "four_factor_static70_gold30",
+        "data_scope": "factor_etf_portfolio",
+        "families": [
+          "earnings_quality",
+          "low_volatility",
+          "momentum",
+          "value"
+        ],
+        "order_authority": false,
+        "readiness_sha256": "2fb6af5b41e2a526c8b31aa1d8de683dc149babc4c04143e79992f0555c57a00",
+        "registered_at": "2026-10-10T15:18:16.972581+00:00",
+        "spec_sha256": "63c53fc96f8ee513478c209b9fd2ac748758c7cd5ac5c04818dfa75b06521c41"
+      },
+      "spec": {
+        "asset_leverage": {
+          "BIL": 1.0,
+          "GLD": 1.0,
+          "IEF": 1.0,
+          "MTUM": 1.0,
+          "QUAL": 1.0,
+          "SPY": 1.0,
+          "USMV": 1.0,
+          "VLUE": 1.0
+        },
+        "configuration": {
+          "id": "four_factor_static70_gold30",
+          "method": "static"
+        },
+        "data_scope": "factor_etf_portfolio",
+        "evaluation_as_of": "2026-10-05",
+        "factor_ids": [
+          "price_momentum",
+          "value_exposure",
+          "quality_exposure",
+          "low_volatility_exposure"
+        ],
+        "frozen_files": {
+          "config/adaptive-factor-allocation.json": "42486cf353c72a1e25485796edb26b4836e4247688793eb1eda24cd90584c020",
+          "src/us_quant/adaptive_factor_allocation.py": "11ccc7f167983166d34f787d81e12ed066b565a06385b9c0edb8f2f536cf9d2e"
+        },
+        "history_status": "exposed_history_not_independent_holdout",
+        "id": "four_factor_static70_gold30",
+        "leveraged_products_allowed": false,
+        "market": {
+          "close": {
+            "path": "data/adaptive-factors-20261010/close.csv",
+            "sha256": "b098f783bbf7a4ca56520e11c6e13edbb0eb2673ed7aaec02b89981ff74fabce"
+          },
+          "open": {
+            "path": "data/adaptive-factors-20261010/open.csv",
+            "sha256": "dc2e1cf8c83c8731a03452eec60ad3cc036b8534cfed94b054c8f883b459273f"
+          },
+          "raw_close": {
+            "path": "data/adaptive-factors-20261010/raw_close.csv",
+            "sha256": "82eae7514bf8de48bfe07cc72331ed758a27f561180ff5ad44d5d70e0dca71f9"
+          },
+          "risk_free": {
+            "path": "data/adaptive-factors-20261010/risk_free.csv",
+            "sha256": "3b59869f597ac9d2573ffca1616938da4c2df0da24bd38799ce3e39b1f0509cc"
+          },
+          "volume": {
+            "path": "data/adaptive-factors-20261010/volume.csv",
+            "sha256": "7ab6fbbe413fee994f65e27ebfbf15e28aa18055acdc12bd527918d5bbe60830"
+          }
+        },
+        "order_authority": false
+      }
+    },
+    {
+      "registration": {
+        "candidate_id": "four_factor_causal_mean_variance",
+        "data_scope": "factor_etf_portfolio",
+        "families": [
+          "earnings_quality",
+          "low_volatility",
+          "momentum",
+          "value"
+        ],
+        "order_authority": false,
+        "readiness_sha256": "2fb6af5b41e2a526c8b31aa1d8de683dc149babc4c04143e79992f0555c57a00",
+        "registered_at": "2026-10-10T15:18:18.085645+00:00",
+        "spec_sha256": "a31b54e28cd358a997174de091fc2526a1bacd07261ae21c97951142d905d93c"
+      },
+      "spec": {
+        "asset_leverage": {
+          "BIL": 1.0,
+          "GLD": 1.0,
+          "IEF": 1.0,
+          "MTUM": 1.0,
+          "QUAL": 1.0,
+          "SPY": 1.0,
+          "USMV": 1.0,
+          "VLUE": 1.0
+        },
+        "configuration": {
+          "id": "four_factor_causal_mean_variance",
+          "method": "adaptive"
+        },
+        "data_scope": "factor_etf_portfolio",
+        "evaluation_as_of": "2026-10-05",
+        "factor_ids": [
+          "price_momentum",
+          "value_exposure",
+          "quality_exposure",
+          "low_volatility_exposure"
+        ],
+        "frozen_files": {
+          "config/adaptive-factor-allocation.json": "42486cf353c72a1e25485796edb26b4836e4247688793eb1eda24cd90584c020",
+          "src/us_quant/adaptive_factor_allocation.py": "11ccc7f167983166d34f787d81e12ed066b565a06385b9c0edb8f2f536cf9d2e"
+        },
+        "history_status": "exposed_history_not_independent_holdout",
+        "id": "four_factor_causal_mean_variance",
+        "leveraged_products_allowed": false,
+        "market": {
+          "close": {
+            "path": "data/adaptive-factors-20261010/close.csv",
+            "sha256": "b098f783bbf7a4ca56520e11c6e13edbb0eb2673ed7aaec02b89981ff74fabce"
+          },
+          "open": {
+            "path": "data/adaptive-factors-20261010/open.csv",
+            "sha256": "dc2e1cf8c83c8731a03452eec60ad3cc036b8534cfed94b054c8f883b459273f"
+          },
+          "raw_close": {
+            "path": "data/adaptive-factors-20261010/raw_close.csv",
+            "sha256": "82eae7514bf8de48bfe07cc72331ed758a27f561180ff5ad44d5d70e0dca71f9"
+          },
+          "risk_free": {
+            "path": "data/adaptive-factors-20261010/risk_free.csv",
+            "sha256": "3b59869f597ac9d2573ffca1616938da4c2df0da24bd38799ce3e39b1f0509cc"
+          },
+          "volume": {
+            "path": "data/adaptive-factors-20261010/volume.csv",
+            "sha256": "7ab6fbbe413fee994f65e27ebfbf15e28aa18055acdc12bd527918d5bbe60830"
+          }
+        },
+        "order_authority": false
+      }
+    }
+  ],
+  "readiness": {
+    "capabilities": {
+      "actual_fund_history": {
+        "evidence_path": "config/multifactor-stability.json",
+        "evidence_sha256": "197892d844fd749c1ef06cda8b1eeb025b6edfe546e42f020dc721bc09209715",
+        "verified": true
+      },
+      "factor_mandates": {
+        "evidence_path": "config/multifactor-stability.json",
+        "evidence_sha256": "197892d844fd749c1ef06cda8b1eeb025b6edfe546e42f020dc721bc09209715",
+        "verified": true
+      },
+      "post_inception_and_actions": {
+        "evidence_path": "config/multifactor-stability.json",
+        "evidence_sha256": "197892d844fd749c1ef06cda8b1eeb025b6edfe546e42f020dc721bc09209715",
+        "verified": true
+      },
+      "unleveraged_fund_identity": {
+        "evidence_path": "config/multifactor-stability.json",
+        "evidence_sha256": "197892d844fd749c1ef06cda8b1eeb025b6edfe546e42f020dc721bc09209715",
+        "verified": true
+      }
+    },
+    "checked_at": "2026-10-10T15:18:14.434717+00:00",
+    "data_scope": "factor_etf_portfolio",
+    "new_market_observations": false,
+    "schema_version": 1,
+    "stock_data_still_blocked": true,
+    "verified_etf_source": {
+      "adapter": "frozen_multifactor_etf_20261010",
+      "base_manifest": "data/factor-round-20261007/base/manifest.json",
+      "base_manifest_sha256": "8cc85f89a05c0324571abc1cb44d8a1d7dfd76d55271f34ad4da973e5c0f9f6d",
+      "factor_manifest": "data/multifactor-stability-20261010/manifest.json",
+      "factor_manifest_sha256": "ea128cfe0fa71db93080234787f0779f0236b88466ab01f8e78336bc03652aa5",
+      "policy": "config/multifactor-stability.json",
+      "policy_sha256": "197892d844fd749c1ef06cda8b1eeb025b6edfe546e42f020dc721bc09209715",
+      "registration": "evidence/multifactor_stability_20261010_registration_v2.json",
+      "registration_sha256": "721932a098fb8061d58e8c402bb74ade08512007c13f17be91512c2b4f940d8e"
+    }
+  },
+  "study": {
+    "as_of": "2026-10-05",
+    "candidates": [
+      {
+        "id": "four_factor_static70_gold30",
+        "method": "static"
+      },
+      {
+        "id": "four_factor_causal_mean_variance",
+        "method": "adaptive"
+      }
+    ],
+    "capital_usd": 10000.0,
+    "cash_reserve": 0.02,
+    "covariance_diagonal_shrinkage": 0.1,
+    "data_scope": "factor_etf_portfolio",
+    "factor_ids": [
+      "price_momentum",
+      "value_exposure",
+      "quality_exposure",
+      "low_volatility_exposure"
+    ],
+    "factor_max_total_weight": 0.25,
+    "factor_min_total_weight": 0.025,
+    "factor_symbols": [
+      "MTUM",
+      "VLUE",
+      "QUAL",
+      "USMV"
+    ],
+    "gold_max_total_weight": 0.5,
+    "lookback_sessions": 252,
+    "mean_half_life_sessions": 63,
+    "mean_shrinkage": 0.5,
+    "methodology": {
+      "adaptation": "At completed month ends, estimate annualized excess means from the last252daily observations using an exponentially decaying63-session half-life. Shrink each non-BIL mean halfway to the cross-asset non-BIL mean. Estimate the same trailing sample covariance with10%diagonal shrinkage.",
+      "allocation": "Maximize estimated mean minus one-half times risk_aversion times covariance variance, less a fixed0.006annualized absolute change penalty from the previous issued target. Constraints: sum98%,each equity-factor fund2.5%-25%,gold0%-50%,BIL0%-88%. No leverage or shorting.",
+      "automatic_live_deployment": false,
+      "control": "Fixed70%four-factor equity/30%gold of the98%invested budget, four equity factors equally weighted; monthly rebalancing.",
+      "factor_count": "Adaptively combining existing factors is not discovering new economic factors. The weekly discovery program remains separate.",
+      "order_authority": false,
+      "scope": "Actual factor ETF portfolio; no direct-stock historical fundamental coverage is claimed.",
+      "selection_bias": "These two fixed methods are proposed after earlier failures. All outcomes and tests count; no subsequent parameter sweep or relabeling of exposed history.",
+      "sources": [
+        "https://doi.org/10.1111/j.1540-6261.1952.tb01525.x",
+        "https://arxiv.org/abs/1606.05656"
+      ],
+      "timing": "Only completed month-end history; trade next open or one further session at20bp stress. Estimates and previous-target state update strictly in chronological order. No full-sample parameter normalization or random train/test split.",
+      "why_not_dma_replication": "This is a constrained causal moment estimator/portfolio optimizer. It is not Bayesian predictive-likelihood DMA and does not claim the cited papers' forecasts or published returns."
+    },
+    "new_configurations": 2,
+    "objective_turnover_penalty": 0.006,
+    "prior_evaluated_configurations": 88,
+    "risk_aversion": 3.0,
+    "schema_version": 1,
+    "study_id": "adaptive_factor_allocation_20261010",
+    "universe": [
+      "MTUM",
+      "VLUE",
+      "QUAL",
+      "USMV",
+      "GLD",
+      "BIL"
+    ]
+  }
+}
