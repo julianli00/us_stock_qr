@@ -2557,11 +2557,65 @@ no portfolio outcomes. Eight mean-exposure controls are preregistered
 as hindsight attribution, with event-frequency differences disclosed;
 they are not causal candidates, matched realized risk or new trial counts.
 The [pending snapshot](research/workbench/evidence/research_program_2026-W41_sector_term_v39.json)
-records **118 completed configurations, 34 reviews and two pending
+recorded **118 completed configurations, 34 reviews and two pending
 candidates**, no qualified champion. Exact engine migration retains
 every previous record and all seven forward profiles. No new prospective
 target experiment, early October 17 family admission or live orders
 are authorized by these registrations.
+The source, code and actual registration receipts were committed and
+pushed as `64798241` before any new portfolio outcomes.
+
+The [completed results](research/workbench/evidence/sector_term_guard_20261011_results.json)
+retain both rejections:
+
+| Risk guard on the original SOXX core | Window | Base CAGR / Sharpe / drawdown | Stress CAGR / Sharpe / drawdown |
+|---|---|---|---|
+| Daily option-term inversion alone | Ten years | 15.55% / 0.97503 / 21.36% | 12.85% / 0.79775 / 25.90% |
+| Daily option-term inversion alone | Five years | 19.89% / 0.99827 / 21.70% | 17.66% / 0.88208 / 26.35% |
+| Option-term inversion or monthly dollar risk | Ten years | 13.27% / 1.03573 / 14.64% | 12.26% / 0.94611 / 12.09% |
+| Option-term inversion or monthly dollar risk | Five years | 17.43% / 1.13158 / 14.75% | 17.38% / 1.12756 / 11.90% |
+
+**Faster risk observations did not improve the complete qualification
+contract.** Term-only misses Sharpe and drawdown gates throughout, including
+five-year base Sharpe 0.99827386, strictly below one. The combined guard
+passes all drawdown gates but fails both ten-year SPY comparisons and
+ten-year stress Sharpe. Its lower stressed drawdown is not evidence that
+delayed execution improves risk generally. Neither scenario is dropped
+or used to retune the threshold, delay, reduction scale or queued targets.
+The more stable dollar-only reference remains historically rejected
+on ten-year SPY returns.
+
+The [independent attribution](research/workbench/evidence/sector_term_guard_20261011_attribution.json)
+reproduces every raw Cboe close and all 131 monthly H.10 risk changes
+without source-value error. Scalar risk calculations reproduce both
+2,805-row target matrices within 2.23e-16, including 251 term-only and
+173 combined dated instructions. There are 128/73 binary-state changes.
+One-day inversions and reversals stay in the queue rather than silently
+cancelling inconvenient later fills.
+
+Eight preregistered mean-exposure controls reconcile with independent
+accounting. Ten-year model tickets rise to 1,481 term-only and 1,078
+combined, versus 847 for their monthly controls. Term-only has lower
+net CAGR and Sharpe than its control in all four comparisons; combined
+ten-year Sharpe also falls below its control. The different turnover,
+exposure timing and execution delay are disclosed, not attributed solely
+to commissions. These are hindsight descriptive controls, not matched
+realized risk, independent alpha or additional strategy trials.
+
+The [latest snapshot](research/workbench/evidence/research_program_2026-W41_results_v40.json)
+records **120 completed configurations, 36 reviews, no pending candidate
+and no qualified champion**. The
+[144-path source audit](research/workbench/evidence/research_program_source_bound_audit_v14.json)
+preserves all 19 legacy and 17 version-two reviews; the
+[preservation receipt](research/workbench/evidence/sector_term_baseline_preservation_20261011.json)
+checks every previous record, all 69 imported files and all seven
+prospective profiles. Both daily pipelines actually completed duplicate
+runs at 04:47Z; both registered models still have zero return observations.
+The [updated automation receipt](research/workbench/evidence/prospective_data_automation_v16.json)
+keeps the original daily/weekly cadence and October 17 family eligibility.
+The 22-review joint-selection diagnostic does not cover these later
+fourteen reviews or the original 84 trials. No forward rule is replaced,
+no live trading is enabled, and the investment objective remains unmet.
 
 ## Progress and publication
 
