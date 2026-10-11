@@ -3261,6 +3261,77 @@ pending candidates and zero forward return sessions. The
 keep daily collection and the actual weekly gate.
 This hypothesis has **no measured portfolio performance or qualification yet**.
 
+### Recoverable weekly queue with an actual publication fence
+
+The [independent W42 queue](research/workbench/src/us_quant/research_weekly.py)
+handles the four frozen candidates in order: equal six-family, bounded
+inverse-volatility six-family, inflation/gold exception and claims
+confirmation. It does **not** discover arbitrary factors, retune rules,
+reset the ledger, submit orders or run Git commits/pushes. Future weekly
+discovery still requires separately justified, preregistered hypotheses;
+this is a bounded execution adapter, not a profitability guarantee.
+
+After the real October 17 eligibility, complete the three original
+preparation commands into their `*-prepared-20261017` directories and
+the actual IJR/PKW factor cycle first. The queue verifies the exact
+cycle, catalog definitions, original readiness and frozen specifications
+before registering or recovering any candidate:
+
+```bash
+cd research/workbench
+.venv/bin/python -I -B -m us_quant.research_weekly register \
+  --origin agent_continuation
+```
+
+This produces the actual, immutable metadata packet
+`evidence/weekly_research_2026-W42_registration.json` only after all four
+registrations exist. That future file **does not exist yet**. Once
+created, review its specifications/source references, explicitly add
+its repo-relative path to the publication allowlist, then stage only
+the reviewed metadata and allowlist and normally commit/push them.
+Raw market/source/account files stay private.
+
+Only then use the **full actual published commit SHA**, not `main`,
+a local-only commit, an arbitrary earlier checkpoint or a fabricated
+first-publication time:
+
+```bash
+.venv/bin/python -I -B -m us_quant.research_weekly evaluate \
+  --origin agent_continuation \
+  --published-commit FULL_ACTUALLY_PUBLISHED_40_CHARACTER_COMMIT_SHA
+```
+
+The queue queries this branch's configured remote, verifies ancestry
+and exact published packet/code/policy bytes against the current frozen
+files, checks the published and current approval boundaries, and saves
+a complete no-overwrite publication fence **before** account evaluation.
+Later unrelated approved commits do not replace that original fence.
+If Git lacks the actual remote-head object locally, fetch the configured
+ref explicitly; do not guess another branch or claim publication succeeded.
+Git author/committer dates are not independently authenticated first
+publication dates, and a declared invocation origin is not scheduler proof.
+
+Registration interruptions reuse the original candidate events and
+readiness. A complete bundle interrupted before review is submitted
+through the original full source/account validation; a committed review
+missing its receipt is recovered without recounting. Partial bundles,
+missing paths, different or corrupted receipts, pre-publication
+performance and unsupported scope stop explicitly. Original technical
+rejections stay terminal. Earlier completed outputs remain; the first
+failed stage stops later work. No partial curves are deleted or remade.
+
+The [actual October 11 checks](research/workbench/evidence/weekly_research_queue_20261011_verification.json)
+run both real CLI phases: each exits blocked before any registration,
+publication query or evaluation step. Synthetic local Git/account tests
+exercise future publication and recovery semantics, not an actual
+October 17 publication or native delivery. The
+[preservation proof](research/workbench/evidence/weekly_research_queue_20261011_preservation.json)
+keeps all 120 configurations, 36 reviews, 69 imported files, seven forward
+profiles, journal/metadata and engine/head unchanged, with no migration.
+The [latest native instructions](research/workbench/evidence/prospective_data_automation_v28.json)
+retain daily collection and the genuine weekly gate. No new investment
+performance is claimed.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
