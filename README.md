@@ -5261,6 +5261,65 @@ and zero actual forward return sessions. Original W42 plans,
 IJR/PKW quota, frozen forward experiments and goals remain.
 **The investment objective remains unmet.**
 
+The [completed core-momentum results](research/workbench/evidence/core_momentum_20261011_results.json)
+retain both fixed score rules and every required path:
+
+| Ranked four-factor core score/window | Base net CAGR / Sharpe / drawdown | Stress net CAGR / Sharpe / drawdown |
+|---|---|---|
+| Total momentum, ten-year | 15.35% / 1.0487 / 13.85% | 14.73% / 1.0024 / 13.38% |
+| Total momentum, five-year | 19.40% / 1.0883 / 13.14% | 18.49% / 1.0287 / 13.29% |
+| Residual momentum, ten-year | 15.38% / 1.0569 / 13.85% | 14.73% / 1.0080 / 13.37% |
+| Residual momentum, five-year | 19.29% / 1.0877 / 12.91% | 18.35% / 1.0260 / 13.03% |
+
+**Both constructions pass all four Sharpe/drawdown gates
+and every five-year gate, but both fail ten-year SPY
+outperformance.** Ten-year base/stress SPY CAGR remains
+15.4620%/15.4056%. The higher residual base CAGR is
+15.3805%, not above that benchmark; neither close base
+margin nor stressed return gap is rounded into acceptance.
+Minimum Sharpe of 1.0024/1.0080 does not erase the
+remaining outperformance failures.
+
+All four style exposures retain their fixed rank shares
+inside the unchanged core budget, with every nongroup
+target and source rule exact. Ten-year stressed orders/
+modeled fees are 689/USD2,024.97 for total momentum
+and 695/USD2,075.63 for residual ranking.
+The comparison is not equal-risk or causal factor alpha,
+and score beta-removal does not hedge beta in actual
+long-only holdings. No score window, rank share, factor
+subset, industry budget, band or fee is retuned.
+
+The [independent account proof](research/workbench/evidence/core_momentum_20261011_reproducibility.json)
+checks all 16 funded strategy/SPY and 16 independent `bt`
+accounts, original independently proven score/rank targets,
+728 actual-holding band/initial-seed/request/fill decisions,
+and 30,128 actual-price funding/order/cash-flow sessions.
+Original rates, costs, calendars and initial-capital peaks
+remain. Target/request error is zero; maximum scalar
+metric/equity/cash-flow errors are
+4.20e-14/6.55e-11 USD/1.19e-11 USD.
+
+The [current snapshot](research/workbench/evidence/research_program_2026-W41_core_momentum_results_v71.json)
+contains **148 completed configurations = 84 prior + 64 recurring reviews**,
+66 versions including two old invalid ones, no pending
+actual candidate and no champion.
+The [full source-bound audit](research/workbench/evidence/research_program_source_bound_audit_v45.json)
+reexecutes 64 reviews/256 paths, retaining 19 legacy and 45
+explicit funded-v2 reviews.
+The [preservation proof](research/workbench/evidence/core_momentum_20261011_preservation.json)
+keeps all old journal rows/prefix, 69 imported files,
+seven forward profiles and 3,192 frozen control artifacts.
+
+The [native continuation](research/workbench/evidence/prospective_data_automation_v45.json)
+retains the full-window Sharpe/drawdown and five-year passes
+alongside ten-year SPY failures. Original daily/weekly cadence,
+W42 plans, IJR/PKW quota and frozen forward experiments remain;
+both experiments still have zero actual return sessions.
+Observed return-score gains do not establish independent
+future performance or permit changing the return goal.
+**The investment objective remains unmet.**
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
