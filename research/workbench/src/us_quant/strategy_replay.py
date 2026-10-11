@@ -37,6 +37,7 @@ GENERATORS = {
     "joint_risk_confirmation": "config/joint-risk-confirmation.json",
     "semiconductor_volatility_target": "config/semiconductor-volatility-target.json",
     "semiconductor_trend_transfer": "config/semiconductor-trend-transfer.json",
+    "residual_treasury_rotation": "config/residual-treasury-rotation.json",
 }
 
 
@@ -282,6 +283,22 @@ def registered_generator(spec: dict, root: Path) -> tuple[str, dict]:
                 "data/macro-rate-access-20261010/verified-manifest.json",
                 "data/macro-rate-access-20261010/DFII10-curl-response.csv",
             ]
+        elif name == "residual_treasury_rotation":
+            required += [
+                "src/us_quant/semiconductor_trend_transfer.py", "config/semiconductor-trend-transfer.json",
+                "evidence/trend_transfer_20261011_registration.json",
+                "src/us_quant/defensive_factor_rotation.py", "config/defensive-factor-rotation.json",
+                "src/us_quant/trend_factor_guard.py", "config/trend-factor-guard.json",
+                "config/allocation-research.json",
+                "src/us_quant/factor_gold_risk.py", "config/factor-gold-risk.json",
+                "src/us_quant/sector_growth_balance.py", "config/sector-growth-balance.json",
+                "src/us_quant/growth_factor_satellite.py", "config/growth-factor-satellite.json",
+                "src/us_quant/multifactor_stability.py", "src/us_quant/dollar_risk_guard.py",
+                "config/dollar-risk-guard.json", "src/us_quant/macro_factor_tilt.py",
+                "data/dollar-information-source-20261011/verified-manifest.json",
+                "data/macro-rate-access-20261010/verified-manifest.json",
+                "data/macro-rate-access-20261010/DFII10-curl-response.csv",
+            ]
         if any(relative not in frozen for relative in required):
             raise QuantError("The registered strategy is missing a frozen helper dependency.")
         for relative in required:
@@ -442,6 +459,10 @@ def registered_targets(
             cache[key] = build_targets(data, policy)[spec["id"]]
         elif name == "semiconductor_trend_transfer":
             from us_quant.semiconductor_trend_transfer import build_targets
+
+            cache[key] = build_targets(data, policy)[spec["id"]]
+        elif name == "residual_treasury_rotation":
+            from us_quant.residual_treasury_rotation import build_targets
 
             cache[key] = build_targets(data, policy)[spec["id"]]
     return seed_window(cache[key], start)

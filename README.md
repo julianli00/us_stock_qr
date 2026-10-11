@@ -4315,6 +4315,64 @@ retains the five-year passes and ten-year failures without
 relabelling the shorter window as independent validation or
 weakening any gate. **The investment objective remains unmet.**
 
+## Preregistered routing of relative-trend residuals to Treasuries
+
+The [fixed residual-Treasury policy](research/workbench/config/residual-treasury-rotation.json)
+keeps the preceding monthly relative-trend rule's entire
+four-style/SOXX/gold target matrix and monthly decision dates.
+Only its original BIL allocation may change: IEF/TLT qualify
+when their actual 126-session adjusted return strictly exceeds
+BIL's same-horizon return. One construction selects the strongest
+eligible Treasury, with lexical ticker ties; the other uses all
+eligible Treasuries with 63-session inverse sample-volatility
+weights. No qualifying Treasury leaves BIL unchanged.
+
+These selection methods and horizons come from the existing
+defensive-rotation study, but this is explicitly a **Treasury-only
+residual adapter**, not a replay of that study's entire portfolio.
+Its old rule also selected gold and recalculated equity risk budgets.
+Neither behavior is copied: original gold trend decisions stay
+intact, and equity/gold are not renormalized. The 98% target
+investment/2% idle cash, all windows, fees and joint gates remain.
+Treasury duration can add drawdown, including during rising rates.
+
+The [target implementation](research/workbench/src/us_quant/residual_treasury_rotation.py)
+uses the original audited 12-asset market without a new provider
+request. The [independent pre-account proof](research/workbench/evidence/residual_treasury_20261011_pre_account_verification.json)
+matches the original four independently seeded source paths and
+checks all 122 unchanged monthly decisions using scalar sample
+volatility and Decimal funding. Original source error is zero;
+share/target errors are 1.23e-15/2.23e-16. There are 61 states
+with no qualifying Treasury, 14 with one and 47 with both;
+only 31 states have a nonzero original residual routed to Treasuries.
+Every original equity/gold target remains exactly equal.
+
+The [actual registration](research/workbench/evidence/residual_treasury_20261011_registration.json)
+records both fixed candidates at **2026-10-11 14:25:46 / 14:25:49 UTC**.
+The shared runner requires exact configured-remote publication
+of the packet/code/policy/proof before account computation.
+An actual evaluation attempt with the previous published commit
+stops before output-directory creation or any new account.
+
+The [registration preservation](research/workbench/evidence/residual_treasury_20261011_registration_preservation.json),
+[current snapshot](research/workbench/evidence/research_program_2026-W41_residual_registered_v56.json)
+and [full prior source-bound audit](research/workbench/evidence/research_program_source_bound_audit_v30.json)
+retain **132 completed configurations / 48 reviews / 192 paths**,
+19 legacy / 29 funded-v2 reviews, 69 imported files and seven
+forward profiles. One exact engine/head migration and two
+candidate events are added; 52 registered versions include the
+two old invalid ones and these two pending candidates.
+249 coupled cases and 52 root guards pass.
+
+At registration there are **zero new outcomes**, no champion and
+no actual forward return session. The original W42 plans,
+IJR/PKW quota, both frozen forward models and qualification goals
+remain. The parent rule's five-year passes motivated this
+exposed-history hypothesis, not a new holdout; its ten-year
+failures and all prior failed trials remain. Neither new
+Treasury routing nor extra ETF names establish independent alpha.
+**The investment objective remains unmet.**
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

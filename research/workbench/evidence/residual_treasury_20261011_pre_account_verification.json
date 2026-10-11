@@ -1,0 +1,59 @@
+{
+  "all126session_eligibility_and63session_sample_volatility_use_actual_prior_prices": true,
+  "all_old_records_and_forward_control_bytes_unchanged_before_migration": true,
+  "all_original_warmup_monthly_nondecision_calendars_and_frozen_sources_preserved": true,
+  "candidate_returns_or_metrics_computed": false,
+  "checked_at": "2026-10-11T14:22:10.627003+00:00",
+  "full_prepared_target_sha256": {
+    "semiconductor_relative_trend_treasury_diversified": "569995288738da423960b567e2938ac2d01d9a311ed6c8e666ded7a781890f74",
+    "semiconductor_relative_trend_treasury_momentum": "428c90cee6f14cfe64bb590444964058ccb3167b78e632354f0af25bc21ca832"
+  },
+  "full_source_market_rows": 2805,
+  "independent_selector_verifier_sha256": "c969f80019e774c8a5bfeb6593508d452d9e602e6876bc699aab29e7bdbb42fa",
+  "investment_objective_verified": false,
+  "maximum_independent_sample_volatility_share_error": 1.2212453270876722e-15,
+  "maximum_independent_scalar_decimal_target_error": 2.220446049250313e-16,
+  "maximum_original_seeded_source_error": 0.0,
+  "new_registered_candidates": 0,
+  "new_source_quote_requests": 0,
+  "new_strategy_evaluations": 0,
+  "order_authority": false,
+  "original_four_style_soxx_gold_targets_exactly_unchanged": true,
+  "original_monthly_trend_allocations": 122,
+  "original_seeded_source_paths_checked": 4,
+  "original_source_bundle_reference": {
+    "path": "reports/trend-transfer-20261011/semiconductor_equity_gold_relative_trends/bundle.json",
+    "sha256": "afdc414b19c14a2f58d363ccec1284922c574b913d2ef72dc367690ebf9a5888"
+  },
+  "original_source_target_sha256": "3228b346a4c5d32d276a42e4bbb13579088c5a4adc8d5dca8920a7dbec970f0e",
+  "prepared_candidates": [
+    "semiconductor_relative_trend_treasury_momentum",
+    "semiconductor_relative_trend_treasury_diversified"
+  ],
+  "prepared_spec_sha256": {
+    "semiconductor_relative_trend_treasury_diversified": "1a32a3b50c14edb42175e6d4e0362a8b4bb67f025ff5da121b59a398c25f1769",
+    "semiconductor_relative_trend_treasury_momentum": "97ab888a55b4c5fe2c7adfb641f6ff54c52bf9efbccca8bc8eae0043ea11e05e"
+  },
+  "prior_defense_and_parent_trend_parameters_retuned": false,
+  "schema_version": 1,
+  "source_assets": 12,
+  "treasury_only_residual_routing_does_not_reintroduce_disabled_gold": true,
+  "verified_target_counts": {
+    "semiconductor_relative_trend_treasury_diversified": {
+      "issued_monthly_targets": 122,
+      "no_eligible_treasury_states": 61,
+      "nonzero_bil_residual_routed_states": 31,
+      "one_eligible_treasury_states": 14,
+      "two_eligible_treasury_states": 47,
+      "zero_original_bil_states": 39
+    },
+    "semiconductor_relative_trend_treasury_momentum": {
+      "issued_monthly_targets": 122,
+      "no_eligible_treasury_states": 61,
+      "nonzero_bil_residual_routed_states": 31,
+      "one_eligible_treasury_states": 14,
+      "two_eligible_treasury_states": 47,
+      "zero_original_bil_states": 39
+    }
+  }
+}

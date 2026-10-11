@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "study_id": "relative_trend_residual_treasury_rotation_20261011",
+  "data_scope": "factor_etf_portfolio",
+  "data_start": "2015-08-10",
+  "as_of": "2026-10-05",
+  "prior_evaluated_configurations": 132,
+  "new_configurations": 2,
+  "new_economic_factor_definitions": 0,
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "factor_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "treasury_assets": ["IEF", "TLT"],
+  "momentum_sessions": 126,
+  "volatility_sessions": 63,
+  "cash_reserve": 0.02,
+  "candidates": [
+    {"id": "semiconductor_relative_trend_treasury_momentum", "defense_method": "highest_positive_excess"},
+    {"id": "semiconductor_relative_trend_treasury_diversified", "defense_method": "all_positive_inverse_volatility"}
+  ],
+  "source_registration": {
+    "path": "evidence/trend_transfer_20261011_registration.json",
+    "sha256": "d1f7e7a954a6b7caf9406835b3773693b54cad66e1312c140d1b4d8ab7e58eea"
+  },
+  "source_policy": {
+    "path": "config/semiconductor-trend-transfer.json",
+    "sha256": "8499a788277db1f65f03d70da8facade9f6cb1fcc23192273def14a96f962984"
+  },
+  "prior_defense_policy": {
+    "path": "config/defensive-factor-rotation.json",
+    "sha256": "5a60e8c5816de547a64e333bae748fa1704898b685b1cc5a5c955cca6e6a8ad4"
+  },
+  "prior_defense_implementation": {
+    "path": "src/us_quant/defensive_factor_rotation.py",
+    "sha256": "4dca1b6433a5171c03c5236b93724ba24909cf5592b3f973eba23b18ee527ce4"
+  },
+  "methodology": {
+    "hypothesis": "Test the destination of removed equity/gold risk without changing the source's trend decisions. Keep monthly 63/126/252-session relative-to-BIL component scales and original risk budgets exactly; route its already unallocated BIL portion into qualifying actual Treasury funds using two previously defined defensive selection methods.",
+    "selection": "At each original fully informed source month end, IEF/TLT qualify only if their 126-session adjusted return strictly exceeds actual BIL over the same horizon. Equality fails. The highest method selects the larger return, then lexical ticker; the diversified method uses 63-session inverse sample-volatility weights for all eligible Treasuries. No qualifying asset leaves original BIL unchanged. Reuse 126/63 and both methods; the Treasury-only subset is fixed before outcomes so a failed gold trend is not silently reintroduced through defense.",
+    "controlledtargets": "Leave every original four-style/SOXX/GLD weight and decision date unchanged, including zero-risk states. Replace only original BIL residual with selected IEF/TLT weights; no equity/gold renormalization or new daily covariance/floor/macro guard. Total 98% investment/2% target cash is retained. Changed NAV can change actual dollar holdings of unchanged targets; this is not an equal-risk or causal-attribution guarantee.",
+    "risks": "Treasury duration can lose, especially during inflation/rate rises; positive past relative returns do not guarantee safety, independent alpha or 15% drawdown. In a no-eligible state hold actual BIL. No extra zero-cost controls, return forecasts, threshold/lookback/share grid, post-failure tuning or synthetic bond/risk-free returns.",
+    "execution": "Exactly the same 122 fully informed monthly source decisions; USD10,000 fresh 10y/5y capital, 5bp next-open base/20bp extra-session stress, USD1/order, fractional long-only cash-funded accounting. Original 2512/1254-session calendars, net excess-return Sharpe definition, SPY/stress-base-SPY/15% drawdown gates are all required.",
+    "provenance": "Reuse the original audited 12-asset market, Treasury funds and actual source quotes; no new provider data, current holdings or pre-inception history. Parent relative-trend 5y complete passes motivated exposed-history research but 10y failures remain. Prior GLD/TLT/IEF defense code supplies rule motivation, not an assertion that this Treasury-only residual adapter replays its old portfolio weights.",
+    "authority": "Existing-factor/risk-allocation constructions, not new family definitions. Original W42 four plans, IJR/PKW quota and forward rules remain. Old selection diagnostics do not correct these candidates or all searches; historical acceptance would still require actual independent future evidence.",
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}
