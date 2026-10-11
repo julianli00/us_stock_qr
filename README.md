@@ -3332,6 +3332,58 @@ The [latest native instructions](research/workbench/evidence/prospective_data_au
 retain daily collection and the genuine weekly gate. No new investment
 performance is claimed.
 
+### Dividend-growth identities verified; price coverage still blocked
+
+The [source-only dividend policy](research/workbench/config/dividend-growth-sources.json)
+and [finite validator](research/workbench/src/us_quant/dividend_growth_sources.py)
+inspect VIG and SDY as two implementations of dividend-policy
+persistence, **not two independent factor families**. Their exposures
+may overlap the existing quality, value and financing characteristics.
+No new definition, allocation candidate or portfolio result is registered.
+
+The [actual source evidence](research/workbench/evidence/dividend_growth_source_readiness_20261011.json)
+retains the issuer identities and important differences:
+
+| Fund | Inception | Verified current identity and limits |
+|---|---|---|
+| VIG | 2006-04-21 | Common-stock full replication; issuer footnote discloses Nasdaq Dividend Achievers Select through 2021-09-19, S&P U.S. Dividend Growers thereafter. |
+| SDY | 2005-11-08 | S&P High Yield Dividend Aristocrats; current 20-year dividend-growth screen and indicated-yield weighting, cross-checked against its advertised factsheet. |
+
+Current issuer objectives substantiate ordinary equity index exposure,
+not derivatives-free holdings, independently certified historical gross
+notional limits or complete historical constituent/screen archives.
+VIG's exact consecutive-year screens across history remain unverified.
+A search-generated 2021 announcement link redirected to a general
+pressroom; that page is not treated as the original dated announcement.
+We do not apply the newer benchmark's rules backwards to the older one.
+
+**Complete fund histories are not ready.** Both ordinary VIG/SDY chart
+requests returned actual HTTP429 rate-limit responses; there is no
+complete in-workbench cache, and zero histories are admitted. NOBL's
+issuer request returned HTTP403 and remains excluded. All failed
+responses are preserved without switching headers, paths, transport or
+endpoints to bypass the restrictions. Synthetic validator tests are not
+actual fund history or corporate-action coverage.
+
+`history_from_payload` requires the original 2,805-session calendar,
+positive observed prices/volume, correct USD ETF identity and explained
+distribution/split adjustment changes; missing history cannot become a
+shorter window, a synthetic proxy or a success-shaped fallback. Future
+ordinary lawful data availability needs separately preserved evidence
+and full verification before any performance test. A separate dividend
+hypothesis is not eligible for preparation-based admission before the
+October 24 research cycle and still needs actual preregistration.
+The October 17 IJR/PKW queue and four existing frozen candidates are unchanged.
+
+The [preservation proof](research/workbench/evidence/dividend_growth_source_preservation_20261011.json)
+keeps all 120 configurations, 36 reviews, 69 imported files, seven
+forward profiles, exact journal/metadata and engine/head unchanged.
+No target, account or performance metric is computed and no engine
+migration is performed. The [latest native instructions](research/workbench/evidence/prospective_data_automation_v29.json)
+retain these source blocks, daily collection and the original weekly
+queue. This is verified source context with an unresolved data block,
+**not investment qualification**.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
