@@ -1999,6 +1999,41 @@ post-result parameter tuning. The separately registered forward model still
 has zero observed return sessions; no future scheduled execution, live
 orders or objective completion is claimed.
 
+### Two fixed downside-risk balances on the unchanged growth/factor core
+
+`config/downside-risk-balance.json` compares downside semideviation and
+5% expected-loss budgets while keeping the original 63-session window,
+half-QQQ equity composition, four existing families, equity bounds and
+funding/cost rules fixed. The already evaluated total-volatility monthly
+control is reused, not counted again as a third new strategy.
+
+Semideviation measures squared negative daily excess returns averaged over
+all 63 observations. Expected loss uses the worst 5% empirical probability
+mass, including a fractionally weighted boundary observation; simply taking
+four full observations out of 63 would not be exactly a 5% tail. Risk-free
+thresholds use the same frozen lagged market series as Sharpe evaluation.
+Zero observed loss is not future risk-free proof: one zero sleeve estimate
+uses the declared 30%-70% bounds; two zero estimates explicitly fail.
+
+These are marginal risk-budget heuristics, not coherent joint-portfolio
+expected-shortfall optimization, drawdown guarantees or new independent
+factors. Reference metadata verifies Sortino/Price's
+[1994 downside-risk paper](https://doi.org/10.3905/joi.3.3.59) and
+Acerbi/Tasche's [2002 expected-shortfall paper](https://doi.org/10.1111/1468-0300.00091).
+Current histories are exposed; no tail/window/growth-weight search or
+post-outcome estimator revision is permitted in this version.
+
+```bash
+cd research/workbench
+.venv/bin/python -I -B -m us_quant.downside_risk_balance
+```
+
+Preparation revalidates the original actual ETF snapshots and computes no
+outcomes. Both rules must register before source-bound evaluation under
+unchanged net Sharpe/SPY/15% drawdown gates. Queued six-family definitions,
+their October 17 eligibility and the independent forward model are not
+modified or pre-evaluated.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

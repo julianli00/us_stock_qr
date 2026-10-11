@@ -24,6 +24,7 @@ GENERATORS = {
     "credit_factor_guard": "config/credit-factor-guard.json",
     "six_factor_strategy": "config/six-factor-strategy.json",
     "growth_portfolio_protection": "config/growth-portfolio-protection.json",
+    "downside_risk_balance": "config/downside-risk-balance.json",
 }
 
 
@@ -159,6 +160,10 @@ def registered_targets(
     if key not in cache:
         if name == "adaptive_factor_allocation":
             from us_quant.adaptive_factor_allocation import build_targets
+
+            cache[key] = build_targets(data, policy)[spec["id"]]
+        elif name == "downside_risk_balance":
+            from us_quant.downside_risk_balance import build_targets
 
             cache[key] = build_targets(data, policy)[spec["id"]]
         elif name == "volatility_term_risk":
