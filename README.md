@@ -3652,6 +3652,61 @@ Treasuries/gold can lose together and covariance bounds cannot guarantee
 15% drawdown or Sharpe above 1. At registration there are **zero new
 strategy outcomes**, no champion and no investment qualification.
 
+The [completed risk-only results](research/workbench/evidence/risk_only_covariance_20261011_results.json)
+now retain both candidates and every original base/stress path.
+Neither candidate passes any of the Sharpe, full-SPY outperformance
+or 15% drawdown tests on either horizon:
+
+| Method/window | Base net CAGR / Sharpe / drawdown | Stress net CAGR / Sharpe / drawdown |
+|---|---|---|
+| Risk budgeting, ten-year | 7.50% / 0.6495 / 18.37% | 7.40% / 0.6386 / 18.39% |
+| Risk budgeting, five-year | 7.78% / 0.4595 / 18.50% | 7.55% / 0.4349 / 18.53% |
+| Maximum diversification, ten-year | 7.09% / 0.6361 / 17.99% | 6.96% / 0.6200 / 17.98% |
+| Maximum diversification, five-year | 7.10% / 0.4046 / 18.12% | 6.86% / 0.3780 / 18.11% |
+
+The worst drawdown runs from **2021-12-27 to 2022-09-27** on all
+eight paths, with each window independently capitalized. These fixed
+portfolios do not turn covariance diversification into incremental
+return alpha or a guaranteed defensive allocation. Removing sector
+satellites and avoiding mean forecasts did not solve the objective;
+the observed 2022 drawdown still breaches the stability limit.
+No bounds, covariance window or allocation method is revised after
+these failures.
+
+The [independent account proof](research/workbench/evidence/risk_only_covariance_20261011_reproducibility.json)
+reconstructs all eight strategy/benchmark comparisons and 16 funded
+plus 16 `bt` accounts, using the exact calendars, initial capital,
+risk-free rates, costs, delays and initial-capital drawdown peaks.
+Prepared versus seeded targets agree exactly; maximum scalar metric
+difference is 1.28e-13 and independent equity discrepancy is
+6.55e-11 USD. Strict joint gate decisions reproduce both rejections.
+
+The [current result snapshot](research/workbench/evidence/research_program_2026-W41_risk_results_v45.json)
+has **122 completed configurations = 84 prior + 38 recurring reviews**,
+40 registered code versions including the two previously invalid
+conditional versions, no pending actual candidate and no champion.
+The [full source-bound audit](research/workbench/evidence/research_program_source_bound_audit_v19.json)
+reexecutes all 38 reviews / 152 paths, preserving 19 legacy and
+19 explicit funded-v2 outcomes.
+
+The [final preservation proof](research/workbench/evidence/risk_only_covariance_20261011_preservation.json)
+keeps every old journal row/event prefix, 69 imported files and
+all seven prospective profile states/control bytes. Only the one
+precise replay migration, two candidate registrations and two rejected
+reviews are appended. All 720 old budget and 2,472 component artifact
+hashes also remain intact; their frozen 36-source scope is not relabelled
+as a 38-source diagnosis. The new two genuine strategy trials are
+counted separately from those descriptive controls.
+
+Six economic definitions / five catalog families, the original four
+unregistered W42 plans, IJR/PKW quota and the two frozen forward models
+are unchanged. Both forward models still have zero actual return
+sessions; old selection diagnostics do not correct these two new trials.
+The [updated native continuation](research/workbench/evidence/prospective_data_automation_v32.json)
+preserves these rejected outcomes and the remaining weekly/forward
+work. The more stable dollar-guard reference still misses full-SPY
+ten-year outperformance. **The investment objective remains unmet.**
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
