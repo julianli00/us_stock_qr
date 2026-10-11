@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "study_id": "joint_dollar_option_confirmation_20261011",
+  "data_scope": "factor_etf_portfolio",
+  "data_start": "2015-08-10",
+  "as_of": "2026-10-05",
+  "prior_evaluated_configurations": 126,
+  "new_configurations": 2,
+  "new_economic_factor_definitions": 0,
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "factor_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "option_ratio_risk_threshold": 1.0,
+  "risk_off_investment_scale": 0.50,
+  "cash_reserve": 0.02,
+  "candidates": [
+    {"id": "semiconductor_dollar_term_monthly_confirmation", "confirmation_schedule": "completed_month"},
+    {"id": "semiconductor_dollar_term_daily_confirmation", "confirmation_schedule": "daily_option_state"}
+  ],
+  "source_registration": {
+    "path": "evidence/sector_term_guard_20261011_registration.json",
+    "sha256": "8bdc49b3af0c1d76f39c230172f1840ca89bd349159e812c6937d492dfb83cf7"
+  },
+  "source_policy": {
+    "path": "config/sector-term-guard.json",
+    "sha256": "bd5ddd200e844244fd8deddf400535b98434b0f18492d5e7d24822fe1342991a"
+  },
+  "source_implementation": {
+    "path": "src/us_quant/sector_term_guard.py",
+    "sha256": "fc75d304f2470951fbdc3c64d119cdef5e51cee0458c1353ca1841082455ff36"
+  },
+  "methodology": {
+    "hypothesis": "Dollar appreciation can reflect healthyrelativeUSgrowth aswellas stress. Require both the existing positiveown-vintage63sessiondollar state and the existingVIX>=VIX3Mpressure state beforehalvingrisk. Compare monthlyjointchecks withdailyoptionchecks againstthe samealreadyknown monthlydollar state.",
+    "baseline": "Reuse originalfour_factor_semiconductor_sector50 targets exactly:half-equitySOXX,equal remainingfourstyles,63sessionriskbalance/30–70%equity/98%investment. No sector share,lookback,covariance,macrofeature or neweconomicfamily.",
+    "monthly": "At eachcompletedmonthend update the original allocation andown-vintage dollar state,then half allnon-BILonlyifdollar>0 AND VIX>=VIX3M atthatknownclose. Holdthatissued stateuntilnextmonthupdate;dailyinversions do not alter the monthly-onlymethod.",
+    "daily": "Keep the latestcompletedmonth allocation andits recorded dollar state. After eachknownclose update onlythe optioninversion state;halfnon-BILwhenBOTHaretrue. Emit onmonthlyallocationupdate orcandidatebinaryriskstatechange. Withnoevent keepallrowNaN/actualholdings. This carries a monthlydecisionregime,not a claim of freshdailyUSDquotes or relaxation of14dayavailability.",
+    "execution": "Preserve datedtargets in the original1/2sessionqueue,no retrospectivecancellation or overwriting. USD10000fresh10y/5ycapital,USD1/order,5bpnext-openbase/20bpextrasessionstress andcomplete2512/1254returns. No leverage/shorting/newdailyfloor/targetband or synthetic risk-freecarry.",
+    "sources": "Reuse alloriginalofficialCboecloseCSVbytes/primarydocuments andH10archivedvintages,conflicts/quarantine/2019unitregimes/14age;no newprice/sourcefetches. VIX3M93daycurrentmethodology/ticker2017rename remain disclosed. CurrentdownloadedCboehistories do not authenticate unrevisedhistoricalfirst-publicationinstants;closinginputs onlyaffectlateropens,not synthetic indextrades.",
+    "selection": "Twofixed conjunction/timing hypotheses after126exposedstrategytrials. Existingratio1/zeroUSDthreshold/.5scale reused,no threshold,timingfrequencyorassetsweep. Bothactualregistrations/code/sourceproof publishedbeforeaccounts;retain everyfailure. Oldselectionbootstraps do not coverthese trials/allsearch,ANDlogic does notprove causal orindependentalpha.",
+    "authority": "No neweconomicdefinitions,earlyIJRPKWadmission,changes toW42fourplans orfrozenforwardmodels. Historicalpass would still await actualforwardevidence. OriginalSharpe/SPY/15%DDgates preserved.",
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

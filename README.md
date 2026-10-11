@@ -3955,6 +3955,68 @@ The [native continuation](research/workbench/evidence/prospective_data_automatio
 retains the rejected protection paths and actual weekly/daily schedule.
 **The investment objective remains unmet.**
 
+## Preregistered joint dollar / option-risk confirmation
+
+The [fixed conjunction policy](research/workbench/config/joint-risk-confirmation.json)
+tests whether the already known positive 63-session dollar state
+requires **simultaneous VIX ≥ VIX3M** confirmation before halving
+the original four-style/SOXX/gold risk. It changes the earlier
+option-only / OR logic to AND, not the original ratio 1.0,
+strict positive-dollar threshold, 0.5 scale, asset shares or costs.
+Dollar strength can reflect healthy relative growth; the conjunction
+is a hypothesis, not evidence that this separates those states.
+
+The two [target constructions](research/workbench/src/us_quant/joint_risk_confirmation.py)
+are completed-month confirmation and daily option-state confirmation.
+Both update dollar risk only at the original month end.
+The first holds the joint decision until the next month; the second
+reacts to daily option pressure using the **already recorded monthly
+dollar regime**, not a newly observed daily dollar quote or relaxed
+source-age rule. Targets appear only on a monthly allocation update
+or, for the second rule, a change of its joint binary risk state.
+All other rows remain empty and actual holdings continue.
+
+All original official Cboe close CSVs/documents and H.10 vintages
+are retained, with no new source request. Current Cboe methodology
+and closing histories do not establish complete unrevised historical
+first-publication timestamps; only later-open execution is modeled.
+The original dollar availability, conservative conflicts, quarantine,
+2019 unit regimes and 14-day observation age remain.
+These risk observations are not portfolio index holdings or new
+independent economic-factor families.
+
+The [pre-account proof](research/workbench/evidence/joint_risk_confirmation_20261011_pre_account_verification.json)
+independently reconstructs all raw option states, own-query dollar
+comparisons and target truth-table events. Monthly confirmation has
+131 targets / 6 risk-off targets. Daily confirmation has 209 targets /
+44 risk-off targets, including 78 nonmonthly state changes.
+Option, dollar and target errors are 0 / 3.02e-16 / 5.56e-17.
+No candidate account or portfolio metric is computed before registration.
+
+The [actual registration](research/workbench/evidence/joint_risk_confirmation_20261011_registration.json)
+records both candidates at **2026-10-11 12:23:13 / 12:23:16 UTC**.
+The shared registered-study runner requires exact actual remote
+packet/code/policy/proof publication and a durable fence before
+the original four-path funded-v2 / independent-`bt` evaluator.
+An actual run against the preceding published commit stops before
+creating an account/output directory.
+
+The [registration preservation](research/workbench/evidence/joint_risk_confirmation_20261011_registration_preservation.json),
+[current snapshot](research/workbench/evidence/research_program_2026-W41_joint_registered_v50.json)
+and [old-cohort audit](research/workbench/evidence/research_program_source_bound_audit_v24.json)
+retain 126 completed configurations / 42 reviews / 168 audited paths,
+19 legacy / 23 funded-v2 outcomes, 69 imported files and seven
+forward profiles. One exact old-engine/head migration adds the finite
+generator; only the two actual candidates are pending, among 46
+registered versions including the two old invalid ones.
+209 coupled cases and 52 root guards pass. The original W42 plans,
+factor quota and frozen forward rules remain.
+
+The two hypotheses use already exposed historical windows;
+old selection diagnostics do not correct these new trials.
+At registration there are **zero new strategy outcomes**, no champion,
+and no independent future-alpha or investment qualification claim.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
