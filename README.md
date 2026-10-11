@@ -3520,6 +3520,67 @@ forward profiles remain unchanged. Registration/code/policy must
 be actually pushed before evaluation; at registration there are
 **zero new component outcomes** and no investment qualification.
 
+The [completed component results](research/workbench/evidence/equity_component_attribution_20261011_results.json)
+now contain all **1,152 logical comparisons**: **824 newly computed
+nonidentity controls**, independently rebuilt in `bt`, and **328
+explicit identities** reusing the original verified source leg.
+The following counts use only actual component exposure, not identities.
+
+| Component replaced by SPY | Original CAGR higher | Original Sharpe higher |
+|---|---|---|
+| Momentum | 121/144 | 42/144 |
+| Value | 140/144 | 139/144 |
+| Quality | 11/144 | 11/144 |
+| Low volatility | 1/144 | 9/144 |
+| QQQ/XLK | 24/24 | 24/24 |
+| SOXX | 28/28 | 28/28 |
+| All styles jointly | 18/144 | 21/144 |
+| All satellites jointly | 52/52 | 52/52 |
+
+The current dollar-guard reference makes the limitation concrete.
+Replacing its SOXX allocation with SPY reduces net CAGR by
+**4.06–5.36 percentage points** and Sharpe by **0.215–0.242**, while
+reducing drawdown by **1.21–1.42 points** across the four paths.
+In contrast, replacing its four style funds jointly with SPY
+increases net CAGR by **0.205–0.287 points** and Sharpe by
+**0.016–0.024**, while increasing drawdown by **0.334–0.368 points**.
+The reference's equity-budget advantage therefore cannot be
+attributed to four broadly successful style exposures: its much
+larger positive conditional difference comes from the semiconductor
+satellite, with additional drawdown risk.
+
+Within that same reference, value improves net CAGR by approximately
+0.120–0.302 points and lowers drawdown by 0.172–0.177 points versus
+its individual replacement. Low volatility lowers drawdown by
+0.372–0.396 points but costs 0.261–0.388 points of net CAGR.
+Momentum adds 0.160–0.222 points of CAGR with mixed/negligible Sharpe
+differences; quality's net CAGR difference is approximately
+−0.042 to −0.019 points. Single and aggregate differences **cannot
+be summed**: covariance, wealth drift and trade costs differ.
+All counts remain descriptive, correlated and conditioned on the
+original rule; they do not establish causal or independent alpha.
+
+The [independent verification](research/workbench/evidence/equity_component_attribution_20261011_reproducibility.json)
+checks all 125,067 defined control rows with Decimal projection,
+all 824 funded/`bt` controls and all 144 reused source accounts.
+Maximum target/metric errors are 1.3e-16 / 1.22e-13, and maximum
+independent equity discrepancy is 1.82e-10 USD. Both the exact
+new artifact set and all 720 previous budget artifact hashes
+are verified; 2,472 new CSV artifacts remain private.
+The [preservation proof](research/workbench/evidence/equity_component_attribution_20261011_preservation.json)
+retains every original journal row, engine/head, imported file,
+forward profile and the four W42 plans. There are still 120
+completed trading-strategy configurations, no champion and zero
+observed return sessions in the two forward models.
+
+No style is removed or weight fitted because of these results.
+The [updated native instructions](research/workbench/evidence/prospective_data_automation_v31.json)
+carry the distinction between sector-dependent historical returns
+and independently supported multifactor stability into future
+research. The frozen W42 queue and qualification gates remain;
+the dollar reference still misses full-SPY ten-year outperformance.
+**The investment objective remains unmet.**
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
