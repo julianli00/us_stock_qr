@@ -3084,6 +3084,67 @@ retain daily collection and the October 17 weekly gate. This improves
 the research workflow's recovery semantics, not its measured returns
 or qualification.
 
+### Recover complete review evidence, never missing portfolio paths
+
+The [review receipt adapter](research/workbench/src/us_quant/review_receipts.py)
+requires the original registered candidate, all four horizon/cost paths,
+frozen market and source hashes, targets, weights and independently
+accounted strategy/SPY curves. `record` may submit a complete, unreviewed
+bundle through the original source-bound `ResearchProgram.review`.
+`recover` requires an **already committed** matching review; it cannot
+submit an unreviewed or unknown candidate.
+
+For an existing review, both modes run the original **read-only**
+source/target/account re-audit, then copy the stored review and unique
+journal event. The new audit's timestamp does not replace the original
+review time or outcome. Legacy reviews retain legacy accounting;
+first reviews still require the explicitly versioned funded engine.
+Atomic no-overwrite publication, runtime locking and exact receipt
+matching prevent duplicate outcomes. An existing rejection remains a
+rejection, not successful strategy qualification.
+
+If evaluation was interrupted, inspect its original output first.
+A complete `bundle.json` with no committed review may use `record`;
+a committed review missing its new receipt may use `recover`.
+Do **not** delete partial outputs, regenerate replacement curves,
+fill missing horizons or invoke the evaluator blindly on an existing
+directory. Changed or incomplete evidence stops explicitly. Choose a
+dedicated `review-receipt.json`, not an existing legacy `review.json`.
+
+These future paths apply only after actual eligible registration and
+complete evaluation; the inflation candidate is still unregistered:
+
+```bash
+cd research/workbench
+.venv/bin/python -I -B -m us_quant.review_receipts record \
+  --candidate-id semiconductor_dollar_inflation_gold_guard \
+  --bundle reports/inflation-guard-20261017/semiconductor_dollar_inflation_gold_guard/bundle.json \
+  --receipt reports/inflation-guard-20261017/semiconductor_dollar_inflation_gold_guard/review-receipt.json
+# If that review committed but its receipt was interrupted:
+.venv/bin/python -I -B -m us_quant.review_receipts recover \
+  --candidate-id semiconductor_dollar_inflation_gold_guard \
+  --bundle reports/inflation-guard-20261017/semiconductor_dollar_inflation_gold_guard/bundle.json \
+  --receipt reports/inflation-guard-20261017/semiconductor_dollar_inflation_gold_guard/review-receipt.json
+```
+
+The [actual recovery evidence](research/workbench/evidence/candidate_review_recovery_20261011.json)
+covers two previously rejected reviews: the legacy real-yield tilt
+and versioned term-OR-dollar guard. Both retain their exact original
+review bodies, accounting versions and timestamps; repeats keep receipt
+bytes identical. `record` and `recover` both reject the unregistered
+inflation candidate even when supplied with another complete bundle.
+Synthetic interruptions exercise recovery semantics, not observed
+disk failures or authenticated native scheduling.
+
+The [preservation check](research/workbench/evidence/candidate_review_recovery_preservation_20261011.json)
+keeps **120 complete configurations, 36 reviews, no champion and zero
+forward return sessions**, all journal rows and metadata, 69 imported
+files, seven forward profiles and the engine/head unchanged.
+No strategy, threshold or forward model is changed and no migration
+is performed. The [latest native instructions](research/workbench/evidence/prospective_data_automation_v25.json)
+include complete-bundle recovery while retaining the daily/weekly
+cadence. This is workflow reliability, **not a new investment result**.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
