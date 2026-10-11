@@ -47,6 +47,7 @@ GENERATORS = {
     "factor_core_momentum": "config/factor-core-momentum.json",
     "producer_gold_routing": "config/producer-gold-routing.json",
     "activity_factor_guard": "config/activity-factor-guard.json",
+    "activity_gold_trend": "config/activity-gold-trend.json",
 }
 
 
@@ -398,6 +399,15 @@ def registered_generator(spec: dict, root: Path) -> tuple[str, dict]:
                 "src/us_quant/sector_growth_balance.py", "config/sector-growth-balance.json",
                 "src/us_quant/inflation_inputs.py",
             ]
+        elif name == "activity_gold_trend":
+            required += [
+                "src/us_quant/activity_factor_guard.py", "config/activity-factor-guard.json",
+                "evidence/activity_guard_20261011_registration.json",
+                "evidence/activity_guard_20261011_drawdown_attribution.json",
+                "src/us_quant/breadth_gold_trend.py", "config/breadth-gold-trend.json",
+                "evidence/breadth_gold_20261011_registration.json",
+                "src/us_quant/trend_factor_guard.py", "config/trend-factor-guard.json",
+            ]
         if any(relative not in frozen for relative in required):
             raise QuantError("The registered strategy is missing a frozen helper dependency.")
         for relative in required:
@@ -560,6 +570,10 @@ def registered_targets(
             cache[key] = build_targets(data, policy)[spec["id"]]
         elif name == "activity_factor_guard":
             from us_quant.activity_factor_guard import build_targets
+
+            cache[key] = build_targets(data, policy)[spec["id"]]
+        elif name == "activity_gold_trend":
+            from us_quant.activity_gold_trend import build_targets
 
             cache[key] = build_targets(data, policy)[spec["id"]]
         elif name == "sector_term_guard":

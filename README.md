@@ -5602,6 +5602,50 @@ retain Sharpe/SPY successes alongside the drawdown failures and unchanged
 daily/weekly cadence. Both frozen forward models still have zero actual
 return sessions. **The full investment objective remains unmet.**
 
+## Preregistered existing monthly gold law on activity sources
+
+The [actual held-loss attribution](research/workbench/evidence/activity_guard_20261011_drawdown_attribution.json)
+reconciles all eight reviewed activity worst episodes and 1,224 post-peak
+account days. Gold mark losses account for 13.8403–13.9779 percentage points
+of peak NAV, versus equity losses of 6.2912–6.3785 points.
+Maximum daily/episode mark-and-fee errors are 9.66e-12/3.64e-12 USD.
+These overlapping, post-outcome loss decompositions are descriptive,
+not causal alpha, a future hedge guarantee or new strategy trials.
+
+The [separate frozen policy](research/workbench/config/activity-gold-trend.json)
+and [generator](research/workbench/src/us_quant/activity_gold_trend.py)
+reuse the original strict 200-observation GLD price/mean state and unchanged
+component-removal helper on both original activity target matrices.
+Only source GLD is set to zero and moved to actual BIL when its close is
+not strictly above its trailing mean. All original equity/other targets,
+the five macro no-request months, monthly clock, capital and costs remain.
+There is no daily trigger, fitted mean, gold scale or stock-share grid.
+
+The source has 126 original active updates. Each transferred rule has
+120 issued targets, 85 gold-on and 35 gold-off decisions, after six
+explicit pre-window gold warmup months (November 2015 through April 2016).
+No new target is invented before 200 observations; no formal
+2,512/1,254 return day is removed. Independent fresh-capital window seeds
+and the original macro pauses remain.
+The [pre-account proof](research/workbench/evidence/activity_gold_20261011_pre_account_verification.json)
+checks 2,606 Decimal gold states, eight original seeded source paths
+and eight new complete seeded target matrices: source/target/seed errors are zero.
+
+The [actual registrations](research/workbench/evidence/activity_gold_20261011_registration.json)
+record both candidates at 20:52 UTC.
+The [registration preservation proof](research/workbench/evidence/activity_gold_20261011_registration_preservation.json)
+verifies one exact old-engine/head migration, all seven original semantic
+forward profiles, 69 imports and 3,192 frozen controls.
+The [registered snapshot](research/workbench/evidence/research_program_2026-W41_activity_gold_registered_v76.json)
+retains 152 completed configurations and 68 reviews, with 72 versions
+including two old invalid ones, two pending candidates and no champion.
+The [prior-path audit](research/workbench/evidence/research_program_source_bound_audit_v50.json)
+reexecutes all 68 reviews/272 paths. An actual old-commit attempt stops
+before new output/account creation.
+**No new portfolio performance has been calculated at this checkpoint.**
+The exact original packet, code, policy and proof must be remotely published
+before evaluation. Original W42 plans and frozen forward rules remain.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
