@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "study_id": "published_real_activity_dollar_confirmation_20261011",
+  "data_scope": "factor_etf_portfolio",
+  "data_start": "2015-08-10",
+  "as_of": "2026-10-05",
+  "prior_evaluated_configurations": 150,
+  "new_configurations": 2,
+  "new_economic_factor_definitions": 0,
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "factor_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "source_candidate": "semiconductor_dollar_half_guard",
+  "original_control_candidate": "four_factor_semiconductor_sector50",
+  "risk_change_sessions": 63,
+  "risk_off_investment_scale": 0.50,
+  "cash_reserve": 0.02,
+  "candidates": [
+    {"id": "semiconductor_dollar_activity_magnitude_confirmation", "activity_series": "CFNAIMA3", "low_activity_threshold": -0.70},
+    {"id": "semiconductor_dollar_activity_diffusion_confirmation", "activity_series": "CFNAIDIFF", "low_activity_threshold": -0.35}
+  ],
+  "source_registration": {"path": "evidence/dollar_risk_guard_20261011_registration.json", "sha256": "928cb2954a37db17347df6e7e520e72ebb30beeba606fa35f5905ddfc9bc46b9"},
+  "original_control_policy": {"path": "config/sector-growth-balance.json", "sha256": "ed3fef4f25dbda3132df2480e43a5188719776485c9018c5447c9e2aad2f4103"},
+  "original_control_implementation": {"path": "src/us_quant/sector_growth_balance.py", "sha256": "783df691d243da8794d887bd1f8bb5331f9875a271b628c157098ea6233fd7a7"},
+  "dollar_policy": {"path": "config/dollar-risk-guard.json", "sha256": "4a4b960dfb52e894f1fc58ba86108cd86237cf4b77698c3cd0f0063fc1a32b3c"},
+  "dollar_implementation": {"path": "src/us_quant/dollar_risk_guard.py", "sha256": "c4b6db938cc98791fcb620f5317c4b964428e518689e75b6696cf1f8ee38ae53"},
+  "activity_policy": {"path": "config/activity-inputs.json", "sha256": "e53b975cb1a534e4892ebfd8700d503440827afb94108552324be8cd459045a9"},
+  "activity_implementation": {"path": "src/us_quant/activity_inputs.py", "sha256": "adba772daec20d4ccc842115d4b7900a249b9e22368fe48e6b741744474e250c"},
+  "activity_readiness": {"path": "evidence/activity_input_readiness_20261011.json", "sha256": "6d4a43d829f13775776bf7dd5c1f79eef7bca694187825d3bb97554c0bad13fa"},
+  "activity_manifest": {"path": "data/activity-inputs-corrected-20261011/manifest.json", "sha256": "db0c889af3ce7ea4782cf67e0dcfa5b3eaf0b47b5e8004652c7fee1365d5baaf"},
+  "known_stale_queries": [
+    {"query_session": "2023-01-27", "vintage_cutoff": "2023-01-25", "observation_month": "2022-10-01", "completed_period_end": "2022-10-31", "completed_period_age_calendar_days": 88},
+    {"query_session": "2025-11-25", "vintage_cutoff": "2025-11-21", "observation_month": "2025-08-01", "completed_period_end": "2025-08-31", "completed_period_age_calendar_days": 86},
+    {"query_session": "2025-11-28", "vintage_cutoff": "2025-11-25", "observation_month": "2025-08-01", "completed_period_end": "2025-08-31", "completed_period_age_calendar_days": 89},
+    {"query_session": "2025-12-29", "vintage_cutoff": "2025-12-24", "observation_month": "2025-09-01", "completed_period_end": "2025-09-30", "completed_period_age_calendar_days": 90},
+    {"query_session": "2025-12-31", "vintage_cutoff": "2025-12-29", "observation_month": "2025-09-01", "completed_period_end": "2025-09-30", "completed_period_age_calendar_days": 92}
+  ],
+  "known_paused_months": ["2023-04-28", "2025-11-28", "2025-12-31", "2026-02-27", "2026-03-31"],
+  "missing_data_rule": "only_exact_predeclared_stale_query_pairs_pause_original_monthly_rebalance_unknown_gap_fatal",
+  "original_source_full_readiness_relabelled": false,
+  "methodology": {
+    "hypothesis": "Dollar strength may reflect healthy activity or a deteriorating real economy. Compare two fixed real-activity confirmations without adding stocks or changing the four-style/SOXX/gold risk-budget construction. These correlated CFNAIviews are information inputs,not independent economic alpha-family definitions.",
+    "baseline": "Rebuild the original four_factor_semiconductor_sector50 monthly targets from their exact twelve-asset prices and unchanged63session sleevevolatility/30%-70%equitybounds/equal4stylecore/half-equitySOXX/98%funding. Do not inherit the old dollar target as a constant half portfolio;its original source and published dollar inputs are reused.",
+    "rules": "At every original131monthly decision,the candidate halves all original non-BILtargets only when own-vintage63session broad-dollar change is strictlypositive AND its actual published activity level is strictlybelow its fixed threshold AND activity is strictlylower than its separately published63NYSE-session-earlier reading. Equality doesnottrigger. Otherwise retain the unmodified sector source target;removed capital goes actualBIL. Compare magnitude-0.70 and diffusion-0.35 with the same inherited63horizon/50%scale,not a grid.",
+    "interpretation": "Chicago Fed threshold explanations are conditional historical recession/expansion associations,not proof this conjunction predicts stocks or authenticates prior expansion states. The rule is explicitly a low-and-deteriorating-activity hypothesis,not an NBERlabel or published trading model. A difference between own-vintage levels can include revisions/component-weight changes,not just a real economic shock.",
+    "source": "Require complete450ALFREDsnapshots/12batches/6separateprobes,original225queries/series and131monthly/referencepairs. Reparse all actual hashed raw ZIPs/requests/primarydocuments under the unchanged activity source helper. Keep nativeMonthlyIndex,secondpreviousNYSEsnapshotbuffer,62daycompleted-periodage,actualAugust2026observationendpoint and fullOct5marketasof. No current-history substitution/newrequests/lag orfreshness relaxation.",
+    "known_missing_policy": "The strict source remains blocked at10queries across the five explicitly listed dates in both series. Before any candidate targets or returns,register this separate known-pair standby law:if either current/reference reading is exactly one listed stale query,keep the entire original month target row allNaN and record its candidate/month/query/source reason. Existing holdings continue with all mark-to-market,cash,fees and2512/1254formalreturndays;this is not zero-return,cash substitution or repaired source readiness. All five mapped pausedmonths are fixed above. Unknown hash/batch/date/value/missingness/staleness stops rather than entering standby.",
+    "execution": "Original monthly absolute requests and independentfreshUSD10000accounts. Keep5bpnext-openbase/20bpextra-sessionstress,USD1/order,fractional long-onlycash-funded-v2,originalriskfree and full10y/5yreturns. No additional holdingband,dailyregime,sectorfraction,voltarget,floor orhiddenfee rebate. Seed eachwindow from the last actually issued causal target;source-paused rows do not reset capital or restart the portfolio.",
+    "selection": "Exactly2fixed confirmations after150exposed-history configurations. Freeze source,missingness,thresholds,63horizon,halfscale and source selection before generating targets. Actualspecs/code/readiness/independentfullmatrixandseedproof/registrations must be reviewed and remotelypublished before accounts. Retain all failures and require strictSharpe>1,CAGR>same-costSPY,stressCAGR>base-costSPY,DD<=15%onall4paths. Old36source selection correction does not cover these trials or all search.",
+    "preservation": "No neweconomic definitions,no W42fourplan/IJRPKWquota/Oct17eligibility or twoforwardmodel changes. Source gap handling is an explicit new strategy rule,not a modification to the published strict source study. No extra hindsight attribution controls or automaticpromotion/liveauthority.",
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

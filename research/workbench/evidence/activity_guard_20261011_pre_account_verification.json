@@ -1,0 +1,134 @@
+{
+  "W42_or_frozen_forward_rules_changed": false,
+  "actual_path_dependent_trade_targets_computed": false,
+  "all_actual_return_calendar_sessions_preserved": true,
+  "candidate_returns_or_metrics_computed": false,
+  "candidate_static_rule_counts": {
+    "semiconductor_dollar_activity_diffusion_confirmation": {
+      "half_risk_months": 1,
+      "issued_targets": 126,
+      "known_paused_months": [
+        "2023-04-28",
+        "2025-11-28",
+        "2025-12-31",
+        "2026-02-27",
+        "2026-03-31"
+      ],
+      "original_monthly_decisions": 131
+    },
+    "semiconductor_dollar_activity_magnitude_confirmation": {
+      "half_risk_months": 2,
+      "issued_targets": 126,
+      "known_paused_months": [
+        "2023-04-28",
+        "2025-11-28",
+        "2025-12-31",
+        "2026-02-27",
+        "2026-03-31"
+      ],
+      "original_monthly_decisions": 131
+    }
+  },
+  "checked_at": "2026-10-11T20:24:14.132220+00:00",
+  "complete_source_bound_seeded_replays": [
+    {
+      "candidate": "semiconductor_dollar_activity_magnitude_confirmation",
+      "cost_bps": 5.0,
+      "delay_sessions": 1,
+      "seeded_market_context_sessions": 2513,
+      "start": "2016-10-06"
+    },
+    {
+      "candidate": "semiconductor_dollar_activity_magnitude_confirmation",
+      "cost_bps": 20.0,
+      "delay_sessions": 2,
+      "seeded_market_context_sessions": 2513,
+      "start": "2016-10-06"
+    },
+    {
+      "candidate": "semiconductor_dollar_activity_magnitude_confirmation",
+      "cost_bps": 5.0,
+      "delay_sessions": 1,
+      "seeded_market_context_sessions": 1255,
+      "start": "2021-10-06"
+    },
+    {
+      "candidate": "semiconductor_dollar_activity_magnitude_confirmation",
+      "cost_bps": 20.0,
+      "delay_sessions": 2,
+      "seeded_market_context_sessions": 1255,
+      "start": "2021-10-06"
+    },
+    {
+      "candidate": "semiconductor_dollar_activity_diffusion_confirmation",
+      "cost_bps": 5.0,
+      "delay_sessions": 1,
+      "seeded_market_context_sessions": 2513,
+      "start": "2016-10-06"
+    },
+    {
+      "candidate": "semiconductor_dollar_activity_diffusion_confirmation",
+      "cost_bps": 20.0,
+      "delay_sessions": 2,
+      "seeded_market_context_sessions": 2513,
+      "start": "2016-10-06"
+    },
+    {
+      "candidate": "semiconductor_dollar_activity_diffusion_confirmation",
+      "cost_bps": 5.0,
+      "delay_sessions": 1,
+      "seeded_market_context_sessions": 1255,
+      "start": "2021-10-06"
+    },
+    {
+      "candidate": "semiconductor_dollar_activity_diffusion_confirmation",
+      "cost_bps": 20.0,
+      "delay_sessions": 2,
+      "seeded_market_context_sessions": 1255,
+      "start": "2021-10-06"
+    }
+  ],
+  "exact_old_ledger_and14forward_control_hashes_unchanged_before_migration": true,
+  "exact_previous_engine_sha256": "ed0309d7cb1ecad811dda64620847b04cb198d286f677bec99d62fa702af8c46",
+  "exact_previous_event_head": "2107a94b04a0a6e6fbe4504c0a0754506d19d77414e7f409b413e2e60e4f5721",
+  "independent_activity_queries_checked": 450,
+  "independent_dollar_months_checked": 131,
+  "independent_verifier_sha256": "3cbb40772cdd4bb6e939ecad755586d6cd498675b9daabca915adc1cbd516afe",
+  "investment_objective_verified": false,
+  "known_pause_months": [
+    "2023-04-28",
+    "2025-11-28",
+    "2025-12-31",
+    "2026-02-27",
+    "2026-03-31"
+  ],
+  "known_stale_queries_preserved": 10,
+  "maximum_independent_original_budget_error": 2.220446049250313e-16,
+  "maximum_independent_seed_and_full_replay_error": 0.0,
+  "maximum_independent_source_value_error": 1.7763568394002505e-15,
+  "maximum_independent_target_error": 2.220446049250313e-16,
+  "new_economic_factor_definitions": 0,
+  "new_registered_candidates": 0,
+  "new_source_requests": 0,
+  "new_strategy_evaluations": 0,
+  "order_authority": false,
+  "original_policy_thresholds63change_halfscale_or_source_age_refitted": false,
+  "original_source_full_readiness_still_false": true,
+  "original_source_target_sha256": "fa0cde19518df075e7bd88388b7d6d37e061f0a7822a5a0139621599f33cd638",
+  "prepared_comparisons_sha256": "355b403740ad08bbc6fd0fca0b10dadae3ad58bf48eb69396f3af74efb7b490e",
+  "prepared_new_engine_sha256": "5db955695409291572afa573eb056d341634f68978e053ad12c4537e1286cea1",
+  "prepared_source_pause_log_sha256": "89c8fb285988b488d5b5b34bf99399477c45e2ea26acd30e496958024e5103c3",
+  "prepared_spec_sha256": {
+    "semiconductor_dollar_activity_diffusion_confirmation": "b20ee8f2213b4bef288e86562a0cfdee707df9c5dd69f51914913229ef17f160",
+    "semiconductor_dollar_activity_magnitude_confirmation": "8d26032ac8944b8e4df0821e73b026d6e10d7ea185386931b113c284128cb646"
+  },
+  "prepared_target_sha256": {
+    "semiconductor_dollar_activity_diffusion_confirmation": "356d54358e572943df019536f04cda39dca798e07b6c42a18daac1c2d100b695",
+    "semiconductor_dollar_activity_magnitude_confirmation": "8433d6ea11b51fafbdda3bad438bab8b94f06da1f3143c16555db1aef19e303b"
+  },
+  "receipt_contract_test_cases_passed": 120,
+  "schema_version": 1,
+  "semantic_forward_profile_verification_required_after_exact_anchored_migration": true,
+  "source_and_confirmation_contract_test_cases_passed": 90,
+  "test_case_counts_are_overlapping_not_additive": true
+}

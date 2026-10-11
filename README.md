@@ -5495,14 +5495,65 @@ PDF are separately verified.
 
 The [preservation proof](research/workbench/evidence/activity_input_preservation_20261011.json)
 retains the exact research engine, ledger/event head, seven forward profiles,
-69 imports and 3,192 frozen controls. **No direction flags, portfolio targets,
-accounts, factor definitions or strategy trials are added.**
-Counts remain 150 completed configurations, 66 reviews, 68 registered
-versions and no qualified champion.
+69 imports and 3,192 frozen controls. **This source-only checkpoint added
+no direction flags, portfolio targets, accounts, factor definitions or
+strategy trials.** Its counts were 150 completed configurations,
+66 reviews, 68 registered versions and no qualified champion;
+the separate strategy study below does not relabel the blocked source as ready.
 The [updated native instructions](research/workbench/evidence/prospective_data_automation_v48.json)
 keep daily/weekly cadence, original W42 plans and both frozen forward models.
 Source preparation is not investment qualification; the full objective
 remains unmet.
+
+## Preregistered low-and-deteriorating activity confirmations
+
+The [separate policy](research/workbench/config/activity-factor-guard.json)
+and [finite generator](research/workbench/src/us_quant/activity_factor_guard.py)
+freeze two confirmations on the original four-style/SOXX/gold
+sector risk-budget source. At each original monthly decision,
+both require a positive own-vintage 63-session broad-dollar change
+and an activity decline against its separately archived 63-session-earlier
+reading. Magnitude additionally requires CFNAIMA3 strictly below -0.70;
+diffusion requires CFNAIDIFF strictly below -0.35. Equality does not trigger.
+A confirmed state halves all original non-BIL targets and moves the removed
+budget to actual BIL; otherwise the original target is unchanged.
+The published levels motivate a testable low/deteriorating-activity rule,
+not an unconditional recession label or claimed independent alpha.
+
+**A distinct, explicitly frozen missing-data rule preserves the strict source
+failure.** The ten exact stale inputs map to no rebalance on
+2023-04-28, 2025-11-28, 2025-12-31, 2026-02-27 and 2026-03-31.
+Those entire target rows stay undefined, with recorded source reasons.
+Existing holdings, mark-to-market, cash, fees and all 2,512/1,254
+formal return days remain. Unknown gaps are fatal; no age relaxation,
+current-history fill, cash fallback or synthetic zero return is introduced.
+The original source policy/readiness remains blocked.
+
+The [independent pre-account proof](research/workbench/evidence/activity_guard_20261011_pre_account_verification.json)
+checks all 450 activity queries, 131 raw-published dollar comparisons,
+scalar original budgets, both full target matrices and eight seeded
+registered replays. Maximum input/budget/target/seed errors are
+1.78e-15/2.22e-16/2.22e-16/0.
+Each rule keeps 126 targets on the original 131-date grid,
+with two magnitude and one diffusion half-risk months.
+Thresholds, 63-session comparisons, 50% scale, source, costs and monthly
+clock are fixed; no outcome-driven grid is used.
+
+The [actual registration](research/workbench/evidence/activity_guard_20261011_registration.json)
+records both candidates at 20:25 UTC.
+The [preservation proof](research/workbench/evidence/activity_guard_20261011_registration_preservation.json)
+verifies one exact old-engine/event-head migration and all seven original
+semantic forward profiles, 69 imports and 3,192 controls.
+The [registered snapshot](research/workbench/evidence/research_program_2026-W41_activity_registered_v74.json)
+retains 150 completed configurations and 66 reviews, with 70 registered
+versions including two old invalid ones, two actual pending candidates
+and no champion.
+The [prior-path audit](research/workbench/evidence/research_program_source_bound_audit_v48.json)
+reexecutes all 66 reviews/264 paths. An actual old-commit attempt
+stops before strategy account/output creation.
+**No new account return has been calculated at this checkpoint.**
+The exact original registration/code/policy/proof must be remotely published
+before evaluation. Original W42 plans and both frozen forward models remain.
 
 ## Progress and publication
 

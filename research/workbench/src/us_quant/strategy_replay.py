@@ -46,6 +46,7 @@ GENERATORS = {
     "factor_core_risk_rotation": "config/factor-core-risk-rotation.json",
     "factor_core_momentum": "config/factor-core-momentum.json",
     "producer_gold_routing": "config/producer-gold-routing.json",
+    "activity_factor_guard": "config/activity-factor-guard.json",
 }
 
 
@@ -387,6 +388,16 @@ def registered_generator(spec: dict, root: Path) -> tuple[str, dict]:
                 "src/us_quant/defensive_factor_rotation.py", "config/defensive-factor-rotation.json",
                 "config/sector-basket-strategy.json",
             ]
+        elif name == "activity_factor_guard":
+            required += [
+                "src/us_quant/activity_inputs.py", "config/activity-inputs.json",
+                "evidence/activity_input_readiness_20261011.json",
+                "data/activity-inputs-corrected-20261011/manifest.json",
+                "evidence/dollar_risk_guard_20261011_registration.json",
+                "src/us_quant/dollar_risk_guard.py", "config/dollar-risk-guard.json",
+                "src/us_quant/sector_growth_balance.py", "config/sector-growth-balance.json",
+                "src/us_quant/inflation_inputs.py",
+            ]
         if any(relative not in frozen for relative in required):
             raise QuantError("The registered strategy is missing a frozen helper dependency.")
         for relative in required:
@@ -545,6 +556,10 @@ def registered_targets(
             cache[key] = build_targets(data, policy)[spec["id"]]
         elif name == "financial_conditions_guard":
             from us_quant.financial_conditions_guard import build_targets
+
+            cache[key] = build_targets(data, policy)[spec["id"]]
+        elif name == "activity_factor_guard":
+            from us_quant.activity_factor_guard import build_targets
 
             cache[key] = build_targets(data, policy)[spec["id"]]
         elif name == "sector_term_guard":
