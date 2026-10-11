@@ -28,6 +28,7 @@ GENERATORS = {
     "sector_growth_balance": "config/sector-growth-balance.json",
     "dollar_risk_guard": "config/dollar-risk-guard.json",
     "financial_conditions_guard": "config/financial-conditions-guard.json",
+    "sector_term_guard": "config/sector-term-guard.json",
 }
 
 
@@ -128,6 +129,22 @@ def registered_generator(spec: dict, root: Path) -> tuple[str, dict]:
                 "config/growth-factor-satellite.json",
                 "src/us_quant/multifactor_stability.py",
                 "data/financial-conditions-vintages-20261011/verified-manifest-v2.json",
+            ]
+        elif name == "sector_term_guard":
+            required += [
+                "src/us_quant/volatility_term_risk.py",
+                "config/volatility-term-risk.json",
+                "src/us_quant/dollar_risk_guard.py",
+                "config/dollar-risk-guard.json",
+                "src/us_quant/sector_growth_balance.py",
+                "config/sector-growth-balance.json",
+                "src/us_quant/growth_factor_satellite.py",
+                "config/growth-factor-satellite.json",
+                "src/us_quant/multifactor_stability.py",
+                "data/sector-term-source-20261011/verified-manifest.json",
+                "data/volatility-term-source-20261010/manifest.json",
+                "data/volatility-term-source-20261010/VIX.csv",
+                "data/volatility-term-source-20261010/VIX3M.csv",
             ]
         if any(relative not in frozen for relative in required):
             raise QuantError("The registered strategy is missing a frozen helper dependency.")
@@ -251,6 +268,10 @@ def registered_targets(
             cache[key] = build_targets(data, policy)[spec["id"]]
         elif name == "financial_conditions_guard":
             from us_quant.financial_conditions_guard import build_targets
+
+            cache[key] = build_targets(data, policy)[spec["id"]]
+        elif name == "sector_term_guard":
+            from us_quant.sector_term_guard import build_targets
 
             cache[key] = build_targets(data, policy)[spec["id"]]
     return seed_window(cache[key], start)

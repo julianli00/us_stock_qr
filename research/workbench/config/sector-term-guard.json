@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "study_id": "sector_term_guard_20261011",
+  "data_scope": "factor_etf_portfolio",
+  "data_start": "2015-08-10",
+  "as_of": "2026-10-05",
+  "prior_evaluated_configurations": 118,
+  "new_configurations": 2,
+  "new_economic_factor_definitions": 0,
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "factor_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "original_control_policy": "config/sector-growth-balance.json",
+  "original_control_candidate": "four_factor_semiconductor_sector50",
+  "dollar_source_policy": "config/dollar-risk-guard.json",
+  "option_source_policy": "config/volatility-term-risk.json",
+  "option_ratio_risk_threshold": 1.0,
+  "risk_off_investment_scale": 0.50,
+  "cash_reserve": 0.02,
+  "target_event_policy": "completed_month_or_binary_risk_state_change",
+  "candidates": [
+    {"id": "semiconductor_term_half_guard", "include_known_monthly_dollar_risk": false},
+    {"id": "semiconductor_term_or_dollar_half_guard", "include_known_monthly_dollar_risk": true}
+  ],
+  "methodology": {
+    "hypothesis": "Weeklyfinancial-condition smoothing and month-end checks can miss a fast volatility shock. Shorter-horizonSPXoption-implied volatility above its longer horizon is a different,more timely risk observation. Test the already fixed Cboeratio guard alone,and an ORcombination that retains the prior monthlydollar risk state while permitting earlier daily option protection.",
+    "baseline": "Reuse the exact four-factor/SOXX/gold completed-month target matrices and composed_monthly_target helper:half equity inSOXX,otherhalf equal across four families,63-session equity/gold marginal volatility,30%-70%equity share,98%target investment. No new sector share,volatility window or factor scoring.",
+    "options": "Use actual official CboeVIX/VIX3M closing index levels. The frozen earlier risk threshold isVIX>=VIX3M;the current primary methodology specifies93days forVIX3Mand approximate regular dissemination09:31-16:15ET. The index is not a futures contract or portfolio holding. Preserve the issuer's2017-09-18VXV-to-VIX3Mticker rename,current-methodology launch entry and incomplete historical-rule continuity.",
+    "rules": "After each close,the first candidate is risk-off only on the fixed term inversion. The second is risk-off on inversion ORthe latest known completed-month dollar appreciation state. Dollar state updates only at the existing month-end and remains fixed until the next one;no later daily macro input retunes that recorded monthly decision. Risk-off halves every original non-BILtarget and transfers the removed49%capital to actual BIL,retaining relative factor/SOXX/gold budgets and2%target idle cash.",
+    "events": "Emit an absolute target on a completed-month allocation update or a change of that candidate's binary risk state. With no event,retain actual holdings and emit an entirely empty target row. Every issued target remains in its dated queue;return from risk-off can restore the latest known full month allocation. No pending target is replaced by a later close,including a one-day inversion reversal.",
+    "availability": "Current-day close information can affect only a later market open under the original1/2session execution delays. Current Cboedocuments establish the regular closing calculation interval,but current downloaded histories do not authenticate exact historical first-publication instants or unrevised intraday snapshots. Do not claim such proof,use option open/high/low or trade synthetic index returns.",
+    "source": "Revalidate the actual unchanged earlier CboeCSVbytes,dates and hashes against its original source registration. Require all2805ETFsession observations,positivefinitelevels and no forward fill. H10monthlydollar inputs retain actual archived releases,conservative date-conflict bounds,14dayage and2019methodology handling. New primaryHTMLand an actually parsed publisher-advertisedPDFare retained privately;HTTP200HTMLis not a PDF.",
+    "selection": "Exactly two fixed compositions after118complete exposed-history configurations. Threshold1.0and50%scale already existed before these outcomes;no post-result ratio,sector-share,window,delay or scale grid. Register source/code/specifications and publish actual receipts before new outcomes;retain both failures or partial passes.",
+    "attribution": "Compare with the already reviewed unmodifiedSOXXcore and dollar-onlyguard in identical horizons and costs. Preregister eightconstant-exposurecontrols using each candidate/horizon'sfull-windowmean seeded,forward-filled1.0or0.5risk scale,on originalmonthlybudgetdates. Different event frequencies remain disclosed. This is hindsight descriptive attribution,not causal validation,matched realized risk,a newly counted strategy or independent alpha.",
+    "execution": "FreshUSD10000accounts,fractional long-only cash-funded units,2%target cash,USD1per order,5bpnext-openbase and20bpextra-sessionstress. Require fundedv2and independentbt,regenerated complete target matrices and frozen risk-free series. Sharpe>1,drawdown<=15%,same-windowSPYand stressed-strategy/base-SPYcomparisons must all pass10y/5y.",
+    "catalog_and_forward": "Option risk information is not a new economic alpha-family definition. Preserve six definitions/fivefamilies,2terminalversions,all118previous outcomes,all7registered prospectiveprofiles and realOct17IJR/PKWeligibility. These new target rules do not replace the frozen macro/dollar forward experiments even if historical performance improves. No new forward performance,broker connection or live deployment.",
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

@@ -2499,8 +2499,8 @@ in all four paths; tightness is the same exposure as its control.
 The controls are hindsight attribution, not new candidates, complete
 search correction or matched realized risk.
 
-The [latest snapshot](research/workbench/evidence/research_program_2026-W41_results_v38.json)
-now records **118 completed configurations, 34 reviews, no pending
+The [NFCI-stage snapshot](research/workbench/evidence/research_program_2026-W41_results_v38.json)
+recorded **118 completed configurations, 34 reviews, no pending
 candidate and no qualified champion**. The
 [136-path read-only audit](research/workbench/evidence/research_program_source_bound_audit_v13.json)
 retains 19 legacy-engine and 15 version-two reviews. The
@@ -2515,6 +2515,53 @@ eligibility. NFCI is not silently added to either frozen forward model.
 The old 22-review joint-selection inference excludes the subsequent
 twelve reviews and all earlier 84 trials. The investment objective is
 still unverified, with no live deployment or order authority.
+
+### Timely sector risk: fixed option-term and dollar guards
+
+The [source audit](research/workbench/evidence/sector_term_source_admission_20261011.json)
+revalidates the unchanged official VIX and VIX3M histories previously
+admitted for the factor-only study. Both cover all 2,805 required ETF
+sessions without forward fill. The actual current Cboe dashboard and
+advertised methodology PDF confirm VIX3M's 93-day horizon, regular
+09:31-16:15 Eastern calculation interval and September 2017 ticker rename
+from VXV. The current methodology's launch entry and first history date
+are retained, not rewritten to imply complete historical rule continuity.
+Current downloaded closes are not authenticated unrevised intraday
+publication snapshots. No volatility index becomes a portfolio holding.
+
+The [two preregistered rules](research/workbench/evidence/sector_term_guard_20261011_registration.json)
+keep the exact four-factor/SOXX/gold month-end budgets. The first halves
+all non-BIL exposure when the existing VIX/VIX3M ratio threshold reaches
+one; the second uses that condition **or** the latest known monthly
+dollar-risk state. Removed exposure goes to actual BIL, not synthetic
+interest. Factor/gold relative budgets and 2% target idle cash remain
+unchanged. Dollar information updates only at a completed month, not
+with later daily observations.
+
+Targets are emitted only for a month-end budget update or binary-state
+change. Each absolute target remains in its dated execution queue:
+a one-day inversion and reversal are two later-open instructions, not
+an overwritten pending order. The original base/stress delay, costs,
+independent accounting and full qualification contract stay fixed.
+Neither threshold nor 50% reduction is selected from a new grid.
+The earlier factor-only option-risk failures remain retained; this
+separate sector composition is not an independent alpha-family discovery.
+
+```bash
+cd research/workbench
+.venv/bin/python -I -B -m us_quant.sector_term_guard --output data/sector-term-prepared-new
+```
+
+Preparation requires sealed local sources, refuses overwrite and computes
+no portfolio outcomes. Eight mean-exposure controls are preregistered
+as hindsight attribution, with event-frequency differences disclosed;
+they are not causal candidates, matched realized risk or new trial counts.
+The [pending snapshot](research/workbench/evidence/research_program_2026-W41_sector_term_v39.json)
+records **118 completed configurations, 34 reviews and two pending
+candidates**, no qualified champion. Exact engine migration retains
+every previous record and all seven forward profiles. No new prospective
+target experiment, early October 17 family admission or live orders
+are authorized by these registrations.
 
 ## Progress and publication
 
