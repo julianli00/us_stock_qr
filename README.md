@@ -6072,7 +6072,7 @@ retain daily/weekly cadence and both unchanged forward models,
 which still have zero actual return sessions.
 **The full investment objective remains unmet.**
 
-## Current selection audit: fixed accounting cohorts, outcomes pending
+## Current selection audit: no positive simultaneous growth bound
 
 The [new dated policy](research/workbench/config/selection-accounting-cohorts.json)
 and [adapter](research/workbench/src/us_quant/selection_accounting_cohorts.py)
@@ -6138,6 +6138,51 @@ The old 22/36-candidate results retain their original scope and bytes;
 this new study does not silently extend their p-values.
 No new accounts, strategy/factor definitions, engine migration or forward
 days are created, and the investment objective remains unmet.
+
+The [actual corrected-adapter results](research/workbench/evidence/selection_accounting_20261011_results.json)
+follow remote publication
+`fe51ac294ee2fd82078a37ee44c4f541be0f277c`.
+The actual 23:31:41.717163UTC fence precedes primary input/inference
+processing at 23:31:41.718161UTC.
+All four fixed cells are reported, including the non-significant outcomes:
+
+| Original accounting cohort | Window | Comparisons | Scoped omnibus p-value | Positive simultaneous log-growth lower bounds |
+|---|---|---:|---:|---:|
+| Legacy original, not current funded performance | 10y | 57 | 1.000000 | 0 |
+| Legacy original, not current funded performance | 5y | 57 | 0.579355 | 0 |
+| Explicit cash-funded-v2 | 10y | 171 | 0.501125 | 0 |
+| Explicit cash-funded-v2 | 5y | 171 | 0.225694 | 0 |
+
+The four-cell Bonferroni scoped omnibus p-value is **0.9027743064**.
+**No comparison has a strictly positive simultaneous log-growth lower
+bound under this frozen diagnostic.**
+This does not prove that successful strategies cannot exist or quantify
+future profits. The inference still excludes the earlier 84 configurations,
+unknown research choices and future-added trials; it is not full-search
+selection-adjusted alpha or an independent holdout.
+It does not change Sharpe, SPY or drawdown qualification.
+
+The [reproducibility proof](research/workbench/evidence/selection_accounting_20261011_reproducibility.json)
+reproduces all statistics and four private matrix hashes in a complete
+production replay. Independent raw parsing checks 304 reviewed paths,
+608 strategy/SPY account references and their 608 bt counterparts,
+including 1,144,864 net account rows. Those checks are overlapping source
+references, not independent trials.
+Raw log-input, original metric and bt wealth errors are at most
+2.09e-16, 1.45e-13 and USD1.82e-10.
+Independent direct-index arithmetic verifies every one of the 4,000
+samples per cell, with maximum bound error 7.70e-18 and exact p-values.
+
+The [preservation proof](research/workbench/evidence/selection_accounting_20261011_preservation.json)
+keeps all original rows, engine/head, 26 old selection artifacts,
+seven profiles, 69 imports and 3,192 controls byte-identical.
+The [updated native instructions](research/workbench/evidence/prospective_data_automation_v55.json)
+retain these scope limits, daily/weekly cadence, original W42 plans
+and both unchanged forward models with zero actual return sessions.
+Counts remain **160 completed configurations/76 recurring reviews**,
+no pending strategy candidate and no champion.
+No cohort, statistic, block, seed or alpha is refitted to obtain significance.
+**The full investment objective remains unmet.**
 
 ## Progress and publication
 
