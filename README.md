@@ -4754,6 +4754,63 @@ no champion and no actual forward return session.
 Original W42 plans, IJR/PKW quota and both frozen forward
 experiments remain. **The investment objective remains unmet.**
 
+The [completed graded-gold results](research/workbench/evidence/graded_gold_20261011_results.json)
+retain both fixed source combinations and every required path:
+
+| Original equity-breadth source + copied relative gold | Base net CAGR / Sharpe / drawdown | Stress net CAGR / Sharpe / drawdown |
+|---|---|---|
+| Half equity source, ten-year | 15.27% / 1.0300 / 13.89% | 14.67% / 0.9853 / 13.29% |
+| Half equity source, five-year | 19.40% / 1.0688 / 13.15% | 18.44% / 1.0099 / 13.29% |
+| Equity off source, ten-year | 14.22% / 0.9792 / 13.68% | 13.80% / 0.9475 / 13.27% |
+| Equity off source, five-year | 18.25% / 1.0106 / 13.78% | 17.52% / 0.9651 / 13.29% |
+
+**The half-source construction passes every five-year gate,
+but neither candidate passes the joint objective.**
+All eight drawdown gates pass. Ten-year half-source CAGR
+is exactly 15.2749%/14.6668%, below SPY's 15.4620%/15.4056%;
+its ten-year stressed Sharpe is 0.985286, not above 1.
+The narrow base CAGR difference is not rounded into acceptance.
+The equity-off source also fails both ten-year return/Sharpe
+comparisons and five-year stressed Sharpe.
+
+Compared with the prior binary 200-observation gold gate,
+the fixed graded law improves the ten-year CAGR/Sharpe,
+but that conditional comparison is not equal-risk or causal
+alpha and does not erase ten-year failures.
+Ten-year stress orders/modeled fees are 814/USD1,965.87
+for half equity and 739/USD2,045.45 for equity off.
+No gold horizon, vote weight, threshold, clock, equity
+composition or modeled cost is retuned.
+
+The [independent account proof](research/workbench/evidence/graded_gold_20261011_reproducibility.json)
+checks all 16 funded strategy/SPY and 16 independent `bt`
+accounts, original targets/signals/month dates, own-window
+seeds, fees/rates/calendars and initial-capital peaks.
+It also checks 30,128 actual-price quantity/funding/order/
+cash-flow sessions. Prepared versus actual seeded targets
+agree exactly; maximum scalar metric/equity/cash-flow errors
+are 3.49e-14/8.74e-11 USD/1.10e-11 USD.
+
+The [current snapshot](research/workbench/evidence/research_program_2026-W41_graded_gold_results_v63.json)
+contains **140 completed configurations = 84 prior + 56 recurring reviews**,
+58 versions including two old invalid ones, no pending
+actual candidate and no champion.
+The [full source-bound audit](research/workbench/evidence/research_program_source_bound_audit_v37.json)
+reexecutes 56 reviews/224 paths, retaining 19 legacy and 37
+explicit funded-v2 reviews.
+The [preservation proof](research/workbench/evidence/graded_gold_20261011_preservation.json)
+keeps all old journal rows/prefix, 69 imported files, seven
+forward profiles and 3,192 frozen prior control artifacts.
+
+The [native continuation](research/workbench/evidence/prospective_data_automation_v41.json)
+retains these five-year passes and ten-year failures, original
+daily/weekly cadence, W42 plans, IJR/PKW quota and both
+frozen forward models. Both models still have zero actual
+return sessions. Further execution research requires its
+own fixed rule, source proof and published registration;
+it cannot change modeled fees or reuse only passing windows.
+**The investment objective remains unmet.**
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

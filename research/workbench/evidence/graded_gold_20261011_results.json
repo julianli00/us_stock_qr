@@ -1,0 +1,519 @@
+{
+  "actual_remote_verification_at": "2026-10-11T16:34:56.431900+00:00",
+  "all_eight_drawdown_gates_pass": true,
+  "all_ten_year_spy_return_gates_fail": true,
+  "both_quote_versions_original_raw_csv_guards_and_price_choice_preserved": true,
+  "candidate_reviews": [
+    {
+      "candidate_id": "semiconductor_breadth_half_gold_relative",
+      "configuration": {
+        "id": "semiconductor_breadth_half_gold_relative",
+        "source_id": "semiconductor_sector_breadth_equity_half"
+      },
+      "historical_gates_passed": false,
+      "independent_forward_validation": false,
+      "order_authority": false,
+      "paths": [
+        {
+          "benchmark": {
+            "cagr": 0.1546199793311418,
+            "end": "2026-10-05",
+            "max_drawdown": 0.3371727532125359,
+            "sessions": 2512,
+            "sharpe": 0.7558900902911541,
+            "start": "2016-10-06"
+          },
+          "conditional_cagr_difference_vs_binary_gold": 0.004525841938455288,
+          "conditional_cagr_difference_vs_ungated_source": -0.020279845733901514,
+          "conditional_drawdown_difference_vs_binary_gold": 8.281125514986165e-06,
+          "conditional_drawdown_difference_vs_ungated_source": -0.053136062254457106,
+          "conditional_sharpe_difference_vs_binary_gold": 0.05388923576688165,
+          "conditional_sharpe_difference_vs_ungated_source": -0.04112929816625677,
+          "cost_bps": 5.0,
+          "delay_sessions": 1,
+          "gates": {
+            "beats_spy": false,
+            "drawdown_at_most_15pct": true,
+            "sharpe_above_1": true
+          },
+          "metrics": {
+            "cagr": 0.15274934675853835,
+            "end": "2026-10-05",
+            "max_drawdown": 0.13887915029298514,
+            "sessions": 2512,
+            "sharpe": 1.0300449906809852,
+            "start": "2016-10-06"
+          },
+          "original_ungated_gold_source_metrics": {
+            "cagr": 0.17302919249243986,
+            "end": "2026-10-05",
+            "max_drawdown": 0.19201521254744225,
+            "sessions": 2512,
+            "sharpe": 1.071174288847242,
+            "start": "2016-10-06"
+          },
+          "previous_binary_gold_metrics": {
+            "cagr": 0.14822350482008306,
+            "end": "2026-10-05",
+            "max_drawdown": 0.13887086916747016,
+            "sessions": 2512,
+            "sharpe": 0.9761557549141036,
+            "start": "2016-10-06"
+          },
+          "scenario": "base",
+          "total_cost_usd": 1109.479797026319,
+          "total_orders": 814,
+          "worst_drawdown_episode": {
+            "drawdown": 0.13887915029298514,
+            "peak_session": "2020-02-19",
+            "trough_session": "2020-03-19"
+          },
+          "years": 10
+        },
+        {
+          "benchmark": {
+            "cagr": 0.15405636613916607,
+            "end": "2026-10-05",
+            "max_drawdown": 0.3371727532125357,
+            "sessions": 2512,
+            "sharpe": 0.7531241378409322,
+            "start": "2016-10-06"
+          },
+          "conditional_cagr_difference_vs_binary_gold": 0.004530626851382946,
+          "conditional_cagr_difference_vs_ungated_source": -0.024032291337477973,
+          "conditional_drawdown_difference_vs_binary_gold": -0.002760479851335207,
+          "conditional_drawdown_difference_vs_ungated_source": -0.0560720972813582,
+          "conditional_sharpe_difference_vs_binary_gold": 0.053058580744699047,
+          "conditional_sharpe_difference_vs_ungated_source": -0.06904968332837214,
+          "cost_bps": 20.0,
+          "delay_sessions": 2,
+          "gates": {
+            "also_beats_base_cost_spy": false,
+            "beats_spy": false,
+            "drawdown_at_most_15pct": true,
+            "sharpe_above_1": false
+          },
+          "metrics": {
+            "cagr": 0.14666806546423206,
+            "end": "2026-10-05",
+            "max_drawdown": 0.1329119800476073,
+            "sessions": 2512,
+            "sharpe": 0.9852863740085013,
+            "start": "2016-10-06"
+          },
+          "original_ungated_gold_source_metrics": {
+            "cagr": 0.17070035680171003,
+            "end": "2026-10-05",
+            "max_drawdown": 0.1889840773289655,
+            "sessions": 2512,
+            "sharpe": 1.0543360573368734,
+            "start": "2016-10-06"
+          },
+          "previous_binary_gold_metrics": {
+            "cagr": 0.1421374386128491,
+            "end": "2026-10-05",
+            "max_drawdown": 0.1356724598989425,
+            "sessions": 2512,
+            "sharpe": 0.9322277932638022,
+            "start": "2016-10-06"
+          },
+          "scenario": "stress",
+          "total_cost_usd": 1965.867306302343,
+          "total_orders": 814,
+          "worst_drawdown_episode": {
+            "drawdown": 0.1329119800476073,
+            "peak_session": "2020-02-21",
+            "trough_session": "2020-03-19"
+          },
+          "years": 10
+        },
+        {
+          "benchmark": {
+            "cagr": 0.14040855610470793,
+            "end": "2026-10-05",
+            "max_drawdown": 0.24496383714703274,
+            "sessions": 1254,
+            "sharpe": 0.6303911363155571,
+            "start": "2021-10-06"
+          },
+          "conditional_cagr_difference_vs_binary_gold": -0.0026431376356808034,
+          "conditional_cagr_difference_vs_ungated_source": -0.028215407212339727,
+          "conditional_drawdown_difference_vs_binary_gold": 1.716557104514127e-05,
+          "conditional_drawdown_difference_vs_ungated_source": -0.06225713871913541,
+          "conditional_sharpe_difference_vs_binary_gold": 0.006903862251657289,
+          "conditional_sharpe_difference_vs_ungated_source": -0.05535614894865981,
+          "cost_bps": 5.0,
+          "delay_sessions": 1,
+          "gates": {
+            "beats_spy": true,
+            "drawdown_at_most_15pct": true,
+            "sharpe_above_1": true
+          },
+          "metrics": {
+            "cagr": 0.1940021493142614,
+            "end": "2026-10-05",
+            "max_drawdown": 0.13150932402046667,
+            "sessions": 1254,
+            "sharpe": 1.0688039000724743,
+            "start": "2021-10-06"
+          },
+          "original_ungated_gold_source_metrics": {
+            "cagr": 0.22221755652660113,
+            "end": "2026-10-05",
+            "max_drawdown": 0.19376646273960207,
+            "sessions": 1254,
+            "sharpe": 1.124160049021134,
+            "start": "2021-10-06"
+          },
+          "previous_binary_gold_metrics": {
+            "cagr": 0.1966452869499422,
+            "end": "2026-10-05",
+            "max_drawdown": 0.13149215844942153,
+            "sessions": 1254,
+            "sharpe": 1.061900037820817,
+            "start": "2021-10-06"
+          },
+          "scenario": "base",
+          "total_cost_usd": 518.0581699689772,
+          "total_orders": 405,
+          "worst_drawdown_episode": {
+            "drawdown": 0.13150932402046667,
+            "peak_session": "2026-01-29",
+            "trough_session": "2026-03-30"
+          },
+          "years": 5
+        },
+        {
+          "benchmark": {
+            "cagr": 0.13528280366429257,
+            "end": "2026-10-05",
+            "max_drawdown": 0.24496383714703285,
+            "sessions": 1254,
+            "sharpe": 0.6043080883068029,
+            "start": "2021-10-06"
+          },
+          "conditional_cagr_difference_vs_binary_gold": -0.001704891419519683,
+          "conditional_cagr_difference_vs_ungated_source": -0.03142070783111661,
+          "conditional_drawdown_difference_vs_binary_gold": -0.0035403103827030824,
+          "conditional_drawdown_difference_vs_ungated_source": -0.057910634447815856,
+          "conditional_sharpe_difference_vs_binary_gold": 0.010768247961526423,
+          "conditional_sharpe_difference_vs_ungated_source": -0.07893150149412276,
+          "cost_bps": 20.0,
+          "delay_sessions": 2,
+          "gates": {
+            "also_beats_base_cost_spy": true,
+            "beats_spy": true,
+            "drawdown_at_most_15pct": true,
+            "sharpe_above_1": true
+          },
+          "metrics": {
+            "cagr": 0.18442775958062696,
+            "end": "2026-10-05",
+            "max_drawdown": 0.13285513708611862,
+            "sessions": 1254,
+            "sharpe": 1.0098686848705365,
+            "start": "2021-10-06"
+          },
+          "original_ungated_gold_source_metrics": {
+            "cagr": 0.21584846741174357,
+            "end": "2026-10-05",
+            "max_drawdown": 0.19076577153393448,
+            "sessions": 1254,
+            "sharpe": 1.0888001863646593,
+            "start": "2021-10-06"
+          },
+          "previous_binary_gold_metrics": {
+            "cagr": 0.18613265100014664,
+            "end": "2026-10-05",
+            "max_drawdown": 0.1363954474688217,
+            "sessions": 1254,
+            "sharpe": 0.9991004369090101,
+            "start": "2021-10-06"
+          },
+          "scenario": "stress",
+          "total_cost_usd": 848.8605478646666,
+          "total_orders": 405,
+          "worst_drawdown_episode": {
+            "drawdown": 0.13285513708611862,
+            "peak_session": "2026-01-29",
+            "trough_session": "2026-03-30"
+          },
+          "years": 5
+        }
+      ],
+      "registered_at": "2026-10-11T16:29:23.773838+00:00",
+      "reviewed_at": "2026-10-11T16:35:01.884665+00:00",
+      "status": "rejected_historical"
+    },
+    {
+      "candidate_id": "semiconductor_breadth_off_gold_relative",
+      "configuration": {
+        "id": "semiconductor_breadth_off_gold_relative",
+        "source_id": "semiconductor_sector_breadth_equity_off"
+      },
+      "historical_gates_passed": false,
+      "independent_forward_validation": false,
+      "order_authority": false,
+      "paths": [
+        {
+          "benchmark": {
+            "cagr": 0.1546199793311418,
+            "end": "2026-10-05",
+            "max_drawdown": 0.3371727532125359,
+            "sessions": 2512,
+            "sharpe": 0.7558900902911541,
+            "start": "2016-10-06"
+          },
+          "conditional_cagr_difference_vs_binary_gold": 0.004408666057795774,
+          "conditional_cagr_difference_vs_ungated_source": -0.02023308541071045,
+          "conditional_drawdown_difference_vs_binary_gold": 0.005431993991850237,
+          "conditional_drawdown_difference_vs_ungated_source": -0.045319822963378775,
+          "conditional_sharpe_difference_vs_binary_gold": 0.05471025223321435,
+          "conditional_sharpe_difference_vs_ungated_source": -0.05132302607522521,
+          "cost_bps": 5.0,
+          "delay_sessions": 1,
+          "gates": {
+            "beats_spy": false,
+            "drawdown_at_most_15pct": true,
+            "sharpe_above_1": false
+          },
+          "metrics": {
+            "cagr": 0.14217005163263607,
+            "end": "2026-10-05",
+            "max_drawdown": 0.13676314686928104,
+            "sessions": 2512,
+            "sharpe": 0.9792309815813901,
+            "start": "2016-10-06"
+          },
+          "original_ungated_gold_source_metrics": {
+            "cagr": 0.16240313704334652,
+            "end": "2026-10-05",
+            "max_drawdown": 0.1820829698326598,
+            "sessions": 2512,
+            "sharpe": 1.0305540076566153,
+            "start": "2016-10-06"
+          },
+          "previous_binary_gold_metrics": {
+            "cagr": 0.1377613855748403,
+            "end": "2026-10-05",
+            "max_drawdown": 0.1313311528774308,
+            "sessions": 2512,
+            "sharpe": 0.9245207293481758,
+            "start": "2016-10-06"
+          },
+          "scenario": "base",
+          "total_cost_usd": 1071.3958554735038,
+          "total_orders": 739,
+          "worst_drawdown_episode": {
+            "drawdown": 0.13676314686928104,
+            "peak_session": "2022-03-08",
+            "trough_session": "2022-12-28"
+          },
+          "years": 10
+        },
+        {
+          "benchmark": {
+            "cagr": 0.15405636613916607,
+            "end": "2026-10-05",
+            "max_drawdown": 0.3371727532125357,
+            "sessions": 2512,
+            "sharpe": 0.7531241378409322,
+            "start": "2016-10-06"
+          },
+          "conditional_cagr_difference_vs_binary_gold": 0.004475160250477339,
+          "conditional_cagr_difference_vs_ungated_source": -0.023837027780000852,
+          "conditional_drawdown_difference_vs_binary_gold": -0.0013565528159789064,
+          "conditional_drawdown_difference_vs_ungated_source": -0.043808373731843764,
+          "conditional_sharpe_difference_vs_binary_gold": 0.054434476334231374,
+          "conditional_sharpe_difference_vs_ungated_source": -0.07735327959551486,
+          "cost_bps": 20.0,
+          "delay_sessions": 2,
+          "gates": {
+            "also_beats_base_cost_spy": false,
+            "beats_spy": false,
+            "drawdown_at_most_15pct": true,
+            "sharpe_above_1": false
+          },
+          "metrics": {
+            "cagr": 0.13798669358820637,
+            "end": "2026-10-05",
+            "max_drawdown": 0.1326657599642782,
+            "sessions": 2512,
+            "sharpe": 0.947464489191283,
+            "start": "2016-10-06"
+          },
+          "original_ungated_gold_source_metrics": {
+            "cagr": 0.16182372136820722,
+            "end": "2026-10-05",
+            "max_drawdown": 0.17647413369612197,
+            "sessions": 2512,
+            "sharpe": 1.0248177687867979,
+            "start": "2016-10-06"
+          },
+          "previous_binary_gold_metrics": {
+            "cagr": 0.13351153333772903,
+            "end": "2026-10-05",
+            "max_drawdown": 0.1340223127802571,
+            "sessions": 2512,
+            "sharpe": 0.8930300128570516,
+            "start": "2016-10-06"
+          },
+          "scenario": "stress",
+          "total_cost_usd": 2045.4537270734743,
+          "total_orders": 739,
+          "worst_drawdown_episode": {
+            "drawdown": 0.1326657599642782,
+            "peak_session": "2026-01-29",
+            "trough_session": "2026-03-30"
+          },
+          "years": 10
+        },
+        {
+          "benchmark": {
+            "cagr": 0.14040855610470793,
+            "end": "2026-10-05",
+            "max_drawdown": 0.24496383714703274,
+            "sessions": 1254,
+            "sharpe": 0.6303911363155571,
+            "start": "2021-10-06"
+          },
+          "conditional_cagr_difference_vs_binary_gold": -0.0026685984432150978,
+          "conditional_cagr_difference_vs_ungated_source": -0.028233275077268916,
+          "conditional_drawdown_difference_vs_binary_gold": 0.006248671983105414,
+          "conditional_drawdown_difference_vs_ungated_source": -0.04505012132379593,
+          "conditional_sharpe_difference_vs_binary_gold": 0.00579839758341083,
+          "conditional_sharpe_difference_vs_ungated_source": -0.07122443763601405,
+          "cost_bps": 5.0,
+          "delay_sessions": 1,
+          "gates": {
+            "beats_spy": true,
+            "drawdown_at_most_15pct": true,
+            "sharpe_above_1": true
+          },
+          "metrics": {
+            "cagr": 0.18252937634987476,
+            "end": "2026-10-05",
+            "max_drawdown": 0.13776206311519157,
+            "sessions": 1254,
+            "sharpe": 1.0106177528841043,
+            "start": "2021-10-06"
+          },
+          "original_ungated_gold_source_metrics": {
+            "cagr": 0.21076265142714368,
+            "end": "2026-10-05",
+            "max_drawdown": 0.1828121844389875,
+            "sessions": 1254,
+            "sharpe": 1.0818421905201183,
+            "start": "2021-10-06"
+          },
+          "previous_binary_gold_metrics": {
+            "cagr": 0.18519797479308986,
+            "end": "2026-10-05",
+            "max_drawdown": 0.13151339113208615,
+            "sessions": 1254,
+            "sharpe": 1.0048193553006934,
+            "start": "2021-10-06"
+          },
+          "scenario": "base",
+          "total_cost_usd": 497.3187229303142,
+          "total_orders": 365,
+          "worst_drawdown_episode": {
+            "drawdown": 0.13776206311519157,
+            "peak_session": "2022-03-08",
+            "trough_session": "2022-12-28"
+          },
+          "years": 5
+        },
+        {
+          "benchmark": {
+            "cagr": 0.13528280366429257,
+            "end": "2026-10-05",
+            "max_drawdown": 0.24496383714703285,
+            "sessions": 1254,
+            "sharpe": 0.6043080883068029,
+            "start": "2021-10-06"
+          },
+          "conditional_cagr_difference_vs_binary_gold": -0.0017072481323419098,
+          "conditional_cagr_difference_vs_ungated_source": -0.031234013392177573,
+          "conditional_drawdown_difference_vs_binary_gold": -0.0012872521887157262,
+          "conditional_drawdown_difference_vs_ungated_source": -0.04435301565021166,
+          "conditional_sharpe_difference_vs_binary_gold": 0.010243495609558728,
+          "conditional_sharpe_difference_vs_ungated_source": -0.09209963417458744,
+          "cost_bps": 20.0,
+          "delay_sessions": 2,
+          "gates": {
+            "also_beats_base_cost_spy": true,
+            "beats_spy": true,
+            "drawdown_at_most_15pct": true,
+            "sharpe_above_1": false
+          },
+          "metrics": {
+            "cagr": 0.1751691061441829,
+            "end": "2026-10-05",
+            "max_drawdown": 0.13287584683887188,
+            "sessions": 1254,
+            "sharpe": 0.965142125447352,
+            "start": "2021-10-06"
+          },
+          "original_ungated_gold_source_metrics": {
+            "cagr": 0.20640311953636048,
+            "end": "2026-10-05",
+            "max_drawdown": 0.17722886248908354,
+            "sessions": 1254,
+            "sharpe": 1.0572417596219394,
+            "start": "2021-10-06"
+          },
+          "previous_binary_gold_metrics": {
+            "cagr": 0.17687635427652482,
+            "end": "2026-10-05",
+            "max_drawdown": 0.1341630990275876,
+            "sessions": 1254,
+            "sharpe": 0.9548986298377933,
+            "start": "2021-10-06"
+          },
+          "scenario": "stress",
+          "total_cost_usd": 886.7544224719494,
+          "total_orders": 365,
+          "worst_drawdown_episode": {
+            "drawdown": 0.13287584683887188,
+            "peak_session": "2026-01-29",
+            "trough_session": "2026-03-30"
+          },
+          "years": 5
+        }
+      ],
+      "registered_at": "2026-10-11T16:29:26.922213+00:00",
+      "reviewed_at": "2026-10-11T16:35:11.518820+00:00",
+      "status": "rejected_historical"
+    }
+  ],
+  "complete_five_year_pass_candidates": [
+    "semiconductor_breadth_half_gold_relative"
+  ],
+  "completed_at": "2026-10-11T16:35:16.071598+00:00",
+  "completed_recurring_reviews": 56,
+  "historical_shorter_window_pass_claimed_full_goal_or_independent_future_qualification": false,
+  "historically_qualified_candidates": 0,
+  "investment_objective_verified": false,
+  "new_economic_factor_definitions": 0,
+  "new_strategy_evaluations": 2,
+  "old_partial_performance_paths_spliced_or_new_fraction_shares_fitted": false,
+  "old_selection_bootstraps_correct_new_two_trials_or_all_search": false,
+  "order_authority": false,
+  "original_W42_plans_or_frozen_forward_rules_changed": false,
+  "original_equity_breadth_and_prior_registered_gold_targets_preserved": true,
+  "original_forward_sessions": 0,
+  "paired_source_or_binary_gold_comparisons_counted_as_additional_strategy_trials": false,
+  "parameters_refitted_from_new_outcomes": false,
+  "published_registration_commit": "27ae58e1a947ecdad684dd8b60c339958b4a276e",
+  "raw_prices_targets_accounts_or_held_positions_published": false,
+  "registered_candidate_versions_including_two_invalid": 58,
+  "registered_factor_definitions": 6,
+  "registration_sha256": "0b01a85155e436164efaa4e0d35597a60e0faae11080babebdf8d939793432b7",
+  "schema_version": 1,
+  "separate_dollar_forward_sessions": 0,
+  "source_comparisons_claimed_equal_dollar_holdings_equal_risk_or_causal_alpha": false,
+  "started_at": "2026-10-11T16:34:56.432989+00:00",
+  "status": "completed_independently_verified",
+  "total_completed_strategy_configurations": 140
+}
