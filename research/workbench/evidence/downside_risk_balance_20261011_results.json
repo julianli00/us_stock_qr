@@ -1,0 +1,293 @@
+{
+  "all_registered_candidates_reported": true,
+  "candidates": {
+    "four_factor_growth_gold_expected_loss": {
+      "accounting_engine": {
+        "id": "cash_funded_noop_v2",
+        "source_sha256": "e7efd7a9a87178d556320693bdfd389eef6a21cae70c36dd77c4325b6607d2af"
+      },
+      "at": "2026-10-11T00:16:10.765818+00:00",
+      "candidate_id": "four_factor_growth_gold_expected_loss",
+      "data_scope": "factor_etf_portfolio",
+      "evidence_sha256": "0d09f1fefd7104d55459f11540165ae82c7327d767bd5f74b8a7dd39aa5bfe2e",
+      "historical_gates_passed": false,
+      "independent_forward_validation": false,
+      "live_strategy_update": false,
+      "order_authority": false,
+      "paths": [
+        {
+          "benchmark": {
+            "cagr": 0.15461997933114158,
+            "end": "2026-10-05",
+            "max_drawdown": 0.33717275321253537,
+            "sessions": 2512,
+            "sharpe": 0.7558900902911573,
+            "start": "2016-10-06"
+          },
+          "frozen_market_risk_free_used": true,
+          "gates": {
+            "beats_spy": false,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": false
+          },
+          "independent_bt_reexecuted": true,
+          "market_and_target_replay_passed": true,
+          "max_independent_equity_error_usd": 7.275957614183426e-11,
+          "metrics": {
+            "cagr": 0.14697954789474155,
+            "end": "2026-10-05",
+            "max_drawdown": 0.193845176170802,
+            "sessions": 2512,
+            "sharpe": 0.967224731698848,
+            "start": "2016-10-06"
+          },
+          "registered_strategy_targets_regenerated": true,
+          "scenario": "base",
+          "years": 10
+        },
+        {
+          "benchmark": {
+            "cagr": 0.15405636613916585,
+            "end": "2026-10-05",
+            "max_drawdown": 0.3371727532125357,
+            "sessions": 2512,
+            "sharpe": 0.7531241378409337,
+            "start": "2016-10-06"
+          },
+          "frozen_market_risk_free_used": true,
+          "gates": {
+            "also_beats_base_cost_spy": false,
+            "beats_spy": false,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": false
+          },
+          "independent_bt_reexecuted": true,
+          "market_and_target_replay_passed": true,
+          "max_independent_equity_error_usd": 2.9103830456733704e-11,
+          "metrics": {
+            "cagr": 0.14169250323153637,
+            "end": "2026-10-05",
+            "max_drawdown": 0.19577584822492555,
+            "sessions": 2512,
+            "sharpe": 0.9286517230427778,
+            "start": "2016-10-06"
+          },
+          "registered_strategy_targets_regenerated": true,
+          "scenario": "stress",
+          "years": 10
+        },
+        {
+          "benchmark": {
+            "cagr": 0.1404085561047077,
+            "end": "2026-10-05",
+            "max_drawdown": 0.2449638371470323,
+            "sessions": 1254,
+            "sharpe": 0.6303911363155588,
+            "start": "2021-10-06"
+          },
+          "frozen_market_risk_free_used": true,
+          "gates": {
+            "beats_spy": true,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": false
+          },
+          "independent_bt_reexecuted": true,
+          "market_and_target_replay_passed": true,
+          "max_independent_equity_error_usd": 2.9103830456733704e-11,
+          "metrics": {
+            "cagr": 0.1745656968406999,
+            "end": "2026-10-05",
+            "max_drawdown": 0.19613118938370278,
+            "sessions": 1254,
+            "sharpe": 0.9841070637976015,
+            "start": "2021-10-06"
+          },
+          "registered_strategy_targets_regenerated": true,
+          "scenario": "base",
+          "years": 5
+        },
+        {
+          "benchmark": {
+            "cagr": 0.13528280366429257,
+            "end": "2026-10-05",
+            "max_drawdown": 0.24496383714703263,
+            "sessions": 1254,
+            "sharpe": 0.6043080883068007,
+            "start": "2021-10-06"
+          },
+          "frozen_market_risk_free_used": true,
+          "gates": {
+            "also_beats_base_cost_spy": true,
+            "beats_spy": true,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": false
+          },
+          "independent_bt_reexecuted": true,
+          "market_and_target_replay_passed": true,
+          "max_independent_equity_error_usd": 3.2741809263825417e-11,
+          "metrics": {
+            "cagr": 0.16554306589425605,
+            "end": "2026-10-05",
+            "max_drawdown": 0.1980547191404104,
+            "sessions": 1254,
+            "sharpe": 0.9250316594972711,
+            "start": "2021-10-06"
+          },
+          "registered_strategy_targets_regenerated": true,
+          "scenario": "stress",
+          "years": 5
+        }
+      ],
+      "status": "rejected_historical"
+    },
+    "four_factor_growth_gold_semideviation": {
+      "accounting_engine": {
+        "id": "cash_funded_noop_v2",
+        "source_sha256": "e7efd7a9a87178d556320693bdfd389eef6a21cae70c36dd77c4325b6607d2af"
+      },
+      "at": "2026-10-11T00:16:07.774348+00:00",
+      "candidate_id": "four_factor_growth_gold_semideviation",
+      "data_scope": "factor_etf_portfolio",
+      "evidence_sha256": "6ad302ba36975fdbb8d1e5aad35a503aedf94ae8cdd3ffd38cf105ee2dfbe411",
+      "historical_gates_passed": false,
+      "independent_forward_validation": false,
+      "live_strategy_update": false,
+      "order_authority": false,
+      "paths": [
+        {
+          "benchmark": {
+            "cagr": 0.15461997933114158,
+            "end": "2026-10-05",
+            "max_drawdown": 0.33717275321253537,
+            "sessions": 2512,
+            "sharpe": 0.7558900902911573,
+            "start": "2016-10-06"
+          },
+          "frozen_market_risk_free_used": true,
+          "gates": {
+            "beats_spy": false,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": false
+          },
+          "independent_bt_reexecuted": true,
+          "market_and_target_replay_passed": true,
+          "max_independent_equity_error_usd": 7.275957614183426e-11,
+          "metrics": {
+            "cagr": 0.14717531412700935,
+            "end": "2026-10-05",
+            "max_drawdown": 0.1959203194234601,
+            "sessions": 2512,
+            "sharpe": 0.9667340471019346,
+            "start": "2016-10-06"
+          },
+          "registered_strategy_targets_regenerated": true,
+          "scenario": "base",
+          "years": 10
+        },
+        {
+          "benchmark": {
+            "cagr": 0.15405636613916585,
+            "end": "2026-10-05",
+            "max_drawdown": 0.3371727532125357,
+            "sessions": 2512,
+            "sharpe": 0.7531241378409337,
+            "start": "2016-10-06"
+          },
+          "frozen_market_risk_free_used": true,
+          "gates": {
+            "also_beats_base_cost_spy": false,
+            "beats_spy": false,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": false
+          },
+          "independent_bt_reexecuted": true,
+          "market_and_target_replay_passed": true,
+          "max_independent_equity_error_usd": 7.275957614183426e-11,
+          "metrics": {
+            "cagr": 0.1424697879769845,
+            "end": "2026-10-05",
+            "max_drawdown": 0.19646969060407904,
+            "sessions": 2512,
+            "sharpe": 0.9323181013742206,
+            "start": "2016-10-06"
+          },
+          "registered_strategy_targets_regenerated": true,
+          "scenario": "stress",
+          "years": 10
+        },
+        {
+          "benchmark": {
+            "cagr": 0.1404085561047077,
+            "end": "2026-10-05",
+            "max_drawdown": 0.2449638371470323,
+            "sessions": 1254,
+            "sharpe": 0.6303911363155588,
+            "start": "2021-10-06"
+          },
+          "frozen_market_risk_free_used": true,
+          "gates": {
+            "beats_spy": true,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": false
+          },
+          "independent_bt_reexecuted": true,
+          "market_and_target_replay_passed": true,
+          "max_independent_equity_error_usd": 2.9103830456733704e-11,
+          "metrics": {
+            "cagr": 0.17424915932074692,
+            "end": "2026-10-05",
+            "max_drawdown": 0.1974163915602054,
+            "sessions": 1254,
+            "sharpe": 0.9816611576082012,
+            "start": "2021-10-06"
+          },
+          "registered_strategy_targets_regenerated": true,
+          "scenario": "base",
+          "years": 5
+        },
+        {
+          "benchmark": {
+            "cagr": 0.13528280366429257,
+            "end": "2026-10-05",
+            "max_drawdown": 0.24496383714703263,
+            "sessions": 1254,
+            "sharpe": 0.6043080883068007,
+            "start": "2021-10-06"
+          },
+          "frozen_market_risk_free_used": true,
+          "gates": {
+            "also_beats_base_cost_spy": true,
+            "beats_spy": true,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": false
+          },
+          "independent_bt_reexecuted": true,
+          "market_and_target_replay_passed": true,
+          "max_independent_equity_error_usd": 4.001776687800884e-11,
+          "metrics": {
+            "cagr": 0.1663687024143088,
+            "end": "2026-10-05",
+            "max_drawdown": 0.19795959764083504,
+            "sessions": 1254,
+            "sharpe": 0.9297472612726905,
+            "start": "2021-10-06"
+          },
+          "registered_strategy_targets_regenerated": true,
+          "scenario": "stress",
+          "years": 5
+        }
+      ],
+      "status": "rejected_historical"
+    }
+  },
+  "independent_forward_validation": false,
+  "new_economic_factor_definitions": 0,
+  "old22candidate_statistical_cohort_extended": false,
+  "order_authority": false,
+  "original_control": "four_factor_growth_gold_monthly_control",
+  "original_control_not_recounted_as_new": true,
+  "preregistration_commit": "ede6c171",
+  "queued_six_family_rules_or_eligibility_changed": false,
+  "registration": "evidence/downside_risk_balance_20261011_registration.json",
+  "tail_definition_and_lookback_not_retuned": true
+}

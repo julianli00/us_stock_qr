@@ -1981,7 +1981,7 @@ Its mean realized BIL share is about 29%, and CAGR is lower by about
 8.22 percentage points. More frequent protection trades and lower risk
 exposure are not incremental factor alpha.
 
-The [latest program snapshot](research/workbench/evidence/research_program_2026-W41_results_v30.json)
+The [growth-protection program snapshot](research/workbench/evidence/research_program_2026-W41_results_v30.json)
 retains **110 completed configurations, 26 reviews, six registered
 definitions, two terminal invalid code versions, the separately resolved
 accounting incident, no pending registered candidates and no qualified
@@ -2036,6 +2036,40 @@ The two new candidates remain pending until source-bound evaluation under
 unchanged net Sharpe/SPY/15% drawdown gates. Queued six-family definitions,
 their October 17 eligibility and the independent forward model are not
 modified or pre-evaluated.
+
+The [complete actual results](research/workbench/evidence/downside_risk_balance_20261011_results.json)
+reject both fixed downside estimators:
+
+| Marginal risk estimator | Ten-year base/stress Sharpe | Five-year base/stress Sharpe | Ten/five-year base drawdown |
+|---|---|---|---|
+| Semideviation | 0.9667 / 0.9323 | 0.9817 / 0.9297 | 19.59% / 19.74% |
+| Exact 5% expected loss | 0.9672 / 0.9287 | 0.9841 / 0.9250 | 19.38% / 19.61% |
+
+Neither improves the completed total-volatility control. The
+[independent-risk/account attribution](research/workbench/evidence/downside_risk_balance_20261011_attribution.json)
+reconstructs the estimators using scalar negative squares and explicit
+probability weights rather than calling the production risk helpers.
+All 131 monthly budgets per method and all eight full account target
+matrices agree; dates, four-family/QQQ composition and funding constraints
+remain fixed. Every comparison has lower net Sharpe/CAGR and higher
+drawdown than the existing control. This failure does not establish that
+every joint downside model is useless or justify a post-result tail grid.
+
+The [current program snapshot](research/workbench/evidence/research_program_2026-W41_results_v32.json)
+retains **112 completed configurations, 28 recurring reviews, six registered
+definitions, two terminal invalid code versions, the resolved accounting
+incident, no pending candidates and no qualified champion**.
+The [112-path source-bound re-audit](research/workbench/evidence/research_program_source_bound_audit_v10.json)
+reproduces all outcomes, including 19 legacy-engine and nine explicit
+version-two reviews. The earlier fixed 22-candidate joint diagnostic is
+not extended to the later six candidates. Neither queued six-family
+strategy nor its October 17 registration eligibility changed.
+The prospective model still has zero observed return sessions, with no
+new live orders or research-champion promotion.
+The [latest native instructions](research/workbench/evidence/prospective_data_automation_v10.json)
+retain daily capture and eligible weekly exploration, the exact rejected
+tail definition and the distinction between 112 completed studies and two
+unregistered six-family plans. Future scheduled execution is not claimed.
 
 ## Progress and publication
 
