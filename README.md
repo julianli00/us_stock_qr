@@ -3902,6 +3902,59 @@ do not cover them, and both frozen forward models still have zero
 actual return sessions. Publication must precede account calculation;
 **the investment objective remains unmet**.
 
+The [completed protection results](research/workbench/evidence/semiconductor_protection_20261011_results.json)
+retain both configurations and all eight original window/cost paths.
+All paths meet the modeled 15% drawdown limit, but **none** meets
+Sharpe above 1 or either required SPY outperformance comparison:
+
+| Protected source/window | Base net CAGR / Sharpe / drawdown | Stress net CAGR / Sharpe / drawdown |
+|---|---|---|
+| Plain SOXX/factor/gold, ten-year | 9.76% / 0.7143 / 12.83% | 7.29% / 0.5310 / 13.78% |
+| Plain SOXX/factor/gold, five-year | 12.83% / 0.7646 / 12.92% | 11.78% / 0.6748 / 13.06% |
+| Dollar-half source, ten-year | 9.35% / 0.8001 / 10.56% | 8.42% / 0.7112 / 10.48% |
+| Dollar-half source, five-year | 13.22% / 0.9288 / 10.70% | 12.13% / 0.8180 / 10.17% |
+
+Protection lowers exposure and adds substantial trading. The plain
+source's ten-year base account has 418 nonmonthly protection requests,
+3,771 executed asset orders and USD 4,368.14 total modeled fees.
+Its stress path has 304 nonmonthly requests, 2,974 asset orders and
+USD 4,547.37 fees; risk falls as low as **9.46% of the already known
+monthly risky baseline**, not 9.46% gross portfolio exposure.
+The dollar-half source also adds protection requests and fees.
+There are zero modeled closing-floor breaches on these eight paths,
+but the reduced exposure, costs and delayed risk recovery do not
+preserve the original return objective. Zero observed breaches are
+not protection against future opening gaps or different market paths.
+
+The [independent feedback/account proof](research/workbench/evidence/semiconductor_protection_20261011_reproducibility.json)
+reconstructs **15,064 daily NAV/peak/floor/scale/pending-order states**
+from recorded actual wealth and weights, without calling the protection
+target generator. Every issued request, original BIL balance, monthly
+update, 5-point band and delayed execution is checked against the
+retained target matrix. All 16 funded strategy/SPY and 16 independent
+`bt` accounts preserve costs, rates, fresh capital and complete calendars.
+Maximum target/metric/equity differences are
+1.34e-15 / 5.05e-14 / 1.71e-10 USD. Both strict rejections reproduce.
+
+The [current snapshot](research/workbench/evidence/research_program_2026-W41_protection_results_v49.json)
+has **126 completed configurations = 84 prior + 42 recurring reviews**,
+44 registered versions including the two old invalid versions,
+no pending actual candidate and no champion.
+The [full source-bound audit](research/workbench/evidence/research_program_source_bound_audit_v23.json)
+reexecutes 42 reviews / 168 paths, preserving 19 legacy and 23
+explicit funded-v2 reviews. The [preservation proof](research/workbench/evidence/semiconductor_protection_20261011_preservation.json)
+keeps every old journal row/event prefix, 69 imported files,
+seven original forward profiles and all 3,192 old control artifacts.
+
+No floor, trade band, dollar threshold or asset share is retuned.
+Six definitions / five catalog families, the original four unregistered
+W42 plans and both frozen forward models remain; neither forward model
+has an actual return session yet. Old selection diagnostics do not
+correct these two new trials or the complete search.
+The [native continuation](research/workbench/evidence/prospective_data_automation_v34.json)
+retains the rejected protection paths and actual weekly/daily schedule.
+**The investment objective remains unmet.**
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
