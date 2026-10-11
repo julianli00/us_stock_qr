@@ -4947,6 +4947,72 @@ an actual return session. These exposed-window gains do not
 establish independent future performance or trading authority.
 **The investment objective remains unmet.**
 
+## Preregistered relative equity-leadership satellite rotation
+
+The [fixed leadership policy](research/workbench/config/sector-leadership-rotation.json)
+tests whether the original semiconductor satellite should
+retain its equity budget only while it leads broad-market SPY.
+One method uses the existing 126-session strict return-winner
+principle; the other uses the existing 63/126/252-session
+equal-weight strict relative-return signs. Equality goes to
+SPY, not an invented positive-leadership state.
+
+The [target adapter](research/workbench/src/us_quant/sector_leadership_rotation.py)
+starts from the original graded-gold half-equity-breadth
+source and changes **only SOXX/SPY**. The winner method moves
+the full original satellite budget to SPY when SOXX's return
+does not exceed SPY. Horizon voting splits that same budget
+between SOXX and SPY by zero/one-third/two-thirds/one.
+Every original style, gold, BIL and other fund target stays
+exact; combined satellite/equity budgets remain.
+Equity/gold risk balance is not recomputed after switching,
+so unchanged budgets do not imply equal risk.
+
+The existing unmodified 2.5pp actual-holding execution adapter
+runs on each new desired matrix, with fresh positions for
+every cost/window, original capital/fees/delays and forced
+initial deployment. Its original candidate handle selects
+the common pure-band rule; it does not claim these new
+targets or positions replay the old whole strategy.
+No new cash gate, fund, provider request, family, lookback,
+vote weighting, sector/share or band grid is introduced.
+
+The [independent pre-account proof](research/workbench/evidence/leadership_20261011_pre_account_verification.json)
+matches all four original source/seed matrices, reconstructs
+strict relative signs with Decimal actual prices, and checks
+every unchanged style/gold/bill target and satellite budget.
+Source error is zero; maximum desired-target error is 2.78e-17.
+Both methods have 122 monthly decisions.
+The winner chooses SPY in 30 months and SOXX in 92;
+voting has 15 zero / 16 one-third / 27 two-thirds / 64
+full-SOXX states. Actual path-dependent issued targets and
+new accounts are not computed during preparation.
+
+The [actual registration](research/workbench/evidence/leadership_20261011_registration.json)
+records both fixed candidates at **2026-10-11 17:23:07 / 17:23:10 UTC**.
+An actual evaluation attempt using the preceding published
+commit stops before output/feedback-target/account creation.
+Exact configured-remote publication of packet/code/policy/
+proof must precede account calculation.
+
+The [registration preservation](research/workbench/evidence/leadership_20261011_registration_preservation.json),
+[current snapshot](research/workbench/evidence/research_program_2026-W41_leadership_registered_v66.json)
+and [full prior source-bound audit](research/workbench/evidence/research_program_source_bound_audit_v40.json)
+retain **142 completed configurations / 58 reviews / 232 paths**,
+19 legacy / 39 funded-v2 outcomes, 69 imported files and seven
+forward profiles. One exact engine/head migration adds the
+finite adapter, followed only by two actual candidate events.
+62 versions include two old invalid ones and these two pending
+candidates; 245 coupled cases and 52 root guards pass.
+
+The source and both windows were already selected/exposed
+after prior results; this is not an independent holdout,
+old defensive-portfolio replication or proven sector alpha.
+At registration there are **zero new outcomes**, no champion
+and no actual forward return sessions. Original W42 plans,
+IJR/PKW quota, frozen forward rules and goals remain.
+**The investment objective remains unmet.**
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

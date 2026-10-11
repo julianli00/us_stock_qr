@@ -42,6 +42,7 @@ GENERATORS = {
     "breadth_gold_trend": "config/breadth-gold-trend.json",
     "breadth_gold_relative": "config/breadth-gold-relative.json",
     "observed_weight_execution": "config/observed-weight-execution.json",
+    "sector_leadership_rotation": "config/sector-leadership-rotation.json",
 }
 
 
@@ -348,6 +349,15 @@ def registered_generator(spec: dict, root: Path) -> tuple[str, dict]:
                 "src/us_quant/cash_funded_accounting_v2.py", "src/us_quant/dual_horizon.py",
                 "src/us_quant/factor_research.py",
             ]
+        elif name == "sector_leadership_rotation":
+            required += [
+                "src/us_quant/breadth_gold_relative.py", "config/breadth-gold-relative.json",
+                "evidence/graded_gold_20261011_registration.json",
+                "src/us_quant/observed_weight_execution.py", "config/observed-weight-execution.json",
+                "src/us_quant/portfolio_refinement.py", "config/portfolio-refinement.json",
+                "src/us_quant/cash_funded_accounting_v2.py", "config/defensive-factor-rotation.json",
+                "config/semiconductor-trend-transfer.json",
+            ]
         if any(relative not in frozen for relative in required):
             raise QuantError("The registered strategy is missing a frozen helper dependency.")
         for relative in required:
@@ -416,6 +426,12 @@ def registered_targets(
         return run(data, cache[key][spec["id"]], candidate, policy, start, end, cost, delay)[1]
     if name == "observed_weight_execution":
         from us_quant.observed_weight_execution import run, source_baselines
+
+        if key not in cache:
+            cache[key] = source_baselines(data, policy)
+        return run(data, cache[key][spec["id"]], candidate, policy, start, end, cost, delay)[1]
+    if name == "sector_leadership_rotation":
+        from us_quant.sector_leadership_rotation import run, source_baselines
 
         if key not in cache:
             cache[key] = source_baselines(data, policy)
