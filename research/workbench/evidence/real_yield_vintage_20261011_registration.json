@@ -1,0 +1,97 @@
+{
+  "actual_registration": "data/real-yield-vintage-diagnostic-20261011/registration.json",
+  "actual_registration_sha256": "6b0ff9f2803724d154dd5f9f2463a7320f13d4fcdd7f8f2fa50f0a9c5b83c125",
+  "actual_required_vintage_dates": 225,
+  "all_previous_records_and_seven_forward_profiles_unchanged": true,
+  "auditor_sha256": "2d6b2bb0aa34d94d763c892f382f4eeac4eae686febe530e0af36e3d432d4613",
+  "event_chain_sha256": "0650f1dbc0b27754a3aadbbea95682d56b605fc3561968f8e7247f320830688f",
+  "investment_objective_verified": false,
+  "monthly_comparisons": 131,
+  "new_candidates_or_reviews": 0,
+  "new_economic_factor_definitions": 0,
+  "new_strategy_evaluations": 0,
+  "order_authority": false,
+  "policy": {
+    "as_of": "2026-10-05",
+    "change_sessions": 63,
+    "current_source": {
+      "path": "data/macro-rate-access-20261010/DFII10-curl-response.csv",
+      "sha256": "b9e7817be5c95412df6a000b8f12f4228db580923f5ad530d942aa558eade429"
+    },
+    "data_start": "2015-08-10",
+    "diagnostic_id": "real_yield_vintage_validation_20261011",
+    "forward_rules_changed": false,
+    "maximum_observation_age_days": 7,
+    "methodology": {
+      "authority": "Read-only source diagnostic,not a new factor definition,candidate,portfolio backtest,review or engine migration. Do not replace historical review evidence or either originalmacro/dollar forward rule based on exposed source differences. Preserve all120configurations,36reviews,69imports,7profiles and original Sharpe/SPY/drawdown gates. No future model observations or order authority.",
+      "availability": "For each query select from the actual prior-NYSE-date snapshot using the unchanged original align_observations helper:each observation requires twoNYSEsessions strictly after its date and age at most7calendar days. This combines separately dated historical source availability with the existing observation lag. Missing/stale input stops the diagnostic and is preserved;no carry relaxation,backfill or standby strategy is introduced.",
+      "comparison": "Compare original current-history selected values and dates with the archived snapshot selection,then compare the same observation where a current quote exists. Preserve unavailable common-observation matches explicitly. Compute the unchanged strict-positive63-session real-yield state for each original monthly pair. Values and differences remain percent/percentage points,not security returns or synthetic risk-free interest.",
+      "limits": "ALFREDas-of evidence does not authenticate every original intraday first-publication timestamp. PublisherH15page states daily4:15pm weekday releases with holiday/closure exceptions;its current schedule is not historical delivery proof. The2019-07-01source-title transition does not establish unchanged methodology. Source revisions and availability gaps are distinct;an archive gap is not proof that the original publisher failed to release.",
+      "source": "Actual official ALFREDpublicform dailyDFII10percent snapshots. Exactly225requested previous-NYSE-session as-of dates from the original131monthly/63-session comparison pairs. All six bounded batches have exact READMEand column date identities;three separately acquired probes reproduce their batch data. Do not substitute current history,other series or undocumented mirrors.",
+      "validation": "Freeze code/current sources/query cohort before source-state comparison. Reproduce all selected observations,availability dates,ages,value differences and131signals with an independent scalar calendar/date selector and separately parsed raw ZIPtables,not the production alignment or parser. Complete replay and all protected programme/profile/source hashes must remain unchanged."
+    },
+    "monthly_comparison_count": 131,
+    "new_factor_definition_registered": false,
+    "new_strategy_evaluations": 0,
+    "order_authority": false,
+    "original_macro_helper": {
+      "path": "src/us_quant/macro_factor_tilt.py",
+      "sha256": "40a2fec8b2502bd8cba21a1ac8b16397d98ed77d8c2cd304ba814c20eaf623b0"
+    },
+    "original_macro_policy": {
+      "path": "config/macro-factor-tilt.json",
+      "sha256": "6a7b9b0042cd1429b1ca8886c5dbc98c9f0356ab33ebbe0fa2a8ff7d0b33d867"
+    },
+    "public_form": {
+      "maximum_dates_per_request": 40,
+      "maximum_entered_dates_characters": 500,
+      "method": "POST",
+      "url": "https://alfred.stlouisfed.org/series/downloaddata?seid=DFII10"
+    },
+    "publication_delay_sessions": 2,
+    "qualification_policy_changed": false,
+    "query_vintage_count": 225,
+    "research_snapshot": {
+      "path": "evidence/research_program_2026-W41_results_v40.json",
+      "sha256": "d9447ff4f0b0f21c3a14a7d4077e82f4ada3942992583ae1e500484cd47c2d00"
+    },
+    "schema_version": 1,
+    "series": "DFII10",
+    "source_comparison_is_portfolio_performance": false,
+    "source_index": {
+      "path": "data/macro-tilt-prepared-20261010/close.csv",
+      "sha256": "b098f783bbf7a4ca56520e11c6e13edbb0eb2673ed7aaec02b89981ff74fabce"
+    },
+    "source_observation_end": "2026-10-05",
+    "source_observation_start": "2014-01-01",
+    "stale_or_missing_required_input": "block_and_preserve_failure",
+    "vintage_cutoff": "previous_nyse_session",
+    "vintage_manifest": {
+      "path": "data/real-yield-vintages-20261011/manifest.json",
+      "sha256": "09e7474608b8c96fb0682982f4cc25d953ebdb5b4bf85ec177859041ccc2c23a"
+    }
+  },
+  "policy_sha256": "347ff63a74cf54236dc68129cca1d0088fe843c3a700025be7f403c1b6498fea",
+  "preserved_prospective_registration_and_head_hashes": {
+    "data/prospective-dollar-accounts-v1/head.json": "8a97dd04af94e3b35490e74ee12441e7abacb8a5a6860725714f16f0d2353bdd",
+    "data/prospective-dollar-accounts-v1/registration.json": "b6c9247d3cccb6d8b5ccc34d77cefbce62c44cc55f28b265eaac6bd3ce8af26b",
+    "data/prospective-dollar-inputs-v1/head.json": "9a4eb196c6f5e4e61be2e22306c23eeb84db67c68c030a676faf8fefd02c0442",
+    "data/prospective-dollar-inputs-v1/registration.json": "f913627fa54faf475a303a0da7326db4e7c4b7676279dbbfad0fec83d708ea23",
+    "data/prospective-dollar-targets-v1/head.json": "57a5a6e0a49471451bcc2289776537af91d66ec309e2c227cf8843b5cf0db9e7",
+    "data/prospective-dollar-targets-v1/registration.json": "3e5d01e56b22fc8d60cf363b7b4f6d8bd97404704c566801201b61a557c8449e",
+    "data/prospective-factor-inputs-v2/head.json": "ffa715f35851df18a931753c0af8ee6d613d05c066e1c3abb8d131d31d8daa16",
+    "data/prospective-factor-inputs-v2/registration.json": "11c9cd6659c3efe58e8334d363d2ab1b4bc2b8c2461a9d11f29b5769de0353eb",
+    "data/prospective-market-v1/head.json": "6c3be7f4e6c69d95c56a9bf5102c1f60637e82cbe32ed6c91ca729e67271c87c",
+    "data/prospective-market-v1/registration.json": "91f33b965d5a36205c79e16a6da0aeee6c00844748909cf452324477bd7fccf5",
+    "data/prospective-research-accounts-v1/head.json": "8a97dd04af94e3b35490e74ee12441e7abacb8a5a6860725714f16f0d2353bdd",
+    "data/prospective-research-accounts-v1/registration.json": "f2f5d822db1b875c15a5d05861e9ecdc10b63d62748c729ab6d2b992930b1d1f",
+    "data/prospective-target-observations-v1/head.json": "0b21433518e75b222ed61e63eafb8819468b9422c7163bc85da17dd64d6473e3",
+    "data/prospective-target-observations-v1/registration.json": "2c3c5a50fb7f2e870089429446c1616b9eee76bee34d0e4057439d7cb28da44d"
+  },
+  "program_engine_sha256": "0a36a3033ccffbbf2d8474b4e73ff5ddaad6d3c4b5922600c0eb8541ed59f9ab",
+  "recorded_at": "2026-10-11T05:36:08.675017+00:00",
+  "registered_at": "2026-10-11T05:36:07.234055+00:00",
+  "schema_version": 1,
+  "source_index_sessions": 2805,
+  "source_signal_comparisons_computed": false
+}

@@ -2781,6 +2781,52 @@ retain daily collection and the legitimate October 17 discovery
 gate, without claiming new native delivery proof or treating these
 academic archive downloads as prospective strategy observations.
 
+### Historical real-yield availability: separately registered source comparison
+
+The [new primary-source admission](research/workbench/evidence/real_yield_vintage_source_20261011_admission.json)
+records 225 actual daily **DFII10** as-of vintages from the public
+[ALFRED download form](https://alfred.stlouisfed.org/series/downloaddata?seid=DFII10).
+Six bounded requests use at most 40 dates and 439 date-entry characters;
+each archive's README and columns identify every requested vintage.
+Three independently acquired probe dates reproduce the batch observations.
+The native values are percent yields, not security returns.
+Raw daily yield matrices, archives and documents remain private.
+
+The [fixed source-only plan](research/workbench/config/real-yield-vintages.json)
+and [actual registration](research/workbench/evidence/real_yield_vintage_20261011_registration.json)
+retain all 131 original monthly/63-session comparison pairs on the
+unchanged 2,805-session market index. Each query uses the actual
+previous-NYSE-session snapshot **and** the original observation rule:
+two NYSE sessions strictly after the observation date, with maximum
+seven-calendar-day age. Missing or stale required data blocks the
+diagnostic; it does not trigger a cash fallback, relaxed age limit or
+new standby strategy.
+
+The new adapter does not alter the frozen weekly NFCI parser or
+the original macro helper. It reuses the unchanged lag/calendar logic,
+while validating the distinct daily percent-yield archive schema.
+Selection-date differences and same-observation revisions are reported
+separately, followed by the original strict-positive real-yield states.
+This is not a portfolio backtest or a search for a better lag.
+
+The [publisher's current H.15 page](https://www.federalreserve.gov/releases/h15/)
+describes weekday 4:15pm releases with holiday/closure exceptions.
+Current schedule metadata and ALFRED date-level snapshots do not
+authenticate every historical intraday first-publication timestamp.
+The archived July 2019 title transition is not proof of unchanged
+methodology, and an archive gap does not prove publisher non-delivery.
+
+```bash
+cd research/workbench
+.venv/bin/python -I -B -m us_quant.real_yield_vintages run
+```
+
+At registration the source-value and signal comparisons are uncomputed.
+Old source bytes, strategy reviews, factor definitions, research events,
+both forward rules and all investment qualification gates remain
+unchanged. No new strategy evaluation or prospective model return
+is claimed.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
