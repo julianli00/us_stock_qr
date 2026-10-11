@@ -2122,6 +2122,26 @@ not message delivery or agent execution. Actual command results verify the
 pipeline separately; same-day duplicate success is not a new market
 observation, portfolio return or Sharpe qualification.
 
+The [native scheduling check](research/workbench/evidence/native_daily_scheduling_acceptance_20261011_v1.json)
+observed the overdue schedule's metadata advance to October 12 at
+01:00:02Z, with a 09:02 Asia/Shanghai metadata update. Available turn
+history does not prove native message delivery. Its absence there also
+does not prove delivery failed. This uncertainty is retained instead of
+declaring the native automation end-to-end successful.
+
+The [actual after-due execution receipt](research/workbench/evidence/research_daily_actual_run_20261011_v1.json)
+records a **continuation-origin** run at 01:28:16.900797Z through
+01:28:17.586734Z. All four stages completed: three existing-snapshot/target
+duplicates and one no-new-observed-model-session result. No source hashes,
+market observations, target counts, model returns or historical trials
+changed. This verifies the pipeline separately, not the scheduler origin.
+
+The [updated native instructions](research/workbench/evidence/prospective_data_automation_v11.json)
+invoke the consolidated runner on future due turns and require actual
+stage receipts. Origin remains declared rather than authenticated;
+the daily cadence, queued weekly eligibility, original registrations and
+112 completed strategy outcomes remain unchanged.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
