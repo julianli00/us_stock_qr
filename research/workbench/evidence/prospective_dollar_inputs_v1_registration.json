@@ -1,0 +1,90 @@
+{
+  "actual_preflight": {
+    "new_profile_fingerprint": "62a86bfb88469bf9fbb1e49ec3b98189a0e7d0bb2480e6f486c2958c3e2e1d2b",
+    "new_quote_sources": 3,
+    "official_h10_releases": 4,
+    "preflight_counts_as_prospective_snapshot": false,
+    "price_context_rows": 502,
+    "raw_inputs_published": false,
+    "recorded_at": "2026-10-11T03:39:48.903731+00:00",
+    "source_rule_month": "2026-09-30"
+  },
+  "all_original_prospective_profiles_and_historical_results_unchanged": true,
+  "existing_macro_target_and_model_experiment_replaced": false,
+  "initial_input_status": {
+    "additional_macro_series": [
+      "DTWEXBGS"
+    ],
+    "additional_symbols": [
+      "QQQ",
+      "XLK",
+      "SOXX"
+    ],
+    "baseline_session": null,
+    "complete_snapshots": 0,
+    "contiguous_since_baseline": true,
+    "eligible_for_strategy_promotion": false,
+    "expanded_baseline_is_independent_strategy_evidence": false,
+    "investment_objective_verified": false,
+    "latest_session": null,
+    "missed_sessions": [],
+    "mode": "data_only_dollar_guard_inputs",
+    "new_catalog_definitions_registered_by_collection": false,
+    "observations_after_baseline": 0,
+    "order_authority": false,
+    "original_macro_experiment_replaced": false,
+    "parent_archive_modified": false,
+    "receipt_chain_head": "0000000000000000000000000000000000000000000000000000000000000000",
+    "source_candidate_id": "semiconductor_dollar_half_guard",
+    "strategy_returns_calculated": false
+  },
+  "input_registration": {
+    "collector_sha256": "3be478ecbe089e4e90a803cc007f17af66b309b67e99811dc7ad7c7c00d0e4f7",
+    "dollar_profile_sha256": "62a86bfb88469bf9fbb1e49ec3b98189a0e7d0bb2480e6f486c2958c3e2e1d2b",
+    "extension_collector_sha256": "ded55efa251474b46bdc7e8a5c9b830f08e731e36c9b2b7a317373cb7d57d162",
+    "extension_mode": "data_only_expanded_factor_inputs",
+    "extension_policy_sha256": "d6f5449c5b3e9a03a3ca26b5b7aeed30733d3afc4ce46182e2664954e91d5add",
+    "mode": "data_only_prospective_archive",
+    "old_forward_ledgers_modified": false,
+    "order_authority": false,
+    "parent_archive": "data/prospective-market-v1",
+    "parent_registration_sha256": "91f33b965d5a36205c79e16a6da0aeee6c00844748909cf452324477bd7fccf5",
+    "policy_sha256": "5f9aecde885e04faf8d7a35f2bc9ade6b61f2b02ae8621a00d973e518a4409df",
+    "registered_at": "2026-10-11T03:41:28.390828+00:00",
+    "schema_version": 1,
+    "source_candidate_id": "semiconductor_dollar_half_guard"
+  },
+  "input_registration_sha256": "f913627fa54faf475a303a0da7326db4e7c4b7676279dbbfad0fec83d708ea23",
+  "investment_objective_verified": false,
+  "new_economic_factor_definitions": 0,
+  "new_forward_model_observations": 0,
+  "new_historical_strategy_evaluations": 0,
+  "order_authority": false,
+  "original_prospective_registration_and_head_hashes": {
+    "data/prospective-factor-inputs-v2/head.json": "ffa715f35851df18a931753c0af8ee6d613d05c066e1c3abb8d131d31d8daa16",
+    "data/prospective-factor-inputs-v2/registration.json": "11c9cd6659c3efe58e8334d363d2ab1b4bc2b8c2461a9d11f29b5769de0353eb",
+    "data/prospective-market-v1/head.json": "6c3be7f4e6c69d95c56a9bf5102c1f60637e82cbe32ed6c91ca729e67271c87c",
+    "data/prospective-market-v1/registration.json": "91f33b965d5a36205c79e16a6da0aeee6c00844748909cf452324477bd7fccf5",
+    "data/prospective-research-accounts-v1/head.json": "8a97dd04af94e3b35490e74ee12441e7abacb8a5a6860725714f16f0d2353bdd",
+    "data/prospective-research-accounts-v1/registration.json": "f2f5d822db1b875c15a5d05861e9ecdc10b63d62748c729ab6d2b992930b1d1f",
+    "data/prospective-target-observations-v1/head.json": "0b21433518e75b222ed61e63eafb8819468b9422c7163bc85da17dd64d6473e3",
+    "data/prospective-target-observations-v1/registration.json": "2c3c5a50fb7f2e870089429446c1616b9eee76bee34d0e4057439d7cb28da44d"
+  },
+  "original_research_state": {
+    "champion": null,
+    "complete_configurations": 116,
+    "engine_sha256": "bf6e145f891ec6e76f99b9c586f57a4b721a456cafb3e80d7faeea39a87a2274",
+    "event_head": "67336c9bfc0d512c8751841071e57f69fe6c70c1312142ee154c2c48aed900f4",
+    "factors": 6,
+    "pending": [],
+    "reviews": 32,
+    "status_sha256": "52a2a075f870bfeed03cd1d8d9090bbdbf02519ec8219a88682cc3e692fe07a4"
+  },
+  "profile_id": "prospective_dollar_guard_v1",
+  "profile_policy": "config/prospective-dollar-guard.json",
+  "profile_policy_sha256": "e0437070efe28c6db594bd436eddf3a63151a57657e972155690db0ccfff16f0",
+  "recorded_at": "2026-10-11T03:41:28.775509+00:00",
+  "schema_version": 1,
+  "source_candidate_id": "semiconductor_dollar_half_guard",
+  "source_historical_status": "rejected_historical"
+}

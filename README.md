@@ -2329,6 +2329,45 @@ keeps daily input collection and the real October 17 weekly discovery
 eligibility. Configuration is not proof of native delivery, and the
 original rejected macro forward experiment is not replaced.
 
+### Separate prospective dollar-guard experiment
+
+The [new forward profile](research/workbench/config/prospective-dollar-guard.json)
+observes the fixed `semiconductor_dollar_half_guard` research reference
+without replacing the existing macro experiment. Its historical status
+remains rejected for ten-year SPY underperformance. No new backtest,
+alpha-family definition, account authorization or champion is created.
+
+The [actual input registration](research/workbench/evidence/prospective_dollar_inputs_v1_registration.json)
+freezes a separate archive that inherits only the matching parent
+snapshot's original bytes and acquisition times, then genuinely acquires
+QQQ, XLK, SOXX and the official H.10 vintages needed by the latest completed
+month. Real source preflight verified all three quotes and four required
+weekly releases. Its 502 historical context rows are **not** prospective
+observations; at registration the new archive has no snapshots or returns.
+Current FRED dollar CSVs are not substituted for archived publications.
+The original collector, targets, model and imported files remain unchanged.
+
+The versioned adapter reuses the frozen monthly budget helper and exact
+dollar-only guard. Targets are generated at their actual observation
+time, never backdated to the rule month, and cannot be retuned within an
+already recorded month. New target records must reproduce from their
+own captured inputs. The separate model uses the explicitly declared
+twelve-fund universe with the existing funded and independent accounting,
+unchanged capital/costs/delay, no missing-day backfill and no broker.
+Original model-journal checks are reused rather than changing its sealed
+eight-fund implementation. Neither an initial target nor a cash anchor
+is a future return observation.
+
+```bash
+cd research/workbench
+.venv/bin/python -I -B -m us_quant.prospective_dollar_guard collect-inputs
+# Target and model initialization are explicit, once-only registration steps.
+```
+
+All registration, source and failure artifacts are retained in their
+separate directories. No existing archive is reset. The original
+daily pipeline and October 17 factor-definition eligibility are unchanged.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
