@@ -4258,6 +4258,63 @@ diagnostics do not include them or the complete search.
 At registration there are **zero new strategy outcomes**, no
 champion and no independent future-alpha or investment qualification.
 
+The [completed trend-transfer results](research/workbench/evidence/trend_transfer_20261011_results.json)
+retain both rules and all eight window/cost paths:
+
+| Fixed trend rule/window | Base net CAGR / Sharpe / drawdown | Stress net CAGR / Sharpe / drawdown |
+|---|---|---|
+| Daily 200-observation components, ten-year | 13.10% / 0.8914 / 19.28% | 11.20% / 0.7436 / 18.38% |
+| Daily 200-observation components, five-year | 17.07% / 0.9362 / 19.99% | 14.93% / 0.7969 / 18.73% |
+| Monthly relative trends, ten-year | 14.55% / 0.9990 / 15.13% | 13.86% / 0.9479 / 14.68% |
+| Monthly relative trends, five-year | 19.33% / 1.1090 / 13.15% | 18.39% / 1.0482 / 13.28% |
+
+**Monthly relative trends pass every five-year base/stress gate**,
+including stress versus base-cost SPY. They do not pass the joint
+ten-year/five-year objective: ten-year CAGR remains below SPY
+(14.55% / 13.86% versus 15.46% / 15.41%), both ten-year Sharpe
+values remain below 1, and base drawdown is **15.1265%**, not at
+most 15%. The exact base Sharpe **0.998955** is not rounded into
+acceptance. The ten-year base worst episode is 2020-02-19 to
+2020-03-19, distinct from the independently initialized five-year
+worst episode. Only checking the latter would omit a real failure.
+
+Daily 200-observation gating only exceeds SPY on the five-year
+paths, while all its Sharpe and drawdown gates fail. Its ten-year
+stress account has 1,450 asset orders / USD 5,367.10 modeled fees,
+compared with 776 / USD 1,954.93 for monthly relative trends.
+These two rules also differ in horizon/sign construction, so the
+comparison does not isolate trading frequency as the cause.
+Neither horizon, timing, component share nor risk threshold is
+refitted after the results.
+
+The [independent account proof](research/workbench/evidence/trend_transfer_20261011_reproducibility.json)
+checks all 16 funded strategy/SPY and 16 independent `bt` accounts,
+the proven signal states/event dates, complete source/target matrices,
+independent seeds, original costs/rates/calendars and initial-capital
+drawdown peaks. Prepared versus actual seeded targets agree exactly.
+Maximum scalar metric / equity errors are 3.96e-14 / 6.55e-11 USD.
+Both full-window joint rejections reproduce despite the relative
+trend rule's complete five-year passes.
+
+The [current snapshot](research/workbench/evidence/research_program_2026-W41_trend_results_v55.json)
+contains **132 completed configurations = 84 prior + 48 recurring reviews**,
+50 registered code versions including the two old invalid ones,
+no pending actual candidate and no champion.
+The [full source-bound audit](research/workbench/evidence/research_program_source_bound_audit_v29.json)
+reexecutes 48 reviews / 192 paths, retaining 19 legacy and 29
+explicit funded-v2 reviews. The [preservation proof](research/workbench/evidence/trend_transfer_20261011_preservation.json)
+keeps all old journal rows/event prefix, 69 imported files, seven
+original forward profiles and all 3,192 prior control artifacts.
+
+Six definitions / five catalog families, the original four W42
+plans and both frozen forward models remain; neither model has
+an actual return session. Prior selection diagnostics do not
+correct these two trials or the complete search.
+The [native continuation](research/workbench/evidence/prospective_data_automation_v37.json)
+retains the five-year passes and ten-year failures without
+relabelling the shorter window as independent validation or
+weakening any gate. **The investment objective remains unmet.**
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
