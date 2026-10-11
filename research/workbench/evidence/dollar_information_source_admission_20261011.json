@@ -1,0 +1,84 @@
+{
+  "actual_first_replacement_release": "2019-02-05",
+  "actual_h10_archives": 298,
+  "actual_non_monday_release_count": 46,
+  "all_acquired_h10_archives": 299,
+  "all_request_bytes_verified": true,
+  "announced_methodology_change_date": "2019-02-04",
+  "archive_first": "2015-08-17",
+  "archive_last": "2026-09-28",
+  "availability": "Scheduled16:15America/New_York weekly release;first NYSEsession strictly after the later official declared date for the exact12audited conflicts. This is a conservative bound,not proof of true first-publication time.",
+  "complete_strategy_configurations_unchanged": 114,
+  "conservative_date_conflicts": {
+    "2016-05-24": "2016-05-23",
+    "2016-05-31": "2016-06-02",
+    "2016-08-30": "2016-08-29",
+    "2017-08-29": "2017-08-28",
+    "2017-12-19": "2017-12-18",
+    "2018-01-15": "2018-01-16",
+    "2018-05-28": "2018-05-29",
+    "2018-07-30": "2018-07-31",
+    "2019-02-25": "2019-02-27",
+    "2019-05-27": "2019-05-28",
+    "2019-08-27": "2019-08-26",
+    "2020-05-19": "2020-05-18"
+  },
+  "current_version_diagnostic": {
+    "DTWEXB": {
+      "compared_published_values": 577,
+      "current_version_differs_beyond_reported_4dp": 430,
+      "current_version_is_not_trading_input": true
+    },
+    "DTWEXBGS": {
+      "compared_published_values": 916,
+      "current_version_differs_beyond_reported_4dp": 833,
+      "current_version_is_not_trading_input": true
+    }
+  },
+  "date_conflict_count": 12,
+  "first_replacement_vintage_is_not_the_announced_date": true,
+  "index_methods_are_not_level_spliced": true,
+  "initial_source_check_failures_preserved": "data/dollar-information-source-20261011/source-check-failures-v1.json",
+  "investment_objective_verified": false,
+  "legacy_goods_only_index_retirement": "2019-12-31",
+  "new_factor_definitions": 0,
+  "new_strategy_outcomes": 0,
+  "old_pubtables_template_admitted_only_with_exact_h10_title_and_date_headers": true,
+  "order_authority": false,
+  "parsed_published_values": 1544,
+  "parsed_vintages_sha256": "aa49040696bf2e3fb5c9fb18b22f15832a767d6e45d43deb3212c9a4ffcedd64",
+  "prospective_archive_changed": false,
+  "published_date_matches_advertised_date_in_every_page": false,
+  "published_value_counts": {
+    "DTWEXB": 579,
+    "DTWEXBGS": 965
+  },
+  "quarantined_sources": [
+    {
+      "date": "2020-01-20",
+      "path": "releases/20200120.html",
+      "reason": "AdvertisedJanuary20page reportsJanuary30;10-day conflict is not an admissible historical publication record.",
+      "reported_release_date": "2020-01-30",
+      "sha256": "7a91e849ad16c2c3d6bb9feb708654f98229e56fcff9502bf082610739876be5",
+      "url": "https://www.federalreserve.gov/releases/h10/20200120/",
+      "values_consumed": false
+    }
+  ],
+  "real_yield_current_historical_download_not_complete_vintage_proof": true,
+  "recorded_at": "2026-10-11T02:51:20.907430+00:00",
+  "replacement_reindex_release": "2019-06-24",
+  "replacement_retrospective_2006_history_not_admitted_before_introduction": true,
+  "schema_version": 1,
+  "source_limitations": [
+    "Archived H10release values were genuinely acquired now,not contemporaneously captured prospective observations.",
+    "Twelve official archive/page date conflicts are explicitly preserved and use the later date for availability;one10-day conflict is quarantined. True first-publication timestamps are not authenticated by these snapshots.",
+    "The old goods-only and new goods/services dollar indexes have different currency weights,composition and base definitions;their levels are never compared across methods.",
+    "Annual currency-weight revisions may affect as-published signals;historical snapshots are not retroactively corrected.",
+    "Real-yield confirmation uses the existing source-bound current CSV with audited release lag,not complete ALFREDvintages.",
+    "Current FREDCSVs are used only for a source-version diagnostic,never to fill missing old vintages or create strategy targets.",
+    "No UUPproduct,no new alpha family,no current issuer constituents,no new forward strategy results."
+  ],
+  "source_manifest": "data/dollar-information-source-20261011/verified-manifest.json",
+  "source_manifest_sha256": "d5a9329e4b852509e4a19341b3b4d5f98ecbd52f62e0184fc74f92d7118278ae",
+  "study_id": "dollar_risk_guard_20261011"
+}

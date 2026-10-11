@@ -2208,8 +2208,8 @@ in-sample SPY beta is 1.55/1.80 across ten/five years. This is not proof
 of independent sector alpha. The worst loss interval peaks March 8, 2022
 and troughs October 14, 2022 in these model accounts.
 
-The [current snapshot](research/workbench/evidence/research_program_2026-W41_results_v34.json)
-now records **114 completed configurations, 30 recurring reviews, no
+The [sector-stage snapshot](research/workbench/evidence/research_program_2026-W41_results_v34.json)
+recorded **114 completed configurations, 30 recurring reviews, no
 pending candidates and no qualified champion**. The
 [120-path read-only source audit](research/workbench/evidence/research_program_source_bound_audit_v11.json)
 retains all 19 legacy and 11 version-two reviews and leaves the previous
@@ -2225,6 +2225,57 @@ it is not independent native-delivery proof. The
 retain the original cadence, source boundaries and October 17 queued-family
 eligibility. They do not silently replace the frozen rejected macro
 forward experiment with this historically better sector strategy.
+
+### Dollar funding risk: archived inputs before portfolio outcomes
+
+The [dollar source audit](research/workbench/evidence/dollar_information_source_admission_20261011.json)
+retains 299 actually acquired official H.10 weekly releases. **298 are
+admitted; one page with a ten-day release-date conflict is quarantined.**
+Twelve identified archive/page date conflicts retain both declared dates
+and conservatively admit values only after the later date. This does not
+authenticate true first-publication timestamps. The dated `pubtables`
+template is accepted only with its exact H.10 table title and observation
+headers. Original source-check failures and raw files remain private.
+
+Dollar risk uses the original goods-only broad index through its announced
+December 2019 retirement, then the goods/services replacement at both ends
+of each comparison. The replacement's retroactively constructed 2006
+history is never treated as pre-2019 information. No different index
+methods or January 2006 indexation regimes are level-spliced. Actual
+published snapshots differ from current FRED values in many observations;
+those current CSVs are diagnostics only, not fallback trading inputs.
+All 131 month-end comparisons are source-bound, with at most 13-day
+dollar observation age and five-day real-yield age. DFII10 retains its
+previous two-session lag and current-vintage limitation; this is not a
+complete ALFRED-vintage macro study.
+
+The [actual preregistration](research/workbench/evidence/dollar_risk_guard_20261011_registration.json)
+freezes exactly two guards on the unchanged four-factor/SOXX/gold monthly
+allocation. Positive 63-session dollar change triggers the first;
+positive dollar **and** lagged real-yield changes trigger the second.
+A trigger halves all original non-BIL targets and transfers the removed
+budget to actual BIL, retaining positive factor sleeves, relative
+equity/gold composition and 2% target idle cash. The original 63-session
+risk window, 50% scale, dates, source code, funding and costs are not
+retuned to the already observed drawdown. Sharpe, SPY and 15% drawdown
+gates remain unchanged.
+
+```bash
+cd research/workbench
+# Requires the sealed local source files; choose a new preparation directory.
+.venv/bin/python -I -B -m us_quant.dollar_risk_guard --output data/dollar-risk-prepared-new
+```
+
+Preparation computes no portfolio outcomes. The separately preregistered
+eight constant-scale attribution controls replace each guard with its
+full-window average scheduled exposure; they are hindsight descriptive
+controls, not causal candidates, added strategy trials or holdouts.
+The [pending snapshot](research/workbench/evidence/research_program_2026-W41_dollar_v35.json)
+records **114 completed configurations, 30 reviews and two pending
+candidates**, with no qualified champion. The exact engine migration
+preserves all old records and prospective registration/receipt bytes.
+No new alpha-family definitions, early IJR/PKW admission, prospective
+sector performance, UUP investment, orders or live deployment are claimed.
 
 ## Progress and publication
 
