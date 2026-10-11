@@ -4576,6 +4576,65 @@ source proof and published registration before accounts;
 these results do not modify either forward experiment.
 **The investment objective remains unmet.**
 
+## Preregistered independent monthly gold trend on breadth sources
+
+The [fixed breadth/gold policy](research/workbench/config/breadth-gold-trend.json)
+transfers the existing strict 200-observation GLD price/mean
+law to both completed equity-breadth constructions.
+**Every original equity target and source monthly decision
+date stays unchanged.** Only gold is removed when its own
+actual adjusted close is not strictly above the trailing
+200-observation mean; equality is off. The original gold
+weight is restored only when that fixed condition passes.
+Removed gold goes only to actual BIL through the unchanged
+prior component-removal helper, without equity renormalization.
+
+The preceding gold-loss diagnosis motivates this new combination,
+but is not a prediction or proof of efficacy. The former
+component-trend study also used independent daily state changes;
+this new study deliberately keeps the original source monthly
+clock. It reuses the gold law, not that old whole-portfolio
+target matrix or return path. No sector/mean/majority/scale
+selection, daily trigger, USD/option confirmation, Treasury
+rotation, volatility cap, net-wealth floor or share grid is added.
+
+The [independent pre-account proof](research/workbench/evidence/breadth_gold_20261011_pre_account_verification.json)
+matches all eight original source/window/cost target matrices
+including independent seeds and reconstructs all 2,606 informed
+gold mean rows with Decimal arithmetic. Each construction
+keeps 125 monthly targets: 90 gold-on / 35 gold-off states.
+Original-source error is zero; maximum Decimal target error
+is 1.12e-16. The [target implementation](research/workbench/src/us_quant/breadth_gold_trend.py)
+retains actual original fund/risk-free observations and both
+separately frozen XLK versions; zero new quote, account or
+economic-factor definition is introduced during preparation.
+
+The [actual registration](research/workbench/evidence/breadth_gold_20261011_registration.json)
+records the pair at **2026-10-11 16:05:13 / 16:05:15 UTC**.
+An actual evaluation attempt using the preceding published
+commit stops before output creation or any account calculation.
+Exact configured-remote publication of the packet/code/policy/
+proof is required before the shared runner can calculate returns.
+
+The [registration preservation](research/workbench/evidence/breadth_gold_20261011_registration_preservation.json),
+[current snapshot](research/workbench/evidence/research_program_2026-W41_breadth_gold_registered_v60.json)
+and [full prior source-bound audit](research/workbench/evidence/research_program_source_bound_audit_v34.json)
+retain **136 completed configurations / 52 reviews / 208 paths**,
+19 legacy / 33 funded-v2 outcomes, 69 imported files and seven
+original forward profiles. One exact engine/head migration
+adds the finite generator, followed only by two candidate events.
+56 registered versions include two old invalid ones and
+these two pending candidates; 245 coupled cases and 52 root
+guards pass.
+
+At registration there are **zero new strategy outcomes**,
+no champion and zero actual forward return sessions.
+Both exposed windows, the gold diagnosis, all original W42
+plans, IJR/PKW quota, catalog families and frozen forward
+rules remain. A historical all-gate result would still not
+establish independent future alpha or trading authority.
+**The investment objective remains unmet.**
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

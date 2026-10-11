@@ -1,0 +1,62 @@
+{
+  "all_fully_informed_scalar_decimal_gold_mean_rows_checked": 2606,
+  "all_old_records_and_forward_control_bytes_unchanged_before_migration": true,
+  "all_original_formal_return_calendars_and_independent_window_seeds_preserved": true,
+  "candidate_returns_or_metrics_computed": false,
+  "checked_at": "2026-10-11T16:04:59.200587+00:00",
+  "full_portfolio_price_dates": 2805,
+  "full_prepared_target_sha256": {
+    "semiconductor_breadth_half_gold_trend200": "4c1a8e6eb8002904b4a4cfcbbffac73ecf995cc9c6fc02cd178a5dd761237149",
+    "semiconductor_breadth_off_gold_trend200": "eb809f3e8375f15d0c435d7ccc04ba9da2f053b941fb7b6ec6703d73fb99f3b0"
+  },
+  "independent_verifier_sha256": "40ddb4a733742d4f5f380ae6963ffea8da0d4eed74500d0bfca135615d0dcbe7",
+  "investment_objective_verified": false,
+  "maximum_independent_scalar_decimal_target_error": 1.1102230246251565e-16,
+  "maximum_original_seeded_source_error": 0.0,
+  "new_economic_factor_definitions": 0,
+  "new_registered_candidates": 0,
+  "new_source_quote_requests": 0,
+  "new_strategy_evaluations": 0,
+  "order_authority": false,
+  "original_breadth_equity_and_other_nongold_targets_exactly_unchanged": true,
+  "original_monthly_clock_and_source_targets_not_old_daily_strategy_replicated": true,
+  "original_seeded_source_paths_checked": 8,
+  "original_source_bundle_references": {
+    "semiconductor_sector_breadth_equity_half": {
+      "path": "reports/sector-breadth-20261011/semiconductor_sector_breadth_equity_half/bundle.json",
+      "sha256": "9479bc9c4f035c0f91e57b30cdfd3bf9d47d47723292f630d79d6c751941d2d1"
+    },
+    "semiconductor_sector_breadth_equity_off": {
+      "path": "reports/sector-breadth-20261011/semiconductor_sector_breadth_equity_off/bundle.json",
+      "sha256": "067cfae2d7364ab33c5e62288e2548d0bbada9ac018561555624a1aa28a7d4b5"
+    }
+  },
+  "original_source_target_sha256": {
+    "semiconductor_sector_breadth_equity_half": "d1ccbb1684902b5d23f357110a05c4c3c084413aca0413042508ead41b24a505",
+    "semiconductor_sector_breadth_equity_off": "985490aea640baca8995963d67eed51228177bf82db173610745dbf974c4e82d"
+  },
+  "portfolio_assets": 12,
+  "prepared_candidates": [
+    "semiconductor_breadth_half_gold_trend200",
+    "semiconductor_breadth_off_gold_trend200"
+  ],
+  "prepared_spec_sha256": {
+    "semiconductor_breadth_half_gold_trend200": "f02001d8816dc351c5755ef42c180a2eff080bbd5276e3c0adb2c746221fc3b0",
+    "semiconductor_breadth_off_gold_trend200": "b33e621b2dceb38ae8ad010e7ad1a7759c7a5d5393b892255edce49e9b3ecbba"
+  },
+  "prior200strict_gold_law_and_unmodified_component_removal_helper_reused": true,
+  "schema_version": 1,
+  "signal_xlk_versions_and_old_source_guards_unchanged": true,
+  "verified_target_counts": {
+    "semiconductor_breadth_half_gold_trend200": {
+      "gold_trend_off_months": 35,
+      "gold_trend_on_months": 90,
+      "issued_monthly_targets": 125
+    },
+    "semiconductor_breadth_off_gold_trend200": {
+      "gold_trend_off_months": 35,
+      "gold_trend_on_months": 90,
+      "issued_monthly_targets": 125
+    }
+  }
+}

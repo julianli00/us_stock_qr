@@ -39,6 +39,7 @@ GENERATORS = {
     "semiconductor_trend_transfer": "config/semiconductor-trend-transfer.json",
     "residual_treasury_rotation": "config/residual-treasury-rotation.json",
     "sector_breadth_risk": "config/sector-breadth-risk.json",
+    "breadth_gold_trend": "config/breadth-gold-trend.json",
 }
 
 
@@ -319,6 +320,15 @@ def registered_generator(spec: dict, root: Path) -> tuple[str, dict]:
                 "data/macro-rate-access-20261010/verified-manifest.json",
                 "data/macro-rate-access-20261010/DFII10-curl-response.csv",
             ]
+        elif name == "breadth_gold_trend":
+            required += [
+                "src/us_quant/sector_breadth_risk.py", "config/sector-breadth-risk.json",
+                "evidence/sector_breadth_20261011_registration.json",
+                "evidence/sector_breadth_20261011_drawdown_attribution.json",
+                "src/us_quant/trend_factor_guard.py", "config/trend-factor-guard.json",
+                "src/us_quant/factor_gold_risk.py", "config/factor-gold-risk.json",
+                "src/us_quant/multifactor_stability.py",
+            ]
         if any(relative not in frozen for relative in required):
             raise QuantError("The registered strategy is missing a frozen helper dependency.")
         for relative in required:
@@ -487,6 +497,10 @@ def registered_targets(
             cache[key] = build_targets(data, policy)[spec["id"]]
         elif name == "sector_breadth_risk":
             from us_quant.sector_breadth_risk import build_targets
+
+            cache[key] = build_targets(data, policy)[spec["id"]]
+        elif name == "breadth_gold_trend":
+            from us_quant.breadth_gold_trend import build_targets
 
             cache[key] = build_targets(data, policy)[spec["id"]]
     return seed_window(cache[key], start)
