@@ -7,6 +7,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
+from us_quant import equity_budget_attribution as publication_core
 from us_quant.candidate_receipts import input_reference, local_path, write_new_receipt
 from us_quant.cash_funded_accounting_v2 import engine_reference
 from us_quant.config import QuantError
@@ -96,7 +97,8 @@ def fingerprint() -> str:
     return digest_json({
         "cohort_adapter":file_digest(Path(__file__)), "unchanged_statistic_and_source_reader":original_fingerprint(),
         **{name:file_digest(directory / name) for name in (
-            "cash_funded_accounting_v2.py", "research_weekly.py", "candidate_receipts.py", "review_receipts.py")},
+            "cash_funded_accounting_v2.py", "research_weekly.py", "candidate_receipts.py", "review_receipts.py",
+            "equity_budget_attribution.py")},
     })
 
 
@@ -202,6 +204,20 @@ def analyze(inputs: dict, policy: dict) -> dict:
     return analyses
 
 
+def published_inputs(reference: dict, policy: dict, commit: str) -> dict:
+    core = publication_core.published_inputs(
+        reference, [], read_json(ROOT / "config/equity-budget-attribution.json"), commit,
+    )
+    required = {Path(__file__).relative_to(ROOT).as_posix(), POLICY.relative_to(ROOT).as_posix(),
+                "src/us_quant/selection_validation.py", "src/us_quant/factor_validation.py",
+                "src/us_quant/research_weekly.py", "src/us_quant/candidate_receipts.py",
+                "src/us_quant/review_receipts.py", "src/us_quant/cash_funded_accounting_v2.py",
+                "src/us_quant/equity_budget_attribution.py", "config/equity-budget-attribution.json",
+                *(policy[name]["path"] for name in REFERENCES)}
+    explicit = verify_publication(ROOT, reference, required, commit)
+    return {**explicit, "published_frozen_imported_core":core}
+
+
 def run(packet_path: Path, output: Path, commit: str) -> dict:
     packet, reference = input_reference(ROOT, packet_path)
     policy = read_json(POLICY)
@@ -217,13 +233,7 @@ def run(packet_path: Path, output: Path, commit: str) -> dict:
         or packet.get("joint_statistical_outcomes_computed") is not False
         or evidence_time(packet.get("registered_at")) > evidence_time(utc_now())):
         raise QuantError("Use the exact actually registered cohort/settings/code/source bindings before inference.")
-    required = {Path(__file__).relative_to(ROOT).as_posix(), POLICY.relative_to(ROOT).as_posix(),
-                "src/us_quant/selection_validation.py", "src/us_quant/factor_validation.py",
-                "src/us_quant/metrics.py", "src/us_quant/calendar.py", "src/us_quant/storage.py",
-                "src/us_quant/research_weekly.py", "src/us_quant/candidate_receipts.py",
-                "src/us_quant/review_receipts.py", "src/us_quant/cash_funded_accounting_v2.py",
-                *(policy[name]["path"] for name in REFERENCES)}
-    publication = verify_publication(ROOT, reference, required, commit)
+    publication = published_inputs(reference, policy, commit)
     output = local_path(ROOT, output)
     if output == ROOT / "reports" or not output.is_relative_to(ROOT / "reports"):
         raise QuantError("Use a new isolated private source-only inference directory.")

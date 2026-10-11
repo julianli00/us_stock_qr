@@ -6098,9 +6098,12 @@ and use the capped four-times-minimum omnibus p-value across cells.
 This is conditional inference on existing net return paths, not a simulated
 trading account, Sharpe/drawdown qualification or a future profit probability.
 
-The [actual registration](research/workbench/evidence/selection_accounting_20261011_registration.json)
+The [original registration](research/workbench/evidence/selection_accounting_20261011_registration.json)
 freezes all original bundle/review digests and cohort IDs before joint
 resampling. The
+[corrected publication-adapter registration](research/workbench/evidence/selection_accounting_20261011_registration_v2.json)
+retains the same policy, source bindings, cohort, statistic and settings.
+The
 [preservation proof](research/workbench/evidence/selection_accounting_20261011_registration_preservation.json)
 retains 26 old selection code/policy/private/evidence artifacts,
 every current journal row, engine/event head, seven forward profiles,
@@ -6114,6 +6117,21 @@ were not changed.
 **No new joint statistical outcomes have been calculated at registration.**
 Remote publication of this packet, code, policy and source bindings
 must precede the four-cell computation.
+The first published-commit attempt stops at the unchanged publication guard:
+three calendar/metric/storage helpers were already public through the
+frozen 69-file import manifest but lacked this guard's literal allowlist entries.
+The [boundary receipt](research/workbench/evidence/selection_accounting_20261011_publication_boundary.json)
+preserves that failed attempt and original module hashes.
+Attempting duplicate literal entries is separately rejected by the strict
+root publication guard before any commit or push.
+The [adapter recovery proof](research/workbench/evidence/selection_accounting_20261011_publication_recovery_v2.json)
+instead reuses the existing manifest-aware imported-core verifier;
+neither publication guard is changed or bypassed.
+All eight cohort/source/statistical function ASTs remain identical.
+Original code, packets and failed attempts are preserved; only the
+publication adapter is corrected and registered as a new version before
+any statistical outcome. A newly approved actual remote commit is required
+before resampling; duplicate import approvals are not added.
 Counts remain 160 completed configurations/76 recurring reviews,
 78 versions, no pending strategy candidate and no qualified champion.
 The old 22/36-candidate results retain their original scope and bytes;

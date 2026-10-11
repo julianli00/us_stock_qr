@@ -171,3 +171,26 @@ def test_corrupt_or_misaligned_cells_do_not_claim_common_date_resampling(policy,
         values["legacy_original"]["10"] = values["legacy_original"]["10"].iloc[1:]
     with pytest.raises(QuantError):
         audit.analyze(values, policy)
+
+
+def test_publication_uses_frozen_import_guard_and_explicit_new_files_without_duplicate_core_approvals(policy, monkeypatch):
+    calls = []
+    reference = {"path":"evidence/current.json", "sha256":"1"*64}
+
+    def core(ref, entries, source_policy, commit):
+        calls.append(("manifest", ref, entries, source_policy, commit))
+        return {"published_import_manifest_verified":True, "verified_imported_core_file_count":7}
+
+    def explicit(root, ref, required, commit):
+        calls.append(("explicit", root, ref, required, commit))
+        assert not {"src/us_quant/calendar.py", "src/us_quant/metrics.py", "src/us_quant/storage.py"} & required
+        assert {"src/us_quant/selection_accounting_cohorts.py", "config/selection-accounting-cohorts.json"} <= required
+        assert {policy[key]["path"] for key in audit.REFERENCES} <= required
+        return {"published_commit":commit, "registration_packet":ref}
+
+    monkeypatch.setattr(audit.publication_core, "published_inputs", core)
+    monkeypatch.setattr(audit, "verify_publication", explicit)
+    result = audit.published_inputs(reference, policy, "2"*40)
+    assert [call[0] for call in calls] == ["manifest", "explicit"]
+    assert result["published_frozen_imported_core"]["published_import_manifest_verified"] is True
+    assert result["published_commit"] == "2"*40
