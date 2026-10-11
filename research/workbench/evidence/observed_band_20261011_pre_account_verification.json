@@ -1,0 +1,56 @@
+{
+  "actual_path_dependent_trade_targets_computed": false,
+  "all_old_records_and_forward_control_bytes_unchanged_before_migration": true,
+  "candidate_returns_or_metrics_computed": false,
+  "checked_at": "2026-10-11T16:56:04.797006+00:00",
+  "commission_per_order": 1,
+  "full_portfolio_price_dates": 2805,
+  "independent_source_verifier_sha256": "117deb98686276c7d1083118d1e0174c71c57f23ebe9581014656459341c1b7a",
+  "initial_capital_usd": 10000,
+  "investment_objective_verified": false,
+  "maximum_original_seeded_source_error": 0.0,
+  "new_economic_factor_definitions": 0,
+  "new_registered_candidates": 0,
+  "new_source_quote_requests": 0,
+  "new_strategy_evaluations": 0,
+  "only_original_monthly_decisions_and_forced_initial_deployment": true,
+  "order_authority": false,
+  "original_actual_holding_not_last_target_comparison_helper_reused": true,
+  "original_seeded_source_paths_checked": 8,
+  "original_source_bundle_references": {
+    "semiconductor_breadth_half_gold_relative": {
+      "path": "reports/graded-gold-20261011/semiconductor_breadth_half_gold_relative/bundle.json",
+      "sha256": "493a99e3e9f4b999229f0a217e0587fcc5bb92516041c7eea346ed619d8f33af"
+    },
+    "semiconductor_breadth_off_gold_relative": {
+      "path": "reports/graded-gold-20261011/semiconductor_breadth_off_gold_relative/bundle.json",
+      "sha256": "91138aaedf9109ca1d8c6e58ae9c31b3be6b144b4aad7936c743cbd7b19a343c"
+    }
+  },
+  "per_window_cost_path_dependence_requires_post_publication_feedback_verification": true,
+  "portfolio_assets": 12,
+  "prepared_candidates": [
+    "semiconductor_graded_gold_half_observed_band025",
+    "semiconductor_graded_gold_off_observed_band025"
+  ],
+  "prepared_source_target_sha256": {
+    "semiconductor_graded_gold_half_observed_band025": "389475be78b507af7886302268a7025611f500448b3b00551b6c7dd86fe128ad",
+    "semiconductor_graded_gold_off_observed_band025": "0cac17ef2c14284d6ad0b79ad555300733b04c6da586bf34f586c83c48cf71ea"
+  },
+  "prepared_spec_sha256": {
+    "semiconductor_graded_gold_half_observed_band025": "d63ef2e80797c1ffcde96be60ff90bf26694d65b3090de91120f2c7898354fff",
+    "semiconductor_graded_gold_off_observed_band025": "c083a13dab1609b242f586de986de73b3a531cfef55e57e44ed1552d3f189bff"
+  },
+  "prior_observed_band": 0.025,
+  "prior_qld_cap": null,
+  "prior_volatility_target": null,
+  "schema_version": 1,
+  "source_signal_means_votes_weights_costs_or_delay_refitted": false,
+  "synthetic60pct_guard_relaxed_or_failure_counted_as_strategy_trial": false,
+  "synthetic_contract_tests_passed": 255,
+  "synthetic_future_fixture_failure_reference": {
+    "path": "reports/observed-band-plan-20261011/synthetic_fixture_failure.json",
+    "sha256": "5acb49538caacc3f93916fbd919d40ac6f7d348d96469c3c1ec86d9d594d38e0"
+  },
+  "unchanged_desired_monthly_targets_per_candidate": 122
+}

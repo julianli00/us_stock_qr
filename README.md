@@ -4811,6 +4811,74 @@ own fixed rule, source proof and published registration;
 it cannot change modeled fees or reuse only passing windows.
 **The investment objective remains unmet.**
 
+## Preregistered original observed-weight execution band
+
+The [fixed execution policy](research/workbench/config/observed-weight-execution.json)
+transfers the existing **2.5-percentage-point actual closing
+holding-weight band** to both unchanged graded-gold sources.
+Initial fresh-account deployment always issues the full
+last-known target. At later original monthly source updates,
+trade only when some desired-versus-actual closing fund weight,
+including BIL, differs by at least 2.5 points, with the old
+helper's existing 1e-12 rounding allowance.
+This is not last-target hysteresis or a fitted optimal band.
+
+The [execution adapter](research/workbench/src/us_quant/observed_weight_execution.py)
+reuses the original unmodified pure-band decision helper
+with both QLD cap and volatility target disabled.
+No leveraged QLD holding or volatility override is introduced;
+the helper's required observed covariance argument cannot
+affect this pure-band decision. Original source signals,
+desired equity/gold weights, 122 monthly updates,
+USD10,000 capital, USD1/order and 5/20bp costs remain.
+Skipping a small correction holds actual positions rather
+than rewriting the desired target or giving a cost rebate.
+
+Each independent window/cost path reconstructs actual funded-v2
+positions, fees and closing weights. Dated 1/2-session queues
+are preserved without cancellation/overwrite; fills precede
+that day's closing-weight decision. End-of-window unfilled
+requests are not retrospectively filled. Drift can worsen
+drawdown or return, and 2% remains target idle cash, not a floor.
+The old band study used a different leveraged portfolio:
+only its decision helper is reused, not its old accounts
+or promotion contract.
+
+The [source-only pre-account proof](research/workbench/evidence/observed_band_20261011_pre_account_verification.json)
+matches all eight original desired target/seed matrices exactly.
+All 2,805 source dates, actual funds and frozen risk-free rates
+remain. **Actual path-dependent issued targets and new accounts
+are not calculated before publication.**
+Synthetic tests cover observed-versus-last-target feedback,
+funding, delays, initial deployment and unfilled final requests.
+A synthetic future-price doubling correctly hit the unchanged
+60% daily-return source guard; only that fixture was smoothed,
+with the failed test note retained and no source rule changed.
+255 coupled cases and 52 root guards pass.
+
+The [actual registration](research/workbench/evidence/observed_band_20261011_registration.json)
+records the pair at **2026-10-11 16:56:16 / 16:56:19 UTC**.
+An actual attempt using the preceding published commit stops
+before path-dependent targets, output creation or accounts.
+The shared runner requires exact configured-remote publication
+of packet/code/policy/proof before any such calculations.
+
+The [registration preservation](research/workbench/evidence/observed_band_20261011_registration_preservation.json),
+[current snapshot](research/workbench/evidence/research_program_2026-W41_observed_band_registered_v64.json)
+and [full prior source-bound audit](research/workbench/evidence/research_program_source_bound_audit_v38.json)
+retain **140 completed configurations / 56 reviews / 224 paths**,
+19 legacy / 37 funded-v2 outcomes, 69 imported files and seven
+forward profiles. One exact engine/head migration adds the
+dynamic adapter, followed only by two candidate events.
+60 versions include two old invalid ones and these two
+pending candidates.
+
+At registration there are **zero new outcomes**, no champion
+and no actual forward return sessions. Original W42 plans,
+IJR/PKW quota, catalog families and both frozen forward rules
+remain. No band, commission, latency, source vote or share grid
+is introduced. **The investment objective remains unmet.**
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

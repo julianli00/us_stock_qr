@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "study_id": "graded_gold_prior_observed_weight_execution_20261011",
+  "data_scope": "factor_etf_portfolio",
+  "data_start": "2015-08-10",
+  "as_of": "2026-10-05",
+  "prior_evaluated_configurations": 140,
+  "new_configurations": 2,
+  "new_economic_factor_definitions": 0,
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "factor_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "actual_weight_trade_band": 0.025,
+  "capital_usd": 10000,
+  "commission_per_order": 1.0,
+  "cash_reserve": 0.02,
+  "candidates": [
+    {"id": "semiconductor_graded_gold_half_observed_band025", "source_id": "semiconductor_breadth_half_gold_relative"},
+    {"id": "semiconductor_graded_gold_off_observed_band025", "source_id": "semiconductor_breadth_off_gold_relative"}
+  ],
+  "source_registration": {"path": "evidence/graded_gold_20261011_registration.json", "sha256": "0b01a85155e436164efaa4e0d35597a60e0faae11080babebdf8d939793432b7"},
+  "source_policy": {"path": "config/breadth-gold-relative.json", "sha256": "520b856b0cc6c0caf9e421ecf6a0f06c1c9822971b9ca15400165f0646a6775f"},
+  "source_implementation": {"path": "src/us_quant/breadth_gold_relative.py", "sha256": "289750d3961d2983c39c37af67858283ad5c9745c1825e0ad488bf0044a1516b"},
+  "prior_band_policy": {"path": "config/portfolio-refinement.json", "sha256": "ddb4a82bd3cb17e7bdbe4cd3bb8446f89babefd4ae86a3fdeb973f2458e9e1ec"},
+  "prior_band_implementation": {"path": "src/us_quant/portfolio_refinement.py", "sha256": "f43b4d6955f4601701317753c9d95ddbd4c3175c5f68a6f9a68dd32b9272a948"},
+  "methodology": {
+    "hypothesis": "Fixed commissions and modeled spreads can make small monthly risk-budget corrections costly. Transfer the existing2.5percentage-point observed-holding no-trade band to both unchanged graded-gold sources, without reducing transaction-cost assumptions or fitting a wider/narrower band.",
+    "rule": "Initial fresh-account deployment always issues the full last-known source target. At each later original monthly source update, compare its entire unchanged desired target with actual post-trade closing portfolio weights, including BIL. Reuse the original pure-band rebalance_reason helper: issue only when maximum desired-minus-actual weight gap plus its existing1e-12rounding allowance is at least0.025; otherwise hold. This is not last-issued-target hysteresis or an optimal band claim.",
+    "constraints": "The reused original pure-band candidate has QLDcap and volatility_target bothnull,so there is no risk-limit override or old leveraged holding. Its helper's required covariance argument comes from actual63session observed prices but cannot affect this pure-band decision. Source equity/gold budget,sector200means/majority/half-zero scales,GLD63/126/252relative fractions and122monthly source dates are all unchanged.",
+    "execution": "Issue unchanged desired targets at the close into the original1/2session delayed queue; never cancel or overwrite pending requests. Reconstruct actual cash-funded-v2positions,fees andclosing weights separately for every independentUSD10000window/scenario. Queued fills precede closing-weight decisions; unfilled end-of-window requests remain pending,not retroactively filled. Retain original5bpnext-openbase/20bpextra-sessionstress,USD1/order,fractional long-only fund quantities.",
+    "source_and_proof": "Reuse the actual original twelve-asset market,freeze the complete source and oldhelper graphs,and independently prove every original static source target and seed before accounts. Actual-path-dependent issued targets/holding feedback are calculated only after real registration/code/proof publication fence,then independently checked against full account positions and bt. Synthetic contract tests are not actual historical portfolio outcomes.",
+    "risks": "Skipped small corrections allow drift and can worsen realized exposure,drawdown orreturn;2%remains targetidlecash,not a continuously enforced floor. Fewer tickets do not guarantee reduced dollar fees or passing goals. The old standalone band study used another leveraged portfolio/accounting context;only its unmodified pureband decision helper is reused,not old portfolio history or promotion contract.",
+    "selection": "Exactly two fixed execution constructions after140exposed-history configurations. No band/lookback/commission/latency/source-weight tuning or hidden cost rebate. Require full10y/5ybase/stress net excessSharpe>1,CAGR>same-costSPY,stressCAGR>basecostSPY,DD<=15%. Oldselectiondiagnostics do notcorrect these trials or allsearch. No new quotes/economicdefinitions/W42plan/forwardmodel changes or live authority.",
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}
