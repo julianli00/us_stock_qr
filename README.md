@@ -4017,6 +4017,61 @@ old selection diagnostics do not correct these new trials.
 At registration there are **zero new strategy outcomes**, no champion,
 and no independent future-alpha or investment qualification claim.
 
+The [complete joint-confirmation results](research/workbench/evidence/joint_risk_confirmation_20261011_results.json)
+retain both timings and all eight cost/window paths:
+
+| Confirmation/window | Base net CAGR / Sharpe / drawdown | Stress net CAGR / Sharpe / drawdown |
+|---|---|---|
+| Monthly AND, ten-year | 17.99% / 1.1039 / 20.85% | 17.58% / 1.0761 / 20.80% |
+| Monthly AND, five-year | 23.59% / 1.1612 / 21.00% | 22.62% / 1.1105 / 20.96% |
+| Daily AND, ten-year | 16.57% / 1.0128 / 21.73% | 14.43% / 0.8796 / 25.18% |
+| Daily AND, five-year | 21.66% / 1.0618 / 22.07% | 18.67% / 0.9121 / 25.67% |
+
+The monthly rule passes **all four Sharpe and cost-matched SPY gates**,
+including both stress versus base-SPY comparisons. Its minimum Sharpe
+is 1.0761, but **every drawdown gate fails**, reaching 21.00% in
+the five-year base path. Its worst episodes span 2022-03-08 to
+2022-10-14. This meets the return/Sharpe portion, not the retained
+15% stability requirement or independent future-validation requirement;
+it remains a rejected historical candidate, not a champion.
+
+Daily confirmation does not improve that stability. Both base
+Sharpe/SPY comparisons pass, but stressed Sharpe falls below 1,
+the ten-year stress SPY comparisons fail, and maximum drawdown
+reaches 25.67%. The ten-year monthly stress account executes 737
+asset orders / USD 1,449.22 fees; daily stress executes 1,209 /
+USD 3,749.59 with more state reversals and different delayed fills.
+More timely confirmation is not necessarily better risk control.
+Neither ratio, dollar threshold, scale nor timing is tuned after
+these outcomes, and the failures are not omitted.
+
+The [independent proof](research/workbench/evidence/joint_risk_confirmation_20261011_reproducibility.json)
+checks all 16 funded strategy/SPY and 16 independent `bt` accounts,
+all proven event dates/empty rows, monthly dollar regimes, independent
+window seeds, costs, rates and original calendars. Prepared versus
+actual seeded targets agree exactly. Maximum scalar metric / equity
+differences are 3.17e-14 / 9.46e-11 USD; both strict joint rejections
+reproduce despite the monthly candidate's partial goal passes.
+
+The [current snapshot](research/workbench/evidence/research_program_2026-W41_joint_results_v51.json)
+contains **128 completed configurations = 84 prior + 44 recurring reviews**,
+46 registered code versions including the two old invalid ones,
+no pending actual candidate and no champion.
+The [full source-bound audit](research/workbench/evidence/research_program_source_bound_audit_v25.json)
+reexecutes all 44 reviews / 176 paths, preserving 19 legacy and 25
+explicit funded-v2 reviews. The [preservation proof](research/workbench/evidence/joint_risk_confirmation_20261011_preservation.json)
+retains all old journal rows/event prefix, 69 imported files, seven
+forward profiles and all 3,192 prior control artifacts.
+
+The original four unregistered W42 plans and six definitions /
+five catalog families remain. Both frozen forward models still
+have zero actual return sessions. Original selection diagnostics
+do not cover these new two candidates or the complete search.
+The [updated native continuation](research/workbench/evidence/prospective_data_automation_v35.json)
+records both the monthly return/Sharpe passes and the failed stability
+limit without weakening any gate or replacing a forward rule.
+**The investment objective remains unmet.**
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
