@@ -2691,6 +2691,56 @@ retain daily 09:00 collection and the actual October 17 weekly
 discovery gate. No new daily acquisition or independent native
 delivery proof is claimed for this diagnostic checkpoint.
 
+### Separately registered factor-exposure diagnosis
+
+The [source admission](research/workbench/evidence/factor_exposure_source_20261011_admission.json)
+records actual downloads from the
+[Kenneth French Data Library](https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html).
+The US daily five-factor and momentum archives both use the August 2026
+CRSP cut and end on **August 31, 2026**. Their percent returns are
+converted once to decimals; missing sentinels, duplicate dates and
+interior coverage gaps are rejected, not carried or filled.
+The current histories are not historical first-publication vintages.
+Primary notes identify the January 2025 CRSP CIZ format change and
+June 2024 Treasury-bill source change. Raw copyrighted archives and
+documents remain private.
+
+The [fixed plan](research/workbench/config/factor-exposure.json) and
+[actual registration](research/workbench/evidence/factor_exposure_20261011_registration.json)
+include all 36 completed recurring reviews, every rejected outcome
+and all 144 original ten/five-year base/stress account paths.
+Two descriptive models retain the **complete** 2,512/1,254-session
+formal windows: SPY excess alone, and SPY excess plus the SOXX-minus-SPY
+industry spread and GLD/IEF excess returns from frozen actual prices.
+Each account uses its original frozen risk-free series.
+
+A third model uses the six academic risk factors on only the complete
+2,488/1,230-session overlap. Its 24 unavailable final sessions are
+listed explicitly. This is **not** a shorter qualification window or
+a replacement of account risk-free data. Only this descriptive
+academic regression pairs returns with the published factor RF,
+and reports its difference from the original account RF.
+
+The models report in-sample coefficients, explained variance, residual
+volatility and paired strategy-minus-cost-matched-SPY intercepts.
+An intercept multiplied by 252 is an annualized **arithmetic**
+quantity, not CAGR, a tradable residual, a predictive factor, or
+independent alpha. No new significance or holdout claim is attached
+to these already selected historical strategies. The dollar-only,
+unguarded sector and original macro references are fixed highlights,
+not chosen using the new regression outcomes.
+
+```bash
+cd research/workbench
+.venv/bin/python -I -B -m us_quant.factor_exposure run
+```
+
+At preregistration portfolio-exposure outcomes are uncomputed.
+There are no new candidate backtests, factor registrations, research
+events, engine migrations or changes to the seven forward profiles.
+All 120 completed configurations remain disclosed and no strategy
+has satisfied the unchanged investment objective.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

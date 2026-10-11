@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "diagnostic_id": "factor_exposure_20261011",
+  "as_of": "2026-10-05",
+  "data_start": "2015-08-10",
+  "horizons_years": [10, 5],
+  "scenarios": ["base", "stress"],
+  "included_candidate_count": 36,
+  "total_disclosed_configurations": 120,
+  "capital_usd": 10000.0,
+  "research_snapshot": {
+    "path": "evidence/research_program_2026-W41_results_v40.json",
+    "sha256": "d9447ff4f0b0f21c3a14a7d4077e82f4ada3942992583ae1e500484cd47c2d00"
+  },
+  "source_bound_audit": {
+    "path": "evidence/research_program_source_bound_audit_v14.json",
+    "sha256": "3458a1aa3cc32919697035b92cd229f3c6e949346f901e6091fcb9f1602cd189"
+  },
+  "selection_results": {
+    "path": "evidence/selection_expansion_20261011_results.json",
+    "sha256": "d7d0d5a4a1ed4d0ede9914f2207176be77b27679331fde085694548dfb38cfd5"
+  },
+  "source_manifest": {
+    "path": "data/factor-exposure-source-20261011/manifest.json",
+    "sha256": "2acc9cced12acaf87e6f8b3c9568dd1f8d587f7fe87d81f87a679060b480adf8"
+  },
+  "risk_proxy_bundle": {
+    "path": "reports/sector-growth-balance-20261011/four_factor_semiconductor_sector50/bundle.json",
+    "sha256": "94f70da5beff41b3c0165ed215ac5f7a326310c8e891b8d8d40f355f2dacd469"
+  },
+  "factor_overlap_last_session": "2026-08-31",
+  "models": {
+    "market_full_window": ["SPY_excess"],
+    "market_sector_defense_full_window": [
+      "SPY_excess", "SOXX_minus_SPY", "GLD_excess", "IEF_excess"
+    ],
+    "ff6_available_overlap": ["Mkt-RF", "SMB", "HML", "RMW", "CMA", "Mom"]
+  },
+  "highlighted_reference_ids": [
+    "semiconductor_dollar_half_guard",
+    "four_factor_semiconductor_sector50",
+    "macro_real_yield_factor_tilt"
+  ],
+  "methodology": {
+    "cohort": "All36complete recurring reviews and all144original10y/5ybase/stressstrategy/SPYaccount paths,including every rejection. Do not select or omit paths using the new exposures. Revalidate original reviewed bundles,independent accounts,fees,delays and frozen risk-free metrics using the unchanged original reader.",
+    "traded_proxy_models": "In-sample OLS with intercept on the exact2512/1254formal sessions. One model uses SPY excess alone. The other adds SOXX-minus-SPY semiconductor-relative return and GLD/IEF excess returns from the frozen actual sector-price snapshot. Account excess returns use their own unchanged original frozen risk-free series. These are descriptive risk proxies,not new predictive factors or hypothetical tradable residuals.",
+    "academic_overlap_model": "Use actual primary US daily FF5plusmomentum archive percent returns converted exactly once to decimal. Both202608CRSParchives end2026-08-31. This model explicitly uses only the complete2488/1230-session overlap and lists all24unavailable final sessions;no missing-day fill,carry,extrapolation or shortened qualification windows. Paired account excess returns use published FF RF only for this descriptive regression,with its difference from original account RF disclosed.",
+    "reporting": "Report coefficients,R-squared,residual volatility,exact arithmetic mean decomposition and paired strategy-minus-cost-matched-SPYintercept. Intercept times252is annualized arithmetic residual mean,not CAGR,a tradable alpha,Sharpe or selection-adjusted significance. No p-values or confidence claims are added to this post-selected descriptive fit. Three highlighted references are fixed from already exposed reporting and forward rules,not selected on new results.",
+    "source_limits": "Current revised academic research factor returns are not original point-in-time factor signals or deployable long-only ETF accounts. Primary catalog documents January2025CIZformat change and June2024RFsource change;no complete first-publication vintages. Academic market is not SPY;SOXXis an industry exposure,not an independent economic factor. Current vendor prices and old per-review accounting limitations remain.",
+    "validation": "Require exact cohort/source hashes,full formal market-proxy windows,explicit academic overlap shapes and deterministic replay. Independently reconstruct raw account/proxy/factor inputs and verify coefficients,paired differences,means,R-squared and residual volatility via centered covariance normal equations rather than calling the production fit.",
+    "authority": "Read-only;no new economic definition,candidate,backtest,review,engine migration,champion,forward-rule replacement or order. Prior84trials and unknown search decisions remain outside the36reviewselectiondiagnostic. Regression exposure removal cannot override the original Sharpe/SPY/drawdown gates or zero prospective model observations."
+  },
+  "new_strategy_evaluations": 0,
+  "order_authority": false,
+  "qualification_policy_changed": false,
+  "forward_rules_changed": false,
+  "fit_is_out_of_sample_forecast": false,
+  "register_queued_factors_early": false
+}
