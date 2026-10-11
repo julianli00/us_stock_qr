@@ -3025,6 +3025,65 @@ The [latest native instructions](research/workbench/evidence/prospective_data_au
 retain the daily/weekly cadence. A prepared strategy is not a
 qualified strategy.
 
+### Durable registration receipts without changing frozen strategies
+
+The [separate receipt adapter](research/workbench/src/us_quant/candidate_receipts.py)
+handles interruption **after** the candidate's transactional journal
+registration but **before** its local receipt is saved. It matches the
+exact stored specification, original readiness hash and verified event,
+preserves the original registration timestamp, then writes the missing
+receipt without a second admission. Repeated calls verify and retain
+the existing bytes. Runtime locking and atomic no-overwrite publication
+also cover concurrent calls.
+
+`register` may create a first registration only through the original
+data-admission and eligible-cycle gates. `recover` **never** registers
+an unknown candidate. Neither mode evaluates accounts, promotes a
+champion, changes a forward rule or submits orders. A new registration
+still requires fresh readiness; recovering an old registration instead
+requires its **original** readiness, not a refreshed replacement.
+Changed sources, specifications, partial receipts, conflicting event
+references and unsupported timestamps stop explicitly.
+
+For the prepared inflation rule, use these exact paths only after its
+legitimate cycle preparation; publish the receipt before evaluation:
+
+```bash
+cd research/workbench
+.venv/bin/python -I -B -m us_quant.candidate_receipts register \
+  --spec data/inflation-guard-prepared-20261017/semiconductor_dollar_inflation_gold_guard-spec.json \
+  --readiness data/inflation-guard-prepared-20261017/readiness.json \
+  --receipt evidence/inflation_guard_20261017_actual_registration.json
+# If registration committed but saving the receipt was interrupted:
+.venv/bin/python -I -B -m us_quant.candidate_receipts recover \
+  --spec data/inflation-guard-prepared-20261017/semiconductor_dollar_inflation_gold_guard-spec.json \
+  --readiness data/inflation-guard-prepared-20261017/readiness.json \
+  --receipt evidence/inflation_guard_20261017_actual_registration.json
+```
+
+Do not re-prepare or modify those inputs after a committed registration
+to get recovery to pass. A failure may leave a valid candidate event;
+inspect it and restore only its metadata receipt, not the trial count
+or earlier result. Existing receipts must be matched, never overwritten.
+
+The [actual recovery check](research/workbench/evidence/candidate_registration_recovery_20261011.json)
+reproduces an already reviewed term-OR-dollar candidate's original
+04:40:18 UTC registration in a new local metadata receipt and verifies
+byte-identical repetition, with **zero** new registrations or reviews.
+Both modes reject the current unregistered inflation plan.
+Synthetic fault tests cover interrupted writes and concurrent retries;
+they are not claims of actual disk, scheduler or missing-market-day
+failures.
+
+The [preservation evidence](research/workbench/evidence/candidate_registration_recovery_preservation_20261011.json)
+keeps all 120 configurations, 36 reviews, 69 imported files, seven
+forward profiles and the engine/event head unchanged. Frozen strategy
+sources are untouched; no engine migration is needed. The
+[updated native instructions](research/workbench/evidence/prospective_data_automation_v24.json)
+retain daily collection and the October 17 weekly gate. This improves
+the research workflow's recovery semantics, not its measured returns
+or qualification.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
