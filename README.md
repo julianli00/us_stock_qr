@@ -5447,6 +5447,63 @@ Original daily/weekly cadence, W42 plans and both frozen forward rules remain;
 both forward models still have zero actual return sessions.
 **The investment objective remains unmet.**
 
+## Real-activity information: complete archives, freshness still blocked
+
+The [source-only policy](research/workbench/config/activity-inputs.json)
+and [monthly vintage helper](research/workbench/src/us_quant/activity_inputs.py)
+prepare Chicago Fed CFNAIMA3 activity magnitude and CFNAIDIFF diffusion.
+They are related views of one composite, not two independent factors.
+The publisher's recession/expansion associations are historical and
+conditional; neither is treated as an unconditional recession forecast
+or a proven trading rule.
+
+The [independent source proof](research/workbench/evidence/activity_input_readiness_20261011.json)
+verifies 450 actual historical ALFRED snapshots in 12 bounded batches,
+plus six separately acquired probes. All 131 original monthly/reference
+pairs, 225 query dates per series and 2,805 NYSE context days remain.
+Selection uses the actual second-previous-NYSE-date snapshot, not today's
+revised history or an assumed publication on the first-of-month period label.
+Every selected date, completed month, age and native index value is checked
+independently; Decimal value error is zero.
+
+**Only 440 of 450 selections meet the fixed source freshness contract.**
+Each series has the following five blocked queries; full readiness remains false.
+
+| Query session | Earlier snapshot | Latest observed month | Completed-period age |
+| --- | --- | --- | --- |
+| 2023-01-27 | 2023-01-25 | 2022-10 | 88 days |
+| 2025-11-25 | 2025-11-21 | 2025-08 | 86 days |
+| 2025-11-28 | 2025-11-25 | 2025-08 | 89 days |
+| 2025-12-29 | 2025-12-24 | 2025-09 | 90 days |
+| 2025-12-31 | 2025-12-29 | 2025-09 | 92 days |
+
+The 62-day limit was fixed before acquisition and measures query date
+minus the completed observation-month end. No limit relaxation,
+current-history fill, query deletion or implicit standby strategy is used.
+These archived snapshot gaps do not prove that the original publisher
+failed to release data. Complete underlying component/weight vintages and
+original intraday first-release times remain outside the verified scope.
+
+The initial ordinary probe returned HTTP200 HTML with an explicit
+observation-range error, not a ZIP. Its original policy, code,
+request/response and log are retained privately. A new acquisition honors
+the actual advertised `2026-08-01` monthly observation end; market as-of
+`2026-10-05`, formal return windows, all historical query dates, snapshot
+buffer, 62-day age limit, endpoint and transport are unchanged.
+Primary series definitions and the actually advertised 14-page background
+PDF are separately verified.
+
+The [preservation proof](research/workbench/evidence/activity_input_preservation_20261011.json)
+retains the exact research engine, ledger/event head, seven forward profiles,
+69 imports and 3,192 frozen controls. **No direction flags, portfolio targets,
+accounts, factor definitions or strategy trials are added.**
+Counts remain 150 completed configurations, 66 reviews, 68 registered
+versions and no qualified champion.
+The [updated native instructions](research/workbench/evidence/prospective_data_automation_v48.json)
+keep daily/weekly cadence, original W42 plans and both frozen forward models.
+Source preparation is not investment qualification; the full objective
+remains unmet.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

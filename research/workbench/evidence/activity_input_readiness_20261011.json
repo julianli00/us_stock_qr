@@ -1,0 +1,205 @@
+{
+  "actual_batches": 12,
+  "actual_source_series": 2,
+  "actual_vintage_snapshots": 450,
+  "all_raw_probe_values_and_period_dates_reproduce_batches": true,
+  "blocked_query_metadata": [
+    {
+      "completed_period_age_calendar_days": 88,
+      "completed_period_end": "2022-10-31",
+      "explicit_source_error": "Monthly completed-period freshness exceeds the frozen62day source contract.",
+      "observation_month": "2022-10-01",
+      "query_session": "2023-01-27",
+      "series": "CFNAIMA3",
+      "status": "blocked_stale_source",
+      "vintage_cutoff": "2023-01-25"
+    },
+    {
+      "completed_period_age_calendar_days": 86,
+      "completed_period_end": "2025-08-31",
+      "explicit_source_error": "Monthly completed-period freshness exceeds the frozen62day source contract.",
+      "observation_month": "2025-08-01",
+      "query_session": "2025-11-25",
+      "series": "CFNAIMA3",
+      "status": "blocked_stale_source",
+      "vintage_cutoff": "2025-11-21"
+    },
+    {
+      "completed_period_age_calendar_days": 89,
+      "completed_period_end": "2025-08-31",
+      "explicit_source_error": "Monthly completed-period freshness exceeds the frozen62day source contract.",
+      "observation_month": "2025-08-01",
+      "query_session": "2025-11-28",
+      "series": "CFNAIMA3",
+      "status": "blocked_stale_source",
+      "vintage_cutoff": "2025-11-25"
+    },
+    {
+      "completed_period_age_calendar_days": 90,
+      "completed_period_end": "2025-09-30",
+      "explicit_source_error": "Monthly completed-period freshness exceeds the frozen62day source contract.",
+      "observation_month": "2025-09-01",
+      "query_session": "2025-12-29",
+      "series": "CFNAIMA3",
+      "status": "blocked_stale_source",
+      "vintage_cutoff": "2025-12-24"
+    },
+    {
+      "completed_period_age_calendar_days": 92,
+      "completed_period_end": "2025-09-30",
+      "explicit_source_error": "Monthly completed-period freshness exceeds the frozen62day source contract.",
+      "observation_month": "2025-09-01",
+      "query_session": "2025-12-31",
+      "series": "CFNAIMA3",
+      "status": "blocked_stale_source",
+      "vintage_cutoff": "2025-12-29"
+    },
+    {
+      "completed_period_age_calendar_days": 88,
+      "completed_period_end": "2022-10-31",
+      "explicit_source_error": "Monthly completed-period freshness exceeds the frozen62day source contract.",
+      "observation_month": "2022-10-01",
+      "query_session": "2023-01-27",
+      "series": "CFNAIDIFF",
+      "status": "blocked_stale_source",
+      "vintage_cutoff": "2023-01-25"
+    },
+    {
+      "completed_period_age_calendar_days": 86,
+      "completed_period_end": "2025-08-31",
+      "explicit_source_error": "Monthly completed-period freshness exceeds the frozen62day source contract.",
+      "observation_month": "2025-08-01",
+      "query_session": "2025-11-25",
+      "series": "CFNAIDIFF",
+      "status": "blocked_stale_source",
+      "vintage_cutoff": "2025-11-21"
+    },
+    {
+      "completed_period_age_calendar_days": 89,
+      "completed_period_end": "2025-08-31",
+      "explicit_source_error": "Monthly completed-period freshness exceeds the frozen62day source contract.",
+      "observation_month": "2025-08-01",
+      "query_session": "2025-11-28",
+      "series": "CFNAIDIFF",
+      "status": "blocked_stale_source",
+      "vintage_cutoff": "2025-11-25"
+    },
+    {
+      "completed_period_age_calendar_days": 90,
+      "completed_period_end": "2025-09-30",
+      "explicit_source_error": "Monthly completed-period freshness exceeds the frozen62day source contract.",
+      "observation_month": "2025-09-01",
+      "query_session": "2025-12-29",
+      "series": "CFNAIDIFF",
+      "status": "blocked_stale_source",
+      "vintage_cutoff": "2025-12-24"
+    },
+    {
+      "completed_period_age_calendar_days": 92,
+      "completed_period_end": "2025-09-30",
+      "explicit_source_error": "Monthly completed-period freshness exceeds the frozen62day source contract.",
+      "observation_month": "2025-09-01",
+      "query_session": "2025-12-31",
+      "series": "CFNAIDIFF",
+      "status": "blocked_stale_source",
+      "vintage_cutoff": "2025-12-29"
+    }
+  ],
+  "blocked_query_selections": 10,
+  "checked_at": "2026-10-11T20:04:58.957400+00:00",
+  "complete_underlying_component_methodology_vintages_or_intraday_release_proof_claimed": false,
+  "existing_W42_or_forward_rules_changed": false,
+  "fresh_query_selections": 440,
+  "full_readiness_error": "Monthly completed-period freshness exceeds the frozen62day source contract.",
+  "full_source_readiness": false,
+  "independent_decimal_value_maximum_error": 0.0,
+  "independent_query_selections_checked": 450,
+  "independent_verifier_sha256": "cfbb473ee04a25c830ddae4b96bf1806f69efa58efa28f9e9750ddb0b1f9f9d1",
+  "independently_acquired_probe_snapshots": 6,
+  "initial_http200html_form_error_preserved": true,
+  "initial_request_response_policy_and_code_files_sha256": {
+    "data/activity-inputs-20261011/CFNAIMA3-ALFRED-form.html": "0fc025a52eb529d2cbb4796948e1ea2620d6375a5de7e93b4354b5cd690a6709",
+    "data/activity-inputs-20261011/CFNAIMA3-ALFRED-form.request.json": "2e680cfe4eab89f972ab2bed75a67d68138e78c215d4efffa603fb73fe6ed401",
+    "data/activity-inputs-20261011/CFNAIMA3-FRED-series.html": "c2dca2d7fbcc06c40480c2d4d993507e51e5d1d76d053749ca58d7ece490b7db",
+    "data/activity-inputs-20261011/CFNAIMA3-FRED-series.request.json": "05546cf4ed651444bc99ce2ae5f5721766449df57d18f2e294fbb04b8d17b656",
+    "data/activity-inputs-20261011/CFNAIMA3-probe.request.json": "f8a0327ca3447c9f5cba0ae704c8ef9697a82044d6de161eafd3198eefd84f59",
+    "data/activity-inputs-20261011/CFNAIMA3-probe.zip": "57a5ec4f2c1cf23711f7be70c43670055819aad387ae594fceac7a3ffd092990",
+    "data/activity-inputs-20261011/acquisition.json": "cda1b39fcc91c37c491af4f7bbccb2916daabe3c8e9187e9e7146fe6cdb27784",
+    "data/activity-inputs-20261011/failure.json": "2d23f80de98837a31b98aecfcbec778872a7cb00e6a9f96ebe8f6416e16739da",
+    "reports/activity-inputs-plan-20261011/acquire-initial-range-v1.py": "d37e8cd5ac9184494184f50c1a24d8c891e9291127eaacac70f2984d5ec4fc9b",
+    "reports/activity-inputs-plan-20261011/activity-inputs-initial-range-v1.json": "fe300399b82530a8f37c7269dba62fda15f87765eec05baa3e2392275d59700a",
+    "reports/activity-inputs-plan-20261011/activity_inputs_initial_range_v1.py": "a18e3e263116a1b40930cb63b0e020beacec563c2768231053a47c6359637897",
+    "reports/activity-inputs-plan-20261011/initial_range_failure.json": "1a107ab02e0446a248abbe71741ffbab0bdc14105115e51f86fd0b51c6dd0de4"
+  },
+  "investment_objective_verified": false,
+  "market_asof_query_cohort_or_formal_strategy_windows_shortened": false,
+  "maximum_actual_completed_period_age_days": 92,
+  "maximum_allowed_completed_period_age_days": 62,
+  "missing_or_stale_sources_filled_dropped_or_relabelled_strategy_standby": false,
+  "native_frequency": "Monthly",
+  "native_units": "Index",
+  "new_forward_model_observations": 0,
+  "new_independent_factor_families_claimed": false,
+  "new_registered_candidates": 0,
+  "new_registered_factor_definitions": 0,
+  "new_strategy_evaluations": 0,
+  "only_advertised_monthly_observation_end_corrected": "2026-08-01",
+  "order_authority": false,
+  "original_market_context_sessions": 2805,
+  "original_monthly_reference_pairs": 131,
+  "original_root_boundary_test_cases_passed": 52,
+  "policy": {
+    "path": "config/activity-inputs.json",
+    "sha256": "e53b975cb1a534e4892ebfd8700d503440827afb94108552324be8cd459045a9"
+  },
+  "primary_background_pdf_pages": 14,
+  "primary_definitions_and_advertised_background_pdf_verified": true,
+  "primary_documents": {
+    "CFNAIDIFF-ALFRED-form.html": {
+      "sha256": "a7ad1032cd38d38ee2a6e1f6097b93735c7e18dc987b7e9b3d2bf5e9a8ddb4a9",
+      "url": "https://alfred.stlouisfed.org/series/downloaddata?seid=CFNAIDIFF"
+    },
+    "CFNAIDIFF-FRED-series.html": {
+      "sha256": "f8042488af114a0bb1902dcb3957a5dbd47b88e136d49a30f4551b033fdd7265",
+      "url": "https://fred.stlouisfed.org/series/CFNAIDIFF"
+    },
+    "CFNAIMA3-ALFRED-form.html": {
+      "sha256": "0fc025a52eb529d2cbb4796948e1ea2620d6375a5de7e93b4354b5cd690a6709",
+      "url": "https://alfred.stlouisfed.org/series/downloaddata?seid=CFNAIMA3"
+    },
+    "CFNAIMA3-FRED-series.html": {
+      "sha256": "c2dca2d7fbcc06c40480c2d4d993507e51e5d1d76d053749ca58d7ece490b7db",
+      "url": "https://fred.stlouisfed.org/series/CFNAIMA3"
+    },
+    "Chicago-background.pdf": {
+      "sha256": "a7d3f1e0c85a80f692ad9d0c8dbf4079331ceeb67b02e40435df323bfb155cf4",
+      "url": "https://www.chicagofed.org/-/media/publications/cfnai/background/cfnai-background-pdf.pdf"
+    },
+    "Chicago-current.html": {
+      "sha256": "73def81f948b7f9d87605d98ec4cd7f12fc8f13faebe80edb39411a3be89bf3e",
+      "url": "https://www.chicagofed.org/research/data/cfnai/current-data"
+    }
+  },
+  "private_source_manifest": {
+    "path": "data/activity-inputs-corrected-20261011/manifest.json",
+    "sha256": "db0c889af3ce7ea4782cf67e0dcfa5b3eaf0b47b5e8004652c7fee1365d5baaf"
+  },
+  "private_verified_query_matrix": {
+    "path": "reports/activity-inputs-plan-20261011/verified-queries.csv",
+    "sha256": "a85ff1175351ef9545dd45ad06881a74a7da18ce2e76f33830b5b2d5b7060c56"
+  },
+  "raw_primary_documents_and_full_input_matrices_published": false,
+  "schema_version": 1,
+  "series": [
+    "CFNAIMA3",
+    "CFNAIDIFF"
+  ],
+  "source_age_lag_headers_endpoint_host_or_transport_changed": false,
+  "source_contract_test_cases_passed": 67,
+  "source_validator_sha256": "a9eb9f30d8ae7ac00dddfd58450dee0b223602ef09f1f8310cde32f12dcca686",
+  "status": "complete_archives_freshness_blocked",
+  "strategy_states_targets_or_returns_computed": false,
+  "study_id": "chicago_real_activity_vintage_source_20261011",
+  "two_series_are_independent_alpha_or_unconditional_recession_labels": false,
+  "vintage_cutoff": "second_previous_nyse_session"
+}
