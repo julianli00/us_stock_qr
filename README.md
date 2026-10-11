@@ -2096,6 +2096,32 @@ unchanged. The actual four-step collection/target/model sequence again
 returned same-session duplicate/no-new-data actions; it did not create a
 new market observation, target, model return or future-execution claim.
 
+### Receipt-backed daily operations and honest schedule provenance
+
+`research_daily.py` runs the already registered parent-data, expanded-data,
+target-observation and research-model stages in the fixed order. Each unique
+operational receipt records source code, invocation start/end, per-stage
+actual results and unchanged historical-research state. It does not create
+factor definitions, candidate evaluations, archives or a trading account.
+
+```bash
+cd research/workbench
+.venv/bin/python -I -B -m us_quant.research_daily --origin operator
+```
+
+A failed stage preserves completed acquisitions and stops later stages;
+retries naturally use each component's existing duplicate/integrity guards.
+A missed pre-open deadline is recorded as failure, not a successful
+pipeline. There is no rollback of genuine previously acquired data and no
+quiet catch that converts a source error into success.
+
+The invocation origin is **declared, not authenticated scheduler proof**.
+Even `--origin session_automation` does not establish that the app delivered
+a native wakeup. A changed `nextRunAt` establishes schedule advancement,
+not message delivery or agent execution. Actual command results verify the
+pipeline separately; same-day duplicate success is not a new market
+observation, portfolio return or Sharpe qualification.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
