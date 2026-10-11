@@ -3839,6 +3839,69 @@ all prior searches. The [native continuation](research/workbench/evidence/prospe
 retains these failures without changing costs, windows, forward rules
 or the full-SPY gate. **The investment objective remains unmet.**
 
+## Preregistered semiconductor portfolio-floor protection
+
+The [fixed protection policy](research/workbench/config/semiconductor-portfolio-protection.json)
+transfers the **already frozen 15% closing-high-water ratchet and
+5-percentage-point actual-holding trade band** to two original sources:
+the four-style/SOXX/gold monthly rule and its dollar-only half-risk rule.
+Asset shares, monthly 63-session risk balance, dollar availability and
+all original costs/windows remain. There is no new protection threshold,
+sector, lookback, economic factor or macro-confirmation grid.
+
+The [adapter](research/workbench/src/us_quant/semiconductor_portfolio_protection.py)
+reuses the unchanged `protect_target` law from the original growth
+protection study. It preserves existing monthly BIL from the dollar
+guard and moves only additional removed risky capital to BIL.
+Each path starts from fresh USD 10,000 and its own closing high-water
+mark; costs and delayed fills change subsequent protection decisions.
+Only one modeled request can be pending, it is never overwritten,
+and a month-end update remains requested while an older order is pending.
+Gaps, fees, delays, the trade band and cash lock-in can still breach
+15% drawdown or sacrifice return; this is not guaranteed insurance.
+
+The [pre-account source/rule proof](research/workbench/evidence/semiconductor_protection_20261011_pre_account_verification.json)
+checks all eight original source target paths including initialization.
+Prepared versus original seeded sources agree exactly.
+1,310 Decimal floor-law probes on the actual 131 monthly sources
+reproduce the adapted risk/BIL targets within 2.22e-16; the probe NAVs
+are synthetic examples, **not newly calculated strategy accounts**.
+No new quotes, protected historical returns or forward observations
+are computed at preparation.
+
+A shared [registered-study runner](research/workbench/src/us_quant/registered_study.py)
+reuses the original candidate receipts, finite target generator,
+configured-remote publication verification and four-path evaluator.
+It requires two exact existing-factor specifications and a pre-account
+proof, verifies both original registration events, and requires actual
+remote publication of the frozen code/policy/metadata before writing
+a durable account fence and evaluating the candidates.
+The runner itself does not perform Git publication or expose raw inputs.
+It cannot register economic definitions, change strategy parameters,
+skip an outcome or overwrite an existing partial account directory.
+This replaces the need for another study-specific publication wrapper,
+without changing previously frozen wrappers.
+
+The [actual registration](research/workbench/evidence/semiconductor_protection_20261011_registration.json)
+records the two candidates at **2026-10-11 11:57:43 / 11:57:46 UTC**,
+before any protected account. The [registration preservation
+proof](research/workbench/evidence/semiconductor_protection_20261011_registration_preservation.json)
+retains 124 completed configurations / 40 reviews / 160 audited paths,
+69 imported files and seven original forward profiles. One exact
+old-engine/head migration adds the finite replay route; only the two
+new registrations are pending, with no completed outcome or champion.
+The original W42 four plans and IJR/PKW queue are unchanged.
+206 coupled cases and 52 root guards pass; an actual evaluation using
+the preceding published commit stops before output/accounts.
+
+The [current registration snapshot](research/workbench/evidence/research_program_2026-W41_protection_registered_v48.json)
+and [old-cohort source-bound audit](research/workbench/evidence/research_program_source_bound_audit_v22.json)
+preserve all old results. These two hypotheses were formed after
+124 exposed-history configurations. Original selection diagnostics
+do not cover them, and both frozen forward models still have zero
+actual return sessions. Publication must precede account calculation;
+**the investment objective remains unmet**.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

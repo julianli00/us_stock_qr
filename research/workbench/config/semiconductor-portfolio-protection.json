@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "study_id": "semiconductor_portfolio_protection_20261011",
+  "data_scope": "factor_etf_portfolio",
+  "as_of": "2026-10-05",
+  "prior_evaluated_configurations": 124,
+  "new_configurations": 2,
+  "new_economic_factor_definitions": 0,
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "factor_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "drawdown_target": 0.15,
+  "actual_weight_trade_band": 0.05,
+  "cash_reserve": 0.02,
+  "capital_usd": 10000.0,
+  "commission_per_order": 1.0,
+  "candidates": [
+    {"id": "semiconductor_ratchet_protection", "dollar_guard": false},
+    {"id": "semiconductor_dollar_ratchet_protection", "dollar_guard": true}
+  ],
+  "source_registration": {
+    "path": "evidence/dollar_risk_guard_20261011_registration.json",
+    "sha256": "928cb2954a37db17347df6e7e520e72ebb30beeba606fa35f5905ddfc9bc46b9"
+  },
+  "protection_policy": {
+    "path": "config/growth-portfolio-protection.json",
+    "sha256": "c24ee733063920024de9e55750575ee21fe9a3fe949d477ca2fa3b9a81297ecd"
+  },
+  "protection_implementation": {
+    "path": "src/us_quant/growth_portfolio_protection.py",
+    "sha256": "d06d65c8dd4bcbe421e0a71c4f0f4c8a90fe785ac85c2c86d11747f906ae8614"
+  },
+  "methodology": {
+    "hypothesis": "Transfer the already frozen net-wealth protection law to the existingfour-style/SOXX/gold monthly source andthe same sourcewiththe previously registeredpositive-dollar halfguard. Testreturn retention andrealizeddrawdown jointly,not a new protectionthreshold/share search.",
+    "source_baselines": "Reuse the exact original four_factor_semiconductor_sector50 targets andsemiconductor_dollar_half_guard targets,including63sessionriskbalance,half-equitySOXX,otherhalf equal acrossfourstyles,30–70%equity and98%targetinvestment. Dollaravailability/14dayage/conflicts/quarantine/2019regimes unchanged. No newsectors,macroinputs or economicdefinitions.",
+    "ratchet": "At each observed close setfloor to85%of the highest actual closing accountNAV includingUSD10000initialanchor. Reuse the unchanged protect_target helper to derive scale=max(0,min(1,(NAV-floor)/(0.15*NAV))). Existing monthlyBIL is retained;only furtherremovednon-BILrisk is transferredtoBIL. Normalization is a helper adapter,not new risky exposure or a reset of NAV/floor.",
+    "timing": "Initial/monthlyrequests trade;betweenmonthends desired target must differ fromactualclosingholdingweights byatleast5percentagepoints. One delayedpendingrequest atatime;never cancel or overwrite it. Amonthend updatewhilepending remainsrequested. Costs/delays changefutureNAV,peak,scale andtrade decisions,so each10y/5y/base/stresspath regeneratesseparately.",
+    "execution": "OriginalUSD10000freshcapital,USD1/order,5bpnext-openbase,20bpextra-sessionstress,complete2512/1254sessions. Funded-v2no-opthreshold unchanged;no leverage,shorting,syntheticinterest,lossreset or skippedfees.",
+    "interpretation": "The law is a discrete unleveraged ratcheted-floor adaptation,not guaranteedcapitalinsurance or anindependentfactor. Gaps,delay,fees,5ppband andcashlock-in can breach15%DD or sacrificeCAGR/Sharpe. Report everypath andfailure;no result-drivenband/multiplier/cost/sector-share tuning.",
+    "authority": "Formedafter124exposedtrials;oldselectionbootstraps do not coverthese candidates or allsearch. OriginalfourW42plans/definitionquota/frozenforwardrules remain. Historicalqualification is not independentforwardvalidation or automatictrading.",
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

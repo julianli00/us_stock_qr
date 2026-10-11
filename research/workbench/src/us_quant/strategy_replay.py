@@ -33,6 +33,7 @@ GENERATORS = {
     "claims_factor_guard": "config/claims-factor-guard.json",
     "factor_covariance_risk": "config/factor-covariance-risk.json",
     "sector_basket_strategy": "config/sector-basket-strategy.json",
+    "semiconductor_portfolio_protection": "config/semiconductor-portfolio-protection.json",
 }
 
 
@@ -213,6 +214,24 @@ def registered_generator(spec: dict, root: Path) -> tuple[str, dict]:
                 "data/sector-basket-sources-20261011/manifest.json",
                 "data/dollar-information-source-20261011/verified-manifest.json",
             ]
+        elif name == "semiconductor_portfolio_protection":
+            required += [
+                "src/us_quant/growth_portfolio_protection.py",
+                "config/growth-portfolio-protection.json",
+                "src/us_quant/cash_funded_accounting_v2.py",
+                "src/us_quant/sector_growth_balance.py",
+                "config/sector-growth-balance.json",
+                "src/us_quant/growth_factor_satellite.py",
+                "config/growth-factor-satellite.json",
+                "src/us_quant/multifactor_stability.py",
+                "src/us_quant/dollar_risk_guard.py",
+                "config/dollar-risk-guard.json",
+                "src/us_quant/macro_factor_tilt.py",
+                "data/dollar-information-source-20261011/verified-manifest.json",
+                "data/macro-rate-access-20261010/verified-manifest.json",
+                "data/macro-rate-access-20261010/DFII10-curl-response.csv",
+                "evidence/dollar_risk_guard_20261011_registration.json",
+            ]
         if any(relative not in frozen for relative in required):
             raise QuantError("The registered strategy is missing a frozen helper dependency.")
         for relative in required:
@@ -273,6 +292,12 @@ def registered_targets(
         if key not in cache:
             cache[key] = monthly_targets(data, policy)
         return run(data, cache[key], candidate, policy, start, end, cost, delay)[1]
+    if name == "semiconductor_portfolio_protection":
+        from us_quant.semiconductor_portfolio_protection import monthly_baselines, run
+
+        if key not in cache:
+            cache[key] = monthly_baselines(data, policy)
+        return run(data, cache[key][spec["id"]], candidate, policy, start, end, cost, delay)[1]
     if key not in cache:
         if name == "adaptive_factor_allocation":
             from us_quant.adaptive_factor_allocation import build_targets
