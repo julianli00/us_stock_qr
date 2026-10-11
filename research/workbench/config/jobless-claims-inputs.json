@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "study_id": "jobless_claims_input_readiness_20261011",
+  "scope": "historical_monthly_source_readiness_only",
+  "series": "ICSA",
+  "data_start": "2015-08-10",
+  "as_of": "2026-10-05",
+  "source_observation_start": "2014-01-01",
+  "source_observation_end": "2026-10-03",
+  "native_units": "Number",
+  "native_frequency": "Weekly, Ending Saturday",
+  "seasonal_adjustment": "Seasonally Adjusted",
+  "required_vintage_dates": 225,
+  "monthly_comparison_grid": 131,
+  "information_delay_sessions": 2,
+  "maximum_observation_age_days": 14,
+  "vintage_cutoff": "second_previous_nyse_session",
+  "initial_release_dates": "advertised_releases_after_selected_observation_through_snapshot_cutoff",
+  "first_release_date_validation_required": true,
+  "form_url": "https://alfred.stlouisfed.org/series/downloaddata?seid=ICSA",
+  "maximum_dates_per_request": 40,
+  "maximum_entered_dates_characters": 500,
+  "source_index": {
+    "path": "data/macro-tilt-prepared-20261010/close.csv",
+    "sha256": "b098f783bbf7a4ca56520e11c6e13edbb0eb2673ed7aaec02b89981ff74fabce"
+  },
+  "research_snapshot": {
+    "path": "evidence/research_program_2026-W41_inflation_plan_v42.json",
+    "sha256": "5ae8c7cb4a01072f89ebb0441bd0de6391400d782af2b952db2255e230b23120"
+  },
+  "source_definitions": {
+    "FRED": "https://fred.stlouisfed.org/series/ICSA",
+    "ALFRED": "https://alfred.stlouisfed.org/series?seid=ICSA",
+    "historical_snapshot_definition": "https://alfred.stlouisfed.org/help/downloaddata",
+    "originating_release": "https://www.dol.gov/ui/data.pdf"
+  },
+  "methodology": {
+    "prior_art": "No ICSA,IC4WSA,UNRATE or Sahm unemployment input appears in the current research source/configuration code. This bounded preparation adds ICSA provenance,not another independent alpha family or a new strategy result.",
+    "economic_input": "An initial claim requests determination of unemployment-insurance eligibility following separation from an employer. This is a weekly insured-labor-market flow in native counts,not the unemployment rate or all unemployed persons. Benefit eligibility,coverage and seasonal adjustment limit interpretation;business-cycle information is not guaranteed predictive investment alpha.",
+    "timing": "Use the actual ALFRED snapshot from the secondNYSEsession strictly before each original monthly/reference query. Thus two laterNYSEcloses precede use at the query close. Cross-check every selected observation against the separately advertised initial-release-only archive's first-release calendar date. Do not date availability from the week-ending date,which predates release. Exact first intraday publication and all historical methodology changes remain unverified.",
+    "coverage": "Retain all225distinct queries and131month/reference pairs on the exact2805NYSEsessionindex. Select the latest finite Saturday observation actually present in its earlier snapshot;positive integer counts and observation age at most14calendar days are required. Missing or stale inputs are explicit failures,not invented values,interpolation,current-history fallback or a shorter evaluation window.",
+    "revisions": "Retain each historical as-of column and native value. Later snapshots may revise the same week;never replace earlier values or relabel a revision as a new week. Initial-release-only output requires actual advertised release vintages,not arbitrary as-of dates;preserve the rejected initial request and use distinct release-date batches to verify first-release dates. The original daily yield and weekly financial-condition timing policies are unchanged.",
+    "source_limits": "Originating DOL release and archive requests returned403 through the web-fetch tool. Preserve these access blocks;no user-agent,cookie,mirror or access-gate workaround. Public Federal Reserve archival downloads are independently advertised sources,not proof the blocked originating documents were read.",
+    "future_research": "Source readiness only:no direction states,trigger thresholds,allocation targets,portfolio returns,Sharpe,CAGR or factor ranking. Any later employment-risk hypothesis requires separate actual eligible-cycle registration and publication before performance. Keep the two IJR/PKWdefinitions and three prepared strategies unchanged;do not use this preparation to bypass theirOctober17gate or weekly quota.",
+    "preservation": "No old generator,accounting engine,registered review,source receipt,qualification gate or prospective rule changes. No new candidate,factor,review,journal event,market-model observation or order."
+  },
+  "new_registered_factor_definitions": 0,
+  "new_strategy_evaluations": 0,
+  "new_factor_family_independence_claimed": false,
+  "strategy_states_or_returns_computed": false,
+  "forward_rules_changed": false,
+  "existing_queued_proposals_replaced": false,
+  "order_authority": false
+}

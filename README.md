@@ -3145,6 +3145,60 @@ is performed. The [latest native instructions](research/workbench/evidence/prosp
 include complete-bundle recovery while retaining the daily/weekly
 cadence. This is workflow reliability, **not a new investment result**.
 
+### Employment input provenance with explicit historical coverage blocks
+
+The [claims source policy](research/workbench/config/jobless-claims-inputs.json)
+and [bounded validator](research/workbench/src/us_quant/jobless_claims_inputs.py)
+add **source-only** ICSA preparation, not another factor or strategy.
+Initial claims measure requests for unemployment-insurance eligibility
+following employer separation; they are native **counts**, not the
+unemployment rate or all unemployed people. Economic interpretation,
+benefit coverage and seasonal adjustment do not establish predictive alpha.
+
+The [actual verification](research/workbench/evidence/jobless_claims_input_readiness_20261011.json)
+uses 225 ALFRED historical snapshots in six batches and 162 advertised
+first-release vintages in five batches, covering 160 selected weekly
+observations and all 131 original month/reference pairs. Each query uses
+the snapshot from the **second previous NYSE session** and checks the
+selected week's separate first-release date. A Saturday observation date
+is not its publication date. Independent raw CSV/Decimal and calendar
+checks reproduce every count, date, age and blocker exactly.
+
+**Only 221 of 225 queries meet the frozen 14-day freshness limit.**
+No date is removed or silently converted into a trading action:
+
+| Query session | Latest source observation | Observation age |
+|---|---|---:|
+| 2018-03-29 | 2018-03-10 | 19 days |
+| 2018-04-02 | 2018-03-10 | 23 days |
+| 2025-10-29 | 2025-09-20 | 39 days |
+| 2025-10-31 | 2025-09-20 | 41 days |
+
+`inspect_queries` reports these four blocks on the complete grid;
+`query_readiness` explicitly rejects full readiness. No interpolation,
+current-history substitution, age-limit relaxation or automatic pause
+rule is added. A later hypothesis would need a separately frozen
+missing-data policy and actual registration **before** performance tests.
+The existing October 17 IJR/PKW queue and three prepared candidates
+are unchanged.
+
+Originating DOL release/archive requests returned HTTP403 and were not
+bypassed. Independently advertised Federal Reserve archives do not prove
+the blocked DOL documents were read, or that an archive gap proves a
+publisher failed to release. A preserved HTTP200 HTML response rejected
+an arbitrary date for the initial-release-only format; corrected requests
+use actual advertised release dates. This was a source-format failure,
+not a registered strategy-code or accounting failure. Exact historical
+intraday publication and full methodology continuity remain unverified.
+
+The [preservation evidence](research/workbench/evidence/jobless_claims_input_preservation_20261011.json)
+retains all **120 configurations, 36 reviews, no champion, zero forward
+return sessions**, 69 imported files, seven forward profiles and the
+unchanged journal/engine/head. No portfolio states, targets or returns
+are calculated. The [updated native instructions](research/workbench/evidence/prospective_data_automation_v26.json)
+retain these source blocks, daily collection and the actual weekly gate.
+Source provenance is progress toward research, **not investment qualification**.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
