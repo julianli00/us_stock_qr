@@ -5752,6 +5752,51 @@ Any strategy using these versions needs separately frozen rules,
 actual registration and remote publication before performance calculation.
 Source readiness does not complete the investment objective.
 
+## Treasury transition confirmations: registered before accounts
+
+The [fixed policy](research/workbench/config/curve-transition-guard.json)
+and [generator](research/workbench/src/us_quant/curve_transition_guard.py)
+test two maturity views of one macro transition hypothesis.
+At each original completed-month decision, halve all original non-BIL
+targets only when published broad-dollar change over 63 NYSE sessions
+is strictly positive, the selected Treasury spread is strictly negative,
+and that spread has strictly increased from its own historical
+63-session-earlier reading. Equality does not trigger.
+Removed capital goes to actual BIL; otherwise the original
+four-style/SOXX/gold allocation is issued unchanged.
+
+This is not the old macro tilt's nonpositive-spread equity-only gate,
+nor a new economic factor family, a Federal Reserve probability model
+or a verified equity forecast. Both maturity views share the ten-year leg.
+No thresholds, horizons, cash reserve, gold budget, factor ratios,
+fees or trading clock are tuned after looking at candidate performance.
+There is no activity gap policy, inversion-duration memory,
+new holding band or current-history substitution.
+
+The [pre-account proof](research/workbench/evidence/curve_transition_20261011_pre_account_verification.json)
+independently reparses every one of the 450 Treasury vintage selections,
+checks 131 actual published dollar pairs and scalar source budgets,
+and reproduces all eight window/cost-seeded target paths.
+Both retain all 131 original monthly requests and all formal return days;
+the three-month and two-year views respectively reduce risk in 10 and eight
+months. Source error is at most 3.02e-16, scalar budget/target error
+7.22e-16 and seeded replay error zero. These are target-rule checks,
+not portfolio performance.
+
+The [actual registration packet](research/workbench/evidence/curve_transition_20261011_registration.json)
+and [preservation proof](research/workbench/evidence/curve_transition_20261011_registration_preservation.json)
+record two actual registrations after one exactly anchored engine migration.
+All prior journal rows, seven forward profiles, 69 imports and 3,192
+controls remain unchanged; an old-commit evaluation is blocked before
+creating account output. The
+[registered snapshot](research/workbench/evidence/research_program_2026-W41_curve_transition_registered_v78.json)
+retains 154 completed configurations/70 reviews, with 74 versions including
+two old invalid ones and exactly two pending candidates.
+**No new candidate returns or metrics have been computed at registration.**
+Remote publication of this packet and frozen implementation is required
+before the four-path funded/bt evaluation. Original W42 plans, forward
+models and the unmet investment objective remain unchanged.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

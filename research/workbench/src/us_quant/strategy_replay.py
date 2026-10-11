@@ -48,6 +48,7 @@ GENERATORS = {
     "producer_gold_routing": "config/producer-gold-routing.json",
     "activity_factor_guard": "config/activity-factor-guard.json",
     "activity_gold_trend": "config/activity-gold-trend.json",
+    "curve_transition_guard": "config/curve-transition-guard.json",
 }
 
 
@@ -408,6 +409,17 @@ def registered_generator(spec: dict, root: Path) -> tuple[str, dict]:
                 "evidence/breadth_gold_20261011_registration.json",
                 "src/us_quant/trend_factor_guard.py", "config/trend-factor-guard.json",
             ]
+        elif name == "curve_transition_guard":
+            required += [
+                "src/us_quant/yield_curve_inputs.py", "config/yield-curve-inputs.json",
+                "evidence/yield_curve_input_readiness_20261011.json",
+                "data/yield-curve-inputs-verified-parser-20261011/manifest.json",
+                "evidence/dollar_risk_guard_20261011_registration.json",
+                "src/us_quant/dollar_risk_guard.py", "config/dollar-risk-guard.json",
+                "src/us_quant/sector_growth_balance.py", "config/sector-growth-balance.json",
+                "src/us_quant/macro_factor_tilt.py", "src/us_quant/inflation_inputs.py",
+                "src/us_quant/financial_conditions_guard.py", "src/us_quant/calendar.py", "src/us_quant/storage.py",
+            ]
         if any(relative not in frozen for relative in required):
             raise QuantError("The registered strategy is missing a frozen helper dependency.")
         for relative in required:
@@ -574,6 +586,10 @@ def registered_targets(
             cache[key] = build_targets(data, policy)[spec["id"]]
         elif name == "activity_gold_trend":
             from us_quant.activity_gold_trend import build_targets
+
+            cache[key] = build_targets(data, policy)[spec["id"]]
+        elif name == "curve_transition_guard":
+            from us_quant.curve_transition_guard import build_targets
 
             cache[key] = build_targets(data, policy)[spec["id"]]
         elif name == "sector_term_guard":
