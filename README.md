@@ -2071,6 +2071,31 @@ retain daily capture and eligible weekly exploration, the exact rejected
 tail definition and the distinction between 112 completed studies and two
 unregistered six-family plans. Future scheduled execution is not claimed.
 
+### Dollar-risk source review without premature unleveraged admission
+
+The [UUP source-admission audit](research/workbench/evidence/dollar_risk_source_admission_20261011.json)
+investigates a currency driver rather than another equity-style label.
+The actual Invesco product page identifies UUP, ISIN US46141D2036,
+February 20, 2007 inception and long USDX futures against six currencies,
+plus Treasury/money-market collateral income. Those facts do **not alone
+prove a historical notional exposure cap no greater than NAV**.
+
+The issuer's linked annual report, quarterly report and factsheet all
+returned audience-selection HTML, not PDFs, under ordinary public requests.
+No gate was bypassed, no shared or acquired credentials were used, and
+search-generated assertions were not treated as primary leverage evidence.
+The review therefore **does not admit UUP** into the unleveraged strategy
+universe or silently fill `asset_leverage: 1`. This is an unverified
+admission constraint, not a finding that UUP is necessarily a leveraged
+product.
+
+No price-history dataset, strategy specification, new factor registration
+or complete backtest was added by this source check. All 112 completed
+configurations, 28 reviews and original qualification conditions remain
+unchanged. The actual four-step collection/target/model sequence again
+returned same-session duplicate/no-new-data actions; it did not create a
+new market observation, target, model return or future-execution claim.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
