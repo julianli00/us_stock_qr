@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "study_id": "bounded_style_core_risk_transfer_20261011",
+  "data_scope": "factor_etf_portfolio",
+  "data_start": "2015-08-10",
+  "as_of": "2026-10-05",
+  "prior_evaluated_configurations": 144,
+  "new_configurations": 2,
+  "new_economic_factor_definitions": 0,
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "factor_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "source_id": "semiconductor_leadership126_observed_band025",
+  "risk_sessions": 63,
+  "factor_share_min": 0.15,
+  "factor_share_max": 0.35,
+  "actual_weight_trade_band": 0.025,
+  "cash_reserve": 0.02,
+  "candidates": [
+    {"id": "semiconductor_leadership_core_inverse_volatility", "risk_measure": "sample_volatility"},
+    {"id": "semiconductor_leadership_core_inverse_semideviation", "risk_measure": "semideviation"}
+  ],
+  "source_registration": {"path": "evidence/leadership_20261011_registration.json", "sha256": "d82ce0233141d10a20f62d041edbbb1f3a596aa41268f32fe3921eef61415be1"},
+  "source_policy": {"path": "config/sector-leadership-rotation.json", "sha256": "c51dee083eec3c0825dc09a43c1153b5286e8ed4477c7fe4ee8f97c15817e59a"},
+  "source_implementation": {"path": "src/us_quant/sector_leadership_rotation.py", "sha256": "125dd6bf4d405cb6a4fb7b8d359d5fa6d6724046329a9a8bac82651da97574af"},
+  "prior_bounds_policy": {"path": "config/multifactor-stability.json", "sha256": "197892d844fd749c1ef06cda8b1eeb025b6edfe546e42f020dc721bc09209715"},
+  "prior_bounds_implementation": {"path": "src/us_quant/multifactor_stability.py", "sha256": "05423115c9171a20f0c870e2556b4f25f787df737da4b1f87da5f5fffe3ae7b9"},
+  "prior_downside_policy": {"path": "config/downside-risk-balance.json", "sha256": "284f89f99a05c556630bdaf0bea0734a945af3e64f8d5e5ad768c3df7b747972"},
+  "prior_downside_implementation": {"path": "src/us_quant/downside_risk_balance.py", "sha256": "55ceddc19e3e64039a3fc03c013aac23c5c357c7a35c2d4b1611c624bfcd4612"},
+  "methodology": {
+    "hypothesis": "Equal dollar shares need not give the four factor mandates similar risk contributions. Test bounded risk-weighting within the already fixed factor-core budget,not more sector gating or a fitted increase in equity risk. Keep all momentum/value/quality/low-volatility exposures;no factor is deleted.",
+    "volatility": "Reuse the original bounded_factor_shares helper on each actual style fund's63-session sample daily-return standard deviation. Its15%-35%share bounds remain unchanged. Scaling factors share one fixed source core budget;no forecast return,mean optimization or new volatility cap.",
+    "downside": "Use the existing risk_estimate semideviation helper separately for each style's63daily returns minus the original frozen lagged risk-free series. The square root of mean squared negative parts divides by all63sessions,not only losses. Apply the same unmodified inverse-risk bounded-share helper and15%-35%bounds. A missing/nonfinite/zero risk estimate fails,not an invented equal-weight or cash fallback.",
+    "controlled_targets": "Select the completed126relativeleadership source after its exposed results. On each original122source month ends, preserve the exact sum of MTUM/VLUE/QUAL/USMV weights and every SOXX/SPY/GLD/BIL/other target. Only the four within-core shares may change;do not recalculate equity/gold risk balance,industry leadership or gold fractions. Bounds apply inside the four-style core,not to its whole equity budget or NAV. Equal budgets are not equal-risk or equal-dollar-holding counterfactuals.",
+    "execution": "Pass each new desired matrix to the unmodified parent execution path using its original126candidate handle and fixed2.5ppactualclosingholding band;the handle selects the shared execution rule,not a claim to replay old inputs/positions. Each10y/5ybase/stress account independently startsUSD10000withdeployment,5/20bp,USD1/order,1/2session delayed requests. Actual positions/feedback recomputed only after publication;no overwrite,extra daily trigger or fee rebate.",
+    "source": "Use the original audited12fund price/risk-free snapshot and full parent frozen source/helper graph. No new quote,current holdings,synthetic price,independent-family claim or altered source-vintage choice. Original200sector breadth/126leadership/63-126-252gold law and W42/forward rules remain.",
+    "prior_art": "The prior bounded volatility and downside-risk helper implementations are reused without changing old studies. The older downside study balanced aggregate growth/gold budgets;here only its scalar risk estimator is adapted to individual style funds. Sample-volatility uses original raw fund returns while semideviation uses excess returns,according to their prior laws;this is not isolated causal tail-vs-total-risk attribution.",
+    "selection": "Exactly two fixed constructions after144exposed-history configurations. No factor subset,bounds,riskwindow,tailprobability,band,equity/gold shares or cost grid and no result-driven retuning. Old selection diagnostics do not correct these trials or all searches. Net excessSharpe>1,CAGR>same-costSPY,stressCAGR>basecostSPY andDD<=15%must hold jointly across all paths. Historical qualification still requires independent actual future evidence.",
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

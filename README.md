@@ -5070,6 +5070,72 @@ W42 plans, IJR/PKW quota and both frozen forward experiments
 remain. Both experiments still have zero actual return sessions.
 **The investment objective remains unmet.**
 
+## Preregistered bounded risk allocation inside the factor core
+
+The [fixed factor-core policy](research/workbench/config/factor-core-risk-rotation.json)
+tests two existing risk estimators inside the original four-style
+budget of the 126-session leadership source: **63-session sample
+volatility** and **63-session excess-return semideviation**.
+The [implementation](research/workbench/src/us_quant/factor_core_risk_rotation.py)
+reuses the unchanged bounded inverse-risk share helper and
+its original 15%-35% per-factor limits. All four momentum,
+value, quality and low-volatility funds remain; none is deleted.
+
+The downside case reuses the existing scalar semideviation
+helper on each style's actual daily return minus frozen lagged
+risk-free rates, dividing squared negative parts by all 63
+sessions. The older downside study balanced aggregate
+growth/gold risk; only its estimator is adapted here.
+Sample volatility retains its original raw-return definition,
+so the comparison is not isolated causal tail-risk attribution.
+Missing/nonfinite/zero risks fail rather than create default
+equal shares or cash allocations.
+
+Only four within-core target shares change. The exact core
+budget, every SOXX/SPY/GLD/BIL/other target, original monthly
+dates and 98% total funding remain. Bounds apply inside
+the four-style core, not to whole equity/NAV.
+The parent unmodified 2.5pp actual-holding execution path
+is run on each new desired matrix with fresh positions and
+original capital/fees/delays. No equity/gold risk balance,
+sector/gold signals, band or costs are refitted.
+
+The [independent source-only proof](research/workbench/evidence/core_risk_20261011_pre_account_verification.json)
+matches the entire previously proven desired source matrix
+and all four previous issued-target/initial-seed paths.
+It reconstructs 976 scalar risk estimates, bounded shares
+with 120-step Decimal bisection rather than the production
+root solver, and all 122 target months per candidate.
+Source/risk/share/target errors are
+0/3.39e-17/4.08e-13/6.73e-14.
+Actual feedback targets and new accounts are not calculated.
+
+The [actual registration](research/workbench/evidence/core_risk_20261011_registration.json)
+records both fixed hypotheses at **2026-10-11 17:47:37 / 17:47:40 UTC**.
+An actual evaluation attempt using the preceding published
+commit stops before output/feedback/account creation.
+Exact configured-remote publication of packet/code/policy/
+proof must precede the shared runner's account calculation.
+
+The [registration preservation](research/workbench/evidence/core_risk_20261011_registration_preservation.json),
+[current snapshot](research/workbench/evidence/research_program_2026-W41_core_risk_registered_v68.json)
+and [full prior source-bound audit](research/workbench/evidence/research_program_source_bound_audit_v42.json)
+retain **144 completed configurations / 60 reviews / 240 paths**,
+19 legacy / 41 funded-v2 outcomes, 69 imported files and seven
+forward profiles. One exact engine/head migration adds the
+finite adapter, followed only by two candidate events.
+64 versions include two old invalid ones and these two
+pending candidates; 232 coupled cases and 52 root guards pass.
+
+At registration there are **zero new outcomes**, no champion
+and no actual forward return sessions. Source selection/windows
+were already exposed, prior selection diagnostics do not cover
+these trials or all searches, and equal budgets are not equal risk.
+No factor/bounds/window/share grid, new quote or economic
+definition is introduced. Original W42 plans, IJR/PKW quota,
+frozen forward experiments and goals remain.
+**The investment objective remains unmet.**
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
