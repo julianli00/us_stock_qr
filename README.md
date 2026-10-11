@@ -2617,6 +2617,40 @@ The 22-review joint-selection diagnostic does not cover these later
 fourteen reviews or the original 84 trials. No forward rule is replaced,
 no live trading is enabled, and the investment objective remains unmet.
 
+### Expanded selection diagnostic: all 36 completed recurring reviews
+
+The [separate preregistration](research/workbench/evidence/selection_expansion_20261011_registration.json)
+extends the original 22-review diagnostic to all **36 completed recurring
+reviews**, including the subsequent fourteen outcomes without dropping
+failures. Each horizon contains 108 comparisons: base against base SPY,
+stress against stress SPY, and stress against base SPY. These use all
+144 original reviewed account paths, not a third cost rate or new
+strategy backtests.
+
+The [fixed policy](research/workbench/config/selection-expansion.json)
+inherits the unchanged joint statistic, 4,000 synchronized 21-session
+circular-block samples, seed and two-horizon Bonferroni split.
+Strategies and overlapping horizons are not assumed independent.
+Every original bundle is selected by its review digest, with account,
+independent-account and frozen risk-free hashes and metrics revalidated.
+The original 66-comparison prefix will be separately replayed against
+its frozen results; old policy, code, registration and evidence are not
+rewritten.
+
+```bash
+cd research/workbench
+.venv/bin/python -I -B -m us_quant.selection_expansion run
+```
+
+The original earlier 84 configurations remain explicitly outside this
+inference. The full exposed 120-trial search, unknown research choices,
+nonstationarity and current vendor revisions are not completely corrected.
+A log-growth bound or omnibus p-value is not a Sharpe/drawdown gate,
+an independent holdout, a probability of future profit or proof that
+no viable strategy can exist. At registration the new joint outcome
+is uncomputed; the research ledger, all seven forward profiles,
+120 completed configurations and absent champion remain unchanged.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
