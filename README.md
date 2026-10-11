@@ -4432,6 +4432,81 @@ Prior selection diagnostics do not cover these two trials
 or the complete search. No research model is replaced and
 **the investment objective remains unmet**.
 
+## Preregistered original-sector ETF breadth risk rules
+
+The [fixed sector-breadth policy](research/workbench/config/sector-breadth-risk.json)
+uses all nine originally audited sector ETF price histories as
+**signal-only market information**, not additional portfolio holdings.
+At original completed month ends, each fund votes positive only
+when its actual adjusted close is strictly above its own trailing
+200-observation mean; equality is off. A strict majority of the
+fixed nine means at least five positive funds.
+
+The two constructions leave the original four-style/SOXX/gold
+risk-balanced source unchanged in strong breadth. Weak breadth
+**halves or disables only the original equity component**;
+gold stays exact and removed equity budget goes only to actual BIL.
+The half-SOXX/equal-four-style composition, source 63-session risk
+balance, 30%–70% equity bounds, 98% investment, monthly decisions
+and original execution/gates remain. No new sector selection,
+Treasury rotation, dollar/option confirmation, volatility cap,
+wealth floor, daily trigger or parameter grid is added.
+
+The original sector policy already specifies the fixed nine funds
+and strict 200-observation trend; half and zero risk scales also
+exist. Their structural majority aggregation is a **new
+existing-factor risk construction**, not a new economic family
+or replication of the earlier four-style relative-return breadth.
+This fixed-fund measure is not PIT stock breadth, a historical
+constituent archive or the complete evolving eleven-sector system.
+
+Source inspection before preparation found two independently
+frozen XLK adjusted-price versions: original-sector signal versus
+the unused XLK column in the original twelve-asset portfolio.
+Maximum adjusted open/close differences are 3.85e-5/3.81e-5;
+raw-close difference is 4.85e-10 and volume agrees. Both original
+raw/CSV guards and quote versions remain; no tolerance is widened,
+price is rewritten or later portfolio quote substituted into the
+initially specified sector signal. Portfolio XLK targets must
+remain exactly zero, and all eight shared core observations retain
+their original strict identity checks. The unregistered
+same-version assumption/code is preserved before preparation.
+
+The [independent pre-account proof](research/workbench/evidence/sector_breadth_20261011_pre_account_verification.json)
+matches all four original source paths including independent
+initialization, checks 25,245 signal prices against original CSVs,
+and reconstructs 2,606 fully informed mean rows with Decimal
+arithmetic. Each construction emits 125 monthly targets:
+100 strong / 25 weak states. Six original source warmup months
+remain uninformed; all formal return dates remain.
+Original source/target errors are zero; signal CSV error is 1e-14.
+Every original gold/other nonequity target stays exactly equal.
+
+The [actual registration](research/workbench/evidence/sector_breadth_20261011_registration.json)
+records the pair at **2026-10-11 15:27:17 / 15:27:20 UTC**.
+The shared registered-study runner requires exact
+configured-remote publication of the packet/code/policy/proof
+before account computation. An actual attempt using the previous
+published commit stops before any new output or account.
+
+The [registration preservation](research/workbench/evidence/sector_breadth_20261011_registration_preservation.json),
+[current snapshot](research/workbench/evidence/research_program_2026-W41_breadth_registered_v58.json)
+and [full prior source-bound audit](research/workbench/evidence/research_program_source_bound_audit_v32.json)
+retain **134 completed configurations / 50 reviews / 200 paths**,
+19 legacy / 31 funded-v2 outcomes, 69 imported files and seven
+forward profiles. One exact engine/head migration adds the
+generator, followed only by the two candidate events.
+54 registered versions include two old invalid ones and these
+two pending candidates; 266 coupled cases and 52 root guards pass.
+
+At registration there are **zero new strategy outcomes**, no
+champion and no actual forward return session. Both frozen
+forward rules, all four W42 plans, IJR/PKW quota and six catalog
+definitions/five families remain. This exposed-history breadth
+hypothesis may still fail; prior selection diagnostics do not
+correct these trials or all searches.
+**The investment objective remains unmet.**
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
