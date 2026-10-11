@@ -2312,8 +2312,8 @@ has lower ten-year stress Sharpe than its control. These controls use
 full-window mean exposure, not causal signals or matched realized risk;
 positive differences do not establish selection-adjusted alpha.
 
-The [current snapshot](research/workbench/evidence/research_program_2026-W41_results_v36.json)
-records **116 completed configurations, 32 reviews, no pending candidate
+The [dollar-stage snapshot](research/workbench/evidence/research_program_2026-W41_results_v36.json)
+recorded **116 completed configurations, 32 reviews, no pending candidate
 and no qualified champion**. The
 [128-path source audit](research/workbench/evidence/research_program_source_bound_audit_v12.json)
 reexecutes all 19 legacy and 13 version-two reviews without changing any
@@ -2461,10 +2461,60 @@ controls were also preregistered, retaining the same candidate-specific
 source-pause dates; they use full-window mean exposure and are not causal
 candidates, holdouts or added historical trials.
 The [pending snapshot](research/workbench/evidence/research_program_2026-W41_nfci_v37.json)
-still records **116 completed configurations, 32 reviews and two pending
+recorded **116 completed configurations, 32 reviews and two pending
 candidates**. Exact migration preserves every old record and all seven
 existing prospective profiles. Neither source acquisition nor
 preregistration establishes the investment objective.
+The actual source, code and registration receipts were committed and
+pushed as `87b96bf7` before calculating the new portfolio outcomes.
+
+The [completed results](research/workbench/evidence/financial_conditions_guard_20261011_results.json)
+retain both failures:
+
+| NFCI confirmation | Window | Base CAGR / Sharpe / drawdown | Stress CAGR / Sharpe / drawdown |
+|---|---|---|---|
+| Tighter than average | Ten years | 18.38% / 1.07598 / 20.49% | 17.96% / 1.04930 / 20.49% |
+| Tighter than average | Five years | 23.43% / 1.14355 / 20.65% | 22.57% / 1.09831 / 20.64% |
+| Deteriorating as-published readings | Ten years | 14.80% / 0.95987 / 17.92% | 13.55% / 0.86955 / 17.74% |
+| Deteriorating as-published readings | Five years | 19.92% / 1.10007 / 13.94% | 17.69% / 0.95815 / 14.76% |
+
+**The tightness confirmation never triggered at any of the 131 scheduled
+month-ends.** Its 130 nonempty target rows differ from the original SOXX
+core only through the December 2022 source standby, not better risk
+information. It still fails drawdown in every path. The deterioration
+confirmation reduces risk in 41 months and has 129 target rows, but fails
+ten-year Sharpe, drawdown and SPY gates; five-year stress Sharpe also
+falls below one. These outcomes do not improve the qualifying strategy
+set. The dollar-only guard remains the more stable reference, with its
+original ten-year SPY failure still exposed.
+
+The [independent attribution](research/workbench/evidence/financial_conditions_guard_20261011_attribution.json)
+uses a separate raw ZIP/CSV reader for historical NFCI snapshots and the
+separate H.10 table parser. All source readings, missingness and 131 risk
+changes reproduce exactly. Both full 2,805-row target matrices, including
+standby rows, agree within 2.23e-16. Eight constant-exposure controls
+reconcile with independent accounts and the identical source-pause
+dates. Deterioration has lower Sharpe than its constant-exposure control
+in all four paths; tightness is the same exposure as its control.
+The controls are hindsight attribution, not new candidates, complete
+search correction or matched realized risk.
+
+The [latest snapshot](research/workbench/evidence/research_program_2026-W41_results_v38.json)
+now records **118 completed configurations, 34 reviews, no pending
+candidate and no qualified champion**. The
+[136-path read-only audit](research/workbench/evidence/research_program_source_bound_audit_v13.json)
+retains 19 legacy-engine and 15 version-two reviews. The
+[baseline-preservation receipt](research/workbench/evidence/financial_conditions_baseline_preservation_20261011.json)
+checks every previous record, all 69 imported files and all seven
+prospective profiles. Both original macro and separate dollar daily
+pipelines actually completed duplicate/no-new-model-session runs at
+04:28Z; each model still has zero observed return sessions. The
+[updated automation receipt](research/workbench/evidence/prospective_data_automation_v15.json)
+retains daily data collection and the real October 17 weekly discovery
+eligibility. NFCI is not silently added to either frozen forward model.
+The old 22-review joint-selection inference excludes the subsequent
+twelve reviews and all earlier 84 trials. The investment objective is
+still unverified, with no live deployment or order authority.
 
 ## Progress and publication
 
