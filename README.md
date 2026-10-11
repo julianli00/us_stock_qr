@@ -5013,6 +5013,63 @@ and no actual forward return sessions. Original W42 plans,
 IJR/PKW quota, frozen forward rules and goals remain.
 **The investment objective remains unmet.**
 
+The [completed leadership results](research/workbench/evidence/leadership_20261011_results.json)
+retain both fixed rotation rules and all eight account paths:
+
+| Relative sector leadership rule/window | Base net CAGR / Sharpe / drawdown | Stress net CAGR / Sharpe / drawdown |
+|---|---|---|
+| 126-session winner, ten-year | 15.32% / 1.0562 / 13.77% | 14.79% / 1.0143 / 13.27% |
+| 126-session winner, five-year | 19.27% / 1.0906 / 12.96% | 18.40% / 1.0336 / 13.10% |
+| Three-horizon votes, ten-year | 14.48% / 1.0005 / 13.78% | 13.87% / 0.9529 / 13.27% |
+| Three-horizon votes, five-year | 18.05% / 1.0225 / 12.97% | 17.16% / 0.9641 / 13.10% |
+
+**The 126-session winner passes all four Sharpe/drawdown
+gates and every five-year gate, but still fails ten-year SPY
+outperformance.** Its exact ten-year CAGR is 15.3244%/14.7876%,
+below SPY's 15.4620%/15.4056%. Minimum Sharpe of 1.0143
+and maximum drawdown of 13.77% therefore do not qualify
+the joint objective. The vote construction also fails
+ten-year SPY and both stressed Sharpe gates.
+
+Replacing a lagging industry allocation with broad equity
+improves some conditional risk-adjusted metrics, while
+the winner's CAGR remains lower than the preceding fixed
+SOXX/observed-band reference. These comparisons are not
+equal-risk or causal satellite alpha. Ten-year stress
+orders/modeled fees are 649/USD1,920.16 for the winner
+and 724/USD1,952.52 for voting. The satellite budget,
+leadership horizons/vote weights, band, fees and clocks
+are not changed after these outcomes.
+
+The [independent account proof](research/workbench/evidence/leadership_20261011_reproducibility.json)
+checks all 16 funded strategy/SPY and 16 independent `bt`
+accounts, all independently proven desired rotations,
+728 actual-holding band decisions/initial seeds/dated
+requests/fills, and 30,128 actual-price funding/order/
+cash-flow sessions. All original rates, costs, calendars
+and initial-capital peaks remain. Target/request error
+is zero; maximum scalar metric/equity/cash-flow errors
+are 4.36e-14/8.74e-11 USD/1.10e-11 USD.
+
+The [current snapshot](research/workbench/evidence/research_program_2026-W41_leadership_results_v67.json)
+contains **144 completed configurations = 84 prior + 60 recurring reviews**,
+62 versions including two old invalid ones, no pending
+actual candidate and no champion.
+The [full source-bound audit](research/workbench/evidence/research_program_source_bound_audit_v41.json)
+reexecutes 60 reviews/240 paths, retaining 19 legacy and 41
+explicit funded-v2 reviews.
+The [preservation proof](research/workbench/evidence/leadership_20261011_preservation.json)
+keeps all old journal rows/prefix, 69 imported files,
+seven forward profiles and 3,192 frozen control artifacts.
+
+The [native continuation](research/workbench/evidence/prospective_data_automation_v43.json)
+retains the winner's full-window Sharpe/drawdown passes
+alongside the ten-year SPY failures, without reinterpreting
+the benchmark or weakening any gate. Daily/weekly cadence,
+W42 plans, IJR/PKW quota and both frozen forward experiments
+remain. Both experiments still have zero actual return sessions.
+**The investment objective remains unmet.**
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
