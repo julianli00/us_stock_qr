@@ -4879,6 +4879,74 @@ IJR/PKW quota, catalog families and both frozen forward rules
 remain. No band, commission, latency, source vote or share grid
 is introduced. **The investment objective remains unmet.**
 
+The [completed observed-band results](research/workbench/evidence/observed_band_20261011_results.json)
+retain both fixed execution constructions and every path:
+
+| Original graded-gold source + actual 2.5pp band | Base net CAGR / Sharpe / drawdown | Stress net CAGR / Sharpe / drawdown |
+|---|---|---|
+| Half equity source, ten-year | 15.42% / 1.0410 / 13.77% | 14.84% / 0.9981 / 13.27% |
+| Half equity source, five-year | 19.52% / 1.0786 / 12.96% | 18.51% / 1.0161 / 13.10% |
+| Equity off source, ten-year | 14.31% / 0.9870 / 13.64% | 13.92% / 0.9568 / 13.08% |
+| Equity off source, five-year | 18.28% / 1.0148 / 13.72% | 17.54% / 0.9684 / 13.10% |
+
+**Every path has fewer asset orders, lower modeled costs and
+drawdown within 15%, but neither full joint candidate qualifies.**
+The half-source construction retains all five-year passes.
+Its exact ten-year CAGR is 15.416509676%/14.842779716%,
+still below SPY's 15.461997933%/15.405636614%;
+stressed Sharpe is **0.9981430033**, not strictly above 1.
+Neither close margin is rounded into acceptance.
+The equity-off source also fails ten-year return/Sharpe
+and five-year stressed Sharpe.
+
+Ten-year half-source base orders/modeled costs fall from
+814/USD1,109.48 to 622/USD910.81; stressed values fall
+from 814/USD1,965.87 to 609/USD1,731.86.
+The off-source stressed values fall from 739/USD2,045.45
+to 580/USD1,866.04. Skipped corrections also change subsequent
+holdings and NAV, so these are conditional execution comparisons,
+not isolated fee or equal-risk causal alpha.
+The original 2.5pp band, source parameters, costs and delays
+are not changed after these near-threshold failures.
+
+The [independent account and feedback proof](research/workbench/evidence/observed_band_20261011_reproducibility.json)
+reconstructs all **728 monthly/initial decisions** from actual
+closing weights, Decimal target gaps and the original source
+matrix, independently of the production decision helper.
+All requests, unchanged issued target values, own-window seeds,
+delayed fills and funding reconcile. The half-source ten-year
+base/stress paths skip 29/31 in-band updates; 8/6 requests are
+triggered by actual drift even though last-target differences
+remain inside the band. This verifies actual-holding feedback,
+not mislabeled last-target hysteresis.
+
+All 16 funded strategy/SPY and 16 independent `bt` accounts,
+30,128 actual-price quantity/funding/order/cash-flow sessions,
+original calendars/rates/fees and strict gates are checked.
+Target/request error is zero; maximum scalar metric/equity/
+cash-flow errors are 4.05e-14/1.17e-10 USD/1.28e-11 USD.
+Internal adjusted-price quantities are not broker shares.
+
+The [current snapshot](research/workbench/evidence/research_program_2026-W41_observed_band_results_v65.json)
+contains **142 completed configurations = 84 prior + 58 recurring reviews**,
+60 versions including two old invalid ones, no pending
+actual candidate and no champion.
+The [full source-bound audit](research/workbench/evidence/research_program_source_bound_audit_v39.json)
+reexecutes 58 reviews/232 paths, retaining 19 legacy and 39
+explicit funded-v2 reviews.
+The [preservation proof](research/workbench/evidence/observed_band_20261011_preservation.json)
+keeps all old journal rows/prefix, 69 imported files,
+seven forward profiles and all 3,192 frozen controls.
+
+The [native continuation](research/workbench/evidence/prospective_data_automation_v42.json)
+retains improved modeled execution, five-year passes and
+ten-year failures without changing any qualification gate.
+Daily/weekly cadence, W42 plans, IJR/PKW quota and both
+frozen forward experiments remain; neither experiment has
+an actual return session. These exposed-window gains do not
+establish independent future performance or trading authority.
+**The investment objective remains unmet.**
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
