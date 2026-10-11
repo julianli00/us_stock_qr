@@ -2226,7 +2226,7 @@ retain the original cadence, source boundaries and October 17 queued-family
 eligibility. They do not silently replace the frozen rejected macro
 forward experiment with this historically better sector strategy.
 
-### Dollar funding risk: archived inputs before portfolio outcomes
+### Dollar funding risk: lower drawdown, unresolved ten-year outperformance
 
 The [dollar source audit](research/workbench/evidence/dollar_information_source_admission_20261011.json)
 retains 299 actually acquired official H.10 weekly releases. **298 are
@@ -2271,11 +2271,63 @@ eight constant-scale attribution controls replace each guard with its
 full-window average scheduled exposure; they are hindsight descriptive
 controls, not causal candidates, added strategy trials or holdouts.
 The [pending snapshot](research/workbench/evidence/research_program_2026-W41_dollar_v35.json)
-records **114 completed configurations, 30 reviews and two pending
+recorded **114 completed configurations, 30 reviews and two pending
 candidates**, with no qualified champion. The exact engine migration
 preserves all old records and prospective registration/receipt bytes.
 No new alpha-family definitions, early IJR/PKW admission, prospective
 sector performance, UUP investment, orders or live deployment are claimed.
+Actual source/code/specifications and registration receipts were
+committed and pushed as `a5387f89` before computing the new outcomes.
+
+The [completed results](research/workbench/evidence/dollar_risk_guard_20261011_results.json)
+retain both rejected candidates:
+
+| Guard on the four-factor/SOXX/gold core | Window | Base CAGR / Sharpe / drawdown | Stress CAGR / Sharpe / drawdown |
+|---|---|---|---|
+| Dollar appreciation alone | Ten years | 14.25% / 1.06754 / 13.13% | 13.68% / 1.01924 / 13.26% |
+| Dollar appreciation alone | Five years | 19.09% / 1.18889 / 13.15% | 18.10% / 1.11689 / 13.28% |
+| Dollar and real-yield increase | Ten years | 16.03% / 1.06793 / 17.92% | 15.25% / 1.01243 / 17.74% |
+| Dollar and real-yield increase | Five years | 21.34% / 1.25400 / 13.14% | 20.01% / 1.16687 / 13.28% |
+
+**The dollar-only guard passes every Sharpe and 15% drawdown gate, but
+fails ten-year SPY outperformance under both cost assumptions.** Its
+worst-path Sharpe is 1.01924135 and maximum drawdown 13.28272896%.
+Same-window SPY has 15.46% ten-year base CAGR and 15.41% stress CAGR;
+the strategy cannot qualify by showing only the stronger five-year
+results. It is a more stable research reference, not a qualified champion.
+Requiring real-yield confirmation keeps more market exposure and raises
+five-year returns, but its ten-year drawdown and stressed SPY gates fail.
+Its largest ten-year loss occurs in February-March 2020, outside the
+five-year window. Neither rule guarantees future drawdown or returns.
+
+The [independent attribution](research/workbench/evidence/dollar_risk_guard_20261011_attribution.json)
+reads the actual H.10 tables through a separate parser and selects
+real-yield observations using independently calculated strictly later
+sessions. All 131 risk changes reproduce exactly, and both complete
+2,805-row target matrices agree within 2.23e-16. Eight preregistered
+constant-scale controls also reconcile with independent accounting.
+The dollar-only guard improves net CAGR and Sharpe over its same-average
+scheduled-exposure controls in all four comparisons. The confirmed guard
+has lower ten-year stress Sharpe than its control. These controls use
+full-window mean exposure, not causal signals or matched realized risk;
+positive differences do not establish selection-adjusted alpha.
+
+The [current snapshot](research/workbench/evidence/research_program_2026-W41_results_v36.json)
+records **116 completed configurations, 32 reviews, no pending candidate
+and no qualified champion**. The
+[128-path source audit](research/workbench/evidence/research_program_source_bound_audit_v12.json)
+reexecutes all 19 legacy and 13 version-two reviews without changing any
+previous conclusion. The earlier fixed 22-review joint-selection
+diagnostic excludes the later ten reviews and the original 84 trials.
+The [preservation evidence](research/workbench/evidence/dollar_risk_baseline_preservation_20261011.json)
+checks all 69 imported files, previous 30 reviews and original prospective
+registration/receipt heads. A real continuation-origin daily run at
+03:12:17Z completed all four duplicate/no-new-model-session stages;
+there are still zero observed forward-model sessions.
+The [updated automation receipt](research/workbench/evidence/prospective_data_automation_v13.json)
+keeps daily input collection and the real October 17 weekly discovery
+eligibility. Configuration is not proof of native delivery, and the
+original rejected macro forward experiment is not replaced.
 
 ## Progress and publication
 
