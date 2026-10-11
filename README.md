@@ -4133,6 +4133,63 @@ is not independent alpha or guaranteed 15% drawdown protection.
 At registration there are **zero new strategy outcomes** and no
 investment qualification.
 
+The [completed transfer results](research/workbench/evidence/volatility_transfer_20261011_results.json)
+retain both configurations and all eight original cost/window paths:
+
+| Source/window with original vol12 control | Base net CAGR / Sharpe / drawdown | Stress net CAGR / Sharpe / drawdown |
+|---|---|---|
+| Plain SOXX/factor/gold, ten-year | 13.59% / 0.9557 / 18.76% | 12.93% / 0.8975 / 18.77% |
+| Plain SOXX/factor/gold, five-year | 16.98% / 1.0154 / 19.07% | 16.26% / 0.9652 / 19.06% |
+| Monthly AND source, ten-year | 13.73% / 0.9981 / 18.98% | 13.42% / 0.9699 / 18.86% |
+| Monthly AND source, five-year | 17.16% / 1.0408 / 19.27% | 16.40% / 0.9873 / 19.15% |
+
+Both five-year base paths pass Sharpe and the five-year SPY comparisons;
+five-year stress still beats SPY but misses Sharpe strictly above 1.
+Neither ten-year path passes Sharpe or SPY, and **all drawdown paths
+exceed 15%**. In particular, 0.9981 is not rounded into a passing
+ten-year Sharpe. Risk reduction sacrifices the prior monthly AND
+source's full return/Sharpe passes without bringing drawdown into range.
+No 12% level, covariance window, target band or source weight is retuned.
+
+The [risk-limit interpretation](research/workbench/evidence/volatility_transfer_20261011_risk_limit_diagnostics.json)
+distinguishes desired forecasts, actual held-weight forecasts and
+realized account volatility. The confirmed ten-year base account's
+sample annualized net daily-return volatility is **11.08%**, yet its
+drawdown is **18.98%**. Lower realized volatility does not guarantee
+a 15% maximum loss. That account also has 616 / 2,512 closes where
+the current held-weight, trailing-63-session risk estimate exceeds
+12%, reaching 17.09%; target hysteresis, drift and delayed fills mean
+the desired cap is not a continuously enforced position limit.
+These complete eight-path descriptions are post-outcome observations,
+not extra strategy trials, causal attribution or new optimization.
+
+The [independent account proof](research/workbench/evidence/volatility_transfer_20261011_reproducibility.json)
+checks all 16 funded strategy/SPY and 16 independent `bt` accounts,
+the previously proven 5,454 quadratic projections/event dates,
+empty target rows, independent seeds and all original costs/rates/calendars.
+Prepared versus actual seeded targets agree exactly; maximum
+scalar metric / equity differences are 4.23e-14 / 6.92e-11 USD.
+Both complete joint rejections reproduce.
+
+The [current snapshot](research/workbench/evidence/research_program_2026-W41_vol_results_v53.json)
+contains **130 completed configurations = 84 prior + 46 recurring reviews**,
+48 registered code versions including the two old invalid ones,
+no pending actual candidate and no champion.
+The [full source-bound audit](research/workbench/evidence/research_program_source_bound_audit_v27.json)
+reexecutes 46 reviews / 184 paths, retaining 19 legacy and 27
+explicit funded-v2 outcomes. The [preservation proof](research/workbench/evidence/volatility_transfer_20261011_preservation.json)
+keeps every old journal row/event prefix, 69 imported files, seven
+forward profiles and all 3,192 original control artifacts.
+
+Six definitions / five catalog families, original W42 four plans
+and both frozen forward models remain; neither model has an actual
+return session. Prior selection diagnostics do not include these
+two new trials or the complete search.
+The [native continuation](research/workbench/evidence/prospective_data_automation_v36.json)
+retains both failed transfers and the distinction between variance
+targeting and drawdown protection, without weakening the joint goals
+or changing forward rules. **The investment objective remains unmet.**
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

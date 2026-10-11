@@ -1,0 +1,100 @@
+{
+  "actual_holding_forecast_is_realized_volatility_or_a_guaranteed_ceiling": false,
+  "actual_holding_forecasts_independently_use63observed_returns_at_each_close": true,
+  "cash_has_zero_observed_risk_and_bil_remains_actual_fund": true,
+  "checked_at": "2026-10-11T13:04:24.235908+00:00",
+  "description_used_to_retune_target_band_or_window": false,
+  "desired_targets_have_original12percent_covariance_projection": true,
+  "investment_objective_verified": false,
+  "new_registered_candidates": 0,
+  "new_strategy_evaluations": 0,
+  "old_accounts_or_gate_decisions_rewritten": false,
+  "order_authority": false,
+  "past_covariance_target_guarantees_fifteen_percent_drawdown": false,
+  "paths": [
+    {
+      "actual_held_close_forecast_sessions_above12percent": 647,
+      "candidate_id": "semiconductor_fixed_vol12",
+      "complete_return_sessions": 2512,
+      "maximum_actual_held_close_forecast_volatility": 0.17086557009884515,
+      "observed_max_drawdown": 0.18762334611060183,
+      "realized_sample_annualized_net_daily_return_volatility": 0.11486141351266248,
+      "scenario": "base",
+      "years": 10
+    },
+    {
+      "actual_held_close_forecast_sessions_above12percent": 667,
+      "candidate_id": "semiconductor_fixed_vol12",
+      "complete_return_sessions": 2512,
+      "maximum_actual_held_close_forecast_volatility": 0.17480155670409556,
+      "observed_max_drawdown": 0.18772000997549898,
+      "realized_sample_annualized_net_daily_return_volatility": 0.11594503226208147,
+      "scenario": "stress",
+      "years": 10
+    },
+    {
+      "actual_held_close_forecast_sessions_above12percent": 461,
+      "candidate_id": "semiconductor_fixed_vol12",
+      "complete_return_sessions": 1254,
+      "maximum_actual_held_close_forecast_volatility": 0.1708655700988452,
+      "observed_max_drawdown": 0.19065504321126214,
+      "realized_sample_annualized_net_daily_return_volatility": 0.124955838385534,
+      "scenario": "base",
+      "years": 5
+    },
+    {
+      "actual_held_close_forecast_sessions_above12percent": 478,
+      "candidate_id": "semiconductor_fixed_vol12",
+      "complete_return_sessions": 1254,
+      "maximum_actual_held_close_forecast_volatility": 0.16505935273174857,
+      "observed_max_drawdown": 0.19064627111932675,
+      "realized_sample_annualized_net_daily_return_volatility": 0.12508254047378548,
+      "scenario": "stress",
+      "years": 5
+    },
+    {
+      "actual_held_close_forecast_sessions_above12percent": 616,
+      "candidate_id": "semiconductor_monthly_confirmation_fixed_vol12",
+      "complete_return_sessions": 2512,
+      "maximum_actual_held_close_forecast_volatility": 0.17086557009884515,
+      "observed_max_drawdown": 0.18983749143973827,
+      "realized_sample_annualized_net_daily_return_volatility": 0.11079695956464164,
+      "scenario": "base",
+      "years": 10
+    },
+    {
+      "actual_held_close_forecast_sessions_above12percent": 634,
+      "candidate_id": "semiconductor_monthly_confirmation_fixed_vol12",
+      "complete_return_sessions": 2512,
+      "maximum_actual_held_close_forecast_volatility": 0.1650593527317486,
+      "observed_max_drawdown": 0.18863741662265288,
+      "realized_sample_annualized_net_daily_return_volatility": 0.11115984457531045,
+      "scenario": "stress",
+      "years": 10
+    },
+    {
+      "actual_held_close_forecast_sessions_above12percent": 438,
+      "candidate_id": "semiconductor_monthly_confirmation_fixed_vol12",
+      "complete_return_sessions": 1254,
+      "maximum_actual_held_close_forecast_volatility": 0.17086557009884515,
+      "observed_max_drawdown": 0.19268429664613507,
+      "realized_sample_annualized_net_daily_return_volatility": 0.1232262366993478,
+      "scenario": "base",
+      "years": 5
+    },
+    {
+      "actual_held_close_forecast_sessions_above12percent": 453,
+      "candidate_id": "semiconductor_monthly_confirmation_fixed_vol12",
+      "complete_return_sessions": 1254,
+      "maximum_actual_held_close_forecast_volatility": 0.1650593527317486,
+      "observed_max_drawdown": 0.19153384753679747,
+      "realized_sample_annualized_net_daily_return_volatility": 0.12324409922842976,
+      "scenario": "stress",
+      "years": 5
+    }
+  ],
+  "raw_prices_or_holding_forecast_time_series_published": false,
+  "schema_version": 1,
+  "scope": "post_outcome_descriptive_risk_limit_interpretation_not_new_controls_or_candidates",
+  "verified_complete_source_results_sha256": "d0c34716540e8bb3eebe0dce98af10136472b7e93366684c82d2248321561b7b"
+}
