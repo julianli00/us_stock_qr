@@ -1,0 +1,87 @@
+{
+  "VIX9D_calendar_horizon_days": 9,
+  "VVIX_admitted": false,
+  "W42_or_frozen_forward_rules_changed": false,
+  "actual_new_source_csv_first_date": "2011-01-04",
+  "advertised_primary_host_used_before_any_new_series_request": true,
+  "checked_at": "2026-10-11T22:00:37.442632+00:00",
+  "current_primary_instrument_contract_selection_quote_and_session_definitions_verified": true,
+  "existing_comparator_or_document_requests": 0,
+  "existing_comparator_quote_versions_unchanged": true,
+  "existing_option_timing_compatibility_test_cases_passed": 25,
+  "first_value_equals_live_launch_claimed": false,
+  "full_source_readiness": true,
+  "independent_aligned_closes_checked": 8415,
+  "independent_native_close_maximum_error": 0.0,
+  "independent_raw_close_rows_checked": 17547,
+  "independent_verifier_sha256": "0379818dde02248e7a91b69cbe265515fc59a07707564476640e6603a54990c7",
+  "investment_objective_verified": false,
+  "new_registered_candidates": 0,
+  "new_registered_factor_definitions": 0,
+  "new_source_csv_requests": 1,
+  "new_source_target_horizon_is_nyse_sessions": false,
+  "new_strategy_evaluations": 0,
+  "old_acquired_at_values_changed": false,
+  "order_authority": false,
+  "original_intraday_first_publication_or_complete_methodology_continuity_verified": false,
+  "policy": {
+    "path": "config/near-term-volatility-inputs.json",
+    "sha256": "272c3645e93b36b68491b1c54ca5a993133e74c601805d2b328f4edfe100d443"
+  },
+  "primary_first_value_month": "2011-01",
+  "primary_launch_month": "2013-10",
+  "primary_methodology_pdf_pages": 26,
+  "private_aligned_closes": {
+    "path": "data/near-term-volatility-inputs-20261011/closes.csv",
+    "sha256": "5ecb57cff52783110bef3a85cc647784b1b281b6866e19f5580477224b162973"
+  },
+  "private_source_manifest": {
+    "path": "data/near-term-volatility-inputs-20261011/manifest.json",
+    "sha256": "b7a15957670f23d7984098d212c87fde41c39b7a501d50ab28321cba8deda1ff"
+  },
+  "required_market_context_sessions": 2805,
+  "schema_version": 1,
+  "source_contract_test_cases_passed": 25,
+  "source_metadata": [
+    {
+      "acquired_at": "2026-10-11T21:57:20.499865+00:00",
+      "acquisition_date_limit": "2026-10-11",
+      "first_date": "2011-01-04",
+      "last_date": "2026-10-09",
+      "path": "data/near-term-volatility-inputs-20261011/VIX9D.csv",
+      "request_path": "data/near-term-volatility-inputs-20261011/VIX9D.request.json",
+      "request_sha256": "994fe16d03a02d5268253df1ee8f6ad488723871843c10ffbcdbf88eae391c16",
+      "rows": 3965,
+      "series": "VIX9D",
+      "sha256": "9c2476680030afa10a7008764b70865094ec97f2fa64e5113f0f0216506bb89a",
+      "url": "https://cdn-api.cboe.com/api/global/us_indices/daily_prices/VIX9D_History.csv"
+    },
+    {
+      "acquired_at": "2026-10-10T15:21:41.648491+00:00",
+      "acquisition_date_limit": "2026-10-10",
+      "first_date": "1990-01-02",
+      "last_date": "2026-10-09",
+      "path": "data/volatility-term-source-20261010/VIX.csv",
+      "rows": 9291,
+      "series": "VIX",
+      "sha256": "51ea1e59bfeaf400f6816300c39145df5e3fb437e7c60bdb8ca2178f8c96f436",
+      "url": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv"
+    },
+    {
+      "acquired_at": "2026-10-10T15:21:42.194754+00:00",
+      "acquisition_date_limit": "2026-10-10",
+      "first_date": "2009-09-18",
+      "last_date": "2026-10-09",
+      "path": "data/volatility-term-source-20261010/VIX3M.csv",
+      "rows": 4291,
+      "series": "VIX3M",
+      "sha256": "f706a0f3b2adb442676514682cabf47556c43a6d465498a7d6da463cc3361281",
+      "url": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX3M_History.csv"
+    }
+  ],
+  "source_or_transport_changed_after_access_refusal": false,
+  "source_validator_sha256": "62f4242c196fc5fefdc21cb334393ab37ba3cfbd13279e7da68ab74fb5de6bc2",
+  "spot_index_values_are_traded_returns_or_independent_alpha": false,
+  "status": "complete_near_term_source_independently_verified",
+  "strategy_states_targets_or_returns_computed": false
+}

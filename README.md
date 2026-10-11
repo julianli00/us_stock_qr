@@ -5840,6 +5840,68 @@ models, which still have zero actual return sessions.
 No threshold, horizon, scale, source or execution rule is refitted.
 **The full investment objective remains unmet.**
 
+## Nine-day option confirmation: verified source and actual registration
+
+The [source-only policy](research/workbench/config/near-term-volatility-inputs.json)
+and [independent source proof](research/workbench/evidence/near_term_volatility_input_readiness_20261011.json)
+add the actual Cboe VIX9D closing series.
+The first ordinary request uses the exact `cdn-api.cboe.com` URL advertised
+by the already acquired official history page, not a host fallback.
+Original VIX/VIX3M CSVs, acquisition timestamps and primary documents
+are reused unchanged. All 8,415 closing values across the original
+2,805 NYSE context days are independently checked with zero numeric error;
+the complete raw histories contain 17,547 closing rows.
+
+The actual VIX9D CSV starts January 4, 2011.
+The primary methodology distinguishes a January 2011 first-value month
+from an October 2013 launch month. Its target is nine calendar days,
+using SPX/end-of-week SPXW contracts, nearest-term selection, midpoint
+quotes and the stated regular-session dissemination.
+These annualized expected-volatility levels are not traded returns.
+Current documents/downloads do not authenticate all historical revisions,
+original intraday first-publication times or a complete methodology chain.
+VVIX is not admitted.
+The [source preservation proof](research/workbench/evidence/near_term_volatility_input_preservation_20261011.json)
+records no strategy state, target, account, definition or engine migration
+at that source-only checkpoint.
+
+The separately [frozen strategy policy](research/workbench/config/near-term-risk-confirmation.json)
+compares monthly and daily confirmation of the already recorded monthly
+positive dollar regime using actual VIX9D greater than or equal to actual VIX.
+Only that conjunction halves all original non-BIL four-style/SOXX/gold
+targets into BIL. Original allocation construction, threshold one,
+half scale, capital and fees remain. The daily method emits on monthly
+updates or binary-state changes; no event means no request, not a new
+daily allocation. Dated queued requests cannot be retrospectively replaced.
+
+The [generator](research/workbench/src/us_quant/near_term_risk_confirmation.py)
+reuses the immutable joint-confirmation event primitive.
+Its legacy internal near/far labels explicitly map to VIX9D/VIX;
+raw and prepared matrices retain genuine VIX9D/VIX/VIX3M names.
+The real three-month series is an unchanged source comparator, not the
+new far leg. This adapter neither rewrites old code nor relabels old results.
+Independent checks compare raw named closes directly, without the adapter.
+
+The [pre-account proof](research/workbench/evidence/near_term_confirmation_20261011_pre_account_verification.json)
+verifies 8,415 named option inputs, 131 published H10 pairs,
+131 scalar original budgets and eight complete window/cost-seeded paths.
+Monthly confirmation has 131 targets/20 risk-off decisions;
+daily confirmation has 345 targets, 409 observed risk-off sessions
+and 214 non-monthly events. Source error is 3.02e-16,
+budget/target error 7.22e-16 and seeded replay error zero.
+These counts are signal/target diagnostics, not performance.
+
+The [actual packet](research/workbench/evidence/near_term_confirmation_20261011_registration.json),
+[registration preservation](research/workbench/evidence/near_term_confirmation_20261011_registration_preservation.json)
+and [registered snapshot](research/workbench/evidence/research_program_2026-W41_near_term_registered_v80.json)
+retain 156 completed configurations/72 reviews, 76 versions including
+two old invalid ones and two pending candidates.
+One exact engine migration preserves all old records, seven profiles,
+69 imports, 3,192 controls and W42 plans.
+An old-commit evaluation is blocked before account creation.
+**No new candidate returns or metrics exist at registration;
+remote publication must precede the funded/bt evaluation.**
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

@@ -49,6 +49,7 @@ GENERATORS = {
     "activity_factor_guard": "config/activity-factor-guard.json",
     "activity_gold_trend": "config/activity-gold-trend.json",
     "curve_transition_guard": "config/curve-transition-guard.json",
+    "near_term_risk_confirmation": "config/near-term-risk-confirmation.json",
 }
 
 
@@ -420,6 +421,19 @@ def registered_generator(spec: dict, root: Path) -> tuple[str, dict]:
                 "src/us_quant/macro_factor_tilt.py", "src/us_quant/inflation_inputs.py",
                 "src/us_quant/financial_conditions_guard.py", "src/us_quant/calendar.py", "src/us_quant/storage.py",
             ]
+        elif name == "near_term_risk_confirmation":
+            required += [
+                "src/us_quant/near_term_volatility_inputs.py", "config/near-term-volatility-inputs.json",
+                "evidence/near_term_volatility_input_readiness_20261011.json",
+                "data/near-term-volatility-inputs-20261011/manifest.json",
+                "data/near-term-volatility-inputs-20261011/VIX9D.csv",
+                "src/us_quant/joint_risk_confirmation.py", "config/joint-risk-confirmation.json",
+                "src/us_quant/sector_term_guard.py", "config/sector-term-guard.json",
+                "evidence/sector_term_guard_20261011_registration.json",
+                "src/us_quant/dollar_risk_guard.py", "config/dollar-risk-guard.json",
+                "src/us_quant/sector_growth_balance.py", "config/sector-growth-balance.json",
+                "src/us_quant/calendar.py", "src/us_quant/storage.py",
+            ]
         if any(relative not in frozen for relative in required):
             raise QuantError("The registered strategy is missing a frozen helper dependency.")
         for relative in required:
@@ -590,6 +604,10 @@ def registered_targets(
             cache[key] = build_targets(data, policy)[spec["id"]]
         elif name == "curve_transition_guard":
             from us_quant.curve_transition_guard import build_targets
+
+            cache[key] = build_targets(data, policy)[spec["id"]]
+        elif name == "near_term_risk_confirmation":
+            from us_quant.near_term_risk_confirmation import build_targets
 
             cache[key] = build_targets(data, policy)[spec["id"]]
         elif name == "sector_term_guard":
