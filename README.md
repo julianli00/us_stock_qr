@@ -6072,6 +6072,55 @@ retain daily/weekly cadence and both unchanged forward models,
 which still have zero actual return sessions.
 **The full investment objective remains unmet.**
 
+## Current selection audit: fixed accounting cohorts, outcomes pending
+
+The [new dated policy](research/workbench/config/selection-accounting-cohorts.json)
+and [adapter](research/workbench/src/us_quant/selection_accounting_cohorts.py)
+include all 76 actual recurring reviews without selecting by performance.
+They split the records by original accounting identity:
+19 legacy-original records and 57 explicit funded-v2 records.
+Legacy results are described under their original engine; they are not
+repaired, pooled into current funded performance or treated as fresh trials.
+Two terminally invalid code versions have no accepted four-path accounts.
+The earlier 84 configurations and unknown research choices remain outside
+this inference.
+
+Reuse the unchanged positive-part maximum mean daily log-growth advantage
+against actual SPY accounts, with all three original base/base,
+stress/stress and stress/base comparisons.
+Each cohort/horizon cell has 57 or 171 columns.
+There are four fixed cells across the overlapping ten-year/five-year windows.
+The inherited 4,000 synchronous 21-session circular-block resamples and
+seed 20261011/20261012 remain; both cohorts use the same sampled dates
+within each horizon. No candidate, horizon or accounting-cell independence
+is assumed. Allocate the 5% familywise error as 1.25% per cell,
+and use the capped four-times-minimum omnibus p-value across cells.
+This is conditional inference on existing net return paths, not a simulated
+trading account, Sharpe/drawdown qualification or a future profit probability.
+
+The [actual registration](research/workbench/evidence/selection_accounting_20261011_registration.json)
+freezes all original bundle/review digests and cohort IDs before joint
+resampling. The
+[preservation proof](research/workbench/evidence/selection_accounting_20261011_registration_preservation.json)
+retains 26 old selection code/policy/private/evidence artifacts,
+every current journal row, engine/event head, seven forward profiles,
+69 imports and 3,192 controls. An old-commit run is blocked before
+matrix construction or resampling.
+A private self-check initially expected different error wording;
+its code/logs remain, and only that verifier expectation was corrected.
+The publication guard, statistical method, sources and registered settings
+were not changed.
+
+**No new joint statistical outcomes have been calculated at registration.**
+Remote publication of this packet, code, policy and source bindings
+must precede the four-cell computation.
+Counts remain 160 completed configurations/76 recurring reviews,
+78 versions, no pending strategy candidate and no qualified champion.
+The old 22/36-candidate results retain their original scope and bytes;
+this new study does not silently extend their p-values.
+No new accounts, strategy/factor definitions, engine migration or forward
+days are created, and the investment objective remains unmet.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
