@@ -2343,7 +2343,7 @@ snapshot's original bytes and acquisition times, then genuinely acquires
 QQQ, XLK, SOXX and the official H.10 vintages needed by the latest completed
 month. Real source preflight verified all three quotes and four required
 weekly releases. Its 502 historical context rows are **not** prospective
-observations; at registration the new archive has no snapshots or returns.
+observations; at registration the new archive had no snapshots or returns.
 Current FRED dollar CSVs are not substituted for archived publications.
 The original collector, targets, model and imported files remain unchanged.
 
@@ -2360,13 +2360,48 @@ is a future return observation.
 
 ```bash
 cd research/workbench
-.venv/bin/python -I -B -m us_quant.prospective_dollar_guard collect-inputs
-# Target and model initialization are explicit, once-only registration steps.
+# All directories are now registered. Do not repeat any init action.
+.venv/bin/python -I -B -m us_quant.research_daily --origin session_automation && \
+  .venv/bin/python -I -B -m us_quant.prospective_dollar_guard daily --origin session_automation
 ```
 
 All registration, source and failure artifacts are retained in their
 separate directories. No existing archive is reset. The original
 daily pipeline and October 17 factor-definition eligibility are unchanged.
+
+The source/profile and actual input registration were committed and pushed
+as `290aa686` before the
+[real baseline capture](research/workbench/evidence/prospective_dollar_guard_v1_baseline.json).
+The separate October 9 baseline was genuinely acquired October 11 at
+03:44:03.696386Z, inheriting all 35 matching parent files with their original
+October 10 acquisition times. Only the additional quotes and official
+H.10 releases receive new acquisition timestamps. This is one baseline,
+not a second or third independent market day.
+
+The first target was actually recorded at 03:44:05.942057Z from the
+September 30 rule month. **It is not backdated to September 30.**
+Its own captured-source replay and independent scalar budget agree
+exactly. The
+[separate research model](research/workbench/evidence/prospective_dollar_guard_v1_model_registration.json)
+was registered at 03:44:06.941079Z, before the earliest possible
+October 12 13:30Z opening. Base/stress strategy and SPY model accounts
+each anchor USD 10,000; all have **zero observed model sessions** and
+null return, Sharpe, CAGR and drawdown. These are neither broker accounts
+nor executed trades. The minimum reporting window remains 63 actually
+observed model sessions, not downloaded historical rows.
+
+The [preservation audit](research/workbench/evidence/prospective_dollar_guard_v1_preservation.json)
+checks all original/new control heads, all 69 imported files and unchanged
+116 completed historical configurations. The original macro and separate
+dollar pipelines genuinely ran at 03:45Z with four duplicate/no-new-model
+actions each; no extra data day or account return was invented.
+The [updated automation instructions](research/workbench/evidence/prospective_data_automation_v14.json)
+run the original pipeline first and the separate dollar pipeline only
+after it succeeds. Actual native delivery remains unverified.
+The first normal capture opportunity for an October 12 U.S. model
+session is October 13 morning in China; October 12 morning still sees
+the October 9 baseline. The historical SPY gate still fails, no champion
+is promoted, and the investment objective remains incomplete.
 
 ## Progress and publication
 
