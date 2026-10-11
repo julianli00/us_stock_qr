@@ -5952,6 +5952,70 @@ keep daily/weekly cadence, original W42 plans and frozen forward models.
 Both forward models still have zero actual return sessions.
 **The full investment objective remains unmet.**
 
+## Gold/equity option risk budgets: monthly inputs, preregistered rules
+
+The [gold-option source policy](research/workbench/config/gold-volatility-inputs.json)
+and [independent coverage proof](research/workbench/evidence/gold_volatility_input_readiness_20261011.json)
+preserve one ordinary advertised GVZ CSV request and six new primary
+document requests, with no replacement or refetch of the old VIX comparator.
+GVZ has the actual native `DATE,GVZ` schema, not assumed OHLC fields.
+All 13,580 raw GVZ/VIX quotes and 5,606 finite aligned daily inputs
+match independent parsing exactly.
+
+**Full daily GVZ readiness is false.** The advertised history is missing
+December 3, 2018; February 20 and July 5, 2019; and October 16, 2020.
+Those four cells remain missing in the full 2,805-NYSE-day context.
+No filling, copied VIX quote, removed return day or silent standby repairs
+the source. All 131 original completed-month queries nevertheless have
+actual GVZ/VIX observations: all 262 monthly inputs are independently verified.
+Monthly query availability is a narrower contract, not daily readiness.
+The [source preservation proof](research/workbench/evidence/gold_volatility_input_preservation_20261011.json)
+records no source-stage signal, target, account, event or migration.
+
+Current primary methodology identifies GVZ as 30-calendar-day expected
+GLD-option volatility, using monthly PM-settled third-Friday contracts,
+nearest-term selection, NBBO and midpoint quotes.
+Its revision is March 30, 2026, version 9.0.
+The current table lists first values before 2008 and launch in 2008,
+while the actual advertised CSV starts September 18, 2009.
+The April 2011 circular concerns the planned option-contract launch,
+not the spot index launch. The 2022 C1-to-NBBO consultation is a proposal,
+not proof of an implementation date; the published 2024 filtering results
+notice identifies July 8, 2024 as its effective date.
+These documents do not authenticate the full historical methodology chain
+or original intraday first publication. Spot index levels are not traded returns.
+
+The separately [frozen strategy policy](research/workbench/config/implied-risk-balance.json)
+uses those actual original month-end inputs.
+Equity receives GVZ divided by GVZ plus VIX, clamped to the unchanged
+30%-70% bounds; the remaining invested capital stays in GLD.
+Preserve the original equal-four-style half of equity and SOXX's other half,
+98% funded total, original monthly clock, capital and costs.
+Compare the plain budget with the original monthly positive-dollar
+half-risk guard. Neither config adds daily rules, covariance/beta fitting,
+option trades, extra filters or new factor families.
+VIX is SPX-option risk, not the concentrated stock sleeve's certified risk;
+this is a proxy-budget hypothesis, not exact portfolio risk parity.
+
+The [pre-account proof](research/workbench/evidence/implied_risk_20261011_pre_account_verification.json)
+checks all 262 native monthly quotes, 131 actual H10 pairs,
+131 independent original budgets and eight complete seeded paths.
+Both retain 131 targets, zero lower-bound clamps and one upper-bound clamp;
+the guarded view has 74 half-risk months.
+Source, new-target and seeded errors are at most 3.02e-16, 1.11e-16
+and zero. The four daily source gaps are not filled or used as target dates.
+
+The [actual packet](research/workbench/evidence/implied_risk_20261011_registration.json),
+[registration preservation](research/workbench/evidence/implied_risk_20261011_registration_preservation.json)
+and [registered snapshot](research/workbench/evidence/research_program_2026-W41_implied_risk_registered_v82.json)
+retain 158 completed configurations/74 reviews, 78 versions including two
+old invalid ones and two pending candidates.
+One exactly anchored engine migration preserves prior rows, seven forward
+profiles, 69 imports, 3,192 controls and original W42 plans.
+Old-commit evaluation is blocked before creating account output.
+**No new candidate returns or metrics exist at registration;
+remote publication must precede funded/bt evaluation.**
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

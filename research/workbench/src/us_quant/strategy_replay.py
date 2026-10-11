@@ -50,6 +50,7 @@ GENERATORS = {
     "activity_gold_trend": "config/activity-gold-trend.json",
     "curve_transition_guard": "config/curve-transition-guard.json",
     "near_term_risk_confirmation": "config/near-term-risk-confirmation.json",
+    "implied_risk_balance": "config/implied-risk-balance.json",
 }
 
 
@@ -434,6 +435,18 @@ def registered_generator(spec: dict, root: Path) -> tuple[str, dict]:
                 "src/us_quant/sector_growth_balance.py", "config/sector-growth-balance.json",
                 "src/us_quant/calendar.py", "src/us_quant/storage.py",
             ]
+        elif name == "implied_risk_balance":
+            required += [
+                "src/us_quant/gold_volatility_inputs.py", "config/gold-volatility-inputs.json",
+                "src/us_quant/near_term_volatility_inputs.py",
+                "evidence/gold_volatility_input_readiness_20261011.json",
+                "data/gold-volatility-inputs-20261011/manifest.json",
+                "data/gold-volatility-inputs-20261011/GVZ.csv",
+                "evidence/dollar_risk_guard_20261011_registration.json",
+                "src/us_quant/dollar_risk_guard.py", "config/dollar-risk-guard.json",
+                "src/us_quant/sector_growth_balance.py", "config/sector-growth-balance.json",
+                "src/us_quant/calendar.py", "src/us_quant/storage.py",
+            ]
         if any(relative not in frozen for relative in required):
             raise QuantError("The registered strategy is missing a frozen helper dependency.")
         for relative in required:
@@ -608,6 +621,10 @@ def registered_targets(
             cache[key] = build_targets(data, policy)[spec["id"]]
         elif name == "near_term_risk_confirmation":
             from us_quant.near_term_risk_confirmation import build_targets
+
+            cache[key] = build_targets(data, policy)[spec["id"]]
+        elif name == "implied_risk_balance":
+            from us_quant.implied_risk_balance import build_targets
 
             cache[key] = build_targets(data, policy)[spec["id"]]
         elif name == "sector_term_guard":
