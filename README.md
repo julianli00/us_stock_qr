@@ -5840,7 +5840,7 @@ models, which still have zero actual return sessions.
 No threshold, horizon, scale, source or execution rule is refitted.
 **The full investment objective remains unmet.**
 
-## Nine-day option confirmation: verified source and actual registration
+## Nine-day option confirmation: complete source, rejected strategies
 
 The [source-only policy](research/workbench/config/near-term-volatility-inputs.json)
 and [independent source proof](research/workbench/evidence/near_term_volatility_input_readiness_20261011.json)
@@ -5901,6 +5901,56 @@ One exact engine migration preserves all old records, seven profiles,
 An old-commit evaluation is blocked before account creation.
 **No new candidate returns or metrics exist at registration;
 remote publication must precede the funded/bt evaluation.**
+
+Actual remote publication
+`168baf59dc4b0f3f77bf32d54d74a3605a095fc4` precedes the durable
+22:15:33.631239UTC fence and both account calculations.
+The [independently verified results](research/workbench/evidence/near_term_confirmation_20261011_results.json)
+retain all four paths for each timing:
+
+| Timing | Window | Costs | CAGR | Net excess Sharpe | Maximum drawdown |
+|---|---|---|---:|---:|---:|
+| Monthly | 10y | Base | 15.7875% | 0.99460 | 21.3078% |
+| Monthly | 10y | Stress | 15.1371% | 0.95073 | 22.3830% |
+| Monthly | 5y | Base | 20.5485% | 1.03539 | 21.5370% |
+| Monthly | 5y | Stress | 19.2524% | 0.96476 | 22.6130% |
+| Daily option | 10y | Base | 14.7096% | 0.93572 | 19.2682% |
+| Daily option | 10y | Stress | 10.8437% | 0.67267 | 22.8786% |
+| Daily option | 5y | Base | 19.5407% | 1.00900 | 19.8821% |
+| Daily option | 5y | Stress | 15.8012% | 0.80002 | 23.2820% |
+
+**All eight 15% drawdown gates fail and both configurations are rejected.**
+All ten-year Sharpe gates fail; 0.9945966 cannot be rounded into a pass.
+Both five-year base Sharpe gates pass, but neither stress Sharpe does.
+Monthly confirmation beats ten-year base-cost SPY but misses the stress
+comparison; daily confirmation misses both ten-year SPY comparisons.
+The five-year return passes do not qualify either full four-path portfolio.
+
+The [reproducibility proof](research/workbench/evidence/near_term_confirmation_20261011_reproducibility.json)
+checks genuine named option closes, original H10 pairs, every dated risk
+request and seed, 16 funded strategy/SPY accounts and 16 independent bt
+accounts over 30,128 funding/cash-flow days.
+Target, metric and account wealth errors are at most 1.11e-16,
+3.38e-14 and USD9.46e-11.
+The [descriptive comparison](research/workbench/evidence/near_term_confirmation_20261011_horizon_comparison.json)
+reads eight already-frozen same-timing VIX/VIX3M accounts without
+calculating new accounts or trials. New nine-day CAGR and Sharpe are lower
+in all eight comparisons. Daily ten-year stress orders increase from
+1,209 to 2,135 and actual fees from USD3,749.59 to USD7,690.85.
+This is not an equal-risk or causal cost decomposition, nor a reason to
+refit thresholds, horizons or fees after exposure.
+
+The [current snapshot](research/workbench/evidence/research_program_2026-W41_near_term_results_v81.json)
+contains **158 completed configurations = 84 prior + 74 recurring reviews**,
+76 versions including two old invalid ones, no pending candidate and no champion.
+The [full source-bound audit](research/workbench/evidence/research_program_source_bound_audit_v53.json)
+reexecutes all 74 reviews/296 paths, with 19 legacy and 55 funded-v2 reviews.
+The [preservation proof](research/workbench/evidence/near_term_confirmation_20261011_preservation.json)
+retains every prior row, seven forward profiles, 69 imports and 3,192 controls.
+The [updated native instructions](research/workbench/evidence/prospective_data_automation_v53.json)
+keep daily/weekly cadence, original W42 plans and frozen forward models.
+Both forward models still have zero actual return sessions.
+**The full investment objective remains unmet.**
 
 ## Progress and publication
 
