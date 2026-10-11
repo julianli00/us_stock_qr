@@ -3420,6 +3420,56 @@ the four W42 candidates, all failures and qualification goals remain.
 At registration, no new control outcome or investment qualification
 is claimed.
 
+The [completed results](research/workbench/evidence/equity_budget_attribution_20261011_results.json)
+contain all **144 paired comparisons**, with 144 reaccounted original
+legs and 144 derived SPY-budget legs, each separately rebuilt in `bt`.
+Original sleeves exceed the control's net CAGR in **66/144** comparisons
+and Sharpe in **63/144**; only 15 of 36 source rules exceed control CAGR
+on all four paths. These overlapping horizons/cost scenarios are not
+144 independent observations or evidence of universally useful factors.
+
+The preregistered dollar-guard reference illustrates a real but
+limited equity-sleeve contribution:
+
+| Window/cost | Source rule CAGR / Sharpe | Same-budget SPY control CAGR / Sharpe |
+|---|---|---|
+| Ten-year base | 14.25% / 1.0675 | 10.59% / 0.8897 |
+| Ten-year stress | 13.68% / 1.0192 | 9.92% / 0.8214 |
+| Five-year base | 19.09% / 1.1889 | 14.20% / 1.0019 |
+| Five-year stress | 18.10% / 1.1169 | 13.05% / 0.8994 |
+
+Its combined style/semiconductor sleeve adds approximately
+3.66–5.05 percentage points of net CAGR versus this budget control,
+but increases drawdown by approximately 1.05–1.07 points and incurs
+more orders/fees. The unguarded SOXX reference also exceeds its budget
+control but still fails the original drawdown limit. The real-yield
+tilt's CAGR difference is much smaller: approximately −0.025 to
+0.338 percentage points across the four paths.
+This does not isolate a particular equity factor or prove causal alpha.
+The dollar guard **still misses full-SPY ten-year outperformance**;
+its better budget-control comparison does not change qualification.
+
+The [independent verification](research/workbench/evidence/equity_budget_attribution_20261011_reproducibility.json)
+checks every control weight with scalar Decimal sums and every account's
+window, costs and metrics. Maximum weight/metric differences are
+1.3e-16 / 1.06e-14; independent `bt` equity differences are below
+1.82e-10 USD. The [CSV-read precision check](research/workbench/evidence/equity_budget_attribution_20261011_read_precision.json)
+explains the runtime's at-most 7.28e-12 USD comparison difference:
+the saved original and reaccounted equity paths agree exactly when
+read with the same parser. This is not an accounting improvement
+or a rewritten historical outcome.
+
+The [preservation proof](research/workbench/evidence/equity_budget_attribution_20261011_preservation.json)
+retains all 120 strategy configurations/36 reviews, 69 imported files,
+seven forward profiles and the exact journal/engine/head.
+All 36 new **descriptive controls** and 144 pairwise results are disclosed
+separately; none is promoted or added to the trading-candidate catalog.
+Original selection diagnostics do not correct these new controls,
+and both forward models still have zero observed return sessions.
+The [updated native instructions](research/workbench/evidence/prospective_data_automation_v30.json)
+retain the original weekly queue, costs and goals. The investment
+objective remains unmet.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
