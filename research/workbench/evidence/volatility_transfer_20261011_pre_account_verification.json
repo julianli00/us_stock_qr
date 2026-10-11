@@ -1,0 +1,68 @@
+{
+  "all_forecasts_at_most12percent_without_upscaling_or_discarding_source_bills": true,
+  "all_old_records_and_forward_control_bytes_unchanged_before_migration": true,
+  "all_original_nondecisions_warmup_and_source_calendars_preserved": true,
+  "candidate_returns_or_metrics_computed": false,
+  "checked_at": "2026-10-11T12:47:41.482146+00:00",
+  "complete_original_source_paths_checked": 8,
+  "full_market_rows": 2805,
+  "full_prepared_target_sha256": {
+    "semiconductor_fixed_vol12": "1f877683a75a61f81fbfc8514caaa3b343a86fbd6cd4687546f03a56d0d6fce3",
+    "semiconductor_monthly_confirmation_fixed_vol12": "68fda91ff4ab5aa5facf810ac8a9728b3425311c5ff433561a39073a271a888a"
+  },
+  "independent_daily_quadratic_volatility_projections": 5454,
+  "investment_objective_verified": false,
+  "maximum_independent_forecast_volatility_error": 3.885780586188048e-16,
+  "maximum_independent_projected_target_error": 2.7755575615628914e-15,
+  "maximum_original_seeded_source_error": 0.0,
+  "new_registered_candidates": 0,
+  "new_source_quote_requests": 0,
+  "new_strategy_evaluations": 0,
+  "order_authority": false,
+  "original_63session_12percent_5point_band_parameters_preserved": true,
+  "original_monthly_allocations_per_source": 131,
+  "original_source_bundle_references": [
+    {
+      "original_bundle_reference": {
+        "path": "reports/sector-growth-balance-20261011/four_factor_semiconductor_sector50/bundle.json",
+        "sha256": "94f70da5beff41b3c0165ed215ac5f7a326310c8e891b8d8d40f355f2dacd469"
+      },
+      "source_candidate_id": "four_factor_semiconductor_sector50"
+    },
+    {
+      "original_bundle_reference": {
+        "path": "reports/joint-risk-confirmation-20261011/semiconductor_dollar_term_monthly_confirmation/bundle.json",
+        "sha256": "69511116df34e4ee7e586bc039a85b4adb682b118a99a5fd4e256524dc82139f"
+      },
+      "source_candidate_id": "semiconductor_dollar_term_monthly_confirmation"
+    }
+  ],
+  "prepared_candidates": [
+    "semiconductor_fixed_vol12",
+    "semiconductor_monthly_confirmation_fixed_vol12"
+  ],
+  "prepared_spec_sha256": {
+    "semiconductor_fixed_vol12": "db22ef957f98579cd8b0aa26c206e896d841cfe969b2fbfd5b9c8185fa005f03",
+    "semiconductor_monthly_confirmation_fixed_vol12": "d38bc044d6772270a887587f749ca09bf52acb464258cc9114bf86b0df3036a4"
+  },
+  "preserved_verifier_writer_failure_sha256": "5c565e672f8239538a2792a8591b23613f79cd90d8c737613d1a3d96be0dec7c",
+  "quadratic_scalar_projection_does_not_call_production_covariance_or_cap_helper": true,
+  "schema_version": 1,
+  "source_assets": 12,
+  "target_change_band_is_actual_position_or_continuous_risk_guarantee": false,
+  "verified_target_and_projection_counts": {
+    "semiconductor_fixed_vol12": {
+      "daily_forecasts_requiring_extra_bil": 1137,
+      "daily_projections": 2727,
+      "issued_targets": 197,
+      "monthly_target_updates": 131
+    },
+    "semiconductor_monthly_confirmation_fixed_vol12": {
+      "daily_forecasts_requiring_extra_bil": 1086,
+      "daily_projections": 2727,
+      "issued_targets": 190,
+      "monthly_target_updates": 131
+    }
+  },
+  "verifier_count_serialization_fix_changed_candidate_targets": false
+}

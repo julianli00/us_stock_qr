@@ -4072,6 +4072,67 @@ records both the monthly return/Sharpe passes and the failed stability
 limit without weakening any gate or replacing a forward rule.
 **The investment objective remains unmet.**
 
+## Preregistered transfer of the original volatility-control law
+
+The [fixed transfer policy](research/workbench/config/semiconductor-volatility-target.json)
+uses the **existing 63-session covariance, 12% predicted-volatility
+target and 5-percentage-point last-issued-target band** on two
+original monthly sources: plain four-style/SOXX/gold and the monthly
+dollar/option AND-confirmation rule. These parameters and the
+projection helper were frozen in the earlier growth-satellite study;
+none is selected to turn the latest 21% drawdown into 15%.
+The monthly AND source's exposed return/Sharpe passes motivate the
+new experiment, not an independent holdout or permission to change
+sector shares.
+
+The [target adapter](research/workbench/src/us_quant/semiconductor_volatility_target.py)
+reuses unchanged `cap_volatility` on the complete 12-asset trailing
+sample covariance, including BIL. It only reduces non-BIL source
+weights and transfers the remainder to BIL, preserving existing
+bills and the 98% invested budget without borrowing or upscaling.
+Initial/monthly source updates issue targets; between month ends,
+the desired target must differ from the **last issued target** by
+at least five points, including the original tiny comparison tolerance.
+This is not an actual-holding band or continuously enforced risk limit:
+drift, gaps, in-band changes and delayed fills can leave realized risk
+above the prediction. Dated requests remain in the original 1/2-session
+queues rather than being cancelled by a later close.
+
+The [pre-account proof](research/workbench/evidence/volatility_transfer_20261011_pre_account_verification.json)
+matches all eight original seeded source paths exactly and independently
+checks **5,454 daily projections** using scalar portfolio-return
+variances and the quadratic feasible-scale solution, without calling
+the production covariance/projection helper.
+Target/forecast errors are 2.78e-15 / 3.89e-16.
+The plain source emits 197 targets; the confirmed source emits 190;
+both retain 131 monthly updates. Existing source BIL is never removed.
+A private verifier JSON-count serialization failure is separately
+preserved; its integer fix changes no candidate code, target or rule.
+No new quotes or strategy accounts are computed at preparation.
+
+The [actual registration](research/workbench/evidence/volatility_transfer_20261011_registration.json)
+records both candidates at **2026-10-11 12:53:00 / 12:53:03 UTC**.
+The shared publication-gated runner requires the exact remote
+packet/code/policy/proof and a durable fence before all four
+funded-v2 / independent-`bt` paths. An actual attempt using the
+preceding published commit stops before output/accounts.
+
+The [registration preservation](research/workbench/evidence/volatility_transfer_20261011_registration_preservation.json),
+[current snapshot](research/workbench/evidence/research_program_2026-W41_vol_registered_v52.json)
+and [old source-bound audit](research/workbench/evidence/research_program_source_bound_audit_v26.json)
+retain 128 completed configurations / 44 reviews / 176 paths,
+19 legacy / 25 funded-v2 outcomes, 69 imported files and seven forward
+profiles. One exact old-engine/head migration adds the finite generator;
+only these two candidates are pending, among 48 registered versions
+including the two old invalid ones. 190 coupled cases and 52 root
+guards pass. Original W42 plans and frozen forward models remain.
+
+Both hypotheses use already exposed history, and prior selection
+diagnostics do not cover them or all search. A volatility forecast
+is not independent alpha or guaranteed 15% drawdown protection.
+At registration there are **zero new strategy outcomes** and no
+investment qualification.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

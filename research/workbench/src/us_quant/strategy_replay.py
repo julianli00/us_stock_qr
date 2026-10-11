@@ -35,6 +35,7 @@ GENERATORS = {
     "sector_basket_strategy": "config/sector-basket-strategy.json",
     "semiconductor_portfolio_protection": "config/semiconductor-portfolio-protection.json",
     "joint_risk_confirmation": "config/joint-risk-confirmation.json",
+    "semiconductor_volatility_target": "config/semiconductor-volatility-target.json",
 }
 
 
@@ -250,6 +251,23 @@ def registered_generator(spec: dict, root: Path) -> tuple[str, dict]:
                 "data/volatility-term-source-20261010/VIX.csv",
                 "data/volatility-term-source-20261010/VIX3M.csv",
             ]
+        elif name == "semiconductor_volatility_target":
+            required += [
+                "src/us_quant/joint_risk_confirmation.py", "config/joint-risk-confirmation.json",
+                "evidence/joint_risk_confirmation_20261011_registration.json",
+                "src/us_quant/sector_term_guard.py", "config/sector-term-guard.json",
+                "src/us_quant/sector_growth_balance.py", "config/sector-growth-balance.json",
+                "src/us_quant/growth_factor_satellite.py", "config/growth-factor-satellite.json",
+                "src/us_quant/multifactor_stability.py", "src/us_quant/dollar_risk_guard.py",
+                "config/dollar-risk-guard.json", "src/us_quant/macro_factor_tilt.py",
+                "src/us_quant/volatility_term_risk.py", "config/volatility-term-risk.json",
+                "data/dollar-information-source-20261011/verified-manifest.json",
+                "data/macro-rate-access-20261010/verified-manifest.json",
+                "data/macro-rate-access-20261010/DFII10-curl-response.csv",
+                "data/sector-term-source-20261011/verified-manifest.json",
+                "data/volatility-term-source-20261010/manifest.json",
+                "data/volatility-term-source-20261010/VIX.csv", "data/volatility-term-source-20261010/VIX3M.csv",
+            ]
         if any(relative not in frozen for relative in required):
             raise QuantError("The registered strategy is missing a frozen helper dependency.")
         for relative in required:
@@ -402,6 +420,10 @@ def registered_targets(
             cache[key] = build_targets(data, policy)[spec["id"]]
         elif name == "joint_risk_confirmation":
             from us_quant.joint_risk_confirmation import build_targets
+
+            cache[key] = build_targets(data, policy)[spec["id"]]
+        elif name == "semiconductor_volatility_target":
+            from us_quant.semiconductor_volatility_target import build_targets
 
             cache[key] = build_targets(data, policy)[spec["id"]]
     return seed_window(cache[key], start)
