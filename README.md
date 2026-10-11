@@ -4696,6 +4696,64 @@ and both frozen forward experiments remain; both experiments
 still have zero actual return sessions.
 **The investment objective remains unmet.**
 
+## Preregistered prior relative-gold components on breadth sources
+
+The [fixed graded-gold policy](research/workbench/config/breadth-gold-relative.json)
+transfers the already registered 63/126/252-session GLD-versus-BIL
+gold component to both original equity-breadth sources.
+Three strict same-horizon return signs give equal-weight
+gold fractions of zero, one-third, two-thirds or one; equality
+is off. **The unchanged old generator's gold target is copied
+directly**, not a newly fitted partial-gold percentage.
+
+The [explicit adapter](research/workbench/src/us_quant/breadth_gold_relative.py)
+checks that original pre-gate gold budgets agree exactly.
+Every original nongold/non-BIL target remains unchanged:
+the old relative law's equity component is not used.
+Only removed gold goes to actual BIL without equity or
+other-risk renormalization. Original sector means/majority/
+half-zero scales, monthly risk budgets, prices and fees remain.
+Both complete frozen source/helper graphs are preserved.
+
+The prior relative law needs 252 actual return observations.
+Three earlier breadth source months therefore remain
+explicitly uninformed, rather than inventing long-horizon signs.
+All 2,805 source-price dates, every formal ten-/five-year
+return session and each window's complete seed remain.
+The [independent pre-account proof](research/workbench/evidence/graded_gold_20261011_pre_account_verification.json)
+checks all eight original seeded source matrices, four prior
+gold component/seed paths, 366 strict Decimal return comparisons
+per candidate and complete funding. Original source/gold
+errors are zero; maximum Decimal target error is 1.12e-16.
+Each pair has 122 informed monthly targets: 10 zero / 29
+one-third / 30 two-thirds / 53 full-gold states.
+
+The [actual registration](research/workbench/evidence/graded_gold_20261011_registration.json)
+records both fixed candidates at **2026-10-11 16:29:23 / 16:29:26 UTC**.
+An actual evaluation attempt using the preceding published
+commit stops before new output or account creation.
+Exact configured-remote publication of packet/code/policy/proof
+must precede the shared runner's account calculations.
+
+The [registration preservation](research/workbench/evidence/graded_gold_20261011_registration_preservation.json),
+[current snapshot](research/workbench/evidence/research_program_2026-W41_graded_gold_registered_v62.json)
+and [full prior source-bound audit](research/workbench/evidence/research_program_source_bound_audit_v36.json)
+retain **138 completed configurations / 54 reviews / 216 paths**,
+19 legacy / 35 funded-v2 outcomes, 69 imported files and seven
+original forward profiles. One exact engine/head migration
+adds the finite adapter, followed only by two candidate events.
+58 versions include two old invalid ones and these two
+pending candidates; 256 coupled cases and 52 root guards pass.
+
+The gold-loss diagnosis and failed binary gate motivated this
+new exposed-history question, not an independent holdout
+or a splice of partial performance passes.
+No horizon, vote weight, threshold, timing or share grid
+is introduced. At registration there are **zero new outcomes**,
+no champion and no actual forward return session.
+Original W42 plans, IJR/PKW quota and both frozen forward
+experiments remain. **The investment objective remains unmet.**
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "study_id": "sector_breadth_prior_relative_gold_20261011",
+  "data_scope": "factor_etf_portfolio",
+  "data_start": "2015-08-10",
+  "as_of": "2026-10-05",
+  "prior_evaluated_configurations": 138,
+  "new_configurations": 2,
+  "new_economic_factor_definitions": 0,
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "factor_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "gold_relative_sessions": [63, 126, 252],
+  "gold_relative_benchmark": "BIL",
+  "decision_clock": "original_source_month_ends_only_after252_session_warmup",
+  "cash_reserve": 0.02,
+  "candidates": [
+    {"id": "semiconductor_breadth_half_gold_relative", "source_id": "semiconductor_sector_breadth_equity_half"},
+    {"id": "semiconductor_breadth_off_gold_relative", "source_id": "semiconductor_sector_breadth_equity_off"}
+  ],
+  "source_registration": {"path": "evidence/sector_breadth_20261011_registration.json", "sha256": "727fd1499f4970e7e969d0beff0e473a772a97b1e614ece3781f0998beed0f24"},
+  "source_policy": {"path": "config/sector-breadth-risk.json", "sha256": "148f28f2ae90b433223333b8f70b1f2806b0d382ac8db3e56562222e6645a8ae"},
+  "source_implementation": {"path": "src/us_quant/sector_breadth_risk.py", "sha256": "c66dd2c5a17df4bd83afcedf873a3534cc1e8aa575cf6733ea00586f806f00b9"},
+  "prior_relative_registration": {"path": "evidence/trend_transfer_20261011_registration.json", "sha256": "d1f7e7a954a6b7caf9406835b3773693b54cad66e1312c140d1b4d8ab7e58eea"},
+  "prior_relative_policy": {"path": "config/semiconductor-trend-transfer.json", "sha256": "8499a788277db1f65f03d70da8facade9f6cb1fcc23192273def14a96f962984"},
+  "prior_relative_implementation": {"path": "src/us_quant/semiconductor_trend_transfer.py", "sha256": "51f6a867a5f24da23d0d2c3890e7c94772edfe2754c3e0765386d83ce2e7a636"},
+  "published_risk_context": {"path": "evidence/sector_breadth_20261011_drawdown_attribution.json", "sha256": "e5de407c986a4ab1689e35517f6489397370153be93b2adcf8af38dbb6b28c2e"},
+  "published_binary_gold_context": {"path": "evidence/breadth_gold_20261011_results.json", "sha256": "51ac43d1ca395f60ff69fb6a8f358b6a1957593b9ba5e676daf6b3cdc1c6223c"},
+  "methodology": {
+    "hypothesis": "Gold's own cash-relative momentum may vary across quarter/half-year/year horizons. Test the already defined equal-weight horizon signs as a graded gold risk allocation, rather than tune the failed binary200mean, a partial-gold percentage or new timing parameter. Published gold losses and binary-gate failures motivate this exposed-history hypothesis, not predictive proof.",
+    "gold_rule": "Reuse the unchanged registered relative-trend generator's actual GLD component: the original monthly gold budget times the fraction of63/126/252session adjusted GLD returns strictly exceeding actual BIL over each identical horizon. Equality fails; three fixed equal votes produce0/one-third/two-thirds/one. Copy that original generator's gold target directly through a source-bound adapter; do not fit or duplicate a new fractional-share law.",
+    "controls": "Both original half/off equity-breadth sources retain every nongold/nonBIL target exactly on all fully informed dates. Original pre-gate gold budgets must match the old relative generator's raw gold budgets exactly. Only removed gold goes to actual BIL, with no equity or other-risk renormalization. Original9sector200means/structural majority/half-zero scales,63risk/30–70sourceequity/98%funding and all fees remain.",
+    "warmup": "The prior relative law needs252prior return observations. Keep all2805actual prices and every2512/1254formal return session. The three earlier original breadth source months with less than252return observations emit no new target, rather than invent missing long-horizon signals. Thereafter preserve every original monthly source date and each formal window's full last-known seed.",
+    "source": "The original audited12-asset portfolio and prior relative-trend registration have identical price/risk-free references. Preserve both complete frozen dependency graphs, actual GLD/BIL quotes, separate signal/unused-portfolio XLK versions and original raw/CSV/source identity guards. Zero new quotes, economic definitions, synthetic returns or current-survivor proxies.",
+    "prior_art": "The previously registered gold fraction law is kept unchanged. Its old equity fraction is not used: this new pair keeps original sector-breadth equity targets. It is a new preregistered portfolio combination, not a splice of partial performance passes, the old whole-portfolio return path or an independent factor discovery.",
+    "execution": "Each original10y/5ywindow independently startsUSD10000 including deployment;5bpnext-openbase/20bpextra-sessionstress,USD1/order,fractional long-only funded-v2 and independentbt. Exact return calendars,seeds,risk-freeSharpe,SPY/stressed-base-SPY/15%drawdown gates required jointly.",
+    "selection": "Exactly two fixed existing-factor constructions after138exposed-history configurations. No lookback, vote weight, threshold, equity/gold share, timing or cost grid and no post-result tuning. Prior selection diagnostics do not correct these new trials or the complete search. W42plans/IJRPKWquota and both frozen forward models remain; historical all-gate qualification still needs independent actual future evidence.",
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}
