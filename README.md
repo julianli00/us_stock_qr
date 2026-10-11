@@ -3470,6 +3470,56 @@ The [updated native instructions](research/workbench/evidence/prospective_data_a
 retain the original weekly queue, costs and goals. The investment
 objective remains unmet.
 
+## Preregistered style and satellite component attribution
+
+The whole-equity budget diagnostic does not distinguish four-factor
+style exposure from growth/technology/semiconductor satellites.
+The [fixed component policy](research/workbench/config/equity-component-attribution.json)
+and [actual registration](research/workbench/evidence/equity_component_attribution_20261011_registration.json),
+recorded at **2026-10-11 10:09:25 UTC**, cover all 36 reviewed sources.
+They specify six single-group replacements—momentum, value, quality,
+low volatility, QQQ/XLK and SOXX—plus two aggregate replacements
+for all styles and all satellites. This is **288 logical controls /
+1,152 window-cost comparisons**, not 288 new trading strategies.
+
+At each original target, only the selected group's allocation moves
+to existing SPY. All other stock/defensive targets, invested budgets,
+independent window seeds, decision dates and all-NaN pauses remain.
+No volatility budget or macro gate is recomputed. The controls
+therefore estimate differences **conditional on the original full
+rule's risk budget**, not the result of rebuilding that rule without
+the selected input. Unselected target weights remain equal, but
+changed wealth can change their realized dollar holdings.
+
+The [separate adapter](research/workbench/src/us_quant/equity_component_attribution.py)
+reuses the 144 already verified funded-v2 source accounts and their
+independent `bt` paths, after exact private artifact hash checks.
+Every nonidentity control is rebuilt under the original 10-year /
+5-year windows, 5/20 bp costs, USD 1/order and 1/2-session delays.
+Groups with no actual source exposure retain explicit identity
+comparisons and are excluded from active-control win denominators;
+they are not simulated or counted as newly observed control returns.
+All results, including unfavorable comparisons, must be disclosed.
+
+These exposed-history, overlapping controls are **not additive
+attribution, isolated factor alpha, equal-risk matches or independent
+validation**. QQQ/XLK/SOXX are implementation satellites, not three
+new factor families. No result may tune thresholds/weights, replace
+the frozen forward rules, change the full-SPY qualification gate or
+promote a candidate. Original selection bootstrap results do not
+correct these new controls.
+
+Forty [focused cases](research/workbench/tests/test_equity_component_attribution.py)
+and 29 coupled budget cases pass. The [registration preservation
+proof](research/workbench/evidence/equity_component_attribution_20261011_registration_preservation.json)
+also records an actual run against the preceding published commit:
+it stopped at the publication gate, before creating an output
+directory or calculating any component account. All original
+120 configurations, 36 reviews, 69 imported files and seven
+forward profiles remain unchanged. Registration/code/policy must
+be actually pushed before evaluation; at registration there are
+**zero new component outcomes** and no investment qualification.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

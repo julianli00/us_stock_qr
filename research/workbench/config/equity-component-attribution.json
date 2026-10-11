@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "diagnostic_id": "equity_component_attribution_20261011",
+  "scope": "complete_recurring_cohort_conditional_component_replacement",
+  "included_candidate_count": 36,
+  "horizons_years": [10, 5],
+  "scenarios": ["base", "stress"],
+  "capital_usd": 10000.0,
+  "base_cost_bps": 5.0,
+  "stress_cost_bps": 20.0,
+  "base_delay_sessions": 1,
+  "stress_delay_sessions": 2,
+  "commission_per_order": 1.0,
+  "components": {
+    "momentum": ["MTUM", "PDP"],
+    "value": ["VLUE"],
+    "quality": ["QUAL", "SPHQ"],
+    "low_volatility": ["USMV"],
+    "growth_technology": ["QQQ", "XLK"],
+    "semiconductor": ["SOXX"],
+    "all_styles": ["MTUM", "PDP", "VLUE", "QUAL", "SPHQ", "USMV"],
+    "all_satellites": ["QQQ", "XLK", "SOXX"]
+  },
+  "logical_component_controls": 288,
+  "logical_horizon_scenario_comparisons": 1152,
+  "identity_policy": "Keep every no-exposure comparison explicitly; reuse its already verified original source account without calculating or claiming a new control return.",
+  "paired_accounting": "frozen_cash_funded_noop_v2_with_verified_original_legs_reused",
+  "source_budget_policy": {
+    "path": "config/equity-budget-attribution.json",
+    "sha256": "6b63bc8f54efe745624adaaddbfe660585f10492717a836ea62217b71e1b66bb"
+  },
+  "source_results": {
+    "path": "evidence/equity_budget_attribution_20261011_results.json",
+    "sha256": "e3f12318cba7d73c929585348622ab3da03efdde6d5f61b652f414c33917c9ab"
+  },
+  "source_verification": {
+    "path": "evidence/equity_budget_attribution_20261011_reproducibility.json",
+    "sha256": "dbca5bee809b96f2f21e9c739526ff3cb6f248f4bb205be97a55b6c24d450c8f"
+  },
+  "source_read_precision": {
+    "path": "evidence/equity_budget_attribution_20261011_read_precision.json",
+    "sha256": "ff34e70a85c9232d750a74ca2b21e3a4a4ff83e151954854ea43d3b1e9e2fe88"
+  },
+  "source_preservation": {
+    "path": "evidence/equity_budget_attribution_20261011_preservation.json",
+    "sha256": "5f957775903d89d75e6da56ddbfdee5c8cad72e184c39f3de243661aae66a6ce"
+  },
+  "methodology": {
+    "projection": "On each original defined target row,move only the selected component's weights to existingSPY;keep every unselected stock and defensive weight,totalbudget,seed,decision andall-NaNpause unchanged. Aggregateall_styles andall_satellites provide two joint controls in addition to six single-group controls. They overlap the single groups and must not be added together.",
+    "conditioning": "These replacements inherit risk budgets,decision times and macro gates from the full original rule. Do not recompute its volatility budget or decision rule as though the removed component had never existed. Unselected targets are unchanged,not guaranteed identical realized dollar holdings after wealth changes. The controls are not independently generated trading strategies.",
+    "accounting": "Reuse all144originalfunded-v2legs and their independentbtpaths from the previously verified full-cohort diagnostic,after exactprivateartifact hashes and metric/window/cost checks. Rebuild each nonidentitycomponent control with the same funded-v2engine and independentbt,USD10000,5/20bp,USD1/order and1/2sessiondelays. No-exposure rows are disclosed separately,not included in active-control win denominators.",
+    "interpretation": "Budget-conditioned component differences include sector/growth/beta,covariance,drift,turnover and fee effects. They are not isolated factoralpha,causal contributions,equalrisk estimates,additive attribution or an independentholdout. QQQ/XLK/SOXX are implementation satellites,not three additional economic factorfamilies. Publish all36sources/eightgroups/fourpaths,including unfavorable and identity cases.",
+    "selection": "This diagnostic follows exposed historical strategy and budget-control outcomes. Publish exact scope/code/source registration before new component accounts;do not fit weights,lookbacks,thresholds or select/promote a strategy from these results. Old selectionbootstrap does not correct these controls or the complete historicalsearch. Existing120trials/36reviews and current qualificationgoals remain authoritative.",
+    "preservation": "No changes to any frozen old module,accounting threshold,ResearchProgramengine,targetgenerator,journal,candidate/factor registration,weeklyW42queue,originalfourpreparedplans or sevenforwardprofiles. Rawtargets/accounts/marketdata remainprivate. No actualtrading or automaticlivepromotion."
+  },
+  "new_strategy_evaluations": 0,
+  "new_registered_candidates": 0,
+  "new_economic_factor_definitions": 0,
+  "independent_alpha_or_additive_attribution_claimed": false,
+  "qualification_policy_changed": false,
+  "existing_forward_rules_changed": false,
+  "order_authority": false,
+  "investment_objective_verified": false
+}
