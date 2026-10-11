@@ -2741,6 +2741,46 @@ events, engine migrations or changes to the seven forward profiles.
 All 120 completed configurations remain disclosed and no strategy
 has satisfied the unchanged investment objective.
 
+After publication of `76f27071`, the
+[actual results](research/workbench/evidence/factor_exposure_20261011_results.json)
+contain 432 paired fits across all 36 reviews, four formal account
+paths and three fixed models. The frozen references show substantial
+risk-model dependence:
+
+| Reference | Horizon | SPY-only explained variance, base | Expanded explained variance, base | Expanded paired annualized arithmetic intercept, base / stress |
+|---|---|---:|---:|---:|
+| Dollar-only guard | Ten years | 32.28% | 86.57% | 1.28% / 0.81% |
+| Dollar-only guard | Five years | 31.75% | 87.17% | 2.56% / 2.12% |
+| Unguarded semiconductor allocation | Ten years | 40.95% | 97.16% | 0.95% / 0.61% |
+| Unguarded semiconductor allocation | Five years | 39.26% | 96.88% | 2.05% / 1.74% |
+
+Explained variance refers to daily excess-return variation, not a
+fraction of cumulative wealth. For the dollar-only reference, the
+paired annualized arithmetic intercept drops from 6.42%-10.02% under
+SPY alone to 0.81%-2.56% after industry/gold/rate controls. Adding
+predictors mechanically improves in-sample fit; neither this reduction,
+the remaining positive intercepts, nor the incomplete academic
+equity-factor model proves causal attribution or independent alpha.
+The original ten-year SPY failure and sector drawdown failure remain.
+
+The [independent verification](research/workbench/evidence/factor_exposure_20261011_reproducibility.json)
+reconstructs original ZIP/account/RF inputs and direct price ratios,
+then solves centered covariance normal equations instead of calling
+the registered least-squares routine. Every fit's coefficients,
+paired differences, arithmetic components, explained variance and
+residual volatility agree: maximum coefficient error `2.0e-15` and
+annualized-intercept error `2.56e-13`. Full replay keeps all numerical
+results and source references identical.
+
+The [preservation receipt](research/workbench/evidence/factor_exposure_20261011_preservation.json)
+confirms all prior research records, both selection diagnostics,
+69 imported files and seven forward profiles remain unchanged.
+Neither model has any observed return sessions. The
+[updated native instructions](research/workbench/evidence/prospective_data_automation_v18.json)
+retain daily collection and the legitimate October 17 discovery
+gate, without claiming new native delivery proof or treating these
+academic archive downloads as prospective strategy observations.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
