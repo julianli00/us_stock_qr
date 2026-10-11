@@ -5333,18 +5333,19 @@ checks 137,445 original panel/rate observations without changing a value,
 issuer identity and advertised primary PDF. Original acquisition times,
 corporate-action guards and both separate XLK price versions remain intact.
 
-**This is data preparation, not a new strategy or factor family.**
+**This source-only checkpoint is data preparation, not a new strategy or factor family.**
 Producer-company equities are not direct commodity futures or guaranteed
-inflation hedges. A possible gold-trend-released-budget allocation still needs
+inflation hedges. At this checkpoint, a possible gold-trend-released-budget allocation required
 separately frozen source/budget/selector rules, an explicit fourteen-asset
 ResearchProgram adapter, actual registration and remote publication before
 portfolio performance may be calculated. The source helper implements none
 of that strategy admission and does not change stock-standby BIL targets.
+The separate producer study below subsequently implements that admission.
 
 The [preservation proof](research/workbench/evidence/producer_sector_20261011_preservation.json)
 retains the exact old ledger/engine/head, seven forward profiles,
 69 imported files and 3,192 frozen controls. Counts remain **148 completed
-configurations, 64 recurring reviews, no qualified champion**.
+configurations, 64 recurring reviews, no qualified champion** at this source-only checkpoint.
 The [updated native instructions](research/workbench/evidence/prospective_data_automation_v46.json)
 keep daily/weekly timing, the original four W42 plans and both frozen
 forward models; source coverage does not establish strategy qualification
@@ -5389,14 +5390,62 @@ original code/log remain, and only the check order was corrected.
 The engine identity guard and prepared rules/data/specifications were not relaxed.
 
 The [registered snapshot](research/workbench/evidence/research_program_2026-W41_producer_registered_v72.json)
-retains 148 completed configurations, 64 reviews, 68 versions including
+retained 148 completed configurations, 64 reviews, 68 versions including
 two old invalid ones, two actual pending candidates and no champion.
 The [prior-path audit](research/workbench/evidence/research_program_source_bound_audit_v46.json)
 reexecutes all 64 reviews/256 paths. An actual old-commit evaluation
 stops before feedback targets or account creation.
-**No new portfolio return has been calculated:** the exact packet,
+**No new portfolio return had been calculated at registration:** the exact packet,
 code, policy and proof must be approved and remotely published first.
 Original W42 plans and both frozen forward models remain unchanged.
+
+## Verified producer routes: return alone does not meet the risk goal
+
+The [complete results](research/workbench/evidence/producer_routing_20261011_results.json)
+follow actual remote publication of the original registration/code/proof
+in `698a2490`. The recorded fence at 19:26:13.325601 UTC precedes
+path-dependent targets/accounts from 19:26:13.326742 through
+19:26:52.953434 UTC. Original capital, costs, dates, gold-only cash origin,
+four-style/SOXX/GLD targets and the actual-holding band remain fixed.
+
+| Producer route | Window | Base CAGR / excess Sharpe / drawdown | Stress CAGR / excess Sharpe / drawdown |
+| --- | --- | --- | --- |
+| Highest eligible return | Ten years | 14.7059% / 0.8820 / 20.8073% | 14.7804% / 0.8840 / 20.5168% |
+| Highest eligible return | Five years | 18.9722% / 0.9476 / 20.8996% | 18.6082% / 0.9256 / 20.2987% |
+| All eligible inverse volatility | Ten years | 15.9706% / 0.9673 / 20.7920% | 15.9952% / 0.9643 / 20.1869% |
+| All eligible inverse volatility | Five years | 18.9721% / 0.9471 / 20.8987% | 18.5363% / 0.9195 / 20.2984% |
+
+The diversified route beats the unchanged same-cost SPY and stress/base-SPY
+return gates in every path. **All eight Sharpe and drawdown gates fail,
+so both candidates are rejected.** Most worst episodes run from
+March 8 through July 14, 2022; these descriptive dates do not establish a
+causal inflation hedge or predict future protection.
+Ten-year stress has 685 orders/USD2,109.70 for winner and
+720/USD2,266.59 for diversified. Cost/delay scenarios produce different
+actual feedback/fill paths, not a pure fee-only control: a higher stressed
+CAGR here is not evidence that fees improve returns.
+No cap, subset, source, lookback, band or cost is refitted to these outcomes.
+
+The [independent reproduction](research/workbench/evidence/producer_routing_20261011_reproducibility.json)
+checks 16 funded and 16 independent-bt accounts,
+728 actual holding-band/seed/request/fill decisions and 30,128 funding days.
+Maximum target/metric/equity/cash-flow errors are
+0/5.22e-15/1.10e-10 USD/1.60e-11 USD.
+The [current snapshot](research/workbench/evidence/research_program_2026-W41_producer_results_v73.json)
+contains **150 completed configurations = 84 prior + 66 recurring reviews**,
+68 versions including two old invalid ones, no pending candidate and no champion.
+The [full source-bound audit](research/workbench/evidence/research_program_source_bound_audit_v47.json)
+reexecutes all 66 reviews/264 paths, retaining 19 legacy and 47 explicit
+funded-v2 reviews.
+The [preservation proof](research/workbench/evidence/producer_routing_20261011_preservation.json)
+retains every old journal row/prefix, 69 imports, seven forward profiles
+and all 3,192 frozen controls.
+
+The [updated native instructions](research/workbench/evidence/prospective_data_automation_v47.json)
+retain the partial SPY success and full Sharpe/drawdown failures.
+Original daily/weekly cadence, W42 plans and both frozen forward rules remain;
+both forward models still have zero actual return sessions.
+**The investment objective remains unmet.**
 
 ## Progress and publication
 
