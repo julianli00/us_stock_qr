@@ -7,7 +7,9 @@ import numpy as np
 import pandas as pd
 import pytest
 
+from us_quant.calendar import previous_session, sessions
 from us_quant.config import QuantError
+from us_quant.dual_horizon import seed_window
 from us_quant.real_yield_vintages import parse_vintage_archive, select_vintage, validate_policy
 from us_quant.storage import read_json
 
@@ -126,3 +128,42 @@ def test_source_diagnosis_cannot_become_an_unregistered_strategy_or_lag_search(f
     policy[field] = value
     with pytest.raises(QuantError):
         validate_policy(policy)
+
+
+def test_return_window_slice_cannot_prove_unchanged_initial_signal():
+    dates = sessions("2026-08-31", "2026-09-04")
+    first = pd.Timestamp("2026-09-02")
+    anchor = previous_session(first)
+    before = pd.DataFrame(np.nan, index=dates, columns=["A", "B"])
+    before.loc["2026-08-31"] = [0.60, 0.38]
+    before.loc["2026-09-03"] = [0.40, 0.58]
+    after = before.copy()
+    after.loc["2026-08-31"] = [0.50, 0.48]
+    old, new = seed_window(before, first), seed_window(after, first)
+    assert old.loc[first:].equals(new.loc[first:])
+    assert not old.loc[anchor:].equals(new.loc[anchor:])
+    assert anchor == pd.Timestamp("2026-09-01")
+    assert np.isfinite(old.loc[anchor]).all()
+    assert np.isfinite(new.loc[anchor]).all()
+
+
+def test_published_vintage_target_proofs_include_seed_and_every_formal_session():
+    evidence = read_json(
+        Path(__file__).parents[1] / "evidence/real_yield_vintage_20261011_results_v2.json"
+    )
+    proofs = evidence["formal_target_proofs_including_explicit_seed"]
+    assert len(proofs) == 4
+    assert {(row["candidate_id"], row["years"]) for row in proofs} == {
+        (name, years)
+        for name in ("macro_real_yield_factor_tilt", "macro_real_yield_tilt_curve_defense")
+        for years in (10, 5)
+    }
+    for row in proofs:
+        first, end = row["formal_return_start"], row["formal_return_end"]
+        count = len(sessions(first, end))
+        assert row["initial_seed_signal_session"] == str(previous_session(first).date())
+        assert row["formal_return_sessions"] == count
+        assert row["target_shape_including_seed"] == [count + 1, 8]
+        assert row["seed_row_is_explicitly_present_and_finite"] is True
+        assert row["seeded_original_and_source_replaced_targets_byte_identical"] is True
+        assert row["this_is_not_a_fully_PIT_daily_feature_dataset"] is True

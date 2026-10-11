@@ -1,0 +1,152 @@
+{
+  "actual_archived_vintage_dates": 225,
+  "auditor_sha256": "2d6b2bb0aa34d94d763c892f382f4eeac4eae686febe530e0af36e3d432d4613",
+  "changed_rising_real_yield_states": 1,
+  "changed_rising_state_query_sessions": [
+    "2015-11-30"
+  ],
+  "changed_same_observation_values": 0,
+  "changed_selected_observation_dates": 3,
+  "changed_selected_yield_values": 3,
+  "changed_source_selection_cases": [
+    {
+      "age_calendar_days": 5,
+      "observation_date": "2015-08-26",
+      "original_observation_date": "2015-08-27",
+      "query_session": "2015-08-31",
+      "selected_yield_difference_percentage_points": 0.050000000000000044,
+      "vintage_cutoff": "2015-08-28"
+    },
+    {
+      "age_calendar_days": 6,
+      "observation_date": "2024-12-20",
+      "original_observation_date": "2024-12-23",
+      "query_session": "2024-12-26",
+      "selected_yield_difference_percentage_points": -0.040000000000000036,
+      "vintage_cutoff": "2024-12-24"
+    },
+    {
+      "age_calendar_days": 7,
+      "observation_date": "2025-12-22",
+      "original_observation_date": "2025-12-24",
+      "query_session": "2025-12-29",
+      "selected_yield_difference_percentage_points": 0.030000000000000027,
+      "vintage_cutoff": "2025-12-26"
+    }
+  ],
+  "comparison_does_not_validate_all_daily_conditional_model_features": true,
+  "created_at": "2026-10-11T05:38:28.636801+00:00",
+  "diagnostic_id": "real_yield_vintage_validation_20261011",
+  "event_chain_sha256": "0650f1dbc0b27754a3aadbbea95682d56b605fc3561968f8e7247f320830688f",
+  "exact_intraday_first_publication_verified": false,
+  "formal_target_proofs_including_explicit_seed": [
+    {
+      "candidate_id": "macro_real_yield_factor_tilt",
+      "changed_source_target_sessions_before_formal_window": [
+        "2015-11-30"
+      ],
+      "formal_return_end": "2026-10-05",
+      "formal_return_sessions": 2512,
+      "formal_return_start": "2016-10-06",
+      "initial_seed_signal_session": "2016-10-05",
+      "private_target_matrix": "reports/real-yield-vintages-20261011/target-proof-v2/macro_real_yield_factor_tilt-10y.csv",
+      "queried_DFII10_cells_only_replaced_other_macro_data_unchanged": true,
+      "seed_row_is_explicitly_present_and_finite": true,
+      "seeded_original_and_source_replaced_targets_byte_identical": true,
+      "sha256": "1460baf8031c1f9e40462342b5de48eae469d440e6b40c044921a9d02f5ac56a",
+      "target_shape_including_seed": [
+        2513,
+        8
+      ],
+      "this_is_not_a_fully_PIT_daily_feature_dataset": true,
+      "years": 10
+    },
+    {
+      "candidate_id": "macro_real_yield_factor_tilt",
+      "changed_source_target_sessions_before_formal_window": [
+        "2015-11-30"
+      ],
+      "formal_return_end": "2026-10-05",
+      "formal_return_sessions": 1254,
+      "formal_return_start": "2021-10-06",
+      "initial_seed_signal_session": "2021-10-05",
+      "private_target_matrix": "reports/real-yield-vintages-20261011/target-proof-v2/macro_real_yield_factor_tilt-5y.csv",
+      "queried_DFII10_cells_only_replaced_other_macro_data_unchanged": true,
+      "seed_row_is_explicitly_present_and_finite": true,
+      "seeded_original_and_source_replaced_targets_byte_identical": true,
+      "sha256": "53d60cf70d108865d9f9127fd34faf23e7315e0024e2d79875d3f02c228562d0",
+      "target_shape_including_seed": [
+        1255,
+        8
+      ],
+      "this_is_not_a_fully_PIT_daily_feature_dataset": true,
+      "years": 5
+    },
+    {
+      "candidate_id": "macro_real_yield_tilt_curve_defense",
+      "changed_source_target_sessions_before_formal_window": [
+        "2015-11-30"
+      ],
+      "formal_return_end": "2026-10-05",
+      "formal_return_sessions": 2512,
+      "formal_return_start": "2016-10-06",
+      "initial_seed_signal_session": "2016-10-05",
+      "private_target_matrix": "reports/real-yield-vintages-20261011/target-proof-v2/macro_real_yield_tilt_curve_defense-10y.csv",
+      "queried_DFII10_cells_only_replaced_other_macro_data_unchanged": true,
+      "seed_row_is_explicitly_present_and_finite": true,
+      "seeded_original_and_source_replaced_targets_byte_identical": true,
+      "sha256": "3ba6c0769c4ff7998041d1b12a924f56876cb21426063ae22c19138bc8e4f307",
+      "target_shape_including_seed": [
+        2513,
+        8
+      ],
+      "this_is_not_a_fully_PIT_daily_feature_dataset": true,
+      "years": 10
+    },
+    {
+      "candidate_id": "macro_real_yield_tilt_curve_defense",
+      "changed_source_target_sessions_before_formal_window": [
+        "2015-11-30"
+      ],
+      "formal_return_end": "2026-10-05",
+      "formal_return_sessions": 1254,
+      "formal_return_start": "2021-10-06",
+      "initial_seed_signal_session": "2021-10-05",
+      "private_target_matrix": "reports/real-yield-vintages-20261011/target-proof-v2/macro_real_yield_tilt_curve_defense-5y.csv",
+      "queried_DFII10_cells_only_replaced_other_macro_data_unchanged": true,
+      "seed_row_is_explicitly_present_and_finite": true,
+      "seeded_original_and_source_replaced_targets_byte_identical": true,
+      "sha256": "ca3301e097d21c44b49ac9b4805035698cbd7e8db666847d9bf0ea69860cbc18",
+      "target_shape_including_seed": [
+        1255,
+        8
+      ],
+      "this_is_not_a_fully_PIT_daily_feature_dataset": true,
+      "years": 5
+    }
+  ],
+  "investment_objective_verified": false,
+  "ledger_unchanged": true,
+  "maximum_as_published_observation_age_days": 7,
+  "maximum_same_observation_value_difference_percentage_points": 0.0,
+  "maximum_selected_yield_difference_percentage_points": 0.050000000000000044,
+  "monthly_comparisons": 131,
+  "new_economic_factor_definitions": 0,
+  "new_strategy_evaluations": 0,
+  "order_authority": false,
+  "original_results_or_forward_rules_rewritten": false,
+  "private_full_result": "reports/real-yield-vintages-20261011/primary/results.json",
+  "private_full_result_sha256": "cfe2e1f78e38dc970289944d11f7d291c9ac4fd9be730f86fbfda28d539f5a05",
+  "program_engine_sha256": "0a36a3033ccffbbf2d8474b4e73ff5ddaad6d3c4b5922600c0eb8541ed59f9ab",
+  "registration": {
+    "path": "data/real-yield-vintage-diagnostic-20261011/registration.json",
+    "sha256": "6b0ff9f2803724d154dd5f9f2463a7320f13d4fcdd7f8f2fa50f0a9c5b83c125"
+  },
+  "registration_published_before_outcomes_commit": "c25051b7",
+  "same_observation_matched_queries": 225,
+  "schema_version": 1,
+  "selected_queries": 225,
+  "source_signal_comparisons_computed": true,
+  "unpublished_v1_scope_failure_preserved": "evidence/real_yield_vintage_20261011_verification_scope_failure_v1.json",
+  "verification_schema_version": 2
+}

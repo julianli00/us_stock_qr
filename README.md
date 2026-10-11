@@ -2827,6 +2827,53 @@ both forward rules and all investment qualification gates remain
 unchanged. No new strategy evaluation or prospective model return
 is claimed.
 
+After publishing preregistration `c25051b7`, the
+[verified source results](research/workbench/evidence/real_yield_vintage_20261011_results_v2.json)
+find **no same-observation quote differences among the 225 matched
+queries**, but three historical snapshots select an older available
+observation than the current-history approximation:
+
+| Query session | Current-history observation | Archived observation | Archived observation age |
+|---|---|---|---:|
+| 2015-08-31 | 2015-08-27 | 2015-08-26 | 5 days |
+| 2024-12-26 | 2024-12-23 | 2024-12-20 | 6 days |
+| 2025-12-29 | 2025-12-24 | 2025-12-22 | 7 days |
+
+The maximum selected-yield difference is 0.05 percentage point.
+One of the 131 strict-positive change states flips, on **2015-11-30**,
+before either formal return window. This is an availability/selection
+difference, not evidence that the 225 matched quotes were revised.
+It does not prove the original publisher withheld a reading.
+
+The [independent source verification](research/workbench/evidence/real_yield_vintage_20261011_reproducibility_v2.json)
+uses separately parsed decimal quotes and scalar NYSE calendar
+selection. All query dates, observation ages, values and monthly
+states reproduce within `3.34e-16`; the complete private observation
+and state tables replay byte-identically.
+
+The [retained verification-scope failure](research/workbench/evidence/real_yield_vintage_20261011_verification_scope_failure_v1.json)
+records an unpublished v1 proof that incorrectly described a return-only
+target slice as including initialization. The frozen `seed_window`
+places that signal on the **previous** NYSE session. V2 explicitly
+checks the finite October 5, 2016 / October 5, 2021 seed rows and all
+formal signal rows: all four original/source-replaced monthly target
+matrices are byte-identical, with shapes **2,513 by 8 / 1,255 by 8**.
+The actual return windows remain 2,512 / 1,254 sessions. No generator,
+source, accounting engine or comparison tolerance was changed.
+The retained verification omission is not another registered strategy
+code failure or accounting incident.
+
+This proof replaces only the audited monthly DFII10 query cells,
+not all daily macro features or T10Y3M. It does not retroactively
+make the conditional models or every prior study fully point-in-time.
+The [preservation receipt](research/workbench/evidence/real_yield_vintage_20261011_preservation_v2.json)
+confirms old source bytes, all 36 reviews, 69 imported files and seven
+forward profiles remain unchanged. Both models still have zero
+observed return sessions, and the original failures remain failures.
+The [updated native instructions](research/workbench/evidence/prospective_data_automation_v19.json)
+retain the daily/weekly cadence without claiming new native delivery
+proof or promoting a strategy.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
