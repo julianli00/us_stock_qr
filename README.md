@@ -5637,14 +5637,67 @@ The [registration preservation proof](research/workbench/evidence/activity_gold_
 verifies one exact old-engine/head migration, all seven original semantic
 forward profiles, 69 imports and 3,192 frozen controls.
 The [registered snapshot](research/workbench/evidence/research_program_2026-W41_activity_gold_registered_v76.json)
-retains 152 completed configurations and 68 reviews, with 72 versions
+retained 152 completed configurations and 68 reviews, with 72 versions
 including two old invalid ones, two pending candidates and no champion.
 The [prior-path audit](research/workbench/evidence/research_program_source_bound_audit_v50.json)
 reexecutes all 68 reviews/272 paths. An actual old-commit attempt stops
 before new output/account creation.
-**No new portfolio performance has been calculated at this checkpoint.**
+**No new portfolio performance had been calculated at registration.**
 The exact original packet, code, policy and proof must be remotely published
 before evaluation. Original W42 plans and frozen forward rules remain.
+
+## Verified gold transfer: lower drawdown is still not qualification
+
+The [complete outcomes](research/workbench/evidence/activity_gold_20261011_results.json)
+follow real remote publication of the original registration/code/proof
+in `f194e5c5`. The recorded fence at 20:59:38.910863 UTC precedes accounts
+from 20:59:38.911950 through 21:00:01.395626 UTC.
+All original activity equity targets, macro pauses, capital, costs and
+formal return calendars remain unchanged.
+
+| Activity source plus gold gate | Window | Base CAGR / excess Sharpe / drawdown | Stress CAGR / excess Sharpe / drawdown |
+| --- | --- | --- | --- |
+| Magnitude | Ten years | 15.1886% / 0.9482 / 17.9171% | 14.4091% / 0.8966 / 17.7397% |
+| Diffusion | Ten years | 15.4481% / 0.9635 / 17.9171% | 14.6845% / 0.9130 / 17.7397% |
+| Either source | Five years | 20.3724% / 1.0662 / 15.3336% | 19.1627% / 0.9975 / 15.9742% |
+
+Every drawdown is lower than the original activity-source result,
+but **all eight drawdown gates still fail**. All ten-year Sharpe/SPY
+gates fail, and five-year stress Sharpe is 0.9975121778, not above one.
+Diffusion's ten-year base CAGR 15.4481% is still below SPY 15.4620%;
+neither this gap nor 15.3336% drawdown is rounded into a pass.
+All eight CAGR/Sharpe comparisons are lower than their original sources.
+Both candidates are rejected; original Sharpe/return passes cannot be
+combined with these different drawdowns.
+
+The worst ten-year episodes now fall in February–March 2020,
+while five-year worst episodes run from December 27, 2021 through
+October 14, 2022. Descriptive episode shifts do not establish a robust hedge.
+Ten-year stress has 718 orders/USD1,774.45 for magnitude and
+717/USD1,795.34 for diffusion. The 200-observation rule, monthly clock,
+gold scale, equity targets and costs are not refitted.
+
+The [independent reproduction](research/workbench/evidence/activity_gold_20261011_reproducibility.json)
+checks 16 funded and 16 independent-bt accounts, 30,128 funding days,
+all full target/seed matrices and 40 macro-pause/no-rebalance/held-risk cases.
+Maximum target/metric/equity/cash-flow errors are
+0/3.72e-14/6.55e-11 USD/1.14e-11 USD.
+Both entire five-year seeded target segments and account bytes are identical,
+not independent evidence for two alpha sources.
+
+The [current snapshot](research/workbench/evidence/research_program_2026-W41_activity_gold_results_v77.json)
+contains **154 completed configurations = 84 prior + 70 recurring reviews**,
+72 versions including two old invalid ones, no pending candidate and no champion.
+The [full source-bound audit](research/workbench/evidence/research_program_source_bound_audit_v51.json)
+reexecutes all 70 reviews/280 paths, retaining 19 legacy and 51 explicit
+funded-v2 reviews.
+The [preservation proof](research/workbench/evidence/activity_gold_20261011_preservation.json)
+retains every old journal row/prefix, 69 imports, seven forward profiles,
+3,192 frozen controls and the original W42 plans.
+The [updated native instructions](research/workbench/evidence/prospective_data_automation_v50.json)
+retain lower drawdown alongside return failures and unchanged daily/weekly
+cadence. Both frozen forward models still have zero actual return sessions.
+**The full investment objective remains unmet.**
 
 ## Progress and publication
 
