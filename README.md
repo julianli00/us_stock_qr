@@ -2403,6 +2403,69 @@ session is October 13 morning in China; October 12 morning still sees
 the October 9 baseline. The historical SPY gate still fails, no champion
 is promoted, and the investment objective remains incomplete.
 
+### Financial-condition confirmation using actual historical vintages
+
+The [NFCI source admission](research/workbench/evidence/financial_conditions_vintages_20261011_admission.json)
+retains **225 actual ALFRED vintages** in six public-form downloads.
+Every requested date appears in its archive README and CSV column;
+future observations are missing rather than replaced with current values.
+Three separately acquired probes reproduce the batch data. Native
+publication precision and revisions are retained. The first available
+ALFRED vintage is May 25, 2011, before every required query. The actual
+Chicago Fed FAQ states Wednesday 08:30 **Eastern**, with early-week
+federal holidays shifting release to Thursday. Search summaries claiming
+Central Time were not used.
+
+For both current and 63-session reference inputs, the
+[frozen specifications](research/workbench/evidence/financial_conditions_guard_20261011_registration.json)
+use the snapshot as of the preceding NYSE session. This is conservative
+dated availability, not authentication of first-publication timestamps.
+NFCI revisions include incoming data and changing estimated indicator
+weights; a difference between as-published readings is not a pure measure
+of an economic shock. Current revised histories are not fallback inputs.
+The official weekly observation cutoff of October 2 does not change the
+original October 5 daily return cutoff or either evaluation horizon.
+
+An initial source audit found two year-end queries, December 29 and 30,
+2022, with last observations from December 9. **The 14-day freshness
+limit was not relaxed to admit those 20/21-day-old values.** The
+unregistered strict-coverage failure and its exact source/code snapshots
+remain retained. Before strategy outcomes, the data-only revision
+explicitly froze standby: a candidate does not rebalance when its
+required NFCI input is stale, records the source gap and retains actual
+existing holdings. Every actual daily price return and cost stays in
+the account; no period is dropped, zeroed or reconstructed.
+Tightness pauses December 30, 2022; deterioration also pauses March 31,
+2023 because its 63-session reference is stale. All consumed readings
+are at most 13 days old. An ALFRED gap does not by itself prove that the
+original publisher paused publication.
+
+Exactly two fixed confirmations are registered. Dollar appreciation must
+coincide with either NFCI strictly above its source-defined zero-average
+threshold, or a strictly positive 63-session change in separately archived
+NFCI readings. A confirmed state halves all original non-BIL targets;
+otherwise the original four-factor/SOXX/gold allocation remains unchanged,
+except for explicit source standby. All factor shares, equity/gold budget
+helpers, costs, 2% target cash and qualification gates are preserved.
+The index is information, not a traded or leveraged product, new alpha
+family or proof of independent returns.
+
+```bash
+cd research/workbench
+.venv/bin/python -I -B -m us_quant.financial_conditions_guard --output data/nfci-prepared-new
+```
+
+Preparation requires sealed local source artifacts, refuses overwrite and
+computes no portfolio outcomes. Eight constant-exposure attribution
+controls were also preregistered, retaining the same candidate-specific
+source-pause dates; they use full-window mean exposure and are not causal
+candidates, holdouts or added historical trials.
+The [pending snapshot](research/workbench/evidence/research_program_2026-W41_nfci_v37.json)
+still records **116 completed configurations, 32 reviews and two pending
+candidates**. Exact migration preserves every old record and all seven
+existing prospective profiles. Neither source acquisition nor
+preregistration establishes the investment objective.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
