@@ -2639,17 +2639,57 @@ rewritten.
 
 ```bash
 cd research/workbench
-.venv/bin/python -I -B -m us_quant.selection_expansion run
+.venv/bin/python -I -B -m us_quant.selection_expansion run \
+  --output reports/selection-expansion-20261011/new-replay
 ```
+
+Choose a fresh output directory for each replay; existing registration
+helpers, inputs and results are never overwritten.
+
+After publishing the actual preregistration in `3cd53e1b`, the
+[expanded results](research/workbench/evidence/selection_expansion_20261011_results.json)
+remain **non-significant** under the frozen scoped family:
+
+| Horizon | Comparisons | Scoped omnibus p-value | Positive simultaneous lower bounds |
+|---|---:|---:|---:|
+| Ten years | 108 | 0.500125 | 0 |
+| Five years | 108 | 0.205699 | 0 |
+
+The two-horizon Bonferroni omnibus p-value is **0.411397**, not a
+probability of future profit. Even the highest observed log-growth
+comparison, the unguarded semiconductor allocation against base SPY,
+has a negative simultaneous lower bound in both windows. That
+allocation's previously reported drawdown failure is not changed by
+this diagnostic. Per-comparison annualized fields are 252 times the
+daily log-growth means or bounds, not CAGR differences.
+
+The [independent verification](research/workbench/evidence/selection_expansion_20261011_reproducibility.json)
+separately reconstructs all account-based differences with scalar
+logarithms, reproducing both full input matrices exactly. One-sample
+direct-index circular-block arithmetic and explicit sorted critical
+values verify every comparison mean, lower bound, sign and p-value
+for both original and expanded scopes within `1.1e-18`.
+Complete matrices of 2,512 by 108 and 1,254 by 108 replay
+byte-identically, and the expanded maximum is never below its
+original prefix on any shared sample. The old scoped p-values
+`1.0 / 0.5881029743` and all four old selection artifacts are unchanged.
 
 The original earlier 84 configurations remain explicitly outside this
 inference. The full exposed 120-trial search, unknown research choices,
 nonstationarity and current vendor revisions are not completely corrected.
 A log-growth bound or omnibus p-value is not a Sharpe/drawdown gate,
 an independent holdout, a probability of future profit or proof that
-no viable strategy can exist. At registration the new joint outcome
-is uncomputed; the research ledger, all seven forward profiles,
-120 completed configurations and absent champion remain unchanged.
+no viable strategy can exist. The
+[preservation check](research/workbench/evidence/selection_expansion_20261011_preservation.json)
+confirms all 36 prior reviews, six registered definitions, technical
+failures, 69 imported files and seven prospective profiles remain
+unchanged, with no engine migration or new strategy evaluation.
+Both forward models still have zero return sessions; 120 completed
+configurations and the absent champion remain unchanged. The
+[updated native instructions](research/workbench/evidence/prospective_data_automation_v17.json)
+retain daily 09:00 collection and the actual October 17 weekly
+discovery gate. No new daily acquisition or independent native
+delivery proof is claimed for this diagnostic checkpoint.
 
 ## Progress and publication
 
