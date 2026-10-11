@@ -3707,6 +3707,87 @@ preserves these rejected outcomes and the remaining weekly/forward
 work. The more stable dollar-guard reference still misses full-SPY
 ten-year outperformance. **The investment objective remains unmet.**
 
+## Preregistered diversified-sector multifactor construction
+
+The [sector-source policy](research/workbench/config/sector-basket-sources.json)
+and [source readiness](research/workbench/evidence/sector_basket_source_readiness_20261011.json)
+verify **all nine original Select Sector SPDR ETFs**:
+XLB/XLE/XLF/XLI/XLK/XLP/XLU/XLV/XLY. Each actual issuer page's scoped
+fund identity is cross-checked with its uniquely advertised PDF factsheet.
+All 2,805 post-inception sessions per fund are revalidated from the
+original registered raw/CSV cache, with independent Decimal price error
+at most 5e-10 and no unexplained adjustment jumps. **No new price request**
+is made; the original 2026-10-06 acquisition times remain.
+Current issuer mandates are not complete historical sector definitions,
+constituents or independently certified notional-cap archives.
+
+The old first-round reader remains blocked because its implementation
+fingerprint changed after that historical registration. Original policy,
+windows, manifest, raw and CSV hashes still match. The [versioned source
+adapter](research/workbench/src/us_quant/sector_basket_sources.py) therefore
+checks **market prices only**, without altering the old reader/registration
+or claiming to reproduce the original strategy returns.
+
+The [fixed strategy policy](research/workbench/config/sector-basket-strategy.json)
+keeps half of an equity bucket in all four equally weighted style ETFs;
+the other half follows the original nine-sector, 252-minus-21-session
+positive momentum / 200-day trend selection, top three, 63-day inverse
+volatility and 40% standalone-NAV cap. Missing slots and cap residuals
+remain actual BIL rather than being redistributed into surviving sectors.
+This is another implementation of momentum, not nine new factor families.
+The skip-only selector needs 252 returns, not the old residual model's
+756-session regression warmup; neither old code nor old outcomes is changed.
+
+The two configurations are the plain basket and the same basket with
+the already frozen own-vintage 63-session positive-dollar **half-risk**
+guard. Both use the original 63-session equity/gold risk balance,
+30%–70% equity-bucket bounds and 98% total target investment, monthly
+decisions only. A bucket can contain BIL when sector slots are missing,
+so actual stock weight can be below 30%; it is not renormalized.
+No single-sector winner is selected from new account results, and no
+new macro confirmation or daily overlay is introduced.
+
+The [first target proof](research/workbench/evidence/sector_basket_strategy_20261011_target_verification.json)
+and [complete-dependency recheck](research/workbench/evidence/sector_basket_strategy_20261011_target_verification_v2.json)
+independently verify 244 defined targets / 122 month ends per candidate.
+Selected sector counts range from zero to three; 68 dollar-risk months
+apply the second candidate's half scale. Scalar/Decimal target, momentum
+and own-vintage dollar errors are at most 2.22e-16 / 3.45e-15 / 3.02e-16.
+The later complete specifications retain every prior target byte.
+
+Two unregistered preparation/admission failures are separately retained:
+a rounding-only negative unit-BIL residual now clips only within 1e-12,
+and the reused dollar helper initially omitted required transitive
+bindings. Neither produced a registered terminal strategy version or
+any portfolio return. The existing exact migration was **resumed, not
+repeated or reset**, after completing those bindings. Original logs,
+code, failed inputs and the first proof remain private/immutable.
+
+The [actual registration](research/workbench/evidence/sector_basket_strategy_20261011_registration.json)
+records the two strategies at **2026-10-11 11:29:47 / 11:29:50 UTC**.
+The [publication-gated runner](research/workbench/src/us_quant/sector_basket_study.py)
+requires the exact published packet, policy, code and source/target proof
+on this branch's configured remote before a durable account fence and
+the original four-path funded-v2 / independent-`bt` review.
+An actual attempt with the preceding published commit stops before
+output/accounts; existing partial directories cannot be overwritten.
+
+The [registration preservation](research/workbench/evidence/sector_basket_strategy_20261011_registration_preservation.json)
+and [current snapshot](research/workbench/evidence/research_program_2026-W41_sector_registered_v46.json)
+retain **122 completed configurations / 38 reviews**, 42 registered
+versions including the two old invalid ones, and only these two new
+pending candidates. The [full old-cohort audit](research/workbench/evidence/research_program_source_bound_audit_v20.json)
+reexecutes 38 reviews / 152 paths without changing any old outcome.
+176 coupled cases and 52 root guards pass; 69 imported files and all
+seven forward profile states/control bytes remain.
+The four W42 plans and IJR/PKW queue are not replaced.
+
+This source/construction work uses exposed history and correlated
+style/sector stocks. Prior selection diagnostics do not cover these
+two new strategies. At registration, **zero new strategy outcomes**
+and no investment qualification are claimed; the full-SPY and
+Sharpe/drawdown gates remain unchanged.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

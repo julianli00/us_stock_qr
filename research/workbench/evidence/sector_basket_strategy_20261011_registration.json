@@ -1,0 +1,318 @@
+{
+  "candidates": [
+    {
+      "candidate_spec": {
+        "body_sha256": "d6d1229284af57f898f0a2646ef8206a43cfc0bb43051230c863a993dbebe6ab",
+        "path": "data/sector-basket-strategy-20261011-v3/four_factor_diversified_sector_basket-spec.json",
+        "sha256": "8271525a66e8b1944780d7508266f3efd970fdaf7e788126033a9df06a3cbef0"
+      },
+      "readiness": {
+        "body_sha256": "10378ee8602f90ed9ceb4ac2ed901c191938c1639d3496f3a1394a1cada2a71a",
+        "path": "data/sector-basket-strategy-20261011-v3/readiness.json",
+        "sha256": "6159d614f681cc497586cb0f59e56f8217d3ae02f74ae40154aeb4944be8c067"
+      },
+      "registration": {
+        "candidate_id": "four_factor_diversified_sector_basket",
+        "data_scope": "factor_etf_portfolio",
+        "families": [
+          "earnings_quality",
+          "low_volatility",
+          "momentum",
+          "value"
+        ],
+        "order_authority": false,
+        "readiness_sha256": "10378ee8602f90ed9ceb4ac2ed901c191938c1639d3496f3a1394a1cada2a71a",
+        "registered_at": "2026-10-11T11:29:47.739894+00:00",
+        "spec_sha256": "d6d1229284af57f898f0a2646ef8206a43cfc0bb43051230c863a993dbebe6ab"
+      },
+      "spec": {
+        "asset_leverage": {
+          "BIL": 1.0,
+          "GLD": 1.0,
+          "IEF": 1.0,
+          "MTUM": 1.0,
+          "QUAL": 1.0,
+          "SPY": 1.0,
+          "USMV": 1.0,
+          "VLUE": 1.0,
+          "XLB": 1.0,
+          "XLE": 1.0,
+          "XLF": 1.0,
+          "XLI": 1.0,
+          "XLK": 1.0,
+          "XLP": 1.0,
+          "XLU": 1.0,
+          "XLV": 1.0,
+          "XLY": 1.0
+        },
+        "configuration": {
+          "dollar_guard": false,
+          "id": "four_factor_diversified_sector_basket"
+        },
+        "data_scope": "factor_etf_portfolio",
+        "evaluation_as_of": "2026-10-05",
+        "factor_ids": [
+          "price_momentum",
+          "value_exposure",
+          "quality_exposure",
+          "low_volatility_exposure"
+        ],
+        "frozen_files": {
+          "config/dollar-risk-guard.json": "4a4b960dfb52e894f1fc58ba86108cd86237cf4b77698c3cd0f0063fc1a32b3c",
+          "config/dual-horizon.json": "85d9475cb6089e27b181f466be4fc81b345caa05924de4a12cf9071bdf271e92",
+          "config/factor-research.json": "d02d0b085935abd93a9f7dc61a5bda8fd45d24630c1c26108851c179be30f76c",
+          "config/growth-factor-satellite.json": "7f53dffeafdea3211980a7c6704c450f6142ff99fbf1332772f6e5969bd9b837",
+          "config/sector-basket-sources.json": "81d75bafad58205ed03f7a2c7927c49533bef46ed2c66a7cfa79172f01e053d8",
+          "config/sector-basket-strategy.json": "db1e83de8699692a53e7b216229605a4b5c7934d4cf99ffeaae1c03aa083574e",
+          "config/sector-growth-balance.json": "ed3fef4f25dbda3132df2480e43a5188719776485c9018c5447c9e2aad2f4103",
+          "data/dollar-information-source-20261011/verified-manifest.json": "d5a9329e4b852509e4a19341b3b4d5f98ecbd52f62e0184fc74f92d7118278ae",
+          "data/macro-rate-access-20261010/DFII10-curl-response.csv": "b9e7817be5c95412df6a000b8f12f4228db580923f5ad530d942aa558eade429",
+          "data/macro-rate-access-20261010/verified-manifest.json": "08443821e368f9769716e5f7a4bbcf6d94a9476076ecbb389257ca75280d97e3",
+          "data/sector-basket-sources-20261011/manifest.json": "65eced0b12e4909ee0ca67587f59a000a11107950e05613475cc8439f241a32a",
+          "evidence/factor_gold_risk_20261010_registration.json": "94d7e5130dc480ef858cf1a23bb9da5a1ff6f66825c60e9fe6144103616dee86",
+          "evidence/factor_round_20261007_registration.json": "1b6001095264367bf409dac1d6f32fa0668b2fc37ea38f8a48705785e09b7cde",
+          "evidence/sector_basket_source_readiness_20261011.json": "76f1dbb9f4a7ef029307ba11fce0fec9a1cbd53317e20cf676fe79654b57fbf2",
+          "src/us_quant/dollar_risk_guard.py": "c4b6db938cc98791fcb620f5317c4b964428e518689e75b6696cf1f8ee38ae53",
+          "src/us_quant/dual_horizon.py": "38fb924e30901cf58647163c6c5bb530ff96c5e03947acd8b61111665088ee7b",
+          "src/us_quant/factor_research.py": "9b4e09d2cf9b70d7664764f37ead01ff22467f3fe7db130faab461114e711103",
+          "src/us_quant/growth_factor_satellite.py": "a83f647efa43becd7538c421ff3ba512f6951f6f2f90e8a447b53732e8b18f90",
+          "src/us_quant/macro_factor_tilt.py": "40a2fec8b2502bd8cba21a1ac8b16397d98ed77d8c2cd304ba814c20eaf623b0",
+          "src/us_quant/multifactor_stability.py": "05423115c9171a20f0c870e2556b4f25f787df737da4b1f87da5f5fffe3ae7b9",
+          "src/us_quant/sector_basket_sources.py": "de2eae361be8599a352360b26674110d0978cd2857dda0677bce88716f7788dc",
+          "src/us_quant/sector_basket_strategy.py": "5e407e1ab65983c028536a4b40753fa781a88d53d9ffce11172d1a095e3b8d2a",
+          "src/us_quant/sector_growth_balance.py": "783df691d243da8794d887bd1f8bb5331f9875a271b628c157098ea6233fd7a7"
+        },
+        "history_status": "exposed_history_not_independent_holdout",
+        "id": "four_factor_diversified_sector_basket",
+        "leveraged_products_allowed": false,
+        "market": {
+          "close": {
+            "path": "data/sector-basket-strategy-20261011-v3/market-close.csv",
+            "sha256": "c978bce5c357e4b58e4d42a1a8045b6b8f21aab98dc49f65319612329cc21fe2"
+          },
+          "open": {
+            "path": "data/sector-basket-strategy-20261011-v3/market-open.csv",
+            "sha256": "fe682730e90a7b58f1a154c55235ffde31d6fd4545bd50e6b08364a27d7204cc"
+          },
+          "raw_close": {
+            "path": "data/sector-basket-strategy-20261011-v3/market-raw_close.csv",
+            "sha256": "7077371531f4b6ec7048953758c7c5567c9c07e41a3ea58c5bce7c41ec184aa9"
+          },
+          "risk_free": {
+            "path": "data/sector-basket-strategy-20261011-v3/market-risk_free.csv",
+            "sha256": "af36e3deb9bf0685553617f6614eacefcd2282b76c0af81404f04669e9f5eef3"
+          },
+          "volume": {
+            "path": "data/sector-basket-strategy-20261011-v3/market-volume.csv",
+            "sha256": "ef1685ee6df0a249969536a31878a4e7243540d408f2f754ef6eb6236cafb18d"
+          }
+        },
+        "order_authority": false
+      }
+    },
+    {
+      "candidate_spec": {
+        "body_sha256": "8c999df3a5fa1603e29d1fe2b7274036638acd0d83f8cbff9cd087f0628e0dde",
+        "path": "data/sector-basket-strategy-20261011-v3/four_factor_diversified_sector_dollar_half-spec.json",
+        "sha256": "c64391032469efd85f2de8c2b1ea9c788f82d5853ffe52c0d9f16dd94c82fd2a"
+      },
+      "readiness": {
+        "body_sha256": "10378ee8602f90ed9ceb4ac2ed901c191938c1639d3496f3a1394a1cada2a71a",
+        "path": "data/sector-basket-strategy-20261011-v3/readiness.json",
+        "sha256": "6159d614f681cc497586cb0f59e56f8217d3ae02f74ae40154aeb4944be8c067"
+      },
+      "registration": {
+        "candidate_id": "four_factor_diversified_sector_dollar_half",
+        "data_scope": "factor_etf_portfolio",
+        "families": [
+          "earnings_quality",
+          "low_volatility",
+          "momentum",
+          "value"
+        ],
+        "order_authority": false,
+        "readiness_sha256": "10378ee8602f90ed9ceb4ac2ed901c191938c1639d3496f3a1394a1cada2a71a",
+        "registered_at": "2026-10-11T11:29:50.945670+00:00",
+        "spec_sha256": "8c999df3a5fa1603e29d1fe2b7274036638acd0d83f8cbff9cd087f0628e0dde"
+      },
+      "spec": {
+        "asset_leverage": {
+          "BIL": 1.0,
+          "GLD": 1.0,
+          "IEF": 1.0,
+          "MTUM": 1.0,
+          "QUAL": 1.0,
+          "SPY": 1.0,
+          "USMV": 1.0,
+          "VLUE": 1.0,
+          "XLB": 1.0,
+          "XLE": 1.0,
+          "XLF": 1.0,
+          "XLI": 1.0,
+          "XLK": 1.0,
+          "XLP": 1.0,
+          "XLU": 1.0,
+          "XLV": 1.0,
+          "XLY": 1.0
+        },
+        "configuration": {
+          "dollar_guard": true,
+          "id": "four_factor_diversified_sector_dollar_half"
+        },
+        "data_scope": "factor_etf_portfolio",
+        "evaluation_as_of": "2026-10-05",
+        "factor_ids": [
+          "price_momentum",
+          "value_exposure",
+          "quality_exposure",
+          "low_volatility_exposure"
+        ],
+        "frozen_files": {
+          "config/dollar-risk-guard.json": "4a4b960dfb52e894f1fc58ba86108cd86237cf4b77698c3cd0f0063fc1a32b3c",
+          "config/dual-horizon.json": "85d9475cb6089e27b181f466be4fc81b345caa05924de4a12cf9071bdf271e92",
+          "config/factor-research.json": "d02d0b085935abd93a9f7dc61a5bda8fd45d24630c1c26108851c179be30f76c",
+          "config/growth-factor-satellite.json": "7f53dffeafdea3211980a7c6704c450f6142ff99fbf1332772f6e5969bd9b837",
+          "config/sector-basket-sources.json": "81d75bafad58205ed03f7a2c7927c49533bef46ed2c66a7cfa79172f01e053d8",
+          "config/sector-basket-strategy.json": "db1e83de8699692a53e7b216229605a4b5c7934d4cf99ffeaae1c03aa083574e",
+          "config/sector-growth-balance.json": "ed3fef4f25dbda3132df2480e43a5188719776485c9018c5447c9e2aad2f4103",
+          "data/dollar-information-source-20261011/verified-manifest.json": "d5a9329e4b852509e4a19341b3b4d5f98ecbd52f62e0184fc74f92d7118278ae",
+          "data/macro-rate-access-20261010/DFII10-curl-response.csv": "b9e7817be5c95412df6a000b8f12f4228db580923f5ad530d942aa558eade429",
+          "data/macro-rate-access-20261010/verified-manifest.json": "08443821e368f9769716e5f7a4bbcf6d94a9476076ecbb389257ca75280d97e3",
+          "data/sector-basket-sources-20261011/manifest.json": "65eced0b12e4909ee0ca67587f59a000a11107950e05613475cc8439f241a32a",
+          "evidence/factor_gold_risk_20261010_registration.json": "94d7e5130dc480ef858cf1a23bb9da5a1ff6f66825c60e9fe6144103616dee86",
+          "evidence/factor_round_20261007_registration.json": "1b6001095264367bf409dac1d6f32fa0668b2fc37ea38f8a48705785e09b7cde",
+          "evidence/sector_basket_source_readiness_20261011.json": "76f1dbb9f4a7ef029307ba11fce0fec9a1cbd53317e20cf676fe79654b57fbf2",
+          "src/us_quant/dollar_risk_guard.py": "c4b6db938cc98791fcb620f5317c4b964428e518689e75b6696cf1f8ee38ae53",
+          "src/us_quant/dual_horizon.py": "38fb924e30901cf58647163c6c5bb530ff96c5e03947acd8b61111665088ee7b",
+          "src/us_quant/factor_research.py": "9b4e09d2cf9b70d7664764f37ead01ff22467f3fe7db130faab461114e711103",
+          "src/us_quant/growth_factor_satellite.py": "a83f647efa43becd7538c421ff3ba512f6951f6f2f90e8a447b53732e8b18f90",
+          "src/us_quant/macro_factor_tilt.py": "40a2fec8b2502bd8cba21a1ac8b16397d98ed77d8c2cd304ba814c20eaf623b0",
+          "src/us_quant/multifactor_stability.py": "05423115c9171a20f0c870e2556b4f25f787df737da4b1f87da5f5fffe3ae7b9",
+          "src/us_quant/sector_basket_sources.py": "de2eae361be8599a352360b26674110d0978cd2857dda0677bce88716f7788dc",
+          "src/us_quant/sector_basket_strategy.py": "5e407e1ab65983c028536a4b40753fa781a88d53d9ffce11172d1a095e3b8d2a",
+          "src/us_quant/sector_growth_balance.py": "783df691d243da8794d887bd1f8bb5331f9875a271b628c157098ea6233fd7a7"
+        },
+        "history_status": "exposed_history_not_independent_holdout",
+        "id": "four_factor_diversified_sector_dollar_half",
+        "leveraged_products_allowed": false,
+        "market": {
+          "close": {
+            "path": "data/sector-basket-strategy-20261011-v3/market-close.csv",
+            "sha256": "c978bce5c357e4b58e4d42a1a8045b6b8f21aab98dc49f65319612329cc21fe2"
+          },
+          "open": {
+            "path": "data/sector-basket-strategy-20261011-v3/market-open.csv",
+            "sha256": "fe682730e90a7b58f1a154c55235ffde31d6fd4545bd50e6b08364a27d7204cc"
+          },
+          "raw_close": {
+            "path": "data/sector-basket-strategy-20261011-v3/market-raw_close.csv",
+            "sha256": "7077371531f4b6ec7048953758c7c5567c9c07e41a3ea58c5bce7c41ec184aa9"
+          },
+          "risk_free": {
+            "path": "data/sector-basket-strategy-20261011-v3/market-risk_free.csv",
+            "sha256": "af36e3deb9bf0685553617f6614eacefcd2282b76c0af81404f04669e9f5eef3"
+          },
+          "volume": {
+            "path": "data/sector-basket-strategy-20261011-v3/market-volume.csv",
+            "sha256": "ef1685ee6df0a249969536a31878a4e7243540d408f2f754ef6eb6236cafb18d"
+          }
+        },
+        "order_authority": false
+      }
+    }
+  ],
+  "engine_sha256": "5895737e284bb5d6e6ff09130f98849461054c1e231be4493c2f2ccc469bdf13",
+  "existing_W42_queue_or_forward_rules_changed": false,
+  "investment_objective_verified": false,
+  "new_economic_factor_definitions": 0,
+  "new_strategy_evaluations": 0,
+  "order_authority": false,
+  "recorded_at": "2026-10-11T11:29:54.042219+00:00",
+  "registered_before_strategy_returns": true,
+  "runner_sha256": "2ace18ba4255361f7e283995c2c095780b2262d362e6c746b728f1cbd01a704d",
+  "schema_version": 1,
+  "study": {
+    "as_of": "2026-10-05",
+    "candidates": [
+      {
+        "dollar_guard": false,
+        "id": "four_factor_diversified_sector_basket"
+      },
+      {
+        "dollar_guard": true,
+        "id": "four_factor_diversified_sector_dollar_half"
+      }
+    ],
+    "cash_reserve": 0.02,
+    "data_scope": "factor_etf_portfolio",
+    "data_start": "2015-08-10",
+    "dollar_change_sessions": 63,
+    "dollar_risk_off_scale": 0.5,
+    "equity_bucket_max": 0.7,
+    "equity_bucket_min": 0.3,
+    "factor_ids": [
+      "price_momentum",
+      "value_exposure",
+      "quality_exposure",
+      "low_volatility_exposure"
+    ],
+    "factor_symbols": [
+      "MTUM",
+      "VLUE",
+      "QUAL",
+      "USMV"
+    ],
+    "methodology": {
+      "automatic_live_deployment": false,
+      "composition": "Half the intended equitybucket is four equally weighted stylefunds,half is the selectedsectorbasket. Convert the originalstandalone98%sector allocations to unitbucketshares;missing/cappedsector exposure remainsBIL. Allfourstyles staypositive even when no sector qualifies. No hindsightstocklist or neweconomicfactorfamily.",
+      "dollar_guard": "Only secondcandidate halves allnon-BILmonthlytargets when own-vintage63sessionbroad-dollar change ispositive;zero doesnottrigger. Reuse originalH10firstavailability/conflicts/quarantine/2019unitregimes/14dayage;current/reference eachknownatownquery,not latestrevisedseries. Freedcapital goesBIL. No realyield/claims/inflationconfirmation,thresholdgrid or newmacroinput.",
+      "execution": "Completedmonthclose decisions only;allNaNnondecisionrows andindependentfreshcapital seedpreserved. USD10000,USD1/order,5bpnext-openbase/20bponefurther-sessionstress andexact10y/5ywindows. Noleverage,shorting,newdailyoverlay orsharegrid.",
+      "hypothesis": "Combine the unchanged four-style core with diversified original-sector price momentum rather than a permanently selected technology or semiconductor satellite. Compare exactly two constructions differing only in the existing broad-dollar half-risk guard.",
+      "limitations": "Formedafter122exposedstrategytrials and36sourcecomponentdiagnostics. Not independentholdout orpaperreturnreplication;momentumimplementationnotnewfamily,andoldselectionbootstrapdoesnotcorrectthesenewtrials. Publishbothactualregistrations/code/source before newaccounts;keepallfailuresandstrictSharpe/SPY/15%DDgates. OriginalW42queueandfrozenforwardmodels unchanged.",
+      "order_authority": false,
+      "provenance": "Nineordinaryfundissuer/PDF/rawCSVsources separatelyverified fromexistingcachewith0newquotes. Originalcachedacquisitiontimes preserved;legacyfingerprintdrift remainsblockedforoldstrategyreplay. Source-onlyversionedadapterdoesnotinheritoldreturns orclaimcompletehistoricalconstituents/notionalarchive.",
+      "risk": "Estimate63sessionvolatility of the actual non-BILstyle/sectorcomposition andGLD. Use the unchanged inverse-volatility30%-70%equitybucket rule and98%totalinvestment. Missingsector slots arecash inside thisbucket,so actualstockweightmay bebelowthe30%bucket bound;do not renormalize it. Sector/style stockoverlap and sharedbeta remain,andthetop3rule canstillconcentrate.",
+      "selection": "Reuse the original9sector universe and252-minus21session momentum,200daytrend,63dayinversevolatility,top3and40%standaloneNAVcap. Eligible momentum must bepositive andpriceabovetrend;rankdescendingmomentum then lexicalsymbol. Scale missing slots byselectedcount/3 and do not redistribute cappedresiduals. The new skip-only selector needs252priorreturns,not the old756sessionSPYresidual-regression warmup;no claim of replaying that old strategy orchanging its code/registration."
+    },
+    "momentum_sessions": 252,
+    "new_configurations": 2,
+    "new_economic_factor_definitions": 0,
+    "prior_evaluated_configurations": 122,
+    "satellite_share_of_equity_bucket": 0.5,
+    "schema_version": 1,
+    "sector_symbols": [
+      "XLB",
+      "XLE",
+      "XLF",
+      "XLI",
+      "XLK",
+      "XLP",
+      "XLU",
+      "XLV",
+      "XLY"
+    ],
+    "skip_sessions": 21,
+    "source_manifest": {
+      "path": "data/sector-basket-sources-20261011/manifest.json",
+      "sha256": "65eced0b12e4909ee0ca67587f59a000a11107950e05613475cc8439f241a32a"
+    },
+    "source_policy": {
+      "path": "config/sector-basket-sources.json",
+      "sha256": "81d75bafad58205ed03f7a2c7927c49533bef46ed2c66a7cfa79172f01e053d8"
+    },
+    "source_readiness": {
+      "path": "evidence/sector_basket_source_readiness_20261011.json",
+      "sha256": "76f1dbb9f4a7ef029307ba11fce0fec9a1cbd53317e20cf676fe79654b57fbf2"
+    },
+    "standalone_sector_cap": 0.4,
+    "study_id": "four_factor_diversified_sector_basket_20261011",
+    "top_k": 3,
+    "trend_sessions": 200,
+    "volatility_sessions": 63
+  },
+  "target_verification": {
+    "body_sha256": "39c1c1aaab03132b659b1940f6e8754c308c7a1ba1636bbd039e749137ac8200",
+    "path": "evidence/sector_basket_strategy_20261011_target_verification_v2.json",
+    "sha256": "7fe943578a6fc247ea9d70780788b47958ed5aa485fa708d235434b8ea0e0457"
+  }
+}

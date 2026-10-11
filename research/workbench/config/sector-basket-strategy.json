@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "study_id": "four_factor_diversified_sector_basket_20261011",
+  "data_scope": "factor_etf_portfolio",
+  "as_of": "2026-10-05",
+  "data_start": "2015-08-10",
+  "prior_evaluated_configurations": 122,
+  "new_configurations": 2,
+  "new_economic_factor_definitions": 0,
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "factor_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "sector_symbols": ["XLB", "XLE", "XLF", "XLI", "XLK", "XLP", "XLU", "XLV", "XLY"],
+  "momentum_sessions": 252,
+  "skip_sessions": 21,
+  "trend_sessions": 200,
+  "volatility_sessions": 63,
+  "top_k": 3,
+  "standalone_sector_cap": 0.40,
+  "satellite_share_of_equity_bucket": 0.50,
+  "equity_bucket_min": 0.30,
+  "equity_bucket_max": 0.70,
+  "dollar_change_sessions": 63,
+  "dollar_risk_off_scale": 0.50,
+  "cash_reserve": 0.02,
+  "candidates": [
+    {"id": "four_factor_diversified_sector_basket", "dollar_guard": false},
+    {"id": "four_factor_diversified_sector_dollar_half", "dollar_guard": true}
+  ],
+  "source_policy": {
+    "path": "config/sector-basket-sources.json",
+    "sha256": "81d75bafad58205ed03f7a2c7927c49533bef46ed2c66a7cfa79172f01e053d8"
+  },
+  "source_readiness": {
+    "path": "evidence/sector_basket_source_readiness_20261011.json",
+    "sha256": "76f1dbb9f4a7ef029307ba11fce0fec9a1cbd53317e20cf676fe79654b57fbf2"
+  },
+  "source_manifest": {
+    "path": "data/sector-basket-sources-20261011/manifest.json",
+    "sha256": "65eced0b12e4909ee0ca67587f59a000a11107950e05613475cc8439f241a32a"
+  },
+  "methodology": {
+    "hypothesis": "Combine the unchanged four-style core with diversified original-sector price momentum rather than a permanently selected technology or semiconductor satellite. Compare exactly two constructions differing only in the existing broad-dollar half-risk guard.",
+    "selection": "Reuse the original9sector universe and252-minus21session momentum,200daytrend,63dayinversevolatility,top3and40%standaloneNAVcap. Eligible momentum must bepositive andpriceabovetrend;rankdescendingmomentum then lexicalsymbol. Scale missing slots byselectedcount/3 and do not redistribute cappedresiduals. The new skip-only selector needs252priorreturns,not the old756sessionSPYresidual-regression warmup;no claim of replaying that old strategy orchanging its code/registration.",
+    "composition": "Half the intended equitybucket is four equally weighted stylefunds,half is the selectedsectorbasket. Convert the originalstandalone98%sector allocations to unitbucketshares;missing/cappedsector exposure remainsBIL. Allfourstyles staypositive even when no sector qualifies. No hindsightstocklist or neweconomicfactorfamily.",
+    "risk": "Estimate63sessionvolatility of the actual non-BILstyle/sectorcomposition andGLD. Use the unchanged inverse-volatility30%-70%equitybucket rule and98%totalinvestment. Missingsector slots arecash inside thisbucket,so actualstockweightmay bebelowthe30%bucket bound;do not renormalize it. Sector/style stockoverlap and sharedbeta remain,andthetop3rule canstillconcentrate.",
+    "dollar_guard": "Only secondcandidate halves allnon-BILmonthlytargets when own-vintage63sessionbroad-dollar change ispositive;zero doesnottrigger. Reuse originalH10firstavailability/conflicts/quarantine/2019unitregimes/14dayage;current/reference eachknownatownquery,not latestrevisedseries. Freedcapital goesBIL. No realyield/claims/inflationconfirmation,thresholdgrid or newmacroinput.",
+    "execution": "Completedmonthclose decisions only;allNaNnondecisionrows andindependentfreshcapital seedpreserved. USD10000,USD1/order,5bpnext-openbase/20bponefurther-sessionstress andexact10y/5ywindows. Noleverage,shorting,newdailyoverlay orsharegrid.",
+    "provenance": "Nineordinaryfundissuer/PDF/rawCSVsources separatelyverified fromexistingcachewith0newquotes. Originalcachedacquisitiontimes preserved;legacyfingerprintdrift remainsblockedforoldstrategyreplay. Source-onlyversionedadapterdoesnotinheritoldreturns orclaimcompletehistoricalconstituents/notionalarchive.",
+    "limitations": "Formedafter122exposedstrategytrials and36sourcecomponentdiagnostics. Not independentholdout orpaperreturnreplication;momentumimplementationnotnewfamily,andoldselectionbootstrapdoesnotcorrectthesenewtrials. Publishbothactualregistrations/code/source before newaccounts;keepallfailuresandstrictSharpe/SPY/15%DDgates. OriginalW42queueandfrozenforwardmodels unchanged.",
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

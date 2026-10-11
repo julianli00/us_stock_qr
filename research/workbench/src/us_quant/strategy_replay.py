@@ -32,6 +32,7 @@ GENERATORS = {
     "inflation_factor_guard": "config/inflation-factor-guard.json",
     "claims_factor_guard": "config/claims-factor-guard.json",
     "factor_covariance_risk": "config/factor-covariance-risk.json",
+    "sector_basket_strategy": "config/sector-basket-strategy.json",
 }
 
 
@@ -193,6 +194,25 @@ def registered_generator(spec: dict, root: Path) -> tuple[str, dict]:
                 "evidence/risk_only_covariance_20261011_source_context.json",
                 "evidence/factor_gold_risk_20261010_registration.json",
             ]
+        elif name == "sector_basket_strategy":
+            required += [
+                "src/us_quant/sector_basket_sources.py",
+                "src/us_quant/sector_growth_balance.py",
+                "src/us_quant/factor_research.py",
+                "src/us_quant/multifactor_stability.py",
+                "src/us_quant/dual_horizon.py",
+                "src/us_quant/dollar_risk_guard.py",
+                "src/us_quant/macro_factor_tilt.py",
+                "config/sector-basket-sources.json",
+                "config/factor-research.json",
+                "config/dual-horizon.json",
+                "config/dollar-risk-guard.json",
+                "evidence/factor_round_20261007_registration.json",
+                "evidence/factor_gold_risk_20261010_registration.json",
+                "evidence/sector_basket_source_readiness_20261011.json",
+                "data/sector-basket-sources-20261011/manifest.json",
+                "data/dollar-information-source-20261011/verified-manifest.json",
+            ]
         if any(relative not in frozen for relative in required):
             raise QuantError("The registered strategy is missing a frozen helper dependency.")
         for relative in required:
@@ -333,4 +353,8 @@ def registered_targets(
             from us_quant.factor_covariance_risk import build_targets
 
             cache[key] = build_targets(data, policy)[0][spec["id"]]
+        elif name == "sector_basket_strategy":
+            from us_quant.sector_basket_strategy import build_targets
+
+            cache[key] = build_targets(data, policy)[spec["id"]]
     return seed_window(cache[key], start)
