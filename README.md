@@ -5752,7 +5752,7 @@ Any strategy using these versions needs separately frozen rules,
 actual registration and remote publication before performance calculation.
 Source readiness does not complete the investment objective.
 
-## Treasury transition confirmations: registered before accounts
+## Treasury transition confirmations: return gates pass, drawdown fails
 
 The [fixed policy](research/workbench/config/curve-transition-guard.json)
 and [generator](research/workbench/src/us_quant/curve_transition_guard.py)
@@ -5793,9 +5793,52 @@ creating account output. The
 retains 154 completed configurations/70 reviews, with 74 versions including
 two old invalid ones and exactly two pending candidates.
 **No new candidate returns or metrics have been computed at registration.**
-Remote publication of this packet and frozen implementation is required
-before the four-path funded/bt evaluation. Original W42 plans, forward
-models and the unmet investment objective remain unchanged.
+Actual remote publication
+`c02cd6505c11a75fefffe46898aecd2851e5ce35` precedes the durable
+21:36:44.098299UTC fence and both new account calculations.
+The [independently verified results](research/workbench/evidence/curve_transition_20261011_results.json)
+retain all four paths per view:
+
+| View | Window | Costs | CAGR | Net excess Sharpe | Maximum drawdown |
+|---|---|---|---:|---:|---:|
+| 10y-minus-3m | 10y | Base | 18.0522% | 1.08043 | 20.4930% |
+| 10y-minus-3m | 10y | Stress | 17.5918% | 1.05215 | 20.4869% |
+| 10y-minus-3m | 5y | Base | 22.7229% | 1.14770 | 20.6489% |
+| 10y-minus-3m | 5y | Stress | 21.7954% | 1.09871 | 20.6435% |
+| 10y-minus-2y | 10y | Base | 17.7435% | 1.05566 | 20.4930% |
+| 10y-minus-2y | 10y | Stress | 17.1622% | 1.01842 | 20.4869% |
+| 10y-minus-2y | 5y | Base | 22.0779% | 1.10369 | 20.6489% |
+| 10y-minus-2y | 5y | Stress | 20.9010% | 1.03904 | 20.6435% |
+
+**All eight Sharpe and same-cost SPY gates pass**, as do all four stress
+comparisons with base-cost SPY. **All eight 15% drawdown gates fail,
+so both configurations remain rejected.**
+Their worst drawdown spans March 8 to October 14, 2022.
+The maturity confirmation does not authenticate an independent forecast,
+and passing return gates cannot be combined with another candidate's
+lower drawdown to create a fictitious qualified portfolio.
+
+The [reproducibility proof](research/workbench/evidence/curve_transition_20261011_reproducibility.json)
+checks all 16 funded strategy/SPY accounts and 16 independent bt accounts,
+including 30,128 actual-price quantity/funding/cash-flow days.
+Target, metric and account wealth errors are at most 1.11e-16,
+3.42e-14 and USD1.10e-10. Both views have distinct seeded target and strategy
+CSV bytes in all four matched window/cost comparisons; distinct paths
+are still not independent alpha sources.
+The [preservation proof](research/workbench/evidence/curve_transition_20261011_preservation.json)
+retains every old journal row, seven profiles, 69 imports and 3,192 controls.
+
+The [current snapshot](research/workbench/evidence/research_program_2026-W41_curve_transition_results_v79.json)
+contains **156 completed configurations = 84 prior + 72 recurring reviews**,
+74 versions including two old invalid ones, no pending candidate and no champion.
+The [complete source-bound audit](research/workbench/evidence/research_program_source_bound_audit_v52.json)
+reexecutes all 72 reviews/288 paths, with 19 legacy and 53 funded-v2 reviews,
+without rewriting prior outcomes.
+The [updated native instructions](research/workbench/evidence/prospective_data_automation_v52.json)
+retain daily/weekly cadence, original W42 plans and both frozen forward
+models, which still have zero actual return sessions.
+No threshold, horizon, scale, source or execution rule is refitted.
+**The full investment objective remains unmet.**
 
 ## Progress and publication
 
