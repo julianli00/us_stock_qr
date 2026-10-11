@@ -4507,6 +4507,75 @@ hypothesis may still fail; prior selection diagnostics do not
 correct these trials or all searches.
 **The investment objective remains unmet.**
 
+The [completed breadth results](research/workbench/evidence/sector_breadth_20261011_results.json)
+retain both constructions and all eight paths:
+
+| Weak-breadth equity rule/window | Base net CAGR / Sharpe / drawdown | Stress net CAGR / Sharpe / drawdown |
+|---|---|---|
+| Half equity, ten-year | 17.30% / 1.0712 / 19.20% | 17.07% / 1.0543 / 18.90% |
+| Half equity, five-year | 22.22% / 1.1242 / 19.38% | 21.58% / 1.0888 / 19.08% |
+| Equity off, ten-year | 16.24% / 1.0306 / 18.21% | 16.18% / 1.0248 / 17.65% |
+| Equity off, five-year | 21.08% / 1.0818 / 18.28% | 20.64% / 1.0572 / 17.72% |
+
+**Every Sharpe/SPY gate and every stress-versus-base-cost-SPY
+gate passes, but every drawdown gate fails.** Both constructions
+remain rejected under the unchanged joint objective. A minimum
+Sharpe of 1.0543/1.0248 does not erase maximum drawdowns of
+19.38%/18.28% or establish independent future alpha.
+No sector subset, 200-observation mean, majority threshold,
+risk scale, source allocation or gold weight is refitted.
+
+All eight worst episodes peak on 2022-03-08; half equity
+troughs on 2022-10-20, equity off on 2022-09-26.
+The [post-outcome drawdown attribution](research/workbench/evidence/sector_breadth_20261011_drawdown_attribution.json)
+reconciles 1,184 observed post-peak account days. Prior normalized
+quantities mark the prior-close-to-open move; post-trade
+quantities mark open-to-close, with modeled fees separate.
+Each day's NAV change and the full original peak-to-trough
+loss reconcile without invoking the production simulator.
+
+Across these fixed episodes, **gold mark losses contribute
+14.28–14.40 percentage points of each path's own peak NAV**,
+larger than equity losses of 2.99–4.63 points.
+Modeled fees contribute 0.176–0.599 points; BIL contributes
+a small gain. These are additive held-position loss fractions,
+not sums of CAGR or isolated/equal-risk/causal factor alpha.
+Daily/episode reconciliation errors are 6.37e-12/8.19e-12 USD.
+The hindsight diagnosis does not prove a future gold gate
+will work and does not add strategy trials or expand the
+frozen 36-source control cohort.
+
+The [independent account proof](research/workbench/evidence/sector_breadth_20261011_reproducibility.json)
+checks all 16 funded strategy/SPY and 16 independent `bt`
+accounts, all proven sector signals, original targets/dates,
+window seeds, costs/rates/calendars and initial-capital peaks.
+It also checks 30,128 account sessions of actual-price
+quantities, opening funding, orders, fees and cash flow.
+Prepared/actual seeded target error is zero; maximum scalar
+metric/equity/cash-flow errors are
+3.74e-14/9.46e-11 USD/1.29e-11 USD.
+
+The [current snapshot](research/workbench/evidence/research_program_2026-W41_breadth_results_v59.json)
+contains **136 completed configurations = 84 prior + 52 recurring reviews**,
+54 registered versions including two old invalid ones,
+no pending actual candidate and no champion.
+The [full source-bound audit](research/workbench/evidence/research_program_source_bound_audit_v33.json)
+reexecutes 52 reviews/208 paths, retaining 19 legacy and 33
+explicit funded-v2 reviews.
+The [preservation proof](research/workbench/evidence/sector_breadth_20261011_preservation.json)
+keeps all old journal rows/prefix, 69 imported files, seven
+forward profiles and 3,192 frozen prior control artifacts.
+
+The [native continuation](research/workbench/evidence/prospective_data_automation_v39.json)
+retains these return passes and drawdown failures, the source
+version limits, original daily/weekly cadence, W42 plans,
+IJR/PKW quota and both frozen forward models.
+Both models still have zero actual return sessions.
+Any new risk hypothesis needs its own fixed rule,
+source proof and published registration before accounts;
+these results do not modify either forward experiment.
+**The investment objective remains unmet.**
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
