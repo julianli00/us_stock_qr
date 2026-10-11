@@ -5545,15 +5545,62 @@ The [preservation proof](research/workbench/evidence/activity_guard_20261011_reg
 verifies one exact old-engine/event-head migration and all seven original
 semantic forward profiles, 69 imports and 3,192 controls.
 The [registered snapshot](research/workbench/evidence/research_program_2026-W41_activity_registered_v74.json)
-retains 150 completed configurations and 66 reviews, with 70 registered
+retained 150 completed configurations and 66 reviews, with 70 registered
 versions including two old invalid ones, two actual pending candidates
 and no champion.
 The [prior-path audit](research/workbench/evidence/research_program_source_bound_audit_v48.json)
 reexecutes all 66 reviews/264 paths. An actual old-commit attempt
 stops before strategy account/output creation.
-**No new account return has been calculated at this checkpoint.**
+**No new account return had been calculated at registration.**
 The exact original registration/code/policy/proof must be remotely published
 before evaluation. Original W42 plans and both frozen forward models remain.
+
+## Verified activity confirmations: Sharpe and returns pass, drawdown fails
+
+The [complete outcomes](research/workbench/evidence/activity_guard_20261011_results.json)
+follow actual remote publication of the original registration/code/proof
+in `1a21a515`. The recorded fence at 20:33:50.018063 UTC precedes accounts
+from 20:33:50.019121 through 20:34:12.150721 UTC.
+Both rules retain the original monthly budgets, costs, capital and
+explicit five-month no-rebalance law.
+
+| Activity confirmation | Window | Base CAGR / excess Sharpe / drawdown | Stress CAGR / excess Sharpe / drawdown |
+| --- | --- | --- | --- |
+| Magnitude | Ten years | 17.6775% / 1.0388 / 20.5001% | 17.2800% / 1.0143 / 20.4942% |
+| Diffusion | Ten years | 17.9416% / 1.0529 / 20.4960% | 17.5611% / 1.0293 / 20.4898% |
+| Either rule | Five years | 22.9406% / 1.1203 / 20.6489% | 22.1626% / 1.0798 / 20.6435% |
+
+**Every Sharpe/SPY return gate and every stressed-strategy/base-SPY gate
+passes, but all eight drawdown gates fail. Both candidates are rejected.**
+Worst episodes run from March 8 through October 14, 2022; these
+descriptive dates do not establish causal risk protection.
+Ten-year stress has 699 orders/USD1,126.81 for magnitude and
+698/USD1,134.98 for diffusion.
+No threshold, 63-session window, scale, source age or cost is refitted.
+
+The [independent reproduction](research/workbench/evidence/activity_guard_20261011_reproducibility.json)
+checks 16 funded and 16 independent-bt accounts, 30,128 funding days,
+all seeded targets and 40 specific pause/no-rebalance/retained-holding cases.
+Maximum target/metric/equity/cash-flow errors are
+0/3.58e-14/1.10e-10 USD/1.24e-11 USD.
+Both complete five-year seeded target segments and funded/bt account bytes
+are identical, despite different full pre-window target contexts.
+The five-year results are therefore not independent evidence for two alpha sources.
+All actual return days remain; no stale source is filled or relabelled as repaired.
+
+The [current snapshot](research/workbench/evidence/research_program_2026-W41_activity_results_v75.json)
+contains **152 completed configurations = 84 prior + 68 recurring reviews**,
+70 versions including two old invalid ones, no pending candidate and no champion.
+The [full source-bound audit](research/workbench/evidence/research_program_source_bound_audit_v49.json)
+reexecutes all 68 reviews/272 paths, retaining 19 legacy and 49 explicit funded-v2
+reviews. The [preservation proof](research/workbench/evidence/activity_guard_20261011_preservation.json)
+keeps all old journal rows/prefix, 69 imports, seven forward profiles,
+3,192 frozen controls and the original W42 queue.
+
+The [updated native instructions](research/workbench/evidence/prospective_data_automation_v49.json)
+retain Sharpe/SPY successes alongside the drawdown failures and unchanged
+daily/weekly cadence. Both frozen forward models still have zero actual
+return sessions. **The full investment objective remains unmet.**
 
 ## Progress and publication
 
