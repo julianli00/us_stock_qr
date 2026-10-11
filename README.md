@@ -5320,6 +5320,36 @@ Observed return-score gains do not establish independent
 future performance or permit changing the return goal.
 **The investment objective remains unmet.**
 
+## Existing energy and materials source preparation
+
+The [source-only policy](research/workbench/config/producer-sector-sources.json)
+and [implementation](research/workbench/src/us_quant/producer_sector_sources.py)
+append actual XLE energy-company and XLB materials-sector fund prices to
+the original twelve-asset portfolio. Each added fund has all 2,805 required
+price sessions; no new quote request, portfolio target or account was produced.
+The [independent source proof](research/workbench/evidence/producer_sector_20261011_source_readiness.json)
+checks 137,445 original panel/rate observations without changing a value,
+22,440 added raw/CSV price-volume observations, and each fund's scoped
+issuer identity and advertised primary PDF. Original acquisition times,
+corporate-action guards and both separate XLK price versions remain intact.
+
+**This is data preparation, not a new strategy or factor family.**
+Producer-company equities are not direct commodity futures or guaranteed
+inflation hedges. A possible gold-trend-released-budget allocation still needs
+separately frozen source/budget/selector rules, an explicit fourteen-asset
+ResearchProgram adapter, actual registration and remote publication before
+portfolio performance may be calculated. The source helper implements none
+of that strategy admission and does not change stock-standby BIL targets.
+
+The [preservation proof](research/workbench/evidence/producer_sector_20261011_preservation.json)
+retains the exact old ledger/engine/head, seven forward profiles,
+69 imported files and 3,192 frozen controls. Counts remain **148 completed
+configurations, 64 recurring reviews, no qualified champion**.
+The [updated native instructions](research/workbench/evidence/prospective_data_automation_v46.json)
+keep daily/weekly timing, the original four W42 plans and both frozen
+forward models; source coverage does not establish strategy qualification
+or independent native message delivery.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
