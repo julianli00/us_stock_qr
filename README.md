@@ -4373,6 +4373,65 @@ failures and all prior failed trials remain. Neither new
 Treasury routing nor extra ETF names establish independent alpha.
 **The investment objective remains unmet.**
 
+The [completed residual-Treasury results](research/workbench/evidence/residual_treasury_20261011_results.json)
+retain both fixed routes and every window/cost path:
+
+| Residual-Treasury rule/window | Base net CAGR / Sharpe / drawdown | Stress net CAGR / Sharpe / drawdown |
+|---|---|---|
+| Strongest qualifying Treasury, ten-year | 14.15% / 0.9581 / 15.67% | 13.29% / 0.8950 / 15.12% |
+| Strongest qualifying Treasury, five-year | 18.57% / 1.0526 / 13.15% | 17.48% / 0.9825 / 13.29% |
+| All qualifying Treasuries, ten-year | 14.25% / 0.9720 / 15.41% | 13.37% / 0.9068 / 14.90% |
+| All qualifying Treasuries, five-year | 18.49% / 1.0520 / 13.15% | 17.44% / 0.9837 / 13.29% |
+
+**Neither route improves the original BIL-residual source: every
+one of the eight comparisons has lower net CAGR and Sharpe and
+higher drawdown.** Both pass all five-year base gates, but lose
+the original source's five-year stress Sharpe pass
+(0.982475/0.983735, strictly below 1). Both ten-year
+return/Sharpe gates and base drawdown gates fail. The original
+source's five-year complete passes and ten-year failures are
+retained, not rewritten or rounded into overall acceptance.
+
+Ten-year stress orders/modeled fees rise to 789/USD2,176.25
+for the strongest route and 823/USD2,225.91 for diversification,
+versus the original BIL source's 776/USD1,954.93. Changing
+duration exposure also changes subsequent NAV and therefore
+dollar holdings of unchanged targets; these observations do
+not isolate fee causality, equal-risk performance or
+independent Treasury alpha. The Treasury subset, eligibility,
+126/63 horizons and parent trend rules are not refitted.
+
+The [independent account proof](research/workbench/evidence/residual_treasury_20261011_reproducibility.json)
+checks all 16 funded strategy/SPY and 16 independent `bt`
+accounts, all proven selector targets/event dates/window seeds,
+original fees/rates/calendars and initial-capital peaks.
+It also checks 30,128 account sessions from actual prices:
+normalized quantities, opening target funding, order thresholds,
+cash flows, costs, turnover and closing wealth, without calling
+the production simulator. Adjusted-price units are internal
+accounting quantities, not broker share quantities.
+Prepared versus actual seeded targets agree exactly; maximum
+scalar metric/equity/cash-flow errors are
+4.11e-14/7.28e-11 USD/1.10e-11 USD.
+
+The [current snapshot](research/workbench/evidence/research_program_2026-W41_residual_results_v57.json)
+contains **134 completed configurations = 84 prior + 50 recurring reviews**,
+52 registered code versions including two old invalid ones,
+no pending actual candidate and no champion.
+The [full source-bound audit](research/workbench/evidence/research_program_source_bound_audit_v31.json)
+reexecutes 50 reviews/200 paths, retaining 19 legacy and 31
+explicit funded-v2 reviews. The [preservation proof](research/workbench/evidence/residual_treasury_20261011_preservation.json)
+keeps the exact old journal prefix/rows, 69 imported files,
+seven forward profiles and all 3,192 prior control artifacts.
+
+The [native continuation](research/workbench/evidence/prospective_data_automation_v38.json)
+retains these failed routes, original daily/weekly cadence,
+all four W42 plans, IJR/PKW quota and both frozen forward
+models. Both models still have zero actual return sessions.
+Prior selection diagnostics do not cover these two trials
+or the complete search. No research model is replaced and
+**the investment objective remains unmet**.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
