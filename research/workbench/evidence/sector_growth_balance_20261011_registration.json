@@ -1,0 +1,253 @@
+{
+  "all_prior_reviews_factor_definitions_and_technical_failures_preserved": true,
+  "candidates": [
+    {
+      "registration": {
+        "candidate_id": "four_factor_technology_sector50",
+        "data_scope": "factor_etf_portfolio",
+        "families": [
+          "earnings_quality",
+          "low_volatility",
+          "momentum",
+          "value"
+        ],
+        "order_authority": false,
+        "readiness_sha256": "09a6fab2444d90524563130c15e500414b72a5afc637a4b5798aaca52ecb87ba",
+        "registered_at": "2026-10-11T02:16:37.041463+00:00",
+        "spec_sha256": "d43d8a56bfa198b22ab7901edf38d18fffe1891d0765e8ee1eff80f24f3f7aed"
+      },
+      "spec": {
+        "asset_leverage": {
+          "BIL": 1.0,
+          "GLD": 1.0,
+          "IEF": 1.0,
+          "MTUM": 1.0,
+          "QQQ": 1.0,
+          "QUAL": 1.0,
+          "SOXX": 1.0,
+          "SPY": 1.0,
+          "TLT": 1.0,
+          "USMV": 1.0,
+          "VLUE": 1.0,
+          "XLK": 1.0
+        },
+        "configuration": {
+          "growth_share_of_equity": 0.5,
+          "id": "four_factor_technology_sector50",
+          "sector_symbol": "XLK"
+        },
+        "data_scope": "factor_etf_portfolio",
+        "evaluation_as_of": "2026-10-05",
+        "factor_ids": [
+          "price_momentum",
+          "value_exposure",
+          "quality_exposure",
+          "low_volatility_exposure"
+        ],
+        "frozen_files": {
+          "config/growth-factor-satellite.json": "7f53dffeafdea3211980a7c6704c450f6142ff99fbf1332772f6e5969bd9b837",
+          "config/sector-growth-balance.json": "ed3fef4f25dbda3132df2480e43a5188719776485c9018c5447c9e2aad2f4103",
+          "data/sector-growth-source-20261011/SOXX-factsheet-request.json": "0ca3091a8ad04fda30c8836386c6045d799c7cd7f30393c76d39d663fc649324",
+          "data/sector-growth-source-20261011/SOXX-factsheet.pdf": "7bac89bd17040a64cfbb9610d77d685173fed1f9f38fd84a134537cf2e4bb23e",
+          "data/sector-growth-source-20261011/SOXX-issuer.html": "e2649e864163311039bc703c5277e2e32df90328668db9e86057cd3f8ec2aaa1",
+          "data/sector-growth-source-20261011/SOXX-price-request.json": "bd08dbc91bf80b06d80dc569e207bb550f81ffb75e931b461e6141ccd8a990fc",
+          "data/sector-growth-source-20261011/SOXX-raw.json": "aa4b117b0147f13d571a522881c90cfd6c6a416b7efe743c316b16a577ec74a1",
+          "data/sector-growth-source-20261011/SOXX-summary-underlying-request.json": "db8410d01582b6123dbf7e792fd33d3687bb87c7c490975b1dd0c4aeab1f0e64",
+          "data/sector-growth-source-20261011/SOXX-summary-underlying.pdf": "4fcf096b9e75f99f1cce0d62eb6b8e65a6f9e82503738ccaca6e6b4721516bfc",
+          "data/sector-growth-source-20261011/SOXX.csv": "31bb1c024472e23e985e7bd33dbb1655703f3f9289bef175836dea16e652a0f4",
+          "data/sector-growth-source-20261011/XLK-factsheet-request.json": "ceb33c1b2e199542d655af71ebfb48a77abea50fa7033491ed0abfdbdbef1fe1",
+          "data/sector-growth-source-20261011/XLK-factsheet.pdf": "c8b7997b458c1835503c8901403f9d4f4c24e85470c2443454bb8e77fb419a34",
+          "data/sector-growth-source-20261011/XLK-issuer.html": "d67107f4f079d3a9e5fcdc6a660fbbd6ac8d10fec1ca0f73883a67a32fbe21e3",
+          "data/sector-growth-source-20261011/XLK-price-request.json": "489418c21640a43f9b7d057d0a4defb378a3b929a4ef9b390b9b202792b561f3",
+          "data/sector-growth-source-20261011/XLK-raw.json": "49299c90de030e873b164e7a84d5cb077dbca6293c881f67a229b42dc7545dbb",
+          "data/sector-growth-source-20261011/XLK.csv": "c3ea3867c3e4294a1c717ac1dbff7b7249380820cc52d717ae40cb172cb19ea9",
+          "data/sector-growth-source-20261011/manifest.json": "eb43e116d5bdd13cf08a10b7bcca4ebd044cfb6a21e1b1511d6f377e6a466973",
+          "evidence/growth_portfolio_protection_20261011_registration.json": "b712b375fc3599bd8691996c4d33ff4b9878c63b6b95b1fa8ca27935b9e468fe",
+          "src/us_quant/growth_factor_satellite.py": "a83f647efa43becd7538c421ff3ba512f6951f6f2f90e8a447b53732e8b18f90",
+          "src/us_quant/multifactor_stability.py": "05423115c9171a20f0c870e2556b4f25f787df737da4b1f87da5f5fffe3ae7b9",
+          "src/us_quant/sector_growth_balance.py": "783df691d243da8794d887bd1f8bb5331f9875a271b628c157098ea6233fd7a7"
+        },
+        "history_status": "exposed_history_not_independent_holdout",
+        "id": "four_factor_technology_sector50",
+        "leveraged_products_allowed": false,
+        "market": {
+          "close": {
+            "path": "data/sector-growth-prepared-20261011/close.csv",
+            "sha256": "762f7f258684062be17f3f7f91e28b6df1071fdaf2c60fcd69d107932ae12944"
+          },
+          "open": {
+            "path": "data/sector-growth-prepared-20261011/open.csv",
+            "sha256": "f0aa7bf3f417f71343b8901f17803d9cf35e0eddd0d06c61878ab6ea7ea5f568"
+          },
+          "raw_close": {
+            "path": "data/sector-growth-prepared-20261011/raw_close.csv",
+            "sha256": "1d1c39f25326d14a69c9f875e428bb2303b54f823716a5800622f5e24d5783d9"
+          },
+          "risk_free": {
+            "path": "data/sector-growth-prepared-20261011/risk_free.csv",
+            "sha256": "af36e3deb9bf0685553617f6614eacefcd2282b76c0af81404f04669e9f5eef3"
+          },
+          "volume": {
+            "path": "data/sector-growth-prepared-20261011/volume.csv",
+            "sha256": "bf5686211d0f1191b951498d9b1a74c087571fa05adb7aed541104bda6af2a4a"
+          }
+        },
+        "order_authority": false
+      }
+    },
+    {
+      "registration": {
+        "candidate_id": "four_factor_semiconductor_sector50",
+        "data_scope": "factor_etf_portfolio",
+        "families": [
+          "earnings_quality",
+          "low_volatility",
+          "momentum",
+          "value"
+        ],
+        "order_authority": false,
+        "readiness_sha256": "09a6fab2444d90524563130c15e500414b72a5afc637a4b5798aaca52ecb87ba",
+        "registered_at": "2026-10-11T02:16:40.263799+00:00",
+        "spec_sha256": "68b4d29292d982455b8ed1ed5a0b2f9d5941f41e2582583f7fba45773c73a988"
+      },
+      "spec": {
+        "asset_leverage": {
+          "BIL": 1.0,
+          "GLD": 1.0,
+          "IEF": 1.0,
+          "MTUM": 1.0,
+          "QQQ": 1.0,
+          "QUAL": 1.0,
+          "SOXX": 1.0,
+          "SPY": 1.0,
+          "TLT": 1.0,
+          "USMV": 1.0,
+          "VLUE": 1.0,
+          "XLK": 1.0
+        },
+        "configuration": {
+          "growth_share_of_equity": 0.5,
+          "id": "four_factor_semiconductor_sector50",
+          "sector_symbol": "SOXX"
+        },
+        "data_scope": "factor_etf_portfolio",
+        "evaluation_as_of": "2026-10-05",
+        "factor_ids": [
+          "price_momentum",
+          "value_exposure",
+          "quality_exposure",
+          "low_volatility_exposure"
+        ],
+        "frozen_files": {
+          "config/growth-factor-satellite.json": "7f53dffeafdea3211980a7c6704c450f6142ff99fbf1332772f6e5969bd9b837",
+          "config/sector-growth-balance.json": "ed3fef4f25dbda3132df2480e43a5188719776485c9018c5447c9e2aad2f4103",
+          "data/sector-growth-source-20261011/SOXX-factsheet-request.json": "0ca3091a8ad04fda30c8836386c6045d799c7cd7f30393c76d39d663fc649324",
+          "data/sector-growth-source-20261011/SOXX-factsheet.pdf": "7bac89bd17040a64cfbb9610d77d685173fed1f9f38fd84a134537cf2e4bb23e",
+          "data/sector-growth-source-20261011/SOXX-issuer.html": "e2649e864163311039bc703c5277e2e32df90328668db9e86057cd3f8ec2aaa1",
+          "data/sector-growth-source-20261011/SOXX-price-request.json": "bd08dbc91bf80b06d80dc569e207bb550f81ffb75e931b461e6141ccd8a990fc",
+          "data/sector-growth-source-20261011/SOXX-raw.json": "aa4b117b0147f13d571a522881c90cfd6c6a416b7efe743c316b16a577ec74a1",
+          "data/sector-growth-source-20261011/SOXX-summary-underlying-request.json": "db8410d01582b6123dbf7e792fd33d3687bb87c7c490975b1dd0c4aeab1f0e64",
+          "data/sector-growth-source-20261011/SOXX-summary-underlying.pdf": "4fcf096b9e75f99f1cce0d62eb6b8e65a6f9e82503738ccaca6e6b4721516bfc",
+          "data/sector-growth-source-20261011/SOXX.csv": "31bb1c024472e23e985e7bd33dbb1655703f3f9289bef175836dea16e652a0f4",
+          "data/sector-growth-source-20261011/XLK-factsheet-request.json": "ceb33c1b2e199542d655af71ebfb48a77abea50fa7033491ed0abfdbdbef1fe1",
+          "data/sector-growth-source-20261011/XLK-factsheet.pdf": "c8b7997b458c1835503c8901403f9d4f4c24e85470c2443454bb8e77fb419a34",
+          "data/sector-growth-source-20261011/XLK-issuer.html": "d67107f4f079d3a9e5fcdc6a660fbbd6ac8d10fec1ca0f73883a67a32fbe21e3",
+          "data/sector-growth-source-20261011/XLK-price-request.json": "489418c21640a43f9b7d057d0a4defb378a3b929a4ef9b390b9b202792b561f3",
+          "data/sector-growth-source-20261011/XLK-raw.json": "49299c90de030e873b164e7a84d5cb077dbca6293c881f67a229b42dc7545dbb",
+          "data/sector-growth-source-20261011/XLK.csv": "c3ea3867c3e4294a1c717ac1dbff7b7249380820cc52d717ae40cb172cb19ea9",
+          "data/sector-growth-source-20261011/manifest.json": "eb43e116d5bdd13cf08a10b7bcca4ebd044cfb6a21e1b1511d6f377e6a466973",
+          "evidence/growth_portfolio_protection_20261011_registration.json": "b712b375fc3599bd8691996c4d33ff4b9878c63b6b95b1fa8ca27935b9e468fe",
+          "src/us_quant/growth_factor_satellite.py": "a83f647efa43becd7538c421ff3ba512f6951f6f2f90e8a447b53732e8b18f90",
+          "src/us_quant/multifactor_stability.py": "05423115c9171a20f0c870e2556b4f25f787df737da4b1f87da5f5fffe3ae7b9",
+          "src/us_quant/sector_growth_balance.py": "783df691d243da8794d887bd1f8bb5331f9875a271b628c157098ea6233fd7a7"
+        },
+        "history_status": "exposed_history_not_independent_holdout",
+        "id": "four_factor_semiconductor_sector50",
+        "leveraged_products_allowed": false,
+        "market": {
+          "close": {
+            "path": "data/sector-growth-prepared-20261011/close.csv",
+            "sha256": "762f7f258684062be17f3f7f91e28b6df1071fdaf2c60fcd69d107932ae12944"
+          },
+          "open": {
+            "path": "data/sector-growth-prepared-20261011/open.csv",
+            "sha256": "f0aa7bf3f417f71343b8901f17803d9cf35e0eddd0d06c61878ab6ea7ea5f568"
+          },
+          "raw_close": {
+            "path": "data/sector-growth-prepared-20261011/raw_close.csv",
+            "sha256": "1d1c39f25326d14a69c9f875e428bb2303b54f823716a5800622f5e24d5783d9"
+          },
+          "risk_free": {
+            "path": "data/sector-growth-prepared-20261011/risk_free.csv",
+            "sha256": "af36e3deb9bf0685553617f6614eacefcd2282b76c0af81404f04669e9f5eef3"
+          },
+          "volume": {
+            "path": "data/sector-growth-prepared-20261011/volume.csv",
+            "sha256": "bf5686211d0f1191b951498d9b1a74c087571fa05adb7aed541104bda6af2a4a"
+          }
+        },
+        "order_authority": false
+      }
+    }
+  ],
+  "completed_evaluations_before_outcomes": 112,
+  "engine_migration": {
+    "fingerprint_scheme": "program_and_replay_dependencies",
+    "from_engine_sha256": "c6d69a598aedd99524a5af1e0183c72cbaa9d3a136b37c9cc4e38be710798423",
+    "policy_unchanged": true,
+    "prior_event_sha256": "bf4fec4bc3fb57f1458f5021dc045a9479738412ce615be211170c4077cbf11f",
+    "reason": "Reviewed engine update; preserve history, policy and goals.",
+    "to_engine_sha256": "6a4cca34839b25755c4683b2e449857e36e15bb3ff1d596bca32dfc27728d18a"
+  },
+  "engine_sha256": "6a4cca34839b25755c4683b2e449857e36e15bb3ff1d596bca32dfc27728d18a",
+  "goals_unchanged": true,
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "new_economic_factor_definitions": 0,
+  "order_authority": false,
+  "queued_size_issuance_and_six_family_eligibility_changed": false,
+  "readiness": {
+    "capabilities": {
+      "actual_fund_history": {
+        "evidence_path": "data/sector-growth-source-20261011/manifest.json",
+        "evidence_sha256": "eb43e116d5bdd13cf08a10b7bcca4ebd044cfb6a21e1b1511d6f377e6a466973",
+        "verified": true
+      },
+      "factor_mandates": {
+        "evidence_path": "data/sector-growth-source-20261011/manifest.json",
+        "evidence_sha256": "eb43e116d5bdd13cf08a10b7bcca4ebd044cfb6a21e1b1511d6f377e6a466973",
+        "verified": true
+      },
+      "post_inception_and_actions": {
+        "evidence_path": "data/sector-growth-source-20261011/manifest.json",
+        "evidence_sha256": "eb43e116d5bdd13cf08a10b7bcca4ebd044cfb6a21e1b1511d6f377e6a466973",
+        "verified": true
+      },
+      "unleveraged_fund_identity": {
+        "evidence_path": "data/sector-growth-source-20261011/manifest.json",
+        "evidence_sha256": "eb43e116d5bdd13cf08a10b7bcca4ebd044cfb6a21e1b1511d6f377e6a466973",
+        "verified": true
+      }
+    },
+    "checked_at": "2026-10-11T02:15:43.331198+00:00",
+    "data_scope": "factor_etf_portfolio",
+    "direct_stock_data_still_blocked": true,
+    "full_historical_methodology_verified": false,
+    "prospective_archive_includes_sector_funds": false,
+    "schema_version": 1,
+    "sector_exposures_are_not_new_factor_definitions": true,
+    "verified_etf_source": {
+      "adapter": "sector_growth_balance_20261011",
+      "factor_manifest": "data/sector-growth-source-20261011/manifest.json",
+      "factor_manifest_sha256": "eb43e116d5bdd13cf08a10b7bcca4ebd044cfb6a21e1b1511d6f377e6a466973",
+      "policy": "config/sector-growth-balance.json",
+      "policy_sha256": "ed3fef4f25dbda3132df2480e43a5188719776485c9018c5447c9e2aad2f4103"
+    }
+  },
+  "recorded_at": "2026-10-11T02:16:37.039800+00:00",
+  "schema_version": 1,
+  "source_admission_evidence": "evidence/sector_growth_source_admission_20261011.json",
+  "source_admission_sha256": "f1e777f6d13a46d7e21fd604b326e600e7f0b065893d14f50e99d3dcd2e0cc09",
+  "strategy_outcomes_computed": false,
+  "study_id": "sector_growth_balance_20261011"
+}

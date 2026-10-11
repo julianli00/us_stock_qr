@@ -25,6 +25,7 @@ GENERATORS = {
     "six_factor_strategy": "config/six-factor-strategy.json",
     "growth_portfolio_protection": "config/growth-portfolio-protection.json",
     "downside_risk_balance": "config/downside-risk-balance.json",
+    "sector_growth_balance": "config/sector-growth-balance.json",
 }
 
 
@@ -96,6 +97,12 @@ def registered_generator(spec: dict, root: Path) -> tuple[str, dict]:
                 "config/growth-factor-satellite.json",
                 "src/us_quant/multifactor_stability.py",
                 "src/us_quant/cash_funded_accounting_v2.py",
+            ]
+        elif name == "sector_growth_balance":
+            required += [
+                "src/us_quant/growth_factor_satellite.py",
+                "config/growth-factor-satellite.json",
+                "src/us_quant/multifactor_stability.py",
             ]
         if any(relative not in frozen for relative in required):
             raise QuantError("The registered strategy is missing a frozen helper dependency.")
@@ -207,6 +214,10 @@ def registered_targets(
             cache[key] = build_targets(data, policy)[spec["id"]]
         elif name == "six_factor_strategy":
             from us_quant.six_factor_strategy import build_targets
+
+            cache[key] = build_targets(data, policy)[spec["id"]]
+        elif name == "sector_growth_balance":
+            from us_quant.sector_growth_balance import build_targets
 
             cache[key] = build_targets(data, policy)[spec["id"]]
     return seed_window(cache[key], start)

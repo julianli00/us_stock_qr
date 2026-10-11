@@ -2142,6 +2142,43 @@ stage receipts. Origin remains declared rather than authenticated;
 the daily cadence, queued weekly eligibility, original registrations and
 112 completed strategy outcomes remain unchanged.
 
+### Preregistered sector growth comparisons with the original factor core
+
+The [sector source-admission audit](research/workbench/evidence/sector_growth_source_admission_20261011.json)
+verifies actual XLK and SOXX issuer identities, non-multiplied equity-index
+mandates and 2,805 complete positive-volume sessions per fund. Primary
+documents were actually retrieved and parsed; HTML PDF viewers remain
+recorded as viewers rather than falsely reported PDFs. SOXX's disclosed
+June 21, 2021 transition from the PHLX index to the NYSE Semiconductor Index
+is retained. Current documents do not establish unchanged historical rules
+or complete absence of fund-level derivatives and incidental borrowing.
+Raw prices and proprietary document contents remain private.
+
+The [two fixed specifications](research/workbench/evidence/sector_growth_balance_20261011_registration.json)
+keep half of equity in the original four equal factor sleeves and replace
+only the other half's QQQ exposure with either XLK or SOXX. The unchanged
+growth-budget helper supplies monthly 63-session equity/gold risk balance,
+30%-70% equity bounds and 2% target cash. Sector concentration is not a new
+independent economic factor or proof of safer returns. Both candidates
+retain the original capital, costs, execution delay, benchmark and
+15% drawdown qualification policy.
+
+```bash
+cd research/workbench
+.venv/bin/python -m pip install -r requirements-sector-research.txt
+.venv/bin/python -I -B -m us_quant.sector_growth_balance
+```
+
+Preparation refuses an existing output directory and computes no strategy
+outcomes. The PDF dependency is separate because the imported dependency
+manifest remains immutable. Registration used the actual clock and an
+exact prior-engine/event migration. All original files, 112 completed
+configurations, 28 reviews and technical failures remain unchanged;
+[two sector candidates are now pending](research/workbench/evidence/research_program_2026-W41_sector_v33.json).
+Their source/code/specifications are published before account outcomes.
+The IJR/PKW queue still waits for the real October 17 cycle, and no
+prospective sector returns, live orders or qualified champion are claimed.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

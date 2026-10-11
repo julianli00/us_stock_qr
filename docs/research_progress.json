@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-11",
-  "phase": "daily_pipeline_execution_receipted_112_completed_goal_unmet",
+  "phase": "sector_comparisons_preregistered_112_completed_goal_unmet",
   "active_research_focus": "source_verified_multifactor_research_and_independent_data",
   "completed": [
     "Preserved runnable incumbent strategy/engine and early-scanner source alongside the isolated 52-configuration workbench.",
@@ -319,7 +319,7 @@
   "recurring_research_program": {
     "state": "daily_data_weekly_research_no_qualified_candidate",
     "policy": "research/workbench/config/research-program.json",
-    "cycle_snapshot": "research/workbench/evidence/research_program_2026-W41_results_v32.json",
+    "cycle_snapshot": "research/workbench/evidence/research_program_2026-W41_sector_v33.json",
     "initial_cycle_snapshot": "research/workbench/evidence/research_program_2026-W41.json",
     "automation_receipt": "research/workbench/evidence/prospective_data_automation_v11.json",
     "initial_weekly_automation_receipt": "research/workbench/evidence/research_program_automation_20261010.json",
@@ -334,7 +334,7 @@
     "new_strategy_evaluations": 28,
     "total_evaluated_configurations": 112,
     "technical_rejected_code_versions": 2,
-    "pending_candidate_ids": [],
+    "pending_candidate_ids": ["four_factor_technology_sector50", "four_factor_semiconductor_sector50"],
     "research_champion": null,
     "research_versions": 0,
     "data_blockers": 5,
@@ -687,6 +687,23 @@
     "new_factor_definitions": 0,
     "new_candidate_specifications": 0,
     "new_strategy_evaluations": 0,
+    "order_authority": false
+  },
+  "sector_growth_balance": {
+    "policy": "research/workbench/config/sector-growth-balance.json",
+    "source_admission": "research/workbench/evidence/sector_growth_source_admission_20261011.json",
+    "registration": "research/workbench/evidence/sector_growth_balance_20261011_registration.json",
+    "migration_snapshot": "research/workbench/evidence/research_program_2026-W41_sector_v33.json",
+    "status": "two_source_bound_candidates_registered_before_outcomes",
+    "new_registered_candidates": 2,
+    "new_completed_strategy_evaluations": 0,
+    "new_economic_factor_definitions": 0,
+    "actual_sessions_per_sector_fund": 2805,
+    "SOXX_actual_2021_index_transition_retained": true,
+    "original_growth_budget_helper_unchanged": true,
+    "queued_six_family_strategy_eligibility_unchanged": true,
+    "prospective_archive_includes_sector_funds": false,
+    "investment_objective_verified": false,
     "order_authority": false
   },
   "daily_operational_execution": {

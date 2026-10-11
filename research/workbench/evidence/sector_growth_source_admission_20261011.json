@@ -1,0 +1,153 @@
+{
+  "audited_at": "2026-10-11T02:16:14.880908+00:00",
+  "investment_objective_verified": false,
+  "manifest_path": "data/sector-growth-source-20261011/manifest.json",
+  "manifest_sha256": "eb43e116d5bdd13cf08a10b7bcca4ebd044cfb6a21e1b1511d6f377e6a466973",
+  "new_economic_factor_definitions": 0,
+  "order_authority": false,
+  "policy_sha256": "ed3fef4f25dbda3132df2480e43a5188719776485c9018c5447c9e2aad2f4103",
+  "primary_document_requests": [
+    {
+      "access_gate_bypassed": false,
+      "actual_source_sha256": "7bac89bd17040a64cfbb9610d77d685173fed1f9f38fd84a134537cf2e4bb23e",
+      "advertised_public_viewer_followed": false,
+      "content_type": "application/pdf;charset=UTF-8",
+      "finished_at": "2026-10-11T02:08:55.513973+00:00",
+      "http_status": "200",
+      "request_sha256": "0ca3091a8ad04fda30c8836386c6045d799c7cd7f30393c76d39d663fc649324",
+      "source_file": "data/sector-growth-source-20261011/SOXX-factsheet-request.json",
+      "started_at": "2026-10-11T02:08:54.339710+00:00",
+      "valid_pdf": true
+    },
+    {
+      "access_gate_bypassed": false,
+      "actual_source_sha256": "92092d9050dafb5a83cf79218e19ba1ed14e3ee3d81c0b1d46470acb91c67b93",
+      "advertised_public_viewer_followed": false,
+      "content_type": "text/html;charset=UTF-8",
+      "finished_at": "2026-10-11T02:06:19.706671+00:00",
+      "http_status": "200",
+      "request_sha256": "d9bf61269b920aa9d92fc0c514327d2f3478534be7234534bac4422bfe8b1156",
+      "source_file": "data/sector-growth-source-20261011/SOXX-prospectus-request.json",
+      "started_at": "2026-10-11T02:06:18.565693+00:00",
+      "valid_pdf": false
+    },
+    {
+      "access_gate_bypassed": false,
+      "actual_source_sha256": "4fcf096b9e75f99f1cce0d62eb6b8e65a6f9e82503738ccaca6e6b4721516bfc",
+      "advertised_public_viewer_followed": true,
+      "content_type": "application/pdf;charset=UTF-8",
+      "finished_at": "2026-10-11T02:09:52.272066+00:00",
+      "http_status": "200",
+      "request_sha256": "db8410d01582b6123dbf7e792fd33d3687bb87c7c490975b1dd0c4aeab1f0e64",
+      "source_file": "data/sector-growth-source-20261011/SOXX-summary-underlying-request.json",
+      "started_at": "2026-10-11T02:09:51.339234+00:00",
+      "valid_pdf": true
+    },
+    {
+      "access_gate_bypassed": false,
+      "actual_source_sha256": "c8b7997b458c1835503c8901403f9d4f4c24e85470c2443454bb8e77fb419a34",
+      "advertised_public_viewer_followed": false,
+      "content_type": "application/pdf",
+      "finished_at": "2026-10-11T02:08:55.424850+00:00",
+      "http_status": "200",
+      "request_sha256": "ceb33c1b2e199542d655af71ebfb48a77abea50fa7033491ed0abfdbdbef1fe1",
+      "source_file": "data/sector-growth-source-20261011/XLK-factsheet-request.json",
+      "started_at": "2026-10-11T02:08:54.289518+00:00",
+      "valid_pdf": true
+    },
+    {
+      "access_gate_bypassed": false,
+      "actual_source_sha256": "c3c5b30455cf21dbbb750b9e2811e7634c06238c10279a24b0ca8aef07ee0569",
+      "advertised_public_viewer_followed": false,
+      "content_type": "text/html; charset=utf-8",
+      "finished_at": "2026-10-11T02:08:20.140768+00:00",
+      "http_status": "200",
+      "request_sha256": "dae364be5103daf66dc06aaa24f660fa9e290804a2aa616eaa38313417553bfe",
+      "source_file": "data/sector-growth-source-20261011/XLK-prospectus-request.json",
+      "started_at": "2026-10-11T02:08:18.650285+00:00",
+      "valid_pdf": false
+    },
+    {
+      "access_gate_bypassed": false,
+      "actual_source_sha256": "64ddca1cd86f85209492ba33e6ac1fad5b2d41f72777add39152c05158952e6d",
+      "advertised_public_viewer_followed": true,
+      "content_type": "text/html; charset=utf-8",
+      "finished_at": "2026-10-11T02:09:53.086144+00:00",
+      "http_status": "200",
+      "request_sha256": "61061ea4f097afaa83b28b51d7c4f19dc05838c220dc2e8bc0bcda784c108976",
+      "source_file": "data/sector-growth-source-20261011/XLK-prospectus-viewer-request.json",
+      "started_at": "2026-10-11T02:09:51.339750+00:00",
+      "valid_pdf": false
+    }
+  ],
+  "queued_size_issuance_eligibility_changed": false,
+  "raw_or_proprietary_prices_or_document_contents_published": false,
+  "schema_version": 1,
+  "sources": {
+    "SOXX": {
+      "actions": {
+        "dividend_events": 46,
+        "split_events": 1,
+        "unexplained_adjustment_jumps": 0
+      },
+      "complete_absence_of_fund_derivatives_or_borrowings_proven": false,
+      "first_session": "2015-08-10",
+      "issuer_acquisition_completed_at": "2026-10-11T02:05:02+00:00",
+      "issuer_acquisition_started_at": "2026-10-11T02:04:59+00:00",
+      "issuer_acquisition_time_precision": "seconds_from_actual_curl_command_receipt",
+      "issuer_definition": {
+        "benchmark": "NYSE Semiconductor Index",
+        "disclosed_index_transition": {
+          "current": "NYSE Semiconductor Index",
+          "previous": "PHLX SOX Semiconductor Sector Index",
+          "session": "2021-06-21"
+        },
+        "full_historical_methodology_verified": false,
+        "fund_inception": "2001-07-10",
+        "intended_equity_index_return_multiple": 1.0,
+        "role": "semiconductor_industry_not_independent_factor",
+        "symbol": "SOXX"
+      },
+      "issuer_url": "https://www.ishares.com/us/products/239705/ishares-phlx-semiconductor-etf",
+      "last_session": "2026-10-05",
+      "minimum_volume": 342900.0,
+      "nonmultiplied_equity_index_replication_verified": true,
+      "price_acquisition_completed_at": "2026-10-11T02:08:22.329736+00:00",
+      "price_acquisition_started_at": "2026-10-11T02:08:22.112911+00:00",
+      "price_url": "https://query2.finance.yahoo.com/v8/finance/chart/SOXX?period1=1439164800&period2=1791244800&interval=1d&events=div%2Csplits",
+      "primary_identity_and_documents_reparsed": true,
+      "sessions": 2805
+    },
+    "XLK": {
+      "actions": {
+        "dividend_events": 45,
+        "split_events": 1,
+        "unexplained_adjustment_jumps": 0
+      },
+      "complete_absence_of_fund_derivatives_or_borrowings_proven": false,
+      "first_session": "2015-08-10",
+      "issuer_acquisition_completed_at": "2026-10-11T02:05:01+00:00",
+      "issuer_acquisition_started_at": "2026-10-11T02:04:59+00:00",
+      "issuer_acquisition_time_precision": "seconds_from_actual_curl_command_receipt",
+      "issuer_definition": {
+        "benchmark": "Technology Select Sector Index",
+        "full_historical_methodology_verified": false,
+        "fund_inception": "1998-12-16",
+        "intended_equity_index_return_multiple": 1.0,
+        "role": "information_technology_sector_not_independent_factor",
+        "symbol": "XLK"
+      },
+      "issuer_url": "https://www.ssga.com/us/en/individual/etfs/state-street-technology-select-sector-spdr-etf-xlk",
+      "last_session": "2026-10-05",
+      "minimum_volume": 3263000.0,
+      "nonmultiplied_equity_index_replication_verified": true,
+      "price_acquisition_completed_at": "2026-10-11T02:08:21.682194+00:00",
+      "price_acquisition_started_at": "2026-10-11T02:08:21.308351+00:00",
+      "price_url": "https://query2.finance.yahoo.com/v8/finance/chart/XLK?period1=1439164800&period2=1791244800&interval=1d&events=div%2Csplits",
+      "primary_identity_and_documents_reparsed": true,
+      "sessions": 2805
+    }
+  },
+  "strategy_outcomes_computed": false,
+  "study_id": "sector_growth_balance_20261011"
+}
