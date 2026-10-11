@@ -4635,6 +4635,67 @@ rules remain. A historical all-gate result would still not
 establish independent future alpha or trading authority.
 **The investment objective remains unmet.**
 
+The [completed breadth/gold results](research/workbench/evidence/breadth_gold_20261011_results.json)
+retain both fixed gold rules and every window/cost path:
+
+| Original equity-breadth source + monthly gold gate | Base net CAGR / Sharpe / drawdown | Stress net CAGR / Sharpe / drawdown |
+|---|---|---|
+| Half equity source, ten-year | 14.82% / 0.9762 / 13.89% | 14.21% / 0.9322 / 13.57% |
+| Half equity source, five-year | 19.66% / 1.0619 / 13.15% | 18.61% / 0.9991 / 13.64% |
+| Equity off source, ten-year | 13.78% / 0.9245 / 13.13% | 13.35% / 0.8930 / 13.40% |
+| Equity off source, five-year | 18.52% / 1.0048 / 13.15% | 17.69% / 0.9549 / 13.42% |
+
+**All eight drawdown gates pass, but all ten-year Sharpe/SPY
+gates and both five-year stress Sharpe gates fail.**
+The half-source five-year stressed Sharpe is exactly
+**0.9991004369**, not strictly above 1; it is not rounded
+into acceptance. Both five-year base paths pass all gates,
+but neither construction passes the complete joint objective.
+
+Every paired source comparison has lower drawdown, CAGR and
+Sharpe after the fixed monthly gold gate. This improves modeled
+risk without retaining the preceding sources' all-window return
+qualification. Ten-year stress orders/modeled fees are
+763/USD1,977.18 for the half source and 688/USD2,051.10 for
+equity off, versus the ungated sources' 760/USD1,406.51 and
+685/USD1,548.23. The differences also include changed gold
+exposure and account NAV, not isolated fee causality or
+equal-risk independent gold alpha.
+Neither gold mean, clock, scale nor source sector breadth/
+equity shares are refitted; neither forward model is replaced.
+
+The [independent account proof](research/workbench/evidence/breadth_gold_20261011_reproducibility.json)
+checks all 16 funded strategy/SPY and 16 independent `bt`
+accounts, the proven gold states, original equity-breadth
+targets/dates, independent seeds, costs/rates/calendars
+and initial-capital peaks. It also checks 30,128 account
+sessions of actual-price quantities, opening funding,
+order thresholds, fees and cash flows.
+Prepared versus actual seeded targets agree exactly;
+maximum scalar metric/equity/cash-flow errors are
+3.54e-14/6.55e-11 USD/1.21e-11 USD.
+
+The [current snapshot](research/workbench/evidence/research_program_2026-W41_breadth_gold_results_v61.json)
+contains **138 completed configurations = 84 prior + 54 recurring reviews**,
+56 registered versions including two old invalid ones,
+no pending actual candidate and no champion.
+The [full source-bound audit](research/workbench/evidence/research_program_source_bound_audit_v35.json)
+reexecutes 54 reviews/216 paths, retaining 19 legacy and 35
+explicit funded-v2 reviews.
+The [preservation proof](research/workbench/evidence/breadth_gold_20261011_preservation.json)
+keeps all old journal rows/prefix, 69 imported files,
+seven original forward profiles and all 3,192 frozen controls.
+
+The [native continuation](research/workbench/evidence/prospective_data_automation_v40.json)
+retains both the preceding breadth rules' Sharpe/SPY passes
+with failed drawdown gates and the new gold rules' drawdown
+passes with failed return gates. These successes cannot be
+spliced into an untested or implicitly fitted strategy.
+Original W42 plans, IJR/PKW quota, daily/weekly cadence
+and both frozen forward experiments remain; both experiments
+still have zero actual return sessions.
+**The investment objective remains unmet.**
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
