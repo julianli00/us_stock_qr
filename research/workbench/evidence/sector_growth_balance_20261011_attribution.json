@@ -1,0 +1,505 @@
+{
+  "all8net_sharpe_and_cagr_improve_over_original_qqq_control": true,
+  "audited_at": "2026-10-11T02:19:30.661032+00:00",
+  "candidates": {
+    "four_factor_semiconductor_sector50": {
+      "complete_monthly_targets": 131,
+      "equity_target_maximum": 0.6188067502832454,
+      "equity_target_mean": 0.40891891782894046,
+      "equity_target_minimum": 0.294,
+      "factor_and_sector_target_budgets_verified": true,
+      "independent_scalar_budget_max_error": 1.1102230246251565e-16,
+      "paths": [
+        {
+          "actual_strategy_cost_usd": 834.1953777683289,
+          "actual_strategy_order_tickets": 726,
+          "advantage_over_original_qqq_control": {
+            "cagr": 0.035539750218077204,
+            "max_drawdown": 0.013350682694318161,
+            "sharpe": 0.10039640609487954
+          },
+          "advantage_over_same_budget_qqq": {
+            "cagr": 0.03460828179592523,
+            "max_drawdown": 0.016570393922571758,
+            "sharpe": 0.10059373734488297
+          },
+          "dependence_is_descriptive_not_independent_alpha": true,
+          "drawdown_peak_session": "2022-03-08",
+          "drawdown_trough_session": "2022-10-14",
+          "fund_daily_correlation_to_qqq": 0.8707261944429255,
+          "fund_daily_correlation_to_spy": 0.7998281351559096,
+          "fund_daily_in_sample_beta_to_spy": 1.5521790855220914,
+          "matched_budget_artifact_sha256": {
+            "reports/sector-growth-attribution-20261011/four_factor_semiconductor_sector50-10y-base-same-budget-qqq-account.csv": "a47697ba6e0925a4a2f2d9c626ff3d235d5d4ddb351fc29043ef7abc7e62a4ac",
+            "reports/sector-growth-attribution-20261011/four_factor_semiconductor_sector50-10y-base-same-budget-qqq-independent-account.csv": "c5cc61104540676fc905f854c15a8888659e92cda198e2d4363dbf99114d82b5",
+            "reports/sector-growth-attribution-20261011/four_factor_semiconductor_sector50-10y-base-same-budget-qqq-targets.csv": "31d382dc7dafedc41533b66fd32c0e481a40e2a42fd76ce102e96765ecebfdde"
+          },
+          "max_independent_equity_error_usd": 7.275957614183426e-11,
+          "original_qqq_control_metrics": {
+            "cagr": 0.148419814200893,
+            "end": "2026-10-05",
+            "max_drawdown": 0.191579150171596,
+            "sessions": 2512,
+            "sharpe": 0.9762493561852842,
+            "start": "2016-10-06"
+          },
+          "same_budget_qqq_cost_usd": 818.691819095245,
+          "same_budget_qqq_max_independent_equity_error_usd": 6.548361852765083e-11,
+          "same_budget_qqq_order_tickets": 726,
+          "same_equity_gold_budget_qqq_metrics": {
+            "cagr": 0.14935128262304498,
+            "end": "2026-10-05",
+            "max_drawdown": 0.1883594389433424,
+            "sessions": 2512,
+            "sharpe": 0.9760520249352808,
+            "start": "2016-10-06"
+          },
+          "scalar_drawdown": 0.20492983286591393,
+          "scalar_sharpe": 1.0766457622801595,
+          "scenario": "base",
+          "source_target_max_error": 1.1102230246251565e-16,
+          "strategy_metrics": {
+            "cagr": 0.1839595644189702,
+            "end": "2026-10-05",
+            "max_drawdown": 0.20492983286591415,
+            "sessions": 2512,
+            "sharpe": 1.0766457622801637,
+            "start": "2016-10-06"
+          },
+          "years": 10
+        },
+        {
+          "actual_strategy_cost_usd": 1150.4099840587073,
+          "actual_strategy_order_tickets": 726,
+          "advantage_over_original_qqq_control": {
+            "cagr": 0.03545759719469266,
+            "max_drawdown": 0.01228119542790207,
+            "sharpe": 0.10370187576769929
+          },
+          "advantage_over_same_budget_qqq": {
+            "cagr": 0.03407498406724696,
+            "max_drawdown": 0.015976849262558934,
+            "sharpe": 0.10056495853568115
+          },
+          "dependence_is_descriptive_not_independent_alpha": true,
+          "drawdown_peak_session": "2022-03-08",
+          "drawdown_trough_session": "2022-10-14",
+          "fund_daily_correlation_to_qqq": 0.8707261944429255,
+          "fund_daily_correlation_to_spy": 0.7998281351559096,
+          "fund_daily_in_sample_beta_to_spy": 1.5521790855220914,
+          "matched_budget_artifact_sha256": {
+            "reports/sector-growth-attribution-20261011/four_factor_semiconductor_sector50-10y-stress-same-budget-qqq-account.csv": "3637c610396c8054d2ae58a8cdaab11f8f8156f79522c2539db0f470c7ab27c6",
+            "reports/sector-growth-attribution-20261011/four_factor_semiconductor_sector50-10y-stress-same-budget-qqq-independent-account.csv": "a7dd899d3661bec95b04e73b2c16167df57d25a87ee865930ded58e438cab44d",
+            "reports/sector-growth-attribution-20261011/four_factor_semiconductor_sector50-10y-stress-same-budget-qqq-targets.csv": "31d382dc7dafedc41533b66fd32c0e481a40e2a42fd76ce102e96765ecebfdde"
+          },
+          "max_independent_equity_error_usd": 1.0186340659856796e-10,
+          "original_qqq_control_metrics": {
+            "cagr": 0.14435377485424628,
+            "end": "2026-10-05",
+            "max_drawdown": 0.1925874711314467,
+            "sessions": 2512,
+            "sharpe": 0.9469575273374611,
+            "start": "2016-10-06"
+          },
+          "same_budget_qqq_cost_usd": 1089.3148511448921,
+          "same_budget_qqq_max_independent_equity_error_usd": 8.731149137020111e-11,
+          "same_budget_qqq_order_tickets": 726,
+          "same_equity_gold_budget_qqq_metrics": {
+            "cagr": 0.14573638798169197,
+            "end": "2026-10-05",
+            "max_drawdown": 0.18889181729678983,
+            "sessions": 2512,
+            "sharpe": 0.9500944445694792,
+            "start": "2016-10-06"
+          },
+          "scalar_drawdown": 0.2048686665593491,
+          "scalar_sharpe": 1.050659403105158,
+          "scenario": "stress",
+          "source_target_max_error": 1.1102230246251565e-16,
+          "strategy_metrics": {
+            "cagr": 0.17981137204893893,
+            "end": "2026-10-05",
+            "max_drawdown": 0.20486866655934877,
+            "sessions": 2512,
+            "sharpe": 1.0506594031051604,
+            "start": "2016-10-06"
+          },
+          "years": 10
+        },
+        {
+          "actual_strategy_cost_usd": 410.38868217045604,
+          "actual_strategy_order_tickets": 366,
+          "advantage_over_original_qqq_control": {
+            "cagr": 0.05754403881313852,
+            "max_drawdown": 0.013411245484597711,
+            "sharpe": 0.14396763715884364
+          },
+          "advantage_over_same_budget_qqq": {
+            "cagr": 0.05316798136896295,
+            "max_drawdown": 0.016658933203827053,
+            "sharpe": 0.13940750120506173
+          },
+          "dependence_is_descriptive_not_independent_alpha": true,
+          "drawdown_peak_session": "2022-03-08",
+          "drawdown_trough_session": "2022-10-14",
+          "fund_daily_correlation_to_qqq": 0.8769185071390636,
+          "fund_daily_correlation_to_spy": 0.799317486769041,
+          "fund_daily_in_sample_beta_to_spy": 1.8042884255617384,
+          "matched_budget_artifact_sha256": {
+            "reports/sector-growth-attribution-20261011/four_factor_semiconductor_sector50-5y-base-same-budget-qqq-account.csv": "c524c9c6a17605ce98e788e9e60820c22cc4921cb8b7fcf67c4e0e544d434472",
+            "reports/sector-growth-attribution-20261011/four_factor_semiconductor_sector50-5y-base-same-budget-qqq-independent-account.csv": "8ff1df155b6f4f94f94f306106066aaa74988860936fd68de145c03ed8b89f04",
+            "reports/sector-growth-attribution-20261011/four_factor_semiconductor_sector50-5y-base-same-budget-qqq-targets.csv": "b861e41800e1db278ef4367fd5120bcb5a7e456c48caa4a6d90a9ff32ab2be50"
+          },
+          "max_independent_equity_error_usd": 7.639755494892597e-11,
+          "original_qqq_control_metrics": {
+            "cagr": 0.17699772378004575,
+            "end": "2026-10-05",
+            "max_drawdown": 0.19307824061614942,
+            "sessions": 1254,
+            "sharpe": 1.0004472072479582,
+            "start": "2021-10-06"
+          },
+          "same_budget_qqq_cost_usd": 405.75140159201896,
+          "same_budget_qqq_max_independent_equity_error_usd": 4.001776687800884e-11,
+          "same_budget_qqq_order_tickets": 366,
+          "same_equity_gold_budget_qqq_metrics": {
+            "cagr": 0.18137378122422132,
+            "end": "2026-10-05",
+            "max_drawdown": 0.18983055289692008,
+            "sessions": 1254,
+            "sharpe": 1.0050073432017401,
+            "start": "2021-10-06"
+          },
+          "scalar_drawdown": 0.20648948610074747,
+          "scalar_sharpe": 1.1444148444068025,
+          "scenario": "base",
+          "source_target_max_error": 1.1102230246251565e-16,
+          "strategy_metrics": {
+            "cagr": 0.23454176259318427,
+            "end": "2026-10-05",
+            "max_drawdown": 0.20648948610074713,
+            "sessions": 1254,
+            "sharpe": 1.1444148444068019,
+            "start": "2021-10-06"
+          },
+          "years": 5
+        },
+        {
+          "actual_strategy_cost_usd": 538.5890670495226,
+          "actual_strategy_order_tickets": 366,
+          "advantage_over_original_qqq_control": {
+            "cagr": 0.05615584443027899,
+            "max_drawdown": 0.012353142816878937,
+            "sharpe": 0.1456465567258337
+          },
+          "advantage_over_same_budget_qqq": {
+            "cagr": 0.05191221127319845,
+            "max_drawdown": 0.016070375427333472,
+            "sharpe": 0.14104522036770228
+          },
+          "dependence_is_descriptive_not_independent_alpha": true,
+          "drawdown_peak_session": "2022-03-08",
+          "drawdown_trough_session": "2022-10-14",
+          "fund_daily_correlation_to_qqq": 0.8769185071390636,
+          "fund_daily_correlation_to_spy": 0.799317486769041,
+          "fund_daily_in_sample_beta_to_spy": 1.8042884255617384,
+          "matched_budget_artifact_sha256": {
+            "reports/sector-growth-attribution-20261011/four_factor_semiconductor_sector50-5y-stress-same-budget-qqq-account.csv": "f9c3e9d0e02becb16f39c29f493ea5122ec24ff65946e47dcfcd8617d24281fa",
+            "reports/sector-growth-attribution-20261011/four_factor_semiconductor_sector50-5y-stress-same-budget-qqq-independent-account.csv": "f2463e4273cf69d8471ddbea2bcf1adf289707835dab8ee1e0e18782d1318512",
+            "reports/sector-growth-attribution-20261011/four_factor_semiconductor_sector50-5y-stress-same-budget-qqq-targets.csv": "b861e41800e1db278ef4367fd5120bcb5a7e456c48caa4a6d90a9ff32ab2be50"
+          },
+          "max_independent_equity_error_usd": 1.8189894035458565e-11,
+          "original_qqq_control_metrics": {
+            "cagr": 0.17003750896375114,
+            "end": "2026-10-05",
+            "max_drawdown": 0.1940817573659528,
+            "sessions": 1254,
+            "sharpe": 0.9547763842875098,
+            "start": "2021-10-06"
+          },
+          "same_budget_qqq_cost_usd": 520.1609870437148,
+          "same_budget_qqq_max_independent_equity_error_usd": 5.820766091346741e-11,
+          "same_budget_qqq_order_tickets": 366,
+          "same_equity_gold_budget_qqq_metrics": {
+            "cagr": 0.17428114212083168,
+            "end": "2026-10-05",
+            "max_drawdown": 0.19036452475549825,
+            "sessions": 1254,
+            "sharpe": 0.9593777206456412,
+            "start": "2021-10-06"
+          },
+          "scalar_drawdown": 0.20643490018283162,
+          "scalar_sharpe": 1.1004229410133464,
+          "scenario": "stress",
+          "source_target_max_error": 1.1102230246251565e-16,
+          "strategy_metrics": {
+            "cagr": 0.22619335339403013,
+            "end": "2026-10-05",
+            "max_drawdown": 0.20643490018283173,
+            "sessions": 1254,
+            "sharpe": 1.1004229410133435,
+            "start": "2021-10-06"
+          },
+          "years": 5
+        }
+      ],
+      "sector_symbol": "SOXX"
+    },
+    "four_factor_technology_sector50": {
+      "complete_monthly_targets": 131,
+      "equity_target_maximum": 0.6786933386844655,
+      "equity_target_mean": 0.4619676387545488,
+      "equity_target_minimum": 0.294,
+      "factor_and_sector_target_budgets_verified": true,
+      "independent_scalar_budget_max_error": 1.1102230246251565e-16,
+      "paths": [
+        {
+          "actual_strategy_cost_usd": 826.9571967957841,
+          "actual_strategy_order_tickets": 726,
+          "advantage_over_original_qqq_control": {
+            "cagr": 0.01084701632470586,
+            "max_drawdown": -0.0019033732673484627,
+            "sharpe": 0.044202529672136115
+          },
+          "advantage_over_same_budget_qqq": {
+            "cagr": 0.009735021556354306,
+            "max_drawdown": -0.0022260044051896077,
+            "sharpe": 0.03677093670434961
+          },
+          "dependence_is_descriptive_not_independent_alpha": true,
+          "drawdown_peak_session": "2022-03-08",
+          "drawdown_trough_session": "2022-10-14",
+          "fund_daily_correlation_to_qqq": 0.9721235851531439,
+          "fund_daily_correlation_to_spy": 0.9195561265735799,
+          "fund_daily_in_sample_beta_to_spy": 1.2824280648558017,
+          "matched_budget_artifact_sha256": {
+            "reports/sector-growth-attribution-20261011/four_factor_technology_sector50-10y-base-same-budget-qqq-account.csv": "a184206dd6f13cc1c8e4241c239fb4cbd64c2ee7f8b37a2b63abcbc571ef60e8",
+            "reports/sector-growth-attribution-20261011/four_factor_technology_sector50-10y-base-same-budget-qqq-independent-account.csv": "2125c93097f1fe8edc0c26b1db541ff371442d987e2136c2d0557ed88b2ef242",
+            "reports/sector-growth-attribution-20261011/four_factor_technology_sector50-10y-base-same-budget-qqq-targets.csv": "0635c8b1aba433e65c92a275dee40f5dc4275770e4893e2df89c1f9ff8e8cc84"
+          },
+          "max_independent_equity_error_usd": 5.093170329928398e-11,
+          "original_qqq_control_metrics": {
+            "cagr": 0.148419814200893,
+            "end": "2026-10-05",
+            "max_drawdown": 0.191579150171596,
+            "sessions": 2512,
+            "sharpe": 0.9762493561852842,
+            "start": "2016-10-06"
+          },
+          "same_budget_qqq_cost_usd": 823.775743896934,
+          "same_budget_qqq_max_independent_equity_error_usd": 4.3655745685100555e-11,
+          "same_budget_qqq_order_tickets": 726,
+          "same_equity_gold_budget_qqq_metrics": {
+            "cagr": 0.14953180896924456,
+            "end": "2026-10-05",
+            "max_drawdown": 0.19190178130943714,
+            "sessions": 2512,
+            "sharpe": 0.9836809491530707,
+            "start": "2016-10-06"
+          },
+          "scalar_drawdown": 0.18967577690424764,
+          "scalar_sharpe": 1.0204518858574176,
+          "scenario": "base",
+          "source_target_max_error": 1.1102230246251565e-16,
+          "strategy_metrics": {
+            "cagr": 0.15926683052559887,
+            "end": "2026-10-05",
+            "max_drawdown": 0.18967577690424753,
+            "sessions": 2512,
+            "sharpe": 1.0204518858574203,
+            "start": "2016-10-06"
+          },
+          "years": 10
+        },
+        {
+          "actual_strategy_cost_usd": 1119.762170183004,
+          "actual_strategy_order_tickets": 726,
+          "advantage_over_original_qqq_control": {
+            "cagr": 0.010756894849564658,
+            "max_drawdown": -0.0017239930284251859,
+            "sharpe": 0.0447347558516461
+          },
+          "advantage_over_same_budget_qqq": {
+            "cagr": 0.009696197160552256,
+            "max_drawdown": -0.0020774870585185123,
+            "sharpe": 0.03765255776775156
+          },
+          "dependence_is_descriptive_not_independent_alpha": true,
+          "drawdown_peak_session": "2022-03-08",
+          "drawdown_trough_session": "2022-10-14",
+          "fund_daily_correlation_to_qqq": 0.9721235851531439,
+          "fund_daily_correlation_to_spy": 0.9195561265735799,
+          "fund_daily_in_sample_beta_to_spy": 1.2824280648558017,
+          "matched_budget_artifact_sha256": {
+            "reports/sector-growth-attribution-20261011/four_factor_technology_sector50-10y-stress-same-budget-qqq-account.csv": "4f75dd4f50a4b02ab9f4d6b5cdc73c6457249b595e8d85e4ebf4cd63691305c3",
+            "reports/sector-growth-attribution-20261011/four_factor_technology_sector50-10y-stress-same-budget-qqq-independent-account.csv": "aee6e67ef140a4ceaa3b336e26218cd95f0bdfedf87477638904cda0fc4012b9",
+            "reports/sector-growth-attribution-20261011/four_factor_technology_sector50-10y-stress-same-budget-qqq-targets.csv": "0635c8b1aba433e65c92a275dee40f5dc4275770e4893e2df89c1f9ff8e8cc84"
+          },
+          "max_independent_equity_error_usd": 6.548361852765083e-11,
+          "original_qqq_control_metrics": {
+            "cagr": 0.14435377485424628,
+            "end": "2026-10-05",
+            "max_drawdown": 0.1925874711314467,
+            "sessions": 2512,
+            "sharpe": 0.9469575273374611,
+            "start": "2016-10-06"
+          },
+          "same_budget_qqq_cost_usd": 1106.2793019717942,
+          "same_budget_qqq_max_independent_equity_error_usd": 3.637978807091713e-11,
+          "same_budget_qqq_order_tickets": 726,
+          "same_equity_gold_budget_qqq_metrics": {
+            "cagr": 0.14541447254325868,
+            "end": "2026-10-05",
+            "max_drawdown": 0.19294096516154002,
+            "sessions": 2512,
+            "sharpe": 0.9540397254213556,
+            "start": "2016-10-06"
+          },
+          "scalar_drawdown": 0.19086347810302173,
+          "scalar_sharpe": 0.9916922831891094,
+          "scenario": "stress",
+          "source_target_max_error": 1.1102230246251565e-16,
+          "strategy_metrics": {
+            "cagr": 0.15511066970381093,
+            "end": "2026-10-05",
+            "max_drawdown": 0.1908634781030215,
+            "sessions": 2512,
+            "sharpe": 0.9916922831891072,
+            "start": "2016-10-06"
+          },
+          "years": 10
+        },
+        {
+          "actual_strategy_cost_usd": 406.40187082821353,
+          "actual_strategy_order_tickets": 366,
+          "advantage_over_original_qqq_control": {
+            "cagr": 0.017716099011776842,
+            "max_drawdown": -0.0018878418976264744,
+            "sharpe": 0.0651816685156752
+          },
+          "advantage_over_same_budget_qqq": {
+            "cagr": 0.01627166978123351,
+            "max_drawdown": -0.00221595336875835,
+            "sharpe": 0.06099589711553288
+          },
+          "dependence_is_descriptive_not_independent_alpha": true,
+          "drawdown_peak_session": "2022-03-08",
+          "drawdown_trough_session": "2022-10-14",
+          "fund_daily_correlation_to_qqq": 0.9671400872925487,
+          "fund_daily_correlation_to_spy": 0.9126661695965477,
+          "fund_daily_in_sample_beta_to_spy": 1.3798949453393758,
+          "matched_budget_artifact_sha256": {
+            "reports/sector-growth-attribution-20261011/four_factor_technology_sector50-5y-base-same-budget-qqq-account.csv": "db8585f1e708ae5fa523af5a0fff3c2dd7cc73e3d3562f3823e8421e49a46e7c",
+            "reports/sector-growth-attribution-20261011/four_factor_technology_sector50-5y-base-same-budget-qqq-independent-account.csv": "a63b9f239c449fd50c4eb471593c2874968d63b55b5faf3cb76e322dd89f3943",
+            "reports/sector-growth-attribution-20261011/four_factor_technology_sector50-5y-base-same-budget-qqq-targets.csv": "78af451996186245a22fabd91c1a2d29f297ce6191fc0cc91d754a5b6195a2a5"
+          },
+          "max_independent_equity_error_usd": 2.546585164964199e-11,
+          "original_qqq_control_metrics": {
+            "cagr": 0.17699772378004575,
+            "end": "2026-10-05",
+            "max_drawdown": 0.19307824061614942,
+            "sessions": 1254,
+            "sharpe": 1.0004472072479582,
+            "start": "2021-10-06"
+          },
+          "same_budget_qqq_cost_usd": 405.2786674917636,
+          "same_budget_qqq_max_independent_equity_error_usd": 1.8189894035458565e-11,
+          "same_budget_qqq_order_tickets": 366,
+          "same_equity_gold_budget_qqq_metrics": {
+            "cagr": 0.17844215301058908,
+            "end": "2026-10-05",
+            "max_drawdown": 0.1934063520872813,
+            "sessions": 1254,
+            "sharpe": 1.0046329786481005,
+            "start": "2021-10-06"
+          },
+          "scalar_drawdown": 0.19119039871852306,
+          "scalar_sharpe": 1.0656288757636356,
+          "scenario": "base",
+          "source_target_max_error": 1.1102230246251565e-16,
+          "strategy_metrics": {
+            "cagr": 0.1947138227918226,
+            "end": "2026-10-05",
+            "max_drawdown": 0.19119039871852295,
+            "sessions": 1254,
+            "sharpe": 1.0656288757636334,
+            "start": "2021-10-06"
+          },
+          "years": 5
+        },
+        {
+          "actual_strategy_cost_usd": 522.9927690408235,
+          "actual_strategy_order_tickets": 366,
+          "advantage_over_original_qqq_control": {
+            "cagr": 0.017025163763402462,
+            "max_drawdown": -0.001703782805833498,
+            "sharpe": 0.06337634334456188
+          },
+          "advantage_over_same_budget_qqq": {
+            "cagr": 0.015842595503555934,
+            "max_drawdown": -0.002063313376291176,
+            "sharpe": 0.0606886317751385
+          },
+          "dependence_is_descriptive_not_independent_alpha": true,
+          "drawdown_peak_session": "2022-03-08",
+          "drawdown_trough_session": "2022-10-14",
+          "fund_daily_correlation_to_qqq": 0.9671400872925487,
+          "fund_daily_correlation_to_spy": 0.9126661695965477,
+          "fund_daily_in_sample_beta_to_spy": 1.3798949453393758,
+          "matched_budget_artifact_sha256": {
+            "reports/sector-growth-attribution-20261011/four_factor_technology_sector50-5y-stress-same-budget-qqq-account.csv": "e9b95791d97592e72ab24c054ed567ec4e467075cf7a90fa1bfbd8a21f596954",
+            "reports/sector-growth-attribution-20261011/four_factor_technology_sector50-5y-stress-same-budget-qqq-independent-account.csv": "1fb0b8763edb3238a904e504649df17880a7a109c854bf69f693133992ec505c",
+            "reports/sector-growth-attribution-20261011/four_factor_technology_sector50-5y-stress-same-budget-qqq-targets.csv": "78af451996186245a22fabd91c1a2d29f297ce6191fc0cc91d754a5b6195a2a5"
+          },
+          "max_independent_equity_error_usd": 4.001776687800884e-11,
+          "original_qqq_control_metrics": {
+            "cagr": 0.17003750896375114,
+            "end": "2026-10-05",
+            "max_drawdown": 0.1940817573659528,
+            "sessions": 1254,
+            "sharpe": 0.9547763842875098,
+            "start": "2021-10-06"
+          },
+          "same_budget_qqq_cost_usd": 518.4459775918499,
+          "same_budget_qqq_max_independent_equity_error_usd": 1.4551915228366852e-11,
+          "same_budget_qqq_order_tickets": 366,
+          "same_equity_gold_budget_qqq_metrics": {
+            "cagr": 0.17122007722359767,
+            "end": "2026-10-05",
+            "max_drawdown": 0.19444128793641047,
+            "sessions": 1254,
+            "sharpe": 0.9574640958569332,
+            "start": "2021-10-06"
+          },
+          "scalar_drawdown": 0.1923779745601193,
+          "scalar_sharpe": 1.0181527276320719,
+          "scenario": "stress",
+          "source_target_max_error": 1.1102230246251565e-16,
+          "strategy_metrics": {
+            "cagr": 0.1870626727271536,
+            "end": "2026-10-05",
+            "max_drawdown": 0.1923779745601193,
+            "sessions": 1254,
+            "sharpe": 1.0181527276320717,
+            "start": "2021-10-06"
+          },
+          "years": 5
+        }
+      ],
+      "sector_symbol": "XLK"
+    }
+  },
+  "comparison_preregistered": true,
+  "independent_alpha_claimed": false,
+  "independent_forward_performance_verified": false,
+  "investment_objective_verified": false,
+  "new_economic_factor_definitions": 0,
+  "order_authority": false,
+  "original_qqq_control_recounted_as_new_strategy": false,
+  "queued_six_family_outcomes_computed": false,
+  "registration_sha256": "1ace4a96739b5f99e1023d3dc502373f7da90acf5edb9ddd18b13c20168d273d",
+  "results_sha256": "878c52144d0468c9fe23d0eb83c6fe645d9dd676b27306fdfd960439a1dd3eb6",
+  "same_budget_qqq_ablation_is_new_registered_candidate": false,
+  "schema_version": 1,
+  "study_id": "sector_growth_balance_20261011"
+}

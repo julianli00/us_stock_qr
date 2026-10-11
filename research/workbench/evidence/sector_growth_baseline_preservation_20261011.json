@@ -1,0 +1,140 @@
+{
+  "all28prior_reviews_preserved_exactly": true,
+  "all_factor_definitions_cycles_and_technical_failures_preserved": true,
+  "all_original_imported_files_unchanged": true,
+  "all_prior_receipt_chain_heads_unchanged": true,
+  "daily_pipeline_receipt": {
+    "declared_invocation_origin": "agent_continuation",
+    "finished_at": "2026-10-11T02:20:18.254005+00:00",
+    "historical_research_state_unchanged": true,
+    "native_schedule_delivery_independently_verified": false,
+    "path": "reports/daily-research-operations/runs/20261011T022017-6b678d6c/result.json",
+    "sha256": "b521e06ebb192f49ac441406997da900eeb801bb899f827998a7fcd05f739510",
+    "started_at": "2026-10-11T02:20:17.571732+00:00",
+    "status": "completed"
+  },
+  "engine_sha256": "6a4cca34839b25755c4683b2e449857e36e15bb3ff1d596bca32dfc27728d18a",
+  "event_chain_sha256": "d0b094b22103d0337c4503a2eb52d4a5cb5c9a4c2112a87df3cef3b21858a461",
+  "historical_evaluations": 114,
+  "investment_objective_verified": false,
+  "new_market_or_model_observations": 0,
+  "order_authority": false,
+  "prospective_statuses": {
+    "prospective_data": {
+      "baseline_session": "2026-10-09",
+      "complete_snapshots": 1,
+      "contiguous_since_baseline": true,
+      "eligible_for_strategy_promotion": false,
+      "investment_objective_verified": false,
+      "latest_session": "2026-10-09",
+      "missed_sessions": [],
+      "mode": "data_only_prospective_archive",
+      "observations_after_baseline": 0,
+      "order_authority": false,
+      "receipt_chain_head": "19c9b5d9a1fa90a138ed65ee8255794d272f50446ea4426e0658b7abc54017d9",
+      "strategy_returns_calculated": false
+    },
+    "prospective_factor_inputs": {
+      "additional_macro_series": [
+        "BAA10Y"
+      ],
+      "additional_symbols": [
+        "IJR",
+        "PKW"
+      ],
+      "baseline_session": "2026-10-09",
+      "complete_snapshots": 1,
+      "contiguous_since_baseline": true,
+      "eligible_for_strategy_promotion": false,
+      "expanded_baseline_is_independent_strategy_evidence": false,
+      "investment_objective_verified": false,
+      "latest_session": "2026-10-09",
+      "missed_sessions": [],
+      "mode": "data_only_expanded_factor_inputs",
+      "new_catalog_definitions_registered_by_collection": false,
+      "observations_after_baseline": 0,
+      "order_authority": false,
+      "parent_archive_modified": false,
+      "receipt_chain_head": "f90f0e98ddf6b744a72c89a21114fccf0eb4e4a24098a29a0a0e320d5026854d",
+      "strategy_returns_calculated": false
+    },
+    "prospective_research_accounts": {
+      "accounts": {
+        "spy_base": {
+          "cagr": null,
+          "cost_paid_usd": 0.0,
+          "equity_usd": 10000.0,
+          "max_drawdown": null,
+          "model_order_tickets": 0,
+          "sharpe": null,
+          "total_return": null
+        },
+        "spy_stress": {
+          "cagr": null,
+          "cost_paid_usd": 0.0,
+          "equity_usd": 10000.0,
+          "max_drawdown": null,
+          "model_order_tickets": 0,
+          "sharpe": null,
+          "total_return": null
+        },
+        "strategy_base": {
+          "cagr": null,
+          "cost_paid_usd": 0.0,
+          "equity_usd": 10000.0,
+          "max_drawdown": null,
+          "model_order_tickets": 0,
+          "sharpe": null,
+          "total_return": null
+        },
+        "strategy_stress": {
+          "cagr": null,
+          "cost_paid_usd": 0.0,
+          "equity_usd": 10000.0,
+          "max_drawdown": null,
+          "model_order_tickets": 0,
+          "sharpe": null,
+          "total_return": null
+        }
+      },
+      "actual_orders_or_broker_account": false,
+      "failed_advancement_attempts": 0,
+      "first_model_session": "2026-10-12",
+      "investment_objective_verified": false,
+      "latest_failure": null,
+      "latest_model_session": null,
+      "minimum_sessions_before_sharpe_report": 63,
+      "mode": "prospective_research_simulation_only",
+      "new_historical_strategy_evaluations": 0,
+      "observed_model_sessions": 0,
+      "old_paused_forward_ledgers_modified": false,
+      "order_authority": false,
+      "receipt_chain_head": "0000000000000000000000000000000000000000000000000000000000000000",
+      "research_champion_updated": false,
+      "source_candidate_id": "macro_real_yield_factor_tilt",
+      "source_historical_status": "rejected_historical"
+    },
+    "prospective_target_observations": {
+      "historical_status": "rejected_historical",
+      "investment_objective_verified": false,
+      "latest_rule_signal_session": "2026-09-30",
+      "latest_source_session": "2026-10-09",
+      "missed_observation_sessions": [],
+      "mode": "prospective_target_observations_only",
+      "new_market_data_acquired_by_observer": false,
+      "new_target_observations": 1,
+      "order_authority": false,
+      "orders_submitted": false,
+      "portfolio_initialized": false,
+      "receipt_chain_head": "6f3de02c50da60a2c6d1d7103d80ed47bd0462818e81e42178255fc0a14d5e00",
+      "research_champion_updated": false,
+      "source_candidate_id": "macro_real_yield_factor_tilt",
+      "source_sessions_recorded": 1,
+      "strategy_returns_calculated": false
+    }
+  },
+  "queued_six_family_candidates_registered_or_evaluated": false,
+  "recurring_reviews": 30,
+  "schema_version": 1,
+  "verified_at": "2026-10-11T02:21:15.505259+00:00"
+}

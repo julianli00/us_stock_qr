@@ -2142,7 +2142,7 @@ stage receipts. Origin remains declared rather than authenticated;
 the daily cadence, queued weekly eligibility, original registrations and
 112 completed strategy outcomes remain unchanged.
 
-### Preregistered sector growth comparisons with the original factor core
+### Sector growth: stronger historical returns, unresolved drawdown
 
 The [sector source-admission audit](research/workbench/evidence/sector_growth_source_admission_20261011.json)
 verifies actual XLK and SOXX issuer identities, non-multiplied equity-index
@@ -2172,12 +2172,59 @@ cd research/workbench
 Preparation refuses an existing output directory and computes no strategy
 outcomes. The PDF dependency is separate because the imported dependency
 manifest remains immutable. Registration used the actual clock and an
-exact prior-engine/event migration. All original files, 112 completed
-configurations, 28 reviews and technical failures remain unchanged;
-[two sector candidates are now pending](research/workbench/evidence/research_program_2026-W41_sector_v33.json).
-Their source/code/specifications are published before account outcomes.
+exact prior-engine/event migration. At registration, all original files,
+112 completed configurations, 28 reviews and technical failures remained
+unchanged; the [preregistered snapshot](research/workbench/evidence/research_program_2026-W41_sector_v33.json)
+recorded two pending candidates. Actual source/code/specifications and
+registration receipts were committed and pushed as `86c486ee` before
+account outcomes.
 The IJR/PKW queue still waits for the real October 17 cycle, and no
 prospective sector returns, live orders or qualified champion are claimed.
+
+The [completed results](research/workbench/evidence/sector_growth_balance_20261011_results.json)
+retain **both rejections** under the unchanged qualification contract:
+
+| Candidate | Window | Base CAGR / Sharpe / drawdown | Stress CAGR / Sharpe / drawdown |
+|---|---|---|---|
+| Four factors + XLK + gold | Ten years | 15.93% / 1.02045 / 18.97% | 15.51% / 0.99169 / 19.09% |
+| Four factors + XLK + gold | Five years | 19.47% / 1.06563 / 19.12% | 18.71% / 1.01815 / 19.24% |
+| Four factors + SOXX + gold | Ten years | 18.40% / 1.07665 / 20.49% | 17.98% / 1.05066 / 20.49% |
+| Four factors + SOXX + gold | Five years | 23.45% / 1.14441 / 20.65% | 22.62% / 1.10042 / 20.64% |
+
+SOXX passes strict Sharpe and same-window SPY return gates in all four
+paths, including stress against base-cost SPY. **Its drawdown still exceeds
+15% in every path**, so it is a return-leading research reference, not
+a qualified stable strategy. XLK also fails drawdown and misses ten-year
+stress Sharpe. No investment objective, independent future performance
+or trading authority is established.
+
+The [preregistered matched-budget attribution](research/workbench/evidence/sector_growth_balance_20261011_attribution.json)
+independently reproduces all 131 monthly allocations per candidate within
+1.11e-16 and reaccounts eight QQQ substitutions with identical equity/gold
+budgets, dates, funding and costs. Every candidate path has higher net
+CAGR and Sharpe than its QQQ comparison. For SOXX, the improvement comes
+with roughly 1.6 percentage points more drawdown; the fund's descriptive
+in-sample SPY beta is 1.55/1.80 across ten/five years. This is not proof
+of independent sector alpha. The worst loss interval peaks March 8, 2022
+and troughs October 14, 2022 in these model accounts.
+
+The [current snapshot](research/workbench/evidence/research_program_2026-W41_results_v34.json)
+now records **114 completed configurations, 30 recurring reviews, no
+pending candidates and no qualified champion**. The
+[120-path read-only source audit](research/workbench/evidence/research_program_source_bound_audit_v11.json)
+retains all 19 legacy and 11 version-two reviews and leaves the previous
+28 conclusions unchanged. The fixed 22-review joint-selection inference
+does not cover the later eight studies.
+
+The [preservation receipt](research/workbench/evidence/sector_growth_baseline_preservation_20261011.json)
+verifies unchanged imported files, all original prospective receipt heads
+and zero observed model-return sessions. A real continuation-origin
+daily run at 02:20:17Z completed four duplicate/no-new-data steps;
+it is not independent native-delivery proof. The
+[updated daily/weekly instructions](research/workbench/evidence/prospective_data_automation_v12.json)
+retain the original cadence, source boundaries and October 17 queued-family
+eligibility. They do not silently replace the frozen rejected macro
+forward experiment with this historically better sector strategy.
 
 ## Progress and publication
 
