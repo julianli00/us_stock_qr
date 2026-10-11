@@ -5952,7 +5952,7 @@ keep daily/weekly cadence, original W42 plans and frozen forward models.
 Both forward models still have zero actual return sessions.
 **The full investment objective remains unmet.**
 
-## Gold/equity option risk budgets: monthly inputs, preregistered rules
+## Gold/equity option risk budgets: stable guard still misses ten-year SPY
 
 The [gold-option source policy](research/workbench/config/gold-volatility-inputs.json)
 and [independent coverage proof](research/workbench/evidence/gold_volatility_input_readiness_20261011.json)
@@ -6015,6 +6015,62 @@ profiles, 69 imports, 3,192 controls and original W42 plans.
 Old-commit evaluation is blocked before creating account output.
 **No new candidate returns or metrics exist at registration;
 remote publication must precede funded/bt evaluation.**
+
+Actual remote publication
+`20637ef0de241ee31b422b43dc3a35c776796854` precedes the durable
+22:47:52.126776UTC fence and both new account calculations.
+The [independently verified results](research/workbench/evidence/implied_risk_20261011_results.json)
+retain all four paths for each budget:
+
+| Budget | Window | Costs | CAGR | Net excess Sharpe | Maximum drawdown |
+|---|---|---|---:|---:|---:|
+| Plain | 10y | Base | 18.4837% | 1.06079 | 21.5374% |
+| Plain | 10y | Stress | 18.3435% | 1.05185 | 21.2044% |
+| Plain | 5y | Base | 22.4983% | 1.06425 | 21.7038% |
+| Plain | 5y | Stress | 22.1005% | 1.04400 | 21.4384% |
+| Dollar guarded | 10y | Base | 14.5873% | 1.08430 | 13.5726% |
+| Dollar guarded | 10y | Stress | 14.2969% | 1.05915 | 13.4142% |
+| Dollar guarded | 5y | Base | 19.0952% | 1.16801 | 13.5916% |
+| Dollar guarded | 5y | Stress | 18.5282% | 1.12745 | 13.4334% |
+
+**The plain budget passes all Sharpe/SPY gates but fails all 15% drawdown
+gates. The guarded budget passes every Sharpe/drawdown gate and both
+five-year joint paths, but fails both ten-year SPY return gates.**
+Ten-year guarded CAGR remains below same-cost SPY's 15.4620% base
+and 15.4056% stress, and stress also misses base-cost SPY.
+Both configurations remain rejected under the unchanged full objective.
+Neither the passing shorter window nor a combination of plain returns
+and guarded drawdown is an independently qualified portfolio.
+
+The [reproducibility proof](research/workbench/evidence/implied_risk_20261011_reproducibility.json)
+checks 262 actual monthly option inputs, 131 H10 pairs, every scalar
+ratio/clamp/composition and full seed, 16 funded strategy/SPY accounts
+and 16 independent bt accounts over 30,128 funding/cash-flow days.
+Target, metric and wealth errors are at most 1.11e-16, 3.51e-14
+and USD8.01e-11.
+Sixteen actual source-gap-day account checks preserve daily returns and
+risk holdings without creating new signals or filling GVZ gaps.
+Valid fills of prior month-end signals on those days are not forbidden.
+
+The [descriptive source comparison](research/workbench/evidence/implied_risk_20261011_source_comparison.json)
+reads eight original frozen realized-budget accounts without calculating
+new controls or trials.
+The guarded option budget slightly raises CAGR on all four comparisons,
+but raises Sharpe on only three and also slightly raises drawdown on all four.
+Different budgets and implied-risk proxies are not equal-risk or causal alpha
+evidence. No cap, proxy ratio, guard scale, clock or cost is refitted.
+
+The [current snapshot](research/workbench/evidence/research_program_2026-W41_implied_risk_results_v83.json)
+contains **160 completed configurations = 84 prior + 76 recurring reviews**,
+78 versions including two old invalid ones, no pending candidate and no champion.
+The [full source-bound audit](research/workbench/evidence/research_program_source_bound_audit_v54.json)
+reexecutes all 76 reviews/304 paths, with 19 legacy and 57 funded-v2 reviews.
+The [preservation proof](research/workbench/evidence/implied_risk_20261011_preservation.json)
+retains every old row, seven profiles, 69 imports, 3,192 controls and W42 plans.
+The [updated native instructions](research/workbench/evidence/prospective_data_automation_v54.json)
+retain daily/weekly cadence and both unchanged forward models,
+which still have zero actual return sessions.
+**The full investment objective remains unmet.**
 
 ## Progress and publication
 
