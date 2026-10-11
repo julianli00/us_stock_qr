@@ -45,6 +45,7 @@ GENERATORS = {
     "sector_leadership_rotation": "config/sector-leadership-rotation.json",
     "factor_core_risk_rotation": "config/factor-core-risk-rotation.json",
     "factor_core_momentum": "config/factor-core-momentum.json",
+    "producer_gold_routing": "config/producer-gold-routing.json",
 }
 
 
@@ -375,6 +376,17 @@ def registered_generator(spec: dict, root: Path) -> tuple[str, dict]:
                 "src/us_quant/factor_research.py", "src/us_quant/factor_gold_risk.py",
                 "config/factor-gold-risk.json", "src/us_quant/multifactor_stability.py",
             ]
+        elif name == "producer_gold_routing":
+            required += [
+                "src/us_quant/producer_sector_sources.py", "config/producer-sector-sources.json",
+                "evidence/producer_sector_20261011_source_readiness.json",
+                "data/producer-sector-source-20261011/manifest.json",
+                "src/us_quant/sector_basket_sources.py", "config/sector-basket-sources.json",
+                "src/us_quant/observed_weight_execution.py", "config/observed-weight-execution.json",
+                "evidence/observed_band_20261011_registration.json",
+                "src/us_quant/defensive_factor_rotation.py", "config/defensive-factor-rotation.json",
+                "config/sector-basket-strategy.json",
+            ]
         if any(relative not in frozen for relative in required):
             raise QuantError("The registered strategy is missing a frozen helper dependency.")
         for relative in required:
@@ -461,6 +473,12 @@ def registered_targets(
         return run(data, cache[key][spec["id"]], candidate, policy, start, end, cost, delay)[1]
     if name == "factor_core_momentum":
         from us_quant.factor_core_momentum import run, source_baselines
+
+        if key not in cache:
+            cache[key] = source_baselines(data, policy)
+        return run(data, cache[key][spec["id"]], candidate, policy, start, end, cost, delay)[1]
+    if name == "producer_gold_routing":
+        from us_quant.producer_gold_routing import run, source_baselines
 
         if key not in cache:
             cache[key] = source_baselines(data, policy)

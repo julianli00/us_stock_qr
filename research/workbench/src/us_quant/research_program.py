@@ -207,6 +207,15 @@ def verified_etf_market(readiness: dict, root: Path) -> MarketData:
     from us_quant.multifactor_stability import load_market
 
     source = readiness.get("verified_etf_source", {})
+    if source.get("adapter") == "producer_gold_routing_20261011":
+        from us_quant.producer_gold_routing import verified_market
+
+        policy = read_json(safe_file(root, source["policy"], source["policy_sha256"]))
+        manifest = {"path":source.get("producer_manifest"), "sha256":source.get("producer_manifest_sha256")}
+        if manifest != policy.get("market_source"):
+            raise QuantError("Producer admission must bind the exact independently verified fourteen-asset source.")
+        safe_file(root, manifest["path"], manifest["sha256"])
+        return verified_market(policy, root)
     if source.get("adapter") == "sector_basket_sources_20261011":
         from us_quant.sector_basket_sources import verified_market
 

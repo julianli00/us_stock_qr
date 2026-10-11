@@ -5350,6 +5350,54 @@ keep daily/weekly timing, the original four W42 plans and both frozen
 forward models; source coverage does not establish strategy qualification
 or independent native message delivery.
 
+## Preregistered producer equities for gold-released cash
+
+The [separate policy](research/workbench/config/producer-gold-routing.json)
+and [finite generator](research/workbench/src/us_quant/producer_gold_routing.py)
+freeze two routes from the original half-breadth graded-gold
+observed-band reference, not the later leadership or core-score variants.
+At its 122 informed month ends, only the difference between the prior
+ungraded gold budget and the graded GLD target may leave BIL.
+Stock-standby BIL, GLD, the four-style core, SOXX and every other original
+target remain unchanged.
+
+XLE/XLB qualify only when their 126-session adjusted return strictly exceeds
+actual BIL. One rule chooses the strongest with lexical ticker ties;
+the other uses all eligible funds' 63-session inverse sample-volatility
+shares. Total producer exposure is capped at the prior 40% of NAV
+and the available gold-released budget. No eligible fund leaves source BIL
+unchanged; capped residuals are not redistributed.
+The original 2.5pp actual-holding band, delayed request queue, fresh capital
+and transaction-cost assumptions remain fixed. **Added producer exposure
+is equity risk, not a guaranteed commodity or inflation hedge.**
+
+The [independent pre-account proof](research/workbench/evidence/producer_routing_20261011_pre_account_verification.json)
+checks 244 Decimal selectors and four window seeds: original target error
+is zero, maximum gold-budget/target/share errors are
+7e-17/3.69e-16/1.13e-15. Source months have 22 no-eligible,
+50 single-eligible and 50 dual-eligible states; each rule routes
+57 months, with 19 cap-limited months. Lossless old observations are
+separately checked; neither account parser was changed.
+
+The [actual registration packet](research/workbench/evidence/producer_routing_20261011_registration.json)
+records both candidates at 19:15 UTC.
+The [registration preservation proof](research/workbench/evidence/producer_routing_20261011_registration_preservation.json)
+confirms one exact old-engine/head migration, restored verification of
+all seven unchanged semantic forward statuses, 69 imports and 3,192 controls.
+An initial private verifier checked semantic statuses too early; its
+original code/log remain, and only the check order was corrected.
+The engine identity guard and prepared rules/data/specifications were not relaxed.
+
+The [registered snapshot](research/workbench/evidence/research_program_2026-W41_producer_registered_v72.json)
+retains 148 completed configurations, 64 reviews, 68 versions including
+two old invalid ones, two actual pending candidates and no champion.
+The [prior-path audit](research/workbench/evidence/research_program_source_bound_audit_v46.json)
+reexecutes all 64 reviews/256 paths. An actual old-commit evaluation
+stops before feedback targets or account creation.
+**No new portfolio return has been calculated:** the exact packet,
+code, policy and proof must be approved and remotely published first.
+Original W42 plans and both frozen forward models remain unchanged.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
