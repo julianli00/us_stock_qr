@@ -3581,6 +3581,77 @@ research. The frozen W42 queue and qualification gates remain;
 the dollar reference still misses full-SPY ten-year outperformance.
 **The investment objective remains unmet.**
 
+## Preregistered covariance-only multifactor construction
+
+The [fixed risk-construction policy](research/workbench/config/factor-covariance-risk.json)
+tests two actual trading-strategy configurations, unlike the earlier
+descriptive component controls: constrained risk budgeting and maximum
+diversification. Both allocate among **MTUM, VLUE, QUAL, USMV, GLD and IEF**,
+without SOXX/QQQ/XLK satellites, expected-return forecasts or new macro gates.
+They retain four existing style families; covariance allocation methods
+are not additional economic factors.
+
+At completed month ends, use the last 252 observed daily returns and
+10% diagonal covariance shrinkage, parameters already present in earlier
+allocation research. Equity receives 30%–70% of the 98% invested budget;
+each style receives 15%–35% of equity. Each of gold and intermediate
+Treasuries receives 25%–75% of defense, a symmetric constraint frozen
+before outcomes. The remaining 2% is target idle cash. SPY is only the
+benchmark and BIL is not an optimized risky asset.
+
+The [target implementation](research/workbench/src/us_quant/factor_covariance_risk.py)
+solves a convex positive log-risk-budgeting problem or an equivalent
+convex volatility-normalized maximum-diversification problem under
+identical homogeneous bounds. Binding constraints can prevent exactly
+equal risk contributions: actual signed contributions and deviations
+are recorded, not advertised as six independent/equal risk sources.
+No volatility/threshold grid, daily overlay, shorting or leverage is used.
+Invalid covariance or optimizer failures stop explicitly, without an
+equal-weight fallback.
+
+The [source context](research/workbench/evidence/risk_only_covariance_20261011_source_context.json)
+confirms the identities of Maillard/Roncalli/Teïletche (2010) and
+Choueifaty/Coignard (2008) from primary Crossref metadata. It does **not**
+claim access to their full text, abstracts or exact performance replication:
+the author-PDF request failed in transport and the publisher DOI returned
+403. The initial ASCII-only author-name validator failure is preserved;
+the original accented name and raw response were not modified, and no
+missing acquisition timestamp was invented. Raw metadata remains private.
+
+The [independent target proof](research/workbench/evidence/risk_only_covariance_20261011_target_verification.json)
+checks 244 fixed targets / 122 complete month ends per configuration,
+reconstructing covariance from original CSV prices and checking convex
+KKT stationarity/complementarity, positivity, funding and every group bound.
+Maximum covariance/weight differences are 1.11e-16 and the maximum
+stationarity residual is 8.68e-7. These are target/optimization checks,
+not strategy returns or proof of the investment goal.
+
+The [actual registration](research/workbench/evidence/risk_only_covariance_20261011_registration.json)
+records both candidates at **2026-10-11 10:39:18 / 10:39:19 UTC**,
+before any new strategy account. A [separate study runner](research/workbench/src/us_quant/risk_only_study.py)
+requires the actual configured-remote publication of the exact registration,
+code, policy and source/target proof before writing a durable account fence
+and invoking the original four-path source-bound evaluator.
+Local or unrelated commits and existing partial output directories stop.
+
+One exact old-engine/head migration adds only the finite target generator.
+The [preservation proof](research/workbench/evidence/risk_only_covariance_20261011_registration_preservation.json)
+retains all prior 120 completed configurations, 36 reviews / 144 audited
+paths, 19 legacy / 17 versioned accounts, 69 imported files and seven
+forward profiles. Only the two actual candidate registrations are pending;
+the four W42 plans and IJR/PKW definition queue remain unchanged.
+146 coupled cases and the 52 root guards pass. An actual evaluation
+against the preceding published commit stopped before output/accounts.
+
+The [current registration snapshot](research/workbench/evidence/research_program_2026-W41_risk_registered_v44.json)
+and [source-bound audit](research/workbench/evidence/research_program_source_bound_audit_v18.json)
+preserve every old outcome under the new replay engine.
+Both new methods are formed on already exposed history; original selection
+diagnostics do not include them. Risk diversification can lower CAGR,
+Treasuries/gold can lose together and covariance bounds cannot guarantee
+15% drawdown or Sharpe above 1. At registration there are **zero new
+strategy outcomes**, no champion and no investment qualification.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

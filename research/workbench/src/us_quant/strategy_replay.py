@@ -31,6 +31,7 @@ GENERATORS = {
     "sector_term_guard": "config/sector-term-guard.json",
     "inflation_factor_guard": "config/inflation-factor-guard.json",
     "claims_factor_guard": "config/claims-factor-guard.json",
+    "factor_covariance_risk": "config/factor-covariance-risk.json",
 }
 
 
@@ -187,6 +188,11 @@ def registered_generator(spec: dict, root: Path) -> tuple[str, dict]:
                 "reports/claims-confirmation-plan-20261011/availability-rejected-implementation-v1.py",
                 "reports/claims-confirmation-plan-20261011/source-window-failure-v1.json",
             ]
+        elif name == "factor_covariance_risk":
+            required += [
+                "evidence/risk_only_covariance_20261011_source_context.json",
+                "evidence/factor_gold_risk_20261010_registration.json",
+            ]
         if any(relative not in frozen for relative in required):
             raise QuantError("The registered strategy is missing a frozen helper dependency.")
         for relative in required:
@@ -323,4 +329,8 @@ def registered_targets(
             from us_quant.claims_factor_guard import build_targets
 
             cache[key] = build_targets(data, policy)[spec["id"]]
+        elif name == "factor_covariance_risk":
+            from us_quant.factor_covariance_risk import build_targets
+
+            cache[key] = build_targets(data, policy)[0][spec["id"]]
     return seed_window(cache[key], start)
