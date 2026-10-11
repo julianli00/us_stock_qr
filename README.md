@@ -5136,6 +5136,64 @@ definition is introduced. Original W42 plans, IJR/PKW quota,
 frozen forward experiments and goals remain.
 **The investment objective remains unmet.**
 
+The [completed factor-core results](research/workbench/evidence/core_risk_20261011_results.json)
+retain both fixed risk estimators and every account path:
+
+| Bounded style-core risk rule/window | Base net CAGR / Sharpe / drawdown | Stress net CAGR / Sharpe / drawdown |
+|---|---|---|
+| Sample volatility, ten-year | 15.20% / 1.0589 / 13.75% | 14.66% / 1.0160 / 13.23% |
+| Sample volatility, five-year | 19.02% / 1.0910 / 12.81% | 18.16% / 1.0334 / 12.92% |
+| Semideviation, ten-year | 15.26% / 1.0623 / 13.75% | 14.71% / 1.0190 / 13.25% |
+| Semideviation, five-year | 19.09% / 1.0938 / 12.79% | 18.22% / 1.0359 / 12.88% |
+
+**Both constructions pass every Sharpe/drawdown gate and
+every five-year gate, but both fail ten-year SPY outperformance.**
+All eight CAGR values are below their equal-core leadership
+source. Minimum Sharpe improves modestly to 1.0160/1.0190
+and maximum drawdown remains about 13.75%; risk allocation
+has not closed the observed absolute-return gap.
+SPY's ten-year base/stress CAGR remains 15.4620%/15.4056%.
+Neither candidate qualifies the unchanged joint objective.
+
+All four style exposures remain bounded within their
+original core budget, and every nongroup desired target
+stays exact. Ten-year stressed asset orders remain 649
+for each rule; modeled fees are USD1,923.08/USD1,928.30.
+Conditional risk-adjusted improvements are not isolated
+or equal-risk factor alpha. No factor is removed and
+no bounds, risk window, equity/gold share, band or fee
+is retuned after these outcomes.
+
+The [independent account proof](research/workbench/evidence/core_risk_20261011_reproducibility.json)
+checks all 16 funded strategy/SPY and 16 independent `bt`
+accounts, original independently proven bounded targets,
+728 actual-holding band/initial-seed/request/fill decisions,
+and 30,128 actual-price funding/order/cash-flow sessions.
+Original rates, costs, calendars and initial-capital
+drawdown peaks remain. Target/request error is zero;
+maximum scalar metric/equity/cash-flow errors are
+4.27e-14/8.01e-11 USD/1.10e-11 USD.
+
+The [current snapshot](research/workbench/evidence/research_program_2026-W41_core_risk_results_v69.json)
+contains **146 completed configurations = 84 prior + 62 recurring reviews**,
+64 versions including two old invalid ones, no pending
+actual candidate and no champion.
+The [full source-bound audit](research/workbench/evidence/research_program_source_bound_audit_v43.json)
+reexecutes 62 reviews/248 paths, retaining 19 legacy and 43
+explicit funded-v2 reviews.
+The [preservation proof](research/workbench/evidence/core_risk_20261011_preservation.json)
+keeps all old journal rows/prefix, 69 imported files,
+seven forward profiles and 3,192 frozen control artifacts.
+
+The [native continuation](research/workbench/evidence/prospective_data_automation_v44.json)
+retains both full-window Sharpe/drawdown and five-year passes
+alongside ten-year SPY failures. Original daily/weekly cadence,
+W42 plans, IJR/PKW quota and frozen forward experiments remain;
+both experiments still have zero actual return sessions.
+Observed risk-allocation benefits do not establish independent
+future performance or permit changing the return goal.
+**The investment objective remains unmet.**
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
