@@ -5699,6 +5699,59 @@ retain lower drawdown alongside return failures and unchanged daily/weekly
 cadence. Both frozen forward models still have zero actual return sessions.
 **The full investment objective remains unmet.**
 
+## Treasury curve vintages: verified source, not a new profitable factor
+
+The [source-only policy](research/workbench/config/yield-curve-inputs.json)
+and [vintage parser](research/workbench/src/us_quant/yield_curve_inputs.py)
+prepare daily ten-year-minus-three-month (`T10Y3M`) and
+ten-year-minus-two-year (`T10Y2Y`) Treasury constant-maturity spreads.
+T10Y3M already appears in the registered macro tilt, conditional-model
+features and original prospective inputs; it is not counted as a discovery.
+Both spreads share their ten-year leg and are not two independent alpha sources.
+Their native percent quotes express percentage-point yield differences,
+including negative and zero values, not traded asset returns.
+
+The [independent source proof](research/workbench/evidence/yield_curve_input_readiness_20261011.json)
+verifies all 450 actual ALFRED snapshots in 12 bounded batches,
+plus six separately acquired probe snapshots. All original 131 monthly/reference
+pairs, 225 queries per series and 2,805 NYSE context days remain.
+Each selected observation comes from its previous-NYSE-date vintage
+with the unchanged two-strictly-later-NYSE-session lag and seven-day age limit.
+**All 450 selected inputs are fresh; maximum actual age is five days,
+and independent Decimal value error is zero.**
+
+Every selected T10Y3M date and native level, and every same-observation value,
+matches the original unchanged CSV on the 225-query cohort.
+This supports that specific source-version comparison, not a claim that
+all daily conditional-model inputs, all historical revisions or the old
+portfolio's alpha have been validated.
+Primary definitions disclose the June 21, 2019 underlying Treasury source
+transition. Original intraday first-publication times and full methodology
+continuity are not authenticated. The New York Fed page identifies the
+yield-curve research topic; its model coefficients, monthly aggregation
+and recession probabilities are not imported or replicated.
+
+An initial local parser rejected an actual HTTP200 ZIP because its long title
+wraps across the ALFRED metadata table beside real-time date columns.
+The original code, synthetic fixture, logs and requests remain private.
+The corrected parser reads scoped field values and continuation lines;
+an independent regex-based date-column parser verifies the same complete
+title/source/release/units/frequency/adjustment identities.
+Three successful original document/probe requests are reused without refetch
+or retiming. No source policy, quote, lag, age, window or transport is changed.
+
+The [preservation proof](research/workbench/evidence/yield_curve_input_preservation_20261011.json)
+retains the exact engine, ledger/event head, seven forward profiles,
+69 imports and 3,192 frozen controls. **No inversion flags, portfolio targets,
+accounts, factor definitions or strategy trials are added.**
+Counts remain 154 completed configurations, 70 recurring reviews,
+72 registered versions and no qualifying champion.
+The [updated native instructions](research/workbench/evidence/prospective_data_automation_v51.json)
+keep daily/weekly cadence, the original W42 queue and frozen forward models.
+Any strategy using these versions needs separately frozen rules,
+actual registration and remote publication before performance calculation.
+Source readiness does not complete the investment objective.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
