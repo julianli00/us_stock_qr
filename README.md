@@ -4190,6 +4190,74 @@ retains both failed transfers and the distinction between variance
 targeting and drawdown protection, without weakening the joint goals
 or changing forward rules. **The investment objective remains unmet.**
 
+## Preregistered transfer of fixed price-trend risk rules
+
+The [fixed price-trend policy](research/workbench/config/semiconductor-trend-transfer.json)
+transfers two already specified trend laws to the original
+four-style/SOXX/gold monthly allocation: **daily 200-observation
+component trend gating** and **monthly 63/126/252-session relative
+trend fractions versus actual BIL**. No dollar/option confirmation,
+new horizon, asset-weight grid, volatility target or net-wealth
+floor is added. The half-equity SOXX / equal four-style remainder,
+monthly 63-session risk balance, 30%–70% source equity budget,
+98% investment and all original cost/window gates remain.
+
+The [target implementation](research/workbench/src/us_quant/semiconductor_trend_transfer.py)
+builds an **untraded signal index** from contemporaneous observed
+fund returns: one-half SOXX and one-eighth each of the four styles.
+It starts at one on the first actual source-price date. This is not
+a fee-free account, a reconstructed ETF or independent market
+observation; actual portfolios trade the original funds and pay fees.
+Gold's signal uses the actual GLD adjusted price.
+
+The daily method reuses the unchanged prior four-style component
+gate helper, extending its equity risk state to SOXX. The entire
+equity sleeve or gold can be disabled when its signal is not
+strictly above its 200-observation mean; equality is risk-off.
+The first fully informed target, state changes and original month
+updates emit requests. The monthly method independently scales
+each component by the fraction of the three fixed horizons where
+its return strictly exceeds BIL's same-horizon return.
+Removed risk goes only to BIL, without increasing the other
+component or reimposing an equity minimum during risk-off.
+The methods' horizons and clocks differ according to prior rules,
+so their comparison is not isolated causal timing attribution.
+
+The [pre-account proof](research/workbench/evidence/trend_transfer_20261011_pre_account_verification.json)
+matches all four original source paths including initialization,
+reconstructs the full composed signal from actual CSV prices and
+checks every strict trend state / target with scalar Decimal
+arithmetic. Source / index / target errors are
+0 / 1.60e-14 / 1.11e-16. Daily gating emits 253 targets,
+including 128 nonmonthly state changes; monthly relative trends
+emit 122 targets. No new quote, candidate account or portfolio
+metric is computed during preparation.
+
+The [actual registration](research/workbench/evidence/trend_transfer_20261011_registration.json)
+records both candidates at **2026-10-11 13:18:06 / 13:18:09 UTC**.
+The shared registered-study runner requires exact configured-remote
+publication of the packet/code/policy/proof, then a durable fence
+before all four funded-v2 / independent-`bt` paths.
+An actual attempt using the preceding published commit stops before
+account calculation or output-directory creation.
+
+The [registration preservation](research/workbench/evidence/trend_transfer_20261011_registration_preservation.json),
+[current snapshot](research/workbench/evidence/research_program_2026-W41_trend_registered_v54.json)
+and [old source-bound audit](research/workbench/evidence/research_program_source_bound_audit_v28.json)
+retain 130 completed configurations / 46 reviews / 184 paths,
+19 legacy / 27 funded-v2 outcomes, 69 imported files and seven
+forward profiles. One precise old-engine/head migration adds the
+finite generator; only these two candidates are pending, among
+50 registered code versions including the two old invalid ones.
+202 coupled cases and 52 root guards pass. Original W42 plans,
+IJR/PKW quota and both frozen forward models remain.
+
+These hypotheses use already exposed historical windows.
+Trend timing can whipsaw, miss gaps or lose upside; prior selection
+diagnostics do not include them or the complete search.
+At registration there are **zero new strategy outcomes**, no
+champion and no independent future-alpha or investment qualification.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
