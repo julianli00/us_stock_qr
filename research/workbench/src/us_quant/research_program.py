@@ -36,7 +36,8 @@ def engine_fingerprint() -> str:
 
 
 def accounting_simulator(bundle: dict, *, legacy_allowed: bool = False):
-    from us_quant.cash_funded_accounting_v2 import engine_reference, simulate as corrected
+    from us_quant.cash_funded_accounting_v2 import engine_reference
+    from us_quant.cash_funded_accounting_v2 import simulate as corrected
 
     if "accounting_engine" not in bundle and legacy_allowed:
         return simulate
@@ -743,6 +744,15 @@ class ResearchProgram:
             or scope != readiness.get("data_scope", "direct_stock")
         ):
             raise QuantError("Candidate must declare its factors, data limitations and authority.")
+        frozen = spec.get("frozen_files")
+        if identifier == "semiconductor_dollar_inflation_gold_guard" or (
+            isinstance(frozen, dict) and "src/us_quant/inflation_factor_guard.py" in frozen
+        ):
+            if not isinstance(frozen, dict) or not frozen:
+                raise QuantError("Candidate code and parameters must be frozen before evaluation.")
+            from us_quant.inflation_factor_guard import check_registration_eligibility
+
+            check_registration_eligibility(spec, self.root, now)
         families, catalog = set(), {}
         for identifier_factor in spec["factor_ids"]:
             row = self.db.execute(

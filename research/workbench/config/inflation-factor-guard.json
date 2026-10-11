@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "data_scope": "factor_etf_portfolio",
+  "data_start": "2015-08-10",
+  "as_of": "2026-10-05",
+  "eligible_not_before": "2026-10-17T09:00:00+08:00",
+  "planned_configurations": 1,
+  "new_economic_factor_definitions": 0,
+  "original_control_candidate": "four_factor_semiconductor_sector50",
+  "comparison_candidate": "semiconductor_dollar_half_guard",
+  "risk_change_sessions": 63,
+  "risk_off_investment_scale": 0.50,
+  "compensation_change_threshold": 0.0,
+  "cash_reserve": 0.02,
+  "candidates": [
+    {"id": "semiconductor_dollar_inflation_gold_guard", "gold_preserved_when_compensation_rising": true}
+  ],
+  "methodology": {
+    "hypothesis": "A dollar funding-risk trigger need not reduce gold whenever inflation compensation is rising. Keep all four factor equities and the semiconductor share halved as before;retain original gold only if dollar strength and a positive63-session as-published T10YIEchange coincide. Otherwise use the original dollar-only full-risk halving. This tests exactly one economic exception,not a threshold/share grid.",
+    "inputs": "Read actual H10dollar vintages with original within-method comparisons and declared date-conflict policy. T10YIEcomes from the separately sealed225ALFREDsnapshots,previous-NYSE-session vintagecutoff,two-session observationlag and7dayfreshness. Current histories never replace missing input. Missing/stale/malformed data stops;no newstandby or cash fallback.",
+    "baseline": "Reuse the original four-factor/SOXX/gold monthly budget,half-equitySOXX,equalfourfamilyremainder,63-sessionvolatility and30%-70%equity bounds. Keep original2%targetidle cash,existing realBIL exposure,long-only funded constraints and costs. This is not a continuously maintained cash floor.",
+    "limits": "Gold is not a reliable inflation hedge over practical investment horizons. T10YIEcontains risk/liquidity premiums and shares real-yield information;the proposed exception may worsen drawdown or returns. Current fund methodologies and dated sourceavailability do not establish every original intraday release or historical continuity. Prior results are exposed and no selection-adjusted alpha is claimed.",
+    "sources": [
+      "https://fred.stlouisfed.org/series/T10YIE",
+      "https://www.federalreserve.gov/econres/notes/feds-notes/tips-from-tips-update-and-discussions-20190521.html",
+      "https://www.nber.org/papers/w18706"
+    ],
+    "execution": "Monthly absolute targets only,next-session open5bpbase/onefurther-session20bpstress,USD1perorder,freshUSD10000in each unchanged10y/5ywindow. ActualBILreceives removed capital. Later closes do not replace dated pending intents. Evaluation must use original fundedv2 and independentbt.",
+    "eligibility": "Prepare source/code/targets now without portfolio performance. Register the actual candidate no earlier than2026-10-17T09:00Asia/Shanghai;direct genericregistration and wrapper share this gate. Publish actual candidate registration before any formal outcome. Keep existing IJR/PKWweeklydefinitions and two six-family candidates unchanged.",
+    "authority": "No new economic definition,factor-independence claim,leveraged product,order or frozen forward replacement. Prepared/unregistered is not pending/complete/champion. All120completed configurations and original qualification gates remain;every future failed outcome must be retained."
+  },
+  "order_authority": false,
+  "automatic_live_deployment": false,
+  "existing_forward_rules_changed": false,
+  "new_factor_independence_claimed": false
+}

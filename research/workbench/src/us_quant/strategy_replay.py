@@ -29,6 +29,7 @@ GENERATORS = {
     "dollar_risk_guard": "config/dollar-risk-guard.json",
     "financial_conditions_guard": "config/financial-conditions-guard.json",
     "sector_term_guard": "config/sector-term-guard.json",
+    "inflation_factor_guard": "config/inflation-factor-guard.json",
 }
 
 
@@ -145,6 +146,23 @@ def registered_generator(spec: dict, root: Path) -> tuple[str, dict]:
                 "data/volatility-term-source-20261010/manifest.json",
                 "data/volatility-term-source-20261010/VIX.csv",
                 "data/volatility-term-source-20261010/VIX3M.csv",
+            ]
+        elif name == "inflation_factor_guard":
+            required += [
+                "src/us_quant/dollar_risk_guard.py",
+                "config/dollar-risk-guard.json",
+                "src/us_quant/sector_growth_balance.py",
+                "config/sector-growth-balance.json",
+                "src/us_quant/growth_factor_satellite.py",
+                "config/growth-factor-satellite.json",
+                "src/us_quant/multifactor_stability.py",
+                "src/us_quant/macro_factor_tilt.py",
+                "src/us_quant/financial_conditions_guard.py",
+                "src/us_quant/inflation_inputs.py",
+                "config/inflation-inputs.json",
+                "data/dollar-information-source-20261011/verified-manifest.json",
+                "data/inflation-inputs-20261011/manifest.json",
+                "evidence/inflation_input_readiness_20261011.json",
             ]
         if any(relative not in frozen for relative in required):
             raise QuantError("The registered strategy is missing a frozen helper dependency.")
@@ -272,6 +290,10 @@ def registered_targets(
             cache[key] = build_targets(data, policy)[spec["id"]]
         elif name == "sector_term_guard":
             from us_quant.sector_term_guard import build_targets
+
+            cache[key] = build_targets(data, policy)[spec["id"]]
+        elif name == "inflation_factor_guard":
+            from us_quant.inflation_factor_guard import build_targets
 
             cache[key] = build_targets(data, policy)[spec["id"]]
     return seed_window(cache[key], start)

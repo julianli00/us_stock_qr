@@ -2966,6 +2966,65 @@ retain daily collection and the actual weekly discovery gate. Raw
 archives, documents and the complete input matrix remain private;
 source readiness is not investment-goal success.
 
+### One fixed inflation-aware candidate implemented, not yet registered
+
+The [frozen rule](research/workbench/config/inflation-factor-guard.json)
+and [prepared plan](research/workbench/evidence/inflation_guard_20261011_plan.json)
+extend the dollar-only reference with exactly one economic exception.
+Dollar strength still halves the four-factor/semiconductor equities.
+If the separately archived 63-session inflation-compensation change
+is also positive, retain the original gold allocation; otherwise gold
+is halved as before. Removed capital goes to actual BIL. The original
+monthly budget, 50% reduction, four-family shares, sector share,
+2% target idle cash, costs and formal windows are unchanged.
+
+This is not a claim that gold reliably hedges inflation. The
+[primary literature](https://www.nber.org/papers/w18706) describes
+gold as an unreliable inflation hedge over practical horizons.
+Breakeven compensation also contains risk/liquidity premiums.
+The proposed exception may worsen risk or returns.
+
+The [independent target check](research/workbench/evidence/inflation_guard_20261011_target_verification.json)
+reconstructs actual ALFRED/H.10 inputs and scalar monthly volatility
+budgets. Full targets have 2,805 rows and 12 assets, with 131 monthly
+decisions and 39 conditional gold-retention months. Input/target
+errors are at most `4.1e-16 / 2.23e-16`; all four source-bound
+replays verify initial signals, every target weight and nondecision
+row. These are target checks, **not portfolio returns**.
+
+Both the dedicated wrapper and generic program registration reject
+this candidate before **October 17, 2026 at 09:00 Asia/Shanghai**.
+The coupled [typed-registration guard](research/workbench/evidence/inflation_guard_20261011_registration_type_guard.json)
+also preserves explicit errors for malformed frozen-file manifests.
+Two exact-anchor engine updates preserve all prior records and event
+prefixes; [re-audit](research/workbench/evidence/research_program_source_bound_audit_v16.json)
+regenerates all 36 existing reviews / 144 old paths without changing
+their metrics or conclusions. No registered candidate, definition or
+strategy evaluation is added.
+
+At an eligible cycle, prepare into a fresh directory, check the exact
+specification and publish actual registration **before** evaluation:
+
+```bash
+cd research/workbench
+.venv/bin/python -I -B -m us_quant.inflation_factor_guard prepare \
+  --prepared data/inflation-guard-prepared-20261017
+.venv/bin/python -I -B -m us_quant.inflation_factor_guard register \
+  --prepared data/inflation-guard-prepared-20261017 \
+  --receipt evidence/inflation_guard_20261017_actual_registration.json
+```
+
+The original IJR/PKW definitions and two six-family plans keep their
+weekly gate; this adds one **prepared, unregistered** rule using the
+existing four families, not a third new definition. All 120 completed
+configurations, both frozen forward rules and zero observed model
+returns remain unchanged. Older snapshot-bound diagnostics remain
+bound to their original engine/cohort; use their matching frozen
+environment rather than rewriting old hashes to force a new replay.
+The [latest native instructions](research/workbench/evidence/prospective_data_automation_v23.json)
+retain the daily/weekly cadence. A prepared strategy is not a
+qualified strategy.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
