@@ -1,0 +1,125 @@
+{
+  "active_target_decisions": 126,
+  "actual_early_pure_registration_gate_check": {
+    "blocked": true,
+    "checked_at": "2026-10-11T08:21:33.846458+00:00",
+    "reason": "Claims registration is not eligible before 2026-10-17T09:00:00+08:00."
+  },
+  "all_five_source_unavailable_queries": [
+    {
+      "blocker": "observation_age_exceeds_frozen_fourteen_days",
+      "query_session": "2018-03-29"
+    },
+    {
+      "blocker": "observation_age_exceeds_frozen_fourteen_days",
+      "query_session": "2018-04-02"
+    },
+    {
+      "blocker": "recorded_missing_four_week_component_2018_10_27",
+      "query_session": "2018-11-26"
+    },
+    {
+      "blocker": "observation_age_exceeds_frozen_fourteen_days",
+      "query_session": "2025-10-29"
+    },
+    {
+      "blocker": "observation_age_exceeds_frozen_fourteen_days",
+      "query_session": "2025-10-31"
+    }
+  ],
+  "all_nondecision_standby_and_active_target_rows_verified": true,
+  "candidate_id": "semiconductor_dollar_claims_confirmation",
+  "candidate_returns_or_metrics_computed": false,
+  "checked_at": "2026-10-11T08:21:33.884193+00:00",
+  "frozen_target_sha256": "cce0bbc96340d56c27d7b5bd683be4688be8ae1257fb93fb22baa2ca2d7983cb",
+  "full_target_shape": [
+    2805,
+    12
+  ],
+  "independent_scalar_equity_gold_bil_target_maximum_error": 2.220446049250313e-16,
+  "independent_source_mean_change_and_dollar_maximum_error": 0.0,
+  "investment_objective_verified": false,
+  "joint_positive_dollar_and_claims_reduction_months": 26,
+  "new_economic_factor_definitions": 0,
+  "new_registered_candidates": 0,
+  "new_strategy_evaluations": 0,
+  "order_authority": false,
+  "original_monthly_decisions": 131,
+  "paused_monthly_decisions": [
+    "2018-03-29",
+    "2018-06-29",
+    "2019-02-28",
+    "2025-10-31",
+    "2026-01-30"
+  ],
+  "prepared_spec_sha256": "9a221926d41f70b9bdefc08a323bcd8e35a16d4c963a302be5cfaf0de94b49ae",
+  "registered_candidate_or_portfolio_outcome_existed_before_data_only_revision": false,
+  "schema_version": 1,
+  "source_bound_seeded_target_replays": [
+    {
+      "all_source_targets_standby_rows_and_initial_seed_verified": true,
+      "cost_bps": 5,
+      "delay_sessions": 1,
+      "explicit_seed_signal_session": "2016-10-05",
+      "full_target_matrix_shape": [
+        2805,
+        12
+      ],
+      "portfolio_account_or_metrics_computed": false,
+      "seed_and_formal_target_segment_shape": [
+        2513,
+        12
+      ],
+      "years": 10
+    },
+    {
+      "all_source_targets_standby_rows_and_initial_seed_verified": true,
+      "cost_bps": 20,
+      "delay_sessions": 2,
+      "explicit_seed_signal_session": "2016-10-05",
+      "full_target_matrix_shape": [
+        2805,
+        12
+      ],
+      "portfolio_account_or_metrics_computed": false,
+      "seed_and_formal_target_segment_shape": [
+        2513,
+        12
+      ],
+      "years": 10
+    },
+    {
+      "all_source_targets_standby_rows_and_initial_seed_verified": true,
+      "cost_bps": 5,
+      "delay_sessions": 1,
+      "explicit_seed_signal_session": "2021-10-05",
+      "full_target_matrix_shape": [
+        2805,
+        12
+      ],
+      "portfolio_account_or_metrics_computed": false,
+      "seed_and_formal_target_segment_shape": [
+        1255,
+        12
+      ],
+      "years": 5
+    },
+    {
+      "all_source_targets_standby_rows_and_initial_seed_verified": true,
+      "cost_bps": 20,
+      "delay_sessions": 2,
+      "explicit_seed_signal_session": "2021-10-05",
+      "full_target_matrix_shape": [
+        2805,
+        12
+      ],
+      "portfolio_account_or_metrics_computed": false,
+      "seed_and_formal_target_segment_shape": [
+        1255,
+        12
+      ],
+      "years": 5
+    }
+  ],
+  "source_window_failure_v1_preserved": true
+}

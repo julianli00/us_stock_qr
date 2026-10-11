@@ -753,6 +753,14 @@ class ResearchProgram:
             from us_quant.inflation_factor_guard import check_registration_eligibility
 
             check_registration_eligibility(spec, self.root, now)
+        if identifier == "semiconductor_dollar_claims_confirmation" or (
+            isinstance(frozen, dict) and "src/us_quant/claims_factor_guard.py" in frozen
+        ):
+            if not isinstance(frozen, dict) or not frozen:
+                raise QuantError("Candidate code and parameters must be frozen before evaluation.")
+            from us_quant.claims_factor_guard import check_registration_eligibility
+
+            check_registration_eligibility(spec, self.root, now)
         families, catalog = set(), {}
         for identifier_factor in spec["factor_ids"]:
             row = self.db.execute(

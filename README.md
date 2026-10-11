@@ -3199,6 +3199,68 @@ are calculated. The [updated native instructions](research/workbench/evidence/pr
 retain these source blocks, daily collection and the actual weekly gate.
 Source provenance is progress toward research, **not investment qualification**.
 
+### One fixed labor-market confirmation, not a qualified strategy
+
+The [frozen claims hypothesis](research/workbench/config/claims-factor-guard.json)
+and [source-bound implementation](research/workbench/src/us_quant/claims_factor_guard.py)
+prepare exactly one additional future candidate:
+`semiconductor_dollar_claims_confirmation`.
+It halves the original non-BIL targets only when the published dollar
+has risen over 63 NYSE sessions **and** the four-week claims mean has
+risen relative to its separately archived 63-session-earlier reading.
+Equality does not trigger. Removed capital goes to real BIL; the four
+factor families, half-equity SOXX satellite, gold sleeve, monthly risk
+budgets, cash target and execution costs are unchanged.
+
+Three same-vintage examples match the official IC4WSA smoothing
+convention, not its full history or this rule's predictive accuracy.
+Primary Fed research describes unstable claims level thresholds and a
+late COVID-recession signal. We do not borrow its fitted thresholds,
+Haver dataset or imply stock-return predictability.
+Labor-market confirmation could worsen drawdown, timeliness or returns.
+
+The [first source-window failure](research/workbench/evidence/claims_guard_20261011_source_window_failure_v1.json)
+retains the unregistered policy/code and the actual 2018-11-26 query
+missing its 2018-10-27 component. No strategy targets or portfolio
+outcomes existed before an explicit **data-only** standby revision.
+Together with the four previously frozen stale queries, this creates
+five empty monthly target rows: 2018-03-29, 2018-06-29, 2019-02-28,
+2025-10-31 and 2026-01-30. Existing holdings remain; all daily marks,
+fees and return sessions still apply. No missing value is inserted,
+the 14-day limit stays fixed, and any other incomplete window stops.
+The original claims source itself remains only 221/225 fresh.
+
+The [target verification](research/workbench/evidence/claims_guard_20261011_target_verification.json)
+reproduces all source means/changes with zero error and all scalar
+equity/gold/BIL budgets within 2.23e-16. The actual 2,805-by-12 matrix
+contains 131 original months, 126 active targets, five standby months
+and 26 joint-trigger reductions. Four complete target replays retain
+the explicit seeds and 2,513/1,255-row seed-plus-return segments.
+These are **target counts, not strategy returns**.
+
+The [plan and actual early gate checks](research/workbench/evidence/claims_guard_20261011_plan.json)
+retain the genuine October 17 eligibility. Dedicated and generic
+registration both reject early admission; recovery cannot register an
+unknown candidate. For the legitimate future cycle, prepare into a new
+`data/claims-guard-prepared-20261017` directory, use `candidate_receipts`
+to register the original spec/readiness and publish that actual receipt
+**before** `evaluate-candidate`. If interrupted, recover only the same
+registration or complete review evidence; never replace partial curves.
+The original three queued strategies and IJR/PKW definitions are kept.
+There are now **four prepared, unregistered strategies**, not four trials.
+
+The [preservation check](research/workbench/evidence/claims_guard_20261011_preservation.json)
+records one exact-anchor engine migration for the new finite replay and
+admission gate, preserving every old record and event prefix.
+The [36-review, 144-path audit](research/workbench/evidence/research_program_source_bound_audit_v17.json)
+retains 19 legacy and 17 versioned accounting reviews, all 69 imported
+files and seven forward profiles. The [current state](research/workbench/evidence/research_program_2026-W41_claims_plan_v43.json)
+still has 120 complete configurations, no champion, no registered
+pending candidates and zero forward return sessions. The
+[latest native instructions](research/workbench/evidence/prospective_data_automation_v27.json)
+keep daily collection and the actual weekly gate.
+This hypothesis has **no measured portfolio performance or qualification yet**.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
