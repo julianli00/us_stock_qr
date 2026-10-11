@@ -44,6 +44,7 @@ GENERATORS = {
     "observed_weight_execution": "config/observed-weight-execution.json",
     "sector_leadership_rotation": "config/sector-leadership-rotation.json",
     "factor_core_risk_rotation": "config/factor-core-risk-rotation.json",
+    "factor_core_momentum": "config/factor-core-momentum.json",
 }
 
 
@@ -366,6 +367,14 @@ def registered_generator(spec: dict, root: Path) -> tuple[str, dict]:
                 "src/us_quant/multifactor_stability.py", "config/multifactor-stability.json",
                 "src/us_quant/downside_risk_balance.py", "config/downside-risk-balance.json",
             ]
+        elif name == "factor_core_momentum":
+            required += [
+                "src/us_quant/sector_leadership_rotation.py", "config/sector-leadership-rotation.json",
+                "evidence/leadership_20261011_registration.json",
+                "src/us_quant/factor_momentum_comparison.py", "config/factor-momentum-comparison.json",
+                "src/us_quant/factor_research.py", "src/us_quant/factor_gold_risk.py",
+                "config/factor-gold-risk.json", "src/us_quant/multifactor_stability.py",
+            ]
         if any(relative not in frozen for relative in required):
             raise QuantError("The registered strategy is missing a frozen helper dependency.")
         for relative in required:
@@ -446,6 +455,12 @@ def registered_targets(
         return run(data, cache[key][spec["id"]], candidate, policy, start, end, cost, delay)[1]
     if name == "factor_core_risk_rotation":
         from us_quant.factor_core_risk_rotation import run, source_baselines
+
+        if key not in cache:
+            cache[key] = source_baselines(data, policy)
+        return run(data, cache[key][spec["id"]], candidate, policy, start, end, cost, delay)[1]
+    if name == "factor_core_momentum":
+        from us_quant.factor_core_momentum import run, source_baselines
 
         if key not in cache:
             cache[key] = source_baselines(data, policy)

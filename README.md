@@ -5194,6 +5194,73 @@ Observed risk-allocation benefits do not establish independent
 future performance or permit changing the return goal.
 **The investment objective remains unmet.**
 
+## Preregistered original return-aware factor-core ranking
+
+The [fixed core-momentum policy](research/workbench/config/factor-core-momentum.json)
+transfers two previously registered factor scores inside
+the original positive four-style budget of the 126-leadership
+source: **total momentum** and **SPY-regression residual momentum**.
+The [implementation](research/workbench/src/us_quant/factor_core_momentum.py)
+uses the unchanged original score helper and exact old
+126-return/21-skip/252-fit settings. Rank all four funds,
+with lexical ticker ties, into the original
+35%/30%/20%/15% core shares.
+
+Negative/zero scores do not delete a fund. Total momentum
+compounds 105 observed returns from the fixed 126-minus-21
+window. Residual momentum fits intercept/SPY excess-return
+beta on 252 observed daily returns, then uses the same
+105 residual observations divided by sample deviation.
+The old helper's declared constant-residual zero rule
+remains; rank-deficient/missing/nonfinite inputs fail.
+Residual scoring does not hedge market beta in long-only
+actual ETF holdings, or establish an independent family.
+
+Only four within-core rank shares change. The exact core
+budget, every SOXX/SPY/GLD/BIL/other target, 122 month dates,
+original industry/gold rules and 98% funding remain.
+The unmodified parent 2.5pp actual-holding execution law
+runs on each new desired matrix with fresh positions
+and original capital/fees/delays. No predictor, window,
+rank share, factor subset or cost grid is introduced.
+
+The [independent source-only proof](research/workbench/evidence/core_momentum_20261011_pre_account_verification.json)
+matches the whole old desired source matrix and all four
+previous issued-target/initial-seed paths.
+It reconstructs 976 scalar scores using 105-return
+compounding and centered Decimal OLS, not the production
+least-squares routine. Every rank, tie-break and target
+agrees; source/score/target errors are
+0/9.22e-13/1.39e-17.
+Actual feedback targets and accounts are not computed.
+
+The [actual registration](research/workbench/evidence/core_momentum_20261011_registration.json)
+records both fixed hypotheses at **2026-10-11 18:14:39 / 18:14:42 UTC**.
+An actual evaluation attempt using the preceding published
+commit stops before output/feedback/account creation.
+Exact configured-remote publication of packet/code/policy/
+proof must precede the shared runner's account calculations.
+
+The [registration preservation](research/workbench/evidence/core_momentum_20261011_registration_preservation.json),
+[current snapshot](research/workbench/evidence/research_program_2026-W41_core_momentum_registered_v70.json)
+and [full prior source-bound audit](research/workbench/evidence/research_program_source_bound_audit_v44.json)
+retain **146 completed configurations / 62 reviews / 248 paths**,
+19 legacy / 43 funded-v2 outcomes, 69 imported files and seven
+forward profiles. One exact engine/head migration adds the
+finite adapter, followed only by two actual candidate events.
+66 versions include two old invalid ones and these two
+pending candidates; 230 coupled cases and 52 root guards pass.
+
+Only old pure score functions are reused, not the old whole
+factor/gold portfolio or a legacy data loader with a changed
+full fingerprint. The source/windows were already exposed,
+prior selection diagnostics do not cover these trials/allsearch,
+and no independent holdout/future alpha is established.
+At registration there are **zero new outcomes**, no champion
+and zero actual forward return sessions. Original W42 plans,
+IJR/PKW quota, frozen forward experiments and goals remain.
+**The investment objective remains unmet.**
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
