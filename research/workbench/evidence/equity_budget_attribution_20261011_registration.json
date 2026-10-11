@@ -1,0 +1,279 @@
+{
+  "accounting_engine_for_both_descriptive_legs": {
+    "id": "cash_funded_noop_v2",
+    "source_sha256": "e7efd7a9a87178d556320693bdfd389eef6a21cae70c36dd77c4325b6607d2af"
+  },
+  "auditor_sha256": "507a180c63ddf7a7664d184d77e03f3a14c89cbb8ccebc4f547c6ed1860066e3",
+  "derived_controls_are_registered_trading_candidates": false,
+  "engine_sha256": "ba0699ecb6c28d15cc8e79af2c87ca2f60bdb981251618f4ca09da6bda389eb5",
+  "event_chain_sha256": "238109022e723bf0fc0b73637a2e6103cd77fe9533b9ce1194e6c221f57509b8",
+  "history_already_exposed": true,
+  "included_candidate_ids": [
+    "four_factor_gold_risk_balance",
+    "four_factor_gold_daily_vol12",
+    "quality_implementation_gold_monthly",
+    "quality_implementation_gold_daily_vol12",
+    "four_factor_static70_gold30",
+    "four_factor_causal_mean_variance",
+    "factor_gold_term_half_risk",
+    "factor_gold_term_equity_exit",
+    "macro_real_yield_factor_tilt",
+    "macro_real_yield_tilt_curve_defense",
+    "four_factor_defense_momentum",
+    "four_factor_defense_diversified",
+    "four_factor_daily_target_control",
+    "four_factor_growth_satellite50",
+    "conditional_price_factor_model_v2",
+    "conditional_macro_option_factor_model_v2",
+    "four_factor_total_momentum_tilt",
+    "four_factor_residual_momentum_tilt",
+    "four_factor_gold_joint_trend_guard",
+    "four_factor_gold_component_trend_guard",
+    "four_factor_pdp_momentum_implementation",
+    "four_factor_dual_momentum_implementation",
+    "credit_baa_level_guard",
+    "credit_baa_compression_recovery",
+    "four_factor_growth_gold_monthly_control",
+    "four_factor_growth_gold_ratchet_protection",
+    "four_factor_growth_gold_semideviation",
+    "four_factor_growth_gold_expected_loss",
+    "four_factor_technology_sector50",
+    "four_factor_semiconductor_sector50",
+    "semiconductor_dollar_half_guard",
+    "semiconductor_dollar_real_yield_half_guard",
+    "semiconductor_dollar_nfci_tight_guard",
+    "semiconductor_dollar_nfci_deterioration_guard",
+    "semiconductor_term_half_guard",
+    "semiconductor_term_or_dollar_half_guard"
+  ],
+  "investment_objective_verified": false,
+  "new_control_accounting_outcomes_computed": false,
+  "new_strategy_evaluations": 0,
+  "order_authority": false,
+  "original_bundle_references": [
+    {
+      "path": "reports/factor-gold-risk-20261010/four_factor_gold_risk_balance/bundle.json",
+      "sha256": "5c2383e88db78594d13562fdf1daf05a1e8cce3ef733caafbf7d4237c38f7fc2"
+    },
+    {
+      "path": "reports/factor-gold-risk-20261010/four_factor_gold_daily_vol12/bundle.json",
+      "sha256": "350ee2fa8480ea8a6545a0b23f76c61a4fc4d0f558ea6240222431b852012d60"
+    },
+    {
+      "path": "reports/factor-replication-20261010/quality_implementation_gold_monthly/bundle.json",
+      "sha256": "b74dc833618457efba46f355ed68615337e0fa272cd4514224c71d5eae5d681e"
+    },
+    {
+      "path": "reports/factor-replication-20261010/quality_implementation_gold_daily_vol12/bundle.json",
+      "sha256": "f9ae0609a68ec4ed5ce2b0ae61319b780277fa84589442c17df8b9ea0213f6a1"
+    },
+    {
+      "path": "reports/adaptive-factors-20261010/four_factor_static70_gold30/bundle.json",
+      "sha256": "99bc346732b72572c45e5638a2b58823c97d8df9c12ddf89f34517015bc089ee"
+    },
+    {
+      "path": "reports/adaptive-factors-20261010/four_factor_causal_mean_variance/bundle.json",
+      "sha256": "ebfec1f0bb39299f8b2f7084aa15785346fe9e6bf47a5bc43f6eb0a71b07a027"
+    },
+    {
+      "path": "reports/term-risk-20261010/factor_gold_term_half_risk/bundle.json",
+      "sha256": "00c59522ca5a576d36d45373c69ccd928aa59d833113ebbb7acae65de017b125"
+    },
+    {
+      "path": "reports/term-risk-20261010/factor_gold_term_equity_exit/bundle.json",
+      "sha256": "4b4c4ca7b624870e5eb4a6c2aa50d14c8490140283dc82947502f6a205a4e1e4"
+    },
+    {
+      "path": "reports/macro-tilt-20261010/macro_real_yield_factor_tilt/bundle.json",
+      "sha256": "129e67b59a3e0ea4cefb2027e284ac1e77cb4296dcbd4e1bb18ef49b00fb85e1"
+    },
+    {
+      "path": "reports/macro-tilt-20261010/macro_real_yield_tilt_curve_defense/bundle.json",
+      "sha256": "e047930dd055e131acd80ec69fd86adb2a707472dba186584c240c4e6a97facc"
+    },
+    {
+      "path": "reports/program-evaluations/four_factor_defense_momentum/bundle.json",
+      "sha256": "ea6e7cc23a40bb79ea766fb5f8e559d85fc45efc2fa1de619bf63cc8c606934a"
+    },
+    {
+      "path": "reports/program-evaluations/four_factor_defense_diversified/bundle.json",
+      "sha256": "d1002e10e9462a58e68f88d031ee651ebbe1197d2577c73ffe84e4b0417ee6b3"
+    },
+    {
+      "path": "reports/program-evaluations/four_factor_daily_target_control/bundle.json",
+      "sha256": "039c272055068c827b6a54b31ecc7547ffad4a81b5062f934f5575657c00c510"
+    },
+    {
+      "path": "reports/program-evaluations/four_factor_growth_satellite50/bundle.json",
+      "sha256": "3fb191cd46c478793e2716924352ac2f364bed410e7cbdf2bf35baa39755517c"
+    },
+    {
+      "path": "reports/program-evaluations/conditional_price_factor_model_v2/bundle.json",
+      "sha256": "3bac06631547aa1965ac16fd8116d1266d9c4b397d2d6e974e47849d3573ed68"
+    },
+    {
+      "path": "reports/program-evaluations/conditional_macro_option_factor_model_v2/bundle.json",
+      "sha256": "5abe46749ba4d6e4d61dcb7d6b6767f9a485131d73e0f807e49dc8c2271b6cd1"
+    },
+    {
+      "path": "reports/factor-momentum-comparison-20261011/four_factor_total_momentum_tilt/bundle.json",
+      "sha256": "a87a155e7ee0fee11defbb0dc769789cb74d8c01c52ba953551776f59dfdc0fe"
+    },
+    {
+      "path": "reports/factor-momentum-comparison-20261011/four_factor_residual_momentum_tilt/bundle.json",
+      "sha256": "f652a41bfad4eed2524dd94e1e979c84955cc065721c321ebf753c7583f1e010"
+    },
+    {
+      "path": "reports/trend-factor-guard-20261011/four_factor_gold_joint_trend_guard/bundle.json",
+      "sha256": "d4dfe417a77ddb4be1d9823e44cd2f7f12fd944d2ca5647163324b72656541e5"
+    },
+    {
+      "path": "reports/trend-factor-guard-20261011-accounting-replay/four_factor_gold_component_trend_guard/bundle.json",
+      "sha256": "426a24119b2bee29e72450e5513728cf26b2aea4f2eba65e2f1b55cd6900765c"
+    },
+    {
+      "path": "reports/momentum-implementation-20261011/four_factor_pdp_momentum_implementation/bundle.json",
+      "sha256": "16176261f753d8a8140f1df508de6447f8751e16241867c44525d6a3cfdd8682"
+    },
+    {
+      "path": "reports/momentum-implementation-20261011/four_factor_dual_momentum_implementation/bundle.json",
+      "sha256": "987f9da4721224eca248e2704ee8492ea37664297de5d5f50a469004b733e2cf"
+    },
+    {
+      "path": "reports/credit-factor-guard-20261011/credit_baa_level_guard/bundle.json",
+      "sha256": "34005ba11749ba32d3a0b283cfbd560eadf79dd1d3b73f43783027ec1cea09c8"
+    },
+    {
+      "path": "reports/credit-factor-guard-20261011/credit_baa_compression_recovery/bundle.json",
+      "sha256": "5339867d70d08fb07c0bf82ea522730f943943751a0e897fad5c7951ae10e608"
+    },
+    {
+      "path": "reports/growth-protection-20261011/four_factor_growth_gold_monthly_control/bundle.json",
+      "sha256": "d4d0a1ca70d012278b10b4fa12202e4631a7e67f1480c4167168b7167f2de94e"
+    },
+    {
+      "path": "reports/growth-protection-20261011/four_factor_growth_gold_ratchet_protection/bundle.json",
+      "sha256": "7471df03d3da1bc12a72516e06d644ffc651b9db63011dd89d316fbb17821db0"
+    },
+    {
+      "path": "reports/downside-risk-balance-20261011/four_factor_growth_gold_semideviation/bundle.json",
+      "sha256": "6c36d1b7b70aa81d798e9ed3bda53e5cc875064d332eacb6e03a2e14665f9b91"
+    },
+    {
+      "path": "reports/downside-risk-balance-20261011/four_factor_growth_gold_expected_loss/bundle.json",
+      "sha256": "f5bc5049c935b2e0d4ee92e6cfa528d9033b8d6e29057b68f48615dcf6d005b0"
+    },
+    {
+      "path": "reports/sector-growth-balance-20261011/four_factor_technology_sector50/bundle.json",
+      "sha256": "96611088215031f6fdc765aa2403e4ddb12c7b72ec88069d35fa68e03c36cea9"
+    },
+    {
+      "path": "reports/sector-growth-balance-20261011/four_factor_semiconductor_sector50/bundle.json",
+      "sha256": "94f70da5beff41b3c0165ed215ac5f7a326310c8e891b8d8d40f355f2dacd469"
+    },
+    {
+      "path": "reports/dollar-risk-guard-20261011/semiconductor_dollar_half_guard/bundle.json",
+      "sha256": "6f48940e4a66fc8fd1f23a0d291b6f9e3fb84a3eedad24e716b2eb6b7a965645"
+    },
+    {
+      "path": "reports/dollar-risk-guard-20261011/semiconductor_dollar_real_yield_half_guard/bundle.json",
+      "sha256": "538d8a6c29cd459bb7279d2622fd2569b69b1f476ad6f9609f5f49944bf99ed6"
+    },
+    {
+      "path": "reports/financial-conditions-guard-20261011/semiconductor_dollar_nfci_tight_guard/bundle.json",
+      "sha256": "2956923b50efe96ee4ba210ba0eec307d2015b4cc44f49305d734b6f115184c8"
+    },
+    {
+      "path": "reports/financial-conditions-guard-20261011/semiconductor_dollar_nfci_deterioration_guard/bundle.json",
+      "sha256": "15eab914dca060268ac794e7bdab29e4ed451c84688ac8f9aab5b93b499d034a"
+    },
+    {
+      "path": "reports/sector-term-guard-20261011/semiconductor_term_half_guard/bundle.json",
+      "sha256": "5c9ab11267f7f8a7c8ebc3ecb9f5e402893fbe7d0988850e8ee93f1056cefc73"
+    },
+    {
+      "path": "reports/sector-term-guard-20261011/semiconductor_term_or_dollar_half_guard/bundle.json",
+      "sha256": "89b881a29ce1c579cafa488432c7ae66b5279e8a23af5dec7bf938e8cd69b9cd"
+    }
+  ],
+  "policy": {
+    "as_of": "2026-10-05",
+    "base_cost_bps": 5.0,
+    "base_delay_sessions": 1,
+    "capital_usd": 10000.0,
+    "commission_per_order": 1.0,
+    "data_start": "2015-08-10",
+    "derived_control_portfolios": 36,
+    "diagnostic_id": "equity_budget_attribution_20261011",
+    "equity_symbols": [
+      "SPY",
+      "MTUM",
+      "VLUE",
+      "QUAL",
+      "USMV",
+      "SPHQ",
+      "PDP",
+      "QQQ",
+      "XLK",
+      "SOXX"
+    ],
+    "existing_forward_rules_changed": false,
+    "highlighted_reference_ids": [
+      "semiconductor_dollar_half_guard",
+      "four_factor_semiconductor_sector50",
+      "macro_real_yield_factor_tilt"
+    ],
+    "horizons_years": [
+      10,
+      5
+    ],
+    "included_candidate_count": 36,
+    "independent_alpha_or_risk_matching_claimed": false,
+    "investment_objective_verified": false,
+    "methodology": {
+      "accounting": "Use the frozen fundedv2accounting for both the original source-regenerated target and derivedcontrol,with independentbt rebuilding both. Keep all originalbase/stressfees,delays,initialUSD10000andcomplete10y/5ycalendars. Preserve the19legacy/17versioned historical reviews rather than rewrite them;report the exact difference between the pairedfundedv2original leg and its preserved original ledger/metrics so numerical rebasing is not hidden.",
+      "control": "Generalize the earlier four-factor SPYbudget ablation to every completed recurring candidate's actual universe. At each original defined target row,replace all declared ordinary equityweights,including any existingSPY,with their combinedSPYweight;retain every originalBIL/GLD/IEF/TLTweight,investedbudget,decision/nondecision/standbyrow and independent window seed. Unknown assets or partial targets explicitly stop.",
+      "interpretation": "These36derived controls and144paired comparisons are post-history descriptive attribution,not36newpreregisteredstrategies or independentSPYtimingrules. They inherit risk budgets and decision dates from the originalfactor rule and may have different realizedvolatility,beta,turnover andcosts. Equity-budget matching is not risk matching or causalalpha identification;no newchampion or order permission.",
+      "preservation": "No currentengine/replay dependency,generator,accounting threshold,candidate/factor registration,goals orforwardmodel changes. Keep all120completeconfigurations/36reviews and sevenprofiles unchanged. W42fourcandidate/IJRPKWqueue remains;blocked dividendhistories are not filled orused.",
+      "scope": "Include all36completed recurring reviews,not only a favorable current reference. Keep two terminalinvalidcodeversions separate and prior84trials outside this diagnostic. Publish the exact policy/code/cohort registration before calculating any newcontrolaccount. All raw targets/accounts remainprivate;only provenance,descriptive paired metrics and completecoverage results arepublic.",
+      "selection": "Do not fit weights,lookbacks,scale,thresholds or select a newrule on controlresults. Existing22/36bootstrapselection andriskexposure artifacts keep originalcohorts/engines/results and do not correct the derivedcontrols or all priorsearch. A positive descriptive difference orcontrolpassing numericalgoals is not investmentqualification,forwardvalidation or a newly registered candidate."
+    },
+    "new_economic_factor_definitions": 0,
+    "new_registered_candidates": 0,
+    "new_strategy_evaluations": 0,
+    "non_equity_symbols": [
+      "BIL",
+      "GLD",
+      "IEF",
+      "TLT"
+    ],
+    "order_authority": false,
+    "paired_accounting": "both_legs_frozen_cash_funded_noop_v2",
+    "paired_horizon_scenario_comparisons": 144,
+    "prior_art": {
+      "path": "src/us_quant/multifactor_attribution.py",
+      "sha256": "7b177c90da413b45c85a4c132265342e4304e68db2d7dd548c5f963f4a147be5"
+    },
+    "prior_completed_configurations": 120,
+    "qualification_policy_changed": false,
+    "scenarios": [
+      "base",
+      "stress"
+    ],
+    "schema_version": 1,
+    "scope": "completed_recurring_reviews_descriptive_budget_controls",
+    "source_bound_audit": {
+      "path": "evidence/research_program_source_bound_audit_v17.json",
+      "sha256": "e85b128dd573db3d3ceb2046aaef10bed04653d9bedd4624eaac50a48723c34d"
+    },
+    "source_snapshot": {
+      "path": "evidence/research_program_2026-W41_claims_plan_v43.json",
+      "sha256": "1635d2c52c18d8ecacb016a0429ecfcde9da6dd41686499b910b56222214046b"
+    },
+    "stress_cost_bps": 20.0,
+    "stress_delay_sessions": 2
+  },
+  "policy_sha256": "6b63bc8f54efe745624adaaddbfe660585f10492717a836ea62217b71e1b66bb",
+  "registered_at": "2026-10-11T09:45:40.618937+00:00",
+  "schema_version": 1
+}

@@ -3384,6 +3384,42 @@ retain these source blocks, daily collection and the original weekly
 queue. This is verified source context with an unresolved data block,
 **not investment qualification**.
 
+### Preregistered equity-budget attribution across the full recurring cohort
+
+The [descriptive budget-control policy](research/workbench/config/equity-budget-attribution.json)
+and [adapter](research/workbench/src/us_quant/equity_budget_attribution.py)
+generalize the earlier eight-asset SPY ablation to all **36 completed
+recurring reviews**. At each original target, combine ordinary equity
+ETF weights into SPY while preserving the exact BIL, GLD, IEF and TLT
+weights, invested budget, original decisions/standby rows and horizon seeds.
+This measures the combined equity sleeve, including any growth/sector
+satellite, not an isolated individual factor or stock-level alpha.
+
+Both legs use the same frozen funded-v2 engine and independent `bt`,
+USD10,000 initialization, costs, delays and complete ten/five-year windows.
+The original 19 legacy/17 versioned reviews are **not rewritten**;
+differences from their preserved original metrics and ledgers are reported
+separately so numerical rebasing cannot masquerade as economic value.
+Unknown assets, partial targets or missing source paths stop explicitly.
+
+The [actual registration](research/workbench/evidence/equity_budget_attribution_20261011_registration.json)
+freezes the policy, code, complete source cohort and all original bundle
+references **before** new control accounts are calculated. Execution
+requires the exact remote-published registration/code/policy commit.
+The [registration preservation check](research/workbench/evidence/equity_budget_attribution_20261011_registration_preservation.json)
+retains all original research rows, journal/metadata, seven forward profiles
+and engine/head unchanged.
+
+These are **36 derived descriptive controls and 144 planned horizon/cost
+pairs**, not 36 newly admitted trading strategies. Matching target equity
+budgets does not match realized volatility, beta, turnover or costs, and
+the controls inherit the original factor rule's risk schedule.
+They are not independent holdouts, causal alpha or additions to the old
+selection-inference cohort. Original 120 configurations/36 reviews,
+the four W42 candidates, all failures and qualification goals remain.
+At registration, no new control outcome or investment qualification
+is claimed.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

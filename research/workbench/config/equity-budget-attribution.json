@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "diagnostic_id": "equity_budget_attribution_20261011",
+  "scope": "completed_recurring_reviews_descriptive_budget_controls",
+  "as_of": "2026-10-05",
+  "data_start": "2015-08-10",
+  "included_candidate_count": 36,
+  "prior_completed_configurations": 120,
+  "horizons_years": [10, 5],
+  "scenarios": ["base", "stress"],
+  "capital_usd": 10000.0,
+  "base_cost_bps": 5.0,
+  "stress_cost_bps": 20.0,
+  "base_delay_sessions": 1,
+  "stress_delay_sessions": 2,
+  "commission_per_order": 1.0,
+  "equity_symbols": ["SPY", "MTUM", "VLUE", "QUAL", "USMV", "SPHQ", "PDP", "QQQ", "XLK", "SOXX"],
+  "non_equity_symbols": ["BIL", "GLD", "IEF", "TLT"],
+  "paired_accounting": "both_legs_frozen_cash_funded_noop_v2",
+  "derived_control_portfolios": 36,
+  "paired_horizon_scenario_comparisons": 144,
+  "highlighted_reference_ids": [
+    "semiconductor_dollar_half_guard",
+    "four_factor_semiconductor_sector50",
+    "macro_real_yield_factor_tilt"
+  ],
+  "source_snapshot": {
+    "path": "evidence/research_program_2026-W41_claims_plan_v43.json",
+    "sha256": "1635d2c52c18d8ecacb016a0429ecfcde9da6dd41686499b910b56222214046b"
+  },
+  "source_bound_audit": {
+    "path": "evidence/research_program_source_bound_audit_v17.json",
+    "sha256": "e85b128dd573db3d3ceb2046aaef10bed04653d9bedd4624eaac50a48723c34d"
+  },
+  "prior_art": {
+    "path": "src/us_quant/multifactor_attribution.py",
+    "sha256": "7b177c90da413b45c85a4c132265342e4304e68db2d7dd548c5f963f4a147be5"
+  },
+  "methodology": {
+    "control": "Generalize the earlier four-factor SPYbudget ablation to every completed recurring candidate's actual universe. At each original defined target row,replace all declared ordinary equityweights,including any existingSPY,with their combinedSPYweight;retain every originalBIL/GLD/IEF/TLTweight,investedbudget,decision/nondecision/standbyrow and independent window seed. Unknown assets or partial targets explicitly stop.",
+    "accounting": "Use the frozen fundedv2accounting for both the original source-regenerated target and derivedcontrol,with independentbt rebuilding both. Keep all originalbase/stressfees,delays,initialUSD10000andcomplete10y/5ycalendars. Preserve the19legacy/17versioned historical reviews rather than rewrite them;report the exact difference between the pairedfundedv2original leg and its preserved original ledger/metrics so numerical rebasing is not hidden.",
+    "interpretation": "These36derived controls and144paired comparisons are post-history descriptive attribution,not36newpreregisteredstrategies or independentSPYtimingrules. They inherit risk budgets and decision dates from the originalfactor rule and may have different realizedvolatility,beta,turnover andcosts. Equity-budget matching is not risk matching or causalalpha identification;no newchampion or order permission.",
+    "scope": "Include all36completed recurring reviews,not only a favorable current reference. Keep two terminalinvalidcodeversions separate and prior84trials outside this diagnostic. Publish the exact policy/code/cohort registration before calculating any newcontrolaccount. All raw targets/accounts remainprivate;only provenance,descriptive paired metrics and completecoverage results arepublic.",
+    "selection": "Do not fit weights,lookbacks,scale,thresholds or select a newrule on controlresults. Existing22/36bootstrapselection andriskexposure artifacts keep originalcohorts/engines/results and do not correct the derivedcontrols or all priorsearch. A positive descriptive difference orcontrolpassing numericalgoals is not investmentqualification,forwardvalidation or a newly registered candidate.",
+    "preservation": "No currentengine/replay dependency,generator,accounting threshold,candidate/factor registration,goals orforwardmodel changes. Keep all120completeconfigurations/36reviews and sevenprofiles unchanged. W42fourcandidate/IJRPKWqueue remains;blocked dividendhistories are not filled orused."
+  },
+  "new_strategy_evaluations": 0,
+  "new_registered_candidates": 0,
+  "new_economic_factor_definitions": 0,
+  "independent_alpha_or_risk_matching_claimed": false,
+  "qualification_policy_changed": false,
+  "existing_forward_rules_changed": false,
+  "order_authority": false,
+  "investment_objective_verified": false
+}
