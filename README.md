@@ -2029,7 +2029,10 @@ cd research/workbench
 ```
 
 Preparation revalidates the original actual ETF snapshots and computes no
-outcomes. Both rules must register before source-bound evaluation under
+outcomes. Both [fixed rules are registered before outcomes](research/workbench/evidence/downside_risk_balance_20261011_registration.json).
+Exact-anchor migration preserves 110 completed configurations and 26
+reviews; the existing control is not recounted as a new experiment.
+The two new candidates remain pending until source-bound evaluation under
 unchanged net Sharpe/SPY/15% drawdown gates. Queued six-family definitions,
 their October 17 eligibility and the independent forward model are not
 modified or pre-evaluated.

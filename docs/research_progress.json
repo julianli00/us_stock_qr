@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-11",
-  "phase": "growth_protection_evaluated_110_completed_strategy_goal_unmet",
+  "phase": "downside_risk_budgets_registered_110_completed_goal_unmet",
   "active_research_focus": "source_verified_multifactor_research_and_independent_data",
   "completed": [
     "Preserved runnable incumbent strategy/engine and early-scanner source alongside the isolated 52-configuration workbench.",
@@ -71,7 +71,8 @@
     "Actual dependence results show six equity-family correlation dimensions1.354/1.473for10y/5y,only slightly above four-family1.314/1.450;leading standardized component explains85.57%/81.81%. Adding unweighted GLD/IEFdiagnostic assets raises dimension2.201/2.368,not proof of portfolio returns. Full replay is exact and independentSVD/covariance-slope verifies dimensions/beta/R²within1e-12. Risk statistics remain descriptive,in-sample,not alpha,weights or early candidate performance.",
     "Registered two fixed growth/factor/gold rules using only existing four families:monthly unleveraged halfQQQequitycontrol and a15%goal-derived ratchet protection budget. Actual holdings,costs,peaks,tradeband and pending requests are causal and scenario-dependent. No new factor definition or early six-family admission. At registration108complete trials remained unchanged and two actual candidates were pending.",
     "Both growth/protection candidates completed actual source-bound review and were rejected. Monthly control10y/5ybaseSharpe0.976249/1.000447,stress0.946958/0.954776;drawdown about19%fails the retained risk target. Ratchet protection reduces drawdown to12.82%/12.80%base,13.51%/12.96%stress,but netSharpe0.6890/0.6973base and0.4791/0.5246stress fails return goals.110complete configurations,26reviews,no qualifying champion or pending registered candidate.",
-    "Actual closingNAV/high-water/cost feedback and pending-order discipline reverified for all4protection paths. Five-year stress protection costsUSD2422.68across1622tickets versusUSD510.26/366forcontrol,with lower return and about29%meanBILexposure. Read-only audit regenerated104paths for26reviews without changing metrics/gates;19legacy and7versioned reviews retained. Queued six-family candidates remain unevaluated and prospective model observations remain0."
+    "Actual closingNAV/high-water/cost feedback and pending-order discipline reverified for all4protection paths. Five-year stress protection costsUSD2422.68across1622tickets versusUSD510.26/366forcontrol,with lower return and about29%meanBILexposure. Read-only audit regenerated104paths for26reviews without changing metrics/gates;19legacy and7versioned reviews retained. Queued six-family candidates remain unevaluated and prospective model observations remain0.",
+    "Registered two fixed marginal downside-risk budgets,63-session semideviation and exact5%fractional-tail expected loss,on unchanged halfQQQ/four-factor equity composition and30-70%equity bounds. Original total-volatility control is reused,not recounted. No newfactor/earlyqueueadmission;110completed trials unchanged at registration,two new rules pending."
   ],
   "completed_zh": [
     "已保留可运行的原Top30算法、成本引擎和独立早期扫描器，并隔离导入52配置研究工作台。",
@@ -141,7 +142,8 @@
     "真实诊断显示六类股票相关性风险维度十年/五年仅1.354/1.473，略高于四类1.314/1.450，首标准化成分解释85.57%/81.81%。加GLDIEF未加权诊断资产后维度2.201/2.368，不证明组合收益。完整重放完全一致，独立SVD/协方差斜率核验维度beta/R²误差小于1e-12；均为样本内描述风险，不是alpha、权重优化或提前计算候选业绩。",
     "已用现有四个家族登记成长/因子/黄金两个固定规则：股票半份额QQQ的月度无杠杆对照，及由原15%回撤目标推导的高水位保护预算。实际仓位/费用/峰值/交易带/待单因果且按场景重生；没有新增因子定义或提前六家族登记。登记时完整试验108项，两实际候选待评估。",
     "两项成长/保护研究已完成真实源码绑定审阅并拒绝：月度对照基础十年/五年Sharpe0.976249/1.000447，压力0.946958/0.954776，约19%回撤未达原风险目标。保护版基础回撤12.82%/12.80%、压力13.51%/12.96%，但基础净夏普0.6890/0.6973、压力0.4791/0.5246仍未达收益目标。累计110项完整配置、26项审阅，无合格冠军或已登记待办。",
-    "四条保护路径的真实收盘NAV/高水位/费用反馈及待单纪律重新核验。五年压力保护成本2422.68美元/1622票，对照510.26美元/366票，收益更低、平均BIL约29%。只读审计复核26审阅104路径，旧指标/门槛不变，保留19旧引擎/7版本化结果。六家族队列仍未评估、前瞻模型新观察仍0。"
+    "四条保护路径的真实收盘NAV/高水位/费用反馈及待单纪律重新核验。五年压力保护成本2422.68美元/1622票，对照510.26美元/366票，收益更低、平均BIL约29%。只读审计复核26审阅104路径，旧指标/门槛不变，保留19旧引擎/7版本化结果。六家族队列仍未评估、前瞻模型新观察仍0。",
+    "已预注册63日下行半偏差及精确5%分数尾部预期损失两个固定预算，半QQQ/四因子股票构成和30-70%股票边界不变。原总波动对照复用、不重计；未新增因子或提前登记队列。登记时已完成仍110项，两个规则待评估。"
   ],
   "next": [
     "The five-year monthly-control base Sharpe1.000447is a single-path crossing,not joint qualification. Both fixed growth/protection rules are rejected;do not retune cushion multipliers or growth shares merely to cross one on this exposed history.",
@@ -318,7 +320,7 @@
     "new_strategy_evaluations": 26,
     "total_evaluated_configurations": 110,
     "technical_rejected_code_versions": 2,
-    "pending_candidate_ids": [],
+    "pending_candidate_ids": ["four_factor_growth_gold_semideviation", "four_factor_growth_gold_expected_loss"],
     "research_champion": null,
     "research_versions": 0,
     "data_blockers": 5,
@@ -638,6 +640,19 @@
     "single_path_crossing_is_joint_qualification": false,
     "queued_six_family_strategy_eligibility_unchanged": true,
     "independent_forward_performance_verified": false,
+    "order_authority": false
+  },
+  "downside_risk_balance": {
+    "policy": "research/workbench/config/downside-risk-balance.json",
+    "registration": "research/workbench/evidence/downside_risk_balance_20261011_registration.json",
+    "migration_snapshot": "research/workbench/evidence/research_program_2026-W41_downside_v31.json",
+    "new_registered_candidates": 2,
+    "new_completed_strategy_evaluations": 0,
+    "new_economic_factor_definitions": 0,
+    "risk_window_and_core_composition_unchanged": true,
+    "expected_loss_represents_exact_5pct_empirical_mass": true,
+    "zero_observed_downside_not_future_safety_proof": true,
+    "existing_total_volatility_control_recounted": false,
     "order_authority": false
   },
   "source_bound_review": {

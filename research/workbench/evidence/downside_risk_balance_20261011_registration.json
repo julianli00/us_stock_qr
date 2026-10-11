@@ -1,0 +1,260 @@
+{
+  "candidates": [
+    {
+      "registration": {
+        "candidate_id": "four_factor_growth_gold_semideviation",
+        "data_scope": "factor_etf_portfolio",
+        "families": [
+          "earnings_quality",
+          "low_volatility",
+          "momentum",
+          "value"
+        ],
+        "order_authority": false,
+        "readiness_sha256": "9ee9b3e71e49c6d4b53b58d51b233051d6a8665016f22e48cd38a6964ba4cc35",
+        "registered_at": "2026-10-11T00:04:54.269584+00:00",
+        "spec_sha256": "2daa0b28d3eb782bb284363bea4ef9d92a1b7ec7be43e150fc3fd1e4707a523f"
+      },
+      "spec": {
+        "asset_leverage": {
+          "BIL": 1.0,
+          "GLD": 1.0,
+          "IEF": 1.0,
+          "MTUM": 1.0,
+          "QQQ": 1.0,
+          "QUAL": 1.0,
+          "SPY": 1.0,
+          "TLT": 1.0,
+          "USMV": 1.0,
+          "VLUE": 1.0
+        },
+        "configuration": {
+          "id": "four_factor_growth_gold_semideviation",
+          "risk_measure": "semideviation"
+        },
+        "data_scope": "factor_etf_portfolio",
+        "evaluation_as_of": "2026-10-05",
+        "factor_ids": [
+          "price_momentum",
+          "value_exposure",
+          "quality_exposure",
+          "low_volatility_exposure"
+        ],
+        "frozen_files": {
+          "config/downside-risk-balance.json": "284f89f99a05c556630bdaf0bea0734a945af3e64f8d5e5ad768c3df7b747972",
+          "src/us_quant/downside_risk_balance.py": "55ceddc19e3e64039a3fc03c013aac23c5c357c7a35c2d4b1611c624bfcd4612"
+        },
+        "history_status": "exposed_history_not_independent_holdout",
+        "id": "four_factor_growth_gold_semideviation",
+        "leveraged_products_allowed": false,
+        "market": {
+          "close": {
+            "path": "data/growth-factor-satellite-20261011/close.csv",
+            "sha256": "274b9ae54ae2809b63ca280209f35a65046b913ea5f4c1de74b47e5de1a19e23"
+          },
+          "open": {
+            "path": "data/growth-factor-satellite-20261011/open.csv",
+            "sha256": "ffb261dd3a7220675e484df51f85bb9bd3fa6a3a277c50affc7677c323e28daa"
+          },
+          "raw_close": {
+            "path": "data/growth-factor-satellite-20261011/raw_close.csv",
+            "sha256": "4c3e3d4a088844f4cb99f21fc536d04d0d841da654d25f1ad44485639f49edb8"
+          },
+          "risk_free": {
+            "path": "data/growth-factor-satellite-20261011/risk_free.csv",
+            "sha256": "3b59869f597ac9d2573ffca1616938da4c2df0da24bd38799ce3e39b1f0509cc"
+          },
+          "volume": {
+            "path": "data/growth-factor-satellite-20261011/volume.csv",
+            "sha256": "8a392c7da1bbc0230038b4c48a232923c86a1e43fd2fa30fca7eb2a352cf8343"
+          }
+        },
+        "order_authority": false
+      }
+    },
+    {
+      "registration": {
+        "candidate_id": "four_factor_growth_gold_expected_loss",
+        "data_scope": "factor_etf_portfolio",
+        "families": [
+          "earnings_quality",
+          "low_volatility",
+          "momentum",
+          "value"
+        ],
+        "order_authority": false,
+        "readiness_sha256": "9ee9b3e71e49c6d4b53b58d51b233051d6a8665016f22e48cd38a6964ba4cc35",
+        "registered_at": "2026-10-11T00:04:56.302501+00:00",
+        "spec_sha256": "7cc09fd5762c9e083a488a9a2ad4243c41a507f2d49b8465f5580cb7bed284ca"
+      },
+      "spec": {
+        "asset_leverage": {
+          "BIL": 1.0,
+          "GLD": 1.0,
+          "IEF": 1.0,
+          "MTUM": 1.0,
+          "QQQ": 1.0,
+          "QUAL": 1.0,
+          "SPY": 1.0,
+          "TLT": 1.0,
+          "USMV": 1.0,
+          "VLUE": 1.0
+        },
+        "configuration": {
+          "id": "four_factor_growth_gold_expected_loss",
+          "risk_measure": "expected_loss"
+        },
+        "data_scope": "factor_etf_portfolio",
+        "evaluation_as_of": "2026-10-05",
+        "factor_ids": [
+          "price_momentum",
+          "value_exposure",
+          "quality_exposure",
+          "low_volatility_exposure"
+        ],
+        "frozen_files": {
+          "config/downside-risk-balance.json": "284f89f99a05c556630bdaf0bea0734a945af3e64f8d5e5ad768c3df7b747972",
+          "src/us_quant/downside_risk_balance.py": "55ceddc19e3e64039a3fc03c013aac23c5c357c7a35c2d4b1611c624bfcd4612"
+        },
+        "history_status": "exposed_history_not_independent_holdout",
+        "id": "four_factor_growth_gold_expected_loss",
+        "leveraged_products_allowed": false,
+        "market": {
+          "close": {
+            "path": "data/growth-factor-satellite-20261011/close.csv",
+            "sha256": "274b9ae54ae2809b63ca280209f35a65046b913ea5f4c1de74b47e5de1a19e23"
+          },
+          "open": {
+            "path": "data/growth-factor-satellite-20261011/open.csv",
+            "sha256": "ffb261dd3a7220675e484df51f85bb9bd3fa6a3a277c50affc7677c323e28daa"
+          },
+          "raw_close": {
+            "path": "data/growth-factor-satellite-20261011/raw_close.csv",
+            "sha256": "4c3e3d4a088844f4cb99f21fc536d04d0d841da654d25f1ad44485639f49edb8"
+          },
+          "risk_free": {
+            "path": "data/growth-factor-satellite-20261011/risk_free.csv",
+            "sha256": "3b59869f597ac9d2573ffca1616938da4c2df0da24bd38799ce3e39b1f0509cc"
+          },
+          "volume": {
+            "path": "data/growth-factor-satellite-20261011/volume.csv",
+            "sha256": "8a392c7da1bbc0230038b4c48a232923c86a1e43fd2fa30fca7eb2a352cf8343"
+          }
+        },
+        "order_authority": false
+      }
+    }
+  ],
+  "existing_total_volatility_control_candidate": "four_factor_growth_gold_monthly_control",
+  "migration_snapshot": "evidence/research_program_2026-W41_downside_v31.json",
+  "new_economic_factor_definitions": 0,
+  "no_recount_of_control_as_new_strategy": true,
+  "order_authority": false,
+  "original26reviews_and_factor_definitions_preserved": true,
+  "program_engine_sha256": "c6d69a598aedd99524a5af1e0183c72cbaa9d3a136b37c9cc4e38be710798423",
+  "queued_six_family_strategy_eligibility_unchanged": true,
+  "readiness": {
+    "QQQ_is_growth_beta_not_a_new_factor": true,
+    "capabilities": {
+      "actual_fund_history": {
+        "evidence_path": "config/growth-factor-satellite.json",
+        "evidence_sha256": "7f53dffeafdea3211980a7c6704c450f6142ff99fbf1332772f6e5969bd9b837",
+        "verified": true
+      },
+      "factor_mandates": {
+        "evidence_path": "config/growth-factor-satellite.json",
+        "evidence_sha256": "7f53dffeafdea3211980a7c6704c450f6142ff99fbf1332772f6e5969bd9b837",
+        "verified": true
+      },
+      "post_inception_and_actions": {
+        "evidence_path": "config/growth-factor-satellite.json",
+        "evidence_sha256": "7f53dffeafdea3211980a7c6704c450f6142ff99fbf1332772f6e5969bd9b837",
+        "verified": true
+      },
+      "unleveraged_fund_identity": {
+        "evidence_path": "config/growth-factor-satellite.json",
+        "evidence_sha256": "7f53dffeafdea3211980a7c6704c450f6142ff99fbf1332772f6e5969bd9b837",
+        "verified": true
+      }
+    },
+    "checked_at": "2026-10-11T00:00:45.406084+00:00",
+    "data_scope": "factor_etf_portfolio",
+    "schema_version": 1,
+    "stock_fundamental_data_still_blocked": true,
+    "verified_etf_source": {
+      "adapter": "growth_factor_satellite_20261011",
+      "policy": "config/growth-factor-satellite.json",
+      "policy_sha256": "7f53dffeafdea3211980a7c6704c450f6142ff99fbf1332772f6e5969bd9b837"
+    }
+  },
+  "registered_before_outcomes": true,
+  "source_code_commit": "112402ad",
+  "strategy_outcomes_computed": false,
+  "study": {
+    "as_of": "2026-10-05",
+    "candidates": [
+      {
+        "id": "four_factor_growth_gold_semideviation",
+        "risk_measure": "semideviation"
+      },
+      {
+        "id": "four_factor_growth_gold_expected_loss",
+        "risk_measure": "expected_loss"
+      }
+    ],
+    "cash_reserve": 0.02,
+    "data_scope": "factor_etf_portfolio",
+    "equity_share_max": 0.7,
+    "equity_share_min": 0.3,
+    "factor_ids": [
+      "price_momentum",
+      "value_exposure",
+      "quality_exposure",
+      "low_volatility_exposure"
+    ],
+    "factor_symbols": [
+      "MTUM",
+      "VLUE",
+      "QUAL",
+      "USMV"
+    ],
+    "growth_share_of_equity": 0.5,
+    "methodology": {
+      "automatic_live_deployment": false,
+      "control": "The already completed four_factor_growth_gold_monthly_control is the original total-volatility comparison. Reuse its actual results;do not repeat it as a third new strategy or hide its failures.",
+      "core": "Identical halfQQQ/half equal-four-factor equity composition and actualGLD as the existing monthly control. Current factor families stay registered;QQQis market/growth beta,not a new independent factor.",
+      "expected_loss": "Use the negative empirical mean of the worst5%of63excess returns,including a fractionally weighted boundary observation so exactly5%probability mass is represented. Positive lower-tail means map to zero observed loss,not a claim of risk-free assets.",
+      "family_queue": "Only existing four economic families are used. Do not change Oct17eligibility,register queued IJR/PKW early or compute pending six-family performance.",
+      "forward": "Existing17source archive has noQQQand the separately registered rejected-macro forward model has no returns yet;neither constitutes forward evidence for these two new rules.",
+      "hypothesis": "The total-volatility growth/gold control barely passes five-year base Sharpe but treats positive and negative volatility alike. Compare two fixed downside-risk estimators without changing core composition,lookback,funding or investor gates.",
+      "order_authority": false,
+      "references": [
+        {
+          "authors": "Sortino and Price",
+          "doi": "10.3905/joi.3.3.59",
+          "title": "Performance Measurement in a Downside Risk Framework",
+          "url": "https://doi.org/10.3905/joi.3.3.59",
+          "year": 1994
+        },
+        {
+          "authors": "Acerbi and Tasche",
+          "doi": "10.1111/1468-0300.00091",
+          "title": "Expected Shortfall: A Natural Coherent Alternative to Value at Risk",
+          "url": "https://doi.org/10.1111/1468-0300.00091",
+          "year": 2002
+        }
+      ],
+      "selection": "Two fixed hypotheses after110exposed configurations. No risk-window/tail-probability/equity-share grid or post-outcome redefinition. Source cases with no negative samples are not proof of future safety. Original Sharpe/SPY/15%drawdown gates unchanged.",
+      "semideviation": "On63completed sessions,subtract the frozen daily risk-free series from each sleeve's return and take the square root of the mean squared negative parts,dividing by all63observations rather than just losses.",
+      "timing": "Completed month ends only;actual fund observations and known lagged risk-free series;next-open5bpbase and one-extra-session20bpstress,USD10,000fresh10y/5yaccounts,USD1orders,2%target idle cash. No daily portfolio insurance or volatility cap.",
+      "weights": "Balance equity and gold inversely to their marginal downside measures using the same30%-70%equity bounds. Both zero downside estimates fail explicitly;one zero estimate reaches the predetermined bound. These are risk-budget heuristics,not coherent joint-portfolio expected-shortfall optimization."
+    },
+    "new_configurations": 2,
+    "new_economic_factor_definitions": 0,
+    "prior_evaluated_configurations": 110,
+    "risk_sessions": 63,
+    "schema_version": 1,
+    "study_id": "downside_risk_balance_20261011",
+    "tail_probability": 0.05
+  }
+}
