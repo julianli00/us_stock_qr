@@ -2874,6 +2874,53 @@ The [updated native instructions](research/workbench/evidence/prospective_data_a
 retain the daily/weekly cadence without claiming new native delivery
 proof or promoting a strategy.
 
+### UUP still excluded: current reported exposure is not a historical cap
+
+The [new source evidence](research/workbench/evidence/uup_source_evidence_20261011.json)
+records an actual request to the futures-holdings endpoint advertised
+inside the issuer's UUP product page. The fund CUSIP, ISIN, long USD
+contract and business date are checked, not inferred from a URL.
+For **October 9, 2026**, the issuer's
+`percentageOfTotalNetAssets` field reports a currency future at
+**102.697813%**, or a reported-weight/NAV ratio of **1.02697813**.
+
+This is a current issuer-reported percentage, not independently
+authenticated notional terminology or a complete historical leverage
+maximum. The snapshot is **after** the formal October 5 cutoff.
+It cannot establish full-window compliance with the unleveraged
+contract; absence of a 2x objective is not such a guarantee.
+Collateral and futures are not added together as two NAV budgets.
+UUP remains **excluded**, with no leverage value self-defaulted to one
+and no new price-history or portfolio-performance evaluation.
+
+Two additionally advertised reports, the 2024 annual and August 2026
+monthly report, return HTTP 200 **country-selection HTML**, not PDF.
+The prospectus and company-page requests to SEC return 403.
+All three previous failed PDF attempts remain preserved. No country
+cookies, browser impersonation, audience selection or access gate is
+bypassed; search-generated prospectus quotes are not used as verified
+primary text.
+
+The dated parser verifies aggregate-versus-scoped holding values
+and preserves the official pending-dividend cash adjustment's null
+CUSIP and percentage rather than filling zero. Its first parser
+attempt rejected this legitimate nullable row; that source/schema
+failure and exact old code are retained. Only the observed adjustment
+identity is recognized; unknown null identifiers, missing futures
+weights, stale identities and inconsistent aggregates still stop.
+This is not another registered strategy-code failure or accounting
+incident, and a source percentage below 100% would still not
+automatically establish a historical no-leverage cap.
+
+Independent decimal arithmetic reproduces the reported future weight
+and ratio. The
+[preservation receipt](research/workbench/evidence/uup_source_preservation_20261011.json)
+confirms all 120 configurations, 36 reviews, 69 imported files and
+seven prospective profiles remain unchanged, with zero model returns.
+The [updated native instructions](research/workbench/evidence/prospective_data_automation_v20.json)
+retain daily collection and the actual October 17 discovery gate.
+This source checkpoint does not constitute a qualified strategy.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
