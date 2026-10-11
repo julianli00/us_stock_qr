@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "study_id": "inflation_input_readiness_20261011",
+  "scope": "historical_monthly_source_readiness_only",
+  "series": "T10YIE",
+  "data_start": "2015-08-10",
+  "as_of": "2026-10-05",
+  "source_observation_start": "2014-01-01",
+  "source_observation_end": "2026-10-05",
+  "required_vintage_dates": 225,
+  "monthly_comparison_grid": 131,
+  "publication_delay_sessions": 2,
+  "maximum_observation_age_days": 7,
+  "vintage_cutoff": "previous_nyse_session",
+  "form_url": "https://alfred.stlouisfed.org/series/downloaddata?seid=T10YIE",
+  "maximum_dates_per_request": 40,
+  "maximum_entered_dates_characters": 500,
+  "source_index": {
+    "path": "data/macro-tilt-prepared-20261010/close.csv",
+    "sha256": "b098f783bbf7a4ca56520e11c6e13edbb0eb2673ed7aaec02b89981ff74fabce"
+  },
+  "research_snapshot": {
+    "path": "evidence/research_program_2026-W41_results_v40.json",
+    "sha256": "d9447ff4f0b0f21c3a14a7d4077e82f4ada3942992583ae1e500484cd47c2d00"
+  },
+  "source_definitions": {
+    "FRED": "https://fred.stlouisfed.org/series/T10YIE",
+    "ALFRED": "https://alfred.stlouisfed.org/series?seid=T10YIE",
+    "economic_interpretation": "https://www.federalreserve.gov/econres/notes/feds-notes/tips-from-tips-update-and-discussions-20190521.html",
+    "prior_asset_issuer": "https://www.ishares.com/us/products/239467/ishares-tips-bond-etf"
+  },
+  "methodology": {
+    "prior_art": "TIP already belongs to the imported defensive rotation universe and prior learned-allocation price features. Do not relabel it as a new economic discovery or count another source request as a strategy trial. This preparation adds historical T10YIE input provenance only.",
+    "economic_input": "Ten-year nominal Treasury versus inflation-indexed real-yield compensation in native percent. Primary FRED definition and Fed interpretation retain expected-inflation,risk-premium and liquidity components. The series shares rate information with previously researched DFII10;economic naming does not establish independent predictive alpha.",
+    "vintages": "Use actual ALFREDpublicform snapshots for every original monthly and63-session reference query,with prior-NYSE-session vintage cutoff. Select observations using the unchanged two strictly laterNYSEsession lag and7-calendar-day age. No current-history fallback,missing-day interpolation,synthetic series or freshness relaxation.",
+    "definition_changes": "Primary FREDnotes disclose a June21,2019underlyingTreasury-source change. Preserve the dated histories and native precision;do not claim complete methodology continuity or authenticated original intraday publication times. A snapshot gap is not proof the publisher failed to release.",
+    "readiness": "Verify exactly225snapshotdates/131month-reference pairs on the original2805sessionmarketindex. Store actual input values privately and publish metadata,coverage/hash/freshness proof only. Do not calculate candidate direction states,targets,portfolio returns,Sharpe,CAGR or factor rankings.",
+    "future_research": "This is candidate-information preparation,not a registered new factor or tradable strategy. Existing IJR/PKWdefinitions and six-family candidates retain their actualOctober17eligibility and weekly quota. Any later hypothesis requires its own actual eligible-cycle registration before performance evaluation.",
+    "preservation": "No old generator,accounting engine,registered reviews,source receipts,qualification gate or prospective rule changes. No new economic-definition,candidate,review,event,market-model observation or order."
+  },
+  "new_registered_factor_definitions": 0,
+  "new_strategy_evaluations": 0,
+  "new_factor_family_independence_claimed": false,
+  "strategy_states_or_returns_computed": false,
+  "TIP_counted_as_new_asset_or_factor": false,
+  "forward_rules_changed": false,
+  "existing_queued_proposals_replaced": false,
+  "order_authority": false
+}

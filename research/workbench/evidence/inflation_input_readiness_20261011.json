@@ -1,0 +1,69 @@
+{
+  "TIP_is_counted_as_new_asset_or_factor": false,
+  "TIP_previously_used_in_defensive_universe_and_price_features": true,
+  "actual_batches": 6,
+  "actual_monthly_query_and_reference_count": 225,
+  "actual_required_vintage_dates": 225,
+  "all_selected_inputs_from_previous_NYSE_session_vintages": true,
+  "all_three_separate_probes_reproduce_batches": true,
+  "checked_at": "2026-10-11T06:26:27.734907+00:00",
+  "complete_methodology_continuity_and_intraday_first_publication_verified": false,
+  "every_input_date_age_and_value_independently_verified": true,
+  "existing_Oct17_queued_proposals_and_eligibility_unchanged": true,
+  "existing_forward_rules_changed": false,
+  "independent_decimal_value_maximum_error": 0.0,
+  "inherited_observation_lag_sessions": 2,
+  "input_is_pure_expected_inflation": false,
+  "investment_objective_verified": false,
+  "maximum_actual_observation_age_days": 5,
+  "maximum_allowed_observation_age_days": 7,
+  "native_frequency": "Daily",
+  "native_units": "Percent",
+  "new_information_independence_from_prior_real_yield_verified": false,
+  "new_prospective_model_observations": 0,
+  "new_registered_factor_definitions": 0,
+  "new_strategy_evaluations": 0,
+  "order_authority": false,
+  "original_market_index_sessions": 2805,
+  "original_monthly_comparison_grid": 131,
+  "policy": "config/inflation-inputs.json",
+  "policy_sha256": "3afe398de6e619cde00c56272421a058ba8fd4bb6bce431770c1075ee620ab81",
+  "primary_definitions": {
+    "ALFRED-download.html": {
+      "sha256": "f7c4f50215447fa0aef80ccfa3eda20da21cc156a4c020dade2e6ce0b15ed249",
+      "url": "https://alfred.stlouisfed.org/series/downloaddata?seid=T10YIE"
+    },
+    "ALFRED-series.html": {
+      "sha256": "2ec37411cbefa40c53076afcd285bff8b3cb7f8a21e03ab4774af3886f740c21",
+      "url": "https://alfred.stlouisfed.org/series?seid=T10YIE"
+    },
+    "FRED-series.html": {
+      "sha256": "89d38d5ae5a91f4b07181107a6aaf455afa6fbec831222b6a2bb1e3bde5c05ee",
+      "url": "https://fred.stlouisfed.org/series/T10YIE"
+    },
+    "Fed-interpretation.html": {
+      "sha256": "036efcccfaee468b405ce7aeef29debbaf97264c8050ccc71bba0b7918e95e03",
+      "url": "https://www.federalreserve.gov/econres/notes/feds-notes/tips-from-tips-update-and-discussions-20190521.html"
+    },
+    "TIP-issuer.html": {
+      "sha256": "e7dde7ed132959ae4e6f4760741c19ba84aad567c07a77086492c2f263b0a196",
+      "url": "https://www.ishares.com/us/products/239467/ishares-tips-bond-etf"
+    }
+  },
+  "prior_art_files": {
+    "config/dual-horizon.json": "85d9475cb6089e27b181f466be4fc81b345caa05924de4a12cf9071bdf271e92",
+    "src/us_quant/learned_allocation.py": "9dbe60d8bf16108e83ab163442774606781d5c456d7a2839b02729961e7f36b8"
+  },
+  "private_verified_query_matrix": "reports/inflation-inputs-20261011/verified-input-queries.csv",
+  "private_verified_query_matrix_sha256": "265db343b9280f534d6b6e039741f830b22c891287731f0a3c44e1b33bed0387",
+  "raw_copyrighted_inputs_or_full_matrices_published": false,
+  "readiness_code_sha256": "f0cacae4af4d7ca48ac0e75fcfb6cfac8ac8ab5355adfc5e727708ca3bc1c70e",
+  "risk_and_liquidity_premium_components_preserved": true,
+  "schema_version": 1,
+  "series": "T10YIE",
+  "source_manifest": "data/inflation-inputs-20261011/manifest.json",
+  "source_manifest_sha256": "5bad74ca0953573a378617ea19cb815708c36337a3634118415308b4a52fce33",
+  "strategy_states_targets_or_returns_computed": false,
+  "study_id": "inflation_input_readiness_20261011",
+  "underlying_Treasury_source_change_disclosed": "2019-06-21"
+}

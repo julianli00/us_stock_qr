@@ -2921,6 +2921,51 @@ The [updated native instructions](research/workbench/evidence/prospective_data_a
 retain daily collection and the actual October 17 discovery gate.
 This source checkpoint does not constitute a qualified strategy.
 
+### Inflation-compensation inputs prepared, not a new strategy
+
+The [source-only plan](research/workbench/config/inflation-inputs.json) and
+[readiness evidence](research/workbench/evidence/inflation_input_readiness_20261011.json)
+add actual historical **T10YIE** as-of input provenance for possible
+later research. Six official ALFRED batches contain all 225 original
+month-end/reference-date snapshots for the 131 existing query pairs.
+The unchanged 2,805-session index, previous-NYSE-session vintage
+cutoff, two-session observation lag and seven-day age bound are
+retained. Actual selected ages are at most **five days**.
+Independent raw decimal/calendar reconstruction agrees exactly with
+every selected value, date and age, and three separately acquired
+probes reproduce their batch data.
+
+TIP is **not new**: it already appears in the imported defensive
+universe and the prior learned-allocation price features. No new TIP
+price history, factor family or strategy trial is counted. The added
+information is archived inflation-compensation data, not another
+relabelled fund allocation.
+
+The [primary series definition](https://fred.stlouisfed.org/series/T10YIE)
+and [Federal Reserve interpretation](https://www.federalreserve.gov/econres/notes/feds-notes/tips-from-tips-update-and-discussions-20190521.html)
+do not make breakeven compensation pure expected inflation: inflation
+risk and TIPS liquidity premiums also matter, and the series shares
+rate information with the already researched real yield. The June
+2019 underlying Treasury-source change, incomplete methodology
+continuity and unauthenticated intraday first-publication times remain
+explicit. Native percent quotes are not security returns.
+
+No direction state, target, portfolio return, Sharpe, CAGR or factor
+ranking is calculated. The inputs are not wired into any existing
+strategy generator or forward profile. Any later hypothesis needs
+separate actual eligible-cycle registration and publication before
+performance evaluation; the October 17 IJR/PKW definitions and two
+six-family candidates are not replaced or evaluated early.
+
+The [preservation evidence](research/workbench/evidence/inflation_input_preservation_20261011.json)
+keeps all 120 configurations, 36 reviews, six registered definitions,
+69 imported files and seven forward profiles unchanged. Both models
+still have zero return observations. The
+[updated native instructions](research/workbench/evidence/prospective_data_automation_v21.json)
+retain daily collection and the actual weekly discovery gate. Raw
+archives, documents and the complete input matrix remain private;
+source readiness is not investment-goal success.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
