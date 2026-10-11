@@ -3788,6 +3788,57 @@ two new strategies. At registration, **zero new strategy outcomes**
 and no investment qualification are claimed; the full-SPY and
 Sharpe/drawdown gates remain unchanged.
 
+The [completed sector-basket results](research/workbench/evidence/sector_basket_strategy_20261011_results.json)
+retain both configurations and all eight window/cost paths:
+
+| Method/window | Base net CAGR / Sharpe / drawdown | Stress net CAGR / Sharpe / drawdown |
+|---|---|---|
+| Plain sector basket, ten-year | 11.70% / 0.8286 / 17.37% | 11.28% / 0.7918 / 16.45% |
+| Plain sector basket, five-year | 14.37% / 0.8735 / 16.71% | 13.73% / 0.8228 / 16.62% |
+| Dollar-half basket, ten-year | 9.02% / 0.7778 / 12.23% | 8.36% / 0.7012 / 10.60% |
+| Dollar-half basket, five-year | 12.27% / 0.9264 / 9.24% | 11.28% / 0.8220 / 9.17% |
+
+The plain basket exceeds cost-matched SPY only in the five-year
+comparisons; its stress result still fails the additional base-cost
+SPY hurdle. All its paths miss Sharpe above 1 and drawdown at most 15%.
+The dollar-half basket meets the drawdown limit on all paths, but
+none meets Sharpe or SPY outperformance. Thus a diversified sector
+satellite lowers the previous single-industry dependence without
+solving the joint return/stability objective. No sector, weight,
+lookback or dollar scale is refitted after these rejections.
+
+The [independent account proof](research/workbench/evidence/sector_basket_strategy_20261011_reproducibility.json)
+checks eight complete strategy/SPY comparisons, 16 funded and
+16 independent `bt` accounts, exact costs, delays, rates and
+initial-capital drawdown peaks. Maximum prepared/seeded target,
+scalar metric and independent equity differences are
+3.34e-16 / 5.76e-14 / 6.55e-11 USD. Both strict joint rejections reproduce.
+The [proof-scope note](research/workbench/evidence/sector_basket_strategy_20261011_proof_scope.json)
+clarifies that the retained v2 target proof ran **after** the one
+completed migration and **before** candidate registration: its
+pre-migration-record preservation label does not mean that current
+engine metadata or the migration event was unchanged. No original
+proof/registration hash or strategy outcome is rewritten.
+
+The [current snapshot](research/workbench/evidence/research_program_2026-W41_sector_results_v47.json)
+contains **124 completed configurations = 84 prior + 40 recurring reviews**,
+42 registered code versions including the two old invalid ones,
+no pending actual candidate and no champion. The [full source-bound
+audit](research/workbench/evidence/research_program_source_bound_audit_v21.json)
+reexecutes all 40 reviews / 160 paths, retaining 19 legacy and
+21 funded-v2 accounts.
+The [preservation proof](research/workbench/evidence/sector_basket_strategy_20261011_preservation.json)
+retains every original journal row/event prefix, 69 imported files,
+all seven forward profiles and all 3,192 old descriptive-control artifacts.
+
+Six definitions / five catalog families and the original four
+unregistered W42 plans / IJR-PKW queue remain. Both frozen forward
+models still have zero actual return sessions. Original selection
+diagnostics do not correct the new four risk-only/sector trials or
+all prior searches. The [native continuation](research/workbench/evidence/prospective_data_automation_v33.json)
+retains these failures without changing costs, windows, forward rules
+or the full-SPY gate. **The investment objective remains unmet.**
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
