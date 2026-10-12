@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "data_scope": "factor_etf_portfolio",
+  "data_start": "2015-08-10",
+  "as_of": "2026-10-05",
+  "eligible_not_before": "2026-10-17T09:00:00+08:00",
+  "planned_configurations": 1,
+  "new_economic_factor_definitions": 0,
+  "original_control_candidate": "four_factor_semiconductor_sector50",
+  "comparison_candidate": "semiconductor_dollar_half_guard",
+  "risk_change_sessions": 63,
+  "claims_smoothing_weeks": 4,
+  "claims_change_threshold": 0.0,
+  "risk_off_investment_scale": 0.50,
+  "cash_reserve": 0.02,
+  "stale_input_behavior": "pause_rebalance_and_record_gap",
+  "known_incomplete_window": {
+    "query_session": "2018-11-26",
+    "vintage_cutoff": "2018-11-21",
+    "latest_observation_date": "2018-11-17",
+    "missing_observation_dates": ["2018-10-27"]
+  },
+  "data_only_revision": {
+    "original_unregistered_policy": "reports/claims-confirmation-plan-20261011/availability-rejected-policy-v1.json",
+    "original_unregistered_implementation": "reports/claims-confirmation-plan-20261011/availability-rejected-implementation-v1.py",
+    "original_source_failure": "reports/claims-confirmation-plan-20261011/source-window-failure-v1.json",
+    "portfolio_outcomes_computed_before_revision": false,
+    "source_age_limit_relaxed": false
+  },
+  "candidates": [
+    {
+      "id": "semiconductor_dollar_claims_confirmation",
+      "confirmation": "four_week_claims_mean_increased_since_63_nyse_sessions"
+    }
+  ],
+  "methodology": {
+    "hypothesis": "Dollar appreciation can coincide with healthy growth rather than broad stress. Test one fixed labor-market confirmation:halve original non-BILtargets only when the as-published dollar increased over63NYSEsessions AND the four-week mean of initial unemployment claims increased relative to its separately archived63-session-earlier reading. Zero changes do not trigger. No fitted level threshold or parameter sweep.",
+    "smoothing": "Average exactly the latest four consecutive actual Saturday ICSAobservations in each query's own historical snapshot. Three independent IC4WSAas-of examples reproduce this convention,not the entire official series. Keep counts in native units;do not label claims as the unemployment rate,trade the indicator or use current-vintage revisions for earlier queries.",
+    "timing": "The sealed claims source uses the secondpreviousNYSEsession snapshot and separate first-release-date evidence for the selected latest week. Latest observation age remains at most14calendar days. Each comparison point uses its own as-of source;seasonal revisions and eligibility changes can contribute to measured change. No exact intraday first-publication or complete historical-methodology claim.",
+    "missing_data": "Freeze standby before any outcome for a month requiring one of the four previously recorded stale queries,or the specifically verified2018-11-26four-week window missing2018-10-27. Preserve the initial unregistered policy/code and its actual preparation failure;no targets or returns existed before this data-only revision. Emit an empty target row,record the exact source/date/reason,and retain actual holdings,even when dollar change is nonpositive. All daily marks,fees and sessions remain. Unknown hashes,batches or other incomplete windows still stop;no fill,cash/current-history fallback or age relaxation.",
+    "baseline": "Reuse the unchanged four-family/SOXX/gold monthly allocation,half-equitySOXX,equal four-family remainder,63-session sleeve volatility,30%-70%equity bounds and98%target investment. The50%reduction applies to all original non-BILassets;removed capital goes to actual BIL. Keep2%targetidle cash,not a continuous floor. Original H10within-method comparisons,date-conflict policy and2019transition remain.",
+    "limits": "Primary Fed research finds initial-claims level thresholds vary over time and its fitted threshold signalled the COVIDrecession only after it ended. Neither that study nor three smoothing probes validate this zero-change/63-session rule or stock-return predictability. Claims cover eligible insurance applicants,not all separations. This confirmation may worsen returns,drawdown or timeliness;no independent alpha family is claimed.",
+    "sources": [
+      "https://www.stlouisfed.org/on-the-economy/2025/jan/are-initial-jobless-claims-useful-gauge-labor-market-conditions",
+      "https://fred.stlouisfed.org/series/IC4WSA",
+      "https://alfred.stlouisfed.org/series/downloaddata?seid=ICSA"
+    ],
+    "eligibility": "Prepare only source-bound code,inputs,targets and missing-data policy now. No actual candidate registration or performance before2026-10-17T09:00Asia/Shanghai. Generic and dedicated registration must share the frozen gate. Publish the actual registration before full10y/5ybase/stress outcome. Keep the original three prepared candidates and IJR/PKWweeklydefinitions unchanged;this adds no economic definition.",
+    "execution": "FreshUSD10000per original horizon/scenario,USD1/order,5bpnext-openbase/20bpextrasessionstress,fractional long-only cash-funded units,explicit fundedv2 and independentbt. Keep exact original return calendars,initial deployment and frozen risk-free rates. Every Sharpe>1,drawdown<=15%,same-costSPY and stress/base-SPYgate must pass;no leverage or live orders.",
+    "preservation": "No replacement of old strategy rules,source-only claims artifacts,registered results or either prospective model. Prepared/unregistered does not count as pending,completed or champion. Known source standby is an explicit new hypothesis policy,not a claim that source readiness became complete."
+  },
+  "order_authority": false,
+  "automatic_live_deployment": false,
+  "existing_forward_rules_changed": false,
+  "new_factor_independence_claimed": false,
+  "source_age_limit_relaxed": false
+}

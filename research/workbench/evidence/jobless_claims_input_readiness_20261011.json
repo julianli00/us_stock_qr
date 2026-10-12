@@ -1,0 +1,127 @@
+{
+  "ICSA_is_unemployment_rate_or_all_unemployed_persons": false,
+  "actual_advertised_first_release_dates": 162,
+  "actual_asof_snapshots": 225,
+  "actual_checked_query_count": 225,
+  "actual_first_release_batches": 5,
+  "actual_frozen_freshness_blocks": [
+    {
+      "age_calendar_days": 19,
+      "blocker": "observation_age_exceeds_frozen_fourteen_days",
+      "first_release_date": "2018-03-15",
+      "observation_date": "2018-03-10",
+      "query_session": "2018-03-29",
+      "vintage_cutoff": "2018-03-27"
+    },
+    {
+      "age_calendar_days": 23,
+      "blocker": "observation_age_exceeds_frozen_fourteen_days",
+      "first_release_date": "2018-03-15",
+      "observation_date": "2018-03-10",
+      "query_session": "2018-04-02",
+      "vintage_cutoff": "2018-03-28"
+    },
+    {
+      "age_calendar_days": 39,
+      "blocker": "observation_age_exceeds_frozen_fourteen_days",
+      "first_release_date": "2025-09-25",
+      "observation_date": "2025-09-20",
+      "query_session": "2025-10-29",
+      "vintage_cutoff": "2025-10-27"
+    },
+    {
+      "age_calendar_days": 41,
+      "blocker": "observation_age_exceeds_frozen_fourteen_days",
+      "first_release_date": "2025-09-25",
+      "observation_date": "2025-09-20",
+      "query_session": "2025-10-31",
+      "vintage_cutoff": "2025-10-29"
+    }
+  ],
+  "actual_snapshot_batches": 6,
+  "all_required_queries_ready": false,
+  "archive_gaps_prove_originating_publisher_failed_to_release": false,
+  "blocked_query_count": 4,
+  "checked_at": "2026-10-11T07:47:48.164953+00:00",
+  "complete_historical_methodology_and_intraday_publication_verified": false,
+  "current_history_fallback_or_stale_value_interpolation_used": false,
+  "every_query_count_date_age_and_blocker_independently_verified": true,
+  "existing_Oct17_queued_definitions_and_prepared_strategies_changed": false,
+  "existing_data_lags_or_age_limits_relaxed": false,
+  "first_advertised_vintage_date": "2009-05-28",
+  "frozen_information_delay_sessions": 2,
+  "independent_decimal_count_maximum_error": 0.0,
+  "initial_format_probe_not_selected_by_frozen_query_grid": [
+    "2016-09-24"
+  ],
+  "investment_objective_verified": false,
+  "maximum_actual_observation_age_days": 41,
+  "maximum_allowed_observation_age_days": 14,
+  "native_frequency": "Weekly, Ending Saturday",
+  "native_units": "Number",
+  "new_predictive_alpha_or_family_independence_verified": false,
+  "new_prospective_market_or_model_observations": 0,
+  "new_registered_candidates": 0,
+  "new_registered_factor_definitions": 0,
+  "new_strategy_evaluations": 0,
+  "order_authority": false,
+  "original_first_release_values_replace_asof_revisions": false,
+  "original_market_index_sessions": 2805,
+  "original_monthly_comparison_grid": 131,
+  "originating_DOL_documents_read": false,
+  "originating_access_block_http_status": 403,
+  "policy": "config/jobless-claims-inputs.json",
+  "policy_sha256": "779f2aca2a1a2525a1c2099381e6e0a432f8dc203448145ae03b1e8afa46ee80",
+  "preserved_initial_format_failure": {
+    "failed_response_sha256": "97d3ed8491835ab7ed087460add6e358a164b30493d298e46183171ab5aac119",
+    "http200_is_verified_archive": false,
+    "path": "data/claims-inputs-20261011/initial-format-v1-failure.json",
+    "reason": "Initial-release-only format rejects arbitrary non-release vintage dates.",
+    "sha256": "3db062c9696e47e52fd7312c93bbf50578d2f5b7742d2d7ba0de0ef8f3de03ea",
+    "strategy_or_accounting_failure": false
+  },
+  "preserved_originating_access_block_urls": [
+    "https://www.dol.gov/ui/data.pdf",
+    "https://oui.doleta.gov/unemploy/claims.asp",
+    "https://oui.doleta.gov/unemploy/claims_arch.asp"
+  ],
+  "primary_definitions": {
+    "ALFRED-download.html": {
+      "sha256": "2497b67df85792d21fe6db867f3ce12b5221cc1a920850d308760c84fc00c667",
+      "url": "https://alfred.stlouisfed.org/series/downloaddata?seid=ICSA"
+    },
+    "ALFRED-help.html": {
+      "sha256": "e9baaea99010ded86009ba555666a346150c4416b0f70764b9eda16110231511",
+      "url": "https://alfred.stlouisfed.org/help/downloaddata"
+    },
+    "ALFRED-series.html": {
+      "sha256": "b7fceff502834d388c06569c8cb9cd0feee5769a622892e75ee9b777fb369c47",
+      "url": "https://alfred.stlouisfed.org/series?seid=ICSA"
+    },
+    "FRED-series.html": {
+      "sha256": "a925a8b4b20b168eb666fb859226922ecbbcf70aa00d398d73b43906559540a9",
+      "url": "https://fred.stlouisfed.org/series/ICSA"
+    }
+  },
+  "private_verified_query_matrix": "reports/claims-inputs-20261011/verified-input-queries.csv",
+  "private_verified_query_matrix_sha256": "ea525d63e0584ebb1c1f8bc143849eed32bdf43026064267ee16e5eb52c24391",
+  "raw_copyrighted_sources_or_full_matrices_published": false,
+  "readiness_code_sha256": "d86a4a8c77fdbae36465a1b945ec8cb06bff820b106e2af13b02d4114f9b8df9",
+  "ready_query_count": 221,
+  "schema_version": 1,
+  "seasonal_adjustment": "Seasonally Adjusted",
+  "selected_distinct_observation_weeks": 160,
+  "selected_initial_probe_weeks_reproduced": [
+    "2015-08-22",
+    "2026-09-19"
+  ],
+  "selected_snapshot_values_differ_from_initial_release_count": 0,
+  "series": "ICSA",
+  "source_manifest": "data/claims-inputs-20261011/manifest.json",
+  "source_manifest_sha256": "d7e2e59b21db06f3f6f6d84d138d7a57e52a37b7c0300aa957fcbad51a9a7022",
+  "state": "source_provenance_verified_with_frozen_freshness_blocks",
+  "strategy_states_targets_or_returns_computed": false,
+  "strict_readiness_error": "Claims readiness blocked by the frozen fourteen-day age at: 2018-03-29, 2018-04-02, 2025-10-29, 2025-10-31",
+  "study_id": "jobless_claims_input_readiness_20261011",
+  "three_separately_acquired_snapshot_probes_reproduce_batches": true
+}

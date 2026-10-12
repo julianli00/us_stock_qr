@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "study_id": "existing_producer_sector_price_preparation_20261011",
+  "scope": "source_only_original_portfolio_plus_existing_energy_materials_funds",
+  "data_start": "2015-08-10",
+  "as_of": "2026-10-05",
+  "original_source_id": "semiconductor_breadth_half_gold_relative",
+  "additional_assets": ["XLE", "XLB"],
+  "asset_roles": {
+    "XLE": "energy_producer_equity_not_direct_commodity_futures",
+    "XLB": "materials_sector_equity_not_direct_commodity_futures"
+  },
+  "source_registration": {"path": "evidence/graded_gold_20261011_registration.json", "sha256": "0b01a85155e436164efaa4e0d35597a60e0faae11080babebdf8d939793432b7"},
+  "sector_policy": {"path": "config/sector-basket-sources.json", "sha256": "81d75bafad58205ed03f7a2c7927c49533bef46ed2c66a7cfa79172f01e053d8"},
+  "sector_implementation": {"path": "src/us_quant/sector_basket_sources.py", "sha256": "de2eae361be8599a352360b26674110d0978cd2857dda0677bce88716f7788dc"},
+  "sector_readiness": {"path": "evidence/sector_basket_source_readiness_20261011.json", "sha256": "76f1dbb9f4a7ef029307ba11fce0fec9a1cbd53317e20cf676fe79654b57fbf2"},
+  "sector_manifest": {"path": "data/sector-basket-sources-20261011/manifest.json", "sha256": "65eced0b12e4909ee0ca67587f59a000a11107950e05613475cc8439f241a32a"},
+  "source_contract": {
+    "only_existing_registered_raw_csv_and_primary_documents": true,
+    "new_quote_requests": 0,
+    "complete_original12asset_panels_and_frozen_risk_free_preserved": true,
+    "complete2805post_inception_observations_per_additional_fund_required": true,
+    "original_raw_csv_corporate_action_and_issuer_pdf_guards_unchanged": true,
+    "both_original_signal_and_unused_portfolio_xlk_versions_preserved": true,
+    "no_price_source_retrieval_time_rewrite": true,
+    "access_or_rate_limit_bypass": false
+  },
+  "limits": {
+    "energy_materials_funds_are_guaranteed_inflation_hedges": false,
+    "sector_funds_are_new_independent_economic_factor_families": false,
+    "current_issuer_identity_is_full_historical_constituent_mandate_notional_proof": false,
+    "source_readiness_is_strategy_or_investment_qualification": false,
+    "research_program_admission_not_implemented_by_this_source_study": true
+  },
+  "conceptual_future_research": {
+    "candidate_count": 2,
+    "cash_origin": "only_original_gold_trend_removed_budget_not_equity_standby_cash",
+    "methods": ["existing126positive_excess_vs_bil_winner", "existing126positive_excess_and63inverse_volatility"],
+    "existing_standalone_sector_nav_cap": 0.40,
+    "rules_not_prepared_registered_or_evaluated": true,
+    "interpretation": "Producer-company revenues may react differently to commodity prices from gold or semiconductor equities,especially during some inflation regimes. Their stocks can still lose with broader markets. This source-only question does not assume return,hedge,alpha ordrawdown benefits and does not change current W42plans,definition quota or frozen forward models."
+  },
+  "new_registered_candidates": 0,
+  "new_strategy_evaluations": 0,
+  "new_economic_factor_definitions": 0,
+  "portfolio_targets_or_returns_computed": false,
+  "existing_W42_queue_changed": false,
+  "order_authority": false,
+  "investment_objective_verified": false
+}

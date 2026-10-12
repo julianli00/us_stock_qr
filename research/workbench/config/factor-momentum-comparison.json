@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "study_id": "factor_momentum_comparison_20261011",
+  "data_scope": "factor_etf_portfolio",
+  "as_of": "2026-10-05",
+  "prior_evaluated_configurations": 100,
+  "new_configurations": 2,
+  "new_economic_factor_definitions": 0,
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "factor_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "score_parameters": {
+    "sector_universe": ["MTUM", "VLUE", "QUAL", "USMV"],
+    "parameters": {
+      "momentum_sessions": 126,
+      "skip_sessions": 21,
+      "residual_fit_sessions": 252,
+      "volatility_sessions": 63,
+      "trend_sessions": 200
+    }
+  },
+  "ranked_factor_shares": [0.35, 0.30, 0.20, 0.15],
+  "baseline_policy": "config/factor-gold-risk.json",
+  "cash_reserve": 0.02,
+  "candidates": [
+    {"id": "four_factor_total_momentum_tilt", "score": "momentum"},
+    {"id": "four_factor_residual_momentum_tilt", "score": "residual"}
+  ],
+  "sources": [
+    {
+      "title": "Factor Momentum and the Momentum Factor",
+      "authors": "Ehsani and Linnainmaa",
+      "journal_year": 2022,
+      "doi": "10.1111/jofi.13131",
+      "url": "https://doi.org/10.1111/jofi.13131",
+      "metadata_verification": "https://api.crossref.org/works?query.title=Factor%20Momentum%20and%20the%20Momentum%20Factor&rows=3&select=DOI,title,author,published,container-title,URL",
+      "working_paper": "https://www.nber.org/papers/w25551"
+    },
+    {
+      "title": "Residual Momentum",
+      "authors": "Blitz, Huij and Martens",
+      "journal_year": 2011,
+      "doi": "10.1016/j.jempfin.2011.01.003",
+      "url": "https://repub.eur.nl/pub/22252/"
+    }
+  ],
+  "methodology": {
+    "hypothesis": "Market beta may dominate momentum in long-only factor funds. Compare total-return ranking with SPY-regression residual ranking while holding aggregate equity/gold target budgets identical.",
+    "score": "Reuse the unchanged original factor_scores helper. Total momentum compounds the last126 daily returns excluding the latest21. Residual momentum fits an intercept and SPY excess-return beta on the trailing252 daily returns, then sums the last126 residuals excluding21 divided by their sample standard deviation.",
+    "availability": "The verified factor snapshot begins2015-08-10. A252-session daily fit and126-minus21 score permit full pre-account warmup without altering the formal2016-10-06/2021-10-06 return windows. This is a short-window ETF adaptation, not the papers' stock-level multifactor or long-short replication.",
+    "factor_composition": "At completed month ends rank all four funds by the selected score, ticker as deterministic tie-breaker. Assign35/30/20/15%of the equity sleeve. No fund is removed, no absolute-return filter is added and no shares are fitted.",
+    "matched_budgets": "Reuse the frozen equal-four-factor/gold63-session inverse-volatility baseline with30%-70%equity bounds. Both candidates inherit exactly the same equity total, gold total and decision dates, so score-dependent changes cannot alter aggregate defensive exposure.",
+    "timing": "Every score, regression and risk input ends at the signal close. Execute next-session open in base or one additional session in stress. Preserve USD10,000,2%target idle cash,USD1commissions,5/20bp costs and all recurring-program gates.",
+    "interpretation": "These are two allocation configurations on four existing economic factor exposures, not new independent alpha families. SPY beta removal in a score does not hedge beta in the long-only holdings. Momentum itself is not independent of the MTUM mandate.",
+    "selection": "Formed after100completed configurations on exposed overlapping history. No untouched holdout, parameter grid, fitted shares or live promotion. A historically passing result would still require independent prospective validation.",
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

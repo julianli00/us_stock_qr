@@ -1,0 +1,27 @@
+{
+  "attribution_module_sha256": "7b177c90da413b45c85a4c132265342e4304e68db2d7dd548c5f963f4a147be5",
+  "candidate_parameters_changed": false,
+  "candidates": [
+    "four_factor_breadth_defense",
+    "four_factor_bounded_defense_vol10"
+  ],
+  "evidence_sha256": "ae5418f61f8719d56fa63f3a56f906b75b7cb50b97330e7f4ece6fce0d362c3d",
+  "independent_forward_validation": false,
+  "interpretation": "Equity-budget-matched ablation, not an equal-volatility portfolio or an independent SPY timing strategy. The defense schedule comes from the frozen factor rule.",
+  "market_manifest_sha256": "ea128cfe0fa71db93080234787f0779f0236b88466ab01f8e78336bc03652aa5",
+  "method": "Replace four factor ETF targets with SPY at their combined weight; preserve dates, IEF/GLD/BIL weights, target cash, capital, costs and execution delay.",
+  "new_hypotheses": 0,
+  "order_authority": false,
+  "registered_at": "2026-10-10T06:23:42.080481+00:00",
+  "registration_sha256": "721932a098fb8061d58e8c402bb74ade08512007c13f17be91512c2b4f940d8e",
+  "scenarios": [
+    "base",
+    "stress",
+    "higher_cost"
+  ],
+  "schema_version": 1,
+  "windows": [
+    "10y",
+    "5y"
+  ]
+}

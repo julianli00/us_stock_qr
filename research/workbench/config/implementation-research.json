@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "round_id": "implementation_round_20261007",
+  "new_configuration_count": 6,
+  "prior_disclosed_configurations": 66,
+  "previous_round": {
+    "results": "evidence/allocation_round_20261007_results.json",
+    "sha256": "848e2a3bda9553246210bbbf103ce8b71b24cea763a0c998d7460065428a67f7",
+    "development_status": "Adaptive exploration after both prior rounds; none of these historical intervals is an untouched holdout."
+  },
+  "request": "Test implementation stability and mechanically specified portfolio combinations, without changing completed research rules or target metrics.",
+  "primary_goal": {
+    "same_rule_in_both_windows": true,
+    "net_excess_sharpe_strictly_above": 1.0,
+    "net_cagr_above_spy": true,
+    "base_and_stress_required": true
+  },
+  "retained_secondary_goals": {
+    "net_cagr_strictly_above": 0.20,
+    "max_drawdown_at_most": 0.15
+  },
+  "capital_usd": 10000.0,
+  "cash_reserve": 0.02,
+  "commission_per_order": 1.0,
+  "cost_bps_per_side": 5.0,
+  "stress_cost_bps_per_side": 20.0,
+  "base_delay_sessions": 1,
+  "stress_delay_sessions": 2,
+  "sector_universe": ["XLB", "XLE", "XLF", "XLI", "XLK", "XLP", "XLU", "XLV", "XLY"],
+  "supplement_symbols": ["QLD", "SSO", "XLB", "XLE", "XLF", "XLI", "XLK", "XLP", "XLU", "XLV", "XLY"],
+  "macro_universe": ["QLD", "GLD", "TLT", "IEF", "DBC"],
+  "parameters": {
+    "momentum_sessions": 252,
+    "skip_sessions": 21,
+    "residual_fit_sessions": 756,
+    "volatility_sessions": 63,
+    "variance_sessions": 21,
+    "trend_sessions": 200,
+    "top_k": 3,
+    "max_sector_weight": 0.40,
+    "qqq_reference_volatility": 0.20,
+    "qld_reference_volatility": 0.40,
+    "growth_gold_reference_volatility": 0.20,
+    "macro_momentum_sessions": 126,
+    "macro_top_k": 2,
+    "rank_top_k": 3,
+    "covariance_sessions": 252,
+    "covariance_diagonal_shrinkage": 0.10,
+    "max_macro_weight": 0.80,
+    "trend_horizons": [63, 126, 252]
+  },
+  "candidates": [
+    {"id": "growth_gold_quarterly_risk", "family": "growth_gold", "managed": false, "rebalance": "quarterly", "embedded_leverage": true},
+    {"id": "growth_gold_target_change_band", "family": "growth_gold", "managed": false, "target_change_band": 0.05, "embedded_leverage": true},
+    {"id": "growth_gold_equal_notional_control", "family": "fixed_growth_gold", "qld_fraction": 0.3333333333333333, "embedded_leverage": true},
+    {"id": "growth_gold_equal_dollars_control", "family": "fixed_growth_gold", "qld_fraction": 0.5, "embedded_leverage": true},
+    {"id": "equal_growth_gold_min_variance_ensemble", "family": "allocation_ensemble", "allocation": "minimum_variance", "mixture_weight": 0.5, "embedded_leverage": true},
+    {"id": "equal_growth_gold_max_diversification_ensemble", "family": "allocation_ensemble", "allocation": "maximum_diversification", "mixture_weight": 0.5, "embedded_leverage": true}
+  ],
+  "sources": [
+    {
+      "title": "Portfolio Selection",
+      "authors": "Markowitz",
+      "year": 1952,
+      "url": "https://doi.org/10.1111/j.1540-6261.1952.tb01525.x",
+      "adaptation": "Covariance diversification is the general motivation, not an attribution of these exact ETF allocations or rebalance thresholds to the paper."
+    },
+    {
+      "title": "Toward Maximum Diversification",
+      "authors": "Choueifaty and Coignard",
+      "year": 2008,
+      "url": "https://doi.org/10.3905/jpm.2008.35.1.40",
+      "adaptation": "The already frozen maximum-diversification component is retained without modification."
+    }
+  ],
+  "methodology": {
+    "observation": "All observations are completed NYSE month ends. Quarterly means only March, June, September and December month ends; no historical date exceptions.",
+    "target_band": "Emit the unchanged inverse-volatility target only when some target component differs by at least five percentage points from the last issued target. This is target-change hysteresis, not a claim to monitor actual account drift or an optimal trading band.",
+    "static_controls": "Monthly fixed QLD/GLD weights. One-third/two-thirds is equal approximate underlying notional because QLD targets daily 2x exposure; one-half/one-half is equal fund dollars. Neither fraction is fitted.",
+    "ensembles": "Fixed equal mixture of the first-round monthly inverse-volatility QLD/GLD allocation and the second-round minimum-variance or maximum-diversification allocation. Combine targets before trading one account; do not average separately compounded CAGRs.",
+    "costs": "Retain USD10,000 capital, 2% idle cash, 5bp or 20bp per side and USD1 per order; execute at the next open or one further session under stress.",
+    "leverage": "Every configuration can hold actual QLD; embedded leverage and maximum drawdown remain fully disclosed. No account borrowing, synthetic prices, shorting or trading authority.",
+    "selection_bias": "Combinations were proposed after seeing component outcomes. A successful historical metric is not independent future alpha; report all 72 registered configurations and failed stress/chronological checks.",
+    "parameter_search": "Only these six configurations. No grid search, fraction optimization, altered costs or retrospective rewriting of either prior round.",
+    "order_authority": false,
+    "independent_future_performance_claim": false
+  }
+}

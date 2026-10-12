@@ -1,0 +1,191 @@
+{
+  "data_receipt_changes_expected_on_Sunday": false,
+  "execution_record": {
+    "actual_orders_or_broker_account": false,
+    "declared_invocation_origin": "agent_continuation",
+    "existing_archives_initialized_or_reset": false,
+    "finished_at": "2026-10-11T01:28:17.586734+00:00",
+    "historical_research_state_unchanged": true,
+    "investment_objective_verified": false,
+    "native_schedule_delivery_independently_verified": false,
+    "new_factor_or_candidate_admission_performed": false,
+    "new_historical_strategy_evaluations": 0,
+    "order_authority": false,
+    "pipeline_execution_verified_by_actual_stage_returns": true,
+    "research_after": {
+      "complete_program_reviews": 28,
+      "complete_strategy_configurations": 112,
+      "engine_sha256": "c6d69a598aedd99524a5af1e0183c72cbaa9d3a136b37c9cc4e38be710798423",
+      "event_chain_sha256": "bf4fec4bc3fb57f1458f5021dc045a9479738412ce615be211170c4077cbf11f",
+      "known_registered_definitions": 6,
+      "pending_candidate_ids": [],
+      "research_champion": null,
+      "state_sha256": "ffb9c8e0facb56a423b17964c490e89bf395901d4bbed1913939061a4d0b9a6a"
+    },
+    "research_before": {
+      "complete_program_reviews": 28,
+      "complete_strategy_configurations": 112,
+      "engine_sha256": "c6d69a598aedd99524a5af1e0183c72cbaa9d3a136b37c9cc4e38be710798423",
+      "event_chain_sha256": "bf4fec4bc3fb57f1458f5021dc045a9479738412ce615be211170c4077cbf11f",
+      "known_registered_definitions": 6,
+      "pending_candidate_ids": [],
+      "research_champion": null,
+      "state_sha256": "ffb9c8e0facb56a423b17964c490e89bf395901d4bbed1913939061a4d0b9a6a"
+    },
+    "run_receipt_path": "reports/daily-research-operations/runs/20261011T012816-3fd754ee/result.json",
+    "runner_sha256": "7b02b16ce22331a45e5a88d6163ac92fd2b7cc4e49502e268f17209757319872",
+    "schema_version": 1,
+    "started_at": "2026-10-11T01:28:16.900797+00:00",
+    "status": "completed",
+    "steps": [
+      {
+        "finished_at": "2026-10-11T01:28:17.351226+00:00",
+        "name": "parent_data",
+        "result": {
+          "action": "already_collected",
+          "baseline_session": "2026-10-09",
+          "complete_snapshots": 1,
+          "contiguous_since_baseline": true,
+          "eligible_for_strategy_promotion": false,
+          "investment_objective_verified": false,
+          "latest_session": "2026-10-09",
+          "missed_sessions": [],
+          "mode": "data_only_prospective_archive",
+          "observations_after_baseline": 0,
+          "order_authority": false,
+          "receipt_chain_head": "19c9b5d9a1fa90a138ed65ee8255794d272f50446ea4426e0658b7abc54017d9",
+          "strategy_returns_calculated": false
+        },
+        "started_at": "2026-10-11T01:28:16.941043+00:00",
+        "status": "completed"
+      },
+      {
+        "finished_at": "2026-10-11T01:28:17.441650+00:00",
+        "name": "expanded_data",
+        "result": {
+          "action": "already_collected",
+          "additional_macro_series": [
+            "BAA10Y"
+          ],
+          "additional_symbols": [
+            "IJR",
+            "PKW"
+          ],
+          "baseline_session": "2026-10-09",
+          "complete_snapshots": 1,
+          "contiguous_since_baseline": true,
+          "eligible_for_strategy_promotion": false,
+          "expanded_baseline_is_independent_strategy_evidence": false,
+          "investment_objective_verified": false,
+          "latest_session": "2026-10-09",
+          "missed_sessions": [],
+          "mode": "data_only_expanded_factor_inputs",
+          "new_catalog_definitions_registered_by_collection": false,
+          "observations_after_baseline": 0,
+          "order_authority": false,
+          "parent_archive_modified": false,
+          "receipt_chain_head": "f90f0e98ddf6b744a72c89a21114fccf0eb4e4a24098a29a0a0e320d5026854d",
+          "strategy_returns_calculated": false
+        },
+        "started_at": "2026-10-11T01:28:17.351554+00:00",
+        "status": "completed"
+      },
+      {
+        "finished_at": "2026-10-11T01:28:17.481120+00:00",
+        "name": "target_observations",
+        "result": {
+          "action": "already_collected",
+          "historical_status": "rejected_historical",
+          "investment_objective_verified": false,
+          "latest_rule_signal_session": "2026-09-30",
+          "latest_source_session": "2026-10-09",
+          "missed_observation_sessions": [],
+          "mode": "prospective_target_observations_only",
+          "new_market_data_acquired_by_observer": false,
+          "new_target_observations": 1,
+          "order_authority": false,
+          "orders_submitted": false,
+          "portfolio_initialized": false,
+          "receipt_chain_head": "6f3de02c50da60a2c6d1d7103d80ed47bd0462818e81e42178255fc0a14d5e00",
+          "research_champion_updated": false,
+          "source_candidate_id": "macro_real_yield_factor_tilt",
+          "source_sessions_recorded": 1,
+          "strategy_returns_calculated": false
+        },
+        "started_at": "2026-10-11T01:28:17.442042+00:00",
+        "status": "completed"
+      },
+      {
+        "finished_at": "2026-10-11T01:28:17.565998+00:00",
+        "name": "research_model",
+        "result": {
+          "accounts": {
+            "spy_base": {
+              "cagr": null,
+              "cost_paid_usd": 0.0,
+              "equity_usd": 10000.0,
+              "max_drawdown": null,
+              "model_order_tickets": 0,
+              "sharpe": null,
+              "total_return": null
+            },
+            "spy_stress": {
+              "cagr": null,
+              "cost_paid_usd": 0.0,
+              "equity_usd": 10000.0,
+              "max_drawdown": null,
+              "model_order_tickets": 0,
+              "sharpe": null,
+              "total_return": null
+            },
+            "strategy_base": {
+              "cagr": null,
+              "cost_paid_usd": 0.0,
+              "equity_usd": 10000.0,
+              "max_drawdown": null,
+              "model_order_tickets": 0,
+              "sharpe": null,
+              "total_return": null
+            },
+            "strategy_stress": {
+              "cagr": null,
+              "cost_paid_usd": 0.0,
+              "equity_usd": 10000.0,
+              "max_drawdown": null,
+              "model_order_tickets": 0,
+              "sharpe": null,
+              "total_return": null
+            }
+          },
+          "action": "no_new_observed_session",
+          "actual_orders_or_broker_account": false,
+          "failed_advancement_attempts": 0,
+          "first_model_session": "2026-10-12",
+          "investment_objective_verified": false,
+          "latest_failure": null,
+          "latest_model_session": null,
+          "minimum_sessions_before_sharpe_report": 63,
+          "mode": "prospective_research_simulation_only",
+          "new_historical_strategy_evaluations": 0,
+          "observed_model_sessions": 0,
+          "old_paused_forward_ledgers_modified": false,
+          "order_authority": false,
+          "receipt_chain_head": "0000000000000000000000000000000000000000000000000000000000000000",
+          "research_champion_updated": false,
+          "source_candidate_id": "macro_real_yield_factor_tilt",
+          "source_historical_status": "rejected_historical"
+        },
+        "started_at": "2026-10-11T01:28:17.481698+00:00",
+        "status": "completed"
+      }
+    ]
+  },
+  "investment_objective_verified": false,
+  "native_origin_is_declared_not_independently_verified": true,
+  "new_historical_strategy_evaluations": 0,
+  "order_authority": false,
+  "private_run_receipt_sha256": "978a1766fcf6be247dfa1e7fbed94e597c881f99cf7ce024d14528caa1523e04",
+  "schema_version": 1,
+  "source_code_commit": "38fa4773",
+  "verified_actual_completed_stages": 4
+}

@@ -1,0 +1,2388 @@
+{
+  "auditor_sha256": "ddebd6dc58db12eca9113c3f4287003cb41abc17ab4c89bc718f80348091808c",
+  "complete_candidate_ids": [
+    "four_factor_gold_risk_balance",
+    "four_factor_gold_daily_vol12",
+    "quality_implementation_gold_monthly",
+    "quality_implementation_gold_daily_vol12",
+    "four_factor_static70_gold30",
+    "four_factor_causal_mean_variance",
+    "factor_gold_term_half_risk",
+    "factor_gold_term_equity_exit",
+    "macro_real_yield_factor_tilt",
+    "macro_real_yield_tilt_curve_defense",
+    "four_factor_defense_momentum",
+    "four_factor_defense_diversified",
+    "four_factor_daily_target_control",
+    "four_factor_growth_satellite50",
+    "conditional_price_factor_model_v2",
+    "conditional_macro_option_factor_model_v2",
+    "four_factor_total_momentum_tilt",
+    "four_factor_residual_momentum_tilt",
+    "four_factor_gold_joint_trend_guard",
+    "four_factor_gold_component_trend_guard",
+    "four_factor_pdp_momentum_implementation",
+    "four_factor_dual_momentum_implementation",
+    "credit_baa_level_guard",
+    "credit_baa_compression_recovery",
+    "four_factor_growth_gold_monthly_control",
+    "four_factor_growth_gold_ratchet_protection",
+    "four_factor_growth_gold_semideviation",
+    "four_factor_growth_gold_expected_loss",
+    "four_factor_technology_sector50",
+    "four_factor_semiconductor_sector50",
+    "semiconductor_dollar_half_guard",
+    "semiconductor_dollar_real_yield_half_guard",
+    "semiconductor_dollar_nfci_tight_guard",
+    "semiconductor_dollar_nfci_deterioration_guard",
+    "semiconductor_term_half_guard",
+    "semiconductor_term_or_dollar_half_guard"
+  ],
+  "complete_cohort_model_summaries": {
+    "ff6_available_overlap": {
+      "10y_base": {
+        "complete_review_count": 36,
+        "maximum_paired_annualized_arithmetic_intercept": 0.09259101388583689,
+        "median_paired_annualized_arithmetic_intercept": 0.04829258648178929,
+        "median_strategy_r_squared": 0.480152956216001,
+        "minimum_paired_annualized_arithmetic_intercept": 0.0034560257518338284,
+        "positive_paired_arithmetic_intercepts_not_significance_count": 36
+      },
+      "10y_stress": {
+        "complete_review_count": 36,
+        "maximum_paired_annualized_arithmetic_intercept": 0.08952037242890713,
+        "median_paired_annualized_arithmetic_intercept": 0.04233563703943137,
+        "median_strategy_r_squared": 0.48045979092925134,
+        "minimum_paired_annualized_arithmetic_intercept": -0.005630496239941381,
+        "positive_paired_arithmetic_intercepts_not_significance_count": 33
+      },
+      "5y_base": {
+        "complete_review_count": 36,
+        "maximum_paired_annualized_arithmetic_intercept": 0.125573879249584,
+        "median_paired_annualized_arithmetic_intercept": 0.06320875623727737,
+        "median_strategy_r_squared": 0.4824346947416765,
+        "minimum_paired_annualized_arithmetic_intercept": -0.007965824576698408,
+        "positive_paired_arithmetic_intercepts_not_significance_count": 35
+      },
+      "5y_stress": {
+        "complete_review_count": 36,
+        "maximum_paired_annualized_arithmetic_intercept": 0.12303588069658053,
+        "median_paired_annualized_arithmetic_intercept": 0.060235440295158996,
+        "median_strategy_r_squared": 0.4849869207393003,
+        "minimum_paired_annualized_arithmetic_intercept": -0.012045252732717043,
+        "positive_paired_arithmetic_intercepts_not_significance_count": 35
+      }
+    },
+    "market_full_window": {
+      "10y_base": {
+        "complete_review_count": 36,
+        "maximum_paired_annualized_arithmetic_intercept": 0.08539464704069298,
+        "median_paired_annualized_arithmetic_intercept": 0.04335358962146992,
+        "median_strategy_r_squared": 0.42182492158268914,
+        "minimum_paired_annualized_arithmetic_intercept": 0.0012406718612797962,
+        "positive_paired_arithmetic_intercepts_not_significance_count": 36
+      },
+      "10y_stress": {
+        "complete_review_count": 36,
+        "maximum_paired_annualized_arithmetic_intercept": 0.08231556897595985,
+        "median_paired_annualized_arithmetic_intercept": 0.03754688432408486,
+        "median_strategy_r_squared": 0.4170829484266578,
+        "minimum_paired_annualized_arithmetic_intercept": -0.007933333752297505,
+        "positive_paired_arithmetic_intercepts_not_significance_count": 33
+      },
+      "5y_base": {
+        "complete_review_count": 36,
+        "maximum_paired_annualized_arithmetic_intercept": 0.1214294945555012,
+        "median_paired_annualized_arithmetic_intercept": 0.06061604809928023,
+        "median_strategy_r_squared": 0.41768205624577875,
+        "minimum_paired_annualized_arithmetic_intercept": -0.0036700426577537105,
+        "positive_paired_arithmetic_intercepts_not_significance_count": 35
+      },
+      "5y_stress": {
+        "complete_review_count": 36,
+        "maximum_paired_annualized_arithmetic_intercept": 0.11903261497670724,
+        "median_paired_annualized_arithmetic_intercept": 0.05796099034402795,
+        "median_strategy_r_squared": 0.41753427814241445,
+        "minimum_paired_annualized_arithmetic_intercept": -0.0068722068734532946,
+        "positive_paired_arithmetic_intercepts_not_significance_count": 35
+      }
+    },
+    "market_sector_defense_full_window": {
+      "10y_base": {
+        "complete_review_count": 36,
+        "maximum_paired_annualized_arithmetic_intercept": 0.01276458382474974,
+        "median_paired_annualized_arithmetic_intercept": -0.002215434126092876,
+        "median_strategy_r_squared": 0.9098417137829886,
+        "minimum_paired_annualized_arithmetic_intercept": -0.03672944041269019,
+        "positive_paired_arithmetic_intercepts_not_significance_count": 17
+      },
+      "10y_stress": {
+        "complete_review_count": 36,
+        "maximum_paired_annualized_arithmetic_intercept": 0.00862758797180394,
+        "median_paired_annualized_arithmetic_intercept": -0.007922804844286896,
+        "median_strategy_r_squared": 0.9095950479366528,
+        "minimum_paired_annualized_arithmetic_intercept": -0.049001554933215986,
+        "positive_paired_arithmetic_intercepts_not_significance_count": 10
+      },
+      "5y_base": {
+        "complete_review_count": 36,
+        "maximum_paired_annualized_arithmetic_intercept": 0.032164883791508884,
+        "median_paired_annualized_arithmetic_intercept": 0.0011089763899133469,
+        "median_strategy_r_squared": 0.9186405533076546,
+        "minimum_paired_annualized_arithmetic_intercept": -0.031901815818594324,
+        "positive_paired_arithmetic_intercepts_not_significance_count": 19
+      },
+      "5y_stress": {
+        "complete_review_count": 36,
+        "maximum_paired_annualized_arithmetic_intercept": 0.025125132016880405,
+        "median_paired_annualized_arithmetic_intercept": -0.0006253952490237488,
+        "median_strategy_r_squared": 0.9186327922353432,
+        "minimum_paired_annualized_arithmetic_intercept": -0.04052900690040745,
+        "positive_paired_arithmetic_intercepts_not_significance_count": 16
+      }
+    }
+  },
+  "created_at": "2026-10-11T05:16:23.800024+00:00",
+  "descriptive_arithmetic_intercepts_are_not_CAGR_or_tradable_alpha": true,
+  "diagnostic_id": "factor_exposure_20261011",
+  "event_chain_sha256": "0650f1dbc0b27754a3aadbbea95682d56b605fc3561968f8e7247f320830688f",
+  "exposure_results_computed": true,
+  "factor_source_coverage": {
+    "10": {
+      "available_overlap_end": "2026-08-31",
+      "available_overlap_sessions": 2488,
+      "available_overlap_start": "2016-10-06",
+      "covers_complete_qualification_window": false,
+      "formal_end": "2026-10-05",
+      "formal_qualification_window_changed": false,
+      "formal_sessions": 2512,
+      "formal_start": "2016-10-06",
+      "unavailable_tail_sessions": [
+        "2026-09-01",
+        "2026-09-02",
+        "2026-09-03",
+        "2026-09-04",
+        "2026-09-08",
+        "2026-09-09",
+        "2026-09-10",
+        "2026-09-11",
+        "2026-09-14",
+        "2026-09-15",
+        "2026-09-16",
+        "2026-09-17",
+        "2026-09-18",
+        "2026-09-21",
+        "2026-09-22",
+        "2026-09-23",
+        "2026-09-24",
+        "2026-09-25",
+        "2026-09-28",
+        "2026-09-29",
+        "2026-09-30",
+        "2026-10-01",
+        "2026-10-02",
+        "2026-10-05"
+      ]
+    },
+    "5": {
+      "available_overlap_end": "2026-08-31",
+      "available_overlap_sessions": 1230,
+      "available_overlap_start": "2021-10-06",
+      "covers_complete_qualification_window": false,
+      "formal_end": "2026-10-05",
+      "formal_qualification_window_changed": false,
+      "formal_sessions": 1254,
+      "formal_start": "2021-10-06",
+      "unavailable_tail_sessions": [
+        "2026-09-01",
+        "2026-09-02",
+        "2026-09-03",
+        "2026-09-04",
+        "2026-09-08",
+        "2026-09-09",
+        "2026-09-10",
+        "2026-09-11",
+        "2026-09-14",
+        "2026-09-15",
+        "2026-09-16",
+        "2026-09-17",
+        "2026-09-18",
+        "2026-09-21",
+        "2026-09-22",
+        "2026-09-23",
+        "2026-09-24",
+        "2026-09-25",
+        "2026-09-28",
+        "2026-09-29",
+        "2026-09-30",
+        "2026-10-01",
+        "2026-10-02",
+        "2026-10-05"
+      ]
+    }
+  },
+  "fixed_reference_exposures": {
+    "four_factor_semiconductor_sector50": {
+      "10y_base": {
+        "ff_risk_free_minus_frozen_account_rf_daily_mean": 1.6465022458531204e-08,
+        "models": {
+          "ff6_available_overlap": {
+            "design_condition_number": 263.84490536092636,
+            "end": "2026-08-31",
+            "in_sample_descriptive_fit_only": true,
+            "independent_alpha_proven": false,
+            "paired_strategy_minus_spy": {
+              "annualized_252_arithmetic_intercept": 0.09259101388583689,
+              "coefficients": {
+                "CMA": 0.06295204542042133,
+                "HML": -0.08361322361036548,
+                "Mkt-RF": -0.4981959553133263,
+                "Mom": 0.1405046221682453,
+                "RMW": -0.25608646058899476,
+                "SMB": 0.1323073648817425,
+                "intercept": 0.0003674246582771305
+              },
+              "mean_daily_return_advantage": 8.583729732089852e-05
+            },
+            "sessions": 2488,
+            "spy": {
+              "annualized_252_arithmetic_intercept": -0.0012993047272098096,
+              "annualized_residual_volatility": 0.013187514364975367,
+              "coefficients": {
+                "CMA": 0.0392151751092641,
+                "HML": 0.015709151256003778,
+                "Mkt-RF": 0.9849865947537586,
+                "Mom": -0.01040808648027497,
+                "RMW": 0.04359858854417929,
+                "SMB": -0.10589060790253532,
+                "intercept": -5.155971139721466e-06
+              },
+              "mean_daily_excess_return": 0.0005399277476537075,
+              "mean_daily_factor_components": {
+                "CMA": -1.2105005821509174e-06,
+                "HML": -2.2225165764120966e-07,
+                "Mkt-RF": 0.0005354874871639606,
+                "Mom": -1.6938240417457133e-06,
+                "RMW": 3.6659263357887082e-06,
+                "SMB": 9.056881576229708e-06
+              },
+              "mean_decomposition_error": 1.0121027280152184e-15,
+              "r_squared": 0.9946382638210727
+            },
+            "start": "2016-10-06",
+            "strategy": {
+              "annualized_252_arithmetic_intercept": 0.09129170915862708,
+              "annualized_residual_volatility": 0.1034503582867279,
+              "coefficients": {
+                "CMA": 0.10216722052968544,
+                "HML": -0.0679040723543617,
+                "Mkt-RF": 0.4867906394404323,
+                "Mom": 0.13009653568797033,
+                "RMW": -0.21248787204481545,
+                "SMB": 0.026416756979207173,
+                "intercept": 0.00036226868713740905
+              },
+              "mean_daily_excess_return": 0.000625765044974606,
+              "mean_daily_factor_components": {
+                "CMA": -3.1537148459324117e-06,
+                "HML": 9.60700702119581e-07,
+                "Mkt-RF": 0.000264643496345309,
+                "Mom": 2.1172060811920895e-05,
+                "RMW": -1.786674551116374e-05,
+                "SMB": -2.2594396644595203e-06
+              },
+              "mean_decomposition_error": 5.968532959532702e-16,
+              "r_squared": 0.4802407737724652
+            }
+          },
+          "market_full_window": {
+            "design_condition_number": 88.44750990864249,
+            "end": "2026-10-05",
+            "in_sample_descriptive_fit_only": true,
+            "independent_alpha_proven": false,
+            "paired_strategy_minus_spy": {
+              "annualized_252_arithmetic_intercept": 0.08539464704069298,
+              "coefficients": {
+                "SPY_excess": -0.4863900361976594,
+                "intercept": 0.0003388676469868769
+              },
+              "mean_daily_return_advantage": 7.707984309455939e-05
+            },
+            "sessions": 2512,
+            "spy": {
+              "annualized_252_arithmetic_intercept": 6.087185634524396e-05,
+              "annualized_residual_volatility": 0.0001923083905921986,
+              "coefficients": {
+                "SPY_excess": 1.0000002813321054,
+                "intercept": 2.4155498549699983e-07
+              },
+              "mean_daily_excess_return": 0.0005384677891989916,
+              "mean_daily_factor_components": {
+                "SPY_excess": 0.0005382262342134948
+              },
+              "mean_decomposition_error": 2.168404344971009e-19,
+              "r_squared": 0.99999885239289
+            },
+            "start": "2016-10-06",
+            "strategy": {
+              "annualized_252_arithmetic_intercept": 0.08545551889703823,
+              "annualized_residual_volatility": 0.11070989043521914,
+              "coefficients": {
+                "SPY_excess": 0.513610245134446,
+                "intercept": 0.0003391092019723739
+              },
+              "mean_daily_excess_return": 0.0006155476322935509,
+              "mean_daily_factor_components": {
+                "SPY_excess": 0.0002764384303211772
+              },
+              "mean_decomposition_error": 2.168404344971009e-19,
+              "r_squared": 0.4095350802081873
+            }
+          },
+          "market_sector_defense_full_window": {
+            "design_condition_number": 259.1100155994728,
+            "end": "2026-10-05",
+            "in_sample_descriptive_fit_only": true,
+            "independent_alpha_proven": false,
+            "paired_strategy_minus_spy": {
+              "annualized_252_arithmetic_intercept": 0.009504262309652555,
+              "coefficients": {
+                "GLD_excess": 0.5690307555941247,
+                "IEF_excess": 0.018421294663232793,
+                "SOXX_minus_SPY": 0.2234417691117117,
+                "SPY_excess": -0.6655840306182391,
+                "intercept": 3.7715326625605374e-05
+              },
+              "mean_daily_return_advantage": 7.707984309455939e-05
+            },
+            "sessions": 2512,
+            "spy": {
+              "annualized_252_arithmetic_intercept": 6.182664022841907e-05,
+              "annualized_residual_volatility": 0.0001922663781858859,
+              "coefficients": {
+                "GLD_excess": -2.179344643749026e-05,
+                "IEF_excess": -1.0159120440333957e-05,
+                "SOXX_minus_SPY": 7.676024996072783e-06,
+                "SPY_excess": 0.9999978133573103,
+                "intercept": 2.453438104302344e-07
+              },
+              "mean_daily_excess_return": 0.0005384677891989916,
+              "mean_daily_factor_components": {
+                "GLD_excess": -8.966153851345198e-09,
+                "IEF_excess": 8.370053189935581e-10,
+                "SOXX_minus_SPY": 5.668652006569756e-09,
+                "SPY_excess": 0.0005382249058850884
+              },
+              "mean_decomposition_error": 1.3010426069826053e-18,
+              "r_squared": 0.9999988528942563
+            },
+            "start": "2016-10-06",
+            "strategy": {
+              "annualized_252_arithmetic_intercept": 0.009566088949880973,
+              "annualized_residual_volatility": 0.024276249657503413,
+              "coefficients": {
+                "GLD_excess": 0.5690089621476873,
+                "IEF_excess": 0.01841113554279246,
+                "SOXX_minus_SPY": 0.22344944513670778,
+                "SPY_excess": 0.3344137827390712,
+                "intercept": 3.796067043603561e-05
+              },
+              "mean_daily_excess_return": 0.0006155476322935509,
+              "mean_daily_factor_components": {
+                "GLD_excess": 0.0002340989027157261,
+                "IEF_excess": -1.5168850953717074e-06,
+                "SOXX_minus_SPY": 0.0001650147239214497,
+                "SPY_excess": 0.00017999022031571247
+              },
+              "mean_decomposition_error": 1.4094628242311558e-18,
+              "r_squared": 0.9716087542358962
+            }
+          }
+        },
+        "qualification_metrics_recomputed_or_changed": false
+      },
+      "10y_stress": {
+        "ff_risk_free_minus_frozen_account_rf_daily_mean": 1.6465022458531204e-08,
+        "models": {
+          "ff6_available_overlap": {
+            "design_condition_number": 263.84490536092636,
+            "end": "2026-08-31",
+            "in_sample_descriptive_fit_only": true,
+            "independent_alpha_proven": false,
+            "paired_strategy_minus_spy": {
+              "annualized_252_arithmetic_intercept": 0.08952037242890713,
+              "coefficients": {
+                "CMA": 0.06408172841437794,
+                "HML": -0.08406031365742252,
+                "Mkt-RF": -0.4977141404718381,
+                "Mom": 0.14095605484009663,
+                "RMW": -0.2580781232878203,
+                "SMB": 0.13309230440671754,
+                "intercept": 0.0003552395731305839
+              },
+              "mean_daily_return_advantage": 7.372446892340297e-05
+            },
+            "sessions": 2488,
+            "spy": {
+              "annualized_252_arithmetic_intercept": -0.001794774024837049,
+              "annualized_residual_volatility": 0.013228501877935735,
+              "coefficients": {
+                "CMA": 0.039585375477415405,
+                "HML": 0.01543144590218962,
+                "Mkt-RF": 0.9850438377045332,
+                "Mom": -0.010448617249207592,
+                "RMW": 0.04380618000783079,
+                "SMB": -0.10561757371778553,
+                "intercept": -7.122119146178765e-06
+              },
+              "mean_daily_excess_return": 0.0005379727275438489,
+              "mean_daily_factor_components": {
+                "CMA": -1.2219279890134656e-06,
+                "HML": -2.1832270729785825e-07,
+                "Mkt-RF": 0.00053551860726654,
+                "Mom": -1.7004200659984542e-06,
+                "RMW": 3.683381373648794e-06,
+                "SMB": 9.033528813161076e-06
+              },
+              "mean_decomposition_error": 1.0125364088842126e-15,
+              "r_squared": 0.9946055679928681
+            },
+            "start": "2016-10-06",
+            "strategy": {
+              "annualized_252_arithmetic_intercept": 0.0877255984040701,
+              "annualized_residual_volatility": 0.10360024972516764,
+              "coefficients": {
+                "CMA": 0.10366710389179334,
+                "HML": -0.0686288677552329,
+                "Mkt-RF": 0.4873296972326951,
+                "Mom": 0.13050743759088904,
+                "RMW": -0.21427194327998955,
+                "SMB": 0.027474730688931998,
+                "intercept": 0.00034811745398440514
+              },
+              "mean_daily_excess_return": 0.0006116971964672518,
+              "mean_daily_factor_components": {
+                "CMA": -3.200013496338315e-06,
+                "HML": 9.709550421962153e-07,
+                "Mkt-RF": 0.0002649365548540769,
+                "Mom": 2.1238931463243958e-05,
+                "RMW": -1.801675664556825e-05,
+                "SMB": -2.3499287341658876e-06
+              },
+              "mean_decomposition_error": 5.980459183430042e-16,
+              "r_squared": 0.48052310347819827
+            }
+          },
+          "market_full_window": {
+            "design_condition_number": 88.44750990864249,
+            "end": "2026-10-05",
+            "in_sample_descriptive_fit_only": true,
+            "independent_alpha_proven": false,
+            "paired_strategy_minus_spy": {
+              "annualized_252_arithmetic_intercept": 0.08231556897595985,
+              "coefficients": {
+                "SPY_excess": -0.48580888291404223,
+                "intercept": 0.0003266490832379359
+              },
+              "mean_daily_return_advantage": 6.517407120096222e-05
+            },
+            "sessions": 2512,
+            "spy": {
+              "annualized_252_arithmetic_intercept": -0.0004329856914367028,
+              "annualized_residual_volatility": 0.0011491558423241141,
+              "coefficients": {
+                "SPY_excess": 1.0000437771802428,
+                "intercept": -1.7181971882408842e-06
+              },
+              "mean_daily_excess_return": 0.0005365314476252142,
+              "mean_daily_factor_components": {
+                "SPY_excess": 0.0005382496448134555
+              },
+              "mean_decomposition_error": 5.421010862427522e-19,
+              "r_squared": 0.9999590268317777
+            },
+            "start": "2016-10-06",
+            "strategy": {
+              "annualized_252_arithmetic_intercept": 0.08188258328452314,
+              "annualized_residual_volatility": 0.11093330349286956,
+              "coefficients": {
+                "SPY_excess": 0.5142348942662006,
+                "intercept": 0.000324930886049695
+              },
+              "mean_daily_excess_return": 0.0006017055188261765,
+              "mean_daily_factor_components": {
+                "SPY_excess": 0.0002767746327764817
+              },
+              "mean_decomposition_error": 2.168404344971009e-19,
+              "r_squared": 0.4091479804965108
+            }
+          },
+          "market_sector_defense_full_window": {
+            "design_condition_number": 259.1100155994728,
+            "end": "2026-10-05",
+            "in_sample_descriptive_fit_only": true,
+            "independent_alpha_proven": false,
+            "paired_strategy_minus_spy": {
+              "annualized_252_arithmetic_intercept": 0.006102168841110682,
+              "coefficients": {
+                "GLD_excess": 0.5707987939678525,
+                "IEF_excess": 0.01435570180836701,
+                "SOXX_minus_SPY": 0.2243481993577205,
+                "SPY_excess": -0.6658388471664692,
+                "intercept": 2.4214955718693183e-05
+              },
+              "mean_daily_return_advantage": 6.517407120096222e-05
+            },
+            "sessions": 2512,
+            "spy": {
+              "annualized_252_arithmetic_intercept": -0.00043383621463570114,
+              "annualized_residual_volatility": 0.0011491082957884448,
+              "coefficients": {
+                "GLD_excess": 3.606398954497658e-05,
+                "IEF_excess": -0.00010827451468385652,
+                "SOXX_minus_SPY": -3.660902681112965e-05,
+                "SPY_excess": 1.0000561371497565,
+                "intercept": -1.7215722803004013e-06
+              },
+              "mean_daily_excess_return": 0.0005365314476252142,
+              "mean_daily_factor_components": {
+                "GLD_excess": 1.4837271364170819e-08,
+                "IEF_excess": 8.920688088510828e-09,
+                "SOXX_minus_SPY": -2.7035325366664348e-08,
+                "SPY_excess": 0.0005382562972714303
+              },
+              "mean_decomposition_error": 1.8431436932253575e-18,
+              "r_squared": 0.9999590302222524
+            },
+            "start": "2016-10-06",
+            "strategy": {
+              "annualized_252_arithmetic_intercept": 0.005668332626474981,
+              "annualized_residual_volatility": 0.02406456546458564,
+              "coefficients": {
+                "GLD_excess": 0.5708348579573974,
+                "IEF_excess": 0.014247427293683154,
+                "SOXX_minus_SPY": 0.22431159033090936,
+                "SPY_excess": 0.33421728998328726,
+                "intercept": 2.2493383438392782e-05
+              },
+              "mean_daily_excess_return": 0.0006017055188261765,
+              "mean_daily_factor_components": {
+                "GLD_excess": 0.00023485010389876732,
+                "IEF_excess": -1.1738390638072584e-06,
+                "SOXX_minus_SPY": 0.00016565140776335558,
+                "SPY_excess": 0.00017988446278946964
+              },
+              "mean_decomposition_error": 1.5178830414797062e-18,
+              "r_squared": 0.9721957695054905
+            }
+          }
+        },
+        "qualification_metrics_recomputed_or_changed": false
+      },
+      "5y_base": {
+        "ff_risk_free_minus_frozen_account_rf_daily_mean": -1.7153471385396705e-06,
+        "models": {
+          "ff6_available_overlap": {
+            "design_condition_number": 238.72374926353876,
+            "end": "2026-08-31",
+            "in_sample_descriptive_fit_only": true,
+            "independent_alpha_proven": false,
+            "paired_strategy_minus_spy": {
+              "annualized_252_arithmetic_intercept": 0.125573879249584,
+              "coefficients": {
+                "CMA": 0.03187682287810468,
+                "HML": -0.03612479076002717,
+                "Mkt-RF": -0.4611189513415843,
+                "Mom": 0.19068127569595067,
+                "RMW": -0.3518876457112888,
+                "SMB": 0.09084888049105228,
+                "intercept": 0.0004983090446412064
+              },
+              "mean_daily_return_advantage": 0.00033330904901490813
+            },
+            "sessions": 1230,
+            "spy": {
+              "annualized_252_arithmetic_intercept": 0.0024133815060912284,
+              "annualized_residual_volatility": 0.013756837536968849,
+              "coefficients": {
+                "CMA": 0.037860111065503334,
+                "HML": 0.01204376190537021,
+                "Mkt-RF": 0.9987920586826504,
+                "Mom": 0.003295266285532006,
+                "RMW": 0.045790448132988715,
+                "SMB": -0.09433679688953728,
+                "intercept": 9.576910738457256e-06
+              },
+              "mean_daily_excess_return": 0.00043167279050945214,
+              "mean_daily_factor_components": {
+                "CMA": 1.1358033319650989e-06,
+                "HML": 2.335314808480321e-06,
+                "Mkt-RF": 0.0003987860000154876,
+                "Mom": 1.0965467403806913e-06,
+                "RMW": 3.0117457349258443e-06,
+                "SMB": 1.5730469139873244e-05
+              },
+              "mean_decomposition_error": 1.1796119636642288e-16,
+              "r_squared": 0.9936480635584871
+            },
+            "start": "2021-10-06",
+            "strategy": {
+              "annualized_252_arithmetic_intercept": 0.12798726075567524,
+              "annualized_residual_volatility": 0.1173602561862948,
+              "coefficients": {
+                "CMA": 0.06973693394360801,
+                "HML": -0.02408102885465696,
+                "Mkt-RF": 0.5376731073410661,
+                "Mom": 0.19397654198148268,
+                "RMW": -0.30609719757830006,
+                "SMB": -0.0034879163984850026,
+                "intercept": 0.0005078859553796636
+              },
+              "mean_daily_excess_return": 0.0007649818395243603,
+              "mean_daily_factor_components": {
+                "CMA": 2.092108018308238e-06,
+                "HML": -4.669370229134703e-06,
+                "Mkt-RF": 0.00021467582358959157,
+                "Mom": 6.45484541731877e-05,
+                "RMW": -2.0132734377304458e-05,
+                "SMB": 5.816029701864015e-07
+              },
+              "mean_decomposition_error": 1.3812735677465326e-16,
+              "r_squared": 0.47670435323463
+            }
+          },
+          "market_full_window": {
+            "design_condition_number": 92.62233686678717,
+            "end": "2026-10-05",
+            "in_sample_descriptive_fit_only": true,
+            "independent_alpha_proven": false,
+            "paired_strategy_minus_spy": {
+              "annualized_252_arithmetic_intercept": 0.1214294945555012,
+              "coefficients": {
+                "SPY_excess": -0.40476348462930023,
+                "intercept": 0.0004818630736329413
+              },
+              "mean_daily_return_advantage": 0.0003108727936925041
+            },
+            "sessions": 1254,
+            "spy": {
+              "annualized_252_arithmetic_intercept": 0.0016556090688128718,
+              "annualized_residual_volatility": 0.003743697179005318,
+              "coefficients": {
+                "SPY_excess": 1.0002132692935848,
+                "intercept": 6.569877257193935e-06
+              },
+              "mean_daily_excess_return": 0.00042910489687064397,
+              "mean_daily_factor_components": {
+                "SPY_excess": 0.00042253501961345065
+              },
+              "mean_decomposition_error": 5.963111948670274e-19,
+              "r_squared": 0.9995236857247148
+            },
+            "start": "2021-10-06",
+            "strategy": {
+              "annualized_252_arithmetic_intercept": 0.12308510362431407,
+              "annualized_residual_volatility": 0.12699252196698455,
+              "coefficients": {
+                "SPY_excess": 0.5954497846642846,
+                "intercept": 0.0004884329508901352
+              },
+              "mean_daily_excess_return": 0.0007399776905631478,
+              "mean_daily_factor_components": {
+                "SPY_excess": 0.0002515447396730134
+              },
+              "mean_decomposition_error": 7.589415207398531e-19,
+              "r_squared": 0.3925858196813201
+            }
+          },
+          "market_sector_defense_full_window": {
+            "design_condition_number": 218.9643187568003,
+            "end": "2026-10-05",
+            "in_sample_descriptive_fit_only": true,
+            "independent_alpha_proven": false,
+            "paired_strategy_minus_spy": {
+              "annualized_252_arithmetic_intercept": 0.020534403004964612,
+              "coefficients": {
+                "GLD_excess": 0.5596025022298364,
+                "IEF_excess": 0.039396140532499596,
+                "SOXX_minus_SPY": 0.23731792154709674,
+                "SPY_excess": -0.6930509169155272,
+                "intercept": 8.148572621017703e-05
+              },
+              "mean_daily_return_advantage": 0.0003108727936925041
+            },
+            "sessions": 1254,
+            "spy": {
+              "annualized_252_arithmetic_intercept": 0.001662811735817449,
+              "annualized_residual_volatility": 0.003743544447350576,
+              "coefficients": {
+                "GLD_excess": 8.532380406789386e-05,
+                "IEF_excess": 1.0202244910217928e-05,
+                "SOXX_minus_SPY": -0.00013447298874036395,
+                "SPY_excess": 1.0003063701499206,
+                "intercept": 6.598459269116861e-06
+              },
+              "mean_daily_excess_return": 0.00042910489687064397,
+              "mean_daily_factor_components": {
+                "GLD_excess": 4.988475583186562e-08,
+                "IEF_excess": -2.292381383629157e-09,
+                "SOXX_minus_SPY": -1.1550437064677139e-07,
+                "SPY_excess": 0.0004225743495977306
+              },
+              "mean_decomposition_error": 4.933119884809045e-18,
+              "r_squared": 0.9995237245883194
+            },
+            "start": "2021-10-06",
+            "strategy": {
+              "annualized_252_arithmetic_intercept": 0.02219721474078206,
+              "annualized_residual_volatility": 0.02875892725486652,
+              "coefficients": {
+                "GLD_excess": 0.5596878260339043,
+                "IEF_excess": 0.039406342777409814,
+                "SOXX_minus_SPY": 0.23718344855835638,
+                "SPY_excess": 0.3072554532343934,
+                "intercept": 8.808418547929389e-05
+              },
+              "mean_daily_excess_return": 0.0007399776905631478,
+              "mean_daily_factor_components": {
+                "GLD_excess": 0.00032722275862844306,
+                "IEF_excess": -8.854361699293292e-06,
+                "SOXX_minus_SPY": 0.00020372660123185482,
+                "SPY_excess": 0.00012979850692285429
+              },
+              "mean_decomposition_error": 4.87890977618477e-18,
+              "r_squared": 0.9688488563877409
+            }
+          }
+        },
+        "qualification_metrics_recomputed_or_changed": false
+      },
+      "5y_stress": {
+        "ff_risk_free_minus_frozen_account_rf_daily_mean": -1.7153471385396705e-06,
+        "models": {
+          "ff6_available_overlap": {
+            "design_condition_number": 238.72374926353876,
+            "end": "2026-08-31",
+            "in_sample_descriptive_fit_only": true,
+            "independent_alpha_proven": false,
+            "paired_strategy_minus_spy": {
+              "annualized_252_arithmetic_intercept": 0.12303588069658053,
+              "coefficients": {
+                "CMA": 0.03423275872835931,
+                "HML": -0.03761477212571204,
+                "Mkt-RF": -0.4591468187922173,
+                "Mom": 0.19241758001024997,
+                "RMW": -0.3523623176078884,
+                "SMB": 0.0919200274445457,
+                "intercept": 0.0004882376218118275
+              },
+              "mean_daily_return_advantage": 0.00032417475133300757
+            },
+            "sessions": 1230,
+            "spy": {
+              "annualized_252_arithmetic_intercept": -0.0020709413793452577,
+              "annualized_residual_volatility": 0.014266671405423278,
+              "coefficients": {
+                "CMA": 0.039367716841516125,
+                "HML": 0.011883021358850332,
+                "Mkt-RF": 0.9977718751582907,
+                "Mom": 0.0036227548707358226,
+                "RMW": 0.04473612941672578,
+                "SMB": -0.09281662068613047,
+                "intercept": -8.218021346608165e-06
+              },
+              "mean_daily_excess_return": 0.0004132707368458797,
+              "mean_daily_factor_components": {
+                "CMA": 1.1810315052454825e-06,
+                "HML": 2.304146824460003e-06,
+                "Mkt-RF": 0.0003983786730814932,
+                "Mom": 1.2055232264977012e-06,
+                "RMW": 2.9424007071651355e-06,
+                "SMB": 1.5476982847744192e-05
+              },
+              "mean_decomposition_error": 1.1785277614917433e-16,
+              "r_squared": 0.9931586475536446
+            },
+            "start": "2021-10-06",
+            "strategy": {
+              "annualized_252_arithmetic_intercept": 0.12096493931723526,
+              "annualized_residual_volatility": 0.11756661760029279,
+              "coefficients": {
+                "CMA": 0.07360047556987544,
+                "HML": -0.02573175076686171,
+                "Mkt-RF": 0.5386250563660734,
+                "Mom": 0.1960403348809858,
+                "RMW": -0.3076261881911626,
+                "SMB": -0.000896593241584781,
+                "intercept": 0.0004800196004652193
+              },
+              "mean_daily_excess_return": 0.0007374454881788871,
+              "mean_daily_factor_components": {
+                "CMA": 2.2080142670962607e-06,
+                "HML": -4.989449234062209e-06,
+                "Mkt-RF": 0.0002150559066515274,
+                "Mom": 6.523521062340447e-05,
+                "RMW": -2.0233299694849647e-05,
+                "SMB": 1.4950510069027524e-07
+              },
+              "mean_decomposition_error": 1.3877787807814457e-16,
+              "r_squared": 0.4773322914119167
+            }
+          },
+          "market_full_window": {
+            "design_condition_number": 92.62233686678717,
+            "end": "2026-10-05",
+            "in_sample_descriptive_fit_only": true,
+            "independent_alpha_proven": false,
+            "paired_strategy_minus_spy": {
+              "annualized_252_arithmetic_intercept": 0.11903261497670724,
+              "coefficients": {
+                "SPY_excess": -0.4030388567380806,
+                "intercept": 0.00047235164673296523
+              },
+              "mean_daily_return_advantage": 0.00030208992709282977
+            },
+            "sessions": 1254,
+            "spy": {
+              "annualized_252_arithmetic_intercept": -0.0027983144691898568,
+              "annualized_residual_volatility": 0.00490436580465807,
+              "coefficients": {
+                "SPY_excess": 0.9993242504589855,
+                "intercept": -1.1104422496785146e-05
+              },
+              "mean_daily_excess_return": 0.00041105503562168547,
+              "mean_daily_factor_components": {
+                "SPY_excess": 0.0004221594581184713
+              },
+              "mean_decomposition_error": 7.047314121155779e-19,
+              "r_squared": 0.9991813816072825
+            },
+            "start": "2021-10-06",
+            "strategy": {
+              "annualized_252_arithmetic_intercept": 0.11623430050751739,
+              "annualized_residual_volatility": 0.1273510636356087,
+              "coefficients": {
+                "SPY_excess": 0.5962853937209049,
+                "intercept": 0.0004612472242361801
+              },
+              "mean_daily_excess_return": 0.0007131449627145152,
+              "mean_daily_factor_components": {
+                "SPY_excess": 0.00025189773847833583
+              },
+              "mean_decomposition_error": 7.589415207398531e-19,
+              "r_squared": 0.39191021893976086
+            }
+          },
+          "market_sector_defense_full_window": {
+            "design_condition_number": 218.9643187568003,
+            "end": "2026-10-05",
+            "in_sample_descriptive_fit_only": true,
+            "independent_alpha_proven": false,
+            "paired_strategy_minus_spy": {
+              "annualized_252_arithmetic_intercept": 0.017407857509591933,
+              "coefficients": {
+                "GLD_excess": 0.5621178588871358,
+                "IEF_excess": 0.03372123127040416,
+                "SOXX_minus_SPY": 0.23775692210675498,
+                "SPY_excess": -0.6918643519640192,
+                "intercept": 6.907879964123783e-05
+              },
+              "mean_daily_return_advantage": 0.00030208992709282977
+            },
+            "sessions": 1254,
+            "spy": {
+              "annualized_252_arithmetic_intercept": -0.002778568483167559,
+              "annualized_residual_volatility": 0.0049027327312144275,
+              "coefficients": {
+                "GLD_excess": 0.00020791065399416997,
+                "IEF_excess": 0.001262495090878446,
+                "SOXX_minus_SPY": 0.00023466524280535417,
+                "SPY_excess": 0.9990453944888812,
+                "intercept": -1.1026065409395074e-05
+              },
+              "mean_daily_excess_return": 0.00041105503562168547,
+              "mean_daily_factor_components": {
+                "GLD_excess": 1.2155543605498178e-07,
+                "IEF_excess": -2.8367484497008904e-07,
+                "SOXX_minus_SPY": 2.01563610928864e-07,
+                "SPY_excess": 0.00042204165682907166
+              },
+              "mean_decomposition_error": 4.933119884809045e-18,
+              "r_squared": 0.9991819266895353
+            },
+            "start": "2021-10-06",
+            "strategy": {
+              "annualized_252_arithmetic_intercept": 0.014629289026424377,
+              "annualized_residual_volatility": 0.02837286706281727,
+              "coefficients": {
+                "GLD_excess": 0.56232576954113,
+                "IEF_excess": 0.03498372636128261,
+                "SOXX_minus_SPY": 0.23799158734956033,
+                "SPY_excess": 0.307181042524862,
+                "intercept": 5.8052734231842764e-05
+              },
+              "mean_daily_excess_return": 0.0007131449627145152,
+              "mean_daily_factor_components": {
+                "GLD_excess": 0.0003287650382911208,
+                "IEF_excess": -7.860627121415359e-06,
+                "SOXX_minus_SPY": 0.00020442074481673102,
+                "SPY_excess": 0.00012976707249624095
+              },
+              "mean_decomposition_error": 4.9873299934333204e-18,
+              "r_squared": 0.9698165416628803
+            }
+          }
+        },
+        "qualification_metrics_recomputed_or_changed": false
+      }
+    },
+    "macro_real_yield_factor_tilt": {
+      "10y_base": {
+        "ff_risk_free_minus_frozen_account_rf_daily_mean": 1.6465022447278162e-08,
+        "models": {
+          "ff6_available_overlap": {
+            "design_condition_number": 263.84490536092636,
+            "end": "2026-08-31",
+            "in_sample_descriptive_fit_only": true,
+            "independent_alpha_proven": false,
+            "paired_strategy_minus_spy": {
+              "annualized_252_arithmetic_intercept": 0.05294678051505676,
+              "coefficients": {
+                "CMA": 0.11253415203675331,
+                "HML": -0.024514202778590264,
+                "Mkt-RF": -0.526518550605154,
+                "Mom": 0.09801397174749532,
+                "RMW": -0.16706557357260848,
+                "SMB": 0.09482170043649663,
+                "intercept": 0.00021010627188514588
+              },
+              "mean_daily_return_advantage": -8.546890221838707e-05
+            },
+            "sessions": 2488,
+            "spy": {
+              "annualized_252_arithmetic_intercept": -0.0012993047272098096,
+              "annualized_residual_volatility": 0.013187514364975367,
+              "coefficients": {
+                "CMA": 0.0392151751092641,
+                "HML": 0.015709151256003778,
+                "Mkt-RF": 0.9849865947537586,
+                "Mom": -0.01040808648027497,
+                "RMW": 0.04359858854417929,
+                "SMB": -0.10589060790253532,
+                "intercept": -5.155971139721466e-06
+              },
+              "mean_daily_excess_return": 0.0005399277476537075,
+              "mean_daily_factor_components": {
+                "CMA": -1.2105005821509174e-06,
+                "HML": -2.2225165764120966e-07,
+                "Mkt-RF": 0.0005354874871639606,
+                "Mom": -1.6938240417457133e-06,
+                "RMW": 3.6659263357887082e-06,
+                "SMB": 9.056881576229708e-06
+              },
+              "mean_decomposition_error": 1.0121027280152184e-15,
+              "r_squared": 0.9946382638210727
+            },
+            "start": "2016-10-06",
+            "strategy": {
+              "annualized_252_arithmetic_intercept": 0.05164747578784695,
+              "annualized_residual_volatility": 0.07927345248367225,
+              "coefficients": {
+                "CMA": 0.1517493271460174,
+                "HML": -0.008805051522586486,
+                "Mkt-RF": 0.4584680441486047,
+                "Mom": 0.08760588526722035,
+                "RMW": -0.12346698502842919,
+                "SMB": -0.011068907466038697,
+                "intercept": 0.0002049503007454244
+              },
+              "mean_daily_excess_return": 0.0004544588454353206,
+              "mean_daily_factor_components": {
+                "CMA": -4.6842236032211156e-06,
+                "HML": 1.2457307620379517e-07,
+                "Mkt-RF": 0.0002492459310753226,
+                "Mom": 1.4257083177129227e-05,
+                "RMW": -1.0381548741136407e-05,
+                "SMB": 9.467297060984865e-07
+              },
+              "mean_decomposition_error": 5.004135127106846e-16,
+              "r_squared": 0.5420591239089356
+            }
+          },
+          "market_full_window": {
+            "design_condition_number": 88.44750990864249,
+            "end": "2026-10-05",
+            "in_sample_descriptive_fit_only": true,
+            "independent_alpha_proven": false,
+            "paired_strategy_minus_spy": {
+              "annualized_252_arithmetic_intercept": 0.04750852009667807,
+              "coefficients": {
+                "SPY_excess": -0.5354658863268749,
+                "intercept": 0.00018852587339951614
+              },
+              "mean_daily_return_advantage": -9.967583306759011e-05
+            },
+            "sessions": 2512,
+            "spy": {
+              "annualized_252_arithmetic_intercept": 6.0871856345191624e-05,
+              "annualized_residual_volatility": 0.00019230839059219862,
+              "coefficients": {
+                "SPY_excess": 1.0000002813321054,
+                "intercept": 2.4155498549679215e-07
+              },
+              "mean_daily_excess_return": 0.0005384677891989802,
+              "mean_daily_factor_components": {
+                "SPY_excess": 0.0005382262342134834
+              },
+              "mean_decomposition_error": 0.0,
+              "r_squared": 0.99999885239289
+            },
+            "start": "2016-10-06",
+            "strategy": {
+              "annualized_252_arithmetic_intercept": 0.04756939195302326,
+              "annualized_residual_volatility": 0.08261633613556069,
+              "coefficients": {
+                "SPY_excess": 0.4645343950052305,
+                "intercept": 0.00018876742838501293
+              },
+              "mean_daily_excess_return": 0.00043879195613139005,
+              "mean_daily_factor_components": {
+                "SPY_excess": 0.00025002452774637726
+              },
+              "mean_decomposition_error": 1.6263032587282567e-19,
+              "r_squared": 0.5046662734673512
+            }
+          },
+          "market_sector_defense_full_window": {
+            "design_condition_number": 259.1100155994728,
+            "end": "2026-10-05",
+            "in_sample_descriptive_fit_only": true,
+            "independent_alpha_proven": false,
+            "paired_strategy_minus_spy": {
+              "annualized_252_arithmetic_intercept": 0.0031266816822179424,
+              "coefficients": {
+                "GLD_excess": 0.467432544469538,
+                "IEF_excess": 0.01943748763953622,
+                "SOXX_minus_SPY": 0.022709554162211154,
+                "SPY_excess": -0.593730819038667,
+                "intercept": 1.2407466992928343e-05
+              },
+              "mean_daily_return_advantage": -9.967583306759011e-05
+            },
+            "sessions": 2512,
+            "spy": {
+              "annualized_252_arithmetic_intercept": 6.182664022844632e-05,
+              "annualized_residual_volatility": 0.0001922663781858859,
+              "coefficients": {
+                "GLD_excess": -2.179344643754577e-05,
+                "IEF_excess": -1.0159120440680902e-05,
+                "SOXX_minus_SPY": 7.676024995850739e-06,
+                "SPY_excess": 0.9999978133573101,
+                "intercept": 2.4534381043034256e-07
+              },
+              "mean_daily_excess_return": 0.0005384677891989802,
+              "mean_daily_factor_components": {
+                "GLD_excess": -8.96615385136779e-09,
+                "IEF_excess": 8.370053190222575e-10,
+                "SOXX_minus_SPY": 5.668652006405779e-09,
+                "SPY_excess": 0.0005382249058850769
+              },
+              "mean_decomposition_error": 1.1926223897340549e-18,
+              "r_squared": 0.9999988528942563
+            },
+            "start": "2016-10-06",
+            "strategy": {
+              "annualized_252_arithmetic_intercept": 0.0031885083224463887,
+              "annualized_residual_volatility": 0.029412065310032796,
+              "coefficients": {
+                "GLD_excess": 0.4674107510231005,
+                "IEF_excess": 0.019427328519095538,
+                "SOXX_minus_SPY": 0.022717230187207005,
+                "SPY_excess": 0.40626699431864305,
+                "intercept": 1.2652810803358686e-05
+              },
+              "mean_daily_excess_return": 0.00043879195613139005,
+              "mean_daily_factor_components": {
+                "GLD_excess": 0.00019229986030279439,
+                "IEF_excess": -1.6006087731533879e-06,
+                "SOXX_minus_SPY": 1.677640087809805e-05,
+                "SPY_excess": 0.0002186634929202931
+              },
+              "mean_decomposition_error": 7.589415207398531e-19,
+              "r_squared": 0.9372206115563555
+            }
+          }
+        },
+        "qualification_metrics_recomputed_or_changed": false
+      },
+      "10y_stress": {
+        "ff_risk_free_minus_frozen_account_rf_daily_mean": 1.6465022447278162e-08,
+        "models": {
+          "ff6_available_overlap": {
+            "design_condition_number": 263.84490536092636,
+            "end": "2026-08-31",
+            "in_sample_descriptive_fit_only": true,
+            "independent_alpha_proven": false,
+            "paired_strategy_minus_spy": {
+              "annualized_252_arithmetic_intercept": 0.04981637048212536,
+              "coefficients": {
+                "CMA": 0.11173260638798944,
+                "HML": -0.023817712207378876,
+                "Mkt-RF": -0.5270739741369388,
+                "Mom": 0.09863779063258392,
+                "RMW": -0.16799453065870923,
+                "SMB": 0.09471978220155032,
+                "intercept": 0.00019768400984970382
+              },
+              "mean_daily_return_advantage": -9.81461035572115e-05
+            },
+            "sessions": 2488,
+            "spy": {
+              "annualized_252_arithmetic_intercept": -0.001794774024837049,
+              "annualized_residual_volatility": 0.013228501877935735,
+              "coefficients": {
+                "CMA": 0.039585375477415405,
+                "HML": 0.01543144590218962,
+                "Mkt-RF": 0.9850438377045332,
+                "Mom": -0.010448617249207592,
+                "RMW": 0.04380618000783079,
+                "SMB": -0.10561757371778553,
+                "intercept": -7.122119146178765e-06
+              },
+              "mean_daily_excess_return": 0.0005379727275438489,
+              "mean_daily_factor_components": {
+                "CMA": -1.2219279890134656e-06,
+                "HML": -2.1832270729785825e-07,
+                "Mkt-RF": 0.00053551860726654,
+                "Mom": -1.7004200659984542e-06,
+                "RMW": 3.683381373648794e-06,
+                "SMB": 9.033528813161076e-06
+              },
+              "mean_decomposition_error": 1.0125364088842126e-15,
+              "r_squared": 0.9946055679928681
+            },
+            "start": "2016-10-06",
+            "strategy": {
+              "annualized_252_arithmetic_intercept": 0.04802159645728831,
+              "annualized_residual_volatility": 0.07934625417852503,
+              "coefficients": {
+                "CMA": 0.15131798186540485,
+                "HML": -0.008386266305189254,
+                "Mkt-RF": 0.45796986356759434,
+                "Mom": 0.08818917338337633,
+                "RMW": -0.12418835065087844,
+                "SMB": -0.010897791516235211,
+                "intercept": 0.00019056189070352505
+              },
+              "mean_daily_excess_return": 0.00043982662398663747,
+              "mean_daily_factor_components": {
+                "CMA": -4.670908764977126e-06,
+                "HML": 1.1864814065219451e-07,
+                "Mkt-RF": 0.00024897509544273636,
+                "Mom": 1.4352008160341266e-05,
+                "RMW": -1.0442203760515982e-05,
+                "SMB": 9.320940653757447e-07
+              },
+              "mean_decomposition_error": 5.000340419503146e-16,
+              "r_squared": 0.5413005678532071
+            }
+          },
+          "market_full_window": {
+            "design_condition_number": 88.44750990864249,
+            "end": "2026-10-05",
+            "in_sample_descriptive_fit_only": true,
+            "independent_alpha_proven": false,
+            "paired_strategy_minus_spy": {
+              "annualized_252_arithmetic_intercept": 0.044403026832494,
+              "coefficients": {
+                "SPY_excess": -0.5359930056287643,
+                "intercept": 0.00017620248743053176
+              },
+              "mean_daily_return_advantage": -0.00011228292839359515
+            },
+            "sessions": 2512,
+            "spy": {
+              "annualized_252_arithmetic_intercept": -0.00043298569143687725,
+              "annualized_residual_volatility": 0.0011491558423241143,
+              "coefficients": {
+                "SPY_excess": 1.0000437771802433,
+                "intercept": -1.7181971882415764e-06
+              },
+              "mean_daily_excess_return": 0.0005365314476252029,
+              "mean_daily_factor_components": {
+                "SPY_excess": 0.0005382496448134445
+              },
+              "mean_decomposition_error": 0.0,
+              "r_squared": 0.9999590268317777
+            },
+            "start": "2016-10-06",
+            "strategy": {
+              "annualized_252_arithmetic_intercept": 0.043970041141057126,
+              "annualized_residual_volatility": 0.08271028191063948,
+              "coefficients": {
+                "SPY_excess": 0.464050771551479,
+                "intercept": 0.0001744842902422902
+              },
+              "mean_daily_excess_return": 0.00042424851923160775,
+              "mean_daily_factor_components": {
+                "SPY_excess": 0.0002497642289893176
+              },
+              "mean_decomposition_error": 5.421010862427522e-20,
+              "r_squared": 0.5035772867518159
+            }
+          },
+          "market_sector_defense_full_window": {
+            "design_condition_number": 259.1100155994728,
+            "end": "2026-10-05",
+            "in_sample_descriptive_fit_only": true,
+            "independent_alpha_proven": false,
+            "paired_strategy_minus_spy": {
+              "annualized_252_arithmetic_intercept": -5.258958194370848e-05,
+              "coefficients": {
+                "GLD_excess": 0.4682942714863742,
+                "IEF_excess": 0.0170368740565457,
+                "SOXX_minus_SPY": 0.022341200185591326,
+                "SPY_excess": -0.5942347476939083,
+                "intercept": -2.086888172369384e-07
+              },
+              "mean_daily_return_advantage": -0.00011228292839359515
+            },
+            "sessions": 2512,
+            "spy": {
+              "annualized_252_arithmetic_intercept": -0.0004338362146358597,
+              "annualized_residual_volatility": 0.001149108295788445,
+              "coefficients": {
+                "GLD_excess": 3.606398954497658e-05,
+                "IEF_excess": -0.00010827451468413407,
+                "SOXX_minus_SPY": -3.660902681112965e-05,
+                "SPY_excess": 1.0000561371497567,
+                "intercept": -1.7215722803010306e-06
+              },
+              "mean_daily_excess_return": 0.0005365314476252029,
+              "mean_daily_factor_components": {
+                "GLD_excess": 1.4837271364170412e-08,
+                "IEF_excess": 8.92068808853492e-09,
+                "SOXX_minus_SPY": -2.7035325366664348e-08,
+                "SPY_excess": 0.000538256297271419
+              },
+              "mean_decomposition_error": 1.1926223897340549e-18,
+              "r_squared": 0.9999590302222524
+            },
+            "start": "2016-10-06",
+            "strategy": {
+              "annualized_252_arithmetic_intercept": -0.0004864257965795682,
+              "annualized_residual_volatility": 0.02946982642623961,
+              "coefficients": {
+                "GLD_excess": 0.4683303354759192,
+                "IEF_excess": 0.016928599541861565,
+                "SOXX_minus_SPY": 0.022304591158780196,
+                "SPY_excess": 0.4058213894558484,
+                "intercept": -1.930261097537969e-06
+              },
+              "mean_daily_excess_return": 0.00042424851923160775,
+              "mean_daily_factor_components": {
+                "GLD_excess": 0.00019267819127063496,
+                "IEF_excess": -1.3947396275957725e-06,
+                "SOXX_minus_SPY": 1.6471671925589772e-05,
+                "SPY_excess": 0.0002184236567605175
+              },
+              "mean_decomposition_error": 7.589415207398531e-19,
+              "r_squared": 0.9369786361426438
+            }
+          }
+        },
+        "qualification_metrics_recomputed_or_changed": false
+      },
+      "5y_base": {
+        "ff_risk_free_minus_frozen_account_rf_daily_mean": -1.7153471385593427e-06,
+        "models": {
+          "ff6_available_overlap": {
+            "design_condition_number": 238.72374926353876,
+            "end": "2026-08-31",
+            "in_sample_descriptive_fit_only": true,
+            "independent_alpha_proven": false,
+            "paired_strategy_minus_spy": {
+              "annualized_252_arithmetic_intercept": 0.07008653770016343,
+              "coefficients": {
+                "CMA": 0.060056338863332455,
+                "HML": 0.05578291353088877,
+                "Mkt-RF": -0.5165888138884714,
+                "Mom": 0.09055186790259528,
+                "RMW": -0.22692075133459838,
+                "SMB": 0.0805231815706875,
+                "intercept": 0.0002781211813498549
+              },
+              "mean_daily_return_advantage": 8.62620134555413e-05
+            },
+            "sessions": 1230,
+            "spy": {
+              "annualized_252_arithmetic_intercept": 0.0024133815060912284,
+              "annualized_residual_volatility": 0.013756837536968849,
+              "coefficients": {
+                "CMA": 0.037860111065503334,
+                "HML": 0.01204376190537021,
+                "Mkt-RF": 0.9987920586826504,
+                "Mom": 0.003295266285532006,
+                "RMW": 0.045790448132988715,
+                "SMB": -0.09433679688953728,
+                "intercept": 9.576910738457256e-06
+              },
+              "mean_daily_excess_return": 0.00043167279050945214,
+              "mean_daily_factor_components": {
+                "CMA": 1.1358033319650989e-06,
+                "HML": 2.335314808480321e-06,
+                "Mkt-RF": 0.0003987860000154876,
+                "Mom": 1.0965467403806913e-06,
+                "RMW": 3.0117457349258443e-06,
+                "SMB": 1.5730469139873244e-05
+              },
+              "mean_decomposition_error": 1.1796119636642288e-16,
+              "r_squared": 0.9936480635584871
+            },
+            "start": "2021-10-06",
+            "strategy": {
+              "annualized_252_arithmetic_intercept": 0.07249991920625466,
+              "annualized_residual_volatility": 0.08640980636842027,
+              "coefficients": {
+                "CMA": 0.09791644992883579,
+                "HML": 0.06782667543625898,
+                "Mkt-RF": 0.482203244794179,
+                "Mom": 0.09384713418812729,
+                "RMW": -0.18113030320160967,
+                "SMB": -0.013813615318849781,
+                "intercept": 0.00028769809208831215
+              },
+              "mean_daily_excess_return": 0.0005179348039649934,
+              "mean_daily_factor_components": {
+                "CMA": 2.9374934978650704e-06,
+                "HML": 1.3151757798006312e-05,
+                "Mkt-RF": 0.00019252846627513932,
+                "Mom": 3.122896912455326e-05,
+                "RMW": -1.1913367096756282e-05,
+                "SMB": 2.3033922779643005e-06
+              },
+              "mean_decomposition_error": 9.074772183703672e-17,
+              "r_squared": 0.5090946770656304
+            }
+          },
+          "market_full_window": {
+            "design_condition_number": 92.62233686678718,
+            "end": "2026-10-05",
+            "in_sample_descriptive_fit_only": true,
+            "independent_alpha_proven": false,
+            "paired_strategy_minus_spy": {
+              "annualized_252_arithmetic_intercept": 0.06811423580367255,
+              "coefficients": {
+                "SPY_excess": -0.5111396015069889,
+                "intercept": 0.0002702945865225101
+              },
+              "mean_daily_return_advantage": 5.4366255857099485e-05
+            },
+            "sessions": 1254,
+            "spy": {
+              "annualized_252_arithmetic_intercept": 0.0016556090688127853,
+              "annualized_residual_volatility": 0.003743697179005318,
+              "coefficients": {
+                "SPY_excess": 1.0002132692935852,
+                "intercept": 6.569877257193592e-06
+              },
+              "mean_daily_excess_return": 0.0004291048968706243,
+              "mean_daily_factor_components": {
+                "SPY_excess": 0.0004225350196134313
+              },
+              "mean_decomposition_error": 5.963111948670274e-19,
+              "r_squared": 0.9995236857247148
+            },
+            "start": "2021-10-06",
+            "strategy": {
+              "annualized_252_arithmetic_intercept": 0.06976984487248533,
+              "annualized_residual_volatility": 0.09092172325236322,
+              "coefficients": {
+                "SPY_excess": 0.48907366778659633,
+                "intercept": 0.0002768644637797037
+              },
+              "mean_daily_excess_return": 0.00048347115272772377,
+              "mean_daily_factor_components": {
+                "SPY_excess": 0.00020660668894802032
+              },
+              "mean_decomposition_error": 2.168404344971009e-19,
+              "r_squared": 0.45963674857884773
+            }
+          },
+          "market_sector_defense_full_window": {
+            "design_condition_number": 218.96431875680003,
+            "end": "2026-10-05",
+            "in_sample_descriptive_fit_only": true,
+            "independent_alpha_proven": false,
+            "paired_strategy_minus_spy": {
+              "annualized_252_arithmetic_intercept": 0.009405305122156123,
+              "coefficients": {
+                "GLD_excess": 0.441655483759955,
+                "IEF_excess": 0.045540082261982986,
+                "SOXX_minus_SPY": 0.03416943102495229,
+                "SPY_excess": -0.6161471040218145,
+                "intercept": 3.732263937363541e-05
+              },
+              "mean_daily_return_advantage": 5.4366255857099485e-05
+            },
+            "sessions": 1254,
+            "spy": {
+              "annualized_252_arithmetic_intercept": 0.0016628117358173293,
+              "annualized_residual_volatility": 0.0037435444473505755,
+              "coefficients": {
+                "GLD_excess": 8.53238040671167e-05,
+                "IEF_excess": 1.0202244910745284e-05,
+                "SOXX_minus_SPY": -0.00013447298874025293,
+                "SPY_excess": 1.0003063701499204,
+                "intercept": 6.5984592691163865e-06
+              },
+              "mean_daily_excess_return": 0.0004291048968706243,
+              "mean_daily_factor_components": {
+                "GLD_excess": 4.988475583140959e-08,
+                "IEF_excess": -2.2923813837478506e-09,
+                "SOXX_minus_SPY": -1.1550437064667603e-07,
+                "SPY_excess": 0.0004225743495977109
+              },
+              "mean_decomposition_error": 4.065758146820642e-18,
+              "r_squared": 0.9995237245883194
+            },
+            "start": "2021-10-06",
+            "strategy": {
+              "annualized_252_arithmetic_intercept": 0.011068116857973452,
+              "annualized_residual_volatility": 0.03301607759749261,
+              "coefficients": {
+                "GLD_excess": 0.4417408075640221,
+                "IEF_excess": 0.04555028450689373,
+                "SOXX_minus_SPY": 0.03403495803621204,
+                "SPY_excess": 0.38415926612810586,
+                "intercept": 4.392109864275179e-05
+              },
+              "mean_daily_excess_return": 0.00048347115272772377,
+              "mean_daily_factor_components": {
+                "GLD_excess": 0.00025826476640407466,
+                "IEF_excess": -1.0234867437660193e-05,
+                "SOXX_minus_SPY": 2.923402271925518e-05,
+                "SPY_excess": 0.0001622861323993051
+              },
+              "mean_decomposition_error": 2.7647155398380363e-18,
+              "r_squared": 0.928747280837559
+            }
+          }
+        },
+        "qualification_metrics_recomputed_or_changed": false
+      },
+      "5y_stress": {
+        "ff_risk_free_minus_frozen_account_rf_daily_mean": -1.7153471385593427e-06,
+        "models": {
+          "ff6_available_overlap": {
+            "design_condition_number": 238.72374926353876,
+            "end": "2026-08-31",
+            "in_sample_descriptive_fit_only": true,
+            "independent_alpha_proven": false,
+            "paired_strategy_minus_spy": {
+              "annualized_252_arithmetic_intercept": 0.07086924313307583,
+              "coefficients": {
+                "CMA": 0.05847740839694198,
+                "HML": 0.056961387565595906,
+                "Mkt-RF": -0.5155133402802717,
+                "Mom": 0.09063892215762959,
+                "RMW": -0.22527052984263246,
+                "SMB": 0.07959865401311864,
+                "intercept": 0.00028122715528998345
+              },
+              "mean_daily_return_advantage": 9.027020157404188e-05
+            },
+            "sessions": 1230,
+            "spy": {
+              "annualized_252_arithmetic_intercept": -0.0020709413793452577,
+              "annualized_residual_volatility": 0.014266671405423278,
+              "coefficients": {
+                "CMA": 0.039367716841516125,
+                "HML": 0.011883021358850332,
+                "Mkt-RF": 0.9977718751582907,
+                "Mom": 0.0036227548707358226,
+                "RMW": 0.04473612941672578,
+                "SMB": -0.09281662068613047,
+                "intercept": -8.218021346608165e-06
+              },
+              "mean_daily_excess_return": 0.0004132707368458797,
+              "mean_daily_factor_components": {
+                "CMA": 1.1810315052454825e-06,
+                "HML": 2.304146824460003e-06,
+                "Mkt-RF": 0.0003983786730814932,
+                "Mom": 1.2055232264977012e-06,
+                "RMW": 2.9424007071651355e-06,
+                "SMB": 1.5476982847744192e-05
+              },
+              "mean_decomposition_error": 1.1785277614917433e-16,
+              "r_squared": 0.9931586475536446
+            },
+            "start": "2021-10-06",
+            "strategy": {
+              "annualized_252_arithmetic_intercept": 0.06879830175373057,
+              "annualized_residual_volatility": 0.08662016349714835,
+              "coefficients": {
+                "CMA": 0.0978451252384581,
+                "HML": 0.06884440892444624,
+                "Mkt-RF": 0.48225853487801895,
+                "Mom": 0.09426167702836541,
+                "RMW": -0.18053440042590668,
+                "SMB": -0.013217966673011838,
+                "intercept": 0.00027300913394337527
+              },
+              "mean_daily_excess_return": 0.0005035409384199217,
+              "mean_daily_factor_components": {
+                "CMA": 2.93535375715374e-06,
+                "HML": 1.3349098803642623e-05,
+                "Mkt-RF": 0.0001925505418525164,
+                "Mom": 3.1366914152609734e-05,
+                "RMW": -1.1874173166224273e-05,
+                "SMB": 2.204069076938803e-06
+              },
+              "mean_decomposition_error": 9.063930161978817e-17,
+              "r_squared": 0.5076471967848469
+            }
+          },
+          "market_full_window": {
+            "design_condition_number": 92.62233686678718,
+            "end": "2026-10-05",
+            "in_sample_descriptive_fit_only": true,
+            "independent_alpha_proven": false,
+            "paired_strategy_minus_spy": {
+              "annualized_252_arithmetic_intercept": 0.06903524242634704,
+              "coefficients": {
+                "SPY_excess": -0.510723858001245,
+                "intercept": 0.00027394937470772633
+              },
+              "mean_daily_return_advantage": 5.819667277645316e-05
+            },
+            "sessions": 1254,
+            "spy": {
+              "annualized_252_arithmetic_intercept": -0.0027983144691899305,
+              "annualized_residual_volatility": 0.00490436580465807,
+              "coefficients": {
+                "SPY_excess": 0.9993242504589859,
+                "intercept": -1.1104422496785439e-05
+              },
+              "mean_daily_excess_return": 0.0004110550356216659,
+              "mean_daily_factor_components": {
+                "SPY_excess": 0.00042215945811845183
+              },
+              "mean_decomposition_error": 4.87890977618477e-19,
+              "r_squared": 0.9991813816072825
+            },
+            "start": "2021-10-06",
+            "strategy": {
+              "annualized_252_arithmetic_intercept": 0.0662369279571571,
+              "annualized_residual_volatility": 0.09113458528178044,
+              "coefficients": {
+                "SPY_excess": 0.4886003924577409,
+                "intercept": 0.0002628449522109409
+              },
+              "mean_daily_excess_return": 0.00046925170839811904,
+              "mean_daily_factor_components": {
+                "SPY_excess": 0.0002064067561871785
+              },
+              "mean_decomposition_error": 3.7947076036992655e-19,
+              "r_squared": 0.4579946736536442
+            }
+          },
+          "market_sector_defense_full_window": {
+            "design_condition_number": 218.96431875680003,
+            "end": "2026-10-05",
+            "in_sample_descriptive_fit_only": true,
+            "independent_alpha_proven": false,
+            "paired_strategy_minus_spy": {
+              "annualized_252_arithmetic_intercept": 0.010030705074029875,
+              "coefficients": {
+                "GLD_excess": 0.4432507946511949,
+                "IEF_excess": 0.04139620836750996,
+                "SOXX_minus_SPY": 0.032915373664202885,
+                "SPY_excess": -0.6148166881391728,
+                "intercept": 3.9804385214404266e-05
+              },
+              "mean_daily_return_advantage": 5.819667277645316e-05
+            },
+            "sessions": 1254,
+            "spy": {
+              "annualized_252_arithmetic_intercept": -0.002778568483167644,
+              "annualized_residual_volatility": 0.004902732731214428,
+              "coefficients": {
+                "GLD_excess": 0.00020791065399350384,
+                "IEF_excess": 0.0012624950908787236,
+                "SOXX_minus_SPY": 0.00023466524280513212,
+                "SPY_excess": 0.9990453944888811,
+                "intercept": -1.1026065409395411e-05
+              },
+              "mean_daily_excess_return": 0.0004110550356216659,
+              "mean_daily_factor_components": {
+                "GLD_excess": 1.2155543605458825e-07,
+                "IEF_excess": -2.8367484497017607e-07,
+                "SOXX_minus_SPY": 2.015636109286733e-07,
+                "SPY_excess": 0.0004220416568290521
+              },
+              "mean_decomposition_error": 3.848917712323541e-18,
+              "r_squared": 0.9991819266895353
+            },
+            "start": "2021-10-06",
+            "strategy": {
+              "annualized_252_arithmetic_intercept": 0.007252136590862232,
+              "annualized_residual_volatility": 0.03306514115465381,
+              "coefficients": {
+                "GLD_excess": 0.4434587053051884,
+                "IEF_excess": 0.04265870345838868,
+                "SOXX_minus_SPY": 0.03315003890700802,
+                "SPY_excess": 0.38422870634970824,
+                "intercept": 2.8778319805008855e-05
+              },
+              "mean_daily_excess_return": 0.00046925170839811904,
+              "mean_daily_factor_components": {
+                "GLD_excess": 0.00025926913922005927,
+                "IEF_excess": -9.585147045414987e-06,
+                "SOXX_minus_SPY": 2.8473929349951497e-05,
+                "SPY_excess": 0.00016231546706851763
+              },
+              "mean_decomposition_error": 3.198396408832238e-18,
+              "r_squared": 0.9286526456965396
+            }
+          }
+        },
+        "qualification_metrics_recomputed_or_changed": false
+      }
+    },
+    "semiconductor_dollar_half_guard": {
+      "10y_base": {
+        "ff_risk_free_minus_frozen_account_rf_daily_mean": 1.6465022458531204e-08,
+        "models": {
+          "ff6_available_overlap": {
+            "design_condition_number": 263.84490536092636,
+            "end": "2026-08-31",
+            "in_sample_descriptive_fit_only": true,
+            "independent_alpha_proven": false,
+            "paired_strategy_minus_spy": {
+              "annualized_252_arithmetic_intercept": 0.07334909284531473,
+              "coefficients": {
+                "CMA": 0.06155468796558036,
+                "HML": -0.07825323000818286,
+                "Mkt-RF": -0.6627343387149864,
+                "Mom": 0.11201107982860538,
+                "RMW": -0.190424766884899,
+                "SMB": 0.13781428755777814,
+                "intercept": 0.0002910678287512489
+              },
+              "mean_daily_return_advantage": -7.959045432184176e-05
+            },
+            "sessions": 2488,
+            "spy": {
+              "annualized_252_arithmetic_intercept": -0.0012993047272098096,
+              "annualized_residual_volatility": 0.013187514364975367,
+              "coefficients": {
+                "CMA": 0.0392151751092641,
+                "HML": 0.015709151256003778,
+                "Mkt-RF": 0.9849865947537586,
+                "Mom": -0.01040808648027497,
+                "RMW": 0.04359858854417929,
+                "SMB": -0.10589060790253532,
+                "intercept": -5.155971139721466e-06
+              },
+              "mean_daily_excess_return": 0.0005399277476537075,
+              "mean_daily_factor_components": {
+                "CMA": -1.2105005821509174e-06,
+                "HML": -2.2225165764120966e-07,
+                "Mkt-RF": 0.0005354874871639606,
+                "Mom": -1.6938240417457133e-06,
+                "RMW": 3.6659263357887082e-06,
+                "SMB": 9.056881576229708e-06
+              },
+              "mean_decomposition_error": 1.0121027280152184e-15,
+              "r_squared": 0.9946382638210727
+            },
+            "start": "2016-10-06",
+            "strategy": {
+              "annualized_252_arithmetic_intercept": 0.07204978811810492,
+              "annualized_residual_volatility": 0.08267295025018195,
+              "coefficients": {
+                "CMA": 0.10076986307484447,
+                "HML": -0.06254407875217909,
+                "Mkt-RF": 0.32225225603877217,
+                "Mom": 0.10160299334833041,
+                "RMW": -0.1468261783407197,
+                "SMB": 0.03192367965524283,
+                "intercept": 0.00028591185761152744
+              },
+              "mean_daily_excess_return": 0.0004603372933318658,
+              "mean_daily_factor_components": {
+                "CMA": -3.1105809823746196e-06,
+                "HML": 8.84867995207673e-07,
+                "Mkt-RF": 0.00017519228356834536,
+                "Mom": 1.65349887486893e-05,
+                "RMW": -1.2345673837973697e-05,
+                "SMB": -2.730449771155817e-06
+              },
+              "mean_decomposition_error": 3.9985376121265404e-16,
+              "r_squared": 0.39678470074643335
+            }
+          },
+          "market_full_window": {
+            "design_condition_number": 88.44750990864249,
+            "end": "2026-10-05",
+            "in_sample_descriptive_fit_only": true,
+            "independent_alpha_proven": false,
+            "paired_strategy_minus_spy": {
+              "annualized_252_arithmetic_intercept": 0.06854278186399668,
+              "coefficients": {
+                "SPY_excess": -0.6597994108805119,
+                "intercept": 0.00027199516612697093
+              },
+              "mean_daily_return_advantage": -8.312608622051948e-05
+            },
+            "sessions": 2512,
+            "spy": {
+              "annualized_252_arithmetic_intercept": 6.087185634524396e-05,
+              "annualized_residual_volatility": 0.0001923083905921986,
+              "coefficients": {
+                "SPY_excess": 1.0000002813321054,
+                "intercept": 2.4155498549699983e-07
+              },
+              "mean_daily_excess_return": 0.0005384677891989916,
+              "mean_daily_factor_components": {
+                "SPY_excess": 0.0005382262342134948
+              },
+              "mean_decomposition_error": 2.168404344971009e-19,
+              "r_squared": 0.99999885239289
+            },
+            "start": "2016-10-06",
+            "strategy": {
+              "annualized_252_arithmetic_intercept": 0.06860365372034193,
+              "annualized_residual_volatility": 0.08845078317641031,
+              "coefficients": {
+                "SPY_excess": 0.34020087045159353,
+                "intercept": 0.00027223672111246794
+              },
+              "mean_daily_excess_return": 0.000455341702978472,
+              "mean_daily_factor_components": {
+                "SPY_excess": 0.00018310498186600412
+              },
+              "mean_decomposition_error": 5.421010862427522e-20,
+              "r_squared": 0.3228268755222956
+            }
+          },
+          "market_sector_defense_full_window": {
+            "design_condition_number": 259.1100155994728,
+            "end": "2026-10-05",
+            "in_sample_descriptive_fit_only": true,
+            "independent_alpha_proven": false,
+            "paired_strategy_minus_spy": {
+              "annualized_252_arithmetic_intercept": 0.01276458382474974,
+              "coefficients": {
+                "GLD_excess": 0.42486447854715814,
+                "IEF_excess": -0.003957414950822247,
+                "SOXX_minus_SPY": 0.15641937778596415,
+                "SPY_excess": -0.7885436360907176,
+                "intercept": 5.065311041567357e-05
+              },
+              "mean_daily_return_advantage": -8.312608622051948e-05
+            },
+            "sessions": 2512,
+            "spy": {
+              "annualized_252_arithmetic_intercept": 6.182664022841907e-05,
+              "annualized_residual_volatility": 0.0001922663781858859,
+              "coefficients": {
+                "GLD_excess": -2.179344643749026e-05,
+                "IEF_excess": -1.0159120440333957e-05,
+                "SOXX_minus_SPY": 7.676024996072783e-06,
+                "SPY_excess": 0.9999978133573103,
+                "intercept": 2.453438104302344e-07
+              },
+              "mean_daily_excess_return": 0.0005384677891989916,
+              "mean_daily_factor_components": {
+                "GLD_excess": -8.966153851345198e-09,
+                "IEF_excess": 8.370053189935581e-10,
+                "SOXX_minus_SPY": 5.668652006569756e-09,
+                "SPY_excess": 0.0005382249058850884
+              },
+              "mean_decomposition_error": 1.3010426069826053e-18,
+              "r_squared": 0.9999988528942563
+            },
+            "start": "2016-10-06",
+            "strategy": {
+              "annualized_252_arithmetic_intercept": 0.012826410464978158,
+              "annualized_residual_volatility": 0.03938929767459687,
+              "coefficients": {
+                "GLD_excess": 0.42484268510072065,
+                "IEF_excess": -0.003967574071262581,
+                "SOXX_minus_SPY": 0.15642705381096023,
+                "SPY_excess": 0.21145417726659266,
+                "intercept": 5.0898454226103805e-05
+              },
+              "mean_daily_excess_return": 0.000455341702978472,
+              "mean_daily_factor_components": {
+                "GLD_excess": 0.00017478671343504728,
+                "IEF_excess": 3.2688662573219187e-07,
+                "SOXX_minus_SPY": 0.00011551949517112894,
+                "SPY_excess": 0.00011381015352046084
+              },
+              "mean_decomposition_error": 1.0299920638612292e-18,
+              "r_squared": 0.8657071709957596
+            }
+          }
+        },
+        "qualification_metrics_recomputed_or_changed": false
+      },
+      "10y_stress": {
+        "ff_risk_free_minus_frozen_account_rf_daily_mean": 1.6465022458531204e-08,
+        "models": {
+          "ff6_available_overlap": {
+            "design_condition_number": 263.84490536092636,
+            "end": "2026-08-31",
+            "in_sample_descriptive_fit_only": true,
+            "independent_alpha_proven": false,
+            "paired_strategy_minus_spy": {
+              "annualized_252_arithmetic_intercept": 0.06882205980364849,
+              "coefficients": {
+                "CMA": 0.05962045237240128,
+                "HML": -0.07692494143429579,
+                "Mkt-RF": -0.6629365378878954,
+                "Mom": 0.11399390236369814,
+                "RMW": -0.1892895308140836,
+                "SMB": 0.13517931691890878,
+                "intercept": 0.00027310341191924
+              },
+              "mean_daily_return_advantage": -9.698037078531931e-05
+            },
+            "sessions": 2488,
+            "spy": {
+              "annualized_252_arithmetic_intercept": -0.001794774024837049,
+              "annualized_residual_volatility": 0.013228501877935735,
+              "coefficients": {
+                "CMA": 0.039585375477415405,
+                "HML": 0.01543144590218962,
+                "Mkt-RF": 0.9850438377045332,
+                "Mom": -0.010448617249207592,
+                "RMW": 0.04380618000783079,
+                "SMB": -0.10561757371778553,
+                "intercept": -7.122119146178765e-06
+              },
+              "mean_daily_excess_return": 0.0005379727275438489,
+              "mean_daily_factor_components": {
+                "CMA": -1.2219279890134656e-06,
+                "HML": -2.1832270729785825e-07,
+                "Mkt-RF": 0.00053551860726654,
+                "Mom": -1.7004200659984542e-06,
+                "RMW": 3.683381373648794e-06,
+                "SMB": 9.033528813161076e-06
+              },
+              "mean_decomposition_error": 1.0125364088842126e-15,
+              "r_squared": 0.9946055679928681
+            },
+            "start": "2016-10-06",
+            "strategy": {
+              "annualized_252_arithmetic_intercept": 0.06702728577881144,
+              "annualized_residual_volatility": 0.08308031205520379,
+              "coefficients": {
+                "CMA": 0.09920582784981669,
+                "HML": -0.061493495532106174,
+                "Mkt-RF": 0.32210729981663777,
+                "Mom": 0.10354528511449054,
+                "RMW": -0.1454833508062528,
+                "SMB": 0.029561743201123238,
+                "intercept": 0.00026598129277306126
+              },
+              "mean_daily_excess_return": 0.0004409923567585295,
+              "mean_daily_factor_components": {
+                "CMA": -3.062302081537749e-06,
+                "HML": 8.700044383963522e-07,
+                "Mkt-RF": 0.00017511347818809656,
+                "Mom": 1.6851079559026212e-05,
+                "RMW": -1.2232764062969485e-05,
+                "SMB": -2.5284320551443024e-06
+              },
+              "mean_decomposition_error": 3.9936587023503556e-16,
+              "r_squared": 0.39408862660369937
+            }
+          },
+          "market_full_window": {
+            "design_condition_number": 88.44750990864249,
+            "end": "2026-10-05",
+            "in_sample_descriptive_fit_only": true,
+            "independent_alpha_proven": false,
+            "paired_strategy_minus_spy": {
+              "annualized_252_arithmetic_intercept": 0.06416319304662436,
+              "coefficients": {
+                "SPY_excess": -0.6605222873739318,
+                "intercept": 0.00025461584542311257
+              },
+              "mean_daily_return_advantage": -0.00010089447790777447
+            },
+            "sessions": 2512,
+            "spy": {
+              "annualized_252_arithmetic_intercept": -0.0004329856914367028,
+              "annualized_residual_volatility": 0.0011491558423241141,
+              "coefficients": {
+                "SPY_excess": 1.0000437771802428,
+                "intercept": -1.7181971882408842e-06
+              },
+              "mean_daily_excess_return": 0.0005365314476252142,
+              "mean_daily_factor_components": {
+                "SPY_excess": 0.0005382496448134555
+              },
+              "mean_decomposition_error": 5.421010862427522e-19,
+              "r_squared": 0.9999590268317777
+            },
+            "start": "2016-10-06",
+            "strategy": {
+              "annualized_252_arithmetic_intercept": 0.06373020735518767,
+              "annualized_residual_volatility": 0.08880435920569751,
+              "coefficients": {
+                "SPY_excess": 0.33952148980631097,
+                "intercept": 0.0002528976482348717
+              },
+              "mean_daily_excess_return": 0.0004356369697174397,
+              "mean_daily_factor_components": {
+                "SPY_excess": 0.00018273932148256817
+              },
+              "mean_decomposition_error": 1.6263032587282567e-19,
+              "r_squared": 0.3202141805421568
+            }
+          },
+          "market_sector_defense_full_window": {
+            "design_condition_number": 259.1100155994728,
+            "end": "2026-10-05",
+            "in_sample_descriptive_fit_only": true,
+            "independent_alpha_proven": false,
+            "paired_strategy_minus_spy": {
+              "annualized_252_arithmetic_intercept": 0.008125979337552136,
+              "coefficients": {
+                "GLD_excess": 0.42645670746908937,
+                "IEF_excess": -0.007818974352726632,
+                "SOXX_minus_SPY": 0.15692132527424463,
+                "SPY_excess": -0.7898537405865038,
+                "intercept": 3.224594975219102e-05
+              },
+              "mean_daily_return_advantage": -0.00010089447790777447
+            },
+            "sessions": 2512,
+            "spy": {
+              "annualized_252_arithmetic_intercept": -0.00043383621463570114,
+              "annualized_residual_volatility": 0.0011491082957884448,
+              "coefficients": {
+                "GLD_excess": 3.606398954497658e-05,
+                "IEF_excess": -0.00010827451468385652,
+                "SOXX_minus_SPY": -3.660902681112965e-05,
+                "SPY_excess": 1.0000561371497565,
+                "intercept": -1.7215722803004013e-06
+              },
+              "mean_daily_excess_return": 0.0005365314476252142,
+              "mean_daily_factor_components": {
+                "GLD_excess": 1.4837271364170819e-08,
+                "IEF_excess": 8.920688088510828e-09,
+                "SOXX_minus_SPY": -2.7035325366664348e-08,
+                "SPY_excess": 0.0005382562972714303
+              },
+              "mean_decomposition_error": 1.8431436932253575e-18,
+              "r_squared": 0.9999590302222524
+            },
+            "start": "2016-10-06",
+            "strategy": {
+              "annualized_252_arithmetic_intercept": 0.007692143122916434,
+              "annualized_residual_volatility": 0.03975155679423233,
+              "coefficients": {
+                "GLD_excess": 0.42649277145863435,
+                "IEF_excess": -0.007927248867410489,
+                "SOXX_minus_SPY": 0.1568847162474335,
+                "SPY_excess": 0.21020239656325262,
+                "intercept": 3.052437747189061e-05
+              },
+              "mean_daily_excess_return": 0.0004356369697174397,
+              "mean_daily_factor_components": {
+                "GLD_excess": 0.00017546558394758855,
+                "IEF_excess": 6.531224337753912e-07,
+                "SOXX_minus_SPY": 0.0001158574733682001,
+                "SPY_excess": 0.000113136412495986
+              },
+              "mean_decomposition_error": 9.75781955236954e-19,
+              "r_squared": 0.8637891150744142
+            }
+          }
+        },
+        "qualification_metrics_recomputed_or_changed": false
+      },
+      "5y_base": {
+        "ff_risk_free_minus_frozen_account_rf_daily_mean": -1.7153471385396705e-06,
+        "models": {
+          "ff6_available_overlap": {
+            "design_condition_number": 238.72374926353876,
+            "end": "2026-08-31",
+            "in_sample_descriptive_fit_only": true,
+            "independent_alpha_proven": false,
+            "paired_strategy_minus_spy": {
+              "annualized_252_arithmetic_intercept": 0.10156564432423791,
+              "coefficients": {
+                "CMA": 0.016352804578762183,
+                "HML": -0.015716686594653,
+                "Mkt-RF": -0.6378041627840043,
+                "Mom": 0.1300973601429633,
+                "RMW": -0.25278315597292306,
+                "SMB": 0.10150385432704599,
+                "intercept": 0.0004030382711279282
+              },
+              "mean_daily_return_advantage": 0.0001555664142651364
+            },
+            "sessions": 1230,
+            "spy": {
+              "annualized_252_arithmetic_intercept": 0.0024133815060912284,
+              "annualized_residual_volatility": 0.013756837536968849,
+              "coefficients": {
+                "CMA": 0.037860111065503334,
+                "HML": 0.01204376190537021,
+                "Mkt-RF": 0.9987920586826504,
+                "Mom": 0.003295266285532006,
+                "RMW": 0.045790448132988715,
+                "SMB": -0.09433679688953728,
+                "intercept": 9.576910738457256e-06
+              },
+              "mean_daily_excess_return": 0.00043167279050945214,
+              "mean_daily_factor_components": {
+                "CMA": 1.1358033319650989e-06,
+                "HML": 2.335314808480321e-06,
+                "Mkt-RF": 0.0003987860000154876,
+                "Mom": 1.0965467403806913e-06,
+                "RMW": 3.0117457349258443e-06,
+                "SMB": 1.5730469139873244e-05
+              },
+              "mean_decomposition_error": 1.1796119636642288e-16,
+              "r_squared": 0.9936480635584871
+            },
+            "start": "2021-10-06",
+            "strategy": {
+              "annualized_252_arithmetic_intercept": 0.10397902583032914,
+              "annualized_residual_volatility": 0.09365018846595645,
+              "coefficients": {
+                "CMA": 0.054212915644265516,
+                "HML": -0.0036729246892827916,
+                "Mkt-RF": 0.36098789589864605,
+                "Mom": 0.1333926264284953,
+                "RMW": -0.20699270783993434,
+                "SMB": 0.007167057437508714,
+                "intercept": 0.00041261518186638547
+              },
+              "mean_daily_excess_return": 0.0005872392047745885,
+              "mean_daily_factor_components": {
+                "CMA": 1.6263874693279637e-06,
+                "HML": -7.121890556048339e-07,
+                "Mkt-RF": 0.00014413102087465458,
+                "Mom": 4.438829430665296e-05,
+                "RMW": -1.3614398426220077e-05,
+                "SMB": -1.1950922605146643e-06
+              },
+              "mean_decomposition_error": 9.291612618200773e-17,
+              "r_squared": 0.38906392333052175
+            }
+          },
+          "market_full_window": {
+            "design_condition_number": 92.62233686678717,
+            "end": "2026-10-05",
+            "in_sample_descriptive_fit_only": true,
+            "independent_alpha_proven": false,
+            "paired_strategy_minus_spy": {
+              "annualized_252_arithmetic_intercept": 0.10023441692469187,
+              "coefficients": {
+                "SPY_excess": -0.6011017477072904,
+                "intercept": 0.0003977556227170312
+              },
+              "mean_daily_return_advantage": 0.00014382323993974535
+            },
+            "sessions": 1254,
+            "spy": {
+              "annualized_252_arithmetic_intercept": 0.0016556090688128718,
+              "annualized_residual_volatility": 0.003743697179005318,
+              "coefficients": {
+                "SPY_excess": 1.0002132692935848,
+                "intercept": 6.569877257193935e-06
+              },
+              "mean_daily_excess_return": 0.00042910489687064397,
+              "mean_daily_factor_components": {
+                "SPY_excess": 0.00042253501961345065
+              },
+              "mean_decomposition_error": 5.963111948670274e-19,
+              "r_squared": 0.9995236857247148
+            },
+            "start": "2021-10-06",
+            "strategy": {
+              "annualized_252_arithmetic_intercept": 0.10189002599350473,
+              "annualized_residual_volatility": 0.10032237584193925,
+              "coefficients": {
+                "SPY_excess": 0.39911152158629437,
+                "intercept": 0.00040432549997422514
+              },
+              "mean_daily_excess_return": 0.0005729281368103892,
+              "mean_daily_factor_components": {
+                "SPY_excess": 0.00016860263683616446
+              },
+              "mean_decomposition_error": 4.336808689942018e-19,
+              "r_squared": 0.3175336966783545
+            }
+          },
+          "market_sector_defense_full_window": {
+            "design_condition_number": 218.9643187568003,
+            "end": "2026-10-05",
+            "in_sample_descriptive_fit_only": true,
+            "independent_alpha_proven": false,
+            "paired_strategy_minus_spy": {
+              "annualized_252_arithmetic_intercept": 0.02561761332220892,
+              "coefficients": {
+                "GLD_excess": 0.42114160483655017,
+                "IEF_excess": 0.009725055947996344,
+                "SOXX_minus_SPY": 0.15923321268281682,
+                "SPY_excess": -0.8016243418718583,
+                "intercept": 0.00010165719572305127
+              },
+              "mean_daily_return_advantage": 0.00014382323993974535
+            },
+            "sessions": 1254,
+            "spy": {
+              "annualized_252_arithmetic_intercept": 0.001662811735817449,
+              "annualized_residual_volatility": 0.003743544447350576,
+              "coefficients": {
+                "GLD_excess": 8.532380406789386e-05,
+                "IEF_excess": 1.0202244910217928e-05,
+                "SOXX_minus_SPY": -0.00013447298874036395,
+                "SPY_excess": 1.0003063701499206,
+                "intercept": 6.598459269116861e-06
+              },
+              "mean_daily_excess_return": 0.00042910489687064397,
+              "mean_daily_factor_components": {
+                "GLD_excess": 4.988475583186562e-08,
+                "IEF_excess": -2.292381383629157e-09,
+                "SOXX_minus_SPY": -1.1550437064677139e-07,
+                "SPY_excess": 0.0004225743495977306
+              },
+              "mean_decomposition_error": 4.933119884809045e-18,
+              "r_squared": 0.9995237245883194
+            },
+            "start": "2021-10-06",
+            "strategy": {
+              "annualized_252_arithmetic_intercept": 0.02728042505802637,
+              "annualized_residual_volatility": 0.04350253079916025,
+              "coefficients": {
+                "GLD_excess": 0.42122692864061806,
+                "IEF_excess": 0.009735258192906562,
+                "SOXX_minus_SPY": 0.15909873969407645,
+                "SPY_excess": 0.19868202827806242,
+                "intercept": 0.00010825565499216813
+              },
+              "mean_daily_excess_return": 0.0005729281368103892,
+              "mean_daily_factor_components": {
+                "GLD_excess": 0.00024627128050131955,
+                "IEF_excess": -2.1874523541275708e-06,
+                "SOXX_minus_SPY": 0.00013665643911982758,
+                "SPY_excess": 8.393221455120492e-05
+              },
+              "mean_decomposition_error": 3.3610267347050637e-18,
+              "r_squared": 0.8716740044662172
+            }
+          }
+        },
+        "qualification_metrics_recomputed_or_changed": false
+      },
+      "5y_stress": {
+        "ff_risk_free_minus_frozen_account_rf_daily_mean": -1.7153471385396705e-06,
+        "models": {
+          "ff6_available_overlap": {
+            "design_condition_number": 238.72374926353876,
+            "end": "2026-08-31",
+            "in_sample_descriptive_fit_only": true,
+            "independent_alpha_proven": false,
+            "paired_strategy_minus_spy": {
+              "annualized_252_arithmetic_intercept": 0.09750705190230745,
+              "coefficients": {
+                "CMA": 0.01544394951466952,
+                "HML": -0.01706682928262218,
+                "Mkt-RF": -0.6369349956936878,
+                "Mom": 0.1329005132874677,
+                "RMW": -0.24730548907027747,
+                "SMB": 0.09804733403105337,
+                "intercept": 0.0003869327456440772
+              },
+              "mean_daily_return_advantage": 0.0001413882939213549
+            },
+            "sessions": 1230,
+            "spy": {
+              "annualized_252_arithmetic_intercept": -0.0020709413793452577,
+              "annualized_residual_volatility": 0.014266671405423278,
+              "coefficients": {
+                "CMA": 0.039367716841516125,
+                "HML": 0.011883021358850332,
+                "Mkt-RF": 0.9977718751582907,
+                "Mom": 0.0036227548707358226,
+                "RMW": 0.04473612941672578,
+                "SMB": -0.09281662068613047,
+                "intercept": -8.218021346608165e-06
+              },
+              "mean_daily_excess_return": 0.0004132707368458797,
+              "mean_daily_factor_components": {
+                "CMA": 1.1810315052454825e-06,
+                "HML": 2.304146824460003e-06,
+                "Mkt-RF": 0.0003983786730814932,
+                "Mom": 1.2055232264977012e-06,
+                "RMW": 2.9424007071651355e-06,
+                "SMB": 1.5476982847744192e-05
+              },
+              "mean_decomposition_error": 1.1785277614917433e-16,
+              "r_squared": 0.9931586475536446
+            },
+            "start": "2021-10-06",
+            "strategy": {
+              "annualized_252_arithmetic_intercept": 0.09543611052296219,
+              "annualized_residual_volatility": 0.09444059053556403,
+              "coefficients": {
+                "CMA": 0.054811666356185645,
+                "HML": -0.005183807923771849,
+                "Mkt-RF": 0.36083687946460286,
+                "Mom": 0.1365232681582035,
+                "RMW": -0.2025693596535517,
+                "SMB": 0.005230713344922894,
+                "intercept": 0.000378714724297469
+              },
+              "mean_daily_excess_return": 0.0005546590307672347,
+              "mean_daily_factor_components": {
+                "CMA": 1.6443499906855674e-06,
+                "HML": -1.005152999853322e-06,
+                "Mkt-RF": 0.00014407072480086708,
+                "Mom": 4.543005988386399e-05,
+                "RMW": -1.332346438696938e-05,
+                "SMB": -8.722108187347035e-07
+              },
+              "mean_decomposition_error": 9.356664748549903e-17,
+              "r_squared": 0.3838029961668846
+            }
+          },
+          "market_full_window": {
+            "design_condition_number": 92.62233686678717,
+            "end": "2026-10-05",
+            "in_sample_descriptive_fit_only": true,
+            "independent_alpha_proven": false,
+            "paired_strategy_minus_spy": {
+              "annualized_252_arithmetic_intercept": 0.09653622650735358,
+              "coefficients": {
+                "SPY_excess": -0.6018758962519777,
+                "intercept": 0.00038308026391806974
+              },
+              "mean_daily_return_advantage": 0.00012882084601682035
+            },
+            "sessions": 1254,
+            "spy": {
+              "annualized_252_arithmetic_intercept": -0.0027983144691898568,
+              "annualized_residual_volatility": 0.00490436580465807,
+              "coefficients": {
+                "SPY_excess": 0.9993242504589855,
+                "intercept": -1.1104422496785146e-05
+              },
+              "mean_daily_excess_return": 0.00041105503562168547,
+              "mean_daily_factor_components": {
+                "SPY_excess": 0.0004221594581184713
+              },
+              "mean_decomposition_error": 7.047314121155779e-19,
+              "r_squared": 0.9991813816072825
+            },
+            "start": "2021-10-06",
+            "strategy": {
+              "annualized_252_arithmetic_intercept": 0.09373791203816373,
+              "annualized_residual_volatility": 0.1009648445250419,
+              "coefficients": {
+                "SPY_excess": 0.39744835420700786,
+                "intercept": 0.0003719758414212846
+              },
+              "mean_daily_excess_return": 0.0005398758816385059,
+              "mean_daily_factor_components": {
+                "SPY_excess": 0.00016790004021722177
+              },
+              "mean_decomposition_error": 4.336808689942018e-19,
+              "r_squared": 0.3129748168469473
+            }
+          },
+          "market_sector_defense_full_window": {
+            "design_condition_number": 218.9643187568003,
+            "end": "2026-10-05",
+            "in_sample_descriptive_fit_only": true,
+            "independent_alpha_proven": false,
+            "paired_strategy_minus_spy": {
+              "annualized_252_arithmetic_intercept": 0.02122891770535679,
+              "coefficients": {
+                "GLD_excess": 0.4232480108032354,
+                "IEF_excess": 0.004802843995622336,
+                "SOXX_minus_SPY": 0.16012868288258494,
+                "SPY_excess": -0.8032662053232988,
+                "intercept": 8.424173692601901e-05
+              },
+              "mean_daily_return_advantage": 0.00012882084601682035
+            },
+            "sessions": 1254,
+            "spy": {
+              "annualized_252_arithmetic_intercept": -0.002778568483167559,
+              "annualized_residual_volatility": 0.0049027327312144275,
+              "coefficients": {
+                "GLD_excess": 0.00020791065399416997,
+                "IEF_excess": 0.001262495090878446,
+                "SOXX_minus_SPY": 0.00023466524280535417,
+                "SPY_excess": 0.9990453944888812,
+                "intercept": -1.1026065409395074e-05
+              },
+              "mean_daily_excess_return": 0.00041105503562168547,
+              "mean_daily_factor_components": {
+                "GLD_excess": 1.2155543605498178e-07,
+                "IEF_excess": -2.8367484497008904e-07,
+                "SOXX_minus_SPY": 2.01563610928864e-07,
+                "SPY_excess": 0.00042204165682907166
+              },
+              "mean_decomposition_error": 4.933119884809045e-18,
+              "r_squared": 0.9991819266895353
+            },
+            "start": "2021-10-06",
+            "strategy": {
+              "annualized_252_arithmetic_intercept": 0.01845034922218923,
+              "annualized_residual_volatility": 0.04403086318625532,
+              "coefficients": {
+                "GLD_excess": 0.42345592145722954,
+                "IEF_excess": 0.006065339086500782,
+                "SOXX_minus_SPY": 0.1603633481253903,
+                "SPY_excess": 0.1957791891655823,
+                "intercept": 7.321567151662393e-05
+              },
+              "mean_daily_excess_return": 0.0005398758816385059,
+              "mean_daily_factor_components": {
+                "GLD_excess": 0.0002475744662139393,
+                "IEF_excess": -1.3628442102352617e-06,
+                "SOXX_minus_SPY": 0.0001377426632183752,
+                "SPY_excess": 8.270592489980612e-05
+              },
+              "mean_decomposition_error": 3.3610267347050637e-18,
+              "r_squared": 0.8693387845277789
+            }
+          }
+        },
+        "qualification_metrics_recomputed_or_changed": false
+      }
+    }
+  },
+  "included_candidate_count": 36,
+  "independent_alpha_proven": false,
+  "independent_centered_covariance_verification": true,
+  "investment_objective_verified": false,
+  "ledger_unchanged": true,
+  "new_strategy_evaluations": 0,
+  "no_alpha_significance_or_tradable_residual_claim": true,
+  "order_authority": false,
+  "original_reviewed_paths": 144,
+  "paired_regressions": 432,
+  "private_full_result": "reports/factor-exposure-20261011/primary/results.json",
+  "private_full_result_sha256": "9c7e53764ce5c255e7fe2f6697576d7b181e2e039d1278e11263c9c48289c554",
+  "program_engine_sha256": "0a36a3033ccffbbf2d8474b4e73ff5ddaad6d3c4b5922600c0eb8541ed59f9ab",
+  "qualification_policy_changed": false,
+  "registration": {
+    "path": "data/factor-exposure-20261011/registration.json",
+    "sha256": "b0d8a4e85410877bee430e814d6013cc2d9cc879dc11d3dbd17ee7fa722e7f72"
+  },
+  "registration_published_before_outcomes_commit": "76f27071",
+  "schema_version": 1
+}

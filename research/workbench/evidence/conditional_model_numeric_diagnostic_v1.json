@@ -1,0 +1,32 @@
+{
+  "hyperparameters_changed": false,
+  "order_authority": false,
+  "records": [
+    {
+      "candidate_id": "conditional_price_factor_model",
+      "candidate_spec_sha256": "dbefdcdfb0b59a51f731e563a031e241f11b2bcf15c2530bf990de011a3499ef",
+      "maximum_target_sum": 0.98,
+      "minimum_weight": -1.1102230246251565e-16,
+      "negative_assets": [
+        "BIL"
+      ],
+      "negative_rows": 1,
+      "performance_review_exists": false
+    },
+    {
+      "candidate_id": "conditional_macro_option_factor_model",
+      "candidate_spec_sha256": "ae708e7ffc3c4f71b89ced124fe63cbf69a9667fbe35d2b05d297a8990fc3f17",
+      "maximum_target_sum": 0.98,
+      "minimum_weight": -1.1102230246251565e-16,
+      "negative_assets": [
+        "BIL"
+      ],
+      "negative_rows": 3,
+      "performance_review_exists": false
+    }
+  ],
+  "schema_version": 1,
+  "source_sha256": "9769651b1bea108703202472f6f2128338ea51461cb694ba589abba13b0f82f9",
+  "stage": "target_validation_before_completed_strategy_accounting",
+  "strategy_return_outcomes_computed": false
+}

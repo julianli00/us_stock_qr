@@ -1,0 +1,1599 @@
+{
+  "analyses": {
+    "10": {
+      "alpha_allocated_to_horizon": 0.025,
+      "block_sessions": 21,
+      "bootstrap_maxima_sha256": "41475f76abe275a3329d8932585d8c37a1f095328f1e9afaa5696b04b85a2563",
+      "bootstrap_maximum_critical_daily_log_advantage": 0.0003984675580139604,
+      "bootstrap_samples": 4000,
+      "comparison_results": [
+        {
+          "annualized_252_log_growth_advantage": -0.01995211178021275,
+          "candidate_id": "four_factor_gold_risk_balance",
+          "comparison_id": "four_factor_gold_risk_balance::base_vs_base",
+          "observed_mean_daily_log_advantage": -7.9175046746876e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.12036593639973077,
+          "simultaneous_lower_mean_daily_log_advantage": -0.00047764260476083637,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.022726191243767815,
+          "candidate_id": "four_factor_gold_risk_balance",
+          "comparison_id": "four_factor_gold_risk_balance::stress_vs_stress",
+          "observed_mean_daily_log_advantage": -9.018329858638022e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.12314001586328585,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0004886508566003407,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.023215935724956203,
+          "candidate_id": "four_factor_gold_risk_balance",
+          "comparison_id": "four_factor_gold_risk_balance::stress_vs_base",
+          "observed_mean_daily_log_advantage": -9.212672906728651e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.12362976034447422,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0004905942870812469,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.038031806269699354,
+          "candidate_id": "four_factor_gold_daily_vol12",
+          "comparison_id": "four_factor_gold_daily_vol12::base_vs_base",
+          "observed_mean_daily_log_advantage": -0.00015091986614960062,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.13844563088921735,
+          "simultaneous_lower_mean_daily_log_advantage": -0.000549387424163561,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.043004025560005016,
+          "candidate_id": "four_factor_gold_daily_vol12",
+          "comparison_id": "four_factor_gold_daily_vol12::stress_vs_stress",
+          "observed_mean_daily_log_advantage": -0.000170650895079385,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.14341785017952302,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005691184530933454,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.04349377004119339,
+          "candidate_id": "four_factor_gold_daily_vol12",
+          "comparison_id": "four_factor_gold_daily_vol12::stress_vs_base",
+          "observed_mean_daily_log_advantage": -0.00017259432556029122,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.1439075946607114,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005710618835742516,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.01957211772878406,
+          "candidate_id": "quality_implementation_gold_monthly",
+          "comparison_id": "quality_implementation_gold_monthly::base_vs_base",
+          "observed_mean_daily_log_advantage": -7.766713384438119e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.11998594234830208,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0004761346918583416,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.02231542277277695,
+          "candidate_id": "quality_implementation_gold_monthly",
+          "comparison_id": "quality_implementation_gold_monthly::stress_vs_stress",
+          "observed_mean_daily_log_advantage": -8.855326497133711e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.12272924739229497,
+          "simultaneous_lower_mean_daily_log_advantage": -0.00048702082298529754,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.02280516725396533,
+          "candidate_id": "quality_implementation_gold_monthly",
+          "comparison_id": "quality_implementation_gold_monthly::stress_vs_base",
+          "observed_mean_daily_log_advantage": -9.049669545224337e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.12321899187348336,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0004889642534662038,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.03777614250245711,
+          "candidate_id": "quality_implementation_gold_daily_vol12",
+          "comparison_id": "quality_implementation_gold_daily_vol12::base_vs_base",
+          "observed_mean_daily_log_advantage": -0.00014990532739070283,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.13818996712197512,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005483728854046632,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.04218838234195517,
+          "candidate_id": "quality_implementation_gold_daily_vol12",
+          "comparison_id": "quality_implementation_gold_daily_vol12::stress_vs_stress",
+          "observed_mean_daily_log_advantage": -0.00016741421564267923,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.1426022069614732,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005658817736566397,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.04267812682314354,
+          "candidate_id": "quality_implementation_gold_daily_vol12",
+          "comparison_id": "quality_implementation_gold_daily_vol12::stress_vs_base",
+          "observed_mean_daily_log_advantage": -0.0001693576461235855,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.14309195144266157,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005678252041375459,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.0172714830973133,
+          "candidate_id": "four_factor_static70_gold30",
+          "comparison_id": "four_factor_static70_gold30::base_vs_base",
+          "observed_mean_daily_log_advantage": -6.853763133854484e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.11768530771683132,
+          "simultaneous_lower_mean_daily_log_advantage": -0.00046700518935250524,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.017771707052572767,
+          "candidate_id": "four_factor_static70_gold30",
+          "comparison_id": "four_factor_static70_gold30::stress_vs_stress",
+          "observed_mean_daily_log_advantage": -7.052264703401892e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.11818553167209078,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0004689902050479793,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.018261451533761137,
+          "candidate_id": "four_factor_static70_gold30",
+          "comparison_id": "four_factor_static70_gold30::stress_vs_base",
+          "observed_mean_daily_log_advantage": -7.246607751492515e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.11867527615327916,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0004709336355288856,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.0317298103988013,
+          "candidate_id": "four_factor_causal_mean_variance",
+          "comparison_id": "four_factor_causal_mean_variance::base_vs_base",
+          "observed_mean_daily_log_advantage": -0.00012591194602698928,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.13214363501831933,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005243795040409497,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.03820222382865419,
+          "candidate_id": "four_factor_causal_mean_variance",
+          "comparison_id": "four_factor_causal_mean_variance::stress_vs_stress",
+          "observed_mean_daily_log_advantage": -0.00015159612630418328,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.1386160484481722,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005500636843181437,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.03869196830984257,
+          "candidate_id": "four_factor_causal_mean_variance",
+          "comparison_id": "four_factor_causal_mean_variance::stress_vs_base",
+          "observed_mean_daily_log_advantage": -0.00015353955678508956,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.1391057929293606,
+          "simultaneous_lower_mean_daily_log_advantage": -0.00055200711479905,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.03104910368524577,
+          "candidate_id": "factor_gold_term_half_risk",
+          "comparison_id": "factor_gold_term_half_risk::base_vs_base",
+          "observed_mean_daily_log_advantage": -0.00012321072890970544,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.1314629283047638,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005216782869236658,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.04589210998080535,
+          "candidate_id": "factor_gold_term_half_risk",
+          "comparison_id": "factor_gold_term_half_risk::stress_vs_stress",
+          "observed_mean_daily_log_advantage": -0.00018211154754287835,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.14630593460032337,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005805791055568388,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.046381854461993735,
+          "candidate_id": "factor_gold_term_half_risk",
+          "comparison_id": "factor_gold_term_half_risk::stress_vs_base",
+          "observed_mean_daily_log_advantage": -0.00018405497802378466,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.14679567908151175,
+          "simultaneous_lower_mean_daily_log_advantage": -0.000582522536037745,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.03823150878637914,
+          "candidate_id": "factor_gold_term_equity_exit",
+          "comparison_id": "factor_gold_term_equity_exit::base_vs_base",
+          "observed_mean_daily_log_advantage": -0.00015171233645388548,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.13864533340589716,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005501798944678459,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.06503496416206704,
+          "candidate_id": "factor_gold_term_equity_exit",
+          "comparison_id": "factor_gold_term_equity_exit::stress_vs_stress",
+          "observed_mean_daily_log_advantage": -0.00025807525461137715,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.16544878878158506,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0006565428126253375,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.06552470864325542,
+          "candidate_id": "factor_gold_term_equity_exit",
+          "comparison_id": "factor_gold_term_equity_exit::stress_vs_base",
+          "observed_mean_daily_log_advantage": -0.0002600186850922834,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.16593853326277344,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0006584862431062438,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.01585461901707391,
+          "candidate_id": "macro_real_yield_factor_tilt",
+          "comparison_id": "macro_real_yield_factor_tilt::base_vs_base",
+          "observed_mean_daily_log_advantage": -6.291515482965836e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.11626844363659193,
+          "simultaneous_lower_mean_daily_log_advantage": -0.00046138271284361875,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.019028415434961962,
+          "candidate_id": "macro_real_yield_factor_tilt",
+          "comparison_id": "macro_real_yield_factor_tilt::stress_vs_stress",
+          "observed_mean_daily_log_advantage": -7.550958505937287e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.11944224005447998,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0004739771430733333,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.019518159916150357,
+          "candidate_id": "macro_real_yield_factor_tilt",
+          "comparison_id": "macro_real_yield_factor_tilt::stress_vs_base",
+          "observed_mean_daily_log_advantage": -7.745301554027919e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.11993198453566838,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0004759205735542396,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.021998072727878785,
+          "candidate_id": "macro_real_yield_tilt_curve_defense",
+          "comparison_id": "macro_real_yield_tilt_curve_defense::base_vs_base",
+          "observed_mean_daily_log_advantage": -8.729393939634438e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.12241189734739681,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0004857614974103048,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.025707589673112433,
+          "candidate_id": "macro_real_yield_tilt_curve_defense",
+          "comparison_id": "macro_real_yield_tilt_curve_defense::stress_vs_stress",
+          "observed_mean_daily_log_advantage": -0.00010201424473457315,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.12612141429263046,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005004818027485335,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.026197334154300814,
+          "candidate_id": "macro_real_yield_tilt_curve_defense",
+          "comparison_id": "macro_real_yield_tilt_curve_defense::stress_vs_base",
+          "observed_mean_daily_log_advantage": -0.00010395767521547942,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.12661115877381884,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005024252332294398,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.05523175028813837,
+          "candidate_id": "four_factor_defense_momentum",
+          "comparison_id": "four_factor_defense_momentum::base_vs_base",
+          "observed_mean_daily_log_advantage": -0.00021917361225451735,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.1556455749076564,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0006176411702684777,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.06355457074400701,
+          "candidate_id": "four_factor_defense_momentum",
+          "comparison_id": "four_factor_defense_momentum::stress_vs_stress",
+          "observed_mean_daily_log_advantage": -0.00025220067755558337,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.16396839536352503,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0006506682355695438,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.06404431522519538,
+          "candidate_id": "four_factor_defense_momentum",
+          "comparison_id": "four_factor_defense_momentum::stress_vs_base",
+          "observed_mean_daily_log_advantage": -0.0002541441080364896,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.1644581398447134,
+          "simultaneous_lower_mean_daily_log_advantage": -0.00065261166605045,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.07928249840107714,
+          "candidate_id": "four_factor_defense_diversified",
+          "comparison_id": "four_factor_defense_diversified::base_vs_base",
+          "observed_mean_daily_log_advantage": -0.0003146130888931632,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.17969632302059516,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0007130806469071236,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.0862689571783121,
+          "candidate_id": "four_factor_defense_diversified",
+          "comparison_id": "four_factor_defense_diversified::stress_vs_stress",
+          "observed_mean_daily_log_advantage": -0.00034233713165996864,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.18668278179783013,
+          "simultaneous_lower_mean_daily_log_advantage": -0.000740804689673929,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.08675870165950049,
+          "candidate_id": "four_factor_defense_diversified",
+          "comparison_id": "four_factor_defense_diversified::stress_vs_base",
+          "observed_mean_daily_log_advantage": -0.00034428056214087495,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.18717252627901854,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0007427481201548354,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.038197765429184044,
+          "candidate_id": "four_factor_daily_target_control",
+          "comparison_id": "four_factor_daily_target_control::base_vs_base",
+          "observed_mean_daily_log_advantage": -0.00015157843424279383,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.13861159004870208,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005500459922567543,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.04254419705589557,
+          "candidate_id": "four_factor_daily_target_control",
+          "comparison_id": "four_factor_daily_target_control::stress_vs_stress",
+          "observed_mean_daily_log_advantage": -0.0001688261787932364,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.1429580216754136,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005672937368071968,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.04303394153708394,
+          "candidate_id": "four_factor_daily_target_control",
+          "comparison_id": "four_factor_daily_target_control::stress_vs_base",
+          "observed_mean_daily_log_advantage": -0.00017076960927414262,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.14344776615660199,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005692371672881031,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.029468937001630217,
+          "candidate_id": "four_factor_growth_satellite50",
+          "comparison_id": "four_factor_growth_satellite50::base_vs_base",
+          "observed_mean_daily_log_advantage": -0.0001169402261969453,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.12988276162114823,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005154077842109057,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.03434019440311841,
+          "candidate_id": "four_factor_growth_satellite50",
+          "comparison_id": "four_factor_growth_satellite50::stress_vs_stress",
+          "observed_mean_daily_log_advantage": -0.00013627061271078735,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.13475401902263645,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005347381707247478,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.03482993888430678,
+          "candidate_id": "four_factor_growth_satellite50",
+          "comparison_id": "four_factor_growth_satellite50::stress_vs_base",
+          "observed_mean_daily_log_advantage": -0.00013821404319169358,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.1352437635038248,
+          "simultaneous_lower_mean_daily_log_advantage": -0.000536681601205654,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.06304191584873402,
+          "candidate_id": "conditional_price_factor_model_v2",
+          "comparison_id": "conditional_price_factor_model_v2::base_vs_base",
+          "observed_mean_daily_log_advantage": -0.00025016633273307147,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.16345574046825204,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0006486338907470319,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.07674411089935804,
+          "candidate_id": "conditional_price_factor_model_v2",
+          "comparison_id": "conditional_price_factor_model_v2::stress_vs_stress",
+          "observed_mean_daily_log_advantage": -0.00030454012261650013,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.17715793551887604,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0007030076806304605,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.07723385538054642,
+          "candidate_id": "conditional_price_factor_model_v2",
+          "comparison_id": "conditional_price_factor_model_v2::stress_vs_base",
+          "observed_mean_daily_log_advantage": -0.00030648355309740644,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.17764768000006445,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0007049511111113668,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.06176982725172169,
+          "candidate_id": "conditional_macro_option_factor_model_v2",
+          "comparison_id": "conditional_macro_option_factor_model_v2::base_vs_base",
+          "observed_mean_daily_log_advantage": -0.0002451183621100067,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.16218365187123973,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0006435859201239672,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.07271999957301514,
+          "candidate_id": "conditional_macro_option_factor_model_v2",
+          "comparison_id": "conditional_macro_option_factor_model_v2::stress_vs_stress",
+          "observed_mean_daily_log_advantage": -0.00028857142687704424,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.17313382419253318,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0006870389848910046,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.07320974405420351,
+          "candidate_id": "conditional_macro_option_factor_model_v2",
+          "comparison_id": "conditional_macro_option_factor_model_v2::stress_vs_base",
+          "observed_mean_daily_log_advantage": -0.00029051485735795044,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.17362356867372153,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0006889824153719108,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.019121984404683684,
+          "candidate_id": "four_factor_total_momentum_tilt",
+          "comparison_id": "four_factor_total_momentum_tilt::base_vs_base",
+          "observed_mean_daily_log_advantage": -7.588089049477652e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.1195358090242017,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0004743484485087369,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.023412879477237268,
+          "candidate_id": "four_factor_total_momentum_tilt",
+          "comparison_id": "four_factor_total_momentum_tilt::stress_vs_stress",
+          "observed_mean_daily_log_advantage": -9.290825189379868e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.1238267040967553,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0004913758099077591,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.023902623958425642,
+          "candidate_id": "four_factor_total_momentum_tilt",
+          "comparison_id": "four_factor_total_momentum_tilt::stress_vs_base",
+          "observed_mean_daily_log_advantage": -9.485168237470494e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.12431644857794366,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0004933192403886653,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.019430211710149692,
+          "candidate_id": "four_factor_residual_momentum_tilt",
+          "comparison_id": "four_factor_residual_momentum_tilt::base_vs_base",
+          "observed_mean_daily_log_advantage": -7.710401472281624e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.11984403632966772,
+          "simultaneous_lower_mean_daily_log_advantage": -0.00047557157273677667,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.02449268807575933,
+          "candidate_id": "four_factor_residual_momentum_tilt",
+          "comparison_id": "four_factor_residual_momentum_tilt::stress_vs_stress",
+          "observed_mean_daily_log_advantage": -9.719320664983861e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.12490651269527736,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0004956607646637991,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.02498243255694773,
+          "candidate_id": "four_factor_residual_momentum_tilt",
+          "comparison_id": "four_factor_residual_momentum_tilt::stress_vs_base",
+          "observed_mean_daily_log_advantage": -9.913663713074495e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.12539625717646574,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0004976041951447053,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.03639865324298089,
+          "candidate_id": "four_factor_gold_joint_trend_guard",
+          "comparison_id": "four_factor_gold_joint_trend_guard::base_vs_base",
+          "observed_mean_daily_log_advantage": -0.00014443910017055908,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.13681247786249892,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005429066581845195,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.047276150602919086,
+          "candidate_id": "four_factor_gold_joint_trend_guard",
+          "comparison_id": "four_factor_gold_joint_trend_guard::stress_vs_stress",
+          "observed_mean_daily_log_advantage": -0.0001876037722338059,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.1476899752224371,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005860713302477663,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.04776589508410747,
+          "candidate_id": "four_factor_gold_joint_trend_guard",
+          "comparison_id": "four_factor_gold_joint_trend_guard::stress_vs_base",
+          "observed_mean_daily_log_advantage": -0.00018954720271471216,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.14817971970362548,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005880147607286725,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.06018799776775435,
+          "candidate_id": "four_factor_gold_component_trend_guard",
+          "comparison_id": "four_factor_gold_component_trend_guard::base_vs_base",
+          "observed_mean_daily_log_advantage": -0.0002388412609831522,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.16060182238727239,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0006373088189971126,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.08431825394205243,
+          "candidate_id": "four_factor_gold_component_trend_guard",
+          "comparison_id": "four_factor_gold_component_trend_guard::stress_vs_stress",
+          "observed_mean_daily_log_advantage": -0.00033459624580179536,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.18473207856157045,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0007330638038157558,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.0848079984232408,
+          "candidate_id": "four_factor_gold_component_trend_guard",
+          "comparison_id": "four_factor_gold_component_trend_guard::stress_vs_base",
+          "observed_mean_daily_log_advantage": -0.00033653967628270156,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.1852218230427588,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0007350072342966619,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.02495544004407592,
+          "candidate_id": "four_factor_pdp_momentum_implementation",
+          "comparison_id": "four_factor_pdp_momentum_implementation::base_vs_base",
+          "observed_mean_daily_log_advantage": -9.902952398442825e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.12536926466359394,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0004974970819983886,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.027983092107131142,
+          "candidate_id": "four_factor_pdp_momentum_implementation",
+          "comparison_id": "four_factor_pdp_momentum_implementation::stress_vs_stress",
+          "observed_mean_daily_log_advantage": -0.00011104401629813945,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.12839691672664916,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005095115743120999,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.028472836588319523,
+          "candidate_id": "four_factor_pdp_momentum_implementation",
+          "comparison_id": "four_factor_pdp_momentum_implementation::stress_vs_base",
+          "observed_mean_daily_log_advantage": -0.00011298744677904572,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.12888666120783754,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005114550047930061,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.023255307054339213,
+          "candidate_id": "four_factor_dual_momentum_implementation",
+          "comparison_id": "four_factor_dual_momentum_implementation::base_vs_base",
+          "observed_mean_daily_log_advantage": -9.228296450134608e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.12366913167385724,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0004907505225153065,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.02616702820726162,
+          "candidate_id": "four_factor_dual_momentum_implementation",
+          "comparison_id": "four_factor_dual_momentum_implementation::stress_vs_stress",
+          "observed_mean_daily_log_advantage": -0.00010383741352087945,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.12658085282677964,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005023049715348398,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.026656772688449994,
+          "candidate_id": "four_factor_dual_momentum_implementation",
+          "comparison_id": "four_factor_dual_momentum_implementation::stress_vs_base",
+          "observed_mean_daily_log_advantage": -0.00010578084400178569,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.12707059730796802,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005042484020157461,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        }
+      ],
+      "comparisons": 66,
+      "monte_carlo_p_value_resolution": 0.00024993751562109475,
+      "positive_part_maximum_daily_log_advantage": 0.0,
+      "scope_limited_omnibus_p_value": 1.0,
+      "seed": 20261011,
+      "sessions": 2512
+    },
+    "5": {
+      "alpha_allocated_to_horizon": 0.025,
+      "block_sessions": 21,
+      "bootstrap_maxima_sha256": "48186ecdf96d0c1ffa040be794086da13e1b66ffdfd6bfedf61fd62dab25ac4e",
+      "bootstrap_maximum_critical_daily_log_advantage": 0.0005402600368636705,
+      "bootstrap_samples": 4000,
+      "comparison_results": [
+        {
+          "annualized_252_log_growth_advantage": 0.01794209038904537,
+          "candidate_id": "four_factor_gold_risk_balance",
+          "comparison_id": "four_factor_gold_risk_balance::base_vs_base",
+          "observed_mean_daily_log_advantage": 7.119877138510067e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.1182034389005996,
+          "simultaneous_lower_mean_daily_log_advantage": -0.00046906126547856985,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": 0.017569088197723647,
+          "candidate_id": "four_factor_gold_risk_balance",
+          "comparison_id": "four_factor_gold_risk_balance::stress_vs_stress",
+          "observed_mean_daily_log_advantage": 6.971860395922082e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.11857644109192132,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0004705414329044497,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": 0.013043359149752687,
+          "candidate_id": "four_factor_gold_risk_balance",
+          "comparison_id": "four_factor_gold_risk_balance::stress_vs_base",
+          "observed_mean_daily_log_advantage": 5.17593617053678e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.12310217013989229,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0004885006751583027,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.0006705616435793412,
+          "candidate_id": "four_factor_gold_daily_vol12",
+          "comparison_id": "four_factor_gold_daily_vol12::base_vs_base",
+          "observed_mean_daily_log_advantage": -2.6609589030926236e-06,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.1368160909332243,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005429209957667631,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.00028206853940284656,
+          "candidate_id": "four_factor_gold_daily_vol12",
+          "comparison_id": "four_factor_gold_daily_vol12::stress_vs_stress",
+          "observed_mean_daily_log_advantage": -1.1193196008049466e-06,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.13642759782904781,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005413793564644755,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.004807797587373837,
+          "candidate_id": "four_factor_gold_daily_vol12",
+          "comparison_id": "four_factor_gold_daily_vol12::stress_vs_base",
+          "observed_mean_daily_log_advantage": -1.9078561854658084e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.1409533268770188,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005593385987183286,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": 0.01867205699352998,
+          "candidate_id": "quality_implementation_gold_monthly",
+          "comparison_id": "quality_implementation_gold_monthly::base_vs_base",
+          "observed_mean_daily_log_advantage": 7.40954642600396e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.11747347229611499,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0004661645726036309,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": 0.018429394595271115,
+          "candidate_id": "quality_implementation_gold_monthly",
+          "comparison_id": "quality_implementation_gold_monthly::stress_vs_stress",
+          "observed_mean_daily_log_advantage": 7.313251823520284e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.11771613469437385,
+          "simultaneous_lower_mean_daily_log_advantage": -0.00046712751862846766,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": 0.013903665547300144,
+          "candidate_id": "quality_implementation_gold_monthly",
+          "comparison_id": "quality_implementation_gold_monthly::stress_vs_base",
+          "observed_mean_daily_log_advantage": 5.5173275981349775e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.12224186374234482,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0004850867608823207,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": 6.1306883009590166e-06,
+          "candidate_id": "quality_implementation_gold_daily_vol12",
+          "comparison_id": "quality_implementation_gold_daily_vol12::base_vs_base",
+          "observed_mean_daily_log_advantage": 2.4328128178408795e-08,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.136139398601344,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005402357087354921,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": 0.0010788680528298726,
+          "candidate_id": "quality_implementation_gold_daily_vol12",
+          "comparison_id": "quality_implementation_gold_daily_vol12::stress_vs_stress",
+          "observed_mean_daily_log_advantage": 4.281222431864574e-06,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.1350666612368151,
+          "simultaneous_lower_mean_daily_log_advantage": -0.000535978814431806,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.0034468609951411075,
+          "candidate_id": "quality_implementation_gold_daily_vol12",
+          "comparison_id": "quality_implementation_gold_daily_vol12::stress_vs_base",
+          "observed_mean_daily_log_advantage": -1.3678019821988521e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.13959239028478607,
+          "simultaneous_lower_mean_daily_log_advantage": -0.000553938056685659,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": 0.003349770376176323,
+          "candidate_id": "four_factor_static70_gold30",
+          "comparison_id": "four_factor_static70_gold30::base_vs_base",
+          "observed_mean_daily_log_advantage": 1.329273958800128e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.13279575891346865,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005269672972756693,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": 0.004465090382804834,
+          "candidate_id": "four_factor_static70_gold30",
+          "comparison_id": "four_factor_static70_gold30::stress_vs_stress",
+          "observed_mean_daily_log_advantage": 1.7718612630177913e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.13168043890684014,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005225414242334926,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -6.063866516613975e-05,
+          "candidate_id": "four_factor_static70_gold30",
+          "comparison_id": "four_factor_static70_gold30::stress_vs_base",
+          "observed_mean_daily_log_advantage": -2.4062962367515775e-07,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.1362061679548111,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005405006664873456,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.0025502371772689624,
+          "candidate_id": "four_factor_causal_mean_variance",
+          "comparison_id": "four_factor_causal_mean_variance::base_vs_base",
+          "observed_mean_daily_log_advantage": -1.0119988798686358e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.13869576646691392,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005503800256623568,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.016055902589546787,
+          "candidate_id": "four_factor_causal_mean_variance",
+          "comparison_id": "four_factor_causal_mean_variance::stress_vs_stress",
+          "observed_mean_daily_log_advantage": -6.37138991648682e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.15220143187919175,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0006039739360285387,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.020581631637517746,
+          "candidate_id": "four_factor_causal_mean_variance",
+          "comparison_id": "four_factor_causal_mean_variance::stress_vs_base",
+          "observed_mean_daily_log_advantage": -8.167314141872122e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.1567271609271627,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0006219331782823917,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": 0.00048258162042963886,
+          "candidate_id": "factor_gold_term_half_risk",
+          "comparison_id": "factor_gold_term_half_risk::base_vs_base",
+          "observed_mean_daily_log_advantage": 1.9150064302763446e-06,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.13566294766921533,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005383450304333942,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.004050850340862545,
+          "candidate_id": "factor_gold_term_half_risk",
+          "comparison_id": "factor_gold_term_half_risk::stress_vs_stress",
+          "observed_mean_daily_log_advantage": -1.6074802939930733e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.14019637963050752,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005563348398036012,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.008576579388833496,
+          "candidate_id": "factor_gold_term_half_risk",
+          "comparison_id": "factor_gold_term_half_risk::stress_vs_base",
+          "observed_mean_daily_log_advantage": -3.403404519378371e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.14472210867847846,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005742940820574542,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.014219364325440853,
+          "candidate_id": "factor_gold_term_equity_exit",
+          "comparison_id": "factor_gold_term_equity_exit::base_vs_base",
+          "observed_mean_daily_log_advantage": -5.6426048910479574e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.15036489361508582,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005966860857741501,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.021544587461990377,
+          "candidate_id": "factor_gold_term_equity_exit",
+          "comparison_id": "factor_gold_term_equity_exit::stress_vs_stress",
+          "observed_mean_daily_log_advantage": -8.5494394690438e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.15769011675163533,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0006257544315541085,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.026070316509961347,
+          "candidate_id": "factor_gold_term_equity_exit",
+          "comparison_id": "factor_gold_term_equity_exit::stress_vs_base",
+          "observed_mean_daily_log_advantage": -0.00010345363694429107,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.1622158457996063,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0006437136738079615,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": 0.020718253186631525,
+          "candidate_id": "macro_real_yield_factor_tilt",
+          "comparison_id": "macro_real_yield_factor_tilt::base_vs_base",
+          "observed_mean_daily_log_advantage": 8.221529042314098e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.11542727610301344,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0004580447464405295,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": 0.021649388369854066,
+          "candidate_id": "macro_real_yield_factor_tilt",
+          "comparison_id": "macro_real_yield_factor_tilt::stress_vs_stress",
+          "observed_mean_daily_log_advantage": 8.591027130894471e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.11449614091979089,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0004543497655547258,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": 0.017123659321883093,
+          "candidate_id": "macro_real_yield_factor_tilt",
+          "comparison_id": "macro_real_yield_factor_tilt::stress_vs_base",
+          "observed_mean_daily_log_advantage": 6.795102905509164e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.11902186996776189,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0004723090078085789,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": 0.005839381668992465,
+          "candidate_id": "macro_real_yield_tilt_curve_defense",
+          "comparison_id": "macro_real_yield_tilt_curve_defense::base_vs_base",
+          "observed_mean_daily_log_advantage": 2.317214948012883e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.1303061476206525,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005170878873835417,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": 0.0036910843681669677,
+          "candidate_id": "macro_real_yield_tilt_curve_defense",
+          "comparison_id": "macro_real_yield_tilt_curve_defense::stress_vs_stress",
+          "observed_mean_daily_log_advantage": 1.4647160191138761e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.13245444492147798,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005256128766725317,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.000834644679803998,
+          "candidate_id": "macro_real_yield_tilt_curve_defense",
+          "comparison_id": "macro_real_yield_tilt_curve_defense::stress_vs_base",
+          "observed_mean_daily_log_advantage": -3.312082062714278e-06,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.13698017396944898,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005435721189263848,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.01407188232326267,
+          "candidate_id": "four_factor_defense_momentum",
+          "comparison_id": "four_factor_defense_momentum::base_vs_base",
+          "observed_mean_daily_log_advantage": -5.584080287008996e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.15021741161290764,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005961008397337605,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.01788244377204971,
+          "candidate_id": "four_factor_defense_momentum",
+          "comparison_id": "four_factor_defense_momentum::stress_vs_stress",
+          "observed_mean_daily_log_advantage": -7.096207846051473e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.1540279730616947,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0006112221153241852,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.02240817282002068,
+          "candidate_id": "four_factor_defense_momentum",
+          "comparison_id": "four_factor_defense_momentum::stress_vs_base",
+          "observed_mean_daily_log_advantage": -8.892132071436778e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.15855370210966566,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0006291813575780383,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.05982935800181088,
+          "candidate_id": "four_factor_defense_diversified",
+          "comparison_id": "four_factor_defense_diversified::base_vs_base",
+          "observed_mean_daily_log_advantage": -0.0002374180873087733,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.19597488729145582,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0007776781241724438,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.06277464815956986,
+          "candidate_id": "four_factor_defense_diversified",
+          "comparison_id": "four_factor_defense_diversified::stress_vs_stress",
+          "observed_mean_daily_log_advantage": -0.00024910574666495974,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.1989201774492148,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0007893657835286302,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.06730037720754083,
+          "candidate_id": "four_factor_defense_diversified",
+          "comparison_id": "four_factor_defense_diversified::stress_vs_base",
+          "observed_mean_daily_log_advantage": -0.0002670649889188128,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.2034459064971858,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0008073250257824834,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.0008238655538370244,
+          "candidate_id": "four_factor_daily_target_control",
+          "comparison_id": "four_factor_daily_target_control::base_vs_base",
+          "observed_mean_daily_log_advantage": -3.2693077533215255e-06,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.136969394843482,
+          "simultaneous_lower_mean_daily_log_advantage": -0.000543529344616992,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -8.022365620669897e-05,
+          "candidate_id": "four_factor_daily_target_control",
+          "comparison_id": "four_factor_daily_target_control::stress_vs_stress",
+          "observed_mean_daily_log_advantage": -3.183478420900753e-07,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.13622575294585168,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005405783847057606,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.004605952704177664,
+          "candidate_id": "four_factor_daily_target_control",
+          "comparison_id": "four_factor_daily_target_control::stress_vs_base",
+          "observed_mean_daily_log_advantage": -1.8277590095943112e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.14075148199382262,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005585376269596136,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": 0.006179209988545913,
+          "candidate_id": "four_factor_growth_satellite50",
+          "comparison_id": "four_factor_growth_satellite50::base_vs_base",
+          "observed_mean_daily_log_advantage": 2.4520674557721878e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.12996631930109906,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005157393623059487,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": 0.006186556565850354,
+          "candidate_id": "four_factor_growth_satellite50",
+          "comparison_id": "four_factor_growth_satellite50::stress_vs_stress",
+          "observed_mean_daily_log_advantage": 2.454982764226331e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.1299589727237946,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005157102092214072,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": 0.0016608275178793572,
+          "candidate_id": "four_factor_growth_satellite50",
+          "comparison_id": "four_factor_growth_satellite50::stress_vs_base",
+          "observed_mean_daily_log_advantage": 6.590585388410148e-06,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.1344847017717656,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005336694514752604,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.022992728294488767,
+          "candidate_id": "conditional_price_factor_model_v2",
+          "comparison_id": "conditional_price_factor_model_v2::base_vs_base",
+          "observed_mean_daily_log_advantage": -9.124098529559034e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.15913825758413375,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0006315010221592609,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.029327663614528265,
+          "candidate_id": "conditional_price_factor_model_v2",
+          "comparison_id": "conditional_price_factor_model_v2::stress_vs_stress",
+          "observed_mean_daily_log_advantage": -0.00011637961751796931,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.16547319290417323,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0006566396543816398,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.03385339266249926,
+          "candidate_id": "conditional_price_factor_model_v2",
+          "comparison_id": "conditional_price_factor_model_v2::stress_vs_base",
+          "observed_mean_daily_log_advantage": -0.00013433885977182246,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.16999892195214422,
+          "simultaneous_lower_mean_daily_log_advantage": -0.000674598896635493,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.0013494192417023317,
+          "candidate_id": "conditional_macro_option_factor_model_v2",
+          "comparison_id": "conditional_macro_option_factor_model_v2::base_vs_base",
+          "observed_mean_daily_log_advantage": -5.354838260723538e-06,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.1374949485313473,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005456148751243941,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.009166969701022647,
+          "candidate_id": "conditional_macro_option_factor_model_v2",
+          "comparison_id": "conditional_macro_option_factor_model_v2::stress_vs_stress",
+          "observed_mean_daily_log_advantage": -3.637686389294701e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.14531249899066762,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005766369007566176,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.013692698748993606,
+          "candidate_id": "conditional_macro_option_factor_model_v2",
+          "comparison_id": "conditional_macro_option_factor_model_v2::stress_vs_base",
+          "observed_mean_daily_log_advantage": -5.4336106146800025e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.14983822803863858,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005945961430104705,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": 0.02033787229920745,
+          "candidate_id": "four_factor_total_momentum_tilt",
+          "comparison_id": "four_factor_total_momentum_tilt::base_vs_base",
+          "observed_mean_daily_log_advantage": 8.070584245717242e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.11580765699043752,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0004595541944064981,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": 0.01833306268372647,
+          "candidate_id": "four_factor_total_momentum_tilt",
+          "comparison_id": "four_factor_total_momentum_tilt::stress_vs_stress",
+          "observed_mean_daily_log_advantage": 7.27502487449463e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.1178124666059185,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0004675097881187242,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": 0.01380733363575549,
+          "candidate_id": "four_factor_total_momentum_tilt",
+          "comparison_id": "four_factor_total_momentum_tilt::stress_vs_base",
+          "observed_mean_daily_log_advantage": 5.479100649109321e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.12233819565388948,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0004854690303725773,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": 0.018226121851857086,
+          "candidate_id": "four_factor_residual_momentum_tilt",
+          "comparison_id": "four_factor_residual_momentum_tilt::base_vs_base",
+          "observed_mean_daily_log_advantage": 7.232588036451224e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.1179194074377879,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0004679341564991583,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": 0.015086308376071505,
+          "candidate_id": "four_factor_residual_momentum_tilt",
+          "comparison_id": "four_factor_residual_momentum_tilt::stress_vs_stress",
+          "observed_mean_daily_log_advantage": 5.986630307964883e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.12105922091357346,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0004803937337840217,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": 0.010560579328100526,
+          "candidate_id": "four_factor_residual_momentum_tilt",
+          "comparison_id": "four_factor_residual_momentum_tilt::stress_vs_base",
+          "observed_mean_daily_log_advantage": 4.190706082579574e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.12558494996154443,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0004983529760378747,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.0008376596684697012,
+          "candidate_id": "four_factor_gold_joint_trend_guard",
+          "comparison_id": "four_factor_gold_joint_trend_guard::base_vs_base",
+          "observed_mean_daily_log_advantage": -3.324046303451195e-06,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.13698318895811468,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005435840831671217,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.006514190572687879,
+          "candidate_id": "four_factor_gold_joint_trend_guard",
+          "comparison_id": "four_factor_gold_joint_trend_guard::stress_vs_stress",
+          "observed_mean_daily_log_advantage": -2.5849962590031266e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.14265971986233283,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005661099994537017,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.011039919620658846,
+          "candidate_id": "four_factor_gold_joint_trend_guard",
+          "comparison_id": "four_factor_gold_joint_trend_guard::stress_vs_base",
+          "observed_mean_daily_log_advantage": -4.380920484388431e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.1471854489103038,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005840692417075548,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.025506816755050177,
+          "candidate_id": "four_factor_gold_component_trend_guard",
+          "comparison_id": "four_factor_gold_component_trend_guard::base_vs_base",
+          "observed_mean_daily_log_advantage": -0.00010121752680575468,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.16165234604469514,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0006414775636694252,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.050986647108840454,
+          "candidate_id": "four_factor_gold_component_trend_guard",
+          "comparison_id": "four_factor_gold_component_trend_guard::stress_vs_stress",
+          "observed_mean_daily_log_advantage": -0.00020232796471762084,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.18713217639848542,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0007425880015812914,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": -0.05551237615681143,
+          "candidate_id": "four_factor_gold_component_trend_guard",
+          "comparison_id": "four_factor_gold_component_trend_guard::stress_vs_base",
+          "observed_mean_daily_log_advantage": -0.00022028720697147392,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.1916579054464564,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0007605472438351444,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": 0.012764939235521367,
+          "candidate_id": "four_factor_pdp_momentum_implementation",
+          "comparison_id": "four_factor_pdp_momentum_implementation::base_vs_base",
+          "observed_mean_daily_log_advantage": 5.065452077587844e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.12338059005412359,
+          "simultaneous_lower_mean_daily_log_advantage": -0.000489605516087792,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": 0.011652548710483936,
+          "candidate_id": "four_factor_pdp_momentum_implementation",
+          "comparison_id": "four_factor_pdp_momentum_implementation::stress_vs_stress",
+          "observed_mean_daily_log_advantage": 4.624027266065054e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.12449298057916103,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0004940197642030199,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": 0.007126819662512947,
+          "candidate_id": "four_factor_pdp_momentum_implementation",
+          "comparison_id": "four_factor_pdp_momentum_implementation::stress_vs_base",
+          "observed_mean_daily_log_advantage": 2.8281030406797406e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.12901870962713202,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005119790064568731,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": 0.014377965718764698,
+          "candidate_id": "four_factor_dual_momentum_implementation",
+          "comparison_id": "four_factor_dual_momentum_implementation::base_vs_base",
+          "observed_mean_daily_log_advantage": 5.705541951890753e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.12176756357088027,
+          "simultaneous_lower_mean_daily_log_advantage": -0.000483204617344763,
+          "spy_scenario": "base",
+          "strategy_scenario": "base",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": 0.01362351261204291,
+          "candidate_id": "four_factor_dual_momentum_implementation",
+          "comparison_id": "four_factor_dual_momentum_implementation::stress_vs_stress",
+          "observed_mean_daily_log_advantage": 5.4061557984297265e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.12252201667760206,
+          "simultaneous_lower_mean_daily_log_advantage": -0.00048619847887937324,
+          "spy_scenario": "stress",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        },
+        {
+          "annualized_252_log_growth_advantage": 0.009097783564071938,
+          "candidate_id": "four_factor_dual_momentum_implementation",
+          "comparison_id": "four_factor_dual_momentum_implementation::stress_vs_base",
+          "observed_mean_daily_log_advantage": 3.61023157304442e-05,
+          "simultaneous_lower_annualized_252_log_growth_advantage": -0.12704774572557304,
+          "simultaneous_lower_mean_daily_log_advantage": -0.0005041577211332264,
+          "spy_scenario": "base",
+          "strategy_scenario": "stress",
+          "strictly_positive_simultaneous_lower_bound": false
+        }
+      ],
+      "comparisons": 66,
+      "monte_carlo_p_value_resolution": 0.00024993751562109475,
+      "positive_part_maximum_daily_log_advantage": 8.591027130894471e-05,
+      "scope_limited_omnibus_p_value": 0.5881029742564359,
+      "seed": 20261012,
+      "sessions": 1254
+    }
+  },
+  "audit_id": "recurring_selection_validation_20261011",
+  "auditor_sha256": "62dc62b44f804adb8b7a1def7b0553edd032ac92dff196334fa36af779f6f46f",
+  "bonferroni_omnibus_p_value_for_scoped_family": 1.0,
+  "created_at": "2026-10-10T20:26:59.202476+00:00",
+  "earlier_configurations_excluded_from_joint_inference": 84,
+  "event_chain_sha256": "0401351ba12b2eee37b5e64d44c1690b7fd4fd35c9987de6d1daa0e6cc81bc89",
+  "full_search_selection_adjusted_alpha_verified": false,
+  "included_candidate_count": 22,
+  "included_comparisons_per_horizon": 66,
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "ledger_unchanged": true,
+  "new_strategy_evaluations": 0,
+  "order_authority": false,
+  "original_qualification_policy_unchanged": true,
+  "overlapping_horizons_assumed_independent": false,
+  "registration": {
+    "path": "data/selection-validation-20261011/registration.json",
+    "sha256": "19f853494cff5fc142a267f8c03ad0bd28db7ef76358d3f84151a2c097a1d834"
+  },
+  "schema_version": 1,
+  "scope_limitations": "Rules and outcomes were already exposed before this audit was proposed. The22review subset is not the entire106configuration search;84earlier trials,other unrecorded choices,regime nonstationarity and publication/data revisions are not corrected. Do not label this complete selection-adjusted alpha or an independent holdout.",
+  "source_bundles": {
+    "conditional_macro_option_factor_model_v2": {
+      "path": "reports/program-evaluations/conditional_macro_option_factor_model_v2/bundle.json",
+      "sha256": "5abe46749ba4d6e4d61dcb7d6b6767f9a485131d73e0f807e49dc8c2271b6cd1"
+    },
+    "conditional_price_factor_model_v2": {
+      "path": "reports/program-evaluations/conditional_price_factor_model_v2/bundle.json",
+      "sha256": "3bac06631547aa1965ac16fd8116d1266d9c4b397d2d6e974e47849d3573ed68"
+    },
+    "factor_gold_term_equity_exit": {
+      "path": "reports/term-risk-20261010/factor_gold_term_equity_exit/bundle.json",
+      "sha256": "4b4c4ca7b624870e5eb4a6c2aa50d14c8490140283dc82947502f6a205a4e1e4"
+    },
+    "factor_gold_term_half_risk": {
+      "path": "reports/term-risk-20261010/factor_gold_term_half_risk/bundle.json",
+      "sha256": "00c59522ca5a576d36d45373c69ccd928aa59d833113ebbb7acae65de017b125"
+    },
+    "four_factor_causal_mean_variance": {
+      "path": "reports/adaptive-factors-20261010/four_factor_causal_mean_variance/bundle.json",
+      "sha256": "ebfec1f0bb39299f8b2f7084aa15785346fe9e6bf47a5bc43f6eb0a71b07a027"
+    },
+    "four_factor_daily_target_control": {
+      "path": "reports/program-evaluations/four_factor_daily_target_control/bundle.json",
+      "sha256": "039c272055068c827b6a54b31ecc7547ffad4a81b5062f934f5575657c00c510"
+    },
+    "four_factor_defense_diversified": {
+      "path": "reports/program-evaluations/four_factor_defense_diversified/bundle.json",
+      "sha256": "d1002e10e9462a58e68f88d031ee651ebbe1197d2577c73ffe84e4b0417ee6b3"
+    },
+    "four_factor_defense_momentum": {
+      "path": "reports/program-evaluations/four_factor_defense_momentum/bundle.json",
+      "sha256": "ea6e7cc23a40bb79ea766fb5f8e559d85fc45efc2fa1de619bf63cc8c606934a"
+    },
+    "four_factor_dual_momentum_implementation": {
+      "path": "reports/momentum-implementation-20261011/four_factor_dual_momentum_implementation/bundle.json",
+      "sha256": "987f9da4721224eca248e2704ee8492ea37664297de5d5f50a469004b733e2cf"
+    },
+    "four_factor_gold_component_trend_guard": {
+      "path": "reports/trend-factor-guard-20261011-accounting-replay/four_factor_gold_component_trend_guard/bundle.json",
+      "sha256": "426a24119b2bee29e72450e5513728cf26b2aea4f2eba65e2f1b55cd6900765c"
+    },
+    "four_factor_gold_daily_vol12": {
+      "path": "reports/factor-gold-risk-20261010/four_factor_gold_daily_vol12/bundle.json",
+      "sha256": "350ee2fa8480ea8a6545a0b23f76c61a4fc4d0f558ea6240222431b852012d60"
+    },
+    "four_factor_gold_joint_trend_guard": {
+      "path": "reports/trend-factor-guard-20261011/four_factor_gold_joint_trend_guard/bundle.json",
+      "sha256": "d4dfe417a77ddb4be1d9823e44cd2f7f12fd944d2ca5647163324b72656541e5"
+    },
+    "four_factor_gold_risk_balance": {
+      "path": "reports/factor-gold-risk-20261010/four_factor_gold_risk_balance/bundle.json",
+      "sha256": "5c2383e88db78594d13562fdf1daf05a1e8cce3ef733caafbf7d4237c38f7fc2"
+    },
+    "four_factor_growth_satellite50": {
+      "path": "reports/program-evaluations/four_factor_growth_satellite50/bundle.json",
+      "sha256": "3fb191cd46c478793e2716924352ac2f364bed410e7cbdf2bf35baa39755517c"
+    },
+    "four_factor_pdp_momentum_implementation": {
+      "path": "reports/momentum-implementation-20261011/four_factor_pdp_momentum_implementation/bundle.json",
+      "sha256": "16176261f753d8a8140f1df508de6447f8751e16241867c44525d6a3cfdd8682"
+    },
+    "four_factor_residual_momentum_tilt": {
+      "path": "reports/factor-momentum-comparison-20261011/four_factor_residual_momentum_tilt/bundle.json",
+      "sha256": "f652a41bfad4eed2524dd94e1e979c84955cc065721c321ebf753c7583f1e010"
+    },
+    "four_factor_static70_gold30": {
+      "path": "reports/adaptive-factors-20261010/four_factor_static70_gold30/bundle.json",
+      "sha256": "99bc346732b72572c45e5638a2b58823c97d8df9c12ddf89f34517015bc089ee"
+    },
+    "four_factor_total_momentum_tilt": {
+      "path": "reports/factor-momentum-comparison-20261011/four_factor_total_momentum_tilt/bundle.json",
+      "sha256": "a87a155e7ee0fee11defbb0dc769789cb74d8c01c52ba953551776f59dfdc0fe"
+    },
+    "macro_real_yield_factor_tilt": {
+      "path": "reports/macro-tilt-20261010/macro_real_yield_factor_tilt/bundle.json",
+      "sha256": "129e67b59a3e0ea4cefb2027e284ac1e77cb4296dcbd4e1bb18ef49b00fb85e1"
+    },
+    "macro_real_yield_tilt_curve_defense": {
+      "path": "reports/macro-tilt-20261010/macro_real_yield_tilt_curve_defense/bundle.json",
+      "sha256": "e047930dd055e131acd80ec69fd86adb2a707472dba186584c240c4e6a97facc"
+    },
+    "quality_implementation_gold_daily_vol12": {
+      "path": "reports/factor-replication-20261010/quality_implementation_gold_daily_vol12/bundle.json",
+      "sha256": "f9ae0609a68ec4ed5ce2b0ae61319b780277fa84589442c17df8b9ea0213f6a1"
+    },
+    "quality_implementation_gold_monthly": {
+      "path": "reports/factor-replication-20261010/quality_implementation_gold_monthly/bundle.json",
+      "sha256": "b74dc833618457efba46f355ed68615337e0fa272cd4514224c71d5eae5d681e"
+    }
+  },
+  "total_disclosed_configurations": 106
+}

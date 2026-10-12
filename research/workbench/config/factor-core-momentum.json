@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "study_id": "fixed_factor_momentum_core_transfer_20261011",
+  "data_scope": "factor_etf_portfolio",
+  "data_start": "2015-08-10",
+  "as_of": "2026-10-05",
+  "prior_evaluated_configurations": 146,
+  "new_configurations": 2,
+  "new_economic_factor_definitions": 0,
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "factor_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "source_id": "semiconductor_leadership126_observed_band025",
+  "ranked_factor_shares": [0.35, 0.30, 0.20, 0.15],
+  "actual_weight_trade_band": 0.025,
+  "cash_reserve": 0.02,
+  "candidates": [
+    {"id": "semiconductor_leadership_core_total_momentum", "score": "momentum"},
+    {"id": "semiconductor_leadership_core_residual_momentum", "score": "residual"}
+  ],
+  "source_registration": {"path": "evidence/leadership_20261011_registration.json", "sha256": "d82ce0233141d10a20f62d041edbbb1f3a596aa41268f32fe3921eef61415be1"},
+  "source_policy": {"path": "config/sector-leadership-rotation.json", "sha256": "c51dee083eec3c0825dc09a43c1153b5286e8ed4477c7fe4ee8f97c15817e59a"},
+  "source_implementation": {"path": "src/us_quant/sector_leadership_rotation.py", "sha256": "125dd6bf4d405cb6a4fb7b8d359d5fa6d6724046329a9a8bac82651da97574af"},
+  "prior_momentum_policy": {"path": "config/factor-momentum-comparison.json", "sha256": "457c36bbaeb125e84e275188606f08d87e2dc86240ecc0f6de27c1fe06875152"},
+  "prior_momentum_implementation": {"path": "src/us_quant/factor_momentum_comparison.py", "sha256": "0f454df2d7f0bff99e47d57600a4730d6487c95624c6e6929b0e49975a487e82"},
+  "prior_score_helper": {"path": "src/us_quant/factor_research.py", "sha256": "9b4e09d2cf9b70d7664764f37ead01ff22467f3fe7db130faab461114e711103"},
+  "methodology": {
+    "hypothesis": "Risk-only within-core allocation did not improve absolute outperformance. Test the previously specified total and residual factor-momentum signals instead of fitting new portfolio shares or deleting diversifying factors. The source/windows have already been exposed;this is a new bounded construction,not independent validation.",
+    "scores": "Reuse unchanged factor_scores and exact prior score_parameters: total momentum compounds the last126daily returns excluding the latest21; residual momentum fits intercept and SPYexcess-return beta on the last252actual daily returns,then sums the same126minus21 residual window divided by its sample standard deviation. The old helper explicitly assigns zero when residual deviation is at most1e-10;rank-deficient regression or missing/nonfinite inputs fail,not a default valid score.",
+    "shares": "At each original122monthly source decision,rank all four style funds by the chosen score,lexical ticker ties,then allocate the existing positive style-core budget with unchanged35/30/20/15%shares. Negative orzero scores do not delete a factor. Do not use the helper's trend,absolute-eligibility orcontinuity outputs as new gates.",
+    "controlled_targets": "Only MTUM/VLUE/QUAL/USMV within-core target shares change. Preserve their sum and all originalSOXX/SPY/GLD/BIL/other targets exactly;keep original126leadership,nine-sector200majority,gradedgold63/126/252rules,source riskbudgets/122dates and98%funding. This doesnot reconstruct the old aggregate factor/gold study orrecalculate equity/gold risk. Residual scoring does not hedge SPY beta in the actual long-only funds.",
+    "execution": "Use the unmodified parent execution path with its original126candidate handle and2.5ppactualclosingholding band. The handle selects the shared execution law,not a claim to reproduce old inputs/positions. Actual holdings and band decisions are computed separately for every independentUSD10000window/scenario afterpublication;5/20bp,USD1/order and1/2session delayed requests remain,with forcedinitialdeployment andno overwrite.",
+    "source": "Reuse original audited12fund prices and frozen risk-free series. Preserve the whole parent frozen dependency graph,actual funds and bothXLKsource versions. Call only the old pure score helper,not an old data loader whose full implementation fingerprint has drifted;no legacyhash rewrite or assertedoldstrategyreplay. No newquote/currentholdings/synthetichistory/leverage/economicdefinition.",
+    "selection": "Exactly two fixed prior score implementations after146exposed-history configurations. No regression/momentum/skip window,rankshare,corebudget,sectorbudget,band,cost orsubset grid andno post-result tuning. Priorselectiondiagnostics do notcorrect these trials orallsearch. Net excessSharpe>1,CAGR>same-costSPY,stressCAGR>basecostSPY andDD<=15%must pass jointly across10y/5ybase/stress. OriginalW42plans/IJRPKWquota/forwardmodels remain;historicalqualification needs independent actualfutureevidence.",
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

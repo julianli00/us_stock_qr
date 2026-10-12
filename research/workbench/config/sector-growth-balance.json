@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "study_id": "sector_growth_balance_20261011",
+  "data_scope": "factor_etf_portfolio",
+  "data_start": "2015-08-10",
+  "as_of": "2026-10-05",
+  "prior_evaluated_configurations": 112,
+  "new_configurations": 2,
+  "new_economic_factor_definitions": 0,
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "factor_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "growth_share_of_equity": 0.50,
+  "volatility_sessions": 63,
+  "equity_share_min": 0.30,
+  "equity_share_max": 0.70,
+  "cash_reserve": 0.02,
+  "funds": [
+    {
+      "symbol": "XLK",
+      "role": "broad_information_technology_sector",
+      "issuer_url": "https://www.ssga.com/us/en/individual/etfs/state-street-technology-select-sector-spdr-etf-xlk"
+    },
+    {
+      "symbol": "SOXX",
+      "role": "semiconductor_industry",
+      "issuer_url": "https://www.ishares.com/us/products/239705/ishares-phlx-semiconductor-etf"
+    }
+  ],
+  "candidates": [
+    {"id": "four_factor_technology_sector50", "sector_symbol": "XLK", "growth_share_of_equity": 0.50},
+    {"id": "four_factor_semiconductor_sector50", "sector_symbol": "SOXX", "growth_share_of_equity": 0.50}
+  ],
+  "comparison": {
+    "candidate_id": "four_factor_growth_gold_monthly_control",
+    "registration": "evidence/growth_portfolio_protection_20261011_registration.json",
+    "results": "evidence/growth_portfolio_protection_20261011_results.json",
+    "same_budget_ablation": "Compare the sector sleeve against actual QQQ with each candidate's identical aggregate equity/gold budgets, decision dates, funding and costs."
+  },
+  "methodology": {
+    "hypothesis": "Information technology and semiconductor equity holdings represent different industrial concentration from Nasdaq-100 growth beta. Test whether their actual fund returns add net value inside the same four-factor/gold architecture, rather than infer alpha from a technology or AI narrative.",
+    "allocation": "Keep half of the equity sleeve equally divided across the original four registered factor families. Allocate its other half to the candidate's single actual sector ETF. Reuse the frozen composed_monthly_target helper through an explicit sector-to-growth-column adapter:63-session marginal sleeve volatility,30%-70%equity bounds,monthly decisions and98%target investment. No window,sector-share,threshold or leverage grid.",
+    "risk": "Sector and industry concentration can increase common market beta and tail risk. Positive factor weights do not establish independent risk sources. The original strict Sharpe,SPY and15%drawdown goals must all pass in both horizons and base/stress.",
+    "source": "Admission requires the actual issuer mandate and fund identity,primary non-multiplied equity-index implementation evidence,complete positive-volume post-inception quotes and explained corporate actions. Preserve every failed request;do not bypass audience,API or access gates. Current fund documents are not a full historical methodology archive.",
+    "execution": "Retain freshUSD10,000accounts,2%target cash,USD1per order,5bpnext-openbase and20bpextra-sessionstress. Require the registered funded-accountingv2 and independentbt paths. No leveraged products,shorting or synthetic risk-free carry.",
+    "selection": "Exactly two hypotheses after112exposed historical configurations. Register source/code/specifications before outcomes. A historical pass is not independent validation;the frozen22review joint-selection diagnostic excludes these new candidates.",
+    "catalog": "Sector satellites are not new economic factor definitions and do not consume or bypass the weekly discovery quota. IJR/PKWdefinitions and six-family candidates remain queued until the real2026-10-17T09:00+08:00cycle.",
+    "prospective": "Current prospective archives do not contain XLK,SOXX or QQQ. No prospective performance or new live/model account is claimed for this study.",
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

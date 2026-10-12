@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "study_id": "semiconductor_fixed_volatility_transfer_20261011",
+  "data_scope": "factor_etf_portfolio",
+  "data_start": "2015-08-10",
+  "as_of": "2026-10-05",
+  "prior_evaluated_configurations": 128,
+  "new_configurations": 2,
+  "new_economic_factor_definitions": 0,
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "factor_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "volatility_sessions": 63,
+  "target_volatility": 0.12,
+  "target_change_band": 0.05,
+  "cash_reserve": 0.02,
+  "candidates": [
+    {"id": "semiconductor_fixed_vol12", "source_baseline": "plain_sector"},
+    {"id": "semiconductor_monthly_confirmation_fixed_vol12", "source_baseline": "monthly_joint_confirmation"}
+  ],
+  "source_registration": {
+    "path": "evidence/joint_risk_confirmation_20261011_registration.json",
+    "sha256": "22704f81ae851c21da8662dcc7cb1ae98b61df9b89fdabaa4db59c4b6f04cd52"
+  },
+  "joint_source_policy": {
+    "path": "config/joint-risk-confirmation.json",
+    "sha256": "563b58473fc3f653c5d9fa7246ba01ffe5365d50a3520e499f01419ece9c34b3"
+  },
+  "original_volatility_policy": {
+    "path": "config/growth-factor-satellite.json",
+    "sha256": "7f53dffeafdea3211980a7c6704c450f6142ff99fbf1332772f6e5969bd9b837"
+  },
+  "original_volatility_implementation": {
+    "path": "src/us_quant/growth_factor_satellite.py",
+    "sha256": "a83f647efa43becd7538c421ff3ba512f6951f6f2f90e8a447b53732e8b18f90"
+  },
+  "original_projection_helper": {
+    "path": "src/us_quant/multifactor_stability.py",
+    "sha256": "05423115c9171a20f0c870e2556b4f25f787df737da4b1f87da5f5fffe3ae7b9"
+  },
+  "methodology": {
+    "hypothesis": "Transfer the alreadyfixed causalvolatilitytarget law rather thanfit a newdrawdownfloor/volatilitylevel. Compare exactly the originalfour-style/SOXX/gold monthlysource andthe alreadyreviewed monthlyUSD-optionANDsource. The latter's priorreturn/Sharpepasses motivated this exposed-historyadaptation,not anindependentholdout.",
+    "source": "Keep original monthly63riskbalance,half-equitySOXX,equal fourstyleremainder,30–70%equity/98%investment andthe ANDsource's existingratio1/USD>0/halfscale/monthlyregime. No newquotes/macros/factors/sectorweight or source-riskthreshold.",
+    "projection": "Reuse unchanged cap_volatility on the original complete12asset63observed dailyreturn samplecovariance times252,includingBIL. At eachknownclose project the latestmonthlysource down toatmost12%predictedvolatility,freednon-BILweighttoactualBIL. Preserve existingBIL and never upscale beyondthemonthly source,borrow ortrade theVIXindices.",
+    "events": "Reuse priorgrowth-factor target-change hysteresis:emit initialknownallocation,oncompleted-monthsource update,or whenmaxdesired-minus-last-issuedtargetdifference plus1e-12 isatleast5percentagepoints. This uses lastissuedtarget,not actualholdingweights;drift,gaps,pendingfills andin-bandchanges may leave actualrealizedrisk above12%. Retain datedtargets inoriginal1/2sessionqueues,nevercancel/overwrite earlierrequests.",
+    "execution": "OriginalUSD10000fresh10y/5ywindows,USD1/order,5bpnext-openbase/20bpextrasessionstress,2512/1254actualreturns. Signals depend on knownprices/sourceonly,not accountwealth,so costs/delays change realizedaccounts butnot the decisionlaw. Seed eachwindow fromlastknownissuedtarget using originalseedhelper.",
+    "limitations": "A trailingvolatilityprediction isnot a15%drawdown guarantee or incrementalalpha;correlations/tails canchange andexposure/costs canreduceCAGR. Keep bothoutcomes andallfailures;do not tune12%,63days,5ppband or assets on results. Originalselectiondiagnostics do notcoverthesenewtrials/unknownsearch.",
+    "authority": "No neweconomicdefinition,changes toW42fourplans/IJRPKWquota/frozenforwardmodels,earlyfuturecycle ortrading. Historicalqualification would still require actual independentfuture evidence.",
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

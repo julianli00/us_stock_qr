@@ -1,0 +1,56 @@
+{
+  "actual_registration_gate_checks": [
+    {
+      "blocked": true,
+      "candidate_registered": false,
+      "completed_at": "2026-10-11T08:24:17.324175+00:00",
+      "mode": "dedicated_register",
+      "reason": "Candidate registration is not eligible before 2026-10-17T09:00:00+08:00.",
+      "receipt_created": false,
+      "started_at": "2026-10-11T08:24:17.151346+00:00"
+    },
+    {
+      "blocked": true,
+      "candidate_registered": false,
+      "completed_at": "2026-10-11T08:24:18.656994+00:00",
+      "mode": "generic_register",
+      "reason": "Claims registration is not eligible before 2026-10-17T09:00:00+08:00.",
+      "receipt_created": false,
+      "started_at": "2026-10-11T08:24:17.324219+00:00"
+    },
+    {
+      "blocked": true,
+      "candidate_registered": false,
+      "completed_at": "2026-10-11T08:24:18.824285+00:00",
+      "mode": "recover_only",
+      "reason": "Recovery cannot register an unknown candidate.",
+      "receipt_created": false,
+      "started_at": "2026-10-11T08:24:18.657018+00:00"
+    }
+  ],
+  "candidate_id": "semiconductor_dollar_claims_confirmation",
+  "candidate_returns_or_metrics_computed": false,
+  "eligible_not_before": "2026-10-17T09:00:00+08:00",
+  "four_registered_equity_factor_families_retained": true,
+  "investment_objective_verified": false,
+  "known_source_gaps_have_ante_frozen_standby": true,
+  "new_economic_factor_definitions": 0,
+  "new_prospective_model_observations": 0,
+  "new_registered_candidates": 0,
+  "new_strategy_evaluations": 0,
+  "official_context_and_three_smoothing_probes": "data/claims-confirmation-context-20261011/context-verification.json",
+  "official_context_sha256": "a0c38e2fe7b1fb8d05bb7b95a5b8a79947a2dbbd720b358a58babd196ce05b86",
+  "old_three_prepared_candidates_and_IJR_PKW_queue_replaced": false,
+  "order_authority": false,
+  "policy": "config/claims-factor-guard.json",
+  "policy_sha256": "6617fe0fa2d29ef67b3dce5e2ff541361cf1355a53454330ebb483ccb4161a2e",
+  "prepared_spec_sha256": "9a221926d41f70b9bdefc08a323bcd8e35a16d4c963a302be5cfaf0de94b49ae",
+  "prepared_unregistered_strategy_candidates_after_checkpoint": 4,
+  "recorded_at": "2026-10-11T08:26:18.382060+00:00",
+  "schema_version": 1,
+  "source_age_limit_or_evaluation_windows_relaxed": false,
+  "source_window_failure_v1": "reports/claims-confirmation-plan-20261011/source-window-failure-v1.json",
+  "source_window_failure_v1_sha256": "c0762086b72a50815096c0562681d4c3ee3809c03cc5ede99a5704aea20b457b",
+  "state": "prepared_unregistered_fixed_claims_confirmation",
+  "target_verification": "evidence/claims_guard_20261011_target_verification.json"
+}

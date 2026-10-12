@@ -1,0 +1,258 @@
+{
+  "all_prior_reviews_and_factor_definitions_preserved": true,
+  "candidates": [
+    {
+      "registration": {
+        "candidate_id": "four_factor_growth_gold_monthly_control",
+        "data_scope": "factor_etf_portfolio",
+        "families": [
+          "earnings_quality",
+          "low_volatility",
+          "momentum",
+          "value"
+        ],
+        "order_authority": false,
+        "readiness_sha256": "5c8bd2019f4b4ecc1f11eac1c8e02ede8f597f78f6671cdf28dfbe6a71d14efe",
+        "registered_at": "2026-10-10T23:11:13.771329+00:00",
+        "spec_sha256": "fecee48cac75555f40aae8f96ea4d8c6ab06370a1fccad2d95ab17dce881b9b8"
+      },
+      "spec": {
+        "asset_leverage": {
+          "BIL": 1.0,
+          "GLD": 1.0,
+          "IEF": 1.0,
+          "MTUM": 1.0,
+          "QQQ": 1.0,
+          "QUAL": 1.0,
+          "SPY": 1.0,
+          "TLT": 1.0,
+          "USMV": 1.0,
+          "VLUE": 1.0
+        },
+        "configuration": {
+          "id": "four_factor_growth_gold_monthly_control",
+          "portfolio_insurance": false
+        },
+        "data_scope": "factor_etf_portfolio",
+        "evaluation_as_of": "2026-10-05",
+        "factor_ids": [
+          "price_momentum",
+          "value_exposure",
+          "quality_exposure",
+          "low_volatility_exposure"
+        ],
+        "frozen_files": {
+          "config/growth-factor-satellite.json": "7f53dffeafdea3211980a7c6704c450f6142ff99fbf1332772f6e5969bd9b837",
+          "config/growth-portfolio-protection.json": "c24ee733063920024de9e55750575ee21fe9a3fe949d477ca2fa3b9a81297ecd",
+          "src/us_quant/cash_funded_accounting_v2.py": "e7efd7a9a87178d556320693bdfd389eef6a21cae70c36dd77c4325b6607d2af",
+          "src/us_quant/growth_factor_satellite.py": "a83f647efa43becd7538c421ff3ba512f6951f6f2f90e8a447b53732e8b18f90",
+          "src/us_quant/growth_portfolio_protection.py": "d06d65c8dd4bcbe421e0a71c4f0f4c8a90fe785ac85c2c86d11747f906ae8614",
+          "src/us_quant/multifactor_stability.py": "05423115c9171a20f0c870e2556b4f25f787df737da4b1f87da5f5fffe3ae7b9"
+        },
+        "history_status": "exposed_history_not_independent_holdout",
+        "id": "four_factor_growth_gold_monthly_control",
+        "leveraged_products_allowed": false,
+        "market": {
+          "close": {
+            "path": "data/growth-factor-satellite-20261011/close.csv",
+            "sha256": "274b9ae54ae2809b63ca280209f35a65046b913ea5f4c1de74b47e5de1a19e23"
+          },
+          "open": {
+            "path": "data/growth-factor-satellite-20261011/open.csv",
+            "sha256": "ffb261dd3a7220675e484df51f85bb9bd3fa6a3a277c50affc7677c323e28daa"
+          },
+          "raw_close": {
+            "path": "data/growth-factor-satellite-20261011/raw_close.csv",
+            "sha256": "4c3e3d4a088844f4cb99f21fc536d04d0d841da654d25f1ad44485639f49edb8"
+          },
+          "risk_free": {
+            "path": "data/growth-factor-satellite-20261011/risk_free.csv",
+            "sha256": "3b59869f597ac9d2573ffca1616938da4c2df0da24bd38799ce3e39b1f0509cc"
+          },
+          "volume": {
+            "path": "data/growth-factor-satellite-20261011/volume.csv",
+            "sha256": "8a392c7da1bbc0230038b4c48a232923c86a1e43fd2fa30fca7eb2a352cf8343"
+          }
+        },
+        "order_authority": false
+      }
+    },
+    {
+      "registration": {
+        "candidate_id": "four_factor_growth_gold_ratchet_protection",
+        "data_scope": "factor_etf_portfolio",
+        "families": [
+          "earnings_quality",
+          "low_volatility",
+          "momentum",
+          "value"
+        ],
+        "order_authority": false,
+        "readiness_sha256": "5c8bd2019f4b4ecc1f11eac1c8e02ede8f597f78f6671cdf28dfbe6a71d14efe",
+        "registered_at": "2026-10-10T23:11:15.837333+00:00",
+        "spec_sha256": "39462c0abe48ccb151ac98706335fb215e65fc51e64c000761044919fbbde7c0"
+      },
+      "spec": {
+        "asset_leverage": {
+          "BIL": 1.0,
+          "GLD": 1.0,
+          "IEF": 1.0,
+          "MTUM": 1.0,
+          "QQQ": 1.0,
+          "QUAL": 1.0,
+          "SPY": 1.0,
+          "TLT": 1.0,
+          "USMV": 1.0,
+          "VLUE": 1.0
+        },
+        "configuration": {
+          "id": "four_factor_growth_gold_ratchet_protection",
+          "portfolio_insurance": true
+        },
+        "data_scope": "factor_etf_portfolio",
+        "evaluation_as_of": "2026-10-05",
+        "factor_ids": [
+          "price_momentum",
+          "value_exposure",
+          "quality_exposure",
+          "low_volatility_exposure"
+        ],
+        "frozen_files": {
+          "config/growth-factor-satellite.json": "7f53dffeafdea3211980a7c6704c450f6142ff99fbf1332772f6e5969bd9b837",
+          "config/growth-portfolio-protection.json": "c24ee733063920024de9e55750575ee21fe9a3fe949d477ca2fa3b9a81297ecd",
+          "src/us_quant/cash_funded_accounting_v2.py": "e7efd7a9a87178d556320693bdfd389eef6a21cae70c36dd77c4325b6607d2af",
+          "src/us_quant/growth_factor_satellite.py": "a83f647efa43becd7538c421ff3ba512f6951f6f2f90e8a447b53732e8b18f90",
+          "src/us_quant/growth_portfolio_protection.py": "d06d65c8dd4bcbe421e0a71c4f0f4c8a90fe785ac85c2c86d11747f906ae8614",
+          "src/us_quant/multifactor_stability.py": "05423115c9171a20f0c870e2556b4f25f787df737da4b1f87da5f5fffe3ae7b9"
+        },
+        "history_status": "exposed_history_not_independent_holdout",
+        "id": "four_factor_growth_gold_ratchet_protection",
+        "leveraged_products_allowed": false,
+        "market": {
+          "close": {
+            "path": "data/growth-factor-satellite-20261011/close.csv",
+            "sha256": "274b9ae54ae2809b63ca280209f35a65046b913ea5f4c1de74b47e5de1a19e23"
+          },
+          "open": {
+            "path": "data/growth-factor-satellite-20261011/open.csv",
+            "sha256": "ffb261dd3a7220675e484df51f85bb9bd3fa6a3a277c50affc7677c323e28daa"
+          },
+          "raw_close": {
+            "path": "data/growth-factor-satellite-20261011/raw_close.csv",
+            "sha256": "4c3e3d4a088844f4cb99f21fc536d04d0d841da654d25f1ad44485639f49edb8"
+          },
+          "risk_free": {
+            "path": "data/growth-factor-satellite-20261011/risk_free.csv",
+            "sha256": "3b59869f597ac9d2573ffca1616938da4c2df0da24bd38799ce3e39b1f0509cc"
+          },
+          "volume": {
+            "path": "data/growth-factor-satellite-20261011/volume.csv",
+            "sha256": "8a392c7da1bbc0230038b4c48a232923c86a1e43fd2fa30fca7eb2a352cf8343"
+          }
+        },
+        "order_authority": false
+      }
+    }
+  ],
+  "migration_snapshot": "evidence/research_program_2026-W41_protection_v29.json",
+  "new_economic_factor_definitions_registered": 0,
+  "order_authority": false,
+  "program_engine_sha256": "72fba0f54f8c7c41631027acd070a9a685813f819cdad5f89285dc80f71dd8cf",
+  "prospective_growth_performance_claimed": false,
+  "queued_six_family_strategy_eligibility_unchanged": true,
+  "readiness": {
+    "QQQ_is_growth_beta_not_a_new_factor": true,
+    "capabilities": {
+      "actual_fund_history": {
+        "evidence_path": "config/growth-factor-satellite.json",
+        "evidence_sha256": "7f53dffeafdea3211980a7c6704c450f6142ff99fbf1332772f6e5969bd9b837",
+        "verified": true
+      },
+      "factor_mandates": {
+        "evidence_path": "config/growth-factor-satellite.json",
+        "evidence_sha256": "7f53dffeafdea3211980a7c6704c450f6142ff99fbf1332772f6e5969bd9b837",
+        "verified": true
+      },
+      "post_inception_and_actions": {
+        "evidence_path": "config/growth-factor-satellite.json",
+        "evidence_sha256": "7f53dffeafdea3211980a7c6704c450f6142ff99fbf1332772f6e5969bd9b837",
+        "verified": true
+      },
+      "unleveraged_fund_identity": {
+        "evidence_path": "config/growth-factor-satellite.json",
+        "evidence_sha256": "7f53dffeafdea3211980a7c6704c450f6142ff99fbf1332772f6e5969bd9b837",
+        "verified": true
+      }
+    },
+    "checked_at": "2026-10-10T23:05:51.822019+00:00",
+    "data_scope": "factor_etf_portfolio",
+    "schema_version": 1,
+    "stock_fundamental_data_still_blocked": true,
+    "verified_etf_source": {
+      "adapter": "growth_factor_satellite_20261011",
+      "policy": "config/growth-factor-satellite.json",
+      "policy_sha256": "7f53dffeafdea3211980a7c6704c450f6142ff99fbf1332772f6e5969bd9b837"
+    }
+  },
+  "registered_before_outcomes": true,
+  "source_code_commit": "7ec6452b",
+  "strategy_outcomes_computed": false,
+  "study": {
+    "actual_weight_trade_band": 0.05,
+    "as_of": "2026-10-05",
+    "candidates": [
+      {
+        "id": "four_factor_growth_gold_monthly_control",
+        "portfolio_insurance": false
+      },
+      {
+        "id": "four_factor_growth_gold_ratchet_protection",
+        "portfolio_insurance": true
+      }
+    ],
+    "capital_usd": 10000.0,
+    "cash_reserve": 0.02,
+    "commission_per_order": 1.0,
+    "data_scope": "factor_etf_portfolio",
+    "drawdown_target": 0.15,
+    "factor_ids": [
+      "price_momentum",
+      "value_exposure",
+      "quality_exposure",
+      "low_volatility_exposure"
+    ],
+    "factor_symbols": [
+      "MTUM",
+      "VLUE",
+      "QUAL",
+      "USMV"
+    ],
+    "growth_share_of_equity": 0.5,
+    "methodology": {
+      "automatic_live_deployment": false,
+      "cash": "The control keeps98%target investment. The protected portfolio moves every removed risky weight to actualBIL,with no borrowing,synthetic interest or upward leverage. All4economic equity families remain proportional within the current risky core.",
+      "core": "Reuse composed_monthly_target from the frozen growth-satellite helper:half of equity in actual unleveragedQQQ,and half equally divided across4existing factor families. Monthly inverse63-session aggregate-equity/gold volatility balance with30%-70%equity bounds. No daily12%volatility cap in this new control.",
+      "execution": "PreserveUSD10,000fresh10y/5yaccounts,USD1tickets,5bpnext-openbaseand20bpextra-sessionstress. Versioned funded-accounting replay and independentbt required;original netSharpe/SPY/15%drawdown gates unchanged.",
+      "factors": "QQQis concentrated growth/market beta,not an independent fifth factor or a new definition. This experiment uses only already registered families;it does not register queued IJR/PKWearly,change their Oct17eligibility or compute six-family outcomes.",
+      "limitations": "This is an unleveraged ratcheted-floor adaptation motivated byCPPI,not the paper's exact implementation or guaranteed capital protection. Gaps,execution delay,trade band,costs and cash lock-in can breach the target or reduce return.",
+      "order_authority": false,
+      "pending": "One pending request at a time;fills at its original delayed open,never overwritten. A monthly update that occurs while another request is pending remains requested until the next eligible close. Protection depends on cost/delay/fresh-window account state and must regenerate separately for every path.",
+      "protection": "Ratchet a floor to85%of the highest actual closing model-account NAV,including initialUSD10,000anchor. At a known close scale the monthly non-BIL target by the positive wealth cushion divided by15%of currentNAV,capped at1. The implied cushion multiplier is1/0.15,derived from the retained drawdown target rather than fitted.",
+      "reference": {
+        "authors": "Black and Perold",
+        "doi": "10.1016/0165-1889(92)90043-e",
+        "title": "Theory of constant proportion portfolio insurance",
+        "url": "https://doi.org/10.1016/0165-1889(92)90043-e",
+        "year": 1992
+      },
+      "selection": "Two fixed hypotheses after108exposed historical configurations,no multiplier/window/asset-share grid. Historical qualification would still not establish independent forward results;the prior22candidate selection diagnostic does not cover these new candidates.",
+      "source": "Original actual growth/factor/defense snapshots and helper versions remain frozen. Current17source prospective archive does not includeQQQ,so no prospective performance for this new study is claimed.",
+      "trigger": "Initial and monthly updates request trades. Between month ends,only the protected rule trades when some desired target differs from actual closing holding weight by at least5percentage points. High-water mark and cushion update only from already realized closing NAV."
+    },
+    "new_configurations": 2,
+    "new_economic_factor_definitions": 0,
+    "prior_evaluated_configurations": 108,
+    "schema_version": 1,
+    "study_id": "growth_portfolio_protection_20261011"
+  }
+}

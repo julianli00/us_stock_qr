@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "study_id": "sector_breadth_independent_gold_trend_20261011",
+  "data_scope": "factor_etf_portfolio",
+  "data_start": "2015-08-10",
+  "as_of": "2026-10-05",
+  "prior_evaluated_configurations": 136,
+  "new_configurations": 2,
+  "new_economic_factor_definitions": 0,
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "factor_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "gold_sma_observations": 200,
+  "gold_signal_asset": "GLD",
+  "decision_clock": "original_source_month_ends_only",
+  "cash_reserve": 0.02,
+  "candidates": [
+    {"id": "semiconductor_breadth_half_gold_trend200", "source_id": "semiconductor_sector_breadth_equity_half"},
+    {"id": "semiconductor_breadth_off_gold_trend200", "source_id": "semiconductor_sector_breadth_equity_off"}
+  ],
+  "source_registration": {"path": "evidence/sector_breadth_20261011_registration.json", "sha256": "727fd1499f4970e7e969d0beff0e473a772a97b1e614ece3781f0998beed0f24"},
+  "source_policy": {"path": "config/sector-breadth-risk.json", "sha256": "148f28f2ae90b433223333b8f70b1f2806b0d382ac8db3e56562222e6645a8ae"},
+  "source_implementation": {"path": "src/us_quant/sector_breadth_risk.py", "sha256": "c66dd2c5a17df4bd83afcedf873a3534cc1e8aa575cf6733ea00586f806f00b9"},
+  "prior_gold_policy": {"path": "config/trend-factor-guard.json", "sha256": "5e87ac75966bca361b55c0d54718311080666c868cbc6d1503409a586f24c7bc"},
+  "prior_gold_implementation": {"path": "src/us_quant/trend_factor_guard.py", "sha256": "1e05e9d31d38298253d29c3f0668ba43b2a18f669d3a96fb09cc247928f73aa2"},
+  "published_risk_context": {"path": "evidence/sector_breadth_20261011_drawdown_attribution.json", "sha256": "e5de407c986a4ab1689e35517f6489397370153be93b2adcf8af38dbb6b28c2e"},
+  "methodology": {
+    "hypothesis": "Sector equity breadth does not describe gold's own trend. Published original worst-episode attribution found larger held gold losses than equity losses. Test an independent existing gold price-trend rule while leaving both original equity-breadth target matrices unchanged; this observed diagnosis is not proof the new rule will work.",
+    "gold_rule": "At each original fully informed monthly source decision, preserve its GLD target only when actual GLD adjusted close is strictly above its trailing200-observation simple mean including that close. Equality is off. Otherwise set only GLD to zero and add its removed weight to actual BIL through the unchanged existing component-gate helper. Restore only the original monthly gold target when the fixed condition passes; no rescaling of equity or remaining risk.",
+    "controls": "Both fixed half/off source constructions retain every four-style/SOXX equity target, nine-sector signal snapshot,200-sector means, strict structural majority, original monthly risk budgets,125decision dates and2%idle target cash. No daily trigger, Treasury routing, USD/option confirmation, new volatility target, wealth floor, share grid or fitted gold threshold.",
+    "source": "Use the original audited twelve-asset portfolio with actual GLD prices and frozen risk-free rates. Keep both separately frozen signal/portfolio XLK versions and original eight-core identity/raw-CSV guards; portfolio XLK remains zero. No new quotes, synthetic gold/risk-free return, future vintage or current-survivor history.",
+    "prior_art": "Reuse the prior strict200-observation GLD price/mean law and original unmodified risk-removal helper. The former study also used independent daily equity/gold state changes; this new law is deliberately evaluated only on the existing monthly source clock. It is a newly frozen combination, not an assertion that old whole-portfolio targets or return paths are reproduced.",
+    "selection": "Exactly two new existing-factor risk constructions after136exposed-history configurations. The original GLD worst episodes motivated the question, so neither window is an independent holdout. Freeze source/code/specs and publish actual registration before any new accounts. Do not fit mean length, timing, gold scale or source breadth/share rules from new outcomes; retain every failure. No new economic definition or W42/forward rule change.",
+    "execution": "Each original10y/5ywindow independently startsUSD10000 including deployment;5bpnext-openbase/20bpextra-sessionstress,USD1/order,fractional long-only funded-v2 and independentbt. All exact2512/1254return days,ownwindowseeds,risk-freeSharpe,SPY/stressed-base-SPY/15%drawdown gates retained.",
+    "limits": "Gold trend removal can whipsaw, miss gaps, fail to hedge stocks or lower return. Historical all-gate qualification would still need independent actual future evidence and does not confer live deployment or an insurance guarantee.",
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

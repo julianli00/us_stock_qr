@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "study_id": "growth_factor_satellite_20261011",
+  "prior_evaluated_configurations": 96,
+  "new_configurations": 2,
+  "as_of": "2026-10-05",
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "factor_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "growth_asset": "QQQ",
+  "growth_asset_is_new_factor": false,
+  "volatility_sessions": 63,
+  "equity_share_min": 0.30,
+  "equity_share_max": 0.70,
+  "target_volatility": 0.12,
+  "target_change_band": 0.05,
+  "cash_reserve": 0.02,
+  "candidates": [
+    {"id": "four_factor_daily_target_control", "growth_share_of_equity": 0.0},
+    {"id": "four_factor_growth_satellite50", "growth_share_of_equity": 0.5}
+  ],
+  "methodology": {
+    "controlled_comparison": "Keep identical equity/gold risk balance, daily volatility target and target-change band. Compare the original four-factor equity sleeve against a50%four-factor/50%unleveragedNasdaq100equity sleeve.",
+    "factor_core": "The four factor ETFs are equally weighted inside the factor core. The satellite cannot replace the entire core or be presented as a new economic factor.",
+    "risk_balance": "At completed month ends, estimate63-session volatility of the actual composed equity sleeve and GLD. Inverse-volatility balance them with30%-70%equity bounds and2%idle cash.",
+    "daily_risk": "Project the latest monthly target to12%predicted annual volatility using trailing63-session covariance, including BIL. Scale down all risky positions together and put the reduction in BIL. Never lever up.",
+    "trading": "Emit a target at month ends or when the projected allocation differs by at least5percentage points from the last issued target. This is target-change hysteresis, not an actual-position or continuous drawdown guarantee.",
+    "costs": "Same USD10,000,USD1per order,5bpnext-open base and20bpone-extra-session stress. The source-bound generic reviewer regenerates every target and cash path.",
+    "data": "QQQ comes from the same previously audited original source manifest as SPY and defensive ETFs. No new provider vintage, synthetic history or leverage.",
+    "attribution": "Any improvement may come from growth/technology market beta, not independent factor alpha. No diversification benefit is assumed; risk/return outcomes must be reported against the matched control.",
+    "selection_bias": "This fixed experiment is motivated after96prior trials. No growth-weight grid or subsequent volatility/band tuning is permitted in this version.",
+    "order_authority": false,
+    "independent_forward_validation": false
+  }
+}

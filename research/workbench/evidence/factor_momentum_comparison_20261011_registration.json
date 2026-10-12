@@ -1,0 +1,280 @@
+{
+  "candidates": [
+    {
+      "registration": {
+        "candidate_id": "four_factor_total_momentum_tilt",
+        "data_scope": "factor_etf_portfolio",
+        "families": [
+          "earnings_quality",
+          "low_volatility",
+          "momentum",
+          "value"
+        ],
+        "order_authority": false,
+        "readiness_sha256": "642759b12ef339dc29d55fbc30b572a1877f0d642f93c37188c1393310b9851d",
+        "registered_at": "2026-10-10T19:05:41.173890+00:00",
+        "spec_sha256": "ce7fb093a33b650040db622af5a81a48f9e9dca692644e20907c061a98ff5aa7"
+      },
+      "spec": {
+        "asset_leverage": {
+          "BIL": 1.0,
+          "GLD": 1.0,
+          "IEF": 1.0,
+          "MTUM": 1.0,
+          "QUAL": 1.0,
+          "SPY": 1.0,
+          "USMV": 1.0,
+          "VLUE": 1.0
+        },
+        "configuration": {
+          "id": "four_factor_total_momentum_tilt",
+          "score": "momentum"
+        },
+        "data_scope": "factor_etf_portfolio",
+        "evaluation_as_of": "2026-10-05",
+        "factor_ids": [
+          "price_momentum",
+          "value_exposure",
+          "quality_exposure",
+          "low_volatility_exposure"
+        ],
+        "frozen_files": {
+          "config/factor-gold-risk.json": "6c550602c98fa5b09e5b59791bdbbe569c9b4082e2d1dfc9ba4cd5639a25ec63",
+          "config/factor-momentum-comparison.json": "457c36bbaeb125e84e275188606f08d87e2dc86240ecc0f6de27c1fe06875152",
+          "src/us_quant/factor_gold_risk.py": "412a80a5d608a3cb0ad3bce6b2861b80fcc73b7f28f27697ccd60528874bf8d5",
+          "src/us_quant/factor_momentum_comparison.py": "0f454df2d7f0bff99e47d57600a4730d6487c95624c6e6929b0e49975a487e82",
+          "src/us_quant/factor_research.py": "9b4e09d2cf9b70d7664764f37ead01ff22467f3fe7db130faab461114e711103"
+        },
+        "history_status": "exposed_history_not_independent_holdout",
+        "id": "four_factor_total_momentum_tilt",
+        "leveraged_products_allowed": false,
+        "market": {
+          "close": {
+            "path": "data/factor-gold-risk-20261010/market-close.csv",
+            "sha256": "b098f783bbf7a4ca56520e11c6e13edbb0eb2673ed7aaec02b89981ff74fabce"
+          },
+          "open": {
+            "path": "data/factor-gold-risk-20261010/market-open.csv",
+            "sha256": "dc2e1cf8c83c8731a03452eec60ad3cc036b8534cfed94b054c8f883b459273f"
+          },
+          "raw_close": {
+            "path": "data/factor-gold-risk-20261010/market-raw_close.csv",
+            "sha256": "82eae7514bf8de48bfe07cc72331ed758a27f561180ff5ad44d5d70e0dca71f9"
+          },
+          "risk_free": {
+            "path": "data/factor-gold-risk-20261010/market-risk_free.csv",
+            "sha256": "3b59869f597ac9d2573ffca1616938da4c2df0da24bd38799ce3e39b1f0509cc"
+          },
+          "volume": {
+            "path": "data/factor-gold-risk-20261010/market-volume.csv",
+            "sha256": "7ab6fbbe413fee994f65e27ebfbf15e28aa18055acdc12bd527918d5bbe60830"
+          }
+        },
+        "order_authority": false
+      }
+    },
+    {
+      "registration": {
+        "candidate_id": "four_factor_residual_momentum_tilt",
+        "data_scope": "factor_etf_portfolio",
+        "families": [
+          "earnings_quality",
+          "low_volatility",
+          "momentum",
+          "value"
+        ],
+        "order_authority": false,
+        "readiness_sha256": "642759b12ef339dc29d55fbc30b572a1877f0d642f93c37188c1393310b9851d",
+        "registered_at": "2026-10-10T19:05:42.337963+00:00",
+        "spec_sha256": "6dcc6d1390b2046105a596a938a4e18fb54d92ddf81265bdfc940ddcc1677eb1"
+      },
+      "spec": {
+        "asset_leverage": {
+          "BIL": 1.0,
+          "GLD": 1.0,
+          "IEF": 1.0,
+          "MTUM": 1.0,
+          "QUAL": 1.0,
+          "SPY": 1.0,
+          "USMV": 1.0,
+          "VLUE": 1.0
+        },
+        "configuration": {
+          "id": "four_factor_residual_momentum_tilt",
+          "score": "residual"
+        },
+        "data_scope": "factor_etf_portfolio",
+        "evaluation_as_of": "2026-10-05",
+        "factor_ids": [
+          "price_momentum",
+          "value_exposure",
+          "quality_exposure",
+          "low_volatility_exposure"
+        ],
+        "frozen_files": {
+          "config/factor-gold-risk.json": "6c550602c98fa5b09e5b59791bdbbe569c9b4082e2d1dfc9ba4cd5639a25ec63",
+          "config/factor-momentum-comparison.json": "457c36bbaeb125e84e275188606f08d87e2dc86240ecc0f6de27c1fe06875152",
+          "src/us_quant/factor_gold_risk.py": "412a80a5d608a3cb0ad3bce6b2861b80fcc73b7f28f27697ccd60528874bf8d5",
+          "src/us_quant/factor_momentum_comparison.py": "0f454df2d7f0bff99e47d57600a4730d6487c95624c6e6929b0e49975a487e82",
+          "src/us_quant/factor_research.py": "9b4e09d2cf9b70d7664764f37ead01ff22467f3fe7db130faab461114e711103"
+        },
+        "history_status": "exposed_history_not_independent_holdout",
+        "id": "four_factor_residual_momentum_tilt",
+        "leveraged_products_allowed": false,
+        "market": {
+          "close": {
+            "path": "data/factor-gold-risk-20261010/market-close.csv",
+            "sha256": "b098f783bbf7a4ca56520e11c6e13edbb0eb2673ed7aaec02b89981ff74fabce"
+          },
+          "open": {
+            "path": "data/factor-gold-risk-20261010/market-open.csv",
+            "sha256": "dc2e1cf8c83c8731a03452eec60ad3cc036b8534cfed94b054c8f883b459273f"
+          },
+          "raw_close": {
+            "path": "data/factor-gold-risk-20261010/market-raw_close.csv",
+            "sha256": "82eae7514bf8de48bfe07cc72331ed758a27f561180ff5ad44d5d70e0dca71f9"
+          },
+          "risk_free": {
+            "path": "data/factor-gold-risk-20261010/market-risk_free.csv",
+            "sha256": "3b59869f597ac9d2573ffca1616938da4c2df0da24bd38799ce3e39b1f0509cc"
+          },
+          "volume": {
+            "path": "data/factor-gold-risk-20261010/market-volume.csv",
+            "sha256": "7ab6fbbe413fee994f65e27ebfbf15e28aa18055acdc12bd527918d5bbe60830"
+          }
+        },
+        "order_authority": false
+      }
+    }
+  ],
+  "engine_sha256": "b24598235513876956452e6d20c246d541952d754d976f5559650589061deea8",
+  "history_preserved": true,
+  "migration_snapshot": "evidence/research_program_2026-W41_momentum_v17.json",
+  "readiness": {
+    "capabilities": {
+      "actual_fund_history": {
+        "evidence_path": "data/multifactor-stability-20261010/manifest.json",
+        "evidence_sha256": "ea128cfe0fa71db93080234787f0779f0236b88466ab01f8e78336bc03652aa5",
+        "verified": true
+      },
+      "factor_mandates": {
+        "evidence_path": "config/multifactor-stability.json",
+        "evidence_sha256": "197892d844fd749c1ef06cda8b1eeb025b6edfe546e42f020dc721bc09209715",
+        "verified": true
+      },
+      "post_inception_and_actions": {
+        "evidence_path": "data/multifactor-stability-20261010/manifest.json",
+        "evidence_sha256": "ea128cfe0fa71db93080234787f0779f0236b88466ab01f8e78336bc03652aa5",
+        "verified": true
+      },
+      "unleveraged_fund_identity": {
+        "evidence_path": "data/multifactor-stability-20261010/manifest.json",
+        "evidence_sha256": "ea128cfe0fa71db93080234787f0779f0236b88466ab01f8e78336bc03652aa5",
+        "verified": true
+      }
+    },
+    "checked_at": "2026-10-10T19:05:05.895733+00:00",
+    "data_scope": "factor_etf_portfolio",
+    "price_as_of": "2026-10-05",
+    "revalidation_not_new_market_observation": true,
+    "schema_version": 1,
+    "stock_data_still_blocked": true,
+    "verified_etf_source": {
+      "adapter": "frozen_multifactor_etf_20261010",
+      "base_manifest": "data/factor-round-20261007/base/manifest.json",
+      "base_manifest_sha256": "8cc85f89a05c0324571abc1cb44d8a1d7dfd76d55271f34ad4da973e5c0f9f6d",
+      "factor_manifest": "data/multifactor-stability-20261010/manifest.json",
+      "factor_manifest_sha256": "ea128cfe0fa71db93080234787f0779f0236b88466ab01f8e78336bc03652aa5",
+      "policy": "config/multifactor-stability.json",
+      "policy_sha256": "197892d844fd749c1ef06cda8b1eeb025b6edfe546e42f020dc721bc09209715",
+      "registration": "evidence/multifactor_stability_20261010_registration_v2.json",
+      "registration_sha256": "721932a098fb8061d58e8c402bb74ade08512007c13f17be91512c2b4f940d8e"
+    }
+  },
+  "registered_before_outcomes": true,
+  "source_code_commit": "dde1a1da",
+  "study": {
+    "as_of": "2026-10-05",
+    "baseline_policy": "config/factor-gold-risk.json",
+    "candidates": [
+      {
+        "id": "four_factor_total_momentum_tilt",
+        "score": "momentum"
+      },
+      {
+        "id": "four_factor_residual_momentum_tilt",
+        "score": "residual"
+      }
+    ],
+    "cash_reserve": 0.02,
+    "data_scope": "factor_etf_portfolio",
+    "factor_ids": [
+      "price_momentum",
+      "value_exposure",
+      "quality_exposure",
+      "low_volatility_exposure"
+    ],
+    "factor_symbols": [
+      "MTUM",
+      "VLUE",
+      "QUAL",
+      "USMV"
+    ],
+    "methodology": {
+      "automatic_live_deployment": false,
+      "availability": "The verified factor snapshot begins2015-08-10. A252-session daily fit and126-minus21 score permit full pre-account warmup without altering the formal2016-10-06/2021-10-06 return windows. This is a short-window ETF adaptation, not the papers' stock-level multifactor or long-short replication.",
+      "factor_composition": "At completed month ends rank all four funds by the selected score, ticker as deterministic tie-breaker. Assign35/30/20/15%of the equity sleeve. No fund is removed, no absolute-return filter is added and no shares are fitted.",
+      "hypothesis": "Market beta may dominate momentum in long-only factor funds. Compare total-return ranking with SPY-regression residual ranking while holding aggregate equity/gold target budgets identical.",
+      "interpretation": "These are two allocation configurations on four existing economic factor exposures, not new independent alpha families. SPY beta removal in a score does not hedge beta in the long-only holdings. Momentum itself is not independent of the MTUM mandate.",
+      "matched_budgets": "Reuse the frozen equal-four-factor/gold63-session inverse-volatility baseline with30%-70%equity bounds. Both candidates inherit exactly the same equity total, gold total and decision dates, so score-dependent changes cannot alter aggregate defensive exposure.",
+      "order_authority": false,
+      "score": "Reuse the unchanged original factor_scores helper. Total momentum compounds the last126 daily returns excluding the latest21. Residual momentum fits an intercept and SPY excess-return beta on the trailing252 daily returns, then sums the last126 residuals excluding21 divided by their sample standard deviation.",
+      "selection": "Formed after100completed configurations on exposed overlapping history. No untouched holdout, parameter grid, fitted shares or live promotion. A historically passing result would still require independent prospective validation.",
+      "timing": "Every score, regression and risk input ends at the signal close. Execute next-session open in base or one additional session in stress. Preserve USD10,000,2%target idle cash,USD1commissions,5/20bp costs and all recurring-program gates."
+    },
+    "new_configurations": 2,
+    "new_economic_factor_definitions": 0,
+    "prior_evaluated_configurations": 100,
+    "ranked_factor_shares": [
+      0.35,
+      0.3,
+      0.2,
+      0.15
+    ],
+    "schema_version": 1,
+    "score_parameters": {
+      "parameters": {
+        "momentum_sessions": 126,
+        "residual_fit_sessions": 252,
+        "skip_sessions": 21,
+        "trend_sessions": 200,
+        "volatility_sessions": 63
+      },
+      "sector_universe": [
+        "MTUM",
+        "VLUE",
+        "QUAL",
+        "USMV"
+      ]
+    },
+    "sources": [
+      {
+        "authors": "Ehsani and Linnainmaa",
+        "doi": "10.1111/jofi.13131",
+        "journal_year": 2022,
+        "metadata_verification": "https://api.crossref.org/works?query.title=Factor%20Momentum%20and%20the%20Momentum%20Factor&rows=3&select=DOI,title,author,published,container-title,URL",
+        "title": "Factor Momentum and the Momentum Factor",
+        "url": "https://doi.org/10.1111/jofi.13131",
+        "working_paper": "https://www.nber.org/papers/w25551"
+      },
+      {
+        "authors": "Blitz, Huij and Martens",
+        "doi": "10.1016/j.jempfin.2011.01.003",
+        "journal_year": 2011,
+        "title": "Residual Momentum",
+        "url": "https://repub.eur.nl/pub/22252/"
+      }
+    ],
+    "study_id": "factor_momentum_comparison_20261011"
+  }
+}

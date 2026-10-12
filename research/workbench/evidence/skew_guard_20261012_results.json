@@ -1,0 +1,355 @@
+{
+  "W42_original_queue_or_frozen_forward_rules_changed": false,
+  "actual_remote_verification_at": "2026-10-12T00:19:55.233811+00:00",
+  "candidate_reviews": [
+    {
+      "candidate_id": "semiconductor_skew130_equity_half",
+      "configuration": {
+        "id": "semiconductor_skew130_equity_half",
+        "risk_scope": "equity_only"
+      },
+      "historical_gates_passed": false,
+      "independent_forward_validation": false,
+      "order_authority": false,
+      "paths": [
+        {
+          "benchmark": {
+            "cagr": 0.1546199793311418,
+            "end": "2026-10-05",
+            "max_drawdown": 0.3371727532125359,
+            "sessions": 2512,
+            "sharpe": 0.7558900902911541,
+            "start": "2016-10-06"
+          },
+          "cost_bps": 5.0,
+          "delay_sessions": 1,
+          "gates": {
+            "beats_spy": false,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": true
+          },
+          "metrics": {
+            "cagr": 0.14644298810775114,
+            "end": "2026-10-05",
+            "max_drawdown": 0.20324724116886794,
+            "sessions": 2512,
+            "sharpe": 1.0086369097271481,
+            "start": "2016-10-06"
+          },
+          "scenario": "base",
+          "total_cost_usd": 959.9523046914891,
+          "total_orders": 813,
+          "worst_drawdown_episode": {
+            "drawdown": 0.20324724116886794,
+            "peak_session": "2022-03-08",
+            "trough_session": "2022-10-14"
+          },
+          "years": 10
+        },
+        {
+          "benchmark": {
+            "cagr": 0.15405636613916607,
+            "end": "2026-10-05",
+            "max_drawdown": 0.3371727532125357,
+            "sessions": 2512,
+            "sharpe": 0.7531241378409322,
+            "start": "2016-10-06"
+          },
+          "cost_bps": 20.0,
+          "delay_sessions": 2,
+          "gates": {
+            "also_beats_base_cost_spy": false,
+            "beats_spy": false,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": false
+          },
+          "metrics": {
+            "cagr": 0.14221679863724068,
+            "end": "2026-10-05",
+            "max_drawdown": 0.20144034384430165,
+            "sessions": 2512,
+            "sharpe": 0.9754455866150363,
+            "start": "2016-10-06"
+          },
+          "scenario": "stress",
+          "total_cost_usd": 1388.934129949901,
+          "total_orders": 813,
+          "worst_drawdown_episode": {
+            "drawdown": 0.20144034384430165,
+            "peak_session": "2022-03-08",
+            "trough_session": "2022-10-14"
+          },
+          "years": 10
+        },
+        {
+          "benchmark": {
+            "cagr": 0.14040855610470793,
+            "end": "2026-10-05",
+            "max_drawdown": 0.24496383714703274,
+            "sessions": 1254,
+            "sharpe": 0.6303911363155571,
+            "start": "2021-10-06"
+          },
+          "cost_bps": 5.0,
+          "delay_sessions": 1,
+          "gates": {
+            "beats_spy": true,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": true
+          },
+          "metrics": {
+            "cagr": 0.17798354649642367,
+            "end": "2026-10-05",
+            "max_drawdown": 0.2047498908319172,
+            "sessions": 1254,
+            "sharpe": 1.0161407831283311,
+            "start": "2021-10-06"
+          },
+          "scenario": "base",
+          "total_cost_usd": 458.2764294096765,
+          "total_orders": 410,
+          "worst_drawdown_episode": {
+            "drawdown": 0.2047498908319172,
+            "peak_session": "2022-03-08",
+            "trough_session": "2022-10-14"
+          },
+          "years": 5
+        },
+        {
+          "benchmark": {
+            "cagr": 0.13528280366429257,
+            "end": "2026-10-05",
+            "max_drawdown": 0.24496383714703285,
+            "sessions": 1254,
+            "sharpe": 0.6043080883068029,
+            "start": "2021-10-06"
+          },
+          "cost_bps": 20.0,
+          "delay_sessions": 2,
+          "gates": {
+            "also_beats_base_cost_spy": true,
+            "beats_spy": true,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": false
+          },
+          "metrics": {
+            "cagr": 0.1716575143750818,
+            "end": "2026-10-05",
+            "max_drawdown": 0.20292373993130497,
+            "sessions": 1254,
+            "sharpe": 0.973150084264474,
+            "start": "2021-10-06"
+          },
+          "scenario": "stress",
+          "total_cost_usd": 598.7186021189902,
+          "total_orders": 410,
+          "worst_drawdown_episode": {
+            "drawdown": 0.20292373993130497,
+            "peak_session": "2022-03-08",
+            "trough_session": "2022-10-14"
+          },
+          "years": 5
+        }
+      ],
+      "registered_at": "2026-10-12T00:15:30.496636+00:00",
+      "reviewed_at": "2026-10-12T00:19:58.037113+00:00",
+      "status": "rejected_historical"
+    },
+    {
+      "candidate_id": "semiconductor_skew130_portfolio_half",
+      "configuration": {
+        "id": "semiconductor_skew130_portfolio_half",
+        "risk_scope": "all_non_bil"
+      },
+      "historical_gates_passed": false,
+      "independent_forward_validation": false,
+      "order_authority": false,
+      "paths": [
+        {
+          "benchmark": {
+            "cagr": 0.1546199793311418,
+            "end": "2026-10-05",
+            "max_drawdown": 0.3371727532125359,
+            "sessions": 2512,
+            "sharpe": 0.7558900902911541,
+            "start": "2016-10-06"
+          },
+          "cost_bps": 5.0,
+          "delay_sessions": 1,
+          "gates": {
+            "beats_spy": false,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": true
+          },
+          "metrics": {
+            "cagr": 0.12204390936400156,
+            "end": "2026-10-05",
+            "max_drawdown": 0.17418777427427212,
+            "sessions": 2512,
+            "sharpe": 1.0283929888631649,
+            "start": "2016-10-06"
+          },
+          "scenario": "base",
+          "total_cost_usd": 999.9805210286073,
+          "total_orders": 813,
+          "worst_drawdown_episode": {
+            "drawdown": 0.17418777427427212,
+            "peak_session": "2022-03-08",
+            "trough_session": "2022-10-14"
+          },
+          "years": 10
+        },
+        {
+          "benchmark": {
+            "cagr": 0.15405636613916607,
+            "end": "2026-10-05",
+            "max_drawdown": 0.3371727532125357,
+            "sessions": 2512,
+            "sharpe": 0.7531241378409322,
+            "start": "2016-10-06"
+          },
+          "cost_bps": 20.0,
+          "delay_sessions": 2,
+          "gates": {
+            "also_beats_base_cost_spy": false,
+            "beats_spy": false,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": false
+          },
+          "metrics": {
+            "cagr": 0.11699498230764216,
+            "end": "2026-10-05",
+            "max_drawdown": 0.17556079615166542,
+            "sessions": 2512,
+            "sharpe": 0.9779849607580908,
+            "start": "2016-10-06"
+          },
+          "scenario": "stress",
+          "total_cost_usd": 1545.6268340655124,
+          "total_orders": 813,
+          "worst_drawdown_episode": {
+            "drawdown": 0.17556079615166542,
+            "peak_session": "2022-03-08",
+            "trough_session": "2022-10-14"
+          },
+          "years": 10
+        },
+        {
+          "benchmark": {
+            "cagr": 0.14040855610470793,
+            "end": "2026-10-05",
+            "max_drawdown": 0.24496383714703274,
+            "sessions": 1254,
+            "sharpe": 0.6303911363155571,
+            "start": "2021-10-06"
+          },
+          "cost_bps": 5.0,
+          "delay_sessions": 1,
+          "gates": {
+            "beats_spy": false,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": false
+          },
+          "metrics": {
+            "cagr": 0.13743381424037882,
+            "end": "2026-10-05",
+            "max_drawdown": 0.17568006492391464,
+            "sessions": 1254,
+            "sharpe": 0.9562545074432394,
+            "start": "2021-10-06"
+          },
+          "scenario": "base",
+          "total_cost_usd": 455.3959832027804,
+          "total_orders": 410,
+          "worst_drawdown_episode": {
+            "drawdown": 0.17568006492391464,
+            "peak_session": "2022-03-08",
+            "trough_session": "2022-10-14"
+          },
+          "years": 5
+        },
+        {
+          "benchmark": {
+            "cagr": 0.13528280366429257,
+            "end": "2026-10-05",
+            "max_drawdown": 0.24496383714703285,
+            "sessions": 1254,
+            "sharpe": 0.6043080883068029,
+            "start": "2021-10-06"
+          },
+          "cost_bps": 20.0,
+          "delay_sessions": 2,
+          "gates": {
+            "also_beats_base_cost_spy": false,
+            "beats_spy": false,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": false
+          },
+          "metrics": {
+            "cagr": 0.1306427575277136,
+            "end": "2026-10-05",
+            "max_drawdown": 0.1770187897912494,
+            "sessions": 1254,
+            "sharpe": 0.8940685624419562,
+            "start": "2021-10-06"
+          },
+          "scenario": "stress",
+          "total_cost_usd": 588.545337622745,
+          "total_orders": 410,
+          "worst_drawdown_episode": {
+            "drawdown": 0.1770187897912494,
+            "peak_session": "2022-03-08",
+            "trough_session": "2022-10-14"
+          },
+          "years": 5
+        }
+      ],
+      "registered_at": "2026-10-12T00:15:33.425117+00:00",
+      "reviewed_at": "2026-10-12T00:20:02.194224+00:00",
+      "status": "rejected_historical"
+    }
+  ],
+  "completed_at": "2026-10-12T00:20:04.166460+00:00",
+  "completed_recurring_reviews": 78,
+  "full_daily_or_monthly_SKEW_source_readiness_repaired": false,
+  "historically_qualified_candidates": 0,
+  "investment_objective_verified": false,
+  "new2trials_claimed_covered_by_old76selection_inference": false,
+  "new_economic_factor_definitions": 0,
+  "new_strategy_evaluations": 2,
+  "old_selection_covers_all162unknownsearch_or_independent_future": false,
+  "order_authority": false,
+  "original_factor_ratios_funding_costs_and_monthly_clock_preserved": true,
+  "original_forward_sessions": 0,
+  "published_registration_commit": "a5b2221fa79d62a4f14a91eeda10241edd36a1e4",
+  "raw_quotes_targets_accounts_or_held_positions_published": false,
+  "reference_example_called_physical_crash_probability_or_published_trading_model": false,
+  "registered_candidate_versions_including_two_invalid": 80,
+  "registered_factor_definitions": 6,
+  "registration_sha256": "54070ab0465f9ff9b96ec3ac5f6f232a8ae17bc0fa3e19866c8760722db3cea8",
+  "schema_version": 1,
+  "separate_dollar_forward_sessions": 0,
+  "skew_reference_level_scale_scope_or_source_pause_refitted_after_returns": false,
+  "source_missing_quote_filled_or_formal_return_days_removed": false,
+  "started_at": "2026-10-12T00:19:55.234863+00:00",
+  "status": "completed_independently_verified",
+  "total_completed_strategy_configurations": 162,
+  "verified_target_counts": {
+    "semiconductor_skew130_equity_half": {
+      "half_risk_months": 84,
+      "issued_targets": 130,
+      "known_no_request_months": [
+        "2024-11-29"
+      ],
+      "original_source_targets": 131
+    },
+    "semiconductor_skew130_portfolio_half": {
+      "half_risk_months": 84,
+      "issued_targets": 130,
+      "known_no_request_months": [
+        "2024-11-29"
+      ],
+      "original_source_targets": 131
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "validation_id": "factor_validation_20261007",
+  "rounds": [
+    {
+      "id": "factor_round_20261007",
+      "implementation_revision": "3656e098",
+      "policy": "config/factor-research.json",
+      "registration": "evidence/factor_round_20261007_registration.json",
+      "results": "evidence/factor_round_20261007_results.json",
+      "artifacts": "reports/factor-round-20261007"
+    },
+    {
+      "id": "allocation_round_20261007",
+      "implementation_revision": "56d95478",
+      "policy": "config/allocation-research.json",
+      "registration": "evidence/allocation_round_20261007_registration.json",
+      "results": "evidence/allocation_round_20261007_results.json",
+      "artifacts": "reports/allocation-round-20261007"
+    },
+    {
+      "id": "implementation_round_20261007",
+      "implementation_revision": "60875a7d",
+      "policy": "config/implementation-research.json",
+      "registration": "evidence/implementation_round_20261007_registration.json",
+      "results": "evidence/implementation_round_20261007_results.json",
+      "artifacts": "reports/implementation-round-20261007"
+    }
+  ],
+  "qualification_source": "implementation_round_20261007",
+  "candidate_selection": "Validate every candidate passing both original windows and both original base/stress scenarios; do not select candidates or change rules after sensitivity results.",
+  "additional_scenarios": [
+    {"id": "higher_cost", "cost_bps_per_side": 50.0, "delay_sessions": 2},
+    {"id": "extra_delay", "cost_bps_per_side": 20.0, "delay_sessions": 3},
+    {"id": "combined_severe", "cost_bps_per_side": 50.0, "delay_sessions": 3}
+  ],
+  "rolling_windows": {
+    "years": [10, 5],
+    "endpoints": "Every completed NYSE month end supported by a common continuously managed account.",
+    "scenarios": ["base", "stress"],
+    "accounting": "Slices of continuous net return paths; not newly fitted rules or separately reinitialized accounts.",
+    "purpose": "Report sensitivity to historical endpoints, not a replacement for the preregistered primary windows."
+  },
+  "metric_audit": "Independently derive returns from bt equity, use ffn for calendar CAGR and maximum drawdown, and independently calculate excess-return Sharpe using the same lagged IRX series.",
+  "scope": "These are diagnostics of unchanged rules and execution assumptions, not additional candidate hypotheses or parameter optimization.",
+  "retrospective_selection_disclosed": true,
+  "independent_forward_validation": false,
+  "order_authority": false
+}

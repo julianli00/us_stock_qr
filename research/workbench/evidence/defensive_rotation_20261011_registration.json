@@ -1,0 +1,234 @@
+{
+  "candidates": [
+    {
+      "registration": {
+        "candidate_id": "four_factor_defense_momentum",
+        "data_scope": "factor_etf_portfolio",
+        "families": [
+          "earnings_quality",
+          "low_volatility",
+          "momentum",
+          "value"
+        ],
+        "order_authority": false,
+        "readiness_sha256": "04c7563f34ab98c96d6014df042818874d3ce25d272ea64e479d4143c562f177",
+        "registered_at": "2026-10-10T16:25:33.264700+00:00",
+        "spec_sha256": "cbc83da8856949b27aa66af1dc73a9974960bb1a1dbc8a0b4e11c710abf65613"
+      },
+      "spec": {
+        "asset_leverage": {
+          "BIL": 1.0,
+          "GLD": 1.0,
+          "IEF": 1.0,
+          "MTUM": 1.0,
+          "QUAL": 1.0,
+          "SPY": 1.0,
+          "TLT": 1.0,
+          "USMV": 1.0,
+          "VLUE": 1.0
+        },
+        "configuration": {
+          "defense_method": "highest_positive_excess",
+          "id": "four_factor_defense_momentum"
+        },
+        "data_scope": "factor_etf_portfolio",
+        "evaluation_as_of": "2026-10-05",
+        "factor_ids": [
+          "price_momentum",
+          "value_exposure",
+          "quality_exposure",
+          "low_volatility_exposure"
+        ],
+        "frozen_files": {
+          "config/defensive-factor-rotation.json": "5a60e8c5816de547a64e333bae748fa1704898b685b1cc5a5c955cca6e6a8ad4",
+          "src/us_quant/defensive_factor_rotation.py": "4dca1b6433a5171c03c5236b93724ba24909cf5592b3f973eba23b18ee527ce4"
+        },
+        "history_status": "exposed_history_not_independent_holdout",
+        "id": "four_factor_defense_momentum",
+        "leveraged_products_allowed": false,
+        "market": {
+          "close": {
+            "path": "data/defensive-factor-rotation-20261011/close.csv",
+            "sha256": "9cd4fb8bfeeef46f72a4031be49ee6c4f828eb3d14db86c0d76b45f8bc16064b"
+          },
+          "open": {
+            "path": "data/defensive-factor-rotation-20261011/open.csv",
+            "sha256": "e6d5cd332963bfd143cef0dc57cd541eed609063ea961a3a30d78f22243560c3"
+          },
+          "raw_close": {
+            "path": "data/defensive-factor-rotation-20261011/raw_close.csv",
+            "sha256": "2a797127f49a3c5bcac351a555286ccf759e497ff6b10a97cc154ea73596c909"
+          },
+          "risk_free": {
+            "path": "data/defensive-factor-rotation-20261011/risk_free.csv",
+            "sha256": "3b59869f597ac9d2573ffca1616938da4c2df0da24bd38799ce3e39b1f0509cc"
+          },
+          "volume": {
+            "path": "data/defensive-factor-rotation-20261011/volume.csv",
+            "sha256": "45d20446bc5c12f5ade9d72a3b8e8f91b2325f9530fa5f7cc7df0a9288b27ca7"
+          }
+        },
+        "order_authority": false
+      }
+    },
+    {
+      "registration": {
+        "candidate_id": "four_factor_defense_diversified",
+        "data_scope": "factor_etf_portfolio",
+        "families": [
+          "earnings_quality",
+          "low_volatility",
+          "momentum",
+          "value"
+        ],
+        "order_authority": false,
+        "readiness_sha256": "04c7563f34ab98c96d6014df042818874d3ce25d272ea64e479d4143c562f177",
+        "registered_at": "2026-10-10T16:25:34.835292+00:00",
+        "spec_sha256": "1cd67a5f371a3a4d7fd6a87cd1c633082b00a3af051262d2a0d14655186d0153"
+      },
+      "spec": {
+        "asset_leverage": {
+          "BIL": 1.0,
+          "GLD": 1.0,
+          "IEF": 1.0,
+          "MTUM": 1.0,
+          "QUAL": 1.0,
+          "SPY": 1.0,
+          "TLT": 1.0,
+          "USMV": 1.0,
+          "VLUE": 1.0
+        },
+        "configuration": {
+          "defense_method": "all_positive_inverse_volatility",
+          "id": "four_factor_defense_diversified"
+        },
+        "data_scope": "factor_etf_portfolio",
+        "evaluation_as_of": "2026-10-05",
+        "factor_ids": [
+          "price_momentum",
+          "value_exposure",
+          "quality_exposure",
+          "low_volatility_exposure"
+        ],
+        "frozen_files": {
+          "config/defensive-factor-rotation.json": "5a60e8c5816de547a64e333bae748fa1704898b685b1cc5a5c955cca6e6a8ad4",
+          "src/us_quant/defensive_factor_rotation.py": "4dca1b6433a5171c03c5236b93724ba24909cf5592b3f973eba23b18ee527ce4"
+        },
+        "history_status": "exposed_history_not_independent_holdout",
+        "id": "four_factor_defense_diversified",
+        "leveraged_products_allowed": false,
+        "market": {
+          "close": {
+            "path": "data/defensive-factor-rotation-20261011/close.csv",
+            "sha256": "9cd4fb8bfeeef46f72a4031be49ee6c4f828eb3d14db86c0d76b45f8bc16064b"
+          },
+          "open": {
+            "path": "data/defensive-factor-rotation-20261011/open.csv",
+            "sha256": "e6d5cd332963bfd143cef0dc57cd541eed609063ea961a3a30d78f22243560c3"
+          },
+          "raw_close": {
+            "path": "data/defensive-factor-rotation-20261011/raw_close.csv",
+            "sha256": "2a797127f49a3c5bcac351a555286ccf759e497ff6b10a97cc154ea73596c909"
+          },
+          "risk_free": {
+            "path": "data/defensive-factor-rotation-20261011/risk_free.csv",
+            "sha256": "3b59869f597ac9d2573ffca1616938da4c2df0da24bd38799ce3e39b1f0509cc"
+          },
+          "volume": {
+            "path": "data/defensive-factor-rotation-20261011/volume.csv",
+            "sha256": "45d20446bc5c12f5ade9d72a3b8e8f91b2325f9530fa5f7cc7df0a9288b27ca7"
+          }
+        },
+        "order_authority": false
+      }
+    }
+  ],
+  "outcomes_computed": false,
+  "readiness": {
+    "capabilities": {
+      "actual_fund_history": {
+        "evidence_path": "config/defensive-factor-rotation.json",
+        "evidence_sha256": "5a60e8c5816de547a64e333bae748fa1704898b685b1cc5a5c955cca6e6a8ad4",
+        "verified": true
+      },
+      "factor_mandates": {
+        "evidence_path": "config/defensive-factor-rotation.json",
+        "evidence_sha256": "5a60e8c5816de547a64e333bae748fa1704898b685b1cc5a5c955cca6e6a8ad4",
+        "verified": true
+      },
+      "post_inception_and_actions": {
+        "evidence_path": "config/defensive-factor-rotation.json",
+        "evidence_sha256": "5a60e8c5816de547a64e333bae748fa1704898b685b1cc5a5c955cca6e6a8ad4",
+        "verified": true
+      },
+      "unleveraged_fund_identity": {
+        "evidence_path": "config/defensive-factor-rotation.json",
+        "evidence_sha256": "5a60e8c5816de547a64e333bae748fa1704898b685b1cc5a5c955cca6e6a8ad4",
+        "verified": true
+      }
+    },
+    "checked_at": "2026-10-10T16:24:56.491056+00:00",
+    "data_scope": "factor_etf_portfolio",
+    "new_market_observations": false,
+    "schema_version": 1,
+    "stock_data_still_blocked": true,
+    "verified_etf_source": {
+      "adapter": "defensive_factor_rotation_20261011",
+      "policy": "config/defensive-factor-rotation.json",
+      "policy_sha256": "5a60e8c5816de547a64e333bae748fa1704898b685b1cc5a5c955cca6e6a8ad4"
+    }
+  },
+  "study": {
+    "as_of": "2026-10-05",
+    "candidates": [
+      {
+        "defense_method": "highest_positive_excess",
+        "id": "four_factor_defense_momentum"
+      },
+      {
+        "defense_method": "all_positive_inverse_volatility",
+        "id": "four_factor_defense_diversified"
+      }
+    ],
+    "cash_asset": "BIL",
+    "cash_reserve": 0.02,
+    "data_scope": "factor_etf_portfolio",
+    "defensive_assets": [
+      "GLD",
+      "TLT",
+      "IEF"
+    ],
+    "equity_share_max": 0.7,
+    "equity_share_min": 0.3,
+    "factor_ids": [
+      "price_momentum",
+      "value_exposure",
+      "quality_exposure",
+      "low_volatility_exposure"
+    ],
+    "factor_symbols": [
+      "MTUM",
+      "VLUE",
+      "QUAL",
+      "USMV"
+    ],
+    "methodology": {
+      "cash_state": "If none qualify, defensive allocation is BIL and the equity sleeve is fixed at its30%minimum; do not divide by near-zero bill volatility or invent interest.",
+      "data": "Use the previously verified original factor-fund and benchmark snapshots. TLT comes from the exact same already-audited base manifest, with no new adjusted-price vintage or fabricated history.",
+      "defensive_selection": "At completed month ends, retain defensive funds whose126-session adjusted return strictly exceeds BIL over the same interval. One method selects the highest return, ticker as tie-breaker. The other inverse-volatility weights all eligible defensive funds.",
+      "equity": "Each equity factor retains25%of the equity sleeve. Balance this aggregate sleeve and the selected defensive sleeve using trailing63-session volatility; constrain the equity share to30%-70%of98%invested capital.",
+      "hypothesis": "A permanently held gold defense may fail in some regimes. Compare an unchanged four-factor equity core with defensive selection across gold,long-duration Treasuries,intermediate Treasuries and actual bills.",
+      "independent_forward_validation": false,
+      "interpretation": "Two defensive-allocation hypotheses on four existing economic factor exposures, not two newly discovered independent factors. They are formed after94prior configurations; preserve all failures.",
+      "order_authority": false,
+      "risks": "Treasury duration and gold can both lose money. Relative momentum and diversification do not guarantee any maximum drawdown.",
+      "timing": "Only completed month-end information; next-session-open base or one-extra-session stressed execution. Original USD10,000,USD1commissions,5/20bp costs and all program Sharpe/SPY/15%drawdown gates remain unchanged."
+    },
+    "momentum_sessions": 126,
+    "new_configurations": 2,
+    "prior_evaluated_configurations": 94,
+    "schema_version": 1,
+    "study_id": "defensive_factor_rotation_20261011",
+    "volatility_sessions": 63
+  }
+}

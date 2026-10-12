@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "profile_id": "prospective_dollar_guard_v1",
+  "source_candidate_id": "semiconductor_dollar_half_guard",
+  "source_candidate_spec_sha256": "1042e7e08f3e7c6de40fe88b509aa9bd8e596a1a92674eeb111f33ab58fb8960",
+  "source_registration": {
+    "path": "evidence/dollar_risk_guard_20261011_registration.json",
+    "sha256": "928cb2954a37db17347df6e7e520e72ebb30beeba606fa35f5905ddfc9bc46b9"
+  },
+  "required_original_review_status": "rejected_historical",
+  "inputs": {
+    "collector_id": "prospective_dollar_guard_inputs_v1",
+    "directory": "data/prospective-dollar-inputs-v1",
+    "parent_policy": "config/prospective-data.json",
+    "parent_archive": "data/prospective-market-v1",
+    "additional_symbols": ["QQQ", "XLK", "SOXX"],
+    "additional_macro_series": ["DTWEXBGS"],
+    "dollar_calendar_url": "https://www.federalreserve.gov/releases/h10/releaseDates.json",
+    "earlier_releases_per_query": 2,
+    "maximum_dollar_observation_age_days": 14,
+    "inherit_only_matching_completed_session": true,
+    "retain_parent_acquisition_times": true,
+    "record_before_next_open": true,
+    "first_snapshot_is_baseline_only": true,
+    "backfill_missed_observations": false,
+    "compute_strategy_returns": false,
+    "order_authority": false
+  },
+  "targets": {
+    "observer_id": "prospective_dollar_guard_targets_v1",
+    "directory": "data/prospective-dollar-targets-v1",
+    "initial_target_from_latest_known_completed_month": true,
+    "update_only_for_new_completed_month": true,
+    "retain_recorded_target_when_no_new_month": true,
+    "target_investment_budget": 0.98,
+    "hypothetical_base_delay_sessions": 1,
+    "hypothetical_stress_delay_sessions": 2,
+    "compute_strategy_returns": false,
+    "initialize_portfolio": false,
+    "submit_orders": false,
+    "update_research_champion": false,
+    "order_authority": false
+  },
+  "model": {
+    "experiment_id": "prospective_dollar_guard_accounts_v1",
+    "directory": "data/prospective-dollar-accounts-v1",
+    "source_candidate_id": "semiconductor_dollar_half_guard",
+    "source_historical_status": "rejected_historical",
+    "symbols": ["SPY", "MTUM", "VLUE", "QUAL", "USMV", "GLD", "IEF", "TLT", "BIL", "QQQ", "XLK", "SOXX"],
+    "capital_usd_per_account": 10000.0,
+    "commission_per_order": 1.0,
+    "scenarios": [
+      {"id": "base", "cost_bps": 5.0, "delay_sessions": 1},
+      {"id": "stress", "cost_bps": 20.0, "delay_sessions": 2}
+    ],
+    "minimum_observed_sessions_for_reported_sharpe": 63,
+    "benchmark_symbol": "SPY",
+    "price_encoding": "within_snapshot_ratio_chain",
+    "pause_on_unexplained_previous_raw_close_revision": true,
+    "require_each_market_session_actual_input_receipt": true,
+    "require_each_market_session_target_observation": true,
+    "target_must_be_recorded_before_model_execution_open": true,
+    "initial_capital_anchor_has_zero_return_and_no_interest": true,
+    "model_fills_are_broker_fills": false,
+    "backfill_missing_observations": false,
+    "automatic_live_deployment": false,
+    "update_research_champion": false,
+    "order_authority": false
+  },
+  "methodology": {
+    "scope": "A separately registered prospective research experiment for the historically rejected dollar-only guard. Preserve the original macro experiment,all previous archives and116completed historical configurations. No new historical strategy evaluation,new economic factor,broker account or trading authority.",
+    "inputs": "Reuse only the matching actual parent snapshot and its unchanged bytes and acquisition times. Genuinely acquire actual QQQ,XLK,SOXXquotes and the advertised official H10calendar plus the two earlier releases for each latest-completed-month risk query. Freshly acquired archived publications remain historical context,not earlier prospective observations or authenticated first-publication timestamps.",
+    "target": "Use the unchanged source-bound composed_monthly_target helper and original dollar-only half-budget rule on the latest completed month. Reuse the actual published-vintage parser,strictly later release availability,14-day age bound and within-method comparison. Initial target is recorded now,not backdated to the rule month. Later daily input cannot retune that target until a new completed month is observed.",
+    "model": "Four independent USD10000strategy/SPYbase/stress model accounts,not four strategies or actual brokerage holdings. Extend the frozen versioned funded and independent accounting to the explicitly declared12-symbol universe without changing original macro-profile code or its hashes. Same5/20bp,USD1per order,1/2sessiondelay and initial deployment costs.",
+    "timing": "Every model day requires its own actual on-time input and target receipts;missing days are never reconstructed from later histories. Within-snapshot adjusted-price ratios bridge vendor normalization;unexplained previous raw-close revisions pause accounting. Replay and independent bt must agree before appending;old account rows remain unchanged.",
+    "limits": "The source strategy still fails ten-year SPYoutperformance. Forward observations do not erase historical failure or constitute complete search-bias correction. Zero model observations have null return,Sharpe,CAGR and drawdown;before63actual model sessions Sharpe/CAGR remain unreported. No model fill is an order,and no model result automatically promotes a champion."
+  }
+}

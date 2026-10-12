@@ -1,0 +1,97 @@
+{
+  "actual_engine_migration": {
+    "all_prior_records_and_exact_event_prefix_preserved": true,
+    "new_engine_sha256": "65eedd47216bb8c608960d19f2ae5b4408644f9816c7faf325fafae3f5d7fd92",
+    "new_event_sha256": "bc5e65679be55c4f96de6b3b0f082938980fb5b769ba6e9c69e81dd0f47e20dc",
+    "new_migration_events": 1,
+    "previous_engine_sha256": "0a36a3033ccffbbf2d8474b4e73ff5ddaad6d3c4b5922600c0eb8541ed59f9ab",
+    "previous_event_sha256": "0650f1dbc0b27754a3aadbbea95682d56b605fc3561968f8e7247f320830688f"
+  },
+  "all_seven_existing_forward_profiles_unchanged": true,
+  "candidate_registration_performed": false,
+  "completed_configurations": 120,
+  "completed_reviews": 36,
+  "existing_Oct17_definition_queue_changed": false,
+  "existing_frozen_forward_rules_replaced": false,
+  "investment_objective_verified": false,
+  "new_economic_factor_definitions": 0,
+  "new_registered_candidates": 0,
+  "order_authority": false,
+  "prepared_candidate_id": "semiconductor_dollar_inflation_gold_guard",
+  "prepared_readiness_sha256": "b910e301ac9e68c87bacf4d44b7ef6d24e4ae2993bd4a3f632e8f95d9f25215c",
+  "prepared_spec_file_sha256": "713ce7f986c8a082eca5071c66b0c3239bb6bc9673e2a553391059a139613802",
+  "prepared_spec_sha256": "4a2903216fb5c5eae69d898acc6e17e60fa6cc4f0633d4f8ba0aea424eb04307",
+  "preserved_profile_control_hashes": {
+    "data/prospective-dollar-accounts-v1/head.json": "8a97dd04af94e3b35490e74ee12441e7abacb8a5a6860725714f16f0d2353bdd",
+    "data/prospective-dollar-accounts-v1/registration.json": "b6c9247d3cccb6d8b5ccc34d77cefbce62c44cc55f28b265eaac6bd3ce8af26b",
+    "data/prospective-dollar-inputs-v1/head.json": "9a4eb196c6f5e4e61be2e22306c23eeb84db67c68c030a676faf8fefd02c0442",
+    "data/prospective-dollar-inputs-v1/registration.json": "f913627fa54faf475a303a0da7326db4e7c4b7676279dbbfad0fec83d708ea23",
+    "data/prospective-dollar-targets-v1/head.json": "57a5a6e0a49471451bcc2289776537af91d66ec309e2c227cf8843b5cf0db9e7",
+    "data/prospective-dollar-targets-v1/registration.json": "3e5d01e56b22fc8d60cf363b7b4f6d8bd97404704c566801201b61a557c8449e",
+    "data/prospective-factor-inputs-v2/head.json": "ffa715f35851df18a931753c0af8ee6d613d05c066e1c3abb8d131d31d8daa16",
+    "data/prospective-factor-inputs-v2/registration.json": "11c9cd6659c3efe58e8334d363d2ab1b4bc2b8c2461a9d11f29b5769de0353eb",
+    "data/prospective-market-v1/head.json": "6c3be7f4e6c69d95c56a9bf5102c1f60637e82cbe32ed6c91ca729e67271c87c",
+    "data/prospective-market-v1/registration.json": "91f33b965d5a36205c79e16a6da0aeee6c00844748909cf452324477bd7fccf5",
+    "data/prospective-research-accounts-v1/head.json": "8a97dd04af94e3b35490e74ee12441e7abacb8a5a6860725714f16f0d2353bdd",
+    "data/prospective-research-accounts-v1/registration.json": "f2f5d822db1b875c15a5d05861e9ecdc10b63d62748c729ab6d2b992930b1d1f",
+    "data/prospective-target-observations-v1/head.json": "0b21433518e75b222ed61e63eafb8819468b9422c7163bc85da17dd64d6473e3",
+    "data/prospective-target-observations-v1/registration.json": "2c3c5a50fb7f2e870089429446c1616b9eee76bee34d0e4057439d7cb28da44d"
+  },
+  "recorded_at": "2026-10-11T06:44:38.112630+00:00",
+  "research_snapshot": "evidence/research_program_2026-W41_inflation_plan_v41.json",
+  "schema_version": 1,
+  "source_bound_audit": "evidence/research_program_source_bound_audit_v15.json",
+  "strategy_outcomes_computed": false,
+  "study": {
+    "as_of": "2026-10-05",
+    "automatic_live_deployment": false,
+    "candidates": [
+      {
+        "gold_preserved_when_compensation_rising": true,
+        "id": "semiconductor_dollar_inflation_gold_guard"
+      }
+    ],
+    "cash_reserve": 0.02,
+    "comparison_candidate": "semiconductor_dollar_half_guard",
+    "compensation_change_threshold": 0.0,
+    "data_scope": "factor_etf_portfolio",
+    "data_start": "2015-08-10",
+    "eligible_not_before": "2026-10-17T09:00:00+08:00",
+    "existing_forward_rules_changed": false,
+    "methodology": {
+      "authority": "No new economic definition,factor-independence claim,leveraged product,order or frozen forward replacement. Prepared/unregistered is not pending/complete/champion. All120completed configurations and original qualification gates remain;every future failed outcome must be retained.",
+      "baseline": "Reuse the original four-factor/SOXX/gold monthly budget,half-equitySOXX,equalfourfamilyremainder,63-sessionvolatility and30%-70%equity bounds. Keep original2%targetidle cash,existing realBIL exposure,long-only funded constraints and costs. This is not a continuously maintained cash floor.",
+      "eligibility": "Prepare source/code/targets now without portfolio performance. Register the actual candidate no earlier than2026-10-17T09:00Asia/Shanghai;direct genericregistration and wrapper share this gate. Publish actual candidate registration before any formal outcome. Keep existing IJR/PKWweeklydefinitions and two six-family candidates unchanged.",
+      "execution": "Monthly absolute targets only,next-session open5bpbase/onefurther-session20bpstress,USD1perorder,freshUSD10000in each unchanged10y/5ywindow. ActualBILreceives removed capital. Later closes do not replace dated pending intents. Evaluation must use original fundedv2 and independentbt.",
+      "hypothesis": "A dollar funding-risk trigger need not reduce gold whenever inflation compensation is rising. Keep all four factor equities and the semiconductor share halved as before;retain original gold only if dollar strength and a positive63-session as-published T10YIEchange coincide. Otherwise use the original dollar-only full-risk halving. This tests exactly one economic exception,not a threshold/share grid.",
+      "inputs": "Read actual H10dollar vintages with original within-method comparisons and declared date-conflict policy. T10YIEcomes from the separately sealed225ALFREDsnapshots,previous-NYSE-session vintagecutoff,two-session observationlag and7dayfreshness. Current histories never replace missing input. Missing/stale/malformed data stops;no newstandby or cash fallback.",
+      "limits": "Gold is not a reliable inflation hedge over practical investment horizons. T10YIEcontains risk/liquidity premiums and shares real-yield information;the proposed exception may worsen drawdown or returns. Current fund methodologies and dated sourceavailability do not establish every original intraday release or historical continuity. Prior results are exposed and no selection-adjusted alpha is claimed.",
+      "sources": [
+        "https://fred.stlouisfed.org/series/T10YIE",
+        "https://www.federalreserve.gov/econres/notes/feds-notes/tips-from-tips-update-and-discussions-20190521.html",
+        "https://www.nber.org/papers/w18706"
+      ]
+    },
+    "new_economic_factor_definitions": 0,
+    "new_factor_independence_claimed": false,
+    "order_authority": false,
+    "original_control_candidate": "four_factor_semiconductor_sector50",
+    "planned_configurations": 1,
+    "risk_change_sessions": 63,
+    "risk_off_investment_scale": 0.5,
+    "schema_version": 1
+  },
+  "target_budget_audit": {
+    "all_four_equity_families_remain_positive": true,
+    "candidate_registration_performed": false,
+    "eligible_not_before": "2026-10-17T09:00:00+08:00",
+    "monthly_decisions": 131,
+    "prepared_at": "2026-10-11T06:42:34.645349+00:00",
+    "strategy_outcomes_computed": false,
+    "target_sha256": "e413f0b618451769803028a6f1279f39d119ec42d9dc8b4e03697277eedfe97f",
+    "target_shape": [
+      2805,
+      12
+    ]
+  }
+}

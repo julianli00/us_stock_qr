@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "study_id": "six_factor_strategy_2026_W42",
+  "data_scope": "factor_etf_portfolio",
+  "as_of": "2026-10-05",
+  "eligible_not_before": "2026-10-17T09:00:00+08:00",
+  "prior_completed_configurations_at_planning": 108,
+  "planned_configurations": 2,
+  "factor_ids": [
+    "price_momentum",
+    "value_exposure",
+    "quality_exposure",
+    "low_volatility_exposure",
+    "size_exposure_ijr_v1",
+    "net_buyback_exposure_pkw_v1"
+  ],
+  "factor_symbols": ["MTUM", "VLUE", "QUAL", "USMV", "IJR", "PKW"],
+  "baseline_policy": "config/factor-gold-risk.json",
+  "source_policy": "config/factor-family-expansion.json",
+  "volatility_sessions": 63,
+  "minimum_share_of_equity": 0.08333333333333333,
+  "maximum_share_of_equity": 0.25,
+  "cash_reserve": 0.02,
+  "candidates": [
+    {"id": "six_factor_equal_family", "factor_weighting": "equal"},
+    {"id": "six_factor_bounded_inverse_volatility", "factor_weighting": "inverse_volatility"}
+  ],
+  "methodology": {
+    "hypothesis": "Broaden economic characteristics using verified size and net-share-reduction exposures rather than another momentum implementation. Compare equal family allocation with a fixed bounded marginal-volatility allocation.",
+    "budgets": "Both inherit identical completed-month targets from the original four-factor/gold63-session risk balance,including30%-70%equity bounds and2%target idle cash. Replace only equity-family composition;gold,decision dates and aggregate equity target do not differ between these two configurations.",
+    "equal": "Each of the6family funds receives one sixth of the original equity budget.",
+    "inverse_volatility": "Reuse the unchanged bounded_factor_shares helper on trailing63session sample daily volatility. Every family's equity share is bounded between half and one-and-a-half times the equal-family share,not fitted bounds.",
+    "risk_interpretation": "Inverse marginal volatility is not full covariance equal-risk contribution. Six issuer-defined characteristics are not six orthogonal return sources; correlated equity beta,sector overlap,share-repurchase leverage and IJR eligibility screens remain risks.",
+    "source": "Actual post-inception ETF observations and verified current issuer mandates;no recreated proprietary scores,synthetic index histories or current holdings as historical constituents. S&Pmethodology403and incomplete historical rule archives remain visible.",
+    "timing": "Completed month-end information only,next-session-open5bpbase or one additional-session20bpstress;originalUSD10,000fresh capital,USD1ticket costs and all retained Sharpe/SPY/15%drawdown gates. No leverage or borrowing.",
+    "registration": "The code and two complete specifications may be prepared now,but candidate registration and formal outcome calculation require the real2026-W42cycle to have registered both queued definitions. Do not override clocks,edit eligibility or count planned candidates as evaluations.",
+    "selection": "Formed after108completed configurations on exposed historical windows;not an untouched holdout. Only these two fixed configurations,no shares/lookback search after outcomes. Original22candidate selection diagnostics do not cover these plans.",
+    "forward": "The newly expanded17source archive provides data baselines,not portfolio returns or independent strategy validation. This plan does not place orders,start an account or restart old shadow ledgers.",
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

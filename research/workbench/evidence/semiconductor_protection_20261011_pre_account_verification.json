@@ -1,0 +1,56 @@
+{
+  "candidate_returns_or_metrics_computed": false,
+  "checked_at": "2026-10-11T11:52:42.200816+00:00",
+  "complete_original_source_paths_checked": 8,
+  "dynamic_protected_real_data_account_paths_computed": 0,
+  "existing_bil_preserved_and_only_extra_removed_risk_transferred": true,
+  "full_source_market_rows": 2805,
+  "independent_decimal_floor_law_probes": 1310,
+  "investment_objective_verified": false,
+  "maximum_independent_decimal_floor_target_error": 2.220446049250313e-16,
+  "maximum_prepared_vs_original_seeded_source_error": 0.0,
+  "new_market_price_requests": 0,
+  "new_registered_candidates": 0,
+  "new_strategy_evaluations": 0,
+  "old_124_trials_40_reviews_and_exact_journal_unchanged_before_migration": true,
+  "old_prospective_registration_and_head_bytes_unchanged": true,
+  "order_authority": false,
+  "original_bundle_references": [
+    {
+      "original_bundle_reference": {
+        "path": "reports/sector-growth-balance-20261011/four_factor_semiconductor_sector50/bundle.json",
+        "sha256": "94f70da5beff41b3c0165ed215ac5f7a326310c8e891b8d8d40f355f2dacd469"
+      },
+      "source_candidate_id": "four_factor_semiconductor_sector50"
+    },
+    {
+      "original_bundle_reference": {
+        "path": "reports/dollar-risk-guard-20261011/semiconductor_dollar_half_guard/bundle.json",
+        "sha256": "6f48940e4a66fc8fd1f23a0d291b6f9e3fb84a3eedad24e716b2eb6b7a965645"
+      },
+      "source_candidate_id": "semiconductor_dollar_half_guard"
+    }
+  ],
+  "original_monthly_baseline_sha256": {
+    "semiconductor_dollar_ratchet_protection": "ca39767f938501b3c24cc0e638b9546d786bf513f38a23082b4b2cbd697929a9",
+    "semiconductor_ratchet_protection": "fa0cde19518df075e7bd88388b7d6d37e061f0a7822a5a0139621599f33cd638"
+  },
+  "original_monthly_decisions_per_candidate": 131,
+  "original_source_candidate_ids": [
+    "four_factor_semiconductor_sector50",
+    "semiconductor_dollar_half_guard"
+  ],
+  "prepared_candidates": [
+    "semiconductor_ratchet_protection",
+    "semiconductor_dollar_ratchet_protection"
+  ],
+  "prepared_spec_sha256": {
+    "semiconductor_dollar_ratchet_protection": "3747d0a7f1da9e56d48e5e0394d3642f63a0c6b824f4788732b640a84d1bdd92",
+    "semiconductor_ratchet_protection": "126753983146a1f74373b01d7c0757a16d938c6f949e9499e61b2dff89c7c904"
+  },
+  "probe_wealth_values_are_synthetic_not_new_strategy_accounts": true,
+  "protection_limit_and_trade_band_reused_not_fitted": true,
+  "schema_version": 1,
+  "source_assets": 12,
+  "source_helpers_and_transitive_frozen_dependencies_verified": true
+}

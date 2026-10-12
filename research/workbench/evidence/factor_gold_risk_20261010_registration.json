@@ -1,0 +1,247 @@
+{
+  "candidates": [
+    {
+      "registration": {
+        "candidate_id": "four_factor_gold_risk_balance",
+        "data_scope": "factor_etf_portfolio",
+        "families": [
+          "earnings_quality",
+          "low_volatility",
+          "momentum",
+          "value"
+        ],
+        "order_authority": false,
+        "readiness_sha256": "00a0972248df248eba04e75d7c010690a1af87e8b154f56ae9a34414d5c031c2",
+        "registered_at": "2026-10-10T09:06:20.902546+00:00",
+        "spec_sha256": "8917e7d02d771a7aa0c6aa4f4a69b1fdb4c570782fdec8c95be08c85df4577f2"
+      },
+      "spec": {
+        "asset_leverage": {
+          "BIL": 1.0,
+          "GLD": 1.0,
+          "IEF": 1.0,
+          "MTUM": 1.0,
+          "QUAL": 1.0,
+          "SPY": 1.0,
+          "USMV": 1.0,
+          "VLUE": 1.0
+        },
+        "configuration": {
+          "daily_volatility_target": null,
+          "daily_weight_band": null,
+          "id": "four_factor_gold_risk_balance"
+        },
+        "data_scope": "factor_etf_portfolio",
+        "evaluation_as_of": "2026-10-05",
+        "factor_ids": [
+          "price_momentum",
+          "value_exposure",
+          "quality_exposure",
+          "low_volatility_exposure"
+        ],
+        "frozen_files": {
+          "config/factor-gold-risk.json": "6c550602c98fa5b09e5b59791bdbbe569c9b4082e2d1dfc9ba4cd5639a25ec63",
+          "src/us_quant/factor_gold_risk.py": "412a80a5d608a3cb0ad3bce6b2861b80fcc73b7f28f27697ccd60528874bf8d5"
+        },
+        "history_status": "exposed_history_not_independent_holdout",
+        "id": "four_factor_gold_risk_balance",
+        "leveraged_products_allowed": false,
+        "market": {
+          "close": {
+            "path": "data/factor-gold-risk-20261010/market-close.csv",
+            "sha256": "b098f783bbf7a4ca56520e11c6e13edbb0eb2673ed7aaec02b89981ff74fabce"
+          },
+          "open": {
+            "path": "data/factor-gold-risk-20261010/market-open.csv",
+            "sha256": "dc2e1cf8c83c8731a03452eec60ad3cc036b8534cfed94b054c8f883b459273f"
+          },
+          "raw_close": {
+            "path": "data/factor-gold-risk-20261010/market-raw_close.csv",
+            "sha256": "82eae7514bf8de48bfe07cc72331ed758a27f561180ff5ad44d5d70e0dca71f9"
+          },
+          "risk_free": {
+            "path": "data/factor-gold-risk-20261010/market-risk_free.csv",
+            "sha256": "3b59869f597ac9d2573ffca1616938da4c2df0da24bd38799ce3e39b1f0509cc"
+          },
+          "volume": {
+            "path": "data/factor-gold-risk-20261010/market-volume.csv",
+            "sha256": "7ab6fbbe413fee994f65e27ebfbf15e28aa18055acdc12bd527918d5bbe60830"
+          }
+        },
+        "order_authority": false
+      }
+    },
+    {
+      "registration": {
+        "candidate_id": "four_factor_gold_daily_vol12",
+        "data_scope": "factor_etf_portfolio",
+        "families": [
+          "earnings_quality",
+          "low_volatility",
+          "momentum",
+          "value"
+        ],
+        "order_authority": false,
+        "readiness_sha256": "00a0972248df248eba04e75d7c010690a1af87e8b154f56ae9a34414d5c031c2",
+        "registered_at": "2026-10-10T09:06:22.040565+00:00",
+        "spec_sha256": "a86d011b525b30889bb840a9191285eb0f845f487bd56f16df8cd1acf14d40d8"
+      },
+      "spec": {
+        "asset_leverage": {
+          "BIL": 1.0,
+          "GLD": 1.0,
+          "IEF": 1.0,
+          "MTUM": 1.0,
+          "QUAL": 1.0,
+          "SPY": 1.0,
+          "USMV": 1.0,
+          "VLUE": 1.0
+        },
+        "configuration": {
+          "daily_volatility_target": 0.12,
+          "daily_weight_band": 0.05,
+          "id": "four_factor_gold_daily_vol12"
+        },
+        "data_scope": "factor_etf_portfolio",
+        "evaluation_as_of": "2026-10-05",
+        "factor_ids": [
+          "price_momentum",
+          "value_exposure",
+          "quality_exposure",
+          "low_volatility_exposure"
+        ],
+        "frozen_files": {
+          "config/factor-gold-risk.json": "6c550602c98fa5b09e5b59791bdbbe569c9b4082e2d1dfc9ba4cd5639a25ec63",
+          "src/us_quant/factor_gold_risk.py": "412a80a5d608a3cb0ad3bce6b2861b80fcc73b7f28f27697ccd60528874bf8d5"
+        },
+        "history_status": "exposed_history_not_independent_holdout",
+        "id": "four_factor_gold_daily_vol12",
+        "leveraged_products_allowed": false,
+        "market": {
+          "close": {
+            "path": "data/factor-gold-risk-20261010/market-close.csv",
+            "sha256": "b098f783bbf7a4ca56520e11c6e13edbb0eb2673ed7aaec02b89981ff74fabce"
+          },
+          "open": {
+            "path": "data/factor-gold-risk-20261010/market-open.csv",
+            "sha256": "dc2e1cf8c83c8731a03452eec60ad3cc036b8534cfed94b054c8f883b459273f"
+          },
+          "raw_close": {
+            "path": "data/factor-gold-risk-20261010/market-raw_close.csv",
+            "sha256": "82eae7514bf8de48bfe07cc72331ed758a27f561180ff5ad44d5d70e0dca71f9"
+          },
+          "risk_free": {
+            "path": "data/factor-gold-risk-20261010/market-risk_free.csv",
+            "sha256": "3b59869f597ac9d2573ffca1616938da4c2df0da24bd38799ce3e39b1f0509cc"
+          },
+          "volume": {
+            "path": "data/factor-gold-risk-20261010/market-volume.csv",
+            "sha256": "7ab6fbbe413fee994f65e27ebfbf15e28aa18055acdc12bd527918d5bbe60830"
+          }
+        },
+        "order_authority": false
+      }
+    }
+  ],
+  "readiness": {
+    "capabilities": {
+      "actual_fund_history": {
+        "evidence_path": "data/multifactor-stability-20261010/manifest.json",
+        "evidence_sha256": "ea128cfe0fa71db93080234787f0779f0236b88466ab01f8e78336bc03652aa5",
+        "verified": true
+      },
+      "factor_mandates": {
+        "evidence_path": "config/multifactor-stability.json",
+        "evidence_sha256": "197892d844fd749c1ef06cda8b1eeb025b6edfe546e42f020dc721bc09209715",
+        "verified": true
+      },
+      "post_inception_and_actions": {
+        "evidence_path": "data/multifactor-stability-20261010/manifest.json",
+        "evidence_sha256": "ea128cfe0fa71db93080234787f0779f0236b88466ab01f8e78336bc03652aa5",
+        "verified": true
+      },
+      "unleveraged_fund_identity": {
+        "evidence_path": "data/multifactor-stability-20261010/manifest.json",
+        "evidence_sha256": "ea128cfe0fa71db93080234787f0779f0236b88466ab01f8e78336bc03652aa5",
+        "verified": true
+      }
+    },
+    "checked_at": "2026-10-10T09:06:18.801275+00:00",
+    "data_scope": "factor_etf_portfolio",
+    "price_as_of": "2026-10-05",
+    "revalidation_not_new_market_observation": true,
+    "schema_version": 1,
+    "stock_data_still_blocked": true,
+    "verified_etf_source": {
+      "adapter": "frozen_multifactor_etf_20261010",
+      "base_manifest": "data/factor-round-20261007/base/manifest.json",
+      "base_manifest_sha256": "8cc85f89a05c0324571abc1cb44d8a1d7dfd76d55271f34ad4da973e5c0f9f6d",
+      "factor_manifest": "data/multifactor-stability-20261010/manifest.json",
+      "factor_manifest_sha256": "ea128cfe0fa71db93080234787f0779f0236b88466ab01f8e78336bc03652aa5",
+      "policy": "config/multifactor-stability.json",
+      "policy_sha256": "197892d844fd749c1ef06cda8b1eeb025b6edfe546e42f020dc721bc09209715",
+      "registration": "evidence/multifactor_stability_20261010_registration_v2.json",
+      "registration_sha256": "721932a098fb8061d58e8c402bb74ade08512007c13f17be91512c2b4f940d8e"
+    }
+  },
+  "registered_before_outcomes": true,
+  "study": {
+    "as_of": "2026-10-05",
+    "candidates": [
+      {
+        "daily_volatility_target": null,
+        "daily_weight_band": null,
+        "id": "four_factor_gold_risk_balance"
+      },
+      {
+        "daily_volatility_target": 0.12,
+        "daily_weight_band": 0.05,
+        "id": "four_factor_gold_daily_vol12"
+      }
+    ],
+    "capital_usd": 10000,
+    "cash_reserve": 0.02,
+    "commission_per_order": 1.0,
+    "data_scope": "factor_etf_portfolio",
+    "equity_sleeve_max": 0.7,
+    "equity_sleeve_min": 0.3,
+    "factor_ids": [
+      "price_momentum",
+      "value_exposure",
+      "quality_exposure",
+      "low_volatility_exposure"
+    ],
+    "factor_symbols": [
+      "MTUM",
+      "VLUE",
+      "QUAL",
+      "USMV"
+    ],
+    "hypotheses": [
+      "Keep four economically distinct actual equity-factor exposures, but remove fixed duration exposure and balance aggregate equity risk against gold risk rather than assuming four independent equity funds.",
+      "Compare the same monthly allocation with a daily, trailing-only portfolio-volatility target and a fixed5percentage-point trade band; no parameter grid or leveraged products."
+    ],
+    "methodology": {
+      "automatic_live_deployment": false,
+      "daily_overlay": "Use the most recent completed-month baseline target. Daily variant scales non-BIL holdings downward using trailing63-session covariance until target annualized volatility is at most12%; freed weight goes to BIL. Do not scale upward beyond the monthly baseline.",
+      "evidence": "Register code, exact market panels and cutoff in the recurring program before calculating outcomes. Use its actual simulator/bt reviewer and unchanged Sharpe/SPY/15%drawdown goals.",
+      "execution": "Decisions use observed closes only; fills occur at the next session open, or one further session with20bp stress. Identical USD10,000 andUSD1 commissions; no same-close or hindsight fills.",
+      "monthly_weights": "Four factor ETFs each receive25% of the equity sleeve. Balance that fixed basket and GLD by inverse63-session realized volatility, with equity share constrained to30%-70% of the98% invested budget.",
+      "order_authority": false,
+      "papers_are_motivation_not_exact_replications": true,
+      "pending_orders": "Never issue overlapping modeled orders. A monthly allocation update occurring while an older target is pending remains requested until the next eligible close; no pending target is silently overwritten.",
+      "scope": "Actual factor ETF portfolio, not new direct-stock fundamental signals. The SEC/stock-history blockers remain unchanged; no new factor is claimed, only two new fixed allocation configurations.",
+      "selection_bias": "This hypothesis was formed after previous negative factor experiments. All outcomes count; historical qualification is not independent future alpha.",
+      "sources": [
+        "https://doi.org/10.1111/jofi.12513",
+        "https://doi.org/10.3905/jpm.2008.35.1.40"
+      ],
+      "trade_trigger": "Initial and monthly allocation requests trade. Between month ends, trade only when maximum desired-versus-actual closing weight difference is at least5percentage points. This band makes the volatility level a target, not a continuously enforced ceiling."
+    },
+    "new_configurations": 2,
+    "prior_evaluated_configurations": 84,
+    "risk_lookback": 63,
+    "schema_version": 1,
+    "study_id": "factor_gold_risk_20261010"
+  }
+}

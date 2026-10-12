@@ -1,0 +1,46 @@
+{
+  "actual_observation_rows": 3328,
+  "actual_valid_observations": 3186,
+  "availability_audit": {
+    "all_available_no_later_than_decision": true,
+    "availability_sha256": "d91c8c383fd2f7b62de4c1ee4b428dbfdd095bbbd67ef25d0a5e8e21550b6ff2",
+    "carried_after_availability_sessions": 22,
+    "current_historical_download_not_vintage_proof": true,
+    "decision_sessions": 2805,
+    "maximum_observation_age_days": 5,
+    "old_forward_archive_includes_this_series": false,
+    "raw_or_aligned_credit_values_published": false
+  },
+  "current_data_not_ALFRED_vintage_proof": true,
+  "definition": "Moody seasoned long-maturity investment-grade Baa corporate yield minus10-year Treasury yield; not high-yield OAS and not a duration-neutral default-risk factor.",
+  "exact_original_intraday_publication_time_verified": false,
+  "existing_forward_archive_includes_BAA10Y": false,
+  "first_observation": "2014-01-02",
+  "initially_considered_source": {
+    "access_limit": "FRED official notes limit the series to3years beginningApril2026.",
+    "full_10y_observations_acquired": false,
+    "restriction_bypassed": false,
+    "series": "BAMLH0A0HYM2",
+    "unauthorized_mirror_used": false,
+    "url": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+  },
+  "input_redistribution_authorized": false,
+  "last_observation": "2026-10-05",
+  "missing_raw_observations_retained": 142,
+  "new_economic_factor_definitions": 0,
+  "order_authority": false,
+  "provider_definition_transition": "Treasury input changed to direct US Treasury data beginning2019-06-21,per official FRED notes.",
+  "raw_and_aligned_values_not_published": true,
+  "raw_csv_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=BAA10Y&cosd=2014-01-01&coed=2026-10-05",
+  "schema_version": 1,
+  "source_file_sha256": {
+    "BAA10Y-source.html": "07560699e16839917c772f34121205aaef4272b0b315ccf090db7c52c4e94d47",
+    "BAA10Y.csv": "0e58e2968fa38443b37c050abf302757154a3c33c0c44c0e825d9e07870df2f9",
+    "ICE-source-restriction.html": "eeba8012040cf411624e6e6e78b76b7f0e7b60aa0b879443524fe8e9a8393155"
+  },
+  "source_series": "BAA10Y",
+  "source_url": "https://fred.stlouisfed.org/series/BAA10Y",
+  "strategy_outcomes_computed": false,
+  "units": "percentage_points",
+  "verified_at": "2026-10-10T20:42:09.936558+00:00"
+}

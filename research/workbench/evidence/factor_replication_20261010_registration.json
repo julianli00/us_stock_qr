@@ -1,0 +1,257 @@
+{
+  "candidates": [
+    {
+      "registration": {
+        "candidate_id": "quality_implementation_gold_monthly",
+        "data_scope": "factor_etf_portfolio",
+        "families": [
+          "earnings_quality",
+          "low_volatility",
+          "momentum",
+          "value"
+        ],
+        "order_authority": false,
+        "readiness_sha256": "dd0f16d867ddfacd65688eeca2cf636fd0ab024bfce672066b0fe5753d1ff36f",
+        "registered_at": "2026-10-10T11:26:25.785527+00:00",
+        "spec_sha256": "cf1e5fde10d73c8a9eb3b2f7cbd71e828a07bde91ad39a7606cda4b9967f71ea"
+      },
+      "spec": {
+        "asset_leverage": {
+          "BIL": 1.0,
+          "GLD": 1.0,
+          "IEF": 1.0,
+          "MTUM": 1.0,
+          "SPHQ": 1.0,
+          "SPY": 1.0,
+          "USMV": 1.0,
+          "VLUE": 1.0
+        },
+        "configuration": {
+          "daily_volatility_target": null,
+          "daily_weight_band": null,
+          "id": "quality_implementation_gold_monthly"
+        },
+        "data_scope": "factor_etf_portfolio",
+        "evaluation_as_of": "2026-10-05",
+        "factor_ids": [
+          "price_momentum",
+          "value_exposure",
+          "quality_exposure",
+          "low_volatility_exposure"
+        ],
+        "frozen_files": {
+          "config/factor-implementation-replication.json": "a188496e4971f7543e5c21a9c573e84f82f5c1e1a21689d8ebd5c014ce5bf3c1",
+          "src/us_quant/factor_replication.py": "31302bb83c36cfc930cdfa2f6098e8c8ac6e31fdc3c5db82aeeb69d92b7244df"
+        },
+        "history_status": "exposed_history_not_independent_holdout",
+        "id": "quality_implementation_gold_monthly",
+        "leveraged_products_allowed": false,
+        "market": {
+          "close": {
+            "path": "data/factor-replication-prepared-20261010/close.csv",
+            "sha256": "eed35f82a777fcfd95a5031f0950b919a3da2c7d0af3dd1938fa994b72b23cb7"
+          },
+          "open": {
+            "path": "data/factor-replication-prepared-20261010/open.csv",
+            "sha256": "38fc3608e2f8bbcd9545083e2c4bc5a171c3e3117ebbfb67ede9e484001a9816"
+          },
+          "raw_close": {
+            "path": "data/factor-replication-prepared-20261010/raw_close.csv",
+            "sha256": "a95170c1afc56a68c0219472cb23574851e478e14798c0aa26c84d3f2a45d893"
+          },
+          "risk_free": {
+            "path": "data/factor-replication-prepared-20261010/risk_free.csv",
+            "sha256": "1e76713f31e304a4a6668d25b7892c386b3cddaf765782e79f058eae7f9460c9"
+          },
+          "volume": {
+            "path": "data/factor-replication-prepared-20261010/volume.csv",
+            "sha256": "b542d4b709bc73d452b851fe41e4726980fc96ffb61c259bc7d218e615d31245"
+          }
+        },
+        "order_authority": false
+      }
+    },
+    {
+      "registration": {
+        "candidate_id": "quality_implementation_gold_daily_vol12",
+        "data_scope": "factor_etf_portfolio",
+        "families": [
+          "earnings_quality",
+          "low_volatility",
+          "momentum",
+          "value"
+        ],
+        "order_authority": false,
+        "readiness_sha256": "dd0f16d867ddfacd65688eeca2cf636fd0ab024bfce672066b0fe5753d1ff36f",
+        "registered_at": "2026-10-10T11:26:26.982382+00:00",
+        "spec_sha256": "837dc8db7f59eb65790a0eb4c49f26920e0cfe1dc4e90a77fdcf926b034b1691"
+      },
+      "spec": {
+        "asset_leverage": {
+          "BIL": 1.0,
+          "GLD": 1.0,
+          "IEF": 1.0,
+          "MTUM": 1.0,
+          "SPHQ": 1.0,
+          "SPY": 1.0,
+          "USMV": 1.0,
+          "VLUE": 1.0
+        },
+        "configuration": {
+          "daily_volatility_target": 0.12,
+          "daily_weight_band": 0.05,
+          "id": "quality_implementation_gold_daily_vol12"
+        },
+        "data_scope": "factor_etf_portfolio",
+        "evaluation_as_of": "2026-10-05",
+        "factor_ids": [
+          "price_momentum",
+          "value_exposure",
+          "quality_exposure",
+          "low_volatility_exposure"
+        ],
+        "frozen_files": {
+          "config/factor-implementation-replication.json": "a188496e4971f7543e5c21a9c573e84f82f5c1e1a21689d8ebd5c014ce5bf3c1",
+          "src/us_quant/factor_replication.py": "31302bb83c36cfc930cdfa2f6098e8c8ac6e31fdc3c5db82aeeb69d92b7244df"
+        },
+        "history_status": "exposed_history_not_independent_holdout",
+        "id": "quality_implementation_gold_daily_vol12",
+        "leveraged_products_allowed": false,
+        "market": {
+          "close": {
+            "path": "data/factor-replication-prepared-20261010/close.csv",
+            "sha256": "eed35f82a777fcfd95a5031f0950b919a3da2c7d0af3dd1938fa994b72b23cb7"
+          },
+          "open": {
+            "path": "data/factor-replication-prepared-20261010/open.csv",
+            "sha256": "38fc3608e2f8bbcd9545083e2c4bc5a171c3e3117ebbfb67ede9e484001a9816"
+          },
+          "raw_close": {
+            "path": "data/factor-replication-prepared-20261010/raw_close.csv",
+            "sha256": "a95170c1afc56a68c0219472cb23574851e478e14798c0aa26c84d3f2a45d893"
+          },
+          "risk_free": {
+            "path": "data/factor-replication-prepared-20261010/risk_free.csv",
+            "sha256": "1e76713f31e304a4a6668d25b7892c386b3cddaf765782e79f058eae7f9460c9"
+          },
+          "volume": {
+            "path": "data/factor-replication-prepared-20261010/volume.csv",
+            "sha256": "b542d4b709bc73d452b851fe41e4726980fc96ffb61c259bc7d218e615d31245"
+          }
+        },
+        "order_authority": false
+      }
+    }
+  ],
+  "readiness": {
+    "capabilities": {
+      "actual_fund_history": {
+        "evidence_path": "config/factor-implementation-replication.json",
+        "evidence_sha256": "a188496e4971f7543e5c21a9c573e84f82f5c1e1a21689d8ebd5c014ce5bf3c1",
+        "verified": true
+      },
+      "factor_mandates": {
+        "evidence_path": "config/factor-implementation-replication.json",
+        "evidence_sha256": "a188496e4971f7543e5c21a9c573e84f82f5c1e1a21689d8ebd5c014ce5bf3c1",
+        "verified": true
+      },
+      "post_inception_and_actions": {
+        "evidence_path": "config/factor-implementation-replication.json",
+        "evidence_sha256": "a188496e4971f7543e5c21a9c573e84f82f5c1e1a21689d8ebd5c014ce5bf3c1",
+        "verified": true
+      },
+      "unleveraged_fund_identity": {
+        "evidence_path": "config/factor-implementation-replication.json",
+        "evidence_sha256": "a188496e4971f7543e5c21a9c573e84f82f5c1e1a21689d8ebd5c014ce5bf3c1",
+        "verified": true
+      }
+    },
+    "checked_at": "2026-10-10T11:26:23.819361+00:00",
+    "data_scope": "factor_etf_portfolio",
+    "detailed_factsheet_bytes_verified": false,
+    "schema_version": 1,
+    "stock_fundamental_data_still_blocked": true,
+    "verified_etf_source": {
+      "adapter": "factor_implementation_replication_20261010",
+      "factor_manifest": "data/factor-replication-source-20261010/manifest.json",
+      "factor_manifest_sha256": "62b51335c36761a048ac6c92261ec92fd2ca686c2c0ac958b2e0cbdc1e961ebf",
+      "policy": "config/factor-implementation-replication.json",
+      "policy_sha256": "a188496e4971f7543e5c21a9c573e84f82f5c1e1a21689d8ebd5c014ce5bf3c1"
+    }
+  },
+  "study": {
+    "as_of": "2026-10-05",
+    "candidates": [
+      {
+        "daily_volatility_target": null,
+        "daily_weight_band": null,
+        "id": "quality_implementation_gold_monthly"
+      },
+      {
+        "daily_volatility_target": 0.12,
+        "daily_weight_band": 0.05,
+        "id": "quality_implementation_gold_daily_vol12"
+      }
+    ],
+    "capital_usd": 10000,
+    "cash_reserve": 0.02,
+    "commission_per_order": 1.0,
+    "data_quality_revision": {
+      "allocation_rules_changed": false,
+      "formal_windows_changed": false,
+      "prior_intent_commit": "be2aaaaf",
+      "prior_policy_sha256": "3fb467f5513acbe33f6a2745b872a839572322a55f49035f1ef61f0824a95e7e",
+      "quality_audit": "evidence/factor_replication_quality_audit_20261010.json",
+      "quality_audit_sha256": "432196a11128d2518b276f893412a4e480045461eb8179d8a8be2a6976de7169",
+      "reason": "SPMO has238 zero-volume records, including the formal ten-year period. Do not fabricate volume or shorten the window. Retain original MTUM momentum and replace only QUAL with data-valid SPHQ.",
+      "source_rejected_planned_variants": 2,
+      "strategy_outcomes_seen_before_revision": false
+    },
+    "data_start": "2016-07-01",
+    "equity_sleeve_max": 0.7,
+    "equity_sleeve_min": 0.3,
+    "factor_ids": [
+      "price_momentum",
+      "value_exposure",
+      "quality_exposure",
+      "low_volatility_exposure"
+    ],
+    "factor_symbols": [
+      "MTUM",
+      "VLUE",
+      "SPHQ",
+      "USMV"
+    ],
+    "methodology": {
+      "controlled_change": "After a documented pre-result data gate, replace only the quality fund QUAL with SPHQ. Retain MTUM momentum,VLUE value,USMV low-volatility, equal four-factor equity shares,gold risk balance,63-session lookback,30%-70%equity share,costs and execution rules.",
+      "document_access_caution": "Current issuer product pages were accessible, but factsheet PDF links returned HTML rather than valid PDFs. Do not claim the PDF bytes or full historical methodology were independently verified.",
+      "fund_scope": "Actual live ETF returns, not a reconstruction of historical factor constituents. Current issuer product identity verifies the broad mandates; no claim that today's precise index rules applied unchanged throughout history.",
+      "history_previously_exposed": true,
+      "identity_caution": "The legacy SPVU issuer link now resolves to a Concentrated QVM product, so SPVU is excluded and the verified VLUE value implementation is retained.",
+      "independent_forward_validation": false,
+      "order_authority": false,
+      "parameters": "No parameter tuning, no fund selection by backtest results, no leveraged products. These are two implementation variants of existing factors, not new independent factors.",
+      "quality_hypothesis": "The S&P quality implementation is described in indexed issuer material using ROE, accruals and leverage; compare the actual fund, not fabricated cash-flow stock scores.",
+      "validation": "Register actual input hashes and code before evaluation. Use recurring-program review to replay costs, targets and independent bt under unchanged netSharpe>1,SPY and15%drawdown gates.",
+      "warmup": "Begin2016-07-01, after reported inception/index changes, providing enough63-session observations before the unchanged first10-year window. No pre-inception synthetic series or backfilled volume."
+    },
+    "new_configurations": 2,
+    "prior_evaluated_configurations": 86,
+    "replacement_funds": [
+      {
+        "daily_leverage": 1.0,
+        "economic_family": "earnings_quality",
+        "issuer_title": "Invesco S&P 500",
+        "issuer_url": "https://www.invesco.com/us/en/financial-products/etfs/invesco-sp-500-quality-etf.html",
+        "mandate_keyword": "Quality",
+        "replaces": "QUAL",
+        "reported_inception": "2005-12-06",
+        "reported_index_change": "2016-03-18",
+        "symbol": "SPHQ"
+      }
+    ],
+    "risk_lookback": 63,
+    "schema_version": 1,
+    "study_id": "factor_implementation_replication_20261010"
+  }
+}

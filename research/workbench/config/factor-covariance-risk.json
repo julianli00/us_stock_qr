@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "study_id": "factor_covariance_risk_20261011",
+  "data_scope": "factor_etf_portfolio",
+  "as_of": "2026-10-05",
+  "prior_evaluated_configurations": 120,
+  "new_configurations": 2,
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "factor_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "risk_assets": ["MTUM", "VLUE", "QUAL", "USMV", "GLD", "IEF"],
+  "covariance_sessions": 252,
+  "covariance_diagonal_shrinkage": 0.10,
+  "equity_share_min": 0.30,
+  "equity_share_max": 0.70,
+  "factor_share_of_equity_min": 0.15,
+  "factor_share_of_equity_max": 0.35,
+  "each_defensive_share_min": 0.25,
+  "each_defensive_share_max": 0.75,
+  "cash_reserve": 0.02,
+  "capital_usd": 10000.0,
+  "commission_per_order": 1.0,
+  "candidates": [
+    {"id": "four_factor_covariance_risk_budget", "method": "risk_budget"},
+    {"id": "four_factor_covariance_max_diversification", "method": "maximum_diversification"}
+  ],
+  "source_registration": {
+    "path": "evidence/factor_gold_risk_20261010_registration.json",
+    "sha256": "94d7e5130dc480ef858cf1a23bb9da5a1ff6f66825c60e9fe6144103616dee86"
+  },
+  "source_context": {
+    "path": "evidence/risk_only_covariance_20261011_source_context.json",
+    "sha256": "db6d08cb8474323a3dc04b57a2f29fc3dce3455ad40b67f5d781eb2a98850954"
+  },
+  "methodology": {
+    "hypothesis": "Test covariance-only diversification without sector satellites,return forecasts or new macro gates. All four existing style ETFs and both gold/intermediate Treasury defense assets remain positively allocated. This changes portfolio construction,not the economic factor catalog.",
+    "covariance": "At each completed NYSE month end use exactly252prior observed daily total returns including that close,sample covariance times252,then10%shrinkage toward its diagonal. These lengths/shrinkage were already used in prior allocation research;no covariance/lookback grid or future normalization.",
+    "risk_budget": "Minimize0.5*x'Cx minus the meanlog of strictly positive unnormalized allocations under homogeneous group constraints,then normalize. Equal one-sixth target risk budgets motivate the objective,but binding equity/style/defense constraints can prevent exact equal risk contribution;report actual signed risk shares and deviations rather than label them equal.",
+    "maximum_diversification": "Use the equivalent convex minimum-variance formulation with weighted standalone volatility fixed toone and the same homogeneous group constraints,then normalize. This maximizes the diversification ratio of the selected actual assets,not expected return or measured Sharpe.",
+    "constraints": "Equity receives30%-70%of invested capital;each style receives15%-35%of equity,retaining prior bounds. Gold and IEF each receive25%-75%of defense,a symmetric half-to-one-and-a-half equal-share constraint fixed before targets/outcomes. Invest98%with2%target idle cash;SPY is only the benchmark and BIL is only available cash implementation,neither enters the risk optimizer.",
+    "execution": "Only completed month-end targets,no daily volatility target,breadth filter,pending-order overlay,shorting or leverage. Original independentUSD10000capital,5bpnext-openbase,20bpextra-sessionstress,USD1/order,and exact10y/5ywindows remain. All targets/fees/failures count.",
+    "source": "Reuse the original verified eight-asset market panels/issuer mandates with a new actual readiness check,not new acquisitions or historical constituent reconstruction. PrimaryCrossref confirms both papers'identities,not inaccessible fulltexts,abstracts,exactreplications or publishedperformance;the unicode-author validator failure is separately preserved.",
+    "selection": "Two fixed construction hypotheses formed after120strategytrials and full-cohort component diagnostics on exposed history. Do not derive factor removal/weights from those diagnostics or retune after outcomes. Neither historical acceptance nor a newlabel creates independentforwardevidence;oldselectionbootstraps do not include these trials.",
+    "risk": "Equitystyles still share beta/stocks;correlations,riskpremia and Treasury/gold behavior can change. Covariance-only allocation without leverage may sacrificeCAGR;bounds do not guarantee15%drawdown orSharpe>1. Optimizererrors/invalidcovariance must explicitly stop,no equalweight fallback.",
+    "future_queue": "This existing-factor construction study does not register economic definitions or alter the original fourW42plans/IJRPKWquota. Original forward rules remain frozen;new winners cannot automatically replace them.",
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

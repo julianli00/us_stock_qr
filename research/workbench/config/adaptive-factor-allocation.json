@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "study_id": "adaptive_factor_allocation_20261010",
+  "data_scope": "factor_etf_portfolio",
+  "prior_evaluated_configurations": 88,
+  "new_configurations": 2,
+  "as_of": "2026-10-05",
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "factor_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "universe": ["MTUM", "VLUE", "QUAL", "USMV", "GLD", "BIL"],
+  "capital_usd": 10000.0,
+  "cash_reserve": 0.02,
+  "lookback_sessions": 252,
+  "mean_half_life_sessions": 63,
+  "mean_shrinkage": 0.50,
+  "covariance_diagonal_shrinkage": 0.10,
+  "risk_aversion": 3.0,
+  "factor_min_total_weight": 0.025,
+  "factor_max_total_weight": 0.25,
+  "gold_max_total_weight": 0.50,
+  "objective_turnover_penalty": 0.006,
+  "candidates": [
+    {"id": "four_factor_static70_gold30", "method": "static"},
+    {"id": "four_factor_causal_mean_variance", "method": "adaptive"}
+  ],
+  "methodology": {
+    "control": "Fixed70%four-factor equity/30%gold of the98%invested budget, four equity factors equally weighted; monthly rebalancing.",
+    "adaptation": "At completed month ends, estimate annualized excess means from the last252daily observations using an exponentially decaying63-session half-life. Shrink each non-BIL mean halfway to the cross-asset non-BIL mean. Estimate the same trailing sample covariance with10%diagonal shrinkage.",
+    "allocation": "Maximize estimated mean minus one-half times risk_aversion times covariance variance, less a fixed0.006annualized absolute change penalty from the previous issued target. Constraints: sum98%,each equity-factor fund2.5%-25%,gold0%-50%,BIL0%-88%. No leverage or shorting.",
+    "why_not_dma_replication": "This is a constrained causal moment estimator/portfolio optimizer. It is not Bayesian predictive-likelihood DMA and does not claim the cited papers' forecasts or published returns.",
+    "timing": "Only completed month-end history; trade next open or one further session at20bp stress. Estimates and previous-target state update strictly in chronological order. No full-sample parameter normalization or random train/test split.",
+    "factor_count": "Adaptively combining existing factors is not discovering new economic factors. The weekly discovery program remains separate.",
+    "scope": "Actual factor ETF portfolio; no direct-stock historical fundamental coverage is claimed.",
+    "selection_bias": "These two fixed methods are proposed after earlier failures. All outcomes and tests count; no subsequent parameter sweep or relabeling of exposed history.",
+    "sources": [
+      "https://doi.org/10.1111/j.1540-6261.1952.tb01525.x",
+      "https://arxiv.org/abs/1606.05656"
+    ],
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "auditor_sha256": "62dc62b44f804adb8b7a1def7b0553edd032ac92dff196334fa36af779f6f46f",
+  "candidate_history_already_exposed": true,
+  "event_chain_sha256": "0401351ba12b2eee37b5e64d44c1690b7fd4fd35c9987de6d1daa0e6cc81bc89",
+  "included_candidate_ids": [
+    "four_factor_gold_risk_balance",
+    "four_factor_gold_daily_vol12",
+    "quality_implementation_gold_monthly",
+    "quality_implementation_gold_daily_vol12",
+    "four_factor_static70_gold30",
+    "four_factor_causal_mean_variance",
+    "factor_gold_term_half_risk",
+    "factor_gold_term_equity_exit",
+    "macro_real_yield_factor_tilt",
+    "macro_real_yield_tilt_curve_defense",
+    "four_factor_defense_momentum",
+    "four_factor_defense_diversified",
+    "four_factor_daily_target_control",
+    "four_factor_growth_satellite50",
+    "conditional_price_factor_model_v2",
+    "conditional_macro_option_factor_model_v2",
+    "four_factor_total_momentum_tilt",
+    "four_factor_residual_momentum_tilt",
+    "four_factor_gold_joint_trend_guard",
+    "four_factor_gold_component_trend_guard",
+    "four_factor_pdp_momentum_implementation",
+    "four_factor_dual_momentum_implementation"
+  ],
+  "joint_statistical_outcomes_computed": false,
+  "new_strategy_evaluations": 0,
+  "order_authority": false,
+  "policy": {
+    "annualization_sessions": 252,
+    "as_of": "2026-10-05",
+    "audit_id": "recurring_selection_validation_20261011",
+    "block_sessions": 21,
+    "bootstrap_samples": 4000,
+    "capital_usd": 10000.0,
+    "change_research_qualification_policy": false,
+    "cost_comparisons": [
+      {
+        "spy_scenario": "base",
+        "strategy_scenario": "base"
+      },
+      {
+        "spy_scenario": "stress",
+        "strategy_scenario": "stress"
+      },
+      {
+        "spy_scenario": "base",
+        "strategy_scenario": "stress"
+      }
+    ],
+    "earlier_configurations_not_in_joint_inference": 84,
+    "familywise_alpha": 0.05,
+    "horizons_years": [
+      10,
+      5
+    ],
+    "included_candidate_count": 22,
+    "independent_forward_validation": false,
+    "methodology": {
+      "authority": "Read-only diagnostic: no new factor,candidate,backtest,review,policy migration,research-version promotion or order. A statistically favourable result cannot override original Sharpe/SPY/drawdown gates or absent independent future evidence.",
+      "multiple_windows": "The five-year window overlaps the ten-year window. Allocate half the global alpha to each horizon via Bonferroni, not an independence assumption. The omnibus adjusted p-value is twice the minimum horizon p-value,capped at1.",
+      "null": "Mean-center each comparison under the least-favourable zero-advantage null. The statistic is the positive part of the largest sample mean. Each bootstrap takes the positive part of the maximum resampled centered mean across all candidates and cost comparisons.",
+      "outcome": "Daily log of actual strategy wealth growth minus daily log of actual SPY wealth growth. All modeled deployment costs,order charges and execution delays remain in the input accounts. Annualized log-growth advantage is not a CAGR percentage-point difference.",
+      "resampling": "Use the existing research convention of21-session circular moving blocks, with the same sampled session indices for every comparison within each horizon. Preserve contemporaneous candidate,benchmark and cost-scenario dependence; do not bootstrap each strategy independently.",
+      "selection_limits": "Rules and outcomes were already exposed before this audit was proposed. The22review subset is not the entire106configuration search;84earlier trials,other unrecorded choices,regime nonstationarity and publication/data revisions are not corrected. Do not label this complete selection-adjusted alpha or an independent holdout.",
+      "simultaneous_lower_bounds": "For each horizon subtract its97.5percentile maximum centered bootstrap mean from every observed comparison mean. These are approximate,scope-limited,one-sided simultaneous log-growth bounds, not future-return guarantees.",
+      "source_policy": "Locate each original bundle by the exact review evidence digest; verify strategy,SPY,independent-account and frozen risk-free files and recompute original metrics before admitting returns. Require the frozen source-bound audit and an unchanged live event-chain head."
+    },
+    "order_authority": false,
+    "schema_version": 1,
+    "scope": "completed_recurring_reviews_only",
+    "seed": 20261011,
+    "source_bound_audit": {
+      "path": "evidence/research_program_source_bound_audit_v5.json",
+      "sha256": "b8423b5c8bd6c37deaa5b17f13e02ffc71b59f8db81084367fa6647dfe7f4034"
+    },
+    "source_snapshot": {
+      "path": "evidence/research_program_2026-W41_results_v24.json",
+      "sha256": "026140649a5d3415e8f23c86e7de6f618b86c0a74085fb2114d3fe18aa38d99b"
+    },
+    "total_disclosed_configurations": 106
+  },
+  "policy_sha256": "28b5808ea3865206f86857b57927e76183d73a5620d3f8e2405db9ae8d81847a",
+  "program_engine_sha256": "ff11cb55b34424ae26b3501c89234734886dab8861034ba6b87169e20691eba7",
+  "registered_at": "2026-10-10T20:26:05.023566+00:00",
+  "schema_version": 1,
+  "settings_frozen_before_joint_resampling": true
+}

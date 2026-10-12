@@ -1,0 +1,113 @@
+{
+  "NewYorkFed_model_coefficients_monthly_aggregation_or_probabilities_replicated": false,
+  "NewYorkFed_topic_identified_from_actual_page": true,
+  "T10Y2Y_maturity_comparator_claimed_new_independent_factor_family": false,
+  "T10Y3M_counted_as_new_factor_or_asset": false,
+  "T10Y3M_previously_used_in_macro_conditional_and_prospective_inputs": true,
+  "actual_bounded_batches": 12,
+  "actual_vintage_snapshots": 450,
+  "all_same_vintage_raw_probe_observations_reproduced": true,
+  "blocked_query_metadata": [],
+  "blocked_query_selections": 0,
+  "checked_at": "2026-10-11T21:22:19.458342+00:00",
+  "complete_methodology_continuity_or_intraday_first_publication_verified": false,
+  "daily_spreads_are_traded_returns_or_verified_equity_alpha": false,
+  "existing_W42_or_forward_rules_changed": false,
+  "fresh_query_selections": 450,
+  "full_source_readiness": true,
+  "independent_decimal_value_maximum_error": 0.0,
+  "independent_query_selections_checked": 450,
+  "independent_verifier_sha256": "8fa7a9a643c18a23c11a62c82b0a325e6d6f4cdc0636c7b2716ecfc6b99b71f8",
+  "independently_acquired_probe_snapshots": 6,
+  "initial_failure_and_code_files_sha256": {
+    "data/yield-curve-inputs-20261011/T10Y3M-ALFRED-form.html": "b6b0d599ec8ab6422d90f433db53954132c26d2ab8e5eb0d6825c2e5622d749d",
+    "data/yield-curve-inputs-20261011/T10Y3M-ALFRED-form.request.json": "8d856dc3230d2e9301f788cce0a407bcbdd94cc9da4b9ad18fcc16146e6ce63d",
+    "data/yield-curve-inputs-20261011/T10Y3M-FRED-series.html": "cfe1c4a353d1c279138f11d3dbf458ccbe66243042f48b2e62432b99b374bd0d",
+    "data/yield-curve-inputs-20261011/T10Y3M-FRED-series.request.json": "0db66ff5ab92918c184580d3816b1af0c2ed41111711c3567f6f641c53f494cf",
+    "data/yield-curve-inputs-20261011/T10Y3M-probe.request.json": "59c73e4b2a95bf129bbe0349ec0892ab035699f71e157bbcf84d4252d23ab6f7",
+    "data/yield-curve-inputs-20261011/T10Y3M-probe.zip": "988c43969f0ab14283b37c84cfc04fff069d79f5269d07db06c006363e4ad9b9",
+    "data/yield-curve-inputs-20261011/acquisition.json": "b3822b5023a25cf3bfc7fcf032aee7260bd7c3e9a5a066e687646afe1925162b",
+    "data/yield-curve-inputs-20261011/failure.json": "d90fff2e80d205dad46ac6e66f1d99b5bd13ef33ed1624dc1b6b04d918d20e9c",
+    "reports/yield-curve-inputs-plan-20261011/acquire-exact-title-v1.py": "0ffef7586ae3daae72144a2c8db1d174de6525c5c164c6ca9b758228dd6c803b",
+    "reports/yield-curve-inputs-plan-20261011/acquire.log": "6623a593687028dd96f47683e746dd0003772b806e4f76a2392e6877c5edae2f",
+    "reports/yield-curve-inputs-plan-20261011/metadata_failure.json": "3d64bb1d98274642cbb72c89be4fee5ec7da1419679903301376e48920af455a",
+    "reports/yield-curve-inputs-plan-20261011/test_yield_curve_inputs_flat_fixture_v1.py": "5f910a729b61d589dc15b05ba8dbdfcea0f0ecbf977b6c5fd5c7e48e991f33e6",
+    "reports/yield-curve-inputs-plan-20261011/tests.log": "e30903396aaea80c304799bcd5f28433559bcbab5c74d687862851bf96e4fb12",
+    "reports/yield-curve-inputs-plan-20261011/yield_curve_inputs_exact_title_v1.py": "d9c59f0fdef487dc2ef9ff6a5d6b1b03953dfcbc5550a1b378706b501a34b74a"
+  },
+  "initial_local_literal_title_parser_failure_code_log_and_requests_preserved": true,
+  "investment_objective_verified": false,
+  "maximum_actual_observation_age_days": 5,
+  "maximum_allowed_observation_age_days": 7,
+  "native_frequency": "Daily",
+  "native_units": "Percent_quotes_as_percentage_point_spreads",
+  "new_prospective_model_observations": 0,
+  "new_registered_candidates": 0,
+  "new_registered_factor_definitions": 0,
+  "new_strategy_evaluations": 0,
+  "order_authority": false,
+  "original_market_context_sessions": 2805,
+  "original_monthly_reference_pairs": 131,
+  "original_root_boundary_test_cases_passed": 52,
+  "original_successful_requests_reused_without_refetch_or_retiming": 3,
+  "policy": {
+    "path": "config/yield-curve-inputs.json",
+    "sha256": "c6b4bd87ce966eb75eb714291de58918e27daec43ff70c0aeefc914c4152ff49"
+  },
+  "previous_t10y3m_version_comparison": {
+    "different_selected_dates_claimed_pure_data_revisions": false,
+    "maximum_same_observation_value_difference_percentage_points": 0.0,
+    "maximum_selected_native_value_difference_percentage_points": 0.0,
+    "old_source_or_strategy_evidence_overwritten": false,
+    "query_values_compared": 225,
+    "same_observation_values_differ": 0,
+    "selected_native_values_differ": 0,
+    "selected_observation_dates_differ": 0
+  },
+  "primary_definitions": {
+    "NYFed-context.html": {
+      "sha256": "e8628547c3c40184dd87f62fd96d05ed987ed0a0a1affc38c7a593cf7a31fa59",
+      "url": "https://www.newyorkfed.org/research/capital_markets/ycfaq"
+    },
+    "T10Y2Y-ALFRED-form.html": {
+      "sha256": "d992f68cdf71a57e8e0693df8597698a1074915848a34dee7944c3526aed0925",
+      "url": "https://alfred.stlouisfed.org/series/downloaddata?seid=T10Y2Y"
+    },
+    "T10Y2Y-FRED-series.html": {
+      "sha256": "d6ac438d9e2d552d7899eb528d3bbef77f3cb4078a88b0e2dcf7e85371855eea",
+      "url": "https://fred.stlouisfed.org/series/T10Y2Y"
+    },
+    "T10Y3M-ALFRED-form.html": {
+      "sha256": "b6b0d599ec8ab6422d90f433db53954132c26d2ab8e5eb0d6825c2e5622d749d",
+      "url": "https://alfred.stlouisfed.org/series/downloaddata?seid=T10Y3M"
+    },
+    "T10Y3M-FRED-series.html": {
+      "sha256": "cfe1c4a353d1c279138f11d3dbf458ccbe66243042f48b2e62432b99b374bd0d",
+      "url": "https://fred.stlouisfed.org/series/T10Y3M"
+    }
+  },
+  "private_source_manifest": {
+    "path": "data/yield-curve-inputs-verified-parser-20261011/manifest.json",
+    "sha256": "96ee4f9af0cf719e4468c3170381d7f14468b3b05809aac25b77a9d1495db053"
+  },
+  "private_verified_query_matrix": {
+    "path": "reports/yield-curve-inputs-plan-20261011/verified-queries.csv",
+    "sha256": "3990d091b018a25f8553218f52c3406d2545e3edb2ca502d7bd539389d5d930f"
+  },
+  "publication_delay_sessions": 2,
+  "raw_primary_documents_full_source_matrices_or_accounts_published": false,
+  "schema_version": 1,
+  "scoped_metadata_table_values_and_wrapped_titles_independently_verified": true,
+  "series": [
+    "T10Y3M",
+    "T10Y2Y"
+  ],
+  "source_contract_test_cases_passed": 66,
+  "source_policy_title_definitions_quote_values_lag_age_windows_or_transport_changed": false,
+  "source_validator_sha256": "b7a131843b476df423bba408d9b42762a560b2f6ac09f4048310bbe83e8e78cd",
+  "status": "complete_vintage_source_verified",
+  "strategy_states_targets_or_returns_computed": false,
+  "study_id": "treasury_curve_vintage_source_20261011",
+  "underlying_Treasury_source_change_disclosed": "2019-06-21",
+  "vintage_cutoff": "previous_nyse_session"
+}

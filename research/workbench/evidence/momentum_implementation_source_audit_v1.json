@@ -1,0 +1,90 @@
+{
+  "checked_at": "2026-10-10T20:12:52.465782+00:00",
+  "complete_sessions": 2805,
+  "corporate_actions": {
+    "dividend_events": 26,
+    "split_events": 0,
+    "unexplained_adjustment_jumps": 0
+  },
+  "current_primary_sources": [
+    {
+      "kind": "issuer_product_page",
+      "source_sha256": "b5f1e85f5b10919e52c03961a25d624871690deaee64014defce75fb0074d0ae",
+      "url": "https://www.invesco.com/us/en/financial-products/etfs/invesco-dorsey-wright-momentum-etf.html"
+    },
+    {
+      "kind": "Nasdaq_index_methodology",
+      "source_sha256": "dcd14f93e9534f47c89bc61b7760e9d145464dea4ebda7d6032227d0333a98ac",
+      "url": "https://indexes.nasdaqomx.com/docs/Methodology_DorseyWrightTechnicalIndexes.pdf",
+      "valid_pdf": true
+    },
+    {
+      "kind": "Nasdaq_index_factsheet",
+      "source_sha256": "e221290edf7348a4e5b8b39d152ca42eff7b01ec221de0f2ed68dc1a657ba7ca",
+      "url": "https://indexes.nasdaqomx.com/docs/FS_DWTLTR.pdf",
+      "valid_pdf": true
+    }
+  ],
+  "data_end": "2026-10-05",
+  "data_scope": "factor_etf_portfolio",
+  "data_start": "2015-08-10",
+  "full_historical_methodology_versions_verified": false,
+  "fund_symbol": "PDP",
+  "issuer_definition": {
+    "assetClass": "Equity",
+    "daily_leveraged_target": false,
+    "family": "momentum",
+    "full_historical_methodology_verified": false,
+    "index": "Dorsey Wright Technical Leaders Index",
+    "index_code": "DWTL",
+    "investmentMethod": "Passive",
+    "isin": "US46137V8375",
+    "proprietary_stock_scores_reconstructed": false,
+    "region": "United States",
+    "shareClassFullName": "Invesco Dorsey Wright Momentum ETF",
+    "shareClassInceptionDate": "2007-03-01",
+    "ticker": "PDP"
+  },
+  "minimum_volume": 5200.0,
+  "new_completed_strategy_evaluations": 0,
+  "new_economic_factor_definitions": 0,
+  "no_new_account_subscription_or_credentials": true,
+  "order_authority": false,
+  "original_factor_and_benchmark_snapshots_retained": true,
+  "positive_volume_all_sessions": true,
+  "proprietary_stock_scores_reconstructed": false,
+  "rejected_sources": [
+    {
+      "previous_rejection_unchanged": true,
+      "prior_evidence": "evidence/factor_replication_quality_audit_20261010.json",
+      "provider": "Yahoo",
+      "symbol": "SPMO",
+      "zero_volume_observations": 238
+    },
+    {
+      "anti_bot_challenge_executed": false,
+      "api_key_acquired_or_used": false,
+      "browser_verification_page": true,
+      "csv_ohlcv_header_present": false,
+      "http_status": 200,
+      "provider": "Stooq",
+      "raw_response_sha256": "7422e5dc9abd2e8b8627bcb4302a4da23b843d4712c73293837154f34df7344f",
+      "requested_url": "https://stooq.com/q/d/l/?s=spmo.us&i=d&d1=20160701&d2=20261005",
+      "symbol": "SPMO",
+      "usable_price_panel": false
+    },
+    {
+      "gate_bypassed": false,
+      "http_status": 200,
+      "provider": "issuer_factsheet",
+      "raw_response_sha256": "32a1938baa2b7ac4ec012293195a29a4a4f2c484a006720b974c11af7f19cae2",
+      "requested_url": "https://www.invesco.com/content/dam/invesco/us/en/product-documents/etf/fact-sheet/pdp-invesco-dorsey-wright-momentum-etf-fact-sheet-us.pdf",
+      "response_is_audience_selection_html": true,
+      "symbol": "PDP",
+      "valid_pdf": false
+    }
+  ],
+  "schema_version": 1,
+  "source_manifest_sha256": "c684602015b8a33af3f96f0314016a79aab7a4992b026e30d8dce265ba532833",
+  "strategy_return_outcomes_computed": false
+}

@@ -1,0 +1,254 @@
+{
+  "candidates": [
+    {
+      "registration": {
+        "candidate_id": "four_factor_pdp_momentum_implementation",
+        "data_scope": "factor_etf_portfolio",
+        "families": [
+          "earnings_quality",
+          "low_volatility",
+          "momentum",
+          "value"
+        ],
+        "order_authority": false,
+        "readiness_sha256": "3ccbc737b670d6f6879787b45e46838e4dab88d3ee304896e9b73b2dc993315c",
+        "registered_at": "2026-10-10T20:13:23.588389+00:00",
+        "spec_sha256": "77ea56748cd3abf3b2e02fe854de9175be4c44e95791357ba3de5dc92e5dfb12"
+      },
+      "spec": {
+        "asset_leverage": {
+          "BIL": 1.0,
+          "GLD": 1.0,
+          "IEF": 1.0,
+          "MTUM": 1.0,
+          "PDP": 1.0,
+          "QUAL": 1.0,
+          "SPY": 1.0,
+          "USMV": 1.0,
+          "VLUE": 1.0
+        },
+        "configuration": {
+          "id": "four_factor_pdp_momentum_implementation",
+          "pdp_share_of_momentum": 1.0
+        },
+        "data_scope": "factor_etf_portfolio",
+        "evaluation_as_of": "2026-10-05",
+        "factor_ids": [
+          "price_momentum",
+          "value_exposure",
+          "quality_exposure",
+          "low_volatility_exposure"
+        ],
+        "frozen_files": {
+          "config/factor-gold-risk.json": "6c550602c98fa5b09e5b59791bdbbe569c9b4082e2d1dfc9ba4cd5639a25ec63",
+          "config/momentum-implementation.json": "277a0a251677f32b5f01e6c042687ea97e749cecfff2b588f94c7dd550958cca",
+          "src/us_quant/factor_gold_risk.py": "412a80a5d608a3cb0ad3bce6b2861b80fcc73b7f28f27697ccd60528874bf8d5",
+          "src/us_quant/factor_replication.py": "31302bb83c36cfc930cdfa2f6098e8c8ac6e31fdc3c5db82aeeb69d92b7244df",
+          "src/us_quant/momentum_implementation.py": "b367c1e09df56238493483f460048ad11b26b8c32cd81a431d0a8ea8dfd5045a",
+          "src/us_quant/multifactor_stability.py": "05423115c9171a20f0c870e2556b4f25f787df737da4b1f87da5f5fffe3ae7b9"
+        },
+        "history_status": "exposed_history_not_independent_holdout",
+        "id": "four_factor_pdp_momentum_implementation",
+        "leveraged_products_allowed": false,
+        "market": {
+          "close": {
+            "path": "data/momentum-implementation-20261011/market-close.csv",
+            "sha256": "3d98135d939b074b2f82fe609b78197d5ae2e83409302ca892da51784034a6fa"
+          },
+          "open": {
+            "path": "data/momentum-implementation-20261011/market-open.csv",
+            "sha256": "b39861ead4296da6fd2a2d186778f50891511137239aafbfaa8753be135b72f2"
+          },
+          "raw_close": {
+            "path": "data/momentum-implementation-20261011/market-raw_close.csv",
+            "sha256": "093bf31ba638b200944cd311a861c3da90aa2e66cf8b70573becca0be26a27a6"
+          },
+          "risk_free": {
+            "path": "data/momentum-implementation-20261011/market-risk_free.csv",
+            "sha256": "3b59869f597ac9d2573ffca1616938da4c2df0da24bd38799ce3e39b1f0509cc"
+          },
+          "volume": {
+            "path": "data/momentum-implementation-20261011/market-volume.csv",
+            "sha256": "563a01b36b5f78cfbb1d27f3fdd6b650dbab0858f2d2b12cbd4a966628ec528d"
+          }
+        },
+        "order_authority": false
+      }
+    },
+    {
+      "registration": {
+        "candidate_id": "four_factor_dual_momentum_implementation",
+        "data_scope": "factor_etf_portfolio",
+        "families": [
+          "earnings_quality",
+          "low_volatility",
+          "momentum",
+          "value"
+        ],
+        "order_authority": false,
+        "readiness_sha256": "3ccbc737b670d6f6879787b45e46838e4dab88d3ee304896e9b73b2dc993315c",
+        "registered_at": "2026-10-10T20:13:24.835700+00:00",
+        "spec_sha256": "8a16834c18ae9a51ef2e0c7ce6b41853dd034917d0d4b110640e6155f7ccc481"
+      },
+      "spec": {
+        "asset_leverage": {
+          "BIL": 1.0,
+          "GLD": 1.0,
+          "IEF": 1.0,
+          "MTUM": 1.0,
+          "PDP": 1.0,
+          "QUAL": 1.0,
+          "SPY": 1.0,
+          "USMV": 1.0,
+          "VLUE": 1.0
+        },
+        "configuration": {
+          "id": "four_factor_dual_momentum_implementation",
+          "pdp_share_of_momentum": 0.5
+        },
+        "data_scope": "factor_etf_portfolio",
+        "evaluation_as_of": "2026-10-05",
+        "factor_ids": [
+          "price_momentum",
+          "value_exposure",
+          "quality_exposure",
+          "low_volatility_exposure"
+        ],
+        "frozen_files": {
+          "config/factor-gold-risk.json": "6c550602c98fa5b09e5b59791bdbbe569c9b4082e2d1dfc9ba4cd5639a25ec63",
+          "config/momentum-implementation.json": "277a0a251677f32b5f01e6c042687ea97e749cecfff2b588f94c7dd550958cca",
+          "src/us_quant/factor_gold_risk.py": "412a80a5d608a3cb0ad3bce6b2861b80fcc73b7f28f27697ccd60528874bf8d5",
+          "src/us_quant/factor_replication.py": "31302bb83c36cfc930cdfa2f6098e8c8ac6e31fdc3c5db82aeeb69d92b7244df",
+          "src/us_quant/momentum_implementation.py": "b367c1e09df56238493483f460048ad11b26b8c32cd81a431d0a8ea8dfd5045a",
+          "src/us_quant/multifactor_stability.py": "05423115c9171a20f0c870e2556b4f25f787df737da4b1f87da5f5fffe3ae7b9"
+        },
+        "history_status": "exposed_history_not_independent_holdout",
+        "id": "four_factor_dual_momentum_implementation",
+        "leveraged_products_allowed": false,
+        "market": {
+          "close": {
+            "path": "data/momentum-implementation-20261011/market-close.csv",
+            "sha256": "3d98135d939b074b2f82fe609b78197d5ae2e83409302ca892da51784034a6fa"
+          },
+          "open": {
+            "path": "data/momentum-implementation-20261011/market-open.csv",
+            "sha256": "b39861ead4296da6fd2a2d186778f50891511137239aafbfaa8753be135b72f2"
+          },
+          "raw_close": {
+            "path": "data/momentum-implementation-20261011/market-raw_close.csv",
+            "sha256": "093bf31ba638b200944cd311a861c3da90aa2e66cf8b70573becca0be26a27a6"
+          },
+          "risk_free": {
+            "path": "data/momentum-implementation-20261011/market-risk_free.csv",
+            "sha256": "3b59869f597ac9d2573ffca1616938da4c2df0da24bd38799ce3e39b1f0509cc"
+          },
+          "volume": {
+            "path": "data/momentum-implementation-20261011/market-volume.csv",
+            "sha256": "563a01b36b5f78cfbb1d27f3fdd6b650dbab0858f2d2b12cbd4a966628ec528d"
+          }
+        },
+        "order_authority": false
+      }
+    }
+  ],
+  "engine_sha256": "ff11cb55b34424ae26b3501c89234734886dab8861034ba6b87169e20691eba7",
+  "history_preserved": true,
+  "migration_snapshot": "evidence/research_program_2026-W41_momentum_provider_v23.json",
+  "new_economic_factor_definitions": 0,
+  "readiness": {
+    "capabilities": {
+      "actual_fund_history": {
+        "evidence_path": "data/pdp-source-check-20261011/manifest.json",
+        "evidence_sha256": "c684602015b8a33af3f96f0314016a79aab7a4992b026e30d8dce265ba532833",
+        "verified": true
+      },
+      "factor_mandates": {
+        "evidence_path": "data/pdp-source-check-20261011/manifest.json",
+        "evidence_sha256": "c684602015b8a33af3f96f0314016a79aab7a4992b026e30d8dce265ba532833",
+        "verified": true
+      },
+      "post_inception_and_actions": {
+        "evidence_path": "data/pdp-source-check-20261011/manifest.json",
+        "evidence_sha256": "c684602015b8a33af3f96f0314016a79aab7a4992b026e30d8dce265ba532833",
+        "verified": true
+      },
+      "unleveraged_fund_identity": {
+        "evidence_path": "data/pdp-source-check-20261011/manifest.json",
+        "evidence_sha256": "c684602015b8a33af3f96f0314016a79aab7a4992b026e30d8dce265ba532833",
+        "verified": true
+      }
+    },
+    "checked_at": "2026-10-10T20:12:15.126385+00:00",
+    "data_scope": "factor_etf_portfolio",
+    "full_historical_methodology_verified": false,
+    "new_economic_factor_definitions": 0,
+    "schema_version": 1,
+    "stock_data_still_blocked": true,
+    "verified_etf_source": {
+      "adapter": "momentum_implementation_20261011",
+      "factor_manifest": "data/pdp-source-check-20261011/manifest.json",
+      "factor_manifest_sha256": "c684602015b8a33af3f96f0314016a79aab7a4992b026e30d8dce265ba532833",
+      "policy": "config/momentum-implementation.json",
+      "policy_sha256": "277a0a251677f32b5f01e6c042687ea97e749cecfff2b588f94c7dd550958cca"
+    }
+  },
+  "registered_before_outcomes": true,
+  "source_audit": {
+    "path": "evidence/momentum_implementation_source_audit_v1.json",
+    "sha256": "2d23fc63f894c875ed045be517067d290f725c4c1c773bf2d6418a2ea00183e7"
+  },
+  "source_code_commit": "5d36c3a0",
+  "strategy_outcomes_computed": false,
+  "study": {
+    "as_of": "2026-10-05",
+    "baseline_policy": "config/factor-gold-risk.json",
+    "candidates": [
+      {
+        "id": "four_factor_pdp_momentum_implementation",
+        "pdp_share_of_momentum": 1.0
+      },
+      {
+        "id": "four_factor_dual_momentum_implementation",
+        "pdp_share_of_momentum": 0.5
+      }
+    ],
+    "cash_reserve": 0.02,
+    "data_scope": "factor_etf_portfolio",
+    "data_start": "2015-08-10",
+    "factor_ids": [
+      "price_momentum",
+      "value_exposure",
+      "quality_exposure",
+      "low_volatility_exposure"
+    ],
+    "index_methodology_url": "https://indexes.nasdaqomx.com/docs/Methodology_DorseyWrightTechnicalIndexes.pdf",
+    "index_url": "https://indexes.nasdaq.com/Index/Overview/DWTL",
+    "issuer_url": "https://www.invesco.com/us/en/financial-products/etfs/invesco-dorsey-wright-momentum-etf.html",
+    "methodology": {
+      "automatic_live_deployment": false,
+      "factor_budgets": "Reuse the original equal-four-factor/gold63-session monthly risk-balance target using the original MTUM/VLUE/QUAL/USMV basket. Equity/gold totals, decision dates,2%target idle cash and25%equity budgets for momentum/value/quality/low-volatility stay identical to the already evaluated original control.",
+      "hypothesis": "A momentum mandate can behave differently across ETF implementations. Compare a fixed full replacement and equal implementation mix rather than optimizing the rejected allocation gates or momentum lookbacks.",
+      "implementation": "Within the25%momentum family share only, use100%PDPor50%PDP/50%MTUM. No other sleeve changes, no fund-selection score, no fitted mix and no new alpha-family claim.",
+      "order_authority": false,
+      "price_data": "Reuse the newly acquired PDP raw chart and its strictly positive2805-session OHLCV panel. Reparse raw observations and verify adjustment changes against actual dividends/splits; never fill zero volumes or move formal evaluation windows. Preserve the old SPMO data rejection and Stooq browser-verification response.",
+      "primary_definition": "Issuer metadata identifies PDP,US46137V8375,US passive equity, inception2007-03-01. Its embedded product description names the Dorsey Wright Technical Leaders Index and proprietary relative-strength selection with quarterly reconstitution. The directly retrieved Nasdaq methodology confirms DWTL and US large/mid-cap eligibility.",
+      "selection": "Data availability was checked before these fixed rules. Candidate performance was not inspected before registration. Formed after104completed historical configurations; overlapping previously exposed history remains exploration, not an independent holdout.",
+      "source_limits": "The issuer factsheet request returned a country/audience HTML page, not a PDF; do not bypass it. Current official product/Index documents were actually retrieved, but a complete historical mandate-version archive is not established. Research uses actual fund returns, not recreated proprietary scores, current holdings or backfilled index performance.",
+      "timing": "Completed month-end decisions only; next-session-open5bpbase or one-extra-session20bpstress. Original USD10,000fresh accounts,USD1orders and all retained net Sharpe/SPY/15%drawdown gates. No leverage, synthetic asset returns or live authority."
+    },
+    "new_configurations": 2,
+    "new_economic_factor_definitions": 0,
+    "original_factor_symbols": [
+      "MTUM",
+      "VLUE",
+      "QUAL",
+      "USMV"
+    ],
+    "prior_evaluated_configurations": 104,
+    "replacement_family": "momentum",
+    "replacement_symbol": "PDP",
+    "schema_version": 1,
+    "source_manifest": "data/pdp-source-check-20261011/manifest.json",
+    "study_id": "momentum_implementation_20261011"
+  }
+}

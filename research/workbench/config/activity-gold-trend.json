@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "study_id": "real_activity_prior_monthly_gold_trend_20261011",
+  "data_scope": "factor_etf_portfolio",
+  "data_start": "2015-08-10",
+  "as_of": "2026-10-05",
+  "prior_evaluated_configurations": 152,
+  "new_configurations": 2,
+  "new_economic_factor_definitions": 0,
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "factor_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "gold_sma_observations": 200,
+  "gold_signal_asset": "GLD",
+  "decision_clock": "original_informed_activity_source_month_ends_only",
+  "gold_warmup_policy": "no_new_target_before_all200observations_keep_original_formal_return_windows",
+  "cash_reserve": 0.02,
+  "candidates": [
+    {"id": "semiconductor_activity_magnitude_gold_trend200", "source_id": "semiconductor_dollar_activity_magnitude_confirmation"},
+    {"id": "semiconductor_activity_diffusion_gold_trend200", "source_id": "semiconductor_dollar_activity_diffusion_confirmation"}
+  ],
+  "source_registration": {"path": "evidence/activity_guard_20261011_registration.json", "sha256": "15d4d312258d47a850a2fafd1a876413cb8b7e21bd404f7ff4918eb961d52af0"},
+  "source_policy": {"path": "config/activity-factor-guard.json", "sha256": "1c047e7a039f9a1d2c0e2d00cbb0d6c79e8f3af76124cfa61f0ac76c84d1e26d"},
+  "source_implementation": {"path": "src/us_quant/activity_factor_guard.py", "sha256": "1365dbeaf86d3a447d70832a2b4ee65fbb14a57db1c9c2c731f7d9a656c01d8a"},
+  "prior_gold_registration": {"path": "evidence/breadth_gold_20261011_registration.json", "sha256": "f5e41e83728089859ada0d5e9387370469d36202f13c39f68f68e7831a36a39f"},
+  "prior_gold_policy": {"path": "config/trend-factor-guard.json", "sha256": "5e87ac75966bca361b55c0d54718311080666c868cbc6d1503409a586f24c7bc"},
+  "prior_gold_implementation": {"path": "src/us_quant/trend_factor_guard.py", "sha256": "1e05e9d31d38298253d29c3f0668ba43b2a18f669d3a96fb09cc247928f73aa2"},
+  "prior_gold_states_implementation": {"path": "src/us_quant/breadth_gold_trend.py", "sha256": "35c840144fcb9eb38e51017cbaa979aebb160c43406cf50d5c5e6c7cc4325cb0"},
+  "published_risk_context": {"path": "evidence/activity_guard_20261011_drawdown_attribution.json", "sha256": "11df3de8183328a0b3127153cc411295368ebe41576d3fed2c247c4311a4c56d"},
+  "methodology": {
+    "hypothesis": "Real-activity and dollar risk confirmation do not describe gold's own price trend. The exact already reviewed worst-episode held-mark diagnosis finds larger gold than equity losses. Test the existing strict200-observation gold component law on each unchanged activity source;the post-outcome diagnosis is not predictive evidence or a guarantee this transfer reduces risk.",
+    "gold_rule": "Reuse unmodified breadth_gold_trend.gold_states and trend_factor_guard.gated_target with state(True,gold_active). At each original fully informed activity-source month decision,actualGLDadjustedclose must strictly exceed its trailing200observationsimplemean including thatclose. Equality isoff. Off sets only originalGLDtarget0and adds its removed weight toactualBIL;on restores only the source's originalGLDweight. No other target/riskbudget is recomputed or renormalized.",
+    "warmup": "The original activity source starts at63price-return warmup. Until GLDhas all200observations,leave the entire new target row undefined and explicitly retain those six original pre-window months as gold-warmup exclusions. This does not drop any formalreturn day or change2016-10-06/2021-10-06starts. Independentlast-known-targetseeds must exist in both originalwindows;no initial cash return substitution.",
+    "preserved_source": "Keep both original activity sources' four-style/SOXX and every nongold weight exactly at all informed source dates. Original USD63rise/CFNAImagnitude-.70orDiffusion-.35/own-vintage63decline/halfscale/12assetprices/monthlyclock/98%funding/2%targetcash unchanged. All five known stale-input no-request months remainallNaN;never create dailygoldupdates or fill macro gaps with a gold-onlytarget. Unknown source gaps remainfatal.",
+    "prior_art": "The existing monthlygold law was separately registered on other breadth sources;only its pure200state and unchangedcomponent-removal helper are reused. Freeze its complete code/sourcegraph and originalregistration alongside the full activitysourcegraph. This is a new fixed combination,not oldportfolio replay or a neweconomicfactor family.",
+    "risks": "Gold trend removal can whipsaw,miss gaps or lower returns,and cannot guarantee protection of unchanged equity targets. A200daymean or monthlyexit is not insurance,15%drawdowncap or a forwardvalidatedforecast. Low risk alone cannot satisfy the unchangedSPY/Sharpegoals;all outcomes and failures remain.",
+    "execution": "Each10y/5ypath independently startsUSD10000 includinginitialdeployment. Original5bpnext-openbase/20bpextra-sessionstress,USD1/order,fractional long-onlyfunded-v2/independentbt and frozenriskfree retained. No additional holdingband,dailytrigger,producerallocation,Treasuryrotation,voltarget,floor,leverage orcommission rebate.",
+    "selection": "Exactly2fixedsource transfers after152exposedstrategyconfigurations;no200length/clock/goldscale/stockshares/cost/windowgrid or post-result variant switching. Publishactualregistration/code/policy/independentsource-target-gold-budget-seedproof before newaccounts. Requireall10y/5ybase/stress net excessSharpe>1,CAGR>same-costSPY,stressCAGR>base-costSPY,DD<=15%;oldselectiondiagnostics do notcorrect these trials or all search.",
+    "preservation": "No newquotes/economicdefinitions,originalW42fourplans/IJRPKWquota/Oct17eligibility or twofrozenforwardmodel changes. Strictactivitysource440fresh10blocked remainsblocked,withthe prior explicitly registered knownfivepausestandbyruleunchanged. Historicalgatepassing alone still needs independentfutureevidence;no liveauthority.",
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

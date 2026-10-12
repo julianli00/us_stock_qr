@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "study_id": "factor_gold_risk_20261010",
+  "data_scope": "factor_etf_portfolio",
+  "as_of": "2026-10-05",
+  "prior_evaluated_configurations": 84,
+  "new_configurations": 2,
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "factor_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "risk_lookback": 63,
+  "equity_sleeve_min": 0.30,
+  "equity_sleeve_max": 0.70,
+  "cash_reserve": 0.02,
+  "capital_usd": 10000,
+  "commission_per_order": 1.0,
+  "candidates": [
+    {"id": "four_factor_gold_risk_balance", "daily_volatility_target": null, "daily_weight_band": null},
+    {"id": "four_factor_gold_daily_vol12", "daily_volatility_target": 0.12, "daily_weight_band": 0.05}
+  ],
+  "hypotheses": [
+    "Keep four economically distinct actual equity-factor exposures, but remove fixed duration exposure and balance aggregate equity risk against gold risk rather than assuming four independent equity funds.",
+    "Compare the same monthly allocation with a daily, trailing-only portfolio-volatility target and a fixed5percentage-point trade band; no parameter grid or leveraged products."
+  ],
+  "methodology": {
+    "monthly_weights": "Four factor ETFs each receive25% of the equity sleeve. Balance that fixed basket and GLD by inverse63-session realized volatility, with equity share constrained to30%-70% of the98% invested budget.",
+    "daily_overlay": "Use the most recent completed-month baseline target. Daily variant scales non-BIL holdings downward using trailing63-session covariance until target annualized volatility is at most12%; freed weight goes to BIL. Do not scale upward beyond the monthly baseline.",
+    "trade_trigger": "Initial and monthly allocation requests trade. Between month ends, trade only when maximum desired-versus-actual closing weight difference is at least5percentage points. This band makes the volatility level a target, not a continuously enforced ceiling.",
+    "pending_orders": "Never issue overlapping modeled orders. A monthly allocation update occurring while an older target is pending remains requested until the next eligible close; no pending target is silently overwritten.",
+    "execution": "Decisions use observed closes only; fills occur at the next session open, or one further session with20bp stress. Identical USD10,000 andUSD1 commissions; no same-close or hindsight fills.",
+    "scope": "Actual factor ETF portfolio, not new direct-stock fundamental signals. The SEC/stock-history blockers remain unchanged; no new factor is claimed, only two new fixed allocation configurations.",
+    "evidence": "Register code, exact market panels and cutoff in the recurring program before calculating outcomes. Use its actual simulator/bt reviewer and unchanged Sharpe/SPY/15%drawdown goals.",
+    "selection_bias": "This hypothesis was formed after previous negative factor experiments. All outcomes count; historical qualification is not independent future alpha.",
+    "sources": [
+      "https://doi.org/10.1111/jofi.12513",
+      "https://doi.org/10.3905/jpm.2008.35.1.40"
+    ],
+    "papers_are_motivation_not_exact_replications": true,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

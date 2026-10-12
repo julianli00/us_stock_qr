@@ -1,0 +1,135 @@
+{
+  "2011_planned_option_contract_launch_claimed_index_launch": false,
+  "2022_C1_to_NBBO_consultation_claimed_verified_implementation_date": false,
+  "2024_filter_result_notice_disclosed_effective_date": "2024-07-08",
+  "GVZ_constant_maturity_calendar_days": 30,
+  "GVZ_underlying_options": "PM_settled_GLD_monthly_third_Friday",
+  "W42_or_frozen_forward_rules_changed": false,
+  "actual_new_source_csv_first_date": "2009-09-18",
+  "checked_at": "2026-10-11T22:38:25.608692+00:00",
+  "current_GVZ_constituent_selection": "nearest_term",
+  "current_GVZ_quote_source": "NBBO",
+  "current_methodology_or_notices_claimed_complete_historical_chain": false,
+  "current_primary_methodology_revision": "2026-03-30",
+  "current_primary_methodology_version": "9.0",
+  "full_source_readiness": false,
+  "independent_finite_aligned_close_observations_checked": 5606,
+  "independent_monthly_close_inputs_checked": 262,
+  "independent_native_close_maximum_error": 0.0,
+  "independent_original_monthly_queries_checked": 131,
+  "independent_raw_close_rows_checked": 13580,
+  "independent_verifier_sha256": "191b759d3d9b6bc6aa07237fddc35c7f3931369c59b019c6efdbcab2c27b0b19",
+  "investment_objective_verified": false,
+  "known_missing_gvz_daily_dates": [
+    "2018-12-03",
+    "2019-02-20",
+    "2019-07-05",
+    "2020-10-16"
+  ],
+  "monthly_availability_claimed_daily_readiness": false,
+  "monthly_query_availability": true,
+  "new_primary_document_requests": 6,
+  "new_registered_candidates": 0,
+  "new_registered_factor_definitions": 0,
+  "new_source_csv_requests": 1,
+  "new_strategy_evaluations": 0,
+  "old_comparator_quote_requests": 0,
+  "order_authority": false,
+  "original_VIX_quotes_and_acquisition_timestamp_preserved": true,
+  "original_intraday_first_publication_verified": false,
+  "policy": {
+    "path": "config/gold-volatility-inputs.json",
+    "sha256": "4ef15aa68bfd883fa6d7138ea21805c4eac74b4b5167d08a9666674d10d9f763"
+  },
+  "primary_document_request_metadata": [
+    {
+      "finished_at": "2026-10-11T22:32:08.956670+00:00",
+      "path": "GVZ.csv",
+      "sha256": "f19436d8165084197c2abb1c60a723c5645f780d5cf17123d36973fc5042d3ae",
+      "url": "https://cdn-api.cboe.com/api/global/us_indices/daily_prices/GVZ_History.csv"
+    },
+    {
+      "finished_at": "2026-10-11T22:32:10.383221+00:00",
+      "path": "GVZ-dashboard.html",
+      "sha256": "8b7d6a8d519fc0327852a488e45c9cc9de476f1ff8056ad9f85a61f216462969",
+      "url": "https://www.cboe.com/us/indices/dashboard/GVZ/"
+    },
+    {
+      "finished_at": "2026-10-11T22:32:11.977174+00:00",
+      "path": "Cboe-governance.html",
+      "sha256": "dbea696eae52d968ac3a15cc1492992f674c8012ae6ac8db99d1926a4b92bc8d",
+      "url": "https://www.cboe.com/us/indices/governance/"
+    },
+    {
+      "finished_at": "2026-10-11T22:32:13.076693+00:00",
+      "path": "GVZ-regulatory-context.pdf",
+      "sha256": "e13ea36f3eabea4a8dfa850fd7c760f116a603ee9702c355be83a72a5342b614",
+      "url": "https://cdn.cboe.com/resources/regulation/circulars/regulatory/RG11-048.pdf"
+    },
+    {
+      "finished_at": "2026-10-11T22:32:14.513075+00:00",
+      "path": "ETF-volatility-consultation.pdf",
+      "sha256": "78eb1efdd4c2faaf6f26c6d06d8e93b62e2a58211738a7c237743216e264a3f0",
+      "url": "https://cdn.cboe.com/resources/indices/documents/EQ_ETF_Volatility_Indices_Consultation.pdf"
+    },
+    {
+      "finished_at": "2026-10-11T22:33:15.074608+00:00",
+      "path": "Cboe-ETF-volatility-methodology.pdf",
+      "sha256": "cc42cc2076d4f66c9fa26ae7cc9136e5cb8e87e09de46562c02df68c0c0f8bc6",
+      "url": "https://cdn.cboe.com/api/global/us_indices/governance/Volatility_Index_Methodology_Selected_Broad_Based_Index_Equity_and_ETF_Volatility_Indices.pdf"
+    },
+    {
+      "finished_at": "2026-10-11T22:33:16.846104+00:00",
+      "path": "ETF-filter-consultation-results-2024.pdf",
+      "sha256": "a52428a70355692ab5e37fb88f8a5dd9e7f8689dbb445c9a5d69b9d047a9049b",
+      "url": "https://cdn.cboe.com/resources/release_notes/2024/20240524_Consultation-Results-Regarding-the-Volatility-Index-Filtering-Mechanism-for-Select-Index-Equity-and-ETF-Volatility-Indices.pdf"
+    }
+  ],
+  "primary_first_value_period": "prior_to_2008",
+  "primary_launch_year": 2008,
+  "private_daily_closes": {
+    "path": "data/gold-volatility-inputs-20261011/closes.csv",
+    "sha256": "5ef5f1d23b4ae8bb7c7c4d0cded3824d860594d03073cb9d80a592943bd774cd"
+  },
+  "private_monthly_closes": {
+    "path": "data/gold-volatility-inputs-20261011/monthly-closes.csv",
+    "sha256": "f4afd690798d9eaa46da84674a9bf1ec47e54e84d82cd77cc41f666e14d74a79"
+  },
+  "private_source_manifest": {
+    "path": "data/gold-volatility-inputs-20261011/manifest.json",
+    "sha256": "12b312347b421c9ac9660c30a1462c4ef953d4fbdf478f4f3c8c4ff571843317"
+  },
+  "required_market_context_sessions": 2805,
+  "root_boundary_test_cases_passed": 52,
+  "schema_version": 1,
+  "source_and_native_parser_test_cases_passed": 53,
+  "source_gaps_filled_or_required_return_days_dropped": false,
+  "source_metadata": [
+    {
+      "acquired_at": "2026-10-11T22:32:08.956670+00:00",
+      "acquisition_date_limit": "2026-10-11",
+      "first_date": "2009-09-18",
+      "last_date": "2026-10-09",
+      "path": "data/gold-volatility-inputs-20261011/GVZ.csv",
+      "rows": 4289,
+      "series": "GVZ",
+      "sha256": "f19436d8165084197c2abb1c60a723c5645f780d5cf17123d36973fc5042d3ae",
+      "url": "https://cdn-api.cboe.com/api/global/us_indices/daily_prices/GVZ_History.csv"
+    },
+    {
+      "acquired_at": "2026-10-10T15:21:41.648491+00:00",
+      "acquisition_date_limit": "2026-10-10",
+      "first_date": "1990-01-02",
+      "last_date": "2026-10-09",
+      "path": "data/volatility-term-source-20261010/VIX.csv",
+      "rows": 9291,
+      "series": "VIX",
+      "sha256": "51ea1e59bfeaf400f6816300c39145df5e3fb437e7c60bdb8ca2178f8c96f436",
+      "url": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv"
+    }
+  ],
+  "source_validator_sha256": "e67004f904aa3d9821c3d2e00301fee98a3f3ed7e11ea7c097f1e1453631f730",
+  "spot_index_values_are_traded_returns_or_certified_sleeve_risk": false,
+  "status": "daily_source_incomplete_original_monthly_quotes_verified",
+  "strategy_states_targets_or_returns_computed": false
+}

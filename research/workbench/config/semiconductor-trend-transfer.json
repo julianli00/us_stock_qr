@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "study_id": "semiconductor_fixed_price_trend_transfer_20261011",
+  "data_scope": "factor_etf_portfolio",
+  "data_start": "2015-08-10",
+  "as_of": "2026-10-05",
+  "prior_evaluated_configurations": 130,
+  "new_configurations": 2,
+  "new_economic_factor_definitions": 0,
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "factor_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "sma_observations": 200,
+  "relative_trend_sessions": [63, 126, 252],
+  "cash_reserve": 0.02,
+  "candidates": [
+    {"id": "semiconductor_equity_gold_trend200", "rule": "daily_component_sma"},
+    {"id": "semiconductor_equity_gold_relative_trends", "rule": "monthly_relative_trends"}
+  ],
+  "source_registration": {
+    "path": "evidence/dollar_risk_guard_20261011_registration.json",
+    "sha256": "928cb2954a37db17347df6e7e520e72ebb30beeba606fa35f5905ddfc9bc46b9"
+  },
+  "prior_sma_policy": {
+    "path": "config/trend-factor-guard.json",
+    "sha256": "5e87ac75966bca361b55c0d54718311080666c868cbc6d1503409a586f24c7bc"
+  },
+  "prior_sma_implementation": {
+    "path": "src/us_quant/trend_factor_guard.py",
+    "sha256": "1e05e9d31d38298253d29c3f0668ba43b2a18f669d3a96fb09cc247928f73aa2"
+  },
+  "prior_relative_policy": {
+    "path": "config/allocation-research.json",
+    "sha256": "561fef9ea041a2ba0529b87dc62b3822d58b798ab50ec382dc4528122a1b41b9"
+  },
+  "methodology": {
+    "hypothesis": "Transfer two prior price-trend laws to the existingfour-style/SOXX/gold source rather than adding more macro gates or fitting a lower volatility target. The equity andgoldcomponents are independently reduced by alreadyknown observedtrends;full originalriskbudgets are restored onlywhen the fixed signal allows.",
+    "baseline": "Reuse originalfour_factor_semiconductor_sector50 monthly targets exactly,includinghalf-equitySOXX,equalfour-style remainder,63sessioninversevolriskbalance,30–70equity/98%investment. No dollars/options/claims/inflationgate or change tostockshares. Risk-off canoverride equityminimum withoutredistribution toother riskassets.",
+    "equity_index": "An untraded signalindex compounds contemporaneous dailyfundreturns withfixedweights one-halfSOXX andone-eighth each MTUM/VLUE/QUAL/USMV,normalizedone atfirst actualprice. It is not a costfreeholding strategy,ETFprice reconstruction or independently observed market instrument;actualportfolios trade originalfunds andpayfull fees.",
+    "daily_sma": "Reuse the earlier strict200observed-level simplemean gate oncomposed equitysignal andactualGLDadjustedprice. Equalityriskoff. Retain eachoriginalcomponent ifaboveits mean,otherwiseits wholeweightgoesactualBIL. Emitfirstfullyinformedtarget,statechanges andoriginalmonthupdates;otherrowsallNaN. Priorfour-style gatehelper is reused through an explicitSOXXcomponent adapter,withoutchangingits code.",
+    "monthly_relative": "Atcompletedmonthends only,computeeachcomponent'sfractionof63/126/252sessionreturns strictlyexceedingactualBIL overidenticalhorizons;equalweight3binarysigns. Scaleonlythatcomponent'soriginalbudget by0/one-third/two-thirds/one,freedcapitalgoesBIL. All252priorreturns required;no shorting,cross-componentrenormalization or feedback onnetwealth.",
+    "execution": "Knowncloses only,originaldated1/2sessionqueue,no cancellations or overwriting afterlatercloses. FreshUSD10000forbothformal10y/5ywindows,5bpnext-openbase/20bpextrasessionstress,USD1/order,fractionallong-onlycash-funded. No leveredQLDfromthepriorrelative-trendexample;thatpriorpolicyonlymotivatesfixedhorizons.",
+    "limits": "SMAandrelativehorizons/clockdifferbytheir pre-existinglaw,so thecomparisonisnot isolatedtimingcausalalpha. Trendcanwhipsaw,missopeninggaps orloseupside;historicalbeta/sectorconcentration remains. All130priortrials/windows exposed,oldselectiondiagnostics exclude thesenewtrials/allsearch. No parameter/horizon/timing/share grid or retuning afteroutcomes.",
+    "authority": "Existingmomentum/riskmanagement implementations,notnewfactorfamilies or tradingauthority. OriginalW42fourplans/IJRPKWquota andfrozenforwardmodels remain. Historicalacceptance would still require independentactualforwardevidence.",
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

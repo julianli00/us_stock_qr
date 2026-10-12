@@ -1,0 +1,38 @@
+{
+  "data_type": "option_implied_volatility_indices_not_tradable_assets",
+  "sources": [
+    {
+      "columns": [
+        "DATE",
+        "OPEN",
+        "HIGH",
+        "LOW",
+        "CLOSE"
+      ],
+      "first_date": "1990-01-02",
+      "last_date": "2026-10-09",
+      "retrieved_at": "2026-10-10T15:21:41.648491+00:00",
+      "rows": 9291,
+      "sha256": "51ea1e59bfeaf400f6816300c39145df5e3fb437e7c60bdb8ca2178f8c96f436",
+      "symbol": "VIX",
+      "url": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv"
+    },
+    {
+      "columns": [
+        "DATE",
+        "OPEN",
+        "HIGH",
+        "LOW",
+        "CLOSE"
+      ],
+      "first_date": "2009-09-18",
+      "last_date": "2026-10-09",
+      "retrieved_at": "2026-10-10T15:21:42.194754+00:00",
+      "rows": 4291,
+      "sha256": "f706a0f3b2adb442676514682cabf47556c43a6d465498a7d6da463cc3361281",
+      "symbol": "VIX3M",
+      "url": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX3M_History.csv"
+    }
+  ],
+  "strategy_returns_computed": false
+}

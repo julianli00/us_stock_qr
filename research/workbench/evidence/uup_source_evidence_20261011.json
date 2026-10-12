@@ -1,0 +1,100 @@
+{
+  "actual_public_holdings_sha256": "7aec5f922b949f3d2ec4160a8830527d3f35d52d726206334965b7e734dfbbf6",
+  "actual_public_holdings_url": "https://dng-api.invesco.com/cache/v1/accounts/en_US/shareclasses/46141D203/holdings/fund?idType=cusip&variationType=altHoldings&productType=ETF",
+  "actual_request_manifest_sha256": "9d9f7a0ace5679799532c4dd9f765f8f45d93d0948fbd0c7e64bd9d34aead14d",
+  "all_three_original_HTML_as_PDF_failures_preserved": true,
+  "asset_leverage_self_defaulted_to_one": false,
+  "audience_cookie_or_access_gate_bypassed": false,
+  "candidate_admitted": false,
+  "candidate_price_history_or_portfolio_returns_evaluated": false,
+  "checked_at": "2026-10-11T06:15:46.658716+00:00",
+  "collateral_weights_added_to_derivative_exposure": false,
+  "current_API_fields_are_authenticated_historical_notional_caps": false,
+  "current_reported_weight_proves_full_window_maximum_leverage": false,
+  "current_snapshot_is_complete_historical_leverage_coverage": false,
+  "current_weight_value_exposed_before_source_classifier_written": true,
+  "daily_2x_target_absence_is_sufficient_unleveraged_proof": false,
+  "existing_catalog_leverage_or_goals_rewritten": false,
+  "historical_no_leverage_cap_verified": false,
+  "holdings_request_finished_at": "2026-10-11T06:09:59.377387+00:00",
+  "holdings_request_started_at": "2026-10-11T06:09:58.014506+00:00",
+  "independent_decimal_reported_weight_and_ratio_verified": true,
+  "investment_objective_verified": false,
+  "issuer_identity": {
+    "isin": "US46141D2036",
+    "shareClassInceptionDate": "2007-02-20",
+    "ticker": "UUP"
+  },
+  "issuer_sha256": "412e8bfe1fd94cab15054854d540b3ad720acd5da30028f17eab6a63b1e27bfa",
+  "issuer_url": "https://www.invesco.com/us/en/financial-products/etfs/invesco-db-us-dollar-index-bullish-fund.html",
+  "new_registered_factor_definitions": 0,
+  "new_statutory_document_attempts": [
+    {
+      "content_type": "text/html;charset=utf-8",
+      "html_title": "Country Splash | Invesco US",
+      "http_status": 200,
+      "is_validated_statutory_report": false,
+      "proves_historical_no_leverage_cap": false,
+      "request_finished_at": "2026-10-11T06:09:55.830840+00:00",
+      "request_started_at": "2026-10-11T06:09:51.917835+00:00",
+      "requested_url": "https://www.invesco.com/content/dam/invesco/us/en/product-documents/etf/annual-report/10k/uup-powershares-db-us-dollar-index-bullish-fund-2024-10k.pdf",
+      "sha256": "ec4fcff47a1f2ec5984a70e2c00e57c4fd6a297be547442890092eb845d91f4e",
+      "status": "country_selection_page_not_statutory_report"
+    },
+    {
+      "content_type": "text/html;charset=utf-8",
+      "html_title": "Country Splash | Invesco US",
+      "http_status": 200,
+      "is_validated_statutory_report": false,
+      "proves_historical_no_leverage_cap": false,
+      "request_finished_at": "2026-10-11T06:09:58.012282+00:00",
+      "request_started_at": "2026-10-11T06:09:55.832757+00:00",
+      "requested_url": "https://www.invesco.com/content/dam/invesco/us/en/product-documents/etf/monthly-report/monthly-report-unaudited-/invesco-db-us-dollar-index-bullish-fund-uup-monthly-report-unaudited-08-31-2026.pdf",
+      "sha256": "2ebef462f55a92e77b2593340fbf42f39331e5fd1686269cc72154d0c2f59203",
+      "status": "country_selection_page_not_statutory_report"
+    }
+  ],
+  "new_strategy_evaluations": 0,
+  "null_pending_dividend_weight_assumed_zero": false,
+  "observed_regulator_tool_responses": [
+    {
+      "full_regulatory_document_obtained": false,
+      "observed_http_status": 403,
+      "tool": "web_fetch",
+      "url": "https://www.sec.gov/Archives/edgar/data/1383151/000119312524207167/d839555d424b3.htm"
+    },
+    {
+      "full_regulatory_document_obtained": false,
+      "observed_http_status": 403,
+      "tool": "web_fetch",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=1383151"
+    }
+  ],
+  "order_authority": false,
+  "original_source_block": "evidence/dollar_risk_source_admission_20261011.json",
+  "original_source_block_sha256": "7f4886b9efd0ef895e2c2868acb0d4c8004ad892ee67bdd492ed534a048e3f19",
+  "pre_registration_nullable_cash_parser_failure_preserved": {
+    "failed_parser_sha256": "995a8fdfaa68d11682bf61f429620b1bafb5803ea09b2d29fb3030ef723099eb",
+    "new_registered_strategy_code_failures": 0,
+    "path": "reports/uup-source-admission-20261011/parser-failure-v1.json",
+    "resolved_by_exact_adjustment_identity_without_filling_unknown_weights": true,
+    "root_cause": "The actual USD pending-dividend adjustment has a null CUSIP and weight.",
+    "sha256": "e44e87f3587242736b3352130a8be3eccd4853c928e5072a61d21bcf859f7f12"
+  },
+  "raw_holdings_or_documents_published": false,
+  "reported_currency_future_count": 1,
+  "reported_futures_percent_of_total_net_assets": 102.697813,
+  "reported_futures_weight_exceeds_100_percent": true,
+  "reported_percentage_field": "percentageOfTotalNetAssets",
+  "reported_weight_is_independently_authenticated_notional": false,
+  "reported_weight_to_NAV_ratio": 1.02697813,
+  "schema_version": 1,
+  "search_generated_policy_quotes_used_as_verified_primary_evidence": false,
+  "snapshot_business_session": "2026-10-09",
+  "snapshot_effective_date": "2026-10-10",
+  "snapshot_inside_frozen_qualification_windows": false,
+  "source_module_sha256": "9eb7ed2b20fc126ef0b118d853e70450f13528c7de9e5de0cb7966fd03f4821e",
+  "source_status": "blocked_historical_notional_cap_and_statutory_evidence_unverified",
+  "symbol": "UUP",
+  "unreported_pending_dividend_weight_rows_preserved": 1
+}

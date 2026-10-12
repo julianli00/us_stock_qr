@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "round_id": "allocation_round_20261007",
+  "new_configuration_count": 6,
+  "prior_disclosed_configurations": 60,
+  "previous_round": {
+    "results": "evidence/factor_round_20261007_results.json",
+    "sha256": "a426ea4bee4ad470123b8cd472c58042fe829b5bead36d110e1326d9a24c0787",
+    "development_status": "Hypotheses formulated after viewing the first round; not an independent holdout."
+  },
+  "request": "Continue the latest two-goal research without changing completed configurations or concealing their failures.",
+  "primary_goal": {
+    "same_rule_in_both_windows": true,
+    "net_excess_sharpe_strictly_above": 1.0,
+    "net_cagr_above_spy": true,
+    "base_and_stress_required": true
+  },
+  "retained_secondary_goals": {
+    "net_cagr_strictly_above": 0.20,
+    "max_drawdown_at_most": 0.15
+  },
+  "capital_usd": 10000.0,
+  "cash_reserve": 0.02,
+  "commission_per_order": 1.0,
+  "cost_bps_per_side": 5.0,
+  "stress_cost_bps_per_side": 20.0,
+  "base_delay_sessions": 1,
+  "stress_delay_sessions": 2,
+  "sector_universe": ["XLB", "XLE", "XLF", "XLI", "XLK", "XLP", "XLU", "XLV", "XLY"],
+  "supplement_symbols": ["QLD", "SSO", "XLB", "XLE", "XLF", "XLI", "XLK", "XLP", "XLU", "XLV", "XLY"],
+  "macro_universe": ["QLD", "GLD", "TLT", "IEF", "DBC"],
+  "parameters": {
+    "momentum_sessions": 252,
+    "skip_sessions": 21,
+    "residual_fit_sessions": 756,
+    "volatility_sessions": 63,
+    "variance_sessions": 21,
+    "trend_sessions": 200,
+    "top_k": 3,
+    "max_sector_weight": 0.40,
+    "qqq_reference_volatility": 0.20,
+    "qld_reference_volatility": 0.40,
+    "growth_gold_reference_volatility": 0.20,
+    "macro_momentum_sessions": 126,
+    "macro_top_k": 2,
+    "rank_top_k": 3,
+    "covariance_sessions": 252,
+    "covariance_diagonal_shrinkage": 0.10,
+    "max_macro_weight": 0.80,
+    "trend_horizons": [63, 126, 252]
+  },
+  "candidates": [
+    {"id": "macro_momentum_equal_control", "family": "macro", "allocation": "equal", "embedded_leverage": true},
+    {"id": "macro_momentum_min_variance", "family": "macro", "allocation": "minimum_variance", "embedded_leverage": true},
+    {"id": "macro_momentum_max_diversification", "family": "macro", "allocation": "maximum_diversification", "embedded_leverage": true},
+    {"id": "macro_rank_diversification", "family": "macro_rank", "embedded_leverage": true},
+    {"id": "growth_gold_sma_trend", "family": "growth_gold_trend", "trend": "sma", "embedded_leverage": true},
+    {"id": "growth_gold_multihorizon_trend", "family": "growth_gold_trend", "trend": "multi_horizon", "embedded_leverage": true}
+  ],
+  "sources": [
+    {
+      "title": "Toward Maximum Diversification",
+      "authors": "Choueifaty and Coignard",
+      "year": 2008,
+      "url": "https://doi.org/10.3905/jpm.2008.35.1.40",
+      "adaptation": "Use only a trailing, diagonally shrunk covariance matrix to maximize the diversification ratio of already selected actual ETFs. This is not the paper's index universe or a performance replication."
+    },
+    {
+      "title": "Time series momentum",
+      "authors": "Moskowitz, Ooi and Pedersen",
+      "year": 2012,
+      "url": "https://doi.org/10.1016/j.jfineco.2011.11.003",
+      "adaptation": "Long-only ETF trend exposures; three fixed horizon signs are averaged without parameter search. No futures, short positions or claimed replication."
+    }
+  ],
+  "methodology": {
+    "observation": "Only completed NYSE month ends; unchanged next-open base execution and one-extra-session stress.",
+    "macro_selection": "Rank the fixed five-asset universe by trailing 126-session adjusted return; retain positive-return assets up to two. Missing slots go to BIL. The three variants share the identical selection and vary only the allocation rule.",
+    "macro_allocation": "Equal weighting, minimum covariance variance, or maximum diversification ratio. Covariance uses 252 trailing daily returns and fixed 10% shrinkage toward its diagonal; selected-basket weights are capped at 80% when at least two assets are selected.",
+    "macro_rank": "Equal average percentile rank of 126-session momentum, low 63-session volatility and low average 63-session pairwise correlation; choose at most three positive-momentum assets and use equal slots. Missing slots go to BIL.",
+    "trend_sma": "The QLD/GLD inverse-63-session-volatility allocation is reduced independently for each asset whose close is not above its trailing 200-session mean; freed exposure goes to BIL, not to the other risky asset.",
+    "trend_multi_horizon": "The same inverse-volatility allocation is multiplied asset-by-asset by the fraction of 63/126/252-session total returns exceeding actual BIL over the identical horizon. No post-filter renormalization.",
+    "leverage": "QLD carries embedded daily-reset 2x exposure. All account allocations are long-only and cash-funded with a fixed 2% idle reserve.",
+    "selection_bias": "This is an adaptive second research round after exposed results. All six configurations and all old failures count; neither a new label nor another backtest creates an untouched holdout.",
+    "parameter_search": "None. No result-driven changes to the eight first-round configurations, thresholds, costs or benchmark.",
+    "order_authority": false,
+    "independent_future_performance_claim": false
+  }
+}

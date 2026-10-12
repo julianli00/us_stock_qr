@@ -1,0 +1,134 @@
+{
+  "attribution_revision": 2,
+  "comparison": "residual_momentum_minus_total_momentum_on_identical_target_budgets",
+  "comparisons": [
+    {
+      "accounts": [
+        {
+          "candidate_id": "four_factor_total_momentum_tilt",
+          "cost_paid_usd": 749.1092923600145,
+          "dollar_turnover_usd": 288218.5847200287,
+          "order_tickets": 605,
+          "summed_turnover_ratio": 16.89357113900778
+        },
+        {
+          "candidate_id": "four_factor_residual_momentum_tilt",
+          "cost_paid_usd": 786.0783800512243,
+          "dollar_turnover_usd": 362156.7601024481,
+          "order_tickets": 605,
+          "summed_turnover_ratio": 20.871172233758525
+        }
+      ],
+      "all_four_factors_retained": true,
+      "maximum_equity_target_budget_difference": 6.938893903907228e-18,
+      "maximum_gold_target_budget_difference": 0.0,
+      "residual_minus_total_momentum_cagr": -0.0003480508191826548,
+      "residual_minus_total_momentum_drawdown": -1.4613324963441698e-06,
+      "residual_minus_total_momentum_sharpe": 0.004345707571371871,
+      "same_target_issue_dates": true,
+      "scenario": "base",
+      "years": 10
+    },
+    {
+      "accounts": [
+        {
+          "candidate_id": "four_factor_total_momentum_tilt",
+          "cost_paid_usd": 1165.6371262748617,
+          "dollar_turnover_usd": 280318.5631374305,
+          "order_tickets": 605,
+          "summed_turnover_ratio": 16.91328258338715
+        },
+        {
+          "candidate_id": "four_factor_residual_momentum_tilt",
+          "cost_paid_usd": 1307.3362498319323,
+          "dollar_turnover_usd": 351168.1249159659,
+          "order_tickets": 605,
+          "summed_turnover_ratio": 20.89760950695027
+        }
+      ],
+      "all_four_factors_retained": true,
+      "maximum_equity_target_budget_difference": 6.938893903907228e-18,
+      "maximum_gold_target_budget_difference": 0.0,
+      "residual_minus_total_momentum_cagr": -0.0012130575800564092,
+      "residual_minus_total_momentum_drawdown": -5.048897983028766e-07,
+      "residual_minus_total_momentum_sharpe": -0.0023039353793239403,
+      "same_target_issue_dates": true,
+      "scenario": "stress",
+      "years": 10
+    },
+    {
+      "accounts": [
+        {
+          "candidate_id": "four_factor_total_momentum_tilt",
+          "cost_paid_usd": 364.6322591991636,
+          "dollar_turnover_usd": 119264.5183983272,
+          "order_tickets": 305,
+          "summed_turnover_ratio": 9.070504460404463
+        },
+        {
+          "candidate_id": "four_factor_residual_momentum_tilt",
+          "cost_paid_usd": 378.5442234204393,
+          "dollar_turnover_usd": 147088.44684087863,
+          "order_tickets": 305,
+          "summed_turnover_ratio": 10.984090441082701
+        }
+      ],
+      "all_four_factors_retained": true,
+      "maximum_equity_target_budget_difference": 6.938893903907228e-18,
+      "maximum_gold_target_budget_difference": 0.0,
+      "residual_minus_total_momentum_cagr": -0.0024435707528969175,
+      "residual_minus_total_momentum_drawdown": -0.0035381195389937448,
+      "residual_minus_total_momentum_sharpe": -0.01017698914568077,
+      "same_target_issue_dates": true,
+      "scenario": "base",
+      "years": 5
+    },
+    {
+      "accounts": [
+        {
+          "candidate_id": "four_factor_total_momentum_tilt",
+          "cost_paid_usd": 538.1226500465824,
+          "dollar_turnover_usd": 116561.32502329117,
+          "order_tickets": 305,
+          "summed_turnover_ratio": 9.024891877190303
+        },
+        {
+          "candidate_id": "four_factor_residual_momentum_tilt",
+          "cost_paid_usd": 592.3127931300974,
+          "dollar_turnover_usd": 143656.39656504858,
+          "order_tickets": 305,
+          "summed_turnover_ratio": 10.959505706737048
+        }
+      ],
+      "all_four_factors_retained": true,
+      "maximum_equity_target_budget_difference": 6.938893903907228e-18,
+      "maximum_gold_target_budget_difference": 0.0,
+      "residual_minus_total_momentum_cagr": -0.003730469360541999,
+      "residual_minus_total_momentum_drawdown": -0.0036094174805991752,
+      "residual_minus_total_momentum_sharpe": -0.019334028155718164,
+      "same_target_issue_dates": true,
+      "scenario": "stress",
+      "years": 5
+    }
+  ],
+  "failure_counts_scope_completed_recurring_reviews": 18,
+  "interpretation": "Residual scoring did not establish a consistent post-cost Sharpe or CAGR advantage. Targets share aggregate equity/gold budgets, but drifted realized holdings and dollar turnover can differ. These exposed-history diagnostics are not selection-adjusted confidence or independent future validation.",
+  "new_economic_factor_definitions": 0,
+  "new_strategy_evaluations": 0,
+  "order_authority": false,
+  "prior_nonprogram_configurations": 84,
+  "recurring_review_failure_counts": {
+    "also_beats_base_cost_spy": 18,
+    "beats_spy": 18,
+    "drawdown_at_most_15pct": 18,
+    "sharpe_above_1": 18
+  },
+  "turnover_definition": "Ledger turnover is traded dollars divided by pretrade opening NAV. Summed turnover ratios are dimensionless; traded USD is reconstructed from opening holdings/cash and verified against charged basis-point costs plus ticket commissions.",
+  "units_correction": {
+    "correction": "The first uncommitted derived diagnostic mislabeled summed turnover ratios as USD. Version2 distinguishes both and independently reconstructs traded dollars.",
+    "new_strategy_evaluations": 0,
+    "original_diagnostic": "reports/factor-momentum-comparison-20261011/attribution-units-v1.json",
+    "original_sha256": "29f2d1b27602d7b57fe3b397614e642d045793533d40cbb41a823e106edff92c",
+    "strategy_targets_metrics_and_review_outcomes_changed": false
+  }
+}

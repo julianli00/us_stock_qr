@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "program_id": "recurring_multifactor_research_v1",
+  "timezone": "Asia/Shanghai",
+  "schedule": {"interval": "weekly", "day": 6, "hour": 9},
+  "maximum_new_factors_per_cycle": 2,
+  "minimum_economic_factor_families": 3,
+  "prior_evaluated_configurations": 84,
+  "seed_factors": [
+    {
+      "id": "price_momentum",
+      "family": "momentum",
+      "name": "Previously researched price momentum",
+      "definition": "Trailing positive price momentum as recorded in prior fixed ETF research.",
+      "direction": "higher",
+      "inputs": ["adjusted_close", "decision_session"],
+      "parameters": {"role": "prior_research_reference"},
+      "sources": ["https://doi.org/10.1016/j.jfineco.2011.11.003"],
+      "rationale": "Preserve the already studied momentum family rather than recount it as a new discovery.",
+      "limitations": "Prior results do not establish future alpha; ETF timing is not individual-stock evidence."
+    },
+    {
+      "id": "value_exposure",
+      "family": "value",
+      "name": "Previously researched value exposure",
+      "definition": "Value characteristics accessed through the actual VLUE ETF in the earlier research.",
+      "direction": "higher",
+      "inputs": ["historical_fund_returns", "issuer_definition"],
+      "parameters": {"role": "prior_research_reference"},
+      "sources": ["https://www.ishares.com/us/products/251616/ishares-msci-usa-value-factor-etf"],
+      "rationale": "Retain value as a distinct economic family without inventing direct historical stock scores.",
+      "limitations": "ETF exposure is not complete point-in-time constituent data."
+    },
+    {
+      "id": "quality_exposure",
+      "family": "earnings_quality",
+      "name": "Previously researched quality exposure",
+      "definition": "Issuer-described profitability, stable earnings and low debt exposure through QUAL.",
+      "direction": "higher",
+      "inputs": ["historical_fund_returns", "issuer_definition"],
+      "parameters": {"role": "prior_research_reference"},
+      "sources": ["https://www.ishares.com/us/products/256101/ishares-msci-usa-quality-factor-etf"],
+      "rationale": "Cash-flow accrual quality belongs to this economic family, not a new independent family.",
+      "limitations": "Related quality definitions may be highly correlated."
+    },
+    {
+      "id": "low_volatility_exposure",
+      "family": "low_volatility",
+      "name": "Previously researched low-volatility exposure",
+      "definition": "Lower-volatility equity exposure through the actual USMV fund.",
+      "direction": "higher",
+      "inputs": ["historical_fund_returns", "issuer_definition"],
+      "parameters": {"role": "prior_research_reference"},
+      "sources": ["https://www.ishares.com/us/products/239695/ishares-msci-usa-minimum-volatility-etf"],
+      "rationale": "Preserve the prior risk-factor family without treating repeated windows as separate factors.",
+      "limitations": "No guaranteed drawdown ceiling or independent alpha."
+    }
+  ],
+  "goals": {
+    "net_excess_sharpe_strictly_above": 1.0,
+    "max_drawdown_at_most": 0.15,
+    "beat_spy": true,
+    "horizons_years": [10, 5],
+    "scenarios": ["base", "stress"],
+    "capital_usd": 10000.0,
+    "base_cost_bps": 5.0,
+    "stress_cost_bps": 20.0,
+    "commission_per_order": 1.0,
+    "base_delay_sessions": 1,
+    "stress_delay_sessions": 2,
+    "leveraged_products_allowed": false
+  },
+  "required_stock_data": [
+    "filing_time_fundamentals",
+    "historical_security_master",
+    "historical_membership",
+    "delisted_total_returns",
+    "adjusted_open_and_close"
+  ],
+  "promotion": {
+    "scope": "research_version_only",
+    "minimum_forward_sessions_for_trading_review": 63,
+    "automatic_order_submission": false,
+    "automatic_live_deployment": false,
+    "backfill_forward_observations": false,
+    "allow_relabelled_holdouts": false
+  },
+  "discovery_policy": "Discover economically motivated definitions, not a grid of moving-average values. Every new definition, failed trial and data blocker remains recorded. Proposals are not counted as evaluated strategies.",
+  "source_policy": "Verify paper/issuer definitions and licenses. Only actual point-in-time inputs may support a strategy test. Current provider extraction, a two-company sample or a current stock list is not full historical evidence.",
+  "publication_policy": "Only explicit audited source/configuration/sanitized evidence commits. No raw prices, filings, broker state, credentials, broad git add or force pushes.",
+  "existing_forward_ledgers": "Remain paused and unchanged. This program never reads, resets or resumes them."
+}

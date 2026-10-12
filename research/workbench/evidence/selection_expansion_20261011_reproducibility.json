@@ -1,0 +1,105 @@
+{
+  "absolute_arithmetic_tolerance": 1e-15,
+  "all_p_values_and_every_comparison_bound_independently_reproduced": true,
+  "checked_at": "2026-10-11T05:03:35.946937+00:00",
+  "complete_saved_input_matrices_byte_identical": true,
+  "direct_arithmetic_checks": [
+    {
+      "block_sessions": 21,
+      "comparisons": 66,
+      "critical_value_error": 1.0842021724855044e-19,
+      "every_comparison_mean_bound_and_sign_checked": true,
+      "independent_maxima_sha256": "35737f4f333a88ffcd47574272696b7f54c6cb19ba245e5e3d2a7a1a84c6cf21",
+      "maximum_observed_mean_error": 5.421010862427522e-20,
+      "maximum_simultaneous_lower_mean_error": 2.168404344971009e-19,
+      "observed_maximum_error": 0.0,
+      "p_value_exactly_reproduced": true,
+      "samples": 4000,
+      "scope": "original_prefix_replays",
+      "scope_limited_p_value": 1.0,
+      "seed": 20261011,
+      "sessions": 2512,
+      "years": 10
+    },
+    {
+      "block_sessions": 21,
+      "comparisons": 108,
+      "critical_value_error": 5.421010862427522e-19,
+      "every_comparison_mean_bound_and_sign_checked": true,
+      "independent_maxima_sha256": "c3dc94fcdbec77d55ff65b898a092db9defb7cee713f6c064bccc01ab525aa72",
+      "maximum_observed_mean_error": 1.0842021724855044e-19,
+      "maximum_simultaneous_lower_mean_error": 6.505213034913027e-19,
+      "observed_maximum_error": 4.0657581468206416e-20,
+      "p_value_exactly_reproduced": true,
+      "samples": 4000,
+      "scope": "analyses",
+      "scope_limited_p_value": 0.5001249687578105,
+      "seed": 20261011,
+      "sessions": 2512,
+      "years": 10
+    },
+    {
+      "block_sessions": 21,
+      "comparisons": 66,
+      "critical_value_error": 9.75781955236954e-19,
+      "every_comparison_mean_bound_and_sign_checked": true,
+      "independent_maxima_sha256": "8f9aea95b08dafe1d4a46a29b93d3b80d1da95b9d22595f374884dec09bccf25",
+      "maximum_observed_mean_error": 8.131516293641283e-20,
+      "maximum_simultaneous_lower_mean_error": 1.0842021724855044e-18,
+      "observed_maximum_error": 2.710505431213761e-20,
+      "p_value_exactly_reproduced": true,
+      "samples": 4000,
+      "scope": "original_prefix_replays",
+      "scope_limited_p_value": 0.5881029742564359,
+      "seed": 20261012,
+      "sessions": 1254,
+      "years": 5
+    },
+    {
+      "block_sessions": 21,
+      "comparisons": 108,
+      "critical_value_error": 2.168404344971009e-19,
+      "every_comparison_mean_bound_and_sign_checked": true,
+      "independent_maxima_sha256": "a044f4d6576ef3b1940c46c26346100105c807f5429ff9ce40f372b6932282c0",
+      "maximum_observed_mean_error": 8.131516293641283e-20,
+      "maximum_simultaneous_lower_mean_error": 3.2526065174565133e-19,
+      "observed_maximum_error": 0.0,
+      "p_value_exactly_reproduced": true,
+      "samples": 4000,
+      "scope": "analyses",
+      "scope_limited_p_value": 0.20569857535616096,
+      "seed": 20261012,
+      "sessions": 1254,
+      "years": 5
+    }
+  ],
+  "expanded_maximum_never_below_prefix_on_any_sample": true,
+  "full_replay_all_joint_statistics_identical": true,
+  "independent_verifier_sha256": "54b5f601c880e5b6befad9bb6a11e28cb39d912f125bd55a141bad8e8c40d5d3",
+  "input_matrices": {
+    "10": {
+      "path": "reports/selection-expansion-20261011/primary/10y-log-growth-differences.csv",
+      "scalar_source_reconstruction_maximum_error": 0.0,
+      "sha256": "ab4f85e16f686ce0e6e3bbaacebcba5ff2976b58456999258888813304201943",
+      "shape": [
+        2512,
+        108
+      ]
+    },
+    "5": {
+      "path": "reports/selection-expansion-20261011/primary/5y-log-growth-differences.csv",
+      "scalar_source_reconstruction_maximum_error": 0.0,
+      "sha256": "d4910af8022d04b059bf1aedf95b9c51d0010ddb90031b717557fe6e95923435",
+      "shape": [
+        1254,
+        108
+      ]
+    }
+  },
+  "method": "Separately read all original strategy/SPY/independent-account and risk-free references; reconstruct each log difference with scalar math.log1p. Use scalar fsum means, one-sample-at-a-time explicit modular block positions, direct indexed means and a sorted higher order statistic. No joint_maximum or circular_positions call. Original66 and expanded108 share every draw.",
+  "new_strategy_evaluations": 0,
+  "order_authority": false,
+  "public_results_sha256": "d7d0d5a4a1ed4d0ede9914f2207176be77b27679331fde085694548dfb38cfd5",
+  "registered_auditor_sha256": "164931da69c6ebd2322fa496549c47baf1de185b427245e3ab041a7019d272fe",
+  "schema_version": 1
+}

@@ -1,0 +1,74 @@
+{
+  "accounting_registration": "evidence/cash_funded_accounting_v2_registration.json",
+  "additional_strategy_trial_count_for_accounting_replay": 0,
+  "audit_tolerances_changed": false,
+  "corrected_bundle": {
+    "path": "reports/trend-factor-guard-20261011-accounting-replay/four_factor_gold_component_trend_guard/bundle.json",
+    "sha256": "426a24119b2bee29e72450e5513728cf26b2aea4f2eba65e2f1b55cd6900765c"
+  },
+  "incident": "evidence/trend_guard_accounting_incident_v1.json",
+  "minimal_counterexample_corrected_cost_usd": 0.0,
+  "minimal_counterexample_corrected_order_tickets": 0,
+  "old_review_outcomes_rewritten": false,
+  "order_authority": false,
+  "original_failed_bundle_retained": {
+    "path": "reports/trend-factor-guard-20261011/four_factor_gold_component_trend_guard/bundle.json",
+    "sha256": "8c681936dbede4a2494684c09c1afa3de313a5f77a3ca03595b2980b3243e663"
+  },
+  "records": [
+    {
+      "accounting_engine": {
+        "id": "cash_funded_noop_v2",
+        "source_sha256": "e7efd7a9a87178d556320693bdfd389eef6a21cae70c36dd77c4325b6607d2af"
+      },
+      "all_target_bytes_identical": true,
+      "cost_capital_and_delay_unchanged": true,
+      "maximum_independent_equity_error_usd": 2.000888343900442e-11,
+      "original_targets_sha256": "c35d2cc090790f31ad81093a2c67e7f87be45df50f0342a64618fb6ae218d422",
+      "replayed_targets_sha256": "c35d2cc090790f31ad81093a2c67e7f87be45df50f0342a64618fb6ae218d422",
+      "scenario": "base",
+      "years": 10
+    },
+    {
+      "accounting_engine": {
+        "id": "cash_funded_noop_v2",
+        "source_sha256": "e7efd7a9a87178d556320693bdfd389eef6a21cae70c36dd77c4325b6607d2af"
+      },
+      "all_target_bytes_identical": true,
+      "cost_capital_and_delay_unchanged": true,
+      "maximum_independent_equity_error_usd": 1.0550138540565968e-10,
+      "original_targets_sha256": "c35d2cc090790f31ad81093a2c67e7f87be45df50f0342a64618fb6ae218d422",
+      "replayed_targets_sha256": "c35d2cc090790f31ad81093a2c67e7f87be45df50f0342a64618fb6ae218d422",
+      "scenario": "stress",
+      "years": 10
+    },
+    {
+      "accounting_engine": {
+        "id": "cash_funded_noop_v2",
+        "source_sha256": "e7efd7a9a87178d556320693bdfd389eef6a21cae70c36dd77c4325b6607d2af"
+      },
+      "all_target_bytes_identical": true,
+      "cost_capital_and_delay_unchanged": true,
+      "maximum_independent_equity_error_usd": 2.1827872842550278e-11,
+      "original_targets_sha256": "385f89ce5929efc806018e8c3151fcccc8d790f721c31955b8e219899df8af9b",
+      "replayed_targets_sha256": "385f89ce5929efc806018e8c3151fcccc8d790f721c31955b8e219899df8af9b",
+      "scenario": "base",
+      "years": 5
+    },
+    {
+      "accounting_engine": {
+        "id": "cash_funded_noop_v2",
+        "source_sha256": "e7efd7a9a87178d556320693bdfd389eef6a21cae70c36dd77c4325b6607d2af"
+      },
+      "all_target_bytes_identical": true,
+      "cost_capital_and_delay_unchanged": true,
+      "maximum_independent_equity_error_usd": 2.000888343900442e-11,
+      "original_targets_sha256": "385f89ce5929efc806018e8c3151fcccc8d790f721c31955b8e219899df8af9b",
+      "replayed_targets_sha256": "385f89ce5929efc806018e8c3151fcccc8d790f721c31955b8e219899df8af9b",
+      "scenario": "stress",
+      "years": 5
+    }
+  ],
+  "schema_version": 1,
+  "strategy_rule_or_parameters_changed": false
+}

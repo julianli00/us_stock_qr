@@ -1,0 +1,224 @@
+{
+  "actual_registration": "data/factor-exposure-20261011/registration.json",
+  "actual_registration_sha256": "b0d8a4e85410877bee430e814d6013cc2d9cc879dc11d3dbd17ee7fa722e7f72",
+  "all_old_strategy_and_selection_results_preserved": true,
+  "all_seven_existing_forward_profiles_unchanged": true,
+  "auditor_sha256": "ddebd6dc58db12eca9113c3f4287003cb41abc17ab4c89bc718f80348091808c",
+  "event_chain_sha256": "0650f1dbc0b27754a3aadbbea95682d56b605fc3561968f8e7247f320830688f",
+  "exposure_results_computed": false,
+  "factor_source_coverage": {
+    "10": {
+      "available_overlap_end": "2026-08-31",
+      "available_overlap_sessions": 2488,
+      "available_overlap_start": "2016-10-06",
+      "covers_complete_qualification_window": false,
+      "formal_end": "2026-10-05",
+      "formal_qualification_window_changed": false,
+      "formal_sessions": 2512,
+      "formal_start": "2016-10-06",
+      "unavailable_tail_sessions": [
+        "2026-09-01",
+        "2026-09-02",
+        "2026-09-03",
+        "2026-09-04",
+        "2026-09-08",
+        "2026-09-09",
+        "2026-09-10",
+        "2026-09-11",
+        "2026-09-14",
+        "2026-09-15",
+        "2026-09-16",
+        "2026-09-17",
+        "2026-09-18",
+        "2026-09-21",
+        "2026-09-22",
+        "2026-09-23",
+        "2026-09-24",
+        "2026-09-25",
+        "2026-09-28",
+        "2026-09-29",
+        "2026-09-30",
+        "2026-10-01",
+        "2026-10-02",
+        "2026-10-05"
+      ]
+    },
+    "5": {
+      "available_overlap_end": "2026-08-31",
+      "available_overlap_sessions": 1230,
+      "available_overlap_start": "2021-10-06",
+      "covers_complete_qualification_window": false,
+      "formal_end": "2026-10-05",
+      "formal_qualification_window_changed": false,
+      "formal_sessions": 1254,
+      "formal_start": "2021-10-06",
+      "unavailable_tail_sessions": [
+        "2026-09-01",
+        "2026-09-02",
+        "2026-09-03",
+        "2026-09-04",
+        "2026-09-08",
+        "2026-09-09",
+        "2026-09-10",
+        "2026-09-11",
+        "2026-09-14",
+        "2026-09-15",
+        "2026-09-16",
+        "2026-09-17",
+        "2026-09-18",
+        "2026-09-21",
+        "2026-09-22",
+        "2026-09-23",
+        "2026-09-24",
+        "2026-09-25",
+        "2026-09-28",
+        "2026-09-29",
+        "2026-09-30",
+        "2026-10-01",
+        "2026-10-02",
+        "2026-10-05"
+      ]
+    }
+  },
+  "included_candidate_ids": [
+    "four_factor_gold_risk_balance",
+    "four_factor_gold_daily_vol12",
+    "quality_implementation_gold_monthly",
+    "quality_implementation_gold_daily_vol12",
+    "four_factor_static70_gold30",
+    "four_factor_causal_mean_variance",
+    "factor_gold_term_half_risk",
+    "factor_gold_term_equity_exit",
+    "macro_real_yield_factor_tilt",
+    "macro_real_yield_tilt_curve_defense",
+    "four_factor_defense_momentum",
+    "four_factor_defense_diversified",
+    "four_factor_daily_target_control",
+    "four_factor_growth_satellite50",
+    "conditional_price_factor_model_v2",
+    "conditional_macro_option_factor_model_v2",
+    "four_factor_total_momentum_tilt",
+    "four_factor_residual_momentum_tilt",
+    "four_factor_gold_joint_trend_guard",
+    "four_factor_gold_component_trend_guard",
+    "four_factor_pdp_momentum_implementation",
+    "four_factor_dual_momentum_implementation",
+    "credit_baa_level_guard",
+    "credit_baa_compression_recovery",
+    "four_factor_growth_gold_monthly_control",
+    "four_factor_growth_gold_ratchet_protection",
+    "four_factor_growth_gold_semideviation",
+    "four_factor_growth_gold_expected_loss",
+    "four_factor_technology_sector50",
+    "four_factor_semiconductor_sector50",
+    "semiconductor_dollar_half_guard",
+    "semiconductor_dollar_real_yield_half_guard",
+    "semiconductor_dollar_nfci_tight_guard",
+    "semiconductor_dollar_nfci_deterioration_guard",
+    "semiconductor_term_half_guard",
+    "semiconductor_term_or_dollar_half_guard"
+  ],
+  "investment_objective_verified": false,
+  "new_candidates_or_reviews": 0,
+  "new_economic_factor_definitions": 0,
+  "new_strategy_evaluations": 0,
+  "order_authority": false,
+  "policy": {
+    "as_of": "2026-10-05",
+    "capital_usd": 10000.0,
+    "data_start": "2015-08-10",
+    "diagnostic_id": "factor_exposure_20261011",
+    "factor_overlap_last_session": "2026-08-31",
+    "fit_is_out_of_sample_forecast": false,
+    "forward_rules_changed": false,
+    "highlighted_reference_ids": [
+      "semiconductor_dollar_half_guard",
+      "four_factor_semiconductor_sector50",
+      "macro_real_yield_factor_tilt"
+    ],
+    "horizons_years": [
+      10,
+      5
+    ],
+    "included_candidate_count": 36,
+    "methodology": {
+      "academic_overlap_model": "Use actual primary US daily FF5plusmomentum archive percent returns converted exactly once to decimal. Both202608CRSParchives end2026-08-31. This model explicitly uses only the complete2488/1230-session overlap and lists all24unavailable final sessions;no missing-day fill,carry,extrapolation or shortened qualification windows. Paired account excess returns use published FF RF only for this descriptive regression,with its difference from original account RF disclosed.",
+      "authority": "Read-only;no new economic definition,candidate,backtest,review,engine migration,champion,forward-rule replacement or order. Prior84trials and unknown search decisions remain outside the36reviewselectiondiagnostic. Regression exposure removal cannot override the original Sharpe/SPY/drawdown gates or zero prospective model observations.",
+      "cohort": "All36complete recurring reviews and all144original10y/5ybase/stressstrategy/SPYaccount paths,including every rejection. Do not select or omit paths using the new exposures. Revalidate original reviewed bundles,independent accounts,fees,delays and frozen risk-free metrics using the unchanged original reader.",
+      "reporting": "Report coefficients,R-squared,residual volatility,exact arithmetic mean decomposition and paired strategy-minus-cost-matched-SPYintercept. Intercept times252is annualized arithmetic residual mean,not CAGR,a tradable alpha,Sharpe or selection-adjusted significance. No p-values or confidence claims are added to this post-selected descriptive fit. Three highlighted references are fixed from already exposed reporting and forward rules,not selected on new results.",
+      "source_limits": "Current revised academic research factor returns are not original point-in-time factor signals or deployable long-only ETF accounts. Primary catalog documents January2025CIZformat change and June2024RFsource change;no complete first-publication vintages. Academic market is not SPY;SOXXis an industry exposure,not an independent economic factor. Current vendor prices and old per-review accounting limitations remain.",
+      "traded_proxy_models": "In-sample OLS with intercept on the exact2512/1254formal sessions. One model uses SPY excess alone. The other adds SOXX-minus-SPY semiconductor-relative return and GLD/IEF excess returns from the frozen actual sector-price snapshot. Account excess returns use their own unchanged original frozen risk-free series. These are descriptive risk proxies,not new predictive factors or hypothetical tradable residuals.",
+      "validation": "Require exact cohort/source hashes,full formal market-proxy windows,explicit academic overlap shapes and deterministic replay. Independently reconstruct raw account/proxy/factor inputs and verify coefficients,paired differences,means,R-squared and residual volatility via centered covariance normal equations rather than calling the production fit."
+    },
+    "models": {
+      "ff6_available_overlap": [
+        "Mkt-RF",
+        "SMB",
+        "HML",
+        "RMW",
+        "CMA",
+        "Mom"
+      ],
+      "market_full_window": [
+        "SPY_excess"
+      ],
+      "market_sector_defense_full_window": [
+        "SPY_excess",
+        "SOXX_minus_SPY",
+        "GLD_excess",
+        "IEF_excess"
+      ]
+    },
+    "new_strategy_evaluations": 0,
+    "order_authority": false,
+    "qualification_policy_changed": false,
+    "register_queued_factors_early": false,
+    "research_snapshot": {
+      "path": "evidence/research_program_2026-W41_results_v40.json",
+      "sha256": "d9447ff4f0b0f21c3a14a7d4077e82f4ada3942992583ae1e500484cd47c2d00"
+    },
+    "risk_proxy_bundle": {
+      "path": "reports/sector-growth-balance-20261011/four_factor_semiconductor_sector50/bundle.json",
+      "sha256": "94f70da5beff41b3c0165ed215ac5f7a326310c8e891b8d8d40f355f2dacd469"
+    },
+    "scenarios": [
+      "base",
+      "stress"
+    ],
+    "schema_version": 1,
+    "selection_results": {
+      "path": "evidence/selection_expansion_20261011_results.json",
+      "sha256": "d7d0d5a4a1ed4d0ede9914f2207176be77b27679331fde085694548dfb38cfd5"
+    },
+    "source_bound_audit": {
+      "path": "evidence/research_program_source_bound_audit_v14.json",
+      "sha256": "3458a1aa3cc32919697035b92cd229f3c6e949346f901e6091fcb9f1602cd189"
+    },
+    "source_manifest": {
+      "path": "data/factor-exposure-source-20261011/manifest.json",
+      "sha256": "2acc9cced12acaf87e6f8b3c9568dd1f8d587f7fe87d81f87a679060b480adf8"
+    },
+    "total_disclosed_configurations": 120
+  },
+  "policy_sha256": "cac55f97214bea39c240fc8e68ec9a0bc099898b8ef597b169b297269950ff89",
+  "preserved_prospective_registration_and_head_hashes": {
+    "data/prospective-dollar-accounts-v1/head.json": "8a97dd04af94e3b35490e74ee12441e7abacb8a5a6860725714f16f0d2353bdd",
+    "data/prospective-dollar-accounts-v1/registration.json": "b6c9247d3cccb6d8b5ccc34d77cefbce62c44cc55f28b265eaac6bd3ce8af26b",
+    "data/prospective-dollar-inputs-v1/head.json": "9a4eb196c6f5e4e61be2e22306c23eeb84db67c68c030a676faf8fefd02c0442",
+    "data/prospective-dollar-inputs-v1/registration.json": "f913627fa54faf475a303a0da7326db4e7c4b7676279dbbfad0fec83d708ea23",
+    "data/prospective-dollar-targets-v1/head.json": "57a5a6e0a49471451bcc2289776537af91d66ec309e2c227cf8843b5cf0db9e7",
+    "data/prospective-dollar-targets-v1/registration.json": "3e5d01e56b22fc8d60cf363b7b4f6d8bd97404704c566801201b61a557c8449e",
+    "data/prospective-factor-inputs-v2/head.json": "ffa715f35851df18a931753c0af8ee6d613d05c066e1c3abb8d131d31d8daa16",
+    "data/prospective-factor-inputs-v2/registration.json": "11c9cd6659c3efe58e8334d363d2ab1b4bc2b8c2461a9d11f29b5769de0353eb",
+    "data/prospective-market-v1/head.json": "6c3be7f4e6c69d95c56a9bf5102c1f60637e82cbe32ed6c91ca729e67271c87c",
+    "data/prospective-market-v1/registration.json": "91f33b965d5a36205c79e16a6da0aeee6c00844748909cf452324477bd7fccf5",
+    "data/prospective-research-accounts-v1/head.json": "8a97dd04af94e3b35490e74ee12441e7abacb8a5a6860725714f16f0d2353bdd",
+    "data/prospective-research-accounts-v1/registration.json": "f2f5d822db1b875c15a5d05861e9ecdc10b63d62748c729ab6d2b992930b1d1f",
+    "data/prospective-target-observations-v1/head.json": "0b21433518e75b222ed61e63eafb8819468b9422c7163bc85da17dd64d6473e3",
+    "data/prospective-target-observations-v1/registration.json": "2c3c5a50fb7f2e870089429446c1616b9eee76bee34d0e4057439d7cb28da44d"
+  },
+  "program_engine_sha256": "0a36a3033ccffbbf2d8474b4e73ff5ddaad6d3c4b5922600c0eb8541ed59f9ab",
+  "recorded_at": "2026-10-11T05:14:57.229807+00:00",
+  "registered_at": "2026-10-11T05:14:55.767421+00:00",
+  "schema_version": 1
+}

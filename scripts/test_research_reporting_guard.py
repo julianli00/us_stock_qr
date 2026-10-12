@@ -147,6 +147,32 @@ class ResearchReportingTests(unittest.TestCase):
         self.assertFalse(outbox_path(self.root).parent.exists())
         self.assertEqual(before, {name: (self.root / name).read_bytes() for name in PUBLIC_INPUTS})
 
+    def test_progress_can_link_a_research_branch_without_claiming_a_pr(self) -> None:
+        path = self.root / "docs/research_progress.json"
+        progress = read_json(path)
+        url = "https://github.com/julianli00/us_stock_qr/tree/julianli00-factor-research"
+        progress["github_progress"] = {"branch_url": url, "merged": False}
+        path.write_bytes(json_bytes(progress))
+        chinese = report_from_root(self.root, NOW)
+        english = report_from_root(self.root, NOW, language="en")
+        self.assertIn(f"<{url}|研究进展>", chinese.text)
+        self.assertIn(f"<{url}|research progress>", english.text)
+        self.assertNotIn("/pull/1", chinese.text)
+        self.assertNotIn("progress and PR", english.text)
+        self.assertEqual(chinese.idea_keys, ())
+
+    def test_scheduled_research_checkpoints_do_not_claim_reporter_git_side_effects(self) -> None:
+        path = self.root / "docs/research_progress.json"
+        progress = read_json(path)
+        progress["github_progress"]["scheduled_agent_checkpoints"] = True
+        path.write_bytes(json_bytes(progress))
+        self.assertIn("日报本身不执行git或自动部署", report_from_root(self.root, NOW).text)
+        self.assertIn("reporter itself runs no git", report_from_root(self.root, NOW, language="en").text)
+        progress["github_progress"]["scheduled_agent_checkpoints"] = "yes"
+        path.write_bytes(json_bytes(progress))
+        with self.assertRaises(ReportError):
+            report_from_root(self.root, NOW)
+
     def test_calendar_before_close_after_close_and_six_am(self) -> None:
         before = self.calendar.latest_completed(datetime(2026, 10, 6, 19, 59, tzinfo=timezone.utc))
         after = self.calendar.latest_completed(datetime(2026, 10, 6, 20, 1, tzinfo=timezone.utc))
@@ -217,6 +243,11 @@ class ResearchReportingTests(unittest.TestCase):
         self.assert_blocked(snapshot, "watch_decision_outside_cutoff")
 
     def test_zh_blockers_and_progress_are_readable_with_real_canonical_link(self) -> None:
+        path = self.root / "docs/research_progress.json"
+        progress = read_json(path)
+        progress["github_progress"]["pull_request_url"] = "https://github.com/julianli00/us_stock_qr/pull/1"
+        progress["next_zh"] = ["先核对同一截止日和来源哈希，再研究可执行观察。"]
+        path.write_bytes(json_bytes(progress))
         report = report_from_root(self.root, NOW)
         self.assertNotIn("top30_price_session_mismatch", report.text)
         self.assertIn("Top30行情仍停在历史截止日", report.text)

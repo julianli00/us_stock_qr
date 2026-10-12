@@ -1,0 +1,262 @@
+{
+  "candidates": [
+    {
+      "candidate_spec": {
+        "body_sha256": "3e59c34911569e0e7c393cb7e61c29684ddb7b5728fb7074e37233d858b6abec",
+        "path": "data/factor-covariance-risk-20261011/four_factor_covariance_risk_budget-spec.json",
+        "sha256": "166b40fa501c6ba2b14abe250899198e590fe791d68eff7d0badc14cbbdb6f1d"
+      },
+      "readiness": {
+        "body_sha256": "a1882425de1016463a8b3c0d286555f23cc206f2f563411de7f6bff93f43dda3",
+        "path": "data/factor-covariance-risk-20261011/readiness.json",
+        "sha256": "55d6506ca5b53002c8eb7b190e2d3280d3bc47e4422e91a9c9e99a82d99250e7"
+      },
+      "registration": {
+        "candidate_id": "four_factor_covariance_risk_budget",
+        "data_scope": "factor_etf_portfolio",
+        "families": [
+          "earnings_quality",
+          "low_volatility",
+          "momentum",
+          "value"
+        ],
+        "order_authority": false,
+        "readiness_sha256": "a1882425de1016463a8b3c0d286555f23cc206f2f563411de7f6bff93f43dda3",
+        "registered_at": "2026-10-11T10:39:18.862713+00:00",
+        "spec_sha256": "3e59c34911569e0e7c393cb7e61c29684ddb7b5728fb7074e37233d858b6abec"
+      },
+      "spec": {
+        "asset_leverage": {
+          "BIL": 1.0,
+          "GLD": 1.0,
+          "IEF": 1.0,
+          "MTUM": 1.0,
+          "QUAL": 1.0,
+          "SPY": 1.0,
+          "USMV": 1.0,
+          "VLUE": 1.0
+        },
+        "configuration": {
+          "id": "four_factor_covariance_risk_budget",
+          "method": "risk_budget"
+        },
+        "data_scope": "factor_etf_portfolio",
+        "evaluation_as_of": "2026-10-05",
+        "factor_ids": [
+          "price_momentum",
+          "value_exposure",
+          "quality_exposure",
+          "low_volatility_exposure"
+        ],
+        "frozen_files": {
+          "config/factor-covariance-risk.json": "fec9ecf1738403cc75279ae2be84fff02359aeed0a7a3774c2f80ee3053ce9b4",
+          "config/factor-gold-risk.json": "6c550602c98fa5b09e5b59791bdbbe569c9b4082e2d1dfc9ba4cd5639a25ec63",
+          "data/risk-only-covariance-source-20261011/erc-crossref-response.json": "e514705f7bf8da9d7f1fe84710278924966820d9869780f326f3502e313ad89e",
+          "data/risk-only-covariance-source-20261011/maxdiv-crossref-response.json": "1552d8fba3c7d150a95d7c8d824321c67b2ea0e4ab1a17b2db935a34286ba2b3",
+          "evidence/factor_gold_risk_20261010_registration.json": "94d7e5130dc480ef858cf1a23bb9da5a1ff6f66825c60e9fe6144103616dee86",
+          "evidence/risk_only_covariance_20261011_source_context.json": "db6d08cb8474323a3dc04b57a2f29fc3dce3455ad40b67f5d781eb2a98850954",
+          "src/us_quant/factor_covariance_risk.py": "4d76d58cafc5c8118e43f9f3c3d8fab1962a6bb20c266ceeaa72222702016dc8",
+          "src/us_quant/factor_gold_risk.py": "412a80a5d608a3cb0ad3bce6b2861b80fcc73b7f28f27697ccd60528874bf8d5"
+        },
+        "history_status": "exposed_history_not_independent_holdout",
+        "id": "four_factor_covariance_risk_budget",
+        "leveraged_products_allowed": false,
+        "market": {
+          "close": {
+            "path": "data/factor-gold-risk-20261010/market-close.csv",
+            "sha256": "b098f783bbf7a4ca56520e11c6e13edbb0eb2673ed7aaec02b89981ff74fabce"
+          },
+          "open": {
+            "path": "data/factor-gold-risk-20261010/market-open.csv",
+            "sha256": "dc2e1cf8c83c8731a03452eec60ad3cc036b8534cfed94b054c8f883b459273f"
+          },
+          "raw_close": {
+            "path": "data/factor-gold-risk-20261010/market-raw_close.csv",
+            "sha256": "82eae7514bf8de48bfe07cc72331ed758a27f561180ff5ad44d5d70e0dca71f9"
+          },
+          "risk_free": {
+            "path": "data/factor-gold-risk-20261010/market-risk_free.csv",
+            "sha256": "3b59869f597ac9d2573ffca1616938da4c2df0da24bd38799ce3e39b1f0509cc"
+          },
+          "volume": {
+            "path": "data/factor-gold-risk-20261010/market-volume.csv",
+            "sha256": "7ab6fbbe413fee994f65e27ebfbf15e28aa18055acdc12bd527918d5bbe60830"
+          }
+        },
+        "order_authority": false
+      }
+    },
+    {
+      "candidate_spec": {
+        "body_sha256": "d69d3144c1e7c173f1fc47a5c590946c373b2d38f2c8ba175e315605ecd54c25",
+        "path": "data/factor-covariance-risk-20261011/four_factor_covariance_max_diversification-spec.json",
+        "sha256": "acba8f4279a46e84733cfc930f503244f2abbd762745fa1497a427d550ece00a"
+      },
+      "readiness": {
+        "body_sha256": "a1882425de1016463a8b3c0d286555f23cc206f2f563411de7f6bff93f43dda3",
+        "path": "data/factor-covariance-risk-20261011/readiness.json",
+        "sha256": "55d6506ca5b53002c8eb7b190e2d3280d3bc47e4422e91a9c9e99a82d99250e7"
+      },
+      "registration": {
+        "candidate_id": "four_factor_covariance_max_diversification",
+        "data_scope": "factor_etf_portfolio",
+        "families": [
+          "earnings_quality",
+          "low_volatility",
+          "momentum",
+          "value"
+        ],
+        "order_authority": false,
+        "readiness_sha256": "a1882425de1016463a8b3c0d286555f23cc206f2f563411de7f6bff93f43dda3",
+        "registered_at": "2026-10-11T10:39:19.792923+00:00",
+        "spec_sha256": "d69d3144c1e7c173f1fc47a5c590946c373b2d38f2c8ba175e315605ecd54c25"
+      },
+      "spec": {
+        "asset_leverage": {
+          "BIL": 1.0,
+          "GLD": 1.0,
+          "IEF": 1.0,
+          "MTUM": 1.0,
+          "QUAL": 1.0,
+          "SPY": 1.0,
+          "USMV": 1.0,
+          "VLUE": 1.0
+        },
+        "configuration": {
+          "id": "four_factor_covariance_max_diversification",
+          "method": "maximum_diversification"
+        },
+        "data_scope": "factor_etf_portfolio",
+        "evaluation_as_of": "2026-10-05",
+        "factor_ids": [
+          "price_momentum",
+          "value_exposure",
+          "quality_exposure",
+          "low_volatility_exposure"
+        ],
+        "frozen_files": {
+          "config/factor-covariance-risk.json": "fec9ecf1738403cc75279ae2be84fff02359aeed0a7a3774c2f80ee3053ce9b4",
+          "config/factor-gold-risk.json": "6c550602c98fa5b09e5b59791bdbbe569c9b4082e2d1dfc9ba4cd5639a25ec63",
+          "data/risk-only-covariance-source-20261011/erc-crossref-response.json": "e514705f7bf8da9d7f1fe84710278924966820d9869780f326f3502e313ad89e",
+          "data/risk-only-covariance-source-20261011/maxdiv-crossref-response.json": "1552d8fba3c7d150a95d7c8d824321c67b2ea0e4ab1a17b2db935a34286ba2b3",
+          "evidence/factor_gold_risk_20261010_registration.json": "94d7e5130dc480ef858cf1a23bb9da5a1ff6f66825c60e9fe6144103616dee86",
+          "evidence/risk_only_covariance_20261011_source_context.json": "db6d08cb8474323a3dc04b57a2f29fc3dce3455ad40b67f5d781eb2a98850954",
+          "src/us_quant/factor_covariance_risk.py": "4d76d58cafc5c8118e43f9f3c3d8fab1962a6bb20c266ceeaa72222702016dc8",
+          "src/us_quant/factor_gold_risk.py": "412a80a5d608a3cb0ad3bce6b2861b80fcc73b7f28f27697ccd60528874bf8d5"
+        },
+        "history_status": "exposed_history_not_independent_holdout",
+        "id": "four_factor_covariance_max_diversification",
+        "leveraged_products_allowed": false,
+        "market": {
+          "close": {
+            "path": "data/factor-gold-risk-20261010/market-close.csv",
+            "sha256": "b098f783bbf7a4ca56520e11c6e13edbb0eb2673ed7aaec02b89981ff74fabce"
+          },
+          "open": {
+            "path": "data/factor-gold-risk-20261010/market-open.csv",
+            "sha256": "dc2e1cf8c83c8731a03452eec60ad3cc036b8534cfed94b054c8f883b459273f"
+          },
+          "raw_close": {
+            "path": "data/factor-gold-risk-20261010/market-raw_close.csv",
+            "sha256": "82eae7514bf8de48bfe07cc72331ed758a27f561180ff5ad44d5d70e0dca71f9"
+          },
+          "risk_free": {
+            "path": "data/factor-gold-risk-20261010/market-risk_free.csv",
+            "sha256": "3b59869f597ac9d2573ffca1616938da4c2df0da24bd38799ce3e39b1f0509cc"
+          },
+          "volume": {
+            "path": "data/factor-gold-risk-20261010/market-volume.csv",
+            "sha256": "7ab6fbbe413fee994f65e27ebfbf15e28aa18055acdc12bd527918d5bbe60830"
+          }
+        },
+        "order_authority": false
+      }
+    }
+  ],
+  "engine_sha256": "55b9390235929cf9f0aa17c498d2ded625746f7397d36fe52b9411035e8cfe27",
+  "existing_W42_queue_or_forward_rules_changed": false,
+  "investment_objective_verified": false,
+  "new_economic_factor_definitions": 0,
+  "new_strategy_evaluations": 0,
+  "order_authority": false,
+  "recorded_at": "2026-10-11T10:39:20.683292+00:00",
+  "registered_before_new_strategy_outcomes": true,
+  "runner_sha256": "9a8ccd83cda2848d060717ec8ec5ce0c7bc8fb7b52e0f004f05d9b06c48b1b97",
+  "schema_version": 1,
+  "study": {
+    "as_of": "2026-10-05",
+    "candidates": [
+      {
+        "id": "four_factor_covariance_risk_budget",
+        "method": "risk_budget"
+      },
+      {
+        "id": "four_factor_covariance_max_diversification",
+        "method": "maximum_diversification"
+      }
+    ],
+    "capital_usd": 10000.0,
+    "cash_reserve": 0.02,
+    "commission_per_order": 1.0,
+    "covariance_diagonal_shrinkage": 0.1,
+    "covariance_sessions": 252,
+    "data_scope": "factor_etf_portfolio",
+    "each_defensive_share_max": 0.75,
+    "each_defensive_share_min": 0.25,
+    "equity_share_max": 0.7,
+    "equity_share_min": 0.3,
+    "factor_ids": [
+      "price_momentum",
+      "value_exposure",
+      "quality_exposure",
+      "low_volatility_exposure"
+    ],
+    "factor_share_of_equity_max": 0.35,
+    "factor_share_of_equity_min": 0.15,
+    "factor_symbols": [
+      "MTUM",
+      "VLUE",
+      "QUAL",
+      "USMV"
+    ],
+    "methodology": {
+      "automatic_live_deployment": false,
+      "constraints": "Equity receives30%-70%of invested capital;each style receives15%-35%of equity,retaining prior bounds. Gold and IEF each receive25%-75%of defense,a symmetric half-to-one-and-a-half equal-share constraint fixed before targets/outcomes. Invest98%with2%target idle cash;SPY is only the benchmark and BIL is only available cash implementation,neither enters the risk optimizer.",
+      "covariance": "At each completed NYSE month end use exactly252prior observed daily total returns including that close,sample covariance times252,then10%shrinkage toward its diagonal. These lengths/shrinkage were already used in prior allocation research;no covariance/lookback grid or future normalization.",
+      "execution": "Only completed month-end targets,no daily volatility target,breadth filter,pending-order overlay,shorting or leverage. Original independentUSD10000capital,5bpnext-openbase,20bpextra-sessionstress,USD1/order,and exact10y/5ywindows remain. All targets/fees/failures count.",
+      "future_queue": "This existing-factor construction study does not register economic definitions or alter the original fourW42plans/IJRPKWquota. Original forward rules remain frozen;new winners cannot automatically replace them.",
+      "hypothesis": "Test covariance-only diversification without sector satellites,return forecasts or new macro gates. All four existing style ETFs and both gold/intermediate Treasury defense assets remain positively allocated. This changes portfolio construction,not the economic factor catalog.",
+      "maximum_diversification": "Use the equivalent convex minimum-variance formulation with weighted standalone volatility fixed toone and the same homogeneous group constraints,then normalize. This maximizes the diversification ratio of the selected actual assets,not expected return or measured Sharpe.",
+      "order_authority": false,
+      "risk": "Equitystyles still share beta/stocks;correlations,riskpremia and Treasury/gold behavior can change. Covariance-only allocation without leverage may sacrificeCAGR;bounds do not guarantee15%drawdown orSharpe>1. Optimizererrors/invalidcovariance must explicitly stop,no equalweight fallback.",
+      "risk_budget": "Minimize0.5*x'Cx minus the meanlog of strictly positive unnormalized allocations under homogeneous group constraints,then normalize. Equal one-sixth target risk budgets motivate the objective,but binding equity/style/defense constraints can prevent exact equal risk contribution;report actual signed risk shares and deviations rather than label them equal.",
+      "selection": "Two fixed construction hypotheses formed after120strategytrials and full-cohort component diagnostics on exposed history. Do not derive factor removal/weights from those diagnostics or retune after outcomes. Neither historical acceptance nor a newlabel creates independentforwardevidence;oldselectionbootstraps do not include these trials.",
+      "source": "Reuse the original verified eight-asset market panels/issuer mandates with a new actual readiness check,not new acquisitions or historical constituent reconstruction. PrimaryCrossref confirms both papers'identities,not inaccessible fulltexts,abstracts,exactreplications or publishedperformance;the unicode-author validator failure is separately preserved."
+    },
+    "new_configurations": 2,
+    "prior_evaluated_configurations": 120,
+    "risk_assets": [
+      "MTUM",
+      "VLUE",
+      "QUAL",
+      "USMV",
+      "GLD",
+      "IEF"
+    ],
+    "schema_version": 1,
+    "source_context": {
+      "path": "evidence/risk_only_covariance_20261011_source_context.json",
+      "sha256": "db6d08cb8474323a3dc04b57a2f29fc3dce3455ad40b67f5d781eb2a98850954"
+    },
+    "source_registration": {
+      "path": "evidence/factor_gold_risk_20261010_registration.json",
+      "sha256": "94d7e5130dc480ef858cf1a23bb9da5a1ff6f66825c60e9fe6144103616dee86"
+    },
+    "study_id": "factor_covariance_risk_20261011"
+  },
+  "target_verification": {
+    "body_sha256": "47028baba17b0be08bd819d4d90e535a2c16008750f32c3241d39a244f1e3816",
+    "path": "evidence/risk_only_covariance_20261011_target_verification.json",
+    "sha256": "360132d7e22197c16c0d79500e7c15ee3fcfe6e77500e3a3dfd80f77a5f4253e"
+  }
+}

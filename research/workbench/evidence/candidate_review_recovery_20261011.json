@@ -1,0 +1,89 @@
+{
+  "actual_recovered_reviews": [
+    {
+      "actual_recovery_action": "recovered_review",
+      "actual_repeat_action": "already_recorded",
+      "all_four_source_bound_account_paths_read_only_reaudited": true,
+      "candidate_id": "macro_real_yield_factor_tilt",
+      "evidence_body_sha256": "9df6b6c014f2c6fc3c2eed53cf0c117008379478af9bcbf0bff3b95358164053",
+      "evidence_bundle": "reports/macro-tilt-20261010/macro_real_yield_factor_tilt/bundle.json",
+      "evidence_bundle_sha256": "129e67b59a3e0ea4cefb2027e284ac1e77cb4296dcbd4e1bb18ef49b00fb85e1",
+      "new_receipt_recorded_at": "2026-10-11T07:27:45.588762+00:00",
+      "new_reviews_or_strategy_evaluations": 0,
+      "original_bundle_accounting_engine": null,
+      "original_historical_gates_passed": false,
+      "original_historical_status": "rejected_historical",
+      "original_review_body_exactly_preserved": true,
+      "original_review_event_sha256": "385a835d8da9b0a9ac2f4c8e6c5b3c1a68a5e9308ed6ea001733cd9f57d7578b",
+      "original_reviewed_at": "2026-10-10T15:54:14.678411+00:00",
+      "original_unversioned_legacy_accounting_used": true,
+      "receipt": "reports/review-recovery-20261011/macro_real_yield_factor_tilt-review-receipt.json",
+      "receipt_sha256": "019497aa76594c87e28148b69b09b727f73be93c3a2f7dfdb9b8e377106ccb48",
+      "repeated_receipt_bytes_unchanged": true
+    },
+    {
+      "actual_recovery_action": "recovered_review",
+      "actual_repeat_action": "already_recorded",
+      "all_four_source_bound_account_paths_read_only_reaudited": true,
+      "candidate_id": "semiconductor_term_or_dollar_half_guard",
+      "evidence_body_sha256": "3cb47b80f92d0f5caa00edb9bc89862c5162b2ecb54b4ec22937ba2f2e280e6b",
+      "evidence_bundle": "reports/sector-term-guard-20261011/semiconductor_term_or_dollar_half_guard/bundle.json",
+      "evidence_bundle_sha256": "89b881a29ce1c579cafa488432c7ae66b5279e8a23af5dec7bf938e8cd69b9cd",
+      "new_receipt_recorded_at": "2026-10-11T07:27:54.479760+00:00",
+      "new_reviews_or_strategy_evaluations": 0,
+      "original_bundle_accounting_engine": {
+        "id": "cash_funded_noop_v2",
+        "source_sha256": "e7efd7a9a87178d556320693bdfd389eef6a21cae70c36dd77c4325b6607d2af"
+      },
+      "original_historical_gates_passed": false,
+      "original_historical_status": "rejected_historical",
+      "original_review_body_exactly_preserved": true,
+      "original_review_event_sha256": "0650f1dbc0b27754a3aadbbea95682d56b605fc3561968f8e7247f320830688f",
+      "original_reviewed_at": "2026-10-11T04:42:55.966965+00:00",
+      "original_unversioned_legacy_accounting_used": false,
+      "receipt": "reports/review-recovery-20261011/semiconductor_term_or_dollar_half_guard-review-receipt.json",
+      "receipt_sha256": "a1f2079deb9409dbfaf025811835368d49ec964efb26fcf237ebc07d368d259d",
+      "repeated_receipt_bytes_unchanged": true
+    }
+  ],
+  "actual_unregistered_candidate_record_and_recover_block_checks": [
+    {
+      "blocked": true,
+      "candidate_registered": false,
+      "finished_at": "2026-10-11T07:28:01.792754+00:00",
+      "mode": "record",
+      "reason": "Register the actual frozen candidate before submitting review evidence.",
+      "receipt_created": false,
+      "review_recorded": false,
+      "started_at": "2026-10-11T07:28:01.765478+00:00",
+      "submitted_bundle_is_existing_unrelated_evidence_not_new_candidate_returns": true
+    },
+    {
+      "blocked": true,
+      "candidate_registered": false,
+      "finished_at": "2026-10-11T07:28:01.819794+00:00",
+      "mode": "recover",
+      "reason": "Register the actual frozen candidate before submitting review evidence.",
+      "receipt_created": false,
+      "review_recorded": false,
+      "started_at": "2026-10-11T07:28:01.792826+00:00",
+      "submitted_bundle_is_existing_unrelated_evidence_not_new_candidate_returns": true
+    }
+  ],
+  "all_frozen_candidate_generators_unchanged": true,
+  "checked_at": "2026-10-11T07:28:03.310671+00:00",
+  "engine_migration_performed": false,
+  "investment_objective_verified": false,
+  "missing_paths_automatically_generated_or_partial_outputs_deleted": false,
+  "new_candidate_portfolio_returns_computed": false,
+  "new_economic_factor_definitions": 0,
+  "new_prospective_observations": 0,
+  "new_registered_candidates": 0,
+  "new_reviews": 0,
+  "new_strategy_evaluations": 0,
+  "order_authority": false,
+  "schema_version": 1,
+  "source_bound_reaudits_are_new_registered_strategy_trials": false,
+  "standalone_adapter_sha256": "fccffe1c827988b5e4ac6008dc19b1b5db200a85ba797608337d6c2133192374",
+  "synthetic_fault_scenarios_are_actual_disk_or_native_delivery_failures": false
+}

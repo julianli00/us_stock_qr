@@ -1,0 +1,27 @@
+{
+  "candidate_returns_computed": false,
+  "delisted_prices_verified": false,
+  "full_universe_pit_fundamentals_verified": false,
+  "historical_security_master_verified": false,
+  "sample_selection": "Explicit two-company plumbing check; not a historical investable universe or strategy test.",
+  "samples": [
+    {
+      "checked_at": "2026-10-10T08:17:47.648186+00:00",
+      "cik": 789019,
+      "error_type": "HTTPError",
+      "http_status": 403,
+      "sample": "MSFT",
+      "status": "blocked",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json"
+    },
+    {
+      "checked_at": "2026-10-10T08:17:47.723001+00:00",
+      "cik": 320193,
+      "error_type": "HTTPError",
+      "http_status": 403,
+      "sample": "AAPL",
+      "status": "blocked",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json"
+    }
+  ]
+}

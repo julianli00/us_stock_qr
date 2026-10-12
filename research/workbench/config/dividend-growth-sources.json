@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "study_id": "dividend_growth_source_readiness_20261011",
+  "scope": "source_preparation_only",
+  "data_start": "2015-08-10",
+  "as_of": "2026-10-05",
+  "required_market_sessions": 2805,
+  "earliest_separate_hypothesis_cycle": "2026-10-24T09:00:00+08:00",
+  "existing_W42_queue_unchanged": true,
+  "funds": [
+    {
+      "symbol": "VIG",
+      "issuer_url": "https://investor.vanguard.com/investment-products/etfs/profile/vig",
+      "fund_inception": "2006-04-21",
+      "role": "dividend_growth_equity_exposure",
+      "definition_scope": "actual_fund_returns_with_disclosed_2021_benchmark_change"
+    },
+    {
+      "symbol": "SDY",
+      "issuer_url": "https://www.ssga.com/us/en/individual/etfs/spdr-sp-dividend-etf-sdy",
+      "fund_inception": "2005-11-08",
+      "role": "dividend_growth_equity_exposure",
+      "definition_scope": "actual_yield_weighted_dividend_persistence_fund_returns"
+    }
+  ],
+  "source_index": {
+    "path": "data/macro-tilt-prepared-20261010/close.csv",
+    "sha256": "b098f783bbf7a4ca56520e11c6e13edbb0eb2673ed7aaec02b89981ff74fabce"
+  },
+  "source_interpretation": {
+    "VIG": "The actual issuer identifies an ordinary common-stock full-replication dividend-growth index fund. It discloses NASDAQ US Dividend Achievers Select Index throughSeptember19,2021 and S&P U.S. Dividend Growers Index thereafter. Current profiles are not authenticated original2021announcements or complete historical screen archives;exact minimum-consecutive-year rules across history remain unverified.",
+    "SDY": "The actual issuer and advertised factsheet identify S&P High Yield Dividend Aristocrats Index exposure,at least20consecutive annual dividend increases,drawn from S&P Composite1500 and weighted by indicated dividend yield. Dividend-persistence and yield/value tilts are mixed,not a pure isolated alpha factor;current factsheet rules do not prove every past constituent or methodology.",
+    "overlap": "VIGandSDYare two implementations of dividend-policy persistence,not two independent economic families. Their mandates can overlap quality,value,size and financing/share-issuance information already researched. No independent factor count or predictive return claim is established by their names.",
+    "blocked_sources": "The NOBLissuer request returned403 and was not retried with another path,transport or headers. No NOBLhistory,identity or ordinary-exposure admission is claimed. A search-generated Vanguardannouncement URL redirected to a general pressroom;it is not treated as the original dated announcement.",
+    "history": "Use exact actual USDfund chart histories and observed split/distribution adjustment events after inception;no synthetic index backfill,current-survivor portfolio reconstruction or replacement for missing volume. Fund objectives substantiate ordinary single-index equity exposure,not derivatives-free holdings or an independently certified historical gross-notional cap.",
+    "future": "This is source preparation only,no factor/candidate registration,allocation targets,portfolio accounts,Sharpe,CAGR,risk optimization or rankings. The existing W42two-definition quota and four frozen candidates are untouched. Any later dividend hypothesis needs separately frozen economics,proper family classification,actual eligible-cycle admission and publication before outcomes."
+  },
+  "new_registered_factor_definitions": 0,
+  "new_registered_candidates": 0,
+  "new_strategy_evaluations": 0,
+  "portfolio_states_targets_or_returns_computed": false,
+  "new_factor_independence_claimed": false,
+  "current_fund_rules_are_complete_historical_methodology_proof": false,
+  "existing_frozen_forward_rules_changed": false,
+  "order_authority": false,
+  "automatic_live_deployment": false
+}

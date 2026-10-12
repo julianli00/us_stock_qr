@@ -1,0 +1,86 @@
+{
+  "actual_path_dependent_trade_targets_computed": false,
+  "all_four15_35pct_core_shares_and_original_core_nongroup_budgets_preserved": true,
+  "all_old_records_and_forward_control_bytes_unchanged_before_migration": true,
+  "bounds_verified_with_independent_decimal_bisection_not_production_root_solver": true,
+  "candidate_returns_or_metrics_computed": false,
+  "checked_at": "2026-10-11T17:47:15.688252+00:00",
+  "complete_previous_desired_matrix_checked": true,
+  "full_portfolio_price_dates": 2805,
+  "independent_scalar_risk_estimates_checked": 976,
+  "independent_source_verifier_sha256": "255fdba2c1026cfbb3dbcc92252a0149608dcbfbf81c6d48ba3dd3cb06f13e09",
+  "investment_objective_verified": false,
+  "maximum_independent_bounded_share_error": 4.0784042809605126e-13,
+  "maximum_independent_risk_estimate_error": 3.382710778154774e-17,
+  "maximum_independent_scalar_decimal_desired_target_error": 6.722400414105323e-14,
+  "maximum_previous_source_target_error": 0.0,
+  "new_economic_factor_definitions": 0,
+  "new_registered_candidates": 0,
+  "new_source_quote_requests": 0,
+  "new_strategy_evaluations": 0,
+  "order_authority": false,
+  "original_source_bundle_reference": {
+    "path": "reports/leadership-20261011/semiconductor_leadership126_observed_band025/bundle.json",
+    "sha256": "ea0a1dc7ff88c61efa7e16d9d2633f2c0dcb37b3f24097843d6f463daec71414"
+  },
+  "original_source_target_sha256": "e4035129852f5874c8e748c99df33130ad8f2ea8c7ad6dd9950cbf2028b0d440",
+  "portfolio_assets": 12,
+  "prepared_candidates": [
+    "semiconductor_leadership_core_inverse_volatility",
+    "semiconductor_leadership_core_inverse_semideviation"
+  ],
+  "prepared_desired_target_sha256": {
+    "semiconductor_leadership_core_inverse_semideviation": "ec3c069e63d59a9b673d9b202d5916aeb3221a987374e90b4bbd921a25a937c9",
+    "semiconductor_leadership_core_inverse_volatility": "54e0064448c4ce57738301251cc2a1bd2683ccb9db218ad2c28ab4e0202083c5"
+  },
+  "prepared_spec_sha256": {
+    "semiconductor_leadership_core_inverse_semideviation": "24b5a2061316efc84be78a6164d1bd3066720cba50ded05f756d39b9dc89c09d",
+    "semiconductor_leadership_core_inverse_volatility": "41092997a415669cdccb593151440008e64b6bc659a2153659333332455e1471"
+  },
+  "previous_issued_source_and_initial_seed_paths_checked": 4,
+  "schema_version": 1,
+  "verified_target_summaries": {
+    "semiconductor_leadership_core_inverse_semideviation": {
+      "independent_share_ranges": {
+        "MTUM": {
+          "maximum": 0.2994516392052231,
+          "minimum": 0.15
+        },
+        "QUAL": {
+          "maximum": 0.34930751626026746,
+          "minimum": 0.20500470024377282
+        },
+        "USMV": {
+          "maximum": 0.35,
+          "minimum": 0.22732455891564465
+        },
+        "VLUE": {
+          "maximum": 0.2796458685936514,
+          "minimum": 0.15
+        }
+      },
+      "monthly_desired_targets": 122
+    },
+    "semiconductor_leadership_core_inverse_volatility": {
+      "independent_share_ranges": {
+        "MTUM": {
+          "maximum": 0.29436161128277144,
+          "minimum": 0.15
+        },
+        "QUAL": {
+          "maximum": 0.35,
+          "minimum": 0.19207928629235987
+        },
+        "USMV": {
+          "maximum": 0.35,
+          "minimum": 0.24504492216691348
+        },
+        "VLUE": {
+          "maximum": 0.2716234613093013,
+          "minimum": 0.15
+        }
+      },
+      "monthly_desired_targets": 122
+    }
+  }
+}

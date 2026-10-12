@@ -1,0 +1,176 @@
+{
+  "automatic_live_deployment": false,
+  "candidate_reviews": [],
+  "economic_factor_family_count": 5,
+  "event_chain_sha256": "26989c14807b752608e6348e4a779777b323375cdf1ed35950cb5b8bfbfc73d9",
+  "event_count": 3,
+  "factor_proposals": [
+    {
+      "definition": "Lower-volatility equity exposure through the actual USMV fund.",
+      "direction": "higher",
+      "family": "low_volatility",
+      "id": "low_volatility_exposure",
+      "inputs": [
+        "historical_fund_returns",
+        "issuer_definition"
+      ],
+      "limitations": "No guaranteed drawdown ceiling or independent alpha.",
+      "name": "Previously researched low-volatility exposure",
+      "parameters": {
+        "role": "prior_research_reference"
+      },
+      "rationale": "Preserve the prior risk-factor family without treating repeated windows as separate factors.",
+      "sources": [
+        "https://www.ishares.com/us/products/239695/ishares-msci-usa-minimum-volatility-etf"
+      ]
+    },
+    {
+      "definition": "Trailing positive price momentum as recorded in prior fixed ETF research.",
+      "direction": "higher",
+      "family": "momentum",
+      "id": "price_momentum",
+      "inputs": [
+        "adjusted_close",
+        "decision_session"
+      ],
+      "limitations": "Prior results do not establish future alpha; ETF timing is not individual-stock evidence.",
+      "name": "Previously researched price momentum",
+      "parameters": {
+        "role": "prior_research_reference"
+      },
+      "rationale": "Preserve the already studied momentum family rather than recount it as a new discovery.",
+      "sources": [
+        "https://doi.org/10.1016/j.jfineco.2011.11.003"
+      ]
+    },
+    {
+      "definition": "Issuer-described profitability, stable earnings and low debt exposure through QUAL.",
+      "direction": "higher",
+      "family": "earnings_quality",
+      "id": "quality_exposure",
+      "inputs": [
+        "historical_fund_returns",
+        "issuer_definition"
+      ],
+      "limitations": "Related quality definitions may be highly correlated.",
+      "name": "Previously researched quality exposure",
+      "parameters": {
+        "role": "prior_research_reference"
+      },
+      "rationale": "Cash-flow accrual quality belongs to this economic family, not a new independent family.",
+      "sources": [
+        "https://www.ishares.com/us/products/256101/ishares-msci-usa-quality-factor-etf"
+      ]
+    },
+    {
+      "definition": "Value characteristics accessed through the actual VLUE ETF in the earlier research.",
+      "direction": "higher",
+      "family": "value",
+      "id": "value_exposure",
+      "inputs": [
+        "historical_fund_returns",
+        "issuer_definition"
+      ],
+      "limitations": "ETF exposure is not complete point-in-time constituent data.",
+      "name": "Previously researched value exposure",
+      "parameters": {
+        "role": "prior_research_reference"
+      },
+      "rationale": "Retain value as a distinct economic family without inventing direct historical stock scores.",
+      "sources": [
+        "https://www.ishares.com/us/products/251616/ishares-msci-usa-value-factor-etf"
+      ]
+    },
+    {
+      "definition": "Annual operating cash flow minus annual net income, divided by average beginning/end fiscal-year assets; higher means more cash-backed earnings.",
+      "direction": "higher",
+      "family": "earnings_quality",
+      "id": "cashflow_accrual_quality_v1",
+      "inputs": [
+        "NetCashProvidedByUsedInOperatingActivities",
+        "NetIncomeLoss",
+        "Assets",
+        "prior_Assets",
+        "filing_date",
+        "accession"
+      ],
+      "limitations": "Accrual quality is related to existing quality exposures, not a proven independent alpha source. Firms with different industries/accounting treatments require comparability checks.",
+      "name": "Cash-flow-based accrual quality",
+      "parameters": {
+        "availability": "first_complete_NYSE_session_after_filing",
+        "period": "annual"
+      },
+      "rationale": "Cash and accrual components can differ in persistence. This cash-flow proxy is related to the accrual literature, not an exact replication of Sloan's original balance-sheet construction.",
+      "sources": [
+        "https://www.jstor.org/stable/248290",
+        "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1793364"
+      ]
+    },
+    {
+      "definition": "One minus fiscal-year ending assets divided by beginning assets; higher corresponds to lower annual asset growth.",
+      "direction": "higher",
+      "family": "investment",
+      "id": "conservative_asset_growth_v1",
+      "inputs": [
+        "Assets",
+        "prior_Assets",
+        "fiscal_period",
+        "filing_date",
+        "accession"
+      ],
+      "limitations": "A factor definition is not proof of profitability. Security identities, fiscal-period alignment, delisting returns and complete historical membership are required.",
+      "name": "Conservative asset growth",
+      "parameters": {
+        "availability": "first_complete_NYSE_session_after_filing",
+        "period": "annual"
+      },
+      "rationale": "Conservative investment may differ from high-growth extrapolation. Corporate acquisitions, divestitures and changing accounting scope must remain visible rather than be removed after seeing returns.",
+      "sources": [
+        "https://doi.org/10.1111/j.1540-6261.2008.01370.x"
+      ]
+    }
+  ],
+  "historical_qualified_candidate_count": 0,
+  "independent_factor_count_verified": false,
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "known_factor_definition_count": 6,
+  "latest_cycle": {
+    "at": "2026-10-10T08:30:10.256039+00:00",
+    "data_blockers": [
+      "filing_time_fundamentals: Actual SEC Company Facts requests for two plumbing samples returned HTTP403; no complete historical-universe filing dataset has been obtained.",
+      "historical_security_master: No verified point-in-time permanent-security identity and ticker/CIK mapping dataset is available in this worktree.",
+      "historical_membership: A current stock list or incomplete reconstructed membership reference does not establish the historical investable universe.",
+      "delisted_total_returns: No verified delisting and corporate-action total-return coverage for a complete historical stock universe.",
+      "adjusted_open_and_close: Existing validated prices cover ETFs, not the full identity-matched stock universe required for the new fundamental signals."
+    ],
+    "data_ready": false,
+    "duplicate_definitions": [],
+    "factor_records": {
+      "cashflow_accrual_quality_v1": "bfab3dfc34f1e4081e8838c0d8a79066c9650b8e06304af6fd4e08a3fabed722",
+      "conservative_asset_growth_v1": "9a50a23bce9b27c84dcd258c9f250a6390d8ffdcd9cc849f06a40cc763319b83"
+    },
+    "new_factors": [
+      "cashflow_accrual_quality_v1",
+      "conservative_asset_growth_v1"
+    ],
+    "new_strategy_evaluations": 0,
+    "order_authority": false,
+    "proposal_sha256": "9e3cdd314e2dc7aeb36abc26007603f630cb4cb2123e5d993633f92220fe0dfb",
+    "readiness_sha256": "f349265fb9f1d01b790b7ade2404dbfcdd7982c647faf9fdd0aef6d6f68f7ade",
+    "state": "blocked_data",
+    "week": "2026-W41"
+  },
+  "new_evaluated_strategy_count": 0,
+  "new_factor_proposal_count": 2,
+  "order_authority": false,
+  "policy_sha256": "770a20dd1e609d6703eccfd3f2d865f71dd1c3ba407c688af4664722819f6ed4",
+  "prior_high_risk_or_failed_candidates_not_promoted": true,
+  "program_id": "recurring_multifactor_research_v1",
+  "registered_candidates": [],
+  "research_champion": null,
+  "research_version_count": 0,
+  "research_versions": [],
+  "schema_version": 1,
+  "total_evaluated_configurations": 84
+}

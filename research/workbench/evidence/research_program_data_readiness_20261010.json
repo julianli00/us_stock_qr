@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-10T08:17:47.723001+00:00",
+  "source_check": {
+    "path": "evidence/factor_program_source_availability_20261010.json",
+    "sha256": "d9dd847316fb24dff5aafe72785227f40226ec4d9616e4c75f5df43eb7c290c5"
+  },
+  "capabilities": {
+    "filing_time_fundamentals": {
+      "verified": false,
+      "reason": "Actual SEC Company Facts requests for two plumbing samples returned HTTP403; no complete historical-universe filing dataset has been obtained."
+    },
+    "historical_security_master": {
+      "verified": false,
+      "reason": "No verified point-in-time permanent-security identity and ticker/CIK mapping dataset is available in this worktree."
+    },
+    "historical_membership": {
+      "verified": false,
+      "reason": "A current stock list or incomplete reconstructed membership reference does not establish the historical investable universe."
+    },
+    "delisted_total_returns": {
+      "verified": false,
+      "reason": "No verified delisting and corporate-action total-return coverage for a complete historical stock universe."
+    },
+    "adjusted_open_and_close": {
+      "verified": false,
+      "reason": "Existing validated prices cover ETFs, not the full identity-matched stock universe required for the new fundamental signals."
+    }
+  },
+  "existing_etf_research_preserved": true,
+  "full_stock_multifactor_backtest_ready": false,
+  "candidate_returns_computed": false,
+  "order_authority": false
+}

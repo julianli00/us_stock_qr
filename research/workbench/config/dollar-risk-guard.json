@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "study_id": "dollar_risk_guard_20261011",
+  "data_scope": "factor_etf_portfolio",
+  "data_start": "2015-08-10",
+  "as_of": "2026-10-05",
+  "prior_evaluated_configurations": 114,
+  "new_configurations": 2,
+  "new_economic_factor_definitions": 0,
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "factor_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "original_control_policy": "config/sector-growth-balance.json",
+  "original_control_candidate": "four_factor_semiconductor_sector50",
+  "risk_change_sessions": 63,
+  "risk_off_investment_scale": 0.50,
+  "cash_reserve": 0.02,
+  "dollar_source": {
+    "legacy_series": "DTWEXB",
+    "replacement_series": "DTWEXBGS",
+    "legacy_retirement_date": "2019-12-31",
+    "first_archived_replacement_release": "2019-02-05",
+    "replacement_reindex_release": "2019-06-24",
+    "maximum_observation_age_days": 14,
+    "release_hour_new_york": 16,
+    "release_minute_new_york": 15,
+    "availability": "First NYSE session strictly after the later of the advertised and reported release date;only the exact audited date-conflict list is admissible.",
+    "conservative_declared_date_conflicts": {
+      "2016-05-24": "2016-05-23",
+      "2016-05-31": "2016-06-02",
+      "2016-08-30": "2016-08-29",
+      "2017-08-29": "2017-08-28",
+      "2017-12-19": "2017-12-18",
+      "2018-01-15": "2018-01-16",
+      "2018-05-28": "2018-05-29",
+      "2018-07-30": "2018-07-31",
+      "2019-02-25": "2019-02-27",
+      "2019-05-27": "2019-05-28",
+      "2019-08-27": "2019-08-26",
+      "2020-05-19": "2020-05-18"
+    },
+    "quarantined_archive_dates": ["2020-01-20"],
+    "calendar_url": "https://www.federalreserve.gov/releases/h10/releaseDates.json"
+  },
+  "real_yield_source": {
+    "series": "DFII10",
+    "publication_delay_sessions": 2,
+    "maximum_observation_age_days": 7,
+    "reuse_frozen_source": "data/macro-rate-access-20261010/verified-manifest.json",
+    "current_historical_download_is_not_vintage_proof": true
+  },
+  "candidates": [
+    {"id": "semiconductor_dollar_half_guard", "real_yield_confirmation": false},
+    {"id": "semiconductor_dollar_real_yield_half_guard", "real_yield_confirmation": true}
+  ],
+  "methodology": {
+    "hypothesis": "Broad dollar appreciation can tighten international dollar funding and reduce the translated revenues of globally exposed equities; dollar strength and rising real yields can also challenge dollar-denominated gold. Test a fixed funding-risk guard rather than select a lower sector weight from already exposed returns.",
+    "baseline": "Reuse the exact registered four-factor/SOXX/gold monthly targets, including half-equity SOXX, equal remaining four-family shares,63-session sleeve volatility,30%-70%equity bounds and98%target investment. Do not alter the original sector generator or helpers.",
+    "rule": "At each existing completed month-end, compare the latest actually available broad-dollar vintage with its own published vintage63NYSEsessions earlier. Dollar appreciation alone triggers the first candidate; appreciation and a strictly positive63-session change in lagged DFII10 jointly trigger the second. Equal or declining inputs do not trigger. A trigger halves all original non-BIL fund targets and moves the removed49%of capital to actual BIL. Relative factor/SOXX/gold proportions and2%target idle cash are unchanged.",
+    "timing": "H10publishes the previous business week's daily observations at16:15NewYork,after every regularNYSEclose. Verify the actual official archive calendar and each page's reported release date. Exact12audited1-2day conflicts retain both dates and use the later date as a conservative availability bound,not a claim to know the true first-publication time. One2020-01-20archive reports2020-01-30and is quarantined,not consumed. Unknown conflicts stop admission. Retain two earlier advertised pages per query;never relax the14-calendar-day observation-age bound or use current-history substitution.",
+    "methodology_transition": "DTWEXBGSwas introduced in2019with retrospective2006history. Do not use that backfill for pre-introduction decisions. Use the original goods-only broad index until its publicly announced2019-12-31retirement;then use the goods/services replacement for both endpoints of each risk comparison. Never compare or splice different series or pre/postJune2019indexation regimes. The first2020month's63-session reference is already after the new index's actual introduction and reindexing.",
+    "vintages": "Dollar inputs are values from the actual preserved H10weekly releases,not today's FREDCSV. Annual currency-weight changes can affect observed index comparisons;old definitions and snapshot values are not retroactively rewritten. Current FREDhistories are retained only as source-version diagnostics. Archived pages acquired now are historical publication evidence,not new prospective observations.",
+    "real_yield_limit": "Reuse the existing frozen DFII10CSV and audited strictly later two-session release lag with maximum7-calendar-day age. Its current historical values are not complete ALFREDvintages;the combined candidate does not become a fully point-in-time macro study.",
+    "selection": "Exactly two economically motivated rules after114completed exposed-history configurations.63sessions and the50%reduction are inherited existing research settings,not tuned to the20.65%drawdown. Freeze source/code/specifications and publish actual registration before outcomes;retain every failure. Matched constant-exposure controls are attribution only,not additional registered strategies or independent alpha.",
+    "execution": "Monthly absolute targets only,next-open5bpbase and an extra-session20bpstress,USD1per order,freshUSD10,000accounts,fractional holdings,long-only,cash-funded. Require the existing funded-accountingv2 and independentbt. Sharpe>1,SPYoutperformance anddrawdown<=15%must all pass every original horizon/scenario.",
+    "catalog": "A dollar/real-yield risk guard is not a new economic alpha-family definition. IJR/PKWand their prepared six-family candidates remain queued until the real2026-10-17T09:00Asia/Shanghai cycle.",
+    "prospective": "Do not alter the registered macro prospective profile or its archives. The current prospective archives omit SOXX and these dollar vintages. No forward return,broker connection,live deployment or order authority is claimed.",
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "absolute_tolerance": 1e-12,
+  "all_36_candidates_four_paths_and_three_models_verified": true,
+  "checked_at": "2026-10-11T05:18:35.056977+00:00",
+  "full_replay_all_source_references_and_numeric_results_identical": true,
+  "independent_method": "Read hashed account/RF/proxy files and independently parse ZIP tables. Reconstruct proxy returns from current/previous price ratios,center predictors and paired excess returns,solve covariance normal equations, recover intercepts from sample means. Verify coefficients,paired differences,arithmetic components,R-squared and residual sample volatility without calling production fit_pair or read_daily_archive.",
+  "independent_verifier_sha256": "90fdb8f0e7644ee460c05ca55f59dbd6e132f959d2d13f39f3cb47a71c284503",
+  "maximum_errors": {
+    "annualized_intercept": 2.5507070414154676e-13,
+    "coefficient": 1.9984014443252818e-15,
+    "mean_decomposition": 8.131516293641283e-19,
+    "paired_coefficient": 1.5543122344752192e-15,
+    "r_squared": 6.661338147750939e-16,
+    "residual_volatility": 2.7755575615628914e-17
+  },
+  "new_strategy_evaluations": 0,
+  "order_authority": false,
+  "paired_fits_independently_verified": 432,
+  "private_detailed_checks": "reports/factor-exposure-20261011/independent-checks.json",
+  "private_detailed_checks_sha256": "d3e3e9f405df101c8d3c9a810d9fef1af81c2c3d76b9ad3af0268979f8b32576",
+  "public_results_sha256": "a91d4de53ea391ef3cc0f7f56454b5ed6b4f43370d2db8e92c23cf0edef0c2bc",
+  "registered_auditor_sha256": "ddebd6dc58db12eca9113c3f4287003cb41abc17ab4c89bc718f80348091808c",
+  "schema_version": 1
+}

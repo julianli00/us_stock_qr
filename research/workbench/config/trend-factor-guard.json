@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "study_id": "trend_factor_guard_20261011",
+  "data_scope": "factor_etf_portfolio",
+  "as_of": "2026-10-05",
+  "prior_evaluated_configurations": 102,
+  "new_configurations": 2,
+  "new_economic_factor_definitions": 0,
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "factor_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "baseline_policy": "config/factor-gold-risk.json",
+  "trend_sessions": 200,
+  "cash_reserve": 0.02,
+  "candidates": [
+    {"id": "four_factor_gold_joint_trend_guard", "guard": "joint"},
+    {"id": "four_factor_gold_component_trend_guard", "guard": "component"}
+  ],
+  "sources": [
+    {
+      "title": "A Quantitative Approach to Tactical Asset Allocation",
+      "author": "Mebane T. Faber",
+      "year": 2007,
+      "doi": "10.3905/jwm.2007.674809",
+      "url": "https://doi.org/10.3905/jwm.2007.674809",
+      "metadata_verification": "https://api.crossref.org/works?query.title=A%20Quantitative%20Approach%20to%20Tactical%20Asset%20Allocation&rows=2&select=DOI,title,author,published,container-title,URL"
+    }
+  ],
+  "methodology": {
+    "hypothesis": "The ungated four-factor/gold portfolio retains material drawdowns. Compare two fixed trend gates that can remove, but never increase, its equity/gold target budgets; do not retune factor rankings.",
+    "baseline": "Reuse the unchanged equal-four-factor/gold63-session monthly inverse-volatility targets with30%-70%equity bounds and2%target idle cash. Each active equity sleeve retains25%in all four existing factor funds.",
+    "equity_indicator": "An untraded index compounds the contemporaneous equal-weight daily total returns of the four actual factor funds. It is a signal proxy, not a cost-free account or strategy return.",
+    "joint_indicator": "A second untraded index compounds daily returns weighted by the baseline's last known target as of the preceding close. Its cash fraction has zero return. Start only after a complete prior baseline target exists; do not retroactively initialize risk weights or count idle prehistory as observations.",
+    "gate": "At every completed close compare the declared index or GLD adjusted close strictly above its trailing200-observation simple mean. Equality is risk-off. All200real observations are required.",
+    "joint_guard": "When the joint index passes, retain the current monthly baseline target; otherwise put the entire98%invested budget in actual BIL.",
+    "component_guard": "Independently disable equity or gold when its corresponding index fails. Move only that sleeve's original weight into actual BIL; do not increase the surviving sleeve or impose the baseline's equity minimum in a risk-off state.",
+    "requests": "Issue the first fully informed target, subsequent gate-state changes, and completed month-end baseline updates. Other sessions remain no-order rows. Under extra execution delay all sequential dated requests retain their own later execution sessions; no pending request is overwritten.",
+    "execution": "No same-close fill. Preserve next-session open5bpbase and one-extra-session20bpstress,USD10,000fresh accounts,USD1order charges, formal10y/5ywindows and all recurring Sharpe/SPY/15%drawdown gates.",
+    "interpretation": "Daily200-session gates are an explicit adaptation of long-term moving-average timing, not a replication of the paper's monthly10-month rule. This is risk management on four existing families, not a new independent alpha factor or guaranteed drawdown ceiling.",
+    "selection": "Motivated after102completed configurations on exposed overlapping history. Only these two fixed alternatives; no lookback/grid/share optimization, relabelled holdout or live promotion.",
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

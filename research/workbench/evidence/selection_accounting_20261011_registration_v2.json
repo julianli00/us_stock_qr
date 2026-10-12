@@ -1,0 +1,728 @@
+{
+  "auditor_sha256": "a4e87853900371f536870fe1a1bdf571b507bd8b94bfde44b0a22707cc8c3164",
+  "candidate_history_already_exposed": true,
+  "cohort_candidate_ids": {
+    "cash_funded_v2": [
+      "four_factor_gold_component_trend_guard",
+      "four_factor_pdp_momentum_implementation",
+      "four_factor_dual_momentum_implementation",
+      "credit_baa_level_guard",
+      "credit_baa_compression_recovery",
+      "four_factor_growth_gold_monthly_control",
+      "four_factor_growth_gold_ratchet_protection",
+      "four_factor_growth_gold_semideviation",
+      "four_factor_growth_gold_expected_loss",
+      "four_factor_technology_sector50",
+      "four_factor_semiconductor_sector50",
+      "semiconductor_dollar_half_guard",
+      "semiconductor_dollar_real_yield_half_guard",
+      "semiconductor_dollar_nfci_tight_guard",
+      "semiconductor_dollar_nfci_deterioration_guard",
+      "semiconductor_term_half_guard",
+      "semiconductor_term_or_dollar_half_guard",
+      "four_factor_covariance_risk_budget",
+      "four_factor_covariance_max_diversification",
+      "four_factor_diversified_sector_basket",
+      "four_factor_diversified_sector_dollar_half",
+      "semiconductor_ratchet_protection",
+      "semiconductor_dollar_ratchet_protection",
+      "semiconductor_dollar_term_monthly_confirmation",
+      "semiconductor_dollar_term_daily_confirmation",
+      "semiconductor_fixed_vol12",
+      "semiconductor_monthly_confirmation_fixed_vol12",
+      "semiconductor_equity_gold_trend200",
+      "semiconductor_equity_gold_relative_trends",
+      "semiconductor_relative_trend_treasury_momentum",
+      "semiconductor_relative_trend_treasury_diversified",
+      "semiconductor_sector_breadth_equity_half",
+      "semiconductor_sector_breadth_equity_off",
+      "semiconductor_breadth_half_gold_trend200",
+      "semiconductor_breadth_off_gold_trend200",
+      "semiconductor_breadth_half_gold_relative",
+      "semiconductor_breadth_off_gold_relative",
+      "semiconductor_graded_gold_half_observed_band025",
+      "semiconductor_graded_gold_off_observed_band025",
+      "semiconductor_leadership126_observed_band025",
+      "semiconductor_leadership_votes_observed_band025",
+      "semiconductor_leadership_core_inverse_volatility",
+      "semiconductor_leadership_core_inverse_semideviation",
+      "semiconductor_leadership_core_total_momentum",
+      "semiconductor_leadership_core_residual_momentum",
+      "semiconductor_gold_released_producer_momentum",
+      "semiconductor_gold_released_producer_diversified",
+      "semiconductor_dollar_activity_magnitude_confirmation",
+      "semiconductor_dollar_activity_diffusion_confirmation",
+      "semiconductor_activity_magnitude_gold_trend200",
+      "semiconductor_activity_diffusion_gold_trend200",
+      "semiconductor_dollar_t10y3m_resteepening_confirmation",
+      "semiconductor_dollar_t10y2y_resteepening_confirmation",
+      "semiconductor_dollar_vix9d_monthly_confirmation",
+      "semiconductor_dollar_vix9d_daily_confirmation",
+      "semiconductor_option_proxy_risk_balance",
+      "semiconductor_option_proxy_risk_balance_dollar_half"
+    ],
+    "legacy_original": [
+      "four_factor_gold_risk_balance",
+      "four_factor_gold_daily_vol12",
+      "quality_implementation_gold_monthly",
+      "quality_implementation_gold_daily_vol12",
+      "four_factor_static70_gold30",
+      "four_factor_causal_mean_variance",
+      "factor_gold_term_half_risk",
+      "factor_gold_term_equity_exit",
+      "macro_real_yield_factor_tilt",
+      "macro_real_yield_tilt_curve_defense",
+      "four_factor_defense_momentum",
+      "four_factor_defense_diversified",
+      "four_factor_daily_target_control",
+      "four_factor_growth_satellite50",
+      "conditional_price_factor_model_v2",
+      "conditional_macro_option_factor_model_v2",
+      "four_factor_total_momentum_tilt",
+      "four_factor_residual_momentum_tilt",
+      "four_factor_gold_joint_trend_guard"
+    ]
+  },
+  "event_chain_sha256": "6adbeb4f261ff24e64dfc0616c2823de950b4836150a24dfa3cf13d56383864b",
+  "familywise_cells": 4,
+  "included_candidate_count": 76,
+  "included_comparisons_per_horizon": 228,
+  "joint_statistical_outcomes_computed": false,
+  "new_strategy_evaluations": 0,
+  "order_authority": false,
+  "original_bundle_bindings": {
+    "conditional_macro_option_factor_model_v2": {
+      "bundle": {
+        "path": "reports/program-evaluations/conditional_macro_option_factor_model_v2/bundle.json",
+        "sha256": "5abe46749ba4d6e4d61dcb7d6b6767f9a485131d73e0f807e49dc8c2271b6cd1"
+      },
+      "review_evidence_sha256": "95461f6518f54b7b19cb971528b656ed0916b90849fc3debd44d0f85d5efd55c"
+    },
+    "conditional_price_factor_model_v2": {
+      "bundle": {
+        "path": "reports/program-evaluations/conditional_price_factor_model_v2/bundle.json",
+        "sha256": "3bac06631547aa1965ac16fd8116d1266d9c4b397d2d6e974e47849d3573ed68"
+      },
+      "review_evidence_sha256": "ee518f23c9553a8b791cfa9340d6e5f4e9db7710a596a76d69721c11ff6cbc4e"
+    },
+    "credit_baa_compression_recovery": {
+      "bundle": {
+        "path": "reports/credit-factor-guard-20261011/credit_baa_compression_recovery/bundle.json",
+        "sha256": "5339867d70d08fb07c0bf82ea522730f943943751a0e897fad5c7951ae10e608"
+      },
+      "review_evidence_sha256": "c7a2a079b4968c4498ae3dd8250598918fbddf5da57cd722ac747cdfc7d4d61b"
+    },
+    "credit_baa_level_guard": {
+      "bundle": {
+        "path": "reports/credit-factor-guard-20261011/credit_baa_level_guard/bundle.json",
+        "sha256": "34005ba11749ba32d3a0b283cfbd560eadf79dd1d3b73f43783027ec1cea09c8"
+      },
+      "review_evidence_sha256": "3975250ed153487ab0e97ec73ededbe7059d7cc74573001994eceaac7a693a1f"
+    },
+    "factor_gold_term_equity_exit": {
+      "bundle": {
+        "path": "reports/term-risk-20261010/factor_gold_term_equity_exit/bundle.json",
+        "sha256": "4b4c4ca7b624870e5eb4a6c2aa50d14c8490140283dc82947502f6a205a4e1e4"
+      },
+      "review_evidence_sha256": "bf449ac41c1f15d6ccae99e9becc4042e8c3176e22aed9d02341d36c246c36a2"
+    },
+    "factor_gold_term_half_risk": {
+      "bundle": {
+        "path": "reports/term-risk-20261010/factor_gold_term_half_risk/bundle.json",
+        "sha256": "00c59522ca5a576d36d45373c69ccd928aa59d833113ebbb7acae65de017b125"
+      },
+      "review_evidence_sha256": "cf87e862b24bbdd419d57f0b47e03346d0d624f8c2d537f92b02749ebcc32578"
+    },
+    "four_factor_causal_mean_variance": {
+      "bundle": {
+        "path": "reports/adaptive-factors-20261010/four_factor_causal_mean_variance/bundle.json",
+        "sha256": "ebfec1f0bb39299f8b2f7084aa15785346fe9e6bf47a5bc43f6eb0a71b07a027"
+      },
+      "review_evidence_sha256": "e802ea02c7872d0f1dfbd0e579ad06aa18195ff74834f33ace6d50db32c40d55"
+    },
+    "four_factor_covariance_max_diversification": {
+      "bundle": {
+        "path": "reports/risk-only-covariance-20261011/four_factor_covariance_max_diversification/bundle.json",
+        "sha256": "7a23b91fde4090005269e395fb90cf026ccaef4128d362a962d152ec589509ee"
+      },
+      "review_evidence_sha256": "51ddc5ff9e6fa79ae386d44d51b23a07f9dc11c3916d213a987d9bd4898e289e"
+    },
+    "four_factor_covariance_risk_budget": {
+      "bundle": {
+        "path": "reports/risk-only-covariance-20261011/four_factor_covariance_risk_budget/bundle.json",
+        "sha256": "2687613722c4975513bdf6bf64ad558f7d3902592745ce3e732b2b300b9ea5cf"
+      },
+      "review_evidence_sha256": "9c787528ff90db513af02c3413882db96e9e2df327993592b6196bde7fb4c054"
+    },
+    "four_factor_daily_target_control": {
+      "bundle": {
+        "path": "reports/program-evaluations/four_factor_daily_target_control/bundle.json",
+        "sha256": "039c272055068c827b6a54b31ecc7547ffad4a81b5062f934f5575657c00c510"
+      },
+      "review_evidence_sha256": "edbfaf65e9fe72fa77de314abfb5eb6d3f05e432070b5709aa2a73ab36d3811d"
+    },
+    "four_factor_defense_diversified": {
+      "bundle": {
+        "path": "reports/program-evaluations/four_factor_defense_diversified/bundle.json",
+        "sha256": "d1002e10e9462a58e68f88d031ee651ebbe1197d2577c73ffe84e4b0417ee6b3"
+      },
+      "review_evidence_sha256": "bd00cae1a685f2ce4cb1d8dba411f33071ff71b2173d262cc82e152668ac05ce"
+    },
+    "four_factor_defense_momentum": {
+      "bundle": {
+        "path": "reports/program-evaluations/four_factor_defense_momentum/bundle.json",
+        "sha256": "ea6e7cc23a40bb79ea766fb5f8e559d85fc45efc2fa1de619bf63cc8c606934a"
+      },
+      "review_evidence_sha256": "864f4df803891ceadcd14e97526945f97175c63c8b86c197ab0df0036464b167"
+    },
+    "four_factor_diversified_sector_basket": {
+      "bundle": {
+        "path": "reports/sector-basket-strategy-20261011/four_factor_diversified_sector_basket/bundle.json",
+        "sha256": "3edc9076d1e0d6355c61e78b8804d6a786050fcceab17f78a30f17d317791916"
+      },
+      "review_evidence_sha256": "d5058e4d659ec9db0b5b5561d477feb20d491cb8266104deef11659cc115b2c3"
+    },
+    "four_factor_diversified_sector_dollar_half": {
+      "bundle": {
+        "path": "reports/sector-basket-strategy-20261011/four_factor_diversified_sector_dollar_half/bundle.json",
+        "sha256": "3cf379eaa623c28298ff4ab77a99e2628f37c6483e451090c130a61736c92e58"
+      },
+      "review_evidence_sha256": "0e0145d0c41a8b252587bf255e79bb82c4fb122cac7243b2ccc518f4ddf1ddb5"
+    },
+    "four_factor_dual_momentum_implementation": {
+      "bundle": {
+        "path": "reports/momentum-implementation-20261011/four_factor_dual_momentum_implementation/bundle.json",
+        "sha256": "987f9da4721224eca248e2704ee8492ea37664297de5d5f50a469004b733e2cf"
+      },
+      "review_evidence_sha256": "cddc7bc5b5a519b6dcc3992e69ce3670fe7330abff7d765773d2de77057f4c12"
+    },
+    "four_factor_gold_component_trend_guard": {
+      "bundle": {
+        "path": "reports/trend-factor-guard-20261011-accounting-replay/four_factor_gold_component_trend_guard/bundle.json",
+        "sha256": "426a24119b2bee29e72450e5513728cf26b2aea4f2eba65e2f1b55cd6900765c"
+      },
+      "review_evidence_sha256": "c27108f2f33eea7e8f8d370852a705ec8b97646e2a08bc91a29b515a66b46df2"
+    },
+    "four_factor_gold_daily_vol12": {
+      "bundle": {
+        "path": "reports/factor-gold-risk-20261010/four_factor_gold_daily_vol12/bundle.json",
+        "sha256": "350ee2fa8480ea8a6545a0b23f76c61a4fc4d0f558ea6240222431b852012d60"
+      },
+      "review_evidence_sha256": "8a300a5c713e79052ffaa0e0df8a79a7fe9e319b7b98b9d9d79ad769e20aaf85"
+    },
+    "four_factor_gold_joint_trend_guard": {
+      "bundle": {
+        "path": "reports/trend-factor-guard-20261011/four_factor_gold_joint_trend_guard/bundle.json",
+        "sha256": "d4dfe417a77ddb4be1d9823e44cd2f7f12fd944d2ca5647163324b72656541e5"
+      },
+      "review_evidence_sha256": "1c20d5976653246945dd0f6b1800e64e0a1271f67ce8cf9c6aada85e055f9be5"
+    },
+    "four_factor_gold_risk_balance": {
+      "bundle": {
+        "path": "reports/factor-gold-risk-20261010/four_factor_gold_risk_balance/bundle.json",
+        "sha256": "5c2383e88db78594d13562fdf1daf05a1e8cce3ef733caafbf7d4237c38f7fc2"
+      },
+      "review_evidence_sha256": "b10f8d612f5d0af29114c424037b208e439bf9c53d139fc545448e666771bfb1"
+    },
+    "four_factor_growth_gold_expected_loss": {
+      "bundle": {
+        "path": "reports/downside-risk-balance-20261011/four_factor_growth_gold_expected_loss/bundle.json",
+        "sha256": "f5bc5049c935b2e0d4ee92e6cfa528d9033b8d6e29057b68f48615dcf6d005b0"
+      },
+      "review_evidence_sha256": "0d09f1fefd7104d55459f11540165ae82c7327d767bd5f74b8a7dd39aa5bfe2e"
+    },
+    "four_factor_growth_gold_monthly_control": {
+      "bundle": {
+        "path": "reports/growth-protection-20261011/four_factor_growth_gold_monthly_control/bundle.json",
+        "sha256": "d4d0a1ca70d012278b10b4fa12202e4631a7e67f1480c4167168b7167f2de94e"
+      },
+      "review_evidence_sha256": "4e5000251db5602f65ed14d2df4d50f0c908513c7a4a44796bc843ceb492c985"
+    },
+    "four_factor_growth_gold_ratchet_protection": {
+      "bundle": {
+        "path": "reports/growth-protection-20261011/four_factor_growth_gold_ratchet_protection/bundle.json",
+        "sha256": "7471df03d3da1bc12a72516e06d644ffc651b9db63011dd89d316fbb17821db0"
+      },
+      "review_evidence_sha256": "63befbd9736cd9cf4c765a508236e2e865279d6cbc7dafa6886836b9a379a079"
+    },
+    "four_factor_growth_gold_semideviation": {
+      "bundle": {
+        "path": "reports/downside-risk-balance-20261011/four_factor_growth_gold_semideviation/bundle.json",
+        "sha256": "6c36d1b7b70aa81d798e9ed3bda53e5cc875064d332eacb6e03a2e14665f9b91"
+      },
+      "review_evidence_sha256": "6ad302ba36975fdbb8d1e5aad35a503aedf94ae8cdd3ffd38cf105ee2dfbe411"
+    },
+    "four_factor_growth_satellite50": {
+      "bundle": {
+        "path": "reports/program-evaluations/four_factor_growth_satellite50/bundle.json",
+        "sha256": "3fb191cd46c478793e2716924352ac2f364bed410e7cbdf2bf35baa39755517c"
+      },
+      "review_evidence_sha256": "e8df516c426d014753baa6d06fcb983eb01a40fe937339a25a5776270d690963"
+    },
+    "four_factor_pdp_momentum_implementation": {
+      "bundle": {
+        "path": "reports/momentum-implementation-20261011/four_factor_pdp_momentum_implementation/bundle.json",
+        "sha256": "16176261f753d8a8140f1df508de6447f8751e16241867c44525d6a3cfdd8682"
+      },
+      "review_evidence_sha256": "7550cd58c6b78878829e891d99ff103fe4f23f42b9b4b7c90caf515af21366fe"
+    },
+    "four_factor_residual_momentum_tilt": {
+      "bundle": {
+        "path": "reports/factor-momentum-comparison-20261011/four_factor_residual_momentum_tilt/bundle.json",
+        "sha256": "f652a41bfad4eed2524dd94e1e979c84955cc065721c321ebf753c7583f1e010"
+      },
+      "review_evidence_sha256": "48bf6b7bdc45c1f89318af8ffd44c0053a14d2c328520ca4487f86b7b9ad557e"
+    },
+    "four_factor_semiconductor_sector50": {
+      "bundle": {
+        "path": "reports/sector-growth-balance-20261011/four_factor_semiconductor_sector50/bundle.json",
+        "sha256": "94f70da5beff41b3c0165ed215ac5f7a326310c8e891b8d8d40f355f2dacd469"
+      },
+      "review_evidence_sha256": "7de757551b3bb654a01249737d6dccc55f1d5cecd8caa8df0d512549a40c832c"
+    },
+    "four_factor_static70_gold30": {
+      "bundle": {
+        "path": "reports/adaptive-factors-20261010/four_factor_static70_gold30/bundle.json",
+        "sha256": "99bc346732b72572c45e5638a2b58823c97d8df9c12ddf89f34517015bc089ee"
+      },
+      "review_evidence_sha256": "9e3f5ba7930ddb5474b1953f732f568a9fab64bd9eeb76277d75d9236238d2ca"
+    },
+    "four_factor_technology_sector50": {
+      "bundle": {
+        "path": "reports/sector-growth-balance-20261011/four_factor_technology_sector50/bundle.json",
+        "sha256": "96611088215031f6fdc765aa2403e4ddb12c7b72ec88069d35fa68e03c36cea9"
+      },
+      "review_evidence_sha256": "9c685b4abc43f864ff10196ce04da6b8dccf49a3ffafb136dad01aa18b704f41"
+    },
+    "four_factor_total_momentum_tilt": {
+      "bundle": {
+        "path": "reports/factor-momentum-comparison-20261011/four_factor_total_momentum_tilt/bundle.json",
+        "sha256": "a87a155e7ee0fee11defbb0dc769789cb74d8c01c52ba953551776f59dfdc0fe"
+      },
+      "review_evidence_sha256": "2925b8cd839978cc2e7f6f9e64a7270232f093e44ce983bff9dea3b657072a51"
+    },
+    "macro_real_yield_factor_tilt": {
+      "bundle": {
+        "path": "reports/macro-tilt-20261010/macro_real_yield_factor_tilt/bundle.json",
+        "sha256": "129e67b59a3e0ea4cefb2027e284ac1e77cb4296dcbd4e1bb18ef49b00fb85e1"
+      },
+      "review_evidence_sha256": "9df6b6c014f2c6fc3c2eed53cf0c117008379478af9bcbf0bff3b95358164053"
+    },
+    "macro_real_yield_tilt_curve_defense": {
+      "bundle": {
+        "path": "reports/macro-tilt-20261010/macro_real_yield_tilt_curve_defense/bundle.json",
+        "sha256": "e047930dd055e131acd80ec69fd86adb2a707472dba186584c240c4e6a97facc"
+      },
+      "review_evidence_sha256": "f119ee69003bc498800a7f30ddfdaccf000ba3290e89da9744182c8bc57415b6"
+    },
+    "quality_implementation_gold_daily_vol12": {
+      "bundle": {
+        "path": "reports/factor-replication-20261010/quality_implementation_gold_daily_vol12/bundle.json",
+        "sha256": "f9ae0609a68ec4ed5ce2b0ae61319b780277fa84589442c17df8b9ea0213f6a1"
+      },
+      "review_evidence_sha256": "1cd8e496af3e4fadbe63a0d19899f43e7d35246522bf184d3d3f9182061c4241"
+    },
+    "quality_implementation_gold_monthly": {
+      "bundle": {
+        "path": "reports/factor-replication-20261010/quality_implementation_gold_monthly/bundle.json",
+        "sha256": "b74dc833618457efba46f355ed68615337e0fa272cd4514224c71d5eae5d681e"
+      },
+      "review_evidence_sha256": "8ef99df3f980570d267d3b0fd7d941b7fc919dc113e94860eef4339a58ade83c"
+    },
+    "semiconductor_activity_diffusion_gold_trend200": {
+      "bundle": {
+        "path": "reports/activity-gold-20261011/semiconductor_activity_diffusion_gold_trend200/bundle.json",
+        "sha256": "e48afd7a21142c628654a397d5ca0a6cb85c2f33612862e0121d4b20bfc841f6"
+      },
+      "review_evidence_sha256": "aa28b3923d7e19467c3305ae17eaa875837414f129b94d61acacae3bef2ecbb8"
+    },
+    "semiconductor_activity_magnitude_gold_trend200": {
+      "bundle": {
+        "path": "reports/activity-gold-20261011/semiconductor_activity_magnitude_gold_trend200/bundle.json",
+        "sha256": "41d7a699a80949eb74831cd305f27ca6ef00920f34290fe3908e56153d37bbac"
+      },
+      "review_evidence_sha256": "a4b6e6cbae9572d351241c0e0f77445b9bc58c20c93c4ca5d92768c683c4e7a5"
+    },
+    "semiconductor_breadth_half_gold_relative": {
+      "bundle": {
+        "path": "reports/graded-gold-20261011/semiconductor_breadth_half_gold_relative/bundle.json",
+        "sha256": "493a99e3e9f4b999229f0a217e0587fcc5bb92516041c7eea346ed619d8f33af"
+      },
+      "review_evidence_sha256": "e2b9762026c897ef6cdc0cd777c3c5f8df6120f3e9853825b6c5473ceae72fe7"
+    },
+    "semiconductor_breadth_half_gold_trend200": {
+      "bundle": {
+        "path": "reports/breadth-gold-20261011/semiconductor_breadth_half_gold_trend200/bundle.json",
+        "sha256": "23a7d802caf430e54fbd567773760d1c625d23b0d316907469e22d2ac8788fcf"
+      },
+      "review_evidence_sha256": "85347c4c7519e184966082a7a69da8a78346b070d3285ee5142b8f428ed965a1"
+    },
+    "semiconductor_breadth_off_gold_relative": {
+      "bundle": {
+        "path": "reports/graded-gold-20261011/semiconductor_breadth_off_gold_relative/bundle.json",
+        "sha256": "91138aaedf9109ca1d8c6e58ae9c31b3be6b144b4aad7936c743cbd7b19a343c"
+      },
+      "review_evidence_sha256": "5e64460ad7c802cb1535359298f9c4e68e1e69a067a7a243dac4391902899b44"
+    },
+    "semiconductor_breadth_off_gold_trend200": {
+      "bundle": {
+        "path": "reports/breadth-gold-20261011/semiconductor_breadth_off_gold_trend200/bundle.json",
+        "sha256": "62a8128cd0b0cc9f529fd0791f49c2cb3c544f0f173c0a05d04632b5083018d0"
+      },
+      "review_evidence_sha256": "03fa57b46a79282698d41be8af1cbbd02f0a73b664e7dcb4ffb93848180a6288"
+    },
+    "semiconductor_dollar_activity_diffusion_confirmation": {
+      "bundle": {
+        "path": "reports/activity-guard-20261011/semiconductor_dollar_activity_diffusion_confirmation/bundle.json",
+        "sha256": "4422d52996ccfe0ce56d651b69e7935b4164c880b8eacb18393dffc3c318068c"
+      },
+      "review_evidence_sha256": "f5eba9d0ef9fefeaf1bca33e30708e39ea7cc7b65a0aa26deba3b6e15b96c0de"
+    },
+    "semiconductor_dollar_activity_magnitude_confirmation": {
+      "bundle": {
+        "path": "reports/activity-guard-20261011/semiconductor_dollar_activity_magnitude_confirmation/bundle.json",
+        "sha256": "0ce903168332249021da16863498ebcfa09034721870e8a3fc68bb0c68c8ec90"
+      },
+      "review_evidence_sha256": "0ef7d652f0496910db62232f0efb820c9e22c16b4caa3b2ad7bfa4f158942ee5"
+    },
+    "semiconductor_dollar_half_guard": {
+      "bundle": {
+        "path": "reports/dollar-risk-guard-20261011/semiconductor_dollar_half_guard/bundle.json",
+        "sha256": "6f48940e4a66fc8fd1f23a0d291b6f9e3fb84a3eedad24e716b2eb6b7a965645"
+      },
+      "review_evidence_sha256": "c34584c2a389c2b21e38fc1db8d7abac97cd0bae38900a0eaf68214d3315a7dd"
+    },
+    "semiconductor_dollar_nfci_deterioration_guard": {
+      "bundle": {
+        "path": "reports/financial-conditions-guard-20261011/semiconductor_dollar_nfci_deterioration_guard/bundle.json",
+        "sha256": "15eab914dca060268ac794e7bdab29e4ed451c84688ac8f9aab5b93b499d034a"
+      },
+      "review_evidence_sha256": "f89ae867e2d6e255858d9c41d136bdeb0e61963313650762a69643c0d1240ee2"
+    },
+    "semiconductor_dollar_nfci_tight_guard": {
+      "bundle": {
+        "path": "reports/financial-conditions-guard-20261011/semiconductor_dollar_nfci_tight_guard/bundle.json",
+        "sha256": "2956923b50efe96ee4ba210ba0eec307d2015b4cc44f49305d734b6f115184c8"
+      },
+      "review_evidence_sha256": "1d9afe64145da8e4e141888c1a79817eeb6f06af586352e0fd8e45f51ccb5559"
+    },
+    "semiconductor_dollar_ratchet_protection": {
+      "bundle": {
+        "path": "reports/semiconductor-protection-20261011/semiconductor_dollar_ratchet_protection/bundle.json",
+        "sha256": "5f416e326056535f721c22a5152092d2f5911eeb8144ada4bf5d5c8987b1e3f3"
+      },
+      "review_evidence_sha256": "f7befd38577f3c762946fe19c08dad35aab98d69cec02a533cde3f539dc9a1b2"
+    },
+    "semiconductor_dollar_real_yield_half_guard": {
+      "bundle": {
+        "path": "reports/dollar-risk-guard-20261011/semiconductor_dollar_real_yield_half_guard/bundle.json",
+        "sha256": "538d8a6c29cd459bb7279d2622fd2569b69b1f476ad6f9609f5f49944bf99ed6"
+      },
+      "review_evidence_sha256": "4a683d7841741ae8bb55227685ff99fec766004e00f923ff25d161722870fc9f"
+    },
+    "semiconductor_dollar_t10y2y_resteepening_confirmation": {
+      "bundle": {
+        "path": "reports/curve-transition-20261011/semiconductor_dollar_t10y2y_resteepening_confirmation/bundle.json",
+        "sha256": "5cad2b08dc5906fd949479dadb4b3b51d0cb7451d4aec21f4623419c888f37b7"
+      },
+      "review_evidence_sha256": "96bc5fd069b45f4dd3d580317b887ec6059bf4a3d0ff6128dad0290f7d3bd253"
+    },
+    "semiconductor_dollar_t10y3m_resteepening_confirmation": {
+      "bundle": {
+        "path": "reports/curve-transition-20261011/semiconductor_dollar_t10y3m_resteepening_confirmation/bundle.json",
+        "sha256": "066defcf72d7f5b3b6f73bc888103eecf1095adce3f932b8d5d5d31c41903e9e"
+      },
+      "review_evidence_sha256": "9810d0178cbac105ed85db61364f5da9195a4a76ee108f5398093e8238932b24"
+    },
+    "semiconductor_dollar_term_daily_confirmation": {
+      "bundle": {
+        "path": "reports/joint-risk-confirmation-20261011/semiconductor_dollar_term_daily_confirmation/bundle.json",
+        "sha256": "fb6f884dcca2d8df5cd9fde8daca7377f096dd537a2401cbcc4df50b9cab2b2a"
+      },
+      "review_evidence_sha256": "5f2102996d20dd26a4e6dd28b8d5d151f9ecb0803b56aafa9452c54b46abf72d"
+    },
+    "semiconductor_dollar_term_monthly_confirmation": {
+      "bundle": {
+        "path": "reports/joint-risk-confirmation-20261011/semiconductor_dollar_term_monthly_confirmation/bundle.json",
+        "sha256": "69511116df34e4ee7e586bc039a85b4adb682b118a99a5fd4e256524dc82139f"
+      },
+      "review_evidence_sha256": "e3e01d91133567f5ed1d5fb8104d9910ce3435208b4c6ef7fd28d1808783fda9"
+    },
+    "semiconductor_dollar_vix9d_daily_confirmation": {
+      "bundle": {
+        "path": "reports/near-term-confirmation-20261011/semiconductor_dollar_vix9d_daily_confirmation/bundle.json",
+        "sha256": "066d20a2d6e62572025c0c84bcaf81b322ca32ccc0002d138dc26511d8a0ae57"
+      },
+      "review_evidence_sha256": "825fef7024453427e4b354d282782870a62d70300c87b3bb07cd830e9f0b6ae3"
+    },
+    "semiconductor_dollar_vix9d_monthly_confirmation": {
+      "bundle": {
+        "path": "reports/near-term-confirmation-20261011/semiconductor_dollar_vix9d_monthly_confirmation/bundle.json",
+        "sha256": "6e9facc4bc5588091823111040cf4279a8240a3dcdd668f6e316aae66d5bca84"
+      },
+      "review_evidence_sha256": "901b3cbecb99e17997cb699821122be17301746bb6b69399f6bead96dcf6266b"
+    },
+    "semiconductor_equity_gold_relative_trends": {
+      "bundle": {
+        "path": "reports/trend-transfer-20261011/semiconductor_equity_gold_relative_trends/bundle.json",
+        "sha256": "afdc414b19c14a2f58d363ccec1284922c574b913d2ef72dc367690ebf9a5888"
+      },
+      "review_evidence_sha256": "8a65a4c76fd657891f56d54c8dd03ef7aeda9b5aeabdea5fd4f0f962d736a1d3"
+    },
+    "semiconductor_equity_gold_trend200": {
+      "bundle": {
+        "path": "reports/trend-transfer-20261011/semiconductor_equity_gold_trend200/bundle.json",
+        "sha256": "ebbf537842ed0590d21e66bedbeea479461f68694927297e72d6905fde1f7a0c"
+      },
+      "review_evidence_sha256": "d4df17cc32b48863ace750213021b71ea27ec6b929a20e7724fec90d371025bb"
+    },
+    "semiconductor_fixed_vol12": {
+      "bundle": {
+        "path": "reports/volatility-transfer-20261011/semiconductor_fixed_vol12/bundle.json",
+        "sha256": "193419f0a4cb399c5f54d3a60f83813ddbddc78054a63f6a1be31cd9694f0d6d"
+      },
+      "review_evidence_sha256": "b9197a32e86b65a1f52df65053226bd4a838409d311a6cdee8ee962c0a840de6"
+    },
+    "semiconductor_gold_released_producer_diversified": {
+      "bundle": {
+        "path": "reports/producer-routing-20261011/semiconductor_gold_released_producer_diversified/bundle.json",
+        "sha256": "3e4cb4514858f7b6b62aa65c9ec53cfe536eb8b5483d0554f1bf8f1f66563975"
+      },
+      "review_evidence_sha256": "ab9fdcf11410ca871a992335307034072bf8d47427dfad7f5930d8e229f95022"
+    },
+    "semiconductor_gold_released_producer_momentum": {
+      "bundle": {
+        "path": "reports/producer-routing-20261011/semiconductor_gold_released_producer_momentum/bundle.json",
+        "sha256": "b3b424868c1cb5a7bc1fb69842b80e8f84841d98fac0e080241ecf1573f6305b"
+      },
+      "review_evidence_sha256": "5b6cf9525906c2a1a711c0cc64621bff2fb565561882c993413d825e8c85d319"
+    },
+    "semiconductor_graded_gold_half_observed_band025": {
+      "bundle": {
+        "path": "reports/observed-band-20261011/semiconductor_graded_gold_half_observed_band025/bundle.json",
+        "sha256": "ddc2465132e7406fa01e7e3461a16d1b8fe48804f97ddd3168776883f0d7f525"
+      },
+      "review_evidence_sha256": "67e59a2dfbb1abe5b335dd73636be07f078492161b77d7bd206e2b9daa0f2631"
+    },
+    "semiconductor_graded_gold_off_observed_band025": {
+      "bundle": {
+        "path": "reports/observed-band-20261011/semiconductor_graded_gold_off_observed_band025/bundle.json",
+        "sha256": "dbfb49673077f3beb9262d345c030d488796966ed2572b10f980044d17d9a400"
+      },
+      "review_evidence_sha256": "7271d6683d5afaa7c538582f2fb06f74c5de177a882c77fca30e6e30ed045699"
+    },
+    "semiconductor_leadership126_observed_band025": {
+      "bundle": {
+        "path": "reports/leadership-20261011/semiconductor_leadership126_observed_band025/bundle.json",
+        "sha256": "ea0a1dc7ff88c61efa7e16d9d2633f2c0dcb37b3f24097843d6f463daec71414"
+      },
+      "review_evidence_sha256": "8a1fa32981ea4adfb0aba80880c3e7687ae29101aaedda78787ff511cebde482"
+    },
+    "semiconductor_leadership_core_inverse_semideviation": {
+      "bundle": {
+        "path": "reports/core-risk-20261011/semiconductor_leadership_core_inverse_semideviation/bundle.json",
+        "sha256": "6d3d4207cbba43901198297bf96f944778e614a8747795d7d566489106fb8e90"
+      },
+      "review_evidence_sha256": "6f0e85e8fb44f8458c030809c2b0dda14c4943589f1ca682c165b099be734cde"
+    },
+    "semiconductor_leadership_core_inverse_volatility": {
+      "bundle": {
+        "path": "reports/core-risk-20261011/semiconductor_leadership_core_inverse_volatility/bundle.json",
+        "sha256": "087c705f31777524e77405cd7271599169222a54164ce06ac5c03d9c1ae47d4a"
+      },
+      "review_evidence_sha256": "c8fb16321753aec320e9c8bdf9baab002e0bf4e595965409a211991f0ee0f6c6"
+    },
+    "semiconductor_leadership_core_residual_momentum": {
+      "bundle": {
+        "path": "reports/core-momentum-20261011/semiconductor_leadership_core_residual_momentum/bundle.json",
+        "sha256": "44638dc4b23044bea299568d6bed78aa7f6c8d16ef3190f6993afbd1732bb658"
+      },
+      "review_evidence_sha256": "43b6710156dad8d9dba79f87f3eb4f237436694654879a0dcc4a23edddf59221"
+    },
+    "semiconductor_leadership_core_total_momentum": {
+      "bundle": {
+        "path": "reports/core-momentum-20261011/semiconductor_leadership_core_total_momentum/bundle.json",
+        "sha256": "1b9f1cc50a6fbb241fabc1e985c8a2365d7be620a274c3a7417f8ae742dc6fc6"
+      },
+      "review_evidence_sha256": "e9dfd79eb1d4275d473b2d8d0e4a93c6f57530edfea1b2023dd08c01a9e07031"
+    },
+    "semiconductor_leadership_votes_observed_band025": {
+      "bundle": {
+        "path": "reports/leadership-20261011/semiconductor_leadership_votes_observed_band025/bundle.json",
+        "sha256": "e4b19b9521e666993ecd9d4f56a27f75a858b904afaa8387cabda5b22d2323cd"
+      },
+      "review_evidence_sha256": "0c13ea2ab3fe90ba4301e76dee8db9195da4d929cd282378131491ee30be9659"
+    },
+    "semiconductor_monthly_confirmation_fixed_vol12": {
+      "bundle": {
+        "path": "reports/volatility-transfer-20261011/semiconductor_monthly_confirmation_fixed_vol12/bundle.json",
+        "sha256": "e25a57cd3e7ef139e77a9a0e814ec771290c773e924a2e3f9ef2348f95572521"
+      },
+      "review_evidence_sha256": "b2ba12cf7af358426cc6732cc96b48174eac4b3dcd51fb04c6f1b60158cc27f3"
+    },
+    "semiconductor_option_proxy_risk_balance": {
+      "bundle": {
+        "path": "reports/implied-risk-20261011/semiconductor_option_proxy_risk_balance/bundle.json",
+        "sha256": "8b7c5a4d339a51a3f061d4eeeaaeba306b6dc3891d8599ba480d08f4a40b3a4f"
+      },
+      "review_evidence_sha256": "0daa91d85256c532ffeeb587df1b6cd5fb9b3d723c4c201946f981c0485b1652"
+    },
+    "semiconductor_option_proxy_risk_balance_dollar_half": {
+      "bundle": {
+        "path": "reports/implied-risk-20261011/semiconductor_option_proxy_risk_balance_dollar_half/bundle.json",
+        "sha256": "1d406c71d49ca9a8190b2bbf25ac074cfc1eadfc3cd63500aa257e201124cfc7"
+      },
+      "review_evidence_sha256": "63ea833e9f543a1728502a9f43c1b96cfb968a0d4bdec7dd039eae2e837e255e"
+    },
+    "semiconductor_ratchet_protection": {
+      "bundle": {
+        "path": "reports/semiconductor-protection-20261011/semiconductor_ratchet_protection/bundle.json",
+        "sha256": "45699c76368353b49f1ef12b30a46a48e984f46179cda24d1c4d89596e0e0200"
+      },
+      "review_evidence_sha256": "569cacb467f0bb0f31dd83337463462fd9c541bf71f91eb5fa7f45e374688495"
+    },
+    "semiconductor_relative_trend_treasury_diversified": {
+      "bundle": {
+        "path": "reports/residual-treasury-20261011/semiconductor_relative_trend_treasury_diversified/bundle.json",
+        "sha256": "22fd93b149b5b153a8573cedbc8d80a3f9287819a1694dbe47720d6fe6d7b74b"
+      },
+      "review_evidence_sha256": "82ab67431d088c4590fb22442f57a81d722b27f3b232f72cc61cb2b319bda770"
+    },
+    "semiconductor_relative_trend_treasury_momentum": {
+      "bundle": {
+        "path": "reports/residual-treasury-20261011/semiconductor_relative_trend_treasury_momentum/bundle.json",
+        "sha256": "778da9256375047725a57b4aa8c88815926bec886ce1dba26ff5e015a6b7845c"
+      },
+      "review_evidence_sha256": "4e823f2789efe0d5860b537e6f2cd2fb6f08670aedadfa63f17855a7ceec3cd0"
+    },
+    "semiconductor_sector_breadth_equity_half": {
+      "bundle": {
+        "path": "reports/sector-breadth-20261011/semiconductor_sector_breadth_equity_half/bundle.json",
+        "sha256": "9479bc9c4f035c0f91e57b30cdfd3bf9d47d47723292f630d79d6c751941d2d1"
+      },
+      "review_evidence_sha256": "19b00a5bf7e5114b76fdaf8593f89f437dbcd0d260e8dc55d5388a99ecad6cb8"
+    },
+    "semiconductor_sector_breadth_equity_off": {
+      "bundle": {
+        "path": "reports/sector-breadth-20261011/semiconductor_sector_breadth_equity_off/bundle.json",
+        "sha256": "067cfae2d7364ab33c5e62288e2548d0bbada9ac018561555624a1aa28a7d4b5"
+      },
+      "review_evidence_sha256": "b5cf565efed419d30c55c1516216f7fd0ad1e4d7606a8785e303c920fee655a2"
+    },
+    "semiconductor_term_half_guard": {
+      "bundle": {
+        "path": "reports/sector-term-guard-20261011/semiconductor_term_half_guard/bundle.json",
+        "sha256": "5c9ab11267f7f8a7c8ebc3ecb9f5e402893fbe7d0988850e8ee93f1056cefc73"
+      },
+      "review_evidence_sha256": "d004e180a2ca7e8c9b4473fbb74f8b64a71c4bb32505edc9de5a975e8259b252"
+    },
+    "semiconductor_term_or_dollar_half_guard": {
+      "bundle": {
+        "path": "reports/sector-term-guard-20261011/semiconductor_term_or_dollar_half_guard/bundle.json",
+        "sha256": "89b881a29ce1c579cafa488432c7ae66b5279e8a23af5dec7bf938e8cd69b9cd"
+      },
+      "review_evidence_sha256": "3cb47b80f92d0f5caa00edb9bc89862c5162b2ecb54b4ec22937ba2f2e280e6b"
+    }
+  },
+  "policy": {
+    "alpha_per_cohort_horizon_cell": 0.0125,
+    "annualization_sessions": 252,
+    "as_of": "2026-10-05",
+    "audit_id": "current_recurring_selection_accounting_cohorts_20261011",
+    "block_sessions": 21,
+    "bootstrap_samples": 4000,
+    "capital_usd": 10000.0,
+    "change_research_qualification_policy": false,
+    "cohort_candidate_counts": {
+      "cash_funded_v2": 57,
+      "legacy_original": 19
+    },
+    "cohort_comparison_counts_per_horizon": {
+      "cash_funded_v2": 171,
+      "legacy_original": 57
+    },
+    "cost_comparisons": [
+      {
+        "spy_scenario": "base",
+        "strategy_scenario": "base"
+      },
+      {
+        "spy_scenario": "stress",
+        "strategy_scenario": "stress"
+      },
+      {
+        "spy_scenario": "base",
+        "strategy_scenario": "stress"
+      }
+    ],
+    "earlier_configurations_not_in_joint_inference": 84,
+    "familywise_alpha": 0.05,
+    "familywise_cell_count": 4,
+    "full_search_selection_adjusted_alpha_verified": false,
+    "horizons_years": [
+      10,
+      5
+    ],
+    "included_candidate_count": 76,
+    "independent_forward_validation": false,
+    "methodology": {
+      "authority": "Read-only source/accountstatistics only:0newfactor definitions,candidates,reviews,accounts,controls,engine migrations orforwarddays. Do not change currentqualification rules,gates,sourcegap policies,weights/costs/budgets,W42orforwardprofiles,ortrade. Investmentgoal remainsunmet unless independentlyverifiedfullrequirements areactuallyachieved.",
+      "cohort": "Freeze every one of the current76actual source-bound reviewed strategies,including failures,after160exposed configurations. Separate19legacy-original records with no explicit accountingtag from57records with the exact frozen cash-funded-noop-v2 reference. Membership is determined by accountingidentity,not returns,gates,p-values,assetnames or apparentindependence. Unknownaccounting/missing/incomplete/corrupted records stop ratherthanenter anothercohort. Twoinvalid codeversions have no acceptedfour-pathaccounts anddo notbecomeobservations.",
+      "dependence": "For each horizon use4000synchronous21-NYSE-sessioncircularblock positions andoriginalseed20261011 plus horizonindex. Use the same date positions acrossallcandidates/costcomparisons and bothaccountingcohorts atthat horizon. Keep duplicate/highlycorrelatedcolumns;they are not independentalpha families. Differentlysizedoverlapping10y/5ywindows are not assumed independent.",
+      "legacy_limits": "The legacycell describes original oldengine outcomes only;it doesnot repaircashaccounting orcertifytheirportfolioprofitsunder currentfunded-v2. Its inclusion discloses priorsearch,but doesnot convert thoseoldpaths intofreshvalidatedpolicyresults. Funded-v2 has a separate cell andoldreviewtime/status/metrics/sourceSHAs remain exact.",
+      "multiplicity": "There are fourfixedcohort-horizon cells:19or57candidates times3costcomparisons ineach10y/5ycell,57or171columns. Allocate0.05/4=0.0125one-sidederror to eachcell;within eachcell use thefixedcommon-maximumcriticalbound. Acrosscells use capped4timesminimum scoped omnibusp-value. This union-bound allocation doesnotrequirecell/window/accountingcohortindependence anddoesnotpoollegacyaccounting withversion2performance.",
+      "preservation": "All old22/36source inference policies/code/registrations/results/privateartifacts remain unchanged. This is a new datedanalysis,not extending oroverwriting oldp-values/coverage. Keep current76reviews/304auditedpaths/160trialcount,oldledger/eventhead/engine,69imports,7profiles,3192controls,W42fourplans/IJRPKWquota andbothfrozenforwardmodels.",
+      "selection_limits": "The earlier84trial search,unknownresearchchoices,priorholdings/parameterexploration,exposedcurrenthistory/vendorrevisions/nonstationarity andotherunrecordedchoices remainoutside correction. Neither apositive bound nor a smallp-value is an independentholdout,forecastprofitprobability,risk-adjustedalpha,all160trialsearchcorrection orSharpe/drawdownqualification. Conditioning on thealreadyconstructeddatednetreturnpaths doesnot simulate policies/costsunderalternativepricehistories.",
+      "statistic": "Reuse unchanged selection_validation.joint_maximum and its actualsource reader. Each comparison is net dailylog-growth of the original strategy account minus its actualcost-matchedSPYorstress-versus-baseSPYaccount. Mean-center each column andtake thepositive-part maximummean under the sameleast-favourable-null diagnostic. No Sharpeoptimization,studentization,newdistribution,block/seed/sample/statistic search orresampledtradingaccount construction.",
+      "verification": "Beforejointoutcomes freeze original76bundlepaths/reviewdigests/allsourcefilehashes andexactinputcohort list. Verify full2512/1254day strategy/SPY/bt/risk-freeaccounts withoriginalfees/delays/capital/metrics. After actualremote registration/code/policypublicationfence,runallfourcells. Independentlyparse rawCSVreturn/NAVrows/logdifferences and reproduce all4000positions withdirect-indexmeans,criticalvalues/bounds/signs/p-values/outputshapes. Preserveallfailure/partialresults andreport exactmeasuredscope."
+    },
+    "order_authority": false,
+    "original_policy": {
+      "path": "config/selection-validation.json",
+      "sha256": "28b5808ea3865206f86857b57927e76183d73a5620d3f8e2405db9ae8d81847a"
+    },
+    "previous_policy": {
+      "path": "config/selection-expansion.json",
+      "sha256": "bed8109e00a17cbaef1f0eb19586c4b00686228a00c899e072b1eedb8c612443"
+    },
+    "previous_preservation": {
+      "path": "evidence/selection_expansion_20261011_preservation.json",
+      "sha256": "ec09b80085e7f9aef95747e9c9195e2d27a615faeafa4d4ad5f31fc9b121ce33"
+    },
+    "previous_registration": {
+      "path": "evidence/selection_expansion_20261011_registration.json",
+      "sha256": "856a95bd964d47b5efa1df88ec629d0a2dcf2a03ecc3c05d7bb9ddd6f15b7519"
+    },
+    "previous_reproducibility": {
+      "path": "evidence/selection_expansion_20261011_reproducibility.json",
+      "sha256": "aa046f5a5abd5be3f964dce2c7d559a7d8aab03b9fb7da380fce2c5a5fc832f7"
+    },
+    "previous_results": {
+      "path": "evidence/selection_expansion_20261011_results.json",
+      "sha256": "d7d0d5a4a1ed4d0ede9914f2207176be77b27679331fde085694548dfb38cfd5"
+    },
+    "schema_version": 1,
+    "scope": "all76_completed_recurring_reviews_split_by_original_accounting",
+    "seed": 20261011,
+    "source_bound_audit": {
+      "path": "evidence/research_program_source_bound_audit_v54.json",
+      "sha256": "52145fda03abb088d541f57acac2229a4bbd743e9c59f29f9a7b414a3e7abaaf"
+    },
+    "source_snapshot": {
+      "path": "evidence/research_program_2026-W41_implied_risk_results_v83.json",
+      "sha256": "8c05846b90465a36141eef46cf5a555be0634a777e971ef56ba090e37e21179c"
+    },
+    "terminal_invalid_code_versions_not_in_inference": 2,
+    "total_disclosed_configurations": 160
+  },
+  "policy_reference": {
+    "body_sha256": "f03703e14508ce018cf5a9059677c408ae6d63998deb3f5ecd79473611091c68",
+    "path": "config/selection-accounting-cohorts.json",
+    "sha256": "ec4af7e61d9f2fe403b0f0c5ef571c534cfb993cef0fc67b1cd1f11b3a4441c1"
+  },
+  "prepared_path": "data/selection-accounting-cohorts-publication-v2-20261011",
+  "program_engine_sha256": "e8cc065f8f378db89015dfacf1ccd1d12c0614d2a4d42b2ae94ce8b4c4c85928",
+  "registered_at": "2026-10-11T23:27:11.176467+00:00",
+  "schema_version": 1,
+  "settings_frozen_before_joint_resampling": true
+}

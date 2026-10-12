@@ -1,0 +1,238 @@
+{
+  "CFNAI_housing_component_overlap_disclosed": true,
+  "actual_batches": 12,
+  "actual_source_series": 2,
+  "actual_vintage_snapshots": 450,
+  "all_raw_probe_values_and_period_dates_reproduce_batches": true,
+  "annualized_thousands_assumed_unadjusted_monthly_unit_count_price_return_or_volatility": false,
+  "blocked_query_metadata": [
+    {
+      "completed_period_age_calendar_days": 86,
+      "completed_period_end": "2025-08-31",
+      "explicit_source_error": "Monthly completed-period freshness exceeds the frozen62day source contract.",
+      "observation_month": "2025-08-01",
+      "query_session": "2025-11-25",
+      "series": "PERMIT",
+      "status": "blocked_stale_source",
+      "vintage_cutoff": "2025-11-21"
+    },
+    {
+      "completed_period_age_calendar_days": 89,
+      "completed_period_end": "2025-08-31",
+      "explicit_source_error": "Monthly completed-period freshness exceeds the frozen62day source contract.",
+      "observation_month": "2025-08-01",
+      "query_session": "2025-11-28",
+      "series": "PERMIT",
+      "status": "blocked_stale_source",
+      "vintage_cutoff": "2025-11-25"
+    },
+    {
+      "completed_period_age_calendar_days": 120,
+      "completed_period_end": "2025-08-31",
+      "explicit_source_error": "Monthly completed-period freshness exceeds the frozen62day source contract.",
+      "observation_month": "2025-08-01",
+      "query_session": "2025-12-29",
+      "series": "PERMIT",
+      "status": "blocked_stale_source",
+      "vintage_cutoff": "2025-12-24"
+    },
+    {
+      "completed_period_age_calendar_days": 122,
+      "completed_period_end": "2025-08-31",
+      "explicit_source_error": "Monthly completed-period freshness exceeds the frozen62day source contract.",
+      "observation_month": "2025-08-01",
+      "query_session": "2025-12-31",
+      "series": "PERMIT",
+      "status": "blocked_stale_source",
+      "vintage_cutoff": "2025-12-29"
+    },
+    {
+      "completed_period_age_calendar_days": 90,
+      "completed_period_end": "2025-10-31",
+      "explicit_source_error": "Monthly completed-period freshness exceeds the frozen62day source contract.",
+      "observation_month": "2025-10-01",
+      "query_session": "2026-01-29",
+      "series": "PERMIT",
+      "status": "blocked_stale_source",
+      "vintage_cutoff": "2026-01-27"
+    },
+    {
+      "completed_period_age_calendar_days": 91,
+      "completed_period_end": "2025-10-31",
+      "explicit_source_error": "Monthly completed-period freshness exceeds the frozen62day source contract.",
+      "observation_month": "2025-10-01",
+      "query_session": "2026-01-30",
+      "series": "PERMIT",
+      "status": "blocked_stale_source",
+      "vintage_cutoff": "2026-01-28"
+    },
+    {
+      "completed_period_age_calendar_days": 89,
+      "completed_period_end": "2026-01-31",
+      "explicit_source_error": "Monthly completed-period freshness exceeds the frozen62day source contract.",
+      "observation_month": "2026-01-01",
+      "query_session": "2026-04-30",
+      "series": "PERMIT",
+      "status": "blocked_stale_source",
+      "vintage_cutoff": "2026-04-28"
+    },
+    {
+      "completed_period_age_calendar_days": 86,
+      "completed_period_end": "2025-08-31",
+      "explicit_source_error": "Monthly completed-period freshness exceeds the frozen62day source contract.",
+      "observation_month": "2025-08-01",
+      "query_session": "2025-11-25",
+      "series": "HOUST",
+      "status": "blocked_stale_source",
+      "vintage_cutoff": "2025-11-21"
+    },
+    {
+      "completed_period_age_calendar_days": 89,
+      "completed_period_end": "2025-08-31",
+      "explicit_source_error": "Monthly completed-period freshness exceeds the frozen62day source contract.",
+      "observation_month": "2025-08-01",
+      "query_session": "2025-11-28",
+      "series": "HOUST",
+      "status": "blocked_stale_source",
+      "vintage_cutoff": "2025-11-25"
+    },
+    {
+      "completed_period_age_calendar_days": 120,
+      "completed_period_end": "2025-08-31",
+      "explicit_source_error": "Monthly completed-period freshness exceeds the frozen62day source contract.",
+      "observation_month": "2025-08-01",
+      "query_session": "2025-12-29",
+      "series": "HOUST",
+      "status": "blocked_stale_source",
+      "vintage_cutoff": "2025-12-24"
+    },
+    {
+      "completed_period_age_calendar_days": 122,
+      "completed_period_end": "2025-08-31",
+      "explicit_source_error": "Monthly completed-period freshness exceeds the frozen62day source contract.",
+      "observation_month": "2025-08-01",
+      "query_session": "2025-12-31",
+      "series": "HOUST",
+      "status": "blocked_stale_source",
+      "vintage_cutoff": "2025-12-29"
+    },
+    {
+      "completed_period_age_calendar_days": 90,
+      "completed_period_end": "2025-10-31",
+      "explicit_source_error": "Monthly completed-period freshness exceeds the frozen62day source contract.",
+      "observation_month": "2025-10-01",
+      "query_session": "2026-01-29",
+      "series": "HOUST",
+      "status": "blocked_stale_source",
+      "vintage_cutoff": "2026-01-27"
+    },
+    {
+      "completed_period_age_calendar_days": 91,
+      "completed_period_end": "2025-10-31",
+      "explicit_source_error": "Monthly completed-period freshness exceeds the frozen62day source contract.",
+      "observation_month": "2025-10-01",
+      "query_session": "2026-01-30",
+      "series": "HOUST",
+      "status": "blocked_stale_source",
+      "vintage_cutoff": "2026-01-28"
+    },
+    {
+      "completed_period_age_calendar_days": 89,
+      "completed_period_end": "2026-01-31",
+      "explicit_source_error": "Monthly completed-period freshness exceeds the frozen62day source contract.",
+      "observation_month": "2026-01-01",
+      "query_session": "2026-04-30",
+      "series": "HOUST",
+      "status": "blocked_stale_source",
+      "vintage_cutoff": "2026-04-28"
+    }
+  ],
+  "blocked_query_selections": 14,
+  "census_definitions_discovery_http403_not_bypassed": true,
+  "checked_at": "2026-10-12T00:49:45.507549+00:00",
+  "complete_survey_seasonal_methodology_vintages_or_intraday_release_times_verified": false,
+  "coupled_source_contract_test_cases_passed": 160,
+  "existing_W42_or_forward_rules_changed": false,
+  "fresh_query_selections": 436,
+  "full_readiness_error": "Monthly completed-period freshness exceeds the frozen62day source contract.",
+  "full_source_readiness": false,
+  "independent_decimal_value_maximum_error": 0.0,
+  "independent_query_selections_checked": 450,
+  "independent_reader_metadata_recovery": {
+    "correction": "Strip the actual metadata Real-Time End literal Current as well as dated ends before joining wrapped titles.",
+    "initial_failure_log": "reports/housing-inputs-plan-20261012/verify.log",
+    "initial_failure_log_sha256": "7315d3cbe7c78d4ee0ab0c86c6b902a7bd77a90df6f89fc2bba48ec04867df9f",
+    "initial_independent_reader_code": "reports/housing-inputs-plan-20261012/verify-initial-metadata-v1.py",
+    "initial_independent_reader_sha256": "91e8f8761ecec41ce0eb21f38035b1fc9e4ca2f256d8fb97057d0dff3eb17cfd",
+    "new_source_requests_after_metadata_reader_failure": 0,
+    "private_reader_recovery_proof_sha256": "5d6c953f90d35a08b5b48b2531f51851a83bff918513af65ed2b123324febfa0",
+    "raw_csv_numeric_observation_and_date_logic_ast_unchanged": true,
+    "source_policy_parser_cutoffs_freshness_or_numeric_selection_changed": false
+  },
+  "independent_verifier_sha256": "dce81184ee66052185ef628aa6581028b8671d3b0c77ff6f9569c5ed44cabc78",
+  "independently_acquired_probe_snapshots": 6,
+  "investment_objective_verified": false,
+  "market_asof_query_cohort_or_formal_strategy_windows_shortened": false,
+  "maximum_actual_completed_period_age_days": 122,
+  "maximum_allowed_completed_period_age_days": 62,
+  "missing_or_stale_sources_filled_dropped_or_relabelled_strategy_standby": false,
+  "native_frequency": "Monthly",
+  "native_seasonal_adjustment": "Seasonally Adjusted Annual Rate",
+  "native_units": "Thousands of Units",
+  "new_forward_model_observations": 0,
+  "new_independent_factor_families_claimed": false,
+  "new_registered_candidates": 0,
+  "new_registered_factor_definitions": 0,
+  "new_strategy_evaluations": 0,
+  "order_authority": false,
+  "original_market_context_sessions": 2805,
+  "original_monthly_reference_pairs": 131,
+  "permit_minus_starts_assumed_measured_backlog": false,
+  "permit_place_scope_assumed_identical_to_all_housing_starts": false,
+  "policy": {
+    "path": "config/housing-inputs.json",
+    "sha256": "6675f4744a1957a08da6b67c7771949065fddd75c3c75845d4914664eb12df8a"
+  },
+  "primary_definitions_and_exact_vintage_archive_metadata_verified": true,
+  "primary_documents": {
+    "HOUST-ALFRED-form.html": {
+      "sha256": "189b496ed19bb4d76788a849486580b938839f368292b34064317d172c922399",
+      "url": "https://alfred.stlouisfed.org/series/downloaddata?seid=HOUST"
+    },
+    "HOUST-FRED-series.html": {
+      "sha256": "8c545ee876b7633a67aa86d3cc474a6da69fdede902de9de5bc07424cf14eb4b",
+      "url": "https://fred.stlouisfed.org/series/HOUST"
+    },
+    "PERMIT-ALFRED-form.html": {
+      "sha256": "5d87a77bbfb52ba4e78214d64e1b08eade357f615f6bb9b3b1cad3e25c183164",
+      "url": "https://alfred.stlouisfed.org/series/downloaddata?seid=PERMIT"
+    },
+    "PERMIT-FRED-series.html": {
+      "sha256": "a1e6041ce2a3544bc866253cf2ada7c5344c92c982c0bfdd9b4e23c3fd5dca41",
+      "url": "https://fred.stlouisfed.org/series/PERMIT"
+    }
+  },
+  "private_source_manifest": {
+    "path": "data/housing-inputs-20261012/manifest.json",
+    "sha256": "6f35aad1fc7fcd05d66aab4c65402f537e1cd8d200dc1d51a797b4b0de2ea9a0"
+  },
+  "private_verified_query_matrix": {
+    "path": "reports/housing-inputs-plan-20261012/verified-queries.csv",
+    "sha256": "7c352f9bed5d5c0bf14b7a3f377c5214947217c58243443ac6541bc6750302da"
+  },
+  "raw_primary_documents_and_full_input_matrices_published": false,
+  "schema_version": 1,
+  "series": [
+    "PERMIT",
+    "HOUST"
+  ],
+  "source_age_lag_headers_endpoint_host_or_transport_changed": false,
+  "source_observation_end": "2026-08-01",
+  "source_observation_start": "2014-01-01",
+  "source_validator_sha256": "9f2c8ab7098a24721913ee077f5949c43beebedcabd7fe1a840b8bc9a8ab215a",
+  "status": "complete_archives_freshness_blocked",
+  "strategy_states_targets_or_returns_computed": false,
+  "study_id": "housing_pipeline_vintage_source_20261012",
+  "two_series_are_independent_alpha_or_trading_states": false,
+  "vintage_cutoff": "second_previous_nyse_session"
+}

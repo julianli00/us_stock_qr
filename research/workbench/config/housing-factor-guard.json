@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "study_id": "published_housing_pipeline_slowdown_confirmations_20261012",
+  "data_scope": "factor_etf_portfolio",
+  "data_start": "2015-08-10",
+  "as_of": "2026-10-05",
+  "prior_evaluated_configurations": 162,
+  "new_configurations": 2,
+  "new_economic_factor_definitions": 0,
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "factor_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "source_candidate": "four_factor_semiconductor_sector50",
+  "risk_change_sessions": 63,
+  "risk_off_scale": 0.50,
+  "cash_reserve": 0.02,
+  "candidates": [
+    {"id": "semiconductor_housing_permit_decline_half", "housing_confirmation": "permit_decline"},
+    {"id": "semiconductor_housing_permit_starts_decline_half", "housing_confirmation": "permit_and_starts_decline"}
+  ],
+  "source_registration": {"path": "evidence/sector_growth_balance_20261011_registration.json", "sha256": "1ace4a96739b5f99e1023d3dc502373f7da90acf5edb9ddd18b13c20168d273d"},
+  "source_policy": {"path": "config/sector-growth-balance.json", "sha256": "ed3fef4f25dbda3132df2480e43a5188719776485c9018c5447c9e2aad2f4103"},
+  "source_implementation": {"path": "src/us_quant/sector_growth_balance.py", "sha256": "783df691d243da8794d887bd1f8bb5331f9875a271b628c157098ea6233fd7a7"},
+  "housing_policy": {"path": "config/housing-inputs.json", "sha256": "6675f4744a1957a08da6b67c7771949065fddd75c3c75845d4914664eb12df8a"},
+  "housing_implementation": {"path": "src/us_quant/housing_inputs.py", "sha256": "e7ea1181a4f165bd890bb8aa4cd97356ec00a6c68f35fa2918c64d59f6a3dc64"},
+  "housing_readiness": {"path": "evidence/housing_input_readiness_20261012.json", "sha256": "6aee5cbe6a203fafdbd8bddd82edb65fb85d9ef09094149e96cb20fdfda4de6e"},
+  "housing_manifest": {"path": "data/housing-inputs-20261012/manifest.json", "sha256": "6f35aad1fc7fcd05d66aab4c65402f537e1cd8d200dc1d51a797b4b0de2ea9a0"},
+  "known_stale_queries": [
+    {"query_session": "2025-11-25", "vintage_cutoff": "2025-11-21", "observation_month": "2025-08-01", "completed_period_end": "2025-08-31", "completed_period_age_calendar_days": 86},
+    {"query_session": "2025-11-28", "vintage_cutoff": "2025-11-25", "observation_month": "2025-08-01", "completed_period_end": "2025-08-31", "completed_period_age_calendar_days": 89},
+    {"query_session": "2025-12-29", "vintage_cutoff": "2025-12-24", "observation_month": "2025-08-01", "completed_period_end": "2025-08-31", "completed_period_age_calendar_days": 120},
+    {"query_session": "2025-12-31", "vintage_cutoff": "2025-12-29", "observation_month": "2025-08-01", "completed_period_end": "2025-08-31", "completed_period_age_calendar_days": 122},
+    {"query_session": "2026-01-29", "vintage_cutoff": "2026-01-27", "observation_month": "2025-10-01", "completed_period_end": "2025-10-31", "completed_period_age_calendar_days": 90},
+    {"query_session": "2026-01-30", "vintage_cutoff": "2026-01-28", "observation_month": "2025-10-01", "completed_period_end": "2025-10-31", "completed_period_age_calendar_days": 91},
+    {"query_session": "2026-04-30", "vintage_cutoff": "2026-04-28", "observation_month": "2026-01-01", "completed_period_end": "2026-01-31", "completed_period_age_calendar_days": 89}
+  ],
+  "known_paused_months": ["2025-11-28", "2025-12-31", "2026-01-30", "2026-02-27", "2026-03-31", "2026-04-30", "2026-07-31"],
+  "missing_data_rule": "only_exact_predeclared_stale_query_pairs_pause_original_monthly_request_unknown_gap_fatal",
+  "strict_source_readiness_relabelled": false,
+  "methodology": {
+    "hypothesis": "Housing authorization is an earlier activity stage than foundation starts in an interest-sensitive sector. Compare an authorization decline alone with the same decline requiring a starts decline. This tests pipeline-stage confirmation,not an independently validated recession label,trading instruction or two new economic factor families. CFNAI already includes housing and both series may respond to common financial conditions.",
+    "baseline": "Rebuild exactly original four_factor_semiconductor_sector50 monthly targets from their original twelve-asset prices:63session samplevolatility/30%-70%equitybounds/half-equitySOXX/remaininghalfequalMTUM-VLUE-QUAL-USMV/GLDdefense/98%funding. Do not choose a later winning optionbudget/Dollar/activity/trend/holdingband source or change any sleeve share.",
+    "rules": "At each original131completedmonth decision compare each actual latest PERMIT/HOUST level to its own independently observed63NYSE-session-earlier query/vintage level. The first candidate halves all original non-BILweights if PERMITcurrent is strictly below its prior level. The second requires both PERMITcurrent strictly below priorPERMIT and HOUSTcurrent strictly below priorHOUST. Equal or rising readings do not trigger. Otherwise issue the unmodified source target. Transfer removed capital only to actualBIL with the same inherited50%scale and2%targetidle cash;no additional Dollar/curve/option threshold,percentile or state filter.",
+    "measurement": "Use native monthly thousands-of-units seasonally adjusted annual rates,not adjusted prices,returns or raw monthly counts. Compare each source stage only to itself;PERMITminusHOUST is not a measured backlog because coverage differs. Own-query differences may include statistical revisions and survey/seasonal changes,not a pure economic shock. Source counts do not prove predictive ability.",
+    "known_missingness": "Strict housing source stays blocked at14series-query cells across the seven exact dates listed. Before targets and returns freeze this separate no-request law:if either current/reference PERMIT or HOUST query is exactly listed stale,leave that entire original month target row NaN/no rebalance request and record both stage reasons. The seven mapped months are fixed above. Continue actual holdings/marks/cash/fees and all2512/1254formalreturn days;no zero-return,cash substitution,capital reset or source-readiness repair. Unknown or changed gap/date/age/value/hash/archive is fatal,not a broader standby.",
+    "source": "Reparse the exact previously acquired450ALFREDsnapshots/12batches/6probes/4primarydocuments and private fullquery matrix. Retain original2805NYSEcontext/225queries per series/131monthly-reference pairs,secondpreviousNYSEsnapshot,62calendar-day completed-month age and2014Jan1-2026Aug1observation bound,whilemarketasof/formalreturns stillendOct5. No newrequests,current-history fallback,lag-age relaxation,access bypass or invented first-of-month release.",
+    "execution": "Original monthly absolute requests and each freshUSD10000window-cost account. Keep5bpnext-openbase/20bpextrasessionstress/USD1order/fractionallong-onlycash-funded-v2/originalriskfree and complete10y5yreturns. Seed eachwindow from lastactuallyissuedcausal target. No leverage,options/futurestrades,dailyfloor,tradeband,fee rebate,syntheticcashinterest or parameter optimization.",
+    "selection": "Exactly2fixed housing stage hypotheses after162exposed-history configurations. Freeze complete source/code/spec/63horizon/strictdecline/halfscale/stages/pause before target generation,independently verify all450selections/131originalbudgets/complete124targets/8seeds,then actual registration and remote publication before funded/bt accounts. Preserve every outcome under strictSharpe>1/full-SPY/stress-base-SPY/DD<=15%onallfourpaths. Original76conditional inference and old22/36scopes do not cover these trials,new2SKEW or full164/unknown searches.",
+    "preservation": "No neweconomicdefinitions/marketassetadmission/W42fourplan/IJRPKWtwo-definitionquota/Oct17eligibility/frozenforwardmodel changes. Preserve alloldjournal/sourceversions/69imports/7profiles/3192controls/26oldselectionartifacts. Sourcegap handling is an explicit new strategy law,not modifying the published strictlyblocked source or old failures.",
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

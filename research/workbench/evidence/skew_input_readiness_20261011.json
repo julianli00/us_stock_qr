@@ -1,0 +1,115 @@
+{
+  "W42_or_frozen_forward_rules_changed": false,
+  "actual_monthly_skew_queries_available": 130,
+  "actual_primary_request_metadata": [
+    {
+      "finished_at": "2026-10-11T23:48:58.174126+00:00",
+      "path": "SKEW-dashboard.html",
+      "sha256": "d6a6f833d5067fa1b6e55e0a1fb92889e15c1844ccfbdbb346e6c0477ff973b9",
+      "url": "https://www.cboe.com/us/indices/dashboard/SKEW/"
+    },
+    {
+      "finished_at": "2026-10-11T23:48:59.322573+00:00",
+      "path": "SKEW.csv",
+      "sha256": "92a77fd9aa64c17dc7ff1aee75bb124f57f75744753ec48df0180e6ac329ee32",
+      "url": "https://cdn-api.cboe.com/api/global/us_indices/daily_prices/SKEW_History.csv"
+    },
+    {
+      "finished_at": "2026-10-11T23:49:01.048200+00:00",
+      "path": "SKEW-whitepaper.pdf",
+      "sha256": "a5ae9fac91f1209f744eb3c1db176367fe1cc4e05f15d8efdeee43fcb16c9b34",
+      "url": "https://cdn.cboe.com/resources/indices/documents/SKEWwhitepaperjan2011.pdf"
+    }
+  ],
+  "advertised_primary_resources_verified_without_remote_Javascript_execution": true,
+  "checked_at": "2026-10-11T23:56:47.600995+00:00",
+  "current76selection_scope_extended_to_future_trials": false,
+  "exact_live_launch_intraday_first_publication_or_full_methodology_chain_verified": false,
+  "finite_aligned_source_quote_observations_verified": 6412,
+  "full_monthly_query_readiness": false,
+  "full_source_readiness": false,
+  "independent_native_quote_maximum_error": 0.0,
+  "independent_verifier_sha256": "94f5da89dcaa96968adbfcb099e620bb7eee5728391c420f5119c2021ac8617e",
+  "investment_objective_verified": false,
+  "known_missing_skew_daily_dates": [
+    "2017-09-14",
+    "2018-12-03",
+    "2019-07-05",
+    "2024-11-29"
+  ],
+  "known_missing_skew_monthly_queries": [
+    "2024-11-29"
+  ],
+  "native_index_value_field": "SKEW",
+  "native_points_are_annualized_volatility_percentages": false,
+  "native_raw_quote_observations_verified": 18536,
+  "new_primary_document_requests": 2,
+  "new_quote_csv_requests": 1,
+  "new_registered_candidates": 0,
+  "new_registered_factor_definitions": 0,
+  "new_strategy_evaluations": 0,
+  "old_VIX_bytes_URL_and_acquisition_timestamp_changed": false,
+  "old_comparator_quote_requests": 0,
+  "order_authority": false,
+  "original_market_context_nyse_sessions": 2805,
+  "original_monthly_queries": 131,
+  "physical_crash_probability_or_option_replication_return_computed": false,
+  "policy": {
+    "path": "config/skew-inputs.json",
+    "sha256": "8d5c7394386644bbd1bbb30ffd8dcbb9c10138e3b3cd766a82d42e2f9c2d00a8"
+  },
+  "primary_index_mapping": {
+    "offset": 100,
+    "standardized_skewness_multiplier": -10
+  },
+  "primary_probability_examples_are_risk_adjusted_approximations": true,
+  "primary_underlying": "SPX_option_prices_30day_SP500_logreturn_skewness_payoff",
+  "primary_whitepaper_pages": 20,
+  "private_monthly_availability": {
+    "path": "data/skew-inputs-20261011/monthly-availability.csv",
+    "sha256": "9206a78cb67bff4a9f91b66e1e4d3111f72d5b1824f9986a3396d28d5b4539d4"
+  },
+  "private_source_context": {
+    "path": "data/skew-inputs-20261011/source-context.csv",
+    "sha256": "a54ecd1251cbc5cb2d4af3f851d2ae8a75ea876e092ba6aa7ff877e83cbabfb7"
+  },
+  "private_source_manifest": {
+    "path": "data/skew-inputs-20261011/manifest.json",
+    "sha256": "e919600330d0701ed0a9de56ac6337dcd57a79d91e2f31becb84daa7235d4ca8"
+  },
+  "root_reporting_boundary_test_cases_passed": 52,
+  "schema_version": 1,
+  "source_and_native_comparator_test_cases_passed": 54,
+  "source_availability_defaulted_to_safe_risk_state": false,
+  "source_context_nyse_sessions": 3208,
+  "source_gaps_filled_or_market_return_days_deleted": false,
+  "source_metadata": [
+    {
+      "acquired_at": "2026-10-11T23:48:59.322573+00:00",
+      "acquisition_date_limit": "2026-10-11",
+      "first_date": "1990-01-02",
+      "last_date": "2026-10-09",
+      "path": "data/skew-inputs-20261011/SKEW.csv",
+      "rows": 9245,
+      "series": "SKEW",
+      "sha256": "92a77fd9aa64c17dc7ff1aee75bb124f57f75744753ec48df0180e6ac329ee32",
+      "url": "https://cdn-api.cboe.com/api/global/us_indices/daily_prices/SKEW_History.csv"
+    },
+    {
+      "acquired_at": "2026-10-10T15:21:41.648491+00:00",
+      "acquisition_date_limit": "2026-10-10",
+      "first_date": "1990-01-02",
+      "last_date": "2026-10-09",
+      "path": "data/volatility-term-source-20261010/VIX.csv",
+      "rows": 9291,
+      "series": "VIX",
+      "sha256": "51ea1e59bfeaf400f6816300c39145df5e3fb437e7c60bdb8ca2178f8c96f436",
+      "url": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv"
+    }
+  ],
+  "source_validator_sha256": "2cb3bfdae50033c8e4d47e4687d22c15af08ba04839c6a6ed97f1a8bd8b54b41",
+  "status": "primary_definition_verified_daily_and_monthly_source_blocked",
+  "strategy_states_targets_or_returns_computed": false,
+  "typical100to150range_enforced_as_source_bounds": false,
+  "zero_third_moment_claimed_general_normality_theorem": false
+}

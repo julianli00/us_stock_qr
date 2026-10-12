@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "study_id": "diversified_sector_basket_sources_20261011",
+  "scope": "existing_registered_sector_prices_and_primary_issuer_identity",
+  "data_start": "2015-08-10",
+  "as_of": "2026-10-05",
+  "sector_symbols": ["XLB", "XLE", "XLF", "XLI", "XLK", "XLP", "XLU", "XLV", "XLY"],
+  "benchmarks": {
+    "XLB": "Materials Select Sector Index",
+    "XLE": "Energy Select Sector Index",
+    "XLF": "Financial Select Sector Index",
+    "XLI": "Industrial Select Sector Index",
+    "XLK": "Technology Select Sector Index",
+    "XLP": "Consumer Staples Select Sector Index",
+    "XLU": "Utilities Select Sector Index",
+    "XLV": "Health Care Select Sector Index",
+    "XLY": "Consumer Discretionary Select Sector Index"
+  },
+  "issuer_urls": {
+    "XLB": "https://www.ssga.com/us/en/individual/etfs/state-street-materials-select-sector-spdr-etf-xlb",
+    "XLE": "https://www.ssga.com/us/en/individual/etfs/state-street-energy-select-sector-spdr-etf-xle",
+    "XLF": "https://www.ssga.com/us/en/individual/etfs/state-street-financial-select-sector-spdr-etf-xlf",
+    "XLI": "https://www.ssga.com/us/en/individual/etfs/state-street-industrial-select-sector-spdr-etf-xli",
+    "XLK": "https://www.ssga.com/us/en/individual/etfs/state-street-technology-select-sector-spdr-etf-xlk",
+    "XLP": "https://www.ssga.com/us/en/individual/etfs/state-street-consumer-staples-select-sector-spdr-etf-xlp",
+    "XLU": "https://www.ssga.com/us/en/individual/etfs/state-street-utilities-select-sector-spdr-etf-xlu",
+    "XLV": "https://www.ssga.com/us/en/individual/etfs/state-street-health-care-select-sector-spdr-etf-xlv",
+    "XLY": "https://www.ssga.com/us/en/individual/etfs/state-street-consumer-discretionary-select-sector-spdr-etf-xly"
+  },
+  "original_registration": {
+    "path": "evidence/factor_round_20261007_registration.json",
+    "sha256": "1b6001095264367bf409dac1d6f32fa0668b2fc37ea38f8a48705785e09b7cde"
+  },
+  "original_policy": {
+    "path": "config/factor-research.json",
+    "sha256": "d02d0b085935abd93a9f7dc61a5bda8fd45d24630c1c26108851c179be30f76c"
+  },
+  "core_registration": {
+    "path": "evidence/factor_gold_risk_20261010_registration.json",
+    "sha256": "94d7e5130dc480ef858cf1a23bb9da5a1ff6f66825c60e9fe6144103616dee86"
+  },
+  "paper_doi": "10.1111/0022-1082.00146",
+  "source_contract": {
+    "use_existing_registered_raw_and_csv_cache": true,
+    "new_quote_requests": 0,
+    "raw_csv_parity_and_corporate_actions_required": true,
+    "complete_2805_post_inception_sessions_required": true,
+    "issuer_scoped_identity_and_advertised_pdf_required": true,
+    "full_historical_sector_definition_or_constituents_claimed": false,
+    "current_issuer_index_objective_is_full_historical_notional_proof": false,
+    "code_fingerprint_drift_is_not_ignored_for_old_strategy_replay": true,
+    "legacy_registration_or_source_hashes_rewritten": false,
+    "access_or_rate_limit_bypass": false
+  },
+  "proposed_future_construction": {
+    "candidate_count": 2,
+    "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+    "core_share_of_equity_bucket": 0.5,
+    "sector_selection": "Use the original9sector universe and prior252/21skip momentum,200daytrend,63dayinversevolatility,top3 and0.40standaloneNAVcap. Missing slots/cap residual remainactualBIL,not renormalized into survivingsectors.",
+    "pair": ["plain_sector_basket", "existing_dollar_positive_half_guard"],
+    "interpretation": "Industry momentum is another implementation of the existingmomentum family,not9newfactors or independentalpha. Underlying style/sector stockoverlap remains. This source study does not prepare/register/evaluate those portfolios or replace the originalW42plans."
+  },
+  "new_registered_candidates": 0,
+  "new_strategy_evaluations": 0,
+  "new_economic_factor_definitions": 0,
+  "portfolio_targets_or_returns_computed": false,
+  "existing_W42_queue_changed": false,
+  "order_authority": false,
+  "investment_objective_verified": false
+}

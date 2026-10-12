@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "study_id": "downside_risk_balance_20261011",
+  "data_scope": "factor_etf_portfolio",
+  "as_of": "2026-10-05",
+  "prior_evaluated_configurations": 110,
+  "new_configurations": 2,
+  "new_economic_factor_definitions": 0,
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "factor_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "growth_share_of_equity": 0.50,
+  "risk_sessions": 63,
+  "tail_probability": 0.05,
+  "equity_share_min": 0.30,
+  "equity_share_max": 0.70,
+  "cash_reserve": 0.02,
+  "candidates": [
+    {"id": "four_factor_growth_gold_semideviation", "risk_measure": "semideviation"},
+    {"id": "four_factor_growth_gold_expected_loss", "risk_measure": "expected_loss"}
+  ],
+  "methodology": {
+    "hypothesis": "The total-volatility growth/gold control barely passes five-year base Sharpe but treats positive and negative volatility alike. Compare two fixed downside-risk estimators without changing core composition,lookback,funding or investor gates.",
+    "core": "Identical halfQQQ/half equal-four-factor equity composition and actualGLD as the existing monthly control. Current factor families stay registered;QQQis market/growth beta,not a new independent factor.",
+    "semideviation": "On63completed sessions,subtract the frozen daily risk-free series from each sleeve's return and take the square root of the mean squared negative parts,dividing by all63observations rather than just losses.",
+    "expected_loss": "Use the negative empirical mean of the worst5%of63excess returns,including a fractionally weighted boundary observation so exactly5%probability mass is represented. Positive lower-tail means map to zero observed loss,not a claim of risk-free assets.",
+    "weights": "Balance equity and gold inversely to their marginal downside measures using the same30%-70%equity bounds. Both zero downside estimates fail explicitly;one zero estimate reaches the predetermined bound. These are risk-budget heuristics,not coherent joint-portfolio expected-shortfall optimization.",
+    "timing": "Completed month ends only;actual fund observations and known lagged risk-free series;next-open5bpbase and one-extra-session20bpstress,USD10,000fresh10y/5yaccounts,USD1orders,2%target idle cash. No daily portfolio insurance or volatility cap.",
+    "control": "The already completed four_factor_growth_gold_monthly_control is the original total-volatility comparison. Reuse its actual results;do not repeat it as a third new strategy or hide its failures.",
+    "selection": "Two fixed hypotheses after110exposed configurations. No risk-window/tail-probability/equity-share grid or post-outcome redefinition. Source cases with no negative samples are not proof of future safety. Original Sharpe/SPY/15%drawdown gates unchanged.",
+    "family_queue": "Only existing four economic families are used. Do not change Oct17eligibility,register queued IJR/PKW early or compute pending six-family performance.",
+    "forward": "Existing17source archive has noQQQand the separately registered rejected-macro forward model has no returns yet;neither constitutes forward evidence for these two new rules.",
+    "references": [
+      {"authors": "Sortino and Price", "year": 1994, "title": "Performance Measurement in a Downside Risk Framework", "doi": "10.3905/joi.3.3.59", "url": "https://doi.org/10.3905/joi.3.3.59"},
+      {"authors": "Acerbi and Tasche", "year": 2002, "title": "Expected Shortfall: A Natural Coherent Alternative to Value at Risk", "doi": "10.1111/1468-0300.00091", "url": "https://doi.org/10.1111/1468-0300.00091"}
+    ],
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

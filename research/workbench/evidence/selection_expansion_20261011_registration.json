@@ -1,0 +1,177 @@
+{
+  "actual_registration": "data/selection-expansion-20261011/registration.json",
+  "actual_registration_sha256": "e4bd87171cf2fa4728ba018bfddd28aec72ec9a2bfca2c0de85213b0a1ba71f7",
+  "all_old_strategy_and_selection_results_preserved": true,
+  "all_seven_existing_forward_profiles_unchanged": true,
+  "auditor_sha256": "164931da69c6ebd2322fa496549c47baf1de185b427245e3ab041a7019d272fe",
+  "candidate_history_already_exposed": true,
+  "event_chain_sha256": "0650f1dbc0b27754a3aadbbea95682d56b605fc3561968f8e7247f320830688f",
+  "included_candidate_ids": [
+    "four_factor_gold_risk_balance",
+    "four_factor_gold_daily_vol12",
+    "quality_implementation_gold_monthly",
+    "quality_implementation_gold_daily_vol12",
+    "four_factor_static70_gold30",
+    "four_factor_causal_mean_variance",
+    "factor_gold_term_half_risk",
+    "factor_gold_term_equity_exit",
+    "macro_real_yield_factor_tilt",
+    "macro_real_yield_tilt_curve_defense",
+    "four_factor_defense_momentum",
+    "four_factor_defense_diversified",
+    "four_factor_daily_target_control",
+    "four_factor_growth_satellite50",
+    "conditional_price_factor_model_v2",
+    "conditional_macro_option_factor_model_v2",
+    "four_factor_total_momentum_tilt",
+    "four_factor_residual_momentum_tilt",
+    "four_factor_gold_joint_trend_guard",
+    "four_factor_gold_component_trend_guard",
+    "four_factor_pdp_momentum_implementation",
+    "four_factor_dual_momentum_implementation",
+    "credit_baa_level_guard",
+    "credit_baa_compression_recovery",
+    "four_factor_growth_gold_monthly_control",
+    "four_factor_growth_gold_ratchet_protection",
+    "four_factor_growth_gold_semideviation",
+    "four_factor_growth_gold_expected_loss",
+    "four_factor_technology_sector50",
+    "four_factor_semiconductor_sector50",
+    "semiconductor_dollar_half_guard",
+    "semiconductor_dollar_real_yield_half_guard",
+    "semiconductor_dollar_nfci_tight_guard",
+    "semiconductor_dollar_nfci_deterioration_guard",
+    "semiconductor_term_half_guard",
+    "semiconductor_term_or_dollar_half_guard"
+  ],
+  "included_comparisons_per_horizon": 108,
+  "investment_objective_verified": false,
+  "joint_statistical_outcomes_computed": false,
+  "new_candidates_or_reviews": 0,
+  "new_economic_factor_definitions": 0,
+  "new_strategy_evaluations": 0,
+  "old_selection_artifacts_sha256": {
+    "original_policy": "28b5808ea3865206f86857b57927e76183d73a5620d3f8e2405db9ae8d81847a",
+    "original_registration": "19f853494cff5fc142a267f8c03ad0bd28db7ef76358d3f84151a2c097a1d834",
+    "original_reproducibility": "7e4c4f164a7865ea7e60378045412e8a5961a54e95e8de5c1368041ace9b7dbe",
+    "original_results": "855c3c5953e682161012d165a7b0333912811d023f921db63209182ac18008ad"
+  },
+  "order_authority": false,
+  "original_prefix_candidate_ids": [
+    "four_factor_gold_risk_balance",
+    "four_factor_gold_daily_vol12",
+    "quality_implementation_gold_monthly",
+    "quality_implementation_gold_daily_vol12",
+    "four_factor_static70_gold30",
+    "four_factor_causal_mean_variance",
+    "factor_gold_term_half_risk",
+    "factor_gold_term_equity_exit",
+    "macro_real_yield_factor_tilt",
+    "macro_real_yield_tilt_curve_defense",
+    "four_factor_defense_momentum",
+    "four_factor_defense_diversified",
+    "four_factor_daily_target_control",
+    "four_factor_growth_satellite50",
+    "conditional_price_factor_model_v2",
+    "conditional_macro_option_factor_model_v2",
+    "four_factor_total_momentum_tilt",
+    "four_factor_residual_momentum_tilt",
+    "four_factor_gold_joint_trend_guard",
+    "four_factor_gold_component_trend_guard",
+    "four_factor_pdp_momentum_implementation",
+    "four_factor_dual_momentum_implementation"
+  ],
+  "policy": {
+    "annualization_sessions": 252,
+    "as_of": "2026-10-05",
+    "audit_id": "recurring_selection_expansion_20261011",
+    "block_sessions": 21,
+    "bootstrap_samples": 4000,
+    "capital_usd": 10000.0,
+    "change_research_qualification_policy": false,
+    "cost_comparisons": [
+      {
+        "spy_scenario": "base",
+        "strategy_scenario": "base"
+      },
+      {
+        "spy_scenario": "stress",
+        "strategy_scenario": "stress"
+      },
+      {
+        "spy_scenario": "base",
+        "strategy_scenario": "stress"
+      }
+    ],
+    "earlier_configurations_not_in_joint_inference": 84,
+    "familywise_alpha": 0.05,
+    "horizons_years": [
+      10,
+      5
+    ],
+    "included_candidate_count": 36,
+    "independent_forward_validation": false,
+    "methodology": {
+      "authority": "Read-only;no new economic factor,candidate,review,research-engine migration,champion promotion,forward-profile replacement or order. Neither a favourable p-value nor pipeline completion overrides the unchanged Sharpe/SPY/drawdown gates or absent future observations.",
+      "horizons": "Keep the overlapping10y/5ywindows and Bonferroni half-alpha allocation without assuming horizon independence. Exactly108candidate/scenario comparisons per horizon. A p-value or log-growth confidence bound is not a Sharpe or drawdown qualification test.",
+      "legacy_replay": "Separately reproduce the original66comparison-per-horizon prefix with the same inherited statistic/settings and actual source accounts. Keep the old policy,code,registration,results and reproducibility evidence byte-identical. The current expanded result is a new dated diagnostic,not a silent rewrite of the earlier result.",
+      "limits": "Exposed historical strategies,nonstationarity,unknown research choices,current vendor quote revisions and the earlier84trials prevent a claim of complete120trial selection-adjusted alpha. Historical source reviews retain their original accounting engines. This is conditional descriptive inference,not an independent holdout,future-profit probability or proof no successful strategy can exist.",
+      "scope": "Expand the previously frozen22completed-review diagnostic to exactly the current36audited reviews. Include all14subsequent outcomes,including failures,without choosing or excluding candidates by the new p-values. The earlier84configuration search and unrecorded research decisions remain explicitly outside inference.",
+      "source": "Read each original four-path bundle by its exact review evidence digest. Revalidate original strategy/SPY/independent/risk-free files and reviewed metrics using the unchanged existing source reader. Use only original5bpbase and20bpstress accounts and the existing stress-versus-base-SPYcomparison;do not create a third commission rate or new strategy backtest.",
+      "statistic": "Reuse the unchanged joint_maximum function from selection_validation.py:positive-part maximum mean daily log wealth-growth advantage,mean-centered least-favourable null,4000synchronous21-session circular-block resamples and the exact inherited seed. Shared resampled dates preserve dependence across candidates,SPYand cost scenarios.",
+      "verification": "Require complete input matrices,exact cohort/source hashes and unchanged live research state. Reproduce the expanded calculation and verify with independent direct-index block resampling. Do not vary sample count,seed,block,statistic,alpha or cohort to obtain significance."
+    },
+    "order_authority": false,
+    "original_included_candidate_count": 22,
+    "original_policy": {
+      "path": "config/selection-validation.json",
+      "sha256": "28b5808ea3865206f86857b57927e76183d73a5620d3f8e2405db9ae8d81847a"
+    },
+    "original_registration": {
+      "path": "evidence/selection_validation_20261011_registration.json",
+      "sha256": "19f853494cff5fc142a267f8c03ad0bd28db7ef76358d3f84151a2c097a1d834"
+    },
+    "original_reproducibility": {
+      "path": "evidence/selection_validation_20261011_reproducibility.json",
+      "sha256": "7e4c4f164a7865ea7e60378045412e8a5961a54e95e8de5c1368041ace9b7dbe"
+    },
+    "original_results": {
+      "path": "evidence/selection_validation_20261011_results.json",
+      "sha256": "855c3c5953e682161012d165a7b0333912811d023f921db63209182ac18008ad"
+    },
+    "schema_version": 1,
+    "scope": "completed_recurring_reviews_expanded_only",
+    "seed": 20261011,
+    "source_bound_audit": {
+      "path": "evidence/research_program_source_bound_audit_v14.json",
+      "sha256": "3458a1aa3cc32919697035b92cd229f3c6e949346f901e6091fcb9f1602cd189"
+    },
+    "source_snapshot": {
+      "path": "evidence/research_program_2026-W41_results_v40.json",
+      "sha256": "d9447ff4f0b0f21c3a14a7d4077e82f4ada3942992583ae1e500484cd47c2d00"
+    },
+    "total_disclosed_configurations": 120
+  },
+  "policy_sha256": "bed8109e00a17cbaef1f0eb19586c4b00686228a00c899e072b1eedb8c612443",
+  "preserved_prospective_registration_and_head_hashes": {
+    "data/prospective-dollar-accounts-v1/head.json": "8a97dd04af94e3b35490e74ee12441e7abacb8a5a6860725714f16f0d2353bdd",
+    "data/prospective-dollar-accounts-v1/registration.json": "b6c9247d3cccb6d8b5ccc34d77cefbce62c44cc55f28b265eaac6bd3ce8af26b",
+    "data/prospective-dollar-inputs-v1/head.json": "9a4eb196c6f5e4e61be2e22306c23eeb84db67c68c030a676faf8fefd02c0442",
+    "data/prospective-dollar-inputs-v1/registration.json": "f913627fa54faf475a303a0da7326db4e7c4b7676279dbbfad0fec83d708ea23",
+    "data/prospective-dollar-targets-v1/head.json": "57a5a6e0a49471451bcc2289776537af91d66ec309e2c227cf8843b5cf0db9e7",
+    "data/prospective-dollar-targets-v1/registration.json": "3e5d01e56b22fc8d60cf363b7b4f6d8bd97404704c566801201b61a557c8449e",
+    "data/prospective-factor-inputs-v2/head.json": "ffa715f35851df18a931753c0af8ee6d613d05c066e1c3abb8d131d31d8daa16",
+    "data/prospective-factor-inputs-v2/registration.json": "11c9cd6659c3efe58e8334d363d2ab1b4bc2b8c2461a9d11f29b5769de0353eb",
+    "data/prospective-market-v1/head.json": "6c3be7f4e6c69d95c56a9bf5102c1f60637e82cbe32ed6c91ca729e67271c87c",
+    "data/prospective-market-v1/registration.json": "91f33b965d5a36205c79e16a6da0aeee6c00844748909cf452324477bd7fccf5",
+    "data/prospective-research-accounts-v1/head.json": "8a97dd04af94e3b35490e74ee12441e7abacb8a5a6860725714f16f0d2353bdd",
+    "data/prospective-research-accounts-v1/registration.json": "f2f5d822db1b875c15a5d05861e9ecdc10b63d62748c729ab6d2b992930b1d1f",
+    "data/prospective-target-observations-v1/head.json": "0b21433518e75b222ed61e63eafb8819468b9422c7163bc85da17dd64d6473e3",
+    "data/prospective-target-observations-v1/registration.json": "2c3c5a50fb7f2e870089429446c1616b9eee76bee34d0e4057439d7cb28da44d"
+  },
+  "program_engine_sha256": "0a36a3033ccffbbf2d8474b4e73ff5ddaad6d3c4b5922600c0eb8541ed59f9ab",
+  "recorded_at": "2026-10-11T04:58:09.715776+00:00",
+  "registered_at": "2026-10-11T04:58:08.244491+00:00",
+  "schema_version": 1,
+  "settings_frozen_before_joint_resampling": true
+}

@@ -1,0 +1,284 @@
+{
+  "all_original_reviews_preserved": true,
+  "availability_audit": {
+    "all_available_no_later_than_decision": true,
+    "availability_sha256": "d91c8c383fd2f7b62de4c1ee4b428dbfdd095bbbd67ef25d0a5e8e21550b6ff2",
+    "carried_after_availability_sessions": 22,
+    "current_historical_download_not_vintage_proof": true,
+    "decision_sessions": 2805,
+    "maximum_observation_age_days": 5,
+    "old_forward_archive_includes_this_series": false,
+    "raw_or_aligned_credit_values_published": false
+  },
+  "candidates": [
+    {
+      "registration": {
+        "candidate_id": "credit_baa_level_guard",
+        "data_scope": "factor_etf_portfolio",
+        "families": [
+          "earnings_quality",
+          "low_volatility",
+          "momentum",
+          "value"
+        ],
+        "order_authority": false,
+        "readiness_sha256": "952f67b1a508d8499f024c54ee7edadfe9f938937163c2c4d9b7d06bd2a1d43d",
+        "registered_at": "2026-10-10T20:43:06.388541+00:00",
+        "spec_sha256": "085bb2c7c3fcad8a6ed4f68a654dab11314f1626d1078ea1e020aa735476ce19"
+      },
+      "spec": {
+        "asset_leverage": {
+          "BIL": 1.0,
+          "GLD": 1.0,
+          "IEF": 1.0,
+          "MTUM": 1.0,
+          "QUAL": 1.0,
+          "SPY": 1.0,
+          "USMV": 1.0,
+          "VLUE": 1.0
+        },
+        "configuration": {
+          "allow_compression_recovery": false,
+          "id": "credit_baa_level_guard"
+        },
+        "data_scope": "factor_etf_portfolio",
+        "evaluation_as_of": "2026-10-05",
+        "factor_ids": [
+          "price_momentum",
+          "value_exposure",
+          "quality_exposure",
+          "low_volatility_exposure"
+        ],
+        "frozen_files": {
+          "config/adaptive-factor-allocation.json": "42486cf353c72a1e25485796edb26b4836e4247688793eb1eda24cd90584c020",
+          "config/credit-factor-guard.json": "e4f5e9302127b91d86ccee9589d68b5c0e174348a2faeb2d26e97f092a949ca0",
+          "data/credit-spread-source-20261011/BAA10Y-source.html": "07560699e16839917c772f34121205aaef4272b0b315ccf090db7c52c4e94d47",
+          "data/credit-spread-source-20261011/BAA10Y.csv": "0e58e2968fa38443b37c050abf302757154a3c33c0c44c0e825d9e07870df2f9",
+          "data/credit-spread-source-20261011/ICE-source-restriction.html": "eeba8012040cf411624e6e6e78b76b7f0e7b60aa0b879443524fe8e9a8393155",
+          "data/credit-spread-source-20261011/acquisition.json": "197a5899fc49e177a50e0a865e6c3b634319710b13bd3f06eac6f51ff6508116",
+          "src/us_quant/adaptive_factor_allocation.py": "11ccc7f167983166d34f787d81e12ed066b565a06385b9c0edb8f2f536cf9d2e",
+          "src/us_quant/credit_factor_guard.py": "4f5b971fa637ed43d79eb6a5a115add2dd7c0b3baf257f0a690c57449f36d8cc",
+          "src/us_quant/macro_factor_tilt.py": "40a2fec8b2502bd8cba21a1ac8b16397d98ed77d8c2cd304ba814c20eaf623b0"
+        },
+        "history_status": "exposed_history_not_independent_holdout",
+        "id": "credit_baa_level_guard",
+        "leveraged_products_allowed": false,
+        "market": {
+          "close": {
+            "path": "data/factor-gold-risk-20261010/market-close.csv",
+            "sha256": "b098f783bbf7a4ca56520e11c6e13edbb0eb2673ed7aaec02b89981ff74fabce"
+          },
+          "open": {
+            "path": "data/factor-gold-risk-20261010/market-open.csv",
+            "sha256": "dc2e1cf8c83c8731a03452eec60ad3cc036b8534cfed94b054c8f883b459273f"
+          },
+          "raw_close": {
+            "path": "data/factor-gold-risk-20261010/market-raw_close.csv",
+            "sha256": "82eae7514bf8de48bfe07cc72331ed758a27f561180ff5ad44d5d70e0dca71f9"
+          },
+          "risk_free": {
+            "path": "data/factor-gold-risk-20261010/market-risk_free.csv",
+            "sha256": "3b59869f597ac9d2573ffca1616938da4c2df0da24bd38799ce3e39b1f0509cc"
+          },
+          "volume": {
+            "path": "data/factor-gold-risk-20261010/market-volume.csv",
+            "sha256": "7ab6fbbe413fee994f65e27ebfbf15e28aa18055acdc12bd527918d5bbe60830"
+          }
+        },
+        "order_authority": false
+      }
+    },
+    {
+      "registration": {
+        "candidate_id": "credit_baa_compression_recovery",
+        "data_scope": "factor_etf_portfolio",
+        "families": [
+          "earnings_quality",
+          "low_volatility",
+          "momentum",
+          "value"
+        ],
+        "order_authority": false,
+        "readiness_sha256": "952f67b1a508d8499f024c54ee7edadfe9f938937163c2c4d9b7d06bd2a1d43d",
+        "registered_at": "2026-10-10T20:43:07.514999+00:00",
+        "spec_sha256": "86b4a6d176cb4421424d8aa50d59aef96e111a3aef7068362a8055d9648f1a46"
+      },
+      "spec": {
+        "asset_leverage": {
+          "BIL": 1.0,
+          "GLD": 1.0,
+          "IEF": 1.0,
+          "MTUM": 1.0,
+          "QUAL": 1.0,
+          "SPY": 1.0,
+          "USMV": 1.0,
+          "VLUE": 1.0
+        },
+        "configuration": {
+          "allow_compression_recovery": true,
+          "id": "credit_baa_compression_recovery"
+        },
+        "data_scope": "factor_etf_portfolio",
+        "evaluation_as_of": "2026-10-05",
+        "factor_ids": [
+          "price_momentum",
+          "value_exposure",
+          "quality_exposure",
+          "low_volatility_exposure"
+        ],
+        "frozen_files": {
+          "config/adaptive-factor-allocation.json": "42486cf353c72a1e25485796edb26b4836e4247688793eb1eda24cd90584c020",
+          "config/credit-factor-guard.json": "e4f5e9302127b91d86ccee9589d68b5c0e174348a2faeb2d26e97f092a949ca0",
+          "data/credit-spread-source-20261011/BAA10Y-source.html": "07560699e16839917c772f34121205aaef4272b0b315ccf090db7c52c4e94d47",
+          "data/credit-spread-source-20261011/BAA10Y.csv": "0e58e2968fa38443b37c050abf302757154a3c33c0c44c0e825d9e07870df2f9",
+          "data/credit-spread-source-20261011/ICE-source-restriction.html": "eeba8012040cf411624e6e6e78b76b7f0e7b60aa0b879443524fe8e9a8393155",
+          "data/credit-spread-source-20261011/acquisition.json": "197a5899fc49e177a50e0a865e6c3b634319710b13bd3f06eac6f51ff6508116",
+          "src/us_quant/adaptive_factor_allocation.py": "11ccc7f167983166d34f787d81e12ed066b565a06385b9c0edb8f2f536cf9d2e",
+          "src/us_quant/credit_factor_guard.py": "4f5b971fa637ed43d79eb6a5a115add2dd7c0b3baf257f0a690c57449f36d8cc",
+          "src/us_quant/macro_factor_tilt.py": "40a2fec8b2502bd8cba21a1ac8b16397d98ed77d8c2cd304ba814c20eaf623b0"
+        },
+        "history_status": "exposed_history_not_independent_holdout",
+        "id": "credit_baa_compression_recovery",
+        "leveraged_products_allowed": false,
+        "market": {
+          "close": {
+            "path": "data/factor-gold-risk-20261010/market-close.csv",
+            "sha256": "b098f783bbf7a4ca56520e11c6e13edbb0eb2673ed7aaec02b89981ff74fabce"
+          },
+          "open": {
+            "path": "data/factor-gold-risk-20261010/market-open.csv",
+            "sha256": "dc2e1cf8c83c8731a03452eec60ad3cc036b8534cfed94b054c8f883b459273f"
+          },
+          "raw_close": {
+            "path": "data/factor-gold-risk-20261010/market-raw_close.csv",
+            "sha256": "82eae7514bf8de48bfe07cc72331ed758a27f561180ff5ad44d5d70e0dca71f9"
+          },
+          "risk_free": {
+            "path": "data/factor-gold-risk-20261010/market-risk_free.csv",
+            "sha256": "3b59869f597ac9d2573ffca1616938da4c2df0da24bd38799ce3e39b1f0509cc"
+          },
+          "volume": {
+            "path": "data/factor-gold-risk-20261010/market-volume.csv",
+            "sha256": "7ab6fbbe413fee994f65e27ebfbf15e28aa18055acdc12bd527918d5bbe60830"
+          }
+        },
+        "order_authority": false
+      }
+    }
+  ],
+  "earlier22candidate_selection_diagnostic_not_applied_to_new_candidates": true,
+  "engine_sha256": "15d0135d2fb187340a0f612d0c4169c6e4896c214f891c421e932487c22a5563",
+  "migration_snapshot": "evidence/research_program_2026-W41_credit_v25.json",
+  "new_economic_factor_definitions": 0,
+  "readiness": {
+    "capabilities": {
+      "actual_fund_history": {
+        "evidence_path": "data/multifactor-stability-20261010/manifest.json",
+        "evidence_sha256": "ea128cfe0fa71db93080234787f0779f0236b88466ab01f8e78336bc03652aa5",
+        "verified": true
+      },
+      "factor_mandates": {
+        "evidence_path": "config/multifactor-stability.json",
+        "evidence_sha256": "197892d844fd749c1ef06cda8b1eeb025b6edfe546e42f020dc721bc09209715",
+        "verified": true
+      },
+      "post_inception_and_actions": {
+        "evidence_path": "data/multifactor-stability-20261010/manifest.json",
+        "evidence_sha256": "ea128cfe0fa71db93080234787f0779f0236b88466ab01f8e78336bc03652aa5",
+        "verified": true
+      },
+      "unleveraged_fund_identity": {
+        "evidence_path": "data/multifactor-stability-20261010/manifest.json",
+        "evidence_sha256": "ea128cfe0fa71db93080234787f0779f0236b88466ab01f8e78336bc03652aa5",
+        "verified": true
+      }
+    },
+    "checked_at": "2026-10-10T20:41:04.247529+00:00",
+    "data_scope": "factor_etf_portfolio",
+    "price_as_of": "2026-10-05",
+    "revalidation_not_new_market_observation": true,
+    "schema_version": 1,
+    "stock_data_still_blocked": true,
+    "verified_etf_source": {
+      "adapter": "frozen_multifactor_etf_20261010",
+      "base_manifest": "data/factor-round-20261007/base/manifest.json",
+      "base_manifest_sha256": "8cc85f89a05c0324571abc1cb44d8a1d7dfd76d55271f34ad4da973e5c0f9f6d",
+      "factor_manifest": "data/multifactor-stability-20261010/manifest.json",
+      "factor_manifest_sha256": "ea128cfe0fa71db93080234787f0779f0236b88466ab01f8e78336bc03652aa5",
+      "policy": "config/multifactor-stability.json",
+      "policy_sha256": "197892d844fd749c1ef06cda8b1eeb025b6edfe546e42f020dc721bc09209715",
+      "registration": "evidence/multifactor_stability_20261010_registration_v2.json",
+      "registration_sha256": "721932a098fb8061d58e8c402bb74ade08512007c13f17be91512c2b4f940d8e"
+    }
+  },
+  "registered_before_outcomes": true,
+  "source_audit": {
+    "path": "evidence/credit_factor_guard_source_20261011.json",
+    "sha256": "344daaed5d40da6dce4975cbf11b1ad452c403e16b61addce240e4e2fe414ab4"
+  },
+  "source_code_commit": "d0c52d66",
+  "strategy_outcomes_computed": false,
+  "study": {
+    "as_of": "2026-10-05",
+    "candidates": [
+      {
+        "allow_compression_recovery": false,
+        "id": "credit_baa_level_guard"
+      },
+      {
+        "allow_compression_recovery": true,
+        "id": "credit_baa_compression_recovery"
+      }
+    ],
+    "cash_reserve": 0.02,
+    "credit_change_sessions": 21,
+    "credit_level_sessions": 252,
+    "credit_series": "BAA10Y",
+    "data_scope": "factor_etf_portfolio",
+    "factor_ids": [
+      "price_momentum",
+      "value_exposure",
+      "quality_exposure",
+      "low_volatility_exposure"
+    ],
+    "factor_symbols": [
+      "MTUM",
+      "VLUE",
+      "QUAL",
+      "USMV"
+    ],
+    "maximum_observation_age_days": 7,
+    "methodology": {
+      "automatic_live_deployment": false,
+      "availability": "Reuse the unchanged align_observations helper: each raw observation becomes usable at the close of the secondNYSEsession strictly after its date; carry only the last actual observation while it is at most7calendar days old. No unlimited forward-fill or same-date macro use.",
+      "base": "Reuse the existing frozen static70%equal-four-factor equity/30%GLD target for98%invested capital. Use the same253-observation prehistory and monthly decisions as the evaluated control.",
+      "execution": "Same formal10y/5yaccounts,USD10,000fresh capital,2%target idle cash,USD1orders,next-open5bpbase and one-extra-session20bpstress. Versioned cash-funded accounting and independent bt; original Sharpe/SPY/15%drawdown goals unchanged.",
+      "existing_forward_archive_includes_BAA10Y": false,
+      "hypothesis": "Credit-market risk may add information not represented by a moving-average price gate. Compare a fixed level-only defense with a fixed early-recovery rule; do not fit thresholds or tune the earlier rejected strategies.",
+      "interpretation": "BAA10Y compares20-plus-year corporate bonds with10-year Treasuries and includes duration,liquidity and quality effects. It is not a pure default-risk or high-yield OAS factor. This is a risk-input experiment on four existing economic families,not a new independent alpha source.",
+      "level_condition": "At a completed month end, risk-on means the latest safely available BAA10Y is strictly below the median of its last252alignedNYSE-session values,including that available value. Equality is risk-off.",
+      "order_authority": false,
+      "recovery_condition": "Only the second candidate also permits risk-on when the safely available BAA10Y is strictly below its value21NYSE sessions ago,even if the level remains elevated. This is a predetermined monthly compression rule,not a fitted recovery threshold.",
+      "risk_off": "Remove the original70%equity sleeve and hold its weight in actual BIL; retain the original30%gold sleeve without increasing it. When equity is enabled,all four existing factor funds receive identical original family budgets.",
+      "selection": "Proposed after106completed configurations on exposed history. Only these two fixed hypotheses; no parameter grid,retrospective date exception or independent-holdout claim. The prior22candidate statistical diagnostic does not cover these new candidates.",
+      "vintage_limits": "A current FRED historical download is not ALFRED vintage proof or exact original intraday publication timestamps. The explicit two-session lag is conservative but cannot establish that no historical value was revised."
+    },
+    "new_configurations": 2,
+    "new_economic_factor_definitions": 0,
+    "original_control_candidate": "four_factor_static70_gold30",
+    "original_control_policy": "config/adaptive-factor-allocation.json",
+    "prior_evaluated_configurations": 106,
+    "publication_delay_sessions": 2,
+    "schema_version": 1,
+    "source": {
+      "definition_url": "https://fred.stlouisfed.org/series/BAA10Y",
+      "high_yield_access_limit": "The originally considered ICE high-yield OAS has only3years on FRED beginningApril2026. Do not bypass the restriction,use unauthorized mirrors or shorten formal evaluation windows.",
+      "license": "Proprietary underlying data. Internal research only; do not publish or redistribute the raw observations,aligned values or rolling credit features.",
+      "meaning": "Moody's seasoned Baa corporate bond yield minus10-year Treasury yield,percentage points. Long-maturity investment-grade credit proxy,not option-adjusted high-yield spread.",
+      "rejected_high_yield_source_url": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
+      "source_change": "FRED notes that the Treasury input changed to direct US Treasury data beginning2019-06-21; retain this historical provider-definition caveat.",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=BAA10Y&cosd=2014-01-01&coed=2026-10-05"
+    },
+    "study_id": "credit_factor_guard_20261011"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "study_id": "financial_conditions_guard_20261011",
+  "data_scope": "factor_etf_portfolio",
+  "data_start": "2015-08-10",
+  "as_of": "2026-10-05",
+  "prior_evaluated_configurations": 116,
+  "new_configurations": 2,
+  "new_economic_factor_definitions": 0,
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "factor_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "original_control_policy": "config/sector-growth-balance.json",
+  "original_control_candidate": "four_factor_semiconductor_sector50",
+  "dollar_source_policy": "config/dollar-risk-guard.json",
+  "comparison_candidate": "semiconductor_dollar_half_guard",
+  "financial_conditions_series": "NFCI",
+  "vintage_cutoff": "previous_nyse_session",
+  "observation_source_start": "2014-01-01",
+  "observation_source_end": "2026-10-02",
+  "maximum_observation_age_days": 14,
+  "stale_input_behavior": "pause_rebalance_and_record_gap",
+  "data_only_revision": {
+    "original_unregistered_plan": "data/financial-conditions-vintages-20261011/availability-rejected-policy-v1.json",
+    "original_failure": "data/financial-conditions-vintages-20261011/availability-failure-v1.json",
+    "source_age_limit_relaxed": false,
+    "formal_return_windows_changed": false,
+    "strategy_outcomes_computed_before_revision": false
+  },
+  "risk_change_sessions": 63,
+  "tight_conditions_threshold": 0.0,
+  "risk_off_investment_scale": 0.50,
+  "cash_reserve": 0.02,
+  "public_form": {
+    "url": "https://alfred.stlouisfed.org/series/downloaddata?seid=NFCI",
+    "method": "POST",
+    "units": "lin",
+    "file_type": "2",
+    "file_format": "csv",
+    "maximum_entered_dates_characters": 500,
+    "maximum_dates_per_request": 40
+  },
+  "candidates": [
+    {"id": "semiconductor_dollar_nfci_tight_guard", "confirmation": "tighter_than_average"},
+    {"id": "semiconductor_dollar_nfci_deterioration_guard", "confirmation": "increasing_as_published_conditions"}
+  ],
+  "methodology": {
+    "hypothesis": "Dollar appreciation alone can occur during healthy U.S. growth as well as funding stress. Test whether historically available cross-market financial conditions can distinguish these states without tuning the original sector allocation or reduction scale.",
+    "baseline": "Keep the original four-family/SOXX/gold monthly target helper,half-equity sector share,equal four-family remainder,63-session sleeve volatility,30%-70%equity bounds and98%target investment. Dollar risk inputs remain the actual frozen H10vintages,including source revisions,date conflicts and the2019methodology transition.",
+    "rules": "At each existing completed month-end,the first candidate halves all non-BILoriginal targets only when the published broad dollar increased over63sessions AND NFCIis strictly above its source-defined zero-average threshold. The second halves only when the dollar increased AND the latest as-published NFCIis strictly above the separately archived NFCIavailable63NYSEsessions earlier. Equality does not trigger. Removed49%of capital goes to actual BIL;otherwise the original target is unchanged.",
+    "availability": "For both the current and63-session reference query,use the public ALFREDsnapshot as of the immediately previousNYSEsession. This is a conservative dated-information cutoff,not a claim to authenticate first-publication times. Primary ChicagoFeddocuments state weeklyWednesday08:30ETrelease,shiftedThursdaywhen an earlier-weekfederalholidayintervenes. Do not substitute CentralTimefrom search summaries or assume every release is a Wednesday.",
+    "source": "Submit only the actual advertised public ALFREDform,using all-observations-by-vintage output and plain index units. Each requested vintage must appear in both the actual archive READMEand its CSVcolumn. Respect the500-character entered-date limit with at most40dates/request. Validate weeklyFridayobservation dates,actual missing future periods,complete requested coverage and bounded14-dayobservation age. No APIkey,account creation,credential acquisition or access-gate bypass.",
+    "frequency_boundary": "The official weeklyNFCIobservation endpoint is2026-10-02. This is not a change to the original dailyETFreturn cutoff2026-10-05 or10y/5ywindows. The failed first form request using the later dailydate is retained as source-validation history,not a strategy failure or reason to shorten windows.",
+    "known_data_gap": "The public archived NFCIqueries2022-12-29and2022-12-30contain only the2022-12-09observation,aged20and21days. Preserve the failed strict-coverage plan and do not relax14days or insert later revisions. Before any strategy outcome,explicitly register standby for a monthly decision whose required NFCIreading is stale:leave its full target row empty,record the candidate/date/source reason,and retain actual existing holdings without a new rebalance. Mark-to-market,fees and every actual return session remain in accounting. Tightness requires the current reading;deterioration requires both current and63-session reference readings. Unknown hashes,malformed data or missing archive batches still stop the study rather than silently return a safe state.",
+    "revisions": "NFCIcan change with incoming data,monthly/quarterly revisions and estimated indicator weights. Use the separately dated historical snapshots at both query points,not the current vintage's revised past values. A change between as-published readings can include revisions and changing weights,not only an economic shock. Preserve native early2-decimal and later3-decimal publication precision;do not fabricate decimals or interpolate.",
+    "interpretation": "NFCIis a financial-risk information input,not a traded index,a new economic alpha-family definition or proof of independent factor returns. Its leverage measures describe the financial system and do not authorize leverage in this portfolio. Current issuer methods and ALFREDmetadata are not a full authenticated historical methodology archive.",
+    "selection": "Exactly two fixed confirmations after116complete exposed-history configurations. Register actual source/code/specifications and publish receipts before outcomes.63sessions,zero tightness threshold and50%scale are inherited or source-defined,not optimized to hit15%drawdown. Report both outcomes and no post-result threshold,window,sector-share or scale grid.",
+    "attribution": "Compare each candidate with the already reviewed dollar-only and unmodifiedSOXXcore using identical windows and costs. Preregister eight additional constant-scale controls:for each candidate/horizon,take the full-return-window mean of its seeded,forward-filled1.0or0.5monthly risk scale and apply it to the original targets with the same candidate-specific source-pause dates. These are hindsight exposure attribution,not new registered strategies,matched realized risk or independent holdouts.",
+    "execution": "FreshUSD10000accounts,2%target idle cash,USD1/order,5bpnext-openbase and20bpextra-sessionstress,fractional long-only cash-funded units. Require the existing fundedv2 and independentbt,source-regenerated full targets and frozen risk-free values. StrictSharpe>1,drawdown<=15%,same-windowSPYand stressed-strategy/base-SPYcomparisons must all pass every original horizon/scenario.",
+    "catalog_and_forward": "Six registered definitions/five families and queued IJR/PKW/six-family plans retain real2026-10-17eligibility. Preserve all116old results,terminal failures and both registered macro/dollar forward experiments. A better historical result cannot replace their frozen targets,archives or accounts. No prospectiveNFCIresult or live deployment is claimed.",
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

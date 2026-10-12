@@ -1,0 +1,30 @@
+{
+  "download_method": "curl_with_existing_network_configuration",
+  "prior_requests_transport_errors_retained": true,
+  "sources": [
+    {
+      "first_date": "2015-01-02",
+      "last_date": "2026-10-05",
+      "missing_observations": 126,
+      "path": "T10Y3M-curl-response.csv",
+      "retrieved_at": "2026-10-10T15:50:00.138380+00:00",
+      "rows": 3067,
+      "series": "T10Y3M",
+      "sha256": "97d5e143555d1a06289ece3608dd8548f1530a82905b284c6485d327c83ba9dc",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=T10Y3M&cosd=2015-01-01&coed=2026-10-05"
+    },
+    {
+      "first_date": "2015-01-02",
+      "last_date": "2026-10-05",
+      "missing_observations": 126,
+      "path": "DFII10-curl-response.csv",
+      "retrieved_at": "2026-10-10T15:50:00.143510+00:00",
+      "rows": 3067,
+      "series": "DFII10",
+      "sha256": "b9e7817be5c95412df6a000b8f12f4228db580923f5ad530d942aa558eade429",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DFII10&cosd=2015-01-01&coed=2026-10-05"
+    }
+  ],
+  "strategy_outcomes_computed": false,
+  "tradable_assets": false
+}

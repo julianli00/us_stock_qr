@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "study_id": "fixed_profit_option_information_complementarity_20261012",
+  "data_scope": "factor_etf_portfolio",
+  "data_start": "2015-08-10",
+  "as_of": "2026-10-05",
+  "prior_evaluated_configurations": 168,
+  "new_configurations": 2,
+  "new_economic_factor_definitions": 0,
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "factor_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "option_ratio_risk_threshold": 1.0,
+  "risk_off_scale": 0.50,
+  "risk_change_sessions": 63,
+  "actual_weight_trade_band": 0.025,
+  "cash_reserve": 0.02,
+  "confirmation_schedule": "completed_month",
+  "information_rule": "positive_dollar_and_either_profit_decline_or_option_pressure",
+  "candidates": [
+    {"id": "semiconductor_profit_level_or_term_confirmation", "profit_measure": "level"},
+    {"id": "semiconductor_profit_share_or_term_confirmation", "profit_measure": "output_share"}
+  ],
+  "source_registration": {"path": "evidence/profit_guard_20261012_registration.json", "sha256": "4963557da8735e005e933c121afc6b095b11570319bca29c1dd509cf1b70a7d6"},
+  "source_policy": {"path": "config/profit-factor-guard.json", "sha256": "abb40ba11ae4f38efda3087e3f572324c696ff8891d0c875e2d303a2a2ec7c29"},
+  "source_implementation": {"path": "src/us_quant/profit_factor_guard.py", "sha256": "6cdde8557e3b752bf2fd13919e8e54079e159bb505bf63141ce9c2d2f7d6b7b2"},
+  "term_registration": {"path": "evidence/sector_term_guard_20261011_registration.json", "sha256": "8bdc49b3af0c1d76f39c230172f1840ca89bd349159e812c6937d492dfb83cf7"},
+  "term_policy": {"path": "config/sector-term-guard.json", "sha256": "bd5ddd200e844244fd8deddf400535b98434b0f18492d5e7d24822fe1342991a"},
+  "term_implementation": {"path": "src/us_quant/sector_term_guard.py", "sha256": "fc75d304f2470951fbdc3c64d119cdef5e51cee0458c1353ca1841082455ff36"},
+  "methodology": {
+    "hypothesis": "Quarterly realized profits and market-priced option pressure are different-timing information about risk. Study their complementarity without changing previously fixed earnings measures or option thresholds. Both profit-only rules passed return/Sharpe but failed stability;this is a new exposed-history question,not independent validation or a claim of protection on specific crash dates.",
+    "rule": "At every original131monthend retain original positive-own-vintage63session dollar condition. Half original plain option-budget non-BILweights if dollarpositive AND(either selected common-quarter profit measure strictly declines versus its own63NYSE-earlierquery OR actualmonthendVIX is greater than or equal to VIX3M). Use the same0.5scale exactly once even if both branches trigger. Equality in profits doesnottrigger;option equality does. Otherwise retain full originalplain budget. No date-specific masks or doublehalving.",
+    "measure_pair": "Compare original adjusted-profit level decline with original matched common-quarter CPATAX/GDPaggregate income/outputproxy decline. Keep same-query latestcommoncompletedquarter,two-priorNYSEvintages,186quarterage,population-scope limitations and source revisions. Proxy isnotcompanymargin or newindependentfactor. Everyoriginal225query/131referencepair remains.",
+    "options": "Reuse originalofficialCboe VIX30day/VIX3Mcurrent93day nativeclose histories and genuine primary/source manifest. Only actual131monthend observations affect the rule;do not introduce dailyregime events or retime first release. These are riskindices,not portfolio investments or traded optionreturns. Preserve ticker rename and unverified fullhistoricalmethodology/intraday-first-publication limits.",
+    "allocation": "Retain originalplain GVZ/(GVZ+VIX)30%-70%equityriskbudget,half-equitySOXX/equalfour-style remainder/GLD/98%investment/2%targetidle cash. Freed capital goes only to actualBIL. No proxybeta/covariance,targetvolatility,riskfloor,sectorfraction or new asset. Originaloptionbudgetquotes and14dayH10release-conflict-quarantine/unitregime laws unchanged.",
+    "execution": "Reuse profit_factor_guard.run and inheritedoriginalpure0.025actualcloseholding band/old1e-12allowance/forcedfresh10000initial/includingBILgap/no overwrite-cancel-earlyfill. Keep5bpbase/20bpstress,1/2sessionlateropens,USD1order,fractionallong-onlycash-funded-v2,all12assets1x/whole10y5yreturns. Actualissuedtargets,fees andholdings onlyafteractualregistrations/remotepublication,separatelypereachwindowcost.",
+    "proof": "FreezeORtruth table/ratio1/profitstrictsign/0.5/63query/quarterjoin186/band0.025/monthlyclock beforetargetgeneration andoutcomes. Independentlyverify450profitvintages225commonjoins/131H10pairs/262GVZ-VIXmonthlyinputs/262VIX-VIX3Mmonthquotes/originalscalarbudgets/8staticdesiredseeds. Fullrawsourceclosure and actualreg/publication fences precede allfeedbackaccounts;preserveunknownhash/schema/gapfailures ratherthandefaultsafe.",
+    "selection": "Exactly2fixed complementaryrules after168exposedconfigs,no ratio-scale-frequency-band-source-horizon grid or after-result fitting. RequirestrictSh>1,CAGR>same-costSPY,stress>base-SPY,DD<=15%onall4paths;passingprofitreturns cannot be spliced with oldguardianDD. Old76inference excludes these,new8/full170/unknownsearch/futurealpha. Retainalloutcomes even if gains areonly partial.",
+    "preservation": "No economicdefinitions/marketassetadmission/W42fourplans-IJRPKWquota/Oct17eligibility/frozenforwardmodels/sourceRecoveryregistration-fingerprint-cooldown-zeroGET changes. Retain oldrows69imports7profiles3192controls26selection and oldsource-stageproofs. Source combination isnot newindependentfamily,causal alpha orautomaticlivepromotion.",
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

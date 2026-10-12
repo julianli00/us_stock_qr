@@ -1,0 +1,70 @@
+{
+  "base_source_manifest_sha256": "8cc85f89a05c0324571abc1cb44d8a1d7dfd76d55271f34ad4da973e5c0f9f6d",
+  "base_source_retrieved_at": "2026-10-06T05:16:59.178433+00:00",
+  "current_fundamentals_used_as_historical_signals": false,
+  "data_end": "2026-10-05",
+  "data_start": "2015-08-10",
+  "files": {
+    "MTUM.csv": "edd1bfe696633f97ede8cf55c39259fc37780e716b264985e2081082c3ee9621",
+    "QUAL.csv": "06a81747d1fb00d6f0066542c8af60d3903fa00d1c40d00879a29773e21863b9",
+    "USMV.csv": "7355080cc39a9e533baec24655dfdfcc315c6b9b92525358ccceb0b428423c35",
+    "VLUE.csv": "a4edf59231ffdebe7db6481f19e6130586a323fba53b9572f6f060fa0682a849",
+    "issuer/MTUM.html": "5f6537f93ebb47d0d17c706d0f031b266cf970547bb860cdcb05a0e3714bc673",
+    "issuer/QUAL.html": "615b6324a3bd063e1ca147c8aa1868a4a04738805815dd34bcfbb164de4eb882",
+    "issuer/USMV.html": "0c475cca5af39d39c3fc5e7db42abaf7598ebf0e6fd8f3861ebf242084190799",
+    "issuer/VLUE.html": "e0f154b7fd2cc9bdd4e2ac6a6bb7f243e4039ba6d7b9bebf316d29c6af924af0",
+    "raw/MTUM.json": "411dc4cdde7e0bdc8e605f9885b539b94cd13efcf62188a337f4d606f9002583",
+    "raw/QUAL.json": "ccd638469bce57c89654f59f37701ed46420b62d28d8215e19028da3f52a5092",
+    "raw/USMV.json": "01713f19543161a0e210401b50984c5a36522450bca6640bc0c3c156057e0384",
+    "raw/VLUE.json": "0dd1f8ad2c69820fe190373d35b350d844a7e1d463484333ae5a9ac717fa3888"
+  },
+  "issuer_documents_are_current_not_historical_methodology_proof": true,
+  "policy_sha256": "6448da230c5396183c96e9fad39faa56ea82e35924d8dd833253385d8f765d5a",
+  "registration_sha256": "62309ae41ae2b5aaf181731e4744242f1fb00a6ed91e287f2d6f6af043b4952b",
+  "retrieved_at": "2026-10-10T06:19:27.397906+00:00",
+  "schema_version": 1,
+  "snapshot_type": "actual_fund_price_history_not_constituent_level_PIT_data",
+  "sources": {
+    "MTUM": {
+      "dividend_events": 45,
+      "first_session": "2015-08-10",
+      "issuer_url": "https://www.ishares.com/us/products/251614/ishares-msci-usa-momentum-factor-etf",
+      "last_session": "2026-10-05",
+      "price_url": "https://query2.finance.yahoo.com/v8/finance/chart/MTUM?period1=1439164800&period2=1791244800&interval=1d&events=div%2Csplits",
+      "rows": 2805,
+      "split_events": 0,
+      "unexplained_adjustment_jumps": 0
+    },
+    "QUAL": {
+      "dividend_events": 45,
+      "first_session": "2015-08-10",
+      "issuer_url": "https://www.ishares.com/us/products/256101/ishares-msci-usa-quality-factor-etf",
+      "last_session": "2026-10-05",
+      "price_url": "https://query2.finance.yahoo.com/v8/finance/chart/QUAL?period1=1439164800&period2=1791244800&interval=1d&events=div%2Csplits",
+      "rows": 2805,
+      "split_events": 0,
+      "unexplained_adjustment_jumps": 0
+    },
+    "USMV": {
+      "dividend_events": 46,
+      "first_session": "2015-08-10",
+      "issuer_url": "https://www.ishares.com/us/products/239695/ishares-msci-usa-minimum-volatility-etf",
+      "last_session": "2026-10-05",
+      "price_url": "https://query2.finance.yahoo.com/v8/finance/chart/USMV?period1=1439164800&period2=1791244800&interval=1d&events=div%2Csplits",
+      "rows": 2805,
+      "split_events": 0,
+      "unexplained_adjustment_jumps": 0
+    },
+    "VLUE": {
+      "dividend_events": 45,
+      "first_session": "2015-08-10",
+      "issuer_url": "https://www.ishares.com/us/products/251616/ishares-msci-usa-value-factor-etf",
+      "last_session": "2026-10-05",
+      "price_url": "https://query2.finance.yahoo.com/v8/finance/chart/VLUE?period1=1439164800&period2=1791244800&interval=1d&events=div%2Csplits",
+      "rows": 2805,
+      "split_events": 0,
+      "unexplained_adjustment_jumps": 0
+    }
+  },
+  "synthetic_preinception_prices": false
+}

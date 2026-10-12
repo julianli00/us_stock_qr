@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "round_id": "portfolio_refinement_20261007",
+  "prior_disclosed_configurations": 72,
+  "new_configurations": 6,
+  "request": "Autonomously iterate through bounded portfolio risk and turnover research, preserving the existing qualified baseline and every failure.",
+  "baseline": {
+    "candidate": "equal_growth_gold_min_variance_ensemble",
+    "implementation_revision": "60875a7d",
+    "policy": "config/implementation-research.json",
+    "policy_sha256": "d97aa2cee2d4b924f3caadc68918fd6c6c53fbc03296a27ac6066670208959e1",
+    "registration": "evidence/implementation_round_20261007_registration.json",
+    "registration_sha256": "add46e689ef685d966068644cba3e6d87fe1330bc40cc6326f7f73e36fe7acdf",
+    "results": "evidence/implementation_round_20261007_results.json",
+    "results_sha256": "1df24ddd1d873b364cf0f621ae5c7d7626d25a658ad25d5657926f67ca4c9e23",
+    "artifacts": "reports/implementation-round-20261007"
+  },
+  "capital_usd": 10000.0,
+  "cash_reserve": 0.02,
+  "commission_per_order": 1.0,
+  "covariance_sessions": 63,
+  "defensive_asset": "BIL",
+  "embedded_leverage_asset": "QLD",
+  "base_scenario": "base",
+  "scenarios": [
+    {"id": "base", "cost_bps_per_side": 5.0, "delay_sessions": 1},
+    {"id": "stress", "cost_bps_per_side": 20.0, "delay_sessions": 2},
+    {"id": "higher_cost", "cost_bps_per_side": 50.0, "delay_sessions": 2}
+  ],
+  "candidates": [
+    {"id": "portfolio_qld_cap30", "qld_cap": 0.30, "volatility_target": null, "weight_band": null},
+    {"id": "portfolio_volatility12", "qld_cap": null, "volatility_target": 0.12, "weight_band": null},
+    {"id": "portfolio_cap30_volatility12", "qld_cap": 0.30, "volatility_target": 0.12, "weight_band": null},
+    {"id": "portfolio_observed_weight_band025", "qld_cap": null, "volatility_target": null, "weight_band": 0.025},
+    {"id": "portfolio_volatility12_band025", "qld_cap": null, "volatility_target": 0.12, "weight_band": 0.025},
+    {"id": "portfolio_cap30_volatility12_band025", "qld_cap": 0.30, "volatility_target": 0.12, "weight_band": 0.025}
+  ],
+  "promotion_contract": {
+    "primary": "Same unchanged rule: excess-return Sharpe strictly above one and CAGR above same-window SPY in both ten/five-year windows under base and stress. Stress must also beat base-cost SPY.",
+    "max_drawdown_worsening_tolerance": 0.01,
+    "risk_improvement": "Maximum drawdown at most15% in all four primary window/scenario combinations.",
+    "cost_improvement": "Both50bp windows pass the primary metrics, also beat base-cost SPY, and each has at least10% less annualized turnover than the unchanged baseline at50bp.",
+    "minimum_turnover_reduction_fraction": 0.10,
+    "rule": "Primary gates plus no scenario drawdown worsening by more than one percentage point, plus either risk_improvement or cost_improvement.",
+    "old_cagr_goal_strictly_above": 0.20,
+    "old_drawdown_goal_at_most": 0.15,
+    "automatic_baseline_replacement": false,
+    "independent_forward_evidence_required_for_live_promotion": true
+  },
+  "methodology": {
+    "data_status": "Reuse the exact2026-10-05 endpoint, manifests and original retrieval timestamps. All historical windows were already exposed; later rules are adaptive research, not independent holdouts.",
+    "decision_timing": "Only completed month-end observations plus each fresh-account initialization anchor. Base next-open execution and delayed stress are unchanged. No current-day closing information may affect that day's opening trade.",
+    "qld_cap": "Cap total fund weight across both sub-portfolios at30%, transferring any reduction to BIL. QLD has embedded daily2x leverage; this is a target limit at decisions, not a continuous intraday guarantee.",
+    "volatility": "After the QLD cap, scale all non-BIL weights together until total target variance, including BIL covariance, is at most12% annualized volatility. Estimate covariance from63 fully observed daily returns; move reduced exposure to actual BIL. Never scale upward.",
+    "weight_band": "At month end compare the desired full target with actual closing portfolio weights, not the last target. Rebalance only if some weight gap is at least2.5 percentage points. A breached declared risk limit overrides the band. Initial deployment always executes.",
+    "risk_overrides": "Risk overrides are evaluated only at the existing monthly decision schedule. Gaps and between-decision drift can exceed target constraints or the15% historical drawdown goal.",
+    "cash_and_units": "Same cash-funded fractional-unit accounting and USD1 order charges as the baseline;2% is the target idle-cash reserve, not a continuously enforced cash floor. Integer shares, actual broker spreads and personal taxes are not modeled.",
+    "independent_checks": "Replay issued signals through the original simulator and the independent bt cash ledger; recompute metrics from bt equity using ffn and excess returns; verify observed-weight feedback against the replayed positions.",
+    "rolling": "For candidates passing the promotion contract, compare every available month-end ten/five-year window on continuous base and stress accounts against the unchanged baseline; disclose all failures rather than change rules.",
+    "trial_accounting": "Six new fixed configurations, not a parameter grid. The unchanged baseline is replayed as a control, not counted as a new independent trial. All78 configuration records remain disclosed.",
+    "order_authority": false,
+    "automatic_retuning": false,
+    "old_forward_ledger_modified": false,
+    "persistent_automation_started": false
+  }
+}

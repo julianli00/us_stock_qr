@@ -1,0 +1,63 @@
+{
+  "actual_configured_remote_queries_made_by_early_queue": false,
+  "actual_early_cli_checks": [
+    {
+      "actual_eligible_time_block_reason": "The frozen weekly queue is not eligible before 2026-10-17T09:00:00+08:00.",
+      "actual_run_receipt": "reports/weekly-research-2026-W42/runs/20261011T090337-341fc71a/result.json",
+      "actual_run_receipt_sha256": "a3a9ecc8e8470ea3ac2fa0afe80959b2350e613a86c964e8a2a0d4311fe2ea9f",
+      "actual_steps_executed": 0,
+      "cli_completed_at": "2026-10-11T09:03:37.362981+00:00",
+      "cli_exit_code": 2,
+      "cli_started_at": "2026-10-11T09:03:35.131394+00:00",
+      "declared_invocation_origin": "agent_continuation",
+      "evaluation_argument_is_prior_research_commit_not_a_new_registration_packet": false,
+      "native_delivery_independently_authenticated": false,
+      "phase": "register"
+    },
+    {
+      "actual_eligible_time_block_reason": "The frozen weekly queue is not eligible before 2026-10-17T09:00:00+08:00.",
+      "actual_run_receipt": "reports/weekly-research-2026-W42/runs/20261011T090339-34ecc567/result.json",
+      "actual_run_receipt_sha256": "b89079d6013b3ee58bfbfc52c2ea449cba18dc0d549fff2117178b5ba5accf72",
+      "actual_steps_executed": 0,
+      "cli_completed_at": "2026-10-11T09:03:39.619878+00:00",
+      "cli_exit_code": 2,
+      "cli_started_at": "2026-10-11T09:03:37.363296+00:00",
+      "declared_invocation_origin": "agent_continuation",
+      "evaluation_argument_is_prior_research_commit_not_a_new_registration_packet": true,
+      "native_delivery_independently_authenticated": false,
+      "phase": "evaluate"
+    }
+  ],
+  "actual_new_candidate_publication_verified": false,
+  "automatic_git_commit_push_reset_or_order_submission": false,
+  "both_actual_phases_blocked_before_inputs_or_portfolio_calculation": true,
+  "bounded_plan_week": "2026-W42",
+  "candidate_returns_or_metrics_computed": false,
+  "checked_at": "2026-10-11T09:03:41.116730+00:00",
+  "eligible_not_before": "2026-10-17T09:00:00+08:00",
+  "engine_migration_performed": false,
+  "evaluation_requires_persisted_publication_fence_before_original_accounts": true,
+  "first_failed_stage_stops_later_stages": true,
+  "fixed_candidate_order": [
+    "six_factor_equal_family",
+    "six_factor_bounded_inverse_volatility",
+    "semiconductor_dollar_inflation_gold_guard",
+    "semiconductor_dollar_claims_confirmation"
+  ],
+  "future_registration_packet_created": false,
+  "git_commit_timestamps_are_independent_first_publication_times": false,
+  "investment_objective_verified": false,
+  "local_commits_or_declared_native_origins_are_publication_proof": false,
+  "new_economic_factor_definitions": 0,
+  "new_prospective_market_or_model_observations": 0,
+  "new_registered_candidates": 0,
+  "new_strategy_evaluations": 0,
+  "order_authority": false,
+  "partial_evaluation_outputs_deleted_or_reconstructed": false,
+  "preparation_and_actual_factor_cycle_required_before_queue_registration": true,
+  "publication_requires_exact_remote_commit_packet_code_policy_and_approved_paths": true,
+  "queue": "src/us_quant/research_weekly.py",
+  "queue_sha256": "44474846476005524d73516ad66e6aa93466dcb63850dd33f6124943135665d8",
+  "remote_gate_tests_used_synthetic_local_git_repositories": true,
+  "schema_version": 1
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "study_id": "momentum_implementation_20261011",
+  "data_scope": "factor_etf_portfolio",
+  "data_start": "2015-08-10",
+  "as_of": "2026-10-05",
+  "prior_evaluated_configurations": 104,
+  "new_configurations": 2,
+  "new_economic_factor_definitions": 0,
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "original_factor_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "replacement_symbol": "PDP",
+  "replacement_family": "momentum",
+  "baseline_policy": "config/factor-gold-risk.json",
+  "source_manifest": "data/pdp-source-check-20261011/manifest.json",
+  "issuer_url": "https://www.invesco.com/us/en/financial-products/etfs/invesco-dorsey-wright-momentum-etf.html",
+  "index_url": "https://indexes.nasdaq.com/Index/Overview/DWTL",
+  "index_methodology_url": "https://indexes.nasdaqomx.com/docs/Methodology_DorseyWrightTechnicalIndexes.pdf",
+  "cash_reserve": 0.02,
+  "candidates": [
+    {"id": "four_factor_pdp_momentum_implementation", "pdp_share_of_momentum": 1.0},
+    {"id": "four_factor_dual_momentum_implementation", "pdp_share_of_momentum": 0.5}
+  ],
+  "methodology": {
+    "hypothesis": "A momentum mandate can behave differently across ETF implementations. Compare a fixed full replacement and equal implementation mix rather than optimizing the rejected allocation gates or momentum lookbacks.",
+    "factor_budgets": "Reuse the original equal-four-factor/gold63-session monthly risk-balance target using the original MTUM/VLUE/QUAL/USMV basket. Equity/gold totals, decision dates,2%target idle cash and25%equity budgets for momentum/value/quality/low-volatility stay identical to the already evaluated original control.",
+    "implementation": "Within the25%momentum family share only, use100%PDPor50%PDP/50%MTUM. No other sleeve changes, no fund-selection score, no fitted mix and no new alpha-family claim.",
+    "primary_definition": "Issuer metadata identifies PDP,US46137V8375,US passive equity, inception2007-03-01. Its embedded product description names the Dorsey Wright Technical Leaders Index and proprietary relative-strength selection with quarterly reconstitution. The directly retrieved Nasdaq methodology confirms DWTL and US large/mid-cap eligibility.",
+    "source_limits": "The issuer factsheet request returned a country/audience HTML page, not a PDF; do not bypass it. Current official product/Index documents were actually retrieved, but a complete historical mandate-version archive is not established. Research uses actual fund returns, not recreated proprietary scores, current holdings or backfilled index performance.",
+    "price_data": "Reuse the newly acquired PDP raw chart and its strictly positive2805-session OHLCV panel. Reparse raw observations and verify adjustment changes against actual dividends/splits; never fill zero volumes or move formal evaluation windows. Preserve the old SPMO data rejection and Stooq browser-verification response.",
+    "timing": "Completed month-end decisions only; next-session-open5bpbase or one-extra-session20bpstress. Original USD10,000fresh accounts,USD1orders and all retained net Sharpe/SPY/15%drawdown gates. No leverage, synthetic asset returns or live authority.",
+    "selection": "Data availability was checked before these fixed rules. Candidate performance was not inspected before registration. Formed after104completed historical configurations; overlapping previously exposed history remains exploration, not an independent holdout.",
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

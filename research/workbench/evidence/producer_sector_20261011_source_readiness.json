@@ -1,0 +1,94 @@
+{
+  "W42_or_frozen_forward_rules_changed": false,
+  "additional_adjusted_close_observations_checked": 5610,
+  "additional_assets": [
+    "XLE",
+    "XLB"
+  ],
+  "additional_raw_and_csv_open_close_unadjusted_volume_observations_checked": 22440,
+  "checked_at": "2026-10-11T18:53:13.710622+00:00",
+  "complete_sessions_per_asset": 2805,
+  "full_historical_constituents_or_notional_coverage_claimed": false,
+  "independent_source_verifier_sha256": "9fd34522f2b8c55d6f7de21d026c6140b1b99cfe9123c42b501b07205da9ffa9",
+  "investment_objective_verified": false,
+  "maximum_independent_decimal_original_csv_error": 7e-15,
+  "maximum_independent_decimal_raw_quote_error": 5.000192232415992e-11,
+  "maximum_original_canonical_portfolio_observation_error": 0.0,
+  "new_economic_factor_definitions": 0,
+  "new_registered_candidates": 0,
+  "new_source_quote_requests": 0,
+  "new_strategy_evaluations": 0,
+  "order_authority": false,
+  "original_assets": 12,
+  "original_panel_observations_and_frozen_rates_checked": 137445,
+  "original_quote_versions_or_retrieval_times_rewritten": false,
+  "original_raw_csv_actions_issuer_pdf_guards_and_both_xlk_versions_preserved": true,
+  "original_sector_quote_acquired_at": "2026-10-06T05:28:53.472387+00:00",
+  "portfolio_targets_or_returns_computed": false,
+  "prepared_assets": 14,
+  "prepared_market": {
+    "close": {
+      "path": "data/producer-sector-source-20261011/market-close.csv",
+      "sha256": "34db76d4863fef8b93ad276e70a5329048ee800c490e4e3db510532d9154002b"
+    },
+    "open": {
+      "path": "data/producer-sector-source-20261011/market-open.csv",
+      "sha256": "0830e732c4a2525e19057bceff4fa7e2dc5f1f522b898fd47bdd3d49639dd4a5"
+    },
+    "raw_close": {
+      "path": "data/producer-sector-source-20261011/market-raw_close.csv",
+      "sha256": "7c7343063f6036e94d3b7e63dac5696d9e55cb6a8616331a3a12af17fa2a87ab"
+    },
+    "risk_free": {
+      "path": "data/producer-sector-source-20261011/market-risk_free.csv",
+      "sha256": "87b4a2c71a4c6094466294ed6f93823706700ad4217dc285e5f776e8d31d85b7"
+    },
+    "volume": {
+      "path": "data/producer-sector-source-20261011/market-volume.csv",
+      "sha256": "7471493d193f71cf51a9b121c4e9bdf6aeaa6021f7dd496cce95c7f3e3c765c4"
+    }
+  },
+  "primary_issuer_checks": {
+    "XLB": {
+      "actual_original_raw_and_csv_sessions_checked": 2805,
+      "benchmark": "Materials Select Sector Index",
+      "cusip": "81369Y100",
+      "full_historical_constituent_mandate_notional_proof": false,
+      "fund_inception": "1998-12-16",
+      "intended_equity_index_return_multiple": 1.0,
+      "isin": "US81369Y1001",
+      "role": "materials_sector_equity_not_direct_commodity_futures",
+      "scoped_issuer_and_advertised_pdf_independently_checked": true,
+      "symbol": "XLB"
+    },
+    "XLE": {
+      "actual_original_raw_and_csv_sessions_checked": 2805,
+      "benchmark": "Energy Select Sector Index",
+      "cusip": "81369Y506",
+      "full_historical_constituent_mandate_notional_proof": false,
+      "fund_inception": "1998-12-16",
+      "intended_equity_index_return_multiple": 1.0,
+      "isin": "US81369Y5069",
+      "role": "energy_producer_equity_not_direct_commodity_futures",
+      "scoped_issuer_and_advertised_pdf_independently_checked": true,
+      "symbol": "XLE"
+    }
+  },
+  "private_prepared_manifest": {
+    "path": "data/producer-sector-source-20261011/manifest.json",
+    "sha256": "0ce89fcb2799383862891bef2a4e6d8729dacdaa18d6ec08cc5aae7fbead5fba"
+  },
+  "raw_prices_primary_documents_or_actual_data_panels_published": false,
+  "ready_for_separate_rule_preparation": true,
+  "research_program14asset_admission_implemented_by_this_study": false,
+  "schema_version": 1,
+  "source_and_windows_already_exposed": true,
+  "source_policy": {
+    "path": "config/producer-sector-sources.json",
+    "sha256": "5d5e41d1e14bb95eac7bd091c8fbd36cf04783ce5a56ba7018c0c1486de5a2bd"
+  },
+  "source_success_claimed_inflation_hedge_or_investment_qualification": false,
+  "status": "complete_independently_verified_source_only_preparation",
+  "synthetic_contract_tests_passed": 73,
+  "synthetic_frozen_dataclass_fixture_failure_retained": true
+}
