@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "study_id": "fixed_option_proxy_observed_weight_execution_20261012",
+  "data_scope": "factor_etf_portfolio",
+  "data_start": "2015-08-10",
+  "as_of": "2026-10-05",
+  "prior_evaluated_configurations": 164,
+  "new_configurations": 2,
+  "new_economic_factor_definitions": 0,
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "factor_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "actual_weight_trade_band": 0.025,
+  "capital_usd": 10000,
+  "commission_per_order": 1.0,
+  "cash_reserve": 0.02,
+  "candidates": [
+    {"id": "semiconductor_option_proxy_observed_band025", "source_id": "semiconductor_option_proxy_risk_balance"},
+    {"id": "semiconductor_option_proxy_dollar_observed_band025", "source_id": "semiconductor_option_proxy_risk_balance_dollar_half"}
+  ],
+  "source_registration": {"path": "evidence/implied_risk_20261011_registration.json", "sha256": "bf7c849b1033545858bdb8872d9c5533b4fac8f1384ffeb719cb4b65903caca3"},
+  "source_policy": {"path": "config/implied-risk-balance.json", "sha256": "b9bd2e95455a4950be706bb23dd4e0fc5b39b0bf7726d16835c8f6443f6de19d"},
+  "source_implementation": {"path": "src/us_quant/implied_risk_balance.py", "sha256": "3546db862c9d4acb4a8a7afc3f9f984ffe8027d9d7cf31d5d67b4ae4eb764137"},
+  "execution_registration": {"path": "evidence/observed_band_20261011_registration.json", "sha256": "0b5fb3cd2e07ed70d49f2e8eeb4f6aa47fdb1c8ffeffe5d855e00d393d071f35"},
+  "execution_policy": {"path": "config/observed-weight-execution.json", "sha256": "820cc4e9c2f4be6b286873254f663fba4f018156fb427156e1fc330da53094a7"},
+  "execution_implementation": {"path": "src/us_quant/observed_weight_execution.py", "sha256": "821934f77b4fb19ba2486649d9c99be85aeac792b2b12a526d0546161ed21ac2"},
+  "methodology": {
+    "hypothesis": "Small desired monthly corrections incur fixed commissions and modeled spreads. Transfer the already frozen2.5percentage-point actual-holding no-trade band to both unchanged option-proxy sources. This is implementation research,not a new return alpha or a claim that cost savings will bridge the known SPY gap.",
+    "desired_targets": "Rebuild exactly both original131monthly GVZ/(GVZ+VIX) targets under original30%-70%equitybounds/half-equitySOXX/remaininghalfequalMTUM-VLUE-QUAL-USMV/GLDremainder/98%funding. Keep plain versus originalpositive-own-vintage63session-dollar half-risk law. No changed proxy,ratio,beta,covariance calibration,halfscale,lookback,source age,regime or factor shares.",
+    "rule": "Use unchanged observed_weight_execution.run and originalpureband policy:force initial freshUSD10000deployment;at each later original month end compare full unchanged desired target,includingBIL,to actual post-trade closing holdings. Issue only if maximum weight gap plus existing1e-12allowance reaches0.025. Otherwise hold. The originalcovariance argument is required but the pureband has no QLDcap/volatility override. This is not last-issued-target hysteresis.",
+    "handle": "Reuse the old execution candidate handle only to select its original pure-band law. The source matrix passed to that law is the new candidate's immutable original option-budget matrix,not a claim that the old graded-gold target or historical portfolio is reproduced. Freeze the complete original allocation and execution source graphs.",
+    "execution": "Preserve5bpnext-openbase/20bpextra-sessionstress/USD1perorder/fractionallong-onlycash-funded-v2/allassets1x/full10y5yreturns. Never cancel,overwrite or fill pending requests early;fills precede closing-weight decisions. Rebuild actual issued targets,fees,cash and holdings independently for every window-cost account only after registration and actual remote publication. Seed from last actually known source target;2%cash remains target,not continuousfloor.",
+    "risks": "Skipped small corrections may increase drift,drawdown or risky exposure and sacrifice returns. Reduced tickets do not guarantee lower dollar fees or goal attainment. Prior-source performance and this exposed history are not independent validation;do not splice old source drawdown with new returns or call identical desired targets equal realized risk.",
+    "sources": "No new quotes. Reuse genuine original twelve-asset prices/riskfree,all262actualmonthly GVZ/VIXinputs and131frozenH10pair comparisons. Preserve four dailyGVZgaps/fullfalse and independently complete monthlyscope;do not fill missingdays/defaults or alter publication/vintage clocks. Validate every static target and8original causal seeds before any feedback accounts.",
+    "selection": "Exactly2fixed execution constructions after164exposed-history configurations. No band0.01/0.05/grid,no commission/spread/delay reduction,no source-weight or parameter refit. Actualsource-budget proof/completecode-spec/readiness/actualregistrations/remotepublication precede all newaccounts;thenindependentfeedback-funding-bt-scalarmetrics/fulloldsourceaudit. Require strictSh>1,CAGR>same-costSPY,stressCAGR>base-SPY,DD<=15%onallfourpaths. Old76inference doesnotcover these,new4or full166/unknownsearch.",
+    "preservation": "No new economicdefinition/assetadmission/W42fourplan/IJRPKWquota/Oct17eligibility/frozenforwardmodel change. Preserve alloldrows/69imports/7profiles/3192controls/26oldselection andsource-recoveryregistration-fingerprint/cooldown/0requests. All source andband parameters remain immutable after outcome calculation.",
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

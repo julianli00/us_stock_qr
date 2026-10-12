@@ -53,6 +53,7 @@ GENERATORS = {
     "implied_risk_balance": "config/implied-risk-balance.json",
     "skew_factor_guard": "config/skew-factor-guard.json",
     "housing_factor_guard": "config/housing-factor-guard.json",
+    "implied_risk_execution": "config/implied-risk-execution.json",
 }
 
 
@@ -471,6 +472,16 @@ def registered_generator(spec: dict, root: Path) -> tuple[str, dict]:
                 "src/us_quant/dollar_risk_guard.py", "src/us_quant/macro_factor_tilt.py",
                 "src/us_quant/calendar.py", "src/us_quant/storage.py",
             ]
+        elif name == "implied_risk_execution":
+            required += [
+                "src/us_quant/implied_risk_balance.py", "config/implied-risk-balance.json",
+                "evidence/implied_risk_20261011_registration.json",
+                "src/us_quant/observed_weight_execution.py", "config/observed-weight-execution.json",
+                "evidence/observed_band_20261011_registration.json",
+                "src/us_quant/portfolio_refinement.py", "config/portfolio-refinement.json",
+                "src/us_quant/cash_funded_accounting_v2.py", "src/us_quant/dual_horizon.py",
+                "src/us_quant/factor_research.py", "src/us_quant/calendar.py", "src/us_quant/storage.py",
+            ]
         if any(relative not in frozen for relative in required):
             raise QuantError("The registered strategy is missing a frozen helper dependency.")
         for relative in required:
@@ -557,6 +568,12 @@ def registered_targets(
         return run(data, cache[key][spec["id"]], candidate, policy, start, end, cost, delay)[1]
     if name == "factor_core_momentum":
         from us_quant.factor_core_momentum import run, source_baselines
+
+        if key not in cache:
+            cache[key] = source_baselines(data, policy)
+        return run(data, cache[key][spec["id"]], candidate, policy, start, end, cost, delay)[1]
+    if name == "implied_risk_execution":
+        from us_quant.implied_risk_execution import run, source_baselines
 
         if key not in cache:
             cache[key] = source_baselines(data, policy)

@@ -6598,6 +6598,65 @@ without rolling back already completed prospective input steps.
 This instruction update is not evidence that a timer ran or a provider
 accepted a request. **The investment objective remains unmet.**
 
+## Fixed observed-weight execution for original option budgets
+
+The [frozen implementation policy](research/workbench/config/implied-risk-execution.json)
+transfers the **already specified 2.5-percentage-point actual-holding
+no-trade band** to both original plain / dollar-half option-proxy budgets.
+It does not change their GVZ/VIX ratio, 30%-70% bounds, four-style/SOXX
+composition, gold remainder, dollar regime, monthly desired targets,
+costs or capital, nor assume that fewer trades will close the SPY gap.
+This is execution research, not a new economic factor or return alpha.
+
+The [adapter](research/workbench/src/us_quant/implied_risk_execution.py)
+calls the unchanged original `observed_weight_execution.run`.
+The old candidate handle selects only the pure-band law; it does not
+claim reproduction of the old graded-gold inputs or historical account.
+Initial fresh USD10,000 deployment is forced.
+Later source updates compare the complete unchanged desired target,
+including BIL, with **actual post-trade closing holdings**.
+Only the original maximum-gap-at-least-0.025 rule, with its existing
+1e-12 rounding allowance, issues a request.
+No last-issued-target proxy, QLD cap, volatility override or extra
+risk/source threshold is introduced.
+Pending requests cannot be overwritten, canceled or filled early.
+
+Desired targets remain at all 131 original month ends.
+Actual issued rows, costs, drift and holdings depend on each window's
+fresh capital, realized prices, fees and delay; they are calculated
+**only after actual remote registration/code/proof publication**.
+Skipping small corrections can worsen exposure, drawdown or return.
+Identical desired budgets do not imply identical realized risk,
+and two-percent cash remains a target rather than a continuous floor.
+
+The [independent static proof](research/workbench/evidence/implied_execution_20261012_pre_account_verification.json)
+checks 262 actual native monthly quotes, 131 published H.10 pairs,
+131 Decimal budget/composition rows per source and all eight
+original causal seeds against saved source targets.
+Raw source / desired budget / old seeded target errors are at most
+3.02e-16 / 1.12e-16 / zero.
+Four nonmonthly GVZ gaps remain NaN with strict daily readiness false;
+the separately complete monthly input scope is not source repair.
+76 coupled allocation/execution/registration cases and 52 root guards pass.
+
+The [actual registrations](research/workbench/evidence/implied_execution_20261012_registration.json)
+occur at **2026-10-12 02:37:47 / 02:37:51 UTC**.
+One exact anchored migration and the [preservation proof](research/workbench/evidence/implied_execution_20261012_registration_preservation.json)
+retain all old rows/event prefix, seven semantic profiles,
+69 imports, 3,192 controls and 26 old selection artifacts.
+Source recovery keeps its exact fingerprint, cooldown and zero requests.
+An actual attempt with the preceding published commit stops before
+feedback target or account output.
+
+The [registration snapshot](research/workbench/evidence/research_program_implied_execution_registered_v88.json)
+retains **164 completed configurations / 80 reviews**, 84 registered
+versions including two old invalid ones, and exactly these two pending
+execution candidates. Six definitions / five families, original W42
+plans / IJR-PKW quota and both zero-return forward models remain.
+The fixed current-76 inference does not cover these, the later four
+housing/SKEW trials or the complete search.
+**No new feedback account, strategy performance or qualification exists at registration.**
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
