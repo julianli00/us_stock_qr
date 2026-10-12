@@ -7127,6 +7127,53 @@ including two old invalid ones, and exactly these two pending candidates.
 Actual remote publication must precede new path-dependent targets and accounts;
 **new performance is not yet computed at this registration checkpoint**.
 
+## Completed unemployment change evaluations
+
+Actual remote publication
+`675bea84dea97ff84b553145641211cbfdc2ed82` and the
+14:22:46.916425 UTC durable fence precede both new feedback-account calculations.
+The [independently verified results](research/workbench/evidence/unemployment_guard_20261012_results.json)
+retain both fixed rules and all original paths:
+
+| Labor confirmation | Window | Costs | CAGR | Net excess Sharpe | Maximum drawdown |
+| --- | --- | --- | ---: | ---: | ---: |
+| Unemployment rise | 10y | Base | 14.5921% | 0.91155 | 21.0671% |
+| Unemployment rise | 10y | Stress | 14.6223% | 0.91481 | 20.3350% |
+| Unemployment rise | 5y | Base | 17.5577% | 0.91460 | 21.2009% |
+| Unemployment rise | 5y | Stress | 17.6902% | 0.92305 | 20.4834% |
+| Dollar-confirmed rise | 10y | Base | 17.2837% | 1.04427 | 21.0500% |
+| Dollar-confirmed rise | 10y | Stress | 17.0739% | 1.03180 | 20.3241% |
+| Dollar-confirmed rise | 5y | Base | 20.7519% | 1.04446 | 21.2009% |
+| Dollar-confirmed rise | 5y | Stress | 20.3295% | 1.02155 | 20.4834% |
+
+**Every drawdown gate fails and both configurations remain rejected.**
+The dollar-confirmed rule passes all four Sharpe/SPY comparisons but its worst
+drawdown is 21.2009%, not a near-threshold 15% pass. The unemployment-only rule
+fails every Sharpe comparison and both ten-year SPY comparisons. Identical
+five-year worst drawdowns are not independent evidence or identical wealth
+paths. No source scope, sign, 63-session horizon, half scale, confirmation,
+budget, band, cost or order clock is refitted after these outcomes.
+
+The [independent account proof](research/workbench/evidence/unemployment_guard_20261012_reproducibility.json)
+checks 728 actual closing-gap/initial/queue decisions, 16 funded and 16
+independent bt strategy/SPY accounts over 30,128 funding sessions.
+Issued-target error is zero; scalar metric, wealth and cash-flow errors are
+at most 3.97e-14, USD 1.39e-10 and USD 1.10e-11 respectively.
+The [full source audit](research/workbench/evidence/research_program_source_bound_audit_v60.json)
+replays all 88 reviews / 352 paths, preserving 19 legacy and 69 funded-v2
+reviews. The [preservation proof](research/workbench/evidence/unemployment_guard_20261012_preservation.json)
+retains old journal rows, seven profiles, 69 imports, 3,192 controls,
+26 selection artifacts, the terminal dividend stop and original W42 plans.
+
+The [completed snapshot](research/workbench/evidence/research_program_unemployment_results_v95.json)
+now contains **172 configurations = 84 prior + 88 recurring reviews**, 90
+registered versions including two old invalid ones, no pending candidate and
+no champion. The fixed old 76-review inference excludes the twelve later trials.
+The [native instructions](research/workbench/evidence/prospective_data_automation_v67.json)
+continue research in this receiving session with checkpoint recovery, the
+unchanged daily/weekly cadence and both frozen zero-return forward models.
+**The full investment objective remains unmet.**
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
