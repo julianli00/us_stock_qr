@@ -54,6 +54,7 @@ GENERATORS = {
     "skew_factor_guard": "config/skew-factor-guard.json",
     "housing_factor_guard": "config/housing-factor-guard.json",
     "implied_risk_execution": "config/implied-risk-execution.json",
+    "profit_factor_guard": "config/profit-factor-guard.json",
 }
 
 
@@ -482,6 +483,18 @@ def registered_generator(spec: dict, root: Path) -> tuple[str, dict]:
                 "src/us_quant/cash_funded_accounting_v2.py", "src/us_quant/dual_horizon.py",
                 "src/us_quant/factor_research.py", "src/us_quant/calendar.py", "src/us_quant/storage.py",
             ]
+        elif name == "profit_factor_guard":
+            required += [
+                "src/us_quant/profit_inputs.py", "config/profit-inputs.json",
+                "evidence/profit_input_readiness_20261012.json", "data/profit-inputs-20261012/manifest.json",
+                "reports/profit-inputs-plan-20261012/verified-queries.csv",
+                "src/us_quant/implied_risk_execution.py", "config/implied-risk-execution.json",
+                "evidence/implied_execution_20261012_registration.json",
+                "src/us_quant/activity_inputs.py", "src/us_quant/yield_curve_inputs.py",
+                "src/us_quant/inflation_inputs.py", "src/us_quant/financial_conditions_guard.py",
+                "src/us_quant/dollar_risk_guard.py", "src/us_quant/macro_factor_tilt.py",
+                "src/us_quant/calendar.py", "src/us_quant/storage.py",
+            ]
         if any(relative not in frozen for relative in required):
             raise QuantError("The registered strategy is missing a frozen helper dependency.")
         for relative in required:
@@ -574,6 +587,12 @@ def registered_targets(
         return run(data, cache[key][spec["id"]], candidate, policy, start, end, cost, delay)[1]
     if name == "implied_risk_execution":
         from us_quant.implied_risk_execution import run, source_baselines
+
+        if key not in cache:
+            cache[key] = source_baselines(data, policy)
+        return run(data, cache[key][spec["id"]], candidate, policy, start, end, cost, delay)[1]
+    if name == "profit_factor_guard":
+        from us_quant.profit_factor_guard import run, source_baselines
 
         if key not in cache:
             cache[key] = source_baselines(data, policy)

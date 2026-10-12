@@ -6777,6 +6777,67 @@ The [native update](research/workbench/evidence/prospective_data_automation_v62.
 keeps daily/weekly cadence and both unchanged zero-return forward models.
 **Verified new input coverage is not portfolio alpha or full investment success.**
 
+## Common-quarter earnings confirmations: registered before accounts
+
+The [frozen strategy policy](research/workbench/config/profit-factor-guard.json)
+uses new earnings information to distinguish dollar strength with
+healthy income from dollar strength accompanied by deteriorating income.
+It compares a strictly falling common-quarter adjusted-profit level
+with a strictly falling common-quarter aggregate-profit/output proxy.
+The latter is **not a company profit margin or new independent factor**;
+aggregate profits and domestic output can have different population scope.
+Own-query differences can include revisions and tax/accounting changes.
+
+The [selector](research/workbench/src/us_quant/profit_factor_guard.py)
+uses each exact second-prior-NYSE CPATAX/GDP snapshot pair and selects
+the **latest completed quarter actually present in both**.
+Both values come from that same query's earlier snapshots and same
+quarter, with the original 186-day completed-quarter freshness.
+All 225 queries remain; no newer GDP quarter is mixed into an older
+profit reading. Missing, stale, changed or unverified joins are fatal.
+The original source proof's 87 independently latest-quarter differences
+remain true; this is a separately frozen information-selection law.
+
+At each original 131 month ends, compare the chosen measure with
+the measure from its own 63-NYSE-session-earlier query/vintage.
+Only original positive dollar change **and** a strictly lower
+profit measure halves all original plain option-budget non-BIL
+weights to actual BIL. Equal/rising measures do not trigger.
+The source's GVZ/VIX risk budget, 30%-70% bounds, half-equity SOXX,
+equal four-style remainder, gold and 98% funding are unchanged.
+The unchanged original 2.5pp actual-closing-holding band, forced
+fresh-capital deployment, dated queue and full costs are retained.
+Actual feedback targets/accounts remain deferred until remote publication.
+
+The [independent pre-account proof](research/workbench/evidence/profit_guard_20261012_pre_account_verification.json)
+checks all 450 raw quarterly snapshots / 225 scalar common-quarter
+joins, 262 raw option inputs, 131 H.10 pairs, 131 scalar original
+budgets and eight static desired-seed contexts.
+Join/level/proxy/comparison error is at most 4.44e-13;
+option/dollar error 3.02e-16, original budget error 1.12e-16
+and desired-target/seed error 2.23e-16.
+Both retain 131 desired updates; level / output-share rules halve
+risk on 22 / 32 months. No actual candidate wealth is calculated here.
+109 coupled cases and 52 root guards pass.
+
+The [actual registrations](research/workbench/evidence/profit_guard_20261012_registration.json)
+occur at **2026-10-12 04:06:45 / 04:06:48 UTC**.
+The [registration preservation](research/workbench/evidence/profit_guard_20261012_registration_preservation.json)
+proves one exact anchored migration and retains every old row/event
+prefix, seven semantic profiles, 69 imports, 3,192 controls,
+26 old selection artifacts and source-recovery fingerprint/zero requests.
+An actual run with the preceding source-only published commit stops
+before feedback target/account output.
+
+The [registration snapshot](research/workbench/evidence/research_program_profit_guard_registered_v90.json)
+retains **166 completed configurations / 82 reviews**, 86 registered
+versions including two old invalid versions, and exactly these two
+pending candidates. Six definitions / five families, original W42 plans /
+IJR-PKW quota and both frozen zero-return forward models remain.
+The old current-76 inference does not cover these or the six later
+trials, the full search or future alpha.
+**New earnings portfolio outcomes do not exist at registration.**
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
