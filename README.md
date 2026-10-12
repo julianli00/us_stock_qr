@@ -6657,6 +6657,66 @@ The fixed current-76 inference does not cover these, the later four
 housing/SKEW trials or the complete search.
 **No new feedback account, strategy performance or qualification exists at registration.**
 
+Actual remote publication
+`f50a7862ddcccff1f6ec2497f2a19111aeecaa92` precedes the
+02:44:01.085360UTC durable fence and every new feedback account.
+The [independently verified results](research/workbench/evidence/implied_execution_20261012_results.json)
+retain both configurations and all eight paths:
+
+| Execution source | Window | Costs | CAGR | Net excess Sharpe | Maximum drawdown |
+|---|---|---|---:|---:|---:|
+| Plain option budget | 10y | Base | 18.5663% | 1.06507 | 21.4509% |
+| Plain option budget | 10y | Stress | 18.4227% | 1.05677 | 21.0382% |
+| Plain option budget | 5y | Base | 22.7199% | 1.07525 | 21.5450% |
+| Plain option budget | 5y | Stress | 22.2029% | 1.05053 | 21.2000% |
+| Dollar-half budget | 10y | Base | 14.7229% | 1.09538 | 13.5721% |
+| Dollar-half budget | 10y | Stress | 14.4641% | 1.07396 | 13.4137% |
+| Dollar-half budget | 5y | Base | 19.1188% | 1.16849 | 13.5913% |
+| Dollar-half budget | 5y | Stress | 18.5775% | 1.13254 | 13.4332% |
+
+**Both complete configurations remain rejected.**
+Plain execution passes every Sharpe/SPY gate but every drawdown gate fails.
+The guarded version passes every Sharpe/drawdown gate and both
+five-year joint paths; minimum Sharpe is 1.07396 and worst drawdown
+13.5913%. Its ten-year CAGRs still trail full-SPY 15.4620% / 15.4056%;
+the stress path also misses the base-cost SPY hurdle.
+Passing plain returns cannot be combined with guarded drawdown,
+and no band, proxy ratio, dollar scale, budget, clock or fee is refitted.
+
+All eight matched original-source comparisons have fewer orders,
+lower total modeled dollar costs and higher CAGR/Sharpe.
+Guarded ten-year stress tickets fall **809 to 442** and modeled fees
+USD2,116.90 to USD1,710.97; CAGR improves from 14.2969% to 14.4641%,
+which is still insufficient.
+These are comparisons of actual saved accounts, not new controls,
+independent samples, equal realized risk or causal fee-alpha estimates.
+Skipped requests permit different drift/holdings/returns even though
+the immutable desired source budgets are unchanged.
+
+The [independent feedback/account proof](research/workbench/evidence/implied_execution_20261012_reproducibility.json)
+checks **728 closing-holding gap/initial/queue decisions**, every
+issued and held row, all original target values and 30,128 funding/
+quantity/fee/cash-flow days. All 16 funded strategy/SPY and 16
+independent bt accounts preserve complete windows and capital peaks.
+Issued-target error is zero; scalar metric / wealth / cash-flow
+errors are at most 4.51e-14 / USD6.55e-11 / USD1.44e-11.
+
+The [current snapshot](research/workbench/evidence/research_program_implied_execution_results_v89.json)
+contains **166 completed configurations = 84 prior + 82 recurring reviews**,
+84 registered versions including two old invalid ones, no pending
+candidate and no champion.
+The [full source-bound audit](research/workbench/evidence/research_program_source_bound_audit_v57.json)
+reexecutes all 82 reviews / 328 paths, preserving 19 legacy and 63
+funded-v2 reviews without changing any old outcome.
+The [preservation proof](research/workbench/evidence/implied_execution_20261012_preservation.json)
+keeps every old row/event prefix, seven profiles, 69 imports,
+3,192 controls, 26 old selection artifacts, source-recovery fingerprint/
+zero requests and the original W42 plans.
+The current-76 conditional inference does not cover the six later trials.
+The [native update](research/workbench/evidence/prospective_data_automation_v61.json)
+retains daily/weekly cadence, bounded source recovery and both frozen
+zero-return forward models. **The full investment objective remains unmet.**
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
