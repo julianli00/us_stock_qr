@@ -6240,6 +6240,52 @@ scope and daily/weekly cadence.
 Both frozen forward models still have zero actual returns.
 **Source verification is not a new alpha factor or completed investment goal.**
 
+## Monthly SKEW response scopes: actually registered before accounts
+
+The [frozen policy](research/workbench/config/skew-factor-guard.json)
+and [generator](research/workbench/src/us_quant/skew_factor_guard.py)
+compare two responses to the same illustrative SKEW level of 130.
+The primary linear mapping corresponds to skewness price minus three;
+the source does not recommend this trading threshold or certify any
+physical crash probability.
+At each original completed-month decision, a quote at or above 130
+halves the original four-style/SOXX equity sleeve for one candidate
+and all original non-BIL exposure, including GLD, for the other.
+Removed capital goes to actual BIL.
+Equity-only transfer keeps GLD exact; both retain original stock ratios,
+monthly risk budgets, 98% funded total, capital and costs.
+
+The missing SKEW reading on November 29, 2024 is handled by a separately
+frozen strategy law: no new monthly request, not a zero return or cash
+portfolio. Actual holdings keep all marks, cash and fees.
+All formal 2,512/1,254 return days remain and unknown missingness is fatal.
+The source proof's full daily/monthly readiness remains false.
+Neither another tail threshold nor a daily/dollar/trend/volatility overlay
+is selected or tuned after new portfolio outcomes.
+
+The [pre-account proof](research/workbench/evidence/skew_guard_20261012_pre_account_verification.json)
+independently reads all 261 genuine SKEW/VIX monthly quote cells,
+checks 131 scalar original budgets, four old seeded source paths
+and all eight new seeded matrices.
+Both issue 130 targets, with 84 half-risk months and the same exact
+one-month no-request pause.
+Quote, target and seeded errors are zero, at most 5.56e-17 and zero;
+original scalar-budget error is at most 7.22e-16.
+These are source/rule checks, not candidate returns.
+
+The [actual registration](research/workbench/evidence/skew_guard_20261012_registration.json),
+[registration preservation](research/workbench/evidence/skew_guard_20261012_registration_preservation.json)
+and [registered snapshot](research/workbench/evidence/research_program_skew_guard_registered_v84.json)
+record two actual configurations after one exactly anchored engine migration.
+All old rows, seven forward profiles, 69 imports, 3,192 controls,
+26 old selection artifacts and the original W42 queue remain.
+The previous current-76 inference does not cover these new trials.
+Counts remain 160 completed configurations/76 reviews,
+with 80 versions including two old invalid ones and exactly two pending.
+An old-commit evaluation stops before output or accounts.
+**No new candidate portfolio metrics exist at registration;
+actual remote publication must precede funded/bt evaluation.**
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

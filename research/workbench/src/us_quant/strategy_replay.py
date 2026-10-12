@@ -51,6 +51,7 @@ GENERATORS = {
     "curve_transition_guard": "config/curve-transition-guard.json",
     "near_term_risk_confirmation": "config/near-term-risk-confirmation.json",
     "implied_risk_balance": "config/implied-risk-balance.json",
+    "skew_factor_guard": "config/skew-factor-guard.json",
 }
 
 
@@ -447,6 +448,16 @@ def registered_generator(spec: dict, root: Path) -> tuple[str, dict]:
                 "src/us_quant/sector_growth_balance.py", "config/sector-growth-balance.json",
                 "src/us_quant/calendar.py", "src/us_quant/storage.py",
             ]
+        elif name == "skew_factor_guard":
+            required += [
+                "src/us_quant/skew_inputs.py", "config/skew-inputs.json",
+                "evidence/skew_input_readiness_20261011.json", "data/skew-inputs-20261011/manifest.json",
+                "data/skew-inputs-20261011/SKEW.csv", "evidence/sector_growth_balance_20261011_registration.json",
+                "src/us_quant/near_term_volatility_inputs.py", "src/us_quant/dollar_risk_guard.py",
+                "src/us_quant/macro_factor_tilt.py",
+                "src/us_quant/sector_growth_balance.py", "config/sector-growth-balance.json",
+                "src/us_quant/calendar.py", "src/us_quant/storage.py",
+            ]
         if any(relative not in frozen for relative in required):
             raise QuantError("The registered strategy is missing a frozen helper dependency.")
         for relative in required:
@@ -625,6 +636,10 @@ def registered_targets(
             cache[key] = build_targets(data, policy)[spec["id"]]
         elif name == "implied_risk_balance":
             from us_quant.implied_risk_balance import build_targets
+
+            cache[key] = build_targets(data, policy)[spec["id"]]
+        elif name == "skew_factor_guard":
+            from us_quant.skew_factor_guard import build_targets
 
             cache[key] = build_targets(data, policy)[spec["id"]]
         elif name == "sector_term_guard":
