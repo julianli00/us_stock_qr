@@ -6410,7 +6410,7 @@ retains daily collection / Saturday research without claiming timer
 delivery from configuration alone.
 **This is new source research, not a qualified strategy; the full goal remains unmet.**
 
-## Monthly housing pipeline confirmations: registered before accounts
+## Monthly housing pipeline confirmations: both rejected under full gates
 
 The [frozen strategy policy](research/workbench/config/housing-factor-guard.json)
 compares a decline in the earlier authorization stage with the same
@@ -6473,6 +6473,69 @@ W42 plans / IJR-PKW quota and both frozen zero-return forward models
 remain unchanged. Prior current-76 selection inference does not cover
 these two housing or the two later SKEW trials, nor the full search.
 **No housing performance or investment qualification is claimed at registration.**
+
+Actual remote publication
+`3350918b83e3d98ffd60e59b8e801d4e2a92783a` precedes the
+01:16:36.404238UTC durable fence and both new account calculations.
+The [independently verified complete results](research/workbench/evidence/housing_guard_20261012_results.json)
+retain every path:
+
+| Housing rule | Window | Costs | CAGR | Net excess Sharpe | Maximum drawdown |
+|---|---|---|---:|---:|---:|
+| Permit decline | 10y | Base | 12.9429% | 0.95581 | 17.9170% |
+| Permit decline | 10y | Stress | 12.3428% | 0.90459 | 17.7400% |
+| Permit decline | 5y | Base | 15.4825% | 1.02307 | 14.4765% |
+| Permit decline | 5y | Stress | 14.5691% | 0.94694 | 14.2807% |
+| Permit + starts | 10y | Base | 14.6459% | 0.96919 | 17.9149% |
+| Permit + starts | 10y | Stress | 13.3616% | 0.87763 | 19.4910% |
+| Permit + starts | 5y | Base | 16.3599% | 0.91359 | 17.9745% |
+| Permit + starts | 5y | Stress | 14.5895% | 0.79839 | 19.6538% |
+
+**The permit-only five-year base path passes all three gates,
+but both complete configurations remain rejected.**
+Its five-year stress return/drawdown pass while Sharpe 0.94694 fails.
+Every ten-year Sharpe, drawdown and SPY comparison fails for both rules.
+Joint-stage confirmation misses every Sharpe/drawdown gate, despite
+all five-year SPY return comparisons passing.
+The complete permit-only / jointly confirmed worst drawdowns are
+17.9170% / 19.6538%, with minimum Sharpe 0.90459 / 0.79839.
+No stage, comparison horizon, half scale, source age, pause, clock or
+fee is refitted, and partial successes are not spliced or promoted.
+
+The independently identified ten-year base worst episode is
+2020-02-19 through 2020-03-20; the permit-only stress peak is 2020-02-21.
+The other worst episodes are 2022-03-08 through 2022-10-14.
+Frozen inputs on 2020-02-28 still describe January housing and show
+rising authorization and starts. Permit decline appears at the
+March month end; both stages decline at the April month end,
+after the March trough. This is descriptive timing evidence,
+not a causal decomposition or justification to backdate a release
+or refit a faster rule to the known crash.
+
+The [account proof](research/workbench/evidence/housing_guard_20261012_reproducibility.json)
+checks 16 funded strategy/SPY and 16 independent bt accounts,
+30,128 actual-price funding/fee/cash-flow days and all 56
+pause-due-day no-order/no-cost/positive-non-BIL-risk checks.
+Seeded target error is zero; scalar metric, independent wealth
+and cash-flow errors are at most 4.36e-14, USD6.55e-11 and USD1.10e-11.
+All formal returns, fresh capital and initial-capital drawdown peaks remain.
+The strict 436-fresh/14-stale source is still blocked, not repaired
+by its separately frozen strategy no-request law.
+
+The [current snapshot](research/workbench/evidence/research_program_housing_guard_results_v87.json)
+contains **164 completed configurations = 84 prior + 80 recurring reviews**,
+82 registered versions including two old invalid ones, no pending
+candidate and no champion.
+The [full source-bound audit](research/workbench/evidence/research_program_source_bound_audit_v56.json)
+reexecutes all 80 reviews / 320 paths, preserving 19 legacy and 61 funded-v2 reviews.
+The [preservation proof](research/workbench/evidence/housing_guard_20261012_preservation.json)
+retains every old row/event prefix, seven profiles, 69 imports,
+3,192 controls, 26 old selection artifacts and the original W42 plans.
+The fixed current-76 conditional inference does not cover the
+two new housing or two later SKEW trials.
+The [native update](research/workbench/evidence/prospective_data_automation_v59.json)
+retains daily/weekly cadence and both unchanged zero-return forward models.
+**The full investment objective remains unmet.**
 
 ## Progress and publication
 

@@ -1,0 +1,367 @@
+{
+  "W42_original_queue_or_frozen_forward_rules_changed": false,
+  "actual_remote_verification_at": "2026-10-12T01:16:36.404238+00:00",
+  "candidate_reviews": [
+    {
+      "candidate_id": "semiconductor_housing_permit_decline_half",
+      "configuration": {
+        "housing_confirmation": "permit_decline",
+        "id": "semiconductor_housing_permit_decline_half"
+      },
+      "historical_gates_passed": false,
+      "independent_forward_validation": false,
+      "order_authority": false,
+      "paths": [
+        {
+          "benchmark": {
+            "cagr": 0.1546199793311418,
+            "end": "2026-10-05",
+            "max_drawdown": 0.3371727532125359,
+            "sessions": 2512,
+            "sharpe": 0.7558900902911541,
+            "start": "2016-10-06"
+          },
+          "cost_bps": 5.0,
+          "delay_sessions": 1,
+          "gates": {
+            "beats_spy": false,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": false
+          },
+          "metrics": {
+            "cagr": 0.1294292789750231,
+            "end": "2026-10-05",
+            "max_drawdown": 0.17917003531185938,
+            "sessions": 2512,
+            "sharpe": 0.955814263546519,
+            "start": "2016-10-06"
+          },
+          "scenario": "base",
+          "total_cost_usd": 1064.2957132450676,
+          "total_orders": 753,
+          "worst_drawdown_episode": {
+            "drawdown": 0.17917003531185938,
+            "peak_session": "2020-02-19",
+            "trough_session": "2020-03-20"
+          },
+          "years": 10
+        },
+        {
+          "benchmark": {
+            "cagr": 0.15405636613916607,
+            "end": "2026-10-05",
+            "max_drawdown": 0.3371727532125357,
+            "sessions": 2512,
+            "sharpe": 0.7531241378409322,
+            "start": "2016-10-06"
+          },
+          "cost_bps": 20.0,
+          "delay_sessions": 2,
+          "gates": {
+            "also_beats_base_cost_spy": false,
+            "beats_spy": false,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": false
+          },
+          "metrics": {
+            "cagr": 0.12342821050544828,
+            "end": "2026-10-05",
+            "max_drawdown": 0.17739955778615968,
+            "sessions": 2512,
+            "sharpe": 0.9045850962968813,
+            "start": "2016-10-06"
+          },
+          "scenario": "stress",
+          "total_cost_usd": 1962.3025929922371,
+          "total_orders": 753,
+          "worst_drawdown_episode": {
+            "drawdown": 0.17739955778615968,
+            "peak_session": "2020-02-21",
+            "trough_session": "2020-03-20"
+          },
+          "years": 10
+        },
+        {
+          "benchmark": {
+            "cagr": 0.14040855610470793,
+            "end": "2026-10-05",
+            "max_drawdown": 0.24496383714703274,
+            "sessions": 1254,
+            "sharpe": 0.6303911363155571,
+            "start": "2021-10-06"
+          },
+          "cost_bps": 5.0,
+          "delay_sessions": 1,
+          "gates": {
+            "beats_spy": true,
+            "drawdown_at_most_15pct": true,
+            "sharpe_above_1": true
+          },
+          "metrics": {
+            "cagr": 0.154824782829583,
+            "end": "2026-10-05",
+            "max_drawdown": 0.1447650744285801,
+            "sessions": 1254,
+            "sharpe": 1.0230732345120197,
+            "start": "2021-10-06"
+          },
+          "scenario": "base",
+          "total_cost_usd": 489.88674421212414,
+          "total_orders": 363,
+          "worst_drawdown_episode": {
+            "drawdown": 0.1447650744285801,
+            "peak_session": "2022-03-08",
+            "trough_session": "2022-10-14"
+          },
+          "years": 5
+        },
+        {
+          "benchmark": {
+            "cagr": 0.13528280366429257,
+            "end": "2026-10-05",
+            "max_drawdown": 0.24496383714703285,
+            "sessions": 1254,
+            "sharpe": 0.6043080883068029,
+            "start": "2021-10-06"
+          },
+          "cost_bps": 20.0,
+          "delay_sessions": 2,
+          "gates": {
+            "also_beats_base_cost_spy": true,
+            "beats_spy": true,
+            "drawdown_at_most_15pct": true,
+            "sharpe_above_1": false
+          },
+          "metrics": {
+            "cagr": 0.1456907986799103,
+            "end": "2026-10-05",
+            "max_drawdown": 0.14280687522562185,
+            "sessions": 1254,
+            "sharpe": 0.9469423458538281,
+            "start": "2021-10-06"
+          },
+          "scenario": "stress",
+          "total_cost_usd": 857.7553366259376,
+          "total_orders": 363,
+          "worst_drawdown_episode": {
+            "drawdown": 0.14280687522562185,
+            "peak_session": "2022-03-08",
+            "trough_session": "2022-10-14"
+          },
+          "years": 5
+        }
+      ],
+      "registered_at": "2026-10-12T01:11:38.218725+00:00",
+      "reviewed_at": "2026-10-12T01:16:39.256015+00:00",
+      "status": "rejected_historical"
+    },
+    {
+      "candidate_id": "semiconductor_housing_permit_starts_decline_half",
+      "configuration": {
+        "housing_confirmation": "permit_and_starts_decline",
+        "id": "semiconductor_housing_permit_starts_decline_half"
+      },
+      "historical_gates_passed": false,
+      "independent_forward_validation": false,
+      "order_authority": false,
+      "paths": [
+        {
+          "benchmark": {
+            "cagr": 0.1546199793311418,
+            "end": "2026-10-05",
+            "max_drawdown": 0.3371727532125359,
+            "sessions": 2512,
+            "sharpe": 0.7558900902911541,
+            "start": "2016-10-06"
+          },
+          "cost_bps": 5.0,
+          "delay_sessions": 1,
+          "gates": {
+            "beats_spy": false,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": false
+          },
+          "metrics": {
+            "cagr": 0.14645908683202813,
+            "end": "2026-10-05",
+            "max_drawdown": 0.17914928206156489,
+            "sessions": 2512,
+            "sharpe": 0.9691909959895791,
+            "start": "2016-10-06"
+          },
+          "scenario": "base",
+          "total_cost_usd": 1080.4911539083132,
+          "total_orders": 733,
+          "worst_drawdown_episode": {
+            "drawdown": 0.17914928206156489,
+            "peak_session": "2020-02-19",
+            "trough_session": "2020-03-20"
+          },
+          "years": 10
+        },
+        {
+          "benchmark": {
+            "cagr": 0.15405636613916607,
+            "end": "2026-10-05",
+            "max_drawdown": 0.3371727532125357,
+            "sessions": 2512,
+            "sharpe": 0.7531241378409322,
+            "start": "2016-10-06"
+          },
+          "cost_bps": 20.0,
+          "delay_sessions": 2,
+          "gates": {
+            "also_beats_base_cost_spy": false,
+            "beats_spy": false,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": false
+          },
+          "metrics": {
+            "cagr": 0.1336155786072304,
+            "end": "2026-10-05",
+            "max_drawdown": 0.19491030970641798,
+            "sessions": 2512,
+            "sharpe": 0.8776293653652874,
+            "start": "2016-10-06"
+          },
+          "scenario": "stress",
+          "total_cost_usd": 2039.3285827547695,
+          "total_orders": 733,
+          "worst_drawdown_episode": {
+            "drawdown": 0.19491030970641798,
+            "peak_session": "2022-03-08",
+            "trough_session": "2022-10-14"
+          },
+          "years": 10
+        },
+        {
+          "benchmark": {
+            "cagr": 0.14040855610470793,
+            "end": "2026-10-05",
+            "max_drawdown": 0.24496383714703274,
+            "sessions": 1254,
+            "sharpe": 0.6303911363155571,
+            "start": "2021-10-06"
+          },
+          "cost_bps": 5.0,
+          "delay_sessions": 1,
+          "gates": {
+            "beats_spy": true,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": false
+          },
+          "metrics": {
+            "cagr": 0.16359929287853903,
+            "end": "2026-10-05",
+            "max_drawdown": 0.17974505944712882,
+            "sessions": 1254,
+            "sharpe": 0.913593435795296,
+            "start": "2021-10-06"
+          },
+          "scenario": "base",
+          "total_cost_usd": 470.5887477695964,
+          "total_orders": 349,
+          "worst_drawdown_episode": {
+            "drawdown": 0.17974505944712882,
+            "peak_session": "2022-03-08",
+            "trough_session": "2022-10-14"
+          },
+          "years": 5
+        },
+        {
+          "benchmark": {
+            "cagr": 0.13528280366429257,
+            "end": "2026-10-05",
+            "max_drawdown": 0.24496383714703285,
+            "sessions": 1254,
+            "sharpe": 0.6043080883068029,
+            "start": "2021-10-06"
+          },
+          "cost_bps": 20.0,
+          "delay_sessions": 2,
+          "gates": {
+            "also_beats_base_cost_spy": true,
+            "beats_spy": true,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": false
+          },
+          "metrics": {
+            "cagr": 0.145895454279922,
+            "end": "2026-10-05",
+            "max_drawdown": 0.1965381135228832,
+            "sessions": 1254,
+            "sharpe": 0.7983911670973256,
+            "start": "2021-10-06"
+          },
+          "scenario": "stress",
+          "total_cost_usd": 813.0736604167461,
+          "total_orders": 349,
+          "worst_drawdown_episode": {
+            "drawdown": 0.1965381135228832,
+            "peak_session": "2022-03-08",
+            "trough_session": "2022-10-14"
+          },
+          "years": 5
+        }
+      ],
+      "registered_at": "2026-10-12T01:11:41.150620+00:00",
+      "reviewed_at": "2026-10-12T01:16:43.930000+00:00",
+      "status": "rejected_historical"
+    }
+  ],
+  "completed_at": "2026-10-12T01:16:46.162027+00:00",
+  "completed_recurring_reviews": 80,
+  "historically_qualified_candidates": 0,
+  "housing_stage_information_claimed_independent_alpha_or_recession_labels": false,
+  "housing_stage_sign63horizon_halfscale_or_known_source_age_refitted_after_returns": false,
+  "investment_objective_verified": false,
+  "known_source_pause_filled_or_formal_return_days_removed": false,
+  "new2housing_trials_claimed_covered_by_old76selection_inference": false,
+  "new_economic_factor_definitions": 0,
+  "new_strategy_evaluations": 2,
+  "old_selection_covers_all164unknownsearch_or_independent_future": false,
+  "order_authority": false,
+  "original_factor_budgets_funding_costs_and_monthly_clock_preserved": true,
+  "original_forward_sessions": 0,
+  "published_registration_commit": "3350918b83e3d98ffd60e59b8e801d4e2a92783a",
+  "raw_source_quotes_targets_accounts_or_held_positions_published": false,
+  "registered_candidate_versions_including_two_invalid": 82,
+  "registered_factor_definitions": 6,
+  "registration_sha256": "45dab51430fdc8729dd7a4f21b081130ba819b6782813468b7f7d7620da7519f",
+  "schema_version": 1,
+  "separate_dollar_forward_sessions": 0,
+  "started_at": "2026-10-12T01:16:36.405305+00:00",
+  "status": "completed_independently_verified",
+  "strict_housing_source_readiness_repaired": false,
+  "total_completed_strategy_configurations": 164,
+  "verified_target_counts": {
+    "semiconductor_housing_permit_decline_half": {
+      "half_risk_months": 58,
+      "issued_targets": 124,
+      "known_no_request_months": [
+        "2025-11-28",
+        "2025-12-31",
+        "2026-01-30",
+        "2026-02-27",
+        "2026-03-31",
+        "2026-04-30",
+        "2026-07-31"
+      ],
+      "original_monthly_decisions": 131
+    },
+    "semiconductor_housing_permit_starts_decline_half": {
+      "half_risk_months": 35,
+      "issued_targets": 124,
+      "known_no_request_months": [
+        "2025-11-28",
+        "2025-12-31",
+        "2026-01-30",
+        "2026-02-27",
+        "2026-03-31",
+        "2026-04-30",
+        "2026-07-31"
+      ],
+      "original_monthly_decisions": 131
+    }
+  }
+}
