@@ -6948,6 +6948,60 @@ Oldcurrent76conditionalinference does not cover these or the eight
 later trials/fullsearch/futurealpha.
 **No complementary portfolio outcomes exist at registration.**
 
+Actual remote publication
+`996f87a11e77e8980a9c6602132f5f1cb537352a` precedes the
+06:50:35.034882UTC durable fence and every new feedback account.
+The [independently verified complete results](research/workbench/evidence/profit_term_20261012_results.json)
+retain both earnings/option constructions:
+
+| Complementary rule | Window | Costs | CAGR | Net excess Sharpe | Maximum drawdown |
+|---|---|---|---:|---:|---:|
+| Level OR pressure | 10y | Base | 17.2162% | 1.07891 | 18.2241% |
+| Level OR pressure | 10y | Stress | 16.6269% | 1.03861 | 18.5174% |
+| Level OR pressure | 5y | Base | 22.9522% | 1.14330 | 18.2927% |
+| Level OR pressure | 5y | Stress | 21.5935% | 1.07207 | 18.6544% |
+| Share OR pressure | 10y | Base | 16.2046% | 1.04726 | 18.2258% |
+| Share OR pressure | 10y | Stress | 15.7983% | 1.01964 | 18.5201% |
+| Share OR pressure | 5y | Base | 21.2765% | 1.10015 | 18.2927% |
+| Share OR pressure | 5y | Stress | 20.5432% | 1.06192 | 18.6544% |
+
+**All eight Sharpe/cost-matched-SPY and four stress/base-SPY gates pass,
+but every drawdown gate fails; both complete configurations remain rejected.**
+Both worst drawdowns are 18.6544%, still above15%, with minimum
+Sharpe1.03861/1.01964.
+Adding four/six option-only monthly risk checks does not establish the
+required stability. Identical worst-drawdown values do not make different
+wealth paths, source decisions or risk exposures identical or independent.
+No ORlogic,threshold1,scale,frequency,quarterage,own-query63horizon,
+band,sourceallocation,clock or fee is refitted.
+Passing high returns cannot be joined to a different old version's
+13.59%drawdown to construct a qualified strategy.
+
+The [independent account proof](research/workbench/evidence/profit_term_20261012_reproducibility.json)
+checks all common-query/term-input hashes, 728 actual holding-gap/
+initial/queue decisions, 16fundedstrategy/SPY and16independentbt
+accounts across30,128 price/quantity/funding/fee/cash-flow days.
+Issued-target error iszero; metric/wealth/cash-flow errors are at most
+3.78e-14/USD6.55e-11/USD1.44e-11.
+Every original capital anchor,initialpeak,returnday,fee and delayed
+pending target remains.
+
+The [current snapshot](research/workbench/evidence/research_program_profit_term_results_v93.json)
+contains **170 completed configurations =84prior+86recurringreviews**,
+88registeredversions including two old invalid ones,no pending candidate
+andno champion.
+The [full source-bound audit](research/workbench/evidence/research_program_source_bound_audit_v59.json)
+reexecutes86reviews/344paths,retaining19legacy and67funded-v2 reviews
+without altering any old outcome.
+The [preservation proof](research/workbench/evidence/profit_term_20261012_preservation.json)
+retains old rows/event prefix,7profiles,69imports,3,192controls,
+26selection artifacts,W42plans andsource-recovery fingerprint/
+cooldown/zeroGET.
+The fixed current-76 inference excludes the ten later trials.
+The [native update](research/workbench/evidence/prospective_data_automation_v64.json)
+retains daily/weekly cadence and both frozen zero-return forward models.
+**The full investment objective remains unmet.**
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
