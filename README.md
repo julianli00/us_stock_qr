@@ -7060,6 +7060,39 @@ with already-collected inputs and no new observed model session. This verifies
 continuity, not new returns, source coverage or a qualified strategy. The
 terminal dividend-source stop and both frozen forward experiments remain.
 
+## Point-in-time unemployment source, not a strategy result
+
+The [frozen source policy](research/workbench/config/unemployment-inputs.json)
+adds actual BLS household-survey U-3 unemployment, not weekly insured claims,
+payrolls or a tradable return. Five primary documents, six bounded ALFRED
+batches and a separately acquired three-date probe retain all 225 original
+second-prior-NYSE snapshots and the original market/query windows.
+
+The [independent source proof](research/workbench/evidence/unemployment_input_readiness_20261012.json)
+checks each snapshot's latest observation and required 15-month history with
+native CSV/Decimal values. **210 queries have complete history; 15 are blocked**
+by the missing October 2025 observation. All latest-period ages are at most
+61 days, within the unchanged 62-day limit: missing history, not staleness,
+is the blocker. No value is filled, interpolated or replaced with today's
+revised history, and complete source readiness remains false.
+
+Two actual HTTP 200 responses initially exposed local title-validation errors:
+the source changed from "Civilian Unemployment Rate" to "Unemployment Rate"
+on September 6, 2019, and each archive includes only title intervals relevant
+to its requested cohort. The exact dated identities and BLS source code are
+now checked; original code, errors and responses remain private. Successful
+probe/batch requests were not repeated, and the numeric/source contract
+was not relaxed.
+
+No unemployment rolling statistic, Sahm threshold, recession label, portfolio
+target or account is computed here. A retrospectively available real-time
+indicator is not proof that its later policy rule was deployed in earlier
+years. A different latest-observation strategy would need a separately frozen
+contract and independent verification; it cannot relabel this 15-month source
+as complete. The [preservation proof](research/workbench/evidence/unemployment_input_preservation_20261012.json)
+retains **170 configurations / 86 reviews**, no champion, the terminal dividend
+stop, original weekly eligibility and both frozen forward experiments.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

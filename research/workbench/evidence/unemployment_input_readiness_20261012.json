@@ -1,0 +1,288 @@
+{
+  "BLS_source_code": "LNS14000000",
+  "Sahm_rolling_gap_threshold_recession_label_or_portfolio_computed": false,
+  "actual_batches": 6,
+  "actual_vintage_snapshots": 225,
+  "all_full_raw_probe_histories_match_batches": true,
+  "all_original_queries_and_two_prior_nyse_vintages_independently_verified": true,
+  "blocked_queries": 15,
+  "blocked_query_metadata": [
+    {
+      "completed_period_age_calendar_days": 29,
+      "completed_period_end": "2025-11-30",
+      "consecutive_history_months": 15,
+      "history_start_month": "2024-09-01",
+      "missing_history_months": [
+        "2025-10-01"
+      ],
+      "observation_month": "2025-11-01",
+      "query_session": "2025-12-29",
+      "source_error": "All15consecutive monthly values must exist in the same original vintage;no fill or shortening.",
+      "status": "blocked_source",
+      "vintage_cutoff": "2025-12-24"
+    },
+    {
+      "completed_period_age_calendar_days": 31,
+      "completed_period_end": "2025-11-30",
+      "consecutive_history_months": 15,
+      "history_start_month": "2024-09-01",
+      "missing_history_months": [
+        "2025-10-01"
+      ],
+      "observation_month": "2025-11-01",
+      "query_session": "2025-12-31",
+      "source_error": "All15consecutive monthly values must exist in the same original vintage;no fill or shortening.",
+      "status": "blocked_source",
+      "vintage_cutoff": "2025-12-29"
+    },
+    {
+      "completed_period_age_calendar_days": 29,
+      "completed_period_end": "2025-12-31",
+      "consecutive_history_months": 15,
+      "history_start_month": "2024-10-01",
+      "missing_history_months": [
+        "2025-10-01"
+      ],
+      "observation_month": "2025-12-01",
+      "query_session": "2026-01-29",
+      "source_error": "All15consecutive monthly values must exist in the same original vintage;no fill or shortening.",
+      "status": "blocked_source",
+      "vintage_cutoff": "2026-01-27"
+    },
+    {
+      "completed_period_age_calendar_days": 30,
+      "completed_period_end": "2025-12-31",
+      "consecutive_history_months": 15,
+      "history_start_month": "2024-10-01",
+      "missing_history_months": [
+        "2025-10-01"
+      ],
+      "observation_month": "2025-12-01",
+      "query_session": "2026-01-30",
+      "source_error": "All15consecutive monthly values must exist in the same original vintage;no fill or shortening.",
+      "status": "blocked_source",
+      "vintage_cutoff": "2026-01-28"
+    },
+    {
+      "completed_period_age_calendar_days": 27,
+      "completed_period_end": "2026-01-31",
+      "consecutive_history_months": 15,
+      "history_start_month": "2024-11-01",
+      "missing_history_months": [
+        "2025-10-01"
+      ],
+      "observation_month": "2026-01-01",
+      "query_session": "2026-02-27",
+      "source_error": "All15consecutive monthly values must exist in the same original vintage;no fill or shortening.",
+      "status": "blocked_source",
+      "vintage_cutoff": "2026-02-25"
+    },
+    {
+      "completed_period_age_calendar_days": 30,
+      "completed_period_end": "2026-02-28",
+      "consecutive_history_months": 15,
+      "history_start_month": "2024-12-01",
+      "missing_history_months": [
+        "2025-10-01"
+      ],
+      "observation_month": "2026-02-01",
+      "query_session": "2026-03-30",
+      "source_error": "All15consecutive monthly values must exist in the same original vintage;no fill or shortening.",
+      "status": "blocked_source",
+      "vintage_cutoff": "2026-03-26"
+    },
+    {
+      "completed_period_age_calendar_days": 31,
+      "completed_period_end": "2026-02-28",
+      "consecutive_history_months": 15,
+      "history_start_month": "2024-12-01",
+      "missing_history_months": [
+        "2025-10-01"
+      ],
+      "observation_month": "2026-02-01",
+      "query_session": "2026-03-31",
+      "source_error": "All15consecutive monthly values must exist in the same original vintage;no fill or shortening.",
+      "status": "blocked_source",
+      "vintage_cutoff": "2026-03-27"
+    },
+    {
+      "completed_period_age_calendar_days": 30,
+      "completed_period_end": "2026-03-31",
+      "consecutive_history_months": 15,
+      "history_start_month": "2025-01-01",
+      "missing_history_months": [
+        "2025-10-01"
+      ],
+      "observation_month": "2026-03-01",
+      "query_session": "2026-04-30",
+      "source_error": "All15consecutive monthly values must exist in the same original vintage;no fill or shortening.",
+      "status": "blocked_source",
+      "vintage_cutoff": "2026-04-28"
+    },
+    {
+      "completed_period_age_calendar_days": 29,
+      "completed_period_end": "2026-04-30",
+      "consecutive_history_months": 15,
+      "history_start_month": "2025-02-01",
+      "missing_history_months": [
+        "2025-10-01"
+      ],
+      "observation_month": "2026-04-01",
+      "query_session": "2026-05-29",
+      "source_error": "All15consecutive monthly values must exist in the same original vintage;no fill or shortening.",
+      "status": "blocked_source",
+      "vintage_cutoff": "2026-05-27"
+    },
+    {
+      "completed_period_age_calendar_days": 32,
+      "completed_period_end": "2026-04-30",
+      "consecutive_history_months": 15,
+      "history_start_month": "2025-02-01",
+      "missing_history_months": [
+        "2025-10-01"
+      ],
+      "observation_month": "2026-04-01",
+      "query_session": "2026-06-01",
+      "source_error": "All15consecutive monthly values must exist in the same original vintage;no fill or shortening.",
+      "status": "blocked_source",
+      "vintage_cutoff": "2026-05-28"
+    },
+    {
+      "completed_period_age_calendar_days": 30,
+      "completed_period_end": "2026-05-31",
+      "consecutive_history_months": 15,
+      "history_start_month": "2025-03-01",
+      "missing_history_months": [
+        "2025-10-01"
+      ],
+      "observation_month": "2026-05-01",
+      "query_session": "2026-06-30",
+      "source_error": "All15consecutive monthly values must exist in the same original vintage;no fill or shortening.",
+      "status": "blocked_source",
+      "vintage_cutoff": "2026-06-26"
+    },
+    {
+      "completed_period_age_calendar_days": 31,
+      "completed_period_end": "2026-05-31",
+      "consecutive_history_months": 15,
+      "history_start_month": "2025-03-01",
+      "missing_history_months": [
+        "2025-10-01"
+      ],
+      "observation_month": "2026-05-01",
+      "query_session": "2026-07-01",
+      "source_error": "All15consecutive monthly values must exist in the same original vintage;no fill or shortening.",
+      "status": "blocked_source",
+      "vintage_cutoff": "2026-06-29"
+    },
+    {
+      "completed_period_age_calendar_days": 31,
+      "completed_period_end": "2026-06-30",
+      "consecutive_history_months": 15,
+      "history_start_month": "2025-04-01",
+      "missing_history_months": [
+        "2025-10-01"
+      ],
+      "observation_month": "2026-06-01",
+      "query_session": "2026-07-31",
+      "source_error": "All15consecutive monthly values must exist in the same original vintage;no fill or shortening.",
+      "status": "blocked_source",
+      "vintage_cutoff": "2026-07-29"
+    },
+    {
+      "completed_period_age_calendar_days": 31,
+      "completed_period_end": "2026-07-31",
+      "consecutive_history_months": 15,
+      "history_start_month": "2025-05-01",
+      "missing_history_months": [
+        "2025-10-01"
+      ],
+      "observation_month": "2026-07-01",
+      "query_session": "2026-08-31",
+      "source_error": "All15consecutive monthly values must exist in the same original vintage;no fill or shortening.",
+      "status": "blocked_source",
+      "vintage_cutoff": "2026-08-27"
+    },
+    {
+      "completed_period_age_calendar_days": 30,
+      "completed_period_end": "2026-08-31",
+      "consecutive_history_months": 15,
+      "history_start_month": "2025-06-01",
+      "missing_history_months": [
+        "2025-10-01"
+      ],
+      "observation_month": "2026-08-01",
+      "query_session": "2026-09-30",
+      "source_error": "All15consecutive monthly values must exist in the same original vintage;no fill or shortening.",
+      "status": "blocked_source",
+      "vintage_cutoff": "2026-09-28"
+    }
+  ],
+  "coupled_source_contract_cases_passed": 138,
+  "current_UNRATE_or_retroactive_SAHMREALTIME_history_substituted": false,
+  "exact_title_intervals_scoped_to_each_requested_cohort": true,
+  "existing_W42_or_forward_rules_changed": false,
+  "fresh_complete_queries": 210,
+  "full_readiness_error": "All15consecutive monthly values must exist in the same original vintage;no fill or shortening.",
+  "full_source_readiness": false,
+  "independent_decimal_maximum_value_error": 0.0,
+  "independent_verifier_sha256": "f92dbebc75605830657e0e6e6552ede956ef360a5d442d5e4aff72468a7ba814",
+  "investment_objective_verified": false,
+  "maximum_actual_completed_month_age_days": 61,
+  "maximum_allowed_completed_month_age_days": 62,
+  "native_frequency": "Monthly",
+  "native_seasonal_adjustment": "Seasonally Adjusted",
+  "native_units": "Percent",
+  "new_registered_factor_definitions_candidates_or_evaluations": 0,
+  "order_authority": false,
+  "ordinary_actual_GET_document_requests": 5,
+  "ordinary_actual_POST_archive_requests": 7,
+  "original_Sahm_rule_publicly_deployed_before_its_proposal_assumed": false,
+  "original_local_title_parser_failures_code_logs_and_http200_responses_preserved": true,
+  "original_market_context_sessions": 2805,
+  "original_monthly_reference_pairs": 131,
+  "policy": {
+    "path": "config/unemployment-inputs.json",
+    "sha256": "d0341eed0cfea14b430598aa31dcd24824778065b7883435c8c9b15acce4c687"
+  },
+  "primary_documents": {
+    "Sahm_current_definition": {
+      "sha256": "c27bdbc277d2cefc96365c05a0ffe6f69f12e831914ad5296ea53c28bf42a764",
+      "url": "https://fred.stlouisfed.org/series/SAHMCURRENT"
+    },
+    "Sahm_realtime_definition": {
+      "sha256": "809c6f866d2222271e95b846cd52d9bee6a2186a80816ab3e0ab1ca77eaa85f7",
+      "url": "https://fred.stlouisfed.org/series/SAHMREALTIME"
+    },
+    "UNRATE": {
+      "sha256": "4e9290d9e31323464992d856e16b4ddfdabcc2205cc95f76f72d108629857b96",
+      "url": "https://fred.stlouisfed.org/series/UNRATE"
+    },
+    "UNRATE_form": {
+      "sha256": "496b6799bf6fcc0ed4b5c91477bc43d0e6874800c78ae9f228c4781c30c10354",
+      "url": "https://alfred.stlouisfed.org/series/downloaddata?seid=UNRATE"
+    },
+    "original_policy_proposal": {
+      "sha256": "040887221f90496a290e770b8db49f1150739fefeb6faf6026f028416dfd3589",
+      "url": "https://www.hamiltonproject.org/publication/policy-proposal/direct-stimulus-payments-to-individuals/"
+    }
+  },
+  "private_source_manifest": {
+    "path": "data/unemployment-inputs-20261012/manifest.json",
+    "sha256": "c4f73b5202765fda2401290334103ae27f5fc52f357253be7b28869a5b818443"
+  },
+  "raw_source_documents_requests_or_full_input_matrix_published": false,
+  "required_consecutive_months_per_query": 15,
+  "required_history_cells": 3375,
+  "saved_successful_probe_or_batch_requests_repeated": false,
+  "schema_version": 1,
+  "separate_probe_snapshots": 3,
+  "series": "UNRATE",
+  "source_only_does_not_establish_new_independent_factor_or_alpha": true,
+  "source_units_values_population_date_lag_age_history_contract_changed_for_parser_fix": false,
+  "source_validator_sha256": "f456428bba317325cb9fa77c83953448e644c0b51dcc51f316f592f25207e1bf",
+  "status": "archives_complete_source_readiness_blocked",
+  "study_id": "unemployment_vintage_source_20261012",
+  "title_changed_from_civilian_to_unemployment_rate_on": "2019-09-06",
+  "verified_at": "2026-10-12T13:48:25.001674+00:00"
+}

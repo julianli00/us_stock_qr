@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "study_id": "unemployment_vintage_source_20261012",
+  "scope": "historical_monthly_source_readiness_only",
+  "series": "UNRATE",
+  "data_start": "2015-08-10",
+  "as_of": "2026-10-05",
+  "source_observation_start": "2014-01-01",
+  "source_observation_end": "2026-09-01",
+  "source_index": {
+    "path": "data/macro-tilt-prepared-20261010/close.csv",
+    "sha256": "b098f783bbf7a4ca56520e11c6e13edbb0eb2673ed7aaec02b89981ff74fabce"
+  },
+  "research_snapshot": {
+    "path": "evidence/research_program_profit_term_results_v93.json",
+    "sha256": "b31ebb31d600c3ec169d7ae911c5ed9588f1c35d0d8d52d9e4b9eb7930e9b35d"
+  },
+  "previous_preservation": {
+    "path": "evidence/dividend_source_recovery_20261012_attempt_preservation.json",
+    "sha256": "0d991be60987daadf371b0a6c8663c0091ffc428f5229d2c16806102c674a28f"
+  },
+  "monthly_reference_pairs": 131,
+  "query_sessions": 225,
+  "required_vintage_dates": 225,
+  "vintage_cutoff": "second_previous_nyse_session",
+  "maximum_completed_period_age_days": 62,
+  "required_consecutive_months_per_query": 15,
+  "freshness_basis": "query_date_minus_latest_completed_observation_month_end",
+  "missing_stale_or_unverified_input": "block_source_readiness_preserve_failure_no_fill_or_standby_strategy",
+  "maximum_dates_per_request": 40,
+  "maximum_entered_dates_characters": 500,
+  "independent_probe_dates": ["2015-08-27", "2021-02-24", "2026-09-28"],
+  "primary_definitions": {
+    "UNRATE": "https://fred.stlouisfed.org/series/UNRATE",
+    "UNRATE_form": "https://alfred.stlouisfed.org/series/downloaddata?seid=UNRATE",
+    "Sahm_realtime_definition": "https://fred.stlouisfed.org/series/SAHMREALTIME",
+    "Sahm_current_definition": "https://fred.stlouisfed.org/series/SAHMCURRENT",
+    "original_policy_proposal": "https://www.hamiltonproject.org/publication/policy-proposal/direct-stimulus-payments-to-individuals/"
+  },
+  "methodology": {
+    "economic_information": "UNRATE is the monthly seasonally adjusted U-3 unemployment rate from the BLS household Current Population Survey,source code LNS14000000,expressed as percent of the civilian labor force. It is not weekly insured initial claims,nonfarm payrolls,a stock return or a tradable factor.",
+    "prior_art": "Existing ICSA claims and CFNAI activity information already describe related labor and business-cycle risks. UNRATE adds a distinct observable definition,not an independently proven factor family,incremental alpha or a new catalog admission.",
+    "vintages": "Use every original225query's second-prior-NYSE ALFREDsnapshot,including that snapshot's own history and seasonal revisions. Current UNRATEhistory and the retrospectively calculated SAHMREALTIMEseries cannot substitute for historical availability or prove that the later policy rule was publicly deployed in earlier years.",
+    "source_history": "Require15consecutive actual monthly observations ending at each snapshot's latest completed month. This admits enough history for a separately frozen current3month mean and12prior3month means without computing that statistic,a threshold,state or portfolio here. Missing internal observations and unknown gaps are fatal;do not shorten the lookback or interpolate.",
+    "freshness": "Retain the existing62calendar-day monthly completed-period-age boundary. Month-start labels are observation periods,not release dates;the vintage must precede the query by two actualNYSEsessions. Do not treat today's download time as original availability or relax freshness after observing failures.",
+    "Sahm_context": "Primary documentation describes a0.50percentage-point increase of the3month unemployment mean relative to its preceding12month low as a recession-policy trigger. It is neither a guaranteed investment signal nor a financial-market lead. Real-time and current-history constructions differ because unemployment seasonal factors revise. No Sahm values or recession labels are acquired or computed in this source-only study.",
+    "preservation": "Keep170completed configurations/86reviews/88versions,6definitions5families,engine/eventhead,all old ledger rows,sevenprofiles,69imports/3192controls/26oldselection,W42fourplans/two-definition quota and both0-return forward experiments. Preserve the existing dividend recovery terminal429 and prohibit further acquisition.",
+    "source_policy": "Only ordinary primary GET and the publicly advertised ALFREDPOST form. Preserve raw HTML/ZIPs,actual acquired_at,request metadata and failures privately. No retries on provider refusals,alternate host/headers/transport,APIkey,purchase/account creation,current-history fallback or synthetic observations.",
+    "order_authority": false,
+    "automatic_live_deployment": false
+  },
+  "source_statistics_states_targets_or_returns_computed": false,
+  "new_registered_factor_definitions": 0,
+  "new_registered_candidates": 0,
+  "new_strategy_evaluations": 0,
+  "new_independent_factor_families_claimed": false,
+  "existing_W42_or_forward_rules_changed": false,
+  "investment_objective_verified": false,
+  "order_authority": false
+}
