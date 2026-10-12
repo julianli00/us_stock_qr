@@ -6889,6 +6889,65 @@ The [native update](research/workbench/evidence/prospective_data_automation_v63.
 retains daily/weekly cadence and both unchanged zero-return forward models.
 **The full investment objective remains unmet.**
 
+## Fixed monthly earnings / option-pressure complementarity
+
+The [frozen policy](research/workbench/config/profit-term-confirmation.json)
+studies whether market-priced option pressure complements slower
+quarterly income information. It uses both original earnings measures,
+the already specified VIX at least VIX3M threshold1 and the same half scale,
+not a new pressure cutoff or protection mask for a selected crash.
+This is an exposed-history hypothesis, not independent alpha or
+an economic-factor definition.
+
+At each original 131 month end, retain the positive own-vintage dollar
+condition and halve the original plain option-budget non-BIL weights
+when **either** the selected common-quarter earnings measure declines
+**or** actual month-end VIX is at least VIX3M.
+If both branches trigger, the half scale is applied **once**.
+Profit equality does not trigger; option equality does.
+Otherwise the original full budget remains.
+No daily regime events, changed quarter join/age63comparison,
+asset share, proxy beta, fee, holding-band width or trade timing is added.
+
+The [adapter](research/workbench/src/us_quant/profit_term_confirmation.py)
+keeps actual 30-day VIX / current93-day VIX3M source closes,
+full sealed primary documents / ticker rename / historical-methodology
+limits, and original GVZ/VIX monthly allocation.
+All quarter-selection, dollar-release, 98%funding, four-style/SOXX/gold
+and fixed2.5pp actual-holding queue rules remain.
+Actual feedback/account construction occurs only after remote publication.
+
+The [independent pre-account proof](research/workbench/evidence/profit_term_20261012_pre_account_verification.json)
+checks 225 common-quarter joins from450snapshots, 131H.10pairs,
+262GVZ/VIX and262VIX/VIX3M monthly cells, scalar budgets and eight
+static desired seeds. Join/proxy, raw source, original budget and
+desired-target/seed differences are at most
+1.51e-17 / 3.02e-16 / 1.12e-16 / 2.23e-16.
+Level / income-output rules halve risk on **28 / 36 months**:
+22 / 30 earnings-only, 6 / 4 option-only and 0 / 2 joint-branch months.
+Both preserve131desiredupdates and no doublehalving.
+85 coupled cases and52root guards pass.
+
+The [actual registration](research/workbench/evidence/profit_term_20261012_registration.json)
+records candidates at **2026-10-12 06:18:40 / 06:18:43 UTC**.
+The [preservation proof](research/workbench/evidence/profit_term_20261012_registration_preservation.json)
+retains every old row/event prefix, seven semantic profiles,
+69imports,3,192controls,26selection artifacts and source-recovery
+fingerprint/cooldown/zeroGET through one exact anchored migration.
+The pre-existing immutable baseline is retained after its
+duplicate-invocation guard safely refuses a rerun; it is not regenerated.
+An actual run with the preceding earnings-only published commit
+stops before feedback target or account output.
+
+The [registration snapshot](research/workbench/evidence/research_program_profit_term_registered_v92.json)
+contains **168 completed configurations /84reviews**,88registered
+versions including two old invalid ones, and only these two pending candidates.
+Six definitions/fivefamilies, originalW42plans/IJR-PKWquota and both
+zero-return forward models remain.
+Oldcurrent76conditionalinference does not cover these or the eight
+later trials/fullsearch/futurealpha.
+**No complementary portfolio outcomes exist at registration.**
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

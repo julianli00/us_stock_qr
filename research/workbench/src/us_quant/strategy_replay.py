@@ -55,6 +55,7 @@ GENERATORS = {
     "housing_factor_guard": "config/housing-factor-guard.json",
     "implied_risk_execution": "config/implied-risk-execution.json",
     "profit_factor_guard": "config/profit-factor-guard.json",
+    "profit_term_confirmation": "config/profit-term-confirmation.json",
 }
 
 
@@ -495,6 +496,17 @@ def registered_generator(spec: dict, root: Path) -> tuple[str, dict]:
                 "src/us_quant/dollar_risk_guard.py", "src/us_quant/macro_factor_tilt.py",
                 "src/us_quant/calendar.py", "src/us_quant/storage.py",
             ]
+        elif name == "profit_term_confirmation":
+            required += [
+                "src/us_quant/profit_factor_guard.py", "config/profit-factor-guard.json",
+                "evidence/profit_guard_20261012_registration.json",
+                "src/us_quant/sector_term_guard.py", "config/sector-term-guard.json",
+                "evidence/sector_term_guard_20261011_registration.json",
+                "src/us_quant/volatility_term_risk.py", "config/volatility-term-risk.json",
+                "src/us_quant/profit_inputs.py", "config/profit-inputs.json",
+                "src/us_quant/implied_risk_execution.py", "config/implied-risk-execution.json",
+                "src/us_quant/dollar_risk_guard.py", "src/us_quant/calendar.py", "src/us_quant/storage.py",
+            ]
         if any(relative not in frozen for relative in required):
             raise QuantError("The registered strategy is missing a frozen helper dependency.")
         for relative in required:
@@ -593,6 +605,12 @@ def registered_targets(
         return run(data, cache[key][spec["id"]], candidate, policy, start, end, cost, delay)[1]
     if name == "profit_factor_guard":
         from us_quant.profit_factor_guard import run, source_baselines
+
+        if key not in cache:
+            cache[key] = source_baselines(data, policy)
+        return run(data, cache[key][spec["id"]], candidate, policy, start, end, cost, delay)[1]
+    if name == "profit_term_confirmation":
+        from us_quant.profit_term_confirmation import run, source_baselines
 
         if key not in cache:
             cache[key] = source_baselines(data, policy)
