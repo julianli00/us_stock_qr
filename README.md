@@ -7002,6 +7002,46 @@ The [native update](research/workbench/evidence/prospective_data_automation_v64.
 retains daily/weekly cadence and both frozen zero-return forward models.
 **The full investment objective remains unmet.**
 
+## Dividend source recovery: actual refusal, automated requests stopped
+
+The registered source-only controller makes **one actual VIGrequest**
+at 2026-10-12 09:30:24.608592–09:30:25.429726UTC,
+after its original 09:29:43.277441UTC local24hour deadline.
+The same previously frozen GET,provider URL,default request headers/
+user agent,curl transport and full historical range are retained.
+Actual source-registration publication
+`039980c9a67f6be565569f5e595dbda1d29631a5` is verified before the request.
+The [independent actual-attempt proof](research/workbench/evidence/dividend_source_recovery_20261012_attempt.json)
+records **HTTP429**,transportexit0 and an unchanged effective URL.
+Local cooldown compliance is not provider retry permission.
+
+The raw refusal body,actual response headers,command diagnostics,
+intent/request/result and their hashes remain private and preserved.
+**All further automated source requests are now stopped.**
+SDY is not requested; there is no retry,counter reset,partial deletion,
+alternate host/headers/transport/browser challenge or API-key workaround.
+The original controller's readonly state check confirms the terminal
+failure rather than a valid-looking zero-price or successful history.
+VIGCSV is absent: **zero complete new histories,zero admitted price rows**.
+Old source manifests,issuer identities,original429receipts and earlier
+zero-request checkpoint proofs are not overwritten.
+
+The [preservation proof](research/workbench/evidence/dividend_source_recovery_20261012_attempt_preservation.json)
+retains exact **170completed configurations/86reviews/88versions**,
+engine/head,all old ledger rows,seven profiles,69imports,
+3,192controls,26selection artifacts and originalW42plans.
+This actual request is historical source acquisition,not a newfactor,
+strategy evaluation,forward model day or proof of native timer delivery.
+Any dividend hypothesis remains ineligible before2026-10-24.
+
+The [updated native instructions](research/workbench/evidence/prospective_data_automation_v65.json)
+keep the original macro/Dollar daily pipelines first and preserve weekly
+discovery cadence. They report the saved terminal source blocker without
+another acquisition or rollback of already collected prospective inputs.
+69coupled source/recovery contract cases pass without newnetworkrequests;
+synthetic tests are not provider price coverage.
+**The dividend data remains blocked and the investment objective remains unmet.**
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
