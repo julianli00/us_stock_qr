@@ -6184,6 +6184,62 @@ no pending strategy candidate and no champion.
 No cohort, statistic, block, seed or alpha is refitted to obtain significance.
 **The full investment objective remains unmet.**
 
+## SKEW tail-asymmetry source: verified definition, incomplete quotes
+
+The [source-only policy](research/workbench/config/skew-inputs.json)
+and [independent source proof](research/workbench/evidence/skew_input_readiness_20261011.json)
+prepare actual Cboe SKEW index points alongside unchanged VIX closes.
+The declared SKEW dashboard has one scoped static resource-HTML block
+advertising the exact daily CSV and whitepaper URLs.
+That data block is parsed without executing remote JavaScript.
+One ordinary new CSV request and two primary-document requests are preserved;
+the old VIX source bytes, URL and acquisition timestamp are not changed.
+
+SKEW is the shifted/scaled risk-adjusted price of a standardized
+third-moment payoff on 30-day S&P 500 log returns.
+The primary definition maps the skewness price into SKEW with offset
+100 and multiplier minus ten.
+**Its points are not annualized volatility percentages, an asset price,
+traded returns or physical crash probabilities.**
+SKEW/VIX is not a volatility-term ratio.
+The paper's probability examples are model-based risk-adjusted approximations;
+a zero third moment does not generally establish Gaussian returns.
+The publisher's typical 100-150 range is not a hard source bound.
+Neither higher values nor a SKEW value of 100 authenticates a safe/risky
+trading regime by itself.
+
+Independent parsing verifies all 18,536 actual raw SKEW/VIX observations
+and 6,412 finite aligned quotes with zero numeric error.
+The 3,208-NYSE-day source context begins January 2, 2014;
+all original 2,805 market days and 131 monthly queries remain.
+**Full daily and monthly SKEW readiness are both false.**
+The actual daily history lacks September 14, 2017; December 3, 2018;
+July 5, 2019; and November 29, 2024.
+The last is an original month-end query, so only 130 of 131 monthly SKEW
+readings exist. Four daily missing cells and that month's explicit
+unavailable/reason fields remain; no fill, neutral-value default,
+cash/standby rule or deleted return day repairs them.
+
+The advertised whitepaper filename refers to January 2011, the actual PDF
+has 2010 copyright and historical 1990-2010 charts, and the actual CSV
+starts January 2, 1990. These facts do not authenticate the exact live
+launch day, full historical methodology chain, original intraday publication
+or unrevised point-in-time quotes.
+Any future trading hypothesis needs separately frozen rules,
+source/missingness requirements, actual registration and remote publication
+before performance calculation.
+
+The [preservation proof](research/workbench/evidence/skew_input_preservation_20261011.json)
+retains the exact 160-configuration/76-review journal, engine/head,
+seven forward profiles, 69 imports, 3,192 controls and original W42 plans.
+No new risk states, quantiles, targets, accounts, definitions, engine
+migration or forward day are generated.
+The [updated native instructions](research/workbench/evidence/prospective_data_automation_v56.json)
+keep the source gaps, interpretation limits, fixed current-76 inference
+scope and daily/weekly cadence.
+Both frozen forward models still have zero actual returns.
+**Source verification is not a new alpha factor or completed investment goal.**
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
