@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-12",
-  "phase": "unemployment_vintages_verified_missing_history_source_blocked_goal_unmet",
+  "phase": "latest_unemployment_rules_registered_remote_publication_required_goal_unmet",
   "active_research_focus": "source_verified_multifactor_research_and_independent_data",
   "completed": [
     "Preserved runnable incumbent strategy/engine and early-scanner source alongside the isolated 52-configuration workbench.",
@@ -625,6 +625,29 @@
     "使用相同窗口、成本与Sharpe定义比较策略，再讨论优化，不混用不同策略的历史业绩。",
     "预注册有界研究假设，保留失败结果和暂停的前瞻记录；不回填、不自动调参。"
   ],
+  "unemployment_change_confirmations": {
+    "state": "registered_before_accounts_remote_publication_required",
+    "policy": "research/workbench/config/unemployment-factor-guard.json",
+    "implementation": "research/workbench/src/us_quant/unemployment_factor_guard.py",
+    "pre_account_verification": "research/workbench/evidence/unemployment_guard_20261012_pre_account_verification.json",
+    "registration": "research/workbench/evidence/unemployment_guard_20261012_registration.json",
+    "registration_preservation": "research/workbench/evidence/unemployment_guard_20261012_registration_preservation.json",
+    "registered_snapshot": "research/workbench/evidence/research_program_unemployment_registered_v94.json",
+    "actual_latest_only_queries": 225,
+    "own_vintage_comparison_pairs": 131,
+    "unemployment_only_half_risk_months": 38,
+    "dollar_confirmed_half_risk_months": 20,
+    "source_15month_history_repaired": false,
+    "Sahm_indicator_or_recession_label_computed": false,
+    "monthly_targets_paused_or_deleted": 0,
+    "new_strategy_evaluations": 0,
+    "actual_feedback_targets_or_portfolio_outcomes_computed": false,
+    "new_economic_factor_definitions": 0,
+    "current_engine_sha256": "a098e3f3356aa7db6588e9af94e638a964bf553bd0b8efb2531912f752bf023c",
+    "current_event_head": "c6426265835d8809aaea4d91954a2e4ab60956d72fbb69cb27a3e1cf55dd88e4",
+    "investment_objective_verified": false,
+    "order_authority": false
+  },
   "unemployment_input_readiness": {
     "state": "historical_archives_verified_required_15month_history_blocked",
     "policy": "research/workbench/config/unemployment-inputs.json",
@@ -756,8 +779,8 @@
   "recurring_research_program": {
     "state": "daily_data_weekly_research_no_qualified_candidate",
     "policy": "research/workbench/config/research-program.json",
-    "cycle_snapshot": "research/workbench/evidence/research_program_profit_term_results_v93.json",
-    "previous_cycle_snapshot": "research/workbench/evidence/research_program_profit_term_registered_v92.json",
+    "cycle_snapshot": "research/workbench/evidence/research_program_unemployment_registered_v94.json",
+    "previous_cycle_snapshot": "research/workbench/evidence/research_program_profit_term_results_v93.json",
     "initial_cycle_snapshot": "research/workbench/evidence/research_program_2026-W41.json",
     "automation_receipt": "research/workbench/evidence/prospective_data_automation_v66.json",
     "previous_automation_receipt": "research/workbench/evidence/prospective_data_automation_v65.json",
@@ -774,9 +797,12 @@
     "independent_factor_count_verified": false,
     "new_strategy_evaluations": 86,
     "total_evaluated_configurations": 170,
-    "registered_candidate_versions_including_technical_failures": 88,
+    "registered_candidate_versions_including_technical_failures": 90,
     "technical_rejected_code_versions": 2,
-    "pending_candidate_ids": [],
+    "pending_candidate_ids": [
+      "semiconductor_option_unemployment_rise_half",
+      "semiconductor_option_dollar_unemployment_rise_half"
+    ],
     "research_champion": null,
     "research_versions": 0,
     "data_blockers": 5,

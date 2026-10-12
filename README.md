@@ -7093,6 +7093,40 @@ as complete. The [preservation proof](research/workbench/evidence/unemployment_i
 retains **170 configurations / 86 reviews**, no champion, the terminal dividend
 stop, original weekly eligibility and both frozen forward experiments.
 
+## Frozen latest-unemployment change hypotheses
+
+The [separate strategy policy](research/workbench/config/unemployment-factor-guard.json)
+requires only each query's actual latest completed UNRATE observation. It does
+not calculate a Sahm statistic, consume the missing October 2025 value or repair
+the separately blocked 15-month source contract.
+
+Two fixed constructions compare the current unemployment level with the value
+from its own 63-NYSE-session-earlier query and vintage. One halves the original
+plain option-budget non-BIL weights on a strict unemployment increase; the other
+also requires the original positive broad-dollar change. Equality does not
+trigger. Both retain the original option budget, four factor ETFs, semiconductor
+share, gold remainder, cash funding, 2.5-percentage-point actual-holding band,
+costs, delayed orders and full ten-year/five-year return windows.
+
+The [independent pre-account proof](research/workbench/evidence/unemployment_guard_20261012_pre_account_verification.json)
+checks all 225 latest source values and cutoffs, 131 own-query comparisons,
+262 original option quotes, scalar budgets and eight static seed contexts.
+The two rules retain all 131 monthly targets and reduce risk on 38 / 20 months.
+Maximum source/comparison/target differences are zero / 8.89e-16 / 1.12e-16.
+Related labor information is not a new independently proven factor family.
+
+[Actual registration](research/workbench/evidence/unemployment_guard_20261012_registration.json)
+occurred at 2026-10-12 14:17:54 / 14:17:58 UTC.
+The [preservation proof](research/workbench/evidence/unemployment_guard_20261012_registration_preservation.json)
+retains all previous rows and seven forward profiles through one exact engine
+migration. A real evaluation with the preceding source-only published commit
+stops before any account output.
+The [registration snapshot](research/workbench/evidence/research_program_unemployment_registered_v94.json)
+has **170 completed configurations / 86 reviews**, 90 registered versions
+including two old invalid ones, and exactly these two pending candidates.
+Actual remote publication must precede new path-dependent targets and accounts;
+**new performance is not yet computed at this registration checkpoint**.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

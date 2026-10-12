@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "study_id": "own_vintage_unemployment_change_confirmations_20261012",
+  "data_scope": "factor_etf_portfolio",
+  "data_start": "2015-08-10",
+  "as_of": "2026-10-05",
+  "prior_evaluated_configurations": 170,
+  "new_configurations": 2,
+  "new_economic_factor_definitions": 0,
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "factor_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "source_id": "semiconductor_option_proxy_observed_band025",
+  "required_unemployment_observations_per_query": "latest_actual_completed_month_only",
+  "risk_change_sessions": 63,
+  "risk_off_scale": 0.5,
+  "actual_weight_trade_band": 0.025,
+  "cash_reserve": 0.02,
+  "candidates": [
+    {"id": "semiconductor_option_unemployment_rise_half", "dollar_confirmation": false},
+    {"id": "semiconductor_option_dollar_unemployment_rise_half", "dollar_confirmation": true}
+  ],
+  "source_registration": {"path": "evidence/implied_execution_20261012_registration.json", "sha256": "5a52f3bafc13358933c67af51d2625455ac0bc4a56e5a79a555ed1dca80222bb"},
+  "source_policy": {"path": "config/implied-risk-execution.json", "sha256": "1d04daa4bc4447ed7a3036a463991e071af14dfaf586239ae80ef9edf4c3f0cb"},
+  "source_implementation": {"path": "src/us_quant/implied_risk_execution.py", "sha256": "ba2cfcca2a1542d1befd50a3b86be54865c41b2c1c4a4e5871a4858a2fa5dcbb"},
+  "unemployment_policy": {"path": "config/unemployment-inputs.json", "sha256": "d0341eed0cfea14b430598aa31dcd24824778065b7883435c8c9b15acce4c687"},
+  "unemployment_implementation": {"path": "src/us_quant/unemployment_inputs.py", "sha256": "fc735de0f77783815cf8e8fc3a1a03b351b674fe7a2e70f47df74637620bbc77"},
+  "unemployment_readiness": {"path": "evidence/unemployment_input_readiness_20261012.json", "sha256": "d29287575dfd3588bb7408d03581443ae35a9f453706f605a0bdf5625557efc9"},
+  "unemployment_manifest": {"path": "data/unemployment-inputs-20261012/manifest.json", "sha256": "c4f73b5202765fda2401290334103ae27f5fc52f357253be7b28869a5b818443"},
+  "methodology": {
+    "hypothesis": "Rising household-survey unemployment describes labor demand/supply balance rather than insured initial-claims flows,option prices or corporate profits. Compare its own-vintage63NYSE-session level increase as a direct monthly half-risk condition with the same increase requiring a simultaneous positive original broad-dollar change. This is existing-ETF economic information research,not two independent families or proof of predictable stock alpha.",
+    "separate_input_contract": "This separately frozen rule requires only each query's actual latest completed UNRATEmonth. It does not compute Sahm3month means/12month minima/0.50gap/recession labels or consume the missing2025Octobservation. Reparse all225sealed snapshots and independently verify the225latest values,second-prior-NYSEcutoffs and unchanged62dayage before targets/accounts. The earlier15month-history source remains210complete/15blocked/fullfalse;do not relabel it as fixed or silently fall back from a failed rolling calculation.",
+    "rules": "At each original131month end compare current actual UNRATElevel with its separately archived own-query63NYSE-session-earlier latest level. If current is strictly greater,halve original plain option-budget non-BILtargets and transfer freed capital to actualBIL. For the second candidate require original own-vintage broad-dollar63session change strictly positive as well. Equal/falling unemployment doesnottrigger. Unknown latest-source/gap/age/hash failure is fatal,no standby,fill,changed release clock or deleted target.",
+    "interpretation": "Both values are U3percent of civilian labor force from BLS household surveyLNS14000000. A positive own-query difference can include seasonal revisions and labor supply changes,not only layoffs or a causal recession shock. No first-of-month release claim or historical public adoption of a later policy indicator. Exact latest observation dates can differ across query vintages and are retained.",
+    "baseline": "Use the unchanged original plain GVZ/(GVZ+VIX)30%-70%monthlyequitybudget/half-equitySOXX/remaininghalfequalMTUM-VLUE-QUAL-USMV/GLDremainder/98%funding. No newweights,asset,volatilityproxy,optionregime,profit/housing/Sahmfilter or leverage. Reuse originalH10availability/conflicts/quarantine/unitregimes/14dayage.",
+    "execution": "Reuse unchanged original0.025actual-closing-holding band and1e-12allowance,forcedfreshUSD10000initialdeployment/fullBILgap/datedpendingqueue,nooverwrite-cancel-earlyfill. Base5bpnext-open1session/stress20bpdelay2/USD1order/fractionallong-onlycash-funded-v2/alloriginal2512/1254returns. Actual path-dependent targets,holdings and wealth are computed only after actual registration and remote publication.",
+    "selection": "Exactly2fixed new labor-information constructions after170exposed-history configurations;no parameter grid or post-result tuning of63horizon,strictsign,halfscale,confirmation,band,sourceage or costs. Independently verify all225latest choices/131pairs/262optionquotes/131H10pairs/scalarbudgets/8staticseeds before accounts. Preserve strictall-pathSh>1/SPY/stress-baseSPY/DD<=15% and all failures. Old76conditional inference excludes these,new10/full172/unknownsearch/futurealpha.",
+    "preservation": "No newfactorcatalog admission or W42fourplan/IJRPKWquota/Oct17eligibility/frozenforward rule changes. Keep all prior rows,source versions,69imports,7profiles,3192controls and26selection artifacts. Dividend recovery remains actualterminal429;no new source requests or access bypass. Do not splice another configuration's favorable returns and drawdown.",
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}
