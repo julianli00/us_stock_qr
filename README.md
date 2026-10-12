@@ -7042,6 +7042,24 @@ another acquisition or rollback of already collected prospective inputs.
 synthetic tests are not provider price coverage.
 **The dividend data remains blocked and the investment objective remains unmet.**
 
+## Research session continuity
+
+The [timer handoff receipt](research/workbench/evidence/prospective_data_automation_v66.json)
+records removal and absence verification of the old session's native timer
+before attaching the replacement to the receiving research session. The complete
+original instructions are preserved byte-for-byte. Daily wakeups remain around
+09:00 Asia/Shanghai, with Saturday factor discovery and the original October 17
+eligibility. The next configured wakeup is October 13 around 09:00; configuration
+is not evidence of future delivery, and the app and host must remain available.
+
+The original conversation was natively compacted without discarding its raw
+history. Research code, private inputs, prior reports and the ledger were
+preserved, retaining **170 completed configurations / 86 reviews** and no
+champion. Both unchanged daily pipelines completed in the receiving worktree
+with already-collected inputs and no new observed model session. This verifies
+continuity, not new returns, source coverage or a qualified strategy. The
+terminal dividend-source stop and both frozen forward experiments remain.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
