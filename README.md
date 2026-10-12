@@ -6336,6 +6336,80 @@ The [updated native instructions](research/workbench/evidence/prospective_data_a
 keep daily/weekly cadence and both frozen forward models with zero actual returns.
 **The full investment objective remains unmet.**
 
+## Housing pipeline vintages: source completeness remains blocked
+
+The [frozen source policy](research/workbench/config/housing-inputs.json)
+investigates housing authorization (`PERMIT`) and foundation-start
+activity (`HOUST`) as related stages of an interest-sensitive economic
+pipeline. They are **not two new independent factors**; the previously
+studied CFNAI already includes housing information.
+Official FRED notes and exact ALFRED metadata identify monthly
+**thousands of units, seasonally adjusted annual rates**.
+Permit-issuing-place coverage differs from all starts, so their
+difference is not a measured backlog. Unit counts are not asset
+prices, returns, volatility percentages or raw monthly counts.
+The initial Census definitions request returned 403 and was not bypassed.
+Complete historical survey/seasonal-methodology and intraday-release
+chains are not certified.
+
+The [source verifier](research/workbench/src/us_quant/housing_inputs.py)
+reuses the original monthly calendar, bounded form-date helper and
+62-calendar-day completed-month freshness selector without changing
+them. Twelve ordinary public-form ZIP batches contain 450 actual
+historical snapshots, plus six separately acquired probes and four
+primary series/form documents.
+The source period labels end at 2026-08-01; market as-of 2026-10-05,
+all 2,805 context sessions, 131 monthly/reference pairs and 225
+queries per series are unchanged.
+Each snapshot is from the second-previous NYSE session.
+A first-of-month period label is not an assumed first release.
+
+The [independent source proof](research/workbench/evidence/housing_input_readiness_20261012.json)
+reconstructs all 450 choices using raw CSV strings, Decimal values
+and scalar NYSE dates, with zero unit/date/age differences.
+**436 queries are fresh; 14 are stale, so full readiness remains false.**
+Both series have the same seven blocked dates:
+
+| Required query | Latest observed month | Age from completed month end |
+|---|---|---:|
+| 2025-11-25 | 2025-08 | 86 days |
+| 2025-11-28 | 2025-08 | 89 days |
+| 2025-12-29 | 2025-08 | 120 days |
+| 2025-12-31 | 2025-08 | 122 days |
+| 2026-01-29 | 2025-10 | 90 days |
+| 2026-01-30 | 2025-10 | 91 days |
+| 2026-04-30 | 2026-01 | 89 days |
+
+No freshness relaxation, newer revised-history fallback, fill,
+query deletion, cash/standby state or shortened return window is used.
+These are source-availability failures, not proof about why the
+publisher or archive lacks a newer observation.
+There are no housing signals, ranks, targets, portfolios,
+performance results, candidate/factor registrations or migrations.
+Any later trading/missingness rule requires its own prior freeze,
+actual registration and remote publication before accounts.
+
+The first private independent metadata reader incorrectly assumed
+dated `Real-Time End` fields; actual `Current` literals interrupted
+its wrapped-title join. Its original code and traceback remain.
+Only that private suffix normalization is corrected: the complete
+raw-CSV numeric/date AST, production parser, source policy, cutoffs,
+age limit and all acquired bytes remain unchanged, with no refetch.
+160 coupled source cases and 52 root guards pass.
+
+The [preservation proof](research/workbench/evidence/housing_input_preservation_20261012.json)
+keeps **162 completed configurations / 78 reviews / 80 versions**,
+six definitions / five families, no pending candidate and no champion.
+Every old ledger row/head/engine, seven forward profiles, 69 imports,
+3,192 controls and 26 old selection artifacts is preserved.
+The current-76 selection scope is not extended to the two SKEW trials.
+The original four W42 plans, IJR/PKW quota and both frozen forward
+models remain, with zero actual model return days.
+The [native update](research/workbench/evidence/prospective_data_automation_v58.json)
+retains daily collection / Saturday research without claiming timer
+delivery from configuration alone.
+**This is new source research, not a qualified strategy; the full goal remains unmet.**
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
