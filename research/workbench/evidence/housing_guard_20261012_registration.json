@@ -1,0 +1,481 @@
+{
+  "candidates": [
+    {
+      "candidate_spec": {
+        "body_sha256": "de0cc71fa8826276412d54366ed738e1f2114c1c0e20c26a895b55b3d2868e6b",
+        "path": "data/housing-factor-guard-20261012/semiconductor_housing_permit_decline_half-spec.json",
+        "sha256": "b4e1379e1d7b827419a33b58812d12fa32e55997d1b1d9fd72a3e68978e3c22d"
+      },
+      "readiness": {
+        "body_sha256": "7e85a26097d986aeca142f38b14b9b29926e345db406715f076bab0225de0a4e",
+        "path": "data/housing-factor-guard-20261012/readiness.json",
+        "sha256": "4dc9d337a5efbbfabd7ca8742bea929dc44b681b29093054ef9365f1fd8a43a5"
+      },
+      "registration": {
+        "candidate_id": "semiconductor_housing_permit_decline_half",
+        "data_scope": "factor_etf_portfolio",
+        "families": [
+          "earnings_quality",
+          "low_volatility",
+          "momentum",
+          "value"
+        ],
+        "order_authority": false,
+        "readiness_sha256": "7e85a26097d986aeca142f38b14b9b29926e345db406715f076bab0225de0a4e",
+        "registered_at": "2026-10-12T01:11:38.218725+00:00",
+        "spec_sha256": "de0cc71fa8826276412d54366ed738e1f2114c1c0e20c26a895b55b3d2868e6b"
+      },
+      "spec": {
+        "asset_leverage": {
+          "BIL": 1.0,
+          "GLD": 1.0,
+          "IEF": 1.0,
+          "MTUM": 1.0,
+          "QQQ": 1.0,
+          "QUAL": 1.0,
+          "SOXX": 1.0,
+          "SPY": 1.0,
+          "TLT": 1.0,
+          "USMV": 1.0,
+          "VLUE": 1.0,
+          "XLK": 1.0
+        },
+        "configuration": {
+          "housing_confirmation": "permit_decline",
+          "id": "semiconductor_housing_permit_decline_half"
+        },
+        "data_scope": "factor_etf_portfolio",
+        "evaluation_as_of": "2026-10-05",
+        "factor_ids": [
+          "price_momentum",
+          "value_exposure",
+          "quality_exposure",
+          "low_volatility_exposure"
+        ],
+        "frozen_files": {
+          "config/growth-factor-satellite.json": "7f53dffeafdea3211980a7c6704c450f6142ff99fbf1332772f6e5969bd9b837",
+          "config/housing-factor-guard.json": "51bbebe1ddbafddce5433af57b611e0b2380930b846b66c6f040eb4f199d30cb",
+          "config/housing-inputs.json": "6675f4744a1957a08da6b67c7771949065fddd75c3c75845d4914664eb12df8a",
+          "config/sector-growth-balance.json": "ed3fef4f25dbda3132df2480e43a5188719776485c9018c5447c9e2aad2f4103",
+          "data/housing-inputs-20261012/HOUST-ALFRED-form.html": "189b496ed19bb4d76788a849486580b938839f368292b34064317d172c922399",
+          "data/housing-inputs-20261012/HOUST-ALFRED-form.request.json": "8b4b96fc4670624f6d8065e4786ea02fa90e7fa164289fc2923688605d7acedf",
+          "data/housing-inputs-20261012/HOUST-FRED-series.html": "8c545ee876b7633a67aa86d3cc474a6da69fdede902de9de5bc07424cf14eb4b",
+          "data/housing-inputs-20261012/HOUST-FRED-series.request.json": "6115159648a8a584bb573dd2ba1a47112e766199c1c30a94e1f5a58c04ebbb43",
+          "data/housing-inputs-20261012/HOUST-probe.request.json": "7a7dfb96fc59593c27b5e9f7b7d4124b023c484a8bc59ad6bab88d52e24f89b4",
+          "data/housing-inputs-20261012/HOUST-probe.zip": "a650a00c038e61f374a9c3cc5718caed14d5b1a3f288c8a83868a332045dfb39",
+          "data/housing-inputs-20261012/HOUST/batch-01.request.json": "f2188025e3c38e6beeb66741713a8c104bfff6aa513b6be8bc2c977ff7c9cc9e",
+          "data/housing-inputs-20261012/HOUST/batch-01.zip": "2a8101aff70d14d70cfe717a1dc8787687d40b10dfa8c506c08607a4bc0bca4b",
+          "data/housing-inputs-20261012/HOUST/batch-02.request.json": "5ef90dbd82ef55c14d197b12cccff13bcf808ca7155ee5d8f58e4517a90f51bf",
+          "data/housing-inputs-20261012/HOUST/batch-02.zip": "2ba14a5b7709418586dbc1e10d82ad82fccd2a0a810d9bf2cae92abdf7f4f8da",
+          "data/housing-inputs-20261012/HOUST/batch-03.request.json": "00464f6e56a80539546c0a30a26dc2bba309b6c69cce90ce807efbc08552dc1f",
+          "data/housing-inputs-20261012/HOUST/batch-03.zip": "db00314109e32eb402a17446f7bacb3a87e4407a607f68ebde952c7cd81abd46",
+          "data/housing-inputs-20261012/HOUST/batch-04.request.json": "0317ce78f70bcf9ba23c1af58b5a7f25d673083c73a781c870310730910bf132",
+          "data/housing-inputs-20261012/HOUST/batch-04.zip": "666829f21033e24d4d32a2b8f4b3a0dc7c9dcf0642ae5470ec89a511b5423ecd",
+          "data/housing-inputs-20261012/HOUST/batch-05.request.json": "3a9bda14d0509e478ebc1ab19307bcd63ffa9df5a248a07ad90192da0148823d",
+          "data/housing-inputs-20261012/HOUST/batch-05.zip": "9feffadd0071329efa133efd2a14f360d6250667047a85afba2681e0f148880d",
+          "data/housing-inputs-20261012/HOUST/batch-06.request.json": "97314546ab9a40d8f7ed670f17748d7053753659c24c870119b2290f5b290334",
+          "data/housing-inputs-20261012/HOUST/batch-06.zip": "b8a49fcc2c2f948a8178749387dab6fd1977cd4a759861eb4c4338012b16a7bf",
+          "data/housing-inputs-20261012/PERMIT-ALFRED-form.html": "5d87a77bbfb52ba4e78214d64e1b08eade357f615f6bb9b3b1cad3e25c183164",
+          "data/housing-inputs-20261012/PERMIT-ALFRED-form.request.json": "09feb38dc11f703b538450ca0378ab067f8589004a419216978cdb17dc31c57b",
+          "data/housing-inputs-20261012/PERMIT-FRED-series.html": "a1e6041ce2a3544bc866253cf2ada7c5344c92c982c0bfdd9b4e23c3fd5dca41",
+          "data/housing-inputs-20261012/PERMIT-FRED-series.request.json": "c3472a3944e255578e25280b985cc237ef74a1a30cf5ed4ede53716e18f17d8f",
+          "data/housing-inputs-20261012/PERMIT-probe.request.json": "aa5aaba51b788fee6aeb5eb7538b5e63368c74b02a5b1546cb7702e5476419d4",
+          "data/housing-inputs-20261012/PERMIT-probe.zip": "d2289e144179151fcf8dc2ab0e30accfe81e62cba5bdcff96968becb173a3d76",
+          "data/housing-inputs-20261012/PERMIT/batch-01.request.json": "7d625e3b17f4b17adddb9eb7796980bded6cb04cad7117d8011eafb4c3609c4b",
+          "data/housing-inputs-20261012/PERMIT/batch-01.zip": "4ea500fbb7960fb827a27d9bdb104e4b45fabaee19d9fe1f31b4c672ed8e5219",
+          "data/housing-inputs-20261012/PERMIT/batch-02.request.json": "a9120e2c1d14dbeeb791d972d284608041ed086998fee38d47278ac8c26cb4a9",
+          "data/housing-inputs-20261012/PERMIT/batch-02.zip": "34e33258927e545260e8791b26ddc0984b060c5ed368dd26b2a3bec26b3321ab",
+          "data/housing-inputs-20261012/PERMIT/batch-03.request.json": "a005ae7dc3eb1e07bf4a2dd543e211a5e4500ef135e5db41f2971df01fca80ed",
+          "data/housing-inputs-20261012/PERMIT/batch-03.zip": "a1f22703467e17e7a717faf6f8d89c18bb09c670128aa1a105180dcd73a08ba6",
+          "data/housing-inputs-20261012/PERMIT/batch-04.request.json": "f90c09d6d5302a745c3961f9c0c62109a52361d428ee5a57182ab484a15f372e",
+          "data/housing-inputs-20261012/PERMIT/batch-04.zip": "ceecddee153197b281b57e448004b2293cf6e424f09e5185147583c0c445e979",
+          "data/housing-inputs-20261012/PERMIT/batch-05.request.json": "47f09fb1dd25ed51926669f4b03c7644fcc6384624f1cf6cce8f788d51cb4014",
+          "data/housing-inputs-20261012/PERMIT/batch-05.zip": "d74ff6a9db09858e5e9fc32d0ef829a708c7e69e3dc60ad6f82a283609b9e0f5",
+          "data/housing-inputs-20261012/PERMIT/batch-06.request.json": "f767037c24d7dd9c556b3b8523ed4b0a1569a1805dc60e9df702ec6524f0c44d",
+          "data/housing-inputs-20261012/PERMIT/batch-06.zip": "1f0caf4e61a8d0135aaac8890f88dda90d524e1257b1844cf02d39d82af8abb3",
+          "data/housing-inputs-20261012/acquisition.json": "1402470bee8a7fcf811f3276eed3aeec0a4061d5ce5179b9daba3f1ee2c8c1ea",
+          "data/housing-inputs-20261012/manifest.json": "6f35aad1fc7fcd05d66aab4c65402f537e1cd8d200dc1d51a797b4b0de2ea9a0",
+          "data/macro-tilt-prepared-20261010/close.csv": "b098f783bbf7a4ca56520e11c6e13edbb0eb2673ed7aaec02b89981ff74fabce",
+          "data/sector-growth-source-20261011/SOXX-factsheet-request.json": "0ca3091a8ad04fda30c8836386c6045d799c7cd7f30393c76d39d663fc649324",
+          "data/sector-growth-source-20261011/SOXX-factsheet.pdf": "7bac89bd17040a64cfbb9610d77d685173fed1f9f38fd84a134537cf2e4bb23e",
+          "data/sector-growth-source-20261011/SOXX-issuer.html": "e2649e864163311039bc703c5277e2e32df90328668db9e86057cd3f8ec2aaa1",
+          "data/sector-growth-source-20261011/SOXX-price-request.json": "bd08dbc91bf80b06d80dc569e207bb550f81ffb75e931b461e6141ccd8a990fc",
+          "data/sector-growth-source-20261011/SOXX-raw.json": "aa4b117b0147f13d571a522881c90cfd6c6a416b7efe743c316b16a577ec74a1",
+          "data/sector-growth-source-20261011/SOXX-summary-underlying-request.json": "db8410d01582b6123dbf7e792fd33d3687bb87c7c490975b1dd0c4aeab1f0e64",
+          "data/sector-growth-source-20261011/SOXX-summary-underlying.pdf": "4fcf096b9e75f99f1cce0d62eb6b8e65a6f9e82503738ccaca6e6b4721516bfc",
+          "data/sector-growth-source-20261011/SOXX.csv": "31bb1c024472e23e985e7bd33dbb1655703f3f9289bef175836dea16e652a0f4",
+          "data/sector-growth-source-20261011/XLK-factsheet-request.json": "ceb33c1b2e199542d655af71ebfb48a77abea50fa7033491ed0abfdbdbef1fe1",
+          "data/sector-growth-source-20261011/XLK-factsheet.pdf": "c8b7997b458c1835503c8901403f9d4f4c24e85470c2443454bb8e77fb419a34",
+          "data/sector-growth-source-20261011/XLK-issuer.html": "d67107f4f079d3a9e5fcdc6a660fbbd6ac8d10fec1ca0f73883a67a32fbe21e3",
+          "data/sector-growth-source-20261011/XLK-price-request.json": "489418c21640a43f9b7d057d0a4defb378a3b929a4ef9b390b9b202792b561f3",
+          "data/sector-growth-source-20261011/XLK-raw.json": "49299c90de030e873b164e7a84d5cb077dbca6293c881f67a229b42dc7545dbb",
+          "data/sector-growth-source-20261011/XLK.csv": "c3ea3867c3e4294a1c717ac1dbff7b7249380820cc52d717ae40cb172cb19ea9",
+          "data/sector-growth-source-20261011/manifest.json": "eb43e116d5bdd13cf08a10b7bcca4ebd044cfb6a21e1b1511d6f377e6a466973",
+          "evidence/growth_portfolio_protection_20261011_registration.json": "b712b375fc3599bd8691996c4d33ff4b9878c63b6b95b1fa8ca27935b9e468fe",
+          "evidence/housing_input_readiness_20261012.json": "6aee5cbe6a203fafdbd8bddd82edb65fb85d9ef09094149e96cb20fdfda4de6e",
+          "evidence/research_program_skew_guard_results_v85.json": "77c9587821427ff5a852cf6595b4ae88ebdb6b4ba54fd3b09683655c3ff707c3",
+          "evidence/sector_growth_balance_20261011_registration.json": "1ace4a96739b5f99e1023d3dc502373f7da90acf5edb9ddd18b13c20168d273d",
+          "evidence/skew_guard_20261012_preservation.json": "1a15c16681e93249ecdce88530c195d98363cffeebd6eb1691e4484239de39ad",
+          "reports/housing-inputs-plan-20261012/verified-queries.csv": "7c352f9bed5d5c0bf14b7a3f377c5214947217c58243443ac6541bc6750302da",
+          "src/us_quant/activity_inputs.py": "adba772daec20d4ccc842115d4b7900a249b9e22368fe48e6b741744474e250c",
+          "src/us_quant/calendar.py": "04fdabc739de0a30284527715b80348321652fa2b7a66567b1232987289edf02",
+          "src/us_quant/dollar_risk_guard.py": "c4b6db938cc98791fcb620f5317c4b964428e518689e75b6696cf1f8ee38ae53",
+          "src/us_quant/financial_conditions_guard.py": "0b88d81cf27c57fbde745cffe910cb7cea249b46a4d9888c9ca820ebd2c258c1",
+          "src/us_quant/growth_factor_satellite.py": "a83f647efa43becd7538c421ff3ba512f6951f6f2f90e8a447b53732e8b18f90",
+          "src/us_quant/housing_factor_guard.py": "9642d2fd38c7bedc65de870b1de429fdb914486848053af4dfb2bb750004a5c8",
+          "src/us_quant/housing_inputs.py": "e7ea1181a4f165bd890bb8aa4cd97356ec00a6c68f35fa2918c64d59f6a3dc64",
+          "src/us_quant/inflation_inputs.py": "fdff3024672c9fe51508e91545f5b0cb1352fef04ad6751216ece84beb783ceb",
+          "src/us_quant/macro_factor_tilt.py": "40a2fec8b2502bd8cba21a1ac8b16397d98ed77d8c2cd304ba814c20eaf623b0",
+          "src/us_quant/multifactor_stability.py": "05423115c9171a20f0c870e2556b4f25f787df737da4b1f87da5f5fffe3ae7b9",
+          "src/us_quant/sector_growth_balance.py": "783df691d243da8794d887bd1f8bb5331f9875a271b628c157098ea6233fd7a7",
+          "src/us_quant/storage.py": "e424d764392491b654e55756566418153bec8104ae64dd15447076315c84a367",
+          "src/us_quant/yield_curve_inputs.py": "ad5391322bb7fc8b2ae90122b350827e6931a61c186fed8e76c04348df2fcb15"
+        },
+        "history_status": "exposed_history_not_independent_holdout",
+        "id": "semiconductor_housing_permit_decline_half",
+        "leveraged_products_allowed": false,
+        "market": {
+          "close": {
+            "path": "data/sector-growth-prepared-20261011/close.csv",
+            "sha256": "762f7f258684062be17f3f7f91e28b6df1071fdaf2c60fcd69d107932ae12944"
+          },
+          "open": {
+            "path": "data/sector-growth-prepared-20261011/open.csv",
+            "sha256": "f0aa7bf3f417f71343b8901f17803d9cf35e0eddd0d06c61878ab6ea7ea5f568"
+          },
+          "raw_close": {
+            "path": "data/sector-growth-prepared-20261011/raw_close.csv",
+            "sha256": "1d1c39f25326d14a69c9f875e428bb2303b54f823716a5800622f5e24d5783d9"
+          },
+          "risk_free": {
+            "path": "data/sector-growth-prepared-20261011/risk_free.csv",
+            "sha256": "af36e3deb9bf0685553617f6614eacefcd2282b76c0af81404f04669e9f5eef3"
+          },
+          "volume": {
+            "path": "data/sector-growth-prepared-20261011/volume.csv",
+            "sha256": "bf5686211d0f1191b951498d9b1a74c087571fa05adb7aed541104bda6af2a4a"
+          }
+        },
+        "order_authority": false
+      }
+    },
+    {
+      "candidate_spec": {
+        "body_sha256": "be63c496a0faf2dc48dc3217d9536db77f2ff9d34652fbcce5074eed34779c15",
+        "path": "data/housing-factor-guard-20261012/semiconductor_housing_permit_starts_decline_half-spec.json",
+        "sha256": "7869a2650e5dfc7cc8d4656ad92bdf73ea90b8e3fe8c09886cf378769cc1e399"
+      },
+      "readiness": {
+        "body_sha256": "7e85a26097d986aeca142f38b14b9b29926e345db406715f076bab0225de0a4e",
+        "path": "data/housing-factor-guard-20261012/readiness.json",
+        "sha256": "4dc9d337a5efbbfabd7ca8742bea929dc44b681b29093054ef9365f1fd8a43a5"
+      },
+      "registration": {
+        "candidate_id": "semiconductor_housing_permit_starts_decline_half",
+        "data_scope": "factor_etf_portfolio",
+        "families": [
+          "earnings_quality",
+          "low_volatility",
+          "momentum",
+          "value"
+        ],
+        "order_authority": false,
+        "readiness_sha256": "7e85a26097d986aeca142f38b14b9b29926e345db406715f076bab0225de0a4e",
+        "registered_at": "2026-10-12T01:11:41.150620+00:00",
+        "spec_sha256": "be63c496a0faf2dc48dc3217d9536db77f2ff9d34652fbcce5074eed34779c15"
+      },
+      "spec": {
+        "asset_leverage": {
+          "BIL": 1.0,
+          "GLD": 1.0,
+          "IEF": 1.0,
+          "MTUM": 1.0,
+          "QQQ": 1.0,
+          "QUAL": 1.0,
+          "SOXX": 1.0,
+          "SPY": 1.0,
+          "TLT": 1.0,
+          "USMV": 1.0,
+          "VLUE": 1.0,
+          "XLK": 1.0
+        },
+        "configuration": {
+          "housing_confirmation": "permit_and_starts_decline",
+          "id": "semiconductor_housing_permit_starts_decline_half"
+        },
+        "data_scope": "factor_etf_portfolio",
+        "evaluation_as_of": "2026-10-05",
+        "factor_ids": [
+          "price_momentum",
+          "value_exposure",
+          "quality_exposure",
+          "low_volatility_exposure"
+        ],
+        "frozen_files": {
+          "config/growth-factor-satellite.json": "7f53dffeafdea3211980a7c6704c450f6142ff99fbf1332772f6e5969bd9b837",
+          "config/housing-factor-guard.json": "51bbebe1ddbafddce5433af57b611e0b2380930b846b66c6f040eb4f199d30cb",
+          "config/housing-inputs.json": "6675f4744a1957a08da6b67c7771949065fddd75c3c75845d4914664eb12df8a",
+          "config/sector-growth-balance.json": "ed3fef4f25dbda3132df2480e43a5188719776485c9018c5447c9e2aad2f4103",
+          "data/housing-inputs-20261012/HOUST-ALFRED-form.html": "189b496ed19bb4d76788a849486580b938839f368292b34064317d172c922399",
+          "data/housing-inputs-20261012/HOUST-ALFRED-form.request.json": "8b4b96fc4670624f6d8065e4786ea02fa90e7fa164289fc2923688605d7acedf",
+          "data/housing-inputs-20261012/HOUST-FRED-series.html": "8c545ee876b7633a67aa86d3cc474a6da69fdede902de9de5bc07424cf14eb4b",
+          "data/housing-inputs-20261012/HOUST-FRED-series.request.json": "6115159648a8a584bb573dd2ba1a47112e766199c1c30a94e1f5a58c04ebbb43",
+          "data/housing-inputs-20261012/HOUST-probe.request.json": "7a7dfb96fc59593c27b5e9f7b7d4124b023c484a8bc59ad6bab88d52e24f89b4",
+          "data/housing-inputs-20261012/HOUST-probe.zip": "a650a00c038e61f374a9c3cc5718caed14d5b1a3f288c8a83868a332045dfb39",
+          "data/housing-inputs-20261012/HOUST/batch-01.request.json": "f2188025e3c38e6beeb66741713a8c104bfff6aa513b6be8bc2c977ff7c9cc9e",
+          "data/housing-inputs-20261012/HOUST/batch-01.zip": "2a8101aff70d14d70cfe717a1dc8787687d40b10dfa8c506c08607a4bc0bca4b",
+          "data/housing-inputs-20261012/HOUST/batch-02.request.json": "5ef90dbd82ef55c14d197b12cccff13bcf808ca7155ee5d8f58e4517a90f51bf",
+          "data/housing-inputs-20261012/HOUST/batch-02.zip": "2ba14a5b7709418586dbc1e10d82ad82fccd2a0a810d9bf2cae92abdf7f4f8da",
+          "data/housing-inputs-20261012/HOUST/batch-03.request.json": "00464f6e56a80539546c0a30a26dc2bba309b6c69cce90ce807efbc08552dc1f",
+          "data/housing-inputs-20261012/HOUST/batch-03.zip": "db00314109e32eb402a17446f7bacb3a87e4407a607f68ebde952c7cd81abd46",
+          "data/housing-inputs-20261012/HOUST/batch-04.request.json": "0317ce78f70bcf9ba23c1af58b5a7f25d673083c73a781c870310730910bf132",
+          "data/housing-inputs-20261012/HOUST/batch-04.zip": "666829f21033e24d4d32a2b8f4b3a0dc7c9dcf0642ae5470ec89a511b5423ecd",
+          "data/housing-inputs-20261012/HOUST/batch-05.request.json": "3a9bda14d0509e478ebc1ab19307bcd63ffa9df5a248a07ad90192da0148823d",
+          "data/housing-inputs-20261012/HOUST/batch-05.zip": "9feffadd0071329efa133efd2a14f360d6250667047a85afba2681e0f148880d",
+          "data/housing-inputs-20261012/HOUST/batch-06.request.json": "97314546ab9a40d8f7ed670f17748d7053753659c24c870119b2290f5b290334",
+          "data/housing-inputs-20261012/HOUST/batch-06.zip": "b8a49fcc2c2f948a8178749387dab6fd1977cd4a759861eb4c4338012b16a7bf",
+          "data/housing-inputs-20261012/PERMIT-ALFRED-form.html": "5d87a77bbfb52ba4e78214d64e1b08eade357f615f6bb9b3b1cad3e25c183164",
+          "data/housing-inputs-20261012/PERMIT-ALFRED-form.request.json": "09feb38dc11f703b538450ca0378ab067f8589004a419216978cdb17dc31c57b",
+          "data/housing-inputs-20261012/PERMIT-FRED-series.html": "a1e6041ce2a3544bc866253cf2ada7c5344c92c982c0bfdd9b4e23c3fd5dca41",
+          "data/housing-inputs-20261012/PERMIT-FRED-series.request.json": "c3472a3944e255578e25280b985cc237ef74a1a30cf5ed4ede53716e18f17d8f",
+          "data/housing-inputs-20261012/PERMIT-probe.request.json": "aa5aaba51b788fee6aeb5eb7538b5e63368c74b02a5b1546cb7702e5476419d4",
+          "data/housing-inputs-20261012/PERMIT-probe.zip": "d2289e144179151fcf8dc2ab0e30accfe81e62cba5bdcff96968becb173a3d76",
+          "data/housing-inputs-20261012/PERMIT/batch-01.request.json": "7d625e3b17f4b17adddb9eb7796980bded6cb04cad7117d8011eafb4c3609c4b",
+          "data/housing-inputs-20261012/PERMIT/batch-01.zip": "4ea500fbb7960fb827a27d9bdb104e4b45fabaee19d9fe1f31b4c672ed8e5219",
+          "data/housing-inputs-20261012/PERMIT/batch-02.request.json": "a9120e2c1d14dbeeb791d972d284608041ed086998fee38d47278ac8c26cb4a9",
+          "data/housing-inputs-20261012/PERMIT/batch-02.zip": "34e33258927e545260e8791b26ddc0984b060c5ed368dd26b2a3bec26b3321ab",
+          "data/housing-inputs-20261012/PERMIT/batch-03.request.json": "a005ae7dc3eb1e07bf4a2dd543e211a5e4500ef135e5db41f2971df01fca80ed",
+          "data/housing-inputs-20261012/PERMIT/batch-03.zip": "a1f22703467e17e7a717faf6f8d89c18bb09c670128aa1a105180dcd73a08ba6",
+          "data/housing-inputs-20261012/PERMIT/batch-04.request.json": "f90c09d6d5302a745c3961f9c0c62109a52361d428ee5a57182ab484a15f372e",
+          "data/housing-inputs-20261012/PERMIT/batch-04.zip": "ceecddee153197b281b57e448004b2293cf6e424f09e5185147583c0c445e979",
+          "data/housing-inputs-20261012/PERMIT/batch-05.request.json": "47f09fb1dd25ed51926669f4b03c7644fcc6384624f1cf6cce8f788d51cb4014",
+          "data/housing-inputs-20261012/PERMIT/batch-05.zip": "d74ff6a9db09858e5e9fc32d0ef829a708c7e69e3dc60ad6f82a283609b9e0f5",
+          "data/housing-inputs-20261012/PERMIT/batch-06.request.json": "f767037c24d7dd9c556b3b8523ed4b0a1569a1805dc60e9df702ec6524f0c44d",
+          "data/housing-inputs-20261012/PERMIT/batch-06.zip": "1f0caf4e61a8d0135aaac8890f88dda90d524e1257b1844cf02d39d82af8abb3",
+          "data/housing-inputs-20261012/acquisition.json": "1402470bee8a7fcf811f3276eed3aeec0a4061d5ce5179b9daba3f1ee2c8c1ea",
+          "data/housing-inputs-20261012/manifest.json": "6f35aad1fc7fcd05d66aab4c65402f537e1cd8d200dc1d51a797b4b0de2ea9a0",
+          "data/macro-tilt-prepared-20261010/close.csv": "b098f783bbf7a4ca56520e11c6e13edbb0eb2673ed7aaec02b89981ff74fabce",
+          "data/sector-growth-source-20261011/SOXX-factsheet-request.json": "0ca3091a8ad04fda30c8836386c6045d799c7cd7f30393c76d39d663fc649324",
+          "data/sector-growth-source-20261011/SOXX-factsheet.pdf": "7bac89bd17040a64cfbb9610d77d685173fed1f9f38fd84a134537cf2e4bb23e",
+          "data/sector-growth-source-20261011/SOXX-issuer.html": "e2649e864163311039bc703c5277e2e32df90328668db9e86057cd3f8ec2aaa1",
+          "data/sector-growth-source-20261011/SOXX-price-request.json": "bd08dbc91bf80b06d80dc569e207bb550f81ffb75e931b461e6141ccd8a990fc",
+          "data/sector-growth-source-20261011/SOXX-raw.json": "aa4b117b0147f13d571a522881c90cfd6c6a416b7efe743c316b16a577ec74a1",
+          "data/sector-growth-source-20261011/SOXX-summary-underlying-request.json": "db8410d01582b6123dbf7e792fd33d3687bb87c7c490975b1dd0c4aeab1f0e64",
+          "data/sector-growth-source-20261011/SOXX-summary-underlying.pdf": "4fcf096b9e75f99f1cce0d62eb6b8e65a6f9e82503738ccaca6e6b4721516bfc",
+          "data/sector-growth-source-20261011/SOXX.csv": "31bb1c024472e23e985e7bd33dbb1655703f3f9289bef175836dea16e652a0f4",
+          "data/sector-growth-source-20261011/XLK-factsheet-request.json": "ceb33c1b2e199542d655af71ebfb48a77abea50fa7033491ed0abfdbdbef1fe1",
+          "data/sector-growth-source-20261011/XLK-factsheet.pdf": "c8b7997b458c1835503c8901403f9d4f4c24e85470c2443454bb8e77fb419a34",
+          "data/sector-growth-source-20261011/XLK-issuer.html": "d67107f4f079d3a9e5fcdc6a660fbbd6ac8d10fec1ca0f73883a67a32fbe21e3",
+          "data/sector-growth-source-20261011/XLK-price-request.json": "489418c21640a43f9b7d057d0a4defb378a3b929a4ef9b390b9b202792b561f3",
+          "data/sector-growth-source-20261011/XLK-raw.json": "49299c90de030e873b164e7a84d5cb077dbca6293c881f67a229b42dc7545dbb",
+          "data/sector-growth-source-20261011/XLK.csv": "c3ea3867c3e4294a1c717ac1dbff7b7249380820cc52d717ae40cb172cb19ea9",
+          "data/sector-growth-source-20261011/manifest.json": "eb43e116d5bdd13cf08a10b7bcca4ebd044cfb6a21e1b1511d6f377e6a466973",
+          "evidence/growth_portfolio_protection_20261011_registration.json": "b712b375fc3599bd8691996c4d33ff4b9878c63b6b95b1fa8ca27935b9e468fe",
+          "evidence/housing_input_readiness_20261012.json": "6aee5cbe6a203fafdbd8bddd82edb65fb85d9ef09094149e96cb20fdfda4de6e",
+          "evidence/research_program_skew_guard_results_v85.json": "77c9587821427ff5a852cf6595b4ae88ebdb6b4ba54fd3b09683655c3ff707c3",
+          "evidence/sector_growth_balance_20261011_registration.json": "1ace4a96739b5f99e1023d3dc502373f7da90acf5edb9ddd18b13c20168d273d",
+          "evidence/skew_guard_20261012_preservation.json": "1a15c16681e93249ecdce88530c195d98363cffeebd6eb1691e4484239de39ad",
+          "reports/housing-inputs-plan-20261012/verified-queries.csv": "7c352f9bed5d5c0bf14b7a3f377c5214947217c58243443ac6541bc6750302da",
+          "src/us_quant/activity_inputs.py": "adba772daec20d4ccc842115d4b7900a249b9e22368fe48e6b741744474e250c",
+          "src/us_quant/calendar.py": "04fdabc739de0a30284527715b80348321652fa2b7a66567b1232987289edf02",
+          "src/us_quant/dollar_risk_guard.py": "c4b6db938cc98791fcb620f5317c4b964428e518689e75b6696cf1f8ee38ae53",
+          "src/us_quant/financial_conditions_guard.py": "0b88d81cf27c57fbde745cffe910cb7cea249b46a4d9888c9ca820ebd2c258c1",
+          "src/us_quant/growth_factor_satellite.py": "a83f647efa43becd7538c421ff3ba512f6951f6f2f90e8a447b53732e8b18f90",
+          "src/us_quant/housing_factor_guard.py": "9642d2fd38c7bedc65de870b1de429fdb914486848053af4dfb2bb750004a5c8",
+          "src/us_quant/housing_inputs.py": "e7ea1181a4f165bd890bb8aa4cd97356ec00a6c68f35fa2918c64d59f6a3dc64",
+          "src/us_quant/inflation_inputs.py": "fdff3024672c9fe51508e91545f5b0cb1352fef04ad6751216ece84beb783ceb",
+          "src/us_quant/macro_factor_tilt.py": "40a2fec8b2502bd8cba21a1ac8b16397d98ed77d8c2cd304ba814c20eaf623b0",
+          "src/us_quant/multifactor_stability.py": "05423115c9171a20f0c870e2556b4f25f787df737da4b1f87da5f5fffe3ae7b9",
+          "src/us_quant/sector_growth_balance.py": "783df691d243da8794d887bd1f8bb5331f9875a271b628c157098ea6233fd7a7",
+          "src/us_quant/storage.py": "e424d764392491b654e55756566418153bec8104ae64dd15447076315c84a367",
+          "src/us_quant/yield_curve_inputs.py": "ad5391322bb7fc8b2ae90122b350827e6931a61c186fed8e76c04348df2fcb15"
+        },
+        "history_status": "exposed_history_not_independent_holdout",
+        "id": "semiconductor_housing_permit_starts_decline_half",
+        "leveraged_products_allowed": false,
+        "market": {
+          "close": {
+            "path": "data/sector-growth-prepared-20261011/close.csv",
+            "sha256": "762f7f258684062be17f3f7f91e28b6df1071fdaf2c60fcd69d107932ae12944"
+          },
+          "open": {
+            "path": "data/sector-growth-prepared-20261011/open.csv",
+            "sha256": "f0aa7bf3f417f71343b8901f17803d9cf35e0eddd0d06c61878ab6ea7ea5f568"
+          },
+          "raw_close": {
+            "path": "data/sector-growth-prepared-20261011/raw_close.csv",
+            "sha256": "1d1c39f25326d14a69c9f875e428bb2303b54f823716a5800622f5e24d5783d9"
+          },
+          "risk_free": {
+            "path": "data/sector-growth-prepared-20261011/risk_free.csv",
+            "sha256": "af36e3deb9bf0685553617f6614eacefcd2282b76c0af81404f04669e9f5eef3"
+          },
+          "volume": {
+            "path": "data/sector-growth-prepared-20261011/volume.csv",
+            "sha256": "bf5686211d0f1191b951498d9b1a74c087571fa05adb7aed541104bda6af2a4a"
+          }
+        },
+        "order_authority": false
+      }
+    }
+  ],
+  "engine_sha256": "8ef4e96e9d1c04d9adfb52ebb61dd13b86d4143aefe6257418867e9a86f46357",
+  "investment_objective_verified": false,
+  "new_economic_factor_definitions": 0,
+  "new_strategy_evaluations": 0,
+  "order_authority": false,
+  "policy": {
+    "as_of": "2026-10-05",
+    "candidates": [
+      {
+        "housing_confirmation": "permit_decline",
+        "id": "semiconductor_housing_permit_decline_half"
+      },
+      {
+        "housing_confirmation": "permit_and_starts_decline",
+        "id": "semiconductor_housing_permit_starts_decline_half"
+      }
+    ],
+    "cash_reserve": 0.02,
+    "data_scope": "factor_etf_portfolio",
+    "data_start": "2015-08-10",
+    "factor_ids": [
+      "price_momentum",
+      "value_exposure",
+      "quality_exposure",
+      "low_volatility_exposure"
+    ],
+    "factor_symbols": [
+      "MTUM",
+      "VLUE",
+      "QUAL",
+      "USMV"
+    ],
+    "housing_implementation": {
+      "path": "src/us_quant/housing_inputs.py",
+      "sha256": "e7ea1181a4f165bd890bb8aa4cd97356ec00a6c68f35fa2918c64d59f6a3dc64"
+    },
+    "housing_manifest": {
+      "path": "data/housing-inputs-20261012/manifest.json",
+      "sha256": "6f35aad1fc7fcd05d66aab4c65402f537e1cd8d200dc1d51a797b4b0de2ea9a0"
+    },
+    "housing_policy": {
+      "path": "config/housing-inputs.json",
+      "sha256": "6675f4744a1957a08da6b67c7771949065fddd75c3c75845d4914664eb12df8a"
+    },
+    "housing_readiness": {
+      "path": "evidence/housing_input_readiness_20261012.json",
+      "sha256": "6aee5cbe6a203fafdbd8bddd82edb65fb85d9ef09094149e96cb20fdfda4de6e"
+    },
+    "known_paused_months": [
+      "2025-11-28",
+      "2025-12-31",
+      "2026-01-30",
+      "2026-02-27",
+      "2026-03-31",
+      "2026-04-30",
+      "2026-07-31"
+    ],
+    "known_stale_queries": [
+      {
+        "completed_period_age_calendar_days": 86,
+        "completed_period_end": "2025-08-31",
+        "observation_month": "2025-08-01",
+        "query_session": "2025-11-25",
+        "vintage_cutoff": "2025-11-21"
+      },
+      {
+        "completed_period_age_calendar_days": 89,
+        "completed_period_end": "2025-08-31",
+        "observation_month": "2025-08-01",
+        "query_session": "2025-11-28",
+        "vintage_cutoff": "2025-11-25"
+      },
+      {
+        "completed_period_age_calendar_days": 120,
+        "completed_period_end": "2025-08-31",
+        "observation_month": "2025-08-01",
+        "query_session": "2025-12-29",
+        "vintage_cutoff": "2025-12-24"
+      },
+      {
+        "completed_period_age_calendar_days": 122,
+        "completed_period_end": "2025-08-31",
+        "observation_month": "2025-08-01",
+        "query_session": "2025-12-31",
+        "vintage_cutoff": "2025-12-29"
+      },
+      {
+        "completed_period_age_calendar_days": 90,
+        "completed_period_end": "2025-10-31",
+        "observation_month": "2025-10-01",
+        "query_session": "2026-01-29",
+        "vintage_cutoff": "2026-01-27"
+      },
+      {
+        "completed_period_age_calendar_days": 91,
+        "completed_period_end": "2025-10-31",
+        "observation_month": "2025-10-01",
+        "query_session": "2026-01-30",
+        "vintage_cutoff": "2026-01-28"
+      },
+      {
+        "completed_period_age_calendar_days": 89,
+        "completed_period_end": "2026-01-31",
+        "observation_month": "2026-01-01",
+        "query_session": "2026-04-30",
+        "vintage_cutoff": "2026-04-28"
+      }
+    ],
+    "methodology": {
+      "automatic_live_deployment": false,
+      "baseline": "Rebuild exactly original four_factor_semiconductor_sector50 monthly targets from their original twelve-asset prices:63session samplevolatility/30%-70%equitybounds/half-equitySOXX/remaininghalfequalMTUM-VLUE-QUAL-USMV/GLDdefense/98%funding. Do not choose a later winning optionbudget/Dollar/activity/trend/holdingband source or change any sleeve share.",
+      "execution": "Original monthly absolute requests and each freshUSD10000window-cost account. Keep5bpnext-openbase/20bpextrasessionstress/USD1order/fractionallong-onlycash-funded-v2/originalriskfree and complete10y5yreturns. Seed eachwindow from lastactuallyissuedcausal target. No leverage,options/futurestrades,dailyfloor,tradeband,fee rebate,syntheticcashinterest or parameter optimization.",
+      "hypothesis": "Housing authorization is an earlier activity stage than foundation starts in an interest-sensitive sector. Compare an authorization decline alone with the same decline requiring a starts decline. This tests pipeline-stage confirmation,not an independently validated recession label,trading instruction or two new economic factor families. CFNAI already includes housing and both series may respond to common financial conditions.",
+      "known_missingness": "Strict housing source stays blocked at14series-query cells across the seven exact dates listed. Before targets and returns freeze this separate no-request law:if either current/reference PERMIT or HOUST query is exactly listed stale,leave that entire original month target row NaN/no rebalance request and record both stage reasons. The seven mapped months are fixed above. Continue actual holdings/marks/cash/fees and all2512/1254formalreturn days;no zero-return,cash substitution,capital reset or source-readiness repair. Unknown or changed gap/date/age/value/hash/archive is fatal,not a broader standby.",
+      "measurement": "Use native monthly thousands-of-units seasonally adjusted annual rates,not adjusted prices,returns or raw monthly counts. Compare each source stage only to itself;PERMITminusHOUST is not a measured backlog because coverage differs. Own-query differences may include statistical revisions and survey/seasonal changes,not a pure economic shock. Source counts do not prove predictive ability.",
+      "order_authority": false,
+      "preservation": "No neweconomicdefinitions/marketassetadmission/W42fourplan/IJRPKWtwo-definitionquota/Oct17eligibility/frozenforwardmodel changes. Preserve alloldjournal/sourceversions/69imports/7profiles/3192controls/26oldselectionartifacts. Sourcegap handling is an explicit new strategy law,not modifying the published strictlyblocked source or old failures.",
+      "rules": "At each original131completedmonth decision compare each actual latest PERMIT/HOUST level to its own independently observed63NYSE-session-earlier query/vintage level. The first candidate halves all original non-BILweights if PERMITcurrent is strictly below its prior level. The second requires both PERMITcurrent strictly below priorPERMIT and HOUSTcurrent strictly below priorHOUST. Equal or rising readings do not trigger. Otherwise issue the unmodified source target. Transfer removed capital only to actualBIL with the same inherited50%scale and2%targetidle cash;no additional Dollar/curve/option threshold,percentile or state filter.",
+      "selection": "Exactly2fixed housing stage hypotheses after162exposed-history configurations. Freeze complete source/code/spec/63horizon/strictdecline/halfscale/stages/pause before target generation,independently verify all450selections/131originalbudgets/complete124targets/8seeds,then actual registration and remote publication before funded/bt accounts. Preserve every outcome under strictSharpe>1/full-SPY/stress-base-SPY/DD<=15%onallfourpaths. Original76conditional inference and old22/36scopes do not cover these trials,new2SKEW or full164/unknown searches.",
+      "source": "Reparse the exact previously acquired450ALFREDsnapshots/12batches/6probes/4primarydocuments and private fullquery matrix. Retain original2805NYSEcontext/225queries per series/131monthly-reference pairs,secondpreviousNYSEsnapshot,62calendar-day completed-month age and2014Jan1-2026Aug1observation bound,whilemarketasof/formalreturns stillendOct5. No newrequests,current-history fallback,lag-age relaxation,access bypass or invented first-of-month release."
+    },
+    "missing_data_rule": "only_exact_predeclared_stale_query_pairs_pause_original_monthly_request_unknown_gap_fatal",
+    "new_configurations": 2,
+    "new_economic_factor_definitions": 0,
+    "prior_evaluated_configurations": 162,
+    "risk_change_sessions": 63,
+    "risk_off_scale": 0.5,
+    "schema_version": 1,
+    "source_candidate": "four_factor_semiconductor_sector50",
+    "source_implementation": {
+      "path": "src/us_quant/sector_growth_balance.py",
+      "sha256": "783df691d243da8794d887bd1f8bb5331f9875a271b628c157098ea6233fd7a7"
+    },
+    "source_policy": {
+      "path": "config/sector-growth-balance.json",
+      "sha256": "ed3fef4f25dbda3132df2480e43a5188719776485c9018c5447c9e2aad2f4103"
+    },
+    "source_registration": {
+      "path": "evidence/sector_growth_balance_20261011_registration.json",
+      "sha256": "1ace4a96739b5f99e1023d3dc502373f7da90acf5edb9ddd18b13c20168d273d"
+    },
+    "strict_source_readiness_relabelled": false,
+    "study_id": "published_housing_pipeline_slowdown_confirmations_20261012"
+  },
+  "policy_reference": {
+    "body_sha256": "38d2df811a756b3e4e6fb9119a63e65ff7102c65a934db7cd4b6b379d0cbb736",
+    "path": "config/housing-factor-guard.json",
+    "sha256": "51bbebe1ddbafddce5433af57b611e0b2380930b846b66c6f040eb4f199d30cb"
+  },
+  "pre_account_proof": {
+    "body_sha256": "d0c6a79e07fb277bf090dc7fe653f00d598d6c31b51b335032674e4e6bf93c94",
+    "path": "evidence/housing_guard_20261012_pre_account_verification.json",
+    "sha256": "d612f6f3676f026574f804e60e628618506c1c8aaca90afb743a5f72f864ef4b"
+  },
+  "prepared_path": "data/housing-factor-guard-20261012",
+  "recorded_at": "2026-10-12T01:11:43.956882+00:00",
+  "registered_before_strategy_accounts": true,
+  "runner_sha256": "8ed4d314ff53226e905e85a46de064db542dcb9fc1e3c1c165ece27eba6140b1",
+  "schema_version": 1
+}

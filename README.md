@@ -6410,6 +6410,70 @@ retains daily collection / Saturday research without claiming timer
 delivery from configuration alone.
 **This is new source research, not a qualified strategy; the full goal remains unmet.**
 
+## Monthly housing pipeline confirmations: registered before accounts
+
+The [frozen strategy policy](research/workbench/config/housing-factor-guard.json)
+compares a decline in the earlier authorization stage with the same
+decline requiring confirmation from actual foundation starts.
+Both use the original four-style/SOXX/gold source, unchanged
+63-session volatility / 30%-70% equity bounds / half-equity SOXX /
+equal four-style remainder / 98% investment and original cash/cost rules.
+No later option-budget, Dollar, trend or activity winner is substituted.
+
+At each original month end, compare the latest actually available
+`PERMIT` reading with its **own 63-NYSE-session-earlier vintage/query**
+reading. The first candidate halves all original non-BIL weights
+only when the current reading is strictly lower.
+The second requires both this decline and a strictly lower `HOUST`
+reading versus its own earlier query. Equal readings do not trigger.
+Freed capital goes to actual BIL; no new scale, threshold grid,
+daily timing, factor share, holding band or return-based optimization.
+These differences can include revisions and methodology changes;
+the housing stages are not two independent factors or recession labels.
+
+The strict source remains false at its original 14 stale cells.
+A **separate prior-frozen strategy law** issues no new monthly request
+on the seven exact current/reference-pair affected months:
+2025-11-28, 2025-12-31, 2026-01-30, 2026-02-27,
+2026-03-31, 2026-04-30 and 2026-07-31.
+Targets are all NaN there, not cash or zero-return positions.
+Actual holdings, marks, cash, fees and all 2,512 / 1,254 formal
+return days continue. Unknown or changed gap/date/age/hash is fatal,
+not an expanded standby rule or source-readiness repair.
+
+The [adapter](research/workbench/src/us_quant/housing_factor_guard.py)
+reuses the unchanged housing archive/62-day monthly selector and
+original sector target builder.
+The [independent pre-account proof](research/workbench/evidence/housing_guard_20261012_pre_account_verification.json)
+checks all 450 raw/Decimal housing selections, 131 scalar original
+budgets, four original seeded source paths, both complete target
+matrices and eight independently seeded replays.
+Each candidate issues 124 targets; the permit-only / jointly confirmed
+rules halve risk on 58 / 35 monthly requests.
+Source/old-seed/new-seed errors are zero; budget and target errors
+are at most 2.23e-16. No portfolio outcome is computed at this stage.
+156 coupled cases and 52 root guards pass.
+
+The [actual registration packet](research/workbench/evidence/housing_guard_20261012_registration.json)
+records candidates at **2026-10-12 01:11:38 / 01:11:41 UTC**,
+before any account.
+The [registration preservation](research/workbench/evidence/housing_guard_20261012_registration_preservation.json)
+proves one exact old-engine/head migration, every old row/event prefix,
+all seven semantic profiles, 69 imports, 3,192 controls and 26
+old selection artifacts.
+An actual evaluation against the preceding source-only published
+commit stops before output/accounts; the new packet/code/policy/proof
+must be remotely published before funded-v2 / independent-bt evaluation.
+
+The [registration snapshot](research/workbench/evidence/research_program_housing_guard_registered_v86.json)
+retains **162 completed configurations / 78 reviews**, 82 registered
+versions including two old invalid versions, and exactly these two
+pending candidates. Six definitions / five families, the original
+W42 plans / IJR-PKW quota and both frozen zero-return forward models
+remain unchanged. Prior current-76 selection inference does not cover
+these two housing or the two later SKEW trials, nor the full search.
+**No housing performance or investment qualification is claimed at registration.**
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

@@ -52,6 +52,7 @@ GENERATORS = {
     "near_term_risk_confirmation": "config/near-term-risk-confirmation.json",
     "implied_risk_balance": "config/implied-risk-balance.json",
     "skew_factor_guard": "config/skew-factor-guard.json",
+    "housing_factor_guard": "config/housing-factor-guard.json",
 }
 
 
@@ -458,6 +459,18 @@ def registered_generator(spec: dict, root: Path) -> tuple[str, dict]:
                 "src/us_quant/sector_growth_balance.py", "config/sector-growth-balance.json",
                 "src/us_quant/calendar.py", "src/us_quant/storage.py",
             ]
+        elif name == "housing_factor_guard":
+            required += [
+                "src/us_quant/housing_inputs.py", "config/housing-inputs.json",
+                "evidence/housing_input_readiness_20261012.json", "data/housing-inputs-20261012/manifest.json",
+                "reports/housing-inputs-plan-20261012/verified-queries.csv",
+                "evidence/sector_growth_balance_20261011_registration.json",
+                "src/us_quant/sector_growth_balance.py", "config/sector-growth-balance.json",
+                "src/us_quant/activity_inputs.py", "src/us_quant/yield_curve_inputs.py",
+                "src/us_quant/inflation_inputs.py", "src/us_quant/financial_conditions_guard.py",
+                "src/us_quant/dollar_risk_guard.py", "src/us_quant/macro_factor_tilt.py",
+                "src/us_quant/calendar.py", "src/us_quant/storage.py",
+            ]
         if any(relative not in frozen for relative in required):
             raise QuantError("The registered strategy is missing a frozen helper dependency.")
         for relative in required:
@@ -640,6 +653,10 @@ def registered_targets(
             cache[key] = build_targets(data, policy)[spec["id"]]
         elif name == "skew_factor_guard":
             from us_quant.skew_factor_guard import build_targets
+
+            cache[key] = build_targets(data, policy)[spec["id"]]
+        elif name == "housing_factor_guard":
+            from us_quant.housing_factor_guard import build_targets
 
             cache[key] = build_targets(data, policy)[spec["id"]]
         elif name == "sector_term_guard":
