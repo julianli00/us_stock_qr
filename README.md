@@ -6584,6 +6584,20 @@ The W42 IJR/PKW quota and four plans are unchanged; any separate
 dividend hypothesis remains ineligible before 2026-10-24.
 There is no target, strategy account, new factor or investment qualification.
 
+Actual remote publication
+`039980c9a67f6be565569f5e595dbda1d29631a5` has been verified against
+the exact six frozen public registration/controller/source-contract files;
+this verification issues no quote request.
+The [updated native instructions](research/workbench/evidence/prospective_data_automation_v60.json)
+retain the original two daily pipelines in order.
+Only after both succeed, inspect the independent source-recovery status:
+`not_due` / `all_sources_acquired` sends no request;
+an eligible state may run the registered controller using that exact
+published commit. A failed/partial recovery stops source requests
+without rolling back already completed prospective input steps.
+This instruction update is not evidence that a timer ran or a provider
+accepted a request. **The investment objective remains unmet.**
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
