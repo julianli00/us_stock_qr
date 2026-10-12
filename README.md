@@ -6240,7 +6240,7 @@ scope and daily/weekly cadence.
 Both frozen forward models still have zero actual returns.
 **Source verification is not a new alpha factor or completed investment goal.**
 
-## Monthly SKEW response scopes: actually registered before accounts
+## Monthly SKEW response scopes: both rejected under full gates
 
 The [frozen policy](research/workbench/config/skew-factor-guard.json)
 and [generator](research/workbench/src/us_quant/skew_factor_guard.py)
@@ -6285,6 +6285,56 @@ with 80 versions including two old invalid ones and exactly two pending.
 An old-commit evaluation stops before output or accounts.
 **No new candidate portfolio metrics exist at registration;
 actual remote publication must precede funded/bt evaluation.**
+
+Actual remote publication
+`a5b2221fa79d62a4f14a91eeda10241edd36a1e4` precedes the
+00:19:55.233811UTC durable fence and both new account calculations.
+The [independently verified results](research/workbench/evidence/skew_guard_20261012_results.json)
+retain every path:
+
+| Risk transfer scope | Window | Costs | CAGR | Net excess Sharpe | Maximum drawdown |
+|---|---|---|---:|---:|---:|
+| Equity only | 10y | Base | 14.6443% | 1.00864 | 20.3247% |
+| Equity only | 10y | Stress | 14.2217% | 0.97545 | 20.1440% |
+| Equity only | 5y | Base | 17.7984% | 1.01614 | 20.4750% |
+| Equity only | 5y | Stress | 17.1658% | 0.97315 | 20.2924% |
+| All non-BIL | 10y | Base | 12.2044% | 1.02839 | 17.4188% |
+| All non-BIL | 10y | Stress | 11.6995% | 0.97798 | 17.5561% |
+| All non-BIL | 5y | Base | 13.7434% | 0.95625 | 17.5680% |
+| All non-BIL | 5y | Stress | 13.0643% | 0.89407 | 17.7019% |
+
+**All eight drawdown gates, all four stress Sharpe gates and every
+ten-year SPY gate fail. Both configurations remain rejected.**
+Equity-only transfer beats five-year SPY but still fails drawdown and
+stress Sharpe; all-non-BIL transfer misses every SPY return gate.
+The lower 17.70% drawdown is still above 15%, not a near-threshold pass.
+No SKEW level, reduction scale, pause, asset scope, clock or cost is refitted.
+
+The [reproducibility proof](research/workbench/evidence/skew_guard_20261012_reproducibility.json)
+checks every source level/scope/target/seed, 16 funded strategy/SPY
+accounts and 16 bt accounts over 30,128 funding/cash-flow days.
+Target, metric and wealth errors are at most 5.56e-17, 5.21e-14
+and USD7.28e-11.
+Eight exact pause-due-day checks verify no rebalance/cost, continuing
+risk holdings and every formal return day.
+The [four matched scope comparisons](research/workbench/evidence/skew_guard_20261012_scope_comparison.json)
+confirm identical issued stock weights and missing-month rows;
+halving gold as well lowers CAGR and drawdown on all four comparisons.
+Different NAV, actual quantities, cash and fees mean this is not equal
+actual risk or causal gold alpha, and it creates no new accounts/trials.
+
+The [current snapshot](research/workbench/evidence/research_program_skew_guard_results_v85.json)
+contains **162 completed configurations = 84 prior + 78 recurring reviews**,
+80 versions including two old invalid ones, no pending candidate and no champion.
+The [full source-bound audit](research/workbench/evidence/research_program_source_bound_audit_v55.json)
+reexecutes all 78 reviews/312 paths, retaining 19 legacy and 59 funded-v2 reviews.
+The [preservation proof](research/workbench/evidence/skew_guard_20261012_preservation.json)
+retains every old row, seven profiles, 69 imports, 3,192 controls,
+26 old selection artifacts and the original W42 plans.
+The fixed current-76 conditional inference does not cover these two new trials.
+The [updated native instructions](research/workbench/evidence/prospective_data_automation_v57.json)
+keep daily/weekly cadence and both frozen forward models with zero actual returns.
+**The full investment objective remains unmet.**
 
 ## Progress and publication
 
