@@ -6838,6 +6838,57 @@ The old current-76 inference does not cover these or the six later
 trials, the full search or future alpha.
 **New earnings portfolio outcomes do not exist at registration.**
 
+Actual remote publication
+`b188608ef8e9d01ac413746e9e65c606c1f7ab5d` precedes the
+04:17:12.957439UTC durable fence and both new feedback-account calculations.
+The [independently verified full results](research/workbench/evidence/profit_guard_20261012_results.json)
+retain both rules and every original window/cost path:
+
+| Earnings confirmation | Window | Costs | CAGR | Net excess Sharpe | Maximum drawdown |
+|---|---|---|---:|---:|---:|
+| Profit level | 10y | Base | 17.7867% | 1.06145 | 17.8577% |
+| Profit level | 10y | Stress | 17.1554% | 1.02224 | 18.5605% |
+| Profit level | 5y | Base | 22.8911% | 1.12966 | 17.9531% |
+| Profit level | 5y | Stress | 21.5506% | 1.05999 | 18.7239% |
+| Income/output proxy | 10y | Base | 17.1115% | 1.08886 | 18.2181% |
+| Income/output proxy | 10y | Stress | 16.7293% | 1.06476 | 18.5126% |
+| Income/output proxy | 5y | Base | 21.1143% | 1.08660 | 18.2927% |
+| Income/output proxy | 5y | Stress | 20.5215% | 1.05627 | 18.6544% |
+
+**All eight Sharpe / cost-matched SPY gates and all four stress-versus-base-SPY
+gates pass, but every drawdown gate fails. Both configurations remain rejected.**
+Complete level / share worst drawdowns are **18.7239% / 18.6544%**,
+not near-threshold passes at 15%; minimum Sharpes are 1.02224 / 1.05627.
+Common-quarter selection avoids timing mistakes but does not establish
+the required stability or independent predictive alpha.
+No join, accounting period, measure, 186-day age, 63-session horizon,
+sign, half scale, band, source budget, cost or clock is refitted.
+The old dollar-band version's lower drawdown cannot be combined with
+these higher earnings-rule returns.
+
+The [independent account proof](research/workbench/evidence/profit_guard_20261012_reproducibility.json)
+checks every frozen common-query/comparison hash, 728 actual closing
+gap/initial/queue decisions, 16 funded strategy/SPY and 16 independent
+bt accounts across 30,128 price/quantity/funding/fee/cash-flow days.
+Issued-target error is zero; metric / wealth / cash-flow differences
+are at most 3.47e-14 / USD1.10e-10 / USD1.43e-11.
+Every original return session, cost, latency, independent capital
+anchor and initial-capital drawdown peak remains.
+
+The [current snapshot](research/workbench/evidence/research_program_profit_guard_results_v91.json)
+contains **168 completed configurations = 84 prior + 84 recurring reviews**,
+86 versions including two old invalid ones, no pending candidate and no champion.
+The [full source-bound audit](research/workbench/evidence/research_program_source_bound_audit_v58.json)
+reexecutes all 84 reviews / 336 paths, preserving 19 legacy and 65 funded-v2 reviews.
+The [preservation proof](research/workbench/evidence/profit_guard_20261012_preservation.json)
+retains every old row/event prefix, seven profiles, 69 imports,
+3,192 controls, 26 old selection artifacts, W42 plans and source-recovery
+fingerprint / cooldown / zero GET.
+The fixed current-76 inference does not cover the eight later trials.
+The [native update](research/workbench/evidence/prospective_data_automation_v63.json)
+retains daily/weekly cadence and both unchanged zero-return forward models.
+**The full investment objective remains unmet.**
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
