@@ -6537,6 +6537,53 @@ The [native update](research/workbench/evidence/prospective_data_automation_v59.
 retains daily/weekly cadence and both unchanged zero-return forward models.
 **The full investment objective remains unmet.**
 
+## Bounded dividend-source recovery: registered, not yet requested
+
+The [source-only recovery policy](research/workbench/config/dividend-source-recovery.json)
+and [controller](research/workbench/src/us_quant/dividend_source_recovery.py)
+prepare a lawful retry of the original blocked VIG/SDY histories,
+not another risk threshold or a new strategy result.
+Original issuer definitions, requests, HTTP429 responses and all
+source hashes remain unchanged.
+The same URL, GET method, default request headers/user agent,
+curl transport, 2015-08-10 through 2026-10-05 range and 2,805-session
+price/action validator are retained.
+Saving response headers does not change request headers.
+NOBL's403 refusal is not retried or bypassed.
+
+The [actual source registration](research/workbench/evidence/dividend_source_recovery_20261012_registration.json)
+freezes a conservative **24-hour minimum global cooldown** from the
+latest original refusal, so the first new request cannot occur
+before **2026-10-12 09:29:43.277441 UTC**.
+The original response did not retain a `Retry-After` header;
+this local limit is **not certified provider permission**.
+A later directive may extend, never shorten, the cooldown.
+Maximum one request per invocation and one per 24 hours;
+VIG precedes SDY, each has at most one new attempt, total at most two.
+Any refusal, transport failure, invalid/incomplete payload or
+unverified partial attempt stops all further automated requests.
+No changed host, endpoint, headers, browser challenge or current-history
+substitute is used to bypass an access or rate restriction.
+
+Actual remote publication of the exact registration, controller,
+policy and original source contracts must precede a due request.
+The [real-clock proof](research/workbench/evidence/dividend_source_recovery_20261012_verification.json)
+shows the early invocation returns `not_due`, performs **zero**
+provider requests and creates no attempt directory.
+69 coupled controller/source-contract cases and 52 root guards pass;
+synthetic tests are not price coverage or a successful provider retry.
+A later acquired history still requires full raw/CSV/action inspection
+before source admission. Acquisition is not factor registration,
+portfolio return or a prospective market/model observation.
+
+**No new dividend history is acquired at this checkpoint.**
+164 completed configurations / 80 reviews / 82 versions, all old rows,
+engine/head, seven profiles, 69 imports, 3,192 controls and 26 old
+selection artifacts remain exact.
+The W42 IJR/PKW quota and four plans are unchanged; any separate
+dividend hypothesis remains ineligible before 2026-10-24.
+There is no target, strategy account, new factor or investment qualification.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

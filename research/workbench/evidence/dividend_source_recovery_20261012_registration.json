@@ -1,0 +1,84 @@
+{
+  "controller_sha256": "b935cee8e90366ba913fbf4c0b2d3f68b13621da27be8b44ef998bbfc4e20476",
+  "first_request_not_before_utc": "2026-10-12T09:29:43.277441+00:00",
+  "new_requests_at_registration": 0,
+  "new_strategy_evaluations": 0,
+  "order_authority": false,
+  "policy": {
+    "as_of": "2026-10-05",
+    "automatic_live_deployment": false,
+    "capture_response_headers_without_changing_request_headers": true,
+    "data_start": "2015-08-10",
+    "directory": "data/dividend-source-recovery-20261012",
+    "earliest_separate_hypothesis_cycle": "2026-10-24T09:00:00+08:00",
+    "existing_W42_or_forward_rules_changed": false,
+    "investment_objective_verified": false,
+    "local_24hour_gate_claimed_provider_retry_authorization": false,
+    "maximum_attempts_per_symbol": 1,
+    "maximum_new_requests_per_invocation": 1,
+    "maximum_total_new_requests": 2,
+    "minimum_cooldown_hours": 24,
+    "new_registered_candidates": 0,
+    "new_registered_factor_definitions": 0,
+    "new_strategy_evaluations": 0,
+    "order_authority": false,
+    "original_retry_after_header_was_not_captured": true,
+    "original_source_evidence": {
+      "path": "evidence/dividend_growth_source_readiness_20261011.json",
+      "sha256": "8032ac928ba7dc9ba4dc949c8a92c3b100a926589480698a436eea2926dd53e7"
+    },
+    "original_source_manifest": {
+      "path": "data/dividend-growth-sources-20261011/manifest.json",
+      "sha256": "ec999cfe17722b441830b81479fcbffa45feb3f18b594ca2d5d31c786ca1f910"
+    },
+    "original_url_method_headers_and_curl_transport_unchanged": true,
+    "portfolio_states_targets_or_returns_computed": false,
+    "registration": "evidence/dividend_source_recovery_20261012_registration.json",
+    "required_market_sessions": 2805,
+    "schema_version": 1,
+    "scope": "historical_source_acquisition_only",
+    "source_history_is_forward_observation": false,
+    "source_policy": {
+      "path": "config/dividend-growth-sources.json",
+      "sha256": "75cc5795885ec1f4e2a7d316e3ce4207b66bbf50259238750c916f202ac20f2e"
+    },
+    "source_validator": {
+      "path": "src/us_quant/dividend_growth_sources.py",
+      "sha256": "174ae2642e1274377085153fded8dbace62d750e9c522a4b060329418d638724"
+    },
+    "stop_after_any_refusal_transport_failure_or_invalid_payload": true,
+    "study_id": "bounded_dividend_source_recovery_20261012",
+    "symbols": [
+      "VIG",
+      "SDY"
+    ]
+  },
+  "policy_reference": {
+    "body_sha256": "b43f1e5ff59e4f167f439d3b4e536d7125412de01286915ec3db0cfb6aa4a572",
+    "path": "config/dividend-source-recovery.json",
+    "sha256": "477f52ac66c13a2587a6a35d4d3421c23ed7e4e499b9dd273f0c1c5e057f4fff"
+  },
+  "provider_retry_permission_certified": false,
+  "registered_at": "2026-10-12T01:57:39.371616+00:00",
+  "schema_version": 1,
+  "source_requests": [
+    {
+      "old_finished_at": "2026-10-11T09:29:43.249796+00:00",
+      "old_request": {
+        "path": "data/dividend-growth-sources-20261011/VIG-raw.request.json",
+        "sha256": "4d3442ee2882d164339c4ed00ecef8572c99126e58750bb46bc24cb2ebc2c7d5"
+      },
+      "symbol": "VIG",
+      "url": "https://query2.finance.yahoo.com/v8/finance/chart/VIG?period1=1439164800&period2=1791244800&interval=1d&events=div%2Csplits"
+    },
+    {
+      "old_finished_at": "2026-10-11T09:29:43.277441+00:00",
+      "old_request": {
+        "path": "data/dividend-growth-sources-20261011/SDY-raw.request.json",
+        "sha256": "7a9e782eada40e4b1b25e8718d2529dac07a4b3c32cabf055b12260631b027fb"
+      },
+      "symbol": "SDY",
+      "url": "https://query2.finance.yahoo.com/v8/finance/chart/SDY?period1=1439164800&period2=1791244800&interval=1d&events=div%2Csplits"
+    }
+  ]
+}
