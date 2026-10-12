@@ -6717,6 +6717,66 @@ The [native update](research/workbench/evidence/prospective_data_automation_v61.
 retains daily/weekly cadence, bounded source recovery and both frozen
 zero-return forward models. **The full investment objective remains unmet.**
 
+## Quarterly profit/output vintages: declared source grid verified
+
+The [frozen source policy](research/workbench/config/profit-inputs.json)
+adds economic earnings information through **CPATAX**, aggregate
+corporate profits after tax with inventory valuation / capital
+consumption adjustments, and **GDP**, nominal domestic output.
+Primary FRED definitions and exact ALFRED metadata identify BEA
+accounts A551RC / A191RC and native quarterly billions of dollars
+at seasonally adjusted annual rates.
+The initially inspected `CP` series explicitly lacks those adjustments
+and is not substituted for CPATAX; real GDP / growth-rate downloads
+are not substituted for nominal levels.
+These are related aggregate sources, not two independent factor
+families, company EPS, filing-time stock fundamentals, cash flows
+or tradable fund returns.
+
+The [source-only verifier](research/workbench/src/us_quant/profit_inputs.py)
+reuses the unchanged bounded vintage-date helper, original monthly/
+63-session query cohort and scoped archive metadata parser.
+Quarter-start labels identify observation periods rather than releases.
+A **new quarterly contract**, frozen before numeric acquisition,
+limits age to 186 calendar days from the completed quarter end
+(two 93-day periods). It does not relax old monthly62 / weekly14
+freshness, manufacture a quarter-end release or optimize a trading parameter.
+The observation range 2014-01-01 through 2026-04-01 is authenticated
+by the actual advertised forms; market as-of 2026-10-05 and all
+original 2,805 context days / 131 pairs / 225 queries remain.
+
+The [independent source proof](research/workbench/evidence/profit_input_readiness_20261012.json)
+checks 12 ordinary public-form ZIP batches / **450 actual snapshots**,
+six separately acquired probes and four primary series/form documents.
+Raw CSV strings, Decimal values, scalar NYSE cutoffs and calendar
+quarter ends reproduce all 450 selections with zero value/date/age errors.
+**450 are fresh, none blocked; maximum age is 182 days, within 186.**
+Full readiness is limited to this exact declared query cohort,
+not every daily snapshot, complete historical NIPA/accounting
+methodology or original intraday first-publication proof.
+
+**87 of the 225 query dates have different independently latest
+profit and output quarters.** Those levels are not silently mixed
+into a profit margin or regime signal.
+Aggregate populations also need not match company-level profitability.
+Any later common-period join, ratio or portfolio rule requires its own
+prior freeze, complete source-bound selection proof, actual registration
+and remote publication before accounts.
+No ratio, rank, recession state, target, account, performance,
+new economic definition or candidate is computed here.
+
+The [preservation proof](research/workbench/evidence/profit_input_preservation_20261012.json)
+retains **166 completed configurations / 82 reviews / 84 versions**,
+six definitions / five families, no pending candidate or champion.
+Every old ledger row/engine/head, seven profiles, 69 imports,
+3,192 controls, 26 old selection artifacts and original W42 plans remain.
+Source recovery retains its exact fingerprint / cooldown / zero GET;
+the fixed current-76 inference remains outside the six later trials.
+170 coupled source cases and 52 root guards pass.
+The [native update](research/workbench/evidence/prospective_data_automation_v62.json)
+keeps daily/weekly cadence and both unchanged zero-return forward models.
+**Verified new input coverage is not portfolio alpha or full investment success.**
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
