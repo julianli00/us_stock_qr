@@ -7276,6 +7276,51 @@ including two old invalid ones, and exactly these two pending candidates.
 No new strategy performance exists at this registration checkpoint; actual
 remote publication must precede path-dependent account calculation.
 
+## Completed bounded batch 1: both momentum transfers rejected
+
+Actual remote publication
+`c3b26c7b2e1a5c8b3c226763c8b8ea87c92cc38e` and the
+09:04:20.914120 UTC durable fence precede every new feedback account.
+The [independently checked results](research/workbench/evidence/option_momentum_20261013_results.json)
+retain both fixed constructions:
+
+| Momentum implementation | Window | Costs | CAGR | Net excess Sharpe | Maximum drawdown |
+| --- | --- | --- | ---: | ---: | ---: |
+| PDP full | 10y | Base | 14.5438% | 1.08155 | 13.2660% |
+| PDP full | 10y | Stress | 14.2757% | 1.05933 | 13.1131% |
+| PDP full | 5y | Base | 18.8829% | 1.15181 | 13.2852% |
+| PDP full | 5y | Stress | 18.3503% | 1.11630 | 13.1325% |
+| MTUM/PDP equal | 10y | Base | 14.5901% | 1.08513 | 13.4241% |
+| MTUM/PDP equal | 10y | Stress | 14.3227% | 1.06289 | 13.2685% |
+| MTUM/PDP equal | 5y | Base | 18.9316% | 1.15558 | 13.4465% |
+| MTUM/PDP equal | 5y | Stress | 18.3934% | 1.11963 | 13.2912% |
+
+**Both remain rejected.** All eight Sharpe/drawdown gates and both five-year
+joint paths pass, but both ten-year SPY comparisons and ten-year stress/base-SPY
+comparisons fail. The lower drawdown comes with lower CAGR and Sharpe than
+the unchanged current reference, not an improvement in the approved primary
+ten-year return objective. No new mixture ratios, band widths, costs or
+source windows are tried after these outcomes.
+
+The [reproducibility proof](research/workbench/evidence/option_momentum_20261013_reproducibility.json)
+checks 728 actual closing-gap/initial/queue decisions and 30,128 funding days
+over 16 funded and 16 independent bt strategy/SPY accounts. Issued-target
+error is zero, scalar metric error below 9.33e-15, and wealth error below
+USD 1.17e-10. The [full source audit](research/workbench/evidence/research_program_source_bound_audit_v61.json)
+replays all 90 reviews / 360 paths, preserving 19 legacy and 71 funded-v2
+reviews. The [preservation proof](research/workbench/evidence/option_momentum_20261013_preservation.json)
+retains every prior row, control/source hash, original first forward day and
+weekly/source-access boundary.
+
+The [completed snapshot](research/workbench/evidence/research_program_option_momentum_results_v97.json)
+contains **174 completed configurations / 90 reviews**, 92 registered versions
+including two old invalid ones, no pending candidate and no champion.
+The round has used **two of six** slots; four remain for separately justified
+questions, not further tuning of the failed momentum mixture.
+The [actual native continuation](research/workbench/evidence/prospective_data_automation_v69.json)
+preserves the same cadence and records this result and remaining budget.
+**The full investment objective remains unmet.**
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
