@@ -207,6 +207,15 @@ def verified_etf_market(readiness: dict, root: Path) -> MarketData:
     from us_quant.multifactor_stability import load_market
 
     source = readiness.get("verified_etf_source", {})
+    if source.get("adapter") == "option_momentum_implementation_20261013":
+        from us_quant.option_momentum_implementation import verified_market
+
+        policy = read_json(safe_file(root, source["policy"], source["policy_sha256"]))
+        manifest = {"path": source.get("factor_manifest"), "sha256": source.get("factor_manifest_sha256")}
+        if manifest != policy.get("momentum_manifest"):
+            raise QuantError("Bounded momentum admission must bind the exact original actual-fund source.")
+        safe_file(root, manifest["path"], manifest["sha256"])
+        return verified_market(policy, root)
     if source.get("adapter") == "producer_gold_routing_20261011":
         from us_quant.producer_gold_routing import verified_market
 

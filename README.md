@@ -7237,6 +7237,45 @@ and user-approved exploration cap. Historical totals remain
 **172 configurations / 88 reviews, no champion**, with **zero** of the six new
 configuration slots consumed by this data recovery.
 
+## Bounded round, batch 1: momentum implementation only
+
+The [frozen policy](research/workbench/config/option-momentum-implementation.json)
+tests one return-source question inside the unchanged current guarded
+option-budget/semiconductor architecture: replace only its MTUM momentum
+sleeve with actual PDP, or use a fixed equal MTUM/PDP implementation mix.
+Every other desired weight, month-end, dollar guard, option budget, actual
+holding band and cost/delay rule remains unchanged.
+
+PDP's already acquired actual fund history covers all 2,805 original context
+sessions. Its issuer uses a different relative-strength implementation;
+proprietary stock scores and full historical methodology are not reconstructed.
+PDP and these fixed mixtures were already exposed in a different earlier
+portfolio, so this is a **new current-architecture construction, not new
+independent factor information or a holdout**. The previously acquired SPHQ
+history is not extended or filled to fit this batch.
+
+The [independent pre-account proof](research/workbench/evidence/option_momentum_20261013_pre_account_verification.json)
+reproduces every native PDP price/volume cell, all original twelve-asset values
+and risk-free inputs, 131 native option/dollar budgets, both complete desired
+matrices and eight causal static seed contexts. Maximum price and target
+differences are below 5.7e-14 and 1.12e-16 respectively.
+57 coupled cases and 52 root boundary cases pass.
+
+[Actual registration](research/workbench/evidence/option_momentum_20261013_registration.json)
+occurred at 2026-10-13 08:56:26 / 08:56:31 UTC.
+The [preservation proof](research/workbench/evidence/option_momentum_20261013_registration_preservation.json)
+retains every old row and all seven original profiles, including their newly
+accepted first observed day, through one exact engine migration.
+A real evaluation using the preceding data-recovery published commit stops
+before creating any new account output.
+
+The [registration snapshot](research/workbench/evidence/research_program_option_momentum_registered_v96.json)
+retains **172 completed configurations / 88 reviews**, 92 registered versions
+including two old invalid ones, and exactly these two pending candidates.
+**Two of the six approved slots are now registered; four remain.**
+No new strategy performance exists at this registration checkpoint; actual
+remote publication must precede path-dependent account calculation.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and
