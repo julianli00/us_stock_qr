@@ -7174,6 +7174,31 @@ continue research in this receiving session with checkpoint recovery, the
 unchanged daily/weekly cadence and both frozen zero-return forward models.
 **The full investment objective remains unmet.**
 
+## October 13 scheduled run: missing MTUM closing prices
+
+The [actual daily receipt](research/workbench/evidence/research_daily_actual_run_20261013_v1.json)
+records a scheduled message received at 01:01:22 UTC and an actual original
+pipeline invocation at 01:06:23 UTC. The first `parent_data` stage fails because
+the preserved MTUM response has **null close and adjusted-close values for
+October 12**. The unchanged source validator independently reproduces that
+failure; no price is filled, dropped or substituted.
+
+The successful partial SPY data, original MTUM response and failure records
+remain private and hash-bound. No complete new snapshot is accepted, later
+original stages are not invoked, and the separate dollar pipeline is not
+started. **Both frozen forward models remain at zero observed return sessions**;
+their Sharpe/CAGR values remain null. An acquisition attempt is not a new
+observation or a strategy result.
+
+The [preservation proof](research/workbench/evidence/research_daily_preservation_20261013_v1.json)
+confirms the exact 172-configuration / 88-review historical state, all seven
+accepted forward profiles, source/control hashes and terminal dividend stop
+are unchanged. The scheduled message and timer readback were observed, but
+this does not establish successful source collection, future delivery or
+exactly-once execution. The unchanged timer's next observed wakeup is
+October 14 around 09:00 Asia/Shanghai. If a session is not genuinely observed
+before its next-open deadline, later downloaded history cannot backfill it.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

@@ -1,0 +1,69 @@
+{
+  "accepted_new_complete_market_snapshots": 0,
+  "actual_pipeline_completed_steps": 0,
+  "actual_pipeline_failure_recorded_at_utc": "2026-10-13T01:06:24.431798+00:00",
+  "actual_pipeline_started_at_utc": "2026-10-13T01:06:23.261879+00:00",
+  "actual_run_declared_origin": "session_automation",
+  "collection_window_or_clock_changed": false,
+  "complete_program_reviews": 88,
+  "complete_strategy_configurations": 172,
+  "direct_http_response_metadata_retained_for_failed_quote": false,
+  "error_type": "QuantError",
+  "failed_step": "parent_data",
+  "historical_research_state_unchanged": true,
+  "independent_verifier_sha256": "2fc4d2ba6a4ee4d5ae5140d199416edba660aaa7b78b5f12b97bd5ea481ddad5",
+  "invalid_native_price_fields": [
+    "adjclose",
+    "close"
+  ],
+  "invalid_price_session": "2026-10-12",
+  "invalid_price_symbol": "MTUM",
+  "investment_objective_verified": false,
+  "later_original_pipeline_steps_started": false,
+  "market_session": "2026-10-12",
+  "native_observation": {
+    "host_automation_marker_observed": true,
+    "independent_end_to_end_delivery_certification": false,
+    "message_received_at_utc": "2026-10-13T01:01:22.580Z",
+    "native_timer_last_run_at_utc": "2026-10-13T01:01:22.367Z",
+    "native_timer_next_run_at_utc": "2026-10-14T01:00:12.000Z",
+    "native_timer_readback_observed": true,
+    "received_original_prompt_sha256": "0b8c0f6d105933dc3e365b9d3871f15f8a406852d9c2845ad31cd127d431aaf4"
+  },
+  "new_forward_model_sessions": 0,
+  "new_historical_strategy_evaluations_or_factor_definitions": 0,
+  "old_accepted_source_outputs_rolled_back": false,
+  "order_authority": false,
+  "original_macro_model_sessions": 0,
+  "original_price_validator_failure_independently_reproduced": true,
+  "prices_filled_deleted_or_replaced": false,
+  "private_partial_source_sha256": {
+    "data/prospective-market-v1/attempts/20261013T010623-7a8a830a/failure.json": "02e0979839acf4fc76f46333bce0d1312c72e9568eb0d3889dc861fba82ec1aa",
+    "data/prospective-market-v1/attempts/20261013T010623-7a8a830a/quotes/SPY.csv": "840816acb028ffa8bf104fd615556c40a81e8c98f7ed38cb8d244891e4106a44",
+    "data/prospective-market-v1/attempts/20261013T010623-7a8a830a/raw/MTUM.json": "595831de544487f220d14b14534c235df85e31e25cc6b4414fc06eb51d3d41f8",
+    "data/prospective-market-v1/attempts/20261013T010623-7a8a830a/raw/SPY.json": "9e1ab0e61e846866a571759886bc9c6f624bfb6294ef787db06c56a92f7a2a6e"
+  },
+  "private_run_receipt": {
+    "path": "reports/daily-research-operations/runs/20261013T010623-a6035295/result.json",
+    "sha256": "3ee241ec3903ba9b964a7e199009f255cb1e4e0301b78f344148806ee3beeedb"
+  },
+  "private_source_failure": {
+    "path": "data/prospective-market-v1/attempts/20261013T010623-7a8a830a/failure.json",
+    "sha256": "02e0979839acf4fc76f46333bce0d1312c72e9568eb0d3889dc861fba82ec1aa"
+  },
+  "private_verification_receipt": {
+    "path": "reports/daily-research-operations/verification-20261013/verified-failure.json",
+    "sha256": "a9a3ee5389a4a1e6f80ac9f5f0ece89929763005868648a65c5c03690917e232"
+  },
+  "raw_source_quotes_accounts_or_broker_state_published": false,
+  "reason": "MTUM contains missing, nonfinite, or nonpositive prices.",
+  "research_champion": null,
+  "scheduled_message_receipt_is_source_success": false,
+  "schema_version": 1,
+  "separate_dollar_model_sessions": 0,
+  "separate_dollar_pipeline_started": false,
+  "source_request_retried_or_access_bypassed": false,
+  "status": "actual_scheduled_pipeline_failed_source_quality_gate",
+  "successful_partial_source_files_retained": true,
+  "verified_at": "2026-10-13T01:13:31.503185+00:00"
+}
