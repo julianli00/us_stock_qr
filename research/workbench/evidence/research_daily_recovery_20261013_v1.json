@@ -1,0 +1,91 @@
+{
+  "accepted_receipts": {
+    "dollar_inputs": {
+      "path": "data/prospective-dollar-inputs-v1/receipts/2026-10-12.json",
+      "sha256": "3c00032f25afaf69898d1bf2d575143f6911cad7089e44f94ac041a198ca29fb"
+    },
+    "dollar_model": {
+      "path": "data/prospective-dollar-accounts-v1/receipts/2026-10-12.json",
+      "sha256": "46e62d7023c4f5dc2ed5387a7862fddde3f2314dce0ad59b8165b83ed81a8763"
+    },
+    "dollar_targets": {
+      "path": "data/prospective-dollar-targets-v1/receipts/2026-10-12.json",
+      "sha256": "41f76f27a9f5113d1d3f080447f9f5a64b1d06a8ed62d1075c44680eadb72d60"
+    },
+    "expanded_data": {
+      "path": "data/prospective-factor-inputs-v2/receipts/2026-10-12.json",
+      "sha256": "1c921b2f69b2c5c04efdbb6cd19a6d67735c57a1f94663346a3c708993a5e337"
+    },
+    "parent_data": {
+      "path": "data/prospective-market-v1/receipts/2026-10-12.json",
+      "sha256": "a5a925533a824dadf0db662f3575f83b8cf9d404cca3145fc6c48e6217aa222b"
+    },
+    "research_model": {
+      "path": "data/prospective-research-accounts-v1/receipts/2026-10-12.json",
+      "sha256": "ccfd52c2a49dd30c013172c1bb822e2b9d2da4049f53b5d32bf9d2f7fa2a128f"
+    },
+    "target_observations": {
+      "path": "data/prospective-target-observations-v1/receipts/2026-10-12.json",
+      "sha256": "3d1a11725d9263924cdaf2dd81ee97ac7d26da1ba79fd598bd302e43f6589cd2"
+    }
+  },
+  "actual_dollar_pipeline_completed_at_utc": "2026-10-13T07:52:10.421038+00:00",
+  "actual_dollar_pipeline_started_at_utc": "2026-10-13T07:51:58.284782+00:00",
+  "actual_final_user_approval_at_utc": "2026-10-13T07:41:46.989Z",
+  "actual_invocation_origin": "agent_continuation",
+  "actual_original_pipeline_completed_at_utc": "2026-10-13T07:50:43.606651+00:00",
+  "actual_original_pipeline_started_at_utc": "2026-10-13T07:50:28.342891+00:00",
+  "actual_positive_MTUM_close_and_adjusted_close_observed": true,
+  "all_inputs_and_targets_observed_before_next_open": true,
+  "approved_new_optimization_round_batches": 3,
+  "approved_new_optimization_round_configuration_cap": 6,
+  "approved_new_optimization_round_configurations_per_batch": 2,
+  "dollar_complete_snapshots": 2,
+  "existing_collector_endpoint_headers_policy_and_validators_changed": false,
+  "expanded_complete_snapshots": 2,
+  "historical_configurations": 172,
+  "historical_recurring_reviews": 88,
+  "independent_bt_before_append_verified_for_both_models": true,
+  "independent_forward_proof": {
+    "private_session_artifact": "verified-forward.json",
+    "sha256": "d0318886e3afe59fbc256ccff3190e141412269911f618f329f66facda2fdf8e"
+  },
+  "independent_scalar_first_day_accounts_checked": 8,
+  "investment_objective_verified": false,
+  "manual_recovery_claimed_native_timer_delivery": false,
+  "market_session": "2026-10-12",
+  "maximum_independent_scalar_funding_cost_nav_error": 1.8189894035458565e-12,
+  "minimum_actual_model_sessions_before_sharpe": 63,
+  "missed_session_backfill_or_acquisition_time_relabelled": false,
+  "missing_prices_filled_substituted_or_deleted": false,
+  "model_fills_are_actual_orders": false,
+  "new_actual_dollar_run": {
+    "path": "reports/daily-dollar-guard-operations/runs/20261013T075158-158cee07/result.json",
+    "sha256": "b498044e15935e8e48be7f1bb75423a3491369e96345e8a8d18b2e2bd6ed6b61"
+  },
+  "new_actual_original_run": {
+    "path": "reports/daily-research-operations/runs/20261013T075028-ad233aac/result.json",
+    "sha256": "117e9b2e696536db7edfb85b568e35f60d3b8039cf5cef303715e9c44f8ec980"
+  },
+  "new_historical_strategy_evaluations_or_factor_definitions": 0,
+  "new_monthly_target_generated": false,
+  "new_original_macro_model_sessions": 1,
+  "new_post_baseline_observations": 1,
+  "new_separate_dollar_model_sessions": 1,
+  "next_open_deadline_utc": "2026-10-13T13:30:00+00:00",
+  "one_model_day_claimed_independent_alpha_or_goal_success": false,
+  "optimization_configuration_budget_consumed": 0,
+  "order_authority": false,
+  "original_failed_attempt_overwritten": false,
+  "original_source_candidate": "macro_real_yield_factor_tilt",
+  "original_two_models_or_rules_replaced": false,
+  "parent_complete_snapshots": 2,
+  "previous_preserved_failure": "evidence/research_daily_actual_run_20261013_v1.json",
+  "raw_quotes_actual_account_rows_or_user_messages_published": false,
+  "research_champion": null,
+  "schema_version": 1,
+  "separate_dollar_source_candidate": "semiconductor_dollar_half_guard",
+  "sharpe_and_cagr_reported": false,
+  "status": "actual_user_approved_normal_source_recovery_completed",
+  "verified_at": "2026-10-13T08:21:02.651037+00:00"
+}

@@ -7186,7 +7186,7 @@ failure; no price is filled, dropped or substituted.
 The successful partial SPY data, original MTUM response and failure records
 remain private and hash-bound. No complete new snapshot is accepted, later
 original stages are not invoked, and the separate dollar pipeline is not
-started. **Both frozen forward models remain at zero observed return sessions**;
+started. **At that failure checkpoint, both frozen forward models remained at zero observed return sessions**;
 their Sharpe/CAGR values remain null. An acquisition attempt is not a new
 observation or a strategy result.
 
@@ -7198,6 +7198,44 @@ this does not establish successful source collection, future delivery or
 exactly-once execution. The unchanged timer's next observed wakeup is
 October 14 around 09:00 Asia/Shanghai. If a session is not genuinely observed
 before its next-open deadline, later downloaded history cannot backfill it.
+
+## Approved bounded optimization and actual input recovery
+
+The user confirmed a bounded next round: prioritize the ten-year return gap
+versus SPY without changing the unleveraged four-path Sharpe/drawdown/cost
+contract. US factor ETFs remain the core; the existing strategy is retained
+as a comparison, and individual-stock data preparation stays separate.
+The round admits **at most six fixed registered configurations, three batches
+of at most two**. Failures remain recorded and exhausting the budget requires
+review, not further parameter searching. Historical qualification is only a
+candidate milestone; independent prospective observation remains necessary.
+
+The [actual recovery receipt](research/workbench/evidence/research_daily_recovery_20261013_v1.json)
+records one new ordinary original-pipeline invocation after the user's explicit
+approval. At 07:50:28–07:50:43 UTC, the unchanged collector obtained valid
+October 12 inputs and completed all four stages. The separate dollar pipeline
+then completed at 07:51:58–07:52:10 UTC. Both acquisitions and observations
+precede the genuine October 13 13:30 UTC next-open deadline.
+The original missing-price response, partial SPY data and failed invocation
+are preserved; no price was filled or substituted, and no endpoint, header,
+source contract or validator was changed.
+
+**Both original frozen forward models now contain one observed model session.**
+Their identities and September 30 rule targets are unchanged; no new monthly
+target was generated on October 12. Independent scalar checks reproduce all
+eight first-day strategy/SPY accounts, including funded fees and the extra
+stress delay, within USD 1.82e-12. Independent bt replay passed before append.
+Sharpe and CAGR remain null until at least 63 actual sessions, and even that
+minimum is not proof of long-term alpha. These are research model accounts,
+not broker orders.
+
+The [preservation proof](research/workbench/evidence/research_daily_recovery_preservation_20261013_v1.json)
+retains every original journal prefix, registration, failed attempt and
+historical research outcome. The [native continuation receipt](research/workbench/evidence/prospective_data_automation_v68.json)
+preserves the daily/Saturday cadence, original W42 eligibility, source restrictions
+and user-approved exploration cap. Historical totals remain
+**172 configurations / 88 reviews, no champion**, with **zero** of the six new
+configuration slots consumed by this data recovery.
 
 ## Progress and publication
 
