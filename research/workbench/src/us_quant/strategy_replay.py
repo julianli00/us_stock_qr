@@ -58,6 +58,7 @@ GENERATORS = {
     "profit_term_confirmation": "config/profit-term-confirmation.json",
     "unemployment_factor_guard": "config/unemployment-factor-guard.json",
     "option_momentum_implementation": "config/option-momentum-implementation.json",
+    "option_sector_implementation": "config/option-sector-implementation.json",
 }
 
 
@@ -537,6 +538,17 @@ def registered_generator(spec: dict, root: Path) -> tuple[str, dict]:
                 "src/us_quant/cash_funded_accounting_v2.py", "src/us_quant/dual_horizon.py",
                 "src/us_quant/calendar.py", "src/us_quant/storage.py",
             ]
+        elif name == "option_sector_implementation":
+            required += [
+                "src/us_quant/implied_risk_execution.py", "config/implied-risk-execution.json",
+                "evidence/implied_execution_20261012_registration.json",
+                "src/us_quant/implied_risk_balance.py", "config/implied-risk-balance.json",
+                "src/us_quant/observed_weight_execution.py", "config/observed-weight-execution.json",
+                "src/us_quant/portfolio_refinement.py", "config/portfolio-refinement.json",
+                "src/us_quant/sector_growth_balance.py", "config/sector-growth-balance.json",
+                "src/us_quant/cash_funded_accounting_v2.py", "src/us_quant/dual_horizon.py",
+                "src/us_quant/calendar.py", "src/us_quant/storage.py",
+            ]
         if any(relative not in frozen for relative in required):
             raise QuantError("The registered strategy is missing a frozen helper dependency.")
         for relative in required:
@@ -653,6 +665,12 @@ def registered_targets(
         return run(data, cache[key][spec["id"]], candidate, policy, start, end, cost, delay)[1]
     if name == "option_momentum_implementation":
         from us_quant.option_momentum_implementation import run, source_baselines
+
+        if key not in cache:
+            cache[key] = source_baselines(data, policy)
+        return run(data, cache[key][spec["id"]], candidate, policy, start, end, cost, delay)[1]
+    if name == "option_sector_implementation":
+        from us_quant.option_sector_implementation import run, source_baselines
 
         if key not in cache:
             cache[key] = source_baselines(data, policy)

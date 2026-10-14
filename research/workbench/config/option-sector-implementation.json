@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "study_id": "bounded_option_dollar_sector_implementation_20261014_batch2",
+  "optimization_round_id": "user_confirmed_etf_restructure_20261013",
+  "approved_round_configuration_cap": 6,
+  "approved_round_batch_cap": 3,
+  "batch_number": 2,
+  "data_scope": "factor_etf_portfolio",
+  "data_start": "2015-08-10",
+  "as_of": "2026-10-05",
+  "prior_evaluated_configurations": 174,
+  "new_configurations": 2,
+  "new_economic_factor_definitions": 0,
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "factor_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "source_id": "semiconductor_option_proxy_dollar_observed_band025",
+  "source_registration": {"path": "evidence/implied_execution_20261012_registration.json", "sha256": "5a52f3bafc13358933c67af51d2625455ac0bc4a56e5a79a555ed1dca80222bb"},
+  "source_policy": {"path": "config/implied-risk-execution.json", "sha256": "1d04daa4bc4447ed7a3036a463991e071af14dfaf586239ae80ef9edf4c3f0cb"},
+  "source_implementation": {"path": "src/us_quant/implied_risk_execution.py", "sha256": "ba2cfcca2a1542d1befd50a3b86be54865c41b2c1c4a4e5871a4858a2fa5dcbb"},
+  "actual_weight_trade_band": 0.025,
+  "cash_reserve": 0.02,
+  "candidates": [
+    {"id": "bounded_option_dollar_technology_full", "replacement_symbol": "XLK", "optimization_round_id": "user_confirmed_etf_restructure_20261013"},
+    {"id": "bounded_option_dollar_nasdaq_full", "replacement_symbol": "QQQ", "optimization_round_id": "user_confirmed_etf_restructure_20261013"}
+  ],
+  "methodology": {
+    "hypothesis": "Semiconductor industry concentration and broader technology or Nasdaq100 growth exposure represent different industrial compositions. Test whether actual XLK or QQQ can replace only the original half-equity SOXX sleeve inside the current implied-proxy budget, published-dollar guard and actual-holding-band architecture while improving the ten-year net benchmark gap. No claim that diversification or a technology narrative guarantees higher returns.",
+    "target_rule": "Rebuild the exact original131monthly guarded targets and transfer the entire existingSOXXweight to either actualXLK or actualQQQ. Both original destination weights must be zero. Retain all MTUM/VLUE/QUAL/USMV,GLD,BIL and targetcash weights,dates and original GVZ-VIX and H10budgets. Nondecisionrows remain allNaN;seed each formal account from the last causally known original source target. No sector-share or index-universe grid.",
+    "source": "Reuse the unchanged verified original twelve-asset2805session fund panel,including issuer/actualfund/corporate-action evidence forSOXX/XLK/QQQ already bound by the source registration. No new network request,price substitution,extra fund,current holdings,shortened formal window or rewritten vintage. These funds and broad sector alternatives were already exposed in earlier risk-budget architectures;this is a new current-architecture construction,not new raw information,independent alpha or a holdout.",
+    "proxy_boundary": "VIX remains an SPXoptionrisk proxy,not exact marginal volatility of either concentrated technology or Nasdaq100 sleeve. Keep the uncalibrated original budget rather than fit hindsight beta/covariance corrections. Differences in sector mix,issuer methodology,holding drift and realized risk remain disclosed,not called matched realized risk.",
+    "execution": "Reuse the exact original pure0.025actualpost-tradeclosingholding band includingBIL,forcedfreshUSD10000deployment and pending-date queue. Base5bpnext-open1session/stress20bpdelay2sessions/USD1order/fractionallong-onlycash-funded-v2/allasset1x/complete2512or1254return days remain. Two-percentcash is a target,not a continuousfloor. No source-window,cost,lookback,band,guard or option-parameter refit.",
+    "budget_and_validation": "Batch2of the unchanged user-approvedsixregisteredconfiguration ceiling,threebatches,atmosttwoeach. Two priorPDP configurations remain rejected and consume two slots. Actual registrations and registeredtechnicalfailures count;source verification and frontend work do not. Freeze complete code/source/spec and independent131budget/target/8seed proof;actualregistration and realremotepublication must precede all feedbackaccounts. Retain all failures and independently check fundedfees/holdings/bt/scalarmetrics/fullsourceaudit.",
+    "preservation": "No new factor-family definition,early W42registration,source-access workaround,forwardmodel replacement,trading or production change. Preserve all prior ledger rows,source/control hashes,original one-day models and Oct14SPYsource failure. Historical backtests are the main iteration loop;do not wait63forwarddays to research,but do not label exposed historical passes as independently forward-validated.",
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

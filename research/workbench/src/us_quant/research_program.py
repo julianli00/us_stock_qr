@@ -856,6 +856,17 @@ class ResearchProgram:
                 raise QuantError(
                     "Candidate already registered; do not erase or re-register its trials."
                 )
+            configuration = spec.get("configuration", {})
+            round_id = "user_confirmed_etf_restructure_20261013"
+            if isinstance(configuration, dict) and configuration.get("optimization_round_id") == round_id:
+                used = sum(
+                    json.loads(row["body"]).get("configuration", {}).get("optimization_round_id") == round_id
+                    for row in self.db.execute("SELECT body FROM candidates")
+                )
+                if used >= 6:
+                    raise QuantError(
+                        "The user-confirmed optimization round has exhausted its six registered configuration slots."
+                    )
             self.db.execute(
                 "INSERT INTO candidates VALUES (?,?,?,?,?)",
                 (

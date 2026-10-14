@@ -7352,6 +7352,38 @@ missing observations cannot later be backfilled after their acquisition deadline
 
 ## Progress and publication
 
+### Bounded historical backtests, batch 2 registered
+
+The user directed that historical backtests be the main iteration loop rather
+than waiting for future observations before doing more research. The original
+63-session threshold only governs reporting prospective Sharpe/CAGR; it does
+not delay historical research or turn exposed history into independent validation.
+
+The [frozen sector implementation policy](research/workbench/config/option-sector-implementation.json)
+replaces only the existing SOXX sleeve with actual XLK or actual QQQ inside the
+unchanged guarded option-budget/actual-holding-band architecture. Both are
+different industrial compositions already present in the complete cached
+twelve-fund, 2,805-session source. Four factor sleeves, GLD/BIL, the original
+monthly budgets, dollar guard, cash, costs, delays and formal windows stay fixed.
+This is a new construction using exposed information, not a new economic factor
+or independent holdout; VIX is not claimed to forecast exact technology-sleeve risk.
+
+The [independent static proof](research/workbench/evidence/option_sector_20261014_pre_account_verification.json)
+reproduces all 262 native option inputs, 131 published dollar comparisons, both
+desired matrices and eight causal seed contexts within 1.12e-16. A durable
+transactional guard counts every registered configuration against the user's
+six-slot cap, even without a completed review. 117 coupled cases pass.
+[Actual registration](research/workbench/evidence/option_sector_20261014_registration.json)
+and the [preservation proof](research/workbench/evidence/option_sector_20261014_registration_preservation.json)
+retain all old ledger rows, original one-day models and source restrictions.
+The previous dashboard-only commit is rejected before creating account outputs.
+
+At this [registration checkpoint](research/workbench/evidence/research_program_option_sector_registered_v98.json),
+**174 configurations / 90 reviews remain complete, 94 versions are registered,
+and exactly two new sector configurations are pending**. The bounded round has
+used **four of six slots; two remain**. No new portfolio result is claimed before
+actual remote publication of these rules and registrations.
+
 ### Local research dashboard
 
 Run from this worktree, without installing a frontend framework:

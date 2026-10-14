@@ -130,6 +130,25 @@ def test_init_preserves_four_prior_families_without_claiming_a_new_strategy(prog
     assert not status["investment_objective_verified"]
 
 
+def test_bounded_round_counts_registered_slots_even_without_completed_reviews(program, tmp_path, policy):
+    ready = readiness(policy, tmp_path, ready=True)
+    for index in range(6):
+        spec = candidate_spec(tmp_path, f"budgeted_configuration_{index}")
+        spec["configuration"] = {
+            "id": spec["id"], "optimization_round_id": "user_confirmed_etf_restructure_20261013",
+        }
+        program.register_candidate(spec, ready)
+    before = program.status()
+    extra = candidate_spec(tmp_path, "budgeted_configuration_seven")
+    extra["configuration"] = {
+        "id": extra["id"], "optimization_round_id": "user_confirmed_etf_restructure_20261013",
+    }
+    with pytest.raises(QuantError, match="exhausted its six registered"):
+        program.register_candidate(extra, ready)
+    assert program.status() == before
+    assert len(before["registered_candidates"]) == 6 and not before["candidate_reviews"]
+
+
 @pytest.mark.parametrize(
     "field,value",
     [
