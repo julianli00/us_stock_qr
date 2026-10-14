@@ -7321,6 +7321,35 @@ The [actual native continuation](research/workbench/evidence/prospective_data_au
 preserves the same cadence and records this result and remaining budget.
 **The full investment objective remains unmet.**
 
+## October 14 scheduled run: missing SPY closing prices
+
+The [actual daily receipt](research/workbench/evidence/research_daily_actual_run_20261014_v1.json)
+records the scheduled message at 01:01:03 UTC and the one original-pipeline
+invocation at 01:09:03 UTC. Its first `parent_data` stage fails because the
+preserved SPY response has **null close and adjusted-close values for
+October 13**. The unchanged validator independently rejects that exact response.
+The partial raw response and failure receipt remain private and hash-bound;
+no price is filled, deleted or substituted, and no automatic retry is made.
+
+No complete new snapshot or model session is accepted. Later original stages,
+the separate dollar pipeline and further optimization are not started in this
+invocation. Both original forward models retain their one actual October 12
+session and null Sharpe/CAGR. The prior MTUM failure and its user-approved
+successful normal recovery remain intact; today's different SPY failure does
+not erase either event.
+
+The [preservation proof](research/workbench/evidence/research_daily_preservation_20261014_v1.json)
+verifies all seven accepted profiles, fourteen registration/head files,
+325 prior private files, 69 original imports, 3,192 control artifacts and
+26 selection artifacts, with the exact historical ledger and terminal
+dividend-source stop unchanged. Totals remain **174 configurations / 90 reviews,
+no champion**, and the bounded round remains **two of six slots used, four left**.
+The [read-only native receipt](research/workbench/evidence/prospective_data_automation_v70.json)
+records the actual timer readback and its next observed wakeup,
+October 15 around 09:00 Asia/Shanghai. The binding and prompt were not changed.
+An observed wakeup is not source success or a future-delivery guarantee;
+missing observations cannot later be backfilled after their acquisition deadline.
+
 ## Progress and publication
 
 See [integration status](docs/integration/STATUS.md) and

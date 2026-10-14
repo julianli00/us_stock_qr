@@ -1,0 +1,79 @@
+{
+  "accepted_new_complete_market_snapshots": 0,
+  "actual_pipeline_completed_steps": 0,
+  "actual_pipeline_failure_recorded_at_utc": "2026-10-14T01:09:04.277150+00:00",
+  "actual_pipeline_started_at_utc": "2026-10-14T01:09:03.454698+00:00",
+  "actual_run_declared_origin": "session_automation",
+  "approved_round_configuration_cap": 6,
+  "collection_window_or_clock_changed": false,
+  "complete_program_reviews": 90,
+  "complete_strategy_configurations": 174,
+  "daily_observation_consumed_strategy_configuration": false,
+  "direct_http_response_metadata_retained_for_failed_quote": false,
+  "error_type": "QuantError",
+  "failed_step": "parent_data",
+  "further_research_started_after_source_failure": false,
+  "historical_research_state_unchanged": true,
+  "independent_verification": {
+    "private_session_artifact": "daily-observation-20261014/verified-failure.json",
+    "sha256": "6f6ae83ee5834b5a9fcf692d763b36e103ceba80625a23780ebd29483efecf22"
+  },
+  "independent_verifier_sha256": "205a51fd70011dbdaab8175d46c39c63ea8b89da70c04a8aee6b1ca8e95cedf2",
+  "invalid_native_price_fields": [
+    "close",
+    "adjclose"
+  ],
+  "invalid_native_price_values_are_null": true,
+  "invalid_price_session": "2026-10-13",
+  "invalid_price_symbol": "SPY",
+  "investment_objective_verified": false,
+  "later_original_pipeline_steps_started": false,
+  "latest_accepted_market_session": "2026-10-12",
+  "market_session": "2026-10-13",
+  "native_observation": {
+    "host_automation_marker_observed": true,
+    "independent_end_to_end_delivery_certification": false,
+    "message_received_at_utc": "2026-10-14T01:01:03.456Z",
+    "native_binding_modified_during_this_continuation": false,
+    "native_timer_last_run_at_utc": "2026-10-14T01:01:01.860Z",
+    "native_timer_metadata_updated_at_utc": "2026-10-14T01:01:01.860Z",
+    "native_timer_next_run_at_utc": "2026-10-15T01:00:49.000Z",
+    "native_timer_readback_observed_at_utc": "2026-10-14T01:06:02.689Z",
+    "received_original_prompt_sha256": "d3bc41d72ed867ac002bbb9a970c49166f80a57a44b56f2e5550472d45ed0d26"
+  },
+  "new_forward_model_sessions": 0,
+  "new_historical_strategy_evaluations_or_factor_definitions": 0,
+  "old_accepted_source_outputs_rolled_back": false,
+  "order_authority": false,
+  "original_collector_endpoint_headers_policy_or_validator_changed": false,
+  "original_macro_model_sessions": 1,
+  "original_price_validator_failure_independently_reproduced": true,
+  "prices_filled_deleted_or_replaced": false,
+  "prior_MTUM_failure_and_actual_normal_recovery_preserved": true,
+  "private_partial_source_sha256": {
+    "data/prospective-market-v1/attempts/20261014T010903-83f93a86/failure.json": "a63313f9e2a26343f2a560772b8040dca5ebc204219ebb491f9af41f762e0c9f",
+    "data/prospective-market-v1/attempts/20261014T010903-83f93a86/raw/SPY.json": "a760d0709759d2f8bfc6f3f6ae156ee452742cd7c33a2b5af6b6f3a8704da47d"
+  },
+  "private_run_receipt": {
+    "path": "reports/daily-research-operations/runs/20261014T010903-9438de2a/result.json",
+    "sha256": "558f7d576520ede9e7b238cb511b0b2fa47020c627792f0dcd9b744d4195272f"
+  },
+  "private_source_failure": {
+    "path": "data/prospective-market-v1/attempts/20261014T010903-83f93a86/failure.json",
+    "sha256": "a63313f9e2a26343f2a560772b8040dca5ebc204219ebb491f9af41f762e0c9f"
+  },
+  "raw_source_quotes_accounts_or_broker_state_published": false,
+  "reason": "SPY contains missing, nonfinite, or nonpositive prices.",
+  "reported_forward_cagr": null,
+  "reported_forward_sharpe": null,
+  "research_champion": null,
+  "round_registered_configuration_slots_remaining": 4,
+  "round_registered_configurations_consumed": 2,
+  "scheduled_message_receipt_is_source_success": false,
+  "schema_version": 1,
+  "separate_dollar_model_sessions": 1,
+  "separate_dollar_pipeline_started": false,
+  "source_request_retried_or_access_bypassed": false,
+  "status": "actual_scheduled_pipeline_failed_source_quality_gate",
+  "verified_at": "2026-10-14T01:12:10.403104+00:00"
+}
