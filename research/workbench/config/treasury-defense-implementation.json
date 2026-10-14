@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "study_id": "bounded_realized_treasury_defense_20261014_batch3",
+  "optimization_round_id": "user_confirmed_etf_restructure_20261013",
+  "approved_round_configuration_cap": 6,
+  "approved_round_batch_cap": 3,
+  "batch_number": 3,
+  "data_scope": "factor_etf_portfolio",
+  "data_start": "2015-08-10",
+  "as_of": "2026-10-05",
+  "prior_evaluated_configurations": 176,
+  "new_configurations": 2,
+  "new_economic_factor_definitions": 0,
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "factor_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "source_id": "semiconductor_option_proxy_dollar_observed_band025",
+  "market_policy": {"path": "config/option-sector-implementation.json", "sha256": "5c7b30a2010deed4e79f96fd3ab4ac360a1366026ea227fbfaa2b16d045a8025"},
+  "market_implementation": {"path": "src/us_quant/option_sector_implementation.py", "sha256": "8c88af08d7922e5618221c5446411a8fc665aefe1b0f4379ceafbc8b85271937"},
+  "source_registration": {"path": "evidence/implied_execution_20261012_registration.json", "sha256": "5a52f3bafc13358933c67af51d2625455ac0bc4a56e5a79a555ed1dca80222bb"},
+  "dollar_policy": {"path": "config/dollar-risk-guard.json", "sha256": "4a4b960dfb52e894f1fc58ba86108cd86237cf4b77698c3cd0f0063fc1a32b3c"},
+  "volatility_sessions": 63,
+  "equity_share_min": 0.30,
+  "equity_share_max": 0.70,
+  "cash_reserve": 0.02,
+  "actual_weight_trade_band": 0.025,
+  "candidates": [
+    {"id": "bounded_treasury_defense_ief", "defensive_symbol": "IEF", "optimization_round_id": "user_confirmed_etf_restructure_20261013"},
+    {"id": "bounded_treasury_defense_tlt", "defensive_symbol": "TLT", "optimization_round_id": "user_confirmed_etf_restructure_20261013"}
+  ],
+  "methodology": {
+    "hypothesis": "Nominal Treasury duration can hedge adverse equity-growth shocks but can fall together with equities during inflation/rate shocks. Compare actual intermediate-durationIEF and long-durationTLT defensive allocation packages against the unchanged gold/option-proxy reference rather than retune the failed momentum or technology sleeve. Neither nominal duration nor gold is presumed safe or a guaranteed alpha source.",
+    "budget": "At the original131completed monthends,keep half-equitySOXX and equal remainingMTUM/VLUE/QUAL/USMV shares. Reuse the existing composed_monthly_target helper with an explicit local input-role adapter:actual chosenTreasury fund replaces the defensive GLD input and SOXX replaces the helper's QQQ slot. Equity budget equals the defense63session sample-return volatility divided by equity-plus-defense volatility,clamped to original30%-70%bounds. Fund98%with2%targetcash. This preserves the original realized sleeve-volatility law,not exact portfolio marginal risk or a volatility guarantee.",
+    "target_rule": "The market itself is not renamed or overwritten. Only a local risk-helper view has explicit role aliases;emitted targets retain genuineIEF/TLT/SOXX tickers. GLD is zero in both Treasury candidates. Use unchanged actual own-published-vintage63session positive-dollar guard:allnon-BILtargets halve and freedcapital goes to actualBIL;zero or fallingdollar doesnottrigger. Nondecisionrows stay allNaN,no daily allocation update orsourcegapdefault.",
+    "comparison_boundary": "This is a comparison of defensive allocation packages:both defensive asset and its appropriate risk proxy differ from the originalGVZ-VIX/gold package. It is not a clean single-variable asset ablation or proof of isolated bond alpha. GVZ is never substituted as a Treasury forecast;no hindsightbeta/covariance regression ornewlookback/threshold/scalegrid is fitted.",
+    "source": "Use the unchanged audited original12asset2805session cached panel and preserved H10releases. Treasury funds and related risk constructions are already exposed;notnewrawdata,factorfamilies orindependentholdout. No currentstockholdings,PIT fabrication,newdownload,pricefill,windowshortening orvintage/agechange.",
+    "execution": "Reuse original0.025actualpost-tradeclosingholding band includingBIL,forcedfreshUSD10000deployment/pendingdatequeue. Base5bpdelay1session/stress20bpdelay2/USD1order/fractionallong-onlycash-funded-v2/allasset1x/all2512or1254returndays remain.2%cash is not a continuousfloor. Independentfunding/feedback/bt/scalarmetrics/fullsourceaudit required.",
+    "budget_and_validation": "Finalbatch3of fixedsixregisteredconfigurations/threebatches/twoeach. Previousfourrejections consumefour slots. Actualregistration includingtechnicalfailures counts;budgetcannotreset. Freeze complete source-code-spec and independentlyverify everynative price reference,131realizedrisk/Dollarbudgets and8causal seeds before actualreg andrealremotepublication precede newaccounts. Afterthese two outcomes budgetis exhausted and requires review,not extra parameter trials.",
+    "preservation": "Historicalbacktests are the main research loop,no63day waiting gate for research. Do not call exposed history independently forwardvalidated. Keep bothoriginalone-day models,allpreviousfailures/sourcecontrols/W42queue andVIG-SDYterminalstop. No trading,production,broadGitstaging orsourceaccess workaround.",
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

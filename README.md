@@ -7418,6 +7418,33 @@ reviews with every old record and original model unchanged.
 Current totals are **176 configurations / 92 reviews, no champion**.
 Four of six bounded slots are used; two remain for the final distinct question.
 
+### Final bounded batch 3: Treasury packages registered
+
+The [final batch 3 policy](research/workbench/config/treasury-defense-implementation.json)
+compares actual IEF and TLT nominal Treasury defensive packages.
+The equity composition stays half SOXX and half equally shared across the four
+factor ETFs. The original 63-session realized sleeve-volatility helper, with
+explicit local input-role aliases, sets the stock/Treasury budget within the
+unchanged 30%–70% bounds. No market price or genuine ticker is overwritten.
+The dollar half guard, BIL, funding, monthly clock, holding band, costs and
+delays remain unchanged. **GVZ is not used to forecast Treasury risk.**
+Both asset and risk proxy differ from the gold/option package, so this is not
+an isolated causal asset-alpha comparison or an independent holdout.
+
+The [independent static proof](research/workbench/evidence/treasury_defense_20261014_pre_account_verification.json)
+checks all 33,660 cached close-price cells, 131 scalar realized-risk budgets
+per candidate, 131 actual H10 pairs and eight causal seed contexts, with
+maximum target error below 6.67e-16. 103 coupled cases pass.
+[Actual registration](research/workbench/evidence/treasury_defense_20261014_registration.json)
+and [preservation](research/workbench/evidence/treasury_defense_20261014_registration_preservation.json)
+retain all prior results and original one-day models.
+The preceding result commit is rejected before new account output.
+At the [preregistered checkpoint](research/workbench/evidence/research_program_treasury_defense_registered_v100.json),
+**176 configurations / 92 reviews remain complete, 96 versions are registered,
+and only the two Treasury packages are pending**.
+All **six of six slots are now consumed**; after their outcomes the round
+requires review, not more parameter trials.
+
 ### Local research dashboard
 
 Run from this worktree, without installing a frontend framework:
