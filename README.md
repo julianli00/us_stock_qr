@@ -7384,6 +7384,40 @@ and exactly two new sector configurations are pending**. The bounded round has
 used **four of six slots; two remain**. No new portfolio result is claimed before
 actual remote publication of these rules and registrations.
 
+### Completed bounded batch 2: both sector transfers rejected
+
+The [completed batch 2 results](research/workbench/evidence/option_sector_20261014_results.json)
+retain both sector transfers as rejected:
+
+| Replacement | Window | Costs | CAGR | Net excess Sharpe | Maximum drawdown |
+| --- | --- | --- | ---: | ---: | ---: |
+| XLK | 10y | Base | 12.6484% | 1.04842 | 13.6905% |
+| XLK | 10y | Stress | 12.3711% | 1.02126 | 13.4571% |
+| XLK | 5y | Base | 16.0545% | 1.11746 | 13.7096% |
+| XLK | 5y | Stress | 15.5095% | 1.07194 | 13.4763% |
+| QQQ | 10y | Base | 11.7946% | 0.99570 | 12.8639% |
+| QQQ | 10y | Stress | 11.4343% | 0.95947 | 12.6162% |
+| QQQ | 5y | Base | 14.8141% | 1.05726 | 12.8826% |
+| QQQ | 5y | Stress | 14.1441% | 0.99825 | 12.6351% |
+
+Both ten-year benchmark comparisons fail. QQQ also fails both ten-year Sharpe
+gates and the five-year stress Sharpe gate; values close to 1 are not rounded
+into passes. XLK's five-year paths pass all gates, but this does not override
+the ten-year failures. Both returns are below the unchanged reference; neither
+replaces it and no sector share, band or cost is refitted after outcomes.
+
+Actual remote publication `a292a41bf559f867fe9acdf663bae2314eceb59c`
+and its 12:51:53.936388 UTC fence precede all accounts.
+The [independent account proof](research/workbench/evidence/option_sector_20261014_reproducibility.json)
+checks 728 holding decisions and 30,128 funding days across 16 funded and
+16 bt strategy/SPY accounts: issued-target error zero, scalar metric error
+below 5.16e-14 and wealth error below USD 7.28e-11.
+The [complete source audit](research/workbench/evidence/research_program_source_bound_audit_v62.json)
+replays all **92 reviews / 368 paths**, retaining 19 original and 73 funded-v2
+reviews with every old record and original model unchanged.
+Current totals are **176 configurations / 92 reviews, no champion**.
+Four of six bounded slots are used; two remain for the final distinct question.
+
 ### Local research dashboard
 
 Run from this worktree, without installing a frontend framework:

@@ -14,6 +14,8 @@ const titles = {
   semiconductor_dollar_half_guard: "半导体 / 因子 + 美元防御",
   bounded_option_dollar_pdp_momentum_full: "动量实现：PDP 完全替换 MTUM",
   bounded_option_dollar_pdp_momentum_equal_mix: "动量实现：MTUM / PDP 等分",
+  bounded_option_dollar_technology_full: "产业实现：科技 XLK 替换半导体 SOXX",
+  bounded_option_dollar_nasdaq_full: "产业实现：Nasdaq-100 QQQ 替换半导体 SOXX",
 };
 const words = { momentum: "动量", dollar: "美元", gold: "黄金", factor: "因子", semiconductor: "半导体", quality: "质量", risk: "风险", yield: "利率", trend: "趋势", volatility: "波动", equity: "股票", credit: "信用", unemployment: "失业", housing: "住房", growth: "成长" };
 
@@ -199,6 +201,7 @@ function showDetail(identifier) {
   const body = $("detail-body"); body.replaceChildren();
   body.append(el("p", "candidate-id", row.id));
   append(body, append(el("div", "detail-summary"), badge(row), el("span", "tag", row.scope === "legacy" ? "旧协议，不参与当前排名" : "当前四路径协议"), el("span", "tag", row.forward_validated ? "独立前瞻验证" : "未取得独立前瞻验证")));
+  if (row.accounting) body.append(el("span", "tag", row.accounting === "funded-v2" ? "注册资金账务版本 2" : "保留的原账务版本"));
   if (row.failure_reason) body.append(el("div", "notice error", row.failure_reason));
   if (row.paths.length) body.append(gateTable(row));
   else body.append(el("p", "empty", row.status === "pending" ? "此配置已登记，但尚无完整评估结果。" : "技术失败记录保留；没有用不完整路径补齐结果。"));
