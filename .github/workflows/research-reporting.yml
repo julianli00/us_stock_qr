@@ -20,6 +20,7 @@ jobs:
       - run: python -B scripts/check_publication.py
       - run: python -B scripts/test_research_reporting_guard.py
       - run: python -B scripts/test_incumbent_baseline_guard.py
+      - run: python -B scripts/test_research_dashboard.py
       - run: python -B scripts/send_slack_signal_once.py --dry-run
       - run: python -B scripts/install_research_report_launchd.py --dry-run
 

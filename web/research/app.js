@@ -1,0 +1,253 @@
+"use strict";
+
+const $ = (id) => document.getElementById(id);
+let data = null;
+let currentView = "overview";
+let page = 0;
+const pageSize = 15;
+const methodNames = { hypothesis: "研究问题", rule: "固定规则", allocation: "资产配置", budget: "预算方法", target_rule: "目标规则", execution: "执行约定", limitations: "限制", risks: "风险" };
+const keyNames = { sharpe_above_1: "夏普 >1", drawdown_at_most_15pct: "回撤 ≤15%", beats_spy: "跑赢同成本 SPY", also_beats_base_cost_spy: "压力跑赢基础 SPY" };
+const titles = {
+  semiconductor_option_proxy_dollar_observed_band025: "隐含波动预算 + 美元防御 + 持仓偏差带",
+  semiconductor_option_proxy_observed_band025: "隐含波动预算 + 持仓偏差带",
+  macro_real_yield_factor_tilt: "实际利率因子倾斜",
+  semiconductor_dollar_half_guard: "半导体 / 因子 + 美元防御",
+  bounded_option_dollar_pdp_momentum_full: "动量实现：PDP 完全替换 MTUM",
+  bounded_option_dollar_pdp_momentum_equal_mix: "动量实现：MTUM / PDP 等分",
+};
+const words = { momentum: "动量", dollar: "美元", gold: "黄金", factor: "因子", semiconductor: "半导体", quality: "质量", risk: "风险", yield: "利率", trend: "趋势", volatility: "波动", equity: "股票", credit: "信用", unemployment: "失业", housing: "住房", growth: "成长" };
+
+function el(tag, className, value) {
+  const node = document.createElement(tag);
+  if (className) node.className = className;
+  if (value !== undefined) node.textContent = value;
+  return node;
+}
+function append(parent, ...children) { children.forEach((child) => child && parent.append(child)); return parent; }
+function pct(value) { return typeof value === "number" ? `${(value * 100).toFixed(2)}%` : "—"; }
+function decimal(value) { return typeof value === "number" ? value.toFixed(4) : "—"; }
+function label(row) { return titles[row.id] || row.title; }
+function date(value) { return value ? value.slice(0, 10) : "未评估"; }
+function badge(row) {
+  const className = row.status === "technical_failure" || row.status === "rejected_historical" ? "fail" : row.full_gate_pass ? "pass" : "wait";
+  return el("span", `tag ${className}`, data.status_names[row.status] || row.status);
+}
+function evidence(path) {
+  const link = el("a", "", "查看原始公开证据");
+  link.href = `/evidence/${path}`; link.target = "_blank"; link.rel = "noopener noreferrer";
+  return link;
+}
+function button(text, action, className = "primary") {
+  const node = el("button", className, text); node.type = "button"; node.addEventListener("click", action); return node;
+}
+function gateTable(row) {
+  const wrap = el("div", "table-wrap");
+  const table = el("table", "gate-table");
+  const heading = el("tr");
+  ["路径", "净年化 CAGR", "同成本 SPY", "净超额夏普", "最大回撤", "SPY 验收"].forEach((text) => heading.append(el("th", "", text)));
+  append(table, append(el("thead"), heading));
+  const body = el("tbody");
+  row.paths.forEach((path) => {
+    const tr = el("tr");
+    tr.append(el("td", "", `${path.years} 年 / ${path.scenario === "base" ? "基础" : "压力"}`));
+    if (!path.metrics) {
+      const missing = el("td", "muted", "该路径未完成；原失败记录保留"); missing.colSpan = 5; tr.append(missing);
+    } else {
+      tr.append(el("td", "", pct(path.metrics.cagr)));
+      tr.append(el("td", "", pct(path.benchmark?.cagr)));
+      if (row.scope === "legacy") {
+        tr.append(el("td", "", decimal(path.metrics.sharpe)), el("td", "", pct(path.metrics.max_drawdown)), el("td", "muted", "原协议，见证据"));
+      } else {
+        tr.append(append(el("td"), el("span", `gate ${path.gates.sharpe_above_1 ? "pass" : "fail"}`, decimal(path.metrics.sharpe))));
+        tr.append(append(el("td"), el("span", `gate ${path.gates.drawdown_at_most_15pct ? "pass" : "fail"}`, pct(path.metrics.max_drawdown))));
+        tr.append(append(el("td"), el("span", `gate ${path.gates.beats_spy ? "pass" : "fail"}`, path.gates.beats_spy ? "通过" : "未通过")));
+      }
+    }
+    body.append(tr);
+  });
+  append(table, body); wrap.append(table); return wrap;
+}
+function progressLine(count, limit) {
+  const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  svg.setAttribute("viewBox", `0 0 ${limit} 6`); svg.setAttribute("preserveAspectRatio", "none"); svg.setAttribute("class", "progress-svg"); svg.setAttribute("aria-hidden", "true");
+  [ [limit, "#d8e5ef"], [Math.min(count, limit), "#214e76"] ].forEach(([width, fill]) => {
+    const rect = document.createElementNS(svg.namespaceURI, "rect");
+    for (const [key, value] of Object.entries({ x: 0, y: 0, width, height: 6, rx: 1, fill })) rect.setAttribute(key, value);
+    svg.append(rect);
+  });
+  return svg;
+}
+function overview() {
+  const root = $("overview"); root.replaceChildren();
+  const intro = el("div", "overview-head");
+  append(intro, append(el("div"), el("h1", "", data.summary.qualified ? "历史达标，仍需独立前瞻" : "还没有达标冠军。"), el("p", "", "这是持续研究的完整账本。更低的回撤、更高的历史收益都只是单项表现，只有同一策略通过全部四条路径，才算历史候选。")));
+  const budget = append(el("div", "budget"), el("strong", "", `${data.budget.used} / ${data.budget.cap} 个配置`), el("p", "", `本轮已用名额，剩余 ${data.budget.remaining} 个。耗尽后复盘，不无限调参。`));
+  const track = el("div", "budget-track"); for (let i = 0; i < data.budget.cap; i++) track.append(el("span", i < data.budget.used ? "used" : ""));
+  append(budget, track); intro.append(budget); root.append(intro);
+  const strip = el("div", "metrics-strip");
+  [[data.summary.completed, "完成配置"], [data.summary.reviews, "当前协议审阅"], [data.summary.definitions, `${data.summary.economic_families} 个经济家族`], [data.summary.technical_failures, "保留的技术失败"], [data.summary.source_audit_paths, "独立来源审计路径"]].forEach(([value, title]) => strip.append(append(el("div"), el("strong", "", value), el("span", "", title))));
+  root.append(strip);
+  const leader = data.strategies.find((row) => row.id === data.leader_id);
+  if (leader) {
+    const conclusion = el("article", "conclusion");
+    append(conclusion, append(el("div", "conclusion-title"), append(el("div"), el("h2", "", "当前低回撤领先研究对照"), el("p", "candidate-id", leader.id)), badge(leader)));
+    conclusion.append(el("p", "conclusion-description", data.ranking));
+    if (leader.id === "semiconductor_option_proxy_dollar_observed_band025") conclusion.append(el("p", "conclusion-description", "股票内部为半导体 SOXX 一半、MTUM / VLUE / QUAL / USMV 各占其余一半的四分之一；月末用 GVZ 与 VIX 的相对隐含波动分配股票和黄金，美元走强时减半转 BIL。实际持仓偏离目标达到 2.5 个百分点才调仓；不交易期权。"));
+    conclusion.append(gateTable(leader));
+    const failed = leader.paths.flatMap((path) => Object.entries(path.gates).filter(([, pass]) => !pass).map(([key]) => `${path.years}年${path.scenario === "base" ? "基础" : "压力"}：${keyNames[key]}`));
+    conclusion.append(el("p", "gate-note", failed.length ? `仍未达标：${failed.join("；")}。` : "全部历史门槛通过，但不是实盘资格或独立前瞻证明。"));
+    append(conclusion, append(el("div", "conclusion-actions"), button("查看配置与四路径详情", () => showDetail(leader.id))));
+    root.append(conclusion);
+  } else root.append(el("div", "notice", "当前没有四路径完整且回撤均不超过15%的配置。未用其他协议或不完整结果替补。"));
+  const below = el("div", "below");
+  const forward = append(el("article", "panel"), el("h2", "", "原前瞻模型，保持独立"));
+  data.forward.forEach((model) => {
+    append(forward, append(el("div", "model"),
+      append(el("div", "model-head"), el("strong", "", titles[model.id] || model.id), el("span", "tag", `${model.sessions} / ${model.minimum_sessions} 日`)),
+      progressLine(model.sessions, model.minimum_sessions),
+      el("p", "", `最新真实收益日 ${model.latest_session || "暂无"}。夏普 ${decimal(model.sharpe)}，年化 ${pct(model.cagr)}。不替换成回测赢家。`)));
+  });
+  const operations = append(el("article", "panel"), el("h2", "", "最近的输入与执行"));
+  const sourceMessage = data.daily.reason?.includes("SPY contains missing") ? "SPY 收盘价及复权收盘价缺失，已停止后续流程。" : data.daily.reason || data.daily.status;
+  append(operations, el("p", "", sourceMessage), el("p", "muted small", `尝试观察 ${data.daily.session}；最新接受 ${data.daily.latest_accepted_session}。新增真实日：${data.daily.new_sessions}。来源失败不等于策略亏损，也不补数据继续算。`), evidence(data.daily.evidence));
+  append(below, forward, operations); root.append(below);
+  const boundary = el("div", "boundary"); data.warnings.forEach((warning) => boundary.append(el("p", "", warning))); root.append(boundary);
+}
+function filteredStrategies() {
+  const query = $("search").value.toLowerCase().trim();
+  const scope = $("scope").value, status = $("status").value;
+  const rows = data.strategies.filter((row) => {
+    const searchable = `${label(row)} ${row.id} ${row.assets.join(" ")} ${row.factor_ids.map((id) => data.factors.find((f) => f.id === id)?.title || id).join(" ")} ${Object.keys(words).filter((key) => row.id.includes(key)).map((key) => words[key]).join(" ")}`;
+    return (!query || searchable.toLowerCase().includes(query)) && (scope === "all" || row.scope === scope)
+      && (status === "all" || status === "lowdd" && row.eligible_for_current_ranking && row.max_drawdown <= .15
+        || status === "qualified" && row.full_gate_pass || status === row.status);
+  });
+  if ($("sort").value === "sharpe") rows.sort((a, b) => (b.min_sharpe ?? -Infinity) - (a.min_sharpe ?? -Infinity) || a.id.localeCompare(b.id));
+  else if ($("sort").value === "drawdown") rows.sort((a, b) => (a.max_drawdown ?? Infinity) - (b.max_drawdown ?? Infinity) || a.id.localeCompare(b.id));
+  else rows.sort((a, b) => (b.reviewed_at || "9999").localeCompare(a.reviewed_at || "9999") || a.id.localeCompare(b.id));
+  return rows;
+}
+function strategyTable() {
+  const rows = filteredStrategies();
+  const total = Math.max(1, Math.ceil(rows.length / pageSize)); page = Math.min(page, total - 1);
+  $("strategy-rows").replaceChildren();
+  rows.slice(page * pageSize, (page + 1) * pageSize).forEach((row) => {
+    const name = button(label(row), () => showDetail(row.id), "strategy-name");
+    name.append(el("span", "identifier", row.id));
+    const base = row.paths.find((p) => p.years === 10 && p.scenario === "base");
+    $("strategy-rows").append(append(el("tr"), append(el("td"), name), append(el("td"), badge(row)),
+      el("td", "", decimal(row.min_sharpe)), el("td", "", pct(row.max_drawdown)),
+      el("td", "", pct(base?.metrics?.cagr)), el("td", "", date(row.reviewed_at))));
+  });
+  $("result-count").textContent = `${rows.length} 条记录 / 共 ${data.strategies.length} 条`;
+  $("empty").hidden = rows.length > 0; $("page-label").textContent = `${page + 1} / ${total}`;
+  $("previous").disabled = page === 0; $("next").disabled = page + 1 >= total;
+}
+function factors() {
+  const root = $("factors"); root.replaceChildren();
+  root.append(append(el("div", "section-heading"), append(el("div"), el("h1", "", "定义不等于发现了 alpha"), el("p", "", "将经济家族、已登记定义、数据可得性和实际策略使用分开看。"))));
+  const layout = el("div", "factor-layout");
+  append(layout, append(el("aside", "factor-summary"), el("strong", "", data.summary.definitions), el("span", "", "已登记定义"), el("p", "", `${data.summary.economic_families} 个经济家族。另有 ${data.queued.definitions} 个定义和 ${data.queued.strategies} 个配置排队，最早 ${data.queued.not_before}；未提前评估。`)));
+  const list = el("div", "factor-list");
+  data.factors.forEach((factor) => {
+    const details = el("details", "factor");
+    append(details, append(el("summary"), append(el("div"), el("h3", "", factor.title), el("span", "muted small", `${factor.family} / ${factor.status === "queued" ? "来源已核验，尚未登记" : factor.strategy_count + " 个已登记配置引用"}`))));
+    const body = el("div", "factor-body"), definition = el("dl");
+    [["定义", factor.definition], ["经济理由", factor.rationale], ["限制", factor.limitations], ["所需输入", factor.inputs.join(" / ")]].forEach(([title, value]) => append(definition, el("dt", "", title), el("dd", "", value)));
+    body.append(definition);
+    const links = el("div", "factor-links");
+    factor.sources.forEach((url, i) => {
+      if (!/^https:\/\/[^/]+/.test(url)) return;
+      const link = el("a", "", `来源 ${i + 1}`); link.href = url; link.target = "_blank"; link.rel = "noopener noreferrer"; links.append(link);
+    });
+    append(body, links, button("查看相关策略", () => {
+      $("search").value = factor.title; $("scope").value = "recurring"; $("status").value = "all"; page = 0; switchView("strategies");
+    }, ""));
+    details.append(body); list.append(details);
+  });
+  append(layout, list); root.append(layout);
+  root.append(el("p", "boundary", "现金流应计质量与保守资产增长仍缺完整个股点时数据；定义已登记不代表已经完成策略验证。"));
+  data.fundamental_data_blockers.forEach((reason) => root.append(el("p", "muted small", reason)));
+}
+function history() {
+  const root = $("history"); root.replaceChildren();
+  root.append(append(el("div", "section-heading"), append(el("div"), el("h1", "", "研究日志"), el("p", "", "按真实记录时间排列。旧协议回测、当前审阅、技术失败与数据采集分别标记。"))));
+  const timeline = el("div", "timeline");
+  const groups = new Map();
+  data.history.forEach((entry) => {
+    const key = date(entry.at); if (!groups.has(key)) groups.set(key, []); groups.get(key).push(entry);
+  });
+  groups.forEach((entries, key) => {
+    const row = el("div", "timeline-day");
+    const items = el("div", "timeline-items");
+    entries.forEach((entry) => {
+      const item = el("article", "timeline-event");
+      if (entry.kind === "strategy") {
+        const strategy = data.strategies.find((s) => s.id === entry.id);
+        append(item, button(label(strategy), () => showDetail(entry.id), ""), el("p", "", `${data.status_names[entry.status] || entry.status} / ${entry.id}`));
+      } else append(item, el("strong", "", entry.title), el("p", "", `输入观察 ${entry.session}；${entry.status}`), evidence(entry.evidence));
+      items.append(item);
+    });
+    append(row, el("time", "timeline-date", key), items); timeline.append(row);
+  });
+  root.append(timeline);
+}
+function showDetail(identifier) {
+  const row = data.strategies.find((r) => r.id === identifier);
+  if (!row) return;
+  $("detail-title").textContent = label(row);
+  const body = $("detail-body"); body.replaceChildren();
+  body.append(el("p", "candidate-id", row.id));
+  append(body, append(el("div", "detail-summary"), badge(row), el("span", "tag", row.scope === "legacy" ? "旧协议，不参与当前排名" : "当前四路径协议"), el("span", "tag", row.forward_validated ? "独立前瞻验证" : "未取得独立前瞻验证")));
+  if (row.failure_reason) body.append(el("div", "notice error", row.failure_reason));
+  if (row.paths.length) body.append(gateTable(row));
+  else body.append(el("p", "empty", row.status === "pending" ? "此配置已登记，但尚无完整评估结果。" : "技术失败记录保留；没有用不完整路径补齐结果。"));
+  if (row.scope === "recurring") {
+    body.append(el("p", "disclaimer", "四条路径分别使用独立 USD 10,000 账户；基础 5bp / 延迟1交易日，压力20bp / 延迟2交易日，每笔USD1。压力路径还必须跑赢基础成本SPY。回撤从初始资本高点计算；不拼指标、不把接近门槛四舍五入为通过。"));
+    row.paths.forEach((path) => {
+      const missed = Object.entries(path.gates).filter(([, pass]) => !pass).map(([key]) => keyNames[key]);
+      body.append(el("p", "small muted", `${path.years}年${path.scenario === "base" ? "基础" : "压力"}：${missed.length ? "未通过 " + missed.join("、") : "全部通过"}`));
+    });
+  }
+  Object.entries(row.description).forEach(([name, value]) => body.append(append(el("section", "rule"), el("h3", "", methodNames[name] || name), el("p", "method-text", value))));
+  body.append(append(el("section", "rule"), el("h3", "", "固定配置"), el("p", "method-text", JSON.stringify(row.configuration, null, 2))));
+  if (row.original_assessment) body.append(append(el("section", "rule"), el("h3", "", "原协议结论（不改写成当前门槛）"), el("p", "method-text", JSON.stringify(row.original_assessment, null, 2))));
+  if (row.policy_evidence) body.append(append(el("div", "detail-evidence"), evidence(row.policy_evidence)));
+  if (row.scope === "recurring") body.append(append(el("div", "detail-evidence"), evidence(data.source_snapshot)));
+  $("detail").showModal();
+}
+function switchView(view) {
+  currentView = view;
+  document.querySelectorAll(".view").forEach((node) => { node.hidden = node.id !== view; });
+  document.querySelectorAll("[data-view]").forEach((node) => {
+    if (node.dataset.view === view) node.setAttribute("aria-current", "page"); else node.removeAttribute("aria-current");
+  });
+  if (data && view === "strategies") strategyTable();
+}
+async function load() {
+  $("refresh").disabled = true;
+  try {
+    const response = await fetch("/api/research", { cache: "no-store" });
+    if (!response.ok) {
+      const error = await response.json(); throw new Error(error.error || `HTTP ${response.status}`);
+    }
+    data = await response.json();
+    $("error").hidden = true; $("loading").hidden = true;
+    $("freshness").textContent = `记录更新 ${data.updated_on} · 本地读取 ${new Date(data.read_at).toLocaleTimeString("zh-CN", { hour: "2-digit", minute: "2-digit" })}`;
+    $("strategy-count").textContent = data.strategies.length; $("factor-count").textContent = `${data.summary.definitions} + ${data.queued.definitions}`;
+    $("history-end").textContent = data.history_end;
+    overview(); factors(); history(); switchView(currentView);
+  } catch (error) {
+    $("loading").hidden = true;
+    $("error").textContent = `研究记录读取失败：${error.message}。请检查已发布的进度指针和证据；未使用虚构或空白数据替代。${data ? "下方保留的是上一次成功读取的记录，不代表已更新。" : ""}`;
+    $("error").hidden = false;
+  } finally { $("refresh").disabled = false; }
+}
+$("refresh").addEventListener("click", load);
+document.querySelectorAll("[data-view]").forEach((node) => node.addEventListener("click", () => { if (data) switchView(node.dataset.view); }));
+["search", "scope", "status", "sort"].forEach((id) => $(id).addEventListener(id === "search" ? "input" : "change", () => { page = 0; if (data) strategyTable(); }));
+$("previous").addEventListener("click", () => { page--; strategyTable(); });
+$("next").addEventListener("click", () => { page++; strategyTable(); });
+$("close-detail").addEventListener("click", () => $("detail").close());
+load();
+setInterval(() => { if (!document.hidden && !$("refresh").disabled && !$("detail").open) load(); }, 60000);

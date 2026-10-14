@@ -7352,6 +7352,39 @@ missing observations cannot later be backfilled after their acquisition deadline
 
 ## Progress and publication
 
+### Local research dashboard
+
+Run from this worktree, without installing a frontend framework:
+
+```bash
+research/workbench/.venv/bin/python -I -B src/us_quant/research_dashboard.py --check
+research/workbench/.venv/bin/python -I -B src/us_quant/research_dashboard.py --port 8787
+```
+
+Open `http://127.0.0.1:8787`. The Chinese dashboard includes the factor catalog
+and queued definitions, searchable strategy history, per-strategy four-path
+metrics and failures, a research timeline, the original prospective models,
+and the current low-drawdown research leader. The leader is ranked among
+complete unleveraged recurring reviews with every drawdown at most 15%, using
+the lowest net-excess Sharpe across all four paths. It is explicitly **not a
+qualified champion or live recommendation**.
+
+The 84 earlier configurations retain their original protocols and values,
+separate from the recurring reviews and two terminal code failures. The
+unchanged refinement baseline is a comparison, not an 85th new configuration.
+Archived technical failures do not inherit the current corrected policy.
+
+The server binds only to loopback and serves a finite set of frontend assets
+and allowlisted published JSON; it never serves the repository directory,
+private SQLite databases, source quotes, target matrices, broker state or
+account rows. Refresh reads the current progress pointer and published
+evidence, not market-data providers. It checks counts, frozen active policies,
+budgets and strict unrounded gates; inconsistent or missing evidence produces
+an explicit error instead of an empty or success-shaped result.
+Each later reviewed research checkpoint updates the existing
+`docs/research_progress.json` pointers and evidence; the dashboard automatically
+reads those updates on refresh (once per minute while visible).
+
 See [integration status](docs/integration/STATUS.md) and
 [`docs/research_progress.json`](docs/research_progress.json). GitHub progress
 uses reviewed explicit commits/PRs, not an unconditional git-push cron job.
