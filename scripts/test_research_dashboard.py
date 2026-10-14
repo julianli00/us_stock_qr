@@ -127,7 +127,7 @@ class ProjectionTests(unittest.TestCase):
         self.change(root, "docs/research_progress.json",
                     lambda p: p["recurring_research_program"].update(new_strategy_evaluations=new_count))
         audit = json.loads((root / "docs/research_progress.json").read_text())["source_bound_review"]["audit"]
-        self.change(root, audit, lambda a: a.update(reviewed_candidates=new_count))
+        self.change(root, audit, lambda a: a.update(reviewed_candidates=new_count, regenerated_strategy_paths=4 * new_count))
         refreshed = build_snapshot(root)
         self.assertEqual(refreshed["summary"]["completed"], self.current["summary"]["completed"] + 1)
         self.assertEqual(refreshed["leader_id"], "synthetic_future_strategy")
@@ -164,6 +164,19 @@ class ProjectionTests(unittest.TestCase):
                     lambda state: state["candidate_reviews"][0]["paths"][0]["metrics"].update(start="2017-01-01"))
         with self.assertRaisesRegex(DashboardError, "formal_window_changed"):
             build_snapshot(root)
+
+    def test_final_round_review_cannot_replace_a_strategy_metric(self) -> None:
+        if self.current["round_review"] is None:
+            self.skipTest("The completed-round review has not been published yet.")
+        for field in ("minimum_four_path_sharpe", "maximum_four_path_drawdown",
+                      "ten_year_base_cagr", "ten_year_stress_cagr"):
+            with self.subTest(field=field):
+                root = self.fixture()
+                reference = self.current["round_review"]["evidence"]
+                self.change(root, reference,
+                            lambda value: value["configurations"][0].update({field: 99}))
+                with self.assertRaisesRegex(DashboardError, "round_review_metric_mismatch"):
+                    build_snapshot(root)
 
     def test_changed_source_and_symlink_fail_closed(self) -> None:
         root = self.fixture()

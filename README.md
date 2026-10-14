@@ -7445,6 +7445,54 @@ and only the two Treasury packages are pending**.
 All **six of six slots are now consumed**; after their outcomes the round
 requires review, not more parameter trials.
 
+### Completed six-slot round: no qualified champion
+
+The [final Treasury outcomes](research/workbench/evidence/treasury_defense_20261014_results.json)
+also remain rejected:
+
+| Defensive package | Window | Costs | CAGR | Net excess Sharpe | Maximum drawdown |
+| --- | --- | --- | ---: | ---: | ---: |
+| IEF | 10y | Base | 6.5232% | 0.67779 | 13.0708% |
+| IEF | 10y | Stress | 6.2212% | 0.63047 | 13.2448% |
+| IEF | 5y | Base | 5.9644% | 0.31658 | 13.1844% |
+| IEF | 5y | Stress | 5.4966% | 0.25311 | 13.3198% |
+| TLT | 10y | Base | 6.8021% | 0.51876 | 19.8192% |
+| TLT | 10y | Stress | 6.6478% | 0.50135 | 19.6438% |
+| TLT | 5y | Base | 4.5818% | 0.11441 | 19.9149% |
+| TLT | 5y | Stress | 4.0876% | 0.06645 | 19.7790% |
+
+IEF passes the drawdown gates but fails every Sharpe and SPY comparison.
+TLT also fails all drawdown gates; nominal Treasury duration is not a
+guaranteed defensive asset. Actual publication
+`780e047004cef9e87539bfed5f7f890e9d115392` and the
+14:08:24.498419 UTC fence precede all eight paths.
+[Independent account checks](research/workbench/evidence/treasury_defense_20261014_reproducibility.json)
+retain 728 holding decisions / 30,128 funding days / 16 funded and 16 bt
+accounts, with zero target error, scalar error below 7.93e-14 and wealth error
+below USD 6.55e-11. The [final source audit](research/workbench/evidence/research_program_source_bound_audit_v63.json)
+replays **94 reviews / 376 paths**, preserving all old records and original
+one-day models.
+
+The [six-configuration round review](research/workbench/evidence/bounded_optimization_round_20261014_review.json)
+retains every outcome across all three batches: **six used, six completed,
+zero qualified, zero slots remaining**. None improves the original reference's
+ten-year base CAGR. This round checked 24 strategy paths, 2,184 actual holding
+decisions and 90,384 funding days; it is not six independent alpha discoveries.
+Further same-round parameter searching is stopped, and a new round needs a
+new explicit budget. Current totals are **178 configurations / 94 reviews**,
+96 registered versions including two old terminal failures, no pending
+candidate and no champion. Historical research was completed without waiting
+for future sessions; no retrospective pass is labelled forward validation.
+
+The [actual native continuation receipt](research/workbench/evidence/prospective_data_automation_v71.json)
+records the user-directed backtest priority and exhausted six-slot review.
+The prompt alone changed at 14:32:14.176 UTC and was read back at
+14:33:01.138 UTC; daily 09:00 Shanghai, Saturday discovery and the already
+scheduled next wakeup remain unchanged. This is not proof of future delivery
+or successful source collection. The failed October 13 observation was not
+actually acquired before the October 14 next-open deadline; it is not
+retrospectively filled and neither original model is reset.
+
 ### Local research dashboard
 
 Run from this worktree, without installing a frontend framework:

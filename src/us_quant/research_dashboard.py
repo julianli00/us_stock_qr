@@ -343,6 +343,41 @@ def build_snapshot(root: Path = ROOT) -> dict:
         or used > 6
     ):
         raise DashboardError("bounded_budget_mismatch")
+    round_review = None
+    if round_state.get("review"):
+        saved_review = inputs.read(round_state["review"])
+        rows = saved_review["configurations"]
+        tagged = {spec["id"] for spec in specs
+                  if spec["configuration"].get("optimization_round_id") == "user_confirmed_etf_restructure_20261013"}
+        if (
+            used != 6 or saved_review["registered_slots_remaining"] != 0
+            or {row["candidate_id"] for row in rows} != tagged or len(rows) != 6
+            or saved_review["new_strategy_evaluations_by_this_review"] != 0
+            or saved_review["historically_qualified_configurations"] != sum(row["historical_gates_passed"] for row in rows)
+        ):
+            raise DashboardError("completed_round_review_mismatch")
+        for row in rows:
+            actual = next(strategy for strategy in strategies if strategy["id"] == row["candidate_id"])
+            base = next(path for path in actual["paths"] if (path["years"], path["scenario"]) == (10, "base"))
+            stress = next(path for path in actual["paths"] if (path["years"], path["scenario"]) == (10, "stress"))
+            if (
+                abs(row["minimum_four_path_sharpe"] - actual["min_sharpe"]) > 1e-10
+                or abs(row["maximum_four_path_drawdown"] - actual["max_drawdown"]) > 1e-10
+                or abs(row["ten_year_base_cagr"] - base["metrics"]["cagr"]) > 1e-10
+                or abs(row["ten_year_stress_cagr"] - stress["metrics"]["cagr"]) > 1e-10
+                or row["historical_gates_passed"] is not actual["full_gate_pass"]
+                or row["status"] != actual["status"]
+            ):
+                raise DashboardError("round_review_metric_mismatch")
+        round_review = {
+            "evidence": round_state["review"],
+            "qualified": saved_review["historically_qualified_configurations"],
+            "rows": [{key: row[key] for key in
+                      ("candidate_id", "ten_year_base_cagr", "ten_year_stress_cagr",
+                       "minimum_four_path_sharpe", "maximum_four_path_drawdown", "status")}
+                     for row in rows],
+            "additional_trials_allowed": False,
+        }
     factors = []
     for item in state["factor_proposals"]:
         factors.append({
@@ -410,7 +445,7 @@ def build_snapshot(root: Path = ROOT) -> dict:
     history.sort(key=lambda row: (row["at"], row["id"]), reverse=True)
     audit = inputs.read(current["cycle_snapshot"].rsplit("/", 1)[0] + "/" +
                         Path(progress["source_bound_review"]["audit"]).name)
-    if audit["reviewed_candidates"] != len(reviews):
+    if audit["reviewed_candidates"] != len(reviews) or audit["regenerated_strategy_paths"] != 4 * len(reviews):
         raise DashboardError("current_source_audit_count_mismatch")
     snapshot = {
         "schema_version": 1, "read_at": datetime.now(timezone.utc).isoformat(),
@@ -428,6 +463,7 @@ def build_snapshot(root: Path = ROOT) -> dict:
         "leader_id": leader["id"] if leader else None, "qualified_ids": qualified,
         "ranking": "仅当前四路径完整、全部资产1倍、最大回撤均不超过15%的研究配置；按四路径最低净超额夏普降序。旧84配置不混入排名。历史候选不是独立前瞻证明。",
         "budget": {"cap": 6, "used": used, "remaining": 6 - used, "completed_batches": round_state["completed_batches"]},
+        "round_review": round_review,
         "queued": {"definitions": current["queued_new_factor_definitions"],
                    "strategies": current["prepared_unregistered_strategy_candidates"],
                    "not_before": current["queued_factor_eligibility"]},

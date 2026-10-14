@@ -1,0 +1,294 @@
+{
+  "actual_completed_batches": 3,
+  "actual_completed_configurations": 6,
+  "actual_registered_configurations": 6,
+  "all_registered_outcomes_retained": true,
+  "budget_exhausted": true,
+  "completed_recurring_reviews": 94,
+  "configurations": [
+    {
+      "candidate_id": "bounded_option_dollar_pdp_momentum_full",
+      "configuration": {
+        "id": "bounded_option_dollar_pdp_momentum_full",
+        "optimization_round_id": "user_confirmed_etf_restructure_20261013",
+        "pdp_share_of_momentum": 1.0
+      },
+      "failed_cells": [
+        {
+          "failed_gates": [
+            "beats_spy"
+          ],
+          "scenario": "base",
+          "years": 10
+        },
+        {
+          "failed_gates": [
+            "also_beats_base_cost_spy",
+            "beats_spy"
+          ],
+          "scenario": "stress",
+          "years": 10
+        }
+      ],
+      "historical_gates_passed": false,
+      "independent_forward_validation": false,
+      "maximum_four_path_drawdown": 0.13285185690360968,
+      "minimum_four_path_sharpe": 1.059334677341677,
+      "status": "rejected_historical",
+      "ten_year_base_cagr": 0.1454376883049897,
+      "ten_year_stress_cagr": 0.14275690828514565
+    },
+    {
+      "candidate_id": "bounded_option_dollar_pdp_momentum_equal_mix",
+      "configuration": {
+        "id": "bounded_option_dollar_pdp_momentum_equal_mix",
+        "optimization_round_id": "user_confirmed_etf_restructure_20261013",
+        "pdp_share_of_momentum": 0.5
+      },
+      "failed_cells": [
+        {
+          "failed_gates": [
+            "beats_spy"
+          ],
+          "scenario": "base",
+          "years": 10
+        },
+        {
+          "failed_gates": [
+            "also_beats_base_cost_spy",
+            "beats_spy"
+          ],
+          "scenario": "stress",
+          "years": 10
+        }
+      ],
+      "historical_gates_passed": false,
+      "independent_forward_validation": false,
+      "maximum_four_path_drawdown": 0.13446460892376266,
+      "minimum_four_path_sharpe": 1.0628949651648694,
+      "status": "rejected_historical",
+      "ten_year_base_cagr": 0.14590149600187385,
+      "ten_year_stress_cagr": 0.14322709941918932
+    },
+    {
+      "candidate_id": "bounded_option_dollar_technology_full",
+      "configuration": {
+        "id": "bounded_option_dollar_technology_full",
+        "optimization_round_id": "user_confirmed_etf_restructure_20261013",
+        "replacement_symbol": "XLK"
+      },
+      "failed_cells": [
+        {
+          "failed_gates": [
+            "beats_spy"
+          ],
+          "scenario": "base",
+          "years": 10
+        },
+        {
+          "failed_gates": [
+            "also_beats_base_cost_spy",
+            "beats_spy"
+          ],
+          "scenario": "stress",
+          "years": 10
+        }
+      ],
+      "historical_gates_passed": false,
+      "independent_forward_validation": false,
+      "maximum_four_path_drawdown": 0.13709551315130153,
+      "minimum_four_path_sharpe": 1.0212633926262444,
+      "status": "rejected_historical",
+      "ten_year_base_cagr": 0.12648382078227582,
+      "ten_year_stress_cagr": 0.12371134533482264
+    },
+    {
+      "candidate_id": "bounded_option_dollar_nasdaq_full",
+      "configuration": {
+        "id": "bounded_option_dollar_nasdaq_full",
+        "optimization_round_id": "user_confirmed_etf_restructure_20261013",
+        "replacement_symbol": "QQQ"
+      },
+      "failed_cells": [
+        {
+          "failed_gates": [
+            "beats_spy",
+            "sharpe_above_1"
+          ],
+          "scenario": "base",
+          "years": 10
+        },
+        {
+          "failed_gates": [
+            "also_beats_base_cost_spy",
+            "beats_spy",
+            "sharpe_above_1"
+          ],
+          "scenario": "stress",
+          "years": 10
+        },
+        {
+          "failed_gates": [
+            "sharpe_above_1"
+          ],
+          "scenario": "stress",
+          "years": 5
+        }
+      ],
+      "historical_gates_passed": false,
+      "independent_forward_validation": false,
+      "maximum_four_path_drawdown": 0.128825800426404,
+      "minimum_four_path_sharpe": 0.9594745946004937,
+      "status": "rejected_historical",
+      "ten_year_base_cagr": 0.11794615553076282,
+      "ten_year_stress_cagr": 0.11434295098915848
+    },
+    {
+      "candidate_id": "bounded_treasury_defense_ief",
+      "configuration": {
+        "defensive_symbol": "IEF",
+        "id": "bounded_treasury_defense_ief",
+        "optimization_round_id": "user_confirmed_etf_restructure_20261013"
+      },
+      "failed_cells": [
+        {
+          "failed_gates": [
+            "beats_spy",
+            "sharpe_above_1"
+          ],
+          "scenario": "base",
+          "years": 10
+        },
+        {
+          "failed_gates": [
+            "also_beats_base_cost_spy",
+            "beats_spy",
+            "sharpe_above_1"
+          ],
+          "scenario": "stress",
+          "years": 10
+        },
+        {
+          "failed_gates": [
+            "beats_spy",
+            "sharpe_above_1"
+          ],
+          "scenario": "base",
+          "years": 5
+        },
+        {
+          "failed_gates": [
+            "also_beats_base_cost_spy",
+            "beats_spy",
+            "sharpe_above_1"
+          ],
+          "scenario": "stress",
+          "years": 5
+        }
+      ],
+      "historical_gates_passed": false,
+      "independent_forward_validation": false,
+      "maximum_four_path_drawdown": 0.1331980756956057,
+      "minimum_four_path_sharpe": 0.25311098254582115,
+      "status": "rejected_historical",
+      "ten_year_base_cagr": 0.06523154594432135,
+      "ten_year_stress_cagr": 0.06221233111112712
+    },
+    {
+      "candidate_id": "bounded_treasury_defense_tlt",
+      "configuration": {
+        "defensive_symbol": "TLT",
+        "id": "bounded_treasury_defense_tlt",
+        "optimization_round_id": "user_confirmed_etf_restructure_20261013"
+      },
+      "failed_cells": [
+        {
+          "failed_gates": [
+            "beats_spy",
+            "drawdown_at_most_15pct",
+            "sharpe_above_1"
+          ],
+          "scenario": "base",
+          "years": 10
+        },
+        {
+          "failed_gates": [
+            "also_beats_base_cost_spy",
+            "beats_spy",
+            "drawdown_at_most_15pct",
+            "sharpe_above_1"
+          ],
+          "scenario": "stress",
+          "years": 10
+        },
+        {
+          "failed_gates": [
+            "beats_spy",
+            "drawdown_at_most_15pct",
+            "sharpe_above_1"
+          ],
+          "scenario": "base",
+          "years": 5
+        },
+        {
+          "failed_gates": [
+            "also_beats_base_cost_spy",
+            "beats_spy",
+            "drawdown_at_most_15pct",
+            "sharpe_above_1"
+          ],
+          "scenario": "stress",
+          "years": 5
+        }
+      ],
+      "historical_gates_passed": false,
+      "independent_forward_validation": false,
+      "maximum_four_path_drawdown": 0.19914926040252212,
+      "minimum_four_path_sharpe": 0.06645228114843935,
+      "status": "rejected_historical",
+      "ten_year_base_cagr": 0.06802072557561978,
+      "ten_year_stress_cagr": 0.06647805270377272
+    }
+  ],
+  "full_source_bound_paths": 376,
+  "full_source_reviews": 94,
+  "further_same_round_parameter_trials_allowed": false,
+  "historical_backtests_are_main_iteration_loop": true,
+  "historical_pass_claimed_independent_forward_validation": false,
+  "historically_qualified_configurations": 0,
+  "independent_funding_days": 90384,
+  "independent_holding_decisions": 2184,
+  "independently_checked_strategy_paths_in_round": 24,
+  "investment_objective_verified": false,
+  "new_methods_improved_ten_year_base_return_over_reference": [],
+  "new_strategy_evaluations_by_this_review": 0,
+  "next_trial_round_requires_new_explicit_budget": true,
+  "optimization_round_id": "user_confirmed_etf_restructure_20261013",
+  "order_authority": false,
+  "pending_candidate_ids": [],
+  "private_reviewer_sha256": "a15fd3d5c69cd6988f72b957a5c87709ca9249aabd0472dc1e9db3161c0e2e1f",
+  "published_inputs": {
+    "evidence/option_momentum_20261013_reproducibility.json": "55451c84bfcc586d56c436177bdce512b6cf172b2d426e66b20fea554372dbc0",
+    "evidence/option_momentum_20261013_results.json": "2e1098bc34d05f04f8a2c68f8004b2b7d4445bec5695821ceaaec652bf8bb9c8",
+    "evidence/option_sector_20261014_reproducibility.json": "aeed648b712b58a9452ad3e27c20fc14e64cc15d028c0217f232eb8afe9f1674",
+    "evidence/option_sector_20261014_results.json": "d7dd650919b0b2f093efb8e2099dc11c6e0f1578cd729f00ec7c8711123dd5fa",
+    "evidence/research_program_source_bound_audit_v63.json": "2de695a2cf302b5301c02ad6d38cd01b5ac80890514ff5e9d6dab74127ad3169",
+    "evidence/research_program_treasury_defense_results_v101.json": "4cbb5c248c84dc9ee3e8280b11a6e11214b0fdf678298479f651298b683c220b",
+    "evidence/treasury_defense_20261014_reproducibility.json": "7c48e10c8c2c017c8bb8fa16e6c7a3016ec224f56a805299dda2a8f4d92bc5c5",
+    "evidence/treasury_defense_20261014_results.json": "52a1b48ea1c82530ea320d0c377766f0cb7668e992bdc790b2d930da7796b3de"
+  },
+  "reference_candidate_id": "semiconductor_option_proxy_dollar_observed_band025",
+  "reference_is_qualified_champion": false,
+  "reference_maximum_four_path_drawdown": 0.13591321922122857,
+  "reference_minimum_four_path_sharpe": 1.073956869775759,
+  "reference_ten_year_base_cagr": 0.1472285925513659,
+  "reference_ten_year_stress_cagr": 0.14464137511341857,
+  "registered_configuration_cap": 6,
+  "registered_slots_remaining": 0,
+  "registered_versions_including_two_invalid": 96,
+  "research_champion": null,
+  "reviewed_at": "2026-10-14T14:24:26.454030+00:00",
+  "schema_version": 1,
+  "state_sha256": "ae038fe68f8f73783335dd67d5d4049e8a2affbff86616aaf1d8b6489cf2bda4",
+  "total_completed_strategy_configurations": 178
+}

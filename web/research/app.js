@@ -16,6 +16,8 @@ const titles = {
   bounded_option_dollar_pdp_momentum_equal_mix: "动量实现：MTUM / PDP 等分",
   bounded_option_dollar_technology_full: "产业实现：科技 XLK 替换半导体 SOXX",
   bounded_option_dollar_nasdaq_full: "产业实现：Nasdaq-100 QQQ 替换半导体 SOXX",
+  bounded_treasury_defense_ief: "防御包：中期美债 IEF + 真实股债波动预算",
+  bounded_treasury_defense_tlt: "防御包：长期美债 TLT + 真实股债波动预算",
 };
 const words = { momentum: "动量", dollar: "美元", gold: "黄金", factor: "因子", semiconductor: "半导体", quality: "质量", risk: "风险", yield: "利率", trend: "趋势", volatility: "波动", equity: "股票", credit: "信用", unemployment: "失业", housing: "住房", growth: "成长" };
 
@@ -113,6 +115,20 @@ function overview() {
   const sourceMessage = data.daily.reason?.includes("SPY contains missing") ? "SPY 收盘价及复权收盘价缺失，已停止后续流程。" : data.daily.reason || data.daily.status;
   append(operations, el("p", "", sourceMessage), el("p", "muted small", `尝试观察 ${data.daily.session}；最新接受 ${data.daily.latest_accepted_session}。新增真实日：${data.daily.new_sessions}。来源失败不等于策略亏损，也不补数据继续算。`), evidence(data.daily.evidence));
   append(below, forward, operations); root.append(below);
+  if (data.round_review) {
+    const review = append(el("article", "panel round-review"), el("h2", "", `本轮复盘：6 个配置，${data.round_review.qualified} 个历史达标`));
+    review.append(el("p", "muted small", "三批固定假设已全部回测。名额用尽，不重置预算继续扫参数；失败记录完整保留。"));
+    review.append(el("p", "muted small scroll-hint", "横向滑动表格查看收益、夏普与回撤。"));
+    const table = el("table"), header = el("tr");
+    ["固定配置", "十年基础 CAGR", "四路径最低夏普", "四路径最差回撤"].forEach((text) => header.append(el("th", "", text)));
+    append(table, append(el("thead"), header));
+    const body = el("tbody");
+    data.round_review.rows.forEach((row) => body.append(append(el("tr"),
+      append(el("td"), button(titles[row.candidate_id] || row.candidate_id, () => showDetail(row.candidate_id), "strategy-name")),
+      el("td", "", pct(row.ten_year_base_cagr)), el("td", "", decimal(row.minimum_four_path_sharpe)),
+      el("td", "", pct(row.maximum_four_path_drawdown)))));
+    append(table, body); append(review, append(el("div", "table-wrap"), table), evidence(data.round_review.evidence)); root.append(review);
+  }
   const boundary = el("div", "boundary"); data.warnings.forEach((warning) => boundary.append(el("p", "", warning))); root.append(boundary);
 }
 function filteredStrategies() {
@@ -243,6 +259,7 @@ async function load() {
   } catch (error) {
     $("loading").hidden = true;
     $("error").textContent = `研究记录读取失败：${error.message}。请检查已发布的进度指针和证据；未使用虚构或空白数据替代。${data ? "下方保留的是上一次成功读取的记录，不代表已更新。" : ""}`;
+    $("freshness").textContent = "记录刷新失败，未取得新状态";
     $("error").hidden = false;
   } finally { $("refresh").disabled = false; }
 }
