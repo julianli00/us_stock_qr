@@ -7493,6 +7493,31 @@ or successful source collection. The failed October 13 observation was not
 actually acquired before the October 14 next-open deadline; it is not
 retrospectively filled and neither original model is reset.
 
+### October 15 scheduled run: SPY HTTP access denial
+
+The [actual scheduled attempt](research/workbench/evidence/research_daily_actual_run_20261015_v1.json)
+started at 01:06:21 UTC to observe the completed October 14 market session.
+The unchanged collector reported **SPY HTTP 403** at the first `parent_data`
+stage; no later stage or separate Dollar pipeline ran. The one failed attempt
+was retained without retrying, changing provider/headers, filling prices or
+backfilling the missing October 13 observation.
+
+This is an access failure, not another missing-price validation result.
+The original collector did not retain the denied HTTP body or headers;
+offline verification checks its saved exception and failure receipts, not
+an independently repeated network rejection. The
+[preservation receipt](research/workbench/evidence/research_daily_preservation_20261015_v1.json)
+confirms all seven accepted profiles, fourteen registration/head hashes,
+327 prior archive files, 69 imports, 3,192 controls and 26 selection artifacts
+remain unchanged. Both original models still have one actual October 12
+return day and unreported Sharpe/CAGR.
+
+The [native readback](research/workbench/evidence/prospective_data_automation_v72.json)
+matches the existing prompt without modifying its binding. It observed the
+next wakeup at October 16 01:00:09 UTC, not a guarantee of future delivery or
+source success. Research remains **178 completed configurations / 94 reviews,
+no champion and zero slots remaining**; no new strategy trial was started.
+
 ### Local research dashboard
 
 Run from this worktree, without installing a frontend framework:

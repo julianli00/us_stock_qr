@@ -66,17 +66,33 @@ class ProjectionTests(unittest.TestCase):
         self.assertFalse(result["sharpe_above_1"])
 
     def test_input_failure_and_real_forward_days_are_separate(self) -> None:
+        progress = json.loads((ROOT / "docs/research_progress.json").read_text())
+        reference = progress["daily_operational_execution"]["actual_run"]
+        actual = json.loads((ROOT / reference).read_text())
         self.assertEqual(self.current["daily"]["new_sessions"], 0)
-        self.assertEqual(self.current["daily"]["session"], "2026-10-13")
+        self.assertEqual(self.current["daily"]["evidence"], reference)
+        self.assertEqual(self.current["daily"]["session"], actual["market_session"])
+        self.assertEqual(self.current["daily"]["status"], actual["status"])
+        self.assertEqual(self.current["daily"]["reason"], actual["reason"])
         self.assertEqual(self.current["daily"]["latest_accepted_session"], "2026-10-12")
-        self.assertIn("SPY", self.current["daily"]["reason"])
         for model in self.current["forward"]:
             self.assertEqual(model["sessions"], 1)
             self.assertIsNone(model["sharpe"])
             self.assertIsNone(model["cagr"])
         operations = [row for row in self.current["history"] if row["kind"] == "operation"]
-        self.assertEqual(len(operations), 4)
-        self.assertEqual(len([row for row in operations if "failed" in row["status"]]), 2)
+        contract = json.loads((ROOT / "config/publication_allowlist.json").read_text())
+        references = {
+            name for name in contract["files"]
+            if Path(name).name.startswith(("research_daily_actual_run_", "research_daily_recovery_"))
+            and "_preservation_" not in name
+        }
+        self.assertEqual({row["id"] for row in operations}, references)
+        expected_failures = 0
+        for name in references:
+            record = json.loads((ROOT / name).read_text())
+            execution = record["execution_record"] if "execution_record" in record else record
+            expected_failures += "failed" in execution["status"]
+        self.assertEqual(len([row for row in operations if "failed" in row["status"]]), expected_failures)
 
     def test_projection_never_publishes_private_input_or_account_rows(self) -> None:
         raw = json.dumps(self.current)
