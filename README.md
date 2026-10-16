@@ -7518,6 +7518,29 @@ next wakeup at October 16 01:00:09 UTC, not a guarantee of future delivery or
 source success. Research remains **178 completed configurations / 94 reviews,
 no champion and zero slots remaining**; no new strategy trial was started.
 
+### October 16 scheduled run: access failure retained
+
+The [next day's actual scheduled attempt](research/workbench/evidence/research_daily_actual_run_20261016_v1.json)
+started at 01:05:34 UTC for the completed October 15 market session.
+The original first SPY request again reported HTTP 403. Only `parent_data`
+started; no later stage, Dollar invocation, retry or alternate-source request
+followed. No quote payload was accepted, and the denied HTTP body/headers
+were not retained or independently requested again.
+
+[Offline preservation](research/workbench/evidence/research_daily_preservation_20261016_v1.json)
+checks all seven accepted profiles, fourteen registration/head hashes,
+328 prior archive files, 69 imports, 3,192 controls and 26 selection artifacts.
+Both original models retain one October 12 return day and null Sharpe/CAGR;
+neither missing October 13 nor October 14 observation is backfilled or reset
+away. There are zero new strategy trials or accepted observations.
+
+The [unchanged native binding readback](research/workbench/evidence/prospective_data_automation_v73.json)
+observed the next wakeup at October 17 01:00:24 UTC. The existing four W42
+plans and two-definition quota still require actual October 17 Shanghai
+09:00 eligibility and their original publication gates; no early registration
+occurred. The exhausted six-configuration round remains stopped, and the
+overall investment objective remains unmet.
+
 ### Local research dashboard
 
 Run from this worktree, without installing a frontend framework:
