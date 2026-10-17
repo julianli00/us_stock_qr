@@ -1,0 +1,40 @@
+{
+  "actual_factor_cycle_exists": false,
+  "daily_failure_evidence": "evidence/research_daily_actual_run_20261017_v1.json",
+  "dated_prepared_readiness_present": {
+    "claims-guard": false,
+    "inflation-guard": false,
+    "six-factor": false
+  },
+  "eligible_not_before": "2026-10-17T09:00:00+08:00",
+  "exhausted_six_configuration_round_reset_or_expanded": false,
+  "full_preparation_cycle_registration_and_remote_publication_gates_bypassed": false,
+  "independent_verification": {
+    "private_session_artifact": "daily-observation-20261017/verified-failure.json",
+    "sha256": "e83508fe1dfcd35fa5ec5871704a4dd64adc2869369f6bb5ce1332c76952eb7b"
+  },
+  "investment_objective_verified": false,
+  "new_economic_factor_definitions": 0,
+  "new_registered_candidates": 0,
+  "new_strategy_evaluations": 0,
+  "order_authority": false,
+  "original_approved_candidate_count": 4,
+  "original_candidate_ids_registered": [],
+  "original_queued_definition_quota": 2,
+  "prior_early_cli_receipts_preserved": {
+    "reports/weekly-research-2026-W42/runs/20261011T090337-341fc71a/result.json": "a3a9ecc8e8470ea3ac2fa0afe80959b2350e613a86c964e8a2a0d4311fe2ea9f",
+    "reports/weekly-research-2026-W42/runs/20261011T090339-34ecc567/result.json": "b89079d6013b3ee58bfbfc52c2ea449cba18dc0d549fff2117178b5ba5accf72"
+  },
+  "queued_definition_ids_registered": [],
+  "reason": "The preceding original daily pipeline failed at its first SPY HTTP403 stage; this invocation stopped later work rather than bypassing its first-failure rule.",
+  "registration_packet_exists": false,
+  "schema_version": 1,
+  "status": "eligible_not_started_after_daily_first_failure",
+  "time_eligibility_is_full_admission_or_strategy_success": false,
+  "time_eligibility_reached": true,
+  "today_weekly_run_paths": [],
+  "verified_at": "2026-10-17T01:10:55.933729+00:00",
+  "week": "2026-W42",
+  "weekly_preparation_invoked_in_this_observation": false,
+  "weekly_runner_invoked_in_this_observation": false
+}

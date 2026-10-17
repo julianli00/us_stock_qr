@@ -7541,6 +7541,35 @@ plans and two-definition quota still require actual October 17 Shanghai
 occurred. The exhausted six-configuration round remains stopped, and the
 overall investment objective remains unmet.
 
+### October 17: daily access failure and W42 eligibility
+
+The [actual Saturday daily attempt](research/workbench/evidence/research_daily_actual_run_20261017_v1.json)
+started at 01:08:24 UTC for the completed October 16 market session.
+The first original SPY request again reported HTTP 403; no later daily stage,
+Dollar invocation, retry, alternate-source request or accepted observation
+followed. Neither original forward model was reset or advanced, and the
+missed October 13-15 observations remain unfilled.
+
+The [W42 gate snapshot](research/workbench/evidence/weekly_research_2026-W42_gate_status_20261017.json)
+separates **time eligibility reached** from actual research execution.
+This invocation stopped later work after the daily first failure: no weekly
+preparation, factor cycle, definition/candidate admission, registration
+packet or portfolio evaluation ran. The original four candidates and
+two-definition quota remain pending, not cancelled or replaced by a new
+optimization round. The dated three-group readiness files and actual cycle
+are absent; time eligibility alone cannot substitute for their original
+registration, approval and remote-publication gates.
+
+[Offline preservation](research/workbench/evidence/research_daily_preservation_20261017_v1.json)
+checks seven accepted profiles, fourteen registration/head hashes,
+329 prior archive files, 69 imports, 3,192 controls, 26 selection artifacts
+and both original early-blocked weekly CLI receipts. The
+[native readback](research/workbench/evidence/prospective_data_automation_v74.json)
+matches the unchanged prompt and observed October 18 01:01:53 UTC as the next
+wakeup; it is not a source-success or delivery guarantee. Research remains
+178 completed configurations / 94 reviews, no champion, zero new trials and
+zero remaining slots in the completed six-configuration optimization round.
+
 ### Local research dashboard
 
 Run from this worktree, without installing a frontend framework:
