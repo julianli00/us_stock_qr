@@ -7570,6 +7570,33 @@ wakeup; it is not a source-success or delivery guarantee. Research remains
 178 completed configurations / 94 reviews, no champion, zero new trials and
 zero remaining slots in the completed six-configuration optimization round.
 
+### October 18: no new session, no automatic source retry
+
+The [Sunday preflight](research/workbench/evidence/research_daily_preflight_20261018_v1.json)
+independently confirms that the latest completed NYSE session is still
+October 16, with the next actual open on October 19 at 13:30 UTC.
+That is the same session as the preserved October 17 SPY HTTP 403 attempt.
+This wakeup therefore made **zero primary, Dollar, collector or weekly
+invocations**, rather than automatically retrying the failed session.
+
+This is explicitly `not_started_same_session_prior_failure_no_auto_retry`,
+not `already_collected`, source recovery, another network failure or a
+successful pipeline. The last actual pipeline receipt and dashboard
+operation-history entry remain October 17; no October 18 actual-run receipt
+or fake pipeline start time is created.
+
+[Preservation](research/workbench/evidence/research_daily_preservation_20261018_v1.json)
+checks seven unchanged profiles, fourteen anchors, 330 prior archive files,
+69 imports, 3,192 controls and 26 selection artifacts. Both original models
+still have one October 12 return day and null Sharpe/CAGR. The original W42
+four-candidate/two-definition plan is still pending its full admission gates;
+there is no new strategy trial, observation or qualification.
+
+The [native readback](research/workbench/evidence/prospective_data_automation_v75.json)
+records the genuine Sunday wakeup separately from the last actual pipeline,
+without changing its binding. The next observed wakeup is October 19
+01:00:09 UTC; this is not a source-success or delivery guarantee.
+
 ### Local research dashboard
 
 Run from this worktree, without installing a frontend framework:
