@@ -7597,6 +7597,34 @@ records the genuine Sunday wakeup separately from the last actual pipeline,
 without changing its binding. The next observed wakeup is October 19
 01:00:09 UTC; this is not a source-success or delivery guarantee.
 
+### October 20: genuinely new session, one actual failed attempt
+
+The [actual October 20 pipeline](research/workbench/evidence/research_daily_actual_run_20261020_v1.json)
+started at 01:26:44 UTC for the newly completed October 19 NYSE session.
+Independent calendar selection confirms this is newer than the October 16
+failed batch, unlike the preserved October 18-19 same-session no-retry
+preflights. The one unchanged original SPY request again reported HTTP 403;
+only `parent_data` started, and no later step, Dollar invocation, retry,
+source/environment change or weekly rollover followed.
+
+[Offline preservation](research/workbench/evidence/research_daily_preservation_20261020_v1.json)
+verifies seven original profiles, fourteen anchors, 330 prior archive files,
+69 imports, 3,192 controls and 26 selection artifacts. No input snapshot or
+return day was accepted; neither original one-day model was reset or
+advanced. The missed October 13-16 observations remain unfilled.
+The denied HTTP body/headers were not retained, and verification did not
+reissue the request.
+
+The [native readback](research/workbench/evidence/prospective_data_automation_v76.json)
+separates this real new-session attempt from the old no-attempt preflight.
+The next observed wakeup is October 21 01:00:31 UTC, without changing the
+binding or guaranteeing future source success. The actual operation history
+now contains eight records, including six failures; preflight-only wakeups
+are not counted as pipeline runs. Research remains 178 configurations /
+94 reviews, no champion and no remaining optimization slots. The original
+W42 four-candidate/two-definition plan stays pending its full gates, not
+silently re-dated or replaced.
+
 ### Local research dashboard
 
 Run from this worktree, without installing a frontend framework:
