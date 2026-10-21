@@ -7625,6 +7625,26 @@ are not counted as pipeline runs. Research remains 178 configurations /
 W42 four-candidate/two-definition plan stays pending its full gates, not
 silently re-dated or replaced.
 
+### October 21: original new-session request still denied
+
+The [one actual scheduled attempt](research/workbench/evidence/research_daily_actual_run_20261021_v1.json)
+ran at 01:07:24-25 UTC for the newly completed October 20 session.
+The original first SPY request again reported HTTP 403; later daily steps,
+Dollar and weekly work did not start. There was no retry, source/environment
+change, old-session backfill or new accepted observation.
+[Offline preservation](research/workbench/evidence/research_daily_preservation_20261021_v1.json)
+checks all seven profiles, fourteen anchors, 331 prior archive files,
+69 imports, 3,192 controls and 26 selection artifacts; both original models
+remain one October 12 day with null Sharpe/CAGR. The missed October 19
+observation is now also past its original acquisition deadline and is not
+retroactively recorded.
+
+The [unchanged native binding readback](research/workbench/evidence/prospective_data_automation_v77.json)
+observed the next wakeup at October 22 01:01:38 UTC, not a source-success
+guarantee. Actual operation history now has nine records / seven failures;
+historical research remains 178 configurations / 94 reviews, no champion,
+zero remaining optimization slots, and the original W42 plan remains pending.
+
 ### Local research dashboard
 
 Run from this worktree, without installing a frontend framework:
