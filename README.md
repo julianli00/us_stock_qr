@@ -7645,6 +7645,26 @@ guarantee. Actual operation history now has nine records / seven failures;
 historical research remains 178 configurations / 94 reviews, no champion,
 zero remaining optimization slots, and the original W42 plan remains pending.
 
+### October 22: new-session source failure preserved
+
+The [one original scheduled pipeline](research/workbench/evidence/research_daily_actual_run_20261022_v1.json)
+ran at 01:09:06-07 UTC for the newly completed October 21 session.
+The first SPY request again reported HTTP 403, stopping all later daily,
+Dollar and weekly work. No retry, provider/environment change, historical
+backfill or accepted observation occurred.
+[Offline preservation](research/workbench/evidence/research_daily_preservation_20261022_v1.json)
+checks seven profiles, fourteen anchors, 332 prior archive files, 69 imports,
+3,192 controls and 26 selection artifacts. Original models remain one
+October 12 return day with null Sharpe/CAGR; missed October 20 and earlier
+observations are not retroactively created.
+
+The [native readback](research/workbench/evidence/prospective_data_automation_v78.json)
+matches the unchanged prompt and observed October 23 01:01:43 UTC as the next
+wakeup, not a future source-success guarantee. Actual operation history is
+ten records / eight failures, not ten research trials. Historical research
+remains 178 configurations / 94 reviews, no champion, zero remaining
+optimization slots and the original W42 plan pending its complete gates.
+
 ### Local research dashboard
 
 Run from this worktree, without installing a frontend framework:
