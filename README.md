@@ -7665,6 +7665,24 @@ ten records / eight failures, not ten research trials. Historical research
 remains 178 configurations / 94 reviews, no champion, zero remaining
 optimization slots and the original W42 plan pending its complete gates.
 
+### October 23: original source gate remains blocked
+
+The [one actual scheduled attempt](research/workbench/evidence/research_daily_actual_run_20261023_v1.json)
+ran at 01:06:14-15 UTC for the newly completed October 22 session; the
+original first SPY request reported HTTP 403 and stopped later daily,
+Dollar and weekly work without retry, source changes or accepted data.
+[Offline preservation](research/workbench/evidence/research_daily_preservation_20261023_v1.json)
+checks seven profiles, fourteen anchors, 333 prior archive files, 69 imports,
+3,192 controls and 26 selection artifacts. Both original models remain
+one October 12 day with null Sharpe/CAGR; the missed October 21 observation
+is past its original deadline and is not backfilled.
+The [native readback](research/workbench/evidence/prospective_data_automation_v79.json)
+matches the unchanged binding/prompt and observed October 24 01:00:49 UTC as
+the next wakeup, not a source-success guarantee. Eleven actual operations /
+nine failures are not additional strategy trials: research remains
+178 configurations / 94 reviews, no champion, zero optimization slots,
+and the original W42 plan pending all its original gates.
+
 ### Local research dashboard
 
 Run from this worktree, without installing a frontend framework:
