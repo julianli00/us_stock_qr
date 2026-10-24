@@ -7683,6 +7683,26 @@ nine failures are not additional strategy trials: research remains
 178 configurations / 94 reviews, no champion, zero optimization slots,
 and the original W42 plan pending all its original gates.
 
+### October 24: original source gate remains blocked
+
+The [one actual scheduled attempt](research/workbench/evidence/research_daily_actual_run_20261024_v1.json)
+ran at 01:05:37-38 UTC for the newly completed October 23 session; the
+original first SPY request again reported HTTP 403. Later daily, Dollar and
+weekly work did not start; no retry, source change, backfill or accepted
+observation followed.
+[Offline preservation](research/workbench/evidence/research_daily_preservation_20261024_v1.json)
+verifies seven profiles, fourteen anchors, 334 prior archive files, 69 imports,
+3,192 controls and 26 selection artifacts. Both original models remain
+one October 12 day with null Sharpe/CAGR; the missed October 22 observation
+is past its original deadline and is not backfilled.
+The [native readback](research/workbench/evidence/prospective_data_automation_v80.json)
+matches the unchanged binding/prompt and observed October 25 01:00:20 UTC as
+the next wakeup, not a source-success guarantee. Twelve actual operations /
+ten failures are not new strategy trials: research remains 178 configurations /
+94 reviews, no champion and zero optimization slots. The original W42 plan
+remains pending, not rolled forward or executed after the daily failure.
+The October 24 dividend time gate does not permit retrying terminal VIG/SDY sources.
+
 ### Local research dashboard
 
 Run from this worktree, without installing a frontend framework:
