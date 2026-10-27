@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_channel_regimes_20261027_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "prior_completed_configurations": 182,
+  "prior_new_lane_registered_candidates": 4,
+  "prior_new_lane_completed_configurations": 4,
+  "prior_journal_sequence": 47,
+  "prior_journal_head_sha256": "c0001df2d730df1d92824c1cd4b55a032818b0c478e6b76ba5712432a43b3239",
+  "new_economic_factor_definitions": 0,
+  "minimum_economic_factor_families": 3,
+  "entry_prior_observations": 63,
+  "exit_prior_observations": 21,
+  "gold_trend_observations": 200,
+  "common_warmup_observations": 253,
+  "cash_reserve": 0.02,
+  "candidate_count_in_this_study": 2,
+  "study_size_is_a_total_research_quota": false,
+  "candidates": [
+    {"id": "equity_channel63x21_goldtrend200_v1", "gold_rule": "sma200"},
+    {"id": "equity_channel63x21_goldchannel63x21_v1", "gold_rule": "channel63x21"}
+  ],
+  "methodology": {
+    "hypothesis": "Separate the evidence needed to enter risk from the evidence needed to abandon it. A new trailing-quarter closing high admits risk; a new trailing-month closing low removes it. Between these events, retain the previous eligibility state instead of repeatedly crossing one moving-average threshold or retaining an expired monthly commitment.",
+    "measured_motivation": "The saved commitment accounts first breached 15% drawdown on 2020-03-09 while their prior-close raw 200-observation equity signal was still on. Later March losses and the 2022 month-end path also retained stocks after that raw signal was off. An exit veto based only on the same slow source therefore does not address both measured mechanisms. This is descriptive exposed-history evidence, not a counterfactual performance result.",
+    "fixed_horizons": "63 and 21 are one quarter and one month under the existing 252-session annual convention. Freeze one pair of barriers, not a moving-average, channel-horizon, exit-buffer or holding-period search. These are engineering choices, not statistically estimated optimal horizons.",
+    "equity_indicator": "Reuse the immutable untraded signal index of one-half SOXX and one-eighth each MTUM, VLUE, QUAL and USMV daily fund returns. It is not a free tradable account or a new factor family. No new stock ranking or altered equity composition.",
+    "state": "For each complete observed close, compare its level strictly above the maximum of the preceding 63 levels to set eligibility on, or strictly below the minimum of the preceding 21 levels to set eligibility off. Both barriers exclude the current close. Otherwise preserve state, including equality. Before 63 preceding observations the state is undefined; at the first valid comparison initialize off unless the entry event occurs. Continue this state through the prehistory; never reset it at a formal account window.",
+    "scope_comparison": "Both candidates use the same equity channel. Candidate A retains the previous strict GLD-above-current-200-observation-mean defense. Candidate B applies the same independently maintained channel state to GLD. Gold state updates even while equities are eligible. This pair changes defense eligibility only; it is not two channel-parameter alternatives.",
+    "allocation": "If equity is eligible, allocate the entire 98% target invested budget to the unchanged five-fund composition. Otherwise put 98% in GLD if its declared eligibility rule passes, or actual BIL if not. Keep 2% target zero-interest idle cash. All first 252 target rows are undefined to preserve the established common warmup; no missing-data cash defaults.",
+    "execution": "Reuse the immutable equity-first funded executor, daily 0.025 actual-holdings trade band, original one-pending-request rule without overwrite, next-open base and extra-session stress delays, original costs, RF, initial USD10000 drawdown peak and four full formal paths. A close-based risk exit cannot undo that close's loss or a queued request.",
+    "prior_art": "Inspected the existing daily moving-average, 200-observation component trend, 63/126/252 monthly relative-trend, commitment averaging, actual-weight bands and ratcheted wealth-floor studies. This is a fixed stateful price-channel hypothesis, not a retuned moving-average threshold, variance cap, CPPI multiplier, calendar exception or another commitment horizon.",
+    "adaptive_selection": "Selected after 182 completed configurations and the saved eight-path commitment-risk diagnosis. All evaluation history is exposed and overlaps prior search. Registration does not restore an independent holdout; preserve both failures and complete trial counts.",
+    "limitations": "Breakouts can arrive late, fail repeatedly, miss rebounds, hold concentrated sector risk, and lose through gaps, delays or gold declines. No continuous drawdown insurance, guaranteed cost reduction, guaranteed benchmark outperformance or future profitability.",
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

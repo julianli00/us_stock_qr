@@ -237,6 +237,61 @@ turnover or single-path Sharpe numbers may be combined into an overall pass.
 The next question must address the remaining risk mechanism rather than
 searching more commitment horizons or claiming independent alpha.
 
+## Fixed stateful price-channel study
+
+The saved eight-path commitment diagnosis reconciles existing drawdown,
+calendar returns, fees and ticket counts without creating new accounts or
+strategy trials. All four ten-year commitment accounts first breach 15% on
+2020-03-09, when the previous close's raw 200-observation equity intent is
+still 98% stocks. Later losses also occur after that source is already off.
+Thus merely accelerating exits from the unchanged slow source cannot be
+claimed to address both mechanisms. These observations are descriptive,
+not counterfactual returns or asset-level PnL attribution.
+
+[`config/channel-regimes-v1.json`](config/channel-regimes-v1.json) freezes a
+different state machine: enter strictly above the preceding 63 observed
+closing levels, exit strictly below the preceding 21, and otherwise retain
+state. Both barriers exclude the current close; equality retains state.
+The first valid comparison initializes off unless an entry occurs.
+State runs through genuine prehistory, without a reset at either formal
+account start. The original 253-observation common target warmup remains.
+Quarter/month horizons are fixed engineering choices, not fitted optima.
+
+Both hypotheses use the original SOXX/four-style equity composition and
+equity-first 98% budget. One retains the strict 200-observation GLD trend
+defense; the other uses an independent gold channel, updated even while
+stocks are eligible. Ineligible defense goes to actual BIL. The comparison
+changes gold eligibility, not the channel horizons. The funded executor,
+actual-holdings band, pending-order discipline, costs, delays, RF and all
+four acceptance paths remain unchanged.
+
+The [actual packet](evidence/channel_regimes_20261027_registration_v1.json)
+records registrations at 2026-10-27 19:51:47 UTC before preparation of both
+2,553-session target matrices. A separate sequential price oracle agrees
+exactly, and eight prefix checks preserve every earlier target. This is
+causal preparation, not a return result. At registration there are six SSD
+registrations, four completed trials, two pending and 182 combined completed
+configurations. No account is run before actual sanitized publication.
+
+The separate `us_quant.ssd_channel_research_v1` driver reuses immutable
+journal/receipt helpers and the original funded executor without modifying
+old runners or their globals. Publication independently verifies the new
+packet, original dependencies and prior cohort dependencies. All new code,
+rules, inputs, pre-registration checks and diagnostic context are frozen.
+After actual publication, use the actual commit, never a placeholder:
+
+```bash
+"$SSD_WORKBENCH/.venv/bin/python" -I -B -m us_quant.ssd_channel_research_v1 \
+  evaluate --commit "$PUBLISHED_COMMIT"
+"$SSD_WORKBENCH/.venv/bin/python" -I -B -m us_quant.ssd_channel_research_v1 publish-result
+```
+
+Completed accounts must be recovered, not replayed. This choice follows
+182 exposed trials, so registration is not independent validation. Channel
+breakouts can whipsaw, miss rebounds, retain sector concentration and lose
+through gaps, delays or gold declines. No drawdown floor, cost reduction,
+benchmark outperformance or future profitability is guaranteed.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,

@@ -1,0 +1,906 @@
+{
+  "candidate_accounts_or_metrics_computed": false,
+  "created_at": "2026-10-27T19:51:48.503596+00:00",
+  "entries": [
+    {
+      "candidate_id": "equity_channel63x21_goldtrend200_v1",
+      "registered_at": "2026-10-27T19:51:47.703360+00:00",
+      "registered_event_sha256": "39351c9dfe8405d2f5d9da20b6ccab7d0f6129a82535b377ea03fb5698e86193",
+      "specification": {
+        "candidate": {
+          "gold_rule": "sma200",
+          "id": "equity_channel63x21_goldtrend200_v1"
+        },
+        "frozen": {
+          "account_namespace": "reports/ssd-continuous-research-v1/equity-first-20261027-v1",
+          "account_namespace_reuses_immutable_execution_not_original_candidate_ids": true,
+          "benchmark_artifacts": [
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/QQQ-10y-base-bt.csv",
+              "sha256": "37283e57b73bad8b1b19fd0d159eab51765cdd998f49507f87251d77213058c7"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/QQQ-10y-base.csv",
+              "sha256": "097e3305385e2893bb57ec1faf597b43df38e798876fccbf886266195a61c388"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/QQQ-10y-base.json",
+              "sha256": "f7ea6339aa8938e4d16dae0c565beb3d83d7f081a1b69afb5e72b5928a37e232"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/QQQ-10y-stress-bt.csv",
+              "sha256": "24c0648b63c71dbbbacdac05da2a28d1a1a905ca2ff437ca61cbe4adaa2c5e58"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/QQQ-10y-stress.csv",
+              "sha256": "7b3ec1383a3b425de621bddbad5608a8478c1fd49eab6377e99a1ccf33b0d1e3"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/QQQ-10y-stress.json",
+              "sha256": "e1063dc0c80a2b1754e1a7646a4e1335b393bdb2c04831ce73708f28ea497164"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/QQQ-5y-base-bt.csv",
+              "sha256": "eeb18e007790724974eaafacfc22bc9559f5f2183217d249890845d06293144e"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/QQQ-5y-base.csv",
+              "sha256": "5a35017936ce07f4adceb5b15407eac0bd94d682edb46c05c1a2e09cedec17f8"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/QQQ-5y-base.json",
+              "sha256": "e7caea55e871ad18b55f19236ea5840286e073c9882350d0ac2bb8d833665a2b"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/QQQ-5y-stress-bt.csv",
+              "sha256": "52b9268f015dc291ba2eac4a5b6633a66bdd913ffa643a674ec28b9e2b7cf88b"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/QQQ-5y-stress.csv",
+              "sha256": "5eeff8c3cb8cc834a153ecee249295bc7a2105ecbc3ede91cc06c68b493b3c49"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/QQQ-5y-stress.json",
+              "sha256": "480320539c9c11e6e1fc6f46b8f8b5c2436767ef06f8b1b500c8a47db6b7efb3"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/SPY-10y-base-bt.csv",
+              "sha256": "f852a4f898b5c0a55cfbe0f2497691bc728a02daf77341e4f537ad62885735d7"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/SPY-10y-base.csv",
+              "sha256": "fddffb0bcc8e9056decca6af5194c1a494efd371f2522a0248c22236ca1c7e83"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/SPY-10y-base.json",
+              "sha256": "843f6a0cc0168c84e42cb44dd80fec07dc7a198d42018a96cbd711875e9bd01a"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/SPY-10y-stress-bt.csv",
+              "sha256": "1e8c57f3a9eac5fbb18afa7e23c2c41c4d0651d300a8779b69f9e015dd4cdadc"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/SPY-10y-stress.csv",
+              "sha256": "ad6902604bf17dfc51a284137eafa24c3577758b84c1ea76486f36735350dd23"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/SPY-10y-stress.json",
+              "sha256": "f20713c7fa0f57a7fa420083a5cc417b1d613f88ccfda91f290bf9eeae5f5f93"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/SPY-5y-base-bt.csv",
+              "sha256": "bdcdcaab24920990645a2d7421951026b86de4aa73f0d912c49374f9bb61933e"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/SPY-5y-base.csv",
+              "sha256": "4f54049d37ab73e587cb59dbb830c42a93170d77a31759999ba6952d6d2592a1"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/SPY-5y-base.json",
+              "sha256": "226238a38ec86815806980ae64dee46ed5af90c69b797438c9d06d84c8c591eb"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/SPY-5y-stress-bt.csv",
+              "sha256": "1abc888a502576cbf1c5228f5ec56cded3ddb1289198368279abca6b97515309"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/SPY-5y-stress.csv",
+              "sha256": "96754b61cb578c9f425a8f75f4a2ae3b1fc98cf779daf97342375539f3713479"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/SPY-5y-stress.json",
+              "sha256": "f7bb2a2816b2b10636936f98348b0cbc682c7466de1acb34e1dc8d62ad8cdb04"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/admission.json",
+              "sha256": "d233035837a887e98a86aea3e6f3aaa52407762ab4db81bba75086e7130c7f4f"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/results.json",
+              "sha256": "0a392072933e8f3aee9f67c53780fe7cea3b266229565b04c8408f2085a1faa5"
+            }
+          ],
+          "channel_inputs_are_original_admitted_prices": true,
+          "code": [
+            {
+              "path": "src/us_quant/ssd_research_v1.py",
+              "sha256": "c71f7e6765a7465778b4075c55c62dd1237670e3e82cbd09de08fc4db1def7cf"
+            },
+            {
+              "path": "src/us_quant/equity_first_regimes_v1.py",
+              "sha256": "9e4ec3c94085b61624f6b6b3e21f687a39738fc353a1e784147b68fb6163fa1f"
+            },
+            {
+              "path": "src/us_quant/dual_benchmark_v1.py",
+              "sha256": "9dcf1f6b1fed6933a6e17204b5d31affbbb849b562bcc629dbf388180d6759fd"
+            },
+            {
+              "path": "src/us_quant/cash_funded_accounting_v2.py",
+              "sha256": "e7efd7a9a87178d556320693bdfd389eef6a21cae70c36dd77c4325b6607d2af"
+            },
+            {
+              "path": "src/us_quant/backtest.py",
+              "sha256": "ba99627330a40f74ecce4daf096ea8a530d7598820c836e16f4f3996bcfeff6c"
+            },
+            {
+              "path": "src/us_quant/bt_audit.py",
+              "sha256": "3050d2a65c974f2a8c3651f13e236ceb6ba8bb5db3540cc7a966743697e8b28e"
+            },
+            {
+              "path": "src/us_quant/metrics.py",
+              "sha256": "12f76af88d99885904d428a1df4a01f348ebe5a7dfcbdbc08c37a9d3d4f046e8"
+            },
+            {
+              "path": "src/us_quant/data.py",
+              "sha256": "1761cd365ded1ac4eea48492dc502b0100b04568feded90fb9aa79b9454ffd0a"
+            },
+            {
+              "path": "src/us_quant/storage.py",
+              "sha256": "e424d764392491b654e55756566418153bec8104ae64dd15447076315c84a367"
+            },
+            {
+              "path": "src/us_quant/calendar.py",
+              "sha256": "04fdabc739de0a30284527715b80348321652fa2b7a66567b1232987289edf02"
+            },
+            {
+              "path": "src/us_quant/dual_horizon.py",
+              "sha256": "38fb924e30901cf58647163c6c5bb530ff96c5e03947acd8b61111665088ee7b"
+            },
+            {
+              "path": "src/us_quant/factor_validation.py",
+              "sha256": "e94470ded16b59d52910a80ba05cfcfa24189f36d80ec6fa11b120bd5b1b2d54"
+            },
+            {
+              "path": "src/us_quant/candidate_receipts.py",
+              "sha256": "6de80c7ddc234893e99746ce11d6d46b9275b7fb9adeccd93424751029576bdc"
+            },
+            {
+              "path": "src/us_quant/semiconductor_trend_transfer.py",
+              "sha256": "51f6a867a5f24da23d0d2c3890e7c94772edfe2754c3e0765386d83ce2e7a636"
+            },
+            {
+              "path": "src/us_quant/multifactor_stability.py",
+              "sha256": "05423115c9171a20f0c870e2556b4f25f787df737da4b1f87da5f5fffe3ae7b9"
+            },
+            {
+              "path": "src/us_quant/portfolio_refinement.py",
+              "sha256": "f43b4d6955f4601701317753c9d95ddbd4c3175c5f68a6f9a68dd32b9272a948"
+            },
+            {
+              "path": "src/us_quant/volatility_term_risk.py",
+              "sha256": "ad2c75386c86c1e1e12491563b6a12d5e38daa0d082d0f0e805edcb9cc027176"
+            },
+            {
+              "path": "src/us_quant/research_program.py",
+              "sha256": "8b2beb58656c076f986f7817ab3619a54b1582fc132beb9bb94951b9b73bb901"
+            },
+            {
+              "path": "src/us_quant/research_weekly.py",
+              "sha256": "44474846476005524d73516ad66e6aa93466dcb63850dd33f6124943135665d8"
+            },
+            {
+              "path": "src/us_quant/commitment_duration_v1.py",
+              "sha256": "4ef9512323126d89b245b3d6ca698573918cbfaa7fc5c25eb27194ad73a4ca70"
+            },
+            {
+              "path": "src/us_quant/ssd_commitment_research_v1.py",
+              "sha256": "6c3bc62d2036eed6162610ecbe0cfbbd2c3155c1499370d16a7f6124ebb73b16"
+            },
+            {
+              "path": "tests/test_commitment_duration_v1.py",
+              "sha256": "ee3f785e28a6de670cb6126e566951b35fca9a15fa32d6529f99563a4ac5ca5d"
+            },
+            {
+              "path": "tests/test_ssd_commitment_research_v1.py",
+              "sha256": "7f6bd444e805922571a400b160d56091529927b2326209260ff443950cfdb2b7"
+            },
+            {
+              "path": "src/us_quant/channel_regimes_v1.py",
+              "sha256": "88f4479032af3dac70a3ffd2cb48fd3766629bf775315a5c3ab007a697bf8b11"
+            },
+            {
+              "path": "src/us_quant/ssd_channel_research_v1.py",
+              "sha256": "b0bb57f4ae11b2272313a47127b999bb41c54b06920c275448805459ab2a626b"
+            },
+            {
+              "path": "tests/test_channel_regimes_v1.py",
+              "sha256": "2e9c3b5f124951fd56cda705a4ce85c6320613e2697cedaeb99975aa8411def1"
+            },
+            {
+              "path": "tests/test_ssd_channel_research_v1.py",
+              "sha256": "1ac80ded17617fab720d635f87d49849b9675c83dde94810c93b46e676f3c178"
+            }
+          ],
+          "inherited_source_target_reference_is_lineage_not_channel_input": true,
+          "legacy": {
+            "engine_sha256": "a4be8219834c412e0c1e311180dc9ce12c5b0d60b32670a9edd4906278a21c05",
+            "fixed_snapshot_completed_configurations": 178,
+            "fixed_snapshot_recurring_reviews": 94,
+            "fixed_snapshot_registered_versions": 96,
+            "fixed_snapshot_terminal_technical_versions": 2,
+            "ledger_sha256": "ed2c075d0819e1ff8bb2d6920910128e0dd2ed4be46f920fef575129d64c9317",
+            "new_factor_definitions": 0,
+            "old_records_reclassified_or_written": false,
+            "used_actual_registered_factors": [
+              {
+                "family": "momentum",
+                "id": "price_momentum",
+                "registered_at": "2026-10-10T08:30:08.095812+00:00",
+                "semantic_sha256": "6201dcadb21c245859dfe4dcf6cb53bf874ab1d4dc4e2b03784e0331e03657a6"
+              },
+              {
+                "family": "value",
+                "id": "value_exposure",
+                "registered_at": "2026-10-10T08:30:08.095812+00:00",
+                "semantic_sha256": "d27074b79e7ad8e46b54dc54562b257312d7bd057f9ce47a85b5cb6fc0560d8a"
+              },
+              {
+                "family": "earnings_quality",
+                "id": "quality_exposure",
+                "registered_at": "2026-10-10T08:30:08.095812+00:00",
+                "semantic_sha256": "015349e8efde8548a99ac414ee274427b79656862513343e4834209319757283"
+              },
+              {
+                "family": "low_volatility",
+                "id": "low_volatility_exposure",
+                "registered_at": "2026-10-10T08:30:08.095812+00:00",
+                "semantic_sha256": "a2d4149b722788ca072c792a8c205a6e8536f78cc6df2411f892f7c24c1b0c1e"
+              }
+            ]
+          },
+          "market": {
+            "close": {
+              "path": "data/sector-growth-prepared-20261011/close.csv",
+              "sha256": "762f7f258684062be17f3f7f91e28b6df1071fdaf2c60fcd69d107932ae12944"
+            },
+            "open": {
+              "path": "data/sector-growth-prepared-20261011/open.csv",
+              "sha256": "f0aa7bf3f417f71343b8901f17803d9cf35e0eddd0d06c61878ab6ea7ea5f568"
+            },
+            "raw_close": {
+              "path": "data/sector-growth-prepared-20261011/raw_close.csv",
+              "sha256": "1d1c39f25326d14a69c9f875e428bb2303b54f823716a5800622f5e24d5783d9"
+            },
+            "risk_free": {
+              "path": "data/sector-growth-prepared-20261011/risk_free.csv",
+              "sha256": "af36e3deb9bf0685553617f6614eacefcd2282b76c0af81404f04669e9f5eef3"
+            },
+            "volume": {
+              "path": "data/sector-growth-prepared-20261011/volume.csv",
+              "sha256": "bf5686211d0f1191b951498d9b1a74c087571fa05adb7aed541104bda6af2a4a"
+            }
+          },
+          "order_authority": false,
+          "package_versions": {
+            "bt": "1.3.0",
+            "exchange-calendars": "4.13.2",
+            "ffn": "1.3.0",
+            "numpy": "2.2.6",
+            "pandas": "2.3.3",
+            "scipy": "1.15.3"
+          },
+          "policies": [
+            {
+              "path": "config/equity-first-regimes-v1.json",
+              "sha256": "7e168b7bac093f9c58a7d9a228ff49d6674de96168e238f54638132bc9dd193f"
+            },
+            {
+              "path": "config/dual-benchmark-v1.json",
+              "sha256": "1b5b2572089ffa53746b01e72ff8303e00d6b5e5e3f815844f93834d0521e469"
+            },
+            {
+              "path": "config/portfolio-refinement.json",
+              "sha256": "ddb4a82bd3cb17e7bdbe4cd3bb8446f89babefd4ae86a3fdeb973f2458e9e1ec"
+            },
+            {
+              "path": "config/research-program.json",
+              "sha256": "c1bb4bfc9209233f1590d3808f515250ae428fc5ad881da49d4c1e6462f29ebc"
+            },
+            {
+              "path": "config/volatility-term-risk.json",
+              "sha256": "bc0327b59de212739e2888a545d6b35d9626ee1e599e6a1d29a3fec1d950e89b"
+            },
+            {
+              "path": "config/commitment-duration-v1.json",
+              "sha256": "f8e889fb237d2eca50e03707e85a06b680c1cfef626f6d6e69076a6db030aed2"
+            },
+            {
+              "path": "config/channel-regimes-v1.json",
+              "sha256": "d11d0c32975def1932e578f217596e5d9091c63a8020cbef56718cab2418e7db"
+            }
+          ],
+          "policy": {
+            "path": "config/channel-regimes-v1.json",
+            "sha256": "d11d0c32975def1932e578f217596e5d9091c63a8020cbef56718cab2418e7db"
+          },
+          "prior_completed_configurations": 182,
+          "prior_evidence": [
+            {
+              "path": "evidence/equity_first_20261027_results_v1.json",
+              "sha256": "c493fcbd4ab19a6d6b5589c9ab90cab2f090b2c8e370f7fa47c3238587fa76b1"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/equity-first-20261027-v1/saved-account-diagnostic-v1.json",
+              "sha256": "cf97ecb4b608f201f1a8067b7f71673d7d67fe061940d980b9134615e5a3c17f"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/equity-first-20261027-v1/saved-holdings-pnl-bridge-v1.json",
+              "sha256": "e90dcc4348893043ba4137a5527e15db30402dc5de55a3ed0e656b540a29d262"
+            },
+            {
+              "path": "evidence/commitment_duration_20261027_registration_v1.json",
+              "sha256": "aa8e921853348db0286307bb726296955240ca8402d900573aadff5c888a8217"
+            },
+            {
+              "path": "evidence/commitment_duration_20261027_results_v1.json",
+              "sha256": "539ec87d74996baa3f64e9dcc844ad9847b1c869597573a93d7fa718bbe98a8a"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/commitment-duration-20261027-v1/saved-risk-diagnostic-v1.py",
+              "sha256": "a44250bee5958f572f50ef14a771bb2204467ba751e2b604cdd5d607d1d15196"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/commitment-duration-20261027-v1/saved-risk-diagnostic-v1-intent.json",
+              "sha256": "bd80832055c3d9aa41749d4ba8a7265012321baa2468421c0951dbeed89179df"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/commitment-duration-20261027-v1/saved-risk-diagnostic-v1.json",
+              "sha256": "27a7975f9a69a03f774a8a9216fb62279a6b3ea30292acbf5da14a7b8b4132b9"
+            }
+          ],
+          "prior_journal_head_sha256": "c0001df2d730df1d92824c1cd4b55a032818b0c478e6b76ba5712432a43b3239",
+          "prior_journal_sequence": 47,
+          "protocol": {
+            "path": "config/dual-benchmark-v1.json",
+            "sha256": "1b5b2572089ffa53746b01e72ff8303e00d6b5e5e3f815844f93834d0521e469"
+          },
+          "python_version": [
+            3,
+            12,
+            9
+          ],
+          "source": {
+            "candidate_id": "equity_first_trend200_band025_v1",
+            "packet": {
+              "path": "evidence/equity_first_20261027_registration_v1.json",
+              "sha256": "5e7f3882b019b1ddd5f7b93aca8609b8ce1e2fd83b4b3f54eb25d7d80d0fe3b3"
+            },
+            "proof": {
+              "path": "data/ssd-equity-first-20261027-v1/equity_first_trend200_band025_v1/proof.json",
+              "sha256": "7dc2db673f74863268d0ea59d0399286274fb2dea94a7c16a6a72e38d9df8f53"
+            },
+            "registered_event_sha256": "333df5a6e550ff626c1ce4431d3f21e6ab6030135d1f8b8396a73f0128e2a333",
+            "source_signal_recomputed": false,
+            "target_proof_event_sha256": "e7308cc1b9c77e4d991ba066e48032265f6359c54cffea4f3e8e1db0a6d516a7",
+            "targets": {
+              "path": "data/ssd-equity-first-20261027-v1/equity_first_trend200_band025_v1/targets.csv",
+              "sha256": "28ad092f29eb605462ae88b4a7c25ddfc606c37ef37a9a4af9a584a895891aa3"
+            }
+          },
+          "study_id": "ssd_channel_regimes_20261027_v1",
+          "validation_evidence": [
+            {
+              "path": "reports/ssd-continuous-research-v1/commitment-offline-tests-v1.xml",
+              "sha256": "650897077cf92fd25b237da324ca873646704244f1c23ca08f15df4cca1ecb9a"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/commitment-offline-tests-v1.log",
+              "sha256": "33a63637996f4626a3e6a05d0fdc7f6bfd177712b6271c78e9ae777c081df561"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/channel-offline-tests-v1.xml",
+              "sha256": "012e138263c3ea2c73025dfc2a357f9fd50212c398e5d29f4b20731ee67163a8"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/channel-offline-tests-v1.log",
+              "sha256": "3b89482f2927cd0bee82f753d4aedd44aa290dd805238728fc9fc813ed85b50c"
+            }
+          ],
+          "volatility_sources": [
+            {
+              "path": "data/volatility-term-source-20261010/manifest.json",
+              "sha256": "7dfbc2854f15c77b8316b401b798b0a9ffb9edbefce07fdc022102af2e5daedd"
+            },
+            {
+              "path": "data/volatility-term-source-20261010/VIX.csv",
+              "sha256": "51ea1e59bfeaf400f6816300c39145df5e3fb437e7c60bdb8ca2178f8c96f436"
+            },
+            {
+              "path": "data/volatility-term-source-20261010/VIX3M.csv",
+              "sha256": "f706a0f3b2adb442676514682cabf47556c43a6d465498a7d6da463cc3361281"
+            }
+          ]
+        }
+      },
+      "target_proof": {
+        "candidate_accounts_or_metrics_computed": false,
+        "defined_target_sessions": 2553,
+        "proof": {
+          "path": "data/ssd-channel-regimes-20261027-v1/equity_channel63x21_goldtrend200_v1/proof.json",
+          "sha256": "680c330000d3b65d7474cdc71fe844a2c59e083fd4db139726b0bd9503abe814"
+        },
+        "registered_event_sha256": "39351c9dfe8405d2f5d9da20b6ccab7d0f6129a82535b377ea03fb5698e86193",
+        "targets": {
+          "path": "data/ssd-channel-regimes-20261027-v1/equity_channel63x21_goldtrend200_v1/targets.csv",
+          "sha256": "8476f51fb3838fc13698af5120131e3a0eb776176e754bcce688cad32d0d0fec"
+        }
+      },
+      "target_proof_at": "2026-10-27T19:51:48.464192+00:00",
+      "target_proof_event_sha256": "2cee6a58ab26b4b661e040a744f01d999a1f73e294819f169e83f25cd2bb4e9e"
+    },
+    {
+      "candidate_id": "equity_channel63x21_goldchannel63x21_v1",
+      "registered_at": "2026-10-27T19:51:47.733119+00:00",
+      "registered_event_sha256": "90782c3804dabd03de5535c8e50022e603b28f2283f8e99450e577b0375e9331",
+      "specification": {
+        "candidate": {
+          "gold_rule": "channel63x21",
+          "id": "equity_channel63x21_goldchannel63x21_v1"
+        },
+        "frozen": {
+          "account_namespace": "reports/ssd-continuous-research-v1/equity-first-20261027-v1",
+          "account_namespace_reuses_immutable_execution_not_original_candidate_ids": true,
+          "benchmark_artifacts": [
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/QQQ-10y-base-bt.csv",
+              "sha256": "37283e57b73bad8b1b19fd0d159eab51765cdd998f49507f87251d77213058c7"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/QQQ-10y-base.csv",
+              "sha256": "097e3305385e2893bb57ec1faf597b43df38e798876fccbf886266195a61c388"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/QQQ-10y-base.json",
+              "sha256": "f7ea6339aa8938e4d16dae0c565beb3d83d7f081a1b69afb5e72b5928a37e232"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/QQQ-10y-stress-bt.csv",
+              "sha256": "24c0648b63c71dbbbacdac05da2a28d1a1a905ca2ff437ca61cbe4adaa2c5e58"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/QQQ-10y-stress.csv",
+              "sha256": "7b3ec1383a3b425de621bddbad5608a8478c1fd49eab6377e99a1ccf33b0d1e3"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/QQQ-10y-stress.json",
+              "sha256": "e1063dc0c80a2b1754e1a7646a4e1335b393bdb2c04831ce73708f28ea497164"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/QQQ-5y-base-bt.csv",
+              "sha256": "eeb18e007790724974eaafacfc22bc9559f5f2183217d249890845d06293144e"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/QQQ-5y-base.csv",
+              "sha256": "5a35017936ce07f4adceb5b15407eac0bd94d682edb46c05c1a2e09cedec17f8"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/QQQ-5y-base.json",
+              "sha256": "e7caea55e871ad18b55f19236ea5840286e073c9882350d0ac2bb8d833665a2b"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/QQQ-5y-stress-bt.csv",
+              "sha256": "52b9268f015dc291ba2eac4a5b6633a66bdd913ffa643a674ec28b9e2b7cf88b"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/QQQ-5y-stress.csv",
+              "sha256": "5eeff8c3cb8cc834a153ecee249295bc7a2105ecbc3ede91cc06c68b493b3c49"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/QQQ-5y-stress.json",
+              "sha256": "480320539c9c11e6e1fc6f46b8f8b5c2436767ef06f8b1b500c8a47db6b7efb3"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/SPY-10y-base-bt.csv",
+              "sha256": "f852a4f898b5c0a55cfbe0f2497691bc728a02daf77341e4f537ad62885735d7"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/SPY-10y-base.csv",
+              "sha256": "fddffb0bcc8e9056decca6af5194c1a494efd371f2522a0248c22236ca1c7e83"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/SPY-10y-base.json",
+              "sha256": "843f6a0cc0168c84e42cb44dd80fec07dc7a198d42018a96cbd711875e9bd01a"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/SPY-10y-stress-bt.csv",
+              "sha256": "1e8c57f3a9eac5fbb18afa7e23c2c41c4d0651d300a8779b69f9e015dd4cdadc"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/SPY-10y-stress.csv",
+              "sha256": "ad6902604bf17dfc51a284137eafa24c3577758b84c1ea76486f36735350dd23"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/SPY-10y-stress.json",
+              "sha256": "f20713c7fa0f57a7fa420083a5cc417b1d613f88ccfda91f290bf9eeae5f5f93"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/SPY-5y-base-bt.csv",
+              "sha256": "bdcdcaab24920990645a2d7421951026b86de4aa73f0d912c49374f9bb61933e"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/SPY-5y-base.csv",
+              "sha256": "4f54049d37ab73e587cb59dbb830c42a93170d77a31759999ba6952d6d2592a1"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/SPY-5y-base.json",
+              "sha256": "226238a38ec86815806980ae64dee46ed5af90c69b797438c9d06d84c8c591eb"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/SPY-5y-stress-bt.csv",
+              "sha256": "1abc888a502576cbf1c5228f5ec56cded3ddb1289198368279abca6b97515309"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/SPY-5y-stress.csv",
+              "sha256": "96754b61cb578c9f425a8f75f4a2ae3b1fc98cf779daf97342375539f3713479"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/SPY-5y-stress.json",
+              "sha256": "f7bb2a2816b2b10636936f98348b0cbc682c7466de1acb34e1dc8d62ad8cdb04"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/admission.json",
+              "sha256": "d233035837a887e98a86aea3e6f3aaa52407762ab4db81bba75086e7130c7f4f"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/results.json",
+              "sha256": "0a392072933e8f3aee9f67c53780fe7cea3b266229565b04c8408f2085a1faa5"
+            }
+          ],
+          "channel_inputs_are_original_admitted_prices": true,
+          "code": [
+            {
+              "path": "src/us_quant/ssd_research_v1.py",
+              "sha256": "c71f7e6765a7465778b4075c55c62dd1237670e3e82cbd09de08fc4db1def7cf"
+            },
+            {
+              "path": "src/us_quant/equity_first_regimes_v1.py",
+              "sha256": "9e4ec3c94085b61624f6b6b3e21f687a39738fc353a1e784147b68fb6163fa1f"
+            },
+            {
+              "path": "src/us_quant/dual_benchmark_v1.py",
+              "sha256": "9dcf1f6b1fed6933a6e17204b5d31affbbb849b562bcc629dbf388180d6759fd"
+            },
+            {
+              "path": "src/us_quant/cash_funded_accounting_v2.py",
+              "sha256": "e7efd7a9a87178d556320693bdfd389eef6a21cae70c36dd77c4325b6607d2af"
+            },
+            {
+              "path": "src/us_quant/backtest.py",
+              "sha256": "ba99627330a40f74ecce4daf096ea8a530d7598820c836e16f4f3996bcfeff6c"
+            },
+            {
+              "path": "src/us_quant/bt_audit.py",
+              "sha256": "3050d2a65c974f2a8c3651f13e236ceb6ba8bb5db3540cc7a966743697e8b28e"
+            },
+            {
+              "path": "src/us_quant/metrics.py",
+              "sha256": "12f76af88d99885904d428a1df4a01f348ebe5a7dfcbdbc08c37a9d3d4f046e8"
+            },
+            {
+              "path": "src/us_quant/data.py",
+              "sha256": "1761cd365ded1ac4eea48492dc502b0100b04568feded90fb9aa79b9454ffd0a"
+            },
+            {
+              "path": "src/us_quant/storage.py",
+              "sha256": "e424d764392491b654e55756566418153bec8104ae64dd15447076315c84a367"
+            },
+            {
+              "path": "src/us_quant/calendar.py",
+              "sha256": "04fdabc739de0a30284527715b80348321652fa2b7a66567b1232987289edf02"
+            },
+            {
+              "path": "src/us_quant/dual_horizon.py",
+              "sha256": "38fb924e30901cf58647163c6c5bb530ff96c5e03947acd8b61111665088ee7b"
+            },
+            {
+              "path": "src/us_quant/factor_validation.py",
+              "sha256": "e94470ded16b59d52910a80ba05cfcfa24189f36d80ec6fa11b120bd5b1b2d54"
+            },
+            {
+              "path": "src/us_quant/candidate_receipts.py",
+              "sha256": "6de80c7ddc234893e99746ce11d6d46b9275b7fb9adeccd93424751029576bdc"
+            },
+            {
+              "path": "src/us_quant/semiconductor_trend_transfer.py",
+              "sha256": "51f6a867a5f24da23d0d2c3890e7c94772edfe2754c3e0765386d83ce2e7a636"
+            },
+            {
+              "path": "src/us_quant/multifactor_stability.py",
+              "sha256": "05423115c9171a20f0c870e2556b4f25f787df737da4b1f87da5f5fffe3ae7b9"
+            },
+            {
+              "path": "src/us_quant/portfolio_refinement.py",
+              "sha256": "f43b4d6955f4601701317753c9d95ddbd4c3175c5f68a6f9a68dd32b9272a948"
+            },
+            {
+              "path": "src/us_quant/volatility_term_risk.py",
+              "sha256": "ad2c75386c86c1e1e12491563b6a12d5e38daa0d082d0f0e805edcb9cc027176"
+            },
+            {
+              "path": "src/us_quant/research_program.py",
+              "sha256": "8b2beb58656c076f986f7817ab3619a54b1582fc132beb9bb94951b9b73bb901"
+            },
+            {
+              "path": "src/us_quant/research_weekly.py",
+              "sha256": "44474846476005524d73516ad66e6aa93466dcb63850dd33f6124943135665d8"
+            },
+            {
+              "path": "src/us_quant/commitment_duration_v1.py",
+              "sha256": "4ef9512323126d89b245b3d6ca698573918cbfaa7fc5c25eb27194ad73a4ca70"
+            },
+            {
+              "path": "src/us_quant/ssd_commitment_research_v1.py",
+              "sha256": "6c3bc62d2036eed6162610ecbe0cfbbd2c3155c1499370d16a7f6124ebb73b16"
+            },
+            {
+              "path": "tests/test_commitment_duration_v1.py",
+              "sha256": "ee3f785e28a6de670cb6126e566951b35fca9a15fa32d6529f99563a4ac5ca5d"
+            },
+            {
+              "path": "tests/test_ssd_commitment_research_v1.py",
+              "sha256": "7f6bd444e805922571a400b160d56091529927b2326209260ff443950cfdb2b7"
+            },
+            {
+              "path": "src/us_quant/channel_regimes_v1.py",
+              "sha256": "88f4479032af3dac70a3ffd2cb48fd3766629bf775315a5c3ab007a697bf8b11"
+            },
+            {
+              "path": "src/us_quant/ssd_channel_research_v1.py",
+              "sha256": "b0bb57f4ae11b2272313a47127b999bb41c54b06920c275448805459ab2a626b"
+            },
+            {
+              "path": "tests/test_channel_regimes_v1.py",
+              "sha256": "2e9c3b5f124951fd56cda705a4ce85c6320613e2697cedaeb99975aa8411def1"
+            },
+            {
+              "path": "tests/test_ssd_channel_research_v1.py",
+              "sha256": "1ac80ded17617fab720d635f87d49849b9675c83dde94810c93b46e676f3c178"
+            }
+          ],
+          "inherited_source_target_reference_is_lineage_not_channel_input": true,
+          "legacy": {
+            "engine_sha256": "a4be8219834c412e0c1e311180dc9ce12c5b0d60b32670a9edd4906278a21c05",
+            "fixed_snapshot_completed_configurations": 178,
+            "fixed_snapshot_recurring_reviews": 94,
+            "fixed_snapshot_registered_versions": 96,
+            "fixed_snapshot_terminal_technical_versions": 2,
+            "ledger_sha256": "ed2c075d0819e1ff8bb2d6920910128e0dd2ed4be46f920fef575129d64c9317",
+            "new_factor_definitions": 0,
+            "old_records_reclassified_or_written": false,
+            "used_actual_registered_factors": [
+              {
+                "family": "momentum",
+                "id": "price_momentum",
+                "registered_at": "2026-10-10T08:30:08.095812+00:00",
+                "semantic_sha256": "6201dcadb21c245859dfe4dcf6cb53bf874ab1d4dc4e2b03784e0331e03657a6"
+              },
+              {
+                "family": "value",
+                "id": "value_exposure",
+                "registered_at": "2026-10-10T08:30:08.095812+00:00",
+                "semantic_sha256": "d27074b79e7ad8e46b54dc54562b257312d7bd057f9ce47a85b5cb6fc0560d8a"
+              },
+              {
+                "family": "earnings_quality",
+                "id": "quality_exposure",
+                "registered_at": "2026-10-10T08:30:08.095812+00:00",
+                "semantic_sha256": "015349e8efde8548a99ac414ee274427b79656862513343e4834209319757283"
+              },
+              {
+                "family": "low_volatility",
+                "id": "low_volatility_exposure",
+                "registered_at": "2026-10-10T08:30:08.095812+00:00",
+                "semantic_sha256": "a2d4149b722788ca072c792a8c205a6e8536f78cc6df2411f892f7c24c1b0c1e"
+              }
+            ]
+          },
+          "market": {
+            "close": {
+              "path": "data/sector-growth-prepared-20261011/close.csv",
+              "sha256": "762f7f258684062be17f3f7f91e28b6df1071fdaf2c60fcd69d107932ae12944"
+            },
+            "open": {
+              "path": "data/sector-growth-prepared-20261011/open.csv",
+              "sha256": "f0aa7bf3f417f71343b8901f17803d9cf35e0eddd0d06c61878ab6ea7ea5f568"
+            },
+            "raw_close": {
+              "path": "data/sector-growth-prepared-20261011/raw_close.csv",
+              "sha256": "1d1c39f25326d14a69c9f875e428bb2303b54f823716a5800622f5e24d5783d9"
+            },
+            "risk_free": {
+              "path": "data/sector-growth-prepared-20261011/risk_free.csv",
+              "sha256": "af36e3deb9bf0685553617f6614eacefcd2282b76c0af81404f04669e9f5eef3"
+            },
+            "volume": {
+              "path": "data/sector-growth-prepared-20261011/volume.csv",
+              "sha256": "bf5686211d0f1191b951498d9b1a74c087571fa05adb7aed541104bda6af2a4a"
+            }
+          },
+          "order_authority": false,
+          "package_versions": {
+            "bt": "1.3.0",
+            "exchange-calendars": "4.13.2",
+            "ffn": "1.3.0",
+            "numpy": "2.2.6",
+            "pandas": "2.3.3",
+            "scipy": "1.15.3"
+          },
+          "policies": [
+            {
+              "path": "config/equity-first-regimes-v1.json",
+              "sha256": "7e168b7bac093f9c58a7d9a228ff49d6674de96168e238f54638132bc9dd193f"
+            },
+            {
+              "path": "config/dual-benchmark-v1.json",
+              "sha256": "1b5b2572089ffa53746b01e72ff8303e00d6b5e5e3f815844f93834d0521e469"
+            },
+            {
+              "path": "config/portfolio-refinement.json",
+              "sha256": "ddb4a82bd3cb17e7bdbe4cd3bb8446f89babefd4ae86a3fdeb973f2458e9e1ec"
+            },
+            {
+              "path": "config/research-program.json",
+              "sha256": "c1bb4bfc9209233f1590d3808f515250ae428fc5ad881da49d4c1e6462f29ebc"
+            },
+            {
+              "path": "config/volatility-term-risk.json",
+              "sha256": "bc0327b59de212739e2888a545d6b35d9626ee1e599e6a1d29a3fec1d950e89b"
+            },
+            {
+              "path": "config/commitment-duration-v1.json",
+              "sha256": "f8e889fb237d2eca50e03707e85a06b680c1cfef626f6d6e69076a6db030aed2"
+            },
+            {
+              "path": "config/channel-regimes-v1.json",
+              "sha256": "d11d0c32975def1932e578f217596e5d9091c63a8020cbef56718cab2418e7db"
+            }
+          ],
+          "policy": {
+            "path": "config/channel-regimes-v1.json",
+            "sha256": "d11d0c32975def1932e578f217596e5d9091c63a8020cbef56718cab2418e7db"
+          },
+          "prior_completed_configurations": 182,
+          "prior_evidence": [
+            {
+              "path": "evidence/equity_first_20261027_results_v1.json",
+              "sha256": "c493fcbd4ab19a6d6b5589c9ab90cab2f090b2c8e370f7fa47c3238587fa76b1"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/equity-first-20261027-v1/saved-account-diagnostic-v1.json",
+              "sha256": "cf97ecb4b608f201f1a8067b7f71673d7d67fe061940d980b9134615e5a3c17f"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/equity-first-20261027-v1/saved-holdings-pnl-bridge-v1.json",
+              "sha256": "e90dcc4348893043ba4137a5527e15db30402dc5de55a3ed0e656b540a29d262"
+            },
+            {
+              "path": "evidence/commitment_duration_20261027_registration_v1.json",
+              "sha256": "aa8e921853348db0286307bb726296955240ca8402d900573aadff5c888a8217"
+            },
+            {
+              "path": "evidence/commitment_duration_20261027_results_v1.json",
+              "sha256": "539ec87d74996baa3f64e9dcc844ad9847b1c869597573a93d7fa718bbe98a8a"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/commitment-duration-20261027-v1/saved-risk-diagnostic-v1.py",
+              "sha256": "a44250bee5958f572f50ef14a771bb2204467ba751e2b604cdd5d607d1d15196"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/commitment-duration-20261027-v1/saved-risk-diagnostic-v1-intent.json",
+              "sha256": "bd80832055c3d9aa41749d4ba8a7265012321baa2468421c0951dbeed89179df"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/commitment-duration-20261027-v1/saved-risk-diagnostic-v1.json",
+              "sha256": "27a7975f9a69a03f774a8a9216fb62279a6b3ea30292acbf5da14a7b8b4132b9"
+            }
+          ],
+          "prior_journal_head_sha256": "c0001df2d730df1d92824c1cd4b55a032818b0c478e6b76ba5712432a43b3239",
+          "prior_journal_sequence": 47,
+          "protocol": {
+            "path": "config/dual-benchmark-v1.json",
+            "sha256": "1b5b2572089ffa53746b01e72ff8303e00d6b5e5e3f815844f93834d0521e469"
+          },
+          "python_version": [
+            3,
+            12,
+            9
+          ],
+          "source": {
+            "candidate_id": "equity_first_trend200_band025_v1",
+            "packet": {
+              "path": "evidence/equity_first_20261027_registration_v1.json",
+              "sha256": "5e7f3882b019b1ddd5f7b93aca8609b8ce1e2fd83b4b3f54eb25d7d80d0fe3b3"
+            },
+            "proof": {
+              "path": "data/ssd-equity-first-20261027-v1/equity_first_trend200_band025_v1/proof.json",
+              "sha256": "7dc2db673f74863268d0ea59d0399286274fb2dea94a7c16a6a72e38d9df8f53"
+            },
+            "registered_event_sha256": "333df5a6e550ff626c1ce4431d3f21e6ab6030135d1f8b8396a73f0128e2a333",
+            "source_signal_recomputed": false,
+            "target_proof_event_sha256": "e7308cc1b9c77e4d991ba066e48032265f6359c54cffea4f3e8e1db0a6d516a7",
+            "targets": {
+              "path": "data/ssd-equity-first-20261027-v1/equity_first_trend200_band025_v1/targets.csv",
+              "sha256": "28ad092f29eb605462ae88b4a7c25ddfc606c37ef37a9a4af9a584a895891aa3"
+            }
+          },
+          "study_id": "ssd_channel_regimes_20261027_v1",
+          "validation_evidence": [
+            {
+              "path": "reports/ssd-continuous-research-v1/commitment-offline-tests-v1.xml",
+              "sha256": "650897077cf92fd25b237da324ca873646704244f1c23ca08f15df4cca1ecb9a"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/commitment-offline-tests-v1.log",
+              "sha256": "33a63637996f4626a3e6a05d0fdc7f6bfd177712b6271c78e9ae777c081df561"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/channel-offline-tests-v1.xml",
+              "sha256": "012e138263c3ea2c73025dfc2a357f9fd50212c398e5d29f4b20731ee67163a8"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/channel-offline-tests-v1.log",
+              "sha256": "3b89482f2927cd0bee82f753d4aedd44aa290dd805238728fc9fc813ed85b50c"
+            }
+          ],
+          "volatility_sources": [
+            {
+              "path": "data/volatility-term-source-20261010/manifest.json",
+              "sha256": "7dfbc2854f15c77b8316b401b798b0a9ffb9edbefce07fdc022102af2e5daedd"
+            },
+            {
+              "path": "data/volatility-term-source-20261010/VIX.csv",
+              "sha256": "51ea1e59bfeaf400f6816300c39145df5e3fb437e7c60bdb8ca2178f8c96f436"
+            },
+            {
+              "path": "data/volatility-term-source-20261010/VIX3M.csv",
+              "sha256": "f706a0f3b2adb442676514682cabf47556c43a6d465498a7d6da463cc3361281"
+            }
+          ]
+        }
+      },
+      "target_proof": {
+        "candidate_accounts_or_metrics_computed": false,
+        "defined_target_sessions": 2553,
+        "proof": {
+          "path": "data/ssd-channel-regimes-20261027-v1/equity_channel63x21_goldchannel63x21_v1/proof.json",
+          "sha256": "680c330000d3b65d7474cdc71fe844a2c59e083fd4db139726b0bd9503abe814"
+        },
+        "registered_event_sha256": "90782c3804dabd03de5535c8e50022e603b28f2283f8e99450e577b0375e9331",
+        "targets": {
+          "path": "data/ssd-channel-regimes-20261027-v1/equity_channel63x21_goldchannel63x21_v1/targets.csv",
+          "sha256": "477494388c5ec28ed79df1652e6937a81989c91b8c7c6cad4cfde3b5033cdee6"
+        }
+      },
+      "target_proof_at": "2026-10-27T19:51:48.502751+00:00",
+      "target_proof_event_sha256": "a72d964d8cd32880c5a3f1b6c7d24f9e117c68c849eeef7487618183cfda2550"
+    }
+  ],
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "new_registered_candidates": 2,
+  "order_authority": false,
+  "program_id": "ssd_continuous_research_v1",
+  "raw_inputs_and_target_matrices_remain_private": true,
+  "schema_version": 2,
+  "study_id": "ssd_channel_regimes_20261027_v1"
+}

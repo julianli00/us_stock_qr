@@ -63,6 +63,16 @@ also fail. The 21-slot law fails every Sharpe/drawdown path and misses ten-year
 QQQ. There are four completed/rejected new-lane hypotheses, 182 completed
 configurations across both lanes, and no qualified champion.
 
+The [third cohort registration](research/workbench/evidence/channel_regimes_20261027_registration_v1.json)
+occurred at 2026-10-27 19:51:47 UTC. Its fixed stateful price channel enters on a
+new prior-quarter closing high and exits on a new prior-month closing low.
+The pair compares the existing gold trend defense with an independently
+maintained gold channel, without a horizon search. Both 2,553-session target
+matrices match the separate sequential oracle and eight prefix checks.
+Six SSD hypotheses are registered, four completed/rejected and two pending;
+the completed total remains 182. No channel account or return result exists
+at registration, and publication must precede evaluation.
+
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
 
