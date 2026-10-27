@@ -136,3 +136,42 @@ No prospective observation or brokerage order was created. Diagnose saved
 evidence before choosing a distinct economic hypothesis; do not conceal these
 failures, replay finished accounts, or turn the failed cap into an unregistered
 parameter grid.
+
+## Independent IBKR price-history source boundary
+
+The prepared Gateway is authorized only for existing-entitlement market data,
+not account synchronization or orders. `ib_async` 2.1.0's high-level
+`IB.connectAsync(readonly=True)` still requests positions; the existing paper
+handshake also reads account identities. Neither path is used here.
+
+`us_quant.ibkr_market_history.MarketHistory` is a separate, single-use,
+loopback-only adapter. Its transport permits only the protocol handshake,
+start-API message 71, instrument identification 9, and bounded historical-price
+request 20. The initial source probe is restricted to SPY/QQQ, USD/SMART, daily
+three-month `TRADES` or `ADJUSTED_LAST`, regular hours and no live subscription.
+It cannot request snapshots, accounts, positions, executions, orders or order
+cancellation. Every actual send rechecks the accepted SSD runtime and deadline.
+
+Unsolicited managed-account frames are discarded before SDK decoding, logging
+or source capture. Readiness requires the actual negotiated protocol and
+request-ID acknowledgement, not dummy account identifiers or a fabricated SDK
+account-ready flag. It proves only the market-request handshake, not data
+entitlement or a paper/live account type. Provider errors retain numeric codes,
+not potentially identifying text, and fail the single attempt without retries.
+Malformed messages, source-persistence failures, disconnects and timeouts cannot
+be converted into empty successful datasets.
+
+The isolated synthetic-transport suite has 68 passing cases, including
+fragmented/coalesced private startup frames, forbidden outgoing operations,
+timeouts, deadline enforcement and output failures. This offline evidence is
+not proof that any real Gateway request or historical-data admission succeeded.
+Each actual probe still needs its own source-bound receipts and permitted raw
+responses, retained privately on SSD.
+
+[IBKR's historical-bar documentation](https://interactivebrokers.github.io/tws-api/historical_bars.html)
+distinguishes split-adjusted `TRADES` from split-and-dividend-adjusted
+`ADJUSTED_LAST`. A current-time request can include an unfinished daily bar;
+calendar, completed-session cutoff, actual coverage and adjustment behavior
+must be checked separately before admission. Do not silently substitute
+unadjusted prices, double-count dividends, replace registered inputs, infer
+ten-year coverage from a short probe, or backfill missed forward observations.
