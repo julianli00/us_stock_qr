@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_equity_first_regimes_20261027_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "data_scope": "factor_etf_portfolio",
+  "data_start": "2015-08-10",
+  "as_of": "2026-10-05",
+  "prior_completed_configurations": 178,
+  "prior_recurring_reviews": 94,
+  "prior_recurring_registered_versions": 96,
+  "prior_terminal_technical_versions": 2,
+  "minimum_economic_factor_families": 3,
+  "factor_ids": [
+    "price_momentum",
+    "value_exposure",
+    "quality_exposure",
+    "low_volatility_exposure"
+  ],
+  "factor_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "new_economic_factor_definitions": 0,
+  "candidate_count_in_this_frozen_pair": 2,
+  "pair_size_is_a_total_research_quota": false,
+  "capital_usd": 10000.0,
+  "cash_reserve": 0.02,
+  "commission_per_order": 1.0,
+  "weight_band": 0.025,
+  "equity_composition": {
+    "SOXX": 0.5,
+    "MTUM": 0.125,
+    "VLUE": 0.125,
+    "QUAL": 0.125,
+    "USMV": 0.125
+  },
+  "trend_observations": 200,
+  "variance_reference_observations": 252,
+  "common_warmup_observations": 253,
+  "candidates": [
+    {"id": "equity_first_trend200_band025_v1", "variance_cap": false},
+    {"id": "equity_first_vix_variance_band025_v1", "variance_cap": true}
+  ],
+  "methodology": {
+    "hypothesis": "The original permanently bounded equity/gold risk balance can structurally miss the newly measured full-capital QQQ hurdle. Test a different capital-deployment architecture, not another volatility-target or sector-share grid: invest the original four-style/SOXX composition when its existing long trend is positive, otherwise use independently trend-qualified gold or actual bills. Compare the same architecture with a fixed, causal option-variance exposure cap.",
+    "prior_art": "Reuse the unchanged semiconductor_trend_transfer.equity_signal, original half-SOXX/equal-four-style composition, 200-observation trend law, 2% target cash reserve, 0.025 actual-holdings trade band and funded accounting primitives. Do not edit the old monthly-only observed execution adapter to accept a new daily law.",
+    "equity_indicator": "The existing untraded index compounds contemporaneous observed returns with half SOXX and one-eighth of each actual style fund. It is an indicator, not a cost-free account, benchmark, tradable instrument or strategy performance series.",
+    "trend": "After complete observed daily closes, equity is eligible only when its index is strictly above its trailing 200 observed levels. Equality is risk-off. GLD independently needs its adjusted close strictly above its own trailing 200-close mean.",
+    "stock_budget": "If equity is eligible, candidate A assigns the entire 98% investable budget to the fixed equity composition. Candidate B assigns 98% times its variance scale. If equity is ineligible, both assign zero to stocks. There is no borrowed exposure, fixed 30%-70% equity floor, or permanent inverse-volatility gold budget.",
+    "variance_cap": "For B only, scale is min(1, median of squared VIX closes over exactly the previous 252 observed sessions, excluding the current session, divided by the current completed VIX close squared). All values must be actual finite positive observations. This is a risk-management adaptation, not a fitted coefficient, new factor family, variance-risk-premium estimate or exact risk forecast for SOXX/the style basket.",
+    "defense": "All investable weight not assigned to stocks goes to GLD if its own declared trend is positive, otherwise to actual BIL. Never renormalize unavailable stock slots or manufacture a safe default for missing data.",
+    "decision_clock": "Both candidates expose a fully specified desired target at every completed observed session after the common 253-observation warmup. ETF and official Cboe closes must already be known before a request is issued. Historical date alignment is not independent proof of intraday first publication. No same-close fills.",
+    "actual_holdings_band": "Initial capital issues one request. Thereafter compare the latest known target with actual closing holdings. Issue only if the maximum absolute weight difference is at least 0.025, using the original strict band primitive. Target cash may drift, but cash funding and gross exposure at most one remain mandatory.",
+    "pending_requests": "Do not issue an overlapping request while an earlier one is pending. Execute the previously issued target on its original next-session or extra-session opening date without cancellation or overwrite. After execution, the latest fully observed closing target can issue a new request. An unissued intermediate intent is never backdated into a fill.",
+    "execution": "Fresh USD10000 on each original 2512/1254-session path; 5bp and one-session delay in base, 20bp and two-session delay in stress, USD1 per actual model order, fractional cash-funded long-only units, zero interest on idle cash, actual BIL returns when held, no terminal liquidation.",
+    "causality_proof": "Compare the complete generated matrices with a separate sequential arithmetic oracle and prefix truncations before accounts. Freeze prices, original RF, VIX source bytes, policy, code and target proofs. No future labels, performance-based parameter fitting or hidden alternate configurations.",
+    "registration": "Register the real frozen hypothesis before real target preparation; preserve any technical preparation failure. Freeze target proof before publishing the explicit sanitized registration packet. Verify the actual configured remote feature-branch commit and frozen local bytes before any strategy accounts.",
+    "comparison_limits": "A versus B isolates this declared variance cap within the new architecture. Comparisons with old risk-parity studies change architecture and cadence together and are not isolated causal attribution. Existing families are highly correlated; sector concentration, gaps, whipsaws, gold risk, missed rebounds and transaction costs remain. No drawdown floor is guaranteed.",
+    "selection_limits": "All previous 178 completed configurations, 96 recurring versions including two terminal technical failures, prior diagnostics and both full benchmark windows are exposed. These two alternatives are adaptive retrospective research, not a new independent holdout. Preserve every new failure and all original statistical tests/limitations; do not combine passing metrics across models.",
+    "sources": [
+      "https://doi.org/10.3905/jwm.2007.674809",
+      "https://doi.org/10.1111/jofi.12513"
+    ],
+    "papers_are_motivation_not_exact_replications": true,
+    "daily_gvz_or_missing_data_substitution": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

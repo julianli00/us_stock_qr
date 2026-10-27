@@ -1,0 +1,258 @@
+{
+  "actual_completed_at": "2026-10-27T14:54:27.954141+00:00",
+  "benchmark_accounts": 8,
+  "created_at": "2026-10-27T16:41:12.350728+00:00",
+  "implementation": {
+    "path": "src/us_quant/dual_benchmark_v1.py",
+    "sha256": "9dcf1f6b1fed6933a6e17204b5d31affbbb849b562bcc629dbf388180d6759fd"
+  },
+  "interpretation": "All eight fixed full-capital net benchmark paths are references, not candidate or forward outcomes. The ten-year QQQ hurdle exceeds 21.1624% in base; 12% or 20% alone does not satisfy the joint criteria.",
+  "investment_objective_verified": false,
+  "new_strategy_evaluations": 0,
+  "order_authority": false,
+  "original_ledger_sha256_unchanged": "ed2c075d0819e1ff8bb2d6920910128e0dd2ed4be46f920fef575129d64c9317",
+  "paths": [
+    {
+      "execution": {
+        "annualized_two_sided_turnover": 0.09995371290258484,
+        "executed_notional_usd": 9994.00299850075,
+        "fixed_commission_usd": 1.0,
+        "initial_deployment_cost_usd": 5.997001499250375,
+        "model_order_count": 1,
+        "proportional_cost_usd": 4.997001499250374,
+        "rebalance_session_count": 1,
+        "total_cost_usd": 5.997001499250375,
+        "total_two_sided_turnover": 0.999400299850075
+      },
+      "independent_bt_max_equity_difference_usd": 6.548361852765083e-11,
+      "metrics": {
+        "cagr": 0.15461997933114158,
+        "end": "2026-10-05",
+        "max_drawdown": 0.33717275321253615,
+        "sessions": 2512,
+        "sharpe": 0.7558900902911697,
+        "start": "2016-10-06"
+      },
+      "scenario": "base",
+      "symbol": "SPY",
+      "years": 10
+    },
+    {
+      "execution": {
+        "annualized_two_sided_turnover": 0.09995371290258484,
+        "executed_notional_usd": 9994.00299850075,
+        "fixed_commission_usd": 1.0,
+        "initial_deployment_cost_usd": 5.997001499250375,
+        "model_order_count": 1,
+        "proportional_cost_usd": 4.997001499250374,
+        "rebalance_session_count": 1,
+        "total_cost_usd": 5.997001499250375,
+        "total_two_sided_turnover": 0.999400299850075
+      },
+      "independent_bt_max_equity_difference_usd": 1.1641532182693481e-10,
+      "metrics": {
+        "cagr": 0.21162424411271585,
+        "end": "2026-10-05",
+        "max_drawdown": 0.3511873156860126,
+        "sessions": 2512,
+        "sharpe": 0.857269031520643,
+        "start": "2016-10-06"
+      },
+      "scenario": "base",
+      "symbol": "QQQ",
+      "years": 10
+    },
+    {
+      "execution": {
+        "annualized_two_sided_turnover": 0.09980408159584446,
+        "executed_notional_usd": 9979.041916167665,
+        "fixed_commission_usd": 1.0,
+        "initial_deployment_cost_usd": 20.95808383233533,
+        "model_order_count": 1,
+        "proportional_cost_usd": 19.958083832335333,
+        "rebalance_session_count": 1,
+        "total_cost_usd": 20.95808383233533,
+        "total_two_sided_turnover": 0.9979041916167666
+      },
+      "independent_bt_max_equity_difference_usd": 1.4551915228366852e-11,
+      "metrics": {
+        "cagr": 0.1540563661391663,
+        "end": "2026-10-05",
+        "max_drawdown": 0.3371727532125357,
+        "sessions": 2512,
+        "sharpe": 0.7531241378409478,
+        "start": "2016-10-06"
+      },
+      "scenario": "stress",
+      "symbol": "SPY",
+      "years": 10
+    },
+    {
+      "execution": {
+        "annualized_two_sided_turnover": 0.09980408159584446,
+        "executed_notional_usd": 9979.041916167665,
+        "fixed_commission_usd": 1.0,
+        "initial_deployment_cost_usd": 20.95808383233533,
+        "model_order_count": 1,
+        "proportional_cost_usd": 19.958083832335333,
+        "rebalance_session_count": 1,
+        "total_cost_usd": 20.95808383233533,
+        "total_two_sided_turnover": 0.9979041916167666
+      },
+      "independent_bt_max_equity_difference_usd": 2.9103830456733704e-11,
+      "metrics": {
+        "cagr": 0.21123863499244466,
+        "end": "2026-10-05",
+        "max_drawdown": 0.3511873156860127,
+        "sessions": 2512,
+        "sharpe": 0.8558358213107367,
+        "start": "2016-10-06"
+      },
+      "scenario": "stress",
+      "symbol": "QQQ",
+      "years": 10
+    },
+    {
+      "execution": {
+        "annualized_two_sided_turnover": 0.19990742580516968,
+        "executed_notional_usd": 9994.00299850075,
+        "fixed_commission_usd": 1.0,
+        "initial_deployment_cost_usd": 5.997001499250375,
+        "model_order_count": 1,
+        "proportional_cost_usd": 4.997001499250374,
+        "rebalance_session_count": 1,
+        "total_cost_usd": 5.997001499250375,
+        "total_two_sided_turnover": 0.999400299850075
+      },
+      "independent_bt_max_equity_difference_usd": 1.8189894035458565e-11,
+      "metrics": {
+        "cagr": 0.14040855610470704,
+        "end": "2026-10-05",
+        "max_drawdown": 0.2449638371470314,
+        "sessions": 1254,
+        "sharpe": 0.6303911363155859,
+        "start": "2021-10-06"
+      },
+      "scenario": "base",
+      "symbol": "SPY",
+      "years": 5
+    },
+    {
+      "execution": {
+        "annualized_two_sided_turnover": 0.19990742580516968,
+        "executed_notional_usd": 9994.00299850075,
+        "fixed_commission_usd": 1.0,
+        "initial_deployment_cost_usd": 5.997001499250375,
+        "model_order_count": 1,
+        "proportional_cost_usd": 4.997001499250374,
+        "rebalance_session_count": 1,
+        "total_cost_usd": 5.997001499250375,
+        "total_two_sided_turnover": 0.999400299850075
+      },
+      "independent_bt_max_equity_difference_usd": 2.1827872842550278e-11,
+      "metrics": {
+        "cagr": 0.17073977309477484,
+        "end": "2026-10-05",
+        "max_drawdown": 0.35118731568601247,
+        "sessions": 1254,
+        "sharpe": 0.6364223116920383,
+        "start": "2021-10-06"
+      },
+      "scenario": "base",
+      "symbol": "QQQ",
+      "years": 5
+    },
+    {
+      "execution": {
+        "annualized_two_sided_turnover": 0.19960816319168892,
+        "executed_notional_usd": 9979.041916167667,
+        "fixed_commission_usd": 1.0,
+        "initial_deployment_cost_usd": 20.95808383233533,
+        "model_order_count": 1,
+        "proportional_cost_usd": 19.958083832335337,
+        "rebalance_session_count": 1,
+        "total_cost_usd": 20.95808383233533,
+        "total_two_sided_turnover": 0.9979041916167666
+      },
+      "independent_bt_max_equity_difference_usd": 3.637978807091713e-12,
+      "metrics": {
+        "cagr": 0.13528280366429257,
+        "end": "2026-10-05",
+        "max_drawdown": 0.24496383714703263,
+        "sessions": 1254,
+        "sharpe": 0.6043080883068317,
+        "start": "2021-10-06"
+      },
+      "scenario": "stress",
+      "symbol": "SPY",
+      "years": 5
+    },
+    {
+      "execution": {
+        "annualized_two_sided_turnover": 0.19960816319168892,
+        "executed_notional_usd": 9979.041916167665,
+        "fixed_commission_usd": 1.0,
+        "initial_deployment_cost_usd": 20.95808383233533,
+        "model_order_count": 1,
+        "proportional_cost_usd": 19.958083832335333,
+        "rebalance_session_count": 1,
+        "total_cost_usd": 20.95808383233533,
+        "total_two_sided_turnover": 0.9979041916167666
+      },
+      "independent_bt_max_equity_difference_usd": 7.275957614183426e-12,
+      "metrics": {
+        "cagr": 0.16470726646389644,
+        "end": "2026-10-05",
+        "max_drawdown": 0.351187315686012,
+        "sessions": 1254,
+        "sharpe": 0.614019793205987,
+        "start": "2021-10-06"
+      },
+      "scenario": "stress",
+      "symbol": "QQQ",
+      "years": 5
+    }
+  ],
+  "primary_issuer_identity_and_limits": {
+    "QQQ": {
+      "benchmark": "Nasdaq-100",
+      "issuer_reported_inception": null
+    },
+    "SPY": {
+      "benchmark": "S&P 500",
+      "issuer_reported_inception": "1993-01-22"
+    },
+    "complete_absence_of_internal_fund_derivatives_claimed": false,
+    "current_primary_objective_verified": true,
+    "full_historical_constituents_or_methodology_verified": false,
+    "primary_sources": {
+      "QQQ": {
+        "path": "data/dual-benchmark-identity-20261027/QQQ-issuer.html",
+        "retrieved_at": "2026-10-27T14:18:05.057337+00:00",
+        "sha256": "4a36377f6b52023a54acdf1866d1cc5bceec67963398b49a1261e297612ab920",
+        "url": "https://www.invesco.com/qqq-etf/en/about.html"
+      },
+      "SPY": {
+        "path": "data/dual-benchmark-identity-20261027/SPY-factsheet.pdf",
+        "retrieved_at": "2026-10-27T14:18:03.676831+00:00",
+        "sha256": "b4daa578ceb976dc6debab7e7b202ccf282f17d291fe31d9fe2240d4becbdcfa",
+        "url": "https://www.ssga.com/library-content/products/factsheets/etfs/us/factsheet-us-en-spy.pdf"
+      }
+    },
+    "qqq_factsheet_unavailable": "The advertised PDF URL returned a Country Splash HTML page. It is not PDF evidence and no country/access gate was bypassed. The independently obtained official QQQ product page establishes the current Nasdaq-100 objective; the issuer's inception date is not inferred."
+  },
+  "private_account_results": {
+    "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/results.json",
+    "sha256": "0a392072933e8f3aee9f67c53780fe7cea3b266229565b04c8408f2085a1faa5"
+  },
+  "private_source_admission": {
+    "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/admission.json",
+    "sha256": "d233035837a887e98a86aea3e6f3aaa52407762ab4db81bba75086e7130c7f4f"
+  },
+  "protocol": {
+    "path": "config/dual-benchmark-v1.json",
+    "sha256": "1b5b2572089ffa53746b01e72ff8303e00d6b5e5e3f815844f93834d0521e469"
+  },
+  "raw_documents_prices_and_daily_accounts_published": false,
+  "schema_version": 1
+}

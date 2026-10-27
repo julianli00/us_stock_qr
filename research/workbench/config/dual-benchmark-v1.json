@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "scope": "new_separately_registered_unleveraged_research",
+  "authorization_deadline_utc": "2026-10-31T15:59:00Z",
+  "configuration_count_limit_before_deadline": null,
+  "historical_reference": {
+    "completed_configurations": 178,
+    "reviews": 94,
+    "registered_versions_including_technical_failures": 96,
+    "ledger_event_sequence": 246,
+    "old_records_reclassified_or_reset": false,
+    "old_six_configuration_round_modified": false
+  },
+  "windows": [
+    {"years": 10, "start": "2016-10-06", "end": "2026-10-05", "sessions": 2512},
+    {"years": 5, "start": "2021-10-06", "end": "2026-10-05", "sessions": 1254}
+  ],
+  "accounts": {
+    "fresh_capital_usd_per_path": 10000.0,
+    "fractional_units": true,
+    "cash_funded": true,
+    "maximum_gross_exposure": 1.0,
+    "short_positions_allowed": false,
+    "borrowing_allowed": false,
+    "idle_cash_interest": 0.0,
+    "held_bill_etf_returns_are_not_idle_cash_interest": true,
+    "terminal_liquidation": false,
+    "accounting_engine": "cash_funded_noop_v2",
+    "scenarios": [
+      {"id": "base", "cost_bps_per_side": 5.0, "commission_usd_per_order": 1.0, "delay_sessions": 1},
+      {"id": "stress", "cost_bps_per_side": 20.0, "commission_usd_per_order": 1.0, "delay_sessions": 2}
+    ]
+  },
+  "benchmarks": {
+    "symbols": ["SPY", "QQQ"],
+    "interpretation": {
+      "SPY": "Actual unleveraged tradable S&P 500 ETF total-return proxy, not the price-only index.",
+      "QQQ": "Actual unleveraged tradable Nasdaq-100 ETF total-return proxy, not the price-only index."
+    },
+    "target_weight": 1.0,
+    "target_cash_reserve": 0.0,
+    "cash_funds_initial_cost_and_commission": true,
+    "signal_anchor": "previous observed XNYS session before the formal window start",
+    "execution": "One full-capital buy at the first formal-window open in base, and the next session open in stress, using the same delayed prior-session signal convention as strategy accounts.",
+    "holding": "Hold the acquired normalized fractional units through the final close; no recurring rebalance, fee-free synthetic purchase, or terminal liquidation.",
+    "prices": "Use source-verified adjusted open and close from the same frozen panel, preserving raw price and corporate-action provenance. Never add dividends a second time to adjusted total-return prices.",
+    "same_window_calendar_risk_free_and_initial_capital": true,
+    "same_scenario_costs_and_execution_delays": true,
+    "missing_source_evidence_blocks_qualification": true,
+    "benchmark_accounts_count_as_strategy_trials": false
+  },
+  "metrics": {
+    "implementation_reference": "us_quant.metrics.performance",
+    "net_returns": "Account close-to-close returns after actual execution slippage and fixed commissions, including the initial deployment cost.",
+    "risk_free": "Exactly the original frozen MarketData.risk_free series; do not reconstruct, rescale or silently replace it.",
+    "sharpe": "Mean daily net return minus aligned risk-free divided by its sample standard deviation (ddof=1), annualized by sqrt(252), with the original undefined-variance rules.",
+    "cagr": "Compound all net daily returns and annualize using 365.25 divided by calendar days from the previous XNYS session before the first return through the last return.",
+    "drawdown": "Include the initial USD10000 peak before the first return; use the complete net equity path.",
+    "undefined_or_nonfinite_metric_passes": false,
+    "independent_accounting_and_metrics_required": true
+  },
+  "hard_gates_per_path": {
+    "net_excess_sharpe_strictly_greater_than": 1.0,
+    "net_cagr_strictly_greater_than": 0.12,
+    "maximum_drawdown_at_most": 0.15,
+    "net_cagr_strictly_greater_than_same_cost_spy": true,
+    "net_cagr_strictly_greater_than_same_cost_qqq": true,
+    "stress_also_beats_base_cost_spy": true,
+    "all_four_paths_same_candidate_and_parameters": true
+  },
+  "preferences_not_replacement_gates": {
+    "preferred_net_cagr_strictly_greater_than": 0.15,
+    "ultimate_net_cagr_strictly_greater_than": 0.20,
+    "prefer_lower_actual_turnover_and_fees_among_otherwise_qualified_results": true,
+    "stress_vs_base_cost_qqq_is_additional_diagnostic_not_an_invented_hard_gate": true
+  },
+  "execution_disclosure": {
+    "numeric_turnover_cap": null,
+    "two_sided_turnover": "Absolute executed purchase plus sale notional divided by pre-trade NAV, summed over actual executions; initial deployment included and separately identifiable.",
+    "annualized_turnover": "Total two-sided turnover divided by the same elapsed calendar-year clock used for CAGR.",
+    "required_fields": [
+      "total_two_sided_turnover",
+      "annualized_two_sided_turnover",
+      "executed_notional_usd",
+      "model_order_count",
+      "rebalance_session_count",
+      "total_cost_usd",
+      "fixed_commission_usd",
+      "proportional_cost_usd",
+      "initial_deployment_cost_usd"
+    ],
+    "model_orders_are_broker_orders": false
+  },
+  "registration_and_preservation": {
+    "freeze_protocol_and_benchmark_definition_before_new_outcomes": true,
+    "verify_source_calendar_coverage_adjustment_and_provenance_before_admission": true,
+    "freeze_candidate_rationale_parameters_code_inputs_and_rules_before_outcomes": true,
+    "actual_registration_and_sanitized_publication_before_candidate_accounts": true,
+    "version_new_accounts_and_criteria_separately": true,
+    "preserve_all_failures_partials_and_multiple_test_counts": true,
+    "original_ledger_and_policies_remain_historical": true,
+    "old_source_files_or_observation_timestamps_rewritten": false,
+    "historical_overlap_and_adaptive_selection_disclosed": true,
+    "historical_pass_is_independent_forward_proof": false,
+    "minimum_real_forward_sessions_for_reported_sharpe_or_cagr": 63,
+    "backfill_missed_forward_observations": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

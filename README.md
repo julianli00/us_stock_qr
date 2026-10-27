@@ -10,7 +10,8 @@ not authority to trade or to modify user-maintained holdings.
 | --- | --- | --- |
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
-| [Isolated workbench](research/workbench/README.md) | 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment, different objectives and assumptions; forward record remains paused |
+| [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
+| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completed configurations preserved; eight new reference accounts; two new hypotheses registered before candidate accounts | Separate versioned net-CAGR/SPY/QQQ criteria; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -22,6 +23,28 @@ The [incumbent source slice](research/incumbent/README.md) includes the pure
 Top30 algorithm, its original 699-stock configuration and cost engine, and the
 distinct original early scanner. This is runnable strategy code, not only
 descriptive metadata; the full legacy search/holdings application is not merged.
+
+## Current SSD research authorization
+
+The accepted SSD research stage runs through **2026-10-31 23:59 Beijing time**
+(`2026-10-31T15:59:00Z`) without a configuration-count ceiling or ordinary
+per-batch approval. The old exhausted six-configuration round remains historical;
+it is not a limit on this separately authorized stage. Earlier instructions and
+results below retain their original scope, not the current acceptance criteria.
+No messaging, trading, holdings synchronization or production scheduler is
+activated by this research authorization.
+
+The [new frozen protocol](research/workbench/config/dual-benchmark-v1.json)
+requires every original ten/five-year base/stress path to have net Sharpe above
+1, net CAGR above 12%, drawdown at most 15%, and beat full-capital matched-cost
+SPY **and QQQ**, retaining the original extra stress-versus-base-SPY gate.
+The [eight measured reference accounts](research/workbench/evidence/dual_benchmark_20261027_v1.json)
+are benchmarks, not additional strategy trials. The
+[first two actual registrations](research/workbench/evidence/equity_first_20261027_registration_v1.json)
+occurred at 2026-10-27 16:30 UTC, already October 28 in Beijing. Their source-bound
+target proofs precede any candidate account; actual remote publication remains
+a required fence. Current counts and the distinction from old quota records are
+in [`docs/research_progress.json`](docs/research_progress.json).
 
 ## Safe daily research report (Python 3.9+)
 
@@ -139,7 +162,7 @@ and a growth/gold diversification control. Definitions and paper attribution
 are in `research/workbench/config/factor-research.json`; these ETF adaptations
 are not claims to replicate the original papers' stock-level results.
 
-The latest explicit primary objective is net excess-return Sharpe above one
+At the October 7 stage, the primary objective was net excess-return Sharpe above one
 and higher net CAGR than SPY, using the same rule in both original ten-year and
 five-year windows and in both base and stressed execution. The earlier 20%
 CAGR and 15% drawdown thresholds remain separately reported. QLD variants use

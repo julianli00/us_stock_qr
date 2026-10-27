@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "updated_on": "2026-10-24",
-  "phase": "bounded_six_configuration_round_completed_all_rejected_goal_unmet",
-  "active_research_focus": "source_verified_multifactor_research_and_independent_data",
+  "updated_on": "2026-10-28",
+  "phase": "ssd_dual_benchmark_first_pair_registered_waiting_publication",
+  "active_research_focus": "source_verified_equity_first_pair_under_versioned_dual_benchmark_net_cagr_gates",
   "research_dashboard": {
     "server": "src/us_quant/research_dashboard.py",
     "frontend": "web/research/index.html",
@@ -11,6 +11,46 @@
     "refresh_downloads_market_data": false,
     "current_leader_is_qualified_champion": false,
     "legacy_protocols_and_technical_failures_preserved": true,
+    "order_authority": false
+  },
+  "ssd_continuous_research_v1": {
+    "status": "first_pair_registered_no_candidate_accounts_yet",
+    "deadline_beijing": "2026-10-31T23:59:00+08:00",
+    "deadline_utc": "2026-10-31T15:59:00Z",
+    "configuration_count_cap_before_deadline": null,
+    "ordinary_per_batch_approval_required": false,
+    "protocol": "research/workbench/config/dual-benchmark-v1.json",
+    "protocol_sha256": "1b5b2572089ffa53746b01e72ff8303e00d6b5e5e3f815844f93834d0521e469",
+    "documentation": "research/workbench/DUAL_BENCHMARK_V1.md",
+    "benchmark_evidence": "research/workbench/evidence/dual_benchmark_20261027_v1.json",
+    "first_pair_registration": "research/workbench/evidence/equity_first_20261027_registration_v1.json",
+    "first_pair_packet_created_at": "2026-10-27T16:30:24.951013+00:00",
+    "new_benchmark_accounts": 8,
+    "benchmarks_count_as_strategy_trials": false,
+    "new_registered_candidates": 2,
+    "new_target_proofs": 2,
+    "new_completed_strategy_configurations": 0,
+    "new_reviews": 0,
+    "new_technical_failures": 0,
+    "legacy_completed_configurations": 178,
+    "legacy_reviews": 94,
+    "legacy_registered_versions": 96,
+    "legacy_terminal_technical_versions": 2,
+    "legacy_six_slot_record_unchanged": true,
+    "original_records_reclassified": false,
+    "original_forward_models_changed": false,
+    "all_four_original_paths_required": true,
+    "minimum_net_cagr_strict": 0.12,
+    "minimum_net_sharpe_strict": 1.0,
+    "maximum_drawdown": 0.15,
+    "matched_cost_full_capital_benchmarks": ["SPY", "QQQ"],
+    "original_stress_vs_base_spy_gate_retained": true,
+    "numeric_turnover_cap": null,
+    "actual_remote_publication_required_before_accounts": true,
+    "new_broker_api_requests": 0,
+    "default_ibkr_connection_prohibited_pending_market_only_proof": true,
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
     "order_authority": false
   },
   "completed": [
@@ -278,7 +318,10 @@
     "October21 one original scheduled primary01:07:24-25UTC for genuinely new completed October20 again failed on first SPYHTTP403. No later daily/Dollar/weekly/retry/source change/backfill or accepted observation. Independent calendar/receipts/preservation retain7profiles14anchors331oldarchivefiles69imports3192controls26selection,models1October12day/null and unchanged ledger-engine-head. Missed October19 now also exceeds its original deadline,not backfilled. Nativev77 unchanged prompt/binding/next observed October22T01:01:38Z;true history9/fail7,research178/94/96/no champion/zero optimization slots and W42original4/2 pending unchanged.",
     "October22 one original scheduled primary01:09:06-07UTC for genuinely new completed October21 again failed at first SPYHTTP403. No later daily/Dollar/weekly/retry/source-environment change/backfill or accepted observation. Independent calendar/saved-receipt preservation verifies7profiles14anchors332oldarchivefiles69imports3192controls26selection and original one-day/null models. Missed October20 now also exceeds its acquisition deadline,not backfilled. Nativev78 unchanged binding/prompt,next observed October23T01:01:43Z;actual operations10/fail8 are not research trials,178/94/96/no champion/zero slots and W42original4/2 pending unchanged.",
     "October23 one original scheduled primary01:06:14-15UTC for genuinely new completed October22 failed at first SPYHTTP403;no later daily/Dollar/weekly/retry/source change/backfill or accepted observation. Independent calendar/saved receipts preserve7profiles14anchors333oldarchivefiles69imports3192controls26selection and original one-day/null models,missed October21 not backfilled. Nativev79 unchanged binding/prompt,next observed October24T01:00:49Z;actual operations11/fail9 do not add research trials,178/94/96/no champion/zero slots and W42original4/2 pending unchanged.",
-    "October24 one original scheduled primary01:05:37-38UTC for genuinely new completed October23 again failed at first SPYHTTP403;no later daily/Dollar/weekly/retry/source change/backfill or accepted observation. Independent calendar/saved receipts preserve7profiles14anchors334oldarchivefiles69imports3192controls26selection and original one-day/null models,missed October22 not backfilled. Nativev80 unchanged binding/prompt,next observed October25T01:00:20Z;actual operations12/fail10 are not new strategy trials,178/94/96/no champion/zero slots and W42original4/2 pending unchanged. October24 dividend time eligibility does not authorize terminal VIG-SDY acquisition."
+    "October24 one original scheduled primary01:05:37-38UTC for genuinely new completed October23 again failed at first SPYHTTP403;no later daily/Dollar/weekly/retry/source change/backfill or accepted observation. Independent calendar/saved receipts preserve7profiles14anchors334oldarchivefiles69imports3192controls26selection and original one-day/null models,missed October22 not backfilled. Nativev80 unchanged binding/prompt,next observed October25T01:00:20Z;actual operations12/fail10 are not new strategy trials,178/94/96/no champion/zero slots and W42original4/2 pending unchanged. October24 dividend time eligibility does not authorize terminal VIG-SDY acquisition.",
+    "Accepted the separate SSD runtime and activated research through October31 23:59Beijing without a configuration-count ceiling. Preserved all original records and exhausted historical six-slot round; restored the localhost read-only dashboard and bound only the SSD session continuation. Timer configuration is not proof of scheduled execution.",
+    "Completed eight source-bound full-capital SPY/QQQ benchmark accounts under a separately frozen net-CAGR protocol, with matched costs/timing, independent accounting and no new strategy trials. Ten-year QQQ net CAGR is21.1624%base/21.1239%stress; original four-path Sharpe/DD/cost/RF/initial-peak gates remain.",
+    "Actually registered two equity-first hypotheses at2026-10-27T16:30:24UTC, alreadyOctober28Beijing, before real target preparation. Both2553-session matrices passed independent sequential/prefix proofs. New journal has2registrations/2proofs/0candidate accounts/0reviews; actual remote publication still required. Four existing economic families,0new definitions,0broker calls and no investment-goal claim."
   ],
   "completed_zh": [
     "已保留可运行的原Top30算法、成本引擎和独立早期扫描器，并隔离导入52配置研究工作台。",
@@ -545,9 +588,24 @@
     "Oct21对真实新completed Oct20的一次原定时primary01:07:24-25UTC仍首SPYHTTP403，无后续/Dollar/weekly/重试/换源回填或接受新观察。独立日历与凭证保全7实验14anchors331旧归档文件69进口3192对照26统计及原ledger-engine-head，模型各1Oct12日/null；漏Oct19也已过原deadline不得补。原生v77指令绑定未改/观测下次Oct22T01:01:38Z；真实history9条/7失败，研究178/94/96无冠军/优化额度0及W42原4/2待完整准入保持。",
     "Oct22对真实新completed Oct21的一次原定时primary01:09:06-07UTC仍首SPYHTTP403，无后续/Dollar/weekly/重试/改source环境/回填或新接受观察。独立日历与保存凭证保全7实验14anchors332旧归档文件69进口3192对照26统计，原模型各1Oct12日/null；漏Oct20也已过采集deadline不可补。原生v78指令绑定未改/观测下次Oct23T01:01:43Z；实际operation10条/8失败不是10次研究试验，178/94/96无冠军/优化额度0及W42原4/2待完整准入保持。",
     "Oct23对真实新completed Oct22的一次原定时primary01:06:14-15UTC首SPYHTTP403，无后续/Dollar/weekly/重试/改source/回填或接受新观察；独立日历与真实凭证保全7实验14anchors333旧归档文件69进口3192对照26统计及原一日/null模型，漏Oct21不补。原生v79绑定指令未改/观测下次Oct24T01:00:49Z；实际operation11条/9失败不新增研究试验，178/94/96无冠军/优化额度0和W42原4/2待全门保持。",
-    "Oct24对真实新completed Oct23的一次原定时primary01:05:37-38UTC仍首SPYHTTP403，无后续/Dollar/weekly/重试/改source/回填或接受新观察；独立日历与保存凭证保全7实验14anchors334旧归档文件69进口3192对照26统计及原一日/null模型，漏Oct22不补。原生v80指令绑定未改/观测下次Oct25T01:00:20Z；实际operation12条/10失败不是新增策略试验，178/94/96无冠军/优化额度0和W42原4/2待完整准入保持。Oct24分红时间已到不授权重试VIG-SDY终止来源。"
+    "Oct24对真实新completed Oct23的一次原定时primary01:05:37-38UTC仍首SPYHTTP403，无后续/Dollar/weekly/重试/改source/回填或接受新观察；独立日历与保存凭证保全7实验14anchors334旧归档文件69进口3192对照26统计及原一日/null模型，漏Oct22不补。原生v80指令绑定未改/观测下次Oct25T01:00:20Z；实际operation12条/10失败不是新增策略试验，178/94/96无冠军/优化额度0和W42原4/2待完整准入保持。Oct24分红时间已到不授权重试VIG-SDY终止来源。",
+    "独立SSD运行环境已验收，持续研究授权至北京时间Oct31 23:59，不设配置次数上限；原记录及已耗尽的历史六配置轮次不改写。仅恢复本机只读dashboard及本SSD会话续接；绑定成功不代表定时研究已经送达或执行。",
+    "按新冻结净CAGR口径完成SPY/QQQ全额持有、匹配费用和时序的8条基准账户，独立核算一致，不计为新策略试验。十年QQQ净CAGR为base21.1624%/stress21.1239%；原四路径Sharpe/DD/成本/RF/初始峰值门全部保持。",
+    "2026-10-27T16:30:24UTC（北京时间Oct28）真实登记两项equity-first假设，随后各2553日完整目标矩阵通过独立顺序与前缀证明；新账本2登记/2目标证明/0候选账户/0审阅，尚需真实远端发布。沿用4经济家族、无新定义/券商调用，不宣称投资目标达成。"
   ],
   "next": [
+    "Publish the frozen SSD-v1 dual-benchmark contract, aggregate reference evidence and actual first-pair registration on the authorized feature branch before any candidate accounts. Keep private raw documents, prices, targets and daily accounts unpublished.",
+    "Evaluate each registered candidate on all four original fresh-capital paths with independent accounting, simultaneous SPY/QQQ comparisons and actual turnover/fee disclosure. Preserve every rejection or technical failure; no cross-configuration metric mixing or forward-success claim.",
+    "Continue economically motivated, preregistered independent small batches without ordinary per-batch approval or a configuration-count ceiling until2026-10-31T15:59Z. Use one computation; at cutoff preserve partial work, clear only the SSD session timer and confirm absence.",
+    "Keep old source refusals, VIG/SDY terminal429 and prospective/PIT gates. IBKR remains market-data-only authorization pending a proved safe startup path; default readonly connection is prohibited. A source blocker does not block independent admitted-history research."
+  ],
+  "next_zh": [
+    "先在获授权feature branch真实发布SSD-v1双基准口径、脱敏基准证据及首对真实登记，再启动候选账户；原始文档、行情、目标矩阵和逐日账户均保持私有。",
+    "每项候选独立完成原四条fresh资金路径，核验独立账务、SPY/QQQ同时超额及实际换手/费用；保留全部拒绝或技术失败，不拼配置指标、不冒充独立前瞻。",
+    "持续开展有经济理由、事前冻结的独立小批次，无普通逐批确认或配置次数上限，截止2026-10-31T15:59Z；单计算job，届时保存未完状态、只清除SSD会话timer并确认不存在。",
+    "原拒绝来源、VIG/SDY终止429和前瞻/PIT门保持；IBKR仅授权行情历史，须先证明安全market-only启动，禁止默认readonly连接。单源阻断不停止已有准入历史的独立研究。"
+  ],
+  "legacy_next_before_ssd_activation": [
     "The six-configuration round is completed and reviewed:6of6used/0remaining, all rejected. Stop same-round trials and parameter scans; a new round needs new explicit budget. Preserve178outcomes/94reviews/96versions and all failures; old76selection excludes the last18reviews. Original one-day models, four-path gates, costs, capital, W42 eligibility and VIG-SDY terminal stop remain unchanged.",
     "Retain the one real October24 attempt for new completed October23 and all earlier failures/preflights. First SPYHTTP403 stopped later/Dollar/weekly;no retry,source/environment/validator/clock change or missed October13-22 NYSE observation backfill. Previous preflight18 remains history. Source blocked/models1day-null/W42four-two full gates/exhausted optimization budget unchanged;next observed October25 is not a success guarantee. October24 dividend time eligibility does not authorize bypassing terminal VIG-SDY source controls.",
     "RetainOct13actualfirst-stage failure/partialsourcebytes:MTUMOct12nativeclose-adjclose null,0completeobservations/modeldays,Dollarnotstarted. Do notfill/drop/replaceprices,retrythisfailedinvocation orrunlaterstages despite thegate. Preserveactualclock;laterhistorycannotbackfillanysessionnotcapturedbeforeitsnextopen. Continueonlyoriginalauthorizedpipelines withverifiedactualnewinputs,no modelreplacement/W42earlyregistration orgoal-successclaim.",
@@ -620,7 +678,7 @@
     "Compare identical windows, costs and Sharpe definitions before comparing strategies.",
     "Preregister bounded hypotheses and preserve failures and the paused forward record."
   ],
-  "next_zh": [
+  "legacy_next_zh_before_ssd_activation": [
     "六配置轮次已完成并复盘：6of6已用/剩0、全部拒绝，停止同轮新试验及参数扫描，新轮须新明确预算。保留178结果/94审阅/96版本及全部失败，原76选择统计不含最后18审阅；原一日模型、四路径门槛/费用资本、W42资格和VIG-SDY终止保持。",
     "保留Oct24对真实新completed Oct23的一次原流程及全部旧失败预检；首SPYHTTP403停后续/Dollar/weekly，不重试改source环境validator时钟，不补漏Oct13-22实际NYSE观察。previous预检18只作历史；源blocked/原模型1日-null/W42原4/2完整门/耗尽优化预算不变，观测下次Oct25不是成功保证；Oct24分红时间已到也不授权绕VIG-SDY来源终止门。",
     "保留Oct13首阶段真实失败及部分源字节：MTUMOct12原close/adjclose缺失，无完整新观察或模型日，Dollar未启动。不得填补/删价/替代价格、重复这次失败调用或越门执行后续；保真实时钟，未在次开盘前实际采到的日期不能事后用历史回填。后续只按原授权流程与实际新输入继续，不换模型/提前登记W42/声称目标成功。",
