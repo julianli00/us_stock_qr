@@ -130,6 +130,81 @@ class ProjectionTests(unittest.TestCase):
         node["first_pair_results_sha256"] = hashlib.sha256((root / node["first_pair_results"]).read_bytes()).hexdigest()
         (root / "docs/research_progress.json").write_text(json.dumps(progress))
 
+    def change_ssd_catalog(self, root: Path, mutate) -> None:
+        progress = json.loads((root / "docs/research_progress.json").read_text())
+        node = progress["ssd_continuous_research_v1"]["factor_catalog_extension"]
+        self.change(root, node["evidence"], mutate)
+        node["sha256"] = hashlib.sha256((root / node["evidence"]).read_bytes()).hexdigest()
+        (root / "docs/research_progress.json").write_text(json.dumps(progress))
+
+    def test_ssd_catalog_is_separate_from_original_definitions_and_strategy_counts(self) -> None:
+        ssd = self.current["ssd_research"]
+        catalog = ssd["factor_catalog_extension"]
+        self.assertEqual(self.current["summary"]["definitions"], 6)
+        self.assertEqual(self.current["summary"]["economic_families"], 5)
+        self.assertEqual(self.current["queued"]["definitions"], 2)
+        self.assertEqual(catalog["new_definition_count"], 2)
+        self.assertEqual(catalog["combined_definition_count"], 8)
+        self.assertEqual(catalog["combined_family_count"], 7)
+        self.assertEqual(catalog["strategy_evaluations_by_admission"], 0)
+        self.assertEqual(catalog["source_sessions"], 2805)
+        self.assertEqual(catalog["preserved_asset_count"], 12)
+        self.assertEqual(catalog["appended_symbols"], ["IJR", "PKW"])
+        added = {row["id"] for row in catalog["new_factors"]}
+        self.assertEqual(added, {"size_exposure_ijr_v1", "net_buyback_exposure_pkw_v1"})
+        for factor in self.current["factors"]:
+            if factor["id"] in added:
+                self.assertEqual(factor["status"], "queued")
+                self.assertEqual(factor["strategy_count"], 0)
+                self.assertEqual(factor["ssd_registration"]["evidence"], catalog["evidence"])
+            else:
+                self.assertNotIn("ssd_registration", factor)
+        root = self.fixture()
+        self.change(root, "docs/research_progress.json",
+                    lambda value: value["ssd_continuous_research_v1"].pop("factor_catalog_extension"))
+        without = build_snapshot(root)
+        self.assertNotIn("factor_catalog_extension", without["ssd_research"])
+        for key in ("registered", "completed", "reviews", "pending", "technical_failures",
+                    "account_paths", "qualified", "total_legacy_plus_ssd_completed"):
+            self.assertEqual(without["ssd_research"][key], ssd[key])
+        self.assertEqual(without["summary"], self.current["summary"])
+
+    def test_ssd_catalog_hash_change_is_not_silently_trusted(self) -> None:
+        root = self.fixture()
+        node = json.loads((root / "docs/research_progress.json").read_text())
+        reference = node["ssd_continuous_research_v1"]["factor_catalog_extension"]
+        self.change(root, reference["evidence"], lambda value: value.update(new_definition_count=3))
+        with self.assertRaisesRegex(DashboardError, "frozen_policy_hash_mismatch"):
+            build_snapshot(root)
+
+    def test_ssd_catalog_cannot_claim_changed_identity_clock_scope_or_authority(self) -> None:
+        mutations = [
+            lambda value: value.update(new_definition_count=3),
+            lambda value: value.update(combined_definition_count=9),
+            lambda value: value.update(combined_family_count=8),
+            lambda value: value.update(new_strategy_evaluations=1),
+            lambda value: value.update(new_strategy_evaluations=False),
+            lambda value: value.update(schema_version=True),
+            lambda value: value.update(independent_alpha_or_forward_proof=True),
+            lambda value: value.update(original_ledger_written_or_migrated=True),
+            lambda value: value.update(order_authority=True),
+            lambda value: value.update(week="2026-W42"),
+            lambda value: value["new_factors"][0]["factor"].update(family="momentum"),
+            lambda value: value["new_factors"][0].update(semantic_sha256="0" * 64),
+            lambda value: value["new_factors"][0].update(registered_at="2026-10-10T00:00:00Z"),
+            lambda value: value["legacy"].update(original_cycle_for_new_week_exists=True),
+            lambda value: value["admission"].update(checked_at="2026-10-10T21:31:12Z"),
+            lambda value: value["admission"].update(original_price_arrays_exactly_preserved=False),
+            lambda value: value["admission"].update(original_risk_free_reference_and_array_preserved=1),
+            lambda value: value.pop("registered_before_new_candidate_selection"),
+        ]
+        for index, mutate in enumerate(mutations):
+            with self.subTest(case=index):
+                root = self.fixture()
+                self.change_ssd_catalog(root, mutate)
+                with self.assertRaisesRegex(DashboardError, "ssd_catalog_contract_mismatch"):
+                    build_snapshot(root)
+
     def test_ssd_counts_benchmarks_and_legacy_quota_are_separate(self) -> None:
         ssd = self.current["ssd_research"]
         first = ssd["cohorts"][0]

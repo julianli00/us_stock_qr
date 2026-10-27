@@ -6,12 +6,13 @@ import json
 import math
 import re
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from functools import partial
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from typing import Any
 from urllib.parse import unquote, urlsplit
+from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parents[2]
 ASSETS = ROOT / "web/research"
@@ -589,6 +590,113 @@ def ssd_research(inputs: PublishedInputs, node: dict, legacy_completed: int) -> 
     }
 
 
+def ssd_factor_catalog(inputs: PublishedInputs, node: dict, original: dict) -> dict | None:
+    if "factor_catalog_extension" not in node:
+        return None
+    try:
+        reference = node["factor_catalog_extension"]
+        packet = inputs.read(reference["evidence"], reference["sha256"])
+        policy = inputs.read(WORKBENCH + packet["policy"]["path"], packet["policy"]["sha256"])
+        proposal_ref = policy["factor_proposal"]
+        proposals = inputs.read(WORKBENCH + proposal_ref["path"], proposal_ref["sha256"])
+        program_ref = policy["preserved_program_policy"]
+        program = inputs.read(WORKBENCH + program_ref["path"], program_ref["sha256"])
+        legacy, admission, rows = packet["legacy"], packet["admission"], packet["new_factors"]
+        original_families = {row["id"]: row["family"] for row in original["factor_proposals"]}
+        expected = {row["id"]: row for row in proposals["factors"]}
+        added = {row["factor"]["id"]: row for row in rows}
+        checked = datetime.fromisoformat(admission["checked_at"])
+        admitted = datetime.fromisoformat(admission["recorded_at"])
+        registered = datetime.fromisoformat(packet["registered_at"])
+        counts = (
+            packet["new_definition_count"], packet["combined_definition_count"],
+            packet["combined_family_count"], packet["new_strategy_evaluations"],
+            legacy["definition_count"], legacy["family_count"], admission["sessions"],
+        )
+        false_keys = (
+            "historical_W42_plans_reclassified", "independent_alpha_or_forward_proof",
+            "original_ledger_written_or_migrated", "strategy_accounts_or_metrics_computed",
+            "order_authority",
+        )
+        if (
+            packet["schema_version"] != 1 or policy["schema_version"] != 1
+            or type(packet["schema_version"]) is not int
+            or type(policy["schema_version"]) is not int
+            or packet["catalog_id"] != policy["catalog_id"]
+            or policy["data_scope"] != "factor_etf_portfolio"
+            or any(packet[key] is not False for key in false_keys)
+            or packet["registered_before_new_candidate_selection"] is not True
+            or any(policy[key] is not False for key in
+                   ("rewrite_legacy_ledger_or_plans", "new_market_requests",
+                    "strategy_accounts_or_metrics", "order_authority"))
+            or any(policy[key] is not True for key in
+                   ("preserve_existing_price_cell_text", "reuse_exact_original_risk_free_reference"))
+            or policy["configuration_count_limit_before_deadline"] is not None
+            or policy["protocol"] != {
+                "path": node["protocol"].removeprefix(WORKBENCH),
+                "sha256": node["protocol_sha256"],
+            }
+            or policy["source_audit"] != packet["source_audit"]
+            or any(type(value) is not int for value in counts)
+            or packet["new_strategy_evaluations"] != 0
+            or len(rows) != len(added) or set(added) != set(expected)
+            or packet["new_definition_count"] != len(rows)
+            or len(rows) != policy["maximum_new_definitions_this_cycle"]
+            or len(rows) != program["maximum_new_factors_per_cycle"]
+            or set(added).intersection(original_families)
+            or len(legacy["factors"]) != len(original_families)
+            or {row["id"]: row["family"] for row in legacy["factors"]} != original_families
+            or legacy["definition_count"] != len(original_families)
+            or legacy["family_count"] != len(set(original_families.values()))
+            or legacy["event_head_sha256"] != original["event_chain_sha256"]
+            or legacy["written_or_migrated"] is not False
+            or legacy["original_cycle_for_new_week_exists"] is not False
+            or packet["combined_definition_count"] != len(original_families) + len(rows)
+            or packet["combined_family_count"] != len(
+                set(original_families.values()) | {row["factor"]["family"] for row in rows})
+            or any(row["factor"] != expected[identifier]
+                   or row["registered_at"] != packet["registered_at"]
+                   or row["semantic_sha256"] != policy["factor_semantic_sha256"][identifier]
+                   for identifier, row in added.items())
+            or any(clock.tzinfo is None for clock in (checked, admitted, registered))
+            or not checked <= admitted <= registered <= datetime.now(timezone.utc)
+            or registered - checked > timedelta(days=8)
+            or policy["maximum_readiness_age_days"] != 8
+            or admission["readiness_age_limit_days"] != 8
+            or packet["week"] != registered.astimezone(
+                ZoneInfo(policy["cycle_timezone"])).strftime("%G-W%V")
+            or admission["sessions"] != 2805
+            or admission["preserved_symbols"] != [
+                "SPY", "IEF", "GLD", "BIL", "MTUM", "VLUE", "QUAL", "USMV",
+                "TLT", "QQQ", "XLK", "SOXX"]
+            or admission["appended_symbols"] != policy["appended_symbols"]
+            or policy["appended_symbols"] != ["IJR", "PKW"]
+            or admission["original_price_arrays_exactly_preserved"] is not True
+            or admission["original_risk_free_reference_and_array_preserved"] is not True
+        ):
+            raise DashboardError("ssd_catalog_contract_mismatch")
+        return {
+            "catalog_id": packet["catalog_id"], "registered_at": packet["registered_at"],
+            "week": packet["week"], "evidence": reference["evidence"],
+            "preserved_definition_count": legacy["definition_count"],
+            "new_definition_count": len(rows),
+            "combined_definition_count": packet["combined_definition_count"],
+            "combined_family_count": packet["combined_family_count"],
+            "source_sessions": admission["sessions"],
+            "preserved_asset_count": len(admission["preserved_symbols"]),
+            "appended_symbols": admission["appended_symbols"],
+            "strategy_evaluations_by_admission": 0,
+            "new_factors": [
+                {"id": identifier, "family": row["factor"]["family"],
+                 "title": FACTOR_NAMES.get(row["factor"]["family"], row["factor"]["name"]),
+                 "registered_at": row["registered_at"]}
+                for identifier, row in added.items()
+            ],
+        }
+    except (KeyError, TypeError, ValueError):
+        raise DashboardError("ssd_catalog_contract_mismatch") from None
+
+
 def build_snapshot(root: Path = ROOT) -> dict:
     inputs = PublishedInputs(root)
     progress = inputs.read("docs/research_progress.json")
@@ -776,6 +884,16 @@ def build_snapshot(root: Path = ROOT) -> dict:
     if "ssd_continuous_research_v1" in progress:
         snapshot["ssd_research"] = ssd_research(
             inputs, progress["ssd_continuous_research_v1"], snapshot["summary"]["completed"])
+        catalog = ssd_factor_catalog(inputs, progress["ssd_continuous_research_v1"], state)
+        if catalog is not None:
+            snapshot["ssd_research"]["factor_catalog_extension"] = catalog
+            registrations = {row["id"]: row for row in catalog["new_factors"]}
+            for factor in factors:
+                if factor["id"] in registrations:
+                    factor["ssd_registration"] = {
+                        "registered_at": registrations[factor["id"]]["registered_at"],
+                        "evidence": catalog["evidence"],
+                    }
         snapshot["summary_scope"] = "preserved_pre_ssd_research"
         snapshot["ranking"] = "原 SPY 四路径口径的低回撤研究对照，不按新 SSD 双基准规则重新认定；旧记录、失败和原有排序保持。"
         snapshot["warnings"].append("历史六配置轮次已用完不限制新 SSD 授权；新口径与原记录分开展示，不混用通过指标。")

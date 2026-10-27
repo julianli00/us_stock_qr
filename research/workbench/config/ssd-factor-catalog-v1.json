@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "catalog_id": "ssd_factor_catalog_20261028_v1",
+  "data_scope": "factor_etf_portfolio",
+  "source_audit": {
+    "path": "reports/ssd-continuous-research-v1/prior-art-after-option-latch-v1/source-revalidation-v1.json",
+    "sha256": "74e5571963b2864e874f7ebfc59c669fe6f94f7bc311f53041e69bfbf45a5002"
+  },
+  "factor_proposal": {
+    "path": "config/factor-family-expansion.json",
+    "sha256": "6109980a5f0d1bdb0518b1c7017eef5dde6fd7c6b93c5c4d981d57bb75a08bdf"
+  },
+  "preserved_program_policy": {
+    "path": "config/research-program.json",
+    "sha256": "c1bb4bfc9209233f1590d3808f515250ae428fc5ad881da49d4c1e6462f29ebc"
+  },
+  "preserved_benchmark_admission": {
+    "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/admission.json",
+    "sha256": "d233035837a887e98a86aea3e6f3aaa52407762ab4db81bba75086e7130c7f4f"
+  },
+  "protocol": {
+    "path": "config/dual-benchmark-v1.json",
+    "sha256": "1b5b2572089ffa53746b01e72ff8303e00d6b5e5e3f815844f93834d0521e469"
+  },
+  "appended_symbols": ["IJR", "PKW"],
+  "factor_semantic_sha256": {
+    "size_exposure_ijr_v1": "ee74c4016f5a29de5fff0f4ceebc3084685b5248a180c4efd9230fc40afdfada",
+    "net_buyback_exposure_pkw_v1": "fea841cfac9dc1942658e0f71558de556478bba9830d5f0504c6dc17e17cd056"
+  },
+  "cycle_timezone": "Asia/Shanghai",
+  "maximum_new_definitions_this_cycle": 2,
+  "maximum_readiness_age_days": 8,
+  "configuration_count_limit_before_deadline": null,
+  "prior_completed_configurations": 185,
+  "prior_journal_sequence": 82,
+  "prior_journal_head_sha256": "d7944ac455326ecc8a6c6f6f859ce47ed05dad0899874bbf4d2f8c69620be771",
+  "preserve_existing_price_cell_text": true,
+  "reuse_exact_original_risk_free_reference": true,
+  "rewrite_legacy_ledger_or_plans": false,
+  "new_market_requests": false,
+  "strategy_accounts_or_metrics": false,
+  "order_authority": false
+}

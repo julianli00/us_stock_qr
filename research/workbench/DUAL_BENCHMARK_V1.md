@@ -432,6 +432,45 @@ Historical queued definitions and prepared targets are not current
 registrations; old catalog and account pipelines must not be resumed merely
 because their planning dates have passed.
 
+## Separate SSD factor catalog and source admission
+
+The cached IJR and PKW source audit completed at 2026-10-27 21:42:25 UTC,
+without new requests or target/account replay. Each fund retains 2,805 XNYS
+sessions, 2015-08-10 through 2026-10-05. Raw/normalized prices, actions,
+saved issuer identity and prepared-input hashes agree with the retained
+evidence. The 102 pinned inputs remain unchanged.
+
+The separately versioned source admission completed at 22:26:38.302827 UTC;
+actual definition registration followed at 22:26:38.449697 UTC. These are
+real **2026-W44** records, not a backdated completion of the W42 plans.
+The [public catalog packet](evidence/ssd_factor_catalog_20261028_v1.json)
+records two new definitions, IJR size and PKW net share reduction, with their
+original semantic identities. The original six-definition/five-family
+catalog is unchanged; together the catalogs contain eight definitions and
+seven distinct economic families. This is not a claim of independent alpha.
+
+The original SQLite is opened only with `mode=ro&immutable=1` and
+`query_only=ON`; no original cycle, event, policy or candidate is changed.
+The new source panel appends only IJR/PKW columns to the existing twelve
+assets, retaining the original CSV cell text and exact numeric arrays.
+The original RF file reference and array are reused without reserialization.
+All eight existing benchmark accounts remain unchanged and are not rerun.
+
+The original two-definition cycle limit and eight-day readiness-age rule
+remain in force. Readiness uses the actual 21:42 cache audit, not a new
+timestamp pasted onto the stale October 10 readiness document. Historical
+quotes and issuer pages retain their original acquisition times. Historical
+methodology continuity, independent factor returns and complete direct-stock
+PIT data remain unproven; the S&P methodology403 is not bypassed.
+
+The policy, admission implementation, tests, new input files and catalog
+packet were frozen for this registration. No eighth strategy has been chosen,
+no new target or funded account has been computed, and no new observation
+has been added to the original forward models. Strategy counts remain seven
+SSD completions, 28 paths and 185 combined configurations, all without a
+qualified champion. A subsequent fixed hypothesis needs its own actual
+registration/publication fence under the unchanged dual-benchmark gates.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,

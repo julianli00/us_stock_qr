@@ -84,6 +84,15 @@ function gateTable(row) {
 function ssdOverview(ssd) {
   const section = el("section");
   section.append(el("p", "notice", `SSD 新口径：${ssd.registered} 项登记，${ssd.completed} 项完成，${ssd.pending ?? 0} 项待完成，${ssd.technical_failures ?? 0} 项技术失败，${ssd.qualified} 项通过全部历史门槛。净 CAGR >12%、夏普 >1、回撤 ≤15%，并同时跑赢 SPY / QQQ；不是独立前瞻证明。`));
+  const catalog = ssd.factor_catalog_extension;
+  if (catalog) {
+    const notice = el("div", "notice");
+    append(notice,
+      el("p", "", `SSD 目录新增 ${catalog.new_definition_count} 个定义：${catalog.new_factors.map((row) => row.title).join("、")}。原 ${catalog.preserved_definition_count} 个定义不改写；合并为 ${catalog.combined_definition_count} 个定义、${catalog.combined_family_count} 个经济家族，不代表独立 alpha。`),
+      el("p", "muted small", `仅追加 ${catalog.appended_symbols.join(" / ")} 历史数据，保留原 ${catalog.preserved_asset_count} 项资产与 RF 原值。此项准入没有评估策略，也没有增加合格冠军。`),
+      evidence(catalog.evidence));
+    section.append(notice);
+  }
   ssd.candidates.forEach((row) => {
     const article = el("article", "conclusion");
     append(article, append(el("div", "conclusion-title"), append(el("div"), el("h2", "", label(row)), el("p", "candidate-id", row.id)), badge(row)), gateTable(row));
@@ -223,11 +232,21 @@ function factors() {
   const root = $("factors"); root.replaceChildren();
   root.append(append(el("div", "section-heading"), append(el("div"), el("h1", "", "定义不等于发现了 alpha"), el("p", "", "将经济家族、已登记定义、数据可得性和实际策略使用分开看。"))));
   const layout = el("div", "factor-layout");
-  append(layout, append(el("aside", "factor-summary"), el("strong", "", data.summary.definitions), el("span", "", "已登记定义"), el("p", "", `${data.summary.economic_families} 个经济家族。另有 ${data.queued.definitions} 个定义和 ${data.queued.strategies} 个配置排队，最早 ${data.queued.not_before}；未提前评估。`)));
+  const catalog = data.ssd_research?.factor_catalog_extension;
+  const summary = append(el("aside", "factor-summary"), el("strong", "", data.summary.definitions),
+    el("span", "", data.ssd_research ? "原目录已登记定义" : "已登记定义"),
+    el("p", "", `${data.summary.economic_families} 个经济家族。${data.ssd_research ? "原计划另有" : "另有"} ${data.queued.definitions} 个定义和 ${data.queued.strategies} 个配置排队，最早 ${data.queued.not_before}；${data.ssd_research ? "历史计划保持原记录" : "未提前评估"}。`));
+  if (catalog) summary.append(el("p", "", `独立 SSD 目录已新增 ${catalog.new_definition_count} 个定义；合并 ${catalog.combined_definition_count} 个定义、${catalog.combined_family_count} 个经济家族。登记不等于完成策略评估。`));
+  layout.append(summary);
   const list = el("div", "factor-list");
   data.factors.forEach((factor) => {
     const details = el("details", "factor");
-    append(details, append(el("summary"), append(el("div"), el("h3", "", factor.title), el("span", "muted small", `${factor.family} / ${factor.status === "queued" ? "来源已核验，尚未登记" : factor.strategy_count + " 个已登记配置引用"}`))));
+    const registeredLocal = factor.ssd_registration
+      ? new Date(factor.ssd_registration.registered_at).toLocaleString("zh-CN", { timeZone: "Asia/Shanghai", hour12: false }) : null;
+    const status = factor.ssd_registration
+      ? `原目录排队；SSD 目录已于北京时间 ${registeredLocal} 登记`
+      : factor.status === "queued" ? "来源已核验，尚未登记" : factor.strategy_count + " 个原目录配置引用";
+    append(details, append(el("summary"), append(el("div"), el("h3", "", factor.title), el("span", "muted small", `${factor.family} / ${status}`))));
     const body = el("div", "factor-body"), definition = el("dl");
     [["定义", factor.definition], ["经济理由", factor.rationale], ["限制", factor.limitations], ["所需输入", factor.inputs.join(" / ")]].forEach(([title, value]) => append(definition, el("dt", "", title), el("dd", "", value)));
     body.append(definition);
@@ -236,7 +255,10 @@ function factors() {
       if (!/^https:\/\/[^/]+/.test(url)) return;
       const link = el("a", "", `来源 ${i + 1}`); link.href = url; link.target = "_blank"; link.rel = "noopener noreferrer"; links.append(link);
     });
-    append(body, links, button("查看相关策略", () => {
+    if (factor.ssd_registration) append(body,
+      el("p", "muted small", "此处标注独立 SSD 登记，不回写原目录，也不将定义登记计为策略回测。"),
+      evidence(factor.ssd_registration.evidence));
+    append(body, links, button(data.ssd_research ? "查看原目录相关策略" : "查看相关策略", () => {
       $("search").value = factor.title; $("scope").value = "recurring"; $("status").value = "all"; page = 0; switchView("strategies");
     }, ""));
     details.append(body); list.append(details);

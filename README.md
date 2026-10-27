@@ -106,6 +106,17 @@ first breach on 2022-01-27 with a prior BIL intent but stocks still held under
 the preserved extra execution delay. This adds no strategy trial and does
 not justify tuning the option threshold, recovery clock or execution rules.
 
+The [separate SSD factor catalog](research/workbench/evidence/ssd_factor_catalog_20261028_v1.json)
+registered the existing IJR size and PKW net-share-reduction definitions at
+2026-10-27 22:26:38 UTC, in the actual 2026-W44 cycle. This adds two definitions,
+not two strategy trials: the original catalog remains six definitions across
+five families; the combined catalogs contain eight definitions across seven
+families. The new 14-asset historical panel preserves every original
+12-asset price cell and the exact RF reference, adding only IJR and PKW.
+Its fresh cache check is not newly retrieved prices or refreshed mandates.
+No new candidate has been selected or evaluated; the original W42 plans,
+SQLite ledger, benchmark accounts and prospective models remain unchanged.
+
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
 

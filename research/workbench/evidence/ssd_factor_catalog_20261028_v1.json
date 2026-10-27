@@ -1,0 +1,174 @@
+{
+  "admission": {
+    "appended_symbols": [
+      "IJR",
+      "PKW"
+    ],
+    "checked_at": "2026-10-27T21:42:25.916844+00:00",
+    "original_price_arrays_exactly_preserved": true,
+    "original_risk_free_reference_and_array_preserved": true,
+    "preserved_symbols": [
+      "SPY",
+      "IEF",
+      "GLD",
+      "BIL",
+      "MTUM",
+      "VLUE",
+      "QUAL",
+      "USMV",
+      "TLT",
+      "QQQ",
+      "XLK",
+      "SOXX"
+    ],
+    "readiness_age_limit_days": 8,
+    "receipt": {
+      "path": "reports/ssd-continuous-research-v1/factor-catalog-20261028-v1/admission.json",
+      "sha256": "3fcabc60ca49accb7c75627cf305e93ed988e3a3933e44582cadee33343930bc"
+    },
+    "recorded_at": "2026-10-27T22:26:38.302827+00:00",
+    "sessions": 2805
+  },
+  "catalog_id": "ssd_factor_catalog_20261028_v1",
+  "combined_definition_count": 8,
+  "combined_family_count": 7,
+  "historical_W42_plans_reclassified": false,
+  "independent_alpha_or_forward_proof": false,
+  "legacy": {
+    "definition_count": 6,
+    "engine_sha256": "a4be8219834c412e0c1e311180dc9ce12c5b0d60b32670a9edd4906278a21c05",
+    "event_head_sha256": "bb157fa3b5ebcaca94e736137211af58a198790dd92302c38da8f4e25463e65f",
+    "event_sequence": 246,
+    "factors": [
+      {
+        "family": "earnings_quality",
+        "id": "cashflow_accrual_quality_v1",
+        "registered_at": "2026-10-10T08:30:10.256039+00:00",
+        "semantic_sha256": "bfab3dfc34f1e4081e8838c0d8a79066c9650b8e06304af6fd4e08a3fabed722"
+      },
+      {
+        "family": "investment",
+        "id": "conservative_asset_growth_v1",
+        "registered_at": "2026-10-10T08:30:10.256039+00:00",
+        "semantic_sha256": "9a50a23bce9b27c84dcd258c9f250a6390d8ffdcd9cc849f06a40cc763319b83"
+      },
+      {
+        "family": "low_volatility",
+        "id": "low_volatility_exposure",
+        "registered_at": "2026-10-10T08:30:08.095812+00:00",
+        "semantic_sha256": "a2d4149b722788ca072c792a8c205a6e8536f78cc6df2411f892f7c24c1b0c1e"
+      },
+      {
+        "family": "momentum",
+        "id": "price_momentum",
+        "registered_at": "2026-10-10T08:30:08.095812+00:00",
+        "semantic_sha256": "6201dcadb21c245859dfe4dcf6cb53bf874ab1d4dc4e2b03784e0331e03657a6"
+      },
+      {
+        "family": "earnings_quality",
+        "id": "quality_exposure",
+        "registered_at": "2026-10-10T08:30:08.095812+00:00",
+        "semantic_sha256": "015349e8efde8548a99ac414ee274427b79656862513343e4834209319757283"
+      },
+      {
+        "family": "value",
+        "id": "value_exposure",
+        "registered_at": "2026-10-10T08:30:08.095812+00:00",
+        "semantic_sha256": "d27074b79e7ad8e46b54dc54562b257312d7bd057f9ce47a85b5cb6fc0560d8a"
+      }
+    ],
+    "family_count": 5,
+    "ledger_sha256": "ed2c075d0819e1ff8bb2d6920910128e0dd2ed4be46f920fef575129d64c9317",
+    "original_cycle_for_new_week_exists": false,
+    "written_or_migrated": false
+  },
+  "limitations": [
+    "A fresh cache check is not newly retrieved prices or refreshed mandates.",
+    "Issuer/quote acquisition timestamps remain those recorded in October10.",
+    "Current mandates do not prove historical index methodology continuity.",
+    "S&P methodology403 and incomplete direct-stock PIT data remain.",
+    "Size/buybacks can overlap quality/value and corporate leverage.",
+    "Historical ETF proxies are not independent alpha or prospective validation.",
+    "W42 plans remain unchanged and unregistered in the original ledger."
+  ],
+  "new_definition_count": 2,
+  "new_factors": [
+    {
+      "factor": {
+        "definition": "Long-only actual IJR fund exposure to the S&P SmallCap600Index,used as a size-family sleeve rather than a recreated academic small-minus-big portfolio.",
+        "direction": "higher",
+        "family": "size",
+        "id": "size_exposure_ijr_v1",
+        "inputs": [
+          "actual_fund_total_returns",
+          "issuer_mandate",
+          "decision_session"
+        ],
+        "limitations": "IJR is a long-only small-cap index fund,not zero-cost SMB. Index eligibility and sector exposures can mix size with other characteristics. The S&P methodology request returned403; historical screen continuity and independent alpha are not established. Tracking futures can offset cash,so no claim of a derivatives-free fund.",
+        "name": "US small-company equity exposure through IJR",
+        "parameters": {
+          "implementation": "actual_ETF_exposure",
+          "nominal_product_multiple": 1.0,
+          "symbol": "IJR"
+        },
+        "rationale": "Company scale is a different economic characteristic from momentum,value,quality and low-volatility; this adds a new family to this research catalog,not a globally new anomaly.",
+        "sources": [
+          "https://www.ishares.com/us/products/239774/ishares-core-sp-smallcap-etf",
+          "https://doi.org/10.1016/0304-405X(93)90023-5"
+        ]
+      },
+      "registered_at": "2026-10-27T22:26:38.449697+00:00",
+      "semantic_sha256": "ee74c4016f5a29de5fff0f4ceebc3084685b5248a180c4efd9230fc40afdfada"
+    },
+    {
+      "factor": {
+        "definition": "Actual PKW fund exposure to US companies meeting the NasdaqBuyBackAchievers criterion of a net reduction in outstanding shares of5%or more over the trailing12months. Fund returns are the implementation proxy,not recreated stock-level issuance scores.",
+        "direction": "higher",
+        "family": "share_issuance",
+        "id": "net_buyback_exposure_pkw_v1",
+        "inputs": [
+          "actual_fund_total_returns",
+          "issuer_mandate",
+          "decision_session"
+        ],
+        "limitations": "Repurchases may reflect leverage,valuation or market timing and may overlap existing quality/value exposures. The issuer/index describe current rules; a complete historical mandate archive and independent return source are not proven.",
+        "name": "Net share-reduction exposure through PKW",
+        "parameters": {
+          "implementation": "actual_ETF_exposure",
+          "lookback_months": 12,
+          "minimum_net_share_reduction": 0.05,
+          "nominal_product_multiple": 1.0,
+          "symbol": "PKW"
+        },
+        "rationale": "Net equity issuance/repurchase is a financing and capital-return characteristic,not another moving-average parameter. The paper motivates the family but is not an exact replication or a profitability guarantee.",
+        "sources": [
+          "https://www.invesco.com/us/en/financial-products/etfs/invesco-buyback-achievers-etf.html",
+          "https://indexes.nasdaqomx.com/Index/Overview/DRB",
+          "https://doi.org/10.1111/j.1540-6261.2008.01335.x"
+        ]
+      },
+      "registered_at": "2026-10-27T22:26:38.449697+00:00",
+      "semantic_sha256": "fea841cfac9dc1942658e0f71558de556478bba9830d5f0504c6dc17e17cd056"
+    }
+  ],
+  "new_strategy_evaluations": 0,
+  "order_authority": false,
+  "original_ledger_written_or_migrated": false,
+  "policy": {
+    "path": "config/ssd-factor-catalog-v1.json",
+    "sha256": "fc091994765423ad148d41f9a6b49b9b86708f4d6b4c17d2881748d75b56c158"
+  },
+  "private_catalog": {
+    "path": "reports/ssd-continuous-research-v1/factor-catalog-20261028-v1/catalog.json",
+    "sha256": "c0f92684423893cee20d4b99b5199e93ac7f8fc71673ac82842928855fcfbc71"
+  },
+  "registered_at": "2026-10-27T22:26:38.449697+00:00",
+  "registered_before_new_candidate_selection": true,
+  "schema_version": 1,
+  "source_audit": {
+    "path": "reports/ssd-continuous-research-v1/prior-art-after-option-latch-v1/source-revalidation-v1.json",
+    "sha256": "74e5571963b2864e874f7ebfc59c669fe6f94f7bc311f53041e69bfbf45a5002"
+  },
+  "strategy_accounts_or_metrics_computed": false,
+  "week": "2026-W44"
+}
