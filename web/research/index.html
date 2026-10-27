@@ -16,7 +16,7 @@
   </header>
   <nav aria-label="研究视图" class="navigation">
     <button type="button" data-view="overview" aria-current="page">当前结论</button>
-    <button type="button" data-view="strategies">策略历史 <span id="strategy-count"></span></button>
+    <button type="button" data-view="strategies">迁移前策略 <span id="strategy-count"></span></button>
     <button type="button" data-view="factors">因子地图 <span id="factor-count"></span></button>
     <button type="button" data-view="history">研究日志</button>
   </nav>
@@ -25,10 +25,10 @@
     <div id="loading" class="loading" role="status">读取研究账本，核对四条路径与历史记录…</div>
     <section id="overview" class="view" aria-label="当前研究结论" hidden></section>
     <section id="strategies" class="view" aria-label="策略历史" hidden>
-      <div class="section-heading"><div><h1>每一次尝试都在这里</h1><p>保留未达标、旧协议和技术失败，不只展示赢家。</p></div><span id="result-count" aria-live="polite"></span></div>
+      <div class="section-heading"><div><h1>迁移前的每一次尝试</h1><p>原口径及技术失败完整保留；新 SSD 双基准候选在「当前结论」独立展示，不改写旧记录。</p></div><span id="result-count" aria-live="polite"></span></div>
       <div class="filters">
         <label class="search">搜索策略或资产<input id="search" type="search" placeholder="例如 SOXX、动量、美元、PDP"></label>
-        <label>记录范围<select id="scope"><option value="all">全部记录</option><option value="recurring">当前研究协议</option><option value="legacy">旧 84 个配置</option></select></label>
+        <label>记录范围<select id="scope"><option value="all">全部迁移前记录</option><option value="recurring">原 SPY 四路径协议</option><option value="legacy">旧 84 个配置</option></select></label>
         <label>结果<select id="status"><option value="all">全部结果</option><option value="lowdd">四路径回撤均 ≤15%</option><option value="qualified">全部门槛达标</option><option value="technical_failure">技术失败</option><option value="pending">等待评估</option></select></label>
         <label>排序<select id="sort"><option value="recent">最近研究</option><option value="sharpe">四路径最低夏普</option><option value="drawdown">最差回撤从低到高</option></select></label>
       </div>

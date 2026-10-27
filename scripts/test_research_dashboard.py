@@ -123,6 +123,106 @@ class ProjectionTests(unittest.TestCase):
         mutate(value)
         path.write_text(json.dumps(value))
 
+    def change_ssd_result(self, root: Path, mutate) -> None:
+        progress = json.loads((root / "docs/research_progress.json").read_text())
+        node = progress["ssd_continuous_research_v1"]
+        self.change(root, node["first_pair_results"], mutate)
+        node["first_pair_results_sha256"] = hashlib.sha256((root / node["first_pair_results"]).read_bytes()).hexdigest()
+        (root / "docs/research_progress.json").write_text(json.dumps(progress))
+
+    def test_ssd_counts_benchmarks_and_legacy_quota_are_separate(self) -> None:
+        ssd = self.current["ssd_research"]
+        self.assertEqual((ssd["registered"], ssd["completed"], ssd["qualified"]), (2, 2, 0))
+        self.assertIsNone(ssd["configuration_count_cap_before_deadline"])
+        self.assertEqual((self.current["budget"]["cap"], self.current["budget"]["remaining"]), (6, 0))
+        self.assertEqual(self.current["summary_scope"], "preserved_pre_ssd_research")
+        for candidate in ssd["candidates"]:
+            self.assertEqual(candidate["status"], "rejected_historical")
+            self.assertEqual(len(candidate["paths"]), 4)
+            for path in candidate["paths"]:
+                self.assertEqual(path["gates"]["beats_qqq"],
+                                 path["metrics"]["cagr"] > path["qqq_benchmark"]["cagr"])
+                self.assertEqual(path["gates"]["cagr_above_12pct"], path["metrics"]["cagr"] > .12)
+                self.assertFalse(path["gates"]["sharpe_above_1"])
+                self.assertFalse(path["gates"]["drawdown_at_most_15pct"])
+                self.assertGreater(path["execution"]["total_cost_usd"], 0)
+
+    def test_ssd_hash_changed_receipt_is_not_silently_accepted(self) -> None:
+        root = self.fixture()
+        node = json.loads((root / "docs/research_progress.json").read_text())["ssd_continuous_research_v1"]
+        self.change(root, node["first_pair_results"],
+                    lambda result: result["reviews"][0]["paths"][0]["metrics"].update(cagr=.99))
+        with self.assertRaisesRegex(DashboardError, "frozen_policy_hash_mismatch"):
+            build_snapshot(root)
+
+    def test_ssd_strict_boundaries_cannot_be_reported_as_passes(self) -> None:
+        first = self.current["ssd_research"]["candidates"][0]["paths"][0]
+        for metric, value, gate in (("sharpe", 1.0, "sharpe_above_1"),
+                                    ("cagr", .12, "cagr_above_12pct"),
+                                    ("cagr", first["qqq_benchmark"]["cagr"], "beats_qqq")):
+            with self.subTest(gate=gate):
+                root = self.fixture()
+                def mutate(result):
+                    path = result["reviews"][0]["paths"][0]
+                    path["metrics"][metric] = value
+                    path["gates"][gate] = True
+                self.change_ssd_result(root, mutate)
+                with self.assertRaisesRegex(DashboardError, "ssd_gate_metric_mismatch"):
+                    build_snapshot(root)
+
+    def test_ssd_cannot_drop_a_path_or_the_qqq_gate(self) -> None:
+        root = self.fixture()
+        self.change_ssd_result(root, lambda result: result["reviews"][0]["paths"].pop())
+        with self.assertRaisesRegex(DashboardError, "ssd_four_formal_paths_required"):
+            build_snapshot(root)
+        root = self.fixture()
+        self.change_ssd_result(root, lambda result: result["reviews"][0]["paths"][0]["gates"].pop("beats_qqq"))
+        with self.assertRaisesRegex(DashboardError, "ssd_gate_metric_mismatch"):
+            build_snapshot(root)
+
+    def test_ssd_false_fees_borrowing_or_gross_exposure_are_rejected(self) -> None:
+        for key, value in (("minimum_cash_usd", -1.0), ("maximum_gross_exposure", 1.01),
+                           ("total_cost_usd", 0.0), ("model_order_count", 1.5)):
+            with self.subTest(key=key):
+                root = self.fixture()
+                self.change_ssd_result(root, lambda result: result["reviews"][0]["paths"][0]["execution"].update({key: value}))
+                with self.assertRaisesRegex(DashboardError, "ssd_execution_disclosure_mismatch"):
+                    build_snapshot(root)
+
+    def test_ssd_cannot_restore_a_quota_or_claim_forward_success(self) -> None:
+        for key, value in (("configuration_count_cap_before_deadline", 6),
+                           ("independent_forward_validation", True),
+                           ("investment_objective_verified", True), ("order_authority", True)):
+            with self.subTest(key=key):
+                root = self.fixture()
+                self.change(root, "docs/research_progress.json",
+                            lambda progress: progress["ssd_continuous_research_v1"].update({key: value}))
+                with self.assertRaisesRegex(DashboardError, "ssd_protocol_or_authority_mismatch"):
+                    build_snapshot(root)
+
+    def test_ssd_receipts_do_not_reclassify_the_legacy_ranking(self) -> None:
+        root = self.fixture()
+        self.change(root, "docs/research_progress.json", lambda progress: progress.pop("ssd_continuous_research_v1"))
+        legacy = build_snapshot(root)
+        self.assertNotIn("ssd_research", legacy)
+        for key in ("summary", "budget", "leader_id", "qualified_ids", "strategies", "forward"):
+            self.assertEqual(legacy[key], self.current[key])
+
+    def test_ssd_missing_benchmark_and_wrong_counts_are_rejected(self) -> None:
+        root = self.fixture()
+        self.change(root, "docs/research_progress.json",
+                    lambda progress: progress["ssd_continuous_research_v1"].update(new_reviews=3))
+        with self.assertRaisesRegex(DashboardError, "ssd_actual_count_mismatch"):
+            build_snapshot(root)
+        root = self.fixture()
+        progress = json.loads((root / "docs/research_progress.json").read_text())
+        node = progress["ssd_continuous_research_v1"]
+        self.change(root, node["benchmark_evidence"], lambda value: value["paths"].pop())
+        node["benchmark_evidence_sha256"] = hashlib.sha256((root / node["benchmark_evidence"]).read_bytes()).hexdigest()
+        (root / "docs/research_progress.json").write_text(json.dumps(progress))
+        with self.assertRaisesRegex(DashboardError, "ssd_eight_full_capital_benchmarks_required"):
+            build_snapshot(root)
+
     def test_a_new_review_is_derived_not_hard_coded(self) -> None:
         root = self.fixture()
         reference = self.current["source_snapshot"]

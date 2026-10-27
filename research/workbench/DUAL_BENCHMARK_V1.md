@@ -101,3 +101,38 @@ path receipts are reused after an interruption; incomplete attempts and
 technical failures remain recorded. Do not modify a registered implementation
 to conceal an evaluation failure, rerun finished studies on a timer, or treat
 offline modeled orders as permission to place brokerage orders.
+
+## First pair outcome: both rejected
+
+The preregistration commit `00b82e9e00cc777901689190083f0627c4ac4a48` was actually
+observed on the configured remote before candidate evaluation. All eight paths
+completed at `2026-10-27T16:52:00.173786+00:00`; maximum independent accounting
+discrepancy was approximately USD1.68e-10. These are two new completed trials
+and two reviews, not eight configurations. The original 178/94/96 ledger remains
+unchanged, with 180 completed configurations across the two lanes.
+
+| Candidate | Path | Net CAGR | Net Sharpe | Maximum drawdown | Modeled fees, USD |
+|---|---|---:|---:|---:|---:|
+| Equity-first trend | 10y base | 18.3806% | 0.8412 | 38.5221% | 1,803.77 |
+| Equity-first trend | 10y stress | 18.8578% | 0.8578 | 31.2652% | 4,944.25 |
+| Equity-first trend | 5y base | 17.7366% | 0.7037 | 39.1256% | 816.89 |
+| Equity-first trend | 5y stress | 18.7128% | 0.7420 | 31.7827% | 1,890.88 |
+| With VIX variance cap | 10y base | 13.5602% | 0.6891 | 36.0993% | 6,697.93 |
+| With VIX variance cap | 10y stress | 14.4954% | 0.7334 | 26.4615% | 9,799.22 |
+| With VIX variance cap | 5y base | 10.9685% | 0.4386 | 37.4171% | 3,000.66 |
+| With VIX variance cap | 5y stress | 14.5809% | 0.6033 | 27.0843% | 4,005.40 |
+
+Every path fails both the Sharpe and drawdown gates. The uncapped variant also
+misses QQQ in both ten-year paths; the capped variant misses QQQ everywhere.
+The cap raises ten-year base annualized two-sided turnover from 13.1837 to
+24.9775 and modeled orders from 469 to 4,487. These measured comparisons do not
+isolate fees from the changed risk exposure. Stress has a different original
+execution delay and trade history, so a higher stress return is not evidence
+that higher costs improved returns.
+
+The [complete sanitized result](evidence/equity_first_20261027_results_v1.json)
+contains all eight gate decisions, execution disclosures and evidence hashes.
+No prospective observation or brokerage order was created. Diagnose saved
+evidence before choosing a distinct economic hypothesis; do not conceal these
+failures, replay finished accounts, or turn the failed cap into an unregistered
+parameter grid.

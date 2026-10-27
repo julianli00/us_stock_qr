@@ -6,8 +6,10 @@ let currentView = "overview";
 let page = 0;
 const pageSize = 15;
 const methodNames = { hypothesis: "研究问题", rule: "固定规则", allocation: "资产配置", budget: "预算方法", target_rule: "目标规则", execution: "执行约定", limitations: "限制", risks: "风险" };
-const keyNames = { sharpe_above_1: "夏普 >1", drawdown_at_most_15pct: "回撤 ≤15%", beats_spy: "跑赢同成本 SPY", also_beats_base_cost_spy: "压力跑赢基础 SPY" };
+const keyNames = { sharpe_above_1: "夏普 >1", cagr_above_12pct: "净 CAGR >12%", drawdown_at_most_15pct: "回撤 ≤15%", beats_spy: "跑赢同成本 SPY", beats_qqq: "跑赢同成本 QQQ", also_beats_base_cost_spy: "压力跑赢基础 SPY" };
 const titles = {
+  equity_first_trend200_band025_v1: "权益优先：长趋势开关",
+  equity_first_vix_variance_band025_v1: "权益优先：增加 VIX 方差上限",
   semiconductor_option_proxy_dollar_observed_band025: "隐含波动预算 + 美元防御 + 持仓偏差带",
   semiconductor_option_proxy_observed_band025: "隐含波动预算 + 持仓偏差带",
   macro_real_yield_factor_tilt: "实际利率因子倾斜",
@@ -45,31 +47,61 @@ function button(text, action, className = "primary") {
   const node = el("button", className, text); node.type = "button"; node.addEventListener("click", action); return node;
 }
 function gateTable(row) {
+  const dual = row.scope === "ssd_v1";
   const wrap = el("div", "table-wrap");
   const table = el("table", "gate-table");
   const heading = el("tr");
-  ["路径", "净年化 CAGR", "同成本 SPY", "净超额夏普", "最大回撤", "SPY 验收"].forEach((text) => heading.append(el("th", "", text)));
+  ["路径", "净年化 CAGR", "同成本 SPY", ...(dual ? ["同成本 QQQ"] : []), "净超额夏普", "最大回撤", dual ? "全部门槛" : "SPY 验收"].forEach((text) => heading.append(el("th", "", text)));
   append(table, append(el("thead"), heading));
   const body = el("tbody");
   row.paths.forEach((path) => {
     const tr = el("tr");
     tr.append(el("td", "", `${path.years} 年 / ${path.scenario === "base" ? "基础" : "压力"}`));
     if (!path.metrics) {
-      const missing = el("td", "muted", "该路径未完成；原失败记录保留"); missing.colSpan = 5; tr.append(missing);
+      const missing = el("td", "muted", "该路径未完成；原失败记录保留"); missing.colSpan = dual ? 6 : 5; tr.append(missing);
     } else {
       tr.append(el("td", "", pct(path.metrics.cagr)));
       tr.append(el("td", "", pct(path.benchmark?.cagr)));
+      if (dual) tr.append(el("td", "", pct(path.qqq_benchmark.cagr)));
       if (row.scope === "legacy") {
         tr.append(el("td", "", decimal(path.metrics.sharpe)), el("td", "", pct(path.metrics.max_drawdown)), el("td", "muted", "原协议，见证据"));
       } else {
         tr.append(append(el("td"), el("span", `gate ${path.gates.sharpe_above_1 ? "pass" : "fail"}`, decimal(path.metrics.sharpe))));
         tr.append(append(el("td"), el("span", `gate ${path.gates.drawdown_at_most_15pct ? "pass" : "fail"}`, pct(path.metrics.max_drawdown))));
-        tr.append(append(el("td"), el("span", `gate ${path.gates.beats_spy ? "pass" : "fail"}`, path.gates.beats_spy ? "通过" : "未通过")));
+        const passed = dual ? Object.values(path.gates).every(Boolean) : path.gates.beats_spy;
+        tr.append(append(el("td"), el("span", `gate ${passed ? "pass" : "fail"}`, passed ? "通过" : "未通过")));
       }
     }
     body.append(tr);
   });
   append(table, body); wrap.append(table); return wrap;
+}
+function ssdOverview(ssd) {
+  const section = el("section");
+  section.append(el("p", "notice", `SSD 新口径：${ssd.registered} 项登记，${ssd.completed} 项完成，${ssd.qualified} 项通过全部历史门槛。净 CAGR >12%、夏普 >1、回撤 ≤15%，并同时跑赢 SPY / QQQ；不是独立前瞻证明。`));
+  ssd.candidates.forEach((row) => {
+    const article = el("article", "conclusion");
+    append(article, append(el("div", "conclusion-title"), append(el("div"), el("h2", "", label(row)), el("p", "candidate-id", row.id)), badge(row)), gateTable(row));
+    const failed = row.paths.flatMap((path) => Object.entries(path.gates).filter(([, pass]) => !pass).map(([key]) => `${path.years}年${path.scenario === "base" ? "基础" : "压力"}：${keyNames[key]}`));
+    article.append(el("p", "gate-note", failed.length ? `未通过：${failed.join("；")}。` : "四条历史路径通过；仍无独立前瞻证明或交易权限。"));
+    const table = el("table"), heading = el("tr"), body = el("tbody");
+    ["路径", "年化双边换手（含初始建仓）", "模型订单数", "累计费用 USD"].forEach((value) => heading.append(el("th", "", value)));
+    table.append(append(el("thead"), heading));
+    row.paths.forEach((path) => body.append(append(el("tr"),
+      el("td", "", `${path.years}年 / ${path.scenario === "base" ? "基础" : "压力"}`),
+      el("td", "", `${path.execution.annualized_two_sided_turnover.toFixed(2)} 倍`),
+      el("td", "", path.execution.model_order_count),
+      el("td", "", path.execution.total_cost_usd.toFixed(2)))));
+    table.append(body); article.append(append(el("div", "table-wrap"), table));
+    section.append(article);
+  });
+  const references = el("p", "notice");
+  [[ssd.results_evidence, "完整拒绝或通过记录"], [ssd.registration_evidence, "事前登记"], [ssd.benchmark_evidence, "全额持有双基准"]].forEach(([path, title], index) => {
+    if (index) references.append(document.createTextNode(" / "));
+    const link = evidence(path); link.textContent = title; references.append(link);
+  });
+  section.append(references);
+  return section;
 }
 function progressLine(count, limit) {
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
@@ -83,18 +115,29 @@ function progressLine(count, limit) {
 }
 function overview() {
   const root = $("overview"); root.replaceChildren();
+  const ssd = data.ssd_research;
   const intro = el("div", "overview-head");
-  append(intro, append(el("div"), el("h1", "", data.summary.qualified ? "历史达标，仍需独立前瞻" : "还没有达标冠军。"), el("p", "", "这是持续研究的完整账本。更低的回撤、更高的历史收益都只是单项表现，只有同一策略通过全部四条路径，才算历史候选。")));
-  const budget = append(el("div", "budget"), el("strong", "", `${data.budget.used} / ${data.budget.cap} 个配置`), el("p", "", `本轮已用名额，剩余 ${data.budget.remaining} 个。耗尽后复盘，不无限调参。`));
-  const track = el("div", "budget-track"); for (let i = 0; i < data.budget.cap; i++) track.append(el("span", i < data.budget.used ? "used" : ""));
-  append(budget, track); intro.append(budget); root.append(intro);
+  const headline = ssd ? "双基准研究，投资目标尚未验证。" : data.summary.qualified ? "历史达标，仍需独立前瞻" : "还没有达标冠军。";
+  append(intro, append(el("div"), el("h1", "", headline), el("p", "", ssd ? "新 SSD 研究与迁移前记录分开核验。保留全部失败，不将较高收益或较低回撤拼成一个通过结果。" : "这是持续研究的完整账本。更低的回撤、更高的历史收益都只是单项表现，只有同一策略通过全部四条路径，才算历史候选。")));
+  const budget = el("div", "budget");
+  if (ssd) {
+    const cutoff = new Date(ssd.deadline_beijing).toLocaleString("zh-CN", { timeZone: "Asia/Shanghai", hour12: false });
+    append(budget, el("strong", "", ssd.authorization_window_open ? "窗口内不限配置次数" : "已到研究截止时间"),
+      el("p", "", `截止北京时间 ${cutoff}，之后不再启动研究。历史 ${data.budget.used}/${data.budget.cap} 配置轮次保持原记录，不是当前额度。`));
+  } else {
+    append(budget, el("strong", "", `${data.budget.used} / ${data.budget.cap} 个配置`), el("p", "", `本轮已用名额，剩余 ${data.budget.remaining} 个。耗尽后复盘，不无限调参。`));
+    const track = el("div", "budget-track"); for (let i = 0; i < data.budget.cap; i++) track.append(el("span", i < data.budget.used ? "used" : ""));
+    budget.append(track);
+  }
+  intro.append(budget); root.append(intro);
+  if (ssd) append(root, ssdOverview(ssd), append(el("div", "section-heading"), el("h2", "", "迁移前研究记录，原口径保留")));
   const strip = el("div", "metrics-strip");
-  [[data.summary.completed, "完成配置"], [data.summary.reviews, "当前协议审阅"], [data.summary.definitions, `${data.summary.economic_families} 个经济家族`], [data.summary.technical_failures, "保留的技术失败"], [data.summary.source_audit_paths, "独立来源审计路径"]].forEach(([value, title]) => strip.append(append(el("div"), el("strong", "", value), el("span", "", title))));
+  [[data.summary.completed, ssd ? "原口径完成配置" : "完成配置"], [data.summary.reviews, ssd ? "原 SPY 协议审阅" : "当前协议审阅"], [data.summary.definitions, `${data.summary.economic_families} 个经济家族`], [data.summary.technical_failures, "保留的技术失败"], [data.summary.source_audit_paths, "独立来源审计路径"]].forEach(([value, title]) => strip.append(append(el("div"), el("strong", "", value), el("span", "", title))));
   root.append(strip);
   const leader = data.strategies.find((row) => row.id === data.leader_id);
   if (leader) {
     const conclusion = el("article", "conclusion");
-    append(conclusion, append(el("div", "conclusion-title"), append(el("div"), el("h2", "", "当前低回撤领先研究对照"), el("p", "candidate-id", leader.id)), badge(leader)));
+    append(conclusion, append(el("div", "conclusion-title"), append(el("div"), el("h2", "", ssd ? "原口径低回撤研究对照" : "当前低回撤领先研究对照"), el("p", "candidate-id", leader.id)), badge(leader)));
     conclusion.append(el("p", "conclusion-description", data.ranking));
     if (leader.id === "semiconductor_option_proxy_dollar_observed_band025") conclusion.append(el("p", "conclusion-description", "股票内部为半导体 SOXX 一半、MTUM / VLUE / QUAL / USMV 各占其余一半的四分之一；月末用 GVZ 与 VIX 的相对隐含波动分配股票和黄金，美元走强时减半转 BIL。实际持仓偏离目标达到 2.5 个百分点才调仓；不交易期权。"));
     conclusion.append(gateTable(leader));
@@ -116,8 +159,8 @@ function overview() {
   append(operations, el("p", "", sourceMessage), el("p", "muted small", `尝试观察 ${data.daily.session}；最新接受 ${data.daily.latest_accepted_session}。新增真实日：${data.daily.new_sessions}。来源失败不等于策略亏损，也不补数据继续算。`), evidence(data.daily.evidence));
   append(below, forward, operations); root.append(below);
   if (data.round_review) {
-    const review = append(el("article", "panel round-review"), el("h2", "", `本轮复盘：6 个配置，${data.round_review.qualified} 个历史达标`));
-    review.append(el("p", "muted small", "三批固定假设已全部回测。名额用尽，不重置预算继续扫参数；失败记录完整保留。"));
+    const review = append(el("article", "panel round-review"), el("h2", "", `${ssd ? "历史六配置轮次" : "本轮复盘"}：6 个配置，${data.round_review.qualified} 个历史达标`));
+    review.append(el("p", "muted small", ssd ? "旧轮次已耗尽，不改写、不重置。新的 SSD 研究有独立授权与更严格口径，不受这六个历史名额限制。" : "三批固定假设已全部回测。名额用尽，不重置预算继续扫参数；失败记录完整保留。"));
     review.append(el("p", "muted small scroll-hint", "横向滑动表格查看收益、夏普与回撤。"));
     const table = el("table"), header = el("tr");
     ["固定配置", "十年基础 CAGR", "四路径最低夏普", "四路径最差回撤"].forEach((text) => header.append(el("th", "", text)));
@@ -189,7 +232,7 @@ function factors() {
 }
 function history() {
   const root = $("history"); root.replaceChildren();
-  root.append(append(el("div", "section-heading"), append(el("div"), el("h1", "", "研究日志"), el("p", "", "按真实记录时间排列。旧协议回测、当前审阅、技术失败与数据采集分别标记。"))));
+  root.append(append(el("div", "section-heading"), append(el("div"), el("h1", "", "迁移前研究日志"), el("p", "", "保留原协议回测、审阅、技术失败与采集记录。新 SSD 双基准结果与真实时间在「当前结论」单独展示。"))));
   const timeline = el("div", "timeline");
   const groups = new Map();
   data.history.forEach((entry) => {

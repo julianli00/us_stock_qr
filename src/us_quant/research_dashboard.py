@@ -299,6 +299,139 @@ def legacy_strategies(inputs: PublishedInputs) -> list[dict]:
     return result
 
 
+def ssd_first_pair(inputs: PublishedInputs, node: dict) -> dict:
+    protocol = inputs.read(node["protocol"], node["protocol_sha256"])
+    benchmark_source = inputs.read(node["benchmark_evidence"], node["benchmark_evidence_sha256"])
+    packet = inputs.read(node["first_pair_registration"], node["first_pair_registration_sha256"])
+    source = inputs.read(node["first_pair_results"], node["first_pair_results_sha256"])
+    if (
+        protocol["protocol_id"] != "ssd_dual_benchmark_net_cagr_v1"
+        or protocol["hard_gates_per_path"] != {
+            "net_excess_sharpe_strictly_greater_than": 1.0,
+            "net_cagr_strictly_greater_than": 0.12,
+            "maximum_drawdown_at_most": 0.15,
+            "net_cagr_strictly_greater_than_same_cost_spy": True,
+            "net_cagr_strictly_greater_than_same_cost_qqq": True,
+            "stress_also_beats_base_cost_spy": True,
+            "all_four_paths_same_candidate_and_parameters": True,
+        }
+        or node["deadline_utc"] != protocol["authorization_deadline_utc"]
+        or node["configuration_count_cap_before_deadline"] is not None
+        or node["ordinary_per_batch_approval_required"] is not False
+        or any(value.get(key) is not False for value in (node, source)
+               for key in ("order_authority", "investment_objective_verified", "independent_forward_validation"))
+        or source["original_records_reclassified"] is not False
+        or source["raw_prices_documents_targets_or_daily_accounts_exported"] is not False
+        or source["actual_publication_before_accounts"]["published_commit"] != node["first_pair_preregistration_commit"]
+        or source["registration_packet"]["sha256"] != node["first_pair_registration_sha256"]
+        or source["protocol"]["sha256"] != node["protocol_sha256"]
+    ):
+        raise DashboardError("ssd_protocol_or_authority_mismatch")
+    benchmarks = {}
+    for row in benchmark_source["paths"]:
+        key = (row["years"], row["scenario"], row["symbol"])
+        if key in benchmarks:
+            raise DashboardError("ssd_duplicate_benchmark")
+        benchmarks[key] = metrics(row["metrics"])
+    if set(benchmarks) != {(years, scenario, symbol) for years, scenario in CELLS for symbol in ("SPY", "QQQ")}:
+        raise DashboardError("ssd_eight_full_capital_benchmarks_required")
+    registered = {row["candidate_id"]: row for row in packet["entries"]}
+    reviews = {row["candidate_id"]: row for row in source["reviews"]}
+    if (
+        len(registered) != len(packet["entries"]) or len(reviews) != len(source["reviews"])
+        or set(registered) != set(reviews) or source["study_id"] != packet["study_id"]
+        or source["new_technical_failures"] != 0
+    ):
+        raise DashboardError("ssd_complete_pair_identity_mismatch")
+    candidates = []
+    for identifier, review in reviews.items():
+        if (
+            len(review["paths"]) != 4
+            or {(row["years"], row["scenario"]) for row in review["paths"]} != set(CELLS)
+            or review["all_four_paths_same_candidate_and_frozen_parameters"] is not True
+            or review["independent_forward_validation"] is not False
+            or review["order_authority"] is not False
+        ):
+            raise DashboardError("ssd_four_formal_paths_required")
+        paths = []
+        for years, scenario in CELLS:
+            row = next(item for item in review["paths"] if (item["years"], item["scenario"]) == (years, scenario))
+            own = metrics(row["metrics"])
+            spy, qqq, base_spy = (benchmarks[(years, scenario, "SPY")],
+                                  benchmarks[(years, scenario, "QQQ")], benchmarks[(years, "base", "SPY")])
+            if (
+                own["sessions"] != (2512 if years == 10 else 1254)
+                or own["start"] != ("2016-10-06" if years == 10 else "2021-10-06")
+                or own["end"] != "2026-10-05"
+                or any(own[key] != reference[key] for reference in (spy, qqq, base_spy)
+                       for key in ("start", "end", "sessions"))
+                or row["benchmark_net_cagr"] != {"SPY": spy["cagr"], "QQQ": qqq["cagr"]}
+            ):
+                raise DashboardError("ssd_formal_window_or_benchmark_mismatch")
+            calculated = {
+                **gates(own, spy, base_spy, scenario),
+                "cagr_above_12pct": own["cagr"] > 0.12,
+                "beats_qqq": own["cagr"] > qqq["cagr"],
+            }
+            if calculated != row["gates"] or row["all_point_gates_pass"] is not all(calculated.values()):
+                raise DashboardError("ssd_gate_metric_mismatch")
+            execution = {key: number(row["execution"][key])
+                         for key in protocol["execution_disclosure"]["required_fields"]}
+            if (
+                any(value < 0 for value in execution.values())
+                or any(execution[key] != int(execution[key]) for key in ("model_order_count", "rebalance_session_count"))
+                or row["execution"]["model_orders_are_broker_orders"] is not False
+                or number(row["execution"]["minimum_cash_usd"]) < -1e-8
+                or not 0 <= number(row["execution"]["maximum_gross_exposure"]) <= 1 + 1e-10
+                or abs(execution["total_cost_usd"] - execution["fixed_commission_usd"]
+                       - execution["proportional_cost_usd"]) > 1e-6
+                or execution["fixed_commission_usd"] != execution["model_order_count"]
+            ):
+                raise DashboardError("ssd_execution_disclosure_mismatch")
+            paths.append({"years": years, "scenario": scenario, "metrics": own,
+                          "benchmark": spy, "qqq_benchmark": qqq, "gates": calculated,
+                          "execution": execution, "status": "completed"})
+        qualified = all(all(path["gates"].values()) for path in paths)
+        if review["status"] != ("historical_point_gates_passed" if qualified else "rejected"):
+            raise DashboardError("ssd_review_verdict_mismatch")
+        candidates.append({
+            "id": identifier, "title": identifier.replace("_", " "), "scope": "ssd_v1",
+            "status": "historically_qualified" if qualified else "rejected_historical",
+            "full_gate_pass": qualified, "reviewed_at": text(review["reviewed_at"], 80),
+            "paths": paths,
+        })
+    counts = {
+        "new_registered_candidates": len(registered),
+        "new_reviews": len(reviews),
+        "new_technical_failures": 0,
+        "new_historical_point_gate_passes": sum(row["full_gate_pass"] for row in candidates),
+    }
+    if (
+        any(type(value.get(key)) is not int or value[key] != count
+            for value in (node, source) for key, count in counts.items())
+        or node["new_completed_strategy_configurations"] != len(candidates)
+        or source["new_completed_configurations"] != len(candidates)
+        or packet["new_registered_candidates"] != len(registered)
+        or node["new_account_paths"] != 4 * len(candidates)
+        or source["new_account_paths"] != 4 * len(candidates)
+    ):
+        raise DashboardError("ssd_actual_count_mismatch")
+    deadline = datetime.fromisoformat(node["deadline_utc"].replace("Z", "+00:00"))
+    if deadline.tzinfo is None:
+        raise DashboardError("ssd_deadline_timezone_required")
+    return {
+        "status": node["status"], "deadline_beijing": node["deadline_beijing"],
+        "authorization_window_open": datetime.now(timezone.utc) < deadline,
+        "configuration_count_cap_before_deadline": None, "registered": len(registered),
+        "completed": len(candidates), "qualified": counts["new_historical_point_gate_passes"],
+        "candidates": candidates, "results_evidence": node["first_pair_results"],
+        "registration_evidence": node["first_pair_registration"],
+        "benchmark_evidence": node["benchmark_evidence"],
+        "completed_at": source["actual_completed_at"],
+        "independent_forward_validation": False, "order_authority": False,
+    }
+
+
 def build_snapshot(root: Path = ROOT) -> dict:
     inputs = PublishedInputs(root)
     progress = inputs.read("docs/research_progress.json")
@@ -483,6 +616,11 @@ def build_snapshot(root: Path = ROOT) -> dict:
         ],
         "order_authority": False,
     }
+    if "ssd_continuous_research_v1" in progress:
+        snapshot["ssd_research"] = ssd_first_pair(inputs, progress["ssd_continuous_research_v1"])
+        snapshot["summary_scope"] = "preserved_pre_ssd_research"
+        snapshot["ranking"] = "原 SPY 四路径口径的低回撤研究对照，不按新 SSD 双基准规则重新认定；旧记录、失败和原有排序保持。"
+        snapshot["warnings"].append("历史六配置轮次已用完不限制新 SSD 授权；新口径与原记录分开展示，不混用通过指标。")
     inputs.unchanged()
     snapshot["input_sha256"] = dict(sorted(inputs.hashes.items()))
     public_projection(snapshot)
