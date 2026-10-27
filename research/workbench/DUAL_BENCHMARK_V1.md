@@ -405,8 +405,32 @@ The separate SSD journal now records seven completed/reviewed hypotheses,
 28 account paths, zero pending, zero technical failures and no qualified
 champion. Combined completed configurations are 185. Original ledger and
 prospective models remain unchanged; no new source or broker request occurred.
-Next work must diagnose saved evidence before choosing another economic
-question, not sweep the failed option threshold or recovery clock.
+
+The bounded saved-account diagnosis completed at 21:08:34 UTC. It reconciles
+the four existing accounts without regenerating targets or calling an account
+simulator. Both base paths first breach 15% on 2022-01-25: the previous-close
+monthly source and latch still intend 98% stocks, with no option inversion.
+Both stress paths first breach on 2022-01-27: the prior curve is inverted and
+the saved target is BIL, but actual closing holdings still contain stocks
+under the original extra delay. Neither event can be generalized into the
+other mechanism.
+
+The maximum drawdown starts from the 2021-11-18 peak. Its trough is 2022-12-28
+for base and 2023-03-13 for stress. Observed prior-close-off/current-close-stock
+sessions are zero for both base paths and 27/13 for ten-/five-year stress.
+The 58/31 ten-/five-year target regime changes are intentions, not executed
+order counts. Condition-labeled net log-return partitions describe the same
+realized portfolio; they are not asset PnL attribution, conditional strategies
+or evidence that a hypothetical earlier exit would satisfy the gates.
+
+The private diagnostic receipt has SHA256
+`db243e3aa7b59d1711d8f08e2467cfb0797576670120477938af1b4b47f0ce69`.
+The 82-event journal and all original evidence remain unchanged. Next work
+reviews distinct economic characteristics and their admission evidence,
+not the failed option threshold, recovery clock or risk-cap parameters.
+Historical queued definitions and prepared targets are not current
+registrations; old catalog and account pipelines must not be resumed merely
+because their planning dates have passed.
 
 ## Independent IBKR price-history source boundary
 

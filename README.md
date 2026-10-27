@@ -99,6 +99,13 @@ matched-cost SPY. There are now seven completed/rejected SSD hypotheses,
 28 new account paths and 185 combined completed configurations, with no
 qualified champion or new prospective observation.
 
+The subsequent saved-account diagnosis separates two failures. Both base
+paths first exceed 15% drawdown on 2022-01-25 while the previous-close intent
+still holds stocks and the option curve is not inverted. Both stress paths
+first breach on 2022-01-27 with a prior BIL intent but stocks still held under
+the preserved extra execution delay. This adds no strategy trial and does
+not justify tuning the option threshold, recovery clock or execution rules.
+
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
 
