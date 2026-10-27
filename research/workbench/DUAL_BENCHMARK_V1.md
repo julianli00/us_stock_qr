@@ -360,7 +360,7 @@ All 2,533 defined target sessions match a separate sequential oracle exactly;
 nine prefix checks include truncated non-month-end histories. The saved source
 and original accounts are not recomputed. At registration there are seven SSD
 registrations, six completed, one pending and still 184 combined completed.
-No new candidate account has been evaluated.
+No new candidate account had been evaluated at that point.
 
 The packet-wide no-account declaration is explicit and required. A per-target
 copy, when present, must agree. Missing or nonfalse packet-wide evidence and
@@ -380,6 +380,33 @@ dependencies, without mutating earlier runners or their globals:
 All four fresh funded paths remain required; no threshold, reentry-clock,
 allocation-scope or source search follows from this registration. Rejected
 outcomes and adaptive selection remain visible.
+
+The actual preregistration commit
+`c6452082acafcbffc6b7cf0fbce85ab1488abfaa` was remotely verified before
+the four accounts completed at `2026-10-27T20:43:19.984335+00:00`.
+The [complete scalar result](evidence/option_exit_latch_20261027_results_v1.json)
+retains every gate and the fixed source/clock:
+
+| Path | Net CAGR | Net Sharpe | Max DD | Annualized two-sided turnover | Model orders | Total costs (USD) |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 10y base | 15.6961% | 0.8171 | 30.4238% | 11.5617 | 416 | 1,561.68 |
+| 10y stress | 14.3425% | 0.7458 | 29.4229% | 11.5456 | 421 | 4,694.70 |
+| 5y base | 13.9260% | 0.5856 | 30.5784% | 12.4900 | 241 | 591.88 |
+| 5y stress | 13.0070% | 0.5446 | 29.6233% | 12.4532 | 236 | 1,610.68 |
+
+The hypothesis is **rejected**. All four net-CAGR gates pass, but all four
+Sharpe, drawdown and QQQ gates fail. Only ten-year base beats matched-cost
+SPY; both stress paths also miss the preserved base-cost SPY gate.
+The largest independent accounting difference is below USD 0.000000000073.
+These are funded historical model orders, not broker orders. Stress changes
+both costs and delay, so its return difference is not a fee-only effect.
+
+The separate SSD journal now records seven completed/reviewed hypotheses,
+28 account paths, zero pending, zero technical failures and no qualified
+champion. Combined completed configurations are 185. Original ledger and
+prospective models remain unchanged; no new source or broker request occurred.
+Next work must diagnose saved evidence before choosing another economic
+question, not sweep the failed option threshold or recovery clock.
 
 ## Independent IBKR price-history source boundary
 

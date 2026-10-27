@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completed configurations preserved; eight reference accounts; six rejected hypotheses and one separately registered pending hypothesis | Separate versioned net-CAGR/SPY/QQQ criteria; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completed configurations preserved; eight reference accounts; seven completed/rejected hypotheses across four cohorts | Separate versioned net-CAGR/SPY/QQQ criteria; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -75,8 +75,8 @@ completed at 19:56:54 UTC. The [complete channel results](research/workbench/evi
 reject both hypotheses: every path fails Sharpe, drawdown and QQQ gates.
 Ten-year base net CAGR is 9.5344% with gold trend defense and 7.0490% with
 gold channel defense; annualized two-sided turnover rises to 22.6986 and
-17.0165. There are six completed/rejected SSD hypotheses, 24 new account paths,
-184 combined completed configurations and still no qualified champion.
+17.0165. At that cohort's completion there were six rejected SSD hypotheses,
+24 new account paths, 184 combined completed configurations and no champion.
 
 The [fourth cohort registration](research/workbench/evidence/option_exit_latch_20261027_registration_v1.json)
 occurred at 2026-10-27 20:31:30 UTC, before target preparation. It contains
@@ -84,9 +84,20 @@ exactly one fixed asymmetric rule: option-term inversion exits the saved
 monthly commitment into actual BIL, while only a noninverted completed exchange
 month end can restore the latest monthly intent. It does not retune the failed
 price channels or replay the original monthly accounts. All 2,533 defined
-targets match a separate sequential oracle and nine prefix checks. There are
-seven registered SSD hypotheses, six completed and one pending; no account
-for this new rule has been run, and actual publication remains required.
+targets match a separate sequential oracle and nine prefix checks. At that
+registration there were seven registered SSD hypotheses, six completed and
+one pending; no new candidate account had run.
+
+Actual preregistration commit `c6452082acafcbffc6b7cf0fbce85ab1488abfaa`
+was published before all four new paths completed at 20:43:19 UTC.
+The [complete option-latch results](research/workbench/evidence/option_exit_latch_20261027_results_v1.json)
+reject the hypothesis: every path clears 12% net CAGR but fails Sharpe,
+drawdown and QQQ gates. Ten-year base net CAGR is 15.6961%, Sharpe 0.8171
+and maximum drawdown 30.4238%; annualized two-sided turnover is 11.5617
+with 416 model orders and USD 1,561.68 total costs. Only that path beats
+matched-cost SPY. There are now seven completed/rejected SSD hypotheses,
+28 new account paths and 185 combined completed configurations, with no
+qualified champion or new prospective observation.
 
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
