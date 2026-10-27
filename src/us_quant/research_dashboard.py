@@ -576,6 +576,13 @@ def ssd_research(inputs: PublishedInputs, node: dict, legacy_completed: int) -> 
         raise DashboardError("ssd_aggregate_count_mismatch")
     return {
         **first, **totals, "candidates": candidates,
+        "snapshot_schema_version": 2, "program_id": "ssd_continuous_research_v1",
+        "study_id": first["study_id"] if len(cohorts) == 1 else None,
+        "status": "cohort_evaluations_pending" if totals["pending"] else "cohort_evaluations_finished",
+        "completed_at": None if totals["pending"] else max(
+            (cohort["completed_at"] for cohort in cohorts),
+            key=lambda value: datetime.fromisoformat(value)),
+        "single_cohort_reference_fields_scope": "preserved_first_equity_first_pair",
         "cohorts": [{key: value for key, value in cohort.items() if key != "candidates"} for cohort in cohorts],
     }
 

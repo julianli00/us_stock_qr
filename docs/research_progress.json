@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-28",
-  "phase": "ssd_commitment_duration_registered_waiting_evaluation",
+  "phase": "ssd_commitment_duration_complete_both_rejected",
   "active_research_focus": "fixed_month_end_and_21slot_commitments_of_unchanged_equity_first_targets",
   "research_dashboard": {
     "server": "src/us_quant/research_dashboard.py",
@@ -17,22 +17,22 @@
     "original_flat_fields_scope": "Preserved first equity-first pair snapshot; current SSD strategy counts are aggregate_counts and additional_cohorts.",
     "aggregate_counts": {
       "registered": 4,
-      "completed": 2,
-      "reviews": 2,
-      "pending": 2,
+      "completed": 4,
+      "reviews": 4,
+      "pending": 0,
       "technical_failures": 0,
       "qualified": 0,
-      "account_paths": 8,
-      "total_legacy_plus_ssd_completed": 180
+      "account_paths": 16,
+      "total_legacy_plus_ssd_completed": 182
     },
     "additional_cohorts": [
       {
         "study_id": "ssd_commitment_duration_20261027_v1",
         "registration": "research/workbench/evidence/commitment_duration_20261027_registration_v1.json",
         "registration_sha256": "aa8e921853348db0286307bb726296955240ca8402d900573aadff5c888a8217",
-        "results": null,
-        "results_sha256": null,
-        "preregistration_commit": null
+        "results": "research/workbench/evidence/commitment_duration_20261027_results_v1.json",
+        "results_sha256": "539ec87d74996baa3f64e9dcc844ad9847b1c869597573a93d7fa718bbe98a8a",
+        "preregistration_commit": "56c3c9366bbbaf0249eb7990d500f9edc3aaa143"
       }
     ],
     "status": "first_pair_complete_both_rejected",

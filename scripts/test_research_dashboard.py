@@ -204,6 +204,9 @@ class ProjectionTests(unittest.TestCase):
         result = build_snapshot(root)
         ssd = result["ssd_research"]
         self.assertEqual((ssd["registered"], ssd["completed"], ssd["pending"]), (4, 2, 2))
+        self.assertEqual(ssd["status"], "cohort_evaluations_pending")
+        self.assertIsNone(ssd["completed_at"])
+        self.assertIsNone(ssd["study_id"])
         self.assertEqual(result["summary"], self.current["summary"])
         self.assertEqual(result["forward"], self.current["forward"])
         for candidate in ssd["candidates"][2:]:
@@ -217,6 +220,9 @@ class ProjectionTests(unittest.TestCase):
         result = build_snapshot(root)
         self.assertEqual(result["ssd_research"]["completed"], 4)
         self.assertEqual(result["ssd_research"]["account_paths"], 16)
+        self.assertEqual(result["ssd_research"]["status"], "cohort_evaluations_finished")
+        self.assertEqual(result["ssd_research"]["completed_at"],
+                         max(row["completed_at"] for row in result["ssd_research"]["cohorts"]))
         self.assertEqual(result["ssd_research"]["cohorts"][0]["completed"], 2)
         self.assertEqual(result["ssd_research"]["total_legacy_plus_ssd_completed"], 182)
         self.assertEqual(result["budget"], self.current["budget"])

@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completed configurations preserved; eight reference accounts; two rejected hypotheses and two further registered commitments awaiting evaluation | Separate versioned net-CAGR/SPY/QQQ criteria; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completed configurations preserved; eight reference accounts; four completed, rejected hypotheses in two cohorts | Separate versioned net-CAGR/SPY/QQQ criteria; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -54,10 +54,14 @@ The [next actual registration](research/workbench/evidence/commitment_duration_2
 occurred at 2026-10-27 18:39:57 UTC, before target preparation. It freezes
 month-end intent commitment and 21 equal rotating commitments of the unchanged
 uncapped source. Both 2,533-session target matrices matched independent causal
-checks; these are not account results. Four new-lane hypotheses are registered,
-two remain pending and two are completed/rejected. New accounts still require
-publication of their exact registration, rules and code; all original gates
-and exposed-history limitations remain.
+checks; these are not account results. Preregistration commit
+`56c3c9366bbbaf0249eb7990d500f9edc3aaa143` was published before all eight new
+paths completed at 18:50 UTC. The [complete commitment results](research/workbench/evidence/commitment_duration_20261027_results_v1.json)
+reject both hypotheses: month-end commitment beats both return benchmarks on
+every path but still fails the drawdown gate throughout, and most Sharpe paths
+also fail. The 21-slot law fails every Sharpe/drawdown path and misses ten-year
+QQQ. There are four completed/rejected new-lane hypotheses, 182 completed
+configurations across both lanes, and no qualified champion.
 
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
