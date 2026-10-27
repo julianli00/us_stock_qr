@@ -454,7 +454,8 @@ def ssd_cohort(inputs: PublishedInputs, item: dict, node: dict, protocol: dict, 
         or not registered or len(registered) != len(packet["entries"])
         or packet["new_registered_candidates"] != len(registered)
         or any(packet.get(key) is not False for key in
-               ("order_authority", "investment_objective_verified", "independent_forward_validation"))
+               ("order_authority", "investment_objective_verified", "independent_forward_validation",
+                "candidate_accounts_or_metrics_computed"))
     ):
         raise DashboardError("ssd_cohort_registration_mismatch")
     created = datetime.fromisoformat(packet["created_at"])
@@ -474,7 +475,8 @@ def ssd_cohort(inputs: PublishedInputs, item: dict, node: dict, protocol: dict, 
             or registered_at.tzinfo is None or proved_at.tzinfo is None
             or not registered_at <= proved_at <= created
             or entry["target_proof"]["registered_event_sha256"] != entry["registered_event_sha256"]
-            or entry["target_proof"]["candidate_accounts_or_metrics_computed"] is not False
+            or ("candidate_accounts_or_metrics_computed" in entry["target_proof"]
+                and entry["target_proof"]["candidate_accounts_or_metrics_computed"] is not False)
         ):
             raise DashboardError("ssd_cohort_registration_mismatch")
     source = None

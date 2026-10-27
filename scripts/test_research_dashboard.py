@@ -158,7 +158,8 @@ class ProjectionTests(unittest.TestCase):
         node = progress["ssd_continuous_research_v1"]
         packet = json.loads((root / node["first_pair_registration"]).read_text())
         study_id = "synthetic_commitment_study"
-        packet.update(schema_version=2, study_id=study_id, independent_forward_validation=False)
+        packet.update(schema_version=2, study_id=study_id, independent_forward_validation=False,
+                      candidate_accounts_or_metrics_computed=False)
         identifiers = ("synthetic_commitment_a", "synthetic_commitment_b")
         for identifier, entry in zip(identifiers, packet["entries"]):
             entry["candidate_id"] = entry["specification"]["candidate"]["id"] = identifier
@@ -214,6 +215,44 @@ class ProjectionTests(unittest.TestCase):
             self.assertFalse(candidate["full_gate_pass"])
             self.assertEqual(len(candidate["paths"]), 4)
             self.assertTrue(all(path["metrics"] is None for path in candidate["paths"]))
+
+    def change_pending_ssd_registration(self, root: Path, mutate) -> None:
+        progress = json.loads((root / "docs/research_progress.json").read_text())
+        item = progress["ssd_continuous_research_v1"]["additional_cohorts"][0]
+        self.assertIsNone(item["results"])
+        self.change(root, item["registration"], mutate)
+        item["registration_sha256"] = hashlib.sha256(
+            (root / item["registration"]).read_bytes()).hexdigest()
+        (root / "docs/research_progress.json").write_text(json.dumps(progress))
+
+    def test_ssd_explicit_packet_account_boundary_covers_entries_without_duplicate_flag(self) -> None:
+        root = self.synthetic_ssd_cohort()
+        def mutate(packet):
+            self.assertIs(packet["candidate_accounts_or_metrics_computed"], False)
+            for entry in packet["entries"]:
+                entry["target_proof"].pop("candidate_accounts_or_metrics_computed")
+        self.change_pending_ssd_registration(root, mutate)
+        ssd = build_snapshot(root)["ssd_research"]
+        self.assertEqual((ssd["completed"], ssd["pending"], ssd["account_paths"]), (2, 2, 8))
+        self.assertTrue(all(path["metrics"] is None
+                            for row in ssd["candidates"][2:] for path in row["paths"]))
+
+    def test_ssd_absent_or_conflicting_account_boundary_is_not_assumed_safe(self) -> None:
+        for damage in ("missing_packet", "true_packet", "null_packet", "true_entry", "null_entry"):
+            with self.subTest(damage=damage):
+                root = self.synthetic_ssd_cohort()
+                def mutate(packet):
+                    key = "candidate_accounts_or_metrics_computed"
+                    if damage == "missing_packet":
+                        packet.pop(key)
+                    elif damage.endswith("packet"):
+                        packet[key] = True if damage == "true_packet" else None
+                    else:
+                        packet["entries"][0]["target_proof"][key] = (
+                            True if damage == "true_entry" else None)
+                self.change_pending_ssd_registration(root, mutate)
+                with self.assertRaisesRegex(DashboardError, "ssd_cohort_registration_mismatch"):
+                    build_snapshot(root)
 
     def test_ssd_second_completed_cohort_is_counted_without_reclassifying_first(self) -> None:
         root = self.synthetic_ssd_cohort(completed=True)

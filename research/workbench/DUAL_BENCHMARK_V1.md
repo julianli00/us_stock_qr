@@ -326,6 +326,61 @@ refusal, prospective observation or acceptance threshold was changed.
 Do not turn this failure into a channel-horizon grid or combine outcomes
 from different candidates into a passing strategy.
 
+## Fixed asymmetric option-exit latch
+
+The completed saved-channel diagnosis finds the first ten-year base 15%
+breaches on 2018-03-22, while both the prior-close channel and old trend
+intents still hold stocks. The ten-year target histories have 115 and 86
+asset-class intention changes. None of the four base paths has a
+prior-close-channel-off/current-close-equity-held mismatch. Gold exposure also
+appears at later first breaches. These are descriptive observations, not
+opening-weight attribution, a fee-only effect or proof that a faster fill
+would avoid the losses. The diagnosis adds no strategy trial or account.
+
+[`config/option-exit-latch-v1.json`](config/option-exit-latch-v1.json) freezes
+**one** new response/recovery clock after 184 exposed completed configurations.
+It reads the original saved month-end commitment matrix, not a reconstruction
+of its signal. At each completed close, the previously registered
+`VIX >= VIX3M` condition latches all 98% invested capital into actual BIL,
+including any gold allocation. Only a noninverted, actual XNYS month end clears
+that state and restores the latest saved monthly intent. An inversion wins
+on month end; a normal intervening day cannot restore risk.
+
+The state begins off in genuine prehistory and is never reset for a formal
+window. Source warmup remains undefined. The full original option-close
+coverage, price/RF inputs, daily actual-holdings band, cash funding, pending
+requests, costs and four-path gates remain unchanged. No pending request is
+cancelled, and overnight gaps can still breach the drawdown limit. This is a
+conservative portfolio response to an equity-option indicator, not proof it
+forecasts gold, a new economic factor or a capital guarantee.
+
+The [actual registration packet](evidence/option_exit_latch_20261027_registration_v1.json)
+records `2026-10-27T20:31:30.392482+00:00`, before new target preparation.
+All 2,533 defined target sessions match a separate sequential oracle exactly;
+nine prefix checks include truncated non-month-end histories. The saved source
+and original accounts are not recomputed. At registration there are seven SSD
+registrations, six completed, one pending and still 184 combined completed.
+No new candidate account has been evaluated.
+
+The packet-wide no-account declaration is explicit and required. A per-target
+copy, when present, must agree. Missing or nonfalse packet-wide evidence and
+conflicting per-target declarations are rejected, not defaulted to safety.
+This keeps the actual registration and target-proof receipts unchanged.
+
+The separate fixed driver checks its own packet plus all preserved publication
+dependencies, without mutating earlier runners or their globals:
+
+```bash
+"$SSD_WORKBENCH/.venv/bin/python" -I -B -m us_quant.ssd_option_latch_research_v1 \
+  evaluate --commit "$PUBLISHED_COMMIT"
+"$SSD_WORKBENCH/.venv/bin/python" -I -B -m us_quant.ssd_option_latch_research_v1 publish-result
+```
+
+`PUBLISHED_COMMIT` must be the actual verified preregistration/code commit.
+All four fresh funded paths remain required; no threshold, reentry-clock,
+allocation-scope or source search follows from this registration. Rejected
+outcomes and adaptive selection remain visible.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,
@@ -364,3 +419,13 @@ calendar, completed-session cutoff, actual coverage and adjustment behavior
 must be checked separately before admission. Do not silently substitute
 unadjusted prices, double-count dividends, replace registered inputs, infer
 ten-year coverage from a short probe, or backfill missed forward observations.
+
+The one actual probe stopped on unknown status 2157 before a historical
+request; no history was admitted. A bounded documentation review obtained
+the complete warning-code section of the
+[official reference](https://interactivebrokers.github.io/tws-api/message_codes.html):
+it includes 2158 but not 2157. A newer official entry failed at the transport
+layer, without HTTP content. Neither observation proves a subscription denial,
+document nonexistence or the absence of a definition in all official material.
+The existing unknown-status shutdown remains; no whitelist change or
+automatic reconnection followed.
