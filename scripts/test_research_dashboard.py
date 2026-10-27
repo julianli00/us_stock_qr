@@ -132,11 +132,16 @@ class ProjectionTests(unittest.TestCase):
 
     def test_ssd_counts_benchmarks_and_legacy_quota_are_separate(self) -> None:
         ssd = self.current["ssd_research"]
-        self.assertEqual((ssd["registered"], ssd["completed"], ssd["qualified"]), (2, 2, 0))
+        first = ssd["cohorts"][0]
+        self.assertEqual((first["registered"], first["completed"], first["qualified"]), (2, 2, 0))
+        for key in ("registered", "completed", "pending", "technical_failures", "account_paths"):
+            self.assertEqual(ssd[key], sum(cohort[key] for cohort in ssd["cohorts"]))
         self.assertIsNone(ssd["configuration_count_cap_before_deadline"])
         self.assertEqual((self.current["budget"]["cap"], self.current["budget"]["remaining"]), (6, 0))
         self.assertEqual(self.current["summary_scope"], "preserved_pre_ssd_research")
-        for candidate in ssd["candidates"]:
+        original = json.loads((ROOT / first["registration_evidence"]).read_text())
+        original_ids = {row["candidate_id"] for row in original["entries"]}
+        for candidate in (row for row in ssd["candidates"] if row["id"] in original_ids):
             self.assertEqual(candidate["status"], "rejected_historical")
             self.assertEqual(len(candidate["paths"]), 4)
             for path in candidate["paths"]:
@@ -146,6 +151,132 @@ class ProjectionTests(unittest.TestCase):
                 self.assertFalse(path["gates"]["sharpe_above_1"])
                 self.assertFalse(path["gates"]["drawdown_at_most_15pct"])
                 self.assertGreater(path["execution"]["total_cost_usd"], 0)
+
+    def synthetic_ssd_cohort(self, *, completed: bool = False) -> Path:
+        root = self.fixture()
+        progress = json.loads((root / "docs/research_progress.json").read_text())
+        node = progress["ssd_continuous_research_v1"]
+        packet = json.loads((root / node["first_pair_registration"]).read_text())
+        study_id = "synthetic_commitment_study"
+        packet.update(schema_version=2, study_id=study_id, independent_forward_validation=False)
+        identifiers = ("synthetic_commitment_a", "synthetic_commitment_b")
+        for identifier, entry in zip(identifiers, packet["entries"]):
+            entry["candidate_id"] = entry["specification"]["candidate"]["id"] = identifier
+            entry["specification"]["frozen"]["study_id"] = study_id
+        policy_path = "research/workbench/config/synthetic-commitment.json"
+        policy = {"study_id": study_id, "candidates": [row["specification"]["candidate"] for row in packet["entries"]]}
+        (root / policy_path).write_text(json.dumps(policy))
+        policy_sha = hashlib.sha256((root / policy_path).read_bytes()).hexdigest()
+        for entry in packet["entries"]:
+            entry["specification"]["frozen"]["policy"] = {"path": "config/synthetic-commitment.json", "sha256": policy_sha}
+        packet_path = "research/workbench/evidence/synthetic_commitment_registration.json"
+        (root / packet_path).write_text(json.dumps(packet))
+        packet_sha = hashlib.sha256((root / packet_path).read_bytes()).hexdigest()
+        item = {"study_id": study_id, "registration": packet_path, "registration_sha256": packet_sha,
+                "results": None, "results_sha256": None, "preregistration_commit": None}
+        total = {"registered": 4, "completed": 2, "reviews": 2, "pending": 2,
+                 "technical_failures": 0, "qualified": 0, "account_paths": 8,
+                 "total_legacy_plus_ssd_completed": 180}
+        allowed = [policy_path, packet_path]
+        if completed:
+            result = json.loads((root / node["first_pair_results"]).read_text())
+            result.update(schema_version=2, study_id=study_id, new_completed_strategy_evaluations=2,
+                          new_pending_candidates=0)
+            result["registration_packet"] = {"path": packet_path[len("research/workbench/"):], "sha256": packet_sha}
+            result["actual_publication_before_accounts"]["registration_packet"] = result["registration_packet"]
+            result["actual_publication_before_accounts"]["published_commit"] = "b" * 40
+            for identifier, review in zip(identifiers, result["reviews"]):
+                review["candidate_id"] = identifier
+            result_path = "research/workbench/evidence/synthetic_commitment_results.json"
+            (root / result_path).write_text(json.dumps(result))
+            item.update(results=result_path, results_sha256=hashlib.sha256((root / result_path).read_bytes()).hexdigest(),
+                        preregistration_commit="b" * 40)
+            total.update(completed=4, reviews=4, pending=0, account_paths=16,
+                         total_legacy_plus_ssd_completed=182)
+            allowed.append(result_path)
+        node.update(additional_cohorts=[item], aggregate_counts=total)
+        (root / "docs/research_progress.json").write_text(json.dumps(progress))
+        self.change(root, "config/publication_allowlist.json", lambda contract: contract["files"].extend(allowed))
+        return root
+
+    def test_ssd_new_pending_cohort_does_not_invent_accounts_or_replace_old_results(self) -> None:
+        root = self.synthetic_ssd_cohort()
+        result = build_snapshot(root)
+        ssd = result["ssd_research"]
+        self.assertEqual((ssd["registered"], ssd["completed"], ssd["pending"]), (4, 2, 2))
+        self.assertEqual(result["summary"], self.current["summary"])
+        self.assertEqual(result["forward"], self.current["forward"])
+        for candidate in ssd["candidates"][2:]:
+            self.assertEqual(candidate["status"], "pending")
+            self.assertFalse(candidate["full_gate_pass"])
+            self.assertEqual(len(candidate["paths"]), 4)
+            self.assertTrue(all(path["metrics"] is None for path in candidate["paths"]))
+
+    def test_ssd_second_completed_cohort_is_counted_without_reclassifying_first(self) -> None:
+        root = self.synthetic_ssd_cohort(completed=True)
+        result = build_snapshot(root)
+        self.assertEqual(result["ssd_research"]["completed"], 4)
+        self.assertEqual(result["ssd_research"]["account_paths"], 16)
+        self.assertEqual(result["ssd_research"]["cohorts"][0]["completed"], 2)
+        self.assertEqual(result["ssd_research"]["total_legacy_plus_ssd_completed"], 182)
+        self.assertEqual(result["budget"], self.current["budget"])
+
+    def test_ssd_partial_technical_failure_is_not_completed_or_silently_removed(self) -> None:
+        root = self.synthetic_ssd_cohort(completed=True)
+        progress = json.loads((root / "docs/research_progress.json").read_text())
+        node = progress["ssd_continuous_research_v1"]
+        item = node["additional_cohorts"][0]
+        source = json.loads((root / item["results"]).read_text())
+        failed = source["reviews"][0]
+        failed.update(status="technical_failure", failure_event_sha256="f" * 64, failure_stage="synthetic",
+                      all_four_paths_same_candidate_and_frozen_parameters=False)
+        failed["paths"] = failed["paths"][:1]
+        source.update(new_completed_configurations=1, new_completed_strategy_evaluations=1,
+                      new_reviews=1, new_technical_failures=1, new_account_paths=5)
+        (root / item["results"]).write_text(json.dumps(source))
+        item["results_sha256"] = hashlib.sha256((root / item["results"]).read_bytes()).hexdigest()
+        node["aggregate_counts"].update(completed=3, reviews=3, technical_failures=1,
+                                        account_paths=13, total_legacy_plus_ssd_completed=181)
+        (root / "docs/research_progress.json").write_text(json.dumps(progress))
+        actual = build_snapshot(root)["ssd_research"]
+        self.assertEqual((actual["completed"], actual["technical_failures"], actual["account_paths"]), (3, 1, 13))
+        self.assertEqual(actual["candidates"][2]["status"], "technical_failure")
+        self.assertFalse(actual["candidates"][2]["full_gate_pass"])
+        self.assertEqual(sum(path["metrics"] is not None for path in actual["candidates"][2]["paths"]), 1)
+
+    def test_ssd_aggregate_counts_cannot_stay_at_first_pair_or_double_count_candidates(self) -> None:
+        root = self.synthetic_ssd_cohort()
+        self.change(root, "docs/research_progress.json",
+                    lambda value: value["ssd_continuous_research_v1"]["aggregate_counts"].update(registered=2))
+        with self.assertRaisesRegex(DashboardError, "ssd_aggregate_count_mismatch"):
+            build_snapshot(root)
+        root = self.synthetic_ssd_cohort()
+        self.change(root, "docs/research_progress.json",
+                    lambda value: value["ssd_continuous_research_v1"]["additional_cohorts"].append(
+                        copy.deepcopy(value["ssd_continuous_research_v1"]["additional_cohorts"][0])))
+        with self.assertRaisesRegex(DashboardError, "ssd_duplicate_cohort_or_candidate"):
+            build_snapshot(root)
+
+    def test_ssd_new_cohort_requires_its_own_publication_packet_and_complete_review(self) -> None:
+        for damage in ("packet", "missing_path", "count", "false_pass"):
+            with self.subTest(damage=damage):
+                root = self.synthetic_ssd_cohort(completed=True)
+                progress = json.loads((root / "docs/research_progress.json").read_text())
+                item = progress["ssd_continuous_research_v1"]["additional_cohorts"][0]
+                result = json.loads((root / item["results"]).read_text())
+                if damage == "packet":
+                    result["actual_publication_before_accounts"]["registration_packet"] = {"path": "old.json", "sha256": "0" * 64}
+                elif damage == "missing_path":
+                    result["reviews"][0]["paths"].pop()
+                elif damage == "count":
+                    result["new_completed_configurations"] = 1
+                else:
+                    result["reviews"][0]["status"] = "historical_point_gates_passed"
+                (root / item["results"]).write_text(json.dumps(result))
+                item["results_sha256"] = hashlib.sha256((root / item["results"]).read_bytes()).hexdigest()
+                (root / "docs/research_progress.json").write_text(json.dumps(progress))
+                with self.assertRaises(DashboardError):
+                    build_snapshot(root)
 
     def test_ssd_hash_changed_receipt_is_not_silently_accepted(self) -> None:
         root = self.fixture()
@@ -242,6 +373,11 @@ class ProjectionTests(unittest.TestCase):
         new_count = len(state["candidate_reviews"])
         self.change(root, "docs/research_progress.json",
                     lambda p: p["recurring_research_program"].update(new_strategy_evaluations=new_count))
+        def update_combined_count(progress):
+            ssd = progress.get("ssd_continuous_research_v1", {})
+            if "aggregate_counts" in ssd:
+                ssd["aggregate_counts"]["total_legacy_plus_ssd_completed"] += 1
+        self.change(root, "docs/research_progress.json", update_combined_count)
         audit = json.loads((root / "docs/research_progress.json").read_text())["source_bound_review"]["audit"]
         self.change(root, audit, lambda a: a.update(reviewed_candidates=new_count, regenerated_strategy_paths=4 * new_count))
         refreshed = build_snapshot(root)

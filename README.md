@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completed configurations preserved; eight new reference accounts; two new completed, rejected hypotheses | Separate versioned net-CAGR/SPY/QQQ criteria; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completed configurations preserved; eight reference accounts; two rejected hypotheses and two further registered commitments awaiting evaluation | Separate versioned net-CAGR/SPY/QQQ criteria; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -47,8 +47,18 @@ a required fence. Preregistration commit `00b82e9e00cc777901689190083f0627c4ac4a
 was genuinely published before all eight candidate paths completed at 16:52 UTC.
 Both hypotheses were rejected; the
 [complete scalar results](research/workbench/evidence/equity_first_20261027_results_v1.json)
-retain every path, turnover and fee. There are now 180 completed configurations
-across the preserved legacy and separate SSD lanes, not a qualified champion.
+retain every path, turnover and fee. The first pair brought the completed total
+to 180 across the preserved legacy and separate SSD lanes, not a qualified champion.
+
+The [next actual registration](research/workbench/evidence/commitment_duration_20261027_registration_v1.json)
+occurred at 2026-10-27 18:39:57 UTC, before target preparation. It freezes
+month-end intent commitment and 21 equal rotating commitments of the unchanged
+uncapped source. Both 2,533-session target matrices matched independent causal
+checks; these are not account results. Four new-lane hypotheses are registered,
+two remain pending and two are completed/rejected. New accounts still require
+publication of their exact registration, rules and code; all original gates
+and exposed-history limitations remain.
+
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
 

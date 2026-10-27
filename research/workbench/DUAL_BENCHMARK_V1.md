@@ -137,6 +137,64 @@ evidence before choosing a distinct economic hypothesis; do not conceal these
 failures, replay finished accounts, or turn the failed cap into an unregistered
 parameter grid.
 
+## Separately frozen commitment-duration study
+
+[`config/commitment-duration-v1.json`](config/commitment-duration-v1.json) keeps
+the original uncapped equity-first signal and studies two execution-intent
+architectures: carry the last completed XNYS month-end target, or average
+21 rotating daily target commitments. Twenty-one comes from 252 sessions
+divided by 12 months; it is not selected by a horizon search. Both need
+21 complete source observations before issuing an aggregate intent.
+
+The source is the already saved and proved target matrix, not a refit or replay
+of the old strategy. Source files, old code, the 24-event pre-study journal
+prefix, four economic families, 200-observation threshold, 98% target invested
+budget and 0.025 actual-holdings band remain fixed. A calendar-aware month-end
+test must not mistake the end of a truncated file for the end of a month.
+An independent sequential/deque oracle and prefix truncations check both laws
+before accounts. Only one funded account trades each aggregate target: these
+are neither separately capitalized shadow portfolios nor averaged CAGRs.
+
+The [actual packet](evidence/commitment_duration_20261027_registration_v1.json)
+records both registrations at 2026-10-27 18:39:57 UTC, before target preparation.
+Both have 2,533 defined sessions. The independent maximum target-weight
+difference is zero for month-end commitment and approximately 2.22e-16 for the
+21-slot mean; eight prefix checks include a non-month-end final date. No
+candidate account was calculated by this registration or target proof.
+
+Monthly commitment does not prohibit intra-month drift rebalancing under the
+unchanged daily holdings-band executor. Both laws can retain declining
+exposures, miss rebounds, or increase costs; neither promises a drawdown floor.
+The economic question was chosen after 180 completed configurations and the
+first pair's saved 2022 holdings/PnL diagnosis. All historical windows remain
+exposed and adaptively selected. This is not a new independent test set.
+
+The separate driver leaves the original registered runner unchanged:
+
+```bash
+"$SSD_WORKBENCH/.venv/bin/python" -I -B -m us_quant.ssd_commitment_research_v1 register
+# Publish the exact sanitized registration, code and policy before accounts.
+"$SSD_WORKBENCH/.venv/bin/python" -I -B -m us_quant.ssd_commitment_research_v1 \
+  evaluate --commit "$PUBLISHED_COMMIT"
+"$SSD_WORKBENCH/.venv/bin/python" -I -B -m us_quant.ssd_commitment_research_v1 publish-result
+```
+
+Registration is resumable, not permission to repeat completed studies. The
+new packet has its own publication check in addition to the inherited source
+and engine check. New candidate IDs receive distinct account directories
+under the immutable executor's existing `equity-first-20261027-v1` namespace;
+cohort results are separately stored under `commitment-duration-20261027-v1`.
+No original account is overwritten or reclassified. Aggregate progress counts
+all actual journal registrations, reviews, pending candidates and technical
+failures, rather than resetting counters to the size of the latest pair.
+Authorization expiry preserves partial work without inventing a completed
+account or a technical failure.
+
+The dashboard retains the original first-pair snapshot and derives separate
+cohort/global totals. Pending and failed paths remain missing, never zero-return
+successes. It uses only explicitly published scalar evidence, not private
+prices, targets, daily accounts or the mutable private journal.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,

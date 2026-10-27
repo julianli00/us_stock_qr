@@ -10,6 +10,8 @@ const keyNames = { sharpe_above_1: "夏普 >1", cagr_above_12pct: "净 CAGR >12%
 const titles = {
   equity_first_trend200_band025_v1: "权益优先：长趋势开关",
   equity_first_vix_variance_band025_v1: "权益优先：增加 VIX 方差上限",
+  equity_first_month_end_commitment_v1: "权益优先：月末目标承诺",
+  equity_first_21slot_commitment_v1: "权益优先：21 个交错目标",
   semiconductor_option_proxy_dollar_observed_band025: "隐含波动预算 + 美元防御 + 持仓偏差带",
   semiconductor_option_proxy_observed_band025: "隐含波动预算 + 持仓偏差带",
   macro_real_yield_factor_tilt: "实际利率因子倾斜",
@@ -58,7 +60,7 @@ function gateTable(row) {
     const tr = el("tr");
     tr.append(el("td", "", `${path.years} 年 / ${path.scenario === "base" ? "基础" : "压力"}`));
     if (!path.metrics) {
-      const missing = el("td", "muted", "该路径未完成；原失败记录保留"); missing.colSpan = dual ? 6 : 5; tr.append(missing);
+      const missing = el("td", "muted", "该路径未完成；不填充收益或通过指标"); missing.colSpan = dual ? 6 : 5; tr.append(missing);
     } else {
       tr.append(el("td", "", pct(path.metrics.cagr)));
       tr.append(el("td", "", pct(path.benchmark?.cagr)));
@@ -78,25 +80,35 @@ function gateTable(row) {
 }
 function ssdOverview(ssd) {
   const section = el("section");
-  section.append(el("p", "notice", `SSD 新口径：${ssd.registered} 项登记，${ssd.completed} 项完成，${ssd.qualified} 项通过全部历史门槛。净 CAGR >12%、夏普 >1、回撤 ≤15%，并同时跑赢 SPY / QQQ；不是独立前瞻证明。`));
+  section.append(el("p", "notice", `SSD 新口径：${ssd.registered} 项登记，${ssd.completed} 项完成，${ssd.pending ?? 0} 项待完成，${ssd.technical_failures ?? 0} 项技术失败，${ssd.qualified} 项通过全部历史门槛。净 CAGR >12%、夏普 >1、回撤 ≤15%，并同时跑赢 SPY / QQQ；不是独立前瞻证明。`));
   ssd.candidates.forEach((row) => {
     const article = el("article", "conclusion");
     append(article, append(el("div", "conclusion-title"), append(el("div"), el("h2", "", label(row)), el("p", "candidate-id", row.id)), badge(row)), gateTable(row));
     const failed = row.paths.flatMap((path) => Object.entries(path.gates).filter(([, pass]) => !pass).map(([key]) => `${path.years}年${path.scenario === "base" ? "基础" : "压力"}：${keyNames[key]}`));
-    article.append(el("p", "gate-note", failed.length ? `未通过：${failed.join("；")}。` : "四条历史路径通过；仍无独立前瞻证明或交易权限。"));
+    const incomplete = row.status === "pending" || row.status === "technical_failure";
+    article.append(el("p", "gate-note", incomplete
+      ? `${row.status === "technical_failure" ? "技术失败，保留已经产生的路径和失败记录。" : "尚未完成全部账户及审阅，不计为完成或通过。"}${failed.length ? `已完成路径未通过：${failed.join("；")}。` : ""}`
+      : failed.length ? `未通过：${failed.join("；")}。` : "四条历史路径通过；仍无独立前瞻证明或交易权限。"));
     const table = el("table"), heading = el("tr"), body = el("tbody");
     ["路径", "年化双边换手（含初始建仓）", "模型订单数", "累计费用 USD"].forEach((value) => heading.append(el("th", "", value)));
     table.append(append(el("thead"), heading));
-    row.paths.forEach((path) => body.append(append(el("tr"),
+    row.paths.filter((path) => path.execution).forEach((path) => body.append(append(el("tr"),
       el("td", "", `${path.years}年 / ${path.scenario === "base" ? "基础" : "压力"}`),
       el("td", "", `${path.execution.annualized_two_sided_turnover.toFixed(2)} 倍`),
       el("td", "", path.execution.model_order_count),
       el("td", "", path.execution.total_cost_usd.toFixed(2)))));
-    table.append(body); article.append(append(el("div", "table-wrap"), table));
+    table.append(body);
+    if (body.childElementCount) article.append(append(el("div", "table-wrap"), table));
     section.append(article);
   });
   const references = el("p", "notice");
-  [[ssd.results_evidence, "完整拒绝或通过记录"], [ssd.registration_evidence, "事前登记"], [ssd.benchmark_evidence, "全额持有双基准"]].forEach(([path, title], index) => {
+  const cohorts = ssd.cohorts || [ssd];
+  const links = cohorts.flatMap((cohort, index) => [
+    [cohort.registration_evidence, `批次 ${index + 1} 事前登记`],
+    ...(cohort.results_evidence ? [[cohort.results_evidence, `批次 ${index + 1} 完整结果`]] : []),
+  ]);
+  links.push([ssd.benchmark_evidence, "全额持有双基准"]);
+  links.forEach(([path, title], index) => {
     if (index) references.append(document.createTextNode(" / "));
     const link = evidence(path); link.textContent = title; references.append(link);
   });

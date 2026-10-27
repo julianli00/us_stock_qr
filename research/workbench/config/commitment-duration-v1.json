@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_commitment_duration_20261027_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "source_candidate_id": "equity_first_trend200_band025_v1",
+  "prior_completed_configurations": 180,
+  "prior_new_lane_registered_candidates": 2,
+  "prior_new_lane_completed_configurations": 2,
+  "prior_journal_sequence": 24,
+  "prior_journal_head_sha256": "29acd47dcb2ec03232925b71400533fe167d51b0af403fd1b3d748f341d73e3b",
+  "new_economic_factor_definitions": 0,
+  "minimum_economic_factor_families": 3,
+  "common_source_intent_warmup": 21,
+  "candidate_count_in_this_study": 2,
+  "study_size_is_a_total_research_quota": false,
+  "candidates": [
+    {"id": "equity_first_month_end_commitment_v1", "commitment": "completed_month_end"},
+    {"id": "equity_first_21slot_commitment_v1", "commitment": "equal_21_rotating_intents"}
+  ],
+  "methodology": {
+    "hypothesis": "Daily changes in a binary defensive allocation can concentrate execution timing and repeatedly reverse expensive positions. Study commitment duration and diversification across decision dates, not another volatility cap, drawdown-floor multiplier or signal-lookback grid.",
+    "source": "Read the unchanged, already proved uncapped equity-first target matrix. Do not regenerate, alter or refit the source signal, its 200-observation threshold, asset composition or defense selection.",
+    "completed_month_end": "At each actual completed XNYS month-end close, replace the committed target with that day's complete source intent. Carry it until the next actual month-end. A truncated data file's final row is not automatically a month-end. Do not issue an intent until 21 complete source observations and a genuine month-end commitment exist.",
+    "equal_21_rotating_intents": "Maintain 21 equal target-intent slots. Each completed session replaces the oldest slot with the current source intent; issue their arithmetic mean only after all 21 slots are populated. Equivalently average the latest 21 complete source intents, including the current close. The horizon is 252 trading sessions divided by 12 months, not fitted to outcomes.",
+    "funding": "One fresh funded account trades each aggregate intent. Slots are target commitments, not separately capitalized shadow accounts, drifted sleeve holdings, averaged returns or averaged CAGRs. Preserve the 98% target invested budget and 2% idle-cash target.",
+    "execution": "Reuse the immutable equity-first simulator and original pure 0.025 actual-holdings trade band on every completed session, one pending request without overwrite/cancellation, original next-open base and extra-session stress delays, original costs, RF and initial drawdown peak. Monthly intent commitment can still trigger intra-month drift rebalances.",
+    "initialization": "Each formal fresh USD10000 account uses the last available prior-session committed target, with no inherited holdings or pre-window PnL. Both transformations have complete warmup before either original formal window.",
+    "acceptance": "Every original 10y/5y/base-stress path of the same candidate must satisfy the unchanged separately frozen dual-benchmark protocol. No path, year, cost or benchmark substitution.",
+    "prior_art": "Earlier monthly portfolio decisions, 63/126/252 relative-trend transfers and unleveraged ratcheting-floor protection remain completed historical studies. These two hypotheses change the commitment architecture of the separately registered equity-first source, not its economic factor definitions.",
+    "adaptive_selection": "Chosen after 180 completed configurations and examination of both first-pair outcomes and their saved 2022 holdings/PnL decomposition. All historical windows overlap exposed research; neither temporal aggregation nor preregistration restores independent out-of-sample status.",
+    "limitations": "Delayed commitments can retain declining assets, lose rapid rebounds or increase drift-rebalance costs. Equal target averaging is not a drawdown guarantee, and month-end concentration can introduce timing luck. No horizon sweep, historical date exception or parameter adjustment after outcomes.",
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}
