@@ -292,6 +292,40 @@ breakouts can whipsaw, miss rebounds, retain sector concentration and lose
 through gaps, delays or gold declines. No drawdown floor, cost reduction,
 benchmark outperformance or future profitability is guaranteed.
 
+### Channel outcome: all eight risk and QQQ paths fail
+
+The actual preregistration commit
+`b013af2a33c431f5ab386dff2643c86241979f5f` was verified before funded accounts.
+All eight paths completed at `2026-10-27T19:56:54.739840+00:00`, with maximum
+independent accounting discrepancy below USD7.64e-11. The
+[complete scalar result](evidence/channel_regimes_20261027_results_v1.json)
+preserves every path and rejection.
+
+| Gold defense | Path | Net CAGR | Net Sharpe | Maximum drawdown | Modeled fees, USD |
+|---|---|---:|---:|---:|---:|
+| 200-observation trend | 10y base | 9.5344% | 0.4833 | 29.3793% | 1,973.47 |
+| 200-observation trend | 10y stress | 6.0569% | 0.2866 | 34.0865% | 4,847.46 |
+| 200-observation trend | 5y base | 14.7407% | 0.6292 | 23.5655% | 918.60 |
+| 200-observation trend | 5y stress | 12.8371% | 0.5356 | 21.4330% | 2,504.04 |
+| Independent channel | 10y base | 7.0490% | 0.3552 | 27.2817% | 1,534.77 |
+| Independent channel | 10y stress | 4.2971% | 0.1896 | 34.5904% | 4,095.25 |
+| Independent channel | 5y base | 12.5606% | 0.5440 | 19.7905% | 706.45 |
+| Independent channel | 5y stress | 10.9207% | 0.4580 | 18.2080% | 2,039.03 |
+
+Neither candidate passes any Sharpe, drawdown or QQQ path. The gold-trend
+variant beats matched-cost SPY only in five-year base; this isolated gate is
+not qualification. Ten-year base annualized two-sided turnover is 22.6986
+and 17.0165, with 556 and 498 modeled tickets respectively. The channel law
+does not establish the hoped-for implementation improvement. Changes in
+exposure and execution remain inseparable; no fee-only causal claim is made.
+
+The separate SSD journal now has six completed reviews, 24 account paths,
+zero technical failures and zero full-gate passes. With the preserved
+178 original configurations, the total is 184. No old record, source
+refusal, prospective observation or acceptance threshold was changed.
+Do not turn this failure into a channel-horizon grid or combine outcomes
+from different candidates into a passing strategy.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,

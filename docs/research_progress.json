@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-28",
-  "phase": "ssd_channel_pair_registered_pending_publication",
-  "active_research_focus": "fixed_stateful_price_channel_risk_entry_and_exit",
+  "phase": "ssd_channel_pair_complete_both_rejected",
+  "active_research_focus": "saved_account_failure_diagnosis_before_next_independent_hypothesis",
   "research_dashboard": {
     "server": "src/us_quant/research_dashboard.py",
     "frontend": "web/research/index.html",
@@ -17,13 +17,13 @@
     "original_flat_fields_scope": "Preserved first equity-first pair snapshot; current SSD strategy counts are aggregate_counts and additional_cohorts.",
     "aggregate_counts": {
       "registered": 6,
-      "completed": 4,
-      "reviews": 4,
-      "pending": 2,
+      "completed": 6,
+      "reviews": 6,
+      "pending": 0,
       "technical_failures": 0,
       "qualified": 0,
-      "account_paths": 16,
-      "total_legacy_plus_ssd_completed": 182
+      "account_paths": 24,
+      "total_legacy_plus_ssd_completed": 184
     },
     "additional_cohorts": [
       {
@@ -38,9 +38,9 @@
         "study_id": "ssd_channel_regimes_20261027_v1",
         "registration": "research/workbench/evidence/channel_regimes_20261027_registration_v1.json",
         "registration_sha256": "471809c9b35a25e634573f4b0df349f089d41dc54f7c298f8fe7124d03aba7bf",
-        "results": null,
-        "results_sha256": null,
-        "preregistration_commit": null
+        "results": "research/workbench/evidence/channel_regimes_20261027_results_v1.json",
+        "results_sha256": "67271419c4b8a7800ee46371596239d0cfe934a8ba59e18d3bd6c97882b244ae",
+        "preregistration_commit": "b013af2a33c431f5ab386dff2643c86241979f5f"
       }
     ],
     "status": "first_pair_complete_both_rejected",
@@ -360,7 +360,10 @@
     "Accepted the separate SSD runtime and activated research through October31 23:59Beijing without a configuration-count ceiling. Preserved all original records and exhausted historical six-slot round; restored the localhost read-only dashboard and bound only the SSD session continuation. Timer configuration is not proof of scheduled execution.",
     "Completed eight source-bound full-capital SPY/QQQ benchmark accounts under a separately frozen net-CAGR protocol, with matched costs/timing, independent accounting and no new strategy trials. Ten-year QQQ net CAGR is21.1624%base/21.1239%stress; original four-path Sharpe/DD/cost/RF/initial-peak gates remain.",
     "Actually registered two equity-first hypotheses at2026-10-27T16:30:24UTC, alreadyOctober28Beijing, before real target preparation. Both2553-session matrices passed independent sequential/prefix proofs. New journal has2registrations/2proofs/0candidate accounts/0reviews; actual remote publication still required. Four existing economic families,0new definitions,0broker calls and no investment-goal claim.",
-    "Published actual preregistration00b82e9e00cc777901689190083f0627c4ac4a48 before candidate accounts, then completed all8new paths at2026-10-27T16:52:00UTC. Both hypotheses rejected: every path fails Sharpe and15%drawdown; no same-model four-path pass. New2completed/2reviews/0technical failures, old178/94/96unchanged,180combined completed. Daily variance cap raises ten-year base modeled orders469to4487 and fees1803.77to6697.93USD. OriginalSQLiteSHAunchanged/WAL0; no new forward days or broker calls."
+    "Published actual preregistration00b82e9e00cc777901689190083f0627c4ac4a48 before candidate accounts, then completed all8new paths at2026-10-27T16:52:00UTC. Both hypotheses rejected: every path fails Sharpe and15%drawdown; no same-model four-path pass. New2completed/2reviews/0technical failures, old178/94/96unchanged,180combined completed. Daily variance cap raises ten-year base modeled orders469to4487 and fees1803.77to6697.93USD. OriginalSQLiteSHAunchanged/WAL0; no new forward days or broker calls.",
+    "Separately registered month-end/21-slot commitments at18:39:57UTC and published56c3c9366bbbaf0249eb7990d500f9edc3aaa143 before all8paths completed18:50:43UTC. Both rejected; month-end beats both return benchmarks throughout but all drawdowns fail. SSD4completed/16paths,182combined,0champions; all old records preserved.",
+    "Saved-account-only commitment diagnosis completed19:40:49UTC with unchanged journal/ledger and0trials. First ten-year15%breach is2020-03-09 while prior-close raw200-observation equity intent remains98%stocks; later exposures also lag risk-off signals.21-slot fixed commissions are84.51%/91.38%of ten/five-year base fees. These are descriptive observations, not counterfactual or fee-only attribution.",
+    "Registered two fixed63/21price-channel hypotheses19:51:47UTC before2553-session targets each; publishedb013af2a33c431f5ab386dff2643c86241979f5f before8funded paths completed19:56:54UTC. Both rejected: all8Sharpe/drawdown/QQQgates fail. Gold-trend/channel10ybase netCAGR9.5344%/7.0490%,Sharpe0.4833/0.3552,DD29.3793%/27.2817%; turnover22.6986/17.0165. SSD6completed/6reviews/24paths/0technical/0passes,184combined; no new forward days or broker requests."
   ],
   "completed_zh": [
     "已保留可运行的原Top30算法、成本引擎和独立早期扫描器，并隔离导入52配置研究工作台。",
@@ -631,19 +634,22 @@
     "独立SSD运行环境已验收，持续研究授权至北京时间Oct31 23:59，不设配置次数上限；原记录及已耗尽的历史六配置轮次不改写。仅恢复本机只读dashboard及本SSD会话续接；绑定成功不代表定时研究已经送达或执行。",
     "按新冻结净CAGR口径完成SPY/QQQ全额持有、匹配费用和时序的8条基准账户，独立核算一致，不计为新策略试验。十年QQQ净CAGR为base21.1624%/stress21.1239%；原四路径Sharpe/DD/成本/RF/初始峰值门全部保持。",
     "2026-10-27T16:30:24UTC（北京时间Oct28）真实登记两项equity-first假设，随后各2553日完整目标矩阵通过独立顺序与前缀证明；新账本2登记/2目标证明/0候选账户/0审阅，尚需真实远端发布。沿用4经济家族、无新定义/券商调用，不宣称投资目标达成。",
-    "候选账户前已真实发布登记提交00b82e9e00cc777901689190083f0627c4ac4a48；2026-10-27T16:52:00UTC完成8条新路径，两项均拒绝，每条都未过Sharpe及15%回撤门，无同配置四路径通过。新增2完成/2审阅/0技术失败，原178/94/96不变、合计180完成。日变方差cap将十年base模型订单469增至4487、费用1803.77增至6697.93美元；原SQLite哈希/WAL0保持，无新前瞻日或券商调用。"
+    "候选账户前已真实发布登记提交00b82e9e00cc777901689190083f0627c4ac4a48；2026-10-27T16:52:00UTC完成8条新路径，两项均拒绝，每条都未过Sharpe及15%回撤门，无同配置四路径通过。新增2完成/2审阅/0技术失败，原178/94/96不变、合计180完成。日变方差cap将十年base模型订单469增至4487、费用1803.77增至6697.93美元；原SQLite哈希/WAL0保持，无新前瞻日或券商调用。",
+    "18:39:57UTC独立登记月末/21槽目标承诺，真实发布56c3c9366bbbaf0249eb7990d500f9edc3aaa143后，18:50:43UTC完成8路径；两项均拒绝。月末收益四路径都胜双基准，但回撤全失败；SSD4完成/16路径、合计182，无冠军，旧记录保持。",
+    "19:40:49UTC仅诊断已存承诺账户，账本/原数据库不变、不增试验。十年首次15%回撤越界为2020-03-09，前一收盘的原200观察权益意图仍98%股票；后续也存在风险关闭后仍持股。21槽十年/五年base固定佣金占费用84.51%/91.38%；仅描述，不冒充反事实或单独费用归因。",
+    "19:51:47UTC先登记两项固定63/21价格通道假设，再准备各2553日目标；真实发布b013af2a33c431f5ab386dff2643c86241979f5f后，19:56:54UTC完成8条资金约束路径。两项均拒绝，8路径Sharpe/回撤/QQQ门全失败。黄金趋势/通道十年base净CAGR9.5344%/7.0490%、Sharpe0.4833/0.3552、DD29.3793%/27.2817%，年化双边换手22.6986/17.0165；SSD6完成/6审阅/24路径/0技术失败/0通过、合计184，无新前瞻日或券商请求。"
   ],
   "next": [
-    "Publish the complete rejected first-pair scalar results and distinguish the new SSD authorization from the preserved historical six-slot record in the read-only dashboard. Keep private raw documents, prices, targets and daily accounts unpublished; do not rerun these completed accounts.",
-    "Use saved account evidence to diagnose the daily architecture and cost failures, then freeze an independently justified research question rather than sweep the same failed volatility knob. Resolve safe market-only source access independently; retain actual publication, four-path accounting and all rejection/technical-failure gates for every future cohort.",
+    "Preserve all three completed rejected SSD cohorts and their24funded paths; use saved evidence, not replayed accounts, before selecting another economic question. Keep private raw documents, prices, targets and daily accounts unpublished and all original six-slot history unchanged.",
+    "Do not sweep failed channel horizons, commitment durations, variance caps or ratcheted-floor parameters. Assess the remaining return/risk and implementation mechanism with explicit prior-art and full adaptive-search disclosure before any new registration.",
     "Continue economically motivated, preregistered independent small batches without ordinary per-batch approval or a configuration-count ceiling until2026-10-31T15:59Z. Use one computation; at cutoff preserve partial work, clear only the SSD session timer and confirm absence.",
-    "Keep old source refusals, VIG/SDY terminal429 and prospective/PIT gates. IBKR remains market-data-only authorization pending a proved safe startup path; default readonly connection is prohibited. A source blocker does not block independent admitted-history research."
+    "Keep old source refusals, VIG/SDY terminal429 and prospective/PIT gates. The independent market-only IBKR adapter is proved, but the one actual probe stopped on2157 before historical requests;0history rows/admissions,no automatic retry or inferred entitlement denial. Default readonly account synchronization remains prohibited."
   ],
   "next_zh": [
-    "发布首对完整拒绝结果的脱敏标量证据，并在只读dashboard区分当前SSD授权和保留的历史六配置轮次；原始文档、行情、目标矩阵和逐日账户保持私有，不重跑已完成账户。",
-    "用已保存账户定位日频结构及费用失败，再冻结有独立经济理由的新问题，不扫同一失败波动旋钮；安全market-only来源可独立推进，未来每轮仍须真实发布、原四路径核算和全部拒绝/技术失败记录。",
+    "保留SSD三组已拒绝假设及24条资金约束路径；选下一经济问题前只读已有证据，不重跑账户。原始文档、行情、目标矩阵、逐日账户保持私有，历史六配置轮次不改写。",
+    "不扫已失败的通道周期、承诺期限、方差cap或峰值保护参数；先结合既有研究和完整自适应试验披露，诊断剩余收益/风险与执行机制，再登记新的经济问题。",
     "持续开展有经济理由、事前冻结的独立小批次，无普通逐批确认或配置次数上限，截止2026-10-31T15:59Z；单计算job，届时保存未完状态、只清除SSD会话timer并确认不存在。",
-    "原拒绝来源、VIG/SDY终止429和前瞻/PIT门保持；IBKR仅授权行情历史，须先证明安全market-only启动，禁止默认readonly连接。单源阻断不停止已有准入历史的独立研究。"
+    "原拒绝来源、VIG/SDY终止429和前瞻/PIT门保持。独立IBKR market-only适配器已证明，但唯一真实探针在历史请求前因2157停止；历史行/准入0，不自动重试或推断订阅拒绝，仍禁止默认readonly账户同步。"
   ],
   "legacy_next_before_ssd_activation": [
     "The six-configuration round is completed and reviewed:6of6used/0remaining, all rejected. Stop same-round trials and parameter scans; a new round needs new explicit budget. Preserve178outcomes/94reviews/96versions and all failures; old76selection excludes the last18reviews. Original one-day models, four-path gates, costs, capital, W42 eligibility and VIG-SDY terminal stop remain unchanged.",
