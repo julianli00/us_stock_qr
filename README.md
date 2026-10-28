@@ -375,9 +375,26 @@ This minimizes squared weight movement, **not fees**. A retained
 synthetic witness shows why a cheaper algebraic fixed-fee solution
 cannot simply replace the unchanged engine's actual charge.
 Registration at 2026-10-28 10:41:17 UTC binds the original 131 desired
-targets and synthetic projection proof, before any new path-dependent
-issued targets or accounts. Counts are thirteen registered, twelve
-completed, one pending, 48 paths and 190 combined completions.
+targets and synthetic projection proof before path-dependent issued
+targets or accounts. Actual preregistration
+`0ac8889c004057a973665bd6ed9abd8c9b5b6ff8` preceded the
+[complete thirteenth result](research/workbench/evidence/band_projection_20261028_results_v1.json),
+finished at 2026-10-28 10:43:56 UTC. It is **rejected overall**:
+both ten-year QQQ comparisons fail and ten-year-base drawdown exceeds
+15%; both five-year paths pass their point gates.
+
+| Path | Net CAGR | Sharpe | Max DD | Annual two-sided turnover | Model orders | Costs USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 16.2845% | 1.1353 | 15.8479% | 3.4677 | 648 | 1,004.33 |
+| 10y stress | 15.9323% | 1.1067 | 14.7694% | 3.4730 | 654 | 2,055.55 |
+| 5y base | 20.3246% | 1.2136 | 12.3105% | 3.8264 | 327 | 469.49 |
+| 5y stress | 19.6286% | 1.1682 | 12.7382% | 3.8219 | 327 | 886.59 |
+
+Actual turnover and fees are lower in all four paths than the eleventh
+source, but net CAGR and Sharpe are also lower. Ten-year ticket counts
+rise despite lower notional turnover. This is not a cost optimum or
+net-performance improvement. Counts are thirteen completed SSD hypotheses,
+52 paths, 191 combined completions and zero qualified champions.
 
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).

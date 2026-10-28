@@ -1245,7 +1245,7 @@ The [thirteenth registration](evidence/band_projection_20261028_registration_v1.
 fixes `daily_proxy_nearest_band_execution_v1`. Actual registration at
 2026-10-28 10:41:17.151470 UTC precedes the source-only proof at
 10:41:17.452347 UTC and packet at 10:41:17.453485 UTC.
-No new path-dependent issued targets or accounts exist at this fence.
+No new path-dependent issued targets or accounts existed at this fence.
 
 The desired source is the eleventh model's exact saved 131-month matrix.
 Preserve its monthly calendar, initial fresh-center deployment, 98%
@@ -1283,8 +1283,48 @@ and four full-window gates remain. Synthetic projection, execution and
 fee-contract checks precede registration; real holding-feedback
 verification and independent accounts occur only after publication.
 
-Preregistration counts are thirteen registered, twelve completed,
+Preregistration counts were thirteen registered, twelve completed,
 one pending, 48 funded paths and 190 combined completed configurations.
+
+### Completed nearest-band result: lower costs, lower net returns
+
+The actual preregistration publication
+`0ac8889c004057a973665bd6ed9abd8c9b5b6ff8` preceded all new feedback
+accounts. The [complete result](evidence/band_projection_20261028_results_v1.json)
+finished at 2026-10-28 10:43:56.773479 UTC and is rejected overall.
+
+| Path | Net CAGR | Sharpe | Max DD | Annual two-sided turnover | Model orders | Costs USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 16.2845% | 1.1353 | 15.8479% | 3.4677 | 648 | 1,004.33 |
+| 10y stress | 15.9323% | 1.1067 | 14.7694% | 3.4730 | 654 | 2,055.55 |
+| 5y base | 20.3246% | 1.2136 | 12.3105% | 3.8264 | 327 | 469.49 |
+| 5y stress | 19.6286% | 1.1682 | 12.7382% | 3.8219 | 327 | 886.59 |
+
+All four CAGR>12%, Sharpe>1 and matched-cost SPY gates pass, including
+both stress-vs-base-SPY checks. Both five-year paths pass every point gate.
+Both ten-year QQQ comparisons fail, as does ten-year-base drawdown.
+The source's historical outcome and its failed gates are not rewritten.
+
+Against the eleventh center-rebalance source, fees decline by
+USD45.75/237.98/39.28/105.55 and notional turnover declines throughout.
+However, net CAGR declines by approximately
+0.533/0.389/0.618/0.292 percentage points and Sharpe also declines
+in every path. Ten-year orders increase from 617/603 to 648/654,
+whereas five-year orders decrease from 339/332 to 327/327. Lower weight
+movement or total fees does not imply fewer tickets or better net returns.
+
+Actual monthly feedback, independent breakpoint projections and the
+unchanged fee/funding engine are checked. Decision counts are
+121/121/61/61, issued requests 93/94/47/47, and the maximum independent
+projection difference is 1.1102230246251565e-16. The maximum independent
+NAV difference is USD9.458744898438454e-11. No cost fixed-point choice,
+threshold or metric tolerance was modified.
+
+Counts are thirteen completed/reviewed SSD hypotheses, 52 funded paths,
+191 combined completed configurations, zero pending, zero technical
+failures and zero qualifiers, with 154 journal events. No fourteenth
+model, bandwidth/norm scan, fee-free counterfactual or partial-pass
+promotion has been selected.
 
 ## Independent IBKR price-history source boundary
 
