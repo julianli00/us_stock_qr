@@ -1,0 +1,492 @@
+{
+  "candidate_accounts_or_metrics_computed": false,
+  "created_at": "2026-10-28T03:57:11.576530+00:00",
+  "entries": [
+    {
+      "candidate_id": "benchmark_opportunity_joint_tail_v1",
+      "registered_at": "2026-10-28T03:56:56.804178+00:00",
+      "registered_event_sha256": "2cf73c2f4329d09eb25362599ad337848e7a8d116d2f393a16edfe4ef3750a57",
+      "specification": {
+        "candidate": {
+          "construction": "joint_ES_with_benchmark_opportunity",
+          "id": "benchmark_opportunity_joint_tail_v1"
+        },
+        "frozen": {
+          "account_namespace": "reports/ssd-continuous-research-v1/equity-first-20261027-v1",
+          "account_namespace_reuses_execution_not_original_candidate_ids": true,
+          "benchmark_artifacts": [
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/QQQ-10y-base-bt.csv",
+              "sha256": "37283e57b73bad8b1b19fd0d159eab51765cdd998f49507f87251d77213058c7"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/QQQ-10y-base.csv",
+              "sha256": "097e3305385e2893bb57ec1faf597b43df38e798876fccbf886266195a61c388"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/QQQ-10y-base.json",
+              "sha256": "f7ea6339aa8938e4d16dae0c565beb3d83d7f081a1b69afb5e72b5928a37e232"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/QQQ-10y-stress-bt.csv",
+              "sha256": "24c0648b63c71dbbbacdac05da2a28d1a1a905ca2ff437ca61cbe4adaa2c5e58"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/QQQ-10y-stress.csv",
+              "sha256": "7b3ec1383a3b425de621bddbad5608a8478c1fd49eab6377e99a1ccf33b0d1e3"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/QQQ-10y-stress.json",
+              "sha256": "e1063dc0c80a2b1754e1a7646a4e1335b393bdb2c04831ce73708f28ea497164"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/QQQ-5y-base-bt.csv",
+              "sha256": "eeb18e007790724974eaafacfc22bc9559f5f2183217d249890845d06293144e"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/QQQ-5y-base.csv",
+              "sha256": "5a35017936ce07f4adceb5b15407eac0bd94d682edb46c05c1a2e09cedec17f8"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/QQQ-5y-base.json",
+              "sha256": "e7caea55e871ad18b55f19236ea5840286e073c9882350d0ac2bb8d833665a2b"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/QQQ-5y-stress-bt.csv",
+              "sha256": "52b9268f015dc291ba2eac4a5b6633a66bdd913ffa643a674ec28b9e2b7cf88b"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/QQQ-5y-stress.csv",
+              "sha256": "5eeff8c3cb8cc834a153ecee249295bc7a2105ecbc3ede91cc06c68b493b3c49"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/QQQ-5y-stress.json",
+              "sha256": "480320539c9c11e6e1fc6f46b8f8b5c2436767ef06f8b1b500c8a47db6b7efb3"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/SPY-10y-base-bt.csv",
+              "sha256": "f852a4f898b5c0a55cfbe0f2497691bc728a02daf77341e4f537ad62885735d7"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/SPY-10y-base.csv",
+              "sha256": "fddffb0bcc8e9056decca6af5194c1a494efd371f2522a0248c22236ca1c7e83"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/SPY-10y-base.json",
+              "sha256": "843f6a0cc0168c84e42cb44dd80fec07dc7a198d42018a96cbd711875e9bd01a"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/SPY-10y-stress-bt.csv",
+              "sha256": "1e8c57f3a9eac5fbb18afa7e23c2c41c4d0651d300a8779b69f9e015dd4cdadc"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/SPY-10y-stress.csv",
+              "sha256": "ad6902604bf17dfc51a284137eafa24c3577758b84c1ea76486f36735350dd23"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/SPY-10y-stress.json",
+              "sha256": "f20713c7fa0f57a7fa420083a5cc417b1d613f88ccfda91f290bf9eeae5f5f93"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/SPY-5y-base-bt.csv",
+              "sha256": "bdcdcaab24920990645a2d7421951026b86de4aa73f0d912c49374f9bb61933e"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/SPY-5y-base.csv",
+              "sha256": "4f54049d37ab73e587cb59dbb830c42a93170d77a31759999ba6952d6d2592a1"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/SPY-5y-base.json",
+              "sha256": "226238a38ec86815806980ae64dee46ed5af90c69b797438c9d06d84c8c591eb"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/SPY-5y-stress-bt.csv",
+              "sha256": "1abc888a502576cbf1c5228f5ec56cded3ddb1289198368279abca6b97515309"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/SPY-5y-stress.csv",
+              "sha256": "96754b61cb578c9f425a8f75f4a2ae3b1fc98cf779daf97342375539f3713479"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/SPY-5y-stress.json",
+              "sha256": "f7bb2a2816b2b10636936f98348b0cbc682c7466de1acb34e1dc8d62ad8cdb04"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/admission.json",
+              "sha256": "d233035837a887e98a86aea3e6f3aaa52407762ab4db81bba75086e7130c7f4f"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/results.json",
+              "sha256": "0a392072933e8f3aee9f67c53780fe7cea3b266229565b04c8408f2085a1faa5"
+            }
+          ],
+          "catalog": {
+            "admission": {
+              "path": "reports/ssd-continuous-research-v1/factor-catalog-20261028-v1/admission.json",
+              "sha256": "3fcabc60ca49accb7c75627cf305e93ed988e3a3933e44582cadee33343930bc"
+            },
+            "private": {
+              "path": "reports/ssd-continuous-research-v1/factor-catalog-20261028-v1/catalog.json",
+              "sha256": "c0f92684423893cee20d4b99b5199e93ac7f8fc71673ac82842928855fcfbc71"
+            },
+            "public": {
+              "path": "evidence/ssd_factor_catalog_20261028_v1.json",
+              "sha256": "ccff66c847db6519132775a177268c03d7ec36491076380be01d01f41589287d"
+            },
+            "published_commit": "83514dd1186ff4fe612c5078a7787509919f80cb"
+          },
+          "code": [
+            {
+              "path": "src/us_quant/ssd_research_v1.py",
+              "sha256": "c71f7e6765a7465778b4075c55c62dd1237670e3e82cbd09de08fc4db1def7cf"
+            },
+            {
+              "path": "src/us_quant/equity_first_regimes_v1.py",
+              "sha256": "9e4ec3c94085b61624f6b6b3e21f687a39738fc353a1e784147b68fb6163fa1f"
+            },
+            {
+              "path": "src/us_quant/dual_benchmark_v1.py",
+              "sha256": "9dcf1f6b1fed6933a6e17204b5d31affbbb849b562bcc629dbf388180d6759fd"
+            },
+            {
+              "path": "src/us_quant/cash_funded_accounting_v2.py",
+              "sha256": "e7efd7a9a87178d556320693bdfd389eef6a21cae70c36dd77c4325b6607d2af"
+            },
+            {
+              "path": "src/us_quant/backtest.py",
+              "sha256": "ba99627330a40f74ecce4daf096ea8a530d7598820c836e16f4f3996bcfeff6c"
+            },
+            {
+              "path": "src/us_quant/bt_audit.py",
+              "sha256": "3050d2a65c974f2a8c3651f13e236ceb6ba8bb5db3540cc7a966743697e8b28e"
+            },
+            {
+              "path": "src/us_quant/metrics.py",
+              "sha256": "12f76af88d99885904d428a1df4a01f348ebe5a7dfcbdbc08c37a9d3d4f046e8"
+            },
+            {
+              "path": "src/us_quant/data.py",
+              "sha256": "1761cd365ded1ac4eea48492dc502b0100b04568feded90fb9aa79b9454ffd0a"
+            },
+            {
+              "path": "src/us_quant/storage.py",
+              "sha256": "e424d764392491b654e55756566418153bec8104ae64dd15447076315c84a367"
+            },
+            {
+              "path": "src/us_quant/calendar.py",
+              "sha256": "04fdabc739de0a30284527715b80348321652fa2b7a66567b1232987289edf02"
+            },
+            {
+              "path": "src/us_quant/dual_horizon.py",
+              "sha256": "38fb924e30901cf58647163c6c5bb530ff96c5e03947acd8b61111665088ee7b"
+            },
+            {
+              "path": "src/us_quant/factor_validation.py",
+              "sha256": "e94470ded16b59d52910a80ba05cfcfa24189f36d80ec6fa11b120bd5b1b2d54"
+            },
+            {
+              "path": "src/us_quant/candidate_receipts.py",
+              "sha256": "6de80c7ddc234893e99746ce11d6d46b9275b7fb9adeccd93424751029576bdc"
+            },
+            {
+              "path": "src/us_quant/semiconductor_trend_transfer.py",
+              "sha256": "51f6a867a5f24da23d0d2c3890e7c94772edfe2754c3e0765386d83ce2e7a636"
+            },
+            {
+              "path": "src/us_quant/multifactor_stability.py",
+              "sha256": "05423115c9171a20f0c870e2556b4f25f787df737da4b1f87da5f5fffe3ae7b9"
+            },
+            {
+              "path": "src/us_quant/portfolio_refinement.py",
+              "sha256": "f43b4d6955f4601701317753c9d95ddbd4c3175c5f68a6f9a68dd32b9272a948"
+            },
+            {
+              "path": "src/us_quant/volatility_term_risk.py",
+              "sha256": "ad2c75386c86c1e1e12491563b6a12d5e38daa0d082d0f0e805edcb9cc027176"
+            },
+            {
+              "path": "src/us_quant/research_program.py",
+              "sha256": "8b2beb58656c076f986f7817ab3619a54b1582fc132beb9bb94951b9b73bb901"
+            },
+            {
+              "path": "src/us_quant/research_weekly.py",
+              "sha256": "44474846476005524d73516ad66e6aa93466dcb63850dd33f6124943135665d8"
+            },
+            {
+              "path": "src/us_quant/joint_tail_construction_v1.py",
+              "sha256": "28f49a4a6e1278f5c983e8e62120fa0cc7187fb3a993104102e25e80d9369bdb"
+            },
+            {
+              "path": "src/us_quant/ssd_joint_tail_research_v1.py",
+              "sha256": "715bec2f3ea652aef4dfd800c43239ff31cf82c8f3e58f7ea34cd716cd4cc042"
+            },
+            {
+              "path": "tests/test_joint_tail_construction_v1.py",
+              "sha256": "15d7b9bc40f348236a330796c9c40865ed28b5472212853d0ea62c2c70698685"
+            },
+            {
+              "path": "tests/test_ssd_joint_tail_research_v1.py",
+              "sha256": "3b40b2e21bc2697ed739d4e971a187a08a3e09432f482e0b6ff92da0e0ad7d70"
+            },
+            {
+              "path": "src/us_quant/ssd_factor_catalog_v1.py",
+              "sha256": "e30b60e3aaf52026097e18109f31b9f2b8cf7310d862a48eda39692f449bb9a4"
+            },
+            {
+              "path": "src/us_quant/ssd_commitment_research_v1.py",
+              "sha256": "6c3bc62d2036eed6162610ecbe0cfbbd2c3155c1499370d16a7f6124ebb73b16"
+            },
+            {
+              "path": "src/us_quant/commitment_duration_v1.py",
+              "sha256": "4ef9512323126d89b245b3d6ca698573918cbfaa7fc5c25eb27194ad73a4ca70"
+            },
+            {
+              "path": "src/us_quant/ssd_family_core_research_v1.py",
+              "sha256": "d27f9e18599f5b0ed814e4c2e374953a806411bdc52601ef8859203c3698d256"
+            },
+            {
+              "path": "src/us_quant/family_core_expansion_v1.py",
+              "sha256": "dd537e66360d6e1814b3c7343d4578dafacb68b21dff4707db04b346cc90abe2"
+            }
+          ],
+          "construction_inputs": "past_prices_not_old_targets_or_full_sample_risk",
+          "legacy": {
+            "engine_sha256": "a4be8219834c412e0c1e311180dc9ce12c5b0d60b32670a9edd4906278a21c05",
+            "fixed_snapshot_completed_configurations": 178,
+            "fixed_snapshot_recurring_reviews": 94,
+            "fixed_snapshot_registered_versions": 96,
+            "fixed_snapshot_terminal_technical_versions": 2,
+            "ledger_sha256": "ed2c075d0819e1ff8bb2d6920910128e0dd2ed4be46f920fef575129d64c9317",
+            "new_factor_definitions": 0,
+            "old_records_reclassified_or_written": false,
+            "used_actual_registered_factors": [
+              {
+                "family": "momentum",
+                "id": "price_momentum",
+                "registered_at": "2026-10-10T08:30:08.095812+00:00",
+                "semantic_sha256": "6201dcadb21c245859dfe4dcf6cb53bf874ab1d4dc4e2b03784e0331e03657a6"
+              },
+              {
+                "family": "value",
+                "id": "value_exposure",
+                "registered_at": "2026-10-10T08:30:08.095812+00:00",
+                "semantic_sha256": "d27074b79e7ad8e46b54dc54562b257312d7bd057f9ce47a85b5cb6fc0560d8a"
+              },
+              {
+                "family": "earnings_quality",
+                "id": "quality_exposure",
+                "registered_at": "2026-10-10T08:30:08.095812+00:00",
+                "semantic_sha256": "015349e8efde8548a99ac414ee274427b79656862513343e4834209319757283"
+              },
+              {
+                "family": "low_volatility",
+                "id": "low_volatility_exposure",
+                "registered_at": "2026-10-10T08:30:08.095812+00:00",
+                "semantic_sha256": "a2d4149b722788ca072c792a8c205a6e8536f78cc6df2411f892f7c24c1b0c1e"
+              }
+            ]
+          },
+          "legacy_used_factor_list_scope": "unchanged_original_catalog_snapshot_only",
+          "market": {
+            "close": {
+              "path": "data/ssd-factor-catalog-20261028-v1/close.csv",
+              "sha256": "0c6068a77446e481e4876339fd9c350752bc087481de97e433b34b93048a020e"
+            },
+            "open": {
+              "path": "data/ssd-factor-catalog-20261028-v1/open.csv",
+              "sha256": "e22a8b27007d7b3e433825b800498ff548fcf871ff896ffe9edfed18d5cda71e"
+            },
+            "raw_close": {
+              "path": "data/ssd-factor-catalog-20261028-v1/raw_close.csv",
+              "sha256": "3fc2e0eaf298311a1400bf3214decebad26dfb3d8ac68bb51e47e05b8174cd3e"
+            },
+            "risk_free": {
+              "path": "data/sector-growth-prepared-20261011/risk_free.csv",
+              "sha256": "af36e3deb9bf0685553617f6614eacefcd2282b76c0af81404f04669e9f5eef3"
+            },
+            "volume": {
+              "path": "data/ssd-factor-catalog-20261028-v1/volume.csv",
+              "sha256": "14bdabcfc759d743b0735c7116d6771587200467292a337afc376fe814a3ec8b"
+            }
+          },
+          "new_economic_factor_definitions": 0,
+          "order_authority": false,
+          "original_policy_role": "unchanged_funded_execution_only",
+          "package_versions": {
+            "bt": "1.3.0",
+            "exchange-calendars": "4.13.2",
+            "ffn": "1.3.0",
+            "numpy": "2.2.6",
+            "pandas": "2.3.3",
+            "scipy": "1.15.3"
+          },
+          "policies": [
+            {
+              "path": "config/equity-first-regimes-v1.json",
+              "sha256": "7e168b7bac093f9c58a7d9a228ff49d6674de96168e238f54638132bc9dd193f"
+            },
+            {
+              "path": "config/dual-benchmark-v1.json",
+              "sha256": "1b5b2572089ffa53746b01e72ff8303e00d6b5e5e3f815844f93834d0521e469"
+            },
+            {
+              "path": "config/portfolio-refinement.json",
+              "sha256": "ddb4a82bd3cb17e7bdbe4cd3bb8446f89babefd4ae86a3fdeb973f2458e9e1ec"
+            },
+            {
+              "path": "config/research-program.json",
+              "sha256": "c1bb4bfc9209233f1590d3808f515250ae428fc5ad881da49d4c1e6462f29ebc"
+            },
+            {
+              "path": "config/volatility-term-risk.json",
+              "sha256": "bc0327b59de212739e2888a545d6b35d9626ee1e599e6a1d29a3fec1d950e89b"
+            },
+            {
+              "path": "config/joint-tail-construction-v1.json",
+              "sha256": "92e5bbb36d40643319ce21c00acce9307539843d1020609a742b0284efe0048a"
+            },
+            {
+              "path": "config/ssd-factor-catalog-v1.json",
+              "sha256": "fc091994765423ad148d41f9a6b49b9b86708f4d6b4c17d2881748d75b56c158"
+            }
+          ],
+          "policy": {
+            "path": "config/joint-tail-construction-v1.json",
+            "sha256": "92e5bbb36d40643319ce21c00acce9307539843d1020609a742b0284efe0048a"
+          },
+          "prior_completed_configurations": 186,
+          "prior_evidence": [
+            {
+              "path": "reports/ssd-continuous-research-v1/factor-catalog-20261028-v1/catalog.json",
+              "sha256": "c0f92684423893cee20d4b99b5199e93ac7f8fc71673ac82842928855fcfbc71"
+            },
+            {
+              "path": "evidence/ssd_factor_catalog_20261028_v1.json",
+              "sha256": "ccff66c847db6519132775a177268c03d7ec36491076380be01d01f41589287d"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/factor-catalog-20261028-v1/admission.json",
+              "sha256": "3fcabc60ca49accb7c75627cf305e93ed988e3a3933e44582cadee33343930bc"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/factor-catalog-20261028-v1/publication.json",
+              "sha256": "835e1715ee43e5d9846acbb67d2b6d4060e0f903abb94b74363c0057f14bcafb"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/family-core-expansion-20261028-v1/saved-concentration-risk-v1.json",
+              "sha256": "04b71c57a5491acc6c10d4bde1e264f82536c20b149536a4580989ad9d6cbddc"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/family-core-expansion-20261028-v1/construction-prior-art-v1.json",
+              "sha256": "2260ec62d87ce6b173b5c68663d6157c5df44ff873437dff360d4b6828052bcb"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/joint-tail-construction-20261028-v1/prior-art-supplement-v1.json",
+              "sha256": "5ea330a59555f8cdcc5838c684f806d0747b9b8dfc35708eb1e309e63c932449"
+            },
+            {
+              "path": "evidence/family_core_expansion_20261028_results_v1.json",
+              "sha256": "68162de0abc51ef5d481ac32d783cbfde0847f3c9b2515ba3c1d2ead2aa5bddb"
+            }
+          ],
+          "prior_journal_head_sha256": "c2b8002e31187e374c8fd11c095f1df7c27d80647ca3229b98f8e35818b863e9",
+          "prior_journal_sequence": 94,
+          "protocol": {
+            "path": "config/dual-benchmark-v1.json",
+            "sha256": "1b5b2572089ffa53746b01e72ff8303e00d6b5e5e3f815844f93834d0521e469"
+          },
+          "python_version": [
+            3,
+            12,
+            9
+          ],
+          "study_id": "ssd_joint_tail_construction_20261028_v1",
+          "used_actual_registered_factors": [
+            {
+              "family": "momentum",
+              "id": "price_momentum",
+              "registered_at": "2026-10-10T08:30:08.095812+00:00",
+              "semantic_sha256": "6201dcadb21c245859dfe4dcf6cb53bf874ab1d4dc4e2b03784e0331e03657a6"
+            },
+            {
+              "family": "value",
+              "id": "value_exposure",
+              "registered_at": "2026-10-10T08:30:08.095812+00:00",
+              "semantic_sha256": "d27074b79e7ad8e46b54dc54562b257312d7bd057f9ce47a85b5cb6fc0560d8a"
+            },
+            {
+              "family": "earnings_quality",
+              "id": "quality_exposure",
+              "registered_at": "2026-10-10T08:30:08.095812+00:00",
+              "semantic_sha256": "015349e8efde8548a99ac414ee274427b79656862513343e4834209319757283"
+            },
+            {
+              "family": "low_volatility",
+              "id": "low_volatility_exposure",
+              "registered_at": "2026-10-10T08:30:08.095812+00:00",
+              "semantic_sha256": "a2d4149b722788ca072c792a8c205a6e8536f78cc6df2411f892f7c24c1b0c1e"
+            },
+            {
+              "family": "size",
+              "id": "size_exposure_ijr_v1",
+              "registered_at": "2026-10-27T22:26:38.449697+00:00",
+              "semantic_sha256": "ee74c4016f5a29de5fff0f4ceebc3084685b5248a180c4efd9230fc40afdfada"
+            },
+            {
+              "family": "share_issuance",
+              "id": "net_buyback_exposure_pkw_v1",
+              "registered_at": "2026-10-27T22:26:38.449697+00:00",
+              "semantic_sha256": "fea841cfac9dc1942658e0f71558de556478bba9830d5f0504c6dc17e17cd056"
+            }
+          ],
+          "used_economic_factor_families": 6,
+          "validation_evidence": [
+            {
+              "path": "reports/ssd-continuous-research-v1/joint-tail-offline-tests-v1.xml",
+              "sha256": "f5a189077e2989b1e1b5532fcac0c045517f02520fb52efb3f15365b90d906e7"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/joint-tail-offline-tests-v1.log",
+              "sha256": "6b19b35aa81f985bb75d50916c01ba0de2213f2f3d3f34baa0c24277691ad179"
+            }
+          ],
+          "volatility_sources": [
+            {
+              "path": "data/volatility-term-source-20261010/manifest.json",
+              "sha256": "7dfbc2854f15c77b8316b401b798b0a9ffb9edbefce07fdc022102af2e5daedd"
+            },
+            {
+              "path": "data/volatility-term-source-20261010/VIX.csv",
+              "sha256": "51ea1e59bfeaf400f6816300c39145df5e3fb437e7c60bdb8ca2178f8c96f436"
+            },
+            {
+              "path": "data/volatility-term-source-20261010/VIX3M.csv",
+              "sha256": "f706a0f3b2adb442676514682cabf47556c43a6d465498a7d6da463cc3361281"
+            }
+          ]
+        }
+      },
+      "target_proof": {
+        "proof": {
+          "path": "data/ssd-joint-tail-construction-20261028-v1/benchmark_opportunity_joint_tail_v1/proof.json",
+          "sha256": "30b3e189947e310301b7dcfc20e36f88e4acf9107ba3a2025ac103ec67e8d9be"
+        },
+        "registered_event_sha256": "2cf73c2f4329d09eb25362599ad337848e7a8d116d2f393a16edfe4ef3750a57",
+        "targets": {
+          "path": "data/ssd-joint-tail-construction-20261028-v1/benchmark_opportunity_joint_tail_v1/targets.csv",
+          "sha256": "62b2d0c8d68f3375a8b953fc18f3059df0e1257c45fb00563ecab985e4eda35e"
+        }
+      },
+      "target_proof_at": "2026-10-28T03:57:11.575373+00:00",
+      "target_proof_event_sha256": "3e2f6aa1f4c2a2573515271e8bb1d673052bcc4b3dfd0ce67b2a9648b7793db7"
+    }
+  ],
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "new_registered_candidates": 1,
+  "order_authority": false,
+  "program_id": "ssd_continuous_research_v1",
+  "raw_inputs_and_target_matrices_remain_private": true,
+  "schema_version": 2,
+  "study_id": "ssd_joint_tail_construction_20261028_v1"
+}

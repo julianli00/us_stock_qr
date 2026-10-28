@@ -670,6 +670,68 @@ single-active-job, no-replay/no-source-retry, original deadline and all
 trading/data restrictions remain. The 30-minute market-data finalization
 buffer and historical scheduling receipts were not changed.
 
+## Joint portfolio tail loss with observed benchmark opportunity
+
+The next fixed candidate is `benchmark_opportunity_joint_tail_v1`.
+The [actual registration](evidence/joint_tail_construction_20261028_registration_v1.json)
+occurred at 2026-10-28 03:56:56.804178 UTC, followed by its target-proof
+event at 03:57:11.575373 UTC and packet at 03:57:11.576530 UTC.
+No candidate account or performance metric exists at this fence.
+
+The supplemental prior-art check explicitly includes the already tested
+[unleveraged covariance constructions](evidence/risk_only_covariance_20261011_results.json):
+`four_factor_covariance_risk_budget` and
+`four_factor_covariance_max_diversification` were both rejected. Earlier
+published and latest frozen metrics have tiny recorded numeric differences
+(up to about 1.3e-13 in Sharpe), not bit-identical representations; both
+versions and their unchanged rejection are preserved. The learned-allocation
+policy also predates this work. This new model is neither a renamed
+covariance-only objective nor a fitted return-ranking model.
+
+At each actual completed exchange month end, use the latest 252 daily
+adjusted-close return scenarios and 252-session observed total returns.
+Treat the equal-six-family core as one linear scenario exposure, alongside
+SOXX, GLD, IEF, TLT and actual BIL. No synthetic fund-price history or old
+strategy target is created or replayed.
+
+The observed opportunity score subtracts BIL's total return over the same
+horizon. The hurdle is the greater SPY/QQQ score. If it is nonpositive, or
+exceeds the analytical feasible maximum over the declared sleeve set, the
+model explicitly chooses BIL. Otherwise the first linear program minimizes
+empirical 5% expected shortfall of **joint portfolio** daily losses. The
+second maximizes the same observed opportunity subject to the primary risk
+optimum plus a frozen numerical slack. Missing data, infeasibility
+inconsistent with the analytical bound, optimizer errors or failed
+certificates stop the experiment; none silently becomes cash.
+
+Weights are nonnegative and sum to one before the unchanged 98% investment
+scale. The factor core is at least as large as the SOXX sleeve, a
+model-specific thematic-concentration safeguard inherited without a ratio
+grid, not a permanent user constraint or a fixed half-portfolio allocation.
+Total equity and defensive allocations are jointly variable. All six
+registered economic-family funds receive positive targets somewhere in
+each complete formal window; source-blocked stock definitions do not count.
+
+The registered target proof covers 122 monthly decisions: 75 optimized,
+14 nonpositive-opportunity and 33 opportunity-unavailable observations.
+Primary/secondary primal, dual, bound, stationarity and complementarity
+certificates pass; a separate sorted-loss calculation retains fractional
+tail mass. Independent scalar price/scenario reconstruction differs by
+zero in returns and hurdles and at most 1.1102230246251565e-16 in scores.
+Five prefix checks and both initial window anchors pass.
+
+Historical momentum is not a forecast and a sampled tail loss is not a
+maximum-drawdown guarantee. Solver tolerances do not relax any investment
+gate. The same original funded simulator, 0.025 actual-holdings band, one
+pending request, 5/20bp costs, USD1 tickets, one/two-session delays, RF,
+initial USD10,000 peak and four complete windows remain. No borrowing,
+shorting, new factor definition, benchmark replay or independent-forward
+claim is introduced.
+
+The study is selected after 186 exposed completed configurations.
+Current counts are nine SSD registrations, eight completed, one pending,
+32 paths, zero qualifiers and 186 combined completed configurations.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,

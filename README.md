@@ -169,10 +169,29 @@ construction; old QLD-based results are not current 1x evidence.
 
 SOXX half-equity and equal factor-half allocation remain frozen **for that
 completed controlled study**, not as permanent user allocation constraints.
-No new construction, weights or lookback has been selected. The configured
+At that diagnostic review no new construction had been selected. The configured
 native continuation is now **one minute**, still with one active research
 job and the original cutoff; it is not a per-minute backtest or data-download
 instruction.
+
+The [ninth preregistration](research/workbench/evidence/joint_tail_construction_20261028_registration_v1.json)
+now fixes one different construction: minimize joint empirical 5% tail loss
+using 252 known daily scenarios, subject to an observed momentum-opportunity
+hurdle matching the stronger SPY/QQQ cash-relative score. The equal-family
+core, SOXX, gold, intermediate/long Treasuries and BIL are allocated jointly;
+SOXX is not a fixed half of the portfolio. This is not a future-return or
+drawdown guarantee, or a reuse of full-sample risk shares as historical weights.
+The supplemental review also records the previously rejected **unleveraged**
+covariance risk-budget/max-diversification pair, not just the older QLD studies.
+
+Actual registration at 2026-10-28 03:56:56 UTC precedes target preparation.
+Of 122 completed monthly decisions, 75 have certified joint-tail optima,
+14 have nonpositive benchmark opportunity and 33 have an analytically
+unavailable opportunity hurdle. The latter two are explicit model conditions
+for BIL, never a fallback on solver or data failure. All primary/secondary
+LP certificates and independently sorted tail losses passed; five prefix
+checks preserve causality. No account has run: nine registrations, eight
+completed, one pending, 32 paths and 186 combined completions.
 
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
