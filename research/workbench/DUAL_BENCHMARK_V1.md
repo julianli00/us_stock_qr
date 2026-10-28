@@ -2676,6 +2676,97 @@ new independent investment experiment. The original ledger,
 19/18/1 registration/completion/failure counts and zero qualifiers
 remain unchanged.
 
+## Separate VVIX information source
+
+[`config/vvix-inputs-v1.json`](config/vvix-inputs-v1.json) freezes a
+source-only question: whether VIX-option uncertainty can supply
+information distinct from the already used VIX level and term
+structure. It does not choose a threshold, risk state, ratio,
+allocation or new economic-factor definition. The old near-term
+source's explicit `VVIX_admitted: false` remains a correct historical
+record and is not edited to manufacture earlier admission.
+
+The exact new history URL was first found in the preserved official
+Cboe history-page anchor, then corroborated by the current
+[VVIX dashboard](https://www.cboe.com/us/indices/dashboard/vvix/).
+Its page-specific resource description is a static HTML string in
+`CTX[cSymbol]`; it was parsed as data, not executed as JavaScript.
+One ordinary request to the advertised
+`cdn-api.cboe.com/api/global/us_indices/daily_prices/VVIX_History.csv`
+returned HTTP200. There was no host, user-agent, TLS or proxy fallback,
+no retry and no existing-comparator download.
+
+### Definition and timing boundaries
+
+The dashboard advertises the
+[selected broad-based, equity and ETF volatility methodology](https://cdn.cboe.com/resources/indices/governance/Volatility_Index_Methodology_Selected_Broad_Based_Index_Equity_and_ETF_Volatility_Indices.pdf).
+That exact resource returned HTTP200 and was byte-identical to the
+previously retained gold-volatility methodology, although the older
+request used its `api/global/us_indices/governance` location.
+Neither old bytes nor their acquisition time were changed.
+
+Version **9.0**, revised **2026-03-30**, gives these VVIX-specific
+rules: 30-calendar-day constant maturity; AM-settled standard monthly
+VIX options; expiry terms shorter than eight days excluded;
+nearest-term selection; Cboe Options Exchange **C1-only** midpoint
+quotes; approximately 15-second dissemination during **09:31--16:15 ET**.
+The current filter is 0.50 volatility points/30 seconds. Generic SPX
+paragraphs in the shared methodology are not substituted for these
+index-specific contract and data-source rows.
+
+VVIX values are annualized expected-volatility percentage quotes,
+not VIX futures profits, ETF returns, a variance-risk premium or a
+crash probability. A 30-calendar-day horizon is not 30 NYSE sessions.
+The final 16:15 quote cannot support a prior 16:00 stock-close
+execution. Any subsequent strategy must define its information
+clock before outcomes while retaining the original execution delays.
+
+The printed information table lists first values as “Prior to 2014”
+and launch as “February 1, 2014”; this is recorded as a **source-table
+label**, not independent authentication of the first live publication.
+The downloaded history starts in 2006. Pre-launch index values may
+be back-calculated, and no full historical methodology chain is
+claimed. The methodology also permits republication of a last valid
+index value when calculation is unavailable; the daily CSV supplies
+no intraday stale or revision flag. Calendar coverage alone does not
+certify fresh constituent quotes or unrevised historical publication.
+
+### Actual native data and fixed-scope admission
+
+The [aggregate source-readiness evidence](evidence/vvix_input_readiness_20261028_v1.json)
+records validation at **2026-10-28T23:05:17.852535Z**:
+
+| Source | Native schema | Raw observations | First date | Last retained raw date | Original context values | Original monthly values |
+|---|---|---:|---|---|---:|---:|
+| New VVIX | `DATE,VVIX` | 5,135 | 2006-03-06 | 2026-10-28 | 2,805 | 131 |
+| Preserved VIX | `DATE,OPEN,HIGH,LOW,CLOSE` | 9,291 | 1990-01-02 | 2026-10-09 | 2,805 | 131 |
+
+All **14,426 native values** match independent CSV/date/Decimal
+parsing with zero numeric difference. Independent construction of
+the complete original calendar and 131 month-end queries agrees
+with the production reader. Both source series have **zero missing
+context dates or monthly queries**. Raw rows outside the fixed
+calendar remain in their original files; no forward fill, interpolation,
+price transformation, market-date deletion or source-derived safe
+state is introduced.
+
+The new VVIX response contains 2,313 rows before the context and
+17 after the frozen 2026-10-05 as-of date. They are retained as
+source evidence, not added to the formal evaluation windows.
+The old VIX URL, bytes and 2026-10-10 acquisition timestamp stay
+unchanged. Twenty-six synthetic producer/independent-reader tests
+cover schema, positivity, chronology, future dates, malformed
+records, exact calendar scope and explicit missingness reporting.
+
+The admitted scope is **the original archival daily closes only**.
+It is not full intraday point-in-time validation, forward-model input
+backfill, a candidate performance result or evidence of independent
+alpha. No VVIX/VIX ratio, signal, target, account or primary return
+metric has been computed. All 22 bound input references, 216 SSD
+journal events and the original ledger are unchanged; there are
+zero new strategy evaluations or factor registrations. Raw
+documents, quotes and full aligned matrices remain private.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,

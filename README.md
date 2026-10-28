@@ -812,6 +812,27 @@ paper's growth optimizer was not replicated. This review prevents
 relabelling an already tested wealth-floor rule as new research;
 it adds no strategy trial or investment qualification.
 
+The next distinct information direction is **VVIX**, the option-implied
+volatility of VIX, rather than another wealth-floor or VIX-horizon
+parameter change. Its [separate source validation](research/workbench/evidence/vvix_input_readiness_20261028_v1.json)
+completed at **2026-10-28 23:05 UTC**. One advertised historical CSV
+provided 5,135 native observations; the existing 9,291-row VIX source
+was reused without another request. Independent native parsing agrees
+on all **14,426** values, and both series cover every original
+**2,805 NYSE context session and 131 month-end query**, without
+filling gaps or changing market dates.
+
+Admission is limited to those **archival daily index values**. VVIX
+uses standard monthly VIX options for a 30-calendar-day expectation,
+not a tradable index return or a certified risk premium. Its published
+regular-session calculation runs through 16:15 ET, so it cannot be
+used for an earlier 16:00 stock-close trade. Full historical intraday
+first-publication, revision and methodology continuity are not
+authenticated. No VVIX ratio, signal, target or strategy return has
+been computed; a candidate still needs separate frozen rules and
+actual registration/publication. Old source records, including their
+historical `VVIX_admitted: false`, remain unchanged.
+
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
 

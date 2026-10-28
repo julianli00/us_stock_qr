@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_vvix_source_readiness_20261028_v1",
+  "scope": "archival_daily_closes_and_original_monthly_query_coverage_only",
+  "data_start": "2015-08-10",
+  "as_of": "2026-10-05",
+  "required_market_context_sessions": 2805,
+  "original_monthly_query_count": 131,
+  "new_source_series": ["VVIX"],
+  "existing_comparator_series": ["VIX"],
+  "daily_input_column_order": ["VVIX", "VIX"],
+  "new_source_url": "https://cdn-api.cboe.com/api/global/us_indices/daily_prices/VVIX_History.csv",
+  "native_new_source_csv_columns": ["DATE", "VVIX"],
+  "native_value_column": "VVIX",
+  "native_units": "annualized_expected_volatility_percentage_points",
+  "maximum_source_bytes": 5000000,
+  "missing_data_rule": "retain_all_calendar_rows_and_missing_cells_report_incomplete_no_fill_or_safe_state",
+  "full_daily_coverage_required_for_full_admission": true,
+  "source_index": {
+    "path": "data/macro-tilt-prepared-20261010/close.csv",
+    "sha256": "b098f783bbf7a4ca56520e11c6e13edbb0eb2673ed7aaec02b89981ff74fabce"
+  },
+  "new_raw_csv": {
+    "path": "data/ssd-vvix-source-20261028-v1/VVIX.csv",
+    "sha256": "33b2eed06b2356ef6ba13f85c3f33eca3e09e2cc3d386571d3be6bfefae3a1c9"
+  },
+  "existing_vix_csv": {
+    "path": "data/volatility-term-source-20261010/VIX.csv",
+    "sha256": "51ea1e59bfeaf400f6816300c39145df5e3fb437e7c60bdb8ca2178f8c96f436"
+  },
+  "existing_option_manifest": {
+    "path": "data/volatility-term-source-20261010/manifest.json",
+    "sha256": "7dfbc2854f15c77b8316b401b798b0a9ffb9edbefce07fdc022102af2e5daedd"
+  },
+  "history_acquisition": {
+    "path": "data/ssd-vvix-source-20261028-v1/history-acquisition.json",
+    "sha256": "2d24e9eabda6101f58606dab91d6a3ceda4668dd737381058198acf79247fa70"
+  },
+  "methodology": {
+    "path": "data/ssd-vvix-source-20261028-v1/Cboe-VVIX-methodology.pdf",
+    "sha256": "cc42cc2076d4f66c9fa26ae7cc9136e5cb8e87e09de46562c02df68c0c0f8bc6"
+  },
+  "methodology_acquisition": {
+    "path": "data/ssd-vvix-source-20261028-v1/methodology-acquisition.json",
+    "sha256": "d5b30420aeffab45cdabe3c3c2da25c5e07300bac8825a7c29639e8a3811991b"
+  },
+  "advertised_resources": {
+    "path": "data/ssd-vvix-source-20261028-v1/advertised-resources.json",
+    "sha256": "4e5ee21160f466b45d10defec804449153ae54b155fecf9ceb6fed50b9a752a1"
+  },
+  "definition": {
+    "underlying_option_contracts": "AM-settled standard monthly VIX options",
+    "target_horizon": "30 calendar days",
+    "near_term_exclusion": "less than 8 days to expiration",
+    "term_selection": "nearest term",
+    "quote_source": "Cboe Options Exchange C1 only",
+    "option_price": "bid-ask midpoint",
+    "dissemination": "approximately every 15 seconds during RTH 09:31-16:15 ET",
+    "current_filter": "0.50 volatility points and 30 seconds",
+    "document_version": "9.0",
+    "document_revised_on": "2026-03-30",
+    "document_first_value_label": "Prior to 2014",
+    "document_launch_label": "February 1, 2014",
+    "history_note": "Printed table labels are retained, not independent authentication of first live publication. Earlier CSV rows may be back-calculated. Full historical methodology continuity is not established.",
+    "interpretation": "VVIX is a VIX-option implied volatility-of-volatility input, not SPX-option VIX, a tradable index return, variance-risk premium, crash probability or independent alpha.",
+    "availability": "The 16:15 ET index close cannot be used for 16:00 stock-close execution. Any later strategy must freeze its information timing before outcomes; no frozen forward profile is changed.",
+    "provider_republication": "The methodology may republish its last valid value when calculation is unavailable. The CSV has no intraday stale/revision flags; date coverage alone does not prove fresh underlying quotes."
+  },
+  "old_near_term_VVIX_admitted_false_record_unchanged": true,
+  "new_registered_factor_definitions": 0,
+  "new_registered_candidates": 0,
+  "new_strategy_evaluations": 0,
+  "strategy_states_targets_or_returns_computed": false,
+  "existing_W42_or_forward_rules_changed": false,
+  "intraday_first_publication_or_full_history_methodology_verified": false,
+  "investment_objective_verified": false,
+  "order_authority": false
+}

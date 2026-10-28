@@ -1,0 +1,105 @@
+{
+  "admission_scope": "fixed original archival daily closes only",
+  "aligned_closes": {
+    "path": "data/ssd-vvix-source-20261028-v1/closes.csv",
+    "sha256": "a8a9ec32dbd9304fda81db3e8d308bd9dfcfebf64b99e659d9f544f563c6b454"
+  },
+  "coverage": {
+    "all_original_monthly_queries_covered": true,
+    "full_daily_coverage": true,
+    "series": {
+      "VIX": {
+        "context_sessions": 2805,
+        "missing_daily_dates": [],
+        "missing_monthly_dates": [],
+        "observed_daily_values": 2805,
+        "observed_monthly_values": 131,
+        "original_monthly_queries": 131
+      },
+      "VVIX": {
+        "context_sessions": 2805,
+        "missing_daily_dates": [],
+        "missing_monthly_dates": [],
+        "observed_daily_values": 2805,
+        "observed_monthly_values": 131,
+        "original_monthly_queries": 131
+      }
+    },
+    "status": "complete_daily_coverage",
+    "strategy_eligibility_or_safe_state_inferred": false,
+    "values_filled_or_market_dates_dropped": false
+  },
+  "direct_input_refs_unchanged": 22,
+  "existing_comparator_requests": 0,
+  "historical_intraday_first_publication_or_complete_method_chain_verified": false,
+  "independent_raw_values_checked": 14426,
+  "intent": {
+    "path": "data/ssd-vvix-source-20261028-v1/validation-intent-v1.json",
+    "sha256": "909dd094b951c884397be22de373df26685a13fae72e8c793f2d34e5e7ed174c"
+  },
+  "investment_objective_verified": false,
+  "maximum_independent_numeric_difference_native_units": "0",
+  "methodology": {
+    "availability": "The 16:15 ET index close cannot be used for 16:00 stock-close execution. Any later strategy must freeze its information timing before outcomes; no frozen forward profile is changed.",
+    "current_filter": "0.50 volatility points and 30 seconds",
+    "dissemination": "approximately every 15 seconds during RTH 09:31-16:15 ET",
+    "document_first_value_label": "Prior to 2014",
+    "document_launch_label": "February 1, 2014",
+    "document_revised_on": "2026-03-30",
+    "document_version": "9.0",
+    "history_note": "Printed table labels are retained, not independent authentication of first live publication. Earlier CSV rows may be back-calculated. Full historical methodology continuity is not established.",
+    "interpretation": "VVIX is a VIX-option implied volatility-of-volatility input, not SPX-option VIX, a tradable index return, variance-risk premium, crash probability or independent alpha.",
+    "near_term_exclusion": "less than 8 days to expiration",
+    "option_price": "bid-ask midpoint",
+    "provider_republication": "The methodology may republish its last valid value when calculation is unavailable. The CSV has no intraday stale/revision flags; date coverage alone does not prove fresh underlying quotes.",
+    "quote_source": "Cboe Options Exchange C1 only",
+    "target_horizon": "30 calendar days",
+    "term_selection": "nearest term",
+    "underlying_option_contracts": "AM-settled standard monthly VIX options"
+  },
+  "native_sources": [
+    {
+      "first_native_date": "2006-03-06",
+      "last_native_date": "2026-10-28",
+      "original_acquisition_date_limit": "2026-10-28",
+      "raw_rows": 5135,
+      "raw_rows_after_asof": 17,
+      "raw_rows_before_context": 2313,
+      "series": "VVIX"
+    },
+    {
+      "first_native_date": "1990-01-02",
+      "last_native_date": "2026-10-09",
+      "original_acquisition_date_limit": "2026-10-10",
+      "raw_rows": 9291,
+      "raw_rows_after_asof": 4,
+      "raw_rows_before_context": 6449,
+      "series": "VIX"
+    }
+  ],
+  "new_history_requests": 1,
+  "new_registered_candidates": 0,
+  "new_registered_factor_definitions": 0,
+  "new_strategy_evaluations": 0,
+  "old_near_term_VVIX_admitted_false_record_unchanged": true,
+  "order_authority": false,
+  "original_data_or_forward_profiles_modified": false,
+  "original_monthly_closes": {
+    "path": "data/ssd-vvix-source-20261028-v1/monthly-closes.csv",
+    "sha256": "997ef55b2183efea2f8c11a853836208d60bd02006028da8dc66180bfd81c72c"
+  },
+  "policy": {
+    "path": "config/vvix-inputs-v1.json",
+    "sha256": "92d1dadb9dcfa47e5b2a78396278d05a9261c2271eb1468f5b8b760cdee6623b"
+  },
+  "private_manifest": {
+    "path": "data/ssd-vvix-source-20261028-v1/manifest.json",
+    "sha256": "36543ec2faa34e06031c404b243335b63d47c28beac8ad1a3e1a48a4ace7cc65"
+  },
+  "raw_quotes_or_documents_published": false,
+  "schema_version": 1,
+  "source_admitted": true,
+  "strategy_states_targets_ratios_or_returns_computed": false,
+  "study_id": "ssd_vvix_source_readiness_20261028_v1",
+  "validated_at": "2026-10-28T23:05:17.852535+00:00"
+}

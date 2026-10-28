@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-28",
-  "phase": "drawdown_feedback_prior_art_review_complete",
-  "active_research_focus": "existing_wealth_cushion_is_not_new_and_ideal_guarantees_do_not_cover_execution_frictions",
+  "phase": "vvix_archival_source_readiness_complete",
+  "active_research_focus": "new_option_uncertainty_information_before_separate_strategy_design",
   "research_dashboard": {
     "server": "src/us_quant/research_dashboard.py",
     "frontend": "web/research/index.html",
@@ -18,6 +18,23 @@
     "native_continuation_every_minutes": 1,
     "native_continuation_cadence_user_updated_at": "2026-10-28T02:21:04.321Z",
     "cadence_does_not_authorize_parallel_jobs_or_repeated_downloads": true,
+    "vvix_source_readiness": {
+      "evidence": "research/workbench/evidence/vvix_input_readiness_20261028_v1.json",
+      "sha256": "96447321e96364992ce0f1e38d280fc4893d47090360c73f1669830554503d11",
+      "new_native_rows": 5135,
+      "original_daily_context_sessions": 2805,
+      "original_monthly_queries": 131,
+      "independent_native_values_checked_with_preserved_VIX": 14426,
+      "maximum_independent_numeric_difference": "0",
+      "full_daily_coverage": true,
+      "source_admitted": true,
+      "admission_scope": "fixed original archival daily closes only",
+      "intraday_first_publication_or_full_method_history_verified": false,
+      "old_near_term_VVIX_admitted_false_record_unchanged": true,
+      "new_history_requests": 1,
+      "old_comparator_requests": 0,
+      "new_strategy_evaluations": 0
+    },
     "anfci_source_readiness": {
       "evidence": "research/workbench/evidence/anfci_input_readiness_20261028_v2.json",
       "sha256": "ef610d7227a93bf40f716bd7e53316a5534969c89ed0726776e6d6c9bb1adb30",
@@ -790,13 +807,13 @@
   ],
   "next": [
     "Preserve19registered SSD configurations:18completed/reviewed overall rejections,1retained terminal v1preparation failure,0pending,72funded paths,196combined completions and0qualifiers. Precisionv2 is not an independent economic hypothesis;old accounts,diagnoses,six-slot history and raw inputs remain private.",
-    "Primary Hsieh/Barmish arXiv1710.01503v1 and existing actual-NAV ratchet review completed2026-10-28T21:56:14.905164Z,0newtrials. Bare drawdown modulation already appears in registered growth_portfolio_protection;12synthetic wealth states agree to1.12e-16. Old protected DD12.80-13.51% passed but original Sharpe/SPY failed;oldrecords unchanged. Lemma needs explicit return support and ideal timely zero-cost/zero-interest dynamics,not IID;Section6 gain optimization assumes an IID law. Original fees,queued opens andriskyBIL cannot inherit that guarantee. Toygap18.62%DD/defensive-fund15.0833% are exactunit illustrations,not historical orcandidate outcomes. Paper's gain optimizer/time-varying gain notimplemented orselected;next economicquestion mustbe genuinelydistinct,not a relabeled peakfloor/multiplier/band rescue.",
+    "VVIX sourcevalidation completed2026-10-28T23:05:17.852535Z:oneadvertised5135-rowCSV,oldVIX9291rows reused withoutrequests,14426independentnativevalues agree exactly. Bothseries coverall2805originalNYSEdates and131monthlyqueries with0gaps/fills/deletions. Admission isarchivaldailycloses only,not fullintradayPIT/methodhistory,alpha orstrategyeligibility. CurrentCboeVVIXdefinition is30calendar-dayvolatility fromAMstandardmonthlyVIXoptions,under8daysexcluded,nearestterms,C1midquotes,RTH9:31-16:15ET. No16:00close execution usinglaterVVIXclose;providerrepublication/revisions unflagged. Next freeze one distinctuncertainty-information hypothesis beforestates/ratios/targets/accounts;no threshold/model selected andoldVVIXfalse recordsunchanged.",
     "Continue economically motivated, preregistered independent small batches without ordinary per-batch approval or a configuration-count ceiling until2026-10-31T15:59Z. Use one computation; at cutoff preserve partial work, clear only the SSD session timer and confirm absence.",
     "Keep old source refusals, VIG/SDY terminal429 and prospective/PIT gates. The independent market-only IBKR adapter is proved, but the one actual probe stopped on2157 before historical requests;0history rows/admissions,no automatic retry or inferred entitlement denial. Default readonly account synchronization remains prohibited."
   ],
   "next_zh": [
     "保留SSD19项已登记配置：18项完成审阅并整体拒绝、1项原v1准备终止失败、0待评估、72条资金路径、合计196项完成、0通过。精度v2不是独立经济假设；原账户、诊断、历史六配置和原始私有输入全部保留。",
-    "2026-10-28T21:56:14.905164Z完成原始论文Hsieh/Barmish(arXiv1710.01503v1)与旧实际净值峰值保护复核，0新试验。裸回撤调制已存在于已登记growth_portfolio_protection，12个合成财富状态差<=1.12e-16。旧保护版DD12.80-13.51%过门，但原夏普/SPY失败，记录不改。论文引理依赖明确收益支持界及理想及时/零费用/零利息模型，不要求IID；第6节增益优化才假设IID分布。真实费用、排队开盘成交和有风险BIL不能直接继承保证。18.62%缺口DD与15.0833%防御基金例子只是精确单元算术，不是历史账户或候选业绩。尚未实现/选取论文增益优化或时变增益；下一经济问题必须不同于旧峰值底线/倍率/带宽改名救回。",
+    "2026-10-28T23:05:17.852535Z完成VVIX来源核验：仅取一次官方广告5135行CSV，旧VIX9291行直接复用、0重取；14426原生数值独立核对误差0。两序列均覆盖全部2805原NYSE日及131原月末，0缺口/填补/删日。仅准入该历史日值范围，不是完整盘中PIT/方法历史、alpha或策略通过。当前Cboe定义为AM标准月度VIX期权推导30日历天预期波动率，排除不足8天、最近期限、C1中间报价、9:31-16:15ET；不能把16:15值用于16:00成交，数据缺少重发/修订标记。下一步须先冻结独立不确定性信息假设，再算状态/比率/目标/账户；未选阈值或模型，旧VVIX=false历史记录不改。",
     "持续开展有经济理由、事前冻结的独立小批次，无普通逐批确认或配置次数上限，截止2026-10-31T15:59Z；单计算job，届时保存未完状态、只清除SSD会话timer并确认不存在。",
     "原拒绝来源、VIG/SDY终止429和前瞻/PIT门保持。独立IBKR market-only适配器已证明，但唯一真实探针在历史请求前因2157停止；历史行/准入0，不自动重试或推断订阅拒绝，仍禁止默认readonly账户同步。"
   ],
