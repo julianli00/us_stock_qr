@@ -2057,6 +2057,76 @@ on the SSD; the original ledger and 190-event research journal are
 unchanged. Counts remain sixteen completed SSD hypotheses, 64 funded
 paths, 194 combined completions and zero qualifiers.
 
+## Separately frozen fresh-only residual-stress decision policy
+
+[`config/anfci-residual-confirmation-v1.json`](config/anfci-residual-confirmation-v1.json)
+defines one new hypothesis after 194 exposed completed configurations.
+The [primary Chicago Fed Letter 386](https://www.chicagofed.org/publications/chicago-fed-letter/2017/386)
+explains positive ANFCI as financial conditions tighter than typically
+suggested by economic activity and inflation. This supplies the
+fixed zero boundary, not a threshold fitted to strategy outcomes.
+The article also documents a 2017 change from two-step to simultaneous
+estimation, additional macroeconomic adjustments and a longer history.
+Actual own-vintage values are kept; today's method is not rebuilt
+backward into earlier snapshots. Exact historical method-switch
+timing and full methodology continuity are not authenticated.
+
+The new policy reads the **saved fifteenth target matrix**, not its
+generator. Its original BIL 0/49% identifies the previously verified
+published-dollar 63-session guard. At each original month end, with
+a fresh current ANFCI reading, retain the half-risk allocation only
+when that dollar guard is active **and ANFCI is strictly above zero**.
+Otherwise restore its non-BIL composition proportionally to 98%
+and set BIL to zero. A donor already at full risk is unchanged.
+Stock/gold proportions and half-SOXX/equal-four-style stock composition
+are preserved. This can increase risk; no net return or drawdown
+improvement is presumed.
+
+The original **225-query full-freshness admission remains false**,
+including both stale queries and every raw archive. This distinct
+trading-information requirement uses current ANFCI levels, not
+ANFCI 63-session changes. It does not silently omit an unfavorable
+return date or claim that all source readings became fresh.
+
+Before any strategy outcome, the following operational rule is fixed:
+a current reading older than 14 calendar days produces an explicit
+source-abstention record and **no new target/request**. It is never
+interpreted as zero or a safe macro regime, even if the dollar
+condition would otherwise be false. Actual holdings and idle cash
+continue; previously queued fills are not canceled. All returns,
+fees and mark-to-market dates remain. Unknown hashes, malformed
+records, missing query rows or budget errors stop the study instead.
+Both initial anchors must have an eligible latest scheduled target.
+
+This follows the earlier repository's explicitly registered source-pause
+pattern, but does not replay the older NFCI strategy or source audit.
+The new ANFCI residual-stress channel and fifteenth price budget make
+it a separate whole-model comparison, not isolated causal factor alpha.
+No prior, temperature, forgetting rate, stock bound, source-age
+limit, dollar window, reduction scale or trade band is swept.
+
+The [actual packet](evidence/anfci_residual_confirmation_20261028_registration_v1.json)
+records registration at 2026-10-28 17:37:56.489261 UTC, target proof
+at 17:37:57.412628 UTC and packet creation at 17:37:57.414164 UTC.
+All **131 monthly opportunities** are retained, with 130 fresh
+targets and one generic-age-rule abstention on **2022-12-30**.
+The independent target difference is at most 1.12e-16, with five
+prefix checks, both original anchors and four positive registered
+factor families. These are source/target proofs, not account results.
+
+The unchanged funded monthly executor is paired with a separately
+versioned independent verifier that checks all opportunities,
+eligible decisions and abstentions. The old verifier's every-month
+assumption is **not modified or weakened**. Twenty-five offline
+cases include both original delays, retained return days and
+rejection of a hidden request or removed date at an abstention.
+
+Seventeen SSD hypotheses are registered, sixteen completed, one
+pending, 64 funded paths, 194 combined completions and zero qualifiers.
+Actual sanitized publication still must precede four fresh USD10,000
+accounts under all original timing, costs, RF, initial-peak and
+dual-benchmark gates. There is no trading or deployment authority.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,

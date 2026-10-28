@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_anfci_residual_confirmation_20261028_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "prior_completed_configurations": 194,
+  "prior_journal_sequence": 190,
+  "prior_journal_head_sha256": "9109b83e7425b310895446f2b9fdeb344003805cd25cd15d1efe7b049196db71",
+  "source_candidate": "dollar_option_two_segment_variation_v1",
+  "source_registration": {
+    "path": "evidence/split_session_variation_20261028_registration_v1.json",
+    "sha256": "8224928553fe932a7615e7203f077b00ec773c41877ce147e55ef002c34a340b"
+  },
+  "source_targets": {
+    "path": "data/ssd-split-session-variation-20261028-v1/dollar_option_two_segment_variation_v1/targets.csv",
+    "sha256": "612a4ca35d4129dcd025e82b4ee4c64e87f750a08c5d4c5cef1f126f3bc7e3e2"
+  },
+  "anfci_readiness": {
+    "path": "evidence/anfci_input_readiness_20261028_v2.json",
+    "sha256": "ef610d7227a93bf40f716bd7e53316a5534969c89ed0726776e6d6c9bb1adb30"
+  },
+  "anfci_manifest": {
+    "path": "data/ssd-anfci-vintages-20261028-v2/manifest.json",
+    "sha256": "e21a38ef5592fc8c217e63145a3d77bd6c37b756116554b510a9f7b333a2a7c9"
+  },
+  "anfci_validation": {
+    "path": "reports/ssd-continuous-research-v1/anfci-vintage-admission-20261028-v2/validation.json",
+    "sha256": "378b6dae3ed5bbb6bc1a0a8e2d780a70488450c567959460f09690aea446ea1c"
+  },
+  "anfci_threshold": 0.0,
+  "maximum_observation_age_calendar_days": 14,
+  "vintage_cutoff": "previous_NYSE_session",
+  "required_anfci_information": "current_own_vintage_level_only",
+  "require_fresh_anfci_before_every_monthly_decision": true,
+  "stale_input_behavior": "explicit_no_new_request_keep_actual_positions",
+  "dollar_risk_off_investment_scale": 0.5,
+  "source_monthly_opportunities": 131,
+  "expected_fresh_decisions": 130,
+  "expected_source_abstentions": 1,
+  "source_full_225_query_admission_passed": false,
+  "cash_reserve": 0.02,
+  "actual_weight_trade_band": 0.025,
+  "core_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "new_economic_factor_definitions": 0,
+  "candidate_count_in_this_study": 1,
+  "study_size_is_a_total_research_quota": false,
+  "candidates": [
+    {"id": "two_segment_anfci_residual_confirmation_v1", "confirmation": "fresh_anfci_positive_and_original_dollar_guard"}
+  ],
+  "methodology": {
+    "question": "Can financial tightness beyond prevailing economic activity/inflation distinguish stressful dollar strength from healthy-growth dollar strength? This adds a distinct archived macro information channel,not a prior/temperature/stock-bound rescue of the sixteenth learner.",
+    "source_defined_sign": "Chicago Fed Letter386 explains positive ANFCI as financial conditions tighter than typically suggested by economic activity and inflation. Zero is source-defined,not fitted to portfolio returns. The2017 estimation/macro-adjustment changes are acknowledged;actual own-vintage values are retained,not retrospectively rebuilt using the new method. Exact historical method-switch timing is not authenticated.",
+    "donor": "Read the complete frozen fifteenth desired matrix,not its generator. Its BIL0 or49%encodes the original published-dollar63-session guard. Preserve its stock/gold relative split,half-SOXX/equal-four-style stock composition andallprice/option information.",
+    "rule": "At every original month end,first require the current ANFCI own-vintage reading to be finite and at most14calendar days old. Retain the donor half-risk allocation only when the original dollar guard is active AND fresh ANFCI is strictly positive. Otherwise restore its non-BIL weights proportionally to98%and set BILzero. A donor already at98%non-BIL is unchanged. Equality atzero does not confirm stress. This can increase risk and worsen drawdown.",
+    "missingness": "Stale actual snapshots never enter the numeric rule,even when the dollar condition is false. Leave the entire candidate target row undefined,record source/date/age/reason,and issue no new request while keeping actual holdings andcash. Existing pending fills are not canceled. Every formal return,fee and mark-to-market session remains. The known2022-12-30abstention is a consequence of this generic age rule,not a calendar exception. Unknown hashes,missing query rows,malformed data or budget errors stop rather than default.",
+    "admission_scope": "The original225-query full-freshness admission remainsfalse,withbothstalequeries retained. This separate decision policy requires onlycurrent ANFCI levels on131donor dates,not ANFCI63-session changes.130fresh decisions andone explicitly logged abstention are expected fromthefrozenrecords;no source is reclassified asfullyadmitted andno reading is filled or retimed.",
+    "clock": "Only the previousNYSEsession's archived ANFCI snapshot is used. Datedvintages are notexactfirst-publication timestamps. Initialization ofbothformalwindows requires its actual latest scheduled source decision to be eligible;no neutral initial state or stale-seed rescue.",
+    "execution": "One freshUSD10000 account per originalfull10y/5y/base-stress path,originalRF/initialpeak,5/20bp,USD1ticket,1/2sessiondelayedopens,monthlyobserved0.025holdingband,fractional cash-funded1x. Reuse unchanged fundedexecution witha separatelyversioned independent verifier that audits bothdecision opportunities andsource abstentions.",
+    "prior_art": "Earlier NFCI confirmations used unadjusted conditions andanother stock/gold construction. The new ANFCI residual-stress signal andthefrozenfifteenthpricebudget differ;this isnotanisolatedfactor causal experiment. No oldaccount,targetpreparation,sourcecollection oradmissionpipeline replay.",
+    "selection": "One fixed hypothesis after194exposedcompleted configurations. No index/threshold/dollar-window/scale/band grid,source-age relaxation,return-window deletion,post-outcome rescue orindependentholdout claim.",
+    "primary_definition_url": "https://www.chicagofed.org/publications/chicago-fed-letter/2017/386",
+    "source_admission_repaired": false,
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

@@ -629,6 +629,29 @@ parsing. This does not repair the two stale observations or authorize
 a strategy using them. No seventeenth model is selected;
 194 completed configurations and zero qualifiers remain.
 
+The [seventeenth preregistration](research/workbench/evidence/anfci_residual_confirmation_20261028_registration_v1.json)
+defines a **separate fresh-only decision policy**, not a repair of
+ANFCI's failed full-source admission. On the frozen fifteenth
+allocation, the original dollar half-risk guard is retained only
+when fresh ANFCI is strictly positive. Otherwise the same non-BIL
+composition is restored to the original 98% target budget.
+This tests macro-adjusted financial tightness rather than tuning the
+sixteenth learner; it can increase exposure and worsen drawdown.
+
+Every monthly opportunity requires a reading no more than 14 days
+old. Staleness means a logged **no new request**, not zero ANFCI or
+a switch to cash. All 131 opportunities remain recorded: 130 have
+targets and 2022-12-30 explicitly abstains. Actual existing holdings,
+pending fills and every formal return day remain in the account policy.
+Unknown integrity errors stop rather than become abstentions.
+
+Actual registration at 2026-10-28 17:37:56 UTC precedes target proof.
+Both original anchors, all four genuine factor families and five
+prefix checks pass; independent target difference is at most
+1.12e-16. Seventeen hypotheses are registered, sixteen completed
+and one pending. No new account has run; actual publication must
+precede the four funded paths.
+
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
 

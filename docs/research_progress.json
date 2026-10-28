@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-28",
-  "phase": "anfci_vintages_complete_freshness_blocked",
-  "active_research_focus": "all225_vintages_verified_but_two_queries_exceed_unchanged14day_freshness",
+  "phase": "anfci_residual_confirmation_registered_pending",
+  "active_research_focus": "fresh_only_macro_adjusted_tightness_with_explicit_no_request_abstention",
   "research_dashboard": {
     "server": "src/us_quant/research_dashboard.py",
     "frontend": "web/research/index.html",
@@ -35,10 +35,10 @@
       "sha256": "ccff66c847db6519132775a177268c03d7ec36491076380be01d01f41589287d"
     },
     "aggregate_counts": {
-      "registered": 16,
+      "registered": 17,
       "completed": 16,
       "reviews": 16,
-      "pending": 0,
+      "pending": 1,
       "technical_failures": 0,
       "qualified": 0,
       "account_paths": 64,
@@ -140,6 +140,14 @@
         "results": "research/workbench/evidence/simplex_wealth_average_20261028_results_v1.json",
         "results_sha256": "8155c2742c10a80d049e6187dfd700b7926b0b45be8052ac02f6a59e9200858f",
         "preregistration_commit": "ec300d591caaf56395b7456d02dec5f5dc1fd405"
+      },
+      {
+        "study_id": "ssd_anfci_residual_confirmation_20261028_v1",
+        "registration": "research/workbench/evidence/anfci_residual_confirmation_20261028_registration_v1.json",
+        "registration_sha256": "143fa4a8f1804add969ff3f6f20b40a81084103a70c8803676b9295e5dba1eb0",
+        "results": null,
+        "results_sha256": null,
+        "preregistration_commit": null
       }
     ],
     "status": "first_pair_complete_both_rejected",
@@ -766,13 +774,13 @@
   ],
   "next": [
     "Preserve all sixteen overall-rejected SSD hypotheses across thirteen cohorts and64funded paths, completed diagnoses and original six-slot history. Raw documents, prices, targets and daily accounts remain private; do not replay them.",
-    "Preserve actual ANFCI nonadmission:6archives/225vintages verified butonly223fresh;Dec29/30-2022 queries haveDec9 observations aged20/21days>14. Nativeempty CSV correction preservesabsences/numerics andfailedv1;firstarchive reused,6uniquePOSTstotal. Do not redownload,relaxage,fillcurrenthistory or invent safe states. Anyfuture use needsseparateexplicitinformation/missingness contract beforeoutcomes;no17thmodelselected. Moodypermissiondeferral remains.",
+    "Publish the actual seventeenth fresh-only residual-stress decision policy before four funded paths. Original225-queryANFCIadmission remainsfalse.131monthlyopportunities/130fresh targets/oneDec30-2022 explicitno-new-request preserveallreturns andpendingfills. Dollarhalfguard onlywithfreshANFCI>0;no threshold/age/window/scale/band rescue. Source/oldaccount replay andMoodyacquisition remain prohibited.",
     "Continue economically motivated, preregistered independent small batches without ordinary per-batch approval or a configuration-count ceiling until2026-10-31T15:59Z. Use one computation; at cutoff preserve partial work, clear only the SSD session timer and confirm absence.",
     "Keep old source refusals, VIG/SDY terminal429 and prospective/PIT gates. The independent market-only IBKR adapter is proved, but the one actual probe stopped on2157 before historical requests;0history rows/admissions,no automatic retry or inferred entitlement denial. Default readonly account synchronization remains prohibited."
   ],
   "next_zh": [
     "保留SSD十三组共16项整体拒绝假设、64条资金约束路径、已完成诊断与历史六配置记录，不重复运行；原始文档、行情、目标矩阵和逐日账户保持私有。",
-    "保留ANFCI实际未准入结论：6档案/225vintage完整，但仅223项新鲜；2022-12-29/30查询仅有12月9日观察，20/21天超过14。原生空CSV字段修正只保留缺失、不改数值，旧v1失败保留，首档案复用、共6次唯一POST。不重下载、放宽时效、用当前历史补齐或构造安全状态。未来使用须另定事前信息/缺失规则，未选17项；Moody许可暂缓保持。",
+    "先真实发布第17项仅用新鲜数据的残差金融紧张规则，再执行四条资金路径。旧225查询完整准入仍失败。保留131月末机会/130目标/2022-12-30一次显式不发新请求，全部收益日和既有待执行订单保留。仅美元防御与新鲜ANFCI>0同时满足才维持半风险；不调阈值/时效/窗口/比例/带宽救版本，不回放旧账户或采集Moody。",
     "持续开展有经济理由、事前冻结的独立小批次，无普通逐批确认或配置次数上限，截止2026-10-31T15:59Z；单计算job，届时保存未完状态、只清除SSD会话timer并确认不存在。",
     "原拒绝来源、VIG/SDY终止429和前瞻/PIT门保持。独立IBKR market-only适配器已证明，但唯一真实探针在历史请求前因2157停止；历史行/准入0，不自动重试或推断订阅拒绝，仍禁止默认readonly账户同步。"
   ],
