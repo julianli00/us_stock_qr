@@ -584,6 +584,21 @@ Counts are sixteen completed SSD hypotheses, 64 funded paths,
 did not establish a net-performance theorem or independent forward
 proof, and no prior, forgetting rate or bounds are retuned to rescue it.
 
+The saved learning assessment shows a material exposure change:
+across 131 paired month ends, stock targets rise on 98 dates and fall
+on 33. Their average increase is **7.1282 percentage points of total
+target capital**, including **6.0895 points in SOXX**, offset by gold.
+Lower costs are therefore not an equal-risk explanation of the return gain.
+
+Both ten-year paths first breach 15% drawdown on **2020-03-16**,
+despite already holding over 51% BIL at the previous close. Neither
+has a pending request, new order or fee on that breach day.
+The five-year maximum-drawdown episode moves to
+2022-03-29--2022-10-14, rather than the fifteenth model's 2026 episode.
+Saved ex-post accounting associates the gain mainly with a positive
+SOXX component and lower fee effects, offset by negative gold
+components; it is not causal or standalone alpha.
+
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
 

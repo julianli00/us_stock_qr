@@ -1853,6 +1853,80 @@ Counts are sixteen completed SSD hypotheses, 64 funded paths,
 has 190 events; the original ledger and prospective identities remain
 unchanged. No seventeenth model is selected.
 
+### Saved simplex learning and holding assessment
+
+The assessment reads all 131 saved learning/target rows; it does not
+rerun moment updates, quadrature or any account. All original
+BIL/non-BIL budgets are preserved. Learned fractions are measured
+**within non-BIL capital**, not total account NAV:
+
+| Sleeve | First fraction | Mean fraction | Last fraction |
+|---|---:|---:|---:|
+| Four-style core | 33.5130% | 31.3692% | 28.1566% |
+| SOXX | 33.9439% | 38.4893% | 44.2051% |
+| GLD | 32.5431% | 30.1415% | 27.6383% |
+
+Relative to the fifteenth model, total stock targets are higher on
+98 dates and lower on 33. Mean changes in **total target capital**
+are +7.1282 percentage points in stocks, comprising +6.0895 in SOXX
+and +1.0387 in the four-style core, versus -7.1282 in gold.
+These are not a change to the donor dollar guard or executed-order counts.
+The consecutive monthly target L1 movement sum falls from 45.283863
+to 32.847971; that intention statistic is **not executed turnover**.
+
+Actual daily-average stock weights rise by
+7.7360/7.7360/8.6879/8.5899 percentage points across ten-year base/stress
+and five-year base/stress. Actual SOXX weights rise by
+6.6911/6.6745/7.9527/7.8865 points. This is a material exposure shift,
+not simply fewer commissions on the same risk.
+
+Ex-post linked accounting uses each actual account's own prior NAV;
+the complete private reconciliation also includes BIL:
+
+| Path | Paired net log-return difference | SOXX component | Gold component | Four-style core component | Actual-fee component |
+|---|---:|---:|---:|---:|---:|
+| 10y base | +0.083299 | +0.215287 | -0.161392 | -0.000377 | +0.029876 |
+| 10y stress | +0.144501 | +0.245520 | -0.154172 | +0.006653 | +0.046449 |
+| 5y base | +0.019265 | +0.116000 | -0.099747 | -0.011377 | +0.014402 |
+| 5y stress | +0.056345 | +0.141458 | -0.096574 | -0.007718 | +0.019013 |
+
+The positive semiconductor and fee components are partly offset by
+gold and most core components. These are log-accounting contributions,
+not CAGR percentage points, causal alpha, standalone factor returns
+or a fee-free/equal-risk counterfactual.
+
+Both ten-year maximum drawdowns remain 2020-02-19--2020-03-20.
+Both first exceed 15% on 2020-03-16. At the previous close, BIL already
+represents 51.1567%/51.7007% of NAV, under the existing February 28
+target with BIL 49%. Neither breach day has an already-issued pending
+request, new model order or fee. The dollar guard had already acted;
+its bill allocation is not a guaranteed cumulative drawdown floor.
+
+Both five-year maxima instead move to **2022-03-29--2022-10-14**,
+compared with the fifteenth model's 2026-01-29--2026-03-30 episode.
+The new intervals contain 14/28 model tickets and USD19.57787/52.27759
+fees. Both models' observed maximum intervals are retained in the
+private paired analysis; comparing only a shared favorable episode
+would miss this risk change.
+
+The same actual ten-year accounts retain the fixed chronological split:
+
+| Path | 2016-10-06--2021-10-05 QQQ log gap | 2021-10-06--2026-10-05 QQQ log gap | Full-window QQQ log gap |
+|---|---:|---:|---:|
+| 10y base | -0.463190 | +0.189881 | -0.273309 |
+| 10y stress | -0.451767 | +0.196873 | -0.254894 |
+
+The earlier shortfall still outweighs later gains. These additive
+segments do not splice independent five-year accounts or constitute
+untouched holdouts. All 85 direct references, frozen inputs, the
+190-event SSD journal and original ledger are unchanged. Eight
+synthetic cases cover fraction/budget/clock validation and corruption.
+Private assessment SHA256:
+`fa5a1646d1d213d20cd08049b328f053702e32a8ad079ac78f7fa35327f77d48`.
+Counts remain sixteen completed SSD hypotheses, 64 paths,
+194 combined completions and zero qualifiers. No new parameter or
+seventeenth model is selected.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,
