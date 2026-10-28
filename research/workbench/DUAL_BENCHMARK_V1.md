@@ -676,7 +676,7 @@ The next fixed candidate is `benchmark_opportunity_joint_tail_v1`.
 The [actual registration](evidence/joint_tail_construction_20261028_registration_v1.json)
 occurred at 2026-10-28 03:56:56.804178 UTC, followed by its target-proof
 event at 03:57:11.575373 UTC and packet at 03:57:11.576530 UTC.
-No candidate account or performance metric exists at this fence.
+No candidate account or performance metric existed at this fence.
 
 The supplemental prior-art check explicitly includes the already tested
 [unleveraged covariance constructions](evidence/risk_only_covariance_20261011_results.json):
@@ -729,8 +729,41 @@ shorting, new factor definition, benchmark replay or independent-forward
 claim is introduced.
 
 The study is selected after 186 exposed completed configurations.
-Current counts are nine SSD registrations, eight completed, one pending,
-32 paths, zero qualifiers and 186 combined completed configurations.
+The preregistration snapshot contained nine registrations, eight completed,
+one pending, 32 paths and 186 combined completions.
+
+### Completed joint-tail result: drawdowns pass, return goals fail
+
+Actual preregistration publication
+`4fc9ebe220203cf86e6b48ff963d84a6572a3631` was observed before the first
+new account. All four paths completed at 2026-10-28 04:03:55.058480 UTC.
+The [complete sanitized result](evidence/joint_tail_construction_20261028_results_v1.json)
+is rejected.
+
+| Path | Net CAGR | Sharpe | Max DD | Annual two-sided turnover | Model orders | Costs USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 9.0968% | 0.7288 | 11.9830% | 5.5727 | 746 | 1,124.94 |
+| 10y stress | 8.4278% | 0.6500 | 13.8192% | 5.5561 | 746 | 2,247.26 |
+| 5y base | 11.2137% | 0.7971 | 12.0187% | 3.7283 | 339 | 448.68 |
+| 5y stress | 9.8895% | 0.6471 | 13.8573% | 3.7162 | 339 | 760.48 |
+
+Every path passes the original 15% drawdown ceiling. Every path fails net
+CAGR>12%, Sharpe>1 and both matched-cost benchmarks; both stress paths also
+fail the preserved base-cost-SPY comparison. The largest independent
+equity-accounting difference is USD4.001776687800884e-11. There was no
+borrowing, broker order or new market-data request.
+
+The 122 optimizer decision records remain unchanged and are not executed
+order counts. Their observed benchmark-opportunity constraints were not
+future-return guarantees. Historical sample tail estimates did not create
+independent alpha. Do not splice this model's drawdowns with the eighth
+model's higher returns, lower the actual gates, or sweep the opportunity
+hurdle, core bound or tail probability after this outcome.
+
+The journal now has 106 events. SSD totals are nine completed/reviewed
+hypotheses, 36 paths, zero pending, zero technical failures and zero
+qualifiers; combined completed configurations are 187. All original ledger,
+benchmark, source/catalog and prospective records remain unchanged.
 
 ## Independent IBKR price-history source boundary
 

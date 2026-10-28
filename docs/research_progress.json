@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-28",
-  "phase": "joint_tail_construction_registered_pending_accounts",
-  "active_research_focus": "joint_portfolio_tail_risk_with_observed_benchmark_opportunity",
+  "phase": "joint_tail_construction_complete_rejected",
+  "active_research_focus": "saved_joint_tail_return_shortfall_before_next_economic_question",
   "research_dashboard": {
     "server": "src/us_quant/research_dashboard.py",
     "frontend": "web/research/index.html",
@@ -24,13 +24,13 @@
     },
     "aggregate_counts": {
       "registered": 9,
-      "completed": 8,
-      "reviews": 8,
-      "pending": 1,
+      "completed": 9,
+      "reviews": 9,
+      "pending": 0,
       "technical_failures": 0,
       "qualified": 0,
-      "account_paths": 32,
-      "total_legacy_plus_ssd_completed": 186
+      "account_paths": 36,
+      "total_legacy_plus_ssd_completed": 187
     },
     "additional_cohorts": [
       {
@@ -69,9 +69,9 @@
         "study_id": "ssd_joint_tail_construction_20261028_v1",
         "registration": "research/workbench/evidence/joint_tail_construction_20261028_registration_v1.json",
         "registration_sha256": "b110b5f93082589b4070c480bda870240c765d7d469213a8a7e0c3c4388684c9",
-        "results": null,
-        "results_sha256": null,
-        "preregistration_commit": null
+        "results": "research/workbench/evidence/joint_tail_construction_20261028_results_v1.json",
+        "results_sha256": "9a0e3da3403c66d7722ea48521adc8366d262d85a264d276d67d0be731a0ce4f",
+        "preregistration_commit": "4fc9ebe220203cf86e6b48ff963d84a6572a3631"
       }
     ],
     "status": "first_pair_complete_both_rejected",
@@ -403,7 +403,9 @@
     "Family-core candidate actuallyregistered23:58:51UTC and published ea997167c5121da2faa6a178e2b974b0950592be before4fundedpaths completed2026-10-28T00:11:13.626966Z. Rejected despiteCAGR22.5567/21.1015/26.4066/23.2902%:Sharpe0.9489/0.8907/1.0480/0.9278,DD33.8188/33.8303/22.6943/23.0772%.All4DDfail,3Sharpefail,10ystressQQQfail.All4CAGR/Sharpe lower andturnover/orders/fees higher than actualsavedmonthlysource;not an incremental return gain.8SSDcomplete/8reviews/32paths/0pending/0technical/0passes,186combined,journal94;oldledger/forward unchanged.",
     "Saved concentration/risk diagnosis completed2026-10-28T02:14:42.545687Z across4new+4source paths;147inputs/94events unchanged,no strategy/account/target replay. New10ybase SOXXmeanNAVweight40.87% versus64.16%ex-post netvariance share;stocks93.31%,not marketR2. 2020maxDDinterval has0orders/fees andlosses fromSOXX+core,mostlyovernight;new5yfirstbreachesMay10base/Apr27stress2022alreadyheldGLD/stocks0. Signedrealizedrisk isnotnominalweight/forecast/causalalpha.",
     "User-directed native continuation changed30min to1min at2026-10-28T02:21:04.321Z and get-confirmed02:21:10.639Z;completeprompt byte-identical. Only thisSSDsession binding changed;singlejob,deadline/source/broker restrictions retained. Old30minreceipts anddata-finalizationbuffer unchanged;notper-minute backtests/downloads/retries.",
-    "Read28saved candidates in6prior construction groups without replay;4recurring metricsets match the latest frozen original snapshot. OldQLD/covariance/ensemble primarypasses are not current1x/QQQqualification;unleveragedbalanced/breadth/inversevol/volcap andgold/downside budgets already have recorded failures. OriginalW42six-familyplans remainunregistered inoldledger. No ninthconstruction/weights/window selected;SOXXhalf/equalcore are not permanent userconstraints.8SSDcomplete/32paths/186combined/0champions unchanged."
+    "Read28saved candidates in6prior construction groups without replay;4recurring metricsets match the latest frozen original snapshot. OldQLD/covariance/ensemble primarypasses are not current1x/QQQqualification;unleveragedbalanced/breadth/inversevol/volcap andgold/downside budgets already have recorded failures. OriginalW42six-familyplans remainunregistered inoldledger. No ninthconstruction/weights/window selected;SOXXhalf/equalcore are not permanent userconstraints.8SSDcomplete/32paths/186combined/0champions unchanged.",
+    "Supplemental selection review identified already rejected unleveraged covariance-risk-budget and maximum-diversification constructions, retaining tiny earlier/canonical numeric differences rather than claiming bit equality. Chose one different joint portfolio5%tail/stronger observedSPYQQQopportunity construction, not old covariance/return-model renaming. Actual registration2026-10-28T03:56:56.804178Z preceded122certifiedmonthlytargets;75optima/14nonpositive/33analyticallyunavailable economicstandbys,5prefixchecks,all6families covered. Solver/data errors never become cash.",
+    "Published actual joint-tail preregistration4fc9ebe220203cf86e6b48ff963d84a6572a3631 before4fundedpaths finished2026-10-28T04:03:55.058480Z. Rejected:netCAGR9.0968/8.4278/11.2137/9.8895%,Sharpe0.7288/0.6500/0.7971/0.6471,DD11.9830/13.8192/12.0187/13.8573% (10ybase/stress,5ybase/stress).All4DDpass butall4CAGR/Sharpe/SPY/QQQ andstress-extra-SPYfail.9SSDcomplete/9reviews/36paths/0pending/0technical/0qualifiers,187combined,106events;oldledger/benchmarks/forwardunchanged. Do not splice this low drawdown with another strategy's highCAGR."
   ],
   "completed_zh": [
     "已保留可运行的原Top30算法、成本引擎和独立早期扫描器，并隔离导入52配置研究工作台。",
@@ -686,17 +688,19 @@
     "六家族因子半仓23:58:51UTC真实登记，先发布ea997167c5121da2faa6a178e2b974b0950592be，2026-10-28T00:11:13.626966Z完成4资金路径后拒绝。依次十年base/stress、五年base/stress净CAGR22.5567/21.1015/26.4066/23.2902%，Sharpe0.9489/0.8907/1.0480/0.9278，DD33.8188/33.8303/22.6943/23.0772%；4条DD、3条Sharpe及十年stressQQQ失败。相对真正的已存月末来源，4条CAGR/夏普都下降、换手/订单/费用都上升，不能把绝对收益超20%当作新增益。SSD8完成/8审阅/32路径/0待评估/0技术失败/0通过，合计186、日志94；原账本及前瞻不变。",
     "2026-10-28T02:14:42.545687Z完成4新账户+4来源账户的已存集中度/风险诊断，147输入/94事件不变，不重跑策略/账户/目标。新十年base的SOXX平均NAV权重40.87%，事后净收益方差贡献64.16%；股票合计93.31%，不是单市场R²。2020最大回撤区间无订单/费用，SOXX与因子核心共同亏损且以隔夜为主；新五年首次越界为2022-05-10base/04-27stress，当时已持GLD、股票0。已实现风险分解不是名义权重、预测或因果alpha。",
     "按用户定向要求于2026-10-28T02:21:04.321Z将唯一SSD原生续接从30分钟改为1分钟，02:21:10.639Z实际get确认，完整prompt逐字不变。单活跃job、原截止与数据/券商限制保留；旧30分钟回执及收盘数据缓冲不改，不授权每分钟重复回测、下载或重试。",
-    "只读核对6组28项旧组合构建及已存结果，4项递归研究指标与最新冻结原快照一致。旧QLD协方差/组合的旧主门通过不等于当前1倍/QQQ达标；无杠杆平衡/广度/逆波动/波动上限及黄金/下行预算已有失败记录。原W42六家族计划仍未在旧账本登记。未指定第9构建、权重或窗口；SOXX半仓/核心等权不是用户永久约束。8项SSD完成/32路径/合计186/0冠军不变。"
+    "只读核对6组28项旧组合构建及已存结果，4项递归研究指标与最新冻结原快照一致。旧QLD协方差/组合的旧主门通过不等于当前1倍/QQQ达标；无杠杆平衡/广度/逆波动/波动上限及黄金/下行预算已有失败记录。原W42六家族计划仍未在旧账本登记。未指定第9构建、权重或窗口；SOXX半仓/核心等权不是用户永久约束。8项SSD完成/32路径/合计186/0冠军不变。",
+    "补充选题核对发现无杠杆协方差风险预算/最大分散也已有拒绝记录，保留早期和规范快照的微小数值差异，不假称逐位相同。固定另一整体组合原则：联合5%尾部损失与较强SPY/QQQ已观测动量机会约束，不是旧协方差/预测模型改名。2026-10-28T03:56:56.804178Z真实登记先于122月末目标，75最优解/14非正机会/33机会约束不可行待机，5次前缀及6家族覆盖通过；求解器/数据错误不转现金。",
+    "先发布联合尾部登记4fc9ebe220203cf86e6b48ff963d84a6572a3631，2026-10-28T04:03:55.058480Z完成4资金路径并拒绝。依次十年base/stress、五年base/stress净CAGR9.0968/8.4278/11.2137/9.8895%，Sharpe0.7288/0.6500/0.7971/0.6471，DD11.9830/13.8192/12.0187/13.8573%；4条DD均通过但CAGR/夏普/SPY/QQQ及压力对基础SPY全失败。SSD9完成/9审阅/36路径/0待评估/0技术失败/0通过，合计187、106事件；原账本/基准/前瞻不变，不能拼接本模型回撤和其他模型收益。"
   ],
   "next": [
-    "Preserve all eight rejected SSD hypotheses across five cohorts and32funded paths, completed diagnoses and original six-slot history. Raw documents, prices, targets and daily accounts remain private; do not replay them.",
-    "Publish the actual ninth joint-tail/opportunity registration before its four funded accounts. The model constructs whole-portfolio targets from causal252-session scenarios and stronger observed SPY/QQQ momentum opportunity, not old targets or full-sample risk shares. Preserve explicit economic-standby reasons; solver/data failures must stop, never fall back to cash.",
+    "Preserve all nine rejected SSD hypotheses across six cohorts and36funded paths, completed diagnoses and original six-slot history. Raw documents, prices, targets and daily accounts remain private; do not replay them.",
+    "Use the saved ninth-study result and certified decision records to diagnose realised return shortfall and implementation burden before another economic question. All four drawdowns pass but CAGR/Sharpe/both benchmarks fail; do not combine these drawdowns with another model's returns or retune the hurdle/core bound/tail probability to rescue the configuration.",
     "Continue economically motivated, preregistered independent small batches without ordinary per-batch approval or a configuration-count ceiling until2026-10-31T15:59Z. Use one computation; at cutoff preserve partial work, clear only the SSD session timer and confirm absence.",
     "Keep old source refusals, VIG/SDY terminal429 and prospective/PIT gates. The independent market-only IBKR adapter is proved, but the one actual probe stopped on2157 before historical requests;0history rows/admissions,no automatic retry or inferred entitlement denial. Default readonly account synchronization remains prohibited."
   ],
   "next_zh": [
-    "保留SSD五组共8项已拒绝假设、32条资金约束路径、已完成诊断与历史六配置记录，不重复运行；原始文档、行情、目标矩阵和逐日账户保持私有。",
-    "先真实发布第9项联合尾部风险/基准动量机会构建登记，再计算4条资金路径。用决策时已知252日联合情景和较强SPY/QQQ历史机会构建整体目标，不借用旧目标或全样本风险份额。经济条件待机须明确记录；求解器/数据错误必须停止，不能伪装现金回退。",
+    "保留SSD六组共9项已拒绝假设、36条资金约束路径、已完成诊断与历史六配置记录，不重复运行；原始文档、行情、目标矩阵和逐日账户保持私有。",
+    "依据第9项已存结果与有证书的决策记录，先诊断实际收益不足及执行负担，再选择经济问题。4条回撤通过但CAGR/夏普/双基准全失败，不拿本模型回撤拼接另一模型收益，也不调低机会门槛、核心约束或尾部概率来挽救该配置。",
     "持续开展有经济理由、事前冻结的独立小批次，无普通逐批确认或配置次数上限，截止2026-10-31T15:59Z；单计算job，届时保存未完状态、只清除SSD会话timer并确认不存在。",
     "原拒绝来源、VIG/SDY终止429和前瞻/PIT门保持。独立IBKR market-only适配器已证明，但唯一真实探针在历史请求前因2157停止；历史行/准入0，不自动重试或推断订阅拒绝，仍禁止默认readonly账户同步。"
   ],

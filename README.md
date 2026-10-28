@@ -146,7 +146,7 @@ whole-model comparison, including changed drift-triggered execution and fees,
 not isolated asset PnL attribution. More economic labels did not improve
 this fixed structure and are not independent alpha.
 
-Current totals are eight SSD registrations/completions, zero pending,
+At that eighth-study snapshot there were eight SSD registrations/completions, zero pending,
 32 paths and 186 combined completions, with no qualified champion.
 
 The subsequent saved-holdings diagnosis separates nominal concentration
@@ -190,8 +190,28 @@ Of 122 completed monthly decisions, 75 have certified joint-tail optima,
 unavailable opportunity hurdle. The latter two are explicit model conditions
 for BIL, never a fallback on solver or data failure. All primary/secondary
 LP certificates and independently sorted tail losses passed; five prefix
-checks preserve causality. No account has run: nine registrations, eight
-completed, one pending, 32 paths and 186 combined completions.
+checks preserve causality. The preregistration snapshot had nine registrations,
+eight completed and one pending, before any new account.
+
+Actual preregistration `4fc9ebe220203cf86e6b48ff963d84a6572a3631` preceded
+the [complete ninth result](research/workbench/evidence/joint_tail_construction_20261028_results_v1.json),
+finished at 2026-10-28 04:03:55 UTC. The construction is **rejected**:
+all four drawdowns satisfy 15%, but all four net CAGR, Sharpe, SPY and QQQ
+gates fail.
+
+| Path | Net CAGR | Sharpe | Max DD | Annual two-sided turnover | Model orders | Costs USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 9.0968% | 0.7288 | 11.9830% | 5.5727 | 746 | 1,124.94 |
+| 10y stress | 8.4278% | 0.6500 | 13.8192% | 5.5561 | 746 | 2,247.26 |
+| 5y base | 11.2137% | 0.7971 | 12.0187% | 3.7283 | 339 | 448.68 |
+| 5y stress | 9.8895% | 0.6471 | 13.8573% | 3.7162 | 339 | 760.48 |
+
+The observed opportunity constraint and certified sample-tail optimum did
+not guarantee future net return. Its low drawdowns cannot be combined with
+the previous model's higher CAGR to manufacture a passing strategy.
+Current totals are nine completed SSD hypotheses, 36 paths and 187 combined
+completed configurations, with zero pending, zero technical failures and
+no qualified champion. No original ledger or prospective model changed.
 
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
