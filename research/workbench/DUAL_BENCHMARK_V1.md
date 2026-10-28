@@ -1459,6 +1459,52 @@ Counts are fourteen completed/reviewed SSD hypotheses, 56 funded paths,
 failures and zero qualifiers, with 166 journal events. No fifteenth
 model or post-outcome share/window adjustment has been selected.
 
+### Saved relative-equity composition assessment
+
+The assessment uses the 128 actual eligible target dates, not neutral
+fills for the three insufficient prehistory dates. The source's total
+equity, gold, BIL and unused targets remain unchanged on every matched
+date. SOXX's share **within equity** is above half on 95 dates and below
+half on 33, with no equal-half dates. Its range is 43.7753%--60.9286%
+and mean 51.5813%; the mean SOXX shift in **total target capital** is
++0.780784 percentage points. These are source-target statistics, not
+trade counts or equal-risk assertions.
+
+The actual average closing SOXX weight rises by approximately
+0.7622/0.7125/0.5664/0.4263 percentage points across ten-year base/stress
+and five-year base/stress. Unchanged desired equity/defense totals do
+not force identical actual closing weights after composition-dependent
+returns, fees and observed-weight execution.
+
+Frozen pure accounting functions are reused, with their new-account
+output roles explicitly renamed for this composition study. No old
+diagnostic main, target generator or portfolio is replayed.
+
+| Path | Actual net log-return difference | SOXX linked contribution | Core linked contribution | Actual-fee linked contribution | Ending NAV difference USD |
+|---|---:|---:|---:|---:|---:|
+| 10y base | +0.019694 | +0.035736 | -0.014693 | -0.000876 | +941.07 |
+| 10y stress | +0.021938 | +0.037867 | -0.014599 | -0.001801 | +1,005.75 |
+| 5y base | +0.009724 | +0.016173 | -0.005629 | +0.000088 | +252.81 |
+| 5y stress | +0.011243 | +0.016619 | -0.004857 | -0.000800 | +280.36 |
+
+The complete private accounting includes gold and BIL and sums exactly
+to the observed paired ending-wealth ratio. SOXX is the largest positive
+linked holding component; the four-style core contributes negatively
+to the paired difference. Total dollar fees increase throughout, but
+five-year-base NAV-normalized fee contribution is slightly positive
+because actual wealth and timing differ. Dollar-fee signs cannot simply
+be copied into return attribution.
+
+These are ex-post log-return accounting contributions, not CAGR
+percentage-point changes, causal alpha, standalone asset returns or
+zero-fee/equal-wealth counterfactuals. Daily arithmetic identity error
+is below 7.5e-16 and linked sum error below 3.5e-15.
+All 56 direct references, frozen inputs, original ledger and 166-event
+journal remain unchanged. Private assessment SHA256:
+`b9d1046562e362eeac04dd72b8ecc9911383281ed952eeb7cdfc76c598bddab1`.
+Counts remain fourteen completed hypotheses, 56 paths, 192 combined
+completions and zero qualifiers. No new parameter or model is selected.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,

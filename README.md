@@ -440,6 +440,18 @@ do not establish the full joint goal or independent forward performance.
 Counts are fourteen completed SSD hypotheses, 56 paths, 192 combined
 completions and zero qualified champions.
 
+The saved composition assessment shows a modest semiconductor tilt:
+SOXX's share of the unchanged equity budget averages **51.5813%** over
+the 128 eligible month ends, above half on 95 dates and below half on 33.
+The average shift is **+0.7808 percentage points of total target
+capital**, not a change in total equity or an order count.
+
+Ex-post accounting links the positive relative-wealth outcome mainly
+to SOXX holding contributions, partly offset by lower core contributions
+and fees. It does not establish a causal or forward return advantage.
+The three undefined prehistory dates remain excluded from this
+descriptive target comparison, not replaced with 50% observations.
+
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
 
