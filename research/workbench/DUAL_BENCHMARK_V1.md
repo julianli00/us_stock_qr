@@ -2185,6 +2185,86 @@ Counts are seventeen completed SSD hypotheses, 68 funded paths,
 source age, dollar window, reduction scale, trade band or calendar
 is tuned after these outcomes; no eighteenth candidate is selected.
 
+### Saved residual guard and holding assessment
+
+The diagnosis preserves all 131 source opportunities and the one
+unavailable target. Among the **130 eligible paired targets**, the
+new policy retains 11 original half-risk guards, releases 63, and
+leaves 56 originally full-risk states unchanged. No target is
+invented for 2022-12-30 and no account return is omitted.
+Non-BIL relative composition remains unchanged.
+
+Mean changes in **total target capital on eligible dates** are
++23.7462 percentage points in non-BIL assets, comprising +13.9667
+in stocks and +9.7794 in gold, versus -23.7462 in BIL. SOXX alone
+accounts for +6.9834 points of the stock change. These intention
+statistics are not executed turnover or ticket counts.
+
+Actual daily-average stock weights rise
+14.1736/14.1800/15.1847/15.1421 percentage points across ten-year
+base/stress and five-year base/stress. Gold weights rise
+9.8949/9.9038/11.5225/11.5763 points, while BIL weights fall
+24.0541/24.0705/26.6911/26.7034 points. The return increase therefore
+accompanies materially more stock **and** gold exposure, not just
+fewer trading costs.
+
+The following exact ex-post log linkage uses each account's own
+prior NAV. It is not CAGR percentage points, causal alpha,
+standalone asset returns or an equal-risk/fee-free counterfactual:
+
+| Path | Paired net log-return difference | Gold | SOXX | Four-style core | BIL | Actual-fee component |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | +0.192564 | +0.171611 | +0.050252 | +0.019026 | -0.060520 | +0.012194 |
+| 10y stress | +0.185290 | +0.192473 | +0.007250 | +0.009937 | -0.060049 | +0.035679 |
+| 5y base | +0.144789 | +0.116380 | +0.057643 | +0.010318 | -0.045776 | +0.006224 |
+| 5y stress | +0.135000 | +0.131501 | +0.022891 | +0.007248 | -0.045285 | +0.018645 |
+
+Gold is the largest positive linked component in all four paths;
+the BIL component is negative throughout. This accounting result
+does not identify a causal forecast advantage.
+
+Both ten-year first 15% breaches occur on **2020-03-12**, after the
+recorded 2020-02-28 guard release. Both five-year first breaches
+follow the recorded 2022-08-31 release: 2022-09-15 for base and
+2022-09-06 for stress. In every case the prior close and latest target
+have **BIL zero**, and the breach day has no pending request, model
+order or fee. Lack of positive ANFCI confirmation is not a bound
+on subsequent asset losses.
+
+Both ten-year maximum drawdowns remain
+2020-02-19--2020-03-20. The five-year maxima move from the donor's
+2026-01-29--2026-03-30 episode to
+**2021-12-27--2022-10-14** (base) and
+**2021-12-27--2022-09-26** (stress). Both models' observed maximum
+intervals remain in the private paired assessment. All these new
+maximum episodes end **before** the 2022-12-30 source abstention;
+that later absence cannot cause the earlier observed losses.
+
+The original fixed split of each actual ten-year account shows:
+
+| Path | Early QQQ log gap, through 2021-10-05 | Later QQQ log gap, from 2021-10-06 | Full-window QQQ log gap |
+|---|---:|---:|---:|
+| 10y base | -0.485633 | +0.321589 | -0.164044 |
+| 10y stress | -0.503414 | +0.289308 | -0.214106 |
+
+The early deficit still exceeds the later gain. These segments
+are not independent five-year accounts or untouched holdouts.
+
+The first diagnostic attempt stopped on a metadata spelling mismatch:
+the producer uses `stale_numeric_reading_used`, while the reader
+expected a plural alias. Its script, intent and failed log remain
+unchanged. A separate v2 uses a strict in-memory alias with no
+source/value changes and seven regression cases built from the
+real producer's **synthetic** audit schema. The failed main was not
+replayed, and no real signal or account was regenerated.
+
+All 96 direct references, frozen inputs, the 202-event SSD journal
+and original ledger remain unchanged. Private v2 assessment SHA256:
+`48107bab2fd7a8e2701a9cef4940aa1ce6d2076e266e7b8e30cd0cbb10d011d1`.
+Counts remain seventeen completed SSD hypotheses, 68 paths,
+195 combined completions and zero qualifiers. No new parameter,
+source admission or eighteenth model is selected.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,

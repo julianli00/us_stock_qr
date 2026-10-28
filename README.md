@@ -678,6 +678,21 @@ SSD hypotheses, 68 funded paths, 195 combined completions and
 zero qualifiers. No eighteenth model or post-result threshold rescue
 is selected.
 
+The saved guard diagnosis shows that, among 130 fresh paired
+opportunities, **63 original half-risk guards were released**, only
+11 retained, and 56 already-full-risk targets stayed unchanged.
+Mean non-BIL target capital rises **23.7462 percentage points**,
+split between stocks (+13.9667) and gold (+9.7794), with an equal
+reduction in BIL. These are eligible target averages, not order counts.
+
+At the first 15% breaches, every path has **zero BIL** at the prior
+close, with no pending request, same-day order or fee. The preceding
+2020-02-28 and 2022-08-31 decisions are both recorded guard releases.
+All observed maximum-drawdown intervals end before the later
+2022-12-30 source abstention, so that missing-data event cannot
+explain those earlier losses. Lower costs did not preserve the
+donor's risk protection.
+
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
 
