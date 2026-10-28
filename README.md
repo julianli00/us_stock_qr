@@ -241,9 +241,27 @@ opportunity hurdle.
 Actual registration at 2026-10-28 05:46:36 UTC precedes target preparation.
 All 122 monthly plans are independently certified: 112 optimized and ten
 explicit nonpositive-opportunity BIL plans, with five prefix checks and
-full-window factor coverage. No new funded account has run. Current counts
-are ten registrations, nine completed, one pending, 36 paths and 187
-combined completions, with no qualified champion.
+full-window factor coverage. That registration snapshot had no new funded
+account.
+
+Actual preregistration `1074904478bfd0ba2a19d502c479ebd2de13c227` preceded
+the [complete tenth result](research/workbench/evidence/benchmark_tail_budget_20261028_results_v1.json),
+finished at 2026-10-28 05:54:28 UTC. It is **rejected**: all four drawdown,
+Sharpe and QQQ gates fail. Three CAGR paths pass 12%; only the two five-year
+paths beat matched-cost SPY.
+
+| Path | Net CAGR | Sharpe | Max DD | Annual two-sided turnover | Model orders | Costs USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 12.9292% | 0.6781 | 26.4086% | 6.2167 | 744 | 1,187.36 |
+| 10y stress | 11.4123% | 0.5922 | 27.0756% | 6.1955 | 737 | 2,380.56 |
+| 5y base | 16.5627% | 0.7818 | 26.6875% | 6.4342 | 398 | 565.31 |
+| 5y stress | 14.9118% | 0.6907 | 27.3277% | 6.4152 | 391 | 1,029.44 |
+
+Growth-first raises returns relative to the ninth construction but loses
+its drawdown control; neither meets the joint goal. Do not combine their
+best metrics or tune a risk-budget multiplier after seeing this result.
+Current totals are ten completed SSD hypotheses, 40 paths and 188 combined
+completions, with zero pending, zero technical failures and no qualifier.
 
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).

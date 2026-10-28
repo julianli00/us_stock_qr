@@ -846,7 +846,7 @@ One fixed reciprocal question is now registered:
 [actual preregistration packet](evidence/benchmark_tail_budget_20261028_registration_v1.json)
 records registration at 2026-10-28 05:46:36.615636 UTC, target proof at
 05:46:54.638470 UTC and packet creation at 05:46:54.639837 UTC.
-No candidate account or realized performance metric exists at this fence.
+No candidate account or realized performance metric existed at this fence.
 
 The preceding diagnosis found substantial BIL exposure even in optimized
 intervals of the risk-first rule. This version reverses economic priority:
@@ -881,8 +881,45 @@ of all six registered core funds pass.
 The original four funded paths, net Sharpe>1, CAGR>12%, drawdown<=15%,
 matched-cost SPY/QQQ and extra stress-vs-base-SPY gates remain unchanged.
 Past opportunity/risk observations are not independent validation.
-Current totals are ten SSD registrations, nine completed, one pending,
-36 account paths and 187 combined completed configurations.
+The preregistration snapshot contained ten registrations, nine completed,
+one pending, 36 paths and 187 combined completed configurations.
+
+### Completed benchmark-tail-budget result
+
+Actual publication `1074904478bfd0ba2a19d502c479ebd2de13c227` was verified
+before candidate accounts. All four paths finished at
+2026-10-28 05:54:28.534515 UTC. The
+[complete sanitized outcome](evidence/benchmark_tail_budget_20261028_results_v1.json)
+is rejected.
+
+| Path | Net CAGR | Sharpe | Max DD | Annual two-sided turnover | Model orders | Costs USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 12.9292% | 0.6781 | 26.4086% | 6.2167 | 744 | 1,187.36 |
+| 10y stress | 11.4123% | 0.5922 | 27.0756% | 6.1955 | 737 | 2,380.56 |
+| 5y base | 16.5627% | 0.7818 | 26.6875% | 6.4342 | 398 | 565.31 |
+| 5y stress | 14.9118% | 0.6907 | 27.3277% | 6.4152 | 391 | 1,029.44 |
+
+All four Sharpe, drawdown and QQQ gates fail. Net CAGR>12% passes except
+ten-year stress; SPY comparisons pass only in the five-year window,
+including its preserved stress-vs-base-cost-SPY gate. No parameter,
+benchmark or numerical acceptance tolerance was changed after outcomes.
+The largest independent NAV difference is USD1.014683221001178e-6,
+below the unchanged `capital * 1e-8` verifier limit of USD0.0001;
+recorded returns and independently recomputed scalar metrics also pass
+their original checks.
+
+The benchmark-derived historical tail allowance is not the user's
+maximum-drawdown guarantee. Greater observed-opportunity participation
+raises realised CAGR relative to the risk-first ninth study, but the
+resulting drawdowns are 26.41%--27.33%, not 15%. Do not interpolate or
+sweep an allowance multiplier, alter the 252/5%/core settings, or splice
+the ninth model's drawdowns with this model's returns to fabricate a pass.
+
+Totals are ten completed/reviewed SSD hypotheses, 40 funded paths and
+188 combined completed configurations; zero pending, zero technical
+failures and zero qualifiers. The 118-event journal, original ledger,
+source evidence, benchmark accounts and prospective identities are
+preserved. No eleventh model has been selected.
 
 ## Independent IBKR price-history source boundary
 
