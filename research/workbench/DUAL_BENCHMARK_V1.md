@@ -1114,7 +1114,7 @@ No strategy, target, account or primary acceptance calculation was replayed.
 The [twelfth registration](evidence/symmetric_variance_disagreement_20261028_registration_v1.json)
 fixes `dollar_option_symmetric_variance_disagreement_v1`. Registration
 at 2026-10-28 09:34:41.127535 UTC precedes proof at 09:34:42.277511 UTC
-and packet creation at 09:34:42.278998 UTC. No account outcome exists
+and packet creation at 09:34:42.278998 UTC. No account outcome existed
 at this fence.
 
 The eleventh rule used equity-side daily disagreement while treating gold
@@ -1145,8 +1145,45 @@ variance/quotes stop the study. Daily ratios are not true variance-risk
 premia, exact implied portfolio risk, intraday-paper replication or
 independent alpha.
 
-Preregistration counts are twelve registered, eleven completed, one
+Preregistration counts were twelve registered, eleven completed, one
 pending, 44 funded paths and 189 combined completed configurations.
+
+### Completed symmetric result: risk passes, benchmark failures remain
+
+Actual preregistration publication
+`631e0cd1b752feb88ff080796f07cb7c6c1d78da` preceded all four new accounts.
+The [complete result](evidence/symmetric_variance_disagreement_20261028_results_v1.json)
+finished at 2026-10-28 09:39:28.176934 UTC and is rejected overall.
+
+| Path | Net CAGR | Sharpe | Max DD | Annual two-sided turnover | Model orders | Costs USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 15.3379% | 1.1057 | 13.4553% | 4.4309 | 656 | 1,077.77 |
+| 10y stress | 14.8105% | 1.0631 | 12.7279% | 4.4258 | 656 | 2,301.51 |
+| 5y base | 19.9740% | 1.2248 | 12.5273% | 4.7045 | 344 | 514.99 |
+| 5y stress | 19.0332% | 1.1609 | 12.5200% | 4.6951 | 344 | 1,012.46 |
+
+Every path passes net CAGR>12%, Sharpe>1 and drawdown<=15%. Both five-year
+paths pass all point gates. Both ten-year paths fail matched-cost SPY
+and QQQ; ten-year stress also fails the preserved base-cost-SPY check.
+The ten-year-base SPY gap is not rounded into a pass.
+
+Relative to the eleventh model, CAGR is lower by about
+1.480/1.511/0.969/0.887 percentage points and Sharpe is lower throughout.
+Ten-year drawdowns improve, but five-year drawdowns increase slightly;
+turnover, model order counts and total costs increase in all four paths.
+This tradeoff is not uniform dominance or proof that symmetry improves
+the broader research frontier.
+
+The preserved monthly adapter independently checks 121/121/61/61
+decision events and 98/98/51/51 issued requests. The maximum independent
+NAV difference is USD5.093170329928398e-11. All original source, accounting,
+timing and metric tolerances remain unchanged.
+
+Counts are twelve completed/reviewed SSD hypotheses, 48 funded paths,
+190 combined completed configurations, zero pending, zero technical
+failures and zero qualifiers, with 142 journal events. No thirteenth
+model, coefficient interpolation, window/bound scan or partial-pass
+promotion has been selected.
 
 ## Independent IBKR price-history source boundary
 

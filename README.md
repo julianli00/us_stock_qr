@@ -330,9 +330,26 @@ premia. The original and one-sided laws are recovered in the specified
 unit-disagreement cases.
 
 Actual registration at 2026-10-28 09:34:41 UTC preceded 131 independently
-checked monthly targets and five prefix checks. No new account has run:
-twelve registrations, eleven completed, one pending, 44 paths and 189
-combined completions.
+checked monthly targets and five prefix checks. Preregistration
+`631e0cd1b752feb88ff080796f07cb7c6c1d78da` preceded the
+[complete twelfth result](research/workbench/evidence/symmetric_variance_disagreement_20261028_results_v1.json),
+finished at 2026-10-28 09:39:28 UTC. It is **rejected overall**:
+CAGR, Sharpe and drawdown pass throughout, but both ten-year SPY and
+QQQ comparisons fail. Both five-year paths pass all point gates.
+
+| Path | Net CAGR | Sharpe | Max DD | Annual two-sided turnover | Model orders | Costs USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 15.3379% | 1.1057 | 13.4553% | 4.4309 | 656 | 1,077.77 |
+| 10y stress | 14.8105% | 1.0631 | 12.7279% | 4.4258 | 656 | 2,301.51 |
+| 5y base | 19.9740% | 1.2248 | 12.5273% | 4.7045 | 344 | 514.99 |
+| 5y stress | 19.0332% | 1.1609 | 12.5200% | 4.6951 | 344 | 1,012.46 |
+
+The symmetric treatment lowers ten-year drawdown relative to the
+one-sided proxy, but reduces return and Sharpe and increases costs
+in all four paths. It does not create a full-goal winner or justify
+interpolating between exposed model results. Current totals are
+twelve completed SSD hypotheses, 48 paths, 190 combined completions
+and zero qualified champions.
 
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
