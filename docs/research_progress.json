@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-28",
-  "phase": "saved_symmetric_information_assessment_complete",
-  "active_research_focus": "recorded_equity_to_gold_rotation_and_distinct_loss_episodes",
+  "phase": "nearest_band_execution_registered_pending_accounts",
+  "active_research_focus": "unchanged_signal_and_band_with_nearest_feasible_execution_destination",
   "research_dashboard": {
     "server": "src/us_quant/research_dashboard.py",
     "frontend": "web/research/index.html",
@@ -23,10 +23,10 @@
       "sha256": "ccff66c847db6519132775a177268c03d7ec36491076380be01d01f41589287d"
     },
     "aggregate_counts": {
-      "registered": 12,
+      "registered": 13,
       "completed": 12,
       "reviews": 12,
-      "pending": 0,
+      "pending": 1,
       "technical_failures": 0,
       "qualified": 0,
       "account_paths": 48,
@@ -96,6 +96,14 @@
         "results": "research/workbench/evidence/symmetric_variance_disagreement_20261028_results_v1.json",
         "results_sha256": "d530d16d01b6490f9a3bce5e52f42e4240db14874205c7680fe0150b48bbdb17",
         "preregistration_commit": "631e0cd1b752feb88ff080796f07cb7c6c1d78da"
+      },
+      {
+        "study_id": "ssd_nearest_band_execution_20261028_v1",
+        "registration": "research/workbench/evidence/band_projection_20261028_registration_v1.json",
+        "registration_sha256": "00c3f5911aa1bc9f1d5a0229ce0f6c61186394501ec788259244e77705ffb03b",
+        "results": null,
+        "results_sha256": null,
+        "preregistration_commit": null
       }
     ],
     "status": "first_pair_complete_both_rejected",
@@ -722,13 +730,13 @@
   ],
   "next": [
     "Preserve all twelve overall-rejected SSD hypotheses across nine cohorts and48funded paths, completed diagnoses and original six-slot history. Raw documents, prices, targets and daily accounts remain private; do not replay them.",
-    "Use the completed saved assessment: equity targets fell on88/131months with unchanged BIL targets, both fixed ten-year segments lost relative to the one-sided account, and the five-year worst drawdown moved from2026to2022. Do not treat similar headline DD as the same episode, interpolate model coefficients, select only risk passes or rerun the eleventh diagnostic.",
+    "Publish the actual thirteenth nearest-band execution registration before any feedback account. Preserve the eleventh desired targets and original monthly0.025trigger; project breached actual holdings into the same band/98%budget rather than always return to center. Keep the original fee engine and all gates; lower squared weight movement is not a minimum-fee or performance guarantee.",
     "Continue economically motivated, preregistered independent small batches without ordinary per-batch approval or a configuration-count ceiling until2026-10-31T15:59Z. Use one computation; at cutoff preserve partial work, clear only the SSD session timer and confirm absence.",
     "Keep old source refusals, VIG/SDY terminal429 and prospective/PIT gates. The independent market-only IBKR adapter is proved, but the one actual probe stopped on2157 before historical requests;0history rows/admissions,no automatic retry or inferred entitlement denial. Default readonly account synchronization remains prohibited."
   ],
   "next_zh": [
     "保留SSD九组共12项整体拒绝假设、48条资金约束路径、已完成诊断与历史六配置记录，不重复运行；原始文档、行情、目标矩阵和逐日账户保持私有。",
-    "使用已完成对照：88/131个月末股票目标下降，BIL目标不变；十年两个固定分段均较单侧账户变弱，五年最差回撤事件从2026移到2022。不可把相近DD当成同一风险事件，不插值模型系数、只选风险通过部分，也不重跑第11项诊断。",
+    "先发布第13项最近持仓带执行登记再算反馈账户。保留第11项目标与原月末0.025触发条件，越界时投影到同持仓带/98%预算的最近可行点，不总是回中心。原费用引擎与硬门不变；平方权重移动更小不代表手续费最优或业绩保证。",
     "持续开展有经济理由、事前冻结的独立小批次，无普通逐批确认或配置次数上限，截止2026-10-31T15:59Z；单计算job，届时保存未完状态、只清除SSD会话timer并确认不存在。",
     "原拒绝来源、VIG/SDY终止429和前瞻/PIT门保持。独立IBKR market-only适配器已证明，但唯一真实探针在历史请求前因2157停止；历史行/准入0，不自动重试或推断订阅拒绝，仍禁止默认readonly账户同步。"
   ],

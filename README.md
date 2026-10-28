@@ -364,6 +364,21 @@ episode. Similar headline drawdowns do not mean the same loss mechanism.
 The saved assessment introduced no new accounts, parameter search or
 qualification, and did not rerun the eleventh diagnostic.
 
+The [thirteenth preregistration](research/workbench/evidence/band_projection_20261028_registration_v1.json)
+changes execution destination, not the eleventh desired signals or
+2.5% band. After an unchanged monthly breach, project actual weights to
+the nearest feasible point inside that band and the original 98%
+investment budget; initial deployment still uses the source center.
+The original fee/funding engine and delayed fills are unchanged.
+
+This minimizes squared weight movement, **not fees**. A retained
+synthetic witness shows why a cheaper algebraic fixed-fee solution
+cannot simply replace the unchanged engine's actual charge.
+Registration at 2026-10-28 10:41:17 UTC binds the original 131 desired
+targets and synthetic projection proof, before any new path-dependent
+issued targets or accounts. Counts are thirteen registered, twelve
+completed, one pending, 48 paths and 190 combined completions.
+
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
 

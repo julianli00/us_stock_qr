@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_nearest_band_execution_20261028_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "prior_completed_configurations": 190,
+  "prior_journal_sequence": 142,
+  "prior_journal_head_sha256": "ce504e95884a2db90484b1b6f3cc32b656db96d13cfc1d4933731d4453a2e267",
+  "source_candidate": "dollar_option_daily_variance_disagreement_v1",
+  "source_registration": {
+    "path": "evidence/daily_variance_disagreement_20261028_registration_v1.json",
+    "sha256": "fe9d39e5bab50f33a71c36a303893e7ff6e9e2450bb39750fdd5855a4ee3d176"
+  },
+  "source_targets": {
+    "path": "data/ssd-daily-variance-disagreement-20261028-v1/dollar_option_daily_variance_disagreement_v1/targets.csv",
+    "sha256": "665f4a7c8e43fc6030eddf6b6c0bb4b342beeef9caeb683dd87271008a49ec8d"
+  },
+  "capital_usd": 10000,
+  "commission_per_order": 1.0,
+  "cash_reserve": 0.02,
+  "weight_band": 0.025,
+  "band_trigger_tolerance": 1e-12,
+  "projection_tolerance": 1e-10,
+  "projection_iterations": 100,
+  "monthly_decisions": 131,
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "new_economic_factor_definitions": 0,
+  "candidate_count_in_this_study": 1,
+  "study_size_is_a_total_research_quota": false,
+  "candidates": [
+    {"id": "daily_proxy_nearest_band_execution_v1", "execution": "project_actual_weights_to_source_band"}
+  ],
+  "methodology": {
+    "question": "An exceeded unchanged no-trade band need not require restoring every asset to its desired center. Test one execution-destination law: the nearest feasible weight vector inside the same source band. This is implementation research,not a changed return signal,biggerband or minimum-fee claim.",
+    "desired_source": "Read the exact frozen eleventh131monthlydesiredtargets;do not rebuild its dailyvarianceproxy,originaldollarguard oroldaccounts. Preserve itsdesiredweights/monthends andallsource/PIT/hard-gate constraints.",
+    "trigger": "Force initialfreshcapitaldeployment to the unchanged source center. Thereafter inspectactualpost-tradeclosingweights only on originalmonthends. Use exactlymaximumabsoluteweightgap+1e-12>=0.025 totrigger;otherwisehold. No extra dailytrigger orriskoverride.",
+    "destination": "For a triggerednoninitialdecision,projectactualclosingassetweights onto the convexset sumweights=0.98,nonnegativeweights,andper-assetdesired+-0.025. Assetswithbothcurrentanddesiredweightexactlyzero remainzero. Minimize unweighted squaredweightmovement,notdollarfees. Theuniquesolution isclip(current-lambda,lower,upper),withlambda chosenfor the original98%investmentbudget.",
+    "verification": "Usefixed100bisectioniterations plusfeasibility/variationalKKT checks. Independentlyderive lambda from sortedboxbreakpoints andpiecewise-affine budgetequations. Requireagreement beforeissuingtargets;invalid/failedprojectionstops,neverfallsbacktocenter/cash. Unchangedrounding-onlyno-opaccounting remains.",
+    "funding_timing": "Issueanabsoluteprojectedtargetaftertheknownclose,executeonoriginal1/2sessiondatedopens withunchangedcash-funded-noop-v2 andUSD1tickets/5-20bp. Preserveonependingrequestperdate withoutoverwrite/cancellation,actualprices/RF,initial10000drawdownpeak/fourfullwindows. Neverusefutureopeningpricesinprojection.",
+    "limits": "SourceBIL/dollar scale isunchangedinDESIREDtargets,notclaimedidenticalinexecutedweights. Projecteddestinations maydifferwithinoldband,includingfactorrelativeweights andBIL;initialsourcecenterretainsgenuinefourfactorparticipation. Pricegaps/delaymaymoveactualweightsoutsidebandafterexecution. No continuousrisk/drawdown guarantee.",
+    "cost_boundary": "The preservedsyntheticfixed-feewitness shows a cheaperalgebraiccostfixedpoint neednotmatchtheunchangedengine selectedcharge. Therefore no globalminimum-feeclaim,feeenginefix,reducedcostorrewrittenoldaccount is introduced. Smallerweightmovement mayincreasefrequentfixedtickets orlose returns;actualcosts/turnover decide outcomes.",
+    "selection": "Onefixedexecutionhypothesisafter190exposedcompletedconfigurations. No bandwidth,projectionnorm,sourcewindow,coefficientorcostgrid. CompareallfourpathswithmatchedSPY/QQQandbroaderretainedreferences;do notsplice source returns withnewrisk/costmetrics.",
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

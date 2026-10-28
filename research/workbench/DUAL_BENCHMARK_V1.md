@@ -1239,6 +1239,53 @@ and 142-event journal remain unchanged. Private assessment SHA256:
 Counts remain twelve completed hypotheses, 48 paths, 190 combined
 completions and zero qualifiers; no new parameter or model is selected.
 
+## Nearest feasible execution point inside the unchanged band
+
+The [thirteenth registration](evidence/band_projection_20261028_registration_v1.json)
+fixes `daily_proxy_nearest_band_execution_v1`. Actual registration at
+2026-10-28 10:41:17.151470 UTC precedes the source-only proof at
+10:41:17.452347 UTC and packet at 10:41:17.453485 UTC.
+No new path-dependent issued targets or accounts exist at this fence.
+
+The desired source is the eleventh model's exact saved 131-month matrix.
+Preserve its monthly calendar, initial fresh-center deployment, 98%
+target investment, all original source evidence and the existing trigger:
+maximum actual holding/desired gap plus 1e-12 reaches 0.025. Otherwise hold.
+Only the destination of a triggered noninitial trade changes.
+
+Project actual closing weights onto nonnegative weights summing to
+0.98 within each source desired weight plus/minus 0.025. Assets with
+both current and desired weights exactly zero remain zero. The unique
+minimum-squared-weight-movement solution clips current weights minus
+a common budget multiplier to those bounds. A fixed bisection solution,
+convex optimality conditions and an independent piecewise-breakpoint
+oracle must agree before a target can be issued.
+
+This is **not a minimum-fee optimization**. A synthetic USD10,000
+example has an algebraically consistent two-ticket cost of USD2.750316,
+while the unchanged funding engine selects a three-ticket result costing
+USD3.750431 for the same absolute target. This does not invalidate old
+results; it prevents falsely pricing a new policy using a different
+fixed-point selection. The engine is not modified and its actual fees
+are always charged. Boundary execution may increase ticket frequency
+or sacrifice return even when weight movement is smaller.
+
+The source dollar/BIL scale is preserved in **desired** targets, not
+claimed identical in executed projected weights. Actual destinations
+can differ within the unchanged band, including relative factor shares
+and BIL. Initial source-center deployment retains genuine factor
+participation. Price gaps and delayed fills can move realized holdings
+outside the band; it is not continuous drawdown insurance.
+
+All USD1 tickets, 5/20bp costs, one/two-session delays, 1x fractional
+cash funding, pending-request preservation, RF, initial capital peak
+and four full-window gates remain. Synthetic projection, execution and
+fee-contract checks precede registration; real holding-feedback
+verification and independent accounts occur only after publication.
+
+Preregistration counts are thirteen registered, twelve completed,
+one pending, 48 funded paths and 190 combined completed configurations.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,
