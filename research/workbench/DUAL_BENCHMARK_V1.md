@@ -1185,6 +1185,60 @@ failures and zero qualifiers, with 142 journal events. No thirteenth
 model, coefficient interpolation, window/bound scan or partial-pass
 promotion has been selected.
 
+### Saved symmetric-information assessment
+
+The paired assessment reads both frozen monthly target matrices and the
+twelfth recorded gold-disagreement ratios. On the 131 original month
+ends, equity targets decrease on 88 dates, increase on 14 and are
+unchanged on 29. The average change is -4.048703 percentage points of
+total target capital. BIL targets and total target investment are exactly
+preserved; these counts are not executed model orders.
+
+The gold implied/backward-realized ratio is above one on 103 dates and
+below one on 28. Target-change directions follow the fixed algebra;
+unchanged targets can result from retained bounds. This is a check on
+recorded calculations, not evidence that either ratio predicts returns.
+
+Using the already saved accounts, ten-year-base mean closing stocks are
+37.6904%, gold 32.6661% and BIL 27.6616%, versus approximately
+41.9901%, 28.3833% and 27.6493% for the one-sided model. Identical BIL
+targets do not force identical actual closing weights after price drift,
+fees and different stock/gold holdings.
+
+| Actual symmetric account | Fixed segment | Net log gap to QQQ | Change versus saved one-sided account |
+|---|---|---:|---:|
+| 10y base | 2016-10-06--2021-10-05 | -0.631526 | -0.088138 |
+| 10y base | 2021-10-06--2026-10-05 | +0.138935 | -0.039327 |
+| 10y stress | 2016-10-06--2021-10-05 | -0.643363 | -0.094256 |
+| 10y stress | 2021-10-06--2026-10-05 | +0.108132 | -0.036478 |
+
+Both fixed ten-year segments deteriorate relative to the one-sided
+account. The existing eleventh diagnostic is read, not recomputed;
+the fixed segments are not new fresh-capital accounts or a basis for
+choosing a favorable subwindow.
+
+The ten-year maximum-drawdown episode remains 2020-02-19--2020-03-20.
+For ten-year base, actual stock mark-to-market losses are smaller, while
+gold's loss is larger: SOXX -821.49, style core -780.93, gold -302.81
+and BIL +14.16 USD, less 13.48 USD in fees, reconcile to NAV -1,904.55.
+This saved-account identity does not certify a causal or future risk reduction.
+
+Both symmetric five-year maximum drawdowns instead span
+2022-03-08--2022-10-14, rather than the one-sided model's
+2026-01-29--2026-03-30 episode. Base loses 1,345.72 USD: gold -958.36,
+SOXX -301.25, core -81.62 and BIL +30.17, less 34.66 in fees from 28
+orders. Stress loses 1,331.67 USD with 54.34 in fees and the same order
+count. Neither path breaches 15%, but this is not the same risk event
+as the one-sided model's similar headline drawdown.
+
+Only frozen pure diagnostic functions are reused on the twelfth saved
+account; no old diagnostic main, target generator or strategy account
+is rerun. The 61 direct references, all frozen inputs, original ledger
+and 142-event journal remain unchanged. Private assessment SHA256:
+`479b0375309e09cdbae4efe83b21ff1a7bc49d3ac6150f08db385794939c9399`.
+Counts remain twelve completed hypotheses, 48 paths, 190 combined
+completions and zero qualifiers; no new parameter or model is selected.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,

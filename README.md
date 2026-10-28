@@ -351,6 +351,19 @@ interpolating between exposed model results. Current totals are
 twelve completed SSD hypotheses, 48 paths, 190 combined completions
 and zero qualified champions.
 
+The saved information assessment finds that symmetry lowered equity
+targets on **88 of 131** original month ends, raised them on 14 and left
+29 unchanged; the mean change was **-4.0487 percentage points of total
+target capital**, not an order count. Ten-year-base mean closing stocks
+fell to 37.69% and gold rose to 32.67%. The QQQ log gap worsened in both
+fixed chronological halves relative to the one-sided model.
+
+The symmetric five-year maximum-drawdown episode moved to
+**2022-03-08--2022-10-14**, unlike the one-sided model's early-2026
+episode. Similar headline drawdowns do not mean the same loss mechanism.
+The saved assessment introduced no new accounts, parameter search or
+qualification, and did not rerun the eleventh diagnostic.
+
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
 
