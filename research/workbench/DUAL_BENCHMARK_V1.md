@@ -1796,6 +1796,63 @@ and zero qualifiers. Actual sanitized publication must precede all
 four fresh accounts. No old target generator, account or source
 acquisition is replayed.
 
+### Completed continuous-simplex result
+
+Actual preregistration commit
+`ec300d591caaf56395b7456d02dec5f5dc1fd405` was observed on the remote
+at 2026-10-28 12:52:22 UTC. All four fresh funded accounts completed
+once at 12:56:38.898423 UTC. The
+[complete scalar result](evidence/simplex_wealth_average_20261028_results_v1.json)
+is **rejected overall**: both ten-year drawdown and QQQ gates fail.
+All CAGR, Sharpe, matched-cost SPY and applicable extra stress-SPY
+gates pass; both five-year paths pass all point gates.
+
+| Path | Net CAGR | Sharpe | Max DD | Annual two-sided turnover | Model orders | Costs USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 17.8953% | 1.0907 | 17.0942% | 2.9409 | 241 | 587.16 |
+| 10y stress | 18.0751% | 1.1013 | 16.2357% | 2.9684 | 276 | 1,686.77 |
+| 5y base | 21.4270% | 1.0969 | 14.6796% | 3.5702 | 158 | 294.14 |
+| 5y stress | 21.3807% | 1.0977 | 14.8357% | 3.6005 | 179 | 726.59 |
+
+The independent funded NAV discrepancy is at most USD7.28e-11.
+All 121/121/61/61 monthly-plus-initial feedback decisions were checked;
+issued requests number 35/40/23/26. The 241/276/158/179 tickets are
+modeled orders, not broker activity. All 2,512/1,254 formal returns,
+initial USD10,000 peaks, original RF, costs, delays and cash-funding
+rules remain. The 2% idle-cash amount remains a target, not a
+continuously enforced dollar floor.
+
+Saved comparisons cover the eleventh, fourteenth, fifteenth and
+older observed-band dollar reference, with all sixteen path pairs
+retained and no account replay. Against the fifteenth, CAGR rises
+by +0.9781/+1.6942/+0.4670/+1.3604 percentage points, but maximum
+drawdown rises by +2.2286/+2.3363/+2.1735/+2.3626 percentage points
+and Sharpe falls throughout. Turnover, tickets and costs fall in
+all four paths. The implementation improvement does not substitute
+for the failed risk and benchmark gates.
+
+The broader older reference also has higher model-ticket counts and
+fees throughout, while retaining lower drawdowns throughout and
+better Sharpe in three of four paths. The eleventh and fourteenth
+likewise retain better Sharpe and lower drawdown throughout.
+This construction does not dominate the broader research frontier.
+Its higher ten-year stress return cannot be attributed to higher fees:
+the original stress delay and resulting holdings/feedback path differ.
+No equal-risk or isolated cost counterfactual is claimed.
+
+The frozen three-sleeve gross learning score is not a funded net
+wealth mixture or a guarantee imported from the paper. Neither the
+finite algebraic state count nor the independent quadrature is a
+separately screened strategy grid. No forgetting rate, prior,
+temperature, stock bound or source guard is retuned after outcomes.
+
+Private saved-comparison SHA256:
+`6edcadeb2ea690ce7ac2c109f8f4937b50ee55ffe0e1c35dcbeb780d9c2503fe`.
+Counts are sixteen completed SSD hypotheses, 64 funded paths,
+194 combined completions and zero qualifiers. The SSD journal now
+has 190 events; the original ledger and prospective identities remain
+unchanged. No seventeenth model is selected.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,

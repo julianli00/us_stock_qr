@@ -554,9 +554,35 @@ proofs. Independent polynomial integration differs by at most
 windows retain all four genuine factor families. Learning starts from
 the first completed August 2015 month-end anchor, with the first
 matured interval ending September 2015; it does not reset for the
-five-year account. Sixteen hypotheses are registered, fifteen
-completed and one pending. No new candidate account has run; actual
-remote publication must still precede the four funded paths.
+five-year account. At registration sixteen hypotheses were registered,
+fifteen completed and one pending; no new candidate account had run.
+
+Actual preregistration
+`ec300d591caaf56395b7456d02dec5f5dc1fd405` preceded the
+[complete sixteenth result](research/workbench/evidence/simplex_wealth_average_20261028_results_v1.json),
+finished at 2026-10-28 12:56:38 UTC. It is **rejected overall**:
+both ten-year drawdown and QQQ gates fail, although every CAGR,
+Sharpe and SPY gate passes and both five-year paths pass all point gates.
+
+| Path | Net CAGR | Sharpe | Max DD | Annual two-sided turnover | Model orders | Costs USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 17.8953% | 1.0907 | 17.0942% | 2.9409 | 241 | 587.16 |
+| 10y stress | 18.0751% | 1.1013 | 16.2357% | 2.9684 | 276 | 1,686.77 |
+| 5y base | 21.4270% | 1.0969 | 14.6796% | 3.5702 | 158 | 294.14 |
+| 5y stress | 21.3807% | 1.0977 | 14.8357% | 3.6005 | 179 | 726.59 |
+
+Relative to the fifteenth model, all four CAGRs rise and turnover,
+tickets and fees fall, but Sharpe declines and drawdown increases
+throughout. The older observed-band reference also has more tickets
+and higher costs on every path, but still has lower drawdowns
+throughout; this is not uniform dominance. Higher ten-year stress
+return is not evidence that higher fees help: its original fill delay
+and path-dependent holdings differ.
+
+Counts are sixteen completed SSD hypotheses, 64 funded paths,
+194 combined completions and zero qualifiers. Gross-score learning
+did not establish a net-performance theorem or independent forward
+proof, and no prior, forgetting rate or bounds are retuned to rescue it.
 
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
