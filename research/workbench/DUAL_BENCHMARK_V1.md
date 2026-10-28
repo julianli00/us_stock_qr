@@ -969,7 +969,7 @@ The [new registration](evidence/daily_variance_disagreement_20261028_registratio
 fixes `dollar_option_daily_variance_disagreement_v1`. Actual registration
 at 2026-10-28 08:38:21.714785 UTC precedes target proof at
 08:38:22.737987 UTC and packet creation at 08:38:22.739559 UTC.
-No candidate account or realized return metric exists at this fence.
+No candidate account or realized return metric existed at this fence.
 
 The [Federal Reserve working-paper abstract](https://www.federalreserve.gov/pubs/feds/2007/200711/200711abs.html)
 for the variance-risk-premium research explicitly ties its empirical
@@ -1013,9 +1013,50 @@ or historical target generator was rerun.
 The proxy may have no predictive value and is not a true variance risk
 premium, sector-specific implied variance, forecast guarantee or paper
 replication. All joint net-CAGR/Sharpe/drawdown/SPY/QQQ gates and wider
-reference comparisons remain. Counts at preregistration are eleven
+reference comparisons remain. Counts at preregistration were eleven
 registered, ten completed, one pending, 40 paths and 188 combined
 completed configurations.
+
+### Completed daily-proxy result: five-year passes, overall rejection
+
+The actual preregistration publication
+`352c21ae58bcfd0c5e32e617c958ba45c53a9593` preceded all four new funded
+accounts. They completed at 2026-10-28 08:43:02.476900 UTC.
+The [full sanitized result](evidence/daily_variance_disagreement_20261028_results_v1.json)
+is rejected overall.
+
+| Path | Net CAGR | Sharpe | Max DD | Annual two-sided turnover | Model orders | Costs USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 16.8177% | 1.1696 | 15.6588% | 4.0982 | 617 | 1,050.08 |
+| 10y stress | 16.3216% | 1.1295 | 14.6143% | 4.0904 | 603 | 2,293.53 |
+| 5y base | 20.9426% | 1.2399 | 12.5061% | 4.4930 | 339 | 508.78 |
+| 5y stress | 19.9205% | 1.1716 | 12.4731% | 4.4705 | 332 | 992.14 |
+
+All four net-CAGR>12%, Sharpe>1 and matched-cost SPY gates pass, as do
+both stress-vs-base-cost-SPY checks. Both five-year paths pass every
+point gate. Both ten-year QQQ comparisons fail; ten-year-base drawdown
+also fails. The 15.6588% drawdown is not rounded down, replaced by the
+stress result or excused by the five-year performance.
+
+Against the preserved stronger source, CAGR increases by approximately
+2.095/1.857/1.824/1.343 percentage points and Sharpe is higher in all
+four paths. Five-year drawdowns decline, but ten-year drawdowns rise
+and total modeled costs increase throughout. The original source,
+its prospective identities and its rejected status remain untouched.
+This is an exposed historical model comparison, not proof of a true
+variance risk premium or independent future alpha.
+
+Independent verification checks 121 monthly-plus-initial decisions per
+ten-year account and 61 per five-year account, including observed
+holdings gaps, issued targets and original delayed fills. Issued request
+counts are 92/90/50/49, distinct from the modeled order counts above.
+The largest independent NAV difference is USD4.3655745685100555e-11.
+Original accounting and metric tolerances are unchanged.
+
+The journal now has 130 events. Totals are eleven completed/reviewed SSD
+hypotheses, 44 funded paths, 189 combined completed configurations,
+zero pending, zero technical failures and zero qualifiers. No twelfth
+model or post-outcome coefficient/window/bound adjustment has been selected.
 
 ## Independent IBKR price-history source boundary
 

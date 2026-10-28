@@ -286,8 +286,27 @@ literature result.
 
 Registration at 2026-10-28 08:38:21 UTC preceded the 131 new monthly
 targets; independent scalar/source-preservation and five prefix checks
-passed. No new account has run. Current counts are eleven registered,
-ten completed, one pending, 40 paths and 188 combined completions.
+passed before the new accounts. Actual preregistration
+`352c21ae58bcfd0c5e32e617c958ba45c53a9593` precedes the
+[complete eleventh result](research/workbench/evidence/daily_variance_disagreement_20261028_results_v1.json),
+finished at 2026-10-28 08:43:02 UTC. It is **rejected overall**:
+both five-year paths pass all point gates, but both ten-year QQQ
+comparisons fail and ten-year-base drawdown is 15.6588%, above 15%.
+
+| Path | Net CAGR | Sharpe | Max DD | Annual two-sided turnover | Model orders | Costs USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 16.8177% | 1.1696 | 15.6588% | 4.0982 | 617 | 1,050.08 |
+| 10y stress | 16.3216% | 1.1295 | 14.6143% | 4.0904 | 603 | 2,293.53 |
+| 5y base | 20.9426% | 1.2399 | 12.5061% | 4.4930 | 339 | 508.78 |
+| 5y stress | 19.9205% | 1.1716 | 12.4731% | 4.4705 | 332 | 992.14 |
+
+CAGR, Sharpe and SPY pass in all four paths. The original reference has
+lower ten-year drawdowns and lower fees, while this proxy has higher
+CAGR/Sharpe across all four paths and lower five-year drawdowns. These
+tradeoffs do not permit substituting the stress drawdown for the base
+path, rounding a failed gate, or claiming independent alpha.
+Current totals are eleven completed SSD hypotheses, 44 paths, 189
+combined completions and zero qualified champions.
 
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
