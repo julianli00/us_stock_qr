@@ -1927,6 +1927,72 @@ Counts remain sixteen completed SSD hypotheses, 64 paths,
 194 combined completions and zero qualifiers. No new parameter or
 seventeenth model is selected.
 
+## Credit permission boundary and separate ANFCI source review
+
+The proposed Baa--Aaa quality-spread question is not a reuse of the
+old BAA10Y, which also contains the corporate/Treasury maturity
+mismatch, or a replacement for restricted ICE high-yield OAS.
+The primary [DAAA](https://fred.stlouisfed.org/series/DAAA) and
+[DBAA](https://fred.stlouisfed.org/series/DBAA) pages identify daily,
+not-seasonally-adjusted percent yields on bonds with maturities of
+20 years and above. Their rating-basket difference is not automatically
+a pure default-risk or duration-matched factor.
+
+Both pages contain explicit proprietary copying/reuse restrictions.
+No applicable new source-use permission was verified; historical
+observation acquisition is therefore deferred. This is a permission
+boundary, **not an HTTP refusal** or a claim that the earlier frozen
+BAA10Y study had no permission. The old data, results and caveats
+remain unchanged. No Moody's observations or restricted high-yield
+series were acquired, reconstructed or obtained through another provider.
+
+A separate question concerns the
+[Chicago Fed Adjusted National Financial Conditions Index, ANFCI](https://fred.stlouisfed.org/series/ANFCI).
+It is a weekly, Friday-ending, not-seasonally-adjusted **index**.
+The source describes a financial-conditions component adjusted for
+economic conditions; it is not the proposed credit-quality spread
+or proof of independence from portfolio returns.
+The [Chicago Fed's primary explanation](https://www.chicagofed.org/research/data/nfci/current-data)
+describes 105 financial indicators, estimated weights and historical
+revisions. ANFCI additionally responds to economic activity and inflation.
+A current historical curve cannot stand in for past as-of observations.
+
+The [public ALFRED form](https://alfred.stlouisfed.org/series/downloaddata?seid=ANFCI)
+and [download help](https://alfred.stlouisfed.org/help/downloaddata)
+were inspected without submitting a historical download. The actual
+form advertises POST, plain index units `lin`, output type `2`
+("Observations by Vintage Date, All Observations"), zipped CSV and
+a 500-character entered-date limit. Its first listed vintage is
+2011-05-25. This predates the research windows but does **not** prove
+that every required vintage or fresh observation is available.
+
+The saved prospective query plan reuses only the existing market
+calendar: 131 original monthly decisions plus their 63-session
+reference queries yield **225 distinct prior-session vintage dates**,
+from 2015-08-28 through 2026-09-29. Six proposed batches contain at
+most 40 dates each and satisfy the advertised text limit. These
+are source-download batches, not strategy configurations or a restored
+six-trial quota. The proposed weekly observation range ends
+2026-10-02; the original ETF return cutoff remains 2026-10-05.
+
+Before acquisition, the source contract and validation must be frozen
+separately. Normal advertised-form requests, raw archive provenance,
+README/column vintage identities, actual observation availability
+and the proposed unchanged 14-calendar-day freshness limit still
+need verification. Daily vintage cutoffs are not exact historical
+intraday publication timestamps. Unknown gaps, stale observations
+or failed requests cannot be replaced with current data, relaxed
+ages or silent cash states.
+
+**No ANFCI vintage archive was downloaded, no source admission
+passed, and no trading rule or seventeenth candidate was selected.**
+The metadata and query plan are not strategy trials, performance
+results or independent forward evidence. All 16 direct references, the 190-event SSD journal
+and original ledger remain unchanged. Private source-review SHA256:
+`7cc18b3faedf6b31cfadac9687c1912abccea0b4bbb96898a384cea45645a6e5`.
+Counts remain sixteen completed SSD hypotheses, 64 funded paths,
+194 combined completions and zero qualifiers.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,

@@ -599,6 +599,22 @@ Saved ex-post accounting associates the gain mainly with a positive
 SOXX component and lower fee effects, offset by negative gold
 components; it is not causal or standalone alpha.
 
+A subsequent source review distinguishes a proposed Baa--Aaa
+credit-quality spread from the older BAA10Y and restricted high-yield
+OAS inputs. The new Moody's series pages contain explicit copying
+and reuse restrictions; no applicable new permission was verified,
+so no historical yield observations were downloaded. This does not
+reclassify the old frozen credit study.
+
+The review separately examines Chicago Fed **ANFCI**, an adjusted
+financial-conditions index, not a credit-spread substitute. Its
+definition, revision caveats and public ALFRED form were checked.
+A prospective plan covers 225 prior-session vintage cutoffs in six
+bounded batches, but **no vintage archives have been downloaded and
+ANFCI is not yet admitted**. Actual coverage and freshness must be
+verified before any strategy. No seventeenth model is selected;
+194 completed configurations and zero qualifiers remain.
+
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
 
