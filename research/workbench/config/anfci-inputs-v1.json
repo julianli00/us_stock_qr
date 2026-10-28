@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "source_id": "ssd_anfci_vintages_20261028_v1",
+  "series": "ANFCI",
+  "source": "Federal Reserve Bank of Chicago",
+  "frequency": "Weekly, Ending Friday",
+  "units": "Index",
+  "seasonal_adjustment": "Not Seasonally Adjusted",
+  "source_review": {
+    "path": "reports/ssd-continuous-research-v1/credit-and-anfci-source-review-20261028-v1/source-review.json",
+    "sha256": "7cc18b3faedf6b31cfadac9687c1912abccea0b4bbb96898a384cea45645a6e5"
+  },
+  "query_plan": {
+    "path": "reports/ssd-continuous-research-v1/credit-and-anfci-source-review-20261028-v1/prospective-vintage-query-plan.json",
+    "sha256": "b5009b15a4a8936ebd87df60ca4a2c2ca8a6d6e8f28aef6436379317203ab319"
+  },
+  "form_contract": {
+    "path": "reports/ssd-continuous-research-v1/credit-and-anfci-source-review-20261028-v1/form-contract.json",
+    "sha256": "73baea13d62769fc0b124925afee06a7d344648a529717a0b3468e4974b3bca1"
+  },
+  "url": "https://alfred.stlouisfed.org/series/downloaddata?seid=ANFCI",
+  "method": "POST",
+  "form_units": "lin",
+  "file_type": "2",
+  "file_format": "csv",
+  "observation_start": "2014-01-01",
+  "observation_end": "2026-10-02",
+  "vintage_cutoff": "previous_NYSE_session",
+  "query_count": 225,
+  "original_monthly_decisions": 131,
+  "reference_query_lag_sessions": 63,
+  "maximum_dates_per_request": 40,
+  "maximum_entered_dates_characters": 500,
+  "maximum_observation_age_calendar_days": 14,
+  "maximum_archive_bytes": 10000000,
+  "maximum_member_bytes": 5000000,
+  "automatic_request_retries": 0,
+  "transport": "anonymous_public_form_http",
+  "maximum_same_origin_download_redirects": 2,
+  "allowed_redirect_statuses": [301, 302, 303],
+  "credential_store_access": false,
+  "custom_user_agent_or_TLS_override": false,
+  "missing_value_marker": ".",
+  "validation_scope": "Latest actual observation in each requested own-vintage column;full raw matrix retained and independently parsed. This is not a rolling-history availability guarantee.",
+  "full_admission_requires_all_queries_fresh": true,
+  "current_history_substitution_allowed": false,
+  "missing_observations_filled": false,
+  "raw_inputs_or_aligned_values_public": false,
+  "strategy_rule_selected": false,
+  "new_factor_definitions": 0,
+  "new_strategy_evaluations": 0,
+  "order_authority": false
+}

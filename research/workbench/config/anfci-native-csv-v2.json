@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "source_id": "ssd_anfci_vintages_20261028_v2",
+  "implementation_revision": 2,
+  "original_contract": {
+    "path": "data/ssd-anfci-vintages-20261028-v1/source-contract-freeze.json",
+    "sha256": "00c0167c7275ba55327d32a5e767d4c8b4827b6488e83bce71f5ad7c35f1efd1"
+  },
+  "original_failure": {
+    "path": "data/ssd-anfci-vintages-20261028-v1/source-failure.json",
+    "sha256": "48ff2072ab15144d9855688fa7eca6ac66c2e25c522586661ec82d324e0dc587"
+  },
+  "diagnostic": {
+    "path": "reports/ssd-continuous-research-v1/anfci-vintage-admission-20261028-v1/native-csv-missing-diagnostic-v1.json",
+    "sha256": "297720bdb41e2907b070006d5c45d8513b27fe2e28a56ea188fc53a6d336ed66"
+  },
+  "retained_attempt": {
+    "path": "data/ssd-anfci-vintages-20261028-v1/batch-01/attempt.json",
+    "sha256": "d7fd463463324803bc5696519be272f626ed6a7f5490588eec818a00b67ed374"
+  },
+  "retained_request": {
+    "path": "data/ssd-anfci-vintages-20261028-v1/batch-01/request-complete.json",
+    "sha256": "02869109407d0941bb7f4f5694bc4c037bdaa3889f5b35d011d10f85faef0bf8"
+  },
+  "retained_response": {
+    "path": "data/ssd-anfci-vintages-20261028-v1/batch-01/response-00.bin",
+    "sha256": "3fee1ee9eda83183c7e88e21957303c3f3941dbebc85d45bcd5dd499a447a080"
+  },
+  "native_missing_tokens": [".", ""],
+  "technical_correction": "The actual zipped CSV uses empty fields for unavailable observations. Preserve empty and dot fields as missing,not zero or filled. No finite numeric value,query,date,source,14dayfreshness or metadata gate changes.",
+  "data_rule_parameters_changed": false,
+  "original_contract_or_data_modified": false,
+  "repeat_first_archive_request_allowed": false,
+  "first_archive_predates_v2_correction": true,
+  "remaining_requests_require_v2_freeze": true,
+  "ANFCI_strategy_outcomes_computed": false,
+  "new_strategy_evaluations": 0,
+  "new_factor_definitions": 0,
+  "order_authority": false
+}

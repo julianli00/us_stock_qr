@@ -1984,14 +1984,78 @@ intraday publication timestamps. Unknown gaps, stale observations
 or failed requests cannot be replaced with current data, relaxed
 ages or silent cash states.
 
-**No ANFCI vintage archive was downloaded, no source admission
-passed, and no trading rule or seventeenth candidate was selected.**
+**At that metadata-review stage, no ANFCI vintage archive had been
+downloaded, no admission had passed, and no trading rule had been selected.**
 The metadata and query plan are not strategy trials, performance
 results or independent forward evidence. All 16 direct references, the 190-event SSD journal
 and original ledger remain unchanged. Private source-review SHA256:
 `7cc18b3faedf6b31cfadac9687c1912abccea0b4bbb96898a384cea45645a6e5`.
 Counts remain sixteen completed SSD hypotheses, 64 funded paths,
 194 combined completions and zero qualifiers.
+
+### Actual ANFCI archives: complete coverage, failed freshness
+
+The [actual source-readiness evidence](evidence/anfci_input_readiness_20261028_v2.json)
+now covers all six archives and 225 requested own-vintage columns.
+Every unique data POST returned HTTP 200. Archive identity, requested
+vintage metadata, column identities and all 84,117 finite cells were
+checked by independent parsers with zero numeric difference.
+Raw observations and network artifacts remain private.
+
+The unchanged full-query freshness contract is **not admitted**:
+
+| Query session | Prior-session vintage | Latest actual observation | Age, calendar days |
+|---|---|---|---:|
+| 2022-12-29 | 2022-12-28 | 2022-12-09 | 20 |
+| 2022-12-30 | 2022-12-29 | 2022-12-09 | 21 |
+
+Only 223 of 225 queries meet the frozen 14-day limit. Complete
+archive/vintage coverage is not complete fresh coverage. No age
+limit is raised, missing observation filled, date removed or stale
+reading converted into a safe trading state. The cause of the
+historical stale snapshots is not inferred from holidays or current data.
+
+The acquisition history preserves two distinct technical issues:
+
+- The preferred owned-browser preflight timed out and its control
+  channel retried navigation. Retained traffic shows five normal
+  form GETs returning HTTP 200 and **zero data POSTs**, not a provider
+  refusal. The owned browser was closed. Before any archive request,
+  the collector was frozen as an anonymous, no-retry client of the
+  same advertised public form, without custom UA, proxy, TLS or
+  credential changes.
+- The first actual archive returned HTTP 200 after the v1 source
+  contract was frozen at 2026-10-28 16:13:05 UTC. The dot-only parser
+  rejected native **empty CSV fields**. Its failed contract, code,
+  raw response and failure receipt remain unchanged. The retained
+  first archive contains 2,049 empty fields and 5,591 finite cells,
+  with no finite future observations.
+
+The separate
+[`anfci-native-csv-v2.json`](config/anfci-native-csv-v2.json)
+correction recognizes only empty and dot fields as absent. It does
+not insert observations, change finite values or relax source,
+calendar, vintage or freshness rules. Its code was frozen at
+16:32:25 UTC after seven correction tests, before the five remaining
+requests. The first request at 16:18:51 UTC predates that technical
+correction and is explicitly reused, not redownloaded. Remaining
+requests began at 16:33:34 UTC; the sixth unique POST began at
+16:33:56 UTC. There were **six unique data POSTs total**, not seven.
+The original client/parser contract also retains its 19 offline checks.
+
+The v2 result completed at 2026-10-28 16:33:59 UTC with
+`source_admitted: false`. Its native-format correction is not a
+freshness repair. The original NFCI, BAA10Y, historical strategy
+results and prospective identities remain unchanged. No source
+collection or completed validation should be repeated.
+
+Any future ANFCI use would need a separate explicit information and
+missingness contract before outcomes, without claiming this
+full-freshness contract passed. No such trading rule or seventeenth
+candidate is selected. All source failures and raw archives remain
+on the SSD; the original ledger and 190-event research journal are
+unchanged. Counts remain sixteen completed SSD hypotheses, 64 funded
+paths, 194 combined completions and zero qualifiers.
 
 ## Independent IBKR price-history source boundary
 

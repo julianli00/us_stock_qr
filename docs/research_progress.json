@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-28",
-  "phase": "credit_anfci_metadata_review_complete",
-  "active_research_focus": "credit_permission_boundary_and_separate_unadmitted_adjusted_conditions_input",
+  "phase": "anfci_vintages_complete_freshness_blocked",
+  "active_research_focus": "all225_vintages_verified_but_two_queries_exceed_unchanged14day_freshness",
   "research_dashboard": {
     "server": "src/us_quant/research_dashboard.py",
     "frontend": "web/research/index.html",
@@ -18,6 +18,18 @@
     "native_continuation_every_minutes": 1,
     "native_continuation_cadence_user_updated_at": "2026-10-28T02:21:04.321Z",
     "cadence_does_not_authorize_parallel_jobs_or_repeated_downloads": true,
+    "anfci_source_readiness": {
+      "evidence": "research/workbench/evidence/anfci_input_readiness_20261028_v2.json",
+      "sha256": "ef610d7227a93bf40f716bd7e53316a5534969c89ed0726776e6d6c9bb1adb30",
+      "actual_archives": 6,
+      "actual_vintages": 225,
+      "fresh_queries": 223,
+      "stale_queries": 2,
+      "freshness_limit_calendar_days": 14,
+      "maximum_age_calendar_days": 21,
+      "source_admitted": false,
+      "new_strategy_evaluations": 0
+    },
     "factor_catalog_extension": {
       "evidence": "research/workbench/evidence/ssd_factor_catalog_20261028_v1.json",
       "sha256": "ccff66c847db6519132775a177268c03d7ec36491076380be01d01f41589287d"
@@ -754,13 +766,13 @@
   ],
   "next": [
     "Preserve all sixteen overall-rejected SSD hypotheses across thirteen cohorts and64funded paths, completed diagnoses and original six-slot history. Raw documents, prices, targets and daily accounts remain private; do not replay them.",
-    "New Moody DAAA/DBAA historical acquisition is deferred because applicable use permission is unverified;do not infer it from old BAA10Y or a public form. Separately freeze and validate ANFCI vintages using the checked225date/sixbatch plan,original clocks and proposed14day age. No archive downloaded/source admitted/tradingrule selected;metadata is not PIT coverage or alpha proof.",
+    "Preserve actual ANFCI nonadmission:6archives/225vintages verified butonly223fresh;Dec29/30-2022 queries haveDec9 observations aged20/21days>14. Nativeempty CSV correction preservesabsences/numerics andfailedv1;firstarchive reused,6uniquePOSTstotal. Do not redownload,relaxage,fillcurrenthistory or invent safe states. Anyfuture use needsseparateexplicitinformation/missingness contract beforeoutcomes;no17thmodelselected. Moodypermissiondeferral remains.",
     "Continue economically motivated, preregistered independent small batches without ordinary per-batch approval or a configuration-count ceiling until2026-10-31T15:59Z. Use one computation; at cutoff preserve partial work, clear only the SSD session timer and confirm absence.",
     "Keep old source refusals, VIG/SDY terminal429 and prospective/PIT gates. The independent market-only IBKR adapter is proved, but the one actual probe stopped on2157 before historical requests;0history rows/admissions,no automatic retry or inferred entitlement denial. Default readonly account synchronization remains prohibited."
   ],
   "next_zh": [
     "保留SSD十三组共16项整体拒绝假设、64条资金约束路径、已完成诊断与历史六配置记录，不重复运行；原始文档、行情、目标矩阵和逐日账户保持私有。",
-    "新Moody DAAA/DBAA历史采集因使用许可未核实而暂缓，不从旧BAA10Y或公开表单推断授权。独立冻结并核验ANFCI按225日期/六批次计划的历史vintage，保留原时钟及拟定14天时效；尚未下载档案、准入来源或选择交易规则，元数据不等于PIT覆盖或alpha证明。",
+    "保留ANFCI实际未准入结论：6档案/225vintage完整，但仅223项新鲜；2022-12-29/30查询仅有12月9日观察，20/21天超过14。原生空CSV字段修正只保留缺失、不改数值，旧v1失败保留，首档案复用、共6次唯一POST。不重下载、放宽时效、用当前历史补齐或构造安全状态。未来使用须另定事前信息/缺失规则，未选17项；Moody许可暂缓保持。",
     "持续开展有经济理由、事前冻结的独立小批次，无普通逐批确认或配置次数上限，截止2026-10-31T15:59Z；单计算job，届时保存未完状态、只清除SSD会话timer并确认不存在。",
     "原拒绝来源、VIG/SDY终止429和前瞻/PIT门保持。独立IBKR market-only适配器已证明，但唯一真实探针在历史请求前因2157停止；历史行/准入0，不自动重试或推断订阅拒绝，仍禁止默认readonly账户同步。"
   ],

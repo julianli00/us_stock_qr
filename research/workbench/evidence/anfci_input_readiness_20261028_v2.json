@@ -1,0 +1,68 @@
+{
+  "actual_archive_count": 6,
+  "actual_vintage_count": 225,
+  "archive_integrity_and_exact_vintage_coverage_verified": true,
+  "created_at": "2026-10-28T16:33:59.883806+00:00",
+  "finite_numeric_values_changed": false,
+  "first_archive_redownloaded": false,
+  "freeze": {
+    "path": "data/ssd-anfci-vintages-20261028-v2/source-contract-freeze.json",
+    "sha256": "ae8c6fa0e34c1519d4c48244d1b0f60498163837ae64f9c2e75335a739690dd2"
+  },
+  "frequency": "Weekly, Ending Friday",
+  "fresh_query_count": 223,
+  "freshness_limit_calendar_days": 14,
+  "maximum_observation_age_calendar_days": 21,
+  "native_missing_tokens": [
+    ".",
+    ""
+  ],
+  "new_factor_definitions": 0,
+  "new_strategy_evaluations": 0,
+  "new_v2_POSTs": 5,
+  "order_authority": false,
+  "original_contract": {
+    "path": "data/ssd-anfci-vintages-20261028-v1/source-contract-freeze.json",
+    "sha256": "00c0167c7275ba55327d32a5e767d4c8b4827b6488e83bce71f5ad7c35f1efd1"
+  },
+  "original_failure": {
+    "path": "data/ssd-anfci-vintages-20261028-v1/source-failure.json",
+    "sha256": "48ff2072ab15144d9855688fa7eca6ac66c2e25c522586661ec82d324e0dc587"
+  },
+  "original_ledger_and_journal_unchanged": true,
+  "policy": {
+    "path": "config/anfci-native-csv-v2.json",
+    "sha256": "8316dbff0c6d8ee8a893c26eb3d05c8d1cd6f75c46d389fcde9e09981cdf3e2a"
+  },
+  "private_manifest": {
+    "path": "data/ssd-anfci-vintages-20261028-v2/manifest.json",
+    "sha256": "e21a38ef5592fc8c217e63145a3d77bd6c37b756116554b510a9f7b333a2a7c9"
+  },
+  "raw_values_published": false,
+  "reused_v1_archive_count": 1,
+  "schema_version": 1,
+  "series": "ANFCI",
+  "source": "Federal Reserve Bank of Chicago",
+  "source_admitted": false,
+  "source_id": "ssd_anfci_vintages_20261028_v2",
+  "stale_query_count": 2,
+  "stale_query_metadata": [
+    {
+      "age_calendar_days": 20,
+      "fresh": false,
+      "observation_date": "2022-12-09",
+      "query_session": "2022-12-29",
+      "vintage_cutoff": "2022-12-28"
+    },
+    {
+      "age_calendar_days": 21,
+      "fresh": false,
+      "observation_date": "2022-12-09",
+      "query_session": "2022-12-30",
+      "vintage_cutoff": "2022-12-29"
+    }
+  ],
+  "strategy_rule_selected": false,
+  "unique_source_POSTs": 6,
+  "units": "Index"
+}

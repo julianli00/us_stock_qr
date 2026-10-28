@@ -609,10 +609,24 @@ reclassify the old frozen credit study.
 The review separately examines Chicago Fed **ANFCI**, an adjusted
 financial-conditions index, not a credit-spread substitute. Its
 definition, revision caveats and public ALFRED form were checked.
-A prospective plan covers 225 prior-session vintage cutoffs in six
-bounded batches, but **no vintage archives have been downloaded and
-ANFCI is not yet admitted**. Actual coverage and freshness must be
-verified before any strategy. No seventeenth model is selected;
+A prospective plan covered 225 prior-session vintage cutoffs in six
+bounded batches. At that metadata review, no archives had been
+downloaded and no source admission had passed.
+
+The [actual ANFCI validation](research/workbench/evidence/anfci_input_readiness_20261028_v2.json)
+has now received six archives covering all 225 requested vintages,
+but **full source admission still fails**: 223 queries meet the
+unchanged 14-day freshness limit and two do not.
+The 2022-12-29 and 2022-12-30 queries contain only the 2022-12-09
+observation, aged 20 and 21 days.
+
+A separately frozen technical correction recognizes the source's
+native empty CSV fields as missing, not zero or filled values.
+The failed dot-only parser and its raw response remain intact; that
+first archive was reused without another request. All six unique
+data POSTs succeeded, and 84,117 finite cells matched independent
+parsing. This does not repair the two stale observations or authorize
+a strategy using them. No seventeenth model is selected;
 194 completed configurations and zero qualifiers remain.
 
 Current counts and the distinction from old quota records are in
