@@ -763,6 +763,31 @@ Current counts are **19 registered, 18 completed/reviewed, one
 retained technical failure, zero pending, 72 funded paths,
 196 combined completions and zero qualifiers**.
 
+The subsequent saved-risk diagnosis explains why the trailing
+constraint should not be read as protection of the actual account:
+
+| Path | First DD above 15% | Prior-close stocks | Prior-close gold | Latest known target | Its saved training DD |
+|---|---|---:|---:|---|---:|
+| 10y base | 2018-12-19 | 97.9100% | 0% | 2018-11-30 | 13.6143% |
+| 10y stress | 2018-12-19 | 97.8620% | 0% | 2018-11-30 | 13.6143% |
+| 5y base | 2022-05-02 | 13.5956% | 84.3546% | 2022-04-29 | 7.8731% |
+| 5y stress | 2022-02-23 | 97.8296% | 0% | 2022-01-31 | 14.8345% |
+
+All four first breaches have **no pending request at the preceding
+close, no order and no fee on the breach day**. BIL is only a small
+positive residue, at most about 0.000631% of total capital, not
+strictly zero. The five-year base breach occurs in a gold-dominated
+portfolio rather than a nearly all-stock one.
+
+All maximum-drawdown episodes begin at the actual account peak
+on **2021-12-27**, ending on **2023-11-10** in base and
+**2023-10-26** in stress. The trailing training windows used near
+those troughs start in September/October 2022, after that account
+peak. Both stock and gold mark-to-market losses accumulate in the
+same funded account; a locally bounded, normalized training path
+does not bound that longer wealth history. This diagnosis uses
+only saved artifacts and changes no primary result or trial count.
+
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
 

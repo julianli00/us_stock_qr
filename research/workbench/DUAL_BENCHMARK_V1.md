@@ -2468,9 +2468,91 @@ new independent economic hypothesis. Counts are now **19 registered,
 18 completed/reviewed, one retained technical failure, zero pending,
 72 funded paths, 196 combined completions and zero qualifiers**.
 The original ledger and one-day forward models are unchanged.
-The next saved-risk diagnosis must not rerun LP targets, funded
-accounts or primary metrics, or tune a risk/floor/window/band
-parameter to rescue this rejected result.
+The next saved-risk diagnosis was limited to existing artifacts,
+without rerunning LP targets, funded accounts or primary metric
+pipelines, or tuning a risk/floor/window/band parameter to rescue
+this rejected result.
+
+### Saved risk diagnosis: training paths versus account wealth
+
+A separately intent-bound diagnosis completed at
+**2026-10-28T20:58:12.292652Z**. It reads the saved targets,
+training-audit metadata, actual closing weights, issued requests,
+execution decisions and adjusted opening/closing prices. It reuses
+the reviewed pure accounting and drawdown-episode helpers, never
+their old diagnostic mains. Nine synthetic cases cover initial-capital
+peaks, prior-close information timing, delayed requests, hold
+placeholders, conservation and malformed saved inputs.
+
+The first strict 15% breaches are:
+
+| Path | First breach | Prior-close stock capital | Prior-close gold capital | Previously known target | Saved training DD |
+|---|---|---:|---:|---|---:|
+| 10y base | 2018-12-19 | 97.9100% | 0% | 2018-11-30 | 13.6143% |
+| 10y stress | 2018-12-19 | 97.8620% | 0% | 2018-11-30 | 13.6143% |
+| 5y base | 2022-05-02 | 13.5956% | 84.3546% | 2022-04-29 | 7.8731% |
+| 5y stress | 2022-02-23 | 97.8296% | 0% | 2022-01-31 | 14.8345% |
+
+Every row has zero breach-day orders and costs, and no already-issued
+request pending at the preceding close. This is not a pending exit
+that simply has not filled on those days. Prior costs and execution
+history still affect NAV; no cost-free counterfactual or causal delay
+effect is claimed. Actual BIL weights are small **positive residues**:
+the largest is `0.000006305682301111603` of capital, approximately
+0.000631%, not mathematically zero. Idle cash remains a separate asset
+of approximately 2% at these points.
+
+The latest target is not always the last executed request. Before
+the ten-year breaches, the last request was issued on 2018-10-31
+and executed on November 1/2. Before the five-year base breach,
+the last request was 2022-02-28, executed on March 1; before the
+five-year stress breach it was 2021-11-30, executed on December 2.
+Later saved targets need not trigger another trade under the original
+actual-holdings band. An event-day target is never substituted for
+information that was known at the prior close.
+
+All four maximum-drawdown intervals begin on **2021-12-27**.
+Both base accounts reach their trough on **2023-11-10**; both
+stress accounts reach it on **2023-10-26**. These overlapping
+windows are not independent evidence. The base trough's latest
+training window is 2022-10-28--2023-10-31; the stress trough's is
+2022-09-28--2023-09-29. Both start **after the actual account peak**.
+Their saved training drawdowns are only 8.4583% and 10.0939%,
+respectively, while accumulated account drawdown exceeds 26%.
+
+At the account peak, actual stocks account for approximately 98%.
+At the base trough, actual gold is 81.9393% and stocks 16.0451%;
+at the stress trough, stocks are 97.2116% and gold 0.5668%.
+The following actual mark-to-market accounting decomposes each
+account's own peak-to-trough NAV change. Entries are percentage
+points of that account's **peak NAV**, not CAGR points, standalone
+asset drawdowns or an equal-calendar causal comparison:
+
+| Path | SOXX | Four-style core | Gold | BIL | Fees |
+|---|---:|---:|---:|---:|---:|
+| 10y base | -10.8342 | -6.1006 | -10.2593 | +1.8030 | -1.0225 |
+| 10y stress | -12.6363 | -6.7579 | -8.0665 | +1.7553 | -2.6519 |
+| 5y base | -10.8239 | -6.0961 | -10.2432 | +1.8004 | -1.3012 |
+| 5y stress | -12.2671 | -6.8850 | -8.0787 | +1.7577 | -2.9053 |
+
+Unrounded components reconcile to the saved NAV change. Both stocks
+and gold contribute losses, while BIL offsets part of them; fee
+contributions alone do not describe the total loss. This does not
+estimate what an account with different fees or holdings would earn.
+The maximum daily NAV-identity error is `1.7195134205394424e-11`
+USD, cash-identity error `1.2684428926489407e-11` USD and episode
+reconciliation error `8.640199666842818e-12` USD.
+
+The numerical certificates remain valid for their defined training
+paths. They do not impose a budget on losses accumulated from an
+earlier actual account peak as allocations and training windows change.
+All 35 direct references, 216 journal events, primary records and the
+original ledger remain unchanged. Private diagnostic SHA256:
+`175105fa8a934e47f3f931b0a9e27f4dc0975e1f866c7dbb46145f9993c7f541`.
+There are zero additional strategy evaluations, target generations
+or accounts, no new source request and no selected replacement
+model. The existing 19/18/1 registrations/completions/technical
+failures and 196 combined completions remain unchanged.
 
 ## Independent IBKR price-history source boundary
 
