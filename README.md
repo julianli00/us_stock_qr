@@ -788,6 +788,30 @@ same funded account; a locally bounded, normalized training path
 does not bound that longer wealth history. This diagnosis uses
 only saved artifacts and changes no primary result or trial count.
 
+The subsequent prior-art review found that **actual-account wealth
+cushion protection had already been tested** in
+[`growth_portfolio_protection`](research/workbench/config/growth-portfolio-protection.json).
+Its recorded protected drawdowns are 12.80--13.51%, but net CAGR
+is only 6.24--10.64%, with Sharpe 0.479--0.697 and failed original
+SPY gates. Those old outcomes and criteria remain unchanged.
+
+The original [Hsieh--Barmish drawdown-modulation paper](https://arxiv.org/abs/1710.01503v1)
+provides a useful theoretical comparison, not a ready-made guarantee
+for this project. Its bare wealth-cushion factor is already present
+in the older code. Its theorem uses explicit return-support bounds
+and ideal cost-free, zero-interest dynamics with the selected exposure
+applied before the next return. The lemma does **not** require IID
+returns; the separate gain-optimization example does. Existing
+fees, queued next-open execution and actual BIL exposure are not
+covered merely by citing the lemma.
+
+Exact **synthetic unit examples**, not new historical backtests,
+show why the timing and cash distinctions matter. No candidate,
+gain estimator or replacement strategy was selected, and the
+paper's growth optimizer was not replicated. This review prevents
+relabelling an already tested wealth-floor rule as new research;
+it adds no strategy trial or investment qualification.
+
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
 

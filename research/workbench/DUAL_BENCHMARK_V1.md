@@ -2554,6 +2554,128 @@ or accounts, no new source request and no selected replacement
 model. The existing 19/18/1 registrations/completions/technical
 failures and 196 combined completions remain unchanged.
 
+## Wealth-feedback prior art and guarantee boundaries
+
+The saved-risk finding does not mean that using actual account
+wealth is itself a new idea in this repository. The registered
+[`growth-portfolio-protection` policy](config/growth-portfolio-protection.json)
+and its implementation already ratchet a floor to 85% of the
+highest actual closing NAV, including the initial USD10,000.
+They keep the original execution delays and costs, use a 5-point
+actual-weight band for the protected rule, and route reduced
+non-BIL exposure to actual BIL. The policy and code hashes still
+match both original registered candidates and their completed reviews.
+
+These are the **saved old outcomes under their original protocol**,
+not reruns or reclassification under the later SSD criteria:
+
+| Path | Monthly-control CAGR | Protected CAGR | Control Sharpe | Protected Sharpe | Control DD | Protected DD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 14.8420% | 8.4804% | 0.976249 | 0.689044 | 19.1579% | 12.8220% |
+| 10y stress | 14.4354% | 6.2396% | 0.946958 | 0.479090 | 19.2587% | 13.5089% |
+| 5y base | 17.6998% | 10.6431% | 1.000447 | 0.697345 | 19.3078% | 12.7959% |
+| 5y stress | 17.0038% | 8.7843% | 0.954776 | 0.524623 | 19.4082% | 12.9568% |
+
+All protected drawdown gates passed historically, but all protected
+Sharpe and SPY gates failed. Neither that fact nor the old policy's
+CPPI motivation authorizes a new trial formed merely by renaming the
+same cushion rule or varying its multiplier, band or satellite.
+
+### Primary source and the shared scalar factor
+
+The reviewed primary source is Chung-Han Hsieh and B. Ross Barmish,
+*On Drawdown-Modulated Feedback Control in Stock Trading* (2017),
+[arXiv:1710.01503v1](https://arxiv.org/abs/1710.01503v1),
+[DOI 10.1016/j.ifacol.2017.08.167](https://doi.org/10.1016/j.ifacol.2017.08.167).
+The advertised abstract page and seven-page PDF were retained
+privately with actual HTTP200 receipts and hashes. Raw paper
+content is not republished here.
+
+For current wealth $V$, running peak $H$, limit $L$ and current
+drawdown $d=1-V/H$, the paper's Section 5 modulator is
+
+$$
+M=\frac{L-d}{1-d}=\frac{V-(1-L)H}{V}.
+$$
+
+The existing repository implementation scales its non-BIL monthly
+target by
+
+$$
+s=\operatorname{clip}\!\left(\frac{M}{L},0,1\right),
+\qquad w_{\text{non-BIL}}=0.98s.
+$$
+
+Inside $0\le d\le L$, its total non-BIL exposure therefore has the
+paper's scalar form $\gamma M$ with $\gamma=0.98/L=98/15$ for
+$L=0.15$. This gain is **not** 6.53-times asset leverage: target
+exposure remains at most 0.98. Below the floor the legacy clipping
+is an extension outside the lemma's maintained drawdown region.
+Twelve fixed synthetic wealth states at two capital scales agree
+with the existing pure budget function to
+`1.1102230246251565e-16`.
+
+This comparison concerns the **scalar budget factor only**. It
+does not equate the old multi-asset allocator, its BIL routing or
+execution with the full paper. The paper's gain optimization and
+possible time-varying gains were neither implemented nor fitted.
+
+### Assumptions that cannot be silently imported
+
+Section 4 uses bounded returns with explicit support endpoints,
+zero transaction costs, zero interest and perfect liquidity. The
+recursion applies the chosen investment to the next return; it
+does not model a stale queued target that fills after an intervening
+price move. The Section 5 lemma explicitly says IID returns are
+**not required** for its guarantee. Section 6's separate expected
+log-growth gain optimization **does** assume an IID return law.
+The Section 8 multi-asset if-and-only-if result additionally
+assumes joint support at the vertices of its return-bound rectangle.
+
+Historical sample minima or observed correlations do not establish
+these future support assumptions. The project's real 5/20bp costs,
+USD1 tickets, one/two-session delayed opens and non-overwritten
+pending requests remain mandatory. BIL is an actual price-bearing
+ETF, not the model's zero-interest idle cash.
+
+Two exact rational **unit arithmetic witnesses** illustrate the
+distinction. They are not market observations, forecasts, strategy
+backtests or zero-cost repricings of any saved account:
+
+| Synthetic case | Result |
+|---|---|
+| Start at 10,000 with 98% risky exposure; first return -10% | Wealth 9,020; unchanged units still carry 8,820 of risky value |
+| Rebalance immediately between shocks according to the ideal modulation formula | Risky amount 3,397.3333; another -10% return leaves 8,680.2667, or 13.1973% drawdown |
+| Instead, a second -10% gap occurs before the requested trade executes | Wealth is already 8,138 before execution, or 18.62% drawdown |
+| At a floor of 85 against peak 100, hold 98% in a hypothetical defensive fund which then loses 0.1% | Wealth 84.9167, or 15.0833% drawdown |
+
+The first example uses synthetic support bounds of -10% and +10%,
+compatible with the stated gain bound; its failure is the changed
+execution timing, not a contradiction of the lemma. The second
+does not assert that BIL actually made, or will make, that move.
+Both examples omit fees only to isolate the assumption mismatch,
+and do not replace the user's funded four-path cost contract.
+They also do not claim that the older protected strategy breached
+15% in its saved historical runs; it did not.
+
+The review's decision is therefore narrow: **bare cushion modulation
+is already implemented, while the ideal guarantee has not been
+established for this execution contract**. A distinct return-law
+or gain policy would need its own causal definition and friction-aware
+evaluation, rather than importing a paper's fitted gain or claiming
+that all drawdown-feedback methods have already been tested.
+No such candidate was selected here.
+
+The review finished at **2026-10-28T21:56:14.905164Z**. Its private
+result SHA256 is
+`1a7df093b92d8079fc0f140b7adb68f3fa6f0630158c1e7f77f0eb8e2fcf0cb3`.
+Six unit tests, fourteen bound local references and the retained
+old-model API snapshot support the comparison. This is not a
+new independent investment experiment. The original ledger,
+216 SSD journal events, old verdicts, one-day forward models,
+19/18/1 registration/completion/failure counts and zero qualifiers
+remain unchanged.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,
