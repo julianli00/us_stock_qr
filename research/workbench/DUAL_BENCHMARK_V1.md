@@ -1380,7 +1380,7 @@ completions and zero qualifiers. No new parameter or model is selected.
 The [fourteenth registration](evidence/relative_equity_odds_20261028_registration_v1.json)
 fixes `daily_proxy_relative_equity_odds_v1`. Actual registration at
 2026-10-28 11:07:49.984648 UTC precedes proof at 11:07:53.000217 UTC and
-packet creation at 11:07:53.001499 UTC. No account outcome exists at
+packet creation at 11:07:53.001499 UTC. No account outcome existed at
 this preregistration fence.
 
 The source's total equity, GLD, BIL, other targets and monthly execution
@@ -1419,8 +1419,45 @@ The old source generator or account is not replayed.
 Original monthly observed-weight execution, USD10,000 fresh capital,
 1x cash funding, USD1 tickets, 5/20bp costs, one/two-session delays, RF,
 initial drawdown peak and all joint four-window gates remain. Counts
-at preregistration are fourteen registered, thirteen completed, one
+at preregistration were fourteen registered, thirteen completed, one
 pending, 52 paths and 191 combined completed configurations.
+
+### Completed relative-equity result: modest gain, full gates still fail
+
+The actual preregistration publication
+`d141f9caba55f8b1bd96a538e6b8ff260dc73eb4` preceded all four new accounts.
+The [complete result](evidence/relative_equity_odds_20261028_results_v1.json)
+finished at 2026-10-28 11:11:18.366772 UTC and is rejected overall.
+
+| Path | Net CAGR | Sharpe | Max DD | Annual two-sided turnover | Model orders | Costs USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 17.0480% | 1.1710 | 15.6817% | 4.1236 | 630 | 1,069.66 |
+| 10y stress | 16.5771% | 1.1341 | 14.6562% | 4.1202 | 622 | 2,340.20 |
+| 5y base | 21.1781% | 1.2393 | 12.6506% | 4.5198 | 338 | 509.03 |
+| 5y stress | 20.1904% | 1.1761 | 12.6187% | 4.4971 | 338 | 1,003.19 |
+
+All net-CAGR>12%, Sharpe>1 and SPY comparisons pass, including the
+stress-vs-base-SPY checks. Both five-year paths pass every point gate.
+Both ten-year QQQ comparisons and ten-year-base drawdown fail.
+No subwindow, source drawdown or stress result substitutes for those failures.
+
+Versus the source's fixed half-sector/half-core composition, net CAGR
+increases by about 0.230/0.256/0.235/0.270 percentage points.
+Drawdowns, turnover and fees increase in every path. Sharpe increases
+in three paths but decreases slightly in five-year base; this is not
+uniform risk-adjusted dominance or proof of persistent leadership.
+
+The three undefined prehistory months stay undefined; all original
+2,512/1,254 formal returns and causal seeds remain. Independent
+monthly feedback checks 121/121/61/61 decisions and 94/93/50/50 issued
+requests. The maximum independent NAV difference is
+USD5.820766091346741e-11. No old account, risk threshold, source hash,
+fee/timing rule or numerical acceptance tolerance was changed.
+
+Counts are fourteen completed/reviewed SSD hypotheses, 56 funded paths,
+192 combined completed configurations, zero pending, zero technical
+failures and zero qualifiers, with 166 journal events. No fifteenth
+model or post-outcome share/window adjustment has been selected.
 
 ## Independent IBKR price-history source boundary
 

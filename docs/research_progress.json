@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-28",
-  "phase": "relative_equity_odds_registered_pending_accounts",
-  "active_research_focus": "continuous_semiconductor_core_composition_with_unchanged_total_equity",
+  "phase": "relative_equity_odds_complete_rejected",
+  "active_research_focus": "modest_composition_gain_does_not_close_full_window_qqq_or_drawdown_gaps",
   "research_dashboard": {
     "server": "src/us_quant/research_dashboard.py",
     "frontend": "web/research/index.html",
@@ -24,13 +24,13 @@
     },
     "aggregate_counts": {
       "registered": 14,
-      "completed": 13,
-      "reviews": 13,
-      "pending": 1,
+      "completed": 14,
+      "reviews": 14,
+      "pending": 0,
       "technical_failures": 0,
       "qualified": 0,
-      "account_paths": 52,
-      "total_legacy_plus_ssd_completed": 191
+      "account_paths": 56,
+      "total_legacy_plus_ssd_completed": 192
     },
     "additional_cohorts": [
       {
@@ -109,9 +109,9 @@
         "study_id": "ssd_relative_equity_odds_20261028_v1",
         "registration": "research/workbench/evidence/relative_equity_odds_20261028_registration_v1.json",
         "registration_sha256": "9d0a7f9aba3fac724f428294973ac4897f69d57240b788cf2cfdeb59ee7641c5",
-        "results": null,
-        "results_sha256": null,
-        "preregistration_commit": null
+        "results": "research/workbench/evidence/relative_equity_odds_20261028_results_v1.json",
+        "results_sha256": "02509d71b7563cc70957a59a7a00f720835fb7f66a2ee30c555b882381d7dcc4",
+        "preregistration_commit": "d141f9caba55f8b1bd96a538e6b8ff260dc73eb4"
       }
     ],
     "status": "first_pair_complete_both_rejected",
@@ -737,14 +737,14 @@
     "第10项固定相反优先级：在当时较低SPY/QQQ尾部预算（以实际BIL风险作底）内最大化已观测机会，不扫风险倍率/旧门槛/窗口/核心参数。2026-10-28T05:46:36.615636Z真实登记先于122有证书计划（112优化/10非正机会），5前缀及完整6家族覆盖通过。先发布1074904478bfd0ba2a19d502c479ebd2de13c227，再于05:54:28.534515Z完成4资金路径并拒绝。依次十年base/stress、五年base/stress净CAGR12.9292/11.4123/16.5627/14.9118%，Sharpe0.6781/0.5922/0.7818/0.6907，DD26.4086/27.0756/26.6875/27.3277%；回撤/夏普/QQQ全失败，3条CAGR过且仅五年胜SPY。SSD10完成/40路径/合计188/0通过、118事件，原记录不变；不得拼接第9项回撤与第10项收益。"
   ],
   "next": [
-    "Preserve all thirteen overall-rejected SSD hypotheses across ten cohorts and52funded paths, completed diagnoses and original six-slot history. Raw documents, prices, targets and daily accounts remain private; do not replay them.",
-    "Publish the actual fourteenth relative-equity preregistration before accounts. Preserve source total stock/GLD/BIL and original monthly execution; change only continuous SOXX/core allocation from inherited126-minus21relativewealth. Three insufficient prehistory month ends stay undefined, but both full formal windows and their causal anchors remain complete. No satellite-weight/window grid or causal-alpha claim.",
+    "Preserve all fourteen overall-rejected SSD hypotheses across eleven cohorts and56funded paths, completed diagnoses and original six-slot history. Raw documents, prices, targets and daily accounts remain private; do not replay them.",
+    "The relative-equity rule modestly increases CAGR in all paths, but drawdowns/turnover/costs also increase and five-year-base Sharpe slips. Both five-year paths pass point gates, yet ten-year QQQ comparisons and base DD still fail. Do not extrapolate two >20%five-year results, tune shares/windows or delete warmup/return observations to claim a joint pass.",
     "Continue economically motivated, preregistered independent small batches without ordinary per-batch approval or a configuration-count ceiling until2026-10-31T15:59Z. Use one computation; at cutoff preserve partial work, clear only the SSD session timer and confirm absence.",
     "Keep old source refusals, VIG/SDY terminal429 and prospective/PIT gates. The independent market-only IBKR adapter is proved, but the one actual probe stopped on2157 before historical requests;0history rows/admissions,no automatic retry or inferred entitlement denial. Default readonly account synchronization remains prohibited."
   ],
   "next_zh": [
-    "保留SSD十组共13项整体拒绝假设、52条资金约束路径、已完成诊断与历史六配置记录，不重复运行；原始文档、行情、目标矩阵和逐日账户保持私有。",
-    "先发布第14项股票内部相对财富登记再算账户。保留来源总股票/GLD/BIL及原月末执行，仅按继承的126减21观察窗连续调整SOXX/核心份额。前史不足的三个月末保持未定义，完整十年/五年窗口及因果初始锚不变；不扫行业权重/窗口，不夸称因果alpha。",
+    "保留SSD十一组共14项整体拒绝假设、56条资金约束路径、已完成诊断与历史六配置记录，不重复运行；原始文档、行情、目标矩阵和逐日账户保持私有。",
+    "相对股票配置四路径CAGR小幅上升，但回撤/换手/费用也上升，五年基础Sharpe略降。五年两条虽通过点估计门槛，十年QQQ两条及基础DD仍失败；不外推两条五年>20%结果、调份额/窗口或删除前史/收益观测来宣称联合通过。",
     "持续开展有经济理由、事前冻结的独立小批次，无普通逐批确认或配置次数上限，截止2026-10-31T15:59Z；单计算job，届时保存未完状态、只清除SSD会话timer并确认不存在。",
     "原拒绝来源、VIG/SDY终止429和前瞻/PIT门保持。独立IBKR market-only适配器已证明，但唯一真实探针在历史请求前因2157停止；历史行/准入0，不自动重试或推断订阅拒绝，仍禁止默认readonly账户同步。"
   ],

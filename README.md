@@ -419,8 +419,26 @@ This is not the old binary SOXX/SPY switch or within-core rank allocation.
 Actual registration at 2026-10-28 11:07:49 UTC preceded the independent
 128-target proof. Three insufficient prehistory months stay undefined;
 both full ten/five-year windows retain every return and causal initial
-anchor. No new account has run: fourteen registered, thirteen completed,
-one pending, 52 paths and 191 combined completions.
+anchor. Actual preregistration
+`d141f9caba55f8b1bd96a538e6b8ff260dc73eb4` precedes the
+[complete fourteenth result](research/workbench/evidence/relative_equity_odds_20261028_results_v1.json),
+finished at 2026-10-28 11:11:18 UTC. It is **rejected overall**:
+both ten-year QQQ comparisons fail and ten-year-base drawdown exceeds
+15%, despite both five-year paths passing all point gates.
+
+| Path | Net CAGR | Sharpe | Max DD | Annual two-sided turnover | Model orders | Costs USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 17.0480% | 1.1710 | 15.6817% | 4.1236 | 630 | 1,069.66 |
+| 10y stress | 16.5771% | 1.1341 | 14.6562% | 4.1202 | 622 | 2,340.20 |
+| 5y base | 21.1781% | 1.2393 | 12.6506% | 4.5198 | 338 | 509.03 |
+| 5y stress | 20.1904% | 1.1761 | 12.6187% | 4.4971 | 338 | 1,003.19 |
+
+CAGR improves modestly relative to the unchanged-budget source,
+but drawdown, turnover and costs rise throughout; five-year-base
+Sharpe declines slightly. Two historical five-year CAGRs above 20%
+do not establish the full joint goal or independent forward performance.
+Counts are fourteen completed SSD hypotheses, 56 paths, 192 combined
+completions and zero qualified champions.
 
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
