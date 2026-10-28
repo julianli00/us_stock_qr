@@ -2127,6 +2127,64 @@ Actual sanitized publication still must precede four fresh USD10,000
 accounts under all original timing, costs, RF, initial-peak and
 dual-benchmark gates. There is no trading or deployment authority.
 
+### Completed residual-stress confirmation result
+
+Actual preregistration commit
+`94ff2e2d40e58e8194db06e936722524650b8d08` was verified on the remote
+at 2026-10-28 17:40:22 UTC. All four fresh funded paths completed
+once at 17:43:06.697811 UTC. The
+[complete scalar result](evidence/anfci_residual_confirmation_20261028_results_v1.json)
+is **rejected overall**.
+
+| Path | Net CAGR | Sharpe | Max DD | Annual two-sided turnover | Model orders | Costs USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 19.1908% | 1.039127 | 22.2677% | 2.6650 | 553 | 812.46 |
+| 10y stress | 18.5577% | 0.999926 | 22.4891% | 2.6543 | 541 | 1,545.42 |
+| 5y base | 24.5144% | 1.125942 | 19.5913% | 2.7219 | 287 | 377.14 |
+| 5y stress | 23.3055% | 1.067553 | 19.9082% | 2.7153 | 287 | 636.35 |
+
+All net CAGR, matched-cost SPY and applicable extra stress-SPY gates
+pass. Both ten-year QQQ gates fail, and **all four drawdowns exceed
+15%**. Ten-year stress Sharpe is **0.9999262771386388**, so its strict
+greater-than-one gate fails; rounding to 1.0000 is not a pass.
+The two five-year paths beat QQQ but fail drawdown. No path passes
+all point gates and no metrics are spliced across configurations.
+
+Independent funded NAV difference is at most USD4.37e-11.
+The new verifier checks 121/121/61/61 monthly-plus-initial
+opportunities, 120/120/60/60 eligible actual decisions and one
+source abstention in each path. Issued requests are 90/88/47/47.
+All four 2022-12-30 abstention records have no new request, zero
+same-day model orders/fees and an actual retained return observation.
+Every 2,512/1,254 formal return, original RF, initial USD10,000
+peak, delay and cash-funding rule remains. The source's original
+225-query full-freshness admission is still false.
+
+Saved comparisons cover the fifteenth donor, sixteenth learner,
+eleventh daily proxy and older observed-band dollar reference.
+Against the fifteenth, CAGR rises by
+2.2735/2.1768/3.5544/3.2852 percentage points, but maximum drawdown
+rises by 7.4021/8.5897/7.0852/7.4351 points and Sharpe falls on
+every path. Fees, model tickets and annualized two-sided turnover
+are lower throughout. These are whole-model historical tradeoffs,
+not causal ANFCI alpha or proof that lower costs caused the gain.
+
+Against the sixteenth, turnover is lower throughout but model
+tickets increase by 312/265/129/108. Base-path costs are higher,
+while stress-path costs are lower. The broader older reference
+retains higher Sharpe and lower drawdown on every path; no uniform
+research-frontier dominance is claimed.
+
+Private saved-comparison SHA256:
+`b46a33df61443f11e8ad46025ea161e126ec3ad60d4bcc46009fb6125d336640`.
+All sixteen scalar pairs and actual source-abstention proofs are
+retained without replaying prior accounts, targets or source audits.
+The 202-event SSD journal and original ledger are preserved.
+Counts are seventeen completed SSD hypotheses, 68 funded paths,
+195 combined completions and zero qualifiers. No threshold,
+source age, dollar window, reduction scale, trade band or calendar
+is tuned after these outcomes; no eighteenth candidate is selected.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,

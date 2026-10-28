@@ -649,8 +649,34 @@ Actual registration at 2026-10-28 17:37:56 UTC precedes target proof.
 Both original anchors, all four genuine factor families and five
 prefix checks pass; independent target difference is at most
 1.12e-16. Seventeen hypotheses are registered, sixteen completed
-and one pending. No new account has run; actual publication must
-precede the four funded paths.
+and one pending at registration, before any new account had run.
+
+Actual preregistration
+`94ff2e2d40e58e8194db06e936722524650b8d08` preceded the
+[complete seventeenth result](research/workbench/evidence/anfci_residual_confirmation_20261028_results_v1.json).
+It is **rejected overall**: every path exceeds 15% drawdown,
+both ten-year QQQ comparisons fail, and ten-year stress Sharpe is
+**0.9999262771**, strictly below 1 despite rounding close to it.
+
+| Path | Net CAGR | Sharpe | Max DD | Annual two-sided turnover | Model orders | Costs USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 19.1908% | 1.039127 | 22.2677% | 2.6650 | 553 | 812.46 |
+| 10y stress | 18.5577% | 0.999926 | 22.4891% | 2.6543 | 541 | 1,545.42 |
+| 5y base | 24.5144% | 1.125942 | 19.5913% | 2.7219 | 287 | 377.14 |
+| 5y stress | 23.3055% | 1.067553 | 19.9082% | 2.7153 | 287 | 636.35 |
+
+Compared with the fifteenth donor, CAGR rises and fees, orders
+and turnover fall throughout, but Sharpe falls and drawdown rises
+throughout. Against the sixteenth, turnover is lower but ticket
+counts are higher on every path; costs are not uniformly lower.
+The older robust reference still has better Sharpe and lower drawdown.
+
+The explicit 2022-12-30 source abstention issued no new request;
+that actual return day remains in all four accounts. It does not
+repair ANFCI's full-source admission. Counts are seventeen completed
+SSD hypotheses, 68 funded paths, 195 combined completions and
+zero qualifiers. No eighteenth model or post-result threshold rescue
+is selected.
 
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
