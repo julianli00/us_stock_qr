@@ -498,6 +498,25 @@ Counts are fifteen completed SSD hypotheses, 60 paths, 193 combined
 completions and zero qualified champions; historical point passes
 still do not establish independent forward performance.
 
+The saved information assessment finds **64 higher and 67 lower**
+two-segment variation observations across all 131 month ends. Stock
+targets rise on 45 dates, fall on 41 and remain unchanged on 45;
+their average change is only **-0.0693 percentage points of total
+target capital**, not a uniform risk reduction or an order count.
+
+Both ten-year maximum-drawdown intervals remain
+2020-02-19--2020-03-20. Both five-year intervals remain
+2026-01-29--2026-03-30; in those five-year declines the two models have
+the same actual weights and normalized NAV path within numerical
+precision, with **no orders or fees**. Their dollar wealth is different,
+and their full histories are not identical.
+
+The small full-window improvement over the eleventh model has a
+positive gold holding component offset by negative semiconductor/core
+components in ex-post accounting. It is not causal or standalone gold
+alpha. The ten-year QQQ shortfall still comes from earlier losses
+outweighing later gains; no strategy, parameter or trial count changes.
+
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
 

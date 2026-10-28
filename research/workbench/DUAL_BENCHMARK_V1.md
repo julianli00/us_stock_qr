@@ -1609,6 +1609,76 @@ There are now fifteen completed SSD hypotheses, 60 funded paths,
 178 events; this is distinct from the original ledger's unchanged
 178 completed configurations. No sixteenth model is selected.
 
+### Saved two-segment information and holding assessment
+
+All 131 paired monthly targets and saved audits remain aligned.
+The split measure is higher on 64 dates and lower on 67, with no
+equal-measure dates. Stock targets increase on 45 dates, decrease on
+41 and are unchanged on 45 despite different measured variation.
+The original clipping bounds limit how much new information reaches
+the allocation. The average stock shift is **-0.0693 percentage
+points of total target capital**, ranging from -9.3692 to +7.7432
+percentage points. These are descriptive monthly targets, not
+orders, predictive effects or a uniform reduction in exposure.
+
+The saved source BIL/non-BIL budgets and relative stock composition
+are unchanged. Actual daily-average stock weights change by about
+-0.1471/-0.2826/-0.2283/-0.3419 percentage points across ten-year
+base/stress and five-year base/stress. Monthly target averages and
+formal-window daily holding averages use different clocks and
+coverage; they are not interchangeable risk measures.
+
+Ex-post linked accounting compares each actual account using its
+own prior NAV. The complete private reconciliation includes BIL:
+
+| Path | Paired net log-return difference | Gold component | SOXX component | Four-style core component | Actual-fee component |
+|---|---:|---:|---:|---:|---:|
+| 10y base | +0.008518 | +0.024844 | -0.015064 | -0.000201 | -0.000944 |
+| 10y stress | +0.005101 | +0.026992 | -0.016519 | -0.002091 | -0.003232 |
+| 5y base | +0.000715 | +0.011190 | -0.009697 | -0.002257 | +0.001623 |
+| 5y stress | +0.004164 | +0.015178 | -0.009712 | -0.002661 | +0.001455 |
+
+Gold is the largest positive holding component of this paired change,
+partly offset by semiconductor and core components. These log-accounting
+contributions are not CAGR percentage points, causal alpha, standalone
+asset returns or a fee-free/equal-wealth counterfactual.
+
+Both ten-year models' maximum drawdowns still run from 2020-02-19
+through 2020-03-20. Each decline contains seven model orders in both
+accounts. Base fees are USD13.56656 for the source and USD13.56603 for
+the new model; the improvement is not a reduction in order count or
+a switch to a different maximum-drawdown episode. The new base account
+has no 15% breach, unlike the source's 2020-03-19 breach.
+
+Both five-year maximum-drawdown episodes still run from 2026-01-29
+through 2026-03-30. Neither account trades or pays fees in those
+41-session declines. Maximum paired differences are below 1.12e-16
+in closing weights, 4.45e-16 in daily returns and 3.34e-16 in
+peak-normalized NAV. This explains the numerically unchanged maximum
+drawdown: it does not mean equal dollar wealth, identical full
+histories or independent validation.
+
+The actual ten-year accounts retain the same fixed chronological split:
+
+| Path | 2016-10-06--2021-10-05 QQQ log gap | 2021-10-06--2026-10-05 QQQ log gap | Full-window QQQ log gap |
+|---|---:|---:|---:|
+| 10y base | -0.533557 | +0.176949 | -0.356608 |
+| 10y stress | -0.546663 | +0.147267 | -0.399395 |
+
+The earlier shortfall outweighs the later gain. These are additive
+segments of the **same actual ten-year account**, not CAGRs, new
+fresh-capital accounts or a splice with the separate five-year result.
+Neither segment is an untouched test set.
+
+The assessment preserves all 85 direct references, frozen inputs,
+178 SSD journal events and the original ledger. Nine synthetic cases
+cover information identities, source-budget corruption and normalized
+episode comparisons; old diagnostic mains and account/target generators
+are not called. Private assessment SHA256:
+`42df21cdccccbd4fcbb367c4c1afd4a76ec87c18dac3c21f0641abe3bb12edd4`.
+Counts remain fifteen completed hypotheses, 60 paths, 193 combined
+completions and zero qualifiers. No new model or parameter is selected.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,
