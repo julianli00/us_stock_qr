@@ -308,6 +308,19 @@ path, rounding a failed gate, or claiming independent alpha.
 Current totals are eleven completed SSD hypotheses, 44 paths, 189
 combined completions and zero qualified champions.
 
+The saved full-window diagnosis locates the ten-year QQQ deficit in
+the earlier fixed segment, not in a recomputed account: ten-year-base
+net log gap is **-0.5434** over 2016-10-06--2021-10-05 and **+0.1783**
+over 2021-10-06--2026-10-05, adding to **-0.3651**. The later segment
+of that continuous account is not the independently funded five-year account.
+
+The first 15% breach was 2020-03-19. The already known February target
+had halved non-BIL capital to 49%; no pending request, new order or fee
+existed on the breach date. Actual prior-close stocks were about 23.70%,
+gold 21.15% and BIL 52.99%. The remaining failure cannot simply be
+described as an unexecuted exit or a fee-only event. The original strict
+gate remains failed; no target, account or parameter was rerun or changed.
+
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
 

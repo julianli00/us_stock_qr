@@ -1058,6 +1058,57 @@ hypotheses, 44 funded paths, 189 combined completed configurations,
 zero pending, zero technical failures and zero qualifiers. No twelfth
 model or post-outcome coefficient/window/bound adjustment has been selected.
 
+### Saved full-window failure diagnosis
+
+This diagnostic uses only saved account/weight/decision/target files and
+the original funded benchmark accounts. It partitions each actual ten-year
+account at the fixed 2021-10-06 boundary; no earlier-period return is
+inferred by dividing independently funded ten/five-year CAGRs.
+
+| Actual account | Segment | Sessions | Net return | QQQ net return | Net log gap to QQQ |
+|---|---|---:|---:|---:|---:|
+| 10y base | 2016-10-06--2021-10-05 | 1,258 | 81.5884% | 212.6646% | -0.5434 |
+| 10y base | 2021-10-06--2026-10-05 | 1,254 | 160.5584% | 118.0152% | +0.1783 |
+| 10y stress | 2016-10-06--2021-10-05 | 1,258 | 79.9793% | 211.6710% | -0.5491 |
+| 10y stress | 2021-10-06--2026-10-05 | 1,254 | 151.9359% | 118.0152% | +0.1446 |
+
+The two gaps add to -0.365126 in ten-year base and -0.404496 in stress.
+Later gains do not erase the earlier deficit. These are contiguous
+segments of the same existing account and benchmarks, not new fresh
+accounts, independently qualified subwindows or a replacement for the
+original full-window gates.
+
+Both ten-year maximum drawdowns run from the 2020-02-19 peak to the
+2020-03-20 trough. Base reaches 15.6588% and stress 14.6143%; the latter
+cannot replace the failed base path. The first base breach is 2020-03-19.
+At the previous close, the latest known monthly target was 2020-02-28:
+49% BIL, about 28.1052% stocks and 20.8948% gold. Actual prior-close
+holdings were about 52.9929% BIL, 23.6961% stocks and 21.1525% gold.
+There was no already issued pending request and no new model order or
+fee on the breach date.
+
+The base peak-to-trough NAV change is USD-2,284.92. Reconstructed adjusted
+model-unit mark-to-market contributions are SOXX -1,059.45, four-style
+core -983.06, gold -243.20 and BIL +14.35, less USD13.57 of actual fees
+from seven orders in the full drawdown span. Overnight gross PnL is
+-1,303.40 and intraday gross PnL -967.96. This is an accounting identity
+on the actual executed holdings, not a zero-cost portfolio or causal
+counterfactual exit.
+
+The five-year maximum-drawdown episodes are different: both peak on
+2026-01-29 and trough on 2026-03-30, with no model orders or fees in those
+spans. Base NAV change is -2,837.26, comprising gold -1,185.30,
+SOXX -1,132.12 and the style core -519.84. Stress is -2,744.52, comprising
+gold -1,157.82, SOXX -1,076.65 and core -510.05. Both remain below 15%;
+neither outcome creates a ten-year pass.
+
+The maximum accounting-bridge NAV/cash differences across all four
+paths are below USD1.4e-11. The initial USD10,000 peak, 56 direct input
+references, all frozen study inputs, the original ledger and 130-event
+journal are preserved. Private diagnostic SHA256:
+`dc766169532c91551d65d9f93b7caa5d7cbb898f6d995fcf7dac199355a99f5e`.
+No strategy, target, account or primary acceptance calculation was replayed.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,
