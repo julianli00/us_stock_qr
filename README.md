@@ -466,8 +466,37 @@ target proof. This uses already admitted adjusted model prices, not
 high-frequency observations, a range estimator or true variance-risk
 premium. At preregistration, fifteen SSD hypotheses are registered,
 fourteen completed and one pending; all 56 completed paths and 192
-combined completions remain, with zero qualifiers. No new candidate
-account has run; actual remote publication is still required.
+combined completions remained, with zero qualifiers. No new candidate
+account had run at that registration.
+
+Actual preregistration
+`cc4fc052bfaebace695f1f49668549d41b3c6fc1` preceded the
+[complete fifteenth result](research/workbench/evidence/split_session_variation_20261028_results_v1.json),
+finished at 2026-10-28 11:52:02 UTC. It is **rejected overall**:
+all four CAGR, Sharpe, drawdown and SPY gates pass, but both
+ten-year paths still fail QQQ. Both five-year paths pass all point gates.
+
+| Path | Net CAGR | Sharpe | Max DD | Annual two-sided turnover | Model orders | Costs USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 16.9172% | 1.1803 | 14.8656% | 4.1159 | 623 | 1,059.49 |
+| 10y stress | 16.3809% | 1.1374 | 13.8994% | 4.1174 | 630 | 2,327.60 |
+| 5y base | 20.9599% | 1.2426 | 12.5061% | 4.4246 | 324 | 492.23 |
+| 5y stress | 20.0204% | 1.1802 | 12.4731% | 4.4057 | 324 | 979.41 |
+
+Relative to the eleventh close-only study, CAGR and Sharpe increase
+slightly on all paths; ten-year drawdowns fall, while five-year
+drawdowns are numerically unchanged. Ten-year costs/turnover rise,
+whereas five-year costs/turnover fall. This is not a uniform
+implementation-efficiency gain.
+
+The broader retained reference also matters: the older observed-band
+model still has lower ten-year drawdowns and fewer orders/lower fees
+throughout, while the fourteenth model still has higher CAGR throughout.
+This result does not dominate every prior construction. Ten-year net
+CAGR remains about **4.2452/4.7429 percentage points below QQQ**.
+Counts are fifteen completed SSD hypotheses, 60 paths, 193 combined
+completions and zero qualified champions; historical point passes
+still do not establish independent forward performance.
 
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).

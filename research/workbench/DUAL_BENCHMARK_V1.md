@@ -1559,6 +1559,56 @@ completions, one pending hypothesis, 56 completed funded paths,
 preregistration publication must precede all new accounts; no old
 account, target preparation or diagnostic main is replayed.
 
+### Completed two-segment result
+
+Actual preregistration commit
+`cc4fc052bfaebace695f1f49668549d41b3c6fc1` was observed on the remote at
+2026-10-28 11:48:07 UTC. All four fresh accounts completed once at
+11:52:02.802874 UTC. The [full scalar result](evidence/split_session_variation_20261028_results_v1.json)
+is **rejected overall**: every CAGR, Sharpe, drawdown, matched-cost SPY
+and applicable stress-versus-base-SPY gate passes, but both ten-year
+QQQ comparisons fail. Both five-year paths pass their point gates.
+
+| Path | Net CAGR | Sharpe | Max DD | Annual two-sided turnover | Model orders | Costs USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 16.9172% | 1.1803 | 14.8656% | 4.1159 | 623 | 1,059.49 |
+| 10y stress | 16.3809% | 1.1374 | 13.8994% | 4.1174 | 630 | 2,327.60 |
+| 5y base | 20.9599% | 1.2426 | 12.5061% | 4.4246 | 324 | 492.23 |
+| 5y stress | 20.0204% | 1.1802 | 12.4731% | 4.4057 | 324 | 979.41 |
+
+The independent funded-account discrepancy is at most USD6.55e-11.
+All 121/121/61/61 monthly-plus-initial feedback decisions were checked;
+issued requests number 93/94/48/48. They are model requests and
+623/630/324/324 model tickets, not broker activity. All 2,512/1,254
+formal return sessions remain, without terminal liquidation or changed
+cash interest, risk-free series, fees, initial peak or fill delay.
+
+Saved comparisons use four retained references and all sixteen matching
+path pairs, not just the immediately preceding candidate:
+
+| Reference | Return/risk comparison | Implementation boundary |
+|---|---|---|
+| Eleventh close-only proxy | CAGR gains +0.0996/+0.0594/+0.0173/+0.0999 percentage points; Sharpe rises throughout; ten-year DD falls, five-year DD unchanged within numerical precision | Ten-year turnover, tickets and costs rise; five-year turnover, tickets and costs fall |
+| Twelfth symmetric proxy | CAGR/Sharpe rise throughout; ten-year DD is higher, five-year DD is lower | Costs are lower in three paths, but higher in ten-year stress |
+| Fourteenth relative-equity composition | CAGR is lower throughout; Sharpe rises and DD falls throughout | Turnover and costs fall throughout, but ten-year-stress ticket count rises |
+| Older observed-band dollar reference | CAGR/Sharpe rise throughout; ten-year DD is higher, five-year DD lower | All four ticket counts and dollar costs are higher; no dominance claim |
+
+Five-year DD differences against the eleventh are only about 1.11e-16
+in decimal units, not an economically meaningful improvement.
+That descriptive equality tolerance does not relax any acceptance
+threshold. The actual ten-year QQQ CAGR deficits remain 4.2452 and
+4.7429 percentage points. Neither a newly passing drawdown gate nor
+two five-year CAGRs above 20% can substitute for those missing gates.
+
+The comparisons read existing scalar files only; different information
+and construction choices are not an isolated fee experiment, causal
+alpha or independent forward validation. Private comparison SHA256:
+`ddd4fd6664908009b79322231fcc4d41fcf87b8fefd669ff70feeb2e2f83c811`.
+There are now fifteen completed SSD hypotheses, 60 funded paths,
+193 combined completions and zero qualifiers. The SSD journal has
+178 events; this is distinct from the original ledger's unchanged
+178 completed configurations. No sixteenth model is selected.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,
