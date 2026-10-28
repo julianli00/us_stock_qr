@@ -274,6 +274,21 @@ interpreting this comparison as a single-factor or fee-only causal effect.
 The [bounded reference review](research/workbench/DUAL_BENCHMARK_V1.md)
 reads saved results only; it does not rerun or rewrite old accounts.
 
+The [eleventh preregistration](research/workbench/evidence/daily_variance_disagreement_20261028_registration_v1.json)
+defines a separate **coarse daily variance-disagreement proxy**, not a
+true variance-risk-premium estimate or replication of intraday research.
+It tilts the original equity/gold odds by the ratio of native VIX squared
+to trailing 21-session SPY daily log-return variance. The stronger
+reference's original dollar/BIL scale, 30%--70% equity bounds, relative
+stock composition and **monthly** observed-weight execution are preserved.
+Daily-proxy predictability is an unproven hypothesis, not a borrowed
+literature result.
+
+Registration at 2026-10-28 08:38:21 UTC preceded the 131 new monthly
+targets; independent scalar/source-preservation and five prefix checks
+passed. No new account has run. Current counts are eleven registered,
+ten completed, one pending, 40 paths and 188 combined completions.
+
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
 

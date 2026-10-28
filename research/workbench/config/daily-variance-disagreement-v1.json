@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_daily_variance_disagreement_20261028_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "prior_completed_configurations": 188,
+  "prior_journal_sequence": 118,
+  "prior_journal_head_sha256": "dc097d8f64e361c68f1c6ac8d9cbc6d16129aaeff3423633faf3b8c78702badd",
+  "source_candidate": "semiconductor_option_proxy_dollar_observed_band025",
+  "source_registration": {
+    "path": "evidence/implied_execution_20261012_registration.json",
+    "sha256": "5a52f3bafc13358933c67af51d2625455ac0bc4a56e5a79a555ed1dca80222bb"
+  },
+  "source_targets": {
+    "path": "data/implied-risk-execution-20261012/semiconductor_option_proxy_dollar_observed_band025-desired-targets.csv",
+    "sha256": "bd1c3ba7b9a1e5d1ace69a8e4d17b67b6ba8aafeab32ec2271e112bfdc957261"
+  },
+  "monthly_options": {
+    "path": "data/gold-volatility-inputs-20261011/monthly-closes.csv",
+    "sha256": "f4afd690798d9eaa46da84674a9bf1ec47e54e84d82cd77cc41f666e14d74a79"
+  },
+  "realized_return_sessions": 21,
+  "annualization_sessions": 252,
+  "monthly_decisions": 131,
+  "equity_share_min": 0.30,
+  "equity_share_max": 0.70,
+  "growth_share_of_equity": 0.50,
+  "core_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "new_economic_factor_definitions": 0,
+  "cash_reserve": 0.02,
+  "actual_weight_trade_band": 0.025,
+  "candidate_count_in_this_study": 1,
+  "study_size_is_a_total_research_quota": false,
+  "candidates": [
+    {"id": "dollar_option_daily_variance_disagreement_v1", "construction": "daily_variance_disagreement_odds_tilt"}
+  ],
+  "methodology": {
+    "question": "Test one explicitly coarse daily option-versus-realized-risk disagreement input in the existing stable source architecture. This is not a measured true variance risk premium, a replication of intraday-variance research, an established return forecast or a new economic factor.",
+    "proxy": "At each original completed monthly decision, compute annualized SPY daily-close log-return squared mean over exactly21observed sessions,including that close:RV=252*mean(log(P_t/P_t-1)^2). Use the existing native VIX and GVZ monthly volatility quotes in decimal units. No dailyGVZfill or intraday-source claim.",
+    "allocation": "The original equity/gold odds are GVZ/VIX. Multiply these odds by VIX^2/RV,with unit coefficient fixed before targets. Equivalent equity fraction is GVZ*VIX/(GVZ*VIX+RV),clipped to the original30%-70%equity bounds. Equality RV=VIX^2 recovers the original budget. Missing/nonpositive RV or invalid quotes fail;never use a cap or cash fallback for invalid input.",
+    "preserved_source": "Read the exact saved guarded source targets rather than regenerate the old pipeline. Preserve each source monthly date,its total non-BIL allocation and its BIL amount,thereby preserving the original dollar half-risk decision. Preserve half-equity SOXX and equal remaining four styles. Only the split of already allocated non-BIL capital between equities and GLD changes.",
+    "execution": "Use the same original monthly observed-weight pure0.025band law as the older reference,not the newer daily-feedback allocator. Force original fresh-window initial deployment,keep independentUSD10000/fractional1x cash funding/2%target idle cash/USD1tickets/5bpnext-openbase/20bpextra-sessionstress,pendingrequests andfull10y/5ywindows. No oldaccount replay,leverage,syntheticcashreturn orfee change.",
+    "source_scope": "MonthlyGVZ/VIXcoverage iscomplete for the original131dates while four declared nonmonthly dailyGVZgaps remainunfilled. The existing H10dollar guard is inherited from saved targets,not retimed or reconstructed. Preserve source hashes,publication/vintage/age and blocked-source restrictions.",
+    "literature_limit": "The cited variance-risk-premium literature reports high-frequencyintraday realizedvariance andquarterlymarket-return evidence. A dailySPYclose proxy andmonthlyETFallocation are materiallydifferent;the cited empirical claims are not imported. This new proxy has its own falsifiable historical test and may have no useful predictive content.",
+    "selection": "One fixed hypothesis after188completed exposed configurations. No coefficient/window/bound/halfscale/source-selection grid. Compare allfour funded results against both matched-cost benchmarks and the existing stronger reference;no metricsplicing orpromotionfrompartialpasses.",
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

@@ -963,6 +963,60 @@ All three scalar panels, directional differences and unchanged old
 benchmark comparisons are retained there. Counts remain ten completed
 SSD hypotheses, 40 paths, 188 combined completions and zero qualifiers.
 
+## Explicit daily variance-disagreement proxy
+
+The [new registration](evidence/daily_variance_disagreement_20261028_registration_v1.json)
+fixes `dollar_option_daily_variance_disagreement_v1`. Actual registration
+at 2026-10-28 08:38:21.714785 UTC precedes target proof at
+08:38:22.737987 UTC and packet creation at 08:38:22.739559 UTC.
+No candidate account or realized return metric exists at this fence.
+
+The [Federal Reserve working-paper abstract](https://www.federalreserve.gov/pubs/feds/2007/200711/200711abs.html)
+for the variance-risk-premium research explicitly ties its empirical
+quarterly-return result to high-frequency intraday realized variance,
+not daily observations. The
+[published paper identity](https://doi.org/10.1093/rfs/hhp008)
+does not validate a daily SPY proxy or this ETF allocation. The source
+review therefore rejected a **replication claim**, not every possible
+separately specified daily-proxy experiment.
+
+This single exploratory rule has its own hypothesis. At each original
+month end, calculate annualized mean squared SPY daily log returns over
+21 actual sessions, including that close. Multiply the source equity/gold
+odds, GVZ/VIX, by VIX-squared divided by that backward-looking variance.
+Equivalently, the new equity share is GVZ-times-VIX divided by
+GVZ-times-VIX plus realized variance, with all volatility units converted
+consistently and the original 30%--70% bounds retained. The unit tilt
+coefficient and one-month window are fixed before targets and outcomes.
+Zero/invalid variance or missing quotes stops the study, not a cash fallback.
+
+Read the source's existing guarded target matrix instead of regenerating
+the old pipeline. Preserve its exact 131 monthly dates, total non-BIL
+allocation, BIL amount, original dollar half-risk decisions and relative
+SOXX/four-style proportions. Only the division of that unchanged non-BIL
+budget between equities and GLD changes. The four known nonmonthly GVZ
+gaps remain unfilled; no intraday or full-daily source readiness is claimed.
+
+Execution uses the original source's **monthly** observed-weight pure
+0.025 band, not the newer daily-feedback allocator. Initial funding,
+USD10,000, USD1 tickets, 5/20bp costs, one/two-session delays, fractional
+1x cash funding, RF, initial drawdown peak and four complete windows remain.
+Independent verification will check actual monthly holdings gaps,
+issued targets, pending dates and funded-account parity.
+
+The target proof retains all four genuine registered factor exposures
+in both formal windows, original BIL/non-BIL scale and monthly dates.
+The independent scalar target difference is at most
+1.5432100042289676e-14; five prefix checks pass. No old strategy account
+or historical target generator was rerun.
+
+The proxy may have no predictive value and is not a true variance risk
+premium, sector-specific implied variance, forecast guarantee or paper
+replication. All joint net-CAGR/Sharpe/drawdown/SPY/QQQ gates and wider
+reference comparisons remain. Counts at preregistration are eleven
+registered, ten completed, one pending, 40 paths and 188 combined
+completed configurations.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,

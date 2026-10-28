@@ -18,6 +18,7 @@ const titles = {
   equity_month_end_six_family_core_v1: "月末权益：六经济家族因子半仓",
   benchmark_opportunity_joint_tail_v1: "联合尾部风险：基准动量机会约束",
   benchmark_tail_budget_growth_v1: "基准尾部预算：机会优先",
+  dollar_option_daily_variance_disagreement_v1: "月末股金：日频波动差异代理",
   semiconductor_option_proxy_dollar_observed_band025: "隐含波动预算 + 美元防御 + 持仓偏差带",
   semiconductor_option_proxy_observed_band025: "隐含波动预算 + 持仓偏差带",
   macro_real_yield_factor_tilt: "实际利率因子倾斜",
