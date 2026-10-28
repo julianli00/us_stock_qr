@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-28",
-  "phase": "saved_joint_tail_return_diagnosis_complete",
-  "active_research_focus": "next_economic_question_after_saved_standby_return_and_fee_diagnosis",
+  "phase": "benchmark_tail_budget_registered_pending_accounts",
+  "active_research_focus": "growth_first_with_causal_benchmark_tail_risk_budget",
   "research_dashboard": {
     "server": "src/us_quant/research_dashboard.py",
     "frontend": "web/research/index.html",
@@ -23,10 +23,10 @@
       "sha256": "ccff66c847db6519132775a177268c03d7ec36491076380be01d01f41589287d"
     },
     "aggregate_counts": {
-      "registered": 9,
+      "registered": 10,
       "completed": 9,
       "reviews": 9,
-      "pending": 0,
+      "pending": 1,
       "technical_failures": 0,
       "qualified": 0,
       "account_paths": 36,
@@ -72,6 +72,14 @@
         "results": "research/workbench/evidence/joint_tail_construction_20261028_results_v1.json",
         "results_sha256": "9a0e3da3403c66d7722ea48521adc8366d262d85a264d276d67d0be731a0ce4f",
         "preregistration_commit": "4fc9ebe220203cf86e6b48ff963d84a6572a3631"
+      },
+      {
+        "study_id": "ssd_benchmark_tail_budget_20261028_v1",
+        "registration": "research/workbench/evidence/benchmark_tail_budget_20261028_registration_v1.json",
+        "registration_sha256": "f0253ff0220b29c925ea6d17f73e0894743f16550da6488eadd0cf21e6c7f575",
+        "results": null,
+        "results_sha256": null,
+        "preregistration_commit": null
       }
     ],
     "status": "first_pair_complete_both_rejected",
@@ -696,13 +704,13 @@
   ],
   "next": [
     "Preserve all nine rejected SSD hypotheses across six cohorts and36funded paths, completed diagnoses and original six-slot history. Raw documents, prices, targets and daily accounts remain private; do not replay them.",
-    "Use the completed saved-return diagnosis: substantial actual BIL exposure also occurs in optimized intervals, all optimized-label total benchmark log gaps are negative, and base-case fixed fees dominate smaller model tickets. These are descriptive partitions, not causal or fee-free counterfactuals. Select another economic question without a failed hurdle/core/tail grid or splicing return/drawdown metrics.",
+    "Publish the actual tenth growth-first benchmark-tail-budget registration before four funded accounts. Keep the prior252window/5%tail/core/funding/execution settings; change the economic priority and define risk allowance from current observable SPY/QQQ/BIL scenarios, not a fitted multiplier or old-hurdle grid. Observed risk/opportunity do not guarantee future joint gates.",
     "Continue economically motivated, preregistered independent small batches without ordinary per-batch approval or a configuration-count ceiling until2026-10-31T15:59Z. Use one computation; at cutoff preserve partial work, clear only the SSD session timer and confirm absence.",
     "Keep old source refusals, VIG/SDY terminal429 and prospective/PIT gates. The independent market-only IBKR adapter is proved, but the one actual probe stopped on2157 before historical requests;0history rows/admissions,no automatic retry or inferred entitlement denial. Default readonly account synchronization remains prohibited."
   ],
   "next_zh": [
     "保留SSD六组共9项已拒绝假设、36条资金约束路径、已完成诊断与历史六配置记录，不重复运行；原始文档、行情、目标矩阵和逐日账户保持私有。",
-    "使用已完成的已存收益诊断：有优化解区间也大量持有BIL，各路径优化标签下累计基准对数收益差仍为负，基础费用以小额模型订单的固定佣金为主。这些是描述性分组，不是因果或零费用反事实；再选经济问题，不扫失败的机会门槛/核心约束/尾部参数，也不拼接收益与回撤指标。",
+    "先真实发布第10项机会优先/基准尾部风险预算登记，再算4资金路径。保留252窗口/5%尾部/核心/资金/执行设定；改变经济目标优先级，用当时可观测SPY/QQQ/BIL情景定义风险预算，不拟合倍率或扫描旧机会门槛。已观测风险与机会不保证未来联合达标。",
     "持续开展有经济理由、事前冻结的独立小批次，无普通逐批确认或配置次数上限，截止2026-10-31T15:59Z；单计算job，届时保存未完状态、只清除SSD会话timer并确认不存在。",
     "原拒绝来源、VIG/SDY终止429和前瞻/PIT门保持。独立IBKR market-only适配器已证明，但唯一真实探针在历史请求前因2157停止；历史行/准入0，不自动重试或推断订阅拒绝，仍禁止默认readonly账户同步。"
   ],

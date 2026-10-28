@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_benchmark_tail_budget_20261028_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "prior_completed_configurations": 187,
+  "prior_new_lane_registered_candidates": 9,
+  "prior_new_lane_completed_configurations": 9,
+  "prior_journal_sequence": 106,
+  "prior_journal_head_sha256": "ccb22d6dfcfa4f6c7d24fec3d6f2052eb80c06df9c041ad7d581bd48227a8f84",
+  "lookback_sessions": 252,
+  "tail_probability": 0.05,
+  "sleeves": ["factor_core", "SOXX", "GLD", "IEF", "TLT", "BIL"],
+  "core_symbols": ["MTUM", "VLUE", "QUAL", "USMV", "IJR", "PKW"],
+  "factor_ids": [
+    "price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure",
+    "size_exposure_ijr_v1", "net_buyback_exposure_pkw_v1"
+  ],
+  "minimum_economic_factor_families": 3,
+  "used_economic_factor_families": 6,
+  "new_economic_factor_definitions": 0,
+  "core_at_least_SOXX": true,
+  "cash_reserve": 0.02,
+  "weight_band": 0.025,
+  "opportunity_optimum_slack": 1e-10,
+  "solver_tolerance": 1e-9,
+  "certificate_tolerance": 1e-7,
+  "weight_roundoff_tolerance": 1e-10,
+  "decision_feasibility_tolerance": 1e-8,
+  "risk_budget_multiplier": 1.0,
+  "candidate_count_in_this_study": 1,
+  "study_size_is_a_total_research_quota": false,
+  "candidates": [
+    {"id": "benchmark_tail_budget_growth_v1", "construction": "growth_first_benchmark_tail_budget"}
+  ],
+  "methodology": {
+    "question": "The completed risk-first construction held substantial BIL even in optimized intervals and its observed opportunity constraint did not deliver future benchmark gains. Test the reciprocal economic priority: seek the greatest same historical opportunity while limiting joint tail loss to a pre-observed benchmark risk budget. This is one fixed priority/risk-anchor hypothesis, not a risk-multiplier or old-hurdle rescue grid.",
+    "causal_inputs": "Reuse only admitted fourteen-asset prices. At genuine completed exchange month ends use252known daily adjusted-close returns and252-session fund total returns relative to actual BIL. The equal-six-family core is a linear exposure in these scenarios, not a synthetic traded price history. No full-sample diagnostic risk shares, old strategy targets or future returns enter allocations.",
+    "risk_anchor": "Compute empirical5%tail loss separately for SPY,QQQ and BIL from the same252daily observations. Budget is the smaller SPY/QQQ tail loss, floored at actual BIL tail loss to retain a feasible tradable standby. No scaling coefficient is fitted. These are gross price-risk observations, not the preserved funded benchmark-account outcomes used for qualification.",
+    "primary": "Maximize the observed cash-relative opportunity score over nonnegative sleeve weights summing toone, with factor_core>=SOXX and empirical joint portfolio tail loss at most the benchmark-defined budget. The ninth model's benchmark momentum hurdle is not lowered or scanned; this different construction defines risk tolerance from observed reference-asset losses and makes opportunity the objective.",
+    "secondary": "Among primary opportunity optima within the frozen numerical slack, minimize joint portfolio expected shortfall. Retain both primal/dual certificates and independently evaluate exact fractional-tail losses and observed score. Small declared numerical cleanup must preserve the risk/score/simplex conditions.",
+    "standby": "When the analytical maximum opportunity is nonpositive, use BIL explicitly without a solver. If the primary certified risk-constrained optimum is nonpositive, also use BIL with the certificate and an explicit no-positive-risk-feasible-opportunity reason. Data errors, solver errors, inconsistent infeasibility or failed certificates always stop and never become cash.",
+    "scope": "Keep the same252window,5%tail,core roster/core>=SOXX,98%investment,2%idle cash and0.025observed-holding band to avoid simultaneous parameter searches. SOXX is not a fixed half-portfolio or a permanent user allocation requirement. Total equity and defense are chosen jointly. Each formal horizon must actually use the six registered factor ETFs somewhere.",
+    "execution": "Original freshUSD10000,RF,initialcapitaldrawdownpeak,fractional cash funding,USD1tickets,5bpnext-openbase/20bpextra-sessionstress,one pending request without overwrite/cancellation and no terminal liquidation. All four original windows/scenarios and joint Sharpe>1,netCAGR>12%,DD<=15%,SPY/QQQ and extra stress-vs-base-SPY gates remain unchanged.",
+    "prior_art": "Earlier covariance-only budgets, maximum-diversification portfolios, marginal downside balance and the ninth risk-first LP are recorded predecessors. This new benchmark-risk anchor is not a claim to a new academic risk measure or independent return factor. Source preservation and all187exposed completions remain disclosed.",
+    "limitations": "Neither observed momentum nor empirical tail loss predicts future returns or guarantees drawdown. Benchmark tail risk may itself be too large for15%drawdown, correlations and regimes may change, and higher opportunity participation may worsen loss or costs. No numerical risk-budget,tail,lookback,core-bound or priority sweep follows this fixed outcome.",
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

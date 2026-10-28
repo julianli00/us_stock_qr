@@ -227,7 +227,23 @@ costs and 75.56% of five-year-base costs, with mean modeled ticket notionals
 of USD1,015.93 and USD647.06. This does not establish a zero-cost return or
 show that fees alone explain the shortfall. Initial/final partial decision
 periods are excluded from complete-period comparison counts. No optimizer,
-target, account, primary metric or investment gate was rerun.
+target, account, primary metric or investment gate was rerun in that diagnosis.
+
+The [tenth preregistration](research/workbench/evidence/benchmark_tail_budget_20261028_registration_v1.json)
+fixes one reciprocal construction: maximize the same observed opportunity
+scores under the lower observed SPY/QQQ tail-risk allowance, floored
+at actual BIL tail risk. The secondary objective minimizes tail loss among
+opportunity optima. No risk multiplier is fitted; the original 252-session
+window, 5% tail, core constraint and funded execution remain unchanged.
+It is not a forecast, a drawdown guarantee, or a sweep of the failed
+opportunity hurdle.
+
+Actual registration at 2026-10-28 05:46:36 UTC precedes target preparation.
+All 122 monthly plans are independently certified: 112 optimized and ten
+explicit nonpositive-opportunity BIL plans, with five prefix checks and
+full-window factor coverage. No new funded account has run. Current counts
+are ten registrations, nine completed, one pending, 36 paths and 187
+combined completions, with no qualified champion.
 
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).

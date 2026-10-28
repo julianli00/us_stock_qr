@@ -839,6 +839,51 @@ Counts remain nine completed hypotheses, 36 paths, 187 combined
 completions and zero qualifiers. No tenth model or new weights/window
 has been selected.
 
+## Growth-first construction with a benchmark-defined tail budget
+
+One fixed reciprocal question is now registered:
+`benchmark_tail_budget_growth_v1`. The
+[actual preregistration packet](evidence/benchmark_tail_budget_20261028_registration_v1.json)
+records registration at 2026-10-28 05:46:36.615636 UTC, target proof at
+05:46:54.638470 UTC and packet creation at 05:46:54.639837 UTC.
+No candidate account or realized performance metric exists at this fence.
+
+The preceding diagnosis found substantial BIL exposure even in optimized
+intervals of the risk-first rule. This version reverses economic priority:
+maximize the same observed 252-session cash-relative opportunity score,
+subject to a risk allowance derived from the smaller empirical 5% daily
+tail loss of actual SPY/QQQ, floored at actual BIL tail loss. Then minimize
+joint portfolio tail loss among primary opportunity optima.
+
+The allowance uses only the completed decision-date observation window.
+It is not the full-window drawdown of a benchmark and does not fit a risk
+multiplier to previous outcomes. The unchanged core/SOXX/gold/IEF/TLT/BIL
+scenario set, six actual core funds, 252-session lookback, 5% tail,
+core-at-least-SOXX constraint, 98% invested target and execution law remain.
+This is one priority/risk-anchor hypothesis, not a sequence of numerical
+hurdle, tail, core or risk-budget changes to rescue the ninth result.
+
+BIL is explicitly used when no positive observed opportunity exists, or
+when a certified risk-feasible opportunity maximum is nonpositive. Its
+own observed tail risk remains in the budget. Missing inputs, solver
+failure or invalid certificates stop the study instead of becoming a
+cash fallback. No sampled risk statistic guarantees the user's 15%
+drawdown ceiling or future net benchmark outperformance.
+
+The registered proof covers 122 completed monthly plans: 112 optimized
+and ten nonpositive-opportunity standby plans. Both optimization stages'
+primal/dual certificates and independently sorted fractional-tail
+calculations pass. Independent sleeve/benchmark return differences are
+zero and score differences at most 1.1102230246251565e-16. Five prefix
+checks, both full-window initial anchors and actual positive participation
+of all six registered core funds pass.
+
+The original four funded paths, net Sharpe>1, CAGR>12%, drawdown<=15%,
+matched-cost SPY/QQQ and extra stress-vs-base-SPY gates remain unchanged.
+Past opportunity/risk observations are not independent validation.
+Current totals are ten SSD registrations, nine completed, one pending,
+36 account paths and 187 combined completed configurations.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,
