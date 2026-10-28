@@ -263,6 +263,17 @@ best metrics or tune a risk-budget multiplier after seeing this result.
 Current totals are ten completed SSD hypotheses, 40 paths and 188 combined
 completions, with zero pending, zero technical failures and no qualifier.
 
+Improvement relative to the ninth construction is **not an improvement of
+the broader retained research frontier**. The existing
+`semiconductor_option_proxy_dollar_observed_band025` reference has higher
+CAGR and Sharpe, lower drawdown, fewer modeled orders and lower total fees
+than the tenth construction on all four comparable funded paths. It still
+fails ten-year SPY and QQQ, so remains rejected and is not promoted.
+Different construction, information sets and decision calendars prevent
+interpreting this comparison as a single-factor or fee-only causal effect.
+The [bounded reference review](research/workbench/DUAL_BENCHMARK_V1.md)
+reads saved results only; it does not rerun or rewrite old accounts.
+
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
 

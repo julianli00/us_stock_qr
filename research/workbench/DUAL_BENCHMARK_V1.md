@@ -921,6 +921,48 @@ failures and zero qualifiers. The 118-event journal, original ledger,
 source evidence, benchmark accounts and prospective identities are
 preserved. No eleventh model has been selected.
 
+## Broader retained reference, not just the most recent weaker candidate
+
+The saved scalar review compares the ninth and tenth constructions with
+`semiconductor_option_proxy_dollar_observed_band025` from the existing
+[implied-risk execution result](evidence/implied_execution_20261012_results.json).
+The original policy and registered asset-leverage metadata confirm the
+same full ten/five-year windows, fresh USD10,000, 5/20bp costs, one/two-session
+execution delays, USD1 modeled tickets and 1x actual assets. No old account
+or primary metric is recalculated.
+
+| Existing dollar-guarded reference | Net CAGR | Sharpe | Max DD | Model orders | Costs USD |
+|---|---:|---:|---:|---:|---:|
+| 10y base | 14.722859% | 1.095380 | 13.572134% | 436 | 756.07 |
+| 10y stress | 14.464138% | 1.073957 | 13.413710% | 442 | 1,710.97 |
+| 5y base | 19.118758% | 1.168490 | 13.591322% | 264 | 407.13 |
+| 5y stress | 18.577520% | 1.132536 | 13.433199% | 264 | 828.38 |
+
+This reference is better than the tenth candidate on all five saved
+dimensions in all four paths: higher CAGR/Sharpe and lower drawdown,
+order count and total modeled cost. That counterexample is sufficient
+to reject a claim of broader frontier improvement by the tenth study;
+the three-candidate review is not an exhaustive frontier search.
+
+The reference still falls below both SPY and QQQ in the ten-year window.
+Its original rejected status and source evidence remain unchanged;
+existing prospective identities are untouched. Better saved scalar results do not create a
+new qualification or independent forward validation.
+
+Same execution delays do not mean identical decision calendars or
+information sets. The reference uses its original option/USD inputs and
+monthly observed-weight execution; the new constructions use price-based
+joint-tail optimization and their own feedback rule. This is not a
+same-model causal ablation, a reason to force future work back into the
+old architecture, or permission to scan failed parameters. Unavailable
+turnover fields are not invented or substituted across definitions.
+
+Private saved-review SHA256:
+`ed0d1c9e146bb02ee6103147490e475872bead6869860e1598af6530192039cf`.
+All three scalar panels, directional differences and unchanged old
+benchmark comparisons are retained there. Counts remain ten completed
+SSD hypotheses, 40 paths, 188 combined completions and zero qualifiers.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,
