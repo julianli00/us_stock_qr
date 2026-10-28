@@ -396,6 +396,19 @@ rise despite lower notional turnover. This is not a cost optimum or
 net-performance improvement. Counts are thirteen completed SSD hypotheses,
 52 paths, 191 combined completions and zero qualified champions.
 
+The saved execution assessment separates fee components rather than
+assuming every cost reduction improves returns. Ten-year fixed-ticket
+charges rise by **USD31/51**, while proportional charges fall by
+**USD76.75/288.98**. Average modeled ticket size falls from about
+USD1,404/1,402 to USD1,100/1,072.
+
+An exact ex-post log-linked accounting decomposition finds the largest
+negative holding contribution in SOXX on all four paths. Ten-year-base
+ending NAV is USD2,115.55 below the source despite USD45.75 less total
+fees. Its fee contribution, normalized to each actual account's prior
+NAV and timing, is slightly negative rather than positive. This is not
+a causal or zero-fee counterfactual, and no account was replayed.
+
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
 

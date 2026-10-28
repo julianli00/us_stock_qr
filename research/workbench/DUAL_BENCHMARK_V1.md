@@ -1326,6 +1326,55 @@ failures and zero qualifiers, with 154 journal events. No fourteenth
 model, bandwidth/norm scan, fee-free counterfactual or partial-pass
 promotion has been selected.
 
+### Saved execution accounting assessment
+
+The assessment reads the actual source and projection account/holding
+files and reconciles each to the unchanged price and fee records.
+It does not replay either strategy or create a zero-fee account.
+
+| Path | Total fee change USD | Fixed-ticket change USD | Proportional-cost change USD | Source mean ticket USD | Projection mean ticket USD |
+|---|---:|---:|---:|---:|---:|
+| 10y base | -45.75 | +31.00 | -76.75 | 1,403.83 | 1,099.79 |
+| 10y stress | -237.98 | +51.00 | -288.98 | 1,401.77 | 1,071.52 |
+| 5y base | -39.28 | -12.00 | -27.28 | 1,001.65 | 871.52 |
+| 5y stress | -105.55 | -5.00 | -100.55 | 994.19 | 855.64 |
+
+Ten-year-base fixed commissions represent 64.5204% of projection fees,
+versus 58.7573% for the source. Lower notional turnover did not lower
+the number of ten-year tickets. These are modeled orders and original
+USD1 charges, not brokerage activity or a revised fee schedule.
+
+For return attribution, divide each actual asset mark-to-market and
+fee by that account's own previous NAV. Their daily differences sum
+to the observed daily return difference. An ex-post logarithmic linking
+coefficient then makes the components sum exactly to the actual paired
+log-return/ending-wealth difference.
+
+| Path | Actual net log-return difference | SOXX linked contribution | Gold linked contribution | Actual-fee linked contribution | Ending NAV difference USD |
+|---|---:|---:|---:|---:|---:|
+| 10y base | -0.045743 | -0.036397 | -0.009921 | -0.000163 | -2,115.55 |
+| 10y stress | -0.033518 | -0.038616 | -0.007722 | +0.008256 | -1,494.61 |
+| 5y base | -0.025615 | -0.023491 | -0.004936 | +0.002042 | -654.30 |
+| 5y stress | -0.012183 | -0.020336 | -0.001237 | +0.006618 | -300.28 |
+
+The complete private decomposition also includes the four-style core
+and BIL. SOXX is the largest negative linked holding component on each
+path. Dollar fee totals alone do not determine the sign of the fee-return
+effect: ten-year base pays fewer total dollars but has a slightly negative
+linked fee contribution because actual timing and prior NAV differ.
+Three paths have positive linked fee contributions, insufficient to
+offset the adverse holding contributions.
+
+Linked values are log-return accounting contributions, **not CAGR
+percentage-point changes**, asset standalone returns, causal alpha or
+an investable fee-free counterfactual. The paired daily arithmetic
+identity error is below 7.1e-16 and the linked sum error below 5e-15.
+All 52 direct references, frozen source/study inputs, original ledger
+and 154-event journal remain unchanged. Private assessment SHA256:
+`eb1d84ddacdb934c41adfa0758a5af23ea39cd42933a1432f9378225aff47ad4`.
+Counts remain thirteen completed hypotheses, 52 paths, 191 combined
+completions and zero qualifiers. No new parameter or model is selected.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,
