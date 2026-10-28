@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 19 SSD registrations, 17 completed/rejected, one preparation failure and one pending precision revision; 68 funded paths | Separate net-CAGR/SPY/QQQ criteria; zero qualifiers, no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 19 SSD registrations, 18 completed/rejected and one retained preparation failure; 72 funded paths | Separate net-CAGR/SPY/QQQ criteria; zero qualifiers, no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -733,10 +733,35 @@ monthly decisions passed the original numerical checks, with zero
 independent target difference, five prefix checks and all four style
 funds present at both full formal windows. This is target preparation,
 not financial-performance evidence or a future drawdown guarantee.
-Counts are now **19 registered, 17 completed/reviewed, one retained
+At that target-proof snapshot, counts were **19 registered, 17 completed/reviewed, one retained
 technical failure and one pending version**, with 68 funded paths
-and 195 combined completions unchanged. No v2 account has run;
-actual remote publication remains mandatory before the four accounts.
+and 195 combined completions unchanged. No v2 account had run;
+actual remote publication was still required before the four accounts.
+
+Actual preregistration commit
+`005afed40e43fae63a581a4aa04f365c6b06136e` and the recorded remote
+fence at **19:47:57 UTC** preceded all four accounts, which finished
+at **19:52:55 UTC**. The [complete precision-v2 result](research/workbench/evidence/ordered_path_growth_20261028_results_v2.json)
+is **rejected**: every Sharpe and drawdown gate fails, both ten-year
+QQQ comparisons fail, and ten-year stress also fails matched-cost
+SPY and the original extra base-cost SPY comparison.
+
+| Path | Net CAGR | Net excess Sharpe | Maximum DD | Annual two-sided turnover | Model orders | Costs USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 15.8017% | 0.766248 | 26.4135% | 3.6472x | 259 | 587.51 |
+| 10y stress | 15.0863% | 0.730357 | 28.3572% | 3.6344x | 253 | 1,499.90 |
+| 5y base | 19.8129% | 0.812902 | 26.6640% | 4.7162x | 163 | 300.27 |
+| 5y stress | 19.0616% | 0.780295 | 28.3785% | 4.7162x | 162 | 693.53 |
+
+Every CAGR exceeds 12%, and both five-year paths beat SPY and QQQ,
+but no path passes jointly. Against the retained older low-drawdown
+reference, CAGR rises only 0.48--1.08 percentage points while Sharpe
+falls on every path and drawdown rises 12.84--14.95 points. This
+is not an equal-risk gain or causal alpha. The numerical repair
+enabled preparation; it did not validate the economic construction.
+Current counts are **19 registered, 18 completed/reviewed, one
+retained technical failure, zero pending, 72 funded paths,
+196 combined completions and zero qualifiers**.
 
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).

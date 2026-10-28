@@ -2400,12 +2400,77 @@ drawdown is `0.15000000000000047`, within the existing numerical
 feasibility check, not a relaxation of the separate strict net-account
 gate or evidence about future drawdown.
 
-There are **19 registered configurations, 17 completed/reviewed,
+At that target-proof snapshot there were **19 registered configurations, 17 completed/reviewed,
 one retained technical failure and one pending version**.
 The 68 funded paths, 195 combined completions and zero qualifiers
-are unchanged. No v2 candidate account or financial metric has
+were unchanged. No v2 candidate account or financial metric had
 been computed. Actual remote publication of this packet and its
-bound implementation is required before all four original accounts.
+bound implementation was still required before all four original accounts.
+
+### Actual four-path rejection
+
+Preregistration commit
+`005afed40e43fae63a581a4aa04f365c6b06136e` was actually published,
+and publication event **207** recorded the complete remote fence at
+**2026-10-28T19:47:57.021652Z**, before any v2 account. The older
+`100a07e` commit was separately rejected by the read-only publication
+verifier without starting an account or appending a publication event.
+
+All four original accounts ran once and completed at
+**19:52:55.561881Z**. The [complete scalar result](evidence/ordered_path_growth_20261028_results_v2.json)
+retains every metric, gate and execution cost:
+
+| Path | Net CAGR | Net excess Sharpe | Maximum DD | Annual two-sided turnover | Model orders | Costs USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 15.801709% | 0.766248 | 26.413520% | 3.647176x | 259 | 587.51 |
+| 10y stress | 15.086339% | 0.730357 | 28.357180% | 3.634431x | 253 | 1,499.90 |
+| 5y base | 19.812861% | 0.812902 | 26.663991% | 4.716192x | 163 | 300.27 |
+| 5y stress | 19.061627% | 0.780295 | 28.378550% | 4.716220x | 162 | 693.53 |
+
+**Every Sharpe and drawdown gate fails.** All CAGR gates pass, but
+both ten-year QQQ gates fail. Ten-year base beats SPY; ten-year
+stress fails both matched-cost SPY and the retained extra comparison
+with base-cost SPY. Both five-year paths beat SPY and QQQ without
+passing jointly. The whole configuration is rejected; neither the
+passing growth metrics nor training feasibility can substitute for
+the failed risk and benchmark conditions.
+
+The unchanged monthly feedback checker covers 121/121/61/61
+decision checks, including initial deployment,
+with 39/38/24/24 issued requests. These request counts differ from
+individual model order tickets. Funded accounting and independent
+`bt` differ by at most `1.2725649867206812e-8` USD across all four
+accounts. Maximum gross exposure remains below 0.989 and all cash
+balances stay positive. No broker account or order was involved.
+
+A saved-only comparison retains
+`semiconductor_option_proxy_dollar_observed_band025`, the older
+low-drawdown reference, rather than treating a recent weak model
+as the whole research frontier. Its accounting is `funded-v2`;
+all four window dates, session counts and matched-cost SPY
+benchmarks agree. The comparison creates no old account or target:
+
+| Path | Reference CAGR | Precision-v2 CAGR | Reference Sharpe | Precision-v2 Sharpe | Reference DD | Precision-v2 DD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 14.7229% | 15.8017% | 1.095380 | 0.766248 | 13.5721% | 26.4135% |
+| 10y stress | 14.4641% | 15.0863% | 1.073957 | 0.730357 | 13.4137% | 28.3572% |
+| 5y base | 19.1188% | 19.8129% | 1.168490 | 0.812902 | 13.5913% | 26.6640% |
+| 5y stress | 18.5775% | 19.0616% | 1.132536 | 0.780295 | 13.4332% | 28.3785% |
+
+The modest growth increase comes with worse Sharpe and drawdown
+on every path; it is not an equal-risk gain or causal attribution.
+The new CAGR cannot be combined with the old reference's lower
+drawdown to manufacture a passing portfolio.
+
+The v1 technical failure remains in the 216-event journal, while
+precision v2 contributes one actual completed evaluation, not a
+new independent economic hypothesis. Counts are now **19 registered,
+18 completed/reviewed, one retained technical failure, zero pending,
+72 funded paths, 196 combined completions and zero qualifiers**.
+The original ledger and one-day forward models are unchanged.
+The next saved-risk diagnosis must not rerun LP targets, funded
+accounts or primary metrics, or tune a risk/floor/window/band
+parameter to rescue this rejected result.
 
 ## Independent IBKR price-history source boundary
 
