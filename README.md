@@ -321,6 +321,19 @@ gold 21.15% and BIL 52.99%. The remaining failure cannot simply be
 described as an unexecuted exit or a fee-only event. The original strict
 gate remains failed; no target, account or parameter was rerun or changed.
 
+The [twelfth preregistration](research/workbench/evidence/symmetric_variance_disagreement_20261028_registration_v1.json)
+fixes one symmetric information-set extension: include GLD's realized
+daily variance as well as SPY's, while retaining the same 21-session
+window, source dollar/BIL scale, bounds, factor proportions and monthly
+execution. It does not scan coefficients or claim true variance risk
+premia. The original and one-sided laws are recovered in the specified
+unit-disagreement cases.
+
+Actual registration at 2026-10-28 09:34:41 UTC preceded 131 independently
+checked monthly targets and five prefix checks. No new account has run:
+twelve registrations, eleven completed, one pending, 44 paths and 189
+combined completions.
+
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
 

@@ -1109,6 +1109,45 @@ journal are preserved. Private diagnostic SHA256:
 `dc766169532c91551d65d9f93b7caa5d7cbb898f6d995fcf7dac199355a99f5e`.
 No strategy, target, account or primary acceptance calculation was replayed.
 
+## Symmetric stock/gold daily-disagreement information
+
+The [twelfth registration](evidence/symmetric_variance_disagreement_20261028_registration_v1.json)
+fixes `dollar_option_symmetric_variance_disagreement_v1`. Registration
+at 2026-10-28 09:34:41.127535 UTC precedes proof at 09:34:42.277511 UTC
+and packet creation at 09:34:42.278998 UTC. No account outcome exists
+at this fence.
+
+The eleventh rule used equity-side daily disagreement while treating gold
+only through its implied quote. This extension adds GLD's backward
+realized daily variance using the **same** 21-session window. Multiply
+the original equity/gold odds by the equity implied/realized variance
+ratio divided by the gold implied/realized ratio. The equivalent equity
+fraction is VIX-times-RV_GLD divided by VIX-times-RV_GLD plus
+GVZ-times-RV_SPY, in consistent decimal units and the original bounds.
+
+When both disagreement ratios equal one, the original option allocation
+is recovered. When RV_GLD equals GVZ squared, the eleventh one-sided
+formula is recovered. These algebraic identities are not performance
+promises. The experiment is a single information-set extension, not a
+coefficient, lookback, boundary or cash-scale grid after outcomes.
+
+Preserve the exact source BIL/non-BIL dollar scale, 131 monthly dates,
+four-style/SOXX proportions, 30%--70% equity bounds, 98% target investment
+and original monthly 0.025 observed-weight execution. Reuse the existing
+parameterized monthly account adapter only for the new candidate's
+targets; no old account is replayed. All costs, delays, RF, initial
+capital peak and four-window joint qualification gates remain.
+
+The proof checks both variances, all source invariants and four-family
+coverage. Maximum independent scalar target difference is
+2.1815882433884326e-14; five prefix checks pass. Missing or nonpositive
+variance/quotes stop the study. Daily ratios are not true variance-risk
+premia, exact implied portfolio risk, intraday-paper replication or
+independent alpha.
+
+Preregistration counts are twelve registered, eleven completed, one
+pending, 44 funded paths and 189 combined completed configurations.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,

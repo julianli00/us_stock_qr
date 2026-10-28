@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_symmetric_variance_disagreement_20261028_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "prior_completed_configurations": 189,
+  "prior_journal_sequence": 130,
+  "prior_journal_head_sha256": "2f5ea6b5667c855f1c41966ca95a833c781e650928bb11ec477718e40b98d3cb",
+  "source_candidate": "semiconductor_option_proxy_dollar_observed_band025",
+  "realized_return_sessions": 21,
+  "annualization_sessions": 252,
+  "monthly_decisions": 131,
+  "equity_share_min": 0.30,
+  "equity_share_max": 0.70,
+  "growth_share_of_equity": 0.50,
+  "core_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "new_economic_factor_definitions": 0,
+  "cash_reserve": 0.02,
+  "actual_weight_trade_band": 0.025,
+  "candidate_count_in_this_study": 1,
+  "study_size_is_a_total_research_quota": false,
+  "candidates": [
+    {"id": "dollar_option_symmetric_variance_disagreement_v1", "construction": "symmetric_daily_disagreement"}
+  ],
+  "methodology": {
+    "question": "The eleventh rule conditions equity-side disagreement but leaves the gold side treated only by its implied quote. Test one symmetric information-set extension using GLD realized daily variance as well as SPY,not a change to the failed coefficient/window/bounds or a new exit threshold. Gold is risky,not cash;the symmetric construction is an unverified research hypothesis.",
+    "inputs": "At each same original131monthend,compute RV_SPY andRV_GLD as252timesmean ofthe preceding21dailyclose logreturn squares includingthatclose. Use actual existingmonthlyVIX/GVZquotes in decimal units. No newsource,lookback,coefficient or dailyGVZfill.",
+    "rule": "Multiply sourceequity/goldodds GVZ/VIX by (VIX^2/RV_SPY)/(GVZ^2/RV_GLD). Equivalently equityshare=VIX*RV_GLD/(VIX*RV_GLD+GVZ*RV_SPY),clipped tooriginal30%-70%. Ifboth disagreementratios equalone,the originaloption budget is recovered; ifRV_GLD=GVZ^2,the eleventh one-sidedrule is recovered. No performance-based coefficient selection.",
+    "preservation": "Readexactoriginal guarded targets. Keep itsBIL/non-BILscale (originaldollarhalfguard),131monthends,half-equitySOXX/fourequalstyles,98%targetinvestment andoriginalmonthly0.025actual-holdingband. No originaltargetgenerator/account replay,forcednewfactorlabels or extraBILfilter.",
+    "execution": "PreservefreshUSD10000,1xlongonlyfractionalcashfunding,USD1tickets,5bpnext-openbase/20bpextra-sessionstress,queuedrequests,RF,initialdrawdownpeak andallfull10y/5yreturnwindows. Originalmonthlyaccountingadapter andindependentholdingfeedback/BTverifiedfornewtargetsonly.",
+    "scope": "Daily variance-disagreement ratios are coarseproxies,nottruevariance-riskpremia,exactimpliedportfolio forecasts,independent alpha orreplication ofintraday-realized-variance literature. Existingliterature/source-admission caveats remain. Missing/zero/invalidvarianceorquotes isfatal,not aweightcap/cashfallback.",
+    "selection": "Onefixedinformation extension after189exposedcompletedconfigurations;no pairedcoefficient/window/risk-bound grid. Compareall4newpathstobothmatched-costbenchmarks andbroaderretainedreferences. Partial5ypassesorstressdrawdowncannotreplacefailedten-yearbasegates.",
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

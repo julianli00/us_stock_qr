@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-28",
-  "phase": "saved_daily_proxy_full_window_diagnosis_complete",
-  "active_research_focus": "early_ten_year_benchmark_deficit_and_2020_drawdown_after_actual_de_risking",
+  "phase": "symmetric_variance_proxy_registered_pending_accounts",
+  "active_research_focus": "symmetric_stock_gold_information_extension_with_unchanged_execution",
   "research_dashboard": {
     "server": "src/us_quant/research_dashboard.py",
     "frontend": "web/research/index.html",
@@ -23,10 +23,10 @@
       "sha256": "ccff66c847db6519132775a177268c03d7ec36491076380be01d01f41589287d"
     },
     "aggregate_counts": {
-      "registered": 11,
+      "registered": 12,
       "completed": 11,
       "reviews": 11,
-      "pending": 0,
+      "pending": 1,
       "technical_failures": 0,
       "qualified": 0,
       "account_paths": 44,
@@ -88,6 +88,14 @@
         "results": "research/workbench/evidence/daily_variance_disagreement_20261028_results_v1.json",
         "results_sha256": "ff3dde185a4949e6c91adf4581172fff6b1d54a8aabcd7f0bd7474b5ef68b7a2",
         "preregistration_commit": "352c21ae58bcfd0c5e32e617c958ba45c53a9593"
+      },
+      {
+        "study_id": "ssd_symmetric_variance_disagreement_20261028_v1",
+        "registration": "research/workbench/evidence/symmetric_variance_disagreement_20261028_registration_v1.json",
+        "registration_sha256": "33bf189bd155e547e2ea3f9cc181afcccdd7c192b2bf5ee91a421911da563cb7",
+        "results": null,
+        "results_sha256": null,
+        "preregistration_commit": null
       }
     ],
     "status": "first_pair_complete_both_rejected",
@@ -714,13 +722,13 @@
   ],
   "next": [
     "Preserve all eleven overall-rejected SSD hypotheses across eight cohorts and44funded paths, completed diagnoses and original six-slot history. Raw documents, prices, targets and daily accounts remain private; do not replay them.",
-    "Use the completed saved diagnosis: earlier ten-year-account QQQ deficits exceed later gains; the 2020base breach occurred after the source dollar risk reduction with no pending request/order/fee that day. Five-year maximum losses occur in early2026 across gold/equities, not the same episode. Choose a genuinely new question, not rounding, path selection, coefficient/window/bound tuning or a proxy/forward-validation overclaim.",
+    "Publish the actual twelfth symmetric-information preregistration before accounts. It adds GLD realized daily variance to the same21session SPY/VIX/GVZ information treatment, with unchanged sourceBIL/dollar scale, bounds, factors, monthlyexecution andhardgates. No coefficient/window/boundgrid, trueVRP/paperreplication orpartialpasspromotion.",
     "Continue economically motivated, preregistered independent small batches without ordinary per-batch approval or a configuration-count ceiling until2026-10-31T15:59Z. Use one computation; at cutoff preserve partial work, clear only the SSD session timer and confirm absence.",
     "Keep old source refusals, VIG/SDY terminal429 and prospective/PIT gates. The independent market-only IBKR adapter is proved, but the one actual probe stopped on2157 before historical requests;0history rows/admissions,no automatic retry or inferred entitlement denial. Default readonly account synchronization remains prohibited."
   ],
   "next_zh": [
     "保留SSD八组共11项整体拒绝假设、44条资金约束路径、已完成诊断与历史六配置记录，不重复运行；原始文档、行情、目标矩阵和逐日账户保持私有。",
-    "使用已完成诊断：十年实际账户前段QQQ落后超过后段增益；2020基础越界时来源已减半风险，当日无待执行请求/订单/费用。五年最大损失发生在2026年初股金共同下跌，不能混作同一事件。另选真实问题，不四舍五入、挑路径或调系数/窗口/边界，也不夸称代理或独立前瞻验证。",
+    "先发布第12项对称信息登记再计算账户：在同21日SPY/VIX/GVZ处理中新增GLD已实现日频方差，来源BIL/美元尺度、边界、因子、月末执行及硬门不变。不做系数/窗口/边界扫描，不夸称真实VRP、论文复现或局部通过即整体达标。",
     "持续开展有经济理由、事前冻结的独立小批次，无普通逐批确认或配置次数上限，截止2026-10-31T15:59Z；单计算job，届时保存未完状态、只清除SSD会话timer并确认不存在。",
     "原拒绝来源、VIG/SDY终止429和前瞻/PIT门保持。独立IBKR market-only适配器已证明，但唯一真实探针在历史请求前因2157停止；历史行/准入0，不自动重试或推断订阅拒绝，仍禁止默认readonly账户同步。"
   ],
