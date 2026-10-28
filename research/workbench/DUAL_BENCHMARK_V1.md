@@ -1679,6 +1679,65 @@ are not called. Private assessment SHA256:
 Counts remain fifteen completed hypotheses, 60 paths, 193 combined
 completions and zero qualifiers. No new model or parameter is selected.
 
+## Universal-portfolio theorem and execution boundary
+
+A distinct construction review checks Thomas M. Cover's **Universal
+Portfolios**, *Mathematical Finance* 1(1), 1--29 (1991),
+[DOI 10.1111/j.1467-9965.1991.tb00002.x](https://doi.org/10.1111/j.1467-9965.1991.tb00002.x).
+[Crossref metadata](https://api.crossref.org/works/10.1111/j.1467-9965.1991.tb00002.x)
+and the first page of the
+[author-hosted scan](https://isl.stanford.edu/~cover/papers/paper93.pdf)
+agree on its identity. The PDF has 29 image-only pages; local OCR and
+reading were limited to pages 1--3. OCR mathematical glyphs are not
+treated as exact formula transcription, and no full-paper or proof
+read is claimed. An author-index URL returned HTTP 404; this is retained,
+not interpreted as absence of the successfully retrieved paper.
+
+The inspected model uses long-only period weights, gross price
+relatives and performance weighting over constant-rebalanced portfolios.
+Its asymptotic growth-rate comparator is the hindsight best constant
+rebalanced portfolio, not a finite ten/five-year net benchmark victory.
+Page 3 also mentions a finite-sample lower bound: this review does
+**not** deny that result or claim to have verified its formula or proof.
+A lower bound relative to a comparator is not an unconditional promise
+to beat that comparator at every finite horizon.
+
+Three predetermined synthetic checks clarify the application boundary:
+
+| Synthetic check | Actual result | Meaning |
+|---|---|---|
+| Initial uniform weights; gross relatives 2 and 1 | Wealth factor 1.5 versus best constant portfolio 2 | Finite underperformance is compatible with the asymptotic comparator |
+| Initial uniform weights; gross relatives 1 and 0.5 | Wealth factor 0.75; drawdown 25% | The growth comparator does not impose a 15% drawdown limit |
+| One funded 98% target purchase at 5bp; USD1 fixed ticket | USD20,000 account ends at 19,989.205289; two USD10,000 accounts total 19,988.205779 | Fixed tickets break degree-one wealth scaling; their difference is USD0.99951024 |
+
+For the same funding calculation with proportional costs only, the
+scale difference is zero. This uses the **unchanged** pure funded
+rebalance helper, not a new portfolio or a fee-free substitute for
+qualification. USD20,000 is only a scale-test input; all formal
+research accounts retain fresh USD10,000.
+
+The inspected paper equations do not encode this repository's fixed
+USD1 tickets, 5/20bp costs, 1/2-session delayed opens and monthly
+actual-holding no-trade band. A gross mathematical wealth mixture is
+not automatically the wealth of one executable funded account.
+No Sharpe, drawdown, finite-window net CAGR/QQQ guarantee or new
+economic-factor definition is imported.
+
+This boundary does not prove that cost-aware universal methods are
+impossible. Any future adaptation must first freeze its expert space
+and prior, information/decision clocks, matured observations, numerical
+approximation, funding and cost aggregation. It must then satisfy
+the unchanged actual registration, publication and four-path gates.
+No expert grid, weights, sixteenth model or historical return outcome
+was selected by this review.
+
+All 20 direct references, the 178-event SSD journal and original ledger
+remain unchanged; the three checks use only synthetic inputs.
+Private review SHA256:
+`3d0f934e158f2b136ee98bdd99b89599e3ea4b03472e3fc8f81e7093650b28f4`.
+Counts remain fifteen completed SSD hypotheses, 60 funded paths,
+193 combined completions and zero qualifiers.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,

@@ -517,6 +517,23 @@ components in ex-post accounting. It is not causal or standalone gold
 alpha. The ten-year QQQ shortfall still comes from earlier losses
 outweighing later gains; no strategy, parameter or trial count changes.
 
+A subsequent bounded review examines Cover's
+[Universal Portfolios](https://doi.org/10.1111/j.1467-9965.1991.tb00002.x)
+as a different construction principle, not another volatility-window
+variant. Crossref and the author-hosted scan agree on the 1991 paper;
+only its first three pages were OCR-read, not the full proofs.
+Its asymptotic growth comparator, and its mentioned finite-sample
+lower bounds, do not certify our finite-window net-return or risk gates.
+
+Synthetic witnesses show why: the initial uniform allocation can grow
+1.5 times while the best constant portfolio grows 2 times, and a valid
+two-asset period can produce 25% drawdown. The unchanged funded engine
+also shows that USD1 fixed tickets break simple wealth scaling.
+This does not rule out cost-aware adaptations; it prevents transferring
+a gross mathematical guarantee to the existing delayed, fee-paying
+executor. No sixteenth model, expert grid or historical account was
+selected or evaluated. Counts remain 193 completed and zero qualifiers.
+
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
 
