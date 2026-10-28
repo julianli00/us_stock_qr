@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-28",
-  "phase": "ordered_path_preparation_failed",
-  "active_research_focus": "preserve_solver_bound_failure_before_any_target_proof_or_account",
+  "phase": "ordered_path_precision_registered_pending_accounts",
+  "active_research_focus": "stricter_solver_precision_without_economic_or_financial_gate_changes",
   "research_dashboard": {
     "server": "src/us_quant/research_dashboard.py",
     "frontend": "web/research/index.html",
@@ -35,10 +35,10 @@
       "sha256": "ccff66c847db6519132775a177268c03d7ec36491076380be01d01f41589287d"
     },
     "aggregate_counts": {
-      "registered": 18,
+      "registered": 19,
       "completed": 17,
       "reviews": 17,
-      "pending": 0,
+      "pending": 1,
       "technical_failures": 1,
       "qualified": 0,
       "account_paths": 68,
@@ -153,6 +153,14 @@
         "study_id": "ssd_ordered_path_growth_20261028_v1",
         "registration": "research/workbench/evidence/ordered_path_growth_20261028_preparation_failure_v1.json",
         "registration_sha256": "7cb58f891b759493d2cb0d9266e43de41f26fda3aa8a8c40a4117b0ec773a634",
+        "results": null,
+        "results_sha256": null,
+        "preregistration_commit": null
+      },
+      {
+        "study_id": "ssd_ordered_path_growth_20261028_v2",
+        "registration": "research/workbench/evidence/ordered_path_growth_20261028_registration_v2.json",
+        "registration_sha256": "5573ce0ba22b02aa29dec18bab9cb45d7e9de03e64d6a50fcb6ad76b840a3763",
         "results": null,
         "results_sha256": null,
         "preregistration_commit": null
@@ -781,14 +789,14 @@
     "第10项固定相反优先级：在当时较低SPY/QQQ尾部预算（以实际BIL风险作底）内最大化已观测机会，不扫风险倍率/旧门槛/窗口/核心参数。2026-10-28T05:46:36.615636Z真实登记先于122有证书计划（112优化/10非正机会），5前缀及完整6家族覆盖通过。先发布1074904478bfd0ba2a19d502c479ebd2de13c227，再于05:54:28.534515Z完成4资金路径并拒绝。依次十年base/stress、五年base/stress净CAGR12.9292/11.4123/16.5627/14.9118%，Sharpe0.6781/0.5922/0.7818/0.6907，DD26.4086/27.0756/26.6875/27.3277%；回撤/夏普/QQQ全失败，3条CAGR过且仅五年胜SPY。SSD10完成/40路径/合计188/0通过、118事件，原记录不变；不得拼接第9项回撤与第10项收益。"
   ],
   "next": [
-    "Preserve18registered SSD configurations:17completed/reviewed overall rejections,1terminal preparation failure,0pending,68funded paths,195combined completions and0qualifiers. Retain all original accounts, diagnoses and six-slot history; raw documents, prices, targets and daily accounts remain private.",
-    "Ordered-pathv1 registered2026-10-28T18:40:06.234535Z and failed18:40:20.614268Z before target proof or accounts. One fixed-parameter diagnostic reproduced2026-04-30 GLD=-2.9006786461321336e-10 with exact0.98budget:within1e-9solver tolerance but outside1e-10nonnegative cleanup. Preserve v1 and its failure; no registered-pipeline retry, fake proof, portfolio metrics or economic-infeasibility claim. A separate tighter-precision version is only a possible next step, not implemented or registered; no economic/risk/roundoff relaxation or tolerance grid.",
+    "Preserve19registered SSD configurations:17completed/reviewed overall rejections,1terminal v1preparation failure and1pending precision-onlyv2,68funded paths,195combined completions and0qualifiers. The numerical revision is not an independent economic hypothesis. Keep all old accounts, diagnoses, six-slot history and raw inputs private.",
+    "Precisionv2 actually registered2026-10-28T19:38:26.482282Z before complete target proof19:39:13.950442Z:122monthly decisions,zero independent target difference,5prefix checks andbothfull anchors/fourstyle participation. Only primal/dual solver tolerance changes1e-9 to1e-10;roundoff,economics,objectives,accounting andall financial gates remain. V1failure staysfrozen. No v2accounts or metrics yet;actualremote publication mustprecede all4originalfunded paths. Do not retryv1, loosen gates or sweep tolerances.",
     "Continue economically motivated, preregistered independent small batches without ordinary per-batch approval or a configuration-count ceiling until2026-10-31T15:59Z. Use one computation; at cutoff preserve partial work, clear only the SSD session timer and confirm absence.",
     "Keep old source refusals, VIG/SDY terminal429 and prospective/PIT gates. The independent market-only IBKR adapter is proved, but the one actual probe stopped on2157 before historical requests;0history rows/admissions,no automatic retry or inferred entitlement denial. Default readonly account synchronization remains prohibited."
   ],
   "next_zh": [
-    "保留SSD18项已登记配置：17项完成审阅并整体拒绝、1项准备阶段终止失败、0待评估、68条资金路径、合计195项完成、0通过。所有原账户、诊断和历史六配置记录不变；原始文档、行情、目标矩阵和逐日账户保持私有。",
-    "有序路径v1于2026-10-28T18:40:06.234535Z真实登记，18:40:20.614268Z在目标证明和账户前失败。唯一固定参数诊断复现2026-04-30黄金权重-2.9006786461321336e-10、预算和精确0.98：满足1e-9求解容差但超出1e-10非负清理门。保留v1及失败，不重试已登记管线、不造目标证明/绩效、不声称经济不可行。单独收紧精度版本只是可能下一步，尚未实现或登记；不放宽经济/风险/清理门，不扫容差网格。",
+    "保留SSD19项已登记配置：17项完成审阅并整体拒绝、1项v1准备终止失败、1项精度v2待评估，68条资金路径、合计195项完成、0通过。数值修正不是独立经济假设；原账户、诊断、历史六配置和原始私有输入全部保留。",
+    "精度v2于2026-10-28T19:38:26.482282Z真实登记，先于19:39:13.950442Z完整目标证明：122个月末、独立目标差0、5前缀及两完整锚点/四风格参与。只将原始/对偶求解容差1e-9收紧至1e-10，清理门、经济参数、目标函数、记账和全部财务门槛不变，v1失败仍冻结。暂无v2账户/绩效；必须先真实远端发布，再运行全部4条原资金路径。不重试v1、不放宽门槛或扫容差。",
     "持续开展有经济理由、事前冻结的独立小批次，无普通逐批确认或配置次数上限，截止2026-10-31T15:59Z；单计算job，届时保存未完状态、只清除SSD会话timer并确认不存在。",
     "原拒绝来源、VIG/SDY终止429和前瞻/PIT门保持。独立IBKR market-only适配器已证明，但唯一真实探针在历史请求前因2157停止；历史行/准入0，不自动重试或推断订阅拒绝，仍禁止默认readonly账户同步。"
   ],

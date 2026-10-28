@@ -2330,8 +2330,9 @@ bounded scalar witness and artifact identities.
 
 Version 1 will not be edited, reset or retried. A separately versioned
 change to tighten solver precision, without loosening cleanup,
-economic constraints or financial gates, is only a possible next
-step: no such version is yet implemented, tested or registered.
+economic constraints or financial gates, was only a possible next
+step at that failure publication: no such version had yet been
+implemented, tested or registered.
 It would be a numerical correction, not a new independent economic
 idea, and would still require actual registration and publication
 before funded outcomes.
@@ -2339,11 +2340,72 @@ before funded outcomes.
 The original schema2 dashboard proof/publication rules remain intact.
 The new narrow schema3 route represents only registered preparation
 failure with **null target proof, no publication-before-account claim,
-zero accounts and null metrics**. Current counts are **18 registered,
+zero accounts and null metrics**. At that failure publication, counts were **18 registered,
 17 completed/reviewed, one technical failure, zero pending,
 68 funded paths, 195 combined completions and zero qualifiers**.
 The original ledger, all prior results and the two one-day forward
 models remain unchanged.
+
+## Same ordered-path rule: precision-only v2
+
+[`config/ordered-path-growth-v2.json`](config/ordered-path-growth-v2.json)
+records a separately versioned numerical correction, not a new
+independent economic hypothesis. Both `highs-ds` primal and dual
+feasibility tolerances tighten from `1e-9` to `1e-10`, matching the
+unchanged nonnegative cleanup threshold. The original failed v1
+remains immutable and counted; neither its registered pipeline nor
+its saved numerical diagnosis was replayed.
+
+The 252-return window, 253 prices, constant-unit stock/GLD/BIL paths,
+98% invested budget, 14.7% stock floor, all ordered 15% training-risk
+constraints, primary growth objective and secondary BIL preference
+are unchanged. Certificate, cleanup, decision and primary-optimum
+slack tolerances are unchanged. All original net financial gates,
+costs, execution delays, risk-free definition and initial-capital
+drawdown peak remain unchanged.
+
+Frozen v1 price, constraint, certificate, wealth and scattering helpers
+are reused directly. The allocation and target-builder function bodies
+are AST-identical. Eight proof, accounting, failure and publication
+lifecycle function bodies are also identical; their version-local
+snapshot avoids modifying v1's frozen global bindings. Registration
+checks now explicitly preserve 18 predecessor registrations,
+17 completions, one original failure and no predecessor pending work.
+The numerical-version comparison and intent were retained before
+any real new optimization.
+
+Thirty-five synthetic and lifecycle cases cover the stricter supported
+solver options without warnings, continued rejection of the original
+tiny-negative-weight magnitude, infeasibility without fallback,
+causality, unchanged economic/gate parameters, publication boundaries
+and preservation of the old failure. These tests are not portfolio
+performance or proof that real preparation must succeed.
+
+### Actual registration and complete target proof
+
+The [actual v2 packet](evidence/ordered_path_growth_20261028_registration_v2.json)
+records registration event **205** at
+**2026-10-28T19:38:26.482282Z**, before any new real target optimization.
+Target-proof event **206** occurred at **19:39:13.950442Z**; the
+packet was created at **19:39:13.951846Z**.
+
+All **122** eligible month ends, beginning 2016-08-31, completed with
+zero independent target difference and five prefix-truncation checks.
+Both original formal anchors and all return dates remain present;
+MTUM, VLUE, QUAL and USMV have positive target capital throughout
+both windows. Maximum certificate residual is
+`7.275957614183426e-12`; maximum primal-dual gap is
+`1.9641251210904872e-13`. The recorded maximum gross training
+drawdown is `0.15000000000000047`, within the existing numerical
+feasibility check, not a relaxation of the separate strict net-account
+gate or evidence about future drawdown.
+
+There are **19 registered configurations, 17 completed/reviewed,
+one retained technical failure and one pending version**.
+The 68 funded paths, 195 combined completions and zero qualifiers
+are unchanged. No v2 candidate account or financial metric has
+been computed. Actual remote publication of this packet and its
+bound implementation is required before all four original accounts.
 
 ## Independent IBKR price-history source boundary
 
