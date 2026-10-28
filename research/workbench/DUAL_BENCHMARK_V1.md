@@ -765,6 +765,80 @@ hypotheses, 36 paths, zero pending, zero technical failures and zero
 qualifiers; combined completed configurations are 187. All original ledger,
 benchmark, source/catalog and prospective records remain unchanged.
 
+## Saved joint-tail return, standby and implementation diagnosis
+
+The next diagnostic reads only the completed ninth-model accounts,
+registered targets/optimizer records and the original eight funded
+benchmark accounts. It does not solve another LP, replay an account,
+construct a zero-cost alternative, recompute primary CAGR/Sharpe gates or
+select a new parameter.
+
+Consecutive saved monthly decision dates, shifted by the original
+base/stress delay, define diagnostic intervals. Actual account returns
+are partitioned once across those intervals. Formal-window starts and
+ends are explicitly clipped and marked: the ten-year window has 119
+complete intervals and the five-year window 59. A decision-clock label
+is not an assertion that its target executed exactly on that boundary;
+overnight exposure, outstanding requests and actual holding drift remain.
+
+| Path | Mean closing BIL | Mean closing stocks | Fixed commission share of cost | Mean model ticket notional USD | Complete optimized intervals beating QQQ |
+|---|---:|---:|---:|---:|---:|
+| 10y base | 53.74% | 28.18% | 66.31% | 1,015.93 | 27 / 72 |
+| 10y stress | 53.72% | 28.23% | 33.20% | 1,006.20 | 29 / 72 |
+| 5y base | 63.11% | 19.63% | 75.56% | 647.06 | 18 / 33 |
+| 5y stress | 63.07% | 19.68% | 44.58% | 621.66 | 17 / 33 |
+
+The recorded 122 monthly optimizer decisions are not 122 completed
+future holding intervals in either funded window. Only complete
+decision-clock intervals enter the last column. The recorded opportunity
+score uses a preceding 252-session horizon, not the subsequent interval,
+and the comparison counts are not independent forecast probabilities.
+
+### The shortfall is not confined to unavailable-opportunity standby
+
+The ten-year-base partition is additive in **net log-return units**:
+
+| Saved decision label | Actual sessions | Model minus SPY log-return sum | Model minus QQQ log-return sum |
+|---|---:|---:|---:|
+| Joint-tail optimum | 1,536 | -0.3268 | -0.6649 |
+| Nonpositive benchmark opportunity | 291 | -0.1035 | -0.2105 |
+| Benchmark opportunity unavailable | 685 | -0.1366 | -0.1734 |
+| Full formal window | 2,512 | -0.5670 | -1.0488 |
+
+Both benchmark comparisons use their already saved same-window,
+same-cost funded accounts. The label groups may contain disjoint dates:
+their log sums reconcile to the full gap, but they are not reported as
+tradable conditional-strategy returns or asset PnL attribution.
+
+Even within optimizer-labeled intervals, mean BIL exposure is 25.60% in
+ten-year base and 36.51% in five-year base. Optimized intervals have
+negative total net log gaps to both benchmarks in all four paths.
+This does not identify a unique causal fix or justify lowering the
+opportunity hurdle after outcomes. The five-year-base nonpositive group
+has a small positive SPY log gap but a negative QQQ gap; the two
+benchmarks must not be conflated.
+
+The full-window prior-close BIL intent versus non-BIL close-holdings
+mismatch counts are 0/7/0/2 for ten-year base/stress and five-year
+base/stress. Those are not the delay-shifted grouping labels. Holding
+timestamps and actual execution must remain separate from intended
+allocations.
+
+Fixed tickets account for most base-case costs, especially with smaller
+mean ticket notionals in the five-year account. Recorded fees are
+reported, not retrospectively removed or compounded into an imaginary
+fee-free NAV. The nonpositive-opportunity groups have no model orders
+or fees in these saved accounts, yet they generally still trail QQQ.
+Neither standby nor commission totals alone establish causal attribution.
+
+Private diagnostic SHA256:
+`357555f23bc6ad073e9743f1f7f60005c05145e2c0e9f33dc4ada242962c9730`.
+Its 56 direct input references and all frozen study inputs remain
+unchanged; the 106-event journal and original ledger are preserved.
+Counts remain nine completed hypotheses, 36 paths, 187 combined
+completions and zero qualifiers. No tenth model or new weights/window
+has been selected.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,

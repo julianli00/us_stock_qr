@@ -213,6 +213,22 @@ Current totals are nine completed SSD hypotheses, 36 paths and 187 combined
 completed configurations, with zero pending, zero technical failures and
 no qualified champion. No original ledger or prospective model changed.
 
+The saved-return diagnosis finds substantial BIL exposure even when an
+optimizer solution exists. Mean closing BIL weights are 53.74%/53.72% in
+ten-year base/stress and 63.11%/63.07% in five-year base/stress. In ten-year
+base, optimizer-labeled intervals contribute a -0.6649 log-return gap to
+QQQ, compared with -0.3839 from the two standby labels combined. The return
+shortfall is therefore not confined to analytically unavailable-opportunity
+periods. These are labels on existing returns, not counterfactual portfolios
+or causal loss attribution.
+
+Implementation also matters: fixed commissions are 66.31% of ten-year-base
+costs and 75.56% of five-year-base costs, with mean modeled ticket notionals
+of USD1,015.93 and USD647.06. This does not establish a zero-cost return or
+show that fees alone explain the shortfall. Initial/final partial decision
+periods are excluded from complete-period comparison counts. No optimizer,
+target, account, primary metric or investment gate was rerun.
+
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
 
