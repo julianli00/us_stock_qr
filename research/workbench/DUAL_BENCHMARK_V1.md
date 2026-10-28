@@ -564,6 +564,112 @@ eight benchmark accounts, source/catalog evidence and prospective models
 remain unchanged. Diagnose saved risk before another economic question,
 not a family-weight, clock or risk-cap sweep to rescue this configuration.
 
+## Saved concentration, realized risk and construction prior art
+
+A separate diagnostic completed at 2026-10-28 02:14:42.545687 UTC. It
+examines the four existing family-core accounts and four existing monthly
+source accounts, without generating targets, replaying accounts or
+requalifying strategies. Its 147 input references, original SQLite and
+94-event trial journal remain unchanged.
+
+The accounting bridge infers adjusted model units from saved closing NAV
+and weights. Previous units explain overnight PnL; post-open units explain
+intraday PnL; saved fees are deducted separately. Daily cash, NAV change and
+return components reconcile, including the initial cash-only USD10,000
+anchor. The largest daily NAV error is USD3.1604940886609256e-11.
+This is an accounting identity for modeled holdings, not a counterfactual
+trading strategy or causal factor-alpha attribution.
+
+| New account | Mean SOXX closing NAV weight | SOXX realized variance share | All-stock realized variance share | Stock-normalized holding HHI |
+|---|---:|---:|---:|---:|
+| 10y base | 40.87% | 64.16% | 93.31% | 0.2952 |
+| 10y stress | 40.83% | 64.15% | 93.26% | 0.2951 |
+| 5y base | 36.82% | 67.64% | 88.96% | 0.2931 |
+| 5y stress | 36.76% | 67.48% | 88.77% | 0.2929 |
+
+Variance shares are each realized additive return component's covariance
+with the same net portfolio return, divided by that portfolio's variance.
+They are signed ex-post statistics over each complete formal window, not
+nominal weights, predictive covariance estimates or suggested new weights.
+The new ten-year-base nominal HHI is lower than the source's 0.3147, but
+stock risk remains dominant. Source/new saved net-return correlations are
+0.9977--0.9980.
+
+Stock-group variance share is **not** a single market factor's R-squared.
+Separate in-sample excess-return regressions against the two fixed
+benchmarks give new-account SPY R-squared of 26.25%--48.63% and QQQ
+R-squared of 33.65%--50.26%. Beta is not capital leverage; residual series
+are not tradable long-only accounts or independent validation.
+
+### Different loss mechanisms must remain distinct
+
+All four ten-year source/new base/stress drawdowns peak on 2020-02-19 and
+bottom on 2020-03-20. Their first 15% breach is 2020-03-09, with an
+equity intent and actual stock exposure. The new ten-year-base interval
+loses USD5,927.99: SOXX gross PnL is -3,010.15 and the factor core -2,917.84,
+with zero model orders and fees throughout that interval. Overnight gross
+PnL is -4,910.69 and intraday gross PnL -1,017.30. This does not support a
+fee-only explanation or a claim that SOXX alone caused the loss.
+
+The new five-year base first breaches on 2022-05-10; stress first breaches
+on 2022-04-27. Both have a gold intent and actual gold exposure near 98%,
+zero stocks and no orders or fees on those days. They are not unexecuted
+stock exits. The five-year peak is 2021-12-27, with a 2022-12-28 base trough
+and 2023-03-13 stress trough. Earlier stock losses, subsequent defensive
+asset moves and accumulated implementation costs have to be distinguished.
+The original source's first five-year breach on 2022-02-23 was while in
+stocks; it is not interchangeable with these later new-model events.
+
+Identical target clocks do not imply identical execution. Source/new
+ten-year-base rebalance sessions are 46/48, with only 27 shared dates.
+The respective counts are 44/47 with 29 shared for ten-year stress, 28/32
+with 16 shared for five-year base, and 28/31 with 20 shared for five-year
+stress. Drift feedback and differing holdings matter even without changing
+the declared band or execution delay.
+
+Private diagnostic SHA256:
+`04b71c57a5491acc6c10d4bde1e264f82536c20b149536a4580989ad9d6cbddc`.
+
+### Existing construction research is not a new hypothesis by renaming
+
+A saved-only inventory checked 28 candidates in six prior groups and their
+original four-path results. Four recurring reviews also exactly match the
+latest frozen original program snapshot. No account or goal was recomputed.
+
+| Prior group | Existing methods | Preserved outcome and scope |
+|---|---|---|
+| [Allocation](evidence/allocation_round_20261007_results.json) | Equal, minimum variance, maximum diversification, rank and trend variants | Six tests; none passes the old joint primary goal. QLD exposure is not allowed in the current 1x lane. |
+| [Implementation](evidence/implementation_round_20261007_results.json) | Quarterly/band controls and equal mixtures with covariance portfolios | Two of six pass old primary goals, none all old goals; embedded leverage prevents treating them as current 1x results. |
+| [Refinement](evidence/portfolio_refinement_20261007_results.json) | QLD cap, covariance volatility limits and observed-weight bands | Six new controls; no qualified improvement under the original contract. A volatility target is not a drawdown guarantee. |
+| [Unleveraged four-factor](evidence/multifactor_stability_20261010_results.json) | Balanced equity/bond/gold, breadth, inverse volatility and covariance cap | Two of six satisfy stability tests; none satisfies return/full goals. |
+| [Equity/gold risk balance](evidence/factor_gold_risk_20261010_results.json) | Inverse 63-session volatility and daily 12% target variant | Both actual recurring reviews are rejected. |
+| [Downside balance](evidence/downside_risk_balance_20261011_results.json) | Semideviation and empirical-tail-loss marginal risk budgets | Both reviews are rejected; marginal sleeve balancing is not joint portfolio expected-shortfall optimization. |
+
+The [old unweighted factor-risk diagnostic](evidence/factor_risk_structure_20261011_results.json)
+already recorded mean six-equity-fund correlations of 0.8253/0.7797 and
+correlation participation dimensions of 1.3540/1.4735 for ten/five years.
+It did not register the queued definitions, select weights or compute the
+pending strategies. The two original W42 six-family allocation candidates
+still do not occur in the preserved candidate/review registry.
+
+Private prior-art review SHA256:
+`2260ec62d87ce6b173b5c68663d6157c5df44ff873437dff360d4b6828052bcb`.
+Old primary/SPY passes, legacy leverage and one-way-turnover fields are not
+silently reinterpreted as the current dual-benchmark/1x/two-sided contract.
+
+The fixed SOXX half-equity and equal-core proportions were experimental
+controls for the completed eighth study, not permanent user requirements.
+Evidence may motivate a separately preregistered different construction;
+no new weights, window or ninth model has been selected. No global
+ineffectiveness of size/buyback factors is inferred.
+
+At the user's explicit request, the sole native continuation was changed
+from 30 minutes to **one minute** on 2026-10-28 02:21:04.321 UTC and
+read back successfully. Its complete prompt is byte-identical. The
+single-active-job, no-replay/no-source-retry, original deadline and all
+trading/data restrictions remain. The 30-minute market-data finalization
+buffer and historical scheduling receipts were not changed.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,

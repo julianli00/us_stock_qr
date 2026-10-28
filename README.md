@@ -149,6 +149,31 @@ this fixed structure and are not independent alpha.
 Current totals are eight SSD registrations/completions, zero pending,
 32 paths and 186 combined completions, with no qualified champion.
 
+The subsequent saved-holdings diagnosis separates nominal concentration
+from realized risk. In the new ten-year base account, SOXX averages 40.87%
+of closing NAV but contributes 64.16% of realized net daily-return variance;
+all stock components contribute 93.31%. The stock-normalized holding HHI
+falls from the source's 0.3147 to 0.2952, while source/new net returns remain
+correlated above 0.9977. More labels did not produce independent portfolio
+risk sources. These are signed ex-post covariance contributions, not
+forecast risk budgets or causal alpha.
+
+The 2020-02-19--2020-03-20 ten-year drawdown contains no model orders or fees:
+losses come from held stock exposure, including both SOXX and the factor
+core, largely overnight. In contrast, the new five-year first breaches
+occur in 2022 while already holding gold, not while awaiting stock exits.
+Gold and reduced stock exposure are not guarantees on cumulative drawdown.
+The old covariance, diversification, volatility-cap, breadth and downside
+risk-budget studies have now been checked before selecting another
+construction; old QLD-based results are not current 1x evidence.
+
+SOXX half-equity and equal factor-half allocation remain frozen **for that
+completed controlled study**, not as permanent user allocation constraints.
+No new construction, weights or lookback has been selected. The configured
+native continuation is now **one minute**, still with one active research
+job and the original cutoff; it is not a per-minute backtest or data-download
+instruction.
+
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
 
