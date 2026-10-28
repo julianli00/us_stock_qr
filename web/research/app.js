@@ -102,6 +102,19 @@ function ssdOverview(ssd) {
     article.append(el("p", "gate-note", incomplete
       ? `${row.status === "technical_failure" ? "技术失败，保留已经产生的路径和失败记录。" : "尚未完成全部账户及审阅，不计为完成或通过。"}${failed.length ? `已完成路径未通过：${failed.join("；")}。` : ""}`
       : failed.length ? `未通过：${failed.join("；")}。` : "四条历史路径通过；仍无独立前瞻证明或交易权限。"));
+    const control = ssd.candidates.find((candidate) => candidate.id === "equity_first_month_end_commitment_v1");
+    if (row.id === "equity_month_end_six_family_core_v1" && !incomplete && control) {
+      const pairs = row.paths.map((path) => [path, control.paths.find((prior) => prior.years === path.years && prior.scenario === path.scenario)]);
+      const complete = pairs.length === 4 && pairs.every(([current, prior]) => current.metrics && current.execution && prior?.metrics && prior.execution);
+      if (complete && pairs.every(([current, prior]) =>
+        current.metrics.cagr < prior.metrics.cagr && current.metrics.sharpe < prior.metrics.sharpe &&
+        current.execution.annualized_two_sided_turnover > prior.execution.annualized_two_sided_turnover &&
+        current.execution.model_order_count > prior.execution.model_order_count &&
+        current.execution.total_cost_usd > prior.execution.total_cost_usd)) {
+        const worseDrawdowns = pairs.filter(([current, prior]) => current.metrics.max_drawdown > prior.metrics.max_drawdown).length;
+        article.append(el("p", "conclusion-description", `与已存月末来源相比，4 条路径的净 CAGR 与夏普均下降，换手、模型订单和费用均上升；${worseDrawdowns} 条路径的回撤也更差。新增家族未改善本次固定结构的整体表现。这包含执行差异，不是单资产收益归因或独立 alpha。`));
+      }
+    }
     const table = el("table"), heading = el("tr"), body = el("tbody");
     ["路径", "年化双边换手（含初始建仓）", "模型订单数", "累计费用 USD"].forEach((value) => heading.append(el("th", "", value)));
     table.append(append(el("thead"), heading));

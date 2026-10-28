@@ -95,7 +95,7 @@ reject the hypothesis: every path clears 12% net CAGR but fails Sharpe,
 drawdown and QQQ gates. Ten-year base net CAGR is 15.6961%, Sharpe 0.8171
 and maximum drawdown 30.4238%; annualized two-sided turnover is 11.5617
 with 416 model orders and USD 1,561.68 total costs. Only that path beats
-matched-cost SPY. There are now seven completed/rejected SSD hypotheses,
+matched-cost SPY. That snapshot contained seven completed/rejected SSD hypotheses,
 28 new account paths and 185 combined completed configurations, with no
 qualified champion or new prospective observation.
 
@@ -125,10 +125,29 @@ decisions and execution. Only the other half of the stock allocation changes:
 six equal economic-family funds replace four. The signal still refers to
 the original stock proxy; it is not rebuilt using the new portfolio.
 Independent target proof has zero difference, with eight prefix checks and
-both full-window anchors defined. No new funded account or metric has been
-computed yet: eight SSD registrations, seven completed, one pending,
-28 paths and 185 combined completions. More families are not a drawdown
-guarantee or independent alpha.
+both full-window anchors defined. The
+[complete result](research/workbench/evidence/family_core_expansion_20261028_results_v1.json)
+followed actual preregistration publication `ea997167` and finished at
+2026-10-28 00:11:13 UTC. It is **rejected**, despite all four net CAGRs exceeding
+20%: every drawdown fails, three Sharpes fail, and ten-year stress misses QQQ.
+
+| Path | Net CAGR | Sharpe | Max DD | Annual two-sided turnover | Model orders | Costs USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 22.5567% | 0.9489 | 33.8188% | 3.7843 | 342 | 764.49 |
+| 10y stress | 21.1015% | 0.8907 | 33.8303% | 3.7614 | 335 | 1,935.42 |
+| 5y base | 26.4066% | 1.0480 | 22.6943% | 4.7239 | 229 | 369.21 |
+| 5y stress | 23.2902% | 0.9278 | 23.0772% | 4.6816 | 222 | 744.31 |
+
+The saved monthly source already had higher CAGR and Sharpe in **all four**
+matching paths. The expansion increases turnover, model orders and costs in
+all four; drawdown worsens in three. The slight five-year-base drawdown
+improvement still leaves 22.69%, not the required 15%. This is a saved
+whole-model comparison, including changed drift-triggered execution and fees,
+not isolated asset PnL attribution. More economic labels did not improve
+this fixed structure and are not independent alpha.
+
+Current totals are eight SSD registrations/completions, zero pending,
+32 paths and 186 combined completions, with no qualified champion.
 
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).

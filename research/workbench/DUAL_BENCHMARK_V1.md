@@ -471,13 +471,13 @@ SSD completions, 28 paths and 185 combined configurations, all without a
 qualified champion. A subsequent fixed hypothesis needs its own actual
 registration/publication fence under the unchanged dual-benchmark gates.
 
-## Six-family factor-half composition: preregistered, accounts pending
+## Six-family factor-half composition: completed and rejected
 
 The [actual registration packet](evidence/family_core_expansion_20261028_registration_v1.json)
 records one fixed candidate, `equity_month_end_six_family_core_v1`, at
 2026-10-27 23:58:51.410312 UTC. Its target-proof event follows at
-23:58:51.721615 UTC and the packet at 23:58:51.722553 UTC. There are no
-candidate funded accounts or performance metrics at this fence.
+23:58:51.721615 UTC and the packet at 23:58:51.722553 UTC. No candidate
+funded accounts or performance metrics existed at this fence.
 
 This tests economic composition rather than another failed risk threshold:
 retain the actual saved `equity_first_month_end_commitment_v1` source,
@@ -508,8 +508,61 @@ diagnoses. No independent holdout, diversification benefit or qualification
 is inferred. Shared equity beta, semiconductor concentration, small-cap
 liquidity, buyback leverage, overlapping characteristics and additional
 costs remain risks. This is one fixed composition, not a weighting or
-lookback grid. Current counts are eight SSD registrations, seven completed,
-one pending, 28 completed paths and 185 combined completed configurations.
+lookback grid. The preregistration snapshot contained eight registrations,
+seven completed, one pending, 28 paths and 185 combined completions.
+
+Actual publication `ea997167c5121da2faa6a178e2b974b0950592be` was observed
+before any account. All four paths finished at 2026-10-28 00:11:13.626966 UTC;
+the [complete sanitized outcome](evidence/family_core_expansion_20261028_results_v1.json)
+is rejected.
+
+| Path | Net CAGR | Sharpe | Max DD | Annual two-sided turnover | Model orders | Costs USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 22.5567% | 0.9489 | 33.8188% | 3.7843 | 342 | 764.49 |
+| 10y stress | 21.1015% | 0.8907 | 33.8303% | 3.7614 | 335 | 1,935.42 |
+| 5y base | 26.4066% | 1.0480 | 22.6943% | 4.7239 | 229 | 369.21 |
+| 5y stress | 23.2902% | 0.9278 | 23.0772% | 4.6816 | 222 | 744.31 |
+
+All four pass net CAGR>12% and matched-cost SPY, and all four also exceed the
+20% return preference. That is **not** joint qualification: all drawdowns
+fail, only five-year base passes Sharpe, and ten-year stress is below matched
+QQQ by 0.0224083 percentage points. This strict failure is not rounded away.
+Both stress paths pass the preserved extra base-cost-SPY gate.
+The largest independent equity-accounting difference is
+USD 1.0186340659856796e-10. Orders are historical model orders, not broker
+orders; stress changes both costs and delay, not costs alone.
+
+### Comparison with the actual saved monthly source
+
+The correct control is `equity_first_month_end_commitment_v1`, not the
+later option-exit latch. Its already saved
+[four-path results](evidence/commitment_duration_20261027_results_v1.json)
+use the same windows, protocol, capital and cost scenarios. A new bounded
+comparison reads saved scalar outcomes only; no targets, accounts or metrics
+are regenerated.
+
+| Path | Source CAGR | New CAGR | CAGR change, percentage points | Additional model orders | Additional costs USD |
+|---|---:|---:|---:|---:|---:|
+| 10y base | 23.1015% | 22.5567% | -0.5448 | 102 | 97.85 |
+| 10y stress | 21.6486% | 21.1015% | -0.5472 | 105 | 78.55 |
+| 5y base | 27.3171% | 26.4066% | -0.9105 | 82 | 82.98 |
+| 5y stress | 24.3694% | 23.2902% | -1.0792 | 75 | 68.44 |
+
+Sharpe declines and annualized two-sided turnover rises in all four paths.
+Drawdown worsens in three; five-year base improves by only 0.10192 percentage
+points and still fails. Identical source-state decisions and non-core
+targets do not imply identical executed non-core holdings: drift triggers,
+pending requests, NAV and fees can differ. These are whole-model differences,
+not causal asset-level factor PnL or independent alpha.
+Private comparison SHA256:
+`72426d90b826f4899b5960faa5498a17da4457f5dc84e0bf7ae844d6e04a59ad`.
+
+The exact eight-candidate journal now has 94 events. SSD totals are eight
+completed/reviewed, 32 paths, zero pending, zero technical failures and zero
+qualifiers; combined completed configurations are 186. Original ledger,
+eight benchmark accounts, source/catalog evidence and prospective models
+remain unchanged. Diagnose saved risk before another economic question,
+not a family-weight, clock or risk-cap sweep to rescue this configuration.
 
 ## Independent IBKR price-history source boundary
 
