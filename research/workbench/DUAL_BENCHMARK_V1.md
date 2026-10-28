@@ -464,12 +464,52 @@ methodology continuity, independent factor returns and complete direct-stock
 PIT data remain unproven; the S&P methodology403 is not bypassed.
 
 The policy, admission implementation, tests, new input files and catalog
-packet were frozen for this registration. No eighth strategy has been chosen,
-no new target or funded account has been computed, and no new observation
-has been added to the original forward models. Strategy counts remain seven
+packet were frozen for this registration. At admission no eighth strategy
+had been chosen and no new target or funded account had been computed.
+No new observation was added to the original forward models. Counts were seven
 SSD completions, 28 paths and 185 combined configurations, all without a
 qualified champion. A subsequent fixed hypothesis needs its own actual
 registration/publication fence under the unchanged dual-benchmark gates.
+
+## Six-family factor-half composition: preregistered, accounts pending
+
+The [actual registration packet](evidence/family_core_expansion_20261028_registration_v1.json)
+records one fixed candidate, `equity_month_end_six_family_core_v1`, at
+2026-10-27 23:58:51.410312 UTC. Its target-proof event follows at
+23:58:51.721615 UTC and the packet at 23:58:51.722553 UTC. There are no
+candidate funded accounts or performance metrics at this fence.
+
+This tests economic composition rather than another failed risk threshold:
+retain the actual saved `equity_first_month_end_commitment_v1` source,
+including its warmup, SOXX half of equity, gold/BIL decisions and monthly
+timing. Divide only the four-fund factor budget equally across MTUM, VLUE,
+QUAL, USMV, IJR and PKW. Each gets one twelfth of an equity intent; SOXX keeps
+one half. The total invested target remains 98%, with 2% idle cash.
+The source's original five-fund equity signal is **not** reconstructed from
+the new six-family portfolio.
+
+The unchanged funded execution implementation supports fourteen assets.
+Its original 0.025 actual-holdings band, single pending request, costs,
+base/stress delays, fresh capital, RF and initial drawdown peak remain.
+The sequential target oracle independently derives the factor budget from
+the preserved SOXX sleeve and has zero difference. Eight truncation checks
+preserve past targets, and both full formal windows have defined prior-close
+anchors. Original targets, benchmark accounts and all old ledger rows are
+not regenerated or rewritten.
+
+The two new definitions were already registered and actually published in
+`83514dd1186ff4fe612c5078a7787509919f80cb`; this study adds zero factor
+definitions. It uses six actual source-supported families, not the
+data-blocked direct-stock definitions. The old W42 two-portfolio plans used
+a different aggregate risk budget and remain unchanged.
+
+Selection follows 185 completed configurations and their exposed historical
+diagnoses. No independent holdout, diversification benefit or qualification
+is inferred. Shared equity beta, semiconductor concentration, small-cap
+liquidity, buyback leverage, overlapping characteristics and additional
+costs remain risks. This is one fixed composition, not a weighting or
+lookback grid. Current counts are eight SSD registrations, seven completed,
+one pending, 28 completed paths and 185 combined completed configurations.
 
 ## Independent IBKR price-history source boundary
 

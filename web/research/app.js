@@ -15,6 +15,7 @@ const titles = {
   equity_channel63x21_goldtrend200_v1: "价格通道：权益 63/21 + 黄金趋势",
   equity_channel63x21_goldchannel63x21_v1: "价格通道：权益与黄金独立 63/21",
   equity_month_end_option_exit_latch_v1: "期权压力退出锁：月末恢复",
+  equity_month_end_six_family_core_v1: "月末权益：六经济家族因子半仓",
   semiconductor_option_proxy_dollar_observed_band025: "隐含波动预算 + 美元防御 + 持仓偏差带",
   semiconductor_option_proxy_observed_band025: "隐含波动预算 + 持仓偏差带",
   macro_real_yield_factor_tilt: "实际利率因子倾斜",

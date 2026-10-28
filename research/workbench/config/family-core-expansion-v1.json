@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_family_core_expansion_20261028_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "source_candidate_id": "equity_first_month_end_commitment_v1",
+  "source_targets_sha256": "58d38d198b383c91f8db938c60d4967e5fe23f8dde1ef06d93157d5bff286eb4",
+  "source_proof_sha256": "bc2b57bede44d4fdeaf18495ad55795982bf0463651d747c5d1d2c42712ff4f7",
+  "catalog_publication_commit": "83514dd1186ff4fe612c5078a7787509919f80cb",
+  "prior_completed_configurations": 185,
+  "prior_new_lane_registered_candidates": 7,
+  "prior_new_lane_completed_configurations": 7,
+  "prior_journal_sequence": 82,
+  "prior_journal_head_sha256": "d7944ac455326ecc8a6c6f6f859ce47ed05dad0899874bbf4d2f8c69620be771",
+  "new_economic_factor_definitions_in_this_study": 0,
+  "required_previously_registered_SSD_definitions": 2,
+  "minimum_economic_factor_families": 3,
+  "used_economic_factor_families": 6,
+  "factor_symbols": ["MTUM", "VLUE", "QUAL", "USMV", "IJR", "PKW"],
+  "factor_ids": [
+    "price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure",
+    "size_exposure_ijr_v1", "net_buyback_exposure_pkw_v1"
+  ],
+  "source_stock_share_preserved_SOXX": 0.5,
+  "equal_core_family_count": 6,
+  "cash_reserve": 0.02,
+  "weight_band": 0.025,
+  "candidate_count_in_this_study": 1,
+  "study_size_is_a_total_research_quota": false,
+  "candidates": [
+    {"id": "equity_month_end_six_family_core_v1", "core_composition": "equal_six_registered_families"}
+  ],
+  "methodology": {
+    "hypothesis": "Company size and net share reduction broaden the economic characteristics in the factor half of the equity allocation. Test that implementation-composition change while retaining the growth sleeve, aggregate risk decisions and execution law; do not tune another failed exit threshold or clock.",
+    "source": "Read the actual saved equity_first_month_end_commitment_v1 target matrix and proof. Do not rebuild its original 200-observation equity proxy, gold trend, month-end commitment or warmup. Its historical rejection remains a rejection.",
+    "allocation": "Keep every original non-core target, including SOXX, GLD and BIL, unchanged. Divide the sum of the four original factor targets equally among MTUM, VLUE, QUAL, USMV, IJR and PKW. In an equity intent SOXX remains half the equity allocation; each of six factor funds receives one twelfth. The 98% invested budget and 2% idle-cash target are unchanged.",
+    "signal_interpretation": "The preserved equity signal still refers to the original five-fund stock proxy. The new six-family portfolio is not used to reconstruct that signal. This isolates implementation composition, not a simultaneous signal change.",
+    "source_admission": "Use the already registered and actually published separate SSD catalog and fourteen-asset market. Preserve original twelve-asset numeric arrays and the exact RF reference; no original SQLite writes, W42 replay, current holdings substitution, price downloads or new factor definitions.",
+    "execution": "Reuse the unchanged funded simulator, pure 0.025 observed-holdings band, single pending request without overwrite/cancellation, base next-open5bp and stress extra-session20bp, USD1 tickets, fractional cash funding, original initial drawdown peak and no terminal liquidation. No broker orders.",
+    "acceptance": "All original ten-/five-year base/stress paths must jointly pass the unchanged net Sharpe>1, net CAGR>12%, DD<=15%, matched-cost SPY and QQQ gates and the additional stress-vs-base-SPY gate. Report actual turnover, tickets and costs without inventing a turnover cap.",
+    "prior_art": "The queued W42 equal/inverse-volatility six-family plans used a different aggregate equity/gold risk budget and remain unchanged. This one new version changes only the already saved monthly equity-first factor sleeve. It is not a backdated execution or registration of those old plans.",
+    "adaptive_selection": "Selected after185completed configurations, seven SSD rejections, saved loss diagnoses and source/catalog admission. The windows are repeatedly exposed history, not an untouched holdout. There is one fixed composition, no family-weight, timing or lookback grid.",
+    "limitations": "Six economic labels are not six orthogonal return streams. Shared equity beta, semiconductor concentration, small-cap liquidity, buyback leverage and overlapping quality/value exposures remain. More positions may increase costs; diversification need not fix drawdown or beat QQQ. Issuer mandates are current saved evidence, not full historical methodology continuity or direct-stock PIT data.",
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

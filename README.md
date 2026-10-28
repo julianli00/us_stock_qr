@@ -114,8 +114,21 @@ five families; the combined catalogs contain eight definitions across seven
 families. The new 14-asset historical panel preserves every original
 12-asset price cell and the exact RF reference, adding only IJR and PKW.
 Its fresh cache check is not newly retrieved prices or refreshed mandates.
-No new candidate has been selected or evaluated; the original W42 plans,
+That admission selected or evaluated no strategy; the original W42 plans,
 SQLite ledger, benchmark accounts and prospective models remain unchanged.
+
+The subsequent
+[family-core preregistration](research/workbench/evidence/family_core_expansion_20261028_registration_v1.json)
+freezes one new hypothesis at 2026-10-27 23:58:51 UTC. It preserves the actual
+saved monthly equity-first source, half-SOXX stock allocation, risk/defense
+decisions and execution. Only the other half of the stock allocation changes:
+six equal economic-family funds replace four. The signal still refers to
+the original stock proxy; it is not rebuilt using the new portfolio.
+Independent target proof has zero difference, with eight prefix checks and
+both full-window anchors defined. No new funded account or metric has been
+computed yet: eight SSD registrations, seven completed, one pending,
+28 paths and 185 combined completions. More families are not a drawdown
+guarantee or independent alpha.
 
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
