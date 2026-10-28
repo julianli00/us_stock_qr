@@ -1738,6 +1738,64 @@ Private review SHA256:
 Counts remain fifteen completed SSD hypotheses, 60 funded paths,
 193 combined completions and zero qualifiers.
 
+## Separately frozen continuous-simplex wealth learner
+
+[`config/simplex-wealth-average-v1.json`](config/simplex-wealth-average-v1.json)
+freezes one new construction after 193 exposed completed configurations.
+It averages the complete three-sleeve simplex under a uniform
+Dirichlet(1,1,1) prior, weighted by products of **already observed**
+monthly gross relative scores. The sleeves are the four-style core,
+SOXX and GLD. Core information uses the arithmetic mean of four fund
+gross relatives from equal **starting monthly capital**, not a
+daily-rebalanced index or a synthetic asset traded without tickets.
+
+A normalized Dirichlet-moment recursion integrates this polynomial
+exactly in algebra, evaluated in floating point. Its finite monomial
+states are not sampled expert portfolios or a parameter grid. There
+is no fitted prior, forgetting rate, temperature, lookback or historical
+best weight. Independent Gauss-Legendre simplex integration uses the
+degree of the observed polynomial to verify targets, never to choose
+allocation parameters.
+
+The actual first completed month end, 2015-08-31, is only an anchor.
+The first learning interval ends 2015-09-30; no return is invented
+for the initial partial month. At each original donor decision, only
+completed intervals through that close are available, followed by
+the unchanged one/two-session fill delay. Learning does not reset
+when the independent five-year funded account starts.
+
+The original saved dollar guard's BIL and total non-BIL budgets stay
+fixed. The learned fractions distribute non-BIL capital among the
+three sleeves, with the core divided equally among its four actual
+funds. The old half-SOXX and 30%--70% stock/gold fraction bounds are
+**explicitly replaced model choices**, not permanent user constraints
+or modifications to old studies. Long-only exposure, full funding,
+98% target investment and every user hard gate remain unchanged.
+
+This is a gross-score learning signal coupled to **one** actual
+net funded account. It is not a net wealth average of separately
+capitalized experts, a transaction-cost universal-portfolio theorem,
+predictive-likelihood DMA or a Sharpe/drawdown guarantee. Fees are
+charged by the original monthly observed 0.025-band executor, not
+silently omitted because the information score is gross.
+
+The [actual packet](evidence/simplex_wealth_average_20261028_registration_v1.json)
+records registration at 2026-10-28 12:48:33.777062 UTC, before target
+proof at 12:48:37.998866 UTC and packet creation at 12:48:38.000534 UTC.
+All 131 original decisions remain. The first and last targets use
+3 and 133 completed learning intervals; maximum independent weight
+difference is 3.34e-15. Five prefixes, both original formal anchors
+and positive participation by all four registered factor families
+pass. Twenty-four synthetic/lifecycle cases include an independent
+140-period integration check and no-replay/publication/expiry guards.
+These are not candidate account results.
+
+At registration there are sixteen SSD hypotheses registered, fifteen
+completed, one pending, 60 completed paths, 193 combined completions
+and zero qualifiers. Actual sanitized publication must precede all
+four fresh accounts. No old target generator, account or source
+acquisition is replayed.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,

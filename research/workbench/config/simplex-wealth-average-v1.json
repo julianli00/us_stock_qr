@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_simplex_wealth_average_20261028_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "prior_completed_configurations": 193,
+  "prior_journal_sequence": 178,
+  "prior_journal_head_sha256": "1be6c08f1f72d7a90b1e37343d5f05bee401d7a8622002ecb32135bf7badd160",
+  "source_candidate": "semiconductor_option_proxy_dollar_observed_band025",
+  "source_registration": {
+    "path": "evidence/implied_execution_20261012_registration.json",
+    "sha256": "5a52f3bafc13358933c67af51d2625455ac0bc4a56e5a79a555ed1dca80222bb"
+  },
+  "source_targets": {
+    "path": "data/implied-risk-execution-20261012/semiconductor_option_proxy_dollar_observed_band025-desired-targets.csv",
+    "sha256": "bd1c3ba7b9a1e5d1ace69a8e4d17b67b6ba8aafeab32ec2271e112bfdc957261"
+  },
+  "daily_proxy_registration": {
+    "path": "evidence/daily_variance_disagreement_20261028_registration_v1.json",
+    "sha256": "fe9d39e5bab50f33a71c36a303893e7ff6e9e2450bb39750fdd5855a4ee3d176"
+  },
+  "sleeves": ["four_style_core", "SOXX", "GLD"],
+  "dirichlet_prior": [1, 1, 1],
+  "learning_clock": "completed_XNYS_month_end_close_to_close",
+  "learning_window_reset": false,
+  "forgetting_or_temperature_parameter": null,
+  "monthly_decisions": 131,
+  "core_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "new_economic_factor_definitions": 0,
+  "cash_reserve": 0.02,
+  "actual_weight_trade_band": 0.025,
+  "candidate_count_in_this_study": 1,
+  "study_size_is_a_total_research_quota": false,
+  "candidates": [
+    {"id": "dollar_guarded_simplex_wealth_average_v1", "construction": "exact_uniform_simplex_gross_score_average"}
+  ],
+  "methodology": {
+    "question": "Can sequential averaging across constant risk-sleeve mixtures provide a useful growth-adaptive allocation without noisy forecast-mean optimization or selecting a historical best weight? One fixed continuous-prior learner,not a weight grid or revival of the failed variance partition.",
+    "information_sleeves": "Use the original actual price panel. At each completed month end,SOXX/GLD gross relatives are current adjusted close divided by previous completed month-end close. The four-style core relative is the arithmetic mean of the four individual fund relatives,equal starting monthly capital,not a daily-rebalanced synthetic index or a new traded asset.",
+    "prior_and_update": "Uniform Dirichlet(1,1,1) over the complete three-sleeve simplex. Weight each constant mixture by its product of observed monthly gross relative scores. Compute its mean weights exactly by a normalized Dirichlet-moment polynomial recursion;no sampled experts,quadrature grid for allocation,temperature,forgetting,lookback or fitted prior. Floating-point evaluation is independently checked by polynomial-exact Gaussian quadrature.",
+    "clock": "The first observed completed month end is only an anchor. Update only after the next completed month-end close;do not invent a return for the initial partial month or treat a truncated file end as a month end. Learning uses all preceding complete intervals and never resets for the five-year account. The current completed close can inform only the original later1/2-session execution.",
+    "allocation": "At each original131source decision,retain its exact BIL and total non-BIL dollar-guard budget. Split non-BIL among the learned core,SOXX,GLD fractions;divide core equally among four actual factor funds. The old half-SOXX and30%-70%stock/gold split are explicitly replaced by this new simplex architecture,not altered in old studies or treated as user hard constraints. All actual targets remain long-only/cash-funded/98%total.",
+    "execution": "One actual funded account,not wealth-averaged independently capitalized expert accounts. Use unchanged monthly observed0.025holding band,USD1tickets,5/20bp,1/2session delayed opens,fractional1x units/freshUSD10000,originalRF/initialpeak and full10y/5ywindows. Score states do not include fees and are not candidate net returns;acceptance uses only the actual funded account.",
+    "source_scope": "Original option quotes may authenticate the frozen donor targets but do not determine the new simplex fractions. Reuse the saved own-vintage dollar guard without retiming/reconstructing it. No market download,new family,source fallback,old account or target-generator replay.",
+    "limits": "This gross-score learner is not a transaction-cost universal-portfolio theorem,predictive-likelihood DMA,forward-return forecast or guaranteed Sharpe/DD/netbenchmark improvement. Past score adaptation can lag regime changes,concentrate risks or increase tickets. Algebraic moment states are not individually screened historical strategy configurations.",
+    "selection": "One fixed adaptive hypothesis after193exposed completions. No expert-grid/prior/temperature/forgetting/asset/clock/band search;no hindsight best mixture selected. Preserve every prior failure and broader stable references. A historical point pass is not selection-adjusted or independent prospective proof.",
+    "gross_scores_are_funded_net_performance": false,
+    "net_wealth_identity_or_theorem_claimed": false,
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

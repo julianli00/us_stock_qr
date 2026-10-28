@@ -532,7 +532,31 @@ also shows that USD1 fixed tickets break simple wealth scaling.
 This does not rule out cost-aware adaptations; it prevents transferring
 a gross mathematical guarantee to the existing delayed, fee-paying
 executor. No sixteenth model, expert grid or historical account was
-selected or evaluated. Counts remain 193 completed and zero qualifiers.
+selected or evaluated by that review. Its counts stayed at 193
+completed and zero qualifiers.
+
+The [sixteenth preregistration](research/workbench/evidence/simplex_wealth_average_20261028_registration_v1.json)
+now fixes one continuous-weight learning construction. A uniform
+three-sleeve prior averages constant mixtures of the equal-start
+four-style core, SOXX and GLD by their already observed monthly gross
+growth scores. An exact normalized moment recursion avoids a sampled
+expert grid or selection of the historical best mixture.
+
+The saved dollar-guard BIL/non-BIL budget and monthly funded executor
+remain. The old half-SOXX and 30%--70% stock split are explicitly
+replaced as model architecture, not relaxed user risk gates.
+Gross learning scores are not net account returns or a universal
+performance guarantee; only one actual funded account will trade.
+
+Actual registration at 2026-10-28 12:48:33 UTC precedes all 131 target
+proofs. Independent polynomial integration differs by at most
+3.34e-15 in target weight; five prefix checks and both complete formal
+windows retain all four genuine factor families. Learning starts from
+the first completed August 2015 month-end anchor, with the first
+matured interval ending September 2015; it does not reset for the
+five-year account. Sixteen hypotheses are registered, fifteen
+completed and one pending. No new candidate account has run; actual
+remote publication must still precede the four funded paths.
 
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).

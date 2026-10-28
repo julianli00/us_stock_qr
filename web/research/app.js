@@ -23,6 +23,7 @@ const titles = {
   daily_proxy_nearest_band_execution_v1: "月末持仓带：最近可行点执行",
   daily_proxy_relative_equity_odds_v1: "月末股票内部：半导体/核心相对财富",
   dollar_option_two_segment_variation_v1: "月末股金：隔夜与开盘后两区间代理",
+  dollar_guarded_simplex_wealth_average_v1: "月末组合：连续权重财富平均",
   semiconductor_option_proxy_dollar_observed_band025: "隐含波动预算 + 美元防御 + 持仓偏差带",
   semiconductor_option_proxy_observed_band025: "隐含波动预算 + 持仓偏差带",
   macro_real_yield_factor_tilt: "实际利率因子倾斜",
