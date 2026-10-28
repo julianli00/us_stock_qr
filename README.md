@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completed configurations preserved; eight reference accounts; seven completed/rejected hypotheses across four cohorts | Separate versioned net-CAGR/SPY/QQQ criteria; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 18 SSD registrations, 17 completed/rejected and one preparation failure; 68 funded strategy paths | Separate net-CAGR/SPY/QQQ criteria; zero qualifiers, no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -673,10 +673,10 @@ The older robust reference still has better Sharpe and lower drawdown.
 
 The explicit 2022-12-30 source abstention issued no new request;
 that actual return day remains in all four accounts. It does not
-repair ANFCI's full-source admission. Counts are seventeen completed
-SSD hypotheses, 68 funded paths, 195 combined completions and
-zero qualifiers. No eighteenth model or post-result threshold rescue
-is selected.
+repair ANFCI's full-source admission. At that result snapshot, counts
+were seventeen completed SSD hypotheses, 68 funded paths,
+195 combined completions and zero qualifiers. No eighteenth model
+or post-result threshold rescue had yet been selected.
 
 The saved guard diagnosis shows that, among 130 fresh paired
 opportunities, **63 original half-risk guards were released**, only
@@ -692,6 +692,33 @@ All observed maximum-drawdown intervals end before the later
 2022-12-30 source abstention, so that missing-data event cannot
 explain those earlier losses. Lower costs did not preserve the
 donor's risk protection.
+
+The [eighteenth registration and preparation failure](research/workbench/evidence/ordered_path_growth_20261028_preparation_failure_v1.json)
+records a different price-only construction: maximize past terminal
+wealth while constraining every ordered peak-to-later-trough decline
+in a constant-unit training portfolio. The 252-return window,
+15% training limit, 98% invested budget, existing stock basket and
+14.7% minimum stock capital were frozen before any real optimization.
+The training bound is not a forecast or actual net-account result.
+
+Actual registration occurred at **2026-10-28 18:40:06 UTC**.
+Preparation stopped at **18:40:20 UTC**, before a target-proof
+packet or any funded account. A separate, fixed-parameter diagnostic
+reproduced the first failure on 2026-04-30: raw GLD weight
+`-2.9006786461321336e-10`, with the budget sum exactly `0.98`.
+The original solver permits `1e-9` feasibility error, but the
+unchanged nonnegative cleanup accepts only `1e-10`; it correctly
+refused to emit that negative target.
+
+This is a retained **technical failure**, not an evaluated portfolio
+loss or established economic infeasibility. Version 1 is frozen and
+will not be retried. Any numerical correction needs a separate
+version and publication before accounts; no correction is yet
+implemented or registered. Counts are now **18 registered,
+17 completed/reviewed, one technical failure, zero pending,
+68 funded paths, 195 combined completions and zero qualifiers**.
+The dashboard shows null metrics for the failed preparation, not
+zero returns or a fabricated target proof.
 
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).

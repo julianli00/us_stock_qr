@@ -446,8 +446,83 @@ def ssd_first_pair(inputs: PublishedInputs, node: dict) -> dict:
     }
 
 
+def ssd_preparation_failure(inputs: PublishedInputs, item: dict, node: dict, packet: dict) -> dict:
+    if (
+        packet.get("schema_version") != 3
+        or packet.get("record_type") != "registered_preparation_failure"
+        or packet.get("program_id") != "ssd_continuous_research_v1"
+        or packet.get("study_id") != item["study_id"]
+        or any(item[key] is not None for key in ("results", "results_sha256", "preregistration_commit"))
+        or any(packet.get(key) is not False for key in (
+            "candidate_accounts_or_metrics_computed", "target_proof_completed",
+            "investment_objective_verified", "independent_forward_validation", "order_authority"))
+    ):
+        raise DashboardError("ssd_preparation_failure_boundary_mismatch")
+    entries = packet["entries"]
+    created = datetime.fromisoformat(packet["created_at"])
+    if (
+        not entries or len({row["candidate_id"] for row in entries}) != len(entries)
+        or created.tzinfo is None or created > datetime.now(timezone.utc)
+    ):
+        raise DashboardError("ssd_preparation_failure_identity_mismatch")
+    candidates, failures = [], []
+    for entry in entries:
+        specification = entry["specification"]
+        frozen = specification["frozen"]
+        policy_ref = frozen["policy"]
+        policy = inputs.read(WORKBENCH + policy_ref["path"], policy_ref["sha256"])
+        registered = datetime.fromisoformat(entry["registered_at"])
+        failed = datetime.fromisoformat(entry["failed_at"])
+        if (
+            specification["candidate"]["id"] != entry["candidate_id"]
+            or frozen["study_id"] != item["study_id"]
+            or frozen["protocol"] != {
+                "path": node["protocol"][len(WORKBENCH):], "sha256": node["protocol_sha256"]}
+            or policy["candidates"] != [row["specification"]["candidate"] for row in entries]
+            or registered.tzinfo is None or failed.tzinfo is None
+            or not registered <= failed <= created
+            or not re.fullmatch(r"[0-9a-f]{64}", entry["registered_event_sha256"])
+            or not re.fullmatch(r"[0-9a-f]{64}", entry["failure_event_sha256"])
+            or entry["status"] != "technical_failure"
+            or entry["failure_stage"] != "ordered_path_preparation"
+            or not isinstance(entry["failure_reason"], str) or not entry["failure_reason"]
+            or entry["target_proof"] is not None or entry["target_proof_at"] is not None
+            or entry["candidate_accounts_started"] is not False
+            or entry["partial_outputs_retained"] is not True or entry["paths"] != []
+        ):
+            raise DashboardError("ssd_preparation_failure_record_mismatch")
+        candidates.append({
+            "id": entry["candidate_id"], "title": entry["candidate_id"].replace("_", " "),
+            "scope": "ssd_v1", "study_id": item["study_id"], "status": "technical_failure",
+            "full_gate_pass": False, "reviewed_at": None,
+            "failure_stage": entry["failure_stage"], "failed_at": entry["failed_at"],
+            "paths": [{"years": years, "scenario": scenario, "metrics": None,
+                       "execution": None, "gates": {}, "status": "technical_failure"}
+                      for years, scenario in CELLS],
+        })
+        failures.append(entry["failed_at"])
+    expected = {
+        "new_registered_candidates": len(entries), "new_completed_configurations": 0,
+        "new_completed_strategy_evaluations": 0, "new_reviews": 0,
+        "new_technical_failures": len(entries), "new_pending_candidates": 0,
+        "new_historical_point_gate_passes": 0, "new_account_paths": 0,
+    }
+    if any(type(packet.get(key)) is not int or packet[key] != value for key, value in expected.items()):
+        raise DashboardError("ssd_preparation_failure_count_mismatch")
+    return {
+        "registered": len(entries), "completed": 0, "reviews": 0,
+        "technical_failures": len(entries), "pending": 0, "qualified": 0, "account_paths": 0,
+        "study_id": item["study_id"], "candidates": candidates,
+        "registration_evidence": item["registration"], "results_evidence": None,
+        "completed_at": max(failures, key=datetime.fromisoformat),
+        "terminal_preparation_failure_without_target_proof": True,
+    }
+
+
 def ssd_cohort(inputs: PublishedInputs, item: dict, node: dict, protocol: dict, benchmarks: dict) -> dict:
     packet = inputs.read(item["registration"], item["registration_sha256"])
+    if packet.get("schema_version") == 3:
+        return ssd_preparation_failure(inputs, item, node, packet)
     registered = {row["candidate_id"]: row for row in packet["entries"]}
     if (
         packet["schema_version"] != 2 or packet["program_id"] != "ssd_continuous_research_v1"

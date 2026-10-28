@@ -2261,9 +2261,89 @@ replayed, and no real signal or account was regenerated.
 All 96 direct references, frozen inputs, the 202-event SSD journal
 and original ledger remain unchanged. Private v2 assessment SHA256:
 `48107bab2fd7a8e2701a9cef4940aa1ce6d2076e266e7b8e30cd0cbb10d011d1`.
-Counts remain seventeen completed SSD hypotheses, 68 paths,
-195 combined completions and zero qualifiers. No new parameter,
-source admission or eighteenth model is selected.
+At that diagnosis, counts remained seventeen completed SSD
+hypotheses, 68 paths, 195 combined completions and zero qualifiers.
+No new parameter, source admission or eighteenth model had yet
+been selected.
+
+## Eighteenth construction: ordered training path, failed preparation
+
+[`config/ordered-path-growth-v1.json`](config/ordered-path-growth-v1.json)
+freezes a price-only construction rather than another macro-confirmation
+or guard-threshold revision. At genuine month ends with 253 completed
+closes, it constructs constant-unit training paths for the fixed stock
+basket, GLD and BIL. The stock basket starts with half SOXX and equal
+shares of MTUM, VLUE, QUAL and USMV in its other half; it is not a
+daily-rebalanced synthetic fund.
+
+ETF weights sum to 98% of total capital, leaving 2% zero-interest
+idle cash. The 14.7% minimum stock allocation comes from the earlier
+guarded minimum, not a new user-supplied constraint. The primary LP
+maximizes terminal observed training wealth subject to all **31,878
+ordered peak-to-later-trough inequalities** limiting that training
+wealth's decline to 15%. A secondary LP maximizes BIL within `1e-10`
+of the primary optimum. Chronological order and `highs-ds` are fixed.
+The metadata calendar allows 122 month-end opportunities beginning
+2016-08-31; this is not a claim that 122 real targets were produced.
+
+The gross constant-unit training bound does not forecast subsequent
+losses or establish a bound for the actual monthly, cost-bearing
+account. Original four-path net CAGR, Sharpe, drawdown and dual-return
+benchmark requirements, costs, delays and the 0.025 observed-holding
+execution band remain unchanged. The original source loader still
+checks inherited dependencies, but macro and option values are not
+allocation inputs. No new source observations were acquired.
+
+### Actual registration, numerical stop and retained failure
+
+The [schema3 failure evidence](evidence/ordered_path_growth_20261028_preparation_failure_v1.json)
+records registration event **203**, at
+**2026-10-28T18:40:06.234535Z**, and terminal preparation failure
+event **204**, at **18:40:20.614268Z**. The first attempt stopped on
+the nonnegative funded-budget check before producing a target matrix,
+target-proof packet or any candidate account. Its original policy,
+implementation, tests, intent and actual failure remain frozen.
+
+A separately intent-bound diagnostic reproduced the original LP
+sequence once, with identical economic constraints, objectives,
+solver and tolerances, stopping at its first original budget violation.
+It did not call the registered main, target builder or account runner.
+The first violation was the 117th decision, **2026-04-30**:
+
+| Numerical witness | Actual value |
+|---|---:|
+| Raw GLD weight | `-2.9006786461321336e-10` |
+| ETF budget sum | `0.98` |
+| Budget sum error | `0` |
+| Original solver feasibility tolerance | `1e-9` |
+| Original certificate tolerance | `1e-7` |
+| Nonnegative-weight cleanup gate | `1e-10` |
+| Primal-dual gap | `3.3905860855934345e-16` |
+
+The raw negative weight is within the solver and certificate
+tolerances but outside the stricter cleanup guard. The guard correctly
+stopped the version instead of silently emitting a negative funded
+allocation. This is not established economic infeasibility or a
+financial-performance rejection. Raw numerical matrices and complete
+certificates remain private; the public packet retains only the
+bounded scalar witness and artifact identities.
+
+Version 1 will not be edited, reset or retried. A separately versioned
+change to tighten solver precision, without loosening cleanup,
+economic constraints or financial gates, is only a possible next
+step: no such version is yet implemented, tested or registered.
+It would be a numerical correction, not a new independent economic
+idea, and would still require actual registration and publication
+before funded outcomes.
+
+The original schema2 dashboard proof/publication rules remain intact.
+The new narrow schema3 route represents only registered preparation
+failure with **null target proof, no publication-before-account claim,
+zero accounts and null metrics**. Current counts are **18 registered,
+17 completed/reviewed, one technical failure, zero pending,
+68 funded paths, 195 combined completions and zero qualifiers**.
+The original ledger, all prior results and the two one-day forward
+models remain unchanged.
 
 ## Independent IBKR price-history source boundary
 

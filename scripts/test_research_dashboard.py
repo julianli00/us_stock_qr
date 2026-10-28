@@ -291,6 +291,70 @@ class ProjectionTests(unittest.TestCase):
             self.assertEqual(len(candidate["paths"]), 4)
             self.assertTrue(all(path["metrics"] is None for path in candidate["paths"]))
 
+    def synthetic_preparation_failure(self) -> Path:
+        root = self.synthetic_ssd_cohort()
+        progress = json.loads((root / "docs/research_progress.json").read_text())
+        node = progress["ssd_continuous_research_v1"]
+        item = node["additional_cohorts"][0]
+        path = root / item["registration"]
+        packet = json.loads(path.read_text())
+        packet.update(
+            schema_version=3, record_type="registered_preparation_failure",
+            target_proof_completed=False, new_completed_configurations=0,
+            new_completed_strategy_evaluations=0, new_reviews=0,
+            new_technical_failures=2, new_pending_candidates=0,
+            new_historical_point_gate_passes=0, new_account_paths=0,
+        )
+        for entry in packet["entries"]:
+            entry.update(
+                target_proof=None, target_proof_at=None, status="technical_failure",
+                failed_at=packet["created_at"], failure_event_sha256="f" * 64,
+                failure_stage="ordered_path_preparation", failure_reason="synthetic numerical failure",
+                candidate_accounts_started=False, partial_outputs_retained=True, paths=[],
+            )
+        path.write_text(json.dumps(packet))
+        item["registration_sha256"] = hashlib.sha256(path.read_bytes()).hexdigest()
+        node["aggregate_counts"].update(pending=0, technical_failures=2)
+        (root / "docs/research_progress.json").write_text(json.dumps(progress))
+        return root
+
+    def test_ssd_preparation_failure_keeps_registration_without_inventing_target_proof(self) -> None:
+        result = build_snapshot(self.synthetic_preparation_failure())
+        ssd = result["ssd_research"]
+        self.assertEqual((ssd["registered"], ssd["completed"], ssd["technical_failures"],
+                          ssd["pending"], ssd["account_paths"]), (4, 2, 2, 0, 8))
+        for candidate in ssd["candidates"][2:]:
+            self.assertEqual(candidate["status"], "technical_failure")
+            self.assertFalse(candidate["full_gate_pass"])
+            self.assertTrue(all(path["metrics"] is None and path["execution"] is None
+                                and path["gates"] == {} for path in candidate["paths"]))
+        self.assertEqual(result["summary"], self.current["summary"])
+        self.assertEqual(result["forward"], self.current["forward"])
+
+    def test_ssd_preparation_failure_rejects_proof_account_count_or_clock_fabrication(self) -> None:
+        mutations = [
+            lambda packet: packet["entries"][0].update(target_proof={"invented": True}),
+            lambda packet: packet["entries"][0].update(candidate_accounts_started=True),
+            lambda packet: packet["entries"][0].update(failed_at="2000-01-01T00:00:00Z"),
+            lambda packet: packet["entries"][0].update(paths=[{"invented": True}]),
+            lambda packet: packet.update(new_completed_strategy_evaluations=1),
+            lambda packet: packet.update(candidate_accounts_or_metrics_computed=True),
+            lambda packet: packet["entries"][0].update(failure_stage="account_evaluation"),
+        ]
+        for mutate in mutations:
+            with self.subTest(mutation=mutate):
+                root = self.synthetic_preparation_failure()
+                progress = json.loads((root / "docs/research_progress.json").read_text())
+                item = progress["ssd_continuous_research_v1"]["additional_cohorts"][0]
+                path = root / item["registration"]
+                packet = json.loads(path.read_text())
+                mutate(packet)
+                path.write_text(json.dumps(packet))
+                item["registration_sha256"] = hashlib.sha256(path.read_bytes()).hexdigest()
+                (root / "docs/research_progress.json").write_text(json.dumps(progress))
+                with self.assertRaises(DashboardError):
+                    build_snapshot(root)
+
     def change_pending_ssd_registration(self, root: Path, mutate) -> None:
         progress = json.loads((root / "docs/research_progress.json").read_text())
         item = progress["ssd_continuous_research_v1"]["additional_cohorts"][0]
