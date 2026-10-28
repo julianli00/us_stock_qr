@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_relative_equity_odds_20261028_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "prior_completed_configurations": 191,
+  "prior_journal_sequence": 154,
+  "prior_journal_head_sha256": "3c68f3bc663ea90c9cce0e3ad44f32c4e0d24ca3597ed62d0151992d13e3eb2b",
+  "source_candidate": "dollar_option_daily_variance_disagreement_v1",
+  "source_registration": {
+    "path": "evidence/daily_variance_disagreement_20261028_registration_v1.json",
+    "sha256": "fe9d39e5bab50f33a71c36a303893e7ff6e9e2450bb39750fdd5855a4ee3d176"
+  },
+  "source_targets": {
+    "path": "data/ssd-daily-variance-disagreement-20261028-v1/dollar_option_daily_variance_disagreement_v1/targets.csv",
+    "sha256": "665f4a7c8e43fc6030eddf6b6c0bb4b342beeef9caeb683dd87271008a49ec8d"
+  },
+  "lookback_sessions": 126,
+  "skip_recent_sessions": 21,
+  "original_source_months": 131,
+  "eligible_source_months": 128,
+  "undefined_prehistory_source_months": 3,
+  "core_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "new_economic_factor_definitions": 0,
+  "cash_reserve": 0.02,
+  "actual_weight_trade_band": 0.025,
+  "candidate_count_in_this_study": 1,
+  "study_size_is_a_total_research_quota": false,
+  "candidates": [
+    {"id": "daily_proxy_relative_equity_odds_v1", "construction": "SOXX_vs_equal_start_core_relative_wealth"}
+  ],
+  "methodology": {
+    "question": "FixedhalfSOXX/halfcore is a sourcearchitecture,not a permanentuserconstraint. Test one continuous relative-wealth allocation between these two equity sleeves while preserving the source total equity and all defensive allocations. Relativeleadership may persist or reverse;the hypothesis is not assumed to producealpha.",
+    "observation": "At each eligibleoriginalmonthend,divide adjustedprice atD-21 byadjustedprice atD-126 forSOXX andeachof4stylefunds. This reuses the already specified126lookback/21skip pair anduses105observeddailyreturns,not a newwindowsearch. Coregrosswealth is the arithmeticmeanof4grossfundreturns from equalstartcapital,not a syntheticdaily-rebalancedindex.",
+    "rule": "LetG_SOXX be its positivegrosswealthfactor andG_core the equal-startcoregrosswealthfactor. Within the unchanged source stockbudget setSOXXshare=G_SOXX/(G_SOXX+G_core);the remainingstockbudget isshared equallyamongfouractualstylefunds. Equalrelativewealth recoversthe sourcehalf/halflaw. No fittedtemperature,satellitecap,rankshares orsubsetselection.",
+    "preservation": "Read exactfrozeneleventhdesiredtargets;neverrebuildtheoldsource. Oneligiblemonthends preserve combinedSOXX+fourstylebudget,GLD,BIL,unusedassets andtotal98%investment exactly. Sourceoption/dollarbudget logic andoriginalmonthly0.025observed-holdingexecution/fees/delays remain unchanged. Actualrisk isnotclaimedequal whencompositionchanges.",
+    "warmup": "The originalfirst3prehistorysource months2015-11through2016-01lack126observations andstayfullyundefined,notfilledwithneutralshares orborrowedfutureprices. Eligibilitybegins2016-02-29. Both formal2016-10-06 and2021-10-06 windows havecausalprior sourceanchors;all2512/1254returnsremain. Unknownmissingdata outside thisdeclaredwarmup isfatal.",
+    "prior_art": "Earlierleadershipstudies movedonlya fixedsatellitebudget betweenSOXX andSPY,andcoremomentum studiesrankedonlyfourstylefunds insideafixedcore. This rulechangesSOXX/corebudgetcontinuously fromrelativewealth without changingtotalstockexposure. Itdoesnotrename theirbinaryswitch,rankshare orriskbalance outcomes.",
+    "execution": "OriginalfreshUSD10000,1xcash-fundedfractionalholdings,USD1tickets,5bpnext-openbase/20bpextra-sessionstress,datedpendingrequests,RF andinitialcapitaldrawdownpeak. Noaccountreplay,shorts,leverage,newasset/source,feeenginechange orriskoverride.",
+    "limitations": "Semiconductorconcentration andrisk can increase,leadership may reverse,andallhistoricalintervalsareexposed. Fourfactorfundsremainpositiveatfinitevalidprices,butthatdoesnotcreateindependentfamilies orfutureproof. No metricsplicing orpostoutcomewindow/share/thresholdgrid.",
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

@@ -1375,6 +1375,53 @@ and 154-event journal remain unchanged. Private assessment SHA256:
 Counts remain thirteen completed hypotheses, 52 paths, 191 combined
 completions and zero qualifiers. No new parameter or model is selected.
 
+## Continuous semiconductor/core relative-wealth allocation
+
+The [fourteenth registration](evidence/relative_equity_odds_20261028_registration_v1.json)
+fixes `daily_proxy_relative_equity_odds_v1`. Actual registration at
+2026-10-28 11:07:49.984648 UTC precedes proof at 11:07:53.000217 UTC and
+packet creation at 11:07:53.001499 UTC. No account outcome exists at
+this preregistration fence.
+
+The source's total equity, GLD, BIL, other targets and monthly execution
+remain unchanged. Only the division of equity between SOXX and the
+four-style core changes. Source half/half composition is a model choice,
+not a permanent user constraint.
+
+At each eligible source month end, use prices at D-126 and D-21: the
+inherited 126-observation lookback with a 21-session skip contains 105
+actual returns. SOXX gross wealth is its endpoint price ratio. Core
+gross wealth is the arithmetic mean of the four fund ratios, representing
+equal **starting** capital, not a synthetic daily-rebalanced traded index.
+The semiconductor share is SOXX gross wealth divided by SOXX plus core
+gross wealth; the remaining stock budget stays equally in four styles.
+Equal relative wealth recovers the original half/half composition.
+
+This differs from old binary SOXX/SPY switching inside a fixed satellite
+and old four-style ranking inside a fixed core. There is no fitted
+temperature, satellite fraction/cap, subset, risk-budget or observation
+window grid. Positive finite wealth factors keep actual style exposures,
+but do not guarantee comparable risk, alpha or future outperformance.
+
+The first three source month ends, 2015-11 through 2016-01, lack the
+full inherited history and remain wholly undefined. They are genuine
+prehistory warmup, not filled neutral signals or retroactively removed
+losses. There are 128 eligible dates from 2016-02-29 through 2026-09-30.
+Both original formal anchors are causally seeded; all 2,512/1,254
+formal returns remain. Unknown source gaps are fatal.
+
+The independent proof compounds individual daily ratios rather than
+reusing the endpoint formula, with maximum target difference
+4.440892098500626e-16. Five prefix checks, unchanged equity/defense budgets
+and all four factor exposures in every formal desired state pass.
+The old source generator or account is not replayed.
+
+Original monthly observed-weight execution, USD10,000 fresh capital,
+1x cash funding, USD1 tickets, 5/20bp costs, one/two-session delays, RF,
+initial drawdown peak and all joint four-window gates remain. Counts
+at preregistration are fourteen registered, thirteen completed, one
+pending, 52 paths and 191 combined completed configurations.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,

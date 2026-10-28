@@ -409,6 +409,19 @@ fees. Its fee contribution, normalized to each actual account's prior
 NAV and timing, is slightly negative rather than positive. This is not
 a causal or zero-fee counterfactual, and no account was replayed.
 
+The [fourteenth preregistration](research/workbench/evidence/relative_equity_odds_20261028_registration_v1.json)
+tests a distinct **within-equity** construction. Preserve the eleventh
+source's total stock, gold and BIL budgets, but allocate SOXX versus the
+equal-start four-fund core continuously from their relative gross wealth
+over the inherited 126-session window, excluding the latest 21 sessions.
+This is not the old binary SOXX/SPY switch or within-core rank allocation.
+
+Actual registration at 2026-10-28 11:07:49 UTC preceded the independent
+128-target proof. Three insufficient prehistory months stay undefined;
+both full ten/five-year windows retain every return and causal initial
+anchor. No new account has run: fourteen registered, thirteen completed,
+one pending, 52 paths and 191 combined completions.
+
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
 
