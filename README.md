@@ -452,6 +452,23 @@ and fees. It does not establish a causal or forward return advantage.
 The three undefined prehistory dates remain excluded from this
 descriptive target comparison, not replaced with 50% observations.
 
+The [fifteenth preregistration](research/workbench/evidence/split_session_variation_20261028_registration_v1.json)
+tests additional daily-open information, not another share or lookback
+choice. Split each of the same 21 completed SPY daily log returns into
+previous-close-to-open and open-to-close movements, then sum their
+squares before annualizing. Opposite movements no longer cancel before
+squaring; same-direction movements can instead lower this proxy.
+The source dollar guard, relative stock composition, 131 monthly
+decisions, option-odds law, bounds and monthly execution stay unchanged.
+
+Actual registration at 2026-10-28 11:45:21 UTC precedes its independent
+target proof. This uses already admitted adjusted model prices, not
+high-frequency observations, a range estimator or true variance-risk
+premium. At preregistration, fifteen SSD hypotheses are registered,
+fourteen completed and one pending; all 56 completed paths and 192
+combined completions remain, with zero qualifiers. No new candidate
+account has run; actual remote publication is still required.
+
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
 

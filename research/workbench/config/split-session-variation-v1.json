@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_split_session_variation_20261028_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "prior_completed_configurations": 192,
+  "prior_journal_sequence": 166,
+  "prior_journal_head_sha256": "e2d1ef0ff76db4e232dfd0d0a0ae15bcdccfbcba335b606867c7160094344793",
+  "source_candidate": "semiconductor_option_proxy_dollar_observed_band025",
+  "source_registration": {
+    "path": "evidence/implied_execution_20261012_registration.json",
+    "sha256": "5a52f3bafc13358933c67af51d2625455ac0bc4a56e5a79a555ed1dca80222bb"
+  },
+  "source_targets": {
+    "path": "data/implied-risk-execution-20261012/semiconductor_option_proxy_dollar_observed_band025-desired-targets.csv",
+    "sha256": "bd1c3ba7b9a1e5d1ace69a8e4d17b67b6ba8aafeab32ec2271e112bfdc957261"
+  },
+  "monthly_options": {
+    "path": "data/gold-volatility-inputs-20261011/monthly-closes.csv",
+    "sha256": "f4afd690798d9eaa46da84674a9bf1ec47e54e84d82cd77cc41f666e14d74a79"
+  },
+  "daily_proxy_registration": {
+    "path": "evidence/daily_variance_disagreement_20261028_registration_v1.json",
+    "sha256": "fe9d39e5bab50f33a71c36a303893e7ff6e9e2450bb39750fdd5855a4ee3d176"
+  },
+  "realized_return_sessions": 21,
+  "annualization_sessions": 252,
+  "segments_per_session": 2,
+  "monthly_decisions": 131,
+  "equity_share_min": 0.30,
+  "equity_share_max": 0.70,
+  "growth_share_of_equity": 0.50,
+  "core_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "new_economic_factor_definitions": 0,
+  "cash_reserve": 0.02,
+  "actual_weight_trade_band": 0.025,
+  "candidate_count_in_this_study": 1,
+  "study_size_is_a_total_research_quota": false,
+  "candidates": [
+    {"id": "dollar_option_two_segment_variation_v1", "construction": "overnight_and_open_to_close_squared_returns"}
+  ],
+  "methodology": {
+    "question": "Can additional already-admitted daily-open information distinguish price-path variation from close-to-close cancellation, within the original option/dollar allocation architecture? This is one information-sampling hypothesis, not a window/share/band search or a demonstrated return predictor.",
+    "proxy": "For each of the same21completed sessions, compute o=log(adjusted_open/current_previous_adjusted_close) and d=log(adjusted_close/adjusted_open). The annualized proxy is252*mean(o^2+d^2), not504times a daily sum, not a centered sample variance and not a weighted average over unequal clock durations.",
+    "identity": "The original daily log return is o+d. Its squared variation equals this proxy plus252*mean(2*o*d). The two-segment proxy can be higher or lower; it is not guaranteed more conservative. If either segment is zero every day it recovers the existing close-only proxy. Opposite movements can expose variation despite zero close-to-close change.",
+    "allocation": "Use the same unit-coefficient odds law as the eleventh study: equity fraction GVZ*VIX/(GVZ*VIX+two_segment_proxy) in decimal volatility units, clipped to original30%-70%bounds. Preserve original half-SOXX/equal-four-style relative equity composition, source BIL and non-BIL dollar-guard scale, all131monthly decisions and unchanged monthly observed0.025band execution.",
+    "source": "Read the unchanged admitted twelve-fund panel and saved original guarded targets. Both SPY price fields are vendor-adjusted model prices: adjusted open=raw open*adjusted close/raw close. Cross-day adjustment changes, distributions and weekend gaps follow that existing convention. This is not an authenticated auction-price or actual overnight-only trading return series. All values are known only after the completed signal close, for original1/2session-later execution.",
+    "scope": "Two coarse daily intervals are not high-frequency realized variance, true quadratic variation, true variance risk premium, intraday-paper replication, a Yang-Zhang/Rogers-Satchell range estimator or a new economic factor. No high/low data, new feed, interpolation, source-gap fill or inferred option return is used.",
+    "execution": "One freshUSD10000 account per original10y/5y/base-stress path, all12assets1x/fractional/cash-funded, originalRF/initialpeak/USD1tickets/5-20bp/1-2session delay. No broker action, old account replay, early fill or pending-request cancellation.",
+    "selection": "Chosen after192exposed completed configurations. Keep all earlier failures and broader older-reference/eleventh/twelfth/fourteenth comparisons without selecting passing metrics. A fixed additional information partition is not an independent holdout; no coefficient/segment/window/share/band/asset grid or post-result estimator rescue.",
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

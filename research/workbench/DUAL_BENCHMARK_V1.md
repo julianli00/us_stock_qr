@@ -1505,6 +1505,60 @@ journal remain unchanged. Private assessment SHA256:
 Counts remain fourteen completed hypotheses, 56 paths, 192 combined
 completions and zero qualifiers. No new parameter or model is selected.
 
+## Separately frozen two-segment information study
+
+[`config/split-session-variation-v1.json`](config/split-session-variation-v1.json)
+asks whether an already admitted daily open adds useful price-path
+information beyond the eleventh study's close-only squared returns.
+It does not tune the failed composition shares, risk bounds, window,
+coefficient or holding band.
+
+Each of the same 21 completed sessions contributes two squared log
+movements: previous adjusted close to adjusted open, and that open to
+that session's adjusted close. Sum the two within each session, average
+over 21 sessions and annualize by 252, **not 504**. The close-only
+measure equals this measure plus twice the mean product of the two
+movements, with the same annualization. A cancellation can hide
+variation in the daily net return; persistent same-direction moves
+can make the two-segment measure lower. This is not a guaranteed
+conservative risk estimate.
+
+Retain the eleventh unit-coefficient option-odds rule, original
+30%--70% stock fraction bounds, half-SOXX/equal-four-style stock
+composition, saved original dollar guard, BIL amount, 98% target
+investment and every original monthly decision. This study does not
+continue the fourteenth within-equity share rule. All original
+USD10,000 accounts, funding, delayed opens, monthly 0.025 observed
+holding band and four-path dual-benchmark gates remain.
+
+The admitted panel contains 2,805 complete price sessions and all
+131 source months have sufficient prior observations. Opens are
+vendor-adjusted model prices under the existing raw-open times
+adjusted-close/raw-close convention. Cross-day distribution
+adjustments and weekend gaps follow that convention; these are not
+authenticated auction prints or standalone overnight-trading returns.
+Two coarse intervals are not high-frequency realized variance, true
+variance premium or an imported literature forecast. A range-estimator
+literature search returned a transport HTTP 504 and supplied no
+verified paper or formula; its actual failure is retained privately.
+No Yang-Zhang/Rogers-Satchell/high-low construction is claimed.
+
+The [actual packet](evidence/split_session_variation_20261028_registration_v1.json)
+records registration at 2026-10-28 11:45:21.052080 UTC, before target
+proof at 11:45:22.071005 UTC and packet creation at 11:45:22.072293 UTC.
+All 131 targets retain the source decision lattice. Independent
+ratio-log reconstruction differs by at most 1.15e-14 in weight; the
+squared-return identity differs by at most 1.39e-16. Five prefixes,
+both full-window anchors, four actual registered economic families
+and 24 synthetic/lifecycle cases are preserved in the evidence.
+These are not candidate account metrics.
+
+At this registration there are fifteen SSD registrations, fourteen
+completions, one pending hypothesis, 56 completed funded paths,
+192 combined completions and zero qualifiers. A real sanitized
+preregistration publication must precede all new accounts; no old
+account, target preparation or diagnostic main is replayed.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,
