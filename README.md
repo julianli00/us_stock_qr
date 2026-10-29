@@ -1124,7 +1124,7 @@ Only five-year base passes every path-level historical gate.
 Ten-year growth is stronger than the prior equal-core and
 price-core references, but Sharpe is lower and five-year stress is
 weaker. Converged state estimation is not robust financial
-qualification. Current totals are **24 registered, 23 completed,
+qualification. At that completion, totals were **24 registered, 23 completed,
 one original technical failure, zero pending, 92 funded paths,
 201 combined completions and zero qualifiers**.
 
@@ -1145,6 +1145,24 @@ actual-account accounting findings, not a fee-only/delay-only
 causal experiment or a new qualifying model. The [full diagnosis
 summary](research/workbench/DUAL_BENCHMARK_V1.md#saved-hmm-states-and-execution-diagnosis-only)
 preserves all four paths and the unchanged rejection.
+
+A new [three-way session-momentum registration](research/workbench/evidence/hmm_core_session_momentum_20261029_registration_v1.json)
+keeps that HMM's saved total risk and noncore targets, without
+refitting it. Only the four-style core ranking changes: ordinary
+close-to-close momentum versus signed overnight and intraday
+components, all over the same skipped 105-return window and
+original 35/30/20/15% rank shares.
+
+The three actual registrations at **2026-10-29T08:18:12Z** precede
+all real component scores and targets. Each preserves all 122
+source month ends, four factor families and both full account
+anchors. **No new funded account has run at this snapshot**;
+actual remote publication must precede all twelve original
+window/cost paths. Session-specific scoring is not an
+overnight-only or intraday-only trading strategy.
+Current totals are **27 registered, 23 completed, one retained
+technical failure, three pending, 92 funded paths, 201 combined
+completions and zero qualifiers**.
 
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).

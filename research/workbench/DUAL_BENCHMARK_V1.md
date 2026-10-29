@@ -3917,6 +3917,94 @@ own results. Priors, transition assumptions, window, stock floor,
 costs, execution clocks and gates remain unchanged. No subsequent
 model or parameter has been selected.
 
+## Signed session momentum on a frozen HMM carrier: registered
+
+The [actual packet](evidence/hmm_core_session_momentum_20261029_registration_v1.json)
+registers three new configurations, not new economic factor
+families. The question is whether signed nontrading and
+regular-session return components carry different useful
+relative style-momentum information from their full-day sum.
+Information arrival and price discovery motivate a hypothesis;
+daily vendor prices do not identify their causes.
+
+Earlier SPY split-session/range research used squared intervals
+for risk budgeting. Existing ordinary momentum, activity
+weighting and information discreteness are not renamed as new
+discoveries. The new comparison fixes:
+
+| Candidate | Four-style ranking score |
+|---|---|
+| Full-day control | Mean adjusted close-to-close log return |
+| Overnight | Mean prior adjusted close-to-current-adjusted-open log return |
+| Intraday | Mean adjusted open-to-close log return |
+
+All three use the same 105 returns ending at decision-relative
+sessions D-125 through D-21, with the first prior close at D-126.
+Their signed log components must add to the ordinary full-day
+score. Each arm uses the original 35/30/20/15% shares of the
+combined core budget, 12-decimal rank keys and lexical ticker
+ties; negative or zero scores do not remove a factor fund.
+The full-day control counts as a new configuration because its
+HMM carrier differs from the earlier price-core study.
+
+The exact saved HMM target matrix supplies all 122 source
+month ends from 2016-08-31. Every noncore target is preserved
+bit-for-bit, including SOXX, BIL, GLD and unused assets; the
+aggregate four-style budget is unchanged. The HMM's priors,
+fits, filtered probabilities, risk floor and total exposure are
+not recomputed or adjusted. The 122 original model-fit receipts
+remain hash-bound evidence, not inputs to another fit.
+No extra source month is removed and the nine original undefined
+prehistory months stay undefined. Both original formal account
+anchors and all 2,512/1,254 returns remain required.
+
+Prices retain the existing adjusted-open convention:
+raw open multiplied by adjusted close divided by raw close.
+Distributions, adjustment changes and weekend gaps follow that
+same convention. These are not verified auction ticks, pure news
+measures or realizable zero-cost partial-session trading returns.
+Actual holdings receive **both** session returns, with the
+unchanged monthly observed-weight band, USD1 tickets, base/stress
+costs, one-/two-session delayed opens, fresh USD10,000 funding,
+RF series and initial-capital drawdown peak.
+
+All three registrations were written at
+**2026-10-29T08:18:12.036214Z / 08:18:12.141068Z /
+08:18:12.249005Z**, before any real component/rank/target
+calculation. Proof events followed at
+**08:18:15.650965Z / 08:18:15.753451Z / 08:18:15.854565Z**;
+the packet was created at **08:18:15.856293Z**.
+Independent scalar arithmetic reproduces every target exactly;
+maximum unrounded score difference is
+`1.2750217548429532e-16`, with log-split identity error
+`4.336808689942018e-19`. Five chronological prefixes and both
+formal four-family anchors are retained for each arm.
+
+Twenty-nine synthetic kernel/lifecycle checks preceded real
+scoring. Two first-run fixture errors remain recorded privately:
+an intentionally changed synthetic price crossed the unchanged
+60% data-quality guard, and a mock proof omitted the original
+no-source-rebuild flag. Only the fixtures were corrected;
+no production guard or economic rule was relaxed.
+A separate attempted literature search for the already
+implemented information-discreteness idea failed at the search
+service with HTTP504. No primary text was admitted from it,
+and it is not evidence for this study or an access workaround.
+
+This carrier was selected after 201 exposed historical
+completions. The contemporaneous full-day control separates
+session information from ordinary rank tilting; the saved
+equal-core HMM is an additional whole-model reference, not an
+equal-risk executed-holdings counterfactual. No paper replication,
+independent forward alpha or qualification is claimed.
+
+At this preregistration snapshot, no new account has run.
+The actual code and packet must be remotely published before
+all **twelve** funded paths; every outcome and cost remains in
+scope. Counts are **27 registered, 23 completed/reviewed, one
+original technical failure, three pending, 92 funded paths,
+201 combined completions and zero qualifiers**.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,

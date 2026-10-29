@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_hmm_core_session_momentum_20261029_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "prior_completed_configurations": 201,
+  "prior_registered_ssd_configurations": 24,
+  "prior_journal_sequence": 275,
+  "prior_journal_head_sha256": "bf398d358dd17166d6c404323c1889673af61810d77c36a5b05b159be45416c7",
+  "source_candidate": "causal_two_state_growth_bil_v1",
+  "source_registration": {
+    "path": "evidence/hmm_growth_bil_20261029_registration_v1.json",
+    "sha256": "c65b2f86d00f9456fdb1ec0549d67e491d10baf5fdaf49e9f8433eda9dfe12a1"
+  },
+  "source_targets": {
+    "path": "data/ssd-hmm-growth-bil-20261029-v1/causal_two_state_growth_bil_v1/targets.csv",
+    "sha256": "7ce5fd8a1172c87fdfd3ebaeff37461b5c543ef12bf317899b7130ffcaea00ee"
+  },
+  "prior_rank_policy": {
+    "path": "config/factor-core-momentum.json",
+    "sha256": "1778393718406eca335be27203737cee2a958364a043073f8610416fb399815f"
+  },
+  "lookback_sessions": 126,
+  "skip_recent_sessions": 21,
+  "score_return_sessions": 105,
+  "ranking_score_decimal_places": 12,
+  "ranked_factor_shares": [0.35, 0.30, 0.20, 0.15],
+  "original_calendar_months": 131,
+  "source_target_months": 122,
+  "eligible_source_months": 122,
+  "additional_source_months_dropped": 0,
+  "undefined_prehistory_calendar_months": 9,
+  "core_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "new_economic_factor_definitions": 0,
+  "cash_reserve": 0.02,
+  "actual_weight_trade_band": 0.025,
+  "candidate_count_in_this_study": 3,
+  "study_size_is_a_total_research_quota": false,
+  "candidates": [
+    {"id": "hmm_core_close_momentum_control_v1", "score": "close_to_close"},
+    {"id": "hmm_core_overnight_momentum_v1", "score": "overnight"},
+    {"id": "hmm_core_intraday_momentum_v1", "score": "intraday"}
+  ],
+  "methodology": {
+    "question": "Do prior close-to-open and open-to-close return components contain different useful relative style-momentum information from their full-day sum? Nontrading information arrival and regular-session price discovery motivate a hypothesis,not an identification of their causes or a proven risk premium.",
+    "prior_art": "Earlier split-session/range studies used squared SPY intervals for risk budgeting,not signed factor-return ranking. Ordinary close momentum,activity weighting and information discreteness already exist. Neither the old Frog-in-the-Pan concept nor a different label is claimed as new;this study compares signed session components with a contemporaneously registered full-day control on a new frozen carrier.",
+    "scores": "Use the same105return dates endingD-125 throughD-21,with the prior close atD-126. For every fund compute the uniform mean log of adjusted close_t/close_t-1,adjusted open_t/close_t-1,and adjusted close_t/open_t. Require their additive log identity. No forecast fitting,normalization by future data,absolute-value scoring,volatility weighting,new window or mixture coefficient.",
+    "ranks": "Reuse35/30/20/15%of the existing combined four-style budget,with scores roundedto12decimalplaces and tickerlexicalties. Zero or negative scores retain allfourfunds. Each methodranks its own signed component;nonechanges stock exposure or trades only its chosen session.",
+    "carrier": "Read the exact saved HMM desired matrix. Preserve every noncore cell bit-exactly,includingSOXX/BIL/GLD/unusedassets,and the aggregate core budget. HMM priors,parameters,filtered states,stockfloor andtotalrisk are not recalculated,refitted or retuned. All122storedfits remain hash-bound evidence only.",
+    "warmup": "Keep all122HMMmonthends starting2016-08-31 andall9undefinedprehistorycalendar months. Every source date already has126prior price observations;drop no additional month. Scoreinputs stopD-21 while the already saved HMM budget retains its originalDinformation clock. Preservebothformalanchors andall2512/1254returns.",
+    "prices": "Use only the admitted original twelve-fund adjusted market panel. Adjusted open follows raw_open*adjusted_close/raw_close. Distributions,adjustment changes andweekend gaps follow that convention;these are not verified auction ticks,pure news measures or realizable overnight-only/intraday-only account returns. No newquotes oroldprice replacement.",
+    "execution": "Three configurations andtwelve completefundedpaths,eachfreshUSD10000underoriginal5/20bp,USD1tickets,1/2sessiondelayedopens,0.025observedholdingband,RF/initialpeak/1xlong-onlycashfunding. Holdings receivebothsessionreturns;no extra opening/closing trades orcost/delay changes.",
+    "registration": "Actuallyregisterallthree specificationsbeforeanyreal components,scores,ranks ortargets. Counttheordinarymomentumcontrol asa newconfigurationbecauseits HMMcarrier differs fromtheearlier price-core study. Publishcodeandactualpacket beforeanyfundedpath.",
+    "selection": "The carrier is selected after201exposedhistorical completions and its saved failure diagnosis,not independently. Equal-core HMM is a frozen whole-model reference;the contemporaneousfull-day control separates session information fromordinary rank tilting. Keepalloutcomes,no component/rank/window/stock-floor rescue oroldtrial deletion.",
+    "source_generator_recomputed": false,
+    "paper_replication_or_new_independent_alpha_claimed": false,
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-29",
-  "phase": "hmm_saved_regime_execution_diagnosed",
-  "active_research_focus": "saved_account_holdings_and_execution_sensitivity_without_model_refit",
+  "phase": "hmm_core_session_registered_pending_accounts",
+  "active_research_focus": "three_signed_session_momentum_scores_on_frozen_hmm_risk_carrier",
   "research_dashboard": {
     "server": "src/us_quant/research_dashboard.py",
     "frontend": "web/research/index.html",
@@ -99,10 +99,10 @@
       "sha256": "ccff66c847db6519132775a177268c03d7ec36491076380be01d01f41589287d"
     },
     "aggregate_counts": {
-      "registered": 24,
+      "registered": 27,
       "completed": 23,
       "reviews": 23,
-      "pending": 0,
+      "pending": 3,
       "technical_failures": 1,
       "qualified": 0,
       "account_paths": 92,
@@ -260,6 +260,14 @@
         "results": "research/workbench/evidence/hmm_growth_bil_20261029_results_v1.json",
         "results_sha256": "75b05e3fe5654d8e8ae61516eec49543b7ae20aed2e85fdc7bb66ffe80e61efa",
         "preregistration_commit": "2b7c41ba87cc8d71b6dbe5ce98d77f3818aa776e"
+      },
+      {
+        "study_id": "ssd_hmm_core_session_momentum_20261029_v1",
+        "registration": "research/workbench/evidence/hmm_core_session_momentum_20261029_registration_v1.json",
+        "registration_sha256": "b85e02d8d09f6d21b77c9055435305f18b6edfb86f4c5ab9e83ffd1447602108",
+        "results": null,
+        "results_sha256": null,
+        "preregistration_commit": null
       }
     ],
     "status": "first_pair_complete_both_rejected",
@@ -885,14 +893,14 @@
     "第10项固定相反优先级：在当时较低SPY/QQQ尾部预算（以实际BIL风险作底）内最大化已观测机会，不扫风险倍率/旧门槛/窗口/核心参数。2026-10-28T05:46:36.615636Z真实登记先于122有证书计划（112优化/10非正机会），5前缀及完整6家族覆盖通过。先发布1074904478bfd0ba2a19d502c479ebd2de13c227，再于05:54:28.534515Z完成4资金路径并拒绝。依次十年base/stress、五年base/stress净CAGR12.9292/11.4123/16.5627/14.9118%，Sharpe0.6781/0.5922/0.7818/0.6907，DD26.4086/27.0756/26.6875/27.3277%；回撤/夏普/QQQ全失败，3条CAGR过且仅五年胜SPY。SSD10完成/40路径/合计188/0通过、118事件，原记录不变；不得拼接第9项回撤与第10项收益。"
   ],
   "next": [
-    "Preserve24registered SSD configurations:23completed/reviewed overall rejections,1retained terminal preparation failure,0pending,92funded paths,201combined completions and0qualifiers. Alloldaccounts/sources/six-slot/forwardrecords unchanged.",
-    "Saved HMM regime/execution diagnosis completed2026-10-29T07:36:43.091013Z:184directrefs/122fits/275events preserved,0newtrials. Five-year stress-minus-base net log gap-.115395294:actual fee component-.031240139,remainingsecurityprice/holdings-.084155155;notCAGRpp,Sharpeattribution orisolateddelaycausality.39commonissuedrequests/1baseonly,original1vs2sessiondelays;Apr2priorstock15.98%base/95.93%stress,butApr1favoredstress. Completegapseries andbothsignsexpostexamplesretained. Ten-yearQQQearlydeficitsnoterasedbylateexcess. All4DDpass,butboth10yQQQand5ystressSharpe.881524stillfail;no priors/window/transition/floorrescue. Chooseanindependentlysupportedeconomicquestion;no newmodelselected.",
+    "Preserve27registered SSD configurations:23completed/reviewed overall rejections,1retained terminal preparation failure,3pending,92funded paths,201combined completions and0qualifiers. Alloldaccounts/sources/six-slot/forwardrecords unchanged.",
+    "Three actual HMM-carried core session-momentum registrations at2026-10-29T08:18:12Z precede all real components/ranks/targets;proofs08:18:15Z. Compareordinaryclose-close/overnight/intraday signedmeanlogmomentumover105returnsD-126toD-21,old35/30/20/15shares/12decimalranks. All122source dates/noncoretargets/aggregatecore/fullanchors preserved;0HMMrefits/newquotes/accounts. Independentscoreerror1.276e-16,targeterror0,logidentity4.337e-19. Publishactualpacket before12originalfundedpaths;retainall3outcomes/controlcounts. Partial-sessionscoresareNOTpartial-sessiontrading;HMMprimaryanditsdiagnosisremainrejected/complete,notnewalpha.",
     "Continue economically motivated, preregistered independent small batches without ordinary per-batch approval or a configuration-count ceiling until2026-10-31T15:59Z. Use one computation; at cutoff preserve partial work, clear only the SSD session timer and confirm absence.",
     "Keep old source refusals, VIG/SDY terminal429 and prospective/PIT gates. The independent market-only IBKR adapter is proved, but the one actual probe stopped on2157 before historical requests;0history rows/admissions,no automatic retry or inferred entitlement denial. Default readonly account synchronization remains prohibited."
   ],
   "next_zh": [
-    "保留SSD24项已登记配置：23项完成审阅并整体拒绝、1项原准备终止失败、0待评估，92条资金路径、合计201项完成、0通过。旧账户/来源/历史六配置/前瞻记录不变。",
-    "HMM已存状态/执行诊断于2026-10-29T07:36:43.091013Z完成，184直接引用/122拟合/275事件不变，0新试验。五年压力减基础净对数差-0.115395294，其中实际费用项-0.031240139，其余证券价格/持仓项-0.084155155；不是CAGR百分点、夏普分解或纯延迟因果。39共同发出请求/1仅基础，保留原1与2交易日延迟；4月2日前股票15.98%基础/95.93%压力，但4月1日压力反而受益。完整差额序列及正反事后例子均保留。十年QQQ早半段亏欠未被后半段超额抵消。四条DD仍通过，但两条十年QQQ和五年压力夏普0.881524仍失败；不调整先验/窗口/转移/下限救回。下一步选择有独立依据的经济问题，尚未选新模型。",
+    "保留SSD27项已登记配置：23项完成审阅并整体拒绝、1项原准备终止失败、3待评估，92条资金路径、合计201项完成、0通过。旧账户/来源/历史六配置/前瞻记录不变。",
+    "HMM固定预算上的三组核心时段动量于2026-10-29T08:18:12Z真实登记，先于全部新评分/排序/目标，08:18:15Z完成证明。比较普通全日/隔夜/日内有符号平均对数动量，同105条收益、D-126至D-21、旧35/30/20/15份额和12位排序。保留122源日期、全部非核心目标、核心总预算及完整锚点；0重训/新报价/新账户。独立评分误差1.276e-16、目标0、分段恒等式4.337e-19。实际发布登记包后才能运行12条原资金路径，保留三组及对照试验计数。时段评分不是只交易该时段；原HMM拒绝及已完成诊断不改写成新alpha。",
     "持续开展有经济理由、事前冻结的独立小批次，无普通逐批确认或配置次数上限，截止2026-10-31T15:59Z；单计算job，届时保存未完状态、只清除SSD会话timer并确认不存在。",
     "原拒绝来源、VIG/SDY终止429和前瞻/PIT门保持。独立IBKR market-only适配器已证明，但唯一真实探针在历史请求前因2157停止；历史行/准入0，不自动重试或推断订阅拒绝，仍禁止默认readonly账户同步。"
   ],
