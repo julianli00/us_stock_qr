@@ -1160,9 +1160,39 @@ anchors. **No new funded account has run at this snapshot**;
 actual remote publication must precede all twelve original
 window/cost paths. Session-specific scoring is not an
 overnight-only or intraday-only trading strategy.
-Current totals are **27 registered, 23 completed, one retained
+At that preregistration snapshot, totals were **27 registered, 23 completed, one retained
 technical failure, three pending, 92 funded paths, 201 combined
 completions and zero qualifiers**.
+
+The [actual twelve-path result](research/workbench/evidence/hmm_core_session_momentum_20261029_results_v1.json)
+is now complete after the `c86c218` publication and
+**2026-10-29T08:30:53.845572Z** pre-account fence.
+**All three configurations are rejected.**
+
+| Core score | 10y CAGR base/stress | 5y CAGR base/stress | 5y stress Sharpe |
+|---|---:|---:|---:|
+| Full-day control | 19.7418% / 18.1963% | 20.5364% / 17.6266% | 0.859111 |
+| Overnight | 19.8114% / 18.3472% | 20.5755% / 17.7489% | 0.861729 |
+| Intraday | 19.5473% / 17.9780% | 20.4026% / 17.4238% | 0.854173 |
+
+All twelve CAGR, DD and SPY gates pass, but all six ten-year QQQ
+comparisons and all three five-year-stress Sharpe gates fail.
+Full-day and intraday also fail ten-year-stress Sharpe; overnight
+passes that particular point gate at **1.003361**, without
+qualifying the whole model. All three five-year-base cells pass
+their full point gates, not the complete four-path requirement.
+
+Overnight has slightly higher CAGR and lower turnover, orders
+and fees than the full-day control in all four matched paths.
+However, **all twelve comparisons against the original equal-core
+HMM have lower Sharpe and higher turnover, orders and fees**.
+The sole parent-relative CAGR gain is overnight ten-year base,
+only 0.0320 percentage points; this is not broad improvement.
+[All twelve execution rows](research/workbench/DUAL_BENCHMARK_V1.md#actual-three-way-outcome-all-rejected)
+retain the actual costs and tradeoffs.
+Current totals are **27 registered, 26 completed/reviewed, one
+original technical failure, zero pending, 104 funded paths,
+204 combined completions and zero qualifiers**.
 
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).

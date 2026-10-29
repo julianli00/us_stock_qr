@@ -4005,6 +4005,84 @@ scope. Counts are **27 registered, 23 completed/reviewed, one
 original technical failure, three pending, 92 funded paths,
 201 combined completions and zero qualifiers**.
 
+### Actual three-way outcome: all rejected
+
+The actual preregistration commit
+`c86c218aa7fa6eebf1c61a8172634a9a73e66c16` was remotely
+published before fence **282**, recorded at
+**2026-10-29T08:30:53.845572Z**. All twelve original funded
+paths then ran once from their saved targets, finishing at
+**08:33:13.573061Z**. The [full scalar result](evidence/hmm_core_session_momentum_20261029_results_v1.json)
+retains all unrounded metrics and gates:
+
+| Core score | Path | Net CAGR | Net excess Sharpe | Maximum DD | Annual two-sided turnover | Model orders | Costs USD |
+|---|---|---:|---:|---:|---:|---:|---:|
+| Full-day | 10y base | 19.741842% | 1.084009 | 13.855694% | 4.518367x | 594 | 1140.34 |
+| Full-day | 10y stress | 18.196297% | 0.997713 | 14.563753% | 4.532016x | 594 | 2665.11 |
+| Full-day | 5y base | 20.536367% | 1.013179 | 12.424713% | 4.547252x | 288 | 450.78 |
+| Full-day | 5y stress | 17.626588% | 0.859111 | 14.620421% | 4.540681x | 276 | 886.67 |
+| Overnight | 10y base | 19.811356% | 1.085425 | 13.847781% | 4.286248x | 540 | 1060.40 |
+| Overnight | 10y stress | 18.347165% | 1.003361 | 14.503721% | 4.298616x | 540 | 2519.58 |
+| Overnight | 5y base | 20.575478% | 1.010609 | 12.618881% | 4.295336x | 270 | 425.05 |
+| Overnight | 5y stress | 17.748945% | 0.861729 | 14.560703% | 4.286446x | 258 | 839.88 |
+| Intraday | 10y base | 19.547348% | 1.084675 | 13.198104% | 4.525848x | 606 | 1150.94 |
+| Intraday | 10y stress | 17.978043% | 0.995473 | 14.332931% | 4.540735x | 606 | 2674.93 |
+| Intraday | 5y base | 20.402605% | 1.014699 | 12.262031% | 4.592633x | 312 | 477.05 |
+| Intraday | 5y stress | 17.423823% | 0.854173 | 14.389325% | 4.601585x | 306 | 927.07 |
+
+All twelve net-CAGR, DD and matched-cost-SPY gates pass, as do
+the retained stress/base-SPY gates. Nevertheless, **all six
+ten-year QQQ comparisons fail**, and **all three five-year-stress
+Sharpe values are below 1**. The full-day and intraday
+ten-year-stress values `0.9977126646865051` and
+`0.9954731790439049` also fail strictly; they are not rounded
+into passes. Overnight's `1.003361034088294` passes only that
+particular gate. Each five-year-base path is a complete historical
+point pass, but none of the three configurations passes all four
+paths.
+
+The contemporaneous overnight-versus-full-day comparison does
+show small conditional improvements:
+
+| Path | CAGR difference, percentage points | Sharpe difference | DD difference, percentage points | Model-order difference | Fee difference USD |
+|---|---:|---:|---:|---:|---:|
+| 10y base | +0.069513 | +0.001415 | -0.007913 | -54 | -79.94 |
+| 10y stress | +0.150868 | +0.005648 | -0.060032 | -54 | -145.53 |
+| 5y base | +0.039110 | -0.002570 | +0.194168 | -18 | -25.73 |
+| 5y stress | +0.122357 | +0.002618 | -0.059718 | -18 | -46.79 |
+
+Overnight has higher CAGR and lower actual turnover, tickets and
+fees in all four comparisons. But five-year-base Sharpe is lower
+and DD is higher. Intraday has lower CAGR and higher turnover,
+orders and fees than the full-day control throughout; lower DD
+does not establish an overall improvement.
+
+The preselected original equal-core HMM reference makes the
+limitation clearer: **all twelve new path comparisons have lower
+Sharpe and higher turnover, model orders and fees**. Only
+overnight ten-year base has higher CAGR than that parent,
+by **0.032025 percentage points**; the other eleven are lower.
+Only intraday ten-year base reduces parent-relative DD, by
+0.239403 points, while losing CAGR and Sharpe and adding costs.
+The underlying target risk budget being identical does not make
+executed holdings, wealth or realized risk identical. These are
+whole-account comparisons on exposed history, not causal
+fee-only effects or evidence of independent predictive alpha.
+
+The maximum independent NAV difference across the twelve paths
+is `1.2369127944111824e-10` USD. The saved accounts retain
+positive cash, with minimum USD184.59 and maximum gross exposure
+about 0.983036, below 1. No HMM refit, new source quote or
+partial-session trading account was used.
+
+All three rejections and the original technical failure remain.
+Counts are now **27 registered, 26 completed/reviewed, one
+original technical failure, zero pending, 104 funded paths,
+204 combined completions and zero qualifiers**. The next
+investigation is limited to saved score/rank stability, issued
+requests and execution costs; no new window, rank shares, HMM
+parameters or candidate has been selected.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,
