@@ -1559,6 +1559,26 @@ snapshot there are38 registrations,33 completions, three
 technical failures, two pending,132 paths,211 combined
 completions and zero qualifiers. No new funded account has run.
 
+The [actual main-capital protection outcomes](research/workbench/evidence/expert_master_protection_20261029_results_v1.json)
+then completed once at **2026-10-29 22:29:32 UTC**, after real
+publication `af20b52` and fence402. **Both complete rules are
+rejected.** All eight historical drawdown gates pass
+(11.724288%--13.571848%), but CAGR is only5.540993%--9.756281%
+and Sharpe0.369730--0.602457: every CAGR, Sharpe, SPY and
+QQQ gate fails, as do the four stress-versus-base-SPY gates.
+
+Against the preserved unprotected four-expert books, every
+path has lower CAGR and Sharpe, lower DD, and higher actual
+turnover, model orders and fees. The [full eight-path report
+and saved comparison](research/workbench/DUAL_BENCHMARK_V1.md#actual-main-protection-outcomes-and-unchanged-source-comparison)
+retain the risk/growth/cost tradeoff rather than pairing old
+high returns with new low drawdown. Own-account feedback is
+not enough to satisfy the joint objective, and no new floor,
+band, multiplier or frequency is selected from these results.
+Current totals are **38 registrations,35 completions/reviews,
+three technical failures, zero pending,140 funded paths,
+213 combined completions and zero qualifiers**.
+
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
 

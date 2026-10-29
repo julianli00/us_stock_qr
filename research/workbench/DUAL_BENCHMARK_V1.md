@@ -6021,6 +6021,153 @@ All eight original financial paths and unchanged
 Sharpe/CAGR/DD/SPY/QQQ/stress-vs-base-SPY gates still
 apply separately to each complete new rule.
 
+## Actual-main protection outcomes and unchanged-source comparison
+
+The [complete actual results](evidence/expert_master_protection_20261029_results_v1.json)
+finished once at **2026-10-29T22:29:32.763850Z**.
+Actual preregistration publication
+`af20b52be8da630bdc0de0ca99ad686dcfde318f`
+and publication event402 at
+**22:28:05.798845Z** preceded all eight new funded
+paths. All91 code/policy dependencies, including seven
+unchanged pinned imports, were checked against actual
+Git blobs before the fence. The target proof still
+denotes reused nominal inputs and a frozen transition,
+not a claim that issued targets were precomputed.
+
+### Complete funded outcomes: both rules rejected
+
+Every number below comes from the full, fresh-USD10,000
+main book and its actual execution. Sharpe is net excess
+Sharpe; turnover is annualized two-sided traded notional
+relative to actual pre-open, pre-cost NAV. Model orders
+are per-asset research tickets, **not broker orders**.
+Fees include the original proportional charge and
+unscaled USD1 per actual model ticket.
+
+| Rule | Path | Net CAGR | Net excess Sharpe | Maximum DD | Annual turnover | Model orders | Fees USD |
+|---|---|---:|---:|---:|---:|---:|---:|
+| Equal | 10y base | 5.883089% | 0.401613 | 12.316876% | 7.013848x | 6011 | 6443.21 |
+| Equal | 10y stress | 5.540993% | 0.369730 | 12.771947% | 6.124948x | 4831 | 6310.56 |
+| Equal | 5y base | 8.920867% | 0.520059 | 11.724288% | 7.112245x | 2908 | 3117.57 |
+| Equal | 5y stress | 8.522887% | 0.476716 | 11.899790% | 6.440258x | 2323 | 3065.45 |
+| Rolling | 10y base | 8.130530% | 0.593880 | 13.209267% | 11.062691x | 5605 | 6359.95 |
+| Rolling | 10y stress | 8.125606% | 0.577798 | 13.433086% | 9.939137x | 4390 | 7114.97 |
+| Rolling | 5y base | 9.756281% | 0.602457 | 13.238981% | 9.677214x | 2548 | 2830.32 |
+| Rolling | 5y stress | 8.061950% | 0.448957 | 13.571848% | 8.387690x | 2041 | 2981.12 |
+
+**All eight DD gates pass, but all eight CAGR, Sharpe,
+SPY and QQQ gates fail.** All four stress-versus-base-SPY
+gates fail too. Neither complete rule qualifies.
+These historical DD passes are not a future protection
+guarantee or permission to combine their DD with an old
+strategy's higher return.
+
+### Whole-policy comparison, not isolated protection alpha
+
+The following are new protected minus the preserved
+unprotected four-expert rule for the matching formal
+window/scenario. Neither source expert nor old main book
+was rerun. Original calendars, RF and source nominal
+target bytes match; actual issued targets, wealth,
+holdings and fees differ because this is a closed-loop
+policy with its own net capital feedback.
+CAGR/DD differences are percentage points, not returns
+of a separately capitalized strategy.
+
+| Rule | Path | CAGR pp | Sharpe | DD pp | Annual turnover | Orders | Fees USD |
+|---|---|---:|---:|---:|---:|---:|---:|
+| Equal | 10y base | -11.241907 | -0.673136 | -4.999523 | +4.151077 | +5123 | +5280.99 |
+| Equal | 10y stress | -11.037749 | -0.667482 | -4.119981 | +3.257714 | +3945 | +4341.70 |
+| Equal | 5y base | -11.075075 | -0.579992 | -3.828742 | +4.381088 | +2486 | +2605.15 |
+| Equal | 5y stress | -9.973807 | -0.531329 | -3.606418 | +3.702840 | +1903 | +2296.52 |
+| Rolling | 10y base | -10.297952 | -0.525416 | -9.614465 | +4.756460 | +4859 | +4897.70 |
+| Rolling | 10y stress | -9.874826 | -0.512065 | -9.501201 | +3.621242 | +3637 | +3522.41 |
+| Rolling | 5y base | -9.284501 | -0.419181 | -9.801838 | +3.516283 | +2149 | +2217.86 |
+| Rolling | 5y stress | -9.488992 | -0.481815 | -9.588863 | +2.211496 | +1642 | +1759.78 |
+
+Every path reduces DD but also reduces CAGR and Sharpe;
+every path increases turnover, model tickets and fees.
+This rejects the complete application as a qualifying
+solution. It is not a same-risk, same-wealth, fee-only
+or frequency-only causal experiment, nor proof that
+the underlying experts lack useful combination value.
+
+### Recorded exposures and actual cost scale
+
+These are full-window closing exposures and recorded
+control states, not forecasts or new thresholds.
+Stock weight includes the actual admitted stock funds;
+BIL is a price-bearing ETF, distinct from idle cash.
+The scale summaries exclude only the separate initial
+capital decision, not any formal return day.
+
+| Rule | Path | Mean BIL | Mean stocks | Fixed share of fees | Minimum scale | Mean scale | Issued requests | Noninitial nonmonthend requests |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| Equal | 10y base | 46.480030% | 40.344656% | 93.291960% | 0.204002 | 0.658009 | 679 | 598 |
+| Equal | 10y stress | 48.312616% | 38.902302% | 76.554197% | 0.170286 | 0.631892 | 544 | 480 |
+| Equal | 5y base | 50.962179% | 35.916510% | 93.277891% | 0.247385 | 0.633073 | 334 | 294 |
+| Equal | 5y stress | 51.121712% | 35.846140% | 75.780139% | 0.234597 | 0.628408 | 270 | 238 |
+| Rolling | 10y base | 44.665011% | 40.860441% | 88.129647% | 0.137552 | 0.670666 | 789 | 689 |
+| Rolling | 10y stress | 44.017303% | 41.770958% | 61.700905% | 0.120671 | 0.674731 | 611 | 532 |
+| Rolling | 5y base | 54.249491% | 31.455639% | 90.025083% | 0.135316 | 0.582248 | 357 | 306 |
+| Rolling | 5y stress | 56.126269% | 30.212291% | 68.464231% | 0.110161 | 0.555888 | 283 | 243 |
+
+These counts distinguish actual signal requests from
+per-asset model tickets and from an unused hold clock.
+Daily actual-wealth feedback is responsible for a new
+decision opportunity lattice; the one-minute continuation
+remains research scheduling, not market trading frequency.
+Cost shares are descriptive, not a reconstruction of a
+zero-fee wealth path. Fees themselves affect future
+net-wealth feedback, and scenario delays alter pending
+requests; an isolated cost saving cannot be inferred
+by simply adding fees back to this path.
+
+All observed protection scales remain positive; a
+complete zero-risk cash lock did **not** occur in these
+records. The minimum scale is0.110161, while mean BIL
+exposure ranges44.017303%--56.126269%. Neither the
+cash-lock possibility nor the actual trading increase
+is used to tune a new floor, band or multiplier.
+
+### Independent accounting, preserved evidence and current counts
+
+All eight paths independently infer the original
+USD10,000 initial capital and actually hold all six
+registered factor families. Every formal date and the
+original RF are retained. The independent BT maximum
+NAV difference is`1.709850039333105e-10` USD;
+the largest scalar/state difference is at floating-point
+precision. Each ten-year path verifies2,513 recorded
+decision states including its anchor; each five-year
+path verifies1,255. Minimum modeled cash across all
+paths is USD190.9872306761062 and maximum gross
+exposure`0.9819339192975848`. These are unleveraged
+research books, not broker positions or orders.
+
+Private complete result SHA256:
+`d34fd3c9144e8f088ecf943a50509f960ce1570f8529861f7d4b18d8dff68527`.
+Canonical public result SHA256:
+`a2db53a49da18e3f94918dfea9ce01c6a8194a7aaaafded3ba6b5d18aebf33c0`.
+Saved primary comparison SHA256:
+`724a36af2fcf35cc34fd146a0b47ccaa88fe1af612bd23fbf0c84c2ddc7d764e`.
+That separately intent-bound comparison adds zero
+strategy trials and replays no score, fit, target,
+account, benchmark or primary metric pipeline.
+
+All frozen code, policy, source intentions, original
+ledger, previous results and one-day forward identities
+remain unchanged. Current journal-derived totals are
+**38 registrations,35 completed/reviewed, three technical
+failures, zero pending,140 funded paths,213 combined
+completions and zero qualifiers** across420 events.
+The next question remains in the expert layer and is
+not a floor/band/multiplier/clock rescue of these
+failures. No next model or parameter is selected,
+and no investment objective or independent forward
+performance has been established.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,
