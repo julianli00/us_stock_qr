@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 23 SSD registrations, 20 completed/rejected, one retained preparation failure and two pending activity/control candidates; 80 funded paths | Separate net-CAGR/SPY/QQQ criteria; zero qualifiers, no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 23 SSD registrations, 22 completed/rejected and one retained preparation failure; 88 funded paths | Separate net-CAGR/SPY/QQQ criteria; zero qualifiers, no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -1014,10 +1014,39 @@ Both candidates were actually registered as **241/242** at
 score or target. Proofs **243/244** follow at
 **04:55:58.135417Z / .234466Z**. The original 126/21 window
 leaves 128 eligible month ends and three undefined prehistory months;
-all formal ten/five-year returns remain. No candidate account has
-run: remote publication must precede all eight funded paths.
-Counts are **23 registered, 20 completed, one retained technical
+all formal ten/five-year returns remain. No candidate account had
+run at that snapshot: remote publication still had to precede all eight paths.
+Counts then were **23 registered, 20 completed, one retained technical
 failure, two pending, 80 funded paths and 198 combined completions**.
+
+The [paired results](research/workbench/evidence/core_activity_momentum_20261029_results_v1.json)
+are now complete. The actual `d35968631a624e1b9017c07608cce59ecf36d940`
+publication and **2026-10-29T05:01:56.208367Z** fence preceded
+all eight funded paths, which finished at **05:05:15.467939Z**.
+**Both configurations are rejected:** every CAGR, Sharpe, drawdown
+and SPY gate passes, but both configurations miss QQQ in both
+ten-year paths. All four five-year cells pass their historical point
+gates; they do not qualify either complete four-path configuration.
+
+| Method | Path | Net CAGR | Sharpe | Max DD | Annual two-sided turnover | Model orders | Costs USD |
+|---|---|---:|---:|---:|---:|---:|---:|
+| Price control | 10y base | 17.0081% | 1.178584 | 14.9791% | 4.2534x | 649 | 1,098.87 |
+| Price control | 10y stress | 16.4328% | 1.132890 | 14.0511% | 4.2553x | 656 | 2,402.38 |
+| Price control | 5y base | 21.0873% | 1.243648 | 12.5565% | 4.5672x | 337 | 509.82 |
+| Price control | 5y stress | 20.1328% | 1.180197 | 12.5305% | 4.5507x | 337 | 1,010.92 |
+| Activity | 10y base | 16.9487% | 1.179328 | 14.9698% | 4.2732x | 661 | 1,112.37 |
+| Activity | 10y stress | 16.3875% | 1.134337 | 13.9940% | 4.2783x | 668 | 2,421.75 |
+| Activity | 5y base | 21.0051% | 1.243296 | 12.2902% | 4.5620x | 337 | 510.24 |
+| Activity | 5y stress | 20.0548% | 1.179636 | 12.2553% | 4.5449x | 337 | 1,012.13 |
+
+Activity weighting reduces DD but also reduces CAGR and increases
+costs in every paired path. Its Sharpe improves slightly in ten-year
+paths and declines slightly in five-year paths. Small growth gains
+over the equal-core donor cannot be credited to activity alone:
+the paired price-only control has the higher CAGR throughout.
+Current totals are **23 registered, 22 completed/reviewed, one
+retained technical failure, zero pending, 88 funded paths,
+200 combined completions and zero qualifiers**.
 
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).

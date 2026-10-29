@@ -3416,14 +3416,85 @@ both candidates. Nine source and 21 candidate/lifecycle synthetic
 checks include registering both IDs before scoring, immutable
 completion, invalid-volume failure and publication dependencies.
 
-No funded metrics exist yet. The source evidence, code and both
-actual entries must be remotely published before eight serial
+No funded metrics existed at that snapshot. The source evidence,
+code and both actual entries had to be remotely published before eight serial
 funded paths. Every path retains the original fresh USD10,000,
 RF, initial drawdown peak, 5/20 bp, USD1 tickets, one/two-session
 opening delay, observed 0.025 band and unleveraged cash funding.
-Counts are **23 registered, 20 completed/reviewed, one original
+Counts then were **23 registered, 20 completed/reviewed, one original
 technical failure, two pending, 80 funded paths, 198 combined
 completions and zero qualifiers**.
+
+### Actual paired outcome: both rejected on ten-year QQQ
+
+The actual preregistration commit is
+`d35968631a624e1b9017c07608cce59ecf36d940`.
+Publication event **245**, at **2026-10-29T05:01:56.208367Z**,
+verifies 17 own public files plus inherited dependencies before
+either candidate's accounts. Eight actual paths run once. The
+price-control review completes at **05:05:09.925330Z**, the
+activity review at **05:05:15.396430Z**, and the pair's terminal
+result at **05:05:15.467939Z**.
+
+The [complete results](evidence/core_activity_momentum_20261029_results_v1.json)
+retain both configurations and every unrounded gate:
+
+| Method | Path | Net CAGR | Net excess Sharpe | Maximum DD | Annual two-sided turnover | Model orders | Costs USD |
+|---|---|---:|---:|---:|---:|---:|---:|
+| Price control | 10y base | 17.008087% | 1.178584 | 14.979099% | 4.253434x | 649 | 1,098.87 |
+| Price control | 10y stress | 16.432762% | 1.132890 | 14.051063% | 4.255254x | 656 | 2,402.38 |
+| Price control | 5y base | 21.087273% | 1.243648 | 12.556501% | 4.567200x | 337 | 509.82 |
+| Price control | 5y stress | 20.132750% | 1.180197 | 12.530489% | 4.550689x | 337 | 1,010.92 |
+| Activity | 10y base | 16.948748% | 1.179328 | 14.969756% | 4.273223x | 661 | 1,112.37 |
+| Activity | 10y stress | 16.387530% | 1.134337 | 13.993980% | 4.278292x | 668 | 2,421.75 |
+| Activity | 5y base | 21.005110% | 1.243296 | 12.290219% | 4.561969x | 337 | 510.24 |
+| Activity | 5y stress | 20.054799% | 1.179636 | 12.255255% | 4.544921x | 337 | 1,012.13 |
+
+All eight paths pass net CAGR above 12%, excess Sharpe above 1,
+maximum DD at most 15%, matched-cost SPY and the retained extra
+stress/base-SPY comparison. Both five-year paths also beat QQQ
+for each candidate, and all four five-year CAGRs exceed 20%.
+However, both ten-year paths fail QQQ for **each** configuration,
+so neither passes the original joint contract. Near-15% ten-year-base
+DD passes are not a guarantee of robust safety margin.
+
+Activity weighting has a consistent historical tradeoff versus its
+paired price control:
+
+| Path | CAGR change, pp | DD change, pp | Sharpe change | Extra model orders | Cost change USD |
+|---|---:|---:|---:|---:|---:|
+| 10y base | -0.059339 | -0.009342 | +0.000744 | 12 | +13.50 |
+| 10y stress | -0.045232 | -0.057083 | +0.001448 | 12 | +19.37 |
+| 5y base | -0.082164 | -0.266282 | -0.000352 | 0 | +0.42 |
+| 5y stress | -0.077951 | -0.275234 | -0.000560 | 0 | +1.21 |
+
+Lower drawdown is not simultaneous growth improvement. Five-year
+turnover is slightly lower under activity weighting but total fees
+are still slightly higher, with the same order count. Ten-year
+turnover and order counts rise.
+
+Both new configurations have slightly higher CAGR than the
+preselected equal-core fifteenth donor. Yet the price-only control
+has the larger increase in every path, so those gains cannot be
+attributed to the added activity information. Against that donor,
+the price control has higher DD and higher costs throughout;
+activity weighting has higher ten-year DD but lower five-year DD,
+and higher costs in all four paths. The older low-DD reference is
+retained as an additional whole-model comparison, not a substitute
+for the paired control or failed QQQ requirement.
+
+The original 121/61 decision opportunities including initial
+deployment are checked independently in each path. Maximum
+independent NAV difference across the pair is
+`5.820766091346741e-11` USD, cash stays positive, and maximum
+gross exposure remains below 0.983. No broker orders or new
+source requests occur.
+
+Final counts are **23 registered, 22 completed/reviewed, one
+original technical failure, zero pending, 88 funded paths,
+200 combined completions and zero qualifiers**. Next diagnostics
+must read the saved rankings, holdings and execution evidence,
+not retune weights, windows, rank shares or financial gates.
 
 ## Independent IBKR price-history source boundary
 
