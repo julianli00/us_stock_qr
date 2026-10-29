@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_expert_net_wealth_mixture_20261029_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "prior_completed_configurations": 213,
+  "prior_new_registered_candidates": 38,
+  "prior_new_completed_strategy_evaluations": 35,
+  "prior_new_technical_failures": 3,
+  "prior_journal_sequence": 420,
+  "prior_journal_head_sha256": "a035f72f7ff0b186d9235db5ac5310c6237078725d4f37b3bd8d38520ddd7272",
+  "source_registration": {
+    "path": "evidence/four_expert_meta_20261029_registration_v1.json",
+    "sha256": "4e84ee5908ab8046f615dc0f6918aeef73aa9207c95bf58a38876c01c270fcfe"
+  },
+  "previous_master_results": {
+    "path": "evidence/expert_master_protection_20261029_results_v1.json",
+    "sha256": "a2db53a49da18e3f94918dfea9ce01c6a8194a7aaaafded3ba6b5d18aebf33c0"
+  },
+  "expert_ids": [
+    "equity_first_month_end_commitment_v1",
+    "benchmark_opportunity_joint_tail_v1",
+    "symmetric_garch_growth_bil_v1",
+    "semiconductor_ratchet_protection"
+  ],
+  "mechanism_groups": [
+    "committed_price_trend_defense",
+    "joint_tail_opportunity",
+    "conditional_variance_growth",
+    "wealth_feedback_protection"
+  ],
+  "dirichlet_prior": [1, 1, 1, 1],
+  "initial_decision_session": "2016-10-05",
+  "shadow_reference_start": "2016-10-06",
+  "observation_horizon_sessions": 2512,
+  "maximum_complete_learning_intervals": 119,
+  "learner_mass_array_maximum_bytes": 13824000,
+  "learning_clock": "completed_full_exchange_month_intervals",
+  "training_memory": "expanding_all_completed_intervals",
+  "validation_clock": "next_full_month_prequential_before_assimilation",
+  "learning_state_resets_for_five_year_account": false,
+  "temperature_or_forgetting_parameter": null,
+  "switch_cost_proxy_affects_allocation": false,
+  "reference_capital_usd": 10000,
+  "switch_cost_bps_per_side": 5.0,
+  "switch_commission_per_changed_asset_usd": 1.0,
+  "changed_asset_numeric_tolerance": 1e-12,
+  "invested_target_budget": 0.98,
+  "cash_reserve": 0.02,
+  "actual_weight_trade_band": 0.025,
+  "minimum_economic_factor_families": 3,
+  "new_economic_factor_definitions": 0,
+  "new_shadow_account_runs": 0,
+  "new_source_requests": 0,
+  "candidate_count_in_this_study": 1,
+  "study_size_is_a_total_research_quota": false,
+  "candidates": [
+    {"id": "expert_pool_net_wealth_mixture_v1", "weighting": "exact_uniform_four_policy_mixture"}
+  ],
+  "methodology": {
+    "question": "Can a continuous mixture of four complete net strategy policies replace hard pair selection without a protection-floor or lookback sweep? Compare the one fixed learner with the already completed equal and rolling four-expert accounts, not rerun controls.",
+    "prior_art": "The project already has a three-asset core/SOXX/GLD gross simplex learner. Reuse its mathematical moment-integration idea, not its asset sleeves, source budget, outputs or financial entry points. This study uses four technically admitted COMPLETE strategy policies and actual preserved NET shadow return streams. It is not a new economic factor or novel universal-portfolio theorem.",
+    "score_law": "UniformDirichlet(1,1,1,1) over constant complete-expert fractions. For each matured full month,compound each expert's actual daily net returns into its positive period relative. Each constant mixture's score is the product of its arithmetic mixed period relatives. Integrate its mean fractions exactly using normalized tetrahedral Dirichlet moments;all four fractions stay positive. No hindsight best fraction,weight grid,posterior temperature,forgetting,lookback or fitted prior.",
+    "maturity": "October5-2016 is the genuine common initial recommendation. October31 is only the first completed month-end anchor;do not invent September30 feedback or a complete October shadow month. The first complete learning interval endsNovember30. Zero complete intervals means explicitly unscored uniform expert fractions. All original main return days,including that initial partial month,remain funded and evaluated.",
+    "rolling_validation": "At each newly completed full month,first validate the previous month-end fractions on that now-mature net-shadow relative vector;only then assimilate it and produce next-period fractions. This is expanding chronological prequential validation,not independently selectedOOS or main-account performance. Reuse the same continuous history for the fresh five-year book;only its main capital resets.",
+    "risk_and_cost": "Log-growth scores of complete mixtures reflect diversification and dependence,not highest standalone CAGR selection. Record known complete-period daily net-excess covariance and marginal mixture variance,including explicit degenerate-risk states. Source net returns already contain each shadow's own costs. Also disclose the old reference10000/5bp/USD1 incremental expert-weight-switch proxy at identical current recommendations,but do not add a fitted allocation penalty or call that proxy total actual main cost.",
+    "capital_and_scale": "Unitless net-shadow-derived scores and mixture fractions are NOT a self-financing net main wealth identity. Shadow reference10000capital,fixed fees,native trade clocks and daily policies differ from fractional allocations,netted monthly asset targets or fresh five-year main capital. Never sum expert money,average CAGR/DD,scale fixed tickets with NAV or claim the scoring integral guarantees net performance.",
+    "execution": "Compose available whole-policy recommendations into one admitted14-asset98%target. Use the existing explicit-initial monthly2.5ppactual-holding execution Adapter,one freshUSD10000,originalRF/initialpeak/5-20bps/USD1/1-2sessiondelays/long-only1x and no terminal liquidation. No new daily main ratchet or floor parameter is introduced.",
+    "numerics": "Maximum119full intervals follows the frozen120month-end anchors. Dense moment state is bounded at120cubed float64 cells,13824000bytes,one single-thread learner. These algebraic states are not independent economic trials. Independently verify every actual allocation by polynomial-exact three-dimensional Gaussian integration,not a candidate-weight search.",
+    "selection_and_limits": "The four representatives were selected from already exposed history,with213completed configurations before this question. Their mechanism labels do not imply independent risk sources. Prequential causality cannot remove pool-selection bias or prove forward profit. Full-month scores may miss intramonth path risk and the learner may lag,concentrate or increase costs. Keep all earlier failures and unselected related variants.",
+    "qualification": "Same rule must pass all original10y/5y/base-stress netSharpe>1,CAGR>12%,DD<=15%,full-capital matched-costSPYandQQQ plus original stress-vs-base-SPY;actual factor participation and turnover/orders/fees remain disclosed. No gate/clock/window/source rescue or invented numeric turnover cap.",
+    "score_is_actual_main_net_wealth": false,
+    "net_wealth_identity_or_theorem_claimed": false,
+    "algebraic_states_are_independent_economic_trials": false,
+    "main_drawdown_guarantee": false,
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

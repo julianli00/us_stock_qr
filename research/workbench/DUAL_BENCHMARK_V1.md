@@ -6168,6 +6168,158 @@ failures. No next model or parameter is selected,
 and no investment objective or independent forward
 performance has been established.
 
+## Continuous integration of complete net strategy policies
+
+The [new policy](config/expert-net-wealth-mixture-v1.json)
+changes the meta-allocation law, not the failed master
+protection coefficients. The four complete admitted
+representatives remain commitment, joint-tail, symmetric
+GARCH and semiconductor ratchet protection. Related GJR
+and master-protected variants remain archived rather than
+inflating independent mechanism counts.
+
+`expert_pool_net_wealth_mixture_v1` was actually
+[registered](evidence/expert_net_mixture_20261029_registration_v1.json)
+at **2026-10-29T23:32:41.348761Z**, before new real
+mixture learning. Its actual target proof follows at
+**23:32:50.676370Z**; the packet follows at
+**23:32:50.678964Z**. The freeze intent SHA256 is
+`f9b1e0ef154d1fd70eb438cffa44f1804a77824b1d7cc6449110a0a5d47467b7`,
+and the registered specification SHA256 is
+`9aaec0826f5d3c22e74f489cda03d9df8211ca3ddd7ed399492313a126ee10b5`.
+
+### A mathematical transfer, not renamed asset sleeves
+
+The project already has a uniform simplex learner over
+core/SOXX/GLD gross price relatives. Its mathematical
+moment-integration idea is prior art, not a new discovery.
+Here the inputs are four **complete policy** recommendations
+and preserved NET shadow accounts from their existing
+technical admissions. Existing dense and monthly Adapters
+serve the small `observe` Interface. No old expert source,
+fit, target generator, admission entry point or funded
+account is rerun.
+
+The uniform Dirichlet(1,1,1,1) prior covers constant
+fractions of those complete net-return streams. Each
+constant fraction vector scores the product of its
+mixed full-month relatives; a normalized tetrahedral
+moment recursion integrates the mean fractions.
+All four fractions remain positive. No historical
+best weight, sampled winner, weight grid, fitted prior,
+temperature or forgetting parameter is selected.
+The internal monomial states are algebra, **not additional
+economic research configurations**.
+
+This objective concerns complete-mixture growth and
+diversification, not just maximum standalone CAGR.
+Known net-excess daily covariance and marginal mixture
+risk are retained over complete learning intervals.
+Degenerate risk states are explicit, not successful
+safe defaults or an absolute drawdown cap.
+
+### Expanding training and next-month prequential validation
+
+The genuine October5-2016 recommendation initializes
+the main account. October31 is only the first completed
+month-end anchor. The initial October6--31 partial
+shadow month is not falsely treated as a full learning
+interval. The first complete interval ends
+**2016-11-30**. The two initial decisions use an explicitly
+unscored uniform prior; **every formal main return day,
+including that initial partial month, remains**.
+
+At each subsequent month end, validate the previous
+decision's fractions against the newly matured full
+month **before** incorporating that month into training.
+Then update the expanding learner for the next period.
+There is no chosen finite lookback or five-year learner
+reset. The fresh five-year main account still starts
+with its own USD10,000 and peak; its observable learner
+history may already contain the earlier completed months.
+
+The archived Adapter's requested2,512-observation-window
+filled flag is not this learner's score-maturity rule.
+All actually available net-return/RF prefixes must be
+complete; one genuine full interval makes this specified
+assessment mature. No earlier missing returns are padded
+to satisfy a nominal count.
+
+These are chronological **shadow-score** validation
+records, not new independent holdout data or realized
+main-account returns. The pool and question follow213
+already exposed completions. Actual policy registration,
+expert admission and counterfactual historical availability
+remain distinct.
+
+### Net shadow scores and real capital costs remain separate
+
+Source net returns already contain each shadow book's
+own fees, wealth, trade clocks and internal policy.
+Those source fixed-fee rates do not scale perfectly
+to a fractional expert allocation or a fresh five-year
+USD10,000 main book. The score integral is not a
+self-financing net-wealth identity or a transaction-cost
+universal-portfolio theorem.
+
+An unchanged reference-USD10,000/5bp/USD1 incremental
+expert-weight-switch proxy at identical current
+recommendations is recorded as a **diagnostic**, not
+a fitted allocation penalty or total actual fee.
+Actual main costs are charged once by the original
+funded engine. Smoother positive expert fractions are
+a hypothesis, not proof of reduced real turnover.
+
+The new unified14-asset target uses the existing
+explicit-initial monthly2.5pp actual-holding Adapter,
+original5/20bps, USD1 tickets,1/2-session delayed opens,
+98% ETF budget, original RF/initial peak, fresh
+USD10,000 per formal path and long-only1x funding.
+No new daily master ratchet is applied. Qualification
+still uses all original four paths and every unchanged
+Sharpe/CAGR/DD/SPY/QQQ/stress-versus-base-SPY gate.
+
+### Exact independent integration and bounded state
+
+Before any funded path, every one of121 actual decisions
+was independently checked by polynomial-exact3D Gaussian
+integration, not a candidate-weight search. There are119
+complete learning intervals, two unscored initial
+allocations and six actual prefix truncations.
+Maximum differences are:
+weights`8.326672684688674e-15`,
+unified targets`9.547918011776346e-15`,
+and prequential score`2.2426505097428162e-14`.
+
+The largest principal moment array is exactly
+120 cubed float64 cells, **13,824,000 bytes**.
+This is not a measurement of total process RAM.
+The119-interval bound follows the frozen calendar;
+overflow fails explicitly rather than dropping history.
+Twenty-seven offline cases, including the independent
+oracle, analytical one-period identity, permutation,
+full-bound memory, prefix/future perturbations, chronology,
+missingness and publication contracts, passed before
+the actual freeze.
+
+Actual target SHA256:
+`4320a173e3266340e7683d29e523d155f5d23e57a58e94ddaaff8c1ccf31fcf2`.
+Private information-audit SHA256:
+`38d5ebcd34b6478bc68b66610222bf8dc71a286ed1aa734256cf1a40bc19827f`.
+The70 code and21 policy dependencies,707 inherited
+evidence references and six validation references
+remain frozen. The existing explicit/pinned-manifest
+Git-blob guard and actual remote publication fence
+must precede all four new funded accounts.
+
+At this registration snapshot, **no new main account
+has started**. Current422-event totals are
+**39 registrations,35 completed/reviewed, three technical
+failures, one pending,140 funded paths,213 combined
+completions and zero qualifiers**. Registration or
+an exact integration proof is not investment-goal
+completion, and no new candidate performance is claimed.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,

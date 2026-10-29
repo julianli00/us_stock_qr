@@ -1579,6 +1579,26 @@ Current totals are **38 registrations,35 completions/reviews,
 three technical failures, zero pending,140 funded paths,
 213 combined completions and zero qualifiers**.
 
+A [continuous mixture of four complete net policies](research/workbench/evidence/expert_net_mixture_20261029_registration_v1.json)
+was then actually registered at **2026-10-29 23:32:41 UTC**,
+before its new target learning. It keeps the admitted complete
+experts, not three asset sleeves renamed as strategies. A fixed
+uniform continuous prior combines matured full-month NET shadow
+relative scores; each month's validation uses the previous
+fractions before that month is assimilated.
+
+All121 decisions,119 full learning intervals and six actual
+prefixes match independent polynomial-exact integration.
+October2016's partial shadow month is not learned, but every
+formal main return day is retained. The score integral is
+**not actual netted main wealth or a profit guarantee**.
+There is no new protection-floor, band, temperature or weight-grid
+search. At this registration snapshot, all four new funded paths
+still await exact remote publication and the dependency fence;
+totals are39 registrations,35 completions, three technical
+failures, one pending,140 paths,213 combined completions and
+zero qualifiers.
+
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
 
