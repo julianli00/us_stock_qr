@@ -5451,6 +5451,132 @@ unchanged. Financial totals remain34 registrations,
 funded outcomes,124 paths,209 combined completions and
 zero qualifiers. The investment objective is unmet.
 
+## Frozen four-expert inclusion comparison
+
+The [next policy](config/strategy-expert-pool-four-v1.json)
+fixes the original commitment, joint-tail and symmetric-GARCH
+representatives plus the newly admitted plain wealth-feedback
+specialist. GJR remains a valid related variant, not an
+additional independent mechanism. This is a controlled
+pool-inclusion question, not a new floor, volatility target,
+lookback grid, cash cutoff or return-law refit.
+
+The two [actual registrations](evidence/four_expert_meta_20261029_registration_v1.json)
+occurred at **2026-10-29T19:04:40.074822Z** and
+**19:04:40.232889Z**, before any new combined target or
+rolling-score construction. They compare four-expert
+equal weights with the unchanged126-session assessment:
+84 older sessions train pair risk weights and42 later
+sessions validate them. All six distinct-mechanism pairs
+are recorded; two experts are selected by the same
+lower train/validation net-excess Sharpe after the same
+incremental switch proxy. Pair ERC,12-decimal score keys
+and lexical-ID ties remain. These fixed numbers are
+researcher choices for isolating the pool change, not
+new user constraints.
+
+The source policy registrations and actual expert
+admissions are separately frozen. The old three
+experts were admitted on October29 at14:13 UTC;
+their underlying policies were registered earlier.
+The defensive policy was registered on October11,
+but admitted as an expert on October29 at17:21 UTC.
+All simulated2016 availability remains counterfactual
+and exposed-history selection bias remains explicit.
+
+The new [composition Module](src/us_quant/strategy_expert_pool_v2.py)
+reuses the existing strategy expert `observe` Interface.
+Its generalized helper reproduces the old three-expert
+scoring exactly on synthetic observations; production
+membership is fixed to these four. Real expert models,
+LP solutions, GARCH fits, source accounts and defensive
+recommendations are reused, not regenerated.
+
+Both new target matrices contain121 decisions, starting
+with the **real initial-capital decision on2016-10-05**,
+then actual completed exchange month ends. Seven
+initial decisions are explicitly unscored equal weights;
+114 are scored, first on2017-04-28. No September30
+specialist recommendation, pre-shadow return or
+successful initial score is invented. The original
+three initial intents are identical on September30
+and October5, so this initialization does not silently
+change their old recommendations.
+
+Independent scalar target, expert-weight and net-score
+differences are at most
+`5.551115123125783e-17`,
+`2.220446049250313e-16` and
+`4.440892098500626e-15`.
+Five prefix truncations reproduce earlier targets
+and audits exactly. Both formal-window target proofs
+retain all six registered factor symbols; **actual
+funded participation has not yet been measured**.
+
+### A real initial seed, not a weakened monthly guard
+
+The frozen original `observed_weight_execution.run`
+requires every nonempty source row to be a month end.
+It cannot directly accept the genuinely known October5
+initial expert allocation. It was neither edited nor
+monkeypatched, and the new seed was not moved into
+September30 to satisfy its guard.
+
+A versioned [execution Adapter](src/us_quant/expert_initial_monthly_execution_v1.py)
+permits one real initial seed no later than the formal
+previous-close anchor, with all subsequent source
+updates still restricted to month ends. It reuses the
+unchanged pure-band logic, observed covariance,
+rebalance reason and cash-funded order arithmetic.
+The original1/2-session delayed opens,5/20bps, USD1
+tickets, USD10,000 capital, zero idle-cash interest,
+RF and initial high-water peak are unchanged.
+
+For valid old month-end inputs, account rows, weights,
+issued requests and decisions match the frozen old
+executor **exactly** under both original scenarios.
+For the true October5 seed, the first possible fills
+remain October6 base / October7 stress; the initial
+stress cash return is retained. The existing independent
+actual-holdings/band/delay verifier and independent BT
+are reused. Noninitial nonmonthly updates and future
+initial information still reject. Thirty-nine coupled
+checks cover these cases, the scalar oracle, prefix
+causality, score/risk/cost tampering and full-dependency
+publication ordering.
+
+The actual packet was created at
+**2026-10-29T19:04:51.131912Z**, after both proofs.
+Frozen specification SHA256:
+`9543c88c522558ec470f0b7ca3154d37408c083ff475a508e648eb3f8689a62b`.
+The code/input freeze intent SHA256 is
+`f961b95718277f46d6b7a9c24e796334e8f5748ca230f13d338e2d67cf5d39be`.
+The preserved dependency set includes66 model-code
+files,20 policies,702 prior-evidence references and
+four validation artifacts. The publication Adapter
+uses the existing complete manifest-aware helper
+before the proper explicit new-packet verification;
+seven unchanged original imports are not omitted or
+added as duplicate approvals.
+
+**At this registration snapshot, no new main account
+has run.** Actual remote publication and a verified
+pre-account fence are required before the eight
+new ten/five-year base/stress paths. Each will use
+one fresh USD10,000 account, not summed shadow wealth
+or averaged expert CAGR/DD. The source specialist's
+own daily high-water feedback is not a main-account
+drawdown guarantee. All original final gates, cost
+and timing rules remain.
+
+Current totals at registration are **36 SSD identities,
+31 completed/reviewed, three technical failures,
+two pending,124 funded paths,209 combined completions
+and zero qualifiers**. The first three-expert pool,
+all prior failures, original ledger and single-day
+forward identities remain unchanged. The investment
+objective is not met by this freeze or registration.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,

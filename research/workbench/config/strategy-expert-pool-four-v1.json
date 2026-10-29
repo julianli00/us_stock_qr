@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_strategy_expert_pool_four_20261029_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "prior_completed_configurations": 209,
+  "prior_new_registered_candidates": 34,
+  "prior_new_completed_strategy_evaluations": 31,
+  "prior_new_technical_failures": 3,
+  "prior_journal_sequence": 374,
+  "prior_journal_head_sha256": "e1b0200ca142bbf165455d63ff07a75a8802d542404c281bad46a23b94f01aaf",
+  "first_pool_admission": {
+    "path": "reports/ssd-continuous-research-v1/expert-pool-transition-20261029-v1/pool-admission-v1.json",
+    "sha256": "cc7524c6137b58651bca7c2c532334e05a9fc8fc062131c0a40c65212d91fb87"
+  },
+  "feedback_expert_admission": {
+    "path": "reports/ssd-continuous-research-v1/feedback-expert-admission-20261029-v2/admission-v2.json",
+    "sha256": "8a02f12d4de8829c65ea54ee7be902da9377056c65aed3b6f8f07adb622335f5"
+  },
+  "source_scoring_policy": {
+    "path": "config/strategy-expert-meta-v1.json",
+    "sha256": "e8abdd6e8b942ca5e63ad79b56532562a8577b425afaa7fb562974ff399f1e6a"
+  },
+  "previous_three_expert_results": {
+    "path": "evidence/strategy_expert_meta_execution_20261029_results_v2.json",
+    "sha256": "728e40f736d6a4ec20ca53f62e0b7cb3a280103943eeb00849423dcbd2be3947"
+  },
+  "expert_ids": [
+    "equity_first_month_end_commitment_v1",
+    "benchmark_opportunity_joint_tail_v1",
+    "symmetric_garch_growth_bil_v1",
+    "semiconductor_ratchet_protection"
+  ],
+  "mechanism_groups": [
+    "committed_price_trend_defense",
+    "joint_tail_opportunity",
+    "conditional_variance_growth",
+    "wealth_feedback_protection"
+  ],
+  "initial_decision_session": "2016-10-05",
+  "lookback_sessions": 126,
+  "training_sessions": 84,
+  "validation_sessions": 42,
+  "selected_experts": 2,
+  "selection_score_decimal_places": 12,
+  "shadow_reference_path": "10y-base",
+  "reference_capital_usd": 10000,
+  "switch_cost_bps_per_side": 5.0,
+  "switch_commission_per_changed_asset_usd": 1.0,
+  "switch_cost_amortization_sessions": 21,
+  "changed_asset_numeric_tolerance": 1e-12,
+  "invested_target_budget": 0.98,
+  "cash_reserve": 0.02,
+  "actual_weight_trade_band": 0.025,
+  "minimum_economic_factor_families": 3,
+  "new_economic_factor_definitions": 0,
+  "new_shadow_account_runs": 0,
+  "new_shadow_recommendation_artifacts": 0,
+  "new_source_requests": 0,
+  "candidate_count_in_this_study": 2,
+  "study_size_is_a_total_research_quota": false,
+  "candidates": [
+    {"id": "expert_pool_four_equal_weight_v1", "weighting": "equal"},
+    {"id": "expert_pool_four_rolling_pair_v1", "weighting": "train_erc_validate_net"}
+  ],
+  "methodology": {
+    "question": "Does adding one already admitted complete own-wealth-feedback defensive expert improve a single-capital expert combination? Compare the fixed four-expert equal control and the unchanged rolling scoring law, with the old three-expert results retained as exposed historical references rather than rerun.",
+    "pool": "The original commitment, joint-tail and symmetric-GARCH representatives plus the existing plain semiconductor_ratchet_protection policy. GJR and other floor variants are not additional mechanisms. Mechanism labels do not establish independent risk or complementary returns. No unreviewed archive is admitted automatically.",
+    "controlled_change": "Pool inclusion is the new economic question. Retain the old126/84/42 windows, two selected experts, inverse-standard-deviation pair ERC, lower train/validation net-excess Sharpe, incremental cost proxy and12-decimal lexical tie rule. These are researcher choices for a controlled comparison, not user-specified numbers or a parameter grid.",
+    "availability_and_initialization": "The new specialist's first genuinely recorded recommendation is2016-10-05. Make one explicit initial-capital decision that close, then use actual completed exchange month ends. Never fabricate a September30 specialist recommendation. Original formal returns start2016-10-06 and2021-10-06 with freshUSD10000; initial fill delays remain1/2sessions.",
+    "maturity_and_missingness": "Before126common mature net observations, use explicitly UNSCORED equal expert weights with every actual return/cost retained. Missing post-start recommendations or shadow dates are errors. Degenerate pairs remain explicitly unscorable; no fitted cash or correlation threshold rescues negative scores.",
+    "shadow_state": "Reuse four preserved ten-year-base NET shadow books and the separately admitted defensive recommendation artifact. No expert account is rerun or newly capitalized. Reference shadow NAVs, native costs and the defensive expert's own high-water mark differ from fractional main allocations or fresh five-year capital. They do not transfer wealth or a drawdown guarantee.",
+    "dependence_and_cost": "Enumerate all six distinct-mechanism pairs using known training covariance and retain marginal-risk/correlation records. Balance risk within the pair, not an absolute portfolio ceiling. The old5bp plusUSD1 reference10000 incremental meta-weight switch proxy remains a score penalty, not actual total turnover or a second main-account fee.",
+    "main_account": "Net the complete expert recommendations into one admitted14-asset target with98%ETFbudget/2%idle cash. Execute one freshUSD10000 main book per formal path with original monthly2.5ppactual-holding feedback,5/20bps,USD1tickets,1/2sessiondelays,RF and initial peak. Native daily feedback/five-point protection requests are not the master execution law.",
+    "initial_execution_adapter": "The original frozen executor accepts only month-end source rows and cannot ingest the genuinely known October5 initial expert recommendation. Use a new explicit-initial-plus-monthly Adapter with the unchanged original pure-band reason, covariance observation, cash-funded rebalance and delayed-open clock. Prove exact account/request parity on valid original monthly inputs. Never redate the seed to September30 or modify the old executor.",
+    "clocks_and_bias": "Retain original policy registration, actual expert admission and study initialization as separate clocks. New audit fields label preserved archive identity metadata explicitly; the frozen source-clock records carry actual admission times. Pool selection follows209exposed completed configurations and known outcomes; causal rolling scores are not independentOOS or forwardproof.",
+    "qualification": "The same rule must pass all original10y/5y/base-stress netSharpe>1,CAGR>12%,DD<=15%,matched-costSPYandQQQ plus the original stress-vs-base-SPY gate. Measure actual registered factor participation, turnover, model orders and costs. No metric splicing, old failure deletion or invented turnover cap.",
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

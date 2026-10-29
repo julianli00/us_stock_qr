@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-29",
-  "phase": "legacy_feedback_expert_admitted",
-  "active_research_focus": "freeze_expanded_expert_pool_and_meta_rule",
+  "phase": "four_expert_meta_registered_waiting_publication",
+  "active_research_focus": "publish_four_expert_registration_before_eight_funded_paths",
   "research_mainline": {
     "id": "strategy_expert_pool_and_rolling_meta_v1",
     "user_directed": true,
@@ -45,6 +45,7 @@
       "independent_forward_validation": false
     },
     "additional_defensive_expert_admission": {
+      "snapshot_scope": "Admission-time snapshot; the subsequent fixed four-expert study is recorded separately.",
       "evidence": "research/workbench/evidence/legacy_feedback_expert_20261029_admission_v2.json",
       "evidence_sha256": "86f97c684ce879c293690684bebd23d2486c1176fd9594c575f748a3cd1a2328",
       "candidate_id": "semiconductor_ratchet_protection",
@@ -62,6 +63,27 @@
       "first_frozen_three_expert_pool_changed": false,
       "next_pool_or_meta_rule_frozen": false,
       "main_drawdown_guarantee": false,
+      "independent_forward_validation": false
+    },
+    "four_expert_meta_study": {
+      "registration": "research/workbench/evidence/four_expert_meta_20261029_registration_v1.json",
+      "registration_sha256": "4e84ee5908ab8046f615dc0f6918aeef73aa9207c95bf58a38876c01c270fcfe",
+      "frozen_specification_sha256": "9543c88c522558ec470f0b7ca3154d37408c083ff475a508e648eb3f8689a62b",
+      "source_clock_and_code_freeze_intent_sha256": "f961b95718277f46d6b7a9c24e796334e8f5748ca230f13d338e2d67cf5d39be",
+      "expert_mechanism_representatives": 4,
+      "financial_rules": 2,
+      "initial_decision_session": "2016-10-05",
+      "combined_decisions_per_rule": 121,
+      "initial_unscored_decisions": 7,
+      "scored_decisions": 114,
+      "first_scored_decision": "2017-04-28",
+      "same_prior_scoring_windows_and_weight_law": true,
+      "real_initial_seed_not_backdated_to_September30": true,
+      "old_monthly_execution_guard_unchanged": true,
+      "new_accounts_started_at_registration": false,
+      "new_shadow_account_runs": 0,
+      "new_shadow_recommendation_artifacts": 0,
+      "investment_objective_verified": false,
       "independent_forward_validation": false
     },
     "investment_objective_verified": false
@@ -182,10 +204,10 @@
       "sha256": "ccff66c847db6519132775a177268c03d7ec36491076380be01d01f41589287d"
     },
     "aggregate_counts": {
-      "registered": 34,
+      "registered": 36,
       "completed": 31,
       "reviews": 31,
-      "pending": 0,
+      "pending": 2,
       "technical_failures": 3,
       "qualified": 0,
       "account_paths": 124,
@@ -383,6 +405,14 @@
         "results": "research/workbench/evidence/strategy_expert_meta_execution_20261029_results_v2.json",
         "results_sha256": "728e40f736d6a4ec20ca53f62e0b7cb3a280103943eeb00849423dcbd2be3947",
         "preregistration_commit": "2095e8b1ab8c8f409b31e9b30c99eeb5ecade6de"
+      },
+      {
+        "study_id": "ssd_strategy_expert_pool_four_20261029_v1",
+        "registration": "research/workbench/evidence/four_expert_meta_20261029_registration_v1.json",
+        "registration_sha256": "4e84ee5908ab8046f615dc0f6918aeef73aa9207c95bf58a38876c01c270fcfe",
+        "results": null,
+        "results_sha256": null,
+        "preregistration_commit": null
       }
     ],
     "status": "first_pair_complete_both_rejected",

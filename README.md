@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 34 SSD identities, 31 completed/rejected and three retained technical failures; 124 funded paths | Separate net-CAGR/SPY/QQQ criteria; zero qualifiers, no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 36 SSD identities, 31 completed/rejected, three retained technical failures and two pending; 124 funded paths | Separate net-CAGR/SPY/QQQ criteria; zero qualifiers, no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -1486,6 +1486,22 @@ initial availability and score maturity remain distinct.
 The original three-expert pool and all failed combinations are
 unchanged. An expanded pool and its next financial rule still
 require a separate freeze before new combination outcomes.
+
+That [four-expert comparison is now actually registered](research/workbench/evidence/four_expert_meta_20261029_registration_v1.json):
+equal and rolling rules at **2026-10-29 19:04:40 UTC**,
+before their new combined targets or scores. The new pool adds the
+admitted wealth-feedback specialist while retaining126/84/42,
+two selected experts, risk weights and switching-cost ranking.
+Each rule has121 causally checked decisions, including seven
+explicitly unscored initial allocations. A new execution Adapter
+supports the genuinely available October5 initial seed without
+backdating it or changing the old monthly engine; original-input
+accounts and requests reproduce exactly under both original scenarios.
+**No new funded path has run at this registration snapshot.**
+Actual remote publication and the complete dependency fence must
+precede all eight new main accounts. Current totals are36 SSD
+registrations,31 completions, three technical failures, two pending,
+124 funded paths,209 combined completions and zero qualifiers.
 
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
