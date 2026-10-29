@@ -877,6 +877,32 @@ are **20 registered, 19 completed/reviewed, one retained technical
 failure, zero pending, 76 funded paths, 197 combined completions
 and zero qualifiers**.
 
+The saved guard/cost diagnosis finds **33 source budget switches
+versus 44 with VVIX confirmation**. Across the same 131 month-end
+intentions, mean non-BIL target capital rises 14.5878 percentage
+points: stocks 8.3131 and gold 6.2747. These are target-date
+averages, not average daily executed holdings.
+
+Every first 15% breach occurs after the VVIX condition releases an
+otherwise active dollar half-guard. New prior-close BIL is zero,
+while the source account still holds approximately 49--51% BIL:
+
+| Path | First breach | Last known guard decision | Source DD that day | VVIX DD that day |
+|---|---|---|---:|---:|
+| 10y base | 2022-09-20 | 2022-08-31 | 9.1501% | 15.1543% |
+| 10y stress | 2022-07-05 | 2022-06-30 | 8.6434% | 15.0582% |
+| 5y base | 2022-09-15 | 2022-08-31 | 9.1106% | 15.0596% |
+| 5y stress | 2022-07-05 | 2022-06-30 | 8.7570% | 15.2665% |
+
+The base breaches have no pending request or breach-day order/fee.
+The stress accounts do execute the June 30 request on July 5 after
+the original two-session delay, but the VVIX request retains a
+full non-BIL budget: it is not an unfilled protective half-exit.
+Cost partitioning also finds higher costs on **shared execution
+dates**, not only on additional trade days. The analysis reads saved
+accounts and does not change the rejection, add trials or claim
+causal alpha.
+
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
 

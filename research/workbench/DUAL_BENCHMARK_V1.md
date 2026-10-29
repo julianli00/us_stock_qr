@@ -2907,6 +2907,94 @@ Any next diagnosis must use saved guards, holdings and costs,
 without rerunning accounts or changing the VVIX window, comparison
 direction, threshold, scale or trading band to rescue this result.
 
+### Saved guard, holdings and execution diagnosis
+
+A separately intent-bound, saved-only diagnosis completed at
+**2026-10-29T00:55:35.383512Z**. It reads the existing 131 target
+decisions and all four VVIX/donor accounts, using reviewed pure
+NAV/cash and ex-post accounting helpers without executing their
+old diagnostic mains or any target/account generator.
+
+The 39 released half-guards raise mean month-end non-BIL target
+capital by **14.5878 percentage points**, split between stocks
+(8.3131) and gold (6.2747). Source full/half budget transitions
+number **33**, compared with **44** for the VVIX rule: 15 are shared,
+29 occur only in VVIX and 18 only in the source. This counts
+transitions between saved target opportunities, not executions,
+and does not substitute target-date averages for actual daily holdings.
+
+All four first strict 15% breaches use a saved **released** guard:
+the dollar condition is active, but VVIX is not above its own
+63-session reference. The base breaches use the August 31, 2022
+decision and June 1 reference; both stress breaches use June 30
+and March 30. No new threshold or source comparison is fitted:
+these are the already registered audit labels.
+
+| Path | First breach | Prior source BIL | Prior VVIX BIL | Source DD that day | VVIX DD that day |
+|---|---|---:|---:|---:|---:|
+| 10y base | 2022-09-20 | 49.2917% | 0% | 9.1501% | 15.1543% |
+| 10y stress | 2022-07-05 | 50.6995% | 0% | 8.6434% | 15.0582% |
+| 5y base | 2022-09-15 | 49.0438% | 0% | 9.1106% | 15.0596% |
+| 5y stress | 2022-07-05 | 50.6995% | 0% | 8.7570% | 15.2665% |
+
+Neither base account has a pending request or order/fee on its
+breach date. Both stress accounts have the original June 30 request
+scheduled for July 5, respecting the July 4 holiday and two-session
+delay. The new request's BIL target is zero; the source request keeps
+49%. On that day the new accounts execute six tickets versus seven
+for the source. Costs are USD11.20 versus 10.27 for ten-year stress
+and USD8.84 versus 8.81 for five-year stress. These facts distinguish
+an intentionally released defense from a protective exit waiting
+to fill; they do not isolate a causal delay or fee effect.
+
+All new maximum-drawdown intervals begin **2021-11-18**. Base
+accounts reach their trough on **2022-10-14** and stress accounts
+on **2022-09-26**. Source-account drawdown on those same dates
+is approximately 11.5--11.7%, rather than the new 18.9--20.8%.
+The source's own worst interval can be elsewhere; each account
+retains its own initial capital and running peak.
+
+Execution-date sets explain the recorded cost differences:
+
+| Path | Shared dates | VVIX-only dates | Source-only dates | Cost change on shared dates | Added VVIX-only cost | Removed source-only cost | Total change USD |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| 10y base | 88 | 13 | 5 | +40.01 | +179.97 | -100.49 | +119.49 |
+| 10y stress | 88 | 13 | 6 | +166.25 | +409.24 | -302.94 | +272.56 |
+| 5y base | 45 | 4 | 3 | +9.15 | +47.71 | -50.71 | +6.15 |
+| 5y stress | 44 | 5 | 4 | +61.98 | +112.15 | -147.00 | +27.13 |
+
+The groups are disjoint and their unrounded order, fee and full-account
+turnover differences reconcile. Mean actual dollar notional per ticket
+rises from 1,401.27 to 1,594.45 and 1,347.30 to 1,481.82 in ten-year
+base/stress, and from 1,038.46 to 1,144.38 and 1,011.43 to 1,087.59
+in five-year base/stress. Thus fewer five-year tickets do not imply
+lower costs. These are comparisons of actual accounts with different
+wealth paths, not hypothetical equal-wealth trades.
+
+Full-window ex-post log-linked differences from the source have a
+positive incremental gold component in all four paths, but negative
+BIL and fee components throughout. The semiconductor component is
+negative in both stress paths. A positive incremental full-window
+gold term does not mean gold was profitable during the maximum-DD
+episode, and removing the fee term would not construct a valid
+zero-cost counterfactual account.
+
+Within the actual ten-year accounts, the early 2016-10-06--2021-10-05
+QQQ log gaps remain negative: -0.492078 base and -0.539926 stress.
+The later segment contributes +0.177255 and +0.101813 but does not
+erase those deficits; full-window gaps are -0.314823 and -0.438113.
+These are additive log-wealth gaps, **not CAGR percentage points**.
+The independently funded five-year accounts are not substituted for
+the late ten-year segments.
+
+All 85 direct references, primary records, old ledger and 228 journal
+events remain unchanged. The private diagnostic SHA256 is
+`ddfe72f66e2c2c05edd5442bb28e858d2882576e56a7b0cfab66330f51871c49`.
+The five synthetic checks cover guard fragmentation, inconsistent
+labels, execution-partition conservation, unexplained fees and
+initial/running peaks. No new strategy evaluation, source request,
+parameter choice or independent-alpha claim is added.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,
