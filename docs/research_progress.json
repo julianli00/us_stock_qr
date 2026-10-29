@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-29",
-  "phase": "hmm_session_rank_execution_diagnosed",
-  "active_research_focus": "core_composition_stability_and_actual_rebalance_costs_not_new_alpha",
+  "phase": "vxn_archival_source_admitted",
+  "active_research_focus": "nasdaq100_option_volatility_source_only_no_strategy_signal",
   "research_dashboard": {
     "server": "src/us_quant/research_dashboard.py",
     "frontend": "web/research/index.html",
@@ -18,6 +18,25 @@
     "native_continuation_every_minutes": 1,
     "native_continuation_cadence_user_updated_at": "2026-10-28T02:21:04.321Z",
     "cadence_does_not_authorize_parallel_jobs_or_repeated_downloads": true,
+    "vxn_source_readiness": {
+      "evidence": "research/workbench/evidence/vxn_input_readiness_20261029_v1.json",
+      "sha256": "9bbbcb076a35c613d33a040e1d1a829666154736e7f544178467e3bcf9cfe429",
+      "new_native_rows": 4310,
+      "preserved_VIX_native_rows": 9291,
+      "original_daily_context_sessions": 2805,
+      "original_monthly_queries": 131,
+      "independent_native_closes_verified": 13601,
+      "maximum_independent_numeric_difference": 0.0,
+      "full_daily_coverage": true,
+      "source_admitted": true,
+      "admission_scope": "fixed original archival daily CLOSE only",
+      "intraday_first_publication_or_full_method_history_verified": false,
+      "new_history_requests": 1,
+      "new_metadata_page_requests": 1,
+      "old_comparator_or_methodology_downloads": 0,
+      "ratios_signals_targets_or_accounts_computed": false,
+      "new_strategy_evaluations": 0
+    },
     "smh_source_readiness": {
       "evidence": "research/workbench/evidence/smh_input_readiness_20261029_v1.json",
       "sha256": "08036f28694a8d114023d8f60c70569d1ef2b7f30171e16949898d40dcd93325",
@@ -894,13 +913,13 @@
   ],
   "next": [
     "Preserve27registered SSD configurations:26completed/reviewed overall rejections,1retained terminal preparation failure,0pending,104funded paths,204combined completions and0qualifiers. Alloldaccounts/sources/six-slot/forwardrecords unchanged.",
-    "Saved session rank/execution diagnosis completed2026-10-29T09:17:29.995812Z:108directrefs/16savedaccounts/20same-scenario comparisons,0newtrials/309eventsunchanged.121transitions:fullrankchangesclose74/night46/day80;normalizedcoremovementNOTexecutedturnover. Nightrequests90/90/45/43vsclose99/99/48/46andparent80/81/40/39. Nightbothadds/avoidsdates;shared-datefeesfallwithidenticaltickets. Parentcomparisons144of154extra-requestinstancescore-only(oldband),NOTindependentdates/fresh-rankcausality;shared-datefeesalsoincreaseall12. Night-closecorelogcomponentnegative3of4despitepositivenetgaps,noncoreactualpathsnotidenticaltargets. Allprimaryrejections/oldsource-forwardrecordsunchanged. Chooseanindependentlysupportedeconomicquestion;no newmodel/parametersselected.",
+    "VXN archival CLOSE source admission completed2026-10-29T10:16:21.333057Z. OneactualmetadataGET+oneadvertisedCSVGET,both200,no oldVIX/PDFrefresh.4310newVXNrows(2009Sep14--2026Oct28)+9291preservedVIXrows:13601independentnativevalues,error0;all2805daily/131monthlyqueriesandserializedpanelscomplete. Reusedgenericdocument specificallycheckedforNDX/NDXP/30calendar-daybracket/NasdaqPHLX/16:15ET. This isNOTfull1995history,intradayfirstpublication/fullmethodchain/currentmixed-vintageratio/alpha.0newratios/signals/targets/accounts/factorregistrations;old309events/ledger/forwardmodelsunchanged. Nextseparatelyselectandpreregisteranindependentlysupportedeconomicrule;no strategyalreadyselected.",
     "Continue economically motivated, preregistered independent small batches without ordinary per-batch approval or a configuration-count ceiling until2026-10-31T15:59Z. Use one computation; at cutoff preserve partial work, clear only the SSD session timer and confirm absence.",
     "Keep old source refusals, VIG/SDY terminal429 and prospective/PIT gates. The independent market-only IBKR adapter is proved, but the one actual probe stopped on2157 before historical requests;0history rows/admissions,no automatic retry or inferred entitlement denial. Default readonly account synchronization remains prohibited."
   ],
   "next_zh": [
     "保留SSD27项已登记配置：26项完成审阅并整体拒绝、1项原准备终止失败、0待评估，104条资金路径、合计204项完成、0通过。旧账户/来源/历史六配置/前瞻记录不变。",
-    "已存时段排名/执行诊断于2026-10-29T09:17:29.995812Z完成：108直接引用、16已存账户、20同情景比较，0新试验、309事件不变。121次转换中全排序变化全日74/隔夜46/日内80，核心归一化份额变化不是实际换手。隔夜请求90/90/45/43，对照99/99/48/46、父模型80/81/40/39；隔夜既新增也避开日期，同日票数相同而费用降低。对父模型154个新增请求比较实例有144个仅核心越过旧偏差带，并非独立日期或每次新排名的因果；十二条共同日期费用也增加。隔夜对全日四条净对数差虽正，核心项三条为负；相同非核心目标不等于相同持仓路径。原拒绝/来源/前瞻均保留。下一步选择有独立依据的经济问题，未选新模型或参数。",
+    "VXN历史收盘来源于2026-10-29T10:16:21.333057Z完成限定准入。真实1次元数据GET加1次广告CSV GET均200，未重取旧VIX/PDF。4310条新VXN(2009Sep14--2026Oct28)加9291条保留VIX，共13601原值独立一致、误差0；2805日/131月查询及落盘面板完整。复用通用文件并核对VXN专属NDX/NDXP、30日历日括限法、NasdaqPHLX及16:15ET发布。不是完整1995历史、日内首次发布/全方法链/混合版本当前比值或alpha证明。0新比值/状态/目标/账户/因子登记，旧309事件/账本/前瞻不变。下一步需另选有依据的经济规则并事前登记，尚未选策略。",
     "持续开展有经济理由、事前冻结的独立小批次，无普通逐批确认或配置次数上限，截止2026-10-31T15:59Z；单计算job，届时保存未完状态、只清除SSD会话timer并确认不存在。",
     "原拒绝来源、VIG/SDY终止429和前瞻/PIT门保持。独立IBKR market-only适配器已证明，但唯一真实探针在历史请求前因2157停止；历史行/准入0，不自动重试或推断订阅拒绝，仍禁止默认readonly账户同步。"
   ],

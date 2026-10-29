@@ -1,0 +1,101 @@
+{
+  "admission_scope": "archival_daily_closes_and_original_query_coverage_only",
+  "coverage": {
+    "all_original_monthly_queries_covered": true,
+    "full_daily_coverage": true,
+    "series": {
+      "VIX": {
+        "context_sessions": 2805,
+        "missing_daily_dates": [],
+        "missing_monthly_dates": [],
+        "observed_daily_values": 2805,
+        "observed_monthly_values": 131,
+        "original_monthly_queries": 131
+      },
+      "VXN": {
+        "context_sessions": 2805,
+        "missing_daily_dates": [],
+        "missing_monthly_dates": [],
+        "observed_daily_values": 2805,
+        "observed_monthly_values": 131,
+        "original_monthly_queries": 131
+      }
+    },
+    "status": "complete_daily_coverage",
+    "strategy_eligibility_or_safe_state_inferred": false,
+    "values_filled_or_market_dates_dropped": false
+  },
+  "created_at": "2026-10-29T10:16:21.334929+00:00",
+  "definition": {
+    "dissemination": "Every15seconds duringRTH09:31-16:15ET",
+    "document_acquired_at": "2026-10-28T22:41:38.659071Z",
+    "document_revised_on": "2026-03-30",
+    "document_version": "9.0",
+    "history_scope": "Printedlabels are not independentauthentication of livefirstpublication or completehistoricalmethodology. The acquiredCSV neednot startat the printed firstvaluedate;requiretheunchanged2015-2026researchcontext,notan inventedfullinceptionarchive.",
+    "interpretation": "Indexlevels in volatilitypercentagepoints,not VXNinvestmentreturns,exactSOXX/portfolioforecasts,truevariancepremium,crashprobability or independentfactoralpha. OnlyCLOSEisadmitted;unusedOHLCfields andunderlyingoptionstripqualityarenotcertified.",
+    "limitations": "Archiveddailycloses donot establishallintradaystaleness/revisions/methodologyversions. Publisherfiltering mayreusevalidquotes;matchingdates alone doesnotprovefreshunderlyingquotes.",
+    "methodology_reused_without_redownload": true,
+    "new_page_advertises_same_methodology_URL": true,
+    "option_contracts": "AM-settled NDX and PM-settled NDXP options with end-of-week expirations,as described by the saved method table",
+    "printed_first_value": "January1995",
+    "printed_launch": "January2001",
+    "publisher_filter": "0.40volatilitypoints/1minute,not a portfolio parameter",
+    "quote_source": "Nasdaq PHLX only",
+    "target_horizon": "30 calendar days",
+    "term_selection": "2(a) Bracket Method",
+    "timing": "A16:15indexclose isnotavailable for16:00stock-closeexecution. Acquisitionceiling usesconservativeNY16:15completed-sessiontiming,notproof ofeveryhistoricalfirstrelease orexceptionalclose. Futurestrategiesmustfreezeavailabilitybeforeoutcomes.",
+    "underlying": "NASDAQ-100 Index options,not SPX or VIX options"
+  },
+  "definition_verification": {
+    "definition_before_history_verified": true,
+    "full_intraday_or_historical_methodology_chain_verified": false,
+    "methodology_document_redownloaded": false,
+    "new_page_advertises_reused_document_URL": true,
+    "specific_VXN_PDF_signatures_checked": 6
+  },
+  "full_intraday_or_historical_methodology_chain_verified": false,
+  "independent_native_values_checked": 13601,
+  "investment_objective_verified": false,
+  "maximum_independent_native_value_difference": 0.0,
+  "native_histories": [
+    {
+      "completed_session_ceiling": "2026-10-28",
+      "first_date": "2009-09-14",
+      "last_date": "2026-10-28",
+      "native_rows": 4310,
+      "native_value_field": "CLOSE",
+      "source_acquired_at": "2026-10-29T09:58:48.484974+00:00",
+      "symbol": "VXN"
+    },
+    {
+      "completed_session_ceiling": "2026-10-09",
+      "first_date": "1990-01-02",
+      "last_date": "2026-10-09",
+      "native_rows": 9291,
+      "native_value_field": "CLOSE",
+      "source_acquired_at": "2026-10-10T15:21:41.648491+00:00",
+      "symbol": "VIX"
+    }
+  ],
+  "new_history_requests": 1,
+  "new_metadata_page_requests": 1,
+  "new_registered_candidates": 0,
+  "new_registered_factor_definitions": 0,
+  "new_strategy_evaluations": 0,
+  "old_comparator_or_methodology_downloads": 0,
+  "old_source_files_or_forward_models_changed": false,
+  "order_authority": false,
+  "policy": {
+    "path": "config/vxn-inputs-v1.json",
+    "sha256": "5337e5a5cc99adf666ba3dda0a0b039dada76c62ae22d995832ac6a48a42a07f"
+  },
+  "private_manifest": {
+    "path": "data/ssd-vxn-source-20261029-v1/manifest.json",
+    "sha256": "63641924679a14f3d7b70259d79adcdda13d4dc370859a36a0b05a179861d1cb"
+  },
+  "ratios_strategy_states_targets_or_returns_computed": false,
+  "raw_documents_quotes_or_aligned_values_exported": false,
+  "schema_version": 1,
+  "source_admitted": true,
+  "study_id": "ssd_vxn_source_readiness_20261029_v1"
+}

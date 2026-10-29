@@ -1212,6 +1212,21 @@ The [saved accounting diagnosis](research/workbench/DUAL_BENCHMARK_V1.md#saved-s
 therefore does not establish a general overnight factor alpha
 or repair any of the three overall rejections.
 
+The [VXN source-readiness result](research/workbench/evidence/vxn_input_readiness_20261029_v1.json)
+now admits **archival Nasdaq-100 option-implied volatility
+closes for the original research window only**. One advertised
+history request supplied 4,310 VXN rows; the original 9,291-row
+VIX archive was not refreshed. Independent readers match all
+13,601 native closing values with zero difference, and both
+series cover the original 2,805 daily and 131 monthly queries.
+
+The CSV begins in 2009, not the method document's printed 1995
+first-value history. This does not certify full historical
+methodology, intraday first publication, live freshness or alpha.
+No VXN/VIX ratio, signal, target, strategy account or new factor
+definition has been computed. Counts remain **204 completed
+configurations and zero qualifiers**.
+
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
 

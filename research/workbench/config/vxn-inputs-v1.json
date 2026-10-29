@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_vxn_source_readiness_20261029_v1",
+  "scope": "archival_daily_closes_and_original_query_coverage_only",
+  "data_start": "2015-08-10",
+  "as_of": "2026-10-05",
+  "required_market_context_sessions": 2805,
+  "original_monthly_query_count": 131,
+  "new_source_series": ["VXN"],
+  "existing_comparator_series": ["VIX"],
+  "daily_input_column_order": ["VXN", "VIX"],
+  "new_source_url": "https://cdn-api.cboe.com/api/global/us_indices/daily_prices/VXN_History.csv",
+  "native_new_source_csv_columns": ["DATE", "OPEN", "HIGH", "LOW", "CLOSE"],
+  "native_value_column": "CLOSE",
+  "native_units": "annualized_option_implied_volatility_percentage_points",
+  "maximum_source_bytes": 5000000,
+  "regular_index_close_ET": "16:15",
+  "source_completed_session_ceiling": {"VXN": "2026-10-28", "VIX": "2026-10-09"},
+  "independent_native_value_tolerance": 1e-12,
+  "missing_data_rule": "retain_all_original_rows_and_missing_cells_no_fill_drop_or_safe_state",
+  "full_daily_coverage_required_for_full_admission": true,
+  "source_index": {
+    "path": "data/macro-tilt-prepared-20261010/close.csv",
+    "sha256": "b098f783bbf7a4ca56520e11c6e13edbb0eb2673ed7aaec02b89981ff74fabce"
+  },
+  "original_monthly_query_index": {
+    "path": "data/ssd-vvix-source-20261028-v1/monthly-closes.csv",
+    "sha256": "997ef55b2183efea2f8c11a853836208d60bd02006028da8dc66180bfd81c72c"
+  },
+  "new_raw_csv": {
+    "path": "data/ssd-vxn-source-20261029-v1/VXN.csv",
+    "sha256": "d9500c4679d5430b77927f8049ea9de74108c30d2198b9f9a01a5b136b0bb0b3"
+  },
+  "existing_vix_csv": {
+    "path": "data/volatility-term-source-20261010/VIX.csv",
+    "sha256": "51ea1e59bfeaf400f6816300c39145df5e3fb437e7c60bdb8ca2178f8c96f436"
+  },
+  "existing_option_manifest": {
+    "path": "data/volatility-term-source-20261010/manifest.json",
+    "sha256": "7dfbc2854f15c77b8316b401b798b0a9ffb9edbefce07fdc022102af2e5daedd"
+  },
+  "source_intent": {
+    "path": "data/ssd-vxn-source-20261029-v1/source-intent.json",
+    "sha256": "cb570676fb182bb18aa15f79ea0e1d171e0706adaaa59ab912394f3ed42a9df0"
+  },
+  "dashboard_acquisition": {
+    "path": "data/ssd-vxn-source-20261029-v1/dashboard-acquisition.json",
+    "sha256": "1e4cb90b9fe33fcbf70837914fb3863faf1ca1b54f4261e046d6a138216ef23f"
+  },
+  "advertised_resources": {
+    "path": "data/ssd-vxn-source-20261029-v1/advertised-resources.json",
+    "sha256": "cca2eeda4d39e9bd514b47e2608d76538f86ea2a871cfd78b1c94e35625101d7"
+  },
+  "definition_before_history": {
+    "path": "data/ssd-vxn-source-20261029-v1/definition-before-history.json",
+    "sha256": "a6b4383c70410b9bf98ce3e42e7fdf2133af06ac90e1abc2291df5b64c87b2d8"
+  },
+  "history_acquisition": {
+    "path": "data/ssd-vxn-source-20261029-v1/history-acquisition.json",
+    "sha256": "df2dba865f34c3a1eba06263564b3a0b0f91d19685c3509f57ddb6453d2b684b"
+  },
+  "methodology": {
+    "path": "data/ssd-vvix-source-20261028-v1/Cboe-VVIX-methodology.pdf",
+    "sha256": "cc42cc2076d4f66c9fa26ae7cc9136e5cb8e87e09de46562c02df68c0c0f8bc6"
+  },
+  "methodology_text": {
+    "path": "data/ssd-vvix-source-20261028-v1/Cboe-VVIX-methodology.txt",
+    "sha256": "a054e9fa831d104300e66c4f330044190e7e4cdd5e58f6020bf2fcc1a3b7afce"
+  },
+  "methodology_acquisition": {
+    "path": "data/ssd-vvix-source-20261028-v1/methodology-acquisition.json",
+    "sha256": "d5b30420aeffab45cdabe3c3c2da25c5e07300bac8825a7c29639e8a3811991b"
+  },
+  "definition": {
+    "underlying": "NASDAQ-100 Index options,not SPX or VIX options",
+    "target_horizon": "30 calendar days",
+    "option_contracts": "AM-settled NDX and PM-settled NDXP options with end-of-week expirations,as described by the saved method table",
+    "term_selection": "2(a) Bracket Method",
+    "quote_source": "Nasdaq PHLX only",
+    "dissemination": "Every15seconds duringRTH09:31-16:15ET",
+    "publisher_filter": "0.40volatilitypoints/1minute,not a portfolio parameter",
+    "document_version": "9.0",
+    "document_revised_on": "2026-03-30",
+    "document_acquired_at": "2026-10-28T22:41:38.659071Z",
+    "methodology_reused_without_redownload": true,
+    "new_page_advertises_same_methodology_URL": true,
+    "printed_first_value": "January1995",
+    "printed_launch": "January2001",
+    "history_scope": "Printedlabels are not independentauthentication of livefirstpublication or completehistoricalmethodology. The acquiredCSV neednot startat the printed firstvaluedate;requiretheunchanged2015-2026researchcontext,notan inventedfullinceptionarchive.",
+    "timing": "A16:15indexclose isnotavailable for16:00stock-closeexecution. Acquisitionceiling usesconservativeNY16:15completed-sessiontiming,notproof ofeveryhistoricalfirstrelease orexceptionalclose. Futurestrategiesmustfreezeavailabilitybeforeoutcomes.",
+    "interpretation": "Indexlevels in volatilitypercentagepoints,not VXNinvestmentreturns,exactSOXX/portfolioforecasts,truevariancepremium,crashprobability or independentfactoralpha. OnlyCLOSEisadmitted;unusedOHLCfields andunderlyingoptionstripqualityarenotcertified.",
+    "limitations": "Archiveddailycloses donot establishallintradaystaleness/revisions/methodologyversions. Publisherfiltering mayreusevalidquotes;matchingdates alone doesnotprovefreshunderlyingquotes."
+  },
+  "old_prices_quotes_methods_and_timestamps_replaced": false,
+  "new_registered_factor_definitions": 0,
+  "new_registered_candidates": 0,
+  "new_strategy_evaluations": 0,
+  "ratios_strategy_states_targets_or_returns_computed": false,
+  "existing_W42_or_forward_rules_changed": false,
+  "intraday_first_publication_or_full_history_methodology_verified": false,
+  "investment_objective_verified": false,
+  "order_authority": false
+}

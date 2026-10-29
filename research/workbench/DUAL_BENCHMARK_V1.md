@@ -4224,6 +4224,97 @@ one original technical failure, 104 funded paths, 204 combined
 completions and zero qualifiers**. No new parameter, execution
 rule or candidate has been selected from this diagnosis.
 
+## VXN source readiness: archival Nasdaq-100 option volatility
+
+The next step adds an information source, not a portfolio.
+VXN reflects Nasdaq-100/NDX-option volatility rather than the
+SPX-option population behind VIX. That distinction motivates
+later research about proxy population; it does not establish
+incremental forecasting power, exact SOXX risk or tradable
+VXN investment returns.
+
+The [actual source-readiness evidence](evidence/vxn_input_readiness_20261029_v1.json)
+was completed at **2026-10-29T10:16:21.333057Z**. The official
+[VXN page](https://www.cboe.com/us/indices/dashboard/vxn/)
+was acquired once with HTTP200 at **09:55:43.744048Z**. Its
+static description advertised the actual
+[history CSV](https://cdn-api.cboe.com/api/global/us_indices/daily_prices/VXN_History.csv)
+and the generic selected-volatility-index methodology.
+The history request ran once, after the definition was recorded,
+from **09:58:46.282878Z to 09:58:48.484974Z**, returning
+HTTP200 and 219,828 bytes. No JavaScript, alternate endpoint,
+UA/TLS/proxy workaround, retry or broker connection was used.
+
+The page advertises the same generic methodology URL whose
+PDF was already captured on **2026-10-28T22:41:38.659071Z**.
+That exact PDF and its bound extracted text are reused, despite
+the old local filename containing `VVIX`; no new method-document
+download or retrospective timestamp replacement occurs.
+Six VXN-specific signatures were checked against the PDF,
+not inferred from VVIX's different option population.
+
+The saved version9.0 document, revised2026-03-30, describes
+30-calendar-day volatility using AM-settled NDX and PM-settled
+NDXP option contracts with end-of-week expirations, a bracket
+term-selection method, and Nasdaq PHLX quotes only. It specifies
+15-second dissemination during RTH09:31--16:15 ET and a
+publisher filter of 0.40 volatility points over one minute.
+That filter is an index-publication parameter, not a new
+portfolio trigger or an authenticated constant throughout history.
+
+| Source | Native closing rows | First CSV date | Last CSV date | Actual acquisition |
+|---|---:|---|---|---|
+| VXN, new | 4,310 | 2009-09-14 | 2026-10-28 | 2026-10-29 09:58:48 UTC |
+| VIX, preserved | 9,291 | 1990-01-02 | 2026-10-09 | 2026-10-10 15:21:41 UTC |
+
+The document's printed VXN first-value and launch labels are
+January1995 and January2001. The actual downloaded CSV does
+**not** constitute that full inception archive. Its shorter
+span is sufficient for the unchanged requested context only
+after the coverage checks; no older series is fabricated or
+retrieved through an alternate endpoint.
+
+The native header is `DATE,OPEN,HIGH,LOW,CLOSE`, and this
+admission concerns **CLOSE only**, in option-implied volatility
+percentage points. It does not certify the unused OHLC fields
+or the underlying option-strip data. A pandas-based reader and
+an independent standard-library CSV/Decimal/date reader agree
+on all **13,601 native closing values**, with maximum numeric
+difference zero. Both retain all **2,805 original daily queries**
+and **131 original monthly queries** in
+2015-08-10--2026-10-05, with no missing cells, interpolation,
+date deletion or safe-state substitution. The saved 2,805-by-2
+daily panel's 5,610 cells match native values after serialization;
+all 262 monthly cells are the exact corresponding daily subset.
+
+The acquisition-date ceilings use the actual timezone-aware
+receipt clocks and a conservative completed NY16:15 index
+session: October28 for new VXN and October9 for the unchanged
+VIX snapshot. A 16:15 index close cannot justify a 16:00 stock-close
+execution. These ceiling checks do not prove every historical
+intraday publication time or exceptional-session schedule.
+The original stock-data freshness buffer and forward rules are
+not changed.
+
+**Admission remains narrowly archival.** Complete date coverage
+and parser agreement do not authenticate first print, all
+subsequent revisions, quote staleness, every historical
+methodology version or a true variance-risk premium.
+The newly acquired VXN history and the older VIX comparator
+also have different latest dates: no current/live ratio may
+be inferred from that mixed-vintage endpoint.
+
+No old VIX history, raw price, method document or retrieval
+timestamp was replaced. No ratio, market regime, target,
+strategy return or new economic factor definition was generated,
+and no missed prospective observation was backfilled. The
+original ledger and 309-event SSD journal remain unchanged:
+**27 registered, 26 completed/reviewed, one original technical
+failure, zero pending strategies, 104 funded paths, 204 combined
+completions and zero qualifiers**. Any subsequent VXN-based
+economic rule requires its own frozen specification, actual
+registration and pre-account publication; none is selected here.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,
