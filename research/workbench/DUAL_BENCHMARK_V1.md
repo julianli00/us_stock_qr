@@ -3651,6 +3651,107 @@ completions and zero qualifiers remain unchanged, as do the
 original ledger and 263 journal events. This input blocker does
 not stop unrelated lawful research under the continuing authority.
 
+## Causal volatility HMM growth/BIL package: registered
+
+[`config/hmm-growth-bil-v1.json`](config/hmm-growth-bil-v1.json)
+defines one new allocation package, rather than retuning the
+activity/range indicators or bypassing the blocked SMH source.
+Earlier learned-return studies used ridge forecasts or adaptive
+moments; this model explicitly estimates persistence of two
+latent market-volatility states from admitted SPY prices.
+
+### Statistical model and causal use
+
+Each eligible month end uses **252 prior adjusted SPY log returns**
+and two zero-mean Gaussian emission variances. The means are
+fixed at zero: this is a volatility-state model, not a direct
+expected-profit forecast. Initialization is deterministic and unique:
+uniform initial state probabilities, a 0.95 diagonal transition
+matrix, and prior-smoothed variance groups split by the median
+observed squared return.
+
+MAP-EM updates use a symmetric Dirichlet(2,2) transition prior and
+inverse-gamma variance priors with shape 2 and scale three times
+the same training window's pooled squared return. Equivalently,
+transition counts receive one observation per cell and variance
+updates receive six pooled pseudo-observations. State labels are
+sorted by variance after each update, with transition axes
+permuted consistently.
+
+The penalized log posterior must not decrease beyond the fixed
+arithmetic tolerance. Relative improvement tolerance is `1e-7`,
+with at most 500 iterations and no alternate seed. Invalid,
+unidentified, indistinguishable or unconverged fits stop the
+version rather than supply a neutral or “safe” probability.
+Per-month fit receipts remain available if a later fit fails.
+
+Forward-backward smoothing is used only to estimate parameters
+inside the **already known** training window. Only the filtered
+state probability at its last observation enters the current target.
+No later observation or newly smoothed past state rewrites an
+older trade. A separate scaled-probability forward recursion
+verifies each stored probability and log likelihood.
+
+### Explicit growth/BIL allocation package
+
+```text
+p = filtered probability of the lower-variance component at the signal close
+stock target = 0.147 + (0.98 - 0.147) * p
+SOXX = stock target / 2
+each of MTUM, VLUE, QUAL, USMV = stock target / 8
+BIL = 0.98 - stock target
+GLD and other ETF targets = 0
+target idle cash = 0.02, with zero interest
+```
+
+The 14.7% lower stock bound is inherited from the earlier minimum
+guarded-equity construction, not a user-supplied minimum or a
+fitted parameter. It preserves meaningful four-style participation.
+The original monthly observed 0.025 holding band, fractional
+cash funding, USD1 tickets, 5/20 bp costs, one/two-session
+opening delay, fresh USD10,000, RF and initial drawdown peak
+remain unchanged.
+
+Removing gold and replacing the old dollar/option budget changes
+construction as well as statistical inference. Comparisons with
+the fifteenth, price-core and older low-DD references are whole
+models, not isolated HMM causal alpha or equal-risk ablations.
+SPY is a proxy for market risk, not the exact conditional risk of
+the concentrated stock basket. Neither fitted probabilities nor
+convergence certify future profitability, global optimization or
+the 15% drawdown requirement.
+
+### Actual registration and retained fitting evidence
+
+The [actual packet](evidence/hmm_growth_bil_20261029_registration_v1.json)
+records registration event **264** at
+**2026-10-29T06:58:47.048551Z**, before any real-market HMM
+fit or target. Proof event **265** follows at
+**06:59:05.112282Z**, and the packet at **06:59:05.113861Z**.
+
+All **122 eligible month ends** beginning 2016-08-31 have
+converged fits, taking 9--385 iterations, with 122 individual
+receipts retained. Nine earlier prehistory opportunities remain
+undefined; the two original funded anchors and all 2,512/1,254
+formal returns remain intact. Five specific-date truncated-prefix
+checks reproduce the fitted model and target without future data.
+
+Maximum independent filter probability difference is
+`1.7130741269966165e-13`, maximum target difference
+`1.4266365866433262e-13`, and maximum log-likelihood difference
+`5.115907697472721e-12`. Twenty-seven synthetic checks include
+exhaustive state-path enumeration, smoothing-versus-filtering
+distinctions, independent filtering, funding bounds, invalid fits,
+causality and publication/partial-output lifecycle.
+
+There are **no funded outcome metrics yet**. Remote publication
+of the source-bound implementation and packet must precede the
+four original funded paths. Counts are **24 registered,
+22 completed/reviewed, one original technical failure, one
+pending, 88 funded paths, 200 combined completions and zero
+qualifiers**. The old ledgers, sources, models and source refusals
+remain unchanged.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,

@@ -31,6 +31,7 @@ const titles = {
   dollar_option_overnight_range_product_v1: "隔夜＋日内区间乘积：保留美元防御",
   two_segment_core_price_momentum_control_v1: "风格排序：纯价格动量对照",
   two_segment_core_activity_momentum_v1: "风格排序：报告成交活跃度加权",
+  causal_two_state_growth_bil_v1: "因果波动状态：股票／BIL组合",
   semiconductor_option_proxy_dollar_observed_band025: "隐含波动预算 + 美元防御 + 持仓偏差带",
   semiconductor_option_proxy_observed_band025: "隐含波动预算 + 持仓偏差带",
   macro_real_yield_factor_tilt: "实际利率因子倾斜",

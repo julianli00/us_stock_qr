@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-29",
-  "phase": "smh_source_review_blocked_before_market_admission",
-  "active_research_focus": "current_source_evidence_before_semiconductor_implementation_extension",
+  "phase": "hmm_growth_registered_pending_accounts",
+  "active_research_focus": "causal_filtered_volatility_regime_growth_and_bil_package",
   "research_dashboard": {
     "server": "src/us_quant/research_dashboard.py",
     "frontend": "web/research/index.html",
@@ -99,10 +99,10 @@
       "sha256": "ccff66c847db6519132775a177268c03d7ec36491076380be01d01f41589287d"
     },
     "aggregate_counts": {
-      "registered": 23,
+      "registered": 24,
       "completed": 22,
       "reviews": 22,
-      "pending": 0,
+      "pending": 1,
       "technical_failures": 1,
       "qualified": 0,
       "account_paths": 88,
@@ -252,6 +252,14 @@
         "results": "research/workbench/evidence/core_activity_momentum_20261029_results_v1.json",
         "results_sha256": "3ba2a515bd37f1dd0c9143185d95f4dd88323e49a8880812bb222f21e8edbca4",
         "preregistration_commit": "d35968631a624e1b9017c07608cce59ecf36d940"
+      },
+      {
+        "study_id": "ssd_hmm_growth_bil_20261029_v1",
+        "registration": "research/workbench/evidence/hmm_growth_bil_20261029_registration_v1.json",
+        "registration_sha256": "c65b2f86d00f9456fdb1ec0549d67e491d10baf5fdaf49e9f8433eda9dfe12a1",
+        "results": null,
+        "results_sha256": null,
+        "preregistration_commit": null
       }
     ],
     "status": "first_pair_complete_both_rejected",
@@ -877,14 +885,14 @@
     "第10项固定相反优先级：在当时较低SPY/QQQ尾部预算（以实际BIL风险作底）内最大化已观测机会，不扫风险倍率/旧门槛/窗口/核心参数。2026-10-28T05:46:36.615636Z真实登记先于122有证书计划（112优化/10非正机会），5前缀及完整6家族覆盖通过。先发布1074904478bfd0ba2a19d502c479ebd2de13c227，再于05:54:28.534515Z完成4资金路径并拒绝。依次十年base/stress、五年base/stress净CAGR12.9292/11.4123/16.5627/14.9118%，Sharpe0.6781/0.5922/0.7818/0.6907，DD26.4086/27.0756/26.6875/27.3277%；回撤/夏普/QQQ全失败，3条CAGR过且仅五年胜SPY。SSD10完成/40路径/合计188/0通过、118事件，原记录不变；不得拼接第9项回撤与第10项收益。"
   ],
   "next": [
-    "Preserve23registered SSD configurations:22completed/reviewed overall rejections,1retained terminal preparation failure,0pending,88funded paths,200combined completions and0qualifiers. Alloldaccounts/sources/six-slot/forwardrecords unchanged.",
-    "SMHimplementation source review completed2026-10-29T06:08:52.863828Z butNOTadmitted. DirectVanEckweb_fetchtransportfailure andordinarylocalcurlconnecttimeout(ret28/HTTP0) yieldednocurrentissuerpage;notdescribedasHTTPrefusal. PublicdepositoryPDF200isactual2023Feb1summary,notcurrent2026/fullhistoryproof. ActualMarketVectorguideURLreturned403CloudFrontRequestblocked;contentsnotadmitted,no retry/mirror/header/proxyworkaround. Marketpricesnotrequested,sopricecoverage/failureunknown;no13assetpanel/candidate/strategy oroldSOXXreplacement. Keepall263events/countsandpursueanotherindependentlysupportedquestion.",
+    "Preserve24registered SSD configurations:22completed/reviewed overall rejections,1retained terminal preparation failure,1pendingHMMpackage,88funded paths,200combined completions and0qualifiers. Alloldaccounts/sources/six-slot/forwardrecords unchanged.",
+    "HMMgrowth/BIL actuallyregistered264at2026-10-29T06:58:47.048551Z BEFORErealmarketfits/targets,proof265at06:59:05.112282Z afterward. Fixed2statezero-meanGaussianMAPEM/252pastSPYreturns/uniforminitialstate/singlemedian-squareseed/Dirichlet2+IG2priors;filteredcurrentlowvarianceprobability blends14.7%-98%stockbudget,halfSOXX/equal4styles,remainderBIL/GLD0. Newwholepackage,notequalrisk/HMM-onlyalpha/probabilityguarantee.122fitsconverged9-385iterations,retainedpermonth;independentp1.71e-13/target1.43e-13/LL5.12e-12errors,prefix/fullanchors passed. Noaccounts;publishcode/packet andverifyremote fencebefore4originalpaths. No alternatepriors/seed/window rescue;SMHblockunchanged.",
     "Continue economically motivated, preregistered independent small batches without ordinary per-batch approval or a configuration-count ceiling until2026-10-31T15:59Z. Use one computation; at cutoff preserve partial work, clear only the SSD session timer and confirm absence.",
     "Keep old source refusals, VIG/SDY terminal429 and prospective/PIT gates. The independent market-only IBKR adapter is proved, but the one actual probe stopped on2157 before historical requests;0history rows/admissions,no automatic retry or inferred entitlement denial. Default readonly account synchronization remains prohibited."
   ],
   "next_zh": [
-    "保留SSD23项已登记配置：22项完成审阅并整体拒绝、1项原准备终止失败、0待评估，88条资金路径、合计200项完成、0通过。旧账户/来源/历史六配置/前瞻记录不变。",
-    "2026-10-29T06:08:52.863828Z完成SMH实现来源核对但未准入。VanEck直接web_fetch传输失败、本地普通curl连接超时(ret28/HTTP0)，没有现行发行人页面，未称为HTTP拒绝。公共文档库PDF200实际是2023Feb1摘要，不是2026现行或全历史证明。MarketVector实际规则书URL返回403CloudFront阻断，未获得规则正文、不重试或改镜像/请求头/代理绕过。尚未请求行情，不能声称价格覆盖缺失或价格商拒绝；无13资产面板/新策略，也未替换旧SOXX。263事件与统计保持，转向其他独立有据问题。",
+    "保留SSD24项已登记配置：22项完成审阅并整体拒绝、1项原准备终止失败、1项HMM组合待评估，88条资金路径、合计200项完成、0通过。旧账户/来源/历史六配置/前瞻记录不变。",
+    "HMM股票/BIL组合264于2026-10-29T06:58:47.048551Z先真实登记，再拟合真实数据/目标；265证明06:59:05.112282Z形成。固定2状态零均值高斯MAPEM/252日SPY历史/统一初始概率/单一中位平方初值/Dirichlet2与IG2先验，当期过滤低波状态概率对应14.7%-98%股票、半SOXX四风格等分、剩余BIL且GLD0。这是新整体配置，不是等风险或HMM单项因果alpha/概率保证。122拟合均收敛(9-385次)、逐月留存；独立概率/目标/似然误差1.71e-13/1.43e-13/5.12e-12，前缀和完整锚点通过。尚无账户，先发布代码证明再跑4条原路径；不换先验/初值/窗口救回，SMH仍未准入。",
     "持续开展有经济理由、事前冻结的独立小批次，无普通逐批确认或配置次数上限，截止2026-10-31T15:59Z；单计算job，届时保存未完状态、只清除SSD会话timer并确认不存在。",
     "原拒绝来源、VIG/SDY终止429和前瞻/PIT门保持。独立IBKR market-only适配器已证明，但唯一真实探针在历史请求前因2157停止；历史行/准入0，不自动重试或推断订阅拒绝，仍禁止默认readonly账户同步。"
   ],

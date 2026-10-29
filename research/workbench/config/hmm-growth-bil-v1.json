@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_hmm_growth_bil_20261029_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "prior_completed_configurations": 200,
+  "prior_journal_sequence": 263,
+  "prior_journal_head_sha256": "c62b145cdf93aa8dedd1a5db9d47fa5d6afba2e71d5dcb1eca6b09b9b98cf8a3",
+  "decision_calendar_registration": {
+    "path": "evidence/split_session_variation_20261028_registration_v1.json",
+    "sha256": "8224928553fe932a7615e7203f077b00ec773c41877ce147e55ef002c34a340b"
+  },
+  "decision_calendar_targets": {
+    "path": "data/ssd-split-session-variation-20261028-v1/dollar_option_two_segment_variation_v1/targets.csv",
+    "sha256": "612a4ca35d4129dcd025e82b4ee4c64e87f750a08c5d4c5cef1f126f3bc7e3e2"
+  },
+  "prior_floor_policy": {
+    "path": "config/ordered-path-growth-v2.json",
+    "sha256": "920e141f8f9550806abafb69eb6e6ca9407e0f5676db40535fbe25afba36a5e6"
+  },
+  "lookback_return_sessions": 252,
+  "states": 2,
+  "emission_means_fixed_zero": true,
+  "initial_probabilities": [0.5, 0.5],
+  "initial_transition": [[0.95, 0.05], [0.05, 0.95]],
+  "transition_dirichlet_alpha": 2.0,
+  "variance_inverse_gamma_shape": 2.0,
+  "variance_prior_scale_in_pooled_units": 3.0,
+  "variance_pseudocount": 6.0,
+  "max_em_iterations": 500,
+  "relative_objective_tolerance": 1e-7,
+  "independent_probability_tolerance": 1e-10,
+  "independent_likelihood_tolerance": 1e-8,
+  "original_source_months": 131,
+  "eligible_source_months": 122,
+  "undefined_prehistory_months": 9,
+  "stock_target_minimum": 0.147,
+  "invested_target_budget": 0.98,
+  "cash_reserve": 0.02,
+  "growth_share_of_equity": 0.50,
+  "core_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "new_economic_factor_definitions": 0,
+  "actual_weight_trade_band": 0.025,
+  "candidate_count_in_this_study": 1,
+  "study_size_is_a_total_research_quota": false,
+  "candidates": [
+    {"id": "causal_two_state_growth_bil_v1", "construction": "filtered_volatility_regime_growth_BIL_package"}
+  ],
+  "methodology": {
+    "question": "Can explicitly learned persistence of low/high market-volatility regimes guide unleveraged growth participation more effectively than fixed macro permissions or marginal volatility rules? This is a new growth/BIL allocation package,not a coefficient rescue of the old range or activity signals.",
+    "observations": "At each eligibleoriginalmonthend useonly252pastSPYadjustedclose logreturns. Emissions arezero-meanGaussians with2positivevariances. Thismodelsvolatilitystate,notexpectedprofits. Originalprice/RF/volume/historybytes remainunchanged.",
+    "fit": "One deterministicMAP-EM initialization:splittraining squaredreturns at theirmedian,initialize2groupvariances withthe same6-observationpooled shrinkage,uniform initialstate and.95diagonal transition. Update transitioncountsprior+1percell (Dirichlet2) andvariances(sumgamma*y^2+6*pooled)/(sumgamma+6),equivalent toIGshape2/scale3*pooledMAP. Sortstatesbyvariance andpermute transitionaxes aftereachupdate. No multistart orparametergrid.",
+    "convergence": "Require nondecreasingpenalizedlogposterior within1e-10relativearithmetic allowance,stopat1e-7relativeimprovement,atmost500iterations. Zero/nonfinite/unidentifiedhistory,indistinguishablestatevariances ornonconvergence stopsversion;no cash/equalstate fallback ornewinitialization. Numericalconstantsareimplementationchecks,notrelaxedfinancialgates.",
+    "causality": "Forward-backwardsmoothing isonlyforparameterestimation inside theknowntrainingwindow. The targetusesfilteredprobabilityatthe LASTobservedday,neversmoothedpaststateestimates forpasttrades. Refitonlythecurrentdecisionfromitshistory;currenttrainingneverchangesolderissuedtargets. Revalidatewithindependent scaledprobabilityrecursion andprefixchecks.",
+    "allocation": "Letp be currentfilteredlow-variancecomponentprobability. Stocktarget=0.147+(0.98-0.147)*p. HalfstockcapitalisSOXX,theotherhalf equallyMTUM/VLUE/QUAL/USMV;BIL=0.98-stocktarget,GLDandotherfunds0;2%targetidlecashearns0. The14.7%floorisinheritedoldminimumguardedequity,not a userminimum. Thispreserves4meaningfulfactorholdings butnotoldgold/dollarbudgets.",
+    "package_boundary": "Removinggoldandusinga probability-weightedgrowth/BILpackage changesconstructionaswellasinference. Comparisonswithfifteenth/price-core/olderlowDDreferences arewholemodels,notisolatedHMMcausalalpha ormatchedrisk. SPYstates areamarketriskproxy,notexactconditionalriskoftheconcentratedstockbasket. Filterprobability isconditionalontheassumedmodel,notempiricallycalibratedchanceofprofit orDDsafety.",
+    "warmup": "131originalsource opportunities;122after252actualreturnwarmup,starting2016-08-31. First9prehistorymonths stayundefined,notfilledwithsafeprobabilities. BothoriginalOct2016/Oct2021anchors andall2512/1254returns remain.",
+    "execution": "Monthly0.025observedholdingband,original1/2sessionlateropens,5/20bp,USD1tickets,fresh10000per4path,unchangedRF/initialpeak/fractional1xlong-onlycashfunding. No leveredETF/shorts/futureprices/newquotes orprospectivebackfill.",
+    "selection": "Onefixedhypothesisafter200exposedcompleted configurations. Registerrule/code/sourcesbeforeactualfits/targets andpublishbeforeaccounts. Preservepartialfits/errors;no priors/windows/floor/transition/cost/acceptance adjustments afteroutcomes.",
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

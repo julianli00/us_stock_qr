@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 23 SSD registrations, 22 completed/rejected and one retained preparation failure; 88 funded paths | Separate net-CAGR/SPY/QQQ criteria; zero qualifiers, no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 24 SSD registrations, 22 completed/rejected, one retained preparation failure and one pending HMM package; 88 funded paths | Separate net-CAGR/SPY/QQQ criteria; zero qualifiers, no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -1080,6 +1080,29 @@ No SMH price history, 13-asset panel, target matrix or candidate
 account was created. This is a metadata-access limitation, not a
 claim that the price provider refused SMH or lacks the required
 history. The existing SOXX and all registered models remain unchanged.
+
+The next [registered HMM growth/BIL package](research/workbench/evidence/hmm_growth_bil_20261029_registration_v1.json)
+uses only the already admitted SPY price history to infer a
+two-state volatility process. At each eligible month end it fits
+the previous 252 returns with fixed-prior MAP-EM and uses the
+**current filtered** low-variance probability—not retrospectively
+smoothed past trading states—to blend stock exposure between
+the inherited 14.7% floor and 98%. Stocks remain half SOXX and
+half equal MTUM/VLUE/QUAL/USMV; the remainder is actual BIL,
+with 2% target idle cash and no GLD allocation.
+
+This changes the whole allocation package, not only a prior
+signal coefficient. Model probabilities are not calibrated profit
+or drawdown guarantees. Actual registration **264** at
+**2026-10-29T06:58:47.048551Z** preceded all real-market fits;
+proof **265** at **06:59:05.112282Z** follows their verification.
+All 122 eligible fits converged and were retained separately,
+with original full-window anchors preserved.
+
+No funded account has run yet. The code and actual packet must
+be remotely published before four original-cost/timing paths.
+Counts are **24 registered, 22 completed, one retained technical
+failure, one pending, 88 funded paths and 200 combined completions**.
 
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
