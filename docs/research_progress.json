@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-29",
-  "phase": "vxn_archival_source_admitted",
-  "active_research_focus": "nasdaq100_option_volatility_source_only_no_strategy_signal",
+  "phase": "vxn_relative_uncertainty_registered_pending_accounts",
+  "active_research_focus": "normalized_NDX_SPX_uncertainty_changes_only_stock_composition",
   "research_dashboard": {
     "server": "src/us_quant/research_dashboard.py",
     "frontend": "web/research/index.html",
@@ -19,6 +19,7 @@
     "native_continuation_cadence_user_updated_at": "2026-10-28T02:21:04.321Z",
     "cadence_does_not_authorize_parallel_jobs_or_repeated_downloads": true,
     "vxn_source_readiness": {
+      "snapshot_scope": "Source-admission step only; later strategy registrations are separate.",
       "evidence": "research/workbench/evidence/vxn_input_readiness_20261029_v1.json",
       "sha256": "9bbbcb076a35c613d33a040e1d1a829666154736e7f544178467e3bcf9cfe429",
       "new_native_rows": 4310,
@@ -118,10 +119,10 @@
       "sha256": "ccff66c847db6519132775a177268c03d7ec36491076380be01d01f41589287d"
     },
     "aggregate_counts": {
-      "registered": 27,
+      "registered": 28,
       "completed": 26,
       "reviews": 26,
-      "pending": 0,
+      "pending": 1,
       "technical_failures": 1,
       "qualified": 0,
       "account_paths": 104,
@@ -287,6 +288,14 @@
         "results": "research/workbench/evidence/hmm_core_session_momentum_20261029_results_v1.json",
         "results_sha256": "c75b89dde31b5a4321e8aacccb1e1f7f0717b6d574514a2fcfac879a8c49eabc",
         "preregistration_commit": "c86c218aa7fa6eebf1c61a8172634a9a73e66c16"
+      },
+      {
+        "study_id": "ssd_vxn_relative_uncertainty_20261029_v1",
+        "registration": "research/workbench/evidence/vxn_relative_uncertainty_20261029_registration_v1.json",
+        "registration_sha256": "77bbc59bf5ecec3659936a88736ca0731a39d8b181d1d96482c8ea0bc9bd3b19",
+        "results": null,
+        "results_sha256": null,
+        "preregistration_commit": null
       }
     ],
     "status": "first_pair_complete_both_rejected",
@@ -912,14 +921,14 @@
     "第10项固定相反优先级：在当时较低SPY/QQQ尾部预算（以实际BIL风险作底）内最大化已观测机会，不扫风险倍率/旧门槛/窗口/核心参数。2026-10-28T05:46:36.615636Z真实登记先于122有证书计划（112优化/10非正机会），5前缀及完整6家族覆盖通过。先发布1074904478bfd0ba2a19d502c479ebd2de13c227，再于05:54:28.534515Z完成4资金路径并拒绝。依次十年base/stress、五年base/stress净CAGR12.9292/11.4123/16.5627/14.9118%，Sharpe0.6781/0.5922/0.7818/0.6907，DD26.4086/27.0756/26.6875/27.3277%；回撤/夏普/QQQ全失败，3条CAGR过且仅五年胜SPY。SSD10完成/40路径/合计188/0通过、118事件，原记录不变；不得拼接第9项回撤与第10项收益。"
   ],
   "next": [
-    "Preserve27registered SSD configurations:26completed/reviewed overall rejections,1retained terminal preparation failure,0pending,104funded paths,204combined completions and0qualifiers. Alloldaccounts/sources/six-slot/forwardrecords unchanged.",
-    "VXN archival CLOSE source admission completed2026-10-29T10:16:21.333057Z. OneactualmetadataGET+oneadvertisedCSVGET,both200,no oldVIX/PDFrefresh.4310newVXNrows(2009Sep14--2026Oct28)+9291preservedVIXrows:13601independentnativevalues,error0;all2805daily/131monthlyqueriesandserializedpanelscomplete. Reusedgenericdocument specificallycheckedforNDX/NDXP/30calendar-daybracket/NasdaqPHLX/16:15ET. This isNOTfull1995history,intradayfirstpublication/fullmethodchain/currentmixed-vintageratio/alpha.0newratios/signals/targets/accounts/factorregistrations;old309events/ledger/forwardmodelsunchanged. Nextseparatelyselectandpreregisteranindependentlysupportedeconomicrule;no strategyalreadyselected.",
+    "Preserve28registered SSD configurations:26completed/reviewed overall rejections,1retained terminal preparation failure,1pending,104funded paths,204combined completions and0qualifiers. Alloldaccounts/sources/six-slot/forwardrecords unchanged.",
+    "One VXN relative-uncertainty allocation actuallyregistered2026-10-29T10:50:07.287294Z BEFOREnewratios/targets;proof10:50:08.528775Z. NormalizeVXN/VIXimpliedvarianceby21sessionQQQ/SPYtwo-segmentobservedvariation;inverseuncertaintyoddschangeSOXX/equal4stylecomposition only. SavedHMMtotalstock/BIL/nonstock,122months/fullanchors/fees/timing/RF/1x/0.025band preserved;0HMMrefits/newquotes/accounts. Independentscalar/cross-producttargeterror2.421e-14/relative-ratio7.761e-14,5prefixes. Publishactualpacket anddependenciesbeforeall4paths;keepallfailures,notexactSOXX/coreIV/trueVRP/forwardalpha. No parameterrescue.",
     "Continue economically motivated, preregistered independent small batches without ordinary per-batch approval or a configuration-count ceiling until2026-10-31T15:59Z. Use one computation; at cutoff preserve partial work, clear only the SSD session timer and confirm absence.",
     "Keep old source refusals, VIG/SDY terminal429 and prospective/PIT gates. The independent market-only IBKR adapter is proved, but the one actual probe stopped on2157 before historical requests;0history rows/admissions,no automatic retry or inferred entitlement denial. Default readonly account synchronization remains prohibited."
   ],
   "next_zh": [
-    "保留SSD27项已登记配置：26项完成审阅并整体拒绝、1项原准备终止失败、0待评估，104条资金路径、合计204项完成、0通过。旧账户/来源/历史六配置/前瞻记录不变。",
-    "VXN历史收盘来源于2026-10-29T10:16:21.333057Z完成限定准入。真实1次元数据GET加1次广告CSV GET均200，未重取旧VIX/PDF。4310条新VXN(2009Sep14--2026Oct28)加9291条保留VIX，共13601原值独立一致、误差0；2805日/131月查询及落盘面板完整。复用通用文件并核对VXN专属NDX/NDXP、30日历日括限法、NasdaqPHLX及16:15ET发布。不是完整1995历史、日内首次发布/全方法链/混合版本当前比值或alpha证明。0新比值/状态/目标/账户/因子登记，旧309事件/账本/前瞻不变。下一步需另选有依据的经济规则并事前登记，尚未选策略。",
+    "保留SSD28项已登记配置：26项完成审阅并整体拒绝、1项原准备终止失败、1待评估，104条资金路径、合计204项完成、0通过。旧账户/来源/历史六配置/前瞻记录不变。",
+    "VXN相对不确定性组合于2026-10-29T10:50:07.287294Z真实登记，先于新比值与目标，10:50:08.528775Z完成证明。VXN/VIX隐含方差分别除以QQQ/SPY的21交易日两时段已观测变动，再以反向不确定性比例仅调整SOXX与四风格内部股票构成。保存HMM总股票/BIL/非股票目标、122月及完整锚点、成本时序RF/1倍资金/旧偏差带；0重训/新报价/新账户。独立标量和交叉乘积目标误差2.421e-14、比值相对误差7.761e-14，五次前缀通过。须实际发布登记包及来源后再跑四条原路径；保留失败，不冒称SOXX/核心精确隐含风险、真实风险溢价或前瞻alpha，不事后调参。",
     "持续开展有经济理由、事前冻结的独立小批次，无普通逐批确认或配置次数上限，截止2026-10-31T15:59Z；单计算job，届时保存未完状态、只清除SSD会话timer并确认不存在。",
     "原拒绝来源、VIG/SDY终止429和前瞻/PIT门保持。独立IBKR market-only适配器已证明，但唯一真实探针在历史请求前因2157停止；历史行/准入0，不自动重试或推断订阅拒绝，仍禁止默认readonly账户同步。"
   ],

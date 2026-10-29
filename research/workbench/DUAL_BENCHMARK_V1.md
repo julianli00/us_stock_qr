@@ -4305,8 +4305,8 @@ also have different latest dates: no current/live ratio may
 be inferred from that mixed-vintage endpoint.
 
 No old VIX history, raw price, method document or retrieval
-timestamp was replaced. No ratio, market regime, target,
-strategy return or new economic factor definition was generated,
+timestamp was replaced. At that source-only snapshot, no ratio,
+market regime, target, strategy return or new economic factor definition was generated,
 and no missed prospective observation was backfilled. The
 original ledger and 309-event SSD journal remain unchanged:
 **27 registered, 26 completed/reviewed, one original technical
@@ -4314,6 +4314,94 @@ failure, zero pending strategies, 104 funded paths, 204 combined
 completions and zero qualifiers**. Any subsequent VXN-based
 economic rule requires its own frozen specification, actual
 registration and pre-account publication; none is selected here.
+
+## Relative VXN uncertainty within the frozen stock budget: registered
+
+The [new actual packet](evidence/vxn_relative_uncertainty_20261029_registration_v1.json)
+defines one directional information hypothesis. Nasdaq-100 and
+broad-market volatility levels are not directly interchangeable.
+The rule compares each option quote with the already observed
+movement of its corresponding liquid market proxy before
+changing stock composition.
+
+At each of the 122 saved HMM month ends, SPY and QQQ each use
+the same original 21-session two-segment measurement:
+252 times the mean of squared adjusted overnight and
+open-to-close log returns. It uses 22 adjusted closes and
+21 matched opens, not a centered covariance estimate,
+high-frequency realized variance or unequal-duration clock weighting.
+The existing pure numerical measurement is reused with explicit
+SPY/QQQ audit identities, not with a false SPY label on QQQ data.
+
+The two positive uncertainty measures are
+`A_SPX = (VIX / 100)^2 / observed_SPY_variation` and
+`A_NDX = (VXN / 100)^2 / observed_QQQ_variation`.
+The SOXX fraction of the **unchanged total stock budget** is
+`A_SPX / (A_SPX + A_NDX)`; the rest is shared equally by
+MTUM, VLUE, QUAL and USMV. Both ratios are scaled by their
+common maximum only for numerical stability. Equal normalized
+uncertainty recovers the parent half/half split.
+There is **no new clipping range, temperature, binary threshold,
+satellite cap or within-core rank weighting**.
+
+This treats relatively more priced forward uncertainty as a
+reason for a smaller sleeve fraction, not as a promised higher
+return. The direction is frozen before outcomes, not selected
+from a sign or parameter grid. Earlier relative-equity odds
+used past SOXX/core wealth on a different carrier, while the
+earlier SPX split-variation rule changed the stock/gold budget.
+Neither old rule or outcome is reclassified as this new study.
+
+The risk budget is read from the exact HMM target matrix:
+total SOXX plus four-style capital, BIL, GLD and every other
+nonstock cell are preserved. No HMM fitting, filtering,
+prior, window or stock-floor change occurs. All 122 original
+months from 2016-08-31 remain; the nine undefined prehistory
+months remain undefined, with no additional drop. Both full
+formal account anchors and all 2,512/1,254 returns are retained,
+with positive participation by all four existing style families.
+
+The interpretation is deliberately limited. VXN prices NDX
+options, **not SOXX options**; VIX is not an exact four-style
+portfolio forecast. SPY and QQQ total-return ETF observations
+are proxies for SPX and NDX, not identical price indices.
+Thirty-calendar-day implied risk divided by backward
+21-trading-session coarse variation is not a true variance-risk
+premium or a portfolio covariance model. Equal target stock
+capital also does not imply equal realized portfolio risk.
+
+Only the admitted original 2,805-session VXN/VIX panel is used.
+Both option inputs are the signal date's native closes and the
+decision is after 16:15 ET, with unchanged one-/two-session-later
+execution. This does not infer a live ratio from the differently
+dated source endpoints, trade VXN index returns, repair
+historical intraday-PIT limitations or change the forward models.
+Fresh USD10,000 funding, 2% target cash, the original RF and
+initial-capital peak, USD1 tickets, base/stress costs, long-only
+cash-funded 1x exposure and the 0.025 observed-weight band remain.
+
+Thirty-eight synthetic strategy/lifecycle checks preceded real
+ratios. Actual registration at **2026-10-29T10:50:07.287294Z**
+preceded all real variation comparisons, ratios, shares and
+targets. The target proof was written at
+**10:50:08.528775Z**, and the packet at **10:50:08.530791Z**.
+Independent scalar price-ratio arithmetic and cross-product odds
+give maximum target/share differences of
+`2.4202861936828413e-14` / `2.4868995751603507e-14`,
+variation difference `3.6637359812630166e-15` and relative
+ratio difference `7.760597834938595e-14`. Five chronological
+prefixes and both complete four-family account anchors are retained.
+
+At this snapshot no new account has run. The actual code,
+source-admission dependency, HMM carrier and registration packet
+must be remotely published before the four funded paths.
+The prespecified comparison is the already saved equal-core HMM,
+not a new rerun or an equal-realized-risk counterfactual.
+All history is exposed after 204 completed configurations;
+independent forward or search-adjusted alpha is not claimed.
+Counts are **28 registered, 26 completed/reviewed, one original
+technical failure, one pending, 104 funded paths, 204 combined
+completions and zero qualifiers**.
 
 ## Independent IBKR price-history source boundary
 

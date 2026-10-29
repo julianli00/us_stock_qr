@@ -1223,9 +1223,28 @@ series cover the original 2,805 daily and 131 monthly queries.
 The CSV begins in 2009, not the method document's printed 1995
 first-value history. This does not certify full historical
 methodology, intraday first publication, live freshness or alpha.
-No VXN/VIX ratio, signal, target, strategy account or new factor
-definition has been computed. Counts remain **204 completed
+At that source-only snapshot, no VXN/VIX ratio, signal, target,
+strategy account or new factor definition had been computed.
+Counts remained **204 completed
 configurations and zero qualifiers**.
+
+The [next actual registration](research/workbench/evidence/vxn_relative_uncertainty_20261029_registration_v1.json)
+uses VXN and VIX relative to observed QQQ and SPY movement,
+rather than comparing their unequal raw levels. It changes only
+SOXX versus equal-style composition inside the exact saved HMM
+stock budget; BIL and every nonstock target remain unchanged.
+Equal normalized uncertainty recovers the parent half/half split.
+No new cap, fitted coefficient, HMM refit or execution override
+is introduced.
+
+Actual registration at **2026-10-29T10:50:07.287294Z** preceded
+the first real ratios and targets; proof followed at
+**10:50:08.528775Z**. All 122 source months and original formal
+anchors remain. **No new funded account has run at this snapshot**:
+actual remote publication must precede all four original paths.
+Counts are **28 registered, 26 completed, one retained technical
+failure, one pending, 104 funded paths, 204 combined completions
+and zero qualifiers**.
 
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).

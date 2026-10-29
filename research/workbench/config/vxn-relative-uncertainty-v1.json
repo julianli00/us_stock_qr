@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_vxn_relative_uncertainty_20261029_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "prior_completed_configurations": 204,
+  "prior_registered_ssd_configurations": 27,
+  "prior_journal_sequence": 309,
+  "prior_journal_head_sha256": "e627683ada2fc5ed539c0676aee694c7b62a76f9567e2ad8cfc9435006ab26e7",
+  "source_candidate": "causal_two_state_growth_bil_v1",
+  "source_registration": {
+    "path": "evidence/hmm_growth_bil_20261029_registration_v1.json",
+    "sha256": "c65b2f86d00f9456fdb1ec0549d67e491d10baf5fdaf49e9f8433eda9dfe12a1"
+  },
+  "source_targets": {
+    "path": "data/ssd-hmm-growth-bil-20261029-v1/causal_two_state_growth_bil_v1/targets.csv",
+    "sha256": "7ce5fd8a1172c87fdfd3ebaeff37461b5c543ef12bf317899b7130ffcaea00ee"
+  },
+  "vxn_source_readiness": {
+    "path": "evidence/vxn_input_readiness_20261029_v1.json",
+    "sha256": "9bbbcb076a35c613d33a040e1d1a829666154736e7f544178467e3bcf9cfe429"
+  },
+  "vxn_source_manifest": {
+    "path": "data/ssd-vxn-source-20261029-v1/manifest.json",
+    "sha256": "63641924679a14f3d7b70259d79adcdda13d4dc370859a36a0b05a179861d1cb"
+  },
+  "vxn_source_policy": {
+    "path": "config/vxn-inputs-v1.json",
+    "sha256": "5337e5a5cc99adf666ba3dda0a0b039dada76c62ae22d995832ac6a48a42a07f"
+  },
+  "vxn_daily_closes": {
+    "path": "data/ssd-vxn-source-20261029-v1/closes.csv",
+    "sha256": "35554406a01ae9fb338f9fbd29700ce2a6de83bc56f903f097421132e91ccda5"
+  },
+  "prior_measurement_policy": {
+    "path": "config/split-session-variation-v1.json",
+    "sha256": "ffde8f93526bd55bde8d32a13c05c3e44b256444e953112cf050a93298ea09d6"
+  },
+  "prior_structural_odds_policy": {
+    "path": "config/relative-equity-odds-v1.json",
+    "sha256": "42f8e7a6c70e0a61a8eddfb55a2b579eed216f6a446bbf7320b2177bc0a13478"
+  },
+  "realized_return_sessions": 21,
+  "annualization_sessions": 252,
+  "segments_per_session": 2,
+  "market_proxy_symbols": ["SPY", "QQQ"],
+  "option_column_order": ["VXN", "VIX"],
+  "source_target_months": 122,
+  "additional_source_months_dropped": 0,
+  "undefined_prehistory_calendar_months": 9,
+  "core_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "new_economic_factor_definitions": 0,
+  "cash_reserve": 0.02,
+  "actual_weight_trade_band": 0.025,
+  "candidate_count_in_this_study": 1,
+  "study_size_is_a_total_research_quota": false,
+  "candidates": [
+    {"id": "hmm_vxn_relative_uncertainty_v1", "construction": "underlying_matched_relative_option_uncertainty_odds"}
+  ],
+  "methodology": {
+    "question": "Does growth-versus-broad-market option pricing add useful composition information after accounting for each market's already observed movement? NormalizeVXNwithQQQandVIXwithSPY ratherthan mechanically treating the usuallydifferent rawvolatilitylevels as comparable risks. One directional hypothesis,not a forecast guarantee or a sign/parameter search.",
+    "observed_proxies": "ForSPYandQQQ separately,reuseexactly252*mean(overnight_log_return^2+open_to_close_log_return^2)over21completedsessions endingD. Read22adjustedcloses and21matchedadjustedopens. Reusetheexistingpuretwo-segmentmeasurementwith explicitnewauditlabels,notitsoldportfolio generator orSPYlabel masquerading asQQQ. This isuncenteredcoarsevariation,not high-frequencyrealizedvariance.",
+    "relative_uncertainty": "LetA_SPX=(VIX/100)^2/proxy_SPY andA_NDX=(VXN/100)^2/proxy_QQQ. Within the unchanged HMMtotalstockbudget,setSOXXshare=A_SPX/(A_SPX+A_NDX);divide the remainder equallyamongthefourstyles. Rescale bothpositive ratios bytheirmaximum onlyfornumericstability. Equalnormalizeduncertaintyrecovershalf/half. No newclipping,temperature,satellitecap,rankweights orbinarythreshold.",
+    "interpretation": "The ruletiltsawayfromrelativelymorepricedforwarduncertainty,not towardassumedhigherexpectedreturns. Implied30calendar-day risk andbackward21trading-sessionETFvariation are not a truevariance-riskpremium. SPYandQQQ aretotal-returnETFproxies forSPX/NDX,notidenticalunderlyingpriceindices. VXN isnot a SOXXoptionquote;VIX isnot an exactfour-stylecoreforecast,andneitherestablishesportfoliocovariance.",
+    "preservation": "ReadexactfrozenHMMtargets,notitsgenerator/filter. PreservecombinedSOXX+fourstylecapital andallnonstockcellsbit-exactly,includingBIL/GLD/SPY/QQQ/otherunusedassets. No HMMprior/window/floor refit. Fourstyles stayequalwithin theirnewpositivecorebudget. Unchangedtotalstockcapitaldoesnotmeanidenticalrealizedportfolio risk.",
+    "causality": "Atall122originalHMMmonthends,priceinputs endDandbothnativeoptionquotesareDcloses. Decisionsareafterthe16:15ETindexclose,not16:00stock-closeexecution. Retainoriginal1/2session-lateropens. The9undefinedsourceprehistorymonthsremainundefined;no additionalmonthdrop,alloriginalformalanchors/2512-1254returnsremain.",
+    "source_scope": "Useonlythe admitted original2805-sessionVXN/VIXpanel andunchangedtwelve-fundmarket. Do not mix the laterVXNendpointwithstaleVIXforcurrentlivequeries,request newdata,tradeVXNindexreturns orclaimfullhistoricalintradayPIT/methodchain. VXNisnewinformation,notanewholdingasset/economicfamily.",
+    "prior_art": "Earlierrelative-equityodds usedpastSOXX/corewealthonadifferentcarrier. EarlierSPXsplit-variation changedstock/goldriskbudget. This rule usesnewNDXoptioninformation normalizedagainstQQQandSPYobservations tochangeonlystockcomposition;itdoesnotretune theirhorizons orrestore theirfailedresults. SourceHMMequal-core is theprespecifiedactualwhole-modelreference.",
+    "execution": "Onecandidate/allfour originalfreshUSD10000windows/costcases;2%targetcash,1xlong-onlycashfunding,originalRF/initialpeak/USD1tickets/5-20bp/1-2sessiondelays/0.025observedholdingband. Actualextraorders,fees,risk andallfailurescount. No core-onlyexecutionoverride,zero-costaccount orpending-request cancellation.",
+    "registration": "Actualnewregistrationmustprecede anyrealvariationcomparison,ratio,share ortarget. Publishactualsource-code-policy-proof packetbeforeanyfundedaccount. Allhistoryisexposedafter204completions;no full-searchadjustedalpha orindependentholdout is claimed.",
+    "source_model_refitting": false,
+    "new_source_requests": false,
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}
