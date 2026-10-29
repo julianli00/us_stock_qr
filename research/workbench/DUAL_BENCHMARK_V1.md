@@ -2824,16 +2824,88 @@ original monthly observed-holdings 0.025 band, costs, fees, delays,
 fresh USD10,000, risk-free definition, initial-capital drawdown peak
 and independent funded account checker remain unchanged.
 
-All candidate account metrics are still absent. Actual remote
-publication of the bound implementation and packet must precede
-all four accounts. The direct fifteenth donor and the retained older
+At that snapshot all candidate account metrics were absent. Actual
+remote publication of the bound implementation and packet was
+required before all four accounts. The direct fifteenth donor and the retained older
 low-drawdown reference remain whole-model comparisons; a weak
 recent result alone is not the research frontier. No old target,
 account, source-admission or forward pipeline is replayed.
 
-Counts are **20 registered, 18 completed/reviewed, one retained
+Counts then were **20 registered, 18 completed/reviewed, one retained
 technical failure and one pending candidate**, with 72 funded paths,
 196 combined completions and zero qualifiers unchanged.
+
+### Actual four-path rejection and fixed comparisons
+
+The implementation and packet were actually published in
+`399d0fd8475f9a3630dfaf0aa21a856fdd9474bb`. Publication event **219**
+records the complete remote fence at **2026-10-29T00:06:54.504696Z**,
+before any candidate account. The older source-admission commit
+was rejected by the read-only publication verifier without starting
+accounts. All four new funded paths ran once and completed at
+**00:10:10.763397Z**, with review event **228**.
+
+The [complete scalar outcome](evidence/vvix_uncertainty_confirmation_20261029_results_v1.json)
+retains all four original windows, risk-free observations, expenses
+and unrounded gates:
+
+| Path | Net CAGR | Net excess Sharpe | Maximum DD | Annual two-sided turnover | Model orders | Costs USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 17.406862% | 1.039144 | 18.945424% | 5.328480x | 656 | 1,178.98 |
+| 10y stress | 15.931140% | 0.944764 | 20.541889% | 5.318832x | 656 | 2,600.15 |
+| 5y base | 20.870534% | 1.015963 | 19.202923% | 5.451163x | 317 | 498.38 |
+| 5y stress | 18.843319% | 0.909462 | 20.782936% | 5.428261x | 317 | 1,006.53 |
+
+**All four drawdown gates fail.** Both base Sharpe gates pass,
+but both stress Sharpe gates fail. Both ten-year QQQ gates fail;
+both five-year QQQ gates pass. All CAGR, matched-cost SPY and
+retained extra stress-versus-base-cost-SPY gates pass. No path
+passes jointly. The five-year-base CAGR above 20% does not replace
+the failed drawdown condition.
+
+The untouched monthly feedback checker covers 121/121/61/61
+decision opportunities **including initial deployment**, with
+101/101/49/49 issued requests. Model tickets are not broker orders.
+Independent funded equity differs by at most
+`5.820766091346741e-11` USD; cash stays positive and maximum
+gross exposure remains below 0.983.
+
+Both comparison identities were fixed in the actual pre-account
+intent. The direct fifteenth donor provides the relevant full-rule
+baseline:
+
+| Path | Donor CAGR | VVIX CAGR | Donor Sharpe | VVIX Sharpe | Donor DD | VVIX DD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 16.9172% | 17.4069% | 1.180261 | 1.039144 | 14.8656% | 18.9454% |
+| 10y stress | 16.3809% | 15.9311% | 1.137426 | 0.944764 | 13.8994% | 20.5419% |
+| 5y base | 20.9599% | 20.8705% | 1.242588 | 1.015963 | 12.5061% | 19.2029% |
+| 5y stress | 20.0204% | 18.8433% | 1.180153 | 0.909462 | 12.4731% | 20.7829% |
+
+Only ten-year-base CAGR improves, by 0.4896 percentage points;
+the other three growth rates decline. All four Sharpe values are
+lower and drawdowns higher. Annual two-sided turnover rises by
+1.2126/1.2014/1.0266/1.0225 times NAV, and actual modeled costs
+rise by USD119.49/272.56/6.15/27.13. Five-year ticket counts fall
+by seven, but larger traded notional still raises costs; fewer tickets
+alone are not evidence of a cheaper strategy.
+
+The broader preselected
+`semiconductor_option_proxy_dollar_observed_band025` reference
+also remains in view. VVIX CAGR is higher on all four paths by
+0.2658--2.6840 points, but every Sharpe is lower and drawdown rises
+5.3733--7.3497 points. This is not an equal-risk gain or causal alpha.
+The comparisons read saved full-model metrics with matching dates
+and SPY benchmarks; they do not replay either reference account or
+splice their low drawdowns into the new return stream.
+
+The candidate is rejected with **20 registrations, 19 completed
+evaluations/reviews, one retained technical failure, zero pending,
+76 funded paths, 197 combined completions and zero qualifiers**.
+The source admission remains valid within its limited archival
+scope; it is not evidence that this particular information rule works.
+Any next diagnosis must use saved guards, holdings and costs,
+without rerunning accounts or changing the VVIX window, comparison
+direction, threshold, scale or trading band to rescue this result.
 
 ## Independent IBKR price-history source boundary
 
