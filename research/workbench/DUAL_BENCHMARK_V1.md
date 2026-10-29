@@ -5577,6 +5577,147 @@ all prior failures, original ledger and single-day
 forward identities remain unchanged. The investment
 objective is not met by this freeze or registration.
 
+## Actual four-expert outcomes and preserved pool-addition comparison
+
+The [complete scalar results](evidence/four_expert_meta_20261029_results_v1.json)
+finished once at **2026-10-29T19:32:27.875994Z**.
+Actual preregistration publication
+`1b1f2d7bfbd277e8cd7f42e57da4ef76451b04bb`
+and the real fence379 at
+**19:24:28.408828Z** precede every new account start.
+The guard verified80 explicit packet/dependency files
+and seven unchanged manifest-pinned imports. All
+original code, fees, dates, source records and failed
+versions remain; no old expert account was replayed.
+
+| Portfolio | Path | Net CAGR | Net excess Sharpe | Maximum DD | Annual two-sided turnover | Model orders | Costs USD |
+|---|---|---:|---:|---:|---:|---:|---:|
+| Equal four | 10y base | 17.124996% | 1.074750 | 17.316399% | 2.862771x | 888 | 1162.23 |
+| Equal four | 10y stress | 16.578743% | 1.037212 | 16.891928% | 2.867234x | 886 | 1968.86 |
+| Equal four | 5y base | 19.995942% | 1.100051 | 15.553030% | 2.731157x | 422 | 512.41 |
+| Equal four | 5y stress | 18.496694% | 1.008045 | 15.506208% | 2.737418x | 420 | 768.93 |
+| Rolling four | 10y base | 18.428482% | 1.119296 | 22.823731% | 6.306231x | 746 | 1462.24 |
+| Rolling four | 10y stress | 18.000432% | 1.089862 | 22.934287% | 6.317894x | 753 | 3592.56 |
+| Rolling four | 5y base | 19.040782% | 1.021638 | 23.040820% | 6.160931x | 399 | 612.47 |
+| Rolling four | 5y stress | 17.550942% | 0.930772 | 23.160710% | 6.176194x | 399 | 1221.34 |
+
+**Both complete rules are rejected.** All eight
+CAGR/SPY gates pass, as do the original extra
+stress-versus-base-SPY gates. Five-year QQQ passes,
+but all four ten-year QQQ comparisons fail.
+Every DD exceeds15%; rolling five-year stress also
+fails Sharpe. No path passes every point gate.
+
+The closest drawdown is exactly
+`0.15506207749213963`, not a rounded15% pass.
+Equal five-year base CAGR
+`0.19995942236211706` does not exceed20%.
+Neither the preferred/ultimate return levels nor
+one nearly passing risk metric changes the joint
+hard qualification.
+
+### Adding an expert can help without producing a qualifier
+
+The following comparisons read the actual saved
+three-expert execution-v2 accounts and the new
+four-expert records. Neither source strategy nor
+old combination is rerun. They retain the same
+formal dates, RF, cost scenarios and execution
+rules; differences include actual asset netting,
+holding feedback and changed fees.
+
+| Rule | Path | Four minus three CAGR, pp | Sharpe change | DD change, pp | Annual turnover change | Model-order change | Total fee change USD |
+|---|---|---:|---:|---:|---:|---:|---:|
+| Equal | 10y base | -1.469682 | +0.011719 | -1.951068 | -0.627904 | +102 | +23.99 |
+| Equal | 10y stress | -1.452580 | +0.008387 | -1.553398 | -0.608994 | +106 | -202.97 |
+| Equal | 5y base | -1.131980 | +0.015278 | -1.504200 | -0.525104 | +39 | +21.75 |
+| Equal | 5y stress | -0.970799 | +0.015077 | -1.602311 | -0.516600 | +37 | -28.67 |
+| Rolling | 10y base | -0.024029 | +0.101777 | -1.285408 | +0.392770 | +96 | +178.00 |
+| Rolling | 10y stress | +0.541181 | +0.132178 | -0.063421 | +0.403754 | +108 | +484.16 |
+| Rolling | 5y base | -2.239011 | -0.008745 | -1.338929 | -0.143893 | +52 | +53.32 |
+| Rolling | 5y stress | -1.115164 | +0.037604 | -0.186763 | -0.134735 | +57 | +84.96 |
+
+Under equal weights, the added specialist improves
+Sharpe and DD on **all four** paths while reducing
+CAGR and turnover throughout. Five-year stress
+Sharpe changes from the old exact
+`0.9929673032834145` to
+`1.0080447066491218`, so that individual gate
+genuinely changes from fail to pass. The overall
+rule still fails drawdown and ten-year QQQ.
+It would be wrong either to call the expert useless
+because it is not a standalone champion, or to call
+these improvements final portfolio qualification.
+
+Equal-rule order counts increase in every scenario.
+Proportional costs fall, but extra fixed tickets make
+the total base fees slightly higher; total stress
+fees fall. Lower turnover is not identical to fewer
+orders or uniformly lower total costs.
+
+The rolling expansion lowers DD relative to the old
+rolling rule on all four paths, but CAGR falls in
+three, Sharpe falls in five-year base and fees rise
+throughout. Against the **new equal-four control**,
+rolling adds about3.43--3.45 annual two-sided
+turnover and5.51--7.65 DD percentage points.
+Its ten-year return/Sharpe gains do not extend to
+the five-year comparisons. The same cost proxy
+still does not guarantee low actual trading cost.
+
+These are whole-model historical comparisons, not
+isolated expert marginal alpha, a claim of independent
+risk sources or a fee-free counterfactual. Exposed
+pool-selection bias and the difference between
+native shadow wealth and fresh master capital remain.
+The expert and both failed combinations stay archived
+and available for admissible future research.
+
+### Capital, actual participation and reporting integrity
+
+Every new account independently implies exactly
+**USD10,000** initial capital from its first actual
+NAV/return. All eight actually hold all six registered
+factor families at some point in their full formal
+window. The new equal/rolling ten-year accounts
+match over the first141 base /142 stress returns,
+before their first possible scored fills on
+2017-05-01 /2017-05-02. Real initial gains, losses
+and fees are retained, not removed as warmup.
+
+Maximum independent BT NAV difference is
+`1.0913936421275139e-10` USD. Minimum modeled cash
+is USD178.3538676828956; maximum modeled gross
+exposure is`0.9837705257147962`, below one.
+These are research model accounts and model orders,
+not broker accounts, simulated broker orders or
+authority to trade.
+
+A separate reporting-only Adapter supplies the
+existing canonical public-boundary flag names
+without editing frozen financial code or using
+its noncanonical `publish-result` command.
+That command was **not executed**, and no failed
+result publication is invented. Three serialization
+checks preserve all eight metrics, gates, execution
+values, failure statuses and source clocks.
+The Adapter adds zero economic hypotheses, targets
+or account runs and does not weaken the shared
+dashboard reader.
+
+Private actual result SHA256:
+`fd05bdaeb6c7b389aaced6cbb1e1f114e1b756e3db7aa4a609d897a3be044699`.
+Canonical public result SHA256:
+`ee877c74e586fa56bd6ed66e79c654ec56980d445ea47af5f3b59ac86ebdcabe`.
+The original ledger and old published outcomes remain
+unchanged. The journal now has397 events; authoritative
+totals are **36 SSD registrations,33 completed/reviewed,
+three technical failures, zero pending,132 funded
+paths,211 combined completions and zero qualifiers**.
+The next step remains expert/meta-layer diagnosis
+of saved selection and main-account risk, not a
+retuning or relabeling of these failed configurations.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,

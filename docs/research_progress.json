@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-29",
-  "phase": "four_expert_meta_registered_waiting_publication",
-  "active_research_focus": "publish_four_expert_registration_before_eight_funded_paths",
+  "phase": "four_expert_meta_pair_rejected",
+  "active_research_focus": "diagnose_saved_four_expert_selection_and_main_account_risk",
   "research_mainline": {
     "id": "strategy_expert_pool_and_rolling_meta_v1",
     "user_directed": true,
@@ -81,6 +81,18 @@
       "real_initial_seed_not_backdated_to_September30": true,
       "old_monthly_execution_guard_unchanged": true,
       "new_accounts_started_at_registration": false,
+      "results": "research/workbench/evidence/four_expert_meta_20261029_results_v1.json",
+      "results_sha256": "ee877c74e586fa56bd6ed66e79c654ec56980d445ea47af5f3b59ac86ebdcabe",
+      "actual_funded_paths_completed": 8,
+      "actual_completed_at_utc": "2026-10-29T19:32:27.875994Z",
+      "financial_rules_qualified": 0,
+      "equal_weight_rule_status": "rejected",
+      "rolling_pair_rule_status": "rejected",
+      "all_eight_drawdown_gates_failed": true,
+      "all_four_ten_year_QQQ_gates_failed": true,
+      "equal_rule_all_four_Sharpe_gates_passed": true,
+      "rolling_five_year_stress_Sharpe_failed": true,
+      "actual_registered_factor_families_per_path": 6,
       "new_shadow_account_runs": 0,
       "new_shadow_recommendation_artifacts": 0,
       "investment_objective_verified": false,
@@ -205,13 +217,13 @@
     },
     "aggregate_counts": {
       "registered": 36,
-      "completed": 31,
-      "reviews": 31,
-      "pending": 2,
+      "completed": 33,
+      "reviews": 33,
+      "pending": 0,
       "technical_failures": 3,
       "qualified": 0,
-      "account_paths": 124,
-      "total_legacy_plus_ssd_completed": 209
+      "account_paths": 132,
+      "total_legacy_plus_ssd_completed": 211
     },
     "additional_cohorts": [
       {
@@ -410,9 +422,9 @@
         "study_id": "ssd_strategy_expert_pool_four_20261029_v1",
         "registration": "research/workbench/evidence/four_expert_meta_20261029_registration_v1.json",
         "registration_sha256": "4e84ee5908ab8046f615dc0f6918aeef73aa9207c95bf58a38876c01c270fcfe",
-        "results": null,
-        "results_sha256": null,
-        "preregistration_commit": null
+        "results": "research/workbench/evidence/four_expert_meta_20261029_results_v1.json",
+        "results_sha256": "ee877c74e586fa56bd6ed66e79c654ec56980d445ea47af5f3b59ac86ebdcabe",
+        "preregistration_commit": "1b1f2d7bfbd277e8cd7f42e57da4ef76451b04bb"
       }
     ],
     "status": "first_pair_complete_both_rejected",
