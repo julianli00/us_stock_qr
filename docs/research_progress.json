@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-28",
-  "phase": "vvix_archival_source_readiness_complete",
-  "active_research_focus": "new_option_uncertainty_information_before_separate_strategy_design",
+  "phase": "vvix_confirmation_registered_pending_accounts",
+  "active_research_focus": "quarterly_VVIX_increase_confirms_existing_dollar_defense",
   "research_dashboard": {
     "server": "src/us_quant/research_dashboard.py",
     "frontend": "web/research/index.html",
@@ -52,10 +52,10 @@
       "sha256": "ccff66c847db6519132775a177268c03d7ec36491076380be01d01f41589287d"
     },
     "aggregate_counts": {
-      "registered": 19,
+      "registered": 20,
       "completed": 18,
       "reviews": 18,
-      "pending": 0,
+      "pending": 1,
       "technical_failures": 1,
       "qualified": 0,
       "account_paths": 72,
@@ -181,6 +181,14 @@
         "results": "research/workbench/evidence/ordered_path_growth_20261028_results_v2.json",
         "results_sha256": "57e66fb1ce9a22e7ef03e0de7cdf07b108fefe21d49df9b8599bddd4d59874b8",
         "preregistration_commit": "005afed40e43fae63a581a4aa04f365c6b06136e"
+      },
+      {
+        "study_id": "ssd_vvix_uncertainty_confirmation_20261029_v1",
+        "registration": "research/workbench/evidence/vvix_uncertainty_confirmation_20261029_registration_v1.json",
+        "registration_sha256": "c44ed9838a3fabb74063bc214b78be3c2787161f4380a810d0441199150f0884",
+        "results": null,
+        "results_sha256": null,
+        "preregistration_commit": null
       }
     ],
     "status": "first_pair_complete_both_rejected",
@@ -806,14 +814,14 @@
     "第10项固定相反优先级：在当时较低SPY/QQQ尾部预算（以实际BIL风险作底）内最大化已观测机会，不扫风险倍率/旧门槛/窗口/核心参数。2026-10-28T05:46:36.615636Z真实登记先于122有证书计划（112优化/10非正机会），5前缀及完整6家族覆盖通过。先发布1074904478bfd0ba2a19d502c479ebd2de13c227，再于05:54:28.534515Z完成4资金路径并拒绝。依次十年base/stress、五年base/stress净CAGR12.9292/11.4123/16.5627/14.9118%，Sharpe0.6781/0.5922/0.7818/0.6907，DD26.4086/27.0756/26.6875/27.3277%；回撤/夏普/QQQ全失败，3条CAGR过且仅五年胜SPY。SSD10完成/40路径/合计188/0通过、118事件，原记录不变；不得拼接第9项回撤与第10项收益。"
   ],
   "next": [
-    "Preserve19registered SSD configurations:18completed/reviewed overall rejections,1retained terminal v1preparation failure,0pending,72funded paths,196combined completions and0qualifiers. Precisionv2 is not an independent economic hypothesis;old accounts,diagnoses,six-slot history and raw inputs remain private.",
-    "VVIX sourcevalidation completed2026-10-28T23:05:17.852535Z:oneadvertised5135-rowCSV,oldVIX9291rows reused withoutrequests,14426independentnativevalues agree exactly. Bothseries coverall2805originalNYSEdates and131monthlyqueries with0gaps/fills/deletions. Admission isarchivaldailycloses only,not fullintradayPIT/methodhistory,alpha orstrategyeligibility. CurrentCboeVVIXdefinition is30calendar-dayvolatility fromAMstandardmonthlyVIXoptions,under8daysexcluded,nearestterms,C1midquotes,RTH9:31-16:15ET. No16:00close execution usinglaterVVIXclose;providerrepublication/revisions unflagged. Next freeze one distinctuncertainty-information hypothesis beforestates/ratios/targets/accounts;no threshold/model selected andoldVVIXfalse recordsunchanged.",
+    "Preserve20registered SSD configurations:18completed/reviewed overall rejections,1retained terminal preparation failure and1pendingVVIXcandidate,72funded paths,196combined completions and0qualifiers. Oldaccounts,source/diagnostic evidence,six-slot history andrawinputs remain unchanged/private.",
+    "VVIXconfirmation actuallyregistered2026-10-28T23:58:17.764688Z before realstates/targetproof23:58:18.695807Z. Onall131fifteenthmonthends retainoriginaldollarhalfguard onlyifcurrentVVIX>63NYSEsessionsprior;else restore same nonBILmix to98%,equalityoff. Of74sourcehalfguards,35retained/39released;57alreadyfull unchanged. Native262quotequeries/oracle/fiveprefixes/fullanchors/styles verified. No fundedmetrics yet;publishfrozenpacket/code andverifyactualremote fence before4accounts. Keep16:15information boundary/allsource andfinancial gates;no window/threshold/band grid orANFCIrepair.",
     "Continue economically motivated, preregistered independent small batches without ordinary per-batch approval or a configuration-count ceiling until2026-10-31T15:59Z. Use one computation; at cutoff preserve partial work, clear only the SSD session timer and confirm absence.",
     "Keep old source refusals, VIG/SDY terminal429 and prospective/PIT gates. The independent market-only IBKR adapter is proved, but the one actual probe stopped on2157 before historical requests;0history rows/admissions,no automatic retry or inferred entitlement denial. Default readonly account synchronization remains prohibited."
   ],
   "next_zh": [
-    "保留SSD19项已登记配置：18项完成审阅并整体拒绝、1项原v1准备终止失败、0待评估、72条资金路径、合计196项完成、0通过。精度v2不是独立经济假设；原账户、诊断、历史六配置和原始私有输入全部保留。",
-    "2026-10-28T23:05:17.852535Z完成VVIX来源核验：仅取一次官方广告5135行CSV，旧VIX9291行直接复用、0重取；14426原生数值独立核对误差0。两序列均覆盖全部2805原NYSE日及131原月末，0缺口/填补/删日。仅准入该历史日值范围，不是完整盘中PIT/方法历史、alpha或策略通过。当前Cboe定义为AM标准月度VIX期权推导30日历天预期波动率，排除不足8天、最近期限、C1中间报价、9:31-16:15ET；不能把16:15值用于16:00成交，数据缺少重发/修订标记。下一步须先冻结独立不确定性信息假设，再算状态/比率/目标/账户；未选阈值或模型，旧VVIX=false历史记录不改。",
+    "保留SSD20项已登记配置：18项完成审阅并整体拒绝、1项原准备终止失败、1项VVIX候选待评估，72条资金路径、合计196项完成、0通过。原账户、来源/诊断证据、历史六配置和原始私有输入全部保留。",
+    "VVIX确认候选于2026-10-28T23:58:17.764688Z真实登记，先于实际状态/23:58:18.695807Z目标证明。全部131原月末仅当美元半仓条件成立且当前VVIX高于63交易日前才保留防御，否则恢复同一非BIL构成至98%，相等不确认。原74半仓中35保留/39释放，57原满仓不变；262原生查询/独立目标/5前缀/两锚点/四风格已证。尚无账户绩效；先发布冻结代码与证明并验证真实远端屏障，再跑4账户。保留16:15时点和全部来源/财务门槛，不扫窗口/阈值/带宽，不改ANFCI旧结论。",
     "持续开展有经济理由、事前冻结的独立小批次，无普通逐批确认或配置次数上限，截止2026-10-31T15:59Z；单计算job，届时保存未完状态、只清除SSD会话timer并确认不存在。",
     "原拒绝来源、VIG/SDY终止429和前瞻/PIT门保持。独立IBKR market-only适配器已证明，但唯一真实探针在历史请求前因2157停止；历史行/准入0，不自动重试或推断订阅拒绝，仍禁止默认readonly账户同步。"
   ],

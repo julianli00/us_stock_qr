@@ -2767,6 +2767,74 @@ journal events and the original ledger are unchanged; there are
 zero new strategy evaluations or factor registrations. Raw
 documents, quotes and full aligned matrices remain private.
 
+## First VVIX uncertainty-confirmation candidate
+
+[`config/vvix-uncertainty-confirmation-v1.json`](config/vvix-uncertainty-confirmation-v1.json)
+defines one fixed information hypothesis after 196 exposed completed
+configurations. The question is whether rising VIX-option uncertainty
+helps distinguish dollar strength that warrants the original defensive
+allocation from dollar strength that does not. It is not a fitted
+VVIX level, a new variance-risk-premium estimate or a wealth-floor
+parameter rescue.
+
+The candidate reads the complete saved fifteenth
+`dollar_option_two_segment_variation_v1` desired matrix, never its
+generator. At every original month end, both current VVIX and its
+quote exactly **63 original NYSE sessions earlier** must be finite
+and positive. The 63-session quarter matches the existing dollar
+comparison horizon; there is no threshold or lookback grid.
+
+The old half-risk budget is retained only when its original dollar
+guard is active **and** the current VVIX level is strictly higher.
+Equality or a lower value releases that half-risk budget to the same
+98% non-BIL stock/gold composition. A source target already at full
+risk is unchanged. Stock/gold proportions, half-SOXX/equal-four-style
+relative equity composition and all 131 opportunities remain intact.
+Higher exposure can worsen losses; no success is assumed.
+
+The information clock is after the regular VVIX index close at
+16:15 ET, before the original one/two-session delayed opens.
+No 16:00 stock-close execution, source-age relaxation, filled quote
+or artificial safe state is introduced. Archival first-publication
+and revision limitations remain. ANFCI values and its old source
+nonadmission are not used or repaired.
+
+### Actual registration and complete pre-account proof
+
+The [actual registration packet](evidence/vvix_uncertainty_confirmation_20261029_registration_v1.json)
+records event **217** at **2026-10-28T23:58:17.764688Z**,
+before actual VVIX state and target computation. Target-proof event
+**218** occurred at **23:58:18.695807Z**; the packet was created
+at **23:58:18.697945Z**. Actual recorded timestamps, not the
+study filename's date label, determine the order.
+
+There are **131** complete target decisions: **35** of the original
+74 half-risk states are retained, **39** released and **57** original
+full-risk states unchanged. An independent Decimal reader checks
+both native observations per opportunity, for 262 quote queries;
+maximum independent target difference is
+`1.1102230246251565e-16`. Five prefix-truncation checks, both
+original formal anchors and positive participation of MTUM, VLUE,
+QUAL and USMV throughout both windows also pass.
+
+The new lifecycle retains the existing publication/accounting gates.
+Before funded execution it verifies the saved matrix and its native
+oracle, rather than rerunning the primary target generator. The
+original monthly observed-holdings 0.025 band, costs, fees, delays,
+fresh USD10,000, risk-free definition, initial-capital drawdown peak
+and independent funded account checker remain unchanged.
+
+All candidate account metrics are still absent. Actual remote
+publication of the bound implementation and packet must precede
+all four accounts. The direct fifteenth donor and the retained older
+low-drawdown reference remain whole-model comparisons; a weak
+recent result alone is not the research frontier. No old target,
+account, source-admission or forward pipeline is replayed.
+
+Counts are **20 registered, 18 completed/reviewed, one retained
+technical failure and one pending candidate**, with 72 funded paths,
+196 combined completions and zero qualifiers unchanged.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,

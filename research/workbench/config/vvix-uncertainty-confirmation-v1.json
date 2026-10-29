@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_vvix_uncertainty_confirmation_20261029_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "prior_completed_configurations": 196,
+  "prior_journal_sequence": 216,
+  "prior_journal_head_sha256": "2e7bae878fbcd48b785b33524a79d41e3cb52450e6bc2014ac210447b155e806",
+  "source_candidate": "dollar_option_two_segment_variation_v1",
+  "source_registration": {
+    "path": "evidence/split_session_variation_20261028_registration_v1.json",
+    "sha256": "8224928553fe932a7615e7203f077b00ec773c41877ce147e55ef002c34a340b"
+  },
+  "source_targets": {
+    "path": "data/ssd-split-session-variation-20261028-v1/dollar_option_two_segment_variation_v1/targets.csv",
+    "sha256": "612a4ca35d4129dcd025e82b4ee4c64e87f750a08c5d4c5cef1f126f3bc7e3e2"
+  },
+  "vvix_readiness": {
+    "path": "evidence/vvix_input_readiness_20261028_v1.json",
+    "sha256": "96447321e96364992ce0f1e38d280fc4893d47090360c73f1669830554503d11"
+  },
+  "vvix_manifest": {
+    "path": "data/ssd-vvix-source-20261028-v1/manifest.json",
+    "sha256": "36543ec2faa34e06031c404b243335b63d47c28beac8ad1a3e1a48a4ace7cc65"
+  },
+  "vvix_raw_csv": {
+    "path": "data/ssd-vvix-source-20261028-v1/VVIX.csv",
+    "sha256": "33b2eed06b2356ef6ba13f85c3f33eca3e09e2cc3d386571d3be6bfefae3a1c9"
+  },
+  "vvix_comparison_sessions": 63,
+  "confirmation": "current_VVIX_native_level_strictly_above_63_session_prior_level",
+  "source_monthly_opportunities": 131,
+  "missing_required_quote_behavior": "stop_version_without_filling_or_defaulting",
+  "decision_information_clock": "after_16_15_ET_index_close_before_later_open_execution",
+  "dollar_risk_off_investment_scale": 0.5,
+  "cash_reserve": 0.02,
+  "actual_weight_trade_band": 0.025,
+  "core_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "new_economic_factor_definitions": 0,
+  "candidate_count_in_this_study": 1,
+  "study_size_is_a_total_research_quota": false,
+  "candidates": [
+    {
+      "id": "two_segment_vvix_uncertainty_confirmation_v1",
+      "confirmation": "VVIX_quarter_increase_and_original_dollar_guard"
+    }
+  ],
+  "methodology": {
+    "question": "Can an increase in option-implied uncertainty about VIX distinguish stressful dollar strength from dollar strength that need not trigger the same defensive allocation? This is one new information-channel hypothesis using separately admitted VVIX,not a wealth-floor,price-window,trade-band or scalar rescue.",
+    "source_meaning": "VVIX is the Cboe VIX-option expected-volatility index,not a tradable return,SPX volatility level,crash probability or identified variance-risk premium. Higher native VVIX versus its own earlier quote is only a declared uncertainty indicator,not proof of future losses or causal alpha.",
+    "horizon": "Use exactly63NYSEsessions,the existing dollar-guard quarter horizon under the252session convention. No comparison-period,level,percentile,change-size or smoothing grid. Equality is not confirmation.",
+    "donor": "Read the full saved fifteenth target matrix,not its source/price/option/dollar generator. Its BIL0/.49 distinguishes original full/half non-BIL budgets. Keep every131monthly opportunity,relative stock/gold mix,halfSOXX/equal-four-style stock composition andalloriginal formal return days.",
+    "rule": "At each original completed month end,require actual finitepositive VVIX quotes for that session and exactly63originalNYSEsessions earlier. Retain the donor half-risk budget only if its original dollar guard is active AND current VVIX is strictly higher. Otherwise restore the same non-BIL composition to98%and setBILzero. An alreadyfull-risk donor staysunchanged. This can increase exposure andworsen risk.",
+    "clock": "The combined decision is after the VVIX regular16:15ETindex close,not a16:00stock-close trade. Bothmarketclose andindexclose inputs precede the unchanged1/2session-later opens. Archival daily-close admission doesnot authenticate fullhistorical intradayfirstpublication orquote-revision history;no newindependentPIT orforward claim.",
+    "missingness": "The admitted fixed2805session source covers everyneeded current/priorquote. Any missing,invalid,date/hash orreference error stops this newversion;no imputation,source-age relaxation,cash default orcalendar exception. No ANFCI input orrepair/reclassification ofits oldsource admission.",
+    "execution": "FreshUSD10000 for each original10y/5y/base-stress path,originalRF/initialdrawdownpeak,5/20bp,USD1tickets,1/2sessiondelayedopens,unchangedmonthlyobserved0.025band,fractionallongonlycashfunded1x. Reuse the publishedfunded executor;no broker call,earlyfill,pendingrequestcancel oroldaccount replay.",
+    "comparison": "Retain the completefifteenth donor andolder semiconductor_option_proxy_dollar_observed_band025 reference aswhole-model comparisons;do not use the weakerseventeenth result alone orsplice theirpassingmetrics. This source-condition change isnot an isolatedcausalexperiment.",
+    "selection": "One fixedhypothesis after196exposedcompleted configurations and19registrationsincludingoneoriginaltechnicalfailure. Sourceadmission isnotinvestmentqualification. Freeze beforeactualVVIXstates/targets,actuallyregister andpublish beforeaccounts. Preserveallfailures andstrictnetCAGR/Sharpe/DD/SPY/QQQandextraSPYgates.",
+    "source_admission_repaired": false,
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}
