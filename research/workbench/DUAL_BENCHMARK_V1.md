@@ -4703,7 +4703,8 @@ the saved fit without another optimization.
 
 Independent native-unit convolution, mean likelihood and
 finite-horizon forecasts agree; maximum mean-likelihood
-difference is1.34e-15. Bound counts refer to fits with at
+difference is below1.34e-15. Error entries in the table are
+rounded upward. Bound counts refer to fits with at
 least one near-bound coordinate, not the number of distinct
 constraints or proof of identified parameters. Every fit
 uses the single registered initialization. Local numerical
@@ -4718,6 +4719,94 @@ original technical failure, two pending, 108 funded paths,
 205 combined completions and zero qualifiers**. No old HMM
 fit, VXN ratio, source admission, account or diagnosis was
 replayed, and no failed source or forward record was reset.
+
+### Actual conditional-variance outcomes: growth without drawdown qualification
+
+The actual preregistration commit
+`ed77db355990adabbfb92669e00044b842e57ea8` was remotely
+verified before publication fence **326**, recorded at
+**2026-10-29T12:45:19.487219Z**. All eight original funded
+paths completed once at **12:48:34.238721Z**.
+The [complete scalar evidence](evidence/conditional_variance_growth_20261029_results_v1.json)
+retains every gate and actual cost. No fit or target was
+regenerated during account evaluation.
+
+| Model | Path | Net CAGR | Net excess Sharpe | Maximum DD | Annual two-sided turnover | Model orders | Costs USD |
+|---|---|---:|---:|---:|---:|---:|---:|
+| GARCH | 10y base | 23.388885% | 1.036436 | 26.988578% | 1.998948x | 362 | 662.68 |
+| GARCH | 10y stress | 23.331770% | 1.032925 | 26.539102% | 1.987894x | 352 | 1552.73 |
+| GARCH | 5y base | 24.471613% | 0.936060 | 27.264110% | 2.211719x | 229 | 317.40 |
+| GARCH | 5y stress | 23.323068% | 0.894060 | 26.828503% | 2.194476x | 219 | 558.45 |
+| GJR | 10y base | 23.783709% | 1.055058 | 28.736704% | 2.483791x | 396 | 760.25 |
+| GJR | 10y stress | 23.980997% | 1.061077 | 28.147009% | 2.489094x | 396 | 1888.76 |
+| GJR | 5y base | 23.860341% | 0.907844 | 29.005576% | 2.716559x | 228 | 324.92 |
+| GJR | 5y stress | 22.957749% | 0.873933 | 28.485483% | 2.724550x | 228 | 606.62 |
+
+**Both complete configurations are rejected.**
+All eight CAGR, SPY and QQQ gates pass, as do the four
+additional stress-versus-base-SPY gates. All four ten-year
+Sharpes exceed one. Nevertheless, **all eight drawdowns
+exceed15%, and all four five-year Sharpes are below one**.
+No single path passes every point gate. Exceeding20% CAGR
+does not replace the required joint risk/return criteria.
+
+Adding the downside term does not yield a stable improvement.
+Saved GJR-minus-symmetric comparisons, with all original
+windows and scenarios matched, are:
+
+| Path | CAGR change, pp | Sharpe change | DD change, pp | Annual turnover change | Model-order change | Fee change USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | +0.394825 | +0.018622 | +1.748125 | +0.484844 | +34 | +97.57 |
+| 10y stress | +0.649227 | +0.028152 | +1.607907 | +0.501200 | +44 | +336.03 |
+| 5y base | -0.611271 | -0.028216 | +1.741466 | +0.504841 | -1 | +7.52 |
+| 5y stress | -0.365319 | -0.020127 | +1.656980 | +0.530074 | +9 | +48.17 |
+
+The ten-year gains come with worse drawdown and implementation
+cost; both five-year CAGR/Sharpe comparisons deteriorate.
+DD, turnover and fees increase in every pair. The five-year-base
+order count is **one lower**, not higher: fixed commissions
+fall by USD1 while proportional costs rise by USD8.520458.
+Equal rebalance-count totals would not establish equal dates
+or traded notional, and no such equivalence is assumed.
+
+GJR's ten-year-stress CAGR exceeds its base CAGR by
+0.197288 percentage points. The original stress scenario
+changes both cost and execution delay, and the original
+holding-gap feedback can change the resulting path.
+This is not evidence that higher fees improve returns,
+nor permission to replace a case or execution clock.
+
+The comparison against the completed HMM is a different,
+whole-package question. Across all eight same-scenario
+comparisons, the new CAGRs are **3.26356--5.61145 percentage
+points higher** and turnover, model orders and total fees
+are lower. However, maximum DD increases by
+**12.37353--16.85166 percentage points**; Sharpe changes
+are mixed. In particular, lower fees do not cure the
+much larger equity-path losses. These saved aggregate
+differences are not causal PnL attribution, matched-risk
+alpha or independently validated forward performance.
+
+All original windows retain2,512/1,254 returns and fresh
+USD10,000 accounts. Maximum independent NAV disagreement
+is `1.1641532182693481e-10` USD; minimum actual cash is
+USD163.59457797181585 and maximum gross exposure is
+`0.9852610801462091`, below one. These are computed research
+accounts with fresh model capital, not brokerage funding,
+orders or accounts.
+All model fits, numerical-bound disclosures, failed
+financial gates and prior source refusals remain.
+
+The journal now has **344 events**. Counts are
+**30 registered, 29 completed/reviewed, one original
+technical failure, zero pending, 116 funded paths,
+207 combined completions and zero qualifiers**.
+The next saved-only diagnosis may inspect the retained
+conditional variances, stock budgets, actual holdings,
+strict drawdown breaches and execution. It must not
+refit the models, regenerate targets/accounts, invent
+a passing fee-free portfolio or retune a window, cap,
+floor, coefficient bound or acceptance gate.
 
 ## Independent IBKR price-history source boundary
 

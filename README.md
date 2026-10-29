@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 30 SSD registrations, 27 completed/rejected, one retained preparation failure and two pending; 108 funded paths | Separate net-CAGR/SPY/QQQ criteria; zero qualifiers, no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 30 SSD registrations, 29 completed/rejected and one retained preparation failure; 116 funded paths | Separate net-CAGR/SPY/QQQ criteria; zero qualifiers, no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -1305,11 +1305,46 @@ local convergence does not prove identification or forecast skill.
 
 **No new funded account has run at this preregistration snapshot.**
 Actual remote publication must precede all eight original
-ten/five-year base/stress paths. Current counts are
+ten/five-year base/stress paths. At that preregistration snapshot, counts were
 **30 registered, 27 completed/reviewed, one original technical
 failure, two pending, 108 funded paths, 205 combined completions
 and zero qualifiers**. All old models, source refusals and
 one-day forward records remain unchanged.
+
+The [actual eight-path result](research/workbench/evidence/conditional_variance_growth_20261029_results_v1.json)
+completed once at **2026-10-29T12:48:34.238721Z**, after actual
+preregistration publication `ed77db3` and fence326 at
+**12:45:19.487219Z**. **Both configurations are rejected.**
+
+| Model | Path | Net CAGR | Net excess Sharpe | Maximum DD | Annual two-sided turnover | Model orders | Costs USD |
+|---|---|---:|---:|---:|---:|---:|---:|
+| GARCH | 10y base | 23.388885% | 1.036436 | 26.988578% | 1.998948x | 362 | 662.68 |
+| GARCH | 10y stress | 23.331770% | 1.032925 | 26.539102% | 1.987894x | 352 | 1552.73 |
+| GARCH | 5y base | 24.471613% | 0.936060 | 27.264110% | 2.211719x | 229 | 317.40 |
+| GARCH | 5y stress | 23.323068% | 0.894060 | 26.828503% | 2.194476x | 219 | 558.45 |
+| GJR | 10y base | 23.783709% | 1.055058 | 28.736704% | 2.483791x | 396 | 760.25 |
+| GJR | 10y stress | 23.980997% | 1.061077 | 28.147009% | 2.489094x | 396 | 1888.76 |
+| GJR | 5y base | 23.860341% | 0.907844 | 29.005576% | 2.716559x | 228 | 324.92 |
+| GJR | 5y stress | 22.957749% | 0.873933 | 28.485483% | 2.724550x | 228 | 606.62 |
+
+All eight paths exceed20% net CAGR and beat matched-cost SPY
+and QQQ, but **all eight fail drawdown and all four five-year
+paths fail Sharpe**. The downside term improves ten-year CAGR
+and Sharpe but worsens both five-year values; drawdown,
+turnover and fees rise in every paired comparison. Five-year
+base has one fewer model order but higher fees, not uniformly
+more orders. GJR's higher ten-year-stress CAGR does not mean
+fees help: the unchanged stress case also delays execution.
+
+Against the HMM package, all eight CAGRs rise and turnover,
+orders and fees fall, but maximum drawdowns rise by
+**12.37--16.85 percentage points**. The HMM's lower risk cannot
+be combined with these models' higher returns to claim success.
+Current totals are **30 registered, 29 completed/reviewed,
+one original technical failure, zero pending, 116 funded paths,
+207 combined completions and zero qualifiers**. The next
+saved-budget/drawdown diagnosis adds no new configuration,
+fit, target or account.
 
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).

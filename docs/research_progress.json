@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-29",
-  "phase": "conditional_variance_pair_registered",
-  "active_research_focus": "symmetric_versus_downside_conditional_variance_before_eight_funded_paths",
+  "phase": "conditional_variance_pair_rejected",
+  "active_research_focus": "saved_conditional_variance_budget_and_drawdown_diagnosis",
   "research_dashboard": {
     "server": "src/us_quant/research_dashboard.py",
     "frontend": "web/research/index.html",
@@ -120,13 +120,13 @@
     },
     "aggregate_counts": {
       "registered": 30,
-      "completed": 27,
-      "reviews": 27,
-      "pending": 2,
+      "completed": 29,
+      "reviews": 29,
+      "pending": 0,
       "technical_failures": 1,
       "qualified": 0,
-      "account_paths": 108,
-      "total_legacy_plus_ssd_completed": 205
+      "account_paths": 116,
+      "total_legacy_plus_ssd_completed": 207
     },
     "additional_cohorts": [
       {
@@ -301,9 +301,9 @@
         "study_id": "ssd_conditional_variance_growth_20261029_v1",
         "registration": "research/workbench/evidence/conditional_variance_growth_20261029_registration_v1.json",
         "registration_sha256": "498a3cfcbc775eed2de0ae9584092618bb0c68b87ebfb7b25c86c57a66eb5d12",
-        "results": null,
-        "results_sha256": null,
-        "preregistration_commit": null
+        "results": "research/workbench/evidence/conditional_variance_growth_20261029_results_v1.json",
+        "results_sha256": "3aefd47c567b58b08bdb78f15d6cd5ff392b07ab38eec6263a0d4c59e6246008",
+        "preregistration_commit": "ed77db355990adabbfb92669e00044b842e57ea8"
       }
     ],
     "status": "first_pair_complete_both_rejected",
@@ -929,14 +929,14 @@
     "第10项固定相反优先级：在当时较低SPY/QQQ尾部预算（以实际BIL风险作底）内最大化已观测机会，不扫风险倍率/旧门槛/窗口/核心参数。2026-10-28T05:46:36.615636Z真实登记先于122有证书计划（112优化/10非正机会），5前缀及完整6家族覆盖通过。先发布1074904478bfd0ba2a19d502c479ebd2de13c227，再于05:54:28.534515Z完成4资金路径并拒绝。依次十年base/stress、五年base/stress净CAGR12.9292/11.4123/16.5627/14.9118%，Sharpe0.6781/0.5922/0.7818/0.6907，DD26.4086/27.0756/26.6875/27.3277%；回撤/夏普/QQQ全失败，3条CAGR过且仅五年胜SPY。SSD10完成/40路径/合计188/0通过、118事件，原记录不变；不得拼接第9项回撤与第10项收益。"
   ],
   "next": [
-    "Preserve30registered SSD configurations:27completed/reviewed overall rejections,1retained terminal preparation failure,2pending,108funded paths,205combined completions and0qualifiers. All28oldcandidates/22oldcohorts/accounts/sources/six-slot/forwardrecords unchanged.",
-    "ActualGARCH/GJRpair registrations322/323 at2026-10-29T12:25:39.373023Z/.501898Z precede all244datedfits. Both122monthproofs324/325complete,packet12:26:15.077738Z. Same252returnconstant-mixstockriskproxy/21forecast horizon;relativevariancebudget,notfundedzero-costproxyorHMMfloorpreservation. 8GARCH/22GJRfitsnearnumericalcoordinatebounds;localconvergenceisnotidentification/calibration. No newaccounts;publishactualfrozenpacket/codebeforeall8originalfundedpaths. No refits/alternateinitialization/cap/window/cost/gaterescue.",
+    "Preserve30registered SSD configurations:29completed/reviewed overall rejections,1retained terminal preparation failure,0pending,116funded paths,207combined completions and0qualifiers. All28priorcandidates/22priorcohorts/accounts/sources/six-slot/forwardrecords unchanged.",
+    "GARCH/GJRpair all8paths completedonce2026-10-29T12:48:34.238721Z afteractualed77db3publication/fence32612:45:19.487219Z. BothREJECTED:all8netCAGR22.96-24.47%/SPY/QQQpass,butall8DD26.54-29.01%fail andall4fiveyearSharpefail. GJR-controltenyearCAGR/Sharpeup,fiveyeardown;DD/turnover/feesupall4,5ybaseorders-1(notallordersup). VsHMMall8growthhigher/costlower,butDD+12.37-16.85pp;cannotcombinepassingcomponents.344events;nextsaved244fits/forecasts/budgets+8books drawdown/executiondiagnosis,0newtrials. No refit/target/accountreplay orcoefficientbound/cap/window/floor/financialgaterescue.",
     "Continue economically motivated, preregistered independent small batches without ordinary per-batch approval or a configuration-count ceiling until2026-10-31T15:59Z. Use one computation; at cutoff preserve partial work, clear only the SSD session timer and confirm absence.",
     "Keep old source refusals, VIG/SDY terminal429 and prospective/PIT gates. The independent market-only IBKR adapter is proved, but the one actual probe stopped on2157 before historical requests;0history rows/admissions,no automatic retry or inferred entitlement denial. Default readonly account synchronization remains prohibited."
   ],
   "next_zh": [
-    "保留SSD30项已登记配置：27项完成审阅并整体拒绝、1项原准备终止失败、2待评估，108条资金路径、合计205项完成、0通过。原28候选/22队列、账户/来源/历史六配置/前瞻记录不变。",
-    "GARCH/GJR配对在2026-10-29T12:25:39.373023Z和.501898Z真实登记322/323，先于全部244份逐月拟合；各122月目标证明324/325完成，12:26:15.077738Z形成真实包。同一252日恒定混合股票风险代理、21日期望方差窗口及相对方差资金规则，不把风险代理当零成本资金账户，也不继承HMM旧仓位下限。GARCH8次、GJR22次拟合靠近数值坐标边界；局部收敛不等于可识别或校准。尚未新增资金账户，先实际发布冻结包/代码，再评估原8路径；不重拟合或更换初值、上限、窗口、成本和验收门。",
+    "保留SSD30项已登记配置：29项完成审阅并整体拒绝、1项原准备终止失败、0待评估，116条资金路径、合计207项完成、0通过。此前28候选/22队列、账户/来源/历史六配置/前瞻记录不变。",
+    "GARCH/GJR配对8路径于2026-10-29T12:48:34.238721Z一次完成，实际ed77db3发布和12:45:19.487219Z的326围栏均在账户之前。两者拒绝：8条净CAGR22.96-24.47%且胜SPY/QQQ，但回撤26.54-29.01%全失败、4条五年夏普全失败。GJR对GARCH十年CAGR/夏普提高、五年下降；四条回撤/换手/费用均更高，但五年基础订单少1笔，不能说订单全升。对HMM八条收益更高且成本更低，但回撤多12.37-16.85个百分点，不能拼接通过分量。344事件；下一步仅诊断已存244拟合/预测/预算与8账户的回撤及执行，0新试验；不重拟合、生成目标或重跑账户，不改系数边界、上限、窗口、下限或金融门槛。",
     "持续开展有经济理由、事前冻结的独立小批次，无普通逐批确认或配置次数上限，截止2026-10-31T15:59Z；单计算job，届时保存未完状态、只清除SSD会话timer并确认不存在。",
     "原拒绝来源、VIG/SDY终止429和前瞻/PIT门保持。独立IBKR market-only适配器已证明，但唯一真实探针在历史请求前因2157停止；历史行/准入0，不自动重试或推断订阅拒绝，仍禁止默认readonly账户同步。"
   ],
