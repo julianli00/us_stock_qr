@@ -5714,9 +5714,197 @@ unchanged. The journal now has397 events; authoritative
 totals are **36 SSD registrations,33 completed/reviewed,
 three technical failures, zero pending,132 funded
 paths,211 combined completions and zero qualifiers**.
-The next step remains expert/meta-layer diagnosis
-of saved selection and main-account risk, not a
-retuning or relabeling of these failed configurations.
+At that publication snapshot, the next step was an
+expert/meta-layer diagnosis of saved selection and main
+account risk, not a retuning of these failed configurations.
+
+## Saved four-expert selection, source-state and main-risk diagnosis
+
+The separate saved-only diagnosis completed once at
+**2026-10-29T21:42:17.125867Z**. It reads all121 retained
+selector records and all eight completed books. No score,
+fit, target, shadow account, main account or benchmark
+is regenerated. All59 direct input references, the full
+frozen financial dependencies,397 journal events and
+original ledger remain unchanged. It adds **zero
+financial trials or model parameters**.
+
+Private assessment SHA256:
+`493ea6a5b974372247ac8f02e4c9f58c1a456b828526f2ef1f811383e4a5b5de`.
+Before-computation intent SHA256:
+`443bc2dabb6e8a5ea13a16a4ca7ae458b7cfe925220b4f09830d8610844569b4`.
+Only the following sanitized findings are published,
+not source prices, complete targets or daily accounts.
+
+### Expert availability does not ensure selection
+
+The seven explicitly unscored initial allocations and
+all114 mature decisions remain. The fixed four-coordinate
+weight order is distinct from lexical pair-name order.
+The recorded mature selections are:
+
+| Complete expert pair | Selections |
+|---|---:|
+| Commitment / symmetric GARCH | 50 |
+| Joint-tail / commitment | 16 |
+| Joint-tail / symmetric GARCH | 16 |
+| Feedback protection / symmetric GARCH | 13 |
+| Joint-tail / feedback protection | 10 |
+| Commitment / feedback protection | 9 |
+
+The feedback specialist is selected32 times and excluded82
+times. Its average weight is17.483659% across mature
+decisions, or17.918488% across all121 decisions including
+unscored initialization. Those denominators are not
+interchangeable. Pair identity changes62 times across
+consecutive mature decisions, and expert weights change
+on114 of121 decisions. There are39 negative winning scores;
+the frozen relative ranking has no fitted cash cutoff.
+
+Selected training correlation ranges from-0.224301 to
+0.999981, with mean0.678931. Selected pair training
+variance-contribution shares are one half to floating-point
+precision. This is relative pair balancing, not an absolute
+master-risk ceiling, a requirement to include the defensive
+expert, or a guarantee about future drawdown. No correlation,
+cash, weight or score threshold is added after these results.
+
+### Source protection, monthly sampling and actual master wealth
+
+Every context below uses information through the previous
+session, excluding event-day closing recommendations or
+new selections. The strict breach is NAV below85% of its
+running peak, retaining the initial USD10,000 peak. No
+original primary metric or gate is changed.
+
+| Path | Rule | First DD above15% | Prior actual stocks | Prior GLD | Prior BIL | Feedback expert weight |
+|---|---|---|---:|---:|---:|---:|
+| 10y base | Equal | 2020-03-16 | 43.064788% | 10.951552% | 25.181748% | 25% |
+| 10y stress | Equal | 2020-03-16 | 42.273796% | 11.034017% | 25.510665% | 25% |
+| 5y base | Equal | 2022-10-11 | 25.826013% | 2.956504% | 69.212667% | 25% |
+| 5y stress | Equal | 2022-10-11 | 25.074036% | 2.919042% | 69.979882% | 25% |
+| 10y base | Rolling | 2022-06-10 | 17.427295% | 0% | 80.556659% | 0% |
+| 10y stress | Rolling | 2022-05-13 | 0% | 38.759960% | 59.223093% | 0% |
+| 5y base | Rolling | 2022-06-09 | 17.801111% | 0% | 80.191756% | 0% |
+| 5y stress | Rolling | 2022-05-12 | 0% | 39.129911% | 58.865115% | 0% |
+
+All eight first breaches have **zero event-day orders,
+zero fees and no already-issued pending request**. The
+stock-free rolling stress breaches cannot be described
+as same-day stock re-entry or a same-day fee shock.
+They are cumulative wealth-path breaches, not just
+current-exposure measurements.
+
+Both equal ten-year books still use the February28
+combined recommendation. The specialist's source BIL
+recommendation rises from34.543695% at that sampled
+decision to56.942314% at the March13 prior close,
+and73.519214% by the March19 close before the worst
+trough. That daily source adjustment is not an
+additional daily master instruction: the frozen
+combination samples monthly and assigns only25%
+to that complete expert. This describes the observed
+clock difference; it does not establish that a new
+execution frequency would pass the financial gates.
+
+At all four rolling worst troughs on2022-10-14, the
+latest September30 pair is commitment/GARCH with
+**zero feedback-specialist weight**. Prior actual
+stock exposure is35.676402% in base and35.192473%
+in stress. At the same prior close, the specialist's
+own net shadow drawdown is12.544221% and its daily
+BIL recommendation79.654249%; neither controls the
+rolling master account when its weight is zero.
+
+The specialist's global ten-year-base shadow NAV/peak
+also differs from each fresh or carried master book.
+Even positive expert weight does not transplant that
+wealth path, daily five-point holdings band, or a
+protection guarantee into the monthly2.5-point
+master. A low current stock weight cannot undo a
+loss already accumulated from the master's own peak.
+
+### Complete peak-to-trough accounting, not isolated expert alpha
+
+The entire recorded peak-to-trough change reconciles
+to adjusted-unit asset marks less original fees.
+Style stocks combine the original four-style core
+and added styles; Treasury funds combine BIL/IEF/TLT.
+Other market-proxy contributions are zero in these
+episodes. Values below are USD and rounded only for
+display; the maximum unrounded identity error is
+`4.547473508864641e-12` USD.
+
+| Path / rule | Actual peak -> trough | SOXX marks | Style-stock marks | GLD marks | Treasury-fund marks | Fees | NAV change |
+|---|---|---:|---:|---:|---:|---:|---:|
+| 10y base / Equal | 2020-02-19 -> 2020-03-20 | -1346.86 | -1265.30 | -128.85 | 57.75 | 13.73 | -2697.00 |
+| 10y stress / Equal | 2020-02-19 -> 2020-03-20 | -1326.96 | -1234.18 | -128.08 | 74.08 | 22.16 | -2637.29 |
+| 5y base / Equal | 2021-12-27 -> 2022-10-14 | -977.13 | -560.57 | -153.90 | 41.94 | 87.80 | -1737.46 |
+| 5y stress / Equal | 2021-12-27 -> 2022-10-14 | -939.52 | -534.00 | -139.08 | 41.07 | 128.44 | -1699.98 |
+| 10y base / Rolling | 2021-12-27 -> 2022-10-14 | -3648.99 | -1621.54 | -562.19 | 80.78 | 119.01 | -5870.94 |
+| 10y stress / Rolling | 2021-12-27 -> 2022-10-14 | -3559.73 | -1532.04 | -571.21 | 80.89 | 323.81 | -5905.91 |
+| 5y base / Rolling | 2021-12-27 -> 2022-10-14 | -1631.03 | -724.90 | -251.36 | 36.07 | 81.40 | -2652.61 |
+| 5y stress / Rolling | 2021-12-27 -> 2022-10-14 | -1550.44 | -667.39 | -248.88 | 35.19 | 169.83 | -2601.35 |
+
+SOXX, style stocks and gold all lose over each full
+episode, while Treasury marks are positive. These
+are holdings/PnL identities over the actual path,
+not causal returns of an individual expert or a
+fee-free counterfactual. Observing zero specialist
+weight does not prove that including it would have
+prevented a breach or preserved the return gates.
+
+### Meta-switch proxies still differ from actual fills
+
+For the rolling books, a zero stored incremental
+switch proxy accompanies actual execution3/3/2/2
+times in ten-year base/stress and five-year base/stress.
+A positive proxy accompanies an actual hold9/8/5/5
+times. An unused hold clock is not counted as a fill.
+Native recommendation changes and actual holdings
+drift are not the same quantity as changing expert
+weights at identical current recommendations.
+
+Disjoint actual execution-date partitions locate
+most additional rolling traded dollars on dates
+shared with the equal four-expert book:
+
+| Path | Shared dates | Equal-only dates | Rolling-only dates | Additional rolling notional on shared dates USD | Additional rolling notional, whole path USD |
+|---|---:|---:|---:|---:|---:|
+| 10y base | 83 | 17 | 10 | 810029.13 | 884031.00 |
+| 10y stress | 85 | 15 | 9 | 828565.04 | 878351.27 |
+| 5y base | 44 | 6 | 8 | 206096.61 | 246104.98 |
+| 5y stress | 45 | 5 | 7 | 209178.60 | 236704.41 |
+
+Rolling has142/133/23/21 fewer model tickets, yet
+USD300.02/1623.70/100.05/452.41 more total fees
+than the matching equal book. Larger actual notional
+outweighs the fixed-ticket savings. These are full
+model comparisons, not a same-wealth cost experiment.
+Fixed USD1 tickets remain unscaled; turnover still
+uses pre-open, pre-cost NAV, and original fees are
+charged once. No new cost penalty or band is fitted.
+
+The private diagnostic validation retains its first
+three-failure/six-pass attempt: serialized date strings
+needed the calendar Interface's Timestamp conversion.
+Only the new, not-yet-intent-bound diagnostic was
+corrected; a separately named validation then passed
+all nine cases. Both attempts are bound in the
+one actual diagnostic intent. Frozen strategy code,
+accounts, previous diagnoses and financial technical
+failure counts were not changed.
+
+Both four-expert rules remain rejected, the valid
+defensive expert remains available, and no new pool,
+allocation rule or risk parameter has been selected.
+Current totals remain **36 registrations,33 completed
+and reviewed, three technical failures, zero pending,
+132 funded paths,211 combined completions and zero
+qualifiers**. Any next expert-layer economic question
+requires its own freeze before outcomes. Exposed
+historical selection remains exposed history, not
+independent forward validation or target completion.
 
 ## Independent IBKR price-history source boundary
 

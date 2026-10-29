@@ -1522,6 +1522,22 @@ factor families. Current totals are36 registrations,33 completions,
 three technical failures, zero pending,132 paths,211 combined
 completions and zero qualifiers.
 
+The [saved four-expert diagnosis](research/workbench/DUAL_BENCHMARK_V1.md#saved-four-expert-selection-source-state-and-main-risk-diagnosis)
+completed at **2026-10-29 21:42:17 UTC**, with no new scores, targets,
+accounts or financial trials. The defensive expert appears in32
+of114 mature selections and has zero weight at all four rolling
+accounts' first drawdown breaches and worst troughs. Equal weighting
+retains25%, but samples daily source protection only at the fixed
+monthly decisions; the expert's own shadow NAV/peak is not the main
+account's wealth path or a portfolio guarantee. All eight first
+breaches occur without same-day orders, fees or pending requests.
+The complete peak-to-trough asset/fee identities reconcile; most
+additional rolling traded dollars occur on shared execution dates,
+despite fewer model tickets. These are descriptive accounting
+findings, not a causal rescue or a newly selected allocation rule.
+All rejected outcomes and the **211/0** completion/qualification
+counts remain unchanged.
+
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
 
