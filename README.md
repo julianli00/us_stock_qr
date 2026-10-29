@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 24 SSD registrations, 22 completed/rejected, one retained preparation failure and one pending HMM package; 88 funded paths | Separate net-CAGR/SPY/QQQ criteria; zero qualifiers, no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 24 SSD registrations, 23 completed/rejected and one retained preparation failure; 92 funded paths | Separate net-CAGR/SPY/QQQ criteria; zero qualifiers, no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -1099,10 +1099,34 @@ proof **265** at **06:59:05.112282Z** follows their verification.
 All 122 eligible fits converged and were retained separately,
 with original full-window anchors preserved.
 
-No funded account has run yet. The code and actual packet must
-be remotely published before four original-cost/timing paths.
-Counts are **24 registered, 22 completed, one retained technical
+No funded account had run at that snapshot. The code and packet
+still had to be remotely published before four original-cost/timing paths.
+Counts then were **24 registered, 22 completed, one retained technical
 failure, one pending, 88 funded paths and 200 combined completions**.
+
+The [HMM funded result](research/workbench/evidence/hmm_growth_bil_20261029_results_v1.json)
+is now complete and **rejected overall**. The actual
+`2b7c41ba87cc8d71b6dbe5ce98d77f3818aa776e` publication and
+**2026-10-29T07:04:58.081068Z** fence preceded all four accounts,
+which finished at **07:07:32.354572Z** without refitting the models.
+
+| Path | Net CAGR | Net excess Sharpe | Maximum DD | Annual two-sided turnover | Model orders | Costs USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 19.7793% | 1.097059 | 13.4375% | 4.1008x | 480 | 977.87 |
+| 10y stress | 18.3695% | 1.016944 | 14.1656% | 4.1222x | 486 | 2,389.48 |
+| 5y base | 20.5968% | 1.029539 | 12.1539% | 4.1408x | 240 | 389.53 |
+| 5y stress | 17.8450% | 0.881524 | 14.2228% | 4.1513x | 234 | 798.43 |
+
+All CAGR, drawdown and SPY gates pass. Both ten-year QQQ
+comparisons still fail, and five-year-stress Sharpe
+**0.8815240989001699** fails the strict above-1 requirement.
+Only five-year base passes every path-level historical gate.
+Ten-year growth is stronger than the prior equal-core and
+price-core references, but Sharpe is lower and five-year stress is
+weaker. Converged state estimation is not robust financial
+qualification. Current totals are **24 registered, 23 completed,
+one original technical failure, zero pending, 92 funded paths,
+201 combined completions and zero qualifiers**.
 
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).

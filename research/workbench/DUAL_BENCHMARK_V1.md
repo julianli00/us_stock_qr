@@ -3744,13 +3744,81 @@ exhaustive state-path enumeration, smoothing-versus-filtering
 distinctions, independent filtering, funding bounds, invalid fits,
 causality and publication/partial-output lifecycle.
 
-There are **no funded outcome metrics yet**. Remote publication
-of the source-bound implementation and packet must precede the
-four original funded paths. Counts are **24 registered,
+There were **no funded outcome metrics at that snapshot**. Remote
+publication of the source-bound implementation and packet still
+had to precede the four original funded paths. Counts then were **24 registered,
 22 completed/reviewed, one original technical failure, one
 pending, 88 funded paths, 200 combined completions and zero
 qualifiers**. The old ledgers, sources, models and source refusals
 remain unchanged.
+
+### Actual HMM funded outcome: stronger ten-year growth, joint rejection
+
+Actual preregistration publication
+`2b7c41ba87cc8d71b6dbe5ce98d77f3818aa776e` and event **266**
+at **2026-10-29T07:04:58.081068Z** precede all accounts.
+The four paths run once from the stored monthly model fits;
+review **275** is recorded at **07:07:32.283389Z**, with the
+complete result at **07:07:32.354572Z**.
+
+The [actual full result](evidence/hmm_growth_bil_20261029_results_v1.json)
+preserves all metrics, execution statistics and unrounded gates:
+
+| Path | Net CAGR | Net excess Sharpe | Maximum DD | Annual two-sided turnover | Model orders | Costs USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 19.779331% | 1.097059 | 13.437507% | 4.100819x | 480 | 977.87 |
+| 10y stress | 18.369544% | 1.016944 | 14.165568% | 4.122249x | 486 | 2,389.48 |
+| 5y base | 20.596780% | 1.029539 | 12.153917% | 4.140781x | 240 | 389.53 |
+| 5y stress | 17.845020% | 0.881524 | 14.222770% | 4.151278x | 234 | 798.43 |
+
+All net-CAGR-above-12%, drawdown-at-most-15%, matched-cost-SPY
+and retained stress/base-SPY gates pass. The ten-year QQQ gaps
+remain negative by **1.383093 and 2.754320 CAGR percentage
+points**. Five-year stress also fails excess Sharpe:
+`0.8815240989001699` is strictly below 1. Only five-year base
+passes all of its point gates, so the whole candidate is rejected.
+
+The preselected price-core reference provides the complete
+comparison rather than selecting only favorable HMM paths:
+
+| Path | Price-core CAGR | HMM CAGR | Price-core Sharpe | HMM Sharpe | Price-core DD | HMM DD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 17.0081% | 19.7793% | 1.178584 | 1.097059 | 14.9791% | 13.4375% |
+| 10y stress | 16.4328% | 18.3695% | 1.132890 | 1.016944 | 14.0511% | 14.1656% |
+| 5y base | 21.0873% | 20.5968% | 1.243648 | 1.029539 | 12.5565% | 12.1539% |
+| 5y stress | 20.1328% | 17.8450% | 1.180197 | 0.881524 | 12.5305% | 14.2228% |
+
+HMM growth is stronger in both ten-year paths but weaker in both
+five-year paths, with lower Sharpe throughout. Its fewer orders
+and lower total fees versus the price-core model do not establish
+uniform improvement. Against the equal-core fifteenth reference,
+ten-year-stress fees are actually higher by USD61.88 despite
+144 fewer model orders. Different wealth paths and notional
+turnover matter as well as ticket counts.
+
+The older low-DD reference is retained too: favorable ten-year-base
+comparisons do not cancel HMM's weaker five-year-stress result.
+These are whole-package comparisons, including removal of gold
+and a different stock/BIL budget; they do not identify isolated
+HMM alpha or equal-risk excess return.
+
+Independent feedback checks cover 121/121/61/61 original decision
+opportunities including initial deployment, with 80/81/40/39
+issued requests. Maximum independent NAV difference is
+`8.731149137020111e-11` USD. Cash stays positive and maximum
+gross exposure is about 0.983186, below 1. No model refit or
+source request occurs during account evaluation.
+
+The fixed stress case changes both costs and execution delay;
+the five-year degradation must not be attributed to fees alone
+without saved execution evidence. The next investigation may
+inspect those saved states and holdings, but not change priors,
+transition assumptions, the window, floor or acceptance gates.
+All 122 model fits remain frozen.
+
+Final counts are **24 registered, 23 completed/reviewed, one
+original technical failure, zero pending, 92 funded paths,
+201 combined completions and zero qualifiers**.
 
 ## Independent IBKR price-history source boundary
 
