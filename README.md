@@ -1242,9 +1242,33 @@ the first real ratios and targets; proof followed at
 **10:50:08.528775Z**. All 122 source months and original formal
 anchors remain. **No new funded account has run at this snapshot**:
 actual remote publication must precede all four original paths.
-Counts are **28 registered, 26 completed, one retained technical
+At that preregistration snapshot, counts were **28 registered, 26 completed, one retained technical
 failure, one pending, 104 funded paths, 204 combined completions
 and zero qualifiers**.
+
+The [actual VXN allocation result](research/workbench/evidence/vxn_relative_uncertainty_20261029_results_v1.json)
+is complete after the `ad01b54` publication and
+**2026-10-29T10:56:31.878474Z** account fence.
+The candidate is **rejected overall**:
+
+| Path | Net CAGR | Net excess Sharpe | Maximum DD | Annual two-sided turnover | Model orders | Costs USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 20.017469% | 1.067637 | 15.013448% | 4.488428x | 606 | 1147.25 |
+| 10y stress | 18.522411% | 0.985370 | 15.078130% | 4.505699x | 606 | 2677.95 |
+| 5y base | 21.138192% | 1.015863 | 12.713610% | 4.397732x | 306 | 465.00 |
+| 5y stress | 18.126810% | 0.861114 | 14.765371% | 4.393028x | 294 | 890.16 |
+
+Both ten-year QQQ comparisons and drawdown gates fail; both
+stress Sharpe gates fail. In particular, ten-year-base DD
+**15.01344796326215%** is above 15%, not a rounded pass.
+All CAGR and SPY gates pass, and five-year base passes its full
+point gates, but not the complete four-path requirement.
+CAGR improves against the frozen HMM in every path, while
+Sharpe falls and DD, turnover, orders and fees all increase.
+This is a growth/risk/cost tradeoff, not broad qualification.
+Current totals are **28 registered, 27 completed/reviewed,
+one original technical failure, zero pending, 108 funded paths,
+205 combined completions and zero qualifiers**.
 
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).

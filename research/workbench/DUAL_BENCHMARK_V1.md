@@ -4403,6 +4403,67 @@ Counts are **28 registered, 26 completed/reviewed, one original
 technical failure, one pending, 104 funded paths, 204 combined
 completions and zero qualifiers**.
 
+### Actual relative-uncertainty outcome: higher growth, risk and cost
+
+The actual preregistration commit
+`ad01b54ec4f42b0acf25f51a55d4adee7a6c2878` and publication
+fence **312**, recorded at **2026-10-29T10:56:31.878474Z**,
+precede every new account. All four paths completed once at
+**10:58:12.106738Z**, without rebuilding the HMM.
+The [actual full scalar result](evidence/vxn_relative_uncertainty_20261029_results_v1.json)
+retains all costs and unrounded gates:
+
+| Path | Net CAGR | Net excess Sharpe | Maximum DD | Annual two-sided turnover | Model orders | Costs USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 20.017469% | 1.067637 | 15.013448% | 4.488428x | 606 | 1147.25 |
+| 10y stress | 18.522411% | 0.985370 | 15.078130% | 4.505699x | 606 | 2677.95 |
+| 5y base | 21.138192% | 1.015863 | 12.713610% | 4.397732x | 306 | 465.00 |
+| 5y stress | 18.126810% | 0.861114 | 14.765371% | 4.393028x | 294 | 890.16 |
+
+The candidate is **rejected overall**. All four net-CAGR and
+matched-cost-SPY gates pass, including the retained stress/base-SPY
+comparison. However, the ten-year QQQ gaps remain negative by
+**1.144955 / 2.601452 CAGR percentage points**.
+Both ten-year drawdown gates fail. The unrounded base value
+`15.01344796326215%` and stress value `15.0781301588642%`
+are above 15%; neither may be rounded into acceptance.
+The two stress Sharpe values, `0.9853700822559184` and
+`0.8611142330959527`, are below 1. Only five-year base passes
+all of its historical point gates.
+
+The prespecified frozen equal-core HMM comparison exposes the
+tradeoff in every matched path. The table reports the new
+candidate minus that parent:
+
+| Path | CAGR difference, percentage points | Sharpe difference | DD difference, percentage points | Annual two-sided turnover difference | Model-order difference | Fee difference USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | +0.238138 | -0.029422 | +1.575941 | +0.387609x | +126 | +169.38 |
+| 10y stress | +0.152867 | -0.031574 | +0.912563 | +0.383450x | +120 | +288.47 |
+| 5y base | +0.541411 | -0.013676 | +0.559692 | +0.256951x | +66 | +75.48 |
+| 5y stress | +0.281791 | -0.020410 | +0.542601 | +0.241749x | +60 | +91.74 |
+
+Higher CAGR is consistent across the four comparisons, but so
+are lower Sharpe, greater drawdown and worse implementation
+costs. Preserving the intended total stock budget did not
+preserve realized portfolio risk or the request path.
+This is not evidence that the option input generates
+independent alpha or satisfies the user's joint objective.
+No inference-adjustment scope is enlarged to cover this new trial.
+
+Maximum independent NAV difference is
+`1.0186340659856796e-10` USD. The saved accounts retain positive
+cash, with minimum USD184.64 and maximum gross exposure about
+0.983271, below 1. No source was re-downloaded and no old
+model, policy, account or prospective observation was changed.
+
+Counts are now **28 registered, 27 completed/reviewed, one
+original technical failure, zero pending, 108 funded paths,
+205 combined completions and zero qualifiers**. The next
+follow-up may inspect the stored uncertainty/share records,
+holdings, strict drawdown breaches and costs, without
+recalculating primary signals/accounts or changing the direction,
+window, odds law, stock floor or acceptance gates.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,
