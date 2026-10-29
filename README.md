@@ -1128,6 +1128,24 @@ qualification. Current totals are **24 registered, 23 completed,
 one original technical failure, zero pending, 92 funded paths,
 201 combined completions and zero qualifiers**.
 
+The saved-state/execution diagnosis adds no refits or strategy
+trials. In the five-year pair, the stress-minus-base net log-return
+gap is **-0.115395**: the actual fee component is **-0.031240**,
+with the remainder in realized security-price/holding components.
+There are 39 shared issued requests and one base-only request;
+the original one-/two-session delays produce different fill dates.
+On 2026-04-02, prior stock exposure was about 15.98% base versus
+95.93% stress, but the same delayed reduction had helped stress
+on the preceding session. Both favorable and unfavorable examples
+are retained, not converted into hindsight trading rules.
+
+The ten-year QQQ shortfall is concentrated in the fixed early
+half; the positive late-half excess does not erase it. These are
+actual-account accounting findings, not a fee-only/delay-only
+causal experiment or a new qualifying model. The [full diagnosis
+summary](research/workbench/DUAL_BENCHMARK_V1.md#saved-hmm-states-and-execution-diagnosis-only)
+preserves all four paths and the unchanged rejection.
+
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
 

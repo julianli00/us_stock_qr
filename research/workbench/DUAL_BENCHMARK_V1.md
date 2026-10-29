@@ -3820,6 +3820,103 @@ Final counts are **24 registered, 23 completed/reviewed, one
 original technical failure, zero pending, 92 funded paths,
 201 combined completions and zero qualifiers**.
 
+### Saved HMM states and execution: diagnosis only
+
+The saved-only diagnosis completed at
+**2026-10-29T07:36:43.091013Z**, after freezing its scope and
+184 direct input references. It reads all 122 retained models,
+their original targets and four actual accounts. No MAP fit,
+state inference, target generation, account replay, primary-metric
+pipeline or new source request runs. The original journal remains
+at 275 events; there are zero additional strategy trials.
+Private fitted states, daily accounts and complete diagnostic
+series remain on the SSD, not in the publication allowlist.
+
+Across the 122 saved monthly targets, mean capital shares are
+**69.0344% stocks, 28.9656% BIL and 2% idle cash**. The mean
+absolute monthly stock-target change is **17.1305 percentage
+points**, with a maximum of **81.0857 points**. These are changes
+in target capital, not executed turnover. A continuous probability
+blend does not imply small changes between monthly observations.
+These descriptions introduce no new probability cutoffs, trading
+bands or model-selection thresholds.
+
+The base/stress pair preserves the same original monthly decision
+opportunities, including initial deployment:
+
+| Horizon | Opportunities | Both issue | Base only issues | Stress only issues | Both hold |
+|---|---:|---:|---:|---:|---:|
+| 10y | 121 | 78 | 2 | 3 | 38 |
+| 5y | 61 | 39 | 1 | 0 | 21 |
+
+Thus base/stress issue 80/81 and 40/39 requests. Shared issued
+signals retain their original one-session difference in fill
+dates; there are no shared actual execution dates. A `hold`
+record's execution-date field is only its unused recorded clock,
+not a fill. Different actual holdings and account wealth can also
+produce different band decisions; fewer tickets do not isolate
+the effect of fees.
+
+The actual NAV/cash bridge and each account's own prior NAV give
+the following additive **log-return units**, stress minus base:
+
+| Horizon | Full net log gap | Actual fee component | SOXX price/holding component | Four-style component | BIL component |
+|---|---:|---:|---:|---:|---:|
+| 10y | -0.118380633 | -0.063127420 | -0.046710954 | -0.008504655 | -0.000037604 |
+| 5y | -0.115395294 | -0.031240139 | -0.062278279 | -0.021531025 | -0.000345851 |
+
+GLD contributes zero because it is not held. About 27% of the
+five-year net log gap falls in the actual fee component; most
+falls in the security-price/holding components. This does **not**
+identify a pure delay effect, decompose Sharpe, create a fee-free
+counterfactual or express CAGR percentage points. Stress changes
+costs and delay together, with path-dependent wealth and requests.
+The unchanged five-year-stress Sharpe failure remains.
+
+The diagnostic scope preselected three most negative and three
+most positive daily paired log gaps per horizon, while retaining
+the complete series. The five-year examples illustrate both sides:
+
+| Session | Stress-minus-base net log gap | Prior-close stock share, base/stress | Model orders, base/stress |
+|---|---:|---:|---:|
+| 2026-04-02 | -0.026430 | 15.98% / 95.93% | 0 / 6 |
+| 2025-03-03 | -0.018289 | 79.34% / 79.19% | 6 / 0 |
+| 2025-05-02 | -0.016016 | 94.88% / 22.60% | 0 / 6 |
+| 2026-04-01 | +0.009289 | 95.75% / 95.85% | 6 / 0 |
+| 2024-09-03 | +0.007934 | 56.64% / 56.02% | 6 / 0 |
+| 2025-05-01 | +0.007656 | 22.48% / 22.61% | 6 / 0 |
+
+The same March31 reduction helped the delayed account on April1
+and hurt it on April2. These are selected **ex-post** accounting
+examples, not predictive event signals or permission to retime
+those trades. Each context uses only the model and request known
+by the preceding close, not that day's closing fit.
+
+Maximum-DD contexts are also different. Ten-year base peaks on
+2018-09-04 and bottoms on 2018-10-29, with no orders or fees
+inside that interval. Five-year base peaks on 2021-11-18 and
+bottoms on 2022-10-14, with 54 orders and USD79.58 of costs.
+Both stress paths peak on 2021-11-18 and bottom on 2022-01-27,
+with 12 orders each and respective costs of USD142.19/67.36.
+All four remain below 15%; this does not repair the QQQ or
+Sharpe failures.
+
+The original fixed chronological split explains where the
+ten-year matched-cost QQQ shortfall accumulates:
+
+| Actual ten-year account | Full net log gap to QQQ | 2016-10-06--2021-10-05 | 2021-10-06--2026-10-05 |
+|---|---:|---:|---:|
+| Base | -0.114792832 | -0.280156811 | +0.165363979 |
+| Stress | -0.229990813 | -0.288938176 | +0.058947363 |
+
+The late-half improvement does not erase the early deficit.
+These are segments of each same funded ten-year account, not
+restarted portfolios or differences between independently funded
+CAGRs. The separate fresh-capital five-year accounts keep their
+own results. Priors, transition assumptions, window, stock floor,
+costs, execution clocks and gates remain unchanged. No subsequent
+model or parameter has been selected.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,
