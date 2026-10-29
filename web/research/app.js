@@ -29,6 +29,8 @@ const titles = {
   ordered_path_growth_budget_precision_v2: "有序路径组合：更严格求解精度 v2",
   two_segment_vvix_uncertainty_confirmation_v1: "两时段组合：VVIX季度上升确认美元防御",
   dollar_option_overnight_range_product_v1: "隔夜＋日内区间乘积：保留美元防御",
+  two_segment_core_price_momentum_control_v1: "风格排序：纯价格动量对照",
+  two_segment_core_activity_momentum_v1: "风格排序：报告成交活跃度加权",
   semiconductor_option_proxy_dollar_observed_band025: "隐含波动预算 + 美元防御 + 持仓偏差带",
   semiconductor_option_proxy_observed_band025: "隐含波动预算 + 持仓偏差带",
   macro_real_yield_factor_tilt: "实际利率因子倾斜",

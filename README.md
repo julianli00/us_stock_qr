@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 21 SSD registrations, 20 completed/rejected and one retained preparation failure; 80 funded paths | Separate net-CAGR/SPY/QQQ criteria; zero qualifiers, no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 23 SSD registrations, 20 completed/rejected, one retained preparation failure and two pending activity/control candidates; 80 funded paths | Separate net-CAGR/SPY/QQQ criteria; zero qualifiers, no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -995,6 +995,29 @@ pairs; net additional tickets come from different execution dates.
 This is not the prior VVIX defense-release mechanism, nor proof that
 breach-day fees caused the drawdown. No strategy was rerun and
 the joint rejection remains unchanged.
+
+The new [paired core-activity study](research/workbench/evidence/core_activity_momentum_20261029_registration_v1.json)
+compares time-uniform mean log momentum with a version weighted
+by each fund's own reported close-times-volume activity. It changes
+only the four-style allocation inside the fifteenth model's existing
+core budget. SOXX, GLD, BIL and every other noncore target remain
+exact; the fixed 35/30/20/15 rank shares are inherited rather than fitted.
+
+The [activity-source proof](research/workbench/evidence/core_activity_source_readiness_20261029_v1.json)
+checks 44,880 native fields across four existing 2,805-session fund
+histories. Reported volume matches exactly and no split is reported
+in the retained context. This is not fund flow, actual traded-dollar
+notional or constituent-stock turnover, and no new quotes were requested.
+
+Both candidates were actually registered as **241/242** at
+**2026-10-29T04:55:54.816435Z / .915319Z**, before any new
+score or target. Proofs **243/244** follow at
+**04:55:58.135417Z / .234466Z**. The original 126/21 window
+leaves 128 eligible month ends and three undefined prehistory months;
+all formal ten/five-year returns remain. No candidate account has
+run: remote publication must precede all eight funded paths.
+Counts are **23 registered, 20 completed, one retained technical
+failure, two pending, 80 funded paths and 198 combined completions**.
 
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).

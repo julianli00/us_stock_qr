@@ -3337,6 +3337,94 @@ remain unchanged. The source and candidate stay frozen; there
 are zero new strategy trials, new source requests or selected
 parameters, and the previously reported joint rejection persists.
 
+## Paired core activity momentum: registered, accounts pending
+
+[`config/core-activity-momentum-v1.json`](config/core-activity-momentum-v1.json)
+fixes a two-configuration information experiment. A price-only
+control and an activity-weighted version share the same fifteenth
+parent matrix, factor budget, observation window, rank shares and
+execution contract. Both count as new configurations; the control
+is not silently borrowed from a different old portfolio.
+
+| Candidate | Score |
+|---|---|
+| `two_segment_core_price_momentum_control_v1` | Time-uniform mean of 105 adjusted daily log returns |
+| `two_segment_core_activity_momentum_v1` | The same returns weighted by same-ending-day vendor close × reported share volume |
+
+The score interval uses the already specified **126-session
+lookback excluding 21 recent sessions**. Activity weights normalize
+within each fund's own past window; scaling by their maximum is
+only numerical stabilization. Constant positive activity produces
+the price-control score. More activity can weight negative as well
+as positive returns, so no bullish-flow interpretation is assumed.
+
+All four funds rank by scores rounded to **12 decimal places** for
+fixed numerical tie handling, followed by lexical ticker ties.
+Unrounded scores are retained and independently checked.
+The prior **35/30/20/15%** rank shares allocate the existing style
+budget, without eliminating negative/zero-score funds. Every SOXX,
+GLD, BIL and other noncore target value is preserved exactly, as
+is the aggregate core budget. No equity/gold volatility estimate,
+dollar permission, asset universe or fee rule is recalibrated.
+
+### Archived activity, not a new flow feed
+
+The [source-admission proof](evidence/core_activity_source_readiness_20261029_v1.json)
+verifies the existing MTUM/VLUE/QUAL/USMV native and CSV
+records, matching the unchanged registered market. Across four
+2,805-session histories, **44,880 native price/volume/adjustment
+fields** are checked. Native, CSV and registered share volumes
+match exactly. There are no reported split events in this context;
+no split-unit inference, zero-volume replacement or gap fill is made.
+Maximum source price serialization difference is `5e-10`, and the
+registered price-column difference is at most
+`1.4210854715202004e-14`, within the original identity tolerances.
+
+Close times daily reported shares is a **closing-valuation activity
+proxy**, not actual execution notional, net subscriptions,
+buy-minus-sell flow, shares-outstanding turnover or constituent
+stock activity. ETF market structure and stock overlap remain
+limitations. No new market request, factor family, source-history
+replacement or independent-holdout claim is added.
+
+### Actual paired registration and proof order
+
+Both real registrations precede all new scoring and target work:
+
+| Event | Candidate | Actual UTC time |
+|---|---|---|
+| 241, registration | Price control | 2026-10-29T04:55:54.816435Z |
+| 242, registration | Activity weighting | 2026-10-29T04:55:54.915319Z |
+| 243, target proof | Price control | 2026-10-29T04:55:58.135417Z |
+| 244, target proof | Activity weighting | 2026-10-29T04:55:58.234466Z |
+
+The [two-entry packet](evidence/core_activity_momentum_20261029_registration_v1.json)
+was created at **04:55:58.236284Z**. Each candidate has 128
+eligible original month ends beginning 2016-02-29. The first
+three prehistory months lack the declared score history and stay
+undefined, not replaced by neutral scores or future prices.
+Both original funded anchors and all 2,512/1,254 formal return
+days remain. Ranking inputs end at D−21; the inherited budget
+retains its original signal-day information clock.
+
+Independent unrounded-score errors are at most
+`1.8756697583999227e-17` for the control and
+`1.496198998029996e-16` for activity weighting, with **zero target
+differences**. Five prefix checks, exact noncore preservation,
+combined core budgets and positive four-family coverage pass for
+both candidates. Nine source and 21 candidate/lifecycle synthetic
+checks include registering both IDs before scoring, immutable
+completion, invalid-volume failure and publication dependencies.
+
+No funded metrics exist yet. The source evidence, code and both
+actual entries must be remotely published before eight serial
+funded paths. Every path retains the original fresh USD10,000,
+RF, initial drawdown peak, 5/20 bp, USD1 tickets, one/two-session
+opening delay, observed 0.025 band and unleveraged cash funding.
+Counts are **23 registered, 20 completed/reviewed, one original
+technical failure, two pending, 80 funded paths, 198 combined
+completions and zero qualifiers**.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,

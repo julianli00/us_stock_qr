@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_core_activity_momentum_20261029_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "prior_completed_configurations": 198,
+  "prior_journal_sequence": 240,
+  "prior_journal_head_sha256": "284115a28a56ec402ef90f43dc9c55ddaf3223119c2bb055ab8e2025ff1513e5",
+  "source_candidate": "dollar_option_two_segment_variation_v1",
+  "source_registration": {
+    "path": "evidence/split_session_variation_20261028_registration_v1.json",
+    "sha256": "8224928553fe932a7615e7203f077b00ec773c41877ce147e55ef002c34a340b"
+  },
+  "source_targets": {
+    "path": "data/ssd-split-session-variation-20261028-v1/dollar_option_two_segment_variation_v1/targets.csv",
+    "sha256": "612a4ca35d4129dcd025e82b4ee4c64e87f750a08c5d4c5cef1f126f3bc7e3e2"
+  },
+  "activity_source_readiness": {
+    "path": "evidence/core_activity_source_readiness_20261029_v1.json",
+    "sha256": "09e8dda552865c48398cdb23dac761fab42a3c8ef266eb8de5469e3e6057beee"
+  },
+  "activity_source_manifest": {
+    "path": "data/ssd-core-activity-source-20261029-v1/manifest.json",
+    "sha256": "a96a934ff225f6fd2d16e40a52cb6450ebf55f3f839dfcf18356946165327ba8"
+  },
+  "prior_rank_policy": {
+    "path": "config/factor-core-momentum.json",
+    "sha256": "1778393718406eca335be27203737cee2a958364a043073f8610416fb399815f"
+  },
+  "lookback_sessions": 126,
+  "skip_recent_sessions": 21,
+  "score_return_sessions": 105,
+  "ranking_score_decimal_places": 12,
+  "ranked_factor_shares": [0.35, 0.30, 0.20, 0.15],
+  "original_source_months": 131,
+  "eligible_source_months": 128,
+  "undefined_prehistory_source_months": 3,
+  "core_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "new_economic_factor_definitions": 0,
+  "cash_reserve": 0.02,
+  "actual_weight_trade_band": 0.025,
+  "candidate_count_in_this_study": 2,
+  "study_size_is_a_total_research_quota": false,
+  "candidates": [
+    {"id": "two_segment_core_price_momentum_control_v1", "score": "uniform_time"},
+    {"id": "two_segment_core_activity_momentum_v1", "score": "reported_price_volume"}
+  ],
+  "methodology": {
+    "question": "Does conditioning past factor-fund returns on reported trading activity change useful relative momentum ranking? A paired time-uniformcontrol uses the same parent/budget/window/rankshares so ordinary ranktilting is not misidentified as activity information.",
+    "scores": "For eachfund use105adjustedclose-to-close logreturns fromD-126 toD-21. Control takes theirtime-uniform mean. Activity method weights eachreturn bythe sameendingday vendorraw_close*reported_share_volume,normalizedwithinthatfund'sownwindow. Scale allactivityweights bytheirmaximum onlyfornumericstability;no clipping,winsorization,sourceflowclassification orfittedcoefficient.",
+    "score_meaning": "Close timesdailyreportedvolume is a closing-valuation activity proxy,not actualexecuted dollars,netinflows,buys-minus-sells,shareturnover/outstanding orconstituentstocktrading. Moreactivitycanweightnegativeaswellaspositivereturns. Not a stock-level paperreplication ornewindependentfactor.",
+    "ranks": "Rank alldaily-log scores roundedto12decimalplaces asfixednumericcomparisonprecision,tickerlexicalties. Saveunroundedscores androundedkeys. Original35/30/20/15%rankshares areunchanged;negative orzeroscores do notdelete a fund. Constantpositiveactivitymakesactivityandcontrolscoreidentical.",
+    "preservation": "Readexactfifteenthdesiredmatrix,notitsgenerator. Preserveallnoncoretargetvaluesbit-exactly,includingSOXX/GLD/BIL/SPY/unusedfunds;preservecombinedfourstylebudget. Do notrecalculateequity-gold/dollar/volatilitybudget. Allfourfundfamilies remainpositive.",
+    "warmup": "Onlyoriginalsource monthswith126priorobservations areeligible:128monthsstarting2016-02-29;the3earlierprehistorymonths remainundefined,notfilledwithneutralscores. Bothoriginalformalaccountanchors arevalid;keepall2512/1254returns. Scoreandactivityinputs endD-21;sourcebudgets retain theiroriginalDinformation clock.",
+    "execution": "Onefrozenpairedstudy,8fundedpaths,eachfreshUSD10000 underoriginal5/20bp,USD1tickets,1/2sessiondelayedopens,observedholding0.025band,RF/initialpeak/1xlong-onlycashfunding. Additionalrankchanges mayincreasecostsandlosses. No shorts orsyntheticresidualreturns.",
+    "registration": "Actuallyregisterbothcandidate specificationsbeforeanyrealscore,rank ortarget. Publishbothsource/candidatecodeandactualpacket beforerunningeitherportfolio. Countbothconfigurations evenifthepricecontrolreusesanoldsignalconcept onanewparent.",
+    "limitations": "Fund-share activity isaffectedbyETFmarketstructure;dataarevendorarchives,nottrade-levelorcompletePITconstituenthistory. Fourstylefunds overlapstocksandmarketbeta. Thisnewcomparison doesnotrestorefailedresidualmomentum,range orVVIXvariants;allhistoryandtrialcounts remainexposed.",
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}
