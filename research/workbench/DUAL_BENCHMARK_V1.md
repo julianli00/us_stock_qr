@@ -4083,6 +4083,147 @@ investigation is limited to saved score/rank stability, issued
 requests and execution costs; no new window, rank shares, HMM
 parameters or candidate has been selected.
 
+### Saved session ranking and execution diagnosis
+
+The saved-only follow-up completed at
+**2026-10-29T09:17:29.995812Z**, with 108 direct input references
+and the full frozen dependency closure preserved. It reads the
+three stored rank/target sequences and sixteen existing accounts:
+twelve new paths plus the four equal-core HMM references.
+Five fixed pairs in each original scenario give twenty
+accounting comparisons, **not twenty new strategy trials**.
+No HMM fit, market score, target, funded-account or primary-metric
+pipeline is replayed. The journal remains at 309 events.
+
+All 122 prepared month ends are retained, giving 121 successive
+composition comparisons:
+
+| Core method | Full-rank changes | Top-choice changes | Mean absolute two-sided change in normalized core shares |
+|---|---:|---:|---:|
+| Full-day | 74 | 30 | 14.5455 percentage points |
+| Overnight | 46 | 22 | 7.6860 percentage points |
+| Intraday | 80 | 45 | 15.2893 percentage points |
+
+These are changes **inside the normalized style core**, not
+whole-NAV capital changes or executed/annualized turnover.
+The parent retains equal quarter shares even when its total core
+budget changes. Full-day versus overnight ranks differ in
+102/122 months, with different top choices in 60; full-day versus
+intraday also differs in 102 months, with 61 top-choice differences.
+Overnight versus intraday differs in 118 months and 100 top choices.
+The underlying observations and fund holdings overlap; these
+counts do not establish independent samples or statistical alpha.
+
+Mean intended shares of the **style core**, rather than NAV, are:
+
+| Method | MTUM | VLUE | QUAL | USMV |
+|---|---:|---:|---:|---:|
+| Full-day | 26.8852% | 24.2623% | 25.9836% | 22.8689% |
+| Overnight | 28.2377% | 23.1148% | 26.6803% | 21.9672% |
+| Intraday | 22.6230% | 27.6230% | 22.9508% | 26.8033% |
+
+These mean fractions must not be multiplied by the mean risk
+budget and called observed mean portfolio weights.
+
+The formal account clocks are different denominators: 121
+original decision opportunities for each ten-year account and
+61 for each five-year account, including fresh-capital deployment.
+Actual issued requests and nonzero model-order dates coincide
+in these sixteen saved accounts:
+
+| Path | Equal-core parent | Full-day | Overnight | Intraday |
+|---|---:|---:|---:|---:|
+| 10y base | 80 | 99 | 90 | 101 |
+| 10y stress | 81 | 99 | 90 | 101 |
+| 5y base | 40 | 48 | 45 | 52 |
+| 5y stress | 39 | 46 | 43 | 51 |
+
+An unissued `hold` record's execution-date field is only an
+unused clock, not a fill. Targets are joined as of each actual
+signal date, including the initial anchor; no later source row is
+backfilled into an earlier request.
+
+Overnight is not simply the full-day request set with some rows
+deleted. At the same scenario's unchanged execution clock:
+
+| Path | Shared dates | Added overnight-only dates | Avoided full-day-only dates | Shared-date fee difference USD | Exclusive-date net fee difference USD | Total fee difference USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 86 | 4 | 13 | -10.15 | -69.78 | -79.94 |
+| 10y stress | 88 | 2 | 11 | -34.07 | -111.46 | -145.53 |
+| 5y base | 43 | 2 | 5 | -5.70 | -20.03 | -25.73 |
+| 5y stress | 42 | 1 | 4 | -20.98 | -25.81 | -46.79 |
+
+Displayed components are rounded independently; reconciliation
+uses the retained full-precision values.
+Shared-date model-order counts are identical. With the original
+USD1 fixed commission and matched scenario cost rate, those
+shared-date fee reductions come from lower actual traded
+notional, not fewer tickets. Wealth and holdings paths differ;
+this is not an equal-wealth or fee-only causal experiment.
+
+Against the equal-core parent, all ranked methods add requests
+and increase shared-date fees. The complete comparison retains
+both added and avoided dates:
+
+| Path | Method | Added method-only requests | Avoided parent-only requests | Added requests with only core gaps crossing the band | Shared-date fee increase USD |
+|---|---|---:|---:|---:|---:|
+| 10y base | Full-day | 20 | 1 | 18 | 17.20 |
+| 10y base | Overnight | 11 | 1 | 10 | 6.39 |
+| 10y base | Intraday | 25 | 4 | 23 | 12.46 |
+| 10y stress | Full-day | 18 | 0 | 18 | 60.80 |
+| 10y stress | Overnight | 9 | 0 | 9 | 24.21 |
+| 10y stress | Intraday | 23 | 3 | 22 | 32.91 |
+| 5y base | Full-day | 8 | 0 | 7 | 6.80 |
+| 5y base | Overnight | 5 | 0 | 4 | 0.92 |
+| 5y base | Intraday | 12 | 0 | 11 | 6.46 |
+| 5y stress | Full-day | 7 | 0 | 7 | 24.09 |
+| 5y stress | Overnight | 4 | 0 | 4 | 2.26 |
+| 5y stress | Intraday | 12 | 0 | 11 | 19.98 |
+
+In this table, 144 of 154 added-request **comparison instances**
+have a core-only crossing of the unchanged observed-weight
+band, including its original arithmetic allowance. These
+overlapping horizons, scenarios and methods are not 154
+independent market dates. Eight core-only instances retain the
+previous opportunity's known composition; they correspond to
+two distinct signals repeated across paths. A core-only gap
+does not necessarily mean a fresh rank change: the diagnostic
+measures actual holdings against an already known target, not
+just changes in its rank label or a counterfactual controller.
+The band remains 2.5 percentage points of total NAV per fund;
+normalizing the core for the earlier descriptive table does not
+redefine that execution threshold.
+
+Actual per-fund PnL and fee differences are normalized by each
+account's own prior NAV and log-linked. The overnight-minus-full-day
+results are in **log-return units**:
+
+| Path | Actual net log gap | Fee component | Four-style price/holding component | SOXX price/holding component | BIL component |
+|---|---:|---:|---:|---:|---:|
+| 10y base | +0.005802783 | +0.003592242 | -0.002492734 | +0.004447521 | +0.000255755 |
+| 10y stress | +0.012754320 | +0.007313365 | +0.002767069 | +0.002387953 | +0.000285933 |
+| 5y base | +0.001621866 | +0.002125199 | -0.002655054 | +0.001944227 | +0.000207494 |
+| 5y stress | +0.005197655 | +0.004120075 | -0.000878053 | +0.001707188 | +0.000248445 |
+
+GLD contributes zero. The core component is negative in three
+of four comparisons, despite all four positive net gaps.
+SOXX/BIL components differ even though their desired targets
+are identical: actual rebalancing, holdings and wealth paths
+need not be identical. This is not a decomposition of Sharpe,
+CAGR percentage points, isolated overnight factor returns or a
+valid zero-fee portfolio. The small conditional net improvement
+therefore cannot be called a general core overnight alpha.
+
+Maximum diagnostic NAV/cash identity errors are
+`2.1541879391406837e-11` / `2.702904566831421e-11` USD;
+maximum log-link reconciliation error is
+`7.08461067588928e-15`. All three original rejections, all
+twenty accounting comparisons and all exclusive request dates
+remain recorded. Counts stay **27 registered, 26 completed,
+one original technical failure, 104 funded paths, 204 combined
+completions and zero qualifiers**. No new parameter, execution
+rule or candidate has been selected from this diagnosis.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,

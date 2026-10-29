@@ -1194,6 +1194,24 @@ Current totals are **27 registered, 26 completed/reviewed, one
 original technical failure, zero pending, 104 funded paths,
 204 combined completions and zero qualifiers**.
 
+The saved rank/execution follow-up adds **zero strategy trials**.
+Across 121 monthly transitions, full rankings change 74 times
+for full-day scoring, 46 for overnight and 80 for intraday.
+Overnight's actual issued requests are 90/90/45/43 across the
+four paths, versus 99/99/48/46 for full-day and 80/81/40/39
+for the equal-core parent.
+
+The cost advantage is not simply a subset of full-day trades:
+overnight both adds and avoids execution dates, and also trades
+less notional on shared dates with unchanged ticket counts.
+Against the parent, most additional request instances cross
+only the existing core-weight band; shared-date fees rise too.
+Overnight's core price/holding contribution is negative in three
+of four comparisons against full-day, despite positive net gaps.
+The [saved accounting diagnosis](research/workbench/DUAL_BENCHMARK_V1.md#saved-session-ranking-and-execution-diagnosis)
+therefore does not establish a general overnight factor alpha
+or repair any of the three overall rejections.
+
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
 
