@@ -3597,6 +3597,60 @@ remain unchanged. There are zero new strategy trials, source
 requests or selected parameters, and both original joint
 rejections remain in place.
 
+## SMH implementation source review: blocked before price admission
+
+The next source question was a possible SMH implementation of the
+existing SOXX capital allocation, retaining the four style funds,
+GLD and BIL. Different semiconductor indexes can change industry,
+issuer and geographical concentration; this would not create an
+independent factor family or a matched-risk comparison. No
+portfolio rule or target was evaluated while checking its inputs.
+
+The [source-readiness record](evidence/smh_input_readiness_20261029_v1.json)
+is explicitly **not admitted** and separates the actual outcomes:
+
+| Resource | Actual result | Evidence limit |
+|---|---|---|
+| Direct VanEck SMH fund page | `web_fetch` transport failure; first ordinary local curl attempt then timed out connecting, exit28 / HTTP0 | No current issuer page received; a timeout is not labeled an HTTP refusal |
+| Public depository summary PDF | HTTP200, 12-page issuer-authored copy dated 2023-02-01 | Dated reference, not verified current-2026 or full historical continuity |
+| MarketVector index guide | HTTP403, CloudFront “Request blocked” response | Not a PDF guide; no methodology contents admitted |
+
+The dated summary identifies SMH as a Nasdaq-listed fund seeking
+price and yield replication of the MVIS US Listed Semiconductor
+25 Index, before fees and expenses. It describes normally at least
+80% investment in index securities, including common stocks and
+depositary receipts of U.S.-listed and foreign issuers. Those are
+statements from the **2023 document**, not a completed current
+mandate, inception/HOLDRS-chain or historical-notional audit.
+
+The actual resources were:
+
+- [VanEck fund page](https://www.vaneck.com/us/en/investments/semiconductor-etf-smh/).
+- [Dated public summary copy](https://www.prospectusdocs.com/eol/docman?funddocid=3375560).
+- [Index-provider guide URL](https://www.marketvector.com/rulebooks/download/MVSMH_Index_Guide.pdf).
+
+Search-summary dates, version claims and generated URL patterns
+were not accepted as verified evidence. The local issuer attempt
+used the same public URL with ordinary defaults after a
+transport-only tool failure, without a proxy, cookie, user-agent or
+TLS change. The later explicit index-provider 403 remains stopped:
+no alternate guide endpoint, mirror or header workaround was used.
+The 403 response's underlying cause is not established.
+
+The source review completed at **2026-10-29T06:08:52.863828Z**.
+All response bodies, headers, native failure evidence and the dated
+document remain private on the SSD. **No market quote request**
+was made, so neither a price-provider refusal nor a historical
+coverage failure is asserted. No 13-asset adapter, source-price
+replacement, candidate registration, target or funded account
+was created.
+
+The existing 23 registrations, 22 completed configurations, one
+original technical failure, 88 funded paths, 200 combined
+completions and zero qualifiers remain unchanged, as do the
+original ledger and 263 journal events. This input blocker does
+not stop unrelated lawful research under the continuing authority.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,

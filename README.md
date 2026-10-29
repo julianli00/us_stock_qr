@@ -1068,6 +1068,19 @@ positive normalized fee-return difference because payment dates
 and each account's prior NAV differ. These measures are not
 interchangeable; the full strategy result remains rejected.
 
+A subsequent [SMH source review](research/workbench/evidence/smh_input_readiness_20261029_v1.json)
+stops **before market-history or asset admission**. The direct
+VanEck page could not be reached through the ordinary transport;
+a public depository supplied a genuinely dated **2023-02-01**
+summary, not a verified current-2026 document. The actual
+MarketVector guide request returned **HTTP403 / Request blocked**,
+so no guide contents were admitted or retrieved through a workaround.
+
+No SMH price history, 13-asset panel, target matrix or candidate
+account was created. This is a metadata-access limitation, not a
+claim that the price provider refused SMH or lacks the required
+history. The existing SOXX and all registered models remain unchanged.
+
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
 
