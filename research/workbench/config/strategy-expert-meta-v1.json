@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_strategy_expert_meta_20261029_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "prior_completed_configurations": 207,
+  "prior_journal_sequence": 344,
+  "prior_journal_head_sha256": "3373afc2600c9aaf76cfc47503312a7c6927070335ecf15a6b27014f14d8bb2d",
+  "pool": {
+    "path": "reports/ssd-continuous-research-v1/expert-pool-transition-20261029-v1/pool-admission-v1.json",
+    "sha256": "cc7524c6137b58651bca7c2c532334e05a9fc8fc062131c0a40c65212d91fb87"
+  },
+  "expert_ids": [
+    "equity_first_month_end_commitment_v1",
+    "benchmark_opportunity_joint_tail_v1",
+    "symmetric_garch_growth_bil_v1"
+  ],
+  "lookback_sessions": 126,
+  "training_sessions": 84,
+  "validation_sessions": 42,
+  "selected_experts": 2,
+  "selection_score_decimal_places": 12,
+  "shadow_reference_path": "10y-base",
+  "reference_capital_usd": 10000,
+  "switch_cost_bps_per_side": 5.0,
+  "switch_commission_per_changed_asset_usd": 1.0,
+  "switch_cost_amortization_sessions": 21,
+  "changed_asset_numeric_tolerance": 1e-12,
+  "invested_target_budget": 0.98,
+  "cash_reserve": 0.02,
+  "actual_weight_trade_band": 0.025,
+  "minimum_economic_factor_families": 3,
+  "new_economic_factor_definitions": 0,
+  "candidate_count_in_this_study": 2,
+  "study_size_is_a_total_research_quota": false,
+  "candidates": [
+    {"id": "expert_pool_equal_weight_v1", "weighting": "equal"},
+    {"id": "expert_pool_rolling_pair_v1", "weighting": "train_erc_validate_net"}
+  ],
+  "methodology": {
+    "question": "Can complete causal policies with different mechanisms contribute to a better single portfolio even when every standalone policy fails final gates? Compare simple equal expert targets with one rolling net-risk-and-cost-aware selector,not another individual champion search.",
+    "pool": "Three fixed representatives:committed price-trend/defense,joint tail/opportunity optimization,and symmetric GARCH growth/BIL. GJR is valid but not selected as an additional independent mechanism. One technical failure is archive-only;25otherSSD+178legacy configurations are retained and unreviewed for this bounded first pool. Mechanism labels do not establish independence or complementary returns.",
+    "shadow": "Read exact existing ten-year-base NET expert account returns/RF. These reference books started atUSD10000 in2016 and their NAVs drift; their fixed-cost drag need not equal a fractional expert allocation or a fresh2021main account. They are scoring state,not capital to sum,returns to transfer or new independent trials. No old entry point or fitted model is rerun.",
+    "clock": "At each actual completed month end use only expert targets and shadow returns no later than that close. The earliest combined target requires all3real source recommendations; prior context remains undefined. The full formal anchors/2512and1254returns remain. Five-year master starts fresh while the separate historical shadow state continues.",
+    "warmup": "Before126common mature net observations exist,rolling uses explicitly labeled UNSCORED equal expert weights. This is a fixed initial allocation whose actual gains/losses/costs remain in the full accounts,not successful scores or a safety claim. Missing post-start shadow dates or recommendations are data errors,not warmup. If complete observations have no nondegenerate pair,record that reason and use the same explicitly unranked equal allocation.",
+    "training_validation": "126sessions is a half-year reference:84older sessions train risk weights and42later sessions validate the candidates,allalreadyknown at the decision. Twoexperts is the smallest nontrivial diversified selection from3mechanism representatives. No window/k/risk-target search. Validation is consumed by historical model selection,not an independent performance holdout.",
+    "weights_and_dependence": "Enumerate only distinct-mechanism pairs. Compute covariance of TRAINING net excess returns. Within each pair use normalized inverse standard deviations,which equalize the two marginal variance contributions including their covariance. This controls the pair's risk allocation without adding a fitted return/variance aversion coefficient. Zero-variance or zero-portfolio-variance pairs are explicitly unscorable,never infinite-Sharpe winners.",
+    "selection": "For each pair compute train and validation annualized net-excess Sharpe of its fixed TRAINING weights,using joint daily return proxies rather than averaging standalone Sharpe/CAGR/DD. Rank by the lower of the two scores after the frozen incremental switching-cost proxy,rounded to12decimal places only for deterministic ranking. Highest key wins even when negative;no retrospectively chosen cash threshold. Key ties use lexical expert IDs. Retain all unrounded scores. Dependence enters portfolio variance,and pair marginal-risk contributions are retained.",
+    "incremental_cost": "Compare the proposed pair's underlying target with PREVIOUS expert weights applied to the SAME CURRENT expert recommendations. This isolates a proxy for extra switching caused by meta weights,not all native expert turnover. Estimate5bp times two-sided asset-weight change plusUSD1per changed asset at referenceUSD10000;spread over21sessions and subtract from each score's daily excess mean. This conservative scoring penalty is not an exact main-account fee,not charged again to capital,and may differ from actual band-triggered fills,netting,NAV and stress delay/cost.",
+    "main_account": "Both candidates form one convex mixture of COMPLETE expert recommendations in the admitted14asset universe;structural zeroes only for assets outside an expert's original universe. CombinedETFtarget98%,idle cash2%. The main account uses original MONTHLY2.5ppactual-holding feedback,one/twosessiondelays,5/20bps,USD1tickets,RF,initialpeak andfreshUSD10000. Some dense experts' native shadows use daily drift feedback;monthly main execution does not exactly reproduce their native wealth. Actual main holdings/costs determine all final metrics.",
+    "bias_and_failure": "Pool selection follows207exposed completed configurations and known standalone outcomes. Recorded expert introduction is in2026,not2016. Historical use is an explicit counterfactual,not actual deployment,independentOOS or forwardproof. Preserve all old failures and both new trials;no rule/cost/window/gate rescue after results.",
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

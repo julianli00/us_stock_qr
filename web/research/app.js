@@ -38,6 +38,8 @@ const titles = {
   hmm_vxn_relative_uncertainty_v1: "VXN相对不确定性：半导体／风格核心",
   symmetric_garch_growth_bil_v1: "条件方差：对称GARCH股票／BIL对照",
   downside_gjr_growth_bil_v1: "条件方差：负收益冲击GJR股票／BIL",
+  expert_pool_equal_weight_v1: "策略专家：固定三专家等权",
+  expert_pool_rolling_pair_v1: "策略专家：滚动净表现／风险／成本择优",
   semiconductor_option_proxy_dollar_observed_band025: "隐含波动预算 + 美元防御 + 持仓偏差带",
   semiconductor_option_proxy_observed_band025: "隐含波动预算 + 持仓偏差带",
   macro_real_yield_factor_tilt: "实际利率因子倾斜",

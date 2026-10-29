@@ -4808,6 +4808,164 @@ refit the models, regenerate targets/accounts, invent
 a passing fee-free portfolio or retune a window, cap,
 floor, coefficient bound or acceptance gate.
 
+## User-directed strategy expert pool and first meta-strategy pair
+
+The user explicitly changed the mainline on
+**2026-10-29T13:25:29.422Z** to complete strategy experts
+plus rolling composition. The governing
+[expert protocol](STRATEGY_EXPERTS_V1.md), root glossary and
+ADR distinguish expert validity from final portfolio
+qualification. The existing immutable histories remain;
+unrelated standalone-candidate improvement is superseded.
+
+The first [actual admission evidence](evidence/strategy_expert_pool_20261029_admission_v1.json)
+was recorded at **14:13:03.650138Z**:
+
+| Complete policy | Mechanism role | Source format | First historical target | Actual introduction | First-pool disposition |
+|---|---|---|---|---|---|
+| Month-end commitment | Committed price trend and defense | Dense held targets | 2016-09-07 | 2026-10-27 | Selected |
+| Joint-tail/opportunity LP | Joint scenario-tail minimization and opportunity constraint | Dense held targets | 2016-08-31 | 2026-10-28 | Selected |
+| Symmetric GARCH growth/BIL | Conditional-variance persistence | Monthly targets | 2016-08-31 | 2026-10-29 | Selected |
+| Downside GJR growth/BIL | Related variance-model extension | Monthly targets | 2016-08-31 | 2026-10-29 | Valid, not selected as another independent mechanism |
+
+These are complete source policies with their own defensive
+behavior, not core/SOXX/GLD relabeled as experts. Every
+reviewed expert retains its four original account paths,
+source and target evidence, independent accounting and
+cash-funded exposure. **All four standalone financial
+verdicts remain rejected, without becoming admission
+failures.** The original `ordered_path_growth_budget_v1`
+technical failure has no complete target proof and remains
+archive-only. Twenty-five other SSD configurations and the
+178 legacy completions are retained and unreviewed for
+this first pool, not silently declared valid or invalid.
+Prohibited leverage and unadmitted sources cannot enter
+through composition.
+
+Three mechanism representatives are not proof of three
+independent risk sources. The analyst-selected pool follows
+207 already exposed completions. Its recorded introductions
+are in2026; assuming those rules in earlier historical
+periods is a counterfactual, not genuine earlier deployment
+or independent forward evidence.
+
+### Real Interface and one capital account
+
+`StrategyExpert.observe(as_of, lookback)` is the small
+Interface at the archived recommendation/observation Seam.
+The dense and monthly Adapters hide different missing-data
+and carry semantics while preserving actual clocks.
+Missing dense rows or scheduled month ends after warmup
+are errors, not safe-state defaults. An expert can have
+an available recommendation but an immature score.
+
+The common market reuses the already admitted14-asset
+panel, preserving every original12-asset price cell and RF.
+For a12-asset expert, IJR/PKW are structural zero exposures,
+not imputed prices or missing recommendations. Shadow
+observations reuse the exact existing **ten-year-base net
+account records**, with2,512 dated returns. No old entry
+point, GARCH fit, LP solution or expert account was rerun.
+
+Each shadow book began at its own historical USD10,000
+reference scale and subsequently drifted. Its effective
+fixed-fee drag is not necessarily the cost of a fractional
+expert allocation or a fresh five-year master account.
+No shadow wealth is added to the main account, and no
+averaged CAGR, drawdown or gross-wealth guarantee is used.
+The main target is a convex mixture of complete expert
+recommendations, netted at the actual underlying assets,
+with98% invested and2% target idle cash.
+
+### First fixed pair
+
+The [frozen policy](config/strategy-expert-meta-v1.json)
+contains an equal-weight control and one rolling rule.
+These numbers are research design choices, not user
+requirements or the result of a parameter sweep.
+
+At each completed month end, the rolling rule takes126
+common matured net shadow observations: the older84 train
+pair risk weights and the later42 validate the candidate
+pairs. Only distinct-mechanism pairs are considered.
+Normalized inverse training standard deviations equalize
+the two marginal variance contributions, including their
+covariance. Pair portfolio risk, rather than a standalone
+return ranking, enters both train and validation scores.
+
+Selection uses the lower of the two annualized net-excess
+risk-adjusted scores after a fixed incremental meta-switch
+cost estimate. Score keys use12 decimal places, with
+lexical expert-ID ties and unrounded values retained.
+Negative scores remain negative; there is no retrospectively
+chosen cash threshold. Zero-risk pairs cannot become
+infinite-Sharpe winners.
+
+The cost proxy compares new expert weights with the previous
+expert weights applied to the **same current recommendations**.
+It estimates incremental asset turnover at5bps plus USD1
+per changed asset, referenced to USD10,000 and spread over
+21 sessions. This is a conservative selection proxy, not an
+exact main-account fee or an additional charge to capital.
+The main book independently pays its actual scenario costs.
+
+Before the126-observation history matures, the rolling rule
+uses explicitly **unscored equal weights**. Those initial
+gains, losses and fees remain in every applicable formal
+account; no date is removed or declared safe. Missing
+post-start observations still fail. The seven unscored
+decisions run from2016-09-30 through2017-03-31; the first
+scored decision is **2017-04-28**. There are114 scored
+decisions and zero degenerate-pair fallback decisions in
+this actual preparation.
+
+Both main strategies use the original **monthly2.5pp
+actual-holdings feedback**, fresh USD10,000 per formal
+path,1/2-session delays,5/20bps,USD1 tickets, RF and initial
+capital peak. Some source experts' native shadow accounts
+use daily drift feedback. Monthly main execution therefore
+does not exactly reproduce their native wealth; the final
+net account, not the shadow scoring proxy, must meet the gates.
+
+### Actual registration, not portfolio qualification
+
+Both actual registrations precede new meta scores/targets:
+
+| Event | Actual2026-10-29 UTC time |
+|---|---|
+| Equal-weight registration345 | 14:44:50.204086 |
+| Rolling-pair registration346 | 14:44:50.337983 |
+| Equal-weight target proof347 | 14:45:01.079947 |
+| Rolling-pair target proof348 | 14:45:01.219661 |
+| Completed registration packet | 14:45:01.222008 |
+
+The [actual packet](evidence/strategy_expert_meta_20261029_registration_v1.json)
+binds both121-month target matrices, first available on
+2016-09-30. Maximum independent target, expert-weight
+and net-score differences are respectively
+`1.1102230246251565e-16`, `2.220446049250313e-16` and
+`3.552713678800501e-15`. Five prefix truncations preserve
+earlier targets and audits; all six eligible registered
+factor ETFs actually participate in each full window.
+No economic factor definition or shadow-account trial
+is added by calling a complete policy an expert.
+
+The current progress summary now derives its legacy baseline
+and completed new reviews from the authoritative journal.
+The stale total184 was retained in a correction receipt;
+the then-current178 legacy plus29 new completions equal207.
+Old frozen progress writers and ledgers were not rewritten.
+Historical stage counters are explicitly scoped.
+
+At this preregistration snapshot there are **32 registered,
+29 completed/reviewed, one original technical failure,
+two pending meta-strategies,116 funded paths,207 combined
+completions and zero qualifiers**. No new funded meta
+account has run. Actual remote publication must precede
+all eight original main-account paths; the original
+Sharpe/CAGR/QQQ/SPY/drawdown and additional stress gates
+remain unchanged.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,

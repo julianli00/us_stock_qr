@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 30 SSD registrations, 29 completed/rejected and one retained preparation failure; 116 funded paths | Separate net-CAGR/SPY/QQQ criteria; zero qualifiers, no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 32 SSD registrations, 29 completed/rejected, one retained preparation failure and two pending meta-strategies; 116 funded paths | Separate net-CAGR/SPY/QQQ criteria; zero qualifiers, no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -33,6 +33,15 @@ it is not a limit on this separately authorized stage. Earlier instructions and
 results below retain their original scope, not the current acceptance criteria.
 No messaging, trading, holdings synchronization or production scheduler is
 activated by this research authorization.
+
+On **2026-10-29**, the user changed the mainline to a
+[strategy expert pool and rolling meta-strategy](research/workbench/STRATEGY_EXPERTS_V1.md).
+Complete valid policies may contribute even when their standalone performance
+fails the final gates; technical invalidity, leakage or prohibited leverage
+cannot be repaired by blending. Shadow assessment and one fresh-capital master
+portfolio remain separate. The first fixed-pool study requires an equal-weight
+control and one causal rolling rule, without claiming that the pool or direction
+change itself has met the investment objective.
 
 The [new frozen protocol](research/workbench/config/dual-benchmark-v1.json)
 requires every original ten/five-year base/stress path to have net Sharpe above
@@ -1340,11 +1349,48 @@ Against the HMM package, all eight CAGRs rise and turnover,
 orders and fees fall, but maximum drawdowns rise by
 **12.37--16.85 percentage points**. The HMM's lower risk cannot
 be combined with these models' higher returns to claim success.
-Current totals are **30 registered, 29 completed/reviewed,
+At that completed standalone snapshot, totals were **30 registered, 29 completed/reviewed,
 one original technical failure, zero pending, 116 funded paths,
-207 combined completions and zero qualifiers**. The next
-saved-budget/drawdown diagnosis adds no new configuration,
-fit, target or account.
+207 combined completions and zero qualifiers**. The subsequent
+user-directed expert-pool mainline preserves these outcomes.
+The previously queued standalone budget/drawdown follow-up is superseded;
+relevant saved evidence can instead support expert admission.
+
+The [first actual expert pool](research/workbench/evidence/strategy_expert_pool_20261029_admission_v1.json)
+admits three **complete policies**: month-end trend/defense
+commitment, joint-tail/opportunity allocation and symmetric
+GARCH growth/BIL. All three retain their standalone rejection.
+GJR is technically valid but not selected as an additional
+independent mechanism; the original failed LP version is
+archive-only. Other historical configurations are retained
+and unreviewed for this bounded first pool, not declared invalid.
+The [expert Module](research/workbench/src/us_quant/strategy_experts_v1.py)
+uses one `observe(as_of, lookback)` Interface with real dense
+and monthly archived-target Adapters. These are not renamed
+stock, gold and cash holdings.
+
+The [first meta-strategy pair](research/workbench/evidence/strategy_expert_meta_20261029_registration_v1.json)
+was actually registered at **2026-10-29T14:44:50.204086Z**
+and **14:44:50.337983Z**, before any new combination scores
+or targets. It compares equal expert weights with a fixed
+126-session chronological rule:84 training sessions,42 validation
+sessions, and a two-expert risk-balanced selection using the
+lower net risk-adjusted score after incremental switching-cost
+estimation. Correlation and marginal variance enter the rule;
+highest standalone CAGR is not the selection criterion.
+
+Both121-month target matrices have independent scalar and
+prefix evidence. The first seven decisions explicitly use
+unscored equal weights; scoring begins on **2017-04-28**.
+No formal return day is removed and no warmup allocation
+is called safe or successful. Existing net expert accounts
+are only separate shadow observations; each final path
+will execute one fresh USD10,000 account with unified asset
+targets and actual costs. **No funded meta path has run at
+this preregistration snapshot.** Actual publication must
+precede all eight paths. Counts are **32 registered,
+29 completed, one technical failure, two pending,
+116 funded paths,207 combined completions and zero qualifiers**.
 
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).

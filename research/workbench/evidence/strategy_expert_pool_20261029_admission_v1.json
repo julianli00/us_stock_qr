@@ -1,0 +1,264 @@
+{
+  "admitted_at": "2026-10-29T14:13:03.650138+00:00",
+  "claimed_independent_economic_risk_sources": null,
+  "experts": [
+    {
+      "adapter": "dense",
+      "counterfactual_historical_availability": true,
+      "financial_failure_is_not_admission_failure": true,
+      "first_historical_target": "2016-09-07",
+      "first_pool_status": "admitted_selected",
+      "four_completed_paths_checked": 4,
+      "historical_shadow_end": "2026-10-05",
+      "historical_shadow_observations": 2512,
+      "historical_shadow_start": "2016-10-06",
+      "id": "equity_first_month_end_commitment_v1",
+      "introduced_at": "2026-10-27T18:39:57.813411+00:00",
+      "mechanism_group": "committed_price_trend_defense",
+      "reason": "Complete valid representative of this mechanism, chosen before meta outcomes; standalone failure retained, no complementary-return claim.",
+      "source_technical_and_funding_checks_passed": true,
+      "standalone_financial_verdict_preserved": "rejected"
+    },
+    {
+      "adapter": "dense",
+      "counterfactual_historical_availability": true,
+      "financial_failure_is_not_admission_failure": true,
+      "first_historical_target": "2016-08-31",
+      "first_pool_status": "admitted_selected",
+      "four_completed_paths_checked": 4,
+      "historical_shadow_end": "2026-10-05",
+      "historical_shadow_observations": 2512,
+      "historical_shadow_start": "2016-10-06",
+      "id": "benchmark_opportunity_joint_tail_v1",
+      "introduced_at": "2026-10-28T03:56:56.804178+00:00",
+      "mechanism_group": "joint_tail_opportunity",
+      "reason": "Complete valid representative of this mechanism, chosen before meta outcomes; standalone failure retained, no complementary-return claim.",
+      "source_technical_and_funding_checks_passed": true,
+      "standalone_financial_verdict_preserved": "rejected"
+    },
+    {
+      "adapter": "monthly",
+      "counterfactual_historical_availability": true,
+      "financial_failure_is_not_admission_failure": true,
+      "first_historical_target": "2016-08-31",
+      "first_pool_status": "admitted_selected",
+      "four_completed_paths_checked": 4,
+      "historical_shadow_end": "2026-10-05",
+      "historical_shadow_observations": 2512,
+      "historical_shadow_start": "2016-10-06",
+      "id": "symmetric_garch_growth_bil_v1",
+      "introduced_at": "2026-10-29T12:25:39.373023+00:00",
+      "mechanism_group": "conditional_variance_growth",
+      "reason": "Complete valid representative of this mechanism, chosen before meta outcomes; standalone failure retained, no complementary-return claim.",
+      "source_technical_and_funding_checks_passed": true,
+      "standalone_financial_verdict_preserved": "rejected"
+    },
+    {
+      "adapter": "monthly",
+      "counterfactual_historical_availability": true,
+      "financial_failure_is_not_admission_failure": true,
+      "first_historical_target": "2016-08-31",
+      "first_pool_status": "admitted_not_selected_related_variant",
+      "four_completed_paths_checked": 4,
+      "historical_shadow_end": "2026-10-05",
+      "historical_shadow_observations": 2512,
+      "historical_shadow_start": "2016-10-06",
+      "id": "downside_gjr_growth_bil_v1",
+      "introduced_at": "2026-10-29T12:25:39.501898+00:00",
+      "mechanism_group": "conditional_variance_growth",
+      "reason": "Closely related GJR variant of the selected symmetric GARCH family; retained and valid, not an extra independent mechanism or discarded failure.",
+      "source_technical_and_funding_checks_passed": true,
+      "standalone_financial_verdict_preserved": "rejected"
+    }
+  ],
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "legacy_178_scope": "Retained and unreviewed for this bounded first pool; not falsely declared all invalid or all admitted. Any prohibited-leverage or unadmitted-source version is ineligible.",
+  "mechanism_groups": 3,
+  "new_shadow_account_runs": 0,
+  "new_strategy_trials": 0,
+  "order_authority": false,
+  "other_SSD_archives": [
+    {
+      "id": "equity_first_trend200_band025_v1",
+      "original_financial_verdict": "rejected",
+      "reason": "Outside the bounded first mechanism pool; original completion and failure evidence retained. Not declared invalid or excluded for standalone performance.",
+      "status": "retained_unreviewed_for_first_pool"
+    },
+    {
+      "id": "equity_first_vix_variance_band025_v1",
+      "original_financial_verdict": "rejected",
+      "reason": "Outside the bounded first mechanism pool; original completion and failure evidence retained. Not declared invalid or excluded for standalone performance.",
+      "status": "retained_unreviewed_for_first_pool"
+    },
+    {
+      "id": "equity_first_21slot_commitment_v1",
+      "original_financial_verdict": "rejected",
+      "reason": "Outside the bounded first mechanism pool; original completion and failure evidence retained. Not declared invalid or excluded for standalone performance.",
+      "status": "retained_unreviewed_for_first_pool"
+    },
+    {
+      "id": "equity_channel63x21_goldtrend200_v1",
+      "original_financial_verdict": "rejected",
+      "reason": "Outside the bounded first mechanism pool; original completion and failure evidence retained. Not declared invalid or excluded for standalone performance.",
+      "status": "retained_unreviewed_for_first_pool"
+    },
+    {
+      "id": "equity_channel63x21_goldchannel63x21_v1",
+      "original_financial_verdict": "rejected",
+      "reason": "Outside the bounded first mechanism pool; original completion and failure evidence retained. Not declared invalid or excluded for standalone performance.",
+      "status": "retained_unreviewed_for_first_pool"
+    },
+    {
+      "id": "equity_month_end_option_exit_latch_v1",
+      "original_financial_verdict": "rejected",
+      "reason": "Outside the bounded first mechanism pool; original completion and failure evidence retained. Not declared invalid or excluded for standalone performance.",
+      "status": "retained_unreviewed_for_first_pool"
+    },
+    {
+      "id": "equity_month_end_six_family_core_v1",
+      "original_financial_verdict": "rejected",
+      "reason": "Outside the bounded first mechanism pool; original completion and failure evidence retained. Not declared invalid or excluded for standalone performance.",
+      "status": "retained_unreviewed_for_first_pool"
+    },
+    {
+      "id": "benchmark_tail_budget_growth_v1",
+      "original_financial_verdict": "rejected",
+      "reason": "Outside the bounded first mechanism pool; original completion and failure evidence retained. Not declared invalid or excluded for standalone performance.",
+      "status": "retained_unreviewed_for_first_pool"
+    },
+    {
+      "id": "dollar_option_daily_variance_disagreement_v1",
+      "original_financial_verdict": "rejected",
+      "reason": "Outside the bounded first mechanism pool; original completion and failure evidence retained. Not declared invalid or excluded for standalone performance.",
+      "status": "retained_unreviewed_for_first_pool"
+    },
+    {
+      "id": "dollar_option_symmetric_variance_disagreement_v1",
+      "original_financial_verdict": "rejected",
+      "reason": "Outside the bounded first mechanism pool; original completion and failure evidence retained. Not declared invalid or excluded for standalone performance.",
+      "status": "retained_unreviewed_for_first_pool"
+    },
+    {
+      "id": "daily_proxy_nearest_band_execution_v1",
+      "original_financial_verdict": "rejected",
+      "reason": "Outside the bounded first mechanism pool; original completion and failure evidence retained. Not declared invalid or excluded for standalone performance.",
+      "status": "retained_unreviewed_for_first_pool"
+    },
+    {
+      "id": "daily_proxy_relative_equity_odds_v1",
+      "original_financial_verdict": "rejected",
+      "reason": "Outside the bounded first mechanism pool; original completion and failure evidence retained. Not declared invalid or excluded for standalone performance.",
+      "status": "retained_unreviewed_for_first_pool"
+    },
+    {
+      "id": "dollar_option_two_segment_variation_v1",
+      "original_financial_verdict": "rejected",
+      "reason": "Outside the bounded first mechanism pool; original completion and failure evidence retained. Not declared invalid or excluded for standalone performance.",
+      "status": "retained_unreviewed_for_first_pool"
+    },
+    {
+      "id": "dollar_guarded_simplex_wealth_average_v1",
+      "original_financial_verdict": "rejected",
+      "reason": "Outside the bounded first mechanism pool; original completion and failure evidence retained. Not declared invalid or excluded for standalone performance.",
+      "status": "retained_unreviewed_for_first_pool"
+    },
+    {
+      "id": "two_segment_anfci_residual_confirmation_v1",
+      "original_financial_verdict": "rejected",
+      "reason": "Outside the bounded first mechanism pool; original completion and failure evidence retained. Not declared invalid or excluded for standalone performance.",
+      "status": "retained_unreviewed_for_first_pool"
+    },
+    {
+      "id": "ordered_path_growth_budget_v1",
+      "original_financial_verdict": null,
+      "reason": "The optimum does not retain the nonnegative funded budget.",
+      "status": "archive_only_technical_failure"
+    },
+    {
+      "id": "ordered_path_growth_budget_precision_v2",
+      "original_financial_verdict": "rejected",
+      "reason": "Outside the bounded first mechanism pool; original completion and failure evidence retained. Not declared invalid or excluded for standalone performance.",
+      "status": "retained_unreviewed_for_first_pool"
+    },
+    {
+      "id": "two_segment_vvix_uncertainty_confirmation_v1",
+      "original_financial_verdict": "rejected",
+      "reason": "Outside the bounded first mechanism pool; original completion and failure evidence retained. Not declared invalid or excluded for standalone performance.",
+      "status": "retained_unreviewed_for_first_pool"
+    },
+    {
+      "id": "dollar_option_overnight_range_product_v1",
+      "original_financial_verdict": "rejected",
+      "reason": "Outside the bounded first mechanism pool; original completion and failure evidence retained. Not declared invalid or excluded for standalone performance.",
+      "status": "retained_unreviewed_for_first_pool"
+    },
+    {
+      "id": "two_segment_core_price_momentum_control_v1",
+      "original_financial_verdict": "rejected",
+      "reason": "Outside the bounded first mechanism pool; original completion and failure evidence retained. Not declared invalid or excluded for standalone performance.",
+      "status": "retained_unreviewed_for_first_pool"
+    },
+    {
+      "id": "two_segment_core_activity_momentum_v1",
+      "original_financial_verdict": "rejected",
+      "reason": "Outside the bounded first mechanism pool; original completion and failure evidence retained. Not declared invalid or excluded for standalone performance.",
+      "status": "retained_unreviewed_for_first_pool"
+    },
+    {
+      "id": "causal_two_state_growth_bil_v1",
+      "original_financial_verdict": "rejected",
+      "reason": "Outside the bounded first mechanism pool; original completion and failure evidence retained. Not declared invalid or excluded for standalone performance.",
+      "status": "retained_unreviewed_for_first_pool"
+    },
+    {
+      "id": "hmm_core_close_momentum_control_v1",
+      "original_financial_verdict": "rejected",
+      "reason": "Outside the bounded first mechanism pool; original completion and failure evidence retained. Not declared invalid or excluded for standalone performance.",
+      "status": "retained_unreviewed_for_first_pool"
+    },
+    {
+      "id": "hmm_core_overnight_momentum_v1",
+      "original_financial_verdict": "rejected",
+      "reason": "Outside the bounded first mechanism pool; original completion and failure evidence retained. Not declared invalid or excluded for standalone performance.",
+      "status": "retained_unreviewed_for_first_pool"
+    },
+    {
+      "id": "hmm_core_intraday_momentum_v1",
+      "original_financial_verdict": "rejected",
+      "reason": "Outside the bounded first mechanism pool; original completion and failure evidence retained. Not declared invalid or excluded for standalone performance.",
+      "status": "retained_unreviewed_for_first_pool"
+    },
+    {
+      "id": "hmm_vxn_relative_uncertainty_v1",
+      "original_financial_verdict": "rejected",
+      "reason": "Outside the bounded first mechanism pool; original completion and failure evidence retained. Not declared invalid or excluded for standalone performance.",
+      "status": "retained_unreviewed_for_first_pool"
+    }
+  ],
+  "pool_id": "strategy_expert_pool_20261029_v1",
+  "private_admission": {
+    "path": "reports/ssd-continuous-research-v1/expert-pool-transition-20261029-v1/pool-admission-v1.json",
+    "sha256": "cc7524c6137b58651bca7c2c532334e05a9fc8fc062131c0a40c65212d91fb87"
+  },
+  "raw_prices_targets_or_daily_accounts_exported": false,
+  "schema_version": 1,
+  "shadow_basis": "Existing original ten-year-base net expert model accounts are readonly reference observations, each with its own historical USD10000 scale. Never sum their capital or transfer wealth to the main account. No new shadow run.",
+  "universe": [
+    "SPY",
+    "IEF",
+    "GLD",
+    "BIL",
+    "MTUM",
+    "VLUE",
+    "QUAL",
+    "USMV",
+    "TLT",
+    "QQQ",
+    "XLK",
+    "SOXX",
+    "IJR",
+    "PKW"
+  ],
+  "user_directed_mainline": true
+}
