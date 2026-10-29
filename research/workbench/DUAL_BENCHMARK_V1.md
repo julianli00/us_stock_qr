@@ -3173,12 +3173,81 @@ measurement and registration/publication order. The funded
 executor remains unchanged; account execution verifies saved
 targets independently rather than rerunning the primary generator.
 
-No candidate account has run. The source proof, implementation
-and actual packet must be remotely published before four fresh
+No candidate account had run at that snapshot. The source proof,
+implementation and actual packet had to be remotely published before four fresh
 USD10,000 accounts under all original financial gates. Current
-counts are **21 registered, 19 completed/reviewed, one retained
+counts then were **21 registered, 19 completed/reviewed, one retained
 technical failure, one pending, 76 funded paths and 197 combined
 completions**, with zero qualifiers.
+
+### Actual funded outcome: rejected despite five-year point passes
+
+The actual source/candidate preregistration publication is
+`08fd9c898ffc993bfa202ad84b990267e74b203e`. Publication event
+**231**, at **2026-10-29T03:23:17.846126Z**, verifies 16 own
+public files and inherited dependencies before any account starts.
+The older commit failed the read-only publication check without
+starting a path. Four actual funded attempts completed once, with
+review **240** and finished time **03:25:50.089090Z**.
+
+The [full scalar result](evidence/overnight_range_product_20261029_results_v1.json)
+preserves all unrounded metrics and gates:
+
+| Path | Net CAGR | Net excess Sharpe | Maximum DD | Annual two-sided turnover | Model orders | Costs USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 16.690890% | 1.164101 | 15.208306% | 4.111507x | 637 | 1,067.53 |
+| 10y stress | 16.219550% | 1.127461 | 14.132163% | 4.123973x | 651 | 2,338.67 |
+| 5y base | 20.924672% | 1.236615 | 12.506100% | 4.465767x | 333 | 502.14 |
+| 5y stress | 19.984451% | 1.175988 | 13.081433% | 4.469721x | 340 | 1,001.76 |
+
+All CAGR, net excess Sharpe, matched-cost SPY and retained extra
+stress-versus-base-cost-SPY gates pass. Both five-year QQQ and DD
+gates pass, giving two historical **path-level** point passes.
+Both ten-year QQQ gates fail, and ten-year-base maximum drawdown
+`0.15208306334934574` exceeds `0.15`. That small but real failure
+is not rounded away. Five-year-stress CAGR
+`0.19984451360213118` is not strictly above 20%, although it
+passes the unchanged hard CAGR-above-12% condition.
+
+The independent monthly feedback audit checks 121/121/61/61
+decision opportunities including initial deployment, with
+95/97/49/50 issued requests. Maximum independent NAV difference
+is `1.2369127944111824e-10` USD. Cash remains positive, maximum
+gross exposure is below 0.983, and no broker orders were submitted.
+
+The preselected direct fifteenth donor remains the stronger
+whole-model comparison:
+
+| Path | Donor CAGR | Range CAGR | Donor Sharpe | Range Sharpe | Donor DD | Range DD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 16.9172% | 16.6909% | 1.180261 | 1.164101 | 14.8656% | 15.2083% |
+| 10y stress | 16.3809% | 16.2195% | 1.137426 | 1.127461 | 13.8994% | 14.1322% |
+| 5y base | 20.9599% | 20.9247% | 1.242588 | 1.236615 | 12.5061% | 12.5061% |
+| 5y stress | 20.0204% | 19.9845% | 1.180153 | 1.175988 | 12.4731% | 13.0814% |
+
+Every CAGR and Sharpe declines. Five-year-base DD differs only by
+approximately `1.44e-15` in fractional units, not a meaningful
+improvement; the other three drawdowns worsen. Model tickets
+increase by 14/21/9/16 and costs by USD8.04/11.07/9.91/22.36.
+Ten-year-base annual turnover falls slightly, by 0.004407 times
+NAV, but that does not offset the added fixed-ticket cost.
+
+The broader retained
+`semiconductor_option_proxy_dollar_observed_band025` reference
+has lower CAGR and Sharpe in all four paths; the new five-year DDs
+are also lower than that older reference. However, ten-year DDs
+are higher, the direct fifteenth donor is stronger, and the original
+QQQ/full-path requirements still fail. These saved comparisons do
+not establish equal-risk or causal alpha and do not replay either
+reference's accounts.
+
+The terminal state is **21 registered, 20 completed/reviewed,
+one original technical failure, zero pending, 80 funded paths,
+198 combined completions and zero qualifiers**. Source,
+measurement and target proofs remain valid within their declared
+scope, but the strategy is rejected. Any next investigation must
+read saved proxy/bound-saturation/holding evidence rather than
+alter this estimator's coefficient, window, costs or acceptance.
 
 ## Independent IBKR price-history source boundary
 

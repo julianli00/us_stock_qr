@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-29",
-  "phase": "overnight_range_registered_pending_accounts",
-  "active_research_focus": "additional_intraday_extrema_without_releasing_dollar_defense",
+  "phase": "overnight_range_evaluation_complete_rejected",
+  "active_research_focus": "range_information_preserves_defense_but_does_not_improve_the_donor_frontier",
   "research_dashboard": {
     "server": "src/us_quant/research_dashboard.py",
     "frontend": "web/research/index.html",
@@ -77,13 +77,13 @@
     },
     "aggregate_counts": {
       "registered": 21,
-      "completed": 19,
-      "reviews": 19,
-      "pending": 1,
+      "completed": 20,
+      "reviews": 20,
+      "pending": 0,
       "technical_failures": 1,
       "qualified": 0,
-      "account_paths": 76,
-      "total_legacy_plus_ssd_completed": 197
+      "account_paths": 80,
+      "total_legacy_plus_ssd_completed": 198
     },
     "additional_cohorts": [
       {
@@ -218,9 +218,9 @@
         "study_id": "ssd_overnight_range_product_20261029_v1",
         "registration": "research/workbench/evidence/overnight_range_product_20261029_registration_v1.json",
         "registration_sha256": "6f151166b4ff565e94f54d1004e540d57c050b56086639de14f5cd80d589fd32",
-        "results": null,
-        "results_sha256": null,
-        "preregistration_commit": null
+        "results": "research/workbench/evidence/overnight_range_product_20261029_results_v1.json",
+        "results_sha256": "d9ae9f6cd2514689938834b7a94e779591c4b1dd76622fc7e955b21cabdfd5dc",
+        "preregistration_commit": "08fd9c898ffc993bfa202ad84b990267e74b203e"
       }
     ],
     "status": "first_pair_complete_both_rejected",
@@ -846,14 +846,14 @@
     "第10项固定相反优先级：在当时较低SPY/QQQ尾部预算（以实际BIL风险作底）内最大化已观测机会，不扫风险倍率/旧门槛/窗口/核心参数。2026-10-28T05:46:36.615636Z真实登记先于122有证书计划（112优化/10非正机会），5前缀及完整6家族覆盖通过。先发布1074904478bfd0ba2a19d502c479ebd2de13c227，再于05:54:28.534515Z完成4资金路径并拒绝。依次十年base/stress、五年base/stress净CAGR12.9292/11.4123/16.5627/14.9118%，Sharpe0.6781/0.5922/0.7818/0.6907，DD26.4086/27.0756/26.6875/27.3277%；回撤/夏普/QQQ全失败，3条CAGR过且仅五年胜SPY。SSD10完成/40路径/合计188/0通过、118事件，原记录不变；不得拼接第9项回撤与第10项收益。"
   ],
   "next": [
-    "Preserve21registered SSD configurations:19completed/reviewed overall rejections,1retained terminal preparation failure,1pendingrange-productcandidate,76funded paths,197combined completions and0qualifiers. Alloldaccounts/sources/six-slot/forwardrecords unchanged.",
-    "Range-product actuallyregistered229 at2026-10-29T03:16:44.121982Z beforeproxy/targetproof230 at03:16:45.609113Z. AdditionalarchivedSPYhigh/low source2805bars/16830fields verified;originalprices/RF untouched. Fixed252*mean(overnight_square+rawrange_products)over21sessions,oldstock/goldlaw/30-70bounds/halfSOXX-fourstyles/BILbudget/all131dates preserved. Independentunclippedproxyerror1.75e-15/target1.24e-14,5prefix/fullanchors/styles passed. No actualaccounts;publishsource+packet/code andverifyremote fencefirst. No fullpaper/YangZhang/unbiasedness/VRPclaim;publisherIncapsulafailurepreserved,noretry/mirror. DBCstillunadmitted.",
+    "Preserve21registered SSD configurations:20completed/reviewed overall rejections,1retained terminal preparation failure,0pending,80funded paths,198combined completions and0qualifiers. Alloldaccounts/sources/six-slot/forwardrecords unchanged.",
+    "Range-product completedall4originalpaths2026-10-29T03:25:50.089090Z afteractual08fd9c8publication/fence231 at03:23:17.846126Z;overallREJECTED. AllCAGR/Sharpe/SPY/extrastressSPYpass andboth5yfullpointgatespass,butboth10yQQQfail and10ybaseDD15.208306334934574% strictlyfails15%. NetCAGR16.690890/16.219550/20.924672/19.984451%,Sh1.164101/1.127461/1.236615/1.175988. Versuspreselected15thdonor allCAGR/Shlower,costshigher;5ybaseDDnumericallysame,otherDDhigher. Do notround19.984451upto20or15.2083downto15. Nextsavedproxy/saturation/holdingsdiagnosis,notcoefficient/window/costrescue;no newmodelchosen.",
     "Continue economically motivated, preregistered independent small batches without ordinary per-batch approval or a configuration-count ceiling until2026-10-31T15:59Z. Use one computation; at cutoff preserve partial work, clear only the SSD session timer and confirm absence.",
     "Keep old source refusals, VIG/SDY terminal429 and prospective/PIT gates. The independent market-only IBKR adapter is proved, but the one actual probe stopped on2157 before historical requests;0history rows/admissions,no automatic retry or inferred entitlement denial. Default readonly account synchronization remains prohibited."
   ],
   "next_zh": [
-    "保留SSD21项已登记配置：19项完成审阅并整体拒绝、1项原准备终止失败、1项区间乘积候选待评估，76条资金路径、合计197项完成、0通过。旧账户/来源/历史六配置/前瞻记录不变。",
-    "区间乘积候选229于2026-10-29T03:16:44.121982Z真实登记，先于风险代理/03:16:45.609113Z目标证明230。原SPY极值2805日/16830字段核对通过，原价格/RF不改。固定21日252*mean(隔夜平方+日内原价区间乘积)，原股金规则/30-70边界/半SOXX四风格/BIL预算/131月末保持。未截断代理独立误差1.75e-15、目标1.24e-14，5前缀/完整锚点/风格覆盖通过；尚无账户，须先发布来源与登记代码证明并验证远端屏障。非完整论文/YangZhang/无偏或VRP声明；原出版方Incapsula失败保留、不重试或换镜像。DBC仍未准入。",
+    "保留SSD21项已登记配置：20项完成审阅并整体拒绝、1项原准备终止失败、0待评估，80条资金路径、合计198项完成、0通过。旧账户/来源/历史六配置/前瞻记录不变。",
+    "区间乘积候选在实际08fd9c8发布及2026-10-29T03:23:17.846126Z屏障231之后，于03:25:50.089090Z完成4条原账户并整体拒绝。CAGR/夏普/SPY/额外基础SPY全过，两五年全部点门槛通过；但两十年QQQ失败，十年基础DD15.208306334934574%严格未过15%。净CAGR16.690890/16.219550/20.924672/19.984451%，夏普1.164101/1.127461/1.236615/1.175988。对预选父模型15，四条CAGR/夏普均更低、费用全更高；五年基础DD数值相同，其余更高。不得把19.984451进位为20或把15.2083视作15通过。下一步只查已存代理/边界饱和/持仓，不调系数/窗口/成本救回；未选新模型。",
     "持续开展有经济理由、事前冻结的独立小批次，无普通逐批确认或配置次数上限，截止2026-10-31T15:59Z；单计算job，届时保存未完状态、只清除SSD会话timer并确认不存在。",
     "原拒绝来源、VIG/SDY终止429和前瞻/PIT门保持。独立IBKR market-only适配器已证明，但唯一真实探针在历史请求前因2157停止；历史行/准入0，不自动重试或推断订阅拒绝，仍禁止默认readonly账户同步。"
   ],
