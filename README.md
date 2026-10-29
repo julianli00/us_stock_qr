@@ -1451,6 +1451,23 @@ zero qualifiers**. The next investigation stays in the
 expert-pool layer: saved selections, cost estimates,
 actual turnover and drawdown, without changing these rules.
 
+That saved-only investigation completed at **2026-10-29 16:17:50 UTC**,
+using all121 selector records and all eight existing main books, with
+**zero new strategy trials or account runs**. Of114 mature decisions,
+72 selected the commitment/GARCH pair;65 selected the most-correlated
+available pair and54 had training correlation above0.9. These are
+descriptions, not newly imposed exclusion thresholds. Equal marginal
+risk within a selected pair did not cap absolute master-portfolio risk.
+Most additional traded dollars occurred on dates when both portfolios
+traded, rather than from more tickets. A zero incremental meta-switch
+proxy could still accompany a real trade when native recommendations
+changed, while a positive proxy could be suppressed by the actual
+holdings band. The [complete saved diagnosis](research/workbench/DUAL_BENCHMARK_V1.md#saved-expert-selector-execution-and-drawdown-diagnosis)
+retains all four comparisons, first breaches, worst drawdowns and
+shadow-capital differences. Neither evaluated rule has been repaired,
+no next allocation rule has been selected, and totals remain209
+combined completions with zero qualifiers.
+
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
 

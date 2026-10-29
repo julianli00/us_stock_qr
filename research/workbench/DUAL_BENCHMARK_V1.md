@@ -5138,6 +5138,197 @@ It must not rescore, refit, regenerate targets/accounts,
 splice passing metrics or change a window, pool, fee or
 financial gate to rescue these outcomes.
 
+## Saved expert-selector, execution and drawdown diagnosis
+
+The saved-only diagnosis completed once at
+**2026-10-29T16:17:50.812278Z**, after the first eight funded
+paths and their rejection. It reads all121 saved selector
+records, all eight main books, source recommendations,
+existing net shadow books and already completed SPY/QQQ
+benchmarks. No score, expert fit, target, shadow account,
+main account or benchmark was regenerated. All88 directly
+bound inputs, the374-event journal and original ledger
+remain unchanged. This adds **zero strategy trials**.
+
+The private assessment SHA256 is
+`a555260eccb307676e40bfe44ed6b21ef991644170fa0b234ff347556bcef27a`;
+its before-computation intent is
+`a77475ae52277e00ba0ad95c4fbab32b62e70eba83f2104172ea47d2b918f575`.
+Only sanitized findings are published here, not the
+private account, source-price or decision rows.
+
+### Relative selection is not absolute portfolio protection
+
+Seven initial unscored equal-weight decisions and all114
+mature scored decisions remain. The recorded pair counts are:
+
+| Complete expert pair | Mature selections |
+|---|---:|
+| Month-end commitment / symmetric GARCH | 72 |
+| Joint-tail opportunity / month-end commitment | 24 |
+| Joint-tail opportunity / symmetric GARCH | 18 |
+
+The pair changes40 times across consecutive scored months,
+and expert weights change on114 of the121 decisions.
+Mean expert weights over all decisions are40.255220%
+commitment,26.499396% joint-tail and33.245385% GARCH.
+Distinct mechanisms did not guarantee low realized
+dependence: the selected pair's stored training correlation
+has median0.824529 and mean0.663378, with range
+-0.284590 to0.999999. The selected pair has the highest
+available stored correlation65 times;54 selections have
+correlation above0.9. These counts are descriptive, **not
+new acceptance gates or reasons to retroactively exclude
+an expert**.
+
+The selected pair's training variance-contribution shares
+are each one half, to numerical precision. That balances
+two components *within the measured training pair*; it
+sets neither an absolute master-portfolio variance ceiling
+nor a bound on future drawdown or stock exposure.
+There are43 negative selected scores: the frozen rule
+ranks relative alternatives without a fitted cash cutoff.
+None of these observations changes its parameters.
+
+### Incremental target switching versus actual execution
+
+Each saved combined-target change reconciles to the
+previous expert weights times native recommendation
+changes, plus changed expert weights times the same
+current recommendations. Across120 transitions, the
+summed native L1 change is39.373640 and the meta-weight
+component32.719205; the actual combined-target L1 change
+is58.385425 because signed components can cancel.
+These are normalized recommendation movements, **not
+executed or annualized turnover**.
+
+The scoring proxy covers only the meta-weight component
+at reference capital USD10,000. It does not cover every
+native recommendation change, actual holdings drift,
+fresh deployment, funding adjustment or delayed fill.
+Its fixed USD1 tickets must not scale with NAV.
+Actual fees remain charged once by the original engine.
+
+| Path | Mature noninitial opportunities | Zero switch proxy but actual execution | Positive switch proxy but actual hold |
+|---|---:|---:|---:|
+| 10y base | 114 | 6 | 18 |
+| 10y stress | 114 | 5 | 18 |
+| 5y base | 60 | 5 | 7 |
+| 5y stress | 60 | 4 | 7 |
+
+The sum of stored reference proxies is USD723.596026
+over the ten-year mature opportunities and USD423.758607
+over the five-year noninitial opportunities, independent
+of execution scenario. Neither sum is an actual total
+fee estimate or a forecast-error measurement. Initial
+five-year deployment remains a real funded trade,
+not an incremental switch from a nonexistent main book.
+
+Disjoint execution-date partitions locate the larger
+notional, without treating every recorded hold clock as
+a trade:
+
+| Path | Shared fill dates | Equal-only dates | Rolling-only dates | Extra rolling notional on shared dates USD | Extra rolling notional, whole path USD |
+|---|---:|---:|---:|---:|---:|
+| 10y base | 72 | 19 | 11 | 486912.24 | 564020.80 |
+| 10y stress | 72 | 18 | 10 | 453360.45 | 535788.51 |
+| 5y base | 40 | 7 | 7 | 179056.10 | 208961.21 |
+| 5y stress | 41 | 6 | 5 | 164270.46 | 189890.95 |
+
+Most additional traded dollars occur when *both* books
+trade: larger amounts, not more model tickets, dominate
+the increase. A common execution date still has different
+holdings, wealth, targets and possibly different prior
+decisions; it is not an isolated causal cost experiment.
+The actual14-asset adjusted-unit reconstruction reconciles
+NAV, cash, tickets, proportional costs and turnover using
+the original **pre-open, pre-cost NAV** denominator.
+
+### First breaches and worst episodes are different events
+
+All contexts use information known through the previous
+session, excluding event-day closing targets or selections.
+Every formal return day and the initial USD10,000 peak
+remain. The strict breach comparison is below85% of the
+running peak; it changes no primary performance metric
+or financial gate.
+
+| Path | Equal first DD above15% | Rolling first DD above15% | Equal worst peak -> trough | Rolling worst peak -> trough |
+|---|---|---|---|---|
+| 10y base | 2020-03-12 | 2020-03-18 | 2020-01-23 -> 2020-03-20 | 2021-12-27 -> 2022-12-28 |
+| 10y stress | 2020-03-12 | 2020-03-18 | 2020-01-23 -> 2020-03-18 | 2021-12-27 -> 2023-03-13 |
+| 5y base | 2022-09-22 | 2022-06-16 | 2021-12-27 -> 2022-10-14 | 2021-12-27 -> 2022-12-28 |
+| 5y stress | 2022-09-22 | 2022-08-02 | 2021-12-27 -> 2022-10-14 | 2021-12-27 -> 2023-03-13 |
+
+Seven first breaches have **no event-day orders or fees**.
+Both ten-year rolling books first breach while already
+holding the joint-tail/GARCH pair, whose stored training
+correlation is0.094055, with substantial Treasury exposure
+and no pending request. A low historical correlation or a
+defensive label does not guarantee a safe wealth path.
+
+Five-year rolling stress is different: its first breach
+on2022-08-02 coincides with six model orders costing
+USD25.292707. The previous close is98.001007% BIL,
+but a request issued on2022-07-29 already targets
+50.446475% stocks and is due that day. This is a queued
+re-entry, not evidence that the final target had already
+been held or that fees alone caused the breach.
+
+At the rolling base trough, the previous-close stock
+weight is97.764344%; the latest pair's training
+correlation is only0.014782. At the stress trough,
+previous-close stocks are97.871781% and that correlation
+is0.336087. Thus low stored pair correlation and
+within-pair risk balancing can coexist with nearly full
+underlying stock exposure. Both rolling worst episodes
+have losses in SOXX and the four-style core; full
+peak-to-trough asset marks and fees reconcile separately
+to the actual NAV loss, not an imagined fee-free book.
+
+### Costs, wealth paths and shadow scale remain separate
+
+The ex-post linked daily components give the following
+**whole-window net log-return differences**, rolling
+minus equal. They are neither CAGR percentage points,
+causal alpha nor returns of a zero-fee counterfactual:
+
+| Path | Actual net log-return difference | Linked actual fee-return component | Linked asset-mark components, combined |
+|---|---:|---:|---:|
+| 10y base | -0.011993 | -0.004167 | -0.007826 |
+| 10y stress | -0.048579 | -0.041327 | -0.007252 |
+| 5y base | +0.006264 | -0.005247 | +0.011512 |
+| 5y stress | -0.033648 | -0.028264 | -0.005385 |
+
+GLD's linked difference is positive in all four comparisons;
+SOXX and the original four-style core are negative in
+all four. These are accounting contributions on different
+realized wealth paths, not isolated expert or asset alpha.
+Dollar fee differences and normalized fee-return
+components answer different questions.
+
+Both equal and rolling books lag QQQ over the fixed
+2016-10-06--2021-10-05 early segment and lead it over
+the fixed2021-10-06--2026-10-05 carried segment; the
+full ten-year deficits remain. The carried segment is
+not the independently funded five-year account.
+On the five-year initial signal date, the source shadows
+have NAVs USD23,947.091702 commitment,
+USD14,022.009371 joint-tail and USD27,307.978193 GARCH,
+versus **USD10,000** in the fresh main book. Their net
+returns already contain native execution and fixed-fee
+drag at those evolving shadow scales. No wealth or
+net-shadow guarantee is transferred into main capital.
+
+The pool's exposed-history selection bias and actual2026
+introductions remain disclosed. This diagnosis establishes
+no independent forward result, new complementary expert,
+replacement pool or new allocation rule. Both original
+meta rules remain rejected. Current counts remain
+**34 registered identities,31 completed/reviewed,
+three technical failures, zero pending,124 funded paths,
+209 combined completions and zero qualifiers**.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,
