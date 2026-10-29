@@ -4607,6 +4607,118 @@ one original technical failure, 108 funded paths, 205 combined
 completions and zero qualifiers**. No direction, window, cap,
 stock floor, execution rule or acceptance gate is changed.
 
+## Symmetric versus downside conditional variance: actually registered
+
+The [new actual packet](evidence/conditional_variance_growth_20261029_registration_v1.json)
+contains two fixed configurations: `symmetric_garch_growth_bil_v1`
+and `downside_gjr_growth_bil_v1`. The question is whether an
+additional negative-squared-return response improves conditional
+risk allocation relative to symmetric variance persistence.
+Neither a new semiconductor cap nor a retrospectively selected
+2018 filter is introduced.
+
+For each eligible original month end, 253 known adjusted closes
+produce 252 log returns of a fixed stock risk basket: half SOXX
+and one eighth in each of MTUM, VLUE, QUAL and USMV. Each
+daily basket gross return is the weighted sum of constituent
+gross returns, followed by the log transform. This describes
+a **synthetic constant-mix gross risk proxy**, not the drifted
+holdings of a funded portfolio, a traded zero-cost strategy
+or a replacement benchmark. The fits do not use SPY, QQQ,
+VIX or VXN values.
+
+Both zero-mean Gaussian quasi-likelihood models initialize
+variance at the observed training second moment. In normalized
+units this is one. The symmetric recurrence has an intercept,
+lagged squared return and lagged conditional variance; GJR
+adds a nonnegative coefficient on a negative lagged squared
+return. The parameters are separately estimated, not held
+equal across the two models. One deterministic initialization
+per fit preserves initial persistence 0.95 and intercept0.05
+in both models. A positive-slack softmax parameterization
+keeps persistence strictly below one; normalized intercept
+and logit bounds are explicit in the
+[frozen policy](config/conditional-variance-growth-v1.json).
+
+The first forecast uses the last observed shock. Further
+expected variances use persistence equal to alpha plus beta
+plus half gamma. The half-gamma term requires **symmetric,
+unit-second-moment innovations**; it is not an empirical
+finding about the stock basket. All21 forecast variances
+enter the mean, without simulation or division by an
+almost-zero one-minus-persistence denominator.
+The [official model documentation](https://arch.readthedocs.io/en/latest/univariate/univariate_volatility_modeling.html)
+and [forecasting reference](https://arch.readthedocs.io/en/latest/univariate/forecasting.html)
+support the standard recurrences and analytic forecasting
+principle. Their constant-mean SP500 examples, data and
+significance results are not used. This bounded zero-mean
+SciPy implementation is not claimed to reproduce that package
+or an original paper exactly; no package was installed.
+
+The fixed allocation is:
+
+```text
+stock = 0.98 * min(1, pooled_252_day_second_moment / mean_next_21_variance)
+SOXX = stock / 2
+each of MTUM, VLUE, QUAL, USMV = stock / 8
+BIL = 0.98 - stock
+target idle cash = 0.02
+```
+
+There is no absolute volatility target and no inherited14.7%
+HMM stock floor. Thus a comparison against the old HMM
+changes the risk proxy, inference and budget: it is a whole
+package comparison, not isolated GARCH causal alpha.
+Within the matched pair, the extra downside-response term
+and its estimated coefficient distinguish the model families.
+Neither model's variance forecast guarantees the15% drawdown
+gate. Actual trading remains monthly band-triggered, with
+the original delays, costs, fractional cash funding and RF.
+BIL may be zero; actual tickets and turnover must be measured,
+not assumed from a fixed asset count.
+
+Actual lifecycle, all on **2026-10-29 UTC**:
+
+| Event | Actual time |
+|---|---|
+| GARCH registration322 | 12:25:39.373023 |
+| GJR registration323 | 12:25:39.501898 |
+| First real model-fit attempt | 12:25:39.901900 |
+| Last of244 fit receipts | 12:26:08.974125 |
+| GARCH target proof324 | 12:26:14.957142 |
+| GJR target proof325 | 12:26:15.075789 |
+| Completed registration packet | 12:26:15.077738 |
+
+Every one of the122 eligible dates has a separate start and
+completion receipt for each model. The first nine original
+prehistory opportunities remain undefined; both full account
+anchors and all four style families are covered. Five prefix
+checks per model compare exact observed inputs and reconstruct
+the saved fit without another optimization.
+
+| Model | Completed fits | Optimizer iteration range | Fits near a numerical coordinate bound | Maximum independent target difference | Maximum relative variance difference |
+|---|---:|---:|---:|---:|---:|
+| GARCH | 122 | 10--55 | 8 | 6.67e-15 | 1.54e-14 |
+| GJR | 122 | 14--61 | 22 | 5.00e-15 | 1.54e-14 |
+
+Independent native-unit convolution, mean likelihood and
+finite-horizon forecasts agree; maximum mean-likelihood
+difference is1.34e-15. Bound counts refer to fits with at
+least one near-bound coordinate, not the number of distinct
+constraints or proof of identified parameters. Every fit
+uses the single registered initialization. Local numerical
+convergence is not a global optimum, forecast calibration,
+statistical significance or performance evidence.
+
+At this snapshot **no new funded account has run**.
+The exact packet, policy and implementation still require
+actual remote publication before the eight new funded paths.
+Counts are **30 registered, 27 completed/reviewed, one retained
+original technical failure, two pending, 108 funded paths,
+205 combined completions and zero qualifiers**. No old HMM
+fit, VXN ratio, source admission, account or diagnosis was
+replayed, and no failed source or forward record was reset.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,

@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 24 SSD registrations, 23 completed/rejected and one retained preparation failure; 92 funded paths | Separate net-CAGR/SPY/QQQ criteria; zero qualifiers, no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 30 SSD registrations, 27 completed/rejected, one retained preparation failure and two pending; 108 funded paths | Separate net-CAGR/SPY/QQQ criteria; zero qualifiers, no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -1266,7 +1266,7 @@ point gates, but not the complete four-path requirement.
 CAGR improves against the frozen HMM in every path, while
 Sharpe falls and DD, turnover, orders and fees all increase.
 This is a growth/risk/cost tradeoff, not broad qualification.
-Current totals are **28 registered, 27 completed/reviewed,
+At that completed VXN snapshot, totals were **28 registered, 27 completed/reviewed,
 one original technical failure, zero pending, 108 funded paths,
 205 combined completions and zero qualifiers**.
 
@@ -1281,6 +1281,35 @@ five-year-base worst drawdown occurs with about 77% BIL and
 SOXX already below the parent's weight. All eight saved accounts
 and four paired comparisons are retained; no window, share cap
 or acceptance gate is adjusted.
+
+The subsequent [actual conditional-variance pair](research/workbench/evidence/conditional_variance_growth_20261029_registration_v1.json)
+was registered at **2026-10-29T12:25:39.373023Z** and
+**12:25:39.501898Z**, before any new real stock-basket
+return, fit or target. It compares symmetric GARCH with a
+separately estimated nonnegative-downside GJR extension.
+Both use 252 completed log returns of the same fixed
+half-SOXX/equal-four-style risk proxy and the next 21 sessions'
+expected variance. The proxy is a synthetic gross constant-mix
+risk measurement, **not a zero-cost traded account**.
+
+Stocks receive 98% times the smaller of one and the ratio of
+observed training variance to forecast variance; the rest of
+the invested budget is actual BIL, with 2% target idle cash.
+Unlike the HMM package, this rule has no 14.7% stock floor.
+It changes the risk proxy and budget as well as the model;
+only the within-pair comparison tests the extra downside term.
+All **244 dated fits** and both independent target proofs
+completed without an alternate initialization. Numerical
+coordinate bounds are active in 8 GARCH and 22 GJR fits;
+local convergence does not prove identification or forecast skill.
+
+**No new funded account has run at this preregistration snapshot.**
+Actual remote publication must precede all eight original
+ten/five-year base/stress paths. Current counts are
+**30 registered, 27 completed/reviewed, one original technical
+failure, two pending, 108 funded paths, 205 combined completions
+and zero qualifiers**. All old models, source refusals and
+one-day forward records remain unchanged.
 
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).

@@ -36,6 +36,8 @@ const titles = {
   hmm_core_overnight_momentum_v1: "HMM核心：隔夜收益动量",
   hmm_core_intraday_momentum_v1: "HMM核心：日内收益动量",
   hmm_vxn_relative_uncertainty_v1: "VXN相对不确定性：半导体／风格核心",
+  symmetric_garch_growth_bil_v1: "条件方差：对称GARCH股票／BIL对照",
+  downside_gjr_growth_bil_v1: "条件方差：负收益冲击GJR股票／BIL",
   semiconductor_option_proxy_dollar_observed_band025: "隐含波动预算 + 美元防御 + 持仓偏差带",
   semiconductor_option_proxy_observed_band025: "隐含波动预算 + 持仓偏差带",
   macro_real_yield_factor_tilt: "实际利率因子倾斜",

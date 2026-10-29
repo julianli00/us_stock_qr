@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_conditional_variance_growth_20261029_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "prior_completed_configurations": 205,
+  "prior_journal_sequence": 321,
+  "prior_journal_head_sha256": "0c5fddb20f2e2f3f78f5993310c25b6648c31ac6c1c95b5e691020820371cb71",
+  "decision_calendar_registration": {
+    "path": "evidence/split_session_variation_20261028_registration_v1.json",
+    "sha256": "8224928553fe932a7615e7203f077b00ec773c41877ce147e55ef002c34a340b"
+  },
+  "decision_calendar_targets": {
+    "path": "data/ssd-split-session-variation-20261028-v1/dollar_option_two_segment_variation_v1/targets.csv",
+    "sha256": "612a4ca35d4129dcd025e82b4ee4c64e87f750a08c5d4c5cef1f126f3bc7e3e2"
+  },
+  "completed_hmm_comparison": {
+    "path": "evidence/hmm_growth_bil_20261029_results_v1.json",
+    "sha256": "75b05e3fe5654d8e8ae61516eec49543b7ae20aed2e85fdc7bb66ffe80e61efa"
+  },
+  "lookback_return_sessions": 252,
+  "forecast_sessions": 21,
+  "conditional_mean": 0.0,
+  "initial_normalized_variance": 1.0,
+  "normalized_intercept_bounds": [1e-8, 10.0],
+  "dynamic_logit_bounds": [-20.0, 20.0],
+  "garch_initial_parameters": [0.05, 0.05, 0.90, 0.0],
+  "gjr_initial_parameters": [0.05, 0.05, 0.85, 0.10],
+  "optimizer": "L-BFGS-B",
+  "optimizer_initializations_per_fit": 1,
+  "optimizer_max_iterations": 1000,
+  "optimizer_ftol": 1e-12,
+  "optimizer_gtol": 1e-7,
+  "optimizer_max_line_search_steps": 40,
+  "independent_target_tolerance": 1e-10,
+  "independent_variance_relative_tolerance": 1e-9,
+  "independent_mean_likelihood_tolerance": 1e-8,
+  "original_source_months": 131,
+  "eligible_source_months": 122,
+  "undefined_prehistory_months": 9,
+  "invested_target_budget": 0.98,
+  "cash_reserve": 0.02,
+  "growth_share_of_equity": 0.5,
+  "core_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "new_economic_factor_definitions": 0,
+  "actual_weight_trade_band": 0.025,
+  "candidate_count_in_this_study": 2,
+  "study_size_is_a_total_research_quota": false,
+  "candidates": [
+    {"id": "symmetric_garch_growth_bil_v1", "asymmetric": false},
+    {"id": "downside_gjr_growth_bil_v1", "asymmetric": true}
+  ],
+  "methodology": {
+    "question": "Does a separately estimated negative-squared-return response add useful conditional risk information beyond symmetric squared-return persistence? Compare two complete preregistered packages,not another semiconductor cap or a repair of exposed VXN/HMM dates.",
+    "risk_proxy": "From253knownadjustedcloses form252dailygrossbasketreturns:0.5*SOXXgross+0.125*sum(thefourstylegrossreturns),thenlog. Thisisasyntheticconstant-mixgrossriskmeasurement,notatradedzero-costdailyaccount,investablebenchmark oractualdriftedholdingsvariance. NoSPY/QQQ/VIX/VXNvalueentersnewfits.",
+    "model": "Conditionalmeanfixedzero. Normalizebythetrainingpooledsecondmomentq;h0=1. GARCH:h[t]=omega+alpha*x[t-1]^2+beta*h[t-1]. GJRaddsgamma*x[t-1]^2*I(x[t-1]<0),withnonnegativedownsideeffect. FitmeanGaussiannegativequasilikelihoodwithanalyticgradientandonefixedinitialization;no expected-returnforecast,student-talternative,multistart orwindowgrid.",
+    "parameterization": "Intercept=exp(theta0),bounded1e-8..10inpooledvarianceunits. Softmax([0,theta1,theta2,(theta3)])givesslack,alpha,beta,(gamma/2);alllogitsbounded+-20. Thusdynamiccoefficientsarepositiveandphi=alpha+beta+gamma/2<1. GARCHgammaisexactly0. Boundsapproximatezerocoefficients/unitpersistenceandaredisclosed,notclaimedunconstrainedMLE oridentifiedparameters. Bothinitializationshavephi=.95andintercept.05.",
+    "forecast": "Firstfuturevarianceuseslastobservedreturnandlastfilteredvariance. ForlaterstepsE[h_next]=omega+phi*h underzero-meanunit-second-momentSYMMETRICinnovations;gamma/2isderivedfromthisassumption,notempiricallyprovedforstocks. Averageall21futurevarianceforecasts. No simulation,bootstrap,futurepriceorunconditionalomega/(1-phi)normalizer.",
+    "allocation": "Stocktarget=.98*min(1,q/mean_next21_daily_variance). HalfstocksSOXX,eachstyle1/8stocks,BIL=.98-stocktarget,allotherfunds0,2%idlecash. No absolutevolatilitytarget or14.7%HMMstockfloor. Relativevariancebudgetdoesnotguarantee15%drawdown. Actualexecutionsretainoriginalcosts/delays/band;theriskproxyisnotaperformanceaccount.",
+    "convergence_and_failure": "L-BFGS-Bmax1000,ftol1e-12,gtol1e-7,maxls40. RequireoptimizerSUCCESS,finitefeasiblecoefficients,finitepositivevariances,andobjectiveconsistentwithreturnedparametersandnotworsethaninitialwithin1e-10. Preserveoptimizerstatus/message/iterations/gradients/bounds. Thisislocalnumericalconvergence,notglobaloptimum,forecastcalibration orstatisticalsignificance. Zero/nonfinitehistory,missingpositiveornegativereturns,constantnormalizedsquaredreturns,nonconvergenceorindependentreconstructionfailurestops;no cash/defaultparameter/seedfallback.",
+    "causality_and_retention": "At122originaleligiblemonthendsfitonly252completedreturns;thefirst9sourceopportunitiesremainundefined. h0usesknowntrainingqforparameterestimation,neverrevisionofoldtradingstates. RegisterBOTHmodelsbeforeANYactualproxy/fit/target. Retainstartandsuccess/failuredate-modelreceipts;reuseverifiedcompletedfitsafterinterruption,neverrerunoroverwritesuccesses. Anunresolvedstartwithoutcompletionisnotretrypermission. Prefixcheckscompareexactinputwindowsandreconstructsavedparameterswithoutanotheroptimization.",
+    "comparison_limits": "Withinpaironlytheadditionalnegative-shockcoefficientdiffers,withmatchedpersistence/varianceinitialization. AgainstHMMthischangesriskproxy,model,andbudgetincludingremovaloftheoldfloor;itisawholepackagecomparison,notisolatedGARCHalpha. TheHMMandVXNresults/targets/fitsarenotregenerated. Everyexposedconfigurationandfailurecounts;historicalgatesarenotindependentforwardproof.",
+    "documentation": "TheofficialarchdocumentationverifiesstandardGARCH/GJRrecursionsandanalyticGARCHforecasting;thegamma/2extensionisderivedunderexplicitsymmetry. Itsconstant-meanSP500example,data,fitcoefficientsandsignificanceresultsarenotused. Thisownzero-meanboundedSciPyimplementationisnotexactarchpackage/original-paperreplication. No dependencyinstallation ornewmarketquotes.",
+    "documentation_urls": [
+      "https://arch.readthedocs.io/en/latest/univariate/univariate_volatility_modeling.html",
+      "https://arch.readthedocs.io/en/latest/univariate/forecasting.html"
+    ],
+    "execution": "Alloriginal10y/5y/base-stressfresh10000paths,RF,initialDDpeak,fractional1xlong-onlycashfunding,1/2sessiondelays,5/20bps,USD1ticketsand.025observedholdingbandremain. Keepfourregisteredstyles;BILcanreachzero,andactualtickets/turnover/feesarenotassumedconstant.",
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

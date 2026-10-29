@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-29",
-  "phase": "vxn_saved_share_risk_diagnosed",
-  "active_research_focus": "semiconductor_concentration_and_execution_costs_without_parameter_rescue",
+  "phase": "conditional_variance_pair_registered",
+  "active_research_focus": "symmetric_versus_downside_conditional_variance_before_eight_funded_paths",
   "research_dashboard": {
     "server": "src/us_quant/research_dashboard.py",
     "frontend": "web/research/index.html",
@@ -119,10 +119,10 @@
       "sha256": "ccff66c847db6519132775a177268c03d7ec36491076380be01d01f41589287d"
     },
     "aggregate_counts": {
-      "registered": 28,
+      "registered": 30,
       "completed": 27,
       "reviews": 27,
-      "pending": 0,
+      "pending": 2,
       "technical_failures": 1,
       "qualified": 0,
       "account_paths": 108,
@@ -296,6 +296,14 @@
         "results": "research/workbench/evidence/vxn_relative_uncertainty_20261029_results_v1.json",
         "results_sha256": "d54dbe98b013c0cb749d672acf961e5ac778de7e9b5deb17422d387d010af03c",
         "preregistration_commit": "ad01b54ec4f42b0acf25f51a55d4adee7a6c2878"
+      },
+      {
+        "study_id": "ssd_conditional_variance_growth_20261029_v1",
+        "registration": "research/workbench/evidence/conditional_variance_growth_20261029_registration_v1.json",
+        "registration_sha256": "498a3cfcbc775eed2de0ae9584092618bb0c68b87ebfb7b25c86c57a66eb5d12",
+        "results": null,
+        "results_sha256": null,
+        "preregistration_commit": null
       }
     ],
     "status": "first_pair_complete_both_rejected",
@@ -921,14 +929,14 @@
     "第10项固定相反优先级：在当时较低SPY/QQQ尾部预算（以实际BIL风险作底）内最大化已观测机会，不扫风险倍率/旧门槛/窗口/核心参数。2026-10-28T05:46:36.615636Z真实登记先于122有证书计划（112优化/10非正机会），5前缀及完整6家族覆盖通过。先发布1074904478bfd0ba2a19d502c479ebd2de13c227，再于05:54:28.534515Z完成4资金路径并拒绝。依次十年base/stress、五年base/stress净CAGR12.9292/11.4123/16.5627/14.9118%，Sharpe0.6781/0.5922/0.7818/0.6907，DD26.4086/27.0756/26.6875/27.3277%；回撤/夏普/QQQ全失败，3条CAGR过且仅五年胜SPY。SSD10完成/40路径/合计188/0通过、118事件，原记录不变；不得拼接第9项回撤与第10项收益。"
   ],
   "next": [
-    "Preserve28registered SSD configurations:27completed/reviewed overall rejections,1retained terminal preparation failure,0pending,108funded paths,205combined completions and0qualifiers. Alloldaccounts/sources/six-slot/forwardrecords unchanged.",
-    "Saved VXN share/risk diagnosis completed2026-10-29T11:38:13.754271Z:89refs/8savedaccounts/4pairs,0newtrials/321eventsunchanged. SOXXstockshareabovehalf101/122months,mean54.7940%;intendedSOXXNAV+3.397018pp atunchangedstockbudget. Both10yfirststrictDDbreach2018Oct29:priorSep28share68.110855%,prioractualSOXX64.3%NAVvsparent45.6-45.8%;nodayorders/fees/pending. FiveyearbasecountercontextOct14-2022had77.16%BIL/SOXX9.95%belowparent10.13%,so notuniversalcurrentweightcausality. Requests101/101/51/49vs80/81/40/39;shared-datefeesriseevenequalper-datetickets. SOXXlogcomponentspositive/core-fees-BILnegativeall4;notCAGRpp/Sharpecausality/alpha. FixedearlyQQQdeficitsnoterasedbylateexcess. Alloriginalrejections/source-forwardrecordsunchanged;nextindependentquestionnotselected.",
+    "Preserve30registered SSD configurations:27completed/reviewed overall rejections,1retained terminal preparation failure,2pending,108funded paths,205combined completions and0qualifiers. All28oldcandidates/22oldcohorts/accounts/sources/six-slot/forwardrecords unchanged.",
+    "ActualGARCH/GJRpair registrations322/323 at2026-10-29T12:25:39.373023Z/.501898Z precede all244datedfits. Both122monthproofs324/325complete,packet12:26:15.077738Z. Same252returnconstant-mixstockriskproxy/21forecast horizon;relativevariancebudget,notfundedzero-costproxyorHMMfloorpreservation. 8GARCH/22GJRfitsnearnumericalcoordinatebounds;localconvergenceisnotidentification/calibration. No newaccounts;publishactualfrozenpacket/codebeforeall8originalfundedpaths. No refits/alternateinitialization/cap/window/cost/gaterescue.",
     "Continue economically motivated, preregistered independent small batches without ordinary per-batch approval or a configuration-count ceiling until2026-10-31T15:59Z. Use one computation; at cutoff preserve partial work, clear only the SSD session timer and confirm absence.",
     "Keep old source refusals, VIG/SDY terminal429 and prospective/PIT gates. The independent market-only IBKR adapter is proved, but the one actual probe stopped on2157 before historical requests;0history rows/admissions,no automatic retry or inferred entitlement denial. Default readonly account synchronization remains prohibited."
   ],
   "next_zh": [
-    "保留SSD28项已登记配置：27项完成审阅并整体拒绝、1项原准备终止失败、0待评估，108条资金路径、合计205项完成、0通过。旧账户/来源/历史六配置/前瞻记录不变。",
-    "已存VXN份额/风险诊断于2026-10-29T11:38:13.754271Z完成：89引用、8已存账户、4配对、0新试验、321事件不变。SOXX股票内份额101/122月高于一半、均值54.7940%，目标SOXX净值权重+3.397018个百分点而总股票预算相同。两条十年首次严格越界均2018Oct29：已知9月28日份额68.110855%，此前实际SOXX约64.3%净值、父模型45.6-45.8%，当天无订单/费用/待执行请求。五年基础反例在2022Oct14已有77.16%BIL、SOXX9.95%低于父模型10.13%，不能归为统一当前权重因果。请求101/101/51/49对80/81/40/39，共同日期逐日票数相同却费用更高。四条SOXX对数项正、核心/费用/BIL项负，不是CAGR百分点、夏普因果或alpha；后半超额未抵消早半QQQ亏欠。原拒绝/来源/前瞻均保留，未选下一独立问题或新参数。",
+    "保留SSD30项已登记配置：27项完成审阅并整体拒绝、1项原准备终止失败、2待评估，108条资金路径、合计205项完成、0通过。原28候选/22队列、账户/来源/历史六配置/前瞻记录不变。",
+    "GARCH/GJR配对在2026-10-29T12:25:39.373023Z和.501898Z真实登记322/323，先于全部244份逐月拟合；各122月目标证明324/325完成，12:26:15.077738Z形成真实包。同一252日恒定混合股票风险代理、21日期望方差窗口及相对方差资金规则，不把风险代理当零成本资金账户，也不继承HMM旧仓位下限。GARCH8次、GJR22次拟合靠近数值坐标边界；局部收敛不等于可识别或校准。尚未新增资金账户，先实际发布冻结包/代码，再评估原8路径；不重拟合或更换初值、上限、窗口、成本和验收门。",
     "持续开展有经济理由、事前冻结的独立小批次，无普通逐批确认或配置次数上限，截止2026-10-31T15:59Z；单计算job，届时保存未完状态、只清除SSD会话timer并确认不存在。",
     "原拒绝来源、VIG/SDY终止429和前瞻/PIT门保持。独立IBKR market-only适配器已证明，但唯一真实探针在历史请求前因2157停止；历史行/准入0，不自动重试或推断订阅拒绝，仍禁止默认readonly账户同步。"
   ],
