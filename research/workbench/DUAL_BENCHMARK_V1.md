@@ -3496,6 +3496,107 @@ original technical failure, zero pending, 88 funded paths,
 must read the saved rankings, holdings and execution evidence,
 not retune weights, windows, rank shares or financial gates.
 
+### Saved paired ranks, holdings and accounting
+
+A separate saved-only diagnosis completed at
+**2026-10-29T05:35:15.899809Z**, using the 128 saved rank/target
+pairs and all eight actual funded accounts. Scores and rankings
+were not regenerated, and no source, target, account or primary
+acceptance pipeline was replayed.
+
+Full rankings differ at **109 of 128** month ends; only 19 are
+identical. The first-ranked fund differs at 58 dates, meaning
+51 additional disagreements occur below the top position.
+The maximum single-fund target difference is 6.86 percentage
+points. Mean target-capital changes, measured across the same
+eligible month ends rather than daily executed holdings, are:
+
+| Fund | Activity minus price target capital, percentage points |
+|---|---:|
+| MTUM | -0.260200 |
+| QUAL | -0.593083 |
+| USMV | +0.211171 |
+| VLUE | +0.642113 |
+
+Every noncore target and the combined style budget remain
+unchanged. Per-fund ex-post log linkage has negative MTUM and
+QUAL terms and positive USMV and VLUE terms in all four paired
+paths. The offsets do not remove the negative total observed
+activity-minus-price log-return gap. Noncore terms can also differ:
+identical targets do not force identical actual holdings, execution
+dates, wealth paths or return-normalization denominators.
+These are accounting components, not isolated factor returns,
+CAGR percentage points or causal alpha.
+
+Both ten-year methods have their worst drawdown over
+2020-02-19--2020-03-20. Their February 28 top-ranked fund is
+VLUE in both methods, but activity raises USMV from fourth to
+second, taking target capital from QUAL and MTUM. Before the
+March 20 trough, BIL remains approximately 53% in both accounts;
+there are no trough-day orders or fees. Top-choice agreement
+therefore does not imply identical portfolio risk.
+
+All four five-year worst-DD episodes run
+**2026-01-29--2026-03-30**, with **zero orders and zero fees
+throughout each episode**. At the preceding March 27 close,
+five-year-base USMV weights are approximately 9.79% under activity
+and 4.91% under price; QUAL is approximately 4.74% versus 9.50%.
+The corresponding stress weights are about 10.06% versus 5.04%
+USMV and 4.83% versus 9.67% QUAL.
+
+The latest known February 27 target pair still shows USMV/QUAL
+redistribution, but **it is not a new fill during this episode**.
+The existing position mix and its price evolution, rather than
+within-episode trades, accompany the lower drawdown. No strict
+15% breach is found in any of the eight accounts, consistently
+with the retained primary metrics.
+
+Actual execution-date partitions explain the dollar-cost differences:
+
+| Path | Shared dates | Activity-only dates | Price-only dates | Shared-date cost change | Activity-only cost | Removed price-only cost | Total change USD |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| 10y base | 93 | 6 | 4 | -0.83 | +44.12 | -29.80 | +13.50 |
+| 10y stress | 94 | 6 | 4 | -3.07 | +60.20 | -37.76 | +19.37 |
+| 5y base | 48 | 2 | 2 | +0.31 | +14.25 | -14.14 | +0.42 |
+| 5y stress | 48 | 2 | 2 | +0.11 | +18.34 | -17.23 | +1.21 |
+
+Unrounded values reconcile exactly within the retained numerical
+accounting tolerance. Displayed components are rounded separately;
+totals use the unrounded values. Shared-date order counts are identical:
+622/629/324/324. The ten-year exclusive-date sets contain 39
+activity tickets versus 27 price tickets, producing 12 extra orders.
+Both five-year exclusive-date sets contain 13 tickets, leaving the
+total order counts unchanged.
+
+Total dollar cost is not the same measure as fee contribution to
+each account's return. Five-year-base/stress normalized log-linked
+fee differences are slightly positive, approximately 0.000227 and
+0.000245, despite higher total dollar invoices. Their dates, prior
+NAV and log-linking weights differ. The ten-year fee terms are
+negative. None of these terms can simply be removed to claim a
+valid fee-free counterfactual or passing CAGR.
+
+The ten-year QQQ shortfall remains concentrated in the early
+2016-10-06--2021-10-05 segment:
+
+| Method/path | Early QQQ log gap | Later same-account gap | Full ten-year gap |
+|---|---:|---:|---:|
+| Price base | -0.533614 | +0.184772 | -0.348842 |
+| Activity base | -0.535517 | +0.181603 | -0.353914 |
+| Price stress | -0.549995 | +0.155052 | -0.394943 |
+| Activity stress | -0.550971 | +0.152142 | -0.398828 |
+
+These additive log-wealth gaps are not CAGR percentage points.
+The separately funded five-year accounts are not substituted for
+the latter half of the ten-year accounts.
+
+The private diagnostic SHA256 is
+`ea703a99cc399ff72a4680f473042db3de2892ee6f1ef55b109de82c9dfb2560`.
+All 85 direct references, the old ledger and 263 journal events
+remain unchanged. There are zero new strategy trials, source
+requests or selected parameters, and both original joint
+rejections remain in place.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,

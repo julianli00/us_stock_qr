@@ -1048,6 +1048,26 @@ Current totals are **23 registered, 22 completed/reviewed, one
 retained technical failure, zero pending, 88 funded paths,
 200 combined completions and zero qualifiers**.
 
+The saved-only ranking diagnosis finds **109 different complete
+rankings out of 128 month ends**, but only 58 different top choices.
+Activity weighting shifts average target capital away from MTUM
+and QUAL toward USMV and VLUE. The paired full-window accounting
+shows negative incremental MTUM/QUAL log-return terms and
+positive USMV/VLUE terms in all four paths; this is not causal alpha.
+
+All four five-year accounts have their worst drawdown over
+**2026-01-29--2026-03-30**, with **no orders or fees during that
+interval**. The activity portfolios already hold more USMV and
+less QUAL, so the lower drawdown must not be presented as a new
+February trade or successful within-episode timing.
+
+Shared-date ticket counts are identical in every pair. Different
+execution dates explain the extra ten-year tickets. In five-year
+paths, slightly higher total dollar fees coexist with a slightly
+positive normalized fee-return difference because payment dates
+and each account's prior NAV differ. These measures are not
+interchangeable; the full strategy result remains rejected.
+
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
 
