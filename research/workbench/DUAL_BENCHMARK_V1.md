@@ -4464,6 +4464,149 @@ holdings, strict drawdown breaches and costs, without
 recalculating primary signals/accounts or changing the direction,
 window, odds law, stock floor or acceptance gates.
 
+### Saved VXN share, risk and execution diagnosis
+
+The saved-only follow-up completed at
+**2026-10-29T11:38:13.754271Z**. It binds 89 direct input
+references, the frozen source closure, all 122 information
+audits and eight existing accounts. The four parent full-window
+descriptions are reused from their completed diagnosis, not
+recomputed by its historical main. No new source, ratio,
+target, account or strategy trial is created.
+
+The recorded SOXX fraction of stock capital exceeds the
+parent's fixed half allocation in **101/122 months**, is lower
+in 21 and is never exactly equal. Its minimum, median, mean and
+maximum are **40.9474%, 54.6091%, 54.7940% and 69.7496%**.
+These are observed historical values, **not new caps or
+parameters**.
+
+Average intended NAV weights across those prepared months are:
+
+| Target component | Equal-core HMM | VXN relative allocation |
+|---|---:|---:|
+| SOXX | 34.517198% | 37.914216% |
+| Four-style core | 34.517198% | 31.120180% |
+| All stocks | 69.034396% | 69.034396% |
+| BIL | 28.965604% | 28.965604% |
+| Idle target cash | 2% | 2% |
+
+The mean SOXX NAV allocation increases by **3.397018 percentage
+points**, despite an unchanged total stock budget. A mean
+fraction of stock capital is not a mean NAV weight.
+Actual full-window mean closing SOXX weights also rise, from
+34.8167%/34.7000% to 38.1847%/38.1725% in ten-year
+base/stress, and from 31.5710%/31.5025% to
+34.3671%/34.3107% in five-year base/stress.
+
+Both ten-year paths first strictly exceed 15% drawdown on
+**2018-10-29**, also their maximum-drawdown trough. Their peak
+is 2018-09-04. The last known monthly information is
+**2018-09-28**, not the breach day's close: recorded normalized
+SPX and NDX uncertainty measures are about 4.282854 and 2.005210,
+giving SOXX **68.110855% of the stock budget**. Total intended
+stock capital is still 97.303170% of NAV in both models, but the
+SOXX target is 66.274021% rather than 48.651585%.
+
+| Ten-year path | Parent SOXX NAV weight at prior close | Candidate SOXX NAV weight at prior close | Parent DD on the same breach day | Candidate DD |
+|---|---:|---:|---:|---:|
+| Base | 45.807156% | 64.336405% | 13.437507% | 15.013448% |
+| Stress | 45.554897% | 64.394940% | 13.452084% | 15.078130% |
+
+The prior close is 2018-10-26. On the breach day both models
+have **zero orders, zero fees and no already issued pending
+request**. This points to an existing concentrated holding path,
+not a same-day new fill or fee. It does not erase the fees paid
+earlier in the drawdown interval or create a fee-free counterfactual.
+In particular, the parent's stress drawdown **on that day** is
+13.452084%; its own worst drawdown occurs later in January2022
+and must not be substituted as a same-day comparison.
+
+All four candidate maximum-drawdown episodes remain in scope:
+
+| Path | Actual peak | Actual trough | Maximum DD | Orders during peak-to-trough returns | Fees during interval USD |
+|---|---|---|---:|---:|---:|
+| 10y base | 2018-09-04 | 2018-10-29 | 15.013448% | 6 | 7.90 |
+| 10y stress | 2018-09-04 | 2018-10-29 | 15.078130% | 12 | 23.65 |
+| 5y base | 2022-01-03 | 2022-10-14 | 12.713610% | 42 | 53.10 |
+| 5y stress | 2021-11-19 | 2022-01-27 | 14.765371% | 12 | 67.61 |
+
+The ten-year episodes contain actual SOXX price/holding PnL of
+approximately **-1,858.07 / -1,780.21 USD**, compared with
+four-style PnL of -358.73/-346.40 USD. The saved per-asset,
+fee and NAV identities reconcile without changing the initial
+USD10,000 peak convention.
+
+The five-year accounts are important counter-contexts, not
+discarded non-breaches. At the five-year-base trough, prior
+candidate BIL is about **77.1633% of NAV** and SOXX **9.9525%**,
+below the parent's SOXX 10.1259%. The candidate nevertheless
+has the greater drawdown; its earlier path and its own peak
+matter. At the five-year-stress trough, SOXX is 43.1979% versus
+37.0967% in the parent. Both five-year first-breach fields remain
+null, and all four trough days have no new order, fee or pending
+request. These observations do not imply that one current
+weight or a retrospectively chosen date filter explains every
+path.
+
+Actual requests also increase:
+
+| Path | Parent issued requests | Candidate issued requests | Added candidate-only dates | Avoided parent-only dates | Shared-date fee increase USD | Total fee increase USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 80 | 101 | 22 | 1 | 15.31 | 169.38 |
+| 10y stress | 81 | 101 | 21 | 1 | 62.62 | 288.47 |
+| 5y base | 40 | 51 | 11 | 0 | 3.39 | 75.48 |
+| 5y stress | 39 | 49 | 10 | 0 | 8.66 | 91.74 |
+
+Every issued request has an actual nonzero model-order date in
+these saved accounts; unissued hold clocks are not fills.
+Shared execution dates have equal ticket counts **on each date**,
+not merely in aggregate. Thus the shared-date fee increases
+reflect different traded notional at the same scenario's rates,
+in addition to costs from extra execution dates. Neither
+equal target budgets nor equal clock rules imply equal holdings
+or wealth paths.
+
+Full-window candidate-minus-parent accounting in log-return units:
+
+| Path | Actual net log gap | SOXX price/holding component | Four-style component | Fee component | BIL component |
+|---|---:|---:|---:|---:|---:|
+| 10y base | +0.019858936 | +0.064733802 | -0.036623159 | -0.007945443 | -0.000306263 |
+| 10y stress | +0.012904323 | +0.064922110 | -0.038019275 | -0.013404897 | -0.000593615 |
+| 5y base | +0.022393871 | +0.039258809 | -0.011261798 | -0.005369426 | -0.000233714 |
+| 5y stress | +0.011940074 | +0.028742949 | -0.009360446 | -0.006915090 | -0.000527340 |
+
+GLD contributes zero. Positive SOXX contributions outweigh the
+negative core, fee and BIL components in each actual pair.
+This records a growth/exposure/implementation tradeoff, not
+independent forecasting alpha, a Sharpe decomposition,
+CAGR percentage points or a valid zero-cost portfolio.
+Displayed components are rounded independently; exact checks
+use retained full precision.
+
+Fixed chronological halves of the ten-year accounts also retain
+the benchmark shortfall:
+
+| Ten-year case | Candidate early-half QQQ log gap | Candidate late-half QQQ log gap | Candidate full QQQ log gap |
+|---|---:|---:|---:|
+| Base | -0.285430650 | +0.190496755 | -0.094933895 |
+| Stress | -0.290481984 | +0.073395494 | -0.217086490 |
+
+The early interval is 2016-10-06--2021-10-05 and the late
+interval is 2021-10-06--2026-10-05. Early gaps are slightly
+worse than the parent; late gaps improve but do not erase the
+earlier deficit. These are segments of the actual carried
+ten-year account, not fresh five-year accounts.
+
+Maximum diagnostic NAV/cash identity errors are
+`2.000888343900442e-11` / `1.5518253349000588e-11` USD;
+maximum log-link reconciliation error is
+`2.7824964554667986e-15`. The strict rejection and all 321 journal
+events remain. Counts stay **28 registered, 27 completed,
+one original technical failure, 108 funded paths, 205 combined
+completions and zero qualifiers**. No direction, window, cap,
+stock floor, execution rule or acceptance gate is changed.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,

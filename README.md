@@ -1270,6 +1270,18 @@ Current totals are **28 registered, 27 completed/reviewed,
 one original technical failure, zero pending, 108 funded paths,
 205 combined completions and zero qualifiers**.
 
+The [saved share/risk diagnosis](research/workbench/DUAL_BENCHMARK_V1.md#saved-vxn-share-risk-and-execution-diagnosis)
+adds no trial. Both ten-year first drawdown breaches occur on
+**2018-10-29**. The previously known target gives SOXX 68.11%
+of stock capital; prior actual SOXX holdings are about 64.3%
+of NAV versus 45.6%--45.8% in the parent. There is no new order,
+fee or pending request on the breach day.
+This is not a universal current-exposure explanation: the
+five-year-base worst drawdown occurs with about 77% BIL and
+SOXX already below the parent's weight. All eight saved accounts
+and four paired comparisons are retained; no window, share cap
+or acceptance gate is adjusted.
+
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
 
