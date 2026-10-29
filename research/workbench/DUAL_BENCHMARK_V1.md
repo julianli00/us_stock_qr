@@ -2995,6 +2995,88 @@ labels, execution-partition conservation, unexplained fees and
 initial/running peaks. No new strategy evaluation, source request,
 parameter choice or independent-alpha claim is added.
 
+## DBC role and provenance review: no new asset admission
+
+The next investigated question was whether direct commodity
+exposure could diversify gold risk while keeping the core-equity
+and BIL budgets, rather than weakening those budgets through
+another VVIX confirmation condition. DBC is already present in
+old macro/TAA universes. This review therefore claims neither a
+new asset discovery nor new evidence from replaying those models.
+The earlier producer-routing study used XLE/XLB equity, which is
+not the same economic exposure as commodity futures.
+
+The existing source was located at
+`data/factor-round-20261007/base`, not the old CLI's unused
+`data/dual-horizon/market` default. Its manifest, `DBC.csv` and
+`raw/DBC.json` hashes match the preserved allocation registration.
+There are **4,214 archived rows from 2010-01-04 through
+2026-10-05**, with the original 2026-10-06 acquisition time.
+Only identity, schema, date bounds and provenance were inspected;
+no new full-source/13-asset adapter or strategy evaluation occurred.
+No market quotes were requested.
+
+### Actual documents, not search-summary labels
+
+Search summaries mixed newer dates with older or mismatched
+document URLs. The first accessible issuer PDF was actually a
+**2020 Form 10-K**, not a 2026 prospectus. A canonical-looking fact
+sheet link returned HTTP200 **HTML Country Splash**, not a PDF.
+That response and failed format check remain recorded. No country
+or investor-status assertion, audience acceptance, cookie change,
+user-agent switch or transport workaround was used.
+
+The [issuer's commodity page](https://www.invesco.com/us/en/solutions/invesco-etfs/commodity-investing.html)
+separately and explicitly links the [DBC legal prospectus](https://pex.broadridge.com/summary.asp?doctype=pros&cid=invesco&fid=46138B103).
+This is a different publicly offered legal document, not an alternate
+copy of the gated marketing fact sheet. Its literal download link
+returned the **2026-08-26 prospectus with a 2026-10-21 supplement**,
+without an identity declaration. Raw documents, headers and
+ephemeral download keys remain private.
+
+The current prospectus identifies a Delaware statutory trust and
+commodity pool, not a 1940 Act investment company. Its strategy
+uses commodity futures linked to an excess-return index plus
+collateral income, net of fund expenses. It is not a physical
+commodity spot-return basket; index performance tables are not
+substituted for the actual fund's adjusted-price history.
+
+### Admission boundary
+
+The prospectus says the fund does not borrow from lenders to pursue
+its investment objective, but also discloses futures-margin leverage
+risk. Its dated allocation table reports:
+
+| Reported item | Date | Disclosure |
+|---|---|---:|
+| Futures-contract allocation, based on notional values | 2026-05-31 | 102.65% |
+| NAV posted as futures collateral | 2026-05-31 | Approximately 9% |
+| Index methodology change | 2025-11-10 | Prior index history could differ under the revised method |
+
+Notional allocation and posted margin are distinct quantities.
+Neither a no-borrowing statement nor paying cash for exchange-traded
+shares independently proves a fixed unleveraged underlying exposure.
+The single dated allocation is **not** adopted as a constant 1.0265
+factor, used to rescale history, or treated as complete historical
+notional evidence. Nor is a fixed 14-commodity basket assumed across
+the original windows.
+
+The conservative decision is **no admission to the proposed new
+strict-1x study at this stage**: the required asset-role mapping has
+not been established. This does not declare all DBC history invalid
+or classify the product as permanently 2x, and it does not rewrite
+the old macro/TAA records. No allocation rule, weights, 13-asset
+panel, new candidate or account is created.
+
+The [sanitized role-review evidence](evidence/dbc_asset_role_review_20261029_v1.json)
+records completion at **2026-10-29T02:00:33.259933Z**. Nineteen
+bound references, the original ledger and 228 SSD journal events
+remain unchanged. There are zero new strategy evaluations, and
+the existing 20/19/1 registration/completion/technical-failure counts,
+76 funded paths, 197 combined completions and zero qualifiers
+are preserved. Another independently supported research question
+must respect the same source, exposure and financial gates.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,

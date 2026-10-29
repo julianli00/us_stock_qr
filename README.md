@@ -903,6 +903,25 @@ dates**, not only on additional trade days. The analysis reads saved
 accounts and does not change the rejection, add trials or claim
 causal alpha.
 
+The subsequent [DBC asset-role review](research/workbench/evidence/dbc_asset_role_review_20261029_v1.json)
+does **not admit DBC to a new strict-1x portfolio extension**.
+Its 4,214-row historical archive already existed in earlier
+macro/TAA research and remains unchanged; this is not a new ticker
+discovery or a rerun of those strategies. The proposed question was
+direct-commodity diversification of gold risk while preserving
+core-equity and BIL budgets, not another VVIX parameter change.
+
+The actual issuer-linked 2026 prospectus reports a dated futures
+notional allocation of 102.65%, approximately 9% of NAV posted as
+collateral, and an index-methodology change effective 2025-11-10.
+These are different measures, not a constant leverage factor.
+The no-borrowing disclosure and full payment for fund shares do not
+by themselves establish the required derivative-exposure mapping.
+No 1.0/1.0265 multiplier, new 13-asset panel, portfolio weights or
+historical notional reconstruction is adopted. Old DBC research is
+not reclassified, and the review does not label every DBC holding
+as a 2x product.
+
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
 

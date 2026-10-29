@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-29",
-  "phase": "vvix_saved_guard_diagnosis_complete",
-  "active_research_focus": "released_defense_with_more_budget_switches_and_higher_execution_costs",
+  "phase": "dbc_asset_role_review_complete_not_admitted",
+  "active_research_focus": "asset_exposure_mapping_before_defensive_universe_extension",
   "research_dashboard": {
     "server": "src/us_quant/research_dashboard.py",
     "frontend": "web/research/index.html",
@@ -18,6 +18,20 @@
     "native_continuation_every_minutes": 1,
     "native_continuation_cadence_user_updated_at": "2026-10-28T02:21:04.321Z",
     "cadence_does_not_authorize_parallel_jobs_or_repeated_downloads": true,
+    "dbc_asset_role_review": {
+      "evidence": "research/workbench/evidence/dbc_asset_role_review_20261029_v1.json",
+      "sha256": "53eeb7ac6b5980ef3009231080cee22c6950e2b2774bdcfa8c038739f075381d",
+      "status": "review_complete_not_admitted_to_new_strict_1x_study",
+      "archived_price_rows_preserved": 4214,
+      "current_prospectus_date": "2026-08-26",
+      "supplement_date": "2026-10-21",
+      "asset_role_admitted": false,
+      "constant_1x_mapping_established": false,
+      "new_13_asset_panel_prepared": false,
+      "old_DBC_trials_reclassified": false,
+      "new_market_quote_requests": 0,
+      "new_strategy_evaluations": 0
+    },
     "vvix_source_readiness": {
       "evidence": "research/workbench/evidence/vvix_input_readiness_20261028_v1.json",
       "sha256": "96447321e96364992ce0f1e38d280fc4893d47090360c73f1669830554503d11",
@@ -815,13 +829,13 @@
   ],
   "next": [
     "Preserve20registered SSD configurations:19completed/reviewed overall rejections,1retained terminal preparation failure,0pending,76funded paths,197combined completions and0qualifiers. Oldaccounts,source/diagnostic evidence,six-slot history andrawinputs remain unchanged/private.",
-    "SavedVVIX/donor15diagnosis completed2026-10-29T00:55:35.383512Z,85refs/228events unchanged,0newtrials.39guardreleases raise meanmonth-endnonBILtarget14.5878pp(stock8.3131/gold6.2747);budgetswitches33->44. Allfirstbreaches followreleaseddollar-halfguards:10ybase2022Sep20/5ybaseSep15 useAug31decision;bothstressJul5useJun30. NewpriorBIL0 versusdonor49-51%;same-daydonorDD8.64-9.15% versusnew15%+. Basehasno pending/orders/fees;stressJun30requestsfillJul5atfullnonBILbudget,notanunfilledprotectiveexit. Sharedexecutiondates alsoincreasefees/turnover;5yfewerorders butlargermeanUSDnotional. Goldincrementalpairedlogtermpositive,BIL/feesnegativeall4,notcausalorCAGRpoints. Select genuinely newquestion,notwindow/sign/threshold/scale/bandrescue;no newmodelselected.",
+    "DBCrole/provenance review complete2026-10-29T02:00:33.259933Z butnewstrict1xassetmappingNOTestablished. Existing4214-rowarchive retained,noquotes/13assetpanel/strategy. CurrentissuerlinkedAug26-2026prospectus+Oct21supplement reportsMay31futuresnotionalallocation102.65%and~9%NAVmargin;no-borrowingtext orcashfundedshares aloneisnotcompleteunderlyingexposureproof. No constant1.0/1.0265factoradopted,oldDBCmacro/TAArecords unchanged. MethodchangeNov10-2025 meansnofixed14-basketassumption. Fact-sheetURLreturnedCountrySplashHTML;noaudience/countrydeclarationoraccessbypass. Publishrolelimits,thenanotherindependentlysupportedquestion,notVVIX/DBCparameterrescue.",
     "Continue economically motivated, preregistered independent small batches without ordinary per-batch approval or a configuration-count ceiling until2026-10-31T15:59Z. Use one computation; at cutoff preserve partial work, clear only the SSD session timer and confirm absence.",
     "Keep old source refusals, VIG/SDY terminal429 and prospective/PIT gates. The independent market-only IBKR adapter is proved, but the one actual probe stopped on2157 before historical requests;0history rows/admissions,no automatic retry or inferred entitlement denial. Default readonly account synchronization remains prohibited."
   ],
   "next_zh": [
     "保留SSD20项已登记配置：19项完成审阅并整体拒绝、1项原准备终止失败、0待评估、76条资金路径、合计197项完成、0通过。原账户、来源/诊断证据、历史六配置和原始私有输入全部保留。",
-    "2026-10-29T00:55:35.383512Z完成已存VVIX/父模型诊断，85引用/228事件不变、0新试验。39次防御释放令月末非BIL预算均值+14.5878个百分点(股票8.3131/黄金6.2747)，预算切换33->44。全部首次越界均对应已取消的美元半仓：十年基础2022Sep20/五年基础Sep15对应Aug31，两压力Jul5对应Jun30。新模型前收盘BIL0、父模型49-51%；同期父DD8.64-9.15%、新模型15%以上。基础无待执行/当日单费；压力Jun30请求在Jul5按全非BIL预算成交，不是未完成的保护性退出。相同执行日也增费/换手，五年虽少单但单均美元成交额更大。全窗口相对父模型的对数黄金增量为正，BIL/费用均负，不是因果alpha或CAGR点。下一步须有新经济问题，不调窗口/方向/阈值/缩放/带宽救回；未选新模型。",
+    "2026-10-29T02:00:33.259933Z完成DBC资产角色/来源核对，但未建立新严格1x研究所需映射。原4214行缓存保留，0新行情/13资产面板/策略。发行人公开链接的2026Aug26招募书及Oct21补充文件披露May31期货名义配置102.65%、约9%NAV作保证金；不向贷款人借款或全额买入基金份额，不能单独证明底层敞口始终<=1x。未采用恒定1.0/1.0265因子，旧DBC宏观/TAA记录不改。方法2025Nov10变更，不假定全历史固定14商品篮子。事实页实际返回CountrySplashHTML，未代确认身份/地区或绕门。先发布边界，再转向独立有据问题，不调VVIX/DBC参数救回。",
     "持续开展有经济理由、事前冻结的独立小批次，无普通逐批确认或配置次数上限，截止2026-10-31T15:59Z；单计算job，届时保存未完状态、只清除SSD会话timer并确认不存在。",
     "原拒绝来源、VIG/SDY终止429和前瞻/PIT门保持。独立IBKR market-only适配器已证明，但唯一真实探针在历史请求前因2157停止；历史行/准入0，不自动重试或推断订阅拒绝，仍禁止默认readonly账户同步。"
   ],

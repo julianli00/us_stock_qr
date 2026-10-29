@@ -1,0 +1,88 @@
+{
+  "access_limits": {
+    "country_or_investor_declaration_made": false,
+    "fact_sheet_response": "HTTP200HTMLCountrySplash,notPDF",
+    "gated_fact_sheet_admitted": false,
+    "issuer_linked_legal_prospectus_accessible_without_declaration": true,
+    "unverified_search_dates_IDs_and_SEC_links_not_used": true
+  },
+  "admission_decision": {
+    "13_asset_panel_prepared": false,
+    "DBC_asset_role_admitted": false,
+    "all_DBC_history_classified_as_2x_or_invalid": false,
+    "constant_1x_mapping_established": false,
+    "new_candidate_or_weight_selected": false,
+    "no_borrowing_or_cashfunded_shares_is_not_full_derivative_exposure_proof": true,
+    "notional_history_reconstructed": false,
+    "old_DBC_trials_or_data_reclassified": false,
+    "one_date_allocation_used_to_rescale_history": false
+  },
+  "archived_source": {
+    "CSV": {
+      "path": "data/factor-round-20261007/base/DBC.csv",
+      "sha256": "37fa61a9e093b5be390c65578377481299b63199002447ac83448a169756eeb8"
+    },
+    "columns": [
+      "date",
+      "open",
+      "high",
+      "low",
+      "close",
+      "volume",
+      "adj_close",
+      "adj_open"
+    ],
+    "current_adapter_or_full_source_revalidation_performed": false,
+    "first_date": "2010-01-04",
+    "last_date": "2026-10-05",
+    "original_retrieved_at": "2026-10-06T05:16:59.178433+00:00",
+    "raw_response": {
+      "path": "data/factor-round-20261007/base/raw/DBC.json",
+      "sha256": "280178e8f91df611bf2223596b9e8d1bd30d694d005791eb100eff15058236e1"
+    },
+    "rows": 4214
+  },
+  "direct_input_refs_unchanged": 19,
+  "investment_objective_verified": false,
+  "issuer_evidence": {
+    "current_document": {
+      "path": "data/ssd-dbc-source-20261029-v1/DBC-linked-current-prospectus.pdf",
+      "sha256": "9f8a407cd55ef256c5b68dec1401231588bcd047df53502cb1ce5d9194b10896"
+    },
+    "dated_notional_allocation_table": {
+      "date": "2026-05-31",
+      "interpretation": "Distinct reportedmeasures;neitheris adoptedas aconstantportfolioleveragefactor orfullhistoricalnotionalproof.",
+      "reported_NAV_posted_as_collateral_approx_percent": "9",
+      "reported_futures_contracts_allocation_percent": "102.65"
+    },
+    "debt_borrowing_for_investment_objective_disclosed_false": true,
+    "fixed_14_commodity_history_assumed": false,
+    "futures_margin_leverage_risk_disclosed": true,
+    "index_role": "Commodity futures excess-return index plus fundcollateralincome lessfees;not physicalcommodityspotreturns",
+    "issuer_link_page": "https://www.invesco.com/us/en/solutions/invesco-etfs/commodity-investing.html",
+    "issuer_linked_prospectus_page": "https://pex.broadridge.com/summary.asp?doctype=pros&cid=invesco&fid=46138B103",
+    "legal_structure": "Delaware statutory trust / commodity pool,not a1940Act investmentcompany",
+    "methodology_change_effective": "2025-11-10",
+    "old_document": {
+      "path": "data/ssd-dbc-source-20261029-v1/Invesco-DBC-document.pdf",
+      "sha256": "884dc6a7757ef47d29cd338755e33f07d7f216fe66177fb3a283510b16f91879"
+    },
+    "old_document_type": "2020 Form10-K",
+    "prospectus_date": "2026-08-26",
+    "supplement_date": "2026-10-21"
+  },
+  "journal_events_unchanged": 228,
+  "new_market_quote_requests": 0,
+  "new_strategy_evaluations": 0,
+  "old_accounts_or_source_pipelines_replayed": false,
+  "order_authority": false,
+  "private_full_review": {
+    "path": "data/ssd-dbc-source-20261029-v1/asset-role-review-v1.json",
+    "sha256": "20000d5900239595eabf4e93e44556b39f6ddf77ef2e2e9008e5a9e9e2f7c211"
+  },
+  "raw_prices_documents_and_headers_published": false,
+  "reviewed_at": "2026-10-29T02:00:33.259933+00:00",
+  "schema_version": 1,
+  "status": "review_complete_not_admitted_to_new_strict_1x_study",
+  "study_id": "ssd_dbc_asset_role_review_20261029_v1"
+}
