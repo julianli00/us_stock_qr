@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_expert_master_protection_20261029_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "prior_completed_configurations": 211,
+  "prior_new_registered_candidates": 36,
+  "prior_new_completed_strategy_evaluations": 33,
+  "prior_new_technical_failures": 3,
+  "prior_journal_sequence": 397,
+  "prior_journal_head_sha256": "c504d803b5d630f9ccb994fc0a613a213acd123a2d888d042f88743f2d37b613",
+  "source_registration": {
+    "path": "evidence/four_expert_meta_20261029_registration_v1.json",
+    "sha256": "4e84ee5908ab8046f615dc0f6918aeef73aa9207c95bf58a38876c01c270fcfe"
+  },
+  "source_results": {
+    "path": "evidence/four_expert_meta_20261029_results_v1.json",
+    "sha256": "ee877c74e586fa56bd6ed66e79c654ec56980d445ea47af5f3b59ac86ebdcabe"
+  },
+  "motivation_saved_diagnosis": {
+    "path": "reports/ssd-continuous-research-v1/four-expert-meta-20261029-v1/saved-feedback-selection-risk-v1.json",
+    "sha256": "493ea6a5b974372247ac8f02e4c9f58c1a456b828526f2ef1f811383e4a5b5de"
+  },
+  "nominal_sources": {
+    "expert_pool_four_equal_weight_v1": {
+      "path": "data/ssd-four-expert-meta-20261029-v1/expert_pool_four_equal_weight_v1/targets.csv",
+      "sha256": "5635ac90a27746d3fa5d58d5af54aeb3ab70638ca728277174814dcc88ed2ec2"
+    },
+    "expert_pool_four_rolling_pair_v1": {
+      "path": "data/ssd-four-expert-meta-20261029-v1/expert_pool_four_rolling_pair_v1/targets.csv",
+      "sha256": "80f62c3b27436d1767655f85714e50308592e8e2ec3189a2f3b1d7d2fd153515"
+    }
+  },
+  "master_initial_capital_usd": 10000.0,
+  "ratchet_floor_fraction": 0.85,
+  "drawdown_target": 0.15,
+  "actual_weight_trade_band": 0.025,
+  "cash_reserve": 0.02,
+  "invested_target_budget": 0.98,
+  "commission_per_order": 1.0,
+  "feedback_clock": "each_actual_main_account_close",
+  "nominal_clock": "unchanged_initial_seed_then_completed_exchange_month_ends",
+  "pending_request_rule": "one_pending_request_never_overwritten",
+  "monthly_update_forces_order_without_band": false,
+  "final_issued_targets_precomputed_before_accounts": false,
+  "new_economic_factor_definitions": 0,
+  "new_shadow_account_runs": 0,
+  "new_source_requests": 0,
+  "minimum_economic_factor_families": 3,
+  "candidate_count_in_this_study": 2,
+  "study_size_is_a_total_research_quota": false,
+  "candidates": [
+    {
+      "id": "expert_pool_four_equal_master_protection_v1",
+      "source_candidate_id": "expert_pool_four_equal_weight_v1"
+    },
+    {
+      "id": "expert_pool_four_rolling_master_protection_v1",
+      "source_candidate_id": "expert_pool_four_rolling_pair_v1"
+    }
+  ],
+  "methodology": {
+    "question": "Can the original ratchet law applied after complete strategy-expert aggregation to the actual main account's own net wealth change the observed failure of source-shadow protection to control that account? Compare both fixed equal and rolling four-expert intentions with their preserved unprotected books.",
+    "prior_art": "Reuse the unchanged semiconductor protected_target law, itself using growth_portfolio_protection.protect_target. The existing growth and semiconductor floor studies and their financial failures remain. This is not a new factor, first discovery of CPPI, new protection coefficient or a return-law refit.",
+    "expert_composition": "Reuse both exact previously registered nominal target matrices and saved causal126/84/42/k2 assessment. Do not rerun scores, experts, fits, source target builders or old main accounts. The four mechanism representatives and the specialist's own internal shadow protection remain unchanged; nested specialist and master protection is not a fifth independent expert.",
+    "master_state": "Each original10y/5y/base-stress path starts freshUSD10000,zero units,and an initialUSD10000peak. After each actual close,including execution costs,update only this path's observed peak. Apply the original85%ratchet/15%wealth-cushion law to the complete latest known nominal target. Never import an expert's shadow NAV,peak,costs or return guarantee.",
+    "allocation": "Scale every non-BIL nominal asset by the original clipped wealth-cushion factor and add every removed weight to actualBIL,retaining existing nominalBIL and the98%ETFtarget. No upward leverage,shorting,synthetic cash return or new instrument. Underlying assets remain one unified cash-funded account,not capitalized expert books.",
+    "requests": "The initial request uses the actual known prewindow nominal intent. At each subsequent close,inspect the protected target against actual closing weights using the original2.5percentage-point band with its numerical comparison tolerance. Issue only if no request is pending and the band is reached; a source month end does not force a below-band order. Never overwrite a pending target. Month-end nominal updates remain known while pending;at the next eligible close recompute protection from then-actual main wealth. The original1/2session delayed-open executions and costs remain.",
+    "causal_registration": "Before any new funded outcome,register the policy,code,validation and reused nominal input bytes with an explicit closed-loop transition proof. The public target_proof targets field denotes only the old nominal expert mix. Actual issued targets depend on this path's future realized state and are generated once with that funded path after publication,then independently verified and archived. Do not claim they were precomputed or regenerated from old sources.",
+    "independent_checks": "Use a separately written scalar protection/state/request oracle on every recorded close and an independentBT book on actual issued targets. Synthetic prefix truncations and future perturbations check causality before registration;all recorded real states must subsequently match their actual wealth prefixes. Keep every formal return day,initial peak and any unexecuted final pending request;no terminal liquidation.",
+    "controlled_scope": "Daily actual-main feedback plus its inspection clock and single-pending discipline is the new complete policy. Comparisons are not an isolated fee-only,frequency-only or causal protection alpha experiment. Do not scan bands,floors,multipliers,lookbacks,pools,score cutoffs or execution delays.",
+    "limitations": "A classical ratchet is not a future maximum-drawdown guarantee. Gaps,execution lag,holdings bands,costs,source-state mismatch and cash lock-in may violate15%or reduce CAGR and benchmark excess. Existing historical expert/policy selection and all prior211completions are exposed;causal computation is not independentOOS or prospective validation.",
+    "qualification": "Same rule must pass all original10y/5y/base-stress netSharpe>1,CAGR>12%,DD<=15%,matched-cost full-capitalSPYandQQQ plus original stress-vs-base-SPY. OriginalRF,fresh10000,initialpeak,5/20bps,USD1tickets,1/2sessiondelays,long-only1x and actual family participation remain. Report actual turnover,model orders and fees;no invented turnover cap or metric splicing.",
+    "reference": {
+      "title": "Theory of constant proportion portfolio insurance",
+      "authors": "Black and Perold",
+      "year": 1992,
+      "doi": "10.1016/0165-1889(92)90043-e",
+      "reference_scope": "Existing research citation and motivation;not a newly verified exact implementation or net-wealth theorem."
+    },
+    "source_wealth_guarantee_transferred": false,
+    "main_drawdown_guarantee": false,
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

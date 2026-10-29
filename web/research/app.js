@@ -44,6 +44,8 @@ const titles = {
   expert_pool_rolling_pair_execution_v2: "策略专家滚动择优：发布适配修正 v2",
   expert_pool_four_equal_weight_v1: "四专家：加入净值反馈防御的等权对照",
   expert_pool_four_rolling_pair_v1: "四专家：同窗净表现／风险／成本滚动择对",
+  expert_pool_four_equal_master_protection_v1: "四专家等权：主资金净值／峰值保护",
+  expert_pool_four_rolling_master_protection_v1: "四专家滚动：主资金净值／峰值保护",
   semiconductor_option_proxy_dollar_observed_band025: "隐含波动预算 + 美元防御 + 持仓偏差带",
   semiconductor_option_proxy_observed_band025: "隐含波动预算 + 持仓偏差带",
   macro_real_yield_factor_tilt: "实际利率因子倾斜",

@@ -5895,16 +5895,131 @@ one actual diagnostic intent. Frozen strategy code,
 accounts, previous diagnoses and financial technical
 failure counts were not changed.
 
-Both four-expert rules remain rejected, the valid
-defensive expert remains available, and no new pool,
-allocation rule or risk parameter has been selected.
-Current totals remain **36 registrations,33 completed
+At that diagnosis-completion snapshot, both four-expert
+rules remained rejected, the valid defensive expert
+remained available, and no next rule had been selected.
+Totals were **36 registrations,33 completed
 and reviewed, three technical failures, zero pending,
 132 funded paths,211 combined completions and zero
 qualifiers**. Any next expert-layer economic question
 requires its own freeze before outcomes. Exposed
 historical selection remains exposed history, not
 independent forward validation or target completion.
+
+## Actual-main wealth protection after complete expert composition
+
+The [new policy](config/expert-master-protection-v1.json)
+tests whether the original ratchet law applied to the
+combined main account's own net wealth can change the
+failure observed when protection belonged only to an
+expert's shadow state. This is a new application at the
+expert-composition layer, **not** a new economic factor,
+first discovery of CPPI, new floor or fitted multiplier.
+The earlier growth/semiconductor protection failures
+and all four-expert outcomes remain intact.
+
+Two [actual registrations](evidence/expert_master_protection_20261029_registration_v1.json)
+occurred at **2026-10-29T22:20:33.261167Z** and
+**22:20:33.383687Z**:
+`expert_pool_four_equal_master_protection_v1` and
+`expert_pool_four_rolling_master_protection_v1`.
+The code/input freeze intent SHA256 is
+`3ab3b8bbe0c8d5fa1d570019307721ab5d6505c806ba27a204b05eacc7568aed`;
+the registered specification SHA256 is
+`c4ed10476bc126d4e65ac46e8fbf182659accbbc7c1a11d3e69af9084558a6b9`.
+
+The unchanged four experts,126/84/42 assessment, two-expert
+risk weights, ranking and cost proxy are not regenerated.
+The exact previously proved equal/rolling nominal target
+matrices, SHA256`5635ac90...` and`80f62c3b...`, are reused.
+That is source reuse, not a claim that new combined targets
+or scores were generated. No source download, new shadow
+book or original account replay is required.
+
+Each formal main path starts with its own USD10,000,
+zero units and USD10,000 initial peak. After an actual
+close, including actual execution costs, its own closing
+NAV updates its own peak. The unchanged original
+`semiconductor_portfolio_protection.protected_target`
+law scales **all non-BIL nominal assets**, including
+gold or longer Treasury funds, by the clipped cushion
+relative to85% of that main peak and15% of current NAV.
+Every removed target weight moves to actual BIL,
+preserving existing nominal BIL, the98% ETF budget,
+long-only1x and target2% idle cash. An expert's NAV,
+peak, native five-point band or funded wealth is never
+imported into main capital.
+
+Unlike the old monthly master, this policy inspects
+actual main protection **daily** at completed closes.
+It retains the original2.5-percentage-point actual
+holdings band and its numerical tolerance, original
+5/20bps plus USD1 model tickets,1/2-session delayed
+opens, fractional funding, original RF and every formal
+10y/5y return date. Month ends do not force below-band
+orders. There is only one pending request, never
+cancelled or overwritten. A nominal month-end update
+while pending remains the latest known intention;
+the next eligible close evaluates it using then-actual
+main wealth. Final unfilled requests are retained
+without terminal liquidation.
+
+### Frozen transition proof is not a future issued-target matrix
+
+Actual main-state-dependent issued targets cannot be
+precomputed without already running their funded path.
+The [new execution Adapter](src/us_quant/expert_master_protection_v1.py)
+therefore uses the existing small funded-execution
+Interface but separates its fixed nominal input from
+the targets it issues with actual path state.
+The public registration's `target_proof.targets`
+field explicitly denotes only the old nominal source.
+Its `proof_role` binds those bytes and the frozen
+causal transition; `state_contingent_issued_targets_precomputed`
+and `candidate_accounts_or_metrics_computed` are false.
+Proof events follow actual registration and precede
+the packet. No new wealth path was run to manufacture
+an ostensibly pre-account target proof.
+
+The full91 code/policy dependencies,759 inherited
+evidence references and six validation references
+are frozen. The existing explicit-plus-pinned-manifest
+Git-blob verification and a real40-character remote
+publication must precede the actual new publication
+fence and all eight funded paths. No shared guard,
+manifest, old code or approval rule is weakened.
+
+Forty-two offline cases passed before registration,
+including an independent scalar target/state oracle,
+known-close prefix truncations and future perturbations,
+fresh later-account peaks, fourteen-asset conservation,
+pending month-end updates, original-delay independent
+BT and funded replay, final unexecuted requests, gap
+breaches, canonical publication flags and deadline
+failures without new research events. Earlier27- and
+36-case validation artifacts remain separately retained.
+Actual paths must subsequently verify every recorded
+transition against their own actual wealth prefixes
+and independent BT on their actual issued targets.
+
+This is a changed complete policy, not an isolated
+frequency-only, fee-only or causal protection-alpha
+experiment. Nested expert/master protection can
+concentrate BIL, lock in losses or lose benchmark
+excess. Gaps, lag, costs and the holdings band may
+still breach15%. No parameter grid, new floor or
+guaranteed maximum drawdown is claimed. Historical
+selection after211 exposed completions remains
+exposed history, not independent forward validation.
+
+At this registration snapshot, **no new funded path
+has started**. Current totals derived from401 journal
+events are **38 registrations,33 completions/reviews,
+three technical failures, two pending,132 funded
+paths,211 combined completions and zero qualifiers**.
+All eight original financial paths and unchanged
+Sharpe/CAGR/DD/SPY/QQQ/stress-vs-base-SPY gates still
+apply separately to each complete new rule.
 
 ## Independent IBKR price-history source boundary
 

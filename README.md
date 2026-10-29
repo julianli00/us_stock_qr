@@ -1518,7 +1518,7 @@ reducing CAGR. This is useful whole-portfolio evidence, not proof
 of independent defensive alpha or final qualification. No expert
 is discarded solely because the complete combination still fails.
 All eight fresh-capital accounts actually hold six registered
-factor families. Current totals are36 registrations,33 completions,
+factor families. At that completion snapshot, totals were36 registrations,33 completions,
 three technical failures, zero pending,132 paths,211 combined
 completions and zero qualifiers.
 
@@ -1537,6 +1537,27 @@ despite fewer model tickets. These are descriptive accounting
 findings, not a causal rescue or a newly selected allocation rule.
 All rejected outcomes and the **211/0** completion/qualification
 counts remain unchanged.
+
+A new [main-capital protection study is actually registered](research/workbench/evidence/expert_master_protection_20261029_registration_v1.json)
+at **2026-10-29 22:20:33 UTC**, before new funded outcomes.
+Both rules reuse the exact four-expert equal/rolling nominal
+intentions and unchanged protection coefficients, but feed the
+original ratchet law each main account's own realized net NAV
+and peak. Daily main-account inspection and a single immutable
+pending request are explicit new policy behavior, not a transfer
+of source-shadow protection or a repair to old histories.
+
+The [closed-loop registration decision](docs/adr/0002-main-capital-feedback-research.md)
+binds nominal input bytes and the frozen causal transition;
+future state-dependent issued targets are **not precomputed**.
+Forty-two offline checks cover scalar/state causality, fresh
+capital, both independent-BT scenarios, pending requests,
+end-of-window unfilled intentions and possible gap breaches.
+Actual remote publication and the complete dependency fence
+must precede all eight new main paths. At this registration
+snapshot there are38 registrations,33 completions, three
+technical failures, two pending,132 paths,211 combined
+completions and zero qualifiers. No new funded account has run.
 
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
