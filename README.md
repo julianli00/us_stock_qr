@@ -976,6 +976,26 @@ failure, zero pending, 80 funded paths, 198 combined completions
 and zero qualifiers**. No measurement coefficient or window was
 changed to rescue the result.
 
+The saved-only measurement diagnosis finds that all **131** proxy
+values differ from the donor: 77 are higher and 54 lower, while
+the overnight component is identical. Allocation bounds mask
+35 differences—32 shared upper-bound and three shared lower-bound
+targets—but **96 target rows do change**.
+
+The sole 15% breach is ten-year base on **2020-03-20**, with the same
+2020-02-19 peak as the donor. Both accounts still hold approximately
+53% BIL beforehand, with no breach-day orders, fees or pending
+request. Although the newer February 28 target has less equity,
+its January 31 target before the peak had **4.5665 percentage points
+more stock capital**. Current defensive holdings therefore do not
+erase differences in the earlier wealth path.
+
+On shared execution dates, ticket counts are identical in all four
+pairs; net additional tickets come from different execution dates.
+This is not the prior VVIX defense-release mechanism, nor proof that
+breach-day fees caused the drawdown. No strategy was rerun and
+the joint rejection remains unchanged.
+
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
 

@@ -3249,6 +3249,94 @@ scope, but the strategy is rejected. Any next investigation must
 read saved proxy/bound-saturation/holding evidence rather than
 alter this estimator's coefficient, window, costs or acceptance.
 
+### Saved proxy, saturation and holdings diagnosis
+
+A separate saved-only diagnosis completed at
+**2026-10-29T03:58:33.842272Z**. It reads the existing proxy
+audits, target matrices and all four actual account pairs. No
+variance estimator, source collector, target generator, account
+backtest or primary acceptance pipeline is rerun.
+
+All 131 stored proxies change: **77 increase and 54 decrease**.
+The recorded overnight component differs by exactly zero, leaving
+the changed intraday measurement as the intended information
+difference. There are 35 numerically unchanged target rows:
+32 share the upper 70% stock/gold-sleeve boundary and three the
+lower 30% boundary. The other **96 targets differ**; it would be
+incorrect to say that the new information never reaches allocations.
+
+| Source share state | Range share state | Monthly opportunities |
+|---|---|---:|
+| Interior | Interior | 74 |
+| Interior | Lower | 1 |
+| Interior | Upper | 7 |
+| Lower | Interior | 1 |
+| Lower | Lower | 3 |
+| Upper | Interior | 13 |
+| Upper | Upper | 32 |
+
+Other state transitions have zero observations. Classification uses
+the existing `1e-12` numerical identity tolerance, not a change to
+financial acceptance. Mean stock target capital declines only
+**0.1895 percentage points**, but the largest individual target
+asset-weight difference reaches **10.8439 points**. These are
+target-date statistics, not average executed holdings.
+
+Only ten-year base has a first 15% breach, on **2020-03-20**.
+The source and new account share the **2020-02-19** peak, with
+drawdowns of **14.8656% and 15.2083%** respectively. Before
+the breach the source holds 52.9685% BIL and the new account
+52.9182%; both have no order, fee or pending request on that day.
+This is not a replay of the earlier VVIX cash-defense release.
+
+The latest February 28 target puts 0.6654 percentage points less
+stock capital in the new account, while preserving the same
+49% BIL target. However, the latest differing target before the
+common peak was January 31: the range proxy was lower, and
+the new stock target was **4.5665 points higher**. An event-day
+allocation snapshot does not describe the entire peak-to-trough
+wealth path or establish a single causal explanation.
+
+The other three paths have no strict 15% breach. Five-year-base
+maximum DD occurs over 2026-01-29--2026-03-30 with no orders
+or fees in that new-account episode, and its DD is numerically
+the same as the source. Five-year-stress maximum DD instead
+runs 2022-03-29--2022-10-14; its last differing pre-peak target
+on 2022-02-28 had 9.5761 percentage points more stock capital.
+Every account retains its own initial capital and running peak.
+
+Recorded execution-date partitions reconcile the higher costs:
+
+| Path | Shared dates | Range-only dates | Source-only dates | Shared-date cost change | Range-only added cost | Source-only removed cost | Total change USD |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| 10y base | 83 | 12 | 10 | -6.92 | +86.59 | -71.63 | +8.04 |
+| 10y stress | 84 | 13 | 10 | -17.84 | +117.82 | -88.91 | +11.07 |
+| 5y base | 45 | 4 | 3 | +0.52 | +30.09 | -20.70 | +9.91 |
+| 5y stress | 45 | 5 | 3 | +2.75 | +44.47 | -24.86 | +22.36 |
+
+Shared-date ticket counts are identical: 558/565/305/305 for both
+members of each pair. The net 14/21/9/16 added tickets come
+from the exclusive-date sets, not more tickets on common dates.
+In ten-year base the slightly smaller total turnover does not offset
+the fixed-ticket increase. Partition turnover is a full-account sum,
+not an annualized quantity, and the account wealth paths are not
+assumed equal.
+
+Ex-post log-linked differences reconcile to the observed negative
+whole-model log-return gap in every pair. Fee terms are negative
+throughout; the equity and gold terms vary by horizon/scenario.
+For five-year stress the negative fee term exceeds the net gap in
+magnitude, but removing it would not create a valid fee-free
+counterfactual account. Linked terms are not CAGR percentage
+points or causal alpha.
+
+The private diagnostic SHA256 is
+`c5075819c7e431a31351bf9c8decec642f8aa25e65b0aa20e28d1522da8a5ef0`.
+All 88 direct references, 240 journal events and the original ledger
+remain unchanged. The source and candidate stay frozen; there
+are zero new strategy trials, new source requests or selected
+parameters, and the previously reported joint rejection persists.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,
