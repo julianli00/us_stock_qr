@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_overnight_range_product_20261029_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "prior_completed_configurations": 197,
+  "prior_journal_sequence": 228,
+  "prior_journal_head_sha256": "47da54d89093b8897a6c1522e6dfa05f4ae1d5c6429c5e4c528e6a1e2c6eec65",
+  "source_candidate": "dollar_option_two_segment_variation_v1",
+  "source_registration": {
+    "path": "evidence/split_session_variation_20261028_registration_v1.json",
+    "sha256": "8224928553fe932a7615e7203f077b00ec773c41877ce147e55ef002c34a340b"
+  },
+  "source_targets": {
+    "path": "data/ssd-split-session-variation-20261028-v1/dollar_option_two_segment_variation_v1/targets.csv",
+    "sha256": "612a4ca35d4129dcd025e82b4ee4c64e87f750a08c5d4c5cef1f126f3bc7e3e2"
+  },
+  "range_source_readiness": {
+    "path": "evidence/spy_ohlc_range_readiness_20261029_v1.json",
+    "sha256": "b947c0e433f52f78627eea569534b326dd288692acc5f185ad4ece59f4199116"
+  },
+  "range_source_manifest": {
+    "path": "data/ssd-spy-ohlc-range-20261029-v1/manifest.json",
+    "sha256": "44a3576f9a65e1cb074f3d59187954edaf23511c8a05226a877237aa3b5d8d20"
+  },
+  "realized_return_sessions": 21,
+  "annualization_sessions": 252,
+  "monthly_decisions": 131,
+  "intraday_fields": ["open", "high", "low", "close"],
+  "equity_share_min": 0.30,
+  "equity_share_max": 0.70,
+  "growth_share_of_equity": 0.50,
+  "core_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "factor_ids": ["price_momentum", "value_exposure", "quality_exposure", "low_volatility_exposure"],
+  "new_economic_factor_definitions": 0,
+  "cash_reserve": 0.02,
+  "actual_weight_trade_band": 0.025,
+  "candidate_count_in_this_study": 1,
+  "study_size_is_a_total_research_quota": false,
+  "candidates": [
+    {
+      "id": "dollar_option_overnight_range_product_v1",
+      "construction": "unchanged_overnight_square_plus_raw_intraday_range_products"
+    }
+  ],
+  "methodology": {
+    "question": "Can additional actual daily extrema measure intraday movement missed by opening/closing endpoints while preserving the original dollar defense? This is an information-field hypothesis,not another price-window,guard-threshold,stock-bound orasset-admission rescue.",
+    "definition": "For eachof21completed sessions use o=log(adjusted_open)-log(previous_adjusted_close),u=log(raw_high)-log(raw_open),l=log(raw_low)-log(raw_open),c=log(raw_close)-log(raw_open). Define proxy=252*mean(o^2+u*(u-c)+l*(l-c)). The overnight square is retained fromthefifteenthmethod;onlytheintradayendpoint square is replaced. No centering,mixtureweight,temperature orcoefficientgrid.",
+    "units": "Allrawintradayratios come fromthe same archived bar,so a commonpositiveadjustmentfactor cancels. Keepregisteredadjustedopen/close/RF/volume unchanged. Rawhigh/low aredailyvendor extrema,notauthenticatedauction/tickdata. Twenty-oneactualsessions and252annualization stayfixed.",
+    "mathematical_limits": "ForvalidOHLCcontainment the range product is nonnegative. Range-onlyroundtrips canaddinformationwhenopen=close;monotonebarsequences can producezero range contribution. Itneednotexceedtheoldendpointproxy. Zero/nonfinite totalproxy stops theversion ratherthan implyingrisk-freeequity ordefaultweights.",
+    "allocation": "Readexactfrozenfifteenthdesiredtargets,notitsgenerator. PreserveBIL andnonBILbudgetatall131dates. Reuseoldpure equity_share law GVZ*VIX/(GVZ*VIX+proxy) indecimalvolatilityunits withoriginal30-70bounds,halfSOXX/equalfourstyles. Thischangesstock/goldmix,not thedollar-cashguard orfamilydefinitions.",
+    "literature_boundary": "The range-expression form is associatedwith Rogers-Satchell,DOI10.1214/aoap/1177005835. Theordinarypublisherrequest returnedanIncapsula failure andwasnotretriedormirrored. Fullprimarytext/theoremverification isnotclaimed. Thiswholeexplicitcomposite isnotYang-Zhang,fullyunbiasedvariance,high-frequencyquadraticvariation,truevariance-riskpremium orportfolioalpha.",
+    "information_clock": "Allcurrentdailyextrema andclosinginputs areusedonlyafterthecompleted signalday. Originalone/two-sessionlateropenexecution isunchanged;nosame-close trading orprospectivebackfill.",
+    "execution": "FreshUSD10000 for eachfulloriginal10y/5ybase-stresspath,originalRF/initialpeak,5/20bp,USD1tickets,1/2sessiondelayedopens,monthlyobserved0.025band,fractional1xlong-onlycashfunding. Verifynewstoredtargets independentlybeforeaccounts instead ofregeneratingprimarytargets.",
+    "selection": "Onefixedhypothesisafter197exposedcompletedconfigurations. Source-onlychecksandnumericidentitytolerances are notfinancialgatechanges. Keepallsource/market/failure/prioraccountrecords;no newquotes,window/estimatorcoefficientgrid orpost-outcome rescue. Comparewholemodelwithfifteenth andolderlowDDreference.",
+    "primary_full_paper_verified": false,
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

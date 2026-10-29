@@ -1,0 +1,90 @@
+{
+  "admission_scope": "fixed_original_2805_SPY_daily_raw_OHLC_bars_only",
+  "direct_input_refs_unchanged": 17,
+  "intent": {
+    "path": "data/ssd-spy-ohlc-range-20261029-v1/validation-intent.json",
+    "sha256": "da5e0ea53790b5799244a77f67918c6f3651cc476925ca53f80a14d8d35df814"
+  },
+  "investment_objective_verified": false,
+  "new_market_quote_requests": 0,
+  "new_strategy_evaluations": 0,
+  "new_variance_or_strategy_targets_computed": false,
+  "order_authority": false,
+  "original_market": {
+    "close": {
+      "path": "data/sector-growth-prepared-20261011/close.csv",
+      "sha256": "762f7f258684062be17f3f7f91e28b6df1071fdaf2c60fcd69d107932ae12944"
+    },
+    "open": {
+      "path": "data/sector-growth-prepared-20261011/open.csv",
+      "sha256": "f0aa7bf3f417f71343b8901f17803d9cf35e0eddd0d06c61878ab6ea7ea5f568"
+    },
+    "raw_close": {
+      "path": "data/sector-growth-prepared-20261011/raw_close.csv",
+      "sha256": "1d1c39f25326d14a69c9f875e428bb2303b54f823716a5800622f5e24d5783d9"
+    },
+    "risk_free": {
+      "path": "data/sector-growth-prepared-20261011/risk_free.csv",
+      "sha256": "af36e3deb9bf0685553617f6614eacefcd2282b76c0af81404f04669e9f5eef3"
+    },
+    "volume": {
+      "path": "data/sector-growth-prepared-20261011/volume.csv",
+      "sha256": "bf5686211d0f1191b951498d9b1a74c087571fa05adb7aed541104bda6af2a4a"
+    }
+  },
+  "original_source_replaced_or_reclassified": false,
+  "paper_refusal_record": {
+    "path": "data/ssd-spy-ohlc-range-20261029-v1/publisher-refusal-native-event.json",
+    "sha256": "01e72e668271dfdbd3e613d0577db2ebb4504dfa3e24b451c665ecf1d0ed9180"
+  },
+  "primary_paper_full_text_verified": false,
+  "private_manifest": {
+    "path": "data/ssd-spy-ohlc-range-20261029-v1/manifest.json",
+    "sha256": "44a3576f9a65e1cb074f3d59187954edaf23511c8a05226a877237aa3b5d8d20"
+  },
+  "range_bars": {
+    "path": "data/ssd-spy-ohlc-range-20261029-v1/raw-ohlc.csv",
+    "sha256": "92da2c4c3f5ccddb5930fc29004f0637288b8372a911aeecf4df86c0918a77e4"
+  },
+  "raw_prices_or_documents_published": false,
+  "raw_source": {
+    "path": "data/factor-round-20261007/base/raw/SPY.json",
+    "sha256": "f5d04dd9e326dea646c28d1d7eb031bd25e881b1e2a9fbc20441577d92bc3cb4"
+  },
+  "schema_version": 1,
+  "source_CSV": {
+    "path": "data/factor-round-20261007/base/SPY.csv",
+    "sha256": "65796d1b42d116ec9f2962f6a17f0d0d8cb2fd679cf1154994e62a94d61c4c0b"
+  },
+  "source_admitted": true,
+  "source_validation": {
+    "common_adjustment_factor_verified": true,
+    "context_sessions": 2805,
+    "identity_atol": 1e-09,
+    "identity_rtol": 1e-10,
+    "independently_checked_native_fields": 16830,
+    "independently_checked_raw_OHLC_fields": 11220,
+    "maximum_raw_CSV_difference_by_field": {
+      "adj_close": 5e-10,
+      "close": 4.844e-10,
+      "high": 4.844e-10,
+      "low": 4.844e-10,
+      "open": 4.844e-10,
+      "volume": 0.0
+    },
+    "maximum_registered_field_difference": {
+      "close": 1.1368683772161603e-13,
+      "open": 1.1368683772161603e-13,
+      "raw_close": 1.1368683772161603e-13,
+      "volume": 0.0
+    },
+    "new_variance_targets_or_strategy_returns_computed": false,
+    "output_basis": "raw intraday OHLC; common adjustment scale cancels in same-day ratios",
+    "raw_OHLC_containment_verified": true,
+    "registered_open_close_Rf_or_volume_replaced": false,
+    "same_original_price_identity_tolerance": true,
+    "source_gaps_filled_or_original_dates_dropped": false
+  },
+  "study_id": "ssd_spy_ohlc_range_source_20261029_v1",
+  "validated_at": "2026-10-29T02:48:30.695220+00:00"
+}

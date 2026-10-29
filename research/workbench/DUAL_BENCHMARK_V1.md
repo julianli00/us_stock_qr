@@ -3077,6 +3077,109 @@ the existing 20/19/1 registration/completion/technical-failure counts,
 are preserved. Another independently supported research question
 must respect the same source, exposure and financial gates.
 
+## Additional SPY range information: registered, not yet evaluated
+
+[`config/overnight-range-product-v1.json`](config/overnight-range-product-v1.json)
+defines one new information-field hypothesis: use the existing daily
+SPY high and low observations to measure intraday movement that
+opening and closing endpoints alone can miss. It is not a new asset,
+another dollar-defense release rule or a window/coefficient search.
+An annual relative-wealth proposal was not pursued because it
+overlapped the already exposed relative-equity-odds family.
+
+### Source and interpretation boundary
+
+The [range-source evidence](evidence/spy_ohlc_range_readiness_20261029_v1.json)
+binds the old `factor-round-20261007/base/SPY.csv` and raw response
+to the immutable sector-growth market used by the fifteenth model.
+All **2,805 original context sessions**, 11,220 raw OHLC fields and
+5,610 adjustment/volume fields are checked independently.
+Native high/low containment and the common adjustment factor hold.
+
+Maximum JSON/CSV serialization difference is `5e-10` price units;
+maximum difference from the already registered SPY price columns
+is `1.1368683772161603e-13`, with volume exact. These use the
+existing producer's price-identity tolerance, not relaxed investment
+gates. The new sidecar preserves raw intraday O/H/L/C only.
+Original adjusted opens, closes, raw closes, volumes and RF are
+not overwritten, and no date or source gap is filled.
+
+Rogers–Satchell is the bibliographic motivation for the range form,
+DOI `10.1214/aoap/1177005835`. The ordinary primary publisher
+request returned an unsuccessful Incapsula page; it was not
+retried via another endpoint, header or mirror. Full primary-paper
+inspection and theorem replication are not claimed. An AI search
+summary's Yang–Zhang component/weight explanation was not
+accepted as verified formula evidence.
+
+### Explicit frozen proxy
+
+For each of the same 21 completed sessions define:
+
+```text
+o = log(registered adjusted open) - log(previous registered adjusted close)
+u = log(raw high) - log(raw open)
+l = log(raw low) - log(raw open)
+c = log(raw close) - log(raw open)
+range = u * (u - c) + l * (l - c)
+proxy = 252 * mean(o^2 + range)
+```
+
+The noncentered overnight component is retained from the fifteenth
+proxy; only the intraday endpoint square is replaced. Common
+same-day adjustment factors cancel in the raw intraday ratios.
+There is no fitted mixture weight or newly selected lookback.
+Valid OHLC ordering makes the range product nonnegative.
+Range-only excursions can matter when open equals close, while
+monotone bars can have zero range contribution. It is not
+necessarily larger or more conservative than the prior proxy.
+A zero/nonfinite total stops the version, not a default allocation.
+
+This whole composite is **not** Yang–Zhang, a fully unbiased
+day-variance estimator, high-frequency quadratic variation, a
+true variance-risk premium or demonstrated predictive alpha.
+Daily vendor extrema are not authenticated auction/tick records.
+All information is used only after the completed signal session
+for the original one/two-session-later opening execution.
+
+The candidate reads the saved fifteenth desired matrix, never its
+generator. It preserves each BIL and aggregate non-BIL budget,
+all 131 monthly dates and the original half-SOXX/equal-four-style
+relative stock composition. The existing pure stock/gold odds law,
+native GVZ/VIX units and 30%--70% bounds remain unchanged.
+Changing the measurement can still change risk and returns.
+
+### Actual registration and complete target proof
+
+The [actual packet](evidence/overnight_range_product_20261029_registration_v1.json)
+records registration event **229** at
+**2026-10-29T03:16:44.121982Z**, before actual new proxy values
+and target construction. Proof event **230** follows at
+**03:16:45.609113Z**, with the packet created at
+**03:16:45.610920Z**.
+
+All 131 targets retain the source BIL values exactly and preserve
+the non-BIL budget. Independent formulas verify the variance
+components **before allocation clipping**, not only the saturated
+30%/70% target. Maximum unclipped proxy difference is
+`1.7486012637846216e-15`; maximum target difference is
+`1.2323475573339238e-14`. Five prefix-truncation checks and both
+original full-window/four-style coverage checks pass.
+
+Nine source tests and 22 candidate/lifecycle checks cover malformed
+bars, missing dates, adjustment identity, flat/monotone/range-only/
+gap-only cases, scale invariance, exact BIL preservation, unclipped
+measurement and registration/publication order. The funded
+executor remains unchanged; account execution verifies saved
+targets independently rather than rerunning the primary generator.
+
+No candidate account has run. The source proof, implementation
+and actual packet must be remotely published before four fresh
+USD10,000 accounts under all original financial gates. Current
+counts are **21 registered, 19 completed/reviewed, one retained
+technical failure, one pending, 76 funded paths and 197 combined
+completions**, with zero qualifiers.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,
