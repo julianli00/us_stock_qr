@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "admission_id": "ssd_legacy_feedback_expert_admission_20261029_v1",
+  "source_candidate_id": "semiconductor_ratchet_protection",
+  "mechanism_group": "wealth_feedback_protection",
+  "shadow_reference_path": "10y-base",
+  "source_initial_capital_usd": 10000.0,
+  "source_drawdown_target": 0.15,
+  "source_actual_weight_trade_band": 0.05,
+  "invested_target_budget": 0.98,
+  "cash_reserve": 0.02,
+  "native_delay_sessions": [1, 2],
+  "new_strategy_evaluations": 0,
+  "new_shadow_account_runs": 0,
+  "new_shadow_recommendation_artifacts": 1,
+  "new_economic_factor_definitions": 0,
+  "source_registration": {
+    "path": "evidence/semiconductor_protection_20261011_registration.json",
+    "sha256": "ec6813960acc9eef23e9600a9349ba037104177ff73959660db9c50a4e845bf0"
+  },
+  "source_results": {
+    "path": "evidence/semiconductor_protection_20261011_results.json",
+    "sha256": "ad91a2162444a7625ad4fe53fa8a05f748978a6db233bfe56567f6015fd8abc5"
+  },
+  "source_reproducibility": {
+    "path": "evidence/semiconductor_protection_20261011_reproducibility.json",
+    "sha256": "9e28a89d81e686601a7f57c9d8dabc6a883d142234b6e578ed54fa38aae8aee8"
+  },
+  "source_bundle": {
+    "path": "reports/semiconductor-protection-20261011/semiconductor_ratchet_protection/bundle.json",
+    "sha256": "45699c76368353b49f1ef12b30a46a48e984f46179cda24d1c4d89596e0e0200"
+  },
+  "source_publication": {
+    "path": "reports/semiconductor-protection-20261011/publication.json",
+    "sha256": "b8293a0cc590198b8614a2e0c2c363ef0dbe8d682a569bdcbd8f753127bc92e5"
+  },
+  "source_target_implementation": {
+    "path": "src/us_quant/semiconductor_portfolio_protection.py",
+    "sha256": "bac89aac5e7c18cebeaa5233835bfa07373da632fd301ddc3d9970b66e4152e0"
+  },
+  "admitted_market_registration": {
+    "path": "evidence/strategy_expert_meta_execution_20261029_registration_v2.json",
+    "sha256": "b1c964e01edbc1b07ba2df1b00c97a16f20303007b388a98a555bc3f93662407"
+  },
+  "original_ledger_sha256": "ed2c075d0819e1ff8bb2d6920910128e0dd2ed4be46f920fef575129d64c9317",
+  "prior_ssd_journal_sequence": 374,
+  "prior_ssd_journal_head_sha256": "e1b0200ca142bbf165455d63ff07a75a8802d542404c281bad46a23b94f01aaf",
+  "methodology": {
+    "purpose": "Review one existing complete wealth-feedback policy for a defensive role in an expert pool, without requiring standalone final-portfolio qualification or claiming complementary returns in advance.",
+    "observation_construction": "Use the preserved ten-year base net shadow account, its actual closing high-water mark, the exact saved monthly baseline and the unchanged original protected_target law. Derive a separately versioned daily recommendation artifact, including its actual initial anchor. Check all four original request/state/account records; do not run any old account, preparation or evaluation entry point.",
+    "initial_availability": "The first real known recommendation is the original shadow initial-capital decision on 2016-10-05. No 2016-09-30 recommendation or pre-shadow return is invented. A future meta study must explicitly preserve its 2016-10-06 formal start and unscored maturity behavior.",
+    "capital_and_execution": "Native shadow wealth, daily feedback, five-point band and fixed-fee scale are not the main account. A meta account cannot inherit its drawdown floor, wealth path or net-return guarantee.",
+    "deduplication": "The plain protected source is the one reviewed representative. Its dollar-half variant and other wealth-floor variants are not additional independent mechanisms in this admission.",
+    "selection_bias": "The source has exposed historical results. Selecting a defensive risk role from the existing library is not independent out-of-sample or forward validation.",
+    "policy_registration_and_expert_admission": "Retain the actual 2026-10-11 policy registration separately from the present expert admission and counterfactual 2016 historical availability.",
+    "final_portfolio_gates_changed": false,
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

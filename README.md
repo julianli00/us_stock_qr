@@ -1468,6 +1468,25 @@ shadow-capital differences. Neither evaluated rule has been repaired,
 no next allocation rule has been selected, and totals remain209
 combined completions with zero qualifiers.
 
+A [complete wealth-feedback defensive expert](research/workbench/evidence/legacy_feedback_expert_20261029_admission_v2.json)
+was then admitted at **2026-10-29 17:21:25 UTC**. The existing
+`semiconductor_ratchet_protection` policy remains historically rejected;
+its standalone return failure does not invalidate its technical use
+as an expert. All four saved native paths and345 frozen dependencies
+were checked without replaying an account. One new, separately bound
+artifact contains2,513 known recommendations from the existing net
+shadow state; it adds no strategy trial or funded path.
+
+The [observation Module](research/workbench/src/us_quant/legacy_feedback_expert_v1.py)
+reuses the original protection law and existing dense expert Adapter.
+The source's own NAV/peak and daily five-point execution band are
+not protection for the monthly meta account. Its actual first
+recommendation is2016-10-05, not an invented September30 value;
+initial availability and score maturity remain distinct.
+The original three-expert pool and all failed combinations are
+unchanged. An expanded pool and its next financial rule still
+require a separate freeze before new combination outcomes.
+
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
 

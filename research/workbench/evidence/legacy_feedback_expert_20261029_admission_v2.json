@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "admission_id": "ssd_legacy_feedback_expert_admission_20261029_v1",
+  "technical_admission_release": 2,
+  "admitted_at": "2026-10-29T17:21:25.358532+00:00",
+  "expert": {
+    "id": "semiconductor_ratchet_protection",
+    "mechanism_group": "wealth_feedback_protection",
+    "status": "admitted_available_for_next_pool",
+    "source_policy_registered_at": "2026-10-11T11:57:43.962365+00:00",
+    "actual_expert_admitted_at": "2026-10-29T17:21:25.358532+00:00",
+    "standalone_financial_verdict_preserved": "rejected_historical",
+    "financial_failure_is_not_admission_failure": true,
+    "native_shadow_reference": "10y-base",
+    "native_feedback_uses_own_shadow_wealth_not_main_wealth": true,
+    "native_drawdown_target": 0.15,
+    "native_actual_weight_trade_band": 0.05,
+    "historical_first_recommendation": "2016-10-05",
+    "historical_first_shadow_return": "2016-10-06",
+    "historical_last_shadow_return": "2026-10-05",
+    "known_daily_recommendations": 2513,
+    "real_shadow_return_observations": 2512,
+    "earlier_recommendations_or_returns_invented": false,
+    "historical_availability_is_counterfactual_not_forward": true
+  },
+  "available_mechanism_representatives": [
+    {
+      "id": "equity_first_month_end_commitment_v1",
+      "mechanism_group": "committed_price_trend_defense",
+      "status": "preserved_first_pool_representative"
+    },
+    {
+      "id": "benchmark_opportunity_joint_tail_v1",
+      "mechanism_group": "joint_tail_opportunity",
+      "status": "preserved_first_pool_representative"
+    },
+    {
+      "id": "symmetric_garch_growth_bil_v1",
+      "mechanism_group": "conditional_variance_growth",
+      "status": "preserved_first_pool_representative"
+    },
+    {
+      "id": "semiconductor_ratchet_protection",
+      "mechanism_group": "wealth_feedback_protection",
+      "status": "admitted_available_for_next_pool"
+    }
+  ],
+  "admissible_related_variant_not_selected": {
+    "id": "downside_gjr_growth_bil_v1",
+    "reason": "Preserved valid related conditional-variance variant, not another independent mechanism."
+  },
+  "source_frozen_files_checked": 345,
+  "source_market_12_assets_and_RF_match_admitted_14_asset_panel": true,
+  "native_saved_path_checks": [
+    {
+      "path": "10y-base",
+      "shadow_return_observations": 2512,
+      "archived_requests_checked": 539,
+      "existing_independent_bt_max_NAV_difference_usd": 1.709850039333105e-10,
+      "maximum_issued_target_difference": 0.0,
+      "RF_matches_original_repository_decoder_exactly": true,
+      "source_paths_replayed": false
+    },
+    {
+      "path": "10y-stress",
+      "shadow_return_observations": 2512,
+      "archived_requests_checked": 425,
+      "existing_independent_bt_max_NAV_difference_usd": 1.127773430198431e-10,
+      "maximum_issued_target_difference": 0.0,
+      "RF_matches_original_repository_decoder_exactly": true,
+      "source_paths_replayed": false
+    },
+    {
+      "path": "5y-base",
+      "shadow_return_observations": 1254,
+      "archived_requests_checked": 297,
+      "existing_independent_bt_max_NAV_difference_usd": 8.731149137020111e-11,
+      "maximum_issued_target_difference": 0.0,
+      "RF_matches_original_repository_decoder_exactly": true,
+      "source_paths_replayed": false
+    },
+    {
+      "path": "5y-stress",
+      "shadow_return_observations": 1254,
+      "archived_requests_checked": 258,
+      "existing_independent_bt_max_NAV_difference_usd": 3.637978807091713e-11,
+      "maximum_issued_target_difference": 0.0,
+      "RF_matches_original_repository_decoder_exactly": true,
+      "source_paths_replayed": false
+    }
+  ],
+  "maximum_saved_account_NAV_identity_error_usd": 1.035438401686406e-11,
+  "prefix_causality_checks": 5,
+  "maximum_prefix_recommendation_difference": 0.0,
+  "new_observation_Module_tests_passed": 15,
+  "canonical_reader_regression_tests_passed": 15,
+  "private_admission_sha256": "8a02f12d4de8829c65ea54ee7be902da9377056c65aed3b6f8f07adb622335f5",
+  "private_recommendation_sha256": "21312e84c04008362f24004563227fb14e0a496f8517df931930b5243040316d",
+  "preserved_validation_failure": {
+    "count": 1,
+    "scope": "Expert-admission reference comparison, not a registered financial strategy trial.",
+    "v1_intent_sha256": "4932bca5b953c6cf9dc7e9a49859862fd80904b7a56c2f1b5bd81d4a5b483f43",
+    "v1_failure_log_sha256": "19366160eaf2f78988dd0b812556a3de8087d1a69878691206c68e25b085e45d",
+    "v2_intent_sha256": "8d5bf02c48973b63965918ce5d91525ecc2d6cdbf38d3853f8b0c8ad30faf30e",
+    "original_repository_RF_decoder_reused": true,
+    "risk_free_comparison_remains_exact": true,
+    "risk_free_values_or_definition_changed": false,
+    "accounting_tolerances_changed": false,
+    "source_policy_parameters_or_recommendation_law_changed": false
+  },
+  "new_materialized_shadow_recommendation_artifacts": 1,
+  "new_shadow_account_runs": 0,
+  "new_strategy_evaluations": 0,
+  "new_funded_paths": 0,
+  "new_source_requests": 0,
+  "new_economic_factor_definitions": 0,
+  "first_frozen_three_expert_pool_changed": false,
+  "expanded_pool_or_next_meta_rule_frozen": false,
+  "claimed_independent_economic_risk_sources": null,
+  "complementary_returns_or_master_drawdown_limit_verified": false,
+  "original_ledger_sha256_unchanged": "ed2c075d0819e1ff8bb2d6920910128e0dd2ed4be46f920fef575129d64c9317",
+  "ssd_journal_events_unchanged": 374,
+  "ssd_journal_head_unchanged": "e1b0200ca142bbf165455d63ff07a75a8802d542404c281bad46a23b94f01aaf",
+  "current_financial_counts": {
+    "registered": 34,
+    "completed": 31,
+    "reviews": 31,
+    "pending": 0,
+    "technical_failures": 3,
+    "account_paths": 124,
+    "total_legacy_plus_ssd_completed": 209,
+    "qualified": 0
+  },
+  "interpretation": "An existing complete source policy is technically usable as a defensive expert despite its financial rejection. Its own shadow high-water mark, native daily execution and fixed-fee scale are not a floor or wealth guarantee for a monthly single-capital meta account. Source selection uses exposed history; neither independent forward validation nor complementary returns have been established.",
+  "investment_objective_verified": false,
+  "independent_forward_validation": false,
+  "order_authority": false
+}

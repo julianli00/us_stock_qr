@@ -5329,6 +5329,128 @@ meta rules remain rejected. Current counts remain
 three technical failures, zero pending,124 funded paths,
 209 combined completions and zero qualifiers**.
 
+## Admitting an existing wealth-feedback defensive expert
+
+The next expert-layer question reviews a complete existing
+defensive policy, rather than retuning the failed selector,
+volatility target or floor multiplier. The source is
+`semiconductor_ratchet_protection`: the plain, unleveraged
+four-style/SOXX/gold policy with its already registered
+own-wealth feedback law. Its dollar-half variant and
+other related floor variants are not additional mechanisms
+in this admission.
+
+The [actual admission](evidence/legacy_feedback_expert_20261029_admission_v2.json)
+completed at **2026-10-29T17:21:25.358532Z**. This is
+separate from the original policy registration at
+**2026-10-11T11:57:43.962365Z** and the counterfactual
+2016 historical availability. The source's financial
+verdict remains **rejected historical**. Its low standalone
+return/Sharpe is not a technical admission failure and is
+not erased by making it an expert.
+
+All345 frozen source files match. The original immutable
+ledger binds candidate event113, review event115, the
+registered specification and the exact saved account
+bundle. The original12-asset open, close, raw-close,
+volume and RF panels match the corresponding cells in
+the admitted14-asset panel over all2,805 source sessions.
+The real old publication fence and complete source
+chronology remain; no old preparation, target generator
+entry point, account run or ledger migration was repeated.
+
+| Saved native source path | Return observations | Archived requests checked | Maximum request-target difference | Existing independent BT NAV difference USD |
+|---|---:|---:|---:|---:|
+| 10y base | 2512 | 539 | 0.0 | 1.709850039333105e-10 |
+| 10y stress | 2512 | 425 | 0.0 | 1.127773430198431e-10 |
+| 5y base | 1254 | 297 | 0.0 | 8.731149137020111e-11 |
+| 5y stress | 1254 | 258 | 0.0 | 3.637978807091713e-11 |
+
+These are checks of **existing** native records, not four
+new funded paths. NAV, cash, actual tickets, costs,
+pre-open turnover, initial capital and original delays
+reconcile. The maximum source NAV-identity error is
+`1.035438401686406e-11` USD.
+
+The [new pure observation Module](src/us_quant/legacy_feedback_expert_v1.py)
+derives complete daily desired recommendations from the
+saved monthly baseline and each day's already known
+own-shadow NAV and peak. It reuses the unchanged
+`protected_target` law and validates the original queued
+requests, monthly updates and native five-point band.
+An unissued desired recommendation is not reported as
+an executed native order. The existing `ArchivedDenseExpert`
+Adapter then supplies the same `observe` Interface;
+there is no empty new platform or asset sleeve renamed
+as an expert.
+
+Only the existing ten-year-base book supplies the new
+reference observation artifact:2,513 known recommendations
+including the real initial anchor, and2,512 preserved net
+shadow returns. Five chronological prefixes, through
+1/126/252/1256/2512 observations, reproduce their earlier
+recommendations exactly. Fifteen synthetic Interface
+checks cover availability, maturity, both native clocks,
+pending month-end updates, prefix behavior and invalid
+saved states.
+
+The first known recommendation is **2016-10-05**.
+No September30 target or pre-shadow return is filled in.
+A future expanded meta study must explicitly initialize
+its expert mixture using genuinely available information
+and preserve every formal return from2016-10-06.
+Availability at the initial capital decision does not
+make a126-return score mature or prove safety.
+
+The first admission attempt is retained as a technical
+validation failure before any observation artifact.
+Its exact RF check incorrectly mixed two CSV decoders.
+All four stored native RF vectors match the **unchanged
+original repository decoder** exactly; the other decoder
+differs by at most about`1e-16`. The versioned correction
+uses `research_program.review_market` for that comparison,
+with **exact equality retained**. Neither RF values or
+definition, an accounting tolerance, source law, fee,
+clock nor a financial gate changed. Fifteen regression
+checks retain wrong-decoder, tampered-RF, missing-calendar
+and independent-NAV rejection. The failed v1 intent,
+log and all400 bound inputs remain unchanged.
+
+The successful v2 intent binds407 inputs. Private
+admission SHA256:
+`8a02f12d4de8829c65ea54ee7be902da9377056c65aed3b6f8f07adb622335f5`.
+Private recommendation SHA256:
+`21312e84c04008362f24004563227fb14e0a496f8517df931930b5243040316d`.
+No account, price or state rows are published.
+
+The expert's feedback uses **its own** historical net
+wealth, peak, native daily requests and fixed-fee scale.
+A monthly main portfolio does not inherit that wealth,
+drawdown floor or execution behavior. Adding this
+mechanism therefore establishes neither complementary
+returns nor main-account protection. The exposed-history
+source-selection bias remains explicit.
+
+There are now four available mechanism representatives:
+the original commitment, joint-tail and symmetric-GARCH
+experts, plus this admitted defensive candidate. GJR
+remains an admissible related variance variant, not an
+extra independent mechanism. The **first frozen three-expert
+pool remains unchanged**, and no expanded pool or next
+financial rule has yet been frozen. New combination
+outcomes must follow a separate registration/publication
+fence. The one admission-validation failure is not an
+additional registered economic strategy failure.
+
+This step adds **one shadow-recommendation artifact,
+zero shadow-account runs, zero strategy evaluations,
+zero funded paths and zero source requests**.
+The374-event SSD journal and original ledger are
+unchanged. Financial totals remain34 registrations,
+31 completions, three technical versions without complete
+funded outcomes,124 paths,209 combined completions and
+zero qualifiers. The investment objective is unmet.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,
