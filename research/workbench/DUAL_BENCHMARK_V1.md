@@ -4966,6 +4966,72 @@ all eight original main-account paths; the original
 Sharpe/CAGR/QQQ/SPY/drawdown and additional stress gates
 remain unchanged.
 
+### Publication Interface failure and byte-preserving execution correction
+
+The v1 entry point failed **before any funded account**.
+It sent all66 frozen code/policy dependencies to the
+explicit-only publication Interface, although seven
+were approved through the fixed original import manifest.
+The unchanged strict guard rejected that caller mistake.
+Both v1 registrations now retain terminal technical
+failure events349/350 and their
+[actual failure evidence](evidence/strategy_expert_meta_20261029_results_v1.json).
+This is not a negative portfolio return result.
+
+No frozen v1 file, dependency set or approval rule was
+weakened. A read-only check using the existing
+`ssd_research_v1.published_inputs` verified all59 explicit
+dependencies, the fixed manifest and all seven imported
+files against actual Git blobs and local hashes. That
+correct verification was recorded after the original error,
+as event351, not backdated or substituted for the failed call.
+The old entry point remains terminally failed.
+
+The [execution-v2 policy](config/strategy-expert-meta-execution-v2.json)
+and separately versioned Adapter use that same manifest-aware
+helper for the complete dependency closure, then call
+the unchanged explicit-only verifier with only its proper
+subset. Unknown or modified imports still fail.
+No duplicate allowlist entries, changed shared verifier
+or runtime-global patch is introduced.
+
+Only this specific pre-account publication Interface failure
+is eligible for the correction. Signal, source, funding and
+other technical failures cannot be reused under that exception,
+and no failed meta-strategy is admitted as an expert.
+The fixed pool,126/84/42 scoring, pair risk weights,
+switch-cost proxy, fees, timing and financial gates are
+unchanged.
+
+The [actual v2 packet](evidence/strategy_expert_meta_execution_20261029_registration_v2.json)
+records new execution identities, not new economic rules:
+
+| Event | Actual2026-10-29 UTC time |
+|---|---|
+| Equal-weight execution-v2 registration352 | 15:12:47.168974 |
+| Rolling execution-v2 registration353 | 15:12:47.290961 |
+| Equal-weight byte-binding proof354 | 15:12:47.643181 |
+| Rolling byte-binding proof355 | 15:12:47.867810 |
+| Completed execution-v2 packet | 15:12:47.870813 |
+
+Both proofs point to the exact v1 target files, hashes
+`661a710c...` and `598dd499...`, and the same information
+audit `b8904b9a...`. Their numerical and prefix certificates
+refer to the original preparation. The new timestamps
+attest the current immutable bindings; they do not
+pretend that scores or targets were generated again.
+Original registrations345/346 still precede the first
+actual scoring and target preparation.
+
+The journal now has355 events and retains **34 registered
+identities,29 completed/reviewed, three technical failures,
+two pending execution releases,116 funded paths,207 combined
+completions and zero qualifiers**. The first expert study
+still has two financial rules, not four independent economic
+hypotheses. The first eight funded meta paths remain
+unexecuted until the real40-character v2 remote commit and
+publication fence are verified.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,

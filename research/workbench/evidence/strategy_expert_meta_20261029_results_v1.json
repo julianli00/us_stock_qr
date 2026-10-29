@@ -1,0 +1,99 @@
+{
+  "actual_completed_at": "2026-10-29T15:03:23.173486+00:00",
+  "actual_journal_event_count": 351,
+  "actual_journal_head_sha256": "a174773bc066618d507e206613375c57027d4bc64191ea171f540abf192f3725",
+  "actual_publication_before_accounts": {
+    "complete_dependency_publication": {
+      "configured_remote": "origin",
+      "configured_remote_ref": "refs/heads/julianli00-factor-research-handoff",
+      "observed_remote_head": "1b8e31b2dc6ce45fd13ae985a4f23fc63774393f",
+      "original_bundle_manifest_sha256": "3b2ef6789348ac88b8fdf82805415f518da85bb72c1d652735e7aeaaa63666b6",
+      "publication_boundary_version": "explicit_extensions_plus_pinned_original_import_v1",
+      "published_commit": "1b8e31b2dc6ce45fd13ae985a4f23fc63774393f",
+      "registration_packet": {
+        "path": "evidence/equity_first_20261027_registration_v1.json",
+        "sha256": "5e7f3882b019b1ddd5f7b93aca8609b8ce1e2fd83b4b3f54eb25d7d80d0fe3b3"
+      },
+      "unchanged_pinned_import_files_verified": 7,
+      "verification_is_independent_first_publication_time": false,
+      "verified_public_file_count": 60
+    },
+    "configured_remote": "origin",
+    "configured_remote_ref": "refs/heads/julianli00-factor-research-handoff",
+    "observed_remote_head": "1b8e31b2dc6ce45fd13ae985a4f23fc63774393f",
+    "publication_interface_failure_retained": {
+      "path": "reports/ssd-continuous-research-v1/strategy-expert-meta-20261029-v1/publication-interface-failure-v1.json",
+      "sha256": "24fb4c8b4f34b528d22d2435225961f7544bde4c0705860e3f0f7ff9d17c2136"
+    },
+    "published_commit": "1b8e31b2dc6ce45fd13ae985a4f23fc63774393f",
+    "registration_packet": {
+      "path": "evidence/strategy_expert_meta_20261029_registration_v1.json",
+      "sha256": "da329a58892b5e1f44f866da46b232f23c7bebe30f245a69c61e266ad04c021d"
+    },
+    "verification_is_independent_first_publication_time": false,
+    "verification_scope": "Read-only actualpublicationproof;v1entrypoint remains terminallyfailed andmustnotrunfundedaccounts.",
+    "verified_public_file_count": 60
+  },
+  "automatic_live_deployment": false,
+  "created_at": "2026-10-29T15:03:26.145514+00:00",
+  "global_counts_at_completion": {
+    "new_account_paths": 116,
+    "new_completed_strategy_evaluations": 29,
+    "new_historical_point_gate_passes": 0,
+    "new_pending_candidates": 0,
+    "new_registered_candidates": 32,
+    "new_reviews": 29,
+    "new_technical_failures": 3
+  },
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "new_account_paths": 0,
+  "new_completed_configurations": 0,
+  "new_completed_strategy_evaluations": 0,
+  "new_historical_point_gate_passes": 0,
+  "new_pending_candidates": 0,
+  "new_registered_candidates": 2,
+  "new_reviews": 0,
+  "new_technical_failures": 2,
+  "order_authority": false,
+  "original_records_reclassified": false,
+  "private_complete_results": {
+    "path": "reports/ssd-continuous-research-v1/strategy-expert-meta-20261029-v1/results.json",
+    "sha256": "1e375835b3e3d2f1a0f29dc0a346d9a799163912df2b598d2aedb1442f7c3ebe"
+  },
+  "protocol": {
+    "path": "config/dual-benchmark-v1.json",
+    "sha256": "1b5b2572089ffa53746b01e72ff8303e00d6b5e5e3f815844f93834d0521e469"
+  },
+  "raw_prices_documents_targets_or_daily_accounts_exported": false,
+  "registration_packet": {
+    "path": "evidence/strategy_expert_meta_20261029_registration_v1.json",
+    "sha256": "da329a58892b5e1f44f866da46b232f23c7bebe30f245a69c61e266ad04c021d"
+  },
+  "reviews": [
+    {
+      "all_four_paths_same_candidate_and_frozen_parameters": false,
+      "candidate_id": "expert_pool_equal_weight_v1",
+      "failure_event_sha256": "45955975f2e9feb5ccc4f161f341389aafcc7997f3160d54add8dec0b1a2b00f",
+      "failure_stage": "expert_meta_publication_interface",
+      "independent_forward_validation": false,
+      "order_authority": false,
+      "paths": [],
+      "reviewed_at": null,
+      "status": "technical_failure"
+    },
+    {
+      "all_four_paths_same_candidate_and_frozen_parameters": false,
+      "candidate_id": "expert_pool_rolling_pair_v1",
+      "failure_event_sha256": "404f4f13e272833c76c39229aebb0b536b796891b0c0b77d3d091a08f4274049",
+      "failure_stage": "expert_meta_publication_interface",
+      "independent_forward_validation": false,
+      "order_authority": false,
+      "paths": [],
+      "reviewed_at": null,
+      "status": "technical_failure"
+    }
+  ],
+  "schema_version": 2,
+  "study_id": "ssd_strategy_expert_meta_20261029_v1"
+}
