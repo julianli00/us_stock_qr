@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 34 SSD identities, 29 completed/rejected, three retained technical failures and two pending execution corrections; 116 funded paths | Separate net-CAGR/SPY/QQQ criteria; zero qualifiers, no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 34 SSD identities, 31 completed/rejected and three retained technical failures; 124 funded paths | Separate net-CAGR/SPY/QQQ criteria; zero qualifiers, no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -1407,11 +1407,49 @@ scores or a changed financial rule. It uses the existing
 full-dependency verification followed by the correct explicit
 subset Interface. These two technical release identities
 are counted, not presented as two additional independent
-economic hypotheses. Current totals are **34 registered,
+economic hypotheses. At that correction-registration snapshot, totals were **34 registered,
 29 completed, three technical failures, two pending,
 116 funded paths,207 combined completions and zero qualifiers**.
 Actual v2 publication must precede the first eight main
 account paths.
+
+The [first actual expert-portfolio results](research/workbench/evidence/strategy_expert_meta_execution_20261029_results_v2.json)
+completed once at **2026-10-29T15:25:46.196626Z**, after
+actual v2 publication `2095e8b` and fence356 at
+**15:23:29.513115Z**. **Both equal-weight and rolling
+portfolios are rejected.**
+
+| Portfolio | Path | Net CAGR | Net excess Sharpe | Maximum DD | Annual two-sided turnover | Model orders | Costs USD |
+|---|---|---:|---:|---:|---:|---:|---:|
+| Equal | 10y base | 18.594678% | 1.063030 | 19.267467% | 3.490675x | 786 | 1138.24 |
+| Equal | 10y stress | 18.031323% | 1.028824 | 18.445325% | 3.476228x | 780 | 2171.82 |
+| Equal | 5y base | 21.127922% | 1.084773 | 17.057230% | 3.256260x | 383 | 490.66 |
+| Equal | 5y stress | 19.467493% | 0.992967 | 17.108519% | 3.254018x | 383 | 797.60 |
+| Rolling | 10y base | 18.452512% | 1.017519 | 24.109140% | 5.913461x | 650 | 1284.25 |
+| Rolling | 10y stress | 17.459251% | 0.957684 | 22.997708% | 5.914140x | 645 | 3108.40 |
+| Rolling | 5y base | 21.279793% | 1.030383 | 24.379749% | 6.304824x | 347 | 559.14 |
+| Rolling | 5y stress | 18.666106% | 0.893167 | 23.347473% | 6.310930x | 342 | 1136.38 |
+
+Every path passes CAGR/SPY but fails drawdown; every ten-year
+QQQ comparison fails. Equal five-year stress and both rolling
+stress paths also fail Sharpe. The equal five-year-stress
+value **0.9929673032834145** is not rounded into a pass.
+Rolling has lower Sharpe and greater DD, turnover and fees
+on all four matching paths, with lower CAGR in three.
+It actually has **fewer orders in all four**; higher traded
+notional and proportional costs outweigh the fixed-fee savings.
+The estimated switch-cost penalty did not guarantee lower
+realized costs.
+
+All eight paths use one fresh USD10,000 main account, with
+actual participation by the six registered factor ETFs.
+The initial unscored phase remains in the accounts, not
+removed as warmup. Current totals are **34 registered,
+31 completed/reviewed, three technical failures, zero
+pending,124 funded paths,209 combined completions and
+zero qualifiers**. The next investigation stays in the
+expert-pool layer: saved selections, cost estimates,
+actual turnover and drawdown, without changing these rules.
 
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).

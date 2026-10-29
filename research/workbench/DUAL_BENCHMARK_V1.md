@@ -5032,6 +5032,112 @@ hypotheses. The first eight funded meta paths remain
 unexecuted until the real40-character v2 remote commit and
 publication fence are verified.
 
+### First actual expert-portfolio accounts: equal versus rolling
+
+The corrected release was actually published at
+`2095e8b1ab8c8f409b31e9b30c99eeb5ecade6de`.
+Publication fence **356**, recorded at
+**2026-10-29T15:23:29.513115Z**, verified the complete
+code/policy closure:62 explicit dependencies plus the
+actual packet, and all seven fixed-manifest imports.
+The unchanged guards checked actual remote Git blobs
+and local bytes. Both earlier v1 failures remain.
+
+The first eight funded meta paths completed **once** at
+**15:25:46.196626Z**, using the original target bytes
+without rescoring or generating new shadow accounts.
+The [actual full scalar results](evidence/strategy_expert_meta_execution_20261029_results_v2.json)
+retain all original fees and financial gates:
+
+| Portfolio | Path | Net CAGR | Net excess Sharpe | Maximum DD | Annual two-sided turnover | Model orders | Costs USD |
+|---|---|---:|---:|---:|---:|---:|---:|
+| Equal | 10y base | 18.594678% | 1.063030 | 19.267467% | 3.490675x | 786 | 1138.24 |
+| Equal | 10y stress | 18.031323% | 1.028824 | 18.445325% | 3.476228x | 780 | 2171.82 |
+| Equal | 5y base | 21.127922% | 1.084773 | 17.057230% | 3.256260x | 383 | 490.66 |
+| Equal | 5y stress | 19.467493% | 0.992967 | 17.108519% | 3.254018x | 383 | 797.60 |
+| Rolling | 10y base | 18.452512% | 1.017519 | 24.109140% | 5.913461x | 650 | 1284.25 |
+| Rolling | 10y stress | 17.459251% | 0.957684 | 22.997708% | 5.914140x | 645 | 3108.40 |
+| Rolling | 5y base | 21.279793% | 1.030383 | 24.379749% | 6.304824x | 347 | 559.14 |
+| Rolling | 5y stress | 18.666106% | 0.893167 | 23.347473% | 6.310930x | 342 | 1136.38 |
+
+**Both complete portfolio rules are rejected.** All eight
+net-CAGR and SPY gates pass, as do the four additional
+stress-versus-base-SPY gates. All eight drawdowns exceed15%.
+All four ten-year QQQ comparisons fail; all four five-year
+QQQ comparisons pass. Equal five-year stress and both rolling
+stress paths fail Sharpe. Equal five-year stress is exactly
+`0.9929673032834145`, not a rounded pass. No path passes
+every point gate.
+
+The registered rolling rule does not improve the simple
+equal-weight control in this study:
+
+| Path | Rolling minus equal CAGR, pp | Sharpe change | DD change, pp | Annual turnover change | Model-order change | Total fee change USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | -0.142166 | -0.045511 | +4.841673 | +2.422786 | -136 | +146.01 |
+| 10y stress | -0.572072 | -0.071140 | +4.552382 | +2.437912 | -135 | +936.58 |
+| 5y base | +0.151871 | -0.054390 | +7.322519 | +3.048563 | -36 | +68.48 |
+| 5y stress | -0.801387 | -0.099800 | +6.238954 | +3.056911 | -41 | +338.78 |
+
+Sharpe decreases and DD, turnover and fees increase in all
+four cases. CAGR rises only in five-year base, by0.151871
+percentage points, while DD rises by7.322519 points there.
+That isolated gain cannot qualify the complete rule.
+
+**Order counts fall in every case**, not rise. The measured
+cost identity separates fixed commission savings from the
+larger proportional charges:
+
+| Path | Fixed commission change USD | Proportional-cost change USD | Executed-notional change USD |
+|---|---:|---:|---:|
+| 10y base | -136.00 | +282.01 | +564020.80 |
+| 10y stress | -135.00 | +1071.58 | +535788.51 |
+| 5y base | -36.00 | +104.48 | +208961.21 |
+| 5y stress | -41.00 | +379.78 | +189890.95 |
+
+The larger traded dollars mechanically generate higher
+proportional fees under the same frozen rates. This does
+not yet explain which selection, expert recommendation,
+holding drift or delayed fill caused the additional
+notional. In particular, a cost-aware shadow score is
+not a guarantee about the actual main account's turnover.
+The selector's proxy is not charged a second time to capital.
+
+All eight saved books reconcile to **exactly USD10,000**
+initial main capital, not the sum of three shadow books.
+Each actually holds all six registered factor ETFs at some
+point in both formal windows. The equal and rolling
+ten-year books are identical over the first **141 base /
+142 stress returns**, before the first possible scored
+executions on **2017-05-01 / 2017-05-02**. Their real
+unscored-phase returns and fees are retained; no warmup
+days were removed or declared successful.
+
+The maximum independent NAV difference is
+`8.731149137020111e-11` USD. Minimum modeled cash is
+USD176.11123884846756 and maximum modeled gross exposure
+is `0.983801786217034`, below one. These are local research
+model-account calculations, not broker accounts or orders.
+
+The journal now has **374 events** and the current summary
+is derived from it: **34 registered identities,31 completed
+and reviewed, three technical failures, zero pending,
+124 funded paths,209 combined completions and zero
+qualifiers**. Two of those technical failures are the
+retained pre-account publication versions of the same
+two economic rules; they are not extra independent
+economic hypotheses or shadow trials.
+
+The expert pool and both evaluated rules remain available
+research evidence, not discarded solely for failing the
+final performance gates. The next saved-only investigation
+stays at the expert/meta layer: selection and marginal-risk
+records, estimated switching costs versus actual notional,
+holding feedback, and every full-window drawdown context.
+It must not rescore, refit, regenerate targets/accounts,
+splice passing metrics or change a window, pool, fee or
+financial gate to rescue these outcomes.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,
