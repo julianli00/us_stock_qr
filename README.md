@@ -1575,7 +1575,7 @@ retain the risk/growth/cost tradeoff rather than pairing old
 high returns with new low drawdown. Own-account feedback is
 not enough to satisfy the joint objective, and no new floor,
 band, multiplier or frequency is selected from these results.
-Current totals are **38 registrations,35 completions/reviews,
+At that completion snapshot, totals were **38 registrations,35 completions/reviews,
 three technical failures, zero pending,140 funded paths,
 213 combined completions and zero qualifiers**.
 
@@ -1598,6 +1598,26 @@ still await exact remote publication and the dependency fence;
 totals are39 registrations,35 completions, three technical
 failures, one pending,140 paths,213 combined completions and
 zero qualifiers.
+
+The [actual continuous-mixture outcomes](research/workbench/evidence/expert_net_mixture_20261029_results_v1.json)
+completed once at **2026-10-29 23:42:24 UTC**, after real
+publication `00b7d1a` and fence423. **The complete rule is
+rejected.** All four net Sharpe/CAGR/SPY gates and both
+five-year QQQ comparisons pass, but all four DD gates
+and both ten-year QQQ comparisons fail. DD remains
+15.958949%--17.502836%; the five-year-base CAGR20.513400%
+is one passing preference, not full qualification.
+
+Against the preserved four-expert equal control, CAGR
+rises on all four paths but DD worsens on all four.
+Against rolling pair selection, turnover, fees and DD
+fall on all four, while model tickets increase.
+The [complete report and saved comparisons](research/workbench/DUAL_BENCHMARK_V1.md#actual-continuous-net-policy-mixture-outcomes)
+retain every tradeoff and the initial39/40 unchanged
+base/stress return rows; no warmup return was removed.
+Current totals are **39 registrations,36 completions/reviews,
+three technical failures, zero pending,144 funded paths,
+214 combined completions and zero qualifiers**.
 
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).

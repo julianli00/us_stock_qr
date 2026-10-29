@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-29",
-  "phase": "expert_net_mixture_registered_waiting_publication",
-  "active_research_focus": "publish_four_policy_net_mixture_before_funded_paths",
+  "phase": "expert_net_mixture_rejected",
+  "active_research_focus": "select_next_independent_expert_layer_question_without_prior_or_floor_retuning",
   "research_mainline": {
     "id": "strategy_expert_pool_and_rolling_meta_v1",
     "user_directed": true,
@@ -204,8 +204,34 @@
       "moment_array_bytes_are_total_process_RAM": false,
       "shadow_score_is_actual_net_main_wealth": false,
       "switch_cost_proxy_affects_allocation": false,
-      "actual_funded_paths_completed": 0,
-      "publication_fence_before_accounts_still_required": true,
+      "actual_funded_paths_completed": 4,
+      "publication_fence_before_accounts_still_required": false,
+      "actual_preregistration_commit": "00b7d1a4b87fd87c9345032c1bf8b1946e70a9dd",
+      "actual_publication_fence_sequence": 423,
+      "actual_publication_fence_at_utc": "2026-10-29T23:41:36.032931Z",
+      "actual_completed_at_utc": "2026-10-29T23:42:24.720186Z",
+      "results": "research/workbench/evidence/expert_net_mixture_20261029_results_v1.json",
+      "results_sha256": "004761e6de175fb9e1c1447872abdb03626c7843374aac10ad4cb96ef563bb70",
+      "financial_rule_status": "rejected",
+      "all_four_CAGR_Sharpe_SPY_gates_passed": true,
+      "both_five_year_QQQ_gates_passed": true,
+      "both_stress_vs_base_SPY_gates_passed": true,
+      "all_four_drawdown_gates_failed": true,
+      "both_ten_year_QQQ_gates_failed": true,
+      "actual_registered_factor_families_per_path": 6,
+      "independent_BT_maximum_NAV_difference_usd": 1.5279510989785194e-10,
+      "saved_comparison_private_evidence_sha256": "4e03d9bec7119305c7187191da3b61ecd3e40128da54ec4bfaa92729dbf6ce0c",
+      "CAGR_higher_than_equal_control_on_all_four_paths": true,
+      "drawdown_higher_than_equal_control_on_all_four_paths": true,
+      "all_four_experts_positive_at_every_decision": true,
+      "mean_expert_weights_all_121_decisions_in_frozen_order": [
+        0.26060847359038003,
+        0.23694514913209255,
+        0.266226847522384,
+        0.2362195297551436
+      ],
+      "ten_year_shared_initial_return_rows_base_stress": [39, 40],
+      "warmup_return_days_removed": 0,
       "new_shadow_account_runs": 0,
       "new_source_requests": 0,
       "investment_objective_verified": false,
@@ -330,13 +356,13 @@
     },
     "aggregate_counts": {
       "registered": 39,
-      "completed": 35,
-      "reviews": 35,
-      "pending": 1,
+      "completed": 36,
+      "reviews": 36,
+      "pending": 0,
       "technical_failures": 3,
       "qualified": 0,
-      "account_paths": 140,
-      "total_legacy_plus_ssd_completed": 213
+      "account_paths": 144,
+      "total_legacy_plus_ssd_completed": 214
     },
     "additional_cohorts": [
       {
@@ -551,9 +577,9 @@
         "study_id": "ssd_expert_net_wealth_mixture_20261029_v1",
         "registration": "research/workbench/evidence/expert_net_mixture_20261029_registration_v1.json",
         "registration_sha256": "50545693c0443a3a60ad728cac282b5f9d6f006beb2d6e6d455849351644b905",
-        "results": null,
-        "results_sha256": null,
-        "preregistration_commit": null
+        "results": "research/workbench/evidence/expert_net_mixture_20261029_results_v1.json",
+        "results_sha256": "004761e6de175fb9e1c1447872abdb03626c7843374aac10ad4cb96ef563bb70",
+        "preregistration_commit": "00b7d1a4b87fd87c9345032c1bf8b1946e70a9dd"
       }
     ],
     "status": "first_pair_complete_both_rejected",
@@ -1179,14 +1205,14 @@
     "第10项固定相反优先级：在当时较低SPY/QQQ尾部预算（以实际BIL风险作底）内最大化已观测机会，不扫风险倍率/旧门槛/窗口/核心参数。2026-10-28T05:46:36.615636Z真实登记先于122有证书计划（112优化/10非正机会），5前缀及完整6家族覆盖通过。先发布1074904478bfd0ba2a19d502c479ebd2de13c227，再于05:54:28.534515Z完成4资金路径并拒绝。依次十年base/stress、五年base/stress净CAGR12.9292/11.4123/16.5627/14.9118%，Sharpe0.6781/0.5922/0.7818/0.6907，DD26.4086/27.0756/26.6875/27.3277%；回撤/夏普/QQQ全失败，3条CAGR过且仅五年胜SPY。SSD10完成/40路径/合计188/0通过、118事件，原记录不变；不得拼接第9项回撤与第10项收益。"
   ],
   "next": [
-    "Preserve39registered SSD identities:35completed/reviewed,3technical failures,1pending,140funded paths,213combined completions and0qualifiers, derivedfrom422journal events. Original178/94/96records,all old failures/master-protection rejections and one-day forward models remain unchanged.",
-    "One continuous4completeNETpolicy mixture registered2026-10-29T23:32:41.348761Z before its new target learning. Actual121decisions/119full learning months/2unscoredinitial allocations;firstscore2016Nov30. Independentpolynomial-exact integrations and6prefixes verified before any funded account. Shadow scores/prequential validation are not actualnetmainwealth or independentOOS. Publish exactcode-policy-packet with fullmanifest/Gitblob fence before4new originalfundedpaths;no oldsource/score/account rerun or floor/band rescue.",
+    "Preserve39registered SSD identities:36completed/reviewed,3technical failures,0pending,144funded paths,214combined completions and0qualifiers, derivedfrom432journal events. Original178/94/96records,all old failures and one-day forward models remain unchanged.",
+    "Continuous4NETpolicy mixture ALL4paths completedONCE2026-10-29T23:42:24.720186Z after actual00b7d1apublication/fence42323:41:36.032931Z. REJECTED:ALL4Sh/CAGR/SPYandboth5yQQQ/stress-base-SPYpass,butALL4DDandboth10yQQQfail. Versusequal4CAGRhigherbutDDhigherall4;vsrolling4fees/turnover/DDlowerbutordershigherall4. Initial39/40base-stressreturns equalpreservedcontrol beforefirstpossible learnedfills;0warmupdrop. No shadowwealth theorem,oldpipeline replay or parameterrescue. Select genuinely independent expert-layer economics next;no newmodelparametersselected.",
     "Continue economically motivated, preregistered independent small batches without ordinary per-batch approval or a configuration-count ceiling until2026-10-31T15:59Z. Use one computation; at cutoff preserve partial work, clear only the SSD session timer and confirm absence.",
     "Keep old source refusals, VIG/SDY terminal429 and prospective/PIT gates. The independent market-only IBKR adapter is proved, but the one actual probe stopped on2157 before historical requests;0history rows/admissions,no automatic retry or inferred entitlement denial. Default readonly account synchronization remains prohibited."
   ],
   "next_zh": [
-    "保留SSD39个登记身份：35项完成审阅、3项技术失败、1项待评估，140资金路径、合计213完成、0通过，当前摘要从422条日志推导。原178/94/96记录、全部旧失败/主资金保护拒绝结果和一天前瞻模型均保持。",
-    "一项完整四专家NET影子策略连续配权于2026-10-29T23:32:41.348761Z实际登记，先于新组合目标学习。实际121决策/119完整学习月/2次未评分初始化，首次评分2016Nov30；全部独立多项式精确积分和6项前缀核对均在资金账户前通过。影子评分/逐月前推验证不是实际主资金净财富或独立样本外。完整manifest/Gitblob核验及精确远端代码/政策/登记围栏必须先于4条原资金路径；不重跑旧来源、评分或账户，不调地板/偏差带救结果。",
+    "保留SSD39个登记身份：36项完成审阅、3项技术失败、0待评估，144资金路径、合计214完成、0通过，当前摘要从432条日志推导。原178/94/96记录、全部旧失败和一天前瞻模型均保持。",
+    "四专家NET连续配权4路径于2026-10-29T23:42:24.720186Z一次完成，真实00b7d1a发布及23:41:36.032931Z的423围栏均在先。仍拒绝：4条夏普/CAGR/SPY与两条5年QQQ/压力对基础SPY过，但4条DD和两条10年QQQ失败。相对四专家等权，4条CAGR提高但DD均更高；相对滚动择对，4条费用/换手/DD下降而订单更多。学习目标最早可成交前39/40条base/stress收益与保留对照一致，未删初始化收益。不声称影子财富保证、不重跑旧管线或改参数救结果；下一步选择真正独立的专家层经济问题，尚未选择新模型参数。",
     "持续开展有经济理由、事前冻结的独立小批次，无普通逐批确认或配置次数上限，截止2026-10-31T15:59Z；单计算job，届时保存未完状态、只清除SSD会话timer并确认不存在。",
     "原拒绝来源、VIG/SDY终止429和前瞻/PIT门保持。独立IBKR market-only适配器已证明，但唯一真实探针在历史请求前因2157停止；历史行/准入0，不自动重试或推断订阅拒绝，仍禁止默认readonly账户同步。"
   ],

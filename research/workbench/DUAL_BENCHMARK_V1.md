@@ -6320,6 +6320,134 @@ completions and zero qualifiers**. Registration or
 an exact integration proof is not investment-goal
 completion, and no new candidate performance is claimed.
 
+## Actual continuous net-policy mixture outcomes
+
+The [complete actual result](evidence/expert_net_mixture_20261029_results_v1.json)
+finished once at **2026-10-29T23:42:24.720186Z**.
+Actual preregistration publication
+`00b7d1a4b87fd87c9345032c1bf8b1946e70a9dd`
+and event423 at **23:41:36.032931Z** preceded all
+four new funded paths. The original91 code/policy
+dependencies, including seven unchanged pinned imports,
+were verified against actual Git blobs. No existing
+expert, shadow account, old target generator or
+completed main book was replayed.
+
+### Complete funded paths: rejected, not a near-pass
+
+| Path | Net CAGR | Net excess Sharpe | Maximum DD | Annual two-sided turnover | Model orders | Fees USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 17.449362% | 1.073660 | 17.502836% | 2.864770x | 888 | 1164.65 |
+| 10y stress | 16.904727% | 1.037494 | 17.067726% | 2.864589x | 879 | 1969.48 |
+| 5y base | 20.513400% | 1.100640 | 15.996023% | 2.752451x | 422 | 513.49 |
+| 5y stress | 18.998286% | 1.011407 | 15.958949% | 2.749445x | 413 | 764.90 |
+
+All four net Sharpe, CAGR and SPY gates pass, as do
+both five-year QQQ comparisons and both extra
+stress-versus-base-SPY gates. **All four DD gates
+and both ten-year QQQ comparisons fail.** The minimum
+DD is`0.1595894933720592`, not15%, and the minimum
+Sharpe is`1.011407389849692`. The one five-year-base
+CAGR above20% does not satisfy the complete candidate's
+hard qualification or establish a future return.
+
+These are actual per-asset research model orders,
+not broker activity. Fees retain the original fixed
+USD1 tickets and proportional costs, with original
+delayed opens and pre-open, pre-cost turnover denominator.
+No new numerical turnover limit is invented.
+
+### Two preserved controls, not replayed or selectively mixed
+
+The following are new minus the existing four-expert
+equal and rolling rules for each identical formal
+window/scenario. CAGR/DD differences are percentage
+points. All calendar/RF rows match; every account
+has its own original fresh USD10,000 capital.
+These are whole-policy differences, not independent
+causal effects of just smoothness, fees or maturity.
+
+| Preserved control | Path | CAGR pp | Sharpe | DD pp | Annual turnover | Orders | Fees USD |
+|---|---|---:|---:|---:|---:|---:|---:|
+| Equal | 10y base | +0.324366 | -0.001090 | +0.186437 | +0.001999 | +0 | +2.42 |
+| Equal | 10y stress | +0.325984 | +0.000282 | +0.175798 | -0.002644 | -7 | +0.62 |
+| Equal | 5y base | +0.517458 | +0.000589 | +0.442994 | +0.021295 | +0 | +1.08 |
+| Equal | 5y stress | +0.501592 | +0.003363 | +0.452742 | +0.012027 | -7 | -4.04 |
+| Rolling | 10y base | -0.979120 | -0.045637 | -5.320895 | -3.441460 | +142 | -297.60 |
+| Rolling | 10y stress | -1.095705 | -0.052369 | -5.866561 | -3.453305 | +126 | -1623.08 |
+| Rolling | 5y base | +1.472618 | +0.079001 | -7.044796 | -3.408479 | +23 | -98.97 |
+| Rolling | 5y stress | +1.447344 | +0.080636 | -7.201761 | -3.426749 | +14 | -456.44 |
+
+Relative to equal weighting, every CAGR rises but
+every DD worsens; ten-year-base Sharpe is slightly
+lower and the other three are slightly higher.
+Relative to rolling pair selection, every DD,
+turnover and fee falls, but every order count rises.
+Ten-year CAGR/Sharpe fall while five-year values rise.
+Neither comparison repairs any complete rule's
+joint failure or justifies choosing only passing cells.
+
+### Actual allocation history and preserved initialization
+
+The recorded fractions remain close to, but not
+identical to, uniform across all121 decisions:
+
+| Complete expert | Mean fraction, all decisions | Last fraction, 2026-09-30 |
+|---|---:|---:|
+| Commitment | 26.060847% | 27.837441% |
+| Joint-tail | 23.694515% | 21.995760% |
+| Symmetric GARCH | 26.622685% | 27.987331% |
+| Semiconductor ratchet | 23.621953% | 22.179468% |
+
+All four remain positive at every decision. These
+are descriptive learned weights, not a retrospectively
+selected winner or evidence of independent risk.
+The first scored decision is still2016-11-30.
+Before its first possible December1 base or December2
+stress fill, all **39/40 actual return rows** match
+the preserved equal control exactly. The initial
+partial month and unscored phase were not removed
+from formal main returns.
+
+The net-shadow score integral and its119 prequential
+periods remain distinct from main realized wealth.
+The source expert reference capital, own costs and
+native clocks are not transferable capital or a
+net-wealth theorem for the monthly netted main book.
+No new prior, temperature, forgetting window,
+cost penalty, band or floor is selected from these
+outcomes.
+
+All four funded paths actually hold six registered
+factor families. Independent BT maximum NAV difference
+is`1.5279510989785194e-10` USD; minimum modeled cash
+is USD188.63731029921297 and maximum gross exposure
+`0.9828715336301337`. All original RF, initial peaks,
+dates, costs, delays and long-only1x constraints
+remain. The two original forward models still have
+their one real return day and null long-run metrics.
+
+Private complete result SHA256:
+`4126697a76ffe9e4fedd6ead0d661ca5da27ac6e9d49734f7d74b4534341d4b9`.
+Canonical public result SHA256:
+`004761e6de175fb9e1c1447872abdb03626c7843374aac10ad4cb96ef563bb70`.
+Saved comparison SHA256:
+`4e03d9bec7119305c7187191da3b61ecd3e40128da54ec4bfaa92729dbf6ce0c`.
+The separately intent-bound comparison adds zero
+strategy trials and replays no account, target,
+source fit, benchmark or primary metric pipeline.
+
+Current432-event totals are **39 registrations,
+36 completed/reviewed, three technical failures,
+zero pending,144 funded paths,214 combined completions
+and zero qualifiers**. All earlier failures and valid
+experts remain available under their original
+admission scopes. The next question must be genuinely
+independent expert-layer research, not a prior,
+temperature, band, clock or protection-floor rescue.
+No next model is selected and the investment
+objective remains unmet.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,
