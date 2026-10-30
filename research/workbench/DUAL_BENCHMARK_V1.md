@@ -6448,6 +6448,151 @@ temperature, band, clock or protection-floor rescue.
 No next model is selected and the investment
 objective remains unmet.
 
+## Existing macro profit-share policy: expert admission only
+
+The [admission contract](config/legacy-profit-expert-v1.json)
+reviews one complete existing policy,
+`semiconductor_option_dollar_profit_share_confirmation`,
+for a macro-information role absent from the current
+four representatives. The output-share measure was
+chosen for its aggregate profit/output normalization,
+**not** because it won full-window returns. The related
+profit-level and option-OR variants remain archives,
+not extra independent macro mechanisms.
+
+The [actual technical admission](evidence/legacy_profit_expert_20261030_admission_v1.json)
+occurred at **2026-10-30T00:24:25.009540Z**.
+The actual source policy registration remains
+**2026-10-12T04:06:48.358537Z**, original legacy event219;
+its original review221 and rejected financial verdict
+remain untouched. Its first stored monthly recommendation
+is2015-11-30, while the reference net shadow book begins
+2016-10-06. These dates are not a claim that the policy
+was actually introduced or deployed in2015.
+
+### Real source information, not an independent company factor
+
+The source compares adjusted aggregate after-tax CPATAX
+with nominal GDP from the **same completed quarter in
+the same original ALFRED query snapshots**. It confirms
+the existing own-vintage dollar guard only when dollar
+change is strictly positive and the common-quarter
+profit/output measure strictly declines from its own
+63-XNYS-session-earlier query. The original half-risk
+scale, monthly2.5pp actual-holdings band, option/H10
+contracts and source budgets are not retuned.
+
+The ratio is an aggregate income/output proxy with
+population and revision limitations, **not company
+EPS, a firm profit margin or a newly registered
+independent economic factor**. A new information
+mechanism label does not prove low correlation or
+complementary portfolio returns.
+
+All450 raw quarterly snapshots remain bound to the
+original source proof; the raw selector was not
+reexecuted. The new read-only check reconciles225
+saved common-query rows, their second-prior-XNYS
+cutoffs, completed quarters and original186-day
+freshness contract, plus131 saved own-vintage
+comparisons and nominal recommendations. The87
+original independently latest-quarter mismatches
+remain recorded rather than mixed into a margin.
+There are32 confirmed risk-off month-end intentions;
+this is not a count of orders.
+
+The existing source proof's intraday-first-release
+and complete historical methodology chain remain
+**unverified**. The admission does not upgrade those
+claims, substitute a current vintage, relax freshness,
+fill a missing query or backfill prospective days.
+The original conservative source timing contract
+and original independent snapshot proof are reused.
+
+### Read-only original identity and funding evidence
+
+The [new read-only Module](src/us_quant/legacy_profit_expert_v1.py)
+retains the true legacy schema instead of pretending
+its registration was an SSD schema2 packet. It checks
+the immutable original candidate/spec/review, original
+bundle semantic hash, publication fence and actual
+old published registration Git blob. The global
+legacy engine's later research versions do not allow
+rewriting a source's frozen spec.
+
+All557 bound source inputs and520 original frozen
+dependencies match. The existing monthly
+`ArchivedMonthlyExpert` Adapter exposes the original
+nominal target CSV and original ten-year-base NET
+book. It pads only structurally absent admitted
+assets with zero exposure; no missing source query,
+return or recommendation is filled. Known target
+availability is separate from126-session score
+maturity.
+
+The original source's twelve-asset open, close,
+raw-close, volume and RF cells match the admitted
+fourteen-asset panel exactly, by asset label. Price/RF
+loading uses the unchanged original market decoder,
+with round-trip decoding for saved account/target
+records; no silent decoder/tolerance repair is used.
+
+| Cached native path | Sessions | Initial capital USD | Existing strategy/BT maximum NAV difference USD | Stored issued requests |
+|---|---:|---:|---:|---:|
+| 10y base | 2512 | 10000 | 2.1827872842550278e-11 | 80 |
+| 10y stress | 2512 | 10000 | 1.0913936421275139e-10 | 80 |
+| 5y base | 1254 | 10000 | 2.9103830456733704e-11 | 43 |
+| 5y stress | 1254 | 10000 | 2.1827872842550278e-11 | 43 |
+
+These are comparisons of **already saved** strategy
+and BT books, not new independent-BT or account runs.
+The original funding verification proof is reused.
+Current checks retain original full calendars/RF,
+fresh capital, nonnegative cash, gross at most one,
+holding/cash identities and genuinely known monthly
+issued targets. Minimum cached cash is
+USD190.78328303927384 and maximum gross exposure
+`0.982852561275736`.
+
+No old `prepare`, raw selector, target builder,
+account evaluator, verifier `main` or broker function
+is executed. Twenty-two synthetic contract checks
+passed before the one actual admission. Its original
+nominal targets, net shadows and primary metrics are
+not regenerated or reclassified.
+
+### Actual availability is not a new qualified portfolio
+
+Private admission SHA256:
+`81efe9c58adc7a5d518bd5b001496d6b8f8bd2a331881050988e812bf57a9e00`.
+Before-validation intent SHA256:
+`9e228c27d59db2e165512fa96e047db0a60a902c6a32ffb3930a1c5161729c95`.
+Canonical public admission SHA256:
+`6907d209b8c7d97e335672d778ffe2d979c09d0c03c5aba39a94c54ade7fbba4`.
+Reused nominal target SHA256:
+`a5e9a1010b4c2d686af4ecc662fdd12dbd21646aec9dcb1c6ba68ac93a4e133d`.
+Reused reference shadow SHA256:
+`8ac9bf0389bc446d3dc3857bc608d70b3922b317d84fa66f33494f6339b56b40`.
+
+There are now five technically available complete
+representatives, but the original four-expert pools
+and all their outcomes remain immutable. A future
+pool, ranking or weight law including this source
+has **not** been frozen, registered or evaluated.
+Later research should load the cached admission
+references through the existing monthly Adapter,
+not repeat this admission entry point.
+
+This step adds **zero strategy trials, source
+requests, shadow accounts, recommendation artifacts
+or factor definitions**. The original database and
+432-event journal are unchanged: **39 SSD registrations,
+36 completed/reviewed, three technical failures,
+zero pending,144 funded paths,214 combined completions
+and zero qualifiers**. Exposed-history source
+selection is not independent forward validation or
+investment-goal completion.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,

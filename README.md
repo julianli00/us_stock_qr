@@ -1619,6 +1619,26 @@ Current totals are **39 registrations,36 completions/reviews,
 three technical failures, zero pending,144 funded paths,
 214 combined completions and zero qualifiers**.
 
+An [existing common-quarter profit-share/dollar policy](research/workbench/evidence/legacy_profit_expert_20261030_admission_v1.json)
+was technically admitted as an additional macro-information
+expert at **2026-10-30 00:24:25 UTC**. Its original
+2026-10-12 policy registration and financial rejection remain.
+The aggregate CPATAX/GDP proxy is not a company profit margin
+or a newly registered independent factor; complementary
+portfolio returns are not assumed.
+
+The read-only admission checks557 bound inputs,520 frozen
+source files,225 cached causal common-quarter queries,131
+nominal recommendations and four existing net/BT books.
+Original twelve-asset prices/RF match the admitted14-asset
+panel exactly. No source selector, target generator, old
+account or historical verifier entry point was rerun, and
+no shadow or recommendation artifact was generated.
+There are now five technically available representatives,
+but **no five-expert financial pool or next allocation rule
+has been frozen or evaluated**. Old four-expert studies and
+the **214/0** completion/qualification counts are unchanged.
+
 Current counts and the distinction from old quota records are in
 [`docs/research_progress.json`](docs/research_progress.json).
 

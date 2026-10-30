@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "admission_id": "ssd_legacy_profit_expert_admission_20261030_v1",
+  "source_candidate_id": "semiconductor_option_dollar_profit_share_confirmation",
+  "mechanism_group": "common_quarter_profit_dollar_confirmation",
+  "profit_measure": "output_share",
+  "source_registered_at": "2026-10-12T04:06:48.358537+00:00",
+  "source_specification_semantic_sha256": "ec0a62259849d4d8a02df162ce38d3909ee1dec2b5ff8420a9068e1a376963b8",
+  "source_bundle_semantic_sha256": "199884c2c57a1765539bd7bad6211a584447637fde6d116804161312d4a0aa27",
+  "source_registration_event_sequence": 219,
+  "source_review_event_sequence": 221,
+  "shadow_reference_path": "10y-base",
+  "source_initial_capital_usd": 10000.0,
+  "source_actual_weight_trade_band": 0.025,
+  "maximum_completed_quarter_age_days": 186,
+  "risk_change_sessions": 63,
+  "risk_off_scale": 0.5,
+  "invested_target_budget": 0.98,
+  "source_frozen_file_count": 520,
+  "source_registration": {
+    "path": "evidence/profit_guard_20261012_registration.json",
+    "sha256": "4963557da8735e005e933c121afc6b095b11570319bca29c1dd509cf1b70a7d6"
+  },
+  "source_results": {
+    "path": "evidence/profit_guard_20261012_results.json",
+    "sha256": "7e1e6a3a28a39b7b4baefd3148e318616c6cb25506b5f63ce3da892462e5b99b"
+  },
+  "source_pre_account_proof": {
+    "path": "evidence/profit_guard_20261012_pre_account_verification.json",
+    "sha256": "dce219941b4cae33694fa880d402ab3afe03a44824eec03ce57f70781af5b3ea"
+  },
+  "source_reproducibility": {
+    "path": "evidence/profit_guard_20261012_reproducibility.json",
+    "sha256": "9dc16f622d9e24f062c6bf54a8d9741756e8431084a4cd6697fa9d3e60ac11dc"
+  },
+  "source_publication": {
+    "path": "reports/profit-guard-20261012/publication.json",
+    "sha256": "2fc313bc60912ec20df755b4b502a9f2e1cfd94950f0f804d7ad018eb85da58e"
+  },
+  "source_bundle": {
+    "path": "reports/profit-guard-20261012/semiconductor_option_dollar_profit_share_confirmation/bundle.json",
+    "sha256": "75e40438618d7ae7caa0ea069dbffd4631fe183aa8d28a584c47408941d2d5a6"
+  },
+  "source_nominal_targets": {
+    "path": "data/profit-factor-guard-20261012/semiconductor_option_dollar_profit_share_confirmation-desired-targets.csv",
+    "sha256": "a5e9a1010b4c2d686af4ecc662fdd12dbd21646aec9dcb1c6ba68ac93a4e133d"
+  },
+  "saved_common_queries": {
+    "path": "data/profit-factor-guard-20261012/common-quarter-queries.csv",
+    "sha256": "cf94c582e262e0e3696241930fe2f7358d40f9dab9a3e26b283e9e73a5ca7c9a"
+  },
+  "saved_comparisons": {
+    "path": "data/profit-factor-guard-20261012/risk-comparisons.csv",
+    "sha256": "318531d2e5be51ef2157906ec001c42ba8ef7ffc7cba84e8bbb12a72a8bf823a"
+  },
+  "saved_original_targets": {
+    "path": "data/profit-factor-guard-20261012/original-source-desired.csv",
+    "sha256": "2948ff18ada3b356a5bb81974393fe3532404868883e386c7a72f262e1eb8ee5"
+  },
+  "admitted_market_registration": {
+    "path": "evidence/expert_net_mixture_20261029_registration_v1.json",
+    "sha256": "50545693c0443a3a60ad728cac282b5f9d6f006beb2d6e6d455849351644b905"
+  },
+  "original_ledger_sha256": "ed2c075d0819e1ff8bb2d6920910128e0dd2ed4be46f920fef575129d64c9317",
+  "prior_ssd_journal_sequence": 432,
+  "prior_ssd_journal_head_sha256": "271652e16e9df7486d8f58783afeb87b97343b0f10af4d14a731e54e8e058904",
+  "new_strategy_evaluations": 0,
+  "new_shadow_account_runs": 0,
+  "new_recommendation_artifacts": 0,
+  "new_economic_factor_definitions": 0,
+  "new_source_requests": 0,
+  "methodology": {
+    "purpose": "Review one existing complete common-quarter profit-share/dollar policy for a distinct macro-information role in an expert pool. It is not selected by full-window performance, and its original financial rejection remains. Complementary returns are not assumed.",
+    "source_scope": "Use the existing independently checked450ALFREDsnapshots/225same-query common quarters/131own-vintage comparisons,not independentlylatest mixed quarters,today's revised history or an inferred release time. Keep two-prior-XNYS cutoff,186quarter-age,63sessiondelta,strictdecline,halfscale and original option/H10/source contracts. Fullintraday-first-release and historical methodology chains remain unverified.",
+    "interpretation": "Adjusted aggregate CPATAX divided by common-quarter nominalGDP is an aggregate income/output proxy with population limitations,not companyEPS,stock profit margin or a newly registered independent factor. Macro evidence differs from the current four mechanisms but independence/complementarity is not established by its label.",
+    "reuse": "Reuse original monthly nominal-target CSV and preserved net cash-funded-v2ten-year-base book. Check520frozen dependencies,true legacy registration/spec/review/bundle,source clocks,all four cachedstrategy/BT/weights/issued records and exact12asset/RFalignment with admitted14. Do not execute any original preparation,source selector,target generator,account evaluator or historical verifier entrypoint.",
+    "adapter": "Use the existing ArchivedMonthlyExpert Interface. Assets structurally absent from the source are zero exposures,not missing source data. Nominal recommendation timing and native actual-holdings-band executions remain distinct. No new recommendation or shadow book is generated.",
+    "deduplication": "The output-share policy is the one reviewed representative because it normalizes aggregate profits by output,not because it won historical returns. The level confirmation and related option-OR variants remain related archives,not additional independent macro mechanisms.",
+    "clocks_and_bias": "Retain actualOct12policy registration,actual present expert admission,and counterfactual historical recommendation availability separately. Source shadow/reference10000fees/capital are not transferable main wealth. Selecting an existing exposed-history expert after214completions is not independentOOS or prospective validation.",
+    "future_pool": "Admission does not freeze a fifth-member financial pool,ranking or weighting law. Existing four-expert financial studies remain immutable. Any later pool extension and allocation rule must be frozen before new outcomes and keep all original qualification gates.",
+    "source_or_strategy_pipeline_replayed": false,
+    "aggregate_proxy_claimed_company_margin_or_independent_factor": false,
+    "expanded_pool_or_next_meta_rule_frozen": false,
+    "final_portfolio_gates_changed": false,
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}
