@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 47 SSD identities, 43 completed/rejected, four retained technical failures and zero pending; 172 funded paths | Journal-derived current summary: 221 combined completions, zero qualifiers; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 48 SSD identities, 43 completed/rejected, four retained technical failures and one pending; 172 funded paths | Journal-derived current summary: 221 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -305,6 +305,24 @@ remain in the totals;unavailable or inapplicable proxies are not
 filled with zero. These observations do not isolate fee causality
 or select another cost coefficient. All221financial verdicts and
 zero qualifiers remain unchanged.
+
+A [new hierarchical risk rule](research/workbench/evidence/expert_hierarchical_risk_20261030_registration_v1.json)
+registered **2026-10-30T09:52:46.665022Z** before its new
+clusters,weights or targets were computed. It retains the same six
+complete admitted experts and uses126mature NETRF-excess observations,
+canonical single-linkage seriation and recursive inverse child-risk
+allocation. It does not rank returns,retune the old LPcost term,
+invert covariance or retry the failed global risk-budget solver.
+Risk clusters are not extra experts or independent economic factors.
+
+All121initial/monthly decisions,seven unscored equal-six warmups,
+114mature risk fits and five real prefix checks are preserved.
+The independent covariance/tree/weight/target checks pass before
+capital;full126-session fitting is not held-out validation or
+independent OOS. Exactly one new financial rule is pending.
+Actual full-dependency remote publication remains required before
+its four original freshUSD10000paths. None has started at this
+registration snapshot;all221completed verdicts remain unchanged.
 
 The [new frozen protocol](research/workbench/config/dual-benchmark-v1.json)
 requires every original ten/five-year base/stress path to have net Sharpe above

@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_expert_hierarchical_risk_20261030_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "prior_completed_configurations": 221,
+  "prior_new_registered_candidates": 47,
+  "prior_new_completed_strategy_evaluations": 43,
+  "prior_new_technical_failures": 4,
+  "prior_journal_sequence": 516,
+  "prior_journal_head_sha256": "b28c8b9b8c469d62d6d82837d27698270c2026479473c67ea4a623135ed44629",
+  "source_registration": {
+    "path": "evidence/expert_tail_risk_budget_20261030_registration_v1.json",
+    "sha256": "326b014e3fdd149af189048e63855e71dae1432b847f03b210fc84daeb0fade3"
+  },
+  "source_results": {
+    "path": "evidence/expert_tail_risk_budget_20261030_results_v1.json",
+    "sha256": "3781950b2d4d031d7e29c4b5094361cad712e9abe7206f101494f646181c757f"
+  },
+  "saved_cost_summary": {
+    "path": "reports/ssd-continuous-research-v1/expert-tail-cost-proxy-diagnosis-20261030-v1/summary-v1.json",
+    "sha256": "635ba71a29258062a1b1110c5d45ded0a1f80f2c6af25360fa498f0deee3cb6e"
+  },
+  "expert_ids": [
+    "equity_first_month_end_commitment_v1",
+    "benchmark_opportunity_joint_tail_v1",
+    "symmetric_garch_growth_bil_v1",
+    "semiconductor_ratchet_protection",
+    "semiconductor_option_dollar_profit_share_confirmation",
+    "four_factor_defense_diversified"
+  ],
+  "mechanism_groups": [
+    "committed_price_trend_defense",
+    "joint_tail_opportunity",
+    "conditional_variance_growth",
+    "wealth_feedback_protection",
+    "common_quarter_profit_dollar_confirmation",
+    "cross_asset_defensive_relative_strength"
+  ],
+  "initial_decision_session": "2016-10-05",
+  "lookback_sessions": 126,
+  "sample_covariance_ddof": 1,
+  "all_observations_used_for_risk_fit": true,
+  "risk_fit_is_heldout_validation": false,
+  "linkage": "canonical_single",
+  "distance_key_decimal_places": 12,
+  "correlation_roundoff_tolerance": 1e-12,
+  "allocation": "seriated_balanced_bisection_inverse_child_IVP_variance",
+  "zero_child_variance": "one_zero_child_receives_parent_both_zero_split_equally",
+  "independent_weight_tolerance": 1e-12,
+  "independent_target_tolerance": 1e-12,
+  "independent_covariance_tolerance": 1e-12,
+  "shadow_reference_path": "10y-base",
+  "reference_capital_usd": 10000,
+  "invested_target_budget": 0.98,
+  "cash_reserve": 0.02,
+  "actual_weight_trade_band": 0.025,
+  "minimum_economic_factor_families": 3,
+  "new_economic_factor_definitions": 0,
+  "new_shadow_account_runs": 0,
+  "new_shadow_recommendation_artifacts": 0,
+  "new_source_requests": 0,
+  "candidate_count_in_this_study": 1,
+  "study_size_is_a_total_research_quota": false,
+  "candidates": [
+    {
+      "id": "expert_pool_six_hierarchical_risk_v1",
+      "weighting": "hierarchical_single_linkage_recursive_risk"
+    }
+  ],
+  "methodology": {
+    "risk_distance": "sqrt((1-correlation)/2); validated roundoff clipping only",
+    "merge_tie_rule": "rounded distance then lexicographic sorted fixed-coordinate cluster tuples",
+    "child_orientation": "lexicographic sorted fixed-coordinate member tuples",
+    "seriation": "concatenate oriented child orders",
+    "bisection": "floor(length/2) then remainder, recursively",
+    "child_risk": "sample variance of observed RF-excess returns weighted by normalized inverse individual variances",
+    "zero_individual_variance": "explicit unscored equal-six, not successful risk estimation",
+    "source_expert_introduction_backdated": false,
+    "risk_clusters_are_independent_factor_families": false,
+    "source_shadow_wealth_or_floor_transferred": false,
+    "return_score_or_rank_used": false,
+    "switch_cost_proxy_used_for_allocation": false,
+    "covariance_inverse_or_global_optimizer_used": false,
+    "covariance_regularization_or_variance_floor": false,
+    "prior_failed_covariance_solver_invoked": false,
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

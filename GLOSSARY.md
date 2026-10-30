@@ -35,6 +35,11 @@ A group of experts with closely related economic logic or risk behavior.
 Multiple variants in a group are not evidence of multiple independent risk sources.
 _Avoid_: Independent factor count
 
+**Risk cluster (风险聚类)**:
+A group of strategies formed from their observed joint risk behavior for allocation.
+Its membership does not establish a new economic factor or independent source of returns.
+_Avoid_: Mechanism group, independent factor family
+
 **Shadow book (影子账簿)**:
 A separate record used to observe and assess an expert's behavior.
 Its wealth and costs are not capital or realized performance of the final portfolio.

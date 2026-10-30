@@ -585,6 +585,67 @@ This post-outcome analysis of overlapping history is not independent
 OOS,isolated fee causality,a new acceptance gate or a selected
 cost coefficient or portfolio policy.
 
+## Hierarchical complete-expert risk preregistration
+
+The [new registered rule](evidence/expert_hierarchical_risk_20261030_registration_v1.json)
+registered **2026-10-30T09:52:46.665022Z** before new real
+clusters,weights or targets. Target proof followed
+**2026-10-30T09:52:55.826269Z**. The pre-outcome implementation
+intent is
+`3994e7ef8030c61561650b020d82c6f0af31de13efaffd32e64099f108691bd3`;
+the frozen specification is
+`46f5d7d6ac07e0e0f0ad24664b07ae4920d5d95f07ebb4c4489feaa191e3e5f8`.
+All868source references and eight exact implementation/validation
+references were bound before real allocation.
+
+The six complete experts,original sources,assessment books,
+actual introduction clocks and counterfactual availability remain.
+This changes allocation only:estimate126mature NETRF-excess risk,
+use square-root correlation distance and canonical single linkage,
+then recursively bisect the seriated leaf list and divide capital
+inversely to each child's observed inverse-individual-variance
+portfolio risk. Twelve-decimal distance keys and fixed-coordinate
+lexicographic ties are specified before outcomes. Exact zero-child
+risk cases and undefined individual correlation have explicit
+behavior,not a variance floor or a safety claim.
+
+No return ranking,mean optimizer,global ERCsolver,covariance
+inverse,shrinkage,volatility target,beta cap or new drawdown law
+is used. The old terminal covariance version remains failed;
+only its pure covariance-moment helper is reused. A risk cluster
+is an observed dependence grouping,not a new expert,mechanism
+group,independent factor or forecast guarantee.
+
+The new source freeze conservatively pins the complete local
+import closure and public archived configurations:158code and
+140policy dependencies. Those pins do not activate archived
+strategies or add members to the six-expert pool. The fixed
+original import manifest remains unchanged.
+
+All121initial/monthly decisions remain,including seven explicitly
+unscored equal-six decisions and114mature full-risk fits,with zero
+degenerate individual-risk cases. All126observations fit risk;
+none is relabelled held-out validation. Independent scalar
+covariance differs by at most3.2526065174565133e-19;
+both expert weights and underlying targets differ by at most
+1.6653345369377348e-16,below their frozen1e-12bounds.
+Each merge,canonical tie,seriation and recursive capital split
+is checked against independently verified recorded covariance.
+Five actual truncated-prefix checks preserve prior decisions.
+
+The original monthly actual-holding feedback,2.5%trade band,
+98%invested target,2%idle reserve,fees,execution delays and
+fullcapital SPY/QQQ benchmarks remain. No shadow wealth or
+protection floor is transferred to main capital. Saved controls
+and all old outcomes are not replayed.
+
+At this registration snapshot the authoritative journal has
+518events,48registrations,43completed reviews,four technical
+failures,one pending rule and172funded paths:221combined
+completions,zero qualifiers. No new main account has started.
+Actual complete-dependency remote publication and its original
+new fence remain mandatory before all four formal paths.
+
 ## Initial benchmark command
 
 From the SSD workspace root:
