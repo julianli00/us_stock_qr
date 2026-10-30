@@ -20,6 +20,12 @@ The ability to obtain an admissible recommendation from an expert at a particula
 decision time. It does not imply that enough observations exist to score the expert.
 _Avoid_: Qualification, future availability
 
+**Pool membership (专家池成员资格)**:
+The inclusion of a technically admissible strategy expert in one specified
+meta-strategy study. It does not automatically follow technical admission or
+establish an independent risk source.
+_Avoid_: Universal enablement, technical expert admission
+
 **Decision information clock (决策信息时钟)**:
 The information state a decision is allowed to use, including publication timing
 as well as observation dates. It is not necessarily the market close or the

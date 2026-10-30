@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 58 SSD identities, 50 completed/rejected, eight retained technical failures and zero pending; 200 funded paths | Journal-derived current summary: 228 combined completions, zero qualifiers; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 60 SSD identities, 50 completed/rejected, eight retained technical failures and two pending; 200 funded paths | Journal-derived current summary: 228 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -42,6 +42,31 @@ cannot be repaired by blending. Shadow assessment and one fresh-capital master
 portfolio remain separate. The first fixed-pool study requires an equal-weight
 control and one causal rolling rule, without claiming that the pool or direction
 change itself has met the investment objective.
+
+The [seven-expert preregistration](research/workbench/evidence/seven_expert_meta_20261031_registration_v1.json)
+registered equal-weight and causal rolling-pair rules at
+**2026-10-30T23:46:00.022914Z /23:46:00.300134Z**, before new real target
+decisions. This separately frozen study adds the already admitted VVIX
+option-uncertainty policy to the original six representatives,not an asset
+sleeve or a seventh independent risk source. The original126/84/42mature
+assessment,k2pair ERC,net switch proxy,lexical ties and main execution are
+unchanged. All decisions use the explicit after16:15ET information clock.
+
+Pre-outcome intent`ef3a1e216a742326cbe880bcc6530eac695365595d955c6371531c23feb8de04`
+binds177code files,147policies and1199source references. The first37checks
+preceded freeze. All121decisions,114mature assessments,seven unscored
+initial decisions,all21pairs,five prefixes and six registered factor symbols
+are retained. The242actual pre-input/resolved records preserve206948NET/RF
+binary64 values before proof. Independent target/weight/score differences
+are at most1.12e-16/2.23e-16/5.33e-15.
+
+This is the **pre-account snapshot**:no new financial fence,account,
+return,turnover or fee result exists. Exact remote preregistration must
+precede all eight original fresh-capital paths. Journal610has60registered
+SSD identities,50completed reviews,eighttechnical failures,two pending
+and200funded paths:228combined completions,zero qualifiers. Saved six-expert
+controls are reused,not rerun. Technical admission itself did not select this
+later study's pool;its separate design did.
 
 The [option-uncertainty expert technical admission](research/workbench/evidence/vvix_uncertainty_expert_20261030_admission_v1.json)
 completed **2026-10-30T22:58:44.381948Z**. It makes the existing

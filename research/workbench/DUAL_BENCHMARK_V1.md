@@ -20,6 +20,61 @@ inception date. Raw documents, prices and daily account ledgers remain private.
 The original bundle's README and manifest remain byte-for-byte unchanged; this
 separate document describes the new protocol without rewriting that history.
 
+## Latest seven-expert preregistration
+
+The [actual packet](evidence/seven_expert_meta_20261031_registration_v1.json)
+registered equal-weight and rolling-pair candidates at
+**2026-10-30T23:46:00.022914Z /23:46:00.300134Z**, before any new real
+score or target decision. The study identifier uses its Beijing start date,
+2026-10-31;actual UTC registration clocks are preserved.
+
+A separate pre-outcome design chooses the original six complete representatives
+plus the technically admitted VVIX uncertainty-confirmation policy. It does not
+enable all archives or select by full-window return rank. Related GJR remains
+valid but nonselected;unreviewed archives,ANFCI's source/calendar nonadmission
+and all eight terminal technical failures retain their reasons. Overlapping
+stock/gold/dollar exposures are disclosed,not counted as independent alpha.
+
+Reuse exact existing `choose_pair`/`combine`:126mature observations split84/42,
+k2,inverse-training-standard-deviation pair ERC,the minimum train/validation
+net-excess risk score,original incremental switch proxy and12-decimal lexical
+ties. Equal control uses sevenths. Seven initial decisions remain explicitly
+unscored;all21pairs,including unscorable states,are retained. The information
+clock is explicitly after16:15ET before original later opens. Archival daily
+VVIX scope does not become authenticated intraday PIT or a traded return.
+
+Intent`ef3a1e216a742326cbe880bcc6530eac695365595d955c6371531c23feb8de04`
+binds177code files,147policies and1199source references. The first37focused
+checks passed before freeze,including cached clock-bound source reuse,
+independent scalar risk/score checks,causal prefixes,failed-input retention,
+publication gating and unchanged execution. No old source policy,admission,
+target,fit,shadow book,financial control or RF view is regenerated.
+
+The one actual28.30-second preparation retains121decisions and242input/resolved
+records. Before each real decision it saves original binary64 observations
+and previous weights;afterward it saves weights,targets and every pair record,
+before independent proof. All206948NET/RF values round-trip unchanged.
+There are114mature assessments andseven available but unscored initial states.
+Prefixes end2016-10-05,2017-03-31,2017-09-29,2021-09-30and2026-09-30.
+Maximum independent target/weight/score differences are
+1.1102230246251565e-16/2.220446049250313e-16/5.329070518200751e-15.
+Both horizons retain all six registered factor symbols.
+
+The original freshUSD10000,RF,initial DD peak,5/20bps+$1tickets,
+1/2sessiondelays,2.5ppactual-holdingband,cash funding and full return
+clocks remain unchanged. Net recommendations form one14-asset main target;
+shadow wealth or feedback floors do not transfer. The old six-expert
+equal/pair outcomes are saved exposed controls,not newly simulated trials
+or an isolated causal source attribution.
+
+At this registration snapshot,no new financial fence,main account,return,
+turnover or fee result exists. Exact remote publication is required before
+all eight original main paths. Journal610contains60registrations,
+50completed reviews,eighttechnical failures,two pending,200funded paths,
+228combined completions andzeroqualifiers. Exposed228completion history,
+rolling train/validation and prefix proofs are not independent OOS or
+forward validation. Final four-path qualification remains unmet.
+
 ## Latest option-uncertainty expert technical admission
 
 The [cached admission](evidence/vvix_uncertainty_expert_20261030_admission_v1.json)

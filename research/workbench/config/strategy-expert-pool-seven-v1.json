@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_strategy_expert_pool_seven_20261031_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "prior_completed_configurations": 228,
+  "prior_new_registered_candidates": 58,
+  "prior_new_completed_strategy_evaluations": 50,
+  "prior_new_technical_failures": 8,
+  "prior_journal_sequence": 606,
+  "prior_journal_head_sha256": "079d350ca6788e089f8f07253da6037b0aed8fab865f0c54b498d358bbf9d879",
+  "source_registration": {
+    "path": "evidence/six_expert_meta_20261030_registration_v1.json",
+    "sha256": "a577ca24f71f83f810d784a32d4d36e186228b9bd6fc9c2caedaa62703d319fa"
+  },
+  "source_specification_sha256": "3e0ad10d2c93fe24bf2ed09440272afb90d8add407adc8a2c13ae6c2c6c1d290",
+  "source_scoring_policy": {
+    "path": "config/strategy-expert-pool-six-v1.json",
+    "sha256": "fa2d9724cd2ba9e476d0dacb7dba595347eb550304c5588bc8b6998f5ac42281"
+  },
+  "previous_six_results": {
+    "path": "reports/ssd-continuous-research-v1/six-expert-meta-20261030-v1/results.json",
+    "sha256": "3dad709303bf7f2407f1a21b26b157845f6a5fc2ed8403f08bfeb6e4db108316"
+  },
+  "option_expert_admission": {
+    "path": "reports/ssd-continuous-research-v1/vvix-expert-admission-20261030-v1/admission-v1.json",
+    "sha256": "75fcc23a33158dc44361169d18f13620639ceab67e6eb4f4770a103166254dca"
+  },
+  "option_public_admission": {
+    "path": "evidence/vvix_uncertainty_expert_20261030_admission_v1.json",
+    "sha256": "84c3c35eacc8832fd911eee51327125b3beea73f65da1a0be408eec25c282bf9"
+  },
+  "decision_information_clock": "after_16_15_ET_index_close_before_later_open_execution",
+  "expert_ids": [
+    "equity_first_month_end_commitment_v1",
+    "benchmark_opportunity_joint_tail_v1",
+    "symmetric_garch_growth_bil_v1",
+    "semiconductor_ratchet_protection",
+    "semiconductor_option_dollar_profit_share_confirmation",
+    "four_factor_defense_diversified",
+    "two_segment_vvix_uncertainty_confirmation_v1"
+  ],
+  "mechanism_groups": [
+    "committed_price_trend_defense",
+    "joint_tail_opportunity",
+    "conditional_variance_growth",
+    "wealth_feedback_protection",
+    "common_quarter_profit_dollar_confirmation",
+    "cross_asset_defensive_relative_strength",
+    "option_market_uncertainty_confirmation"
+  ],
+  "initial_decision_session": "2016-10-05",
+  "lookback_sessions": 126,
+  "training_sessions": 84,
+  "validation_sessions": 42,
+  "selected_experts": 2,
+  "selection_score_decimal_places": 12,
+  "shadow_reference_path": "10y-base",
+  "reference_capital_usd": 10000,
+  "switch_cost_bps_per_side": 5.0,
+  "switch_commission_per_changed_asset_usd": 1.0,
+  "switch_cost_amortization_sessions": 21,
+  "changed_asset_numeric_tolerance": 1e-12,
+  "invested_target_budget": 0.98,
+  "cash_reserve": 0.02,
+  "actual_weight_trade_band": 0.025,
+  "minimum_economic_factor_families": 3,
+  "new_economic_factor_definitions": 0,
+  "new_shadow_account_runs": 0,
+  "new_shadow_recommendation_artifacts": 0,
+  "new_source_requests": 0,
+  "candidate_count_in_this_study": 2,
+  "study_size_is_a_total_research_quota": false,
+  "candidates": [
+    {"id": "expert_pool_seven_equal_weight_v1", "weighting": "equal"},
+    {"id": "expert_pool_seven_rolling_pair_v1", "weighting": "train_erc_validate_net"}
+  ],
+  "methodology": {
+    "question": "Does one already admitted option-uncertainty confirmation expert change the original six-expert equal and rolling-pair main portfolios? Change study-specific pool membership only.",
+    "controlled_change": "Keep all six original representatives and exact choose_pair/combine. Equal control uses sevenths. Rolling retains126/84/42mature observations,k2,training pair ERC,minimum train/validation net-excess risk score,original incremental switch proxy and12-decimal lexical ties. No parameter,window,cost,threshold,regularization or solver scan.",
+    "mechanisms": "Seven complete policies are not seven independent factors. VVIX conditions the original dollar-protection policy using VIX-option uncertainty but shares stock/gold/dollar exposures. Keep all21pairs,correlation,marginal-risk and cost records rather than assert complementarity.",
+    "source_scope_and_clock": "The original VVIX source admits only fixed archival daily closes. Explicitly decide after16:15ETbefore original later opens,not16:00stock-close execution. Intraday first publication,full historical methodology continuity and quote freshness are not authenticated;VVIX is not a traded return,crash probability or variance premium.",
+    "admissions_and_archives": "Reuse exact six cached experts plus the separately completed VVIX admission. Related GJR remains valid but nonselected. Retain unreviewed archive snapshot by reference,ANFCI source/calendar nonadmission and all eight technical failures. Do not automatically enable old policies or prohibited derivative notional/leverage.",
+    "maturity_and_missingness": "Keep all121initial/month-end decisions and original formal return clocks. Seveninitial states without126common observations are explicitly UNSCORED equal sevenths,not successful scores. Missing targets,return dates or RF mismatch stop the version;no fill,drop,retime,new view or missing-expert reweighting.",
+    "source_reuse": "Original source signals,targets,fits,admissions,NET books and source-six financial controls are cached and never regenerated. Preserve defensive expert's existing disclosed assessment view;the VVIX native RF already equals active common RF without a new view.",
+    "capital_and_execution": "Combine into one14-asset98percentETF/2percentidle target. Original freshUSD10000,RF,initialDDpeak10000,5/20bps+$1tickets,1/2sessiondelays,2.5ppmonthly actual-holdings band and cashfundedlongonly<=1x apply. Shadow wealth,feedback peaks and costs do not become main capital or drawdown guarantees.",
+    "audit_retention": "Round-trippable binary64 inputs and previous weights are persisted before every actual decision;resolved weights,combined targets and allpair records afterward before independent proof. Preserve partial records and stop a failed version without tolerance or algorithm rescue.",
+    "bias_and_clocks": "Study follows228exposed completions. Preserve original policy registration and actual expert admission separately from counterfactual historical availability. Rolling train/validation and prefix proofs are not independent OOS or forwardproof;old six controls are reused,not new trials or isolated causal attribution.",
+    "qualification": "Same candidate jointly passes all original10y/5y/base-stress:netSharpe>1,CAGR>12percent,DD<=15percent,fullcapitalmatched-costSPYandQQQ plus originalstress-vs-base-SPY;>=3genuine registeredfactorfamilies and actualturnover,tickets,fees. No metricsplicing or inventedturnovercap.",
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}
