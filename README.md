@@ -284,6 +284,28 @@ is not a main-account drawdown guarantee. No old control is rerun,
 no acceptance gate changes,and the completed total is now221with
 zero qualifiers.
 
+A saved-cost diagnosis adds **zero strategy trials**. Across120
+nominal target transitions,expert-capital reallocation and preserved
+recommendation changes have cumulative L1effects65.0625and27.4526,
+with15.6676of cancellation and76.8475net movement. These signed
+effects are not additive realized-turnover or causal-fee shares.
+Capital coefficients change in103of120transitions.
+
+On matched mature monthly decisions,the actual proportional fee is
+99.29--99.51%of the proxy after scaling to decision capital and the
+actual5/20bpsscenario. Thus the rawUSD10000,5bpsreference is not
+an actual-fee forecast,and normalized proportional fees are not
+systematically understated. Nominal ticket estimates875/443exceed
+actual836/413in the same ten/five-year comparison scopes. Fixed
+commissions still represent59.87/64.08%of whole-book base costs
+and27.76/30.74%under stress,but were not in the LPobjective.
+
+Initial deployment,ten-year warmup fees and every formal account day
+remain in the totals;unavailable or inapplicable proxies are not
+filled with zero. These observations do not isolate fee causality
+or select another cost coefficient. All221financial verdicts and
+zero qualifiers remain unchanged.
+
 The [new frozen protocol](research/workbench/config/dual-benchmark-v1.json)
 requires every original ten/five-year base/stress path to have net Sharpe above
 1, net CAGR above 12%, drawdown at most 15%, and beat full-capital matched-cost

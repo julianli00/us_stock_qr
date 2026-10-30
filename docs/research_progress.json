@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-30",
-  "phase": "expert_tail_budget_rejected",
-  "active_research_focus": "select_next_independent_expert_layer_question_after_tail_budget_rejection",
+  "phase": "tail_cost_proxy_diagnosis_completed",
+  "active_research_focus": "select_next_independent_expert_layer_question_after_saved_cost_diagnosis",
   "research_mainline": {
     "id": "strategy_expert_pool_and_rolling_meta_v1",
     "user_directed": true,
@@ -825,6 +825,79 @@
       "all_Sharpe_lower_than_saved_equal_control": true,
       "investment_objective_verified": false,
       "independent_forward_validation": false,
+      "order_authority": false
+    },
+    "saved_tail_cost_proxy_diagnosis": {
+      "actual_completed_at_utc": "2026-10-30T08:54:02.232224Z",
+      "private_diagnostic_sha256": "b33032cb984b0e5d1bf8188f159135b6b93d940b61fc57431daa4f48b4f3a5cb",
+      "private_summary_sha256": "635ba71a29258062a1b1110c5d45ded0a1f80f2c6af25360fa498f0deee3cb6e",
+      "preanalysis_intent_sha256": "1da77cd17a8a99ffdbceb90064974556206e0916c71f0efab8b4cc79ff0c5f8f",
+      "source_input_references_unchanged": 710,
+      "implementation_and_validation_references_unchanged": 5,
+      "nominal_decisions_preserved": 121,
+      "consecutive_nominal_transitions": 120,
+      "four_formal_account_days_preserved": 7532,
+      "expert_capital_reallocation_effect_L1_sum": 65.06246389661524,
+      "source_recommendation_effect_L1_sum": 27.45261076486224,
+      "net_nominal_target_change_L1_sum": 76.84748220550266,
+      "L1_cancellation_gap_sum": 15.667592455974832,
+      "maximum_signed_vector_identity_residual": 1.1102230246251565e-16,
+      "transitions_with_changed_capital_coefficients": 103,
+      "nonexpert_funding_state_is_seventh_strategy_expert": false,
+      "signed_effect_L1_magnitudes_are_additive_actual_turnover_shares": false,
+      "account_turnover_column_is_fraction_not_USD": true,
+      "all_four_original_fee_ticket_notional_totals_preserved": true,
+      "initial_fee_excluded_from_proxy_calibration_not_from_book_totals": true,
+      "unavailable_ten_year_warmup_monthly_proxies_per_path": 6,
+      "missing_or_inapplicable_proxy_zero_filled": false,
+      "five_year_initial_capital_signal": "2021-10-05",
+      "five_year_initial_known_meta_target": "2021-09-30",
+      "mature_monthly_calibration": {
+        "10y-base": {
+          "decisions": 114, "nominal_ticket_estimate": 875, "actual_tickets": 836,
+          "scenario_scaled_proportional_proxy_USD": 584.5248590489699,
+          "actual_proportional_fees_USD": 580.4831528155223,
+          "actual_to_scaled_proportional_proxy": 0.9930854844394069,
+          "whole_book_fixed_fee_share": 0.5987414705289112,
+          "positive_proxy_without_request": 7, "zero_proxy_with_request": 0
+        },
+        "10y-stress": {
+          "decisions": 114, "nominal_ticket_estimate": 875, "actual_tickets": 836,
+          "scenario_scaled_proportional_proxy_USD": 2266.4074892442263,
+          "actual_proportional_fees_USD": 2253.7535076434287,
+          "actual_to_scaled_proportional_proxy": 0.9944167226498986,
+          "whole_book_fixed_fee_share": 0.27755415271099265,
+          "positive_proxy_without_request": 7, "zero_proxy_with_request": 0
+        },
+        "5y-base": {
+          "decisions": 60, "nominal_ticket_estimate": 443, "actual_tickets": 413,
+          "scenario_scaled_proportional_proxy_USD": 233.93234908860848,
+          "actual_proportional_fees_USD": 232.26382176880168,
+          "actual_to_scaled_proportional_proxy": 0.9928674793105472,
+          "whole_book_fixed_fee_share": 0.6407571301669569,
+          "positive_proxy_without_request": 5, "zero_proxy_with_request": 0
+        },
+        "5y-stress": {
+          "decisions": 60, "nominal_ticket_estimate": 443, "actual_tickets": 413,
+          "scenario_scaled_proportional_proxy_USD": 938.0436032734818,
+          "actual_proportional_fees_USD": 933.478351343808,
+          "actual_to_scaled_proportional_proxy": 0.9951332199124405,
+          "whole_book_fixed_fee_share": 0.30740822228247294,
+          "positive_proxy_without_request": 5, "zero_proxy_with_request": 0
+        }
+      },
+      "fixed_ticket_proxy_penalized_in_original_LP_objective": false,
+      "scenario_proxy_rescaling_changes_frozen_objective": false,
+      "original_LP_rank_target_shadow_or_main_account_pipeline_replayed": false,
+      "new_strategy_evaluations": 0,
+      "new_main_accounts": 0,
+      "new_shadow_account_runs": 0,
+      "new_source_requests": 0,
+      "primary_financial_rejections_unchanged": true,
+      "isolated_causal_fee_attribution": false,
+      "new_cost_coefficient_or_policy_selected": false,
+      "independent_forward_validation": false,
+      "investment_objective_verified": false,
       "order_authority": false
     },
     "investment_objective_verified": false

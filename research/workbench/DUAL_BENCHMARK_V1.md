@@ -507,6 +507,84 @@ zero pending and172funded paths:221combined completions,zero
 qualifiers. No tail probability,window,risk budget or cost-proxy
 parameter is retuned after these outcomes.
 
+## Saved tail-rule cost proxy and target-change diagnosis
+
+The zero-trial diagnosis completed **2026-10-30T08:54:02.232224Z**.
+Intent
+`1da77cd17a8a99ffdbceb90064974556206e0916c71f0efab8b4cc79ff0c5f8f`
+bound710source references,two implementation/test files and three
+validation artifacts before deriving new attribution or calibration
+results. The private diagnostic and summary hashes are
+`b33032cb984b0e5d1bf8188f159135b6b93d940b61fc57431daa4f48b4f3a5cb`
+and`635ba71a29258062a1b1110c5d45ded0a1f80f2c6af25360fa498f0deee3cb6e`.
+No LP,ranking,recommendation,target,account or original verifier
+pipeline is replayed.
+
+All121preserved nominal decisions and120consecutive changes remain.
+A symmetric two-order vector attribution separates changes in expert
+capital weights from changes in preserved complete-policy
+recommendations. Funding standby contributes a fixedBIL
+recommendation in a separate accounting coordinate,not a seventh
+strategy expert or independent factor.
+
+| Sum across120nominal transitions | L1weight-change magnitude |
+|---|---:|
+| Expert-capital reallocation effect | 65.062464 |
+| Preserved recommendation-change effect | 27.452611 |
+| Net saved nominal target movement | 76.847482 |
+| Cancellation between the two effects | 15.667592 |
+
+Capital coefficient vectors change in103transitions and remain
+identical in17. The signed vectors reconcile with maximum residual
+1.11e-16. Their absolute magnitudes are not additive realized
+turnover,shares of causal fees or new tradable targets.
+
+The saved account turnover column is a fraction of pretrade opening
+NAV,not USDnotional. Marking saved prior holdings and cash to the
+unchanged admitted opening prices converts that fraction into
+recorded notional;no trades or account returns are resimulated.
+All7532formal book days,original notional,tickets and paid fee totals
+reconcile. Initial deployment is separate. In particular,the
+five-year October5capital signal uses the knownSeptember30meta
+target,whose monthly transition proxy is not an initial-investment
+forecast.
+
+The following comparisons cover only mature applicable monthly
+decisions,not initial deployment or unavailable warmup proxies:
+
+| Path | Monthly decisions | Nominal ticket estimate | Actual tickets, same scope | Capital/scenario-scaled proportional proxy, USD | Actual proportional fees, same scope, USD |
+|---|---:|---:|---:|---:|---:|
+| 10y base | 114 | 875 | 836 | 584.52 | 580.48 |
+| 10y stress | 114 | 875 | 836 | 2266.41 | 2253.75 |
+| 5y base | 60 | 443 | 413 | 233.93 | 232.26 |
+| 5y stress | 60 | 443 | 413 | 938.04 | 933.48 |
+
+Actual proportional fees are99.29--99.51%of the matched proxy;
+normalization removes the misleading comparison between fixed
+USD10000/5bpsassessment and growing capital/20bpsstress costs.
+Nominal ticket estimates exceed actual tickets in both scopes.
+Seven ten-year and five five-year positive-proxy decisions produce
+no actual request,while zero-proxy-with-request cases are zero in
+all four books. These observations do not establish drift-triggered
+zero-proxy trading as a cause of this rule's churn.
+
+Fixed commissions are59.8741%and64.0757%of whole-book ten/five-year
+base costs,and27.7554%and30.7408%under stress. The frozen LPpenalty
+included proportional switching only;its fixed-ticket proxy was
+disclosed after optimization,not penalized in that objective.
+That is a definition distinction,not proof that adding a coefficient
+would improve returns. Initial fees and the six unavailable
+ten-year warmup-month proxies remain explicitly separate;no missing
+proxy becomes a zero forecast. Every actual request and delayed
+fee remains accounted for,with no pending request beyond these
+formal book ends.
+
+The same221financial completions,47registrations,43SSDreviews,
+four technical failures,172funded paths and zero qualifiers remain.
+This post-outcome analysis of overlapping history is not independent
+OOS,isolated fee causality,a new acceptance gate or a selected
+cost coefficient or portfolio policy.
+
 ## Initial benchmark command
 
 From the SSD workspace root:
