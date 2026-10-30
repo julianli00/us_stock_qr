@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-30",
-  "phase": "expert_contest_credit_diagnostic_finished",
-  "active_research_focus": "preserve_fixed_credit_assessment_evidence_before_selecting_next_independent_expert_layer_question",
+  "phase": "expert_payoff_persistence_registered_waiting_publication",
+  "active_research_focus": "publish_exact_payoff_persistence_packet_before_original_funded_paths",
   "research_mainline": {
     "id": "strategy_expert_pool_and_rolling_meta_v1",
     "user_directed": true,
@@ -1684,6 +1684,67 @@
       "investment_objective_verified": false,
       "order_authority": false
     },
+    "expert_payoff_persistence_study": {
+      "snapshot_scope": "Actual registration and target-proof snapshot; no financial publication fence or new main account at this snapshot.",
+      "registration": "research/workbench/evidence/expert_payoff_persistence_20261030_registration_v1.json",
+      "registration_sha256": "7aafdde96c6fa732ef4370767948456c4b38889da0223e0ab06a1a565d4e3265",
+      "policy": "research/workbench/config/expert-payoff-persistence-v1.json",
+      "policy_sha256": "8b3211e1d3462600d5828e2ea6b3db9213644ead2ca8135fc4c0033da13a3383",
+      "actual_scheduled_native_origin": 55981,
+      "implementation_and_input_freeze_intent_sha256": "6e5bc59441a86bdbf84ac14e4097abca021915b01d439ab40b2bbae256c3b657",
+      "frozen_specification_sha256": "de1a660272461fa6f281854a92cd72f576967dd2fca815456dfe34dba10556c0",
+      "frozen_code_inputs": 163,
+      "frozen_policy_inputs": 146,
+      "frozen_source_references": 903,
+      "passed_focused_checks": 29,
+      "candidate_ids": [
+        "expert_pool_six_payoff_continuation_v1",
+        "expert_pool_six_annual_refresh_v1"
+      ],
+      "actual_registered_at_utc": [
+        "2026-10-30T21:33:32.731372Z",
+        "2026-10-30T21:33:32.999899Z"
+      ],
+      "actual_target_proved_at_utc": [
+        "2026-10-30T21:34:09.943324Z",
+        "2026-10-30T21:34:10.210666Z"
+      ],
+      "continuation_versus_fixed_annual_rate_uniform_refresh": true,
+      "refresh_fraction": "1/12",
+      "refresh_can_redraw_same_expert_identity": true,
+      "refresh_rate_is_observed_market_switch_probability": false,
+      "same_six_complete_experts_and_joint_loss_execution_laws": true,
+      "new_standalone_expert_added": false,
+      "old_integral_reversal_or_controller_repaired": false,
+      "decision_count_per_rule": 121,
+      "complete_learning_source_months": 119,
+      "unscored_initial_main_decisions": 7,
+      "actual_prefix_checks": [
+        "2016-10-05",
+        "2017-03-31",
+        "2017-09-29",
+        "2021-09-30",
+        "2026-09-30"
+      ],
+      "pre_update_input_and_resolved_record_count": 484,
+      "exact_rational_mass_matches_independent_integer_recurrence": true,
+      "source_period_inputs_rounded_once_from_exact_NET_products_and_hex_preserved": true,
+      "source_scores_and_joint_loss_statistics_match_exactly": true,
+      "maximum_independent_expert_weight_difference": 5.551115123125783e-17,
+      "maximum_independent_underlying_target_difference": 1.1102230246251565e-16,
+      "all_six_factor_symbols_in_both_horizons": true,
+      "source_learning_mass_is_main_wealth_or_calibrated_probability": false,
+      "joint_loss_proxy_is_main_drawdown_guarantee": false,
+      "new_accounts_started_at_registration": false,
+      "preregistration_publication_verified_at_snapshot": false,
+      "actual_funded_paths_completed": 0,
+      "new_strategy_evaluations": 0,
+      "new_shadow_account_runs": 0,
+      "new_source_requests": 0,
+      "independent_forward_validation": false,
+      "investment_objective_verified": false,
+      "order_authority": false
+    },
     "investment_objective_verified": false
   },
   "research_dashboard": {
@@ -1802,10 +1863,10 @@
       "sha256": "ccff66c847db6519132775a177268c03d7ec36491076380be01d01f41589287d"
     },
     "aggregate_counts": {
-      "registered": 56,
+      "registered": 58,
       "completed": 48,
       "reviews": 48,
-      "pending": 0,
+      "pending": 2,
       "technical_failures": 8,
       "qualified": 0,
       "account_paths": 192,
@@ -2123,6 +2184,14 @@
         "results": "research/workbench/evidence/expert_contextual_contest_20261030_results_v1.json",
         "results_sha256": "0e5d1de4c89d970aa773a0213c9a8f34feceef25654bd021887f32d893790626",
         "preregistration_commit": "01a68228005cead5f885f3abf0030dbeb18fc8d3"
+      },
+      {
+        "study_id": "ssd_expert_payoff_persistence_20261030_v1",
+        "registration": "research/workbench/evidence/expert_payoff_persistence_20261030_registration_v1.json",
+        "registration_sha256": "7aafdde96c6fa732ef4370767948456c4b38889da0223e0ab06a1a565d4e3265",
+        "results": null,
+        "results_sha256": null,
+        "preregistration_commit": null
       }
     ],
     "status": "first_pair_complete_both_rejected",
@@ -2750,14 +2819,14 @@
     "第10项固定相反优先级：在当时较低SPY/QQQ尾部预算（以实际BIL风险作底）内最大化已观测机会，不扫风险倍率/旧门槛/窗口/核心参数。2026-10-28T05:46:36.615636Z真实登记先于122有证书计划（112优化/10非正机会），5前缀及完整6家族覆盖通过。先发布1074904478bfd0ba2a19d502c479ebd2de13c227，再于05:54:28.534515Z完成4资金路径并拒绝。依次十年base/stress、五年base/stress净CAGR12.9292/11.4123/16.5627/14.9118%，Sharpe0.6781/0.5922/0.7818/0.6907，DD26.4086/27.0756/26.6875/27.3277%；回撤/夏普/QQQ全失败，3条CAGR过且仅五年胜SPY。SSD10完成/40路径/合计188/0通过、118事件，原记录不变；不得拼接第9项回撤与第10项收益。"
   ],
   "next": [
-    "Preserve56registered SSD identities:48completed/reviewed,8technical failures,0pending,192funded paths,226combined completions and0qualifiers from583journal events. The completed119-pair credit diagnosis adds zero financial configurations or accounts;all old outcomes and one-day forward models remain unchanged.",
-    "Preserve the fixed prequential-credit diagnosis:conditional expected Brier0.829984 versus unconditional0.820184 across119complete pairs,with all maturity/context subsets reported. No prior/context or financial rule is selected or retuned from these scores;support differences are not isolated causal effects. Select a genuinely independent expert-layer question before new design/freeze/registration;none is selected by this diagnosis. Failed reversal V1 and both numerical diagnoses remain closed.",
+    "Preserve58registered SSD identities:48completed/reviewed,8technical failures,2pending,192funded paths,226combined completions and0qualifiers from587journal events. The new payoff-persistence rules have complete target proofs but no new main account at this registration snapshot;all old outcomes and one-day forward models remain unchanged.",
+    "Publish the exact payoff-persistence packet and all309frozen scientific inputs before all eight original fresh-capital paths. Keep the continuation/1-12refresh law,shared joint-loss transform,original execution and all acceptance unchanged. Statistical payoff mass is not main wealth,a market-regime probability or a risk guarantee. Closed credit/numerical diagnoses and failed V1 are not repeated or repaired.",
     "Continue economically motivated, preregistered independent small batches without ordinary per-batch approval or a configuration-count ceiling until2026-10-31T15:59Z. Use one computation; at cutoff preserve partial work, clear only the SSD session timer and confirm absence.",
     "Keep old source refusals, VIG/SDY terminal429 and prospective/PIT gates. The independent market-only IBKR adapter is proved, but the one actual probe stopped on2157 before historical requests;0history rows/admissions,no automatic retry or inferred entitlement denial. Default readonly account synchronization remains prohibited."
   ],
   "next_zh": [
-    "保留SSD56个登记身份：48项完成审阅、8项技术失败、0待评估，192资金路径、合计226完成、0通过，来自583条真实日志。完成119对积分评估诊断，新增金融配置及账户均为零；全部旧结果和一天前瞻模型保持。",
-    "保留固定逐期积分诊断：119个完整月度对中，情境预期Brier为0.829984，无情境为0.820184，全部成熟度及情境子集均披露。不据此选择或调整先验、情境或金融规则，样本支持差异不构成隔离因果效应。下一步须先选真正独立的专家层问题；本诊断尚未选择新设计或模型。反转V1及两个数值诊断均保持关闭。",
+    "保留SSD58个登记身份：48项完成审阅、8项技术失败、2待评估，192资金路径、合计226完成、0通过，来自587条真实日志。新收益持续性两规则已有完整目标证明，但本登记快照尚无新主资金账户；全部旧结果和一天前瞻模型保持。",
+    "先完整发布收益持续性登记包及309项冻结科学输入，再启动全部八条原定新鲜资本路径。不得修改持续累积与1/12刷新、共享共损变换、原执行或准入标准。统计收益学习权重不是主财富、市场状态概率或风险保证；关闭的积分/数值诊断及失败V1均不重复或修复。",
     "持续开展有经济理由、事前冻结的独立小批次，无普通逐批确认或配置次数上限，截止2026-10-31T15:59Z；单计算job，届时保存未完状态、只清除SSD会话timer并确认不存在。",
     "原拒绝来源、VIG/SDY终止429和前瞻/PIT门保持。独立IBKR market-only适配器已证明，但唯一真实探针在历史请求前因2157停止；历史行/准入0，不自动重试或推断订阅拒绝，仍禁止默认readonly账户同步。"
   ],

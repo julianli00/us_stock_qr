@@ -66,6 +66,12 @@ strategy experts. It is not expected portfolio return, deployable capital or fin
 qualification.
 _Avoid_: Guaranteed winner, expected main-account return
 
+**Expert persistence prior (专家持续性先验)**:
+A declared assumption about how assessment weight persists or is refreshed across
+complete strategy experts. It is not a measured market-transition probability or
+a guarantee of lasting performance.
+_Avoid_: Observed market regime, calibrated expert-success probability
+
 **Expert reversal forecast (专家反转预期)**:
 An expectation that recent relative weakness among complete experts will reverse.
 It is an allocation premise, not an observed recovery or an independent source of returns.

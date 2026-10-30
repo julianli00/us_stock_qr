@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_expert_payoff_persistence_20261030_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "actual_continuation_event": 55981,
+  "prior_completed_configurations": 226,
+  "prior_new_registered_candidates": 56,
+  "prior_new_completed_strategy_evaluations": 48,
+  "prior_new_technical_failures": 8,
+  "prior_journal_sequence": 583,
+  "prior_journal_head_sha256": "89350f4299a96e640a9267bc8d508028b8538e0f53113871ba891404f1c655b8",
+  "source_registration": {
+    "path": "evidence/six_expert_meta_20261030_registration_v1.json",
+    "sha256": "a577ca24f71f83f810d784a32d4d36e186228b9bd6fc9c2caedaa62703d319fa"
+  },
+  "source_controls": {
+    "path": "evidence/six_expert_meta_20261030_results_v1.json",
+    "sha256": "ce4cd4db8326768cdc5beb018939dd68760adb39833a734d4c6a9c2385d67f38"
+  },
+  "previous_contextual_results": {
+    "path": "evidence/expert_contextual_contest_20261030_results_v1.json",
+    "sha256": "0e5d1de4c89d970aa773a0213c9a8f34feceef25654bd021887f32d893790626"
+  },
+  "previous_credit_diagnosis": {
+    "path": "evidence/expert_contest_credit_diagnosis_20261030_v1.json",
+    "sha256": "04bae533c31b02545c24cfd732b87e3e18d63be2abe979cc2c358850b830cec8"
+  },
+  "previous_growth_results": {
+    "path": "evidence/expert_online_log_growth_20261030_results_v1.json",
+    "sha256": "c1af8346df70d4b16b8651c4bc3ecaf2cb29a3428730be939acbd25130396211"
+  },
+  "expert_ids": [
+    "equity_first_month_end_commitment_v1",
+    "benchmark_opportunity_joint_tail_v1",
+    "symmetric_garch_growth_bil_v1",
+    "semiconductor_ratchet_protection",
+    "semiconductor_option_dollar_profit_share_confirmation",
+    "four_factor_defense_diversified"
+  ],
+  "mechanism_groups": [
+    "committed_price_trend_defense",
+    "joint_tail_opportunity",
+    "conditional_variance_growth",
+    "wealth_feedback_protection",
+    "common_quarter_profit_dollar_confirmation",
+    "cross_asset_defensive_relative_strength"
+  ],
+  "initial_decision_session": "2016-10-05",
+  "shadow_reference_path": "10y-base",
+  "lookback_sessions": 126,
+  "learning_clock": "completed_full_exchange_month_intervals",
+  "learning_state_resets_for_five_year_account": false,
+  "initial_partial_source_month_assimilated": false,
+  "maximum_complete_learning_intervals": 119,
+  "initial_learning_mass_per_expert": "1/6",
+  "refresh_numerator": 1,
+  "refresh_denominator": 12,
+  "monthly_relative_input": "exact_product_of_saved_binary64_NET_daily_relatives_then_one_binary64_rounding",
+  "learning_state_arithmetic": "exact_rational_saved_binary64_month_relatives",
+  "risk_tilt_coefficient": 1,
+  "risk_transform": "unchanged_exact_joint_loss_exponential_transform",
+  "independent_risk_tilt_decimal_precision": 50,
+  "independent_weight_and_target_tolerance": 1e-12,
+  "main_decision_clock": "actual_initial_anchor_and_genuine_month_ends",
+  "actual_weight_trade_band": 0.025,
+  "invested_target_budget": 0.98,
+  "cash_reserve": 0.02,
+  "reference_capital_usd": 10000,
+  "minimum_economic_factor_families": 3,
+  "new_economic_factor_definitions": 0,
+  "new_shadow_account_runs": 0,
+  "new_source_requests": 0,
+  "candidate_count_in_this_study": 2,
+  "study_size_is_a_total_research_quota": false,
+  "candidates": [
+    {
+      "id": "expert_pool_six_payoff_continuation_v1",
+      "weighting": "positive_payoff_mass_continuation_same_joint_loss_tilt"
+    },
+    {
+      "id": "expert_pool_six_annual_refresh_v1",
+      "weighting": "positive_payoff_mass_uniform_annual_refresh_same_joint_loss_tilt"
+    }
+  ],
+  "methodology": {
+    "question": "Can a fixed prior-refresh law reduce persistence lock-in compared with continuing whole-expert payoff mass,without changing the same six experts or shared risk/execution law?",
+    "economic_role": "Magnitude-sensitive realized NET payoffs carry information discarded by winner counts. Their usefulness can change. One fixed annual-rate refresh of statistical mass is a declared structural prior,not a fitted market regime or a response to whichever historical context won.",
+    "continuation": "Start with exact1/6mass per expert. After each full source month with recorded positive binary64 relative x_i,set q_i=p_i*x_i/sum_j(p_j*x_j). This finite six-identity assessment is not a continuous constant-portfolio integral.",
+    "refresh": "The second rule alone replaces q by(11/12)*q+(1/12)*uniform. The declared latent identity prior permits redrawing the same expert;1/12is a refresh-opportunity probability,not an asserted annual market-switch rate.",
+    "numerics": "Exact rational state updates use the same explicitly saved binary64 monthly relatives. Independently updated common-denominator integer masses verify both recurrences exactly. The unchanged joint-loss transform has independent fixed50-digit exponentials;no projection,solver,precision scan or relaxed tolerance.",
+    "source_months": "Each relative is the exact rational product of1+the admitted saved binary64 daily NET returns over one genuine complete month,rounded once to binary64 and saved with float.hex before updating either state. Independent integer products verify the same input. The first partial month is not assimilated.",
+    "maturity": "Main intentions remain explicitly unscored equal-six until126common source observations. Statistical monthly payoff mass may mature earlier. The learning state persists across the five-year fresh main account;no main wealth or past capital is transferred.",
+    "dependence_and_risk": "Both rules retain the same joint-loss dates and nonoffsetting loss transform as the frozen contextual study,using their own current positive learning prototype and126known NET excess-return days. Positive hedge gains are not credited. This is not a calibrated main-account loss or drawdown guarantee.",
+    "costs": "Saved source NET relatives include native source costs only as assessment data. The actual single main account pays its own original asset tickets and proportional costs,with the original holdings-aware monthly band and delays. No invented hard turnover cap or double charging.",
+    "pool_selected_from_complete_returns": false,
+    "refresh_frequency_selected_from_outcomes": false,
+    "learning_mass_is_calibrated_probability": false,
+    "learning_score_is_actual_main_net_wealth": false,
+    "source_shadow_wealth_or_protection_floor_transferred": false,
+    "uniform_simplex_wealth_integral_repaired_or_approximated": false,
+    "failed_OLMAR_PAMR_V1_repaired_retried_or_recertified": false,
+    "new_standalone_expert_added": false,
+    "new_risk_tilt_coefficient_selected": false,
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

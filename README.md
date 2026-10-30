@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 56 SSD identities, 48 completed/rejected, eight retained technical failures and zero pending; 192 funded paths | Journal-derived current summary: 226 combined completions, zero qualifiers; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 58 SSD identities, 48 completed/rejected, eight retained technical failures and two pending; 192 funded paths | Journal-derived current summary: 226 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -42,6 +42,31 @@ cannot be repaired by blending. Shadow assessment and one fresh-capital master
 portfolio remain separate. The first fixed-pool study requires an equal-weight
 control and one causal rolling rule, without claiming that the pool or direction
 change itself has met the investment objective.
+
+The latest [payoff-persistence preregistration](research/workbench/evidence/expert_payoff_persistence_20261030_registration_v1.json)
+records two fixed rules at **2026-10-30T21:33:32.731372Z /
+21:33:32.999899Z**, before new real learning or targets. Both use the same
+six complete experts and unchanged joint-loss transform/main execution.
+The control carries normalized positive NET payoff mass; the other refreshes
+one twelfth toward the uniform prior after each complete month. This fixed
+annual-rate prior is not an observed annual market-switch probability,
+categorical context tuning or a repair of an old wealth integral or reversal.
+
+Pre-outcome intent `6e5bc59441a86bdbf84ac14e4097abca021915b01d439ab40b2bbae256c3b657`
+binds163code files,146policies and903source references. Exact rational
+learning agrees with an independent homogeneous-integer recurrence; monthly
+binary64 inputs are rounded once from exact saved NET products and retained
+with their hexadecimal representations. All121decisions,119full learning
+months,seven unscored initial decisions,five prefix checks and all six
+registered factor symbols are preserved. Independent expert/underlying
+weight differences are at most5.56e-17/1.12e-16. The first29focused checks
+passed before freeze;484actual input/resolved records remain private.
+
+At this registration snapshot, no new financial fence or main account exists.
+Exact remote publication is required before all eight original fresh-capital
+paths. Journal587has58registrations,48completed reviews,eighttechnical
+failures,two pending and192funded paths:226combined completions,zero qualifiers.
+No new return, turnover or fee result is claimed from a target proof.
 
 The latest [read-only contest-credit diagnosis](research/workbench/evidence/expert_contest_credit_diagnosis_20261030_v1.json)
 keeps both completed financial rules unchanged. A new interpretation assesses

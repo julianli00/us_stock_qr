@@ -20,6 +20,60 @@ inception date. Raw documents, prices and daily account ledgers remain private.
 The original bundle's README and manifest remain byte-for-byte unchanged; this
 separate document describes the new protocol without rewriting that history.
 
+## Latest payoff-persistence preregistration
+
+The [actual packet](evidence/expert_payoff_persistence_20261030_registration_v1.json)
+registered continuation and annual-refresh rules at
+**2026-10-30T21:33:32.731372Z /21:33:32.999899Z**, before any new real
+payoff learning or targets. The same six admitted complete policies, actual
+introduction clocks, cached recommendations and NET books are reused.
+
+Both start with exact one-sixth statistical mass. Each complete month
+multiplies an expert's prior mass by its positive source NET relative, then
+normalizes. Only the refresh rule mixes eleven twelfths of that result with
+one twelfth of the uniform prior. The declared identity prior can redraw the
+same expert; this is a fixed refresh-opportunity rate, not an asserted annual
+economic-regime change or calibrated success probability. It is finite
+whole-expert assessment, not an approximation or repair of the old continuous
+constant-portfolio integral, OLMAR/PAMR or a failed main controller.
+
+Each monthly input is the exact rational product of one plus saved binary64
+daily NET returns, rounded once to binary64 and persisted with `float.hex`
+before either state update. Candidate learning uses exact fractions;
+independent common-denominator integer masses check both recurrences and
+prequential source scores exactly. Source assessment is not realized main
+wealth, and native source fees are not charged twice to main capital.
+
+The original joint-loss transform is unchanged for both prototypes:126known
+NET excess-return days, exact mixture-loss membership and nonoffsetting loss
+statistics, fixed unit risk coefficient and independent50-digit exponentials.
+It is neither actual main loss nor a drawdown guarantee. The126-observation
+main maturity rule still makes the first seven intentions explicitly
+unscored equal-six, even while full-month statistical state matures. The
+initial partial month is excluded and the five-year fresh account does not
+reset statistical history or receive shadow capital.
+
+Implementation/input freeze
+`6e5bc59441a86bdbf84ac14e4097abca021915b01d439ab40b2bbae256c3b657`
+and specification
+`de1a660272461fa6f281854a92cd72f576967dd2fca815456dfe34dba10556c0`
+bind163code files,146policies and903source references. The first29focused
+checks passed before real preparation. Each target proof preserves121
+decisions,119full months,seven unscored initial intentions and all five
+original truncated prefixes. Exact learning mass,source scores,monthly
+input hex and joint-loss statistics match. Maximum independent
+expert/underlying differences are5.55e-17/1.11e-16; all six registered
+factor symbols occur in each horizon. The484actual input/resolved records
+and complete target matrices remain private.
+
+At this actual registration snapshot, no new financial publication fence or
+main account has started. Full exact remote publication remains mandatory
+before both rules times all four original freshUSD10000paths. Journal587
+records58SSD identities,48completed reviews,eighttechnical failures,two
+pending and192funded paths:226combined completions,zero qualifiers.
+Earlier financial outcomes, closed numerical diagnoses and prospective
+identities are unchanged. No new financial metric is implied by target proof.
+
 ## Latest read-only contest-credit assessment
 
 The [fixed diagnostic](evidence/expert_contest_credit_diagnosis_20261030_v1.json)
