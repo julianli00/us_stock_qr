@@ -45,6 +45,11 @@ A causal policy for combining complete strategy experts into a unified portfolio
 It is evaluated on the resulting portfolio, not on averages of expert summary metrics.
 _Avoid_: Best historical winner, averaged CAGR
 
+**Funding standby (资金备用状态)**:
+A declared mode that parks main capital when the meta-strategy cannot form an
+admissible expert allocation. It is not a strategy expert or a successful risk assessment.
+_Avoid_: Additional expert, guaranteed safe allocation
+
 **Main capital account (主资金账户)**:
 The single pool of model capital whose asset holdings, cash, execution and costs
 determine a formal portfolio path.

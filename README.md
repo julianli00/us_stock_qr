@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 46 SSD identities, 42 completed/rejected, four retained technical failures and zero pending; 168 funded paths | Journal-derived current summary: 220 combined completions, zero qualifiers; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 47 SSD identities, 42 completed/rejected, four retained technical failures and one registered pending rule; 168 funded paths | Journal-derived current summary: 220 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -239,9 +239,32 @@ Newton diagnostic also fails its frozen real-data convergence check.
 No bound or financial gate is relaxed,no repaired method is selected,
 and no target proof or main capital account is fabricated.
 The source version remains technically invalid for combination use.
-Current totals are46registrations,42completed reviews,four technical
+At that failure,totals were46registrations,42completed reviews,four technical
 failures,zero pending and168funded paths:220completed configurations
 and zero qualifiers.
+
+A [new joint-tail expert rule](research/workbench/evidence/expert_tail_risk_budget_20261030_registration_v1.json)
+registered at **2026-10-30T08:08:20.417858Z**,after its separate
+implementation/input freeze and before actual allocations. It keeps
+the same six technically valid experts,but replaces covariance
+budgets with joint lower-tail constraints and robust subperiod NET
+opportunity. The failed covariance version is history,not an expert
+input or a repaired version.
+
+All126mature observations are split84/42for joint selection,not
+independent OOS. Separate empirical5%CVaR constraints use the smaller
+original NETSPY/QQQ tail loss in each period;the objective maximizes
+the weaker mean minus a proportional nominal-switch proxy.
+Certified observed infeasibility uses actualBIL funding standby,
+not a seventh expert or a safety guarantee. All121decisions,
+108certified expert mixes,six certified standby decisions,seven
+unscored initial decisions and five prefix checks are preserved.
+
+At this registration there are47identities,42completed reviews,
+four technical failures,one pending rule and168funded paths:
+220combined completions,zero qualifiers. No new main account has
+started. Actual complete-dependency remote publication remains
+required before all four original freshUSD10000paths.
 
 The [new frozen protocol](research/workbench/config/dual-benchmark-v1.json)
 requires every original ten/five-year base/stress path to have net Sharpe above

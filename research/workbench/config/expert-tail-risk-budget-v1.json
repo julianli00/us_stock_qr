@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_expert_tail_risk_budget_20261030_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "prior_completed_configurations": 220,
+  "prior_new_registered_candidates": 46,
+  "prior_new_completed_strategy_evaluations": 42,
+  "prior_new_technical_failures": 4,
+  "prior_journal_sequence": 504,
+  "prior_journal_head_sha256": "1b68a018352ef4c975265ce8f2dbe011fdbfd904ebd3b06fb8025a625555e75a",
+  "source_registration": {
+    "path": "evidence/six_expert_meta_20261030_registration_v1.json",
+    "sha256": "a577ca24f71f83f810d784a32d4d36e186228b9bd6fc9c2caedaa62703d319fa"
+  },
+  "source_controls": {
+    "path": "reports/ssd-continuous-research-v1/six-expert-meta-20261030-v1/results.json",
+    "sha256": "3dad709303bf7f2407f1a21b26b157845f6a5fc2ed8403f08bfeb6e4db108316"
+  },
+  "additional_dual_relative_control": {
+    "path": "reports/ssd-continuous-research-v1/expert-dual-relative-selection-20261030-v1/results.json",
+    "sha256": "69b0a9e440d7b0e8544891f4402454e47fe343a52877b9be600ebd5a53daa76e"
+  },
+  "risk_diagnosis": {
+    "path": "reports/ssd-continuous-research-v1/expert-active-absolute-risk-diagnosis-20261030-v1/summary-v1.json",
+    "sha256": "886fa646280538d8ec61e0dc17aa0a875982efbac8001076dac1f430ec3d04fb"
+  },
+  "prior_terminal_covariance_failure": {
+    "path": "evidence/expert_full_covariance_risk_budget_20261030_preparation_failure_v1.json",
+    "sha256": "b68685a85e7b3d79d1aff34dcd03548c594cb523761fee17236f0c43e5ea9bda"
+  },
+  "scoring_benchmarks": {
+    "SPY": {
+      "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/SPY-10y-base.csv",
+      "sha256": "fddffb0bcc8e9056decca6af5194c1a494efd371f2522a0248c22236ca1c7e83"
+    },
+    "QQQ": {
+      "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/QQQ-10y-base.csv",
+      "sha256": "097e3305385e2893bb57ec1faf597b43df38e798876fccbf886266195a61c388"
+    }
+  },
+  "expert_ids": [
+    "equity_first_month_end_commitment_v1",
+    "benchmark_opportunity_joint_tail_v1",
+    "symmetric_garch_growth_bil_v1",
+    "semiconductor_ratchet_protection",
+    "semiconductor_option_dollar_profit_share_confirmation",
+    "four_factor_defense_diversified"
+  ],
+  "mechanism_groups": [
+    "committed_price_trend_defense",
+    "joint_tail_opportunity",
+    "conditional_variance_growth",
+    "wealth_feedback_protection",
+    "common_quarter_profit_dollar_confirmation",
+    "cross_asset_defensive_relative_strength"
+  ],
+  "initial_decision_session": "2016-10-05",
+  "lookback_sessions": 126,
+  "training_sessions": 84,
+  "validation_sessions": 42,
+  "joint_selection_is_independent_validation": false,
+  "tail_probability": 0.05,
+  "solver_tolerance": 1e-9,
+  "certificate_tolerance": 1e-7,
+  "decision_feasibility_tolerance": 1e-8,
+  "weight_roundoff_tolerance": 1e-10,
+  "shadow_reference_path": "10y-base",
+  "reference_capital_usd": 10000,
+  "switch_cost_bps_per_side": 5.0,
+  "switch_commission_per_changed_asset_usd": 1.0,
+  "switch_cost_amortization_sessions": 21,
+  "changed_asset_numeric_tolerance": 1e-12,
+  "switch_proxy_reference": "last_nominal_meta_target_not_actual_holdings",
+  "infeasibility_requires_phase_one_certificate": true,
+  "funding_standby_symbol": "BIL",
+  "funding_standby_is_strategy_expert": false,
+  "invested_target_budget": 0.98,
+  "cash_reserve": 0.02,
+  "actual_weight_trade_band": 0.025,
+  "minimum_economic_factor_families": 3,
+  "new_economic_factor_definitions": 0,
+  "new_shadow_account_runs": 0,
+  "new_shadow_recommendation_artifacts": 0,
+  "new_source_requests": 0,
+  "candidate_count_in_this_study": 1,
+  "study_size_is_a_total_research_quota": false,
+  "candidates": [
+    {"id": "expert_pool_six_robust_tail_budget_v1", "weighting": "robust_net_opportunity_under_joint_tail_budget"}
+  ],
+  "methodology": {
+    "question": "Can robust subperiod NET opportunity under joint downside-tail budgets improve the complete-expert main portfolio?",
+    "allocation": "Maximize the weaker84/42mature RF-excess mean minus5bps/21 times L1underlying nominal-target change. Constrain empirical5percentCVaR separately in both periods to the smaller original NETSPY/QQQ RF-excess tail loss. No individual-CVaR averaging,return-scorecashcutoff,covariance solver or parameter grid.",
+    "standby": "Before126observations use explicitly unscored equal sixths. A separately certified positive PhaseIminimum risk-cap slack establishes observed infeasibility before98percentBIL/2idle funding standby. This is not a seventh expert,new shadow or safety/feasibility guarantee. Other data or solver errors fail explicitly.",
+    "numerics": "Reuse existing generic empirical-tail and LPprimal-dual certificate utilities,not oldassetconstraints. Frozen original LPnumerical standards apply. Check raw/cleaned simplex,target/tail/mean/proportional-cost consistency. Distinct LPoptima need not have identical weights;recorded primal-dual optimality and independent scalar scenarios are the certificate. No failed covariance version or bound is reclassified.",
+    "costs": "Source shadowNETfees inform assessment,not main capital. Proportional switch proxy uses lastnominalmeta target,not real holdings. FixedUSD1changed-asset proxy is disclosed postsolve. Actual fees occur only in original cash-funded executor.",
+    "capital": "One unified14-asset98percentETF/2idle target and one freshUSD10000main account per original10y/5y/base-stress path. Original2.5ppactual monthly band,5/20bps+USD1tickets,1/2sessiondelays,RF and initial10000drawdown peak. Standby and past CVaR do not guarantee main drawdown.",
+    "sources": "Reuse six technically admitted complete expert recommendations and NET shadow books without source,fit,target,shadow or control-account replay. Failed covariance meta-version is history only,never an expert input.",
+    "bias": "Design follows220exposed completions and4technical failures. Joint84/42past selection is not independent validation or OOS. Source actual introductions and counterfactual availability remain distinct.",
+    "qualification": "Same rule must pass all original4paths:netRFSharpe>1,CAGR>12percent,DD<=15percent,fullcapitalmatched-costSPYandQQQ plus originalstress-vs-base-SPY. Report actual factor participation,turnover,orders and fees;no metric splicing or invented turnover cap.",
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

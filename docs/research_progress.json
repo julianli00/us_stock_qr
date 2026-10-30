@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-30",
-  "phase": "expert_full_covariance_preparation_failed",
-  "active_research_focus": "select_next_independent_expert_layer_question_after_technical_rejection",
+  "phase": "expert_tail_budget_registered_waiting_publication",
+  "active_research_focus": "publish_expert_tail_preregistration_before_four_accounts",
   "research_mainline": {
     "id": "strategy_expert_pool_and_rolling_meta_v1",
     "user_directed": true,
@@ -769,6 +769,41 @@
       "investment_objective_verified": false,
       "order_authority": false
     },
+    "expert_tail_risk_budget_study": {
+      "registration": "research/workbench/evidence/expert_tail_risk_budget_20261030_registration_v1.json",
+      "registration_sha256": "326b014e3fdd149af189048e63855e71dae1432b847f03b210fc84daeb0fade3",
+      "frozen_specification_sha256": "13ddfc88078f0b9040725571815d899b4951f87136737253241ebe4e01313b56",
+      "implementation_and_input_freeze_intent_sha256": "f6a2712baf2046150dda7a3804ef57307b6a4ab3594d9e638c0fc6393fb95611",
+      "source_references_frozen": 670,
+      "exact_frozen_implementation_and_validation_references": 8,
+      "actual_registered_at_utc": "2026-10-30T08:08:20.417858Z",
+      "actual_target_proved_at_utc": "2026-10-30T08:08:31.764488Z",
+      "complete_strategy_expert_representatives": 6,
+      "new_financial_rules": 1,
+      "joint_selection_observations": 126,
+      "subperiod_observations": [84, 42],
+      "tail_probability": 0.05,
+      "joint_selection_is_independent_validation": false,
+      "funding_standby_is_strategy_expert": false,
+      "joint_tail_budget_is_drawdown_or_forward_guarantee": false,
+      "terminal_covariance_version_used_as_expert": false,
+      "old_controls_accounts_or_verdicts_changed": false,
+      "combined_decisions": 121,
+      "unscored_initial_equal_decisions": 7,
+      "certified_expert_mix_decisions": 108,
+      "certified_infeasible_funding_standby_decisions": 6,
+      "actual_truncated_prefix_checks": 5,
+      "maximum_independent_scalar_target_difference": 1.1102230246251565e-16,
+      "maximum_independent_tail_budget_or_mean_difference": 6.938893903907228e-18,
+      "new_shadow_account_runs": 0,
+      "new_source_requests": 0,
+      "candidate_accounts_started_at_registration": false,
+      "publication_fence_before_accounts_still_required": true,
+      "actual_funded_paths_completed": 0,
+      "investment_objective_verified": false,
+      "independent_forward_validation": false,
+      "order_authority": false
+    },
     "investment_objective_verified": false
   },
   "research_dashboard": {
@@ -887,10 +922,10 @@
       "sha256": "ccff66c847db6519132775a177268c03d7ec36491076380be01d01f41589287d"
     },
     "aggregate_counts": {
-      "registered": 46,
+      "registered": 47,
       "completed": 42,
       "reviews": 42,
-      "pending": 0,
+      "pending": 1,
       "technical_failures": 4,
       "qualified": 0,
       "account_paths": 168,
@@ -1149,6 +1184,14 @@
         "study_id": "ssd_expert_full_covariance_risk_budget_20261030_v1",
         "registration": "research/workbench/evidence/expert_full_covariance_risk_budget_20261030_preparation_failure_v1.json",
         "registration_sha256": "b68685a85e7b3d79d1aff34dcd03548c594cb523761fee17236f0c43e5ea9bda",
+        "results": null,
+        "results_sha256": null,
+        "preregistration_commit": null
+      },
+      {
+        "study_id": "ssd_expert_tail_risk_budget_20261030_v1",
+        "registration": "research/workbench/evidence/expert_tail_risk_budget_20261030_registration_v1.json",
+        "registration_sha256": "326b014e3fdd149af189048e63855e71dae1432b847f03b210fc84daeb0fade3",
         "results": null,
         "results_sha256": null,
         "preregistration_commit": null

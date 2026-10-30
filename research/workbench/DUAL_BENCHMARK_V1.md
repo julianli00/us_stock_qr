@@ -408,6 +408,59 @@ source identity nor its numerical diagnostics may be blended into a
 portfolio as if technically admitted. No replacement method or new
 economic policy is selected.
 
+## Independent joint-tail expert-budget preregistration
+
+The [new single-rule packet](evidence/expert_tail_risk_budget_20261030_registration_v1.json)
+records actual registration **2026-10-30T08:08:20.417858Z** before
+new allocations and target preparation. Intent
+`f6a2712baf2046150dda7a3804ef57307b6a4ab3594d9e638c0fc6393fb95611`
+bound670source references,the five new policy/code/test files and
+three validation artifacts before those actual outputs.
+Target proof **2026-10-30T08:08:31.764488Z** follows registration.
+The six old valid experts are reused;the terminal covariance
+version is not repaired,retried or included as an expert.
+
+The new LP maximizes the weaker84/42subperiod RF-excess mean
+minus5bps/21times the underlying nominal-target change. Empirical
+5%CVaR is constrained separately in both periods to the smaller
+original full-capital NETSPY/QQQ RF-excess tail loss. Negative
+finite opportunity does not cause a new return-score cutoff.
+Risk budgets can be negative,without a zero or BIL floor.
+Joint scenario risk is not the average of individual expert risks.
+
+The proportional switch proxy uses the last nominal meta target,
+not actual holdings. The fixedUSD1changed-asset proxy is disclosed
+after selection;neither proxy is a second charge to main capital.
+Actual holdings,delays,funding,fees and2.5ppmonthly band stay in
+the original single-account executor. All126known observations
+enter joint selection;84/42are not independent OOS.
+
+A solver-reported infeasible budget needs a separate minimum-common
+slack PhaseI LP with a positive primal-dual lower bound. Only then
+does the rule use98%BIL/2%idle funding standby. This is not an
+additional expert,new shadow book or successful risk assessment.
+Other missing-input and solver errors fail explicitly. The existing
+generic tail-loss and LPcertificate helpers are reused,but not
+their old asset-specific group constraints or allocation pipeline.
+
+All121initial/monthly decisions remain:108certified expert mixes,
+six certified infeasibility standby decisions and seven explicitly
+unscored equal-sixth initial decisions. Independent scalar assembly,
+fractional-tail sorting,marginal-risk and cost checks verify each
+retained primal-dual solution without requiring identical weights
+from potentially nonunique LPoptima. Maximum scalar target and
+tail/mean differences are1.11e-16and6.94e-18. Five actual
+truncated-prefix checks preserve prior decisions,including the
+genuine2016Oct05initial-capital anchor.
+
+At registration there are506journal events,47registrations,
+42completed reviews,four retained technical failures,one pending
+rule and168funded paths:220combined completions,zero qualifiers.
+No new main account has started;actual full-dependency remote
+publication remains required before all four original funded paths.
+All prior controls and failures remain immutable exposed history,
+not new independent validation.
+
 ## Initial benchmark command
 
 From the SSD workspace root:
