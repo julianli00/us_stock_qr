@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_expert_path_baskets_20261030_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "prior_completed_configurations": 223,
+  "prior_new_registered_candidates": 49,
+  "prior_new_completed_strategy_evaluations": 45,
+  "prior_new_technical_failures": 4,
+  "prior_journal_sequence": 540,
+  "prior_journal_head_sha256": "5ff52302a7b36693ba30b578613aa353fb0e65da18052a073ca4f7570968240e",
+  "source_registration": {
+    "path": "evidence/expert_online_log_growth_20261030_registration_v1.json",
+    "sha256": "685ffb40a1ce3975be262418c7928822e6ed116c7d432467d75fca80802c2767"
+  },
+  "source_results": {
+    "path": "evidence/expert_online_log_growth_20261030_results_v1.json",
+    "sha256": "c1af8346df70d4b16b8651c4bc3ecaf2cb29a3428730be939acbd25130396211"
+  },
+  "saved_assessment_divergence": {
+    "path": "reports/ssd-continuous-research-v1/expert-online-assessment-divergence-20261030-v1/summary-v1.json",
+    "sha256": "22a19d6ecd9c2bf670beca499d95102e11af23388ef2381d27b557b6aae4fbde"
+  },
+  "scoring_benchmarks": {
+    "SPY": {
+      "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/SPY-10y-base.csv",
+      "sha256": "fddffb0bcc8e9056decca6af5194c1a494efd371f2522a0248c22236ca1c7e83"
+    },
+    "QQQ": {
+      "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/QQQ-10y-base.csv",
+      "sha256": "097e3305385e2893bb57ec1faf597b43df38e798876fccbf886266195a61c388"
+    }
+  },
+  "expert_ids": [
+    "equity_first_month_end_commitment_v1",
+    "benchmark_opportunity_joint_tail_v1",
+    "symmetric_garch_growth_bil_v1",
+    "semiconductor_ratchet_protection",
+    "semiconductor_option_dollar_profit_share_confirmation",
+    "four_factor_defense_diversified"
+  ],
+  "mechanism_groups": [
+    "committed_price_trend_defense",
+    "joint_tail_opportunity",
+    "conditional_variance_growth",
+    "wealth_feedback_protection",
+    "common_quarter_profit_dollar_confirmation",
+    "cross_asset_defensive_relative_strength"
+  ],
+  "initial_decision_session": "2016-10-05",
+  "lookback_sessions": 126,
+  "training_sessions": 84,
+  "validation_sessions": 42,
+  "enumerated_nonempty_subsets": 63,
+  "subset_weighting": "equal_initial_capital_in_complete_expert_NET_reference_paths",
+  "assessment_segments": ["full_126", "older_84", "recent_42"],
+  "maximum_observed_source_drawdown": 0.15,
+  "conservative_numeric_risk_margin": 1e-10,
+  "selection_score_decimal_places": 10,
+  "target_L1_decimal_places": 12,
+  "score_positive_threshold_used": false,
+  "independent_risk_and_score_tolerance": 1e-10,
+  "independent_weight_and_target_tolerance": 1e-12,
+  "funding_standby_symbol": "BIL",
+  "funding_standby_is_strategy_expert": false,
+  "shadow_reference_path": "10y-base",
+  "reference_capital_usd": 10000,
+  "invested_target_budget": 0.98,
+  "cash_reserve": 0.02,
+  "actual_weight_trade_band": 0.025,
+  "minimum_economic_factor_families": 3,
+  "new_economic_factor_definitions": 0,
+  "new_shadow_account_runs": 0,
+  "new_shadow_recommendation_artifacts": 0,
+  "new_source_requests": 0,
+  "candidate_count_in_this_study": 1,
+  "study_size_is_a_total_research_quota": false,
+  "candidates": [
+    {
+      "id": "expert_pool_six_path_admissible_baskets_v1",
+      "weighting": "ordered_NET_drawdown_admissible_equal_baskets"
+    }
+  ],
+  "methodology": {
+    "assessment_paths_are_main_wealth_or_future_drawdown_guarantee": false,
+    "source_fixed_fees_scale_exactly_to_main_expert_capital": false,
+    "subset_cases_are_independent_trials_or_validation": false,
+    "target_L1_is_actual_turnover_or_fee_forecast": false,
+    "old_ordered_price_sleeve_LP_or_solver_invoked": false,
+    "old_online_learning_rate_or_curvature_retuned": false,
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

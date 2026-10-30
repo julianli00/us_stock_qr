@@ -1021,6 +1021,86 @@ completions/zero qualifiers remain unchanged. This audit selects
 no new execution/allocation policy and claims no independent
 out-of-sample or forward validation.
 
+## Ordered NET path-admissible expert-basket preregistration
+
+The [new registered rule](evidence/expert_path_baskets_20261030_registration_v1.json)
+registered **2026-10-30T13:44:44.869638Z** before real
+subset assessment or targets. Target proof followed
+**2026-10-30T13:44:56.473571Z**. The pre-outcome intent is
+`8ea29997d5272550babacd78f0ff812c783a37b3e45dfc255ec399562d36b2dd`;
+the frozen specification is
+`ed749875042c06b5ab343cb9e06feaf240f83a1251bced92e0bf954ae2f79e2c`.
+All924source references,five implementation files and three
+validation artifacts were bound before actual subset ranking.
+
+This changes the assessment admissibility criterion,not the
+six complete admitted experts,their underlying policies or the
+original monthly main execution. It does not repair or invoke
+the old252-day gross stock/GLD/BILordered LP,change its solver,
+or tune the rejected online learner's step or curvature.
+The same126common mature source observations and84/42split
+remain;the source-relative comparison uses the original NET
+SPY/QQQbooks,not substituted raw prices.
+
+All63nonempty subsets of the six experts are considered.
+Within each assessment segment,selected complete-expert NET
+wealth relatives start at unit reference capital and receive
+equal initial capital. Their mean wealth path is assessed with
+its chronological running peak,not the mean of individual
+drawdowns or CAGRs. The full126path does not reset its peak at
+the84/42split;the older84and recent42assessment paths each
+start at their own unit reference capital.
+
+Every one of those three observed drawdowns must be at most
+0.15minus the fixed1e-10conservative numerical margin.
+This historical assessment limit is not a forecast or a bound
+on the actual cost-bearing main account. Normalizing the old
+NET books does not rescale their fixed source commissions into
+exact fees for smaller main expert allocations or transfer a
+shadow-wealth identity to main capital.
+
+Admissible subsets rank by the largest worst annualized NET
+log-growth difference across the older/recent segments and
+both benchmarks,rounded to10decimal places. There is no
+positive-score cutoff. Ties prefer the smallest current nominal
+underlying-targetL1movement from the previous nominal target,
+rounded to12places,then a larger subset and fixed source
+coordinates. ThisL1tie proxy is not realized holding turnover
+or a fee forecast. Expert counts are not independent factor counts.
+If all63subsets were inadmissible,the declared funding standby
+would hold98%BILwith the original2%idle reserve;it would
+not become an expert,a successful risk assessment or a safety claim.
+
+The original2016-10-05anchor and genuine month ends produce
+121decisions:seven explicitly unscored equal-six warmups and
+114mature assessments. All7182subset cases were independently
+checked with scalar source-path accumulation,running peaks,
+benchmark growth,ties,capital weights and underlying targets.
+There were zero standby decisions. Maximum drawdown/score
+differences are4.440892098500626e-16and
+1.5543122344752192e-15,below1e-10;expert weights match
+exactly and underlying targets differ by at most
+5.551115123125783e-17,below1e-12.
+Five real truncated-prefix checks preserve prior decisions.
+
+These are deterministic consistency checks on exposed history,
+not independent validation.63assessment cases per mature
+decision are not63financial trials. Actual expert-introduction
+clocks,counterfactual historical availability,pool-selection bias,
+all formal return dates,the original initialUSD10000peak,
+RF,cash funding,fees,execution delays and actual-holding band
+remain. No source fit,target,account or benchmark is replayed.
+
+The conservative new dependency freeze contains167code and
+142policy references. Archived pins are not additional active
+experts;the original import manifest is unchanged.
+At this registration snapshot the authoritative journal has
+542events,50registrations,45completed reviews,four technical
+failures,one pending rule and180funded paths:223combined
+completions,zero qualifiers. No new main account has started.
+Actual complete-dependency remote publication and its original
+new fence remain mandatory before all four formal paths.
+
 ## Initial benchmark command
 
 From the SSD workspace root:

@@ -25,6 +25,11 @@ The availability, at a decision time, of all observations required by a specifie
 expert assessment. An unobserved or incomplete assessment is not a successful score.
 _Avoid_: Filled score, safe default
 
+**Assessment admissibility (评估可行性)**:
+Satisfaction of a combination rule's stated constraints on observations known at a
+decision. It does not establish an expert's validity or final portfolio qualification.
+_Avoid_: Final qualification, future risk guarantee
+
 **Expert introduction (专家引入)**:
 The actual time an expert is defined and admitted into research. It is distinct
 from the dates on which a historical counterfactual assumes its policy was available.
