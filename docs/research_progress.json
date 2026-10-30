@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-30",
-  "phase": "expert_headroom_stress_preparation_failed",
-  "active_research_focus": "select_next_independent_expert_layer_question_after_terminal_headroom_stress_preparation_failure",
+  "phase": "expert_online_reversion_preparation_failed",
+  "active_research_focus": "select_next_independent_expert_layer_question_after_terminal_online_reversion_preparation_failure",
   "research_mainline": {
     "id": "strategy_expert_pool_and_rolling_meta_v1",
     "user_directed": true,
@@ -1456,6 +1456,67 @@
       "independent_forward_validation": false,
       "order_authority": false
     },
+    "expert_online_reversion_study": {
+      "terminal_failure_evidence": "research/workbench/evidence/expert_online_reversion_20261030_preparation_failure_v1.json",
+      "terminal_failure_evidence_sha256": "d2904a609953bd73795fe2be758d501a49896150753091f87baaa6eb5581d533",
+      "private_failure_evidence_sha256": "04e0ff90b596581123c5e54bcc2b5bdf9adb24189ebfcb1729dae313c6f2430c",
+      "frozen_specification_sha256": "8b25a2d596a84d83d885b6632779a15c80ef0cf7e0088076b6ce2f8c9a2ea255",
+      "implementation_and_input_freeze_intent_sha256": "8cf9d233961c51a4c28854d595687bdb15c284c982ecbceb261e173bc76458b9",
+      "complete_strategy_expert_representatives": 6,
+      "new_countercyclical_allocator_family": 1,
+      "new_financial_rules": 2,
+      "new_independent_economic_factors": 0,
+      "olmar_window": 5,
+      "olmar_epsilon": 10.0,
+      "pamr_epsilon": 0.5,
+      "source_pool_selected_from_complete_returns": false,
+      "old_19_asset_universe_or_DBC_admitted": false,
+      "old_source_target_fit_learning_or_account_pipelines_replayed": false,
+      "new_standalone_expert_added": false,
+      "proposed_learning_clock": "each_complete_NET_source_day_at_its_close",
+      "proposed_main_decision_clock": "actual_initial_anchor_and_genuine_month_ends",
+      "formation_price_observations": 6,
+      "learning_state_resets_for_five_year_account": false,
+      "source_shadow_wealth_or_protection_floor_transferred": false,
+      "complete_local_code_dependencies": 159,
+      "complete_policy_dependencies": 144,
+      "source_references_frozen": 669,
+      "successful_focused_test_count": 48,
+      "successful_focused_test_attempt": 2,
+      "actual_registered_at_utc": [
+        "2026-10-30T18:06:26.685824Z",
+        "2026-10-30T18:06:26.927572Z"
+      ],
+      "actual_terminal_failure_at_utc": [
+        "2026-10-30T18:06:38.231390Z",
+        "2026-10-30T18:06:38.755056Z"
+      ],
+      "failure_stage": "expert_online_reversion_preparation",
+      "failure_reason": "Independent reversal weights disagree.",
+      "retained_learning_input_rows": 5024,
+      "retained_learning_resolved_rows": 5024,
+      "retained_uncertified_main_decision_rows_per_rule": 121,
+      "both_candidate_learning_and_uncertified_targets_generated": true,
+      "shared_independent_verification_failed_not_two_isolated_candidate_failures": true,
+      "all_model_learning_inputs_and_outputs_retained": true,
+      "independent_expected_trajectory_retained": false,
+      "first_failed_verification_step_or_candidate_known": false,
+      "exact_numerical_discrepancy_known": false,
+      "numerical_root_cause_established": false,
+      "scientific_preparation_runs": 1,
+      "target_proof_completed": false,
+      "real_prefix_proofs_completed": false,
+      "actual_funded_paths_completed": 0,
+      "new_strategy_evaluations": 0,
+      "new_shadow_account_runs": 0,
+      "new_source_requests": 0,
+      "new_financial_metrics_turnover_orders_or_fees_available": false,
+      "frozen_rules_or_tolerances_changed_after_failure": false,
+      "registered_failure_retried": false,
+      "investment_objective_verified": false,
+      "independent_forward_validation": false,
+      "order_authority": false
+    },
     "investment_objective_verified": false
   },
   "research_dashboard": {
@@ -1574,11 +1635,11 @@
       "sha256": "ccff66c847db6519132775a177268c03d7ec36491076380be01d01f41589287d"
     },
     "aggregate_counts": {
-      "registered": 52,
+      "registered": 54,
       "completed": 46,
       "reviews": 46,
       "pending": 0,
-      "technical_failures": 6,
+      "technical_failures": 8,
       "qualified": 0,
       "account_paths": 184,
       "total_legacy_plus_ssd_completed": 224
@@ -1876,6 +1937,14 @@
         "study_id": "ssd_expert_headroom_stress_20261030_v1",
         "registration": "research/workbench/evidence/expert_headroom_stress_20261030_preparation_failure_v1.json",
         "registration_sha256": "8bf057fccb9a85363862d6a8248efdf4f8b3463f1afd5afee282d8adf659e2f8",
+        "results": null,
+        "results_sha256": null,
+        "preregistration_commit": null
+      },
+      {
+        "study_id": "ssd_expert_online_reversion_20261030_v1",
+        "registration": "research/workbench/evidence/expert_online_reversion_20261030_preparation_failure_v1.json",
+        "registration_sha256": "d2904a609953bd73795fe2be758d501a49896150753091f87baaa6eb5581d533",
         "results": null,
         "results_sha256": null,
         "preregistration_commit": null
@@ -2506,14 +2575,14 @@
     "第10项固定相反优先级：在当时较低SPY/QQQ尾部预算（以实际BIL风险作底）内最大化已观测机会，不扫风险倍率/旧门槛/窗口/核心参数。2026-10-28T05:46:36.615636Z真实登记先于122有证书计划（112优化/10非正机会），5前缀及完整6家族覆盖通过。先发布1074904478bfd0ba2a19d502c479ebd2de13c227，再于05:54:28.534515Z完成4资金路径并拒绝。依次十年base/stress、五年base/stress净CAGR12.9292/11.4123/16.5627/14.9118%，Sharpe0.6781/0.5922/0.7818/0.6907，DD26.4086/27.0756/26.6875/27.3277%；回撤/夏普/QQQ全失败，3条CAGR过且仅五年胜SPY。SSD10完成/40路径/合计188/0通过、118事件，原记录不变；不得拼接第9项回撤与第10项收益。"
   ],
   "next": [
-    "Preserve52registered SSD identities:46completed/reviewed,6technical failures,0pending,184funded paths,224combined completions and0qualifiers from556journal events. Latest two headroom-stress identities are terminal preparation failures,not new financial evaluations;all prior outcomes and one-day forward models remain unchanged.",
-    "Headroom-stress V1 is closed:451partial synthetic-capital certificates retained;independent interval check failed in first source role,second role preparation unstarted,zero funded accounts. Do not retry or edit frozen rules/tolerances,rerun old source pipelines or infer failed operands that were not saved. Select a genuinely independent expert-layer question before any new design/freeze/registration;none is selected by this failure record.",
+    "Preserve54registered SSD identities:46completed/reviewed,8technical failures,0pending,184funded paths,224combined completions and0qualifiers from560journal events. Latest two expert-reversal identities are terminal preparation failures,not financial evaluations;all prior outcomes and one-day forward models remain unchanged.",
+    "Expert-level OLMAR/PAMR V1 is closed after a shared independent weight-audit failure. Preserve10048model input/output records and121uncertified intentions per rule;the independent expected trajectory and first failing step were not recorded. Do not claim two isolated algorithm failures or an exact root cause,repair/retry frozen versions,or run funded accounts. Select a genuinely independent expert-layer question before any new design/freeze/registration;none is selected by this failure record.",
     "Continue economically motivated, preregistered independent small batches without ordinary per-batch approval or a configuration-count ceiling until2026-10-31T15:59Z. Use one computation; at cutoff preserve partial work, clear only the SSD session timer and confirm absence.",
     "Keep old source refusals, VIG/SDY terminal429 and prospective/PIT gates. The independent market-only IBKR adapter is proved, but the one actual probe stopped on2157 before historical requests;0history rows/admissions,no automatic retry or inferred entitlement denial. Default readonly account synchronization remains prohibited."
   ],
   "next_zh": [
-    "保留SSD52个登记身份：46项完成审阅、6项技术失败、0待评估，184资金路径、合计224完成、0通过，来自556条真实日志。最新两条主账户余量压力身份是准备技术失败，不是新增财务评估；全部旧结果和一天前瞻模型保持。",
-    "主账户余量压力V1已终止：保留451条虚拟资本部分证书；第一来源角色独立区间检查失败，第二角色未开始准备，资金账户0。不得重试或修改冻结规则/容差、重跑旧来源管线，也不得推断未保存的失败操作数。下一步须先选真正独立的专家层问题；本次失败记录尚未选择新的设计或模型。",
+    "保留SSD54个登记身份：46项完成审阅、8项技术失败、0待评估，184资金路径、合计224完成、0通过，来自560条真实日志。最新两条专家反转身份是准备技术失败，不是新增财务评估；全部旧结果和一天前瞻模型保持。",
+    "专家层OLMAR/PAMR V1因共享独立权重审计失败而终止。保留10048条模型输入输出和每规则121条未认证主意图；独立预期轨迹及首次失败步骤未记录。不得声称两算法分别独立失败或推断精确根因，不修复/重试冻结版本，也不启动资金账户。下一步须先选真正独立的专家层问题；本次失败记录尚未选择新设计或模型。",
     "持续开展有经济理由、事前冻结的独立小批次，无普通逐批确认或配置次数上限，截止2026-10-31T15:59Z；单计算job，届时保存未完状态、只清除SSD会话timer并确认不存在。",
     "原拒绝来源、VIG/SDY终止429和前瞻/PIT门保持。独立IBKR market-only适配器已证明，但唯一真实探针在历史请求前因2157停止；历史行/准入0，不自动重试或推断订阅拒绝，仍禁止默认readonly账户同步。"
   ],

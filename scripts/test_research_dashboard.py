@@ -395,6 +395,13 @@ class ProjectionTests(unittest.TestCase):
             ("expert_headroom_stress_transition_preparation", "unregistered_other_study"),
             ("expert_headroom_stress_transition_preparation",
              "ssd_expert_full_covariance_risk_budget_20261030_v1"),
+            ("ordered_path_preparation", "ssd_expert_online_reversion_20261030_v1"),
+            ("account_evaluation", "ssd_expert_online_reversion_20261030_v1"),
+            ("expert_headroom_stress_transition_preparation",
+             "ssd_expert_online_reversion_20261030_v1"),
+            ("expert_online_reversion_preparation", "unregistered_other_study"),
+            ("expert_online_reversion_preparation",
+             "ssd_expert_headroom_stress_20261030_v1"),
         ]
         for stage, study_id in cases:
             with self.subTest(stage=stage, study_id=study_id):
@@ -415,6 +422,24 @@ class ProjectionTests(unittest.TestCase):
         for candidate in result["ssd_research"]["candidates"][2:]:
             self.assertEqual(candidate["failure_stage"],
                              "expert_headroom_stress_transition_preparation")
+            self.assertFalse(candidate["full_gate_pass"])
+            self.assertTrue(all(path["metrics"] is None and path["execution"] is None
+                                and path["gates"] == {} for path in candidate["paths"]))
+        self.assertEqual(result["summary"], self.current["summary"])
+        self.assertEqual(result["forward"], self.current["forward"])
+
+    def test_ssd_expert_reversion_failure_keeps_both_rules_without_target_or_account(self) -> None:
+        root = self.covariance_preparation_failure(
+            stage="expert_online_reversion_preparation",
+            study_id="ssd_expert_online_reversion_20261030_v1",
+        )
+        result = build_snapshot(root)
+        cohort = result["ssd_research"]["cohorts"][-1]
+        self.assertTrue(cohort["terminal_preparation_failure_without_target_proof"])
+        self.assertEqual((cohort["registered"], cohort["technical_failures"],
+                          cohort["completed"], cohort["account_paths"]), (2, 2, 0, 0))
+        for candidate in result["ssd_research"]["candidates"][2:]:
+            self.assertEqual(candidate["failure_stage"], "expert_online_reversion_preparation")
             self.assertFalse(candidate["full_gate_pass"])
             self.assertTrue(all(path["metrics"] is None and path["execution"] is None
                                 and path["gates"] == {} for path in candidate["paths"]))

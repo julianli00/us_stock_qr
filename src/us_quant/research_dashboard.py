@@ -452,6 +452,8 @@ def ssd_preparation_failure(inputs: PublishedInputs, item: dict, node: dict, pac
             "expert_full_covariance_preparation",
         "ssd_expert_headroom_stress_20261030_v1":
             "expert_headroom_stress_transition_preparation",
+        "ssd_expert_online_reversion_20261030_v1":
+            "expert_online_reversion_preparation",
     }.get(item["study_id"], "ordered_path_preparation")
     if (
         packet.get("schema_version") != 3

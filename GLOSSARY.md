@@ -60,6 +60,11 @@ The accumulated assessment information a meta-strategy uses to revise future cap
 weights. It is not the main account's holdings, cash or realized wealth.
 _Avoid_: Main capital account, transferable shadow wealth guarantee
 
+**Expert reversal forecast (专家反转预期)**:
+An expectation that recent relative weakness among complete experts will reverse.
+It is an allocation premise, not an observed recovery or an independent source of returns.
+_Avoid_: Realized rebound, expert qualification, guaranteed recovery
+
 **Assessment-to-main divergence (评估—主账户偏离)**:
 A difference between assessment reference performance and main-account performance
 over comparable periods. It does not by itself identify an implementation defect or a

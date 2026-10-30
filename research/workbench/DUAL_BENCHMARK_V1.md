@@ -20,7 +20,54 @@ inception date. Raw documents, prices and daily account ledgers remain private.
 The original bundle's README and manifest remain byte-for-byte unchanged; this
 separate document describes the new protocol without rewriting that history.
 
-## Latest main-headroom stress controller: terminal preparation failure
+## Latest expert-level reversal study: terminal preparation failure
+
+The [actual failure record](evidence/expert_online_reversion_20261030_preparation_failure_v1.json)
+archives two fixed countercyclical allocation rules over the unchanged six valid
+experts. OLMAR window5/epsilon10 and PAMR epsilon0.5 come from the existing
+prior-art baselines, not a new parameter search or a choice of full-horizon
+return winners. Only their pure update law is reused; the old nineteen-ETF
+universe, unadmitted DBC role and asset-level strategy pipelines are not imported.
+No new standalone expert or independent economic factor is claimed.
+
+The proposed statistical state uses each expert's saved NET daily observations,
+with the actual2016-10-05 reference seed, six observed level formation and an
+equal-six initial prior. An exactly flat forecast retains prior weights because
+it has no relative information; this is explicit, not a successful forecast.
+Learning is daily, but main intentions remain initial/month-end only, with the
+original actual-holdings band,63-session covariance, delayed fills, costs and
+cash funding. Learning wealth is not main capital or a transferable protection
+floor. The five-year main account cannot reset the learning history.
+
+Implementation/input freeze
+`8cf9d233961c51a4c28854d595687bdb15c284c982ecbceb261e173bc76458b9`
+bound159local code files,144policies and669source references before real learning.
+The successful focused validation had48passing checks; an earlier attempt's
+single incorrect expected source-study label was corrected before this freeze.
+Neither synthetic validation nor the source checks establish strategy returns.
+
+| Fixed rule | Actual registration UTC | Actual terminal failure UTC | Funded paths |
+| --- | --- | --- | ---: |
+| Expert OLMAR reversal | 2026-10-30T18:06:26.685824Z | 2026-10-30T18:06:38.231390Z | 0 |
+| Expert PAMR reversal | 2026-10-30T18:06:26.927572Z | 2026-10-30T18:06:38.755056Z | 0 |
+
+Both registrations preceded the one actual preparation run. Each rule retained
+2512learning inputs and2512resolved outputs over2016-10-06--2026-10-05, plus121
+uncertified main intentions. The shared independent recurrence audit then failed
+on disagreeing weights. This is not two isolated algorithm failures. All model
+operands and outputs remain private, but the independent expected trajectory
+and first failing comparison were not recorded. No exact discrepancy or
+numerical root cause is asserted. The real prefix checks were not reached.
+
+Frozen code, economic parameters and tolerances remain unchanged without retry.
+No complete target proof, intended registration packet, financial publication
+fence, funded path or new CAGR/Sharpe/drawdown/turnover/fee result exists. The
+failed rules cannot enter the valid expert pool. Journal560has54registered
+SSD identities,46completed reviews,eighttechnical failures,zero pending and184
+funded paths:224combined completions,zero qualifiers. All earlier valid experts,
+financial rejections and one-day prospective identities remain unchanged.
+
+## Previous main-headroom stress controller: terminal preparation failure
 
 The [retained failure record](evidence/expert_headroom_stress_20261030_preparation_failure_v1.json)
 contains two registered complete policies under one new controller construction,
@@ -61,7 +108,7 @@ registration or scientific preparation and is retained separately; there was
 one actual scientific preparation run. Frozen code, tolerances, all failures
 and the partial file are unchanged; this version is not retried. No actual
 funded path or new CAGR, Sharpe, drawdown, turnover or fee estimate exists.
-Journal556now has52registered SSD identities,46completed reviews,sixtechnical
+Its terminal journal556snapshot had52registered SSD identities,46completed reviews,sixtechnical
 failures,zero pending and184funded paths:224combined completions,zero qualifiers.
 The original ledger, all source outcomes and prospective one-day/null-metric
 identities remain unchanged. No investment-goal completion is claimed.

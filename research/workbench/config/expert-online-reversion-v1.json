@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_expert_online_reversion_20261030_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "prior_completed_configurations": 224,
+  "prior_new_registered_candidates": 52,
+  "prior_new_completed_strategy_evaluations": 46,
+  "prior_new_technical_failures": 6,
+  "prior_journal_sequence": 556,
+  "prior_journal_head_sha256": "476d19a6aa712a2aa5c2717fd518e3c7cc9d9c1c300311104ad8654ec46682e6",
+  "actual_continuation_event": 53048,
+  "source_registration": {
+    "path": "evidence/six_expert_meta_20261030_registration_v1.json",
+    "sha256": "a577ca24f71f83f810d784a32d4d36e186228b9bd6fc9c2caedaa62703d319fa"
+  },
+  "source_controls": {
+    "path": "evidence/six_expert_meta_20261030_results_v1.json",
+    "sha256": "ce4cd4db8326768cdc5beb018939dd68760adb39833a734d4c6a9c2385d67f38"
+  },
+  "previous_growth_results": {
+    "path": "evidence/expert_online_log_growth_20261030_results_v1.json",
+    "sha256": "c1af8346df70d4b16b8651c4bc3ecaf2cb29a3428730be939acbd25130396211"
+  },
+  "prior_terminal_failure": {
+    "path": "evidence/expert_headroom_stress_20261030_preparation_failure_v1.json",
+    "sha256": "8bf057fccb9a85363862d6a8248efdf4f8b3463f1afd5afee282d8adf659e2f8"
+  },
+  "prior_art_policy": {
+    "path": "config/online-reversion.json",
+    "sha256": "349ce0aae198bc8cea98490792ca38223e8abb8dd529e98c93e6bd92ba5344db"
+  },
+  "pure_update_implementation": {
+    "path": "src/us_quant/online_reversion.py",
+    "sha256": "4d51901e4879814d9855545a6dca8b8b96d89a1813a692dd8b0837c098fdfe87"
+  },
+  "expert_ids": [
+    "equity_first_month_end_commitment_v1",
+    "benchmark_opportunity_joint_tail_v1",
+    "symmetric_garch_growth_bil_v1",
+    "semiconductor_ratchet_protection",
+    "semiconductor_option_dollar_profit_share_confirmation",
+    "four_factor_defense_diversified"
+  ],
+  "mechanism_groups": [
+    "committed_price_trend_defense",
+    "joint_tail_opportunity",
+    "conditional_variance_growth",
+    "wealth_feedback_protection",
+    "common_quarter_profit_dollar_confirmation",
+    "cross_asset_defensive_relative_strength"
+  ],
+  "initial_decision_session": "2016-10-05",
+  "shadow_reference_path": "10y-base",
+  "formation_price_observations": 6,
+  "reference_capital_usd": 10000,
+  "learning_clock": "each_complete_NET_source_day_at_its_close",
+  "learning_state_resets_for_five_year_account": false,
+  "learning_continues_through_last_source_session": true,
+  "initial_expert_weights": "equal_six",
+  "unscored_main_intention": "equal_six_without_a_success_claim",
+  "constant_forecast_rule": "retain_previous_weights_without_new_cross_expert_information",
+  "main_decision_clock": "actual_initial_anchor_and_genuine_month_ends",
+  "actual_weight_trade_band": 0.025,
+  "invested_target_budget": 0.98,
+  "cash_reserve": 0.02,
+  "independent_weight_and_target_tolerance": 1e-10,
+  "minimum_economic_factor_families": 3,
+  "new_economic_factor_definitions": 0,
+  "new_shadow_account_runs": 0,
+  "new_source_requests": 0,
+  "candidate_count_in_this_study": 2,
+  "study_size_is_a_total_research_quota": false,
+  "candidates": [
+    {
+      "id": "expert_pool_six_olmar_reversion_v1",
+      "method": "olmar",
+      "window": 5,
+      "epsilon": 10.0
+    },
+    {
+      "id": "expert_pool_six_pamr_reversion_v1",
+      "method": "pamr",
+      "window": 1,
+      "epsilon": 0.5
+    }
+  ],
+  "methodology": {
+    "question": "Can a countercyclical forecast across the same six complete NET experts complement the previous growth-following, dependence and tail-risk allocators?",
+    "economic_role": "Relative expert weakness may reverse; this is a falsifiable allocation premise, not demonstrated complementarity or a new independent economic factor.",
+    "parameter_origin": "The two existing published-rule baselines retain window5/epsilon10 and PAMR epsilon0.5; no parameter sweep or selection by full-horizon returns.",
+    "learning_input": "Reconstruct each expert's positive NET assessment wealth from its unchanged saved10y-base returns and the actual2016-10-05 reference seed; no old account or signal pipeline is replayed.",
+    "olmar_forecast": "Mean of the latest five observed source wealth levels divided by the current level.",
+    "pamr_forecast": "Latest observed NET source wealth relative; the passive-aggressive update moves away from recent relative winners.",
+    "degenerate_forecast": "Exactly identical finite coordinate forecasts contain no relative information and retain prior weights; this explicit mathematical-degeneracy guard does not change or patch the old module.",
+    "execution": "Daily learning changes assessment weights, not daily trading. Only the original initial/month-end targets enter the existing monthly actual-holdings Adapter, original band,63-session covariance, fees, delays and cash funding.",
+    "partial_evidence": "Persist each learning input before applying its update, and resolved outputs before independent verification; retain incomplete records on error.",
+    "old_asset_level_reversion_pipeline_replayed": false,
+    "old_19_asset_universe_or_DBC_admitted": false,
+    "new_standalone_expert_added": false,
+    "pool_selected_from_complete_returns": false,
+    "learning_state_is_main_wealth": false,
+    "shadow_wealth_summed_into_main_capital": false,
+    "source_feedback_floor_transferred": false,
+    "universal_NET_wealth_identity_or_bound_claimed": false,
+    "headroom_stress_V1_repaired_or_retried": false,
+    "historical_expert_availability_is_counterfactual": true,
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}
