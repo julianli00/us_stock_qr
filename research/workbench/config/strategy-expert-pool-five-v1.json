@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_strategy_expert_pool_five_20261030_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "prior_completed_configurations": 214,
+  "prior_new_registered_candidates": 39,
+  "prior_new_completed_strategy_evaluations": 36,
+  "prior_new_technical_failures": 3,
+  "prior_journal_sequence": 432,
+  "prior_journal_head_sha256": "271652e16e9df7486d8f58783afeb87b97343b0f10af4d14a731e54e8e058904",
+  "source_registration": {
+    "path": "evidence/four_expert_meta_20261029_registration_v1.json",
+    "sha256": "4e84ee5908ab8046f615dc0f6918aeef73aa9207c95bf58a38876c01c270fcfe"
+  },
+  "source_specification_sha256": "9543c88c522558ec470f0b7ca3154d37408c083ff475a508e648eb3f8689a62b",
+  "previous_four_results": {
+    "path": "reports/ssd-continuous-research-v1/four-expert-meta-20261029-v1/results.json",
+    "sha256": "fd05bdaeb6c7b389aaced6cbb1e1f114e1b756e3db7aa4a609d897a3be044699"
+  },
+  "source_scoring_policy": {
+    "path": "config/strategy-expert-pool-four-v1.json",
+    "sha256": "f873d80973265047e2a15fbd6d29765ed5a4397988b2f371562aaeddbb1f574d"
+  },
+  "first_pool_admission": {
+    "path": "reports/ssd-continuous-research-v1/expert-pool-transition-20261029-v1/pool-admission-v1.json",
+    "sha256": "cc7524c6137b58651bca7c2c532334e05a9fc8fc062131c0a40c65212d91fb87"
+  },
+  "feedback_expert_admission": {
+    "path": "reports/ssd-continuous-research-v1/feedback-expert-admission-20261029-v2/admission-v2.json",
+    "sha256": "8a02f12d4de8829c65ea54ee7be902da9377056c65aed3b6f8f07adb622335f5"
+  },
+  "profit_expert_admission": {
+    "path": "reports/ssd-continuous-research-v1/profit-expert-admission-20261030-v1/admission-v1.json",
+    "sha256": "81efe9c58adc7a5d518bd5b001496d6b8f8bd2a331881050988e812bf57a9e00"
+  },
+  "profit_public_admission": {
+    "path": "evidence/legacy_profit_expert_20261030_admission_v1.json",
+    "sha256": "6907d209b8c7d97e335672d778ffe2d979c09d0c03c5aba39a94c54ade7fbba4"
+  },
+  "expert_ids": [
+    "equity_first_month_end_commitment_v1",
+    "benchmark_opportunity_joint_tail_v1",
+    "symmetric_garch_growth_bil_v1",
+    "semiconductor_ratchet_protection",
+    "semiconductor_option_dollar_profit_share_confirmation"
+  ],
+  "mechanism_groups": [
+    "committed_price_trend_defense",
+    "joint_tail_opportunity",
+    "conditional_variance_growth",
+    "wealth_feedback_protection",
+    "common_quarter_profit_dollar_confirmation"
+  ],
+  "initial_decision_session": "2016-10-05",
+  "lookback_sessions": 126,
+  "training_sessions": 84,
+  "validation_sessions": 42,
+  "selected_experts": 2,
+  "selection_score_decimal_places": 12,
+  "shadow_reference_path": "10y-base",
+  "reference_capital_usd": 10000,
+  "switch_cost_bps_per_side": 5.0,
+  "switch_commission_per_changed_asset_usd": 1.0,
+  "switch_cost_amortization_sessions": 21,
+  "changed_asset_numeric_tolerance": 1e-12,
+  "invested_target_budget": 0.98,
+  "cash_reserve": 0.02,
+  "actual_weight_trade_band": 0.025,
+  "minimum_economic_factor_families": 3,
+  "new_economic_factor_definitions": 0,
+  "new_shadow_account_runs": 0,
+  "new_shadow_recommendation_artifacts": 0,
+  "new_source_requests": 0,
+  "candidate_count_in_this_study": 2,
+  "study_size_is_a_total_research_quota": false,
+  "candidates": [
+    {"id": "expert_pool_five_equal_weight_v1", "weighting": "equal"},
+    {"id": "expert_pool_five_rolling_pair_v1", "weighting": "train_erc_validate_net"}
+  ],
+  "methodology": {
+    "question": "Does one already admitted complete common-quarter profit-share/dollar policy improve the existing single-capital expert combination? Change the fixed pool from four to five, not the scoring or execution law.",
+    "controlled_change": "Keep all four previously selected representatives and add the output-normalized macro policy. Equal control uses one fifth each. Reuse the exact existing generic choose_pair and combine functions:126/84/42mature observations,k2,inverse-training-standard-deviation pair ERC,minimum train/validation net-excess risk score,original incremental switch-cost proxy and12-decimal lexical tie rule. No grid,posterior integration,forgetting,floor or band rescue.",
+    "mechanisms": "Commitment,opportunity joint-tail,conditional variance,own-wealth feedback and common-quarter profit/dollar information describe policy logic,not five independent economic factors or guaranteed complementary risks. Inspect all ten candidate pairs using past covariance and retain correlation/marginal-risk/cost records.",
+    "admission_and_archives": "Reuse the fixed first-pool admission,plain feedback admission and actual macro admission. Their standalone financial failures remain. GJR is valid but a related nonselected variance variant. Profit-level/option-OR variants and other unreviewed archives are not automatically admitted or declared invalid. Previously excluded leverage,technical-invalid or source-unadmitted versions remain excluded.",
+    "macro_scope": "Use the admitted saved same-query completed CPATAX/GDP quarter policy,not companyEPS or an independently registered factor. Preserve two-prior-XNYS cutoff,186-day quarter-age,63-session comparison,strict decline,half scaling and the original option/H10/source constraints. Intraday-first-release/full historical methodology chains remain unverified.",
+    "availability": "The original feedback expert first genuinely recommends on2016-10-05;keep that real initial-capital decision,then genuine completed exchange month ends. Macro monthly recommendations are already available then. Do not fabricate September30 feedback or backdate actual expert introduction. Preserve original full formal calendars.",
+    "maturity_and_missingness": "Before126common net observations use explicitly UNSCORED equal fifths,not invented scores or safety. Missing post-start recommendations or dates are errors. Degenerate pairs remain explicitly unscorable;negative valid scores still rank with no new cash cutoff. Preserve all warmup returns and costs.",
+    "capital_and_execution": "Reuse five existing ten-year-base NET shadow books and existing recommendation bytes without source,fit,target or shadow-account replay. Net the expert recommendations into one14-asset target,98percentETF/2percentidle cash. Each formal path has one freshUSD10000 main book,original2.5ppmonthly actual-holdings feedback,5/20bps,USD1tickets,1/2sessiondelays,RF and initial10000drawdown peak. Shadow cash,wealth,fees and feedback peaks do not transfer to main capital or guarantee its drawdown.",
+    "bias_and_clocks": "Pool selection follows214exposed completions. Preserve original policy registration,actual expert admission and counterfactual recommendation availability separately. Old four-expert accounts are exposed saved controls,not newly rerun or independent OOS evidence. Rolling train/validation and prefix causality are not independent forward proof.",
+    "qualification": "The same candidate must jointly pass every original10y/5y/base-stress path:netSharpe>1,CAGR>12percent,DD<=15percent,matched-costfullcapitalSPYandQQQ plus originalstress-vs-base-SPY. Disclose real registered factor participation,turnover,orders and fees;no metric splicing or invented turnover cap.",
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

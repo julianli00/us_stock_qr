@@ -6593,6 +6593,90 @@ and zero qualifiers**. Exposed-history source
 selection is not independent forward validation or
 investment-goal completion.
 
+## Frozen five-expert pool inclusion comparison
+
+The [new fixed policy](config/strategy-expert-pool-five-v1.json)
+adds the technically admitted common-quarter profit-share/dollar
+policy to the unchanged commitment, joint-tail, symmetric-GARCH
+and own-wealth-feedback representatives. The question is whether
+this macro-information role improves their combined main account,
+not whether the source has become a standalone champion. Five
+mechanism labels are not five independent factors or demonstrated
+complementary risks.
+
+The [actual registration](evidence/five_expert_meta_20261030_registration_v1.json)
+records the equal-weight control at
+**2026-10-30T00:59:50.498159Z** and rolling pair at
+**00:59:50.717413Z**. Implementation/input intent SHA256:
+`2998735336cda3be57c17ae5298f75ea938bd6d7beb8be56b05f1ac4d3508b56`.
+Frozen specification SHA256:
+`557aa3f10626b80768cd99ff799d5d682badc97cdc2070ccaba8060a73cc75d1`.
+Canonical registration SHA256:
+`829696970740847d27d1e7c697c95218af0d34104122176a7273acf04ecc6af4`.
+These clocks follow the actual scheduled invocation at
+2026-10-30T00:43:10.037Z; registration precedes all new
+real composition scores/targets and no new main account exists
+at this snapshot.
+
+The [five-member Module](src/us_quant/strategy_expert_pool_v3.py)
+reuses the **same existing generic pair selector and target combiner**.
+The equal control assigns one fifth to each complete policy.
+The rolling law retains126common mature observations,84training,
+42validation,two selected experts,inverse-training-standard-deviation
+pair risk weights,the lower train/validation net-excess risk score,
+the original incremental switching proxy and12-decimal lexical
+tie rule. All ten possible pairs retain correlation,marginal-risk
+and score records; relative risk balancing is not an absolute
+main-account drawdown ceiling.
+
+The original first-pool admission and the two independently recorded
+additional admissions are read as cached evidence through the
+existing dense/monthly Adapters. No completed admission,source
+selector,fit,target generator or shadow/main account is replayed.
+GJR stays valid but is a related nonselected variance variant.
+Unreviewed profit-level/option-OR and other archives do not become
+valid or invalid merely because this pool was selected.
+
+Keep the real2016-10-05initial decision and121initial/month-end
+decisions. Seven initial decisions explicitly lack126common
+observations and use unscored equal fifths,without dropping any
+formal return day. The first mature score is2017-04-28.
+Independent scalar checks of all ten pairs have maximum target,
+expert-weight and score differences respectively
+`1.1102230246251565e-16`,
+`2.220446049250313e-16` and
+`5.329070518200751e-15`.
+Actual prefix truncations are2016-10-05,2017-03-31,
+2017-09-29,2021-09-30and2026-09-30.
+
+For each new formal path there is only one freshUSD10000 account
+and one unified14-asset target,not five separate capitals.
+The original98percentETF/2percentidle-cash budget,
+monthly2.5ppactual-holding feedback,5/20bps,USD1tickets,
+one/two-session delays,RF,initial peak and every joint gate remain.
+Macro aggregate-profit/output interpretation and incomplete
+intraday/full-methodology evidence retain their admitted limits.
+The specialist's policy registration,actual expert admission
+and counterfactual recommendation availability stay separate.
+Selection after214exposed completions is not independent
+out-of-sample or forward validation.
+
+At this registration snapshot the436-event journal derives
+**41 SSD registrations,36 completed/reviewed,three technical
+failures,two pending,144 funded paths,214 combined completions
+and zero qualifiers**. The real remote publication fence is still
+required before the eight new funded main paths. No new source,
+shadow book,expert recommendation artifact or economic factor definition
+has been added.
+
+The frozen financial driver's legacy report-field spelling is
+not changed. Following the preserved four-expert reporting
+precedent, a separate canonical reporting Adapter will serialize
+the saved outcomes with the existing public boundary flags.
+Its three schema/value-preservation checks precede any new
+main account. It changes no financial rule, input, target,
+account, metric, gate or economic-trial count.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,

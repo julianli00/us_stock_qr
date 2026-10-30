@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-30",
-  "phase": "legacy_macro_profit_expert_admitted",
-  "active_research_focus": "freeze_next_expert_pool_study_with_admitted_macro_representative",
+  "phase": "five_expert_meta_registered_waiting_publication",
+  "active_research_focus": "publish_five_expert_registration_before_eight_master_paths",
   "research_mainline": {
     "id": "strategy_expert_pool_and_rolling_meta_v1",
     "user_directed": true,
@@ -238,6 +238,7 @@
       "independent_forward_validation": false
     },
     "additional_macro_profit_expert_admission": {
+      "snapshot_scope": "Actual admission-time snapshot; the subsequent fixed five-expert study is recorded separately.",
       "evidence": "research/workbench/evidence/legacy_profit_expert_20261030_admission_v1.json",
       "evidence_sha256": "6907d209b8c7d97e335672d778ffe2d979c09d0c03c5aba39a94c54ade7fbba4",
       "private_evidence_sha256": "81efe9c58adc7a5d518bd5b001496d6b8f8bd2a331881050988e812bf57a9e00",
@@ -266,6 +267,38 @@
       "new_strategy_evaluations": 0,
       "new_shadow_account_runs": 0,
       "new_recommendation_artifacts": 0,
+      "new_source_requests": 0,
+      "investment_objective_verified": false,
+      "independent_forward_validation": false
+    },
+    "five_expert_meta_study": {
+      "registration": "research/workbench/evidence/five_expert_meta_20261030_registration_v1.json",
+      "registration_sha256": "829696970740847d27d1e7c697c95218af0d34104122176a7273acf04ecc6af4",
+      "frozen_specification_sha256": "557aa3f10626b80768cd99ff799d5d682badc97cdc2070ccaba8060a73cc75d1",
+      "implementation_and_input_freeze_intent_sha256": "2998735336cda3be57c17ae5298f75ea938bd6d7beb8be56b05f1ac4d3508b56",
+      "actual_registered_at_utc": [
+        "2026-10-30T00:59:50.498159Z",
+        "2026-10-30T00:59:50.717413Z"
+      ],
+      "complete_strategy_expert_representatives": 5,
+      "new_financial_rules": 2,
+      "controlled_change": "include_admitted_common_quarter_profit_share_dollar_expert",
+      "same_prior_scoring_windows_and_weight_law": true,
+      "same_original_main_execution_and_financial_gates": true,
+      "combined_decisions_per_rule": 121,
+      "initial_decision_session": "2016-10-05",
+      "initial_unscored_decisions": 7,
+      "scored_decisions": 114,
+      "first_scored_decision": "2017-04-28",
+      "maximum_independent_target_difference": 1.1102230246251565e-16,
+      "maximum_independent_expert_weight_difference": 2.220446049250313e-16,
+      "maximum_independent_net_score_difference": 5.329070518200751e-15,
+      "actual_prefix_checks": 5,
+      "actual_funded_paths_completed": 0,
+      "publication_fence_before_accounts_still_required": true,
+      "existing_four_expert_results_replayed": false,
+      "new_shadow_account_runs": 0,
+      "new_shadow_recommendation_artifacts": 0,
       "new_source_requests": 0,
       "investment_objective_verified": false,
       "independent_forward_validation": false
@@ -388,10 +421,10 @@
       "sha256": "ccff66c847db6519132775a177268c03d7ec36491076380be01d01f41589287d"
     },
     "aggregate_counts": {
-      "registered": 39,
+      "registered": 41,
       "completed": 36,
       "reviews": 36,
-      "pending": 0,
+      "pending": 2,
       "technical_failures": 3,
       "qualified": 0,
       "account_paths": 144,
@@ -613,6 +646,14 @@
         "results": "research/workbench/evidence/expert_net_mixture_20261029_results_v1.json",
         "results_sha256": "004761e6de175fb9e1c1447872abdb03626c7843374aac10ad4cb96ef563bb70",
         "preregistration_commit": "00b7d1a4b87fd87c9345032c1bf8b1946e70a9dd"
+      },
+      {
+        "study_id": "ssd_strategy_expert_pool_five_20261030_v1",
+        "registration": "research/workbench/evidence/five_expert_meta_20261030_registration_v1.json",
+        "registration_sha256": "829696970740847d27d1e7c697c95218af0d34104122176a7273acf04ecc6af4",
+        "results": null,
+        "results_sha256": null,
+        "preregistration_commit": null
       }
     ],
     "status": "first_pair_complete_both_rejected",
