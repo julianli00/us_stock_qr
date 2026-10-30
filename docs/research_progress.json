@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-30",
-  "phase": "active_absolute_risk_diagnosis_completed",
-  "active_research_focus": "select_next_independent_expert_layer_question_after_risk_diagnosis",
+  "phase": "expert_full_covariance_preparation_failed",
+  "active_research_focus": "select_next_independent_expert_layer_question_after_technical_rejection",
   "research_mainline": {
     "id": "strategy_expert_pool_and_rolling_meta_v1",
     "user_directed": true,
@@ -729,6 +729,46 @@
       "investment_objective_verified": false,
       "order_authority": false
     },
+    "expert_full_covariance_risk_budget_study": {
+      "terminal_failure_evidence": "research/workbench/evidence/expert_full_covariance_risk_budget_20261030_preparation_failure_v1.json",
+      "terminal_failure_evidence_sha256": "b68685a85e7b3d79d1aff34dcd03548c594cb523761fee17236f0c43e5ea9bda",
+      "implementation_and_input_freeze_intent_sha256": "c74eb8164252666a3be33fa571bf192093f8742ed82d4a44836fbdf341f63adf",
+      "frozen_specification_sha256": "fba8afe2e458239b87d7e352bf05c179468bcadc0a61c4520b5e4e347001375c",
+      "source_references_frozen": 669,
+      "exact_frozen_implementation_and_validation_references": 8,
+      "actual_registered_at_utc": "2026-10-30T06:53:42.901371Z",
+      "actual_registered_event_sequence": 503,
+      "actual_failed_at_utc": "2026-10-30T06:53:47.072058Z",
+      "actual_failure_event_sequence": 504,
+      "failure_stage": "expert_full_covariance_preparation",
+      "status": "terminal_technical_failure",
+      "complete_strategy_expert_representatives": 6,
+      "covariance_fit_observations": 126,
+      "subperiod_diagnostics_are_heldout_validation": false,
+      "offline_checks_before_actual_preparation": 37,
+      "offline_checks_prove_actual_preparation_success": false,
+      "original_frozen_code_changed_after_failure": false,
+      "target_proof_completed": false,
+      "actual_new_funded_accounts": 0,
+      "new_completed_strategy_evaluations": 0,
+      "new_technical_failures": 1,
+      "numerical_failure_witness_sha256": "679a688096c43ea3ba219bd18ab28e76261bda65206cdc14329c19296cec7b38",
+      "maximum_independent_expert_weight_difference": 3.1711058148808924e-6,
+      "unchanged_independent_expert_weight_difference_limit": 1e-6,
+      "maximum_independent_target_difference": 1.1102230246251565e-16,
+      "maximum_independent_covariance_difference": 3.2526065174565133e-19,
+      "maximum_primary_risk_budget_equation_error": 9.603984274519917e-13,
+      "separate_Newton_real_diagnosis_converged": false,
+      "original_in_memory_arrays_claimed_recovered": false,
+      "any_numeric_or_financial_acceptance_bound_relaxed": false,
+      "new_candidate_or_repaired_method_selected": false,
+      "old_controls_accounts_or_verdicts_changed": false,
+      "new_shadow_account_runs": 0,
+      "new_source_requests": 0,
+      "independent_forward_validation": false,
+      "investment_objective_verified": false,
+      "order_authority": false
+    },
     "investment_objective_verified": false
   },
   "research_dashboard": {
@@ -847,11 +887,11 @@
       "sha256": "ccff66c847db6519132775a177268c03d7ec36491076380be01d01f41589287d"
     },
     "aggregate_counts": {
-      "registered": 45,
+      "registered": 46,
       "completed": 42,
       "reviews": 42,
       "pending": 0,
-      "technical_failures": 3,
+      "technical_failures": 4,
       "qualified": 0,
       "account_paths": 168,
       "total_legacy_plus_ssd_completed": 220
@@ -1104,6 +1144,14 @@
         "results": "research/workbench/evidence/expert_dual_relative_selection_20261030_results_v1.json",
         "results_sha256": "beba11c52dbf5fdabd5dc0fe79a55f78da973eb7ce182f0a1ef9c5b91c87f1a1",
         "preregistration_commit": "b56e06ce44ed4e4262cd9a5238f7a5959778c81a"
+      },
+      {
+        "study_id": "ssd_expert_full_covariance_risk_budget_20261030_v1",
+        "registration": "research/workbench/evidence/expert_full_covariance_risk_budget_20261030_preparation_failure_v1.json",
+        "registration_sha256": "b68685a85e7b3d79d1aff34dcd03548c594cb523761fee17236f0c43e5ea9bda",
+        "results": null,
+        "results_sha256": null,
+        "preregistration_commit": null
       }
     ],
     "status": "first_pair_complete_both_rejected",

@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_expert_full_covariance_risk_budget_20261030_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "prior_completed_configurations": 220,
+  "prior_new_registered_candidates": 45,
+  "prior_new_completed_strategy_evaluations": 42,
+  "prior_new_technical_failures": 3,
+  "prior_journal_sequence": 502,
+  "prior_journal_head_sha256": "6b17fa3f52d43633ad8ae342f2c4617a666e58a93b5154ed8ed86469801810ab",
+  "source_registration": {
+    "path": "evidence/six_expert_meta_20261030_registration_v1.json",
+    "sha256": "a577ca24f71f83f810d784a32d4d36e186228b9bd6fc9c2caedaa62703d319fa"
+  },
+  "source_controls": {
+    "path": "reports/ssd-continuous-research-v1/six-expert-meta-20261030-v1/results.json",
+    "sha256": "3dad709303bf7f2407f1a21b26b157845f6a5fc2ed8403f08bfeb6e4db108316"
+  },
+  "additional_dual_relative_control": {
+    "path": "reports/ssd-continuous-research-v1/expert-dual-relative-selection-20261030-v1/results.json",
+    "sha256": "69b0a9e440d7b0e8544891f4402454e47fe343a52877b9be600ebd5a53daa76e"
+  },
+  "risk_diagnosis": {
+    "path": "reports/ssd-continuous-research-v1/expert-active-absolute-risk-diagnosis-20261030-v1/summary-v1.json",
+    "sha256": "886fa646280538d8ec61e0dc17aa0a875982efbac8001076dac1f430ec3d04fb"
+  },
+  "expert_ids": [
+    "equity_first_month_end_commitment_v1",
+    "benchmark_opportunity_joint_tail_v1",
+    "symmetric_garch_growth_bil_v1",
+    "semiconductor_ratchet_protection",
+    "semiconductor_option_dollar_profit_share_confirmation",
+    "four_factor_defense_diversified"
+  ],
+  "mechanism_groups": [
+    "committed_price_trend_defense",
+    "joint_tail_opportunity",
+    "conditional_variance_growth",
+    "wealth_feedback_protection",
+    "common_quarter_profit_dollar_confirmation",
+    "cross_asset_defensive_relative_strength"
+  ],
+  "initial_decision_session": "2016-10-05",
+  "lookback_sessions": 126,
+  "sample_covariance_ddof": 1,
+  "all_observations_used_for_risk_fit": true,
+  "subperiod_diagnostic_sessions": [84, 42],
+  "subperiod_diagnostics_are_heldout_validation": false,
+  "solver_max_iterations": 10000,
+  "solver_scaled_budget_tolerance": 1e-12,
+  "covariance_integrity_tolerance": 1e-12,
+  "shadow_reference_path": "10y-base",
+  "reference_capital_usd": 10000,
+  "switch_cost_bps_per_side": 5.0,
+  "switch_commission_per_changed_asset_usd": 1.0,
+  "changed_asset_numeric_tolerance": 1e-12,
+  "invested_target_budget": 0.98,
+  "cash_reserve": 0.02,
+  "actual_weight_trade_band": 0.025,
+  "minimum_economic_factor_families": 3,
+  "new_economic_factor_definitions": 0,
+  "new_shadow_account_runs": 0,
+  "new_shadow_recommendation_artifacts": 0,
+  "new_source_requests": 0,
+  "candidate_count_in_this_study": 1,
+  "study_size_is_a_total_research_quota": false,
+  "candidates": [
+    {"id": "expert_pool_six_full_covariance_erc_v1", "weighting": "full_covariance_equal_risk_budget"}
+  ],
+  "methodology": {
+    "question": "Can full absolute RF-excess covariance risk budgeting across the unchanged six complete experts improve the final funded portfolio, rather than selecting a pair by return scores?",
+    "allocation": "Use unregularized126-session NET shadow RF-excess sample covariance. Solve the positive equal-risk-budget log-barrier objective by fixed deterministic coordinate descent and normalize to unit expert weights. No expected-return fit,asset group constraints,variance floor,shrinkage,volatility target,beta cap or parameter sweep.",
+    "diagnostics": "All126 observations fit the covariance. Original84/42subperiod net means,risks and contributions are descriptive stability checks,not held-out validation. Report original incremental switch proxy without subtracting it again from main capital or using it as a hidden gate.",
+    "missingness": "Before126complete aligned observations use explicitly unscored equal sixths. A nonpositive individual variance is explicitly unscorable equal sixths,not safety. Invalid covariance is an error. SingularPSD is not regularized;solver nonconvergence is a retained technical failure.",
+    "sources": "Reuse admitted complete experts,original recommendation and NET shadow bytes,cached source Adapters and original matched-cost SPY/QQQ. No original source,fit,target,shadow or control account is replayed.",
+    "capital": "Combine full complete-policy recommendations into one98percentETF/2percentidle fourteen-asset target. One freshUSD10000main account per original10y/5y/base-stress path,original2.5ppactual monthly band,5/20bps+USD1tickets,1/2sessiondelays,RF and initial10000drawdown peak. Shadow risk budgets are not main drawdown guarantees.",
+    "bias": "Design follows220exposed completions. Saved equal,RF-pair and dual-relative controls are exposed,not rerun or independent OOS. Preserve actual introduction versus counterfactual historicalavailability and all failures.",
+    "qualification": "Same rule must jointly pass every original path:netRFSharpe>1,CAGR>12percent,DD<=15percent,fullcapitalmatched-costSPYandQQQ plus originalstress-vs-base-SPY. Disclose real turnover,orders and fees;no metric splicing or invented turnover cap.",
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

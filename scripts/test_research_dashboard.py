@@ -355,6 +355,47 @@ class ProjectionTests(unittest.TestCase):
                 with self.assertRaises(DashboardError):
                     build_snapshot(root)
 
+    def covariance_preparation_failure(self, *, stage: str, study_id: str) -> Path:
+        root = self.synthetic_preparation_failure()
+        progress = json.loads((root / "docs/research_progress.json").read_text())
+        item = progress["ssd_continuous_research_v1"]["additional_cohorts"][0]
+        path = root / item["registration"]
+        packet = json.loads(path.read_text())
+        packet["study_id"] = item["study_id"] = study_id
+        for entry in packet["entries"]:
+            entry["specification"]["frozen"]["study_id"] = study_id
+            entry["failure_stage"] = stage
+        path.write_text(json.dumps(packet))
+        item["registration_sha256"] = hashlib.sha256(path.read_bytes()).hexdigest()
+        (root / "docs/research_progress.json").write_text(json.dumps(progress))
+        return root
+
+    def test_ssd_covariance_failure_has_exact_stage_without_target_or_account(self) -> None:
+        root = self.covariance_preparation_failure(
+            stage="expert_full_covariance_preparation",
+            study_id="ssd_expert_full_covariance_risk_budget_20261030_v1",
+        )
+        result = build_snapshot(root)
+        cohort = result["ssd_research"]["cohorts"][-1]
+        self.assertTrue(cohort["terminal_preparation_failure_without_target_proof"])
+        self.assertEqual((cohort["completed"], cohort["account_paths"]), (0, 0))
+        candidates = result["ssd_research"]["candidates"][2:]
+        self.assertEqual(len(candidates), 2)
+        self.assertTrue(all(c["status"] == "technical_failure" for c in candidates))
+        self.assertEqual(result["forward"], self.current["forward"])
+
+    def test_ssd_new_preparation_stage_cannot_be_mislabelled_or_broadened(self) -> None:
+        cases = [
+            ("ordered_path_preparation", "ssd_expert_full_covariance_risk_budget_20261030_v1"),
+            ("expert_full_covariance_preparation", "unregistered_other_study"),
+            ("account_evaluation", "ssd_expert_full_covariance_risk_budget_20261030_v1"),
+        ]
+        for stage, study_id in cases:
+            with self.subTest(stage=stage, study_id=study_id):
+                root = self.covariance_preparation_failure(stage=stage, study_id=study_id)
+                with self.assertRaisesRegex(DashboardError, "ssd_preparation_failure_record_mismatch"):
+                    build_snapshot(root)
+
     def change_pending_ssd_registration(self, root: Path, mutate) -> None:
         progress = json.loads((root / "docs/research_progress.json").read_text())
         item = progress["ssd_continuous_research_v1"]["additional_cohorts"][0]

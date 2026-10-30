@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 45 SSD identities, 42 completed/rejected, three retained technical failures and zero pending; 168 funded paths | Journal-derived current summary: 220 combined completions, zero qualifiers; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 46 SSD identities, 42 completed/rejected, four retained technical failures and zero pending; 168 funded paths | Journal-derived current summary: 220 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -223,6 +223,25 @@ independent trials,isolated drawdown causality or a proposed new risk
 cutoff. The final gates and every rejection remain unchanged. No next
 economic policy is selected;the completed total remains220with zero
 qualifiers.
+
+A [separately frozen full-covariance allocator](research/workbench/evidence/expert_full_covariance_risk_budget_20261030_preparation_failure_v1.json)
+registered at **2026-10-30T06:53:42.901371Z** but reached a terminal
+**preparation technical failure**,not a financial rejection or pass.
+It replaces pair selection with equal covariance risk budgets across
+the same six complete experts. All126mature observations fit the
+risk estimate;84/42subperiod statistics are not held-out validation.
+
+The primary and independent numerical methods disagree by up to
+3.1711e-6in expert weight,above the frozen1e-6verification bound.
+Covariance,target and risk-budget errors remain within their original
+bounds,but this does not waive the failed weight check. A separate
+Newton diagnostic also fails its frozen real-data convergence check.
+No bound or financial gate is relaxed,no repaired method is selected,
+and no target proof or main capital account is fabricated.
+The source version remains technically invalid for combination use.
+Current totals are46registrations,42completed reviews,four technical
+failures,zero pending and168funded paths:220completed configurations
+and zero qualifiers.
 
 The [new frozen protocol](research/workbench/config/dual-benchmark-v1.json)
 requires every original ten/five-year base/stress path to have net Sharpe above

@@ -349,6 +349,65 @@ paths:220combined completions,zero qualifiers. Original financial
 gates and all12saved rejections remain intact. No next economic
 policy,pool or risk parameter has been selected.
 
+## Full-covariance expert allocation: terminal preparation failure
+
+The [retained failure record](evidence/expert_full_covariance_risk_budget_20261030_preparation_failure_v1.json)
+records actual registration **2026-10-30T06:53:42.901371Z** at
+journal503 and technical failure **2026-10-30T06:53:47.072058Z**
+at504. Intent
+`c74eb8164252666a3be33fa571bf192093f8742ed82d4a44836fbdf341f63adf`
+froze the policy,four implementation/test files,669source references
+and three validation artifacts before real new allocation calculations.
+The37offline checks did not establish real-data preparation success.
+
+This is a distinct allocator,not a retuned active-score cutoff:keep
+the same six complete experts and original funded execution,then
+allocate unit expert capital with equal full-covariance marginal risk
+budgets. The unregularized NETshadow RF-excess sample covariance
+uses all126mature observations. Older84/recent42subperiod statistics
+are stability diagnostics,not held-out validation of that full fit.
+No old asset-specific group limits,shrinkage,variance floor,
+volatility target,beta cap or expected-return optimizer is inherited.
+Seven warmup decisions remain explicitly unscored equal sixths.
+
+Positive coordinate descent and the independent SLSQP method failed
+their frozen expert-weight agreement requirement. A separately
+declared diagnostic reconstructed the incomplete,unsaved calculation
+into new private artifacts;it does not claim to recover unavailable
+original in-memory bytes. A capture-only read of those saved inputs
+reproduces the original failure without regenerating targets:
+
+| Independent verification maximum | Observed error | Original bound | Result |
+|---|---:|---:|---|
+| Expert weight difference | 3.1711058148808924e-6 | 1e-6 | Failed |
+| Underlying target scalar difference | 1.1102230246251565e-16 | 1e-12 | Within bound |
+| Covariance scalar difference | 3.2526065174565133e-19 | 1e-12 | Within bound |
+| Primary risk-budget equation error | 9.603984274519917e-13 | 1e-8 | Within bound |
+
+The numerical witness hash is
+`679a688096c43ea3ba219bd18ab28e76261bda65206cdc14329c19296cec7b38`.
+A separately frozen Newton diagnostic passed four synthetic cases
+but did not converge at its declared real-data precision;its failed
+attempt and partial reconstructed artifacts are retained. These
+observations do not establish which method supplies sufficiently
+accurate independent weights. No verification bound,statistical
+test or financial gate is loosened to force agreement.
+
+The original target directory,prepared bundle,normal registration
+packet and main-account results do not exist. The public schema3
+record explicitly retains null target proof,empty actual paths,
+the real registration/failure chain hashes and zero funded accounts.
+It is a terminal technical failure,not another financial completion,
+an admitted complete strategy expert or an independent forward test.
+All previous controls and rejected financial results remain unchanged.
+
+The authoritative journal now has504events,46registrations,
+42completed reviews,four technical failures,zero pending and168funded
+paths:220combined completions,zero qualifiers. Neither this failed
+source identity nor its numerical diagnostics may be blended into a
+portfolio as if technically admitted. No replacement method or new
+economic policy is selected.
+
 ## Initial benchmark command
 
 From the SSD workspace root:

@@ -447,6 +447,11 @@ def ssd_first_pair(inputs: PublishedInputs, node: dict) -> dict:
 
 
 def ssd_preparation_failure(inputs: PublishedInputs, item: dict, node: dict, packet: dict) -> dict:
+    expected_stage = (
+        "expert_full_covariance_preparation"
+        if item["study_id"] == "ssd_expert_full_covariance_risk_budget_20261030_v1"
+        else "ordered_path_preparation"
+    )
     if (
         packet.get("schema_version") != 3
         or packet.get("record_type") != "registered_preparation_failure"
@@ -484,7 +489,7 @@ def ssd_preparation_failure(inputs: PublishedInputs, item: dict, node: dict, pac
             or not re.fullmatch(r"[0-9a-f]{64}", entry["registered_event_sha256"])
             or not re.fullmatch(r"[0-9a-f]{64}", entry["failure_event_sha256"])
             or entry["status"] != "technical_failure"
-            or entry["failure_stage"] != "ordered_path_preparation"
+            or entry["failure_stage"] != expected_stage
             or not isinstance(entry["failure_reason"], str) or not entry["failure_reason"]
             or entry["target_proof"] is not None or entry["target_proof_at"] is not None
             or entry["candidate_accounts_started"] is not False
