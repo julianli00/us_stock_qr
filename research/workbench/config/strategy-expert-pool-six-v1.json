@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_strategy_expert_pool_six_20261030_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "prior_completed_configurations": 217,
+  "prior_new_registered_candidates": 42,
+  "prior_new_completed_strategy_evaluations": 39,
+  "prior_new_technical_failures": 3,
+  "prior_journal_sequence": 467,
+  "prior_journal_head_sha256": "4dd16707904ec6b8b2fc1aa3442ffd31af3372fadfc63b512ed11deff42b81d6",
+  "source_registration": {
+    "path": "evidence/five_expert_meta_20261030_registration_v1.json",
+    "sha256": "829696970740847d27d1e7c697c95218af0d34104122176a7273acf04ecc6af4"
+  },
+  "source_specification_sha256": "557aa3f10626b80768cd99ff799d5d682badc97cdc2070ccaba8060a73cc75d1",
+  "source_scoring_policy": {
+    "path": "config/strategy-expert-pool-five-v1.json",
+    "sha256": "be911ee12eec6d3581a5185852f1d9a5a24407955b5d07b67ebf245b953f5df6"
+  },
+  "previous_five_results": {
+    "path": "reports/ssd-continuous-research-v1/five-expert-meta-20261030-v1/results.json",
+    "sha256": "f5b3e3cc92a0f8f12f2d51ab1ef673e29b50ca77eefee3958b1f40cec269514e"
+  },
+  "defensive_expert_admission": {
+    "path": "reports/ssd-continuous-research-v1/legacy-defensive-rotation-expert-admission-20261030-v1/admission-v1.json",
+    "sha256": "b47992b090212618c0120edf0e9e2f2fee617679a82214ecac8bac0ba69b9b89"
+  },
+  "defensive_public_admission": {
+    "path": "evidence/legacy_defensive_rotation_expert_20261030_admission_v1.json",
+    "sha256": "078c2c5867473e399d016d8ca075649b3ec647f0c1d1a6f71c1490f2cf7d010f"
+  },
+  "expert_ids": [
+    "equity_first_month_end_commitment_v1",
+    "benchmark_opportunity_joint_tail_v1",
+    "symmetric_garch_growth_bil_v1",
+    "semiconductor_ratchet_protection",
+    "semiconductor_option_dollar_profit_share_confirmation",
+    "four_factor_defense_diversified"
+  ],
+  "mechanism_groups": [
+    "committed_price_trend_defense",
+    "joint_tail_opportunity",
+    "conditional_variance_growth",
+    "wealth_feedback_protection",
+    "common_quarter_profit_dollar_confirmation",
+    "cross_asset_defensive_relative_strength"
+  ],
+  "initial_decision_session": "2016-10-05",
+  "lookback_sessions": 126,
+  "training_sessions": 84,
+  "validation_sessions": 42,
+  "selected_experts": 2,
+  "selection_score_decimal_places": 12,
+  "shadow_reference_path": "10y-base",
+  "reference_capital_usd": 10000,
+  "switch_cost_bps_per_side": 5.0,
+  "switch_commission_per_changed_asset_usd": 1.0,
+  "switch_cost_amortization_sessions": 21,
+  "changed_asset_numeric_tolerance": 1e-12,
+  "invested_target_budget": 0.98,
+  "cash_reserve": 0.02,
+  "actual_weight_trade_band": 0.025,
+  "minimum_economic_factor_families": 3,
+  "new_economic_factor_definitions": 0,
+  "new_shadow_account_runs": 0,
+  "new_shadow_recommendation_artifacts": 0,
+  "new_source_requests": 0,
+  "candidate_count_in_this_study": 2,
+  "study_size_is_a_total_research_quota": false,
+  "candidates": [
+    {"id": "expert_pool_six_equal_weight_v1", "weighting": "equal"},
+    {"id": "expert_pool_six_rolling_pair_v1", "weighting": "train_erc_validate_net"}
+  ],
+  "methodology": {
+    "question": "Does one already admitted complete cross-asset defensive relative-strength policy improve the existing five-expert main portfolios? Change the fixed pool from five to six,not the assessment or execution law.",
+    "controlled_change": "Keep the five previously frozen representatives and add the no-SOXX,30-70percentstock defensive policy. Equal control uses sixths. Reuse exact generic choose_pair/combine:126/84/42mature observations,k2,inverse-training-standard-deviation pair ERC,minimum train/validation net-excess risk score,original incremental switch-cost proxy and12-decimal lexical ties. No grid,temperature,prior,forgetting,floor,ratchet or band rescue.",
+    "mechanisms": "Committed trend,joint-tail opportunity,conditional variance,own-wealth feedback,common-quarter macro and cross-asset relative-strength defense are complete policy mechanisms,not six independent factors. The extra defense changes equity concentration and defensive-asset choice. Preserve all15pairs,correlation,marginal-risk and cost records rather than assume complementarity.",
+    "admission_and_archives": "Use the existing cached five-expert loader plus the completed defensive admission and its declared genuine-monthly/assessment-RF views. GJR is valid but a related nonselected variance variant. Profit-level/optionOR and highest-single-defense variants remain unreviewed,not automatically admitted or called invalid. Leverage,technical-invalid and source-unadmitted archives remain excluded.",
+    "availability": "Keep genuine initial2016Oct05feedback and the other already known recommendations;the defensive view is knownfrom2016Sep30then. Do not fabricate earlier feedback or backdate actual expert introductions. Preserve original full formal calendars.",
+    "maturity_and_missingness": "Before126common net observations use explicitly UNSCORED equal sixths. Missing post-start recommendations/dates are errors. Degenerate pairs remain explicitly unscorable;negative valid scores still rank with no new cash cutoff. Preserve all warmup returns and costs.",
+    "capital_and_execution": "Reuse six existing NET shadow-observation books and recommendation bytes with no source/fit/target/shadow-account replay. Net all recommendations into one14-asset target,98percentETF/2percentidle cash. One freshUSD10000 main book per original path,2.5ppmonthly actual-holdings band,5/20bps,USD1tickets,1/2sessiondelays,RF and initial10000DDpeak. Shadow wealth,fees and feedback peaks do not transfer to main capital or guarantee its drawdown.",
+    "RF_view_scope": "The defensive source-native decoder is not equal to active common-native. Use only its already frozen published assessment view with original commonRF;all native NETmoney/returns and source metrics remain unchanged. No new normalization,reader change or view regeneration in this study.",
+    "bias_and_clocks": "Pool selection follows217exposed completions. Preserve original registration,actual introduction and counterfactual historicalavailability separately. Saved five-expert controls are exposed,not rerun or independent OOS. Rolling train/validation and prefix causality are not independent forwardproof.",
+    "qualification": "Same candidate jointly passes every original10y/5y/base-stress path:netSharpe>1,CAGR>12percent,DD<=15percent,matched-costfullcapitalSPYandQQQ plus originalstress-vs-base-SPY. Disclose real registered factor participation,turnover,orders and fees;no metric splicing or invented turnover cap.",
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

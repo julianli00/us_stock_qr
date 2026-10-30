@@ -48,14 +48,47 @@ NAV/return/cash/cost/order field and changes only334RF cells to the
 unchanged active common RF. Original RF, books, targets, metrics and
 reader definitions are untouched; raw views remain private.
 
-No old strategy, target, account or BT pipeline was rerun. New financial
+At admission, no old strategy, target, account or BT pipeline was rerun. New financial
 trials, source requests and shadow-account runs are all zero. Six complete
 representatives are technically available, but the five-member pools and
 their failures stay unchanged; no expanded pool/ranking/weights or new
-financial result exists yet. The journal remains467events,42registrations,
+financial result existed at that stage. Its journal snapshot was467events,42registrations,
 39completed reviews,three technical failures,zero pending and156funded
 paths:217combined completions,zero qualifiers. Historical expert
 availability is counterfactual, not an actual2016introduction or forward proof.
+
+## Controlled six-expert inclusion preregistration
+
+The [new packet](evidence/six_expert_meta_20261030_registration_v1.json)
+records registrations at **2026-10-30T04:07:01.821358Z** and
+**04:07:02.009356Z**, following implementation/input freeze
+`4af1004afd583b310aaaa6e6cb6d7e2bece0f970ef2e2b668f08823897821a1e`.
+It isolates one economic change: adding the already admitted complete
+cross-asset defensive policy to the existing five representatives.
+Equal sixths are the control; rolling selection keeps the original
+126/84/42observations,two-expert ERC weights,net switch-cost score,
+tie handling and2.5ppactual monthly holdings band. This is not a
+new parameter sweep or a claim that six mechanisms are independent.
+
+The exact new implementation and654source references were frozen before
+new real meta scores or targets. Both target proofs retain121decisions,
+seven unscored initial decisions,114mature decisions and every original
+formal return day. A separate scalar implementation checks all15pairs;
+maximum target/weight/score differences are1.11e-16/2.22e-16/5.33e-15.
+Five actual truncated-prefix checks preserve prior decisions,including
+the genuine2016Oct05initial-capital anchor.
+
+No source admission,source target,fit,shadow account or benchmark was
+replayed. The defensive expert's existing genuine-monthly and common-RF
+assessment views remain unchanged. Actual expert introduction is not
+backdated to counterfactual historicalavailability. The old five-expert
+accounts remain exposed saved controls,not newly independent evidence.
+
+No new main account has started. The journal now has471events,
+44registrations,39completed reviews,three retained technical failures,
+two pending candidates and156funded paths:217combined completions,
+zero qualifiers. Actual full-dependency remote publication remains
+required before two rules times all four original freshUSD10000paths.
 
 ## Initial benchmark command
 

@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 42 SSD identities, 39 completed/rejected, three retained technical failures and zero pending; 156 funded paths | Journal-derived current summary: 217 combined completions, zero qualifiers; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 44 SSD identities, 39 completed/rejected, three retained technical failures and two pending; 156 funded paths | Journal-derived current summary: 217 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -116,11 +116,27 @@ unchanged common RF for assessment. The native source RF is **not** claimed
 equal to the active common-native RF. The original source files, common
 reader and all prior metrics remain unchanged.
 
-Six mechanism representatives are now technically available, but the
-existing five-expert studies are not rewritten and **no six-expert pool,
-ranking or allocation rule has been frozen or evaluated**. Current totals
-remain217completed configurations and zero qualifiers. This admission is
-neither a drawdown guarantee nor independent forward evidence.
+At that admission, six mechanism representatives became technically
+available, without changing the existing five-expert studies or freezing
+an expanded financial pool. That admission is neither a drawdown
+guarantee nor independent forward evidence.
+
+The [controlled six-expert inclusion study](research/workbench/evidence/six_expert_meta_20261030_registration_v1.json)
+subsequently registered equal sixths and the unchanged rolling pair at
+**2026-10-30T04:07:01.821358Z / 04:07:02.009356Z**. It keeps all five
+prior representatives and adds only the cross-asset defensive policy;
+it does not automatically enable all historical archives or retune
+126/84/42mature scoring,selected count,costs,weights or execution bands.
+All121decisions,seven explicitly unscored initial decisions,114mature
+decisions,all15candidate pairs and five prefix checks are preserved.
+The source admissions,views and NETshadow books are reused without
+source,target,fit or account replay.
+
+Current totals remain217completed configurations and zero qualifiers.
+These two newly registered identities have **no new main account or
+return evaluation yet**. Actual remote publication must precede all
+eight original funded paths; registration and causal target proof are
+not portfolio qualification.
 
 The [new frozen protocol](research/workbench/config/dual-benchmark-v1.json)
 requires every original ten/five-year base/stress path to have net Sharpe above
