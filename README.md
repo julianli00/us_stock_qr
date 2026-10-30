@@ -103,6 +103,25 @@ and fees throughout,with identical model-ticket counts. Mean expert
 weights remain near fifths;more exact numerical machinery is not a
 qualified investment result or a reason to retune its prior.
 
+An [archived cross-asset defensive policy](research/workbench/evidence/legacy_defensive_rotation_expert_20261030_admission_v1.json)
+was technically admitted as another complete expert at
+**2026-10-30T03:30:18.330199Z**. It combines four equal style exposures
+with a volatility-balanced stock sleeve and relative-strength-qualified,
+inverse-volatility GLD/TLT/IEF/BIL defense, without SOXX or leverage.
+Its original October10 registration and standalone rejection remain intact.
+This adds **zero strategy trials, source requests or shadow-account runs**.
+One explicit recommendation view removes only the proven duplicate initial
+seed; another preserves all native NET money and returns while using the
+unchanged common RF for assessment. The native source RF is **not** claimed
+equal to the active common-native RF. The original source files, common
+reader and all prior metrics remain unchanged.
+
+Six mechanism representatives are now technically available, but the
+existing five-expert studies are not rewritten and **no six-expert pool,
+ranking or allocation rule has been frozen or evaluated**. Current totals
+remain217completed configurations and zero qualifiers. This admission is
+neither a drawdown guarantee nor independent forward evidence.
+
 The [new frozen protocol](research/workbench/config/dual-benchmark-v1.json)
 requires every original ten/five-year base/stress path to have net Sharpe above
 1, net CAGR above 12%, drawdown at most 15%, and beat full-capital matched-cost

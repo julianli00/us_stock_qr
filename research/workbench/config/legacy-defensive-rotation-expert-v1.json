@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "admission_id": "ssd_legacy_defensive_rotation_expert_admission_20261030_v1",
+  "source_candidate_id": "four_factor_defense_diversified",
+  "mechanism_group": "cross_asset_defensive_relative_strength",
+  "source_registered_at": "2026-10-10T16:25:34.835292+00:00",
+  "source_specification_sha256": "1cd67a5f371a3a4d7fd6a87cd1c633082b00a3af051262d2a0d14655186d0153",
+  "source_semantic_sha256": "4badb35fa77aa16b59adf54841070d29d2e563a242a8d113987a56b546002dd1",
+  "source_bundle_semantic_sha256": "bd00cae1a685f2ce4cb1d8dba411f33071ff71b2173d262cc82e152668ac05ce",
+  "source_candidate_event_sequence": 28,
+  "source_candidate_event_sha256": "86ccccc5a85a4244b358c66d586a1c9ee0916e1da23163f223b0b291b5d6d30a",
+  "source_review_event_sequence": 30,
+  "source_review_event_sha256": "1e1eba87098926a55fba651c2b0187c7cf2228bd18c6ae27fea3d2dc22dac81c",
+  "source_registration": {
+    "path": "evidence/defensive_rotation_20261011_registration.json",
+    "sha256": "562143a7c2d9ff6b5bf9f793d205f547d187a6bbf86525a8075d13abb877b302"
+  },
+  "source_results": {
+    "path": "evidence/defensive_rotation_20261011_results.json",
+    "sha256": "9b428f3f1e4120431ef3bb37efa80add63b8d1981ec2de189ac87f8137870d26"
+  },
+  "source_bundle": {
+    "path": "reports/program-evaluations/four_factor_defense_diversified/bundle.json",
+    "sha256": "d1002e10e9462a58e68f88d031ee651ebbe1197d2577c73ffe84e4b0417ee6b3"
+  },
+  "source_identity_snapshot": {
+    "path": "reports/ssd-continuous-research-v1/legacy-defensive-rotation-expert-admission-20261030-v1/source-sqlite-identity-snapshot-v1.json",
+    "sha256": "64a2603d2ece1d40267dda9abeba10a3221f4330021385ffaed0a21f11956f7e"
+  },
+  "selection": {
+    "path": "reports/ssd-continuous-research-v1/legacy-defensive-rotation-expert-admission-20261030-v1/selection-v1.json",
+    "sha256": "9e13368cf739db65a9da69d76d783cc8851664c6cc5e5951b1a57eead20e7bc3"
+  },
+  "bridge_plan": {
+    "path": "reports/ssd-continuous-research-v1/legacy-defensive-rotation-expert-admission-20261030-v1/native-to-assessment-bridge-plan-v1.json",
+    "sha256": "01a8505d929126c0f1def26ef6cf3fbc04c13c8db93b24208417cd2b9be5d30e"
+  },
+  "cached_native_funding_and_seed_proof": {
+    "path": "reports/ssd-continuous-research-v1/legacy-defensive-rotation-expert-admission-20261030-v1/cached-native-funding-and-seed-audit-v1.json",
+    "sha256": "8c7762e874fce4943cdc0e5d9bb50851f48ce35664c14561ef290f30695cb94f"
+  },
+  "common_market_registration": {
+    "path": "evidence/expert_five_net_mixture_20261030_registration_v1.json",
+    "sha256": "c414f072afef124f1c655d3b883a5c106b0d449217c86f2b02e10870dec3ad75"
+  },
+  "source_published_dependency_commit": "040d273acc1722ae06463a0f2b0d495059b3a8c9",
+  "pinned_import_manifest_sha256": "3b2ef6789348ac88b8fdf82805415f518da85bb72c1d652735e7aeaaa63666b6",
+  "retained_code_dependency_paths": [
+    "src/us_quant/defensive_factor_rotation.py",
+    "config/defensive-factor-rotation.json",
+    "src/us_quant/research_program.py",
+    "src/us_quant/strategy_replay.py",
+    "src/us_quant/backtest.py",
+    "src/us_quant/bt_audit.py",
+    "src/us_quant/calendar.py",
+    "src/us_quant/data.py",
+    "src/us_quant/dual_horizon.py",
+    "src/us_quant/multifactor_stability.py",
+    "src/us_quant/storage.py"
+  ],
+  "admission_helper_dependency_paths": [
+    "src/us_quant/ssd_current_progress_v1.py",
+    "src/us_quant/ssd_research_v1.py",
+    "src/us_quant/candidate_receipts.py",
+    "src/us_quant/config.py",
+    "src/us_quant/dual_benchmark_v1.py",
+    "src/us_quant/research_weekly.py",
+    "src/us_quant/ssd_expert_meta_research_v1.py",
+    "src/us_quant/strategy_experts_v1.py",
+    "src/us_quant/ssd_commitment_research_v1.py",
+    "src/us_quant/daily_variance_disagreement_v1.py"
+  ],
+  "native_asset_count": 9,
+  "genuine_month_end_recommendations": 128,
+  "first_genuine_recommendation": "2016-02-29",
+  "shadow_reference_path": "10y-base",
+  "source_initial_capital_usd": 10000,
+  "invested_target_budget": 0.98,
+  "source_equity_share_min": 0.30,
+  "source_equity_share_max": 0.70,
+  "new_recommendation_view_artifacts": 1,
+  "new_assessment_view_artifacts": 1,
+  "new_strategy_evaluations": 0,
+  "new_shadow_account_runs": 0,
+  "new_source_requests": 0,
+  "original_ledger_sha256": "ed2c075d0819e1ff8bb2d6920910128e0dd2ed4be46f920fef575129d64c9317",
+  "prior_ssd_journal_sequence": 467,
+  "prior_ssd_journal_head_sha256": "4dd16707904ec6b8b2fc1aa3442ffd31af3372fadfc63b512ed11deff42b81d6",
+  "methodology": {
+    "purpose": "Admit one existing complete four-factor/multi-asset defensive relative-strength policy for a materially different expert role,not a semiconductor variant or a full-window performance winner. Keep the original standalone rejection.",
+    "rules": "Keep126-session defensive excess momentum over actual BIL,all positive eligible GLD/TLT/IEF inverse-volatility weights,63-session sleeve risk balance,30-70percentstock share,four equal factor shares,98percentETFbudget and original fees/timing. No source rule is rerun or retuned.",
+    "native_evidence": "Reuse true legacy candidate28/review30,source2frozenpolicy/model bytes,original four complete cached accounts/BT/weights/targets and their previously computed readonly funding/seed proof. The source bundle has the legacy-default accounting contract,no accounting_engine field;do not relabel it v2 or rerun native accounting.",
+    "exact_lineage": "Verify source-native-default nine-asset panels and RF EXACTLY equal the round-trip decoded stored common fourteen-asset columns. Preserve and disclose their nonzero differences from the unchanged active common-native decoder. Do not change either reader,frozen panel,tolerance or source-quality rule to manufacture native equality.",
+    "recommendation_adapter": "Copy stored native targets and remove only the one verified synthetic initial-capital seed equal to its strictly prior genuine month-end. All128genuine monthly values and all four seed-removed views must be identical. This is a new declared recommendation view,not target regeneration or redated information.",
+    "assessment_adapter": "Copy the native ten-year-base NET shadow fields exactly and change ONLY its assessment risk_free column to the unchanged active common-native original RF. Preserve source RF CSV/book and standalone metrics. No returns,NAV,cash,holdings,fees,tickets or source account are recomputed. The new separately versioned scoring view supports the existing ArchivedMonthlyExpert Interface.",
+    "capital_and_clocks": "Keep originalOct10policy registration,actual present expert admission,and first stored2016Feb29counterfactual availability separate. The native policy may be assessed despite financial failure,but its wealth,costs and protection are not main capital or a portfolio guarantee. Structural zero exposures extend nine assets to admitted fourteen,not missing prices.",
+    "future_pool": "One technical admission does not freeze a six-expert financial pool,ranking or weighting law. Existing five-expert studies and every failure remain immutable. Exposed-history source selection after217completions is not independent OOS or forwardproof.",
+    "active_common_reader_RF_definition_or_frozen_files_changed": false,
+    "source_native_RF_claimed_equal_to_active_common_native_RF": false,
+    "source_or_strategy_pipeline_replayed": false,
+    "expanded_pool_or_next_meta_rule_frozen": false,
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

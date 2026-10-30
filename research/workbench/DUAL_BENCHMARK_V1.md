@@ -20,6 +20,43 @@ inception date. Raw documents, prices and daily account ledgers remain private.
 The original bundle's README and manifest remain byte-for-byte unchanged; this
 separate document describes the new protocol without rewriting that history.
 
+## Current additional expert admission, not a financial pass
+
+The [cross-asset defensive expert admission](evidence/legacy_defensive_rotation_expert_20261030_admission_v1.json)
+completed **2026-10-30T03:30:18.330199Z**. The preserved
+`four_factor_defense_diversified` policy uses four equal style factors,
+126-session defensive momentum relative to BIL, 63-session volatility
+balancing and all positive qualifying GLD/TLT/IEF inverse-volatility
+weights. Its stock sleeve remains between30%and70%, with98%ETF investment.
+Source registration **2026-10-10T16:25:34.835292Z** and the original
+standalone financial rejection are not replaced by this new admission.
+
+Four native cached paths, their actual prior accounting/BT evidence and
+the original two frozen source files remain preserved. The new intent
+bound65input references and the final34offline checks before deriving
+views. Current publication checks cover11retained source dependencies
+plus10admission helpers; this does not retroactively claim that all21were
+frozen at the October10 source registration.
+
+The source-native nine-asset prices/RF exactly match the round-trip decoded
+stored common columns, but differ from the unchanged active common-native
+decoder. This is disclosed serialization lineage, **not native equality
+or a relaxed numerical tolerance**. One new recommendation view removes
+only the verified initial-capital seed, preserving all128genuine month-end
+recommendations. A separate assessment view retains every native NET
+NAV/return/cash/cost/order field and changes only334RF cells to the
+unchanged active common RF. Original RF, books, targets, metrics and
+reader definitions are untouched; raw views remain private.
+
+No old strategy, target, account or BT pipeline was rerun. New financial
+trials, source requests and shadow-account runs are all zero. Six complete
+representatives are technically available, but the five-member pools and
+their failures stay unchanged; no expanded pool/ranking/weights or new
+financial result exists yet. The journal remains467events,42registrations,
+39completed reviews,three technical failures,zero pending and156funded
+paths:217combined completions,zero qualifiers. Historical expert
+availability is counterfactual, not an actual2016introduction or forward proof.
+
 ## Initial benchmark command
 
 From the SSD workspace root:
