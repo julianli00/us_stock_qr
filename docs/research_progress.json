@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-30",
-  "phase": "expert_path_baskets_registered_waiting_publication",
-  "active_research_focus": "publish_frozen_ordered_NET_path_admissible_baskets_before_original_funded_paths",
+  "phase": "expert_path_baskets_completed_rejected",
+  "active_research_focus": "select_next_independent_expert_layer_question_after_frozen_path_basket_rejection",
   "research_mainline": {
     "id": "strategy_expert_pool_and_rolling_meta_v1",
     "user_directed": true,
@@ -1254,9 +1254,39 @@
       "new_shadow_account_runs": 0,
       "new_source_requests": 0,
       "candidate_accounts_started_at_registration": false,
-      "publication_fence_before_accounts_still_required": true,
-      "actual_funded_paths_completed": 0,
-      "financial_rule_status": "registered_waiting_publication",
+      "publication_fence_before_accounts_still_required": false,
+      "actual_funded_paths_completed": 4,
+      "actual_preregistration_commit": "3d5c5d1980bb48e9b6f5d787024b2335d2018aee",
+      "actual_publication_fence_sequence": 543,
+      "actual_publication_fence_at_utc": "2026-10-30T13:52:37.221552Z",
+      "actual_completed_at_utc": "2026-10-30T13:57:58.860087Z",
+      "results": "research/workbench/evidence/expert_path_baskets_20261030_results_v1.json",
+      "results_sha256": "c7513c38188df9fe1cc84dfcc64e861c57cf30dcd381d8c6fce4a3fad2948b14",
+      "private_complete_results_sha256": "79197e4f3016b054c116172132b5a03892a7cfc44ce93cc46f73d37e30940fba",
+      "financial_rule_status": "rejected",
+      "all_four_RF_Sharpe_drawdown_SPY_and_QQQ_gates_failed": true,
+      "five_year_stress_CAGR_gate_failed": true,
+      "other_three_CAGR_gates_passed": true,
+      "both_stress_vs_base_SPY_gates_failed": true,
+      "recorded_mature_selected_expert_count_distribution": {
+        "1": 83,
+        "2": 23,
+        "3": 8
+      },
+      "maximum_recorded_selected_source_drawdown": 0.14775115603279954,
+      "actual_registered_factor_families_per_path": 6,
+      "minimum_cash_usd_all_paths": 160.23224914605677,
+      "maximum_gross_exposure_all_paths": 0.9843273670535052,
+      "independent_BT_maximum_NAV_difference_usd": 5.093170329928398e-11,
+      "saved_six_control_comparison_sha256": "a639f7786edb13e460e03d729a36436c177051b8a21270840c6cd2bef42e60d8",
+      "all_Sharpe_lower_than_all_six_saved_controls": true,
+      "all_drawdowns_higher_than_all_six_saved_controls": true,
+      "all_CAGR_higher_than_hierarchy_control_only": true,
+      "all_CAGR_lower_than_equal_RF_dual_and_online_controls": true,
+      "annual_turnover_lower_than_joint_tail_all_paths_only": true,
+      "all_tickets_lower_but_turnover_and_fees_higher_than_online": true,
+      "source_reference_risk_limit_is_actual_main_drawdown_guarantee": false,
+      "criterion_or_acceptance_gates_retuned_after_outcomes": false,
       "investment_objective_verified": false,
       "independent_forward_validation": false,
       "order_authority": false
@@ -1380,13 +1410,13 @@
     },
     "aggregate_counts": {
       "registered": 50,
-      "completed": 45,
-      "reviews": 45,
-      "pending": 1,
+      "completed": 46,
+      "reviews": 46,
+      "pending": 0,
       "technical_failures": 4,
       "qualified": 0,
-      "account_paths": 180,
-      "total_legacy_plus_ssd_completed": 223
+      "account_paths": 184,
+      "total_legacy_plus_ssd_completed": 224
     },
     "additional_cohorts": [
       {
@@ -1673,9 +1703,9 @@
         "study_id": "ssd_expert_path_baskets_20261030_v1",
         "registration": "research/workbench/evidence/expert_path_baskets_20261030_registration_v1.json",
         "registration_sha256": "39b22687654299993902ce18a65cc63fb3ca4206af3b95cd5ea60a54cba3fe0e",
-        "results": null,
-        "results_sha256": null,
-        "preregistration_commit": null
+        "results": "research/workbench/evidence/expert_path_baskets_20261030_results_v1.json",
+        "results_sha256": "c7513c38188df9fe1cc84dfcc64e861c57cf30dcd381d8c6fce4a3fad2948b14",
+        "preregistration_commit": "3d5c5d1980bb48e9b6f5d787024b2335d2018aee"
       }
     ],
     "status": "first_pair_complete_both_rejected",

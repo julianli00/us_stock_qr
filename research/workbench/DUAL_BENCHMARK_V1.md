@@ -1101,6 +1101,77 @@ completions,zero qualifiers. No new main account has started.
 Actual complete-dependency remote publication and its original
 new fence remain mandatory before all four formal paths.
 
+## Ordered NET expert-basket outcome: rejected
+
+Actual remote preregistration
+`3d5c5d1980bb48e9b6f5d787024b2335d2018aee` and publication
+fence543 at **2026-10-30T13:52:37.221552Z** preceded all
+four account starts. All309code/policy dependencies,including
+26unchanged pinned original imports,and the registration
+packet were verified before capital. The [canonical complete outcomes](evidence/expert_path_baskets_20261030_results_v1.json)
+finished **2026-10-30T13:57:58.860087Z**.
+
+| Path | Net CAGR | RF Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Fees, USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 13.230249% | 0.669434 | 33.138249% | 6.442671x | 579 | 1144.19 |
+| 10y stress | 12.545622% | 0.630666 | 30.738038% | 6.420506x | 574 | 2791.90 |
+| 5y base | 12.119193% | 0.515458 | 33.531206% | 8.082282x | 337 | 551.83 |
+| 5y stress | 10.790843% | 0.446028 | 31.121966% | 8.057470x | 332 | 1170.37 |
+
+All four RFSharpe,15%drawdown and matched-cost SPY/QQQ
+gates fail. The five-year stress CAGR also fails12%;
+the other three CAGR gates pass only that isolated criterion.
+Both extra stress-versus-base-SPY requirements fail.
+No formal path or joint same-rule four-path qualification passes.
+
+The saved114mature choices comprise83single-expert baskets,
+23pairs and eight triples. No standby is selected. Their largest
+recorded source-assessment drawdown is0.14775115603279954,
+below the fixed historical limit;actual main drawdowns exceed
+30%. This is not a violation of the assessment formula:
+the normalized source references and the later,dynamically
+selected,fee-bearing main path are different objects.
+It is a financial rejection of the proposed allocation law.
+
+Only saved scalar controls are compared;their learning,scores,
+targets,accounts and benchmarks are not rerun. Against equal-six,
+RF-pair,dual-relative,joint-tail,hierarchy and online growth,
+Sharpe is lower and drawdown higher on every path. CAGR improves
+on all four paths only versus hierarchy. It declines throughout
+versus equal-six,RF-pair,dual-relative and online growth;
+against joint-tail,it improves ten-year CAGR but worsens both
+five-year results.
+
+Annual turnover is lower throughout only versus joint-tail;
+it rises throughout versus equal-six,dual-relative,hierarchy
+and online growth. Versus RF-pair,it falls in ten-year paths
+but rises in five-year paths. Fees are lower throughout versus
+RF-pair and joint-tail,but higher throughout versus dual-relative
+and online growth. Other fee comparisons are mixed.
+Tickets fall throughout versus five controls;the dual-relative
+exception is five-year base,where tickets increase by three.
+
+In particular,versus online growth,the new ten/five-year ticket
+counts fall191/196and15/20,yet annual turnover and fees increase
+on all paths. Actual turnover is not the number of tickets.
+Differences in exposures,wealth and timing prevent isolated
+fee causality or a claim that implementation efficiency met
+the investment objective.
+
+Every formal path has six genuine registered factor families.
+Minimum cash is USD160.23224914605677,maximum gross exposure
+0.9843273670535052,and maximum independentBT NAV difference is
+USD5.093170329928398e-11. The2512ten-year and1254five-year
+return dates,actual initial fees and initialUSD10000drawdown
+peak remain. Broker orders,new source requests,new shadow runs
+and old account/control replays are zero.
+
+The authoritative journal has552events,50registrations,
+46completed reviews,four retained technical failures,zero
+pending and184funded paths:224combined completions,zero
+qualifiers. No risk window,limit,subset size,rounding,tie or
+acceptance gate is retuned after these outcomes.
+
 ## Initial benchmark command
 
 From the SSD workspace root:

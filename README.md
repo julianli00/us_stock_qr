@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 50 SSD identities, 45 completed/rejected, four retained technical failures and one pending; 180 funded paths | Journal-derived current summary: 223 combined completions, zero qualifiers; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 50 SSD identities, 46 completed/rejected, four retained technical failures and zero pending; 184 funded paths | Journal-derived current summary: 224 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -492,6 +492,37 @@ Actual full-dependency remote publication is still required
 before its four original freshUSD10000accounts. None has
 started at this registration snapshot;223completed verdicts
 and zero qualifiers remain unchanged.
+
+Actual preregistration
+`3d5c5d1980bb48e9b6f5d787024b2335d2018aee` and fence543 at
+**2026-10-30T13:52:37.221552Z** then preceded all four new
+account starts. The [complete basket outcomes](research/workbench/evidence/expert_path_baskets_20261030_results_v1.json)
+finished **2026-10-30T13:57:58.860087Z** and are **rejected**.
+
+| Path | Net CAGR | RF Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Fees, USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 13.230249% | 0.669434 | 33.138249% | 6.442671x | 579 | 1144.19 |
+| 10y stress | 12.545622% | 0.630666 | 30.738038% | 6.420506x | 574 | 2791.90 |
+| 5y base | 12.119193% | 0.515458 | 33.531206% | 8.082282x | 337 | 551.83 |
+| 5y stress | 10.790843% | 0.446028 | 31.121966% | 8.057470x | 332 | 1170.37 |
+
+Every Sharpe,drawdown,SPY and QQQ gate fails;five-year stress
+also fails12%CAGR,and both extra stress-versus-base-SPY gates
+fail. The maximum selected source-assessment drawdown was only
+14.775116%,demonstrating why past assessment admissibility
+cannot be substituted for main-account qualification.
+The114mature choices contain83single-expert baskets,23pairs
+and eight triples,not additional independent factors or trials.
+
+Against all six saved controls,Sharpe is lower and drawdown
+higher on every path. CAGR is higher throughout only versus
+hierarchy;it is lower throughout versus equal-six,RF-pair,
+dual-relative and online growth,and mixed versus joint-tail.
+Lower model-ticket counts do not imply lower traded notional
+or fees:versus online growth,tickets fall throughout but
+annual turnover and total fees rise throughout. All original
+outcomes remain;no window,risk limit,rank or tie is retuned.
+Current totals are224completed configurations and zero qualifiers.
 
 The [new frozen protocol](research/workbench/config/dual-benchmark-v1.json)
 requires every original ten/five-year base/stress path to have net Sharpe above
