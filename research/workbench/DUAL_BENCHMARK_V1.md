@@ -222,12 +222,59 @@ truncated-prefix checks preserve prior decisions. Both original
 saved equal and RF-relative rolling controls remain exposed controls,
 not new trials or independent OOS.
 
-No new main account has started. Current counts are492events,
+At registration no new main account had started. Its snapshot was492events,
 45registrations,41completed reviews,three technical failures,one
 pending rule and164funded paths:219combined completions,zero
 qualifiers. Actual full-dependency remote publication remains required
 before the new rule's four funded paths. One candidate is a controlled
 study choice,not an authorization quota.
+
+## Dual-relative selection outcome: rejected
+
+Actual remote preregistration
+`b56e06ce44ed4e4262cd9a5238f7a5959778c81a` and fence493 at
+**2026-10-30T05:40:01.823647Z** preceded all four new account
+starts. The single rule completed **2026-10-30T05:40:48.566151Z**.
+The [canonical public results](evidence/expert_dual_relative_selection_20261030_results_v1.json)
+retain each strict original gate and all execution costs.
+
+| Path | Net CAGR | RF Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Fees, USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 15.134628% | 0.792495 | 25.447043% | 6.405427x | 623 | 1142.77 |
+| 10y stress | 13.750073% | 0.718363 | 26.279813% | 6.391567x | 623 | 2591.94 |
+| 5y base | 18.222604% | 0.876896 | 25.827659% | 6.448978x | 334 | 523.38 |
+| 5y stress | 15.981440% | 0.756984 | 26.653995% | 6.433514x | 334 | 1055.22 |
+
+All paths clear CAGR12%but fail RF Sharpe1and drawdown15%.
+Both ten-year paths miss SPY and QQQ,and five-year stress misses
+QQQ. The five-year base path beating both benchmarks is not a
+joint pass. No acceptance criterion is replaced by the active
+selection score or rounded into a success.
+
+The saved equal-six and RF-relative controls are reused without
+old account replay. Relative to RF ranking,new CAGR improves
+0.4791--2.7927percentage points and turnover,tickets and fees
+fall throughout. Drawdown nevertheless rises5.1161--5.9606
+percentage points,and all drawdowns exceed both saved controls.
+Five-year Sharpe improves slightly;ten-year Sharpe worsens.
+These comparisons do not isolate fees from changed risk exposures
+or execution histories.
+
+Of114mature decisions,85selected pairs differ from RF ranking.
+Twenty-six selected minimum-four active scores are positive,
+88negative;negative valid scores are ranked under the frozen
+law,not discarded after outcomes. This does not justify adding a
+new score cutoff or changing the failed windows or risk budget.
+The next economic question remains separate and unfrozen.
+
+Each path uses six actual registered factor families. Minimum
+cash is USD172.97625978636248,maximum gross exposure
+0.9843273670535051,and maximum independentBT NAV difference
+USD5.820766091346741e-11. Broker orders,source acquisition,
+new shadow accounts and old control runs remain zero.
+The authoritative journal has502events,45registrations,
+42completed reviews,three technical failures,zero pending,
+168funded paths and220combined completions,with zero qualifiers.
 
 ## Initial benchmark command
 

@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 45 SSD identities, 41 completed/rejected, three retained technical failures and one pending; 164 funded paths | Journal-derived current summary: 219 combined completions, zero qualifiers; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 45 SSD identities, 42 completed/rejected, three retained technical failures and zero pending; 168 funded paths | Journal-derived current summary: 220 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -182,9 +182,22 @@ for those acceptance criteria or a significance test.
 The saved equal-six and RF-relative controls are reused,not rerun or
 registered again. All121new decisions,seven unscored initial decisions,
 114mature decisions,15pairs with four active assessments each and
-five actual prefix checks are preserved. No new main account has
-started. Actual remote publication remains required before the one
-new rule's four original freshUSD10000paths.
+five actual prefix checks are preserved. At registration no new main
+account had started. Actual preregistration publication
+`b56e06ce44ed4e4262cd9a5238f7a5959778c81a` and fence493 then
+preceded all four original freshUSD10000paths,completed
+**2026-10-30T05:40:48.566151Z**.
+
+The [complete active-score outcomes](research/workbench/evidence/expert_dual_relative_selection_20261030_results_v1.json)
+are **rejected**. Net CAGR13.7501--18.2226%passes12%,but all
+RF Sharpes0.7184--0.8769fail and drawdowns25.4470--26.6540%
+all exceed15%. Both ten-year paths miss SPY/QQQ,and five-year
+stress also misses QQQ. Against the saved RF-ranking control,
+all four CAGRs improve and turnover,tickets and fees decrease,
+but drawdown worsens5.1161--5.9606percentage points.
+This rejects the frozen heuristic,not the unchanged acceptance
+criteria or the experts' technical validity. Current totals are
+220completed configurations and zero qualifiers.
 
 The [new frozen protocol](research/workbench/config/dual-benchmark-v1.json)
 requires every original ten/five-year base/stress path to have net Sharpe above
