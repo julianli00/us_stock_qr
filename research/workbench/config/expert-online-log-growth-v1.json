@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_expert_online_log_growth_20261030_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "prior_completed_configurations": 222,
+  "prior_new_registered_candidates": 48,
+  "prior_new_completed_strategy_evaluations": 44,
+  "prior_new_technical_failures": 4,
+  "prior_journal_sequence": 528,
+  "prior_journal_head_sha256": "c7bd3ad1634d8632781f4f67529f36b5eee1e1de48143af5b95ddb8ac558f6fa",
+  "source_registration": {
+    "path": "evidence/expert_hierarchical_risk_20261030_registration_v1.json",
+    "sha256": "fa02ffa7f2c45663faf9d636b2543602a8e8ed4b80cec50aaa775c7f18495c0f"
+  },
+  "source_results": {
+    "path": "evidence/expert_hierarchical_risk_20261030_results_v1.json",
+    "sha256": "33fae3c737840af48b7edef3f559e7ff3ce69c9fbeb7bd27bc45c3af52e7449b"
+  },
+  "saved_opportunity_summary": {
+    "path": "reports/ssd-continuous-research-v1/expert-hierarchy-opportunity-diagnosis-20261030-v1/summary-v1.json",
+    "sha256": "7b323fc574a48283a2799505c6e1f6c68f84ca19d719a088aa0cae166802ddc1"
+  },
+  "expert_ids": [
+    "equity_first_month_end_commitment_v1",
+    "benchmark_opportunity_joint_tail_v1",
+    "symmetric_garch_growth_bil_v1",
+    "semiconductor_ratchet_protection",
+    "semiconductor_option_dollar_profit_share_confirmation",
+    "four_factor_defense_diversified"
+  ],
+  "mechanism_groups": [
+    "committed_price_trend_defense",
+    "joint_tail_opportunity",
+    "conditional_variance_growth",
+    "wealth_feedback_protection",
+    "common_quarter_profit_dollar_confirmation",
+    "cross_asset_defensive_relative_strength"
+  ],
+  "initial_decision_session": "2016-10-05",
+  "lookback_sessions": 126,
+  "minimum_common_source_observations": 126,
+  "shadow_reference_path": "10y-base",
+  "learning_clock": "completed_full_exchange_month_intervals",
+  "training_memory": "expanding_all_completed_intervals",
+  "initial_partial_source_month_assimilated": false,
+  "learning_state_resets_for_five_year_account": false,
+  "maximum_complete_learning_intervals": 119,
+  "initial_curvature_identity_scale": 1.0,
+  "step_size": 1.0,
+  "simplex_roundoff_tolerance": 1e-12,
+  "KKT_tolerance": 1e-10,
+  "curvature_integrity_tolerance": 1e-10,
+  "independent_weight_and_target_tolerance": 1e-12,
+  "maximum_simplex_faces_per_update": 63,
+  "reference_capital_usd": 10000,
+  "invested_target_budget": 0.98,
+  "cash_reserve": 0.02,
+  "actual_weight_trade_band": 0.025,
+  "minimum_economic_factor_families": 3,
+  "new_economic_factor_definitions": 0,
+  "new_shadow_account_runs": 0,
+  "new_source_requests": 0,
+  "candidate_count_in_this_study": 1,
+  "study_size_is_a_total_research_quota": false,
+  "candidates": [
+    {
+      "id": "expert_pool_six_online_log_growth_v1",
+      "weighting": "second_order_monthly_NET_log_growth"
+    }
+  ],
+  "methodology": {
+    "warmup": "Unscored equal-six main intentions until126common source observations; available full-month learner updates remain explicit assessment information.",
+    "gradient": "positive NET period relatives divided by their inner product with prior learning weights",
+    "curvature": "identity prior plus all chronologically observed gradient outer products",
+    "projection": "nonnegative unit simplex, all63nonempty faces",
+    "prequential_score_is_recorded_before_assimilation": true,
+    "learning_score_is_actual_main_net_wealth": false,
+    "source_shadow_wealth_or_protection_floor_transferred": false,
+    "universal_NET_wealth_identity_or_bound_claimed": false,
+    "exact_uniform_policy_integral_repaired_or_approximated": false,
+    "source_covariance_or_risk_rank_used": false,
+    "switch_cost_proxy_affects_allocation": false,
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

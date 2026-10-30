@@ -50,6 +50,11 @@ A causal policy for combining complete strategy experts into a unified portfolio
 It is evaluated on the resulting portfolio, not on averages of expert summary metrics.
 _Avoid_: Best historical winner, averaged CAGR
 
+**Allocation learning state (分配学习状态)**:
+The accumulated assessment information a meta-strategy uses to revise future capital
+weights. It is not the main account's holdings, cash or realized wealth.
+_Avoid_: Main capital account, transferable shadow wealth guarantee
+
 **Funding standby (资金备用状态)**:
 A declared mode that parks main capital when the meta-strategy cannot form an
 admissible expert allocation. It is not a strategy expert or a successful risk assessment.

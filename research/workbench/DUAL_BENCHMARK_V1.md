@@ -798,6 +798,74 @@ The authoritative528events,48registrations,44completed reviews,
 four technical failures,zero pending,176funded paths and222
 combined completions/zero qualifiers remain unchanged.
 
+## Online NET log-growth complete-expert preregistration
+
+The [new registered rule](evidence/expert_online_log_growth_20261030_registration_v1.json)
+registered **2026-10-30T11:39:17.230597Z** before its first
+real learning update or target. Target proof followed
+**2026-10-30T11:39:29.062826Z**. The pre-outcome implementation
+intent is
+`aa7ba38636d7990cae5ec46ed212cc19013a15a721ed97cd392cb2df8caffda0`;
+the frozen specification is
+`3c9ba6f21342237d0d5e26a88e3c1c4f1cab25491498e07023d5a1fe0e466edb`.
+All907source references,five implementation files and three
+validation artifacts were bound before actual learning.
+
+This is one new allocation law over the same six complete
+source-admitted experts,not a new standalone policy,a covariance
+repair or a setting of the failed hierarchical rule. It learns
+from the six preserved NET source-assessment relatives for each
+completed exchange month. The gradient of log portfolio relative
+growth accumulates a positive-definite curvature state,then a
+quadratic proximal step projects onto the funded nonnegative
+unit simplex. Equal-six initial weights,identity curvature and
+unit step are fixed;there is no learning-rate,forgetting,window
+or return-cutoff sweep. Every one of63nonempty faces is checked.
+
+Allocation learning state consists of weights,curvature and the
+completed-month clock. It is not main capital,holdings,cash or
+realized wealth. The old exact uniform NET mixtures remain
+separate closed hypotheses;this rule is neither their numerical
+approximation nor a transferable universal-wealth theorem.
+The336bytes of persistent numeric arrays are not total process
+RSS. Original source books are read,not fitted or executed again.
+
+The initial2016-10-05anchor and all genuine month ends produce
+121decisions. The incomplete first October source interval is
+explicitly retained but not assimilated. November2016through
+September2026supply119complete learning intervals. Learning
+may accumulate complete past months during warmup;applied main
+intentions remain explicitly unscored equal-six until126common
+source observations mature. There are seven such warmups and
+114mature applied decisions. The learning state is not reset
+for fresh five-year main capital. Every formal return day,
+including the terminal partial month,remains in the main books.
+
+An independent verifier recomputes scalar monthly relatives,
+gradients,curvature and scores,then enumerates independently
+formed bordered KKTsystems. Maximum weight and underlying-target
+differences are7.712233629497689e-14and7.557843240135753e-14,
+below the frozen1e-12bounds. Maximum KKTerror is
+1.8474111129762605e-13,below1e-10. Five real truncated prefixes
+preserve earlier state and targets. These are causal consistency
+checks on exposed history,not independent OOS or forward proof.
+
+The original monthly actual-holding executor,98%invested target,
+2%idle reserve,2.5%trade band,cash funding,fees,delays,RF,
+initial drawdown peak and matched-cost fullcapital SPY/QQQ
+benchmarks are unchanged. The new dependency freeze contains
+163code and141policy references,including the pure old monthly
+relative helper and its policy. Archived dependency pins do not
+add active strategies or experts;the original import manifest
+is unchanged.
+
+At this registration snapshot the authoritative journal has
+530events,49registrations,44completed reviews,four technical
+failures,one pending rule and176funded paths:222combined
+completions,zero qualifiers. No new main account has started.
+Actual full-dependency remote publication and its original new
+fence remain mandatory before all four formal paths.
+
 ## Initial benchmark command
 
 From the SSD workspace root:

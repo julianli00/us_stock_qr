@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 48 SSD identities, 44 completed/rejected, four retained technical failures and zero pending; 176 funded paths | Journal-derived current summary: 222 combined completions, zero qualifiers; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 49 SSD identities, 44 completed/rejected, four retained technical failures and one pending; 176 funded paths | Journal-derived current summary: 222 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -384,6 +384,28 @@ This diagnosis neither selects new weights nor attributes main
 profit to overlapping experts. It does not repair the hierarchy's
 financial rejection,prove independent OOS or change any gate.
 The same222completed verdicts and zero qualifiers remain.
+
+A [new online NET log-growth rule](research/workbench/evidence/expert_online_log_growth_20261030_registration_v1.json)
+registered **2026-10-30T11:39:17.230597Z**,before its first
+real learning update or target. It retains the same six complete
+experts and learns from119completed source-assessment months.
+Identity curvature,equal-six initial weights,a unit step and
+all63nonempty simplex faces were frozen before real updates.
+An independent bordered-system calculation checks the state,
+KKT conditions and underlying targets;no risk hierarchy or
+return-window coefficient is retuned.
+
+All121initial/monthly decisions remain,including seven explicitly
+unscored equal-six warmups. The incomplete first source month is
+not assimilated. Learning state is not main cash,holdings or
+wealth,and no source-book log-growth identity or bound is
+transferred to the funded portfolio. Five-year capital remains
+fresh even though its causal learning state retains prior months.
+All915source/implementation/validation references are bound;
+163code and141policy dependencies require actual remote
+publication before the four original accounts. No new account
+has started at this registration snapshot. There is one pending
+rule;the222completed verdicts and zero qualifiers are unchanged.
 
 The [new frozen protocol](research/workbench/config/dual-benchmark-v1.json)
 requires every original ten/five-year base/stress path to have net Sharpe above
