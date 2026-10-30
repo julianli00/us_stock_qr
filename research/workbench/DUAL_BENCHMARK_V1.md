@@ -7041,6 +7041,117 @@ remote publication fence is required before all four new
 funded paths. This numerical/registration progress is not
 investment-goal completion.
 
+## Actual five-policy continuous-mixture outcomes
+
+The actual preregistration commit
+`4f3dc2f60f0a306cc60aafc949c6073c62609733` was verified against
+the configured remote,all124public dependencies and eight unchanged
+pinned-import files. The real publication fence is sequence458
+at**2026-10-30T02:33:00.328916Z**,before any new main account.
+The single four-path job started at02:33:59.390518Z and
+completed at**2026-10-30T02:34:21.847862Z**.
+
+The [complete canonical result](evidence/expert_five_net_mixture_20261030_results_v1.json)
+is **rejected**:
+
+| Path | Net CAGR | Net excess Sharpe | Maximum DD | Annual two-sided turnover | Model orders | Fees USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 17.373244% | 1.102233 | 16.309099% | 2.612552x | 904 | 1161.95 |
+| 10y stress | 16.969375% | 1.074663 | 16.045273% | 2.588459x | 868 | 1878.39 |
+| 5y base | 20.455397% | 1.110528 | 16.364972% | 2.562936x | 431 | 518.22 |
+| 5y stress | 19.329408% | 1.044146 | 16.321877% | 2.536466x | 413 | 748.86 |
+
+All four paths pass netSharpe1,netCAGR12percentand matched-cost
+SPY;both five-year paths beat QQQ and both stress paths beat
+base-costSPY. **All four fail maximumDD15percent,and both
+ten-year paths fail QQQ.** The minimum observed DD is
+exactly`0.16045272917606923`,not a rounded15percentpass.
+One path's CAGR above20percentdoes not replace the
+same-rule joint qualification requirement.
+
+### Saved controls distinguish numerical success from economic value
+
+All comparisons read preserved complete scalar results without
+refitting,relearning,rebuilding targets or replaying old accounts.
+The four-policy NET mixture is the same-score-law pool-inclusion
+control. Equal and rolling five-policy books are same-pool
+architecture comparators,not isolated expert-alpha attribution.
+
+| Saved control | Path | CAGR change, percentage points | Sharpe change | DD change, percentage points | Annual turnover change | Fee change USD |
+|---|---|---:|---:|---:|---:|---:|
+| Four NET | 10y base | -0.076118 | +0.028574 | -1.193737 | -0.252218x | -2.70 |
+| Four NET | 10y stress | +0.064649 | +0.037169 | -1.022453 | -0.276131x | -91.09 |
+| Four NET | 5y base | -0.058003 | +0.009888 | +0.368949 | -0.189515x | +4.73 |
+| Four NET | 5y stress | +0.331122 | +0.032739 | +0.362927 | -0.212980x | -16.04 |
+| Five equal | 10y base | +0.181903 | -0.003421 | +0.130974 | +0.001522x | +1.03 |
+| Five equal | 10y stress | +0.180323 | -0.002984 | +0.313231 | +0.001977x | +4.41 |
+| Five equal | 5y base | +0.282967 | -0.003079 | +0.313619 | +0.010581x | +0.40 |
+| Five equal | 5y stress | +0.261665 | -0.002737 | +0.313558 | +0.010802x | +1.44 |
+| Five rolling | 10y base | +1.375627 | +0.144616 | -4.883683 | -3.688020x | -240.89 |
+| Five rolling | 10y stress | +1.437461 | +0.145530 | -4.057496 | -3.721282x | -1384.74 |
+| Five rolling | 5y base | +3.490451 | +0.222696 | -5.088164 | -4.191476x | -135.42 |
+| Five rolling | 5y stress | +3.362027 | +0.214443 | -4.048727 | -4.243097x | -548.29 |
+
+The continuous rule beats the five-policy rolling pair in CAGR,
+Sharpe,drawdown,turnover and fees throughout,but its ten-year
+model-ticket counts are higher by130and94;the five-year counts
+are lower by3and21. These are not brokerage orders.
+
+Against the simpler five-policy equal control,CAGR rises by
+only0.1803--0.2830percentage points,while Sharpe,drawdown,
+turnover and fees all worsen and model-ticket counts are
+identical. The exact numerical computation has not translated
+into joint financial qualification.
+
+### Actual recorded continuous weights
+
+| Complete expert | Mean across121decisions | Minimum | Maximum |
+|---|---:|---:|---:|
+| Commitment | 20.711158% | 20.000000% | 22.055295% |
+| Joint tail | 19.122711% | 17.944294% | 20.000000% |
+| Symmetric GARCH | 21.076843% | 20.000000% | 21.990839% |
+| Wealth feedback | 19.068621% | 18.092629% | 20.000000% |
+| Macro profit share | 20.020667% | 19.713480% | 20.320131% |
+
+Every expert fraction remains positive.The largest absolute
+departure of any recorded fraction from its uniform prior
+is2.055706percentage points. These are observed allocations,
+not subsequently fitted floors or priors. Maintaining the
+feedback expert near19percentdoes not itself impose a
+drawdown floor on the unified main account. This outcome
+does not justify sweeping posterior temperature,forgetting
+or prior concentration to manufacture a pass.
+
+### Preserved accounting and current totals
+
+Every path retains the original2512or1254formal return days,
+one freshUSD10000 capital account,original fees/delays/RF/
+initial peak and six genuinely registered economic families.
+The minimum cash balance isUSD188.18938532469153;maximum
+gross exposure is`0.9827340252238425`. Maximum independent
+BT NAV difference is`1.0186340659856796e-10`USD,and broker
+orders remain zero.
+
+Private complete result SHA256:
+`a0b26afa840f2b78423f3119d75f5536d44b5072fa5b38fc3180fabad6ba6c06`.
+Canonical public result SHA256:
+`2fee5e9c284719ef7f746c296c5cb53458131f990ade4f2faa2f986728b8fc85`.
+Saved three-control comparison SHA256:
+`d357993aadb321efc794c85883c564452c9648cace9b513c7bf54fbe9ceb8406`.
+All16public metric fields,gates,costs and recorded execution
+values remain intact;curated dashboard fields are a smaller
+projection,not a replacement primary metric record.
+
+The467-event journal now derives **42registrations,
+39completed/reviewed,three technical failures,zero pending,
+156funded paths,217combined completions and zero qualifiers**.
+The9,078,630algebraic states and13,845,841quadrature points
+are not separately counted economic trials. Exactly one
+new financial configuration completed;its source experts,
+all failed controls,original ledger,one-day forward identities
+and source restrictions remain unchanged. No new shadow,
+source acquisition or prospective backfill occurred.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,
