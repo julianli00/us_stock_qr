@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-30",
-  "phase": "expert_contextual_contest_registered_waiting_publication",
-  "active_research_focus": "publish_exact_contextual_contest_packet_before_original_funded_paths",
+  "phase": "expert_contextual_contest_finished_rejected",
+  "active_research_focus": "select_next_independent_expert_layer_question_after_complete_contextual_contest_rejection",
   "research_mainline": {
     "id": "strategy_expert_pool_and_rolling_meta_v1",
     "user_directed": true,
@@ -1518,7 +1518,7 @@
       "order_authority": false
     },
     "expert_contextual_contest_study": {
-      "snapshot_scope": "Actual registration and target-proof snapshot; no financial publication fence or new main account at this snapshot.",
+      "snapshot_scope": "Current complete funded outcomes; registration fields retain their original registration-time truth.",
       "registration": "research/workbench/evidence/expert_contextual_contest_20261030_registration_v1.json",
       "registration_sha256": "5a1b050f8348c9ec5ef4878d8cdf6126696b30723ecb25a1e6e1d241fbfe49ee",
       "frozen_specification_sha256": "c6c039b228be7d24163ba74a0343ab1424ad294c627c0a2a52c70ae16c4caaab",
@@ -1570,8 +1570,49 @@
       "target_proof_completed": true,
       "new_accounts_started_at_registration": false,
       "preregistration_publication_verified_at_snapshot": false,
-      "actual_funded_paths_completed": 0,
-      "new_strategy_evaluations": 0,
+      "registration_snapshot_field_scope": "The two preceding registration/publication flags describe the original registration snapshot, not the current funded outcome.",
+      "results": "research/workbench/evidence/expert_contextual_contest_20261030_results_v1.json",
+      "results_sha256": "0e5d1de4c89d970aa773a0213c9a8f34feceef25654bd021887f32d893790626",
+      "private_complete_results_sha256": "f6dc273c52cca3e876090b3da9ce45f058f8f637795ce5bee2ff0a94d825f17f",
+      "actual_preregistration_commit": "01a68228005cead5f885f3abf0030dbeb18fc8d3",
+      "actual_financial_publication_fence_sequence": 565,
+      "actual_financial_publication_fence_at_utc": "2026-10-30T20:00:22.180906Z",
+      "actual_finished_at_utc": "2026-10-30T20:00:36.457480Z",
+      "all_four_original_paths_per_rule_completed": true,
+      "actual_funded_paths_completed": 8,
+      "new_strategy_evaluations": 2,
+      "both_fixed_rules_rejected": true,
+      "all_eight_RF_Sharpe_and_QQQ_gates_failed": true,
+      "all_four_extra_stress_vs_base_SPY_gates_failed": true,
+      "contextual_rule_has_lower_CAGR_Sharpe_and_higher_DD_turnover_fees_on_all_four_paths": true,
+      "paired_policy_comparison_is_isolated_causal_fee_attribution": false,
+      "all_actual_registered_factor_families": [
+        "earnings_quality", "low_volatility", "momentum", "share_issuance", "size", "value"
+      ],
+      "minimum_three_registered_families_pass_all_paths": true,
+      "actual_cash_minimum_usd": 183.25121514871,
+      "actual_gross_exposure_maximum": 0.9823226088778088,
+      "independent_BT_maximum_NAV_difference_usd": 5.820766091346741e-11,
+      "path_order": ["10y-base", "10y-stress", "5y-base", "5y-stress"],
+      "unconditional_complete_outcomes": {
+        "net_cagr": [0.1272279779169303, 0.12294509318420221, 0.14770229765200416, 0.13830100464060013],
+        "RF_sharpe": [0.9447896053256929, 0.9069385323027026, 0.9167645555305939, 0.8430262360430856],
+        "maximum_drawdown": [0.15386413727073778, 0.1435092985075157, 0.15687468305997954, 0.14631777805254287],
+        "annualized_two_sided_turnover": [3.346965805414717, 3.336073997421988, 3.2006470257318527, 3.1816253615727916],
+        "actual_model_tickets": [975, 968, 500, 493],
+        "actual_total_fees_usd": [1241.6419418098048, 2015.4612811074828, 593.9582567415565, 857.9115809451088]
+      },
+      "contextual_complete_outcomes": {
+        "net_cagr": [0.1254252552834625, 0.1196334287186791, 0.13682457699922268, 0.12661605700029344],
+        "RF_sharpe": [0.9439194653948146, 0.8935436153867756, 0.8429525130567405, 0.7629399264926146],
+        "maximum_drawdown": [0.1615195565834021, 0.15252245498105466, 0.16442369486277686, 0.1554662401923651],
+        "annualized_two_sided_turnover": [3.931142133508435, 3.931231922860551, 3.87576746724896, 3.882401791837222],
+        "actual_model_tickets": [1037, 1037, 500, 500],
+        "actual_total_fees_usd": [1354.7066200064148, 2278.10743060833, 610.6354271622282, 931.9544517712948]
+      },
+      "financial_failure_withdraws_expert_technical_validity": false,
+      "new_financial_metrics_turnover_orders_and_fees_available": true,
+      "model_tickets_are_broker_orders": false,
       "new_shadow_account_runs": 0,
       "new_source_requests": 0,
       "investment_objective_verified": false,
@@ -1697,13 +1738,13 @@
     },
     "aggregate_counts": {
       "registered": 56,
-      "completed": 46,
-      "reviews": 46,
-      "pending": 2,
+      "completed": 48,
+      "reviews": 48,
+      "pending": 0,
       "technical_failures": 8,
       "qualified": 0,
-      "account_paths": 184,
-      "total_legacy_plus_ssd_completed": 224
+      "account_paths": 192,
+      "total_legacy_plus_ssd_completed": 226
     },
     "additional_cohorts": [
       {
@@ -2014,9 +2055,9 @@
         "study_id": "ssd_expert_contextual_contest_20261030_v1",
         "registration": "research/workbench/evidence/expert_contextual_contest_20261030_registration_v1.json",
         "registration_sha256": "5a1b050f8348c9ec5ef4878d8cdf6126696b30723ecb25a1e6e1d241fbfe49ee",
-        "results": null,
-        "results_sha256": null,
-        "preregistration_commit": null
+        "results": "research/workbench/evidence/expert_contextual_contest_20261030_results_v1.json",
+        "results_sha256": "0e5d1de4c89d970aa773a0213c9a8f34feceef25654bd021887f32d893790626",
+        "preregistration_commit": "01a68228005cead5f885f3abf0030dbeb18fc8d3"
       }
     ],
     "status": "first_pair_complete_both_rejected",
@@ -2644,14 +2685,14 @@
     "第10项固定相反优先级：在当时较低SPY/QQQ尾部预算（以实际BIL风险作底）内最大化已观测机会，不扫风险倍率/旧门槛/窗口/核心参数。2026-10-28T05:46:36.615636Z真实登记先于122有证书计划（112优化/10非正机会），5前缀及完整6家族覆盖通过。先发布1074904478bfd0ba2a19d502c479ebd2de13c227，再于05:54:28.534515Z完成4资金路径并拒绝。依次十年base/stress、五年base/stress净CAGR12.9292/11.4123/16.5627/14.9118%，Sharpe0.6781/0.5922/0.7818/0.6907，DD26.4086/27.0756/26.6875/27.3277%；回撤/夏普/QQQ全失败，3条CAGR过且仅五年胜SPY。SSD10完成/40路径/合计188/0通过、118事件，原记录不变；不得拼接第9项回撤与第10项收益。"
   ],
   "next": [
-    "Preserve56registered SSD identities:46completed/reviewed,8technical failures,2pending,184funded paths,224combined completions and0qualifiers from564journal events. The two new contextual-contest identities have target proofs but no funded main paths at this snapshot;all prior failures,outcomes and one-day forward models remain unchanged.",
-    "Publish the exact contextual-contest registration packet and all305frozen code/policy dependencies with original import pins before all eight original fresh-capital paths. Keep the two fixed rules,old execution and acceptance unchanged. The contextual source loss assessment is not main-account risk or a drawdown guarantee;target proof is not investment qualification. Failed reversal V1 remains terminal and is not repaired or retried.",
+    "Preserve56registered SSD identities:48completed/reviewed,8technical failures,0pending,192funded paths,226combined completions and0qualifiers from583journal events. Both new contextual-contest rules completed all four original paths and were rejected;all prior failures,outcomes and one-day forward models remain unchanged.",
+    "Close and preserve the two fixed contextual-contest rules and complete eight-path outcomes. All Sharpe/QQQ gates fail;contextual allocation has lower CAGR/Sharpe and higher DD/turnover/fees on all matched paths than its unconditional control. This is not isolated causal fee attribution or justification to tune the same contexts,prior or risk coefficient. Select a genuinely independent expert-layer question before new design/freeze/registration;none is selected by this result record. Failed reversal V1 remains terminal and unchanged.",
     "Continue economically motivated, preregistered independent small batches without ordinary per-batch approval or a configuration-count ceiling until2026-10-31T15:59Z. Use one computation; at cutoff preserve partial work, clear only the SSD session timer and confirm absence.",
     "Keep old source refusals, VIG/SDY terminal429 and prospective/PIT gates. The independent market-only IBKR adapter is proved, but the one actual probe stopped on2157 before historical requests;0history rows/admissions,no automatic retry or inferred entitlement denial. Default readonly account synchronization remains prohibited."
   ],
   "next_zh": [
-    "保留SSD56个登记身份：46项完成审阅、8项技术失败、2待评估，184资金路径、合计224完成、0通过，来自564条真实日志。两条新情境竞赛规则已有目标证明，但本快照尚无新主资金路径；全部旧失败、结果和一天前瞻模型保持。",
-    "先完整发布情境竞赛登记包、305项冻结代码/策略依赖和原始导入pins，再开始全部八条原定新鲜资本路径。不得修改两条固定规则、旧执行或准入标准；来源共损评估不是主账户风险或回撤保证，目标证明不等于投资合格。反转V1保持技术终止，不修复或重试。",
+    "保留SSD56个登记身份：48项完成审阅、8项技术失败、0待评估，192资金路径、合计226完成、0通过，来自583条真实日志。两条新情境竞赛规则完成全部原定四路径且均拒绝；全部旧失败、结果和一天前瞻模型保持。",
+    "关闭并保留两条冻结情境竞赛规则及完整八路径结果。全部夏普/QQQ门失败；情境规则四路径CAGR/夏普均低于无情境对照，回撤、换手和费用均更高。这不构成隔离费用因果归因，也不授权继续调同一情境、先验或风险系数。下一步须先选真正独立的专家层问题；本次结果尚未选择新设计或模型。反转V1保持技术终止，不修改或重试。",
     "持续开展有经济理由、事前冻结的独立小批次，无普通逐批确认或配置次数上限，截止2026-10-31T15:59Z；单计算job，届时保存未完状态、只清除SSD会话timer并确认不存在。",
     "原拒绝来源、VIG/SDY终止429和前瞻/PIT门保持。独立IBKR market-only适配器已证明，但唯一真实探针在历史请求前因2157停止；历史行/准入0，不自动重试或推断订阅拒绝，仍禁止默认readonly账户同步。"
   ],

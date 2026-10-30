@@ -67,6 +67,55 @@ freshUSD10000paths. Journal564has56registered SSD identities,46completed reviews
 eighttechnical failures,two pending and184funded paths:224combined completions,
 zero qualifiers. Target proof is not a financial or independent forward pass.
 
+## Contextual expert-contest outcomes: both rules rejected
+
+Actual full-dependency remote publication
+`01a68228005cead5f885f3abf0030dbeb18fc8d3` and financial fence565 at
+**2026-10-30T20:00:22.180906Z** preceded all eight funded main paths. The
+[canonical complete results](evidence/expert_contextual_contest_20261030_results_v1.json)
+finished **2026-10-30T20:00:36.457480Z**. Each path retains the original full
+2512or1254return sessions, fresh10000capital/peak, costs, delays, RF and
+cash-funded long-only accounting. The frozen two rules are not retuned.
+
+| Rule / path | Net CAGR | RF Sharpe | Maximum DD | Annual two-sided turnover | Actual model tickets | Total fees USD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Unconditional /10y base |12.722798%|0.944790|15.386414%|3.346966x|975|1241.6419|
+| Unconditional /10y stress |12.294509%|0.906939|14.350930%|3.336074x|968|2015.4613|
+| Unconditional /5y base |14.770230%|0.916765|15.687468%|3.200647x|500|593.9583|
+| Unconditional /5y stress |13.830100%|0.843026|14.631778%|3.181625x|493|857.9116|
+| Contextual /10y base |12.542526%|0.943919|16.151956%|3.931142x|1037|1354.7066|
+| Contextual /10y stress |11.963343%|0.893544|15.252245%|3.931232x|1037|2278.1074|
+| Contextual /5y base |13.682458%|0.842953|16.442369%|3.875767x|500|610.6354|
+| Contextual /5y stress |12.661606%|0.762940|15.546624%|3.882402x|500|931.9545|
+
+Every Sharpe and QQQ gate fails. The unconditional rule clears CAGR12on all
+paths and drawdown15on its stressed paths only; both base drawdowns fail.
+Its five-year paths beat matched-cost SPY, but both ten-year paths and all
+extra stress-versus-base-SPY gates fail. The contextual rule misses every
+SPY/drawdown gate and ten-year stress CAGR12. No individual passing metric can
+be combined across rules or scenarios to claim qualification.
+
+Against its same-study unconditional control, contextual allocation lowers
+CAGR/Sharpe and raises DD, annual turnover and fees on every matched path.
+Tickets increase by62/69/0/7; fee differences are113.0647/262.6461/16.6772/74.0429USD.
+These are paired policy outcomes, not a zero-cost counterfactual or an isolated
+causal fee effect. The preregistered saved six-expert equal, rolling-pair and
+online-growth anchors were read only; no source control is rerun or selected
+as an unexposed winner after these outcomes.
+
+Actual cash minimum is183.251215USD and maximum gross exposure0.982322609.
+All six registered factor families participate on every path. Independent
+BT maximum NAV difference is5.82e-11USD. Model tickets are not broker orders;
+new source requests and broker operations remain zero. Complete accounting
+does not make the financially rejected rules final qualifiers, and standalone
+financial rejection alone does not remove a technically valid expert.
+
+Current journal583records56registered SSD identities,48completed reviews,
+eighttechnical failures,zero pending and192funded paths:226combined completions,
+zero qualifiers. The old ledger, all failures, source refusals and one-day
+prospective/null-metric identities remain preserved. The next independent
+expert-layer question has not been selected by this outcome report.
+
 ## Previous expert-level reversal study: terminal preparation failure
 
 The [actual failure record](evidence/expert_online_reversion_20261030_preparation_failure_v1.json)

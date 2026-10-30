@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 56 SSD identities, 46 completed/rejected, eight retained technical failures and two pending; 184 funded paths | Journal-derived current summary: 224 combined completions, zero qualifiers; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 56 SSD identities, 48 completed/rejected, eight retained technical failures and zero pending; 192 funded paths | Journal-derived current summary: 226 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -62,7 +62,37 @@ At this registration snapshot, neither a financial publication fence nor any
 new main account has started; full remote publication is still required before
 all eight original funded paths. Journal564has56registrations,46completions,
 eighttechnical failures,two pending and184funded paths:224combined completions,
-zero qualifiers. No new financial result or independent forward pass is claimed.
+zero qualifiers. No financial result or independent forward pass existed at that snapshot.
+
+Actual remote preregistration
+`01a68228005cead5f885f3abf0030dbeb18fc8d3` and fence565 at
+**2026-10-30T20:00:22.180906Z** preceded all eight new main paths, completed
+**20:00:36.457480Z**. The [complete outcomes](research/workbench/evidence/expert_contextual_contest_20261030_results_v1.json)
+reject both fixed rules.
+
+| Rule / path | Net CAGR | RF Sharpe | DD | Annual two-sided turnover | Tickets | Fees USD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Unconditional /10y base |12.7228%|0.9448|15.3864%|3.3470x|975|1241.64|
+| Unconditional /10y stress |12.2945%|0.9069|14.3509%|3.3361x|968|2015.46|
+| Unconditional /5y base |14.7702%|0.9168|15.6875%|3.2006x|500|593.96|
+| Unconditional /5y stress |13.8301%|0.8430|14.6318%|3.1816x|493|857.91|
+| Contextual /10y base |12.5425%|0.9439|16.1520%|3.9311x|1037|1354.71|
+| Contextual /10y stress |11.9633%|0.8935|15.2522%|3.9312x|1037|2278.11|
+| Contextual /5y base |13.6825%|0.8430|16.4424%|3.8758x|500|610.64|
+| Contextual /5y stress |12.6616%|0.7629|15.5466%|3.8824x|500|931.95|
+
+All eight paths fail Sharpe1and QQQ; the contextual rule also fails every
+drawdown/SPY gate and its ten-year stress CAGR12gate. The unconditional control
+clears CAGR12throughout and both stressed drawdowns, but both base drawdowns fail;
+only its five-year paths beat matched-cost SPY. All extra stress-versus-base-SPY
+gates fail. On each matched path, contextual allocation lowers CAGR/Sharpe and
+raises drawdown, annual turnover and fees, with no fewer tickets. This is a
+fixed-policy comparison, not isolated causal fee attribution or proof about
+future regimes. All six registered families participate; actual cash stays
+positive and gross exposure below1. No standalone expert is invalidated merely
+for financial failure. Current journal583has56registrations,48completed reviews,
+eighttechnical failures,zero pending and192funded paths: **226combined completions,
+zero qualifiers**. No acceptance criterion or frozen rule is changed.
 
 The previously archived [expert-level reversal study](research/workbench/evidence/expert_online_reversion_20261030_preparation_failure_v1.json)
 is a **terminal preparation failure, not a financial result**. It applies the
