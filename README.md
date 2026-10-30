@@ -68,6 +68,17 @@ throughout but worsens both five-year drawdowns; rolling lowers drawdown
 but loses CAGR/Sharpe on every path. The technically valid experts and
 all rejected combinations remain available as research evidence.
 
+The subsequent saved-book diagnosis adds **zero strategy trials**.
+All61changed mature pair choices include the macro expert;the other53
+choices match the cached four-expert decisions. Feedback-expert selection
+falls from32to13of114mature decisions and pair changes rise from62to75.
+All eight first drawdown breaches have zero same-day orders,fees and
+already-issued pending requests. The five-year rolling base path first
+breaches while prior stocks are only17.02%and BIL80.96%:small current
+exposure does not erase loss already accumulated from the main NAV peak.
+Full saved-asset marks and fees reconcile each loss episode without
+replaying accounts or changing any financial verdict or acceptance gate.
+
 The [new frozen protocol](research/workbench/config/dual-benchmark-v1.json)
 requires every original ten/five-year base/stress path to have net Sharpe above
 1, net CAGR above 12%, drawdown at most 15%, and beat full-capital matched-cost

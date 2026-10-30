@@ -6784,6 +6784,152 @@ is created by the comparison or reporting. The one-day
 prospective identities,original database and all failures
 remain intact. This is not investment-goal completion.
 
+## Saved five-expert selector, execution and cumulative-loss diagnosis
+
+The bounded saved-only diagnosis completed at
+**2026-10-30T01:47:26.818145Z**. It freezes new diagnostic
+code,tests,scope and65direct input references before processing
+the121saved decisions and eight new five-expert capital books.
+The completed four-expert diagnosis is reused as cached rows and
+contexts;its old daily books and completed diagnostic are **not**
+processed again. Only inspected,SHA-bound retained pure cash-mark,
+request-clock and initial-peak helpers are reused on the new books.
+
+There are no new source requests,expert recommendations,shadow
+accounts,financial trials,rankings,target matrices,fits or strategy
+account runs. The original maximum-DD scalar is preserved;its
+geometry and the actual held-asset/cash/fee identities are reconciled
+from saved records,not replaced by a new performance calculation.
+
+### What the recorded selector actually changed
+
+| Stored observation | Five-expert rule | Cached four-expert rule |
+|---|---:|---:|
+| Mature decisions | 114 | 114 |
+| Feedback expert selected | 13 | 32 |
+| Mean feedback weight across all121decisions | 7.216863% | 17.918488% |
+| Consecutive mature pair changes | 75 | 62 |
+| Negative selected lower train/validation score | 35 | 39 |
+
+The macro expert is selected61times. Exactly61mature pair choices
+differ from the cached four-expert choices,and **all61include
+the macro expert**. The other53choices match. These are stored
+choices,not a reranking exercise or newly optimized weights.
+Forty-eight selected pairs have stored training correlation
+above0.9;that conventional descriptive count is not a new
+correlation cutoff or a financial gate.
+
+The inclusion comparison changes which complete recommendations
+reach the main account and substantially reduces the representation
+of the wealth-feedback specialist. It does not establish an
+independent causal alpha contribution by the macro policy.
+The recorded best score is negative in35mature decisions:being
+best among the fixed choices is not an assertion that the eventual
+fresh-capital portfolio meets any absolute financial gate.
+
+### First breaches are not same-day trading-fee events
+
+Every following first strict breach has **zero event-day orders,
+zero event-day fees and zero already-issued pending requests at
+the preceding close**. We use only the last stored recommendation
+and selector state known by that preceding close,not a new
+event-day decision.
+
+| Rule | Path | First strict DD breach | Prior actual stocks | Prior GLD | Prior BIL | Feedback expert weight | Macro expert weight |
+|---|---|---|---:|---:|---:|---:|---:|
+| Equal | 10y base | 2020-03-18 | 35.787765% | 15.589683% | 31.197368% | 20.000000% | 20.000000% |
+| Equal | 10y stress | 2020-03-18 | 35.063316% | 15.679050% | 31.548474% | 20.000000% | 20.000000% |
+| Equal | 5y base | 2022-09-26 | 25.151834% | 15.319504% | 57.485526% | 20.000000% | 20.000000% |
+| Equal | 5y stress | 2022-09-26 | 24.783117% | 15.304168% | 57.856398% | 20.000000% | 20.000000% |
+| Rolling | 10y base | 2018-12-21 | 50.731808% | 39.259414% | 7.888721% | 0.000000% | 59.983353% |
+| Rolling | 10y stress | 2022-08-09 | 50.726498% | 0.000000% | 47.285848% | 0.000000% | 0.000000% |
+| Rolling | 5y base | 2022-06-13 | 17.015837% | 0.000000% | 80.957640% | 0.000000% | 0.000000% |
+| Rolling | 5y stress | 2022-08-09 | 50.726498% | 0.000000% | 47.285848% | 0.000000% | 0.000000% |
+
+The five-year rolling base account already holds only17.02percent
+stocks and80.96percentBIL before its breach. This is not a
+contradiction:the constraint concerns cumulative loss from that
+main account's previous peak,not only the current stock fraction
+or the contemporaneous volatility of the chosen pair.
+
+The rolling ten-year base account first breaches in2018while
+selecting macro/GARCH with no feedback allocation. Its cached
+four-expert control first breached in2022. Conversely,several
+new stress breaches occur later than their old counterparts.
+The preserved base/stress execution clocks affect complete
+paths;they need not order every first-breach date monotonically.
+The zero pending-request observation is not permission to change
+their original delays or to claim timing never matters.
+
+All four rolling books assign zero weight to the feedback expert
+both at their first breach and before the worst trough. Before
+the2022-10-14worst trough,the last known2022-09-30meta choice
+is commitment/macro,with macro weight46.029248percent and
+feedback weight zero. Prior actual stocks have by then fallen
+to16.69--17.15percent,yet accumulated maximum DD remains
+20.10--21.45percent. Neither source shadow peaks nor a source
+policy's protection state is a main-account high-water-mark floor.
+
+### Entire saved losses reconcile to held assets and actual fees
+
+The following are signed adjusted-asset mark PnL and recorded fees
+over each book's own maximum-DD peak-to-trough episode. Rows
+are separate fresh-capital accounts,not additive portfolio wealth.
+Stock marks include SOXX,the four original style funds,the two
+added styles and any other admitted stock proxies. BIL is a
+price-bearing ETF,not an invented interest return on idle cash.
+
+| Rule | Path | Peak to trough | Actual NAV change USD | Stock marks USD | GLD marks USD | BIL marks USD | IEF/TLT marks USD | Recorded fees USD |
+|---|---|---|---:|---:|---:|---:|---:|---:|
+| Equal | 10y base | 2020-02-19--2020-03-20 | -2507.95 | -2359.22 | -184.49 | +11.63 | +37.53 | 13.40 |
+| Equal | 10y stress | 2021-12-27--2022-10-14 | -3342.59 | -2919.35 | -332.11 | +70.26 | 0.00 | 161.38 |
+| Equal | 5y base | 2021-12-27--2022-10-14 | -1785.20 | -1561.03 | -181.51 | +36.74 | 0.00 | 79.39 |
+| Equal | 5y stress | 2021-12-27--2022-10-14 | -1749.13 | -1499.34 | -170.34 | +36.04 | 0.00 | 115.49 |
+| Rolling | 10y base | 2021-12-27--2022-10-14 | -4835.80 | -4497.06 | -269.90 | +65.05 | 0.00 | 133.89 |
+| Rolling | 10y stress | 2021-12-27--2022-10-14 | -4485.21 | -3973.79 | -244.15 | +64.50 | 0.00 | 331.77 |
+| Rolling | 5y base | 2021-12-27--2022-10-14 | -2469.83 | -2266.18 | -135.69 | +32.74 | 0.00 | 100.70 |
+| Rolling | 5y stress | 2021-12-27--2022-10-14 | -2287.97 | -1997.89 | -122.38 | +32.39 | 0.00 | 200.09 |
+
+Asset marks minus recorded fees equal each actual NAV change,
+with maximum whole-loss reconciliation error
+`1.3642420526593924e-11`USD. Maximum daily monetary identity
+error is`2.4270363496725622e-11`USD. These are reconstruction
+identities of already-held adjusted model units,not broker shares,
+causal expert alpha or a simulated fee-free counterfactual.
+Fees account for0.53--8.75percentof these actual net loss amounts;
+costs still matter,but they are not the complete loss mechanism.
+
+The original meta-weight-only switch proxy also remains distinct
+from actual execution. In each ten-year rolling book it is positive
+on eight scored opportunities where the main account holds;
+in each five-year book that occurs three times. Each rolling path
+also has one zero-proxy opportunity followed by actual execution.
+Expert native recommendation changes and actual-holdings-band
+requests are not represented by only the change in expert weights.
+No new cost proxy,penalty,band or selection cutoff is fitted here.
+
+### Preserved identities and remaining work
+
+Private diagnostic SHA256:
+`94067990b95ada74543cdaf0ea2c57a147f900976d232722e3d67ed67d3a968d`.
+Precomputation intent SHA256:
+`7b2bb1f5e514d09e151b4127d81cc2e261d9ecb5cfd56fa4b72e2334b0ecbf50`.
+Exact reporting-summary SHA256:
+`7586a8094d7be1f1d22d13028a16c509cae023f87e09c25b80aa6237a746fad4`.
+The65direct input references,new diagnostic code/test bytes,
+all eight financial outcomes,the original database and455-event
+journal remain unchanged. No old four-expert diagnostic is
+rerun and no prospective observation is backfilled.
+
+Both five-expert rules remain rejected. Current counts remain
+**41registrations,38completed/reviewed,three technical failures,
+zero pending,152funded paths,216combined completions and
+zero qualifiers**. No next pool,financial law or new numerical
+parameter is selected by this diagnosis. A subsequent independently
+defined expert-layer question must still be frozen and evaluated
+on every original main-capital path. The investment objective
+has not been achieved.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,
