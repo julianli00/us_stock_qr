@@ -76,6 +76,12 @@ The single pool of model capital whose asset holdings, cash, execution and costs
 determine a formal portfolio path.
 _Avoid_: Sum of shadow books, brokerage account
 
+**Drawdown headroom (回撤余量)**:
+The amount by which current main wealth is above or below the wealth implied by a
+specified loss limit relative to its retained peak. It is not idle cash, available
+buying power or a guarantee against a later breach.
+_Avoid_: Cash balance, guaranteed protection
+
 **Final portfolio qualification (最终组合资格)**:
 Joint satisfaction of every required performance and operating constraint across
 all formal paths of the same frozen portfolio rule.

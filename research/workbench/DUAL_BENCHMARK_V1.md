@@ -1172,6 +1172,101 @@ pending and184funded paths:224combined completions,zero
 qualifiers. No risk window,limit,subset size,rounding,tie or
 acceptance gate is retuned after these outcomes.
 
+## Saved continuous-main versus assessment-reference audit
+
+The zero-trial audit completed **2026-10-30T15:07:09.432620Z**.
+Its pre-derivation intent
+`525516574131a71549e8e9b359dd1e6205624d53f88c1b4f5b705fc83de66815`
+bound965source references,two implementation/test files and
+three validation artifacts before findings. Diagnostic and summary
+hashes are
+`ee4e5cae1fc670cdbe4b67fabea0d41915c7010ce83dab61ad6de466480c2dbf`
+and`b36bce23c19c62ae4f80729ea6216f8f7cc8a35846cc905ce6d10dcdb59caddf`.
+Only the old frozen pure book validator is reused through
+non-main loading;no source risk curve,rank,learning,target,
+account,benchmark or previous analysis pipeline is replayed.
+
+### A local source peak is not the retained main peak
+
+Main risk uses the continuous running peak,including the actual
+initialUSD10000,without a reset at monthly decisions or source
+lookback boundaries. Signed headroom is main NAV minus85%of
+that retained main peak. Negative headroom is preserved;it is
+not negative cash,available buying power or a risk guarantee.
+The source risk values are read from the saved selected card,
+not recomputed or applied as a new control.
+
+| Actual path | Source-mature main signal opportunities | Source-admissible but main already beyond15% | Such opportunities with actual new main intent | Main peak earlier than source window, among all mature opportunities | Full main beyond15% but actual trailing126 within15% | Minimum signed headroom, USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 114 | 24 | 17 | 46 | 17 | -4112.52 |
+| 10y stress | 114 | 22 | 15 | 48 | 16 | -3479.36 |
+| 5y base | 61 | 23 | 16 | 37 | 16 | -2181.23 |
+| 5y stress | 61 | 23 | 16 | 38 | 16 | -1852.48 |
+
+Every selected source assessment at these mature opportunities
+is historically admissible. In all24/22/23/23already-breached
+cases,the main peak also predates the source sample. Actual
+main drawdown exceeds15%on514/454/486/463formal account
+days. These are state comparisons,not a causal estimate of
+loss caused by changing experts or resetting a reference.
+An issued intent is not a same-close execution.
+
+### Persistent loss can outlive a short risk reference
+
+| Actual path | Worst peak | Earliest worst trough | Formal sessions after peak | Full main DD at trough | Actual trailing126 main DD at trough | Saved selected-source maximum DD |
+|---|---|---|---:|---:|---:|---:|
+| 10y base | 2021-12-27 | 2023-11-10 | 472 | 33.138249% | 13.883385% | 12.403162% |
+| 10y stress | 2021-12-27 | 2023-10-26 | 461 | 30.738038% | 12.432753% | 9.440635% |
+| 5y base | 2021-12-27 | 2023-11-10 | 472 | 33.531206% | 13.914555% | 12.403162% |
+| 5y stress | 2021-12-27 | 2023-10-26 | 461 | 31.121966% | 12.432753% | 9.440635% |
+
+The source observation windows begin2023-05-03for base-trough
+contexts and2023-03-31for stress-trough contexts. Neither
+contains the retained2021main peak. Return context uses the
+strictly earlier nominal allocation decision,not an assessment
+formed at the same close as the completed return.
+
+There is an important counterexample to a window-only story.
+Ten-year first breaches are2019-05-23/2019-05-28with main
+peaks180/182sessions old and outside the source window.
+Both five-year first breaches occur2022-06-13,only116
+formal sessions after the2021-12-27peak,which is still inside
+the2021-11-30through2022-05-31source window.
+The selected source risk is10.068961%,while actual main DD
+is15.236295/15.300856%. Thus merely retaining the peak date
+inside a longer source window is not a demonstrated remedy.
+
+### Fresh capital and missing main history stay explicit
+
+Ten-year main initialization and source assessment both begin
+2016-10-05. Five-year main capital instead begins at its
+actual2021-10-05signal,using a known2021-09-30source
+assessment. It does not inherit the source's earlier capital,
+peak,wealth or risk estimate. There are121/61original main
+signal opportunities per ten/five-year path.
+
+An actual main trailing126-return drawdown requires127known
+NAVpoints,including the actual fresh seed. Seven mature-source
+five-year signal opportunities lack that much main history;
+the statistic remains explicitly unavailable,not zero or
+an assertion of safety. Full main drawdown/headroom are still
+observable from fresh initial capital. All initial fees and
+all7532formal account days remain in the original verdicts.
+Maximum saved drawdown arithmetic difference is
+1.7763568394002505e-15,below the frozen1e-12bound.
+
+The existing admitted diversified defensive expert already
+includes IEF,TLT,GLDandBIL. A separate intermediate/long-duration
+variant was not asserted to add an independent complementary
+role,and no additional expert was admitted. Unreviewed
+variants are not reclassified invalid.
+This audit selects no new allocation/execution controller,
+changes no acceptance gate,and establishes no isolated
+reference-reset/fee effect or independent OOS.
+The552events,50registrations,46completed reviews,four
+technical failures,zero pending,184funded paths and224combined
+completions/zero qualifiers remain unchanged.
+
 ## Initial benchmark command
 
 From the SSD workspace root:

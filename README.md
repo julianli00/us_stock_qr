@@ -524,6 +524,33 @@ annual turnover and total fees rise throughout. All original
 outcomes remain;no window,risk limit,rank or tie is retuned.
 Current totals are224completed configurations and zero qualifiers.
 
+A saved main-risk-reference audit adds **zero strategy trials**.
+Historical basket admissibility and continuous main drawdown
+refer to different peak states. At24/22/23/23mature signal
+opportunities,the selected source basket passes its historical
+risk screen while the ten-year base/stress and five-year
+base/stress main accounts are already beyond15%drawdown.
+Actual new main intents are issued at17/15/16/16of those
+opportunities. The retained main peak predates the source
+sample in all those already-breached cases.
+
+At the worst troughs,full main drawdown remains30.74--33.53%
+while trailing126-return main drawdown is only12.43--13.91%.
+The retained2021-12-27peak is461or472formal sessions old.
+This is not proof of an isolated reset/fee cause:the five-year
+first breach on2022-06-13occurs only116sessions after its
+peak,which is still inside the source observation window.
+Lengthening the window is not an established repair.
+
+Five-year fresh capital is initialized at its actual2021-10-05
+anchor,not the source's2021-09-30assessment date. Seven
+source-mature five-year opportunities lack126actual main
+returns;that main statistic remains unavailable,not zero.
+Signed drawdown headroom is not cash or buying power and is
+not clipped into safety. No alternative weights,risk controller
+or funded account is tested. All7532formal days and the same
+224completed verdicts/zero qualifiers remain.
+
 The [new frozen protocol](research/workbench/config/dual-benchmark-v1.json)
 requires every original ten/five-year base/stress path to have net Sharpe above
 1, net CAGR above 12%, drawdown at most 15%, and beat full-capital matched-cost
