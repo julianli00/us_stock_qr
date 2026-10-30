@@ -43,6 +43,31 @@ portfolio remain separate. The first fixed-pool study requires an equal-weight
 control and one causal rolling rule, without claiming that the pool or direction
 change itself has met the investment objective.
 
+The latest [read-only contest-credit diagnosis](research/workbench/evidence/expert_contest_credit_diagnosis_20261030_v1.json)
+keeps both completed financial rules unchanged. A new interpretation assesses
+their stored pre-tilt credit proportions against the following complete month's
+already recorded winning credit. It does not treat the actual risk-tilted capital
+weights as calibrated probabilities or recompute any source return or account.
+Exact rational expected multiclass Brier loss is lower when better.
+
+| Fixed diagnostic population | Pairs | Unconditional mean loss | Contextual mean loss | Contextual minus control |
+| --- | ---: | ---: | ---: | ---: |
+| All complete following months |119|0.820184|0.829984|+0.009800|
+| Original main assessment mature |113|0.820376|0.829699|+0.009323|
+| Original main assessment unmatured |6|0.816575|0.835356|+0.018781|
+
+Contextual loss is lower in58months, higher in60and equal inone. The four
+predeclared context subsets have17/9/47/46pairs and paired mean differences
+of+0.052607/+0.019304/+0.003370/-0.001310; none is omitted or chosen as a new
+policy. Forecast-time completed-month support ranges0-118for the pooled
+assessment and0-46for the contextual one; prior-only forecasts number1and4.
+All121decisions and484records are retained. The initial partial month is
+explicitly excluded; the final2026-09-30forecast has no invented full October
+outcome. This exposed-history diagnostic is not independent forward validation,
+a causal explanation of fees or evidence that changing a prior/context will
+improve returns. It adds **zero financial configurations or funded paths**;
+the226completed historical evaluations still have zero qualifiers.
+
 The latest [contextual expert-contest preregistration](research/workbench/evidence/expert_contextual_contest_20261030_registration_v1.json)
 records two new fixed rules at **2026-10-30T19:46:10.459362Z /
 19:46:10.719335Z**, before new real contexts, credits or weights. The same six

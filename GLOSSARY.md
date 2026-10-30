@@ -60,6 +60,12 @@ The accumulated assessment information a meta-strategy uses to revise future cap
 weights. It is not the main account's holdings, cash or realized wealth.
 _Avoid_: Main capital account, transferable shadow wealth guarantee
 
+**Contest-credit forecast (竞赛积分预期)**:
+An assessment of how a later period's winning credit may be divided among complete
+strategy experts. It is not expected portfolio return, deployable capital or final
+qualification.
+_Avoid_: Guaranteed winner, expected main-account return
+
 **Expert reversal forecast (专家反转预期)**:
 An expectation that recent relative weakness among complete experts will reverse.
 It is an allocation premise, not an observed recovery or an independent source of returns.

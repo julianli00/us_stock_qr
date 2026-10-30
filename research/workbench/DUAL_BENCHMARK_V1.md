@@ -20,6 +20,58 @@ inception date. Raw documents, prices and daily account ledgers remain private.
 The original bundle's README and manifest remain byte-for-byte unchanged; this
 separate document describes the new protocol without rewriting that history.
 
+## Latest read-only contest-credit assessment
+
+The [fixed diagnostic](evidence/expert_contest_credit_diagnosis_20261030_v1.json)
+completed **2026-10-30T20:54:46.495075Z** after preanalysis intent
+`5850b87bc6810ee64b3b81b9ff5af9372f1b4af23daab4ecde03a3638eb35c22`
+bound the four tested analysis files,24synthetic checks and911source references.
+One actual10.81-second pass preserved121decisions and484saved trace records;
+there was no source,context,credit,risk,target,account or benchmark replay.
+
+This diagnosis explicitly introduces a credit-prediction interpretation, not a
+claim that the original applied risk-tilted weights were return probabilities.
+For each previous genuine month-end it reads the stored exact rational credit
+proportions before the following outcome is assimilated. The next saved60-unit
+winning-credit vector, including equal ties, defines outcome shares. Expected
+multiclass Brier is the fixed unscaled loss
+`1 - 2*sum(p_i*y_i) + sum(p_i*p_i)`, evaluated as exact rationals, not rounded
+decimal or binary64 input replacements. Lower is better only for this declared
+credit-assessment question.
+
+| Fixed population | Pairs | Unconditional mean | Contextual mean | Paired contextual minus unconditional |
+| --- | ---: | ---: | ---: | ---: |
+| All complete next-month outcomes |119|0.820183899457|0.829983929511|+0.009800030055|
+| Forecast-time main assessment mature |113|0.820375546863|0.829698704883|+0.009323158020|
+| Forecast-time main assessment unmatured |6|0.816574539978|0.835355660011|+0.018781120033|
+| Original context0 |17|0.764301577968|0.816908173284|+0.052606595316|
+| Original context1 |9|0.793037319815|0.812341132777|+0.019303812962|
+| Original context2 |47|0.833159712893|0.836529965918|+0.003370253025|
+| Original context3 |46|0.832889452731|0.831579784194|-0.001309668537|
+
+Across119paired months, contextual loss is lower58times, higher60and equal
+once; the mature subset has56lower/57higher/no ties. The six main-risk-unmatured
+predictions remain because their credit posteriors were actually saved, not
+replaced by the main account's equal-weight warmup. The sole declared initial
+partial interval is unscored. Final2026-09-30has no complete following month
+and is not included in the means.
+
+Actual forecast-time support ranges0-118pooled and0-46contextual; prior-only
+assessments number1and4, including two contextual prior-only cases after main
+risk maturity. Pooled minimum unit-prior mass is3/62; contextual minimum is3/26.
+These are observed assessment-support facts, not independent sample counts or
+causal proof that sparse support caused a financial loss.
+
+All exact per-month operands and paired losses remain private. All fixed
+subsets are reported without a new threshold, significance test, alternative
+prior/context, policy selection or numerical repair. The result does not
+establish financial improvement, forecast calibration on independent data, or
+a universal claim against conditioning. The original eight financial
+rejections, costs, formal windows, trial counts and two one-day forward
+identities remain unchanged:583journal events,56registrations,48completed
+reviews,eighttechnical failures,zero pending,192funded paths,226combined
+completions and zero qualifiers. No new economic rule is selected here.
+
 ## Latest contextual expert-contest preregistration
 
 The [actual packet](evidence/expert_contextual_contest_20261030_registration_v1.json)

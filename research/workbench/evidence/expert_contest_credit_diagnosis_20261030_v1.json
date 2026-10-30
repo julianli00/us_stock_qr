@@ -1,0 +1,483 @@
+{
+  "aggregates": {
+    "all_complete_pairs": {
+      "expected_brier": {
+        "expert_pool_six_contest_frequency_v1": {
+          "loss_mean": {
+            "denominator": "6578341312791929422394700962863107283926764831316254438707214139599516798436364883375066766490831461120000",
+            "numerator": "5395449629883966335348400899748864427181852458481082318349937440082797299526976445624330737847329856174763"
+          },
+          "loss_mean_display": 0.8201838994568785,
+          "loss_sum": {
+            "denominator": "55280179099091843885669755990446279696863570011060961669808522181508544524675335154412325768830516480000",
+            "numerator": "5395449629883966335348400899748864427181852458481082318349937440082797299526976445624330737847329856174763"
+          },
+          "maximum_completed_month_support": 118,
+          "maximum_unit_prior_mass": {
+            "denominator": "1",
+            "numerator": "1"
+          },
+          "minimum_completed_month_support": 0,
+          "minimum_unit_prior_mass": {
+            "denominator": "62",
+            "numerator": "3"
+          },
+          "prior_only_forecasts": 1
+        },
+        "expert_pool_six_contextual_contest_v1": {
+          "loss_mean": {
+            "denominator": "67228537875081208486017903415317534606720000",
+            "numerator": "55798606040867919673180317297941193563696573"
+          },
+          "loss_mean_display": 0.8299839295114302,
+          "loss_sum": {
+            "denominator": "564945696429253852823679860632920458880000",
+            "numerator": "55798606040867919673180317297941193563696573"
+          },
+          "maximum_completed_month_support": 46,
+          "maximum_unit_prior_mass": {
+            "denominator": "1",
+            "numerator": "1"
+          },
+          "minimum_completed_month_support": 0,
+          "minimum_unit_prior_mass": {
+            "denominator": "26",
+            "numerator": "3"
+          },
+          "prior_only_forecasts": 4
+        }
+      },
+      "no_pairs": false,
+      "paired_loss": {
+        "contextual_higher_loss": 60,
+        "contextual_lower_loss": 58,
+        "contextual_minus_unconditional_mean": {
+          "denominator": "1315668262558385884478940192572621456785352966263250887741442827919903359687272976675013353298166292224000",
+          "numerator": "12893588514891972586773461109825062595896781062222246280276006724638175993153926111435036702234206073379"
+        },
+        "contextual_minus_unconditional_mean_display": 0.00980003005455168,
+        "equal_loss": 1
+      },
+      "pairs": 119
+    },
+    "by_forecast_context": {
+      "0": {
+        "expected_brier": {
+          "expert_pool_six_contest_frequency_v1": {
+            "loss_mean": {
+              "denominator": "4855609648530978736216638838312382167080000",
+              "numerator": "3711150116369250626324143118129440469856053"
+            },
+            "loss_mean_display": 0.7643015779680777,
+            "loss_sum": {
+              "denominator": "285624096972410513895096402253669539240000",
+              "numerator": "3711150116369250626324143118129440469856053"
+            },
+            "maximum_completed_month_support": 113,
+            "maximum_unit_prior_mass": {
+              "denominator": "9",
+              "numerator": "2"
+            },
+            "minimum_completed_month_support": 21,
+            "minimum_unit_prior_mass": {
+              "denominator": "119",
+              "numerator": "6"
+            },
+            "prior_only_forecasts": 0
+          },
+          "expert_pool_six_contextual_contest_v1": {
+            "loss_mean": {
+              "denominator": "115158798981626400",
+              "numerator": "94074164113621409"
+            },
+            "loss_mean_display": 0.8169081732836668,
+            "loss_sum": {
+              "denominator": "6774046998919200",
+              "numerator": "94074164113621409"
+            },
+            "maximum_completed_month_support": 16,
+            "maximum_unit_prior_mass": {
+              "denominator": "1",
+              "numerator": "1"
+            },
+            "minimum_completed_month_support": 0,
+            "minimum_unit_prior_mass": {
+              "denominator": "11",
+              "numerator": "3"
+            },
+            "prior_only_forecasts": 1
+          }
+        },
+        "no_pairs": false,
+        "paired_loss": {
+          "contextual_higher_loss": 11,
+          "contextual_lower_loss": 6,
+          "contextual_minus_unconditional_mean": {
+            "denominator": "4855609648530978736216638838312382167080000",
+            "numerator": "255437091790738514056608701206936413489997"
+          },
+          "contextual_minus_unconditional_mean_display": 0.052606595315589,
+          "equal_loss": 0
+        },
+        "pairs": 17
+      },
+      "1": {
+        "expected_brier": {
+          "expert_pool_six_contest_frequency_v1": {
+            "loss_mean": {
+              "denominator": "15575826338543116800",
+              "numerator": "12352211573424121207"
+            },
+            "loss_mean_display": 0.7930373198151286,
+            "loss_sum": {
+              "denominator": "1730647370949235200",
+              "numerator": "12352211573424121207"
+            },
+            "maximum_completed_month_support": 102,
+            "maximum_unit_prior_mass": {
+              "denominator": "16",
+              "numerator": "3"
+            },
+            "minimum_completed_month_support": 26,
+            "minimum_unit_prior_mass": {
+              "denominator": "18",
+              "numerator": "1"
+            },
+            "prior_only_forecasts": 0
+          },
+          "expert_pool_six_contextual_contest_v1": {
+            "loss_mean": {
+              "denominator": "58436698320",
+              "numerator": "47470533709"
+            },
+            "loss_mean_display": 0.8123411327767157,
+            "loss_sum": {
+              "denominator": "6492966480",
+              "numerator": "47470533709"
+            },
+            "maximum_completed_month_support": 8,
+            "maximum_unit_prior_mass": {
+              "denominator": "1",
+              "numerator": "1"
+            },
+            "minimum_completed_month_support": 0,
+            "minimum_unit_prior_mass": {
+              "denominator": "7",
+              "numerator": "3"
+            },
+            "prior_only_forecasts": 1
+          }
+        },
+        "no_pairs": false,
+        "paired_loss": {
+          "contextual_higher_loss": 5,
+          "contextual_lower_loss": 4,
+          "contextual_minus_unconditional_mean": {
+            "denominator": "2632314651213786739200",
+            "numerator": "50813709683076359057"
+          },
+          "contextual_minus_unconditional_mean_display": 0.019303812961587112,
+          "equal_loss": 0
+        },
+        "pairs": 9
+      },
+      "2": {
+        "expected_brier": {
+          "expert_pool_six_contest_frequency_v1": {
+            "loss_mean": {
+              "denominator": "8521401807349937411682928587842243955009691465351542140553270000",
+              "numerator": "7099688683254705926063308346995459773885719557366957904608669163"
+            },
+            "loss_mean_display": 0.8331597128926644,
+            "loss_sum": {
+              "denominator": "181306421432977391737934650805154126702333860964926428522410000",
+              "numerator": "7099688683254705926063308346995459773885719557366957904608669163"
+            },
+            "maximum_completed_month_support": 118,
+            "maximum_unit_prior_mass": {
+              "denominator": "7",
+              "numerator": "6"
+            },
+            "minimum_completed_month_support": 1,
+            "minimum_unit_prior_mass": {
+              "denominator": "62",
+              "numerator": "3"
+            },
+            "prior_only_forecasts": 0
+          },
+          "expert_pool_six_contextual_contest_v1": {
+            "loss_mean": {
+              "denominator": "902783222893947656812240417291406893290240000",
+              "numerator": "755205218678768250425725699466335388963454281"
+            },
+            "loss_mean_display": 0.8365299659179468,
+            "loss_sum": {
+              "denominator": "19208153678594630996005115261519295601920000",
+              "numerator": "755205218678768250425725699466335388963454281"
+            },
+            "maximum_completed_month_support": 46,
+            "maximum_unit_prior_mass": {
+              "denominator": "1",
+              "numerator": "1"
+            },
+            "minimum_completed_month_support": 0,
+            "minimum_unit_prior_mass": {
+              "denominator": "26",
+              "numerator": "3"
+            },
+            "prior_only_forecasts": 1
+          }
+        },
+        "no_pairs": false,
+        "paired_loss": {
+          "contextual_higher_loss": 20,
+          "contextual_lower_loss": 27,
+          "contextual_minus_unconditional_mean": {
+            "denominator": "1218956964494321822468590156983487422632047554984882801937494374400",
+            "numerator": "4108193397276023984804197142846250958255730381987490938304514033"
+          },
+          "contextual_minus_unconditional_mean_display": 0.0033702530252823874,
+          "equal_loss": 0
+        },
+        "pairs": 47
+      },
+      "3": {
+        "expected_brier": {
+          "expert_pool_six_contest_frequency_v1": {
+            "loss_mean": {
+              "denominator": "379004864939196777519111843991498872877490591289289048019473920000",
+              "numerator": "315669154541543408618549904490246357909522284325629522137726014207"
+            },
+            "loss_mean_display": 0.832889452730866,
+            "loss_sum": {
+              "denominator": "8239236194330364728676344434597801584293273723680196696075520000",
+              "numerator": "315669154541543408618549904490246357909522284325629522137726014207"
+            },
+            "maximum_completed_month_support": 112,
+            "maximum_unit_prior_mass": {
+              "denominator": "1",
+              "numerator": "1"
+            },
+            "minimum_completed_month_support": 0,
+            "minimum_unit_prior_mass": {
+              "denominator": "59",
+              "numerator": "3"
+            },
+            "prior_only_forecasts": 1
+          },
+          "expert_pool_six_contextual_contest_v1": {
+            "loss_mean": {
+              "denominator": "294525023071784341938745100676629199229440000",
+              "numerator": "244921055125638723619340845738456319117938267"
+            },
+            "loss_mean_display": 0.8315797841935635,
+            "loss_sum": {
+              "denominator": "6402717892864876998668371753839765200640000",
+              "numerator": "244921055125638723619340845738456319117938267"
+            },
+            "maximum_completed_month_support": 45,
+            "maximum_unit_prior_mass": {
+              "denominator": "1",
+              "numerator": "1"
+            },
+            "minimum_completed_month_support": 0,
+            "minimum_unit_prior_mass": {
+              "denominator": "17",
+              "numerator": "2"
+            },
+            "prior_only_forecasts": 1
+          }
+        },
+        "no_pairs": false,
+        "paired_loss": {
+          "contextual_higher_loss": 24,
+          "contextual_lower_loss": 21,
+          "contextual_minus_unconditional_mean": {
+            "denominator": "61535798378825397593169277658225744248698688637615903770013814862080000",
+            "numerator": "-80591499054543465821396184898203095916339555264879740784690363348349"
+          },
+          "contextual_minus_unconditional_mean_display": -0.001309668537302592,
+          "equal_loss": 1
+        },
+        "pairs": 46
+      }
+    },
+    "main_assessment_mature": {
+      "expected_brier": {
+        "expert_pool_six_contest_frequency_v1": {
+          "loss_mean": {
+            "denominator": "6246660238197378359080682426920429605745583411249888668688363006510465531288312872448592811877848362240000",
+            "numerator": "5124607308977439250212955178568364354287672082754465883841618409738117463472741948450070592579082516350763"
+          },
+          "loss_mean_display": 0.8203755468628251,
+          "loss_sum": {
+            "denominator": "55280179099091843885669755990446279696863570011060961669808522181508544524675335154412325768830516480000",
+            "numerator": "5124607308977439250212955178568364354287672082754465883841618409738117463472741948450070592579082516350763"
+          },
+          "maximum_completed_month_support": 118,
+          "maximum_unit_prior_mass": {
+            "denominator": "2",
+            "numerator": "1"
+          },
+          "minimum_completed_month_support": 6,
+          "minimum_unit_prior_mass": {
+            "denominator": "62",
+            "numerator": "3"
+          },
+          "prior_only_forecasts": 0
+        },
+        "expert_pool_six_contextual_contest_v1": {
+          "loss_mean": {
+            "denominator": "63838863696505685369075824251520011853440000",
+            "numerator": "52967022530201997415509345705865499054251973"
+          },
+          "loss_mean_display": 0.8296987048831389,
+          "loss_sum": {
+            "denominator": "564945696429253852823679860632920458880000",
+            "numerator": "52967022530201997415509345705865499054251973"
+          },
+          "maximum_completed_month_support": 46,
+          "maximum_unit_prior_mass": {
+            "denominator": "1",
+            "numerator": "1"
+          },
+          "minimum_completed_month_support": 0,
+          "minimum_unit_prior_mass": {
+            "denominator": "26",
+            "numerator": "3"
+          },
+          "prior_only_forecasts": 2
+        }
+      },
+      "no_pairs": false,
+      "paired_loss": {
+        "contextual_higher_loss": 57,
+        "contextual_lower_loss": 56,
+        "contextual_minus_unconditional_mean": {
+          "denominator": "1249332047639475671816136485384085921149116682249977733737672601302093106257662574489718562375569672448000",
+          "numerator": "11647720099985047127269057912964252463218817853734908248968405421181332124380254807092968162655320575859"
+        },
+        "contextual_minus_unconditional_mean_display": 0.009323158020313806,
+        "equal_loss": 0
+      },
+      "pairs": 113
+    },
+    "main_assessment_unmatured": {
+      "expected_brier": {
+        "expert_pool_six_contest_frequency_v1": {
+          "loss_mean": {
+            "denominator": "76839840",
+            "numerator": "62745457"
+          },
+          "loss_mean_display": 0.8165745399782196,
+          "loss_sum": {
+            "denominator": "12806640",
+            "numerator": "62745457"
+          },
+          "maximum_completed_month_support": 5,
+          "maximum_unit_prior_mass": {
+            "denominator": "1",
+            "numerator": "1"
+          },
+          "minimum_completed_month_support": 0,
+          "minimum_unit_prior_mass": {
+            "denominator": "11",
+            "numerator": "6"
+          },
+          "prior_only_forecasts": 1
+        },
+        "expert_pool_six_contextual_contest_v1": {
+          "loss_mean": {
+            "denominator": "76204800",
+            "numerator": "63658111"
+          },
+          "loss_mean_display": 0.835355660010918,
+          "loss_sum": {
+            "denominator": "12700800",
+            "numerator": "63658111"
+          },
+          "maximum_completed_month_support": 4,
+          "maximum_unit_prior_mass": {
+            "denominator": "1",
+            "numerator": "1"
+          },
+          "minimum_completed_month_support": 0,
+          "minimum_unit_prior_mass": {
+            "denominator": "5",
+            "numerator": "3"
+          },
+          "prior_only_forecasts": 2
+        }
+      },
+      "no_pairs": false,
+      "paired_loss": {
+        "contextual_higher_loss": 3,
+        "contextual_lower_loss": 2,
+        "contextual_minus_unconditional_mean": {
+          "denominator": "1317254400",
+          "numerator": "24739513"
+        },
+        "contextual_minus_unconditional_mean_display": 0.018781120032698315,
+        "equal_loss": 1
+      },
+      "pairs": 6
+    }
+  },
+  "alternative_priors_contexts_scores_or_parameters_selected": false,
+  "analysis_intent_sha256": "5850b87bc6810ee64b3b81b9ff5af9372f1b4af23daab4ecde03a3638eb35c22",
+  "applied_risk_tilt_weights_scored_as_probabilities": false,
+  "complete_next_month_pairs": 119,
+  "completed_at": "2026-10-30T20:54:46.495075+00:00",
+  "credit_forecast_interpretation_introduced_by_this_diagnostic": true,
+  "diagnosis_id": "ssd_expert_contest_credit_diagnosis_20261030_v1",
+  "exact_integer_and_rational_operands_preserved": true,
+  "final_forecast_without_full_outcome": {
+    "complete_following_month_available": false,
+    "decision_session": "2026-09-30",
+    "included_in_loss_means": false
+  },
+  "financial_cost_return_or_qualification_improvement_established": false,
+  "forecast_taken_before_next_credit_assimilation": true,
+  "independent_forward_validation": false,
+  "initial_partial_excluded": [
+    {
+      "forecast_session": "2016-10-05",
+      "outcome_as_of": "2016-10-31",
+      "status": "excluded_declared_initial_partial"
+    }
+  ],
+  "investment_objective_verified": false,
+  "journal_derived_counts_unchanged": {
+    "current_journal_event_count": 583,
+    "current_journal_head_sha256": "89350f4299a96e640a9267bc8d508028b8538e0f53113871ba891404f1c655b8",
+    "new_account_paths": 192,
+    "new_completed_strategy_evaluations": 48,
+    "new_historical_point_gate_passes": 0,
+    "new_pending_candidates": 0,
+    "new_registered_candidates": 56,
+    "new_reviews": 48,
+    "new_technical_failures": 8,
+    "original_completed_configurations": 178,
+    "original_registered_versions": 96,
+    "original_reviews": 94,
+    "total_legacy_plus_ssd_completed_configurations": 226
+  },
+  "new_financial_trials": 0,
+  "new_funded_paths": 0,
+  "new_source_requests": 0,
+  "new_source_return_context_credit_risk_target_or_account_pipeline": false,
+  "order_authority": false,
+  "posterior_availability_is_main_risk_score_maturity": false,
+  "schema_version": 1,
+  "source_complete_rejected_results": {
+    "path": "evidence/expert_contextual_contest_20261030_results_v1.json",
+    "sha256": "0e5d1de4c89d970aa773a0213c9a8f34feceef25654bd021887f32d893790626"
+  },
+  "source_completed_contextual_registration": {
+    "path": "evidence/expert_contextual_contest_20261030_registration_v1.json",
+    "sha256": "5a1b050f8348c9ec5ef4878d8cdf6126696b30723ecb25a1e6e1d241fbfe49ee"
+  },
+  "source_decisions_preserved": 121,
+  "source_trace_records_preserved": 484,
+  "statistical_significance_or_independent_forecast_calibration_claimed": false
+}

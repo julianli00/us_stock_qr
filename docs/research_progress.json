@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-30",
-  "phase": "expert_contextual_contest_finished_rejected",
-  "active_research_focus": "select_next_independent_expert_layer_question_after_complete_contextual_contest_rejection",
+  "phase": "expert_contest_credit_diagnostic_finished",
+  "active_research_focus": "preserve_fixed_credit_assessment_evidence_before_selecting_next_independent_expert_layer_question",
   "research_mainline": {
     "id": "strategy_expert_pool_and_rolling_meta_v1",
     "user_directed": true,
@@ -1619,6 +1619,71 @@
       "independent_forward_validation": false,
       "order_authority": false
     },
+    "saved_contest_credit_prequential_diagnosis": {
+      "actual_completed_at_utc": "2026-10-30T20:54:46.495075Z",
+      "evidence": "research/workbench/evidence/expert_contest_credit_diagnosis_20261030_v1.json",
+      "evidence_sha256": "04bae533c31b02545c24cfd732b87e3e18d63be2abe979cc2c358850b830cec8",
+      "private_diagnostic_sha256": "382217eace0ec8f98beb3af0f85f2a0af801e9740daa8a866352b248321e7e87",
+      "preanalysis_intent_sha256": "5850b87bc6810ee64b3b81b9ff5af9372f1b4af23daab4ecde03a3638eb35c22",
+      "actual_scheduled_native_origin": 55393,
+      "frozen_source_references": 911,
+      "frozen_implementation_and_test_files": 4,
+      "passed_offline_checks": 24,
+      "original_decisions_preserved": 121,
+      "original_trace_records_preserved": 484,
+      "complete_following_month_pairs": 119,
+      "declared_initial_partial_intervals_excluded": 1,
+      "final_September_forecast_with_fabricated_full_October_outcome": false,
+      "fixed_expected_multiclass_Brier": {
+        "unconditional_mean": 0.8201838994568785,
+        "contextual_mean": 0.8299839295114302,
+        "paired_contextual_minus_unconditional_mean": 0.00980003005455168,
+        "contextual_lower_loss": 58,
+        "equal_loss": 1,
+        "contextual_higher_loss": 60
+      },
+      "original_main_assessment_mature": {
+        "pairs": 113,
+        "unconditional_mean": 0.8203755468628251,
+        "contextual_mean": 0.8296987048831389,
+        "paired_mean": 0.009323158020313806
+      },
+      "original_main_assessment_unmatured": {
+        "pairs": 6,
+        "unconditional_mean": 0.8165745399782196,
+        "contextual_mean": 0.835355660010918,
+        "paired_mean": 0.018781120032698315
+      },
+      "all_four_predeclared_context_pair_counts": [17, 9, 47, 46],
+      "all_four_predeclared_context_paired_mean_losses": [
+        0.052606595315589,
+        0.019303812961587112,
+        0.0033702530252823874,
+        -0.001309668537302592
+      ],
+      "forecast_time_completed_month_support": {
+        "unconditional_range": [0, 118],
+        "contextual_range": [0, 46],
+        "unconditional_prior_only": 1,
+        "contextual_prior_only": 4,
+        "mature_contextual_prior_only": 2
+      },
+      "credit_forecast_interpretation_introduced_by_this_diagnostic": true,
+      "applied_risk_weights_scored_as_probabilities": false,
+      "missing_assessment_or_outcome_zero_filled": false,
+      "original_source_credit_context_risk_target_or_account_pipeline_replayed": false,
+      "alternative_priors_contexts_scores_or_parameters_selected": false,
+      "isolated_causal_fee_or_support_effect_claimed": false,
+      "independent_statistical_significance_or_forecast_calibration_claimed": false,
+      "new_financial_configurations": 0,
+      "new_funded_paths": 0,
+      "new_shadow_account_runs": 0,
+      "new_source_requests": 0,
+      "new_economic_rule_or_pool_selected": false,
+      "independent_forward_validation": false,
+      "investment_objective_verified": false,
+      "order_authority": false
+    },
     "investment_objective_verified": false
   },
   "research_dashboard": {
@@ -2685,14 +2750,14 @@
     "第10项固定相反优先级：在当时较低SPY/QQQ尾部预算（以实际BIL风险作底）内最大化已观测机会，不扫风险倍率/旧门槛/窗口/核心参数。2026-10-28T05:46:36.615636Z真实登记先于122有证书计划（112优化/10非正机会），5前缀及完整6家族覆盖通过。先发布1074904478bfd0ba2a19d502c479ebd2de13c227，再于05:54:28.534515Z完成4资金路径并拒绝。依次十年base/stress、五年base/stress净CAGR12.9292/11.4123/16.5627/14.9118%，Sharpe0.6781/0.5922/0.7818/0.6907，DD26.4086/27.0756/26.6875/27.3277%；回撤/夏普/QQQ全失败，3条CAGR过且仅五年胜SPY。SSD10完成/40路径/合计188/0通过、118事件，原记录不变；不得拼接第9项回撤与第10项收益。"
   ],
   "next": [
-    "Preserve56registered SSD identities:48completed/reviewed,8technical failures,0pending,192funded paths,226combined completions and0qualifiers from583journal events. Both new contextual-contest rules completed all four original paths and were rejected;all prior failures,outcomes and one-day forward models remain unchanged.",
-    "Close and preserve the two fixed contextual-contest rules and complete eight-path outcomes. All Sharpe/QQQ gates fail;contextual allocation has lower CAGR/Sharpe and higher DD/turnover/fees on all matched paths than its unconditional control. This is not isolated causal fee attribution or justification to tune the same contexts,prior or risk coefficient. Select a genuinely independent expert-layer question before new design/freeze/registration;none is selected by this result record. Failed reversal V1 remains terminal and unchanged.",
+    "Preserve56registered SSD identities:48completed/reviewed,8technical failures,0pending,192funded paths,226combined completions and0qualifiers from583journal events. The completed119-pair credit diagnosis adds zero financial configurations or accounts;all old outcomes and one-day forward models remain unchanged.",
+    "Preserve the fixed prequential-credit diagnosis:conditional expected Brier0.829984 versus unconditional0.820184 across119complete pairs,with all maturity/context subsets reported. No prior/context or financial rule is selected or retuned from these scores;support differences are not isolated causal effects. Select a genuinely independent expert-layer question before new design/freeze/registration;none is selected by this diagnosis. Failed reversal V1 and both numerical diagnoses remain closed.",
     "Continue economically motivated, preregistered independent small batches without ordinary per-batch approval or a configuration-count ceiling until2026-10-31T15:59Z. Use one computation; at cutoff preserve partial work, clear only the SSD session timer and confirm absence.",
     "Keep old source refusals, VIG/SDY terminal429 and prospective/PIT gates. The independent market-only IBKR adapter is proved, but the one actual probe stopped on2157 before historical requests;0history rows/admissions,no automatic retry or inferred entitlement denial. Default readonly account synchronization remains prohibited."
   ],
   "next_zh": [
-    "保留SSD56个登记身份：48项完成审阅、8项技术失败、0待评估，192资金路径、合计226完成、0通过，来自583条真实日志。两条新情境竞赛规则完成全部原定四路径且均拒绝；全部旧失败、结果和一天前瞻模型保持。",
-    "关闭并保留两条冻结情境竞赛规则及完整八路径结果。全部夏普/QQQ门失败；情境规则四路径CAGR/夏普均低于无情境对照，回撤、换手和费用均更高。这不构成隔离费用因果归因，也不授权继续调同一情境、先验或风险系数。下一步须先选真正独立的专家层问题；本次结果尚未选择新设计或模型。反转V1保持技术终止，不修改或重试。",
+    "保留SSD56个登记身份：48项完成审阅、8项技术失败、0待评估，192资金路径、合计226完成、0通过，来自583条真实日志。完成119对积分评估诊断，新增金融配置及账户均为零；全部旧结果和一天前瞻模型保持。",
+    "保留固定逐期积分诊断：119个完整月度对中，情境预期Brier为0.829984，无情境为0.820184，全部成熟度及情境子集均披露。不据此选择或调整先验、情境或金融规则，样本支持差异不构成隔离因果效应。下一步须先选真正独立的专家层问题；本诊断尚未选择新设计或模型。反转V1及两个数值诊断均保持关闭。",
     "持续开展有经济理由、事前冻结的独立小批次，无普通逐批确认或配置次数上限，截止2026-10-31T15:59Z；单计算job，届时保存未完状态、只清除SSD会话timer并确认不存在。",
     "原拒绝来源、VIG/SDY终止429和前瞻/PIT门保持。独立IBKR market-only适配器已证明，但唯一真实探针在历史请求前因2157停止；历史行/准入0，不自动重试或推断订阅拒绝，仍禁止默认readonly账户同步。"
   ],
