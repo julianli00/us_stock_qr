@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 41 SSD identities, 36 completed/rejected, three retained technical failures and two pending; 144 funded paths | Journal-derived current summary; zero qualifiers, no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 41 SSD identities, 38 completed/rejected, three retained technical failures and zero pending; 152 funded paths | Journal-derived current summary: 216 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -54,6 +54,19 @@ checks are preserved. No new main account has started at this registration;
 actual remote publication remains required before all eight funded paths.
 The source admissions and exposed four-expert accounts are reused, not rerun
 or relabeled as independent forward evidence.
+
+Actual preregistration publication
+`171436b2e7dff5c6af33c5e3afc3899fe67586ad` and fence437 preceded
+all eight new paths, completed **2026-10-30T01:11:00.518123Z**.
+The [complete five-expert outcomes](research/workbench/evidence/five_expert_meta_20261030_results_v1.json)
+reject both rules. Equal-weight net CAGR ranges16.7891--20.1724% and all
+Sharpes exceed1, but drawdowns15.7320--16.1781% all fail and both ten-year
+paths miss QQQ. Rolling-pair drawdowns20.1028--21.4531%, all four Sharpes
+below1 and all four QQQ shortfalls also fail. Compared with the unchanged
+four-expert controls, equal weighting improves CAGR/Sharpe and turnover
+throughout but worsens both five-year drawdowns; rolling lowers drawdown
+but loses CAGR/Sharpe on every path. The technically valid experts and
+all rejected combinations remain available as research evidence.
 
 The [new frozen protocol](research/workbench/config/dual-benchmark-v1.json)
 requires every original ten/five-year base/stress path to have net Sharpe above

@@ -6677,6 +6677,113 @@ Its three schema/value-preservation checks precede any new
 main account. It changes no financial rule, input, target,
 account, metric, gate or economic-trial count.
 
+## Actual five-expert outcomes: both rules rejected
+
+The actual preregistration publication
+`171436b2e7dff5c6af33c5e3afc3899fe67586ad` was verified against
+the configured remote,all117explicit public dependency files
+and eight unchanged pinned-import files. The real publication
+event is sequence437 at**2026-10-30T01:09:14.323621Z**,before
+any new main account. The single eight-path job started at
+01:10:33.949369Z and completed at
+**2026-10-30T01:11:00.518123Z**.
+
+The [complete canonical results](evidence/five_expert_meta_20261030_results_v1.json)
+retain every path and original qualification gate:
+
+| Rule | Path | Net CAGR | Net excess Sharpe | Maximum DD | Annual two-sided turnover | Model orders | Fees USD |
+|---|---|---:|---:|---:|---:|---:|---:|
+| Equal five | 10y base | 17.191341% | 1.105654 | 16.178125% | 2.611030x | 904 | 1160.92 |
+| Equal five | 10y stress | 16.789052% | 1.077647 | 15.732042% | 2.586481x | 868 | 1873.98 |
+| Equal five | 5y base | 20.172429% | 1.113607 | 16.051353% | 2.552356x | 431 | 517.83 |
+| Equal five | 5y stress | 19.067742% | 1.046883 | 16.008318% | 2.525664x | 413 | 747.42 |
+| Rolling five | 10y base | 15.997617% | 0.957617 | 21.192782% | 6.300572x | 774 | 1402.84 |
+| Rolling five | 10y stress | 15.531915% | 0.929133 | 20.102769% | 6.309740x | 774 | 3263.14 |
+| Rolling five | 5y base | 16.964946% | 0.887832 | 21.453136% | 6.754413x | 434 | 653.64 |
+| Rolling five | 5y stress | 15.967381% | 0.829703 | 20.370604% | 6.779563x | 434 | 1297.15 |
+
+All eight paths pass12percentnetCAGR and matched-costSPY,
+and all four stress paths pass the additional base-costSPY gate.
+**All eight fail15percentmaximum drawdown.** The minimum is
+exactly`0.1573204165867227`,not a rounded15percentpass.
+Equal weighting passes all four Sharpe gates and both five-year
+QQQ gates,but misses QQQ in both ten-year paths. Rolling fails
+all four Sharpe and all four QQQ gates. Both complete rules
+therefore remain rejected;no metric or window is spliced into
+a qualifying portfolio.
+
+### Same-rule pool inclusion comparison
+
+The saved comparison reads these new accounts and the existing
+four-expert controls,without refitting,rebuilding recommendations,
+replaying accounts or recalculating primary performance. Original
+market,protocol,execution assumptions,formal return dates and all121
+initial/month-end decision dates match. The source accounts are
+exposed controls,not independent OOS evidence.
+
+| Rule | Path | CAGR change, percentage points | Sharpe change | DD change, percentage points | Annual turnover change |
+|---|---|---:|---:|---:|---:|
+| Equal | 10y base | +0.066345 | +0.030905 | -1.138274 | -0.251741x |
+| Equal | 10y stress | +0.210309 | +0.040435 | -1.159886 | -0.280753x |
+| Equal | 5y base | +0.176487 | +0.013556 | +0.498323 | -0.178801x |
+| Equal | 5y stress | +0.571049 | +0.038838 | +0.502110 | -0.211754x |
+| Rolling | 10y base | -2.430866 | -0.161679 | -1.630950 | -0.005659x |
+| Rolling | 10y stress | -2.468517 | -0.160730 | -2.831518 | -0.008154x |
+| Rolling | 5y base | -2.075837 | -0.133806 | -1.587684 | +0.593482x |
+| Rolling | 5y stress | -1.583562 | -0.101068 | -2.790106 | +0.603369x |
+
+Adding the macro policy improves equal-weight CAGR,Sharpe and
+turnover on every path,but worsens both five-year drawdowns.
+Fees decline in three of four equal paths;model tickets increase
+in two. Rolling lowers drawdown on every path but loses CAGR
+and Sharpe throughout,with higher five-year turnover,fees and
+tickets. These are whole-policy account differences,not isolated
+asset PnL attribution or independent alpha.
+
+The macro expert is selected in61of114mature rolling decisions.
+Mean expert weights across all121decisions,in the frozen
+commitment/joint-tail/GARCH/feedback/macro order,are
+22.196557%,18.223781%,23.868423%,7.216863%and28.494376%.
+These are descriptive recorded allocations,not newly fitted
+weights or proof that the mechanisms diversify cumulative
+main-account drawdown. A valid expert's contribution depends
+on its combination rule;neither the source expert nor old
+financial failures are deleted or relabeled.
+
+### Accounting, publication and current totals
+
+Every new path retains2512or1254original return observations,
+one freshUSD10000 capital account and six genuinely registered
+factor families. All cash balances remain positive,with minimum
+USD181.8969128959856;maximum gross exposure is
+`0.9837705257147963`. The largest independent-BT NAV difference
+is`6.548361852765083e-11`USD. Original costs,one/two-session
+timing,initial drawdown peak and zero broker orders remain.
+
+Private results SHA256:
+`f5b3e3cc92a0f8f12f2d51ab1ef673e29b50ca77eefee3958b1f40cec269514e`.
+Canonical public results SHA256:
+`f23131919126f1be2f11acff6854ebf9b4738bf406f901d94945e624f9ca1bf9`.
+Saved comparison SHA256:
+`90346dc5ceddb0e465547b2eb38f8957489e81adf9a2a394fdaf407779ad77c1`.
+Independent exact saved-value comparison verification SHA256:
+`e120bcd24f2d12e84895d37b07ebefacb6179693b2ab15c7ac0ae2527b8b0a33`.
+
+The canonical reporting Adapter preserves all16metric fields,
+every gate,execution value,source clock and original financial
+verdict. It only supplies the existing canonical public field
+names;the frozen financial exporter is not executed or edited,
+and the shared publication/dashboard guard is not relaxed.
+
+The455-event journal now derives **41registrations,
+38completed/reviewed,three technical failures,zero pending,
+152funded paths,216combined completions and zero qualifiers**.
+No new shadow account,expert recommendation artifact,factor
+definition,market source request or prospective observation
+is created by the comparison or reporting. The one-day
+prospective identities,original database and all failures
+remain intact. This is not investment-goal completion.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,
