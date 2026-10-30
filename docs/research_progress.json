@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-30",
-  "phase": "expert_payoff_persistence_registered_waiting_publication",
-  "active_research_focus": "publish_exact_payoff_persistence_packet_before_original_funded_paths",
+  "phase": "expert_payoff_persistence_finished_rejected",
+  "active_research_focus": "select_next_independent_expert_layer_question_after_complete_payoff_persistence_rejection",
   "research_mainline": {
     "id": "strategy_expert_pool_and_rolling_meta_v1",
     "user_directed": true,
@@ -1685,7 +1685,7 @@
       "order_authority": false
     },
     "expert_payoff_persistence_study": {
-      "snapshot_scope": "Actual registration and target-proof snapshot; no financial publication fence or new main account at this snapshot.",
+      "snapshot_scope": "Current complete funded outcomes; registration fields retain their original registration-time truth.",
       "registration": "research/workbench/evidence/expert_payoff_persistence_20261030_registration_v1.json",
       "registration_sha256": "7aafdde96c6fa732ef4370767948456c4b38889da0223e0ab06a1a565d4e3265",
       "policy": "research/workbench/config/expert-payoff-persistence-v1.json",
@@ -1737,8 +1737,53 @@
       "joint_loss_proxy_is_main_drawdown_guarantee": false,
       "new_accounts_started_at_registration": false,
       "preregistration_publication_verified_at_snapshot": false,
-      "actual_funded_paths_completed": 0,
-      "new_strategy_evaluations": 0,
+      "registration_snapshot_field_scope": "The two preceding registration/publication flags describe the original registration snapshot, not the current funded outcome.",
+      "results": "research/workbench/evidence/expert_payoff_persistence_20261030_results_v1.json",
+      "results_sha256": "9dff06e7f3c3f1a5de4815eb67c9871c577a6adffacd818e5f074c6c419768ed",
+      "private_complete_results_sha256": "ee7bf9b977de006359f70337d2de4124f73fc30bcf5bbe7f6ac59a106f9491b4",
+      "actual_preregistration_commit": "63ca0f5da939bf0b5cabd8dad1da1579fe51f02e",
+      "actual_financial_publication_fence_sequence": 588,
+      "actual_financial_publication_fence_at_utc": "2026-10-30T21:42:27.989074Z",
+      "actual_finished_at_utc": "2026-10-30T21:42:42.470412Z",
+      "all_four_original_paths_per_rule_completed": true,
+      "actual_funded_paths_completed": 8,
+      "new_strategy_evaluations": 2,
+      "both_fixed_rules_rejected": true,
+      "all_eight_RF_Sharpe_and_QQQ_gates_failed": true,
+      "continuation_base_DD_failed_stress_DD_passed": true,
+      "continuation_all_CAGR_gates_passed": true,
+      "refresh_all_DD_gates_passed": true,
+      "refresh_ten_year_stress_CAGR_gate_failed": true,
+      "refresh_all_four_CAGR_RF_Sharpe_and_DD_lower_but_annual_turnover_higher": true,
+      "refresh_fees_and_tickets_have_uniform_direction": false,
+      "paired_policy_comparison_is_isolated_causal_fee_attribution": false,
+      "all_actual_registered_factor_families": [
+        "earnings_quality", "low_volatility", "momentum", "share_issuance", "size", "value"
+      ],
+      "minimum_three_registered_families_pass_all_paths": true,
+      "actual_cash_minimum_usd": 186.2989362024905,
+      "actual_gross_exposure_maximum": 0.9841437247925463,
+      "independent_BT_maximum_NAV_difference_usd": 1.0550138540565968e-10,
+      "path_order": ["10y-base", "10y-stress", "5y-base", "5y-stress"],
+      "continuation_complete_outcomes": {
+        "net_cagr": [0.13680775988409155, 0.13203805331116603, 0.1687179018543763, 0.15848421020512915],
+        "RF_sharpe": [0.9861257747344458, 0.9474712996405935, 0.984575773602424, 0.9150196689275546],
+        "maximum_drawdown": [0.15284604392634538, 0.14491788050692445, 0.1553560558866548, 0.14749392101409653],
+        "annualized_two_sided_turnover": [3.056787177072221, 3.061440114202665, 2.8771350456087994, 2.8800019275271587],
+        "actual_model_tickets": [999, 999, 482, 482],
+        "actual_total_fees_usd": [1246.3984253047793, 1973.5150998378392, 569.557087413082, 823.6648042698308]
+      },
+      "refresh_complete_outcomes": {
+        "net_cagr": [0.12230913620160666, 0.1176465444384085, 0.1434412709500803, 0.13502566967229246],
+        "RF_sharpe": [0.9578662421261884, 0.915022035493229, 0.9206860312702176, 0.8526470683913066],
+        "maximum_drawdown": [0.13562877532151785, 0.1309557607673273, 0.13787431191261512, 0.13274884330668646],
+        "annualized_two_sided_turnover": [3.1340647185056523, 3.1258908001048384, 2.934825874038555, 2.919138753315719],
+        "actual_model_tickets": [994, 985, 488, 479],
+        "actual_total_fees_usd": [1242.4638769444198, 1955.3118642738973, 575.8597600772579, 819.6929319654295]
+      },
+      "financial_failure_withdraws_expert_technical_validity": false,
+      "new_financial_metrics_turnover_orders_and_fees_available": true,
+      "model_tickets_are_broker_orders": false,
       "new_shadow_account_runs": 0,
       "new_source_requests": 0,
       "independent_forward_validation": false,
@@ -1864,13 +1909,13 @@
     },
     "aggregate_counts": {
       "registered": 58,
-      "completed": 48,
-      "reviews": 48,
-      "pending": 2,
+      "completed": 50,
+      "reviews": 50,
+      "pending": 0,
       "technical_failures": 8,
       "qualified": 0,
-      "account_paths": 192,
-      "total_legacy_plus_ssd_completed": 226
+      "account_paths": 200,
+      "total_legacy_plus_ssd_completed": 228
     },
     "additional_cohorts": [
       {
@@ -2189,9 +2234,9 @@
         "study_id": "ssd_expert_payoff_persistence_20261030_v1",
         "registration": "research/workbench/evidence/expert_payoff_persistence_20261030_registration_v1.json",
         "registration_sha256": "7aafdde96c6fa732ef4370767948456c4b38889da0223e0ab06a1a565d4e3265",
-        "results": null,
-        "results_sha256": null,
-        "preregistration_commit": null
+        "results": "research/workbench/evidence/expert_payoff_persistence_20261030_results_v1.json",
+        "results_sha256": "9dff06e7f3c3f1a5de4815eb67c9871c577a6adffacd818e5f074c6c419768ed",
+        "preregistration_commit": "63ca0f5da939bf0b5cabd8dad1da1579fe51f02e"
       }
     ],
     "status": "first_pair_complete_both_rejected",
@@ -2819,14 +2864,14 @@
     "第10项固定相反优先级：在当时较低SPY/QQQ尾部预算（以实际BIL风险作底）内最大化已观测机会，不扫风险倍率/旧门槛/窗口/核心参数。2026-10-28T05:46:36.615636Z真实登记先于122有证书计划（112优化/10非正机会），5前缀及完整6家族覆盖通过。先发布1074904478bfd0ba2a19d502c479ebd2de13c227，再于05:54:28.534515Z完成4资金路径并拒绝。依次十年base/stress、五年base/stress净CAGR12.9292/11.4123/16.5627/14.9118%，Sharpe0.6781/0.5922/0.7818/0.6907，DD26.4086/27.0756/26.6875/27.3277%；回撤/夏普/QQQ全失败，3条CAGR过且仅五年胜SPY。SSD10完成/40路径/合计188/0通过、118事件，原记录不变；不得拼接第9项回撤与第10项收益。"
   ],
   "next": [
-    "Preserve58registered SSD identities:48completed/reviewed,8technical failures,2pending,192funded paths,226combined completions and0qualifiers from587journal events. The new payoff-persistence rules have complete target proofs but no new main account at this registration snapshot;all old outcomes and one-day forward models remain unchanged.",
-    "Publish the exact payoff-persistence packet and all309frozen scientific inputs before all eight original fresh-capital paths. Keep the continuation/1-12refresh law,shared joint-loss transform,original execution and all acceptance unchanged. Statistical payoff mass is not main wealth,a market-regime probability or a risk guarantee. Closed credit/numerical diagnoses and failed V1 are not repeated or repaired.",
+    "Preserve58registered SSD identities:50completed/reviewed,8technical failures,0pending,200funded paths,228combined completions and0qualifiers from606journal events. Both new payoff-persistence rules completed all four original paths and were rejected;all prior outcomes and one-day forward models remain unchanged.",
+    "Close and preserve the two fixed payoff-persistence rules and complete eight-path outcomes. All Sharpe/QQQ gates fail;annual refresh lowers CAGR/Sharpe/DD on every matched path but raises annual turnover,with mixed ticket/fee changes. No criterion is relaxed and no refresh rate is tuned from this tradeoff. Select a genuinely independent expert-layer question before new design/freeze/registration;none is selected by this result record. Failed V1 and closed numerical/credit diagnoses remain unchanged.",
     "Continue economically motivated, preregistered independent small batches without ordinary per-batch approval or a configuration-count ceiling until2026-10-31T15:59Z. Use one computation; at cutoff preserve partial work, clear only the SSD session timer and confirm absence.",
     "Keep old source refusals, VIG/SDY terminal429 and prospective/PIT gates. The independent market-only IBKR adapter is proved, but the one actual probe stopped on2157 before historical requests;0history rows/admissions,no automatic retry or inferred entitlement denial. Default readonly account synchronization remains prohibited."
   ],
   "next_zh": [
-    "保留SSD58个登记身份：48项完成审阅、8项技术失败、2待评估，192资金路径、合计226完成、0通过，来自587条真实日志。新收益持续性两规则已有完整目标证明，但本登记快照尚无新主资金账户；全部旧结果和一天前瞻模型保持。",
-    "先完整发布收益持续性登记包及309项冻结科学输入，再启动全部八条原定新鲜资本路径。不得修改持续累积与1/12刷新、共享共损变换、原执行或准入标准。统计收益学习权重不是主财富、市场状态概率或风险保证；关闭的积分/数值诊断及失败V1均不重复或修复。",
+    "保留SSD58个登记身份：50项完成审阅、8项技术失败、0待评估，200资金路径、合计228完成、0通过，来自606条真实日志。新收益持续性两规则完成全部原定四路径且均拒绝；全部旧结果和一天前瞻模型保持。",
+    "关闭并保留两条冻结收益持续性规则及完整八路径结果。全部夏普/QQQ门失败；年率刷新四路径CAGR/夏普/回撤均更低，但年换手更高，票据及费用变化方向混合。不放宽门槛，也不据此调整刷新率。下一步须先选真正独立的专家层问题；本次结果尚未选择新设计或模型。失败V1及已关闭数值/积分诊断均保持。",
     "持续开展有经济理由、事前冻结的独立小批次，无普通逐批确认或配置次数上限，截止2026-10-31T15:59Z；单计算job，届时保存未完状态、只清除SSD会话timer并确认不存在。",
     "原拒绝来源、VIG/SDY终止429和前瞻/PIT门保持。独立IBKR market-only适配器已证明，但唯一真实探针在历史请求前因2157停止；历史行/准入0，不自动重试或推断订阅拒绝，仍禁止默认readonly账户同步。"
   ],

@@ -74,6 +74,56 @@ pending and192funded paths:226combined completions,zero qualifiers.
 Earlier financial outcomes, closed numerical diagnoses and prospective
 identities are unchanged. No new financial metric is implied by target proof.
 
+## Payoff-persistence outcomes: both rules rejected
+
+Actual complete remote preregistration
+`63ca0f5da939bf0b5cabd8dad1da1579fe51f02e` and financial fence588 at
+**2026-10-30T21:42:27.989074Z** preceded all eight funded main paths. The
+[canonical results](evidence/expert_payoff_persistence_20261030_results_v1.json)
+finished **2026-10-30T21:42:42.470412Z**. Full2512/1254return sessions,original
+fresh10000capital/peak,RF,costs,delays and cash funding are preserved.
+
+| Rule / path | Net CAGR | RF Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Fees USD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Continuation /10y base |13.680776%|0.986126|15.284604%|3.056787x|999|1246.3984|
+| Continuation /10y stress |13.203805%|0.947471|14.491788%|3.061440x|999|1973.5151|
+| Continuation /5y base |16.871790%|0.984576|15.535606%|2.877135x|482|569.5571|
+| Continuation /5y stress |15.848421%|0.915020|14.749392%|2.880002x|482|823.6648|
+| Annual refresh /10y base |12.230914%|0.957866|13.562878%|3.134065x|994|1242.4639|
+| Annual refresh /10y stress |11.764654%|0.915022|13.095576%|3.125891x|985|1955.3119|
+| Annual refresh /5y base |14.344127%|0.920686|13.787431%|2.934826x|488|575.8598|
+| Annual refresh /5y stress |13.502567%|0.852647|13.274884%|2.919139x|479|819.6929|
+
+Every Sharpe and QQQ gate fails. Continuation passes CAGR12on all four paths;
+its two stressed drawdowns pass15but both base drawdowns fail. Its five-year
+paths beat matched-cost SPY, but both ten-year paths fail. Its five-year stress
+path passes the extra base-cost-SPY gate; its ten-year stress path does not.
+Refresh passes all drawdown gates but misses ten-year stress CAGR12,all QQQ
+gates and all SPY gates except five-year base. Both of its extra stress-SPY
+gates fail. No individual passing metric can be mixed across rules or paths.
+
+Against continuation, refresh lowers CAGR by1.449862/1.439151/2.527663/2.345854
+percentage points and DD by1.721727/1.396212/1.748174/1.474508points across
+10y-base/10y-stress/5y-base/5y-stress. Sharpe is lower and annual turnover higher
+on all four paths. Ticket changes are-5/-14/+6/-3and dollar-fee changes
+-3.9345/-18.2032/+6.3027/-3.9719USD. These are paired policy outcomes, not an
+isolated fee effect or proof that another refresh rate will work. Five saved
+preregistered equal/rolling/growth/contest anchors were read only; no source
+account or metric pipeline was replayed.
+
+All six registered factor families participate on every path. Actual minimum
+cash is186.298936USD,max gross0.984143725and independent BT max NAV gap
+1.055e-10USD. Model tickets are not broker orders. No new source or broker
+operation occurred. Financial rejection does not revoke a complete expert's
+technical validity or turn near-duplicate meta policies into new risk sources.
+
+Current journal606records58registered SSD identities,50completed reviews,
+eighttechnical failures,zero pending and200funded paths:228combined completions,
+zero qualifiers. All failures and one-day prospective/null-metric identities
+remain preserved. No new economic rule or refresh-rate tuning is selected by
+this outcome report; exposed historical performance is not independent forward
+proof or investment-goal completion.
+
 ## Latest read-only contest-credit assessment
 
 The [fixed diagnostic](evidence/expert_contest_credit_diagnosis_20261030_v1.json)

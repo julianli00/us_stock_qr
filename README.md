@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 58 SSD identities, 48 completed/rejected, eight retained technical failures and two pending; 192 funded paths | Journal-derived current summary: 226 combined completions, zero qualifiers; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 58 SSD identities, 50 completed/rejected, eight retained technical failures and zero pending; 200 funded paths | Journal-derived current summary: 228 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -66,7 +66,37 @@ At this registration snapshot, no new financial fence or main account exists.
 Exact remote publication is required before all eight original fresh-capital
 paths. Journal587has58registrations,48completed reviews,eighttechnical
 failures,two pending and192funded paths:226combined completions,zero qualifiers.
-No new return, turnover or fee result is claimed from a target proof.
+No new return, turnover or fee result existed at that target-proof snapshot.
+
+Actual remote preregistration
+`63ca0f5da939bf0b5cabd8dad1da1579fe51f02e` and fence588 at
+**2026-10-30T21:42:27.989074Z** preceded all eight new main paths, completed
+**21:42:42.470412Z**. The [complete outcomes](research/workbench/evidence/expert_payoff_persistence_20261030_results_v1.json)
+reject both fixed rules.
+
+| Rule / path | Net CAGR | RF Sharpe | DD | Annual two-sided turnover | Tickets | Fees USD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Continuation /10y base |13.6808%|0.9861|15.2846%|3.0568x|999|1246.40|
+| Continuation /10y stress |13.2038%|0.9475|14.4918%|3.0614x|999|1973.52|
+| Continuation /5y base |16.8718%|0.9846|15.5356%|2.8771x|482|569.56|
+| Continuation /5y stress |15.8484%|0.9150|14.7494%|2.8800x|482|823.66|
+| Annual refresh /10y base |12.2309%|0.9579|13.5629%|3.1341x|994|1242.46|
+| Annual refresh /10y stress |11.7647%|0.9150|13.0956%|3.1259x|985|1955.31|
+| Annual refresh /5y base |14.3441%|0.9207|13.7874%|2.9348x|488|575.86|
+| Annual refresh /5y stress |13.5026%|0.8526|13.2749%|2.9191x|479|819.69|
+
+All eight paths miss Sharpe1and matched-cost QQQ. Continuation clears CAGR12
+throughout and drawdown15on stressed paths only; both base drawdowns fail.
+Both its five-year paths beat matched-cost SPY, and only its five-year stress
+path also beats base-cost SPY. Refresh clears drawdown15throughout but misses
+ten-year stress CAGR12; only its five-year base path beats matched-cost SPY.
+Refresh lowers CAGR,Sharpe and DD on every matched path while increasing
+annual turnover; ticket and dollar-fee changes have mixed signs. This is a
+fixed-policy risk/return tradeoff, not isolated causal cost attribution.
+All six registered families participate and actual cash stays positive/gross
+below1. Current journal606has58registrations,50completed reviews,eighttechnical
+failures,zero pending and200funded paths: **228combined completions,zero qualifiers**.
+No passing metrics are combined across rules or scenarios.
 
 The latest [read-only contest-credit diagnosis](research/workbench/evidence/expert_contest_credit_diagnosis_20261030_v1.json)
 keeps both completed financial rules unchanged. A new interpretation assesses
