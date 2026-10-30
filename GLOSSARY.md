@@ -65,6 +65,16 @@ An expectation that recent relative weakness among complete experts will reverse
 It is an allocation premise, not an observed recovery or an independent source of returns.
 _Avoid_: Realized rebound, expert qualification, guaranteed recovery
 
+**Market context (市场情境)**:
+An observable joint market condition used to distinguish expert assessments.
+It is not a latent economic regime, a causal explanation or an independent return source.
+_Avoid_: Proven macro regime, hindsight regime label
+
+**Co-loss assessment (共损评估)**:
+An assessment of an expert's nonoffsetting loss contribution on dates when a specified
+source mixture is losing. It is not the final portfolio's loss or a drawdown guarantee.
+_Avoid_: Main-account risk guarantee, hedge-adjusted realized loss
+
 **Assessment-to-main divergence (评估—主账户偏离)**:
 A difference between assessment reference performance and main-account performance
 over comparable periods. It does not by itself identify an implementation defect or a

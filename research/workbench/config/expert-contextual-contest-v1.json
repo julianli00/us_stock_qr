@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_expert_contextual_contest_20261030_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "actual_continuation_event": 54426,
+  "prior_completed_configurations": 224,
+  "prior_new_registered_candidates": 54,
+  "prior_new_completed_strategy_evaluations": 46,
+  "prior_new_technical_failures": 8,
+  "prior_journal_sequence": 560,
+  "prior_journal_head_sha256": "08418b982a7ee8ab32fd013fcaa17cda5b5c34e4affe2132d105443514b6bd21",
+  "source_registration": {
+    "path": "evidence/six_expert_meta_20261030_registration_v1.json",
+    "sha256": "a577ca24f71f83f810d784a32d4d36e186228b9bd6fc9c2caedaa62703d319fa"
+  },
+  "source_controls": {
+    "path": "evidence/six_expert_meta_20261030_results_v1.json",
+    "sha256": "ce4cd4db8326768cdc5beb018939dd68760adb39833a734d4c6a9c2385d67f38"
+  },
+  "previous_growth_results": {
+    "path": "evidence/expert_online_log_growth_20261030_results_v1.json",
+    "sha256": "c1af8346df70d4b16b8651c4bc3ecaf2cb29a3428730be939acbd25130396211"
+  },
+  "prior_terminal_reversion_failure": {
+    "path": "evidence/expert_online_reversion_20261030_preparation_failure_v1.json",
+    "sha256": "d2904a609953bd73795fe2be758d501a49896150753091f87baaa6eb5581d533"
+  },
+  "prior_local_numerical_evidence": {
+    "path": "reports/ssd-continuous-research-v1/expert-reversion-local-high-precision-20261030-v1/summary-v1.json",
+    "sha256": "675a5643cae5b5efa5fdfdf324040747b829bf063b13d43983969a0a97607770"
+  },
+  "expert_ids": [
+    "equity_first_month_end_commitment_v1",
+    "benchmark_opportunity_joint_tail_v1",
+    "symmetric_garch_growth_bil_v1",
+    "semiconductor_ratchet_protection",
+    "semiconductor_option_dollar_profit_share_confirmation",
+    "four_factor_defense_diversified"
+  ],
+  "mechanism_groups": [
+    "committed_price_trend_defense",
+    "joint_tail_opportunity",
+    "conditional_variance_growth",
+    "wealth_feedback_protection",
+    "common_quarter_profit_dollar_confirmation",
+    "cross_asset_defensive_relative_strength"
+  ],
+  "initial_decision_session": "2016-10-05",
+  "shadow_reference_path": "10y-base",
+  "lookback_sessions": 126,
+  "context_lookback_sessions": 126,
+  "context_symbols": ["SPY", "IEF", "BIL"],
+  "market_contexts": 4,
+  "learning_clock": "completed_full_exchange_month_intervals",
+  "learning_memory": "expanding_completed_months",
+  "initial_partial_source_month_assimilated": false,
+  "learning_state_resets_for_five_year_account": false,
+  "maximum_complete_learning_intervals": 119,
+  "posterior_pseudocount_per_expert": 1,
+  "winner_relative_score_scale": 1000000000000,
+  "equal_winner_credit_units_per_month": 60,
+  "exact_input_interpretation": "binary64 values treated as exact rationals for context,month ranking and co-loss assessment",
+  "risk_tilt_coefficient": 1,
+  "no_common_excess_loss_days_rule": "retain posterior fractions without claiming safety",
+  "independent_risk_tilt_decimal_precision": 50,
+  "independent_weight_and_target_tolerance": 1e-10,
+  "main_decision_clock": "actual_initial_anchor_and_genuine_month_ends",
+  "actual_weight_trade_band": 0.025,
+  "invested_target_budget": 0.98,
+  "cash_reserve": 0.02,
+  "reference_capital_usd": 10000,
+  "minimum_economic_factor_families": 3,
+  "new_economic_factor_definitions": 0,
+  "new_shadow_account_runs": 0,
+  "new_source_requests": 0,
+  "candidate_count_in_this_study": 2,
+  "study_size_is_a_total_research_quota": false,
+  "candidates": [
+    {
+      "id": "expert_pool_six_contest_frequency_v1",
+      "weighting": "unconditional_monthly_contest_with_joint_loss_tilt"
+    },
+    {
+      "id": "expert_pool_six_contextual_contest_v1",
+      "weighting": "matched_context_monthly_contest_with_same_joint_loss_tilt"
+    }
+  ],
+  "methodology": {
+    "question": "Can conditioning complete-expert outcome frequencies on observable equity and duration price context improve on the same unconditional contest-and-co-loss rule?",
+    "economic_role": "Relative expert usefulness may persist differently when broad equity and duration are stronger or weaker than BIL. These are observable price proxies,not asserted causal inflation regimes.",
+    "contexts": "Two strict positive126-session relative-return comparisons:SPY versus BIL and IEF versus BIL. Encode2*equity_positive+duration_positive. Exact cross-products of the known binary64 closes avoid floating tie ambiguity;equality is nonpositive.",
+    "monthly_credit": "Each completed full source month assigns one total unit to the experts with the largest rounded12-decimal NET period relative. Compute products of(1+recordedNETreturn)as exact rationals,then round the scaled result to nearest even integer. Split tied credit exactly using60integer units,theLCMof1through6;60is representation,not a fitted parameter.",
+    "conditioning": "The contextual learner assigns each matured month credit to the known preceding month-end context. The control pools every complete month. Both use a fixed categorical Dirichlet unit pseudocount per expert,not a constant-portfolio wealth integral.",
+    "maturity": "Until126common NET source observations,main intentions are explicitly unscored equal-six. Full-month credit can mature earlier as statistical state. An unseen context uses its declared uniform categorical prior,not invented observations or a successful forecast.",
+    "co_loss": "For each posterior prototype q,use126known NET excess-return observations. Select dates on which the exact-rational weighted prototype excess return is negative. Each l_i is the mean positive part of minus expert excess returns on those common dates;l_q=sum(q_i*l_i). Final expert fractions are proportional toq_i*exp(-l_i/l_q). If no common loss date exists,retainq with an explicit no-loss-information flag. Nonempty common loss dates require strictly positivel_q.",
+    "proxy_limit": "The co-loss statistic is a conditional marginal nonoffsetting downside proxy with the reference loss-date set held fixed. Positive hedge gains are not credited. It is not hedge-adjusted portfolio loss,actual main marginal risk or a drawdown guarantee.",
+    "cost_and_dependence": "Source returns already include original source costs;common loss dates depend on the joint source mixture. Main costs are charged only by actual original funded execution. The original monthly holdings band controls requests;there is no fabricated turnover cap or double charging of source fees.",
+    "numerics": "Categorical credits and loss membership/statistics use exact rational interpretations of saved binary64 values. The risk transform is bounded by the positive categorical prior;independent scalar fractions and fixed50-digit exponentials check the final composition. No large passive-aggressive multiplier,solver or tolerance change.",
+    "source_inputs_before_updates_and_resolved_outputs_retained": true,
+    "pool_selected_from_complete_returns": false,
+    "failed_OLMAR_PAMR_V1_repaired_retried_or_recertified": false,
+    "old_uniform_simplex_wealth_integral_repaired_or_approximated": false,
+    "new_standalone_expert_added": false,
+    "new_contexts_are_independent_economic_factors": false,
+    "learning_state_is_main_wealth": false,
+    "source_shadow_wealth_or_protection_floor_transferred": false,
+    "counterfactual_historical_expert_availability": true,
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

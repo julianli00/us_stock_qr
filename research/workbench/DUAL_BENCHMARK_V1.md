@@ -20,7 +20,54 @@ inception date. Raw documents, prices and daily account ledgers remain private.
 The original bundle's README and manifest remain byte-for-byte unchanged; this
 separate document describes the new protocol without rewriting that history.
 
-## Latest expert-level reversal study: terminal preparation failure
+## Latest contextual expert-contest preregistration
+
+The [actual packet](evidence/expert_contextual_contest_20261030_registration_v1.json)
+records the new unconditional control and contextual rule at
+**2026-10-30T19:46:10.459362Z / 19:46:10.719335Z**, before any new real
+context, month-credit or allocation calculation. The technically valid six
+experts, their genuine introduction clocks and cached targets/NET books are
+unchanged. No failed reversal V1, source pipeline, fit, target or account is
+repaired, replayed or recertified.
+
+The fixed contexts are two observable126-session relative-price comparisons:
+SPY versus BIL and IEF versus BIL. Exact cross-products encode four labels,
+with equality nonpositive. They are not latent or causally identified macro
+regimes. Each complete source month assigns one total unit to the largest
+rounded12-decimal NET relative; exact rational arithmetic and60integer units
+split tied winners without coordinate preference. The categorical unit prior
+is not the old constant-portfolio wealth integral. Both rules share these laws;
+only pooled versus preceding-context-specific credit differs.
+
+The same risk transform assesses126known NET excess-return days. It selects
+the posterior source mixture's losing days and discounts each expert by its
+relative nonoffsetting loss on those common dates. Positive hedge gains are
+not credited. No observed common loss date leaves the posterior unchanged
+with an explicit lack-of-loss-information label, not a safety claim. This
+statistic is neither hedge-adjusted main loss nor a continuous drawdown limit.
+The original main execution, actual-holdings band, fees, delays and fresh
+capital/peak remain unchanged.
+
+Implementation/input freeze
+`40035b8e774f03c78ac18c29c7a3235c2c698b0e4d16c0e10b093bcf0b615abf`
+bound160code files,145policies and668source references before real learning.
+The first46focused tests passed. The two target proofs each retain121decisions,
+119complete source months,seven unscored initial decisions and five actual
+truncated prefixes. Contexts, credit keys/counts and co-loss fractions match
+exactly; independent scalar/fixed50-digit risk composition differs by at most
+1.11e-16in expert fractions and2.22e-16in underlying targets. All six registered
+factor symbols participate in each formal horizon's recommendations.
+
+The private trace preserves121pre-update inputs,242individual resolved
+allocations and121complete resolved decisions. No original financial pipeline
+or source shadow account is replayed. At this registration snapshot, no new
+main account or financial publication fence exists. Actual full-dependency
+remote publication remains required before two rules times all four original
+freshUSD10000paths. Journal564has56registered SSD identities,46completed reviews,
+eighttechnical failures,two pending and184funded paths:224combined completions,
+zero qualifiers. Target proof is not a financial or independent forward pass.
+
+## Previous expert-level reversal study: terminal preparation failure
 
 The [actual failure record](evidence/expert_online_reversion_20261030_preparation_failure_v1.json)
 archives two fixed countercyclical allocation rules over the unchanged six valid
@@ -62,7 +109,7 @@ numerical root cause is asserted. The real prefix checks were not reached.
 Frozen code, economic parameters and tolerances remain unchanged without retry.
 No complete target proof, intended registration packet, financial publication
 fence, funded path or new CAGR/Sharpe/drawdown/turnover/fee result exists. The
-failed rules cannot enter the valid expert pool. Journal560has54registered
+failed rules cannot enter the valid expert pool. Its terminal journal560snapshot had54registered
 SSD identities,46completed reviews,eighttechnical failures,zero pending and184
 funded paths:224combined completions,zero qualifiers. All earlier valid experts,
 financial rejections and one-day prospective identities remain unchanged.

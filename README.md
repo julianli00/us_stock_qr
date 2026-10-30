@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 54 SSD identities, 46 completed/rejected, eight retained technical failures and zero pending; 184 funded paths | Journal-derived current summary: 224 combined completions, zero qualifiers; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 56 SSD identities, 46 completed/rejected, eight retained technical failures and two pending; 184 funded paths | Journal-derived current summary: 224 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -43,7 +43,28 @@ portfolio remain separate. The first fixed-pool study requires an equal-weight
 control and one causal rolling rule, without claiming that the pool or direction
 change itself has met the investment objective.
 
-The latest [expert-level reversal study](research/workbench/evidence/expert_online_reversion_20261030_preparation_failure_v1.json)
+The latest [contextual expert-contest preregistration](research/workbench/evidence/expert_contextual_contest_20261030_registration_v1.json)
+records two new fixed rules at **2026-10-30T19:46:10.459362Z /
+19:46:10.719335Z**, before new real contexts, credits or weights. The same six
+valid complete experts remain unchanged. Both rules learn completed-month NET
+winner frequencies and apply the same joint-loss assessment; the control pools
+months, while the other conditions credit on four observable equity/duration
+price contexts. This is not a repair or recertification of failed reversal V1.
+
+Implementation/input freeze `40035b8e774f03c78ac18c29c7a3235c2c698b0e4d16c0e10b093bcf0b615abf`
+binds160code files,145policies and668source references. Exact context/ranking/
+credit/co-loss checks and an independent scalar/fixed50-digit risk transform
+retain all121decisions,119complete source months,seven explicitly unscored
+initial decisions and five truncated prefixes. Maximum expert-weight/underlying
+target discrepancies are1.11e-16/2.22e-16. The nonoffsetting loss proxy does not
+credit positive hedges and is not actual main-account risk or a drawdown guarantee.
+At this registration snapshot, neither a financial publication fence nor any
+new main account has started; full remote publication is still required before
+all eight original funded paths. Journal564has56registrations,46completions,
+eighttechnical failures,two pending and184funded paths:224combined completions,
+zero qualifiers. No new financial result or independent forward pass is claimed.
+
+The previously archived [expert-level reversal study](research/workbench/evidence/expert_online_reversion_20261030_preparation_failure_v1.json)
 is a **terminal preparation failure, not a financial result**. It applies the
 existing fixed OLMAR window5/epsilon10 and PAMR epsilon0.5 update rules to the
 same six complete experts' saved NET observations. Daily statistical learning
@@ -61,7 +82,7 @@ independent expected trajectory and first failing step were not recorded;
 the exact discrepancy and root cause remain unestablished. Neither a full
 target proof nor the real prefix proofs, publication-before-capital fence or
 funded paths completed. No new return, turnover or fee result exists.
-Frozen code and tolerances remain unchanged without retry. Current journal560
+Frozen code and tolerances remain unchanged without retry. Its terminal journal560 snapshot
 has54registrations,46completions,eighttechnical failures,zero pending and184funded
 paths: **224combined completions,zero qualifiers**. All earlier valid experts,
 failures and the two one-day prospective identities remain preserved.
