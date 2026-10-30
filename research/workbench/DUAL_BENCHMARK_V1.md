@@ -461,6 +461,52 @@ publication remains required before all four original funded paths.
 All prior controls and failures remain immutable exposed history,
 not new independent validation.
 
+## Joint-tail expert-budget outcome: rejected
+
+Actual remote preregistration
+`1364599fe902507e8c746e58a94d2d7487b6d283` and publication
+fence507 at **2026-10-30T08:13:41.177484Z** preceded all four
+new account starts. Full141code/policy dependencies,including nine
+unchanged pinned imports,were verified before capital.
+The rule completed **2026-10-30T08:15:37.188115Z**.
+The [canonical public outcomes](evidence/expert_tail_risk_budget_20261030_results_v1.json)
+retain each strict original gate and measured execution cost.
+
+| Path | Net CAGR | RF Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Fees, USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 10.819931% | 0.774832 | 17.016148% | 7.708553x | 879 | 1468.08 |
+| 10y stress | 10.416654% | 0.740180 | 15.712563% | 7.701791x | 879 | 3166.95 |
+| 5y base | 13.037341% | 0.823816 | 17.181049% | 8.097432x | 423 | 660.16 |
+| 5y stress | 13.021248% | 0.825421 | 15.850592% | 8.095924x | 423 | 1376.02 |
+
+All RFSharpe and drawdown gates fail. Both ten-year CAGR gates fail,
+and every path misses both matched-cost SPY and QQQ. Both original
+stress-versus-base-SPY gates also fail. Five-year CAGR above12%
+is not a joint pass. Empirical risk feasibility at the decision,
+including the six certified funding-standby choices,is not a
+guarantee for delayed,drifting,cost-bearing main capital or its
+cumulative drawdown peak.
+
+The comparison reads the three preserved equal-six,RF-pair and
+dual-active controls without rerunning accounts or creating extra
+trials. New CAGR is lower and annual turnover higher on all four
+paths versus every control. Drawdown is lower than RF-pair and
+dual-active throughout,but still above15%. Against equal weighting,
+only five-year stress drawdown improves;all three other drawdowns
+worsen and all four Sharpes decline. Changed exposures and execution
+histories prevent isolated fee attribution.
+
+Every new path uses six actual registered factor families. Minimum
+cash is USD179.68971710862755,maximum gross exposure
+0.9822036525177268,and maximum independentBT NAV difference is
+USD3.637978807091713e-11. Model tickets are not broker orders;
+broker orders,source acquisition,new shadow accounts and old control
+runs remain zero. The authoritative journal has516events,
+47registrations,43completed reviews,four retained technical failures,
+zero pending and172funded paths:221combined completions,zero
+qualifiers. No tail probability,window,risk budget or cost-proxy
+parameter is retuned after these outcomes.
+
 ## Initial benchmark command
 
 From the SSD workspace root:

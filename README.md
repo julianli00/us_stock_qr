@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 47 SSD identities, 42 completed/rejected, four retained technical failures and one registered pending rule; 168 funded paths | Journal-derived current summary: 220 combined completions, zero qualifiers; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 47 SSD identities, 43 completed/rejected, four retained technical failures and zero pending; 172 funded paths | Journal-derived current summary: 221 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -265,6 +265,24 @@ four technical failures,one pending rule and168funded paths:
 220combined completions,zero qualifiers. No new main account has
 started. Actual complete-dependency remote publication remains
 required before all four original freshUSD10000paths.
+
+Actual preregistration publication
+`1364599fe902507e8c746e58a94d2d7487b6d283` and fence507 preceded
+all four new account starts,completed **2026-10-30T08:15:37.188115Z**.
+The [complete tail-budget results](research/workbench/evidence/expert_tail_risk_budget_20261030_results_v1.json)
+are **rejected**:all RFSharpes0.7402--0.8254fail,drawdowns
+15.7126--17.1810%all exceed15%,and every path misses SPY and
+QQQ. Both ten-year CAGR10.4167--10.8199%also fail12%;
+five-year CAGR13.0212--13.0373%does not rescue the joint verdict.
+
+Against all three saved controls,CAGR is lower and annual turnover
+higher throughout. Drawdown improves versus RF-pair and active-score
+controls,but remains above the hard limit. Compared with equal
+weighting,only five-year stress drawdown improves;all other
+drawdowns worsen and all Sharpes decline. Past joint-tail feasibility
+is not a main-account drawdown guarantee. No old control is rerun,
+no acceptance gate changes,and the completed total is now221with
+zero qualifiers.
 
 The [new frozen protocol](research/workbench/config/dual-benchmark-v1.json)
 requires every original ten/five-year base/stress path to have net Sharpe above
