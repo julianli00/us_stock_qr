@@ -20,6 +20,12 @@ The ability to obtain an admissible recommendation from an expert at a particula
 decision time. It does not imply that enough observations exist to score the expert.
 _Avoid_: Qualification, future availability
 
+**Source admission scope (来源准入范围)**:
+The information and decision contexts for which a source has accepted evidence of
+admissibility. Approval for a restricted use does not admit every historical query,
+derived view or strategy expert using that source.
+_Avoid_: Blanket source approval, final portfolio qualification
+
 **Score maturity (评分成熟度)**:
 The availability, at a decision time, of all observations required by a specified
 expert assessment. An unobserved or incomplete assessment is not a successful score.

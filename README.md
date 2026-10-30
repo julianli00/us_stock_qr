@@ -43,6 +43,24 @@ portfolio remain separate. The first fixed-pool study requires an equal-weight
 control and one causal rolling rule, without claiming that the pool or direction
 change itself has met the investment objective.
 
+The latest [financing-conditions expert eligibility review](research/workbench/evidence/anfci_expert_eligibility_20261030_v1.json)
+does **not admit** the archived ANFCI residual-confirmation policy to the
+current six-expert pipeline. All three original full-source admission flags
+remain false:225historical queries include223fresh andtwo stale observations.
+The source policy's restricted current-level use is not blanket source approval.
+
+The saved policy retains131monthly opportunities,130native targets and an
+explicit **2022-12-30** abstention:its latest archived source observation is
+21calendar days old,above the frozen14-day limit. Its target row remains
+undefined and means no new request while actual positions continue,not a
+rebalance to an old target. The current dense-after-warmup monthly expert
+Adapter cannot represent that native calendar without a separately designed
+availability contract. Nothing is forward-filled,zero-filled,retimed or
+declared safe. The original complete four-path financial rejection is not
+reclassified as technical invalidity. This read-only review changes no
+source approval,pool,policy,account or trial count;228historical completions
+still have zero qualifiers.
+
 The latest [payoff-persistence preregistration](research/workbench/evidence/expert_payoff_persistence_20261030_registration_v1.json)
 records two fixed rules at **2026-10-30T21:33:32.731372Z /
 21:33:32.999899Z**, before new real learning or targets. Both use the same

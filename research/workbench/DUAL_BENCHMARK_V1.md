@@ -20,6 +20,52 @@ inception date. Raw documents, prices and daily account ledgers remain private.
 The original bundle's README and manifest remain byte-for-byte unchanged; this
 separate document describes the new protocol without rewriting that history.
 
+## Latest financing-conditions expert eligibility review
+
+The [cached review](evidence/anfci_expert_eligibility_20261030_v1.json) completed
+**2026-10-30T22:18:29.080354Z** and does not admit
+`two_segment_anfci_residual_confirmation_v1` to the current six-expert pipeline.
+It examines a financing-conditions information channel by mechanism,not by
+standalone return ranking. The original registration191,target proof192 and
+complete four-path rejection202 remain immutable.
+
+The17synthetic checks preceded intent
+`9d1b84e45310ed86a51c553148cfca188049af093188faa11cecb2f857075756`,
+which binds four analysis/test files and787source references. One9.75-second
+cached pass reads source admission metadata,native target support and saved
+opportunity audits. It does not collect a new vintage,regenerate a signal,
+rerun admission/accounting/financial metrics or construct a replacement view.
+
+The original225-query full-source gate remains false in readiness,manifest
+and validation:223queries are fresh andtwo stale. The native policy separately
+declares current-own-vintage levels on131monthly opportunities,130fresh
+targets andone explicit source abstention. That restricted policy scope is
+not promoted into new blanket or expert-specific source admission here.
+Previous-NYSE-session vintage cutoffs,the14-calendar-day age limit and
+historical source-method caveats remain unchanged.
+
+The actual native gap is **2022-12-30**:observation **2022-12-09** is21calendar
+days old. The source correctly records no new request while actual positions
+continue. It does not issue a request to rebalance to the last target,create
+a zero-risk portfolio or delete a formal return date. Native first/last
+recommendations are2015-11-30/2026-09-30;only130of131post-warmup month ends
+have a recommendation. `ArchivedMonthlyExpert` requires every such month
+end and rejects this calendar. A synthetic check exercises that actual
+existing Adapter contract;the real review compares saved support without
+replaying the original strategy or account verifier.
+
+No new availability-aware Adapter,assessment book,seventh expert or financial
+configuration is created. This is current-pipeline nonadmission,not a claim
+that the original explicitly abstaining policy was technically invalid or
+that financial conditions can never be useful. A future source-scope or
+availability design would require a separately frozen review;this finding
+does not authorize an automatic repair,source retry or freshness waiver.
+
+All financial totals remain606journal events,58registrations,50completed
+reviews,eighttechnical failures,zero pending,200funded paths,228combined
+completions and zero qualifiers. All failures and one-day prospective/null
+identities are preserved;no return or independent forward pass is claimed.
+
 ## Latest payoff-persistence preregistration
 
 The [actual packet](evidence/expert_payoff_persistence_20261030_registration_v1.json)

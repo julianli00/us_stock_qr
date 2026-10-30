@@ -1,0 +1,89 @@
+{
+  "all_current_financial_counts_unchanged": {
+    "current_journal_event_count": 606,
+    "current_journal_head_sha256": "079d350ca6788e089f8f07253da6037b0aed8fab865f0c54b498d358bbf9d879",
+    "new_account_paths": 200,
+    "new_completed_strategy_evaluations": 50,
+    "new_historical_point_gate_passes": 0,
+    "new_pending_candidates": 0,
+    "new_registered_candidates": 58,
+    "new_reviews": 50,
+    "new_technical_failures": 8,
+    "original_completed_configurations": 178,
+    "original_registered_versions": 96,
+    "original_reviews": 94,
+    "total_legacy_plus_ssd_completed_configurations": 228
+  },
+  "analysis_intent_sha256": "9d1b84e45310ed86a51c553148cfca188049af093188faa11cecb2f857075756",
+  "assessment": {
+    "candidate_id": "two_segment_anfci_residual_confirmation_v1",
+    "current_dense_monthly_adapter_missing_dates": [
+      "2022-12-30"
+    ],
+    "current_dense_monthly_adapter_requires_all_post_warmup_month_ends": true,
+    "current_dense_monthly_adapter_supports_native_target_calendar": false,
+    "current_expert_pool_changed": false,
+    "first_native_target": "2015-11-30",
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "last_native_target": "2026-09-30",
+    "native_current_level_only_scope_is_blanket_source_approval": false,
+    "native_fresh_target_rows": 130,
+    "native_monthly_opportunities": 131,
+    "native_source_abstentions": [
+      {
+        "age_calendar_days": 21,
+        "decision_session": "2022-12-30",
+        "meaning": "no_new_request_keep_actual_positions",
+        "observation_date": "2022-12-09"
+      }
+    ],
+    "new_availability_adapter_or_assessment_view_created": false,
+    "new_expert_admitted": false,
+    "new_financial_trials": 0,
+    "new_source_requests": 0,
+    "no_new_request_is_rebalance_to_carried_target": false,
+    "original_fresh_queries": 223,
+    "original_full_scope_queries": 225,
+    "original_stale_queries": 2,
+    "original_standalone_verdict_reclassified_as_technical_invalidity": false,
+    "reason_codes": [
+      "full_source_nonadmission_remains_without_new_expert_specific_scope_approval",
+      "native_abstention_not_representable_by_existing_dense_after_warmup_adapter"
+    ],
+    "source_admitted_flags_preserved": {
+      "manifest": false,
+      "readiness": false,
+      "validation": false
+    },
+    "status": "not_admitted_to_current_six_expert_pipeline",
+    "target_forward_filled_zero_filled_or_retimed": false
+  },
+  "completed_at": "2026-10-30T22:18:29.080354+00:00",
+  "current_expert_pool_changed": false,
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "new_assessment_or_recommendation_view_artifacts": 0,
+  "new_expert_admitted": false,
+  "new_financial_trials": 0,
+  "new_funded_paths": 0,
+  "new_source_requests": 0,
+  "order_authority": false,
+  "original_full_scope_nonadmission_overridden": false,
+  "original_standalone_review_preserved": {
+    "at": "2026-10-28T17:43:06.671820+00:00",
+    "complete_paths": [
+      "10y-base",
+      "10y-stress",
+      "5y-base",
+      "5y-stress"
+    ],
+    "sequence": 202,
+    "sha256": "3f0956c227caff3189d042cb002a72e19f7faf32e8234eacaeeb1fa8ff42a4ec",
+    "status": "rejected"
+  },
+  "original_technical_failures_added": 0,
+  "review_id": "ssd_expert_anfci_eligibility_review_20261030_v1",
+  "schema_version": 1,
+  "source_generator_account_metric_or_admission_pipeline_replayed": false
+}
