@@ -646,6 +646,57 @@ completions,zero qualifiers. No new main account has started.
 Actual complete-dependency remote publication and its original
 new fence remain mandatory before all four formal paths.
 
+## Hierarchical risk outcome: rejected
+
+Actual remote preregistration
+`4f52993e9671674c3c603fe87faa42c7ad6f8183` and publication
+fence519 at **2026-10-30T09:59:46.071769Z** preceded all
+four account starts. All298code/policy dependencies,including
+26unchanged pinned original imports,were checked before capital.
+The [canonical complete outcomes](evidence/expert_hierarchical_risk_20261030_results_v1.json)
+finished **2026-10-30T10:06:21.437950Z**.
+
+| Path | Net CAGR | RF Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Fees, USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 8.882498% | 0.704662 | 15.828209% | 4.292137x | 903 | 1203.57 |
+| 10y stress | 8.639199% | 0.677308 | 14.634126% | 4.289289x | 894 | 2074.82 |
+| 5y base | 9.427033% | 0.572883 | 16.087058% | 3.379232x | 408 | 500.27 |
+| 5y stress | 9.311452% | 0.561098 | 14.889915% | 3.378462x | 408 | 774.97 |
+
+Every CAGR,RFSharpe and matched-cost SPY/QQQ gate fails.
+Both base drawdown gates fail;both stress drawdowns pass15%.
+Both extra stress-versus-base-SPY gates fail. One passing
+drawdown criterion does not qualify a path or the frozen rule.
+Different timing,holdings and fees make base/stress comparisons
+noncausal rather than evidence that paying more creates safety.
+
+The saved equal-six,RF-pair,dual-relative and joint-tail controls
+are not rerun. Against every control,new CAGR and Sharpe are
+lower on all four paths. Against RF-pair,dual-relative and
+joint-tail,annual turnover and drawdown are lower throughout.
+Fees fall throughout against RF-pair and joint-tail,but not
+uniformly against dual-relative or equal-six. Turnover also does
+not improve uniformly against equal-six. Only stress drawdowns
+improve against equal-six;both base drawdowns worsen.
+
+Relative to joint-tail,ten-year ticket counts increase24and15
+while five-year counts decrease15each,despite the lower turnover
+and total fees on all paths. Lower traded notional is not the
+same as fewer model tickets or better net growth. These exposed
+comparisons do not isolate fee causality or provide independent
+out-of-sample evidence.
+
+Every actual path uses six genuine registered factor families.
+Minimum cash is USD185.98509903549487,maximum gross exposure
+0.9818080251665047,and maximum independentBT NAV difference is
+USD5.820766091346741e-11. Broker orders,new source requests,
+new shadow runs and old account/control replays remain zero.
+The authoritative journal has528events,48registrations,
+44completed reviews,four retained technical failures,zero
+pending and176funded paths:222combined completions,zero
+qualifiers. No risk hierarchy,window,tie,capital split or
+acceptance gate is retuned after these outcomes.
+
 ## Initial benchmark command
 
 From the SSD workspace root:

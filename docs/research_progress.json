@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-30",
-  "phase": "expert_hierarchical_risk_registered_waiting_publication",
-  "active_research_focus": "publish_frozen_hierarchical_expert_rule_before_original_four_funded_paths",
+  "phase": "expert_hierarchical_risk_rejected",
+  "active_research_focus": "select_next_independent_expert_layer_question_after_hierarchical_rejection",
   "research_mainline": {
     "id": "strategy_expert_pool_and_rolling_meta_v1",
     "user_directed": true,
@@ -936,8 +936,32 @@
       "new_shadow_account_runs": 0,
       "new_source_requests": 0,
       "candidate_accounts_started_at_registration": false,
-      "publication_fence_before_accounts_still_required": true,
-      "actual_funded_paths_completed": 0,
+      "publication_fence_before_accounts_still_required": false,
+      "actual_funded_paths_completed": 4,
+      "actual_preregistration_commit": "4f52993e9671674c3c603fe87faa42c7ad6f8183",
+      "actual_publication_fence_sequence": 519,
+      "actual_publication_fence_at_utc": "2026-10-30T09:59:46.071769Z",
+      "actual_completed_at_utc": "2026-10-30T10:06:21.437950Z",
+      "results": "research/workbench/evidence/expert_hierarchical_risk_20261030_results_v1.json",
+      "results_sha256": "33fae3c737840af48b7edef3f559e7ff3ce69c9fbeb7bd27bc45c3af52e7449b",
+      "private_complete_results_sha256": "187ee4e91341f4d9af69ccf8a0411c563a2ead974e202cb9f9957392ccbeb253",
+      "financial_rule_status": "rejected",
+      "all_four_CAGR_RF_Sharpe_SPY_and_QQQ_gates_failed": true,
+      "both_base_drawdown_gates_failed": true,
+      "both_stress_drawdown_gates_passed": true,
+      "both_stress_vs_base_SPY_gates_failed": true,
+      "actual_registered_factor_families_per_path": 6,
+      "minimum_cash_usd_all_paths": 185.98509903549487,
+      "maximum_gross_exposure_all_paths": 0.9818080251665047,
+      "independent_BT_maximum_NAV_difference_usd": 5.820766091346741e-11,
+      "saved_six_control_comparison_sha256": "2fc1b2828599f374faa71557e151ce21de02f3cf5b68c159155abbbc188d2ce5",
+      "all_CAGR_and_Sharpe_lower_than_all_four_saved_controls": true,
+      "all_annual_turnover_lower_than_RF_dual_and_tail_controls": true,
+      "all_fees_lower_than_RF_and_tail_controls": true,
+      "annual_turnover_uniformly_improves_saved_equal_control": false,
+      "fees_uniformly_improve_saved_dual_relative_control": false,
+      "equal_control_drawdown_improves_only_stress": true,
+      "hierarchy_or_risk_coefficient_retuned_after_outcomes": false,
       "investment_objective_verified": false,
       "independent_forward_validation": false,
       "order_authority": false
@@ -1061,13 +1085,13 @@
     },
     "aggregate_counts": {
       "registered": 48,
-      "completed": 43,
-      "reviews": 43,
-      "pending": 1,
+      "completed": 44,
+      "reviews": 44,
+      "pending": 0,
       "technical_failures": 4,
       "qualified": 0,
-      "account_paths": 172,
-      "total_legacy_plus_ssd_completed": 221
+      "account_paths": 176,
+      "total_legacy_plus_ssd_completed": 222
     },
     "additional_cohorts": [
       {
@@ -1338,9 +1362,9 @@
         "study_id": "ssd_expert_hierarchical_risk_20261030_v1",
         "registration": "research/workbench/evidence/expert_hierarchical_risk_20261030_registration_v1.json",
         "registration_sha256": "fa02ffa7f2c45663faf9d636b2543602a8e8ed4b80cec50aaa775c7f18495c0f",
-        "results": null,
-        "results_sha256": null,
-        "preregistration_commit": null
+        "results": "research/workbench/evidence/expert_hierarchical_risk_20261030_results_v1.json",
+        "results_sha256": "33fae3c737840af48b7edef3f559e7ff3ce69c9fbeb7bd27bc45c3af52e7449b",
+        "preregistration_commit": "4f52993e9671674c3c603fe87faa42c7ad6f8183"
       }
     ],
     "status": "first_pair_complete_both_rejected",

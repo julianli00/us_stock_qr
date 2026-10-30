@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 48 SSD identities, 43 completed/rejected, four retained technical failures and one pending; 172 funded paths | Journal-derived current summary: 221 combined completions, zero qualifiers; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 48 SSD identities, 44 completed/rejected, four retained technical failures and zero pending; 176 funded paths | Journal-derived current summary: 222 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -323,6 +323,36 @@ independent OOS. Exactly one new financial rule is pending.
 Actual full-dependency remote publication remains required before
 its four original freshUSD10000paths. None has started at this
 registration snapshot;all221completed verdicts remain unchanged.
+
+Actual preregistration
+`4f52993e9671674c3c603fe87faa42c7ad6f8183` and fence519 at
+**2026-10-30T09:59:46.071769Z** then preceded all four new
+funded paths. The [complete hierarchical outcomes](research/workbench/evidence/expert_hierarchical_risk_20261030_results_v1.json)
+finished **2026-10-30T10:06:21.437950Z** and are **rejected**.
+Net CAGR8.6392--9.4270%,RFSharpe0.5611--0.7047and all
+SPY/QQQ comparisons fail. Base drawdowns15.8282/16.0871%fail;
+stress drawdowns14.6341/14.8899%pass only that one gate.
+Both original stress-versus-base-SPY gates also fail.
+
+| Path | Net CAGR | RF Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Fees, USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 8.882498% | 0.704662 | 15.828209% | 4.292137x | 903 | 1203.57 |
+| 10y stress | 8.639199% | 0.677308 | 14.634126% | 4.289289x | 894 | 2074.82 |
+| 5y base | 9.427033% | 0.572883 | 16.087058% | 3.379232x | 408 | 500.27 |
+| 5y stress | 9.311452% | 0.561098 | 14.889915% | 3.378462x | 408 | 774.97 |
+
+Saved equal-six,RF-pair,dual-relative and tail-budget controls are
+read without replay. New CAGR and Sharpe are lower on all four
+paths versus every control. Versus RF-pair and tail-budget,
+annual turnover and fees fall throughout,and drawdown improves.
+Versus tail-budget,ten-year model tickets nevertheless increase
+24/15;both five-year counts fall15. There is no uniform turnover
+improvement versus equal-six or fee improvement versus the
+dual-relative control. Against equal-six,only stress drawdowns
+improve. Exposure and execution differences prevent isolated fee
+causality or an assertion that cost efficiency met the objective.
+Current totals are222completed configurations and zero qualifiers.
+No hierarchy,window,cluster tie or risk coefficient is retuned.
 
 The [new frozen protocol](research/workbench/config/dual-benchmark-v1.json)
 requires every original ten/five-year base/stress path to have net Sharpe above
