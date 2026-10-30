@@ -151,6 +151,24 @@ the new expert. These exposed comparisons do not isolate fee causality
 or prove independent forward performance. Current totals are
 219completed configurations and zero qualifiers.
 
+A subsequent saved-score objective diagnostic adds **zero strategy
+trials**. Of114mature six-expert source decisions,79have positive
+stored RF-relative selection scores;50of those chosen shadow references
+still lag QQQ in the validation window,and27lag in both train and
+validation. Across the actual rolling main accounts,positive-score
+complete following intervals lag QQQ45/78and49/78times in ten-year
+base/stress,and17/38and21/38times in five-year base/stress.
+The source scores are read,not recomputed or replaced.
+
+All original formal days,initial costs and the final three-day partial
+interval remain in the diagnostic. Five-year initial execution correctly
+uses the already known September30score at the October5capital signal.
+These overlapping,exposed historical comparisons show that a positive
+RF score does not establish benchmark excess. They are **not a new
+monthly acceptance gate,independent forward proof or evidence that an
+alternative ranking would pass**. No new ranking,weight,target or
+account was created;all219completed financial verdicts stay unchanged.
+
 The [new frozen protocol](research/workbench/config/dual-benchmark-v1.json)
 requires every original ten/five-year base/stress path to have net Sharpe above
 1, net CAGR above 12%, drawdown at most 15%, and beat full-capital matched-cost

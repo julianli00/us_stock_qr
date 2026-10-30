@@ -137,6 +137,56 @@ This rejects the controlled inclusion,not the technical validity of the
 experts. Do not retune the same failed windows,selected count or band
 to conceal these outcomes.
 
+## Saved six-expert score and objective alignment
+
+The read-only diagnosis completed **2026-10-30T05:03:10.917691Z**.
+It reads the original chosen pairs,weights and RF train/validation/minimum
+scores rather than constructing another ranking. Chosen-weight NET shadow
+reference returns are compared with the original ten-year-base full-capital
+SPY/QQQ books on the exact84training/42validation dates. These hypothetical
+reference combinations already contain source fees;their wealth is not
+main capital,and the incremental switch proxy is not an actual charge.
+
+Of121source decisions,seven remain explicitly unscored and114are mature.
+Among79positive stored RF scores,the chosen reference lags QQQ in
+45training windows,50validation windows and27both-window cases.
+The corresponding SPY counts are27,40and12. Positive RF-relative
+risk-adjusted assessment does not establish positive benchmark-relative
+compounded growth.
+
+The following comparisons use only the already executed rolling main
+accounts and their matched-cost,matched-calendar benchmark books:
+
+| Actual path | Complete positive-score intervals | Main lags SPY | Main lags QQQ |
+|---|---:|---:|---:|
+| 10y base | 78 | 41/78 | 45/78 |
+| 10y stress | 78 | 42/78 | 49/78 |
+| 5y base | 38 | 18/38 | 17/38 |
+| 5y stress | 38 | 19/38 | 21/38 |
+
+All2512/1254formal return days are partitioned exactly once,including
+initial fees and delayed execution. Actual five-year October5signals map
+to the already known September30meta observation,not a fabricated
+October5score. Each terminal three-day interval is retained and marked
+right-censored;it is excluded only from complete-interval event rates,
+never from the formal account or its verdict.
+
+Both stored unified target streams have zero nominal direct SPY/QQQ
+weights at all121decisions. This does **not** prove benchmark
+unattainability:other asset exposures can outperform those indices.
+Likewise,the observed score/objective gap does not prove that replacing
+the score or adding a benchmark anchor would improve performance.
+Per-interval relative returns are not new acceptance criteria.
+The windows overlap and all history is exposed,not independent OOS.
+
+The original diagnostic intent and a failed NumPy-scalar JSON write remain
+preserved. A separately frozen report Adapter converts scalars exactly to
+native JSON types,without editing the frozen analysis,weights,data or
+thresholds. No score,alternative rank,target,shadow or main account was
+regenerated. Financial counts remain490events,44registrations,
+41completed reviews,three technical failures,zero pending,
+164funded paths and219combined completions,with zero qualifiers.
+
 ## Initial benchmark command
 
 From the SSD workspace root:
