@@ -6930,6 +6930,117 @@ defined expert-layer question must still be frozen and evaluated
 on every original main-capital path. The investment objective
 has not been achieved.
 
+## Frozen five-policy continuous NET mixture
+
+The [new fixed contract](config/expert-five-net-wealth-mixture-v1.json)
+asks whether the already admitted macro policy improves the
+existing continuous whole-NET-policy wealth mixture when the
+pool grows from four to five. It does not retune the failed
+pair selector,main ratchet,lookback,cost proxy or protection
+coefficients. The source five-policy pool and all earlier
+financial/diagnostic outcomes remain unchanged.
+
+The [actual registration](evidence/expert_five_net_mixture_20261030_registration_v1.json)
+occurred at**2026-10-30T02:26:02.620797Z**,after the real
+scheduled invocation at02:02:10.157Z and before new real
+continuous-mixture learning or targets.
+Implementation/input intent SHA256:
+`b2ff03f1ba2290cf57ec522f5d4313cd10e62b4745ba31fcce172f73036cc6b9`.
+Frozen specification SHA256:
+`976ffd99fcfa4054bfa3c3316d9d6fb245a3e61299c46fbbdbfce9a8a62ddba4`.
+Canonical registration SHA256:
+`c414f072afef124f1c655d3b883a5c106b0d449217c86f2b02e10870dec3ad75`.
+
+### Same score law,not hard exclusion or a new wealth theorem
+
+The existing uniform Dirichlet moment-integration law now uses
+five unit prior parameters over fractions of complete policies.
+For each mature full month,the original actual NET expert daily
+returns compound into positive period relatives. Every constant
+expert-fraction portfolio receives the same product-of-arithmetic-
+mixed-relatives score;its mean fractions are integrated exactly.
+All five fractions stay positive. There is no fitted prior,
+temperature,forgetting,lookback,k2selection or allocation floor.
+
+Use the real2016-10-05initial recommendation and2016-10-31
+first month-end anchor;both have zero complete intervals and
+explicitly unscored equal fifths. The first complete training
+interval ends2016-11-30. At every later completed month,validate
+the previous fractions on that now-mature interval **before**
+assimilating it. All121decisions,119complete intervals and
+all original formal warmup return days remain. Only main capital,
+not the causal learning history,resets for the five-year account.
+
+The old period-relative and known NET-excess covariance/marginal-
+risk/cost-audit functions are reused,not rebuilt or optimized.
+Source fixed tickets,reference10000capital and native execution
+clocks still differ from fractional,netted monthly main-account
+allocations. The score integral is **not** an actual net main
+wealth identity,independent-risk claim or drawdown guarantee.
+Historical pool selection follows216exposed completions and the
+saved five-expert diagnosis;prequential processing is not
+independent OOS or forward profit evidence.
+
+### Exact packed computation with separately measured process memory
+
+Blindly extending the old dense array would allocate120to
+the fourth power float64cells,**1,658,880,000bytes**.
+The [new numerical Module](src/us_quant/expert_five_net_wealth_mixture_v1.py)
+instead stores only valid nonnegative five-coordinate
+degree compositions. At119intervals there are9,078,630states:
+one packed coefficient array is72,629,040bytes and the largest
+simultaneous old/new coefficient buffers total142,896,160bytes.
+Updates stream32,768states at a time;no dense four-dimensional
+120-sided tensor is allocated.
+
+These are coefficient-array bounds,**not total processRAM**.
+The synthetic full119interval test measured peak resident memory
+**1,010,503,680bytes** on macOS. Actual source preparation
+measured**856,854,528bytes**. The different complete processes
+include their Python/package/index/temporary overhead;neither is
+represented by only the72.6MBprincipal coefficient array.
+Numerical states are not separately tested economic strategies.
+
+The independent oracle uses a different representation:
+polynomial-exact four-dimensional stick-breaking Gaussian-Jacobi
+integration,streamed in4,096-node chunks rather than constructing
+the entire quadrature mesh. Its maximum order61corresponds to
+13,845,841numerical points,not a candidate-weight search.
+Every actual prefix/allocation is checked. Maximum weight,
+target and prequential-score differences are respectively
+`5.134781488891349e-15`,
+`4.551914400963142e-15`and
+`7.549516567451064e-15`.
+Additional actual truncated-prefix checks end2016-10-05,
+2016-10-31,2016-11-30,2020-01-31and2023-05-31.
+
+The accepted checks comprise39coupled small/causal/cached-source/
+publication/execution checks plus one full119interval sparse
+stress check. The stress check reaches the exact maximum
+packed state,retains uniform fifths for identical streams and
+rejects an interval beyond the frozen bound. No complete source
+admission,expert fit,recommendation,account or historical
+diagnostic is rerun.
+
+### Pre-account boundary
+
+There is exactly one new financial configuration planned for
+four original ten/five-year base/stress paths. It produces
+one unified14-asset98percenttarget and one freshUSD10000
+main book per path,using the original initial-plus-monthly
+2.5ppactual-holding executor,fees,RF,initial peak,one/two-session
+clocks,long-only1x and no terminal liquidation. Every original
+Sharpe/CAGR/DD/SPY/QQQ/extra-stress/factor-participation gate
+remains.
+
+At this registration snapshot the457-event journal derives
+**42registrations,38completed/reviewed,three technical failures,
+one pending,152funded paths,216combined completions and
+zero qualifiers**. No new main account has started. The real
+remote publication fence is required before all four new
+funded paths. This numerical/registration progress is not
+investment-goal completion.
+
 ## Independent IBKR price-history source boundary
 
 The prepared Gateway is authorized only for existing-entitlement market data,

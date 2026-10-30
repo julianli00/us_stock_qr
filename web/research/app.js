@@ -49,6 +49,7 @@ const titles = {
   expert_pool_net_wealth_mixture_v1: "四专家：完整净影子策略的连续配权",
   expert_pool_five_equal_weight_v1: "五专家：加入宏观利润份额的等权对照",
   expert_pool_five_rolling_pair_v1: "五专家：原净表现／风险／成本滚动择对",
+  expert_pool_five_net_wealth_mixture_v1: "五专家：完整净策略的有界精确连续配权",
   semiconductor_option_proxy_dollar_observed_band025: "隐含波动预算 + 美元防御 + 持仓偏差带",
   semiconductor_option_proxy_observed_band025: "隐含波动预算 + 持仓偏差带",
   macro_real_yield_factor_tilt: "实际利率因子倾斜",

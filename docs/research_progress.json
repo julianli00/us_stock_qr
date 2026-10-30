@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-30",
-  "phase": "saved_five_expert_diagnosis_complete",
-  "active_research_focus": "select_next_independent_expert_layer_question_after_saved_diagnosis",
+  "phase": "five_net_mixture_registered_waiting_publication",
+  "active_research_focus": "publish_five_net_mixture_registration_before_four_master_paths",
   "research_mainline": {
     "id": "strategy_expert_pool_and_rolling_meta_v1",
     "user_directed": true,
@@ -343,6 +343,7 @@
       "independent_forward_validation": false
     },
     "saved_five_expert_diagnosis": {
+      "snapshot_scope": "Diagnosis-time snapshot; the subsequent five-policy continuous-mixture study is recorded separately.",
       "completed_at_utc": "2026-10-30T01:47:26.818145Z",
       "private_evidence_sha256": "94067990b95ada74543cdaf0ea2c57a147f900976d232722e3d67ed67d3a968d",
       "precomputation_intent_sha256": "7b2bb1f5e514d09e151b4127d81cc2e261d9ecb5cfd56fa4b72e2334b0ecbf50",
@@ -383,6 +384,44 @@
       "new_shadow_account_runs": 0,
       "new_source_requests": 0,
       "new_model_parameters_selected": false,
+      "independent_forward_validation": false
+    },
+    "five_net_mixture_study": {
+      "registration": "research/workbench/evidence/expert_five_net_mixture_20261030_registration_v1.json",
+      "registration_sha256": "c414f072afef124f1c655d3b883a5c106b0d449217c86f2b02e10870dec3ad75",
+      "frozen_specification_sha256": "976ffd99fcfa4054bfa3c3316d9d6fb245a3e61299c46fbbdbfce9a8a62ddba4",
+      "implementation_and_input_freeze_intent_sha256": "b2ff03f1ba2290cf57ec522f5d4313cd10e62b4745ba31fcce172f73036cc6b9",
+      "actual_registered_at_utc": "2026-10-30T02:26:02.620797Z",
+      "complete_strategy_expert_representatives": 5,
+      "new_financial_rules": 1,
+      "controlled_change": "fixed_five_pool_under_existing_complete_NET_policy_continuous_mixture",
+      "existing_uniform_NET_score_law_and_execution_preserved": true,
+      "real_initial_decision_session": "2016-10-05",
+      "all_formal_warmup_return_days_preserved": true,
+      "combined_decisions": 121,
+      "initial_unscored_decisions": 2,
+      "complete_learning_intervals": 119,
+      "first_complete_learning_interval_end": "2016-11-30",
+      "all_five_expert_fractions_positive_at_every_decision": true,
+      "maximum_independent_expert_weight_difference": 5.134781488891349e-15,
+      "maximum_independent_target_difference": 4.551914400963142e-15,
+      "maximum_prequential_score_difference": 7.549516567451064e-15,
+      "every_actual_prefix_independently_integrated": true,
+      "actual_truncated_prefix_checks": 5,
+      "numeric_representation": "packed_valid_degree_compositions",
+      "maximum_algebraic_states_not_economic_trials": 9078630,
+      "maximum_single_coefficient_array_bytes": 72629040,
+      "maximum_old_plus_new_coefficient_buffer_bytes": 142896160,
+      "independent_integration": "streamed_polynomial_exact_four_dimensional_Gaussian_Jacobi",
+      "observed_synthetic_full_bound_process_peak_RSS_bytes": 1010503680,
+      "observed_actual_preparation_process_peak_RSS_bytes": 856854528,
+      "principal_array_bytes_are_total_process_RAM": false,
+      "actual_funded_paths_completed": 0,
+      "publication_fence_before_accounts_still_required": true,
+      "source_expert_targets_fits_accounts_or_admissions_replayed": false,
+      "new_shadow_account_runs": 0,
+      "new_source_requests": 0,
+      "investment_objective_verified": false,
       "independent_forward_validation": false
     },
     "investment_objective_verified": false
@@ -503,10 +542,10 @@
       "sha256": "ccff66c847db6519132775a177268c03d7ec36491076380be01d01f41589287d"
     },
     "aggregate_counts": {
-      "registered": 41,
+      "registered": 42,
       "completed": 38,
       "reviews": 38,
-      "pending": 0,
+      "pending": 1,
       "technical_failures": 3,
       "qualified": 0,
       "account_paths": 152,
@@ -736,6 +775,14 @@
         "results": "research/workbench/evidence/five_expert_meta_20261030_results_v1.json",
         "results_sha256": "f23131919126f1be2f11acff6854ebf9b4738bf406f901d94945e624f9ca1bf9",
         "preregistration_commit": "171436b2e7dff5c6af33c5e3afc3899fe67586ad"
+      },
+      {
+        "study_id": "ssd_expert_five_net_wealth_mixture_20261030_v1",
+        "registration": "research/workbench/evidence/expert_five_net_mixture_20261030_registration_v1.json",
+        "registration_sha256": "c414f072afef124f1c655d3b883a5c106b0d449217c86f2b02e10870dec3ad75",
+        "results": null,
+        "results_sha256": null,
+        "preregistration_commit": null
       }
     ],
     "status": "first_pair_complete_both_rejected",

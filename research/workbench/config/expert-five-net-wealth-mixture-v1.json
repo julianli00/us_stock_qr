@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_expert_five_net_wealth_mixture_20261030_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "prior_completed_configurations": 216,
+  "prior_new_registered_candidates": 41,
+  "prior_new_completed_strategy_evaluations": 38,
+  "prior_new_technical_failures": 3,
+  "prior_journal_sequence": 455,
+  "prior_journal_head_sha256": "b401ca3db1f96aa5729337d6527f721641d0e8c058a3cc664f571e5ccc19ace6",
+  "source_registration": {
+    "path": "evidence/five_expert_meta_20261030_registration_v1.json",
+    "sha256": "829696970740847d27d1e7c697c95218af0d34104122176a7273acf04ecc6af4"
+  },
+  "source_specification_sha256": "557aa3f10626b80768cd99ff799d5d682badc97cdc2070ccaba8060a73cc75d1",
+  "source_five_policy": {
+    "path": "config/strategy-expert-pool-five-v1.json",
+    "sha256": "be911ee12eec6d3581a5185852f1d9a5a24407955b5d07b67ebf245b953f5df6"
+  },
+  "previous_five_results": {
+    "path": "evidence/five_expert_meta_20261030_results_v1.json",
+    "sha256": "f23131919126f1be2f11acff6854ebf9b4738bf406f901d94945e624f9ca1bf9"
+  },
+  "prior_four_net_registration": {
+    "path": "evidence/expert_net_mixture_20261029_registration_v1.json",
+    "sha256": "50545693c0443a3a60ad728cac282b5f9d6f006beb2d6e6d455849351644b905"
+  },
+  "prior_four_net_results": {
+    "path": "evidence/expert_net_mixture_20261029_results_v1.json",
+    "sha256": "004761e6de175fb9e1c1447872abdb03626c7843374aac10ad4cb96ef563bb70"
+  },
+  "source_four_net_policy": {
+    "path": "config/expert-net-wealth-mixture-v1.json",
+    "sha256": "04f611c652fd20aaf7caa9c57769020c2ddaac778be5dd5f496b396253249547"
+  },
+  "saved_five_diagnosis": {
+    "path": "reports/ssd-continuous-research-v1/five-expert-meta-20261030-v1/saved-five-selection-risk-v1.json",
+    "sha256": "94067990b95ada74543cdaf0ea2c57a147f900976d232722e3d67ed67d3a968d"
+  },
+  "expert_ids": [
+    "equity_first_month_end_commitment_v1",
+    "benchmark_opportunity_joint_tail_v1",
+    "symmetric_garch_growth_bil_v1",
+    "semiconductor_ratchet_protection",
+    "semiconductor_option_dollar_profit_share_confirmation"
+  ],
+  "mechanism_groups": [
+    "committed_price_trend_defense",
+    "joint_tail_opportunity",
+    "conditional_variance_growth",
+    "wealth_feedback_protection",
+    "common_quarter_profit_dollar_confirmation"
+  ],
+  "dirichlet_prior": [1, 1, 1, 1, 1],
+  "initial_decision_session": "2016-10-05",
+  "shadow_reference_start": "2016-10-06",
+  "observation_horizon_sessions": 2512,
+  "maximum_complete_learning_intervals": 119,
+  "numeric_representation": "packed_valid_degree_compositions_v1",
+  "maximum_algebraic_states": 9078630,
+  "learner_mass_array_maximum_bytes": 72629040,
+  "maximum_concurrent_coefficient_buffer_bytes": 142896160,
+  "state_chunk_size": 32768,
+  "independent_quadrature_chunk_size": 4096,
+  "independent_quadrature_maximum_order": 61,
+  "learning_clock": "completed_full_exchange_month_intervals",
+  "training_memory": "expanding_all_completed_intervals",
+  "validation_clock": "next_full_month_prequential_before_assimilation",
+  "learning_state_resets_for_five_year_account": false,
+  "temperature_or_forgetting_parameter": null,
+  "switch_cost_proxy_affects_allocation": false,
+  "reference_capital_usd": 10000,
+  "switch_cost_bps_per_side": 5.0,
+  "switch_commission_per_changed_asset_usd": 1.0,
+  "changed_asset_numeric_tolerance": 1e-12,
+  "invested_target_budget": 0.98,
+  "cash_reserve": 0.02,
+  "actual_weight_trade_band": 0.025,
+  "minimum_economic_factor_families": 3,
+  "new_economic_factor_definitions": 0,
+  "new_shadow_account_runs": 0,
+  "new_source_requests": 0,
+  "candidate_count_in_this_study": 1,
+  "study_size_is_a_total_research_quota": false,
+  "candidates": [
+    {
+      "id": "expert_pool_five_net_wealth_mixture_v1",
+      "weighting": "exact_uniform_five_policy_mixture"
+    }
+  ],
+  "methodology": {
+    "question": "Does the admitted macro expert improve the existing continuous complete-NET-policy mixture when the fixed pool grows from four to five? Avoid hard pair exclusion without changing the prior,learning clock,score law or main execution.",
+    "economic_control": "Reuse the completed four-policy NET mixture and the completed equal/rolling five-policy results as exposed saved controls,not newly rerun accounts. The extra complete policy is the controlled pool change. Packed coefficients and quadrature nodes are numerical representations,not additional economic hypotheses.",
+    "score_law": "Keep the original uniform Dirichlet moment-integration law,now with five unit prior parameters. Each mature full month compounds actual NET expert daily returns;each constant fraction's score multiplies arithmetic mixed period relatives. Integrate the mean fractions exactly,keeping every technically admitted expert at positive weight. No full-window winner,grid,temperature,forgetting,lookback,k2or fitted floor.",
+    "maturity_and_validation": "Keep the true2016-10-05initial recommendation and2016-10-31first month-end anchor. These have zero complete intervals and explicitly unscored equal fifths. The first complete training interval ends2016-11-30. At every later month end,validate the previous fractions BEFORE assimilating that now-mature interval. All formal main returns stay;only main capital resets for the five-year path.",
+    "risk_and_cost": "Reuse the original known daily NET-excess covariance/marginal-risk and reference10000/5bp/USD1incremental meta-switch proxy audit,not a newly fitted allocation penalty. Continuous scoring is not an absolute drawdown cap,and source net fees/referencecapital are not actual fractional main-account fees or wealth.",
+    "numerics": "Store only nonnegative degree-nfive-coordinate compositions,C(n+4,4),in one packed float64 coefficient array. At119intervals this is9078630states/72629040bytes;the largest simultaneous old+new coefficient buffers total142896160bytes. Stream32768states per update. Never allocate a120^4dense tensor. Independently validate every actual prefix with polynomial-exact four-dimensional stick-breaking Gaussian-Jacobi integration streamed in4096-node chunks,maxorder61. These bounds describe arrays,not total processRAM;record actual process peak separately.",
+    "capital_and_execution": "Reuse the cached five technically admitted whole policies and their existing recommendation/NETshadow bytes through the real dense/monthly Adapters. Compose one14-asset98%target/2%idle cash. Keep the existing initial-plus-monthly2.5ppactual-holding executor,one freshUSD10000,originalRF/initialpeak/5-20bps/USD1/1-2sessiondelays/long-only1x/no terminal liquidation. No source account,target,fit,admission or historical diagnostic is replayed.",
+    "limits_and_bias": "The pool and direction follow216exposed completions and the saved five-policy diagnosis. Labels do not prove independent risk. Positive fractions do not guarantee useful defensive contribution,and complete-month scores can miss intramonth cumulative losses. Prequential causality is not independentOOS or forwardproof. The prior actual-main protection failure is retained,not retuned.",
+    "qualification": "Same rule must pass all original10y/5y/base-stress netSharpe>1,CAGR>12%,DD<=15%,full-capital matched-costSPYandQQQ plus originalstress-vs-base-SPY;actual factor participation and turnover/orders/fees remain disclosed. No gate/clock/window/source rescue or invented numeric turnover cap.",
+    "score_is_actual_main_net_wealth": false,
+    "net_wealth_identity_or_theorem_claimed": false,
+    "algebraic_states_are_independent_economic_trials": false,
+    "main_drawdown_guarantee": false,
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

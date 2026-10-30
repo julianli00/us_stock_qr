@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 41 SSD identities, 38 completed/rejected, three retained technical failures and zero pending; 152 funded paths | Journal-derived current summary: 216 combined completions, zero qualifiers; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 42 SSD identities, 38 completed/rejected, three retained technical failures and one pending; 152 funded paths | Journal-derived current summary: 216 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -78,6 +78,18 @@ breaches while prior stocks are only17.02%and BIL80.96%:small current
 exposure does not erase loss already accumulated from the main NAV peak.
 Full saved-asset marks and fees reconcile each loss episode without
 replaying accounts or changing any financial verdict or acceptance gate.
+
+The [next five-policy continuous-mixture registration](research/workbench/evidence/expert_five_net_mixture_20261030_registration_v1.json)
+occurred at **2026-10-30T02:26:02.620797Z**,before new real learning or
+targets. It applies the existing complete-NET-policy wealth-mixture law to
+the unchanged five-expert pool instead of excluding all but two policies.
+All121allocations and119complete intervals match independent streamed
+four-dimensional polynomial-exact integration;every expert fraction
+remains positive. The packed valid-degree state avoids a1.66GBdense tensor.
+Its largest coefficient buffers total142,896,160bytes,while actual
+preparation process peak RSS was856,854,528bytes;these are not the same
+memory measure. No new main account has started at this registration,
+and actual remote publication remains required before four funded paths.
 
 The [new frozen protocol](research/workbench/config/dual-benchmark-v1.json)
 requires every original ten/five-year base/stress path to have net Sharpe above
