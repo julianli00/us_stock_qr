@@ -182,10 +182,52 @@ The windows overlap and all history is exposed,not independent OOS.
 The original diagnostic intent and a failed NumPy-scalar JSON write remain
 preserved. A separately frozen report Adapter converts scalars exactly to
 native JSON types,without editing the frozen analysis,weights,data or
-thresholds. No score,alternative rank,target,shadow or main account was
-regenerated. Financial counts remain490events,44registrations,
+thresholds. That diagnosis regenerated no score,alternative rank,target,
+shadow or main account. Its financial snapshot remained490events,44registrations,
 41completed reviews,three technical failures,zero pending,
 164funded paths and219combined completions,with zero qualifiers.
+
+## Separately frozen dual-benchmark-relative selection
+
+The [single new policy packet](evidence/expert_dual_relative_selection_20261030_registration_v1.json)
+registered **2026-10-30T05:32:29.932850Z**,following implementation
+freeze `d0c6afea39e565e5a4f17eb85821fb12bf361a198210ac98f6adb1d490cc5f6d`
+before any new real ranking or target. It keeps all six admitted
+experts and the original pair ERC weights trained on RF-excess risk.
+Only the objective for choosing among those pairs changes.
+
+For each mature pair,original NET expert returns are compared with
+the original full-capital ten-year-base NETSPY/QQQ books on identical
+84training/42validation dates. The new selector maximizes the weakest
+of four net active risk scores,retaining the original incremental
+switch proxy and12-decimal lexical ties. Subtracting the common
+reference before weighting avoids numerical cancellation and preserves
+exact-zero tracking risk without a variance floor. Missing benchmark
+dates are errors;zero tracking risk is explicitly unscorable,not a
+successful assessment. Negative finite scores still rank with no new
+cash cutoff.
+
+The final RF-based Sharpe definition,original full10y/5y/base-stress
+cash-funded accounts,98%ETFbudget,2.5ppactual monthly band,costs,
+delays,RF,initial peak and all SPY/QQQ/drawdown gates stay unchanged.
+This is a distinct policy heuristic,not a changed statistical test or
+evidence that benchmark alignment will work. No old control account,
+source fit,target or shadow book is rerun.
+
+All121decisions,seven unscored initial decisions,114mature decisions
+and all15pairs/four active score contexts match an independent scalar
+implementation. Maximum target/weight/score/tracking-risk differences
+are5.55e-17/2.22e-16/3.55e-15/1.39e-17. Five actual
+truncated-prefix checks preserve prior decisions. Both original
+saved equal and RF-relative rolling controls remain exposed controls,
+not new trials or independent OOS.
+
+No new main account has started. Current counts are492events,
+45registrations,41completed reviews,three technical failures,one
+pending rule and164funded paths:219combined completions,zero
+qualifiers. Actual full-dependency remote publication remains required
+before the new rule's four funded paths. One candidate is a controlled
+study choice,not an authorization quota.
 
 ## Initial benchmark command
 

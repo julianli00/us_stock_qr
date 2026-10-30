@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 44 SSD identities, 41 completed/rejected, three retained technical failures and zero pending; 164 funded paths | Journal-derived current summary: 219 combined completions, zero qualifiers; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 45 SSD identities, 41 completed/rejected, three retained technical failures and one pending; 164 funded paths | Journal-derived current summary: 219 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -166,8 +166,25 @@ uses the already known September30score at the October5capital signal.
 These overlapping,exposed historical comparisons show that a positive
 RF score does not establish benchmark excess. They are **not a new
 monthly acceptance gate,independent forward proof or evidence that an
-alternative ranking would pass**. No new ranking,weight,target or
-account was created;all219completed financial verdicts stay unchanged.
+alternative ranking would pass**. That diagnosis created no new
+ranking,weight,target or account;all219completed verdicts stayed intact.
+
+A [separately preregistered active-score rule](research/workbench/evidence/expert_dual_relative_selection_20261030_registration_v1.json)
+registered at **2026-10-30T05:32:29.932850Z**. It changes only pair
+selection objective:rank the weakest training/validation net active
+risk score against both SPY and QQQ. The same six-expert pool,
+original RF-excess trained ERC risk weights,126/84/42windows,
+two selected experts,switch proxy,ties and funded execution remain.
+The final RF Sharpe,dual-benchmark CAGR and drawdown gates are
+unchanged;the active score is a new policy heuristic,not a replacement
+for those acceptance criteria or a significance test.
+
+The saved equal-six and RF-relative controls are reused,not rerun or
+registered again. All121new decisions,seven unscored initial decisions,
+114mature decisions,15pairs with four active assessments each and
+five actual prefix checks are preserved. No new main account has
+started. Actual remote publication remains required before the one
+new rule's four original freshUSD10000paths.
 
 The [new frozen protocol](research/workbench/config/dual-benchmark-v1.json)
 requires every original ten/five-year base/stress path to have net Sharpe above

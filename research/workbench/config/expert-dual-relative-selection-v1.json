@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_expert_dual_relative_selection_20261030_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "prior_completed_configurations": 219,
+  "prior_new_registered_candidates": 44,
+  "prior_new_completed_strategy_evaluations": 41,
+  "prior_new_technical_failures": 3,
+  "prior_journal_sequence": 490,
+  "prior_journal_head_sha256": "31dd509b070c9ac219da939f123d40c153df30b24c269331691c21e75fa934d6",
+  "source_registration": {
+    "path": "evidence/six_expert_meta_20261030_registration_v1.json",
+    "sha256": "a577ca24f71f83f810d784a32d4d36e186228b9bd6fc9c2caedaa62703d319fa"
+  },
+  "source_specification_sha256": "3e0ad10d2c93fe24bf2ed09440272afb90d8add407adc8a2c13ae6c2c6c1d290",
+  "source_pool_policy": {
+    "path": "config/strategy-expert-pool-six-v1.json",
+    "sha256": "fa2d9724cd2ba9e476d0dacb7dba595347eb550304c5588bc8b6998f5ac42281"
+  },
+  "source_controls": {
+    "path": "reports/ssd-continuous-research-v1/six-expert-meta-20261030-v1/results.json",
+    "sha256": "3dad709303bf7f2407f1a21b26b157845f6a5fc2ed8403f08bfeb6e4db108316"
+  },
+  "score_alignment_diagnosis": {
+    "path": "reports/ssd-continuous-research-v1/six-expert-objective-alignment-20261030-v1/summary-v2.json",
+    "sha256": "aa5fbd62bb1615524fcc1bce475cdfae0e932cfb97be3f37d2bc08e382cdcf75"
+  },
+  "scoring_benchmarks": {
+    "SPY": {
+      "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/SPY-10y-base.csv",
+      "sha256": "fddffb0bcc8e9056decca6af5194c1a494efd371f2522a0248c22236ca1c7e83"
+    },
+    "QQQ": {
+      "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/QQQ-10y-base.csv",
+      "sha256": "097e3305385e2893bb57ec1faf597b43df38e798876fccbf886266195a61c388"
+    }
+  },
+  "expert_ids": [
+    "equity_first_month_end_commitment_v1",
+    "benchmark_opportunity_joint_tail_v1",
+    "symmetric_garch_growth_bil_v1",
+    "semiconductor_ratchet_protection",
+    "semiconductor_option_dollar_profit_share_confirmation",
+    "four_factor_defense_diversified"
+  ],
+  "mechanism_groups": [
+    "committed_price_trend_defense",
+    "joint_tail_opportunity",
+    "conditional_variance_growth",
+    "wealth_feedback_protection",
+    "common_quarter_profit_dollar_confirmation",
+    "cross_asset_defensive_relative_strength"
+  ],
+  "initial_decision_session": "2016-10-05",
+  "lookback_sessions": 126,
+  "training_sessions": 84,
+  "validation_sessions": 42,
+  "selected_experts": 2,
+  "selection_score_decimal_places": 12,
+  "shadow_reference_path": "10y-base",
+  "reference_capital_usd": 10000,
+  "switch_cost_bps_per_side": 5.0,
+  "switch_commission_per_changed_asset_usd": 1.0,
+  "switch_cost_amortization_sessions": 21,
+  "changed_asset_numeric_tolerance": 1e-12,
+  "invested_target_budget": 0.98,
+  "cash_reserve": 0.02,
+  "actual_weight_trade_band": 0.025,
+  "minimum_economic_factor_families": 3,
+  "new_economic_factor_definitions": 0,
+  "new_shadow_account_runs": 0,
+  "new_shadow_recommendation_artifacts": 0,
+  "new_source_requests": 0,
+  "candidate_count_in_this_study": 1,
+  "study_size_is_a_total_research_quota": false,
+  "candidates": [
+    {"id": "expert_pool_six_dual_relative_pair_v1", "weighting": "train_erc_validate_dual_active"}
+  ],
+  "methodology": {
+    "question": "Does a worst-train-validation active-risk score against both tradable benchmarks improve final joint performance compared with the preserved RF-relative pair selector?",
+    "one_economic_change": "Change only selection objective:at original unit-sum pair ERC weights,use the weighted alreadyNETexpert-minus-originalNETSPY-orQQQ return differences. Subtract the common reference before weighting to preserve exactzeroactive risk,not a fittedvariancefloor. For84training/42validation separately,annualize mean active return after same incremental switch proxy,divided bysampleactive-returnstd. Rankbyminimumofall4scores,12decimalrounding andlexicalpairties. Thisnewpolicy heuristic isNOTa changed statisticalsignificance test or finalRFSharpe definition.",
+    "fixed_risk_and_execution": "Keep allsix admitted representatives,126/84/42mature observations,k2,originalinverse-RF-excess-training-std pairERC weights,trainingcovariance/correlation/marginalrisk,original5bp-plusUSD1incrementalswitchproxy/21sessions,98percentETF/2percentidle,14assets,2.5ppactualmonthlyband andoriginalfundedfees/delays/RF/initial10000DDpeak.",
+    "maturity_and_missingness": "Before126common matured observations explicitunscored equal-sixths,allwarmupreturns kept. Benchmarkmissing/date/nonfinite mismatch isERROR,notpadding. Zero/nonfiniteactive trackingstd makespair explicitlyunscorable. Ifallpairsdegenerate,explicitunscored equal-sixths,not safety. Negativefinitevalidscoresstillrank;no newcashcutoff or trackingriskfloor.",
+    "capital_and_controls": "ONEfreshUSD10000nettedcash-funded1xmain account peroriginal10y/5y/base-stress path. ExistingNETshadowwealth/costs/floors are NOTmaincapital. Reusecompletedfixed-six equal/RFrolling accounts as exposedscalarcontrols;doNOTrerunorre-registeroldcontrols or newshadows. One newcandidate isastudychoice,not anauthorizationquota.",
+    "benchmarks_and_clocks": "Use onlyoriginalfrozenfullcapitalNETSPY/QQQ10y-base books forpast scoring. Same126exactdates as expertshadowreturns;selectonlydata<=decisionclose. Preserve originalRFforriskweights andmainSharpeacceptance. Actualexpertintroduction != counterfactualhistoricalavailability. Historicalrollingcausality != independentforwardproof.",
+    "qualification_and_bias": "Alloriginalfourpaths jointnetRFSharpe>1,CAGR>12percent,DD<=15percent,matched-costfullcapitalSPY-QQQ plusstress-vs-base-SPY remain. Disclose actualturnover/orders/fees/registeredfactorparticipation;no inventedcap ormetricsplicing. Selectedafter219exposed completions anddescriptivediagnosis,whichdoesNOTprove thisalternativerankingwillwork.",
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}
