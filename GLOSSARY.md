@@ -55,6 +55,12 @@ The accumulated assessment information a meta-strategy uses to revise future cap
 weights. It is not the main account's holdings, cash or realized wealth.
 _Avoid_: Main capital account, transferable shadow wealth guarantee
 
+**Assessment-to-main divergence (评估—主账户偏离)**:
+A difference between assessment reference performance and main-account performance
+over comparable periods. It does not by itself identify an implementation defect or a
+causal source of loss.
+_Avoid_: Transferable shadow return, isolated fee effect
+
 **Funding standby (资金备用状态)**:
 A declared mode that parks main capital when the meta-strategy cannot form an
 admissible expert allocation. It is not a strategy expert or a successful risk assessment.

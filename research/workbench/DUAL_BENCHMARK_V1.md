@@ -923,6 +923,104 @@ pending and180funded paths:223combined completions,zero
 qualifiers. No learning rate,curvature,month clock,maturity rule,
 simplex tolerance or acceptance gate is retuned after outcomes.
 
+## Saved online assessment-to-main and recommendation-clock audit
+
+The zero-trial audit completed **2026-10-30T12:46:42.007446Z**.
+Its pre-derivation intent
+`7054d5e708ff30dd25f911fa9013ff4a94c00dd516b563318ee959824b95727a`
+bound947source references,two implementation/test files and
+three validation artifacts before findings. Diagnostic and summary
+hashes are
+`82d74020727564f11edb28f74f18fbb7fb288bd9a5b3ac1d02245c4fc4cf5794`
+and`22a19d6ecd9c2bf670beca499d95102e11af23388ef2381d27b557b6aae4fbde`.
+No source fit,learning update,ranking,target,main account,
+benchmark or old analysis pipeline is replayed.
+
+### Recommendations, scores and orders have different clocks
+
+The existing complete-expert observation Interface is read over
+all2512reference return sessions. A dense Adapter's fresh
+known-at timestamp alone is not an economic recommendation
+change. The numericL1comparison tolerance remains1e-12;
+it is not a new trading threshold.
+
+Of2392genuine non-month-end sessions,the own-wealth ratchet
+expert has2258archived desired-recommendation changes and2320
+days differing from its last nominal-decision recommendation.
+Each of the other five experts has zero such intramonth changes.
+The original ratchet view explicitly distinguishes unissued
+daily recommendations from native executions and uses its own
+shadow NAV/peak. Neither recommendation changes nor that source
+protection state are main orders or a main drawdown guarantee.
+
+With strictly positive recorded nominal capital,the ten-year
+scope has1664intramonth change days and1709drift days;
+1607change days have no actual main model order. The five-year
+scope has718change days,742drift days and692change days with
+no main order. The maximum nominal-capital-weighted source
+recommendationL1drift bound is0.051203631126887784. It is not
+a generated alternative unified target,realized turnover or
+an isolated loss contribution. Same-close recommendations
+cannot be assumed executable at that close.
+
+### Match the prior applied assessment, not the end-month score
+
+Only complete source months entirely inside the formal main
+book and mature at the **prior** applied decision are eligible
+for score/main comparison. Current end-month maturity cannot
+backdate that eligibility. Ten-year paths retain113eligible
+months,plus six explicitly unscored full source months and
+21boundary/unassessed formal days. Five-year paths retain59
+eligible months and one source month crossing fresh main
+capital's initial boundary;21formal boundary/unassessed days
+remain. The underlying partitions contain2368+123+21=2512
+and1233+21=1254days,respectively.
+
+| Actual path | Matched mature full months | Main relative below source score | Source assessment gain, main loss | Mean log main-minus-source gap, log bps |
+|---|---:|---:|---:|---:|
+| 10y base | 113 | 73 | 0 | -0.5805 |
+| 10y stress | 113 | 63 | 1 | -3.1964 |
+| 5y base | 59 | 43 | 0 | -2.6807 |
+| 5y stress | 59 | 38 | 1 | -9.2102 |
+
+The gap is the log of the actual main NAV relative minus the
+log of the saved pre-update assessment relative. A log basis
+point is0.0001in that difference. These are realized-reference
+comparisons on matched exposed months,not point-return forecasts,
+fee attribution,new CAGR or transferable shadow wealth.
+An assessment gain means its saved relative is above one;a
+main loss means the actual main NAV relative is below one.
+No score is filled for a warmup or incomplete interval.
+The first partial source month and terminal formal days still
+contribute to the original main-account verdicts.
+
+### Original main drawdown episodes remain
+
+All four paths share a worst peak on2021-12-27and earliest
+worst trough on2022-10-14,with202formal sessions between
+them.170of those sessions show intramonth source recommendation
+drift with positive nominal capital. Ten-year first15%breaches
+are2020-03-12;five-year first breaches are2022-05-09.
+Each first-breach and worst-trough observation has zero actual
+main model orders and zero paid fees that day.
+
+At the common trough the weighted sourceL1drift bound is only
+0.0007837365074590343. Cooccurrence does not identify a causal
+clock effect or show that refreshing recommendations would
+remove the20.9--21.3%drawdown. Episode selection is explicitly
+post-outcome,not an ex-ante risk rule. The original initial
+USD10000peak is retained;the maximum saved drawdown arithmetic
+difference is1.5543122344752192e-15,below1e-12.
+
+All7532formal account days,actual initial fees and all old
+financial metrics remain. No alternative allocation,unified
+target,shadow account,benchmark or funded path is computed.
+The540events,49registrations,45completed reviews,four
+technical failures,zero pending,180funded paths and223combined
+completions/zero qualifiers remain unchanged. This audit selects
+no new execution/allocation policy and claims no independent
+out-of-sample or forward validation.
+
 ## Initial benchmark command
 
 From the SSD workspace root:

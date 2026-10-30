@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-30",
-  "phase": "expert_online_log_growth_completed_rejected",
-  "active_research_focus": "select_next_independent_expert_layer_question_after_frozen_online_NET_log_growth_rejection",
+  "phase": "online_assessment_divergence_completed",
+  "active_research_focus": "select_next_independent_expert_layer_question_after_saved_online_assessment_divergence",
   "research_mainline": {
     "id": "strategy_expert_pool_and_rolling_meta_v1",
     "user_directed": true,
@@ -1118,6 +1118,91 @@
       "learning_law_or_acceptance_gates_retuned_after_outcomes": false,
       "investment_objective_verified": false,
       "independent_forward_validation": false,
+      "order_authority": false
+    },
+    "saved_online_assessment_divergence": {
+      "actual_completed_at_utc": "2026-10-30T12:46:42.007446Z",
+      "private_diagnostic_sha256": "82d74020727564f11edb28f74f18fbb7fb288bd9a5b3ac1d02245c4fc4cf5794",
+      "private_summary_sha256": "22a19d6ecd9c2bf670beca499d95102e11af23388ef2381d27b557b6aae4fbde",
+      "preanalysis_intent_sha256": "7054d5e708ff30dd25f911fa9013ff4a94c00dd516b563318ee959824b95727a",
+      "source_references_frozen": 947,
+      "implementation_and_validation_references_frozen": 5,
+      "source_decisions_preserved": 121,
+      "saved_complete_learning_intervals": 119,
+      "formal_reference_sessions": 2512,
+      "intramonth_reference_sessions": 2392,
+      "only_intramonth_desired_recommendation_change_expert": "semiconductor_ratchet_protection",
+      "ratchet_intramonth_recommendation_change_events": 2258,
+      "ratchet_intramonth_recommendation_drift_days": 2320,
+      "other_five_experts_intramonth_change_events": 0,
+      "dense_known_at_refresh_alone_is_economic_recommendation_change": false,
+      "unissued_source_desired_recommendations_are_native_executions": false,
+      "source_ratchet_peak_or_protection_state_is_main_state": false,
+      "positive_nominal_capital_intramonth_change_days_10y": 1664,
+      "positive_nominal_capital_intramonth_drift_days_10y": 1709,
+      "intramonth_source_change_days_without_main_orders_10y": 1607,
+      "positive_nominal_capital_intramonth_change_days_5y": 718,
+      "positive_nominal_capital_intramonth_drift_days_5y": 742,
+      "intramonth_source_change_days_without_main_orders_5y": 692,
+      "maximum_nominal_capital_weighted_source_L1_drift_bound": 0.051203631126887784,
+      "source_drift_bound_is_alternative_target_or_realized_turnover": false,
+      "maturity_checked_at_prior_applied_decision_not_current_month_end": true,
+      "matched_mature_full_months_10y": 113,
+      "matched_mature_full_months_5y": 59,
+      "unscored_complete_source_months_10y": 6,
+      "source_month_crosses_fresh_main_boundary_5y": 1,
+      "formal_day_partition_10y": {
+        "mature_full_credit_month": 2368,
+        "unscored_full_source_month": 123,
+        "boundary_partial_or_unassessed": 21
+      },
+      "formal_day_partition_5y": {
+        "mature_full_credit_month": 1233,
+        "boundary_partial_or_unassessed": 21
+      },
+      "matched_months_by_path": {
+        "10y-base": {
+          "main_relative_below_source_assessment_months": 73,
+          "positive_source_assessment_with_negative_main_months": 0,
+          "mean_log_main_minus_source_assessment": -5.804525684210819e-05
+        },
+        "10y-stress": {
+          "main_relative_below_source_assessment_months": 63,
+          "positive_source_assessment_with_negative_main_months": 1,
+          "mean_log_main_minus_source_assessment": -0.0003196363241933195
+        },
+        "5y-base": {
+          "main_relative_below_source_assessment_months": 43,
+          "positive_source_assessment_with_negative_main_months": 0,
+          "mean_log_main_minus_source_assessment": -0.00026806920777803096
+        },
+        "5y-stress": {
+          "main_relative_below_source_assessment_months": 38,
+          "positive_source_assessment_with_negative_main_months": 1,
+          "mean_log_main_minus_source_assessment": -0.0009210247871117974
+        }
+      },
+      "common_worst_peak_session": "2021-12-27",
+      "common_worst_trough_session": "2022-10-14",
+      "common_worst_peak_to_trough_formal_sessions": 202,
+      "common_worst_episode_intramonth_source_drift_days": 170,
+      "first_15pct_breach_session_10y": "2020-03-12",
+      "first_15pct_breach_session_5y": "2022-05-09",
+      "all_first_breach_and_worst_trough_actual_orders_and_fees_zero": true,
+      "common_trough_nominal_weighted_source_L1_drift_bound": 0.0007837365074590343,
+      "maximum_saved_drawdown_arithmetic_difference": 1.5543122344752192e-15,
+      "all_formal_account_days_preserved": 7532,
+      "episodes_identified_post_outcome_not_an_ex_ante_policy": true,
+      "source_target_account_learning_benchmark_or_old_analysis_pipeline_replayed": false,
+      "new_strategy_evaluations": 0,
+      "new_main_accounts": 0,
+      "new_shadow_account_runs": 0,
+      "new_source_requests": 0,
+      "alternative_unified_target_or_new_policy_computed": false,
+      "isolated_causal_fee_or_clock_loss_attribution": false,
+      "gap_is_new_CAGR_wealth_bound_or_forecast_accuracy": false,
+      "independent_forward_validation": false,
+      "investment_objective_verified": false,
       "order_authority": false
     },
     "investment_objective_verified": false

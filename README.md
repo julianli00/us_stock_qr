@@ -436,6 +436,34 @@ causality or provide independent OOS. All controls remain read
 only;the frozen learning law and all gates remain unchanged.
 Current totals are223completed configurations and zero qualifiers.
 
+A saved assessment-to-main audit adds **zero strategy trials**.
+It distinguishes recorded reference scores,admissible expert
+recommendations and actual main orders. Among2392non-month-end
+sessions,only the own-wealth ratchet expert changes its archived
+desired recommendation:2258change events and2320days differing
+from the prior nominal decision's recommendation. These are not
+native requests or executable same-close trades;the protection
+state belongs to its source shadow book,not main capital.
+
+With positive recorded nominal capital,the ten-year paths have
+1664intramonth recommendation-change days;1607have no main
+model order. Five-year counts are718and692. Nevertheless,
+among113/59matched mature complete months,the counts of a
+source assessment gain with an actual main loss
+are only0/1/0/1in ten-year base/stress and five-year base/stress.
+Mean main-minus-source log-relative gaps are
+-0.5805/-3.1964/-2.6807/-9.2102log basis points per matched
+month,not fee shares,new CAGR or a forecast-accuracy claim.
+
+All four worst drawdowns share the2021-12-27peak and
+2022-10-14trough. First15%breaches occur on2020-03-12for
+ten-year paths and2022-05-09for five-year paths;all those
+breach/trough observations have zero main orders and fees.
+This does not isolate a causal clock or fee effect. No daily
+refresh alternative is simulated or selected. All7532formal
+days,initial fees,warmups and boundary partial intervals remain;
+the same223completed verdicts and zero qualifiers are unchanged.
+
 The [new frozen protocol](research/workbench/config/dual-benchmark-v1.json)
 requires every original ten/five-year base/stress path to have net Sharpe above
 1, net CAGR above 12%, drawdown at most 15%, and beat full-capital matched-cost
