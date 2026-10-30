@@ -276,6 +276,79 @@ The authoritative journal has502events,45registrations,
 42completed reviews,three technical failures,zero pending,
 168funded paths and220combined completions,with zero qualifiers.
 
+## Saved active versus absolute risk diagnosis
+
+The zero-trial diagnosis completed **2026-10-30T06:14:37.348659Z**.
+Analysis intent
+`31854604152d67d9406fd9c4b41d9447946693726f3d9581d6f1a79ed2076a65`
+bound760source references and five implementation/validation references
+before deriving actual risk results. The existing strict scalar-report
+Adapter is reused;the frozen analysis and all original source files
+remain unchanged. Private diagnostic and summary hashes are
+`b992855b6da7f95ad6d4c3dac590956f126697c4058e555a356fb73dc5c30df5`
+and`886fa646280538d8ec61e0dc17aa0a875982efbac8001076dac1f430ec3d04fb`.
+
+All121saved decisions remain,including seven explicitly unmatured
+records. The equal control uses its actual equal-expert vector,not
+the rolling vector or rolling score embedded in the shared original
+audit. Original pair weights and selection scores are read unchanged.
+For114mature decisions,the same84training/42validation observations
+produce684rule/segment risk records,each compared with the original
+NETSPY/QQQ scoring books. All12already completed main accounts are
+separately compared with their matched-cost,matched-calendar benchmarks.
+
+Portfolio RF-excess variance is benchmark RF-excess variance plus
+active-return variance and twice their signed covariance. The1392
+sample identities agree to a maximum annualized residual1.91e-16;
+the independent scalar covariance difference is at most2.17e-19.
+This is an accounting identity,not1392independent trials or a
+drawdown guarantee. RF-excess volatility and the original reported
+raw-NET volatility are explicitly different measures.
+
+| Comparison with saved RF-pair control | Training windows | Validation windows |
+|---|---:|---:|
+| Higher absolute RF-excess volatility | 59/114 | 61/114 |
+| Lower absolute RF-excess volatility | 26/114 | 24/114 |
+| Identical weights and absolute volatility | 29/114 | 29/114 |
+| Median absolute-volatility increase, percentage points | 1.6668 | 1.0713 |
+| Lower QQQ tracking risk but higher absolute volatility | 52/114 | 48/114 |
+| Lower SPY tracking risk but higher absolute volatility | 26/114 | 26/114 |
+
+Relative to equal weighting,absolute volatility is higher in83training
+and85validation windows,with median increases4.4235and4.5137percentage
+points. The active score is a return-to-tracking-risk heuristic,not
+a minimization of tracking error or an absolute-risk constraint.
+
+The actual saved accounts show why these measures cannot be substituted:
+
+| Path | RF-pair absolute RF volatility | Active-score absolute RF volatility | RF-pair QQQ tracking risk | Active-score QQQ tracking risk |
+|---|---:|---:|---:|---:|
+| 10y base | 13.3109% | 16.4348% | 16.5367% | 15.5883% |
+| 10y stress | 13.3667% | 16.4426% | 16.5127% | 15.5686% |
+| 5y base | 13.6717% | 16.3043% | 17.4318% | 18.2713% |
+| 5y stress | 13.6825% | 16.3574% | 17.4310% | 18.3008% |
+
+On ten-year base,QQQ RF-excess beta rises from0.4054to0.5266and
+the negative benchmark/active covariance offset weakens. Thus lower
+active variance coexists with higher total variance. Five-year
+tracking risk also increases;the heuristic does not uniformly lower
+tracking error. All four active-score absolute volatilities exceed
+both saved controls.
+
+The26positive saved active scores have validation absolute RF-excess
+volatility median15.2395%and maximum33.0671%. Their median SPY
+RF-excess beta is1.1316;beta above1is sensitivity,not evidence of
+borrowing or a replacement for the preserved gross-exposure check.
+These descriptive overlapping windows do not isolate drawdown
+causality,justify a post-outcome cutoff or validate another policy.
+
+No source acquisition,score/ranking,target,shadow or main-account
+pipeline is replayed. The journal remains502events,45registrations,
+42completed reviews,three technical failures,zero pending and168funded
+paths:220combined completions,zero qualifiers. Original financial
+gates and all12saved rejections remain intact. No next economic
+policy,pool or risk parameter has been selected.
+
 ## Initial benchmark command
 
 From the SSD workspace root:

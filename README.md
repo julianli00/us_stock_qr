@@ -199,6 +199,31 @@ This rejects the frozen heuristic,not the unchanged acceptance
 criteria or the experts' technical validity. Current totals are
 220completed configurations and zero qualifiers.
 
+A subsequent saved-book risk diagnosis adds **zero strategy trials**.
+It preserves all121decisions and seven warmup records,then compares
+the three saved policies on114identical matured84/42windows.
+Against the RF-pair control,the active-score policy has higher absolute
+RF-excess volatility in59training and61validation windows;29choices
+have identical weights. Its tracking risk against QQQ is lower while
+absolute risk is higher in52training and48validation windows.
+Equal-control weights are read separately from the rolling weights
+and scores embedded in the same original audit file.
+
+The actual ten-year base account illustrates the distinction:QQQ
+tracking risk falls from16.5367%to15.5883%,while absolute RF-excess
+volatility rises from13.3109%to16.4348%. Benchmark covariance becomes
+less negatively offsetting;lower active variance alone does not bound
+total risk. Five-year tracking risk also rises,so the change does not
+uniformly reduce tracking error. All12saved main books and1392sample
+variance identities are checked without generating new rankings,
+targets,shadows or capital accounts.
+
+These are descriptive,overlapping exposed-history observations,not
+independent trials,isolated drawdown causality or a proposed new risk
+cutoff. The final gates and every rejection remain unchanged. No next
+economic policy is selected;the completed total remains220with zero
+qualifiers.
+
 The [new frozen protocol](research/workbench/config/dual-benchmark-v1.json)
 requires every original ten/five-year base/stress path to have net Sharpe above
 1, net CAGR above 12%, drawdown at most 15%, and beat full-capital matched-cost

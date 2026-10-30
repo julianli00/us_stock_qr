@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-30",
-  "phase": "dual_relative_rule_rejected",
-  "active_research_focus": "select_next_independent_expert_layer_question_after_active_objective",
+  "phase": "active_absolute_risk_diagnosis_completed",
+  "active_research_focus": "select_next_independent_expert_layer_question_after_risk_diagnosis",
   "research_mainline": {
     "id": "strategy_expert_pool_and_rolling_meta_v1",
     "user_directed": true,
@@ -665,6 +665,69 @@
       "negative_minimum_four_active_scores": 88,
       "investment_objective_verified": false,
       "independent_forward_validation": false
+    },
+    "saved_active_absolute_risk_diagnosis": {
+      "actual_completed_at_utc": "2026-10-30T06:14:37.348659Z",
+      "private_diagnostic_sha256": "b992855b6da7f95ad6d4c3dac590956f126697c4058e555a356fb73dc5c30df5",
+      "private_summary_sha256": "886fa646280538d8ec61e0dc17aa0a875982efbac8001076dac1f430ec3d04fb",
+      "preanalysis_intent_sha256": "31854604152d67d9406fd9c4b41d9447946693726f3d9581d6f1a79ed2076a65",
+      "source_input_references_unchanged": 760,
+      "implementation_and_validation_references_unchanged": 5,
+      "source_decisions_preserved": 121,
+      "analysis_mature_decisions": 114,
+      "explicit_unmatured_decisions": 7,
+      "saved_policies_compared": 3,
+      "rule_segment_risk_records": 684,
+      "already_completed_main_books": 12,
+      "checked_variance_identities": 1392,
+      "maximum_annualized_identity_residual": 1.9125326322644298e-16,
+      "maximum_independent_scalar_covariance_difference": 2.168404344971009e-19,
+      "equal_control_uses_equal_not_embedded_rolling_vector_or_score": true,
+      "training_vs_saved_RF_pair": {
+        "absolute_RF_volatility_higher": 59,
+        "absolute_RF_volatility_lower": 26,
+        "identical_weights_and_RF_volatility": 29,
+        "median_absolute_volatility_difference": 0.0166680338329704,
+        "lower_QQQ_tracking_but_higher_absolute_volatility": 52,
+        "lower_SPY_tracking_but_higher_absolute_volatility": 26
+      },
+      "validation_vs_saved_RF_pair": {
+        "absolute_RF_volatility_higher": 61,
+        "absolute_RF_volatility_lower": 24,
+        "identical_weights_and_RF_volatility": 29,
+        "median_absolute_volatility_difference": 0.010713155967425607,
+        "lower_QQQ_tracking_but_higher_absolute_volatility": 48,
+        "lower_SPY_tracking_but_higher_absolute_volatility": 26
+      },
+      "training_validation_absolute_volatility_higher_than_equal": [83, 85],
+      "all_four_actual_dual_relative_RF_volatilities_higher_than_both_controls": true,
+      "actual_ten_year_base_RF_excess_volatility": {
+        "saved_RF_pair": 0.1331094312658229,
+        "dual_relative": 0.1643479887443846
+      },
+      "actual_ten_year_base_QQQ_tracking_risk": {
+        "saved_RF_pair": 0.16536658016064515,
+        "dual_relative": 0.1558828126259524
+      },
+      "positive_saved_dual_score_validation": {
+        "decisions": 26,
+        "median_absolute_RF_volatility": 0.15239473407946258,
+        "maximum_absolute_RF_volatility": 0.33067113220285776,
+        "median_SPY_RF_excess_beta": 1.1315788301070357
+      },
+      "original_scores_weights_targets_or_accounts_recomputed": false,
+      "new_strategy_evaluations": 0,
+      "new_main_accounts": 0,
+      "new_shadow_account_runs": 0,
+      "new_source_requests": 0,
+      "primary_financial_rejections_unchanged": true,
+      "variance_identity_proves_drawdown_or_financial_acceptance": false,
+      "overlapping_windows_are_independent_trials": false,
+      "isolated_causal_performance_attribution": false,
+      "next_economic_rule_or_pool_selected": false,
+      "independent_forward_validation": false,
+      "investment_objective_verified": false,
+      "order_authority": false
     },
     "investment_objective_verified": false
   },
