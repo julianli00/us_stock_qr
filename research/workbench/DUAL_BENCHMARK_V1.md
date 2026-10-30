@@ -20,6 +20,52 @@ inception date. Raw documents, prices and daily account ledgers remain private.
 The original bundle's README and manifest remain byte-for-byte unchanged; this
 separate document describes the new protocol without rewriting that history.
 
+## Latest main-headroom stress controller: terminal preparation failure
+
+The [retained failure record](evidence/expert_headroom_stress_20261030_preparation_failure_v1.json)
+contains two registered complete policies under one new controller construction,
+not two independent alpha discoveries or new economic factors. The exact saved
+six-expert online-growth and ordered-basket nominal streams are reused, rather
+than choosing archive return winners or rerunning their learning and accounts.
+Implementation/input freeze
+`fd271320950f5dce60180ba8c2ffccd8bcb5c1fa98ebde24b711024704142812`
+bound172code dependencies,143policies and950source references before real probes.
+
+The proposed monthly controller uses actual net main NAV and its continuous
+fresh-capital peak, not a source shadow or rolling-window peak. Its stress horizon
+runs through the next genuine month-end review's original delayed execution.
+All overlapping same-horizon adjusted-price scenarios in126known returns bound
+a non-BIL fraction; removed weight goes to actual BIL. Both upper and lower
+affine bounds are retained. The current-close cost allowance is not a charged
+fee or future-open cost ceiling. Empty intervals mean explicitly infeasible
+funding standby, not successful risk protection. Original holding bands, delays
+and gaps can still exceed the reference horizon or loss.
+
+| Policy source role | Actual registration UTC | Actual terminal failure UTC | Funded paths |
+| --- | --- | --- | ---: |
+| Online NET log-growth | 2026-10-30T16:26:12.620644Z | 2026-10-30T16:26:18.838661Z | 0 |
+| Ordered NET path-admissible baskets | 2026-10-30T16:26:12.872539Z | 2026-10-30T16:26:19.395530Z | 0 |
+
+Both registrations preceded the first historical-price stress preparation.
+Only the four declared synthetic capital states were probed; no actual new
+main wealth or issued-target path was precomputed. After451complete saved
+certificates for the first role, the independent maximum-fraction/contradiction
+certificate check failed. The second role was terminated by that shared
+preparation failure before its own preparation started. Failed comparison
+operands were not saved, so their magnitude and exact numerical cause remain
+unknown. Passing synthetic checks are not a completed target proof.
+
+The first52focused tests passed, but that does not overrule the actual
+preparation failure. A prior guarded child-cwd refusal occurred before any
+registration or scientific preparation and is retained separately; there was
+one actual scientific preparation run. Frozen code, tolerances, all failures
+and the partial file are unchanged; this version is not retried. No actual
+funded path or new CAGR, Sharpe, drawdown, turnover or fee estimate exists.
+Journal556now has52registered SSD identities,46completed reviews,sixtechnical
+failures,zero pending and184funded paths:224combined completions,zero qualifiers.
+The original ledger, all source outcomes and prospective one-day/null-metric
+identities remain unchanged. No investment-goal completion is claimed.
+
 ## Current additional expert admission, not a financial pass
 
 The [cross-asset defensive expert admission](evidence/legacy_defensive_rotation_expert_20261030_admission_v1.json)

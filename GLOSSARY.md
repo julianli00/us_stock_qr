@@ -82,6 +82,11 @@ specified loss limit relative to its retained peak. It is not idle cash, availab
 buying power or a guarantee against a later breach.
 _Avoid_: Cash balance, guaranteed protection
 
+**Stress reference loss (压力参照损失)**:
+The loss assigned to a portfolio under an observed or specified stress scenario.
+It is not a forecast of the next return or a guaranteed maximum future loss.
+_Avoid_: Realized main loss, future drawdown guarantee
+
 **Final portfolio qualification (最终组合资格)**:
 Joint satisfaction of every required performance and operating constraint across
 all formal paths of the same frozen portfolio rule.

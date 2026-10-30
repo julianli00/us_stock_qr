@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_expert_headroom_stress_20261030_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "prior_completed_configurations": 224,
+  "prior_new_registered_candidates": 50,
+  "prior_new_completed_strategy_evaluations": 46,
+  "prior_new_technical_failures": 4,
+  "prior_journal_sequence": 552,
+  "prior_journal_head_sha256": "e56b8138eaf88267def7882a36a796425ed539c98bfbdd3829b07c548f39ec24",
+  "dependency_registration": {
+    "path": "evidence/expert_path_baskets_20261030_registration_v1.json",
+    "sha256": "39b22687654299993902ce18a65cc63fb3ca4206af3b95cd5ea60a54cba3fe0e"
+  },
+  "source_registrations": {
+    "expert_pool_six_online_log_growth_v1": {
+      "path": "evidence/expert_online_log_growth_20261030_registration_v1.json",
+      "sha256": "685ffb40a1ce3975be262418c7928822e6ed116c7d432467d75fca80802c2767"
+    },
+    "expert_pool_six_path_admissible_baskets_v1": {
+      "path": "evidence/expert_path_baskets_20261030_registration_v1.json",
+      "sha256": "39b22687654299993902ce18a65cc63fb3ca4206af3b95cd5ea60a54cba3fe0e"
+    }
+  },
+  "source_results": {
+    "expert_pool_six_online_log_growth_v1": {
+      "path": "evidence/expert_online_log_growth_20261030_results_v1.json",
+      "sha256": "c1af8346df70d4b16b8651c4bc3ecaf2cb29a3428730be939acbd25130396211"
+    },
+    "expert_pool_six_path_admissible_baskets_v1": {
+      "path": "evidence/expert_path_baskets_20261030_results_v1.json",
+      "sha256": "c7513c38188df9fe1cc84dfcc64e861c57cf30dcd381d8c6fce4a3fad2948b14"
+    }
+  },
+  "nominal_sources": {
+    "expert_pool_six_online_log_growth_v1": {
+      "path": "data/ssd-expert-online-log-growth-20261030-v1/targets.csv",
+      "sha256": "fc60f51ee70f34cae9e3874677f897f3d52415444c66cc6889e7edb8d21fb4e1"
+    },
+    "expert_pool_six_path_admissible_baskets_v1": {
+      "path": "data/ssd-expert-path-baskets-20261030-v1/targets.csv",
+      "sha256": "d6f60a12c677f85ee0bcc33bf8ff58e057715f5f90cab9d5b62d32db17c510e6"
+    }
+  },
+  "motivation_saved_diagnosis": {
+    "path": "reports/ssd-continuous-research-v1/expert-main-risk-reference-diagnosis-20261030-v1/summary-v1.json",
+    "sha256": "b36bce23c19c62ae4f80729ea6216f8f7cc8a35846cc905ce6d10dcdb59caddf"
+  },
+  "main_initial_capital_usd": 10000,
+  "retained_peak_floor_fraction": 0.85,
+  "original_drawdown_limit": 0.15,
+  "stress_lookback_return_sessions": 126,
+  "stress_price_observations": 127,
+  "stress_horizon": "next_session_through_first_future_month_end_plus_original_delay_inclusive",
+  "stress_scenarios": "all_overlapping_horizon_adjusted_close_ratios",
+  "controller_decision_clock": "actual_initial_anchor_and_completed_exchange_month_ends_only",
+  "main_peak_updated_each_actual_close": true,
+  "current_close_cost_allowance": "NAV_times_current_gross_plus_0.98_times_bps_plus14fixed_tickets",
+  "allowance_fixed_asset_tickets": 14,
+  "commission_per_order": 1.0,
+  "maximum_fraction": 1.0,
+  "minimum_fraction": 0.0,
+  "infeasible_mode": "BIL_funding_standby_with_contradiction_witness_not_success",
+  "short_initial_history_mode": "unscored_BIL_funding_standby",
+  "actual_weight_trade_band": 0.025,
+  "cash_reserve": 0.02,
+  "invested_target_budget": 0.98,
+  "independent_fractional_tolerance": 1e-10,
+  "independent_money_state_tolerance_usd": 1e-6,
+  "target_budget_tolerance": 1e-12,
+  "final_issued_targets_precomputed_before_accounts": false,
+  "new_economic_factor_definitions": 0,
+  "new_shadow_account_runs": 0,
+  "new_shadow_recommendation_artifacts": 0,
+  "new_source_requests": 0,
+  "minimum_economic_factor_families": 3,
+  "candidate_count_in_this_study": 2,
+  "study_size_is_a_total_research_quota": false,
+  "candidates": [
+    {
+      "id": "expert_pool_six_online_headroom_stress_v1",
+      "source_candidate_id": "expert_pool_six_online_log_growth_v1"
+    },
+    {
+      "id": "expert_pool_six_path_baskets_headroom_stress_v1",
+      "source_candidate_id": "expert_pool_six_path_admissible_baskets_v1"
+    }
+  ],
+  "methodology": {
+    "question": "Can monthly actual-main headroom and an observed asset-stress envelope retain growth more efficiently on two fixed allocator roles without transferring source risk references?",
+    "source_roles_selected_as_archive_return_winners": false,
+    "reference_stress_loss_is_next_return_forecast": false,
+    "main_drawdown_guarantee": false,
+    "source_shadow_wealth_or_peak_imported": false,
+    "cost_allowance_deducted_as_actual_fee": false,
+    "cost_allowance_is_future_open_cost_cap": false,
+    "future_calendar_is_future_price_information": false,
+    "old_fixed_daily_ratchet_repaired_or_retuned": false,
+    "frequency_or_fee_difference_is_isolated_causal_experiment": false,
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

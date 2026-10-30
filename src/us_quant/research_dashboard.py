@@ -447,11 +447,12 @@ def ssd_first_pair(inputs: PublishedInputs, node: dict) -> dict:
 
 
 def ssd_preparation_failure(inputs: PublishedInputs, item: dict, node: dict, packet: dict) -> dict:
-    expected_stage = (
-        "expert_full_covariance_preparation"
-        if item["study_id"] == "ssd_expert_full_covariance_risk_budget_20261030_v1"
-        else "ordered_path_preparation"
-    )
+    expected_stage = {
+        "ssd_expert_full_covariance_risk_budget_20261030_v1":
+            "expert_full_covariance_preparation",
+        "ssd_expert_headroom_stress_20261030_v1":
+            "expert_headroom_stress_transition_preparation",
+    }.get(item["study_id"], "ordered_path_preparation")
     if (
         packet.get("schema_version") != 3
         or packet.get("record_type") != "registered_preparation_failure"

@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-30",
-  "phase": "main_risk_reference_diagnosis_completed",
-  "active_research_focus": "select_next_independent_expert_layer_question_after_saved_main_risk_reference_diagnosis",
+  "phase": "expert_headroom_stress_preparation_failed",
+  "active_research_focus": "select_next_independent_expert_layer_question_after_terminal_headroom_stress_preparation_failure",
   "research_mainline": {
     "id": "strategy_expert_pool_and_rolling_meta_v1",
     "user_directed": true,
@@ -1404,6 +1404,58 @@
       "investment_objective_verified": false,
       "order_authority": false
     },
+    "expert_headroom_stress_study": {
+      "terminal_failure_evidence": "research/workbench/evidence/expert_headroom_stress_20261030_preparation_failure_v1.json",
+      "terminal_failure_evidence_sha256": "8bf057fccb9a85363862d6a8248efdf4f8b3463f1afd5afee282d8adf659e2f8",
+      "private_failure_evidence_sha256": "24da214ceabd5340a2099061fdaebe151f0e75502e407fa2f7a01cacd9e53557",
+      "frozen_specification_sha256": "959db43a7715a3322158d4b4817fa89160ef199b50d2b4515cc2b94a66b97e01",
+      "implementation_and_input_freeze_intent_sha256": "fd271320950f5dce60180ba8c2ffccd8bcb5c1fa98ebde24b711024704142812",
+      "complete_strategy_expert_representatives": 6,
+      "new_controller_families": 1,
+      "new_financial_rules": 2,
+      "new_independent_economic_factors": 0,
+      "source_roles_selected_as_archive_return_winners": false,
+      "source_nominal_target_bytes_reused": true,
+      "source_target_fit_learning_or_account_pipelines_replayed": false,
+      "proposed_feedback_clock": "actual_initial_anchor_and_completed_exchange_month_ends_only",
+      "proposed_main_peak": "continuous_actual_net_main_peak_including_fresh_10000",
+      "proposed_stress_lookback_return_sessions": 126,
+      "proposed_review_horizon": "next_session_through_first_future_month_end_plus_original_delay_inclusive",
+      "historical_stress_is_future_loss_or_drawdown_guarantee": false,
+      "cost_allowance_is_charged_fee_or_guaranteed_future_open_cap": false,
+      "complete_local_code_dependencies": 172,
+      "complete_policy_dependencies": 143,
+      "source_references_frozen": 950,
+      "first_actual_focused_tests_passed": 52,
+      "actual_registered_at_utc": [
+        "2026-10-30T16:26:12.620644Z",
+        "2026-10-30T16:26:12.872539Z"
+      ],
+      "actual_terminal_failure_at_utc": [
+        "2026-10-30T16:26:18.838661Z",
+        "2026-10-30T16:26:19.395530Z"
+      ],
+      "failure_stage": "expert_headroom_stress_transition_preparation",
+      "failure_reason": "The maximum-fraction or contradiction witness changed.",
+      "retained_complete_synthetic_probe_records": 451,
+      "first_source_role_preparation_failed": true,
+      "second_source_role_preparation_started": false,
+      "failed_probe_operands_persisted": false,
+      "exact_numerical_discrepancy_known": false,
+      "scientific_preparation_runs": 1,
+      "guarded_preflight_refusals_before_any_registration": 1,
+      "target_proof_completed": false,
+      "actual_funded_paths_completed": 0,
+      "new_strategy_evaluations": 0,
+      "new_shadow_account_runs": 0,
+      "new_source_requests": 0,
+      "new_financial_metrics_turnover_orders_or_fees_available": false,
+      "frozen_rules_or_tolerances_changed_after_failure": false,
+      "registered_failure_retried": false,
+      "investment_objective_verified": false,
+      "independent_forward_validation": false,
+      "order_authority": false
+    },
     "investment_objective_verified": false
   },
   "research_dashboard": {
@@ -1522,11 +1574,11 @@
       "sha256": "ccff66c847db6519132775a177268c03d7ec36491076380be01d01f41589287d"
     },
     "aggregate_counts": {
-      "registered": 50,
+      "registered": 52,
       "completed": 46,
       "reviews": 46,
       "pending": 0,
-      "technical_failures": 4,
+      "technical_failures": 6,
       "qualified": 0,
       "account_paths": 184,
       "total_legacy_plus_ssd_completed": 224
@@ -1819,6 +1871,14 @@
         "results": "research/workbench/evidence/expert_path_baskets_20261030_results_v1.json",
         "results_sha256": "c7513c38188df9fe1cc84dfcc64e861c57cf30dcd381d8c6fce4a3fad2948b14",
         "preregistration_commit": "3d5c5d1980bb48e9b6f5d787024b2335d2018aee"
+      },
+      {
+        "study_id": "ssd_expert_headroom_stress_20261030_v1",
+        "registration": "research/workbench/evidence/expert_headroom_stress_20261030_preparation_failure_v1.json",
+        "registration_sha256": "8bf057fccb9a85363862d6a8248efdf4f8b3463f1afd5afee282d8adf659e2f8",
+        "results": null,
+        "results_sha256": null,
+        "preregistration_commit": null
       }
     ],
     "status": "first_pair_complete_both_rejected",
@@ -1870,6 +1930,7 @@
     "order_authority": false
   },
   "completed": [
+    "2026-10-30 monthly actual-main headroom stress V1 froze one controller on two fixed six-expert source roles,then registered both before synthetic-capital historical stress preparation. Independent interval certificate failure terminated both identities with451partial certificates retained;second source-role preparation and all funded accounts unstarted. Frozen code/tolerances unchanged,no retry. Journal556:52SSDregistrations/46completions/6technical/0pending/184funded paths;224combined completions/0qualifiers,not investment-goal completion.",
     "Preserved runnable incumbent strategy/engine and early-scanner source alongside the isolated 52-configuration workbench.",
     "Verified 50 target integration tests and 357 isolated workbench tests; original strategy functions and synthetic weight matrices match.",
     "Verified one status-only Slack receipt and the new guarded scheduler; the old KeepAlive service is disabled.",
@@ -2157,6 +2218,7 @@
     "Fixed tenth reciprocal construction maximizes observed opportunity within causal smaller-SPY/QQQ tail budget floored by actualBILrisk;no riskmultiplier/hurdle/window/core grid. Registered2026-10-28T05:46:36.615636Z before122certifiedplans (112optimal/10nonpositive),5prefixes andfull6factorcoverage. Actualprereg1074904478bfd0ba2a19d502c479ebd2de13c227 precedes4fundedpaths finished05:54:28.534515Z. Rejected:10ybase/stress,5ybase/stressCAGR12.9292/11.4123/16.5627/14.9118%,Sharpe0.6781/0.5922/0.7818/0.6907,DD26.4086/27.0756/26.6875/27.3277%.AllDD/Sharpe/QQQfail,3CAGRpass andonly5ySPYpass.10SSDcomplete40paths188combined0qualifiers,118events;originalrecordsunchanged. No splicing ninthdrawdown withtenthreturns."
   ],
   "completed_zh": [
+    "2026-10-30月度实际主账户余量压力V1将一种控制器固定到两条既有六专家角色，先冻结再登记两条规则，之后仅做虚拟资本状态的历史压力证书准备。独立区间证书不一致使两身份技术终止，保留451条部分证书；第二来源角色未开始准备，全部资金账户未启动。冻结代码/容差不改、不重试。日志556：SSD52登记/46完成/6技术失败/0待评估/184资金路径，合计224完成/0通过，不是投资目标完成。",
     "已保留可运行的原Top30算法、成本引擎和独立早期扫描器，并隔离导入52配置研究工作台。",
     "目标整合50项测试及独立研究357项测试通过；原算法函数与五组完整合成权重矩阵保持等价。",
     "已验证一条仅状态Slack回执及新定时任务；旧常驻心跳服务已停用，未改变持仓或Discord任务。",
@@ -2444,14 +2506,14 @@
     "第10项固定相反优先级：在当时较低SPY/QQQ尾部预算（以实际BIL风险作底）内最大化已观测机会，不扫风险倍率/旧门槛/窗口/核心参数。2026-10-28T05:46:36.615636Z真实登记先于122有证书计划（112优化/10非正机会），5前缀及完整6家族覆盖通过。先发布1074904478bfd0ba2a19d502c479ebd2de13c227，再于05:54:28.534515Z完成4资金路径并拒绝。依次十年base/stress、五年base/stress净CAGR12.9292/11.4123/16.5627/14.9118%，Sharpe0.6781/0.5922/0.7818/0.6907，DD26.4086/27.0756/26.6875/27.3277%；回撤/夏普/QQQ全失败，3条CAGR过且仅五年胜SPY。SSD10完成/40路径/合计188/0通过、118事件，原记录不变；不得拼接第9项回撤与第10项收益。"
   ],
   "next": [
-    "Preserve39registered SSD identities:36completed/reviewed,3technical failures,0pending,144funded paths,214combined completions and0qualifiers fromunchanged432journal events. This additional expert admission adds0trials/accounts/sources/definitions and doesnotchange any oldresult or one-day forwardmodel.",
-    "Existing common-quarter profit-SHARE/dollar complete policy technicallyadmitted2026-10-30T00:24:25.009540Z with trueOct12registration kept.557inputs/520frozenfiles/225cachedcausalqueries/131nominalrows/4cachedNET-BTbooks/12assetRFexact14 alignment valid;sourcefinancialrejectionretained. No source selector/target/account/verifierentrypoint rerun. Aggregateprofit-outputproxy notcompanymargin orindependentfactor;intraday/fullmethodchain unverified. Nextpool/ranking/weights NOTfrozen;choose and preregister a controlled expert-pool study beforenewoutcomes. Loadcachedadmissionrefs via existingmonthlyAdapter,not completedadmissionmain.",
+    "Preserve52registered SSD identities:46completed/reviewed,6technical failures,0pending,184funded paths,224combined completions and0qualifiers from556journal events. Latest two headroom-stress identities are terminal preparation failures,not new financial evaluations;all prior outcomes and one-day forward models remain unchanged.",
+    "Headroom-stress V1 is closed:451partial synthetic-capital certificates retained;independent interval check failed in first source role,second role preparation unstarted,zero funded accounts. Do not retry or edit frozen rules/tolerances,rerun old source pipelines or infer failed operands that were not saved. Select a genuinely independent expert-layer question before any new design/freeze/registration;none is selected by this failure record.",
     "Continue economically motivated, preregistered independent small batches without ordinary per-batch approval or a configuration-count ceiling until2026-10-31T15:59Z. Use one computation; at cutoff preserve partial work, clear only the SSD session timer and confirm absence.",
     "Keep old source refusals, VIG/SDY terminal429 and prospective/PIT gates. The independent market-only IBKR adapter is proved, but the one actual probe stopped on2157 before historical requests;0history rows/admissions,no automatic retry or inferred entitlement denial. Default readonly account synchronization remains prohibited."
   ],
   "next_zh": [
-    "保留SSD39个登记身份：36项完成审阅、3项技术失败、0待评估，144资金路径、合计214完成、0通过，来自保持不变的432条日志。新增专家准入不增加策略试验、账户、来源或因子定义，不改变任何旧结果或一天前瞻模型。",
-    "已有同季度利润份额/美元确认完整策略于2026-10-30T00:24:25.009540Z技术准入，原Oct12登记时间保留。557输入/520冻结文件/225缓存因果查询/131名义目标/4套缓存净账户-BT/原12资产RF对齐14均有效，原财务拒绝保持。不重跑来源选择、目标、账户或历史verifier入口；利润/产出总量代理不是公司利润率或独立因子，日内首发/完整历史方法链仍未验证。下一个专家池/排名/权重规则尚未冻结，须在新结果前事前登记；未来从缓存准入引用和既有月度Adapter加载，不重复本次准入main。",
+    "保留SSD52个登记身份：46项完成审阅、6项技术失败、0待评估，184资金路径、合计224完成、0通过，来自556条真实日志。最新两条主账户余量压力身份是准备技术失败，不是新增财务评估；全部旧结果和一天前瞻模型保持。",
+    "主账户余量压力V1已终止：保留451条虚拟资本部分证书；第一来源角色独立区间检查失败，第二角色未开始准备，资金账户0。不得重试或修改冻结规则/容差、重跑旧来源管线，也不得推断未保存的失败操作数。下一步须先选真正独立的专家层问题；本次失败记录尚未选择新的设计或模型。",
     "持续开展有经济理由、事前冻结的独立小批次，无普通逐批确认或配置次数上限，截止2026-10-31T15:59Z；单计算job，届时保存未完状态、只清除SSD会话timer并确认不存在。",
     "原拒绝来源、VIG/SDY终止429和前瞻/PIT门保持。独立IBKR market-only适配器已证明，但唯一真实探针在历史请求前因2157停止；历史行/准入0，不自动重试或推断订阅拒绝，仍禁止默认readonly账户同步。"
   ],
