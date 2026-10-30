@@ -697,6 +697,107 @@ pending and176funded paths:222combined completions,zero
 qualifiers. No risk hierarchy,window,tie,capital split or
 acceptance gate is retuned after these outcomes.
 
+## Saved hierarchy capital and opportunity audit
+
+The zero-trial audit completed **2026-10-30T10:51:38.299233Z**.
+Its pre-derivation intent
+`c8cb99b202abbd3779b6d64892da4cd0e0570109370414162c43e8ceef195a2e`
+bound930source references,two implementation/test files and
+three validation artifacts before new findings. Diagnostic and
+summary hashes are
+`273763b43cbd0fe3afaba0c92f4672e8e6a06bef10b97f136c70b03418be1791`
+and`7b323fc574a48283a2799505c6e1f6c68f84ca19d719a088aa0cae166802ddc1`.
+No model,source shadow,ranking,target,main account,benchmark or
+old analysis pipeline is replayed.
+
+### Nominal capital is not realized asset profit
+
+All121saved allocations remain,separating seven explicitly
+unscored decisions from114mature estimates. The analysis reads
+the stored covariance diagonals;it does not fit covariance again.
+Exact maximum-weight and minimum-variance ties are retained.
+
+| Complete expert | Mean mature capital | Maximum capital | Largest-capital memberships | Smallest-stored-variance memberships |
+|---|---:|---:|---:|---:|
+| Commitment | 4.951922% | 49.881203% | 0 | 1 |
+| Joint-tail opportunity | 42.417761% | 99.963694% | 57 | 60 |
+| Conditional-variance growth | 3.431138% | 17.182415% | 0 | 0 |
+| Own-wealth ratchet protection | 14.737316% | 42.718184% | 15 | 4 |
+| Dollar profit-share confirmation | 11.453087% | 34.131678% | 3 | 0 |
+| Diversified four-factor defense | 23.008776% | 66.434862% | 39 | 49 |
+
+Largest capital overlaps smallest stored variance in99of114
+mature decisions. Reciprocal capital HHI has mean3.109452,
+median3.462426and range1.000726--5.052401. This is a
+descriptive capital-concentration measure,not evidence of an
+independent factor count,a new concentration limit or a
+minimum-family violation. The original six genuine registered
+factor families per formal path remain.
+
+Recorded daily main holdings differ from nominal capital weights:
+
+| Actual path | Mean BIL | Mean GLD | Mean SOXX | Mean idle cash |
+|---|---:|---:|---:|---:|
+| 10y base | 37.829875% | 19.270513% | 11.354066% | 1.983294% |
+| 10y stress | 37.847612% | 19.198269% | 11.375683% | 2.021654% |
+| 5y base | 46.787123% | 18.661844% | 9.365817% | 1.977159% |
+| 5y stress | 46.760087% | 18.599920% | 9.369667% | 2.053917% |
+
+All14assets are accounted for. These closing-exposure averages
+are neither new targets nor expert profit shares. BIL is an ETF,
+GLD is a price-risk exposure,and neither is guaranteed protection.
+No inference that adding direct benchmark holdings would pass
+the original gates is made.
+
+### Actual held-path monetary gaps
+
+The reviewed pure14-asset bridge marks saved adjusted model units:
+prior units carry the overnight price move,and post-open units
+carry the intraday move. Actual paid costs remain separate.
+All7532formal book days,original initialUSD10000cash/zero units,
+initial deployment fees,delays,tickets and notional totals are
+retained in four private derived daily CSVs. No broker share
+quantities or new trading accounts are created.
+
+The original eight SPY/QQQ benchmark books are read with their
+actual matching calendars,costs and terminal NAV. No benchmark
+wealth is reconstructed from CAGR or substituted raw prices.
+For each comparison,the signed main-minus-benchmark terminal
+gap reconciles to the held-path price-PnL difference plus
+benchmark fees minus main fees:
+
+| Main path | Benchmark | Price-PnL difference, USD | Benchmark fees minus main fees, USD | Net terminal NAV difference, USD |
+|---|---|---:|---:|---:|
+| 10y base | SPY | -17487.73 | -1197.57 | -18685.30 |
+| 10y base | QQQ | -43551.11 | -1197.57 | -44748.68 |
+| 10y stress | SPY | -16944.35 | -2053.87 | -18998.21 |
+| 10y stress | QQQ | -42996.17 | -2053.87 | -45050.03 |
+| 5y base | SPY | -3103.62 | -494.27 | -3597.90 |
+| 5y base | QQQ | -5808.19 | -494.27 | -6302.47 |
+| 5y stress | SPY | -2497.06 | -754.01 | -3251.06 |
+| 5y stress | QQQ | -5070.43 | -754.01 | -5824.44 |
+
+Displayed terms are rounded independently. The unrounded maximum
+daily monetary identity error is USD1.0913936421275139e-11;
+maximum gap-identity residual is USD4.8203219193965197e-11,
+below the frozenUSD1e-6bound.
+
+The absolute price-PnL term is larger than the fee term in all
+eight gaps. Absolute fee-term/net-gap ratios span2.676223--23.192632%.
+Fixed commissions are75.026689/81.555648%of actual ten/five-year
+base costs,and43.087977/52.647498%under stress. Cost efficiency
+still matters,but the arithmetic is not an isolated fee effect:
+removing fees can change later holdings and wealth. Before-fee
+price PnL here is for the actual recorded path,not a fee-free
+counterfactual portfolio or a new CAGR.
+
+No main profit is attributed to overlapping expert shadow books.
+No alternative allocation is selected,no acceptance criterion is
+changed,and no independent forward validation is claimed.
+The authoritative528events,48registrations,44completed reviews,
+four technical failures,zero pending,176funded paths and222
+combined completions/zero qualifiers remain unchanged.
+
 ## Initial benchmark command
 
 From the SSD workspace root:

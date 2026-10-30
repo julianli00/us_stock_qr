@@ -354,6 +354,37 @@ causality or an assertion that cost efficiency met the objective.
 Current totals are222completed configurations and zero qualifiers.
 No hierarchy,window,cluster tie or risk coefficient is retuned.
 
+A saved-opportunity audit adds **zero strategy trials**. It reads
+the121recorded capital allocations,including seven unscored and
+114mature decisions. In99of114mature decisions,the largest
+capital coordinate overlaps the smallest stored individual variance.
+Mean capital weights are42.42%for the joint-tail opportunity
+expert and23.01%for the diversified defensive expert;the former
+reaches99.9637%at one decision. The mean reciprocal capital HHI
+is3.1095,not an independent-expert or factor count.
+
+The actual closing books are described separately. BIL averages
+37.83/37.85%in ten-year base/stress and46.79/46.76%in five-year
+base/stress;GLD averages19.27/19.20%and18.66/18.60%.
+Those are ETF holdings,not idle cash,expert shadow wealth or
+guaranteed protection. Actual idle cash averages about2%.
+All14asset contributions,7532formal days and initial fees remain.
+
+All eight matched-cost SPY/QQQ terminal dollar gaps reconcile to
+recorded held-path price-PnL differences and the difference in
+paid fees. The absolute price-PnL term exceeds the fee term in
+every comparison. The fee-term/gap magnitude ratio spans2.68--23.19%;
+it is arithmetic,not a causal share or a zero-fee portfolio.
+For ten-year base versus QQQ,the USD44748.68net shortfall
+contains USD43551.11of price-PnL difference and USD1197.57of
+fee difference. Removing costs could change later holdings and
+wealth,so no counterfactual CAGR is inferred.
+
+This diagnosis neither selects new weights nor attributes main
+profit to overlapping experts. It does not repair the hierarchy's
+financial rejection,prove independent OOS or change any gate.
+The same222completed verdicts and zero qualifiers remain.
+
 The [new frozen protocol](research/workbench/config/dual-benchmark-v1.json)
 requires every original ten/five-year base/stress path to have net Sharpe above
 1, net CAGR above 12%, drawdown at most 15%, and beat full-capital matched-cost

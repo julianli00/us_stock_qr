@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-30",
-  "phase": "expert_hierarchical_risk_rejected",
-  "active_research_focus": "select_next_independent_expert_layer_question_after_hierarchical_rejection",
+  "phase": "hierarchy_opportunity_diagnosis_completed",
+  "active_research_focus": "select_next_independent_expert_layer_question_after_saved_hierarchy_opportunity_diagnosis",
   "research_mainline": {
     "id": "strategy_expert_pool_and_rolling_meta_v1",
     "user_directed": true,
@@ -964,6 +964,82 @@
       "hierarchy_or_risk_coefficient_retuned_after_outcomes": false,
       "investment_objective_verified": false,
       "independent_forward_validation": false,
+      "order_authority": false
+    },
+    "saved_hierarchy_opportunity_diagnosis": {
+      "actual_completed_at_utc": "2026-10-30T10:51:38.299233Z",
+      "private_diagnostic_sha256": "273763b43cbd0fe3afaba0c92f4672e8e6a06bef10b97f136c70b03418be1791",
+      "private_summary_sha256": "7b323fc574a48283a2799505c6e1f6c68f84ca19d719a088aa0cae166802ddc1",
+      "preanalysis_intent_sha256": "c8cb99b202abbd3779b6d64892da4cd0e0570109370414162c43e8ceef195a2e",
+      "source_references_frozen": 930,
+      "implementation_and_validation_references_frozen": 5,
+      "nominal_decisions_retained": 121,
+      "unscored_initial_decisions": 7,
+      "mature_risk_decisions": 114,
+      "largest_capital_overlaps_smallest_stored_variance_decisions": 99,
+      "stored_covariance_diagonal_read_not_refitted": true,
+      "exact_extrema_ties_retained": true,
+      "mature_effective_capital_weight_count": {
+        "minimum": 1.0007264731298553,
+        "median": 3.462425752709123,
+        "mean": 3.109451905188296,
+        "maximum": 5.052400963712095
+      },
+      "effective_weight_count_is_independent_factor_count": false,
+      "mature_expert_mean_capital_weights": {
+        "equity_first_month_end_commitment_v1": 0.0495192160730752,
+        "benchmark_opportunity_joint_tail_v1": 0.42417760710858554,
+        "symmetric_garch_growth_bil_v1": 0.03431138370849669,
+        "semiconductor_ratchet_protection": 0.1473731558951453,
+        "semiconductor_option_dollar_profit_share_confirmation": 0.11453087294796942,
+        "four_factor_defense_diversified": 0.23008776426672775
+      },
+      "maximum_joint_tail_opportunity_capital_weight": 0.9996369351591092,
+      "all_formal_account_days_preserved": 7532,
+      "matched_cost_benchmark_terminal_gap_bridges": 8,
+      "all_eight_absolute_price_terms_larger_than_fee_terms": true,
+      "absolute_fee_term_to_net_gap_magnitude_ratio_range": [
+        0.026762232205041737,
+        0.23192632465026386
+      ],
+      "maximum_daily_monetary_identity_error_USD": 1.0913936421275139e-11,
+      "maximum_benchmark_gap_identity_residual_USD": 4.8203219193965197e-11,
+      "actual_gap_terms_by_path": {
+        "10y-base": {
+          "SPY": [-17487.725319471032, -1197.5746973581988, -18685.30001682923],
+          "QQQ": [-43551.110247262666, -1197.5746973581988, -44748.684944620865]
+        },
+        "10y-stress": {
+          "SPY": [-16944.34783849989, -2053.866633070468, -18998.2144715704],
+          "QQQ": [-42996.16816765981, -2053.866633070468, -45050.034800730326]
+        },
+        "5y-base": {
+          "SPY": [-3103.6241719890186, -494.2749094558969, -3597.8990814449207],
+          "QQQ": [-5808.194107047495, -494.2749094558969, -6302.469016503397]
+        },
+        "5y-stress": {
+          "SPY": [-2497.057317616729, -754.0075186826176, -3251.0648362993397],
+          "QQQ": [-5070.434771077098, -754.0075186826176, -5824.442289759709]
+        }
+      },
+      "gap_term_array_order": [
+        "realized_held_path_price_PnL_difference_USD",
+        "benchmark_fees_minus_main_fees_USD",
+        "actual_terminal_NAV_difference_USD"
+      ],
+      "all_original_cost_ticket_notional_totals_preserved": true,
+      "initial_capital_and_fees_retained": true,
+      "main_PnL_attributed_to_overlapping_expert_shadows": false,
+      "fee_free_or_new_benchmark_account_computed": false,
+      "old_model_target_account_benchmark_or_verifier_pipeline_replayed": false,
+      "new_strategy_evaluations": 0,
+      "new_main_accounts": 0,
+      "new_shadow_account_runs": 0,
+      "new_source_requests": 0,
+      "new_policy_or_parameter_selected": false,
+      "isolated_causal_fee_attribution": false,
+      "independent_forward_validation": false,
+      "investment_objective_verified": false,
       "order_authority": false
     },
     "investment_objective_verified": false
