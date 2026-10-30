@@ -866,6 +866,63 @@ completions,zero qualifiers. No new main account has started.
 Actual full-dependency remote publication and its original new
 fence remain mandatory before all four formal paths.
 
+## Online NET log-growth outcome: rejected
+
+Actual remote preregistration
+`fc246cae0f2b1a687605d22f363509c3356d657d` and publication
+fence531 at **2026-10-30T11:45:06.625921Z** preceded all
+four account starts. All304code/policy dependencies,including
+26unchanged pinned original imports,and the new registration
+packet were verified before capital. The [canonical complete outcomes](evidence/expert_online_log_growth_20261030_results_v1.json)
+finished **2026-10-30T11:47:20.361063Z**.
+
+| Path | Net CAGR | RF Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Fees, USD |
+|---|---:|---:|---:|---:|---:|---:|
+| 10y base | 19.613339% | 1.008785 | 20.995138% | 2.689729x | 770 | 1041.32 |
+| 10y stress | 19.199906% | 0.987214 | 20.891081% | 2.691636x | 770 | 1845.50 |
+| 5y base | 23.606972% | 1.030923 | 21.260621% | 2.811490x | 352 | 445.02 |
+| 5y stress | 22.145098% | 0.966641 | 21.169630% | 2.807406x | 352 | 710.52 |
+
+All four net CAGR and matched-cost SPY gates pass. Both base
+RFSharpes exceed1,but both stress Sharpes do not. All four
+drawdowns exceed15%. Both ten-year matched-cost QQQ gates fail;
+both five-year QQQ gates and both extra stress-versus-base-SPY
+gates pass. Net CAGR above20%on two paths does not replace
+the joint original risk and dual-benchmark requirements.
+Neither path-level nor same-rule four-path qualification is met.
+
+Only saved scalar controls are compared;their targets,scores,
+accounts and benchmarks are not rerun. Against equal-six,
+RF-pair,dual-relative,tail-budget and hierarchy,CAGR is higher
+and total fees lower on every path. Sharpe is higher versus
+the four rolling/risk controls but lower versus equal-six on
+every path. Drawdown improves versus dual-relative only and
+worsens versus each of the other four controls throughout.
+
+Annual turnover is lower throughout versus RF-pair,dual-relative,
+tail-budget and hierarchy. It is not uniformly lower than
+equal-six:the five-year base difference is+0.011234x.
+Tickets are lower throughout versus equal-six,RF-pair,tail-budget
+and hierarchy,but exceed dual-relative by147per ten-year path
+and18per five-year path. Lower fees or traded notional therefore
+do not imply fewer model tickets,lower drawdown or qualification.
+Different exposures,timing and holdings prevent isolated fee
+causality or an independent out-of-sample interpretation.
+
+Every formal path has six genuine registered factor families.
+Minimum cash is USD184.0088869373414,maximum gross exposure
+0.9835297442751199,and maximum independentBT NAV difference is
+USD1.0913936421275139e-10. The2512ten-year and1254five-year
+return dates,actual initial fees and initialUSD10000drawdown
+peak remain. Broker orders,new source requests,new shadow runs
+and old account/control replays are zero.
+
+The authoritative journal has540events,49registrations,
+45completed reviews,four retained technical failures,zero
+pending and180funded paths:223combined completions,zero
+qualifiers. No learning rate,curvature,month clock,maturity rule,
+simplex tolerance or acceptance gate is retuned after outcomes.
+
 ## Initial benchmark command
 
 From the SSD workspace root:
