@@ -20,6 +20,62 @@ inception date. Raw documents, prices and daily account ledgers remain private.
 The original bundle's README and manifest remain byte-for-byte unchanged; this
 separate document describes the new protocol without rewriting that history.
 
+## Latest option-uncertainty expert technical admission
+
+The [cached admission](evidence/vvix_uncertainty_expert_20261030_admission_v1.json)
+completed **2026-10-30T22:58:44.381948Z** for
+`two_segment_vvix_uncertainty_confirmation_v1`. Its original registration217
+at **2026-10-28T23:58:17.764688Z**, target proof218 and complete four-path
+rejection228 remain immutable. The new technical-admission clock is separate;
+historical availability is counterfactual, not backdated live availability.
+
+The tested implementation was frozen in intent
+`f8b2c6e549c800da01705ccdea38b53e3014e3e13c3f626c8c46846ba3f2a11e`
+before the one actual8.78-second cached pass. It binds four implementation/test
+files,809source references,285import/configuration dependencies and26passed
+checks. Earlier pre-freeze test outputs,including three failures caused by
+new schema/test-name mistakes,are retained rather than erased. No frozen
+implementation,old source policy or financial result was repaired afterward.
+
+Readiness and manifest admit **fixed original archival daily closes only**:
+2805daily context sessions and131monthly opportunities are covered. The
+required information clock is **after16:15ET index close before later-open
+execution**. This does not authenticate historical intraday first publication,
+full methodology continuity,underlying quote freshness or a16:00stock-close
+trade. Original near-term VVIX nonadmission remains preserved. VVIX describes
+VIX-option uncertainty,not a traded return,crash probability or variance premium.
+
+The existing monthly Adapter loads all131genuine native targets and the
+2512saved NET observations without filling,normalization or signal/account
+replay. Four original completed-path receipts and their20artifacts are checked
+for unchanged identity and technical cash-funding evidence. Native RF exactly
+equals the active common RF as parsed by the existing
+`research_program.review_market` reader on the frozen common market; there
+is no alternate parser,RF replacement or new assessment view.
+
+All121initial/month-end observations have a known available target;114have
+a mature126-observation assessment andseven remain available but unmatured.
+The initial empty shadow history is checked without inventing a book.
+Nonempty-history prefixes end2017-03-31,2017-09-29,2021-09-30and2026-09-30.
+The12-to14asset extension represents structural zero exposures,not imputed
+prices. Cached observations contain no future target or NET return.
+
+Future callers use `ssd_vvix_expert_admission_v1.load_admitted` with the
+original asset lattice, their active common RF and the required explicit
+`decision_information_clock="after_16_15_ET_index_close_before_later_open_execution"`.
+The loader verifies the recorded immutable dependencies and real admission
+clock; unrelated future configuration additions do not redefine that scope.
+
+Seven technical representatives are now available,while the original active
+six-expert pool remains unchanged. This option-uncertainty role shares
+stock/gold/dollar exposures; its mechanism label alone does not establish
+independent alpha or a new independent-risk count. No expanded-pool policy,
+ranking,weight rule,financial configuration,source request or funded account
+is created. The separate ANFCI nonadmission is not repaired. Totals remain
+606events,58registrations,50completed reviews,eighttechnical failures,
+zero pending,200funded paths,228combined completions andzeroqualifiers.
+The investment objective and independent forward qualification remain unmet.
+
 ## Latest financing-conditions expert eligibility review
 
 The [cached review](evidence/anfci_expert_eligibility_20261030_v1.json) completed

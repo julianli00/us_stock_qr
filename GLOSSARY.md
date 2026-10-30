@@ -20,6 +20,12 @@ The ability to obtain an admissible recommendation from an expert at a particula
 decision time. It does not imply that enough observations exist to score the expert.
 _Avoid_: Qualification, future availability
 
+**Decision information clock (决策信息时钟)**:
+The information state a decision is allowed to use, including publication timing
+as well as observation dates. It is not necessarily the market close or the
+execution time.
+_Avoid_: Observation date alone, execution clock
+
 **Source admission scope (来源准入范围)**:
 The information and decision contexts for which a source has accepted evidence of
 admissibility. Approval for a restricted use does not admit every historical query,

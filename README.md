@@ -43,7 +43,30 @@ portfolio remain separate. The first fixed-pool study requires an equal-weight
 control and one causal rolling rule, without claiming that the pool or direction
 change itself has met the investment objective.
 
-The latest [financing-conditions expert eligibility review](research/workbench/evidence/anfci_expert_eligibility_20261030_v1.json)
+The [option-uncertainty expert technical admission](research/workbench/evidence/vvix_uncertainty_expert_20261030_admission_v1.json)
+completed **2026-10-30T22:58:44.381948Z**. It makes the existing
+`two_segment_vvix_uncertainty_confirmation_v1` representative available for
+a separately frozen future pool; the active six-expert pool and all financial
+counts remain unchanged. Its original four-path financial rejection is
+preserved, not a reason to discard technically valid expert evidence.
+
+The source is admitted only for fixed original archival daily closes, with
+decisions **after16:15ET before the original delayed opens**, not16:00stock-close
+execution or authenticated historical intraday PIT. All131native monthly
+targets and2512NET observations remain unchanged. All121main observations
+have a genuine available target;114have a mature126-session assessment and
+seven do not. Native RF exactly matches the unchanged active common reader
+without a replacement assessment view. Four nonempty-history prefixes and
+the initial empty history are retained. The new clock-bound loader requires
+an explicit matching information clock; no source signal or account is rerun.
+
+Seven technical representatives are now available, but no seventh-pool
+composition,ranking,weights or financial evaluation is selected by this
+admission. Stock/gold/dollar exposures overlap other experts; a different
+information mechanism is not proof of independent alpha or risk. There is
+no new return result, independent forward validation or qualified champion.
+
+The separate [financing-conditions expert eligibility review](research/workbench/evidence/anfci_expert_eligibility_20261030_v1.json)
 does **not admit** the archived ANFCI residual-confirmation policy to the
 current six-expert pipeline. All three original full-source admission flags
 remain false:225historical queries include223fresh andtwo stale observations.
