@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 44 SSD identities, 39 completed/rejected, three retained technical failures and two pending; 156 funded paths | Journal-derived current summary: 217 combined completions, zero qualifiers; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 44 SSD identities, 41 completed/rejected, three retained technical failures and zero pending; 164 funded paths | Journal-derived current summary: 219 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -132,11 +132,24 @@ decisions,all15candidate pairs and five prefix checks are preserved.
 The source admissions,views and NETshadow books are reused without
 source,target,fit or account replay.
 
-Current totals remain217completed configurations and zero qualifiers.
-These two newly registered identities have **no new main account or
-return evaluation yet**. Actual remote publication must precede all
-eight original funded paths; registration and causal target proof are
-not portfolio qualification.
+At that registration, the completed total was217with no new main account
+or return evaluation. Actual preregistration publication
+`7327fe3a68f722709c86aa00f4c19a6d6705d758` and fence472 then preceded
+all eight original funded paths,completed **2026-10-30T04:19:27.328420Z**.
+The [complete six-expert results](research/workbench/evidence/six_expert_meta_20261030_results_v1.json)
+reject both rules. Equal-weight drawdowns15.4882--15.8707%all fail;
+five-year stress Sharpe0.981488also fails,and both ten-year paths
+miss SPY and QQQ. Rolling-pair drawdowns20.3309--20.6934%,all four
+Sharpes below1and all four QQQ shortfalls likewise fail.
+
+Against the saved five-expert controls,both new rules lose CAGR and
+Sharpe on every path while turnover,orders and fees rise throughout.
+Equal weighting lowers drawdown0.1269--0.6899percentage points but
+not enough to pass. The new defensive expert appears in32of114mature
+pair choices;34choices differ from the old pool,including two without
+the new expert. These exposed comparisons do not isolate fee causality
+or prove independent forward performance. Current totals are
+219completed configurations and zero qualifiers.
 
 The [new frozen protocol](research/workbench/config/dual-benchmark-v1.json)
 requires every original ten/five-year base/stress path to have net Sharpe above

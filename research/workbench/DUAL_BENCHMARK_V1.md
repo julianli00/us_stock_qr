@@ -84,11 +84,58 @@ assessment views remain unchanged. Actual expert introduction is not
 backdated to counterfactual historicalavailability. The old five-expert
 accounts remain exposed saved controls,not newly independent evidence.
 
-No new main account has started. The journal now has471events,
+At registration,no new main account had started. Its journal had471events,
 44registrations,39completed reviews,three retained technical failures,
 two pending candidates and156funded paths:217combined completions,
 zero qualifiers. Actual full-dependency remote publication remains
 required before two rules times all four original freshUSD10000paths.
+
+## Six-expert inclusion outcome: both rejected
+
+Actual remote publication
+`7327fe3a68f722709c86aa00f4c19a6d6705d758` and publication
+fence472 at **2026-10-30T04:17:59.125679Z** preceded all eight
+new account starts. All paths completed **2026-10-30T04:19:27.328420Z**.
+The [canonical public results](evidence/six_expert_meta_20261030_results_v1.json)
+retain each strict gate and measured execution disclosure.
+
+| Rule | Path | Net CAGR | Net Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Fees, USD |
+|---|---|---:|---:|---:|---:|---:|---:|
+| Equal | 10y base | 15.255390% | 1.057337 | 15.488239% | 2.801959x | 1035 | 1289.95 |
+| Equal | 10y stress | 14.831404% | 1.023556 | 15.605168% | 2.812449x | 1046 | 2057.32 |
+| Equal | 5y base | 17.910688% | 1.052337 | 15.632873% | 2.800256x | 493 | 583.50 |
+| Equal | 5y stress | 16.892558% | 0.981488 | 15.870660% | 2.814256x | 504 | 859.79 |
+| Rolling | 10y base | 13.924601% | 0.863706 | 20.330927% | 7.050363x | 819 | 1451.19 |
+| Rolling | 10y stress | 13.270972% | 0.817451 | 20.458071% | 7.061081x | 819 | 3322.53 |
+| Rolling | 5y base | 15.429875% | 0.841077 | 20.558139% | 7.573149x | 438 | 675.11 |
+| Rolling | 5y stress | 13.664739% | 0.727319 | 20.693435% | 7.599208x | 438 | 1352.64 |
+
+Every path clears CAGR12%but fails drawdown15%. Both rules miss SPY
+and QQQ in both ten-year paths. Equal weighting also fails five-year
+stress Sharpe;rolling fails all four Sharpe and QQQ gates. The stress
+versus base-cost SPY requirements are preserved,including the rolling
+five-year stress shortfall. No passing metrics are spliced across rules.
+
+The controlled saved-five comparison adds zero extra trials or account
+runs. Both rules have lower CAGR and Sharpe on every path and higher
+turnover,tickets and fees throughout. Equal drawdowns improve by
+0.1269--0.6899percentage points but remain strictly above15%.
+Rolling drawdown improves on both base paths but worsens by0.3553and
+0.3228percentage points on ten/five-year stress paths. These are not
+isolated fee effects because exposures and execution histories differ.
+The defensive expert is selected32of114mature decisions;34pair choices
+differ from the saved five-member pool,including two without that expert.
+
+Each path uses six actual registered factor families. Minimum cash is
+USD179.92664286477293,maximum gross exposure0.9837705257147962,and
+maximum independentBT NAV difference USD8.731149137020111e-11.
+Broker orders remain zero. Source acquisition,old expert fit/target,
+shadow-account and old control account runs remain zero. The authoritative journal has490events,
+44registrations,41completed reviews,three retained technical failures,
+zero pending and164funded paths:219combined completions,zero qualifiers.
+This rejects the controlled inclusion,not the technical validity of the
+experts. Do not retune the same failed windows,selected count or band
+to conceal these outcomes.
 
 ## Initial benchmark command
 

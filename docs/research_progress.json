@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-30",
-  "phase": "six_expert_registered_waiting_publication",
-  "active_research_focus": "publish_exact_six_expert_packet_before_eight_funded_paths",
+  "phase": "six_expert_meta_rejected",
+  "active_research_focus": "select_next_independent_expert_layer_question_after_six_inclusion",
   "research_mainline": {
     "id": "strategy_expert_pool_and_rolling_meta_v1",
     "user_directed": true,
@@ -527,8 +527,33 @@
       "new_shadow_account_runs": 0,
       "new_shadow_recommendation_artifacts": 0,
       "new_source_requests": 0,
-      "actual_funded_paths_completed": 0,
-      "publication_fence_before_accounts_still_required": true,
+      "actual_funded_paths_completed": 8,
+      "publication_fence_before_accounts_still_required": false,
+      "actual_preregistration_commit": "7327fe3a68f722709c86aa00f4c19a6d6705d758",
+      "actual_publication_fence_sequence": 472,
+      "actual_publication_fence_at_utc": "2026-10-30T04:17:59.125679Z",
+      "actual_completed_at_utc": "2026-10-30T04:19:27.328420Z",
+      "results": "research/workbench/evidence/six_expert_meta_20261030_results_v1.json",
+      "results_sha256": "ce4cd4db8326768cdc5beb018939dd68760adb39833a734d4c6a9c2385d67f38",
+      "private_complete_results_sha256": "3dad709303bf7f2407f1a21b26b157845f6a5fc2ed8403f08bfeb6e4db108316",
+      "equal_weight_rule_status": "rejected",
+      "rolling_pair_rule_status": "rejected",
+      "all_eight_CAGR_gates_passed": true,
+      "all_eight_drawdown_gates_failed": true,
+      "both_rules_ten_year_SPY_and_QQQ_gates_failed": true,
+      "equal_five_year_stress_Sharpe_failed": true,
+      "rolling_all_four_Sharpe_and_QQQ_gates_failed": true,
+      "actual_registered_factor_families_per_path": 6,
+      "minimum_cash_usd_all_paths": 179.92664286477293,
+      "maximum_gross_exposure_all_paths": 0.9837705257147962,
+      "independent_BT_maximum_NAV_difference_usd": 8.731149137020111e-11,
+      "saved_five_control_comparison_sha256": "e6de4077681159ba6e5ad58a5ea1c22d0fa9375cb6ad6589741117dcebc3b12c",
+      "both_rules_all_CAGR_and_Sharpe_lower_than_saved_five": true,
+      "both_rules_all_turnover_orders_and_fees_higher_than_saved_five": true,
+      "equal_all_drawdowns_lower_but_still_above_hard_limit": true,
+      "mature_decisions_including_new_defensive_expert": 32,
+      "changed_pair_choices_vs_saved_five": 34,
+      "changed_pair_choices_without_new_defensive_expert": 2,
       "investment_objective_verified": false,
       "independent_forward_validation": false
     },
@@ -651,13 +676,13 @@
     },
     "aggregate_counts": {
       "registered": 44,
-      "completed": 39,
-      "reviews": 39,
-      "pending": 2,
+      "completed": 41,
+      "reviews": 41,
+      "pending": 0,
       "technical_failures": 3,
       "qualified": 0,
-      "account_paths": 156,
-      "total_legacy_plus_ssd_completed": 217
+      "account_paths": 164,
+      "total_legacy_plus_ssd_completed": 219
     },
     "additional_cohorts": [
       {
@@ -896,9 +921,9 @@
         "study_id": "ssd_strategy_expert_pool_six_20261030_v1",
         "registration": "research/workbench/evidence/six_expert_meta_20261030_registration_v1.json",
         "registration_sha256": "a577ca24f71f83f810d784a32d4d36e186228b9bd6fc9c2caedaa62703d319fa",
-        "results": null,
-        "results_sha256": null,
-        "preregistration_commit": null
+        "results": "research/workbench/evidence/six_expert_meta_20261030_results_v1.json",
+        "results_sha256": "ce4cd4db8326768cdc5beb018939dd68760adb39833a734d4c6a9c2385d67f38",
+        "preregistration_commit": "7327fe3a68f722709c86aa00f4c19a6d6705d758"
       }
     ],
     "status": "first_pair_complete_both_rejected",
