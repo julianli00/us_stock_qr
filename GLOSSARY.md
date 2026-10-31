@@ -48,6 +48,12 @@ Satisfaction of a combination rule's stated constraints on observations known at
 decision. It does not establish an expert's validity or final portfolio qualification.
 _Avoid_: Final qualification, future risk guarantee
 
+**Pair menu (专家对候选集)**:
+The set of complete expert pairs considered at a meta-strategy decision.
+Restricting a menu of recorded assessments does not reconstruct another
+strategy's previous learning or capital state.
+_Avoid_: Replayed control, independent choices
+
 **Expert introduction (专家引入)**:
 The actual time an expert is defined and admitted into research. It is distinct
 from the dates on which a historical counterfactual assumes its policy was available.

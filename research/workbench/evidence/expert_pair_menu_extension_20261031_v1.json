@@ -1,0 +1,117 @@
+{
+  "all_financial_counts_unchanged": {
+    "current_journal_event_count": 629,
+    "current_journal_head_sha256": "c433aaa787972866e919c5452307f1b3552749777ac2c3bf7f1bf84e73318293",
+    "new_account_paths": 208,
+    "new_completed_strategy_evaluations": 52,
+    "new_historical_point_gate_passes": 0,
+    "new_pending_candidates": 0,
+    "new_registered_candidates": 60,
+    "new_reviews": 52,
+    "new_technical_failures": 8,
+    "original_completed_configurations": 178,
+    "original_registered_versions": 96,
+    "original_reviews": 94,
+    "total_legacy_plus_ssd_completed_configurations": 230
+  },
+  "analysis_import_and_configuration_dependencies": 285,
+  "completed_at": "2026-10-31T00:32:22.899109+00:00",
+  "diagnosis_id": "ssd_expert_pair_menu_extension_20261031_v1",
+  "independent_forward_validation": false,
+  "individual_pairs_weights_scores_or_raw_values_published": false,
+  "investment_objective_verified": false,
+  "new_financial_configuration_selected": false,
+  "new_funded_paths": 0,
+  "new_source_requests": 0,
+  "new_strategy_evaluations": 0,
+  "order_authority": false,
+  "passed_offline_checks": 20,
+  "precomparison_intent": {
+    "path": "reports/ssd-continuous-research-v1/expert-pair-menu-extension-20261031-v1/diagnostic-intent-v1.json",
+    "sha256": "8a11c45c4362d39c405aca54553b4d6aa230856d67a1bde21ad12283b33b3e15"
+  },
+  "private_diagnostic": {
+    "path": "reports/ssd-continuous-research-v1/expert-pair-menu-extension-20261031-v1/diagnostic-result-v1.json",
+    "sha256": "468b4793d762a90d81fb1f2c95e6bb78113a927b7878f76ceeebb2fe713cf7ab"
+  },
+  "restricted_menu_is_diagnostic_of_stored_seven_scores_not_six_replay": true,
+  "schema_version": 1,
+  "source_inputs_checked": 1230,
+  "source_scores_risks_targets_or_accounts_recomputed": false,
+  "summary": {
+    "added_VVIX_pair_selected": 19,
+    "all_added_VVIX_pair_records": 684,
+    "all_previous_assessment_weight_L1_differences": {
+      "maximum": 2.0,
+      "mean": 0.21481519377559855,
+      "minimum": 0.0,
+      "observations": 121
+    },
+    "all_shared_pair_record_comparisons": 1710,
+    "all_shared_seven_minus_six_switch_proxy_fractions": {
+      "maximum": 0.0016658535096298575,
+      "mean": 6.027425244066232e-06,
+      "minimum": -0.0004859874228517273,
+      "observations": 1710
+    },
+    "all_shared_seven_minus_six_train_net_scores": {
+      "maximum": 0.842264702936304,
+      "mean": -0.006053871953527778,
+      "minimum": -1.7904499388349953,
+      "observations": 1710
+    },
+    "all_shared_seven_minus_six_validation_net_scores": {
+      "maximum": 0.7422272183836487,
+      "mean": -0.00567895593071574,
+      "minimum": -3.2590077804751028,
+      "observations": 1710
+    },
+    "different_original_shared_pair_selected": 1,
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "isolated_causal_cost_or_source_effect_claimed": false,
+    "matched_decisions": 121,
+    "mature_previous_state_has_positive_VVIX_weight_records": 20,
+    "mature_recorded_choices": 114,
+    "new_financial_configuration_selected": false,
+    "old_winner_rank_in_diagnostic_restricted_shared_menu": {
+      "maximum": 2,
+      "mean": 1.0087719298245614,
+      "minimum": 1,
+      "observations": 114
+    },
+    "old_winner_rank_in_full_seven_menu": {
+      "maximum": 7,
+      "mean": 1.3508771929824561,
+      "minimum": 1,
+      "observations": 114
+    },
+    "original_scoring_targets_or_accounts_recomputed": false,
+    "pair_switches_or_weight_differences_are_actual_orders_or_fees": false,
+    "recorded_seven_adjacent_pair_switches": 93,
+    "recorded_six_adjacent_pair_switches": 83,
+    "restricted_ranking_is_a_new_diagnostic_of_recorded_seven_scores": true,
+    "restricted_ranking_replays_original_six_strategy_or_previous_state": false,
+    "restricted_shared_best_differs_from_original_records": 1,
+    "same_original_shared_pair_selected": 94,
+    "shared_marginal_variance_absolute_differences": {
+      "maximum": 0.0,
+      "mean": 0.0,
+      "minimum": 0.0,
+      "observations": 1710
+    },
+    "shared_training_correlation_absolute_differences": {
+      "maximum": 0.0,
+      "mean": 0.0,
+      "minimum": 0.0,
+      "observations": 1710
+    },
+    "shared_weight_absolute_differences": {
+      "maximum": 0.0,
+      "mean": 0.0,
+      "minimum": 0.0,
+      "observations": 1710
+    },
+    "unscored_initial_decisions": 7
+  }
+}

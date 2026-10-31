@@ -43,6 +43,26 @@ portfolio remain separate. The first fixed-pool study requires an equal-weight
 control and one causal rolling rule, without claiming that the pool or direction
 change itself has met the investment objective.
 
+The latest [recorded pair-menu extension diagnosis](research/workbench/evidence/expert_pair_menu_extension_20261031_v1.json)
+compares the saved six/seven rolling decisions without rerunning scores,
+targets or accounts. All121dates,seven unscored initial states,114mature
+choices,1710shared-pair comparisons and684added-pair records are retained.
+Of the114mature choices,19select a VVIX pair,94keep the original six-expert
+winner andone chooses a different original shared pair.
+
+Restricting the **stored seven-run score keys** to the original shared menu
+changes that menu's winner only once,on2022-09-30. This is a new diagnostic
+restriction,not a replay of the six strategy or its previous state. All1710
+shared weight,training-correlation and marginal-variance records have zero
+numeric difference. Stored net-score and switch-proxy values can nevertheless
+differ with the separately retained assessment reference states.
+
+Adjacent recorded pair changes are83for six experts and93for seven;they
+are not actual orders,paid fees or a causal attribution of extra turnover.
+No new financial configuration or source request is added. All629events,
+230combined completions,old outcomes and one-day forward identities remain
+unchanged;the investment objective is still unmet.
+
 The [seven-expert preregistration](research/workbench/evidence/seven_expert_meta_20261031_registration_v1.json)
 registered equal-weight and causal rolling-pair rules at
 **2026-10-30T23:46:00.022914Z /23:46:00.300134Z**, before new real target

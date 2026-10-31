@@ -20,6 +20,64 @@ inception date. Raw documents, prices and daily account ledgers remain private.
 The original bundle's README and manifest remain byte-for-byte unchanged; this
 separate document describes the new protocol without rewriting that history.
 
+## Latest recorded pair-menu extension diagnosis
+
+The [zero-trial diagnosis](evidence/expert_pair_menu_extension_20261031_v1.json)
+completed **2026-10-31T00:32:22.899109Z**. Before the one11.27-second
+stored comparison,intent
+`8a11c45c4362d39c405aca54553b4d6aa230856d67a1bde21ad12283b33b3e15`
+bound four implementation/test files,1230source references,285import/configuration
+dependencies andthe first20passed checks. It does not run an original
+scorer,covariance estimator,source,admission,target or account pipeline.
+
+All121six/seven decision dates match. Seven initial states remain unscored;
+114mature choices retain identical train/validation clocks. Every mature
+date retains all15original shared pairs andsixadded VVIX pairs:1710shared
+record comparisons and684added records. The242matched-input/resolved records
+preserve each source row before comparison and every derived row afterward.
+
+| Actual stored seven choice versus original six choice | Mature records |
+| --- | ---: |
+| Added VVIX pair selected |19|
+| Same original shared pair selected |94|
+| Different original shared pair selected |1|
+
+The diagnostic separately ranks only the original shared pairs using their
+**stored seven-run score keys**,with the unchanged descending-key/lexical
+tie order. That restricted shared winner differs from the original six
+winner only on**2022-09-30**. This is not a replay of the six strategy,its
+previous assessment state,unretained memory or a tradable counterfactual.
+The old winner's restricted-menu rank is at most2;its full-seven-menu rank
+is at most7. Every unmatched or unscorable condition would have stopped
+the fixed comparison instead of being dropped or given a successful rank.
+
+Across all1710shared pairs,maximum stored expert-weight,training-correlation
+and marginal-variance-contribution differences are exactlyzero. The original
+shared-risk comparison limits are retained,not relaxed. The stored
+seven-minus-six switch-proxy fractions nevertheless span
+`-0.0004859874228517273`to`0.0016658535096298575`;their mean is
+`0.000006027425244066232`. Train/validation net-score differences span
+`-1.7904499388349953`to`0.842264702936304`and
+`-3.2590077804751028`to`0.7422272183836487`,respectively. These compare
+stored records,not recomputed risk scores or actual paid fees.
+
+Six andseven previous assessment vectors are not generally equal.
+TheirL1difference across all121dates has mean0.21481519377559855and
+maximum2;the initial equal-sixths/sevenths states are included. Twenty
+mature seven-run previous states carry positive VVIX assessment weight.
+Adjacent recorded mature-pair changes are83versus93. These statistical
+weights and pair changes are not main capital,NAV drawdown,trade tickets
+or an isolated causal cost/source effect.
+
+The older tail-cost/target-change diagnosis already retained its symmetric
+capital/recommendation attribution and fee calibration;neither is repeated.
+This finding selects no new weighting,cost penalty,window,pool or financial
+configuration. Both previously frozen seven-expert financial rules remain
+rejected and all source experts retain their original technical admission.
+Totals remain629events,60registrations,52completed reviews,eighttechnical
+failures,zero pending,208funded paths,230combined completions andzeroqualifiers.
+No independent forward or investment qualification is claimed.
+
 ## Latest seven-expert preregistration
 
 The [actual packet](evidence/seven_expert_meta_20261031_registration_v1.json)
