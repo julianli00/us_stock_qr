@@ -20,7 +20,55 @@ inception date. Raw documents, prices and daily account ledgers remain private.
 The original bundle's README and manifest remain byte-for-byte unchanged; this
 separate document describes the new protocol without rewriting that history.
 
-## Latest assessment-dominance pair-commitment preregistration
+## Latest assessment-dominance pair-commitment outcomes
+
+The [complete outcomes](evidence/expert_pair_dominance_20261031_results_v1.json)
+retain all eight original funded paths;**both fixed rules are rejected**.
+Actual preregistration`40975761ae56b8c215f86e557675ad6a63a82690` precedes
+fence634at**2026-10-31T01:35:45.895731Z**,which precedes every new path.
+All paths finished at**2026-10-31T01:36:01.604572Z**.
+
+| Rule / path | Net CAGR % | RF Sharpe | DD % | Annual two-sided turnover | Tickets | Fees USD |
+|---|---:|---:|---:|---:|---:|---:|
+| Pareto 10y-base | 14.709566 | 0.899559 | 21.319227 | 4.598892 | 715 | 1135.9560 |
+| Pareto 10y-stress | 13.377301 | 0.811640 | 23.154851 | 4.610807 | 721 | 2314.3772 |
+| Pareto 5y-base | 16.734894 | 0.862439 | 21.568858 | 5.238522 | 395 | 553.7301 |
+| Pareto 5y-stress | 14.530320 | 0.733480 | 23.398610 | 5.243984 | 395 | 997.9000 |
+| Envelope 10y-base | 12.795971 | 0.786686 | 26.076880 | 4.221735 | 672 | 1010.1971 |
+| Envelope 10y-stress | 12.690206 | 0.777227 | 25.251895 | 4.242470 | 699 | 2052.4988 |
+| Envelope 5y-base | 14.761309 | 0.792706 | 26.267041 | 4.737657 | 362 | 497.0064 |
+| Envelope 5y-stress | 13.975868 | 0.742636 | 25.524010 | 4.772395 | 386 | 914.9193 |
+
+All eightCAGRgates pass;all eightSharpe,DD andmatchedQQQ gates fail.
+Both rules beat matched-costSPY on both five-year paths and miss both
+ten-year SPY gates. The extra five-year stress-versus-base-cost-SPY gate
+passes for Pareto but fails for Envelope;both ten-year extra stress gates
+fail. No metric from one rule is substituted into another's qualification.
+
+The **same saved `expert_pool_seven_rolling_pair_v1`** is the primary
+matched control for both new rules. All eight actual turnover,ticket and
+fee totals decrease,while all eight drawdowns increase. ParetoCAGR rises
+on every path;Sharpe rises in both base paths but falls in both stress
+paths. EnvelopeCAGR andSharpe fall on all four. Nominal pair-ID changes
+36/12 are distinct from the actual account trades above. These are
+matched complete outcomes,not isolated causal cost attribution.
+
+Minimum actual cash is169.7359206084808USD,maximum gross exposure is
+0.983801786217034 andmaximum independent BT/NAV difference is
+8.731149137020111e-11USD. Original windows,RF,costs,delays,initialDDpeak,
+holdingband and1xcashfunding remain unchanged. The one47.82-second
+evaluation used371298304BpeakRSS withzero swaps;no old control,source,
+signal,target or account pipeline was rerun.
+
+All208old receipts/1252financial files remain unchanged. The combined
+hash-only inventory now covers216receipts/1300files. Journal652contains
+62registrations,54completed reviews,eighttechnical failures,zero pending,
+216funded paths,232combined completions andzeroqualifiers. All failures
+and exposed-history trial counts remain preserved. No confidence claim,
+independent forward proof,automatic repair or next financial rule is
+selected by this closure;the investment objective remains unmet.
+
+## Assessment-dominance preregistration (registration-time snapshot)
 
 The [actual packet](evidence/expert_pair_dominance_20261031_registration_v1.json)
 registered Pareto and empirical-envelope commitment rules at

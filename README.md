@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 62 SSD identities, 52 completed/rejected, eight retained technical failures and two pending; 208 funded paths | Journal-derived current summary: 230 combined completions, zero qualifiers; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 62 SSD identities, 54 completed/rejected, eight retained technical failures and zero pending; 216 funded paths | Journal-derived current summary: 232 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -43,7 +43,32 @@ portfolio remain separate. The first fixed-pool study requires an equal-weight
 control and one causal rolling rule, without claiming that the pool or direction
 change itself has met the investment objective.
 
-The [assessment-dominance preregistration](research/workbench/evidence/expert_pair_dominance_20261031_registration_v1.json)
+The latest [assessment-dominance outcomes](research/workbench/evidence/expert_pair_dominance_20261031_results_v1.json)
+complete all eight original funded paths;**both fixed rules are rejected**.
+Preregistration`40975761ae56b8c215f86e557675ad6a63a82690` was actually
+published before fence634at**2026-10-31T01:35:45.895731Z** and every new
+account start. All paths finished at**01:36:01.604572Z**.
+
+All eight exceed12percentnetCAGR but fail Sharpe>1,DD<=15percent and QQQ
+outperformance. NetCAGR spans12.690206-16.734894percent,RFSharpe
+0.733480-0.899559 andDD21.319227-26.267041percent. Both rules beat matched
+SPY on their five-year paths;only Pareto's five-year stress path also beats
+base-cost SPY. No passing metrics are combined across rules.
+
+Against the same **saved seven-expert instantaneous pair selector** for
+both rules,actual turnover,tickets and fees decrease on all eight matched
+paths,while DD increases throughout. Pareto raisesCAGR on all four paths
+but loses stress Sharpe;the stronger empirical-envelope rule losesCAGR
+andSharpe on all four. Lower switching costs do not establish final
+qualification or an isolated causal fee effect. Old controls were not rerun.
+
+Journal652now records62registrations,54completed reviews,eighttechnical
+failures,zero pending,216funded paths,232combined completions andzero
+qualifiers. All208previous receipts/1252financial files remain unchanged;
+the updated inventory covers216receipts/1300files. The investment
+objective remains unmet,and no next financial rule is selected here.
+
+The archived [assessment-dominance preregistration](research/workbench/evidence/expert_pair_dominance_20261031_registration_v1.json)
 registered two incumbent-pair commitment rules at
 **2026-10-31T01:20:25.910203Z /01:20:26.207539Z**, before real new
 assessment,state or target decisions. Both keep the same seven experts,
@@ -62,7 +87,7 @@ binary64 values. Nominal incumbent-pair changes are36and12,not actual
 orders or proof of lower fees. Retaining an ID still updates its monthly ERC
 weights and the source recommendations.
 
-At this **registration-time pre-account snapshot**,no financial fence,
+At the archived **registration-time pre-account snapshot**,no financial fence,
 main account,return,turnover or paid-fee result exists. Exact remote
 publication must precede all eight original funded paths. Journal633has
 62registrations,52completed reviews,eighttechnical failures,two pending,
