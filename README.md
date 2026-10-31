@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 64 SSD identities, 54 completed/rejected, eight retained technical failures and two pending; 216 funded paths | Journal-derived current summary: 232 combined completions, zero qualifiers; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 64 SSD identities, 56 completed/rejected, eight retained technical failures and zero pending; 224 funded paths | Journal-derived current summary: 234 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -43,7 +43,35 @@ portfolio remain separate. The first fixed-pool study requires an equal-weight
 control and one causal rolling rule, without claiming that the pool or direction
 change itself has met the investment objective.
 
-The [full-support pair-allocation ensemble preregistration](research/workbench/evidence/expert_pair_ensemble_20261031_registration_v1.json)
+The latest [full-support pair-allocation ensemble outcomes](research/workbench/evidence/expert_pair_ensemble_20261031_results_v1.json)
+complete all eight original funded paths;**both fixed rules are rejected**.
+Actual preregistration`a7ee25b8ae83ce21ff53809a2bc1f3c05630ec50` precedes
+fence657at**2026-10-31T02:55:37.512900Z** and all eight path starts.
+All paths finished at**02:55:53.555981Z**.
+
+Uniform aggregation passes three DD gates,but its five-year stress DD
+**15.026312percent remains a strict failure**,not rounded to15percent.
+Only its ten-year base Sharpe gate passes,and no QQQ gate passes.
+Ordinal aggregation passes both base Sharpe gates and five-year base QQQ,
+but all four DD gates fail. All eightCAGRgates pass;both rules beat SPY
+on five-year paths and pass the extra five-year stress-versus-base-SPY
+gate,but miss ten-year SPY. No passing metrics are spliced across paths.
+
+Against the same saved seven-expert instantaneous pair control for both
+rules,all eightCAGR andSharpe values rise,turnover andtotal fees fall,
+but ticket counts rise. Uniform DD falls on all four paths;Ordinal DD
+falls on three but rises slightly in five-year stress. The separately
+labeled saved equal-seven context has higherCAGR andSharpe on all
+matched paths;Ordinal also has higherDD,turnover,tickets andfees than it.
+These complete matched results are not isolated causal fee effects.
+
+Journal675contains64registrations,56completed reviews,eighttechnical
+failures,zero pending,224funded paths,234combined completions andzero
+qualifiers. All216previous receipts/1300financial files remain unchanged;
+the new inventory covers224receipts/1348files. The investment objective
+remains unmet,and no next financial rule is selected by this closure.
+
+The archived [full-support pair-allocation ensemble preregistration](research/workbench/evidence/expert_pair_ensemble_20261031_registration_v1.json)
 registered uniform and tie-averaged ordinal pair-ERC rules at
 **2026-10-31T02:46:44.131911Z /02:46:44.443117Z**,before real new
 assessments,weights or targets. Instead of choosing or retaining one

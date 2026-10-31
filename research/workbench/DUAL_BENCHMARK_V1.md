@@ -20,7 +20,64 @@ inception date. Raw documents, prices and daily account ledgers remain private.
 The original bundle's README and manifest remain byte-for-byte unchanged; this
 separate document describes the new protocol without rewriting that history.
 
-## Latest full-support pair-allocation ensemble preregistration
+## Latest full-support pair-allocation ensemble outcomes
+
+The [complete actual outcomes](evidence/expert_pair_ensemble_20261031_results_v1.json)
+retain all eight original funded paths;**both fixed rules are rejected**.
+Actual preregistration`a7ee25b8ae83ce21ff53809a2bc1f3c05630ec50` precedes
+fence657at**2026-10-31T02:55:37.512900Z**,before every new account start.
+All paths finished at**2026-10-31T02:55:53.555981Z**.
+
+| Rule / path | Net CAGR % | RF Sharpe | DD % | Annual two-sided turnover | Tickets | Fees USD |
+|---|---:|---:|---:|---:|---:|---:|
+| Uniform 10y-base | 13.986135 | 1.025225 | 14.771797 | 3.056716 | 1002 | 1263.8422 |
+| Uniform 10y-stress | 13.376190 | 0.975895 | 14.802263 | 3.056166 | 1011 | 2029.3138 |
+| Uniform 5y-base | 16.190592 | 0.982614 | 14.994704 | 2.935752 | 489 | 579.6243 |
+| Uniform 5y-stress | 15.087778 | 0.903769 | 15.026312 | 2.919461 | 489 | 838.5241 |
+| Ordinal 10y-base | 14.761607 | 1.043665 | 17.096668 | 3.280864 | 1095 | 1388.0627 |
+| Ordinal 10y-stress | 14.136990 | 0.993929 | 16.839526 | 3.287727 | 1104 | 2252.5885 |
+| Ordinal 5y-base | 17.202594 | 1.003566 | 17.372143 | 3.173069 | 553 | 656.1860 |
+| Ordinal 5y-stress | 15.837356 | 0.911555 | 17.120545 | 3.161310 | 553 | 950.7473 |
+
+All eightCAGRgates pass. Uniform passes three DD gates,only ten-year
+base Sharpe,and no QQQ gate. Its five-year stress DD is
+**15.026312090867078percent and strictly fails15percent**;the limit,
+tolerance and frozen V1 are not changed. Ordinal passes both base
+Sharpe gates and five-year base QQQ,but all four DD gates fail.
+Both rules beat matched SPY on both five-year paths and pass the extra
+five-year stress-versus-base-SPY gate;both ten-year SPY and extra
+ten-year stress gates fail. No partial passing metrics are combined.
+
+Both primary comparisons use the same saved
+`expert_pool_seven_rolling_pair_v1`. All eightCAGR andSharpe values rise,
+actual turnover andtotal fees fall,but model tickets rise. Uniform
+drawdown falls throughout;Ordinal falls on three paths but rises in
+five-year stress by0.1898797500967997percentage points. This is not
+isolated causal fee attribution or evidence of independent forward success.
+
+The separately labeled **secondary saved equal-seven context** was not
+rerun or substituted for the primary control. Both new rules have lower
+CAGR andSharpe than it on all four matched paths. Uniform has lowerDD
+throughout,but its turnover is higher;ticket andfee differences are mixed.
+Ordinal has higherDD,turnover,tickets andfees throughout. Within this
+fixed new study,ordinal weighting raisesCAGR andSharpe relative to uniform
+but also raisesDD,turnover,tickets andfees on every path.
+
+Minimum actual cash is184.0267533522838USD,maximum gross exposure is
+0.9824142614165289 andmaximum independent BT/NAV difference is
+1.1641532182693481e-10USD. The original full clocks,RF,costs,delays,
+initialDDpeak,holdingband andcashfundedlongonly<=1x remain unchanged.
+The single48.65-second evaluation used357429248BpeakRSS withzero swaps.
+No source,admission,old signal,target,control or account pipeline was replayed.
+
+All216old receipts/1300financial files remain unchanged. The combined
+hash-only inventory covers224receipts/1348files. Journal675contains
+64registrations,56completed reviews,eighttechnical failures,zero pending,
+224funded paths,234combined completions andzeroqualifiers. All exposed
+history,trial counts and failures remain preserved. No next financial
+rule or parameter is selected here;the investment objective remains unmet.
+
+## Full-support pair-allocation ensemble preregistration (registration-time snapshot)
 
 The [actual packet](evidence/expert_pair_ensemble_20261031_registration_v1.json)
 registered two new rules at**2026-10-31T02:46:44.131911Z /02:46:44.443117Z**,
