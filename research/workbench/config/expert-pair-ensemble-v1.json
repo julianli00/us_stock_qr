@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_expert_pair_allocation_ensemble_20261031_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "prior_completed_configurations": 232,
+  "prior_new_registered_candidates": 62,
+  "prior_new_completed_strategy_evaluations": 54,
+  "prior_new_technical_failures": 8,
+  "prior_journal_sequence": 652,
+  "prior_journal_head_sha256": "2a3d72cac1a58f9de394a5e0975902f289951e1c2fd65e211c6d5cf48e3daadf",
+  "source_seven_registration": {
+    "path": "evidence/seven_expert_meta_20261031_registration_v1.json",
+    "sha256": "896408c7f91121c86cc1f91f9790c655fff08adecdd8948f3ed352e2dc8c659d"
+  },
+  "source_seven_specification_sha256": "fcb5e06fb0b3acb83c20cf69d0acf2d5e9aea7a1c05e267aea496c59f5dc60f2",
+  "source_scoring_policy": {
+    "path": "config/strategy-expert-pool-seven-v1.json",
+    "sha256": "f27b1ac96253faef7ce57520682dac83ef426272057dfa2c277c61fcc319416f"
+  },
+  "source_dominance_registration": {
+    "path": "evidence/expert_pair_dominance_20261031_registration_v1.json",
+    "sha256": "a570fc21d88f1632929c082c967b3845c1364559a230ad7457b4f71702a9c90f"
+  },
+  "source_dominance_specification_sha256": "715b1ea80d3c345541467bbbb07d8eddbfa0acb8b56a4db6748809a0382b2215",
+  "source_pair_controls": {
+    "path": "reports/ssd-continuous-research-v1/seven-expert-meta-20261031-v1/results.json",
+    "sha256": "871f0b649ace186d0f2f53a0cbe71fc01dfe4dc3ca22349ff9ecc1c984af8223"
+  },
+  "decision_information_clock": "after_16_15_ET_index_close_before_later_open_execution",
+  "expert_ids": [
+    "equity_first_month_end_commitment_v1",
+    "benchmark_opportunity_joint_tail_v1",
+    "symmetric_garch_growth_bil_v1",
+    "semiconductor_ratchet_protection",
+    "semiconductor_option_dollar_profit_share_confirmation",
+    "four_factor_defense_diversified",
+    "two_segment_vvix_uncertainty_confirmation_v1"
+  ],
+  "mechanism_groups": [
+    "committed_price_trend_defense",
+    "joint_tail_opportunity",
+    "conditional_variance_growth",
+    "wealth_feedback_protection",
+    "common_quarter_profit_dollar_confirmation",
+    "cross_asset_defensive_relative_strength",
+    "option_market_uncertainty_confirmation"
+  ],
+  "initial_decision_session": "2016-10-05",
+  "lookback_sessions": 126,
+  "training_sessions": 84,
+  "validation_sessions": 42,
+  "selected_experts": 2,
+  "selected_experts_field_describes_original_pair_size_not_ensemble_support": true,
+  "ensemble_support": "every_causally_scorable_original_pair",
+  "selection_score_decimal_places": 12,
+  "shadow_reference_path": "10y-base",
+  "reference_capital_usd": 10000,
+  "switch_cost_bps_per_side": 5.0,
+  "switch_commission_per_changed_asset_usd": 1.0,
+  "switch_cost_amortization_sessions": 21,
+  "changed_asset_numeric_tolerance": 1e-12,
+  "invested_target_budget": 0.98,
+  "cash_reserve": 0.02,
+  "actual_weight_trade_band": 0.025,
+  "minimum_economic_factor_families": 3,
+  "new_economic_factor_definitions": 0,
+  "new_shadow_account_runs": 0,
+  "new_shadow_recommendation_artifacts": 0,
+  "new_source_requests": 0,
+  "candidate_count_in_this_study": 2,
+  "study_size_is_a_total_research_quota": false,
+  "candidates": [
+    {
+      "id": "expert_pool_seven_uniform_pair_ensemble_v1",
+      "aggregation": "uniform_scorable_pair_ERC"
+    },
+    {
+      "id": "expert_pool_seven_rank_pair_ensemble_v1",
+      "aggregation": "tie_averaged_ordinal_pair_ERC"
+    }
+  ],
+  "methodology": {
+    "question": "Aggregate the full causally scorable pair-allocation menu rather than choose or retain one pair. Compare uniform pair ERC with fixed tie-averaged ordinal pair ERC while preserving original assessments and execution.",
+    "aggregation": "For mscorablepairs,uniform mass1/m. Ordinalpoints=m-greater-(ties-1)/2 on original12decimal lower score keys,totalm(m+1)/2. Equalkeys haveequal meanrankpoints,allkeys tied producesuniform. Every scorablepair haspositive mass,including negative valid scores;no temperature,count,window,tolerance orcash-cutoff scan.",
+    "state": "Each rule has its own previous seven aggregate weights in all original21pair cost assessments. No incumbent or added persistence parameter. Combine currenttrainingERC pair allocations into one expert vector and one original14asset target.",
+    "initial_and_unscorable": "Original seven unmatured decisions equal1/7 andexplicitunscored. Fully degenerate original assessment retains equal unscored fallback. Missing source state remains an error;unscorable pairs retain original reasons and are not successful opinions.",
+    "source_and_clock": "Reuse existing admitted dense/monthly/VVIX StrategyExpert Adapters and original after16:15ET archival scope/native NET/common RF. No new sources,assessment views,admission,shadows or oldtarget/account/control replay.",
+    "audit": "Retain every actual binary64 input before new assessments,then all21records/pair masses/aggregate weights/underlying target before independent scalar and integer-rankmass proof. Exact original five prefix positions and allformal dates retained.",
+    "execution": "FreshUSD10000 per original10y/5y/base-stress path,98percentETF2percentidle,cashfundedlongonly<=1x,originalRF-initialDDpeak,costs5/20bps+$1actualasset ticket,1/2sessiondelay,2.5ppactualholdingband. Shadow capital and protection floors do not transfer.",
+    "bias": "Follows232exposed completed configurations and disclosed seven-pool selection. Overlapping pairs do not add independent experts,factors,capital or forward validation. Both primary comparisons use the saved original seven instant pair control without new simulation or isolated causal fee attribution.",
+    "qualification": "Same frozen candidate must jointly pass all originalfour paths netSharpe>1,CAGR>12percent,DD<=15percent,fullcapitalmatchedSPY+QQQ and original extra stress-vs-base-SPY;atleast3genuine registeredfactorfamilies. Report actualturnover,tickets,fees;no invented numerical churn limit.",
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

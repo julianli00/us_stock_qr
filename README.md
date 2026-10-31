@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 62 SSD identities, 54 completed/rejected, eight retained technical failures and zero pending; 216 funded paths | Journal-derived current summary: 232 combined completions, zero qualifiers; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 64 SSD identities, 54 completed/rejected, eight retained technical failures and two pending; 216 funded paths | Journal-derived current summary: 232 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -43,7 +43,38 @@ portfolio remain separate. The first fixed-pool study requires an equal-weight
 control and one causal rolling rule, without claiming that the pool or direction
 change itself has met the investment objective.
 
-The latest [assessment-dominance outcomes](research/workbench/evidence/expert_pair_dominance_20261031_results_v1.json)
+The [full-support pair-allocation ensemble preregistration](research/workbench/evidence/expert_pair_ensemble_20261031_registration_v1.json)
+registered uniform and tie-averaged ordinal pair-ERC rules at
+**2026-10-31T02:46:44.131911Z /02:46:44.443117Z**,before real new
+assessments,weights or targets. Instead of choosing or retaining one
+winning pair,both aggregate every causally scorable pair into one
+seven-expert allocation and one original14-asset main target.
+
+The seven admitted experts,126/84/42pair assessments,training ERC,
+switch proxy,RF,costs,delays,holding band and original gates remain fixed.
+Intent`b0265276d63275452b940b0b482d2115cd4b4730b704c31ef83047b749547ae0`
+binds187code files,149policies and1252source references. The first42tests
+preceded freeze. Each rule retains121decisions,114mature assessments,
+2394scorable pair allocations,seven unscored initial decisions,five
+prefix checks and six actual factor symbols per horizon. All scored
+decisions support all seven experts;the484input/resolved records retain
+413896NET/RF binary64 values.
+
+Uniform masses are1/m;ordinal masses use mean rank points for tied
+original12-decimal lower-score keys. Every scorable pair receives positive
+mass,including valid negative scores. Actual mature ties were zero;
+tie behavior is separately tested,not claimed as observed evidence.
+Overlapping pairs are not new independent experts,capital or return sources.
+This is a different aggregation operator,not a tuned dominance gate.
+
+At this registration-time pre-account snapshot,there is no new financial
+fence,main path or net-return/turnover/fee result. Exact remote
+preregistration must precede all eight original funded paths. Journal656
+contains64registrations,54completed reviews,eighttechnical failures,
+two pending,216funded paths,232combined completions andzeroqualifiers.
+All old controls and prospective identities remain unchanged.
+
+The latest completed [assessment-dominance outcomes](research/workbench/evidence/expert_pair_dominance_20261031_results_v1.json)
 complete all eight original funded paths;**both fixed rules are rejected**.
 Preregistration`40975761ae56b8c215f86e557675ad6a63a82690` was actually
 published before fence634at**2026-10-31T01:35:45.895731Z** and every new

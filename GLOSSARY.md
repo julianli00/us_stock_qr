@@ -60,6 +60,12 @@ Restricting a menu of recorded assessments does not reconstruct another
 strategy's previous learning or capital state.
 _Avoid_: Replayed control, independent choices
 
+**Pair-allocation ensemble (专家对分配集成)**:
+A meta-strategy that aggregates candidate allocations formed from complete
+expert pairs into one expert allocation. Overlapping pairs do not create
+additional independent experts or capital accounts.
+_Avoid_: Independent strategy count, summed shadow wealth
+
 **Incumbent pair (保留专家对)**:
 The complete expert pair a meta-strategy retains as its current assessment choice.
 Its statistical allocation state is distinct from the main account's actual holdings.

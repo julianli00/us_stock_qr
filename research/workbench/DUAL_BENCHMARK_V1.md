@@ -20,7 +20,72 @@ inception date. Raw documents, prices and daily account ledgers remain private.
 The original bundle's README and manifest remain byte-for-byte unchanged; this
 separate document describes the new protocol without rewriting that history.
 
-## Latest assessment-dominance pair-commitment outcomes
+## Latest full-support pair-allocation ensemble preregistration
+
+The [actual packet](evidence/expert_pair_ensemble_20261031_registration_v1.json)
+registered two new rules at**2026-10-31T02:46:44.131911Z /02:46:44.443117Z**,
+before any real new assessment,weight or target. Uniform pair-ERC and
+tie-averaged ordinal pair-ERC aggregate the entire causally scorable
+original menu rather than choose or retain a single pair. This changes
+only aggregation,not the seven experts,original pair assessments or execution.
+
+For mscorable pairs,uniform mass is1/m. Ordinal points are
+m-greater-(ties-1)/2 for each original12-decimal lower-score key,and sum
+to m(m+1)/2. Equal keys receive equal mean rank points;all keys tied
+reduce to uniform masses. Each scorable pair has positive mass,including
+negative valid scores. There is no temperature,window,count,epsilon or
+cash-cutoff scan. The original selected_experts=2field describes each
+pair,not the support of the resulting ensemble.
+
+Each rule has its own previous seven statistical weights in every
+original21-pair switch-cost assessment. Aggregate the current trainingERC
+pair portfolios into one expert vector,then use the original combination
+Interface for one14-asset98percentETF/2percentidle target. Pair overlap
+does not add independent experts,factor families or capital. No source
+feedback floor or shadow guarantee transfers to the main account.
+
+Firstsevenunmatured decisions retain original equal1/7explicitunscored
+states. Fully degenerate pair assessments retain the original equal
+unscored fallback. Invalid or missing source state remains an error;
+unscorable pairs keep their recorded reasons rather than acquire a
+successful rank. The original after16:15ET archival information clock,
+126/84/42maturity and common RF interpretation are preserved.
+
+Intent`b0265276d63275452b940b0b482d2115cd4b4730b704c31ef83047b749547ae0`
+binds187code files,149policies and1252source references. The first42tests
+passed before freeze,including all21opinions,full seven-expert support,
+tie averaging,negative/unscorable states,independent integer rank-mass
+and scalar risk checks,tamper rejection,retained input failures,prefix
+causality,cached source reuse,nonrecursive publication and original execution.
+The original scalar pair verifier is reused as a pure helper,without
+calling any completed source,dominance,admission,target or account entrypoint.
+
+The one43.26-second preparation retains121decisions per rule,
+114mature assessments and2394scorable pair allocations. Every scored
+decision supports all seven experts. No actual mature score-key ties
+occurred;their behavior is tested but not presented as empirical evidence.
+All484input/resolved records preserve413896NET/RF binary64 values.
+Independent maximum target/weight/score differences are
+1.1102230246251565e-16/2.220446049250313e-16/6.217248937900877e-15;
+independent pair-mass difference is exactlyzero. All five original
+prefix positions and six registered factor symbols in both horizons pass.
+
+At this registration-time snapshot,no new financial fence or main path
+exists. No return,drawdown,actual turnover or fee outcome is claimed.
+Exact remote preregistration must precede all eight original freshUSD10000
+paths with original RF,initialDDpeak,costs5/20bps+$1tickets,
+1/2sessiondelays,2.5ppactualholdingband and cashfundedlongonly<=1x.
+Both primary comparisons use the saved original seven-expert instantaneous
+pair selector,without new control simulation or isolated causal fee attribution.
+
+Journal656contains64registrations,54completed reviews,eighttechnical
+failures,two pending,216funded paths,232combined completions andzero
+qualifiers. The fixed two-rule batch is not a total research quota.
+Exposed-history selection bias and all earlier failures remain preserved;
+full-support aggregation is not statistical confidence,independent forward
+validation or evidence that the investment objective has been met.
+
+## Latest completed assessment-dominance pair-commitment outcomes
 
 The [complete outcomes](evidence/expert_pair_dominance_20261031_results_v1.json)
 retain all eight original funded paths;**both fixed rules are rejected**.
