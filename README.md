@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 60 SSD identities, 50 completed/rejected, eight retained technical failures and two pending; 200 funded paths | Journal-derived current summary: 228 combined completions, zero qualifiers; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 60 SSD identities, 52 completed/rejected, eight retained technical failures and zero pending; 208 funded paths | Journal-derived current summary: 230 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -60,13 +60,46 @@ are retained. The242actual pre-input/resolved records preserve206948NET/RF
 binary64 values before proof. Independent target/weight/score differences
 are at most1.12e-16/2.23e-16/5.33e-15.
 
-This is the **pre-account snapshot**:no new financial fence,account,
+The following is the **registration-time, pre-account snapshot**:no new financial fence,account,
 return,turnover or fee result exists. Exact remote preregistration must
 precede all eight original fresh-capital paths. Journal610has60registered
 SSD identities,50completed reviews,eighttechnical failures,two pending
 and200funded paths:228combined completions,zero qualifiers. Saved six-expert
 controls are reused,not rerun. Technical admission itself did not select this
 later study's pool;its separate design did.
+
+Actual preregistration publication
+`8f6fe696be139123960dc9385d32ccd0cfaac924` and fence611 at
+**2026-10-30T23:54:04.190063Z** preceded all eight main paths,completed
+**23:54:19.078209Z**. The [complete outcomes](research/workbench/evidence/seven_expert_meta_20261031_results_v1.json)
+reject both fixed rules.
+
+| Rule / path | Net CAGR | RF Sharpe | DD | Annual two-sided turnover | Tickets | Fees USD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Seven equal /10y base |15.5319%|1.0604|15.8859%|2.8764x|1019|1281.82|
+| Seven equal /10y stress |15.0826%|1.0260|15.8932%|2.8580x|1016|2034.66|
+| Seven equal /5y base |18.2853%|1.0512|16.1731%|2.8509x|507|599.21|
+| Seven equal /5y stress |17.3361%|0.9887|16.1852%|2.7992x|484|835.10|
+| Seven pair /10y base |13.8725%|0.8618|19.2952%|7.2726x|846|1490.21|
+| Seven pair /10y stress |13.2446%|0.8160|19.0167%|7.2791x|846|3390.35|
+| Seven pair /5y base |15.5387%|0.8368|19.5815%|7.8010x|445|688.93|
+| Seven pair /5y stress |14.2912%|0.7566|16.9307%|7.8229x|445|1406.09|
+
+All eight clear CAGR12but fail DD15. Equal clears Sharpe1in three paths
+and QQQ in both five-year paths;its five-year stress Sharpe remains below1.
+Rolling misses Sharpe and QQQ throughout. Both rules beat SPY in both
+five-year paths and also pass the extra five-year stress versus base-cost
+SPY gate;both ten-year stress SPY gates fail.
+
+Against saved six-expert controls,equal raises CAGR but worsens DD in every
+path;Sharpe improves in three and slips in five-year base. Rolling reduces
+DD in every path but remains above15%,raises turnover,tickets and fees
+throughout,and improves Sharpe only in five-year stress. CAGR is lower in
+ten-year paths and higher in five-year paths. These complete exposed-history
+comparisons are not an isolated causal cost/source attribution or forward
+proof. No tolerance,weighting or economic parameter is repaired after results.
+Current totals are629events,60registrations,52completed reviews,eighttechnical
+failures,zero pending,208funded paths,230combined completions andzeroqualifiers.
 
 The [option-uncertainty expert technical admission](research/workbench/evidence/vvix_uncertainty_expert_20261030_admission_v1.json)
 completed **2026-10-30T22:58:44.381948Z**. It makes the existing

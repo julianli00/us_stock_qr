@@ -75,6 +75,55 @@ all eight original main paths. Journal610contains60registrations,
 rolling train/validation and prefix proofs are not independent OOS or
 forward validation. Final four-path qualification remains unmet.
 
+Actual remote preregistration
+`8f6fe696be139123960dc9385d32ccd0cfaac924` and publication fence611 at
+**2026-10-30T23:54:04.190063Z** preceded all eight original main paths.
+They completed **23:54:19.078209Z** in the one44.83-second evaluation.
+The [complete canonical results](evidence/seven_expert_meta_20261031_results_v1.json)
+reject both rules;these are complete financial rejections,not technical failures.
+Registration-time pre-account flags above retain their original snapshot scope.
+
+| Rule / path | Net CAGR | RF Sharpe | DD | Annual two-sided turnover | Tickets | Fees USD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Seven equal /10y base |15.531902%|1.060380|15.885914%|2.876422|1019|1281.8178|
+| Seven equal /10y stress |15.082589%|1.025981|15.893165%|2.857985|1016|2034.6573|
+| Seven equal /5y base |18.285299%|1.051160|16.173056%|2.850942|507|599.2115|
+| Seven equal /5y stress |17.336104%|0.988682|16.185170%|2.799160|484|835.0967|
+| Seven pair /10y base |13.872534%|0.861812|19.295208%|7.272608|846|1490.2105|
+| Seven pair /10y stress |13.244585%|0.815983|19.016657%|7.279063|846|3390.3525|
+| Seven pair /5y base |15.538663%|0.836811|19.581455%|7.800975|445|688.9274|
+| Seven pair /5y stress |14.291207%|0.756584|16.930665%|7.822904|445|1406.0934|
+
+Every path passes CAGR12and fails DD15. Equal passes Sharpe1in both ten-year
+paths and five-year base;five-year stress0.988682fails strictly. Equal beats
+matched-cost QQQ in both five-year paths only. Rolling fails Sharpe and QQQ
+throughout. Both rules beat matched-cost SPY in both five-year paths and
+also beat base-cost SPY in five-year stress. Equal additionally beats SPY in
+ten-year base;both rules fail both SPY gates in ten-year stress. No passing
+return,Sharpe or drawdown is combined across rules.
+
+Saved six-expert controls are matched path for path without simulation.
+Equal increases CAGR by0.2765/0.2512/0.3746/0.4435percentage points while DD
+worsens by0.3977/0.2880/0.5402/0.3145points. Sharpe improves in three paths
+but falls0.001176in five-year base. Turnover rises in three and falls in
+five-year stress;ticket and fee signs are mixed.
+
+Rolling lowers DD by1.0357/1.4414/0.9767/3.7628percentage points,but all four
+still fail15%. CAGR falls in both ten-year paths and rises in both five-year
+paths;Sharpe falls in three and rises0.029266in five-year stress. Annual
+two-sided turnover,tickets and total dollar fees all increase. These are
+complete exposed-history comparisons,not an isolated causal decomposition
+or independent forward proof. No post-outcome parameter,tolerance or source
+rescue is performed;financial failure does not invalidate source experts.
+
+All actual books remain cash-funded:minimum cash185.18020549866102USD,
+maximum gross0.9837705257147964,and largest independent BT/NAV difference
+1.382431946694851e-10USD. No broker orders occur. A hash-only inventory
+preserves all208completed SSD path receipts and1252private receipt/artifact
+files,including all1204old files. Current629events contain60registrations,
+52completed reviews,eighttechnical failures,zero pending,208funded paths,
+230combined completions andzeroqualifiers. The investment objective remains unmet.
+
 ## Latest option-uncertainty expert technical admission
 
 The [cached admission](evidence/vvix_uncertainty_expert_20261030_admission_v1.json)

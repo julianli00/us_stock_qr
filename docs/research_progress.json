@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-30",
-  "phase": "seven_expert_meta_registered_before_funded_paths",
-  "active_research_focus": "publish_exact_seven_expert_registration_before_original_eight_funded_paths",
+  "phase": "seven_expert_meta_complete_both_rejected",
+  "active_research_focus": "preserve_all_seven_expert_outcomes_before_selecting_next_independent_question",
   "research_mainline": {
     "id": "strategy_expert_pool_and_rolling_meta_v1",
     "user_directed": true,
@@ -1937,6 +1937,63 @@
       "new_registered_factor_definitions": 0,
       "source_admission_old_ledger_or_forward_rewritten": false,
       "main_drawdown_guarantee": false,
+      "outcomes_scope": "Subsequent completed four-path outcomes;registration-time pre-account flags above are preserved snapshots.",
+      "results": "research/workbench/evidence/seven_expert_meta_20261031_results_v1.json",
+      "results_sha256": "03fdf2886068b27c303f77a0cd6648a457e90ec9cf63c0cf2489c214a491ba32",
+      "actual_preregistration_commit": "8f6fe696be139123960dc9385d32ccd0cfaac924",
+      "actual_financial_publication_fence_sequence": 611,
+      "actual_financial_publication_fence_at_utc": "2026-10-30T23:54:04.190063Z",
+      "actual_completed_at_utc": "2026-10-30T23:54:19.078209Z",
+      "all_eight_main_paths_follow_verified_publication_fence": true,
+      "financial_rules_completed": 2,
+      "funded_paths_completed": 8,
+      "financial_rules_qualified": 0,
+      "financial_verdicts": {
+        "expert_pool_seven_equal_weight_v1": "rejected",
+        "expert_pool_seven_rolling_pair_v1": "rejected"
+      },
+      "all_eight_CAGR_above_12pct": true,
+      "all_eight_drawdown_gates_fail": true,
+      "equal_Sharpe_passes": 3,
+      "equal_QQQ_passes": ["5y-base", "5y-stress"],
+      "rolling_Sharpe_passes": 0,
+      "rolling_QQQ_passes": 0,
+      "extra_stress_vs_base_cost_SPY_passes_both_rules": ["5y-stress"],
+      "path_order": ["10y-base", "10y-stress", "5y-base", "5y-stress"],
+      "equal_complete_outcomes": {
+        "net_cagr": [0.15531902092787764, 0.15082588841076205, 0.1828529923992428, 0.17336103945970605],
+        "RF_sharpe": [1.0603802588916083, 1.0259806312091655, 1.0511604227366729, 0.9886823495294665],
+        "maximum_drawdown": [0.1588591441749092, 0.1589316512119101, 0.1617305580396614, 0.16185169857181603],
+        "annualized_two_sided_turnover": [2.876422474957343, 2.8579847648390815, 2.850942387146988, 2.7991602262315864],
+        "actual_model_tickets": [1019, 1016, 507, 484],
+        "actual_total_fees_usd": [1281.8178423000163, 2034.6572814817114, 599.2115419847062, 835.096693040733]
+      },
+      "rolling_complete_outcomes": {
+        "net_cagr": [0.13872534284931493, 0.13244584956688032, 0.15538662828829963, 0.14291207261210603],
+        "RF_sharpe": [0.8618115404172197, 0.8159834188127183, 0.8368114224609747, 0.7565841806278364],
+        "maximum_drawdown": [0.19295208458086877, 0.19016657435484197, 0.19581454923356867, 0.16930665156841895],
+        "annualized_two_sided_turnover": [7.272607803971458, 7.279063460871375, 7.800975333838244, 7.822903937358404],
+        "actual_model_tickets": [846, 846, 445, 445],
+        "actual_total_fees_usd": [1490.210524550669, 3390.3525358776833, 688.9274110575894, 1406.093366039436]
+      },
+      "saved_six_control_comparison": {
+        "all_eight_matched_paths_reported": true,
+        "controls_rerun": false,
+        "equal_CAGR_higher_and_DD_worse_all_paths": true,
+        "equal_Sharpe_lower_only_five_year_base": true,
+        "rolling_DD_lower_but_still_above_15pct_all_paths": true,
+        "rolling_turnover_tickets_and_fees_higher_all_paths": true,
+        "rolling_Sharpe_improves_only_five_year_stress": true,
+        "isolated_causal_cost_or_source_attribution_claimed": false
+      },
+      "minimum_actual_cash_usd": 185.18020549866102,
+      "maximum_actual_gross_exposure": 0.9837705257147964,
+      "maximum_independent_NAV_gap_usd": 1.382431946694851e-10,
+      "all_completed_SSD_path_receipts_preserved": 208,
+      "all_private_receipt_artifact_file_hashes_preserved": 1252,
+      "financial_failure_withdraws_expert_technical_validity": false,
+      "new_financial_metrics_turnover_orders_and_fees_available": true,
+      "model_tickets_are_broker_orders": false,
       "independent_forward_validation": false,
       "investment_objective_verified": false,
       "order_authority": false
@@ -2060,13 +2117,13 @@
     },
     "aggregate_counts": {
       "registered": 60,
-      "completed": 50,
-      "reviews": 50,
-      "pending": 2,
+      "completed": 52,
+      "reviews": 52,
+      "pending": 0,
       "technical_failures": 8,
       "qualified": 0,
-      "account_paths": 200,
-      "total_legacy_plus_ssd_completed": 228
+      "account_paths": 208,
+      "total_legacy_plus_ssd_completed": 230
     },
     "additional_cohorts": [
       {
@@ -2393,9 +2450,9 @@
         "study_id": "ssd_strategy_expert_pool_seven_20261031_v1",
         "registration": "research/workbench/evidence/seven_expert_meta_20261031_registration_v1.json",
         "registration_sha256": "896408c7f91121c86cc1f91f9790c655fff08adecdd8948f3ed352e2dc8c659d",
-        "results": null,
-        "results_sha256": null,
-        "preregistration_commit": null
+        "results": "research/workbench/evidence/seven_expert_meta_20261031_results_v1.json",
+        "results_sha256": "03fdf2886068b27c303f77a0cd6648a457e90ec9cf63c0cf2489c214a491ba32",
+        "preregistration_commit": "8f6fe696be139123960dc9385d32ccd0cfaac924"
       }
     ],
     "status": "first_pair_complete_both_rejected",
@@ -3023,14 +3080,14 @@
     "第10项固定相反优先级：在当时较低SPY/QQQ尾部预算（以实际BIL风险作底）内最大化已观测机会，不扫风险倍率/旧门槛/窗口/核心参数。2026-10-28T05:46:36.615636Z真实登记先于122有证书计划（112优化/10非正机会），5前缀及完整6家族覆盖通过。先发布1074904478bfd0ba2a19d502c479ebd2de13c227，再于05:54:28.534515Z完成4资金路径并拒绝。依次十年base/stress、五年base/stress净CAGR12.9292/11.4123/16.5627/14.9118%，Sharpe0.6781/0.5922/0.7818/0.6907，DD26.4086/27.0756/26.6875/27.3277%；回撤/夏普/QQQ全失败，3条CAGR过且仅五年胜SPY。SSD10完成/40路径/合计188/0通过、118事件，原记录不变；不得拼接第9项回撤与第10项收益。"
   ],
   "next": [
-    "Seven-expert equal/pair identities607/608and target proofs609/610are real;all121decisions and242input/resolved records are retained. Current610events give60registrations,50completed reviews,8technical failures,2pending,200funded paths,228combined completions and0qualifiers. No new main account or financial result exists at this snapshot;preserve all original outcomes and forward identities.",
-    "Publish the exact seven-expert preregistration and all177code/147policy dependencies before its financial publication fence and eight original funded paths. Keep only the pre-frozen membership change,after16:15ET archival source scope,126/84/42k2pair law,original RF/costs/delays/gates;no retuning or rerun of saved six-expert controls. ANFCI nonadmission and all terminal failures remain unchanged.",
+    "Both seven-expert rules completed all original four paths after actual preregistration8f6fe696and fence611;both are rejected. Current629events give60registrations,52completed reviews,8technical failures,0pending,208funded paths,230combined completions and0qualifiers. All eight pass CAGR12but fail DD15;preserve all outcomes and one-day forward identities.",
+    "Use all saved seven-versus-six comparisons,not a selected path or retuned threshold. Equal raises CAGR but worsens DD throughout;rolling reduces DD yet still fails15%,raises turnover/tickets/fees throughout and improves Sharpe only in five-year stress. No next economic rule or pool is selected here. Retain the after16:15ET archival scope,all source admissions and terminal failures;do not replay controls or rescue this pair.",
     "Continue economically motivated, preregistered independent small batches without ordinary per-batch approval or a configuration-count ceiling until2026-10-31T15:59Z. Use one computation; at cutoff preserve partial work, clear only the SSD session timer and confirm absence.",
     "Keep old source refusals, VIG/SDY terminal429 and prospective/PIT gates. The independent market-only IBKR adapter is proved, but the one actual probe stopped on2157 before historical requests;0history rows/admissions,no automatic retry or inferred entitlement denial. Default readonly account synchronization remains prohibited."
   ],
   "next_zh": [
-    "七专家等权/滚动选对身份607/608先于实际新目标，609/610目标证明已完成，121决定和242输入/输出记录全部保留。当前610事件为60登记、50完成审阅、8技术失败、2待评估、200资金路径、合计228完成、0通过；此快照没有新主账户或金融结果，原结果和前瞻身份保持。",
-    "先精确发布七专家事前登记及177代码/147策略依赖，再建立金融发布围栏并运行原八条资金路径。只采用已冻结的成员变化、16:15ET后归档来源范围、126/84/42和k2原选对规则、RF/费用/延迟/全部门槛，不调参或重跑已存六专家对照；ANFCI非准入与全部技术失败继续保留。",
+    "七专家两规则在真实事前发布8f6fe696及围栏611之后完成原四路径，均拒绝。当前629事件为60登记、52完成审阅、8技术失败、0待评估、208资金路径、合计230完成、0通过。八条CAGR12均过但回撤15均失败；全部结果和一天前瞻身份保持。",
+    "采用完整七对六已存对照，不挑路径或改门槛。等权各路径CAGR提高但回撤恶化；滚动各路径回撤降低仍不达15%，换手/订单/费用全增，只有五年stress夏普改善。此处未选下一经济规则或专家池，保留16:15ET后归档范围、全部来源准入及技术失败，不重跑对照或挽救本轮。",
     "持续开展有经济理由、事前冻结的独立小批次，无普通逐批确认或配置次数上限，截止2026-10-31T15:59Z；单计算job，届时保存未完状态、只清除SSD会话timer并确认不存在。",
     "原拒绝来源、VIG/SDY终止429和前瞻/PIT门保持。独立IBKR market-only适配器已证明，但唯一真实探针在历史请求前因2157停止；历史行/准入0，不自动重试或推断订阅拒绝，仍禁止默认readonly账户同步。"
   ],
