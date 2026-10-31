@@ -20,7 +20,69 @@ inception date. Raw documents, prices and daily account ledgers remain private.
 The original bundle's README and manifest remain byte-for-byte unchanged; this
 separate document describes the new protocol without rewriting that history.
 
-## Latest full-support pair-allocation ensemble outcomes
+## Latest recorded allocation-mass decomposition
+
+The [sanitized complete diagnosis](evidence/expert_pair_allocation_decomposition_20261031_v1.json)
+adds **zero financial trials**. Actual origin61475at
+**2026-10-31T03:25:39.534Z** is a genuine system/idle continuation.
+The fixed diagnostic intent
+`2b3262f6b6559121f6e3ba6b2b645887929f1b8c8f5c5f940b3f0227e8761363`
+followed the first21offline checks and precedes the one actual comparison,
+completed at**2026-10-31T03:46:43.516522Z**.
+
+All121dates include7explicitly unscored initial states and114mature
+recorded allocations. All2394original pair comparisons retain exactly
+identical member weights,training correlations andmarginal variance
+records. Verify the old484input/resolved records against their recorded
+information audits,then preserve242newmatched input/resolved diagnostic
+records. No source scorer,covariance,STD,ERC,rank,target or account
+entrypoint is rerun.
+
+The fixed uniform-anchored identity separates a pair-mass redistribution
+term from an ordinal-mass-weighted recorded risk-difference term. The
+latter is exactlyzero on every original pair and expert coordinate.
+Maximum source allocation-sum residual is5.551115123125783e-17;
+maximum anchored identity residual is8.326672684688674e-17. These
+observed finite binary64 residuals are not a rigorous error bound,
+a unique causal explanation or recovered original source memory.
+
+Mean **recorded mature assessment fractions**,not main NAV exposures:
+
+| Complete expert | Uniform mean % | Ordinal mean % | Ordinal-minus-uniform pp |
+|---|---:|---:|---:|
+| `equity_first_month_end_commitment_v1` | 10.521944 | 11.950630 | +1.428686 |
+| `benchmark_opportunity_joint_tail_v1` | 19.349094 | 15.094993 | -4.254101 |
+| `symmetric_garch_growth_bil_v1` | 9.909955 | 11.560614 | +1.650659 |
+| `semiconductor_ratchet_protection` | 15.559098 | 13.730777 | -1.828320 |
+| `semiconductor_option_dollar_profit_share_confirmation` | 13.969265 | 16.678928 | +2.709663 |
+| `four_factor_defense_diversified` | 17.426039 | 15.976824 | -1.449215 |
+| `two_segment_vvix_uncertainty_confirmation_v1` | 13.264606 | 15.007234 | +1.742628 |
+
+Uniform was not equal expert weighting. Ordinal redistributes mass away
+from the joint-tail,ratchet anddefensive experts on average,toward
+committed trend,conditional variance,profit confirmation andVVIX.
+This accounting statement does not identify why a main return orDD
+changed,or establish that an expert should be enabled/disabled.
+
+Mature recorded expert-weight L1difference ranges0.16380807173338663-
+0.46238689989038034,mean0.32641175454929816. MeanHHI is
+0.15590376362429376/0.16291666422814732 foruniform/ordinal;
+mean effective allocation number is6.436885673554309/6.184769900419436.
+These are unweighted decision-level concentration summaries,not
+independent risk-source counts or actual holdings. All121-source and
+114-mature summaries remain separately available;unscored defaults are
+not successful risk assessments. Neutral above/below/equal counts use
+the exact stored binary64 comparison,not a significance threshold.
+
+The fixed diagnostic took12.33seconds,peakRSS351444992B,zero swaps.
+All224saved receipts/1348financial files,original ledger andforward
+identities remain unchanged. Journal675still gives64registrations,
+56completed reviews,eighttechnical failures,zero pending,224funded
+paths,234combined completions andzeroqualifiers. No PNL,fee,CAGR,
+DD,counterfactual-return or new financial policy is computed. Stop at
+this evidence;the investment objective remains unmet.
+
+## Latest completed full-support pair-allocation ensemble outcomes
 
 The [complete actual outcomes](evidence/expert_pair_ensemble_20261031_results_v1.json)
 retain all eight original funded paths;**both fixed rules are rejected**.

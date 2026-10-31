@@ -43,7 +43,32 @@ portfolio remain separate. The first fixed-pool study requires an equal-weight
 control and one causal rolling rule, without claiming that the pool or direction
 change itself has met the investment objective.
 
-The latest [full-support pair-allocation ensemble outcomes](research/workbench/evidence/expert_pair_ensemble_20261031_results_v1.json)
+The latest [recorded allocation-mass diagnosis](research/workbench/evidence/expert_pair_allocation_decomposition_20261031_v1.json)
+adds **zero financial trials**. It matches all121source decisions,
+seven unscored initial states,114mature allocations and2394original
+pairs. Recorded member weights,training correlation andmarginal variance
+differences are exactlyzero;the fixed uniform-anchored allocation
+identity has maximum residual8.326672684688674e-17.
+
+Ordinal-versus-uniform recorded expert-weight L1difference averages
+0.32641175454929816 over mature decisions. Mean allocationHHI rises
+from0.15590376362429376to0.16291666422814732;mean effective allocation
+number falls from6.436885673554309to6.184769900419436. These are
+assessment-weight concentration statistics,not independent factor
+counts or actual main holdings. Uniform aggregation was not equal
+expert weighting;ranking redistributes pair mass rather than changing
+the matched stored risk opinions.
+
+The source484input/resolved records and242newdiagnostic records are
+preserved. Intent`2b3262f6b6559121f6e3ba6b2b645887929f1b8c8f5c5f940b3f0227e8761363`
+followed the first21offline checks and preceded the single actual
+comparison. This is new diagnostic arithmetic on stored records,
+not recovered memory,source scoring/ranking replay,causal fee
+attribution or a main-return counterfactual. All675events/64registrations/
+56reviews/eighttechnical failures/zero pending/224paths/234combined
+completions/zeroqualifiers remain unchanged. No new financial rule is selected.
+
+The latest completed [full-support pair-allocation ensemble outcomes](research/workbench/evidence/expert_pair_ensemble_20261031_results_v1.json)
 complete all eight original funded paths;**both fixed rules are rejected**.
 Actual preregistration`a7ee25b8ae83ce21ff53809a2bc1f3c05630ec50` precedes
 fence657at**2026-10-31T02:55:37.512900Z** and all eight path starts.

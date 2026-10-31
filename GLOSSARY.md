@@ -66,6 +66,12 @@ expert pairs into one expert allocation. Overlapping pairs do not create
 additional independent experts or capital accounts.
 _Avoid_: Independent strategy count, summed shadow wealth
 
+**Allocation-mass decomposition (分配权重拆分)**:
+An accounting of how candidate-allocation mass contributes to a meta-strategy's
+statistical expert weights. It is not realized main-account profit, causal return
+attribution or independent diversification.
+_Avoid_: Main-account PnL, causal fee effect
+
 **Incumbent pair (保留专家对)**:
 The complete expert pair a meta-strategy retains as its current assessment choice.
 Its statistical allocation state is distinct from the main account's actual holdings.

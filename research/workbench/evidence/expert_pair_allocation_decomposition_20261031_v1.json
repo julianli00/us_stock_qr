@@ -1,0 +1,649 @@
+{
+  "all_financial_counts_unchanged": {
+    "current_journal_event_count": 675,
+    "current_journal_head_sha256": "30b7ead58cc386de0d25db3426150c78af535d0d7d53e17cd99d55ef2ca314db",
+    "new_account_paths": 224,
+    "new_completed_strategy_evaluations": 56,
+    "new_historical_point_gate_passes": 0,
+    "new_pending_candidates": 0,
+    "new_registered_candidates": 64,
+    "new_reviews": 56,
+    "new_technical_failures": 8,
+    "original_completed_configurations": 178,
+    "original_registered_versions": 96,
+    "original_reviews": 94,
+    "total_legacy_plus_ssd_completed_configurations": 234
+  },
+  "analysis_import_and_configuration_dependencies": 293,
+  "completed_at": "2026-10-31T03:46:43.516522+00:00",
+  "diagnosis_id": "ssd_expert_pair_allocation_decomposition_20261031_v1",
+  "independent_forward_validation": false,
+  "individual_pairs_weights_scores_or_raw_source_records_published": false,
+  "investment_objective_verified": false,
+  "main_account_PNL_fees_CAGR_or_drawdown_counterfactual_computed": false,
+  "new_diagnostic_arithmetic_not_original_source_memory": true,
+  "new_financial_configuration_selected": false,
+  "new_funded_paths": 0,
+  "new_source_requests": 0,
+  "new_strategy_evaluations": 0,
+  "order_authority": false,
+  "original_scores_risks_ranks_targets_or_accounts_regenerated": false,
+  "passed_offline_checks": 21,
+  "precomparison_intent": {
+    "path": "reports/ssd-continuous-research-v1/expert-pair-allocation-decomposition-20261031-v1/diagnostic-intent-v1.json",
+    "sha256": "2b3262f6b6559121f6e3ba6b2b645887929f1b8c8f5c5f940b3f0227e8761363"
+  },
+  "private_diagnostic": {
+    "path": "reports/ssd-continuous-research-v1/expert-pair-allocation-decomposition-20261031-v1/diagnostic-result-v1.json",
+    "sha256": "51a708e56fb8cc6baea2bd16772f18d8f731674dac63eab3538c512549ecf4bd"
+  },
+  "schema_version": 1,
+  "source484input_resolved_records_verified_without_pipeline_replay": true,
+  "source_inputs_checked": 1281,
+  "summary": {
+    "HHI_effective_number_is_independent_factor_count": false,
+    "all_original_named_pair_comparisons": 2394,
+    "all_source_allocations": {
+      "ordinal": {
+        "effective_allocation_number": {
+          "maximum": 7.0,
+          "mean": 6.231931972295997,
+          "minimum": 4.3583249103665915,
+          "observations": 121
+        },
+        "effective_number_is_independent_factor_or_expert_count": false,
+        "neutral_comparisons_are_strict_binary64_not_significance": true,
+        "observations": 121,
+        "per_expert": [
+          {
+            "exact_neutral_records": 7,
+            "expert_id": "equity_first_month_end_commitment_v1",
+            "recorded_assessment_fraction": {
+              "maximum": 0.20076617667660857,
+              "mean": 0.12085717619707717,
+              "minimum": 0.030193134720635798,
+              "observations": 121
+            },
+            "strict_above_neutral_records": 33,
+            "strict_below_neutral_records": 81
+          },
+          {
+            "exact_neutral_records": 7,
+            "expert_id": "benchmark_opportunity_joint_tail_v1",
+            "recorded_assessment_fraction": {
+              "maximum": 0.40173906921924707,
+              "mean": 0.1504817488090312,
+              "minimum": 0.05041487885426677,
+              "observations": 121
+            },
+            "strict_above_neutral_records": 58,
+            "strict_below_neutral_records": 56
+          },
+          {
+            "exact_neutral_records": 7,
+            "expert_id": "symmetric_garch_growth_bil_v1",
+            "recorded_assessment_fraction": {
+              "maximum": 0.24882697631252304,
+              "mean": 0.11718263973472523,
+              "minimum": 0.03971102259957724,
+              "observations": 121
+            },
+            "strict_above_neutral_records": 32,
+            "strict_below_neutral_records": 82
+          },
+          {
+            "exact_neutral_records": 7,
+            "expert_id": "semiconductor_ratchet_protection",
+            "recorded_assessment_fraction": {
+              "maximum": 0.24404350941581857,
+              "mean": 0.13762881162976137,
+              "minimum": 0.04763934869498482,
+              "observations": 121
+            },
+            "strict_above_neutral_records": 41,
+            "strict_below_neutral_records": 73
+          },
+          {
+            "exact_neutral_records": 7,
+            "expert_id": "semiconductor_option_dollar_profit_share_confirmation",
+            "recorded_assessment_fraction": {
+              "maximum": 0.260810762787842,
+              "mean": 0.1654047797117251,
+              "minimum": 0.0794276707123161,
+              "observations": 121
+            },
+            "strict_above_neutral_records": 82,
+            "strict_below_neutral_records": 32
+          },
+          {
+            "exact_neutral_records": 7,
+            "expert_id": "four_factor_defense_diversified",
+            "recorded_assessment_fraction": {
+              "maximum": 0.3868757072376662,
+              "mean": 0.15878990911204827,
+              "minimum": 0.04707920561445193,
+              "observations": 121
+            },
+            "strict_above_neutral_records": 59,
+            "strict_below_neutral_records": 55
+          },
+          {
+            "exact_neutral_records": 7,
+            "expert_id": "two_segment_vvix_uncertainty_confirmation_v1",
+            "recorded_assessment_fraction": {
+              "maximum": 0.26299889141061294,
+              "mean": 0.14965493480563163,
+              "minimum": 0.060134555066269524,
+              "observations": 121
+            },
+            "strict_above_neutral_records": 60,
+            "strict_below_neutral_records": 54
+          }
+        ],
+        "recorded_allocation_HHI": {
+          "maximum": 0.2294459501221278,
+          "mean": 0.16175619604965946,
+          "minimum": 0.14285714285714285,
+          "observations": 121
+        }
+      },
+      "uniform": {
+        "effective_allocation_number": {
+          "maximum": 7.0,
+          "mean": 6.469462535414804,
+          "minimum": 5.415108872445039,
+          "observations": 121
+        },
+        "effective_number_is_independent_factor_or_expert_count": false,
+        "neutral_comparisons_are_strict_binary64_not_significance": true,
+        "observations": 121,
+        "per_expert": [
+          {
+            "exact_neutral_records": 7,
+            "expert_id": "equity_first_month_end_commitment_v1",
+            "recorded_assessment_fraction": {
+              "maximum": 0.25601032366037313,
+              "mean": 0.10739682864122752,
+              "minimum": 0.065986384238741,
+              "observations": 121
+            },
+            "strict_above_neutral_records": 4,
+            "strict_below_neutral_records": 110
+          },
+          {
+            "exact_neutral_records": 7,
+            "expert_id": "benchmark_opportunity_joint_tail_v1",
+            "recorded_assessment_fraction": {
+              "maximum": 0.28325324493548026,
+              "mean": 0.19056171000754063,
+              "minimum": 0.10537527194381345,
+              "observations": 121
+            },
+            "strict_above_neutral_records": 82,
+            "strict_below_neutral_records": 32
+          },
+          {
+            "exact_neutral_records": 7,
+            "expert_id": "symmetric_garch_growth_bil_v1",
+            "recorded_assessment_fraction": {
+              "maximum": 0.14765749045486634,
+              "mean": 0.10163097667472169,
+              "minimum": 0.0519605338809195,
+              "observations": 121
+            },
+            "strict_above_neutral_records": 1,
+            "strict_below_neutral_records": 113
+          },
+          {
+            "exact_neutral_records": 7,
+            "expert_id": "semiconductor_ratchet_protection",
+            "recorded_assessment_fraction": {
+              "maximum": 0.1852061981570704,
+              "mean": 0.15485430910680906,
+              "minimum": 0.12450608014476663,
+              "observations": 121
+            },
+            "strict_above_neutral_records": 94,
+            "strict_below_neutral_records": 20
+          },
+          {
+            "exact_neutral_records": 7,
+            "expert_id": "semiconductor_option_dollar_profit_share_confirmation",
+            "recorded_assessment_fraction": {
+              "maximum": 0.18411876675471456,
+              "mean": 0.13987572007098412,
+              "minimum": 0.07726655626647341,
+              "observations": 121
+            },
+            "strict_above_neutral_records": 58,
+            "strict_below_neutral_records": 56
+          },
+          {
+            "exact_neutral_records": 7,
+            "expert_id": "four_factor_defense_diversified",
+            "recorded_assessment_fraction": {
+              "maximum": 0.22922639593934893,
+              "mean": 0.17244366970022207,
+              "minimum": 0.11303460298630572,
+              "observations": 121
+            },
+            "strict_above_neutral_records": 107,
+            "strict_below_neutral_records": 7
+          },
+          {
+            "exact_neutral_records": 7,
+            "expert_id": "two_segment_vvix_uncertainty_confirmation_v1",
+            "recorded_assessment_fraction": {
+              "maximum": 0.1722309962248774,
+              "mean": 0.13323678579849485,
+              "minimum": 0.07416213733682944,
+              "observations": 121
+            },
+            "strict_above_neutral_records": 40,
+            "strict_below_neutral_records": 74
+          }
+        ],
+        "recorded_allocation_HHI": {
+          "maximum": 0.1846684939408205,
+          "mean": 0.15514900043941726,
+          "minimum": 0.14285714285714285,
+          "observations": 121
+        }
+      }
+    },
+    "decomposition_is_uniform_anchored_not_unique_causal_attribution": true,
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "main_account_PNL_fees_CAGR_or_drawdown_counterfactual_computed": false,
+    "matched_decisions": 121,
+    "mature_ordinal_minus_uniform_L1": {
+      "maximum": 0.46238689989038034,
+      "mean": 0.32641175454929816,
+      "minimum": 0.16380807173338663,
+      "observations": 114
+    },
+    "mature_per_expert_decomposition": [
+      {
+        "expert_id": "equity_first_month_end_commitment_v1",
+        "recorded_fraction_difference": {
+          "maximum": 0.07794971594112954,
+          "mean": 0.014286860125068497,
+          "minimum": -0.1200032652015261,
+          "observations": 114
+        },
+        "recorded_risk_difference_term": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "observations": 114
+        },
+        "uniform_anchored_mass_term": {
+          "maximum": 0.07794971594112952,
+          "mean": 0.014286860125068497,
+          "minimum": -0.12000326520152607,
+          "observations": 114
+        }
+      },
+      {
+        "expert_id": "benchmark_opportunity_joint_tail_v1",
+        "recorded_fraction_difference": {
+          "maximum": 0.1637991616960685,
+          "mean": -0.04254101144754074,
+          "minimum": -0.19310633882408657,
+          "observations": 114
+        },
+        "recorded_risk_difference_term": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "observations": 114
+        },
+        "uniform_anchored_mass_term": {
+          "maximum": 0.16379916169606845,
+          "mean": -0.04254101144754074,
+          "minimum": -0.1931063388240865,
+          "observations": 114
+        }
+      },
+      {
+        "expert_id": "symmetric_garch_growth_bil_v1",
+        "recorded_fraction_difference": {
+          "maximum": 0.1011694858576567,
+          "mean": 0.01650658973912656,
+          "minimum": -0.06826126157715236,
+          "observations": 114
+        },
+        "recorded_risk_difference_term": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "observations": 114
+        },
+        "uniform_anchored_mass_term": {
+          "maximum": 0.1011694858576567,
+          "mean": 0.016506589739126557,
+          "minimum": -0.06826126157715236,
+          "observations": 114
+        }
+      },
+      {
+        "expert_id": "semiconductor_ratchet_protection",
+        "recorded_fraction_difference": {
+          "maximum": 0.0844285718678697,
+          "mean": -0.018283203462480406,
+          "minimum": -0.11981306147458953,
+          "observations": 114
+        },
+        "recorded_risk_difference_term": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "observations": 114
+        },
+        "uniform_anchored_mass_term": {
+          "maximum": 0.0844285718678697,
+          "mean": -0.018283203462480403,
+          "minimum": -0.11981306147458955,
+          "observations": 114
+        }
+      },
+      {
+        "expert_id": "semiconductor_option_dollar_profit_share_confirmation",
+        "recorded_fraction_difference": {
+          "maximum": 0.0994126259734269,
+          "mean": 0.027096633478330332,
+          "minimum": -0.07171041957752763,
+          "observations": 114
+        },
+        "recorded_risk_difference_term": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "observations": 114
+        },
+        "uniform_anchored_mass_term": {
+          "maximum": 0.09941262597342687,
+          "mean": 0.027096633478330332,
+          "minimum": -0.07171041957752765,
+          "observations": 114
+        }
+      },
+      {
+        "expert_id": "four_factor_defense_diversified",
+        "recorded_fraction_difference": {
+          "maximum": 0.15764931129831725,
+          "mean": -0.014492149396219556,
+          "minimum": -0.151183688776242,
+          "observations": 114
+        },
+        "recorded_risk_difference_term": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "observations": 114
+        },
+        "uniform_anchored_mass_term": {
+          "maximum": 0.15764931129831725,
+          "mean": -0.014492149396219555,
+          "minimum": -0.151183688776242,
+          "observations": 114
+        }
+      },
+      {
+        "expert_id": "two_segment_vvix_uncertainty_confirmation_v1",
+        "recorded_fraction_difference": {
+          "maximum": 0.10854979453504038,
+          "mean": 0.017426280963715377,
+          "minimum": -0.08373599533147125,
+          "observations": 114
+        },
+        "recorded_risk_difference_term": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "observations": 114
+        },
+        "uniform_anchored_mass_term": {
+          "maximum": 0.10854979453504039,
+          "mean": 0.017426280963715374,
+          "minimum": -0.08373599533147125,
+          "observations": 114
+        }
+      }
+    ],
+    "mature_recorded_allocations": 114,
+    "mature_source_allocations": {
+      "ordinal": {
+        "effective_allocation_number": {
+          "maximum": 6.849867623112542,
+          "mean": 6.184769900419436,
+          "minimum": 4.3583249103665915,
+          "observations": 114
+        },
+        "effective_number_is_independent_factor_or_expert_count": false,
+        "neutral_comparisons_are_strict_binary64_not_significance": true,
+        "observations": 114,
+        "per_expert": [
+          {
+            "exact_neutral_records": 0,
+            "expert_id": "equity_first_month_end_commitment_v1",
+            "recorded_assessment_fraction": {
+              "maximum": 0.20076617667660857,
+              "mean": 0.11950630105128367,
+              "minimum": 0.030193134720635798,
+              "observations": 114
+            },
+            "strict_above_neutral_records": 33,
+            "strict_below_neutral_records": 81
+          },
+          {
+            "exact_neutral_records": 0,
+            "expert_id": "benchmark_opportunity_joint_tail_v1",
+            "recorded_assessment_fraction": {
+              "maximum": 0.40173906921924707,
+              "mean": 0.15094992636748047,
+              "minimum": 0.05041487885426677,
+              "observations": 114
+            },
+            "strict_above_neutral_records": 58,
+            "strict_below_neutral_records": 56
+          },
+          {
+            "exact_neutral_records": 0,
+            "expert_id": "symmetric_garch_growth_bil_v1",
+            "recorded_assessment_fraction": {
+              "maximum": 0.24882697631252304,
+              "mean": 0.11560613515703291,
+              "minimum": 0.03971102259957724,
+              "observations": 114
+            },
+            "strict_above_neutral_records": 32,
+            "strict_below_neutral_records": 82
+          },
+          {
+            "exact_neutral_records": 0,
+            "expert_id": "semiconductor_ratchet_protection",
+            "recorded_assessment_fraction": {
+              "maximum": 0.24404350941581857,
+              "mean": 0.13730777374737832,
+              "minimum": 0.04763934869498482,
+              "observations": 114
+            },
+            "strict_above_neutral_records": 41,
+            "strict_below_neutral_records": 73
+          },
+          {
+            "exact_neutral_records": 0,
+            "expert_id": "semiconductor_option_dollar_profit_share_confirmation",
+            "recorded_assessment_fraction": {
+              "maximum": 0.260810762787842,
+              "mean": 0.16678928372911173,
+              "minimum": 0.0794276707123161,
+              "observations": 114
+            },
+            "strict_above_neutral_records": 82,
+            "strict_below_neutral_records": 32
+          },
+          {
+            "exact_neutral_records": 0,
+            "expert_id": "four_factor_defense_diversified",
+            "recorded_assessment_fraction": {
+              "maximum": 0.3868757072376662,
+              "mean": 0.15976823686454245,
+              "minimum": 0.04707920561445193,
+              "observations": 114
+            },
+            "strict_above_neutral_records": 59,
+            "strict_below_neutral_records": 55
+          },
+          {
+            "exact_neutral_records": 0,
+            "expert_id": "two_segment_vvix_uncertainty_confirmation_v1",
+            "recorded_assessment_fraction": {
+              "maximum": 0.26299889141061294,
+              "mean": 0.15007234308317044,
+              "minimum": 0.060134555066269524,
+              "observations": 114
+            },
+            "strict_above_neutral_records": 60,
+            "strict_below_neutral_records": 54
+          }
+        ],
+        "recorded_allocation_HHI": {
+          "maximum": 0.2294459501221278,
+          "mean": 0.16291666422814732,
+          "minimum": 0.14598822269584322,
+          "observations": 114
+        }
+      },
+      "uniform": {
+        "effective_allocation_number": {
+          "maximum": 6.87717502857226,
+          "mean": 6.436885673554309,
+          "minimum": 5.415108872445039,
+          "observations": 114
+        },
+        "effective_number_is_independent_factor_or_expert_count": false,
+        "neutral_comparisons_are_strict_binary64_not_significance": true,
+        "observations": 114,
+        "per_expert": [
+          {
+            "exact_neutral_records": 0,
+            "expert_id": "equity_first_month_end_commitment_v1",
+            "recorded_assessment_fraction": {
+              "maximum": 0.25601032366037313,
+              "mean": 0.10521944092621516,
+              "minimum": 0.065986384238741,
+              "observations": 114
+            },
+            "strict_above_neutral_records": 4,
+            "strict_below_neutral_records": 110
+          },
+          {
+            "exact_neutral_records": 0,
+            "expert_id": "benchmark_opportunity_joint_tail_v1",
+            "recorded_assessment_fraction": {
+              "maximum": 0.28325324493548026,
+              "mean": 0.1934909378150212,
+              "minimum": 0.10537527194381345,
+              "observations": 114
+            },
+            "strict_above_neutral_records": 82,
+            "strict_below_neutral_records": 32
+          },
+          {
+            "exact_neutral_records": 0,
+            "expert_id": "symmetric_garch_growth_bil_v1",
+            "recorded_assessment_fraction": {
+              "maximum": 0.14765749045486634,
+              "mean": 0.09909954541790636,
+              "minimum": 0.0519605338809195,
+              "observations": 114
+            },
+            "strict_above_neutral_records": 1,
+            "strict_below_neutral_records": 113
+          },
+          {
+            "exact_neutral_records": 0,
+            "expert_id": "semiconductor_ratchet_protection",
+            "recorded_assessment_fraction": {
+              "maximum": 0.1852061981570704,
+              "mean": 0.15559097720985873,
+              "minimum": 0.12450608014476663,
+              "observations": 114
+            },
+            "strict_above_neutral_records": 94,
+            "strict_below_neutral_records": 20
+          },
+          {
+            "exact_neutral_records": 0,
+            "expert_id": "semiconductor_option_dollar_profit_share_confirmation",
+            "recorded_assessment_fraction": {
+              "maximum": 0.18411876675471456,
+              "mean": 0.13969265025078142,
+              "minimum": 0.07726655626647341,
+              "observations": 114
+            },
+            "strict_above_neutral_records": 58,
+            "strict_below_neutral_records": 56
+          },
+          {
+            "exact_neutral_records": 0,
+            "expert_id": "four_factor_defense_diversified",
+            "recorded_assessment_fraction": {
+              "maximum": 0.22922639593934893,
+              "mean": 0.17426038626076204,
+              "minimum": 0.11303460298630572,
+              "observations": 114
+            },
+            "strict_above_neutral_records": 107,
+            "strict_below_neutral_records": 7
+          },
+          {
+            "exact_neutral_records": 0,
+            "expert_id": "two_segment_vvix_uncertainty_confirmation_v1",
+            "recorded_assessment_fraction": {
+              "maximum": 0.1722309962248774,
+              "mean": 0.13264606211945507,
+              "minimum": 0.07416213733682944,
+              "observations": 114
+            },
+            "strict_above_neutral_records": 40,
+            "strict_below_neutral_records": 74
+          }
+        ],
+        "recorded_allocation_HHI": {
+          "maximum": 0.1846684939408205,
+          "mean": 0.15590376362429376,
+          "minimum": 0.1454085428748504,
+          "observations": 114
+        }
+      }
+    },
+    "maximum_source_allocation_sum_residual": 5.551115123125783e-17,
+    "maximum_uniform_anchored_decomposition_residual": 8.326672684688674e-17,
+    "neutral_initial_states_are_successful_risk_assessments": false,
+    "new_diagnostic_arithmetic_not_original_source_memory": true,
+    "new_financial_configuration_selected": false,
+    "original_scores_risks_ranks_targets_or_accounts_regenerated": false,
+    "paired_recorded_marginal_variance_differences": {
+      "maximum": 0.0,
+      "mean": 0.0,
+      "minimum": 0.0,
+      "observations": 2394
+    },
+    "paired_recorded_risk_weight_differences": {
+      "maximum": 0.0,
+      "mean": 0.0,
+      "minimum": 0.0,
+      "observations": 2394
+    },
+    "paired_recorded_training_correlation_differences": {
+      "maximum": 0.0,
+      "mean": 0.0,
+      "minimum": 0.0,
+      "observations": 2394
+    },
+    "unscored_initial_decisions": 7
+  }
+}
