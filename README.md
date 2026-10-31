@@ -43,7 +43,30 @@ portfolio remain separate. The first fixed-pool study requires an equal-weight
 control and one causal rolling rule, without claiming that the pool or direction
 change itself has met the investment objective.
 
-The latest [recorded allocation-mass diagnosis](research/workbench/evidence/expert_pair_allocation_decomposition_20261031_v1.json)
+The latest [frozen term-expert eligibility failure](research/workbench/evidence/legacy_term_risk_expert_eligibility_20261031_v1.json)
+adds **zero financial trials and admits no expert**. The one fixed
+review stopped on its first ten-year-base target-calendar guard,which
+required the first active request to be2016-10-05. The untouched source
+instead retains its first request at2015-11-30 and25pre-anchor requests;
+the actual2016-10-05capital-anchor target is present.
+
+Read-only failure inspection verifies finite,nonnegative98percent
+native requests,max budget difference2.220446049250313e-16. This
+identifies a **frozen checker assumption incompatible with preserved
+source prehistory**,not an invalid original strategy or missing anchor.
+The full four-path RF,funding and Interface checks did not complete;
+no eligibility or RF mismatch conclusion is claimed.
+
+The first14offline tests preceded intent
+`9cc1142b9006ecd00e98a31965a56656be4a6bc44145ed013a6dfaa9e400823e`;
+those synthetic tests did not cover retained source prehistory.
+Preserve the failed code,source files and attempt without retry,
+truncation,dense target creation,new Adapter,RF view or source waiver.
+The active seven-expert pool and all675events/64registrations/56reviews/
+eighttechnical failures/zero pending/224paths/234combined/zeroqualifiers
+remain unchanged. No next technical repair or financial rule is selected.
+
+The latest completed [recorded allocation-mass diagnosis](research/workbench/evidence/expert_pair_allocation_decomposition_20261031_v1.json)
 adds **zero financial trials**. It matches all121source decisions,
 seven unscored initial states,114mature allocations and2394original
 pairs. Recorded member weights,training correlation andmarginal variance

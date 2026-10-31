@@ -20,7 +20,59 @@ inception date. Raw documents, prices and daily account ledgers remain private.
 The original bundle's README and manifest remain byte-for-byte unchanged; this
 separate document describes the new protocol without rewriting that history.
 
-## Latest recorded allocation-mass decomposition
+## Latest frozen term-expert eligibility failure
+
+The [truthful terminal failure](evidence/legacy_term_risk_expert_eligibility_20261031_v1.json)
+adds **zero financial trials and admits no expert**. The original
+`factor_gold_term_half_risk` was selected for its term-horizon insurance
+pressure mechanism and retained equity participation,not historical
+return rank. Originalcandidate17/review19,configuration0.5,ratio1,
+all source dates,code and financial verdicts remain unchanged.
+
+The first14offline tests preceded fixed eligibility intent
+`9cc1142b9006ecd00e98a31965a56656be4a6bc44145ed013a6dfaa9e400823e`.
+The one actual44.96-second review,peakRSS335716352B,zero swaps,
+failed before completion on the first ten-year-base native-request
+validation. It required **first active request=2016-10-05**. The
+untouched source actually retains2015-11-30as its first active
+request and25requests before2016-10-05. Its2015-08-10to2026-10-05
+source calendar also contains a complete defined2016-10-05capital
+anchor. This failure is in the frozen checker's first-active assumption,
+not evidence that source prehistory should be removed.
+
+A separate minimal **read-only inspection of failed operands**,not a
+second review,confirms the other conditions at that failure group:
+all active requests finite,nonnegative and98percentfunded,max sum
+difference2.220446049250313e-16. The first-active equality alone
+fails;the actual anchor row is present. The original source policy is
+not retroactively called technically invalid for retaining prehistory.
+
+The synthetic tests covered anchored-only target lattices,not this
+retained-prehistory case. Their pass did not prove the original source
+would fit the checker's full contract. All four-path cash-funding,
+native/commonRF equality and existingDense/MonthlyAdapter checks
+**did not complete**. No successful eligibility,RF mismatch or
+current-pool admission is claimed.
+
+Preserve the failedOwn4code,review attempt and source targets.
+Do not fix the frozen guard in place,crop the25oldrequests,forward-fill
+or rebuild targets,create an Adapter/recommendation/RFview,relax
+source admission or rerun the fixed review. Any future technical repair
+would need a separate independently frozen identity and is not selected
+by this closure. The original term source remains daily-close-only
+archival evidence,not authenticated historical intraday publication
+or a traded option-index return.
+
+All1324frozen source/code references and283analysis dependencies are
+preserved. All224previous receipts/1348financial files and the
+legacy178/94/96/seq246,failures and single-day prospective identities
+remain unchanged. Journal675still gives64registrations,56reviews,
+eightfinancial technical failures,zero pending,224funded paths,
+234combined completions andzeroqualifiers. This failed technical
+eligibility attempt is not appended as a new financial strategy trial.
+The active seven-expert pool and investment-goal-unmet status remain.
+
+## Latest completed recorded allocation-mass decomposition
 
 The [sanitized complete diagnosis](evidence/expert_pair_allocation_decomposition_20261031_v1.json)
 adds **zero financial trials**. Actual origin61475at
