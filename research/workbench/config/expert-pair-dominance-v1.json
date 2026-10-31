@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_expert_pair_assessment_dominance_20261031_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "prior_completed_configurations": 230,
+  "prior_new_registered_candidates": 60,
+  "prior_new_completed_strategy_evaluations": 52,
+  "prior_new_technical_failures": 8,
+  "prior_journal_sequence": 629,
+  "prior_journal_head_sha256": "c433aaa787972866e919c5452307f1b3552749777ac2c3bf7f1bf84e73318293",
+  "source_registration": {
+    "path": "evidence/seven_expert_meta_20261031_registration_v1.json",
+    "sha256": "896408c7f91121c86cc1f91f9790c655fff08adecdd8948f3ed352e2dc8c659d"
+  },
+  "source_specification_sha256": "fcb5e06fb0b3acb83c20cf69d0acf2d5e9aea7a1c05e267aea496c59f5dc60f2",
+  "source_scoring_policy": {
+    "path": "config/strategy-expert-pool-seven-v1.json",
+    "sha256": "f27b1ac96253faef7ce57520682dac83ef426272057dfa2c277c61fcc319416f"
+  },
+  "source_pair_controls": {
+    "path": "reports/ssd-continuous-research-v1/seven-expert-meta-20261031-v1/results.json",
+    "sha256": "871f0b649ace186d0f2f53a0cbe71fc01dfe4dc3ca22349ff9ecc1c984af8223"
+  },
+  "source_menu_diagnosis": {
+    "path": "evidence/expert_pair_menu_extension_20261031_v1.json",
+    "sha256": "0103bcefc38fd6f8eef7dbf459275c7fcb469cbfab021cee805fb618c1c36685"
+  },
+  "decision_information_clock": "after_16_15_ET_index_close_before_later_open_execution",
+  "expert_ids": [
+    "equity_first_month_end_commitment_v1",
+    "benchmark_opportunity_joint_tail_v1",
+    "symmetric_garch_growth_bil_v1",
+    "semiconductor_ratchet_protection",
+    "semiconductor_option_dollar_profit_share_confirmation",
+    "four_factor_defense_diversified",
+    "two_segment_vvix_uncertainty_confirmation_v1"
+  ],
+  "mechanism_groups": [
+    "committed_price_trend_defense",
+    "joint_tail_opportunity",
+    "conditional_variance_growth",
+    "wealth_feedback_protection",
+    "common_quarter_profit_dollar_confirmation",
+    "cross_asset_defensive_relative_strength",
+    "option_market_uncertainty_confirmation"
+  ],
+  "initial_decision_session": "2016-10-05",
+  "lookback_sessions": 126,
+  "training_sessions": 84,
+  "validation_sessions": 42,
+  "selected_experts": 2,
+  "selection_score_decimal_places": 12,
+  "shadow_reference_path": "10y-base",
+  "reference_capital_usd": 10000,
+  "switch_cost_bps_per_side": 5.0,
+  "switch_commission_per_changed_asset_usd": 1.0,
+  "switch_cost_amortization_sessions": 21,
+  "changed_asset_numeric_tolerance": 1e-12,
+  "invested_target_budget": 0.98,
+  "cash_reserve": 0.02,
+  "actual_weight_trade_band": 0.025,
+  "minimum_economic_factor_families": 3,
+  "new_economic_factor_definitions": 0,
+  "new_shadow_account_runs": 0,
+  "new_shadow_recommendation_artifacts": 0,
+  "new_source_requests": 0,
+  "candidate_count_in_this_study": 2,
+  "study_size_is_a_total_research_quota": false,
+  "candidates": [
+    {
+      "id": "expert_pool_seven_pareto_pair_commitment_v1",
+      "switch_gate": "strict_train_and_validation_dominance"
+    },
+    {
+      "id": "expert_pool_seven_envelope_pair_commitment_v1",
+      "switch_gate": "challenger_lower_above_incumbent_upper"
+    }
+  ],
+  "methodology": {
+    "question": "Does retaining an incumbent expert pair until a challenger dominates both original matured assessments improve the saved instantaneous seven-pair selector? Change only pair-ID switching,not source data,assessment,ERC or execution.",
+    "gates": "Round each existing train/validation net-risk score to12decimals. Pareto requires challengertrain>incumbenttrain AND challengervalidation>incumbentvalidation. Empirical envelope requires challengerlower>incumbentupper. Strict greater-than,no epsilon. Choose qualifying challenger by original descendinglower/lexicalpair order;otherwise retain incumbent ID.",
+    "not_confidence": "Train-validation min-max is an empirical two-window ordering,not confidence interval,p-value,significance test,error bar or future-return guarantee.",
+    "state": "Each rule has its own incumbent pair ID and previous seven statistical weights. All original21pair assessments use that rule previous weights. Retaining ID still updates its currenttrainingERCweights and original underlying recommendations monthly;statistical incumbent is not actual main holdings or capital.",
+    "initial_and_unscorable": "Seven unmatured initial decisions use explicit unscored equal sevenths/incumbentNone. First or reset mature decision chooses originalbestlower pair. Unscorable incumbent reselects originalbestscoredpair. Fully degenerate assessment uses original explicitunscored equal fallback/resetNone. Missing source state remains an error,negative valid scores remain rankable,no newcashcutoff.",
+    "source_and_clocks": "Reuse seven complete admitted cached experts/native NET/commonRF and original after16:15ET archival VVIX scope. No source/fit/target/oldadmission/account/control ormenu-diagnosis replay,new views or provider requests. Actualintro/registration/admission remain distinct from counterfactualhistoricalavailability.",
+    "audit": "Before everyactualruledecision preserve incumbent/previousweights/binary64observations. Afterward preserve all21assessments/strictBooleankeys/qualifiedchallengers/reason/chosenweights/unifiedtarget before independent scalar/gate/prefixproof. Keep partial failed records without tolerance/algorithmrescue.",
+    "execution": "One14-asset98percentETF/2percentidle target and freshUSD10000 per original10y/5y/base-stress path. Original RF,costs5/20bps+$1tickets,1/2sessiondelays,2.5ppactualholdingband,initialDDpeak and cashfundedlongonly<=1x preserved. Shadowwealth/sourcefloors do not transfer.",
+    "bias": "Follow230exposed completions and recordedmenu evidence,not independently validated future switching superiority. Saved originalseveninstant-pair controls reused without new simulation;no isolatedcausalfeeattribution.",
+    "qualification": "Same candidate passes everyoriginalfourpath netSharpe>1,CAGR>12percent,DD<=15percent,fullcapitalmatched-costSPYandQQQ plus extraoriginalstress-vs-base-SPY and>=3genuine registeredfactorfamilies. Disclose realturnover,tickets,fees;no inventedturnovercap or metricsplicing.",
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

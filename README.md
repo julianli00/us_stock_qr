@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 60 SSD identities, 52 completed/rejected, eight retained technical failures and zero pending; 208 funded paths | Journal-derived current summary: 230 combined completions, zero qualifiers; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/DUAL_BENCHMARK_V1.md) | 178 legacy completions preserved; 62 SSD identities, 52 completed/rejected, eight retained technical failures and two pending; 208 funded paths | Journal-derived current summary: 230 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -42,6 +42,32 @@ cannot be repaired by blending. Shadow assessment and one fresh-capital master
 portfolio remain separate. The first fixed-pool study requires an equal-weight
 control and one causal rolling rule, without claiming that the pool or direction
 change itself has met the investment objective.
+
+The [assessment-dominance preregistration](research/workbench/evidence/expert_pair_dominance_20261031_registration_v1.json)
+registered two incumbent-pair commitment rules at
+**2026-10-31T01:20:25.910203Z /01:20:26.207539Z**, before real new
+assessment,state or target decisions. Both keep the same seven experts,
+126/84/42risk assessment,pair ERC,cost proxy and original execution.
+Pareto switching requires a challenger to beat the incumbent in both
+recorded assessments;the stronger empirical-envelope rule requires its
+lower score key to exceed the incumbent's upper key. These are strict
+pre-frozen two-window comparisons,not confidence intervals or significance.
+
+Intent`bdb2f5da12a324fe8f72a8d58b07f952d6e87ff5817f175717958a8385dd4e67`
+binds183code files,148policies and1237source references. The first38checks
+preceded freeze. Both retain121decisions,seven unscored initial states,
+114mature assessments,all21pairs,five prefixes and all six registered
+factor symbols. Their484actual input/resolved records preserve413896NET/RF
+binary64 values. Nominal incumbent-pair changes are36and12,not actual
+orders or proof of lower fees. Retaining an ID still updates its monthly ERC
+weights and the source recommendations.
+
+At this **registration-time pre-account snapshot**,no financial fence,
+main account,return,turnover or paid-fee result exists. Exact remote
+publication must precede all eight original funded paths. Journal633has
+62registrations,52completed reviews,eighttechnical failures,two pending,
+208funded paths,230combined completions andzeroqualifiers. Saved original
+seven-pair controls are reused,not rerun;no source or historical rule is repaired.
 
 The latest [recorded pair-menu extension diagnosis](research/workbench/evidence/expert_pair_menu_extension_20261031_v1.json)
 compares the saved six/seven rolling decisions without rerunning scores,

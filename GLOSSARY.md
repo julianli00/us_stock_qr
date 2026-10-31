@@ -43,6 +43,12 @@ The availability, at a decision time, of all observations required by a specifie
 expert assessment. An unobserved or incomplete assessment is not a successful score.
 _Avoid_: Filled score, safe default
 
+**Assessment dominance (评估支配关系)**:
+A declared ordering in which one expert allocation compares more favorably than
+another across specified known assessments. It is not statistical significance,
+a confidence bound or guaranteed future superiority.
+_Avoid_: Proven winner, confidence interval
+
 **Assessment admissibility (评估可行性)**:
 Satisfaction of a combination rule's stated constraints on observations known at a
 decision. It does not establish an expert's validity or final portfolio qualification.
@@ -53,6 +59,11 @@ The set of complete expert pairs considered at a meta-strategy decision.
 Restricting a menu of recorded assessments does not reconstruct another
 strategy's previous learning or capital state.
 _Avoid_: Replayed control, independent choices
+
+**Incumbent pair (保留专家对)**:
+The complete expert pair a meta-strategy retains as its current assessment choice.
+Its statistical allocation state is distinct from the main account's actual holdings.
+_Avoid_: Broker holdings, main capital account
 
 **Expert introduction (专家引入)**:
 The actual time an expert is defined and admitted into research. It is distinct

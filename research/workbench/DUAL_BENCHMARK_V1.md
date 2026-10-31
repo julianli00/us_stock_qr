@@ -20,6 +20,70 @@ inception date. Raw documents, prices and daily account ledgers remain private.
 The original bundle's README and manifest remain byte-for-byte unchanged; this
 separate document describes the new protocol without rewriting that history.
 
+## Latest assessment-dominance pair-commitment preregistration
+
+The [actual packet](evidence/expert_pair_dominance_20261031_registration_v1.json)
+registered Pareto and empirical-envelope commitment rules at
+**2026-10-31T01:20:25.910203Z /01:20:26.207539Z**, before any new real
+pair assessment,state update or target decision. The same seven complete
+source-admitted experts and original after16:15ET archival information clock
+are preserved. Source data,126/84/42assessments,pair ERC,original switch
+proxy,main costs,delays and qualification gates do not change.
+
+Each rule retains its own incumbent pair and previous statistical weights.
+Pareto requires challengertrain>incumbenttrain and
+challengervalidation>incumbentvalidation. The empirical-envelope rule
+requires challengerlower>incumbentupper. Individual train/validation keys
+and original minimum/maximum keys round to12decimals;comparisons are
+strict,with no epsilon. Among qualifying challengers the original
+descending-lower-key/lexical-pair priority applies;otherwise retain ID.
+The min-max empirical envelope is not a confidence interval,p-value,
+significance test,error bar or future-return guarantee.
+
+Keeping an incumbent still updates its current training ERC weights monthly
+and uses the preserved source recommendations. It does not freeze ETF
+holdings. Firstsevenunmatured decisions use explicit unscored equal
+sevenths/incumbentNone. First or reset mature choice uses the original
+best lower-key pair. An unscorable incumbent reselects the original best
+scored pair;fully degenerate assessment retains the original explicit
+unscored equal fallback/resetNone. Missing source observations remain
+errors and negative valid scores remain rankable;no new safe-cash cutoff.
+
+Intent`bdb2f5da12a324fe8f72a8d58b07f952d6e87ff5817f175717958a8385dd4e67`
+binds183code files,148policies and1237source references. The first38focused
+checks passed before freeze,including strict-gate distinctions,ties,
+negative/unscorable behavior,independent scalar/Boolean transition proof,
+input retention,prefix causality,cached source reuse,nonrecursive publication
+and unchanged monthly execution. No old source,admission,scorer pipeline,
+target,account,control or menu-diagnosis pipeline is replayed.
+
+The one actual41.40-second preparation retains121decisions for each rule,
+114mature assessments,seven unscored initial decisions andall21pairs.
+Incumbent IDs change36times under Pareto and12under the empirical envelope;
+they are retained for77/101non-dominance decisions. Those nominal changes
+are not actual trade tickets or fee outcomes. Both preserve all six
+registered factor symbols in each horizon. The484per-rule input/resolved
+records preserve413896NET/RF binary64 values before independent proof.
+Maximum independent target/weight/score differences are
+2.7755575615628914e-17/2.220446049250313e-16/5.329070518200751e-15.
+All five original prefix positions retain identical past decisions.
+
+The original unified14-asset98percentETF/2percentidle target,freshUSD10000,
+RF,initial DD peak,cashfundedlongonly<=1x,5/20bps+$1tickets,
+1/2sessiondelays and2.5ppactual-holdings band apply. Incumbent statistical
+state is not main capital or a transferable shadow high-water floor.
+Source seven-instant-pair results are exposed saved controls,not new
+simulations or isolated causal attribution.
+
+At this registration-time snapshot,no financial publication fence or
+candidate main path exists;no net return,actual turnover,ticket or fee
+result is claimed. Exact remote preregistration is required before all
+eight original funded paths. Journal633contains62registrations,
+52completed reviews,eighttechnical failures,two pending,208funded paths,
+230combined completions andzeroqualifiers. The two gate definitions are
+a fixed auditable batch,not a new total research quota or independent
+forward validation. The investment objective remains unmet.
+
 ## Latest recorded pair-menu extension diagnosis
 
 The [zero-trial diagnosis](evidence/expert_pair_menu_extension_20261031_v1.json)
