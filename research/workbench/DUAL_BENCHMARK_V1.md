@@ -20,7 +20,67 @@ inception date. Raw documents, prices and daily account ledgers remain private.
 The original bundle's README and manifest remain byte-for-byte unchanged; this
 separate document describes the new protocol without rewriting that history.
 
-## Latest frozen term-expert eligibility failure
+## Latest independent V2 term-expert eligibility conclusion
+
+The [complete read-only V2 conclusion](evidence/legacy_term_risk_expert_eligibility_20261031_v2.json)
+is **not_admitted_current_Interface**,not an incomplete retry ofV1.
+Actualorigin62856at**2026-10-31T05:53:39.603Z** is a newsystem/idle
+continuation,with separately recorded creatorsteering62625.
+Newcontract392cac99andfirst13tests precede intent
+`e94af87552ed2e84bc4c4e26e14adc3bd504350ba0ddad07b6a7b404ad214974`.
+The one46.55-second V2review completed at
+**2026-10-31T06:57:06.397538Z**,peakRSS348639232B,zero swaps.
+
+The full native source calendar remains2015-08-10to2026-10-05,
+firstactive request2015-11-30. Formalfunding anchors are2016-10-05/
+2021-10-05,not the first active row of the wholeCSV. Every formal
+anchor has a complete98percenttarget andits native book starts from
+USD10000withzero initial-return reconciliation difference.
+Preservedpre-anchor requests are25on ten-year paths and143on five-year
+paths. All131/121native month-end/non-month-end requests are kept.
+
+| Path | Formal returns | Pre-anchor requests kept | RF exact mismatches | Native funding/NAV/BT | Dense / Monthly calendar |
+|---|---:|---:|---:|---|---|
+| 10y-base | 2512 | 25 | 334 | Pass | Fail / Fail |
+| 10y-stress | 2512 | 25 | 334 | Pass | Fail / Fail |
+| 5y-base | 1254 | 143 | 262 | Pass | Fail / Fail |
+| 5y-stress | 1254 | 143 | 262 | Pass | Fail / Fail |
+
+Each ten-year RF mismatch first occurs2016-10-10;each five-year first
+occurs2021-12-22. Maximum native/common decoded-value difference is
+1.0001765041178778e-16. The comparison keeps native NET-book
+round_trip decoding andthe original active common reader's default
+parsing. Exact mismatch is disclosed,not normalized away or used to
+claim a different physical RF rate,unique parser cause or main-return
+effect. No epsilon,newRFview or originaldefinition is introduced.
+
+Minimumnative cash is167.2822884348118USD,maximumgross is
+0.9817583898987055,maximum storedBT/NAVdifference is
+1.2005330063402653e-10USD. AllfourbookNAV/return checks havezero
+gap;weight/gross discrepancy is at most2.220446049250313e-16.
+Freshcapital,cashfunding andunchangedoriginalcosts/delays pass separately
+from eligibility. No native book or independentBT is rerun.
+
+The native252-request calendar contains131genuine monthends and
+121other requests. Both existingAdapter contracts are checked over
+full nativepost-warmup context,not a window-filtered recommendation
+view. All121/61formal meta decisions have native targets,but the
+source remains neither dense-daily nor exclusivelymonthly. It is not
+called technically invalid for this legitimate event calendar;
+it is not admitted into the current pipeline without additional,
+independently authorized work.
+
+Stop at these complete RF andInterface blockers. Do not crop orffill
+source targets,create a recommendation/RFview,newAdapter orsource
+waiver,rerunV1orchange9cc114. V2 doesnotrepair the originalstrategy,
+admitanexpert,expandtheactive seven-policy pool orstartfinancialpaths.
+All1341source/code inputs and285analysis dependencies are preserved;
+all224previous receipts/1348financial files and the original ledger,
+failures,trialcounts andsingle-day prospective identities remain unchanged.
+Journal675still gives64registrations,56reviews,eighttechnical failures,
+zero pending,224paths,234combined completions andzeroqualifiers.
+
+## Archived frozen V1 term-expert eligibility failure
 
 The [truthful terminal failure](evidence/legacy_term_risk_expert_eligibility_20261031_v1.json)
 adds **zero financial trials and admits no expert**. The original

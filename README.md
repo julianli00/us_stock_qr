@@ -43,7 +43,35 @@ portfolio remain separate. The first fixed-pool study requires an equal-weight
 control and one causal rolling rule, without claiming that the pool or direction
 change itself has met the investment objective.
 
-The latest [frozen term-expert eligibility failure](research/workbench/evidence/legacy_term_risk_expert_eligibility_20261031_v1.json)
+The latest [independent V2 term-expert eligibility conclusion](research/workbench/evidence/legacy_term_risk_expert_eligibility_20261031_v2.json)
+completes all four read-only native-path checks but **does not admit the
+expert**. The corrected contract separates full source prehistory from
+formal funding anchors. All25requests before2016-10-05and143requests
+before2021-10-05remain;
+both anchors are defined and the four books initialize atUSD10000.
+Native cash-funding,NAV,weight/gross andcached independentBT checks pass.
+
+Two blockers remain on every path. Native NET-book RF decoded with
+round_trip does not exactly equal the original active common default
+reader:334mismatches on each ten-year path and262on each five-year
+path,max difference1.0001765041178778e-16. This is recorded decoder-value
+evidence,not proof of a changed physical RF definition or an economic
+effect. No normalization,tolerance relaxation or replacement view is applied.
+
+The preserved252-request native calendar has131month-end requests and
+121non-month-end requests. It fits neither the existingDense nor
+MonthlyAdapter's full-source calendar contract. All121/61formal meta
+decisions have native targets;that does not alone satisfy the full
+Interface. No cropping,ffill,new Adapter,source waiver,pool expansion
+or financial configuration follows this blocked conclusion.
+
+Intent`e94af87552ed2e84bc4c4e26e14adc3bd504350ba0ddad07b6a7b404ad214974`
+followed the first13offline checks and preceded the single actualV2review.
+Old9cc114/V1remains terminal andunchanged. All675financialevents/
+64registrations/56reviews/eighttechnical failures/zero pending/
+224paths/234combined/zeroqualifiers remain unchanged.
+
+The archived [frozen V1 term-expert eligibility failure](research/workbench/evidence/legacy_term_risk_expert_eligibility_20261031_v1.json)
 adds **zero financial trials and admits no expert**. The one fixed
 review stopped on its first ten-year-base target-calendar guard,which
 required the first active request to be2016-10-05. The untouched source
