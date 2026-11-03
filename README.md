@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 68 SSD identities, 58 completed/rejected, eight retained technical failures and two pending; 232 funded paths | Journal-derived current summary: 236 combined completions, zero qualifiers; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 68 SSD identities, 60 completed/rejected, eight retained technical failures and zero pending; 240 funded paths | Journal-derived current summary: 238 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -164,6 +164,25 @@ Both packets and every scientific Git/source pin must pass before any new
 account. Cached seven controls,all source shadows and their failures are
 reused,not replayed. No funded inclusion result or final qualification is
 claimed at this preregistration stage.
+
+All eight [controlled inclusion main paths](research/workbench/evidence/eight_expert_inclusion_20261103_results_v1.json)
+then completed after actual complete-cohort fence704at
+**2026-11-03T15:00:44.043374Z**,with both packets verified before any account.
+Both fixed rules are **rejected**. Equal-eight passes all CAGR gates,but
+every DD gate fails and both stressed Sharpes remain below1. Its five-year
+matched benchmark passes cannot be combined with ten-year metrics.
+Rolling-eight fails every Sharpe,DD,SPY andQQQ gate;both stress CAGRs
+also fail.
+
+Against their separately labeled cached seven controls,both new rules have
+lower CAGR/Sharpe on every path. Equal-eight DD improves only on five-year
+paths but remains15.685610/15.715371percent,not15percent. Rolling-eight DD
+worsens on every path. Turnover falls but tickets rise on all eight paths;
+fees fall on seven,not all. These are matched historical comparisons,not
+isolated fee causality or forward evidence. Technical source admission remains
+valid,the original seven policy is unchanged,and no failed parameter is tuned.
+Current journal722has68registered/60completed/eighttechnical failures/
+zero pending/240funded paths/238combined completions/**zeroqualifiers**.
 
 ### Archived October authorization
 

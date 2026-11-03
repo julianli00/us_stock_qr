@@ -144,9 +144,68 @@ seven**. Any inclusion or new combination needs a separately frozen study.
 The large actual drawdowns are retained and cannot be relabeled as guaranteed
 hedging because past covariance was negative.
 
-The current journal has699events,66SSD registrations,58completed reviews,
+At native-source closure,the journal had699events,66SSD registrations,58completed reviews,
 eighttechnical failures,zero pending and232funded paths. With the original
 178completions intact,there are236combined completions and **zeroqualifiers**.
 All228earlier receipts/1372file hashes remain unchanged;the new private
 inventory verifies232receipts/1396files. No expert,benchmark or older account
 is replayed,and synchronized newer data is not spliced or used to retime results.
+
+## Controlled eight-expert inclusion outcomes
+
+Only study-specific membership changes. Exact original pair/combine functions,
+126/84/42mature history,k2,trainingERC,mintrain-validation net risk,original
+switch proxy and12decimal ties are unchanged. Source generators/shadows and
+old controls are not replayed;technical availability is not final qualification.
+
+The complete source/code/package freeze`f504f1f8`and28offline cases precede
+both actual registrations700/701at2026-11-03T14:54:42.633415Z/42.960855Z.
+Both precede the first new scores/targets. Proofs702/703retain121decisions,
+242input/resolved records,236512roundtrippable NET/RF values,all28pairs,
+fiveprefix checks andsixgenuine factor symbols in both horizons. Seven
+immature states are explicitly unscored equal eighths;first scoring is
+2017-04-28.
+
+Actual remote preregistration`dce031ad58ef1e9748fc9a606825ac161ea987ff`
+publishes both packets. Common fence704at2026-11-03T15:00:44.043374Z verifies
+both complete-cohort packets and scientific Git/source pins before any account.
+Equal paths finish15:00:52.341845Z;rolling paths finish15:01:32.855108Z.
+
+| Fixed rule/path | Net CAGR | RF-excess Sharpe | Maximum DD | Tickets | Total model fees |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Equal8 10y base | 14.931246% | 1.014976 | 17.854791% | 1042 | USD1273.75 |
+| Equal8 10y stress | 14.392412% | 0.975545 | 17.283936% | 1035 | USD1939.25 |
+| Equal8 5y base | 17.537968% | 1.027956 | 15.685610% | 514 | USD596.74 |
+| Equal8 5y stress | 16.481847% | 0.957572 | 15.715371% | 507 | USD827.28 |
+| Rolling8 10y base | 12.374993% | 0.787238 | 22.932499% | 899 | USD1494.58 |
+| Rolling8 10y stress | 11.430070% | 0.719840 | 21.953482% | 899 | USD3170.81 |
+| Rolling8 5y base | 12.259609% | 0.630185 | 23.294694% | 469 | USD686.44 |
+| Rolling8 5y stress | 11.111842% | 0.555065 | 22.469235% | 469 | USD1318.09 |
+
+**Both fixed rules rejected.** Equal8passes allCAGR gates,butallDD gates fail
+andbothstressSharpes fail;onlythefive-yearpaths beatbothmatched benchmarks.
+The ten-year extra stress/base-SPY gate fails. Rolling8fails everySharpe/DD/
+SPY/QQQ gate,bothstressCAGR gates andboth extra stress/base-SPY gates.
+Do not round15.685610percentdown to15or0.975545up to1.
+
+Cached matched controls are seven-equal for equal8 and seven-rolling for
+rolling8. All eight newCAGR/Sharpes are lower. Equal8DD is1.3908-1.9689pp
+higher on ten-yearpaths and0.4698-0.4874pp lower onfive-yearpaths,butstillfails.
+Rolling8DD is2.9368-5.5386pp higher onallfourpaths. Annualized actualtwo-sided
+turnover falls onallpaths,buttickets rise by7-53. Fees fall onseven paths;
+rolling10ybase risesUSD4.37. These are not isolated fee-effect or equal-risk
+causal claims.
+
+The new source appears in37of114mature chosen pairs among121decisions.
+This is a recorded selection count,not executed trades,PNL attribution,
+independent factor evidence or a unique primitive cause. Technical source
+admission remains preserved,and the original seven policy is immutable;
+this rejected controlled cohort is not promoted or retuned.
+
+Current authoritative totals are722events,68SSD registrations,60completed
+reviews,eighttechnical failures,zero pending and240funded paths.
+All232earlier receipts/1396hashes are unchanged;new inventory verifies
+240receipts/1444files. With178legacy completions intact,there are
+**238combined completions andzeroqualifiers**. No new source or newer-input
+splice,old benchmark/expert/account replay,old forward backfill or changed
+investment threshold is involved.
