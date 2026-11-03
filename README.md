@@ -52,6 +52,14 @@ current-target L1 medoid, not return-score optimization. **No new real targets,
 financial registration or funded paths have been run in this preparation stage**;
 full orchestration, dependency freeze and a publication fence remain required.
 
+The subsequent [November financial orchestration freeze](research/workbench/evidence/expert_target_consensus_20261103_orchestration_freeze_v1.json)
+completes the [separate operational implementation](research/workbench/EXPERT_TARGET_CONSENSUS_ORCHESTRATION_V1.md):
+46 synthetic checks, 296 import/configuration/test dependencies and 1199 cached
+scientific source references. Native invocation 64948 is an actually observed
+scheduled delivery, distinct from the original activation. **No financial
+registration, new real consensus targets or funded accounts have started**;
+registration and the actual remote preregistration fence are next.
+
 ### Archived October authorization
 
 The accepted SSD research stage runs through **2026-10-31 23:59 Beijing time**
