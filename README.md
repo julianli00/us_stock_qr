@@ -26,6 +26,27 @@ descriptive metadata; the full legacy search/holdings application is not merged.
 
 ## Current SSD research authorization
 
+The user explicitly authorized a **new November window through 2026-11-30
+23:59 Beijing / 2026-11-30T15:59:00Z**, without an ordinary batch-approval or
+configuration-count ceiling. The [versioned November lifecycle](research/workbench/NOVEMBER_RESEARCH_V1.md)
+retains the original financial contract, sole SSD handoff session and shared
+one-computation lock. Its one-minute native continuation requires actual
+get-save-get evidence; neither this documentation nor authorization proves a
+scheduled invocation. The same binding begins closeout-only operation at
+23:49 Beijing on November 30. Host/SSD availability is required.
+
+The [actual activation snapshot](research/workbench/evidence/november_research_20261103_activation_v1.json)
+records the native get-save-get and complete bound-prompt hash. It is not proof
+of a later scheduled call. The original reporter's cohort authorization flags
+continue to describe the closed October window; they are not rewritten as
+November authorization.
+
+The closed October authorization, all failed outcomes and actual late timer
+cleanup remain historical evidence. No November authority retroactively changes
+them, resets counts, reopens terminal data probes or grants trading authority.
+
+### Archived October authorization
+
 The accepted SSD research stage runs through **2026-10-31 23:59 Beijing time**
 (`2026-10-31T15:59:00Z`) without a configuration-count ceiling or ordinary
 per-batch approval. The old exhausted six-configuration round remains historical;
