@@ -478,9 +478,86 @@ implementation references and the original ledger remain unchanged. No newer
 synchronized input, old benchmark/account/control replay, source-scope waiver,
 missed forward observation or changed return clock is introduced.
 
-Current authoritative totals are **749 events, 71 SSD registrations,
+At native-opinion closure, authoritative totals were **749 events, 71 SSD registrations,
 62 completed reviews, nine technical failures, zero pending and 248 funded
 paths**. With the original 178 completions preserved, there are **240 combined
 completions and zero qualifiers**. The original active seven and eight
 technically available sources remain unchanged. This failed construction is
 not promoted or followed by a frequency, band or source-clock parameter rescue.
+
+## Instrument concentration from complete expert opinions
+
+This independent question studies repeated current ETF allocations, not past
+return/covariance forecasts, risk caps, source-weight HHI or another native
+clock construction. Same eight sources, all 28 unordered equal pairs and the
+original initial/month-end decisions are frozen. Pair targets are normalized
+by the unchanged 0.98 ETF budget; minimize the sum of squared instrument
+weights. The original base switch proxy breaks only 12-decimal concentration
+ties, followed by stable expert identifiers. Initial prior allocation is
+absent and its switch proxy is zero, not a fabricated deployment estimate.
+
+Instrument weight concentration is not ultimate stock-level PIT overlap,
+economic independence or a future risk/DD bound. BIL remains an ETF and the
+fixed 2% idle target is not treated as a zero-risk additional instrument.
+The existing admissible NativeOpinionAdapter supplies unchanged source values;
+master execution remains the original monthly 2.5pp band and original
+costs/delays, not the failed daily event execution.
+
+The primary freezes at `692a1d89` after 12 checks; full financial orchestration
+freezes at `7b3a05a3` after 24 canonical checks, including those 12, with
+1280 source references and 305 implementation dependencies. The real unchanged
+packet contract and source-generation false flag are tested before registration.
+
+Actual registration750 at **2026-11-03T21:50:44.839923Z** precedes new HHI,
+pair selection and targets. Proof751 at **21:50:58.996260Z** retains all
+121 decisions, 242 actual input/resolved records, all 28 current pair cases,
+five prefixes and six genuine factor symbols in both original horizons.
+Rational target composition has zero difference; rational concentration
+checks differ by at most 2.220446049250313e-16.
+
+Actual remote preregistration `60cba8894aebe40235f39a57e678c14da8fbb9b3`
+precedes fence752 at **2026-11-03T21:59:41.717065Z**. The first new account
+starts **21:59:42.960188Z**; all four finish by **21:59:50.141436Z**.
+
+| Original path | Net CAGR | RF-excess Sharpe | Maximum DD | Model tickets | Total model fees |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| 10y base | 11.655412% | 0.709785 | 22.660553% | 931 | USD1228.12 |
+| 10y stress | 11.351836% | 0.691071 | 22.716154% | 931 | USD2109.13 |
+| 5y base | 13.793924% | 0.719483 | 20.169335% | 477 | USD595.06 |
+| 5y stress | 13.153082% | 0.680739 | 19.370184% | 477 | USD944.46 |
+
+**Rejected.** Every Sharpe, DD, matched SPY and QQQ gate fails, including both
+extra stress-versus-base-SPY gates. Only five-year CAGR exceeds 12%.
+Minimizing current ETF composition concentration did not establish qualified
+net main-capital behavior, lower realized drawdown or economic independence.
+
+Annualized actual two-sided turnover is
+3.871518/3.869950/3.979791/3.978541 times NAV, including deployment.
+Minimum cash is at least USD174.400788, maximum gross at most 0.982626612 and
+independent-BT equity differences at most USD4.3655745685100555e-11.
+There are no brokerage orders or invented numeric turnover limits.
+
+Against **cached rolling-eight primary context**, ten-year CAGR/Sharpe are
+lower, while five-year CAGR/Sharpe are higher. DD is lower on three paths
+but higher by 0.762672 percentage points on ten-year stress. Turnover and
+fees decline on all four while tickets rise by 8-32. These mixed whole-policy
+changes do not pass any original joint gate or isolate the effect of HHI.
+
+Against separately labeled **equal-eight context**, CAGR/Sharpe decline on
+every path, DD rises by 3.654813-5.432218 points and annualized turnover
+rises by 1.247752-1.366450 times NAV. Tickets fall by 30-111; base fees
+fall but stress fees rise. Fewer tickets are not a claim of lower total cost.
+No old control, benchmark, source or independent account is replayed.
+
+All 248 earlier receipts/1492 financial-file hashes remain unchanged. The new
+private inventory verifies 252 receipts/1516 files; all 1280 source/305
+implementation references, original ledger, source opinion values, dates,
+RF, manifests and old failures remain unchanged. No newer synchronized
+input or missed prospective day is spliced or filled.
+
+Current authoritative totals are **761 events, 72 SSD registrations,
+63 completed reviews, nine technical failures, zero pending and 252 funded
+paths**. With 178 legacy completions preserved, there are **241 combined
+completions and zero qualifiers**. The original active seven and eight
+technically available sources remain unchanged. This failed concentration
+construction is not followed by an HHI, cost-tie, pair-weight or gate rescue.

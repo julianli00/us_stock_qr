@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 71 SSD identities, 62 completed/rejected, nine retained technical failures and zero pending; 248 funded paths | Journal-derived current summary: 240 combined completions, zero qualifiers; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 72 SSD identities, 63 completed/rejected, nine retained technical failures and zero pending; 252 funded paths | Journal-derived current summary: 241 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -287,12 +287,41 @@ fall, while DD, annualized turnover, tickets and fees rise. More frequent
 admissible feedback is not a guarantee of better main-capital risk or returns.
 This failed clock construction is not followed by a band/frequency rescue.
 
-Current journal749 records **71 registrations, 62 completions, nine technical
+At that historical stage, journal749 recorded **71 registrations, 62 completions, nine technical
 failures, zero pending, 248 funded paths and 240 combined completions with zero
 qualifiers**. All 244 earlier receipts/1468 financial-file hashes remain
 unchanged; the new inventory verifies 248 receipts/1492 files. Native opinion
 clocks do not upgrade source scope, make historical use independent forward
 proof, add a ninth expert or change the original active seven policy.
+
+The next [instrument-concentration question](research/workbench/EXPERT_INSTRUMENT_CONCENTRATION_V1.md)
+keeps the same eight complete experts and all 28 equal pairs. It ranks current
+combined ETF target concentration rather than past return, covariance or source
+weight concentration. Original switch-cost proxy breaks only concentration
+ties. BIL is an ETF; different funds are not assumed to be independent stock
+exposures or economic risks. No holdings cap or future DD guarantee is created.
+
+Actual registration750 precedes new composition scores and targets; proof751
+retains 121 decisions, 242 input/resolved records, all 28 cases, five prefixes
+and six factor symbols in both horizons. Actual remote preregistration
+`60cba88` precedes fence752 at **2026-11-03T21:59:41.717065Z** and all four
+[instrument-concentration outcomes](research/workbench/evidence/expert_instrument_concentration_20261103_results_v1.json),
+completed by **21:59:50.141436Z**.
+
+**Rejected.** Every Sharpe, DD, SPY and QQQ gate fails; only the five-year
+CAGR gates pass. Net CAGR is 11.351836-13.793924%, Sharpe
+0.680739-0.719483 and DD 19.370184-22.716154%.
+Against cached equal-eight, every CAGR/Sharpe is lower and every DD/annualized
+turnover is higher. Against rolling-eight, five-year returns improve but
+ten-year returns decline and ten-year-stress DD worsens. Fewer tickets or
+lower current ETF weight concentration is not qualification or fee causality.
+
+Current journal761 records **72 registrations, 63 completions, nine technical
+failures, zero pending, 252 funded paths and 241 combined completions with zero
+qualifiers**. All 248 earlier receipts/1492 financial-file hashes remain
+unchanged; the new inventory verifies 252 receipts/1516 files. The source
+pool, original monthly execution, all financial gates and old failures are
+preserved; this rejected concentration construction is not tuned or promoted.
 
 ### Archived October authorization
 
