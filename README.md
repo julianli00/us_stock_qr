@@ -88,6 +88,21 @@ All224previous receipts/1348financial-file hashes remain unchanged;the new
 inventory contains228receipts/1372files. The investment objective remains unmet;
 no next independent question or rescue variant is selected by this closure.
 
+The subsequent [fixed stored-episode diagnosis](research/workbench/evidence/consensus_episode_diagnosis_20261103_v1.json)
+adds **zero financial trials**. Its code, twelve receipt/account pairs and one
+scheme were frozen before arithmetic. Only the ten-year stress path shares
+the same own worst peak/trough dates with rolling-seven. Five-year stress
+shares a2021-12-27peak, but the new rule bottoms on2022-11-03and the primary
+control on2023-10-26.
+
+On the new rule's shared close dates,stored changes are-17.341761percent
+versus-15.767508percent for rolling-seven. That shared-window loss is not
+the control's16.930665percent maximum DD and cannot replace any original gate.
+The [method](research/workbench/CONSENSUS_EPISODE_DIAGNOSIS_V1.md) performs no
+source/score/target/account replay,CAGR/Sharpe re-evaluation,fee-free counterfactual
+or causal loss attribution. Ex-post episodes are not predictive filters;
+all687events/235completions/zeroqualifiers and the rejection remain unchanged.
+
 ### Archived October authorization
 
 The accepted SSD research stage runs through **2026-10-31 23:59 Beijing time**

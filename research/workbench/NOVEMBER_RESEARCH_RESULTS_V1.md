@@ -64,3 +64,36 @@ configuration-only activation evidence. No new source or broker request,
 prospective backfill, pool expansion or independent forward validation is claimed.
 The investment objective remains unmet; the next independent question is not
 selected by this completed study.
+
+## Fixed stored-episode diagnosis
+
+The separately frozen [diagnostic](evidence/consensus_episode_diagnosis_20261103_v1.json)
+reads all four original paths for the new rule and both cached controls:
+twelve immutable receipt/NAV pairs. Twelve synthetic checks and intent
+`a4f812e66376fb2daad910d9b91e966c6b007fe3f60e60fa2dccec6dd2e0efc9`
+precede the single actual comparison. No policy, target, score or account is
+rerun, and no new financial configuration is counted.
+
+| Path | New own peak to trough | Rolling-seven primary own peak to trough |
+| --- | --- | --- |
+| 10y base | 2021-12-27 to 2022-11-03 | 2021-12-27 to 2022-12-28 |
+| 10y stress | 2018-03-12 to 2018-10-29 | 2018-03-12 to 2018-10-29 |
+| 5y base | 2021-12-27 to 2022-11-03 | 2021-12-27 to 2022-12-28 |
+| 5y stress | 2021-12-27 to 2022-11-03 | 2021-12-27 to 2023-10-26 |
+
+Only ten-year stress has identical new/primary episode clocks. The equal-seven
+secondary context reaches its worst trough on2022-10-14from2021-12-27on all
+four paths; it is not relabeled as the primary control.
+
+During the new five-year-stress episode's exact stored close dates, the
+new/primary/equal-seven changes are-17.341761/-15.767508/-15.104448percent.
+The primary's own maximum DD remains16.930665percent at its different later
+trough. These are different measurements, not interchangeable passing metrics.
+The diagnostic does not explain a unique primitive cause or isolate fees.
+
+The largest stored-NAV/cached-DD arithmetic discrepancy is2.553513e-15, below
+the single predeclared1e-12diagnostic consistency check. This does not relax RF
+identity, source admission, the15percentfinancial gate or any old failure.
+No CAGR, Sharpe, financial qualification, rebased capital, fee-free account or
+predictive episode filter is computed. All235completed configurations and
+zeroqualifiers remain unchanged.

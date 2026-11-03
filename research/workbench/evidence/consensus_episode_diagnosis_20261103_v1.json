@@ -1,0 +1,277 @@
+{
+  "actual_authoritative_counts": {
+    "current_journal_event_count": 687,
+    "current_journal_head_sha256": "5befe4cab00c6d5524632e73a9245a71f18713a603fb67102ee47cdfc63bc831",
+    "new_account_paths": 228,
+    "new_completed_strategy_evaluations": 57,
+    "new_historical_point_gate_passes": 0,
+    "new_pending_candidates": 0,
+    "new_registered_candidates": 65,
+    "new_reviews": 57,
+    "new_technical_failures": 8,
+    "original_completed_configurations": 178,
+    "original_registered_versions": 96,
+    "original_reviews": 94,
+    "total_legacy_plus_ssd_completed_configurations": 235
+  },
+  "completed_at": "2026-11-03T09:49:09.623515+00:00",
+  "episodes_are_ex_post_descriptions_not_predictive_filters": true,
+  "independent_forward_validation": false,
+  "intent": {
+    "path": "reports/ssd-continuous-research-v1/consensus-episode-diagnosis-20261103-v1/diagnostic-intent-v1.json",
+    "sha256": "a4f812e66376fb2daad910d9b91e966c6b007fe3f60e60fa2dccec6dd2e0efc9"
+  },
+  "investment_objective_verified": false,
+  "new_CAGR_or_Sharpe_or_qualification_computed": false,
+  "new_economic_allocation_rules_selected": 0,
+  "new_financial_trials": 0,
+  "newly_computed_diagnostic_not_recovered_original_internal_state": true,
+  "order_authority": false,
+  "raw_source_prices_targets_or_daily_account_rows_exported": false,
+  "results": {
+    "10y-base": {
+      "cached_drawdown_consistency_absolute_errors": {
+        "new": 1.1102230246251565e-16,
+        "primary": 4.440892098500626e-16,
+        "secondary_context": 9.992007221626409e-16
+      },
+      "causal_fee_or_unique_loss_cause_identified": false,
+      "fee_free_or_other_counterfactual_account_computed": false,
+      "new_and_primary_own_episode_clocks_identical": false,
+      "own_episodes": {
+        "new": {
+          "maximum_drawdown": 0.1641326001764979,
+          "peak_is_initial_capital_anchor": false,
+          "peak_session": "2021-12-27",
+          "recovery_session": "2023-07-18",
+          "status": "observed_loss_episode",
+          "trough_session": "2022-11-03"
+        },
+        "primary": {
+          "maximum_drawdown": 0.1929520845808692,
+          "peak_is_initial_capital_anchor": false,
+          "peak_session": "2021-12-27",
+          "recovery_session": "2024-03-04",
+          "status": "observed_loss_episode",
+          "trough_session": "2022-12-28"
+        },
+        "secondary_context": {
+          "maximum_drawdown": 0.1588591441749102,
+          "peak_is_initial_capital_anchor": false,
+          "peak_session": "2021-12-27",
+          "recovery_session": "2023-07-13",
+          "status": "observed_loss_episode",
+          "trough_session": "2022-10-14"
+        }
+      },
+      "shared_window_change_is_a_replacement_maximum_drawdown": false,
+      "stored_changes_over_new_own_episode": {
+        "new": {
+          "end_session": "2022-11-03",
+          "new_account_or_rebased_equity_created": false,
+          "own_retained_peak_drawdown_at_end": 0.1641326001764979,
+          "start_session": "2021-12-27",
+          "stored_close_to_close_change": -0.1641326001764979
+        },
+        "primary": {
+          "end_session": "2022-11-03",
+          "new_account_or_rebased_equity_created": false,
+          "own_retained_peak_drawdown_at_end": 0.17534553281398635,
+          "start_session": "2021-12-27",
+          "stored_close_to_close_change": -0.17534553281398635
+        },
+        "secondary_context": {
+          "end_session": "2022-11-03",
+          "new_account_or_rebased_equity_created": false,
+          "own_retained_peak_drawdown_at_end": 0.14676277700250817,
+          "start_session": "2021-12-27",
+          "stored_close_to_close_change": -0.14676277700250817
+        }
+      }
+    },
+    "10y-stress": {
+      "cached_drawdown_consistency_absolute_errors": {
+        "new": 1.1102230246251565e-16,
+        "primary": 7.771561172376096e-16,
+        "secondary_context": 2.220446049250313e-16
+      },
+      "causal_fee_or_unique_loss_cause_identified": false,
+      "fee_free_or_other_counterfactual_account_computed": false,
+      "new_and_primary_own_episode_clocks_identical": true,
+      "own_episodes": {
+        "new": {
+          "maximum_drawdown": 0.17262470357623916,
+          "peak_is_initial_capital_anchor": false,
+          "peak_session": "2018-03-12",
+          "recovery_session": "2019-12-16",
+          "status": "observed_loss_episode",
+          "trough_session": "2018-10-29"
+        },
+        "primary": {
+          "maximum_drawdown": 0.1901665743548412,
+          "peak_is_initial_capital_anchor": false,
+          "peak_session": "2018-03-12",
+          "recovery_session": "2020-01-22",
+          "status": "observed_loss_episode",
+          "trough_session": "2018-10-29"
+        },
+        "secondary_context": {
+          "maximum_drawdown": 0.15893165121191033,
+          "peak_is_initial_capital_anchor": false,
+          "peak_session": "2021-12-27",
+          "recovery_session": "2023-07-31",
+          "status": "observed_loss_episode",
+          "trough_session": "2022-10-14"
+        }
+      },
+      "shared_window_change_is_a_replacement_maximum_drawdown": false,
+      "stored_changes_over_new_own_episode": {
+        "new": {
+          "end_session": "2018-10-29",
+          "new_account_or_rebased_equity_created": false,
+          "own_retained_peak_drawdown_at_end": 0.17262470357623916,
+          "start_session": "2018-03-12",
+          "stored_close_to_close_change": -0.17262470357623916
+        },
+        "primary": {
+          "end_session": "2018-10-29",
+          "new_account_or_rebased_equity_created": false,
+          "own_retained_peak_drawdown_at_end": 0.1901665743548412,
+          "start_session": "2018-03-12",
+          "stored_close_to_close_change": -0.1901665743548412
+        },
+        "secondary_context": {
+          "end_session": "2018-10-29",
+          "new_account_or_rebased_equity_created": false,
+          "own_retained_peak_drawdown_at_end": 0.08850993612026203,
+          "start_session": "2018-03-12",
+          "stored_close_to_close_change": -0.08850993612026203
+        }
+      }
+    },
+    "5y-base": {
+      "cached_drawdown_consistency_absolute_errors": {
+        "new": 0.0,
+        "primary": 7.771561172376096e-16,
+        "secondary_context": 2.55351295663786e-15
+      },
+      "causal_fee_or_unique_loss_cause_identified": false,
+      "fee_free_or_other_counterfactual_account_computed": false,
+      "new_and_primary_own_episode_clocks_identical": false,
+      "own_episodes": {
+        "new": {
+          "maximum_drawdown": 0.16683216678908142,
+          "peak_is_initial_capital_anchor": false,
+          "peak_session": "2021-12-27",
+          "recovery_session": "2023-07-18",
+          "status": "observed_loss_episode",
+          "trough_session": "2022-11-03"
+        },
+        "primary": {
+          "maximum_drawdown": 0.19581454923356945,
+          "peak_is_initial_capital_anchor": false,
+          "peak_session": "2021-12-27",
+          "recovery_session": "2024-03-06",
+          "status": "observed_loss_episode",
+          "trough_session": "2022-12-28"
+        },
+        "secondary_context": {
+          "maximum_drawdown": 0.16173055803966396,
+          "peak_is_initial_capital_anchor": false,
+          "peak_session": "2021-12-27",
+          "recovery_session": "2023-07-18",
+          "status": "observed_loss_episode",
+          "trough_session": "2022-10-14"
+        }
+      },
+      "shared_window_change_is_a_replacement_maximum_drawdown": false,
+      "stored_changes_over_new_own_episode": {
+        "new": {
+          "end_session": "2022-11-03",
+          "new_account_or_rebased_equity_created": false,
+          "own_retained_peak_drawdown_at_end": 0.16683216678908142,
+          "start_session": "2021-12-27",
+          "stored_close_to_close_change": -0.16683216678908142
+        },
+        "primary": {
+          "end_session": "2022-11-03",
+          "new_account_or_rebased_equity_created": false,
+          "own_retained_peak_drawdown_at_end": 0.17801778355655584,
+          "start_session": "2021-12-27",
+          "stored_close_to_close_change": -0.17801778355655584
+        },
+        "secondary_context": {
+          "end_session": "2022-11-03",
+          "new_account_or_rebased_equity_created": false,
+          "own_retained_peak_drawdown_at_end": 0.1499560256639808,
+          "start_session": "2021-12-27",
+          "stored_close_to_close_change": -0.1499560256639808
+        }
+      }
+    },
+    "5y-stress": {
+      "cached_drawdown_consistency_absolute_errors": {
+        "new": 6.661338147750939e-16,
+        "primary": 1.1102230246251565e-16,
+        "secondary_context": 1.1102230246251565e-16
+      },
+      "causal_fee_or_unique_loss_cause_identified": false,
+      "fee_free_or_other_counterfactual_account_computed": false,
+      "new_and_primary_own_episode_clocks_identical": false,
+      "own_episodes": {
+        "new": {
+          "maximum_drawdown": 0.17341761375004983,
+          "peak_is_initial_capital_anchor": false,
+          "peak_session": "2021-12-27",
+          "recovery_session": "2023-12-14",
+          "status": "observed_loss_episode",
+          "trough_session": "2022-11-03"
+        },
+        "primary": {
+          "maximum_drawdown": 0.16930665156841884,
+          "peak_is_initial_capital_anchor": false,
+          "peak_session": "2021-12-27",
+          "recovery_session": "2024-03-01",
+          "status": "observed_loss_episode",
+          "trough_session": "2023-10-26"
+        },
+        "secondary_context": {
+          "maximum_drawdown": 0.16185169857181614,
+          "peak_is_initial_capital_anchor": false,
+          "peak_session": "2021-12-27",
+          "recovery_session": "2023-12-13",
+          "status": "observed_loss_episode",
+          "trough_session": "2022-10-14"
+        }
+      },
+      "shared_window_change_is_a_replacement_maximum_drawdown": false,
+      "stored_changes_over_new_own_episode": {
+        "new": {
+          "end_session": "2022-11-03",
+          "new_account_or_rebased_equity_created": false,
+          "own_retained_peak_drawdown_at_end": 0.17341761375004983,
+          "start_session": "2021-12-27",
+          "stored_close_to_close_change": -0.17341761375004983
+        },
+        "primary": {
+          "end_session": "2022-11-03",
+          "new_account_or_rebased_equity_created": false,
+          "own_retained_peak_drawdown_at_end": 0.15767508486925152,
+          "start_session": "2021-12-27",
+          "stored_close_to_close_change": -0.15767508486925152
+        },
+        "secondary_context": {
+          "end_session": "2022-11-03",
+          "new_account_or_rebased_equity_created": false,
+          "own_retained_peak_drawdown_at_end": 0.15104447826142697,
+          "start_session": "2021-12-27",
+          "stored_close_to_close_change": -0.15104447826142697
+        }
+      }
+    }
+  },
+  "schema_version": 1,
+  "scheme": "own_retained_peak_first_worst_trough_and_new_episode_shared_close_dates_v1",
+  "source_failures_and_original_financial_rejection_preserved": true,
+  "source_score_target_or_account_pipeline_replayed": false
+}

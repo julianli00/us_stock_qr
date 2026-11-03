@@ -162,6 +162,11 @@ specified loss limit relative to its retained peak. It is not idle cash, availab
 buying power or a guarantee against a later breach.
 _Avoid_: Cash balance, guaranteed protection
 
+**Drawdown episode (回撤区间)**:
+A loss interval from one main account's retained peak to a later trough.
+Different policies' worst episodes need not share the same dates.
+_Avoid_: Common market crash, matched-window return
+
 **Stress reference loss (压力参照损失)**:
 The loss assigned to a portfolio under an observed or specified stress scenario.
 It is not a forecast of the next return or a guaranteed maximum future loss.
