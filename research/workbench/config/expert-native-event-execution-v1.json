@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "execution_id": "ssd_expert_native_opinion_event_band_20261103_v1",
+  "source_band_policy": {
+    "path": "config/observed-weight-execution.json",
+    "sha256": "820cc4e9c2f4be6b286873254f663fba4f018156fb427156e1fc330da53094a7"
+  },
+  "accounting_engine": "cash_funded_noop_v2",
+  "capital_usd": 10000,
+  "commission_per_order": 1.0,
+  "actual_weight_trade_band": 0.025,
+  "invested_target_budget": 0.98,
+  "cash_reserve": 0.02,
+  "allowed_cost_delay_pairs": [[5.0, 1], [20.0, 2]],
+  "maximum_pending_main_request_batches": 1,
+  "source_opinion_refresh_is_automatic_execution": false,
+  "pending_request_replaced_or_cancelled": false,
+  "unfilled_terminal_requests_retroactively_filled": false,
+  "source_positions_or_feedback_floor_copied": false,
+  "terminal_liquidation": false,
+  "order_authority": false
+}
