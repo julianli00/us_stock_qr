@@ -45,6 +45,13 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
+The first new [recommendation-consensus question](research/workbench/EXPERT_TARGET_CONSENSUS_V1.md)
+has a [frozen economic law and aggregation implementation](research/workbench/evidence/expert_target_consensus_20261103_design_v1.json),
+checked on synthetic cases. It chooses complete expert opinions by exact
+current-target L1 medoid, not return-score optimization. **No new real targets,
+financial registration or funded paths have been run in this preparation stage**;
+full orchestration, dependency freeze and a publication fence remain required.
+
 ### Archived October authorization
 
 The accepted SSD research stage runs through **2026-10-31 23:59 Beijing time**

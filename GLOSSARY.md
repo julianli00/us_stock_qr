@@ -102,6 +102,12 @@ A causal policy for combining complete strategy experts into a unified portfolio
 It is evaluated on the resulting portfolio, not on averages of expert summary metrics.
 _Avoid_: Best historical winner, averaged CAGR
 
+**Recommendation consensus (建议共识)**:
+A joint allocation opinion formed from the admissible current portfolio
+recommendations of complete strategy experts. Agreement about exposures is not
+a return forecast, independent diversification or a future risk guarantee.
+_Avoid_: Profitable majority, guaranteed hedge
+
 **Allocation learning state (分配学习状态)**:
 The accumulated assessment information a meta-strategy uses to revise future capital
 weights. It is not the main account's holdings, cash or realized wealth.

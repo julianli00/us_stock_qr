@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_expert_target_consensus_20261103_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "authorization_id": "november-research-20261103-v1",
+  "prior_journal_sequence": 675,
+  "prior_journal_head_sha256": "30b7ead58cc386de0d25db3426150c78af535d0d7d53e17cd99d55ef2ca314db",
+  "prior_new_registered_candidates": 64,
+  "prior_new_completed_strategy_evaluations": 56,
+  "prior_new_technical_failures": 8,
+  "source_pool_registration": {
+    "path": "evidence/seven_expert_meta_20261031_registration_v1.json",
+    "sha256": "896408c7f91121c86cc1f91f9790c655fff08adecdd8948f3ed352e2dc8c659d"
+  },
+  "source_pool_specification_sha256": "fcb5e06fb0b3acb83c20cf69d0acf2d5e9aea7a1c05e267aea496c59f5dc60f2",
+  "source_pool_policy": {
+    "path": "config/strategy-expert-pool-seven-v1.json",
+    "sha256": "f27b1ac96253faef7ce57520682dac83ef426272057dfa2c277c61fcc319416f"
+  },
+  "saved_controls": {
+    "path": "reports/ssd-continuous-research-v1/seven-expert-meta-20261031-v1/results.json",
+    "sha256": "871f0b649ace186d0f2f53a0cbe71fc01dfe4dc3ca22349ff9ecc1c984af8223"
+  },
+  "primary_control": "expert_pool_seven_rolling_pair_v1",
+  "secondary_context": "expert_pool_seven_equal_weight_v1",
+  "execution_policy": {
+    "path": "config/observed-weight-execution.json",
+    "sha256": "820cc4e9c2f4be6b286873254f663fba4f018156fb427156e1fc330da53094a7"
+  },
+  "expert_ids": [
+    "equity_first_month_end_commitment_v1",
+    "benchmark_opportunity_joint_tail_v1",
+    "symmetric_garch_growth_bil_v1",
+    "semiconductor_ratchet_protection",
+    "semiconductor_option_dollar_profit_share_confirmation",
+    "four_factor_defense_diversified",
+    "two_segment_vvix_uncertainty_confirmation_v1"
+  ],
+  "mechanism_groups": [
+    "committed_price_trend_defense",
+    "joint_tail_opportunity",
+    "conditional_variance_growth",
+    "wealth_feedback_protection",
+    "common_quarter_profit_dollar_confirmation",
+    "cross_asset_defensive_relative_strength",
+    "option_market_uncertainty_confirmation"
+  ],
+  "decision_information_clock": "after_16_15_ET_index_close_before_later_open_execution",
+  "initial_decision_session": "2016-10-05",
+  "source_observation_lookback_sessions": 126,
+  "aggregation": "exact_binary64_L1_medoid_of_current_complete_recommendations",
+  "include_residual_idle_cash_coordinate": true,
+  "equal_vote_per_mechanism_representative": true,
+  "tie_rule": "equal_capital_over_all_exact_minimizers",
+  "return_ranking_or_score_maturity_drives_allocation": false,
+  "invested_target_budget": 0.98,
+  "cash_reserve": 0.02,
+  "actual_weight_trade_band": 0.025,
+  "minimum_economic_factor_families": 3,
+  "new_economic_factor_definitions": 0,
+  "new_shadow_account_runs": 0,
+  "new_shadow_recommendation_artifacts": 0,
+  "new_source_requests": 0,
+  "candidate_count_in_this_study": 1,
+  "study_size_is_a_total_research_quota": false,
+  "candidates": [
+    {
+      "id": "expert_pool_target_medoid_consensus_v1",
+      "weighting": "exact_target_L1_medoid"
+    }
+  ],
+  "methodology": {
+    "question": "Can robust consensus among the current complete expert recommendations replace noisy return-score ranking without fitting another return predictor?",
+    "independent_rationale": "A mechanism representative with an outlying allocation can move an arithmetic mean or be selected by an unstable historical risk score. Select the complete recommendation with minimum total reallocation distance to all seven current opinions; average only genuine exact ties. This tests robust allocation agreement, not a return, covariance or downside forecast.",
+    "controlled_change": "Change only the allocation operator. Reuse the seven source-admitted experts, actual introduction clocks, unchanged initial/month-end decision lattice, original monthly execution and full financial contract. Do not repair term V1/V2, change membership, scan norms or tolerances, or revive failed numerical identities.",
+    "exact_law": "Each source binary64 target component is represented by its exact rational value; append idle cash as one minus its exact component sum. Each expert's objective is the sum of L1 distances to every other complete recommendation. Every exact minimizer receives equal capital. There is no epsilon tie, decimal truncation, fitted coefficient, solver or norm/parameter sweep.",
+    "availability_and_maturity": "All seven current recommendations must exist at every original decision, including the actual 2016-10-05 funding anchor. This current-recommendation rule deliberately does not rank or fill immature return scores. Original NET calendars, RF identity and admission evidence still must pass; missing targets or invalid source state stop the version.",
+    "cost_and_risk_interpretation": "Opinion-to-opinion target distance is a dimensionless allocation geometry, not observed holdings, actual turnover, realized fees, calibrated dependence, a marginal-risk estimate or a drawdown guarantee. Actual one-account execution and every original gate remain decisive.",
+    "controls_and_falsifiability": "Reuse stored seven-rolling-pair as the primary matched control and stored equal-seven as separately labeled context, never rerun them as new trials. The directional robustness premise is unsupported unless all four new paths reduce primary-control drawdown and do not increase annualized actual turnover. This diagnostic is not an extra or replacement qualification gate; failure of any original joint financial gate still rejects the policy.",
+    "bias": "All 234 combined completed historical configurations and the prior aggregate outcomes are exposed. A prefix-causal new law is not independent OOS or real forward evidence. Seven complete experts do not establish seven independent economic factors.",
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

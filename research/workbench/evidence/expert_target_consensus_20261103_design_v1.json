@@ -1,0 +1,79 @@
+{
+  "actual_new_real_consensus_targets_or_accounts_computed": false,
+  "candidates": [
+    {
+      "id": "expert_pool_target_medoid_consensus_v1",
+      "weighting": "exact_target_L1_medoid"
+    }
+  ],
+  "complete_financial_orchestration_and_dependency_freeze_done": false,
+  "created_at_utc": "2026-11-03T08:24:30.825702+00:00",
+  "current_authoritative_counts": {
+    "current_journal_event_count": 675,
+    "current_journal_head_sha256": "30b7ead58cc386de0d25db3426150c78af535d0d7d53e17cd99d55ef2ca314db",
+    "new_account_paths": 224,
+    "new_completed_strategy_evaluations": 56,
+    "new_historical_point_gate_passes": 0,
+    "new_pending_candidates": 0,
+    "new_registered_candidates": 64,
+    "new_reviews": 56,
+    "new_technical_failures": 8,
+    "original_completed_configurations": 178,
+    "original_registered_versions": 96,
+    "original_reviews": 94,
+    "total_legacy_plus_ssd_completed_configurations": 234
+  },
+  "implementation_and_tests": [
+    {
+      "path": "config/expert-target-consensus-v1.json",
+      "sha256": "df0f29413f5bdec5642defaf85607f1da5fab1803cb660bc3883f4b3bbea9a43"
+    },
+    {
+      "path": "src/us_quant/expert_target_consensus_v1.py",
+      "sha256": "f1786f617bc23f6bf2fcd01f2f8c85b166966b97eb2091540fb57e16b7e97ef4"
+    },
+    {
+      "path": "tests/test_expert_target_consensus_v1.py",
+      "sha256": "1008a43bcd6770e6ee71df3c8cb5cea3c6aa7ea438035ab3181bf1a8670d3c11"
+    },
+    {
+      "path": "EXPERT_TARGET_CONSENSUS_V1.md",
+      "sha256": "005c27adff4e55a8031fe59cc9d39dd147add1ee5bd235f1e25f70d19f666405"
+    }
+  ],
+  "independent_forward_validation": false,
+  "independent_rationale": "A mechanism representative with an outlying allocation can move an arithmetic mean or be selected by an unstable historical risk score. Select the complete recommendation with minimum total reallocation distance to all seven current opinions; average only genuine exact ties. This tests robust allocation agreement, not a return, covariance or downside forecast.",
+  "investment_objective_verified": false,
+  "law": "Each source binary64 target component is represented by its exact rational value; append idle cash as one minus its exact component sum. Each expert's objective is the sum of L1 distances to every other complete recommendation. Every exact minimizer receives equal capital. There is no epsilon tie, decimal truncation, fitted coefficient, solver or norm/parameter sweep.",
+  "new_candidate_registered": false,
+  "new_financial_trials": 0,
+  "order_authority": false,
+  "original_financial_protocol": {
+    "path": "config/dual-benchmark-v1.json",
+    "sha256": "1b5b2572089ffa53746b01e72ff8303e00d6b5e5e3f815844f93834d0521e469"
+  },
+  "passed_synthetic_checks": 39,
+  "policy": {
+    "path": "config/expert-target-consensus-v1.json",
+    "sha256": "df0f29413f5bdec5642defaf85607f1da5fab1803cb660bc3883f4b3bbea9a43"
+  },
+  "primary_control": "expert_pool_seven_rolling_pair_v1",
+  "private_aggregation_freeze_sha256": "d229a5cb09ac5432e2a508cb89fcac91f69e98e89b69e132a47efd45a2065a44",
+  "question": "Can robust consensus among the current complete expert recommendations replace noisy return-score ranking without fitting another return predictor?",
+  "raw_source_targets_daily_books_private_intents_or_native_controls_exported": false,
+  "record_type": "pre_financial_expert_target_consensus_design",
+  "schema_version": 1,
+  "secondary_context": "expert_pool_seven_equal_weight_v1",
+  "source_admitted_experts": 7,
+  "source_pool_policy": {
+    "path": "config/strategy-expert-pool-seven-v1.json",
+    "sha256": "f27b1ac96253faef7ce57520682dac83ef426272057dfa2c277c61fcc319416f"
+  },
+  "source_pool_registration": {
+    "path": "evidence/seven_expert_meta_20261031_registration_v1.json",
+    "sha256": "896408c7f91121c86cc1f91f9790c655fff08adecdd8948f3ed352e2dc8c659d"
+  },
+  "source_pool_specification_sha256": "fcb5e06fb0b3acb83c20cf69d0acf2d5e9aea7a1c05e267aea496c59f5dc60f2",
+  "stage": "economic_law_and_aggregation_only_before_real_targets",
+  "study_id": "ssd_expert_target_consensus_20261103_v1"
+}
