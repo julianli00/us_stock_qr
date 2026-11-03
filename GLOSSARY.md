@@ -54,6 +54,11 @@ Satisfaction of a combination rule's stated constraints on observations known at
 decision. It does not establish an expert's validity or final portfolio qualification.
 _Avoid_: Final qualification, future risk guarantee
 
+**Hedge suitability (对冲适用性)**:
+A policy's assessment that an admissible asset may offset exposure in a specified
+observed market context. It is not source admission or guaranteed future protection.
+_Avoid_: Safe defensive asset, guaranteed hedge, source qualification
+
 **Pair menu (专家对候选集)**:
 The set of complete expert pairs considered at a meta-strategy decision.
 Restricting a menu of recorded assessments does not reconstruct another

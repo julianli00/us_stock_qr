@@ -103,6 +103,22 @@ source/score/target/account replay,CAGR/Sharpe re-evaluation,fee-free counterfac
 or causal loss attribution. Ex-post episodes are not predictive filters;
 all687events/235completions/zeroqualifiers and the rejection remain unchanged.
 
+After the separate DATA-ONLY synchronization closed without changing old
+results, the next [complementary complete-policy proposal](research/workbench/CONDITIONAL_HEDGE_EXPERT_V1.md)
+freezes [conditional hedge suitability](research/workbench/evidence/conditional_hedge_expert_20261103_preparation_v1.json).
+Rising defensive prices alone are not treated as hedging evidence:
+the fixed rule also requires negative observed stock covariance in its
+declared nonpositive stock context. This is one complete policy, not three
+new experts or a refit of the rejected consensus rule.
+
+The economic law and primary implementation passed23synthetic policy/oracle/
+causality/original-execution checks before any new real source targets or
+accounts. **No financial registration, completed source book, technical expert
+admission or eighth pool member is claimed.** Full source/orchestration freeze,
+actual registration and remote preregistration remain required. The initial
+qualification plan retains the original complete input context and full
+financial windows; synchronized22-day data is not silently spliced into it.
+
 ### Archived October authorization
 
 The accepted SSD research stage runs through **2026-10-31 23:59 Beijing time**
