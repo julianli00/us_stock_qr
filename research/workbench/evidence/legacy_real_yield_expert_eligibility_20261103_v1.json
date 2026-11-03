@@ -1,0 +1,339 @@
+{
+  "active_pool_changed": false,
+  "actual_financial_counts_unchanged": {
+    "current_journal_event_count": 722,
+    "current_journal_head_sha256": "2d8640e7ae7a166b96083fa241951fe60aa73f1d74214992c445b71a35e5b5d4",
+    "new_account_paths": 240,
+    "new_completed_strategy_evaluations": 60,
+    "new_historical_point_gate_passes": 0,
+    "new_pending_candidates": 0,
+    "new_registered_candidates": 68,
+    "new_reviews": 60,
+    "new_technical_failures": 8,
+    "original_completed_configurations": 178,
+    "original_registered_versions": 96,
+    "original_reviews": 94,
+    "total_legacy_plus_ssd_completed_configurations": 238
+  },
+  "blockers": [
+    {
+      "path_key": "10y-base",
+      "reason": "native_RF_not_exact_unchanged_active_common"
+    },
+    {
+      "path_key": "10y-base",
+      "reason": "native_request_calendar_not_direct_existing_Monthly_or_Dense_Interface"
+    },
+    {
+      "path_key": "10y-stress",
+      "reason": "native_RF_not_exact_unchanged_active_common"
+    },
+    {
+      "path_key": "10y-stress",
+      "reason": "native_request_calendar_not_direct_existing_Monthly_or_Dense_Interface"
+    },
+    {
+      "path_key": "5y-base",
+      "reason": "native_RF_not_exact_unchanged_active_common"
+    },
+    {
+      "path_key": "5y-base",
+      "reason": "native_request_calendar_not_direct_existing_Monthly_or_Dense_Interface"
+    },
+    {
+      "path_key": "5y-stress",
+      "reason": "native_RF_not_exact_unchanged_active_common"
+    },
+    {
+      "path_key": "5y-stress",
+      "reason": "native_request_calendar_not_direct_existing_Monthly_or_Dense_Interface"
+    }
+  ],
+  "candidate_id": "macro_real_yield_factor_tilt",
+  "completed_at": "2026-11-03T16:27:50.675335+00:00",
+  "existing_vintage_validation_scope": {
+    "changed_state_queries": [
+      "2015-11-30"
+    ],
+    "existing_validation_not_replayed": true,
+    "formal_target_parity_reference": [
+      {
+        "candidate_id": "macro_real_yield_factor_tilt",
+        "changed_source_target_sessions_before_formal_window": [
+          "2015-11-30"
+        ],
+        "formal_return_end": "2026-10-05",
+        "formal_return_sessions": 2512,
+        "formal_return_start": "2016-10-06",
+        "initial_seed_signal_session": "2016-10-05",
+        "private_target_matrix": "reports/real-yield-vintages-20261011/target-proof-v2/macro_real_yield_factor_tilt-10y.csv",
+        "queried_DFII10_cells_only_replaced_other_macro_data_unchanged": true,
+        "seed_row_is_explicitly_present_and_finite": true,
+        "seeded_original_and_source_replaced_targets_byte_identical": true,
+        "sha256": "1460baf8031c1f9e40462342b5de48eae469d440e6b40c044921a9d02f5ac56a",
+        "target_shape_including_seed": [
+          2513,
+          8
+        ],
+        "this_is_not_a_fully_PIT_daily_feature_dataset": true,
+        "years": 10
+      },
+      {
+        "candidate_id": "macro_real_yield_factor_tilt",
+        "changed_source_target_sessions_before_formal_window": [
+          "2015-11-30"
+        ],
+        "formal_return_end": "2026-10-05",
+        "formal_return_sessions": 1254,
+        "formal_return_start": "2021-10-06",
+        "initial_seed_signal_session": "2021-10-05",
+        "private_target_matrix": "reports/real-yield-vintages-20261011/target-proof-v2/macro_real_yield_factor_tilt-5y.csv",
+        "queried_DFII10_cells_only_replaced_other_macro_data_unchanged": true,
+        "seed_row_is_explicitly_present_and_finite": true,
+        "seeded_original_and_source_replaced_targets_byte_identical": true,
+        "sha256": "53d60cf70d108865d9f9127fd34faf23e7315e0024e2d79875d3f02c228562d0",
+        "target_shape_including_seed": [
+          1255,
+          8
+        ],
+        "this_is_not_a_fully_PIT_daily_feature_dataset": true,
+        "years": 5
+      },
+      {
+        "candidate_id": "macro_real_yield_tilt_curve_defense",
+        "changed_source_target_sessions_before_formal_window": [
+          "2015-11-30"
+        ],
+        "formal_return_end": "2026-10-05",
+        "formal_return_sessions": 2512,
+        "formal_return_start": "2016-10-06",
+        "initial_seed_signal_session": "2016-10-05",
+        "private_target_matrix": "reports/real-yield-vintages-20261011/target-proof-v2/macro_real_yield_tilt_curve_defense-10y.csv",
+        "queried_DFII10_cells_only_replaced_other_macro_data_unchanged": true,
+        "seed_row_is_explicitly_present_and_finite": true,
+        "seeded_original_and_source_replaced_targets_byte_identical": true,
+        "sha256": "3ba6c0769c4ff7998041d1b12a924f56876cb21426063ae22c19138bc8e4f307",
+        "target_shape_including_seed": [
+          2513,
+          8
+        ],
+        "this_is_not_a_fully_PIT_daily_feature_dataset": true,
+        "years": 10
+      },
+      {
+        "candidate_id": "macro_real_yield_tilt_curve_defense",
+        "changed_source_target_sessions_before_formal_window": [
+          "2015-11-30"
+        ],
+        "formal_return_end": "2026-10-05",
+        "formal_return_sessions": 1254,
+        "formal_return_start": "2021-10-06",
+        "initial_seed_signal_session": "2021-10-05",
+        "private_target_matrix": "reports/real-yield-vintages-20261011/target-proof-v2/macro_real_yield_tilt_curve_defense-5y.csv",
+        "queried_DFII10_cells_only_replaced_other_macro_data_unchanged": true,
+        "seed_row_is_explicitly_present_and_finite": true,
+        "seeded_original_and_source_replaced_targets_byte_identical": true,
+        "sha256": "ca3301e097d21c44b49ac9b4805035698cbd7e8db666847d9bf0ea69860cbc18",
+        "target_shape_including_seed": [
+          1255,
+          8
+        ],
+        "this_is_not_a_fully_PIT_daily_feature_dataset": true,
+        "years": 5
+      }
+    ],
+    "full_daily_PIT_not_proven": true,
+    "monthly_comparisons": 131
+  },
+  "four_cached_native_paths_checked": 4,
+  "full_source_prehistory_retained": true,
+  "identity": {
+    "actual_source_events": [
+      21,
+      23
+    ],
+    "original_macro_scope_not_upgraded_to_full_daily_PIT": true,
+    "original_standalone_rejection_preserved": true,
+    "source_identity_verified": true
+  },
+  "independent_forward_validation": false,
+  "intent": {
+    "path": "reports/ssd-continuous-research-v1/legacy-real-yield-expert-eligibility-20261103-v1/eligibility-intent-v1.json",
+    "sha256": "39fe358239b3bf95efe147d7fc0e3b5a16298e5ff3a8b33c96c91272b33fcda2"
+  },
+  "investment_objective_verified": false,
+  "mechanism_group": "real_discount_rate_factor_composition",
+  "native_funding_seed_rows_not_deleted_to_manufacture_monthly_compatibility": true,
+  "new_RF_recommendation_assessment_view_or_Adapter": false,
+  "new_expert_admitted": false,
+  "new_financial_trials": 0,
+  "old_standalone_financial_rejection_preserved": true,
+  "paths": [
+    {
+      "RF_mismatch_count": 334,
+      "direct_dense_calendar_compatible": false,
+      "direct_monthly_calendar_compatible": false,
+      "first_RF_mismatch_date": "2016-10-10",
+      "first_return_initial_capital_gap": 0.0,
+      "formal_anchor": "2016-10-05",
+      "formal_anchor_literal_active_row": true,
+      "formal_initial_capital_usd": 10000,
+      "formal_return_dates": 2512,
+      "full_context_first_active_equals_anchor_required": false,
+      "full_native_nonmonthend_dates": [
+        "2016-10-05"
+      ],
+      "known_original_target_at_formal_anchor": "2016-10-05",
+      "max_RF_absolute_difference": 1.0001765041178778e-16,
+      "max_cached_BT_NAV_gap_usd": 5.4569682106375694e-11,
+      "max_native_gross": 0.9820588794006694,
+      "max_nav_return_gap": 0.0,
+      "max_weight_gross_gap": 2.220446049250313e-16,
+      "min_native_cash": 195.66645328066625,
+      "native_RF_exact_common": false,
+      "native_cash_funding_checks_pass": true,
+      "native_context_end": "2026-10-05",
+      "native_context_start": "2015-08-10",
+      "native_first_active": "2015-11-30",
+      "native_request_rows": 132,
+      "native_requests_before_formal_anchor_preserved": 11,
+      "native_source_targets_or_RF_cropped_filled_redefined_or_rebuilt": false,
+      "path_key": "10y-base",
+      "unchanged_Artifact_Adapter_constructor_checks": {
+        "dense": {
+          "passed": false,
+          "reason": "A dense expert cannot carry across a missing post-warmup recommendation."
+        },
+        "monthly": {
+          "passed": false,
+          "reason": "A monthly expert needs every genuine month end after its warmup."
+        }
+      }
+    },
+    {
+      "RF_mismatch_count": 334,
+      "direct_dense_calendar_compatible": false,
+      "direct_monthly_calendar_compatible": false,
+      "first_RF_mismatch_date": "2016-10-10",
+      "first_return_initial_capital_gap": 0.0,
+      "formal_anchor": "2016-10-05",
+      "formal_anchor_literal_active_row": true,
+      "formal_initial_capital_usd": 10000,
+      "formal_return_dates": 2512,
+      "full_context_first_active_equals_anchor_required": false,
+      "full_native_nonmonthend_dates": [
+        "2016-10-05"
+      ],
+      "known_original_target_at_formal_anchor": "2016-10-05",
+      "max_RF_absolute_difference": 1.0001765041178778e-16,
+      "max_cached_BT_NAV_gap_usd": 1.4551915228366852e-11,
+      "max_native_gross": 0.9819125001182789,
+      "max_nav_return_gap": 0.0,
+      "max_weight_gross_gap": 2.220446049250313e-16,
+      "min_native_cash": 194.414162619298,
+      "native_RF_exact_common": false,
+      "native_cash_funding_checks_pass": true,
+      "native_context_end": "2026-10-05",
+      "native_context_start": "2015-08-10",
+      "native_first_active": "2015-11-30",
+      "native_request_rows": 132,
+      "native_requests_before_formal_anchor_preserved": 11,
+      "native_source_targets_or_RF_cropped_filled_redefined_or_rebuilt": false,
+      "path_key": "10y-stress",
+      "unchanged_Artifact_Adapter_constructor_checks": {
+        "dense": {
+          "passed": false,
+          "reason": "A dense expert cannot carry across a missing post-warmup recommendation."
+        },
+        "monthly": {
+          "passed": false,
+          "reason": "A monthly expert needs every genuine month end after its warmup."
+        }
+      }
+    },
+    {
+      "RF_mismatch_count": 262,
+      "direct_dense_calendar_compatible": false,
+      "direct_monthly_calendar_compatible": false,
+      "first_RF_mismatch_date": "2021-12-22",
+      "first_return_initial_capital_gap": 0.0,
+      "formal_anchor": "2021-10-05",
+      "formal_anchor_literal_active_row": true,
+      "formal_initial_capital_usd": 10000,
+      "formal_return_dates": 1254,
+      "full_context_first_active_equals_anchor_required": false,
+      "full_native_nonmonthend_dates": [
+        "2021-10-05"
+      ],
+      "known_original_target_at_formal_anchor": "2021-10-05",
+      "max_RF_absolute_difference": 1.0001765041178778e-16,
+      "max_cached_BT_NAV_gap_usd": 2.546585164964199e-11,
+      "max_native_gross": 0.9817852843199026,
+      "max_nav_return_gap": 0.0,
+      "max_weight_gross_gap": 2.220446049250313e-16,
+      "min_native_cash": 180.99739459634293,
+      "native_RF_exact_common": false,
+      "native_cash_funding_checks_pass": true,
+      "native_context_end": "2026-10-05",
+      "native_context_start": "2015-08-10",
+      "native_first_active": "2015-11-30",
+      "native_request_rows": 132,
+      "native_requests_before_formal_anchor_preserved": 71,
+      "native_source_targets_or_RF_cropped_filled_redefined_or_rebuilt": false,
+      "path_key": "5y-base",
+      "unchanged_Artifact_Adapter_constructor_checks": {
+        "dense": {
+          "passed": false,
+          "reason": "A dense expert cannot carry across a missing post-warmup recommendation."
+        },
+        "monthly": {
+          "passed": false,
+          "reason": "A monthly expert needs every genuine month end after its warmup."
+        }
+      }
+    },
+    {
+      "RF_mismatch_count": 262,
+      "direct_dense_calendar_compatible": false,
+      "direct_monthly_calendar_compatible": false,
+      "first_RF_mismatch_date": "2021-12-22",
+      "first_return_initial_capital_gap": 0.0,
+      "formal_anchor": "2021-10-05",
+      "formal_anchor_literal_active_row": true,
+      "formal_initial_capital_usd": 10000,
+      "formal_return_dates": 1254,
+      "full_context_first_active_equals_anchor_required": false,
+      "full_native_nonmonthend_dates": [
+        "2021-10-05"
+      ],
+      "known_original_target_at_formal_anchor": "2021-10-05",
+      "max_RF_absolute_difference": 1.0001765041178778e-16,
+      "max_cached_BT_NAV_gap_usd": 3.2741809263825417e-11,
+      "max_native_gross": 0.9816465908511416,
+      "max_nav_return_gap": 0.0,
+      "max_weight_gross_gap": 2.220446049250313e-16,
+      "min_native_cash": 183.3433509637496,
+      "native_RF_exact_common": false,
+      "native_cash_funding_checks_pass": true,
+      "native_context_end": "2026-10-05",
+      "native_context_start": "2015-08-10",
+      "native_first_active": "2015-11-30",
+      "native_request_rows": 132,
+      "native_requests_before_formal_anchor_preserved": 71,
+      "native_source_targets_or_RF_cropped_filled_redefined_or_rebuilt": false,
+      "path_key": "5y-stress",
+      "unchanged_Artifact_Adapter_constructor_checks": {
+        "dense": {
+          "passed": false,
+          "reason": "A dense expert cannot carry across a missing post-warmup recommendation."
+        },
+        "monthly": {
+          "passed": false,
+          "reason": "A monthly expert needs every genuine month end after its warmup."
+        }
+      }
+    }
+  ],
+  "source_pipeline_or_independent_accounts_replayed": false,
+  "status": "not_admitted_current_Interface"
+}

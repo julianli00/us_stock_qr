@@ -209,3 +209,56 @@ All232earlier receipts/1396hashes are unchanged;new inventory verifies
 **238combined completions andzeroqualifiers**. No new source or newer-input
 splice,old benchmark/expert/account replay,old forward backfill or changed
 investment threshold is involved.
+
+## Archived real-yield source eligibility
+
+This independently selected bounded identity asks whether the original
+`macro_real_yield_factor_tilt`can supply a complementary real-discount-rate
+factor-composition opinion under the unchanged current Interfaces.
+Selection is by economic role,not a whole-window return winner or a failed
+eight-pool parameter rescue. Original candidate21/review23 and their
+standalone historical rejection are preserved.
+
+The contract,code,eleven canonical synthetic/source-identity/dependency tests,
+40source references and293implementation/document dependencies freeze at
+`39fe3582`before numeric review. The one actual review finishes
+2026-11-03T16:27:50.675335Z. No source prepare/register/evaluate/fullverify,
+signal generator,vintage-comparison or old independent account is rerun.
+
+| Original source path | Formal returns | RF exact mismatch count | Nonmonth-end native dates | Native cash/BT validity |
+| --- | ---: | ---: | --- | --- |
+| 10y base | 2512 | 334 | 2016-10-05 | Pass |
+| 10y stress | 2512 | 334 | 2016-10-05 | Pass |
+| 5y base | 1254 | 262 | 2021-10-05 | Pass |
+| 5y stress | 1254 | 262 | 2021-10-05 | Pass |
+
+**Not admitted to the current Interface.** The largest native/common decoded
+RF difference is1.0001765041178778e-16;first mismatches are2016-10-10
+and2021-12-22. No epsilon rounding or changed RF definition is introduced.
+Both original native RF bytes and active common RF bytes remain unchanged;
+their decoded series are not claimed identical.
+
+Every full-source132-request matrix retains131genuine month ends plus its
+actual nonmonth-end formal funding seed. The unmodified Dense/Monthly
+constructors both reject the direct native calendar. The full source starts
+2015-08-10;first active request2015-11-30and11/11/71/71pre-anchor requests
+remain. FreshUSD10000initial reconciliation gaps are zero. First-active is
+not incorrectly required to equal each funding anchor,but no seed is deleted
+to manufacture a new recommendation view.
+
+All four cached funding/independent checks pass:minimum native cash at least
+USD180.99739459634293,maximum gross at most0.9820588794006694,zero native
+NAV-return gap,andmaximum stored independentBT/NAVgapUSD5.4569682106375694e-11.
+Financial rejection alone is not source invalidity;valid native accounting
+alone does not waive RF/calendar eligibility.
+
+Existing225query/131monthly vintage receipts and formal seeded-target parity
+are referenced only in their documented scope. The2015-11-30preformal state
+difference and lack of full daily PIT authentication are preserved,not fixed
+by current history or a rerun. No RF,assessment,recommendation view,new Adapter,
+source fill,crop,retiming or source waiver is created.
+
+All40original source references and the immutable ledger remain unchanged.
+No new financial trial,metric reevaluation,expert admission or pool expansion
+occurs. Totals stay722events/68registrations/60completed/eighttechnical/
+zero pending/240funded paths/238combined completions/**zeroqualifiers**.

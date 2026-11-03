@@ -184,6 +184,25 @@ valid,the original seven policy is unchanged,and no failed parameter is tuned.
 Current journal722has68registered/60completed/eighttechnical failures/
 zero pending/240funded paths/238combined completions/**zeroqualifiers**.
 
+The next separately frozen [archived real-yield source review](research/workbench/LEGACY_REAL_YIELD_EXPERT_ELIGIBILITY_V1.md)
+checks one original discount-rate factor-composition policy,not a new
+return-ranked champion or a retune of the rejected eight-source cohort.
+Original candidate21/review23,policy,all native requests and four old books
+remain intact. Eleven canonical checks precede immutable review intent
+`39fe3582`;no source policy/account/vintage-comparison pipeline is replayed.
+
+The [actual result](research/workbench/evidence/legacy_real_yield_expert_eligibility_20261103_v1.json)
+is **not admitted to the current Interface**. All four native cash/NAV/gross/
+stored-independent-BT checks pass,but RFexact comparison records334/334/262/262
+decoded differences(up to1.0001765041178778e-16),not a changed physical rate
+definition. Each complete native132-request CSV also retains131genuine
+month ends and one nonmonth-end capital seed;neither direct unchanged Dense
+nor Monthly Artifact Adapter fits. Before-anchor11/11/71/71requests are
+preserved. No seed-removal recommendation view,RFview,new Adapter,fill,crop,
+normalization or source waiver follows the blocker. Scoped old monthly
+vintage parity is not promoted to full daily PIT. Pool/trial counts and all
+financial results remain unchanged;this is not a ninth admitted source.
+
 ### Archived October authorization
 
 The accepted SSD research stage runs through **2026-10-31 23:59 Beijing time**
