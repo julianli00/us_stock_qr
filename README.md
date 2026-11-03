@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 70 SSD identities, 61 completed/rejected, nine retained technical failures and zero pending; 244 funded paths | Journal-derived current summary: 239 combined completions, zero qualifiers; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 71 SSD identities, 62 completed/rejected, nine retained technical failures and zero pending; 248 funded paths | Journal-derived current summary: 240 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -252,12 +252,47 @@ turnover rise on every path and Sharpe falls on three. These are whole-policy
 historical comparisons, not isolated ranking or fee causality. No old control,
 expert, source, benchmark or missed forward observation is replayed.
 
-Current journal737 records **70 registrations, 61 completions, nine technical
+At that historical stage, journal737 recorded **70 registrations, 61 completions, nine technical
 failures, zero pending, 244 funded paths and 239 combined completions with zero
 qualifiers**. All 240 earlier receipts/1444 financial-file hashes remain
 unchanged; the new inventory covers 244 receipts/1468 files. The original
 seven policy and eight-source availability are unchanged. This rejected rule
 is not promoted, tuned or declared to satisfy the investment objective.
+
+The next [native opinion arrival question](research/workbench/EXPERT_NATIVE_ARRIVAL_EQUAL_V1.md)
+keeps the same eight complete experts and equal eighths, but responds to their
+verified policy-opinion refreshes rather than only month ends. The source
+audit distinguishes seven monthly policy clocks from one admitted daily
+own-shadow feedback opinion. Two dense archives' daily availability timestamps
+are not treated as fresh monthly-policy requests. Source positions, actual
+orders and wealth/protection floors are not copied.
+
+The [versioned event-band orchestration](research/workbench/EXPERT_NATIVE_ARRIVAL_ORCHESTRATION_V1.md)
+retains the original 2.5pp actual-holding band, cash funding, costs, delays,
+capital, RF, initial DD peak and joint gates; the old monthly Module is
+unchanged. Actual registration738 precedes 2513 new native information targets.
+Proof739 preserves 7539 query/input/resolved records, 20104 source opinion
+snapshots, five semantic prefixes and six factor symbols in both horizons.
+
+Actual remote preregistration `f0ddde7` precedes fence740 at
+**2026-11-03T20:58:36.055013Z**. All four
+[native-arrival outcomes](research/workbench/evidence/expert_native_arrival_20261103_results_v1.json)
+finish by **20:58:49.277632Z** and are **rejected**. Net CAGR is
+14.042291-17.121604%, but every DD is 15.786273-17.965742%, above 15%.
+Only five-year base passes Sharpe and QQQ; the ten-year-base Sharpe
+0.9995982455087132 is strictly below 1. No passing metrics are spliced.
+
+Against the cached monthly equal-eight control, all four CAGR/Sharpe values
+fall, while DD, annualized turnover, tickets and fees rise. More frequent
+admissible feedback is not a guarantee of better main-capital risk or returns.
+This failed clock construction is not followed by a band/frequency rescue.
+
+Current journal749 records **71 registrations, 62 completions, nine technical
+failures, zero pending, 248 funded paths and 240 combined completions with zero
+qualifiers**. All 244 earlier receipts/1468 financial-file hashes remain
+unchanged; the new inventory verifies 248 receipts/1492 files. Native opinion
+clocks do not upgrade source scope, make historical use independent forward
+proof, add a ninth expert or change the original active seven policy.
 
 ### Archived October authorization
 

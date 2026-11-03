@@ -400,9 +400,87 @@ new private inventory verifies 244 receipts/1468 files; all 1289 source and
 remain unchanged. No source, old control, benchmark or account is replayed;
 newer synchronized inputs and missed prospective days are not filled.
 
-Current authoritative totals are **737 events, 70 SSD registrations,
+At minimax closure, authoritative totals were **737 events, 70 SSD registrations,
 61 completed reviews, nine technical failures, zero pending and 244 funded
 paths**. With the original 178 completions preserved, there are **239 combined
 completions and zero qualifiers**. The original active seven, eight technically
 available sources and all old failures remain unchanged. No new parameter
 variant or independent question is selected by this completed study.
+
+## Equal experts at native policy opinion refreshes
+
+This independently selected question changes the aggregation information
+clock, not pool membership, equal expert fractions, a score window or a risk
+cap. Frozen source semantics distinguish seven genuine monthly opinion clocks
+from one already admitted daily own-shadow feedback opinion. Commitment and
+joint-tail dense archives' daily `target_known_at` labels are availability,
+not new monthly-policy events. All eight original opinion values were checked
+exactly on all 2513 formal information dates. A carried opinion, newly
+evaluated opinion, source request and main execution remain different roles.
+
+The primary freezes at `26eaa8eb` after 19 canonical checks. The separate
+financial orchestration freezes at `c8fcdffe` after 34 checks, including those
+19, with 1278 source references and 305 implementation dependencies. Exact
+monthly regression, one pending request, unchanged fees/delays, independent
+BT, full cash/position reconciliation and the real packet contract precede
+new real targets. The old monthly execution Module is unchanged.
+
+Actual registration738 at **2026-11-03T20:49:57.188107Z** precedes new
+aggregation. Proof739 at **20:53:22.549321Z** retains 2513 native decisions,
+7539 exact query/input/resolved records, 20104 source opinion snapshots,
+five semantic prefixes and all six genuine factor symbols in both original
+horizons. Rational target composition differs by at most
+1.1102230246251565e-16. Source generation, shadows and controls are not replayed.
+
+Actual remote preregistration `f0ddde7fec5c029407b2f74b0e511c8a68c9e704`
+precedes fence740 at **2026-11-03T20:58:36.055013Z**. The first new account
+starts **20:58:37.267691Z** and all four finish by **20:58:49.277632Z**.
+
+| Original path | Net CAGR | RF-excess Sharpe | Maximum DD | Model tickets | Total model fees |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| 10y base | 14.732765% | 0.999598 | 17.965742% | 1334 | USD1581.03 |
+| 10y stress | 14.042291% | 0.947834 | 17.911819% | 1329 | USD2282.49 |
+| 5y base | 17.121604% | 1.001320 | 15.818939% | 705 | USD795.12 |
+| 5y stress | 15.928309% | 0.923190 | 15.786273% | 691 | USD1035.13 |
+
+**Rejected.** All CAGR gates pass but every DD gate fails. Only five-year
+base passes Sharpe and QQQ; both five-year paths beat matched SPY, while
+neither ten-year path does. The extra stress-versus-base-SPY gate fails
+ten-year stress and passes five-year stress. The exact ten-year-base Sharpe
+0.9995982455087132 is below 1, and 15.786273% DD is not 15%.
+Five-year-base Sharpe cannot be combined with another path's figures.
+
+Annualized actual two-sided turnover is
+2.777013/2.776941/2.848217/2.818100 times NAV, including deployment.
+Minimum cash is at least USD184.556351, maximum gross at most 0.981983465,
+and independent-BT equity differences at most USD1.0186340659856796e-10.
+No brokerage orders or invented numeric turnover cap are involved.
+
+The unmodified funding Interface retains the legacy field name
+`independent_monthly_feedback`. Its payload here is explicitly the **new native
+event verifier**, not monthly execution: 2513/1255 decisions, zero observed-gap
+error, one pending main batch and complete frame/position cash-engine
+reconciliation. Stress records 134/72 refreshes held without replacing pending
+requests; base records zero. No source-native order or pending state is copied.
+The label is not silently rewritten in private immutable receipts.
+
+Against **cached monthly equal-eight primary context**, all four CAGR values
+fall by 0.198480-0.553538 percentage points and Sharpe falls by
+0.015378-0.034382. DD rises by 0.070902-0.627883 points, annualized turnover
+rises by 0.153247-0.224431 times NAV, tickets rise by 184-294 and fees rise by
+USD198.38-343.24. This is a whole-policy clock/feedback comparison, not isolated
+fee causality. More frequent admissible opinions did not improve this frozen
+policy's net financial behavior.
+
+All 244 earlier receipts/1468 financial-file hashes remain unchanged. The new
+private inventory verifies 248 receipts/1492 files, and all 1278 source/305
+implementation references and the original ledger remain unchanged. No newer
+synchronized input, old benchmark/account/control replay, source-scope waiver,
+missed forward observation or changed return clock is introduced.
+
+Current authoritative totals are **749 events, 71 SSD registrations,
+62 completed reviews, nine technical failures, zero pending and 248 funded
+paths**. With the original 178 completions preserved, there are **240 combined
+completions and zero qualifiers**. The original active seven and eight
+technically available sources remain unchanged. This failed construction is
+not promoted or followed by a frequency, band or source-clock parameter rescue.
