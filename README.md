@@ -58,7 +58,15 @@ completes the [separate operational implementation](research/workbench/EXPERT_TA
 scientific source references. Native invocation 64948 is an actually observed
 scheduled delivery, distinct from the original activation. **No financial
 registration, new real consensus targets or funded accounts have started**;
-registration and the actual remote preregistration fence are next.
+registration and the actual remote preregistration fence are next in that snapshot.
+
+The [actual consensus registration](research/workbench/evidence/expert_target_consensus_20261103_registration_v1.json)
+then records event676at **2026-11-03T09:11:28.384176Z**, before new real targets.
+Proof677retains121decisions,242input/resolved records,fiveprefix checks and all
+six genuine factor symbols in both horizons. The independent integer-target
+difference is exactlyzero. At this preregistration snapshot there are65SSD
+identities,56completed,eighttechnical failures,onepending and224funded paths;
+no new main account or net-return result precedes the remote publication fence.
 
 ### Archived October authorization
 
