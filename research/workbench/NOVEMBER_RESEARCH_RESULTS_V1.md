@@ -97,3 +97,53 @@ identity, source admission, the15percentfinancial gate or any old failure.
 No CAGR, Sharpe, financial qualification, rebased capital, fee-free account or
 predictive episode filter is computed. All235completed configurations and
 zeroqualifiers remain unchanged.
+
+## Conditional hedge-suitability native source
+
+The primary remains frozen at`e815f5bf`. The separately tested native
+orchestration freezes complete code and source dependencies at`f4fa7803`;
+36synthetic lifecycle/price/oracle/accounting checks precede real outputs.
+Source registration688at2026-11-03T13:27:35.710425Z precedes122genuine
+native month-end decisions. Proof689preserves244actual input/resolved records,
+zero independent-integer target gap,fiveprefix checks and all six genuine
+factor symbols in both unchanged horizons. Native prehistory starts2016-08-31;
+the formal capital anchors correctly use known September30recommendations.
+
+Actual remote preregistration`1d7744f1b3843c5b6a56985dafcb55ab12ede175`
+precedes funding fence690at2026-11-03T13:33:53.974752Z and all four starts.
+Every new account finishes by13:34:01.487214Z.
+
+| Original path | Net CAGR | RF-excess Sharpe | Maximum DD | Model tickets | Total model fees |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| 10y base | 10.730160% | 0.559653 | 37.450347% | 90 | USD184.69 |
+| 10y stress | 10.231229% | 0.531345 | 37.891734% | 90 | USD459.64 |
+| 5y base | 12.587478% | 0.651131 | 17.792959% | 44 | USD79.15 |
+| 5y stress | 11.605262% | 0.587657 | 17.805111% | 44 | USD180.49 |
+
+**Standalone rejected.** Every Sharpe,DD,SPY andQQQ gate fails;only
+five-year-base CAGR passes. Both original extra stress/base-SPY gates fail.
+Annualized actual two-sided turnover is1.417643-1.507801times NAV; lower
+turnover is not acceptance or an invented numeric cap. Source cash remains
+positive/gross below1x;the largest independent-BT equity gap is
+USD2.546585e-11. No brokerage order is produced.
+
+Technical source admission at13:35:42.441278Z is a **separate result**:
+the unmodified`load_expert`/`ArchivedMonthlyExpert` Interface checks actual
+source identity,all four complete funded/independent paths,full2512native
+RF values exactly against unchanged common RF,and123actual availability
+checks. No source/recommendation/assessment/RF view or waiver is introduced.
+The source's historical first target is not its actual2026policy introduction.
+
+Financial failure alone does not exclude this technically complete source;
+technical admission does not qualify the final portfolio. There are now
+eighttechnically available representatives but **the active pool remains
+seven**. Any inclusion or new combination needs a separately frozen study.
+The large actual drawdowns are retained and cannot be relabeled as guaranteed
+hedging because past covariance was negative.
+
+The current journal has699events,66SSD registrations,58completed reviews,
+eighttechnical failures,zero pending and232funded paths. With the original
+178completions intact,there are236combined completions and **zeroqualifiers**.
+All228earlier receipts/1372file hashes remain unchanged;the new private
+inventory verifies232receipts/1396files. No expert,benchmark or older account
+is replayed,and synchronized newer data is not spliced or used to retime results.
