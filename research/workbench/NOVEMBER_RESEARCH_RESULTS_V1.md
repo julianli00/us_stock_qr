@@ -202,7 +202,7 @@ independent factor evidence or a unique primitive cause. Technical source
 admission remains preserved,and the original seven policy is immutable;
 this rejected controlled cohort is not promoted or retuned.
 
-Current authoritative totals are722events,68SSD registrations,60completed
+At the controlled-inclusion closure, totals were722events,68SSD registrations,60completed
 reviews,eighttechnical failures,zero pending and240funded paths.
 All232earlier receipts/1396hashes are unchanged;new inventory verifies
 240receipts/1444files. With178legacy completions intact,there are
@@ -324,3 +324,85 @@ benchmark, forward observation or partial final month is replayed or filled.
 This diagnosis selects no new ranking, weight, window, risk cap or financial
 rule. All financial totals remain 722 events/68 registrations/60 completed/
 eight technical/zero pending/240 paths/238 combined/**zero qualifiers**.
+
+## Worst mature-month opportunity: one rule, explicit metadata versions
+
+The next independent economic question considers uncertainty about which
+complete policy will outperform. The same eight sources and all 28 equal
+pairs are assessed by worst matured-month log opportunity loss plus a frozen
+one-time switch proxy. No covariance cap, new expert, return window or
+qualification threshold is scanned.
+
+The primary law freezes at `b413f221` after 16 synthetic cases. The separate
+financial implementation freezes at `819665a9`, after 28 canonical checks
+(including those 16), with 1280 source references and 299 implementation
+dependencies. V1 registration723 precedes actual scores and targets.
+Proof724 retains 121 decisions, 119 matured assessments, two unscored initial
+states, 242 actual input/resolved records, all 28 pair assessments, five
+prefixes and six/four genuine factor symbols in the ten/five-year horizons.
+The source-relative scalar gap is at most 8.57394286988125e-16; rational
+underlying-target composition differs by at most 2.7755575615628914e-17.
+
+V1 then terminates at technical failure725: its proof omitted the real packet
+contract's mandatory `original_source_signal_recomputed` field. It had a
+different truthful source-generation flag but no packet, funds or financial
+verdict. V1 code, proof, events and failed-version count remain immutable.
+
+One separately frozen metadata-only V2 bridge, `282c553a`, follows 11 new
+checks exercising the **unmodified real packet constructor**, including its
+failure case, timestamp ordering, exact cached target hash and a forbidden
+V1 pipeline replay. Every original financial field is unchanged. V2
+registration726 at **2026-11-03T19:33:18.810050Z** follows the known cached
+outputs; fresh metadata proof727 at **19:33:19.717228Z** explicitly preserves
+their original registration/proof times and exact bytes. No score or target
+is recomputed. It is the same economic question, not independent evidence
+or a financial parameter rescue.
+
+Actual remote preregistration `ac64d67f4cc62d6509f4740b998f2486097cc11d`
+precedes fence728 at **2026-11-03T19:39:48.960363Z**. The first new account
+starts **19:39:50.148709Z**; all four finish by **19:39:56.870416Z**.
+
+| Original path | Net CAGR | RF-excess Sharpe | Maximum DD | Model tickets | Total model fees |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| 10y base | 17.416165% | 0.999443 | 20.587838% | 531 | USD853.66 |
+| 10y stress | 17.036958% | 0.978383 | 20.638945% | 534 | USD1807.14 |
+| 5y base | 20.058554% | 0.950876 | 20.838117% | 310 | USD417.44 |
+| 5y stress | 19.153445% | 0.907025 | 20.894131% | 308 | USD727.06 |
+
+**Rejected.** Every CAGR and matched-cost SPY gate passes, including both
+extra stress-versus-base-SPY gates. Every Sharpe and DD gate fails. QQQ
+outperformance passes only the five-year paths. The actual ten-year-base
+Sharpe is 0.9994433109786726, strictly below 1; six-place presentation does
+not change acceptance. One CAGR above 20% does not replace joint acceptance.
+
+Annualized actual two-sided turnover is 3.297757/3.298472/3.443622/3.438875
+times NAV, including deployment. No numeric turnover cap is invented. Minimum
+cash is at least USD177.502677 and maximum gross exposure at most 0.983014858.
+The largest independent-BT equity gap is USD9.458744898438454e-11. These
+are offline model accounts and tickets, not brokerage orders.
+
+Against cached **rolling-eight primary context**, all four CAGR values rise
+by 5.041172-8.041603 percentage points, Sharpe rises, DD falls by
+1.314537-2.456577 points, annualized turnover falls by 3.682217-4.098466
+times NAV, tickets fall by 159-368 and fees fall by USD268.99-1363.67.
+Despite these whole-policy improvements, every Sharpe/DD gate still fails.
+
+Against separately labeled **equal-eight context**, CAGR rises on all paths
+but DD rises by 2.733047-5.178760 points and annualized turnover rises by
+0.673991-0.826784 times NAV. Sharpe is lower on three paths and slightly
+higher only on ten-year stress. Tickets and fees fall on all four. New pair
+fractions also differ from the rolling ERC rule, so these are not isolated
+ranking, cost-proxy or fee-causality claims.
+
+All 240 earlier receipts/1444 financial-file hashes remain unchanged. The
+new private inventory verifies 244 receipts/1468 files; all 1289 source and
+302 implementation references, the V1 terminal closure and original ledger
+remain unchanged. No source, old control, benchmark or account is replayed;
+newer synchronized inputs and missed prospective days are not filled.
+
+Current authoritative totals are **737 events, 70 SSD registrations,
+61 completed reviews, nine technical failures, zero pending and 244 funded
+paths**. With the original 178 completions preserved, there are **239 combined
+completions and zero qualifiers**. The original active seven, eight technically
+available sources and all old failures remain unchanged. No new parameter
+variant or independent question is selected by this completed study.

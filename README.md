@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 68 SSD identities, 60 completed/rejected, eight retained technical failures and zero pending; 240 funded paths | Journal-derived current summary: 238 combined completions, zero qualifiers; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 70 SSD identities, 61 completed/rejected, nine retained technical failures and zero pending; 244 funded paths | Journal-derived current summary: 239 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -82,7 +82,7 @@ therefore unsupported. Equal-seven is separately labeled context:all four new
 drawdowns andannualized turnover are higher,andstress Sharpe is lower.
 These are matched historical differences,not isolated fee causality or forward proof.
 
-Journal687now has65registrations,57completed reviews,eighttechnical failures,
+At that historical stage,journal687had65registrations,57completed reviews,eighttechnical failures,
 zero pending,228funded paths,235combined completions andzeroqualifiers.
 All224previous receipts/1348financial-file hashes remain unchanged;the new
 inventory contains228receipts/1372files. The investment objective remains unmet;
@@ -181,7 +181,7 @@ worsens on every path. Turnover falls but tickets rise on all eight paths;
 fees fall on seven,not all. These are matched historical comparisons,not
 isolated fee causality or forward evidence. Technical source admission remains
 valid,the original seven policy is unchanged,and no failed parameter is tuned.
-Current journal722has68registered/60completed/eighttechnical failures/
+At that historical stage,journal722had68registered/60completed/eighttechnical failures/
 zero pending/240funded paths/238combined completions/**zeroqualifiers**.
 
 The next separately frozen [archived real-yield source review](research/workbench/LEGACY_REAL_YIELD_EXPERT_ELIGIBILITY_V1.md)
@@ -221,6 +221,43 @@ negative-correlation flips as the selected portfolio's drawdown cause.
 These are new descriptive statistical source-risk calculations, not funded
 returns, independent samples, p-values, risk bounds, new caps or parameter selection.
 All trial/pool/financial results stay unchanged.
+
+The next [worst-month opportunity rule](research/workbench/EXPERT_MINIMAX_OPPORTUNITY_V1.md)
+studies uncertainty about which complete expert will outperform, not a
+covariance-cap or membership retune. The same eight experts supply all 28
+equal pairs; only fully matured source months enter the new opportunity
+assessment. Two initial states remain unscored and 119 full months mature.
+
+V1 registered before new scores and targets at event723, with valid proof724,
+then failed the real packet contract's missing source-generation metadata.
+Technical failure725 is terminal and remains counted. The separately frozen
+[V2 metadata bridge](research/workbench/EXPERT_MINIMAX_PACKET_BRIDGE_V2.md)
+uses the exact cached targets without recomputation. Its registration726
+does not predate those cached outputs; fresh proof727 binds the original
+chronology and unchanged bytes. These are two versions of one economic
+question, not independent trials or a repaired V1 identity.
+
+Actual remote preregistration `ac64d67` precedes fence728 at
+**2026-11-03T19:39:48.960363Z** and every new account. All four
+[financial outcomes](research/workbench/evidence/expert_minimax_packet_bridge_20261103_results_v2.json)
+finish by **19:39:56.870416Z** and are **rejected**. Net CAGR is
+17.036958-20.058554%, but all four Sharpe and DD gates fail:
+Sharpe 0.907025-0.999443 and DD 20.587838-20.894131%.
+In particular, 0.9994433109786726 is below 1 and is not rounded into a pass.
+All SPY gates pass; QQQ outperformance passes only the five-year paths.
+
+Against cached rolling-eight, all four CAGR/Sharpe values improve, DD falls,
+and turnover, tickets and fees decline. Against equal-eight, DD and annualized
+turnover rise on every path and Sharpe falls on three. These are whole-policy
+historical comparisons, not isolated ranking or fee causality. No old control,
+expert, source, benchmark or missed forward observation is replayed.
+
+Current journal737 records **70 registrations, 61 completions, nine technical
+failures, zero pending, 244 funded paths and 239 combined completions with zero
+qualifiers**. All 240 earlier receipts/1444 financial-file hashes remain
+unchanged; the new inventory covers 244 receipts/1468 files. The original
+seven policy and eight-source availability are unchanged. This rejected rule
+is not promoted, tuned or declared to satisfy the investment objective.
 
 ### Archived October authorization
 
