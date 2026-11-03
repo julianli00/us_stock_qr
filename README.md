@@ -203,6 +203,25 @@ normalization or source waiver follows the blocker. Scoped old monthly
 vintage parity is not promoted to full daily PIT. Pool/trial counts and all
 financial results remain unchanged;this is not a ninth admitted source.
 
+The separately frozen [stored pair-risk forecast diagnosis](research/workbench/PAIR_RISK_FORECAST_DIAGNOSIS_V1.md)
+then compares actual stored training-risk fields with subsequent **complete**
+source-assessment months, not new main accounts. It preserves 121 origins,
+3192 pair records, 113 complete future months/3164 evaluated pairs, seven old
+unscored states and one incomplete origin with 28 unevaluated pairs. The final
+2026-09-30 forecast requires 22 sessions through 2026-10-30, but only three fit
+the original source horizon; none are filled or used as a partial risk test.
+
+[Recorded selected pairs](research/workbench/evidence/pair_risk_forecast_diagnosis_20261103_v1.json)
+have future/recorded variance median 0.915515, p90 3.641038, max 20.338412;
+50 of 113 exceed their stored training risk. Future relative ERC imbalance
+median is 0.180311, p90 0.882179. Across all 3164 pairs, 117 of 148 negative
+training correlations become nonnegative, but only one originally selected
+pair had negative correlation and it did not flip. Thus this does not identify
+negative-correlation flips as the selected portfolio's drawdown cause.
+These are new descriptive statistical source-risk calculations, not funded
+returns, independent samples, p-values, risk bounds, new caps or parameter selection.
+All trial/pool/financial results stay unchanged.
+
 ### Archived October authorization
 
 The accepted SSD research stage runs through **2026-10-31 23:59 Beijing time**

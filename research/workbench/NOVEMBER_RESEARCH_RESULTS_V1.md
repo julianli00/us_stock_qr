@@ -262,3 +262,65 @@ All40original source references and the immutable ledger remain unchanged.
 No new financial trial,metric reevaluation,expert admission or pool expansion
 occurs. Totals stay722events/68registrations/60completed/eighttechnical/
 zero pending/240funded paths/238combined completions/**zeroqualifiers**.
+
+## Stored pair risk: subsequent complete-month diagnosis
+
+This fixed diagnostic resumes the preserved pre-outcome design after the
+finite compatibility priority closes. It is not a new portfolio rule or a
+repeat of hierarchical risk allocation, contest-credit calibration, old
+score/covariance/target generation or main-account evaluation.
+
+Ten canonical calendar/scalar-oracle/retention/full-28-pair checks precede
+intent `8ce26427`, which freezes 1290 source references and 297 implementation/
+document dependencies before actual new diagnostic calculations.
+The one run completes 2026-11-03T18:18:25.842285Z.
+
+All 121 old decision states and 3192 original pair records remain. Seven old
+unscored origins remain unscored. There are 113 complete next-exchange-month
+origins and 3164 evaluated pair cases. The final 2026-09-30 origin requires
+22 sessions ending 2026-10-30; only 2026-10-01, 10-02 and 10-05 exist in the
+original source books. All 28 final pairs remain incomplete/unevaluated.
+An immutable calendar-only clarification before calculations corrects the
+original design's unverified five-day anticipation to actual three; the original
+design and full-month requirement are unchanged.
+
+The forecast variance is a **new scalar sum of stored training marginal-risk
+fields**, not recovered original unsaved forecast memory. The following
+month's fixed-statistical-weight source NET-minus-RF mixture is assessed
+only descriptively. It is not a tradable main-account counterfactual, added
+shadow wealth, CAGR/DD strategy or transferred risk guarantee.
+
+| Complete statistical pair group | Cases | Future/recorded variance median | p90 | Maximum | Future variance exceeds recorded |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| All source pairs | 3164 | 0.985841 | 4.345383 | 22507.039868 | 1563 |
+| Originally selected pairs | 113 | 0.915515 | 3.641038 | 20.338412 | 50 |
+| Originally nonselected pairs | 3051 | 0.988990 | 4.366291 | 22507.039868 | 1513 |
+
+Originally selected pair future relative marginal-risk imbalance has
+median 0.180311, p90 0.882179 and maximum 1.010363. Backward ERC equality is
+not equality of subsequent source risk contributions. The median variance
+ratio below one is not a blanket underforecast claim; large upper-tail ratios
+are not calibrated probabilities, confidence limits or a selected new cap.
+
+Across all pairs, 117 of 148 negative stored correlations become nonnegative.
+Only one originally selected pair had negative stored correlation, and none
+of those selected negative correlations flip. The aggregate sign-change count
+therefore is not evidence of a unique selected-master drawdown cause.
+
+The largest ratio 22507.039868 is an originally **nonselected** 2021-02-26
+joint-tail/defensive pair, from recorded variance 1.498551472643307e-08 to
+future statistical variance 0.000337279577389943. The largest originally
+selected ratio 20.338412 occurs 2020-02-28 for defensive/ratchet, from
+1.09613091763178e-05 to 0.00022293562088139784. Neither is main-account
+variance, PNL attribution, an independent experiment or a future risk bound.
+
+All 6384 new input/resolved lines retain exact source float.hex operands before
+new calculations and resolved fields afterward. Independent scalar variance
+relative discrepancy is at most 6.392612127944904e-16; covariance absolute
+discrepancy at most 4.336808689942018e-19. Source returns, RF, audit fields and
+old financial books remain unchanged. No source model, target, score, account,
+benchmark, forward observation or partial final month is replayed or filled.
+
+This diagnosis selects no new ranking, weight, window, risk cap or financial
+rule. All financial totals remain 722 events/68 registrations/60 completed/
+eight technical/zero pending/240 paths/238 combined/**zero qualifiers**.

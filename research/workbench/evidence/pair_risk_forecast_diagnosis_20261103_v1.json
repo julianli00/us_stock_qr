@@ -1,0 +1,78 @@
+{
+  "actual_financial_counts_unchanged": {
+    "current_journal_event_count": 722,
+    "current_journal_head_sha256": "2d8640e7ae7a166b96083fa241951fe60aa73f1d74214992c445b71a35e5b5d4",
+    "new_account_paths": 240,
+    "new_completed_strategy_evaluations": 60,
+    "new_historical_point_gate_passes": 0,
+    "new_pending_candidates": 0,
+    "new_registered_candidates": 68,
+    "new_reviews": 60,
+    "new_technical_failures": 8,
+    "original_completed_configurations": 178,
+    "original_registered_versions": 96,
+    "original_reviews": 94,
+    "total_legacy_plus_ssd_completed_configurations": 238
+  },
+  "aggregates": {
+    "all_complete_source_pairs": {
+      "future_variance_above_recorded_count": 1563,
+      "independent_sample_or_pvalue_or_risk_bound": false,
+      "negative_correlation_origins": 148,
+      "negative_to_nonnegative_correlation_count": 117,
+      "pairs": 3164,
+      "relative_ERC_imbalance_max": 1.1795108200051405,
+      "relative_ERC_imbalance_median": 0.20821294893029973,
+      "relative_ERC_imbalance_p90": 0.9022078647381946,
+      "variance_ratio_max": 22507.03986797416,
+      "variance_ratio_median": 0.9858407941449565,
+      "variance_ratio_p90": 4.345382665526316
+    },
+    "original_nonselected_pairs": {
+      "future_variance_above_recorded_count": 1513,
+      "independent_sample_or_pvalue_or_risk_bound": false,
+      "negative_correlation_origins": 147,
+      "negative_to_nonnegative_correlation_count": 117,
+      "pairs": 3051,
+      "relative_ERC_imbalance_max": 1.1795108200051405,
+      "relative_ERC_imbalance_median": 0.20939607497222146,
+      "relative_ERC_imbalance_p90": 0.9017807198165321,
+      "variance_ratio_max": 22507.03986797416,
+      "variance_ratio_median": 0.988990080550029,
+      "variance_ratio_p90": 4.366290560269144
+    },
+    "original_selected_pairs": {
+      "future_variance_above_recorded_count": 50,
+      "independent_sample_or_pvalue_or_risk_bound": false,
+      "negative_correlation_origins": 1,
+      "negative_to_nonnegative_correlation_count": 0,
+      "pairs": 113,
+      "relative_ERC_imbalance_max": 1.0103627155662416,
+      "relative_ERC_imbalance_median": 0.18031127852362916,
+      "relative_ERC_imbalance_p90": 0.882178996087592,
+      "variance_ratio_max": 20.33841188998265,
+      "variance_ratio_median": 0.9155151718803147,
+      "variance_ratio_p90": 3.641038341436238
+    }
+  },
+  "all_source_inputs_unchanged": true,
+  "completed_at": "2026-11-03T18:18:25.842285+00:00",
+  "diagnostic": {
+    "path": "reports/ssd-continuous-research-v1/pair-risk-forecast-diagnosis-20261103-v1/diagnostic-v1.json",
+    "sha256": "5917fcda1fdc23b6f4d347b63fca28ba918e4f7264f9597de647c873911de55b"
+  },
+  "full_future_origins": 113,
+  "incomplete_future_origins": 1,
+  "independent_samples_or_pvalues_or_bounds_claimed": false,
+  "investment_objective_verified": false,
+  "new_policy_parameter_or_window_selected": false,
+  "new_source_requests_or_financial_trials": 0,
+  "original_decisions": 121,
+  "original_unscored_origins": 7,
+  "pair_case_status_counts": {
+    "complete_future_risk_evaluated": 3164,
+    "future_month_incomplete_not_evaluated": 28
+  },
+  "source_pair_records": 3192,
+  "statistical_risk_not_main_PNL_or_new_strategy": true
+}
