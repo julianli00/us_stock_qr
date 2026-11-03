@@ -50,7 +50,10 @@ slightly; stress Sharpe falls. Stress fees rise even with fewer model tickets.
 These complete matched comparisons are not isolated causal fee attribution.
 Recommendation agreement is not a forecast of diversification or a DD guarantee.
 
-## Preserved cumulative state
+## Cumulative snapshot after the consensus study
+
+This is the historical consensus-stage snapshot. The newer native-source
+section below reports the subsequent current totals.
 
 The journal contains687events,65SSD registrations,57completed reviews,
 eighttechnical failures,zero pending and228funded paths. The original178
