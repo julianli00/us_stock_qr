@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_eight_expert_inclusion_20261103_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "prior_journal_sequence": 699,
+  "prior_journal_head_sha256": "e7149cd97cb2a34d2317262b8dab764d4ab8a55d6341bfbbfe4c9865a2579374",
+  "prior_registered": 66,
+  "prior_completed": 58,
+  "prior_technical_failures": 8,
+  "prior_funded_paths": 232,
+  "prior_combined_completed": 236,
+  "source_seven_policy": {
+    "path": "config/strategy-expert-pool-seven-v1.json",
+    "sha256": "f27b1ac96253faef7ce57520682dac83ef426272057dfa2c277c61fcc319416f"
+  },
+  "source_seven_results": {
+    "path": "reports/ssd-continuous-research-v1/seven-expert-meta-20261031-v1/results.json",
+    "sha256": "871f0b649ace186d0f2f53a0cbe71fc01dfe4dc3ca22349ff9ecc1c984af8223"
+  },
+  "new_expert_admission": {
+    "path": "reports/ssd-continuous-research-v1/conditional-hedge-expert-20261103-v1/technical-admission-v1.json",
+    "sha256": "8160e46c0e92389abb6e3a380887223f2d2963eebd5f144f9a5290b815d91962"
+  },
+  "initial_decision_session": "2016-10-05",
+  "lookback_sessions": 126,
+  "training_sessions": 84,
+  "validation_sessions": 42,
+  "selected_experts": 2,
+  "selection_score_decimal_places": 12,
+  "reference_capital_usd": 10000,
+  "switch_cost_bps_per_side": 5.0,
+  "switch_commission_per_changed_asset_usd": 1.0,
+  "switch_cost_amortization_sessions": 21,
+  "changed_asset_numeric_tolerance": 1e-12,
+  "shadow_reference_path": "10y-base",
+  "invested_target_budget": 0.98,
+  "cash_reserve": 0.02,
+  "actual_weight_trade_band": 0.025,
+  "minimum_economic_factor_families": 3,
+  "decision_information_clock": "after_16_15_ET_index_close_before_later_open_execution",
+  "expert_ids": [
+    "equity_first_month_end_commitment_v1",
+    "benchmark_opportunity_joint_tail_v1",
+    "symmetric_garch_growth_bil_v1",
+    "semiconductor_ratchet_protection",
+    "semiconductor_option_dollar_profit_share_confirmation",
+    "four_factor_defense_diversified",
+    "two_segment_vvix_uncertainty_confirmation_v1",
+    "conditional_covariance_hedge_expert_v1"
+  ],
+  "mechanism_groups": [
+    "committed_price_trend_defense",
+    "joint_tail_opportunity",
+    "conditional_variance_growth",
+    "wealth_feedback_protection",
+    "common_quarter_profit_dollar_confirmation",
+    "cross_asset_defensive_relative_strength",
+    "option_market_uncertainty_confirmation",
+    "conditional_cross_asset_hedge_suitability"
+  ],
+  "candidates": [
+    {"id": "expert_pool_eight_equal_weight_v1", "weighting": "equal"},
+    {"id": "expert_pool_eight_rolling_pair_v1", "weighting": "train_erc_validate_net"}
+  ],
+  "candidate_count_in_this_study": 2,
+  "study_size_is_a_total_research_quota": false,
+  "new_economic_factor_definitions": 0,
+  "new_shadow_account_runs": 0,
+  "new_shadow_recommendation_artifacts": 0,
+  "new_source_requests": 0,
+  "methodology": {
+    "question": "Controlled inclusion of one already technically admitted conditional hedge source,not a new ranking or weighting law.",
+    "selection": "The source adds a distinct conditional covariance/momentum defensive mechanism. It was proposed before native outcomes;its standalone financial rejection is preserved,not used as a technical exclusion. No whole-window winner selection or independence claim.",
+    "unchanged_law": "Exact original choose_pair/combine,126/84/42mature observations,k2,trainingERC,mintrain-validation net risk,original switch proxy and12decimal lexicalties. Equal uses eighths. Retain all28pairs and all121formal decisions/return dates.",
+    "capital": "Combine into one14asset98percentETF/2percentidle target and one fresh original main account per path,not summed shadows or averaged performance. Original costs,delays,RF,peak,actualmonthlyholdingband,independentBT and allgates apply.",
+    "source_reuse": "Read exact cached seven and separately admitted eighth targets/NET books/registration/clock evidence. No source generator,fit,shadow or old account/control replay,RF view,source waiver or newer-input silent splice.",
+    "scope": "Study-specific eight membership only. The original seven policy,code and results remain immutable;technical availability and this experiment are not a live-policy change or final portfolio qualification.",
+    "maturity": "Initial insufficient126common observations explicitly use unscored equal eighths,not safe or successful scores. Missing post-start targets/returns/RF stop the version;no asset/source drop or fill.",
+    "bias": "236exposed completions. Preserve actual introduction/admission versus counterfactual historical availability;rollingprefixes are not independent OOS or real forwardproof.",
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

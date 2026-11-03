@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 66 SSD identities, 58 completed/rejected, eight retained technical failures and zero pending; 232 funded paths | Journal-derived current summary: 236 combined completions, zero qualifiers; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 68 SSD identities, 58 completed/rejected, eight retained technical failures and two pending; 232 funded paths | Journal-derived current summary: 236 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -145,6 +145,25 @@ technically available;the active seven-expert policy is unchanged.** Inclusion
 requires a separate frozen study,not an automatic eighth member or final
 qualification claim. Journal699has66registered/58completed/eighttechnical
 failures/zero pending/232funded paths/236combined completions/zeroqualifiers.
+
+The subsequent [controlled inclusion study](research/workbench/EIGHT_EXPERT_INCLUSION_V1.md)
+freezes study-specific eight membership,not a replacement of the original
+seven policy. It reuses exact original`choose_pair`/`combine`,126/84/42mature
+history,k2,ERC,net score,switch proxy and12decimal ties;no parameter rescue.
+Full implementation/source freeze`f504f1f8`and28offline checks precede
+registrations700/701at2026-11-03T14:54:42.633415Z/42.960855Z,**both before**
+new scores or targets. Proofs702/703retain121decisions,242actual input/resolved
+records,236512roundtrippable NET/RF values,all28pairs,fiveprefix checks and
+six genuine factor symbols in both horizons. Seven immature states are
+explicitly unscored equal eighths.
+
+The [equal-eight packet](research/workbench/evidence/eight_expert_inclusion_20261103_0_registration_v1.json)
+and[rolling-eight packet](research/workbench/evidence/eight_expert_inclusion_20261103_1_registration_v1.json)
+each retain the complete fixed cohort and both actual registration hashes.
+Both packets and every scientific Git/source pin must pass before any new
+account. Cached seven controls,all source shadows and their failures are
+reused,not replayed. No funded inclusion result or final qualification is
+claimed at this preregistration stage.
 
 ### Archived October authorization
 
