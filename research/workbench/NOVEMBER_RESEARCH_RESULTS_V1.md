@@ -966,3 +966,72 @@ failures, zero pending, 284 funded paths, 249 combined completions and zero
 qualifiers**. No financial trial, new source request, RF view, source Adapter,
 economic-risk count or roster promotion follows. Both complete financial
 rules remain rejected and the investment objective remains unmet.
+
+## Archived price-forecast expert technical review
+
+The [finite cached review](LEGACY_PRICE_FORECAST_EXPERT_ELIGIBILITY_V1.md)
+selects original `conditional_price_factor_model_v2` for its supervised
+price-conditioned factor/gold/BIL budget role. This differs from fixed factor
+shares, conditional hedge covariance or real-yield factor composition, but
+still uses related price information and is not an independent economic factor.
+Selection follows 249 exposed completions, not an independent holdout or
+standalone-return winner screen. The augmented sibling is not reviewed.
+
+Original candidate42/review44, registered **2026-10-10T18:29:35.462171Z**,
+are verified through immutable query-only SQLite and the original packet,
+specification, bundle and review. Original invalid V1 and the pre-outcome
+technical V2 correction remain historical; original financial rejection
+remains unchanged. The full source dependency/manifests and PIT restrictions
+are not waived because the selected model uses price-only predictors.
+
+Eighteen synthetic checks precede freeze `9763d1bb` at
+**2026-11-04T19:01:06.885949Z**, binding 55 source references and 324
+implementation dependencies. The single cached review completes at
+**19:02:27.746001Z** without executing a model, feature, label, prediction,
+source-target, account, benchmark or old financial-verifier pipeline.
+
+**Not admitted through the current Interface.** This is a technical
+compatibility conclusion, not an exclusion for weak standalone Sharpe/CAGR/DD
+and not a claim that the original complete policy is invalid.
+
+| Original native path | Return dates | Full native request rows | Nonmonth-end initialization row | Exact RF mismatches |
+| --- | ---: | ---: | --- | ---: |
+| 10y base | 2512 | 122 | 2016-10-05 | 334 |
+| 10y stress | 2512 | 122 | 2016-10-05 | 334 |
+| 5y base | 1254 | 122 | 2021-10-05 | 262 |
+| 5y stress | 1254 | 122 | 2021-10-05 | 262 |
+
+The native matrices retain their full 2015-08-10 through 2026-10-05 context
+and first genuine 2016-09-30 recommendation. No source seed is removed or
+retimed. Both unchanged Monthly and Dense Artifact Adapter constructors fail
+on all four native matrices. Actual125/126 consumer observations are therefore
+explicitly **not performed**, not inferred from a fabricated compatible view.
+
+Native RF differs from the unchanged common reader by at most
+1.0001765041178778e-16, first on 2016-10-10 for ten-year paths and
+2021-12-22 for five-year paths. An extremely small difference is still not
+exact identity. No rounding, parser switch, RF replacement, new assessment/
+recommendation view, new source Adapter or source/PIT waiver follows.
+
+All four existing cash-funding/1x/return-NAV/weight/fee/independent-BT checks
+pass. Minimum cash is at least USD174.16724959132927, maximum gross at most
+0.9827840487768702 and cached independent-BT NAV difference at most
+USD2.546585164964199e-11. These are stored accounting checks, not new accounts
+or a financial qualification result.
+
+The existing price-model training audit contains 121 original receipts from
+2016-09-30 through 2026-09-30. Recorded labels are available by their decision;
+mature training counts range9-35 months under the original maximum36-month
+rule. Five fund rows per month are not independent monthly observations.
+Original hashes and fixed-hyperparameter flags are preserved. These audit
+receipts are not model coefficients, newly rerun fits, a separately replayed
+prefix proof or independent forward validation.
+
+The [complete sanitized result](evidence/legacy_price_forecast_expert_eligibility_20261104_v1.json)
+retains all blockers and source-clock distinctions. This identity closes
+without repair/retry or automatic expansion of the separate Macro compatibility
+scope. Original active-seven/selected-eight rosters stay unchanged. There are
+**zero new financial trials**: journal852, 80 SSD registrations, 71 completed
+reviews, nine technical failures, zero pending, 284 funded paths, 249 combined
+completions and zero qualifiers remain. A blocked source review is not an
+additional registered financial technical failure.

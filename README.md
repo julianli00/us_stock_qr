@@ -447,6 +447,23 @@ This post-outcome mechanism audit establishes no paid-fee, CAGR or DD causality;
 both financial rejections, original rosters and **249 completions/zero qualifiers**
 remain unchanged.
 
+The next [cached price-forecast expert review](research/workbench/LEGACY_PRICE_FORECAST_EXPERT_ELIGIBILITY_V1.md)
+checks original `conditional_price_factor_model_v2`, not a new return-ranked
+winner. Its [actual result](research/workbench/evidence/legacy_price_forecast_expert_eligibility_20261104_v1.json)
+is **not admitted through the current Interface**: native RF differs on
+334/334/262/262 cells, and each complete native target matrix retains one
+nonmonth-end capital initialization row that both unchanged Monthly/Dense
+Adapters reject. The maximum RF difference is only 1.0001765041178778e-16;
+exact matching is not replaced with a numerical tolerance.
+
+All four cached funding/independent-BT checks pass, and 121 stored training
+receipts retain labels known by each decision with 9-35 mature months.
+These receipts are not saved model coefficients or independently rerun fits.
+No fit, prediction, target, account or old verifier is replayed; no seed is
+deleted and no RF view or source Adapter is created. Standalone rejection
+remains separate from this technical incompatibility. No source is added and
+financial counts remain unchanged.
+
 ### Archived October authorization
 
 The accepted SSD research stage runs through **2026-10-31 23:59 Beijing time**
