@@ -464,6 +464,21 @@ deleted and no RF view or source Adapter is created. Standalone rejection
 remains separate from this technical incompatibility. No source is added and
 financial counts remain unchanged.
 
+The subsequent [stored pair-score persistence diagnosis](research/workbench/PAIR_SCORE_PERSISTENCE_DIAGNOSIS_V1.md)
+adds no financial rule. It reuses saved future binary64 source observations and
+already stored variance, without repeating the old risk analysis. Across
+113 complete following exchange months, the actual original choice's future
+reference-assessment midrank has median **0.517857** and mean **0.533660**;
+53 months are below the halfway rank reference. Monthly Kendall tau-b has
+median 0.195767, with 74 positive and 39 negative months.
+
+These are descriptive source-assessment comparisons, not calibrated forecasts,
+statistical significance or realized main Sharpe/fees. The final incomplete
+month and all28 censored pairs remain unassessed. The
+[sanitized outcome](research/workbench/evidence/pair_score_persistence_diagnosis_20261104_v1.json)
+does not create another chooser, retune a window or change any financial
+rejection. Current totals remain **249 completions and zero qualifiers**.
+
 ### Archived October authorization
 
 The accepted SSD research stage runs through **2026-10-31 23:59 Beijing time**

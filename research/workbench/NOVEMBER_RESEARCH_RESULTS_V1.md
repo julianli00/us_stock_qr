@@ -1035,3 +1035,69 @@ scope. Original active-seven/selected-eight rosters stay unchanged. There are
 reviews, nine technical failures, zero pending, 284 funded paths, 249 combined
 completions and zero qualifiers remain. A blocked source review is not an
 additional registered financial technical failure.
+
+## Stored pair-score ordinal persistence diagnosis
+
+The [fixed read-only method](PAIR_SCORE_PERSISTENCE_DIAGNOSIS_V1.md) asks
+whether original-eight past pair-score ordering persists into the following
+complete exchange month's source assessment. This diagnostic interpretation is
+new: the original lower train/validation score was a selection heuristic, not
+a calibrated next-month return or Sharpe forecast.
+
+The earlier six-source objective-alignment, contest-credit and pair-risk
+diagnoses remain closed. This node reuses the already recorded pair-risk
+binary64 future inputs and already stored future portfolio variance; it does
+not rerun covariance, risk fitting, past scores, choices, targets or accounts.
+Future source-NET-minus-RF mean uses the original fixed pair weights and the
+recorded incremental proxy amortized over21 sessions, preserving the original
+assessment convention. This is not actual future paid fees or main capital.
+
+Seventeen synthetic checks precede freeze `086b3310` at
+**2026-11-04T19:24:16.736896Z**, binding 1300 source references and 330
+implementation dependencies. The single stream pass completes at
+**19:26:44.002627Z**. Independent NumPy/scalar-fsum normalized-assessment
+differences are at most 3.552713678800501e-15.
+
+All121 original states, seven unscored origins and all3192 pair records at
+114 mature origins remain. There are113 complete following exchange months
+and3164 assessed pair cases. The final September30 origin requires October30,
+beyond the source books ending October5; all28 final cases remain censored
+without a partial-month score or newer data fill. No undefined case is filled
+with a safe or successful score.
+
+| Descriptive assessment | Actual retained result |
+| --- | ---: |
+| Complete future origins | 113 |
+| Original selected-pair future midrank median | 0.5178571428571429 |
+| Original selected-pair future midrank mean | 0.5336599241466499 |
+| Selected-pair future midrank below0.5 | 53 of113 |
+| Monthly Kendall tau-b median | 0.19576719576719576 |
+| Monthly Kendall tau-b mean | 0.16884393875544318 |
+| Positive / negative monthly tau-b | 74 /39 |
+| Undefined selected rank / tau months | 0 /0 |
+
+Midranks give half credit to exact ties;0.5 is a rank reference, not a financial
+gate or significance test. Tau-b retains original12-decimal past-score keys
+and exact future-assessment ties. All-tied/zero-denominator cases would remain
+explicitly undefined; no denominator or variance floor is used.
+
+The observed ordinal association does not establish a consistently superior
+selected pair: its median later reference rank is near the middle and53 months
+fall below the halfway rank reference. These comparisons do not constitute a
+statistical test, a demonstrated profitable alternative chooser or a main-account
+fee/CAGR/DD attribution. No ex-post winner is used to create capital allocations.
+
+The question was selected after249 exposed completed configurations and known
+previous results. Shared experts and overlapping training observations are not
+independent samples, independent OOS or real forward proof. Native NET already
+contains source fees; the additional proxy reference does not create fee-free
+returns or a transferable source-wealth guarantee.
+
+The [public aggregate projection](evidence/pair_score_persistence_diagnosis_20261104_v1.json)
+contains no raw future source observations or monthly portfolio vectors.
+All source/code bytes and prior financial outcomes remain unchanged. No
+financial configuration, new source request, RF view, source Adapter, pool
+promotion, parameter or window rescue follows. Authoritative totals remain
+**852 events, 80 SSD registrations, 71 completed reviews, nine technical
+failures, zero pending, 284 funded paths, 249 combined completions and zero
+qualifiers**. The investment objective remains unmet.
