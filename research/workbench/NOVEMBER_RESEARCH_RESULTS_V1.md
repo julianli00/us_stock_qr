@@ -4,7 +4,52 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Credit expert inclusion: actual preregistration, not yet funded
+## Credit expert inclusion: both complete rules rejected
+
+The [complete eight-path outcome](evidence/credit_expert_inclusion_20261104_results_v1.json)
+retains the deliberate original-eight-plus-credit pool and both original
+combination laws. Actual complete-cohort publication
+`bc689dc4368463bc35acfab3e0c0ba2f6be8e7dd` precedes journal fence892 and
+every new account. Reviews901/910 at**2026-11-04T22:16:19.528372Z** and
+**22:16:59.441648Z** reject both complete rules.
+
+| Rule / original path | Net CAGR | RF-excess Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Model fees USD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Equal 10y-base | 14.600410% | 1.016546 | 16.355882% | 2.773936x | 1050 | 1292.07 |
+| Equal 10y-stress | 14.024653% | 0.972868 | 16.354872% | 2.773608x | 1050 | 1996.08 |
+| Equal 5y-base | 16.881896% | 1.001644 | 16.257168% | 2.757225x | 512 | 597.57 |
+| Equal 5y-stress | 15.634793% | 0.915047 | 16.643324% | 2.748705x | 512 | 841.85 |
+| Rolling 10y-base | 12.462316% | 0.791137 | 21.463573% | 7.794437x | 844 | 1479.74 |
+| Rolling 10y-stress | 11.715159% | 0.736589 | 22.081028% | 7.800944x | 844 | 3330.31 |
+| Rolling 5y-base | 13.208589% | 0.698856 | 21.297623% | 8.148960x | 452 | 687.60 |
+| Rolling 5y-stress | 11.699134% | 0.598246 | 22.302830% | 8.166455x | 452 | 1361.58 |
+
+Equal passes all CAGR and both base Sharpe gates, but fails both stress Sharpe,
+all DD and all QQQ gates. SPY and the extra stress/base-SPY gate fail ten years
+and pass five years. Rolling passes only the two base CAGR gates; every
+Sharpe/DD/SPY/QQQ and extra stress/base-SPY gate fails. No passing fragment
+is spliced across horizons, paths or rules. No source or meta parameter is
+changed to rescue these outcomes.
+
+Matched against the cached original-eight controls, equal has lower CAGR,
+higher turnover and higher model fees on all four paths. Ten-year DD improves
+but five-year DD worsens; Sharpe improves only ten-year base. Rolling improves
+CAGR and Sharpe on all four paths, and DD on three, but ten-year stress DD
+worsens. Rolling turnover is higher on all four paths. Its tickets fall55/55/
+17/17; fees fall only ten-year base and rise elsewhere. These are whole-policy
+contrasts, not an isolated causal credit-alpha or fee attribution.
+Neither control account is replayed.
+
+All eight accounts remain cash funded: minimum cashUSD170.8103178,
+maximum gross0.983770526 and maximum independent BT gapUSD6.5484e-11;
+broker orders are0. The source credit policy's financial rejection and
+separate technical admission stay unchanged, as do the original global rosters.
+Current journal910:85registrations,76completed reviews, nine retained financial
+technical failures, zero pending,304funded paths,**254combined completions,
+zero qualifiers; investment goal unmet**. There is no independent forward
+qualification or enlarged source/PIT claim.
+
+### Preserved preregistration snapshot: not yet funded
 
 The [fixed inclusion](CREDIT_EXPERT_INCLUSION_V1.md) deliberately appends the
 complete, technically admitted credit policy to the original eight experts.
@@ -64,7 +109,7 @@ active/selected global pool; inclusion needs a separately frozen study.
 This credit/duration-conditioned archival policy is not pure credit-spread
 alpha, independent forward validation or complete historical intraday PIT.
 The exposed251prior completions, input provenance limitations and data-preparation
-V1 failure remain. At current journal887:83registrations,74completed reviews,
+V1 failure remain. At that journal887 source-study snapshot:83registrations,74completed reviews,
 nine financial technical failures, zero pending,296funded paths,
 **252combined completions, zero qualifiers; investment goal unmet**.
 
