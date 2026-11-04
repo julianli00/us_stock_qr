@@ -1,0 +1,164 @@
+{
+  "actual_Interface_observations": [
+    {
+      "as_of": "2015-08-10",
+      "carried_opinion_is_new_source_request": false,
+      "score_mature": false,
+      "shadow_observations": 0,
+      "target_available": false,
+      "target_known_at": null
+    },
+    {
+      "as_of": "2016-08-31",
+      "carried_opinion_is_new_source_request": false,
+      "score_mature": false,
+      "shadow_observations": 0,
+      "target_available": true,
+      "target_known_at": "2016-08-31"
+    },
+    {
+      "as_of": "2016-10-05",
+      "carried_opinion_is_new_source_request": false,
+      "score_mature": false,
+      "shadow_observations": 0,
+      "target_available": true,
+      "target_known_at": "2016-09-30"
+    },
+    {
+      "as_of": "2017-04-05",
+      "carried_opinion_is_new_source_request": false,
+      "score_mature": false,
+      "shadow_observations": 125,
+      "target_available": true,
+      "target_known_at": "2017-03-31"
+    },
+    {
+      "as_of": "2017-04-06",
+      "carried_opinion_is_new_source_request": false,
+      "score_mature": true,
+      "shadow_observations": 126,
+      "target_available": true,
+      "target_known_at": "2017-03-31"
+    },
+    {
+      "as_of": "2026-10-05",
+      "carried_opinion_is_new_source_request": false,
+      "score_mature": true,
+      "shadow_observations": 126,
+      "target_available": true,
+      "target_known_at": "2026-09-30"
+    }
+  ],
+  "actual_financial_counts_unchanged": {
+    "current_journal_event_count": 852,
+    "current_journal_head_sha256": "4d9979d6234629fcb9e342c87118431c4236d316082988d4ff30967d99ab0bde",
+    "new_account_paths": 284,
+    "new_completed_strategy_evaluations": 71,
+    "new_historical_point_gate_passes": 0,
+    "new_pending_candidates": 0,
+    "new_registered_candidates": 80,
+    "new_reviews": 71,
+    "new_technical_failures": 9,
+    "original_completed_configurations": 178,
+    "original_registered_versions": 96,
+    "original_reviews": 94,
+    "total_legacy_plus_ssd_completed_configurations": 249
+  },
+  "blockers": [],
+  "cached_loader_validation": {
+    "adapter": "monthly",
+    "counterfactual_historical_availability": true,
+    "financial_failure_is_not_admission_failure": true,
+    "first_historical_target": "2016-08-31",
+    "four_completed_paths_checked": 4,
+    "historical_shadow_end": "2026-10-05",
+    "historical_shadow_observations": 2512,
+    "historical_shadow_start": "2016-10-06",
+    "id": "hmm_vxn_relative_uncertainty_v1",
+    "independent_forward_validation": false,
+    "introduced_at": "2026-10-29T10:50:07.287294+00:00",
+    "mechanism_group": "conditional_variance_growth",
+    "shadow_reference": {
+      "path": "reports/ssd-continuous-research-v1/equity-first-20261027-v1/hmm_vxn_relative_uncertainty_v1/10y-base-attempt-001/account.csv",
+      "sha256": "730393d936e46869cef7ef45697a5baeebb99062588dd7cd5f00fa2cdccbe4e5"
+    },
+    "source_frozen_specification_sha256": "1732ac2b18a357eccabddd7b53089b8b829941d52256eeda32a510cb1580be00",
+    "source_technical_and_funding_checks_passed": true,
+    "standalone_financial_verdict_preserved": "rejected",
+    "target_reference": {
+      "path": "data/ssd-vxn-relative-uncertainty-20261029-v1/hmm_vxn_relative_uncertainty_v1/targets.csv",
+      "sha256": "d50c295898ea1c1d923ed98f71a639fc802bd8a4a8223fba6c60ddbcb3e77ff7"
+    }
+  },
+  "candidate_id": "hmm_vxn_relative_uncertainty_v1",
+  "composition": {
+    "HMM_variation_ratio_target_pipeline_replayed": false,
+    "all_nonstock_cells_exact": true,
+    "genuine_native_monthly_opinions": 122,
+    "maximum_stock_budget_conservation_difference": 1.1102230246251565e-16,
+    "old_prefix_certificates_read": 5,
+    "stored_SOXX_share_maximum": 0.6974962937822323,
+    "stored_SOXX_share_minimum": 0.40947431634414866,
+    "undefined_prehistory_months_retained": 9
+  },
+  "independent_forward_validation": false,
+  "intent": {
+    "path": "reports/ssd-continuous-research-v1/archived-vxn-expert-eligibility-20261104-v1/eligibility-intent-v1.json",
+    "sha256": "db34f00f19bac62eddcd770312d7106c9efb765178b26ecbb75da7d04387f09c"
+  },
+  "investment_objective_verified": false,
+  "native_paths": [
+    {
+      "broker_orders": 0,
+      "cached_independent_BT_NAV_difference_usd": 2.9103830456733704e-11,
+      "formal_return_sessions": 2512,
+      "maximum_gross_exposure": 0.9832709200028412,
+      "minimum_cash_usd": 198.14860046145338,
+      "native_RF_mismatch_count": 0,
+      "path_key": "10y-base"
+    },
+    {
+      "broker_orders": 0,
+      "cached_independent_BT_NAV_difference_usd": 1.0186340659856796e-10,
+      "formal_return_sessions": 2512,
+      "maximum_gross_exposure": 0.9832377942689043,
+      "minimum_cash_usd": 195.39619140830445,
+      "native_RF_mismatch_count": 0,
+      "path_key": "10y-stress"
+    },
+    {
+      "broker_orders": 0,
+      "cached_independent_BT_NAV_difference_usd": 1.4551915228366852e-11,
+      "formal_return_sessions": 1254,
+      "maximum_gross_exposure": 0.9832709200028413,
+      "minimum_cash_usd": 191.04236909886865,
+      "native_RF_mismatch_count": 0,
+      "path_key": "5y-base"
+    },
+    {
+      "broker_orders": 0,
+      "cached_independent_BT_NAV_difference_usd": 1.0913936421275139e-11,
+      "formal_return_sessions": 1254,
+      "maximum_gross_exposure": 0.9832377942689043,
+      "minimum_cash_usd": 184.6397813709621,
+      "native_RF_mismatch_count": 0,
+      "path_key": "5y-stress"
+    }
+  ],
+  "new_RF_recommendation_assessment_view_or_source_Adapter": false,
+  "new_model_filter_variation_ratio_target_or_account_pipeline": false,
+  "new_source_requests_or_financial_trials": 0,
+  "order_authority": false,
+  "original_HMM_fit_filter_receipts_retained": 122,
+  "original_active_rosters_changed": false,
+  "review_id": "ssd_archived_vxn_expert_eligibility_20261104_v1",
+  "reviewed_at": "2026-11-04T19:50:28.731334+00:00",
+  "selected_representative_or_pool_member": false,
+  "source_financial_rejection_preserved": true,
+  "source_registered_at": "2026-10-29T10:50:07.287294+00:00",
+  "source_scope": {
+    "source_scope": "archival_daily_closes_and_original_query_coverage_only",
+    "source_scope_upgraded_or_new_query_executed": false
+  },
+  "status": "TECHNICALLY_USABLE_RELATED_HMM_OPTION_VARIANT_NOT_SELECTED"
+}

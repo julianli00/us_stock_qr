@@ -1101,3 +1101,75 @@ promotion, parameter or window rescue follows. Authoritative totals remain
 **852 events, 80 SSD registrations, 71 completed reviews, nine technical
 failures, zero pending, 284 funded paths, 249 combined completions and zero
 qualifiers**. The investment objective remains unmet.
+
+## Archived HMM/VXN complete-policy eligibility
+
+The [fixed cached review](ARCHIVED_VXN_EXPERT_ELIGIBILITY_V1.md) concerns
+`hmm_vxn_relative_uncertainty_v1`, original registration310/proof311/review321.
+Selection is by its option-information composition role, not standalone
+returns or a revised pair-ranking metric. The child retains HMM stock/BIL
+budget and changes only SOXX versus equal four-style stock composition.
+It is a related HMM/option-uncertainty variant, not another independent risk
+source or automatically selected ninth representative.
+
+The original policy's actual registration is
+**2026-10-29T10:50:07.287294Z**. This review is separate from historical
+counterfactual availability. GARCH stock-budget estimation and VVIX dollar-guard
+confirmation are distinct comparison mechanisms, but the differences do not
+prove independent returns, isolated alpha or main-capital drawdown protection.
+All249 completed configurations and known original results are exposed.
+
+Ten canonical synthetic checks precede freeze `db34f00f` at
+**2026-11-04T19:49:01.350467Z**, binding753 source references and333
+implementation dependencies. The single cached review completes at
+**19:50:28.731334Z**.
+
+**Technically usable related HMM/option variant, not selected.**
+The actual unchanged `load_expert` and Monthly Artifact Adapter succeed,
+including the existing structural-zero twelve-to-fourteen asset mapping.
+Their cached `verify_path` reads original identity/artifact hashes; no account,
+independent BT or old financial-verifier pipeline is executed.
+
+All122 genuine source month ends, nine undefined prehistory months,
+122 original HMM fit/filter receipts and five old prefix certificates remain.
+Full parent/child calendars and all nonstock cells are exact; maximum stock
+capital conservation difference is1.1102230246251565e-16, within the original
+conservation bound. Stored source SOXX shares range0.40947431634414866 to
+0.6974962937822323; these are read from old audits, not newly generated ratios.
+
+| Original native path | Formal return dates | Exact common-RF mismatches | Minimum cash USD | Maximum gross |
+| --- | ---: | ---: | ---: | ---: |
+| 10y base | 2512 | 0 | 198.14860046145338 | 0.9832709200028412 |
+| 10y stress | 2512 | 0 | 195.39619140830445 | 0.9832377942689043 |
+| 5y base | 1254 | 0 | 191.04236909886865 | 0.9832709200028413 |
+| 5y stress | 1254 | 0 | 184.6397813709621 | 0.9832377942689043 |
+
+All four original funding certificates remain valid, with zero brokerage
+orders and maximum cached independent-BT NAV difference
+USD1.0186340659856796e-10. No new Sharpe, CAGR or DD is calculated.
+
+Actual Interface observations retain unavailable prehistory on2015-08-10,
+the first known opinion on2016-08-31, and a known September30 opinion with zero
+shadow returns at the2016-10-05 initialization. On2017-04-05 there are125
+observations and no mature score; on2017-04-06 there are126 and score maturity.
+The2026-10-05 observation carries the September30 opinion rather than issuing
+a new native source request.
+
+VXN/VIX admission remains archival daily closes and original query coverage
+only, with decisions after16:15 ET and original later open execution.
+Neither NDX uncertainty nor its QQQ proxy is an exact SOXX risk forecast;
+the normalized comparison is not a true variance premium. No full historical
+intraday publication, revision-free archive or source permission upgrade is
+claimed. No HMM fit/filter, variation, ratio, source-target or account is rerun;
+no new RF/assessment/recommendation view or source Adapter is created.
+
+The [complete sanitized result](evidence/archived_vxn_expert_eligibility_20261104_v1.json)
+preserves original standalone rejection. Technical availability does not
+promote this variant into a pool or establish final portfolio qualification.
+Any financial substitution requires a separate complete frozen study;
+the original active-seven/selected-eight rosters remain unchanged.
+
+There are **zero new financial trials**: journal852, 80 SSD registrations,
+71 completed reviews, nine technical failures, zero pending,284 funded paths,
+249 combined completions and zero qualifiers remain. The investment objective
+is unmet.

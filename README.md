@@ -479,6 +479,21 @@ month and all28 censored pairs remain unassessed. The
 does not create another chooser, retune a window or change any financial
 rejection. Current totals remain **249 completions and zero qualifiers**.
 
+The subsequent [archived HMM/VXN policy review](research/workbench/ARCHIVED_VXN_EXPERT_ELIGIBILITY_V1.md)
+finds the existing complete policy **technically usable as a related,
+unselected HMM/option-information variant** through the unchanged expert loader.
+All four native RF series match the original common reference exactly;
+all122 genuine opinions and nine undefined prehistory months remain.
+Nonstock targets are exact and retained HMM stock capital differs by at most
+1.1102230246251565e-16.
+
+The [cached qualification result](research/workbench/evidence/archived_vxn_expert_eligibility_20261104_v1.json)
+records actual availability and125/126 maturity observations, not a new HMM fit,
+VXN ratio, source Adapter or assessment view. Archival-close/after16:15 scope
+and original financial rejection remain. The variant is not a ninth selected
+representative, new independent economic factor or a qualified portfolio.
+No financial trial or roster change follows this review.
+
 ### Archived October authorization
 
 The accepted SSD research stage runs through **2026-10-31 23:59 Beijing time**
