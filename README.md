@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 80 SSD identities, 71 completed/rejected, nine retained technical failures and zero pending; 284 funded paths | Journal-derived current summary: 249 combined completions, zero qualifiers; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 82 SSD identities, 71 completed/rejected, nine retained technical failures and two pending; 284 funded paths | Journal-derived preregistration summary: 249 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -424,7 +424,7 @@ Equal-nine has higher Sharpe and fewer tickets/fees, but DD improves only on
 five-year base. These whole-policy historical differences do not prove an
 independent macro alpha channel or joint qualification.
 
-Current journal852 records **80 registrations, 71 completions, nine technical
+At that macro-inclusion closure, journal852 recorded **80 registrations, 71 completions, nine technical
 failures, zero pending, 284 funded paths and 249 combined completions with zero
 qualifiers**. All 276 earlier receipts/1660 financial-file hashes, 1341 source
 references, 315 implementation dependencies and the original ledger remain
@@ -493,6 +493,25 @@ VXN ratio, source Adapter or assessment view. Archival-close/after16:15 scope
 and original financial rejection remain. The variant is not a ninth selected
 representative, new independent economic factor or a qualified portfolio.
 No financial trial or roster change follows this review.
+
+The separately frozen [VXN composition substitution study](research/workbench/VXN_HMM_COMPOSITION_SUBSTITUTION_V1.md)
+then replaces only the HMM slot in a study-specific eight-source pool.
+The other seven identities and original equal/rolling laws remain exact;
+the completed HMM-only eight-source results are cached matched controls,
+not replayed accounts or an automatically expanded roster.
+
+Full freeze `9aecb7e8` binds1543 source references and313 implementation
+dependencies after22 canonical checks. Actual registrations853/854 at
+**2026-11-04T20:11:54.845202Z / 20:11:55.243921Z** both precede the first
+new meta derivation at **20:11:55.652652Z**. The
+[equal packet](research/workbench/evidence/vxn_hmm_composition_substitution_20261104_0_registration_v1.json)
+and[rolling packet](research/workbench/evidence/vxn_hmm_composition_substitution_20261104_1_registration_v1.json)
+each bind the full cohort. Proofs855/856 retain121decisions,242input/resolved
+records,236512roundtrippable NET/RF values,all28pairs andfiveprefixes.
+**No new funded result is claimed at this preregistration snapshot.**
+Both exact packets and all scientific pins must actually publish remotely
+before any new account; journal856 has two pending identities and249
+combined completions/zeroqualifiers.
 
 ### Archived October authorization
 

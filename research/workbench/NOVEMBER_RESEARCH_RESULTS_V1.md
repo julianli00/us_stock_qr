@@ -902,7 +902,7 @@ implementation references remain unchanged. The new private inventory verifies
 legacy ledger, original rosters, failures and one-day prospective identities
 remain; only new meta targets and the eight new main/independent-BT paths run.
 
-Current authoritative totals are **852 events, 80 SSD registrations,
+At that macro-inclusion closure, authoritative totals were **852 events, 80 SSD registrations,
 71 completed reviews, nine technical failures, zero pending and 284 funded
 paths**. With 178 legacy completions intact, there are **249 combined
 completions and zero qualifiers**. The investment objective remains unmet.
@@ -1173,3 +1173,38 @@ There are **zero new financial trials**: journal852, 80 SSD registrations,
 71 completed reviews, nine technical failures, zero pending,284 funded paths,
 249 combined completions and zero qualifiers remain. The investment objective
 is unmet.
+
+## Controlled VXN composition in the HMM family: preregistration snapshot
+
+The [independent fixed study](VXN_HMM_COMPOSITION_SUBSTITUTION_V1.md) replaces
+only the HMM source in the completed HMM eight-source configuration with its
+already qualified HMM/VXN composition variant. The other seven identities,
+ordering, original equal eighths and exact rolling pair law are unchanged.
+The original global rosters and source financial rejections remain.
+
+The proposed information channel changes stock composition, not the retained
+HMM stock/BIL budget. Its option-close source limitations and after16:15 clock
+remain; no HMM fit/filter, ratio, source target, shadow, native account,
+qualification or cached HMM control is rerun. Selection after249 exposed
+completions and known whole-policy outcomes is not independent OOS or forwardproof.
+
+Twenty-two canonical checks precede full freeze `9aecb7e8`, binding1543 source
+references and313 implementation dependencies. Actual registrations853/854 at
+**2026-11-04T20:11:54.845202Z / 20:11:55.243921Z** both precede the first
+derivation at **20:11:55.652652Z**. Proofs855/856 retain all121decisions,
+242input/resolved records,236512exact NET/RF values,all28pairs,fiveprefixes
+and genuine factor coverage. Independent target/weight/score differences are
+at most1.1102230246251565e-16 /2.220446049250313e-16 /5.329070518200751e-15.
+
+Both [equal](evidence/vxn_hmm_composition_substitution_20261104_0_registration_v1.json)
+and[rolling](evidence/vxn_hmm_composition_substitution_20261104_1_registration_v1.json)
+packets contain the complete two-rule cohort and both actual registration
+hashes. Both exact packets and scientific Git/source pins must publish
+remotely before any new account.
+
+**At this preregistration snapshot no new funded outcome is claimed.**
+Journal856 has82 SSD registrations,71completed reviews,nine technical
+failures,two pending and284funded paths;249combined completions andzero
+qualifiers. The planned primary contrasts are against cached equal-HMM and
+rolling-HMM paths, not replayed controls or spliced metrics. All original
+joint gates and cost/turnover disclosures remain required.
