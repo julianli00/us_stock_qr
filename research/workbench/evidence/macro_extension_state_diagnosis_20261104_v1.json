@@ -1,0 +1,121 @@
+{
+  "aggregates": {
+    "choice_classes": {
+      "current_macro_selected": 36,
+      "original_immature_no_score": 7,
+      "same_original_pair_current_macro_zero": 78
+    },
+    "common_pair_records": 3192,
+    "common_pair_selection_score_key_changed_records": 1004,
+    "common_pair_weight_nonidentity_records": 0,
+    "decisions": 121,
+    "different_original_pair_current_macro_zero_preceding_states": {},
+    "extension_only_pair_records_retained": 912,
+    "maximum_recorded_pair_weight_difference": 0.0,
+    "preceding_state_classes": {
+      "exact_equal": 77,
+      "macro_mass_present": 44
+    },
+    "scored_common_pair_records": 3192,
+    "segments": {
+      "training": {
+        "incremental_switch_proxy_component": {
+          "maximum_absolute": 0.716376162904977,
+          "median_absolute": 0.0,
+          "observations": 3192,
+          "p90_absolute": 0.024426162240432567
+        },
+        "maximum_individual_recorded_score_reconstruction_error": {
+          "maximum_absolute": 5.329070518200751e-15,
+          "median_absolute": 2.220446049250313e-16,
+          "observations": 3192,
+          "p90_absolute": 8.881784197001252e-16
+        },
+        "reconciliation_residual": {
+          "maximum_absolute": 2.6645352591003757e-15,
+          "median_absolute": 0.0,
+          "observations": 3192,
+          "p90_absolute": 1.5265566588595902e-16
+        },
+        "recorded_score_difference": {
+          "maximum_absolute": 0.716376162904977,
+          "median_absolute": 0.0,
+          "observations": 3192,
+          "p90_absolute": 0.024426162240432214
+        },
+        "source_NET_reference_component": {
+          "maximum_absolute": 0.0,
+          "median_absolute": 0.0,
+          "observations": 3192,
+          "p90_absolute": 0.0
+        }
+      },
+      "validation": {
+        "incremental_switch_proxy_component": {
+          "maximum_absolute": 0.4680275318824769,
+          "median_absolute": 0.0,
+          "observations": 3192,
+          "p90_absolute": 0.026472496239460703
+        },
+        "maximum_individual_recorded_score_reconstruction_error": {
+          "maximum_absolute": 3.552713678800501e-15,
+          "median_absolute": 3.3306690738754696e-16,
+          "observations": 3192,
+          "p90_absolute": 8.881784197001252e-16
+        },
+        "reconciliation_residual": {
+          "maximum_absolute": 1.7763568394002505e-15,
+          "median_absolute": 0.0,
+          "observations": 3192,
+          "p90_absolute": 2.220446049250313e-16
+        },
+        "recorded_score_difference": {
+          "maximum_absolute": 0.4680275318824769,
+          "median_absolute": 0.0,
+          "observations": 3192,
+          "p90_absolute": 0.026472496239460873
+        },
+        "source_NET_reference_component": {
+          "maximum_absolute": 0.0,
+          "median_absolute": 0.0,
+          "observations": 3192,
+          "p90_absolute": 0.0
+        }
+      }
+    },
+    "shared_source_NET_RF_values_compared": 236512,
+    "unscorable_common_pair_records": 0
+  },
+  "analysis_intent_sha256": "5220610d80ca6bfc4aef6df3edb72b0af6c7c4d166f393640b530138198a454f",
+  "completed_at": "2026-11-04T18:31:12.158646+00:00",
+  "diagnosis_id": "ssd_macro_extension_state_diagnosis_20261104_v1",
+  "financial_counts_unchanged": {
+    "current_journal_event_count": 852,
+    "current_journal_head_sha256": "4d9979d6234629fcb9e342c87118431c4236d316082988d4ff30967d99ab0bde",
+    "new_account_paths": 284,
+    "new_completed_strategy_evaluations": 71,
+    "new_historical_point_gate_passes": 0,
+    "new_pending_candidates": 0,
+    "new_registered_candidates": 80,
+    "new_reviews": 71,
+    "new_technical_failures": 9,
+    "original_completed_configurations": 178,
+    "original_registered_versions": 96,
+    "original_reviews": 94,
+    "total_legacy_plus_ssd_completed_configurations": 249
+  },
+  "incremental_switch_proxy_is_actual_paid_main_fee": false,
+  "independent_forward_validation": false,
+  "independent_samples_or_statistical_significance_claimed": false,
+  "investment_objective_verified": false,
+  "new_financial_trials": 0,
+  "new_source_requests": 0,
+  "new_targets_or_accounts": 0,
+  "order_authority": false,
+  "original_full_shared_source_observations_binary64_identical": true,
+  "original_rosters_admission_scope_and_financial_rejections_changed": false,
+  "post_outcome_adaptive_pool_selection_bias_preserved": true,
+  "recorded_score_gap_reconciliation_is_new_chooser_or_main_PNL_attribution": false,
+  "schema_version": 1,
+  "source_NET_already_includes_native_shadow_costs": true
+}

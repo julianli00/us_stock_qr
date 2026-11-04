@@ -432,6 +432,21 @@ unchanged; the new inventory verifies 284 receipts/1708 files. No old source,
 shadow, account/BT or benchmark is replayed. Original rosters, source scope,
 failures and prospective identities remain; neither failed rule is retuned.
 
+The subsequent [stored learning-state diagnosis](research/workbench/MACRO_EXTENSION_STATE_DIAGNOSIS_V1.md)
+adds **zero financial trials**. Its [fixed retained-record result](research/workbench/evidence/macro_extension_state_diagnosis_20261104_v1.json)
+finds **no changed original-source pair in the 78 mature decisions with zero
+current macro allocation**; the other 36 mature decisions select macro, and
+seven states remain unscored. All 236512 shared NET/RF values, source opinions
+and metadata are binary64-identical across the two studies.
+
+Preceding allocation differences change 1004 of 3192 shared pair-score keys.
+The recorded score gaps reconcile to the incremental switching proxy, with
+zero source-NET/reference component and residual at most 2.664536e-15.
+Those proxy differences do not change the observed zero-macro winning pairs.
+This post-outcome mechanism audit establishes no paid-fee, CAGR or DD causality;
+both financial rejections, original rosters and **249 completions/zero qualifiers**
+remain unchanged.
+
 ### Archived October authorization
 
 The accepted SSD research stage runs through **2026-10-31 23:59 Beijing time**

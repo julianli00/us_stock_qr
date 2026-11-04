@@ -907,3 +907,62 @@ Current authoritative totals are **852 events, 80 SSD registrations,
 paths**. With 178 legacy completions intact, there are **249 combined
 completions and zero qualifiers**. The investment objective remains unmet.
 Neither rule is promoted, reweighted or window/band-tuned to rescue its outcome.
+
+## Stored macro-extension learning-state diagnosis
+
+The [fixed read-only method](MACRO_EXTENSION_STATE_DIAGNOSIS_V1.md) compares
+original-eight and macro-nine retained input/resolved records, not another
+financial rule. Its question was selected after 249 exposed completions, both
+closed funded studies and the known 36 macro selections. Adaptive selection
+and overlapping dependent observations remain explicit.
+
+This is distinct from the earlier nominal-change/paid-fee calibration and
+following-full-month risk diagnosis. No original source, model, chooser, ranking,
+target, shadow, main account, benchmark or financial-verification pipeline is
+rerun. Scalar identities use only already-recorded weights, source NET/RF and
+incremental switching penalties, not new candidate scores or a replacement law.
+
+Twenty-three synthetic checks precede exact freeze `5220610d` at
+**2026-11-04T18:29:40.618005Z**, binding 1357 source references and 320
+implementation dependencies. The single actual pass completes at
+**18:31:12.158646Z**. It preserves all 121 states, seven unscored origins,
+3192 shared pair records and 912 extension-only macro-pair records. Shared
+236512 NET/RF values, recommendations, dates, source identities and metadata
+are binary64-identical; all shared pair weights are also bit-identical.
+
+**The suspected indirect winning-pair change is not observed.** All 78 mature
+decisions with zero current macro allocation choose the same original-source
+pair as rolling-eight. The other 36 mature decisions actually select macro;
+seven initial decisions remain unscored. No alternative chooser is evaluated.
+
+Across all 121 states, the preceding extended allocation is exactly the original
+allocation plus a zero macro coordinate in 77 states. The other 44 have preceding
+macro mass, including unscored initialization states; these are not 44 independent
+scored decisions. State-dependent switching references change 1004 of the 3192
+recorded common pair-score keys without changing any observed current-zero-macro
+winning pair.
+
+The algebraic source-NET/reference component is exactly zero in both original
+84/42 segments. Differences in the recorded switching penalty reconcile the
+recorded standardized pair-score gaps, not realized main-account Sharpe.
+
+| Recorded segment | Absolute proxy-component p90 | Absolute proxy-component maximum | Maximum reconciliation residual |
+| --- | ---: | ---: | ---: |
+| Training84 | 0.024426162240432567 | 0.716376162904977 | 2.6645352591003757e-15 |
+| Validation42 | 0.026472496239460703 | 0.4680275318824769 | 1.7763568394002505e-15 |
+
+Both proxy-component medians are zero. Maximum individual recorded-score
+reconstruction error is 5.329070518200751e-15, below the original independent
+scalar agreement threshold; exact shared RF/input matching is not relaxed.
+Source NET already includes native shadow costs. Omitting the additional
+switching penalty in one algebraic term does not create fee-free returns,
+a funded portfolio or a causal main-fee/DD attribution.
+
+The [sanitized public summary](evidence/macro_extension_state_diagnosis_20261104_v1.json)
+contains aggregates, not monthly targets, weights or raw source observations.
+All frozen source/code bytes and journal-derived financial counts remain
+unchanged: **852 events, 80 registrations, 71 completed reviews, nine technical
+failures, zero pending, 284 funded paths, 249 combined completions and zero
+qualifiers**. No financial trial, new source request, RF view, source Adapter,
+economic-risk count or roster promotion follows. Both complete financial
+rules remain rejected and the investment objective remains unmet.
