@@ -4,6 +4,32 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Credit expert inclusion: actual preregistration, not yet funded
+
+The [fixed inclusion](CREDIT_EXPERT_INCLUSION_V1.md) deliberately appends the
+complete, technically admitted credit policy to the original eight experts.
+Neither global roster changes. The two fixed rules use equal ninths and the
+unchanged126/84/42mature rolling pair/ERC/net-cost law, respectively.
+The credit source's four financial rejections remain and are not an automatic
+technical exclusion. Its proposed mechanism is not nine independent risks.
+
+Both actual registrations888/889 at**2026-11-04T22:11:56.909094Z** and
+**22:11:57.332605Z** precede the new derivation. The
+[equal packet](evidence/credit_expert_inclusion_20261104_0_registration_v1.json)
+and [rolling packet](evidence/credit_expert_inclusion_20261104_1_registration_v1.json)
+retain121decisions,242input/resolved records,266076round-tripped NET/RF
+values, all36pairs and five exact prefix checks.
+Independent target/weight/score gaps are at most
+5.5512e-17/2.2205e-16/5.3291e-15.
+The original source models, targets, shadows, controls and benchmarks were
+not rerun. No new source or issuer requests were made.
+
+At this journal891preregistration snapshot:85registrations,74completed
+reviews, nine retained financial technical failures, two pending,
+296funded paths,252combined completions and zero qualifiers.
+Actual full-cohort packet/scientific publication verification must precede
+any of the eight new funded paths. This is not a portfolio outcome.
+
 ## Credit-conditioned complete policy: complete, rejected, technically admitted
 
 The [complete four-path result](evidence/credit_quarter_policy_20261104_results_v1.json)
