@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 78 SSD identities, 69 completed/rejected, nine retained technical failures and zero pending; 276 funded paths | Journal-derived current summary: 247 combined completions, zero qualifiers; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 80 SSD identities, 71 completed/rejected, nine retained technical failures and zero pending; 284 funded paths | Journal-derived current summary: 249 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -384,13 +384,53 @@ path. Annualized turnover rises despite lower absolute USD fees and one fewer
 ticket; differing wealth scales prevent an isolated cost-efficiency claim.
 All four fixed outcomes, not favorable fragments, are retained.
 
-Current journal829 records **78 registrations, 69 completions, nine technical
+At that historical paired-study closure, journal829 records **78 registrations, 69 completions, nine technical
 failures, zero pending, 276 funded paths and 247 combined completions with zero
 qualifiers**. All 260 earlier receipts/1564 financial-file hashes, 1364 source
 references, 308 implementation dependencies and the original ledger remain
 unchanged; the new inventory verifies 276 receipts/1660 files. No source model,
 rank, target, shadow, old account/BT or benchmark is replayed. Original rosters
 and source restrictions remain; no rejected construction is retuned or promoted.
+
+The next [deliberately frozen macro inclusion](research/workbench/MACRO_EXPERT_INCLUSION_V1.md)
+retains all original eight and adds only the technically admitted real-yield
+policy to a study-specific nine-source sample. It does not alter the original
+seven/eight rosters or automatically promote a ninth representative. The macro
+source remains limited to its original two-session lag, seven-day age and
+monthly vintage/formal-target-parity scope, not full daily PIT.
+
+The [source consumer contract](research/workbench/MACRO_COMPATIBLE_EXPERT_ADMISSION_V1.md)
+uses the unchanged [seed-aware policy-opinion Adapter](research/workbench/MACRO_POLICY_COMPATIBILITY_V1.md)
+and existing common-RF assessment view. Native RF remains unequal; the old
+direct no-view identity remains blocked. Native NET/money and all original
+policy opinions/seeds remain exact. The previously local dependency code was
+newly published for this independently frozen financial use, not retroactively
+represented as published during the earlier technical nodes.
+
+Both real registrations830/831 precede new meta scores/targets. Proofs832/833
+retain 121 decisions, 242 actual input/resolved records, 266076 exact NET/RF
+values, all 36 pairs, five prefixes and 121 macro opinion/seed contexts.
+Actual remote preregistration `9898898` precedes fence834 at
+**2026-11-04T18:02:19.219951Z**, first account835 at **18:02:20.482016Z**,
+and all eight [completed outcomes](research/workbench/evidence/macro_expert_inclusion_20261104_results_v1.json)
+by **18:03:02.848304Z**.
+
+**Both rules are rejected.** Every CAGR gate passes, but every DD gate fails.
+Equal-nine also fails both stress Sharpe gates and both ten-year SPY/QQQ gates.
+Rolling-nine fails every Sharpe, DD, SPY and QQQ gate. Relative to saved
+rolling-eight, CAGR and Sharpe rise on all four paths, but DD rises by
+**1.329292-2.373658 percentage points** and turnover rises on every path.
+Equal-nine has higher Sharpe and fewer tickets/fees, but DD improves only on
+five-year base. These whole-policy historical differences do not prove an
+independent macro alpha channel or joint qualification.
+
+Current journal852 records **80 registrations, 71 completions, nine technical
+failures, zero pending, 284 funded paths and 249 combined completions with zero
+qualifiers**. All 276 earlier receipts/1660 financial-file hashes, 1341 source
+references, 315 implementation dependencies and the original ledger remain
+unchanged; the new inventory verifies 284 receipts/1708 files. No old source,
+shadow, account/BT or benchmark is replayed. Original rosters, source scope,
+failures and prospective identities remain; neither failed rule is retuned.
 
 ### Archived October authorization
 

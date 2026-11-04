@@ -766,9 +766,144 @@ implementation references remain unchanged. The new private inventory verifies
 admissions, original rosters, failures and one-day prospective identities remain.
 No source score/rank/target/model/shadow, old account/BT or benchmark is rerun.
 
-Current authoritative totals are **829 events, 78 SSD registrations,
+At this historical paired-study closure, totals were **829 events, 78 SSD registrations,
 69 completed reviews, nine technical failures, zero pending and 276 funded
 paths**. With 178 legacy completions intact, there are **247 combined
 completions and zero qualifiers**. All four rules remain rejected and
 unpromoted. The investment objective is unmet; no field window, rank share,
 portfolio weight or execution band is tuned to rescue these identities.
+
+## Deliberate scoped real-yield expert inclusion
+
+The [independent design](MACRO_EXPERT_INCLUSION_V1.md) retains all original
+eight sources and appends only `macro_real_yield_factor_tilt` to one
+study-specific nine-source sample. Original active-seven/selected-eight
+rosters remain unchanged. This is a deliberate new information-channel
+experiment, not automatic promotion from technical admission, archive-wide
+activation, or activity/HMM parameter rescue.
+
+Real-discount-rate changes affect relative momentum/quality versus value/
+lowvol shares. Most existing sources use price/options/variance/profit-dollar/
+wealth feedback. A different mechanism is not demonstrated independent risk,
+alpha or main-DD protection. All 247 earlier completions, known source results
+and compatibility/admission evidence are exposed; selection is adaptive, not
+independent OOS/forward proof.
+
+### Source roles and limited information scope remain explicit
+
+The [source admission](MACRO_COMPATIBLE_EXPERT_ADMISSION_V1.md) preserves the
+original source21/review23, financial rejection, all four 132-row native
+matrices, 131 genuine month ends and capital seeds. Its new consumer definition,
+actual technical admission and original source registration are distinct from
+counterfactual historical availability.
+
+The unchanged [policy-opinion Adapter](MACRO_POLICY_COMPATIBILITY_V1.md)
+observes the last known genuine policy row; capital initialization remains
+separate. Initial main capital uses the September30 known opinion. A nondecision
+observation is not a new native request, rebalance instruction or copied position.
+Every actual meta input retains the macro event context; main decisions remain
+the original initialization/month-end clock.
+
+Native RF still differs from common RF on 334/334/262/262 cells. The old direct
+no-view review stays blocked. Only the already stored d81a/f2a6 assessment
+reference uses the same af36/default common reader; native NET returns, NAV,
+cash, costs, orders, gross, turnover and dates remain exact. No new view/source
+Adapter, rounding/isclose/exact-gate waiver or no-future-score-effect claim.
+
+Original two-NYSE-session lag, seven-calendar-day age and limited monthly
+DFII10 vintage/formal-target-parity scope remain. No full daily PIT, revision-free
+history, new permission or coverage is claimed. Macro information queries stay
+within 2016-10-05 through 2026-10-05; earlier context is preserved, not newly
+admitted. The curve-defensive sibling, Term and ANFCI are excluded.
+
+### Actual preregistration and funding
+
+Equal ninths and the exact existing rolling law preserve 126 mature NET/RF
+observations, 84 chronological training/42 validation, k2/ERC/lower net risk
+score, original switch proxy and twelve-decimal ties. The natural dimensional
+change is nine inputs and all 36 pairs, not another score/window/weight rule.
+Seven initial states remain explicitly unscored equal allocations.
+
+Twenty-two canonical checks precede full freeze `fef0d52d`, which binds
+1341 source references and 315 implementation dependencies. Real
+registrations830/831 at **2026-11-04T17:57:59.655842Z /
+17:58:00.039899Z** both precede the first derivation at
+**17:58:00.433095Z**. Proofs832/833 retain 121 decisions, 242 input/resolved
+records, 266076 roundtrippable NET/RF values, all 36 pairs, five prefixes,
+121 macro role contexts and genuine factor coverage in both original horizons.
+
+Both complete-cohort packets and every exact source/code/policy dependency
+were remotely published at `989889892c1c03c2f72e1c13559e542256fce9a9`.
+This includes the previously local compatibility/consumer Modules, tests and
+methods byte-unchanged; earlier local-only technical receipts retain their
+original dated meaning. GLOSSARY local changes are not published.
+Fence834 at **2026-11-04T18:02:19.219951Z** precedes first account835 at
+**18:02:20.482016Z**. All eight finish by **18:03:02.848304Z**;
+reviews843/852 reject both rules.
+
+The [complete public projection](evidence/macro_expert_inclusion_20261104_results_v1.json)
+matches every saved private result. No old control/source/shadow/account/BT
+or benchmark is rerun.
+
+| Fixed rule/path | Net CAGR | RF-excess Sharpe | Maximum DD | Annual turnover | Model tickets | Model fees |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Equal macro 10y base | 14.834362% | 1.024407 | 18.066446% | 2.420906x | 1025 | USD1237.90 |
+| Equal macro 10y stress | 14.313216% | 0.985921 | 17.513076% | 2.414303x | 1025 | USD1854.61 |
+| Equal macro 5y base | 17.549908% | 1.046408 | 15.561496% | 2.420285x | 496 | USD572.86 |
+| Equal macro 5y stress | 16.523964% | 0.976395 | 15.747475% | 2.404152x | 496 | USD793.02 |
+| Rolling macro 10y base | 12.724228% | 0.828872 | 24.285365% | 7.058295x | 864 | USD1466.27 |
+| Rolling macro 10y stress | 12.026998% | 0.778247 | 24.327140% | 7.071030x | 870 | USD3210.16 |
+| Rolling macro 5y base | 13.692984% | 0.741414 | 24.623986% | 7.703131x | 445 | USD675.56 |
+| Rolling macro 5y stress | 12.623727% | 0.670683 | 24.820383% | 7.730244x | 451 | USD1353.84 |
+
+**Both rejected: every CAGR gate passes, every DD gate fails.** Equal macro
+passes both base Sharpe gates but fails both stress Sharpe gates. Both ten-year
+matched SPY/QQQ gates fail; both five-year SPY/QQQ gates pass. Extra stress/
+base-SPY fails ten-year stress and passes five-year stress. Rolling macro
+fails every Sharpe/DD/SPY/QQQ gate and both extra stress/base-SPY gates.
+No passing CAGR, horizon or metric is spliced into qualification.
+
+### Matched stored controls and operating costs
+
+Equal-nine is compared to saved equal-eight and rolling-nine to saved
+rolling-eight, never replayed. Equal macro raises Sharpe by
+0.009431-0.018823 on every path and reduces annualized turnover by
+0.202860-0.207939x NAV, tickets by 10-18 and fees by USD23.88-84.64.
+Ten-year CAGR declines by 0.079196-0.096883 percentage points while
+five-year CAGR rises slightly by 0.011940-0.042117 points.
+DD improves only on five-year base, by 0.124115 points; the other three
+DDs worsen by 0.032104-0.229140 points.
+
+Rolling macro raises CAGR by 0.349234-1.511885 percentage points and Sharpe
+by 0.041635-0.115618 on every path. However, DD worsens by
+1.329292-2.373658 points and annualized turnover rises by
+0.076951-0.192903x NAV on every path. Model tickets decline by 18-35.
+Base fees fall by USD10.88-28.30 but stress fees rise by USD35.75-39.35.
+Wealth scales, dilution, changed pair menu and actual holding feedback differ;
+these whole-policy observations are not isolated macro alpha or fee causality.
+
+As a secondary post-outcome description, the macro source is selected in
+36 of 114 mature rolling decisions; seven decisions remain unscored.
+This dependent trace is not a new acceptance criterion, independent samples
+or a causal source-profit attribution.
+
+Turnover is annualized two-sided traded notional relative to main NAV,
+including deployment; no numerical turnover cap is invented. Across all eight
+paths, minimum cash is at least USD169.658649, maximum gross at most
+0.983770526 and independent-BT equity differences at most
+USD6.548361852765083e-11. Model tickets are not brokerage orders.
+Original full 2512/1254-return calendars, fresh USD10000, initial DD peak,
+RF, base/stress fees, USD1 tickets, one/two-session delay, cash funding,
+1x long-only limits, 2.5pp actual-holding band and every gate remain unchanged.
+
+All 276 earlier receipts/1660 financial-file hashes and all 1341 source/315
+implementation references remain unchanged. The new private inventory verifies
+284 receipts/1708 files. Existing source-policy/target/NET/money/view bytes,
+legacy ledger, original rosters, failures and one-day prospective identities
+remain; only new meta targets and the eight new main/independent-BT paths run.
+
+Current authoritative totals are **852 events, 80 SSD registrations,
+71 completed reviews, nine technical failures, zero pending and 284 funded
+paths**. With 178 legacy completions intact, there are **249 combined
+completions and zero qualifiers**. The investment objective remains unmet.
+Neither rule is promoted, reweighted or window/band-tuned to rescue its outcome.
