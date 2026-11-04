@@ -1,0 +1,399 @@
+{
+  "actual_authoritative_counts": {
+    "current_journal_event_count": 887,
+    "current_journal_head_sha256": "eb5bb7a2666237b47896315f6730dcc48188a796210bc42de92ce817b8445af7",
+    "new_account_paths": 296,
+    "new_completed_strategy_evaluations": 74,
+    "new_historical_point_gate_passes": 0,
+    "new_pending_candidates": 0,
+    "new_registered_candidates": 83,
+    "new_reviews": 74,
+    "new_technical_failures": 9,
+    "original_completed_configurations": 178,
+    "original_registered_versions": 96,
+    "original_reviews": 94,
+    "total_legacy_plus_ssd_completed_configurations": 252
+  },
+  "completed_at": "2026-11-04T21:55:31.389510+00:00",
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "native_price_prehistory_preserved": true,
+  "order_authority": false,
+  "protocol": {
+    "path": "config/dual-benchmark-v1.json",
+    "sha256": "1b5b2572089ffa53746b01e72ff8303e00d6b5e5e3f815844f93834d0521e469"
+  },
+  "raw_prices_targets_or_daily_book_rows_exported": false,
+  "registration_packet": {
+    "path": "evidence/credit_quarter_policy_20261104_registration_v1.json",
+    "sha256": "cf4347f4d33e2b6a7eede7feddb12c5939cb6fac63a4ebec52a86526e9211985"
+  },
+  "reviews": [
+    {
+      "all_four_paths_same_candidate_and_frozen_parameters": true,
+      "candidate_id": "credit_quarter_style_defense_v1",
+      "frozen_specification_sha256": "9f50d2a6a57a1093e604556eb6d58656af82646aaea523c47dfac4922c0d39bb",
+      "independent_forward_validation": false,
+      "order_authority": false,
+      "paths": [
+        {
+          "all_point_gates_pass": false,
+          "artifacts": [
+            {
+              "path": "reports/ssd-continuous-research-v1/credit-quarter-complete-policy-20261104-v1/accounts/10y-base/account.csv",
+              "sha256": "a26e9c0f9c276d8a6378e92c95c845cc0b72cb8f84e7982ec94c07adb1fdf052"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/credit-quarter-complete-policy-20261104-v1/accounts/10y-base/weights.csv",
+              "sha256": "040eddd5e9e66ce1fdf86d615031b98a0afae2092ff0b5d3d13bd359e790aede"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/credit-quarter-complete-policy-20261104-v1/accounts/10y-base/issued.csv",
+              "sha256": "75264b1c454284e05083b0f366b5de5fccf7a0aba1903f9b1ccbedbbec79b4e8"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/credit-quarter-complete-policy-20261104-v1/accounts/10y-base/independent-bt.csv",
+              "sha256": "eb58b167025caf917ef4440d48e03778591dfb73532b2a80a87d1799203a13bf"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/credit-quarter-complete-policy-20261104-v1/accounts/10y-base/decisions.json",
+              "sha256": "41b0f6c7526d061cd813168afdc2c1b199f9984ddb8477f90d4eac9661f19306"
+            }
+          ],
+          "broker_orders": 0,
+          "candidate_id": "credit_quarter_style_defense_v1",
+          "completed_at": "2026-11-04T21:55:25.494618+00:00",
+          "excess_net_cagr_vs_qqq": -0.095110176760969,
+          "excess_net_cagr_vs_spy": -0.038105911979394724,
+          "execution": {
+            "annualized_two_sided_turnover": 5.627025505469643,
+            "executed_notional_usd": 886558.7622619998,
+            "fixed_commission_usd": 192.0,
+            "initial_deployment_cost_usd": 8.895641135843437,
+            "maximum_gross_exposure": 0.9826070601397714,
+            "minimum_cash_usd": 199.82208717728247,
+            "model_order_count": 192,
+            "model_orders_are_broker_orders": false,
+            "proportional_cost_usd": 443.2793811309999,
+            "rebalance_session_count": 36,
+            "total_cost_usd": 635.2793811309998,
+            "total_two_sided_turnover": 56.26255207659175
+          },
+          "frozen_specification_sha256": "9f50d2a6a57a1093e604556eb6d58656af82646aaea523c47dfac4922c0d39bb",
+          "gates": {
+            "beats_qqq": false,
+            "beats_spy": false,
+            "cagr_above_12pct": false,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": false
+          },
+          "independent_bt_max_equity_difference_usd": 4.3655745685100555e-11,
+          "independent_forward_validation": false,
+          "independent_monthly_feedback": {
+            "all_actual_gaps_targets_and_delays_checked": true,
+            "checked_actual_monthly_decisions_and_initial": 121,
+            "issued_requests": 36
+          },
+          "metrics": {
+            "annualized_volatility": 0.12408880927823412,
+            "cagr": 0.11651406735174685,
+            "end": "2026-10-05",
+            "expected_shortfall_5pct": -0.01892530638190441,
+            "max_drawdown": 0.2296896115107383,
+            "max_underwater_sessions": 675,
+            "positive_year_fraction": 0.8181818181818182,
+            "rolling_3y_cagr_above_20pct_fraction": 0.05122367672168469,
+            "rolling_3y_cagr_median": 0.08340739615911678,
+            "rolling_3y_cagr_min": -0.007119172614358407,
+            "sessions": 2512,
+            "sharpe": 0.7542401970032586,
+            "start": "2016-10-06",
+            "total_return": 2.010069132496261,
+            "worst_day": -0.04115377808738574,
+            "year_returns": {
+              "2016": 0.03279313278914042,
+              "2017": 0.15687928528000894,
+              "2018": -0.06037778458150267,
+              "2019": 0.13070326437101998,
+              "2020": 0.2319076980872059,
+              "2021": 0.2220291414225597,
+              "2022": -0.14300921454283644,
+              "2023": 0.08554728098273934,
+              "2024": 0.12138573302884792,
+              "2025": 0.22277377711291635,
+              "2026": 0.23477375717737714
+            }
+          },
+          "path_key": "10y-base"
+        },
+        {
+          "all_point_gates_pass": false,
+          "artifacts": [
+            {
+              "path": "reports/ssd-continuous-research-v1/credit-quarter-complete-policy-20261104-v1/accounts/10y-stress/account.csv",
+              "sha256": "6cae738b368fec3b2374ab6cca012d4db151b07267619ae14cd2ad87e19e670d"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/credit-quarter-complete-policy-20261104-v1/accounts/10y-stress/weights.csv",
+              "sha256": "9c0600faa6afcbe8d998bfa8494d8f7b7be95ddd4190f49683e0e58af2e0e63c"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/credit-quarter-complete-policy-20261104-v1/accounts/10y-stress/issued.csv",
+              "sha256": "f2c668e25bd9de8ad7a147bfec27f212ac793314d0affb1078ed77305618cb2b"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/credit-quarter-complete-policy-20261104-v1/accounts/10y-stress/independent-bt.csv",
+              "sha256": "5832d3b412c501b6fda17262db94543bd9d32a73cd91f24643aabac93bc240be"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/credit-quarter-complete-policy-20261104-v1/accounts/10y-stress/decisions.json",
+              "sha256": "cac5c7d4100beac8d5768d164be4f688dbe43ed8eec991ffc8c2bfbcf3af1f71"
+            }
+          ],
+          "broker_orders": 0,
+          "candidate_id": "credit_quarter_style_defense_v1",
+          "completed_at": "2026-11-04T21:55:27.398607+00:00",
+          "excess_net_cagr_vs_qqq": -0.10419531677392935,
+          "excess_net_cagr_vs_spy": -0.047013047920650974,
+          "execution": {
+            "annualized_two_sided_turnover": 5.618937457629505,
+            "executed_notional_usd": 866510.1706036484,
+            "fixed_commission_usd": 192.0,
+            "initial_deployment_cost_usd": 23.553834484410558,
+            "maximum_gross_exposure": 0.9833048869881434,
+            "minimum_cash_usd": 199.52892331031148,
+            "model_order_count": 192,
+            "model_orders_are_broker_orders": false,
+            "proportional_cost_usd": 1733.020341207297,
+            "rebalance_session_count": 36,
+            "total_cost_usd": 1925.020341207297,
+            "total_two_sided_turnover": 56.181682670124445
+          },
+          "frozen_specification_sha256": "9f50d2a6a57a1093e604556eb6d58656af82646aaea523c47dfac4922c0d39bb",
+          "gates": {
+            "also_beats_base_cost_spy": false,
+            "beats_qqq": false,
+            "beats_spy": false,
+            "cagr_above_12pct": false,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": false
+          },
+          "independent_bt_max_equity_difference_usd": 3.637978807091713e-11,
+          "independent_forward_validation": false,
+          "independent_monthly_feedback": {
+            "all_actual_gaps_targets_and_delays_checked": true,
+            "checked_actual_monthly_decisions_and_initial": 121,
+            "issued_requests": 36
+          },
+          "metrics": {
+            "annualized_volatility": 0.12399885593205072,
+            "cagr": 0.10704331821851532,
+            "end": "2026-10-05",
+            "expected_shortfall_5pct": -0.019017106056335765,
+            "max_drawdown": 0.24023629966180693,
+            "max_underwater_sessions": 714,
+            "positive_year_fraction": 0.8181818181818182,
+            "rolling_3y_cagr_above_20pct_fraction": 0.005122367672168469,
+            "rolling_3y_cagr_median": 0.08008900227584868,
+            "rolling_3y_cagr_min": -0.01963459594821414,
+            "sessions": 2512,
+            "sharpe": 0.685732189973127,
+            "start": "2016-10-06",
+            "total_return": 1.7643032984448594,
+            "worst_day": -0.04113094509804438,
+            "year_returns": {
+              "2016": 0.02805798496973999,
+              "2017": 0.14643887363062968,
+              "2018": -0.037210607101144766,
+              "2019": 0.12910943174124534,
+              "2020": 0.21520476759183516,
+              "2021": 0.23358954532959664,
+              "2022": -0.16240257039697958,
+              "2023": 0.07785815029202259,
+              "2024": 0.07734200767118415,
+              "2025": 0.19446099448289322,
+              "2026": 0.23881709062580136
+            }
+          },
+          "path_key": "10y-stress"
+        },
+        {
+          "all_point_gates_pass": false,
+          "artifacts": [
+            {
+              "path": "reports/ssd-continuous-research-v1/credit-quarter-complete-policy-20261104-v1/accounts/5y-base/account.csv",
+              "sha256": "f237a55db97736c555c363c3abbfac90fd737c992c3b09fd3b2d56d2be25c58c"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/credit-quarter-complete-policy-20261104-v1/accounts/5y-base/weights.csv",
+              "sha256": "c8297237b4d4a11a32475b138fcd9b9d0a22bdce82c03a3c49bb8ed502e949c7"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/credit-quarter-complete-policy-20261104-v1/accounts/5y-base/issued.csv",
+              "sha256": "b2f381acb5c87420e82313f5568dd6e87f29fe9dde6fbaee641decb5c7fd5810"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/credit-quarter-complete-policy-20261104-v1/accounts/5y-base/independent-bt.csv",
+              "sha256": "0b6a9935f47025e2beb8d7dc375a5021b508bf50f8492d800eab7c245ed76016"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/credit-quarter-complete-policy-20261104-v1/accounts/5y-base/decisions.json",
+              "sha256": "d7937066713fd5eca66c9a17023c4bfb8db6912ab0bad921d0357faf1601c3c5"
+            }
+          ],
+          "broker_orders": 0,
+          "candidate_id": "credit_quarter_style_defense_v1",
+          "completed_at": "2026-11-04T21:55:29.086869+00:00",
+          "excess_net_cagr_vs_qqq": -0.058871494912837496,
+          "excess_net_cagr_vs_spy": -0.028540277922769697,
+          "execution": {
+            "annualized_two_sided_turnover": 5.718172626732644,
+            "executed_notional_usd": 297153.5724789289,
+            "fixed_commission_usd": 98.0,
+            "initial_deployment_cost_usd": 8.895641135843437,
+            "maximum_gross_exposure": 0.9826070601397713,
+            "minimum_cash_usd": 169.43780075580085,
+            "model_order_count": 98,
+            "model_orders_are_broker_orders": false,
+            "proportional_cost_usd": 148.57678623946447,
+            "rebalance_session_count": 18,
+            "total_cost_usd": 246.57678623946447,
+            "total_two_sided_turnover": 28.586949257806456
+          },
+          "frozen_specification_sha256": "9f50d2a6a57a1093e604556eb6d58656af82646aaea523c47dfac4922c0d39bb",
+          "gates": {
+            "beats_qqq": false,
+            "beats_spy": false,
+            "cagr_above_12pct": false,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": false
+          },
+          "independent_bt_max_equity_difference_usd": 5.4569682106375694e-12,
+          "independent_forward_validation": false,
+          "independent_monthly_feedback": {
+            "all_actual_gaps_targets_and_delays_checked": true,
+            "checked_actual_monthly_decisions_and_initial": 61,
+            "issued_requests": 18
+          },
+          "metrics": {
+            "annualized_volatility": 0.1381726221671606,
+            "cagr": 0.11186827818193734,
+            "end": "2026-10-05",
+            "expected_shortfall_5pct": -0.01978430271103366,
+            "max_drawdown": 0.23003168672204277,
+            "max_underwater_sessions": 675,
+            "positive_year_fraction": 0.8333333333333334,
+            "rolling_3y_cagr_above_20pct_fraction": 0.16432865731462926,
+            "rolling_3y_cagr_median": 0.1302410893938799,
+            "rolling_3y_cagr_min": 0.011831387308317771,
+            "sessions": 1254,
+            "sharpe": 0.5614708201086122,
+            "start": "2021-10-06",
+            "total_return": 0.6991635287997067,
+            "worst_day": -0.04115377808738574,
+            "year_returns": {
+              "2021": 0.08302835052347146,
+              "2022": -0.14369396526374456,
+              "2023": 0.08433271463606151,
+              "2024": 0.12026425523132578,
+              "2025": 0.22187755842524037,
+              "2026": 0.2343991657449136
+            }
+          },
+          "path_key": "5y-base"
+        },
+        {
+          "all_point_gates_pass": false,
+          "artifacts": [
+            {
+              "path": "reports/ssd-continuous-research-v1/credit-quarter-complete-policy-20261104-v1/accounts/5y-stress/account.csv",
+              "sha256": "f0f71b7b82301e4c61c973c7c59e176ba3276f871de5b7ede6e9f685fa9e12fe"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/credit-quarter-complete-policy-20261104-v1/accounts/5y-stress/weights.csv",
+              "sha256": "1b31a525e2c053822859d48298f666f96ab84188cf07f18c8213ba78a0e73200"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/credit-quarter-complete-policy-20261104-v1/accounts/5y-stress/issued.csv",
+              "sha256": "ecec1bac665341ef9b24b145f9149fd01d431579ca55b0253d5f8d98816d8a49"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/credit-quarter-complete-policy-20261104-v1/accounts/5y-stress/independent-bt.csv",
+              "sha256": "cdf6b980e8a946df93ce5921d3ac9732e1cc9b21bab4c875b4948be8b3db1f7b"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/credit-quarter-complete-policy-20261104-v1/accounts/5y-stress/decisions.json",
+              "sha256": "ff83d8fbfd6f3e3956b7867a9b5a08f9f1566e4820898fc7797617c689b560f8"
+            }
+          ],
+          "broker_orders": 0,
+          "candidate_id": "credit_quarter_style_defense_v1",
+          "completed_at": "2026-11-04T21:55:30.768390+00:00",
+          "excess_net_cagr_vs_qqq": -0.07652928035966333,
+          "excess_net_cagr_vs_spy": -0.047104817560059464,
+          "execution": {
+            "annualized_two_sided_turnover": 5.7175165614479635,
+            "executed_notional_usd": 279477.795066952,
+            "fixed_commission_usd": 98.0,
+            "initial_deployment_cost_usd": 23.553834484410558,
+            "maximum_gross_exposure": 0.9833048869881436,
+            "minimum_cash_usd": 167.21773670292006,
+            "model_order_count": 98,
+            "model_orders_are_broker_orders": false,
+            "proportional_cost_usd": 558.955590133904,
+            "rebalance_session_count": 18,
+            "total_cost_usd": 656.955590133904,
+            "total_two_sided_turnover": 28.583669380435268
+          },
+          "frozen_specification_sha256": "9f50d2a6a57a1093e604556eb6d58656af82646aaea523c47dfac4922c0d39bb",
+          "gates": {
+            "also_beats_base_cost_spy": false,
+            "beats_qqq": false,
+            "beats_spy": false,
+            "cagr_above_12pct": false,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": false
+          },
+          "independent_bt_max_equity_difference_usd": 1.2732925824820995e-11,
+          "independent_forward_validation": false,
+          "independent_monthly_feedback": {
+            "all_actual_gaps_targets_and_delays_checked": true,
+            "checked_actual_monthly_decisions_and_initial": 61,
+            "issued_requests": 18
+          },
+          "metrics": {
+            "annualized_volatility": 0.1381246425449583,
+            "cagr": 0.08817798610423311,
+            "end": "2026-10-05",
+            "expected_shortfall_5pct": -0.020037031061676456,
+            "max_drawdown": 0.24082259395957573,
+            "max_underwater_sessions": 715,
+            "positive_year_fraction": 0.8333333333333334,
+            "rolling_3y_cagr_above_20pct_fraction": 0.01002004008016032,
+            "rolling_3y_cagr_median": 0.10246280111777942,
+            "rolling_3y_cagr_min": -0.01157103144875489,
+            "sessions": 1254,
+            "sharpe": 0.4048341901166539,
+            "start": "2021-10-06",
+            "total_return": 0.5257190174338275,
+            "worst_day": -0.04113094509804438,
+            "year_returns": {
+              "2021": 0.06459230361978108,
+              "2022": -0.1630390074796163,
+              "2023": 0.07655657908839064,
+              "2024": 0.07616009726310446,
+              "2025": 0.19346848067856537,
+              "2026": 0.23840107864936533
+            }
+          },
+          "path_key": "5y-stress"
+        }
+      ],
+      "reviewed_at": "2026-11-04T21:55:30.978586+00:00",
+      "status": "rejected"
+    }
+  ],
+  "schema_version": 2,
+  "study_id": "ssd_credit_quarter_complete_policy_20261104_v1",
+  "technical_admission_not_automatic_from_financial_review": true
+}

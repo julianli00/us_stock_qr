@@ -1,0 +1,119 @@
+{
+  "actual_authoritative_counts": {
+    "current_journal_event_count": 887,
+    "current_journal_head_sha256": "eb5bb7a2666237b47896315f6730dcc48188a796210bc42de92ce817b8445af7",
+    "new_account_paths": 296,
+    "new_completed_strategy_evaluations": 74,
+    "new_historical_point_gate_passes": 0,
+    "new_pending_candidates": 0,
+    "new_registered_candidates": 83,
+    "new_reviews": 74,
+    "new_technical_failures": 9,
+    "original_completed_configurations": 178,
+    "original_registered_versions": 96,
+    "original_reviews": 94,
+    "total_legacy_plus_ssd_completed_configurations": 252
+  },
+  "admitted_at": "2026-11-04T21:56:00.966088+00:00",
+  "current_global_pool_or_roster_changed": false,
+  "funding_and_independent_BT_checked_all_four_paths": true,
+  "historical_credit_input_scope_not_broadened": true,
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "native_RF_exact_common": true,
+  "new_strategy_evaluations": 0,
+  "observation_checks": [
+    {
+      "NET_observations": 0,
+      "date": "2016-10-05",
+      "score_mature": false,
+      "target_known_at": "2016-09-30"
+    },
+    {
+      "NET_observations": 126,
+      "date": "2021-10-05",
+      "score_mature": true,
+      "target_known_at": "2021-09-30"
+    },
+    {
+      "NET_observations": 125,
+      "date": "2017-04-05",
+      "score_mature": false,
+      "target_known_at": "2017-03-31"
+    },
+    {
+      "NET_observations": 126,
+      "date": "2017-04-06",
+      "score_mature": true,
+      "target_known_at": "2017-03-31"
+    },
+    {
+      "NET_observations": 126,
+      "date": "2026-10-05",
+      "score_mature": true,
+      "target_known_at": "2026-09-30"
+    }
+  ],
+  "order_authority": false,
+  "pool_inclusion_requires_new_separate_study": true,
+  "record": {
+    "adapter": "monthly",
+    "completed_paths": {
+      "10y-base": {
+        "path": "reports/ssd-continuous-research-v1/credit-quarter-complete-policy-20261104-v1/accounts/10y-base/complete.json",
+        "sha256": "11261ea64cae27c4a08aa509f4cd2930b1444576244c9b9406b759f241de6377"
+      },
+      "10y-stress": {
+        "path": "reports/ssd-continuous-research-v1/credit-quarter-complete-policy-20261104-v1/accounts/10y-stress/complete.json",
+        "sha256": "620edaad49733c42cc82eaa4129444f53f54f79c840597550a840fd72c849c76"
+      },
+      "5y-base": {
+        "path": "reports/ssd-continuous-research-v1/credit-quarter-complete-policy-20261104-v1/accounts/5y-base/complete.json",
+        "sha256": "46472475b403ac8f5e70b203fbc38de647fd913a028aa7adb2ecd7dd6bf7cf3b"
+      },
+      "5y-stress": {
+        "path": "reports/ssd-continuous-research-v1/credit-quarter-complete-policy-20261104-v1/accounts/5y-stress/complete.json",
+        "sha256": "4cdb80e4f919d063220692efeea4f9338d4f102accf5c316d8fd9ffeed009d87"
+      }
+    },
+    "id": "credit_quarter_style_defense_v1",
+    "introduced_at": "2026-11-04T21:51:50.546254+00:00",
+    "mechanism_group": "relative_credit_market_condition",
+    "registered_event_sha256": "72d937149facb61f521132b206220766b79212d513157e42cf5ee0910a77ef43",
+    "registration": {
+      "path": "evidence/credit_quarter_policy_20261104_registration_v1.json",
+      "sha256": "cf4347f4d33e2b6a7eede7feddb12c5939cb6fac63a4ebec52a86526e9211985"
+    },
+    "results": {
+      "path": "reports/ssd-continuous-research-v1/credit-quarter-complete-policy-20261104-v1/source-result-contract-v1.json",
+      "sha256": "349d76f59898b384e867fe1cb5f2688026c60df5ccf65872d991b9a6a9930854"
+    }
+  },
+  "standalone_financial_verdict_preserved": "rejected",
+  "technical": {
+    "adapter": "monthly",
+    "counterfactual_historical_availability": true,
+    "financial_failure_is_not_admission_failure": true,
+    "first_historical_target": "2015-11-30",
+    "four_completed_paths_checked": 4,
+    "historical_shadow_end": "2026-10-05",
+    "historical_shadow_observations": 2512,
+    "historical_shadow_start": "2016-10-06",
+    "id": "credit_quarter_style_defense_v1",
+    "independent_forward_validation": false,
+    "introduced_at": "2026-11-04T21:51:50.546254+00:00",
+    "mechanism_group": "relative_credit_market_condition",
+    "shadow_reference": {
+      "path": "reports/ssd-continuous-research-v1/credit-quarter-complete-policy-20261104-v1/accounts/10y-base/account.csv",
+      "sha256": "a26e9c0f9c276d8a6378e92c95c845cc0b72cb8f84e7982ec94c07adb1fdf052"
+    },
+    "source_frozen_specification_sha256": "9f50d2a6a57a1093e604556eb6d58656af82646aaea523c47dfac4922c0d39bb",
+    "source_technical_and_funding_checks_passed": true,
+    "standalone_financial_verdict_preserved": "rejected",
+    "target_reference": {
+      "path": "reports/ssd-continuous-research-v1/credit-quarter-complete-policy-20261104-v1/native-targets/targets.csv",
+      "sha256": "02974f7a62855bb6e82208208d3d47ef6e072fcf9b6142dffdba482e1c6f8dd1"
+    }
+  },
+  "technical_admission_is_final_qualification": false
+}

@@ -4,7 +4,45 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Credit-conditioned complete policy: registered, not yet funded
+## Credit-conditioned complete policy: complete, rejected, technically admitted
+
+The [complete four-path result](evidence/credit_quarter_policy_20261104_results_v1.json)
+retains the single frozen monthly policy, not a combination of passing fragments.
+Actual preregistration publication
+`beb8e42fa428c1ddf801b5492aa9dc7ae536faad` and its checked scientific dependencies
+precede journal fence878 and every new funded account. Review887 at
+**2026-11-04T21:55:30.978586Z** rejects the complete policy.
+
+| Original path | Net CAGR | RF-excess Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Model fees USD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 10y base | 11.651407% | 0.754240 | 22.968961% | 5.627026x | 192 | 635.28 |
+| 10y stress | 10.704332% | 0.685732 | 24.023630% | 5.618937x | 192 | 1925.02 |
+| 5y base | 11.186828% | 0.561471 | 23.003169% | 5.718173x | 98 | 246.58 |
+| 5y stress | 8.817799% | 0.404834 | 24.082259% | 5.717517x | 98 | 656.96 |
+
+**Every path fails CAGR, Sharpe, drawdown and both matched-cost SPY/QQQ gates.**
+Both original extra stress-versus-base-SPY gates also fail. No threshold,
+window, sign, weights or defense is changed to rescue these outcomes.
+The model's minimum cash isUSD167.2177367, maximum gross exposure0.983304887,
+and maximum independent BT equity differenceUSD4.3656e-11; broker orders are0.
+
+The separate [technical admission](evidence/credit_quarter_policy_20261104_admission_v1.json)
+checks all four complete native funding/accounting receipts, the unchanged
+Monthly expert Interface, exact common RF and real125/126maturity behavior.
+Native131month-end opinions are preserved; the first original capital anchor
+uses the known September30opinion with zero matured shadow observations.
+Financial rejection is preserved and does not invalidate this complete source
+expert. Neither technical admission nor this result changes the existing
+active/selected global pool; inclusion needs a separately frozen study.
+
+This credit/duration-conditioned archival policy is not pure credit-spread
+alpha, independent forward validation or complete historical intraday PIT.
+The exposed251prior completions, input provenance limitations and data-preparation
+V1 failure remain. At current journal887:83registrations,74completed reviews,
+nine financial technical failures, zero pending,296funded paths,
+**252combined completions, zero qualifiers; investment goal unmet**.
+
+### Preserved preregistration snapshot: registered, not yet funded
 
 The [fixed complete policy](CREDIT_QUARTER_POLICY_V1.md) was actually registered
 at **2026-11-04T21:51:50.546254Z** (event876), before new targets.
