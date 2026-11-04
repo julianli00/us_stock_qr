@@ -1208,3 +1208,76 @@ failures,two pending and284funded paths;249combined completions andzero
 qualifiers. The planned primary contrasts are against cached equal-HMM and
 rolling-HMM paths, not replayed controls or spliced metrics. All original
 joint gates and cost/turnover disclosures remain required.
+
+### Actual complete funded outcomes
+
+The complete two-packet cohort and exact scientific pins were actually
+published at `ffa8a4ccedf9273b1feaf34e7cd626eae153cf28` before fence857 at
+**2026-11-04T20:17:29.231326Z**. The first new account starts
+**20:17:30.553850Z**; all eight finish by **20:18:15.478366Z**.
+Reviews866/875 reject both complete rules. The
+[public outcome projection](evidence/vxn_hmm_composition_substitution_20261104_results_v1.json)
+matches every saved private result.
+
+| Fixed rule/path | Net CAGR | RF-excess Sharpe | Maximum DD | Annual turnover | Model tickets | Model fees |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Equal HMM/VXN 10y base | 14.427987% | 1.010291 | 16.983108% | 2.785138x | 1059 | USD1302.16 |
+| Equal HMM/VXN 10y stress | 13.801023% | 0.963115 | 16.554371% | 2.771506x | 1048 | USD1989.81 |
+| Equal HMM/VXN 5y base | 16.985429% | 1.031407 | 13.808089% | 2.845546x | 518 | USD607.30 |
+| Equal HMM/VXN 5y stress | 15.777970% | 0.947168 | 14.041179% | 2.811102x | 507 | USD848.87 |
+| Rolling HMM/VXN 10y base | 11.877182% | 0.775116 | 16.994463% | 7.706675x | 940 | USD1576.15 |
+| Rolling HMM/VXN 10y stress | 10.525213% | 0.673286 | 19.172005% | 7.705718x | 940 | USD3312.04 |
+| Rolling HMM/VXN 5y base | 12.204781% | 0.639570 | 17.356750% | 7.944731x | 481 | USD716.34 |
+| Rolling HMM/VXN 5y stress | 10.271396% | 0.507681 | 19.679739% | 7.947811x | 481 | USD1372.74 |
+
+**Both rejected.** Equal passes every CAGR gate and both base Sharpe gates.
+Both stress Sharpe and both ten-year DD gates fail; both five-year DD gates
+pass. Every matched QQQ gate fails. Matched SPY and extra stress/base-SPY
+fail on ten-year paths and pass on five-year paths.
+
+Rolling fails every Sharpe/DD/SPY/QQQ gate and both extra stress/base-SPY
+gates. Only five-year-base CAGR exceeds12%; the other three CAGR gates fail.
+No passing horizon or metric is spliced across rules.
+
+### Matched cached HMM controls and actual costs
+
+Prespecified controls are old equal-HMM for new equal and old rolling-HMM
+for new rolling; they are not replayed. Equal HMM/VXN lowers Sharpe by
+0.000315-0.006744 and raises DD by0.002263-0.069463 percentage points on all
+four paths. CAGR is slightly lower on ten-year base and higher on the other
+three. Tickets rise22/11/11/0; USD fees rise on all four, byUSD0.58-24.11.
+Annualized turnover rises on three paths and falls only0.000363x on five-year
+stress. This is not a robust qualified improvement.
+
+Rolling improves base CAGR by0.062245/0.406066 points and base Sharpe by
+0.009159/0.032806; base DD declines0.035790/0.022619 points. Stress CAGR
+falls0.230150/0.214120 points, stress Sharpe falls0.012842/0.010075 and
+stress DD rises1.120775/1.096871 points. Annual turnover rises on every path,
+by0.164366-0.375368x NAV. Ten-year tickets decline10 and fees decline;
+five-year tickets rise3 and fees riseUSD13.69/26.07.
+
+Native shadow assessments, composition and unified main wealth/holding feedback
+all differ. These whole-policy contrasts are not isolated causal VXN alpha,
+fee effects or independent observations. Original source technical usability
+and financial rejections remain; no failed weight, window, band or option
+interpretation is tuned.
+
+Turnover is annualized actual two-sided notional relative to main NAV,
+including deployment, not a new numerical acceptance cap. Across all eight
+new paths minimum cash is at leastUSD173.69830234432092, maximum gross at most
+0.9827714306647118 and independent-BT equity differences at most
+USD1.0186340659856796e-10. Model tickets are not brokerage orders.
+Original full2512/1254-return calendars, freshUSD10000, RF, initial DD peak,
+costs/delays, cash funding, long-only1x and every gate remain.
+
+All284 earlier receipts/1708 financial-file hashes and1543 source/313
+implementation references remain unchanged. The new private inventory verifies
+292 receipts/1756 files. HMM/VXN source targets, all fit/filter and option-input
+evidence, source qualification, original ledger, rosters, failures and one-day
+prospective identities remain; only the eight new main/independent-BT paths run.
+
+Current authoritative totals are **875 events,82 SSD registrations,73 completed
+reviews,nine technical failures,zero pending and292 funded paths**. With178
+legacy completions intact there are **251 combined completions and zero
+qualifiers**. The investment objective is unmet. This completed rejection is
+not followed by a variant-retuning or automatic representative promotion.

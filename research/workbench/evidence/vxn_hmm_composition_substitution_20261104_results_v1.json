@@ -1,0 +1,1463 @@
+{
+  "actual_authoritative_counts": {
+    "current_journal_event_count": 875,
+    "current_journal_head_sha256": "fe29e9e3512eb531f26d243917c7f411616aa7e8c000fc580bfd8c52b30a83f6",
+    "new_account_paths": 292,
+    "new_completed_strategy_evaluations": 73,
+    "new_historical_point_gate_passes": 0,
+    "new_pending_candidates": 0,
+    "new_registered_candidates": 82,
+    "new_reviews": 73,
+    "new_technical_failures": 9,
+    "original_completed_configurations": 178,
+    "original_registered_versions": 96,
+    "original_reviews": 94,
+    "total_legacy_plus_ssd_completed_configurations": 251
+  },
+  "candidates": {
+    "expert_pool_hmm_vxn_equal_v1": {
+      "matched_cached_HMM_control": {
+        "candidate_id": "expert_pool_hmm_substitution_equal_v1",
+        "old_control_replayed": false,
+        "paths": {
+          "10y-base": {
+            "all_point_gates_pass": false,
+            "artifacts": [
+              {
+                "path": "reports/ssd-continuous-research-v1/hmm-representative-substitution-20261104-v1/main-accounts/expert_pool_hmm_substitution_equal_v1/accounts/10y-base/account.csv",
+                "sha256": "0c4f4684d9e78e28926032e74256f87f953d32e7cdce454e86ffb700f5ec3355"
+              },
+              {
+                "path": "reports/ssd-continuous-research-v1/hmm-representative-substitution-20261104-v1/main-accounts/expert_pool_hmm_substitution_equal_v1/accounts/10y-base/weights.csv",
+                "sha256": "0ab8e839b7c08c3a443747ef6ffd5013e61cae64cb644c69a3d97ddd168d9f93"
+              },
+              {
+                "path": "reports/ssd-continuous-research-v1/hmm-representative-substitution-20261104-v1/main-accounts/expert_pool_hmm_substitution_equal_v1/accounts/10y-base/issued.csv",
+                "sha256": "38ad510b0979218cc206b543a777450c9744bfdca7cb1076449d064036a70b70"
+              },
+              {
+                "path": "reports/ssd-continuous-research-v1/hmm-representative-substitution-20261104-v1/main-accounts/expert_pool_hmm_substitution_equal_v1/accounts/10y-base/independent-bt.csv",
+                "sha256": "80d120a28462897c36172a830df51929cb54d7c267f1f0545f8cbaa0c5a8f1c7"
+              },
+              {
+                "path": "reports/ssd-continuous-research-v1/hmm-representative-substitution-20261104-v1/main-accounts/expert_pool_hmm_substitution_equal_v1/accounts/10y-base/decisions.json",
+                "sha256": "411999c52ecc68bf264c9879385a06aad80379df2156ef030525bba7aee95cf7"
+              }
+            ],
+            "broker_orders": 0,
+            "candidate_id": "expert_pool_hmm_substitution_equal_v1",
+            "completed_at": "2026-11-04T13:31:04.551123+00:00",
+            "excess_net_cagr_vs_qqq": -0.06728930437655478,
+            "excess_net_cagr_vs_spy": -0.010285039594980505,
+            "execution": {
+              "annualized_two_sided_turnover": 2.758121408365406,
+              "executed_notional_usd": 482100.5490834062,
+              "fixed_commission_usd": 1037.0,
+              "initial_deployment_cost_usd": 15.892212815720296,
+              "maximum_gross_exposure": 0.9817571693665942,
+              "minimum_cash_usd": 198.92532188339047,
+              "model_order_count": 1037,
+              "model_orders_are_broker_orders": false,
+              "proportional_cost_usd": 241.05027454170315,
+              "rebalance_session_count": 104,
+              "total_cost_usd": 1278.050274541703,
+              "total_two_sided_turnover": 27.57743842121961
+            },
+            "frozen_specification_sha256": "2511eb28fcdbb7749786f3410bc75c9c4605c25692ebaf38010a3e343ee5a694",
+            "gates": {
+              "beats_qqq": false,
+              "beats_spy": false,
+              "cagr_above_12pct": true,
+              "drawdown_at_most_15pct": false,
+              "sharpe_above_1": true
+            },
+            "independent_bt_max_equity_difference_usd": 5.820766091346741e-11,
+            "independent_forward_validation": false,
+            "independent_monthly_feedback": {
+              "all_actual_gaps_targets_and_delays_checked": true,
+              "checked_actual_monthly_decisions_and_initial": 121,
+              "issued_requests": 104
+            },
+            "metrics": {
+              "annualized_volatility": 0.1152912242850372,
+              "cagr": 0.14433493973616107,
+              "end": "2026-10-05",
+              "expected_shortfall_5pct": -0.0175195506882463,
+              "max_drawdown": 0.16979425755787003,
+              "max_underwater_sessions": 388,
+              "positive_year_fraction": 0.8181818181818182,
+              "rolling_3y_cagr_above_20pct_fraction": 0.1462720546385885,
+              "rolling_3y_cagr_median": 0.09964304324255856,
+              "rolling_3y_cagr_min": 0.03554088761611807,
+              "sessions": 2512,
+              "sharpe": 1.0170349618659038,
+              "start": "2016-10-06",
+              "total_return": 2.8499175499264586,
+              "worst_day": -0.048059885631338006,
+              "year_returns": {
+                "2016": 0.014387877616057088,
+                "2017": 0.21113633706306123,
+                "2018": -0.029409394714101533,
+                "2019": 0.16335746956397945,
+                "2020": 0.1759132146405964,
+                "2021": 0.14394292391601793,
+                "2022": -0.10322022450866541,
+                "2023": 0.17098028773554375,
+                "2024": 0.15507056694480847,
+                "2025": 0.34588037439609165,
+                "2026": 0.2637904915986349
+              }
+            },
+            "path_key": "10y-base"
+          },
+          "10y-stress": {
+            "all_point_gates_pass": false,
+            "artifacts": [
+              {
+                "path": "reports/ssd-continuous-research-v1/hmm-representative-substitution-20261104-v1/main-accounts/expert_pool_hmm_substitution_equal_v1/accounts/10y-stress/account.csv",
+                "sha256": "d33e10388b9ec9c2835ffecfb3438900ed62a481aebe37e688439b1af5a72952"
+              },
+              {
+                "path": "reports/ssd-continuous-research-v1/hmm-representative-substitution-20261104-v1/main-accounts/expert_pool_hmm_substitution_equal_v1/accounts/10y-stress/weights.csv",
+                "sha256": "93954f4c3f69e59559b5da7a106726fb4da71ebf52f40a406bafc72feb97bfe4"
+              },
+              {
+                "path": "reports/ssd-continuous-research-v1/hmm-representative-substitution-20261104-v1/main-accounts/expert_pool_hmm_substitution_equal_v1/accounts/10y-stress/issued.csv",
+                "sha256": "38ad510b0979218cc206b543a777450c9744bfdca7cb1076449d064036a70b70"
+              },
+              {
+                "path": "reports/ssd-continuous-research-v1/hmm-representative-substitution-20261104-v1/main-accounts/expert_pool_hmm_substitution_equal_v1/accounts/10y-stress/independent-bt.csv",
+                "sha256": "f6e6cd2f92668d0d0fba3e74cabe419df9af0a2745ff0c9ce319cc81b06ebb2a"
+              },
+              {
+                "path": "reports/ssd-continuous-research-v1/hmm-representative-substitution-20261104-v1/main-accounts/expert_pool_hmm_substitution_equal_v1/accounts/10y-stress/decisions.json",
+                "sha256": "db5bd76a74ecbf9a8a7e4f8f6d41153055bd57c717fb1e4f2a8d394dbb987d7b"
+              }
+            ],
+            "broker_orders": 0,
+            "candidate_id": "expert_pool_hmm_substitution_equal_v1",
+            "completed_at": "2026-11-04T13:31:06.464318+00:00",
+            "excess_net_cagr_vs_qqq": -0.07347001851113344,
+            "excess_net_cagr_vs_spy": -0.016287749657855066,
+            "execution": {
+              "annualized_two_sided_turnover": 2.7574261548660624,
+              "executed_notional_usd": 469155.5317578989,
+              "fixed_commission_usd": 1037.0,
+              "initial_deployment_cost_usd": 30.540141323006914,
+              "maximum_gross_exposure": 0.982041245286048,
+              "minimum_cash_usd": 196.77820688554752,
+              "model_order_count": 1037,
+              "model_orders_are_broker_orders": false,
+              "proportional_cost_usd": 938.3110635157977,
+              "rebalance_session_count": 104,
+              "total_cost_usd": 1975.3110635157977,
+              "total_two_sided_turnover": 27.570486837976347
+            },
+            "frozen_specification_sha256": "2511eb28fcdbb7749786f3410bc75c9c4605c25692ebaf38010a3e343ee5a694",
+            "gates": {
+              "also_beats_base_cost_spy": false,
+              "beats_qqq": false,
+              "beats_spy": false,
+              "cagr_above_12pct": true,
+              "drawdown_at_most_15pct": false,
+              "sharpe_above_1": false
+            },
+            "independent_bt_max_equity_difference_usd": 3.637978807091713e-11,
+            "independent_forward_validation": false,
+            "independent_monthly_feedback": {
+              "all_actual_gaps_targets_and_delays_checked": true,
+              "checked_actual_monthly_decisions_and_initial": 121,
+              "issued_requests": 104
+            },
+            "metrics": {
+              "annualized_volatility": 0.11529806856927963,
+              "cagr": 0.13776861648131122,
+              "end": "2026-10-05",
+              "expected_shortfall_5pct": -0.017536185887629493,
+              "max_drawdown": 0.16552107877275535,
+              "max_underwater_sessions": 493,
+              "positive_year_fraction": 0.8181818181818182,
+              "rolling_3y_cagr_above_20pct_fraction": 0.13830392714854867,
+              "rolling_3y_cagr_median": 0.09539689388801416,
+              "rolling_3y_cagr_min": 0.03533878249591099,
+              "sessions": 2512,
+              "sharpe": 0.9668654933318225,
+              "start": "2016-10-06",
+              "total_return": 2.63465144353522,
+              "worst_day": -0.04729028030398397,
+              "year_returns": {
+                "2016": 0.009465343679083915,
+                "2017": 0.20702604496634258,
+                "2018": -0.027744351019690194,
+                "2019": 0.15572516866389097,
+                "2020": 0.17528189628686786,
+                "2021": 0.13575707899269696,
+                "2022": -0.10444817616688518,
+                "2023": 0.15606975468823459,
+                "2024": 0.15163005639032034,
+                "2025": 0.32623809548727767,
+                "2026": 0.2577169604807723
+              }
+            },
+            "path_key": "10y-stress"
+          },
+          "5y-base": {
+            "all_point_gates_pass": false,
+            "artifacts": [
+              {
+                "path": "reports/ssd-continuous-research-v1/hmm-representative-substitution-20261104-v1/main-accounts/expert_pool_hmm_substitution_equal_v1/accounts/5y-base/account.csv",
+                "sha256": "7ad4f2ac113661ddc77742b49e4535d019e3f8f4fc52485ca91a36779ba59afe"
+              },
+              {
+                "path": "reports/ssd-continuous-research-v1/hmm-representative-substitution-20261104-v1/main-accounts/expert_pool_hmm_substitution_equal_v1/accounts/5y-base/weights.csv",
+                "sha256": "2a385aafbe06b89bb8eefe6060d47f0e787c31fee2c08ba5fdd866cda0ce0843"
+              },
+              {
+                "path": "reports/ssd-continuous-research-v1/hmm-representative-substitution-20261104-v1/main-accounts/expert_pool_hmm_substitution_equal_v1/accounts/5y-base/issued.csv",
+                "sha256": "7f00bd32148d4f683a62af1628e96422f80a2d4481ee8e546bf4a323b41a5ead"
+              },
+              {
+                "path": "reports/ssd-continuous-research-v1/hmm-representative-substitution-20261104-v1/main-accounts/expert_pool_hmm_substitution_equal_v1/accounts/5y-base/independent-bt.csv",
+                "sha256": "5360f79e3802072964cfab985f9b2ecf3492e706657e3ce6802fd582fbf3e331"
+              },
+              {
+                "path": "reports/ssd-continuous-research-v1/hmm-representative-substitution-20261104-v1/main-accounts/expert_pool_hmm_substitution_equal_v1/accounts/5y-base/decisions.json",
+                "sha256": "9db9b0e0fb51d1dc9320c80d3ba0e4ca4fd9c9b7ba0cc0e704dfda668b23d14c"
+              }
+            ],
+            "broker_orders": 0,
+            "candidate_id": "expert_pool_hmm_substitution_equal_v1",
+            "completed_at": "2026-11-04T13:31:08.021511+00:00",
+            "excess_net_cagr_vs_qqq": -0.0009916958116704677,
+            "excess_net_cagr_vs_spy": 0.029339521178397332,
+            "execution": {
+              "annualized_two_sided_turnover": 2.818454599968806,
+              "executed_notional_usd": 176799.74731451322,
+              "fixed_commission_usd": 507.0,
+              "initial_deployment_cost_usd": 15.892212815720299,
+              "maximum_gross_exposure": 0.9817571693665943,
+              "minimum_cash_usd": 187.9527884824976,
+              "model_order_count": 507,
+              "model_orders_are_broker_orders": false,
+              "proportional_cost_usd": 88.39987365725662,
+              "rebalance_session_count": 53,
+              "total_cost_usd": 595.3998736572566,
+              "total_two_sided_turnover": 14.090343872807777
+            },
+            "frozen_specification_sha256": "2511eb28fcdbb7749786f3410bc75c9c4605c25692ebaf38010a3e343ee5a694",
+            "gates": {
+              "beats_qqq": false,
+              "beats_spy": true,
+              "cagr_above_12pct": true,
+              "drawdown_at_most_15pct": true,
+              "sharpe_above_1": true
+            },
+            "independent_bt_max_equity_difference_usd": 6.184563972055912e-11,
+            "independent_forward_validation": false,
+            "independent_monthly_feedback": {
+              "all_actual_gaps_targets_and_delays_checked": true,
+              "checked_actual_monthly_decisions_and_initial": 61,
+              "issued_requests": 53
+            },
+            "metrics": {
+              "annualized_volatility": 0.12188121233063953,
+              "cagr": 0.16974807728310437,
+              "end": "2026-10-05",
+              "expected_shortfall_5pct": -0.01748626220231879,
+              "max_drawdown": 0.13745254725721068,
+              "max_underwater_sessions": 389,
+              "positive_year_fraction": 0.8333333333333334,
+              "rolling_3y_cagr_above_20pct_fraction": 0.501002004008016,
+              "rolling_3y_cagr_median": 0.20014338546593755,
+              "rolling_3y_cagr_min": 0.06110342470562635,
+              "sessions": 1254,
+              "sharpe": 1.0378811649431612,
+              "start": "2021-10-06",
+              "total_return": 1.1898536596176275,
+              "worst_day": -0.04722931928372143,
+              "year_returns": {
+                "2021": 0.07879448116801746,
+                "2022": -0.10637539840607368,
+                "2023": 0.16607775279511872,
+                "2024": 0.15054389184751504,
+                "2025": 0.3422367300855602,
+                "2026": 0.2614250206343518
+              }
+            },
+            "path_key": "5y-base"
+          },
+          "5y-stress": {
+            "all_point_gates_pass": false,
+            "artifacts": [
+              {
+                "path": "reports/ssd-continuous-research-v1/hmm-representative-substitution-20261104-v1/main-accounts/expert_pool_hmm_substitution_equal_v1/accounts/5y-stress/account.csv",
+                "sha256": "9bfaa88e0425d400f4c39706112fb226ad0298e811f98bcc81ff574770505cb3"
+              },
+              {
+                "path": "reports/ssd-continuous-research-v1/hmm-representative-substitution-20261104-v1/main-accounts/expert_pool_hmm_substitution_equal_v1/accounts/5y-stress/weights.csv",
+                "sha256": "60338503706512b5f4eea000265f85384ec66bcd9949947e780338a140bb4f5e"
+              },
+              {
+                "path": "reports/ssd-continuous-research-v1/hmm-representative-substitution-20261104-v1/main-accounts/expert_pool_hmm_substitution_equal_v1/accounts/5y-stress/issued.csv",
+                "sha256": "7f00bd32148d4f683a62af1628e96422f80a2d4481ee8e546bf4a323b41a5ead"
+              },
+              {
+                "path": "reports/ssd-continuous-research-v1/hmm-representative-substitution-20261104-v1/main-accounts/expert_pool_hmm_substitution_equal_v1/accounts/5y-stress/independent-bt.csv",
+                "sha256": "b826f48f550ff99536b99bd7d7ebf463aa2ea745e326cfa077b9ffa44feb18ea"
+              },
+              {
+                "path": "reports/ssd-continuous-research-v1/hmm-representative-substitution-20261104-v1/main-accounts/expert_pool_hmm_substitution_equal_v1/accounts/5y-stress/decisions.json",
+                "sha256": "d6204680cb5bd4638a1de4982ed0aa2741cf484790a07aebc36f5a36e6523628"
+              }
+            ],
+            "broker_orders": 0,
+            "candidate_id": "expert_pool_hmm_substitution_equal_v1",
+            "completed_at": "2026-11-04T13:31:09.565702+00:00",
+            "excess_net_cagr_vs_qqq": -0.007685378833253154,
+            "excess_net_cagr_vs_spy": 0.021739083966350714,
+            "execution": {
+              "annualized_two_sided_turnover": 2.811465315172351,
+              "executed_notional_usd": 170647.0818123031,
+              "fixed_commission_usd": 507.0,
+              "initial_deployment_cost_usd": 30.540141323006914,
+              "maximum_gross_exposure": 0.9820412452860476,
+              "minimum_cash_usd": 185.72239389875108,
+              "model_order_count": 507,
+              "model_orders_are_broker_orders": false,
+              "proportional_cost_usd": 341.2941636246062,
+              "rebalance_session_count": 53,
+              "total_cost_usd": 848.2941636246062,
+              "total_two_sided_turnover": 14.05540223273022
+            },
+            "frozen_specification_sha256": "2511eb28fcdbb7749786f3410bc75c9c4605c25692ebaf38010a3e343ee5a694",
+            "gates": {
+              "also_beats_base_cost_spy": true,
+              "beats_qqq": false,
+              "beats_spy": true,
+              "cagr_above_12pct": true,
+              "drawdown_at_most_15pct": true,
+              "sharpe_above_1": false
+            },
+            "independent_bt_max_equity_difference_usd": 5.4569682106375694e-11,
+            "independent_forward_validation": false,
+            "independent_monthly_feedback": {
+              "all_actual_gaps_targets_and_delays_checked": true,
+              "checked_actual_monthly_decisions_and_initial": 61,
+              "issued_requests": 53
+            },
+            "metrics": {
+              "annualized_volatility": 0.12190269322662628,
+              "cagr": 0.1570218876306433,
+              "end": "2026-10-05",
+              "expected_shortfall_5pct": -0.017514845859266614,
+              "max_drawdown": 0.13971716586380956,
+              "max_underwater_sessions": 493,
+              "positive_year_fraction": 0.8333333333333334,
+              "rolling_3y_cagr_above_20pct_fraction": 0.44288577154308617,
+              "rolling_3y_cagr_median": 0.18893115328690005,
+              "rolling_3y_cagr_min": 0.05476691869735376,
+              "sessions": 1254,
+              "sharpe": 0.9474827345656087,
+              "start": "2021-10-06",
+              "total_return": 1.073311317737918,
+              "worst_day": -0.0466884383007492,
+              "year_returns": {
+                "2021": 0.06004117471295656,
+                "2022": -0.1076449658384746,
+                "2023": 0.15112118288577703,
+                "2024": 0.14696278446606326,
+                "2025": 0.3225094643902737,
+                "2026": 0.2552636265094761
+              }
+            },
+            "path_key": "5y-stress"
+          }
+        }
+      },
+      "paths": {
+        "10y-base": {
+          "all_point_gates_pass": false,
+          "artifacts": [
+            {
+              "path": "reports/ssd-continuous-research-v1/vxn-hmm-composition-substitution-20261104-v1/main-accounts/expert_pool_hmm_vxn_equal_v1/accounts/10y-base/account.csv",
+              "sha256": "be363ee03ebef2ecc84db1ec454c552d19648695257ae52fc5b943d335ed6efa"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/vxn-hmm-composition-substitution-20261104-v1/main-accounts/expert_pool_hmm_vxn_equal_v1/accounts/10y-base/weights.csv",
+              "sha256": "5bab4858377874215fb92ac69fa4375f7173c553bd228dde43cc27218734a727"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/vxn-hmm-composition-substitution-20261104-v1/main-accounts/expert_pool_hmm_vxn_equal_v1/accounts/10y-base/issued.csv",
+              "sha256": "af9cfbf5e4713b1e6e8af7ce32680765707b071ba631160a391de913de125c55"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/vxn-hmm-composition-substitution-20261104-v1/main-accounts/expert_pool_hmm_vxn_equal_v1/accounts/10y-base/independent-bt.csv",
+              "sha256": "de87a75440855c8c198d2f64603e730578ce6951aa0df0bfb08bb2d913efd08b"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/vxn-hmm-composition-substitution-20261104-v1/main-accounts/expert_pool_hmm_vxn_equal_v1/accounts/10y-base/decisions.json",
+              "sha256": "bd4239e764a04220b2322874b3b6020428bcfc5e4c98064e47a0e5ed60c0fb5b"
+            }
+          ],
+          "broker_orders": 0,
+          "candidate_id": "expert_pool_hmm_vxn_equal_v1",
+          "completed_at": "2026-11-04T20:17:31.527706+00:00",
+          "excess_net_cagr_vs_qqq": -0.06734437272309757,
+          "excess_net_cagr_vs_spy": -0.010340107941523291,
+          "execution": {
+            "annualized_two_sided_turnover": 2.7851380182689867,
+            "executed_notional_usd": 486325.44184296526,
+            "fixed_commission_usd": 1059.0,
+            "initial_deployment_cost_usd": 15.892212815720297,
+            "maximum_gross_exposure": 0.9817596320858268,
+            "minimum_cash_usd": 198.9262455833957,
+            "model_order_count": 1059,
+            "model_orders_are_broker_orders": false,
+            "proportional_cost_usd": 243.16272092148265,
+            "rebalance_session_count": 106,
+            "total_cost_usd": 1302.1627209214826,
+            "total_two_sided_turnover": 27.847567536532075
+          },
+          "frozen_specification_sha256": "2adef5d51a6c20a5e14b02889f14f8676d0a701b8ed54e8e5685ec42c1ab60ab",
+          "gates": {
+            "beats_qqq": false,
+            "beats_spy": false,
+            "cagr_above_12pct": true,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": true
+          },
+          "independent_bt_max_equity_difference_usd": 5.093170329928398e-11,
+          "independent_forward_validation": false,
+          "independent_monthly_feedback": {
+            "all_actual_gaps_targets_and_delays_checked": true,
+            "checked_actual_monthly_decisions_and_initial": 121,
+            "issued_requests": 106
+          },
+          "metrics": {
+            "annualized_volatility": 0.11610682560046749,
+            "cagr": 0.14427987138961829,
+            "end": "2026-10-05",
+            "expected_shortfall_5pct": -0.017671213376426093,
+            "max_drawdown": 0.16983107687401355,
+            "max_underwater_sessions": 386,
+            "positive_year_fraction": 0.8181818181818182,
+            "rolling_3y_cagr_above_20pct_fraction": 0.14570290267501423,
+            "rolling_3y_cagr_median": 0.09944222442005148,
+            "rolling_3y_cagr_min": 0.034800924852554274,
+            "sessions": 2512,
+            "sharpe": 1.0102910644504879,
+            "start": "2016-10-06",
+            "total_return": 2.8480655250305813,
+            "worst_day": -0.04808132041555435,
+            "year_returns": {
+              "2016": 0.014621330842138569,
+              "2017": 0.209888584386144,
+              "2018": -0.031025614894388154,
+              "2019": 0.16435952971117418,
+              "2020": 0.1768989752437362,
+              "2021": 0.14405886448760707,
+              "2022": -0.1039020293941515,
+              "2023": 0.1730414110048446,
+              "2024": 0.15024267066999664,
+              "2025": 0.3469095438749512,
+              "2026": 0.2670956346279858
+            }
+          },
+          "path_key": "10y-base"
+        },
+        "10y-stress": {
+          "all_point_gates_pass": false,
+          "artifacts": [
+            {
+              "path": "reports/ssd-continuous-research-v1/vxn-hmm-composition-substitution-20261104-v1/main-accounts/expert_pool_hmm_vxn_equal_v1/accounts/10y-stress/account.csv",
+              "sha256": "c0fe23ec3387d3ac02dec21e79dff9d0414a3fa8f4e1d583437b5d95fb320558"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/vxn-hmm-composition-substitution-20261104-v1/main-accounts/expert_pool_hmm_vxn_equal_v1/accounts/10y-stress/weights.csv",
+              "sha256": "423af0bfe781d55b65f329a681d1c68ab26c9c506edfb9e9e5ec2e66447daf6e"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/vxn-hmm-composition-substitution-20261104-v1/main-accounts/expert_pool_hmm_vxn_equal_v1/accounts/10y-stress/issued.csv",
+              "sha256": "e559fad3d1c96de4d6563911866f22e0cc3238f7a18f9b1a0c834b97737c66cb"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/vxn-hmm-composition-substitution-20261104-v1/main-accounts/expert_pool_hmm_vxn_equal_v1/accounts/10y-stress/independent-bt.csv",
+              "sha256": "25e205013ebb9ebcff9b4838d6e426551e9bced67103c03542faaae8277a357e"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/vxn-hmm-composition-substitution-20261104-v1/main-accounts/expert_pool_hmm_vxn_equal_v1/accounts/10y-stress/decisions.json",
+              "sha256": "a8920fbb0490ea9f824b1c7d51c2630674f8fdbd9d866974bef75712853083f1"
+            }
+          ],
+          "broker_orders": 0,
+          "candidate_id": "expert_pool_hmm_vxn_equal_v1",
+          "completed_at": "2026-11-04T20:17:33.627377+00:00",
+          "excess_net_cagr_vs_qqq": -0.07322840510175044,
+          "excess_net_cagr_vs_spy": -0.016046136248472065,
+          "execution": {
+            "annualized_two_sided_turnover": 2.771506327079168,
+            "executed_notional_usd": 470903.54680517723,
+            "fixed_commission_usd": 1048.0,
+            "initial_deployment_cost_usd": 30.54014132300691,
+            "maximum_gross_exposure": 0.9820439275322296,
+            "minimum_cash_usd": 196.7795049355538,
+            "model_order_count": 1048,
+            "model_orders_are_broker_orders": false,
+            "proportional_cost_usd": 941.8070936103545,
+            "rebalance_session_count": 105,
+            "total_cost_usd": 1989.8070936103545,
+            "total_two_sided_turnover": 27.711269285402114
+          },
+          "frozen_specification_sha256": "2adef5d51a6c20a5e14b02889f14f8676d0a701b8ed54e8e5685ec42c1ab60ab",
+          "gates": {
+            "also_beats_base_cost_spy": false,
+            "beats_qqq": false,
+            "beats_spy": false,
+            "cagr_above_12pct": true,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": false
+          },
+          "independent_bt_max_equity_difference_usd": 1.0186340659856796e-10,
+          "independent_forward_validation": false,
+          "independent_monthly_feedback": {
+            "all_actual_gaps_targets_and_delays_checked": true,
+            "checked_actual_monthly_decisions_and_initial": 121,
+            "issued_requests": 105
+          },
+          "metrics": {
+            "annualized_volatility": 0.11606004198660366,
+            "cagr": 0.13801022989069422,
+            "end": "2026-10-05",
+            "expected_shortfall_5pct": -0.017665248359479604,
+            "max_drawdown": 0.16554371212173769,
+            "max_underwater_sessions": 493,
+            "positive_year_fraction": 0.8181818181818182,
+            "rolling_3y_cagr_above_20pct_fraction": 0.13830392714854867,
+            "rolling_3y_cagr_median": 0.09536865529607895,
+            "rolling_3y_cagr_min": 0.03488820288589177,
+            "sessions": 2512,
+            "sharpe": 0.9631154662488317,
+            "start": "2016-10-06",
+            "total_return": 2.6423762104760895,
+            "worst_day": -0.04731349307674759,
+            "year_returns": {
+              "2016": 0.009912217321260686,
+              "2017": 0.20589751254881916,
+              "2018": -0.028902984369589935,
+              "2019": 0.15707484148114204,
+              "2020": 0.17603398382409252,
+              "2021": 0.13492039575382808,
+              "2022": -0.10517139902854522,
+              "2023": 0.1579219404691916,
+              "2024": 0.15093812001647944,
+              "2025": 0.32684919178436744,
+              "2026": 0.26034300124279985
+            }
+          },
+          "path_key": "10y-stress"
+        },
+        "5y-base": {
+          "all_point_gates_pass": false,
+          "artifacts": [
+            {
+              "path": "reports/ssd-continuous-research-v1/vxn-hmm-composition-substitution-20261104-v1/main-accounts/expert_pool_hmm_vxn_equal_v1/accounts/5y-base/account.csv",
+              "sha256": "d37d4223f45a4aa1f6cef11d5c416b7fe2dbaf5f2c982712ea7eb462b19d843e"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/vxn-hmm-composition-substitution-20261104-v1/main-accounts/expert_pool_hmm_vxn_equal_v1/accounts/5y-base/weights.csv",
+              "sha256": "01b9af8ce3ca2cadf0f8e3ab726874d3a00c81e3fb63cc01891c52632200b837"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/vxn-hmm-composition-substitution-20261104-v1/main-accounts/expert_pool_hmm_vxn_equal_v1/accounts/5y-base/issued.csv",
+              "sha256": "fd4a15ded26e63a93c5c5b241ce7b8ef9aff3d586a65898d9659c7d2355d6c12"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/vxn-hmm-composition-substitution-20261104-v1/main-accounts/expert_pool_hmm_vxn_equal_v1/accounts/5y-base/independent-bt.csv",
+              "sha256": "1ac36e734091d521b5761d9339dce8a104ada5164ce4f7de4d9b8b8cf107d76f"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/vxn-hmm-composition-substitution-20261104-v1/main-accounts/expert_pool_hmm_vxn_equal_v1/accounts/5y-base/decisions.json",
+              "sha256": "c5c954caded34bc28a4f571f2e6e4c7e545a6c89a00446f233b3ce9491e48eb1"
+            }
+          ],
+          "broker_orders": 0,
+          "candidate_id": "expert_pool_hmm_vxn_equal_v1",
+          "completed_at": "2026-11-04T20:17:35.301208+00:00",
+          "excess_net_cagr_vs_qqq": -0.000885483857598679,
+          "excess_net_cagr_vs_spy": 0.02944573313246912,
+          "execution": {
+            "annualized_two_sided_turnover": 2.8455462382134145,
+            "executed_notional_usd": 178606.49891169774,
+            "fixed_commission_usd": 518.0,
+            "initial_deployment_cost_usd": 15.892212815720297,
+            "maximum_gross_exposure": 0.9817596320858267,
+            "minimum_cash_usd": 187.93485537619915,
+            "model_order_count": 518,
+            "model_orders_are_broker_orders": false,
+            "proportional_cost_usd": 89.30324945584887,
+            "rebalance_session_count": 54,
+            "total_cost_usd": 607.3032494558489,
+            "total_two_sided_turnover": 14.225783520815044
+          },
+          "frozen_specification_sha256": "2adef5d51a6c20a5e14b02889f14f8676d0a701b8ed54e8e5685ec42c1ab60ab",
+          "gates": {
+            "beats_qqq": false,
+            "beats_spy": true,
+            "cagr_above_12pct": true,
+            "drawdown_at_most_15pct": true,
+            "sharpe_above_1": true
+          },
+          "independent_bt_max_equity_difference_usd": 1.2732925824820995e-11,
+          "independent_forward_validation": false,
+          "independent_monthly_feedback": {
+            "all_actual_gaps_targets_and_delays_checked": true,
+            "checked_actual_monthly_decisions_and_initial": 61,
+            "issued_requests": 54
+          },
+          "metrics": {
+            "annualized_volatility": 0.12284977036077019,
+            "cagr": 0.16985428923717616,
+            "end": "2026-10-05",
+            "expected_shortfall_5pct": -0.017671388338767465,
+            "max_drawdown": 0.1380808909179173,
+            "max_underwater_sessions": 389,
+            "positive_year_fraction": 0.8333333333333334,
+            "rolling_3y_cagr_above_20pct_fraction": 0.49899799599198397,
+            "rolling_3y_cagr_median": 0.19924450978968095,
+            "rolling_3y_cagr_min": 0.059843421465212716,
+            "sessions": 1254,
+            "sharpe": 1.0314073415615368,
+            "start": "2021-10-06",
+            "total_return": 1.1908478866210426,
+            "worst_day": -0.04759719082457292,
+            "year_returns": {
+              "2021": 0.0794427744401307,
+              "2022": -0.1070490325741843,
+              "2023": 0.16814431136973318,
+              "2024": 0.14533836355349283,
+              "2025": 0.34325627401957437,
+              "2026": 0.26472413192125566
+            }
+          },
+          "path_key": "5y-base"
+        },
+        "5y-stress": {
+          "all_point_gates_pass": false,
+          "artifacts": [
+            {
+              "path": "reports/ssd-continuous-research-v1/vxn-hmm-composition-substitution-20261104-v1/main-accounts/expert_pool_hmm_vxn_equal_v1/accounts/5y-stress/account.csv",
+              "sha256": "e9f5f288daa8db25b12ce98f79001bd0c741b39009e5006ed69dad54e5edb4e8"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/vxn-hmm-composition-substitution-20261104-v1/main-accounts/expert_pool_hmm_vxn_equal_v1/accounts/5y-stress/weights.csv",
+              "sha256": "7f8cb3466823a0584d12b9fd34a78035c40fbf7d972846ca5d48985b3137c833"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/vxn-hmm-composition-substitution-20261104-v1/main-accounts/expert_pool_hmm_vxn_equal_v1/accounts/5y-stress/issued.csv",
+              "sha256": "d14d942cfe9ca0f72d730ef45296dffbd2a171e29aa2a74ffa633cbdee4fb058"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/vxn-hmm-composition-substitution-20261104-v1/main-accounts/expert_pool_hmm_vxn_equal_v1/accounts/5y-stress/independent-bt.csv",
+              "sha256": "d8114a3a2de86966565abb8badc64543f47bf71fdbcfc6956decd0610c83eb9e"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/vxn-hmm-composition-substitution-20261104-v1/main-accounts/expert_pool_hmm_vxn_equal_v1/accounts/5y-stress/decisions.json",
+              "sha256": "11430499877cfaed0ab7d1617d11a2cc5e10d7a85e35bef6d161ebcaad921467"
+            }
+          ],
+          "broker_orders": 0,
+          "candidate_id": "expert_pool_hmm_vxn_equal_v1",
+          "completed_at": "2026-11-04T20:17:37.020955+00:00",
+          "excess_net_cagr_vs_qqq": -0.0069275652288902645,
+          "excess_net_cagr_vs_spy": 0.022496897570713603,
+          "execution": {
+            "annualized_two_sided_turnover": 2.8111024539654847,
+            "executed_notional_usd": 170936.96631567922,
+            "fixed_commission_usd": 507.0,
+            "initial_deployment_cost_usd": 30.54014132300691,
+            "maximum_gross_exposure": 0.9820439275322299,
+            "minimum_cash_usd": 185.66963658049528,
+            "model_order_count": 507,
+            "model_orders_are_broker_orders": false,
+            "proportional_cost_usd": 341.87393263135846,
+            "rebalance_session_count": 53,
+            "total_cost_usd": 848.8739326313585,
+            "total_two_sided_turnover": 14.053588175060849
+          },
+          "frozen_specification_sha256": "2adef5d51a6c20a5e14b02889f14f8676d0a701b8ed54e8e5685ec42c1ab60ab",
+          "gates": {
+            "also_beats_base_cost_spy": true,
+            "beats_qqq": false,
+            "beats_spy": true,
+            "cagr_above_12pct": true,
+            "drawdown_at_most_15pct": true,
+            "sharpe_above_1": false
+          },
+          "independent_bt_max_equity_difference_usd": 1.8189894035458565e-11,
+          "independent_forward_validation": false,
+          "independent_monthly_feedback": {
+            "all_actual_gaps_targets_and_delays_checked": true,
+            "checked_actual_monthly_decisions_and_initial": 61,
+            "issued_requests": 53
+          },
+          "metrics": {
+            "annualized_volatility": 0.12274713506648373,
+            "cagr": 0.15777970123500618,
+            "end": "2026-10-05",
+            "expected_shortfall_5pct": -0.017667119055436782,
+            "max_drawdown": 0.14041179374068513,
+            "max_underwater_sessions": 493,
+            "positive_year_fraction": 0.8333333333333334,
+            "rolling_3y_cagr_above_20pct_fraction": 0.44488977955911824,
+            "rolling_3y_cagr_median": 0.1894868086029471,
+            "rolling_3y_cagr_min": 0.05489330298791389,
+            "sessions": 1254,
+            "sharpe": 0.9471680517793647,
+            "start": "2021-10-06",
+            "total_return": 1.0801090599561562,
+            "worst_day": -0.04705133015977625,
+            "year_returns": {
+              "2021": 0.06056660560360272,
+              "2022": -0.10836085595364298,
+              "2023": 0.15297730935791787,
+              "2024": 0.1462870301268444,
+              "2025": 0.3231258665387937,
+              "2026": 0.2578930925747551
+            }
+          },
+          "path_key": "5y-stress"
+        }
+      },
+      "registered_event_sha256": "6c8f387b10b2fd9ac2a40feb66a18227e663c610ef2b527d72819d06885fa735",
+      "status": "rejected"
+    },
+    "expert_pool_hmm_vxn_rolling_pair_v1": {
+      "matched_cached_HMM_control": {
+        "candidate_id": "expert_pool_hmm_substitution_rolling_pair_v1",
+        "old_control_replayed": false,
+        "paths": {
+          "10y-base": {
+            "all_point_gates_pass": false,
+            "artifacts": [
+              {
+                "path": "reports/ssd-continuous-research-v1/hmm-representative-substitution-20261104-v1/main-accounts/expert_pool_hmm_substitution_rolling_pair_v1/accounts/10y-base/account.csv",
+                "sha256": "de88c0e209d136cc72b1c6578871fb90fbd2f29a846c2b7156f9d3ffd56ef03c"
+              },
+              {
+                "path": "reports/ssd-continuous-research-v1/hmm-representative-substitution-20261104-v1/main-accounts/expert_pool_hmm_substitution_rolling_pair_v1/accounts/10y-base/weights.csv",
+                "sha256": "73f530383226e29c70b782d52a813f6279b5a131ccc27800d63d227eff430fd9"
+              },
+              {
+                "path": "reports/ssd-continuous-research-v1/hmm-representative-substitution-20261104-v1/main-accounts/expert_pool_hmm_substitution_rolling_pair_v1/accounts/10y-base/issued.csv",
+                "sha256": "92a0819a8e09bc25d1a73d54b39fe49c68af0927eff24a7768004e37a9a9ebfc"
+              },
+              {
+                "path": "reports/ssd-continuous-research-v1/hmm-representative-substitution-20261104-v1/main-accounts/expert_pool_hmm_substitution_rolling_pair_v1/accounts/10y-base/independent-bt.csv",
+                "sha256": "76e71c982d43ef8e1c6c317f136cc1e84ffe2fd567d60effd4c188f44b32ee54"
+              },
+              {
+                "path": "reports/ssd-continuous-research-v1/hmm-representative-substitution-20261104-v1/main-accounts/expert_pool_hmm_substitution_rolling_pair_v1/accounts/10y-base/decisions.json",
+                "sha256": "949779e88fabc6766cbe5f7f1c6c91856e8b88c7e077de5085d99359f38ba7ff"
+              }
+            ],
+            "broker_orders": 0,
+            "candidate_id": "expert_pool_hmm_substitution_rolling_pair_v1",
+            "completed_at": "2026-11-04T13:31:40.444736+00:00",
+            "excess_net_cagr_vs_qqq": -0.09347487208478666,
+            "excess_net_cagr_vs_spy": -0.03647060730321239,
+            "execution": {
+              "annualized_two_sided_turnover": 7.539577774740242,
+              "executed_notional_usd": 1256520.556023295,
+              "fixed_commission_usd": 950.0,
+              "initial_deployment_cost_usd": 15.892212815720296,
+              "maximum_gross_exposure": 0.9824519433238189,
+              "minimum_cash_usd": 198.92532188339047,
+              "model_order_count": 950,
+              "model_orders_are_broker_orders": false,
+              "proportional_cost_usd": 628.2602780116474,
+              "rebalance_session_count": 113,
+              "total_cost_usd": 1578.2602780116474,
+              "total_two_sided_turnover": 75.38545662792981
+            },
+            "frozen_specification_sha256": "2511eb28fcdbb7749786f3410bc75c9c4605c25692ebaf38010a3e343ee5a694",
+            "gates": {
+              "beats_qqq": false,
+              "beats_spy": false,
+              "cagr_above_12pct": false,
+              "drawdown_at_most_15pct": false,
+              "sharpe_above_1": false
+            },
+            "independent_bt_max_equity_difference_usd": 7.275957614183426e-11,
+            "independent_forward_validation": false,
+            "independent_monthly_feedback": {
+              "all_actual_gaps_targets_and_delays_checked": true,
+              "checked_actual_monthly_decisions_and_initial": 121,
+              "issued_requests": 113
+            },
+            "metrics": {
+              "annualized_volatility": 0.12410723637922617,
+              "cagr": 0.11814937202792919,
+              "end": "2026-10-05",
+              "expected_shortfall_5pct": -0.018981440019942473,
+              "max_drawdown": 0.17030253239077586,
+              "max_underwater_sessions": 546,
+              "positive_year_fraction": 0.8181818181818182,
+              "rolling_3y_cagr_above_20pct_fraction": 0.055776892430278883,
+              "rolling_3y_cagr_median": 0.09255024210517235,
+              "rolling_3y_cagr_min": 0.011418297925124993,
+              "sessions": 2512,
+              "sharpe": 0.765957476455671,
+              "start": "2016-10-06",
+              "total_return": 2.0544417662714958,
+              "worst_day": -0.0425587836610708,
+              "year_returns": {
+                "2016": 0.014387877616057088,
+                "2017": 0.19080621163177836,
+                "2018": -0.06436753685630736,
+                "2019": 0.12052922653544607,
+                "2020": 0.24675744934815813,
+                "2021": 0.19002907525522672,
+                "2022": -0.149935349365505,
+                "2023": 0.13735082045895686,
+                "2024": 0.11799194998793672,
+                "2025": 0.28593018304527407,
+                "2026": 0.16954308221477055
+              }
+            },
+            "path_key": "10y-base"
+          },
+          "10y-stress": {
+            "all_point_gates_pass": false,
+            "artifacts": [
+              {
+                "path": "reports/ssd-continuous-research-v1/hmm-representative-substitution-20261104-v1/main-accounts/expert_pool_hmm_substitution_rolling_pair_v1/accounts/10y-stress/account.csv",
+                "sha256": "36a6d0ffd05970549f4b1663ea14ffa3ba761a2167f8a0d3a80d6b562cab26c8"
+              },
+              {
+                "path": "reports/ssd-continuous-research-v1/hmm-representative-substitution-20261104-v1/main-accounts/expert_pool_hmm_substitution_rolling_pair_v1/accounts/10y-stress/weights.csv",
+                "sha256": "ba15208e54b258342f6a2dc89289ce7f6b6bb73eb3de60d15a6994afec2d817e"
+              },
+              {
+                "path": "reports/ssd-continuous-research-v1/hmm-representative-substitution-20261104-v1/main-accounts/expert_pool_hmm_substitution_rolling_pair_v1/accounts/10y-stress/issued.csv",
+                "sha256": "92a0819a8e09bc25d1a73d54b39fe49c68af0927eff24a7768004e37a9a9ebfc"
+              },
+              {
+                "path": "reports/ssd-continuous-research-v1/hmm-representative-substitution-20261104-v1/main-accounts/expert_pool_hmm_substitution_rolling_pair_v1/accounts/10y-stress/independent-bt.csv",
+                "sha256": "6d36370cef570113e3e0dfd2fa34cba61eaf2319a53406c1be08e726d80cda38"
+              },
+              {
+                "path": "reports/ssd-continuous-research-v1/hmm-representative-substitution-20261104-v1/main-accounts/expert_pool_hmm_substitution_rolling_pair_v1/accounts/10y-stress/decisions.json",
+                "sha256": "2d1107329a81a6d05e569e8fa3bcca97d643beff1697a05aaddff18eadec1757"
+              }
+            ],
+            "broker_orders": 0,
+            "candidate_id": "expert_pool_hmm_substitution_rolling_pair_v1",
+            "completed_at": "2026-11-04T13:31:42.313763+00:00",
+            "excess_net_cagr_vs_qqq": -0.1036850053488767,
+            "excess_net_cagr_vs_spy": -0.04650273649559833,
+            "execution": {
+              "annualized_two_sided_turnover": 7.54135175394392,
+              "executed_notional_usd": 1185285.4183856363,
+              "fixed_commission_usd": 950.0,
+              "initial_deployment_cost_usd": 30.540141323006914,
+              "maximum_gross_exposure": 0.9827241823719728,
+              "minimum_cash_usd": 196.77820688554752,
+              "model_order_count": 950,
+              "model_orders_are_broker_orders": false,
+              "proportional_cost_usd": 2370.5708367712728,
+              "rebalance_session_count": 113,
+              "total_cost_usd": 3320.5708367712723,
+              "total_two_sided_turnover": 75.40319399152142
+            },
+            "frozen_specification_sha256": "2511eb28fcdbb7749786f3410bc75c9c4605c25692ebaf38010a3e343ee5a694",
+            "gates": {
+              "also_beats_base_cost_spy": false,
+              "beats_qqq": false,
+              "beats_spy": false,
+              "cagr_above_12pct": false,
+              "drawdown_at_most_15pct": false,
+              "sharpe_above_1": false
+            },
+            "independent_bt_max_equity_difference_usd": 4.3655745685100555e-11,
+            "independent_forward_validation": false,
+            "independent_monthly_feedback": {
+              "all_actual_gaps_targets_and_delays_checked": true,
+              "checked_actual_monthly_decisions_and_initial": 121,
+              "issued_requests": 113
+            },
+            "metrics": {
+              "annualized_volatility": 0.12473609818733151,
+              "cagr": 0.10755362964356796,
+              "end": "2026-10-05",
+              "expected_shortfall_5pct": -0.019027096589672193,
+              "max_drawdown": 0.1805122927966749,
+              "max_underwater_sessions": 624,
+              "positive_year_fraction": 0.8181818181818182,
+              "rolling_3y_cagr_above_20pct_fraction": 0.04154809334092203,
+              "rolling_3y_cagr_median": 0.08835141867600918,
+              "rolling_3y_cagr_min": -0.0027332539956459656,
+              "sessions": 2512,
+              "sharpe": 0.6861280147186888,
+              "start": "2016-10-06",
+              "total_return": 1.7770705621809073,
+              "worst_day": -0.04258197129907304,
+              "year_returns": {
+                "2016": 0.009465343679083915,
+                "2017": 0.17708325186568752,
+                "2018": -0.08281655300572088,
+                "2019": 0.0866996859283895,
+                "2020": 0.27549161296131364,
+                "2021": 0.18124825657126498,
+                "2022": -0.15693597929308944,
+                "2023": 0.13041254687621273,
+                "2024": 0.10878870376653582,
+                "2025": 0.24784649795332547,
+                "2026": 0.18031058382884058
+              }
+            },
+            "path_key": "10y-stress"
+          },
+          "5y-base": {
+            "all_point_gates_pass": false,
+            "artifacts": [
+              {
+                "path": "reports/ssd-continuous-research-v1/hmm-representative-substitution-20261104-v1/main-accounts/expert_pool_hmm_substitution_rolling_pair_v1/accounts/5y-base/account.csv",
+                "sha256": "c33f6e281e2f0fbf2be5e5949bd7892f8c9acf8f6ff9767001f8e36d2a928007"
+              },
+              {
+                "path": "reports/ssd-continuous-research-v1/hmm-representative-substitution-20261104-v1/main-accounts/expert_pool_hmm_substitution_rolling_pair_v1/accounts/5y-base/weights.csv",
+                "sha256": "158f8d2128acce7c93348da88a61a43fe759fe8b0f18b883f6ab64026d2228e8"
+              },
+              {
+                "path": "reports/ssd-continuous-research-v1/hmm-representative-substitution-20261104-v1/main-accounts/expert_pool_hmm_substitution_rolling_pair_v1/accounts/5y-base/issued.csv",
+                "sha256": "72b2f9b4ccfec33c9e361ea216f79dea1c0f59b5b6c2e00ca7386f2f35b781e4"
+              },
+              {
+                "path": "reports/ssd-continuous-research-v1/hmm-representative-substitution-20261104-v1/main-accounts/expert_pool_hmm_substitution_rolling_pair_v1/accounts/5y-base/independent-bt.csv",
+                "sha256": "2059766055e0515a0af0902fb6b72b4a00468554ad6f8ef470b0cb1cd5ce3622"
+              },
+              {
+                "path": "reports/ssd-continuous-research-v1/hmm-representative-substitution-20261104-v1/main-accounts/expert_pool_hmm_substitution_rolling_pair_v1/accounts/5y-base/decisions.json",
+                "sha256": "08be9b789e43206ee3802e07316a21a0c39ab85a01214170641d2c0c655d17ff"
+              }
+            ],
+            "broker_orders": 0,
+            "candidate_id": "expert_pool_hmm_substitution_rolling_pair_v1",
+            "completed_at": "2026-11-04T13:31:43.840994+00:00",
+            "excess_net_cagr_vs_qqq": -0.05275261563284239,
+            "excess_net_cagr_vs_spy": -0.022421398642774593,
+            "execution": {
+              "annualized_two_sided_turnover": 7.569363199539422,
+              "executed_notional_usd": 449299.5458120797,
+              "fixed_commission_usd": 478.0,
+              "initial_deployment_cost_usd": 11.894171855790663,
+              "maximum_gross_exposure": 0.9824519433238189,
+              "minimum_cash_usd": 183.70564426658052,
+              "model_order_count": 478,
+              "model_orders_are_broker_orders": false,
+              "proportional_cost_usd": 224.64977290603986,
+              "rebalance_session_count": 60,
+              "total_cost_usd": 702.6497729060399,
+              "total_two_sided_turnover": 37.841635050948625
+            },
+            "frozen_specification_sha256": "2511eb28fcdbb7749786f3410bc75c9c4605c25692ebaf38010a3e343ee5a694",
+            "gates": {
+              "beats_qqq": false,
+              "beats_spy": false,
+              "cagr_above_12pct": false,
+              "drawdown_at_most_15pct": false,
+              "sharpe_above_1": false
+            },
+            "independent_bt_max_equity_difference_usd": 9.094947017729282e-12,
+            "independent_forward_validation": false,
+            "independent_monthly_feedback": {
+              "all_actual_gaps_targets_and_delays_checked": true,
+              "checked_actual_monthly_decisions_and_initial": 61,
+              "issued_requests": 60
+            },
+            "metrics": {
+              "annualized_volatility": 0.13657692621585638,
+              "cagr": 0.11798715746193245,
+              "end": "2026-10-05",
+              "expected_shortfall_5pct": -0.019744023361555188,
+              "max_drawdown": 0.1737936916507118,
+              "max_underwater_sessions": 546,
+              "positive_year_fraction": 0.8333333333333334,
+              "rolling_3y_cagr_above_20pct_fraction": 0.16432865731462926,
+              "rolling_3y_cagr_median": 0.147095404958339,
+              "rolling_3y_cagr_min": 0.019057996343244565,
+              "sessions": 1254,
+              "sharpe": 0.6067647586704529,
+              "start": "2021-10-06",
+              "total_return": 0.7464289445689407,
+              "worst_day": -0.04255878366107091,
+              "year_returns": {
+                "2021": 0.09213651195308659,
+                "2022": -0.15305995333620548,
+                "2023": 0.13311494455128514,
+                "2024": 0.11445176175926108,
+                "2025": 0.2814894725016732,
+                "2026": 0.1667318139463485
+              }
+            },
+            "path_key": "5y-base"
+          },
+          "5y-stress": {
+            "all_point_gates_pass": false,
+            "artifacts": [
+              {
+                "path": "reports/ssd-continuous-research-v1/hmm-representative-substitution-20261104-v1/main-accounts/expert_pool_hmm_substitution_rolling_pair_v1/accounts/5y-stress/account.csv",
+                "sha256": "794e9e0e44d0124507fa07dec12ac3483d4960d57900845524b0dfba2a051a8b"
+              },
+              {
+                "path": "reports/ssd-continuous-research-v1/hmm-representative-substitution-20261104-v1/main-accounts/expert_pool_hmm_substitution_rolling_pair_v1/accounts/5y-stress/weights.csv",
+                "sha256": "2f4c4af6ee22cdad97eb96106bc1fd6d89d21d5daa56a713fcc0c12ae808a754"
+              },
+              {
+                "path": "reports/ssd-continuous-research-v1/hmm-representative-substitution-20261104-v1/main-accounts/expert_pool_hmm_substitution_rolling_pair_v1/accounts/5y-stress/issued.csv",
+                "sha256": "72b2f9b4ccfec33c9e361ea216f79dea1c0f59b5b6c2e00ca7386f2f35b781e4"
+              },
+              {
+                "path": "reports/ssd-continuous-research-v1/hmm-representative-substitution-20261104-v1/main-accounts/expert_pool_hmm_substitution_rolling_pair_v1/accounts/5y-stress/independent-bt.csv",
+                "sha256": "754c9caa88fd65ad85cbe910ddc7ade5dd59ae42e1c2011e1569c4e52b12d8bc"
+              },
+              {
+                "path": "reports/ssd-continuous-research-v1/hmm-representative-substitution-20261104-v1/main-accounts/expert_pool_hmm_substitution_rolling_pair_v1/accounts/5y-stress/decisions.json",
+                "sha256": "ab28d9ae72fdaba1d0099402d6e946c077dc396f2c9228d08aa567ce95a16f7e"
+              }
+            ],
+            "broker_orders": 0,
+            "candidate_id": "expert_pool_hmm_substitution_rolling_pair_v1",
+            "completed_at": "2026-11-04T13:31:45.332327+00:00",
+            "excess_net_cagr_vs_qqq": -0.059852102968366516,
+            "excess_net_cagr_vs_spy": -0.03042764016876265,
+            "execution": {
+              "annualized_two_sided_turnover": 7.5808906888264085,
+              "executed_notional_usd": 434336.52670764213,
+              "fixed_commission_usd": 478.0,
+              "initial_deployment_cost_usd": 26.547965986666135,
+              "maximum_gross_exposure": 0.9827241823719728,
+              "minimum_cash_usd": 178.75565455391373,
+              "model_order_count": 478,
+              "model_orders_are_broker_orders": false,
+              "proportional_cost_usd": 868.6730534152841,
+              "rebalance_session_count": 60,
+              "total_cost_usd": 1346.6730534152844,
+              "total_two_sided_turnover": 37.899264607247154
+            },
+            "frozen_specification_sha256": "2511eb28fcdbb7749786f3410bc75c9c4605c25692ebaf38010a3e343ee5a694",
+            "gates": {
+              "also_beats_base_cost_spy": false,
+              "beats_qqq": false,
+              "beats_spy": false,
+              "cagr_above_12pct": false,
+              "drawdown_at_most_15pct": false,
+              "sharpe_above_1": false
+            },
+            "independent_bt_max_equity_difference_usd": 1.0913936421275139e-11,
+            "independent_forward_validation": false,
+            "independent_monthly_feedback": {
+              "all_actual_gaps_targets_and_delays_checked": true,
+              "checked_actual_monthly_decisions_and_initial": 61,
+              "issued_requests": 60
+            },
+            "metrics": {
+              "annualized_volatility": 0.13731446496179192,
+              "cagr": 0.10485516349552992,
+              "end": "2026-10-05",
+              "expected_shortfall_5pct": -0.020000321075085106,
+              "max_drawdown": 0.18582868211281423,
+              "max_underwater_sessions": 547,
+              "positive_year_fraction": 0.8333333333333334,
+              "rolling_3y_cagr_above_20pct_fraction": 0.12625250501002003,
+              "rolling_3y_cagr_median": 0.1343992927543899,
+              "rolling_3y_cagr_min": 0.011456542477098333,
+              "sessions": 1254,
+              "sharpe": 0.5177561244776713,
+              "start": "2021-10-06",
+              "total_return": 0.6462550018647557,
+              "worst_day": -0.04258197129907304,
+              "year_returns": {
+                "2021": 0.07500916203413288,
+                "2022": -0.15992912818196459,
+                "2023": 0.12630703032537616,
+                "2024": 0.10533813713654738,
+                "2025": 0.243580150944412,
+                "2026": 0.17745219668588108
+              }
+            },
+            "path_key": "5y-stress"
+          }
+        }
+      },
+      "paths": {
+        "10y-base": {
+          "all_point_gates_pass": false,
+          "artifacts": [
+            {
+              "path": "reports/ssd-continuous-research-v1/vxn-hmm-composition-substitution-20261104-v1/main-accounts/expert_pool_hmm_vxn_rolling_pair_v1/accounts/10y-base/account.csv",
+              "sha256": "92b80bc4c236c8a8d3012746b09e2dd65f007e11207ff161ee05aeff8a1d243d"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/vxn-hmm-composition-substitution-20261104-v1/main-accounts/expert_pool_hmm_vxn_rolling_pair_v1/accounts/10y-base/weights.csv",
+              "sha256": "7155b85d2134fadbcbbd7656c1d62226f70318129e3f9e4d6c76738a6bdce120"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/vxn-hmm-composition-substitution-20261104-v1/main-accounts/expert_pool_hmm_vxn_rolling_pair_v1/accounts/10y-base/issued.csv",
+              "sha256": "b1bc5a6e20d1362969d7ce997ea7cef4c1e37d9a4b498f7cfe77250839415822"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/vxn-hmm-composition-substitution-20261104-v1/main-accounts/expert_pool_hmm_vxn_rolling_pair_v1/accounts/10y-base/independent-bt.csv",
+              "sha256": "23c58cae351ba3b773a8f8daf8f457efbb3ede9642f9a6df4f84a3a303555ef5"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/vxn-hmm-composition-substitution-20261104-v1/main-accounts/expert_pool_hmm_vxn_rolling_pair_v1/accounts/10y-base/decisions.json",
+              "sha256": "66ee20e689cc951f4f8f882167dff7b1949d5c907d4adcaff58e80168a6c1b0d"
+            }
+          ],
+          "broker_orders": 0,
+          "candidate_id": "expert_pool_hmm_vxn_rolling_pair_v1",
+          "completed_at": "2026-11-04T20:18:09.750338+00:00",
+          "excess_net_cagr_vs_qqq": -0.0928524256178942,
+          "excess_net_cagr_vs_spy": -0.03584816083631992,
+          "execution": {
+            "annualized_two_sided_turnover": 7.706675310709323,
+            "executed_notional_usd": 1272296.2162344828,
+            "fixed_commission_usd": 940.0,
+            "initial_deployment_cost_usd": 15.892212815720297,
+            "maximum_gross_exposure": 0.9824951160479656,
+            "minimum_cash_usd": 198.9262455833957,
+            "model_order_count": 940,
+            "model_orders_are_broker_orders": false,
+            "proportional_cost_usd": 636.1481081172415,
+            "rebalance_session_count": 112,
+            "total_cost_usd": 1576.1481081172415,
+            "total_two_sided_turnover": 77.05620324356043
+          },
+          "frozen_specification_sha256": "2adef5d51a6c20a5e14b02889f14f8676d0a701b8ed54e8e5685ec42c1ab60ab",
+          "gates": {
+            "beats_qqq": false,
+            "beats_spy": false,
+            "cagr_above_12pct": false,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": false
+          },
+          "independent_bt_max_equity_difference_usd": 8.003553375601768e-11,
+          "independent_forward_validation": false,
+          "independent_monthly_feedback": {
+            "all_actual_gaps_targets_and_delays_checked": true,
+            "checked_actual_monthly_decisions_and_initial": 121,
+            "issued_requests": 112
+          },
+          "metrics": {
+            "annualized_volatility": 0.12322690207777305,
+            "cagr": 0.11877181849482166,
+            "end": "2026-10-05",
+            "expected_shortfall_5pct": -0.01894670136563086,
+            "max_drawdown": 0.16994463164096285,
+            "max_underwater_sessions": 573,
+            "positive_year_fraction": 0.8181818181818182,
+            "rolling_3y_cagr_above_20pct_fraction": 0.07683551508252703,
+            "rolling_3y_cagr_median": 0.08548426903444341,
+            "rolling_3y_cagr_min": 0.014036889352412606,
+            "sessions": 2512,
+            "sharpe": 0.7751163763336026,
+            "start": "2016-10-06",
+            "total_return": 2.071485415499244,
+            "worst_day": -0.04255878366107091,
+            "year_returns": {
+              "2016": 0.014621330842138569,
+              "2017": 0.19806301338806853,
+              "2018": -0.062598489379874,
+              "2019": 0.1206160035000734,
+              "2020": 0.2242512897559863,
+              "2021": 0.17396517519716137,
+              "2022": -0.15177571041430704,
+              "2023": 0.14029131605084033,
+              "2024": 0.11787901843587512,
+              "2025": 0.319337881659562,
+              "2026": 0.17321929167074757
+            }
+          },
+          "path_key": "10y-base"
+        },
+        "10y-stress": {
+          "all_point_gates_pass": false,
+          "artifacts": [
+            {
+              "path": "reports/ssd-continuous-research-v1/vxn-hmm-composition-substitution-20261104-v1/main-accounts/expert_pool_hmm_vxn_rolling_pair_v1/accounts/10y-stress/account.csv",
+              "sha256": "90da719d2d46706d7dfe77025cff8de12291502055278419e41fb757e7f94a6f"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/vxn-hmm-composition-substitution-20261104-v1/main-accounts/expert_pool_hmm_vxn_rolling_pair_v1/accounts/10y-stress/weights.csv",
+              "sha256": "3ee7afbfa151dfa75a323480150fa8ca2302f73bef461c80236bd7df72148228"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/vxn-hmm-composition-substitution-20261104-v1/main-accounts/expert_pool_hmm_vxn_rolling_pair_v1/accounts/10y-stress/issued.csv",
+              "sha256": "b1bc5a6e20d1362969d7ce997ea7cef4c1e37d9a4b498f7cfe77250839415822"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/vxn-hmm-composition-substitution-20261104-v1/main-accounts/expert_pool_hmm_vxn_rolling_pair_v1/accounts/10y-stress/independent-bt.csv",
+              "sha256": "8896da3371d22603e7b42f3e2da5688693a7e86023b45815aae96b388b8e7648"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/vxn-hmm-composition-substitution-20261104-v1/main-accounts/expert_pool_hmm_vxn_rolling_pair_v1/accounts/10y-stress/decisions.json",
+              "sha256": "09b23012489554b7958f62ee29faecbefb8950bc41e3875a36f5f4919587011d"
+            }
+          ],
+          "broker_orders": 0,
+          "candidate_id": "expert_pool_hmm_vxn_rolling_pair_v1",
+          "completed_at": "2026-11-04T20:18:11.829013+00:00",
+          "excess_net_cagr_vs_qqq": -0.10598650218855243,
+          "excess_net_cagr_vs_spy": -0.04880423333527406,
+          "execution": {
+            "annualized_two_sided_turnover": 7.705717585749049,
+            "executed_notional_usd": 1186019.4174774596,
+            "fixed_commission_usd": 940.0,
+            "initial_deployment_cost_usd": 30.54014132300691,
+            "maximum_gross_exposure": 0.9827714306647118,
+            "minimum_cash_usd": 196.7795049355538,
+            "model_order_count": 940,
+            "model_orders_are_broker_orders": false,
+            "proportional_cost_usd": 2372.0388349549194,
+            "rebalance_session_count": 112,
+            "total_cost_usd": 3312.0388349549194,
+            "total_two_sided_turnover": 77.04662730501171
+          },
+          "frozen_specification_sha256": "2adef5d51a6c20a5e14b02889f14f8676d0a701b8ed54e8e5685ec42c1ab60ab",
+          "gates": {
+            "also_beats_base_cost_spy": false,
+            "beats_qqq": false,
+            "beats_spy": false,
+            "cagr_above_12pct": false,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": false
+          },
+          "independent_bt_max_equity_difference_usd": 5.4569682106375694e-11,
+          "independent_forward_validation": false,
+          "independent_monthly_feedback": {
+            "all_actual_gaps_targets_and_delays_checked": true,
+            "checked_actual_monthly_decisions_and_initial": 121,
+            "issued_requests": 112
+          },
+          "metrics": {
+            "annualized_volatility": 0.12385891537585206,
+            "cagr": 0.10525213280389223,
+            "end": "2026-10-05",
+            "expected_shortfall_5pct": -0.01900710129101541,
+            "max_drawdown": 0.19172004733092107,
+            "max_underwater_sessions": 629,
+            "positive_year_fraction": 0.8181818181818182,
+            "rolling_3y_cagr_above_20pct_fraction": 0.05179282868525897,
+            "rolling_3y_cagr_median": 0.07658698189637773,
+            "rolling_3y_cagr_min": 0.0001137674663406419,
+            "sessions": 2512,
+            "sharpe": 0.673286264586543,
+            "start": "2016-10-06",
+            "total_return": 1.71990741497841,
+            "worst_day": -0.04258197129907315,
+            "year_returns": {
+              "2016": 0.009912217321260686,
+              "2017": 0.18553778999159776,
+              "2018": -0.08135571202607661,
+              "2019": 0.08679890097946208,
+              "2020": 0.25140703174352597,
+              "2021": 0.1524516787165313,
+              "2022": -0.16232141477125306,
+              "2023": 0.13262842736842795,
+              "2024": 0.1085849187887109,
+              "2025": 0.2694725960136972,
+              "2026": 0.1816260054099812
+            }
+          },
+          "path_key": "10y-stress"
+        },
+        "5y-base": {
+          "all_point_gates_pass": false,
+          "artifacts": [
+            {
+              "path": "reports/ssd-continuous-research-v1/vxn-hmm-composition-substitution-20261104-v1/main-accounts/expert_pool_hmm_vxn_rolling_pair_v1/accounts/5y-base/account.csv",
+              "sha256": "68f8156a59fc8f9fd3a209ef5c1dcad3383d4b8d40c79675f193c05f8847ee2f"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/vxn-hmm-composition-substitution-20261104-v1/main-accounts/expert_pool_hmm_vxn_rolling_pair_v1/accounts/5y-base/weights.csv",
+              "sha256": "f121df5fab926da9000506367476f3caf17f802f2847b78f7759d050519c9532"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/vxn-hmm-composition-substitution-20261104-v1/main-accounts/expert_pool_hmm_vxn_rolling_pair_v1/accounts/5y-base/issued.csv",
+              "sha256": "b6f0b486148d2596e1b63e9fdb5e35e83a800cc286ec85e8c05ec2fedb6d4876"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/vxn-hmm-composition-substitution-20261104-v1/main-accounts/expert_pool_hmm_vxn_rolling_pair_v1/accounts/5y-base/independent-bt.csv",
+              "sha256": "36323f95562dd3b4acb4e06f31d8668abf0d7105354c0de0ab0a31f1d7e6b32c"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/vxn-hmm-composition-substitution-20261104-v1/main-accounts/expert_pool_hmm_vxn_rolling_pair_v1/accounts/5y-base/decisions.json",
+              "sha256": "2a8b7b3d1195f60f56edf9d9591d5a9bc719f0adb0a6240714c8d62ddb55354e"
+            }
+          ],
+          "broker_orders": 0,
+          "candidate_id": "expert_pool_hmm_vxn_rolling_pair_v1",
+          "completed_at": "2026-11-04T20:18:13.554550+00:00",
+          "excess_net_cagr_vs_qqq": -0.048691960079947805,
+          "excess_net_cagr_vs_spy": -0.018360743089880005,
+          "execution": {
+            "annualized_two_sided_turnover": 7.944731303801813,
+            "executed_notional_usd": 470676.0170195954,
+            "fixed_commission_usd": 481.0,
+            "initial_deployment_cost_usd": 11.894171855790663,
+            "maximum_gross_exposure": 0.9824951160479656,
+            "minimum_cash_usd": 181.4158355818105,
+            "model_order_count": 481,
+            "model_orders_are_broker_orders": false,
+            "proportional_cost_usd": 235.3380085097977,
+            "rebalance_session_count": 60,
+            "total_cost_usd": 716.3380085097976,
+            "total_two_sided_turnover": 39.71821864679565
+          },
+          "frozen_specification_sha256": "2adef5d51a6c20a5e14b02889f14f8676d0a701b8ed54e8e5685ec42c1ab60ab",
+          "gates": {
+            "beats_qqq": false,
+            "beats_spy": false,
+            "cagr_above_12pct": true,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": false
+          },
+          "independent_bt_max_equity_difference_usd": 1.2732925824820995e-11,
+          "independent_forward_validation": false,
+          "independent_monthly_feedback": {
+            "all_actual_gaps_targets_and_delays_checked": true,
+            "checked_actual_monthly_decisions_and_initial": 61,
+            "issued_requests": 60
+          },
+          "metrics": {
+            "annualized_volatility": 0.13493373297588102,
+            "cagr": 0.12204781301482703,
+            "end": "2026-10-05",
+            "expected_shortfall_5pct": -0.01964408445787431,
+            "max_drawdown": 0.17356750069153115,
+            "max_underwater_sessions": 573,
+            "positive_year_fraction": 0.8333333333333334,
+            "rolling_3y_cagr_above_20pct_fraction": 0.23046092184368738,
+            "rolling_3y_cagr_median": 0.14959675755056506,
+            "rolling_3y_cagr_min": 0.02032002696460381,
+            "sessions": 1254,
+            "sharpe": 0.6395702684430775,
+            "start": "2021-10-06",
+            "total_return": 0.7783718982678958,
+            "worst_day": -0.04255878366107091,
+            "year_returns": {
+              "2021": 0.08013222243823503,
+              "2022": -0.15491121255093743,
+              "2023": 0.13607259032352959,
+              "2024": 0.11436229865520975,
+              "2025": 0.3147481263108596,
+              "2026": 0.1704915220142904
+            }
+          },
+          "path_key": "5y-base"
+        },
+        "5y-stress": {
+          "all_point_gates_pass": false,
+          "artifacts": [
+            {
+              "path": "reports/ssd-continuous-research-v1/vxn-hmm-composition-substitution-20261104-v1/main-accounts/expert_pool_hmm_vxn_rolling_pair_v1/accounts/5y-stress/account.csv",
+              "sha256": "49c68dea4835787b69a9c77361080201f319b43245f6fe616dfc278e973b516e"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/vxn-hmm-composition-substitution-20261104-v1/main-accounts/expert_pool_hmm_vxn_rolling_pair_v1/accounts/5y-stress/weights.csv",
+              "sha256": "ed72c8ecda66c1b423313d3fb1d98ddd5b8530c619b075e08f7b798a1abc2b60"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/vxn-hmm-composition-substitution-20261104-v1/main-accounts/expert_pool_hmm_vxn_rolling_pair_v1/accounts/5y-stress/issued.csv",
+              "sha256": "b6f0b486148d2596e1b63e9fdb5e35e83a800cc286ec85e8c05ec2fedb6d4876"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/vxn-hmm-composition-substitution-20261104-v1/main-accounts/expert_pool_hmm_vxn_rolling_pair_v1/accounts/5y-stress/independent-bt.csv",
+              "sha256": "e6ea6217f0a6cfe18cadd1552a73f125b67093a97f249e39280ed131f460715a"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/vxn-hmm-composition-substitution-20261104-v1/main-accounts/expert_pool_hmm_vxn_rolling_pair_v1/accounts/5y-stress/decisions.json",
+              "sha256": "0a78f7d9eaacfe45582014bbe6c21ba57c30a348cfd219f38648e46f76c22979"
+            }
+          ],
+          "broker_orders": 0,
+          "candidate_id": "expert_pool_hmm_vxn_rolling_pair_v1",
+          "completed_at": "2026-11-04T20:18:15.276054+00:00",
+          "excess_net_cagr_vs_qqq": -0.061993306363492984,
+          "excess_net_cagr_vs_spy": -0.032568843563889116,
+          "execution": {
+            "annualized_two_sided_turnover": 7.947811103246578,
+            "executed_notional_usd": 445871.8233070199,
+            "fixed_commission_usd": 481.0,
+            "initial_deployment_cost_usd": 26.547965986666135,
+            "maximum_gross_exposure": 0.9827714306647117,
+            "minimum_cash_usd": 173.69830234432092,
+            "model_order_count": 481,
+            "model_orders_are_broker_orders": false,
+            "proportional_cost_usd": 891.7436466140397,
+            "rebalance_session_count": 60,
+            "total_cost_usd": 1372.7436466140398,
+            "total_two_sided_turnover": 39.73361553601164
+          },
+          "frozen_specification_sha256": "2adef5d51a6c20a5e14b02889f14f8676d0a701b8ed54e8e5685ec42c1ab60ab",
+          "gates": {
+            "also_beats_base_cost_spy": false,
+            "beats_qqq": false,
+            "beats_spy": false,
+            "cagr_above_12pct": false,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": false
+          },
+          "independent_bt_max_equity_difference_usd": 1.4551915228366852e-11,
+          "independent_forward_validation": false,
+          "independent_monthly_feedback": {
+            "all_actual_gaps_targets_and_delays_checked": true,
+            "checked_actual_monthly_decisions_and_initial": 61,
+            "issued_requests": 60
+          },
+          "metrics": {
+            "annualized_volatility": 0.1358038939809819,
+            "cagr": 0.10271396010040346,
+            "end": "2026-10-05",
+            "expected_shortfall_5pct": -0.019918028163515924,
+            "max_drawdown": 0.19679739074390268,
+            "max_underwater_sessions": 577,
+            "positive_year_fraction": 0.8333333333333334,
+            "rolling_3y_cagr_above_20pct_fraction": 0.16032064128256512,
+            "rolling_3y_cagr_median": 0.13631251701083139,
+            "rolling_3y_cagr_min": 0.010958984723301826,
+            "sessions": 1254,
+            "sharpe": 0.5076806757449843,
+            "start": "2021-10-06",
+            "total_return": 0.6303667104108768,
+            "worst_day": -0.04258197129907293,
+            "year_returns": {
+              "2021": 0.05042781183851952,
+              "2022": -0.16536166750767745,
+              "2023": 0.12847162001377987,
+              "2024": 0.10509697052874478,
+              "2025": 0.26501549570354466,
+              "2026": 0.17878305786806448
+            }
+          },
+          "path_key": "5y-stress"
+        }
+      },
+      "registered_event_sha256": "ae908be6fe20e8084b650f04541b86c27e71e448dc9175a682db655c0c18b5b9",
+      "status": "rejected"
+    }
+  },
+  "completed_at": "2026-11-04T20:18:16.101529+00:00",
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "new_source_requests": 0,
+  "one_related_family_slot_substituted_not_ninth": true,
+  "order_authority": false,
+  "original_active_rosters_unchanged": true,
+  "raw_source_prices_targets_or_daily_rows_exported": false,
+  "schema_version": 1,
+  "source_models_or_accounts_replayed": false,
+  "study_id": "ssd_vxn_hmm_composition_substitution_20261104_v1",
+  "study_specific_pool_size": 8
+}
