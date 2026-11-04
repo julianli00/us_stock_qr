@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 74 SSD identities, 65 completed/rejected, nine retained technical failures and zero pending; 260 funded paths | Journal-derived current summary: 243 combined completions, zero qualifiers; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 78 SSD identities, 69 completed/rejected, nine retained technical failures and zero pending; 276 funded paths | Journal-derived current summary: 247 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -349,12 +349,48 @@ Rolling Sharpe falls on all four, with more tickets and fees. Equal base
 Sharpe improves slightly while stress Sharpe declines. The lower drawdowns
 are not evidence of final qualification or an isolated model effect.
 
-Current journal784 records **74 registrations, 65 completions, nine technical
+At that historical HMM-substitution closure, journal784 records **74 registrations, 65 completions, nine technical
 failures, zero pending, 260 funded paths and 243 combined completions with zero
 qualifiers**. All 252 earlier receipts/1516 financial-file hashes remain
 unchanged; the new inventory verifies 260 receipts/1564 files. Original HMM
 and GARCH rejections, the original active seven and eight representative
 rosters are preserved; neither rejected substitute rule is promoted or tuned.
+
+The subsequent [paired activity-information ablation](research/workbench/PAIRED_ACTIVITY_INFORMATION_V1.md)
+compares the same complete parent policy's uniform-time price control and
+reported-activity style ranking inside one fixed expert role. Each occupies
+only that role in a separate eight-expert pool; the other seven policies,
+including GARCH, and the original equal/rolling rules are unchanged. This is
+not another full-window winner substitution, an independent economic factor,
+or an automatic ninth representative. Both original source rejections remain.
+
+All four registrations785-788 precede any new meta score/target. Proofs789-792
+retain 121 decisions per pool, 484 input/resolved records, 473024 exact
+roundtrippable NET/RF values, all 28 pairs and five prefixes. Actual remote
+preregistration `20f83e7` precedes fence793 at
+**2026-11-04T16:14:46.911308Z** and the first account at **16:14:48.087251Z**.
+All sixteen [funded outcomes](research/workbench/evidence/paired_activity_information_20261104_results_v1.json)
+finish by **16:17:40.625893Z**. **All four rules are rejected.**
+
+Every new CAGR gate passes, but every drawdown gate fails. Both equal rules
+pass all Sharpe/SPY gates and both five-year QQQ gates; their five-year DD
+is still **15.190864-15.249475%**, not a pass by rounding. Their ten-year QQQ
+gates fail. Both rolling variants fail all Sharpe, DD and QQQ gates.
+
+Relative to its matched price control, activity conditioning slightly lowers
+equal-rule DD but lowers CAGR on all four paths. In rolling allocation it lowers
+CAGR/Sharpe and raises DD by **1.775181-2.013853 percentage points** on every
+path. Annualized turnover rises despite lower absolute USD fees and one fewer
+ticket; differing wealth scales prevent an isolated cost-efficiency claim.
+All four fixed outcomes, not favorable fragments, are retained.
+
+Current journal829 records **78 registrations, 69 completions, nine technical
+failures, zero pending, 276 funded paths and 247 combined completions with zero
+qualifiers**. All 260 earlier receipts/1564 financial-file hashes, 1364 source
+references, 308 implementation dependencies and the original ledger remain
+unchanged; the new inventory verifies 276 receipts/1660 files. No source model,
+rank, target, shadow, old account/BT or benchmark is replayed. Original rosters
+and source restrictions remain; no rejected construction is retuned or promoted.
 
 ### Archived October authorization
 

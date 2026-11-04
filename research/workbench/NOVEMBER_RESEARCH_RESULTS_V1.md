@@ -645,8 +645,130 @@ targets, native NET/RF, model/fit/filter evidence and failures remain unchanged.
 No source model, target, shadow, old control, benchmark or account is replayed;
 newer synchronized data and missed prospective days are not filled.
 
-Current authoritative totals are **784 events, 74 SSD registrations,
+At this historical HMM-substitution closure, totals were **784 events, 74 SSD registrations,
 65 completed reviews, nine technical failures, zero pending and 260 funded
 paths**. With 178 legacy completions intact, there are **243 combined
 completions and zero qualifiers**. The investment objective remains unmet;
 future pool promotion or financial use requires a separate decision and freeze.
+
+## Paired activity information ablation in one style role
+
+The [fixed method](PAIRED_ACTIVITY_INFORMATION_V1.md) compares two complete,
+same-parent archived policies: uniform-time price momentum and reported-activity
+weighted style momentum. They separately replace only the original defensive-style
+role in two study-specific eight-expert pools. The other seven identities and
+ordering, including GARCH, remain unchanged. The siblings never coexist as two
+independent risk sources. Original active-seven/eight rosters are unchanged.
+
+The original activity policy's finite eligibility conclusion is reused, not
+reexecuted or promoted. The price control has its own frozen cached prerequisite:
+original registration241/proof243, four completed books, exact common native RF,
+monthly opinions, nonmonth-end capital initialization, 125/126 maturity and
+prefix evidence. Source introduction in October, this November technical review,
+new meta registration and historical counterfactual availability stay distinct.
+Neither source's original financial rejection changes.
+
+Both sources retain the same stock/gold/dollar parent, combined style budget,
+noncore targets, original 35/30/20/15 rank shares, 126-session source window,
+21-session skip and 105 past log returns. Only uniform-time versus reported
+raw-close-times-share-volume return weights differ. That proxy is not fund
+flows, constituent turnover, stock-level PIT or an independent economic factor.
+Source admission, vintage, age, original CBOE information clock and refusals
+are not upgraded. No newer synchronized block or missed forward day is spliced.
+
+Each source is paired with equal eighths and the exact original rolling law:
+126 matured NET/RF observations, 84 chronological training/42 validation,
+all 28 pairs, original ERC/net score/switch proxy and twelve-decimal ties.
+Two learning states remain separate. Initial immature decisions are explicitly
+unscored, not successful zero-filled scores. Shadow NET and capital stay separate;
+each new main path uses one unified target and actual holding feedback.
+
+Twenty-two canonical checks precede full freeze `15b468d8`, binding 1364 source
+references, 308 implementation dependencies and 57 accepted distributions.
+All four real registrations785-788 at
+**2026-11-04T16:02:52.585076Z through 16:02:53.659931Z** precede the first
+new meta derivation at **16:02:54.429106Z**. Proofs789-792 retain 121 decisions
+per pool, 484 input/resolved records, 473024 roundtrippable NET/RF values,
+all 28 pairs, five prefixes and six factor symbols in both horizons.
+Independent target/weight/score differences are at most
+1.1102230246251565e-16 / 2.220446049250313e-16 / 5.329070518200751e-15.
+
+All four complete-cohort packets and exact scientific pins were actually
+published at `20f83e72cb419d96ebd8d4dc33ba64168b0a1b2c` before fence793 at
+**2026-11-04T16:14:46.911308Z**. First account794 starts **16:14:48.087251Z**;
+all sixteen paths finish by **16:17:40.625893Z**. Reviews802/811/820/829 all
+reject. The [complete public projection](evidence/paired_activity_information_20261104_results_v1.json)
+matches every saved private result.
+
+| Fixed rule/path | Net CAGR | RF-excess Sharpe | Maximum DD | Annual turnover | Model tickets | Model fees |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Price equal 10y base | 16.367190% | 1.071949 | 18.213669% | 2.598999x | 927 | USD1175.50 |
+| Price equal 10y stress | 15.880677% | 1.037791 | 17.630716% | 2.589595x | 920 | USD1889.45 |
+| Price equal 5y base | 19.339864% | 1.102566 | 15.249475% | 2.634874x | 459 | USD547.00 |
+| Price equal 5y stress | 18.261415% | 1.034762 | 15.201065% | 2.615592x | 452 | USD791.46 |
+| Activity equal 10y base | 16.358772% | 1.071856 | 18.212455% | 2.598126x | 927 | USD1175.36 |
+| Activity equal 10y stress | 15.873833% | 1.037815 | 17.623844% | 2.588920x | 920 | USD1889.08 |
+| Activity equal 5y base | 19.322957% | 1.102060 | 15.243608% | 2.633214x | 459 | USD546.93 |
+| Activity equal 5y stress | 18.245602% | 1.034325 | 15.190864% | 2.614582x | 452 | USD791.29 |
+| Price rolling 10y base | 15.582981% | 0.975122 | 19.428851% | 6.662771x | 875 | USD1542.88 |
+| Price rolling 10y stress | 14.368622% | 0.896004 | 19.521113% | 6.662958x | 875 | USD3383.25 |
+| Price rolling 5y base | 16.800904% | 0.872906 | 19.705924% | 7.143207x | 459 | USD698.82 |
+| Price rolling 5y stress | 15.312850% | 0.786866 | 19.790707% | 7.146758x | 459 | USD1384.93 |
+| Activity rolling 10y base | 14.982388% | 0.934980 | 21.204031% | 6.740385x | 874 | USD1530.67 |
+| Activity rolling 10y stress | 13.912252% | 0.864592 | 21.534967% | 6.740020x | 874 | USD3354.95 |
+| Activity rolling 5y base | 15.568419% | 0.799478 | 21.481410% | 7.298050x | 458 | USD691.97 |
+| Activity rolling 5y stress | 14.370400% | 0.729225 | 21.804098% | 7.300758x | 458 | USD1368.83 |
+
+**All four rejected. Every CAGR gate passes; every DD gate fails.**
+Both equal rules pass every Sharpe/SPY gate and both extra stress/base-SPY
+gates. Both ten-year QQQ gates fail; both five-year QQQ gates pass. Five-year
+DD remains 15.190864-15.249475%, not a pass by rounding to the 15% boundary.
+Both rolling rules fail every Sharpe/DD/QQQ gate. Price rolling fails matched
+SPY only on ten-year stress; activity rolling fails both ten-year SPY gates.
+Both pass five-year SPY. Extra stress/base-SPY fails ten-year stress and passes
+five-year stress in both rolling rules. No passing fragment is spliced.
+
+The preregistered primary comparison is activity minus its matched price
+control, within each meta law and all original paths. Equal activity lowers
+CAGR by 0.006844-0.016906 percentage points and DD by only
+0.001214-0.010201 points. Sharpe is lower on three paths and slightly higher
+on ten-year stress. Tickets are identical; turnover and USD fees are slightly
+lower. This does not rescue any complete rule.
+
+Rolling activity lowers CAGR by 0.456370-1.232485 percentage points and Sharpe
+by 0.031412-0.073428 on every path. DD is higher by 1.775181-2.013853 points
+and annualized turnover rises by 0.077061-0.154843x NAV. All four have one fewer
+model ticket and lower absolute USD fees. Different wealth scales and actual
+holding feedback mean these smaller fees are not isolated cost-efficiency
+evidence. The parent policy also differs from the original defensive expert,
+so an old-eight contrast is not a matched activity-field effect.
+
+As a secondary post-outcome description, each pool has seven unscored and
+114 mature decisions; its style source is selected in 14 mature pairs.
+The stored combined targets differ on 104/121 equal and 19/121 rolling
+decisions. These are dependent trace counts, not a new acceptance criterion,
+independent samples, flow identification or alpha proof. The 109/128 differing
+source opinions and 243 earlier completed configurations were already exposed
+before this study. Adaptive selection and all multiplicity remain disclosed;
+neither rolling assessment nor this ablation is independent OOS/forward proof.
+
+Turnover is annualized two-sided traded notional relative to main NAV, including
+deployment; no numerical turnover cap is invented. Across all sixteen paths,
+minimum cash is at least USD178.399912, maximum gross at most 0.983770526 and
+independent-BT equity differences at most USD6.548361852765083e-11.
+Model tickets are not brokerage orders. Original full 2512/1254-return clocks,
+fresh USD10000, initial DD peak, RF, base/stress costs, USD1 tickets,
+one/two-session delay, cash funding and every original gate remain unchanged.
+
+All 260 earlier receipts/1564 financial-file hashes and all 1364 source/308
+implementation references remain unchanged. The new private inventory verifies
+276 receipts/1660 files. Original source code, targets, NET/RF, ledger, source
+admissions, original rosters, failures and one-day prospective identities remain.
+No source score/rank/target/model/shadow, old account/BT or benchmark is rerun.
+
+Current authoritative totals are **829 events, 78 SSD registrations,
+69 completed reviews, nine technical failures, zero pending and 276 funded
+paths**. With 178 legacy completions intact, there are **247 combined
+completions and zero qualifiers**. All four rules remain rejected and
+unpromoted. The investment objective is unmet; no field window, rank share,
+portfolio weight or execution band is tuned to rescue these identities.
