@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_credit_relative_input_admission_20261104_v1",
+  "scope": "archival_input_consumer_only_not_a_complete_strategy",
+  "symbols": ["HYG", "LQD"],
+  "lookback_sessions": 63,
+  "observation_lag_sessions": 1,
+  "required_endpoint_prices": 64,
+  "formula": "(HYG_end / HYG_start) / (LQD_end / LQD_start) - 1",
+  "source_manifest": {
+    "path": "data/credit-relative-inputs-20261104-v2/manifest.json",
+    "sha256": "a9e5ae1c1b5f7d8ad2c2d490df03819e0b424800a01fa79c8871efe0f48e274d"
+  },
+  "source_history_start": "2015-08-10",
+  "source_history_end": "2026-10-05",
+  "source_sessions": 2805,
+  "warmup": "explicit unavailable value until 64 preceding session prices exist",
+  "same_session_price_used": false,
+  "historical_arrival_time_or_revision_chain_verified": false,
+  "current_issuer_page_is_historical_methodology_proof": false,
+  "pure_credit_spread_or_independent_factor_claimed": false,
+  "new_traded_assets": 0,
+  "new_registered_factors": 0,
+  "new_experts": 0,
+  "new_financial_trials": 0,
+  "portfolio_targets_accounts_or_performance_computed": false,
+  "parameter_search": false,
+  "order_authority": false
+}

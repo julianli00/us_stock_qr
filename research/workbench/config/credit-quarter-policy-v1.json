@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_credit_quarter_complete_policy_20261104_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "candidate_id": "credit_quarter_style_defense_v1",
+  "candidates": [
+    {"id": "credit_quarter_style_defense_v1", "construction": "monthly_lagged_relative_credit_style_or_gold_bill"}
+  ],
+  "mechanism_group": "relative_credit_market_condition",
+  "universe": ["SPY", "IEF", "GLD", "BIL", "MTUM", "VLUE", "QUAL", "USMV", "TLT", "QQQ", "XLK", "SOXX", "IJR", "PKW"],
+  "core_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "defensive_symbols": ["GLD", "BIL"],
+  "credit_lookback_intervals": 63,
+  "credit_observation_lag_sessions": 1,
+  "risk_on_condition": "stored_admitted_relative_total_return_strictly_greater_than_zero",
+  "risk_on_weighting": "equal_capital_over_four_existing_style_ETFs",
+  "risk_off_weighting": "equal_capital_over_GLD_and_actual_BIL",
+  "invested_target_budget": 0.98,
+  "idle_cash_reserve": 0.02,
+  "decision_lattice": "genuine_completed_month_ends_after_admitted_input_warmup",
+  "decision_information_clock": "after_16_15_ET_index_close_before_later_open_execution",
+  "actual_weight_trade_band": 0.025,
+  "source_admission": {
+    "path": "reports/ssd-continuous-research-v1/credit-relative-input-admission-20261104-v1/input-admission-result-v1.json",
+    "sha256": "5733aff1b9dc5dd8653acbc24fc101efb9879d625a16bd471b1e29adcb99b656"
+  },
+  "source_admission_completion": {
+    "path": "reports/ssd-continuous-research-v1/credit-relative-input-admission-20261104-v1/completion-v1.json",
+    "sha256": "bbd5444febde9caa01d6c8f3077ede6d810e5cc6d321d39b5c15fafa3c0bbc9d"
+  },
+  "source_observations": {
+    "path": "reports/ssd-continuous-research-v1/credit-relative-input-admission-20261104-v1/actual-input-observations-v1.csv",
+    "sha256": "6a9b5c8785099fcc30f34b351692fee662244089c2609cc56da632752eef21be"
+  },
+  "candidate_count_in_this_study": 1,
+  "study_size_is_a_total_research_quota": false,
+  "new_economic_factor_definitions": 0,
+  "new_traded_assets": 0,
+  "parameter_search": false,
+  "methodology": {
+    "real_new_policy_targets_accounts_or_financial_outcomes_computed": false,
+    "source_credit_observations_recomputed": false,
+    "new_expert_technically_admitted": false,
+    "existing_pool_changed": false,
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

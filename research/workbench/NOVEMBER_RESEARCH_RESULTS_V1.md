@@ -4,6 +4,25 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Credit-conditioned complete policy: registered, not yet funded
+
+The [fixed complete policy](CREDIT_QUARTER_POLICY_V1.md) was actually registered
+at **2026-11-04T21:51:50.546254Z** (event876), before new targets.
+[Its complete actual packet](evidence/credit_quarter_policy_20261104_registration_v1.json)
+binds131genuine native month ends,262input/resolved records, five exact prefix
+checks and zero independent target difference. Both original fresh-capital
+anchors have known September30opinions and actual four-style-factor exposure.
+No new quote request, old source signal or account pipeline was rerun.
+
+The narrow [lagged archival input](CREDIT_RELATIVE_INPUT_V1.md) is not a pure
+credit spread, a full historical intraday PIT proof or a complete expert.
+Both methods, inputs, tests and implementation are fixed before capital
+outcomes; the actual published packet and all scientific bytes must be checked
+remotely before any funded path. At journal877there are83SSD registrations,
+73completed, nine retained financial technical failures, one pending,
+292funded paths,251combined completions and zero qualifiers. This is a
+preregistration snapshot, not an outcome or goal-completion claim.
+
 ## Complete-expert recommendation consensus
 
 The one fixed L1-medoid rule was registered at
