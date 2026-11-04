@@ -555,9 +555,98 @@ implementation references, original ledger, source opinion values, dates,
 RF, manifests and old failures remain unchanged. No newer synchronized
 input or missed prospective day is spliced or filled.
 
-Current authoritative totals are **761 events, 72 SSD registrations,
+At instrument-concentration closure, authoritative totals were **761 events, 72 SSD registrations,
 63 completed reviews, nine technical failures, zero pending and 252 funded
 paths**. With 178 legacy completions preserved, there are **241 combined
 completions and zero qualifiers**. The original active seven and eight
 technically available sources remain unchanged. This failed concentration
 construction is not followed by an HHI, cost-tie, pair-weight or gate rescue.
+
+## Controlled HMM substitution within one volatility-family slot
+
+The completed finite source review found the archived HMM complete policy
+technically usable through the existing Monthly Adapter as a legal near-family
+variant, not a selected ninth representative. This separately frozen study
+replaces only the GARCH family slot in a study-specific eight-source pool.
+The original seven baseline and eight representative roster stay unchanged.
+
+HMM uses estimated SPY variance-state persistence and an original 14.7% stock
+floor, while GARCH uses the growth-basket variance forecast without that floor.
+The comparison changes the complete proxy/model/budget package, not only one
+statistical kernel. All source histories, HMM's lower saved DD and 241 prior
+completed configurations are exposed. Selection is explicitly not independent
+forward validation, a whole-window return winner or an additional economic
+factor. Both old standalone financial rejections remain unchanged.
+
+The exact original equal and rolling combination functions are reused:
+126 common mature NET observations, 84 training/42 validation sessions, k2,
+training ERC, the lower train/validation net risk score, original incremental
+switch proxy and 12-decimal lexical ties. Seven initial decisions remain
+unscored equal eighths; all 28 mature pair records are retained. The original
+monthly 2.5pp actual-holding band, RF, initial DD peak, capital, costs, delays,
+full windows and every joint gate remain unchanged.
+
+Twenty canonical checks precede full freeze `838a7e07`, which binds 1440 source
+references and 307 implementation dependencies. Actual registrations762/763
+at **2026-11-04T13:22:19.177448Z / 13:22:19.566986Z** both precede new meta
+scores and targets. Proofs764/765 retain 121 decisions, 242 actual input/resolved
+records, 236512 roundtrippable NET/RF values, all 28 pairs, five prefixes and
+six genuine factor symbols in both horizons. Independent target/weight/score
+differences are at most 1.1102230246251565e-16 / 3.3306690738754696e-16 /
+5.329070518200751e-15.
+
+Actual remote preregistration `144ddefff3168e6d1c0025cbb6dd54075c4208fe`
+publishes both complete-cohort packets before fence766 at
+**2026-11-04T13:31:02.355348Z**. The first new account starts
+**13:31:03.538886Z**; all eight finish by **13:31:46.086959Z**.
+
+| Fixed rule/path | Net CAGR | RF-excess Sharpe | Maximum DD | Model tickets | Total model fees |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Equal HMM 10y base | 14.433494% | 1.017035 | 16.979426% | 1037 | USD1278.05 |
+| Equal HMM 10y stress | 13.776862% | 0.966865 | 16.552108% | 1037 | USD1975.31 |
+| Equal HMM 5y base | 16.974808% | 1.037881 | 13.745255% | 507 | USD595.40 |
+| Equal HMM 5y stress | 15.702189% | 0.947483 | 13.971717% | 507 | USD848.29 |
+| Rolling HMM 10y base | 11.814937% | 0.765957 | 17.030253% | 950 | USD1578.26 |
+| Rolling HMM 10y stress | 10.755363% | 0.686128 | 18.051229% | 950 | USD3320.57 |
+| Rolling HMM 5y base | 11.798716% | 0.606765 | 17.379369% | 478 | USD702.65 |
+| Rolling HMM 5y stress | 10.485516% | 0.517756 | 18.582868% | 478 | USD1346.67 |
+
+**Both rejected.** Equal HMM passes all CAGR gates and both five-year DD
+gates, but every QQQ gate fails. Both stress Sharpe and both ten-year DD
+gates fail. Only five-year paths beat matched SPY; the extra stress/base-SPY
+gate fails ten-year stress and passes five-year stress. Rolling HMM fails
+every CAGR, Sharpe, DD, SPY and QQQ gate and both extra stress/base-SPY gates.
+No passing path or metric is spliced across rules.
+
+Actual annualized two-sided turnover is
+2.758121/2.757426/2.818455/2.811465 times NAV for equal HMM and
+7.539578/7.541352/7.569363/7.580891 for rolling HMM, including deployment.
+Across all eight paths, minimum cash is at least USD178.755654, maximum gross
+at most 0.982724183 and independent-BT equity differences at most
+USD7.275957614183426e-11. Model tickets are not brokerage orders.
+
+Matched cached controls are original equal-eight for equal HMM and original
+rolling-eight for rolling HMM; neither is replayed. Equal HMM reduces DD by
+0.731828-1.940356 percentage points but lowers CAGR by 0.497752-0.779659 points.
+Base Sharpe rises slightly; stress Sharpe falls. Annualized turnover rises
+on all four, tickets and fees are mixed.
+
+Rolling HMM reduces DD by 3.886367-5.915325 points but lowers CAGR and Sharpe
+on every path. Annualized turnover, tickets and fees rise on all four; tickets
+increase by 9-51 and fees by USD16.21-149.76. Lower historical DD does not
+isolate a causal HMM effect, make the source independent or satisfy joint
+qualification. Neither failed construction is followed by a prior, stock
+floor, window, score, membership or execution-band rescue.
+
+All 252 earlier receipts/1516 financial-file hashes remain unchanged. The new
+private inventory verifies 260 receipts/1564 files; all 1440 source/307
+implementation references, the finite HMM review, original ledger, source
+targets, native NET/RF, model/fit/filter evidence and failures remain unchanged.
+No source model, target, shadow, old control, benchmark or account is replayed;
+newer synchronized data and missed prospective days are not filled.
+
+Current authoritative totals are **784 events, 74 SSD registrations,
+65 completed reviews, nine technical failures, zero pending and 260 funded
+paths**. With 178 legacy completions intact, there are **243 combined
+completions and zero qualifiers**. The investment objective remains unmet;
+future pool promotion or financial use requires a separate decision and freeze.
