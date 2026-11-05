@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_fixed_four_sleeve_complete_policy_20261105_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "candidate_id": "fixed_four_sleeve_rebalance_v1",
+  "candidates": [
+    {"id": "fixed_four_sleeve_rebalance_v1", "construction": "monthly_constant_four_bucket_capital_rebalance"}
+  ],
+  "mechanism_group": "fixed_cross_asset_capital_rebalancing",
+  "prior_completed_configurations": 261,
+  "prior_journal_sequence": 992,
+  "prior_journal_head_sha256": "1586cb6695a5f09652895362b77e3b4afc2db36e8cfecf19a8f49a625bec1332",
+  "source_market_completion": {
+    "path": "reports/ssd-continuous-research-v1/reversal-expert-inclusion-20261105-v1/completion-v1.json",
+    "sha256": "b67a17a0a2d1aeef0034720c9f8a313d03e12bb02ab75c35d53674bff6ef9d56"
+  },
+  "source_market_freeze": {
+    "path": "reports/ssd-continuous-research-v1/reversal-expert-inclusion-20261105-v1/financial-implementation-freeze-v1.json",
+    "sha256": "00cbdd54ff37e4ee9546c81dd090a5d9d4bec2b06b6acc7e93f37a1d91483367"
+  },
+  "universe": ["SPY", "IEF", "GLD", "BIL", "MTUM", "VLUE", "QUAL", "USMV", "TLT", "QQQ", "XLK", "SOXX", "IJR", "PKW"],
+  "core_symbols": ["MTUM", "VLUE", "QUAL", "USMV", "IJR", "PKW"],
+  "capital_buckets": ["six_style_core", "TLT", "GLD", "BIL"],
+  "bucket_weights_within_ETF_budget": [0.25, 0.25, 0.25, 0.25],
+  "style_core_weighting": "equal_capital_over_six_existing_style_ETFs",
+  "cash_asset": "BIL",
+  "decision_lattice": "every_genuine_completed_month_end_in_whole_admitted_history",
+  "decision_information_clock": "after_16_15_ET_index_close_before_later_open_execution",
+  "execution": "unchanged_actual_weight_band_and_original_one_or_two_session_later_open",
+  "price_return_covariance_or_forecast_used_to_choose_weights": false,
+  "source_price_warmup_sessions": 0,
+  "score_maturity_is_separate_from_policy_availability": true,
+  "invested_target_budget": 0.98,
+  "idle_cash_reserve": 0.02,
+  "actual_weight_trade_band": 0.025,
+  "minimum_financial_source_participation_family_count": 3,
+  "new_registered_factor_families": 0,
+  "new_traded_assets": 0,
+  "candidate_count_in_this_study": 1,
+  "study_size_is_a_total_research_quota": false,
+  "parameter_search": false,
+  "rationale": {
+    "question": "Can one complete forecast-free fixed cross-asset rebalancer supply a different defensive behavior beside growth, conditional timing and return-ranking experts?",
+    "premise": "Balanced capital participation in equity styles, long Treasuries, gold and actual bills may provide different loss and rebalancing behavior without forecasting which asset will lead. This is a falsifiable premise, not verified protection or return.",
+    "research_choice": "Fix one equal-quarter allocation of the 98-percent ETF budget and the existing monthly actual-holding rule. The style quarter is equally split among the six existing families. No equity bound, duration share, bill share, mean, covariance, season, band, timing or weight grid is fitted.",
+    "distinct_from_prior_art": "This is not a replay of leveraged macro selection, trailing min-variance or the old two-sleeve factor-gold/adaptive70core30gold controls, and not changing their failed equity bound from30to25percent. Their rules remain untouched. This new policy has four unconditional capital buckets and no risk/return forecast.",
+    "risks": "Stocks and long Treasuries may lose together; gold may fail, BIL has actual fees and price risk, and fixed low equity participation may miss the CAGR and QQQ hurdle. Four buckets are not four experts or independent economic risks. Monthly opinions do not guarantee monthly trades or low actual turnover.",
+    "scope": "Only original admitted fourteen-asset data and existing unleveraged ETFs are used. The policy is one complete capital allocation, not an asset sleeve renamed as an expert pool. No new factor family, source waiver or RF view is created.",
+    "availability": "Predetermined target weights need no price-return warmup, but complete valid market history is still required. Missing data does not become a safe BIL fallback. Raw price availability is distinct from mature NET assessment history.",
+    "future_finance": "Preparation generates no real historical source target, score, shadow, main account, financial registration or performance. A separate exact financial implementation and actual registration/publication must precede all original four paths and independent accounting; actual family participation and technical admission are future proofs.",
+    "bias": "All261prior completions are exposed. A future old-dated opinion assumes counterfactual availability of a policy introduced now, not a backdated actual source or independent prospective evidence.",
+    "counts": "The reused market contract's prior259 is historical. This preparation's authoritative prior is261 atJ992; no old count or frozen receipt is rewritten."
+  },
+  "methodology": {
+    "real_source_targets_accounts_or_financial_outcomes_computed": false,
+    "new_expert_technically_admitted": false,
+    "existing_pool_changed": false,
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}
