@@ -4,6 +4,50 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Retained original pair: preserved preregistration J1213
+
+The [new symmetric allocation](RETAINED_PAIR_EQUAL_ALLOCATION_V1.md) uses
+the unchanged canonical original-eight causal pair-selection advisor.
+It does not replace a source, choose a winning HMM sibling or rerun a scorer.
+Its single new policy gives each selected complete expert half of the expert
+capital; all original unscored dates copy the source's exact equal-eight
+intention. Earlier equal-pair minimax and concentration studies select
+different supports and are not this retained-advisor allocation law.
+
+The advisor keeps its original126/84/42mature observations, trainingERC,
+NET validation, nominal switch proxy/21, lexical ordering and previous
+statistical weights. New half weights and actual main holdings do not feed
+back into it. Its nominal proxy is therefore not a new-allocation cost
+forecast or a promise of reduced turnover. New actual costs, delays and
+the unchanged holdings-aware band are measured only by the new main books.
+The advisor is an input artifact, not a ninth strategy expert.
+
+The first32synthetic/schema checks retain one unfrozen fixture failure:
+the fake frozen registration lacks study_id. Only that synthetic metadata
+field changes; the same32tests and Ruff pass. All failed prototype bytes,
+XML and logs remain. Freeze`a7fd106f`then pins159dependencies,1295source
+references,eight expert clocks and six explicit implementation/test inputs.
+
+Actual registration1212 occurs at **2026-11-05T23:50:14.861855Z**, before
+the first real new target. Proof1213 retains all121original dates,
+114scored/seven unscored states,242input/result records and236512exact
+NET/RFvalues. Independent rational maximum target difference is
+2.7755575615628914e-17. All five original prefix positions agree exactly,
+and both funded horizons retain all six actual factor symbols.
+Actual registration/preparation exits0 in21.79687904199818seconds,
+Darwin peakRSS415199232bytes. No source selector, shadow, account or
+benchmark is replayed.
+
+The [complete single schema2packet](evidence/retained_pair_equal_allocation_20261105_registration_v1.json)
+and its scientific dependencies must be verified at the actual remote commit
+before the first new funded book. Only four original10y/5y/base-stress books
+are planned, not completed. Original freshUSD10000,RF,initialpeak,costs,
+delays,cash funding<=1x,holding feedback,independentBT and all financial
+gates remain. Cached original-eight equal/rolling controls are consumed,
+not replayed. Exposed280history is not independent OOS or forward proof.
+**At J1213:112registered,102completed,nine technical,one pending,
+408funded paths,280combined completions,zero qualifiers; goal unmet.**
+
 ## Saved HMM intervention: direct opinion versus allocation revision
 
 The [new zero-trial result](evidence/hmm_session_intervention_diagnosis_20261105_v2.json)

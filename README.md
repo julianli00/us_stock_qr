@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 111 SSD identities, 102 completed/rejected, nine retained technical failures and zero pending; 408 funded paths | Journal1211 current summary: 280 combined completions, zero qualifiers; investment goal remains unmet |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 112 SSD identities, 102 completed/rejected, nine retained technical failures and one pending; 408 funded paths | Journal1213 preregistration summary: 280 combined completions, zero qualifiers; investment goal remains unmet |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -44,6 +44,25 @@ November authorization.
 The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
+
+### Retained original pair: symmetric allocation preregistered
+
+The [new allocation law](research/workbench/RETAINED_PAIR_EQUAL_ALLOCATION_V1.md)
+keeps the canonical original eight complete experts and their preserved causal
+pair-selection advisor. Scored pair members receive half each, instead of the
+advisor's training-ERC fractions; unscored dates keep its exact equal-eight
+intention. The advisor retains its own original statistical state and nominal
+cost proxy. That proxy is not the new allocation's actual cost forecast, and
+the advisor is not an extra strategy expert.
+
+Freeze`a7fd106f`pins159dependencies,1295source references,eight expert clocks
+and six explicit tested inputs. Actual registration1212 precedes all121new
+intentions,242input/result records,236512NET/RFchecks, independent rational
+verification and five exact prefixes. The
+[complete single schema2packet](research/workbench/evidence/retained_pair_equal_allocation_20261105_registration_v1.json)
+and every scientific dependency must be remotely verified before any funding.
+**At J1213:one pending policy,no new funded paths,280completions,
+zero qualifiers; the investment goal remains unmet.**
 
 ### Saved HMM intervention: opinion and allocation revision are different channels
 
