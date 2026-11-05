@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_lagged_spy_price_impact_complete_policy_20261105_v1",
+  "candidate_id": "lagged_spy_price_impact_participation_v1",
+  "candidates": [
+    {"id": "lagged_spy_price_impact_participation_v1", "construction": "monthly_lagged_price_impact_core_or_actual_BIL"}
+  ],
+  "mechanism_group": "lagged_market_price_impact_participation",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "prior_completed_configurations": 264,
+  "prior_journal_sequence": 1027,
+  "prior_journal_head_sha256": "94a0ae53b6a9138e6b1776e9955491030e369a3bc1f2d840532d6d823804ede5",
+  "source_market_freeze": {
+    "path": "reports/ssd-continuous-research-v1/fixed-four-sleeve-expert-inclusion-20261105-v1/financial-implementation-freeze-v1.json",
+    "sha256": "783e373593ab4109672af0324ec22827dc7d91604b0b96558f97abe6c4f27ed7"
+  },
+  "source_market_completion": {
+    "path": "reports/ssd-continuous-research-v1/fixed-four-sleeve-expert-inclusion-20261105-v1/completion-v1.json",
+    "sha256": "c94d61f4d9d57d6caeaa55a2221587dc5f4b439ba98bb368e91177877263aa40"
+  },
+  "universe": ["SPY", "IEF", "GLD", "BIL", "MTUM", "VLUE", "QUAL", "USMV", "TLT", "QQQ", "XLK", "SOXX", "IJR", "PKW"],
+  "core_symbols": ["MTUM", "VLUE", "QUAL", "USMV", "IJR", "PKW"],
+  "input_symbol": "SPY",
+  "cash_asset": "BIL",
+  "input_lag_sessions": 1,
+  "current_impact_sessions": 21,
+  "nonoverlapping_reference_impact_sessions": 252,
+  "required_adjusted_price_levels": 274,
+  "source_price_warmup_position": 274,
+  "relative_ratio_decimal_places": 12,
+  "risk_off_ratio_strictly_greater_than": 1.0,
+  "degenerate_reference_behavior": "explicit_fatal_error_not_BIL_or_neutral_fallback",
+  "decision_lattice": "genuine_completed_month_ends_after_full_lagged_input_warmup",
+  "decision_information_clock": "after_16_15_ET_index_close_before_later_open_execution",
+  "invested_target_budget": 0.98,
+  "idle_cash_reserve": 0.02,
+  "actual_weight_trade_band": 0.025,
+  "new_registered_factor_families": 0,
+  "new_traded_assets": 0,
+  "candidate_count_in_this_study": 1,
+  "study_size_is_a_total_research_quota": false,
+  "parameter_search": false,
+  "rationale": {
+    "question": "Can lagged broad-market return-per-reported-activity stress provide a complementary complete participation policy in an expert pool?",
+    "law": "At each genuine NYSE month endD, use273SPYdaily observations endingD-1, requiring274adjusted close levels. For each ending day divide absolute adjusted close simple return by reported raw_close times reported share volume. Compare the latest21-observation mean with the immediately preceding nonoverlapping252-observation mean. Round their relative ratio to12decimals; strictly greater than1 requests98%actualBIL, otherwise equal six-style core totaling98%. Retain2%idle cash and original execution.",
+    "choice": "One declared month-versus-prior-year comparison and one-session information lag, not a threshold/window/inversion/asset sweep. Equality and rounded equality retain core. An undefined or degenerate reference is fatal, not risk-off evidence.",
+    "distinct_from_prior_art": "Prior activity momentum weights signed fund returns by activity and changes within-core ranks on a parent policy. This is absolute broad SPY return per reported activity, with nonoverlapping windows, used for full core-versus-bill participation. It neither replays that policy nor retunes a failed volatility threshold or parent budget.",
+    "proxy_limits": "Reported close times reported share volume is a closing-valuation activity proxy, not executed dollars, net flows, constituent turnover, bid-ask spread, market depth or true price impact. ETF creation/redemption, distributions, corporate actions, price/volume units and volatility can confound it; shared market exposure does not create independent risk or alpha.",
+    "information_clock": "The last numerical input is D-1. This declared lag is not proof of every historical first publication, revision-free PIT or fund-methodology continuity. Reuse original admitted OHLCV and all original source gates without replacing prices, changing RF, filling gaps or requesting new quotes.",
+    "literature": "Amihud2002, Illiquidity and stock returns: cross-section and time-series effects, DOI10.1016/S1386-4181(01)00024-6 motivates return-per-activity measurement only. This ETF proxy and monthly participation law are not its stock-level replication or imported empirical conclusion; Crossref bibliographic metadata was independently retained.",
+    "future_finance": "Preparation computes synthetic outcomes and input-quality readiness only, not a real historical indicator, opinion, target, shadow, account or performance. A separate exact financial implementation and actual registration/publication must precede real outputs and original four-path accounting. Actual family participation, technical admission and deliberate pool inclusion require later evidence.",
+    "bias": "264 prior completions are exposed. A future old-dated opinion assumes counterfactual availability of a policy introduced now, not a backdated actual source or independent prospective validation."
+  },
+  "methodology": {
+    "real_source_indicators_targets_accounts_or_financial_outcomes_computed": false,
+    "new_expert_technically_admitted": false,
+    "existing_pool_changed": false,
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

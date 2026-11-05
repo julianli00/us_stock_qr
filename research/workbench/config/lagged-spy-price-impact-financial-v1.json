@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_lagged_spy_price_impact_financial_20261105_v1",
+  "candidate_id": "lagged_spy_price_impact_participation_v1",
+  "candidate_count": 1,
+  "study_size_is_a_total_research_quota": false,
+  "prior_journal_sequence": 1027,
+  "prior_journal_head_sha256": "94a0ae53b6a9138e6b1776e9955491030e369a3bc1f2d840532d6d823804ede5",
+  "prior_completed_configurations": 264,
+  "primary_policy": {
+    "path": "config/lagged-spy-price-impact-expert-v1.json",
+    "sha256": "8b46b247b485d453687afa1f8f3d0f7ea717513020fa66612f0b8aa62bd8b98f"
+  },
+  "primary_preparation_freeze": {
+    "path": "reports/ssd-continuous-research-v1/lagged-spy-price-impact-20261105-v1/primary-implementation-freeze-v1.json",
+    "sha256": "42d127d9d49719d97ea890384a7a6a997854c1889d602b6d18cd7a96a994c005"
+  },
+  "primary_preparation_completion": {
+    "path": "reports/ssd-continuous-research-v1/lagged-spy-price-impact-20261105-v1/completion-v1.json",
+    "sha256": "ffe20d520e33faca5301700c27da0f7bf52e0713f50df2fcabf603c65c6cb8c3"
+  },
+  "market_parent_freeze": {
+    "path": "reports/ssd-continuous-research-v1/fixed-four-sleeve-expert-inclusion-20261105-v1/financial-implementation-freeze-v1.json",
+    "sha256": "783e373593ab4109672af0324ec22827dc7d91604b0b96558f97abe6c4f27ed7"
+  },
+  "source_input_interface": "original_MarketData_including_raw_close_and_reported_volume",
+  "target_delivery_kind": "causal_main_capital_decision_program_v1",
+  "real_source_targets_before_actual_publication": false,
+  "historical_target_proof_stage": "after_actual_published_program_execution",
+  "initialization": "fresh_capital_at_real_pre_return_anchor_using_last_known_native_month_end",
+  "ordinary_decisions": "genuine_NYSE_month_end_after_existing_16_15_ET_clock",
+  "capital_usd_per_formal_path": 10000.0,
+  "initial_drawdown_peak_usd": 10000.0,
+  "target_budget": 0.98,
+  "actual_weight_band": 0.025,
+  "formal_paths": ["10y-base", "10y-stress", "5y-base", "5y-stress"],
+  "prefix_audit_ten_year_base_return_positions": [125, 503, 1006, 1509, 2012],
+  "auxiliary_prefixes_are_independent_economic_trials": false,
+  "native_source_target_prefixes": "first_seventh_thirteenth_middle_last_month_end",
+  "primary_policy_or_market_or_RF_scope_changed": false,
+  "new_quote_or_broker_requests": 0,
+  "new_economic_factor_definitions": 0,
+  "registered_expert_or_pool_admission": false,
+  "standalone_financial_failure_is_technical_exclusion": false,
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "order_authority": false
+}
