@@ -4,6 +4,60 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Archived HMM session policies: all three technically admissible
+
+The [new eligibility result](evidence/archived_hmm_session_expert_eligibility_20261105_v1.json)
+reviews all three original close/overnight/intraday complete policies, not a
+best-return sibling. Review freeze`407d86ff`pins158dependencies,786source
+references and six explicit tested inputs before numerical outcomes.
+The first30synthetic tests pass; two unused imports and one long literal fail
+Ruff. Only those mechanical issues change, and the same30tests/Ruff pass.
+The actual first numerical review exits0 in3.552664040995296seconds,
+Darwin peakRSS380256256bytes.
+
+| Complete source | Actual original introduction UTC | Actual technical admission UTC | Eligibility |
+| --- | --- | --- | --- |
+| HMM close-core control | 2026-10-29 08:18:12.036214 | 2026-11-05 21:44:58.768216 | Admissible nonselected |
+| HMM overnight core | 2026-10-29 08:18:12.141068 | 2026-11-05 21:44:59.199413 | Admissible nonselected |
+| HMM intraday core | 2026-10-29 08:18:12.249005 | 2026-11-05 21:44:59.630210 | Admissible nonselected |
+
+Original registrations276--278,proofs279--281,publication282and complete
+reviews291/300/309remain unchanged. All twelve full2512/1254-day saved books
+retain actual four-style exposure,cash funding<=1x and independentBT.
+Their nativeRFmatches the unchanged current review_market default-reader
+canonicalRFexactly:zero mismatched days and zero maximum difference on
+every path. No RFnormalization,cropping,rounding or replacement assessment
+view is constructed; old unrelated RFfailures remain blockers.
+
+All122native monthly opinions from2016August31,nine undefined prehistory
+opportunities,all131calendar opportunities,cached score/target/log-split proofs
+and five prefix certificates remain. Noncore HMMcells are exact; maximum
+four-style-budget conservation gap is5.551115123125783e-17.
+No fit,filter,component score,rank,target,shadow,account or benchmark is rerun.
+These are complete whole-session holding policies, not overnight-only or
+intraday-only trading accounts.
+
+The existing saved monthly Adapter is exercised at all366original opinions.
+All original twelve target coordinates remain exact; IJR/PKW are structural
+zero consumer exposures, not admitted new source inputs. Each consumer
+retains2512nativeNET/RFobservations. The2016October5capital anchor knows
+September30opinion with zeroNET;125/126observations remain unscored/mature.
+Consumer verification takes2.821633917017607seconds and is not another
+financial/source pipeline.
+
+A metadata-only catalogue attempt initially treats inline journal review
+receipts as references and raisesKeyError. The failure is retained before any
+numeric review; descriptors then reference actual completed-path receipts.
+The raw private result and original public normalized complete review are
+both pinned. The existing Interface consumes that original public summary;
+no financial value, price or RF is transformed.
+
+All three are related **conditional-variance-growth variants**, not three
+new independent risks. No representative,study membership or global seven/
+eight promotion is selected. Their standalone financial rejections remain.
+**No new financial trials: J1144,274completions,zero qualifiers,
+investment objective unmet.**
+
 ## Saved signed-activity inclusion: participation and execution diagnosis
 
 The [new zero-trial diagnosis](evidence/signed_activity_execution_diagnosis_20261105_v1.json)

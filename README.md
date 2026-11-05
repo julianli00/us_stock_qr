@@ -45,6 +45,24 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
+### Archived HMM session experts: technically admissible, not pool members
+
+The [strict read-only review](research/workbench/evidence/archived_hmm_session_expert_eligibility_20261105_v1.json)
+passes all three already completed close/overnight/intraday core-session
+policies. All twelve saved books have nativeRFexactly equal to the unchanged
+current canonicalRF:zero mismatches, no rounding or new assessment view.
+All122native opinions,nine undefined prehistory months,HMMnoncore cells and
+the four-style budget remain. No HMM fit, score, rank, target or account runs.
+
+The existing monthly StrategyExpert Interface preserves every original
+twelve-coordinate opinion and represents absent IJR/PKW exposures as structural
+zeros in the fourteen-coordinate consumer universe. Three saved consumers
+retain2512NET/RFobservations each, with zero initialNETand125/126maturity.
+All remain **admissible nonselected variants in one mechanism group**, not
+three independent risks or automatic members. Actual introduction stays
+October29; technical admission is November5. Original financial rejections,
+global seven/eight and **274 completions,zero qualifiers** are unchanged.
+
 ### Saved inclusion diagnosis: participation and actual fees
 
 The [read-only diagnosis](research/workbench/evidence/signed_activity_execution_diagnosis_20261105_v1.json)

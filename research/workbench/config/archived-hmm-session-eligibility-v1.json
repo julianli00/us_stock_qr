@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_archived_hmm_session_expert_eligibility_20261105_v1",
+  "prior_journal_sequence": 1144,
+  "prior_completed_configurations": 274,
+  "input_catalogue": {
+    "path": "reports/ssd-continuous-research-v1/archived-hmm-session-expert-eligibility-20261105-v1/source-input-catalogue-v1.json",
+    "sha256": "07edf662ad161e27c32d1031dd301bcd0e6e490abe4b31f739729105f9e5c70b"
+  },
+  "candidate_ids": [
+    "hmm_core_close_momentum_control_v1",
+    "hmm_core_overnight_momentum_v1",
+    "hmm_core_intraday_momentum_v1"
+  ],
+  "mechanism_group": "conditional_variance_growth",
+  "native_monthly_opinions": 122,
+  "original_calendar_opportunities": 131,
+  "undefined_prehistory_months": 9,
+  "first_native_opinion": "2016-08-31",
+  "native_source_price_width": 12,
+  "consumer_universe": ["SPY", "IEF", "GLD", "BIL", "MTUM", "VLUE", "QUAL", "USMV", "TLT", "QQQ", "XLK", "SOXX", "IJR", "PKW"],
+  "source_core_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "source_score_methods": ["close_to_close", "overnight", "intraday"],
+  "minimum_actual_core_styles_per_path": 3,
+  "original_independent_BT_tolerance_USD": 0.000001,
+  "original_target_proof_tolerance": 1e-12,
+  "source_input_return_sessions": 105,
+  "source_input_recent_sessions_skipped": 21,
+  "native_RF_comparison": "exact_current_canonical_review_market_default_reader_all_four_books",
+  "RF_rounding_normalization_cropping_or_new_assessment_view": false,
+  "unrepresented_IJR_PKW_exposures": "existing_ArchivedMonthlyExpert_structural_zeros_not_new_source_targets",
+  "HMM_fits_states_session_scores_ranks_or_targets_recomputed": false,
+  "new_shadow_or_funded_accounts": 0,
+  "financial_return_performance_is_technical_admission_gate": false,
+  "admitted_variants_are_independent_risk_families": false,
+  "representative_or_pool_member_selected": false,
+  "new_financial_evaluations": 0,
+  "new_source_requests": 0,
+  "source_financial_verdicts_or_global_rosters_changed": false,
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "order_authority": false
+}

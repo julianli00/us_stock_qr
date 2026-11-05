@@ -1,0 +1,479 @@
+{
+  "HMM_scores_targets_or_accounts_replayed": false,
+  "RF_rounding_normalization_or_new_view": false,
+  "actual_authoritative_counts": {
+    "current_journal_event_count": 1144,
+    "current_journal_head_sha256": "2ea7a7d9409b173a35896780a1e69644240dc6f0390df104a274e6eb52d5ce3b",
+    "new_account_paths": 384,
+    "new_completed_strategy_evaluations": 96,
+    "new_historical_point_gate_passes": 0,
+    "new_pending_candidates": 0,
+    "new_registered_candidates": 105,
+    "new_reviews": 96,
+    "new_technical_failures": 9,
+    "original_completed_configurations": 178,
+    "original_registered_versions": 96,
+    "original_reviews": 94,
+    "total_legacy_plus_ssd_completed_configurations": 274
+  },
+  "admitted_variants_are_independent_risk_families": false,
+  "candidates": {
+    "hmm_core_close_momentum_control_v1": {
+      "absent_consumer_coordinates_are_exact_structural_zeros": true,
+      "admitted_at": "2026-11-05T21:44:58.768216+00:00",
+      "candidate_id": "hmm_core_close_momentum_control_v1",
+      "consumer_universe_width": 14,
+      "existing_Interface_uses_original_complete_public_review_summary": true,
+      "financial_reviewed_at": "2026-10-29T08:33:03.531005+00:00",
+      "initial_NET_observations": 0,
+      "introduced_at": "2026-10-29T08:18:12.036214+00:00",
+      "mechanism_group": "conditional_variance_growth",
+      "method": "close_to_close",
+      "new_RF_or_recommendation_view": false,
+      "original_HMM_scores_targets_or_accounts_replayed": false,
+      "original_private_financial_result_preserved": {
+        "path": "reports/ssd-continuous-research-v1/hmm-core-session-momentum-20261029-v1/results.json",
+        "sha256": "92edf77a1a325bdd4507a55971e261adaf28e5695a62544de6ce41eb3cba55c3"
+      },
+      "saved_source_metadata": {
+        "adapter": "monthly",
+        "counterfactual_historical_availability": true,
+        "financial_failure_is_not_admission_failure": true,
+        "first_historical_target": "2016-08-31",
+        "four_completed_paths_checked": 4,
+        "historical_shadow_end": "2026-10-05",
+        "historical_shadow_observations": 2512,
+        "historical_shadow_start": "2016-10-06",
+        "id": "hmm_core_close_momentum_control_v1",
+        "independent_forward_validation": false,
+        "introduced_at": "2026-10-29T08:18:12.036214+00:00",
+        "mechanism_group": "conditional_variance_growth",
+        "shadow_reference": {
+          "path": "reports/ssd-continuous-research-v1/equity-first-20261027-v1/hmm_core_close_momentum_control_v1/10y-base-attempt-001/account.csv",
+          "sha256": "c3343422bc4ee4017614cb613f232462227caeffe3fd1419c5a66136caa46542"
+        },
+        "source_frozen_specification_sha256": "170782ccfbc9f50d971a57886fd234c436108b17ad53cf77ed39b8cdd35a2283",
+        "source_technical_and_funding_checks_passed": true,
+        "standalone_financial_verdict_preserved": "rejected",
+        "target_reference": {
+          "path": "data/ssd-hmm-core-session-momentum-20261029-v1/hmm_core_close_momentum_control_v1/targets.csv",
+          "sha256": "1b59b21805cf61db4bdb6e11937ae8b55c951cb8b5805053f06c465a2574f034"
+        }
+      },
+      "score_maturity_boundaries": [
+        0,
+        125,
+        126
+      ],
+      "source_books": {
+        "10y-base": {
+          "RF_rounding_normalization_or_view_applied": false,
+          "actual_core_styles": [
+            "MTUM",
+            "VLUE",
+            "QUAL",
+            "USMV"
+          ],
+          "native_RF_exact_common": true,
+          "native_RF_first_mismatch": null,
+          "native_RF_maximum_absolute_difference": 0.0,
+          "native_RF_mismatched_days": 0
+        },
+        "10y-stress": {
+          "RF_rounding_normalization_or_view_applied": false,
+          "actual_core_styles": [
+            "MTUM",
+            "VLUE",
+            "QUAL",
+            "USMV"
+          ],
+          "native_RF_exact_common": true,
+          "native_RF_first_mismatch": null,
+          "native_RF_maximum_absolute_difference": 0.0,
+          "native_RF_mismatched_days": 0
+        },
+        "5y-base": {
+          "RF_rounding_normalization_or_view_applied": false,
+          "actual_core_styles": [
+            "MTUM",
+            "VLUE",
+            "QUAL",
+            "USMV"
+          ],
+          "native_RF_exact_common": true,
+          "native_RF_first_mismatch": null,
+          "native_RF_maximum_absolute_difference": 0.0,
+          "native_RF_mismatched_days": 0
+        },
+        "5y-stress": {
+          "RF_rounding_normalization_or_view_applied": false,
+          "actual_core_styles": [
+            "MTUM",
+            "VLUE",
+            "QUAL",
+            "USMV"
+          ],
+          "native_RF_exact_common": true,
+          "native_RF_first_mismatch": null,
+          "native_RF_maximum_absolute_difference": 0.0,
+          "native_RF_mismatched_days": 0
+        }
+      },
+      "source_composition": {
+        "HMM_fits_states_session_scores_ranks_or_targets_recomputed": false,
+        "all_noncore_cells_exact": true,
+        "genuine_native_monthly_opinions": 122,
+        "maximum_core_budget_conservation_difference": 5.551115123125783e-17,
+        "old_prefix_certificates_read": 5,
+        "undefined_prehistory_months_retained": 9
+      },
+      "source_descriptor": {
+        "adapter": "monthly",
+        "completed_paths": {
+          "10y-base": {
+            "path": "reports/ssd-continuous-research-v1/equity-first-20261027-v1/hmm_core_close_momentum_control_v1/10y-base-attempt-001/complete.json",
+            "sha256": "18db4778538cd9fc1a79e3da7ef3d9994f9d78d0d23812b2e0ad6c9769e158b7"
+          },
+          "10y-stress": {
+            "path": "reports/ssd-continuous-research-v1/equity-first-20261027-v1/hmm_core_close_momentum_control_v1/10y-stress-attempt-001/complete.json",
+            "sha256": "c591be157790b374fa0314d772d062590bdbe943a29787e891dd34c11812a2f7"
+          },
+          "5y-base": {
+            "path": "reports/ssd-continuous-research-v1/equity-first-20261027-v1/hmm_core_close_momentum_control_v1/5y-base-attempt-001/complete.json",
+            "sha256": "7827800d37d428e01f61757eb57cdf3b2433cf8aa552e8c2a12015d92c2f8a66"
+          },
+          "5y-stress": {
+            "path": "reports/ssd-continuous-research-v1/equity-first-20261027-v1/hmm_core_close_momentum_control_v1/5y-stress-attempt-001/complete.json",
+            "sha256": "93a67efc7b29ba95332456a2c165a909df9485be74f7f6e4706d8cf853ad71d0"
+          }
+        },
+        "id": "hmm_core_close_momentum_control_v1",
+        "introduced_at": "2026-10-29T08:18:12.036214+00:00",
+        "mechanism_group": "conditional_variance_growth",
+        "registered_event_sha256": "a984d3603a3024db3afbf8e9d0a4164d2999bdf16be7219f490f543efc92324f",
+        "registration": {
+          "path": "evidence/hmm_core_session_momentum_20261029_registration_v1.json",
+          "sha256": "b85e02d8d09f6d21b77c9055435305f18b6edfb86f4c5ab9e83ffd1447602108"
+        },
+        "results": {
+          "path": "evidence/hmm_core_session_momentum_20261029_results_v1.json",
+          "sha256": "c75b89dde31b5a4321e8aacccb1e1f7f0717b6d574514a2fcfac879a8c49eabc"
+        },
+        "schema_version": 1
+      },
+      "source_financial_verdict_preserved": "rejected",
+      "source_native_universe_width": 12,
+      "status": "technical_eligibility_passed_admissible_nonselected",
+      "technical_expert_admitted": true
+    },
+    "hmm_core_intraday_momentum_v1": {
+      "absent_consumer_coordinates_are_exact_structural_zeros": true,
+      "admitted_at": "2026-11-05T21:44:59.630210+00:00",
+      "candidate_id": "hmm_core_intraday_momentum_v1",
+      "consumer_universe_width": 14,
+      "existing_Interface_uses_original_complete_public_review_summary": true,
+      "financial_reviewed_at": "2026-10-29T08:33:13.530189+00:00",
+      "initial_NET_observations": 0,
+      "introduced_at": "2026-10-29T08:18:12.249005+00:00",
+      "mechanism_group": "conditional_variance_growth",
+      "method": "intraday",
+      "new_RF_or_recommendation_view": false,
+      "original_HMM_scores_targets_or_accounts_replayed": false,
+      "original_private_financial_result_preserved": {
+        "path": "reports/ssd-continuous-research-v1/hmm-core-session-momentum-20261029-v1/results.json",
+        "sha256": "92edf77a1a325bdd4507a55971e261adaf28e5695a62544de6ce41eb3cba55c3"
+      },
+      "saved_source_metadata": {
+        "adapter": "monthly",
+        "counterfactual_historical_availability": true,
+        "financial_failure_is_not_admission_failure": true,
+        "first_historical_target": "2016-08-31",
+        "four_completed_paths_checked": 4,
+        "historical_shadow_end": "2026-10-05",
+        "historical_shadow_observations": 2512,
+        "historical_shadow_start": "2016-10-06",
+        "id": "hmm_core_intraday_momentum_v1",
+        "independent_forward_validation": false,
+        "introduced_at": "2026-10-29T08:18:12.249005+00:00",
+        "mechanism_group": "conditional_variance_growth",
+        "shadow_reference": {
+          "path": "reports/ssd-continuous-research-v1/equity-first-20261027-v1/hmm_core_intraday_momentum_v1/10y-base-attempt-001/account.csv",
+          "sha256": "9f7de96dd626279cad746abbd58c058878dd2d731d33f4f1e39f8fd10c31f438"
+        },
+        "source_frozen_specification_sha256": "170782ccfbc9f50d971a57886fd234c436108b17ad53cf77ed39b8cdd35a2283",
+        "source_technical_and_funding_checks_passed": true,
+        "standalone_financial_verdict_preserved": "rejected",
+        "target_reference": {
+          "path": "data/ssd-hmm-core-session-momentum-20261029-v1/hmm_core_intraday_momentum_v1/targets.csv",
+          "sha256": "4407f8428b4c6d78dfebdf93e9aecc319be11c192b8362bf757141a1be593230"
+        }
+      },
+      "score_maturity_boundaries": [
+        0,
+        125,
+        126
+      ],
+      "source_books": {
+        "10y-base": {
+          "RF_rounding_normalization_or_view_applied": false,
+          "actual_core_styles": [
+            "MTUM",
+            "VLUE",
+            "QUAL",
+            "USMV"
+          ],
+          "native_RF_exact_common": true,
+          "native_RF_first_mismatch": null,
+          "native_RF_maximum_absolute_difference": 0.0,
+          "native_RF_mismatched_days": 0
+        },
+        "10y-stress": {
+          "RF_rounding_normalization_or_view_applied": false,
+          "actual_core_styles": [
+            "MTUM",
+            "VLUE",
+            "QUAL",
+            "USMV"
+          ],
+          "native_RF_exact_common": true,
+          "native_RF_first_mismatch": null,
+          "native_RF_maximum_absolute_difference": 0.0,
+          "native_RF_mismatched_days": 0
+        },
+        "5y-base": {
+          "RF_rounding_normalization_or_view_applied": false,
+          "actual_core_styles": [
+            "MTUM",
+            "VLUE",
+            "QUAL",
+            "USMV"
+          ],
+          "native_RF_exact_common": true,
+          "native_RF_first_mismatch": null,
+          "native_RF_maximum_absolute_difference": 0.0,
+          "native_RF_mismatched_days": 0
+        },
+        "5y-stress": {
+          "RF_rounding_normalization_or_view_applied": false,
+          "actual_core_styles": [
+            "MTUM",
+            "VLUE",
+            "QUAL",
+            "USMV"
+          ],
+          "native_RF_exact_common": true,
+          "native_RF_first_mismatch": null,
+          "native_RF_maximum_absolute_difference": 0.0,
+          "native_RF_mismatched_days": 0
+        }
+      },
+      "source_composition": {
+        "HMM_fits_states_session_scores_ranks_or_targets_recomputed": false,
+        "all_noncore_cells_exact": true,
+        "genuine_native_monthly_opinions": 122,
+        "maximum_core_budget_conservation_difference": 5.551115123125783e-17,
+        "old_prefix_certificates_read": 5,
+        "undefined_prehistory_months_retained": 9
+      },
+      "source_descriptor": {
+        "adapter": "monthly",
+        "completed_paths": {
+          "10y-base": {
+            "path": "reports/ssd-continuous-research-v1/equity-first-20261027-v1/hmm_core_intraday_momentum_v1/10y-base-attempt-001/complete.json",
+            "sha256": "876354b806e8770f99d219b7c7c6284a17d9988489cfd7c28e2d55564d31adc4"
+          },
+          "10y-stress": {
+            "path": "reports/ssd-continuous-research-v1/equity-first-20261027-v1/hmm_core_intraday_momentum_v1/10y-stress-attempt-001/complete.json",
+            "sha256": "81f34b8cb5369eb72d1b71029c94982689243013470a88f6b04704fa89386643"
+          },
+          "5y-base": {
+            "path": "reports/ssd-continuous-research-v1/equity-first-20261027-v1/hmm_core_intraday_momentum_v1/5y-base-attempt-001/complete.json",
+            "sha256": "835c6d9d9c8dafc4c79a73b811fb109692df17a5ff307814337e40550ae57192"
+          },
+          "5y-stress": {
+            "path": "reports/ssd-continuous-research-v1/equity-first-20261027-v1/hmm_core_intraday_momentum_v1/5y-stress-attempt-001/complete.json",
+            "sha256": "ce4a2a2c61f75d7bbf89a3c5114e1d7e5f90209d2cd6795e83681209b798f598"
+          }
+        },
+        "id": "hmm_core_intraday_momentum_v1",
+        "introduced_at": "2026-10-29T08:18:12.249005+00:00",
+        "mechanism_group": "conditional_variance_growth",
+        "registered_event_sha256": "8900c873c94323108852153688ea9eb000ab662d9ec7d609a6513c1b8d2f473f",
+        "registration": {
+          "path": "evidence/hmm_core_session_momentum_20261029_registration_v1.json",
+          "sha256": "b85e02d8d09f6d21b77c9055435305f18b6edfb86f4c5ab9e83ffd1447602108"
+        },
+        "results": {
+          "path": "evidence/hmm_core_session_momentum_20261029_results_v1.json",
+          "sha256": "c75b89dde31b5a4321e8aacccb1e1f7f0717b6d574514a2fcfac879a8c49eabc"
+        },
+        "schema_version": 1
+      },
+      "source_financial_verdict_preserved": "rejected",
+      "source_native_universe_width": 12,
+      "status": "technical_eligibility_passed_admissible_nonselected",
+      "technical_expert_admitted": true
+    },
+    "hmm_core_overnight_momentum_v1": {
+      "absent_consumer_coordinates_are_exact_structural_zeros": true,
+      "admitted_at": "2026-11-05T21:44:59.199413+00:00",
+      "candidate_id": "hmm_core_overnight_momentum_v1",
+      "consumer_universe_width": 14,
+      "existing_Interface_uses_original_complete_public_review_summary": true,
+      "financial_reviewed_at": "2026-10-29T08:33:08.498014+00:00",
+      "initial_NET_observations": 0,
+      "introduced_at": "2026-10-29T08:18:12.141068+00:00",
+      "mechanism_group": "conditional_variance_growth",
+      "method": "overnight",
+      "new_RF_or_recommendation_view": false,
+      "original_HMM_scores_targets_or_accounts_replayed": false,
+      "original_private_financial_result_preserved": {
+        "path": "reports/ssd-continuous-research-v1/hmm-core-session-momentum-20261029-v1/results.json",
+        "sha256": "92edf77a1a325bdd4507a55971e261adaf28e5695a62544de6ce41eb3cba55c3"
+      },
+      "saved_source_metadata": {
+        "adapter": "monthly",
+        "counterfactual_historical_availability": true,
+        "financial_failure_is_not_admission_failure": true,
+        "first_historical_target": "2016-08-31",
+        "four_completed_paths_checked": 4,
+        "historical_shadow_end": "2026-10-05",
+        "historical_shadow_observations": 2512,
+        "historical_shadow_start": "2016-10-06",
+        "id": "hmm_core_overnight_momentum_v1",
+        "independent_forward_validation": false,
+        "introduced_at": "2026-10-29T08:18:12.141068+00:00",
+        "mechanism_group": "conditional_variance_growth",
+        "shadow_reference": {
+          "path": "reports/ssd-continuous-research-v1/equity-first-20261027-v1/hmm_core_overnight_momentum_v1/10y-base-attempt-001/account.csv",
+          "sha256": "829510078f83220fb998993268e1ae6873b090ff2f240410f2d908f173728289"
+        },
+        "source_frozen_specification_sha256": "170782ccfbc9f50d971a57886fd234c436108b17ad53cf77ed39b8cdd35a2283",
+        "source_technical_and_funding_checks_passed": true,
+        "standalone_financial_verdict_preserved": "rejected",
+        "target_reference": {
+          "path": "data/ssd-hmm-core-session-momentum-20261029-v1/hmm_core_overnight_momentum_v1/targets.csv",
+          "sha256": "408ea3e163b19c6bb07c2995a5f65a15e557a674285e282d796bd5ba9b13f051"
+        }
+      },
+      "score_maturity_boundaries": [
+        0,
+        125,
+        126
+      ],
+      "source_books": {
+        "10y-base": {
+          "RF_rounding_normalization_or_view_applied": false,
+          "actual_core_styles": [
+            "MTUM",
+            "VLUE",
+            "QUAL",
+            "USMV"
+          ],
+          "native_RF_exact_common": true,
+          "native_RF_first_mismatch": null,
+          "native_RF_maximum_absolute_difference": 0.0,
+          "native_RF_mismatched_days": 0
+        },
+        "10y-stress": {
+          "RF_rounding_normalization_or_view_applied": false,
+          "actual_core_styles": [
+            "MTUM",
+            "VLUE",
+            "QUAL",
+            "USMV"
+          ],
+          "native_RF_exact_common": true,
+          "native_RF_first_mismatch": null,
+          "native_RF_maximum_absolute_difference": 0.0,
+          "native_RF_mismatched_days": 0
+        },
+        "5y-base": {
+          "RF_rounding_normalization_or_view_applied": false,
+          "actual_core_styles": [
+            "MTUM",
+            "VLUE",
+            "QUAL",
+            "USMV"
+          ],
+          "native_RF_exact_common": true,
+          "native_RF_first_mismatch": null,
+          "native_RF_maximum_absolute_difference": 0.0,
+          "native_RF_mismatched_days": 0
+        },
+        "5y-stress": {
+          "RF_rounding_normalization_or_view_applied": false,
+          "actual_core_styles": [
+            "MTUM",
+            "VLUE",
+            "QUAL",
+            "USMV"
+          ],
+          "native_RF_exact_common": true,
+          "native_RF_first_mismatch": null,
+          "native_RF_maximum_absolute_difference": 0.0,
+          "native_RF_mismatched_days": 0
+        }
+      },
+      "source_composition": {
+        "HMM_fits_states_session_scores_ranks_or_targets_recomputed": false,
+        "all_noncore_cells_exact": true,
+        "genuine_native_monthly_opinions": 122,
+        "maximum_core_budget_conservation_difference": 5.551115123125783e-17,
+        "old_prefix_certificates_read": 5,
+        "undefined_prehistory_months_retained": 9
+      },
+      "source_descriptor": {
+        "adapter": "monthly",
+        "completed_paths": {
+          "10y-base": {
+            "path": "reports/ssd-continuous-research-v1/equity-first-20261027-v1/hmm_core_overnight_momentum_v1/10y-base-attempt-001/complete.json",
+            "sha256": "81fb78a79d6ff1704cee0a22a8a6c47f469f27b7434097be983da282a112edd1"
+          },
+          "10y-stress": {
+            "path": "reports/ssd-continuous-research-v1/equity-first-20261027-v1/hmm_core_overnight_momentum_v1/10y-stress-attempt-001/complete.json",
+            "sha256": "f5872bb2f885cba6187a225afb9c15a4a2b937fbb84f171964fa29479b2c19e1"
+          },
+          "5y-base": {
+            "path": "reports/ssd-continuous-research-v1/equity-first-20261027-v1/hmm_core_overnight_momentum_v1/5y-base-attempt-001/complete.json",
+            "sha256": "df37746ada3629f5ff4cfdd29fef3c41a5051139db4326541fb370690a3832f5"
+          },
+          "5y-stress": {
+            "path": "reports/ssd-continuous-research-v1/equity-first-20261027-v1/hmm_core_overnight_momentum_v1/5y-stress-attempt-001/complete.json",
+            "sha256": "b2314abeee4982c8818865607592dffd8b2f0619f7149be5a94e603711d88e70"
+          }
+        },
+        "id": "hmm_core_overnight_momentum_v1",
+        "introduced_at": "2026-10-29T08:18:12.141068+00:00",
+        "mechanism_group": "conditional_variance_growth",
+        "registered_event_sha256": "7b1658a6d8d9b6c1250be8bcf2de8e5c071d3258a573c691476e48708eb69c6b",
+        "registration": {
+          "path": "evidence/hmm_core_session_momentum_20261029_registration_v1.json",
+          "sha256": "b85e02d8d09f6d21b77c9055435305f18b6edfb86f4c5ab9e83ffd1447602108"
+        },
+        "results": {
+          "path": "evidence/hmm_core_session_momentum_20261029_results_v1.json",
+          "sha256": "c75b89dde31b5a4321e8aacccb1e1f7f0717b6d574514a2fcfac879a8c49eabc"
+        },
+        "schema_version": 1
+      },
+      "source_financial_verdict_preserved": "rejected",
+      "source_native_universe_width": 12,
+      "status": "technical_eligibility_passed_admissible_nonselected",
+      "technical_expert_admitted": true
+    }
+  },
+  "completed_at": "2026-11-05T21:45:00.218247+00:00",
+  "eligibility_intent": {
+    "path": "reports/ssd-continuous-research-v1/archived-hmm-session-expert-eligibility-20261105-v1/eligibility-intent-v1.json",
+    "sha256": "407d86ff884ebcfbb8236517354f281bf0c6cdb1a855eddd1104d4e6295a6a6f"
+  },
+  "global_pool_changed": false,
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "new_financial_evaluations": 0,
+  "new_source_requests": 0,
+  "order_authority": false,
+  "source_financial_verdicts_preserved": true,
+  "study_id": "ssd_archived_hmm_session_expert_eligibility_20261105_v1"
+}
