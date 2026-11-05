@@ -4,7 +4,43 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Conditional deletion robust pair: all four original paths rejected
+## Mixed-mechanism six: registered complete cohort, funds not yet run
+
+The [unchanged primary](MIXED_MECHANISM_SIX_PRIMARY_V1.md) is frozen at
+`f355581a`; the [separate financial Module](MIXED_MECHANISM_SIX_FINANCIAL_V1.md)
+freezes at`f6d9d667` with179dependencies,2417source references and six actual
+source introduction/admission clocks. The original-eight context is not the
+study roster. Six complementary complete-policy roles are not six independent
+risks, and financial rejection alone does not exclude technically valid experts.
+
+Actual registrations1087 at **2026-11-05T16:43:50.324719Z** and1088 at
+**16:43:50.936130Z** precede the first new meta-score/target. Proofs1089/1090
+at **16:44:03.380120Z/16:44:05.415827Z** bind121decisions,242retained
+input/resolved records and177384round-tripped source NET/RF values. Every15-pair
+catalogue is checked independently for original covariance/ERC/marginal risk,
+nominal cost, NET-period scores and the12-decimal lexical winner.
+Maximum target/weight/score/rational-target gaps are1.1102230246251565e-16/
+3.3306690738754696e-16/5.329070518200751e-15/1.1102230246251565e-16.
+Five exact target/audit prefixes and all six style families on each full horizon
+are retained. Twenty-six new financial checks and Ruff pass before freeze;
+the first all26-pass attempt's four lint findings and prototypes are preserved.
+
+The actual schema2
+[equal-six packet](evidence/mixed_mechanism_six_financial_20261105_0_registration_v1.json)
+and [rolling-six packet](evidence/mixed_mechanism_six_financial_20261105_1_registration_v1.json)
+contain both actual registration hashes and the same complete cohort.
+Both packets and exact scientific code must actually publish before the first
+funded path. Cached original-eight equal/rolling comparisons and new
+rolling-versus-equal comparisons are declared before outcomes; they are
+whole-policy historical contrasts, not isolated causal roster or fee effects.
+
+**J1090 preregistration snapshot:102registrations,91completed reviews,nine
+technical failures,two pending,364funded paths,269combined completions,zero
+qualifiers; investment goal unmet.** No new funded account or performance
+exists at this snapshot;40.53572058399732seconds is registration/target-proof
+time, not financial runtime. Earlier sections retain their then-dated counts.
+
+## Previous conditional deletion robust pair: all four original paths rejected
 
 The [complete outcome](evidence/deletion_robust_pair_financial_20261105_results_v1.json)
 evaluates the unchanged98bdprimary with separately frozen2db4financial code.
@@ -65,7 +101,7 @@ The70.4902302499977-second registration/target-proof process is separate,
 not financial runtime. Twenty-five new financial checks/Ruff pass before
 freeze, explicitly binding all12reused test/scientific inputs.
 
-Current authoritative **J1086:100registrations,91completed reviews,nine technical
+Historical **J1086 snapshot:100registrations,91completed reviews,nine technical
 failures,zero pending,364funded paths,269combined completions,zero qualifiers;
 investment goal unmet**. Global rosters, source scope and all older failures
 remain. All268prior financial completions and the conditional diagnosis were

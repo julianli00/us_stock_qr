@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_mixed_mechanism_six_primary_20261105_v1",
+  "original_eight_policy": {
+    "path": "config/strategy-expert-pool-eight-v1.json",
+    "sha256": "d778bd86a6ed4d9c813336be188b4b071b86860d912da2eaed5b6338665375f3"
+  },
+  "calendar_policy": {
+    "path": "config/calendar-expert-inclusion-v1.json",
+    "sha256": "22861134145bedd04f4489f4c1a6578298cfb234c35f31c1c3472c002ebd0cbf"
+  },
+  "reversal_policy": {
+    "path": "config/reversal-expert-inclusion-v1.json",
+    "sha256": "1b50a4fb04e80a318fdd47909fb1218bf3b6a0f7d61e611055e3d0af9e5fd8f9"
+  },
+  "fixed_policy": {
+    "path": "config/fixed-four-sleeve-expert-inclusion-v1.json",
+    "sha256": "1b78e2761ff3ffd88057338697ec9707911bc79a87baddbf6406a072906c45c8"
+  },
+  "preceding_financial_completion": {
+    "path": "reports/ssd-continuous-research-v1/deletion-robust-pair-financial-20261105-v1/completion-v1.json",
+    "sha256": "84e744408654e22ea9e929227318cc818455eacfc7eddf6251725316a2a7f6e9"
+  },
+  "prior_journal_sequence": 1086,
+  "prior_journal_head_sha256": "83abc48588a2405d4389ba1d7097e805e29b04b5b63d4dd02ea0e2607a0a2f6a",
+  "prior_completed_configurations": 269,
+  "expert_ids": [
+    "equity_first_month_end_commitment_v1",
+    "semiconductor_ratchet_protection",
+    "conditional_covariance_hedge_expert_v1",
+    "calendar_seasonal_six_core_bil_v1",
+    "monthly_style_reversal_v1",
+    "fixed_four_sleeve_rebalance_v1"
+  ],
+  "mechanism_groups": [
+    "committed_price_trend_defense",
+    "wealth_feedback_protection",
+    "conditional_cross_asset_hedge_suitability",
+    "fixed_calendar_seasonal_equity_participation",
+    "monthly_cross_sectional_style_reversal",
+    "fixed_cross_asset_capital_rebalancing"
+  ],
+  "expert_count": 6,
+  "initial_decision_session": "2016-10-05",
+  "lookback_sessions": 126,
+  "training_sessions": 84,
+  "validation_sessions": 42,
+  "selected_experts": 2,
+  "mature_pair_catalogue_size": 15,
+  "score_decimal_places": 12,
+  "switch_cost_amortization_sessions": 21,
+  "scorer": "unchanged_original_train_ERC_weaker_NET_period_and_nominal_switch_proxy",
+  "equal_control_weights": "one_sixth_each_complete_expert",
+  "cold_start": "original_unscored_equal_six",
+  "exact_or_approximate_opinion_exclusion": false,
+  "conditional_deletion_lower_envelope": false,
+  "invested_target_budget": 0.98,
+  "idle_cash_reserve": 0.02,
+  "actual_weight_trade_band": 0.025,
+  "decision_information_clock": "after_16_15_ET_index_close_before_later_open_execution",
+  "candidates": [
+    {"id": "expert_pool_mixed_mechanism_six_equal_v1", "weighting": "equal"},
+    {"id": "expert_pool_mixed_mechanism_six_rolling_pair_v1", "weighting": "train_erc_validate_net"}
+  ],
+  "candidate_count_in_this_study": 2,
+  "study_size_is_a_total_research_quota": false,
+  "source_generators_or_old_accounts_replayed": false,
+  "new_source_requests": 0,
+  "new_shadow_account_runs": 0,
+  "source_RF_view_or_admission_scope_changed": false,
+  "global_pool_changed": false,
+  "mechanism_labels_are_independent_risks": false,
+  "actual_registered_at_preparation": false,
+  "first_real_meta_derivation_requires_actual_registrations": true,
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "order_authority": false
+}

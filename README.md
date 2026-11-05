@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 100 SSD identities, 91 completed/rejected, nine retained technical failures and zero pending; 364 funded paths | Journal1086 current summary: 269 combined completions, zero qualifiers; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 102 SSD identities, 91 completed/rejected, nine retained technical failures and two pending; 364 funded paths | Journal1090 preregistration snapshot: 269 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -45,7 +45,27 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
-### Conditional deletion robust ranking: all four funded paths rejected
+### Mixed-mechanism six: both rules registered, not yet funded
+
+The [frozen six-expert primary](research/workbench/MIXED_MECHANISM_SIX_PRIMARY_V1.md)
+selects complete trend/defense, wealth-feedback, hedge, calendar, reversal and
+fixed-rebalancing policies by declared complementary roles, not a full-window
+champion screen. Global rosters and nonselected experts' admission remain unchanged.
+The [separate financial Module](research/workbench/MIXED_MECHANISM_SIX_FINANCIAL_V1.md)
+retains equal-six and the original126/84/42/k2/ERC/nominal-cost point-rolling law;
+all15mature pairs remain. No failed opinion-exclusion or deletion envelope carries.
+
+Actual registrations1087/1088 precede either new meta-target; proofs1089/1090
+bind121decisions,242input/resolved records,177384source NET/RF values, six actual
+introduction/admission clocks, five exact prefixes and both full horizons.
+The complete schema2cohort comprises
+[equal-six](research/workbench/evidence/mixed_mechanism_six_financial_20261105_0_registration_v1.json)
+and [rolling-six](research/workbench/evidence/mixed_mechanism_six_financial_20261105_1_registration_v1.json).
+Both exact packets and code must actually publish before any of the eight
+original funded paths. This snapshot contains no new financial outcome.
+**269 combined completions, zero qualifiers; investment goal unmet.**
+
+### Previous conditional deletion robust ranking: all four funded paths rejected
 
 The [complete outcome](research/workbench/evidence/deletion_robust_pair_financial_20261105_results_v1.json)
 keeps the same nine complete experts and original money contract. It ranks the
