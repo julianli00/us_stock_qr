@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 111 SSD identities, 96 completed/rejected, nine retained technical failures and six pending; 384 funded paths | Journal1156 preregistration summary: 274 combined completions, zero qualifiers; investment goal remains unmet |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 111 SSD identities, 102 completed/rejected, nine retained technical failures and zero pending; 408 funded paths | Journal1211 current summary: 280 combined completions, zero qualifiers; investment goal remains unmet |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -45,23 +45,27 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
-### HMM session substitution: six registered rules, no new funded outcomes
+### HMM session substitution: all six complete policies rejected
 
-The [controlled three-pool program](research/workbench/HMM_SESSION_CORE_SUBSTITUTION_V1.md)
+The [complete controlled outcome](research/workbench/evidence/hmm_session_core_substitution_20261105_results_v1.json)
 replaces only original-eight slot2 with the admitted close, overnight or
 intraday HMM core-session policy. Each separate eight-expert pool contains
 only one related sibling and the other seven exact original experts.
 The equal and rolling rules, all28pairs, source clocks, costs and financial
 gates remain unchanged. No source/HMM/account/control is replayed.
 
-Freeze`84954fcf`pins167dependencies,1570source references,three separate
-pool-clock sets and12explicit tested inputs after27new synthetic checks.
-All six actual registrations1145--1150 precede363new pool/date meta states,
-726retained input/result records,709536NET/RFbinary64checks, independent
-scalar proofs and five exact prefixes per pool. All six complete schema2
-packets must be remotely published before the first new funded book.
-**At J1156:six pending rules,zero new funded paths,274completions,
-zero qualifiers; the investment goal remains unmet.**
+All24new original funded paths complete after complete-cohort publication
+`6e82ecf`and fence1157. Every QQQgate fails. The three equal rules pass
+all12CAGRgates and six base-cost Sharpegates, but every stress Sharpegate
+and every ten-year DDgate fails. All12rolling paths fail every original
+financial gate;11.989993%CAGR is still below the strict12%threshold.
+Passing fragments do not qualify a complete policy.
+
+The [full outcome and cost table](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md)
+retains all six rules and24books. Cached and contemporaneous source contrasts
+are whole-policy comparisons, not isolated causal session alpha or a winner
+promotion. Original global rosters and source rejections remain.
+**J1211:280completions,zero qualifiers; investment goal unmet.**
 
 ### Archived HMM session experts: technical eligibility is not qualification
 

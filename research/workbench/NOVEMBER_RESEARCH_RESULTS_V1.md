@@ -4,6 +4,83 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## HMM session substitution: all six complete policies rejected
+
+The [complete saved outcome](evidence/hmm_session_core_substitution_20261105_results_v1.json)
+retains all three separately fixed eight-expert pools and both original
+equal/rolling rules per pool. Actual complete-cohort publication is
+`6e82ecf5ff22f19fc1d46473b6b0413eeafaf1e4`; all six schema2packets,
+357scientific public blobs and28original import pins per candidate are
+verified before any account. Prefunding checkpoint624is saved and exactly
+read back. Fence1157 at **2026-11-05T22:20:50.225349Z** precedes the first
+new path at22:20:52.328712Z and all other new accounts.
+
+| Separate pool/rule | Original path | Net CAGR | RF Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Model fees USD |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Close/equal | 10y-base | 14.446942% | 1.016470 | 16.992718% | 2.766736x | 1037 | 1278.81 |
+| Close/equal | 10y-stress | 13.780611% | 0.965591 | 16.563578% | 2.766853x | 1037 | 1978.30 |
+| Close/equal | 5y-base | 16.988811% | 1.036852 | 13.775009% | 2.824240x | 507 | 595.56 |
+| Close/equal | 5y-stress | 15.702903% | 0.945642 | 13.990036% | 2.818012x | 507 | 849.00 |
+| Close/rolling | 10y-base | 11.989993% | 0.775082 | 17.002969% | 7.408740x | 948 | 1576.68 |
+| Close/rolling | 10y-stress | 10.966329% | 0.698365 | 18.048922% | 7.411033x | 948 | 3329.37 |
+| Close/rolling | 5y-base | 11.842349% | 0.608889 | 17.359211% | 7.570944x | 478 | 702.99 |
+| Close/rolling | 5y-stress | 10.502431% | 0.518274 | 18.594794% | 7.581561x | 478 | 1347.70 |
+| Overnight/equal | 10y-base | 14.440752% | 1.015452 | 16.965909% | 2.760599x | 1037 | 1278.28 |
+| Overnight/equal | 10y-stress | 13.779977% | 0.965078 | 16.539288% | 2.760094x | 1037 | 1976.40 |
+| Overnight/equal | 5y-base | 16.978435% | 1.035145 | 13.793157% | 2.819658x | 507 | 595.40 |
+| Overnight/equal | 5y-stress | 15.695782% | 0.944305 | 14.008595% | 2.812841x | 507 | 848.37 |
+| Overnight/rolling | 10y-base | 11.985079% | 0.774656 | 17.081708% | 7.398222x | 942 | 1570.78 |
+| Overnight/rolling | 10y-stress | 10.970204% | 0.698556 | 18.052683% | 7.399298x | 942 | 3324.03 |
+| Overnight/rolling | 5y-base | 11.778114% | 0.604804 | 17.465289% | 7.570448x | 478 | 702.83 |
+| Overnight/rolling | 5y-stress | 10.444919% | 0.514607 | 18.600948% | 7.580860x | 478 | 1346.87 |
+| Intraday/equal | 10y-base | 14.412970% | 1.015378 | 16.993003% | 2.772419x | 1037 | 1279.06 |
+| Intraday/equal | 10y-stress | 13.739968% | 0.963930 | 16.563854% | 2.772044x | 1037 | 1978.81 |
+| Intraday/equal | 5y-base | 16.964686% | 1.036196 | 13.754774% | 2.832287x | 507 | 595.86 |
+| Intraday/equal | 5y-stress | 15.669120% | 0.944216 | 13.973343% | 2.825309x | 507 | 849.95 |
+| Intraday/rolling | 10y-base | 11.878072% | 0.770670 | 17.002912% | 7.555529x | 948 | 1580.97 |
+| Intraday/rolling | 10y-stress | 10.816050% | 0.690733 | 17.976910% | 7.556562x | 948 | 3337.84 |
+| Intraday/rolling | 5y-base | 11.852146% | 0.609991 | 17.261081% | 7.590439x | 478 | 703.66 |
+| Intraday/rolling | 5y-stress | 10.513812% | 0.519410 | 18.512018% | 7.601062x | 478 | 1350.25 |
+
+Every one of24QQQgates fails. Equal rules pass all12CAGRgates, six base-cost
+Sharpegates and six five-year DD/SPYgates; only their three five-year stress
+paths beat base-costSPY. All equal stress Sharpegates and ten-year DDgates
+fail. Every original gate fails on all12rolling paths.
+Reviews1166/1175/1184/1193/1202/1211reject the complete unchanged rules.
+No rounded11.989993%CAGR, preferred15/20%return or passing fragment
+replaces the strict joint criteria.
+
+Versus the fixed cached base-HMM control, all12equal paths have lower
+Sharpe and higher actual turnover/fees, with exactly unchanged ticket counts.
+Close/intraday rolling have higher CAGR/Sharpe on all four respective paths,
+but remain below every qualification gate. Overnight rolling improves these
+metrics on ten-year paths and worsens them on five-year paths; execution
+cost differences are mixed. Relative to contemporaneous close/equal,
+overnight/intraday equal have lower CAGR/Sharpe on every path; rolling
+differences depend on horizon/scenario. Full contrasts remain in the result.
+Neither comparison isolates causal session alpha or selects a champion.
+The old controls are consumed, not replayed.
+
+Before funding, one explicit verification helper passes the pre-registration
+intent instead of the actually registered frozen specification. The strict
+packet check rejects it. The only difference is the exact freeze selfreference
+added to prior_evidence by the existing registration Interface.
+Using the actual recorded specification verifies all six packets; no economic
+code, source, cost, clock, acceptance field or scientific hash changes.
+The failed helper evidence is retained; no account or financial pipeline was
+started or retried and no fictitious technical failure is added.
+
+The once-only24-path financial process exits0 in545.5608612920041seconds,
+Darwin peakRSS408068096bytes. All original2512/1254returns, freshUSD10000,
+initialpeak, canonicalRF,5/20bps+$1,1/2later-open delays, holdings feedback
+and independentBT remain. Minimum main cashUSD178.46502529657806,
+maximum gross0.9827557135174501, maximum independentBTgap
+USD1.1641532182693481e-10; actual broker orders0.
+No source HMM/session score/target/shadow, old account, benchmark or global
+roster is regenerated or promoted. All source financial rejections remain.
+**J1211:111registered,102completed,nine technical,zero pending,
+408funded paths,280combined completions,zero qualifiers; goal unmet.**
+
 ## HMM session substitution: preserved preregistration J1156
 
 The [fixed controlled program](HMM_SESSION_CORE_SUBSTITUTION_V1.md) creates
