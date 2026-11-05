@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 87 SSD identities, 78 completed/rejected, nine retained technical failures and zero pending; 312 funded paths | Journal934 current summary: 256 combined completions, zero qualifiers; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 89 SSD identities, 80 completed/rejected, nine retained technical failures and zero pending; 320 funded paths | Journal957 current summary: 258 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -45,7 +45,34 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
-### Calendar source policy: complete, rejected, technically admitted
+### Calendar expert inclusion: both complete rules rejected
+
+The [complete eight-path outcome](research/workbench/evidence/calendar_expert_inclusion_20261105_results_v1.json)
+retains the deliberate original-eight-plus-calendar pool and both unchanged
+equal and rolling rules. Actual preregistration
+`d3cf7429470a1f198826add75b2b89736db7738f` precedes fence939 and every account;
+reviews948/957 reject both rules.
+
+| Rule / original path | Net CAGR | RF Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Model fees USD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Equal 10y-base | 13.978244% | 0.968063 | 19.744321% | 2.576864x | 1077 | 1300.17 |
+| Equal 10y-stress | 13.384867% | 0.922994 | 19.222222% | 2.570387x | 1077 | 1942.89 |
+| Equal 5y-base | 15.997485% | 0.965340 | 15.215587% | 2.703007x | 529 | 611.88 |
+| Equal 5y-stress | 14.981003% | 0.892203 | 15.390997% | 2.688825x | 529 | 849.62 |
+| Rolling 10y-base | 10.855449% | 0.687956 | 25.531641% | 7.483276x | 915 | 1502.36 |
+| Rolling 10y-stress | 9.788548% | 0.608831 | 26.748189% | 7.489355x | 915 | 3134.64 |
+| Rolling 5y-base | 10.316155% | 0.502382 | 26.038095% | 8.008784x | 481 | 698.65 |
+| Rolling 5y-stress | 9.059765% | 0.418703 | 27.228942% | 8.025638x | 481 | 1321.78 |
+
+Equal passes all CAGR and five-year SPY gates, but every Sharpe, drawdown and
+QQQ gate fails. Rolling fails every original gate. No month, source, score,
+weight or tolerance is changed to turn these failures into passes.
+All eight accounts remain cash funded, with minimum cashUSD167.8799819 and
+maximum independent BT gapUSD1.3824e-10. The calendar source's financial rejection,
+separate technical admission and original global rosters remain unchanged.
+**258 combined completions, zero qualifiers; investment goal unmet.**
+
+### Preserved calendar source policy snapshot: complete, rejected, technically admitted
 
 The [complete calendar-policy result](research/workbench/evidence/calendar_seasonal_financial_20261105_results_v1.json)
 retains actual preregistration `17b4e56708b51f2f440798462adeec3ec51d58e4`.

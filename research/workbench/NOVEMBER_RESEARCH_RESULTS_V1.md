@@ -4,7 +4,64 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Calendar seasonal source policy: complete, rejected, technically admitted
+## Controlled calendar expert inclusion: both complete rules rejected
+
+The [complete eight-path result](evidence/calendar_expert_inclusion_20261105_results_v1.json)
+retains original-eight-plus-calendar membership, equal ninths and the unchanged
+126/84/42, k2, ERC, nominal-switch-cost rolling pair law. Registrations935/936
+precede target derivation. Both complete-cohort packets and code actually
+publish at `d3cf7429470a1f198826add75b2b89736db7738f`; fence939 at
+**2026-11-05T05:21:53.378877Z** precedes first account940.
+Reviews948/957 at **05:22:02.465813Z / 05:22:42.404596Z** reject both rules.
+
+| Rule / original path | Net CAGR | RF-excess Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Model fees USD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Equal 10y-base | 13.978244% | 0.968063 | 19.744321% | 2.576864x | 1077 | 1300.17 |
+| Equal 10y-stress | 13.384867% | 0.922994 | 19.222222% | 2.570387x | 1077 | 1942.89 |
+| Equal 5y-base | 15.997485% | 0.965340 | 15.215587% | 2.703007x | 529 | 611.88 |
+| Equal 5y-stress | 14.981003% | 0.892203 | 15.390997% | 2.688825x | 529 | 849.62 |
+| Rolling 10y-base | 10.855449% | 0.687956 | 25.531641% | 7.483276x | 915 | 1502.36 |
+| Rolling 10y-stress | 9.788548% | 0.608831 | 26.748189% | 7.489355x | 915 | 3134.64 |
+| Rolling 5y-base | 10.316155% | 0.502382 | 26.038095% | 8.008784x | 481 | 698.65 |
+| Rolling 5y-stress | 9.059765% | 0.418703 | 27.228942% | 8.025638x | 481 | 1321.78 |
+
+Equal passes all CAGR and five-year SPY/extra-SPY gates. Every equal Sharpe,
+drawdown and QQQ gate fails; ten-year SPY gates fail. Rolling fails every
+original gate. No passing fragment, near-15% drawdown or alternate RF is
+promoted. All original acceptance remains.
+
+Against cached original-eight controls, both rules have lower CAGR and Sharpe
+on all paths. Equal drawdown worsens ten years and improves five years;
+equal turnover falls ten years and rises five years, while tickets and fees
+increase everywhere. Rolling drawdown, turnover and tickets rise everywhere;
+fees fall only ten-year stress. These are whole-policy contrasts, not
+isolated causal calendar alpha or fee effects. No old control is replayed.
+
+The retained derivation has121decisions,242input/resolved records, all36pairs
+per mature decision,266076round-tripped NET/RF values and five exact prefixes.
+Independent target/weight/score gaps are at most
+1.1103e-16/2.2205e-16/5.3291e-15. All eight funded accounts and independent BT
+retain original full dates, costs, delays, RF and initial peak. Minimum
+cashUSD167.8799819, maximum gross0.983770526 and maximum BT gapUSD1.3824e-10;
+broker orders0.
+
+The versioned read-only schema3 calendar-source Adapter preserves actual
+registration/publication/native-target chronology, all four source books,
+exact common RF and score maturity. A failed test used a standalone
+round-trip parser of the raw RF CSV instead of the existing admitted
+`review_market` construction. The original source and canonical reader were
+already exactly compatible; neither RF bytes, source book, view, tolerance
+nor admission scope changed. That failed fixture and the corrected tests remain.
+
+Current authoritative journal957:89registrations,80completed reviews,nine
+technical failures,zero pending,320formal funded paths,
+**258combined completions,zero qualifiers; investment goal unmet**.
+The source calendar rejection and technical admission are preserved.
+This study-specific ninth member is not global roster promotion or nine
+independent economic risks. No source model, target, shadow, account or
+benchmark is replayed, and exposed historical computation is not forward proof.
+
+## Preserved calendar seasonal source snapshot: complete, rejected, technically admitted
 
 The [complete four-path result](evidence/calendar_seasonal_financial_20261105_results_v1.json)
 retains actual preregistration `17b4e56708b51f2f440798462adeec3ec51d58e4`.
@@ -41,7 +98,7 @@ exact common RF are checked. A new deliberate pool-inclusion study is required.
 Same underlying stocks and exposed history do not establish an independent
 economic factor or independent forward proof.
 
-Current authoritative journal934:87registrations,78completed reviews,nine
+At this closed calendar-source snapshot, journal934:87registrations,78completed reviews,nine
 retained financial technical failures,zero pending,312formal funded paths,
 **256combined completions,zero qualifiers; investment goal unmet**.
 The original source/market/refusal/forward identities are unchanged. Prior
