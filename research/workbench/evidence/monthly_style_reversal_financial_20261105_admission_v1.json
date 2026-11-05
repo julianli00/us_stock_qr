@@ -1,0 +1,162 @@
+{
+  "actual_authoritative_counts": {
+    "current_journal_event_count": 969,
+    "current_journal_head_sha256": "c95cc89d7ebaa0997359bfe35703ed76895bb044c669ea8c77b2548ab829f37f",
+    "new_account_paths": 324,
+    "new_completed_strategy_evaluations": 81,
+    "new_historical_point_gate_passes": 0,
+    "new_pending_candidates": 0,
+    "new_registered_candidates": 90,
+    "new_reviews": 81,
+    "new_technical_failures": 9,
+    "original_completed_configurations": 178,
+    "original_registered_versions": 96,
+    "original_reviews": 94,
+    "total_legacy_plus_ssd_completed_configurations": 259
+  },
+  "adapter": "monthly",
+  "admitted_at": "2026-11-05T06:50:01.092183+00:00",
+  "candidate_id": "monthly_style_reversal_v1",
+  "current_global_pool_or_roster_changed": false,
+  "evidence": {
+    "NET_maturity_boundary_observations": [
+      {
+        "NET_observations": 0,
+        "date": "2016-10-05",
+        "score_mature": false
+      },
+      {
+        "NET_observations": 125,
+        "date": "2017-04-05",
+        "score_mature": false
+      },
+      {
+        "NET_observations": 126,
+        "date": "2017-04-06",
+        "score_mature": true
+      }
+    ],
+    "actual_style_families_by_path": {
+      "10y-base": [
+        "MTUM",
+        "VLUE",
+        "QUAL",
+        "USMV",
+        "IJR",
+        "PKW"
+      ],
+      "10y-stress": [
+        "MTUM",
+        "VLUE",
+        "QUAL",
+        "USMV",
+        "IJR",
+        "PKW"
+      ],
+      "5y-base": [
+        "MTUM",
+        "VLUE",
+        "QUAL",
+        "USMV",
+        "IJR",
+        "PKW"
+      ],
+      "5y-stress": [
+        "MTUM",
+        "VLUE",
+        "QUAL",
+        "USMV",
+        "IJR",
+        "PKW"
+      ]
+    },
+    "adapter": "monthly",
+    "availability_observations_checked": 138,
+    "candidate_id": "monthly_style_reversal_v1",
+    "completed_paths": {
+      "10y-base": {
+        "path": "reports/ssd-continuous-research-v1/monthly-style-reversal-financial-20261105-v1/accounts/10y-base/complete.json",
+        "sha256": "82cf8fe2061ccc379d3cde1525d3a521df9648c6ce1be187416a470a836bbc52"
+      },
+      "10y-stress": {
+        "path": "reports/ssd-continuous-research-v1/monthly-style-reversal-financial-20261105-v1/accounts/10y-stress/complete.json",
+        "sha256": "dfbd28e2a003dd104ab7992b14fc534958ec4358dee64580fc9c262e0b07770c"
+      },
+      "5y-base": {
+        "path": "reports/ssd-continuous-research-v1/monthly-style-reversal-financial-20261105-v1/accounts/5y-base/complete.json",
+        "sha256": "c0334bcba9e1e0df9037065427a521d3bf8fab07885ea013e7658b0f49787627"
+      },
+      "5y-stress": {
+        "path": "reports/ssd-continuous-research-v1/monthly-style-reversal-financial-20261105-v1/accounts/5y-stress/complete.json",
+        "sha256": "44299054d06423836b038d2e99865674b22f59974e83ab946b17f9f409957f33"
+      }
+    },
+    "current_global_pool_or_roster_changed": false,
+    "financial_results": {
+      "path": "reports/ssd-continuous-research-v1/monthly-style-reversal-financial-20261105-v1/results.json",
+      "sha256": "abc868d9ab9f765ad8b9b2b6a318d94e04f2ec9ac7c0a1293bacfb5fdff2d5aa"
+    },
+    "financial_reviewed_at": "2026-11-05T06:16:30.799947+00:00",
+    "funding_and_independent_BT_checked_all_four_paths": true,
+    "historical_counterfactual_availability": true,
+    "independent_forward_validation": false,
+    "introduced_at": "2026-11-05T06:13:35.953079+00:00",
+    "investment_objective_verified": false,
+    "mechanism_group": "monthly_cross_sectional_style_reversal",
+    "native_RF_exact_common": true,
+    "native_month_end_opinions": 133,
+    "native_source_targets": {
+      "frozen_specification_sha256": "ae74187bcb6783d2911856ddddb5b6d77bd704196bbfd66ad983b5af96e962b4",
+      "proof": {
+        "path": "reports/ssd-continuous-research-v1/monthly-style-reversal-financial-20261105-v1/native-source/proof.json",
+        "sha256": "db95cf73f68f74d162431ce15cdcf3daf284b4133690cfdd2714ad3e49eb80fe"
+      },
+      "targets": {
+        "path": "reports/ssd-continuous-research-v1/monthly-style-reversal-financial-20261105-v1/native-source/targets.csv",
+        "sha256": "9e6987cc438451970d34d891dc7ceeb4d73c8b8c7d6928fc88b75bcbacd4162d"
+      }
+    },
+    "order_authority": false,
+    "original_source_scope_and_information_clock_preserved": true,
+    "pool_inclusion_requires_new_separate_study": true,
+    "registered_event_sha256": "ca5dd7d90d47b52bb6b27f50a2078c836b4a1bf77e5ef5205fa9c7be97833afa",
+    "registration": {
+      "path": "evidence/monthly_style_reversal_financial_20261105_registration_v1.json",
+      "sha256": "cc97de80a0dd2e41d11e0c54fa9053ea01fcf8031f2c86b6d57c44495529a75b"
+    },
+    "source_packet_schema": 3,
+    "source_targets_shadows_or_accounts_replayed": false,
+    "standalone_financial_verdict_preserved": "rejected",
+    "technical_admission_is_final_qualification": false
+  },
+  "financial_completion": {
+    "path": "reports/ssd-continuous-research-v1/monthly-style-reversal-financial-20261105-v1/completion-v1.json",
+    "sha256": "2b5d75155a8566fc35b0ebed4a13b1ec485b9bd7a979cf809542ec6bbcea3ad0"
+  },
+  "financial_results": {
+    "path": "reports/ssd-continuous-research-v1/monthly-style-reversal-financial-20261105-v1/results.json",
+    "sha256": "abc868d9ab9f765ad8b9b2b6a318d94e04f2ec9ac7c0a1293bacfb5fdff2d5aa"
+  },
+  "funding_and_independent_BT_checked_all_four_paths": true,
+  "global_pool_changed": false,
+  "independent_forward_validation": false,
+  "introduced_at": "2026-11-05T06:13:35.953079+00:00",
+  "investment_objective_verified": false,
+  "mechanism_group": "monthly_cross_sectional_style_reversal",
+  "native_RF_exact_common": true,
+  "new_strategy_evaluations": 0,
+  "order_authority": false,
+  "pool_inclusion_requires_new_separate_study": true,
+  "registered_event_sha256": "ca5dd7d90d47b52bb6b27f50a2078c836b4a1bf77e5ef5205fa9c7be97833afa",
+  "registration": {
+    "path": "evidence/monthly_style_reversal_financial_20261105_registration_v1.json",
+    "sha256": "cc97de80a0dd2e41d11e0c54fa9053ea01fcf8031f2c86b6d57c44495529a75b"
+  },
+  "review_implementation_freeze": {
+    "path": "reports/ssd-continuous-research-v1/monthly-style-reversal-admission-20261105-v1/review-implementation-freeze-v1.json",
+    "sha256": "34a46b474157f161997ddeab4454d946f3337dd5a67bd0b6eb62ebffa7eff334"
+  },
+  "standalone_financial_verdict_preserved": "rejected",
+  "technical_admission_is_final_qualification": false,
+  "technical_expert_admitted": true
+}

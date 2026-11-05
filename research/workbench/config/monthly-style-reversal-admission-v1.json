@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_monthly_style_reversal_admission_20261105_v1",
+  "candidate_id": "monthly_style_reversal_v1",
+  "mechanism_group": "monthly_cross_sectional_style_reversal",
+  "source_packet_schema": 3,
+  "universe": ["SPY", "IEF", "GLD", "BIL", "MTUM", "VLUE", "QUAL", "USMV", "TLT", "QQQ", "XLK", "SOXX", "IJR", "PKW"],
+  "minimum_actual_style_families_per_path": 3,
+  "existing_positive_weight_threshold": 1e-10,
+  "existing_independent_BT_tolerance_usd": 1e-6,
+  "maximum_gross_exposure": 1.0,
+  "minimum_cash_usd": 0.0,
+  "score_lookback": 126,
+  "RF_comparison": "exact_original_canonical_review_market_series",
+  "financial_performance_is_technical_admission_gate": false,
+  "new_source_requests": 0,
+  "source_targets_or_accounts_replayed": false,
+  "global_pool_promotion": false,
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "order_authority": false
+}

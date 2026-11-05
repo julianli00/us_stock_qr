@@ -40,10 +40,26 @@ BT gapUSD2.1828e-11; broker orders0. Observed turnover and fees are disclosed
 without inventing a numeric turnover cap or asserting a causal fee attribution.
 No prior source model, target, account or benchmark is replayed.
 
-The separate technical expert-admission review has not yet been performed.
-Financial rejection alone does not exclude an otherwise valid strategy expert;
-neither technical admission nor study-specific/global membership is asserted.
-Original global rosters, source refusals and forward identities remain unchanged.
+The [separate technical admission](evidence/monthly_style_reversal_financial_20261105_admission_v1.json)
+now passes the unchanged source/funding/accounting standards. All four saved
+books retain original dates, nonnegative cash, unleveraged exposure and original
+independent BT evidence. MTUM, VLUE, QUAL, USMV, IJR and PKW have actual positive
+main-book weights on each path; this is measured participation, not six
+independent economic risks.
+
+The review observes133native refreshes and138availability dates, preserves actual
+registration958 introduction, and checks0/125/126NET maturity against the exact
+original canonical RF. The read-only `load_admitted_expert` Interface additionally
+checks the entire2512-observation RF series, rejects an altered early value or
+cropped universe, and cannot backdate technical admission or add trading authority.
+Twenty-four synthetic review/consumer checks preceded the frozen implementation
+and actual review. No ranking, target, shadow, account or benchmark is rerun.
+
+Financial rejection remains unchanged; technical admission alone does not choose
+a study-specific or global pool member. The original financial result's
+pending-review flag is retained as its historical financial-close snapshot,
+not rewritten. Original global rosters, source refusals and forward identities
+remain unchanged. This review adds no financial configuration or qualifying path.
 
 Current authoritative J969:90registrations,81completed reviews,nine technical
 failures,zero pending,324formal funded paths,

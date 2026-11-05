@@ -65,8 +65,15 @@ fails. No window, selected count, ranking, weight, cost, RF or acceptance is
 changed to rescue it. The original full dates, cash funding and delayed execution
 remain; minimum cashUSD162.0123061 and maximum independent BT gapUSD2.1828e-11.
 Five real main-book prefixes are exact auxiliary audits, not extra economic rules.
-The separate technical expert-admission review is still unfinished. Financial
-rejection alone is not technical exclusion, and the original global pool is unchanged.
+The [separate technical admission](research/workbench/evidence/monthly_style_reversal_financial_20261105_admission_v1.json)
+passes without changing financial rejection. It verifies all four saved funded
+books, six actual style families on each path,133native opinions,138availability
+observations and exact original RF/0-125-126NET maturity. The read-only consumer
+Interface also checks the whole2512-observation RF history, not only its last126.
+No financial path, source target or benchmark is replayed. The old result remains
+the financial-close snapshot; its earlier pending-review flag is not rewritten.
+Technical admission is not final qualification or automatic membership, and the
+original global expert pool remains unchanged.
 **259 combined completions, zero qualifiers; investment goal unmet.**
 
 ### Preserved calendar expert inclusion snapshot: both complete rules rejected
