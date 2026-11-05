@@ -4,7 +4,53 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Signed style activity: technical admission, no pool promotion
+## Signed-activity nine V2: complete cohort preregistered
+
+This study retains the original eight and adds only the admitted complete
+signed-style-activity policy. Equal weighting and the original126/84/42,
+two-expert,trainingERC/weakerNET-period rule, cost proxy/21,12-decimal ties
+and all36pairs remain unchanged. Actual study membership is deliberate,
+not global promotion or an independent-risk claim. All272completed
+configurations and the source's rejection are exposed; the new question is
+not untouched OOS or independent forward validation.
+
+The preserved V1freeze`32c950f0`accidentally reused the historical paired
+activity equal ID from registration787/review820. That prior study replaces
+one slot in an eight-source pool; it is not this new signed-participation
+ninth source. The V1attempt stops before any new event, derivation or capital.
+Its [actual failure](evidence/style_activity_inclusion_identity_collision_20261105_v1.json)
+is retained without changing J1121, old identities or trial classification.
+V2 changes only the namespace and adds an atomic whole-cohort identity check.
+Every economic source, pool, score, parameter, RF, cost, band and acceptance
+field is identical. Thirty original synthetic checks plus three namespace
+regressions/Ruff pass before freeze.
+
+Actual V2freeze`9a97b0b1`pins190dependencies,2610source references,nine
+source clocks and17explicit tested inputs. Registration1122 at
+**2026-11-05T20:32:06.187981Z** and1123 at **20:32:06.816927Z**
+precede every new meta score/target. Proof1124/1125retain121meta decisions,
+242input/result records,266076exact NET/RFbinary64values, every36-pair
+assessment and five exact source-consumer prefixes. These shared inputs
+are not two independent samples. Both horizons retain all six actual
+style/factor symbols. Source opinions,shadows,accounts and benchmarks are
+consumed from saved evidence, not regenerated.
+
+Maximum independent expert-weight gap2.220446049250313e-16,
+target gap1.1102230246251565e-16 and NET-score gap5.329070518200751e-15.
+The [equal](evidence/signed_style_activity_expert_inclusion_20261105_v2_0_registration_v1.json)
+and [rolling](evidence/signed_style_activity_expert_inclusion_20261105_v2_1_registration_v1.json)
+schema2packets explicitly require the complete fixed cohort before funding.
+Actual registration/proof takes44.59093612502329seconds,
+Darwin peakRSS474570752bytes.
+
+**Current J1125:105registrations,94completed reviews,nine technical failures,
+two pending,376funded paths,272combined completions and zero qualifiers.**
+Neither new candidate has funded paths or financial metrics yet.
+Both exact packets/code must be remotely published before the original eight
+new full10y/5y/base/stress,freshUSD10000paths and independentBT may start.
+The source's financial rejection and all qualification gates remain.
+
+## Preserved signed-style technical admission snapshot J1121
 
 The [separate technical certificate](evidence/style_activity_financial_20261105_admission_v1.json)
 admits the same financially rejected complete policy at
@@ -89,7 +135,7 @@ Darwin peakRSS437137408bytes. Registration's4.363728083000751seconds are
 separate, not financial runtime. Thirty-three new financial checks/Ruff pass
 before the162-dependency/31-source/13-explicit-input financial freeze.
 
-**Current J1121:103registrations,94completed reviews,nine technical failures,
+**At that financial close, J1121:103registrations,94completed reviews,nine technical failures,
 zero pending,376funded paths,272combined completions,zero qualifiers;
 investment goal unmet.** Old source verifiers, primary compatibility,
 strategies, accounts and benchmarks are not replayed. Four-fund activity scope,

@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 103 SSD identities, 94 completed/rejected, nine retained technical failures and zero pending; 376 funded paths | Journal1121 current summary: 272 combined completions, zero qualifiers; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 105 SSD identities, 94 completed/rejected, nine retained technical failures and two pending; 376 funded paths | Journal1125 current preregistration: 272 combined completions, zero qualifiers; two new registered rules have no funded outcome yet |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -45,6 +45,33 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
+### Signed-activity nine: registered, not yet funded
+
+The [controlled inclusion](research/workbench/SIGNED_STYLE_ACTIVITY_EXPERT_INCLUSION_V2.md)
+retains the original eight complete experts and adds only the separately
+admitted signed-style-activity policy in this study. The equal control and
+original126/84/42,two-expert,trainingERC/NET-validation rule are unchanged.
+Nine source descriptions do not establish nine independent risks; original
+global seven/eight rosters and the source's financial rejection remain.
+
+An initial frozen implementation accidentally reused an unrelated historical
+candidate ID from registration787. It stopped before any new ledger event,
+target or capital; the [failure](research/workbench/evidence/style_activity_inclusion_identity_collision_20261105_v1.json)
+and frozen V1 remain. V2 changes only the namespace and adds an atomic
+all-cohort identity preflight, not a source, parameter or financial-gate rescue.
+
+Actual registrations1122/1123 at **2026-11-05T20:32:06.187981Z** and
+**20:32:06.816927Z** precede121new meta decisions,242retained input/result
+records,266076NET/RFbinary64checks, all36pairs and five exact prefixes.
+The [equal packet](research/workbench/evidence/signed_style_activity_expert_inclusion_20261105_v2_0_registration_v1.json)
+and [rolling packet](research/workbench/evidence/signed_style_activity_expert_inclusion_20261105_v2_1_registration_v1.json)
+retain both identities. Freeze`9a97b0b1`pins190dependencies,2610source
+references,nine source clocks and17explicit tested inputs. No source,
+shadow,account or benchmark is replayed. Both complete packets must be
+remotely published before either new candidate receives capital.
+**J1125:two pending rules,no new funded paths or financial outcomes;
+272 completions,zero qualifiers. Investment goal remains unmet.**
+
 ### Signed style activity: admissible expert, still financially rejected
 
 The [separate read-only technical admission](research/workbench/evidence/style_activity_financial_20261105_admission_v1.json)
@@ -60,8 +87,8 @@ The saved-source consumer retains2512NET/RFobservations. Its initial
 October5capital seed knows the prior September30opinion but has zeroNET
 observations;125/126observations remain unscored/mature. Technical admission
 makes this an **admissible nonselected complete policy**, not a new independent
-risk family or a promotion into the global seven/eight rosters. A separate
-controlled pool study is still required. Financial rejection, all qualification
+risk family or a promotion into the global seven/eight rosters. Membership in
+the new study is separately defined above. Financial rejection, all qualification
 gates and **272 completions,zero qualifiers** are unchanged.
 
 ### Signed style activity: four complete paths rejected
