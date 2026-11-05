@@ -4,6 +4,67 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Retained current-opinion geometry: a descriptive diagnosis
+
+The [new aggregate evidence](evidence/expert_opinion_geometry_20261105_results_v1.json)
+consumes only the preserved current-opinion and saved selected-pair records of
+the closed original-eight-plus-price-impact cohort. It is not a new medoid,
+instrument-HHI, next-month risk calibration or fee-estimate rule. No source,
+score, target, shadow, account, benchmark or old diagnostic is replayed.
+All121decision states, including seven unscored origins, and all4356current
+opinion-pair cases remain. Every new operand record precedes its calculation;
+242new input/resolved records remain private.
+
+| Distinct current asset opinions | First-eight same-date opinion set | All-nine opinion set |
+| --- | ---: | ---: |
+| 6 | 9 | 7 |
+| 7 | 75 | 64 |
+| 8 | 37 | 29 |
+| 9 | 0 | 21 |
+
+| Numerical affine rank at the frozen resolution | First-eight same-date opinion set | All-nine opinion set |
+| --- | ---: | ---: |
+| 3 | 10 | 8 |
+| 4 | 78 | 77 |
+| 5 | 33 | 36 |
+
+The source-specific additional opinion exactly matches another on85of121dates.
+It adds a numerical affine direction on5dates; the exact binary64rational
+rank increases on6dates. Exact all-nine ranks4/5/6occur13/77/31times, versus
+15/79/27for the first eight. Exact and numerical ranks are deliberately
+separate: finite representation can create directions below the declared
+numerical resolution. The common per-date threshold is the larger of1e-12
+and max(rows,columns) times binary64epsilon times the full centered largest
+singular value. No tolerance is changed after results.
+
+Of114saved mature selected pairs,20have identical current underlying
+opinions. Selected-pair normalized ETF-coordinate overlap has minimum0,
+median0.4376567580412044and maximum1. Neither identical current opinions nor
+overlap makes complete expert policies identical or technically invalid.
+Past source behavior and future opinion changes can differ.
+Affine direction is not an independent economic risk, covariance forecast,
+stock overlap, executable convex replication, actual turnover or fees.
+Same-date first-eight comparisons are opinion geometry, not replayed old
+financial controls. No membership or financial acceptance follows.
+
+PrototypeV1retains24passing tests, one failed policy test and five Ruff findings:
+its validator mistakenly imported a legacy12-asset constant, while both the
+configured and actual source use the admitted14-asset order. The unfrozen
+prototype was corrected to that unchanged source constant, with strict zip,
+unused-import and literal-syntax fixes. No universe crop, fallback, rank
+algorithm, tolerance, source, RF or financial gate changed. AllV1prototypes,
+logs and XMLremain;V2passes25synthetic geometry/scalar-oracle/record-Adapter
+checks and Ruff before implementation freezeacaf.
+
+The actual frozen calculation finishes at **2026-11-05T11:52:25.444779Z**,
+wall9.351468125008978seconds. Independent scalar distance/overlap discrepancy
+is at most2.220446049250313e-16; exact/numerical rank bounds hold on every case.
+This is descriptive exposed-history evidence, not causal alpha, calibrated
+probability, independent OOS or prospective validation. All financial totals
+remain **J1062/98registrations/89completed/nine technical/zero pending/
+356paths/267combined completions/zero qualifiers**. The original source
+scope, global rosters and failed financial outcomes remain unchanged.
+
 ## Controlled price-impact inclusion: both complete rules rejected
 
 The [complete eight-path result](evidence/lagged_spy_price_impact_expert_inclusion_20261105_results_v1.json)

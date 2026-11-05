@@ -45,6 +45,22 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
+### Retained opinion geometry: mechanism labels are not current exposure diversity
+
+The [new read-only diagnosis](research/workbench/evidence/expert_opinion_geometry_20261105_results_v1.json)
+retains all121saved decision states and4356current-opinion pairs.
+Nine complete experts produce6/7/8/9distinct current opinions on7/64/29/21dates.
+The added price-impact expert exactly matches another current opinion on85dates
+and adds a numerical affine direction on only5dates under the frozen resolution.
+Of114saved mature selected pairs,20have identical current opinions; seven
+unscored origins remain explicitly unscored. Median selected-pair ETF-coordinate
+overlap is0.437656758. Numerical affine rank is3-5, not a count of economic risks.
+
+This is not a new portfolio rule, a replayed scorer or independent forward proof.
+Equal opinions do not invalidate complete experts, and affine span does not
+establish a cash-funded convex replacement. No member, financial gate or
+failed outcome changes. **267 combined completions, zero qualifiers remain.**
+
 ### Controlled price-impact inclusion: both complete rules rejected
 
 The [complete eight-path outcome](research/workbench/evidence/lagged_spy_price_impact_expert_inclusion_20261105_results_v1.json)
