@@ -4,7 +4,65 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Monthly style reversal: complete source-policy rejection
+## Controlled reversal expert inclusion: both complete rules rejected
+
+The [complete eight-path result](evidence/reversal_expert_inclusion_20261105_results_v1.json)
+retains exactly the original eight plus the admitted monthly style-reversal
+source. Registrations970/971 at **2026-11-05T07:19:24.458390Z /
+07:19:24.937407Z** precede new static meta-target proofs972/973.
+Actual complete-cohort preregistration
+`d7db8229bfe18f5aa0f8c9839f583a23f3ee7b5d` and fence974 at
+**07:22:55.823881Z** precede first account975. Reviews983/992 at
+**07:23:05.275620Z / 07:23:48.773558Z** reject both rules.
+
+| Rule / original path | Net CAGR | RF-excess Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Model fees USD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Equal 10y-base | 14.497309% | 0.962118 | 20.222246% | 3.985135x | 1195 | 1549.45 |
+| Equal 10y-stress | 13.767384% | 0.909156 | 19.708370% | 3.976147x | 1195 | 2561.30 |
+| Equal 5y-base | 16.687904% | 0.972130 | 16.485679% | 4.085630x | 595 | 723.36 |
+| Equal 5y-stress | 15.474340% | 0.888959 | 16.733896% | 4.067913x | 595 | 1089.49 |
+| Rolling 10y-base | 11.775084% | 0.711599 | 21.640562% | 8.842964x | 914 | 1645.81 |
+| Rolling 10y-stress | 10.724784% | 0.640663 | 21.179287% | 8.836539x | 914 | 3723.87 |
+| Rolling 5y-base | 12.485500% | 0.612864 | 19.347564% | 9.658960x | 463 | 748.84 |
+| Rolling 5y-stress | 10.739170% | 0.506617 | 19.596345% | 9.647877x | 463 | 1564.98 |
+
+Equal passes every CAGR and five-year SPY/extra-SPY gate, but every Sharpe,
+drawdown and QQQ gate fails. Rolling passes only five-year base CAGR; all other
+original gates fail. No passing fragment or preferred15%CAGR replaces the
+same-rule joint conditions, and no score, window, count, weight or financial
+acceptance is retuned.
+
+Against prespecified cached original-eight controls, equal-nine has lower CAGR
+and Sharpe, higher drawdown, turnover, tickets and fees on every path.
+Rolling-nine has lower Sharpe, lower drawdown, higher turnover and higher fees
+everywhere. Rolling CAGR improves only five-year base; tickets rise ten years
+and fall five years. These are whole-policy membership contrasts, not isolated
+causal source alpha or fee effects. No old control is replayed.
+
+The original126/84/42mature NET/RF law, k2, ERC, weaker subperiod score, nominal
+switch proxy,21-session amortization and12-decimal ties remain. All36pairs at
+each mature decision,121capital/month-end decisions,242input/resolved records,
+266076round-tripped NET/RF values and five exact target prefixes are retained.
+Independent target/weight/score gaps are at most
+5.5512e-17/2.2205e-16/5.3291e-15. Actual factor target coverage on both horizons
+retains all six original style families. Listing nine complete experts does not
+establish nine independent risk sources.
+
+All eight fresh original accounts retain full2512/1254return dates, initial
+capital/peak, originalRF, base/stress fees, delayed opens and holding feedback.
+Minimum cashUSD176.2223343, maximum gross0.983148541 and maximum independent
+BT gapUSD5.8208e-11; broker orders0. No new source signal, fit, target or shadow,
+old account or benchmark is rerun. The source's separate technical admission
+does not erase its financial rejection or automatically change global rosters.
+
+Current authoritative J992:92registrations,83completed reviews,nine technical
+failures,zero pending,332formal funded paths,
+**261combined completions,zero qualifiers; investment goal unmet**.
+The two-rule size is this fixed study, not a future research-count limit.
+All earlier outcomes remain exposed; historical causality is not independent
+out-of-sample or prospective proof.
+
+## Preserved monthly style reversal source snapshot: complete financial rejection
 
 The [complete four-path result](evidence/monthly_style_reversal_financial_20261105_results_v1.json)
 retains actual registration958 at **2026-11-05T06:13:35.953079Z** and actual
@@ -61,7 +119,7 @@ pending-review flag is retained as its historical financial-close snapshot,
 not rewritten. Original global rosters, source refusals and forward identities
 remain unchanged. This review adds no financial configuration or qualifying path.
 
-Current authoritative J969:90registrations,81completed reviews,nine technical
+At the closed reversal-source snapshot, J969:90registrations,81completed reviews,nine technical
 failures,zero pending,324formal funded paths,
 **259combined completions,zero qualifiers; investment goal unmet**.
 All earlier outcomes remain exposed. Historical causality checks and a different

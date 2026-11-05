@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 90 SSD identities, 81 completed/rejected, nine retained technical failures and zero pending; 324 funded paths | Journal969 current summary: 259 combined completions, zero qualifiers; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 92 SSD identities, 83 completed/rejected, nine retained technical failures and zero pending; 332 funded paths | Journal992 current summary: 261 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -45,7 +45,34 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
-### Monthly style reversal: all four paths complete and rejected
+### Controlled reversal expert inclusion: both complete rules rejected
+
+The [complete eight-path outcome](research/workbench/evidence/reversal_expert_inclusion_20261105_results_v1.json)
+retains original-eight-plus-reversal membership and both unchanged equal and
+rolling laws. Actual registrations970/971 precede static target proofs972/973;
+preregistration`d7db8229bfe18f5aa0f8c9839f583a23f3ee7b5d` and fence974
+precede every funded account. Reviews983/992 reject both rules.
+
+| Rule / original path | Net CAGR | RF Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Model fees USD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Equal 10y-base | 14.497309% | 0.962118 | 20.222246% | 3.985135x | 1195 | 1549.45 |
+| Equal 10y-stress | 13.767384% | 0.909156 | 19.708370% | 3.976147x | 1195 | 2561.30 |
+| Equal 5y-base | 16.687904% | 0.972130 | 16.485679% | 4.085630x | 595 | 723.36 |
+| Equal 5y-stress | 15.474340% | 0.888959 | 16.733896% | 4.067913x | 595 | 1089.49 |
+| Rolling 10y-base | 11.775084% | 0.711599 | 21.640562% | 8.842964x | 914 | 1645.81 |
+| Rolling 10y-stress | 10.724784% | 0.640663 | 21.179287% | 8.836539x | 914 | 3723.87 |
+| Rolling 5y-base | 12.485500% | 0.612864 | 19.347564% | 9.658960x | 463 | 748.84 |
+| Rolling 5y-stress | 10.739170% | 0.506617 | 19.596345% | 9.647877x | 463 | 1564.98 |
+
+Equal passes all CAGR and five-year SPY/extra-SPY gates, but every Sharpe,
+drawdown and QQQ gate fails. Rolling passes only five-year base CAGR; every
+other original gate fails. Original full dates, costs, delays, RF and funding
+remain; maximum independent BT gapUSD5.8208e-11 and minimum cashUSD176.2223343.
+The source's financial rejection and separate technical admission remain.
+This deliberate study-specific ninth member is not global roster promotion.
+**261 combined completions, zero qualifiers; investment goal unmet.**
+
+### Preserved monthly style reversal source snapshot: all four paths rejected
 
 The [complete source-policy result](research/workbench/evidence/monthly_style_reversal_financial_20261105_results_v1.json)
 retains actual registration958 and preregistration
