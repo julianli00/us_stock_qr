@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_reversal_expert_inclusion_20261105_v1",
+  "source_expert_pool_policy_path": "config/strategy-expert-pool-eight-v1.json",
+  "prior_journal_sequence": 969,
+  "prior_journal_head_sha256": "c95cc89d7ebaa0997359bfe35703ed76895bb044c669ea8c77b2548ab829f37f",
+  "prior_completed_configurations": 259,
+  "reversal_source": {
+    "schema_version": 1,
+    "id": "monthly_style_reversal_v1",
+    "mechanism_group": "monthly_cross_sectional_style_reversal",
+    "introduced_at": "2026-11-05T06:13:35.953079+00:00",
+    "registration": {
+      "path": "evidence/monthly_style_reversal_financial_20261105_registration_v1.json",
+      "sha256": "cc97de80a0dd2e41d11e0c54fa9053ea01fcf8031f2c86b6d57c44495529a75b"
+    },
+    "results": {
+      "path": "reports/ssd-continuous-research-v1/monthly-style-reversal-financial-20261105-v1/results.json",
+      "sha256": "abc868d9ab9f765ad8b9b2b6a318d94e04f2ec9ac7c0a1293bacfb5fdff2d5aa"
+    },
+    "admission": {
+      "path": "reports/ssd-continuous-research-v1/monthly-style-reversal-admission-20261105-v1/technical-admission-v1.json",
+      "sha256": "0d233fb7d7bcb363587be4caf398f4aec81d77cffa353f60ef63830f6a750c9c"
+    },
+    "completion": {
+      "path": "reports/ssd-continuous-research-v1/monthly-style-reversal-admission-20261105-v1/completion-v1.json",
+      "sha256": "f3838f2d34e7ebfb06398953d79eb22421e524f74e9408198600627e34588b0a"
+    }
+  },
+  "matched_original_eight_results": {
+    "path": "evidence/eight_expert_inclusion_20261103_results_v1.json",
+    "sha256": "d3bce69f0e921ae6265218bbde6beeed58f8435caa20eaffb11ba9ba74808e7a"
+  },
+  "expert_ids": [
+    "equity_first_month_end_commitment_v1",
+    "benchmark_opportunity_joint_tail_v1",
+    "symmetric_garch_growth_bil_v1",
+    "semiconductor_ratchet_protection",
+    "semiconductor_option_dollar_profit_share_confirmation",
+    "four_factor_defense_diversified",
+    "two_segment_vvix_uncertainty_confirmation_v1",
+    "conditional_covariance_hedge_expert_v1",
+    "monthly_style_reversal_v1"
+  ],
+  "mechanism_groups": [
+    "committed_price_trend_defense",
+    "joint_tail_opportunity",
+    "conditional_variance_growth",
+    "wealth_feedback_protection",
+    "common_quarter_profit_dollar_confirmation",
+    "cross_asset_defensive_relative_strength",
+    "option_market_uncertainty_confirmation",
+    "conditional_cross_asset_hedge_suitability",
+    "monthly_cross_sectional_style_reversal"
+  ],
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "initial_decision_session": "2016-10-05",
+  "lookback_sessions": 126,
+  "training_sessions": 84,
+  "validation_sessions": 42,
+  "selected_experts": 2,
+  "selection_score_decimal_places": 12,
+  "reference_capital_usd": 10000,
+  "switch_cost_bps_per_side": 5.0,
+  "switch_commission_per_changed_asset_usd": 1.0,
+  "switch_cost_amortization_sessions": 21,
+  "changed_asset_numeric_tolerance": 1e-12,
+  "shadow_reference_path": "10y-base",
+  "invested_target_budget": 0.98,
+  "cash_reserve": 0.02,
+  "actual_weight_trade_band": 0.025,
+  "minimum_economic_factor_families": 3,
+  "decision_information_clock": "after_16_15_ET_index_close_before_later_open_execution",
+  "all_pairs_per_mature_decision": 36,
+  "candidates": [
+    {"id": "expert_pool_reversal_equal_v1", "weighting": "equal"},
+    {"id": "expert_pool_reversal_rolling_pair_v1", "weighting": "train_erc_validate_net"}
+  ],
+  "candidate_count_in_this_study": 2,
+  "study_size_is_a_total_research_quota": false,
+  "new_source_requests": 0,
+  "new_shadow_account_runs": 0,
+  "new_source_model_or_target_runs": 0,
+  "new_economic_factor_definitions": 0,
+  "original_active_seven_or_selected_eight_rosters_changed": false,
+  "nine_study_sources_claimed_independent_economic_risks": false,
+  "reversal_financial_rejection_preserved": true,
+  "new_RF_assessment_view_or_source_scope_waiver": false,
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "order_authority": false,
+  "pool_scope": {
+    "representatives": "Preserve the exact original eight representatives; the sole addition in this study is the admitted monthly style-reversal policy.",
+    "admissible_nonselected": "Other technically admitted calendar, credit and scoped macro policies are not part of this independently defined reversal-inclusion question. Related GJR and other existing nonselected variants retain their inherited status, not financial-performance exclusion.",
+    "unreviewed_archives": "Inherited unreviewed archive snapshots remain unreviewed, not automatically enabled or declared invalid.",
+    "invalid_or_unadmitted_archives": "Previously demonstrated technical-invalid, leveraged or source-unadmitted versions remain excluded; Term/RF/FXY/VNQ and terminal provider stops are not repaired.",
+    "selection_bias": "259 prior completions are exposed. A mechanism hypothesis is not evidence of independent risk, future gain or untouched out-of-sample validation."
+  }
+}
