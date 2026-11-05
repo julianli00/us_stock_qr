@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_expert_deletion_robust_pair_primary_20261105_v1",
+  "candidate_id": "expert_pool_nine_deletion_robust_pair_v1",
+  "source_pool_policy": {
+    "path": "config/lagged-spy-price-impact-expert-inclusion-v1.json",
+    "sha256": "d089bb061fc164dc328c00caa716d07bfb08ccf07d4b6620c817d815006f0118"
+  },
+  "source_cohort_completion": {
+    "path": "reports/ssd-continuous-research-v1/lagged-spy-price-impact-expert-inclusion-20261105-v1/completion-v1.json",
+    "sha256": "c2229fe31184f00bbb2d5d31f1b0130afef8ac0d6f1e8de398c7b486038572ab"
+  },
+  "source_influence_completion": {
+    "path": "reports/ssd-continuous-research-v1/expert-score-deletion-influence-20261105-v1/completion-v1.json",
+    "sha256": "d515f1bf9b4ebb9122b658cd3e5486f4313e51973465adeed23efbc5fbe9c86c"
+  },
+  "prior_journal_sequence": 1074,
+  "prior_journal_head_sha256": "7a2074649982220a74e62d2339527d5353eb7138f671992a58d3755114f3b050",
+  "prior_completed_configurations": 268,
+  "expert_count": 9,
+  "lookback_sessions": 126,
+  "training_sessions": 84,
+  "validation_sessions": 42,
+  "selected_experts": 2,
+  "all_pair_catalogue_size": 36,
+  "scorer": "lower_envelope_full_and_all_single_return_deleted_NET_excess_risk_scores",
+  "pair_weights": "unchanged_full_training_ERC",
+  "covariance_refitted_after_deletion": false,
+  "nominal_switch_proxy_fixed_across_deletions": true,
+  "switch_cost_amortization_sessions": 21,
+  "score_decimal_places": 12,
+  "exact_or_approximate_opinion_exclusion": false,
+  "cold_start": "original_unscored_equal_nine",
+  "no_admissible_pair": "explicit_equal_nine_known_opinions_not_safety_or_success",
+  "constant_full_or_deleted_sample": "conditional_pair_unscorable_no_neutral_score",
+  "invested_target_budget": 0.98,
+  "idle_cash_reserve": 0.02,
+  "actual_weight_trade_band": 0.025,
+  "decision_information_clock": "after_16_15_ET_index_close_before_later_open_execution",
+  "new_source_requests": 0,
+  "new_shadow_account_runs": 0,
+  "global_pool_changed": false,
+  "actual_registered_at_preparation": false,
+  "first_real_policy_derivation_requires_actual_registration": true,
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "order_authority": false
+}
