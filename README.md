@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 103 SSD identities, 93 completed/rejected, nine retained technical failures and one pending; 372 funded paths | Journal1110 preregistration snapshot: 271 combined completions, zero qualifiers; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 103 SSD identities, 94 completed/rejected, nine retained technical failures and zero pending; 376 funded paths | Journal1121 current summary: 272 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -45,7 +45,7 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
-### Signed style activity: actual registered program, real outputs deferred
+### Signed style activity: four complete paths rejected
 
 The [unchanged complete policy](research/workbench/STYLE_ACTIVITY_PARTICIPATION_V1.md)
 uses only four activity-admitted style funds,63lagged daily price directions
@@ -58,10 +58,28 @@ tested inputs. It does not import an older policy's RF or alter source scope.
 1110 at **2026-11-05T19:08:36.964729Z** precedes every real new balance,
 ranking, opinion, target or account. The packet publishes the complete causal
 program; synthetic readiness is explicitly not historical target proof.
-Full code/program publication is required before actual source derivation and
-all four original funded paths. This preregistration snapshot has no new
-financial result, admitted expert or pool change.
-**271 completions,zero qualifiers; investment goal unmet.**
+The complete program actually publishes at
+`41b9c95a32bf5e2452cf0b253b59c85cdb1bf533` before fence1111 and every new
+real balance, opinion, target and funded account. Actual native proof retains
+131opinions,262input/resolved records,99560binary64input values,524independent
+balance checks and five exact source prefixes. Four fresh original paths and
+five explicitly auxiliary main-book prefixes complete before proof1120 and
+review1121. The [complete outcome](research/workbench/evidence/style_activity_financial_20261105_results_v1.json)
+rejects the unchanged policy.
+
+| Original path | Net CAGR | RF Sharpe | Maximum DD |
+| --- | ---: | ---: | ---: |
+| 10y-base | 3.053884% | 0.106624 | 33.073950% |
+| 10y-stress | 1.904201% | 0.016954 | 33.064593% |
+| 5y-base | 1.869004% | -0.204727 | 10.542667% |
+| 5y-stress | 1.118478% | -0.296735 | 13.041489% |
+
+Only the two five-year drawdown gates pass. All CAGR, Sharpe, SPY/QQQ and extra
+stress/base-SPY gates fail; no passing fragment changes qualification.
+There is no matched comparison isolating volume alpha. Technical expert review
+remains separate, and financial rejection alone is not technical exclusion.
+No expert or global pool membership is promoted automatically.
+**272 completions,zero qualifiers; investment goal unmet.**
 
 ### Saved mixed-six losses: actual fees are not the whole decline
 

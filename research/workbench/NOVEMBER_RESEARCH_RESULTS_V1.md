@@ -4,7 +4,62 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Signed style activity: registered program before real outputs
+## Signed style activity: complete financial rejection
+
+The [complete outcome](evidence/style_activity_financial_20261105_results_v1.json)
+evaluates the exact`fd291d06`policy through the separately frozen`a3d1d6d1`
+schema3 program. Actual registration1110 precedes full code/program publication
+`41b9c95a32bf5e2452cf0b253b59c85cdb1bf533`. Fence1111 at
+**2026-11-05T19:14:04.631667Z** precedes every real new balance, native opinion,
+target and account. The registered synthetic readiness remains a historical
+pre-output descriptor, not a retroactively rewritten target proof.
+
+The actual source proof covers131genuine native month ends,262retained
+input/resolved records,99560binary64price/volume inputs and524independent
+four-style balance checks. Every scalar/Fraction balance, strict positive
+eligibility,12-decimal lexical ordering and complete14-asset target agrees.
+Maximum independent scalar/NumPy gap is2.220446049250313e-16.
+Five exact target/audit prefixes retain the whole native prehistory.
+Both original horizons show actual MTUM/VLUE/QUAL/USMV participation.
+October5capital seeds carry prior September30opinions; no source event is
+fabricated. All old-dated opinions remain counterfactual, not a2015introduction.
+
+| Original path | Net CAGR | RF Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Model fees USD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 10y-base | 3.053884% | 0.106624 | 33.073950% | 7.951334x | 203 | 684.41 |
+| 10y-stress | 1.904201% | 0.016954 | 33.064593% | 7.942258x | 203 | 2012.82 |
+| 5y-base | 1.869004% | -0.204727 | 10.542667% | 7.002475x | 81 | 264.91 |
+| 5y-stress | 1.118478% | -0.296735 | 13.041489% | 6.997190x | 81 | 814.67 |
+
+Only the two five-year DD<=15%gates pass. All CAGR>12%, RFSharpe>1,
+SPY,QQQ and extra stress/base-SPY gates fail. No partial pass, preferred15/20%
+CAGR, activity interpretation or shorter window rescues the unchanged policy.
+
+Every formal path retains full2512/1254returns, freshUSD10000, initial peak,
+original canonicalRF,5/20bps+$1ticket,1/2later-open delays, cash funding and
+actual holdings feedback. Independent accounting/BT and source-known-at/capital
+state agree. Five separately versioned real main-book prefixes are exact;
+they are auxiliary causality evidence, not five more economic trials.
+Proof1120 at **19:14:38.378158Z** follows actual published native/funded output;
+review1121 at **19:14:38.678895Z** rejects the complete unchanged policy.
+
+Minimum cashUSD178.67019148978238, maximum gross0.9828995821960849 and maximum
+independent BT gapUSD1.8189894035458565e-11; actual broker orders0.
+Financial process40575 exits0 in **47.83807704198989seconds**,
+Darwin peakRSS437137408bytes. Registration's4.363728083000751seconds are
+separate, not financial runtime. Thirty-three new financial checks/Ruff pass
+before the162-dependency/31-source/13-explicit-input financial freeze.
+
+**Current J1121:103registrations,94completed reviews,nine technical failures,
+zero pending,376funded paths,272combined completions,zero qualifiers;
+investment goal unmet.** Old source verifiers, primary compatibility,
+strategies, accounts and benchmarks are not replayed. Four-fund activity scope,
+source prices, original RF, all failures and global seven/eight rosters remain.
+There is no matched comparison isolating activity alpha. Technical expert review
+and controlled pool inclusion are still separate later questions; standalone
+financial rejection alone does not establish technical invalidity.
+
+## Preserved signed-style program preregistration snapshot J1110
 
 The [primary](STYLE_ACTIVITY_PARTICIPATION_V1.md) remains exactly`fd291d06`:
 only MTUM/VLUE/QUAL/USMV reported-activity inputs,63daily adjusted-close
