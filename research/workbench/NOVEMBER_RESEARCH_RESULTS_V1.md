@@ -4,7 +4,54 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Controlled calendar expert inclusion: both complete rules rejected
+## Monthly style reversal: complete source-policy rejection
+
+The [complete four-path result](evidence/monthly_style_reversal_financial_20261105_results_v1.json)
+retains actual registration958 at **2026-11-05T06:13:35.953079Z** and actual
+preregistration `471e07dea9ef26a117fa19ecc7ced679e1e35423`.
+Fence959 at **06:15:59.111259Z** precedes the first real native target and
+account960. After all four paths and five real main-book prefixes, proof968 at
+**06:16:30.557623Z** and review969 at **06:16:30.799947Z** preserve rejection.
+
+| Original path | Net CAGR | RF-excess Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Model fees USD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 10y-base | 11.872503% | 0.556957 | 40.098268% | 15.562712x | 377 | 1716.48 |
+| 10y-stress | 9.398514% | 0.438882 | 40.085819% | 15.539111x | 377 | 5044.43 |
+| 5y-base | 11.668488% | 0.502684 | 26.872444% | 16.153642x | 195 | 661.77 |
+| 5y-stress | 9.645553% | 0.396781 | 26.923210% | 16.128377x | 195 | 1963.31 |
+
+Every original CAGR, Sharpe, drawdown, matched SPY/QQQ and extra stress/base-SPY
+gate fails. The frozen monthly bottom-two21-session style-reversal hypothesis
+does not pass; a near12%CAGR is not greater than12%, and the2%idle reserve is
+not a drawdown guarantee. No window, count, tie rule, target, fee, timing, RF
+or acceptance is retuned after seeing these outcomes.
+
+The native source has133eligible monthly opinions after the original22-price
+warmup. Its retained266input/resolved records check17556binary64price inputs
+against independently calculated scalar ratios, ranking and complete targets.
+Five source prefixes and five separately versioned real main-capital prefixes
+retain earlier targets, capital and decisions exactly. The latter are auxiliary
+audits, not extra economic trials or qualifying windows.
+
+All2512/1254formal return dates, freshUSD10000, initial peak, originalRF,
+cash funding,2.5ppactual-holding band, base/stress fees and delayed opens remain.
+Minimum cashUSD162.0123061, maximum gross0.983860298 and maximum independent
+BT gapUSD2.1828e-11; broker orders0. Observed turnover and fees are disclosed
+without inventing a numeric turnover cap or asserting a causal fee attribution.
+No prior source model, target, account or benchmark is replayed.
+
+The separate technical expert-admission review has not yet been performed.
+Financial rejection alone does not exclude an otherwise valid strategy expert;
+neither technical admission nor study-specific/global membership is asserted.
+Original global rosters, source refusals and forward identities remain unchanged.
+
+Current authoritative J969:90registrations,81completed reviews,nine technical
+failures,zero pending,324formal funded paths,
+**259combined completions,zero qualifiers; investment goal unmet**.
+All earlier outcomes remain exposed. Historical causality checks and a different
+allocation mechanism are not independent out-of-sample or prospective proof.
+
+## Preserved controlled calendar inclusion snapshot: both complete rules rejected
 
 The [complete eight-path result](evidence/calendar_expert_inclusion_20261105_results_v1.json)
 retains original-eight-plus-calendar membership, equal ninths and the unchanged
@@ -53,7 +100,7 @@ round-trip parser of the raw RF CSV instead of the existing admitted
 already exactly compatible; neither RF bytes, source book, view, tolerance
 nor admission scope changed. That failed fixture and the corrected tests remain.
 
-Current authoritative journal957:89registrations,80completed reviews,nine
+At the closed calendar-inclusion snapshot, journal957:89registrations,80completed reviews,nine
 technical failures,zero pending,320formal funded paths,
 **258combined completions,zero qualifiers; investment goal unmet**.
 The source calendar rejection and technical admission are preserved.

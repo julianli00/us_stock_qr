@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 89 SSD identities, 80 completed/rejected, nine retained technical failures and zero pending; 320 funded paths | Journal957 current summary: 258 combined completions, zero qualifiers; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 90 SSD identities, 81 completed/rejected, nine retained technical failures and zero pending; 324 funded paths | Journal969 current summary: 259 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -45,7 +45,31 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
-### Calendar expert inclusion: both complete rules rejected
+### Monthly style reversal: all four paths complete and rejected
+
+The [complete source-policy result](research/workbench/evidence/monthly_style_reversal_financial_20261105_results_v1.json)
+retains actual registration958 and preregistration
+`471e07dea9ef26a117fa19ecc7ced679e1e35423`.
+Publication fence959 precedes all133native month-end opinions and every account;
+post-execution proof968 and review969 retain the complete rejected rule.
+
+| Original path | Net CAGR | RF Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Model fees USD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 10y-base | 11.872503% | 0.556957 | 40.098268% | 15.562712x | 377 | 1716.48 |
+| 10y-stress | 9.398514% | 0.438882 | 40.085819% | 15.539111x | 377 | 5044.43 |
+| 5y-base | 11.668488% | 0.502684 | 26.872444% | 16.153642x | 195 | 661.77 |
+| 5y-stress | 9.645553% | 0.396781 | 26.923210% | 16.128377x | 195 | 1963.31 |
+
+Every CAGR, Sharpe, drawdown, matched SPY/QQQ and extra stress/base-SPY gate
+fails. No window, selected count, ranking, weight, cost, RF or acceptance is
+changed to rescue it. The original full dates, cash funding and delayed execution
+remain; minimum cashUSD162.0123061 and maximum independent BT gapUSD2.1828e-11.
+Five real main-book prefixes are exact auxiliary audits, not extra economic rules.
+The separate technical expert-admission review is still unfinished. Financial
+rejection alone is not technical exclusion, and the original global pool is unchanged.
+**259 combined completions, zero qualifiers; investment goal unmet.**
+
+### Preserved calendar expert inclusion snapshot: both complete rules rejected
 
 The [complete eight-path outcome](research/workbench/evidence/calendar_expert_inclusion_20261105_results_v1.json)
 retains the deliberate original-eight-plus-calendar pool and both unchanged
