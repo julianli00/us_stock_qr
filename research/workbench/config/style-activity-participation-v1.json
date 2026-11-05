@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_style_activity_participation_primary_20261105_v1",
+  "candidate_id": "signed_style_activity_participation_v1",
+  "mechanism_group": "cross_sectional_reported_activity_participation",
+  "source_market_freeze": {
+    "path": "reports/ssd-continuous-research-v1/mixed-mechanism-six-financial-20261105-v1/financial-implementation-freeze-v1.json",
+    "sha256": "f6d9d667554ff1205931f760c56d4365c8e81fd41c17bd485223b773cfcfb06c"
+  },
+  "source_market_completion": {
+    "path": "reports/ssd-continuous-research-v1/mixed-mechanism-six-financial-20261105-v1/completion-v1.json",
+    "sha256": "f888b9d4fa1492d2f775480d20cfb82bde183282395333fbace3b57f9c53ced9"
+  },
+  "activity_admission": {
+    "path": "evidence/core_activity_source_readiness_20261029_v1.json",
+    "sha256": "09e8dda552865c48398cdb23dac761fab42a3c8ef266eb8de5469e3e6057beee"
+  },
+  "activity_manifest": {
+    "path": "data/ssd-core-activity-source-20261029-v1/manifest.json",
+    "sha256": "a96a934ff225f6fd2d16e40a52cb6450ebf55f3f839dfcf18356946165327ba8"
+  },
+  "prior_completed_configurations": 271,
+  "prior_journal_sequence": 1109,
+  "prior_journal_head_sha256": "7c0cf8f5a2ab8bd3b2ac8bf2c1c7ae068d51f7fad17a621cf262dd1a2bddb857",
+  "universe": ["SPY", "IEF", "GLD", "BIL", "MTUM", "VLUE", "QUAL", "USMV", "TLT", "QQQ", "XLK", "SOXX", "IJR", "PKW"],
+  "activity_symbols": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "cash_asset": "BIL",
+  "input_lag_sessions": 1,
+  "return_and_activity_observations": 63,
+  "required_prior_adjusted_price_levels": 64,
+  "minimum_source_position": 64,
+  "minimum_positive_activity_balances": 3,
+  "selected_styles_when_participating": 3,
+  "positive_balance_threshold": 0.0,
+  "ranking_decimal_places": 12,
+  "invested_target_budget": 0.98,
+  "idle_cash_reserve": 0.02,
+  "actual_weight_trade_band": 0.025,
+  "decision_lattice": "genuine_completed_month_ends_after_full_lagged_input_warmup",
+  "decision_information_clock": "after_16_15_ET_index_close_before_later_open_execution",
+  "formal_capital_seed_is_new_policy_opinion": false,
+  "old_activity_source_RF_imported_or_normalized": false,
+  "policy_native_RF": "unchanged_current_frozen_canonical_review_market_RF",
+  "source_field_scope_expanded_beyond_original_four": false,
+  "new_independent_economic_factor_families": 0,
+  "candidate_count_in_this_study": 1,
+  "study_size_is_a_total_research_quota": false,
+  "parameter_search": false,
+  "real_new_indicators_targets_accounts_or_financial_outcomes_computed": false,
+  "expert_technically_admitted": false,
+  "global_pool_changed": false,
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "order_authority": false
+}

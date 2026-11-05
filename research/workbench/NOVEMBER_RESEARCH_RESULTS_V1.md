@@ -4,6 +4,44 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Signed style activity: registered program before real outputs
+
+The [primary](STYLE_ACTIVITY_PARTICIPATION_V1.md) remains exactly`fd291d06`:
+only MTUM/VLUE/QUAL/USMV reported-activity inputs,63daily adjusted-close
+directions endingD-1,64prior closes, and reported close times share-volume
+weights. At least three strictly positive balances select three equal style
+positions; otherwise the98%budget goes to actualBIL, leaving2%idle.
+This is a related price/activity family, not a new independent factor or
+causal fund-flow interpretation.
+
+The [financial program](STYLE_ACTIVITY_FINANCIAL_V1.md) freezes at`a3d1d6d1`,
+162dependencies,31source references and13explicit tested inputs. Thirty-three
+new synthetic financial checks/Ruff pass before freeze. Existing exact
+four-field admission/compatibility receipts are consumed, not rerun or expanded;
+the new policy's own future RF is the unchanged current canonical RF.
+
+Actual registration1110 at **2026-11-05T19:08:36.964729Z** and the
+[complete schema3packet](evidence/style_activity_financial_20261105_registration_v1.json)
+contain a registered causal monthly decision program, not computed historical
+targets. Historical target proof is explicitly deferred to actual published
+execution. Actual full code/program publication must precede every new real
+indicator, target and funded account.
+
+The program keeps all131planned genuine native month ends and the full original
+2512/1254financial return dates. October5capital anchors carry prior September30
+opinions, not fabricated ordinary policy events. Five source target prefixes,
+full independent scalar/Fraction binary64 checks and five separately versioned
+main-book prefixes are fixed before execution. Auxiliary prefixes are not new
+economic rules, qualifying windows or source-shadow capital.
+
+**J1110 preregistration snapshot:103registrations,93completed reviews,nine
+technical failures,one pending,372funded paths,271combined completions,zero
+qualifiers.** No new real indicator/target or financial result exists at this
+snapshot; registration-process time4.363728083000751seconds is not financial
+runtime. Technical expert admission and deliberate pool inclusion remain
+separate later questions. Older financial and diagnostic sections retain their
+dated source scopes and counts; the investment goal is unmet.
+
 ## Saved mixed-six losses: full ledger and common-clock diagnosis
 
 The [aggregate diagnosis](evidence/mixed_six_loss_diagnosis_20261105_v1.json)
