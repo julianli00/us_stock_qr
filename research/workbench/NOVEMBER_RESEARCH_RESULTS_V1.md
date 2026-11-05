@@ -4,6 +4,68 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Retained fixed-catalogue single-return influence
+
+The [aggregate evidence](evidence/expert_score_deletion_influence_20261105_results_v1.json)
+uses only the exact retained input/resolved records of the closed distinct-opinion
+study. All121source decisions remain, including seven unscored origins.
+This is a new diagnosis of the mature score catalogue, not a new portfolio rule
+or a repeat of exposure geometry, next-period covariance or main-cost forecasts.
+
+At each of114mature decisions, the original pair weights, exact current-opinion
+menu and nominal switch proxy stay fixed. Each daily NET-excess observation is
+separately removed from its84training or42validation sample. The other sample,
+square-root252scale, cost/21, weaker-subperiod score,12-decimal key and lexical
+ordering remain. Covariance and pair weights are NOT refitted, so this is not
+the influence of rerunning the whole original learning procedure.
+
+| Retained diagnostic quantity | Actual result |
+| --- | ---: |
+| Source decisions / mature scored / explicitly unscored | 121 / 114 / 7 |
+| Conditional single-return deletion calculations | 14364 |
+| Mature decisions with at least one changed conditional winner | 105 |
+| Changed winner versus full-sample kernel / actual source | 2394 / 2394 |
+| Changes from training / validation observation deletions | 1292 / 1102 |
+| Changed winners per mature decision: minimum / median / maximum | 0 / 18 / 110 |
+| Full-sample winner disagreements / pair-key bucket discrepancies | 0 / 0 |
+| Deleted-sample degenerate pair cases / no-scorable-pair cases | 0 / 0 |
+| Independent numerical sample-score checks | 525312 |
+
+The maximum scalar-versus-NumPy risk-score gap is
+5.329070518200751e-15, and maximum full-sample discrepancy from the recorded
+source score is3.552713678800501e-15. All are below the frozen original1e-8
+absolute agreement tolerance. Actual source and numerical-kernel baselines
+are kept separate rather than forced into agreement; no discrepancy occurred.
+Zero-risk deletion and no-winner states are explicitly supported, not scored
+as safe, neutral or an equal-weight allocation. None occurred in the actual
+scored sample; the seven immature origins receive no stability-success label.
+All original36scored/unscorable pair rows are retained.
+
+V1passes26synthetic tests but retains one RuffB023finding in the immediately
+invoked synthetic fixture's cost closure. Only that unfrozen operand binding,
+validation-version wiring and failure documentation change; the numerical
+Module and policy stay exact. AllV1prototypes/logs/XMLremain. V2passes the same
+26checks and Ruff before implementation freeze9d403e03,122dependencies and
+14source references. Checks include exact rational moments, schema/clock/RF/
+opinion/cost/eligibility/key/winner tampering, explicit cold/no-winner states,
+a deletion that removes all scorable pairs, and preserved partial-run refusal.
+
+Actual frozen process22256 exits0, wall**26.146790875005536seconds**,
+Darwin peakRSS333651968bytes. Every new operand record precedes its calculation;
+242input/resolved records and full pair/deletion profiles remain private.
+No source generator, source selector, target, shadow, account, benchmark or
+completed diagnostic entrypoint is replayed.
+
+The14364overlapping conditional calculations are not independent trials,
+confidence intervals, true-winner probabilities, significance, actual turnover
+or expected financial improvement. Fixing weights omits covariance-refit
+influence, so this does not bound the full procedure's sensitivity.
+All268financial completions and prior diagnosis are exposed history.
+No new law, parameter, source admission, pool membership or acceptance follows
+automatically. Financial history stays **J1074/99registered/90completed/nine
+technical/zero pending/360paths/268combined completions/zero qualifiers**.
+The preceding four-path financial rejection and investment goal unmet remain.
+
 ## Exact current-opinion distinct pair: all four original paths rejected
 
 The [complete single-policy outcome](evidence/distinct_opinion_pair_financial_20261105_results_v1.json)

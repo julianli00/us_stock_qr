@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_expert_score_deletion_influence_20261105_v1",
+  "source_completion": {
+    "path": "reports/ssd-continuous-research-v1/distinct-opinion-pair-financial-20261105-v1/completion-v1.json",
+    "sha256": "75db4b85d2b81afb9f81c59971357aba01db490206be5ba6636bbe24731bd806"
+  },
+  "source_trace": {
+    "path": "reports/ssd-continuous-research-v1/distinct-opinion-pair-financial-20261105-v1/actual-decision-inputs-resolved-v1.jsonl",
+    "sha256": "66fe4b839bb9e16dcb618f0fa88d83a74e0795c7a76507caa0d6a12e1ae7f230"
+  },
+  "source_decisions": 121,
+  "expert_count": 9,
+  "asset_count": 14,
+  "train_observations": 84,
+  "validation_observations": 42,
+  "annualization": 252,
+  "cost_amortization_sessions": 21,
+  "selection_key_decimals": 12,
+  "independent_score_absolute_tolerance": 1e-8,
+  "pair_weights_and_nominal_switch_proxy_fixed": true,
+  "current_opinion_eligibility_fixed": true,
+  "covariance_refitted_after_deletion": false,
+  "exact_constant_sample_is_unscorable": true,
+  "new_trading_policy_or_acceptance_rule": false,
+  "new_financial_evaluations": 0,
+  "order_authority": false
+}

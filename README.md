@@ -45,6 +45,25 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
+### Retained score influence: fixed-catalogue ordering is single-return sensitive
+
+The [new read-only diagnosis](research/workbench/evidence/expert_score_deletion_influence_20261105_results_v1.json)
+keeps all121source decisions:114mature scored catalogues and seven unscored
+origins. It separately removes each of126observed daily NET-excess returns,
+while fixing recorded pair weights, source eligibility and the nominal cost proxy.
+Of114mature decisions,105have at least one conditional winner change.
+There are2394changed rankings in14364single-return deletion calculations;
+the per-decision minimum/median/maximum is0/18/110.
+Training deletions account for1292changes, validation deletions for1102.
+
+The full-sample numerical winner agrees with the actual retained winner at
+every scored decision; no12-decimal key-bucket discrepancy is hidden.
+All525312sample risk scores have an independent numerical moment check.
+These are conditional influence calculations, not a covariance refit, replayed
+source selector, true-winner probability, realized turnover or profit estimate.
+No new trading rule, financial evaluation, pool membership or gate follows.
+**J1074,268combined completions and zero qualifiers remain unchanged.**
+
 ### Exact current-opinion distinction: all four funded paths rejected
 
 The [complete single-policy result](research/workbench/evidence/distinct_opinion_pair_financial_20261105_results_v1.json)
