@@ -45,6 +45,29 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
+### Saved HMM intervention: opinion and allocation revision are different channels
+
+The [read-only decomposition](research/workbench/evidence/hmm_session_intervention_diagnosis_20261105_v2.json)
+keeps all121saved dates for each of three session substitutions and both
+original rules. Other seven expert observations, nativeRF and the HMM
+source's noncore coordinates match exactly. Source opinions change on
+every date, but that is not a new recommendation or a new main-account run.
+
+Equal targets change on all121dates per variant, solely in core assets.
+Rolling targets change on36/35/34dates for close/overnight/intraday.
+Mapped selected pairs change only5/5/2times, while statistical weights
+change29/28/27times;24/23/25of those occur within the same mapped pair.
+Noncore target changes come entirely through the recorded allocation-revision
+channel, not direct source-opinion or interaction terms.
+These are signed allocation identities, not causal alpha, executed turnover
+or realized profit.
+
+V1 stops before numeric calculation on an incorrect split-record envelope
+assumption and is [retained as failed](research/workbench/evidence/hmm_session_intervention_diagnosis_20261105_v1_failure.json).
+V2 verifies all726parent/split records and adapts only provenance metadata;
+the original numerical kernel, source values and1e-12resolution stay unchanged.
+No new financial trials: **J1211,280completions,zero qualifiers; goal unmet.**
+
 ### HMM session substitution: all six complete policies rejected
 
 The [complete controlled outcome](research/workbench/evidence/hmm_session_core_substitution_20261105_results_v1.json)

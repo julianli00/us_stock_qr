@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "current_ssd_journal_summary": {
-    "snapshot_scope": "Current J1211: all six fixed HMM-session slot2 substitution policies and 24 original funded paths complete; all six rejected. Every QQQ gate fails; all12 rolling paths fail every original gate. Equal passing fragments do not qualify a complete policy. Full frozen financial gates, sources, global rosters and all failures preserved; no source/control replay.",
-    "journal_summary_derived_at_utc": "2026-11-05T22:35:22.064460+00:00",
+    "snapshot_scope": "Current J1211 unchanged after read-only saved HMM-session intervention decomposition. V1 terminal provenance-envelope failure before numeric output preserved; separate V2 structural Adapter and unchanged rational kernel reconcile all363variant/date states and both original rules. No new financial trial, source/selector/target/account replay or promotion.",
+    "journal_summary_derived_at_utc": "2026-11-05T23:15:33.870337+00:00",
     "journal_sequence": 1211,
     "journal_head_sha256": "23d74d3b1159ef455704df871d022433739b2e3fbd9940d586ac34434971a2dc",
     "legacy_completed": 178,
@@ -292,302 +292,237 @@
       "order_authority": false
     },
     "latest_read_only_diagnosis": {
-      "study_id": "ssd_signed_activity_execution_diagnosis_20261105_v1",
-      "results": "research/workbench/evidence/signed_activity_execution_diagnosis_20261105_v1.json",
-      "results_sha256": "6a7c7cb7e4c350516b828cb9d4a81ece7ed29f854f7b38414f3fb758d2ba7ca8",
-      "source_financial_results": "research/workbench/evidence/signed_style_activity_expert_inclusion_20261105_v2_results_v1.json",
-      "source_financial_results_sha256": "f217373d183223b98ac01791bacf732c5b9a5b3924812c11adf9788dbe38c27b",
-      "analysis_intent_sha256": "eec00276b471c2b8ec89edca9efab72e1c231e6031f3decd3cb1e359fe27dc37",
-      "implementation_dependency_count": 158,
-      "source_reference_count": 2818,
-      "explicit_tested_inputs": 6,
-      "new_synthetic_checks_before_real_diagnosis": 28,
-      "actual_diagnostic_process_wall_seconds": 9.001045833021635,
-      "actual_diagnostic_Darwin_peak_RSS_bytes": 460144640,
-      "meta_decisions": 121,
-      "new_scored_decisions": 114,
-      "new_unscored_decisions": 7,
-      "mature_extra_selected_decisions": 13,
-      "mature_extra_selected_with_BIL_opinion": 6,
-      "mature_source_pair_same_as_original8": 101,
-      "mature_source_pair_changed_without_extra_selected": 0,
-      "maximum_equal_identity_residual": 1.1102230246251565e-16,
-      "maximum_fraction_equal_identity_residual": 1.1102230246251565e-16,
-      "saved_main_books": 16,
+      "study_id": "ssd_hmm_session_intervention_diagnosis_20261105_v2",
+      "results": "research/workbench/evidence/hmm_session_intervention_diagnosis_20261105_v2.json",
+      "results_sha256": "77db38976a8ab96bb90968aada840b373b2f4fcbc0761304ad728bdc58be045c",
+      "analysis_intent_sha256": "cd4ff477b29325d0b89367db0789835e469a50e334a4a3c3d9fe693d712877e2",
+      "implementation_dependency_count": 163,
+      "source_reference_count": 35,
+      "explicit_tested_inputs": 10,
+      "synthetic_checks_before_actual_V2_diagnosis": 33,
+      "actual_diagnostic_wall_seconds": 7.513017999997828,
+      "actual_diagnostic_Darwin_peak_RSS_bytes": 372641792,
+      "source_records_per_pool": 242,
+      "variant_decisions": 363,
+      "retained_input_resolved_records": 726,
+      "both_original_rules_preserved": true,
+      "aggregate": {
+        "close": {
+          "both_scored": 114,
+          "both_unscored": 7,
+          "decisions": 121,
+          "laws": {
+            "equal": {
+              "channels": {
+                "allocation_revision": {
+                  "max_L1": 0.0,
+                  "nonzero_decisions": 0,
+                  "sum_L1": 0.0,
+                  "sum_noncore_L1": 0.0
+                },
+                "direct_opinion": {
+                  "max_L1": 0.01827478145406345,
+                  "nonzero_decisions": 121,
+                  "sum_L1": 1.5614112554558826,
+                  "sum_noncore_L1": 0.0
+                },
+                "interaction": {
+                  "max_L1": 0.0,
+                  "nonzero_decisions": 0,
+                  "sum_L1": 0.0,
+                  "sum_noncore_L1": 0.0
+                }
+              },
+              "maximum_numpy_channel_difference": 0.0,
+              "maximum_saved_reconciliation_difference": 9.71445146547012e-17,
+              "noncore_saved_target_changed": 0,
+              "same_pair_weights_changed": 0,
+              "saved_target_changed": 121,
+              "statistical_weights_changed": 0
+            },
+            "rolling": {
+              "channels": {
+                "allocation_revision": {
+                  "max_L1": 0.8664851356923503,
+                  "nonzero_decisions": 29,
+                  "sum_L1": 2.0412246856771947,
+                  "sum_noncore_L1": 1.5299950514474305
+                },
+                "direct_opinion": {
+                  "max_L1": 0.0947514708567684,
+                  "nonzero_decisions": 33,
+                  "sum_L1": 1.5331068063354092,
+                  "sum_noncore_L1": 0.0
+                },
+                "interaction": {
+                  "max_L1": 0.05573184706710267,
+                  "nonzero_decisions": 28,
+                  "sum_L1": 0.15799003688731714,
+                  "sum_noncore_L1": 0.0
+                }
+              },
+              "maximum_numpy_channel_difference": 1.734723475976807e-17,
+              "maximum_saved_reconciliation_difference": 6.672878233163634e-17,
+              "noncore_saved_target_changed": 29,
+              "same_pair_weights_changed": 24,
+              "saved_target_changed": 36,
+              "statistical_weights_changed": 29
+            }
+          },
+          "mapped_selected_pair_changed": 5,
+          "score_states_differ": 0,
+          "source_core_opinion_changed": 121
+        },
+        "intraday": {
+          "both_scored": 114,
+          "both_unscored": 7,
+          "decisions": 121,
+          "laws": {
+            "equal": {
+              "channels": {
+                "allocation_revision": {
+                  "max_L1": 0.0,
+                  "nonzero_decisions": 0,
+                  "sum_L1": 0.0,
+                  "sum_noncore_L1": 0.0
+                },
+                "direct_opinion": {
+                  "max_L1": 0.01827478145406345,
+                  "nonzero_decisions": 121,
+                  "sum_L1": 1.5614112554558826,
+                  "sum_noncore_L1": 0.0
+                },
+                "interaction": {
+                  "max_L1": 0.0,
+                  "nonzero_decisions": 0,
+                  "sum_L1": 0.0,
+                  "sum_noncore_L1": 0.0
+                }
+              },
+              "maximum_numpy_channel_difference": 0.0,
+              "maximum_saved_reconciliation_difference": 9.71445146547012e-17,
+              "noncore_saved_target_changed": 0,
+              "same_pair_weights_changed": 0,
+              "saved_target_changed": 121,
+              "statistical_weights_changed": 0
+            },
+            "rolling": {
+              "channels": {
+                "allocation_revision": {
+                  "max_L1": 0.30387060013769285,
+                  "nonzero_decisions": 27,
+                  "sum_L1": 0.3548384147590675,
+                  "sum_noncore_L1": 0.26641319594796625
+                },
+                "direct_opinion": {
+                  "max_L1": 0.0947514708567684,
+                  "nonzero_decisions": 33,
+                  "sum_L1": 1.5331068063354092,
+                  "sum_noncore_L1": 0.0
+                },
+                "interaction": {
+                  "max_L1": 0.04898904012831469,
+                  "nonzero_decisions": 27,
+                  "sum_L1": 0.09244361480428233,
+                  "sum_noncore_L1": 0.0
+                }
+              },
+              "maximum_numpy_channel_difference": 4.7704895589362195e-18,
+              "maximum_saved_reconciliation_difference": 7.391944465461382e-17,
+              "noncore_saved_target_changed": 27,
+              "same_pair_weights_changed": 25,
+              "saved_target_changed": 34,
+              "statistical_weights_changed": 27
+            }
+          },
+          "mapped_selected_pair_changed": 2,
+          "score_states_differ": 0,
+          "source_core_opinion_changed": 121
+        },
+        "overnight": {
+          "both_scored": 114,
+          "both_unscored": 7,
+          "decisions": 121,
+          "laws": {
+            "equal": {
+              "channels": {
+                "allocation_revision": {
+                  "max_L1": 0.0,
+                  "nonzero_decisions": 0,
+                  "sum_L1": 0.0,
+                  "sum_noncore_L1": 0.0
+                },
+                "direct_opinion": {
+                  "max_L1": 0.01827478145406345,
+                  "nonzero_decisions": 121,
+                  "sum_L1": 1.5614112554558826,
+                  "sum_noncore_L1": 0.0
+                },
+                "interaction": {
+                  "max_L1": 0.0,
+                  "nonzero_decisions": 0,
+                  "sum_L1": 0.0,
+                  "sum_noncore_L1": 0.0
+                }
+              },
+              "maximum_numpy_channel_difference": 0.0,
+              "maximum_saved_reconciliation_difference": 9.71445146547012e-17,
+              "noncore_saved_target_changed": 0,
+              "same_pair_weights_changed": 0,
+              "saved_target_changed": 121,
+              "statistical_weights_changed": 0
+            },
+            "rolling": {
+              "channels": {
+                "allocation_revision": {
+                  "max_L1": 0.8664851356923503,
+                  "nonzero_decisions": 28,
+                  "sum_L1": 2.0760477908250405,
+                  "sum_noncore_L1": 1.5566419307379786
+                },
+                "direct_opinion": {
+                  "max_L1": 0.0947514708567684,
+                  "nonzero_decisions": 33,
+                  "sum_L1": 1.5331068063354092,
+                  "sum_noncore_L1": 0.0
+                },
+                "interaction": {
+                  "max_L1": 0.05633156447743174,
+                  "nonzero_decisions": 27,
+                  "sum_L1": 0.15258408851012306,
+                  "sum_noncore_L1": 0.0
+                }
+              },
+              "maximum_numpy_channel_difference": 1.734723475976807e-17,
+              "maximum_saved_reconciliation_difference": 9.096456227153382e-17,
+              "noncore_saved_target_changed": 28,
+              "same_pair_weights_changed": 23,
+              "saved_target_changed": 35,
+              "statistical_weights_changed": 28
+            }
+          },
+          "mapped_selected_pair_changed": 5,
+          "score_states_differ": 0,
+          "source_core_opinion_changed": 121
+        }
+      },
+      "terminal_V1_failure": {
+        "path": "research/workbench/evidence/hmm_session_intervention_diagnosis_20261105_v1_failure.json",
+        "sha256": "4e3172a28cda96960df4088b25a2027908815f862c4203489dd9bf305803ac58",
+        "numeric_outcomes_computed": false,
+        "financial_technical_failure_counter_added": false
+      },
+      "schema_bridge_exact_parent_split_records": 726,
+      "schema_bridge_changes_numeric_source_values": false,
       "new_financial_evaluations": 0,
       "new_source_requests": 0,
-      "original_sources_scores_targets_accounts_or_benchmarks_replayed": false,
-      "cost_difference_is_causal_marginal_expert_effect": false,
-      "financial_gates_or_global_pool_changed": false,
+      "new_policy_scores_selections_weights_or_targets_generated": false,
+      "source_models_targets_or_accounts_replayed": false,
+      "causal_alpha_or_main_PnL_attributed": false,
+      "global_pool_changed": false,
       "independent_forward_validation": false,
       "investment_objective_verified": false,
-      "order_authority": false,
-      "paired_main_book_cases": {
-        "equal:10y-base": {
-          "actual_execution_cases": 121,
-          "censored_cases": 0,
-          "counterfactual_common_capital_or_causal_attribution": false,
-          "fixed_ticket_difference_USD": 60.0,
-          "group_cost_difference_USD": {
-            "both_issued": 7.927370427020621,
-            "neither_issued": 0.0,
-            "only_new_issued": 81.53787014428809,
-            "only_old_issued": -7.467656317153351
-          },
-          "group_counts": {
-            "both_issued": 104,
-            "neither_issued": 9,
-            "only_new_issued": 7,
-            "only_old_issued": 1
-          },
-          "matched_decisions": 121,
-          "new_issued_numeric_noops": 0,
-          "new_model_tickets": 1102,
-          "new_total_cost_USD": 1355.745345556185,
-          "old_issued_numeric_noops": 0,
-          "old_model_tickets": 1042,
-          "old_total_cost_USD": 1273.7477613020294,
-          "ordinary_decisions_only_issue_groups": {
-            "both_issued": 103,
-            "neither_issued": 9,
-            "only_new_issued": 7,
-            "only_old_issued": 1
-          },
-          "proportional_fee_difference_USD": 21.997584254155356,
-          "total_cost_difference_USD": 81.99758425415536
-        },
-        "equal:10y-stress": {
-          "actual_execution_cases": 121,
-          "censored_cases": 0,
-          "counterfactual_common_capital_or_causal_attribution": false,
-          "fixed_ticket_difference_USD": 67.0,
-          "group_cost_difference_USD": {
-            "both_issued": 26.714877560496703,
-            "neither_issued": 0.0,
-            "only_new_issued": 123.01518945227801,
-            "only_old_issued": 0.0
-          },
-          "group_counts": {
-            "both_issued": 104,
-            "neither_issued": 10,
-            "only_new_issued": 7,
-            "only_old_issued": 0
-          },
-          "matched_decisions": 121,
-          "new_issued_numeric_noops": 0,
-          "new_model_tickets": 1102,
-          "new_total_cost_USD": 2088.9810244009395,
-          "old_issued_numeric_noops": 0,
-          "old_model_tickets": 1035,
-          "old_total_cost_USD": 1939.2509573881648,
-          "ordinary_decisions_only_issue_groups": {
-            "both_issued": 103,
-            "neither_issued": 10,
-            "only_new_issued": 7,
-            "only_old_issued": 0
-          },
-          "proportional_fee_difference_USD": 82.73006701277471,
-          "total_cost_difference_USD": 149.73006701277473
-        },
-        "equal:5y-base": {
-          "actual_execution_cases": 61,
-          "censored_cases": 0,
-          "counterfactual_common_capital_or_causal_attribution": false,
-          "fixed_ticket_difference_USD": 20.0,
-          "group_cost_difference_USD": {
-            "both_issued": 4.086096624577179,
-            "neither_issued": 0.0,
-            "only_new_issued": 31.89731977947639,
-            "only_old_issued": -7.2649322689068665
-          },
-          "group_counts": {
-            "both_issued": 53,
-            "neither_issued": 4,
-            "only_new_issued": 3,
-            "only_old_issued": 1
-          },
-          "matched_decisions": 61,
-          "new_issued_numeric_noops": 0,
-          "new_model_tickets": 534,
-          "new_total_cost_USD": 625.4573459471723,
-          "old_issued_numeric_noops": 0,
-          "old_model_tickets": 514,
-          "old_total_cost_USD": 596.7388618120256,
-          "ordinary_decisions_only_issue_groups": {
-            "both_issued": 52,
-            "neither_issued": 4,
-            "only_new_issued": 3,
-            "only_old_issued": 1
-          },
-          "proportional_fee_difference_USD": 8.718484135146703,
-          "total_cost_difference_USD": 28.718484135146703
-        },
-        "equal:5y-stress": {
-          "actual_execution_cases": 61,
-          "censored_cases": 0,
-          "counterfactual_common_capital_or_causal_attribution": false,
-          "fixed_ticket_difference_USD": 27.0,
-          "group_cost_difference_USD": {
-            "both_issued": 15.774688923026673,
-            "neither_issued": 0.0,
-            "only_new_issued": 45.49852839777536,
-            "only_old_issued": 0.0
-          },
-          "group_counts": {
-            "both_issued": 53,
-            "neither_issued": 5,
-            "only_new_issued": 3,
-            "only_old_issued": 0
-          },
-          "matched_decisions": 61,
-          "new_issued_numeric_noops": 0,
-          "new_model_tickets": 534,
-          "new_total_cost_USD": 888.5522391048687,
-          "old_issued_numeric_noops": 0,
-          "old_model_tickets": 507,
-          "old_total_cost_USD": 827.2790217840667,
-          "ordinary_decisions_only_issue_groups": {
-            "both_issued": 52,
-            "neither_issued": 5,
-            "only_new_issued": 3,
-            "only_old_issued": 0
-          },
-          "proportional_fee_difference_USD": 34.27321732080203,
-          "total_cost_difference_USD": 61.27321732080203
-        },
-        "rolling:10y-base": {
-          "actual_execution_cases": 121,
-          "censored_cases": 0,
-          "counterfactual_common_capital_or_causal_attribution": false,
-          "fixed_ticket_difference_USD": 14.0,
-          "group_cost_difference_USD": {
-            "both_issued": -17.59353772124666,
-            "neither_issued": 0.0,
-            "only_new_issued": 48.533293813026404,
-            "only_old_issued": 0.0
-          },
-          "group_counts": {
-            "both_issued": 109,
-            "neither_issued": 9,
-            "only_new_issued": 3,
-            "only_old_issued": 0
-          },
-          "matched_decisions": 121,
-          "new_issued_numeric_noops": 0,
-          "new_model_tickets": 913,
-          "new_total_cost_USD": 1525.5153253301862,
-          "old_issued_numeric_noops": 0,
-          "old_model_tickets": 899,
-          "old_total_cost_USD": 1494.5755692384066,
-          "ordinary_decisions_only_issue_groups": {
-            "both_issued": 108,
-            "neither_issued": 9,
-            "only_new_issued": 3,
-            "only_old_issued": 0
-          },
-          "proportional_fee_difference_USD": 16.939756091779746,
-          "total_cost_difference_USD": 30.939756091779746
-        },
-        "rolling:10y-stress": {
-          "actual_execution_cases": 121,
-          "censored_cases": 0,
-          "counterfactual_common_capital_or_causal_attribution": false,
-          "fixed_ticket_difference_USD": 14.0,
-          "group_cost_difference_USD": {
-            "both_issued": -33.753623925722934,
-            "neither_issued": 0.0,
-            "only_new_issued": 124.59456439130315,
-            "only_old_issued": 0.0
-          },
-          "group_counts": {
-            "both_issued": 109,
-            "neither_issued": 9,
-            "only_new_issued": 3,
-            "only_old_issued": 0
-          },
-          "matched_decisions": 121,
-          "new_issued_numeric_noops": 0,
-          "new_model_tickets": 913,
-          "new_total_cost_USD": 3261.654309933628,
-          "old_issued_numeric_noops": 0,
-          "old_model_tickets": 899,
-          "old_total_cost_USD": 3170.8133694680478,
-          "ordinary_decisions_only_issue_groups": {
-            "both_issued": 108,
-            "neither_issued": 9,
-            "only_new_issued": 3,
-            "only_old_issued": 0
-          },
-          "proportional_fee_difference_USD": 76.84094046558023,
-          "total_cost_difference_USD": 90.84094046558023
-        },
-        "rolling:5y-base": {
-          "actual_execution_cases": 61,
-          "censored_cases": 0,
-          "counterfactual_common_capital_or_causal_attribution": false,
-          "fixed_ticket_difference_USD": 0.0,
-          "group_cost_difference_USD": {
-            "both_issued": 1.947096294069203,
-            "neither_issued": 0.0,
-            "only_new_issued": 0.0,
-            "only_old_issued": 0.0
-          },
-          "group_counts": {
-            "both_issued": 60,
-            "neither_issued": 1,
-            "only_new_issued": 0,
-            "only_old_issued": 0
-          },
-          "matched_decisions": 61,
-          "new_issued_numeric_noops": 0,
-          "new_model_tickets": 469,
-          "new_total_cost_USD": 688.3844418724825,
-          "old_issued_numeric_noops": 0,
-          "old_model_tickets": 469,
-          "old_total_cost_USD": 686.4373455784133,
-          "ordinary_decisions_only_issue_groups": {
-            "both_issued": 59,
-            "neither_issued": 1,
-            "only_new_issued": 0,
-            "only_old_issued": 0
-          },
-          "proportional_fee_difference_USD": 1.947096294069203,
-          "total_cost_difference_USD": 1.947096294069203
-        },
-        "rolling:5y-stress": {
-          "actual_execution_cases": 61,
-          "censored_cases": 0,
-          "counterfactual_common_capital_or_causal_attribution": false,
-          "fixed_ticket_difference_USD": 0.0,
-          "group_cost_difference_USD": {
-            "both_issued": 6.673176284368324,
-            "neither_issued": 0.0,
-            "only_new_issued": 0.0,
-            "only_old_issued": 0.0
-          },
-          "group_counts": {
-            "both_issued": 60,
-            "neither_issued": 1,
-            "only_new_issued": 0,
-            "only_old_issued": 0
-          },
-          "matched_decisions": 61,
-          "new_issued_numeric_noops": 0,
-          "new_model_tickets": 469,
-          "new_total_cost_USD": 1324.7644727617765,
-          "old_issued_numeric_noops": 0,
-          "old_model_tickets": 469,
-          "old_total_cost_USD": 1318.0912964774082,
-          "ordinary_decisions_only_issue_groups": {
-            "both_issued": 59,
-            "neither_issued": 1,
-            "only_new_issued": 0,
-            "only_old_issued": 0
-          },
-          "proportional_fee_difference_USD": 6.673176284368324,
-          "total_cost_difference_USD": 6.673176284368324
-        }
-      }
+      "order_authority": false
     },
     "previous_mixed_six_financial_snapshot": {
       "journal_sequence": 1109,
@@ -1352,6 +1287,14 @@
       "economic_source_cost_clock_acceptance_or_scientific_code_changed": false,
       "candidate_account_or_financial_pipeline_started_or_retried": false,
       "registered_technical_failure_event_fabricated": false
+    },
+    "preserved_previous_read_only_diagnosis": {
+      "study_id": "ssd_signed_activity_execution_diagnosis_20261105_v1",
+      "results": "research/workbench/evidence/signed_activity_execution_diagnosis_20261105_v1.json",
+      "results_sha256": "6a7c7cb7e4c350516b828cb9d4a81ece7ed29f854f7b38414f3fb758d2ba7ca8",
+      "complete_old_projection_commit": "58e654d27a07b42279ba0c603343a31c339ab925",
+      "complete_old_projection_path": "docs/research_progress.json",
+      "snapshot_is_current": false
     }
   },
   "updated_on": "2026-10-31",

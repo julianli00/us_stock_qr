@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_hmm_session_intervention_diagnosis_20261105_v1",
+  "prior_journal_sequence": 1211,
+  "prior_completed_configurations": 280,
+  "input_catalogue": {
+    "path": "reports/ssd-continuous-research-v1/hmm-session-intervention-diagnosis-20261105-v1/source-input-catalogue-v1.json",
+    "sha256": "2d1fead19061b9120e9e4dc1434f1b86551682dcce88082b9c58f87e9457ea76"
+  },
+  "variants": ["close", "overnight", "intraday"],
+  "rules": ["equal", "rolling"],
+  "all_original_decisions_per_pool": 121,
+  "source_slot": 2,
+  "core_assets": ["MTUM", "VLUE", "QUAL", "USMV"],
+  "target_reconciliation_tolerance": 1e-12,
+  "exact_rational_binary64_identity_required": true,
+  "noncore_source_opinions_exactly_unchanged": true,
+  "other_seven_observations_exactly_unchanged": true,
+  "channels": ["direct_opinion", "allocation_revision", "interaction"],
+  "classification_uses_exact_saved_binary64_equality": true,
+  "saved_target_L1_is_executed_turnover": false,
+  "decomposition_is_causal_alpha_or_main_PnL": false,
+  "new_policy_scores_selections_weights_or_targets_generated": false,
+  "new_financial_evaluations": 0,
+  "new_source_requests": 0,
+  "original_sources_or_accounts_replayed": false,
+  "global_pool_changed": false,
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "order_authority": false
+}

@@ -4,6 +4,68 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Saved HMM intervention: direct opinion versus allocation revision
+
+The [new zero-trial result](evidence/hmm_session_intervention_diagnosis_20261105_v2.json)
+streams all121saved base-HMM versus close/overnight/intraday decisions,
+retaining both equal and rolling rules. Each comparison has114scored and
+seven unscored states, with no score-state mismatch. All other seven complete
+source observations and nativeRF match exactly. The changed HMM source's
+noncore coordinates remain exactly equal on every date.
+No source, selector, weighting rule, target generator, account or benchmark
+is replayed.
+
+| Session substitution | Source core opinions changed | Rolling targets changed | Mapped selected pairs changed | Statistical weights changed | Same mapped pair, weights changed | Noncore targets changed |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Close | 121 | 36 | 5 | 29 | 24 | 29 |
+| Overnight | 121 | 35 | 5 | 28 | 23 | 28 |
+| Intraday | 121 | 34 | 2 | 27 | 25 | 27 |
+
+Equal targets change on all121dates of each variant. Their allocation-revision
+and interaction terms are exactly zero, and no noncore target changes.
+The direct-opinion L1sum is1.5614112554558826per variant and its maximum is
+0.01827478145406345. Identical absolute-mass summaries do not establish
+identical signed asset directions or equivalent financial results.
+
+| Rolling substitution | Direct-opinion L1sum | Allocation-revision L1sum | Interaction L1sum | Noncore allocation-revision L1sum |
+| --- | ---: | ---: | ---: | ---: |
+| Close | 1.5331068063354092 | 2.0412246856771947 | 0.15799003688731714 | 1.5299950514474305 |
+| Overnight | 1.5331068063354092 | 2.0760477908250405 | 0.15258408851012306 | 1.5566419307379786 |
+| Intraday | 1.5331068063354092 | 0.3548384147590675 | 0.09244361480428233 | 0.26641319594796625 |
+
+The direct rolling channel is nonzero at33dates in every comparison.
+Its noncore part, and the interaction's noncore part, are exactly zero.
+Thus local source-opinion changes can coexist with broader recorded
+allocation revision, often without changing the mapped expert pair.
+The three signed terms reconcile exactly as rational binary64 operand
+identities; maximum saved-target difference is9.71445146547012e-17 and
+maximum independent NumPy difference is1.734723475976807e-17.
+The frozen1e-12reconciliation resolution is unchanged.
+L1sums span121intent dates: they are not annual turnover, fees, returns,
+main-account PnL or isolated causal effects. Signed terms may cancel.
+No internal cause is assigned to scoring, ERC, lexical ties or previous-state
+feedback, and no new expert or portfolio is promoted.
+
+V1's first actual attempt stops before the first numeric kernel invocation:
+the controller expects source_variant in split records, while the actual
+splitter removes that envelope field. Its0byte partial input tape, frozen
+`fcc81917`, failure and terminal closure remain; the
+[public failure](evidence/hmm_session_intervention_diagnosis_20261105_v1_failure.json)
+is not erased or counted as a new registered financial technical failure.
+A separate metadata-only certificate matches every one of726parent/split
+records after removing only that provenance field, with no numeric changes.
+V2 uses an explicitly versioned in-memory Adapter; the original V1 kernel
+and criteria stay unchanged. It does not repair or rerun V1.
+
+All original28checks plus five Adapter checks pass with Ruff before V2
+freeze`cd4ff477`:163dependencies,35source references,ten explicit tested
+inputs. The V2 actual pass exits0 in7.513017999997828seconds,
+Darwin peakRSS372641792bytes. It resolves363variant/date records and both
+rules, retaining raw hex operands before every calculation.
+No independent forward proof follows from these exposed saved histories.
+**No new financial trials: J1211,280completions,zero qualifiers;
+the six financial policies remain rejected and the goal unmet.**
+
 ## HMM session substitution: all six complete policies rejected
 
 The [complete saved outcome](evidence/hmm_session_core_substitution_20261105_results_v1.json)
