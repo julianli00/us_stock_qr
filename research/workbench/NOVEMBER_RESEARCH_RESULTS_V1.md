@@ -4,6 +4,48 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## HMM session substitution: preserved preregistration J1156
+
+The [fixed controlled program](HMM_SESSION_CORE_SUBSTITUTION_V1.md) creates
+three separate eight-expert pools. Only slot2 changes from the original
+conditional-variance representative to admitted HMM close, overnight or
+intraday core-session policy. Seven exact original experts remain in each;
+related siblings never coexist. This is one mechanism group, not three
+new independent risks or a choice of the best exposed historical source.
+
+Each pool retains both original equal and rolling126/84/42,two-expert,
+trainingERC/weakerNET-period rules, all28pairs, cost proxy/21,12-decimal ties,
+explicit unscored equal states and independent statistical learning state.
+The same four original funded paths, criteria and cached base-HMM comparator
+are fixed before outcomes. Source HMMs, session scores, targets, shadows,
+old accounts and benchmarks are not rerun.
+
+| Separate pool | Equal packet | Rolling packet | Actual registration sequences |
+| --- | --- | --- | --- |
+| Close core | [Complete schema2](evidence/hmm_session_core_substitution_20261105_0_registration_v1.json) | [Complete schema2](evidence/hmm_session_core_substitution_20261105_1_registration_v1.json) | 1145 /1146 |
+| Overnight core | [Complete schema2](evidence/hmm_session_core_substitution_20261105_2_registration_v1.json) | [Complete schema2](evidence/hmm_session_core_substitution_20261105_3_registration_v1.json) | 1147 /1148 |
+| Intraday core | [Complete schema2](evidence/hmm_session_core_substitution_20261105_4_registration_v1.json) | [Complete schema2](evidence/hmm_session_core_substitution_20261105_5_registration_v1.json) | 1149 /1150 |
+
+Freeze`84954fcf`pins167dependencies,1570source references,three separate
+pool-clock sets and12explicit implementation/test inputs.
+All27new synthetic checks and Ruff pass before the freeze.
+Actual registrations occur at22:07:48.334633--22:07:51.664382UTC on
+November5, before any new combination scores or targets.
+The once-only preparation exits0 in84.8886791660043seconds,
+Darwin peakRSS389152768bytes. Proofs1151--1156retain121dates per pool,
+363pool/date states,726input/result records,709536binary64NET/RFchecks,
+all28pairs per mature state and five exact prefixes in every pool.
+Maximum independent target/weight/score differences are respectively
+1.1102230246251565e-16/2.7755575615628914e-16/5.329070518200751e-15.
+Both original horizons retain all six actual factor symbols.
+
+Every complete packet and its scientific dependencies must be verified
+at the actual remotely published commit before any candidate receives
+capital. Planned24books are not actual completions.
+**At J1156:111registered,96completed,nine technical,six pending;
+384funded paths,274combined completions,zero qualifiers. No new funded
+outcome or independent forward validation; investment goal unmet.**
+
 ## Archived HMM session policies: all three technically admissible
 
 The [new eligibility result](evidence/archived_hmm_session_expert_eligibility_20261105_v1.json)

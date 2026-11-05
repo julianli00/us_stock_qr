@@ -1,61 +1,204 @@
 {
   "schema_version": 1,
   "current_ssd_journal_summary": {
-    "snapshot_scope": "Current J1144 remains unchanged after strict read-only eligibility review and saved-consumer verification of all three archived HMM session siblings. All pass technical eligibility as admissible nonselected variants in one mechanism group; original standalone financial rejections, source definitions and global rosters remain. No new financial trial, RF view or source/model/account replay.",
-    "journal_summary_derived_at_utc": "2026-11-05T21:47:48.782030+00:00",
-    "journal_sequence": 1144,
-    "journal_head_sha256": "2ea7a7d9409b173a35896780a1e69644240dc6f0390df104a274e6eb52d5ce3b",
+    "snapshot_scope": "Current J1156: all six HMM close/overnight/intraday slot2 substitution identities registered before new meta outputs. Three separate eight-expert pools retain seven exact originals each and unchanged equal/rolling rules. Six pending candidates, no new funded accounts or financial outcomes. Complete actual cohort publication is required before any funding.",
+    "journal_summary_derived_at_utc": "2026-11-05T22:12:50.178038+00:00",
+    "journal_sequence": 1156,
+    "journal_head_sha256": "2025f1026dc36cd262c0eda1faffcae7d593c03fb052f79e2bcf923903ae74da",
     "legacy_completed": 178,
-    "registered": 105,
+    "registered": 111,
     "completed": 96,
     "technical_failures": 9,
-    "pending": 0,
+    "pending": 6,
     "funded_paths": 384,
     "combined_completed": 274,
     "qualified": 0,
-    "latest_study_id": "ssd_signed_style_activity_expert_inclusion_20261105_v2",
+    "latest_study_id": "ssd_hmm_session_core_substitution_20261105_v1",
     "latest_registrations": [
       {
-        "candidate_id": "expert_pool_signed_activity_nine_equal_v2",
-        "path": "research/workbench/evidence/signed_style_activity_expert_inclusion_20261105_v2_0_registration_v1.json",
-        "sha256": "59a2794ee8e1ec5009a170632d79a61910c378defee9f3174db72ca216f9888b",
-        "actual_registered_at": "2026-11-05T20:32:06.187981+00:00",
-        "actual_registered_sequence": 1122
+        "candidate_id": "expert_pool_hmm_session_close_equal_v1",
+        "path": "research/workbench/evidence/hmm_session_core_substitution_20261105_0_registration_v1.json",
+        "sha256": "b47bea31a0700ab3718e553a64fb4cacd76ac8bc613b53d32bcaf596fa44f669",
+        "actual_registered_at": "2026-11-05T22:07:48.334633+00:00",
+        "actual_registered_sequence": 1145
       },
       {
-        "candidate_id": "expert_pool_signed_activity_nine_rolling_pair_v2",
-        "path": "research/workbench/evidence/signed_style_activity_expert_inclusion_20261105_v2_1_registration_v1.json",
-        "sha256": "17e8338c1025e52533adce54483232b34faeb603221fce076450dd017b55c394",
-        "actual_registered_at": "2026-11-05T20:32:06.816927+00:00",
-        "actual_registered_sequence": 1123
+        "candidate_id": "expert_pool_hmm_session_close_rolling_pair_v1",
+        "path": "research/workbench/evidence/hmm_session_core_substitution_20261105_1_registration_v1.json",
+        "sha256": "0bc382386ec3938bed51c49250622cd218f1261cc25e885f1ac4d6123d6e959c",
+        "actual_registered_at": "2026-11-05T22:07:48.996290+00:00",
+        "actual_registered_sequence": 1146
+      },
+      {
+        "candidate_id": "expert_pool_hmm_session_intraday_equal_v1",
+        "path": "research/workbench/evidence/hmm_session_core_substitution_20261105_4_registration_v1.json",
+        "sha256": "7065d95b05fb2531b7c5eeace855b87dad223ad7cd62841794f907473bd6958b",
+        "actual_registered_at": "2026-11-05T22:07:50.979460+00:00",
+        "actual_registered_sequence": 1149
+      },
+      {
+        "candidate_id": "expert_pool_hmm_session_intraday_rolling_pair_v1",
+        "path": "research/workbench/evidence/hmm_session_core_substitution_20261105_5_registration_v1.json",
+        "sha256": "9881e0785781fb950a75918983e5940cdb73b542c78193d87f0a77211406992d",
+        "actual_registered_at": "2026-11-05T22:07:51.664382+00:00",
+        "actual_registered_sequence": 1150
+      },
+      {
+        "candidate_id": "expert_pool_hmm_session_overnight_equal_v1",
+        "path": "research/workbench/evidence/hmm_session_core_substitution_20261105_2_registration_v1.json",
+        "sha256": "e1bb2a7f2cd2c90419412e11924865f0a7d6329cf245a1ddf6e0c9450149240a",
+        "actual_registered_at": "2026-11-05T22:07:49.699166+00:00",
+        "actual_registered_sequence": 1147
+      },
+      {
+        "candidate_id": "expert_pool_hmm_session_overnight_rolling_pair_v1",
+        "path": "research/workbench/evidence/hmm_session_core_substitution_20261105_3_registration_v1.json",
+        "sha256": "466628d03913e709c9278951267461991e0fdcc3b39582cf34e390da96e1569a",
+        "actual_registered_at": "2026-11-05T22:07:50.340190+00:00",
+        "actual_registered_sequence": 1148
       }
     ],
     "complete_cohort_packet_schema": 2,
     "target_delivery_kind": "stored_complete_meta_recommendation_target_bundle",
-    "latest_study_status": "both_complete_policies_rejected",
+    "latest_study_status": "six_registered_pending_complete_remote_publication",
     "historical_target_derivation_proof": {
-      "expert_pool_signed_activity_nine_equal_v2": {
-        "path": "reports/ssd-continuous-research-v1/signed-style-activity-expert-inclusion-20261105-v2/targets/expert_pool_signed_activity_nine_equal_v2/proof.json",
-        "sha256": "1c11d1b3131a82cec194b3977a1d87efe562115867b81bb39ec84db6bc30d600"
+      "expert_pool_hmm_session_close_equal_v1": {
+        "path": "reports/ssd-continuous-research-v1/hmm-session-core-substitution-20261105-v1/targets/expert_pool_hmm_session_close_equal_v1/proof.json",
+        "sha256": "921639b2c9c7b297e81750a96bc98d29919f7a561b1b5fe658a6132d2d51489b"
       },
-      "expert_pool_signed_activity_nine_rolling_pair_v2": {
-        "path": "reports/ssd-continuous-research-v1/signed-style-activity-expert-inclusion-20261105-v2/targets/expert_pool_signed_activity_nine_rolling_pair_v2/proof.json",
-        "sha256": "5e7bef3188bd7e75eff8024c58b7364b0b03c344da6b033b0849862d07f965f4"
+      "expert_pool_hmm_session_close_rolling_pair_v1": {
+        "path": "reports/ssd-continuous-research-v1/hmm-session-core-substitution-20261105-v1/targets/expert_pool_hmm_session_close_rolling_pair_v1/proof.json",
+        "sha256": "6cb4ba9fd9a7ffe90e91f9ba9194b3172d1044ee08ee25f04d70f8d919be5148"
+      },
+      "expert_pool_hmm_session_intraday_equal_v1": {
+        "path": "reports/ssd-continuous-research-v1/hmm-session-core-substitution-20261105-v1/targets/expert_pool_hmm_session_intraday_equal_v1/proof.json",
+        "sha256": "a45039472b3ab93faebff167fd2f54b01be484b1d1ed8736987e350f28943ab7"
+      },
+      "expert_pool_hmm_session_intraday_rolling_pair_v1": {
+        "path": "reports/ssd-continuous-research-v1/hmm-session-core-substitution-20261105-v1/targets/expert_pool_hmm_session_intraday_rolling_pair_v1/proof.json",
+        "sha256": "d0c6ef3edf4380bbe01b248d2ec51f28cfc116bb64af85325dbc40a9ea2b3587"
+      },
+      "expert_pool_hmm_session_overnight_equal_v1": {
+        "path": "reports/ssd-continuous-research-v1/hmm-session-core-substitution-20261105-v1/targets/expert_pool_hmm_session_overnight_equal_v1/proof.json",
+        "sha256": "06e7079313d766dce171a411931c412c83cdf8176d7c61df8ea9673db9000dd9"
+      },
+      "expert_pool_hmm_session_overnight_rolling_pair_v1": {
+        "path": "reports/ssd-continuous-research-v1/hmm-session-core-substitution-20261105-v1/targets/expert_pool_hmm_session_overnight_rolling_pair_v1/proof.json",
+        "sha256": "308040d4153b66030fcea8553285811756550f9bdd1125cae0231a8c5495f2bd"
       }
     },
+    "historical_target_proof_complete": true,
     "historical_new_policy_indicators_or_targets_computed": true,
-    "candidate_accounts_or_metrics_computed": true,
-    "actual_new_formal_funded_paths": 8,
-    "admitted_activity_symbol_scope": [
-      "MTUM",
-      "VLUE",
-      "QUAL",
-      "USMV"
+    "candidate_accounts_or_metrics_computed": false,
+    "actual_new_formal_funded_paths": 0,
+    "planned_original_funded_paths": 24,
+    "actual_remote_publication_required_before_funding": true,
+    "actual_remote_publication_verified_before_accounts": false,
+    "actual_preregistration_commit": null,
+    "actual_publication_fence_sequence": null,
+    "actual_first_path_started_at": null,
+    "actual_review_sequences": {},
+    "all_candidate_status": {
+      "expert_pool_hmm_session_close_equal_v1": "pending",
+      "expert_pool_hmm_session_close_rolling_pair_v1": "pending",
+      "expert_pool_hmm_session_intraday_equal_v1": "pending",
+      "expert_pool_hmm_session_intraday_rolling_pair_v1": "pending",
+      "expert_pool_hmm_session_overnight_equal_v1": "pending",
+      "expert_pool_hmm_session_overnight_rolling_pair_v1": "pending"
+    },
+    "latest_results": null,
+    "latest_results_sha256": null,
+    "financial_program_freeze_sha256": "84954fcfa9de5a587bb81c07803b5d5ad21f1d901399d87e33994b2ff79e22c0",
+    "financial_program_dependency_count": 167,
+    "financial_program_source_reference_count": 1570,
+    "financial_tested_inputs_explicitly_frozen": 12,
+    "new_financial_synthetic_checks_before_registration": 27,
+    "actual_registration_process_wall_seconds": 84.8886791660043,
+    "actual_registration_process_Darwin_peak_RSS_bytes": 389152768,
+    "study_specific_expert_pool_size": 8,
+    "separate_source_pools": [
+      "close",
+      "overnight",
+      "intraday"
     ],
-    "source_scope_expanded_to_IJR_PKW_or_other_activity": false,
-    "old_activity_source_RF_imported_or_normalized": false,
+    "fixed_financial_cohort_size": 6,
+    "only_original_slot2_changes_per_pool": true,
+    "only_one_related_HMM_sibling_in_each_pool": true,
+    "mechanism_group": "conditional_variance_growth",
     "new_independent_economic_factor_families": 0,
-    "technical_expert_admission_review_complete": true,
+    "source_financial_verdict_preserved": "rejected",
+    "source_technical_admission_reused": true,
+    "deliberate_study_membership_is_global_promotion": false,
+    "global_active_seven_or_selected_eight_changed": false,
+    "expert_pool_changed": false,
+    "all_six_registrations_before_actual_new_meta_outputs": true,
+    "actual_new_meta_decision_dates_per_pool": 121,
+    "actual_new_meta_pool_decisions": 363,
+    "actual_new_meta_input_resolved_records": 726,
+    "actual_meta_NET_RF_binary64_values_checked": 709536,
+    "all_pairs_per_mature_decision": 28,
+    "actual_meta_target_prefixes_per_pool": [
+      "2016-10-05",
+      "2017-03-31",
+      "2017-09-29",
+      "2021-09-30",
+      "2026-09-30"
+    ],
+    "actual_new_meta_factor_coverage": [
+      {
+        "actual_factor_symbols": [
+          "MTUM",
+          "VLUE",
+          "QUAL",
+          "USMV",
+          "IJR",
+          "PKW"
+        ],
+        "years": 10
+      },
+      {
+        "actual_factor_symbols": [
+          "MTUM",
+          "VLUE",
+          "QUAL",
+          "USMV",
+          "IJR",
+          "PKW"
+        ],
+        "years": 5
+      }
+    ],
+    "maximum_independent_meta_expert_weight_difference": 2.7755575615628914e-16,
+    "maximum_independent_meta_target_difference": 1.1102230246251565e-16,
+    "maximum_independent_meta_net_score_difference": 5.329070518200751e-15,
+    "original_sources_shadows_accounts_or_benchmarks_replayed": false,
+    "native_RF_normalization_or_new_view": false,
+    "new_source_requests": 0,
+    "matched_cached_HMM_results": {
+      "path": "evidence/hmm_expert_substitution_20261104_results_v1.json",
+      "sha256": "e7921917cd7dc7efb667c15e8c451e6baa0dfe9bae51b8d7c9a4b341b19c346d"
+    },
+    "matched_control_replayed": false,
+    "matched_contrasts_are_isolated_causal_effects": false,
+    "standalone_financial_rejection_is_technical_exclusion": false,
+    "registered_packet_target_proof_was_deferred_until_published_execution": false,
+    "previous_complete_financial_study": {
+      "study_id": "ssd_signed_style_activity_expert_inclusion_20261105_v2",
+      "results": "research/workbench/evidence/signed_style_activity_expert_inclusion_20261105_v2_results_v1.json",
+      "results_sha256": "f217373d183223b98ac01791bacf732c5b9a5b3924812c11adf9788dbe38c27b",
+      "actual_preregistration_commit": "ced33c7bce0843e35fcbf978cf3dee2018e86f3e",
+      "actual_review_sequences": {
+        "expert_pool_signed_activity_nine_equal_v2": 1135,
+        "expert_pool_signed_activity_nine_rolling_pair_v2": 1144
+      },
+      "all_candidate_status": {
+        "expert_pool_signed_activity_nine_equal_v2": "rejected",
+        "expert_pool_signed_activity_nine_rolling_pair_v2": "rejected"
+      },
+      "complete_old_projection_commit": "0f2e68f708c7acce3b153a5a43cf57cc15b41168",
+      "complete_old_projection_path": "docs/research_progress.json",
+      "snapshot_is_current": false
+    },
     "latest_read_only_technical_review": {
       "study_id": "ssd_archived_hmm_session_expert_eligibility_20261105_v1",
       "results": "research/workbench/evidence/archived_hmm_session_expert_eligibility_20261105_v1.json",
@@ -140,28 +283,6 @@
       "independent_forward_validation": false,
       "investment_objective_verified": false,
       "order_authority": false
-    },
-    "expert_pool_changed": false,
-    "frozen_primary_implementation_sha256": "fd291d068aeb60ec624ac142e39aa90d3e591580320fafc06fabdf0f874ab074",
-    "financial_program_freeze_sha256": "9a97b0b13758f486a8be4052d4154f3e3cbc1fca6483f4078ec168af9ab14aae",
-    "financial_program_dependency_count": 190,
-    "financial_program_source_reference_count": 2610,
-    "financial_tested_inputs_explicitly_frozen": 17,
-    "new_financial_synthetic_checks_before_registration": 33,
-    "previous_mixed_six_financial_snapshot": {
-      "journal_sequence": 1109,
-      "combined_completed": 271,
-      "results": "research/workbench/evidence/mixed_mechanism_six_financial_20261105_results_v1.json",
-      "results_sha256": "b1a35048b0ad4d20628a8262d812f4c0a3fb39b22a0d0f26c4a9070c24d59740",
-      "both_complete_rules_rejected": true,
-      "actual_preregistration_commit": "d2958a3f7c2db1d71af3629158039f2069d2783e",
-      "actual_outcome_commit": "d2ea6316318484e0e3e95dd9901080c0a0fdccf5",
-      "actual_review_sequences": [
-        1100,
-        1109
-      ],
-      "full_historical_projection_commit": "5a98287c23e46762c86ca3e7890a1a55c0d13ff9",
-      "snapshot_is_current": false
     },
     "latest_read_only_diagnosis": {
       "study_id": "ssd_signed_activity_execution_diagnosis_20261105_v1",
@@ -461,6 +582,21 @@
         }
       }
     },
+    "previous_mixed_six_financial_snapshot": {
+      "journal_sequence": 1109,
+      "combined_completed": 271,
+      "results": "research/workbench/evidence/mixed_mechanism_six_financial_20261105_results_v1.json",
+      "results_sha256": "b1a35048b0ad4d20628a8262d812f4c0a3fb39b22a0d0f26c4a9070c24d59740",
+      "both_complete_rules_rejected": true,
+      "actual_preregistration_commit": "d2958a3f7c2db1d71af3629158039f2069d2783e",
+      "actual_outcome_commit": "d2ea6316318484e0e3e95dd9901080c0a0fdccf5",
+      "actual_review_sequences": [
+        1100,
+        1109
+      ],
+      "full_historical_projection_commit": "5a98287c23e46762c86ca3e7890a1a55c0d13ff9",
+      "snapshot_is_current": false
+    },
     "preserved_pair_score_deletion_influence_diagnosis": {
       "actual_diagnostic_process_wall_seconds": 26.146790875005536,
       "changed_vs_kernel_baseline_total": 2394,
@@ -527,14 +663,6 @@
       "results_sha256": "cf9aad4099702b082ebd2c8ac96beaea4765d11e41b0fc2ab782fb5f3635fc7b",
       "snapshot_is_current": false
     },
-    "independent_forward_validation": false,
-    "investment_objective_verified": false,
-    "order_authority": false,
-    "registered_packet_target_proof_was_deferred_until_published_execution": false,
-    "latest_results": "research/workbench/evidence/signed_style_activity_expert_inclusion_20261105_v2_results_v1.json",
-    "latest_results_sha256": "f217373d183223b98ac01791bacf732c5b9a5b3924812c11adf9788dbe38c27b",
-    "historical_target_proof_complete": true,
-    "standalone_financial_rejection_is_technical_exclusion": false,
     "preserved_activity_program_preregistration_snapshot": {
       "journal_sequence": 1110,
       "combined_completed": 271,
@@ -604,57 +732,10 @@
       "financial_verdict": "rejected",
       "technical_admission_is_separate": true
     },
-    "planned_original_funded_paths": 8,
-    "actual_remote_publication_required_before_funding": true,
-    "study_specific_expert_pool_size": 9,
-    "deliberate_study_membership_is_global_promotion": false,
-    "global_active_seven_or_selected_eight_changed": false,
-    "source_technical_admission_reused": true,
-    "source_financial_verdict_preserved": "rejected",
-    "actual_new_meta_decisions": 121,
-    "actual_new_meta_input_resolved_records": 242,
-    "actual_meta_NET_RF_binary64_values_checked": 266076,
-    "all_pairs_per_mature_decision": 36,
-    "actual_meta_target_prefixes": [
-      "2016-10-05",
-      "2017-03-31",
-      "2017-09-29",
-      "2021-09-30",
-      "2026-09-30"
-    ],
-    "actual_new_meta_factor_coverage": [
-      {
-        "actual_factor_symbols": [
-          "MTUM",
-          "VLUE",
-          "QUAL",
-          "USMV",
-          "IJR",
-          "PKW"
-        ],
-        "years": 10
-      },
-      {
-        "actual_factor_symbols": [
-          "MTUM",
-          "VLUE",
-          "QUAL",
-          "USMV",
-          "IJR",
-          "PKW"
-        ],
-        "years": 5
-      }
-    ],
-    "maximum_independent_meta_expert_weight_difference": 2.220446049250313e-16,
-    "maximum_independent_meta_target_difference": 1.1102230246251565e-16,
-    "maximum_independent_meta_net_score_difference": 5.329070518200751e-15,
-    "namespace_revision_only": true,
     "preserved_unregistered_namespace_collision": {
       "path": "evidence/style_activity_inclusion_identity_collision_20261105_v1.json",
       "sha256": "365475d644a35351dac3d3017783333518c0496e8f0cc6eac8016605f139bca1"
     },
-    "original_sources_shadows_accounts_or_benchmarks_replayed": false,
     "preserved_signed_activity_nine_preregistration_snapshot_J1125": {
       "snapshot_scope": "Current J1125 after both namespace-corrected signed-activity nine-source cohort registrations and causal target proofs, before complete-cohort remote publication or funding. V1 historical-ID collision is terminal and unregistered; every old identity, financial rejection and scientific rule is preserved. No new funded paths or financial outcomes yet.",
       "journal_sequence": 1125,
@@ -702,224 +783,6 @@
       "snapshot_is_current": false,
       "actual_preregistration_commit": "ced33c7bce0843e35fcbf978cf3dee2018e86f3e"
     },
-    "actual_remote_publication_verified_before_accounts": true,
-    "actual_preregistration_commit": "ced33c7bce0843e35fcbf978cf3dee2018e86f3e",
-    "actual_publication_fence_sequence": 1126,
-    "actual_publication_fence_at": "2026-11-05T20:42:31.183312+00:00",
-    "actual_first_path_started_at": "2026-11-05T20:42:33.134267+00:00",
-    "actual_review_sequences": {
-      "expert_pool_signed_activity_nine_equal_v2": 1135,
-      "expert_pool_signed_activity_nine_rolling_pair_v2": 1144
-    },
-    "actual_review_times": {
-      "expert_pool_signed_activity_nine_equal_v2": "2026-11-05T20:42:42.439821+00:00",
-      "expert_pool_signed_activity_nine_rolling_pair_v2": "2026-11-05T20:43:38.986579+00:00"
-    },
-    "all_candidate_status": {
-      "expert_pool_signed_activity_nine_equal_v2": "rejected",
-      "expert_pool_signed_activity_nine_rolling_pair_v2": "rejected"
-    },
-    "all_eight_sharpe_and_QQQ_gates_fail": true,
-    "same_rule_original_eight_CAGR_and_Sharpe_lower_all_paths": true,
-    "same_rule_original_eight_turnover_and_fees_higher_all_paths": true,
-    "matched_control_replayed": false,
-    "matched_contrasts_are_isolated_causal_effects": false,
-    "actual_eight_path_outcome_and_cost_rows": [
-      {
-        "CAGR": 0.1352177907399037,
-        "RF_Sharpe": 0.9384273918863378,
-        "annual_two_sided_turnover": 3.003824449218244,
-        "candidate_id": "expert_pool_signed_activity_nine_equal_v2",
-        "delta_CAGR_vs_cached_same_rule8": -0.014094664452505956,
-        "delta_DD_vs_cached_same_rule8": 0.014664099444973155,
-        "delta_Sharpe_vs_cached_same_rule8": -0.07654846405179871,
-        "delta_fees_vs_cached_same_rule8": 81.9975842541553,
-        "delta_tickets_vs_cached_same_rule8": 60,
-        "delta_turnover_vs_cached_same_rule8": 0.3800585032702575,
-        "gates": {
-          "beats_qqq": false,
-          "beats_spy": false,
-          "cagr_above_12pct": true,
-          "drawdown_at_most_15pct": false,
-          "sharpe_above_1": false
-        },
-        "max_DD": 0.19321200708957076,
-        "path": "10y-base",
-        "tickets": 1102,
-        "total_fees_USD": 1355.745345556185
-      },
-      {
-        "CAGR": 0.12948190882992594,
-        "RF_Sharpe": 0.8941909403038488,
-        "annual_two_sided_turnover": 2.9983033743733656,
-        "candidate_id": "expert_pool_signed_activity_nine_equal_v2",
-        "delta_CAGR_vs_cached_same_rule8": -0.014442212573388069,
-        "delta_DD_vs_cached_same_rule8": 0.015098453077744933,
-        "delta_Sharpe_vs_cached_same_rule8": -0.08135358041060503,
-        "delta_fees_vs_cached_same_rule8": 149.73006701277473,
-        "delta_tickets_vs_cached_same_rule8": 67,
-        "delta_turnover_vs_cached_same_rule8": 0.37795043316380994,
-        "gates": {
-          "also_beats_base_cost_spy": false,
-          "beats_qqq": false,
-          "beats_spy": false,
-          "cagr_above_12pct": true,
-          "drawdown_at_most_15pct": false,
-          "sharpe_above_1": false
-        },
-        "max_DD": 0.18793781642175023,
-        "path": "10y-stress",
-        "tickets": 1102,
-        "total_fees_USD": 2088.9810244009395
-      },
-      {
-        "CAGR": 0.1566626942889473,
-        "RF_Sharpe": 0.9600368703651612,
-        "annual_two_sided_turnover": 2.9229870252599217,
-        "candidate_id": "expert_pool_signed_activity_nine_equal_v2",
-        "delta_CAGR_vs_cached_same_rule8": -0.018716988325083728,
-        "delta_DD_vs_cached_same_rule8": -0.0181099407228682,
-        "delta_Sharpe_vs_cached_same_rule8": -0.06791872013890665,
-        "delta_fees_vs_cached_same_rule8": 28.718484135146696,
-        "delta_tickets_vs_cached_same_rule8": 20,
-        "delta_turnover_vs_cached_same_rule8": 0.29920140317534116,
-        "gates": {
-          "beats_qqq": false,
-          "beats_spy": true,
-          "cagr_above_12pct": true,
-          "drawdown_at_most_15pct": true,
-          "sharpe_above_1": false
-        },
-        "max_DD": 0.13874616351049074,
-        "path": "5y-base",
-        "tickets": 534,
-        "total_fees_USD": 625.4573459471723
-      },
-      {
-        "CAGR": 0.14634498711444865,
-        "RF_Sharpe": 0.8843614705815811,
-        "annual_two_sided_turnover": 2.9129017655165006,
-        "candidate_id": "expert_pool_signed_activity_nine_equal_v2",
-        "delta_CAGR_vs_cached_same_rule8": -0.01847348723437836,
-        "delta_DD_vs_cached_same_rule8": -0.016363543480548914,
-        "delta_Sharpe_vs_cached_same_rule8": -0.07321031683192047,
-        "delta_fees_vs_cached_same_rule8": 61.27321732080202,
-        "delta_tickets_vs_cached_same_rule8": 27,
-        "delta_turnover_vs_cached_same_rule8": 0.3008106734351781,
-        "gates": {
-          "also_beats_base_cost_spy": true,
-          "beats_qqq": false,
-          "beats_spy": true,
-          "cagr_above_12pct": true,
-          "drawdown_at_most_15pct": true,
-          "sharpe_above_1": false
-        },
-        "max_DD": 0.1407901672226224,
-        "path": "5y-stress",
-        "tickets": 534,
-        "total_fees_USD": 888.5522391048687
-      },
-      {
-        "CAGR": 0.11212779005218376,
-        "RF_Sharpe": 0.7084358853110657,
-        "annual_two_sided_turnover": 7.887348458433744,
-        "candidate_id": "expert_pool_signed_activity_nine_rolling_pair_v2",
-        "delta_CAGR_vs_cached_same_rule8": -0.011622141360839722,
-        "delta_DD_vs_cached_same_rule8": 0.00044562590091135057,
-        "delta_Sharpe_vs_cached_same_rule8": -0.0788016700766877,
-        "delta_fees_vs_cached_same_rule8": 30.939756091779827,
-        "delta_tickets_vs_cached_same_rule8": 14,
-        "delta_turnover_vs_cached_same_rule8": 0.906004240268615,
-        "gates": {
-          "beats_qqq": false,
-          "beats_spy": false,
-          "cagr_above_12pct": false,
-          "drawdown_at_most_15pct": false,
-          "sharpe_above_1": false
-        },
-        "max_DD": 0.22977061439541457,
-        "path": "10y-base",
-        "tickets": 913,
-        "total_fees_USD": 1525.5153253301864
-      },
-      {
-        "CAGR": 0.10287252428491356,
-        "RF_Sharpe": 0.6410830523657433,
-        "annual_two_sided_turnover": 7.884854950213637,
-        "candidate_id": "expert_pool_signed_activity_nine_rolling_pair_v2",
-        "delta_CAGR_vs_cached_same_rule8": -0.011428171875329074,
-        "delta_DD_vs_cached_same_rule8": 0.0006501639490724687,
-        "delta_Sharpe_vs_cached_same_rule8": -0.07875667016104415,
-        "delta_fees_vs_cached_same_rule8": 90.84094046557993,
-        "delta_tickets_vs_cached_same_rule8": 14,
-        "delta_turnover_vs_cached_same_rule8": 0.9041656471012898,
-        "gates": {
-          "also_beats_base_cost_spy": false,
-          "beats_qqq": false,
-          "beats_spy": false,
-          "cagr_above_12pct": false,
-          "drawdown_at_most_15pct": false,
-          "sharpe_above_1": false
-        },
-        "max_DD": 0.22018498470173042,
-        "path": "10y-stress",
-        "tickets": 913,
-        "total_fees_USD": 3261.6543099336277
-      },
-      {
-        "CAGR": 0.12005685635788144,
-        "RF_Sharpe": 0.6148727679756757,
-        "annual_two_sided_turnover": 7.59843917086304,
-        "candidate_id": "expert_pool_signed_activity_nine_rolling_pair_v2",
-        "delta_CAGR_vs_cached_same_rule8": -0.0025392329597919705,
-        "delta_DD_vs_cached_same_rule8": 0.0,
-        "delta_Sharpe_vs_cached_same_rule8": -0.015311963093800895,
-        "delta_fees_vs_cached_same_rule8": 1.9470962940691834,
-        "delta_tickets_vs_cached_same_rule8": 0,
-        "delta_turnover_vs_cached_same_rule8": 0.06975099399569995,
-        "gates": {
-          "beats_qqq": false,
-          "beats_spy": false,
-          "cagr_above_12pct": true,
-          "drawdown_at_most_15pct": false,
-          "sharpe_above_1": false
-        },
-        "max_DD": 0.2329469433947433,
-        "path": "5y-base",
-        "tickets": 469,
-        "total_fees_USD": 688.3844418724825
-      },
-      {
-        "CAGR": 0.1078148494476765,
-        "RF_Sharpe": 0.5343158184766873,
-        "annual_two_sided_turnover": 7.606523294380262,
-        "candidate_id": "expert_pool_signed_activity_nine_rolling_pair_v2",
-        "delta_CAGR_vs_cached_same_rule8": -0.0033035730760544446,
-        "delta_DD_vs_cached_same_rule8": 0.0,
-        "delta_Sharpe_vs_cached_same_rule8": -0.020748752552237737,
-        "delta_fees_vs_cached_same_rule8": 6.67317628436831,
-        "delta_tickets_vs_cached_same_rule8": 0,
-        "delta_turnover_vs_cached_same_rule8": 0.06918307659227896,
-        "gates": {
-          "also_beats_base_cost_spy": false,
-          "beats_qqq": false,
-          "beats_spy": false,
-          "cagr_above_12pct": false,
-          "drawdown_at_most_15pct": false,
-          "sharpe_above_1": false
-        },
-        "max_DD": 0.22469234904534718,
-        "path": "5y-stress",
-        "tickets": 469,
-        "total_fees_USD": 1324.7644727617762
-      }
-    ],
-    "minimum_main_cash_USD": 173.47904847501317,
-    "maximum_gross_exposure": 0.9837705257147962,
-    "maximum_independent_BT_gap_USD": 1.7462298274040222e-10,
-    "actual_broker_orders": 0,
-    "actual_financial_process_wall_seconds": 115.54464733297937,
-    "actual_financial_process_Darwin_peak_RSS_bytes": 500965376,
     "preserved_mixed_six_loss_diagnosis": {
       "study_id": "ssd_mixed_six_loss_diagnosis_20261105_v1",
       "results": "research/workbench/evidence/mixed_six_loss_diagnosis_20261105_v1.json",
@@ -988,7 +851,10 @@
       "investment_objective_verified": false,
       "order_authority": false,
       "snapshot_is_current": false
-    }
+    },
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false
   },
   "updated_on": "2026-10-31",
   "phase": "legacy_term_expert_v2_eligibility_complete_blocked",

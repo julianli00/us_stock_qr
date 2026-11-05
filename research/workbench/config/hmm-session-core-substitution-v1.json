@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_hmm_session_core_substitution_20261105_v1",
+  "source_expert_pool_policy_path": "config/strategy-expert-pool-eight-v1.json",
+  "prior_journal_sequence": 1144,
+  "prior_journal_head_sha256": "2ea7a7d9409b173a35896780a1e69644240dc6f0390df104a274e6eb52d5ce3b",
+  "prior_completed_configurations": 274,
+  "source_eligibility": {
+    "path": "evidence/archived_hmm_session_expert_eligibility_20261105_v1.json",
+    "sha256": "cbf50ade4eb09361caff85cebc74f983fffd1560cff96063814b241462358a20"
+  },
+  "source_eligibility_completion": {
+    "path": "reports/ssd-continuous-research-v1/archived-hmm-session-expert-eligibility-20261105-v1/completion-v1.json",
+    "sha256": "2a5f4e876ff4c0c8ea642c222851da214b9c712771c1b7e0df0e292f036eff29"
+  },
+  "matched_cached_HMM_results": {
+    "path": "evidence/hmm_expert_substitution_20261104_results_v1.json",
+    "sha256": "e7921917cd7dc7efb667c15e8c451e6baa0dfe9bae51b8d7c9a4b341b19c346d"
+  },
+  "replaced_slot": 2,
+  "replaced_expert_id": "symmetric_garch_growth_bil_v1",
+  "variant_source_ids": {
+    "close": "hmm_core_close_momentum_control_v1",
+    "overnight": "hmm_core_overnight_momentum_v1",
+    "intraday": "hmm_core_intraday_momentum_v1"
+  },
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "initial_decision_session": "2016-10-05",
+  "lookback_sessions": 126,
+  "training_sessions": 84,
+  "validation_sessions": 42,
+  "selected_experts": 2,
+  "selection_score_decimal_places": 12,
+  "reference_capital_usd": 10000,
+  "switch_cost_bps_per_side": 5.0,
+  "switch_commission_per_changed_asset_usd": 1.0,
+  "switch_cost_amortization_sessions": 21,
+  "changed_asset_numeric_tolerance": 1e-12,
+  "shadow_reference_path": "10y-base",
+  "invested_target_budget": 0.98,
+  "cash_reserve": 0.02,
+  "actual_weight_trade_band": 0.025,
+  "minimum_economic_factor_families": 3,
+  "decision_information_clock": "after_16_15_ET_index_close_before_later_open_execution",
+  "all_pairs_per_mature_decision_each_pool": 28,
+  "candidates": [
+    {"id": "expert_pool_hmm_session_close_equal_v1", "weighting": "equal", "source_variant": "close"},
+    {"id": "expert_pool_hmm_session_close_rolling_pair_v1", "weighting": "train_erc_validate_net", "source_variant": "close"},
+    {"id": "expert_pool_hmm_session_overnight_equal_v1", "weighting": "equal", "source_variant": "overnight"},
+    {"id": "expert_pool_hmm_session_overnight_rolling_pair_v1", "weighting": "train_erc_validate_net", "source_variant": "overnight"},
+    {"id": "expert_pool_hmm_session_intraday_equal_v1", "weighting": "equal", "source_variant": "intraday"},
+    {"id": "expert_pool_hmm_session_intraday_rolling_pair_v1", "weighting": "train_erc_validate_net", "source_variant": "intraday"}
+  ],
+  "candidate_count_in_this_study": 6,
+  "study_size_is_a_total_research_quota": false,
+  "pools": 3,
+  "complete_experts_each_pool": 8,
+  "one_related_source_only_per_pool": true,
+  "new_source_requests": 0,
+  "new_shadow_account_runs": 0,
+  "new_source_model_or_target_runs": 0,
+  "new_economic_factor_definitions": 0,
+  "original_active_seven_or_selected_eight_rosters_changed": false,
+  "source_variants_are_independent_economic_factors": false,
+  "source_financial_rejections_preserved": true,
+  "new_RF_assessment_view_or_source_scope_waiver": false,
+  "full_history_winner_or_representative_selected": false,
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "order_authority": false
+}
