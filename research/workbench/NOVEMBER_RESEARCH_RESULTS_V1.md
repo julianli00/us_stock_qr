@@ -4,6 +4,45 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Signed style activity: technical admission, no pool promotion
+
+The [separate technical certificate](evidence/style_activity_financial_20261105_admission_v1.json)
+admits the same financially rejected complete policy at
+**2026-11-05T19:53:37.868296Z**. The reviewer freezes at`4e070404`,
+163dependencies,2578source references and five explicit tested inputs including
+the fixture. Forty-one new synthetic reviewer/trace/consumer checks and Ruff
+pass before the actual read-only verdict. A metadata-only freeze attempt first
+compares short Python version text against a full version string and stops;
+all58package rows are already exact. The corrected full-string comparison
+preserves the interpreter, pins and scientific criteria.
+
+The review consumes131saved genuine native opinions,262input/resolved records,
+99560exact binary64inputs,524already-proved independent balance checks,
+all four complete funded source books and five saved main-book prefixes.
+Actual MTUM/VLUE/QUAL/USMV and actualBIL occur on every path. Source identity,
+registration/publication-before-output chronology, original full dates,
+cash funding<=1x, independentBT and exact current canonicalRF pass without
+replaying a source generator, target, shadow, account or benchmark.
+The old activity policy's RF is neither imported nor normalized.
+
+The existing monthly StrategyExpert Interface passes138availability/nativeRF
+observations, including unavailable pre-warmup state. At the2016October5capital
+anchor it carries the September30opinion with zeroNETobservations.
+125/126NETobservations on2017April5/6remain unscored/mature, respectively.
+The guarded saved-source consumer retains all2512nativeNET/RFobservations.
+Actual introduction remains registration at **2026-11-05T19:08:36.964729Z**;
+historical source availability is not a backdated introduction or forward proof.
+
+Actual first technical review takes5.047636999981478seconds,
+Darwin peakRSS455229440bytes. Separate saved-consumer revalidation takes
+7.499617167020915seconds; neither produces another economic trial.
+The policy is **admissible nonselected**, not a new independent risk axis,
+automatic pool member or financially qualified strategy. Global seven/eight,
+J1121,103registrations,94completed reviews,nine technical failures,zero pending,
+376funded paths,272combined completions and zero qualifiers remain unchanged.
+Its full financial rejection below is preserved; controlled inclusion is a
+separate later study, and the investment goal remains unmet.
+
 ## Signed style activity: complete financial rejection
 
 The [complete outcome](evidence/style_activity_financial_20261105_results_v1.json)
@@ -55,9 +94,9 @@ zero pending,376funded paths,272combined completions,zero qualifiers;
 investment goal unmet.** Old source verifiers, primary compatibility,
 strategies, accounts and benchmarks are not replayed. Four-fund activity scope,
 source prices, original RF, all failures and global seven/eight rosters remain.
-There is no matched comparison isolating activity alpha. Technical expert review
-and controlled pool inclusion are still separate later questions; standalone
-financial rejection alone does not establish technical invalidity.
+There is no matched comparison isolating activity alpha. The subsequent
+read-only technical admission above does not change this financial outcome.
+Controlled pool inclusion remains a separate later question.
 
 ## Preserved signed-style program preregistration snapshot J1110
 

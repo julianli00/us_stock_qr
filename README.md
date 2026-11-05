@@ -45,6 +45,25 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
+### Signed style activity: admissible expert, still financially rejected
+
+The [separate read-only technical admission](research/workbench/evidence/style_activity_financial_20261105_admission_v1.json)
+passes at **2026-11-05T19:53:37.868296Z**, after the frozen reviewer and source's
+actual financial review. It checks131saved native opinions,99560retained
+binary64inputs, all four complete cash-funded books, exact current canonicalRF,
+source timing and the existing monthly StrategyExpert Interface. Four actual
+style families and actualBIL appear on every path; no source or account is
+regenerated. The source's actual introduction remains its November5registration,
+not the2015date of its first counterfactual opinion.
+
+The saved-source consumer retains2512NET/RFobservations. Its initial
+October5capital seed knows the prior September30opinion but has zeroNET
+observations;125/126observations remain unscored/mature. Technical admission
+makes this an **admissible nonselected complete policy**, not a new independent
+risk family or a promotion into the global seven/eight rosters. A separate
+controlled pool study is still required. Financial rejection, all qualification
+gates and **272 completions,zero qualifiers** are unchanged.
+
 ### Signed style activity: four complete paths rejected
 
 The [unchanged complete policy](research/workbench/STYLE_ACTIVITY_PARTICIPATION_V1.md)
@@ -76,8 +95,8 @@ rejects the unchanged policy.
 
 Only the two five-year drawdown gates pass. All CAGR, Sharpe, SPY/QQQ and extra
 stress/base-SPY gates fail; no passing fragment changes qualification.
-There is no matched comparison isolating volume alpha. Technical expert review
-remains separate, and financial rejection alone is not technical exclusion.
+There is no matched comparison isolating volume alpha. The separate technical
+review above passes without changing this financial rejection.
 No expert or global pool membership is promoted automatically.
 **272 completions,zero qualifiers; investment goal unmet.**
 
