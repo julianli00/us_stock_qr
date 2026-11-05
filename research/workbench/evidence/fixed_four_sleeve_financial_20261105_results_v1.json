@@ -1,0 +1,327 @@
+{
+  "actual_authoritative_counts": {
+    "current_journal_event_count": 1004,
+    "current_journal_head_sha256": "0c3e4dad66f3ba04914e34da028cd935f683e226478764813427270409a13187",
+    "new_account_paths": 336,
+    "new_completed_strategy_evaluations": 84,
+    "new_historical_point_gate_passes": 0,
+    "new_pending_candidates": 0,
+    "new_registered_candidates": 93,
+    "new_reviews": 84,
+    "new_technical_failures": 9,
+    "original_completed_configurations": 178,
+    "original_registered_versions": 96,
+    "original_reviews": 94,
+    "total_legacy_plus_ssd_completed_configurations": 262
+  },
+  "actual_completed_at": "2026-11-05T08:20:00.402307+00:00",
+  "actual_preregistration": {
+    "configured_remote": "origin",
+    "configured_remote_ref": "refs/heads/julianli00-factor-research-handoff",
+    "observed_remote_head": "0664703deeb627d4689ae6bd44d88c71c48167dd",
+    "original_bundle_manifest_sha256": "3b2ef6789348ac88b8fdf82805415f518da85bb72c1d652735e7aeaaa63666b6",
+    "publication_boundary_version": "explicit_extensions_plus_pinned_original_import_v1",
+    "published_commit": "0664703deeb627d4689ae6bd44d88c71c48167dd",
+    "registration_packet": {
+      "path": "evidence/fixed_four_sleeve_financial_20261105_registration_v1.json",
+      "sha256": "fc2d6f314a07d51781019e5f4b9d9ea04c253493bb7ee0b6447ef3db1754ef33"
+    },
+    "unchanged_pinned_import_files_verified": 28,
+    "verification_is_independent_first_publication_time": false,
+    "verified_public_file_count": 383
+  },
+  "all_real_prefix_audits_exact": true,
+  "candidate_id": "fixed_four_sleeve_rebalance_v1",
+  "expert_pool_changed": false,
+  "frozen_specification_sha256": "de5cb0e3a88444ab0fe0c3da188682a4c7031925c340a1cc28ff8818042a88c3",
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "new_financial_rules_evaluated": 1,
+  "new_formal_funded_paths": 4,
+  "order_authority": false,
+  "paths": {
+    "10y-base": {
+      "actual_capital_input_verification": {
+        "decisions_checked": 121,
+        "expert_shadow_wealth_used_as_main_capital": false,
+        "main_dollar_holdings_cash_and_equity_match_actual_close": true
+      },
+      "actual_source_opinion_verification": {
+        "all_actual_source_opinions_and_known_at_dates_exact": true
+      },
+      "all_point_gates_pass": false,
+      "execution": {
+        "annualized_two_sided_turnover": 0.2169955954990879,
+        "executed_notional_usd": 26978.29378169131,
+        "fixed_commission_usd": 135.0,
+        "initial_deployment_cost_usd": 13.89319233575548,
+        "maximum_gross_exposure": 0.9831044467837622,
+        "minimum_cash_usd": 199.72213615328513,
+        "model_order_count": 135,
+        "model_orders_are_broker_orders": false,
+        "proportional_cost_usd": 13.489146890845655,
+        "rebalance_session_count": 15,
+        "total_cost_usd": 148.48914689084566,
+        "total_two_sided_turnover": 2.1696589042099084
+      },
+      "gates": {
+        "beats_qqq": false,
+        "beats_spy": false,
+        "cagr_above_12pct": false,
+        "drawdown_at_most_15pct": false,
+        "sharpe_above_1": false
+      },
+      "independent_bt_max_equity_difference_usd": 2.1827872842550278e-11,
+      "independent_monthly_feedback": {
+        "all_actual_gaps_targets_and_delays_checked": true,
+        "checked_actual_monthly_decisions_and_initial": 121,
+        "issued_requests": 15
+      },
+      "metrics": {
+        "annualized_volatility": 0.07398742090832605,
+        "cagr": 0.06678336812752717,
+        "end": "2026-10-05",
+        "expected_shortfall_5pct": -0.010777705666079385,
+        "max_drawdown": 0.1738947551973109,
+        "max_underwater_sessions": 604,
+        "positive_year_fraction": 0.7272727272727273,
+        "rolling_3y_cagr_above_20pct_fraction": 0.0,
+        "rolling_3y_cagr_median": 0.07943143248558285,
+        "rolling_3y_cagr_min": -0.021995383610647436,
+        "sessions": 2512,
+        "sharpe": 0.5793656623646871,
+        "start": "2016-10-06",
+        "total_return": 0.9086395858077654,
+        "worst_day": -0.034464855419421125,
+        "year_returns": {
+          "2016": -0.03436475684803331,
+          "2017": 0.11026913548343886,
+          "2018": -0.016178874344382144,
+          "2019": 0.1541479925176279,
+          "2020": 0.14980391665393333,
+          "2021": 0.03943907519291279,
+          "2022": -0.11737469945299062,
+          "2023": 0.09490329941198383,
+          "2024": 0.09476821478096942,
+          "2025": 0.20482581789186338,
+          "2026": 0.029161432764935213
+        }
+      },
+      "path_key": "10y-base"
+    },
+    "10y-stress": {
+      "actual_capital_input_verification": {
+        "decisions_checked": 121,
+        "expert_shadow_wealth_used_as_main_capital": false,
+        "main_dollar_holdings_cash_and_equity_match_actual_close": true
+      },
+      "actual_source_opinion_verification": {
+        "all_actual_source_opinions_and_known_at_dates_exact": true
+      },
+      "all_point_gates_pass": false,
+      "execution": {
+        "annualized_two_sided_turnover": 0.21682940086380953,
+        "executed_notional_usd": 27003.069869810308,
+        "fixed_commission_usd": 144.0,
+        "initial_deployment_cost_usd": 28.544053654836524,
+        "maximum_gross_exposure": 0.9828946418142557,
+        "minimum_cash_usd": 199.42911892690174,
+        "model_order_count": 144,
+        "model_orders_are_broker_orders": false,
+        "proportional_cost_usd": 54.006139739620615,
+        "rebalance_session_count": 16,
+        "total_cost_usd": 198.00613973962064,
+        "total_two_sided_turnover": 2.167997185365181
+      },
+      "gates": {
+        "also_beats_base_cost_spy": false,
+        "beats_qqq": false,
+        "beats_spy": false,
+        "cagr_above_12pct": false,
+        "drawdown_at_most_15pct": false,
+        "sharpe_above_1": false
+      },
+      "independent_bt_max_equity_difference_usd": 2.1827872842550278e-11,
+      "independent_monthly_feedback": {
+        "all_actual_gaps_targets_and_delays_checked": true,
+        "checked_actual_monthly_decisions_and_initial": 121,
+        "issued_requests": 16
+      },
+      "metrics": {
+        "annualized_volatility": 0.07376792542042797,
+        "cagr": 0.0659723040990916,
+        "end": "2026-10-05",
+        "expected_shortfall_5pct": -0.010731279545885083,
+        "max_drawdown": 0.17525258861390636,
+        "max_underwater_sessions": 630,
+        "positive_year_fraction": 0.7272727272727273,
+        "rolling_3y_cagr_above_20pct_fraction": 0.0,
+        "rolling_3y_cagr_median": 0.07972790954517442,
+        "rolling_3y_cagr_min": -0.02261504416588532,
+        "sessions": 2512,
+        "sharpe": 0.570533766520212,
+        "start": "2016-10-06",
+        "total_return": 0.8941799211894819,
+        "worst_day": -0.034052587672398604,
+        "year_returns": {
+          "2016": -0.038051946643012924,
+          "2017": 0.1101418596457262,
+          "2018": -0.015642730756656564,
+          "2019": 0.1540446497865149,
+          "2020": 0.15202138137907228,
+          "2021": 0.039736301827574705,
+          "2022": -0.11931932716710869,
+          "2023": 0.09214700612179372,
+          "2024": 0.09495998794208549,
+          "2025": 0.20143440700135362,
+          "2026": 0.030229871924951413
+        }
+      },
+      "path_key": "10y-stress"
+    },
+    "5y-base": {
+      "actual_capital_input_verification": {
+        "decisions_checked": 61,
+        "expert_shadow_wealth_used_as_main_capital": false,
+        "main_dollar_holdings_cash_and_equity_match_actual_close": true
+      },
+      "actual_source_opinion_verification": {
+        "all_actual_source_opinions_and_known_at_dates_exact": true
+      },
+      "all_point_gates_pass": false,
+      "execution": {
+        "annualized_two_sided_turnover": 0.3356567348353871,
+        "executed_notional_usd": 17553.909208877336,
+        "fixed_commission_usd": 90.0,
+        "initial_deployment_cost_usd": 13.89319233575548,
+        "maximum_gross_exposure": 0.9825197972769969,
+        "minimum_cash_usd": 177.2522335383014,
+        "model_order_count": 90,
+        "model_orders_are_broker_orders": false,
+        "proportional_cost_usd": 8.776954604438668,
+        "rebalance_session_count": 10,
+        "total_cost_usd": 98.77695460443866,
+        "total_two_sided_turnover": 1.6780539296630168
+      },
+      "gates": {
+        "beats_qqq": false,
+        "beats_spy": false,
+        "cagr_above_12pct": false,
+        "drawdown_at_most_15pct": false,
+        "sharpe_above_1": false
+      },
+      "independent_bt_max_equity_difference_usd": 9.094947017729282e-12,
+      "independent_monthly_feedback": {
+        "all_actual_gaps_targets_and_delays_checked": true,
+        "checked_actual_monthly_decisions_and_initial": 61,
+        "issued_requests": 10
+      },
+      "metrics": {
+        "annualized_volatility": 0.08394626813425395,
+        "cagr": 0.06275006799931893,
+        "end": "2026-10-05",
+        "expected_shortfall_5pct": -0.011601130408012878,
+        "max_drawdown": 0.1724007694627957,
+        "max_underwater_sessions": 604,
+        "positive_year_fraction": 0.8333333333333334,
+        "rolling_3y_cagr_above_20pct_fraction": 0.0,
+        "rolling_3y_cagr_median": 0.11997996275097528,
+        "rolling_3y_cagr_min": 0.018865640218746885,
+        "sessions": 1254,
+        "sharpe": 0.3107899699929274,
+        "start": "2021-10-06",
+        "total_return": 0.3556189027368388,
+        "worst_day": -0.034464855419421236,
+        "year_returns": {
+          "2021": 0.034580040716641225,
+          "2022": -0.11638646214057091,
+          "2023": 0.09246117838334422,
+          "2024": 0.09568277922412705,
+          "2025": 0.20421037191047953,
+          "2026": 0.028769184390261993
+        }
+      },
+      "path_key": "5y-base"
+    },
+    "5y-stress": {
+      "actual_capital_input_verification": {
+        "decisions_checked": 61,
+        "expert_shadow_wealth_used_as_main_capital": false,
+        "main_dollar_holdings_cash_and_equity_match_actual_close": true
+      },
+      "actual_source_opinion_verification": {
+        "all_actual_source_opinions_and_known_at_dates_exact": true
+      },
+      "all_point_gates_pass": false,
+      "execution": {
+        "annualized_two_sided_turnover": 0.3206503431520189,
+        "executed_notional_usd": 16961.696728985207,
+        "fixed_commission_usd": 81.0,
+        "initial_deployment_cost_usd": 28.544053654836524,
+        "maximum_gross_exposure": 0.9825092067756366,
+        "minimum_cash_usd": 177.23475387456548,
+        "model_order_count": 81,
+        "model_orders_are_broker_orders": false,
+        "proportional_cost_usd": 33.92339345797042,
+        "rebalance_session_count": 9,
+        "total_cost_usd": 114.92339345797043,
+        "total_two_sided_turnover": 1.6030322425614965
+      },
+      "gates": {
+        "also_beats_base_cost_spy": false,
+        "beats_qqq": false,
+        "beats_spy": false,
+        "cagr_above_12pct": false,
+        "drawdown_at_most_15pct": false,
+        "sharpe_above_1": false
+      },
+      "independent_bt_max_equity_difference_usd": 9.094947017729282e-12,
+      "independent_monthly_feedback": {
+        "all_actual_gaps_targets_and_delays_checked": true,
+        "checked_actual_monthly_decisions_and_initial": 61,
+        "issued_requests": 9
+      },
+      "metrics": {
+        "annualized_volatility": 0.08357192145404847,
+        "cagr": 0.061683182753303534,
+        "end": "2026-10-05",
+        "expected_shortfall_5pct": -0.011560085245102129,
+        "max_drawdown": 0.17464077867869232,
+        "max_underwater_sessions": 630,
+        "positive_year_fraction": 0.8333333333333334,
+        "rolling_3y_cagr_above_20pct_fraction": 0.0,
+        "rolling_3y_cagr_median": 0.12006049513336542,
+        "rolling_3y_cagr_min": 0.017634884191318007,
+        "sessions": 1254,
+        "sharpe": 0.2997422028637099,
+        "start": "2021-10-06",
+        "total_return": 0.3488290100072149,
+        "worst_day": -0.034383467574035986,
+        "year_returns": {
+          "2021": 0.03128971966295646,
+          "2022": -0.11826962307712308,
+          "2023": 0.0905049089941441,
+          "2024": 0.09600190838856193,
+          "2025": 0.20475682921665372,
+          "2026": 0.030153812680071335
+        }
+      },
+      "path_key": "5y-stress"
+    }
+  },
+  "prior_policies_or_accounts_or_benchmarks_replayed": false,
+  "private_results_sha256": "f292827e4015d8c63156d4e10cdcc2857db430e76bd4c80b34161d50086a1049",
+  "raw_prices_targets_daily_books_private_intents_exported": false,
+  "real_native_targets_generated_after_actual_publication": true,
+  "record_type": "published_fixed_four_sleeve_four_path_results",
+  "registration": {
+    "path": "evidence/fixed_four_sleeve_financial_20261105_registration_v1.json",
+    "sha256": "fc2d6f314a07d51781019e5f4b9d9ea04c253493bb7ee0b6447ef3db1754ef33"
+  },
+  "schema_version": 1,
+  "separately_versioned_auxiliary_main_book_prefix_runs": 5,
+  "status": "rejected",
+  "study_id": "ssd_fixed_four_sleeve_financial_20261105_v1",
+  "target_delivery_kind": "causal_main_capital_decision_program_v1",
+  "technical_expert_admission_review_complete": false
+}

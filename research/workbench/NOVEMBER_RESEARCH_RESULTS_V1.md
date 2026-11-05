@@ -4,7 +4,62 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Controlled reversal expert inclusion: both complete rules rejected
+## Fixed four-sleeve source: complete financial rejection
+
+The [complete four-path result](evidence/fixed_four_sleeve_financial_20261105_results_v1.json)
+retains the unchanged b193primary Module: one forecast-free monthly capital
+allocation with equal quarters of the98%ETFbudget in the six-style core,
+TLT, GLD and actual BIL. Two percent remains idle. Four buckets are not four
+strategy experts or independent economic risks, and BIL is not idle cash.
+
+Actual registration993 at **2026-11-05T08:15:18.055890Z** and actual
+preregistration `0664703deeb627d4689ae6bd44d88c71c48167dd` precede fence994,
+all134real native month-end opinions and every account. After all four paths
+and five real main-book prefixes, proof1003 at **08:20:00.149886Z** and
+review1004 at **08:20:00.394831Z** preserve the rejected complete rule.
+
+| Original path | Net CAGR | RF-excess Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Model fees USD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 10y-base | 6.678337% | 0.579366 | 17.389476% | 0.216996x | 135 | 148.49 |
+| 10y-stress | 6.597230% | 0.570534 | 17.525259% | 0.216829x | 144 | 198.01 |
+| 5y-base | 6.275007% | 0.310790 | 17.240077% | 0.335657x | 90 | 98.78 |
+| 5y-stress | 6.168318% | 0.299742 | 17.464078% | 0.320650x | 81 | 114.92 |
+
+Every original CAGR, Sharpe, drawdown, matched SPY/QQQ and extra stress/base-SPY
+gate fails. Low actual turnover and fees alone do not satisfy the joint goal,
+and fixed capital diversity did not keep drawdown within15%. This is not a
+causal attribution to one asset, nor permission to rescue an exposed rule by
+changing equity share, duration, weights, cash, band, timing, fee or RF.
+
+The retained268input/resolved records bind fixed inputs before each complete
+opinion. Independent rational fractions reproduce every target exactly.
+Prices do not choose weights; actual market prices still drive all execution.
+All native month ends, five exact source prefixes and five separately versioned
+real main-book prefixes remain. The latter are auxiliary audits, not extra
+economic configurations or qualifying windows.
+
+All2512/1254formal dates, freshUSD10000, initial peak, originalRF,
+cash funding,2.5ppactual-holding band, base/stress fees and delayed opens remain.
+Minimum cashUSD177.2347539, maximum gross0.983104447 and maximum independent
+BT gapUSD2.1828e-11; broker orders0. No old source, model, target, shadow,
+account or benchmark is replayed. Actual process receipt wall46.20614750000823s
+is financial execution time, not the separate synthetic validation time.
+
+The financial implementation was frozen after25new synthetic Interface/fence/
+accounting checks and Ruff passed. The first run's25tests passed but its Ruff
+E501 failed; those v1bytes/prototypes/logs remain alongside the formatting-only
+v2repair. No financial criterion or tolerance was relaxed.
+
+Separate source technical admission is still unreviewed; standalone financial
+rejection alone is not exclusion, and valid future admission would not
+automatically choose a pool member. Global rosters, source stops and forward
+identities remain unchanged. Current authoritative J1004:93registrations,
+84completed reviews,nine technical failures,zero pending,336formal funded paths,
+**262combined completions,zero qualifiers; investment goal unmet**.
+Historical availability is counterfactual, not backdated live introduction,
+independent prospective proof or authority to trade.
+
+## Preserved controlled reversal inclusion snapshot: both rules rejected
 
 The [complete eight-path result](evidence/reversal_expert_inclusion_20261105_results_v1.json)
 retains exactly the original eight plus the admitted monthly style-reversal
@@ -55,7 +110,7 @@ BT gapUSD5.8208e-11; broker orders0. No new source signal, fit, target or shadow
 old account or benchmark is rerun. The source's separate technical admission
 does not erase its financial rejection or automatically change global rosters.
 
-Current authoritative J992:92registrations,83completed reviews,nine technical
+At the closed reversal-inclusion snapshot, J992:92registrations,83completed reviews,nine technical
 failures,zero pending,332formal funded paths,
 **261combined completions,zero qualifiers; investment goal unmet**.
 The two-rule size is this fixed study, not a future research-count limit.
