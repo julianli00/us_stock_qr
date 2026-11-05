@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 86 SSD identities, 77 completed/rejected, nine retained technical failures and zero pending; 308 funded paths | Journal922 current summary: 255 combined completions, zero qualifiers; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 87 SSD identities, 78 completed/rejected, nine retained technical failures and zero pending; 312 funded paths | Journal934 current summary: 256 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -45,7 +45,36 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
-### Main-capital feedback: complete and rejected
+### Calendar source policy: complete, rejected, technically admitted
+
+The [complete calendar-policy result](research/workbench/evidence/calendar_seasonal_financial_20261105_results_v1.json)
+retains actual preregistration `17b4e56708b51f2f440798462adeec3ec51d58e4`.
+Registration923 and publication fence924 at **2026-11-05T03:37:07.373007Z**
+precede every real native calendar target and first funded account925.
+Review934 rejects the one complete rule; no path passes its original joint gates.
+
+| Original path | Net CAGR | RF Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Model fees USD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 10y-base | 6.746117% | 0.357296 | 36.111982% | 4.026161x | 147 | 421.16 |
+| 10y-stress | 5.743671% | 0.291027 | 36.080292% | 4.019595x | 147 | 1175.82 |
+| 5y-base | 5.019313% | 0.148472 | 17.751704% | 4.114059x | 71 | 177.24 |
+| 5y-stress | 4.840429% | 0.134223 | 17.755525% | 4.108101x | 71 | 491.34 |
+
+The fixed November-April six-family equity and May-October actual BIL policy
+fails every CAGR, Sharpe, drawdown, matched SPY/QQQ and extra stress/base-SPY
+gate. Seasonal participation is not crash protection. Neither months, weights,
+fees, delays, RF nor acceptance are changed to rescue it.
+
+All 134 native month-end opinions retain their prehistory and input-before-output
+trace. Independent target, actual-state, holding-band, delay and BT checks pass;
+five real main-book prefixes are exact auxiliary audits, not new economic rules.
+Maximum independent BT gap is USD1.4552e-11 and minimum cash is USD176.5365798.
+The [separate technical admission](research/workbench/evidence/calendar_seasonal_financial_20261105_admission_v1.json)
+does not erase financial rejection or automatically change the original expert
+pool. Calendar availability remains separate from 125/126-session score maturity.
+**256 combined completions, zero qualifiers; investment goal unmet.**
+
+### Preserved main-capital feedback snapshot: complete and rejected
 
 The [actual four-path result](research/workbench/evidence/main_capital_feedback_20261104_results_v1.json)
 completes one fixed original-eight policy after actual preregistration

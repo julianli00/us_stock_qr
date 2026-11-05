@@ -1,0 +1,99 @@
+{
+  "actual_authoritative_counts": {
+    "current_journal_event_count": 934,
+    "current_journal_head_sha256": "6989ac630b715b35a219f5a31e5b4bef9cbae62940119e638d001200d8bed8e7",
+    "new_account_paths": 312,
+    "new_completed_strategy_evaluations": 78,
+    "new_historical_point_gate_passes": 0,
+    "new_pending_candidates": 0,
+    "new_registered_candidates": 87,
+    "new_reviews": 78,
+    "new_technical_failures": 9,
+    "original_completed_configurations": 178,
+    "original_registered_versions": 96,
+    "original_reviews": 94,
+    "total_legacy_plus_ssd_completed_configurations": 256
+  },
+  "adapter": "monthly",
+  "admitted_at": "2026-11-05T03:39:48.548427+00:00",
+  "candidate_id": "calendar_seasonal_six_core_bil_v1",
+  "completed_paths": {
+    "10y-base": {
+      "path": "reports/ssd-continuous-research-v1/calendar-seasonal-financial-20261105-v1/accounts/10y-base/complete.json",
+      "sha256": "44230a860ca5ba2b86697e2e94366de6d3938d1b5a7568818e62c21f8f2e5295"
+    },
+    "10y-stress": {
+      "path": "reports/ssd-continuous-research-v1/calendar-seasonal-financial-20261105-v1/accounts/10y-stress/complete.json",
+      "sha256": "14a9e669596e4406c6dec75327b6c4e21c66f9034a10b106935ddfba1cc17d86"
+    },
+    "5y-base": {
+      "path": "reports/ssd-continuous-research-v1/calendar-seasonal-financial-20261105-v1/accounts/5y-base/complete.json",
+      "sha256": "f76b3ffaa1b1b0c3faf1d99083b9935dee7fa827aaab433e4180796318423b75"
+    },
+    "5y-stress": {
+      "path": "reports/ssd-continuous-research-v1/calendar-seasonal-financial-20261105-v1/accounts/5y-stress/complete.json",
+      "sha256": "b921b2e1d7025c335126a6a10792012ebbe2d5fbaaceda9f44faaa232225e18c"
+    }
+  },
+  "current_global_pool_or_roster_changed": false,
+  "funding_and_independent_BT_checked_all_four_paths": true,
+  "historical_counterfactual_availability": true,
+  "independent_forward_validation": false,
+  "introduced_at": "2026-11-05T03:33:31.698701+00:00",
+  "investment_objective_verified": false,
+  "mechanism_group": "fixed_calendar_seasonal_equity_participation",
+  "native_RF_exact_common": true,
+  "native_source_targets": {
+    "frozen_specification_sha256": "2d878ad99871c85dd7e8ce5341710cb455b913dbfd0195e18bc8d63da8f52d82",
+    "proof": {
+      "path": "reports/ssd-continuous-research-v1/calendar-seasonal-financial-20261105-v1/native-source/proof.json",
+      "sha256": "8ef90dc3b372a5a8ad538efe7d99bde3bd7c363ed0110f5c4a35f33b37d6fff5"
+    },
+    "targets": {
+      "path": "reports/ssd-continuous-research-v1/calendar-seasonal-financial-20261105-v1/native-source/targets.csv",
+      "sha256": "15ac87c8eb9b97fb5ab989abb86463820d6b3ca6fde5d81ec6ab9f3d0030e444"
+    }
+  },
+  "new_strategy_evaluations": 0,
+  "observation_checks": [
+    {
+      "NET_observations": 0,
+      "date": "2016-10-05",
+      "score_mature": false,
+      "target_known_at": "2016-09-30"
+    },
+    {
+      "NET_observations": 126,
+      "date": "2021-10-05",
+      "score_mature": true,
+      "target_known_at": "2021-09-30"
+    },
+    {
+      "NET_observations": 125,
+      "date": "2017-04-05",
+      "score_mature": false,
+      "target_known_at": "2017-03-31"
+    },
+    {
+      "NET_observations": 126,
+      "date": "2017-04-06",
+      "score_mature": true,
+      "target_known_at": "2017-03-31"
+    },
+    {
+      "NET_observations": 126,
+      "date": "2026-10-05",
+      "score_mature": true,
+      "target_known_at": "2026-09-30"
+    }
+  ],
+  "order_authority": false,
+  "pool_inclusion_requires_new_separate_study": true,
+  "registered_event_sha256": "c187fe6c4df1457f723770f6457654c526c2aef10d6d0485d16f91c68adc55c0",
+  "registration": {
+    "path": "evidence/calendar_seasonal_financial_20261105_registration_v1.json",
+    "sha256": "be79bd82660e8db44bcf3ddbe6aacafbac5cc56dfe25a65cd84cf0394794c915"
+  },
+  "standalone_financial_verdict_preserved": "rejected",
+  "technical_admission_is_final_qualification": false
+}

@@ -4,7 +4,50 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Main-capital feedback: complete rule rejected
+## Calendar seasonal source policy: complete, rejected, technically admitted
+
+The [complete four-path result](evidence/calendar_seasonal_financial_20261105_results_v1.json)
+retains actual preregistration `17b4e56708b51f2f440798462adeec3ec51d58e4`.
+Registration923 at **2026-11-05T03:33:31.698701Z** and publication fence924 at
+**03:37:07.373007Z** precede the first real native target and first account925.
+Review934 at **03:37:36.304087Z** rejects the one complete policy.
+
+| Original path | Net CAGR | RF-excess Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Model fees USD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 10y-base | 6.746117% | 0.357296 | 36.111982% | 4.026161x | 147 | 421.16 |
+| 10y-stress | 5.743671% | 0.291027 | 36.080292% | 4.019595x | 147 | 1175.82 |
+| 5y-base | 5.019313% | 0.148472 | 17.751704% | 4.114059x | 71 | 177.24 |
+| 5y-stress | 4.840429% | 0.134223 | 17.755525% | 4.108101x | 71 | 491.34 |
+
+Every original CAGR, RF Sharpe, drawdown, matched SPY/QQQ and extra stress/base-SPY
+gate fails. The November-April equity participation/May-October actual BIL law
+is preserved; no month, threshold, cost, weighting or execution search follows
+these outcomes. Lower trade frequency is not a net-return or drawdown guarantee.
+
+All 134 native month ends and their input/resolved chronology are checked
+independently. Source generation begins only after actual publication; schema3
+synthetic readiness is not relabelled as a precomputed historical proof.
+Actual source opinions, main close inputs, original holding band and delays,
+independent BT/scalar metrics and five real main-capital prefixes pass.
+The prefixes are auxiliary audits, not five independent economic trials.
+All accounts remain cash funded: minimum cashUSD176.5365798,
+maximum gross0.984252313, maximum BT gapUSD1.4552e-11; broker orders0.
+
+The [separate technical expert review](evidence/calendar_seasonal_financial_20261105_admission_v1.json)
+admits the complete causal source, not its performance or global membership.
+At the original ten-year anchor the prior calendar opinion exists but there
+are zero mature NET observations. The preserved 125/126-session transition and
+exact common RF are checked. A new deliberate pool-inclusion study is required.
+Same underlying stocks and exposed history do not establish an independent
+economic factor or independent forward proof.
+
+Current authoritative journal934:87registrations,78completed reviews,nine
+retained financial technical failures,zero pending,312formal funded paths,
+**256combined completions,zero qualifiers; investment goal unmet**.
+The original source/market/refusal/forward identities are unchanged. Prior
+policies, accounts and benchmarks are not replayed.
+
+## Preserved main-capital feedback snapshot: complete rule rejected
 
 The [complete four-path result](evidence/main_capital_feedback_20261104_results_v1.json)
 retains actual preregistration `844c05b45008f232830354b2acff7b0ec206b43d`,
@@ -42,7 +85,7 @@ tickets. Neither control is replayed. These are whole-policy contrasts, not
 isolated fee/alpha attribution; the five-year initialization distinction below
 is preserved.
 
-Current journal922:86registrations,77completed reviews,nine retained financial
+At this closed main-capital snapshot, journal922:86registrations,77completed reviews,nine retained financial
 technical failures,zero pending,308formal funded paths,**255combined completions,
 zero qualifiers; investment goal unmet**. Source generators, source shadow
 accounts and benchmarks are not rerun. The original source pool/global rosters
