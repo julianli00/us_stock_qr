@@ -4,6 +4,31 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Main-capital feedback: registered dynamic program, not yet funded
+
+The [new chronological program](MAIN_CAPITAL_FEEDBACK_V1.md) and its
+[explicit dynamic packet](evidence/main_capital_feedback_20261104_registration_v1.json)
+register one original-eight rule at event911,
+**2026-11-04T23:58:19.778313Z**, before any new historical meta score, target or
+main capital computation. Fifty synthetic checks cover the actual-state
+Interface, independent accounting, prefix/future perturbations and packet fences.
+The economic law and complete inputs/dependencies are frozen.
+
+The new cost input uses legitimately known close-marked main dollar holdings,
+cash and NAV, with the original 5bps/USD 1 assessment, 2.5pp band and rolling
+risk law. It is not the future opening execution cost or an account debit.
+Real historical target proof is deferred until the actual published program
+executes; synthetic readiness is not relabeled as real target derivation.
+Every path starts fresh at its real capital anchor. The five-year
+initialization differs from the cached carried meta opinion, so whole-policy
+control contrasts do not isolate a causal cost-input effect.
+
+At this preregistration snapshot, journal911 has86registrations,76completed
+reviews,nine retained financial technical failures,onepending,304funded paths,
+**254combined completions and zeroqualifiers**. No new historical capital
+result precedes actual remote publication. The older snapshots below remain
+historical, including their original counts and failures.
+
 ## Credit expert inclusion: both complete rules rejected
 
 The [complete eight-path outcome](evidence/credit_expert_inclusion_20261104_results_v1.json)
@@ -44,7 +69,7 @@ All eight accounts remain cash funded: minimum cashUSD170.8103178,
 maximum gross0.983770526 and maximum independent BT gapUSD6.5484e-11;
 broker orders are0. The source credit policy's financial rejection and
 separate technical admission stay unchanged, as do the original global rosters.
-Current journal910:85registrations,76completed reviews, nine retained financial
+At this closed credit-study snapshot, journal910:85registrations,76completed reviews, nine retained financial
 technical failures, zero pending,304funded paths,**254combined completions,
 zero qualifiers; investment goal unmet**. There is no independent forward
 qualification or enlarged source/PIT claim.
