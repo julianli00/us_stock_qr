@@ -69,8 +69,17 @@ the numericalD-1information rule; five full-OHLCV source prefixes and five real
 main-book prefixes are exact auxiliary audits, not extra financial rules.
 Minimum cashUSD199.4890016, maximum gross0.984639287 and maximum independent
 BT gapUSD2.1828e-11; full original dates, funding and execution remain.
-Separate technical admission is still unreviewed, not automatic exclusion or
-membership. Global rosters remain unchanged.
+The [separate read-only technical admission](research/workbench/evidence/lagged_spy_price_impact_financial_20261105_admission_v1.json)
+passes while preserving financial rejection. It reads all four saved funded books,
+six actual style families and actual BIL on each path,121native opinions,
+127availability observations and original0/125/126NET maturity.
+The274-position source warmup is separate from target availability and NET maturity.
+The consumer checks the whole2512-observation canonical RF and1861frozen
+dependencies, not only the last126. Actual introduction remains registration1028;
+the later admitted-at timestamp is not backdated. No source, indicator, target,
+shadow, account or benchmark is replayed. The old financial result remains its
+then-unreviewed snapshot. Technical admission is neither qualification nor
+automatic membership; global rosters remain unchanged.
 **265 combined completions, zero qualifiers; investment goal unmet.**
 
 ### Preserved controlled fixed-rebalancer snapshot: both rules rejected

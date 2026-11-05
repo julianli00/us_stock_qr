@@ -1,0 +1,148 @@
+{
+  "admitted_at": "2026-11-05T10:45:08.025682+00:00",
+  "candidate_id": "lagged_spy_price_impact_participation_v1",
+  "evidence": {
+    "NET_maturity_boundary_observations": [
+      {
+        "NET_observations": 0,
+        "date": "2016-10-05",
+        "score_mature": false
+      },
+      {
+        "NET_observations": 125,
+        "date": "2017-04-05",
+        "score_mature": false
+      },
+      {
+        "NET_observations": 126,
+        "date": "2017-04-06",
+        "score_mature": true
+      }
+    ],
+    "actual_defensive_assets_by_path": {
+      "10y-base": [
+        "BIL"
+      ],
+      "10y-stress": [
+        "BIL"
+      ],
+      "5y-base": [
+        "BIL"
+      ],
+      "5y-stress": [
+        "BIL"
+      ]
+    },
+    "actual_style_families_by_path": {
+      "10y-base": [
+        "MTUM",
+        "VLUE",
+        "QUAL",
+        "USMV",
+        "IJR",
+        "PKW"
+      ],
+      "10y-stress": [
+        "MTUM",
+        "VLUE",
+        "QUAL",
+        "USMV",
+        "IJR",
+        "PKW"
+      ],
+      "5y-base": [
+        "MTUM",
+        "VLUE",
+        "QUAL",
+        "USMV",
+        "IJR",
+        "PKW"
+      ],
+      "5y-stress": [
+        "MTUM",
+        "VLUE",
+        "QUAL",
+        "USMV",
+        "IJR",
+        "PKW"
+      ]
+    },
+    "adapter": "monthly",
+    "availability_observations_checked": 127,
+    "candidate_id": "lagged_spy_price_impact_participation_v1",
+    "completed_paths": {
+      "10y-base": {
+        "path": "reports/ssd-continuous-research-v1/lagged-spy-price-impact-financial-20261105-v1/accounts/10y-base/complete.json",
+        "sha256": "6fd11b3709f9dd65c601eeda6402755af59aade2213b8a828da60925eafc0939"
+      },
+      "10y-stress": {
+        "path": "reports/ssd-continuous-research-v1/lagged-spy-price-impact-financial-20261105-v1/accounts/10y-stress/complete.json",
+        "sha256": "a9b6412ba79e7b417c6a94e41e8ebb79bd0a1907bba578d1982fbf07064c1f52"
+      },
+      "5y-base": {
+        "path": "reports/ssd-continuous-research-v1/lagged-spy-price-impact-financial-20261105-v1/accounts/5y-base/complete.json",
+        "sha256": "8ac0104f654a6d7d5ce9b2a16ad8c0966694d21c303bc056a8b2c4c89446c883"
+      },
+      "5y-stress": {
+        "path": "reports/ssd-continuous-research-v1/lagged-spy-price-impact-financial-20261105-v1/accounts/5y-stress/complete.json",
+        "sha256": "cf754789984ee543604b49ca81aa1420a1abee22111135816743e1dc3167176e"
+      }
+    },
+    "current_global_pool_or_roster_changed": false,
+    "financial_results": {
+      "path": "reports/ssd-continuous-research-v1/lagged-spy-price-impact-financial-20261105-v1/results.json",
+      "sha256": "553d23999a45de885e6b8fc8eecea7c5a8f094c8b79a3cf01d5723366175cee2"
+    },
+    "financial_reviewed_at": "2026-11-05T10:03:31.991574+00:00",
+    "full_OHLCV_independent_source_proof_preserved": true,
+    "funding_and_independent_BT_checked_all_four_paths": true,
+    "historical_counterfactual_availability": true,
+    "independent_forward_validation": false,
+    "introduced_at": "2026-11-05T10:00:18.384153+00:00",
+    "investment_objective_verified": false,
+    "mechanism_group": "lagged_market_price_impact_participation",
+    "native_RF_exact_common": true,
+    "native_month_end_opinions": 121,
+    "native_source_targets": {
+      "frozen_specification_sha256": "25448e014d65075880b787fb4054d4724d8711993815ebe6372c4033e16798f3",
+      "proof": {
+        "path": "reports/ssd-continuous-research-v1/lagged-spy-price-impact-financial-20261105-v1/native-source/proof.json",
+        "sha256": "b499720c518163a052b3bfba42c3b73e20988bf93d4ced5437035466150dfdc5"
+      },
+      "targets": {
+        "path": "reports/ssd-continuous-research-v1/lagged-spy-price-impact-financial-20261105-v1/native-source/targets.csv",
+        "sha256": "079763ddb80294e14769eb79a01c9985a004f16a45003d2d8207a17f52a1443b"
+      }
+    },
+    "order_authority": false,
+    "original_source_scope_and_information_clock_preserved": true,
+    "pool_inclusion_requires_new_separate_study": true,
+    "proxy_is_measured_market_depth_flow_or_execution_cost": false,
+    "registered_event_sha256": "6037790b54f15da9a00c14f7a4acefc85072c28122549a657ab9b809e8cc9df5",
+    "registration": {
+      "path": "evidence/lagged_spy_price_impact_financial_20261105_registration_v1.json",
+      "sha256": "1617eb30797fbb393a1616a408a2108c332cb7ddaddfec804db20cbc9ed1fd56"
+    },
+    "source_packet_schema": 3,
+    "source_price_volume_binary64_inputs_checked": 99220,
+    "source_price_warmup_position": 274,
+    "source_targets_shadows_or_accounts_replayed": false,
+    "standalone_financial_verdict_preserved": "rejected",
+    "technical_admission_is_final_qualification": false,
+    "unavailable_before_price_warmup_checked": true
+  },
+  "global_pool_changed": false,
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "new_formal_funded_paths": 0,
+  "new_strategy_evaluations": 0,
+  "order_authority": false,
+  "review_implementation_freeze": {
+    "path": "reports/ssd-continuous-research-v1/lagged-spy-price-impact-admission-20261105-v1/review-implementation-freeze-v1.json",
+    "sha256": "90036e6cd5a58fb059e1dba4fb6c4ec590ade25b247a47d7540c710dbd167644"
+  },
+  "schema_version": 1,
+  "standalone_financial_rejection_preserved": true,
+  "study_id": "ssd_lagged_spy_price_impact_technical_admission_20261105_v1",
+  "technical_expert_admitted": true
+}

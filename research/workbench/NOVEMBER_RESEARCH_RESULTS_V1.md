@@ -61,10 +61,38 @@ read-only verification retain unchanged authority hash, ledger, source code
 and research counts. Only the verified environment shell script was loaded
 afterward; no permission, financial gate or scientific byte was changed.
 
-Separate source technical admission is still unreviewed; standalone financial
-failure alone is not exclusion, and later valid admission would not
-automatically choose a pool member. Global rosters, source stops and forward
-identities remain unchanged. Current authoritative J1039:96registrations,
+The [separate read-only technical admission](evidence/lagged_spy_price_impact_financial_20261105_admission_v1.json)
+passes without changing financial rejection. Thirty-five new synthetic
+source-specific review/consumer checks and Ruff pass before review freeze9003.
+The frozen1861dependency inputs, four saved books, actual six-style/BIL
+participation on every path,121native opinions,274-position warmup and
+127availability observations remain. Actual0/125/126NET maturity is independent
+of price warmup or target availability. The read-only consumer checks all2512
+canonical RF observations and the entire frozen closure, not just126.
+
+Actual introduction remains registration1028 at **10:00:18.384153Z**.
+The separate admitted-at timestamp is **2026-11-05T10:45:08.025682Z**, after
+the new review freeze and source financial completion, not a backdated source
+launch. The Module consumes the retained full-OHLCV/binary64 source proof and
+reuses the existing monthly Adapter. A frozen generic consumer is rebound into
+an isolated source namespace; the older Module is not mutated.
+No indicator, target, shadow, account or benchmark is recomputed.
+The public financial result's old review-pending flag stays its then-unreviewed
+historical snapshot.
+
+Two preparation failures remain recorded: a native-origin preflight confused
+the actualsystem source field with the separateautopilot agentMode field,
+and a directory helper'sNone return was assigned as a path after it had created
+the private directory. The exact source/delivery/tag/bound-prompt hash was
+verified, and the same empty partial directory was retained, not deleted or
+reset. Neither failure executed a technical review, changed authority or
+modified source science. The subsequent35synthetic checks and actual frozen
+read-only review/consumer pass.
+
+Standalone financial failure alone is not exclusion; actual technical admission
+does not choose a pool member or qualify the final portfolio. Global rosters,
+source stops and forward identities remain unchanged. No new financial trial
+or funded path is added. Current authoritative J1039:96registrations,
 87completed reviews,nine technical failures,zero pending,348formal funded paths,
 **265combined completions,zero qualifiers; investment goal unmet**.
 The source proxy and declared lag do not authenticate every original intraday
