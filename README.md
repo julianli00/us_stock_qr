@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 105 SSD identities, 94 completed/rejected, nine retained technical failures and two pending; 376 funded paths | Journal1125 current preregistration: 272 combined completions, zero qualifiers; two new registered rules have no funded outcome yet |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 105 SSD identities, 96 completed/rejected, nine retained technical failures and zero pending; 384 funded paths | Journal1144 current summary: 274 combined completions, zero qualifiers; investment goal remains unmet |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -45,7 +45,33 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
-### Signed-activity nine: registered, not yet funded
+### Signed-activity nine: both complete rules rejected
+
+The [complete controlled outcome](research/workbench/evidence/signed_style_activity_expert_inclusion_20261105_v2_results_v1.json)
+keeps every preregistered source, score, cost, clock and financial gate.
+Both rules complete all four original cash-funded paths after actual complete
+cohort publication`ced33c7`and fence1126; reviews1135/1144reject both.
+
+| Rule | Original path | Net CAGR | RF Sharpe | Maximum DD |
+| --- | --- | ---: | ---: | ---: |
+| Equal-nine | 10y-base | 13.521779% | 0.938427 | 19.321201% |
+| Equal-nine | 10y-stress | 12.948191% | 0.894191 | 18.793782% |
+| Equal-nine | 5y-base | 15.666269% | 0.960037 | 13.874616% |
+| Equal-nine | 5y-stress | 14.634499% | 0.884361 | 14.079017% |
+| Rolling-nine | 10y-base | 11.212779% | 0.708436 | 22.977061% |
+| Rolling-nine | 10y-stress | 10.287252% | 0.641083 | 22.018498% |
+| Rolling-nine | 5y-base | 12.005686% | 0.614873 | 23.294694% |
+| Rolling-nine | 5y-stress | 10.781485% | 0.534316 | 22.469235% |
+
+Every Sharpe and QQQgate fails. Partial CAGR/DD/SPYpasses do not qualify a
+complete policy. Both rules have lower CAGR/Sharpe and higher actual turnover/
+fees than their predeclared cached same-rule original-eight controls; equal's
+five-year DD improves, not its complete qualification. These are whole-policy
+contrasts, not isolated causal activity, roster or fee effects.
+All eight paths retain original accounting/BT and zero broker orders.
+**J1144:274completions,zero qualifiers; investment goal unmet.**
+
+### Preserved signed-activity preregistration snapshot J1125
 
 The [controlled inclusion](research/workbench/SIGNED_STYLE_ACTIVITY_EXPERT_INCLUSION_V2.md)
 retains the original eight complete experts and adds only the separately
@@ -69,7 +95,7 @@ retain both identities. Freeze`9a97b0b1`pins190dependencies,2610source
 references,nine source clocks and17explicit tested inputs. No source,
 shadow,account or benchmark is replayed. Both complete packets must be
 remotely published before either new candidate receives capital.
-**J1125:two pending rules,no new funded paths or financial outcomes;
+**At preregistration J1125:two pending rules,no new funded paths or financial outcomes;
 272 completions,zero qualifiers. Investment goal remains unmet.**
 
 ### Signed style activity: admissible expert, still financially rejected

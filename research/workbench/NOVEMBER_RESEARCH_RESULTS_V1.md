@@ -4,7 +4,60 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Signed-activity nine V2: complete cohort preregistered
+## Signed-activity nine V2: both complete policies rejected
+
+The [complete result](evidence/signed_style_activity_expert_inclusion_20261105_v2_results_v1.json)
+retains the exact`9a97b0b1`study-specific nine-source program and both actual
+registered identities. Actual complete-cohort publication is
+`ced33c7bce0843e35fcbf978cf3dee2018e86f3e`; both packets,457scientific blobs
+and28original import pins per candidate are verified before either account.
+Publication fence1126 at **2026-11-05T20:42:31.183312Z** precedes all new
+funded paths. Prefund checkpoint611was saved and exactly read back.
+
+| Rule | Original path | Net CAGR | RF Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Model fees USD |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Equal-nine | 10y-base | 13.521779% | 0.938427 | 19.321201% | 3.003824x | 1102 | 1355.75 |
+| Equal-nine | 10y-stress | 12.948191% | 0.894191 | 18.793782% | 2.998303x | 1102 | 2088.98 |
+| Equal-nine | 5y-base | 15.666269% | 0.960037 | 13.874616% | 2.922987x | 534 | 625.46 |
+| Equal-nine | 5y-stress | 14.634499% | 0.884361 | 14.079017% | 2.912902x | 534 | 888.55 |
+| Rolling-nine | 10y-base | 11.212779% | 0.708436 | 22.977061% | 7.887348x | 913 | 1525.52 |
+| Rolling-nine | 10y-stress | 10.287252% | 0.641083 | 22.018498% | 7.884855x | 913 | 3261.65 |
+| Rolling-nine | 5y-base | 12.005686% | 0.614873 | 23.294694% | 7.598439x | 469 | 688.38 |
+| Rolling-nine | 5y-stress | 10.781485% | 0.534316 | 22.469235% | 7.606523x | 469 | 1324.76 |
+
+Equal-nine passes all four CAGRgates and the two five-year DD/SPYgates,
+including five-year stress/base-SPY. Every Sharpe and QQQgate fails.
+Rolling-nine passes only five-year base CAGR; its other CAGR, all Sharpe,
+DD,SPY,QQQand extra stress/base-SPYgates fail. Reviews1135/1144reject the
+complete unchanged policies. No preferred15/20%CAGR or passing fragment
+changes qualification.
+
+Both new rules have lower CAGR/Sharpe and higher annual turnover/fees on all
+four paths than their respective predeclared cached original-eight control.
+Equal's ten-year DDworsens and five-year DDimproves; rolling's ten-year
+DDworsens slightly and five-year DDis exactly unchanged. Equal adds20--67model
+tickets per path; rolling adds14on ten-year paths and none on five-year paths.
+These whole-policy contrasts are not isolated causal roster, activity-alpha
+or realized-fee effects. The old controls are consumed, not replayed.
+
+All eight formal paths retain full2512/1254returns, freshUSD10000, initial
+peak, original canonicalRF,5/20bps+$1,1/2later-open delays, actual holdings
+feedback and cash funding<=1x. Minimum cashUSD173.47904847501317,
+maximum gross0.9837705257147962, maximum independentBTgap
+USD1.7462298274040222e-10; actual broker orders0.
+The once-only financial process exits0 in115.54464733297937seconds,
+Darwin peakRSS500965376bytes. This does not include44.590936seconds for
+registration/target proof, and no original source/shadow/benchmark runs.
+
+The unregistered V1collision and all old identities remain; it is not an
+extra financial trial or a rewritten technical failure. Technical source
+admission remains valid but does not promote a failed combination globally.
+**Current J1144:105registrations,96completed reviews,nine technical failures,
+zero pending,384funded paths,274combined completions and zero qualifiers.
+The investment objective is unmet.** No failed score, source, band, RF,
+weighting, window or cost is retuned after these results.
+
+## Preserved signed-activity nine V2 preregistration snapshot J1125
 
 This study retains the original eight and adds only the admitted complete
 signed-style-activity policy. Equal weighting and the original126/84/42,
@@ -43,7 +96,7 @@ schema2packets explicitly require the complete fixed cohort before funding.
 Actual registration/proof takes44.59093612502329seconds,
 Darwin peakRSS474570752bytes.
 
-**Current J1125:105registrations,94completed reviews,nine technical failures,
+**At preregistration J1125:105registrations,94completed reviews,nine technical failures,
 two pending,376funded paths,272combined completions and zero qualifiers.**
 Neither new candidate has funded paths or financial metrics yet.
 Both exact packets/code must be remotely published before the original eight
