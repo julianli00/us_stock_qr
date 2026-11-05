@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_monthly_style_reversal_complete_policy_20261105_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "candidate_id": "monthly_style_reversal_v1",
+  "candidates": [
+    {
+      "id": "monthly_style_reversal_v1",
+      "construction": "monthly_equal_capital_two_recently_weakest_styles"
+    }
+  ],
+  "mechanism_group": "monthly_cross_sectional_style_reversal",
+  "prior_completed_configurations": 258,
+  "prior_journal_sequence": 957,
+  "prior_journal_head_sha256": "d66608671751e0527858252fb3b7744bfb065fa65e238b78bfcb4358f2c8371a",
+  "source_market_completion": {
+    "path": "reports/ssd-continuous-research-v1/calendar-expert-inclusion-20261105-v1/completion-v1.json",
+    "sha256": "ec373f28b3432f578f1331e85d36565562d1ebcc9d7eba7a5bc528507b09b2e3"
+  },
+  "source_market_freeze": {
+    "path": "reports/ssd-continuous-research-v1/calendar-expert-inclusion-20261105-v1/financial-implementation-freeze-v1.json",
+    "sha256": "2ab68d14ec2dca60ce9c534fb8961a7b8153d9552819e354512f999e79a3ed22"
+  },
+  "universe": ["SPY", "IEF", "GLD", "BIL", "MTUM", "VLUE", "QUAL", "USMV", "TLT", "QQQ", "XLK", "SOXX", "IJR", "PKW"],
+  "core_symbols": ["MTUM", "VLUE", "QUAL", "USMV", "IJR", "PKW"],
+  "lookback_return_sessions": 21,
+  "source_price_warmup_levels": 22,
+  "ranking": "ascending_21_session_simple_total_return_rounded_then_lexical_symbol",
+  "ranking_decimal_places": 12,
+  "selected_styles": 2,
+  "selected_style_weighting": "equal_capital_0.49_each",
+  "decision_lattice": "genuine_completed_month_ends_after_full_price_warmup",
+  "decision_information_clock": "after_16_15_ET_index_close_before_later_open_execution",
+  "execution": "unchanged_actual_weight_band_and_original_one_or_two_session_later_open",
+  "missing_history": "unavailable_until_22_consecutive_price_levels_not_BIL_or_zero_score",
+  "invested_target_budget": 0.98,
+  "idle_cash_reserve": 0.02,
+  "actual_weight_trade_band": 0.025,
+  "score_maturity_is_separate_from_policy_availability": true,
+  "minimum_financial_source_participation_family_count": 3,
+  "new_registered_factor_families": 0,
+  "new_traded_assets": 0,
+  "new_asset_price_ranking_rule": true,
+  "candidate_count_in_this_study": 1,
+  "study_size_is_a_total_research_quota": false,
+  "parameter_search": false,
+  "rationale": {
+    "question": "Can a complete monthly contrarian policy over existing style ETFs supply behavior complementary to momentum, price-trend, option, covariance, credit and calendar experts?",
+    "premise": "Temporary relative style-flow pressure and rebalancing may be followed by recovery. This is a falsifiable premise, not an observed recovery or demonstrated ETF alpha.",
+    "research_choices": "One roughly one-month signal, a monthly commitment and an equal-capital bottom-two basket are fixed before outcomes. Twelve-decimal ranking and lexical ties make numerical tie handling explicit. No window, count, cutoff, weight, band or execution search.",
+    "distinct_from_prior_reversion": "This policy ranks admitted asset close ratios. It is not OLMAR/PAMR, a prediction of expert NET wealth, a repair of a stopped archived policy, a new RF assessment view or a source-Interface waiver.",
+    "risk_and_cost": "Relatively weak equity styles can keep losing together. This is long-only equity exposure, not a market hedge or an independent risk source. Concentration, one-month commitment, holding drift, delayed fills, actual turnover, tickets and costs can defeat the premise.",
+    "source_scope": "Use only the admitted fourteen-asset market, its six existing style families and the original calendar. No new quote, holdings refresh, vintage, traded asset or source scope is admitted. Missing history produces no opinion; invalid input fails rather than becoming a safe BIL state.",
+    "introduction": "Native historical opinions would assume counterfactual policy availability. Actual definition, registration and technical admission happen now and are never backdated. All 258 prior completions are exposed.",
+    "future_finance": "Preparation is not a financial trial, technical expert admission or pool membership. A separately frozen financial implementation, actual registration and publication must precede real targets and all four original funded paths, actual family participation and independent accounting.",
+    "counts": "The reused market contract belongs to the closed prior study. Its prior count256 is historical; this preparation's authoritative prior is258 atJ957. Older inherited228 remains stale and is not repaired by editing a frozen file."
+  },
+  "methodology": {
+    "real_source_targets_accounts_or_financial_outcomes_computed": false,
+    "new_expert_technically_admitted": false,
+    "existing_pool_changed": false,
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}
