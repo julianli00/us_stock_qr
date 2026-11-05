@@ -4,7 +4,76 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Retained fixed-catalogue single-return influence
+## Conditional deletion robust pair: all four original paths rejected
+
+The [complete outcome](evidence/deletion_robust_pair_financial_20261105_results_v1.json)
+evaluates the unchanged98bdprimary with separately frozen2db4financial code.
+Same nine admitted experts,14assets,126mature NET/RF observations,84/42split,
+k2, full-training ERC, nominal switch proxy and21-session cost amortization
+remain. The minimum of the two full-sample and126single-return-deleted scores
+is the new12-decimal lexical ranking key. Covariance and pair weights are not
+refitted after deletion. Original scored/unscorable and conditionally-unscorable
+states are separately retained, with no safety-success or missing-history fill.
+The failed exact-current-opinion exclusion is not carried into this new law.
+
+Actual registration1075 at **2026-11-05T15:31:15.223222Z** precedes the first
+new static meta-target derivation. Proof1076 at **15:32:05.161397Z** binds all
+121decisions,242input/resolved records,266076round-tripped source NET/RF values,
+all36original pair rows and525312independent conditional sample-score checks.
+Full-training scalar covariance/ERC/marginal risk/costs and every128-score
+profile, zero-risk position, exact minimum/key, tie and unified target are checked.
+Five exact target/audit prefixes and actual six-style participation on both
+horizons remain. Original target/weight/point-score/profile tolerances are held;
+maximum gaps are5.551115123125783e-17/2.220446049250313e-16/
+5.329070518200751e-15/5.329070518200751e-15.
+
+The [actual one-entry schema2packet](evidence/deletion_robust_pair_financial_20261105_registration_v1.json)
+and frozen code actually publish at
+`d25347df40f0212c8526b6785753ed21ae2ce7be` before fence1077 at
+**15:37:11.312824Z** and every account. Review1086 at
+**15:37:21.632251Z** rejects the complete unchanged policy.
+
+| Original path | Net CAGR | RF-excess Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Model fees USD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 10y-base | 12.387047% | 0.795679 | 26.041426% | 7.957762x | 900 | 1570.49 |
+| 10y-stress | 11.030041% | 0.697923 | 27.595543% | 7.957107x | 900 | 3383.65 |
+| 5y-base | 10.485371% | 0.518855 | 26.328910% | 8.738511x | 466 | 697.20 |
+| 5y-stress | 8.861473% | 0.409454 | 27.868546% | 8.746170x | 466 | 1345.34 |
+
+Only ten-year base CAGR>12%passes. Every other CAGR gate, all RFSharpe>1,
+DD<=15%,SPY and QQQ gates and both extra stress-versus-base-SPY gates fail.
+No passing fragment or preferred15/20%CAGR changes the original acceptance.
+
+Against the prespecified cached same-nine point-rolling primary context,
+ten-year CAGR rises0.118876-0.276494percentage points and Sharpe rises
+0.007639-0.019237. Five-year CAGR falls0.872222-1.354097points and Sharpe
+falls0.057467-0.090730. DD rises2.445303-4.892602points and annual two-sided
+turnover rises0.168104-0.598121times NAV on all paths. Tickets fall9ten years
+and4five years, while fees riseUSD15.92/66.76ten years and fallUSD2.80/18.17
+five years. Against equal-nine descriptive context, CAGR/Sharpe are lower
+and DD/turnover/fees higher everywhere, despite fewer tickets.
+These are whole-policy contrasts after learning states diverge, not isolated
+causal score or fee attribution; no old control, shadow or benchmark is replayed.
+
+Every new account retains original full2512/1254returns, freshUSD10000,
+initial peak, canonicalRF, base/stress fees/delays, cash funding and actual
+holding feedback. Minimum cashUSD154.66965791298705, maximum gross
+0.9837705257147964 and maximum independent BT gapUSD4.3655745685100555e-11;
+broker orders0. Actual financial process26961 exits0, wall
+**41.640606125001796seconds**, Darwin peakRSS417542144bytes.
+The70.4902302499977-second registration/target-proof process is separate,
+not financial runtime. Twenty-five new financial checks/Ruff pass before
+freeze, explicitly binding all12reused test/scientific inputs.
+
+Current authoritative **J1086:100registrations,91completed reviews,nine technical
+failures,zero pending,364funded paths,269combined completions,zero qualifiers;
+investment goal unmet**. Global rosters, source scope and all older failures
+remain. All268prior financial completions and the conditional diagnosis were
+exposed. A lower conditional sample score envelope is not a full covariance-refit,
+probability, drawdown or income guarantee, nor independent forward evidence.
+Earlier sections retain their then-dated snapshot counts.
+
+## Preserved fixed-catalogue single-return influence
 
 The [aggregate evidence](evidence/expert_score_deletion_influence_20261105_results_v1.json)
 uses only the exact retained input/resolved records of the closed distinct-opinion
@@ -62,7 +131,7 @@ or expected financial improvement. Fixing weights omits covariance-refit
 influence, so this does not bound the full procedure's sensitivity.
 All268financial completions and prior diagnosis are exposed history.
 No new law, parameter, source admission, pool membership or acceptance follows
-automatically. Financial history stays **J1074/99registered/90completed/nine
+automatically. At that diagnosis's close, financial history was **J1074/99registered/90completed/nine
 technical/zero pending/360paths/268combined completions/zero qualifiers**.
 The preceding four-path financial rejection and investment goal unmet remain.
 
@@ -128,7 +197,7 @@ on `event_sha256`; actual journals use `sha256`. Registration/proof/packet had
 already succeeded, and only the error receipt was recovered, without replay
 or a fabricated registration runtime.
 
-Current authoritative **J1074:99registrations,90completed reviews,nine technical
+At that study's close, authoritative **J1074:99registrations,90completed reviews,nine technical
 failures,zero pending,360funded paths,268combined completions,zero qualifiers;
 investment goal unmet**. Global rosters and source scope are unchanged.
 All267prior completions and the geometry diagnosis were exposed; causal

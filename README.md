@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 99 SSD identities, 90 completed/rejected, nine retained technical failures and zero pending; 360 funded paths | Journal1074 current summary: 268 combined completions, zero qualifiers; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 100 SSD identities, 91 completed/rejected, nine retained technical failures and zero pending; 364 funded paths | Journal1086 current summary: 269 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -45,7 +45,35 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
-### Retained score influence: fixed-catalogue ordering is single-return sensitive
+### Conditional deletion robust ranking: all four funded paths rejected
+
+The [complete outcome](research/workbench/evidence/deletion_robust_pair_financial_20261105_results_v1.json)
+keeps the same nine complete experts and original money contract. It ranks the
+lower envelope of each pair's full and single-return-deleted sample scores,
+with original full-training ERC weights and the nominal cost proxy fixed.
+It does not carry the separate failed current-opinion exclusion.
+Actual registration1075 and proof1076 precede exact preregistration
+`d25347df40f0212c8526b6785753ed21ae2ce7be`; fence1077 precedes all accounts.
+Review1086 rejects the unchanged complete policy.
+
+| Original path | Net CAGR | RF Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Model fees USD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 10y-base | 12.387047% | 0.795679 | 26.041426% | 7.957762x | 900 | 1570.49 |
+| 10y-stress | 11.030041% | 0.697923 | 27.595543% | 7.957107x | 900 | 3383.65 |
+| 5y-base | 10.485371% | 0.518855 | 26.328910% | 8.738511x | 466 | 697.20 |
+| 5y-stress | 8.861473% | 0.409454 | 27.868546% | 8.746170x | 466 | 1345.34 |
+
+Only ten-year base CAGR passes; every Sharpe, drawdown and SPY/QQQ gate fails,
+including extra base-SPY gates under stress. Against cached same-nine point
+ranking, ten-year CAGR/Sharpe improve slightly but five-year values fall;
+DD and turnover rise everywhere. Fewer tickets do not ensure lower fees:
+fees rise ten years and fall slightly five years. These are whole-policy
+contrasts, not isolated causal score or fee effects. No old control is replayed.
+Conditional score conservatism is not a drawdown or return guarantee.
+**269 combined completions, zero qualifiers; investment goal unmet.**
+Earlier sections retain their then-dated snapshot counts.
+
+### Preserved score influence: fixed-catalogue ordering is single-return sensitive
 
 The [new read-only diagnosis](research/workbench/evidence/expert_score_deletion_influence_20261105_results_v1.json)
 keeps all121source decisions:114mature scored catalogues and seven unscored
@@ -62,7 +90,7 @@ All525312sample risk scores have an independent numerical moment check.
 These are conditional influence calculations, not a covariance refit, replayed
 source selector, true-winner probability, realized turnover or profit estimate.
 No new trading rule, financial evaluation, pool membership or gate follows.
-**J1074,268combined completions and zero qualifiers remain unchanged.**
+**At that diagnosis's close:J1074,268combined completions and zero qualifiers.**
 
 ### Exact current-opinion distinction: all four funded paths rejected
 
@@ -91,7 +119,7 @@ descriptive context, CAGR/Sharpe fall and DD/turnover/fees rise everywhere.
 These are whole-policy differences, not isolated causal eligibility or fee alpha.
 No old control, source signal, shadow, account or benchmark is replayed.
 The full original dates, costs, delays, RF and initial capital/peak remain.
-**268 combined completions, zero qualifiers; investment goal unmet.**
+**At that study's close:268 combined completions, zero qualifiers; goal unmet.**
 Earlier sections below retain their then-dated snapshot counts.
 
 ### Preserved opinion geometry: mechanism labels are not current exposure diversity
