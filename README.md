@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 98 SSD identities, 89 completed/rejected, nine retained technical failures and zero pending; 356 funded paths | Journal1062 current summary: 267 combined completions, zero qualifiers; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 99 SSD identities, 90 completed/rejected, nine retained technical failures and zero pending; 360 funded paths | Journal1074 current summary: 268 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -45,7 +45,37 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
-### Retained opinion geometry: mechanism labels are not current exposure diversity
+### Exact current-opinion distinction: all four funded paths rejected
+
+The [complete single-policy result](research/workbench/evidence/distinct_opinion_pair_financial_20261105_results_v1.json)
+keeps the same nine complete experts and original rolling score/weight law.
+Only pairs with exactly equal current underlying targets become ineligible;
+all36mature catalogue rows remain. Different current opinions are not a claim
+of independent risk, and no expert is invalidated or globally promoted.
+The [actual single-entry registration](research/workbench/evidence/distinct_opinion_pair_financial_20261105_registration_v1.json)
+and proof1063/1064 precede actual preregistration
+`a8281ef8d77f1cc0c74a14c670af803374207f50`; fence1065 precedes all accounts.
+Review1074 rejects the complete unchanged policy.
+
+| Original path | Net CAGR | RF Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Model fees USD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 10y-base | 11.081428% | 0.725342 | 22.468372% | 7.300640x | 922 | 1510.22 |
+| 10y-stress | 10.300503% | 0.665320 | 21.610136% | 7.303673x | 922 | 3162.06 |
+| 5y-base | 10.366913% | 0.530581 | 22.833630% | 7.680729x | 473 | 687.04 |
+| 5y-stress | 9.593854% | 0.475250 | 21.942697% | 7.696169x | 473 | 1309.16 |
+
+Every CAGR, Sharpe, drawdown and SPY/QQQ gate fails, including extra
+base-cost SPY gates under stress. Against the prespecified cached same-nine
+rolling context, DD, turnover and fees fall on all paths, but CAGR and Sharpe
+also fall; tickets rise by13ten years and3five years. Against equal-nine
+descriptive context, CAGR/Sharpe fall and DD/turnover/fees rise everywhere.
+These are whole-policy differences, not isolated causal eligibility or fee alpha.
+No old control, source signal, shadow, account or benchmark is replayed.
+The full original dates, costs, delays, RF and initial capital/peak remain.
+**268 combined completions, zero qualifiers; investment goal unmet.**
+Earlier sections below retain their then-dated snapshot counts.
+
+### Preserved opinion geometry: mechanism labels are not current exposure diversity
 
 The [new read-only diagnosis](research/workbench/evidence/expert_opinion_geometry_20261105_results_v1.json)
 retains all121saved decision states and4356current-opinion pairs.
@@ -59,7 +89,8 @@ overlap is0.437656758. Numerical affine rank is3-5, not a count of economic risk
 This is not a new portfolio rule, a replayed scorer or independent forward proof.
 Equal opinions do not invalidate complete experts, and affine span does not
 establish a cash-funded convex replacement. No member, financial gate or
-failed outcome changes. **267 combined completions, zero qualifiers remain.**
+failed outcome changes. **At that diagnosis's close:267 combined completions,
+zero qualifiers.**
 
 ### Controlled price-impact inclusion: both complete rules rejected
 
@@ -93,7 +124,7 @@ No old control is replayed. Minimum cashUSD171.7418691, maximum gross0.983770526
 and maximum independent BT gapUSD8.0036e-11; full original dates and funding remain.
 Source financial rejection and separate technical admission remain unchanged.
 This study-specific ninth member is not global roster promotion.
-**267 combined completions, zero qualifiers; investment goal unmet.**
+**At that study's close:267 combined completions, zero qualifiers; goal unmet.**
 
 ### Preserved lagged SPY source snapshot: all four paths rejected
 

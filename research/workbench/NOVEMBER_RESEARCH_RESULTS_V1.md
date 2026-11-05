@@ -4,7 +4,76 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Retained current-opinion geometry: a descriptive diagnosis
+## Exact current-opinion distinct pair: all four original paths rejected
+
+The [complete single-policy outcome](evidence/distinct_opinion_pair_financial_20261105_results_v1.json)
+uses the immutablecefbprimary and separately frozend1d868financial program.
+Same nine complete experts, original126/84/42mature NET/RF score,k2,ERC,
+nominal switch proxy,21-session amortization and12-decimal ties remain.
+The new gate excludes exactly equal current complete opinions, with signed
+zeros equal; no tolerance, affine rank, overlap threshold or source validity
+rule replaces it. All36mature pair records remain. Immature and mature
+no-eligible-score equal-nine states are explicitly different, without a
+safety claim or source/history fill.
+
+Actual registration1063 at **2026-11-05T12:57:49.662029Z** precedes the first
+new static meta-target derivation. Proof1064 at **12:58:06.798362Z** binds all
+121decisions,242input/resolved records and266076round-tripped source NET/RF
+binary64values. Independent target/weight/score gaps are at most
+5.551115123125783e-17/2.220446049250313e-16/5.329070518200751e-15.
+Five exact target/audit prefixes and actual six-style participation on both
+horizons pass. No completed source policy, shadow, account or benchmark runs again.
+
+The [actual one-entry schema2packet](evidence/distinct_opinion_pair_financial_20261105_registration_v1.json)
+and frozen code actually publish at
+`a8281ef8d77f1cc0c74a14c670af803374207f50`, before fence1065 at
+**13:12:41.271995Z** and every account. Review1074 at
+**13:12:52.306430Z** rejects the complete policy.
+
+| Original path | Net CAGR | RF-excess Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Model fees USD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 10y-base | 11.081428% | 0.725342 | 22.468372% | 7.300640x | 922 | 1510.22 |
+| 10y-stress | 10.300503% | 0.665320 | 21.610136% | 7.303673x | 922 | 3162.06 |
+| 5y-base | 10.366913% | 0.530581 | 22.833630% | 7.680729x | 473 | 687.04 |
+| 5y-stress | 9.593854% | 0.475250 | 21.942697% | 7.696169x | 473 | 1309.16 |
+
+All original CAGR>12%,RFSharpe>1,DD<=15%,SPY and QQQ gates fail, as do
+both extra stress-versus-base-SPY gates. No passing fragment or preferred
+return target changes acceptance.
+The cached same-nine rolling policy is the prespecified primary comparison:
+CAGR falls0.610661-1.029124percentage points, Sharpe falls0.024934-0.051101,
+and DD falls1.046843-1.241777points. Annual turnover falls0.451880-0.489018
+times NAV and fees fallUSD12.96-154.83; model tickets rise13ten years and3five years.
+Against equal-nine descriptive context, CAGR/Sharpe are lower while DD,
+turnover and fees are higher everywhere; fewer tickets do not imply lower costs.
+These are whole-policy effects after statistical states diverge, not isolated
+causal menu or fee attribution. No cached control is replayed.
+
+All four freshUSD10000books keep full2512/1254returns, originalRF and initial
+peak, base/stress fees, one/two-session delayed opens and actual-holding feedback.
+Minimum cashUSD168.7386309230623, maximum gross0.9837705257147962 and
+maximum independent BT gapUSD4.729372449219227e-11; broker orders0.
+Actual process18869 exits0, wall**44.75681050001003seconds**,
+Darwin peakRSS394395648bytes, not test or target-preparation time.
+
+Eighteen new synthetic checks/Ruff pass before freeze. The172-file AST closure
+does not follow unqualified test-module imports: an explicit pre-funding
+Git-lineage clarification additionally checks all four actual imported test
+files, including the two unchanged old helpers, against the exact published
+commit and prior baseline where applicable. Neither frozen bytes nor test
+results are rewritten. The registration wrapper's later metadata print failed
+on `event_sha256`; actual journals use `sha256`. Registration/proof/packet had
+already succeeded, and only the error receipt was recovered, without replay
+or a fabricated registration runtime.
+
+Current authoritative **J1074:99registrations,90completed reviews,nine technical
+failures,zero pending,360funded paths,268combined completions,zero qualifiers;
+investment goal unmet**. Global rosters and source scope are unchanged.
+All267prior completions and the geometry diagnosis were exposed; causal
+rolling scores and exact opinion distinction are not independent OOS or
+prospective proof. Earlier sections retain their then-dated snapshot counts.
+
+## Preserved current-opinion geometry: a descriptive diagnosis
 
 The [new aggregate evidence](evidence/expert_opinion_geometry_20261105_results_v1.json)
 consumes only the preserved current-opinion and saved selected-pair records of
@@ -60,8 +129,8 @@ The actual frozen calculation finishes at **2026-11-05T11:52:25.444779Z**,
 wall9.351468125008978seconds. Independent scalar distance/overlap discrepancy
 is at most2.220446049250313e-16; exact/numerical rank bounds hold on every case.
 This is descriptive exposed-history evidence, not causal alpha, calibrated
-probability, independent OOS or prospective validation. All financial totals
-remain **J1062/98registrations/89completed/nine technical/zero pending/
+probability, independent OOS or prospective validation. At that diagnosis's close,
+financial totals remained **J1062/98registrations/89completed/nine technical/zero pending/
 356paths/267combined completions/zero qualifiers**. The original source
 scope, global rosters and failed financial outcomes remain unchanged.
 
@@ -123,7 +192,7 @@ account or benchmark is replayed. Actual financial process receipt wall is
 The source's financial rejection and separate technical admission remain;
 study-specific membership does not alter original global rosters or source scope.
 
-Current authoritative J1062:98registrations,89completed reviews,nine technical
+At that study's close, authoritative J1062:98registrations,89completed reviews,nine technical
 failures,zero pending,356formal funded paths,
 **267combined completions,zero qualifiers; investment goal unmet**.
 The two-rule size is this frozen study, not a future research-count limit.
