@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 86 SSD identities, 76 completed/rejected, nine retained technical failures and one pending; 304 funded paths | Journal911 preregistration summary: 254 combined completions, zero qualifiers; no new dynamic-policy capital outcome or trading authority |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 86 SSD identities, 77 completed/rejected, nine retained technical failures and zero pending; 308 funded paths | Journal922 current summary: 255 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -44,6 +44,39 @@ November authorization.
 The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
+
+### Main-capital feedback: complete and rejected
+
+The [actual four-path result](research/workbench/evidence/main_capital_feedback_20261104_results_v1.json)
+completes one fixed original-eight policy after actual preregistration
+`844c05b45008f232830354b2acff7b0ec206b43d` and fence912 at
+**2026-11-05T00:09:10.224512Z**, before first account913. Review922 at
+**00:09:53.038292Z** rejects the complete rule. Both base CAGR gates pass,
+but both stress CAGR and every Sharpe/DD/SPY/QQQ gate fail.
+
+| Original path | Net CAGR | RF Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Model fees USD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 10y-base | 12.823412% | 0.815678 | 21.883329% | 6.874645x | 903 | 1505.64 |
+| 10y-stress | 11.729088% | 0.738428 | 21.778296% | 6.872517x | 903 | 3183.86 |
+| 5y-base | 12.921358% | 0.673471 | 23.083596% | 7.446470x | 459 | 677.69 |
+| 5y-stress | 11.287107% | 0.564500 | 23.038809% | 7.441490x | 458 | 1298.03 |
+
+Actual closing main-state inputs, band and delayed fills reconcile on all four
+paths; maximum independent BT gap is USD5.4570e-11. Five separately versioned
+post-publication real prefix audits match every earlier capital row, target and
+decision exactly. They are auxiliary checks, not five extra economic rules or
+qualifying windows. Real target proof921 follows that execution and validation.
+
+Compared with cached rolling-eight, all four CAGR/Sharpe values improve and
+turnover falls. DD improves on three paths but worsens on five-year stress;
+fees rise in both ten-year paths and fall in both five-year paths. The
+five-year initialization difference remains disclosed, so these are whole-policy
+contrasts, not an isolated causal cost or fee effect. No control, source
+generator, source shadow or benchmark is replayed. The valid original pool is
+unchanged; no passing fragments or failed parameters are rescued.
+**255 combined completions, zero qualifiers; investment goal unmet.**
+
+### Preserved main-capital preregistration snapshot
 
 The [actual main-capital feedback program](research/workbench/MAIN_CAPITAL_FEEDBACK_V1.md)
 has a [versioned dynamic preregistration packet](research/workbench/evidence/main_capital_feedback_20261104_registration_v1.json):

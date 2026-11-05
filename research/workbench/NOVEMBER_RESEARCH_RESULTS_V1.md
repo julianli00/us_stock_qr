@@ -4,7 +4,51 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Main-capital feedback: registered dynamic program, not yet funded
+## Main-capital feedback: complete rule rejected
+
+The [complete four-path result](evidence/main_capital_feedback_20261104_results_v1.json)
+retains actual preregistration `844c05b45008f232830354b2acff7b0ec206b43d`,
+fence912 at **2026-11-05T00:09:10.224512Z** before first account913 at
+**00:09:11.682480Z**, and rejected review922 at **00:09:53.038292Z**.
+The new known-main-state cost input does not produce a qualified portfolio.
+
+| Original path | Net CAGR | RF-excess Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Model fees USD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 10y-base | 12.823412% | 0.815678 | 21.883329% | 6.874645x | 903 | 1505.64 |
+| 10y-stress | 11.729088% | 0.738428 | 21.778296% | 6.872517x | 903 | 3183.86 |
+| 5y-base | 12.921358% | 0.673471 | 23.083596% | 7.446470x | 459 | 677.69 |
+| 5y-stress | 11.287107% | 0.564500 | 23.038809% | 7.441490x | 458 | 1298.03 |
+
+Only the two base CAGR gates pass. Both stress CAGR and every Sharpe/DD/SPY/QQQ
+and extra stress/base-SPY gate fail. No gate, cost, band, score period or
+initialization rule changes after outcomes. All four accounts are cash funded:
+minimum cashUSD171.7287040, maximum gross0.983770526, maximum independent
+BT gapUSD5.4570e-11 and broker orders0.
+
+Every decision uses the actual main closing dollar holdings, cash and NAV
+(121/121/61/61 decisions). All band and delayed-request checks pass.
+Five post-publication real main-book prefix audits are bit-exact for earlier
+capital rows, weights, desired/issued targets and decisions. They are retained
+as separate `main_capital_prefix_audit_v1` artifacts, not independent economic
+rules or extra qualifying windows. Actual target proof921 follows those runs.
+The source/PIT scopes are not enlarged by these checks.
+
+Against cached rolling-eight, CAGR/Sharpe improve and turnover declines on all
+four paths. DD improves ten-year base/stress and five-year base, but worsens
+five-year stress. Ten-year tickets rise4/4 and fees riseUSD11.06/13.04;
+five-year tickets fall10/11 and fees fallUSD8.75/20.07. Against cached equal-eight,
+all CAGR/Sharpe values are lower and DD/turnover/fees higher despite fewer
+tickets. Neither control is replayed. These are whole-policy contrasts, not
+isolated fee/alpha attribution; the five-year initialization distinction below
+is preserved.
+
+Current journal922:86registrations,77completed reviews,nine retained financial
+technical failures,zero pending,308formal funded paths,**255combined completions,
+zero qualifiers; investment goal unmet**. Source generators, source shadow
+accounts and benchmarks are not rerun. The original source pool/global rosters
+and all failures stay preserved. No independent forward proof is claimed.
+
+### Preserved preregistration snapshot: not yet funded
 
 The [new chronological program](MAIN_CAPITAL_FEEDBACK_V1.md) and its
 [explicit dynamic packet](evidence/main_capital_feedback_20261104_registration_v1.json)
