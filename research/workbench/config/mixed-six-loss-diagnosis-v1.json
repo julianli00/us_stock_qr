@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_mixed_six_loss_diagnosis_20261105_v1",
+  "financial_freeze": {
+    "path": "reports/ssd-continuous-research-v1/mixed-mechanism-six-financial-20261105-v1/financial-implementation-freeze-v1.json",
+    "sha256": "f6d9d667554ff1205931f760c56d4365c8e81fd41c17bd485223b773cfcfb06c"
+  },
+  "financial_results": {
+    "path": "reports/ssd-continuous-research-v1/mixed-mechanism-six-financial-20261105-v1/results.json",
+    "sha256": "523db60447650faeb0a0badf289e13162e73c6621ffd32ff22ecf00968a2732d"
+  },
+  "financial_completion": {
+    "path": "reports/ssd-continuous-research-v1/mixed-mechanism-six-financial-20261105-v1/completion-v1.json",
+    "sha256": "f888b9d4fa1492d2f775480d20cfb82bde183282395333fbace3b57f9c53ced9"
+  },
+  "financial_public_result": {
+    "path": "evidence/mixed_mechanism_six_financial_20261105_results_v1.json",
+    "sha256": "b1a35048b0ad4d20628a8262d812f4c0a3fb39b22a0d0f26c4a9070c24d59740"
+  },
+  "candidate_ids": [
+    "expert_pool_mixed_mechanism_six_equal_v1",
+    "expert_pool_mixed_mechanism_six_rolling_pair_v1"
+  ],
+  "path_keys": ["10y-base", "10y-stress", "5y-base", "5y-stress"],
+  "initial_capital_USD": 10000,
+  "monetary_reconciliation_tolerance_USD": 0.000001,
+  "saved_drawdown_agreement_tolerance": 0.0000000001,
+  "peak_convention": "latest_preceding_running_max_including_initial_capital",
+  "trough_convention": "earliest_maximum_observed_drawdown",
+  "common_clock_comparison": "both_own_peak_to_trough_intervals_for_each_original_path",
+  "mark_identity": "previous_adjusted_units_overnight_current_adjusted_units_intraday_minus_saved_cost",
+  "idle_cash_interest": 0,
+  "original_full_return_lattice_preserved": true,
+  "existing_accounting_identity_reused_not_new_strategy": true,
+  "source_data_reader": "unchanged_canonical_review_market",
+  "raw_source_prices_units_targets_or_daily_rows_exported": false,
+  "new_financial_evaluations": 0,
+  "new_source_requests": 0,
+  "source_selectors_targets_accounts_or_BT_replayed": false,
+  "financial_criteria_or_global_pool_changed": false,
+  "fee_free_or_expert_causal_counterfactual_claimed": false,
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "order_authority": false
+}

@@ -4,6 +4,68 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Saved mixed-six losses: full ledger and common-clock diagnosis
+
+The [aggregate diagnosis](evidence/mixed_six_loss_diagnosis_20261105_v1.json)
+reads the eight newly completed mixed-six main accounts under separately
+frozen`e8751fbf`,151dependencies,59source references and six explicit tested
+inputs. Twenty-eight new synthetic checks/Ruff pass before the actual once-only
+analysis. Existing adjusted-unit accounting and stored-episode methods are
+reused on these new books; the already completed score-persistence question and
+old financial pipelines are not rerun.
+
+All original2512/1254-day grids and initial USD10000peak remain. Previous
+adjusted model units explain overnight marks; current units explain intraday
+marks. Recorded fees are separate debits, and idle cash earns no invented
+interest. Every asset, including zero and positive offsets, remains in the
+aggregate JSON. These are adjusted research units, not broker shares or an
+inferred allocation of causal source-expert profit.
+
+| Rule | Original path | Actual peak--trough | Actual NAV change USD | Total asset marks USD | Recorded fees USD | Fees / actual net loss |
+| --- | --- | --- | ---: | ---: | ---: | ---: |
+| Equal-six | 10y-base | 2020-02-19--2020-03-23 | -4051.31 | -4040.57 | 10.74 | 0.265112% |
+| Equal-six | 10y-stress | 2020-02-19--2020-03-23 | -3902.25 | -3889.23 | 13.01 | 0.333503% |
+| Equal-six | 5y-base | 2021-11-16--2022-09-27 | -1682.82 | -1563.49 | 119.33 | 7.091126% |
+| Equal-six | 5y-stress | 2021-11-16--2022-09-27 | -1695.79 | -1519.71 | 176.08 | 10.383158% |
+| Rolling-six | 10y-base | 2022-01-04--2023-10-27 | -4148.65 | -3832.63 | 316.02 | 7.617453% |
+| Rolling-six | 10y-stress | 2022-01-04--2023-10-27 | -4311.78 | -3571.50 | 740.28 | 17.168703% |
+| Rolling-six | 5y-base | 2022-01-04--2023-10-27 | -2548.28 | -2294.92 | 253.36 | 9.942477% |
+| Rolling-six | 5y-stress | 2022-01-04--2023-10-27 | -2724.44 | -2206.21 | 518.23 | 19.021632% |
+
+Asset marks minus recorded fees reconcile to each actual loss. Maximum daily
+NAV error isUSD1.3415046851150692e-11, cash-flow errorUSD8.071765478234738e-12,
+scalar/vector sum gapUSD2.2737367544323206e-13, and whole-interval error
+USD6.139089236967266e-12. Stored-DD agreement differs at most
+1.7763568394002505e-15, below the unchanged diagnostic tolerance.
+The15064rows across eight separate paths are not independent observations.
+
+Each original path is also observed at both rules' exact own-episode clocks:
+eight origins and sixteen account views, without fresh capital or trade replay.
+
+| Original path | Episode origin | Equal-six stored interval change | Rolling-six stored interval change |
+| --- | --- | ---: | ---: |
+| 10y-base | Equal:2020-02-19--2020-03-23 | -27.804702% | -9.875483% |
+| 10y-base | Rolling:2022-01-04--2023-10-27 | -10.813595% | -22.262628% |
+| 10y-stress | Equal:2020-02-19--2020-03-23 | -27.593081% | -9.494382% |
+| 10y-stress | Rolling:2022-01-04--2023-10-27 | -12.469385% | -24.530027% |
+| 5y-base | Equal:2021-11-16--2022-09-27 | -15.683919% | -19.066718% |
+| 5y-base | Rolling:2022-01-04--2023-10-27 | -11.576550% | -22.781534% |
+| 5y-stress | Equal:2021-11-16--2022-09-27 | -16.058614% | -19.977247% |
+| 5y-stress | Rolling:2022-01-04--2023-10-27 | -13.192074% | -25.030084% |
+
+Different worst-episode clocks prevent interpreting a smaller ten-year maximum
+DD as uniform conditional risk dominance. These stored changes are not new
+maximum-DD estimates, cropped acceptance windows or fee-free counterfactuals.
+Removing fees could change holdings and peaks; no alternative strategy is run.
+
+Actual diagnostic process36502 exits0 in **2.617263791995356seconds**,
+Darwin peakRSS365383680bytes. All59consumed source references and151code
+dependencies, original financial inputs, legacy DB/engine,58raw/57unique
+distribution rows and user files remain verified. There are **zero new
+financial evaluations;J1109/271combined completions/zero qualifiers stay
+unchanged**. Both original complete policies remain rejected, source admission
+and global rosters remain, and the investment goal is unmet.
+
 ## Mixed-mechanism six: both complete policies rejected
 
 The [complete outcome](evidence/mixed_mechanism_six_financial_20261105_results_v1.json)

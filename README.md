@@ -45,6 +45,25 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
+### Saved mixed-six losses: actual fees are not the whole decline
+
+The [new read-only diagnosis](research/workbench/evidence/mixed_six_loss_diagnosis_20261105_v1.json)
+reconciles all eight completed main books, not new targets or backtests.
+Adjusted-asset marks and actual fees explain every saved daily NAV/cash change
+and complete maximum-DD episode. Fees are0.265112--19.021632percent of the
+respective actual episode net loss; aggregate asset marks are negative in all
+eight cases. This is a held-path accounting split, not causal expert alpha or
+a simulated fee-free policy.
+
+Equal-six ten-year paths reach their worst trough in March2020; all rolling-six
+paths have their worst episode from January2022 to October2023. On the same
+March2020 episode clocks, rolling loses about9.49--9.88percent versus equal's
+27.59--27.80percent. On rolling's2022--2023 clocks, rolling loses22.26--24.53percent
+versus equal's10.81--12.47percent. Those are stored interval NAV changes,
+not substitute financial windows or new drawdown gates. All fourteen assets,
+eight own episodes and sixteen common-clock account views remain.
+**No new financial trial:271 completions,zero qualifiers; investment goal unmet.**
+
 ### Mixed-mechanism six: both complete rules rejected
 
 The [frozen six-expert primary](research/workbench/MIXED_MECHANISM_SIX_PRIMARY_V1.md)
