@@ -4,7 +4,73 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Controlled fixed-rebalancer inclusion: both complete rules rejected
+## Lagged SPY price-impact source: complete financial rejection
+
+The [complete four-path result](evidence/lagged_spy_price_impact_financial_20261105_results_v1.json)
+retains the unchanged42d1primary Module: monthly participation based on absolute
+SPY return per reported closing-valuation activity, using only inputs throughD-1.
+The latest21observations are compared with the nonoverlapping prior252; the
+12-decimal relative key must be strictly above1to request actualBIL, otherwise
+the six-style core is equal weighted. Keep98%ETFbudget/2%idle cash.
+This is not measured liquidity, flow, market depth or an execution-cost forecast.
+
+Actual registration1028 at **2026-11-05T10:00:18.384153Z** and actual
+preregistration `ddd053fc7beaa77ef7689db1ad065b6a68c5281e` precede fence1029 at
+**10:02:59.811513Z**, all121real native indicator/opinion calculations and
+every account. After all four paths and five real main-book prefixes,
+proof1038 at **10:03:31.734738Z** and review1039 at **10:03:31.991574Z**
+retain the rejected complete rule.
+
+| Original path | Net CAGR | RF-excess Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Model fees USD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 10y-base | 8.444919% | 0.659908 | 20.024223% | 5.003175x | 187 | 528.40 |
+| 10y-stress | 7.745518% | 0.581407 | 15.975612% | 4.996623x | 187 | 1527.91 |
+| 5y-base | 10.797451% | 0.747225 | 9.632309% | 3.737011x | 75 | 187.68 |
+| 5y-stress | 8.728192% | 0.538341 | 12.034113% | 3.732775x | 75 | 502.73 |
+
+Only five-year drawdown passes. Every original CAGR, Sharpe, matched SPY/QQQ
+and extra stress/base-SPY gate fails; both ten-year drawdown gates fail too.
+No passing fragment or favorable five-year drawdown qualifies the rule.
+No lag, window, state boundary, target, fee, timing, RF or acceptance is retuned.
+Base/stress jointly change original costs and delays, so their different
+drawdowns are not an isolated fee effect.
+
+The retained242input/resolved records bind99220binary64inputs:274adjusted
+closes and273reported closes/volumes for each native opinion.
+An independent rational oracle reproduces each binary64operation, window,
+mean, relative key, state and complete target without calling the primary
+measurement function. Five full-OHLCV source prefixes preserve past state.
+The121stored opinions request actualBIL55times and the core66times; these
+are source-state counts, not counts of trades, true liquidity regimes,
+conditional performance or causal attribution.
+
+All2512/1254formal dates, freshUSD10000, initial peak, originalRF,
+cash funding,2.5ppactual-holding band, base/stress fees and delayed opens remain.
+Five separately versioned real main-book prefixes are exact auxiliary audits,
+not extra economic rules or qualifying windows. Minimum cashUSD199.4890016,
+maximum gross0.984639287 and maximum independent BT gapUSD2.1828e-11;
+broker orders0. No old source, model, target, shadow, account or benchmark
+is replayed. Actual financial process receipt wall is48.99773079199076seconds,
+not the separate synthetic validation or freeze/registration time.
+
+Twenty-seven new synthetic full-OHLCV/Interface/fence/oracle/accounting checks
+and Ruff passed before the financial freeze. One operational loader command
+mistakenly passed authorization JSON to Bash and failed before any financial
+freeze, registration or real output. The failure receipt and subsequent
+read-only verification retain unchanged authority hash, ledger, source code
+and research counts. Only the verified environment shell script was loaded
+afterward; no permission, financial gate or scientific byte was changed.
+
+Separate source technical admission is still unreviewed; standalone financial
+failure alone is not exclusion, and later valid admission would not
+automatically choose a pool member. Global rosters, source stops and forward
+identities remain unchanged. Current authoritative J1039:96registrations,
+87completed reviews,nine technical failures,zero pending,348formal funded paths,
+**265combined completions,zero qualifiers; investment goal unmet**.
+The source proxy and declared lag do not authenticate every original intraday
+publication, revision-free PIT or independent prospective gain.
+
+## Preserved controlled fixed-rebalancer snapshot: both rules rejected
 
 The [complete eight-path result](evidence/fixed_four_sleeve_expert_inclusion_20261105_results_v1.json)
 retains the original eight plus only the separately admitted forecast-free fixed
@@ -59,7 +125,7 @@ account or benchmark is replayed. Actual financial process receipt wall is
 The source's standalone financial rejection and separate technical admission
 remain; the study-specific inclusion does not change original global rosters.
 
-Current authoritative J1027:95registrations,86completed reviews,nine technical
+At the closed fixed-inclusion snapshot, J1027:95registrations,86completed reviews,nine technical
 failures,zero pending,344formal funded paths,
 **264combined completions,zero qualifiers; investment goal unmet**.
 The two-rule size is this frozen study, not a future research-count limit.

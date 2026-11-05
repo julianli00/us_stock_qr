@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 95 SSD identities, 86 completed/rejected, nine retained technical failures and zero pending; 344 funded paths | Journal1027 current summary: 264 combined completions, zero qualifiers; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 96 SSD identities, 87 completed/rejected, nine retained technical failures and zero pending; 348 funded paths | Journal1039 current summary: 265 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -45,7 +45,35 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
-### Controlled fixed-rebalancer inclusion: both complete rules rejected
+### Lagged SPY price-impact source: all four paths rejected
+
+The [complete source-policy result](research/workbench/evidence/lagged_spy_price_impact_financial_20261105_results_v1.json)
+retains the unchanged lagged return-per-reported-activity policy, not measured
+market depth, flows or execution costs. Actual registration1028 and preregistration
+`ddd053fc7beaa77ef7689db1ad065b6a68c5281e` precede fence1029, all121real
+native indicator/opinion calculations and every funded account.
+Post-execution proof1038 and review1039 retain complete rejection.
+
+| Original path | Net CAGR | RF Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Model fees USD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 10y-base | 8.444919% | 0.659908 | 20.024223% | 5.003175x | 187 | 528.40 |
+| 10y-stress | 7.745518% | 0.581407 | 15.975612% | 4.996623x | 187 | 1527.91 |
+| 5y-base | 10.797451% | 0.747225 | 9.632309% | 3.737011x | 75 | 187.68 |
+| 5y-stress | 8.728192% | 0.538341 | 12.034113% | 3.732775x | 75 | 502.73 |
+
+Only the two five-year drawdown gates pass; every CAGR, Sharpe, matched SPY/QQQ
+and extra stress/base-SPY gate fails. Both ten-year drawdown gates also fail.
+No lag, window, ratio threshold, weight, cost, RF or gate is changed.
+All99220binary64price/volume inputs and242input/resolved records retain
+the numericalD-1information rule; five full-OHLCV source prefixes and five real
+main-book prefixes are exact auxiliary audits, not extra financial rules.
+Minimum cashUSD199.4890016, maximum gross0.984639287 and maximum independent
+BT gapUSD2.1828e-11; full original dates, funding and execution remain.
+Separate technical admission is still unreviewed, not automatic exclusion or
+membership. Global rosters remain unchanged.
+**265 combined completions, zero qualifiers; investment goal unmet.**
+
+### Preserved controlled fixed-rebalancer snapshot: both rules rejected
 
 The [complete eight-path outcome](research/workbench/evidence/fixed_four_sleeve_expert_inclusion_20261105_results_v1.json)
 keeps the original eight and adds only the separately admitted fixed cross-asset
