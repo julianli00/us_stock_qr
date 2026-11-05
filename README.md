@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 96 SSD identities, 87 completed/rejected, nine retained technical failures and zero pending; 348 funded paths | Journal1039 current summary: 265 combined completions, zero qualifiers; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 98 SSD identities, 89 completed/rejected, nine retained technical failures and zero pending; 356 funded paths | Journal1062 current summary: 267 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -45,7 +45,41 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
-### Lagged SPY price-impact source: all four paths rejected
+### Controlled price-impact inclusion: both complete rules rejected
+
+The [complete eight-path outcome](research/workbench/evidence/lagged_spy_price_impact_expert_inclusion_20261105_results_v1.json)
+keeps the original eight and deliberately adds only the separately admitted
+lagged price-impact participation policy. Registrations1040/1041 precede
+new static meta-target proofs1042/1043; complete-cohort preregistration
+`a9ad64a5e3fd48fd6f427b44584bcdde77c82236` and fence1044 precede all accounts.
+Reviews1053/1062 reject both unchanged rules.
+
+| Rule / original path | Net CAGR | RF Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Model fees USD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Equal 10y-base | 14.188293% | 1.017080 | 17.142361% | 2.657312x | 1061 | 1286.18 |
+| Equal 10y-stress | 13.669074% | 0.974885 | 16.311138% | 2.657144x | 1061 | 1943.34 |
+| Equal 5y-base | 16.768545% | 1.038608 | 14.074061% | 2.500266x | 511 | 589.49 |
+| Equal 5y-stress | 15.582198% | 0.952085 | 14.374621% | 2.491507x | 511 | 813.81 |
+| Rolling 10y-base | 12.110553% | 0.776442 | 23.515215% | 7.789658x | 909 | 1554.57 |
+| Rolling 10y-stress | 10.911165% | 0.690284 | 22.702941% | 7.787956x | 909 | 3316.89 |
+| Rolling 5y-base | 11.357594% | 0.576322 | 23.883606% | 8.142356x | 470 | 700.00 |
+| Rolling 5y-stress | 10.215570% | 0.500185 | 23.184474% | 8.148049x | 470 | 1363.52 |
+
+Equal passes all CAGR, base Sharpe and five-year drawdown/SPY/extra-SPY gates;
+every QQQ gate, both stress Sharpe gates and both ten-year drawdown/SPY gates fail.
+The five-year base fragment is not joint qualification. Rolling passes only
+ten-year base CAGR; all other original gates fail. No law or gate is retuned.
+Against the prespecified cached eight-source controls, equal lowers drawdown
+but also CAGR everywhere; base Sharpe improves while stress Sharpe falls.
+Rolling has lower CAGR/Sharpe and higher drawdown/turnover/fees everywhere.
+These are whole-policy membership comparisons, not isolated causal alpha or fees.
+No old control is replayed. Minimum cashUSD171.7418691, maximum gross0.983770526
+and maximum independent BT gapUSD8.0036e-11; full original dates and funding remain.
+Source financial rejection and separate technical admission remain unchanged.
+This study-specific ninth member is not global roster promotion.
+**267 combined completions, zero qualifiers; investment goal unmet.**
+
+### Preserved lagged SPY source snapshot: all four paths rejected
 
 The [complete source-policy result](research/workbench/evidence/lagged_spy_price_impact_financial_20261105_results_v1.json)
 retains the unchanged lagged return-per-reported-activity policy, not measured

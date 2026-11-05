@@ -4,7 +4,72 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Lagged SPY price-impact source: complete financial rejection
+## Controlled price-impact inclusion: both complete rules rejected
+
+The [complete eight-path result](evidence/lagged_spy_price_impact_expert_inclusion_20261105_results_v1.json)
+retains the original eight plus only the separately admitted lagged SPY
+return-per-reported-activity participation policy. This is a deliberate
+mechanism question, not automatic promotion or a complete-window winner screen.
+Actual registrations1040/1041 at **2026-11-05T11:09:39.235571Z /
+11:09:39.772400Z** precede new static meta-target proofs1042/1043.
+Actual complete-cohort preregistration
+`a9ad64a5e3fd48fd6f427b44584bcdde77c82236` and fence1044 at
+**11:14:21.149649Z** precede every funded account.
+Reviews1053/1062 at **11:14:31.063902Z / 11:15:17.241883Z** reject both rules.
+
+| Rule / original path | Net CAGR | RF-excess Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Model fees USD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Equal 10y-base | 14.188293% | 1.017080 | 17.142361% | 2.657312x | 1061 | 1286.18 |
+| Equal 10y-stress | 13.669074% | 0.974885 | 16.311138% | 2.657144x | 1061 | 1943.34 |
+| Equal 5y-base | 16.768545% | 1.038608 | 14.074061% | 2.500266x | 511 | 589.49 |
+| Equal 5y-stress | 15.582198% | 0.952085 | 14.374621% | 2.491507x | 511 | 813.81 |
+| Rolling 10y-base | 12.110553% | 0.776442 | 23.515215% | 7.789658x | 909 | 1554.57 |
+| Rolling 10y-stress | 10.911165% | 0.690284 | 22.702941% | 7.787956x | 909 | 3316.89 |
+| Rolling 5y-base | 11.357594% | 0.576322 | 23.883606% | 8.142356x | 470 | 700.00 |
+| Rolling 5y-stress | 10.215570% | 0.500185 | 23.184474% | 8.148049x | 470 | 1363.52 |
+
+Equal passes every CAGR, both base Sharpe gates, and both five-year
+drawdown/SPY/extra-SPY gates. Every QQQ gate, both stress Sharpe gates and
+both ten-year drawdown/SPY gates fail. Its five-year base path passes the
+three headline metrics and SPY, but still fails QQQ; no passing fragment,
+metric splice or preferred15%CAGR qualifies the complete four-path rule.
+Rolling passes only ten-year base CAGR12.110553%; all other original gates fail.
+No member, score period, selected count, weight law, band, timing, fee or RF is
+changed after the outcomes.
+
+Against prespecified cached original-eight controls, equal lowers CAGR and
+drawdown everywhere. Its base Sharpe improves slightly while stress Sharpe
+falls. Turnover and fees rise ten years but fall five years. Model tickets
+rise ten years, fall by3five-year base and rise by4five-year stress.
+Rolling has lower CAGR/Sharpe and higher drawdown, turnover, fees and tickets
+on all paths. These are whole-policy membership contrasts, not isolated causal
+source alpha or fee attribution; no old control account is recomputed.
+
+The original126/84/42mature NET/RF law,k2,ERC,weaker-subperiod score,
+nominal switch proxy,21-session amortization and12-decimal ties remain.
+All36pairs at mature decisions,121capital/month-end decisions,242input/resolved
+records,266076round-tripped NET/RF values and five exact target prefixes remain.
+Independent target/weight/score gaps are at most
+1.1103e-16/2.2205e-16/5.3291e-15. All six style families occur in target coverage
+on both horizons. Nine slots are not nine independent economic risk sources.
+
+All eight fresh accounts retain full2512/1254return dates, initial capital/peak,
+originalRF, base/stress fees, delayed opens and actual holding feedback.
+Minimum cashUSD171.7418691, maximum gross0.983770526 and maximum independent
+BT gapUSD8.0036e-11; broker orders0. No old source signal, fit, target, shadow,
+account or benchmark is replayed. Actual financial process receipt wall is
+99.81756008299999seconds, not source validation or target preparation time.
+The source's financial rejection and separate technical admission remain;
+study-specific membership does not alter original global rosters or source scope.
+
+Current authoritative J1062:98registrations,89completed reviews,nine technical
+failures,zero pending,356formal funded paths,
+**267combined completions,zero qualifiers; investment goal unmet**.
+The two-rule size is this frozen study, not a future research-count limit.
+All265earlier completions were exposed before this study. Counterfactual
+availability and causal rolling scores are not independent OOS or prospective proof.
+
+## Preserved lagged SPY source snapshot: complete financial rejection
 
 The [complete four-path result](evidence/lagged_spy_price_impact_financial_20261105_results_v1.json)
 retains the unchanged42d1primary Module: monthly participation based on absolute
@@ -92,7 +157,7 @@ read-only review/consumer pass.
 Standalone financial failure alone is not exclusion; actual technical admission
 does not choose a pool member or qualify the final portfolio. Global rosters,
 source stops and forward identities remain unchanged. No new financial trial
-or funded path is added. Current authoritative J1039:96registrations,
+or funded path is added. At the closed source/admission snapshot, J1039:96registrations,
 87completed reviews,nine technical failures,zero pending,348formal funded paths,
 **265combined completions,zero qualifiers; investment goal unmet**.
 The source proxy and declared lag do not authenticate every original intraday
