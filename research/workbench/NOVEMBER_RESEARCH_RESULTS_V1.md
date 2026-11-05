@@ -4,7 +4,69 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Fixed four-sleeve source: complete financial rejection
+## Controlled fixed-rebalancer inclusion: both complete rules rejected
+
+The [complete eight-path result](evidence/fixed_four_sleeve_expert_inclusion_20261105_results_v1.json)
+retains the original eight plus only the separately admitted forecast-free fixed
+capital rebalancer. Actual registrations1005/1006 at
+**2026-11-05T09:09:52.353671Z / 09:09:52.889890Z** precede new static meta-target
+proofs1007/1008. Actual complete-cohort preregistration
+`9783370c51591d3b52218fe5735813c4f0ac6445` and fence1009 at
+**09:13:49.356379Z** precede every funded account.
+Reviews1018/1027 at **09:13:59.105700Z / 09:14:42.912948Z** reject both rules.
+
+| Rule / original path | Net CAGR | RF-excess Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Model fees USD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Equal 10y-base | 13.927170% | 0.996860 | 16.887760% | 2.339189x | 1090 | 1288.81 |
+| Equal 10y-stress | 13.424525% | 0.957322 | 16.354219% | 2.335565x | 1090 | 1866.91 |
+| Equal 5y-base | 16.181278% | 0.987611 | 15.756627% | 2.352012x | 544 | 616.63 |
+| Equal 5y-stress | 15.186546% | 0.915996 | 15.951776% | 2.340241x | 544 | 825.46 |
+| Rolling 10y-base | 11.473431% | 0.732716 | 22.965246% | 6.839042x | 902 | 1463.73 |
+| Rolling 10y-stress | 10.372325% | 0.652932 | 22.007757% | 6.838566x | 902 | 3026.36 |
+| Rolling 5y-base | 11.983350% | 0.615819 | 23.294694% | 7.910056x | 489 | 719.44 |
+| Rolling 5y-stress | 10.626205% | 0.526099 | 22.469235% | 7.915645x | 489 | 1385.03 |
+
+Equal passes every CAGR and five-year SPY/extra-SPY gate, but every Sharpe,
+drawdown and QQQ gate fails. Rolling fails every original gate.
+Near-threshold Sharpe0.996860 and CAGR11.983350% are failures, not rounded
+successes. Preferred15%CAGR does not replace the strict joint conditions.
+No source weight, member, selected count, training/validation window, fee,
+band, RF or financial acceptance is changed after these outcomes.
+
+Against prespecified cached original-eight controls, both rules have lower
+CAGR and Sharpe on all four paths. Equal reduces annual turnover everywhere
+and drawdown only ten years; five-year drawdown rises slightly. Equal tickets
+rise everywhere, while fees rise base and fall stress. Rolling turnover and
+fees fall ten years but rise five years; tickets rise everywhere. Rolling
+drawdown is slightly higher ten years and exactly unchanged five years.
+These are whole-policy membership contrasts, not isolated causal source alpha
+or fee attribution. No old control account is recomputed.
+
+The original126/84/42mature NET/RF law, k2, ERC, weaker subperiod score, nominal
+switch proxy,21-session amortization and12-decimal ties remain.
+All36pairs at mature decisions,121capital/month-end decisions,242input/resolved
+records,266076round-tripped NET/RF values and five exact target prefixes remain.
+Independent target/weight/score gaps are at most
+1.1103e-16/2.2205e-16/5.3291e-15. All six style families occur in target coverage
+on both horizons. Nine slots are not nine independent economic risk sources.
+
+All eight fresh original accounts retain full2512/1254return dates, initial
+capital/peak, originalRF, base/stress fees, delayed opens and holding feedback.
+Minimum cashUSD173.4790485, maximum gross0.983770526 and maximum independent
+BT gapUSD7.2760e-11; broker orders0. No old source signal, fit, target, shadow,
+account or benchmark is replayed. Actual financial process receipt wall is
+95.57235216700064seconds, distinct from target preparation or synthetic time.
+The source's standalone financial rejection and separate technical admission
+remain; the study-specific inclusion does not change original global rosters.
+
+Current authoritative J1027:95registrations,86completed reviews,nine technical
+failures,zero pending,344formal funded paths,
+**264combined completions,zero qualifiers; investment goal unmet**.
+The two-rule size is this frozen study, not a future research-count limit.
+All earlier outcomes remain exposed; counterfactual availability and rolling
+causality are not independent out-of-sample or prospective proof.
+
+## Preserved fixed four-sleeve source snapshot: financial rejection and admission
 
 The [complete four-path result](evidence/fixed_four_sleeve_financial_20261105_results_v1.json)
 retains the unchanged b193primary Module: one forecast-free monthly capital
@@ -74,7 +136,7 @@ snapshot; the new admission is separate. Financial rejection alone is not
 exclusion, while technical admission neither qualifies the portfolio nor
 automatically chooses a pool member. Global rosters, source stops and forward
 identities remain unchanged. This review adds zero financial trials or paths.
-Current authoritative J1004:93registrations,
+At the closed fixed-source snapshot, J1004:93registrations,
 84completed reviews,nine technical failures,zero pending,336formal funded paths,
 **262combined completions,zero qualifiers; investment goal unmet**.
 Historical availability is counterfactual, not backdated live introduction,
