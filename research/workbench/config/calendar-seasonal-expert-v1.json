@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_calendar_seasonal_complete_policy_20261105_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "candidate_id": "calendar_seasonal_six_core_bil_v1",
+  "candidates": [
+    {
+      "id": "calendar_seasonal_six_core_bil_v1",
+      "construction": "monthly_calendar_seasonal_core_or_bill"
+    }
+  ],
+  "mechanism_group": "fixed_calendar_seasonal_equity_participation",
+  "prior_completed_configurations": 255,
+  "prior_journal_sequence": 922,
+  "prior_journal_head_sha256": "7913272587b33cd7573578cfed3fc34519174690caf877533e875117f36a52e8",
+  "source_market_completion": {
+    "path": "reports/ssd-continuous-research-v1/main-capital-feedback-20261104-v1/completion-v1.json",
+    "sha256": "9043721a11a56952fb59cbfebc21b31feef055576c325cb3ea198f223f6c6062"
+  },
+  "source_market_freeze": {
+    "path": "reports/ssd-continuous-research-v1/main-capital-feedback-20261104-v1/financial-implementation-freeze-v1.json",
+    "sha256": "600a2c797ab72a64e138a142634fb0846471fe9300dcfcf177ef41410c7bd267"
+  },
+  "universe": ["SPY", "IEF", "GLD", "BIL", "MTUM", "VLUE", "QUAL", "USMV", "TLT", "QQQ", "XLK", "SOXX", "IJR", "PKW"],
+  "core_symbols": ["MTUM", "VLUE", "QUAL", "USMV", "IJR", "PKW"],
+  "cash_asset": "BIL",
+  "intended_equity_calendar_months": [11, 12, 1, 2, 3, 4],
+  "season_input": "next_calendar_month_known_at_genuine_current_month_end",
+  "stock_weighting": "equal_capital_over_six_existing_equity_families",
+  "other_months": "98_percent_actual_BIL_not_free_idle_cash",
+  "decision_lattice": "every_genuine_completed_month_end_in_whole_admitted_history",
+  "decision_information_clock": "after_16_15_ET_index_close_before_later_open_execution",
+  "execution": "unchanged_actual_weight_band_and_original_one_or_two_session_later_open",
+  "price_return_or_volatility_used_to_choose_season": false,
+  "source_price_warmup_sessions": 0,
+  "score_maturity_is_separate_from_policy_availability": true,
+  "invested_target_budget": 0.98,
+  "idle_cash_reserve": 0.02,
+  "actual_weight_trade_band": 0.025,
+  "new_economic_factor_definitions": 0,
+  "new_traded_assets": 0,
+  "candidate_count_in_this_study": 1,
+  "study_size_is_a_total_research_quota": false,
+  "parameter_search": false,
+  "rationale": {
+    "question": "Can one complete, low-frequency calendar-participation policy supply a distinct defensive behavior for a rolling strategy-expert pool?",
+    "complementary_role": "Unlike price-trend, covariance, option, credit or recent NET-return selectors, the participation opinion depends only on the predetermined annual calendar. It is one complete policy with six equity families or actual BIL, not an asset sleeve renamed as an independent expert.",
+    "research_choice": "Fix the published November-April equity-participation hypothesis once; no month, cutoff, market, factor-weight, band or execution scan. The six existing family core and original 98-percent ETF budget avoid adding new assets or changing funding.",
+    "limits": "Seasonality is a falsifiable historical hypothesis, not a causal explanation, return guarantee or crash detector. Winter losses and late execution remain possible; actual BIL can incur fees and price risk. Common underlying equities and exposed historical design remain, so a different mechanism is not an independent risk source.",
+    "source_scope": "Reuse the existing admitted fourteen-asset market and original NYSE calendar. No new quotes, holdings, macro vintage or eligibility waiver. A calendar needs no price-return warmup, but missing market history still fails; availability does not create mature NET scores.",
+    "introduction": "Native month-end opinions on old dates are counterfactual historical policy availability. Actual definition, registration and technical admission occur now and are never backdated.",
+    "future_finance": "Preparation alone is not a financial trial or technical expert admission. A new exact financial implementation, actual registration and publication fence must precede complete original four paths and independent accounting. Technical admission, study-specific pool inclusion and final qualification remain separate.",
+    "inherited_count": "Only the old market contract is reused. Its inherited prior-completion field 228 is stale and is not this study's prior count; the authoritative current prior is 255 at J922."
+  },
+  "methodology": {
+    "real_source_targets_accounts_or_financial_outcomes_computed": false,
+    "new_expert_technically_admitted": false,
+    "existing_pool_changed": false,
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "order_authority": false,
+    "automatic_live_deployment": false
+  }
+}

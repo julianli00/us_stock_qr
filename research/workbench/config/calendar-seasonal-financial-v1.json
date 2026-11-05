@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_calendar_seasonal_financial_20261105_v1",
+  "candidate_id": "calendar_seasonal_six_core_bil_v1",
+  "candidate_count": 1,
+  "study_size_is_a_total_research_quota": false,
+  "prior_journal_sequence": 922,
+  "prior_journal_head_sha256": "7913272587b33cd7573578cfed3fc34519174690caf877533e875117f36a52e8",
+  "prior_completed_configurations": 255,
+  "primary_policy": {
+    "path": "config/calendar-seasonal-expert-v1.json",
+    "sha256": "3edb91fd74cea0d55775651678df0110e2885c1a5288f584422a10d67d3d9284"
+  },
+  "primary_preparation_freeze": {
+    "path": "reports/ssd-continuous-research-v1/calendar-seasonal-expert-20261105-v1/primary-implementation-freeze-v1.json",
+    "sha256": "ec0e3516a373bfa43aca2dd81f59bf1e72e4355e5a103c6df51b03d0a133a408"
+  },
+  "primary_preparation_completion": {
+    "path": "reports/ssd-continuous-research-v1/calendar-seasonal-expert-20261105-v1/completion-v1.json",
+    "sha256": "563246257e9b88dbcc629d884a4f8e75151eb143799a3a90971222282e309b58"
+  },
+  "market_parent_freeze": {
+    "path": "reports/ssd-continuous-research-v1/main-capital-feedback-20261104-v1/financial-implementation-freeze-v1.json",
+    "sha256": "600a2c797ab72a64e138a142634fb0846471fe9300dcfcf177ef41410c7bd267"
+  },
+  "target_delivery_kind": "causal_main_capital_decision_program_v1",
+  "real_source_targets_before_actual_publication": false,
+  "historical_target_proof_stage": "after_actual_published_program_execution",
+  "initialization": "fresh_capital_at_real_pre_return_anchor_using_last_known_native_month_end",
+  "ordinary_decisions": "genuine_NYSE_month_end_after_existing_16_15_ET_clock",
+  "capital_usd_per_formal_path": 10000.0,
+  "initial_drawdown_peak_usd": 10000.0,
+  "target_budget": 0.98,
+  "actual_weight_band": 0.025,
+  "formal_paths": ["10y-base", "10y-stress", "5y-base", "5y-stress"],
+  "prefix_audit_ten_year_base_return_positions": [125, 503, 1006, 1509, 2012],
+  "auxiliary_prefixes_are_independent_economic_trials": false,
+  "native_source_target_prefixes": "first_seventh_thirteenth_middle_last_month_end",
+  "primary_policy_or_market_or_RF_scope_changed": false,
+  "new_quote_or_broker_requests": 0,
+  "new_economic_factor_definitions": 0,
+  "registered_expert_or_pool_admission": false,
+  "standalone_financial_failure_is_technical_exclusion": false,
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "order_authority": false
+}
