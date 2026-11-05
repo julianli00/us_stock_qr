@@ -45,6 +45,24 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
+### Saved inclusion diagnosis: participation and actual fees
+
+The [read-only diagnosis](research/workbench/evidence/signed_activity_execution_diagnosis_20261105_v1.json)
+keeps all121meta decisions and matches sixteen saved main books.
+The new expert appears in13of114scored selected pairs; six of those carry its
+BIL-only opinion, not an all-BIL main account. The other101scored pairs match
+the recorded original-eight choice. Seven unscored equal states remain
+separate. No expert, score, target or account is regenerated.
+
+On rolling five-year paths, both policies issue on the same dates and each
+has469model tickets. The extraUSD1.947096/6.673176fees are proportional-cost
+differences, not more tickets. On rolling ten-year paths, three nine-only
+requests addUSD48.533294/124.594564, partly offset by lower fees on common
+issue dates. Equal-nine has three/seven additional-only issue dates in the
+five/ten-year paths. These are stored accounting facts, not a common-capital
+counterfactual or causal source-alpha explanation.
+**No new financial trials:274completions,zero qualifiers,goal unmet.**
+
 ### Signed-activity nine: both complete rules rejected
 
 The [complete controlled outcome](research/workbench/evidence/signed_style_activity_expert_inclusion_20261105_v2_results_v1.json)

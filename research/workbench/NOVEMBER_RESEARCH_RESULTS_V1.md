@@ -4,6 +4,52 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Saved signed-activity inclusion: participation and execution diagnosis
+
+The [new zero-trial diagnosis](evidence/signed_activity_execution_diagnosis_20261105_v1.json)
+freezes`eec00276`before actual diagnostic outputs:158dependencies,2818source
+references,six explicit tested inputs and28new synthetic checks/Ruff.
+It streams the two saved meta traces and all sixteen original paired books;
+no source expert, scorer, selector, target, account or benchmark is replayed.
+This is not another cost forecast, opinion-rank or drawdown-mark study.
+
+All121meta states remain:114scored,seven explicitly unscored equal states.
+The extra complete expert is selected13times; six have its BIL-only carried
+source opinion, not a BIL-only main portfolio. The other101scored pairs equal
+the recorded original-eight pair, with zero changed pairs that omit the new
+expert. All first-eight source observations match exactly.
+The saved equal-nine inclusion identity holds at all121dates with maximum
+NumPy and independent rational residual1.1102230246251565e-16.
+This is a target accounting identity, not a new portfolio or executed turnover.
+
+| Rule | Original path | Nine-only issue dates | Eight-only issue dates | Fixed-ticket fee difference USD | Proportional-fee difference USD | Total fee difference USD |
+| --- | --- | ---: | ---: | ---: | ---: | ---: |
+| Equal | 10y-base | 7 | 1 | 60 | 21.997584 | 81.997584 |
+| Equal | 10y-stress | 7 | 0 | 67 | 82.730067 | 149.730067 |
+| Equal | 5y-base | 3 | 1 | 20 | 8.718484 | 28.718484 |
+| Equal | 5y-stress | 3 | 0 | 27 | 34.273217 | 61.273217 |
+| Rolling | 10y-base | 3 | 0 | 14 | 16.939756 | 30.939756 |
+| Rolling | 10y-stress | 3 | 0 | 14 | 76.840940 | 90.840940 |
+| Rolling | 5y-base | 0 | 0 | 0 | 1.947096 | 1.947096 |
+| Rolling | 5y-stress | 0 | 0 | 0 | 6.673176 | 6.673176 |
+
+Rolling five-year paths retain identical issue dates and469tickets each.
+All their extra fees are proportional-fee differences. Rolling ten-year
+nine-only requests costUSD48.533294/124.594564, offset by common-issue
+differences ofUSD-17.593538/-33.753624. Whole-path fees therefore cannot be
+explained only by counting additional issue dates.
+Every initial seed is retained separately from ordinary decisions; five-year
+October5capital observes September30meta opinion. No real case is censored
+or an issued numeric noop, while both behaviors remain explicit tested states.
+
+Actual diagnostic process exits0 in9.001045833021635seconds,
+Darwin peakRSS460144640bytes. Fee/ticket group sums reconcile all eight paired
+cases within the unchangedUSD1e-6accounting resolution. These are two actual
+wealth/holdings paths, not a shared-capital, fee-free or causal marginal-expert
+counterfactual. No threshold, source RF, band, score or financial criterion is
+changed. **J1144,274completed configurations and zero qualifiers remain;
+both original financial policies stay rejected and the investment goal unmet.**
+
 ## Signed-activity nine V2: both complete policies rejected
 
 The [complete result](evidence/signed_style_activity_expert_inclusion_20261105_v2_results_v1.json)

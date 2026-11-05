@@ -1,0 +1,296 @@
+{
+  "actual_input_resolved_records": {
+    "path": "reports/ssd-continuous-research-v1/signed-activity-execution-diagnosis-20261105-v1/actual-inputs-resolved-v1.jsonl",
+    "sha256": "61046e3250e0d5db117262b864c23dbd2e0fb315b56fd677d1d24cb5fb5f0438"
+  },
+  "analysis_intent": {
+    "path": "reports/ssd-continuous-research-v1/signed-activity-execution-diagnosis-20261105-v1/analysis-intent-v1.json",
+    "sha256": "eec00276b471c2b8ec89edca9efab72e1c231e6031f3decd3cb1e359fe27dc37"
+  },
+  "completed_at": "2026-11-05T21:15:48.071292+00:00",
+  "cost_difference_is_causal_marginal_expert_effect": false,
+  "financial_gates_or_global_pool_changed": false,
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "mature_extra_selected_decisions": 13,
+  "mature_extra_selected_with_BIL_opinion": 6,
+  "mature_source_pair_changed_without_extra_selected": 0,
+  "mature_source_pair_same_as_original8": 101,
+  "maximum_equal_identity_residual": 1.1102230246251565e-16,
+  "maximum_fraction_equal_identity_residual": 1.1102230246251565e-16,
+  "meta_decisions": 121,
+  "new_financial_evaluations": 0,
+  "new_scored_decisions": 114,
+  "new_source_requests": 0,
+  "new_unscored_decisions": 7,
+  "order_authority": false,
+  "original_sources_scores_targets_accounts_or_benchmarks_replayed": false,
+  "paired_main_book_cases": {
+    "equal:10y-base": {
+      "actual_execution_cases": 121,
+      "censored_cases": 0,
+      "counterfactual_common_capital_or_causal_attribution": false,
+      "fixed_ticket_difference_USD": 60.0,
+      "group_cost_difference_USD": {
+        "both_issued": 7.927370427020621,
+        "neither_issued": 0.0,
+        "only_new_issued": 81.53787014428809,
+        "only_old_issued": -7.467656317153351
+      },
+      "group_counts": {
+        "both_issued": 104,
+        "neither_issued": 9,
+        "only_new_issued": 7,
+        "only_old_issued": 1
+      },
+      "matched_decisions": 121,
+      "new_issued_numeric_noops": 0,
+      "new_model_tickets": 1102,
+      "new_total_cost_USD": 1355.745345556185,
+      "old_issued_numeric_noops": 0,
+      "old_model_tickets": 1042,
+      "old_total_cost_USD": 1273.7477613020294,
+      "ordinary_decisions_only_issue_groups": {
+        "both_issued": 103,
+        "neither_issued": 9,
+        "only_new_issued": 7,
+        "only_old_issued": 1
+      },
+      "proportional_fee_difference_USD": 21.997584254155356,
+      "total_cost_difference_USD": 81.99758425415536
+    },
+    "equal:10y-stress": {
+      "actual_execution_cases": 121,
+      "censored_cases": 0,
+      "counterfactual_common_capital_or_causal_attribution": false,
+      "fixed_ticket_difference_USD": 67.0,
+      "group_cost_difference_USD": {
+        "both_issued": 26.714877560496703,
+        "neither_issued": 0.0,
+        "only_new_issued": 123.01518945227801,
+        "only_old_issued": 0.0
+      },
+      "group_counts": {
+        "both_issued": 104,
+        "neither_issued": 10,
+        "only_new_issued": 7,
+        "only_old_issued": 0
+      },
+      "matched_decisions": 121,
+      "new_issued_numeric_noops": 0,
+      "new_model_tickets": 1102,
+      "new_total_cost_USD": 2088.9810244009395,
+      "old_issued_numeric_noops": 0,
+      "old_model_tickets": 1035,
+      "old_total_cost_USD": 1939.2509573881648,
+      "ordinary_decisions_only_issue_groups": {
+        "both_issued": 103,
+        "neither_issued": 10,
+        "only_new_issued": 7,
+        "only_old_issued": 0
+      },
+      "proportional_fee_difference_USD": 82.73006701277471,
+      "total_cost_difference_USD": 149.73006701277473
+    },
+    "equal:5y-base": {
+      "actual_execution_cases": 61,
+      "censored_cases": 0,
+      "counterfactual_common_capital_or_causal_attribution": false,
+      "fixed_ticket_difference_USD": 20.0,
+      "group_cost_difference_USD": {
+        "both_issued": 4.086096624577179,
+        "neither_issued": 0.0,
+        "only_new_issued": 31.89731977947639,
+        "only_old_issued": -7.2649322689068665
+      },
+      "group_counts": {
+        "both_issued": 53,
+        "neither_issued": 4,
+        "only_new_issued": 3,
+        "only_old_issued": 1
+      },
+      "matched_decisions": 61,
+      "new_issued_numeric_noops": 0,
+      "new_model_tickets": 534,
+      "new_total_cost_USD": 625.4573459471723,
+      "old_issued_numeric_noops": 0,
+      "old_model_tickets": 514,
+      "old_total_cost_USD": 596.7388618120256,
+      "ordinary_decisions_only_issue_groups": {
+        "both_issued": 52,
+        "neither_issued": 4,
+        "only_new_issued": 3,
+        "only_old_issued": 1
+      },
+      "proportional_fee_difference_USD": 8.718484135146703,
+      "total_cost_difference_USD": 28.718484135146703
+    },
+    "equal:5y-stress": {
+      "actual_execution_cases": 61,
+      "censored_cases": 0,
+      "counterfactual_common_capital_or_causal_attribution": false,
+      "fixed_ticket_difference_USD": 27.0,
+      "group_cost_difference_USD": {
+        "both_issued": 15.774688923026673,
+        "neither_issued": 0.0,
+        "only_new_issued": 45.49852839777536,
+        "only_old_issued": 0.0
+      },
+      "group_counts": {
+        "both_issued": 53,
+        "neither_issued": 5,
+        "only_new_issued": 3,
+        "only_old_issued": 0
+      },
+      "matched_decisions": 61,
+      "new_issued_numeric_noops": 0,
+      "new_model_tickets": 534,
+      "new_total_cost_USD": 888.5522391048687,
+      "old_issued_numeric_noops": 0,
+      "old_model_tickets": 507,
+      "old_total_cost_USD": 827.2790217840667,
+      "ordinary_decisions_only_issue_groups": {
+        "both_issued": 52,
+        "neither_issued": 5,
+        "only_new_issued": 3,
+        "only_old_issued": 0
+      },
+      "proportional_fee_difference_USD": 34.27321732080203,
+      "total_cost_difference_USD": 61.27321732080203
+    },
+    "rolling:10y-base": {
+      "actual_execution_cases": 121,
+      "censored_cases": 0,
+      "counterfactual_common_capital_or_causal_attribution": false,
+      "fixed_ticket_difference_USD": 14.0,
+      "group_cost_difference_USD": {
+        "both_issued": -17.59353772124666,
+        "neither_issued": 0.0,
+        "only_new_issued": 48.533293813026404,
+        "only_old_issued": 0.0
+      },
+      "group_counts": {
+        "both_issued": 109,
+        "neither_issued": 9,
+        "only_new_issued": 3,
+        "only_old_issued": 0
+      },
+      "matched_decisions": 121,
+      "new_issued_numeric_noops": 0,
+      "new_model_tickets": 913,
+      "new_total_cost_USD": 1525.5153253301862,
+      "old_issued_numeric_noops": 0,
+      "old_model_tickets": 899,
+      "old_total_cost_USD": 1494.5755692384066,
+      "ordinary_decisions_only_issue_groups": {
+        "both_issued": 108,
+        "neither_issued": 9,
+        "only_new_issued": 3,
+        "only_old_issued": 0
+      },
+      "proportional_fee_difference_USD": 16.939756091779746,
+      "total_cost_difference_USD": 30.939756091779746
+    },
+    "rolling:10y-stress": {
+      "actual_execution_cases": 121,
+      "censored_cases": 0,
+      "counterfactual_common_capital_or_causal_attribution": false,
+      "fixed_ticket_difference_USD": 14.0,
+      "group_cost_difference_USD": {
+        "both_issued": -33.753623925722934,
+        "neither_issued": 0.0,
+        "only_new_issued": 124.59456439130315,
+        "only_old_issued": 0.0
+      },
+      "group_counts": {
+        "both_issued": 109,
+        "neither_issued": 9,
+        "only_new_issued": 3,
+        "only_old_issued": 0
+      },
+      "matched_decisions": 121,
+      "new_issued_numeric_noops": 0,
+      "new_model_tickets": 913,
+      "new_total_cost_USD": 3261.654309933628,
+      "old_issued_numeric_noops": 0,
+      "old_model_tickets": 899,
+      "old_total_cost_USD": 3170.8133694680478,
+      "ordinary_decisions_only_issue_groups": {
+        "both_issued": 108,
+        "neither_issued": 9,
+        "only_new_issued": 3,
+        "only_old_issued": 0
+      },
+      "proportional_fee_difference_USD": 76.84094046558023,
+      "total_cost_difference_USD": 90.84094046558023
+    },
+    "rolling:5y-base": {
+      "actual_execution_cases": 61,
+      "censored_cases": 0,
+      "counterfactual_common_capital_or_causal_attribution": false,
+      "fixed_ticket_difference_USD": 0.0,
+      "group_cost_difference_USD": {
+        "both_issued": 1.947096294069203,
+        "neither_issued": 0.0,
+        "only_new_issued": 0.0,
+        "only_old_issued": 0.0
+      },
+      "group_counts": {
+        "both_issued": 60,
+        "neither_issued": 1,
+        "only_new_issued": 0,
+        "only_old_issued": 0
+      },
+      "matched_decisions": 61,
+      "new_issued_numeric_noops": 0,
+      "new_model_tickets": 469,
+      "new_total_cost_USD": 688.3844418724825,
+      "old_issued_numeric_noops": 0,
+      "old_model_tickets": 469,
+      "old_total_cost_USD": 686.4373455784133,
+      "ordinary_decisions_only_issue_groups": {
+        "both_issued": 59,
+        "neither_issued": 1,
+        "only_new_issued": 0,
+        "only_old_issued": 0
+      },
+      "proportional_fee_difference_USD": 1.947096294069203,
+      "total_cost_difference_USD": 1.947096294069203
+    },
+    "rolling:5y-stress": {
+      "actual_execution_cases": 61,
+      "censored_cases": 0,
+      "counterfactual_common_capital_or_causal_attribution": false,
+      "fixed_ticket_difference_USD": 0.0,
+      "group_cost_difference_USD": {
+        "both_issued": 6.673176284368324,
+        "neither_issued": 0.0,
+        "only_new_issued": 0.0,
+        "only_old_issued": 0.0
+      },
+      "group_counts": {
+        "both_issued": 60,
+        "neither_issued": 1,
+        "only_new_issued": 0,
+        "only_old_issued": 0
+      },
+      "matched_decisions": 61,
+      "new_issued_numeric_noops": 0,
+      "new_model_tickets": 469,
+      "new_total_cost_USD": 1324.7644727617765,
+      "old_issued_numeric_noops": 0,
+      "old_model_tickets": 469,
+      "old_total_cost_USD": 1318.0912964774082,
+      "ordinary_decisions_only_issue_groups": {
+        "both_issued": 59,
+        "neither_issued": 1,
+        "only_new_issued": 0,
+        "only_old_issued": 0
+      },
+      "proportional_fee_difference_USD": 6.673176284368324,
+      "total_cost_difference_USD": 6.673176284368324
+    }
+  },
+  "saved_main_books": 16,
+  "study_id": "ssd_signed_activity_execution_diagnosis_20261105_v1"
+}
