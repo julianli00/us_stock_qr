@@ -70,8 +70,16 @@ USD2.1828e-11, minimum cashUSD177.2347539 and maximum gross0.983104447.
 Five real source prefixes and five separately versioned real main-book prefixes
 retain earlier outputs exactly; these are audits, not extra economic rules.
 The single complete policy is not four experts or four independent risks.
-Separate technical expert admission is still unreviewed, not automatic exclusion
-for financial failure or automatic pool membership. Global rosters remain unchanged.
+The [separate technical admission](research/workbench/evidence/fixed_four_sleeve_financial_20261105_admission_v1.json)
+passes while preserving financial rejection. It reads all four saved funded books,
+six actual style families and TLT/GLD/BIL on every path,134native opinions,
+139availability observations and original0/125/126NET maturity.
+The read-only consumer checks the whole2512-observation canonical RF and frozen
+dependency closure, not only its last126. Actual introduction remains registration993;
+the separate admitted-at timestamp is not backdated. No source, target, shadow,
+account or benchmark is replayed. The old financial result remains its then-unreviewed
+snapshot. Technical admission is neither qualification nor automatic pool membership;
+global rosters remain unchanged.
 **262 combined completions, zero qualifiers; investment goal unmet.**
 
 ### Preserved controlled reversal inclusion snapshot: both rules rejected

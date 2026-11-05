@@ -50,10 +50,31 @@ accounting checks and Ruff passed. The first run's25tests passed but its Ruff
 E501 failed; those v1bytes/prototypes/logs remain alongside the formatting-only
 v2repair. No financial criterion or tolerance was relaxed.
 
-Separate source technical admission is still unreviewed; standalone financial
-rejection alone is not exclusion, and valid future admission would not
-automatically choose a pool member. Global rosters, source stops and forward
-identities remain unchanged. Current authoritative J1004:93registrations,
+The [separate source technical admission](evidence/fixed_four_sleeve_financial_20261105_admission_v1.json)
+passes without replaying the source or money. The unchanged technical standards
+verify full original saved dates, nonnegative cash, unleveraged exposure and
+original independent BT evidence on all four books. All six style families and
+each fixed TLT/GLD/BIL bucket have actual positive weights on every path.
+This is measured participation, not nine independent economic risk sources.
+
+The review checks134native refreshes,139availability observations and actual
+0/125/126NET maturity. Source introduction remains registration993 at
+**2026-11-05T08:15:18.055890Z**; actual admitted-at is separately
+**08:44:41.336165Z**. The read-only `load_admitted_expert` Interface also checks
+all2512NET RF observations and its frozen review dependency closure, rejecting
+altered early RF, cropped universes, missing freeze or admission backdating.
+Twenty-eight synthetic review/consumer checks preceded the frozen implementation
+and actual review. One reference-collector freeze preflight failed before any
+review or freeze write; its receipt is preserved. Only explicit target/proof
+references replaced a scalar mistakenly included as a file reference; no
+criterion, policy, RF, financial result or review implementation was changed.
+
+The financial result keeps its earlier pending-review flag as a historical
+snapshot; the new admission is separate. Financial rejection alone is not
+exclusion, while technical admission neither qualifies the portfolio nor
+automatically chooses a pool member. Global rosters, source stops and forward
+identities remain unchanged. This review adds zero financial trials or paths.
+Current authoritative J1004:93registrations,
 84completed reviews,nine technical failures,zero pending,336formal funded paths,
 **262combined completions,zero qualifiers; investment goal unmet**.
 Historical availability is counterfactual, not backdated live introduction,

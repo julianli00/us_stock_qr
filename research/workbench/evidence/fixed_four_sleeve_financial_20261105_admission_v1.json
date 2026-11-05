@@ -1,0 +1,172 @@
+{
+  "actual_authoritative_counts": {
+    "current_journal_event_count": 1004,
+    "current_journal_head_sha256": "0c3e4dad66f3ba04914e34da028cd935f683e226478764813427270409a13187",
+    "new_account_paths": 336,
+    "new_completed_strategy_evaluations": 84,
+    "new_historical_point_gate_passes": 0,
+    "new_pending_candidates": 0,
+    "new_registered_candidates": 93,
+    "new_reviews": 84,
+    "new_technical_failures": 9,
+    "original_completed_configurations": 178,
+    "original_registered_versions": 96,
+    "original_reviews": 94,
+    "total_legacy_plus_ssd_completed_configurations": 262
+  },
+  "admitted_at": "2026-11-05T08:44:41.336165+00:00",
+  "candidate_id": "fixed_four_sleeve_rebalance_v1",
+  "evidence": {
+    "NET_maturity_boundary_observations": [
+      {
+        "NET_observations": 0,
+        "date": "2016-10-05",
+        "score_mature": false
+      },
+      {
+        "NET_observations": 125,
+        "date": "2017-04-05",
+        "score_mature": false
+      },
+      {
+        "NET_observations": 126,
+        "date": "2017-04-06",
+        "score_mature": true
+      }
+    ],
+    "actual_fixed_defensive_buckets_by_path": {
+      "10y-base": [
+        "TLT",
+        "GLD",
+        "BIL"
+      ],
+      "10y-stress": [
+        "TLT",
+        "GLD",
+        "BIL"
+      ],
+      "5y-base": [
+        "TLT",
+        "GLD",
+        "BIL"
+      ],
+      "5y-stress": [
+        "TLT",
+        "GLD",
+        "BIL"
+      ]
+    },
+    "actual_style_families_by_path": {
+      "10y-base": [
+        "MTUM",
+        "VLUE",
+        "QUAL",
+        "USMV",
+        "IJR",
+        "PKW"
+      ],
+      "10y-stress": [
+        "MTUM",
+        "VLUE",
+        "QUAL",
+        "USMV",
+        "IJR",
+        "PKW"
+      ],
+      "5y-base": [
+        "MTUM",
+        "VLUE",
+        "QUAL",
+        "USMV",
+        "IJR",
+        "PKW"
+      ],
+      "5y-stress": [
+        "MTUM",
+        "VLUE",
+        "QUAL",
+        "USMV",
+        "IJR",
+        "PKW"
+      ]
+    },
+    "adapter": "monthly",
+    "availability_observations_checked": 139,
+    "candidate_id": "fixed_four_sleeve_rebalance_v1",
+    "completed_paths": {
+      "10y-base": {
+        "path": "reports/ssd-continuous-research-v1/fixed-four-sleeve-financial-20261105-v1/accounts/10y-base/complete.json",
+        "sha256": "50f33aef4b0ec85d051668e022b76421ab7e69e5e4624711664f93912eefb57f"
+      },
+      "10y-stress": {
+        "path": "reports/ssd-continuous-research-v1/fixed-four-sleeve-financial-20261105-v1/accounts/10y-stress/complete.json",
+        "sha256": "9426ceec25a16763a33579d70d1a3fc99e3c37174ccdcda07fd743c4742e981e"
+      },
+      "5y-base": {
+        "path": "reports/ssd-continuous-research-v1/fixed-four-sleeve-financial-20261105-v1/accounts/5y-base/complete.json",
+        "sha256": "31dff4d38cc7eabf509b58f746f0416288fbaf23678063f09fac7bf2efc0bd93"
+      },
+      "5y-stress": {
+        "path": "reports/ssd-continuous-research-v1/fixed-four-sleeve-financial-20261105-v1/accounts/5y-stress/complete.json",
+        "sha256": "581259eed3e9a5724cdeef9eb32fd160a55ec9ba8a50c584d69047ec63a3af98"
+      }
+    },
+    "current_global_pool_or_roster_changed": false,
+    "financial_results": {
+      "path": "reports/ssd-continuous-research-v1/fixed-four-sleeve-financial-20261105-v1/results.json",
+      "sha256": "f292827e4015d8c63156d4e10cdcc2857db430e76bd4c80b34161d50086a1049"
+    },
+    "financial_reviewed_at": "2026-11-05T08:20:00.394831+00:00",
+    "funding_and_independent_BT_checked_all_four_paths": true,
+    "historical_counterfactual_availability": true,
+    "independent_forward_validation": false,
+    "introduced_at": "2026-11-05T08:15:18.055890+00:00",
+    "investment_objective_verified": false,
+    "mechanism_group": "fixed_cross_asset_capital_rebalancing",
+    "native_RF_exact_common": true,
+    "native_month_end_opinions": 134,
+    "native_source_targets": {
+      "frozen_specification_sha256": "de5cb0e3a88444ab0fe0c3da188682a4c7031925c340a1cc28ff8818042a88c3",
+      "proof": {
+        "path": "reports/ssd-continuous-research-v1/fixed-four-sleeve-financial-20261105-v1/native-source/proof.json",
+        "sha256": "38c036531928ee05cbda5f3430e6c117da3c83b04c27a704fa39f5e4974bd382"
+      },
+      "targets": {
+        "path": "reports/ssd-continuous-research-v1/fixed-four-sleeve-financial-20261105-v1/native-source/targets.csv",
+        "sha256": "765876cfdad36fa1cc4dedbec89228c9c2fe715e82e528170627c60f99f09b1b"
+      }
+    },
+    "order_authority": false,
+    "original_source_scope_and_information_clock_preserved": true,
+    "pool_inclusion_requires_new_separate_study": true,
+    "registered_event_sha256": "3af0073f0ea598250b04b7ec78433ef39b779c972c42d5166057d3f6c1489d96",
+    "registration": {
+      "path": "evidence/fixed_four_sleeve_financial_20261105_registration_v1.json",
+      "sha256": "fc2d6f314a07d51781019e5f4b9d9ea04c253493bb7ee0b6447ef3db1754ef33"
+    },
+    "source_packet_schema": 3,
+    "source_targets_shadows_or_accounts_replayed": false,
+    "standalone_financial_verdict_preserved": "rejected",
+    "technical_admission_is_final_qualification": false
+  },
+  "financial_completion": {
+    "path": "reports/ssd-continuous-research-v1/fixed-four-sleeve-financial-20261105-v1/completion-v1.json",
+    "sha256": "67baebf6eb036764ded1dc6a287860346908c51d9a6562d325d7cf17fc5e0d36"
+  },
+  "financial_verdict_preserved": "rejected",
+  "global_pool_changed": false,
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "new_funded_paths": 0,
+  "new_strategy_evaluations": 0,
+  "order_authority": false,
+  "record_type": "separate_fixed_four_sleeve_technical_expert_admission_v1",
+  "review_implementation_freeze": {
+    "path": "reports/ssd-continuous-research-v1/fixed-four-sleeve-admission-20261105-v1/review-implementation-freeze-v1.json",
+    "sha256": "4fd231305f5bb8d97438d8d10fa8856d794711d9ef77f265b87ecbc6b86d9146"
+  },
+  "schema_version": 1,
+  "standalone_financial_failure_is_technical_exclusion": false,
+  "study_id": "ssd_fixed_four_sleeve_technical_admission_20261105_v1",
+  "technical_expert_admitted": true
+}
