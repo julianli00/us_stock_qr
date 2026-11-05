@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 102 SSD identities, 91 completed/rejected, nine retained technical failures and two pending; 364 funded paths | Journal1090 preregistration snapshot: 269 combined completions, zero qualifiers; no independent forward qualification or trading authority |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 102 SSD identities, 93 completed/rejected, nine retained technical failures and zero pending; 372 funded paths | Journal1109 current summary: 271 combined completions, zero qualifiers; no independent forward qualification or trading authority |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -45,7 +45,7 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
-### Mixed-mechanism six: both rules registered, not yet funded
+### Mixed-mechanism six: both complete rules rejected
 
 The [frozen six-expert primary](research/workbench/MIXED_MECHANISM_SIX_PRIMARY_V1.md)
 selects complete trend/defense, wealth-feedback, hedge, calendar, reversal and
@@ -61,9 +61,30 @@ introduction/admission clocks, five exact prefixes and both full horizons.
 The complete schema2cohort comprises
 [equal-six](research/workbench/evidence/mixed_mechanism_six_financial_20261105_0_registration_v1.json)
 and [rolling-six](research/workbench/evidence/mixed_mechanism_six_financial_20261105_1_registration_v1.json).
-Both exact packets and code must actually publish before any of the eight
-original funded paths. This snapshot contains no new financial outcome.
-**269 combined completions, zero qualifiers; investment goal unmet.**
+Both exact packets and code actually publish at
+`d2958a3f7c2db1d71af3629158039f2069d2783e` before fence1091 and all eight
+original funded paths. Reviews1100/1109 reject the two complete unchanged rules.
+The [complete outcome](research/workbench/evidence/mixed_mechanism_six_financial_20261105_results_v1.json)
+retains every path and original cost, RF, initial peak and cash-funded accounting.
+
+| Rule | Original path | Net CAGR | RF Sharpe | Maximum DD |
+| --- | --- | ---: | ---: | ---: |
+| Equal-six | 10y-base | 11.576202% | 0.750585 | 27.804702% |
+| Equal-six | 10y-stress | 10.620918% | 0.680970 | 27.593081% |
+| Equal-six | 5y-base | 12.498994% | 0.758457 | 15.683919% |
+| Equal-six | 5y-stress | 11.364349% | 0.667306 | 16.058614% |
+| Rolling-six | 10y-base | 11.208647% | 0.710618 | 22.262628% |
+| Rolling-six | 10y-stress | 9.415542% | 0.579218 | 24.530027% |
+| Rolling-six | 5y-base | 11.292596% | 0.545274 | 22.781534% |
+| Rolling-six | 5y-stress | 8.401845% | 0.362538 | 25.030084% |
+
+Only equal-six five-year base CAGR passes; every Sharpe, DD, SPY/QQQ and extra
+stress/base-SPY gate fails. Rolling-six has lower CAGR/Sharpe and higher actual
+turnover/fees on all four paths than equal-six, despite fewer tickets.
+Both rules also have lower CAGR/Sharpe and higher turnover/fees than their
+prespecified cached original-eight counterpart. These are whole-policy
+contrasts, not isolated causal roster or fee effects. No old control is replayed.
+**271 combined completions, zero qualifiers; investment goal unmet.**
 
 ### Previous conditional deletion robust ranking: all four funded paths rejected
 

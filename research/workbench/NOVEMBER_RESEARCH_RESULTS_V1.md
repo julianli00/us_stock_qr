@@ -4,7 +4,68 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Mixed-mechanism six: registered complete cohort, funds not yet run
+## Mixed-mechanism six: both complete policies rejected
+
+The [complete outcome](evidence/mixed_mechanism_six_financial_20261105_results_v1.json)
+evaluates both unchanged`f355581a`rules through the separately frozen`f6d9d667`
+financial Module. All eight original freshUSD10000paths complete, with original
+full2512/1254returns, RF, initial peak, base/stress fees/delays, cash funding,
+actual holding feedback and independent accounting/BT. No source signals,
+source shadows, old accounts, controls or benchmarks are replayed.
+
+The complete two-candidate schema2cohort and code actually publish at
+`d2958a3f7c2db1d71af3629158039f2069d2783e`. Fence1091 at
+**2026-11-05T16:53:12.850291Z** precedes every new account.
+Reviews1100 at **16:53:23.635683Z** and1109 at **16:54:20.840683Z**
+reject equal-six and rolling-six respectively.
+
+| Rule | Original path | Net CAGR | RF Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Model fees USD |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Equal-six | 10y-base | 11.576202% | 0.750585 | 27.804702% | 4.210977x | 1177 | 1512.57 |
+| Equal-six | 10y-stress | 10.620918% | 0.680970 | 27.593081% | 4.204299x | 1177 | 2453.37 |
+| Equal-six | 5y-base | 12.498994% | 0.758457 | 15.683919% | 4.556922x | 602 | 733.18 |
+| Equal-six | 5y-stress | 11.364349% | 0.667306 | 16.058614% | 4.556023x | 602 | 1111.07 |
+| Rolling-six | 10y-base | 11.208647% | 0.710618 | 22.262628% | 9.138086x | 939 | 1667.94 |
+| Rolling-six | 10y-stress | 9.415542% | 0.579218 | 24.530027% | 9.131604x | 939 | 3658.34 |
+| Rolling-six | 5y-base | 11.292596% | 0.545274 | 22.781534% | 10.709945x | 470 | 765.97 |
+| Rolling-six | 5y-stress | 8.401845% | 0.362538 | 25.030084% | 10.697644x | 470 | 1579.99 |
+
+Only equal-six five-year base CAGR>12%passes. All other CAGR gates and every
+Sharpe>1,DD<=15%,SPY,QQQ and extra stress/base-SPY gate fail. No passing fragment
+or preferred15/20%CAGR changes the original acceptance.
+
+Against predeclared cached original-eight controls, equal-six CAGR is lower
+3.355043--5.117498percentage points and Sharpe is lower everywhere. Rolling-six
+CAGR is lower0.967013--2.709998points and Sharpe is also lower everywhere.
+Both new rules have higher turnover, tickets and fees than their matched
+cached counterpart. Equal-six DD rises about9.95/10.31points ten years,
+falls only0.001691points five-year base and rises0.343243points five-year stress.
+Rolling-six DD falls0.669871/0.513161points on base paths but rises
+2.576545/2.560849points under stress. A smaller mechanism roster is not
+automatic risk independence or financial improvement.
+
+Within the same six-pool, rolling CAGR/Sharpe are lower on all four paths.
+DD is lower ten years but higher five years; annual turnover is higher
+4.927109--6.153023times NAV everywhere. There are238fewer ten-year tickets
+and132fewer five-year tickets, yet fees are higher byUSD155.37/1204.97ten years
+andUSD32.79/468.92five years. Fewer tickets do not ensure lower total costs.
+These are complete-policy historical contrasts, not isolated causal roster,
+score or fee effects.
+
+Minimum cashUSD168.19589289151003, maximum gross0.9831485410295066 and maximum
+independent BT gapUSD7.639755494892597e-11; actual broker orders0.
+Financial process32809 exits0, wall **117.55165687500266seconds**,
+Darwin peakRSS510586880bytes. The40.53572058399732-second registration/proof
+process is separate, not financial runtime.
+
+**Current J1109:102registrations,93completed reviews,nine technical failures,
+zero pending,372funded paths,271combined completions,zero qualifiers;
+investment goal unmet.** All failures, source admission and global seven/eight
+rosters remain. This negative study does not invalidate financially rejected
+but technically admissible experts. Exposed historical selection and
+counterfactual availability are not independent forward validation.
+
+## Preserved mixed-six preregistration snapshot J1090
 
 The [unchanged primary](MIXED_MECHANISM_SIX_PRIMARY_V1.md) is frozen at
 `f355581a`; the [separate financial Module](MIXED_MECHANISM_SIX_FINANCIAL_V1.md)
