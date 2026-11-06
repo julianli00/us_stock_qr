@@ -4,6 +4,59 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Forecast opportunity gate: preserved preregistration J1278
+
+The [fixed feasibility-first law](FORECAST_OPPORTUNITY_GATE_V1.md) separates
+assessment admissibility from participation. Both saved forecasters and the
+canonical eight complete experts remain; no best model is selected.
+Adopt the exact retained advisor target only when its saved smaller SPY/QQQ
+forecast active-rate numerator after its nominal source switch proxy is
+strictly positive. Zero is the economic boundary, not a fitted DD/exposure
+threshold or a grid. Otherwise the new target is98%BIL/2%idle.
+Initial insufficient history is explicitly unscoredBIL rather than old equal-eight;
+all original return days remain. Missing/inconsistent/nonfinite mature
+certificates stop the version, never become a valid cash fallback.
+
+No ridge/risk fit, source ranking, old target/account or benchmark is replayed.
+The source advisor keeps its original statistical previous-weight/cost state;
+new participation/BIL holdings do not feed back. That nominal source proxy is
+not the new actual main cost forecast, and the forecast is not promised future
+main NET return. Real original main-account costs/holdings feedback still apply.
+Funding standby is not a ninth strategy expert. No new expert admission,
+RF view, source waiver, initial-opinion backdating or global roster change occurs.
+
+An initial unfrozen lint attempt retains one101-character message failure.
+Only the error text is shortened, then the first25synthetic/real-contract
+checks and Ruff pass. Freeze`4598c3b9`pins170dependencies,1362source
+references,eight source/admission clocks and eight explicit tested inputs.
+Both actual registrations1275/1276 at **2026-11-06T02:57:08.887178Z**
+and **02:57:09.593319Z** precede the new target composition.
+Proofs1277/1278retain121dates,242input/result records,five exact prefixes
+andMTUM/VLUE/QUAL/USMVparticipation on both original horizons.
+
+| Complete gated rule | Participation origins | BIL standby origins | Unscored standby origins |
+| --- | ---: | ---: | ---: |
+| Unconditional opportunity gate | 22 | 99 | 7 |
+| Contextual opportunity gate | 34 | 87 | 7 |
+
+Every active intention is byte-exact to its saved advisor; every standby
+intention is exactly actualBIL, independently checked against raw binary64
+source numerator arithmetic. The prior sign certificate uses the exact source
+NumPy key codec, not alternative Python keys. Registration/preparation exits0
+in44.45098995798617seconds, Darwin peakRSS450535424bytes.
+
+The [unconditional packet](evidence/forecast_opportunity_gate_20261106_0_registration_v1.json)
+and [contextual packet](evidence/forecast_opportunity_gate_20261106_1_registration_v1.json)
+must both be actually published and fully verified before funds.
+Only all eight original10y/5y/base-stress freshUSD10000 main paths are planned.
+CanonicalRF,initialpeak,costs,delays,cashfunding1x,holdingband,independentBT
+and every original financial gate stay fixed. Matched cached always-invested
+advisor accounts are controls, not replayed or new trials.
+The prior92/80negative counts and285exposed completions are disclosed;
+this very restrictive participation can destroy returns and is not independent
+OOS/forward proof. **At J1278:120registered,107completed,11technical,
+two pending,428funded paths,285combined completions,zero qualifiers; goal unmet.**
+
 ## Signed score normalizer: frequent negative numerators, no causal DD attribution
 
 The [complete V2 read-only survey](evidence/forecast_risk_normalizer_diagnosis_20261106_v2.json)

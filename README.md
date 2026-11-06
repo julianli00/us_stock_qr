@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 118 SSD identities, 107 completed/rejected, 11 retained technical failures and zero pending; 428 funded paths | Journal1274 current summary: 285 combined completions, zero qualifiers; investment goal remains unmet |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 120 SSD identities, 107 completed/rejected, 11 retained technical failures and two pending; 428 funded paths | Journal1278 current summary: 285 combined completions, zero qualifiers; investment goal remains unmet |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -44,6 +44,30 @@ November authorization.
 The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
+
+### Forecast opportunity gate: explicit participation or BIL, preregistration J1278
+
+The [new participation law](research/workbench/FORECAST_OPPORTUNITY_GATE_V1.md)
+keeps both retained advisors, original eight experts and their frozen ranking.
+It copies a saved target only when the actual selected post-cost active-rate
+numerator is strictly positive; negative/zero and explicitly unscored origins
+use98%BIL/2%idle. Missing or inconsistent mature evidence is an error, not
+cash success. BIL is funding standby, not a new expert.
+
+Both identities actually register at1275/1276 before either new gated target.
+Proofs1277/1278 retain121dates,242input/result records,five exact prefixes
+and genuine four-style support on both horizons. Unconditional has22participation/
+99standby origins; contextual34/87. Seven origins each are explicitly unscored
+standby. This restrictive adaptive rule may sacrifice benchmark returns.
+Its old advisor state never receives the new participation/BIL feedback;
+the old nominal switch proxy is not the new main account's actual cost forecast.
+
+The [unconditional](research/workbench/evidence/forecast_opportunity_gate_20261106_0_registration_v1.json)
+and [contextual](research/workbench/evidence/forecast_opportunity_gate_20261106_1_registration_v1.json)
+complete packets must be actually remotely verified before any funds.
+All eight original fresh-capital paths and all unchanged gates remain planned,
+not completed. Cached always-invested matched controls are not replayed.
+**J1278:two pending,285completions,zero qualifiers; goal unmet.**
 
 ### Signed score normalizer: negative post-cost forecasts are common, not DD causality
 
