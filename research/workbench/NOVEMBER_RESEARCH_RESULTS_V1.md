@@ -4,6 +4,62 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Saved-forecast pairs: all return/Sharpe gates pass, both rules fail drawdown
+
+The [complete result](evidence/expert_active_forecast_pair_20261106_results_v2.json)
+retains both full policies and all original paths. Actual full-cohort
+preregistration is`6099ee5fbf756ae0ba903a416f57b7a1db0a842e`; both complete
+schema2packets,349scientific public blobs plus each packet and28original
+import pins per candidate are verified before any funds. Actual prefund
+checkpoint648is saved and exactly read back. Fence1256at
+**2026-11-06T01:55:47.201174Z** precedes the first account start at
+**01:55:49.467963Z** and every later path.
+
+| Complete rule | Original path | Net CAGR | RF Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Model fees USD |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Unconditional forecast | 10y-base | 22.486269% | 1.035497 | 24.918990% | 2.878309x | 419 | 758.70 |
+| Unconditional forecast | 10y-stress | 22.072319% | 1.014823 | 24.394040% | 2.865677x | 414 | 1755.58 |
+| Unconditional forecast | 5y-base | 26.104837% | 1.095694 | 20.763116% | 3.175705x | 239 | 348.65 |
+| Unconditional forecast | 5y-stress | 24.719685% | 1.036244 | 20.850599% | 3.157715x | 234 | 658.14 |
+| Contextual forecast | 10y-base | 22.987252% | 1.048364 | 25.809091% | 3.200121x | 442 | 819.27 |
+| Contextual forecast | 10y-stress | 22.054962% | 1.005950 | 25.964633% | 3.190842x | 442 | 1895.24 |
+| Contextual forecast | 5y-base | 26.929855% | 1.102419 | 26.095920% | 3.239857x | 255 | 368.83 |
+| Contextual forecast | 5y-stress | 25.097135% | 1.026822 | 26.257751% | 3.215974x | 250 | 684.71 |
+
+Every strictCAGR>12%,RFSharpe>1,SPYandQQQgate passes, including all four
+additional stress/base-SPYcomparisons. All eight CAGRvalues also exceed
+the preferred/ultimate20%level, but **all eight maximum drawdowns exceed15%**.
+Both full policies remain rejected at reviews1265/1274. Strong return
+fragments, averaged DDor a weakened DDlimit do not qualify either rule.
+
+Both new policies have higher CAGR/Sharpe and lower turnover,tickets and
+fees on every path than the cached original-eight rolling control.
+Conditional DDworsens on all four paths; unconditional DDworsens on ten-year
+paths and improves on five-year paths, still above15%.
+Against cached equal-eight, every CAGR/Sharpe is higher and every DD is worse;
+turnover is higher while tickets/fees are lower. Both full control contrasts
+are published, not cherry-picked or replayed. Contextual forecast error
+improvement in the earlier diagnosis does not imply uniform improvement:
+its DD is worse on every funded path than the unconditional policy.
+These whole-policy comparisons are not isolated causal model alpha,
+independent OOS or real forward proof.
+
+The once-only actual financial process exits0 in104.93435654201312seconds,
+Darwin peakRSS431108096bytes. Minimum recorded main cash isUSD176.946558584518,
+maximum gross0.9851929552190198 and independentBT maximum equity gap
+USD8.731149137020111e-11. Actual broker orders0. All original2512/1254returns,
+freshUSD10000,initialpeak,canonicalRF,5/20bps+$1,1/2later-open delays,
+actual holding feedback,cash funding<=1x and independentBT remain.
+
+V1's two technical failures at1250/1251 remain unchanged. V2makes no new
+target derivation, score, ridge fit, source model, shadow, old-account or
+benchmark run; its exact saved targets7f7fc01e/c2ddac65 retain their earlier
+derivation times. Both the failedV1 and successful metadata-onlyAdapter
+are reported. No new RF view, source waiver or global roster change occurs.
+**J1274:118registered,107completed,11technical,zero pending,
+428funded paths,285combined completions,zero qualifiers;
+the investment goal remains unmet.**
+
 ## Saved-forecast pair V2: preserved preregistration J1255
 
 The [new allocation law](EXPERT_ACTIVE_FORECAST_PAIR_V1.md) tests both immutable

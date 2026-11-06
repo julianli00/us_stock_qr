@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 118 SSD identities, 105 completed/rejected, 11 retained technical failures and two pending; 420 funded paths | Journal1255 current summary: 283 combined completions, zero qualifiers; investment goal remains unmet |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 118 SSD identities, 107 completed/rejected, 11 retained technical failures and zero pending; 428 funded paths | Journal1274 current summary: 285 combined completions, zero qualifiers; investment goal remains unmet |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -45,7 +45,33 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
-### Saved-forecast pair V2: explicit proof Adapter, no new funded outcome yet
+### Saved-forecast pairs: return and Sharpe gates pass, drawdown still rejects both
+
+The [complete eight-path outcome](research/workbench/evidence/expert_active_forecast_pair_20261106_results_v2.json)
+keeps both unconditional/contextual forecasts and the frozen allocation law.
+Every path has net CAGR22.054962--26.929855%,RFSharpe1.005950--1.102419
+and beats the original matched-cost full-capital SPY/QQQ references. All four
+extra stress/base-SPYgates also pass. **Every maximum drawdown still fails15%**:
+unconditional20.763116--24.918990%; contextual25.809091--26.257751%.
+Reviews1265/1274therefore reject both complete unchanged policies.
+
+Annual two-sided turnover is2.865677--3.239857x,with234--442model tickets
+per path. All actual fees and both cached original-eight control contrasts
+are retained. Compared with original rolling, both new rules have higher
+CAGR/Sharpe and lower turnover,tickets and fees on all four paths; DDworsens
+except unconditional five-year paths. Compared with equal-eight, every DD
+is worse. Contextual forecasting's small diagnostic error improvement is
+not uniform financial improvement or isolated causal alpha.
+
+Actual preregistration`6099ee5`,both complete packets,349scientific blobs
+and28original import pins per candidate are checked before funding.
+Prefund checkpoint648and fence1256precede all eight accounts. V1's two
+terminal proof-contract failures remain; V2reuses its earlier target bytes
+without new fitting or allocation. Cash funding<=1x,original fees/delays/RF,
+initial peak,holdings feedback and independentBT remain; broker orders0.
+**J1274:285completions,zero qualifiers; investment goal unmet.**
+
+### Saved-forecast pair V2: preserved preregistration J1255
 
 The [separate allocation law](research/workbench/EXPERT_ACTIVE_FORECAST_PAIR_V1.md)
 retains both saved forecasters, the original eight experts and all28risk pairs.

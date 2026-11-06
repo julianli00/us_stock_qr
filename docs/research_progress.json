@@ -1,17 +1,17 @@
 {
   "schema_version": 1,
   "current_ssd_journal_summary": {
-    "snapshot_scope": "Current J1255:both schema-only V2 identities registered and attested over unchanged earlier V1 targets. V1 terminal failures preserved, zero new target derivations or funded outcomes. Both complete packets must be actually published and verified before capital.",
-    "journal_summary_derived_at_utc": "2026-11-06T01:50:20.109502+00:00",
-    "journal_sequence": 1255,
-    "journal_head_sha256": "5524ce78babc7b0e54a037853b9df299f10dabe556bed5b016ce2eb23b4e62b6",
+    "snapshot_scope": "Current J1274:both saved-forecast policies complete all eight original funded paths;all CAGR/Sharpe/SPY/QQQ gates pass but every DD exceeds15%, so both reject. V1 terminal failures and earlier target derivation remain immutable;metadata-only V2 changes no economic law.",
+    "journal_summary_derived_at_utc": "2026-11-06T02:00:19.061604+00:00",
+    "journal_sequence": 1274,
+    "journal_head_sha256": "2056f5365d92c8da4d89d19ae71cc53cd326a1a2fa559f05853a3fd3868b3254",
     "legacy_completed": 178,
     "registered": 118,
-    "completed": 105,
+    "completed": 107,
     "technical_failures": 11,
-    "pending": 2,
-    "funded_paths": 420,
-    "combined_completed": 283,
+    "pending": 0,
+    "funded_paths": 428,
+    "combined_completed": 285,
     "qualified": 0,
     "latest_study_id": "ssd_expert_active_forecast_pair_20261106_v2",
     "latest_registrations": [
@@ -32,7 +32,7 @@
     ],
     "complete_cohort_packet_schema": 2,
     "fixed_financial_cohort_size": 2,
-    "latest_study_status": "both_registered_attested_pending_complete_remote_publication",
+    "latest_study_status": "both_complete_policies_rejected_all_drawdown_gates_fail",
     "historical_target_derivation_proof": {
       "expert_pool_eight_contextual_forecast_pair_v2": {
         "path": "reports/ssd-continuous-research-v1/expert-active-forecast-pair-20261106-v2/attested-target-proofs/expert_pool_eight_contextual_forecast_pair_v2/proof.json",
@@ -47,21 +47,24 @@
     "historical_new_policy_indicators_or_targets_computed": false,
     "source_V1_targets_reused_byte_exact": true,
     "source_V1_target_derivation_precedes_V2_registration": true,
-    "candidate_accounts_or_metrics_computed": false,
-    "actual_new_formal_funded_paths": 0,
+    "candidate_accounts_or_metrics_computed": true,
+    "actual_new_formal_funded_paths": 8,
     "planned_original_funded_paths": 8,
     "actual_remote_publication_required_before_funding": true,
-    "actual_remote_publication_verified_before_accounts": false,
-    "actual_preregistration_commit": null,
-    "actual_publication_fence_sequence": null,
-    "actual_first_path_started_at": null,
-    "actual_review_sequences": {},
-    "all_candidate_status": {
-      "expert_pool_eight_unconditional_forecast_pair_v2": "pending",
-      "expert_pool_eight_contextual_forecast_pair_v2": "pending"
+    "actual_remote_publication_verified_before_accounts": true,
+    "actual_preregistration_commit": "6099ee5fbf756ae0ba903a416f57b7a1db0a842e",
+    "actual_publication_fence_sequence": 1256,
+    "actual_first_path_started_at": "2026-11-06T01:55:49.467963+00:00",
+    "actual_review_sequences": {
+      "expert_pool_eight_unconditional_forecast_pair_v2": 1265,
+      "expert_pool_eight_contextual_forecast_pair_v2": 1274
     },
-    "latest_results": null,
-    "latest_results_sha256": null,
+    "all_candidate_status": {
+      "expert_pool_eight_unconditional_forecast_pair_v2": "rejected",
+      "expert_pool_eight_contextual_forecast_pair_v2": "rejected"
+    },
+    "latest_results": "research/workbench/evidence/expert_active_forecast_pair_20261106_results_v2.json",
+    "latest_results_sha256": "7691722f05ac8c09cb97d58ae03c78ad9b6ba731cdfff404527e804be1bea173",
     "financial_program_freeze_sha256": "cfb23c574cc9c142a0d220f955f2eef8ec8ebb03500134de39a974f108211034",
     "financial_program_dependency_count": 162,
     "financial_program_source_reference_count": 1317,
@@ -1021,7 +1024,390 @@
     },
     "independent_forward_validation": false,
     "investment_objective_verified": false,
-    "order_authority": false
+    "order_authority": false,
+    "actual_publication_fence_at": "2026-11-06T01:55:47.201174+00:00",
+    "actual_review_times": {
+      "expert_pool_eight_unconditional_forecast_pair_v2": "2026-11-06T01:55:59.681145+00:00",
+      "expert_pool_eight_contextual_forecast_pair_v2": "2026-11-06T01:56:51.676191+00:00"
+    },
+    "actual_eight_path_outcome_and_cost_rows": [
+      {
+        "candidate_id": "expert_pool_eight_unconditional_forecast_pair_v2",
+        "path": "10y-base",
+        "net_CAGR_percent": 22.48626897088597,
+        "RF_Sharpe": 1.0354970567578163,
+        "max_DD_percent": 24.91898984650007,
+        "annual_two_sided_turnover": 2.8783091321116867,
+        "model_tickets": 419,
+        "model_fees_USD": 758.70332340754,
+        "gates": {
+          "beats_qqq": true,
+          "beats_spy": true,
+          "cagr_above_12pct": true,
+          "drawdown_at_most_15pct": false,
+          "sharpe_above_1": true
+        },
+        "all_point_gates_pass": false
+      },
+      {
+        "candidate_id": "expert_pool_eight_unconditional_forecast_pair_v2",
+        "path": "10y-stress",
+        "net_CAGR_percent": 22.072318868969877,
+        "RF_Sharpe": 1.0148230195724652,
+        "max_DD_percent": 24.39403970035969,
+        "annual_two_sided_turnover": 2.865676782156506,
+        "model_tickets": 414,
+        "model_fees_USD": 1755.5830286223731,
+        "gates": {
+          "also_beats_base_cost_spy": true,
+          "beats_qqq": true,
+          "beats_spy": true,
+          "cagr_above_12pct": true,
+          "drawdown_at_most_15pct": false,
+          "sharpe_above_1": true
+        },
+        "all_point_gates_pass": false
+      },
+      {
+        "candidate_id": "expert_pool_eight_unconditional_forecast_pair_v2",
+        "path": "5y-base",
+        "net_CAGR_percent": 26.104837123946712,
+        "RF_Sharpe": 1.0956937654331969,
+        "max_DD_percent": 20.763116264938077,
+        "annual_two_sided_turnover": 3.175704986863681,
+        "model_tickets": 239,
+        "model_fees_USD": 348.6535320408105,
+        "gates": {
+          "beats_qqq": true,
+          "beats_spy": true,
+          "cagr_above_12pct": true,
+          "drawdown_at_most_15pct": false,
+          "sharpe_above_1": true
+        },
+        "all_point_gates_pass": false
+      },
+      {
+        "candidate_id": "expert_pool_eight_unconditional_forecast_pair_v2",
+        "path": "5y-stress",
+        "net_CAGR_percent": 24.719685290683714,
+        "RF_Sharpe": 1.0362436089144003,
+        "max_DD_percent": 20.850598846312607,
+        "annual_two_sided_turnover": 3.157714866152655,
+        "model_tickets": 234,
+        "model_fees_USD": 658.1357557932772,
+        "gates": {
+          "also_beats_base_cost_spy": true,
+          "beats_qqq": true,
+          "beats_spy": true,
+          "cagr_above_12pct": true,
+          "drawdown_at_most_15pct": false,
+          "sharpe_above_1": true
+        },
+        "all_point_gates_pass": false
+      },
+      {
+        "candidate_id": "expert_pool_eight_contextual_forecast_pair_v2",
+        "path": "10y-base",
+        "net_CAGR_percent": 22.987252252648638,
+        "RF_Sharpe": 1.0483636504616696,
+        "max_DD_percent": 25.80909109938636,
+        "annual_two_sided_turnover": 3.2001212343828636,
+        "model_tickets": 442,
+        "model_fees_USD": 819.2722896327517,
+        "gates": {
+          "beats_qqq": true,
+          "beats_spy": true,
+          "cagr_above_12pct": true,
+          "drawdown_at_most_15pct": false,
+          "sharpe_above_1": true
+        },
+        "all_point_gates_pass": false
+      },
+      {
+        "candidate_id": "expert_pool_eight_contextual_forecast_pair_v2",
+        "path": "10y-stress",
+        "net_CAGR_percent": 22.054962234299325,
+        "RF_Sharpe": 1.0059498582962607,
+        "max_DD_percent": 25.964633204693744,
+        "annual_two_sided_turnover": 3.1908420848263948,
+        "model_tickets": 442,
+        "model_fees_USD": 1895.2388097728187,
+        "gates": {
+          "also_beats_base_cost_spy": true,
+          "beats_qqq": true,
+          "beats_spy": true,
+          "cagr_above_12pct": true,
+          "drawdown_at_most_15pct": false,
+          "sharpe_above_1": true
+        },
+        "all_point_gates_pass": false
+      },
+      {
+        "candidate_id": "expert_pool_eight_contextual_forecast_pair_v2",
+        "path": "5y-base",
+        "net_CAGR_percent": 26.92985493926956,
+        "RF_Sharpe": 1.102418632865263,
+        "max_DD_percent": 26.09592021646231,
+        "annual_two_sided_turnover": 3.239857170962046,
+        "model_tickets": 255,
+        "model_fees_USD": 368.8338689817034,
+        "gates": {
+          "beats_qqq": true,
+          "beats_spy": true,
+          "cagr_above_12pct": true,
+          "drawdown_at_most_15pct": false,
+          "sharpe_above_1": true
+        },
+        "all_point_gates_pass": false
+      },
+      {
+        "candidate_id": "expert_pool_eight_contextual_forecast_pair_v2",
+        "path": "5y-stress",
+        "net_CAGR_percent": 25.097135414431882,
+        "RF_Sharpe": 1.0268215738265989,
+        "max_DD_percent": 26.25775136992764,
+        "annual_two_sided_turnover": 3.2159738009943104,
+        "model_tickets": 250,
+        "model_fees_USD": 684.7054573952688,
+        "gates": {
+          "also_beats_base_cost_spy": true,
+          "beats_qqq": true,
+          "beats_spy": true,
+          "cagr_above_12pct": true,
+          "drawdown_at_most_15pct": false,
+          "sharpe_above_1": true
+        },
+        "all_point_gates_pass": false
+      }
+    ],
+    "actual_gate_pass_counts": {
+      "also_beats_base_cost_spy": 4,
+      "beats_qqq": 8,
+      "beats_spy": 8,
+      "cagr_above_12pct": 8,
+      "drawdown_at_most_15pct": 0,
+      "sharpe_above_1": 8
+    },
+    "minimum_main_cash_USD": 176.946558584518,
+    "maximum_gross_exposure": 0.9851929552190198,
+    "maximum_independent_BT_gap_USD": 8.731149137020111e-11,
+    "actual_broker_orders": 0,
+    "actual_financial_process_wall_seconds": 104.93435654201312,
+    "actual_financial_process_Darwin_peak_RSS_bytes": 431108096,
+    "cached_control_contrasts": {
+      "expert_pool_eight_contextual_forecast_pair_v2": {
+        "expert_pool_eight_equal_weight_v1": {
+          "10y-base": {
+            "execution": {
+              "annualized_two_sided_turnover": 0.5763552884348768,
+              "model_order_count": -600,
+              "total_cost_usd": -454.4754716692779
+            },
+            "metrics": {
+              "cagr": 0.08056006733407672,
+              "max_drawdown": 0.079543003349266,
+              "sharpe": 0.03338779452353302
+            }
+          },
+          "10y-stress": {
+            "execution": {
+              "annualized_two_sided_turnover": 0.5704891436168391,
+              "model_order_count": -593,
+              "total_cost_usd": -44.012147615346066
+            },
+            "metrics": {
+              "cagr": 0.07662550093967924,
+              "max_drawdown": 0.08680696870293214,
+              "sharpe": 0.030405337581806857
+            }
+          },
+          "5y-base": {
+            "execution": {
+              "annualized_two_sided_turnover": 0.6160715488774655,
+              "model_order_count": -259,
+              "total_cost_usd": -227.90499283032216
+            },
+            "metrics": {
+              "cagr": 0.09391886677866457,
+              "max_drawdown": 0.10410309793126415,
+              "sharpe": 0.07446304236119516
+            }
+          },
+          "5y-stress": {
+            "execution": {
+              "annualized_two_sided_turnover": 0.6038827089129879,
+              "model_order_count": -257,
+              "total_cost_usd": -142.57356438879788
+            },
+            "metrics": {
+              "cagr": 0.0861528797954918,
+              "max_drawdown": 0.1054238029961051,
+              "sharpe": 0.06924978641309731
+            }
+          }
+        },
+        "expert_pool_eight_rolling_pair_v1": {
+          "10y-base": {
+            "execution": {
+              "annualized_two_sided_turnover": -3.781222983782265,
+              "model_order_count": -457,
+              "total_cost_usd": -675.3032796056549
+            },
+            "metrics": {
+              "cagr": 0.1061225911134629,
+              "max_drawdown": 0.028765922499360386,
+              "sharpe": 0.26112609507391615
+            }
+          },
+          "10y-stress": {
+            "execution": {
+              "annualized_two_sided_turnover": -3.789847218285953,
+              "model_order_count": -457,
+              "total_cost_usd": -1275.574559695229
+            },
+            "metrics": {
+              "cagr": 0.10624892618275061,
+              "max_drawdown": 0.04011151129427948,
+              "sharpe": 0.2861101357694733
+            }
+          },
+          "5y-base": {
+            "execution": {
+              "annualized_two_sided_turnover": -4.288831005905294,
+              "model_order_count": -214,
+              "total_cost_usd": -317.6034765967099
+            },
+            "metrics": {
+              "cagr": 0.1467024600750222,
+              "max_drawdown": 0.028012258769879783,
+              "sharpe": 0.4722339017957864
+            }
+          },
+          "5y-stress": {
+            "execution": {
+              "annualized_two_sided_turnover": -4.321366416793673,
+              "model_order_count": -219,
+              "total_cost_usd": -633.3858390821391
+            },
+            "metrics": {
+              "cagr": 0.13985293162058787,
+              "max_drawdown": 0.037885164653929215,
+              "sharpe": 0.47175700279767385
+            }
+          }
+        }
+      },
+      "expert_pool_eight_unconditional_forecast_pair_v2": {
+        "expert_pool_eight_equal_weight_v1": {
+          "10y-base": {
+            "execution": {
+              "annualized_two_sided_turnover": 0.2545431861637,
+              "model_order_count": -623,
+              "total_cost_usd": -515.0444378944896
+            },
+            "metrics": {
+              "cagr": 0.07555023451645004,
+              "max_drawdown": 0.07064199082040312,
+              "sharpe": 0.020521200819679786
+            }
+          },
+          "10y-stress": {
+            "execution": {
+              "annualized_two_sided_turnover": 0.24532384094695026,
+              "model_order_count": -621,
+              "total_cost_usd": -183.66792876579166
+            },
+            "metrics": {
+              "cagr": 0.07679906728638475,
+              "max_drawdown": 0.07110103365959164,
+              "sharpe": 0.03927849885801138
+            }
+          },
+          "5y-base": {
+            "execution": {
+              "annualized_two_sided_turnover": 0.5519193647791005,
+              "model_order_count": -275,
+              "total_cost_usd": -248.08532977121507
+            },
+            "metrics": {
+              "cagr": 0.08566868862543608,
+              "max_drawdown": 0.05077505841602181,
+              "sharpe": 0.06773817492912904
+            }
+          },
+          "5y-stress": {
+            "execution": {
+              "annualized_two_sided_turnover": 0.5456237740713323,
+              "model_order_count": -273,
+              "total_cost_usd": -169.14326599078947
+            },
+            "metrics": {
+              "cagr": 0.08237837855801011,
+              "max_drawdown": 0.05135227775995477,
+              "sharpe": 0.07867182150089869
+            }
+          }
+        },
+        "expert_pool_eight_rolling_pair_v1": {
+          "10y-base": {
+            "execution": {
+              "annualized_two_sided_turnover": -4.103035086053442,
+              "model_order_count": -480,
+              "total_cost_usd": -735.8722458308666
+            },
+            "metrics": {
+              "cagr": 0.10111275829583621,
+              "max_drawdown": 0.019864909970497502,
+              "sharpe": 0.24825950137006292
+            }
+          },
+          "10y-stress": {
+            "execution": {
+              "annualized_two_sided_turnover": -4.115012520955842,
+              "model_order_count": -485,
+              "total_cost_usd": -1415.2303408456746
+            },
+            "metrics": {
+              "cagr": 0.10642249252945613,
+              "max_drawdown": 0.024405576250938976,
+              "sharpe": 0.29498329704567783
+            }
+          },
+          "5y-base": {
+            "execution": {
+              "annualized_two_sided_turnover": -4.352983190003659,
+              "model_order_count": -230,
+              "total_cost_usd": -337.78381353760284
+            },
+            "metrics": {
+              "cagr": 0.1384522819217937,
+              "max_drawdown": -0.02531578074536256,
+              "sharpe": 0.46550903436372026
+            }
+          },
+          "5y-stress": {
+            "execution": {
+              "annualized_two_sided_turnover": -4.379625351635328,
+              "model_order_count": -235,
+              "total_cost_usd": -659.9555406841307
+            },
+            "metrics": {
+              "cagr": 0.13607843038310619,
+              "max_drawdown": -0.016186360582221115,
+              "sharpe": 0.4811790378854752
+            }
+          }
+        }
+      }
+    },
+    "preserved_saved_forecast_preregistration_snapshot_J1255": {
+      "journal_sequence": 1255,
+      "pending": 2,
+      "combined_completed": 283,
+      "complete_old_projection_commit": "6099ee5fbf756ae0ba903a416f57b7a1db0a842e",
+      "complete_old_projection_path": "docs/research_progress.json",
+      "snapshot_is_current": false
+    }
   },
   "updated_on": "2026-10-31",
   "phase": "legacy_term_expert_v2_eligibility_complete_blocked",
