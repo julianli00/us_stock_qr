@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 135 SSD identities, 122 completed, 12 retained technical-workflow terminations and one pending; 488 funded paths | Journal1454 has one registered controlled six-source law before funds; 300 combined completions and zero qualifiers remain unchanged |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 135 SSD identities, 123 completed, 12 retained technical-workflow terminations and zero pending; 492 funded paths | Journal1464 complete financial summary: 301 combined completions, zero qualifiers; investment goal remains unmet |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -45,7 +45,30 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
-### Controlled protective sixth source: registered before capital
+### Controlled protective sixth source: smaller drawdowns, still rejected
+
+The [complete four-path outcome](research/workbench/evidence/protective_six_adaptive_hedge_20261106_results_v1.json)
+adds one already admitted wealth-feedback source to unchanged AdaHedge.
+Net CAGRs are19.042708%,17.798955%,25.668465%and22.871188%;
+drawdowns remain30.918430%,30.478596%,22.002254%and22.096765%.
+Only five-yearbase Sharpepasses1. All four beat matched-costSPY,
+but only the five-yearpathsbeatQQQ;every15%drawdown gate fails.
+
+Against cached five-source AdaHedge,every drawdown and turnover falls,
+but every CAGR and Sharpe also falls. Model tickets rise by39,50,20and20,
+and recorded fees rise on all four paths. Source-owned protection does
+not transfer to netted monthly main capital.
+Actual preregistration`28664a6`,454published inputs/28original pins
+and checkpoint751precede capital. Neither source nor control is rerun,
+and no rate,window,floor or financial gate is changed.
+**Current J1464/135registered/123completed/12workflow terminations/
+zero pending/492funded paths/301combined completions/zero qualifiers.**
+The whole law is rejected;the investment objective is unmet.
+
+### Historical controlled protective-six preregistration snapshot J1454
+
+The following is retained before-capital evidence,not current counts
+or a claim that the now complete accounts remain unrun.
 
 The [singleton packet](research/workbench/evidence/protective_six_adaptive_hedge_20261106_registration_v1.json)
 keeps original AdaHedge mathematics and appends one already admitted
@@ -85,7 +108,7 @@ One NumPy auxiliary value differs in one prefix and remains disclosed;
 no primitive,source,numerical limit or old failed contract is rewritten.
 **This audit adds no strategy,target,account,BT or financial trial.
 Its historical J1452/300completed/zero-qualified snapshot is unchanged;
-it is not a result of the pending six-source law.**
+it is not a result of the later six-source law.**
 
 ### Historical fixed-quintet AdaHedge: more growth, larger drawdowns, rejected
 

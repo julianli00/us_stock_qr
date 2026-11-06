@@ -4,7 +4,57 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Controlled protective sixth source: preregistered targets, no capital outcome
+## Controlled protective sixth source: four paths complete, whole law rejected
+
+The [complete outcome](evidence/protective_six_adaptive_hedge_20261106_results_v1.json)
+retains all four original freshUSD10000paths of the same adaptive law.
+Only one already admitted wealth-feedback source was added to the
+unchanged five;no rate,window,floor,source guard or financial gate was
+retuned after outcomes. The source's own protection does not transfer
+to the fractional,netted monthly main account.
+
+Actual remote preregistration`28664a6`,454published scientific inputs,
+28original import pins and the exact Python/package environment were
+verified before funding. Checkpoint751was saved at
+2026-11-06T17:26:16.791714+00:00with covered_seq190625;
+its original native save event190628was linked prospectively.
+The actual start/process receipts carry these fields before the
+17:27:12.116428+00:00run start and publication fence1455.
+All four starts1456/1458/1460/1462follow that fence;review1464rejects
+the complete law. PID90026finished once in55.746354333seconds,
+with Darwin peakRSS491184128bytes. No old learner,source or control
+account was replayed.
+
+| Rule | Original path | Net CAGR | RF Sharpe | Drawdown | Annual two-sided turnover | Model tickets | Recorded fees USD |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Protective-six AdaHedge | 10y-base | 19.042708% | 0.869888 | 30.918430% | 3.614094x | 627 | 933.95 |
+| Protective-six AdaHedge | 10y-stress | 17.798955% | 0.814959 | 30.478596% | 3.609077x | 629 | 1815.09 |
+| Protective-six AdaHedge | 5y-base | 25.668465% | 1.058242 | 22.002254% | 4.151014x | 225 | 346.42 |
+| Protective-six AdaHedge | 5y-stress | 22.871188% | 0.943562 | 22.096765% | 4.143399x | 216 | 676.47 |
+
+All four CAGR and SPYgates pass,but only five-yearbase Sharpepasses1,
+only the five-yearpathsbeatQQQ,and every15%drawdown gate fails.
+Both extra stress/base-costSPYcomparisons pass without qualifying
+either complete four-path law or any individual failed path.
+
+Against cached five-source AdaHedge,drawdown falls by0.501734,
+0.717127,0.031472and0.050742percentage points respectively.
+Annual turnover also falls on every path,but CAGR and Sharpe fall
+on all four. Tickets rise by39,50,20and20;fees rise byUSD34.25,
+30.66,19.20and17.76. Adding a source with an own-wealth protection
+mechanism is not evidence that the main account is protected.
+This single controlled historical comparison is not independent
+forward validation or a reason to waive the original gates.
+
+**Current complete financial snapshot J1464/135registered/123completed/
+12workflow terminations/zero pending/492funded paths/301combined
+completions/zero qualifiers.** The whole law is rejected;investment
+objective unmet. All prior results and failed trials remain historical.
+
+## Historical controlled protective-six preregistration snapshot J1454
+
+This is the retained before-capital snapshot,not current counts or
+a claim that the now complete four accounts remain unrun.
 
 The [actual singleton packet](evidence/protective_six_adaptive_hedge_20261106_registration_v1.json)
 registers at1453before new six-source monthly labels,learning or targets.
