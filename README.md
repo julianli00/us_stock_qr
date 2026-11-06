@@ -45,7 +45,24 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
-### Read-only J1490 execution-gap reference: waiting holdings matter
+### Registered J1491 delay-aware shield: no historical output yet
+
+The [new dynamic program](research/workbench/evidence/execution_gap_shield_20261106_registration_v1.json)
+keeps the same cached six-expert monthly opinion but reviews actual main
+capital every close. Its [separate frozen law](research/workbench/EXECUTION_GAP_SHIELD_V1.md)
+uses actual one/two-session delivery paths and scenario-opening costs.
+It preserves a pending request and explicitly distinguishes an uncertified
+BIL risk-reduction attempt from a successful finite full-fill reference.
+Only that certified reference can override the ordinary band when unchanged
+holdings violate a known path.
+
+First 32 synthetic checks and an actual saved checkpoint precede registration.
+Historical shield scenarios, targets and accounts are still uncomputed;
+actual remote program publication must precede all four new funded paths.
+**J1491 / 139 registered / one pending / 303 completions / zero qualifiers.**
+The prior financial result and read-only diagnosis remain separate below.
+
+### Preserved read-only J1490 execution-gap reference: waiting holdings matter
 
 The [finite execution-gap study](research/workbench/evidence/execution_gap_envelope_20261106_v1.json)
 inspects all 364 saved main decision states, without replaying accounts.

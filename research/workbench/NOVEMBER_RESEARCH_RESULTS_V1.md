@@ -4,7 +4,53 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Read-only J1490 execution gap: conditional capacity is not a future guarantee
+## Registered J1491 delay-aware actual-main shield: not funded yet
+
+The [complete dynamic-program packet](evidence/execution_gap_shield_20261106_registration_v1.json)
+registers one separate complete law after first 32 synthetic checks, six
+versioned prototypes and freeze `6a1982a2`. Actual checkpoint 789 was saved
+2026-11-06T22:30:26.185681+00:00 with covered_seq 196104; its original native
+save event 196107 was prospectively linked before actual registration.
+PID 22707 completed registration in 20.582830208 seconds, peak RSS
+470,925,312 bytes. These are preparation records, not financial returns.
+
+The [frozen new Module](EXECUTION_GAP_SHIELD_V1.md) carries the exact six-expert
+confidence-Prod monthly nominal opinion, without replaying its learning,
+targets, sources, shadows or old accounts. Actual own-main closes and a fresh
+USD10000 peak now drive a daily risk review. The information clock is not
+relabelled as a new expert opinion arrival.
+
+The same rule uses each original scenario's actual known delay and costs:
+one-session 5bp base or two-session 20bp stress, USD1 tickets, scenario-opening
+wealth, actual BIL and idle cash. All expanding fully known historical paths
+end at or before the information date. Both interval endpoints remain; choose
+the greatest binary64 inside the exact represented interval.
+
+Already outside, waiting-close breaches, cost exhaustion, empty intervals or
+no representable fraction cause an explicitly uncertified BIL risk-reduction
+attempt, not a relabelled successful certificate. The ordinary 2.5pp band
+remains; a separately frozen override is allowed only when a full-fill
+reference is certified and unchanged held positions fail a known finite path.
+Existing pending requests remain untouched and visible; no retroactive fill,
+extra stacked request, terminal liquidation or brokerage order is introduced.
+
+This is not old monthly headroom V1, CPPI multiplier tuning or the previously
+tested daily equal-eight arrival rule. All old failures stay immutable.
+Finite empirical reference conditions do not establish future support,
+probabilities, month-long protection or financial qualification.
+
+The schema3 packet explicitly has no historical target derivation proof yet.
+There are no new shield scenarios, targets or accounts. Actual remote
+preregistration and a separate real prefunding checkpoint must precede four
+fresh original paths and five new-policy capital prefix checks.
+
+**J1491 / 139 registered / 125 completed / 13 workflow terminations /
+one pending / 500 existing funded paths / 303 combined completions /
+zero qualifiers. Investment objective unmet.**
+The financial J1490 result and all earlier read-only results remain historical
+evidence below; synthetic preparation does not improve those outcomes.
+
+## Preserved read-only J1490 execution gap: conditional capacity is not a future guarantee
 
 The [complete finite-path diagnosis](evidence/execution_gap_envelope_20261106_v1.json)
 uses every original saved initial/month-end main state and saved nominal target.
