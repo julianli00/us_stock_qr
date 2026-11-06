@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 132 SSD identities, 119 completed, 12 retained technical-workflow terminations and one pending; 476 funded paths | Journal1418 registered/pre-funding summary: 297 combined completions, zero qualifiers; investment goal remains unmet |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 132 SSD identities, 120 completed, 12 retained technical-workflow terminations and zero pending; 480 funded paths | Journal1428 complete financial summary: 298 combined completions, zero qualifiers; investment goal remains unmet |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -45,25 +45,24 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
-### Fixed-quintet anytime Hedge: registered, not funded
+### Fixed-quintet anytime Hedge: more growth, larger drawdowns, rejected
 
-The [frozen singleton law](research/workbench/QUINTET_ANYTIME_HEDGE_V1.md)
-keeps the existing five complete policies and tests decreasing-rate
-bounded-loss exponential weighting. It uses only matured complete source
-months,validates old fractions before assimilation and keeps the primary
-paper's fixed coefficient2without a rate,roster or window search.
-This is neither the old Dirichlet integration nor a new growth expert.
+The [complete four-path outcome](research/workbench/evidence/quintet_anytime_hedge_20261106_results_v1.json)
+keeps the existing five complete policies and frozen decreasing-Hedge law.
+Actual preregistration`f30b76a`,435published inputs/28original pins
+and checkpoint724precede fresh capital. No source,shadow or matched
+equal/rolling control is rerun.
 
-The [actual packet](research/workbench/evidence/quintet_anytime_hedge_20261106_registration_v1.json)
-registers before new learner weights and targets. Keep121decisions,
-119complete months,242retained input/resolution records,two initial
-unscored origins and five exact prefix checks. Targets differ materially
-from both cached equal/rolling controls at119origins.
-Normalized source-loss regret is not actual main wealth or a risk guarantee.
-**Current J1418/132registered/119completed/12workflow terminations/
-one pending/476funded paths/297combined completions/zero qualifiers.**
-No new main account or financial outcome exists yet;actual remote
-preregistration and prefunding verification/checkpoint must precede funds.
+All four CAGRs and SPYgates pass,but only5y-base Sharpepasses1,
+onlythefive-yearpathsbeatQQQ,and everyDDgatefails.
+Five-yearbase CAGR22.801291%andSharpe1.041938still come with
+19.313161%drawdown;five-yearstress CAGR20.531787%is not qualification.
+Versus both cached controls,growth improves and all fees/tickets fall,
+but drawdowns worsen. Normalized source-loss regret is not a main
+wealth,Sharpe or drawdown guarantee.
+**Current J1428/132registered/120completed/12workflow terminations/
+zero pending/480funded paths/298combined completions/zero qualifiers.**
+The complete law is rejected;no source,rate,pool or financial gate is retuned.
 
 ### Historical read-only J1416 return-cost bridge
 
@@ -85,7 +84,7 @@ portfolio,causal fee/expert-alpha attribution or a new financial result.
 **This audit's historical financial J1416/297completed/zero qualified
 snapshot is unchanged;it is not a result of the pending Hedge law.**
 
-### Benchmark-opportunity quintet: lower drawdowns, both rules rejected
+### Historical benchmark-opportunity quintet: lower drawdowns, rejected
 
 The [complete eight-path outcome](research/workbench/evidence/benchmark_opportunity_quintet_20261106_results_v1.json)
 keeps the frozen confirmation,defense,covariance-hedge,commitment and

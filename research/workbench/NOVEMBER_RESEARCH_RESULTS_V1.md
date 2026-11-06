@@ -4,7 +4,67 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Fixed-quintet anytime Hedge: registered, no funded outcome yet
+## Fixed-quintet anytime Hedge: four paths complete, whole law rejected
+
+The [complete financial outcome](evidence/quintet_anytime_hedge_20261106_results_v1.json)
+retains all original paths of the frozen continuous learner.
+One actual remotely published singleton packet at`f30b76a`and
+its435scientific inputs/28unchanged import pins are checked before
+actual prefunding checkpoint724. The real evaluate-start receipt
+records that checkpoint. Publication fence1419precedes all four
+freshUSD10000capital starts;review1428rejects the complete law.
+
+| Frozen law | Path | Net CAGR | RF Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Fees USD |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Anytime Hedge | 10y-base | 17.536818% | 0.879549 | 28.714450% | 3.158505x | 688 | 955.01 |
+| Anytime Hedge | 10y-stress | 16.498178% | 0.827201 | 28.732839% | 3.171265x | 698 | 1734.86 |
+| Anytime Hedge | 5y-base | 22.801291% | 1.041938 | 19.313161% | 3.546511x | 282 | 386.51 |
+| Anytime Hedge | 5y-stress | 20.531787% | 0.936763 | 19.461164% | 3.540684x | 282 | 679.81 |
+
+Original gates:netCAGR>12%andSPYeach pass4/4;RFSharpe>1
+passes1/4;DD<=15%passes0/4;QQQpasses2/4,thefive-year paths.
+The extra stress/base-cost-SPYgate passes2/2stress paths.
+Ten-year base/stress still trail matched-cost QQQ by3.625607and
+4.625686percentage points. Five-yearbase passes everylisted
+component exceptDD,but that failure is sufficient. Its22.801291%
+CAGRdoes not satisfy the whole four-path mandate or prove forward profit.
+
+Versus cached equal fifths,CAGRrises3.878641--6.972346points
+and fees fallUSD178.50--299.90,with202--314fewer model tickets.
+Turnover nevertheless rises on all four paths,and DDworsens
+5.392789--9.534965points. Ten-year Sharpes fall;five-year Sharpes rise.
+Fewer tickets and lower fees are not the same as lower turnover.
+
+Versus cached RF-relative rolling pairs,CAGRrises5.297413--8.913447
+points and everySharpeimproves. Annual turnover falls2.848169--3.408878x,
+tickets fall154--198andfees fallUSD249.02--1188.30.
+However DDworsens4.158863--14.093831points.
+Neither comparison reruns an old source or control account,and neither
+is isolated causal learning/fee alpha.
+
+Minimum main cash isUSD183.49267156257497,maximum gross exposure
+0.9843738554307501and maximum independent BT equity difference
+USD9.458744898438454e-11. Actual broker orders remainzero.
+The financial run takes55.51521554100327seconds with Darwin
+peakRSS482799616bytes. Original RF,initial drawdown peak,costs,
+fill delays,holding band,cash funding and pending-order discipline remain.
+
+The bounded normalized-source loss game still has its recorded
+regret6.175450versus reference13.839188. This valid learning
+diagnostic does not guarantee net main growth or drawdown,as the
+funded failure demonstrates. No new learning rate,loss floor,source,
+pool,budget cap or financial criterion is chosen after these outcomes.
+
+**Current complete financial snapshot J1428/132registered/120completed/
+12workflow terminations/zero pending/480funded paths/298combined
+completions/zero qualifiers.** The whole law is rejected and the
+investment objective remains unmet. The earlier return-cost bridge
+and opportunity-quintet results remain distinct historical evidence.
+
+## Historical fixed-quintet Hedge preregistration snapshot J1418
+
+The following preserves the actual before-funding snapshot,not current
+totals or a claim that the now complete accounts remain unrun.
 
 The [frozen law](QUINTET_ANYTIME_HEDGE_V1.md) keeps the exact current five
 complete sources and replaces hard pair selection with Decreasing Hedge
@@ -43,7 +103,7 @@ Source risk/cost diagnostics also do not replace actual funded feedback
 or fees. Registration takes40.712349750014255seconds with Darwin
 peakRSS473956352bytes.
 
-**Current pre-funding snapshot J1418/132registered/119completed/
+**Historical pre-funding snapshot J1418/132registered/119completed/
 12workflow terminations/one pending/476funded paths/297combined
 completions/zero qualifiers.** No financial result exists for the
 new singleton. Exact remote preregistration,package/import checks
@@ -118,7 +178,7 @@ is unchanged.** The primary financial result remains the rejected
 opportunity quintet below;this is a separate zero-trial diagnostic.
 The investment objective remains unmet.
 
-## Benchmark-opportunity quintet: eight paths complete, both laws rejected
+## Historical benchmark-opportunity quintet: eight paths complete, rejected
 
 The [complete financial outcome](evidence/benchmark_opportunity_quintet_20261106_results_v1.json)
 retains both frozen five-policy laws and all eight original freshUSD10000
