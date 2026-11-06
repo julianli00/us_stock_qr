@@ -4,7 +4,81 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Read-only J1464 protective-source mass: influence stayed small
+## Equal-role V2: registered and independently verified, no capital outcome yet
+
+The [actual singleton packet](evidence/equal_role_projection_20261106_registration_v2.json)
+uses a separate V2identity,registered1467before real cache verification.
+The [V2 method](EQUAL_ROLE_PROJECTION_V2.md) keeps the same six policies,
+economic roles034/125,equal half budgets,within-role ratios,cached learner,
+source clocks and all original financial gates.
+Only the proof Interface and independent retained-cache verification change.
+
+Four new namespace/wiring checks and seven exact OWNprototypes join the
+preserved original20numeric and7proof regression checks,without replaying
+either old suite. Bare freeze`a1dc90c7`and actual registered body`ad09aec3`
+are distinct. Checkpoint763was saved2026-11-06T19:04:29.286913+00:00,
+covered_seq192331;its original native receipt was linked before launch,
+and actual start/process receipts contain checkpoint fields.
+PID97883completed once in35.163885292seconds,peakRSS482971648bytes.
+
+Proof1468verifies all121original origins,119mature cached source updates,
+242retained input/resolution records,exact half-role rational budgets,
+five prefixes and every stored target bit. Maximum independent
+weight/target differences are5.551115e-17/1.110223e-16.
+All six factor families participate in both formal windows;
+119origins materially differ from the old flat-six target.
+The target artifact remains the exact original V1partial file,
+now independently verified under V2,not regenerated or admitted by default.
+No old learner,source pipeline,shadow or control account is replayed.
+
+**Current preregistration J1468/137registered/123completed/13workflow
+terminations/one pending/492funded paths/301combined completions/
+zero qualifiers.** Four original V2capital paths remain unrun.
+Actual remote publication,exact source/environment/import verification
+and a new prefunding checkpoint must precede funding.
+V1 remains a technical failure;investment objective unmet.
+
+## Historical equal-role V1: terminal proof-interface failure, no funded outcome
+
+The [frozen role rule](EQUAL_ROLE_PROJECTION_V1.md) retains the same six
+complete sources and their cached learner weights. Growth positions0,3,4
+and response positions1,2,5 each receive half of statistical capital,
+with within-role ratios unchanged. This is a fixed research choice,
+not a user cap,partition search,individual floor or protection guarantee.
+
+First20synthetic checks,6exact prototypes,freeze`267b81ae`and checkpoint760
+(saved2026-11-06T18:35:53.909763+00:00,covered_seq191870,original
+native191873) precede actual registration1465. The checkpoint was linked
+before the child,and actual start/process receipts contain its fields.
+PID96448exited1after33.434206042seconds,with Darwin peakRSS485130240bytes.
+
+The actual integration constructed121partial decisions,119mature source
+states and242retained input/resolution records,then stopped at the proof
+constructor:the V1 driver supplied five arguments to the original
+`target_proof(frozen, fields)` Interface. The registered V1 is terminal
+under event1466. The inherited generic event stage remains
+`eight_source_preparation`;it is not evidence that eight sources were
+used here. No target-proof event,completed preparation bundle,
+registration packet,account,BT or financial result exists for V1.
+All partial artifacts and immutable code/prototypes are retained.
+
+The separately versioned
+[V2 verifier](src/us_quant/equal_role_projection_proof_v2.py) checks cached
+source clocks,state continuity,role weights,stored target bits,independent
+Fraction arithmetic and prefixes before using the correct proof Interface.
+Its [seven regression cases](tests/test_equal_role_projection_proof_v2.py)
+are synthetic only. The independently frozen V2identity above subsequently
+verifies the real cache after its actual registration;V1 itself never
+receives a proof or funded result. No numerical criterion is relaxed.
+
+**Historical actual J1466/136registered/123completed/13technical-workflow
+terminations/zero pending/492funded paths/301combined completions/
+zero qualifiers.** Latest completed financial result remains rejected
+protective-six J1464;latest completed read-only diagnosis remains the
+allocation-mass audit below. This technical termination is not a
+financial rejection,new completed economic trial or investment success.
+
+## Historical read-only J1464 protective-source mass: influence stayed small
 
 The [complete allocation diagnosis](evidence/protective_source_mass_audit_20261106_v1.json)
 matches all121cached five-source and six-source initial/month-end
@@ -69,7 +143,7 @@ is unchanged.** This new diagnosis is separate from the rejected
 financial result below and the historical12-book loss accounting.
 Investment objective unmet;no independent forward validation is claimed.
 
-## Controlled protective sixth source: four paths complete, whole law rejected
+## Historical completed financial J1464: protective sixth source rejected
 
 The [complete outcome](evidence/protective_six_adaptive_hedge_20261106_results_v1.json)
 retains all four original freshUSD10000paths of the same adaptive law.
@@ -111,7 +185,7 @@ mechanism is not evidence that the main account is protected.
 This single controlled historical comparison is not independent
 forward validation or a reason to waive the original gates.
 
-**Current complete financial snapshot J1464/135registered/123completed/
+**Historical completed financial snapshot J1464/135registered/123completed/
 12workflow terminations/zero pending/492funded paths/301combined
 completions/zero qualifiers.** The whole law is rejected;investment
 objective unmet. All prior results and failed trials remain historical.

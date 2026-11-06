@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 135 SSD identities, 123 completed, 12 retained technical-workflow terminations and zero pending; 492 funded paths | Journal1464 complete financial summary: 301 combined completions, zero qualifiers; investment goal remains unmet |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 137 SSD identities, 123 completed, 13 retained technical-workflow terminations and one pending; 492 funded paths | Journal1468 has an independently verified V2 singleton before funding; latest completed financial snapshot remains J1464, 301 combined completions and zero qualifiers |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -45,7 +45,44 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
-### Read-only J1464 diagnosis: membership is not allocation influence
+### Equal-role V2: independent proof completed before capital
+
+The [actual V2 singleton packet](research/workbench/evidence/equal_role_projection_20261106_registration_v2.json)
+registers at1467before real cached-target verification;proof1468retains
+all121origins,119mature source updates and five exact prefixes.
+Independent weight/target differences are5.551115e-17/1.110223e-16;
+both original windows retain all six economic factor families.
+There are119materially different origins versus the cached flat-six rule.
+
+The [explicit V2 method](research/workbench/EQUAL_ROLE_PROJECTION_V2.md)
+repairs only the proof Interface and verifies the unchanged legitimate
+V1 cache. It neither reopens V1 nor regenerates learning or targets.
+Freeze`a1dc90c7`and actual checkpoint763precede V2registration.
+**Current J1468/137registered/123completed/13workflow terminations/
+one pending/492funded paths/301combined completions/zero qualifiers.**
+Four V2funded paths are unrun;proof completion is not investment success.
+
+### Historical equal-role V1: technical stop before funding
+
+The same six experts and cached learner were retained while a fixed
+half-growth/half-response capital projection was frozen and registered.
+Registration1465preceded the new projected targets. The first20synthetic
+checks passed,but the actual integration stopped at proof packaging:
+`target_proof()` accepts two arguments and the V1 driver supplied five.
+Event1466preserves this as a terminal technical-workflow failure.
+No target-proof event,registration packet or funded path exists for V1.
+Its121partial decisions,CSV,logs,code and prototypes remain unchanged.
+
+A separate [V2 proof verifier](research/workbench/src/us_quant/equal_role_projection_proof_v2.py)
+uses the original two-argument Interface and independent cached-target
+checks. Seven synthetic regression checks and four namespace/wiring
+checks precede the separate V2 freeze and verified identity above.
+V1 itself remains terminal and unfunded,not retroactively repaired.
+**Historical J1466/136registered/123completed/13workflow terminations/
+zero pending/492funded paths/301combined completions/zero qualifiers.**
+The investment objective remains unmet.
+
+### Historical read-only J1464 diagnosis: membership is not allocation influence
 
 The [paired allocation-mass audit](research/workbench/evidence/protective_source_mass_audit_20261106_v1.json)
 keeps all121cached five-versus-six origins,including119mature decisions.
@@ -63,7 +100,7 @@ The [frozen diagnostic](research/workbench/PROTECTIVE_SOURCE_MASS_AUDIT_V1.md)
 adds no learner,target,account or financial trial. Current financial
 J1464/301completed/zero qualified and its rejected result below are unchanged.
 
-### Controlled protective sixth source: smaller drawdowns, still rejected
+### Historical completed financial J1464: protective sixth source still rejected
 
 The [complete four-path outcome](research/workbench/evidence/protective_six_adaptive_hedge_20261106_results_v1.json)
 adds one already admitted wealth-feedback source to unchanged AdaHedge.
@@ -79,7 +116,7 @@ not transfer to netted monthly main capital.
 Actual preregistration`28664a6`,454published inputs/28original pins
 and checkpoint751precede capital. Neither source nor control is rerun,
 and no rate,window,floor or financial gate is changed.
-**Current J1464/135registered/123completed/12workflow terminations/
+**Historical J1464/135registered/123completed/12workflow terminations/
 zero pending/492funded paths/301combined completions/zero qualifiers.**
 The whole law is rejected;the investment objective is unmet.
 
