@@ -4,6 +4,65 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Read-only J1478 loss accounting: crash losses remain equity-dominated
+
+The [complete eight-book diagnosis](evidence/equal_role_loss_accounting_20261106_v1.json)
+reuses the [original mark identity and grouping](EQUAL_ROLE_LOSS_ACCOUNTING_V1.md).
+It compares only equal-role V2and cached flat-six,not the closed
+three-law12-book study. All15064original return rows and16new
+input/resolution records remain. Equity marks are the largest negative
+group in all8own drawdown episodes;BILmarks are positive8/8and
+gold marks are negative6/8. Asset groups are not strategy experts.
+
+| Equal-role path | Peak close | Trough close | Equity marks USD | Duration USD | Gold USD | BIL USD | Fees USD | Net NAV change USD |
+| --- | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 10y-base | 2020-02-19 | 2020-03-23 | -4732.26 | 4.91 | -17.06 | 1.14 | 11.69 | -4754.97 |
+| 10y-stress | 2020-02-19 | 2020-03-23 | -4683.31 | 5.07 | -16.77 | 1.11 | 13.98 | -4707.89 |
+| 5y-base | 2022-01-04 | 2022-12-28 | -1771.44 | -0.02 | -187.21 | 108.32 | 45.96 | -1896.32 |
+| 5y-stress | 2022-01-04 | 2023-05-04 | -1954.44 | -23.25 | 44.97 | 156.71 | 206.68 | -1982.69 |
+
+Both ten-yearflat-six books have the same2020-02-19peak and03-23trough.
+Their equity marks are-4375.26/-4275.51and net changes-4401.53/-4307.30USD.
+Equal-role-minus-flat equity-mark fractions are-1.533969/-1.836720
+percentage points,and same-clock net changes are-1.504264/-1.780193points.
+Thus the worse ten-yearworst interval is not a switch to another
+peak/trough clock;recorded fee fractions are slightly lower.
+This is a signed accounting comparison,not a causal expert counterfactual.
+
+Five-yearflat-six peaks2021-12-27versus equal-role2022-01-04.
+Both base troughs end2022-12-28,but stress troughs differ:
+flat-six2023-03-13versus equal-role2023-05-04. Evaluate both books
+at both own clocks for every path:8own slots,16common-clock views,
+8paired comparisons. All4five-yearcommon-clock slots have better
+equal-role net changes and equity-mark fractions;all4ten-yearslots
+are worse. Repeated identical clocks are not independent observations,
+and different start NAVs are not equal-capital counterfactuals.
+
+Equal-role own-episode fees are0.245927%,0.297004%,2.423805%and
+10.424095%of recorded net loss. These ratios are not drawdown reductions
+available by deleting fees. Five-yearstress fees are lower in dollars
+than flat-six,but their loss fraction is higher because net loss is
+smaller. No new fee-free account,causal alpha or gate change follows.
+
+All40primitive-money/canonical-scalar prefixes,including signed zero,
+are exact. One retained NumPy auxiliary value differs in one prefix;
+the failed old all-column V1contract is not rewritten or waived.
+Cached drawdowns agree within1.67e-15,and own-episode money identity
+errors stay belowUSD4.55e-12,within original1e-10/USD1e-6limits.
+
+First13synthetic checks,11exact prototypes,freeze`6fe1b191`and actual
+checkpoint768(saved2026-11-06T19:33:29.738387+00:00,covered_seq192822)
+precede new labels. The original native receipt is prospectively linked;
+actual start/process receipts contain checkpoint fields. PID1686runs
+once for21.885007625seconds,peakRSS444715008bytes.
+Original review_market RF/calendar/price delivery is unchanged.
+
+**No new learner,target,account,BT,old diagnosis replay or financial trial.
+Current financial J1478/137registered/124completed/13workflow terminations/
+zero pending/496funded paths/302combined completions/zero qualifiers
+is unchanged.** This new readonly diagnosis is separate from the
+financial result below and does not establish independent forward profit.
+
 ## Equal-role V2: four paths complete, fixed role rule rejected
 
 The [complete financial outcome](evidence/equal_role_projection_20261106_results_v2.json)

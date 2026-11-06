@@ -45,6 +45,25 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
+### Read-only J1478 diagnosis: shared crash clock, larger equity losses
+
+The [eight-book marked accounting](research/workbench/evidence/equal_role_loss_accounting_20261106_v1.json)
+keeps both equal-role V2and flat-six books on every original path.
+Both ten-yearrules peak2020-02-19andtrough2020-03-23:
+equal-role equity marks loseUSD4732.26/4683.31versus
+flat-sixUSD4375.26/4275.51. At these identical clocks,the equity-mark
+fractions are worse by1.533969/1.836720percentage points despite
+slightly lower recorded fee fractions.
+
+Five-yearpeak/trough dates differ,but all four own-clock comparisons
+show better equal-role net changes and equity-mark fractions.
+The [reused accounting method](research/workbench/EQUAL_ROLE_LOSS_ACCOUNTING_V1.md)
+retains all15064return rows,8own episodes,16common-clock views and
+40exact primitive/scalar prefixes. One NumPy auxiliary value differs
+in one prefix and stays disclosed. This is accounting,not causal
+expert/fee attribution or a new financial trial.
+Current financial J1478/302completed/zero qualified remains unchanged.
+
 ### Equal-role V2: cheaper execution, all four paths rejected
 
 The [complete V2 outcome](research/workbench/evidence/equal_role_projection_20261106_results_v2.json)
