@@ -1,0 +1,53 @@
+{
+  "schema_version": 2,
+  "study_id": "ssd_expert_active_forecast_pair_20261106_v2",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "actual_native_event_seq": 175938,
+  "prior_journal_sequence": 1251,
+  "prior_journal_head_sha256": "6f6b9b39ce7ff56564ea10d8e463fe9b95df7db96abdd0f8be8297cd440fd025",
+  "prior_completed_configurations": 283,
+  "source_economic_policy": {
+    "path": "config/expert-active-forecast-pair-v1.json",
+    "sha256": "c0b32e3f49e21f648f74096d4b878d8045bd3fd4b1f968e121e18d5f84e074a1"
+  },
+  "source_implementation_freeze": {
+    "path": "reports/ssd-continuous-research-v1/expert-active-forecast-pair-20261106-v1/financial-implementation-freeze-v1.json",
+    "sha256": "6ff55d6a18411ef49b06d352c12f4bc0d4d806462691971c1910e250b1d6e041"
+  },
+  "source_prepared_targets": {
+    "path": "reports/ssd-continuous-research-v1/expert-active-forecast-pair-20261106-v1/prepared-target-bundle-v1.json",
+    "sha256": "9ebd1b9d7c5a4b03d433e917bcaa253559769ac1c75c853bb1ea38affb091b4b"
+  },
+  "source_terminal_closure": {
+    "path": "reports/ssd-continuous-research-v1/expert-active-forecast-pair-20261106-v1/terminal-closure-v1.json",
+    "sha256": "73d87fc6d26517a800a1682ff55aff0d361ef0bb07e9b80ac6a6f1b9a7e23ef6"
+  },
+  "source_public_failure": {
+    "path": "evidence/expert_active_forecast_pair_20261106_v1_failure.json",
+    "sha256": "c53c076ec8348a235c1457ea920a71655b39385addeba21de9ba9d91cda062e8"
+  },
+  "cached_original_eight_results": {
+    "path": "evidence/eight_expert_inclusion_20261103_results_v1.json",
+    "sha256": "d3bce69f0e921ae6265218bbde6beeed58f8435caa20eaffb11ba9ba74808e7a"
+  },
+  "adapter_role": "canonical_no_source_signal_recompute_attestation_over_immutable_V1_targets",
+  "economic_law_or_parameters_changed": false,
+  "source_V1_terminal_failures_preserved": true,
+  "source_V1_target_derivation_precedes_V2_registration": true,
+  "new_target_derivations": 0,
+  "new_Ridge_fits": 0,
+  "new_source_requests": 0,
+  "new_source_RF_views": 0,
+  "new_shadow_account_runs": 0,
+  "candidate_count_in_this_study": 2,
+  "candidates": [
+    {"id": "expert_pool_eight_unconditional_forecast_pair_v2", "weighting": "same_V1_unconditional_saved_targets_explicit_proof_adapter"},
+    {"id": "expert_pool_eight_contextual_forecast_pair_v2", "weighting": "same_V1_contextual_saved_targets_explicit_proof_adapter"}
+  ],
+  "study_size_is_a_total_research_quota": false,
+  "global_pool_changed": false,
+  "independent_economic_research_questions_added_by_adapter": 0,
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "order_authority": false
+}

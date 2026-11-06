@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 114 SSD identities, 105 completed/rejected, nine retained technical failures and zero pending; 420 funded paths | Journal1246 current summary: 283 combined completions, zero qualifiers; investment goal remains unmet |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 118 SSD identities, 105 completed/rejected, 11 retained technical failures and two pending; 420 funded paths | Journal1255 current summary: 283 combined completions, zero qualifiers; investment goal remains unmet |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -44,6 +44,33 @@ November authorization.
 The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
+
+### Saved-forecast pair V2: explicit proof Adapter, no new funded outcome yet
+
+The [separate allocation law](research/workbench/EXPERT_ACTIVE_FORECAST_PAIR_V1.md)
+retains both saved forecasters, the original eight experts and all28risk pairs.
+It copies original pair ERC weights and ranks the worst saved active-rate
+forecast after its own nominal switch proxy over each original RF-risk window.
+Both cached equal-eight and rolling controls remain, without replay.
+The benchmark translation is not new pair-specific alpha; source assessment
+forecasts are not promises of main-account returns or costs.
+
+V1 registered both identities before deriving targets, but then
+[failed the real publication-proof contract](research/workbench/evidence/expert_active_forecast_pair_20261106_v1_failure.json):
+the proof omitted`original_source_signal_recomputed`. Both terminal failures
+remain at1250/1251; V1 is never patched or rerun and no V1 account started.
+The [metadata-only V2 Adapter](research/workbench/EXPERT_ACTIVE_FORECAST_PAIR_V2.md)
+has25checks exercising the actual packet contract. It preserves V1's target
+bytes and earlier derivation times, adding explicit no-source-recompute proof
+attestations only after new registrations1252/1253. Proof events1254/1255
+do not pretend that V1's already-known targets were newly derived under V2.
+
+Both [unconditional](research/workbench/evidence/expert_active_forecast_pair_20261106_0_registration_v2.json)
+and [contextual](research/workbench/evidence/expert_active_forecast_pair_20261106_1_registration_v2.json)
+complete packets and all scientific inputs must be checked at the actual remote
+commit before any funds. No ridge fit, target, source shadow, old account,
+benchmark, RF view or acceptance gate is rerun or changed.
+**J1255:two pending,283completions,zero qualifiers; goal unmet.**
 
 ### Source active-return forecasts: small descriptive improvement, no new portfolio
 

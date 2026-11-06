@@ -4,6 +4,63 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Saved-forecast pair V2: preserved preregistration J1255
+
+The [new allocation law](EXPERT_ACTIVE_FORECAST_PAIR_V1.md) tests both immutable
+unconditional/contextual active-rate predictions rather than selecting the
+diagnostic winner. It keeps all original eight complete experts and all28pairs,
+copies original trainingERCweights, and ranks the minimum saved-SPY/QQQ
+forecast after its own original nominal switch proxy over each original84/42
+RF-excess pair risk estimate. Those past risk windows are not independent
+validation of the expanding predictor. Negative forecasts still rank; there
+is no tuned penalty, clipping, cash cutoff, new covariance fit or variance floor.
+The score is a heuristic source assessment, not main-account expected return.
+
+V1's first synthetic attempt retains17passes/13fixture errors from dropping
+toy coordinates and forcing the wrong Adapter. The next retains29passes/
+one fixture failure from shared mutable lists. Only synthetic coordinate
+mapping, original dense/monthly Adapter types and independent deep-copied
+tapes change; the same30tests and Ruff then pass. Freeze`6ff55d6a`precedes
+actual registrations1247/1248 and the once-only real target derivation.
+All121dates,242input/result records,236512NET/RFbinary64values,all28pairs
+and five exact prefixes remain. Independent target/weight/score/risk gaps are
+2.7755575615628914e-17/2.220446049250313e-16/5.684341886080802e-14/
+6.938893903907228e-18. Both horizons retain genuine factor participation.
+
+The real packet entry then raises the missing canonical proof field
+`original_source_signal_recomputed`; mocked earlier checks had missed the
+contract. [Both V1 identities remain terminal technical failures](evidence/expert_active_forecast_pair_20261106_v1_failure.json)
+at1250/1251. No packet, funding fence or account preceded that failure.
+V1's code, frozen laws, targets, proofs, partial chronology and failed fixtures
+are retained without patching or rerunning the terminal version.
+
+The [separate V2 proof Adapter](EXPERT_ACTIVE_FORECAST_PAIR_V2.md) makes no
+new allocation. After one preserved unfrozen101-character lint line is wrapped,
+all25real-contract/no-replay checks pass before freeze`cfb23c57`, which pins
+162dependencies,1317source references,eight source/admission clocks and
+six explicit implementation/test inputs.
+
+Actual V2 registrations1252/1253 occur at **2026-11-06T01:47:37.296678Z**
+and **01:47:37.995594Z**. New attestations occur at01:47:39.159568Z/
+01:47:39.555742Z, followed by proof events1254/1255.
+The original target derivation checks at01:34:38.452399Z/
+01:34:38.549209Z explicitly **predate V2 registration**. Exact target hashes
+`7f7fc01e`/`c2ddac65` are reused, not recomputed. The new proof adds the
+canonical false no-source-signal assertion from verified cached-source evidence,
+while preserving all old numeric proof results and original timestamps.
+This technical Adapter adds no independent economic hypothesis or new RF view.
+Registration/attestation takes25.85999487497611seconds, peakRSS414597120bytes.
+
+The [unconditional packet](evidence/expert_active_forecast_pair_20261106_0_registration_v2.json)
+and [contextual packet](evidence/expert_active_forecast_pair_20261106_1_registration_v2.json)
+must both be actually published and fully verified before the first fresh
+main book. All eight original10y/5y/base-stress paths are **planned, not complete**.
+Full dates, freshUSD10000,RF,initialpeak,costs,delays,cashfunding1x,holding
+feedback,independentBT and every financial gate remain. Cached controls,
+source models, forecasts, shadows and benchmarks are not replayed.
+**At J1255:118registered,105completed,11technical,two pending,
+420funded paths,283combined completions,zero qualifiers; goal unmet.**
+
 ## Active-return prediction: modest descriptive skill, no new allocation
 
 The [complete read-only result](evidence/expert_active_forecast_diagnosis_20261106_v1.json)
