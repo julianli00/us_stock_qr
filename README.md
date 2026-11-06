@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 138 SSD identities, 124 completed, 13 retained technical-workflow terminations and one pending; 496 funded paths | Journal1480 confidence-Prod registration/proof complete, before funding: 302 combined completions, zero qualifiers; investment goal remains unmet |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 138 SSD identities, 125 completed, 13 retained technical-workflow terminations and zero pending; 500 funded paths | Journal1490 complete financial summary: 303 combined completions, zero qualifiers; investment goal remains unmet |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -45,7 +45,22 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
-### Confidence-rated Prod preregistration J1480: no funded outcome yet
+### Confidence-rated Prod: all four paths complete, rule rejected
+
+The [complete outcome](research/workbench/evidence/confidence_rated_prod_20261106_results_v1.json)
+retains the same frozen rule on all original paths. Net CAGRs are
+19.389079%, 18.179167%, 26.063767% and 23.360603%; drawdowns are
+29.290744%, 28.992385%, 21.514464% and 21.452188%.
+Only five-year base passes Sharpe, and every drawdown gate fails.
+
+Compared with cached flat-six AdaHedge, every CAGR and Sharpe rises and
+every drawdown falls. However, tickets rise on all paths; fees fall only
+on ten-year stress. Confidence-rated regret remains a source-game concept,
+not a main-capital risk guarantee or isolated causal explanation.
+**J1490 / 303 combined completions / zero qualifiers.**
+The investment objective remains unmet.
+
+### Historical confidence-rated Prod preregistration snapshot J1480
 
 The [new singleton packet](research/workbench/evidence/confidence_rated_prod_20261106_registration_v1.json)
 registers before new confidence states, learning and targets. The
@@ -60,7 +75,8 @@ second-order rates. All 121 decisions, 119 complete months, 714 sealed loss
 values and five prefixes remain. Every target differs materially from cached
 flat-six; neither old control is rerun. Four original funded paths are unrun.
 **J1480 / 302 completed / one pending / zero qualifiers.**
-The latest complete financial outcome remains rejected equal-role V2 below.
+At that before-funding snapshot, the latest complete financial outcome
+was rejected equal-role V2 below.
 
 ### Preserved read-only J1478 clock review: daily records are not daily policy changes
 

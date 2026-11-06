@@ -4,7 +4,73 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Confidence-rated Prod preregistration snapshot J1480
+## Confidence-rated Prod: four original paths complete, rule rejected
+
+The [complete outcome](evidence/confidence_rated_prod_20261106_results_v1.json)
+retains one frozen confidence-rated six-expert policy on all original
+fresh-USD10000 paths. Actual preregistration
+`0fb674f5abfc985cb74a0e377084cb8180ddcc50`, 482 published inputs,
+28 original import pins, the full environment and six source clocks
+were verified before capital. Actual checkpoint 777 saved at
+2026-11-06T20:52:17.176259+00:00 with covered_seq 194436 was linked
+to original native save receipt 194439 before launch. Actual start/process
+receipts contain all three checkpoint fields. Funding fence 1481 at
+20:53:48.628267Z precedes starts 1482/1484/1486/1488; review 1490
+rejects the whole law. PID 13425 finished once in 61.052779667 seconds,
+peak RSS 500,109,312 bytes.
+
+| Rule | Original path | Net CAGR | RF Sharpe | Drawdown | Annual two-sided turnover | Model tickets | Recorded fees USD |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Confidence Prod | 10y-base | 19.389079% | 0.910746 | 29.290744% | 3.400074x | 641 | 941.33 |
+| Confidence Prod | 10y-stress | 18.179167% | 0.855521 | 28.992385% | 3.398199x | 641 | 1802.32 |
+| Confidence Prod | 5y-base | 26.063767% | 1.074899 | 21.514464% | 4.154271x | 226 | 348.74 |
+| Confidence Prod | 5y-stress | 23.360603% | 0.965117 | 21.452188% | 4.149276x | 226 | 693.51 |
+
+**Rejected.** Every CAGR and matched-cost SPY gate passes, including
+both extra stress-versus-base-SPY gates. Only five-year base passes
+Sharpe; no 15% drawdown gate passes. QQQ outperformance passes only
+the five-year paths. Neither two CAGRs above 20% nor one Sharpe above 1
+can replace the same-rule four-path qualification requirement.
+
+Against cached flat-six AdaHedge, CAGR rises by
+0.346371/0.380212/0.395302/0.489414 percentage points and Sharpe rises
+on every path. Drawdown falls by 1.627686/1.486212/0.487791/0.644577
+points. Annual turnover falls on both ten-year paths, but rises slightly
+on both five-year paths. Tickets rise by 14/12/1/10. Fees rise by
+USD7.38/2.32/17.04 on ten-year base/five-year base/five-year stress;
+only ten-year stress falls, by USD12.77. Lower traded fractions do
+not imply fewer tickets or uniformly lower dollar fees.
+
+Against the fixed equal-role V2 context, all CAGR and Sharpe values
+rise. Ten-year drawdown falls by 3.131949/3.266405 points, but
+five-year drawdown rises by 4.659745/3.466611 points. All turnover
+and fee totals are higher. Five-year stress has three fewer tickets
+despite higher fees. These are whole-policy comparisons: both the
+learning kernel and participation convention differ. They do not
+isolate a causal confidence effect, prove risk independence or transfer
+the expert's own wealth floor to main capital.
+
+The specialist sleeps at 10 of 121 decision origins without losing
+technical admission. Across those 121 origins its confidence averages
+0.2569150711 and its capital fraction averages 0.02040036147, with maximum
+0.08795156414. This is not a like-for-like comparison with the earlier
+119-mature-origin mass statistic, nor a financial acceptance measure.
+No rate, confidence mapping, budget floor, month clock, holding band or
+numerical criterion is changed after the outcome.
+
+Minimum actual cash is USD181.865480 and maximum gross exposure
+0.985238356859. The largest independent-BT equity gap is
+USD8.003553375601768e-11. Full 2512/1254-return calendars, original RF,
+initial USD10000 drawdown peak, delayed opens, cash funding and actual
+BIL remain. Source, shadow, cached control and benchmark accounts are
+not rerun. Broker orders and new source requests are zero.
+
+**Current J1490 / 138 registered / 125 completed / 13 workflow terminations /
+zero pending / 500 funded paths / 303 combined completions / zero qualifiers.**
+Confidence-game regret did not establish main-capital protection.
+Investment objective unmet; no independent forward validation is claimed.
+
+## Historical confidence-rated Prod preregistration snapshot J1480
 
 The [actual singleton packet](evidence/confidence_rated_prod_20261106_registration_v1.json)
 registers one new conditional excess-loss policy at 1479, before new confidence
@@ -44,7 +110,8 @@ No source learner, shadow, account, benchmark or old control is replayed.
 one pending / 496 funded paths / 302 combined completions / zero qualifiers.**
 Four new main paths are unrun. Remote preregistration, exact published inputs,
 environment and an actual saved prefunding checkpoint still must precede
-capital. The latest complete financial result remains rejected equal-role V2.
+capital. At that snapshot, the latest complete financial result was
+rejected equal-role V2.
 Source admission, monthly execution, costs, delays, RF and every joint gate
 remain unchanged; exposed-history learning is not independent forward proof.
 
