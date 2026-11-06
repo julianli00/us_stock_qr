@@ -4,7 +4,43 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Fixed-quintet anytime Hedge: four paths complete, whole law rejected
+## Cached Hedge risk units: preregistered targets, no capital outcome
+
+The [singleton packet](evidence/quintet_hedge_risk_units_20261106_registration_v1.json)
+registers at1429before any new capital weights or underlying targets.
+The [frozen method](QUINTET_HEDGE_RISK_UNITS_V1.md) keeps the sealed raw-Hedge
+beliefs bit-exact and divides them by current source NET-RF standard
+deviations before unit normalization. No old learner,source generator,
+shadow or matched raw-Hedge main account is rerun.
+
+The first32synthetic checks,9exact versioned prototypes and actual
+checkpoint730precede construction. Bare freeze`fded9f2f`and actual
+registered body`ddafc04a`are distinct. Target proof1430retains all
+121decisions,242binary64input-resolution records and73910source NET
+values. All cached beliefs are unchanged. Both original horizons
+retain all six factor families.
+
+114mature decisions use complete126row covariance/ddof1 and materially
+different targets from cached raw Hedge;the initial seven explicitly
+pass through unscored beliefs. Independent covariance,std,capital-weight,
+marginal-contribution,target and switch-proxy gaps are respectively
+4.336809e-19,6.938894e-18,1.665335e-16,1.626303e-19,1.110223e-16
+andUSD1.776357e-15. All five exact prefix cuts pass.
+
+This is diagonal risk-unit conversion,not full-covariance ERC,a target
+volatility or a drawdown guarantee. Source covariance uses all126known
+observations;it is not held-out risk validation. Normalized source-loss
+regret does not transfer to resized capital. The original costs,delays,
+freshUSD10000,RF,initial peak and every financial gate remain unchanged.
+
+**Current preregistration J1430/133registered/120completed/12workflow
+terminations/one pending/480funded paths/298combined completions/
+zero qualifiers.** Four fresh original paths remain unrun;actual remote
+publication,environment/import verification and an explicit prefunding
+checkpoint must precede them. The latest financial outcome is still the
+rejected raw-Hedge J1428below;the investment objective remains unmet.
+
+## Historical fixed-quintet anytime Hedge: four paths complete, whole law rejected
 
 The [complete financial outcome](evidence/quintet_anytime_hedge_20261106_results_v1.json)
 retains all original paths of the frozen continuous learner.
@@ -55,7 +91,7 @@ diagnostic does not guarantee net main growth or drawdown,as the
 funded failure demonstrates. No new learning rate,loss floor,source,
 pool,budget cap or financial criterion is chosen after these outcomes.
 
-**Current complete financial snapshot J1428/132registered/120completed/
+**Historical complete financial snapshot J1428/132registered/120completed/
 12workflow terminations/zero pending/480funded paths/298combined
 completions/zero qualifiers.** The whole law is rejected and the
 investment objective remains unmet. The earlier return-cost bridge

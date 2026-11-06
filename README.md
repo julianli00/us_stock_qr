@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 132 SSD identities, 120 completed, 12 retained technical-workflow terminations and zero pending; 480 funded paths | Journal1428 complete financial summary: 298 combined completions, zero qualifiers; investment goal remains unmet |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 133 SSD identities, 120 completed, 12 retained technical-workflow terminations and one pending; 480 funded paths | Journal1430 has one registered risk-sizing law before funds; 298 combined completions and zero qualifiers remain unchanged |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -45,7 +45,27 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
-### Fixed-quintet anytime Hedge: more growth, larger drawdowns, rejected
+### Cached Hedge risk units: registered before capital
+
+The [singleton packet](research/workbench/evidence/quintet_hedge_risk_units_20261106_registration_v1.json)
+keeps the sealed121decision Hedge belief stream and the same five complete
+policies. One [sizing law](research/workbench/QUINTET_HEDGE_RISK_UNITS_V1.md)
+converts current beliefs to capital through126session native NET-RF
+standard deviations,without rerunning the learner or any source/control book.
+This is diagonal volatility-unit conversion,not full-covariance risk parity,
+a volatility target or a drawdown guarantee.
+
+Actual registration1429precedes new weights/targets;proof1430retains
+242binary64input-resolution records and five exact prefix checks.
+114decisions have scored sizing and materially different cached-control
+targets;seven explicitly retain unscored beliefs. The first32synthetic
+checks and actual checkpoint730precede construction.
+**Current J1430/133registered/120completed/12workflow terminations/
+one pending/480funded paths/298combined completions/zero qualifiers.**
+No financial outcome exists yet. The latest completed financial result
+remains the rejected raw-Hedge law below,not a result of this sizing rule.
+
+### Historical fixed-quintet anytime Hedge: more growth, larger drawdowns, rejected
 
 The [complete four-path outcome](research/workbench/evidence/quintet_anytime_hedge_20261106_results_v1.json)
 keeps the existing five complete policies and frozen decreasing-Hedge law.
@@ -60,7 +80,7 @@ Five-yearbase CAGR22.801291%andSharpe1.041938still come with
 Versus both cached controls,growth improves and all fees/tickets fall,
 but drawdowns worsen. Normalized source-loss regret is not a main
 wealth,Sharpe or drawdown guarantee.
-**Current J1428/132registered/120completed/12workflow terminations/
+**Historical J1428/132registered/120completed/12workflow terminations/
 zero pending/480funded paths/298combined completions/zero qualifiers.**
 The complete law is rejected;no source,rate,pool or financial gate is retuned.
 
