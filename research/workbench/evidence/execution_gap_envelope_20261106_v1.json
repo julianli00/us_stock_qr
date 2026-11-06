@@ -1,0 +1,140 @@
+{
+  "actual_authoritative_counts": {
+    "current_journal_event_count": 1490,
+    "current_journal_head_sha256": "ed776fb6704f4992abc671865ad2bfe3983ee41baca202b510c1a0d7ce9d31fd",
+    "new_account_paths": 500,
+    "new_completed_strategy_evaluations": 125,
+    "new_historical_point_gate_passes": 0,
+    "new_pending_candidates": 0,
+    "new_registered_candidates": 138,
+    "new_reviews": 125,
+    "new_technical_failures": 13,
+    "original_completed_configurations": 178,
+    "original_registered_versions": 96,
+    "original_reviews": 94,
+    "total_legacy_plus_ssd_completed_configurations": 303
+  },
+  "actual_input_resolution_record_count": 728,
+  "completed_at": "2026-11-06T21:59:39.288620+00:00",
+  "finite_reference_is_future_or_full_month_guarantee": false,
+  "four_original_contexts": {
+    "10y-base": {
+      "actual_source_band_or_request_policy_reexecuted": false,
+      "conditional_reference_status_counts": {
+        "finite_interval_certified": 75,
+        "no_finite_sufficient_interval": 3,
+        "outside_at_current_mark": 11,
+        "unavoidable_prefill_reference_breach": 32,
+        "uncertified_conservative_cost_bound": 0
+      },
+      "feasible_display_fraction_min_mean_max": [
+        0.025198017560134713,
+        0.8622949521558636,
+        1.0
+      ],
+      "finite_support_is_future_or_full_month_guarantee": false,
+      "fully_known_historical_windows_examined": 186894,
+      "maximum_independent_scalar_money_error_USD": 2.1827872842550278e-11,
+      "saved_main_decisions": 121
+    },
+    "10y-stress": {
+      "actual_source_band_or_request_policy_reexecuted": false,
+      "conditional_reference_status_counts": {
+        "finite_interval_certified": 72,
+        "no_finite_sufficient_interval": 1,
+        "outside_at_current_mark": 15,
+        "unavoidable_prefill_reference_breach": 33,
+        "uncertified_conservative_cost_bound": 0
+      },
+      "feasible_display_fraction_min_mean_max": [
+        0.26198614734762443,
+        0.8949342317738544,
+        1.0
+      ],
+      "finite_support_is_future_or_full_month_guarantee": false,
+      "fully_known_historical_windows_examined": 186894,
+      "maximum_independent_scalar_money_error_USD": 1.4551915228366852e-11,
+      "saved_main_decisions": 121
+    },
+    "5y-base": {
+      "actual_source_band_or_request_policy_reexecuted": false,
+      "conditional_reference_status_counts": {
+        "finite_interval_certified": 26,
+        "no_finite_sufficient_interval": 3,
+        "outside_at_current_mark": 10,
+        "unavoidable_prefill_reference_breach": 22,
+        "uncertified_conservative_cost_bound": 0
+      },
+      "feasible_display_fraction_min_mean_max": [
+        0.2955018328523456,
+        0.7142387278309678,
+        1.0
+      ],
+      "finite_support_is_future_or_full_month_guarantee": false,
+      "fully_known_historical_windows_examined": 132568,
+      "maximum_independent_scalar_money_error_USD": 1.4551915228366852e-11,
+      "saved_main_decisions": 61
+    },
+    "5y-stress": {
+      "actual_source_band_or_request_policy_reexecuted": false,
+      "conditional_reference_status_counts": {
+        "finite_interval_certified": 24,
+        "no_finite_sufficient_interval": 0,
+        "outside_at_current_mark": 13,
+        "unavoidable_prefill_reference_breach": 24,
+        "uncertified_conservative_cost_bound": 0
+      },
+      "feasible_display_fraction_min_mean_max": [
+        0.29856604737843123,
+        0.7423679019707,
+        1.0
+      ],
+      "finite_support_is_future_or_full_month_guarantee": false,
+      "fully_known_historical_windows_examined": 132568,
+      "maximum_independent_scalar_money_error_USD": 1.0913936421275139e-11,
+      "saved_main_decisions": 61
+    }
+  },
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "known_price_prefixes": [
+    {
+      "as_of": "2016-10-05",
+      "case_index": 0,
+      "exact_known_price_prefix": true
+    },
+    {
+      "as_of": "2017-09-29",
+      "case_index": 12,
+      "exact_known_price_prefix": true
+    },
+    {
+      "as_of": "2026-09-30",
+      "case_index": 120,
+      "exact_known_price_prefix": true
+    },
+    {
+      "as_of": "2021-10-05",
+      "case_index": 242,
+      "exact_known_price_prefix": true
+    },
+    {
+      "as_of": "2026-09-30",
+      "case_index": 363,
+      "exact_known_price_prefix": true
+    }
+  ],
+  "new_financial_trials": 0,
+  "new_target_vectors_or_accounts": 0,
+  "order_authority": false,
+  "prior_headroom_V1_repaired_retried_or_executed": false,
+  "raw_prices_holdings_targets_or_dated_case_rows_exported": false,
+  "saved_main_contexts": 364,
+  "schema_version": 1,
+  "source_complete_financial_result": {
+    "path": "evidence/confidence_rated_prod_20261106_results_v1.json",
+    "sha256": "340b78fcfe2a4940e4898b66ca653b15572f3d859b957b3a8822a5f9b47446e9"
+  },
+  "source_learner_or_target_or_account_or_prior_diagnosis_replayed": false,
+  "study_id": "ssd_execution_gap_envelope_20261106_v1"
+}

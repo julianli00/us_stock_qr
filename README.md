@@ -45,7 +45,23 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
-### Read-only J1490 diagnosis: conditional regret is a different comparator
+### Read-only J1490 execution-gap reference: waiting holdings matter
+
+The [finite execution-gap study](research/workbench/evidence/execution_gap_envelope_20261106_v1.json)
+inspects all 364 saved main decision states, without replaying accounts.
+At 111 states, at least one fully known historical path breaches the reference
+at the waiting close, before any newly issued two-session-delayed fill could
+change holdings. Another 49 states are already outside the reference.
+Only 197 states have a sufficient finite interval; seven fail that interval test.
+
+The [new reference Module](research/workbench/EXECUTION_GAP_ENVELOPE_V1.md)
+uses scenario-opening wealth and conservative costs, actual BIL marks and exact
+represented interval witnesses. It does not repair the terminal old headroom
+controller, issue targets, implement a holding-band policy or cover future
+market support. Its scope ends at the first delivered close, not month end.
+**No new financial trial: J1490 / 303 completions / zero qualifiers.**
+
+### Preserved read-only J1490 diagnosis: conditional regret is a different comparator
 
 The [saved confidence-scope diagnosis](research/workbench/evidence/confidence_regret_scope_20261106_v1.json)
 keeps the same played source-game sequence. The protection specialist's plain

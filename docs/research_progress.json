@@ -134,219 +134,103 @@
       "order_authority": false
     },
     "latest_read_only_diagnosis": {
-      "study_id": "ssd_confidence_regret_scope_20261106_v1",
-      "status": "complete_sanitized_readonly_confidence_regret_scope",
-      "path": "research/workbench/evidence/confidence_regret_scope_20261106_v1.json",
-      "sha256": "5c3a4bc2e3c2aff40c032b4493786164bd0a3da8a5716bef5786270cf920712a",
+      "study_id": "ssd_execution_gap_envelope_20261106_v1",
+      "status": "complete_sanitized_readonly_execution_gap_reference",
+      "path": "research/workbench/evidence/execution_gap_envelope_20261106_v1.json",
+      "sha256": "da7dfb9808ca28ba413722624dd28eae1b6bd17e4ef492868e02278abc04d5ec",
       "journal_snapshot": 1490,
-      "source_decisions": 121,
-      "mature_source_months": 119,
-      "complete_main_month_cases": 356,
-      "original_main_return_rows": 7532,
-      "retained_boundary_return_rows": 84,
-      "input_resolution_records": 962,
-      "exact_retained_prefixes": 5,
+      "saved_main_contexts": 364,
+      "input_resolution_records": 728,
+      "known_price_prefixes": 5,
       "actual_summary": {
-        "source_game_summary": {
-          "comparator_identity_exact": true,
-          "complete_source_months": 119,
-          "confidence_sum_is_independent_sample_size": false,
-          "new_learner_state_or_allocation_generated": false,
-          "source_decisions": 121,
-          "source_game_units_are_main_returns_or_USD": false,
-          "sources": {
-            "benchmark_opportunity_joint_tail_v1": {
-              "complete_source_months": 119,
-              "confidence_weighted_source_game_regret": -12.346862318330487,
-              "exact_confidence_groups": {
-                "full": 119,
-                "partial": 0,
-                "zero": 0
-              },
-              "maximum_final_rounding_difference": 4.54e-159,
-              "omitted_participation_excess": 0.0,
-              "recorded_final_confidence_regret": -12.346862318330487,
-              "sum_confidence_ratings": 119.0,
-              "unweighted_excess_negative_months": 74,
-              "unweighted_excess_positive_months": 45,
-              "unweighted_source_game_regret": -12.346862318330487
-            },
-            "conditional_covariance_hedge_expert_v1": {
-              "complete_source_months": 119,
-              "confidence_weighted_source_game_regret": -3.7756183714026315,
-              "exact_confidence_groups": {
-                "full": 119,
-                "partial": 0,
-                "zero": 0
-              },
-              "maximum_final_rounding_difference": 2.54e-159,
-              "omitted_participation_excess": 0.0,
-              "recorded_final_confidence_regret": -3.7756183714026315,
-              "sum_confidence_ratings": 119.0,
-              "unweighted_excess_negative_months": 61,
-              "unweighted_excess_positive_months": 58,
-              "unweighted_source_game_regret": -3.7756183714026315
-            },
-            "equity_first_month_end_commitment_v1": {
-              "complete_source_months": 119,
-              "confidence_weighted_source_game_regret": 4.861425616975369,
-              "exact_confidence_groups": {
-                "full": 119,
-                "partial": 0,
-                "zero": 0
-              },
-              "maximum_final_rounding_difference": 2.54e-159,
-              "omitted_participation_excess": 0.0,
-              "recorded_final_confidence_regret": 4.861425616975369,
-              "sum_confidence_ratings": 119.0,
-              "unweighted_excess_negative_months": 49,
-              "unweighted_excess_positive_months": 70,
-              "unweighted_source_game_regret": 4.861425616975369
-            },
-            "four_factor_defense_diversified": {
-              "complete_source_months": 119,
-              "confidence_weighted_source_game_regret": -19.190804611867875,
-              "exact_confidence_groups": {
-                "full": 119,
-                "partial": 0,
-                "zero": 0
-              },
-              "maximum_final_rounding_difference": 5.46e-159,
-              "omitted_participation_excess": 0.0,
-              "recorded_final_confidence_regret": -19.190804611867875,
-              "sum_confidence_ratings": 119.0,
-              "unweighted_excess_negative_months": 73,
-              "unweighted_excess_positive_months": 46,
-              "unweighted_source_game_regret": -19.190804611867875
-            },
-            "semiconductor_option_dollar_profit_share_confirmation": {
-              "complete_source_months": 119,
-              "confidence_weighted_source_game_regret": -1.6314988650540918,
-              "exact_confidence_groups": {
-                "full": 119,
-                "partial": 0,
-                "zero": 0
-              },
-              "maximum_final_rounding_difference": 5.4e-160,
-              "omitted_participation_excess": 0.0,
-              "recorded_final_confidence_regret": -1.6314988650540918,
-              "sum_confidence_ratings": 119.0,
-              "unweighted_excess_negative_months": 61,
-              "unweighted_excess_positive_months": 58,
-              "unweighted_source_game_regret": -1.6314988650540918
-            },
-            "semiconductor_ratchet_protection": {
-              "complete_source_months": 119,
-              "confidence_weighted_source_game_regret": -2.9175205668563935,
-              "exact_confidence_groups": {
-                "full": 0,
-                "partial": 110,
-                "zero": 9
-              },
-              "maximum_final_rounding_difference": 4.58708781732699e-159,
-              "omitted_participation_excess": -11.382945074393463,
-              "recorded_final_confidence_regret": -2.9175205668563935,
-              "sum_confidence_ratings": 30.65085611138482,
-              "unweighted_excess_negative_months": 72,
-              "unweighted_excess_positive_months": 47,
-              "unweighted_source_game_regret": -14.300465641249858
-            }
-          }
-        },
-        "four_original_main_books": {
+        "four_original_contexts": {
           "10y-base": {
-            "all_original_return_rows_retained": true,
-            "boundary_returns_and_initial_costs_remain_in_original_verdict": true,
-            "complete_main_months": 119,
-            "complete_main_return_rows": 2491,
-            "confidence_is_calibrated_loss_probability": false,
-            "main_loss_months": 35,
-            "main_loss_months_by_later_confidence_change": {
-              "decreased": 6,
-              "increased": 29,
-              "same": 0
+            "actual_source_band_or_request_policy_reexecuted": false,
+            "conditional_reference_status_counts": {
+              "finite_interval_certified": 75,
+              "no_finite_sufficient_interval": 3,
+              "outside_at_current_mark": 11,
+              "unavoidable_prefill_reference_breach": 32,
+              "uncertified_conservative_cost_bound": 0
             },
-            "main_loss_months_by_origin_confidence": {
-              "full": 0,
-              "partial": 32,
-              "zero": 3
-            },
-            "main_loss_months_zero_origin_then_positive_end_confidence": 3,
-            "original_formal_return_rows": 2512,
-            "overlapping_windows_or_scenarios_are_independent": false,
-            "retained_boundary_return_rows": 21,
-            "source_game_regret_is_main_drawdown_protection": false
+            "feasible_display_fraction_min_mean_max": [
+              0.025198017560134713,
+              0.8622949521558636,
+              1.0
+            ],
+            "finite_support_is_future_or_full_month_guarantee": false,
+            "fully_known_historical_windows_examined": 186894,
+            "maximum_independent_scalar_money_error_USD": 2.1827872842550278e-11,
+            "saved_main_decisions": 121
           },
           "10y-stress": {
-            "all_original_return_rows_retained": true,
-            "boundary_returns_and_initial_costs_remain_in_original_verdict": true,
-            "complete_main_months": 119,
-            "complete_main_return_rows": 2491,
-            "confidence_is_calibrated_loss_probability": false,
-            "main_loss_months": 39,
-            "main_loss_months_by_later_confidence_change": {
-              "decreased": 8,
-              "increased": 31,
-              "same": 0
+            "actual_source_band_or_request_policy_reexecuted": false,
+            "conditional_reference_status_counts": {
+              "finite_interval_certified": 72,
+              "no_finite_sufficient_interval": 1,
+              "outside_at_current_mark": 15,
+              "unavoidable_prefill_reference_breach": 33,
+              "uncertified_conservative_cost_bound": 0
             },
-            "main_loss_months_by_origin_confidence": {
-              "full": 0,
-              "partial": 36,
-              "zero": 3
-            },
-            "main_loss_months_zero_origin_then_positive_end_confidence": 3,
-            "original_formal_return_rows": 2512,
-            "overlapping_windows_or_scenarios_are_independent": false,
-            "retained_boundary_return_rows": 21,
-            "source_game_regret_is_main_drawdown_protection": false
+            "feasible_display_fraction_min_mean_max": [
+              0.26198614734762443,
+              0.8949342317738544,
+              1.0
+            ],
+            "finite_support_is_future_or_full_month_guarantee": false,
+            "fully_known_historical_windows_examined": 186894,
+            "maximum_independent_scalar_money_error_USD": 1.4551915228366852e-11,
+            "saved_main_decisions": 121
           },
           "5y-base": {
-            "all_original_return_rows_retained": true,
-            "boundary_returns_and_initial_costs_remain_in_original_verdict": true,
-            "complete_main_months": 59,
-            "complete_main_return_rows": 1233,
-            "confidence_is_calibrated_loss_probability": false,
-            "main_loss_months": 18,
-            "main_loss_months_by_later_confidence_change": {
-              "decreased": 3,
-              "increased": 15,
-              "same": 0
+            "actual_source_band_or_request_policy_reexecuted": false,
+            "conditional_reference_status_counts": {
+              "finite_interval_certified": 26,
+              "no_finite_sufficient_interval": 3,
+              "outside_at_current_mark": 10,
+              "unavoidable_prefill_reference_breach": 22,
+              "uncertified_conservative_cost_bound": 0
             },
-            "main_loss_months_by_origin_confidence": {
-              "full": 0,
-              "partial": 17,
-              "zero": 1
-            },
-            "main_loss_months_zero_origin_then_positive_end_confidence": 1,
-            "original_formal_return_rows": 1254,
-            "overlapping_windows_or_scenarios_are_independent": false,
-            "retained_boundary_return_rows": 21,
-            "source_game_regret_is_main_drawdown_protection": false
+            "feasible_display_fraction_min_mean_max": [
+              0.2955018328523456,
+              0.7142387278309678,
+              1.0
+            ],
+            "finite_support_is_future_or_full_month_guarantee": false,
+            "fully_known_historical_windows_examined": 132568,
+            "maximum_independent_scalar_money_error_USD": 1.4551915228366852e-11,
+            "saved_main_decisions": 61
           },
           "5y-stress": {
-            "all_original_return_rows_retained": true,
-            "boundary_returns_and_initial_costs_remain_in_original_verdict": true,
-            "complete_main_months": 59,
-            "complete_main_return_rows": 1233,
-            "confidence_is_calibrated_loss_probability": false,
-            "main_loss_months": 20,
-            "main_loss_months_by_later_confidence_change": {
-              "decreased": 4,
-              "increased": 16,
-              "same": 0
+            "actual_source_band_or_request_policy_reexecuted": false,
+            "conditional_reference_status_counts": {
+              "finite_interval_certified": 24,
+              "no_finite_sufficient_interval": 0,
+              "outside_at_current_mark": 13,
+              "unavoidable_prefill_reference_breach": 24,
+              "uncertified_conservative_cost_bound": 0
             },
-            "main_loss_months_by_origin_confidence": {
-              "full": 0,
-              "partial": 19,
-              "zero": 1
-            },
-            "main_loss_months_zero_origin_then_positive_end_confidence": 1,
-            "original_formal_return_rows": 1254,
-            "overlapping_windows_or_scenarios_are_independent": false,
-            "retained_boundary_return_rows": 21,
-            "source_game_regret_is_main_drawdown_protection": false
+            "feasible_display_fraction_min_mean_max": [
+              0.29856604737843123,
+              0.7423679019707,
+              1.0
+            ],
+            "finite_support_is_future_or_full_month_guarantee": false,
+            "fully_known_historical_windows_examined": 132568,
+            "maximum_independent_scalar_money_error_USD": 1.0913936421275139e-11,
+            "saved_main_decisions": 61
           }
-        }
+        },
+        "all_reference_status_counts": {
+          "outside_at_current_mark": 49,
+          "unavoidable_prefill_reference_breach": 111,
+          "uncertified_conservative_cost_bound": 0,
+          "finite_interval_certified": 197,
+          "no_finite_sufficient_interval": 7
+        },
+        "overlapping_historical_windows_examined": 638924,
+        "maximum_independent_scalar_money_error_USD": 2.1827872842550278e-11,
+        "finite_reference_is_future_or_full_month_guarantee": false
       },
       "new_financial_trials": 0,
       "financial_result_or_qualification_changed": false,
@@ -5936,8 +5820,8 @@
     "funded_paths": 500,
     "combined_completed": 303,
     "qualified": 0,
-    "snapshot_scope": "Financial J1490/340b remains303completed/zero qualified. Separate saved confidence-regret scope retains119source months/356main cases/all7532rows. Conditional and plain comparators differ;most main loss months were partially participating already. This is retrospective,not a new financial trial.",
-    "journal_summary_derived_at_utc": "2026-11-06T21:26:13.095186+00:00",
+    "snapshot_scope": "Financial J1490/340b remains303completed/zero qualified. Separate finite execution-gap reference inspects364saved states:49already outside,111prefill contradictions,197sufficient intervals,7failed intervals. Not a new applied policy or future/full-month guarantee.",
+    "journal_summary_derived_at_utc": "2026-11-06T22:02:50.077729+00:00",
     "latest_study_id": "ssd_confidence_rated_prod_20261106_v1",
     "latest_study_status": "complete_all_original_paths_retained",
     "latest_registrations": {
@@ -6656,6 +6540,227 @@
             "off_month_end_changed_opinion": 2315,
             "off_month_end_new_same_day_row": 2392,
             "source_score_mature": 2387
+          }
+        }
+      },
+      "new_financial_trials": 0,
+      "financial_result_or_qualification_changed": false,
+      "independent_forward_validation": false,
+      "investment_objective_verified": false,
+      "order_authority": false
+    },
+    "previous_read_only_before_execution_gap_envelope": {
+      "study_id": "ssd_confidence_regret_scope_20261106_v1",
+      "status": "complete_sanitized_readonly_confidence_regret_scope",
+      "path": "research/workbench/evidence/confidence_regret_scope_20261106_v1.json",
+      "sha256": "5c3a4bc2e3c2aff40c032b4493786164bd0a3da8a5716bef5786270cf920712a",
+      "journal_snapshot": 1490,
+      "source_decisions": 121,
+      "mature_source_months": 119,
+      "complete_main_month_cases": 356,
+      "original_main_return_rows": 7532,
+      "retained_boundary_return_rows": 84,
+      "input_resolution_records": 962,
+      "exact_retained_prefixes": 5,
+      "actual_summary": {
+        "source_game_summary": {
+          "comparator_identity_exact": true,
+          "complete_source_months": 119,
+          "confidence_sum_is_independent_sample_size": false,
+          "new_learner_state_or_allocation_generated": false,
+          "source_decisions": 121,
+          "source_game_units_are_main_returns_or_USD": false,
+          "sources": {
+            "benchmark_opportunity_joint_tail_v1": {
+              "complete_source_months": 119,
+              "confidence_weighted_source_game_regret": -12.346862318330487,
+              "exact_confidence_groups": {
+                "full": 119,
+                "partial": 0,
+                "zero": 0
+              },
+              "maximum_final_rounding_difference": 4.54e-159,
+              "omitted_participation_excess": 0.0,
+              "recorded_final_confidence_regret": -12.346862318330487,
+              "sum_confidence_ratings": 119.0,
+              "unweighted_excess_negative_months": 74,
+              "unweighted_excess_positive_months": 45,
+              "unweighted_source_game_regret": -12.346862318330487
+            },
+            "conditional_covariance_hedge_expert_v1": {
+              "complete_source_months": 119,
+              "confidence_weighted_source_game_regret": -3.7756183714026315,
+              "exact_confidence_groups": {
+                "full": 119,
+                "partial": 0,
+                "zero": 0
+              },
+              "maximum_final_rounding_difference": 2.54e-159,
+              "omitted_participation_excess": 0.0,
+              "recorded_final_confidence_regret": -3.7756183714026315,
+              "sum_confidence_ratings": 119.0,
+              "unweighted_excess_negative_months": 61,
+              "unweighted_excess_positive_months": 58,
+              "unweighted_source_game_regret": -3.7756183714026315
+            },
+            "equity_first_month_end_commitment_v1": {
+              "complete_source_months": 119,
+              "confidence_weighted_source_game_regret": 4.861425616975369,
+              "exact_confidence_groups": {
+                "full": 119,
+                "partial": 0,
+                "zero": 0
+              },
+              "maximum_final_rounding_difference": 2.54e-159,
+              "omitted_participation_excess": 0.0,
+              "recorded_final_confidence_regret": 4.861425616975369,
+              "sum_confidence_ratings": 119.0,
+              "unweighted_excess_negative_months": 49,
+              "unweighted_excess_positive_months": 70,
+              "unweighted_source_game_regret": 4.861425616975369
+            },
+            "four_factor_defense_diversified": {
+              "complete_source_months": 119,
+              "confidence_weighted_source_game_regret": -19.190804611867875,
+              "exact_confidence_groups": {
+                "full": 119,
+                "partial": 0,
+                "zero": 0
+              },
+              "maximum_final_rounding_difference": 5.46e-159,
+              "omitted_participation_excess": 0.0,
+              "recorded_final_confidence_regret": -19.190804611867875,
+              "sum_confidence_ratings": 119.0,
+              "unweighted_excess_negative_months": 73,
+              "unweighted_excess_positive_months": 46,
+              "unweighted_source_game_regret": -19.190804611867875
+            },
+            "semiconductor_option_dollar_profit_share_confirmation": {
+              "complete_source_months": 119,
+              "confidence_weighted_source_game_regret": -1.6314988650540918,
+              "exact_confidence_groups": {
+                "full": 119,
+                "partial": 0,
+                "zero": 0
+              },
+              "maximum_final_rounding_difference": 5.4e-160,
+              "omitted_participation_excess": 0.0,
+              "recorded_final_confidence_regret": -1.6314988650540918,
+              "sum_confidence_ratings": 119.0,
+              "unweighted_excess_negative_months": 61,
+              "unweighted_excess_positive_months": 58,
+              "unweighted_source_game_regret": -1.6314988650540918
+            },
+            "semiconductor_ratchet_protection": {
+              "complete_source_months": 119,
+              "confidence_weighted_source_game_regret": -2.9175205668563935,
+              "exact_confidence_groups": {
+                "full": 0,
+                "partial": 110,
+                "zero": 9
+              },
+              "maximum_final_rounding_difference": 4.58708781732699e-159,
+              "omitted_participation_excess": -11.382945074393463,
+              "recorded_final_confidence_regret": -2.9175205668563935,
+              "sum_confidence_ratings": 30.65085611138482,
+              "unweighted_excess_negative_months": 72,
+              "unweighted_excess_positive_months": 47,
+              "unweighted_source_game_regret": -14.300465641249858
+            }
+          }
+        },
+        "four_original_main_books": {
+          "10y-base": {
+            "all_original_return_rows_retained": true,
+            "boundary_returns_and_initial_costs_remain_in_original_verdict": true,
+            "complete_main_months": 119,
+            "complete_main_return_rows": 2491,
+            "confidence_is_calibrated_loss_probability": false,
+            "main_loss_months": 35,
+            "main_loss_months_by_later_confidence_change": {
+              "decreased": 6,
+              "increased": 29,
+              "same": 0
+            },
+            "main_loss_months_by_origin_confidence": {
+              "full": 0,
+              "partial": 32,
+              "zero": 3
+            },
+            "main_loss_months_zero_origin_then_positive_end_confidence": 3,
+            "original_formal_return_rows": 2512,
+            "overlapping_windows_or_scenarios_are_independent": false,
+            "retained_boundary_return_rows": 21,
+            "source_game_regret_is_main_drawdown_protection": false
+          },
+          "10y-stress": {
+            "all_original_return_rows_retained": true,
+            "boundary_returns_and_initial_costs_remain_in_original_verdict": true,
+            "complete_main_months": 119,
+            "complete_main_return_rows": 2491,
+            "confidence_is_calibrated_loss_probability": false,
+            "main_loss_months": 39,
+            "main_loss_months_by_later_confidence_change": {
+              "decreased": 8,
+              "increased": 31,
+              "same": 0
+            },
+            "main_loss_months_by_origin_confidence": {
+              "full": 0,
+              "partial": 36,
+              "zero": 3
+            },
+            "main_loss_months_zero_origin_then_positive_end_confidence": 3,
+            "original_formal_return_rows": 2512,
+            "overlapping_windows_or_scenarios_are_independent": false,
+            "retained_boundary_return_rows": 21,
+            "source_game_regret_is_main_drawdown_protection": false
+          },
+          "5y-base": {
+            "all_original_return_rows_retained": true,
+            "boundary_returns_and_initial_costs_remain_in_original_verdict": true,
+            "complete_main_months": 59,
+            "complete_main_return_rows": 1233,
+            "confidence_is_calibrated_loss_probability": false,
+            "main_loss_months": 18,
+            "main_loss_months_by_later_confidence_change": {
+              "decreased": 3,
+              "increased": 15,
+              "same": 0
+            },
+            "main_loss_months_by_origin_confidence": {
+              "full": 0,
+              "partial": 17,
+              "zero": 1
+            },
+            "main_loss_months_zero_origin_then_positive_end_confidence": 1,
+            "original_formal_return_rows": 1254,
+            "overlapping_windows_or_scenarios_are_independent": false,
+            "retained_boundary_return_rows": 21,
+            "source_game_regret_is_main_drawdown_protection": false
+          },
+          "5y-stress": {
+            "all_original_return_rows_retained": true,
+            "boundary_returns_and_initial_costs_remain_in_original_verdict": true,
+            "complete_main_months": 59,
+            "complete_main_return_rows": 1233,
+            "confidence_is_calibrated_loss_probability": false,
+            "main_loss_months": 20,
+            "main_loss_months_by_later_confidence_change": {
+              "decreased": 4,
+              "increased": 16,
+              "same": 0
+            },
+            "main_loss_months_by_origin_confidence": {
+              "full": 0,
+              "partial": 19,
+              "zero": 1
+            },
+            "main_loss_months_zero_origin_then_positive_end_confidence": 1,
+            "original_formal_return_rows": 1254,
+            "overlapping_windows_or_scenarios_are_independent": false,
+            "retained_boundary_return_rows": 21,
+            "source_game_regret_is_main_drawdown_protection": false
           }
         }
       },

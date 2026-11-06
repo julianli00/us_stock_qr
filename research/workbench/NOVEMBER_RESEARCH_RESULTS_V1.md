@@ -4,7 +4,84 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Read-only J1490 confidence scope: different comparator, mostly active loss months
+## Read-only J1490 execution gap: conditional capacity is not a future guarantee
+
+The [complete finite-path diagnosis](evidence/execution_gap_envelope_20261106_v1.json)
+uses every original saved initial/month-end main state and saved nominal target.
+The [new Module and reference contract](EXECUTION_GAP_ENVELOPE_V1.md) separately
+marks unchanged holdings at the first waiting close, scenario opening wealth
+and fee bounds at the second open, then the first delivered close.
+Planning always uses original stress 20bps, USD1 tickets and two later opens,
+even when the saved state comes from a base-cost book.
+
+| Saved main path | Decision states | Already outside current reference | Historical waiting-close contradiction | Sufficient finite interval | No sufficient postfill interval | Cost-bound exhaustion |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 10y-base | 121 | 11 | 32 | 75 | 3 | 0 |
+| 10y-stress | 121 | 15 | 33 | 72 | 1 | 0 |
+| 5y-base | 61 | 10 | 22 | 26 | 3 | 0 |
+| 5y-stress | 61 | 13 | 24 | 24 | 0 | 0 |
+
+Across 364 states, 49 are already outside 85% of their own-main closing peak.
+At another 111, a known historical path crosses the reference while the
+original quantities are still waiting for a newly issued delayed fill.
+That fill cannot alter an earlier holding mark within that supplied path.
+This does not predict the actual next path or prove that a different earlier
+policy could not have avoided reaching the saved state.
+
+There are 197 sufficient finite intervals and seven failed interval tests.
+An empty sufficient interval is not proof that all physical trades or future
+policies are impossible. It returns no selected fraction, never an implicit
+successful BIL fallback. BIL is an actual price-bearing ETF, not riskless idle
+cash. A positive lower bound can matter when a defensive mark and fees consume
+the available headroom; both interval endpoints and contradiction witnesses
+are retained.
+
+| Saved main path | Feasible display-fraction minimum | Mean over feasible cases only | Maximum |
+| --- | ---: | ---: | ---: |
+| 10y-base | 0.025198 | 0.862295 | 1.000000 |
+| 10y-stress | 0.261986 | 0.894934 | 1.000000 |
+| 5y-base | 0.295502 | 0.714239 | 1.000000 |
+| 5y-stress | 0.298566 | 0.742368 | 1.000000 |
+
+These are interval-display aggregates, not applied allocations, actual trades
+or recommendations. The hypothetical full fill does not implement the original
+2.5pp band, request/queue policy or a new portfolio controller. The reference
+ends at the first delivered close and does not cover the remaining month.
+A finite empirical interval therefore cannot establish future drawdown
+protection or joint financial qualification.
+
+All expanding historical two-transition windows end no later than their
+information date. Contexts inspect 186,894/186,894/132,568/132,568 such windows,
+638,924 total including overlaps and repeated book contexts. These are not
+independent samples or a probability estimate. Original admitted adjusted
+open/close delivery is unchanged. The largest independent scalar money
+difference is USD2.1827872842550278e-11, within the original USD1e-6 limit.
+Exact Fraction endpoint intersections retain valid tied witnesses without
+requiring arbitrary identical witness indices.
+
+Old headroom V1 remains terminal at J556 with 451 retained probes and missing
+failed-comparison operands. No exact old discrepancy is invented; neither its
+resolver, verifier nor preparation/evaluation pipeline is executed or repaired.
+The new two-phase reference is not its close-only next-review-horizon rule or
+a retuned 126-day sample. No source learner, target, shadow, main account,
+benchmark or prior diagnosis is rerun.
+
+First 34 synthetic checks, six exact prototypes, freeze `e136bf74` and actual
+checkpoint 785 saved at 2026-11-06T21:58:01.454556+00:00 with covered_seq 195402
+precede new empirical scenarios. Its original save receipt is prospectively
+linked; actual start/process receipts contain the checkpoint fields.
+PID 19200 runs once for 49.583499458 seconds, peak RSS 457,613,312 bytes.
+All 364 exact scenario archives are private on the SSD before resolution,
+with 728 input/resolution records and five exact known-price prefixes.
+Matrices are streamed rather than retaining all cases in RAM.
+
+**No new underlying target vector, applied policy, account or financial trial.
+Financial J1490 / 138 registered / 125 completed / 13 workflow terminations /
+zero pending / 500 funded paths / 303 combined completions / zero qualifiers
+is unchanged.** This conditional reference is separate from the rejected
+financial result; investment objective unmet, with no independent forward proof.
+
+## Preserved read-only J1490 confidence scope: different comparator, mostly active loss months
 
 The [complete saved-record diagnosis](evidence/confidence_regret_scope_20261106_v1.json)
 uses the same saved played-loss sequence. It does not execute a second learner,
