@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 133 SSD identities, 121 completed, 12 retained technical-workflow terminations and zero pending; 484 funded paths | Journal1440 complete financial summary: 299 combined completions, zero qualifiers; investment goal remains unmet |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 134 SSD identities, 121 completed, 12 retained technical-workflow terminations and one pending; 484 funded paths | Journal1442 has one registered AdaHedge law before funds; 299 combined completions and zero qualifiers remain unchanged |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -45,7 +45,27 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
-### Cached Hedge risk units: four paths complete, rejected
+### Fixed-quintet AdaHedge: registered before capital
+
+The [singleton packet](research/workbench/evidence/quintet_adaptive_hedge_20261106_registration_v1.json)
+keeps the same five complete sources and119sealed monthly loss labels.
+The [original AdaHedge law](research/workbench/QUINTET_ADAPTIVE_HEDGE_V1.md)
+changes elapsed-time rate decay to past observed mixability-gap adaptation,
+not another coefficient,window or inverse-volatility sizing sweep.
+The exact infinite-rate limit and neutral-month behavior are explicit.
+Source-game regret is not a main wealth or drawdown guarantee.
+
+Actual registration1441precedes new learning/targets;proof1442retains
+121decisions,119labels,242input-resolution records and five exact prefixes.
+The first35synthetic checks,9prototypes and checkpoint737precede
+construction. All119mature targets differ from each cached raw-Hedge
+and risk-unit control;neither old learner nor source/control is rerun.
+**Current J1442/134registered/121completed/12workflow terminations/
+one pending/484funded paths/299combined completions/zero qualifiers.**
+Four original funded paths remain unrun. The latest completed financial
+result is still rejected risk-unit sizing J1440below.
+
+### Historical cached Hedge risk units: four paths complete, rejected
 
 The [complete outcome](research/workbench/evidence/quintet_hedge_risk_units_20261106_results_v1.json)
 retains all four original paths after actual preregistration`e7333c4`,
@@ -59,7 +79,7 @@ QQQbenchmark by0.094909percentage points. Against cached raw Hedge,
 ten-year drawdowns fall4.21--4.61points,but five-year drawdowns rise
 0.45--0.55points. Every CAGRandSharpefalls,and all turnover,tickets
 and fees rise. Source risk-unit conversion is not a drawdown guarantee.
-**Current J1440/133registered/121completed/12workflow terminations/
+**Historical J1440/133registered/121completed/12workflow terminations/
 zero pending/484funded paths/299combined completions/zero qualifiers.**
 The whole sizing law is rejected;no risk window,belief,source or
 financial gate is retuned after these outcomes.

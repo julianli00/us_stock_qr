@@ -4,7 +4,55 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Cached Hedge risk units: four paths complete, whole law rejected
+## Fixed-quintet AdaHedge: preregistered targets, no capital outcome
+
+The [actual singleton packet](evidence/quintet_adaptive_hedge_20261106_registration_v1.json)
+registers at1441before new adaptive learning or targets.
+The [frozen method](QUINTET_ADAPTIVE_HEDGE_V1.md) applies original
+AdaHedge2014equations8--9to the same119sealed normalized monthly
+source-loss labels. It replaces elapsed-time decay with past observed
+mixability gap,not a fixed-rate coefficient,window,floor or roster sweep.
+No old learner,source generator,shadow,target or main control is rerun.
+
+Original paper pages3--9,including the analytic infinite-rate limit,
+were actually read before new fitting. Unlike the floating-point
+reference figure,this512-digit Implementation refuses a negative
+Jensen gap rather than clipping it. Cumulative source loss labels
+use exact Fractions;an independent128-digit direct-mixture evaluation
+checks the same mathematical law. These are numerical representations,
+not extra economic trials or a transfer of regret to main capital.
+
+The first35synthetic checks,9exact prototypes and actual checkpoint737
+precede construction. Bare freeze`5e70c57a`and actual registered
+body`1d1379f2`are distinct. Proof1442retains all121decisions/119labels/
+242binary64input-state-resolution records,595cached loss values and
+12455native NET values. Two original initial decisions stay unscored
+equal fifths;only complete months are assimilated.
+
+Independent weights,learning rates and cumulative gaps match at
+binary64projection;maximum played/mix-loss differences are7.105427e-15.
+Maximum target,covariance,marginal-risk and switch-proxy differences
+are1.110223e-16,8.131516e-20,8.131516e-20andUSD1.776357e-15.
+All five exact prefix cuts pass. Both original windows retain all six
+factor families. All119mature target origins differ from each unchanged
+cached raw-Hedge and risk-unit control.
+
+Neutral zero-loss months advance maturity,but do not cool the rate or
+soften concentration merely because time passed. The infinite-rate
+mix loss is the change in minimum cumulative loss,not minimum current
+loss over machine-positive support. Source normalized regret at most
+twice cumulative gap does not guarantee net CAGR,Sharpe,cost or DD.
+The unchanged loss normalization can still magnify tiny source-log
+differences;299exposed completions are not independent forward proof.
+
+**Current preregistration J1442/134registered/121completed/12workflow
+terminations/one pending/484funded paths/299combined completions/
+zero qualifiers.** Four fresh original paths remain unrun;actual remote
+publication,exact environment/import verification and a recorded
+prefunding checkpoint must precede them. The latest financial result
+remains rejected risk-unit J1440below;investment objective unmet.
+
+## Historical cached Hedge risk units: four paths complete, whole law rejected
 
 The [complete outcome](evidence/quintet_hedge_risk_units_20261106_results_v1.json)
 retains all four original funded paths of the frozen risk-unit conversion.
@@ -50,7 +98,7 @@ does not invalidate the technical admission of any complete source.
 No risk window,belief,learning rate,pool,floor,cap or financial gate is
 retuned after the outcome.
 
-**Current complete financial snapshot J1440/133registered/121completed/
+**Historical complete financial snapshot J1440/133registered/121completed/
 12workflow terminations/zero pending/484funded paths/299combined
 completions/zero qualifiers.** The whole law is rejected and the
 investment objective remains unmet. Earlier results stay historical.
