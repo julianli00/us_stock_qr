@@ -4,7 +4,45 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Recorded hierarchy risk forecast: statistical-source and main scopes compared
+## Benchmark-opportunity quintet: registered, no funded outcomes yet
+
+The [frozen law](BENCHMARK_OPPORTUNITY_QUINTET_V1.md) selects the complete
+confirmation,defense,covariance-hedge,commitment and joint-tail/opportunity
+policies at canonical slots`(4,5,7,0,1)`. It holds the first four roles
+fixed and replaces univariate conditional variance with joint portfolio
+tail/observed-benchmark opportunity behavior. This is not selection by
+whole-history CAGR,an independent factor claim or a growth-variant tournament.
+The original joint-tail policy's solver,source targets and NET-RF history
+remain cached;no source/refit/shadow/RF view is added.
+
+The first22synthetic/Ruff checks precede frozen`2763268f`and actual
+checkpoint711. Both [equal-fifths](evidence/benchmark_opportunity_quintet_20261106_0_registration_v1.json)
+and [original rolling pairs](evidence/benchmark_opportunity_quintet_20261106_1_registration_v1.json)
+register at1394/1395before the new121decisions/242input-resolved records.
+The actual registered body is`1b3002ad`,not the bare intent digest.
+Keep126mature84training42validation sessions,all10pairs,original
+switch proxy,seven unscored origins and five exact original prefixes.
+Maximum independent target/weight/score differences are respectively
+5.551115123125783e-17,2.220446049250313e-16and3.552713678800501e-15.
+Both formal horizons actually use all six registered factor-family ETFs.
+
+New targets differ materially from matched cached conditional-volatility
+equal/rolling controls at121/73origins. Whole-policy differences are
+not isolated source-alpha effects. No original control account is replayed.
+Actual registration takes44.425427707989seconds;Darwin peakRSS461144064bytes.
+
+**Current pre-funding snapshot J1397/131registered/117completed/
+12technical-workflow terminations/two pending/468funded paths/
+295combined completions/zero qualifiers.** No main account,financial
+metric or benchmark qualification exists for either new rule.
+Actual remotely published complete-cohort preregistration and another
+checkpoint are required before the eight new original funded paths.
+The latest completed financial result remains historical J1393 hierarchy;
+the separate risk-scope diagnosis is not new financial progress.
+Original costs,timing,RF,cash funding,financial gates,source refusals,
+prospective identities and the unmet investment goal remain unchanged.
+
+## Historical risk-only snapshot J1393: source and main scopes compared
 
 The [primary paired calibration](evidence/hierarchical_risk_transfer_20261106_v1.json)
 keeps the completed hierarchy's stored126NET-RF covariance/volatility
@@ -62,12 +100,13 @@ attribution. No new model,allocation,covariance fit,target,account or
 financial trial follows. The older pair-risk and current-opinion
 calibrations remain closed,not replayed or promoted. Existing
 source/PIT/refusal scopes and scalar-zero/undefined-ratio rules remain.
-**J1393/129registered/117completed/12technical/zero pending/468funded
-paths/295combined completions/zero qualifiers are unchanged.** The
+**This audit's historical J1393/129registered/117completed/12technical/
+zero pending/468funded paths/295combined completions/zero qualifiers
+remain unchanged.** The
 primary financial result remains the rejected fixed-five hierarchy,
 not this risk-only diagnosis;the investment objective is unmet.
 
-## Fixed-five risk hierarchy: all four paths complete, rule rejected
+## Historical fixed-five risk hierarchy: four paths complete, rule rejected
 
 The [complete financial outcome](evidence/five_hierarchical_risk_20261106_results_v1.json)
 retains all original paths of the one frozen fixed-five construction.
