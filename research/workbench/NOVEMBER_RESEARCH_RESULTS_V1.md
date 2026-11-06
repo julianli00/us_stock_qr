@@ -4,7 +4,65 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Median equity budget: actual preregistration, funding pending
+## Median equity budget: all four paths complete, rule rejected
+
+The [complete financial outcome](evidence/median_equity_budget_20261106_results_v1.json)
+retains every original path of the one frozen construction. Each is one
+freshUSD10000cash-funded main account. The completed equal and rolling
+quintet controls are explicitly cached historical evidence,not new
+accounts or repeated financial completions.
+
+| Median budget law | Path | Net CAGR | RF Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Fees USD |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Median budget | 10y-base | 15.785356% | 0.999080 | 19.011402% | 6.375579x | 818 | 1436.23 |
+| Median budget | 10y-stress | 14.614427% | 0.917790 | 20.344023% | 6.380473x | 821 | 3165.07 |
+| Median budget | 5y-base | 17.519288% | 0.930221 | 19.371924% | 6.904935x | 415 | 634.82 |
+| Median budget | 5y-stress | 15.619351% | 0.812906 | 20.700970% | 6.902649x | 409 | 1248.17 |
+
+Original gates: netCAGR>12%passes4/4;strict RFSharpe>1andDD<=15%
+each pass0/4. QQQpasses only5y-base,1/4;SPYpasses3/4;the extra
+stress/base-cost-SPYgate passes only5y-stress,1/2stress paths.
+The exact10y-base Sharpe0.9990797883467292still fails;rounding it
+to1or combining another path's metric cannot qualify the law.
+The complete same-rule review1381rejects it.
+
+Compared with matched cached rolling quintet,all four DDs improve by
+3.2491--3.7551percentage points and all four RFSharpes improve.
+Annual two-sided turnover falls by0.0041--0.1091x,but every model-ticket
+count rises by2--9and every fee total rises byUSD3.45--83.30.
+Ten-year CAGRimproves by0.3951/0.2494percentage points for base/stress,
+while five-year CAGRfalls by0.1388/0.2719points. There is no universal
+growth/cost improvement. These are whole-policy differences,not
+isolated source alpha,independent diversification or forward proof.
+The desired-target cap does not guarantee actual exposure or DD.
+
+Registration1370precedes capped targets;proof1371and the complete
+actual packet are published at`b41c3687413e387a4db2aaa59d89d0586542604a`.
+The actual registered identity passes409public-file and28original-import
+checks before capital. Actual checkpoint698precedes publication fence1372
+at2026-11-06T08:57:07.544018Z and all four starts. Each initial/monthly
+actual-holding gap,target and original delay is independently checked:
+121decisions per ten-year path and61per five-year path.
+
+The once-only financial evaluation exits0 in46.52904520800803seconds,
+Darwin peakRSS442847232bytes. Minimum cash isUSD177.1033147990886,
+maximum gross exposure0.9832458302596905,maximum independentBT NAV
+differenceUSD8.003553375601768e-11,and actual broker orders0.
+Offline model tickets are not brokerage authority.
+
+**J1381/128registered/116completed/12technical-workflow terminations/
+zero pending/464funded paths/294combined completions/zero qualifiers.**
+The technical12still includes one earlier operational duplicate,not
+source invalidity. Original full windows,RF,initial peak,costs,delays,
+actual-holding band,SPY/QQQand extra gates remain unchanged.
+All source scopes,failed first test/prototypes and original178/94/96
+legacy history remain. No median/quantile tuning,new source/RF view,
+source/upstream/control replay or live deployment follows. The
+investment objective is unmet.
+
+## Historical preregistration snapshot: median equity budget
+
+The following is the publishedJ1371snapshot,not current pending work.
 
 Study`ssd_median_equity_budget_20261106_v1`keeps the completed quintet,
 including its exact recorded rolling choice/score/weight/target history.

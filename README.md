@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 128 SSD identities, 115 completed/rejected, 12 retained technical-workflow terminations and one pending; 460 funded paths | Journal1371 current summary: 293 combined completions, zero qualifiers; investment goal remains unmet |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 128 SSD identities, 116 completed/rejected, 12 retained technical-workflow terminations and zero pending; 464 funded paths | Journal1381 current summary: 294 combined completions, zero qualifiers; investment goal remains unmet |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -45,26 +45,23 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
-### Median equity budget: registered, funding pending
+### Median equity budget: lower drawdowns, still rejected
 
-One new construction keeps the completed quintet's exact rolling target
-tape and all five complete source policies. At each known opinion clock,
-cap the upstream equity-ETF target at the median of their current equity
-allocations;preserve relative equity weights,IEF/GLD/TLT and the0.98
-invested budget,transferring removed equity only to BIL.
-This is a desired-target budget,not actual holdings or a DDguarantee.
-Original pool,ranks,windows,costs,delays and acceptance are unchanged.
+The [complete four-path outcome](research/workbench/evidence/median_equity_budget_20261106_results_v1.json)
+keeps the quintet's exact rolling signal and caps desired equity at the
+median of all five known source opinions,transferring removed equity only
+to BIL. The actual singleton packet was published at`b41c368`and checked
+before fresh funds. No source,upstream selector or cached control is rerun.
 
-Actual registration1370precedes new capped targets;proof1371retains
-121decisions,242records,5exact prefixes and all six original factor
-symbols in both horizons. The cap binds at22origins;new targets differ
-materially from cached rolling/equal controls at22/114origins.
-No old control is replayed. The first synthetic fixture failure is kept;
-all32corrected checks pass without a production evidence waiver.
-**J1371/128registered/115completed/12technical/1pending/460existing
-funded paths/293combined completions/zero qualifiers.** No new account
-or performance result exists;the complete actual singleton packet must
-be published and verified before four original freshUSD10000paths.
+All four CAGRgates pass,but every Sharpe andDDgate fails. The best
+10y-base RFSharpe is0.9990797883467292,not above1;all DDs remain
+19.011402--20.700970%. Relative to cached rolling quintet,DDand
+Sharpe improve in all four paths and annual turnover falls,but every
+fee/ticket count rises and five-year CAGRfalls. Partial improvement
+is not qualification or a reason to retune this frozen median.
+**J1381/128registered/116completed/12technical-workflow terminations/
+zero pending/464funded paths/294combined completions/zero qualifiers.**
+Original gates,costs,source refusals and the unmet investment goal remain.
 
 ### Conditional-variance quintet: both complete rules rejected
 
