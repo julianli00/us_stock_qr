@@ -4,7 +4,56 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Equal-role V2: registered and independently verified, no capital outcome yet
+## Equal-role V2: four paths complete, fixed role rule rejected
+
+The [complete financial outcome](evidence/equal_role_projection_20261106_results_v2.json)
+retains all four original freshUSD10000paths of the same frozen rule.
+Actual preregistration`d0cf68f`,470published scientific inputs,
+28original import pins,full Python/package environment and six-source
+clocks were verified before capital. Checkpoint764saved
+2026-11-06T19:11:42.154348+00:00with covered_seq192422was linked
+to its original native save receipt before launch;actual start/process
+receipts contain checkpoint fields. Publication fence1469precedes all
+four starts;review1478rejects the whole V2law.
+PID99089finished once in62.040777875seconds,peakRSS481198080bytes.
+
+| Rule | Original path | Net CAGR | RF Sharpe | Drawdown | Annual two-sided turnover | Model tickets | Recorded fees USD |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Equal-role V2 | 10y-base | 15.803152% | 0.822029 | 32.422693% | 2.699152x | 460 | 674.73 |
+| Equal-role V2 | 10y-stress | 14.982811% | 0.775567 | 32.258789% | 2.711612x | 455 | 1302.03 |
+| Equal-role V2 | 5y-base | 19.565365% | 0.999415 | 16.854718% | 2.992657x | 223 | 306.50 |
+| Equal-role V2 | 5y-stress | 17.724636% | 0.889763 | 17.985578% | 3.014799x | 229 | 554.65 |
+
+All four CAGRgates pass,but no Sharpe or15%drawdown gate passes.
+Five-yearbase exact Sharpe0.9994146056538551is strictly below1;
+rounding or changing the test cannot qualify it. SPYpasses3/4,
+QQQ2/4and the extra stress/base-costSPYgate1/2.
+Ten-yearstress also fails matched-costSPY.
+
+Against the cached flat-six rule,every volatility,turnover and fee total
+falls,but every CAGR and Sharpe falls too. Five-yeardrawdown decreases
+by5.147536/4.111188percentage points while ten-yeardrawdown increases
+by1.504264/1.780193points. Five-yearstress model tickets rise from216
+to229despite lower turnover and fees. Neither an economic response
+label nor lower volatility guarantees a smaller maximum drawdown.
+No role split,source,rate,memory,loss label,holding band or numerical
+criterion is changed after these outcomes;the old control is not replayed.
+
+The failed V1 remains terminal at1466 with no proof or funded result.
+V2 separately verifies the retained legitimate cache and executes
+four new main accounts;it does not erase the first attempt.
+All source and admission restrictions and original qualification
+criteria remain unchanged.
+
+**Current complete financial J1478/137registered/124completed/
+13workflow terminations/zero pending/496funded paths/302combined
+completions/zero qualifiers.** Investment objective unmet;no independent
+forward validation or transferable main-wealth protection is claimed.
+
+## Historical equal-role V2 preregistration snapshot J1468
+
+This is retained before-capital evidence,not current counts or a
+claim that the now complete four V2accounts remain unrun.
 
 The [actual singleton packet](evidence/equal_role_projection_20261106_registration_v2.json)
 uses a separate V2identity,registered1467before real cache verification.
@@ -31,7 +80,7 @@ The target artifact remains the exact original V1partial file,
 now independently verified under V2,not regenerated or admitted by default.
 No old learner,source pipeline,shadow or control account is replayed.
 
-**Current preregistration J1468/137registered/123completed/13workflow
+**Historical preregistration J1468/137registered/123completed/13workflow
 terminations/one pending/492funded paths/301combined completions/
 zero qualifiers.** Four original V2capital paths remain unrun.
 Actual remote publication,exact source/environment/import verification

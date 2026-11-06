@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 137 SSD identities, 123 completed, 13 retained technical-workflow terminations and one pending; 492 funded paths | Journal1468 has an independently verified V2 singleton before funding; latest completed financial snapshot remains J1464, 301 combined completions and zero qualifiers |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 137 SSD identities, 124 completed, 13 retained technical-workflow terminations and zero pending; 496 funded paths | Journal1478 complete financial summary: 302 combined completions, zero qualifiers; investment goal remains unmet |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -45,7 +45,28 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
-### Equal-role V2: independent proof completed before capital
+### Equal-role V2: cheaper execution, all four paths rejected
+
+The [complete V2 outcome](research/workbench/evidence/equal_role_projection_20261106_results_v2.json)
+keeps the fixed half-growth/half-response rule after actual preregistration
+`d0cf68f`,470published inputs/28original pins and checkpoint764before funds.
+Net CAGRs are15.803152%,14.982811%,19.565365%and17.724636%;
+drawdowns are32.422693%,32.258789%,16.854718%and17.985578%.
+Every Sharpe and15%drawdown gate fails. Five-yearbase Sharpe
+0.9994146057is below1,not a rounded pass.
+
+All four volatility,turnover and fee totals fall versus cached flat-six,
+but every CAGR and Sharpe also falls. Five-yeardrawdown improves,
+whereas both ten-yeardrawdowns worsen. Fixed economic roles do not
+establish independent risk sources or main protection.
+**Current J1478/137registered/124completed/13workflow terminations/
+zero pending/496funded paths/302combined completions/zero qualifiers.**
+V1 remains a technical failure;V2 is a separate complete financial rejection.
+
+### Historical equal-role V2 preregistration snapshot J1468
+
+This retained before-capital snapshot is not a claim that the now
+complete four V2accounts remain unrun.
 
 The [actual V2 singleton packet](research/workbench/evidence/equal_role_projection_20261106_registration_v2.json)
 registers at1467before real cached-target verification;proof1468retains
@@ -58,7 +79,7 @@ The [explicit V2 method](research/workbench/EQUAL_ROLE_PROJECTION_V2.md)
 repairs only the proof Interface and verifies the unchanged legitimate
 V1 cache. It neither reopens V1 nor regenerates learning or targets.
 Freeze`a1dc90c7`and actual checkpoint763precede V2registration.
-**Current J1468/137registered/123completed/13workflow terminations/
+**Historical J1468/137registered/123completed/13workflow terminations/
 one pending/492funded paths/301combined completions/zero qualifiers.**
 Four V2funded paths are unrun;proof completion is not investment success.
 
