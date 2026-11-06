@@ -45,7 +45,24 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
-### Read-only J1478 diagnosis: shared crash clock, larger equity losses
+### Read-only J1478 clock review: daily records are not daily policy changes
+
+The [same-six source-clock review](research/workbench/evidence/expert_opinion_clock_review_20261106_v1.json)
+retains 15,078 observations across all 2,513 original sessions.
+The wealth-feedback expert changes its known numeric opinion on 2,315
+non-month-end sessions. In contrast, the commitment and benchmark-opportunity
+experts expose daily known rows but change numerically only at month ends:
+18 and 81 times respectively. The other three Interfaces carry monthly opinions.
+
+A known row is not automatically a native issued request or execution.
+The [frozen review](research/workbench/EXPERT_OPINION_CLOCK_REVIEW_V1.md)
+does not add an event Adapter or remove the existing main execution
+Interface's non-month-end rejection. Daily consumption needs a separately
+frozen executable clock and source-specific provenance; these counts do not
+prove that it would improve returns or drawdowns.
+No financial trial is added: J1478 / 302 completions / zero qualifiers.
+
+### Preserved read-only J1478 diagnosis: shared crash clock, larger equity losses
 
 The [eight-book marked accounting](research/workbench/evidence/equal_role_loss_accounting_20261106_v1.json)
 keeps both equal-role V2and flat-six books on every original path.

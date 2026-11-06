@@ -4,7 +4,62 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Read-only J1478 loss accounting: crash losses remain equity-dominated
+## Read-only J1478 opinion clock: one source changes between month ends
+
+The [complete same-six clock review](evidence/expert_opinion_clock_review_20261106_v1.json)
+consumes only existing admitted archive Interfaces at the original information
+clock. All 2,513 sessions from 2016-10-05 through 2026-10-05 remain:
+15,078 observations and 30,156 private input/resolution records.
+The [frozen method](EXPERT_OPINION_CLOCK_REVIEW_V1.md) separates initial
+observation, carried timestamp, repeated known row and numeric opinion change.
+Numeric comparison is exact, with signed zeros equal and no fitted threshold.
+
+| Existing source | New same-day known rows | Numeric opinion changes | Non-month-end numeric changes | Carried timestamps |
+| --- | ---: | ---: | ---: | ---: |
+| Profit-share confirmation | 120 | 120 | 0 | 2392 |
+| Diversified defense | 120 | 97 | 0 | 2392 |
+| Conditional covariance hedge | 120 | 7 | 0 | 2392 |
+| Month-end commitment | 2512 | 18 | 0 | 0 |
+| Benchmark opportunity | 2512 | 81 | 0 | 0 |
+| Wealth-feedback protection | 2512 | 2435 | 2315 | 0 |
+
+Each source has one additional initial observation, excluded from its new-row
+and change counts. The three monthly Interfaces initially carry a prior-dated
+opinion; this is neither a backdated refresh nor another capital decision.
+The commitment and benchmark-opportunity dense Interfaces repeat the same
+numeric opinion on 2,494 and 2,431 new dated rows respectively. Therefore a
+daily known-at stamp alone is not evidence of daily economic adaptation.
+Only the wealth-feedback source has off-month-end numeric changes in this scope.
+
+These are known recommendations, not automatically native issued requests or
+executions. In particular, archived wealth-state recommendations can exist
+without an original native order. This review does not certify complete native
+event provenance, add an event Adapter, change admission or alter an RF view.
+The current initial/monthly main execution Implementation explicitly rejects
+additional non-month-end targets. A future consumer needs a separately frozen
+policy clock, source-specific evidence, execution/cost timing and independent
+accounting. Neither silently removing that guard nor treating this observation
+lattice as executable orders is supported. No return or drawdown improvement
+from faster consumption has been measured.
+
+All five retained-record prefixes are exact. Every source-history date and
+assessment-RF value matches its existing admitted view. Each source has 2,387
+observations with a full 126-return source window; this is maturity metadata,
+not a new score or a replacement for the learner's 119 monthly updates.
+First 19 synthetic checks, six exact prototypes and freeze `e9e75ccb`
+precede the actual review. Checkpoint 772 saved at
+2026-11-06T19:57:41.457277+00:00 with covered_seq 193299 is prospectively
+linked to original native receipt 193302 before launch; actual start/process
+receipts contain all three checkpoint fields. PID 3857 ran once for
+92.335213958 seconds, peak RSS 490,528,768 bytes.
+
+**No new learner, source target, shadow, main account, BT or financial trial.
+Financial J1478 / 137 registered / 124 completed / 13 workflow terminations /
+zero pending / 496 funded paths / 302 combined completions / zero qualifiers
+is unchanged.** All source and independent-forward restrictions remain.
+The earlier eight-book accounting below stays preserved, not rerun.
+
+## Preserved read-only J1478 loss accounting: crash losses remain equity-dominated
 
 The [complete eight-book diagnosis](evidence/equal_role_loss_accounting_20261106_v1.json)
 reuses the [original mark identity and grouping](EQUAL_ROLE_LOSS_ACCOUNTING_V1.md).
