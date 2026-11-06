@@ -45,20 +45,26 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
-### Registered J1495 separate shield V2: unchanged economic law
+### Complete J1506 shield V2: drawdown passes, net performance rejected
 
-The [separate V2 program](research/workbench/evidence/execution_gap_shield_20261106_registration_v2.json)
-keeps every economic parameter unchanged. Its [new account/proof Module](research/workbench/EXECUTION_GAP_SHIELD_V2.md)
-uses canonical held-weight gross representation and retains both complete
-comparison operands before the unchanged exact-equality assertion.
-Thirty mixed-asset synthetic checks pass; the initial CSV frequency-metadata
-test failure and both sets of prototypes remain preserved.
+The [complete V2 outcome](research/workbench/evidence/execution_gap_shield_20261106_results_v2.json)
+retains all four original paths under one unchanged economic law.
+Every exact cash-frame/position check and five new-policy capital prefixes
+pass, with both comparison operands retained before assertions.
 
-V1 remains terminal and is not replayed or admitted as an expert. V2 has no
-historical scenarios, targets or accounts yet; actual remote publication and
-a new prefunding checkpoint must precede all four new paths.
-**J1495 / 140 registered / one pending / 303 financial completions /
-zero qualifiers.** This is a technical successor, not a new alpha discovery.
+| Path | Net CAGR | RF Sharpe | Maximum DD |
+| --- | ---: | ---: | ---: |
+| 10y base | 1.309097% | -0.175979 | 14.976891% |
+| 10y stress | 1.277313% | -0.192630 | 14.772820% |
+| 5y base | -0.659039% | -0.930943 | 14.956389% |
+| 5y stress | -1.294657% | -1.351901 | 14.671165% |
+
+All four drawdown gates pass historically, but every CAGR, Sharpe and SPY/QQQ
+gate fails. Model tickets rise to 2,795/2,395/2,130/1,844 and actual total fees
+to USD3,015.28/3,044.85/2,392.14/2,594.72. No special band override occurs,
+so those costs cannot be attributed to that unused exception.
+V1 remains terminal and is not retroactively validated or replayed.
+**J1506 / 304 financial completions / zero qualifiers. Investment objective unmet.**
 
 ### Preserved terminal J1494 shield accounting failure: no verified financial result
 

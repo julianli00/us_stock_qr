@@ -4,7 +4,71 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Registered J1495 separate shield V2: no new historical output yet
+## Complete J1506 shield V2: verified accounting, rejected net economics
+
+The [complete new V2 results](evidence/execution_gap_shield_20261106_results_v2.json)
+retain one frozen economic law on every original full path, with no parameter
+or acceptance change between base/stress or ten/five-year accounts.
+This is the separately registered technical successor, not an independent
+new economic factor or a retrospective validation of terminal V1.
+
+| Actual path | Net CAGR | RF Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Actual fees USD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 10y-base | 1.309097% | -0.175979 | 14.976891% | 3.834414 | 2795 | 3015.28 |
+| 10y-stress | 1.277313% | -0.192630 | 14.772820% | 2.835577 | 2395 | 3044.85 |
+| 5y-base | -0.659039% | -0.930943 | 14.956389% | 10.196003 | 2130 | 2392.14 |
+| 5y-stress | -1.294657% | -1.351901 | 14.671165% | 7.533325 | 1844 | 2594.72 |
+
+Review1506 rejects the same complete rule. Historical DD<=15% passes4/4;
+strict net CAGR>12%, RF Sharpe>1, matched-cost SPY and QQQ each pass0/4.
+The original extra stress-versus-base-cost-SPY gate passes0/2.
+Small historical DD margins are not future drawdown guarantees.
+
+Against the cached complete monthly confidence-Prod context, every CAGR and
+Sharpe falls while every DD falls. Annual turnover falls only on ten-year
+stress; it rises on the other three paths. Model tickets and total fees rise
+on all four. USD1 fixed-ticket commissions are
+92.694538%/78.657364%/89.041610%/71.067473% of actual paid costs.
+This is a whole-policy comparison, not an isolated fee/controller causal
+effect or a counterfactual account with fees deleted.
+
+There are 293/253/226/194 actual rebalance sessions. The separately declared
+certified-reference band override occurs **zero times on every path**.
+All requests therefore come from initial deployment or the ordinary observed
+weight-gap rule. The increased ticket burden cannot be blamed on the unused
+override. Stress retains253/194 pending reviews without replacement;
+base has none. Offline model tickets are not brokerage orders.
+
+Across 7,536 original main initialization/closing reviews, 7,089 new known-path
+input archives are saved privately before resolution; 447 pending reviews
+produce no replacement target. Their reference statuses are3,606 finite
+intervals,3,471 empty sufficient intervals and12 prefill historical-path
+contradictions. An uncertified BIL attempt remains uncertified; none of these
+finite references claims future support, probability or month-long protection.
+
+All four cash comparisons retain complete actual/replay frames and positions
+before assertions. Every financial-column and position bit difference is zero.
+The original exact-equality criterion is unchanged; maximum independent BT
+equity difference is USD6.184563972055912e-11. Five new-policy prefix runs at
+positions125/503/1006/1509/2012 retain both operands and exactly match full-run
+account columns, positions, desired/issued targets and decisions. They are
+auxiliary verification runs, not additional independent economic trials.
+
+Actual remote preregistration `f3cab952` and checkpoint795
+saved2026-11-06T23:28:06.921149+00:00 with covered_seq196914, original native
+save196917, precede the publication fence1496 and first path1497.
+The unique PID32855 exits0 after860.521975959 seconds, peak RSS397,066,240 bytes.
+No source learner, shadow, cached target/control or terminal-V1 account is
+rerun. V1's missing comparison operands and technical failure remain unchanged.
+
+**J1506 / 140 registered / 126 completed / 14 workflow terminations /
+zero pending / 504 verified funded paths / 304 combined financial
+completions / zero qualifiers. Investment objective unmet.**
+The first failed and second successful synthetic attempts, both prototype
+sets, all original failures and the two one-day prospective identities remain.
+No next rule, window sweep or replacement expert is selected here.
+
+## Preserved J1495 V2 preregistration snapshot: before historical output
 
 The [actual V2 registration packet](evidence/execution_gap_shield_20261106_registration_v2.json)
 is a separate technical successor, not a new independent alpha discovery.
@@ -35,9 +99,10 @@ forbidden terminal-V1 execution and retention before intentionally bad proofs.
 Freeze `7852a4ea` and actual checkpoint 794 saved at
 2026-11-06T23:18:20.782148+00:00 with covered_seq 196752 precede all new real
 V2 outputs. Its original native event 196755 was prospectively linked before
-the sole V2 registration. The schema3 program truthfully defers historical
-target proof. Actual remote publication and another actual saved prefunding
-checkpoint must precede four fresh main accounts.
+the sole V2 registration. At this historical snapshot the schema3 program truthfully deferred
+historical target proof. Actual remote publication and another actual saved
+prefunding checkpoint were required before four fresh main accounts; the
+complete verified outcome is now recorded above.
 
 **J1495 / 140 registered / 125 completed / 14 workflow terminations /
 one pending / 500 existing verified funded paths / 303 combined financial
