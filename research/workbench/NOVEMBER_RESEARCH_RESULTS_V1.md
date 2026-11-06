@@ -4,7 +4,50 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Read-only J1452 three-law diagnosis: equity losses dominate
+## Controlled protective sixth source: preregistered targets, no capital outcome
+
+The [actual singleton packet](evidence/protective_six_adaptive_hedge_20261106_registration_v1.json)
+registers at1453before new six-source monthly labels,learning or targets.
+The [frozen method](PROTECTIVE_SIX_ADAPTIVE_HEDGE_V1.md) appends the already
+admitted wealth-feedback ratchet source to the current confirmation,
+defense,covariance hedge,commitment and opportunity five.
+This tests documented mechanism coverage,not a full-window winner,
+new source policy,rate/window/floor sweep or changed main execution.
+Global eight-source admission and all financial gates remain unchanged.
+
+The first30synthetic checks,9exact prototypes and actual checkpoint750
+precede construction. Bare freeze`50d40792`and actual registered
+body`ffade9b7`are distinct. Proof1454retains121decisions/119complete
+months/242binary64input-state-resolution records,714new six-source loss
+values and14946native NET values. Two original initial decisions stay
+unscored uniform sixths;all119months carry into fresh five-year capital.
+
+Original AdaHedge mathematical code objects are reused atN6,with
+768-digit dimension-safe primary arithmetic and independent128-digit
+direct mixtures. No old five-label state is padded or mutated.
+Weights,rates and cumulative gaps match at binary64projection.
+Maximum played/mix-loss differences are7.105427e-15/3.552714e-15;
+target,covariance,marginal-risk and switch-proxy differences are
+1.110223e-16,8.131516e-20,8.131516e-20andUSD1.776357e-15.
+All five exact prefixes pass. Both original windows retain all six
+factor families. All121targets materially differ from cached five-source
+AdaHedge;no old learner,generator,shadow,target or control account is rerun.
+
+Source-native introduction/admission times and prior assessment views
+remain explicit. The extra source's own NAV,peaks,units and protection
+do not transfer to fractional netted monthly main capital.
+Six mechanism labels do not imply six independent risks. The older
+six-source ERC cohort used GARCHrather than this covariance hedge;
+that different old experiment is not replayed.
+
+**Current preregistration J1454/135registered/122completed/12workflow
+terminations/one pending/488funded paths/300combined completions/
+zero qualifiers.** Four fresh original paths remain unrun;actual remote
+publication,exact environment/import verification and a recorded
+prefunding checkpoint must precede them. The latest financial result
+remains rejected five-source AdaHedge J1452;investment objective unmet.
+
+## Historical read-only J1452 three-law diagnosis: equity losses dominate
 
 The [complete marked-accounting result](evidence/quintet_learning_loss_accounting_20261106_v1.json)
 compares twelve preserved AdaHedge,elapsed-time Hedge and risk-unit books,
@@ -54,13 +97,13 @@ peakRSS458858496bytes. No source,learner,target,account,BT or old
 cohort diagnosis is replayed;no market request or user cost-config
 execution is involved.
 
-**Financial J1452/134registered/122completed/12workflow terminations/
+**This audit's historical financial J1452/134registered/122completed/12workflow terminations/
 zero pending/488funded paths/300combined completions/zero qualifiers
 is unchanged.** This new read-only diagnosis is separate from the latest
 AdaHedge financial result below. It does not fix a failed gate,establish
 forward profit or turn asset groups into strategy experts.
 
-## Fixed-quintet AdaHedge: four paths complete, whole law rejected
+## Historical fixed-quintet AdaHedge: four paths complete, whole law rejected
 
 The [complete outcome](evidence/quintet_adaptive_hedge_20261106_results_v1.json)
 retains all four original funded paths of the frozen gap-adaptive law.
@@ -114,7 +157,7 @@ remain failures despite better growth and statistical regret.
 No rate coefficient,loss normalization,gap floor,numeric clamp,window,
 source,pool or financial criterion is changed after these outcomes.
 
-**Current complete financial snapshot J1452/134registered/122completed/
+**Historical complete financial snapshot J1452/134registered/122completed/
 12workflow terminations/zero pending/488funded paths/300combined
 completions/zero qualifiers.** The whole law is rejected;investment
 objective unmet. Earlier results and all failed trials remain historical.
