@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_growth_macro_defense_hedge_20261106_v1",
+  "protocol_id": "ssd_dual_benchmark_net_cagr_v1",
+  "actual_native_event_seq": 178787,
+  "prior_journal_sequence": 1297,
+  "prior_journal_head_sha256": "689bed6d71de7e4851b13380482bd5ae1f42c420ef74eb33876630dbe0555d73",
+  "prior_completed_configurations": 287,
+  "source_catalogue": {
+    "path": "reports/ssd-continuous-research-v1/growth-macro-defense-hedge-20261106-v1/source-input-catalogue-v1.json",
+    "sha256": "55cb59532952e14f3faae98cc11efccb170817259a821048b97f9440e4f139c1"
+  },
+  "original_trio_source_slots": [4, 5, 7],
+  "growth_expert_id": "expert_pool_eight_unconditional_forecast_pair_v2",
+  "expert_ids": [
+    "semiconductor_option_dollar_profit_share_confirmation",
+    "four_factor_defense_diversified",
+    "conditional_covariance_hedge_expert_v1",
+    "expert_pool_eight_unconditional_forecast_pair_v2"
+  ],
+  "mechanism_groups": [
+    "common_quarter_profit_dollar_confirmation",
+    "cross_asset_defensive_relative_strength",
+    "conditional_cross_asset_hedge_suitability",
+    "original_eight_active_forecast_pair_program_family"
+  ],
+  "initial_decision_session": "2016-10-05",
+  "lookback_sessions": 126,
+  "training_sessions": 84,
+  "validation_sessions": 42,
+  "selected_experts": 2,
+  "mature_pair_count": 6,
+  "selection_score_decimal_places": 12,
+  "shadow_reference_path": "10y-base",
+  "reference_capital_usd": 10000,
+  "switch_cost_bps_per_side": 5.0,
+  "switch_commission_per_changed_asset_usd": 1.0,
+  "switch_cost_amortization_sessions": 21,
+  "changed_asset_numeric_tolerance": 1e-12,
+  "invested_target_budget": 0.98,
+  "cash_reserve": 0.02,
+  "actual_weight_trade_band": 0.025,
+  "minimum_economic_factor_families": 3,
+  "decision_information_clock": "after_16_15_ET_index_close_before_later_open_execution",
+  "admitted_legacy_defensive_views_reused_unchanged": true,
+  "all_source_native_RF_claimed_equal_without_view": false,
+  "growth_nested_source_overlap_disclosed": true,
+  "mechanism_labels_are_independent_risks": false,
+  "opportunity_gate_threshold_or_participation_state_tuned": false,
+  "new_source_requests": 0,
+  "new_shadow_account_runs": 0,
+  "new_source_RF_views": 0,
+  "candidate_count_in_this_study": 2,
+  "candidates": [
+    {"id": "expert_pool_growth_macro_defense_hedge_equal_v1", "weighting": "equal"},
+    {"id": "expert_pool_growth_macro_defense_hedge_rolling_pair_v1", "weighting": "train_erc_validate_net"}
+  ],
+  "study_size_is_a_total_research_quota": false,
+  "global_pool_changed": false,
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "order_authority": false
+}

@@ -4,6 +4,53 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Growth, confirmation, defense and hedge quartet: preregistration J1301
+
+The [frozen law](GROWTH_MACRO_DEFENSE_HEDGE_V1.md) adds exactly one complete
+unconditional forecast-pair controller to the unchanged prior three-role
+pool. The narrower predictor is a parsimony choice, not a full-window
+return winner. Its contextual and opportunity/BIL siblings remain valid
+nonselected variants; terminal V1 versions remain archive-only and
+unreviewed archives are not enabled. The global seven/eight rosters remain.
+
+The growth controller itself combines canonical eight sources, including
+these three. Labels are not independent risks. Keep observed mature NET
+dependence, marginal variance contributions, the original nominal switching
+proxy and all six pair records. The equal control uses quarters; the rolling
+law keeps126mature observations,84training/42validation,two-expertERC,
+the weaker-period score,12-decimal lexical ordering and explicit unscored
+uniform states. This is not a softened positive-opportunity gate.
+
+Both actual registrations1298/1299precede target derivation/proofs1300/1301.
+The first25synthetic checks and Ruffpass after a retained pre-test101character
+lint failure; only metadata literal layout changes. Freeze`a3db9c66`binds
+173dependencies,1508source references,four real source/admission clocks
+and10explicit tested inputs. Actual registration/preparation exits0 in
+37.17912262500613seconds,Darwin peakRSS447119360bytes.
+
+The exact121initial/month-end decisions and242input/resolved records retain
+all six pairs and118256untruncated NET/RFvalues. Independent maximum gaps:
+targets1.1102230246251565e-16,expert weights2.220446049250313e-16,
+net-risk scores3.552713678800501e-15. Five exact prefixes pass. Both laws
+retain all six style symbols on both formal horizons. Original source
+opinions,RF conventions,financial rejections and actual introduction dates
+are unchanged. Existing legacy-defensive recommendation/assessment views
+are reused without claiming all nativeRFseries became exact.
+
+Before any capital, publish both complete
+[equal](evidence/growth_macro_defense_hedge_20261106_0_registration_v1.json)/
+[rolling](evidence/growth_macro_defense_hedge_20261106_1_registration_v1.json)
+schema2packets and verify every actual registered scientific/import blob.
+Only the two new policies may then own eight original full10y/5y/base-stress
+paths: freshUSD10000,initialpeak,canonicalRF,5/20bps+$1,one/two-later-open
+execution,holding feedback,cash funding<=1x and independentBT. Every original
+Sharpe,CAGR,DD,SPY,QQQand extra stress gate remains. Matched cached trio
+controls are predeclared and will not be replayed. A whole-policy contrast
+is not isolated source alpha.
+**J1301:122registered,109completed,11technical,two pending,
+436funded paths,287combined completions,zero qualifiers;
+no new funded outcomes and investment goal remains unmet.**
+
 ## Four funded forecast controllers: technically eligible, not selected
 
 The [complete scoped review](evidence/funded_meta_expert_eligibility_20261106_v1.json)

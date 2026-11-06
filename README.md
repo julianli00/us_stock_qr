@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 120 SSD identities, 109 completed/rejected, 11 retained technical failures and zero pending; 436 funded paths | Journal1297 current summary: 287 combined completions, zero qualifiers; investment goal remains unmet |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 122 SSD identities, 109 completed/rejected, 11 retained technical failures and two pending; 436 funded paths | Journal1301 current summary: 287 combined completions, zero qualifiers; investment goal remains unmet |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -44,6 +44,26 @@ November authorization.
 The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
+
+### Complete growth controller plus fixed trio: preregistration J1301
+
+The [frozen quartet study](research/workbench/GROWTH_MACRO_DEFENSE_HEDGE_V1.md)
+adds one admitted complete unconditional growth controller to the existing
+common-quarter confirmation, defensive relative-strength and conditional-hedge
+policies. It does not soften the failed opportunity gate. The source catalogue
+keeps admissible siblings nonselected and invalid/unreviewed archives separate.
+The growth program nests the canonical eight, including this trio:
+four policy labels are not four independent risks.
+
+Both [equal-quarter](research/workbench/evidence/growth_macro_defense_hedge_20261106_0_registration_v1.json)
+and [unchanged rolling six-pair](research/workbench/evidence/growth_macro_defense_hedge_20261106_1_registration_v1.json)
+identities register before either new target stream. All121decisions,
+242retained records, original126/84/42scores, six pairs, scalar checks and
+five prefixes pass. No source fit,target,shadow or account is replayed;
+old defensive assessment views and every financial gate remain.
+Both full packets and all actual scientific/import dependencies must be
+remotely verified before eight new original funded paths.
+**J1301:two pending,287completions,zero qualifiers; no new financial outcome yet.**
 
 ### Completed forecast controllers: scoped expert eligibility, not qualification
 
