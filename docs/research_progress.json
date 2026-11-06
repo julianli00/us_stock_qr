@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "current_ssd_journal_summary": {
-    "snapshot_scope": "Current J1274:both saved-forecast policies complete all eight original funded paths;all CAGR/Sharpe/SPY/QQQ gates pass but every DD exceeds15%, so both reject. V1 terminal failures and earlier target derivation remain immutable;metadata-only V2 changes no economic law.",
-    "journal_summary_derived_at_utc": "2026-11-06T02:00:19.061604+00:00",
+    "snapshot_scope": "Current J1274 unchanged:285 completions,zero qualifiers. Both financial forecast portfolios remain rejected on DD. New read-only signed-normalizer V2 identity survey complete,with strict original source keys and no new allocation.",
+    "journal_summary_derived_at_utc": "2026-11-06T02:34:03.514039+00:00",
     "journal_sequence": 1274,
     "journal_head_sha256": "2056f5365d92c8da4d89d19ae71cc53cd326a1a2fa559f05853a3fd3868b3254",
     "legacy_completed": 178,
@@ -270,439 +270,137 @@
       "order_authority": false
     },
     "latest_read_only_diagnosis": {
-      "study_id": "ssd_expert_active_forecast_diagnosis_20261106_v1",
-      "results": "research/workbench/evidence/expert_active_forecast_diagnosis_20261106_v1.json",
-      "results_sha256": "faf83bc722816f0560da9f1081aa39b71d5917607b23abad4d4487d0a0326cbe",
-      "analysis_intent_sha256": "5f8e096819d965a2ec3e44003e90d1cbde4725d53d9e83847cb165eb2e985383",
-      "implementation_dependency_count": 158,
-      "source_reference_count": 1283,
+      "study_id": "ssd_forecast_risk_normalizer_diagnosis_20261106_v2",
+      "results": "research/workbench/evidence/forecast_risk_normalizer_diagnosis_20261106_v2.json",
+      "results_sha256": "c8a5a4f44e7319d28e91e46d83381de7941c35fc8440acff0410a7da3515cd3f",
+      "analysis_intent_sha256": "9b7a9f2202a07f70e0b3a84569df6eadb949b214109a19c59f9c9e5066bcf540",
+      "implementation_dependency_count": 161,
+      "source_reference_count": 172,
       "explicit_tested_inputs": [
-        "config/expert-active-forecast-diagnosis-v1.json",
-        "src/us_quant/expert_active_forecast_diagnosis_v1.py",
-        "src/us_quant/ssd_expert_active_forecast_diagnosis_v1.py",
-        "tests/test_expert_active_forecast_diagnosis_v1.py",
-        "EXPERT_ACTIVE_FORECAST_DIAGNOSIS_V1.md",
+        "config/forecast-risk-normalizer-diagnosis-v2.json",
+        "src/us_quant/forecast_risk_normalizer_diagnosis_v2.py",
+        "src/us_quant/ssd_forecast_risk_normalizer_diagnosis_v2.py",
+        "tests/test_forecast_risk_normalizer_diagnosis_v2.py",
+        "FORECAST_RISK_NORMALIZER_DIAGNOSIS_V2.md",
+        "tests/test_forecast_risk_normalizer_diagnosis_v1.py",
         "tests/conftest.py"
       ],
-      "synthetic_checks_before_actual_diagnosis": 34,
-      "actual_diagnostic_wall_seconds": 9.51553083298495,
-      "actual_diagnostic_peak_RSS_recorded": false,
-      "all_original_eight_sources_retained": true,
-      "both_fixed_predictors_and_benchmarks_retained": true,
+      "new_V2_synthetic_checks": 24,
+      "source_failed_V1_synthetic_checks": 23,
+      "actual_diagnostic_wall_seconds": 8.240203875000589,
+      "actual_diagnostic_Darwin_peak_RSS_bytes": 423673856,
+      "retained_input_resolved_records": 242,
+      "exact_prefixes": [
+        "2016-10-05",
+        "2017-03-31",
+        "2017-09-29",
+        "2021-09-30",
+        "2026-09-30"
+      ],
       "summary": {
-        "complete_learning_months": 119,
+        "alternative_pair_ranking_or_selection_generated": false,
         "decision_count": 121,
-        "graded_months": 113,
+        "derivative_scope": "continuous_unrounded_score_with_numerator_fixed",
+        "failed_V1_partial_diagnostic_preserved": true,
+        "independent_economic_research_questions_added_by_codec": 0,
         "independent_forward_validation": false,
         "investment_objective_verified": false,
+        "main_drawdown_or_causal_loss_attribution": false,
         "models": {
           "contextual_unit_ridge": {
-            "QQQ": {
-              "experts": {
-                "benchmark_opportunity_joint_tail_v1": {
-                  "count": 113,
-                  "direction_accuracy": 0.6017699115044248,
-                  "mae": 0.00193139480696518,
-                  "mean_error": -5.234160486857791e-05,
-                  "rmse": 0.002493939073986357,
-                  "skill_defined": true,
-                  "skill_vs_zero_active": 0.03366895363578504,
-                  "zero_active_reference_mse": 6.436440315311654e-06
-                },
-                "conditional_covariance_hedge_expert_v1": {
-                  "count": 113,
-                  "direction_accuracy": 0.5929203539823009,
-                  "mae": 0.001453294509921987,
-                  "mean_error": -1.3010232252427011e-05,
-                  "rmse": 0.002014431775239894,
-                  "skill_defined": true,
-                  "skill_vs_zero_active": 0.03727110693836588,
-                  "zero_active_reference_mse": 4.215034373998331e-06
-                },
-                "equity_first_month_end_commitment_v1": {
-                  "count": 113,
-                  "direction_accuracy": 0.5132743362831859,
-                  "mae": 0.0014438257247177063,
-                  "mean_error": -0.00015653730380357366,
-                  "rmse": 0.0020562212104301815,
-                  "skill_defined": true,
-                  "skill_vs_zero_active": -0.014051454226749582,
-                  "zero_active_reference_mse": 4.169458708036661e-06
-                },
-                "four_factor_defense_diversified": {
-                  "count": 113,
-                  "direction_accuracy": 0.6283185840707964,
-                  "mae": 0.0016451242862776025,
-                  "mean_error": -0.00011072697532301596,
-                  "rmse": 0.0021108230489501733,
-                  "skill_defined": true,
-                  "skill_vs_zero_active": 0.05199289478470226,
-                  "zero_active_reference_mse": 4.6999372889377445e-06
-                },
-                "semiconductor_option_dollar_profit_share_confirmation": {
-                  "count": 113,
-                  "direction_accuracy": 0.6017699115044248,
-                  "mae": 0.001413353298390239,
-                  "mean_error": -0.00016401409998067728,
-                  "rmse": 0.0018518355123209468,
-                  "skill_defined": true,
-                  "skill_vs_zero_active": -0.011089476913269891,
-                  "zero_active_reference_mse": 3.391682776842058e-06
-                },
-                "semiconductor_ratchet_protection": {
-                  "count": 113,
-                  "direction_accuracy": 0.6460176991150443,
-                  "mae": 0.0016670248786251844,
-                  "mean_error": -0.0001234470135010605,
-                  "rmse": 0.002186913994508363,
-                  "skill_defined": true,
-                  "skill_vs_zero_active": 0.03577612505462524,
-                  "zero_active_reference_mse": 4.960043972824743e-06
-                },
-                "symmetric_garch_growth_bil_v1": {
-                  "count": 113,
-                  "direction_accuracy": 0.4424778761061947,
-                  "mae": 0.00100254191792309,
-                  "mean_error": -9.801883107254526e-05,
-                  "rmse": 0.0013276616988577886,
-                  "skill_defined": true,
-                  "skill_vs_zero_active": -0.014005232604458628,
-                  "zero_active_reference_mse": 1.7383397342896498e-06
-                },
-                "two_segment_vvix_uncertainty_confirmation_v1": {
-                  "count": 113,
-                  "direction_accuracy": 0.5752212389380531,
-                  "mae": 0.0013371544319900441,
-                  "mean_error": -0.0001885514035027841,
-                  "rmse": 0.0017557328874855287,
-                  "skill_defined": true,
-                  "skill_vs_zero_active": 0.002722575064802446,
-                  "zero_active_reference_mse": 3.0910134884468856e-06
-                }
-              },
-              "pooled": {
-                "count": 904,
-                "direction_accuracy": 0.5752212389380531,
-                "mae": 0.0014867142318513791,
-                "mean_error": -0.00011333093303808271,
-                "rmse": 0.0020005767366854514,
-                "skill_defined": true,
-                "skill_vs_zero_active": 0.020900662192457675,
-                "zero_active_reference_mse": 4.087743832335966e-06
-              }
+            "Python_JSON_float_round_differs_all_pair_rows": 1,
+            "Python_JSON_float_round_differs_selected_pair_rows": 0,
+            "all_eligible_numerators_negative_origins": 80,
+            "all_pairs_continuous_risk_slope_counts": {
+              "decreasing": 59,
+              "flat": 0,
+              "increasing": 3133
             },
-            "SPY": {
-              "experts": {
-                "benchmark_opportunity_joint_tail_v1": {
-                  "count": 113,
-                  "direction_accuracy": 0.584070796460177,
-                  "mae": 0.0016127602429715302,
-                  "mean_error": -4.201929391026448e-05,
-                  "rmse": 0.002096871443734996,
-                  "skill_defined": true,
-                  "skill_vs_zero_active": 0.006143245480741966,
-                  "zero_active_reference_mse": 4.424047863595908e-06
-                },
-                "conditional_covariance_hedge_expert_v1": {
-                  "count": 113,
-                  "direction_accuracy": 0.5132743362831859,
-                  "mae": 0.0008074802602634383,
-                  "mean_error": -2.6879212941136008e-06,
-                  "rmse": 0.0014243155561157793,
-                  "skill_defined": true,
-                  "skill_vs_zero_active": 0.010400573839536076,
-                  "zero_active_reference_mse": 2.0499959375122464e-06
-                },
-                "equity_first_month_end_commitment_v1": {
-                  "count": 113,
-                  "direction_accuracy": 0.5309734513274337,
-                  "mae": 0.0014584899783199948,
-                  "mean_error": -0.00014621499284526025,
-                  "rmse": 0.002037802959678061,
-                  "skill_defined": true,
-                  "skill_vs_zero_active": -0.0018660077401373432,
-                  "zero_active_reference_mse": 4.144906474908341e-06
-                },
-                "four_factor_defense_diversified": {
-                  "count": 113,
-                  "direction_accuracy": 0.6371681415929203,
-                  "mae": 0.0011764455398734015,
-                  "mean_error": -0.00010040466436470253,
-                  "rmse": 0.001567354972526625,
-                  "skill_defined": true,
-                  "skill_vs_zero_active": 0.021816242024953136,
-                  "zero_active_reference_mse": 2.5113907176187287e-06
-                },
-                "semiconductor_option_dollar_profit_share_confirmation": {
-                  "count": 113,
-                  "direction_accuracy": 0.5486725663716814,
-                  "mae": 0.0012323240455386403,
-                  "mean_error": -0.00015369178902236387,
-                  "rmse": 0.0016165939314361775,
-                  "skill_defined": true,
-                  "skill_vs_zero_active": -0.028688965071320682,
-                  "zero_active_reference_mse": 2.5404918570066383e-06
-                },
-                "semiconductor_ratchet_protection": {
-                  "count": 113,
-                  "direction_accuracy": 0.5752212389380531,
-                  "mae": 0.001362941962694594,
-                  "mean_error": -0.00011312470254274706,
-                  "rmse": 0.0017754952224147472,
-                  "skill_defined": true,
-                  "skill_vs_zero_active": 0.003668225609990361,
-                  "zero_active_reference_mse": 3.163989512175897e-06
-                },
-                "symmetric_garch_growth_bil_v1": {
-                  "count": 113,
-                  "direction_accuracy": 0.5752212389380531,
-                  "mae": 0.0010386573718054405,
-                  "mean_error": -8.769652011423183e-05,
-                  "rmse": 0.0013517620279925187,
-                  "skill_defined": true,
-                  "skill_vs_zero_active": 0.017097266093057284,
-                  "zero_active_reference_mse": 1.8590451702776981e-06
-                },
-                "two_segment_vvix_uncertainty_confirmation_v1": {
-                  "count": 113,
-                  "direction_accuracy": 0.49557522123893805,
-                  "mae": 0.0011357974201512467,
-                  "mean_error": -0.00017822909254447064,
-                  "rmse": 0.0014690536808754056,
-                  "skill_defined": true,
-                  "skill_vs_zero_active": -0.015336414766031092,
-                  "zero_active_reference_mse": 2.125520847975185e-06
-                }
-              },
-              "pooled": {
-                "count": 904,
-                "direction_accuracy": 0.5575221238938053,
-                "mae": 0.0012281121027022856,
-                "mean_error": -0.00010300862207976929,
-                "rmse": 0.0016876731647786246,
-                "skill_defined": true,
-                "skill_vs_zero_active": 0.001466414945074379,
-                "zero_active_reference_mse": 2.8524235476338305e-06
-              }
-            }
+            "all_pairs_numerator_sign_counts": {
+              "negative": 3133,
+              "positive": 59,
+              "zero": 0
+            },
+            "all_recorded_pair_rows": 3192,
+            "decision_origins": 121,
+            "evaluable_pair_rows": 3192,
+            "maximum_independent_decimal_score_gap": 1.4210854715202004e-14,
+            "maximum_score_identity_gap": 0.0,
+            "original_unscorable_pair_rows": 0,
+            "scored_origins": 114,
+            "selected_binding_risk_window_counts": {
+              "both": 0,
+              "training_only": 49,
+              "validation_only": 65
+            },
+            "selected_continuous_risk_slope_counts": {
+              "decreasing": 34,
+              "flat": 0,
+              "increasing": 80
+            },
+            "selected_negative_with_any_nonnegative_menu_origins": 0,
+            "selected_numerator_sign_counts": {
+              "negative": 80,
+              "positive": 34,
+              "zero": 0
+            },
+            "source_key_codec_bit_exact_pair_rows": 3192,
+            "unscored_origins": 7
           },
           "unconditional_unit_ridge": {
-            "QQQ": {
-              "experts": {
-                "benchmark_opportunity_joint_tail_v1": {
-                  "count": 113,
-                  "direction_accuracy": 0.5929203539823009,
-                  "mae": 0.0019644966208794312,
-                  "mean_error": -8.278013432808719e-05,
-                  "rmse": 0.002518123028723524,
-                  "skill_defined": true,
-                  "skill_vs_zero_active": 0.01483688542823014,
-                  "zero_active_reference_mse": 6.436440315311654e-06
-                },
-                "conditional_covariance_hedge_expert_v1": {
-                  "count": 113,
-                  "direction_accuracy": 0.584070796460177,
-                  "mae": 0.0014841756497796941,
-                  "mean_error": -3.836076077318585e-05,
-                  "rmse": 0.0020331686703402227,
-                  "skill_defined": true,
-                  "skill_vs_zero_active": 0.019278498046558235,
-                  "zero_active_reference_mse": 4.215034373998331e-06
-                },
-                "equity_first_month_end_commitment_v1": {
-                  "count": 113,
-                  "direction_accuracy": 0.49557522123893805,
-                  "mae": 0.0014570269359056012,
-                  "mean_error": -0.00017070105902022232,
-                  "rmse": 0.0020580754398449616,
-                  "skill_defined": true,
-                  "skill_vs_zero_active": -0.015881152133427,
-                  "zero_active_reference_mse": 4.169458708036661e-06
-                },
-                "four_factor_defense_diversified": {
-                  "count": 113,
-                  "direction_accuracy": 0.6283185840707964,
-                  "mae": 0.0016558694445667544,
-                  "mean_error": -0.00013157103110941553,
-                  "rmse": 0.002121531262717216,
-                  "skill_defined": true,
-                  "skill_vs_zero_active": 0.042350009801136235,
-                  "zero_active_reference_mse": 4.6999372889377445e-06
-                },
-                "semiconductor_option_dollar_profit_share_confirmation": {
-                  "count": 113,
-                  "direction_accuracy": 0.5929203539823009,
-                  "mae": 0.001419021534921246,
-                  "mean_error": -0.00017456473470487763,
-                  "rmse": 0.0018519920831344683,
-                  "skill_defined": true,
-                  "skill_vs_zero_active": -0.0112604573197288,
-                  "zero_active_reference_mse": 3.391682776842058e-06
-                },
-                "semiconductor_ratchet_protection": {
-                  "count": 113,
-                  "direction_accuracy": 0.6371681415929203,
-                  "mae": 0.001684758155958867,
-                  "mean_error": -0.00014166210221317735,
-                  "rmse": 0.0022022791215666826,
-                  "skill_defined": true,
-                  "skill_vs_zero_active": 0.022179368598132188,
-                  "zero_active_reference_mse": 4.960043972824743e-06
-                },
-                "symmetric_garch_growth_bil_v1": {
-                  "count": 113,
-                  "direction_accuracy": 0.4336283185840708,
-                  "mae": 0.0010090928425220808,
-                  "mean_error": -0.0001106296601202668,
-                  "rmse": 0.0013306103456692156,
-                  "skill_defined": true,
-                  "skill_vs_zero_active": -0.018514308266359247,
-                  "zero_active_reference_mse": 1.7383397342896498e-06
-                },
-                "two_segment_vvix_uncertainty_confirmation_v1": {
-                  "count": 113,
-                  "direction_accuracy": 0.5663716814159292,
-                  "mae": 0.001348888735748115,
-                  "mean_error": -0.00020427943135303643,
-                  "rmse": 0.0017716033578478645,
-                  "skill_defined": true,
-                  "skill_vs_zero_active": -0.015388146725572094,
-                  "zero_active_reference_mse": 3.0910134884468856e-06
-                }
-              },
-              "pooled": {
-                "count": 904,
-                "direction_accuracy": 0.5663716814159292,
-                "mae": 0.0015029162400352239,
-                "mean_error": -0.00013181861420278362,
-                "rmse": 0.002012470440759359,
-                "skill_defined": true,
-                "skill_vs_zero_active": 0.009224295590032128,
-                "zero_active_reference_mse": 4.087743832335966e-06
-              }
+            "Python_JSON_float_round_differs_all_pair_rows": 0,
+            "Python_JSON_float_round_differs_selected_pair_rows": 0,
+            "all_eligible_numerators_negative_origins": 92,
+            "all_pairs_continuous_risk_slope_counts": {
+              "decreasing": 22,
+              "flat": 0,
+              "increasing": 3170
             },
-            "SPY": {
-              "experts": {
-                "benchmark_opportunity_joint_tail_v1": {
-                  "count": 113,
-                  "direction_accuracy": 0.5752212389380531,
-                  "mae": 0.0016346423889771454,
-                  "mean_error": -6.191542658002568e-05,
-                  "rmse": 0.0021117800628363713,
-                  "skill_defined": true,
-                  "skill_vs_zero_active": -0.00803950845332202,
-                  "zero_active_reference_mse": 4.424047863595908e-06
-                },
-                "conditional_covariance_hedge_expert_v1": {
-                  "count": 113,
-                  "direction_accuracy": 0.5309734513274337,
-                  "mae": 0.0008255183649338113,
-                  "mean_error": -1.749605302512435e-05,
-                  "rmse": 0.001433984933470293,
-                  "skill_defined": true,
-                  "skill_vs_zero_active": -0.0030813972808256818,
-                  "zero_active_reference_mse": 2.0499959375122464e-06
-                },
-                "equity_first_month_end_commitment_v1": {
-                  "count": 113,
-                  "direction_accuracy": 0.5486725663716814,
-                  "mae": 0.0014592047570545295,
-                  "mean_error": -0.0001498363512721608,
-                  "rmse": 0.0020324492436118043,
-                  "skill_defined": true,
-                  "skill_vs_zero_active": 0.0033912820796412335,
-                  "zero_active_reference_mse": 4.144906474908341e-06
-                },
-                "four_factor_defense_diversified": {
-                  "count": 113,
-                  "direction_accuracy": 0.6283185840707964,
-                  "mae": 0.0011896111563668005,
-                  "mean_error": -0.00011070632336135402,
-                  "rmse": 0.0015717414199564897,
-                  "skill_defined": true,
-                  "skill_vs_zero_active": 0.016333430765715584,
-                  "zero_active_reference_mse": 2.5113907176187287e-06
-                },
-                "semiconductor_option_dollar_profit_share_confirmation": {
-                  "count": 113,
-                  "direction_accuracy": 0.48672566371681414,
-                  "mae": 0.0012373649281057196,
-                  "mean_error": -0.00015370002695681612,
-                  "rmse": 0.0016114717072360327,
-                  "skill_defined": true,
-                  "skill_vs_zero_active": -0.022180431738116013,
-                  "zero_active_reference_mse": 2.5404918570066383e-06
-                },
-                "semiconductor_ratchet_protection": {
-                  "count": 113,
-                  "direction_accuracy": 0.5663716814159292,
-                  "mae": 0.0013807717853358912,
-                  "mean_error": -0.0001207973944651158,
-                  "rmse": 0.0017828826317949893,
-                  "skill_defined": true,
-                  "skill_vs_zero_active": -0.0046400174601823885,
-                  "zero_active_reference_mse": 3.163989512175897e-06
-                },
-                "symmetric_garch_growth_bil_v1": {
-                  "count": 113,
-                  "direction_accuracy": 0.5752212389380531,
-                  "mae": 0.0010399794453682866,
-                  "mean_error": -8.976495237220529e-05,
-                  "rmse": 0.0013480368030005768,
-                  "skill_defined": true,
-                  "skill_vs_zero_active": 0.022507225054371527,
-                  "zero_active_reference_mse": 1.8590451702776981e-06
-                },
-                "two_segment_vvix_uncertainty_confirmation_v1": {
-                  "count": 113,
-                  "direction_accuracy": 0.504424778761062,
-                  "mae": 0.0011436071980929572,
-                  "mean_error": -0.0001834147236049749,
-                  "rmse": 0.00147529906965625,
-                  "skill_defined": true,
-                  "skill_vs_zero_active": -0.023987766105414865,
-                  "zero_active_reference_mse": 2.125520847975185e-06
-                }
-              },
-              "pooled": {
-                "count": 904,
-                "direction_accuracy": 0.5519911504424779,
-                "mae": 0.0012388375030293927,
-                "mean_error": -0.00011095390645472212,
-                "rmse": 0.0016913888875502983,
-                "skill_defined": true,
-                "skill_vs_zero_active": -0.0029353359187314076,
-                "zero_active_reference_mse": 2.8524235476338305e-06
-              }
-            }
+            "all_pairs_numerator_sign_counts": {
+              "negative": 3170,
+              "positive": 22,
+              "zero": 0
+            },
+            "all_recorded_pair_rows": 3192,
+            "decision_origins": 121,
+            "evaluable_pair_rows": 3192,
+            "maximum_independent_decimal_score_gap": 2.842170943040401e-14,
+            "maximum_score_identity_gap": 0.0,
+            "original_unscorable_pair_rows": 0,
+            "scored_origins": 114,
+            "selected_binding_risk_window_counts": {
+              "both": 0,
+              "training_only": 48,
+              "validation_only": 66
+            },
+            "selected_continuous_risk_slope_counts": {
+              "decreasing": 22,
+              "flat": 0,
+              "increasing": 92
+            },
+            "selected_negative_with_any_nonnegative_menu_origins": 0,
+            "selected_numerator_sign_counts": {
+              "negative": 92,
+              "positive": 22,
+              "zero": 0
+            },
+            "source_key_codec_bit_exact_pair_rows": 3192,
+            "unscored_origins": 7
           }
         },
-        "new_allocations": 0,
-        "new_financial_trials": 0,
+        "new_targets_accounts_or_financial_trials": 0,
         "order_authority": false,
-        "pooled_expert_errors_are_independent_observations": false,
-        "unscored_decisions": 7,
-        "zero_active_reference_is_a_funded_strategy": false
+        "original_sign_identity_Decimal_tolerance_unchanged": true,
+        "source_key_codec": "numpy_float64_round12_scaled_binary64_nearest_even",
+        "source_scores_keys_or_target_records_rewritten": false
       },
-      "verification": {
-        "actual_retained_records": 242,
-        "every_nonselected_source_and_both_predictors_checked": true,
-        "exact_prefixes": [
-          "2016-10-05",
-          "2017-03-31",
-          "2017-09-29",
-          "2021-09-30",
-          "2026-09-30"
-        ],
-        "independent_batch_numpy_vs_exact_rational_ridge": true,
-        "maximum_independent_numeric_difference": 2.498001805406602e-16,
-        "source_NET_RF_binary64_values_checked": 236512
+      "terminal_V1_diagnostic_failure": {
+        "path": "evidence/forecast_risk_normalizer_diagnosis_20261106_v1_failure.json",
+        "sha256": "16d1920d9975a3872f8433cfc6a44cfb56796a1f26acc46be9e433646396ed18"
       },
-      "financial_journal_changed": false,
-      "new_allocations_or_financial_trials": 0,
-      "source_models_signals_targets_or_accounts_replayed": false,
-      "new_source_requests": 0,
-      "new_RF_views": 0,
+      "source_scores_keys_or_target_records_rewritten": false,
+      "alternative_rankings_targets_or_financial_trials": 0,
+      "main_drawdown_or_causal_loss_attribution": false,
       "independent_forward_validation": false,
       "investment_objective_verified": false
     },
@@ -1405,6 +1103,14 @@
       "pending": 2,
       "combined_completed": 283,
       "complete_old_projection_commit": "6099ee5fbf756ae0ba903a416f57b7a1db0a842e",
+      "complete_old_projection_path": "docs/research_progress.json",
+      "snapshot_is_current": false
+    },
+    "preserved_active_forecast_amount_diagnosis_snapshot_J1274": {
+      "study_id": "ssd_expert_active_forecast_diagnosis_20261106_v1",
+      "results": "research/workbench/evidence/expert_active_forecast_diagnosis_20261106_v1.json",
+      "results_sha256": "faf83bc722816f0560da9f1081aa39b71d5917607b23abad4d4487d0a0326cbe",
+      "complete_old_projection_commit": "c64a1bee641188f718581d7126874af2d27d9a5f",
       "complete_old_projection_path": "docs/research_progress.json",
       "snapshot_is_current": false
     }

@@ -45,6 +45,31 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
+### Signed score normalizer: negative post-cost forecasts are common, not DD causality
+
+The [complete read-only identity survey](research/workbench/evidence/forecast_risk_normalizer_diagnosis_20261106_v2.json)
+keeps both saved models,121origins,114scored/seven unscored origins each
+and all3192pair rows per model. The recorded selected post-cost active-rate
+numerator is negative on92/114unconditional and80/114contextual dates.
+On exactly those dates every eligible pair numerator is negative.
+At fixed negative numerator, the continuous unrounded risk-normalized score
+increases with risk and binds the smaller risk-window estimate; at positive
+numerator it decreases and binds the larger. No alternative winner is generated.
+
+The [first diagnostic attempt](research/workbench/evidence/forecast_risk_normalizer_diagnosis_20261106_v1_failure.json)
+is retained as a partial failure: JSON/Pythonfloat rounding disagrees with one
+actual NumPyfloat64 source key. The [separate exact-codec Adapter](research/workbench/FORECAST_RISK_NORMALIZER_DIAGNOSIS_V2.md)
+matches every recorded key bit-for-bit with both source NumPy and independent
+scaled nearest-even arithmetic. Only one nonselected contextual key differs
+from the incorrect Python-round assumption; no selected key, source value,
+score, target or funded result changes.
+
+This identifies a mechanical score incentive, **not the cause of the
+20--26%main drawdowns** or a guarantee about another policy.
+The continuous derivative is not the discrete12decimal ranking.
+No new fit,allocation,account or financial trial occurs.
+**J1274:285completions,zero qualifiers; investment goal remains unmet.**
+
 ### Saved-forecast pairs: return and Sharpe gates pass, drawdown still rejects both
 
 The [complete eight-path outcome](research/workbench/evidence/expert_active_forecast_pair_20261106_results_v2.json)

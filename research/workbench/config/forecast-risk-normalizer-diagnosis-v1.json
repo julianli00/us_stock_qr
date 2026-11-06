@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_forecast_risk_normalizer_diagnosis_20261106_v1",
+  "actual_native_event_seq": 176855,
+  "prior_journal_sequence": 1274,
+  "prior_journal_head_sha256": "2056f5365d92c8da4d89d19ae71cc53cd326a1a2fa559f05853a3fd3868b3254",
+  "prior_combined_completed": 285,
+  "source_allocation_tape": {
+    "path": "reports/ssd-continuous-research-v1/expert-active-forecast-pair-20261106-v1/actual-allocation-inputs-resolved-v1.jsonl",
+    "sha256": "c27804c2e8bcfeee38464321984b152f36c10a34611691e7e0dcfba5ba447693"
+  },
+  "source_allocation_freeze": {
+    "path": "reports/ssd-continuous-research-v1/expert-active-forecast-pair-20261106-v1/financial-implementation-freeze-v1.json",
+    "sha256": "6ff55d6a18411ef49b06d352c12f4bc0d4d806462691971c1910e250b1d6e041"
+  },
+  "source_economic_policy": {
+    "path": "config/expert-active-forecast-pair-v1.json",
+    "sha256": "c0b32e3f49e21f648f74096d4b878d8045bd3fd4b1f968e121e18d5f84e074a1"
+  },
+  "source_completed_financial_result": {
+    "path": "evidence/expert_active_forecast_pair_20261106_results_v2.json",
+    "sha256": "7691722f05ac8c09cb97d58ae03c78ad9b6ba731cdfff404527e804be1bea173"
+  },
+  "source_completed_cycle": {
+    "path": "reports/ssd-continuous-research-v1/expert-active-forecast-pair-20261106-v2/completion-v2.json",
+    "sha256": "fe3d2952c9f8dab940c93dee670000fe033ff10148f7de93494c1a2c0aef5f60"
+  },
+  "source_benchmarks": ["SPY", "QQQ"],
+  "source_risk_windows": ["training", "validation"],
+  "source_risk_basis": "original_RF_excess_pair_risk",
+  "annualization_sessions": 252,
+  "cost_amortization_sessions": 21,
+  "recorded_score_decimal_places": 12,
+  "numerator_sign_basis": "actual_binary64_post_cost_numerator_not_a_tolerance_band",
+  "derivative_scope": "continuous_unrounded_score_with_numerator_fixed",
+  "independent_decimal_precision": 50,
+  "independent_score_tolerance": 1e-10,
+  "all_models_all_pairs_and_unscored_origins_retained": true,
+  "alternative_pair_ranking_or_selection_generated": false,
+  "main_drawdown_loss_or_causal_attribution_generated": false,
+  "main_holdings_are_inferred_from_source_scores": false,
+  "new_forecast_fit_risk_fit_targets_or_accounts": 0,
+  "new_financial_trials": 0,
+  "new_source_requests": 0,
+  "new_source_RF_views": 0,
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "order_authority": false
+}

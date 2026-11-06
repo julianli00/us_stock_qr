@@ -1,0 +1,132 @@
+{
+  "actual_authoritative_counts": {
+    "current_journal_event_count": 1274,
+    "current_journal_head_sha256": "2056f5365d92c8da4d89d19ae71cc53cd326a1a2fa559f05853a3fd3868b3254",
+    "new_account_paths": 428,
+    "new_completed_strategy_evaluations": 107,
+    "new_historical_point_gate_passes": 0,
+    "new_pending_candidates": 0,
+    "new_registered_candidates": 118,
+    "new_reviews": 107,
+    "new_technical_failures": 11,
+    "original_completed_configurations": 178,
+    "original_registered_versions": 96,
+    "original_reviews": 94,
+    "total_legacy_plus_ssd_completed_configurations": 285
+  },
+  "alternative_rankings_targets_or_financial_trials": 0,
+  "completed_at": "2026-11-06T02:31:02.745498+00:00",
+  "exact_prefixes": [
+    "2016-10-05",
+    "2017-03-31",
+    "2017-09-29",
+    "2021-09-30",
+    "2026-09-30"
+  ],
+  "financial_journal_changed": false,
+  "implementation_freeze": {
+    "path": "reports/ssd-continuous-research-v1/forecast-risk-normalizer-diagnosis-20261106-v2/diagnostic-implementation-freeze-v2.json",
+    "sha256": "9b7a9f2202a07f70e0b3a84569df6eadb949b214109a19c59f9c9e5066bcf540"
+  },
+  "raw_prices_source_forecasts_pair_rows_or_main_books_exported": false,
+  "retained_record_count": 242,
+  "schema_version": 1,
+  "study_id": "ssd_forecast_risk_normalizer_diagnosis_20261106_v2",
+  "summary": {
+    "alternative_pair_ranking_or_selection_generated": false,
+    "decision_count": 121,
+    "derivative_scope": "continuous_unrounded_score_with_numerator_fixed",
+    "failed_V1_partial_diagnostic_preserved": true,
+    "independent_economic_research_questions_added_by_codec": 0,
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "main_drawdown_or_causal_loss_attribution": false,
+    "models": {
+      "contextual_unit_ridge": {
+        "Python_JSON_float_round_differs_all_pair_rows": 1,
+        "Python_JSON_float_round_differs_selected_pair_rows": 0,
+        "all_eligible_numerators_negative_origins": 80,
+        "all_pairs_continuous_risk_slope_counts": {
+          "decreasing": 59,
+          "flat": 0,
+          "increasing": 3133
+        },
+        "all_pairs_numerator_sign_counts": {
+          "negative": 3133,
+          "positive": 59,
+          "zero": 0
+        },
+        "all_recorded_pair_rows": 3192,
+        "decision_origins": 121,
+        "evaluable_pair_rows": 3192,
+        "maximum_independent_decimal_score_gap": 1.4210854715202004e-14,
+        "maximum_score_identity_gap": 0.0,
+        "original_unscorable_pair_rows": 0,
+        "scored_origins": 114,
+        "selected_binding_risk_window_counts": {
+          "both": 0,
+          "training_only": 49,
+          "validation_only": 65
+        },
+        "selected_continuous_risk_slope_counts": {
+          "decreasing": 34,
+          "flat": 0,
+          "increasing": 80
+        },
+        "selected_negative_with_any_nonnegative_menu_origins": 0,
+        "selected_numerator_sign_counts": {
+          "negative": 80,
+          "positive": 34,
+          "zero": 0
+        },
+        "source_key_codec_bit_exact_pair_rows": 3192,
+        "unscored_origins": 7
+      },
+      "unconditional_unit_ridge": {
+        "Python_JSON_float_round_differs_all_pair_rows": 0,
+        "Python_JSON_float_round_differs_selected_pair_rows": 0,
+        "all_eligible_numerators_negative_origins": 92,
+        "all_pairs_continuous_risk_slope_counts": {
+          "decreasing": 22,
+          "flat": 0,
+          "increasing": 3170
+        },
+        "all_pairs_numerator_sign_counts": {
+          "negative": 3170,
+          "positive": 22,
+          "zero": 0
+        },
+        "all_recorded_pair_rows": 3192,
+        "decision_origins": 121,
+        "evaluable_pair_rows": 3192,
+        "maximum_independent_decimal_score_gap": 2.842170943040401e-14,
+        "maximum_score_identity_gap": 0.0,
+        "original_unscorable_pair_rows": 0,
+        "scored_origins": 114,
+        "selected_binding_risk_window_counts": {
+          "both": 0,
+          "training_only": 48,
+          "validation_only": 66
+        },
+        "selected_continuous_risk_slope_counts": {
+          "decreasing": 22,
+          "flat": 0,
+          "increasing": 92
+        },
+        "selected_negative_with_any_nonnegative_menu_origins": 0,
+        "selected_numerator_sign_counts": {
+          "negative": 92,
+          "positive": 22,
+          "zero": 0
+        },
+        "source_key_codec_bit_exact_pair_rows": 3192,
+        "unscored_origins": 7
+      }
+    },
+    "new_targets_accounts_or_financial_trials": 0,
+    "order_authority": false,
+    "original_sign_identity_Decimal_tolerance_unchanged": true,
+    "source_key_codec": "numpy_float64_round12_scaled_binary64_nearest_even",
+    "source_scores_keys_or_target_records_rewritten": false
+  }
+}

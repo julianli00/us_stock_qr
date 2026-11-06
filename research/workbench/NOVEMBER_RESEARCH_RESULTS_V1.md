@@ -4,6 +4,64 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Signed score normalizer: frequent negative numerators, no causal DD attribution
+
+The [complete V2 read-only survey](evidence/forecast_risk_normalizer_diagnosis_20261106_v2.json)
+consumes only the preserved allocation audit underlying both completed forecast
+portfolios. It does not rerun their score kernel, ridge fit, target builder,
+main account, benchmark or historical verifier. It differs from the earlier
+future-variance/ERC calibration diagnosis: this is an identity of the
+**already recorded** post-cost forecast numerator and risk normalizer.
+
+| Recorded forecaster | Scored / unscored origins | Selected positive / negative / zero numerator | All eligible numerators negative, origins | All-pair positive / negative / zero numerator | Python-round differences: all / selected keys |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Unconditional unit ridge | 114 / 7 | 22 / 92 / 0 | 92 | 22 / 3170 / 0 | 0 / 0 |
+| Contextual unit ridge | 114 / 7 | 34 / 80 / 0 | 80 | 59 / 3133 / 0 | 1 / 0 |
+
+Each model retains all121origins and3192evaluable pair rows, with no source
+unscorable pair dropped. All6384source keys match the actual scalar protocol
+bit-for-bit. No selected negative numerator occurs when a nonnegative menu
+alternative exists. Selected binding risk windows are48training/66validation
+for unconditional and49/65for contextual; there are no equal-risk ties here.
+These overlapping pair/model counts are not independent economic trials.
+
+For the smaller recorded post-cost SPY/QQQ numerator`u`, the minimum of four
+scores is`sqrt252*u/max(risks)`when positive and
+`sqrt252*u/min(risks)`when negative. Thus at fixed negative numerator a larger
+risk estimate increases the continuous unrounded score; a positive numerator
+has the opposite derivative. At zero both risk windows are indifferent.
+The sign survey uses actual binary64 post-cost arithmetic without a neutral
+tolerance band. It does not modify costs, source risks or the saved12decimal key.
+
+This incentive appears frequently in recorded selected states, but does
+**not** establish that it caused the20--26%funded drawdowns. It does not
+reconstruct main holdings or execution, change discrete rankings, produce
+alternative weights, attribute realized loss or validate a protective rule.
+All financial rejections and the original15%DDgate remain.
+
+V1freeze`cc33f3b3`passes23synthetic checks, then its actual pass stops with
+17retained input/result lines at a source-key assumption.
+The [terminal partial failure](evidence/forecast_risk_normalizer_diagnosis_20261106_v1_failure.json)
+is preserved without retrying or patching its frozen code. The source score
+was NumPyfloat64 before serialization; Pythonfloat rounding after JSON can
+differ at a half boundary. The private first counterexample matches original
+NumPy and independent scaled nearest-even rounding exactly. No source key
+or financial outcome is corrected.
+
+The [separate V2 Adapter](FORECAST_RISK_NORMALIZER_DIAGNOSIS_V2.md) restores only
+that source scalar protocol, preserving signed zero and requiring independent
+**bit-exact** agreement. Its24synthetic checks pass first, before freeze
+`9b7a9f22`pins161dependencies,172source references and seven explicit inputs.
+Original sign algebra,50-digit Decimal checks and1e-10score tolerance stay
+unchanged. All four score components of every selected and nonselected pair
+are independently checked; direct identity gap is0 and maximum independent
+Decimal gap is2.842170943040401e-14.
+The actual once-only V2 pass completes in8.240203875000589seconds,
+Darwin peakRSS423673856bytes, retaining242input/result records and five
+exact prefixes. No alternative rank, target, account or financial trial is
+generated. **J1274/285combined completions/zero qualifiers is unchanged;
+investment goal remains unmet.**
+
 ## Saved-forecast pairs: all return/Sharpe gates pass, both rules fail drawdown
 
 The [complete result](evidence/expert_active_forecast_pair_20261106_results_v2.json)
