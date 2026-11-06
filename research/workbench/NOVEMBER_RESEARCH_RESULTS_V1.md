@@ -4,6 +4,62 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Active-return prediction: modest descriptive skill, no new allocation
+
+The [complete read-only result](evidence/expert_active_forecast_diagnosis_20261106_v1.json)
+reports both fixed learners and every original-eight source against both
+original funded NET SPY/QQQ books. A label is one complete month's mean daily
+source NET minus benchmark NET return, not a compound main-portfolio return.
+The [method](EXPERT_ACTIVE_FORECAST_DIAGNOSIS_V1.md) is frozen before real outputs.
+It is not the earlier categorical winning-credit model or past active-risk
+selector, and does not retune the rejected compact trio.
+
+| Predictor | Assessment benchmark | RMSE, bp/day | MAE, bp/day | Three-way direction match | MSE skill versus zero-active reference |
+| --- | --- | ---: | ---: | ---: | ---: |
+| unconditional_unit_ridge | SPY | 16.913889 | 12.388375 | 55.199115% | -0.293534% |
+| unconditional_unit_ridge | QQQ | 20.124704 | 15.029162 | 56.637168% | +0.922430% |
+| contextual_unit_ridge | SPY | 16.876732 | 12.281121 | 55.752212% | +0.146641% |
+| contextual_unit_ridge | QQQ | 20.005767 | 14.867142 | 57.522124% | +2.090066% |
+
+These are **forecast errors and descriptive error scores, not investment
+returns**. The contextual predictor slightly lowers pooled errors, but some
+individual sources remain worse than the zero-active reference. The reference
+is not an implemented strategy, direction matches are not balanced-class
+accuracy, and predicting negative assessment active rates need not create
+profitable allocations. No significance, calibrated probability or future
+financial qualification is established. All source-specific results remain in
+the complete evidence rather than selecting favorable fragments.
+
+Both learners use expanding completed-month observations and a fixed unit
+coefficient prior, including the intercept. The context learner adds the two
+known continuous126-session SPY/BIL and IEF/BIL relative-price returns.
+At each date the preceding prediction is graded before learning that outcome,
+then the next month is forecast. Initial partial October2016 is not learned;
+the final incomplete October2026 is not graded. The seven unmatured decisions
+retain null forecasts, not zero scores. All121dates,119learning months and
+113graded months per source/benchmark/model remain. The904pooled expert-month
+errors per table cell are correlated, not904independent months.
+
+Freeze`5f8e0968`pins158dependencies,1283source references,eight actual
+source/admission clocks and six explicit implementation/test inputs.
+An initial unfrozen lint attempt retains two line-length failures and an unused
+import correction; only formatting/import cleanup follows. The first actual
+34synthetic tests and Ruff pass before the freeze.
+The once-only actual diagnosis completes in9.51553083298495seconds,
+retaining242input/resolved records and236512exact sourceNET/RFbinary64values.
+Exact rational ridge predictions agree with independent batch NumPy within
+2.498001805406602e-16; all nonselected sources are checked and five exact
+prefixes match. The CLI pass does not record peakRSS; the earlier freeze's
+memory reading is not substituted for it.
+
+No source model,signal,target,shadow,main account,control or benchmark is
+replayed. Original admitted defensive views, RF conventions, global rosters,
+PIT restrictions, forward identities and every financial gate remain.
+No predictor, expert or future financial rule is promoted by this diagnosis.
+**No allocations or new financial trials: J1246,114registered,105completed,
+nine technical,zero pending,420funded paths,283combined completions,
+zero qualifiers; investment goal remains unmet.**
+
 ## Macro/defense/hedge trio: lower rolling risk, both complete rules rejected
 
 The [complete result](evidence/macro_defense_hedge_trio_20261106_results_v1.json)

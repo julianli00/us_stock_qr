@@ -45,6 +45,30 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
+### Source active-return forecasts: small descriptive improvement, no new portfolio
+
+The [read-only prediction diagnosis](research/workbench/evidence/expert_active_forecast_diagnosis_20261106_v1.json)
+keeps all eight original complete experts. It compares an unconditional unit-ridge
+learner with the same prior plus two continuous, known SPY/BIL and IEF/BIL price
+contexts. It predicts next-month **assessment active-rate amounts**, not contest
+winning credit, expert allocations or main-account returns.
+
+All121original dates remain, with119complete learning months, seven unscored
+decisions and113graded months per source/benchmark/model. A prior forecast is
+graded before its outcome is assimilated. Contextual pooled RMSE is
+16.876732/20.005767bp per day against SPY/QQQ, versus16.913889/20.124704
+for the unconditional learner. Contextual MSE skill versus the zero-active-rate
+reference is only+0.146641%/+2.090066%; these are **error scores, not returns**.
+Some source-specific skill scores are negative. All sources and both models are
+reported; correlated expert-month errors do not multiply independent evidence.
+
+The [fixed method](research/workbench/EXPERT_ACTIVE_FORECAST_DIAGNOSIS_V1.md),
+34synthetic checks, exact-rational/batch-NumPy agreement and five exact prefixes
+precede closure. No allocation, source model, shadow, main book or benchmark is
+run, and no new RF view is created. Historical causal prediction is not
+independent forward validation or automatic predictor promotion.
+**Zero new financial trials: J1246,283completions,zero qualifiers; goal unmet.**
+
 ### Compact macro/defense/hedge trio: rolling risk improves, both rules rejected
 
 The [complete controlled outcome](research/workbench/evidence/macro_defense_hedge_trio_20261106_results_v1.json)

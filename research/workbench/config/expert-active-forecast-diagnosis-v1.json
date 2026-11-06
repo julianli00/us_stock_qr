@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_expert_active_forecast_diagnosis_20261106_v1",
+  "actual_native_event_seq": 175233,
+  "prior_journal_sequence": 1246,
+  "prior_journal_head_sha256": "ddbdf3b81a693cd6c3b459ec85ea49bfd65ff47617edee7825465c4277274c51",
+  "prior_combined_completed": 283,
+  "canonical_source_policy": {
+    "path": "config/strategy-expert-pool-eight-v1.json",
+    "sha256": "d778bd86a6ed4d9c813336be188b4b071b86860d912da2eaed5b6338665375f3"
+  },
+  "benchmark_books": {
+    "SPY": {
+      "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/SPY-10y-base.csv",
+      "sha256": "fddffb0bcc8e9056decca6af5194c1a494efd371f2522a0248c22236ca1c7e83"
+    },
+    "QQQ": {
+      "path": "reports/ssd-continuous-research-v1/benchmarks-20261027-v1/QQQ-10y-base.csv",
+      "sha256": "097e3305385e2893bb57ec1faf597b43df38e798876fccbf886266195a61c388"
+    }
+  },
+  "initial_decision_session": "2016-10-05",
+  "lookback_sessions": 126,
+  "context_symbols": ["SPY", "IEF", "BIL"],
+  "context": "intercept_and_126_session_SPY_BIL_and_IEF_BIL_relative_price_returns",
+  "learning_clock": "completed_full_exchange_month_intervals",
+  "learning_memory": "expanding_completed_months",
+  "initial_partial_source_month_assimilated": false,
+  "maximum_complete_learning_intervals": 119,
+  "label": "mean_daily_source_NET_minus_original_full_capital_NET_benchmark",
+  "models": ["unconditional_unit_ridge", "contextual_unit_ridge"],
+  "ridge_penalty": 1,
+  "intercept_penalized": true,
+  "source_count": 8,
+  "benchmark_order": ["SPY", "QQQ"],
+  "forecast_available_after_common_source_observations": 126,
+  "unmatured_forecast": null,
+  "grade_forecast_before_assimilating_its_outcome": true,
+  "month_errors_equally_weighted": true,
+  "independent_numeric_tolerance": 1e-12,
+  "source_native_RF_identity_claimed_without_admitted_views": false,
+  "new_source_requests": 0,
+  "new_RF_views": 0,
+  "new_shadow_runs": 0,
+  "new_allocations": 0,
+  "new_funded_paths": 0,
+  "new_financial_candidates": 0,
+  "select_best_expert_or_model_from_complete_results": false,
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "order_authority": false
+}

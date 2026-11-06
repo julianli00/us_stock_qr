@@ -1,0 +1,440 @@
+{
+  "actual_authoritative_counts": {
+    "current_journal_event_count": 1246,
+    "current_journal_head_sha256": "ddbdf3b81a693cd6c3b459ec85ea49bfd65ff47617edee7825465c4277274c51",
+    "new_account_paths": 420,
+    "new_completed_strategy_evaluations": 105,
+    "new_historical_point_gate_passes": 0,
+    "new_pending_candidates": 0,
+    "new_registered_candidates": 114,
+    "new_reviews": 105,
+    "new_technical_failures": 9,
+    "original_completed_configurations": 178,
+    "original_registered_versions": 96,
+    "original_reviews": 94,
+    "total_legacy_plus_ssd_completed_configurations": 283
+  },
+  "actual_native_event_seq": 175233,
+  "all_models_and_all_eight_sources_reported": true,
+  "completed_at": "2026-11-06T01:02:41.743339+00:00",
+  "financial_journal_changed": false,
+  "global_pool_changed": false,
+  "implementation_freeze_sha256": "5f8e096819d965a2ec3e44003e90d1cbde4725d53d9e83847cb165eb2e985383",
+  "new_RF_views": 0,
+  "new_allocations_or_financial_trials": 0,
+  "new_source_requests": 0,
+  "raw_prices_daily_books_or_forecast_rows_exported": false,
+  "schema_version": 1,
+  "source_models_signals_targets_or_accounts_replayed": false,
+  "source_native_RF_identity_claimed_without_admitted_views": false,
+  "study_id": "ssd_expert_active_forecast_diagnosis_20261106_v1",
+  "summary": {
+    "complete_learning_months": 119,
+    "decision_count": 121,
+    "graded_months": 113,
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "models": {
+      "contextual_unit_ridge": {
+        "QQQ": {
+          "experts": {
+            "benchmark_opportunity_joint_tail_v1": {
+              "count": 113,
+              "direction_accuracy": 0.6017699115044248,
+              "mae": 0.00193139480696518,
+              "mean_error": -5.234160486857791e-05,
+              "rmse": 0.002493939073986357,
+              "skill_defined": true,
+              "skill_vs_zero_active": 0.03366895363578504,
+              "zero_active_reference_mse": 6.436440315311654e-06
+            },
+            "conditional_covariance_hedge_expert_v1": {
+              "count": 113,
+              "direction_accuracy": 0.5929203539823009,
+              "mae": 0.001453294509921987,
+              "mean_error": -1.3010232252427011e-05,
+              "rmse": 0.002014431775239894,
+              "skill_defined": true,
+              "skill_vs_zero_active": 0.03727110693836588,
+              "zero_active_reference_mse": 4.215034373998331e-06
+            },
+            "equity_first_month_end_commitment_v1": {
+              "count": 113,
+              "direction_accuracy": 0.5132743362831859,
+              "mae": 0.0014438257247177063,
+              "mean_error": -0.00015653730380357366,
+              "rmse": 0.0020562212104301815,
+              "skill_defined": true,
+              "skill_vs_zero_active": -0.014051454226749582,
+              "zero_active_reference_mse": 4.169458708036661e-06
+            },
+            "four_factor_defense_diversified": {
+              "count": 113,
+              "direction_accuracy": 0.6283185840707964,
+              "mae": 0.0016451242862776025,
+              "mean_error": -0.00011072697532301596,
+              "rmse": 0.0021108230489501733,
+              "skill_defined": true,
+              "skill_vs_zero_active": 0.05199289478470226,
+              "zero_active_reference_mse": 4.6999372889377445e-06
+            },
+            "semiconductor_option_dollar_profit_share_confirmation": {
+              "count": 113,
+              "direction_accuracy": 0.6017699115044248,
+              "mae": 0.001413353298390239,
+              "mean_error": -0.00016401409998067728,
+              "rmse": 0.0018518355123209468,
+              "skill_defined": true,
+              "skill_vs_zero_active": -0.011089476913269891,
+              "zero_active_reference_mse": 3.391682776842058e-06
+            },
+            "semiconductor_ratchet_protection": {
+              "count": 113,
+              "direction_accuracy": 0.6460176991150443,
+              "mae": 0.0016670248786251844,
+              "mean_error": -0.0001234470135010605,
+              "rmse": 0.002186913994508363,
+              "skill_defined": true,
+              "skill_vs_zero_active": 0.03577612505462524,
+              "zero_active_reference_mse": 4.960043972824743e-06
+            },
+            "symmetric_garch_growth_bil_v1": {
+              "count": 113,
+              "direction_accuracy": 0.4424778761061947,
+              "mae": 0.00100254191792309,
+              "mean_error": -9.801883107254526e-05,
+              "rmse": 0.0013276616988577886,
+              "skill_defined": true,
+              "skill_vs_zero_active": -0.014005232604458628,
+              "zero_active_reference_mse": 1.7383397342896498e-06
+            },
+            "two_segment_vvix_uncertainty_confirmation_v1": {
+              "count": 113,
+              "direction_accuracy": 0.5752212389380531,
+              "mae": 0.0013371544319900441,
+              "mean_error": -0.0001885514035027841,
+              "rmse": 0.0017557328874855287,
+              "skill_defined": true,
+              "skill_vs_zero_active": 0.002722575064802446,
+              "zero_active_reference_mse": 3.0910134884468856e-06
+            }
+          },
+          "pooled": {
+            "count": 904,
+            "direction_accuracy": 0.5752212389380531,
+            "mae": 0.0014867142318513791,
+            "mean_error": -0.00011333093303808271,
+            "rmse": 0.0020005767366854514,
+            "skill_defined": true,
+            "skill_vs_zero_active": 0.020900662192457675,
+            "zero_active_reference_mse": 4.087743832335966e-06
+          }
+        },
+        "SPY": {
+          "experts": {
+            "benchmark_opportunity_joint_tail_v1": {
+              "count": 113,
+              "direction_accuracy": 0.584070796460177,
+              "mae": 0.0016127602429715302,
+              "mean_error": -4.201929391026448e-05,
+              "rmse": 0.002096871443734996,
+              "skill_defined": true,
+              "skill_vs_zero_active": 0.006143245480741966,
+              "zero_active_reference_mse": 4.424047863595908e-06
+            },
+            "conditional_covariance_hedge_expert_v1": {
+              "count": 113,
+              "direction_accuracy": 0.5132743362831859,
+              "mae": 0.0008074802602634383,
+              "mean_error": -2.6879212941136008e-06,
+              "rmse": 0.0014243155561157793,
+              "skill_defined": true,
+              "skill_vs_zero_active": 0.010400573839536076,
+              "zero_active_reference_mse": 2.0499959375122464e-06
+            },
+            "equity_first_month_end_commitment_v1": {
+              "count": 113,
+              "direction_accuracy": 0.5309734513274337,
+              "mae": 0.0014584899783199948,
+              "mean_error": -0.00014621499284526025,
+              "rmse": 0.002037802959678061,
+              "skill_defined": true,
+              "skill_vs_zero_active": -0.0018660077401373432,
+              "zero_active_reference_mse": 4.144906474908341e-06
+            },
+            "four_factor_defense_diversified": {
+              "count": 113,
+              "direction_accuracy": 0.6371681415929203,
+              "mae": 0.0011764455398734015,
+              "mean_error": -0.00010040466436470253,
+              "rmse": 0.001567354972526625,
+              "skill_defined": true,
+              "skill_vs_zero_active": 0.021816242024953136,
+              "zero_active_reference_mse": 2.5113907176187287e-06
+            },
+            "semiconductor_option_dollar_profit_share_confirmation": {
+              "count": 113,
+              "direction_accuracy": 0.5486725663716814,
+              "mae": 0.0012323240455386403,
+              "mean_error": -0.00015369178902236387,
+              "rmse": 0.0016165939314361775,
+              "skill_defined": true,
+              "skill_vs_zero_active": -0.028688965071320682,
+              "zero_active_reference_mse": 2.5404918570066383e-06
+            },
+            "semiconductor_ratchet_protection": {
+              "count": 113,
+              "direction_accuracy": 0.5752212389380531,
+              "mae": 0.001362941962694594,
+              "mean_error": -0.00011312470254274706,
+              "rmse": 0.0017754952224147472,
+              "skill_defined": true,
+              "skill_vs_zero_active": 0.003668225609990361,
+              "zero_active_reference_mse": 3.163989512175897e-06
+            },
+            "symmetric_garch_growth_bil_v1": {
+              "count": 113,
+              "direction_accuracy": 0.5752212389380531,
+              "mae": 0.0010386573718054405,
+              "mean_error": -8.769652011423183e-05,
+              "rmse": 0.0013517620279925187,
+              "skill_defined": true,
+              "skill_vs_zero_active": 0.017097266093057284,
+              "zero_active_reference_mse": 1.8590451702776981e-06
+            },
+            "two_segment_vvix_uncertainty_confirmation_v1": {
+              "count": 113,
+              "direction_accuracy": 0.49557522123893805,
+              "mae": 0.0011357974201512467,
+              "mean_error": -0.00017822909254447064,
+              "rmse": 0.0014690536808754056,
+              "skill_defined": true,
+              "skill_vs_zero_active": -0.015336414766031092,
+              "zero_active_reference_mse": 2.125520847975185e-06
+            }
+          },
+          "pooled": {
+            "count": 904,
+            "direction_accuracy": 0.5575221238938053,
+            "mae": 0.0012281121027022856,
+            "mean_error": -0.00010300862207976929,
+            "rmse": 0.0016876731647786246,
+            "skill_defined": true,
+            "skill_vs_zero_active": 0.001466414945074379,
+            "zero_active_reference_mse": 2.8524235476338305e-06
+          }
+        }
+      },
+      "unconditional_unit_ridge": {
+        "QQQ": {
+          "experts": {
+            "benchmark_opportunity_joint_tail_v1": {
+              "count": 113,
+              "direction_accuracy": 0.5929203539823009,
+              "mae": 0.0019644966208794312,
+              "mean_error": -8.278013432808719e-05,
+              "rmse": 0.002518123028723524,
+              "skill_defined": true,
+              "skill_vs_zero_active": 0.01483688542823014,
+              "zero_active_reference_mse": 6.436440315311654e-06
+            },
+            "conditional_covariance_hedge_expert_v1": {
+              "count": 113,
+              "direction_accuracy": 0.584070796460177,
+              "mae": 0.0014841756497796941,
+              "mean_error": -3.836076077318585e-05,
+              "rmse": 0.0020331686703402227,
+              "skill_defined": true,
+              "skill_vs_zero_active": 0.019278498046558235,
+              "zero_active_reference_mse": 4.215034373998331e-06
+            },
+            "equity_first_month_end_commitment_v1": {
+              "count": 113,
+              "direction_accuracy": 0.49557522123893805,
+              "mae": 0.0014570269359056012,
+              "mean_error": -0.00017070105902022232,
+              "rmse": 0.0020580754398449616,
+              "skill_defined": true,
+              "skill_vs_zero_active": -0.015881152133427,
+              "zero_active_reference_mse": 4.169458708036661e-06
+            },
+            "four_factor_defense_diversified": {
+              "count": 113,
+              "direction_accuracy": 0.6283185840707964,
+              "mae": 0.0016558694445667544,
+              "mean_error": -0.00013157103110941553,
+              "rmse": 0.002121531262717216,
+              "skill_defined": true,
+              "skill_vs_zero_active": 0.042350009801136235,
+              "zero_active_reference_mse": 4.6999372889377445e-06
+            },
+            "semiconductor_option_dollar_profit_share_confirmation": {
+              "count": 113,
+              "direction_accuracy": 0.5929203539823009,
+              "mae": 0.001419021534921246,
+              "mean_error": -0.00017456473470487763,
+              "rmse": 0.0018519920831344683,
+              "skill_defined": true,
+              "skill_vs_zero_active": -0.0112604573197288,
+              "zero_active_reference_mse": 3.391682776842058e-06
+            },
+            "semiconductor_ratchet_protection": {
+              "count": 113,
+              "direction_accuracy": 0.6371681415929203,
+              "mae": 0.001684758155958867,
+              "mean_error": -0.00014166210221317735,
+              "rmse": 0.0022022791215666826,
+              "skill_defined": true,
+              "skill_vs_zero_active": 0.022179368598132188,
+              "zero_active_reference_mse": 4.960043972824743e-06
+            },
+            "symmetric_garch_growth_bil_v1": {
+              "count": 113,
+              "direction_accuracy": 0.4336283185840708,
+              "mae": 0.0010090928425220808,
+              "mean_error": -0.0001106296601202668,
+              "rmse": 0.0013306103456692156,
+              "skill_defined": true,
+              "skill_vs_zero_active": -0.018514308266359247,
+              "zero_active_reference_mse": 1.7383397342896498e-06
+            },
+            "two_segment_vvix_uncertainty_confirmation_v1": {
+              "count": 113,
+              "direction_accuracy": 0.5663716814159292,
+              "mae": 0.001348888735748115,
+              "mean_error": -0.00020427943135303643,
+              "rmse": 0.0017716033578478645,
+              "skill_defined": true,
+              "skill_vs_zero_active": -0.015388146725572094,
+              "zero_active_reference_mse": 3.0910134884468856e-06
+            }
+          },
+          "pooled": {
+            "count": 904,
+            "direction_accuracy": 0.5663716814159292,
+            "mae": 0.0015029162400352239,
+            "mean_error": -0.00013181861420278362,
+            "rmse": 0.002012470440759359,
+            "skill_defined": true,
+            "skill_vs_zero_active": 0.009224295590032128,
+            "zero_active_reference_mse": 4.087743832335966e-06
+          }
+        },
+        "SPY": {
+          "experts": {
+            "benchmark_opportunity_joint_tail_v1": {
+              "count": 113,
+              "direction_accuracy": 0.5752212389380531,
+              "mae": 0.0016346423889771454,
+              "mean_error": -6.191542658002568e-05,
+              "rmse": 0.0021117800628363713,
+              "skill_defined": true,
+              "skill_vs_zero_active": -0.00803950845332202,
+              "zero_active_reference_mse": 4.424047863595908e-06
+            },
+            "conditional_covariance_hedge_expert_v1": {
+              "count": 113,
+              "direction_accuracy": 0.5309734513274337,
+              "mae": 0.0008255183649338113,
+              "mean_error": -1.749605302512435e-05,
+              "rmse": 0.001433984933470293,
+              "skill_defined": true,
+              "skill_vs_zero_active": -0.0030813972808256818,
+              "zero_active_reference_mse": 2.0499959375122464e-06
+            },
+            "equity_first_month_end_commitment_v1": {
+              "count": 113,
+              "direction_accuracy": 0.5486725663716814,
+              "mae": 0.0014592047570545295,
+              "mean_error": -0.0001498363512721608,
+              "rmse": 0.0020324492436118043,
+              "skill_defined": true,
+              "skill_vs_zero_active": 0.0033912820796412335,
+              "zero_active_reference_mse": 4.144906474908341e-06
+            },
+            "four_factor_defense_diversified": {
+              "count": 113,
+              "direction_accuracy": 0.6283185840707964,
+              "mae": 0.0011896111563668005,
+              "mean_error": -0.00011070632336135402,
+              "rmse": 0.0015717414199564897,
+              "skill_defined": true,
+              "skill_vs_zero_active": 0.016333430765715584,
+              "zero_active_reference_mse": 2.5113907176187287e-06
+            },
+            "semiconductor_option_dollar_profit_share_confirmation": {
+              "count": 113,
+              "direction_accuracy": 0.48672566371681414,
+              "mae": 0.0012373649281057196,
+              "mean_error": -0.00015370002695681612,
+              "rmse": 0.0016114717072360327,
+              "skill_defined": true,
+              "skill_vs_zero_active": -0.022180431738116013,
+              "zero_active_reference_mse": 2.5404918570066383e-06
+            },
+            "semiconductor_ratchet_protection": {
+              "count": 113,
+              "direction_accuracy": 0.5663716814159292,
+              "mae": 0.0013807717853358912,
+              "mean_error": -0.0001207973944651158,
+              "rmse": 0.0017828826317949893,
+              "skill_defined": true,
+              "skill_vs_zero_active": -0.0046400174601823885,
+              "zero_active_reference_mse": 3.163989512175897e-06
+            },
+            "symmetric_garch_growth_bil_v1": {
+              "count": 113,
+              "direction_accuracy": 0.5752212389380531,
+              "mae": 0.0010399794453682866,
+              "mean_error": -8.976495237220529e-05,
+              "rmse": 0.0013480368030005768,
+              "skill_defined": true,
+              "skill_vs_zero_active": 0.022507225054371527,
+              "zero_active_reference_mse": 1.8590451702776981e-06
+            },
+            "two_segment_vvix_uncertainty_confirmation_v1": {
+              "count": 113,
+              "direction_accuracy": 0.504424778761062,
+              "mae": 0.0011436071980929572,
+              "mean_error": -0.0001834147236049749,
+              "rmse": 0.00147529906965625,
+              "skill_defined": true,
+              "skill_vs_zero_active": -0.023987766105414865,
+              "zero_active_reference_mse": 2.125520847975185e-06
+            }
+          },
+          "pooled": {
+            "count": 904,
+            "direction_accuracy": 0.5519911504424779,
+            "mae": 0.0012388375030293927,
+            "mean_error": -0.00011095390645472212,
+            "rmse": 0.0016913888875502983,
+            "skill_defined": true,
+            "skill_vs_zero_active": -0.0029353359187314076,
+            "zero_active_reference_mse": 2.8524235476338305e-06
+          }
+        }
+      }
+    },
+    "new_allocations": 0,
+    "new_financial_trials": 0,
+    "order_authority": false,
+    "pooled_expert_errors_are_independent_observations": false,
+    "unscored_decisions": 7,
+    "zero_active_reference_is_a_funded_strategy": false
+  },
+  "verification": {
+    "actual_retained_records": 242,
+    "every_nonselected_source_and_both_predictors_checked": true,
+    "exact_prefixes": [
+      "2016-10-05",
+      "2017-03-31",
+      "2017-09-29",
+      "2021-09-30",
+      "2026-09-30"
+    ],
+    "independent_batch_numpy_vs_exact_rational_ridge": true,
+    "maximum_independent_numeric_difference": 2.498001805406602e-16,
+    "source_NET_RF_binary64_values_checked": 236512
+  }
+}
