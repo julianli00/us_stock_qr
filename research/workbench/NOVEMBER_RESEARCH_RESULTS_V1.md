@@ -4,6 +4,71 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Read-only J1464 protective-source mass: influence stayed small
+
+The [complete allocation diagnosis](evidence/protective_source_mass_audit_20261106_v1.json)
+matches all121cached five-source and six-source initial/month-end
+origins. The [frozen Module](PROTECTIVE_SOURCE_MASS_AUDIT_V1.md) separates
+the added expert's direct target term from redistribution among the
+retained five. These signed algebraic terms are not executable targets,
+short positions,main capital,realized PnL or causal drawdown attribution.
+
+| Recorded diagnostic | All121 origins | Mature119 origins |
+| --- | ---: | ---: |
+| Added-source mean statistical mass | 0.499493% | 0.227776% |
+| Added-source maximum statistical mass | 16.666667% | 2.475403% |
+| Added-source minimum statistical mass | 0.002503% | 0.002503% |
+| Exact binary64zero-mass origins | 0 | 0 |
+| Retained redistribution has larger L1 | 115 | 115 |
+| Added direct term has larger L1 | 6 | 4 |
+| Mean direct-term L1 | 0.513976pp | 0.260949pp |
+| Mean retained-redistribution L1 | 1.241386pp | 1.262249pp |
+| Mean stored-target-change L1 | 1.733893pp | 1.501368pp |
+
+The two initial unscored states retain uniform sixths;their larger mass
+must not be confused with mature learned influence. All recorded added
+mass stays positive and never exceeds its initial sixth. These are
+strict binary64descriptions,not exclusion thresholds or proof of
+independent risks. The averages weight source origins equally,not days
+or capital. L1components can oppose one another and are not additive
+percentages of realized performance or model turnover.
+
+During mature origins,the added-source direct BILterm averages
++0.039870percentage points,retained redistribution+0.088696points,
+and the stored BILtarget difference+0.128566points. The protective
+source's own BILopinion averages25.596709%,but that opinion is not
+its main-account capital weight or an actual held position.
+
+All retained five-source opinions,known dates,12455NETvalues and
+canonical logs match bit-exactly. Nevertheless88of595retained loss
+labels differ across22of119complete months. Labels were compared,
+not regenerated. This is not an isolated normalization counterfactual:
+roster dimension,logN and the adaptive path changed together.
+
+All121exact Fraction identities pass. Maximum signed reconstruction
+residual is1.752071e-16;independent term/coefficient/stored-target
+differences are8.239937e-17,1.019150e-16and1.110223e-16,
+below the unchanged1e-12limit. A tiny cancellation statistic of
+-1.762913e-16is retained rather than clipped. Five prefixes are exact;
+242new input/resolution records retain484original source records.
+
+Freeze`073a6276`and checkpoint756(saved2026-11-06T18:07:28.208166+00:00,
+covered_seq191393,original native191396) precede the single analysis.
+The original save receipt was linked before launch;actual start/process
+receipts contain checkpoint fields. PID93892completed once in
+12.763856083seconds with Darwin peakRSS462954496bytes.
+The first synthetic batch's38passes/one fixture TypeError and six
+prototypes remain failed. V2's39passes and six new prototypes fix only
+negative-literal fixture precedence and failure provenance;the numerical
+Module and1e-12criterion do not change.
+
+**No new learner,target,shadow,main account,BT or financial trial.
+Financial J1464/135registered/123completed/12workflow terminations/
+zero pending/492funded paths/301combined completions/zero qualifiers
+is unchanged.** This new diagnosis is separate from the rejected
+financial result below and the historical12-book loss accounting.
+Investment objective unmet;no independent forward validation is claimed.
+
 ## Controlled protective sixth source: four paths complete, whole law rejected
 
 The [complete outcome](evidence/protective_six_adaptive_hedge_20261106_results_v1.json)

@@ -1,0 +1,717 @@
+{
+  "actual_authoritative_counts": {
+    "current_journal_event_count": 1464,
+    "current_journal_head_sha256": "0c971a26bbfebacf207e68e598b01c86af7d38680b30c21c2fc05647efb2d555",
+    "new_account_paths": 492,
+    "new_completed_strategy_evaluations": 123,
+    "new_historical_point_gate_passes": 0,
+    "new_pending_candidates": 0,
+    "new_registered_candidates": 135,
+    "new_reviews": 123,
+    "new_technical_failures": 12,
+    "original_completed_configurations": 178,
+    "original_registered_versions": 96,
+    "original_reviews": 94,
+    "total_legacy_plus_ssd_completed_configurations": 301
+  },
+  "actual_input_resolved_record_count": 242,
+  "completed_at": "2026-11-06T18:08:22.949183+00:00",
+  "exact_prefixes": [
+    "2016-10-05",
+    "2016-11-30",
+    "2017-09-29",
+    "2021-09-30",
+    "2026-09-30"
+  ],
+  "global_pool_changed": false,
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "matched_original_source_record_count": 484,
+  "new_financial_trials": 0,
+  "order_authority": false,
+  "raw_prices_targets_returns_or_individual_allocation_rows_exported": false,
+  "schema_version": 1,
+  "source_algorithms_or_main_returns_recomputed": false,
+  "study_id": "ssd_protective_source_mass_audit_20261106_v1",
+  "summary": {
+    "all_exact_signed_algebra_identities": true,
+    "all_origins": {
+      "absolute_components_minus_net_L1": {
+        "maximum": 0.0027984043203082283,
+        "mean": 0.00021469259992625632,
+        "minimum": -1.7629127324614302e-16,
+        "observations": 121
+      },
+      "added_source_binary64_zero_origins": 0,
+      "added_source_opinion_BIL_weight": {
+        "maximum": 0.8009517763200044,
+        "mean": 0.25177676964009044,
+        "minimum": 0.0,
+        "observations": 121
+      },
+      "added_source_opinion_equity_weight": {
+        "maximum": 0.5200746627242102,
+        "mean": 0.3052925954648317,
+        "minimum": 0.06110249844119608,
+        "observations": 121
+      },
+      "added_source_recorded_binary64_mass": {
+        "maximum": 0.16666666666666666,
+        "mean": 0.004994934621057659,
+        "minimum": 2.5028055991750687e-05,
+        "observations": 121
+      },
+      "added_source_strict_above_initial_sixth_origins": 0,
+      "direct_added_source_L1": {
+        "maximum": 0.17826661052308507,
+        "mean": 0.005139762874411627,
+        "minimum": 3.513899850109638e-05,
+        "observations": 121
+      },
+      "direct_term_strict_larger_L1_origins": 6,
+      "origins": 121,
+      "per_asset_signed_terms": {
+        "BIL": {
+          "direct_added_source_term": {
+            "maximum": 0.006197063068090152,
+            "mean": 9.518982279206247e-05,
+            "minimum": -0.031212576939208776,
+            "observations": 121
+          },
+          "retained_source_redistribution_term": {
+            "maximum": 0.011764035612460231,
+            "mean": 0.0008722992910768728,
+            "minimum": -0.008882496704698081,
+            "observations": 121
+          },
+          "stored_target_change": {
+            "maximum": 0.011814130966910308,
+            "mean": 0.0009674891138689313,
+            "minimum": -0.031212576939208786,
+            "observations": 121
+          }
+        },
+        "GLD": {
+          "direct_added_source_term": {
+            "maximum": 0.07167705587007087,
+            "mean": 0.0018542532897396792,
+            "minimum": -0.005103968050748943,
+            "observations": 121
+          },
+          "retained_source_redistribution_term": {
+            "maximum": 0.02370140633739501,
+            "mean": 0.00306711129373164,
+            "minimum": -0.02557141125047235,
+            "observations": 121
+          },
+          "stored_target_change": {
+            "maximum": 0.07167705587007087,
+            "mean": 0.004921364583471314,
+            "minimum": -0.02565367896469073,
+            "observations": 121
+          }
+        },
+        "IEF": {
+          "direct_added_source_term": {
+            "maximum": 0.0,
+            "mean": -0.000313761840746751,
+            "minimum": -0.024908857831691326,
+            "observations": 121
+          },
+          "retained_source_redistribution_term": {
+            "maximum": 0.0027945089362990177,
+            "mean": 9.368248182332992e-06,
+            "minimum": -0.004161111639885376,
+            "observations": 121
+          },
+          "stored_target_change": {
+            "maximum": 0.002283148761765136,
+            "mean": -0.00030439359256441813,
+            "minimum": -0.024908857831691333,
+            "observations": 121
+          }
+        },
+        "IJR": {
+          "direct_added_source_term": {
+            "maximum": 0.0,
+            "mean": -0.00017565130729972012,
+            "minimum": -0.006376679312396225,
+            "observations": 121
+          },
+          "retained_source_redistribution_term": {
+            "maximum": 0.0027252666755312126,
+            "mean": 0.00012610082771167885,
+            "minimum": -0.0014476741817249722,
+            "observations": 121
+          },
+          "stored_target_change": {
+            "maximum": 0.0025488400205702366,
+            "mean": -4.955047958804166e-05,
+            "minimum": -0.00637667931239623,
+            "observations": 121
+          }
+        },
+        "MTUM": {
+          "direct_added_source_term": {
+            "maximum": 6.762464500437648e-05,
+            "mean": -0.0002449161989857373,
+            "minimum": -0.006129499859967191,
+            "observations": 121
+          },
+          "retained_source_redistribution_term": {
+            "maximum": 0.002077294589249769,
+            "mean": -0.0004634731649599282,
+            "minimum": -0.003342486989852331,
+            "observations": 121
+          },
+          "stored_target_change": {
+            "maximum": 0.0020801923235774546,
+            "mean": -0.0007083893639456654,
+            "minimum": -0.006129499859967205,
+            "observations": 121
+          }
+        },
+        "PKW": {
+          "direct_added_source_term": {
+            "maximum": 0.0,
+            "mean": -0.00017565130729972012,
+            "minimum": -0.006376679312396225,
+            "observations": 121
+          },
+          "retained_source_redistribution_term": {
+            "maximum": 0.0027252666755312126,
+            "mean": 0.00012610082771167885,
+            "minimum": -0.0014476741817249722,
+            "observations": 121
+          },
+          "stored_target_change": {
+            "maximum": 0.0025488400205702366,
+            "mean": -4.955047958804166e-05,
+            "minimum": -0.00637667931239623,
+            "observations": 121
+          }
+        },
+        "QQQ": {
+          "direct_added_source_term": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "observations": 121
+          },
+          "retained_source_redistribution_term": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "observations": 121
+          },
+          "stored_target_change": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "observations": 121
+          }
+        },
+        "QUAL": {
+          "direct_added_source_term": {
+            "maximum": 6.762464500437648e-05,
+            "mean": -0.0002449161989857373,
+            "minimum": -0.006129499859967191,
+            "observations": 121
+          },
+          "retained_source_redistribution_term": {
+            "maximum": 0.002077294589249769,
+            "mean": -0.0004634731649599282,
+            "minimum": -0.003342486989852331,
+            "observations": 121
+          },
+          "stored_target_change": {
+            "maximum": 0.0020801923235774546,
+            "mean": -0.0007083893639456654,
+            "minimum": -0.006129499859967205,
+            "observations": 121
+          }
+        },
+        "SOXX": {
+          "direct_added_source_term": {
+            "maximum": 0.017456249391471654,
+            "mean": -0.00012799158786825027,
+            "minimum": -0.00294166208250236,
+            "observations": 121
+          },
+          "retained_source_redistribution_term": {
+            "maximum": 0.005461327691645015,
+            "mean": -0.002342805971762258,
+            "minimum": -0.011337812908711555,
+            "observations": 121
+          },
+          "stored_target_change": {
+            "maximum": 0.017456249391471668,
+            "mean": -0.002470797559630511,
+            "minimum": -0.011390345981340588,
+            "observations": 121
+          }
+        },
+        "SPY": {
+          "direct_added_source_term": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "observations": 121
+          },
+          "retained_source_redistribution_term": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "observations": 121
+          },
+          "stored_target_change": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "observations": 121
+          }
+        },
+        "TLT": {
+          "direct_added_source_term": {
+            "maximum": 0.0,
+            "mean": -0.00017672227337435102,
+            "minimum": -0.013892112760595182,
+            "observations": 121
+          },
+          "retained_source_redistribution_term": {
+            "maximum": 0.0027991986868320267,
+            "mean": -4.281856812234869e-06,
+            "minimum": -0.004261477236954815,
+            "observations": 121
+          },
+          "stored_target_change": {
+            "maximum": 0.002288080608602139,
+            "mean": -0.00018100413018658592,
+            "minimum": -0.013892112760595182,
+            "observations": 121
+          }
+        },
+        "USMV": {
+          "direct_added_source_term": {
+            "maximum": 6.762464500437648e-05,
+            "mean": -0.0002449161989857373,
+            "minimum": -0.006129499859967191,
+            "observations": 121
+          },
+          "retained_source_redistribution_term": {
+            "maximum": 0.002077294589249769,
+            "mean": -0.0004634731649599282,
+            "minimum": -0.003342486989852331,
+            "observations": 121
+          },
+          "stored_target_change": {
+            "maximum": 0.0020801923235774546,
+            "mean": -0.0007083893639456654,
+            "minimum": -0.006129499859967205,
+            "observations": 121
+          }
+        },
+        "VLUE": {
+          "direct_added_source_term": {
+            "maximum": 6.762464500437648e-05,
+            "mean": -0.0002449161989857373,
+            "minimum": -0.006129499859967191,
+            "observations": 121
+          },
+          "retained_source_redistribution_term": {
+            "maximum": 0.002077294589249769,
+            "mean": -0.0004634731649599282,
+            "minimum": -0.003342486989852331,
+            "observations": 121
+          },
+          "stored_target_change": {
+            "maximum": 0.0020801923235774546,
+            "mean": -0.0007083893639456654,
+            "minimum": -0.006129499859967205,
+            "observations": 121
+          }
+        },
+        "XLK": {
+          "direct_added_source_term": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "observations": 121
+          },
+          "retained_source_redistribution_term": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "observations": 121
+          },
+          "stored_target_change": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "observations": 121
+          }
+        }
+      },
+      "retained_redistribution_L1": {
+        "maximum": 0.05114282250094474,
+        "mean": 0.01241385504139423,
+        "minimum": 1.3600232051658169e-16,
+        "observations": 121
+      },
+      "retained_term_strict_larger_L1_origins": 115,
+      "stored_target_change_L1": {
+        "maximum": 0.17826661052308515,
+        "mean": 0.017338925315879602,
+        "minimum": 0.0013592578714286421,
+        "observations": 121
+      }
+    },
+    "allocation_mass_is_main_PNL_or_causal_drawdown_attribution": false,
+    "binary64_zero_is_analytic_zero_or_expert_exclusion": false,
+    "initial_unscored_decisions": 2,
+    "loss_normalization_isolated_counterfactual": false,
+    "matched_decisions": 121,
+    "mature_decisions": 119,
+    "mature_origins": {
+      "absolute_components_minus_net_L1": {
+        "maximum": 0.0027984043203082283,
+        "mean": 0.00021830087891661266,
+        "minimum": -1.7629127324614302e-16,
+        "observations": 119
+      },
+      "added_source_binary64_zero_origins": 0,
+      "added_source_opinion_BIL_weight": {
+        "maximum": 0.8009517763200044,
+        "mean": 0.25596708948207886,
+        "minimum": 0.0,
+        "observations": 119
+      },
+      "added_source_opinion_equity_weight": {
+        "maximum": 0.5200746627242102,
+        "mean": 0.302382192651676,
+        "minimum": 0.06110249844119608,
+        "observations": 119
+      },
+      "added_source_recorded_binary64_mass": {
+        "maximum": 0.024754031910028652,
+        "mean": 0.0022777626539045664,
+        "minimum": 2.5028055991750687e-05,
+        "observations": 119
+      },
+      "added_source_strict_above_initial_sixth_origins": 0,
+      "direct_added_source_L1": {
+        "maximum": 0.025148394457942404,
+        "mean": 0.002609489633043369,
+        "minimum": 3.513899850109638e-05,
+        "observations": 119
+      },
+      "direct_term_strict_larger_L1_origins": 4,
+      "origins": 119,
+      "per_asset_signed_terms": {
+        "BIL": {
+          "direct_added_source_term": {
+            "maximum": 0.006197063068090152,
+            "mean": 0.0003987015039397753,
+            "minimum": -0.0006155250585776468,
+            "observations": 119
+          },
+          "retained_source_redistribution_term": {
+            "maximum": 0.011764035612460231,
+            "mean": 0.0008869597833638794,
+            "minimum": -0.008882496704698081,
+            "observations": 119
+          },
+          "stored_target_change": {
+            "maximum": 0.011814130966910308,
+            "mean": 0.0012856612873036503,
+            "minimum": -0.00849014995315156,
+            "observations": 119
+          }
+        },
+        "GLD": {
+          "direct_added_source_term": {
+            "maximum": 0.010035140330813722,
+            "mean": 0.0008009190884601731,
+            "minimum": -0.005103968050748943,
+            "observations": 119
+          },
+          "retained_source_redistribution_term": {
+            "maximum": 0.02370140633739501,
+            "mean": 0.00311865938270192,
+            "minimum": -0.02557141125047235,
+            "observations": 119
+          },
+          "stored_target_change": {
+            "maximum": 0.026209693070496587,
+            "mean": 0.003919578471162088,
+            "minimum": -0.02565367896469073,
+            "observations": 119
+          }
+        },
+        "IEF": {
+          "direct_added_source_term": {
+            "maximum": 0.0,
+            "mean": -1.9974905222070617e-05,
+            "minimum": -0.0008198081819740976,
+            "observations": 119
+          },
+          "retained_source_redistribution_term": {
+            "maximum": 0.0027945089362990177,
+            "mean": 9.52569773161615e-06,
+            "minimum": -0.004161111639885376,
+            "observations": 119
+          },
+          "stored_target_change": {
+            "maximum": 0.002283148761765136,
+            "mean": -1.0449207490454728e-05,
+            "minimum": -0.0049809198218594836,
+            "observations": 119
+          }
+        },
+        "IJR": {
+          "direct_added_source_term": {
+            "maximum": 0.0,
+            "mean": -7.605018537577295e-05,
+            "minimum": -0.0018818012921698651,
+            "observations": 119
+          },
+          "retained_source_redistribution_term": {
+            "maximum": 0.0027252666755312126,
+            "mean": 0.000128220169353892,
+            "minimum": -0.0014476741817249722,
+            "observations": 119
+          },
+          "stored_target_change": {
+            "maximum": 0.0025488400205702366,
+            "mean": 5.21699839781187e-05,
+            "minimum": -0.0023248287615213054,
+            "observations": 119
+          }
+        },
+        "MTUM": {
+          "direct_added_source_term": {
+            "maximum": 6.762464500437648e-05,
+            "mean": -0.00016444636327447816,
+            "minimum": -0.0020120873354261323,
+            "observations": 119
+          },
+          "retained_source_redistribution_term": {
+            "maximum": 0.002077294589249769,
+            "mean": -0.0004712626299172377,
+            "minimum": -0.003342486989852331,
+            "observations": 119
+          },
+          "stored_target_change": {
+            "maximum": 0.0020801923235774546,
+            "mean": -0.0006357089931917157,
+            "minimum": -0.004259510348349968,
+            "observations": 119
+          }
+        },
+        "PKW": {
+          "direct_added_source_term": {
+            "maximum": 0.0,
+            "mean": -7.605018537577295e-05,
+            "minimum": -0.0018818012921698651,
+            "observations": 119
+          },
+          "retained_source_redistribution_term": {
+            "maximum": 0.0027252666755312126,
+            "mean": 0.000128220169353892,
+            "minimum": -0.0014476741817249722,
+            "observations": 119
+          },
+          "stored_target_change": {
+            "maximum": 0.0025488400205702366,
+            "mean": 5.21699839781187e-05,
+            "minimum": -0.0023248287615213054,
+            "observations": 119
+          }
+        },
+        "QQQ": {
+          "direct_added_source_term": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "observations": 119
+          },
+          "retained_source_redistribution_term": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "observations": 119
+          },
+          "stored_target_change": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "observations": 119
+          }
+        },
+        "QUAL": {
+          "direct_added_source_term": {
+            "maximum": 6.762464500437648e-05,
+            "mean": -0.00016444636327447816,
+            "minimum": -0.0020120873354261323,
+            "observations": 119
+          },
+          "retained_source_redistribution_term": {
+            "maximum": 0.002077294589249769,
+            "mean": -0.0004712626299172377,
+            "minimum": -0.003342486989852331,
+            "observations": 119
+          },
+          "stored_target_change": {
+            "maximum": 0.0020801923235774546,
+            "mean": -0.0006357089931917157,
+            "minimum": -0.004259510348349968,
+            "observations": 119
+          }
+        },
+        "SOXX": {
+          "direct_added_source_term": {
+            "maximum": 0.0003336905718146665,
+            "mean": -0.0003539724902196696,
+            "minimum": -0.00294166208250236,
+            "observations": 119
+          },
+          "retained_source_redistribution_term": {
+            "maximum": 0.005461327691645015,
+            "mean": -0.002382180862043976,
+            "minimum": -0.011337812908711555,
+            "observations": 119
+          },
+          "stored_target_change": {
+            "maximum": 0.005726645688949407,
+            "mean": -0.002736153352263649,
+            "minimum": -0.011390345981340588,
+            "observations": 119
+          }
+        },
+        "SPY": {
+          "direct_added_source_term": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "observations": 119
+          },
+          "retained_source_redistribution_term": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "observations": 119
+          },
+          "stored_target_change": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "observations": 119
+          }
+        },
+        "TLT": {
+          "direct_added_source_term": {
+            "maximum": 0.0,
+            "mean": -1.578737310874977e-05,
+            "minimum": -0.000795268791178016,
+            "observations": 119
+          },
+          "retained_source_redistribution_term": {
+            "maximum": 0.0027991986868320267,
+            "mean": -4.353820792272293e-06,
+            "minimum": -0.004261477236954815,
+            "observations": 119
+          },
+          "stored_target_change": {
+            "maximum": 0.002288080608602139,
+            "mean": -2.0141193901022245e-05,
+            "minimum": -0.00505674602813283,
+            "observations": 119
+          }
+        },
+        "USMV": {
+          "direct_added_source_term": {
+            "maximum": 6.762464500437648e-05,
+            "mean": -0.00016444636327447816,
+            "minimum": -0.0020120873354261323,
+            "observations": 119
+          },
+          "retained_source_redistribution_term": {
+            "maximum": 0.002077294589249769,
+            "mean": -0.0004712626299172377,
+            "minimum": -0.003342486989852331,
+            "observations": 119
+          },
+          "stored_target_change": {
+            "maximum": 0.0020801923235774546,
+            "mean": -0.0006357089931917157,
+            "minimum": -0.004259510348349968,
+            "observations": 119
+          }
+        },
+        "VLUE": {
+          "direct_added_source_term": {
+            "maximum": 6.762464500437648e-05,
+            "mean": -0.00016444636327447816,
+            "minimum": -0.0020120873354261323,
+            "observations": 119
+          },
+          "retained_source_redistribution_term": {
+            "maximum": 0.002077294589249769,
+            "mean": -0.0004712626299172377,
+            "minimum": -0.003342486989852331,
+            "observations": 119
+          },
+          "stored_target_change": {
+            "maximum": 0.0020801923235774546,
+            "mean": -0.0006357089931917157,
+            "minimum": -0.004259510348349968,
+            "observations": 119
+          }
+        },
+        "XLK": {
+          "direct_added_source_term": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "observations": 119
+          },
+          "retained_source_redistribution_term": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "observations": 119
+          },
+          "stored_target_change": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "observations": 119
+          }
+        }
+      },
+      "retained_redistribution_L1": {
+        "maximum": 0.05114282250094474,
+        "mean": 0.012622491260577323,
+        "minimum": 0.0012240733778918905,
+        "observations": 119
+      },
+      "retained_term_strict_larger_L1_origins": 115,
+      "stored_target_change_L1": {
+        "maximum": 0.06165859192008787,
+        "mean": 0.01501368001470408,
+        "minimum": 0.0013592578714286421,
+        "observations": 119
+      }
+    },
+    "mature_origins_with_retained_loss_label_changes": 22,
+    "maximum_independent_coefficient_difference": 1.0191500421363742e-16,
+    "maximum_independent_stored_target_difference": 1.1102230246251565e-16,
+    "maximum_independent_term_difference": 8.239936510889834e-17,
+    "maximum_signed_identity_residual": 1.7520707107365752e-16,
+    "maximum_stored_target_reconstruction_residual": 1.1102230246251565e-16,
+    "new_learning_targets_shadow_accounts_or_financial_trials": 0,
+    "retained_source_NET_values_bit_exact": 12455,
+    "retained_source_loss_label_values_changed": 88,
+    "signed_terms_are_executable_targets": false
+  }
+}

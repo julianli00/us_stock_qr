@@ -45,6 +45,24 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
+### Read-only J1464 diagnosis: membership is not allocation influence
+
+The [paired allocation-mass audit](research/workbench/evidence/protective_source_mass_audit_20261106_v1.json)
+keeps all121cached five-versus-six origins,including119mature decisions.
+The added protective expert's mature statistical mass averages only
+0.227776%,with maximum2.475403%;it remains positive in every recorded
+binary64projection. Technical admission is not influential allocation.
+
+In115of119mature origins,the retained-five redistribution term has larger
+target-space L1than the added-source direct term. Their mean L1magnitudes
+are1.262249and0.260949percentage points respectively,not main PnL or
+turnover. The unchanged retained NET/log streams still acquire88different
+recorded loss labels in22months. This does not isolate normalization
+causally:dimension,logN and adaptive state also changed together.
+The [frozen diagnostic](research/workbench/PROTECTIVE_SOURCE_MASS_AUDIT_V1.md)
+adds no learner,target,account or financial trial. Current financial
+J1464/301completed/zero qualified and its rejected result below are unchanged.
+
 ### Controlled protective sixth source: smaller drawdowns, still rejected
 
 The [complete four-path outcome](research/workbench/evidence/protective_six_adaptive_hedge_20261106_results_v1.json)
