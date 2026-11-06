@@ -4,7 +4,56 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Recorded return-cost bridge: remaining realized-path growth gaps are negative
+## Fixed-quintet anytime Hedge: registered, no funded outcome yet
+
+The [frozen law](QUINTET_ANYTIME_HEDGE_V1.md) keeps the exact current five
+complete sources and replaces hard pair selection with Decreasing Hedge
+over normalized complete-month source NET log relatives.
+The [actual singleton packet](evidence/quintet_anytime_hedge_20261106_registration_v1.json)
+registers at1417before new learning and targets;target proof1418
+retains every121decision/119complete-month label/242binary64input-
+resolution record and five original prefix cuts. Two initial origins
+remain unscored equal fifths;the incomplete initial source month is
+not assimilated. The fresh five-year book will carry the same prior
+learning state,but not old main capital.
+
+The official JMLRpaper's pages4--5,equation2andProposition1were
+actually read before outcomes. Use the fixed coefficient2and round
+`t=completed_months+1`,not the final119month horizon or a tuned rate.
+The loss normalization is a separate research construction;small source
+dispersion can magnify small canonical log differences. Neutral months
+still advance the learning clock. This is not AdaHedge or the earlier
+exact Dirichlet NET-mixture study.
+
+The first24synthetic/Ruff checks and actual checkpoint723 precede
+new source learning. Bare freeze`fd3106f6`and actual registered
+body`599e8c84`are distinct. Independent80-digit probability,
+scalar target,period log,covariance and switch-proxy differences
+are respectively1.7763568394002505e-15,1.1102230246251565e-16,
+2.7755575615628914e-17,8.131516293641283e-20and
+USD1.7763568394002505e-15. All six registered factor-family ETFs
+actually participate in both formal target horizons.
+
+Targets differ materially from each cached equal/rolling control at119
+origins;old controls and source generators/shadows are not rerun.
+The final normalized-source regret6.1754504582228975is below its
+bounded-loss reference13.839187533220942,but neither quantity is
+main-account growth,CAGR,Sharpe,drawdown or financial qualification.
+Source risk/cost diagnostics also do not replace actual funded feedback
+or fees. Registration takes40.712349750014255seconds with Darwin
+peakRSS473956352bytes.
+
+**Current pre-funding snapshot J1418/132registered/119completed/
+12workflow terminations/one pending/476funded paths/297combined
+completions/zero qualifiers.** No financial result exists for the
+new singleton. Exact remote preregistration,package/import checks
+and another actual checkpoint are required before the four new
+freshUSD10000original base/stress paths. Original gates,costs,
+RF,delays,holding band,source refusals and unmet goal remain.
+The preceding completed financial result is J1416opportunity quintet;
+its following read-only accounting is not a new portfolio result.
+
+## Historical read-only J1416 return-cost bridge
 
 The [complete read-only V2accounting](evidence/quintet_return_cost_bridge_20261106_v2.json)
 pairs all16already completed opportunity/conditional-volatility main

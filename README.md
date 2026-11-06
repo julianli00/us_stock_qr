@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 131 SSD identities, 119 completed, 12 retained technical-workflow terminations and zero pending; 476 funded paths | Journal1416 complete financial summary: 297 combined completions, zero qualifiers; investment goal remains unmet |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 132 SSD identities, 119 completed, 12 retained technical-workflow terminations and one pending; 476 funded paths | Journal1418 registered/pre-funding summary: 297 combined completions, zero qualifiers; investment goal remains unmet |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -45,7 +45,27 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
-### Recorded return-cost bridge: fee changes do not exhaust the growth gap
+### Fixed-quintet anytime Hedge: registered, not funded
+
+The [frozen singleton law](research/workbench/QUINTET_ANYTIME_HEDGE_V1.md)
+keeps the existing five complete policies and tests decreasing-rate
+bounded-loss exponential weighting. It uses only matured complete source
+months,validates old fractions before assimilation and keeps the primary
+paper's fixed coefficient2without a rate,roster or window search.
+This is neither the old Dirichlet integration nor a new growth expert.
+
+The [actual packet](research/workbench/evidence/quintet_anytime_hedge_20261106_registration_v1.json)
+registers before new learner weights and targets. Keep121decisions,
+119complete months,242retained input/resolution records,two initial
+unscored origins and five exact prefix checks. Targets differ materially
+from both cached equal/rolling controls at119origins.
+Normalized source-loss regret is not actual main wealth or a risk guarantee.
+**Current J1418/132registered/119completed/12workflow terminations/
+one pending/476funded paths/297combined completions/zero qualifiers.**
+No new main account or financial outcome exists yet;actual remote
+preregistration and prefunding verification/checkpoint must precede funds.
+
+### Historical read-only J1416 return-cost bridge
 
 The [read-only paired accounting](research/workbench/evidence/quintet_return_cost_bridge_20261106_v2.json)
 retains16existing opportunity/conditional-volatility main books and all
@@ -62,7 +82,8 @@ unchanged original market reader,which exactly matches all16recorded RF
 columns;no RF file,view,tolerance or source gate is changed.
 This is accounting on actual net-financed realized paths,not a fee-free
 portfolio,causal fee/expert-alpha attribution or a new financial result.
-**Financial J1416/297completed/zero qualified remains unchanged.**
+**This audit's historical financial J1416/297completed/zero qualified
+snapshot is unchanged;it is not a result of the pending Hedge law.**
 
 ### Benchmark-opportunity quintet: lower drawdowns, both rules rejected
 
