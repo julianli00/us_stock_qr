@@ -1,17 +1,17 @@
 {
   "schema_version": 1,
   "current_ssd_journal_summary": {
-    "snapshot_scope": "Current J1227: both compact macro-confirmation/defensive-rotation/conditional-hedge identities register before new combination outputs. Equal thirds and unchanged original rolling law, three pairs, no source or RF-view change. Two pending policies; both complete actual packets must be remotely verified before funding. No new funded outcomes.",
-    "journal_summary_derived_at_utc": "2026-11-06T00:29:12.934183+00:00",
-    "journal_sequence": 1227,
-    "journal_head_sha256": "5cbe5661fa600854b096c4e592145c3091200bfcedff69640512e6fcf02ef858",
+    "snapshot_scope": "Current J1246: compact macro-confirmation/defense/hedge equal and rolling policies complete all eight original funded paths; both rejected. All Sharpe/SPY/QQQ gates fail; individual CAGR/DD passes do not qualify. Original source admissions/views, criteria and global rosters unchanged; no source or old control replay.",
+    "journal_summary_derived_at_utc": "2026-11-06T00:38:17.718850+00:00",
+    "journal_sequence": 1246,
+    "journal_head_sha256": "ddbdf3b81a693cd6c3b459ec85ea49bfd65ff47617edee7825465c4277274c51",
     "legacy_completed": 178,
     "registered": 114,
-    "completed": 103,
+    "completed": 105,
     "technical_failures": 9,
-    "pending": 2,
-    "funded_paths": 412,
-    "combined_completed": 281,
+    "pending": 0,
+    "funded_paths": 420,
+    "combined_completed": 283,
     "qualified": 0,
     "latest_study_id": "ssd_macro_defense_hedge_trio_20261106_v1",
     "latest_registrations": [
@@ -32,7 +32,7 @@
     ],
     "complete_cohort_packet_schema": 2,
     "fixed_financial_cohort_size": 2,
-    "latest_study_status": "both_registered_pending_complete_remote_publication",
+    "latest_study_status": "both_complete_policies_rejected",
     "historical_target_derivation_proof": {
       "expert_pool_macro_defense_hedge_equal_v1": {
         "path": "reports/ssd-continuous-research-v1/macro-defense-hedge-trio-20261106-v1/targets/expert_pool_macro_defense_hedge_equal_v1/proof.json",
@@ -45,21 +45,24 @@
     },
     "historical_target_proof_complete": true,
     "historical_new_policy_indicators_or_targets_computed": true,
-    "candidate_accounts_or_metrics_computed": false,
-    "actual_new_formal_funded_paths": 0,
+    "candidate_accounts_or_metrics_computed": true,
+    "actual_new_formal_funded_paths": 8,
     "planned_original_funded_paths": 8,
     "actual_remote_publication_required_before_funding": true,
-    "actual_remote_publication_verified_before_accounts": false,
-    "actual_preregistration_commit": null,
-    "actual_publication_fence_sequence": null,
-    "actual_first_path_started_at": null,
-    "actual_review_sequences": {},
-    "all_candidate_status": {
-      "expert_pool_macro_defense_hedge_equal_v1": "pending",
-      "expert_pool_macro_defense_hedge_rolling_pair_v1": "pending"
+    "actual_remote_publication_verified_before_accounts": true,
+    "actual_preregistration_commit": "ffdb74b90de42772e116dcea91457fe49339417f",
+    "actual_publication_fence_sequence": 1228,
+    "actual_first_path_started_at": "2026-11-06T00:33:55.782949+00:00",
+    "actual_review_sequences": {
+      "expert_pool_macro_defense_hedge_equal_v1": 1237,
+      "expert_pool_macro_defense_hedge_rolling_pair_v1": 1246
     },
-    "latest_results": null,
-    "latest_results_sha256": null,
+    "all_candidate_status": {
+      "expert_pool_macro_defense_hedge_equal_v1": "rejected",
+      "expert_pool_macro_defense_hedge_rolling_pair_v1": "rejected"
+    },
+    "latest_results": "research/workbench/evidence/macro_defense_hedge_trio_20261106_results_v1.json",
+    "latest_results_sha256": "dfb8821cc3206a38be21d2f6010a800e3fe3e85b49995a796e11e4da59195718",
     "financial_program_freeze_sha256": "36a4289430ab2ce6f5be767c854a56a8ae6830270e0e3edf6b7a1e15bd725bd2",
     "financial_program_dependency_count": 162,
     "financial_program_source_reference_count": 1288,
@@ -788,7 +791,297 @@
     },
     "independent_forward_validation": false,
     "investment_objective_verified": false,
-    "order_authority": false
+    "order_authority": false,
+    "actual_publication_fence_at": "2026-11-06T00:33:53.603537+00:00",
+    "actual_review_times": {
+      "expert_pool_macro_defense_hedge_equal_v1": "2026-11-06T00:34:05.735784+00:00",
+      "expert_pool_macro_defense_hedge_rolling_pair_v1": "2026-11-06T00:34:52.634384+00:00"
+    },
+    "actual_eight_path_outcome_and_cost_rows": [
+      {
+        "candidate_id": "expert_pool_macro_defense_hedge_equal_v1",
+        "path": "10y-base",
+        "net_CAGR_percent": 11.57007131841552,
+        "RF_Sharpe": 0.8349489181271827,
+        "max_DD_percent": 19.40437139361023,
+        "annual_two_sided_turnover": 2.921866371982627,
+        "model_tickets": 740,
+        "model_fees_USD": 970.0956179479276,
+        "gates": {
+          "beats_qqq": false,
+          "beats_spy": false,
+          "cagr_above_12pct": false,
+          "drawdown_at_most_15pct": false,
+          "sharpe_above_1": false
+        },
+        "all_point_gates_pass": false
+      },
+      {
+        "candidate_id": "expert_pool_macro_defense_hedge_equal_v1",
+        "path": "10y-stress",
+        "net_CAGR_percent": 10.956788373908498,
+        "RF_Sharpe": 0.7873080789889322,
+        "max_DD_percent": 18.86353736890497,
+        "annual_two_sided_turnover": 2.921683843075572,
+        "model_tickets": 757,
+        "model_fees_USD": 1645.4736268945862,
+        "gates": {
+          "also_beats_base_cost_spy": false,
+          "beats_qqq": false,
+          "beats_spy": false,
+          "cagr_above_12pct": false,
+          "drawdown_at_most_15pct": false,
+          "sharpe_above_1": false
+        },
+        "all_point_gates_pass": false
+      },
+      {
+        "candidate_id": "expert_pool_macro_defense_hedge_equal_v1",
+        "path": "5y-base",
+        "net_CAGR_percent": 13.608134090654843,
+        "RF_Sharpe": 0.8422256903957356,
+        "max_DD_percent": 14.758356632473014,
+        "annual_two_sided_turnover": 3.1795631479567996,
+        "model_tickets": 410,
+        "model_fees_USD": 504.07008195788444,
+        "gates": {
+          "beats_qqq": false,
+          "beats_spy": false,
+          "cagr_above_12pct": true,
+          "drawdown_at_most_15pct": true,
+          "sharpe_above_1": false
+        },
+        "all_point_gates_pass": false
+      },
+      {
+        "candidate_id": "expert_pool_macro_defense_hedge_equal_v1",
+        "path": "5y-stress",
+        "net_CAGR_percent": 12.71482697525217,
+        "RF_Sharpe": 0.7763351049800462,
+        "max_DD_percent": 15.483161032405768,
+        "annual_two_sided_turnover": 3.1808742512651382,
+        "model_tickets": 418,
+        "model_fees_USD": 783.5423091547898,
+        "gates": {
+          "also_beats_base_cost_spy": false,
+          "beats_qqq": false,
+          "beats_spy": false,
+          "cagr_above_12pct": true,
+          "drawdown_at_most_15pct": false,
+          "sharpe_above_1": false
+        },
+        "all_point_gates_pass": false
+      },
+      {
+        "candidate_id": "expert_pool_macro_defense_hedge_rolling_pair_v1",
+        "path": "10y-base",
+        "net_CAGR_percent": 11.86613081496144,
+        "RF_Sharpe": 0.8725785532876791,
+        "max_DD_percent": 15.068380790517377,
+        "annual_two_sided_turnover": 4.606020014295515,
+        "model_tickets": 831,
+        "model_fees_USD": 1216.2776241663187,
+        "gates": {
+          "beats_qqq": false,
+          "beats_spy": false,
+          "cagr_above_12pct": false,
+          "drawdown_at_most_15pct": false,
+          "sharpe_above_1": false
+        },
+        "all_point_gates_pass": false
+      },
+      {
+        "candidate_id": "expert_pool_macro_defense_hedge_rolling_pair_v1",
+        "path": "10y-stress",
+        "net_CAGR_percent": 11.522350310426543,
+        "RF_Sharpe": 0.8441523270976641,
+        "max_DD_percent": 14.712494455413482,
+        "annual_two_sided_turnover": 4.6087820303867595,
+        "model_tickets": 832,
+        "model_fees_USD": 2325.394549924972,
+        "gates": {
+          "also_beats_base_cost_spy": false,
+          "beats_qqq": false,
+          "beats_spy": false,
+          "cagr_above_12pct": false,
+          "drawdown_at_most_15pct": true,
+          "sharpe_above_1": false
+        },
+        "all_point_gates_pass": false
+      },
+      {
+        "candidate_id": "expert_pool_macro_defense_hedge_rolling_pair_v1",
+        "path": "5y-base",
+        "net_CAGR_percent": 12.768248395324866,
+        "RF_Sharpe": 0.745552716333066,
+        "max_DD_percent": 15.225173211874365,
+        "annual_two_sided_turnover": 4.905807430442499,
+        "model_tickets": 421,
+        "model_fees_USD": 571.1436372453746,
+        "gates": {
+          "beats_qqq": false,
+          "beats_spy": false,
+          "cagr_above_12pct": true,
+          "drawdown_at_most_15pct": false,
+          "sharpe_above_1": false
+        },
+        "all_point_gates_pass": false
+      },
+      {
+        "candidate_id": "expert_pool_macro_defense_hedge_rolling_pair_v1",
+        "path": "5y-stress",
+        "net_CAGR_percent": 12.602920138893726,
+        "RF_Sharpe": 0.7355238847996833,
+        "max_DD_percent": 14.938439903817912,
+        "annual_two_sided_turnover": 4.906830511382848,
+        "model_tickets": 413,
+        "model_fees_USD": 1007.3355224397999,
+        "gates": {
+          "also_beats_base_cost_spy": false,
+          "beats_qqq": false,
+          "beats_spy": false,
+          "cagr_above_12pct": true,
+          "drawdown_at_most_15pct": true,
+          "sharpe_above_1": false
+        },
+        "all_point_gates_pass": false
+      }
+    ],
+    "actual_gate_pass_counts": {
+      "also_beats_base_cost_spy": 0,
+      "beats_qqq": 0,
+      "beats_spy": 0,
+      "cagr_above_12pct": 4,
+      "drawdown_at_most_15pct": 3,
+      "sharpe_above_1": 0
+    },
+    "minimum_main_cash_USD": 183.57071036178826,
+    "maximum_gross_exposure": 0.9830987168118113,
+    "maximum_independent_BT_gap_USD": 5.093170329928398e-11,
+    "actual_broker_orders": 0,
+    "actual_financial_process_wall_seconds": 96.62451237498317,
+    "actual_financial_process_Darwin_peak_RSS_bytes": 390602752,
+    "cached_control_contrasts": {
+      "expert_pool_macro_defense_hedge_equal_v1": {
+        "all_original_paths": {
+          "10y-base": {
+            "execution": {
+              "annualized_two_sided_turnover": 0.29810042603464026,
+              "model_order_count": -302,
+              "total_cost_usd": -303.652143354102
+            },
+            "metrics": {
+              "cagr": -0.03361174200825445,
+              "max_drawdown": 0.01549580629150471,
+              "sharpe": -0.1800269378109538
+            }
+          },
+          "10y-stress": {
+            "execution": {
+              "annualized_two_sided_turnover": 0.3013309018660162,
+              "model_order_count": -278,
+              "total_cost_usd": -293.7773304935786
+            },
+            "metrics": {
+              "cagr": -0.03435623766422902,
+              "max_drawdown": 0.01579601034504441,
+              "sharpe": -0.18823644172552167
+            }
+          },
+          "5y-base": {
+            "execution": {
+              "annualized_two_sided_turnover": 0.5557775258722191,
+              "model_order_count": -104,
+              "total_cost_usd": -92.66877985414112
+            },
+            "metrics": {
+              "cagr": -0.03929834170748259,
+              "max_drawdown": -0.009272537908628808,
+              "sharpe": -0.18572990010833224
+            }
+          },
+          "5y-stress": {
+            "execution": {
+              "annualized_two_sided_turnover": 0.5687831591838157,
+              "model_order_count": -89,
+              "total_cost_usd": -43.736712629276894
+            },
+            "metrics": {
+              "cagr": -0.03767020459630532,
+              "max_drawdown": -0.002322100379113623,
+              "sharpe": -0.18123668243345536
+            }
+          }
+        },
+        "cached_control": "expert_pool_eight_equal_weight_v1",
+        "old_control_replayed": false,
+        "whole_policy_difference_is_isolated_source_alpha": false
+      },
+      "expert_pool_macro_defense_hedge_rolling_pair_v1": {
+        "all_original_paths": {
+          "10y-base": {
+            "execution": {
+              "annualized_two_sided_turnover": -2.3753242038696136,
+              "model_order_count": -68,
+              "total_cost_usd": -278.29794507208794
+            },
+            "metrics": {
+              "cagr": -0.005088623263409087,
+              "max_drawdown": -0.07864118058932945,
+              "sharpe": 0.08534099789992566
+            }
+          },
+          "10y-stress": {
+            "execution": {
+              "annualized_two_sided_turnover": -2.371907272725588,
+              "model_order_count": -67,
+              "total_cost_usd": -845.4188195430756
+            },
+            "metrics": {
+              "cagr": 0.0009228069440228026,
+              "max_drawdown": -0.07240987619852313,
+              "sharpe": 0.12431260457087667
+            }
+          },
+          "5y-base": {
+            "execution": {
+              "annualized_two_sided_turnover": -2.6228807464248414,
+              "model_order_count": -48,
+              "total_cost_usd": -115.2937083330387
+            },
+            "metrics": {
+              "cagr": 0.005086394635575253,
+              "max_drawdown": -0.08069521127599966,
+              "sharpe": 0.11536798526358938
+            }
+          },
+          "5y-stress": {
+            "execution": {
+              "annualized_two_sided_turnover": -2.6305097064051344,
+              "model_order_count": -56,
+              "total_cost_usd": -310.75577403760803
+            },
+            "metrics": {
+              "cagr": 0.014910778865206309,
+              "max_drawdown": -0.07530795000716806,
+              "sharpe": 0.1804593137707583
+            }
+          }
+        },
+        "cached_control": "expert_pool_eight_rolling_pair_v1",
+        "old_control_replayed": false,
+        "whole_policy_difference_is_isolated_source_alpha": false
+      }
+    },
+    "preserved_compact_trio_preregistration_snapshot_J1227": {
+      "journal_sequence": 1227,
+      "pending": 2,
+      "combined_completed": 281,
+      "actual_new_formal_funded_paths": 0,
+      "complete_old_projection_commit": "ffdb74b90de42772e116dcea91457fe49339417f",
+      "complete_old_projection_path": "docs/research_progress.json",
+      "snapshot_is_current": false
+    }
   },
   "updated_on": "2026-10-31",
   "phase": "legacy_term_expert_v2_eligibility_complete_blocked",

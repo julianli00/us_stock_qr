@@ -4,6 +4,56 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Macro/defense/hedge trio: lower rolling risk, both complete rules rejected
+
+The [complete result](evidence/macro_defense_hedge_trio_20261106_results_v1.json)
+keeps the fixed three-source pool and both original equal/rolling rules.
+Actual full-cohort preregistration is`ffdb74b90de42772e116dcea91457fe49339417f`;
+both schema2packets,339scientific public blobs and28original import pins
+per candidate are verified before any capital. Prefund checkpoint639is
+saved and exactly read back. The one actual publication fence precedes
+all eight new funded paths.
+
+| Complete rule | Original path | Net CAGR | RF Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Model fees USD |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Equal-trio | 10y-base | 11.570071% | 0.834949 | 19.404371% | 2.921866x | 740 | 970.10 |
+| Equal-trio | 10y-stress | 10.956788% | 0.787308 | 18.863537% | 2.921684x | 757 | 1645.47 |
+| Equal-trio | 5y-base | 13.608134% | 0.842226 | 14.758357% | 3.179563x | 410 | 504.07 |
+| Equal-trio | 5y-stress | 12.714827% | 0.776335 | 15.483161% | 3.180874x | 418 | 783.54 |
+| Rolling-trio | 10y-base | 11.866131% | 0.872579 | 15.068381% | 4.606020x | 831 | 1216.28 |
+| Rolling-trio | 10y-stress | 11.522350% | 0.844152 | 14.712494% | 4.608782x | 832 | 2325.39 |
+| Rolling-trio | 5y-base | 12.768248% | 0.745553 | 15.225173% | 4.905807x | 421 | 571.14 |
+| Rolling-trio | 5y-stress | 12.602920% | 0.735524 | 14.938440% | 4.906831x | 413 | 1007.34 |
+
+Every Sharpe,SPY,QQQand additional stress/base-SPYgate fails.
+Both rules pass their two five-year CAGRgates, but every ten-year CAGRgate
+fails. Equal passes only five-year base DD; rolling passes only the two
+stress DDgates. Reviews1237/1246reject both complete unchanged policies.
+Do not round15.068381/15.225173%base DDto15%, combine passing fragments
+or relax the original criteria.
+
+Against the fixed cached original-eight rolling rule, all four new rolling
+paths have higher Sharpe and lower DD,annual turnover,tickets and fees.
+DDfalls7.240988--8.069521percentage points; annual turnover falls
+2.371907--2.630510x. Ten-year base CAGRfalls0.508862percentage points;
+the other three increase0.092281/0.508639/1.491078points.
+The original control is consumed,not replayed.
+Equal-trio has lower CAGR/Sharpe on all four paths than cached equal-eight,
+lower tickets/fees but higher annual turnover; DDworsens on ten-year paths
+and improves on five-year paths. Neither comparison isolates causal source
+alpha,independent risk or prospective improvement.
+
+The once-only actual financial process exits0 in96.62451237498317seconds,
+Darwin peakRSS390602752bytes. All original2512/1254returns,
+freshUSD10000,initialpeak,canonicalRF,5/20bps+$1,1/2later-open delays,
+actual holding feedback,cash funding<=1x and independentBT remain.
+No source model,fit,signal,target,shadow,old control or benchmark is replayed.
+Original global seven/eight and the admitted defensive recommendation/
+assessmentRFviews stay unchanged; no nativeRFidentity or new view is fabricated.
+Actual broker orders0. **J1246:114registered,105completed,nine technical,
+zero pending,420funded paths,283combined completions,zero qualifiers;
+the investment goal remains unmet.**
+
 ## Macro/defense/hedge trio: preserved preregistration J1227
 
 The [fixed compact pool](MACRO_DEFENSE_HEDGE_TRIO_V1.md) selects three complete

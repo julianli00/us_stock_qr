@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 114 SSD identities, 103 completed/rejected, nine retained technical failures and two pending; 412 funded paths | Journal1227 preregistration summary: 281 combined completions, zero qualifiers; investment goal remains unmet |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 114 SSD identities, 105 completed/rejected, nine retained technical failures and zero pending; 420 funded paths | Journal1246 current summary: 283 combined completions, zero qualifiers; investment goal remains unmet |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -45,9 +45,9 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
-### Compact macro/defense/hedge trio: two complete rules preregistered
+### Compact macro/defense/hedge trio: rolling risk improves, both rules rejected
 
-The [fixed three-mechanism pool](research/workbench/MACRO_DEFENSE_HEDGE_TRIO_V1.md)
+The [complete controlled outcome](research/workbench/evidence/macro_defense_hedge_trio_20261106_results_v1.json)
 selects canonical slots4/5/7 by admitted policy specifications: aggregate
 common-quarter profit/output-share and dollar confirmation, defensive
 relative strength, and observed-covariance hedge suitability.
@@ -56,15 +56,18 @@ pairs, full dates, costs and financial gates. Mechanism labels do not establish
 independent risks. The already admitted legacy-defensive recommendation and
 assessmentRFviews remain unchanged; no nativeRFidentity is invented.
 
-Freeze`36a42894`pins162dependencies,1288source references,three expert clocks
-and ten explicit tested inputs after22checks/Ruff. Both actual
-registrations1224/1225 precede121new meta states,242input/result records,
-88692NET/RFbinary64checks, all3pair scalar checks and five exact prefixes.
-The [equal packet](research/workbench/evidence/macro_defense_hedge_trio_20261106_0_registration_v1.json)
-and [rolling packet](research/workbench/evidence/macro_defense_hedge_trio_20261106_1_registration_v1.json)
-must both be remotely verified before any funding.
-**At J1227:two pending rules,no new funded paths,281completions,
-zero qualifiers; the investment goal remains unmet.**
+All eight original funded paths complete after full-cohort publication
+`ffdb74b`. Every Sharpe,SPYandQQQgate fails. Only four five-year CAGRgates
+and three individual DDgates pass; reviews1237/1246reject both complete rules.
+Rolling maximum DD is14.712494--15.225173%, but15.068381/15.225173%base
+paths still strictly exceed15%. Its Sharpe remains0.735524--0.872579.
+
+Versus cached same-rule original-eight rolling, DDdrops7.24--8.07percentage
+points and every path has higher Sharpe,lower turnover,tickets and fees;
+ten-year base CAGR falls while the other three increase. Equal-trio has
+lower CAGR/Sharpe on every path and mixed DDchanges versus equal-eight.
+These are whole-policy comparisons,not isolated source alpha or independent
+forward proof. **J1246:283completions,zero qualifiers; goal unmet.**
 
 ### Retained original pair: symmetric allocation improves its control, still rejected
 
