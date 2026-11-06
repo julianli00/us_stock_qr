@@ -4,6 +4,69 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Recorded hierarchy risk forecast: statistical-source and main scopes compared
+
+The [primary paired calibration](evidence/hierarchical_risk_transfer_20261106_v1.json)
+keeps the completed hierarchy's stored126NET-RF covariance/volatility
+forecast and original expert weights. No covariance,choice,target,source
+or main account is recomputed. The new labels are the next complete
+exchange calendar month's fixed-expert-fraction source NET-RF mixture
+and the actual filled main account's NET-RF returns on exactly those dates.
+The first contains source-policy updates/fees;it is not the main capital.
+
+| Main context | Complete paired origins | Source mean absolute variance error | Main mean absolute variance error | Source underforecasts | Main underforecasts |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| 10y-base | 113 | 3.11777716e-05 | 3.12097166e-05 | 52 | 53 |
+| 10y-stress | 113 | 3.11777716e-05 | 3.11913658e-05 | 52 | 54 |
+| 5y-base | 59 | 3.68045511e-05 | 3.70733809e-05 | 32 | 32 |
+| 5y-stress | 59 | 3.68045511e-05 | 3.72488025e-05 | 32 | 32 |
+
+These values have daily-return-variance units,not money,CAGR or a new
+portfolio Sharpe. Main mean absolute errors are slightly higher in all
+four paths,but close averages do not establish label equivalence or
+show that every forecast transfers to actual holdings.
+
+The [exploratory descriptive supplement](evidence/hierarchical_risk_transfer_20261106_supplement_v1.json)
+is explicitly introduced after the frozen primary result to retain all
+complete-case absolute scope gaps. It does not replace the primary
+criterion,select a model or change any financial gate.
+
+| Main context | Mean absolute main-source variance gap | Maximum absolute main-source variance gap | Underforecast flag disagreements |
+| --- | ---: | ---: | ---: |
+| 10y-base | 9.93250556e-07 | 1.61925899e-05 | 1 |
+| 10y-stress | 1.57213434e-06 | 2.40543213e-05 | 2 |
+| 5y-base | 1.08210201e-06 | 9.66934973e-06 | 0 |
+| 5y-stress | 1.66356530e-06 | 1.04280343e-05 | 0 |
+
+All121origins remain in each path:ten-year contexts have7original
+unscored origins,113complete and1terminal partial label;five-year
+contexts have7unscored,53outside the funded window,59complete and
+2partial labels. The September30,2021forecast requires21October
+sessions but the fresh five-year account has only18;the terminal
+September30,2026forecast requires22sessions but both source and
+main books contain only3. Both channels remain unlabelled for these
+cases. No arbitrary21row slice,missing-day filling or newer snapshot
+changes those contexts.
+
+The first22synthetic checks and Ruffpass before frozen`04b5e3a4`
+and actual checkpoint707. One real pass retains484cases/968exact
+input-resolved records and5prefix checks;the already complete past
+case counts matched exactly are0,106,108,212and344. Maximum
+independent scalar/vector variance difference is1.0842021724855044e-19.
+The analysis takes28.611163583991583seconds,31.923675792000722
+including frozen-input checking,Darwin peakRSS449183744bytes.
+
+The four contexts share forecasts and overlapping histories;they are
+not independent samples. Scope gaps are not causal fee/expert-profit
+attribution. No new model,allocation,covariance fit,target,account or
+financial trial follows. The older pair-risk and current-opinion
+calibrations remain closed,not replayed or promoted. Existing
+source/PIT/refusal scopes and scalar-zero/undefined-ratio rules remain.
+**J1393/129registered/117completed/12technical/zero pending/468funded
+paths/295combined completions/zero qualifiers are unchanged.** The
+primary financial result remains the rejected fixed-five hierarchy,
+not this risk-only diagnosis;the investment objective is unmet.
+
 ## Fixed-five risk hierarchy: all four paths complete, rule rejected
 
 The [complete financial outcome](evidence/five_hierarchical_risk_20261106_results_v1.json)

@@ -1,0 +1,128 @@
+{
+  "actual_authoritative_counts": {
+    "current_journal_event_count": 1393,
+    "current_journal_head_sha256": "3d13b71e0935bdc60678c7eddcc57721c02b4d226168cde314104bdd7997e3e9",
+    "new_account_paths": 468,
+    "new_completed_strategy_evaluations": 117,
+    "new_historical_point_gate_passes": 0,
+    "new_pending_candidates": 0,
+    "new_registered_candidates": 129,
+    "new_reviews": 117,
+    "new_technical_failures": 12,
+    "original_completed_configurations": 178,
+    "original_registered_versions": 96,
+    "original_reviews": 94,
+    "total_legacy_plus_ssd_completed_configurations": 295
+  },
+  "case_count": 484,
+  "completed_at": "2026-11-06T10:25:07.620690+00:00",
+  "independent_forward_validation": false,
+  "input_resolved_record_count": 968,
+  "investment_objective_verified": false,
+  "label_gap_is_causal_fee_or_source_profit_attribution": false,
+  "new_model_choices_targets_accounts_or_financial_trials": 0,
+  "order_authority": false,
+  "original_forecast_targets_or_accounts_replayed": false,
+  "path_contexts_are_independent_samples": false,
+  "path_summaries": {
+    "10y-base": {
+      "all_original_origins_retained": 121,
+      "main_mean_absolute_variance_error": 3.120971656222502e-05,
+      "main_underforecast_count": 53,
+      "maximum_independent_main_variance_difference": 1.0842021724855044e-19,
+      "maximum_independent_source_variance_difference": 5.421010862427522e-20,
+      "mean_main_minus_source_absolute_forecast_error": 3.194499284049995e-08,
+      "mean_main_minus_source_realized_variance": -7.032753317921757e-08,
+      "paired_complete_origins": 113,
+      "source_mean_absolute_variance_error": 3.1177771569384525e-05,
+      "source_underforecast_count": 52,
+      "status_counts": {
+        "complete_paired_risk_label": 113,
+        "future_month_incomplete_not_assessed": 1,
+        "original_unscored_no_forecast": 7
+      },
+      "zero_forecast_ratio_undefined_count": 0
+    },
+    "10y-stress": {
+      "all_original_origins_retained": 121,
+      "main_mean_absolute_variance_error": 3.1191365843471416e-05,
+      "main_underforecast_count": 54,
+      "maximum_independent_main_variance_difference": 2.710505431213761e-20,
+      "maximum_independent_source_variance_difference": 5.421010862427522e-20,
+      "mean_main_minus_source_absolute_forecast_error": 1.3594274086896546e-08,
+      "mean_main_minus_source_realized_variance": -2.6805130038940754e-08,
+      "paired_complete_origins": 113,
+      "source_mean_absolute_variance_error": 3.1177771569384525e-05,
+      "source_underforecast_count": 52,
+      "status_counts": {
+        "complete_paired_risk_label": 113,
+        "future_month_incomplete_not_assessed": 1,
+        "original_unscored_no_forecast": 7
+      },
+      "zero_forecast_ratio_undefined_count": 0
+    },
+    "5y-base": {
+      "all_original_origins_retained": 121,
+      "main_mean_absolute_variance_error": 3.707338089946165e-05,
+      "main_underforecast_count": 32,
+      "maximum_independent_main_variance_difference": 1.0842021724855044e-19,
+      "maximum_independent_source_variance_difference": 5.421010862427522e-20,
+      "mean_main_minus_source_absolute_forecast_error": 2.6882977064062004e-07,
+      "mean_main_minus_source_realized_variance": 7.375134804091099e-08,
+      "paired_complete_origins": 59,
+      "source_mean_absolute_variance_error": 3.680455112882103e-05,
+      "source_underforecast_count": 32,
+      "status_counts": {
+        "complete_paired_risk_label": 59,
+        "future_month_incomplete_not_assessed": 2,
+        "original_unscored_no_forecast": 7,
+        "outside_main_path_window_not_assessed": 53
+      },
+      "zero_forecast_ratio_undefined_count": 0
+    },
+    "5y-stress": {
+      "all_original_origins_retained": 121,
+      "main_mean_absolute_variance_error": 3.7248802534083107e-05,
+      "main_underforecast_count": 32,
+      "maximum_independent_main_variance_difference": 5.421010862427522e-20,
+      "maximum_independent_source_variance_difference": 5.421010862427522e-20,
+      "mean_main_minus_source_absolute_forecast_error": 4.442514052620798e-07,
+      "mean_main_minus_source_realized_variance": 2.419497795727633e-07,
+      "paired_complete_origins": 59,
+      "source_mean_absolute_variance_error": 3.680455112882103e-05,
+      "source_underforecast_count": 32,
+      "status_counts": {
+        "complete_paired_risk_label": 59,
+        "future_month_incomplete_not_assessed": 2,
+        "original_unscored_no_forecast": 7,
+        "outside_main_path_window_not_assessed": 53
+      },
+      "zero_forecast_ratio_undefined_count": 0
+    }
+  },
+  "prefix_checks": [
+    {
+      "complete_past_cases_exactly_matched": 0,
+      "cutoff": "2017-03-31"
+    },
+    {
+      "complete_past_cases_exactly_matched": 106,
+      "cutoff": "2021-09-30"
+    },
+    {
+      "complete_past_cases_exactly_matched": 108,
+      "cutoff": "2021-10-29"
+    },
+    {
+      "complete_past_cases_exactly_matched": 212,
+      "cutoff": "2023-12-29"
+    },
+    {
+      "complete_past_cases_exactly_matched": 344,
+      "cutoff": "2026-09-30"
+    }
+  ],
+  "raw_prices_NET_returns_or_daily_book_rows_exported": false,
+  "schema_version": 1,
+  "study_id": "ssd_hierarchical_risk_transfer_20261106_v1"
+}

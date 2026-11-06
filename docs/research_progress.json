@@ -62,74 +62,114 @@
       "order_authority": false
     },
     "latest_read_only_diagnosis": {
-      "study_id": "ssd_current_opinion_risk_calibration_20261106_v1",
-      "status": "complete_frozen_two_model_two_view_risk_calibration",
-      "result": "research/workbench/evidence/current_opinion_risk_calibration_20261106_v1.json",
-      "result_sha256": "ed301943041af5ef9a290f61c35b83ceb4fdf6451174feea4973d6b60bf27a6b",
-      "implementation_freeze_sha256": "d05889a216ed4904c5a9b1731757f094c8aa02b933bca8aabceff5cc6c3760c9",
-      "source_origins": 121,
-      "unscored_origins": 7,
-      "forecast_origins": 114,
-      "incomplete_future_origins": 1,
-      "forecast_prefixes": [
-        "2016-10-05",
-        "2017-03-31",
-        "2017-09-29",
-        "2021-09-30",
-        "2026-09-30"
-      ],
-      "summary": [
+      "study_id": "ssd_hierarchical_risk_transfer_20261106_v1",
+      "status": "paired_risk_scope_calibration_complete",
+      "evidence": "research/workbench/evidence/hierarchical_risk_transfer_20261106_v1.json",
+      "sha256": "d86717b621ec2776645b5a5478157f7554e43d80f174f5019fca7451f2359790",
+      "primary_case_count": 484,
+      "input_resolved_record_count": 968,
+      "all_primary_path_summaries": {
+        "10y-base": {
+          "all_original_origins_retained": 121,
+          "main_mean_absolute_variance_error": 3.120971656222502e-05,
+          "main_underforecast_count": 53,
+          "maximum_independent_main_variance_difference": 1.0842021724855044e-19,
+          "maximum_independent_source_variance_difference": 5.421010862427522e-20,
+          "mean_main_minus_source_absolute_forecast_error": 3.194499284049995e-08,
+          "mean_main_minus_source_realized_variance": -7.032753317921757e-08,
+          "paired_complete_origins": 113,
+          "source_mean_absolute_variance_error": 3.1177771569384525e-05,
+          "source_underforecast_count": 52,
+          "status_counts": {
+            "complete_paired_risk_label": 113,
+            "future_month_incomplete_not_assessed": 1,
+            "original_unscored_no_forecast": 7
+          },
+          "zero_forecast_ratio_undefined_count": 0
+        },
+        "10y-stress": {
+          "all_original_origins_retained": 121,
+          "main_mean_absolute_variance_error": 3.1191365843471416e-05,
+          "main_underforecast_count": 54,
+          "maximum_independent_main_variance_difference": 2.710505431213761e-20,
+          "maximum_independent_source_variance_difference": 5.421010862427522e-20,
+          "mean_main_minus_source_absolute_forecast_error": 1.3594274086896546e-08,
+          "mean_main_minus_source_realized_variance": -2.6805130038940754e-08,
+          "paired_complete_origins": 113,
+          "source_mean_absolute_variance_error": 3.1177771569384525e-05,
+          "source_underforecast_count": 52,
+          "status_counts": {
+            "complete_paired_risk_label": 113,
+            "future_month_incomplete_not_assessed": 1,
+            "original_unscored_no_forecast": 7
+          },
+          "zero_forecast_ratio_undefined_count": 0
+        },
+        "5y-base": {
+          "all_original_origins_retained": 121,
+          "main_mean_absolute_variance_error": 3.707338089946165e-05,
+          "main_underforecast_count": 32,
+          "maximum_independent_main_variance_difference": 1.0842021724855044e-19,
+          "maximum_independent_source_variance_difference": 5.421010862427522e-20,
+          "mean_main_minus_source_absolute_forecast_error": 2.6882977064062004e-07,
+          "mean_main_minus_source_realized_variance": 7.375134804091099e-08,
+          "paired_complete_origins": 59,
+          "source_mean_absolute_variance_error": 3.680455112882103e-05,
+          "source_underforecast_count": 32,
+          "status_counts": {
+            "complete_paired_risk_label": 59,
+            "future_month_incomplete_not_assessed": 2,
+            "original_unscored_no_forecast": 7,
+            "outside_main_path_window_not_assessed": 53
+          },
+          "zero_forecast_ratio_undefined_count": 0
+        },
+        "5y-stress": {
+          "all_original_origins_retained": 121,
+          "main_mean_absolute_variance_error": 3.7248802534083107e-05,
+          "main_underforecast_count": 32,
+          "maximum_independent_main_variance_difference": 5.421010862427522e-20,
+          "maximum_independent_source_variance_difference": 5.421010862427522e-20,
+          "mean_main_minus_source_absolute_forecast_error": 4.442514052620798e-07,
+          "mean_main_minus_source_realized_variance": 2.419497795727633e-07,
+          "paired_complete_origins": 59,
+          "source_mean_absolute_variance_error": 3.680455112882103e-05,
+          "source_underforecast_count": 32,
+          "status_counts": {
+            "complete_paired_risk_label": 59,
+            "future_month_incomplete_not_assessed": 2,
+            "original_unscored_no_forecast": 7,
+            "outside_main_path_window_not_assessed": 53
+          },
+          "zero_forecast_ratio_undefined_count": 0
+        }
+      },
+      "prefix_checks": [
         {
-          "labelled_origins": 113,
-          "mean_absolute_daily_variance_error": 4.8712670135626295e-05,
-          "mean_signed_daily_variance_error": -3.8042167332035547e-06,
-          "median_absolute_daily_variance_error": 2.1179842203015568e-05,
-          "model": "trailing_expert_NET_RF",
-          "underforecast_count": 50,
-          "view": "equal"
+          "complete_past_cases_exactly_matched": 0,
+          "cutoff": "2017-03-31"
         },
         {
-          "labelled_origins": 113,
-          "mean_absolute_daily_variance_error": 5.878606791900821e-05,
-          "mean_signed_daily_variance_error": 4.4777101059892295e-06,
-          "median_absolute_daily_variance_error": 2.865557446030674e-05,
-          "model": "current_opinion_gross_mark_RF",
-          "underforecast_count": 50,
-          "view": "equal"
+          "complete_past_cases_exactly_matched": 106,
+          "cutoff": "2021-09-30"
         },
         {
-          "labelled_origins": 113,
-          "mean_absolute_daily_variance_error": 4.415419416710079e-05,
-          "mean_signed_daily_variance_error": -6.3187933823399485e-06,
-          "median_absolute_daily_variance_error": 2.93697733395876e-05,
-          "model": "trailing_expert_NET_RF",
-          "underforecast_count": 48,
-          "view": "recorded_rolling"
+          "complete_past_cases_exactly_matched": 108,
+          "cutoff": "2021-10-29"
         },
         {
-          "labelled_origins": 113,
-          "mean_absolute_daily_variance_error": 4.6977156060257085e-05,
-          "mean_signed_daily_variance_error": -5.475406760934287e-06,
-          "median_absolute_daily_variance_error": 2.7030092879876618e-05,
-          "model": "current_opinion_gross_mark_RF",
-          "underforecast_count": 53,
-          "view": "recorded_rolling"
+          "complete_past_cases_exactly_matched": 212,
+          "cutoff": "2023-12-29"
+        },
+        {
+          "complete_past_cases_exactly_matched": 344,
+          "cutoff": "2026-09-30"
         }
       ],
-      "maximum_scalar_matrix_variance_difference": 1.0842021724855044e-19,
-      "current_opinion_mean_absolute_error_increase_percent": {
-        "equal": 20.67921498726195,
-        "recorded_rolling": 6.393417310420935
-      },
-      "current_opinion_projection_includes_fees_or_future_policy_changes": false,
-      "labels_are_main_accounts_or_tradable_portfolio_returns": false,
-      "new_model_selected_or_pool_or_financial_acceptance_changed": false,
-      "assessment_RF_scope_preserved_no_new_view": true,
       "new_financial_trials": 0,
-      "source_strategy_account_BT_or_CAGR_Sharpe_replayed": false,
+      "new_covariance_models_choices_targets_accounts": 0,
       "independent_forward_validation": false,
-      "investment_objective_verified": false,
-      "order_authority": false
+      "investment_objective_verified": false
     },
     "previous_mixed_six_financial_snapshot": {
       "journal_sequence": 1109,
@@ -856,8 +896,8 @@
       "complete_previous_projection_path": "docs/research_progress.json",
       "snapshot_is_current": false
     },
-    "snapshot_scope": "Current J1393 fixed-five hierarchy all four paths complete and rejected. Only 5y-base CAGR passes;all Sharpe/DD/benchmark gates fail. Lower turnover versus rolling controls is not universally cheaper or better growth. Older snapshots are not pending work.",
-    "journal_summary_derived_at_utc": "2026-11-06T09:54:36.014943+00:00",
+    "snapshot_scope": "Current financial J1393 fixed-five hierarchy remains complete/rejected/295/0. A separate zero-trial risk calibration compares the same forecast with statistical source and actual main labels;its similar averages do not imply monthly equivalence or an improved portfolio. Financial result/metrics/counts are unchanged.",
+    "journal_summary_derived_at_utc": "2026-11-06T10:33:09.885538+00:00",
     "journal_sequence": 1393,
     "journal_head_sha256": "3d13b71e0935bdc60678c7eddcc57721c02b4d226168cde314104bdd7997e3e9",
     "legacy_completed": 178,
@@ -1399,7 +1439,109 @@
     "maximum_independent_BT_gap_USD": 5.820766091346741e-11,
     "actual_broker_orders": 0,
     "actual_financial_process_wall_seconds": 48.16833879100159,
-    "actual_financial_process_Darwin_peak_RSS_bytes": 455802880
+    "actual_financial_process_Darwin_peak_RSS_bytes": 455802880,
+    "preserved_previous_read_only_before_hierarchical_transfer": {
+      "study_id": "ssd_current_opinion_risk_calibration_20261106_v1",
+      "status": "complete_frozen_two_model_two_view_risk_calibration",
+      "result": "research/workbench/evidence/current_opinion_risk_calibration_20261106_v1.json",
+      "result_sha256": "ed301943041af5ef9a290f61c35b83ceb4fdf6451174feea4973d6b60bf27a6b",
+      "implementation_freeze_sha256": "d05889a216ed4904c5a9b1731757f094c8aa02b933bca8aabceff5cc6c3760c9",
+      "source_origins": 121,
+      "unscored_origins": 7,
+      "forecast_origins": 114,
+      "incomplete_future_origins": 1,
+      "forecast_prefixes": [
+        "2016-10-05",
+        "2017-03-31",
+        "2017-09-29",
+        "2021-09-30",
+        "2026-09-30"
+      ],
+      "summary": [
+        {
+          "labelled_origins": 113,
+          "mean_absolute_daily_variance_error": 4.8712670135626295e-05,
+          "mean_signed_daily_variance_error": -3.8042167332035547e-06,
+          "median_absolute_daily_variance_error": 2.1179842203015568e-05,
+          "model": "trailing_expert_NET_RF",
+          "underforecast_count": 50,
+          "view": "equal"
+        },
+        {
+          "labelled_origins": 113,
+          "mean_absolute_daily_variance_error": 5.878606791900821e-05,
+          "mean_signed_daily_variance_error": 4.4777101059892295e-06,
+          "median_absolute_daily_variance_error": 2.865557446030674e-05,
+          "model": "current_opinion_gross_mark_RF",
+          "underforecast_count": 50,
+          "view": "equal"
+        },
+        {
+          "labelled_origins": 113,
+          "mean_absolute_daily_variance_error": 4.415419416710079e-05,
+          "mean_signed_daily_variance_error": -6.3187933823399485e-06,
+          "median_absolute_daily_variance_error": 2.93697733395876e-05,
+          "model": "trailing_expert_NET_RF",
+          "underforecast_count": 48,
+          "view": "recorded_rolling"
+        },
+        {
+          "labelled_origins": 113,
+          "mean_absolute_daily_variance_error": 4.6977156060257085e-05,
+          "mean_signed_daily_variance_error": -5.475406760934287e-06,
+          "median_absolute_daily_variance_error": 2.7030092879876618e-05,
+          "model": "current_opinion_gross_mark_RF",
+          "underforecast_count": 53,
+          "view": "recorded_rolling"
+        }
+      ],
+      "maximum_scalar_matrix_variance_difference": 1.0842021724855044e-19,
+      "current_opinion_mean_absolute_error_increase_percent": {
+        "equal": 20.67921498726195,
+        "recorded_rolling": 6.393417310420935
+      },
+      "current_opinion_projection_includes_fees_or_future_policy_changes": false,
+      "labels_are_main_accounts_or_tradable_portfolio_returns": false,
+      "new_model_selected_or_pool_or_financial_acceptance_changed": false,
+      "assessment_RF_scope_preserved_no_new_view": true,
+      "new_financial_trials": 0,
+      "source_strategy_account_BT_or_CAGR_Sharpe_replayed": false,
+      "independent_forward_validation": false,
+      "investment_objective_verified": false,
+      "order_authority": false
+    },
+    "latest_read_only_diagnosis_supplement": {
+      "evidence": "research/workbench/evidence/hierarchical_risk_transfer_20261106_supplement_v1.json",
+      "sha256": "919003c619ed54467309698f3364bfa29e9491d68727d514a79731ee8d0b9ff8",
+      "introduced_after_frozen_primary_outcome": true,
+      "all_exploratory_path_supplements": {
+        "10y-base": {
+          "paired_complete_origins": 113,
+          "mean_absolute_main_source_variance_gap": 9.932505558129193e-07,
+          "maximum_absolute_main_source_variance_gap": 1.6192589939069163e-05,
+          "underforecast_flag_disagreements": 1
+        },
+        "10y-stress": {
+          "paired_complete_origins": 113,
+          "mean_absolute_main_source_variance_gap": 1.5721343431807995e-06,
+          "maximum_absolute_main_source_variance_gap": 2.405432125969888e-05,
+          "underforecast_flag_disagreements": 2
+        },
+        "5y-base": {
+          "paired_complete_origins": 59,
+          "mean_absolute_main_source_variance_gap": 1.0821020068674374e-06,
+          "maximum_absolute_main_source_variance_gap": 9.66934972663031e-06,
+          "underforecast_flag_disagreements": 0
+        },
+        "5y-stress": {
+          "paired_complete_origins": 59,
+          "mean_absolute_main_source_variance_gap": 1.6635653008484873e-06,
+          "maximum_absolute_main_source_variance_gap": 1.0428034288623267e-05,
+          "underforecast_flag_disagreements": 0
+        }
+      },
+      "new_primary_criterion_or_financial_gate": false
+    }
   },
   "updated_on": "2026-10-31",
   "phase": "legacy_term_expert_v2_eligibility_complete_blocked",

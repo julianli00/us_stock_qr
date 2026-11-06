@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_hierarchical_risk_transfer_20261106_v1",
+  "actual_native_event_seq": 184910,
+  "prior_journal_sequence": 1393,
+  "prior_journal_head_sha256": "3d13b71e0935bdc60678c7eddcc57721c02b4d226168cde314104bdd7997e3e9",
+  "prior_completed_configurations": 295,
+  "source_catalogue": {
+    "path": "reports/ssd-continuous-research-v1/hierarchical-risk-transfer-20261106-v1/source-input-catalogue-v1.json",
+    "sha256": "21122f0080e544cab06e81118fc9de851aaf8f4d23750f0f1ec39ad2bb0d14f5"
+  },
+  "forecast": "unchanged_recorded_hierarchical_annualized_NET_RF_volatility",
+  "forecast_daily_variance": "recorded_volatility_squared_divided_by_252",
+  "label_horizon": "following_complete_exchange_calendar_month",
+  "label_channels": ["fixed_source_fraction_NET_RF", "actual_main_account_NET_RF"],
+  "canonical_variance": "scalar_fsum_ddof1_exact_constant_zero",
+  "independent_variance_relative_tolerance": 1e-10,
+  "independent_variance_absolute_tolerance": 1e-18,
+  "recorded_forecast_covariance_check_tolerance": 1e-12,
+  "full_calendar_month_required_for_both_labels": true,
+  "initial_five_year_partial_month_kept_unlabelled": true,
+  "terminal_partial_month_kept_unlabelled": true,
+  "zero_variance_is_safe_success": false,
+  "zero_forecast_variance_ratio": null,
+  "all_121_origins_and_four_path_contexts_retained": true,
+  "label_gap_is_causal_fee_or_source_profit_attribution": false,
+  "new_covariance_fits_targets_accounts_or_financial_trials": 0,
+  "new_model_or_allocation_selected": false,
+  "new_source_requests_or_RF_views": 0,
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "order_authority": false
+}

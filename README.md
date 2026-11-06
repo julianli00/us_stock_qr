@@ -45,6 +45,23 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
+### Risk forecast scopes: similar averages, not month-by-month equivalence
+
+The [paired risk-label audit](research/workbench/evidence/hierarchical_risk_transfer_20261106_v1.json)
+compares the same stored hierarchy forecast with following complete-month
+fixed-source NET-RF mixtures and actual main NET-RF returns. Keep all121
+origins in each of four contexts:113complete labels per ten-year path
+and59per five-year path. The initial five-year partial month and terminal
+3session month stay unassessed,without padding or a21row crop.
+
+Mean absolute variance errors are close in the two scopes,but main errors
+are slightly higher in all four paths. The
+[post-primary descriptive supplement](research/workbench/evidence/hierarchical_risk_transfer_20261106_supplement_v1.json)
+retains individual scope gaps,which can be material despite close averages.
+This is not causal fee attribution,an improved allocator or independent
+forward proof. No covariance,target,account or financial trial is rerun.
+**J1393/295completed/zero qualified is unchanged;the financial goal remains unmet.**
+
 ### Fixed-five risk hierarchy: lower turnover, missed growth and risk gates
 
 The [complete four-path outcome](research/workbench/evidence/five_hierarchical_risk_20261106_results_v1.json)
