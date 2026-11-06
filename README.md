@@ -45,6 +45,27 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
+### Cross-origin cost reference: duplicate targets, no new funding
+
+The [deduplication result](research/workbench/evidence/expert_total_target_cost_20261106_duplicate_v1.json)
+keeps the completed direct quartet and original six-pair risk/fee constants,
+but compares candidate targets with the preceding origin's desired meta target.
+That is different from incremental reweighting on today's source opinions;
+neither reference is actual holdings or exact main fees.
+
+486of684mature pair proxy costs differ,maxfraction difference0.00178.
+Nevertheless all121selected pairs and final targets are unchanged;the entire
+targetCSVhas the sameSHA256as the cached completed rolling control.
+Do not rerun four identical accounts or relabel cached metrics as new results.
+This is sample-specific duplication,not general future-equivalence or invalidity
+of the source policies.
+
+**J1346/125registered/113completed/12technical-workflow terminations/
+zero pending/452funded paths/291combined completions/zero qualifiers.**
+The technical counter includes this one operational duplicate termination,
+not a code/data invalidity or a new financial failure. No new funded path,
+financial completion or economic trial is claimed;the goal remains unmet.
+
 ### Direct commitment quartet: both complete rules rejected
 
 The [complete eight-path result](research/workbench/evidence/commitment_macro_defense_hedge_20261106_results_v1.json)
@@ -58,7 +79,7 @@ Only equal5y-base meets the15%DDlimit;this partial gate is not qualification.
 Compared with matched cached nested controls,annual two-sided turnover rises
 on all eight paths despite fewer model tickets;all four stress fees rise.
 No cached source account or failed risk forecast is replayed or promoted.
-**J1343/124registered/113completed/11technical/zero pending/
+**Completed-financial snapshot J1343/124registered/113completed/11technical/zero pending/
 452funded paths/291combined completions/zero qualifiers;goal remains unmet.**
 
 ### Current opinions do not automatically improve risk calibration

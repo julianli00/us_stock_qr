@@ -4,6 +4,59 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Cross-origin desired-target costs: exact duplicate, no new accounts
+
+The [terminal identity result](evidence/expert_total_target_cost_20261106_duplicate_v1.json)
+records one new cost-reference law,not another funded completion. The four
+complete source experts,126/84/42risk windows,six ERCpair alternatives,
+NET-RF statistics,12decimal lexical keys,5bps/$1cost coefficients,
+USD10000reference,21session amortization,original band and funding gates
+were unchanged. The new state is the previous origin's desired target,
+not actual holdings,NAV,issued requests or filled shares.
+
+The old same-origin incremental-switch counterfactual and new cross-origin
+desired-target costs differ in486of684mature pair records,with maximum
+cost-fraction difference0.00178(nominalUSD17.80onUSD10000). This is not a
+paid fee saving or an exact incremental NET cost model;source NET histories
+already contain historical source-policy fees.
+
+Despite these proxy differences,the selected pair and target are identical
+at all121original origins. New and cached target files share exactSHA256
+`8871ef3155c2ea5b1da479d508c70eae269d90a376322a33422af6dd83ba7844`.
+All14coordinates and the whole retained calendar match bit-exactly;
+maximum targetL1difference is0. This observed identity is specific to the
+preserved sample,not an algebraic identity or future/live performance guarantee.
+
+The first22synthetic checks and Ruffpass before frozen`5b635cc1`and
+actual checkpoint687. Actual registration1344precedes any new ranking/
+target derivation;proof1345and complete schema2singleton packet retain
+all121decisions,242input/resolved records,all6pair scores,costs and
+nominal state,independent scalar/ERC/target checks and5exact prefixes.
+Actual registration takes30.926176292006858seconds,Darwin peakRSS459436032bytes.
+The actual registered digest is`4dc5c88e`,distinct from the bare intent.
+
+The changed-target assertion stops after its immutable zero-difference
+receipt is written. Do not repair this result by tuning coefficients or
+replaying the four completed control accounts. No publication fence,
+new account,benchmark run,CAGR,Sharpe,DDor candidate metric is computed.
+Cached rolling-control performance remains a labelled historical reference.
+
+Event1346records pre-funding duplicate termination using the existing
+`technical_failure`workflow accounting category. Its body explicitly says
+`source_or_policy_declared_technically_invalid=false`,
+`financial_acceptance_or_expert_admission_changed=false`,and zero new
+funded paths/completions/economic financial trials. This is not a broken
+source,an invalid cost law,a new financial failure,or a source admission
+exclusion. The identity is terminal and must not be retried.
+
+**CurrentJ1346/125registered/113completed/12technical-workflow terminations/
+zero pending/452funded paths/291combined completions/zero qualifiers.**
+The12includes one duplicate workflow termination in addition to the prior11.
+The last complete financial study remains the direct quartet atJ1343;
+its original rejections,all source/PIT/refusal constraints,and the investment
+goal remain unchanged. The actual packet and code are published as retained
+evidence,not as a claim that a funded preregistration gate executed.
+
 ## Direct commitment quartet: all eight paths complete, both rules rejected
 
 The [complete financial outcome](evidence/commitment_macro_defense_hedge_20261106_results_v1.json)
@@ -53,7 +106,7 @@ maximum gross exposure0.9828605972161103,maximum independentBT NAV
 differenceUSD4.001776687800884e-11,and actual broker orders0.
 Model tickets above are offline accounting events,not broker authority.
 
-**CurrentJ1343/124registered/113completed/11technical/zero pending/
+**Completed-financial snapshot J1343/124registered/113completed/11technical/zero pending/
 452funded paths/291combined completions/zero qualifiers.** Every original
 window,RF,initial peak,cost,delay,SPY/QQQand extra gate remains. Failed
 policies,earlier syntax/test failures,source/PIT/refusal scopes and original

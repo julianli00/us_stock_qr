@@ -2,19 +2,27 @@
   "schema_version": 1,
   "current_ssd_journal_summary": {
     "latest_technical_failure": {
-      "study_id": "ssd_expert_active_forecast_pair_20261106_v1",
-      "results": "research/workbench/evidence/expert_active_forecast_pair_20261106_v1_failure.json",
-      "results_sha256": "c53c076ec8348a235c1457ea920a71655b39385addeba21de9ba9d91cda062e8",
-      "registered_sequences": [
-        1247,
-        1248
-      ],
-      "technical_failure_sequences": [
-        1250,
-        1251
-      ],
-      "V1_frozen_code_and_targets_preserved": true,
-      "new_accounts_or_completed_financial_configurations": 0
+      "study_id": "ssd_expert_total_target_cost_20261106_v1",
+      "status": "terminal_duplicate_target_identity_no_new_funding",
+      "classification": "operational_duplicate_not_source_or_policy_invalidity",
+      "result": "research/workbench/evidence/expert_total_target_cost_20261106_duplicate_v1.json",
+      "result_sha256": "42602f318a672d4fdbc920f59d457b29e57174a99358f0f0bc6a3b6c3162886f",
+      "implementation_freeze_sha256": "5b635cc100bc0870994505133ebe1771a50a7ec0cb03e962a49b3b08a7935860",
+      "actual_registration_sequence": 1344,
+      "actual_target_proof_sequence": 1345,
+      "actual_terminal_event_sequence": 1346,
+      "source_or_policy_declared_technically_invalid": false,
+      "financial_acceptance_or_expert_admission_changed": false,
+      "new_accounts_or_completed_financial_configurations": 0,
+      "new_economic_financial_trials": 0,
+      "source_origins": 121,
+      "bit_different_target_origins": 0,
+      "selected_pair_changed_origins": 0,
+      "target_identity_sha256": "8871ef3155c2ea5b1da479d508c70eae269d90a376322a33422af6dd83ba7844",
+      "mature_scored_pair_records": 684,
+      "bit_different_proxy_cost_pair_records": 486,
+      "maximum_nominal_proxy_cost_fraction_difference": 0.00178,
+      "sample_identity_is_algebraic_or_future_performance_guarantee": false
     },
     "previous_complete_financial_study": {
       "study_id": "ssd_growth_macro_defense_hedge_20261106_v1",
@@ -776,14 +784,14 @@
       "complete_previous_projection_path": "docs/research_progress.json",
       "snapshot_is_current": false
     },
-    "snapshot_scope": "Current J1343 direct-commitment quartet all eight original funded paths complete. Both complete laws rejected;all CAGR pass but all Sharpe and QQQ fail. Older preregistration and other studies are historical,not pending work.",
-    "journal_summary_derived_at_utc": "2026-11-06T07:00:34.164087+00:00",
-    "journal_sequence": 1343,
-    "journal_head_sha256": "66ec26b9a626e4b4ef2a4ae7447e2f492676fbb8343282850879a97991b81796",
+    "snapshot_scope": "Current J1346 totals;last complete financial study remains direct quartet J1343. New total-target-cost law has identical targets and terminates before funding. Technical12 includes one operational duplicate,not invalid source code or a new financial failure;no cached metrics relabelled new.",
+    "journal_summary_derived_at_utc": "2026-11-06T07:36:47.884968+00:00",
+    "journal_sequence": 1346,
+    "journal_head_sha256": "fbc3b6d48b4e7aa508bf1a81c523114709870b104b558381ade7dc0990c3af4d",
     "legacy_completed": 178,
-    "registered": 124,
+    "registered": 125,
     "completed": 113,
-    "technical_failures": 11,
+    "technical_failures": 12,
     "pending": 0,
     "funded_paths": 452,
     "combined_completed": 291,
@@ -1516,7 +1524,25 @@
     "maximum_independent_BT_gap_USD": 4.001776687800884e-11,
     "actual_broker_orders": 0,
     "actual_financial_process_wall_seconds": 106.87553095899057,
-    "actual_financial_process_Darwin_peak_RSS_bytes": 451919872
+    "actual_financial_process_Darwin_peak_RSS_bytes": 451919872,
+    "financial_result_snapshot_journal_sequence": 1343,
+    "preserved_technical_failure_before_duplicate_J1346": {
+      "study_id": "ssd_expert_active_forecast_pair_20261106_v1",
+      "results": "research/workbench/evidence/expert_active_forecast_pair_20261106_v1_failure.json",
+      "results_sha256": "c53c076ec8348a235c1457ea920a71655b39385addeba21de9ba9d91cda062e8",
+      "registered_sequences": [
+        1247,
+        1248
+      ],
+      "technical_failure_sequences": [
+        1250,
+        1251
+      ],
+      "V1_frozen_code_and_targets_preserved": true,
+      "new_accounts_or_completed_financial_configurations": 0
+    },
+    "latest_workflow_study_id": "ssd_expert_total_target_cost_20261106_v1",
+    "latest_workflow_status": "terminal_duplicate_targets_no_new_funding"
   },
   "updated_on": "2026-10-31",
   "phase": "legacy_term_expert_v2_eligibility_complete_blocked",
