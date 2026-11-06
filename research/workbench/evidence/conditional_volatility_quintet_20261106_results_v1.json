@@ -1,0 +1,862 @@
+{
+  "actual_authoritative_counts": {
+    "current_journal_event_count": 1369,
+    "current_journal_head_sha256": "8e105f6426b15eebe69269399662d031962bf83131570973d8d6ec385848aa63",
+    "new_account_paths": 460,
+    "new_completed_strategy_evaluations": 115,
+    "new_historical_point_gate_passes": 0,
+    "new_pending_candidates": 0,
+    "new_registered_candidates": 127,
+    "new_reviews": 115,
+    "new_technical_failures": 12,
+    "original_completed_configurations": 178,
+    "original_registered_versions": 96,
+    "original_reviews": 94,
+    "total_legacy_plus_ssd_completed_configurations": 293
+  },
+  "admitted_legacy_defensive_views_reused_unchanged": true,
+  "all_source_native_RF_claimed_equal_without_view": false,
+  "candidates": {
+    "expert_pool_conditional_volatility_quintet_equal_v1": {
+      "paths": {
+        "10y-base": {
+          "all_point_gates_pass": false,
+          "artifacts": [
+            {
+              "path": "reports/ssd-continuous-research-v1/conditional-volatility-quintet-20261106-v1/main-accounts/expert_pool_conditional_volatility_quintet_equal_v1/accounts/10y-base/account.csv",
+              "sha256": "0938998e5943892faf1b42467ad986a708c97454691df5ea52e061b1d457d2d0"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/conditional-volatility-quintet-20261106-v1/main-accounts/expert_pool_conditional_volatility_quintet_equal_v1/accounts/10y-base/weights.csv",
+              "sha256": "4b29e954f9b8a63787827f7d9168b95f199239c633d802003514b1a2c6005168"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/conditional-volatility-quintet-20261106-v1/main-accounts/expert_pool_conditional_volatility_quintet_equal_v1/accounts/10y-base/issued.csv",
+              "sha256": "33cf5b9df100c2e9c06af0e1439d2b17b53c1240b3d9d5df9a59ef176b5d3f49"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/conditional-volatility-quintet-20261106-v1/main-accounts/expert_pool_conditional_volatility_quintet_equal_v1/accounts/10y-base/independent-bt.csv",
+              "sha256": "987fcbd5b1e49b1f82e7ac75162078a3338aeb23b495206a87b01734ff8202f3"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/conditional-volatility-quintet-20261106-v1/main-accounts/expert_pool_conditional_volatility_quintet_equal_v1/accounts/10y-base/decisions.json",
+              "sha256": "c41740b8bd6cbe483c03e492d5828610085c4da74bcaf8c0a7a18ce63e7f96e4"
+            }
+          ],
+          "broker_orders": 0,
+          "candidate_id": "expert_pool_conditional_volatility_quintet_equal_v1",
+          "completed_at": "2026-11-06T08:03:03.703035+00:00",
+          "excess_net_cagr_vs_qqq": -0.04987499512236715,
+          "excess_net_cagr_vs_spy": 0.007129269659207127,
+          "execution": {
+            "annualized_two_sided_turnover": 2.678203198765283,
+            "executed_notional_usd": 515739.9606155775,
+            "fixed_commission_usd": 887.0,
+            "initial_deployment_cost_usd": 14.89270257573789,
+            "maximum_gross_exposure": 0.9832500745981585,
+            "minimum_cash_usd": 198.22317472205842,
+            "model_order_count": 887,
+            "model_orders_are_broker_orders": false,
+            "proportional_cost_usd": 257.86998030778875,
+            "rebalance_session_count": 91,
+            "total_cost_usd": 1144.8699803077889,
+            "total_two_sided_turnover": 26.77836572728491
+          },
+          "frozen_specification_sha256": "5b60195a0ef3477d6b211c50b90d3cd4c41feac870dfefd4730bb65b32ce8769",
+          "gates": {
+            "beats_qqq": false,
+            "beats_spy": true,
+            "cagr_above_12pct": true,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": false
+          },
+          "independent_bt_max_equity_difference_usd": 4.3655745685100555e-11,
+          "independent_forward_validation": false,
+          "independent_monthly_feedback": {
+            "all_actual_gaps_targets_and_delays_checked": true,
+            "checked_actual_monthly_decisions_and_initial": 121,
+            "issued_requests": 91
+          },
+          "metrics": {
+            "annualized_volatility": 0.13759375128893597,
+            "cagr": 0.1617492489903487,
+            "end": "2026-10-05",
+            "expected_shortfall_5pct": -0.020443569502071546,
+            "max_drawdown": 0.2178837578722428,
+            "max_underwater_sessions": 389,
+            "positive_year_fraction": 0.8181818181818182,
+            "rolling_3y_cagr_above_20pct_fraction": 0.15139442231075698,
+            "rolling_3y_cagr_median": 0.11611260968463623,
+            "rolling_3y_cagr_min": 0.03150600882173994,
+            "sessions": 2512,
+            "sharpe": 0.9827839419017013,
+            "start": "2016-10-06",
+            "total_return": 3.477492530390264,
+            "worst_day": -0.06417336584496747,
+            "year_returns": {
+              "2016": 0.027240277732715867,
+              "2017": 0.23230815488170742,
+              "2018": -0.033161351138743966,
+              "2019": 0.20242104272109107,
+              "2020": 0.19573062409019482,
+              "2021": 0.18617696705004638,
+              "2022": -0.1292441994102027,
+              "2023": 0.20324355249735238,
+              "2024": 0.1642311056552359,
+              "2025": 0.3260978703404316,
+              "2026": 0.3261278715096285
+            }
+          },
+          "path_key": "10y-base"
+        },
+        "10y-stress": {
+          "all_point_gates_pass": false,
+          "artifacts": [
+            {
+              "path": "reports/ssd-continuous-research-v1/conditional-volatility-quintet-20261106-v1/main-accounts/expert_pool_conditional_volatility_quintet_equal_v1/accounts/10y-stress/account.csv",
+              "sha256": "b4dfbebea73e3dc74f44290beaba96f228855759b2945ede4218a5dbb40c8367"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/conditional-volatility-quintet-20261106-v1/main-accounts/expert_pool_conditional_volatility_quintet_equal_v1/accounts/10y-stress/weights.csv",
+              "sha256": "ac1142be97a2abc742ec86a30af0403b33d9fd7e64d3950c9ed8cfa6c3ec9bf2"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/conditional-volatility-quintet-20261106-v1/main-accounts/expert_pool_conditional_volatility_quintet_equal_v1/accounts/10y-stress/issued.csv",
+              "sha256": "e3157b80ee2cae4a305ed00aef6801cd8c6950dfbcba63585bafc59c73414cd1"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/conditional-volatility-quintet-20261106-v1/main-accounts/expert_pool_conditional_volatility_quintet_equal_v1/accounts/10y-stress/independent-bt.csv",
+              "sha256": "f0dbb5a5bf6ffc1ef92eb49fc86fd41520f6e13f3bc4c2b40daa03dcf6394a66"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/conditional-volatility-quintet-20261106-v1/main-accounts/expert_pool_conditional_volatility_quintet_equal_v1/accounts/10y-stress/decisions.json",
+              "sha256": "b0dcfe30d1f76787441526cea5b58331c465a87c6e9772474a2f2a30dc6c86b3"
+            }
+          ],
+          "broker_orders": 0,
+          "candidate_id": "expert_pool_conditional_volatility_quintet_equal_v1",
+          "completed_at": "2026-11-06T08:03:06.893826+00:00",
+          "excess_net_cagr_vs_qqq": -0.055543739467520004,
+          "excess_net_cagr_vs_spy": 0.0016385293857583694,
+          "execution": {
+            "annualized_two_sided_turnover": 2.674519756258934,
+            "executed_notional_usd": 498817.64578527637,
+            "fixed_commission_usd": 887.0,
+            "initial_deployment_cost_usd": 29.542097488921712,
+            "maximum_gross_exposure": 0.9830709428369855,
+            "minimum_cash_usd": 195.6013785713415,
+            "model_order_count": 887,
+            "model_orders_are_broker_orders": false,
+            "proportional_cost_usd": 997.6352915705529,
+            "rebalance_session_count": 91,
+            "total_cost_usd": 1884.635291570553,
+            "total_two_sided_turnover": 26.7415363445794
+          },
+          "frozen_specification_sha256": "5b60195a0ef3477d6b211c50b90d3cd4c41feac870dfefd4730bb65b32ce8769",
+          "gates": {
+            "also_beats_base_cost_spy": true,
+            "beats_qqq": false,
+            "beats_spy": true,
+            "cagr_above_12pct": true,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": false
+          },
+          "independent_bt_max_equity_difference_usd": 1.8189894035458565e-11,
+          "independent_forward_validation": false,
+          "independent_monthly_feedback": {
+            "all_actual_gaps_targets_and_delays_checked": true,
+            "checked_actual_monthly_decisions_and_initial": 121,
+            "issued_requests": 91
+          },
+          "metrics": {
+            "annualized_volatility": 0.13751202238862878,
+            "cagr": 0.15569489552492466,
+            "end": "2026-10-05",
+            "expected_shortfall_5pct": -0.020424031974979724,
+            "max_drawdown": 0.21213556250883725,
+            "max_underwater_sessions": 494,
+            "positive_year_fraction": 0.8181818181818182,
+            "rolling_3y_cagr_above_20pct_fraction": 0.14513375071143997,
+            "rolling_3y_cagr_median": 0.11101695908132002,
+            "rolling_3y_cagr_min": 0.028344337980698475,
+            "sessions": 2512,
+            "sharpe": 0.9451260884594017,
+            "start": "2016-10-06",
+            "total_return": 3.249579156782291,
+            "worst_day": -0.0630857329220027,
+            "year_returns": {
+              "2016": 0.02249254090871533,
+              "2017": 0.2254445492088566,
+              "2018": -0.03510354611468414,
+              "2019": 0.1906988951927926,
+              "2020": 0.2025039612291748,
+              "2021": 0.1843551826867198,
+              "2022": -0.13535890928586047,
+              "2023": 0.1863305108515254,
+              "2024": 0.16655378193678305,
+              "2025": 0.30539355828126813,
+              "2026": 0.3269457466126444
+            }
+          },
+          "path_key": "10y-stress"
+        },
+        "5y-base": {
+          "all_point_gates_pass": false,
+          "artifacts": [
+            {
+              "path": "reports/ssd-continuous-research-v1/conditional-volatility-quintet-20261106-v1/main-accounts/expert_pool_conditional_volatility_quintet_equal_v1/accounts/5y-base/account.csv",
+              "sha256": "e82d2b76aa6bf6404e09aed8bf294a4efa3b98349cd5022635f9787da0dd2786"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/conditional-volatility-quintet-20261106-v1/main-accounts/expert_pool_conditional_volatility_quintet_equal_v1/accounts/5y-base/weights.csv",
+              "sha256": "8cbace28c32a7e06619f4974d69979b6afe47078af7699b481ea81eee3727ee6"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/conditional-volatility-quintet-20261106-v1/main-accounts/expert_pool_conditional_volatility_quintet_equal_v1/accounts/5y-base/issued.csv",
+              "sha256": "b3260af2e373466b62dcd8eb97f1790c30e727aa423518cefa186c2c48095b49"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/conditional-volatility-quintet-20261106-v1/main-accounts/expert_pool_conditional_volatility_quintet_equal_v1/accounts/5y-base/independent-bt.csv",
+              "sha256": "c748bd5e82e941764c758e4f1629ea84d81f3964691a098dcad2c52113ecb945"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/conditional-volatility-quintet-20261106-v1/main-accounts/expert_pool_conditional_volatility_quintet_equal_v1/accounts/5y-base/decisions.json",
+              "sha256": "75122c2bd49c636f404264f4871d780e7715c6a7e11347406102422ad31701f7"
+            }
+          ],
+          "broker_orders": 0,
+          "candidate_id": "expert_pool_conditional_volatility_quintet_equal_v1",
+          "completed_at": "2026-11-06T08:03:09.741172+00:00",
+          "excess_net_cagr_vs_qqq": 0.012759904919973808,
+          "excess_net_cagr_vs_spy": 0.04309112191004161,
+          "execution": {
+            "annualized_two_sided_turnover": 2.9507489894685337,
+            "executed_notional_usd": 187038.2536379142,
+            "fixed_commission_usd": 501.0,
+            "initial_deployment_cost_usd": 15.892212815720299,
+            "maximum_gross_exposure": 0.9824836723242537,
+            "minimum_cash_usd": 184.82098306469058,
+            "model_order_count": 501,
+            "model_orders_are_broker_orders": false,
+            "proportional_cost_usd": 93.51912681895709,
+            "rebalance_session_count": 53,
+            "total_cost_usd": 594.5191268189571,
+            "total_two_sided_turnover": 14.751725269731807
+          },
+          "frozen_specification_sha256": "5b60195a0ef3477d6b211c50b90d3cd4c41feac870dfefd4730bb65b32ce8769",
+          "gates": {
+            "beats_qqq": true,
+            "beats_spy": true,
+            "cagr_above_12pct": true,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": false
+          },
+          "independent_bt_max_equity_difference_usd": 3.637978807091713e-11,
+          "independent_forward_validation": false,
+          "independent_monthly_feedback": {
+            "all_actual_gaps_targets_and_delays_checked": true,
+            "checked_actual_monthly_decisions_and_initial": 61,
+            "issued_requests": 53
+          },
+          "metrics": {
+            "annualized_volatility": 0.1417435948669956,
+            "cagr": 0.18349967801474865,
+            "end": "2026-10-05",
+            "expected_shortfall_5pct": -0.01947815523779645,
+            "max_drawdown": 0.17536890117691628,
+            "max_underwater_sessions": 493,
+            "positive_year_fraction": 0.8333333333333334,
+            "rolling_3y_cagr_above_20pct_fraction": 0.5190380761523046,
+            "rolling_3y_cagr_median": 0.2090553997459091,
+            "rolling_3y_cagr_min": 0.06281684176780818,
+            "sessions": 1254,
+            "sharpe": 0.9936027267018437,
+            "start": "2021-10-06",
+            "total_return": 1.3216173446184332,
+            "worst_day": -0.04513648307098905,
+            "year_returns": {
+              "2021": 0.10137380384423356,
+              "2022": -0.13303883121007176,
+              "2023": 0.1976847972731508,
+              "2024": 0.16077705927477304,
+              "2025": 0.3214765039644294,
+              "2026": 0.32344364292392735
+            }
+          },
+          "path_key": "5y-base"
+        },
+        "5y-stress": {
+          "all_point_gates_pass": false,
+          "artifacts": [
+            {
+              "path": "reports/ssd-continuous-research-v1/conditional-volatility-quintet-20261106-v1/main-accounts/expert_pool_conditional_volatility_quintet_equal_v1/accounts/5y-stress/account.csv",
+              "sha256": "7e066fe9d2ccb3a2b6a18d60faa5b2e93cd62dcc079703e4a0b1fa38028ba3f4"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/conditional-volatility-quintet-20261106-v1/main-accounts/expert_pool_conditional_volatility_quintet_equal_v1/accounts/5y-stress/weights.csv",
+              "sha256": "5a89f22d82dbd698371cfd1236b98f2039428e8fe1dc7aa269888b15163b14f3"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/conditional-volatility-quintet-20261106-v1/main-accounts/expert_pool_conditional_volatility_quintet_equal_v1/accounts/5y-stress/issued.csv",
+              "sha256": "9ffba81baeaf54a71c876329dbdadb313602193cbdd09a081a2b2ea4a08f7c6d"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/conditional-volatility-quintet-20261106-v1/main-accounts/expert_pool_conditional_volatility_quintet_equal_v1/accounts/5y-stress/independent-bt.csv",
+              "sha256": "08cac362448c7c0ab184a2f5ad4e8159083229cf4bed075f71059b98c90f1b59"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/conditional-volatility-quintet-20261106-v1/main-accounts/expert_pool_conditional_volatility_quintet_equal_v1/accounts/5y-stress/decisions.json",
+              "sha256": "52b19bf658cfd26f396f54ff1087d77f0a359e82fa0229e5cb23bc695b3ddea2"
+            }
+          ],
+          "broker_orders": 0,
+          "candidate_id": "expert_pool_conditional_volatility_quintet_equal_v1",
+          "completed_at": "2026-11-06T08:03:12.622497+00:00",
+          "excess_net_cagr_vs_qqq": 0.006457999679195137,
+          "excess_net_cagr_vs_spy": 0.035882462478799004,
+          "execution": {
+            "annualized_two_sided_turnover": 2.927358950579596,
+            "executed_notional_usd": 178942.4651313042,
+            "fixed_commission_usd": 481.0,
+            "initial_deployment_cost_usd": 30.54014132300691,
+            "maximum_gross_exposure": 0.9828311763570388,
+            "minimum_cash_usd": 182.92836256456607,
+            "model_order_count": 481,
+            "model_orders_are_broker_orders": false,
+            "proportional_cost_usd": 357.8849302626084,
+            "rebalance_session_count": 51,
+            "total_cost_usd": 838.8849302626083,
+            "total_two_sided_turnover": 14.634791084896214
+          },
+          "frozen_specification_sha256": "5b60195a0ef3477d6b211c50b90d3cd4c41feac870dfefd4730bb65b32ce8769",
+          "gates": {
+            "also_beats_base_cost_spy": true,
+            "beats_qqq": true,
+            "beats_spy": true,
+            "cagr_above_12pct": true,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": false
+          },
+          "independent_bt_max_equity_difference_usd": 3.637978807091713e-11,
+          "independent_forward_validation": false,
+          "independent_monthly_feedback": {
+            "all_actual_gaps_targets_and_delays_checked": true,
+            "checked_actual_monthly_decisions_and_initial": 61,
+            "issued_requests": 51
+          },
+          "metrics": {
+            "annualized_volatility": 0.1416233472119927,
+            "cagr": 0.17116526614309158,
+            "end": "2026-10-05",
+            "expected_shortfall_5pct": -0.019485397364786487,
+            "max_drawdown": 0.1812597495046432,
+            "max_underwater_sessions": 497,
+            "positive_year_fraction": 0.8333333333333334,
+            "rolling_3y_cagr_above_20pct_fraction": 0.4909819639278557,
+            "rolling_3y_cagr_median": 0.19762119917962984,
+            "rolling_3y_cagr_min": 0.0560823809286823,
+            "sessions": 1254,
+            "sharpe": 0.9199430436929577,
+            "start": "2021-10-06",
+            "total_return": 1.2031494198883417,
+            "worst_day": -0.04519260108165757,
+            "year_returns": {
+              "2021": 0.0815098876167526,
+              "2022": -0.1388441651826885,
+              "2023": 0.18065341596452322,
+              "2024": 0.1633900562283368,
+              "2025": 0.30062607535174823,
+              "2026": 0.3241325987135162
+            }
+          },
+          "path_key": "5y-stress"
+        }
+      },
+      "status": "rejected"
+    },
+    "expert_pool_conditional_volatility_quintet_rolling_pair_v1": {
+      "paths": {
+        "10y-base": {
+          "all_point_gates_pass": false,
+          "artifacts": [
+            {
+              "path": "reports/ssd-continuous-research-v1/conditional-volatility-quintet-20261106-v1/main-accounts/expert_pool_conditional_volatility_quintet_rolling_pair_v1/accounts/10y-base/account.csv",
+              "sha256": "6e3850d3ca7158b4f2dba9441f335e9526ccb9347da1005465fa897c3fe74579"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/conditional-volatility-quintet-20261106-v1/main-accounts/expert_pool_conditional_volatility_quintet_rolling_pair_v1/accounts/10y-base/weights.csv",
+              "sha256": "ea5f00340a7d5fbde66de150080a8041228e77cd9ae593e99a37e2124545e5a7"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/conditional-volatility-quintet-20261106-v1/main-accounts/expert_pool_conditional_volatility_quintet_rolling_pair_v1/accounts/10y-base/issued.csv",
+              "sha256": "a4cd1245fe4ff9a87084859a7cb590b60dfdf96ef7e05aa56bfd6d5a85b00445"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/conditional-volatility-quintet-20261106-v1/main-accounts/expert_pool_conditional_volatility_quintet_rolling_pair_v1/accounts/10y-base/independent-bt.csv",
+              "sha256": "8c87edd0c6d144953802c77194f2e34f95888e9fac2297dae919b3a0fd94f6b6"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/conditional-volatility-quintet-20261106-v1/main-accounts/expert_pool_conditional_volatility_quintet_rolling_pair_v1/accounts/10y-base/decisions.json",
+              "sha256": "3083ae75484bbce6f7ff99a20583e2580c54d4b73b7abf895b1ebc2307831b2e"
+            }
+          ],
+          "broker_orders": 0,
+          "candidate_id": "expert_pool_conditional_volatility_quintet_rolling_pair_v1",
+          "completed_at": "2026-11-06T08:03:57.787375+00:00",
+          "excess_net_cagr_vs_qqq": -0.05772176856644262,
+          "excess_net_cagr_vs_spy": -0.0007175037848683452,
+          "execution": {
+            "annualized_two_sided_turnover": 6.379693703700123,
+            "executed_notional_usd": 1180452.6312219987,
+            "fixed_commission_usd": 809.0,
+            "initial_deployment_cost_usd": 14.89270257573789,
+            "maximum_gross_exposure": 0.983412448411431,
+            "minimum_cash_usd": 198.22317472205842,
+            "model_order_count": 809,
+            "model_orders_are_broker_orders": false,
+            "proportional_cost_usd": 590.2263156109993,
+            "rebalance_session_count": 102,
+            "total_cost_usd": 1399.2263156109993,
+            "total_two_sided_turnover": 63.78820371228706
+          },
+          "frozen_specification_sha256": "5b60195a0ef3477d6b211c50b90d3cd4c41feac870dfefd4730bb65b32ce8769",
+          "gates": {
+            "beats_qqq": false,
+            "beats_spy": false,
+            "cagr_above_12pct": true,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": false
+          },
+          "independent_bt_max_equity_difference_usd": 4.3655745685100555e-11,
+          "independent_forward_validation": false,
+          "independent_monthly_feedback": {
+            "all_actual_gaps_targets_and_delays_checked": true,
+            "checked_actual_monthly_decisions_and_initial": 121,
+            "issued_requests": 102
+          },
+          "metrics": {
+            "annualized_volatility": 0.13919042627166792,
+            "cagr": 0.15390247554627323,
+            "end": "2026-10-05",
+            "expected_shortfall_5pct": -0.020829130471879745,
+            "max_drawdown": 0.22766543936575767,
+            "max_underwater_sessions": 550,
+            "positive_year_fraction": 0.8181818181818182,
+            "rolling_3y_cagr_above_20pct_fraction": 0.1377347751849744,
+            "rolling_3y_cagr_median": 0.09994472300714413,
+            "rolling_3y_cagr_min": 0.004562013499451745,
+            "sessions": 2512,
+            "sharpe": 0.9242325497966963,
+            "start": "2016-10-06",
+            "total_return": 3.1841374798593556,
+            "worst_day": -0.05304526275473587,
+            "year_returns": {
+              "2016": 0.027240277732715867,
+              "2017": 0.21493013739279698,
+              "2018": -0.0489591741539499,
+              "2019": 0.0717105669952911,
+              "2020": 0.31633360081373585,
+              "2021": 0.24771907805160787,
+              "2022": -0.20373392718167083,
+              "2023": 0.14002634511785206,
+              "2024": 0.12924097185864536,
+              "2025": 0.39829371201555475,
+              "2026": 0.3972207076686236
+            }
+          },
+          "path_key": "10y-base"
+        },
+        "10y-stress": {
+          "all_point_gates_pass": false,
+          "artifacts": [
+            {
+              "path": "reports/ssd-continuous-research-v1/conditional-volatility-quintet-20261106-v1/main-accounts/expert_pool_conditional_volatility_quintet_rolling_pair_v1/accounts/10y-stress/account.csv",
+              "sha256": "36c6070004f5ebb26944aad9f9e3a7633eab8f1456390b30af6d92a6127a2d13"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/conditional-volatility-quintet-20261106-v1/main-accounts/expert_pool_conditional_volatility_quintet_rolling_pair_v1/accounts/10y-stress/weights.csv",
+              "sha256": "b2f12725385090f43c621893ffb99369a789b58078ac820e944a5c3336cac3d6"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/conditional-volatility-quintet-20261106-v1/main-accounts/expert_pool_conditional_volatility_quintet_rolling_pair_v1/accounts/10y-stress/issued.csv",
+              "sha256": "b23cae5d97d9c0c3ab800c8fac187c7959ab0a692d98b28d6f2c125f44d0a7d9"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/conditional-volatility-quintet-20261106-v1/main-accounts/expert_pool_conditional_volatility_quintet_rolling_pair_v1/accounts/10y-stress/independent-bt.csv",
+              "sha256": "4518a2bfa0cc6d11bcaefd8ed3c14d835f07e33a8a64bb31d6c7802026f7f012"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/conditional-volatility-quintet-20261106-v1/main-accounts/expert_pool_conditional_volatility_quintet_rolling_pair_v1/accounts/10y-stress/decisions.json",
+              "sha256": "d19b5714b082164577c46bbeab4e059a95dbbdf41ec48a1c7f47391e357dd3f3"
+            }
+          ],
+          "broker_orders": 0,
+          "candidate_id": "expert_pool_conditional_volatility_quintet_rolling_pair_v1",
+          "completed_at": "2026-11-06T08:04:00.976125+00:00",
+          "excess_net_cagr_vs_qqq": -0.06758839905775682,
+          "excess_net_cagr_vs_spy": -0.010406130204478448,
+          "execution": {
+            "annualized_two_sided_turnover": 6.388398726453038,
+            "executed_notional_usd": 1131887.2207611918,
+            "fixed_commission_usd": 818.0,
+            "initial_deployment_cost_usd": 29.542097488921712,
+            "maximum_gross_exposure": 0.9837705257147962,
+            "minimum_cash_usd": 195.6013785713415,
+            "model_order_count": 818,
+            "model_orders_are_broker_orders": false,
+            "proportional_cost_usd": 2263.7744415223838,
+            "rebalance_session_count": 103,
+            "total_cost_usd": 3081.7744415223838,
+            "total_two_sided_turnover": 63.875242023289516
+          },
+          "frozen_specification_sha256": "5b60195a0ef3477d6b211c50b90d3cd4c41feac870dfefd4730bb65b32ce8769",
+          "gates": {
+            "also_beats_base_cost_spy": false,
+            "beats_qqq": false,
+            "beats_spy": false,
+            "cagr_above_12pct": true,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": false
+          },
+          "independent_bt_max_equity_difference_usd": 4.3655745685100555e-11,
+          "independent_forward_validation": false,
+          "independent_monthly_feedback": {
+            "all_actual_gaps_targets_and_delays_checked": true,
+            "checked_actual_monthly_decisions_and_initial": 121,
+            "issued_requests": 103
+          },
+          "metrics": {
+            "annualized_volatility": 0.13968376169108715,
+            "cagr": 0.14365023593468784,
+            "end": "2026-10-05",
+            "expected_shortfall_5pct": -0.020972444475127208,
+            "max_drawdown": 0.23623585460069108,
+            "max_underwater_sessions": 550,
+            "positive_year_fraction": 0.8181818181818182,
+            "rolling_3y_cagr_above_20pct_fraction": 0.12122936824132043,
+            "rolling_3y_cagr_median": 0.09363961376608892,
+            "rolling_3y_cagr_min": 0.0012459463745629555,
+            "sessions": 2512,
+            "sharpe": 0.8573506945498804,
+            "start": "2016-10-06",
+            "total_return": 2.826946932531996,
+            "worst_day": -0.052293470019447175,
+            "year_returns": {
+              "2016": 0.02249254090871533,
+              "2017": 0.1984362956828314,
+              "2018": -0.048847387770884154,
+              "2019": 0.055252855625149255,
+              "2020": 0.3139687507283824,
+              "2021": 0.24274099448998676,
+              "2022": -0.2103077864099131,
+              "2023": 0.14041065704592337,
+              "2024": 0.12715599516653442,
+              "2025": 0.3698285161903503,
+              "2026": 0.37036287429039527
+            }
+          },
+          "path_key": "10y-stress"
+        },
+        "5y-base": {
+          "all_point_gates_pass": false,
+          "artifacts": [
+            {
+              "path": "reports/ssd-continuous-research-v1/conditional-volatility-quintet-20261106-v1/main-accounts/expert_pool_conditional_volatility_quintet_rolling_pair_v1/accounts/5y-base/account.csv",
+              "sha256": "092aa27e8691d62ffc262f65d9f23f057c39db88ae320dec8301737ad6ff0065"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/conditional-volatility-quintet-20261106-v1/main-accounts/expert_pool_conditional_volatility_quintet_rolling_pair_v1/accounts/5y-base/weights.csv",
+              "sha256": "cb2ca291982c969add2c398b5572fe31a3d3f2cd7f9c21ca5122a3039e815beb"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/conditional-volatility-quintet-20261106-v1/main-accounts/expert_pool_conditional_volatility_quintet_rolling_pair_v1/accounts/5y-base/issued.csv",
+              "sha256": "84ab552be07042e67e2c704788b927596139ce06d84ab10707249968d4c3f247"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/conditional-volatility-quintet-20261106-v1/main-accounts/expert_pool_conditional_volatility_quintet_rolling_pair_v1/accounts/5y-base/independent-bt.csv",
+              "sha256": "6585e4573963dcbb7d9f48765e5842e03bbd8c00483b2e4274ecfbbbf26dd372"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/conditional-volatility-quintet-20261106-v1/main-accounts/expert_pool_conditional_volatility_quintet_rolling_pair_v1/accounts/5y-base/decisions.json",
+              "sha256": "de36bed566aaa32a93f0aae3a4a3e80cdbcf92a8ab4ce4f279ca414b83db2f24"
+            }
+          ],
+          "broker_orders": 0,
+          "candidate_id": "expert_pool_conditional_volatility_quintet_rolling_pair_v1",
+          "completed_at": "2026-11-06T08:04:03.840733+00:00",
+          "excess_net_cagr_vs_qqq": 0.005841088971025865,
+          "excess_net_cagr_vs_spy": 0.036172305961093665,
+          "execution": {
+            "annualized_two_sided_turnover": 7.008756912582963,
+            "executed_notional_usd": 435244.68577941466,
+            "fixed_commission_usd": 407.0,
+            "initial_deployment_cost_usd": 11.89417185579066,
+            "maximum_gross_exposure": 0.983412448411431,
+            "minimum_cash_usd": 178.8124655057211,
+            "model_order_count": 407,
+            "model_orders_are_broker_orders": false,
+            "proportional_cost_usd": 217.62234288970734,
+            "rebalance_session_count": 55,
+            "total_cost_usd": 624.6223428897074,
+            "total_two_sided_turnover": 35.038987330257335
+          },
+          "frozen_specification_sha256": "5b60195a0ef3477d6b211c50b90d3cd4c41feac870dfefd4730bb65b32ce8769",
+          "gates": {
+            "beats_qqq": true,
+            "beats_spy": true,
+            "cagr_above_12pct": true,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": false
+          },
+          "independent_bt_max_equity_difference_usd": 4.001776687800884e-11,
+          "independent_forward_validation": false,
+          "independent_monthly_feedback": {
+            "all_actual_gaps_targets_and_delays_checked": true,
+            "checked_actual_monthly_decisions_and_initial": 61,
+            "issued_requests": 55
+          },
+          "metrics": {
+            "annualized_volatility": 0.15639449700604904,
+            "cagr": 0.1765808620658007,
+            "end": "2026-10-05",
+            "expected_shortfall_5pct": -0.022266985246034442,
+            "max_drawdown": 0.23115832614015763,
+            "max_underwater_sessions": 550,
+            "positive_year_fraction": 0.8333333333333334,
+            "rolling_3y_cagr_above_20pct_fraction": 0.43286573146292584,
+            "rolling_3y_cagr_median": 0.1800131886737534,
+            "rolling_3y_cagr_min": 0.0011338360876264777,
+            "sessions": 1254,
+            "sharpe": 0.8769122094892898,
+            "start": "2021-10-06",
+            "total_return": 1.2545535858813768,
+            "worst_day": -0.05304526275473587,
+            "year_returns": {
+              "2021": 0.14256640964124379,
+              "2022": -0.20658317248327418,
+              "2023": 0.13602370048164714,
+              "2024": 0.1256855509590491,
+              "2025": 0.3944781093522025,
+              "2026": 0.3946380762667585
+            }
+          },
+          "path_key": "5y-base"
+        },
+        "5y-stress": {
+          "all_point_gates_pass": false,
+          "artifacts": [
+            {
+              "path": "reports/ssd-continuous-research-v1/conditional-volatility-quintet-20261106-v1/main-accounts/expert_pool_conditional_volatility_quintet_rolling_pair_v1/accounts/5y-stress/account.csv",
+              "sha256": "a22b536d5dca12ac44a194702a0b30948658bff40d841bf3e7f4d9a5e2bf4c74"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/conditional-volatility-quintet-20261106-v1/main-accounts/expert_pool_conditional_volatility_quintet_rolling_pair_v1/accounts/5y-stress/weights.csv",
+              "sha256": "4f36638d9be2bc25b9a22a3c852dcf93ba504061765509387d5d5d45df580b5c"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/conditional-volatility-quintet-20261106-v1/main-accounts/expert_pool_conditional_volatility_quintet_rolling_pair_v1/accounts/5y-stress/issued.csv",
+              "sha256": "84ab552be07042e67e2c704788b927596139ce06d84ab10707249968d4c3f247"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/conditional-volatility-quintet-20261106-v1/main-accounts/expert_pool_conditional_volatility_quintet_rolling_pair_v1/accounts/5y-stress/independent-bt.csv",
+              "sha256": "4ad280abf44aab241354fef893eef3e92b5041d991c5572c88966d96d0edacae"
+            },
+            {
+              "path": "reports/ssd-continuous-research-v1/conditional-volatility-quintet-20261106-v1/main-accounts/expert_pool_conditional_volatility_quintet_rolling_pair_v1/accounts/5y-stress/decisions.json",
+              "sha256": "fac5fd5237a734be9103f06bebcf4a557fe423ddfc21f14dfe1188619c66a4e5"
+            }
+          ],
+          "broker_orders": 0,
+          "candidate_id": "expert_pool_conditional_volatility_quintet_rolling_pair_v1",
+          "completed_at": "2026-11-06T08:04:06.723042+00:00",
+          "excess_net_cagr_vs_qqq": -0.005794486685670508,
+          "excess_net_cagr_vs_spy": 0.02362997611393336,
+          "execution": {
+            "annualized_two_sided_turnover": 7.011716303570933,
+            "executed_notional_usd": 418862.7329047334,
+            "fixed_commission_usd": 407.0,
+            "initial_deployment_cost_usd": 26.547965986666128,
+            "maximum_gross_exposure": 0.983770525714796,
+            "minimum_cash_usd": 171.53134998570044,
+            "model_order_count": 407,
+            "model_orders_are_broker_orders": false,
+            "proportional_cost_usd": 837.7254658094666,
+            "rebalance_session_count": 55,
+            "total_cost_usd": 1244.7254658094666,
+            "total_two_sided_turnover": 35.053782259604446
+          },
+          "frozen_specification_sha256": "5b60195a0ef3477d6b211c50b90d3cd4c41feac870dfefd4730bb65b32ce8769",
+          "gates": {
+            "also_beats_base_cost_spy": true,
+            "beats_qqq": false,
+            "beats_spy": true,
+            "cagr_above_12pct": true,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": false
+          },
+          "independent_bt_max_equity_difference_usd": 4.729372449219227e-11,
+          "independent_forward_validation": false,
+          "independent_monthly_feedback": {
+            "all_actual_gaps_targets_and_delays_checked": true,
+            "checked_actual_monthly_decisions_and_initial": 61,
+            "issued_requests": 55
+          },
+          "metrics": {
+            "annualized_volatility": 0.15715806890911055,
+            "cagr": 0.15891277977822593,
+            "end": "2026-10-05",
+            "expected_shortfall_5pct": -0.022793728611426457,
+            "max_drawdown": 0.239500634156098,
+            "max_underwater_sessions": 550,
+            "positive_year_fraction": 0.8333333333333334,
+            "rolling_3y_cagr_above_20pct_fraction": 0.3967935871743487,
+            "rolling_3y_cagr_median": 0.17643046373233437,
+            "rolling_3y_cagr_min": -0.002228355403469401,
+            "sessions": 1254,
+            "sharpe": 0.7766505649390898,
+            "start": "2021-10-06",
+            "total_return": 1.0903062532265744,
+            "worst_day": -0.052293470019447175,
+            "year_returns": {
+              "2021": 0.11373096960874696,
+              "2022": -0.21317124840149448,
+              "2023": 0.1363340263759345,
+              "2024": 0.12353880393624861,
+              "2025": 0.36601851957670206,
+              "2026": 0.3677248175989216
+            }
+          },
+          "path_key": "5y-stress"
+        }
+      },
+      "status": "rejected"
+    }
+  },
+  "completed_at": "2026-11-06T08:04:08.308140+00:00",
+  "conditional_variance_source_slot": 2,
+  "current_opinion_risk_forecast_promoted": false,
+  "declared_study_pool_size": 5,
+  "global_pool_changed": false,
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "new_minus_matched_cached_direct_quartet": {
+    "expert_pool_conditional_volatility_quintet_equal_v1": {
+      "all_original_paths": {
+        "10y-base": {
+          "execution": {
+            "annualized_two_sided_turnover": -0.30999560327522957,
+            "model_order_count": 100,
+            "total_cost_usd": 97.51989032412098
+          },
+          "metrics": {
+            "cagr": 0.01802908709922768,
+            "max_drawdown": -0.011375451781940105,
+            "sharpe": 0.058035322522406396
+          }
+        },
+        "10y-stress": {
+          "execution": {
+            "annualized_two_sided_turnover": -0.3215189795797797,
+            "model_order_count": 91,
+            "total_cost_usd": 84.01193961412719
+          },
+          "metrics": {
+            "cagr": 0.019287769555197398,
+            "max_drawdown": -0.012861219447318106,
+            "sharpe": 0.06967799033620192
+          }
+        },
+        "5y-base": {
+          "execution": {
+            "annualized_two_sided_turnover": -0.3548962075688502,
+            "model_order_count": 56,
+            "total_cost_usd": 49.32897625409964
+          },
+          "metrics": {
+            "cagr": 0.0152589496941824,
+            "max_drawdown": 0.026589728938192003,
+            "sharpe": 0.013956046057309823
+          }
+        },
+        "5y-stress": {
+          "execution": {
+            "annualized_two_sided_turnover": -0.38475954581908445,
+            "model_order_count": 36,
+            "total_cost_usd": 6.356535985875894
+          },
+          "metrics": {
+            "cagr": 0.015054822215343044,
+            "max_drawdown": 0.023317912186471057,
+            "sharpe": 0.021075781539362293
+          }
+        }
+      },
+      "matched_cached_direct_quartet_id": "expert_pool_commitment_macro_defense_hedge_equal_v1",
+      "old_control_replayed": false,
+      "whole_policy_difference_is_isolated_source_alpha": false
+    },
+    "expert_pool_conditional_volatility_quintet_rolling_pair_v1": {
+      "all_original_paths": {
+        "10y-base": {
+          "execution": {
+            "annualized_two_sided_turnover": 0.35627159074730486,
+            "model_order_count": 23,
+            "total_cost_usd": 65.57507863682963
+          },
+          "metrics": {
+            "cagr": 0.011309236489655206,
+            "max_drawdown": 0.06298028094518748,
+            "sharpe": 0.03414160773642427
+          }
+        },
+        "10y-stress": {
+          "execution": {
+            "annualized_two_sided_turnover": 0.3587367920909301,
+            "model_order_count": 29,
+            "total_cost_usd": 164.92171230028816
+          },
+          "metrics": {
+            "cagr": 0.008835846668628689,
+            "max_drawdown": 0.07478397732518127,
+            "sharpe": 0.023046387890354847
+          }
+        },
+        "5y-base": {
+          "execution": {
+            "annualized_two_sided_turnover": 0.5659231040976254,
+            "model_order_count": 20,
+            "total_cost_usd": 21.98660197033189
+          },
+          "metrics": {
+            "cagr": 0.008437340272332117,
+            "max_drawdown": 0.07716780555153946,
+            "sharpe": 0.012755450271999647
+          }
+        },
+        "5y-stress": {
+          "execution": {
+            "annualized_two_sided_turnover": 0.5722570444199784,
+            "model_order_count": 26,
+            "total_cost_usd": 27.100535759796912
+          },
+          "metrics": {
+            "cagr": 0.005978926484909053,
+            "max_drawdown": 0.08457547975525337,
+            "sharpe": 0.00435896966791427
+          }
+        }
+      },
+      "matched_cached_direct_quartet_id": "expert_pool_commitment_macro_defense_hedge_rolling_pair_v1",
+      "old_control_replayed": false,
+      "whole_policy_difference_is_isolated_source_alpha": false
+    }
+  },
+  "new_source_RF_views": 0,
+  "new_source_requests": 0,
+  "old_controls_or_source_models_replayed": false,
+  "order_authority": false,
+  "raw_prices_targets_or_daily_rows_exported": false,
+  "schema_version": 1,
+  "study_id": "ssd_conditional_volatility_quintet_20261106_v1",
+  "total_target_cost_reference_promoted": false
+}

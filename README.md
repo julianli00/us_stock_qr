@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 122 SSD identities, 111 completed/rejected, 11 retained technical failures and zero pending; 444 funded paths | Journal1320 current summary: 289 combined completions, zero qualifiers; investment goal remains unmet |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 127 SSD identities, 115 completed/rejected, 12 retained technical-workflow terminations and zero pending; 460 funded paths | Journal1369 current summary: 293 combined completions, zero qualifiers; investment goal remains unmet |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -45,22 +45,26 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
-### Conditional-variance quintet: preregistered, funding pending
+### Conditional-variance quintet: both complete rules rejected
 
-The new study keeps the direct quartet and appends the admitted complete
-symmetric GARCH growth/BIL policy as a conditional-variance complement.
-Distinct risk models and source labels do not imply independent factors;
-underlying equity exposures can overlap. No source fit or risk/cost
-parameter is retuned.
+The [complete eight-path outcome](research/workbench/evidence/conditional_volatility_quintet_20261106_results_v1.json)
+keeps the direct quartet and appends the admitted complete symmetric GARCH
+growth/BIL policy. Equal fifths and the original126/84/42ten-pair rolling
+law were both published at`a24d841`and verified before new funds.
+No source fit,old control or failed risk/cost variant is replayed or promoted.
 
-Equal fifths and the original126/84/42rolling two-expert law retain all
-ten pairs. Both identities are registered1347/1348and proved1349/1350
-before new funds. The new equal and rolling targets differ from their
-matched cached controls at121and56origins,respectively.
-**J1350/127registered/113completed/12technical/2pending/452existing
-funded paths/291combined completions/zero qualifiers.** No new account or
-performance result exists;both complete actual packets must be remotely
-published and checked before eight original funded paths.
+All eight paths have netCAGR>12%,but none has RFSharpe>1 or DD<=15%.
+QQQpasses only both equal five-year paths and rolling5y-base;partial
+benchmark passes do not qualify either complete rule. Compared with
+matched cached direct-quartet controls,CAGR and Sharpe improve on all
+eight paths,but six DDs worsen,including every rolling path.
+Equal turnover falls and rolling turnover rises;all eight fees and
+model-ticket counts rise. Distinct policy labels are not independent risks
+and these whole-policy differences are not isolated GARCH alpha.
+**J1369/127registered/115completed/12technical-workflow terminations/
+zero pending/460funded paths/293combined completions/zero qualifiers.**
+The technical counter still includes the earlier duplicate workflow,
+not a new source invalidity. The investment goal remains unmet.
 
 ### Cross-origin cost reference: duplicate targets, no new funding
 

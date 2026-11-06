@@ -4,7 +4,68 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Conditional-variance quintet: actual preregistration, funding pending
+## Conditional-variance quintet: all eight paths complete, both rules rejected
+
+The [complete financial outcome](evidence/conditional_volatility_quintet_20261106_results_v1.json)
+retains all original paths of both frozen laws. Each uses one freshUSD10000
+cash-funded main account,not averaged source metrics or summed source capital.
+The matched direct-quartet controls are cached and are not replayed.
+
+| Quintet law | Path | Net CAGR | RF Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Fees USD |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Equal | 10y-base | 16.174925% | 0.982784 | 21.788376% | 2.678203x | 887 | 1144.87 |
+| Equal | 10y-stress | 15.569490% | 0.945126 | 21.213556% | 2.674520x | 887 | 1884.64 |
+| Equal | 5y-base | 18.349968% | 0.993603 | 17.536890% | 2.950749x | 501 | 594.52 |
+| Equal | 5y-stress | 17.116527% | 0.919943 | 18.125975% | 2.927359x | 481 | 838.88 |
+| Rolling pair | 10y-base | 15.390248% | 0.924233 | 22.766544% | 6.379694x | 809 | 1399.23 |
+| Rolling pair | 10y-stress | 14.365024% | 0.857351 | 23.623585% | 6.388399x | 818 | 3081.77 |
+| Rolling pair | 5y-base | 17.658086% | 0.876912 | 23.115833% | 7.008757x | 407 | 624.62 |
+| Rolling pair | 5y-stress | 15.891278% | 0.776651 | 23.950063% | 7.011716x | 407 | 1244.73 |
+
+Original gates: netCAGR>12%passes8/8;strict RFSharpe>1andDD<=15%
+each pass0/8. QQQpasses both equal five-year paths and rolling5y-base,
+3/8in total. SPYpasses6/8and the extra stress/base-cost-SPYgate passes
+3/4stress paths. The near-one equal5y-base Sharpe0.9936027267018437
+still fails the strict gate;neither rounding nor partial benchmark passes
+qualifies a policy. Reviews1360/1369reject both complete same-rule laws.
+
+Against matched cached direct-quartet controls,CAGR and Sharpe improve
+on all eight paths,but six DDs worsen. Equal ten-year DDs improve while
+both equal five-year DDs worsen;every rolling DDworsens by6.2980--8.4575
+percentage points. Equal annual two-sided turnover falls by0.3100--0.3848x;
+rolling turnover rises by0.3563--0.5723x. All eight model-ticket counts
+rise by20--100and fees rise byUSD6.36--164.92,so lower turnover in the
+equal control is not a universal fee saving. These are whole-policy
+differences,not isolated conditional-variance source alpha,independent-risk
+evidence or forward proof. No source admission is revoked by these
+financial rejections.
+
+Actual registrations1347/1348precede targets;proofs1349/1350and both
+complete packets are published at`a24d841116a01ecdfbe94077339c13e8e27710a3`.
+Both actual registered identities pass404public-file and28original-import
+checks before capital. Actual checkpoint692precedes publication fence1351
+at2026-11-06T08:03:00.266273Z and all eight starts. Every initial/monthly
+actual-holding gap,target and original delay is independently checked:
+121decisions per ten-year path and61per five-year path.
+
+The once-only financial evaluation exits0 in111.65920470800484seconds,
+Darwin peakRSS581672960bytes. Minimum cash isUSD171.53134998570044,
+maximum gross exposure0.9837705257147962,maximum independentBT NAV
+differenceUSD4.729372449219227e-11,and actual broker orders0.
+Model tickets are offline accounting events,not brokerage authority.
+
+**J1369/127registered/115completed/12technical-workflow terminations/
+zero pending/460funded paths/293combined completions/zero qualifiers.**
+The technical12still includes one earlier duplicate workflow termination,
+not a new invalid source. Original full windows,RF,initial peak,costs,
+delays,SPY/QQQand extra gates remain unchanged. No source fit,shadow,
+old account or matched control is replayed;no failed risk/cost model is
+promoted. All failures and original178/94/96legacy history remain.
+The investment objective is unmet;no live deployment follows.
+
+## Historical preregistration snapshot: conditional-variance quintet
+
+The following is the publishedJ1350snapshot,not current pending work.
 
 Study`ssd_conditional_volatility_quintet_20261106_v1`keeps the completed
 direct quartet and appends admitted`symmetric_garch_growth_bil_v1`.
