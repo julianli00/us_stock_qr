@@ -4,6 +4,51 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Macro/defense/hedge trio: preserved preregistration J1227
+
+The [fixed compact pool](MACRO_DEFENSE_HEDGE_TRIO_V1.md) selects three complete
+canonical policies by specifications and existing admission scope, not source
+full-window CAGR: aggregate common-quarter profit/output-share and dollar
+confirmation; cross-asset defensive relative strength; and conditional
+observed-covariance hedge suitability. The macro proxy is not companyEPS;
+related risk behavior is possible despite distinct mechanism labels.
+Other five original policies remain admissible outside this study and global
+seven/eight rosters do not change. The ratchet source is not relabeled growth.
+
+Both equal thirds and the original rolling126/84/42trainingERC/weakerNET-period
+rule are fixed before outcomes, with two selected experts, all3pairs,
+cost proxy/21,12-decimal lexical ordering and explicit unscored equal states.
+Each new rolling policy owns its previous statistical allocation state.
+The already admitted legacy-defensive recommendation and assessmentRFviews
+are reused unchanged; no claim that its nativeRFmatches the common reference
+or new RFview follows. Every old PIT, common-quarter, lag, age and source
+limitation remains. No source rule, fit, target or shadow is rerun.
+
+All22synthetic/admission-metadata checks and Ruff pass first.
+Freeze`36a42894`pins162dependencies,1288source references,three actual
+source/admission clocks and ten explicit tested inputs.
+Actual registrations1224/1225 at **2026-11-06T00:27:15.172208Z** and
+**00:27:15.853879Z** precede either real new combination.
+Proofs1226/1227retain121states,242input/result records,88692NET/RFvalues,
+all3pair weights/correlations/marginal-risk/scores/costs and five exact
+prefixes. Maximum independent target/weight/score differences are
+5.551115123125783e-17/2.220446049250313e-16/2.6645352591003757e-15.
+Both formal horizons retain all six actual factor symbols.
+Once-only registration/preparation exits0 in30.059182666998822seconds,
+Darwin peakRSS376410112bytes.
+
+The actual [equal schema2packet](evidence/macro_defense_hedge_trio_20261106_0_registration_v1.json)
+and [rolling schema2packet](evidence/macro_defense_hedge_trio_20261106_1_registration_v1.json)
+retain both identities. Every complete packet and scientific dependency must
+be verified at the actual remote commit before any capital.
+Only eight new original10y/5y/base-stress books are planned, not completed.
+FreshUSD10000,initialpeak,canonicalRF,costs,delays,cashfunding1x,holding
+feedback,independentBT and all financial gates remain. Cached same-rule
+original-eight controls are not replayed.281exposed completions and
+adaptive specification-based membership are not independent OOS or forwardproof.
+**At J1227:114registered,103completed,nine technical,two pending,
+412funded paths,281combined completions,zero qualifiers; goal unmet.**
+
 ## Retained original pair: improved cached ERC control, still rejected
 
 The [complete four-path result](evidence/retained_pair_equal_allocation_20261105_results_v1.json)
