@@ -45,6 +45,25 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
+### Recorded return-cost bridge: fee changes do not exhaust the growth gap
+
+The [read-only paired accounting](research/workbench/evidence/quintet_return_cost_bridge_20261106_v2.json)
+retains16existing opportunity/conditional-volatility main books and all
+eight paired cases. Each net log-growth difference equals its recorded
+realized-path gross-log difference minus its recorded-current-cost log
+difference. The remaining realized-path component is negative in all eight
+cases;cost drag worsens six gaps and offsets part of two.
+Two paths pay fewer dollars yet have larger percentage log-cost drag.
+Dollar fees alone therefore do not describe the recorded growth loss.
+
+The [frozen V1 reader failure](research/workbench/evidence/quintet_return_cost_bridge_20261106_v1_failure.json)
+remains failed before its first bridge row. Separately frozen V2uses the
+unchanged original market reader,which exactly matches all16recorded RF
+columns;no RF file,view,tolerance or source gate is changed.
+This is accounting on actual net-financed realized paths,not a fee-free
+portfolio,causal fee/expert-alpha attribution or a new financial result.
+**Financial J1416/297completed/zero qualified remains unchanged.**
+
 ### Benchmark-opportunity quintet: lower drawdowns, both rules rejected
 
 The [complete eight-path outcome](research/workbench/evidence/benchmark_opportunity_quintet_20261106_results_v1.json)

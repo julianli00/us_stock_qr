@@ -4,6 +4,71 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Recorded return-cost bridge: remaining realized-path growth gaps are negative
+
+The [complete read-only V2accounting](evidence/quintet_return_cost_bridge_20261106_v2.json)
+pairs all16already completed opportunity/conditional-volatility main
+books. It preserves8pairs,30128original return rows,32input/resolved
+records and80exact binary64primitive/scalar prefixes. No source solver,
+shadow,selector,target,main account,BT or financial trial is rerun.
+
+Each net log component is`log(recorded_NAV/previous_recorded_NAV)`.
+The cost term is`log1p(recorded_cost/recorded_NAV)`.
+Their sum is the recorded-path gross log component,independently checked
+against`log((NAV+cost)/previousNAV)`. Paired differences satisfy
+**net-log gap = recorded-path gross-log gap - cost-log-drag difference**.
+The components have natural-log relative-growth units,not annual CAGR.
+
+| Paired law | Path | Net-log gap | Recorded-path gross-log gap | Cost-log-drag difference | Paid-cost difference USD |
+| --- | --- | ---: | ---: | ---: | ---: |
+| Equal fifths | 10y-base | -0.25306947 | -0.23509413 | 0.01797534 | 110.04 |
+| Equal fifths | 10y-stress | -0.25853250 | -0.23483761 | 0.02369488 | 107.36 |
+| Equal fifths | 5y-base | -0.10764311 | -0.10700365 | 0.00063947 | -16.80 |
+| Equal fifths | 5y-stress | -0.10983293 | -0.10540366 | 0.00442928 | 19.43 |
+| Rolling pairs | 10y-base | -0.32274672 | -0.31199610 | 0.01075063 | 6.35 |
+| Rolling pairs | 10y-stress | -0.28054193 | -0.26855710 | 0.01198482 | -158.61 |
+| Rolling pairs | 5y-base | -0.16282123 | -0.16321025 | -0.00038902 | 10.91 |
+| Rolling pairs | 5y-stress | -0.12462203 | -0.13044576 | -0.00582373 | -19.96 |
+
+Every paired net-log gap and remaining realized-path gross-log gap
+is negative. Cost-log drag worsens six gaps and offsets part of two.
+Equal5y-base and rolling10y-stress have lower paid-dollar costs but
+larger log-cost drag;rolling5y-base has higher dollar costs but lower
+log-cost drag. Costs are scaled by the actual capital path and timing,
+not simply dollars per policy. The fee component does not exhaust
+the observed growth loss.
+
+The gross component still contains actual net-financed holdings and
+fills. It is not a fee-free funded-policy replay,isolated causal fee
+effect or expert-alpha attribution. These overlapping cases are not
+independent samples or forward proof. No old CAGR,Sharpe,drawdown,
+benchmark gate or source admission is recomputed or revised.
+
+[FrozenV1failure](evidence/quintet_return_cost_bridge_20261106_v1_failure.json)
+is preserved:its raw round-trip RF delivery fails exact identity
+before the first bridge row,334mismatches on the first10ybook.
+The existing source RF file is unchanged. Separately frozenV2uses
+the original`research_program.review_market`delivery,which matches
+all16recorded RF columns exactly on every2512/1254original date.
+No RF view,source Adapter,missing-date filling or tolerance waiver
+is added;Term and all other blocked-source gates remain closed.
+
+The first23V1synthetic checks remain evidence and are not rerun.
+Ten firstV2reader checks precede frozen`01272218`and actual
+checkpoint718,both recorded before any V2bridge output.
+The exact same V1arithmetic functions and1e-6USD/1e-12log-return
+limits are reused. Maximum independent log difference is
+2.7929047963226594e-16,monetary differenceUSD5.684341886080802e-14,
+and recorded return reconstruction differencezero.
+One actualV2run takes14.33324429197819seconds with Darwin
+peakRSS479936512bytes. V1is still terminal,not retrospectively passed.
+
+**Financial J1416/131registered/119completed/12workflow terminations/
+zero pending/476funded paths/297combined completions/zero qualifiers
+is unchanged.** The primary financial result remains the rejected
+opportunity quintet below;this is a separate zero-trial diagnostic.
+The investment objective remains unmet.
+
 ## Benchmark-opportunity quintet: eight paths complete, both laws rejected
 
 The [complete financial outcome](evidence/benchmark_opportunity_quintet_20261106_results_v1.json)
