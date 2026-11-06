@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 131 SSD identities, 117 completed, 12 retained technical-workflow terminations and two pending; 468 funded paths | Journal1397 registered/pre-funding summary: 295 combined completions, zero qualifiers; investment goal remains unmet |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 131 SSD identities, 119 completed, 12 retained technical-workflow terminations and zero pending; 476 funded paths | Journal1416 complete financial summary: 297 combined completions, zero qualifiers; investment goal remains unmet |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -45,25 +45,24 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
-### Benchmark-opportunity quintet: registered, not funded
+### Benchmark-opportunity quintet: lower drawdowns, both rules rejected
 
-The [frozen five-role study](research/workbench/BENCHMARK_OPPORTUNITY_QUINTET_V1.md)
-keeps confirmation,defense,covariance hedge and commitment,then substitutes
-the already admitted joint-tail/opportunity policy for the conditional-variance
-fifth role. This tests a joint-portfolio-tail/observed-benchmark-opportunity
-mechanism,not another risk parameter or a full-window source winner.
-No old source solver,fit,shadow account or control is rerun.
+The [complete eight-path outcome](research/workbench/evidence/benchmark_opportunity_quintet_20261106_results_v1.json)
+keeps the frozen confirmation,defense,covariance-hedge,commitment and
+joint-tail/opportunity pool. The actual complete-cohort packets were
+published at`320079b`and verified before funds. No old source solver,
+fit,shadow account or matched conditional-volatility control is rerun.
 
-Both [equal-fifths](research/workbench/evidence/benchmark_opportunity_quintet_20261106_0_registration_v1.json)
-and [unchanged rolling pairs](research/workbench/evidence/benchmark_opportunity_quintet_20261106_1_registration_v1.json)
-are actually registered before either target. The complete121decision,
-ten-pair,242record and five-prefix proofs are retained;targets differ
-materially from the matched cached conditional-volatility controls at121/73
-origins. Neither rule has funded accounts or financial outcomes yet.
-**Current J1397/131registered/117completed/12workflow terminations/
-two pending/468funded paths/295combined completions/zero qualifiers.**
-Financial results still belong to the historical rejected J1393 hierarchy.
-Actual complete-cohort remote preregistration is required before fresh funds.
+Both complete laws are rejected. All eight drawdowns are lower than their
+matched cached controls,but every CAGRis also lower and seven Sharpes
+fall. Equal5y-base hasCAGR15.828945%,RFSharpe1.003128andDD13.480523%;
+it still trails fair-cost QQQ by1.245032percentage points.
+Rolling5y-base DD15.15429756%still fails15%,not a rounded pass.
+Fees,tickets and turnover do not uniformly improve.
+**Current J1416/131registered/119completed/12workflow terminations/
+zero pending/476funded paths/297combined completions/zero qualifiers.**
+Partial risk improvement is not qualification or grounds to retune
+the frozen source hurdle,allocation rule or financial gates.
 
 ### Historical risk-only snapshot J1393: similar averages, not equivalence
 

@@ -4,7 +4,68 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Benchmark-opportunity quintet: registered, no funded outcomes yet
+## Benchmark-opportunity quintet: eight paths complete, both laws rejected
+
+The [complete financial outcome](evidence/benchmark_opportunity_quintet_20261106_results_v1.json)
+retains both frozen five-policy laws and all eight original freshUSD10000
+cash-funded main accounts. The complete cohort was actually published
+at`320079b21491437f56314acc481296b0a81af2c0`;each candidate's422
+published inputs and28original import pins were checked before funds
+and actual checkpoint712. One cohort publication fence1398precedes
+all eight capital starts. Reviews1407/1416reject both complete rules.
+
+| Frozen law | Path | Net CAGR | RF Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Fees USD |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Equal fifths | 10y-base | 13.271390% | 0.942018 | 19.590297% | 3.119399x | 1002 | 1254.91 |
+| Equal fifths | 10y-stress | 12.619536% | 0.892732 | 19.197874% | 3.120886x | 1003 | 1992.00 |
+| Equal fifths | 5y-base | 15.828945% | 1.003128 | 13.480523% | 3.121076x | 484 | 577.72 |
+| Equal fifths | 5y-stress | 14.571582% | 0.910036 | 14.068375% | 3.135403x | 493 | 858.31 |
+| Rolling pairs | 10y-base | 11.725028% | 0.796548 | 14.887368% | 6.567383x | 886 | 1405.58 |
+| Rolling pairs | 10y-stress | 11.200765% | 0.754297 | 14.639007% | 6.568727x | 886 | 2923.16 |
+| Rolling pairs | 5y-base | 13.887844% | 0.792033 | 15.154298% | 6.394681x | 436 | 635.53 |
+| Rolling pairs | 5y-stress | 13.038071% | 0.730809 | 14.192487% | 6.401217x | 436 | 1224.77 |
+
+Original gates across the full cohort:netCAGR>12%passes6/8,
+RFSharpe>1passes1/8,DD<=15%passes5/8,SPYpasses2/8andQQQpasses0/8.
+The original extra stress/base-cost-SPYgate passes1/4stress paths.
+Equal5y-base satisfies CAGR,Sharpe,DDandSPYbut still trails
+matched-cost QQQ by1.2450319572378854percentage points.
+Rolling5y-base DD15.15429755965637%strictly fails15%.
+No single passing component,rounded number or selected horizon is
+a same-rule four-path qualification.
+
+Relative to cached conditional-volatility quintet controls,DDfalls
+in all eight paths while CAGRalso falls in every path. Equal-control
+DDreductions are2.015682--4.057600points and CAGRlosses
+2.521022--2.949953points;Sharpe improves only on5y-base.
+Equal turnover rises on all four paths;fees and tickets rise on three.
+Rolling DDreductions are7.879176--9.757577points,but CAGRfalls
+2.853207--3.770242points and all Sharpes fall. Rolling turnover
+rises on ten-year paths and falls on five-year paths;tickets rise
+on all four,while fees rise on base paths and fall on stress paths.
+These are whole-policy historical contrasts,not isolated source-alpha
+or causal fee attribution. No cached control is rerun.
+
+Minimum main cash isUSD187.07396995280666,maximum gross exposure
+0.9835914712053568and maximum independent BT equity difference
+USD5.4569682106375694e-11. Actual broker orders remainzero.
+One real cohort run takes123.11909725001897seconds with Darwin
+peakRSS489521152bytes. Original RF,initial drawdown peak,costs,
+delays,cash funding,holding feedback and all source refusals remain.
+The frozen tail policy and allocation rule are not retuned after
+these outcomes;no risk protection or independent forward proof is claimed.
+
+**Current complete financial snapshot J1416/131registered/119completed/
+12technical-workflow terminations/zero pending/476funded paths/
+297combined completions/zero qualifiers.** Both complete laws are
+rejected and the investment objective remains unmet. The earlier
+fixed-five hierarchy and risk-scope calibration remain separate
+historical evidence;they are not new runs or promoted forecasts.
+
+## Historical benchmark-opportunity preregistration snapshot J1397
+
+The following preserves the before-funding snapshot,not current totals
+or a claim that the now completed accounts remain unrun.
 
 The [frozen law](BENCHMARK_OPPORTUNITY_QUINTET_V1.md) selects the complete
 confirmation,defense,covariance-hedge,commitment and joint-tail/opportunity
@@ -31,7 +92,7 @@ equal/rolling controls at121/73origins. Whole-policy differences are
 not isolated source-alpha effects. No original control account is replayed.
 Actual registration takes44.425427707989seconds;Darwin peakRSS461144064bytes.
 
-**Current pre-funding snapshot J1397/131registered/117completed/
+**Historical pre-funding snapshot J1397/131registered/117completed/
 12technical-workflow terminations/two pending/468funded paths/
 295combined completions/zero qualifiers.** No main account,financial
 metric or benchmark qualification exists for either new rule.
