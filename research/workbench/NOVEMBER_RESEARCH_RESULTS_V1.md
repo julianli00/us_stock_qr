@@ -4,6 +4,56 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Median equity budget: actual preregistration, funding pending
+
+Study`ssd_median_equity_budget_20261106_v1`keeps the completed quintet,
+including its exact recorded rolling choice/score/weight/target history.
+One equal-vote current-opinion coordinate budget caps its equity-ETF
+target at the median of all five complete known source opinions.
+Preserve relative equity coordinates and IEF/GLD/TLT;move removed
+equity only to BIL while retaining the0.98invested target and2%idle.
+An excess within original1e-12numeric tolerance is a bit-exact no-op.
+There is no quantile,window,cost or membership sweep.
+
+Recommendation availability is distinct from score maturity. The original
+seven unscored origins remain;complete known opinions can still supply
+the budget. Original126/84/42ten-pair/two-selected state is reused,
+not reranked against the capped account. This state is not actual
+holdings. Correlated opinions are not independent risks and a target
+cap is not an actual-exposure,drawdown or return guarantee.
+
+The first32synthetic cases retain31passes/1fixture failure: a mocked
+packet writer did not create a file but the test retained the real
+file-reference function. Only the missing test double is supplied.
+Production file,packet and financial checks are not weakened. The
+second32cases and Ruffpass before frozen`52e985b1`and actual
+checkpoint697. All failed XML/logs/execution and24initial/failed/success
+prototype files remain.
+
+Actual registration1370precedes new budgets/targets;proof1371retains
+all121decisions,242input/resolved records,5exact prefixes and independent
+rational transfer checks. The maximum target difference is
+1.1102230246251565e-16;the independent median difference is0.
+Both horizons retain MTUM,VLUE,QUAL,USMV,IJRandPKW,without relaxing
+factor coverage. Registration takes30.059285209019436seconds,Darwin
+peakRSS445837312bytes. Actual registered digest`1f7d38e0`is not
+substituted by the bare intent hash.
+
+The cap binds at22/121origins. Complete targets differ materially from
+cached rolling/equal quintet controls at22/114origins,respectively;
+the maximum rolling-control targetL1difference is0.6664862292554247.
+This is desired-allocation identity evidence,not new turnover,paid fees,
+main-account returns or isolated source alpha. Neither control is rerun.
+
+**J1371/128registered/115completed/12technical-workflow terminations/
+1pending/460existing funded paths/293combined completions/zero qualifiers.**
+The technical12still includes one earlier duplicate workflow,not a new
+source invalidity. There is no new account or performance result at
+this preregistration. Publish and verify the complete actual singleton
+packet before its four original freshUSD10000paths. Original full
+windows,RF,initial peak,costs,delays,actual-holding band,SPY/QQQand
+all extra gates remain. The investment objective is not met.
+
 ## Conditional-variance quintet: all eight paths complete, both rules rejected
 
 The [complete financial outcome](evidence/conditional_volatility_quintet_20261106_results_v1.json)
@@ -54,7 +104,7 @@ maximum gross exposure0.9837705257147962,maximum independentBT NAV
 differenceUSD4.729372449219227e-11,and actual broker orders0.
 Model tickets are offline accounting events,not brokerage authority.
 
-**J1369/127registered/115completed/12technical-workflow terminations/
+**Completed-financial snapshot J1369/127registered/115completed/12technical-workflow terminations/
 zero pending/460funded paths/293combined completions/zero qualifiers.**
 The technical12still includes one earlier duplicate workflow termination,
 not a new invalid source. Original full windows,RF,initial peak,costs,

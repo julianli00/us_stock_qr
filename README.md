@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 127 SSD identities, 115 completed/rejected, 12 retained technical-workflow terminations and zero pending; 460 funded paths | Journal1369 current summary: 293 combined completions, zero qualifiers; investment goal remains unmet |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 128 SSD identities, 115 completed/rejected, 12 retained technical-workflow terminations and one pending; 460 funded paths | Journal1371 current summary: 293 combined completions, zero qualifiers; investment goal remains unmet |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -45,6 +45,27 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
+### Median equity budget: registered, funding pending
+
+One new construction keeps the completed quintet's exact rolling target
+tape and all five complete source policies. At each known opinion clock,
+cap the upstream equity-ETF target at the median of their current equity
+allocations;preserve relative equity weights,IEF/GLD/TLT and the0.98
+invested budget,transferring removed equity only to BIL.
+This is a desired-target budget,not actual holdings or a DDguarantee.
+Original pool,ranks,windows,costs,delays and acceptance are unchanged.
+
+Actual registration1370precedes new capped targets;proof1371retains
+121decisions,242records,5exact prefixes and all six original factor
+symbols in both horizons. The cap binds at22origins;new targets differ
+materially from cached rolling/equal controls at22/114origins.
+No old control is replayed. The first synthetic fixture failure is kept;
+all32corrected checks pass without a production evidence waiver.
+**J1371/128registered/115completed/12technical/1pending/460existing
+funded paths/293combined completions/zero qualifiers.** No new account
+or performance result exists;the complete actual singleton packet must
+be published and verified before four original freshUSD10000paths.
+
 ### Conditional-variance quintet: both complete rules rejected
 
 The [complete eight-path outcome](research/workbench/evidence/conditional_volatility_quintet_20261106_results_v1.json)
@@ -61,7 +82,7 @@ eight paths,but six DDs worsen,including every rolling path.
 Equal turnover falls and rolling turnover rises;all eight fees and
 model-ticket counts rise. Distinct policy labels are not independent risks
 and these whole-policy differences are not isolated GARCH alpha.
-**J1369/127registered/115completed/12technical-workflow terminations/
+**Completed-financial snapshot J1369/127registered/115completed/12technical-workflow terminations/
 zero pending/460funded paths/293combined completions/zero qualifiers.**
 The technical counter still includes the earlier duplicate workflow,
 not a new source invalidity. The investment goal remains unmet.
