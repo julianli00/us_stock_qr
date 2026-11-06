@@ -4,7 +4,68 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Fixed-five risk hierarchy: actual preregistration, funding pending
+## Fixed-five risk hierarchy: all four paths complete, rule rejected
+
+The [complete financial outcome](evidence/five_hierarchical_risk_20261106_results_v1.json)
+retains all original paths of the one frozen fixed-five construction.
+Each is one freshUSD10000cash-funded main account. The matched equal,
+rolling and median-budget fixed-five controls are cached historical
+evidence,not repeated accounts. Old six-source hierarchy is not replayed.
+
+| Hierarchical law | Path | Net CAGR | RF Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Fees USD |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Hierarchical risk | 10y-base | 11.767757% | 0.901047 | 16.282373% | 4.092960x | 961 | 1287.99 |
+| Hierarchical risk | 10y-stress | 11.252703% | 0.855282 | 17.844008% | 4.098268x | 962 | 2228.89 |
+| Hierarchical risk | 5y-base | 12.425616% | 0.759196 | 16.873821% | 4.530681x | 506 | 629.23 |
+| Hierarchical risk | 5y-stress | 11.841405% | 0.711498 | 18.415619% | 4.540136x | 506 | 989.59 |
+
+Original gates: netCAGR>12%passes only5y-base,1/4;RFSharpe>1,
+DD<=15%,SPYandQQQeach pass0/4. The extra stress/base-cost-SPYgate
+passes0/2stress paths. Review1393rejects the complete same-rule law;
+neither its one CAGRpass nor a lower volatility is final qualification.
+
+Relative to cached rolling pairs,all four DDs improve by5.5344--6.4842
+percentage points and annual two-sided turnover falls by2.2867--2.4781x.
+However CAGRfalls by3.1123--5.2325points,RFSharpe falls on all four
+paths,and tickets rise by99--152. Fees fall on three paths but5y-base
+fees rise byUSD4.61. This is not a universal cost improvement.
+
+Relative to cached equal fifths,CAGR and Sharpe are lower in every path,
+annual turnover rises by1.4148--1.6128x,and all fees/tickets rise.
+DDimproves on three paths but5y-stress DDworsens by0.2896points.
+Relative to cached median-budget rolling,all DDs/turnover/fees are lower,
+but all CAGR/Sharpes are lower and all tickets are higher. These are
+whole-policy contrasts,not isolated expert alpha,independent-factor
+evidence or a guarantee that five considered policies diversify capital.
+No source admission is revoked by the financial rejection.
+
+Actual registration1382precedes new risk/target derivation;proof1383
+and the complete actual packet are published at
+`34c0b7d63d5d4957de5d854ea21d68533039fd4e`. The actual registered
+identity passes414public-file and28original-import checks before
+capital. Actual checkpoint703precedes publication fence1384at
+2026-11-06T09:47:54.943337Z and all four starts. Every initial/monthly
+actual-holding gap,target and original delay is independently checked:
+121decisions per ten-year path and61per five-year path.
+
+The once-only evaluation exits0 in48.16833879100159seconds,
+Darwin peakRSS455802880bytes. Minimum cash isUSD174.157527160558,
+maximum gross exposure0.9833813186603289,maximum independentBT NAV
+differenceUSD5.820766091346741e-11,and actual broker orders0.
+Offline model tickets are not brokerage authority.
+
+**J1393/129registered/117completed/12technical-workflow terminations/
+zero pending/468funded paths/295combined completions/zero qualifiers.**
+Technical12still includes one earlier duplicate workflow,not a new
+invalid source. Original full windows,RF,initial peak,costs,delays,
+actual-holding band,SPY/QQQand all extra gates remain unchanged.
+No linkage/window/distance-key/variance-floor tuning,source/control
+replay or live deployment follows. All failures and original178/94/96
+legacy history remain;the investment objective is unmet.
+
+## Historical preregistration snapshot: fixed-five risk hierarchy
+
+The following is the publishedJ1383snapshot,not current pending work.
 
 Study`ssd_five_hierarchical_risk_20261106_v1`keeps the already fixed
 confirmation/defense/hedge/commitment/conditional-variance five-source
