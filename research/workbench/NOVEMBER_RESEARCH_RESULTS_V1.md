@@ -4,6 +4,43 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Direct commitment quartet: actual preregistration, funding pending
+
+Study`ssd_commitment_macro_defense_hedge_20261106_v1`changes only the fourth
+role of the previous compact quartet: the complete admitted direct
+equity-first month-end commitment policy replaces the nested growth
+controller. Original canonical slots4,5,7,0give semiconductor confirmation,
+diversified defense,conditional covariance hedge and committed price-trend
+defense. Four labels are not four independent risks. Nonselected valid
+representatives remain admissible;no full-window return ranking is used.
+
+The same equal quarters and126mature/84training-ERC/42validation weaker
+NET-RF six-pair rule,nominal cost proxy,12decimal keys,all121decisions,
+original source/admission clocks,assessment RF scopes and 1x cash funding
+remain. The negative current-opinion risk calibration is not promoted or
+retuned. No original source generator,fit,shadow or account is replayed.
+
+The pre-test import syntax failure and the first synthetic run's17passes/
+3failures are retained with all prototypes/XML/logs. The corrected strict
+new-policy calendar binding then passes all20synthetic checks and Ruff;
+neither old policy guards nor the economic law is weakened. Frozen`d089b8a3`
+and actual checkpoint682precede all new real combinations.
+
+Registrations1321/1322precede target derivation;proofs1323/1324retain
+all121decisions,242input/resolved records,all6pairs,5exact prefixes and
+independent target/weight/score checks. Actual registration takes
+33.43110504199285seconds,Darwin peakRSS445071360bytes. Bare freeze and actual
+registered frozen digests differ by the exact retained self-reference;
+the real registered digest is`8656e7b0`,not substituted by an intent hash.
+
+**J1324/124registered/111completed/11technical/2pending/444existing funded
+paths/289combined completions/zero qualifiers. No new account or performance
+result exists at preregistration.** Both complete actual packets must be
+remotely published and verified before either new law's four original paths.
+Funding will retain every original window,cost,delay,RF,initial peak,
+full-capital SPY/QQQ and extra gate. This is not a changed overall research
+quota,financial pass,independent forward proof or authority to trade.
+
 ## Current-opinion covariance calibration: no drop-in improvement
 
 The [risk-only result](evidence/current_opinion_risk_calibration_20261106_v1.json)

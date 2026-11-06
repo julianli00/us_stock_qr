@@ -45,6 +45,22 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
+### Direct commitment quartet: preregistered, not a financial result
+
+The new commitment/confirmation/defense/hedge study keeps the original
+three-role trio and uses the admitted complete equity-first month-end
+commitment policy directly instead of nesting a growth meta-controller.
+The exact four-source roster was not found in prior declared configurations;
+membership is justified by policy role, not complete-window return ranking.
+Both equal quarters and the original126/84/42six-pair law are unchanged.
+
+Both new identities are registered and their full121-decision targets proved
+atJ1324before any new capital. **Two pending candidates,zero new accounts or
+performance results;289completed/zero qualified is not changed by registration.**
+Both complete actual packets must be remotely published before the first
+of eight original funded paths. Historical source failures, scopes and
+the current-opinion calibration remain preserved; no risk model is promoted.
+
 ### Current opinions do not automatically improve risk calibration
 
 The [risk-only calibration](research/workbench/evidence/current_opinion_risk_calibration_20261106_v1.json)
