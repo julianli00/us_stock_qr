@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 133 SSD identities, 120 completed, 12 retained technical-workflow terminations and one pending; 480 funded paths | Journal1430 has one registered risk-sizing law before funds; 298 combined completions and zero qualifiers remain unchanged |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 133 SSD identities, 121 completed, 12 retained technical-workflow terminations and zero pending; 484 funded paths | Journal1440 complete financial summary: 299 combined completions, zero qualifiers; investment goal remains unmet |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -45,7 +45,29 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
-### Cached Hedge risk units: registered before capital
+### Cached Hedge risk units: four paths complete, rejected
+
+The [complete outcome](research/workbench/evidence/quintet_hedge_risk_units_20261106_results_v1.json)
+retains all four original paths after actual preregistration`e7333c4`,
+440published inputs/28original pins and checkpoint731before capital.
+The same cached beliefs are converted to source volatility units;
+neither the learner nor any old source/control book is rerun.
+
+All four CAGRs remain above12%,but every RFSharpeand15%drawdown
+gate fails. Only5y-base beats QQQ;5y-stress still trails its fair-cost
+QQQbenchmark by0.094909percentage points. Against cached raw Hedge,
+ten-year drawdowns fall4.21--4.61points,but five-year drawdowns rise
+0.45--0.55points. Every CAGRandSharpefalls,and all turnover,tickets
+and fees rise. Source risk-unit conversion is not a drawdown guarantee.
+**Current J1440/133registered/121completed/12workflow terminations/
+zero pending/484funded paths/299combined completions/zero qualifiers.**
+The whole sizing law is rejected;no risk window,belief,source or
+financial gate is retuned after these outcomes.
+
+### Historical risk-unit preregistration snapshot J1430
+
+The following is the retained before-capital snapshot,not current counts
+or a claim that the now complete accounts remain unrun.
 
 The [singleton packet](research/workbench/evidence/quintet_hedge_risk_units_20261106_registration_v1.json)
 keeps the sealed121decision Hedge belief stream and the same five complete
@@ -60,7 +82,7 @@ Actual registration1429precedes new weights/targets;proof1430retains
 114decisions have scored sizing and materially different cached-control
 targets;seven explicitly retain unscored beliefs. The first32synthetic
 checks and actual checkpoint730precede construction.
-**Current J1430/133registered/120completed/12workflow terminations/
+**Historical J1430/133registered/120completed/12workflow terminations/
 one pending/480funded paths/298combined completions/zero qualifiers.**
 No financial outcome exists yet. The latest completed financial result
 remains the rejected raw-Hedge law below,not a result of this sizing rule.

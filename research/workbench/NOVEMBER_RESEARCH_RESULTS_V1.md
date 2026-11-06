@@ -4,7 +4,61 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Cached Hedge risk units: preregistered targets, no capital outcome
+## Cached Hedge risk units: four paths complete, whole law rejected
+
+The [complete outcome](evidence/quintet_hedge_risk_units_20261106_results_v1.json)
+retains all four original funded paths of the frozen risk-unit conversion.
+Actual singleton preregistration`e7333c4`,440published scientific inputs/
+28unchanged import pins and checkpoint731precede capital. The original
+save receipt is retained at native event188528and linked before launch;
+actual evaluate-start and process receipts record revision,saved_at and
+covered_seq. Publication fence1431precedes every freshUSD10000start;
+review1440rejects the whole sizing law.
+
+| Frozen law | Path | Net CAGR | RF Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Fees USD |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Hedge risk units | 10y-base | 14.440306% | 0.803624 | 24.503215% | 3.765579x | 920 | 1205.91 |
+| Hedge risk units | 10y-stress | 13.558052% | 0.752692 | 24.127471% | 3.766207x | 910 | 2025.94 |
+| Hedge risk units | 5y-base | 18.191038% | 0.898066 | 19.861903% | 3.799322x | 396 | 499.31 |
+| Hedge risk units | 5y-stress | 16.375817% | 0.799554 | 19.915643% | 3.800538x | 396 | 793.68 |
+
+Original gates:netCAGR>12%passes4/4;RFSharpe>1andDD<=15%
+each pass0/4. SPYpasses2/4,thefive-year paths;QQQpasses1/4,
+only5y-base. The extra stress/base-cost-SPYgate passes1/2.
+Five-yearstress still misses fair-cost QQQ by0.094909percentage
+points;its CAGRabove15%does not round this failure into a pass.
+
+Versus the unchanged cached raw-Hedge main control,ten-year DD
+improves4.211235and4.605368points,but five-year DDworsens
+0.548742and0.454479points. CAGRs fall2.940125--4.610254points
+and everySharpefalls. Annual turnover rises0.252811--0.607074x,
+model tickets rise114--232,and fees riseUSD112.80--291.08.
+No cached source,learner,shadow,target or main control is rerun.
+These complete comparisons are not isolated causal cost/expert alpha.
+
+Minimum main cash isUSD181.7553004263814,maximum gross exposure
+0.983420117796517and maximum independent BT equity difference
+USD5.820766091346741e-11. Actual broker orders remainzero.
+The financial run takes60.326040708023356seconds with Darwin
+peakRSS494358528bytes. Original RF,initial drawdown peak,costs,
+delays,holding band,cash funding and pending-order discipline remain.
+
+This diagonal source-unit conversion is not full-covariance risk parity,
+a target volatility or a drawdown guarantee. The raw learner's normalized
+source-loss regret does not transfer to resized capital. The failure
+does not invalidate the technical admission of any complete source.
+No risk window,belief,learning rate,pool,floor,cap or financial gate is
+retuned after the outcome.
+
+**Current complete financial snapshot J1440/133registered/121completed/
+12workflow terminations/zero pending/484funded paths/299combined
+completions/zero qualifiers.** The whole law is rejected and the
+investment objective remains unmet. Earlier results stay historical.
+
+## Historical risk-unit preregistration snapshot J1430
+
+The following preserves the actual before-funding snapshot,not current
+totals or a claim that the now complete accounts remain unrun.
 
 The [singleton packet](evidence/quintet_hedge_risk_units_20261106_registration_v1.json)
 registers at1429before any new capital weights or underlying targets.
@@ -33,7 +87,7 @@ observations;it is not held-out risk validation. Normalized source-loss
 regret does not transfer to resized capital. The original costs,delays,
 freshUSD10000,RF,initial peak and every financial gate remain unchanged.
 
-**Current preregistration J1430/133registered/120completed/12workflow
+**Historical preregistration J1430/133registered/120completed/12workflow
 terminations/one pending/480funded paths/298combined completions/
 zero qualifiers.** Four fresh original paths remain unrun;actual remote
 publication,environment/import verification and an explicit prefunding
