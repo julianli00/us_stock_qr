@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_quintet_learning_loss_accounting_20261106_v1",
+  "actual_native_event_seq": 189600,
+  "prior_journal_sequence": 1452,
+  "prior_journal_head_sha256": "b7f953c4190694b0b27751d7941599ddc0d243115cc190390224c13e9d930f2f",
+  "source_catalogue": {
+    "path": "reports/ssd-continuous-research-v1/quintet-learning-loss-accounting-20261106-v1/source-input-catalogue-v1.json",
+    "sha256": "ca3914f24078279a6d19e7cfce70f3a63a8bc8aa50cc65aa8c1097bf5c1e5caf"
+  },
+  "role_ids": {
+    "adaptive": "expert_pool_quintet_adaptive_hedge_v1",
+    "elapsed": "expert_pool_quintet_anytime_hedge_v1",
+    "risk_units": "expert_pool_quintet_hedge_risk_units_v1"
+  },
+  "path_keys": ["10y-base", "10y-stress", "5y-base", "5y-stress"],
+  "stored_full_books": 12,
+  "original_return_rows": 22596,
+  "own_episode_slots": 12,
+  "common_clock_interval_slots": 36,
+  "adaptive_minus_control_comparison_slots": 24,
+  "initial_capital_USD": 10000,
+  "asset_groups": {
+    "equity_ETFs": ["SPY", "MTUM", "VLUE", "QUAL", "USMV", "QQQ", "XLK", "SOXX", "IJR", "PKW"],
+    "duration_ETFs": ["IEF", "TLT"],
+    "gold_ETF": ["GLD"],
+    "bill_ETF": ["BIL"]
+  },
+  "monetary_reconciliation_tolerance_USD": 1e-6,
+  "cached_drawdown_agreement_tolerance": 1e-10,
+  "peak_convention": "latest_preceding_running_max_including_initial_USD10000",
+  "trough_convention": "earliest_maximum_observed_drawdown",
+  "all_three_own_episode_common_clocks_required": true,
+  "prefix_row_cuts": ["1", "21", "126", "half", "full"],
+  "primitive_and_canonical_prefix_uint64_including_signed_zero": true,
+  "original_numpy_auxiliary_retained_unchanged": true,
+  "failed_V1_all_column_contract_repaired_or_waived": false,
+  "source_data_reader": "unchanged_canonical_review_market",
+  "source_RF_calendar_or_price_coordinates_changed": false,
+  "new_strategy_target_account_BT_or_financial_trials": 0,
+  "source_CAGR_Sharpe_or_qualification_recomputed": false,
+  "retrospective_episodes_are_predictive_labels": false,
+  "asset_groups_are_strategy_experts": false,
+  "different_start_NAVs_are_equal_capital_counterfactuals": false,
+  "fee_free_or_expert_causal_counterfactual_claimed": false,
+  "raw_source_prices_units_targets_or_daily_rows_exported": false,
+  "financial_criteria_or_global_pool_changed": false,
+  "new_source_requests": 0,
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "order_authority": false
+}

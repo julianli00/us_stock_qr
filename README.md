@@ -45,6 +45,26 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
+### Read-only J1452 diagnosis: shared equity losses, not a fee-only failure
+
+The [twelve-book marked accounting](research/workbench/evidence/quintet_learning_loss_accounting_20261106_v1.json)
+keeps all AdaHedge,elapsed-time Hedge and risk-unit books on the original
+four paths. Equity ETFmarks are the largest negative group in all twelve
+own drawdown episodes. BILmarks are positive in all twelve;gold is negative
+in eleven. Asset groups are accounting descriptions,not new experts.
+
+All24predeclared same-calendar AdaHedge-minus-control interval comparisons
+have worse net changes and worse equity-group marks. Repeated episode
+dates are not independent observations. AdaHedge's own fees are0.26%,
+0.32%,2.48%and8.67%of the respective recorded net losses;these ratios
+are not causal fee-free drawdown reductions.
+The [reused accounting method](research/workbench/QUINTET_LEARNING_LOSS_ACCOUNTING_V1.md)
+retains22596rows,36common-clock views and60exact primitive/scalar prefixes.
+One NumPy auxiliary value differs in one prefix and remains disclosed;
+no primitive,source,numerical limit or old failed contract is rewritten.
+**No new strategy,target,account,BT or financial trial. Current financial
+J1452/300completed/zero qualified and latest AdaHedge result remain unchanged.**
+
 ### Fixed-quintet AdaHedge: more growth, larger drawdowns, rejected
 
 The [complete four-path outcome](research/workbench/evidence/quintet_adaptive_hedge_20261106_results_v1.json)

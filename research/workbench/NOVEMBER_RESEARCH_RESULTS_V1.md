@@ -4,6 +4,62 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Read-only J1452 three-law diagnosis: equity losses dominate
+
+The [complete marked-accounting result](evidence/quintet_learning_loss_accounting_20261106_v1.json)
+compares twelve preserved AdaHedge,elapsed-time Hedge and risk-unit books,
+not new portfolio accounts. The [frozen method](QUINTET_LEARNING_LOSS_ACCOUNTING_V1.md)
+reuses the existing daily mark identity,grouping and canonical V2 Modules.
+First26synthetic checks,10exact prototypes,intent`6b9da3a4`and actual
+checkpoint744precede new PnL labels. The actual analysis-start/process
+receipts record checkpoint revision,saved_at and covered_seq.
+
+All22596original return rows and24input-resolution records remain.
+Equity ETFmarks are the largest negative group in all12own drawdowns;
+BILmarks are positive in all12andgold marks are negative in11.
+The four AdaHedge own-episode rows illustrate the signed components;
+the public result also retains every control and positive offset.
+
+| AdaHedge path | Peak close | Trough close | Equity marks USD | Duration marks USD | Gold marks USD | BIL marks USD | Recorded fees USD | Net NAV change USD |
+| --- | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 10y-base | 2020-02-19 | 2020-03-23 | -4505.70 | 2.63 | -15.05 | 1.31 | 11.80 | -4528.61 |
+| 10y-stress | 2020-02-19 | 2020-03-23 | -4442.66 | 2.95 | -15.78 | 1.27 | 14.39 | -4468.61 |
+| 5y-base | 2021-12-27 | 2022-12-28 | -2265.19 | -0.01 | -345.39 | 97.76 | 63.94 | -2576.77 |
+| 5y-stress | 2021-12-27 | 2023-03-13 | -2448.76 | -0.01 | 30.47 | 106.41 | 219.51 | -2531.39 |
+
+Different worst-trough dates matter:ten-year risk-unit troughs end
+2020-03-20rather than03-23. Five-yearstress troughs are2022-12-28for
+elapsed Hedge,2023-03-13forAdaHedge and2023-05-04forrisk units.
+Keep all three own-episode clocks for all three saved books in each
+original path:12own slots,36common-clock interval views and24paired
+AdaHedge-minus-control comparisons. AdaHedge has a worse interval net
+change and worse equity-group mark fraction in all24comparisons.
+Repeated clocks are not independent trials,and different starting NAVs
+are not equal-capital counterfactuals or new financial horizon tests.
+
+Recorded fees are0.260662%,0.322081%,2.481437%and8.671488%of the
+four AdaHedge own-episode net losses. These are signed-path accounting
+ratios,not causal reductions available by deleting fees;the actual
+net-financed quantities and all earlier costs remain. Near-zero marked
+contribution is also not proof of near-zero exposure.
+
+All60primitive-money/canonical-scalar prefixes,including signed zero,
+are exact. One retained NumPy auxiliary value differs in one prefix;
+the original failed V1all-column contract is not repaired or waived.
+Maximum daily NAV,cash-flow,close-cash and independent scalar/vector
+errors areUSD2.182787e-11,1.580247e-11,1.739409e-11and4.547474e-13,
+below the unchangedUSD1e-6limit. Cached DDagreement retains1e-10.
+The single analysis takes31.934034165984485seconds with Darwin
+peakRSS458858496bytes. No source,learner,target,account,BT or old
+cohort diagnosis is replayed;no market request or user cost-config
+execution is involved.
+
+**Financial J1452/134registered/122completed/12workflow terminations/
+zero pending/488funded paths/300combined completions/zero qualifiers
+is unchanged.** This new read-only diagnosis is separate from the latest
+AdaHedge financial result below. It does not fix a failed gate,establish
+forward profit or turn asset groups into strategy experts.
+
 ## Fixed-quintet AdaHedge: four paths complete, whole law rejected
 
 The [complete outcome](evidence/quintet_adaptive_hedge_20261106_results_v1.json)
