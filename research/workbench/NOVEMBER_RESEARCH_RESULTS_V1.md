@@ -4,7 +4,52 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Registered J1491 delay-aware actual-main shield: not funded yet
+## Terminal J1494 shield V1: independent full-frame verification failed
+
+The [complete retained technical-failure record](evidence/execution_gap_shield_20261106_results_v1.json)
+does not report a financial rejection or qualified main account.
+The actual registered and remotely published program began ten-year base
+once, with original cash funding and delayed execution. Its simulation
+reached 2026-10-05, but `verify_run` stopped at exact full-frame/position
+comparison with the independently replayed cash engine.
+
+All 2,513 original initialization/closing decisions and 2,513 exact private
+scenario archives remain on the SSD, with every input saved before its
+resolution. There is no `path_completed`, target proof or review event.
+Ten-year stress and both five-year paths were not started, and no new-policy
+prefix audit began. No independently verified new CAGR, Sharpe, drawdown,
+turnover or fee result is available. The frozen V1 is terminal, not retried.
+
+The actual funding checkpoint 790 was saved at
+2026-11-06T22:38:18.677524+00:00 with covered_seq 196222. Its original native
+save event 196225 was prospectively linked at 22:39:42.628219Z, before the
+22:39:42.631853Z start receipt and the actual account child. Publication
+`2335ce36e32d897297c9b6a5061854bfad11ed9a` was verified before this run.
+This actual chronology is separate from the earlier registration checkpoint.
+
+A separate read-only inspection uses the retained decision operands only.
+It does not call the terminal run, reference resolver, verifier or cash replay.
+The expression `sum(asset_values)/NAV` differs in binary64 from
+`sum(asset_values/NAV)` on 510 retained states, by at most
+3.3306690738754696e-16. Private witnesses retain both exact hexadecimal values.
+These are gross-exposure representation differences, not return improvements.
+
+The failed full replay frames were not retained before the exception.
+Therefore the inspection does not prove that this auxiliary field was the
+exclusive failing field or that all primitive cash, fee and position values
+agreed. No exact-equality test is weakened, no frozen implementation is
+modified, and no reconstructed partial wealth is promoted to a new financial
+outcome. Any successor needs a separate identity, stronger mixed-asset
+checks and actual retained comparison operands, not an in-place V1 retry.
+
+**J1494 / 139 registered / 125 completed / 14 workflow terminations /
+zero pending / 500 verified funded paths / 303 combined financial
+completions / zero qualifiers.** One additional unverified account attempt
+is retained separately, not counted as a completed path.
+The financial J1490/340b result and read-only J1490/da7d result remain separate.
+Investment objective unmet; no new source or brokerage operation occurred.
+
+## Preserved J1491 shield preregistration snapshot: before historical output
 
 The [complete dynamic-program packet](evidence/execution_gap_shield_20261106_registration_v1.json)
 registers one separate complete law after first 32 synthetic checks, six
@@ -39,10 +84,10 @@ tested daily equal-eight arrival rule. All old failures stay immutable.
 Finite empirical reference conditions do not establish future support,
 probabilities, month-long protection or financial qualification.
 
-The schema3 packet explicitly has no historical target derivation proof yet.
-There are no new shield scenarios, targets or accounts. Actual remote
-preregistration and a separate real prefunding checkpoint must precede four
-fresh original paths and five new-policy capital prefix checks.
+At this historical preregistration snapshot, the schema3 packet explicitly
+had no historical target derivation proof. No shield scenarios, targets or
+accounts had then been computed. The later terminal attempt is documented
+above; these old readiness claims are not a current completion claim.
 
 **J1491 / 139 registered / 125 completed / 13 workflow terminations /
 one pending / 500 existing funded paths / 303 combined completions /

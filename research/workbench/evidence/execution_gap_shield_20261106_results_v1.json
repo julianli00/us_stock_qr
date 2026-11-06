@@ -1,0 +1,78 @@
+{
+  "actual_authoritative_counts": {
+    "current_journal_event_count": 1494,
+    "current_journal_head_sha256": "bf449cf13d21ef99897d5ce336e1b64444022246f668b12983cf83df40824991",
+    "new_account_paths": 500,
+    "new_completed_strategy_evaluations": 125,
+    "new_historical_point_gate_passes": 0,
+    "new_pending_candidates": 0,
+    "new_registered_candidates": 139,
+    "new_reviews": 125,
+    "new_technical_failures": 14,
+    "original_completed_configurations": 178,
+    "original_registered_versions": 96,
+    "original_reviews": 94,
+    "total_legacy_plus_ssd_completed_configurations": 303
+  },
+  "actual_failure_at": "2026-11-06T22:43:04.240168+00:00",
+  "actual_failure_reason": "Every issued target,fee,position and formal return must match cash-engine replay.",
+  "actual_failure_sequence": 1494,
+  "actual_failure_stage": "funding_or_causality",
+  "actual_preregistration_commit": "2335ce36e32d897297c9b6a5061854bfad11ed9a",
+  "actual_process": {
+    "actual_preregistration_commit": "2335ce36e32d897297c9b6a5061854bfad11ed9a",
+    "checkpoint_covered_seq": 196222,
+    "checkpoint_revision": 790,
+    "checkpoint_saved_at": "2026-11-06T22:38:18.677524+00:00",
+    "completed_at": "2026-11-06T22:43:04.969179+00:00",
+    "elapsed_seconds": 202.3292522910051,
+    "exit_code": 1,
+    "output": {
+      "path": "reports/ssd-continuous-research-v1/execution-gap-shield-20261106-v1/actual-financial-child-v1.log",
+      "sha256": "51c1d0798ca3505e7d7c02b7db6b7100b1133b7dcccc0cd9c8e25bbfe58832c6"
+    },
+    "peak_rss_bytes": 468193280,
+    "pid": 23640
+  },
+  "actual_registered_frozen_sha256": "4c30b6b9d81f32243c19e483f1ed8f201be8691c5abca3fc232ec65c03a8a4c6",
+  "attempted_main_simulation_reached_last_original_date": true,
+  "attempted_path": "10y-base",
+  "candidate_id": "expert_pool_six_execution_gap_shield_v1",
+  "completed_verified_formal_paths": 0,
+  "exclusive_failure_cause_or_other_fields_equal_claimed": false,
+  "failed_cash_replay_frame_operands_were_retained": false,
+  "finite_reference_is_future_or_full_month_guarantee": false,
+  "frozen_code_tolerance_or_failure_revised": false,
+  "frozen_implementation_sha256": "6a1982a2f543d4eb5ec8e762850f235768a0d7acfece1dac6604f2aa74333ab7",
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "last_complete_financial_result_remains_separate": true,
+  "maximum_saved_state_gross_expression_absolute_difference": 3.3306690738754696e-16,
+  "new_policy_prefix_audits_started": false,
+  "new_strategy_target_proof_or_financial_review_completed": false,
+  "new_verified_financial_metrics_or_qualification_available": false,
+  "order_authority": false,
+  "other_original_paths_not_started": [
+    "10y-stress",
+    "5y-base",
+    "5y-stress"
+  ],
+  "private_preservation": {
+    "path": "reports/ssd-continuous-research-v1/execution-gap-shield-20261106-v1/failure-preservation-v1.json",
+    "sha256": "3e4d8d39fb258d31d44e9045d29406336a2da33ee4b9c5e54f5a583358220e87"
+  },
+  "raw_prices_targets_holdings_daily_books_or_private_scenarios_exported": false,
+  "record_type": "delay_aware_shield_terminal_accounting_verification_failure",
+  "registration": {
+    "path": "evidence/execution_gap_shield_20261106_registration_v1.json",
+    "sha256": "a389f3e9f5c424dca364149f586b7a1627145faf897eaa6089ec68f0fe45d259"
+  },
+  "retained_main_decisions": 2513,
+  "retained_private_scenario_archives": 2513,
+  "retained_reference_inputs": 2513,
+  "saved_state_gross_expression_bit_differences": 510,
+  "schema_version": 1,
+  "status": "terminal_technical_failure",
+  "study_id": "ssd_execution_gap_shield_20261106_v1",
+  "terminal_program_run_resolver_verifier_or_cash_replay_reexecuted": false
+}

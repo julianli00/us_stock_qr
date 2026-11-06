@@ -45,22 +45,24 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
-### Registered J1491 delay-aware shield: no historical output yet
+### Terminal J1494 shield accounting failure: no verified financial result
 
-The [new dynamic program](research/workbench/evidence/execution_gap_shield_20261106_registration_v1.json)
-keeps the same cached six-expert monthly opinion but reviews actual main
-capital every close. Its [separate frozen law](research/workbench/EXECUTION_GAP_SHIELD_V1.md)
-uses actual one/two-session delivery paths and scenario-opening costs.
-It preserves a pending request and explicitly distinguishes an uncertified
-BIL risk-reduction attempt from a successful finite full-fill reference.
-Only that certified reference can override the ordinary band when unchanged
-holdings violate a known path.
+The [retained actual failure](research/workbench/evidence/execution_gap_shield_20261106_results_v1.json)
+stops V1 at its first independent cash-engine full-frame comparison.
+The attempted ten-year base simulation reached the last original date and
+retained 2,513 decisions plus 2,513 private scenario archives, but no path
+completion, financial review or new verified return metric exists.
+The other three paths were not started; this is not a financial rejection.
 
-First 32 synthetic checks and an actual saved checkpoint precede registration.
-Historical shield scenarios, targets and accounts are still uncomputed;
-actual remote program publication must precede all four new funded paths.
-**J1491 / 139 registered / one pending / 303 completions / zero qualifiers.**
-The prior financial result and read-only diagnosis remain separate below.
+Read-only inspection of retained states finds 510 last-bit disagreements
+between two gross-exposure reduction expressions, maximum
+3.3306690738754696e-16. The actual failed replay frames were not retained,
+so this does not prove an exclusive cause or that every other field agreed.
+Frozen code, exact comparison, failure and partial artifacts are unchanged;
+V1 is not repaired or replayed. First 32 synthetic passes do not overrule it.
+**J1494 / 139 registered / 14 workflow terminations / zero pending /
+303 completed financial trials / zero qualifiers. Investment objective unmet.**
+The last complete financial result remains the separate J1490 Prod outcome.
 
 ### Preserved read-only J1490 execution-gap reference: waiting holdings matter
 
