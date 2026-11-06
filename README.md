@@ -45,6 +45,24 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
+### Nested allocation audit: no mature same-source channel overlap
+
+The [read-only nested-mass audit](research/workbench/evidence/nested_growth_allocation_audit_20261106_v1.json)
+matches all121outer/child origins and reconstructs both stored quartet targets.
+The114mature growth-child allocations use canonical members outside the direct
+trio, so mature direct/child same-source overlap is **zero**, not a demonstrated
+explanation of the failed portfolio. Only the seven unscored uniform records
+have shared channels, without adding capital.
+
+Equal-four has five positive canonical members on every mature origin.
+Rolling-two has two canonical members on55origins and three on59; its
+maximum canonical fraction reaches80.604232%, with effective allocation
+number1.454918--2.934162. Neither support nor this number establishes
+independent risks. Exact Fraction algebra and five prefixes pass; target
+residual is at most1.1102230246251565e-16. No source selector, target,
+account, return or financial trial is rerun.
+**J1320/289completed/zero qualified is unchanged; investment goal remains unmet.**
+
 ### Complete growth quartet: higher returns, still no qualifier
 
 The [complete eight-path outcome](research/workbench/evidence/growth_macro_defense_hedge_20261106_results_v1.json)

@@ -54,139 +54,36 @@
       "order_authority": false
     },
     "latest_read_only_diagnosis": {
-      "study_id": "ssd_forecast_risk_normalizer_diagnosis_20261106_v2",
-      "results": "research/workbench/evidence/forecast_risk_normalizer_diagnosis_20261106_v2.json",
-      "results_sha256": "c8a5a4f44e7319d28e91e46d83381de7941c35fc8440acff0410a7da3515cd3f",
-      "analysis_intent_sha256": "9b7a9f2202a07f70e0b3a84569df6eadb949b214109a19c59f9c9e5066bcf540",
-      "implementation_dependency_count": 161,
-      "source_reference_count": 172,
-      "explicit_tested_inputs": [
-        "config/forecast-risk-normalizer-diagnosis-v2.json",
-        "src/us_quant/forecast_risk_normalizer_diagnosis_v2.py",
-        "src/us_quant/ssd_forecast_risk_normalizer_diagnosis_v2.py",
-        "tests/test_forecast_risk_normalizer_diagnosis_v2.py",
-        "FORECAST_RISK_NORMALIZER_DIAGNOSIS_V2.md",
-        "tests/test_forecast_risk_normalizer_diagnosis_v1.py",
-        "tests/conftest.py"
-      ],
-      "new_V2_synthetic_checks": 24,
-      "source_failed_V1_synthetic_checks": 23,
-      "actual_diagnostic_wall_seconds": 8.240203875000589,
-      "actual_diagnostic_Darwin_peak_RSS_bytes": 423673856,
-      "retained_input_resolved_records": 242,
-      "exact_prefixes": [
-        "2016-10-05",
-        "2017-03-31",
-        "2017-09-29",
-        "2021-09-30",
-        "2026-09-30"
-      ],
-      "summary": {
-        "alternative_pair_ranking_or_selection_generated": false,
-        "decision_count": 121,
-        "derivative_scope": "continuous_unrounded_score_with_numerator_fixed",
-        "failed_V1_partial_diagnostic_preserved": true,
-        "independent_economic_research_questions_added_by_codec": 0,
-        "independent_forward_validation": false,
-        "investment_objective_verified": false,
-        "main_drawdown_or_causal_loss_attribution": false,
-        "models": {
-          "contextual_unit_ridge": {
-            "Python_JSON_float_round_differs_all_pair_rows": 1,
-            "Python_JSON_float_round_differs_selected_pair_rows": 0,
-            "all_eligible_numerators_negative_origins": 80,
-            "all_pairs_continuous_risk_slope_counts": {
-              "decreasing": 59,
-              "flat": 0,
-              "increasing": 3133
-            },
-            "all_pairs_numerator_sign_counts": {
-              "negative": 3133,
-              "positive": 59,
-              "zero": 0
-            },
-            "all_recorded_pair_rows": 3192,
-            "decision_origins": 121,
-            "evaluable_pair_rows": 3192,
-            "maximum_independent_decimal_score_gap": 1.4210854715202004e-14,
-            "maximum_score_identity_gap": 0.0,
-            "original_unscorable_pair_rows": 0,
-            "scored_origins": 114,
-            "selected_binding_risk_window_counts": {
-              "both": 0,
-              "training_only": 49,
-              "validation_only": 65
-            },
-            "selected_continuous_risk_slope_counts": {
-              "decreasing": 34,
-              "flat": 0,
-              "increasing": 80
-            },
-            "selected_negative_with_any_nonnegative_menu_origins": 0,
-            "selected_numerator_sign_counts": {
-              "negative": 80,
-              "positive": 34,
-              "zero": 0
-            },
-            "source_key_codec_bit_exact_pair_rows": 3192,
-            "unscored_origins": 7
-          },
-          "unconditional_unit_ridge": {
-            "Python_JSON_float_round_differs_all_pair_rows": 0,
-            "Python_JSON_float_round_differs_selected_pair_rows": 0,
-            "all_eligible_numerators_negative_origins": 92,
-            "all_pairs_continuous_risk_slope_counts": {
-              "decreasing": 22,
-              "flat": 0,
-              "increasing": 3170
-            },
-            "all_pairs_numerator_sign_counts": {
-              "negative": 3170,
-              "positive": 22,
-              "zero": 0
-            },
-            "all_recorded_pair_rows": 3192,
-            "decision_origins": 121,
-            "evaluable_pair_rows": 3192,
-            "maximum_independent_decimal_score_gap": 2.842170943040401e-14,
-            "maximum_score_identity_gap": 0.0,
-            "original_unscorable_pair_rows": 0,
-            "scored_origins": 114,
-            "selected_binding_risk_window_counts": {
-              "both": 0,
-              "training_only": 48,
-              "validation_only": 66
-            },
-            "selected_continuous_risk_slope_counts": {
-              "decreasing": 22,
-              "flat": 0,
-              "increasing": 92
-            },
-            "selected_negative_with_any_nonnegative_menu_origins": 0,
-            "selected_numerator_sign_counts": {
-              "negative": 92,
-              "positive": 22,
-              "zero": 0
-            },
-            "source_key_codec_bit_exact_pair_rows": 3192,
-            "unscored_origins": 7
-          }
-        },
-        "new_targets_accounts_or_financial_trials": 0,
-        "order_authority": false,
-        "original_sign_identity_Decimal_tolerance_unchanged": true,
-        "source_key_codec": "numpy_float64_round12_scaled_binary64_nearest_even",
-        "source_scores_keys_or_target_records_rewritten": false
+      "study_id": "ssd_nested_growth_allocation_audit_20261106_v1",
+      "status": "complete_both_recorded_nested_mass_identities_verified",
+      "result": "research/workbench/evidence/nested_growth_allocation_audit_20261106_v1.json",
+      "result_sha256": "bc2a16ec32715a7e8482e60472422f3c0de83eb6cdbd7fc06ff082b3fba1a2dc",
+      "implementation_freeze_sha256": "8892c0a7bb7890b7efad29d63cd1299946d9af5d69b8cc7215161ba93039a27f",
+      "matched_decisions": 121,
+      "actual_input_resolved_records": 242,
+      "direct_source_observation_matches": 363,
+      "growth_target_matches": 121,
+      "mature_outer_origins": 114,
+      "unscored_outer_origins": 7,
+      "mature_same_canonical_shared_channel_origins": 0,
+      "rolling_mature_positive_support_counts": {
+        "2": 55,
+        "3": 59
       },
-      "terminal_V1_diagnostic_failure": {
-        "path": "evidence/forecast_risk_normalizer_diagnosis_20261106_v1_failure.json",
-        "sha256": "16d1920d9975a3872f8433cfc6a44cfb56796a1f26acc46be9e433646396ed18"
+      "rolling_mature_effective_allocation_number": {
+        "maximum": 2.9341621490375047,
+        "mean": 2.133329981418733,
+        "minimum": 1.4549183301778217,
+        "observations": 114
       },
-      "source_scores_keys_or_target_records_rewritten": false,
-      "alternative_rankings_targets_or_financial_trials": 0,
-      "main_drawdown_or_causal_loss_attribution": false,
+      "rolling_maximum_canonical_fraction": 0.8060423199251193,
+      "effective_number_is_independent_risk_count": false,
+      "allocation_mass_is_main_PNL_or_causal_drawdown_attribution": false,
+      "new_financial_trials": 0,
+      "source_algorithms_or_main_returns_recomputed": false,
       "independent_forward_validation": false,
-      "investment_objective_verified": false
+      "investment_objective_verified": false,
+      "order_authority": false
     },
     "previous_mixed_six_financial_snapshot": {
       "journal_sequence": 1109,
@@ -613,8 +510,8 @@
       "investment_objective_verified": false,
       "order_authority": false
     },
-    "snapshot_scope": "Current J1320:both growth/confirmation/defense/hedge quartet laws complete all eight original paths and are rejected. All CAGR gates pass;all RF Sharpe and QQQ gates fail;only rolling5y-stress DD passes. All source scopes unchanged.",
-    "journal_summary_derived_at_utc": "2026-11-06T04:18:05.962278+00:00",
+    "snapshot_scope": "Current J1320 financial totals and quartet rejections unchanged. New read-only nested allocation-mass audit finds zero mature same-canonical direct/child overlap;rolling mass can still concentrate. No return attribution or new trial.",
+    "journal_summary_derived_at_utc": "2026-11-06T04:47:42.548540+00:00",
     "journal_sequence": 1320,
     "journal_head_sha256": "ef00d3856e2cd2fa0d18f9d8614a0d7e2ece8f8e64c2872cb94e0e09214ba41d",
     "legacy_completed": 178,
@@ -1090,6 +987,141 @@
       "complete_old_projection_commit": "e3b1781118bbe29e9f70c9ec81afc304973807c2",
       "complete_old_projection_path": "docs/research_progress.json",
       "snapshot_is_current": false
+    },
+    "preserved_read_only_diagnosis_before_nested_growth_J1320": {
+      "study_id": "ssd_forecast_risk_normalizer_diagnosis_20261106_v2",
+      "results": "research/workbench/evidence/forecast_risk_normalizer_diagnosis_20261106_v2.json",
+      "results_sha256": "c8a5a4f44e7319d28e91e46d83381de7941c35fc8440acff0410a7da3515cd3f",
+      "analysis_intent_sha256": "9b7a9f2202a07f70e0b3a84569df6eadb949b214109a19c59f9c9e5066bcf540",
+      "implementation_dependency_count": 161,
+      "source_reference_count": 172,
+      "explicit_tested_inputs": [
+        "config/forecast-risk-normalizer-diagnosis-v2.json",
+        "src/us_quant/forecast_risk_normalizer_diagnosis_v2.py",
+        "src/us_quant/ssd_forecast_risk_normalizer_diagnosis_v2.py",
+        "tests/test_forecast_risk_normalizer_diagnosis_v2.py",
+        "FORECAST_RISK_NORMALIZER_DIAGNOSIS_V2.md",
+        "tests/test_forecast_risk_normalizer_diagnosis_v1.py",
+        "tests/conftest.py"
+      ],
+      "new_V2_synthetic_checks": 24,
+      "source_failed_V1_synthetic_checks": 23,
+      "actual_diagnostic_wall_seconds": 8.240203875000589,
+      "actual_diagnostic_Darwin_peak_RSS_bytes": 423673856,
+      "retained_input_resolved_records": 242,
+      "exact_prefixes": [
+        "2016-10-05",
+        "2017-03-31",
+        "2017-09-29",
+        "2021-09-30",
+        "2026-09-30"
+      ],
+      "summary": {
+        "alternative_pair_ranking_or_selection_generated": false,
+        "decision_count": 121,
+        "derivative_scope": "continuous_unrounded_score_with_numerator_fixed",
+        "failed_V1_partial_diagnostic_preserved": true,
+        "independent_economic_research_questions_added_by_codec": 0,
+        "independent_forward_validation": false,
+        "investment_objective_verified": false,
+        "main_drawdown_or_causal_loss_attribution": false,
+        "models": {
+          "contextual_unit_ridge": {
+            "Python_JSON_float_round_differs_all_pair_rows": 1,
+            "Python_JSON_float_round_differs_selected_pair_rows": 0,
+            "all_eligible_numerators_negative_origins": 80,
+            "all_pairs_continuous_risk_slope_counts": {
+              "decreasing": 59,
+              "flat": 0,
+              "increasing": 3133
+            },
+            "all_pairs_numerator_sign_counts": {
+              "negative": 3133,
+              "positive": 59,
+              "zero": 0
+            },
+            "all_recorded_pair_rows": 3192,
+            "decision_origins": 121,
+            "evaluable_pair_rows": 3192,
+            "maximum_independent_decimal_score_gap": 1.4210854715202004e-14,
+            "maximum_score_identity_gap": 0.0,
+            "original_unscorable_pair_rows": 0,
+            "scored_origins": 114,
+            "selected_binding_risk_window_counts": {
+              "both": 0,
+              "training_only": 49,
+              "validation_only": 65
+            },
+            "selected_continuous_risk_slope_counts": {
+              "decreasing": 34,
+              "flat": 0,
+              "increasing": 80
+            },
+            "selected_negative_with_any_nonnegative_menu_origins": 0,
+            "selected_numerator_sign_counts": {
+              "negative": 80,
+              "positive": 34,
+              "zero": 0
+            },
+            "source_key_codec_bit_exact_pair_rows": 3192,
+            "unscored_origins": 7
+          },
+          "unconditional_unit_ridge": {
+            "Python_JSON_float_round_differs_all_pair_rows": 0,
+            "Python_JSON_float_round_differs_selected_pair_rows": 0,
+            "all_eligible_numerators_negative_origins": 92,
+            "all_pairs_continuous_risk_slope_counts": {
+              "decreasing": 22,
+              "flat": 0,
+              "increasing": 3170
+            },
+            "all_pairs_numerator_sign_counts": {
+              "negative": 3170,
+              "positive": 22,
+              "zero": 0
+            },
+            "all_recorded_pair_rows": 3192,
+            "decision_origins": 121,
+            "evaluable_pair_rows": 3192,
+            "maximum_independent_decimal_score_gap": 2.842170943040401e-14,
+            "maximum_score_identity_gap": 0.0,
+            "original_unscorable_pair_rows": 0,
+            "scored_origins": 114,
+            "selected_binding_risk_window_counts": {
+              "both": 0,
+              "training_only": 48,
+              "validation_only": 66
+            },
+            "selected_continuous_risk_slope_counts": {
+              "decreasing": 22,
+              "flat": 0,
+              "increasing": 92
+            },
+            "selected_negative_with_any_nonnegative_menu_origins": 0,
+            "selected_numerator_sign_counts": {
+              "negative": 92,
+              "positive": 22,
+              "zero": 0
+            },
+            "source_key_codec_bit_exact_pair_rows": 3192,
+            "unscored_origins": 7
+          }
+        },
+        "new_targets_accounts_or_financial_trials": 0,
+        "order_authority": false,
+        "original_sign_identity_Decimal_tolerance_unchanged": true,
+        "source_key_codec": "numpy_float64_round12_scaled_binary64_nearest_even",
+        "source_scores_keys_or_target_records_rewritten": false
+      },
+      "terminal_V1_diagnostic_failure": {
+        "path": "evidence/forecast_risk_normalizer_diagnosis_20261106_v1_failure.json",
+        "sha256": "16d1920d9975a3872f8433cfc6a44cfb56796a1f26acc46be9e433646396ed18"
+      },
+      "source_scores_keys_or_target_records_rewritten": false,
+      "alternative_rankings_targets_or_financial_trials": 0,
+      "main_drawdown_or_causal_loss_attribution": false,
+      "independent_forward_validation": false,
+      "investment_objective_verified": false
     }
   },
   "updated_on": "2026-10-31",

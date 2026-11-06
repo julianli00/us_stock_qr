@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_nested_growth_allocation_audit_20261106_v1",
+  "actual_native_event_seq": 179416,
+  "prior_journal_sequence": 1320,
+  "prior_journal_head_sha256": "ef00d3856e2cd2fa0d18f9d8614a0d7e2ece8f8e64c2872cb94e0e09214ba41d",
+  "outer_expert_ids": [
+    "semiconductor_option_dollar_profit_share_confirmation",
+    "four_factor_defense_diversified",
+    "conditional_covariance_hedge_expert_v1",
+    "expert_pool_eight_unconditional_forecast_pair_v2"
+  ],
+  "canonical_expert_ids": [
+    "equity_first_month_end_commitment_v1",
+    "benchmark_opportunity_joint_tail_v1",
+    "symmetric_garch_growth_bil_v1",
+    "semiconductor_ratchet_protection",
+    "semiconductor_option_dollar_profit_share_confirmation",
+    "four_factor_defense_diversified",
+    "two_segment_vvix_uncertainty_confirmation_v1",
+    "conditional_covariance_hedge_expert_v1"
+  ],
+  "canonical_direct_slots": [4, 5, 7],
+  "outer_candidate_ids": [
+    "expert_pool_growth_macro_defense_hedge_equal_v1",
+    "expert_pool_growth_macro_defense_hedge_rolling_pair_v1"
+  ],
+  "child_tape_candidate_id": "expert_pool_eight_unconditional_forecast_pair_v1",
+  "decision_information_clock": "after_16_15_ET_index_close_before_later_open_execution",
+  "unit_mass_and_target_tolerance": 1e-12,
+  "support_uses_strict_positive_mass": true,
+  "effective_number_is_independent_risk_count": false,
+  "new_rankings_targets_shadow_accounts_or_financial_trials": 0,
+  "source_algorithms_or_main_returns_recomputed": false,
+  "allocation_mass_is_main_capital_PNL_or_causal_drawdown_attribution": false,
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "order_authority": false,
+  "source_inputs": {
+    "path": "reports/ssd-continuous-research-v1/nested-growth-allocation-audit-20261106-v1/source-inputs-v1.json",
+    "sha256": "c6143af5d895a2c7540828ec4758744a9f684ca0af41aa8a313b0a9fb4863ad3"
+  }
+}

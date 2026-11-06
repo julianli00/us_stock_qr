@@ -4,6 +4,69 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Nested growth allocation mass: no mature duplicated canonical channel
+
+The [complete read-only audit](evidence/nested_growth_allocation_audit_20261106_v1.json)
+expands both recorded quartet laws through the unchanged complete growth
+controller into the original canonical eight. It uses no new selection,
+target policy, return calculation, shadow or funded account.
+
+All121matched initial/month-end origins are retained, with363exact direct
+source opinion/clock/NET/RFmatches and121bit-exact growth-target matches.
+Independent binary64-as-Fraction nested/flat identities are exact.
+The maximum canonical-fraction difference is0; maximum retained-target
+reconstruction and independent target gaps are both
+1.1102230246251565e-16, within the original1e-12limit.
+Five exact prefixes pass. No source state or RFview is changed.
+
+| Recorded law / maturity | Origins | Positive canonical support | Origins with shared direct/child members | Effective allocation number | Maximum canonical fraction |
+| --- | ---: | --- | ---: | --- | ---: |
+| Equal-four / mature | 114 | 5 on all114 | 0 | 4.416560--4.571429 | 25.000000% |
+| Rolling-two / mature | 114 | 2 on55;3 on59 | 0 | 1.454918--2.934162 | 80.604232% |
+| Either law / unscored initial | 7 each | 8 on all7 | 7 each | 4.129032 | 28.125000% |
+
+The mature growth controller's recorded child pair never allocates to
+the direct trio's canonical members. Accordingly, the direct/child
+same-canonical-source overlap is zero on all114mature origins for both
+outer laws. Structural nesting alone did not establish realized double
+allocation to those same members. It is not a demonstrated cause of the
+quartet's low Sharpe or breached DD.
+
+The seven explicitly unscored initial records use equal quarters over
+the four outer labels and uniform eighths inside the child. Shared-channel
+minimum mass is0.09375there, while combined statistical mass still sums
+to one. No capital is duplicated. These warm-up intentions are not
+successful risk assessments or mature-pair behavior.
+
+Rolling growth is positive on59mature origins, where two outer labels
+expand to three positive canonical members; the other55mature choices
+use two direct canonical members. Mature rolling HHIranges
+0.340813--0.687324,with mean0.477137; maximum canonical fraction
+can reach80.604232%. Equal's mature HHIranges0.218750--0.226421.
+These are statistical allocation-mass descriptions, not actual main
+holdings, dollar capital, stock-level overlap or independent risk counts.
+Distinct canonical experts can still share instruments and co-lose.
+No causal DD/fee/source-alpha attribution follows.
+
+`nested_growth_allocation_audit_v1.decompose` is the small Module at the
+retained-record Seam. The saved-record Adapter and synthetic Adapter
+cross the same Interface; independent Fraction verification has separate
+Implementation. Actual inputs are retained before arithmetic and resolved
+records afterward. Source aliases, original V1-derived/V2-attested target
+chronology, mature/unscored states and both whole laws remain intact.
+No terminal V1 identity is rescued or re-admitted.
+
+The first36synthetic checks and Ruffpass before freeze`8892c0a7`.
+The once-only actual audit/export exits0 in7.422024415980559seconds,
+Darwin peakRSS426713088bytes, with242input/resolved records.
+Every original financial outcome, source refusal, RF/PITscope, trial count,
+source clock and global seven/eight roster remains unchanged.
+All289financial completions are exposed; this is neither independent
+forward proof nor a new qualified portfolio.
+**J1320/122registered/111completed/11technical/zero pending/
+444funded paths/289combined completions/zero qualifiers is unchanged;
+investment goal remains unmet.**
+
 ## Growth, confirmation, defense and hedge quartet: all eight complete, both rejected
 
 The [complete outcome](evidence/growth_macro_defense_hedge_20261106_results_v1.json)

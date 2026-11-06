@@ -1,0 +1,215 @@
+{
+  "actual_authoritative_counts": {
+    "current_journal_event_count": 1320,
+    "current_journal_head_sha256": "ef00d3856e2cd2fa0d18f9d8614a0d7e2ece8f8e64c2872cb94e0e09214ba41d",
+    "new_account_paths": 444,
+    "new_completed_strategy_evaluations": 111,
+    "new_historical_point_gate_passes": 0,
+    "new_pending_candidates": 0,
+    "new_registered_candidates": 122,
+    "new_reviews": 111,
+    "new_technical_failures": 11,
+    "original_completed_configurations": 178,
+    "original_registered_versions": 96,
+    "original_reviews": 94,
+    "total_legacy_plus_ssd_completed_configurations": 289
+  },
+  "actual_input_resolved_record_count": 242,
+  "completed_at": "2026-11-06T04:44:49.934531+00:00",
+  "exact_prefixes": [
+    "2016-10-05",
+    "2017-03-31",
+    "2017-09-29",
+    "2021-09-30",
+    "2026-09-30"
+  ],
+  "global_pool_changed": false,
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "new_financial_trials": 0,
+  "order_authority": false,
+  "raw_prices_targets_returns_or_individual_allocation_rows_exported": false,
+  "schema_version": 1,
+  "source_algorithms_or_main_returns_recomputed": false,
+  "study_id": "ssd_nested_growth_allocation_audit_20261106_v1",
+  "summary": {
+    "all_exact_symbolic_nested_flat_identities": true,
+    "allocation_mass_is_main_PNL_or_causal_drawdown_attribution": false,
+    "alternative_rankings_targets_or_financial_trials": 0,
+    "candidates": {
+      "expert_pool_growth_macro_defense_hedge_equal_v1": {
+        "all_origins": {
+          "allocation_HHI": {
+            "maximum": 0.2421875,
+            "mean": 0.22066719837944435,
+            "minimum": 0.21875000140007264,
+            "observations": 121
+          },
+          "effective_allocation_number": {
+            "maximum": 4.571428542169911,
+            "mean": 4.534313745958864,
+            "minimum": 4.129032258064516,
+            "observations": 121
+          },
+          "growth_branch_mass_on_trio_members": {
+            "maximum": 0.09375,
+            "mean": 0.005423553719008265,
+            "minimum": 0.0,
+            "observations": 121
+          },
+          "growth_branch_positive_origins": 121,
+          "maximum_canonical_fraction": {
+            "maximum": 0.28125,
+            "mean": 0.2518078512396694,
+            "minimum": 0.25,
+            "observations": 121
+          },
+          "origins": 121,
+          "origins_with_positive_shared_channels": 7,
+          "positive_canonical_support_counts": {
+            "5": 114,
+            "8": 7
+          },
+          "shared_channel_minimum_mass": {
+            "maximum": 0.09375,
+            "mean": 0.005423553719008265,
+            "minimum": 0.0,
+            "observations": 121
+          },
+          "two_outer_labels_more_than_two_canonical_members": 0
+        },
+        "mature_origins": {
+          "allocation_HHI": {
+            "maximum": 0.2264205740485661,
+            "mean": 0.21934577635011196,
+            "minimum": 0.21875000140007264,
+            "observations": 114
+          },
+          "effective_allocation_number": {
+            "maximum": 4.571428542169911,
+            "mean": 4.559199451355886,
+            "minimum": 4.416559776875687,
+            "observations": 114
+          },
+          "growth_branch_mass_on_trio_members": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "observations": 114
+          },
+          "growth_branch_positive_origins": 114,
+          "maximum_canonical_fraction": {
+            "maximum": 0.25,
+            "mean": 0.25,
+            "minimum": 0.25,
+            "observations": 114
+          },
+          "origins": 114,
+          "origins_with_positive_shared_channels": 0,
+          "positive_canonical_support_counts": {
+            "5": 114
+          },
+          "shared_channel_minimum_mass": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "observations": 114
+          },
+          "two_outer_labels_more_than_two_canonical_members": 0
+        }
+      },
+      "expert_pool_growth_macro_defense_hedge_rolling_pair_v1": {
+        "all_origins": {
+          "allocation_HHI": {
+            "maximum": 0.6873238031702982,
+            "mean": 0.46354522783081153,
+            "minimum": 0.2421875,
+            "observations": 121
+          },
+          "effective_allocation_number": {
+            "maximum": 4.129032258064516,
+            "mean": 2.2487838321337787,
+            "minimum": 1.4549183301778217,
+            "observations": 121
+          },
+          "growth_branch_mass_on_trio_members": {
+            "maximum": 0.09375,
+            "mean": 0.005423553719008265,
+            "minimum": 0.0,
+            "observations": 121
+          },
+          "growth_branch_positive_origins": 66,
+          "maximum_canonical_fraction": {
+            "maximum": 0.8060423199251193,
+            "mean": 0.5643286520302593,
+            "minimum": 0.28125,
+            "observations": 121
+          },
+          "origins": 121,
+          "origins_with_positive_shared_channels": 7,
+          "positive_canonical_support_counts": {
+            "2": 55,
+            "3": 59,
+            "8": 7
+          },
+          "shared_channel_minimum_mass": {
+            "maximum": 0.09375,
+            "mean": 0.005423553719008265,
+            "minimum": 0.0,
+            "observations": 121
+          },
+          "two_outer_labels_more_than_two_canonical_members": 59
+        },
+        "mature_origins": {
+          "allocation_HHI": {
+            "maximum": 0.6873238031702982,
+            "mean": 0.4771373690134052,
+            "minimum": 0.34081279397869363,
+            "observations": 114
+          },
+          "effective_allocation_number": {
+            "maximum": 2.9341621490375047,
+            "mean": 2.133329981418733,
+            "minimum": 1.4549183301778217,
+            "observations": 114
+          },
+          "growth_branch_mass_on_trio_members": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "observations": 114
+          },
+          "growth_branch_positive_origins": 59,
+          "maximum_canonical_fraction": {
+            "maximum": 0.8060423199251193,
+            "mean": 0.5817106745233454,
+            "minimum": 0.39937258108828655,
+            "observations": 114
+          },
+          "origins": 114,
+          "origins_with_positive_shared_channels": 0,
+          "positive_canonical_support_counts": {
+            "2": 55,
+            "3": 59
+          },
+          "shared_channel_minimum_mass": {
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "observations": 114
+          },
+          "two_outer_labels_more_than_two_canonical_members": 59
+        }
+      }
+    },
+    "effective_number_is_independent_risk_count": false,
+    "exact_direct_source_observation_matches": 363,
+    "exact_growth_target_matches": 121,
+    "matched_decisions": 121,
+    "mature_outer_decisions": 114,
+    "maximum_independent_canonical_weight_difference": 0.0,
+    "maximum_independent_underlying_target_difference": 1.1102230246251565e-16,
+    "maximum_recorded_target_reconstruction_residual": 1.1102230246251565e-16,
+    "unscored_outer_decisions": 7
+  }
+}
