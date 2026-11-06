@@ -4,7 +4,67 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Growth, confirmation, defense and hedge quartet: preregistration J1301
+## Growth, confirmation, defense and hedge quartet: all eight complete, both rejected
+
+The [complete outcome](evidence/growth_macro_defense_hedge_20261106_results_v1.json)
+retains both fixed laws and every original path. Actual complete-cohort
+preregistration is`e3b1781118bbe29e9f70c9ec81afc304973807c2`.
+Each actual registered candidate verifies371scientific public blobs plus
+its packet and28original import pins before capital. Actual prefund
+checkpoint664is saved and exactly read back. Fence1302at
+**2026-11-06T04:13:51.557551Z** precedes the first account start at
+**04:13:53.866513Z** and every later path.
+
+| Complete rule | Original path | Net CAGR | RF Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Model fees USD |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Equal quartet | 10y-base | 14.097747% | 0.924123 | 20.943984% | 2.719785x | 870 | 1104.89 |
+| Equal quartet | 10y-stress | 13.687847% | 0.895403 | 20.357403% | 2.716919x | 865 | 1783.37 |
+| Equal quartet | 5y-base | 16.453681% | 0.951188 | 16.313931% | 2.857296x | 477 | 565.63 |
+| Equal quartet | 5y-stress | 15.719474% | 0.901941 | 16.823790% | 2.854202x | 472 | 818.69 |
+| Rolling six-pair | 10y-base | 14.259656% | 0.908242 | 16.180314% | 5.563019x | 820 | 1351.52 |
+| Rolling six-pair | 10y-stress | 13.695314% | 0.866338 | 16.064701% | 5.569494x | 829 | 2901.34 |
+| Rolling six-pair | 5y-base | 14.516249% | 0.748584 | 15.587952% | 5.978437x | 409 | 598.76 |
+| Rolling six-pair | 5y-stress | 13.590009% | 0.690354 | 14.726934% | 5.985071x | 409 | 1154.35 |
+
+Every netCAGRgate passes12%, but no RFSharpegate passes1and no QQQgate
+passes. All four5ySPYgates pass; all four10ySPYgates fail. Only rolling
+5y-stress DDpasses15%; the remaining seven fail. Only equal5y-stress
+passes the additional stress/base-SPYgate. Reviews1311/1320therefore
+reject both complete unchanged policies. Do not mix equal's return with
+rolling's one DDpass, relax a gate or reinterpret technical source
+eligibility as final qualification.
+
+Against the predeclared matched cached trio controls, all eight netCAGRvalues
+rise0.987088--3.004647percentage points. RFSharpe rises on seven paths but
+falls on rolling5y-stress. DDworsens on seven paths; only rolling5y-stress
+improves. Equal-quarter annual two-sided turnover falls0.202081--0.326673x,
+but model tickets rise54--130and every USDfee total rises. Rolling turnover
+rises0.956999--1.078240x; its tickets fall3--12yet every fee total rises.
+All eight matched differences remain published, with no control replay.
+These are whole-policy differences, not isolated causal growth alpha or
+an attribution of fees to turnover alone.
+
+The rolling law selects the growth controller on59of114scored origins;
+seven unscored origins use explicit quarters. These are statistical
+intentions, not measured main holdings, orders, capital fractions over time
+or independent risk sources. The growth controller nests the canonical eight,
+including the other three policies. No mechanism label establishes independent
+economic risks, and no source wealth is added to main capital.
+
+The once-only actual financial process exits0 in112.02560058402014seconds,
+Darwin peakRSS490156032bytes. Minimum recorded main cash isUSD184.06241248890908,
+maximum gross0.9827613213236778 and independentBT maximum equity gap
+USD7.275957614183426e-11. Actual broker orders0.
+Every original2512/1254return date,freshUSD10000,initialpeak,canonicalRF,
+5/20bps+$1,one/two-later-open delay,actual holdings feedback,cash funding<=1x
+and independentBT remains. Source signals,fits,ranks,targets,shadows,old
+accounts,benchmarks,RFviews and missed forward observations are not rerun,
+revised or backfilled. All failures and exposed-history bias remain.
+**J1320:122registered,111completed,11technical,zero pending,
+444funded paths,289combined completions,zero qualifiers;
+investment goal remains unmet.**
+
+## Growth, confirmation, defense and hedge quartet: preserved preregistration J1301
 
 The [frozen law](GROWTH_MACRO_DEFENSE_HEDGE_V1.md) adds exactly one complete
 unconditional forecast-pair controller to the unchanged prior three-role

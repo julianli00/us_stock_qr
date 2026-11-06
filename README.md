@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 122 SSD identities, 109 completed/rejected, 11 retained technical failures and two pending; 436 funded paths | Journal1301 current summary: 287 combined completions, zero qualifiers; investment goal remains unmet |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 122 SSD identities, 111 completed/rejected, 11 retained technical failures and zero pending; 444 funded paths | Journal1320 current summary: 289 combined completions, zero qualifiers; investment goal remains unmet |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -45,7 +45,29 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
-### Complete growth controller plus fixed trio: preregistration J1301
+### Complete growth quartet: higher returns, still no qualifier
+
+The [complete eight-path outcome](research/workbench/evidence/growth_macro_defense_hedge_20261106_results_v1.json)
+keeps both fixed rules. All netCAGRvalues13.590009--16.453681%pass12%,
+but every RFSharpe0.690354--0.951188fails1and every QQQgate fails.
+Only rolling5y-stress DD14.726934%passes15%; the other seven DDvalues
+are15.587952--20.943984%. Reviews1311/1320reject both complete policies.
+
+Compared with matched cached trio controls, all eight CAGRvalues improve
+by0.99--3.00percentage points, but DDworsens on seven paths. Equal-quarter
+turnover falls while tickets/fees rise; rolling turnover and fees rise
+despite fewer tickets. A higher return or one passing DDdoes not qualify
+either whole rule. Neither source overlap nor costs disappear by adding
+a complete controller; no old source or control account is replayed.
+
+Actual preregistration`e3b1781`,both complete packets,371scientific blobs
+plus each packet and28original import pins per candidate, prefund
+checkpoint664and fence1302precede all eight accounts. Original fees,
+timing,RF,initialpeak,cash1x,holding feedback and independentBT remain;
+actual broker orders0.
+**J1320:289completions,zero qualifiers; investment goal remains unmet.**
+
+### Complete growth controller plus fixed trio: preserved preregistration J1301
 
 The [frozen quartet study](research/workbench/GROWTH_MACRO_DEFENSE_HEDGE_V1.md)
 adds one admitted complete unconditional growth controller to the existing
@@ -65,7 +87,7 @@ Both full packets and all actual scientific/import dependencies must be
 remotely verified before eight new original funded paths.
 **J1301:two pending,287completions,zero qualifiers; no new financial outcome yet.**
 
-### Completed forecast controllers: scoped expert eligibility, not qualification
+### Preserved forecast-controller eligibility J1297
 
 The [source-scoped technical review](research/workbench/evidence/funded_meta_expert_eligibility_20261106_v1.json)
 checks both always-invested forecast controllers and both opportunity/BIL
