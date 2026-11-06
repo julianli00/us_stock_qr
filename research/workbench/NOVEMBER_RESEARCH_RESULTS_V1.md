@@ -4,7 +4,48 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Terminal J1494 shield V1: independent full-frame verification failed
+## Registered J1495 separate shield V2: no new historical output yet
+
+The [actual V2 registration packet](evidence/execution_gap_shield_20261106_registration_v2.json)
+is a separate technical successor, not a new independent alpha discovery.
+The [frozen new Implementation](EXECUTION_GAP_SHIELD_V2.md) keeps every
+non-identity economic policy field unchanged, digest `68b30208`.
+The original six-expert monthly opinion, actual-main daily risk law, peak,
+paths, interval, binary64 selection, fallback, band, override, queue, costs,
+delays, full clocks and financial gates are not retuned.
+
+V2 constructs auxiliary gross exposure from the actual held-weight vector,
+as the canonical cash-funded engine does. It saves the generated main book
+before proof, then requires a retention Adapter to persist both complete
+cash-comparison frames and position matrices before the unchanged exact
+assertion. Main-close primitives and both prefix-comparison operands are
+retained as well. This does not claim that V1's missing replay frames
+disagreed nowhere else, or retroactively validate its failed account.
+
+The first synthetic attempt passed 29 checks and failed only the file-Adapter
+CSV round-trip's pandas frequency metadata assertion. Its XML, log and six
+prototypes remain unchanged. Before freezing V2, the serialization check was
+made explicit: require identical dates, reconstruct original exchange-frequency
+metadata, then compare every numeric value exactly. No date, RF, tolerance or
+financial equality criterion changes. The second complete suite passes 30
+checks, including mixed simultaneous holdings, both cost/delay scenarios,
+independent BT, causal capital prefixes, unchanged pure decision-law ASTs,
+forbidden terminal-V1 execution and retention before intentionally bad proofs.
+
+Freeze `7852a4ea` and actual checkpoint 794 saved at
+2026-11-06T23:18:20.782148+00:00 with covered_seq 196752 precede all new real
+V2 outputs. Its original native event 196755 was prospectively linked before
+the sole V2 registration. The schema3 program truthfully defers historical
+target proof. Actual remote publication and another actual saved prefunding
+checkpoint must precede four fresh main accounts.
+
+**J1495 / 140 registered / 125 completed / 14 workflow terminations /
+one pending / 500 existing verified funded paths / 303 combined financial
+completions / zero qualifiers. Investment objective unmet.**
+V1 remains terminal1494, and the previous complete financial and read-only
+outcomes remain separate preserved evidence below.
+
+## Preserved terminal J1494 shield V1: independent full-frame verification failed
 
 The [complete retained technical-failure record](evidence/execution_gap_shield_20261106_results_v1.json)
 does not report a financial rejection or qualified main account.

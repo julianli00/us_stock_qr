@@ -45,7 +45,22 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
-### Terminal J1494 shield accounting failure: no verified financial result
+### Registered J1495 separate shield V2: unchanged economic law
+
+The [separate V2 program](research/workbench/evidence/execution_gap_shield_20261106_registration_v2.json)
+keeps every economic parameter unchanged. Its [new account/proof Module](research/workbench/EXECUTION_GAP_SHIELD_V2.md)
+uses canonical held-weight gross representation and retains both complete
+comparison operands before the unchanged exact-equality assertion.
+Thirty mixed-asset synthetic checks pass; the initial CSV frequency-metadata
+test failure and both sets of prototypes remain preserved.
+
+V1 remains terminal and is not replayed or admitted as an expert. V2 has no
+historical scenarios, targets or accounts yet; actual remote publication and
+a new prefunding checkpoint must precede all four new paths.
+**J1495 / 140 registered / one pending / 303 financial completions /
+zero qualifiers.** This is a technical successor, not a new alpha discovery.
+
+### Preserved terminal J1494 shield accounting failure: no verified financial result
 
 The [retained actual failure](research/workbench/evidence/execution_gap_shield_20261106_results_v1.json)
 stops V1 at its first independent cash-engine full-frame comparison.
