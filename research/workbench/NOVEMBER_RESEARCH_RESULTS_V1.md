@@ -4,7 +4,69 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Fixed-quintet AdaHedge: preregistered targets, no capital outcome
+## Fixed-quintet AdaHedge: four paths complete, whole law rejected
+
+The [complete outcome](evidence/quintet_adaptive_hedge_20261106_results_v1.json)
+retains all four original funded paths of the frozen gap-adaptive law.
+Actual singleton preregistration`49490b6`,444published scientific inputs/
+28unchanged import pins and checkpoint738precede capital. The original
+save receipt at native189311was linked before launch;actual evaluate-
+start and process receipts record revision,saved_at and covered_seq.
+Publication fence1443precedes all four freshUSD10000capital starts;
+review1452rejects the whole law.
+
+| Frozen law | Path | Net CAGR | RF Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Fees USD |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| AdaHedge | 10y-base | 19.332063% | 0.876345 | 31.420164% | 3.617468x | 588 | 899.69 |
+| AdaHedge | 10y-stress | 18.154430% | 0.823665 | 31.195723% | 3.614147x | 579 | 1784.43 |
+| AdaHedge | 5y-base | 25.913513% | 1.064171 | 22.033726% | 4.169768x | 205 | 327.22 |
+| AdaHedge | 5y-stress | 23.194289% | 0.951980 | 22.147507% | 4.157622x | 196 | 658.70 |
+
+Original gates:netCAGR>12%andSPYeach pass4/4;RFSharpe>1
+passes1/4;DD<=15%passes0/4;QQQpasses2/4,thefive-year paths.
+The extra stress/base-cost-SPYgate passes2/2stress paths.
+Ten-year base/stress trail matched-cost QQQ by1.830361and
+2.969433percentage points. Five-yearbase passes everylisted
+component exceptDD,but22.033726%still fails15%. Its25.913513%
+CAGRdoes not satisfy the whole four-path mandate or prove forward profit.
+
+Versus cached elapsed-time Hedge,CAGRs rise1.656253--3.112222points,
+but DDworsens2.462884--2.720565points on every path.
+Ten-year Sharpes fall whilefive-year Sharpes rise.
+Annual turnover rises0.442882--0.623257x despite77--119fewer
+model tickets. Fees fallUSD55.32/59.28/21.11on10y-base/5y-base/
+5y-stress,but10y-stress fees riseUSD49.57. Fewer tickets are not
+the same as lower turnover or uniformly lower costs.
+
+Versus cached risk-unit sizing,everyCAGRandSharpeimproves and
+all fees/tickets fall,but everyDDworsens. Ten-year turnover falls
+whilefive-year turnover rises. Neither control,source,learner,shadow
+nor target is rerun;these comparisons are not isolated causal cost alpha.
+
+Minimum main cash isUSD181.49862727476972,maximum gross exposure
+0.9851589602978249and maximum independent BT equity difference
+USD8.731149137020111e-11. Actual broker orders remainzero.
+The financial run takes57.99203020799905seconds with Darwin
+peakRSS501858304bytes. Original RF,initial drawdown peak,costs,
+delays,holding band,cash funding and pending-order discipline remain.
+
+The final normalized source-loss regret4.297187satisfies its
+2Delta reference6.176585and is lower than the cached raw learner's
+6.175450. This is a result in the unchanged source-loss game,not a
+main wealth,Sharpe,turnover or drawdown guarantee. The funded failures
+remain failures despite better growth and statistical regret.
+No rate coefficient,loss normalization,gap floor,numeric clamp,window,
+source,pool or financial criterion is changed after these outcomes.
+
+**Current complete financial snapshot J1452/134registered/122completed/
+12workflow terminations/zero pending/488funded paths/300combined
+completions/zero qualifiers.** The whole law is rejected;investment
+objective unmet. Earlier results and all failed trials remain historical.
+
+## Historical AdaHedge preregistration snapshot J1442
+
+The following preserves the actual before-funding snapshot,not current
+totals or a claim that the now complete accounts remain unrun.
 
 The [actual singleton packet](evidence/quintet_adaptive_hedge_20261106_registration_v1.json)
 registers at1441before new adaptive learning or targets.
@@ -45,7 +107,7 @@ twice cumulative gap does not guarantee net CAGR,Sharpe,cost or DD.
 The unchanged loss normalization can still magnify tiny source-log
 differences;299exposed completions are not independent forward proof.
 
-**Current preregistration J1442/134registered/121completed/12workflow
+**Historical preregistration J1442/134registered/121completed/12workflow
 terminations/one pending/484funded paths/299combined completions/
 zero qualifiers.** Four fresh original paths remain unrun;actual remote
 publication,exact environment/import verification and a recorded

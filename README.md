@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 134 SSD identities, 121 completed, 12 retained technical-workflow terminations and one pending; 484 funded paths | Journal1442 has one registered AdaHedge law before funds; 299 combined completions and zero qualifiers remain unchanged |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 134 SSD identities, 122 completed, 12 retained technical-workflow terminations and zero pending; 488 funded paths | Journal1452 complete financial summary: 300 combined completions, zero qualifiers; investment goal remains unmet |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -45,7 +45,30 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
-### Fixed-quintet AdaHedge: registered before capital
+### Fixed-quintet AdaHedge: more growth, larger drawdowns, rejected
+
+The [complete four-path outcome](research/workbench/evidence/quintet_adaptive_hedge_20261106_results_v1.json)
+retains the original law after actual preregistration`49490b6`,
+444published inputs/28original pins and checkpoint738before capital.
+All four CAGRs and SPYgates pass,but only5y-base Sharpepasses1,
+onlythefive-yearpathsbeatQQQ,and every15%drawdown gate fails.
+Five-yearbase CAGR25.913513%andSharpe1.064171still come with
+22.033726%drawdown;five-yearstress CAGR23.194289%is not qualification.
+
+Against both cached controls,growth and drawdown rise on every path.
+Compared with raw Hedge,turnover also rises on all four paths despite
+fewer model tickets. Fees fall on three paths,but ten-yearstress
+fees riseUSD49.57. A better normalized source-loss regret does not
+guarantee main risk control. Neither old learner nor source/control
+is rerun,and no rate,window,floor or financial gate is retuned.
+**Current J1452/134registered/122completed/12workflow terminations/
+zero pending/488funded paths/300combined completions/zero qualifiers.**
+The whole AdaHedge law is rejected;the investment objective is unmet.
+
+### Historical AdaHedge preregistration snapshot J1442
+
+The following is retained before-capital evidence,not current counts
+or a claim that the now complete accounts remain unrun.
 
 The [singleton packet](research/workbench/evidence/quintet_adaptive_hedge_20261106_registration_v1.json)
 keeps the same five complete sources and119sealed monthly loss labels.
@@ -60,7 +83,7 @@ Actual registration1441precedes new learning/targets;proof1442retains
 The first35synthetic checks,9prototypes and checkpoint737precede
 construction. All119mature targets differ from each cached raw-Hedge
 and risk-unit control;neither old learner nor source/control is rerun.
-**Current J1442/134registered/121completed/12workflow terminations/
+**Historical J1442/134registered/121completed/12workflow terminations/
 one pending/484funded paths/299combined completions/zero qualifiers.**
 Four original funded paths remain unrun. The latest completed financial
 result is still rejected risk-unit sizing J1440below.

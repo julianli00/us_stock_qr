@@ -1,0 +1,491 @@
+{
+  "actual_authoritative_counts": {
+    "current_journal_event_count": 1452,
+    "current_journal_head_sha256": "b7f953c4190694b0b27751d7941599ddc0d243115cc190390224c13e9d930f2f",
+    "new_account_paths": 488,
+    "new_completed_strategy_evaluations": 122,
+    "new_historical_point_gate_passes": 0,
+    "new_pending_candidates": 0,
+    "new_registered_candidates": 134,
+    "new_reviews": 122,
+    "new_technical_failures": 12,
+    "original_completed_configurations": 178,
+    "original_registered_versions": 96,
+    "original_reviews": 94,
+    "total_legacy_plus_ssd_completed_configurations": 300
+  },
+  "all_four_original_paths": {
+    "10y-base": {
+      "all_point_gates_pass": false,
+      "artifacts": [
+        {
+          "path": "reports/ssd-continuous-research-v1/quintet-adaptive-hedge-20261106-v1/main-accounts/expert_pool_quintet_adaptive_hedge_v1/accounts/10y-base/account.csv",
+          "sha256": "21465ea45f41ded77e4ca1cc3b87b5a6fe57c65b5ba1940be56aecafd55431a5"
+        },
+        {
+          "path": "reports/ssd-continuous-research-v1/quintet-adaptive-hedge-20261106-v1/main-accounts/expert_pool_quintet_adaptive_hedge_v1/accounts/10y-base/weights.csv",
+          "sha256": "88d6f22d3d889e6e84ae10806617da4e78fedde806c9d684628717363805792a"
+        },
+        {
+          "path": "reports/ssd-continuous-research-v1/quintet-adaptive-hedge-20261106-v1/main-accounts/expert_pool_quintet_adaptive_hedge_v1/accounts/10y-base/issued.csv",
+          "sha256": "a604487d2d0107031e17fc51a809f8d4db816ac0f9104b40019995425513750c"
+        },
+        {
+          "path": "reports/ssd-continuous-research-v1/quintet-adaptive-hedge-20261106-v1/main-accounts/expert_pool_quintet_adaptive_hedge_v1/accounts/10y-base/independent-bt.csv",
+          "sha256": "18e8c26c9eb3a988e50029ccecb02ed7e62f6d64e070a519c4fb3536c780c367"
+        },
+        {
+          "path": "reports/ssd-continuous-research-v1/quintet-adaptive-hedge-20261106-v1/main-accounts/expert_pool_quintet_adaptive_hedge_v1/accounts/10y-base/decisions.json",
+          "sha256": "431819ed79ff1a10529f8594559d55b973a2d13413739902fbe9adceafaf815e"
+        }
+      ],
+      "broker_orders": 0,
+      "candidate_id": "expert_pool_quintet_adaptive_hedge_v1",
+      "completed_at": "2026-11-06T15:55:08.240829+00:00",
+      "excess_net_cagr_vs_qqq": -0.018303614201204965,
+      "excess_net_cagr_vs_spy": 0.03870065058036931,
+      "execution": {
+        "annualized_two_sided_turnover": 3.6174675788327204,
+        "executed_notional_usd": 623389.1428133529,
+        "fixed_commission_usd": 588.0,
+        "initial_deployment_cost_usd": 15.892212815720296,
+        "maximum_gross_exposure": 0.9851589602978249,
+        "minimum_cash_usd": 198.30589122410933,
+        "model_order_count": 588,
+        "model_orders_are_broker_orders": false,
+        "proportional_cost_usd": 311.6945714066764,
+        "rebalance_session_count": 59,
+        "total_cost_usd": 899.6945714066765,
+        "total_two_sided_turnover": 36.16972374509814
+      },
+      "frozen_specification_sha256": "1d1379f2f1f6b0726598371a10f95cddc9463725ef6d45cf07e968996d575d67",
+      "gates": {
+        "beats_qqq": false,
+        "beats_spy": true,
+        "cagr_above_12pct": true,
+        "drawdown_at_most_15pct": false,
+        "sharpe_above_1": false
+      },
+      "independent_bt_max_equity_difference_usd": 8.731149137020111e-11,
+      "independent_forward_validation": false,
+      "independent_monthly_feedback": {
+        "all_actual_gaps_targets_and_delays_checked": true,
+        "checked_actual_monthly_decisions_and_initial": 121,
+        "issued_requests": 59
+      },
+      "metrics": {
+        "annualized_volatility": 0.19626852800261396,
+        "cagr": 0.1933206299115109,
+        "end": "2026-10-05",
+        "expected_shortfall_5pct": -0.02967481221933334,
+        "max_drawdown": 0.31420163894514186,
+        "max_underwater_sessions": 520,
+        "positive_year_fraction": 0.8181818181818182,
+        "rolling_3y_cagr_above_20pct_fraction": 0.19635742743312465,
+        "rolling_3y_cagr_median": 0.11377530480169849,
+        "rolling_3y_cagr_min": -0.033651487342383976,
+        "sessions": 2512,
+        "sharpe": 0.876345486342492,
+        "start": "2016-10-06",
+        "total_return": 4.854184589259915,
+        "worst_day": -0.11340708253921583,
+        "year_returns": {
+          "2016": 0.019228295842995013,
+          "2017": 0.26895034805315166,
+          "2018": -0.06658303891166628,
+          "2019": 0.13504285167193286,
+          "2020": 0.1796665425448427,
+          "2021": 0.3107174906481036,
+          "2022": -0.19440788414727828,
+          "2023": 0.21222835193536205,
+          "2024": 0.16274157533239997,
+          "2025": 0.57146095771455,
+          "2026": 0.5484870089348668
+        }
+      },
+      "path_key": "10y-base"
+    },
+    "10y-stress": {
+      "all_point_gates_pass": false,
+      "artifacts": [
+        {
+          "path": "reports/ssd-continuous-research-v1/quintet-adaptive-hedge-20261106-v1/main-accounts/expert_pool_quintet_adaptive_hedge_v1/accounts/10y-stress/account.csv",
+          "sha256": "f780bbfcc0a2c24936e6fc0067298f780b2c95670a77abce3dcd7bf7676b5c96"
+        },
+        {
+          "path": "reports/ssd-continuous-research-v1/quintet-adaptive-hedge-20261106-v1/main-accounts/expert_pool_quintet_adaptive_hedge_v1/accounts/10y-stress/weights.csv",
+          "sha256": "c78ff621ffd0390d6cf088e69205a73c7abccbc1cf90808607094c7e0017b06d"
+        },
+        {
+          "path": "reports/ssd-continuous-research-v1/quintet-adaptive-hedge-20261106-v1/main-accounts/expert_pool_quintet_adaptive_hedge_v1/accounts/10y-stress/issued.csv",
+          "sha256": "e57b6ae8d6c7bc5ea28c690849d5af9aa1d831b9d2e0ddcdf65750b9f4b54690"
+        },
+        {
+          "path": "reports/ssd-continuous-research-v1/quintet-adaptive-hedge-20261106-v1/main-accounts/expert_pool_quintet_adaptive_hedge_v1/accounts/10y-stress/independent-bt.csv",
+          "sha256": "e0458a33201d76f8238fda61119a08322635aa84317687e2568920e96abd6761"
+        },
+        {
+          "path": "reports/ssd-continuous-research-v1/quintet-adaptive-hedge-20261106-v1/main-accounts/expert_pool_quintet_adaptive_hedge_v1/accounts/10y-stress/decisions.json",
+          "sha256": "671828a92a1e813e89d0ad8572219f8eeef6a1bc6ed925ccab9b62ba53215bbd"
+        }
+      ],
+      "broker_orders": 0,
+      "candidate_id": "expert_pool_quintet_adaptive_hedge_v1",
+      "completed_at": "2026-11-06T15:55:11.673990+00:00",
+      "excess_net_cagr_vs_qqq": -0.029694330664532087,
+      "excess_net_cagr_vs_spy": 0.027487938188746286,
+      "execution": {
+        "annualized_two_sided_turnover": 3.6141470349474796,
+        "executed_notional_usd": 602715.9309109792,
+        "fixed_commission_usd": 579.0,
+        "initial_deployment_cost_usd": 30.54014132300691,
+        "maximum_gross_exposure": 0.9851276131255994,
+        "minimum_cash_usd": 196.12711150974636,
+        "model_order_count": 579,
+        "model_orders_are_broker_orders": false,
+        "proportional_cost_usd": 1205.4318618219581,
+        "rebalance_session_count": 58,
+        "total_cost_usd": 1784.4318618219581,
+        "total_two_sided_turnover": 36.136522851822576
+      },
+      "frozen_specification_sha256": "1d1379f2f1f6b0726598371a10f95cddc9463725ef6d45cf07e968996d575d67",
+      "gates": {
+        "also_beats_base_cost_spy": true,
+        "beats_qqq": false,
+        "beats_spy": true,
+        "cagr_above_12pct": true,
+        "drawdown_at_most_15pct": false,
+        "sharpe_above_1": false
+      },
+      "independent_bt_max_equity_difference_usd": 8.731149137020111e-11,
+      "independent_forward_validation": false,
+      "independent_monthly_feedback": {
+        "all_actual_gaps_targets_and_delays_checked": true,
+        "checked_actual_monthly_decisions_and_initial": 121,
+        "issued_requests": 58
+      },
+      "metrics": {
+        "annualized_volatility": 0.19687448984374717,
+        "cagr": 0.18154430432791258,
+        "end": "2026-10-05",
+        "expected_shortfall_5pct": -0.029902521370165462,
+        "max_drawdown": 0.31195722850617547,
+        "max_underwater_sessions": 532,
+        "positive_year_fraction": 0.8181818181818182,
+        "rolling_3y_cagr_above_20pct_fraction": 0.1593625498007968,
+        "rolling_3y_cagr_median": 0.10706237437980462,
+        "rolling_3y_cagr_min": -0.034488898559420694,
+        "sessions": 2512,
+        "sharpe": 0.8236645410795729,
+        "start": "2016-10-06",
+        "total_return": 4.301526435795422,
+        "worst_day": -0.1131282430094851,
+        "year_returns": {
+          "2016": 0.019603006400864764,
+          "2017": 0.2650485981769801,
+          "2018": -0.05794435382505725,
+          "2019": 0.12056530734201809,
+          "2020": 0.17192409987591795,
+          "2021": 0.31009938040209506,
+          "2022": -0.19256835235128034,
+          "2023": 0.1862030329672708,
+          "2024": 0.16293723093302792,
+          "2025": 0.46889419109365815,
+          "2026": 0.5500066893948772
+        }
+      },
+      "path_key": "10y-stress"
+    },
+    "5y-base": {
+      "all_point_gates_pass": false,
+      "artifacts": [
+        {
+          "path": "reports/ssd-continuous-research-v1/quintet-adaptive-hedge-20261106-v1/main-accounts/expert_pool_quintet_adaptive_hedge_v1/accounts/5y-base/account.csv",
+          "sha256": "fe4aa8c431eb00846a8eea21dc2a86c146292d4db2977e33feac90e8ee8fd52e"
+        },
+        {
+          "path": "reports/ssd-continuous-research-v1/quintet-adaptive-hedge-20261106-v1/main-accounts/expert_pool_quintet_adaptive_hedge_v1/accounts/5y-base/weights.csv",
+          "sha256": "bfbd5ddd071cb5d088d55489904d5d50f8afa08900b4354f10a9e996d62c2cce"
+        },
+        {
+          "path": "reports/ssd-continuous-research-v1/quintet-adaptive-hedge-20261106-v1/main-accounts/expert_pool_quintet_adaptive_hedge_v1/accounts/5y-base/issued.csv",
+          "sha256": "cb86d114d04426e1a07de5da5b004878579ff4ad1ccf72ab5a89b020278727a5"
+        },
+        {
+          "path": "reports/ssd-continuous-research-v1/quintet-adaptive-hedge-20261106-v1/main-accounts/expert_pool_quintet_adaptive_hedge_v1/accounts/5y-base/independent-bt.csv",
+          "sha256": "8cec67853a19c95bae4298a9c3b198abb97ef786b6ceb7e807a06f5bf35a8583"
+        },
+        {
+          "path": "reports/ssd-continuous-research-v1/quintet-adaptive-hedge-20261106-v1/main-accounts/expert_pool_quintet_adaptive_hedge_v1/accounts/5y-base/decisions.json",
+          "sha256": "db26f14dcd525444f05be31b7a4da6cce5a92b684f88e2d897f5dc8ba454d7c9"
+        }
+      ],
+      "broker_orders": 0,
+      "candidate_id": "expert_pool_quintet_adaptive_hedge_v1",
+      "completed_at": "2026-11-06T15:55:14.847734+00:00",
+      "excess_net_cagr_vs_qqq": 0.08839535830818446,
+      "excess_net_cagr_vs_spy": 0.11872657529825226,
+      "execution": {
+        "annualized_two_sided_turnover": 4.169768498110991,
+        "executed_notional_usd": 244448.4772434387,
+        "fixed_commission_usd": 205.0,
+        "initial_deployment_cost_usd": 15.892212815720297,
+        "maximum_gross_exposure": 0.9851589602978246,
+        "minimum_cash_usd": 186.76200707176744,
+        "model_order_count": 205,
+        "model_orders_are_broker_orders": false,
+        "proportional_cost_usd": 122.22423862171938,
+        "rebalance_session_count": 22,
+        "total_cost_usd": 327.22423862171934,
+        "total_two_sided_turnover": 20.84598843956378
+      },
+      "frozen_specification_sha256": "1d1379f2f1f6b0726598371a10f95cddc9463725ef6d45cf07e968996d575d67",
+      "gates": {
+        "beats_qqq": true,
+        "beats_spy": true,
+        "cagr_above_12pct": true,
+        "drawdown_at_most_15pct": false,
+        "sharpe_above_1": true
+      },
+      "independent_bt_max_equity_difference_usd": 2.546585164964199e-11,
+      "independent_forward_validation": false,
+      "independent_monthly_feedback": {
+        "all_actual_gaps_targets_and_delays_checked": true,
+        "checked_actual_monthly_decisions_and_initial": 61,
+        "issued_requests": 22
+      },
+      "metrics": {
+        "annualized_volatility": 0.20032261708256072,
+        "cagr": 0.2591351314029593,
+        "end": "2026-10-05",
+        "expected_shortfall_5pct": -0.028636281111594226,
+        "max_drawdown": 0.22033726028309453,
+        "max_underwater_sessions": 530,
+        "positive_year_fraction": 0.8333333333333334,
+        "rolling_3y_cagr_above_20pct_fraction": 0.6472945891783567,
+        "rolling_3y_cagr_median": 0.2499443635434636,
+        "rolling_3y_cagr_min": 0.038136644169267465,
+        "sessions": 1254,
+        "sharpe": 1.0641710924538212,
+        "start": "2021-10-06",
+        "total_return": 2.1644133747529035,
+        "worst_day": -0.06752375806032707,
+        "year_returns": {
+          "2021": 0.15391282650499272,
+          "2022": -0.19641042361966776,
+          "2023": 0.20920993265280408,
+          "2024": 0.16274157533239952,
+          "2025": 0.5683957883112232,
+          "2026": 0.5475523214027171
+        }
+      },
+      "path_key": "5y-base"
+    },
+    "5y-stress": {
+      "all_point_gates_pass": false,
+      "artifacts": [
+        {
+          "path": "reports/ssd-continuous-research-v1/quintet-adaptive-hedge-20261106-v1/main-accounts/expert_pool_quintet_adaptive_hedge_v1/accounts/5y-stress/account.csv",
+          "sha256": "7970f7174502c5f16ec07695efa58eb6aa8e7929d9ef51928d7b09455fbe868f"
+        },
+        {
+          "path": "reports/ssd-continuous-research-v1/quintet-adaptive-hedge-20261106-v1/main-accounts/expert_pool_quintet_adaptive_hedge_v1/accounts/5y-stress/weights.csv",
+          "sha256": "f8aebc091bdb8663d973fe155c7d1a2e47806e699b90554c10fd7254e4bb2f1c"
+        },
+        {
+          "path": "reports/ssd-continuous-research-v1/quintet-adaptive-hedge-20261106-v1/main-accounts/expert_pool_quintet_adaptive_hedge_v1/accounts/5y-stress/issued.csv",
+          "sha256": "61b7814519cd71717c04deb0efd4ef42533cdf8691b7f65ea4d2ad3cfa3dd46e"
+        },
+        {
+          "path": "reports/ssd-continuous-research-v1/quintet-adaptive-hedge-20261106-v1/main-accounts/expert_pool_quintet_adaptive_hedge_v1/accounts/5y-stress/independent-bt.csv",
+          "sha256": "c8d0b9cae9d8dcb70621d14905df28398bf0cfe64f10b5ad0e548d2dcdf4b739"
+        },
+        {
+          "path": "reports/ssd-continuous-research-v1/quintet-adaptive-hedge-20261106-v1/main-accounts/expert_pool_quintet_adaptive_hedge_v1/accounts/5y-stress/decisions.json",
+          "sha256": "d613f6e9079f59e316c6b71364f48943b25aa397acb3fe4751c0704c133813ff"
+        }
+      ],
+      "broker_orders": 0,
+      "candidate_id": "expert_pool_quintet_adaptive_hedge_v1",
+      "completed_at": "2026-11-06T15:55:17.984070+00:00",
+      "excess_net_cagr_vs_qqq": 0.06723562501863922,
+      "excess_net_cagr_vs_spy": 0.09666008781824309,
+      "execution": {
+        "annualized_two_sided_turnover": 4.1576217404640685,
+        "executed_notional_usd": 231351.95039877726,
+        "fixed_commission_usd": 196.0,
+        "initial_deployment_cost_usd": 30.54014132300691,
+        "maximum_gross_exposure": 0.9851276131255997,
+        "minimum_cash_usd": 181.49862727476972,
+        "model_order_count": 196,
+        "model_orders_are_broker_orders": false,
+        "proportional_cost_usd": 462.70390079755447,
+        "rebalance_session_count": 21,
+        "total_cost_usd": 658.7039007975545,
+        "total_two_sided_turnover": 20.78526296533166
+      },
+      "frozen_specification_sha256": "1d1379f2f1f6b0726598371a10f95cddc9463725ef6d45cf07e968996d575d67",
+      "gates": {
+        "also_beats_base_cost_spy": true,
+        "beats_qqq": true,
+        "beats_spy": true,
+        "cagr_above_12pct": true,
+        "drawdown_at_most_15pct": false,
+        "sharpe_above_1": false
+      },
+      "independent_bt_max_equity_difference_usd": 5.093170329928398e-11,
+      "independent_forward_validation": false,
+      "independent_monthly_feedback": {
+        "all_actual_gaps_targets_and_delays_checked": true,
+        "checked_actual_monthly_decisions_and_initial": 61,
+        "issued_requests": 21
+      },
+      "metrics": {
+        "annualized_volatility": 0.20100099817306122,
+        "cagr": 0.23194289148253566,
+        "end": "2026-10-05",
+        "expected_shortfall_5pct": -0.028795634730809195,
+        "max_drawdown": 0.22147507228835994,
+        "max_underwater_sessions": 532,
+        "positive_year_fraction": 0.8333333333333334,
+        "rolling_3y_cagr_above_20pct_fraction": 0.5390781563126252,
+        "rolling_3y_cagr_median": 0.22159273873623106,
+        "rolling_3y_cagr_min": 0.03137785150373479,
+        "sessions": 1254,
+        "sharpe": 0.9519795093820408,
+        "start": "2021-10-06",
+        "total_return": 1.8372060275428193,
+        "worst_day": -0.06950256084686834,
+        "year_returns": {
+          "2021": 0.12785621378727252,
+          "2022": -0.19481130305167282,
+          "2023": 0.18308269869655325,
+          "2024": 0.1629372309330248,
+          "2025": 0.46574815638696565,
+          "2026": 0.5492044403300029
+        }
+      },
+      "path_key": "5y-stress"
+    }
+  },
+  "cached_monthly_loss_labels_changed": false,
+  "candidate_id": "expert_pool_quintet_adaptive_hedge_v1",
+  "completed_at": "2026-11-06T15:55:19.781468+00:00",
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "main_drawdown_guarantee": false,
+  "mixability_gap_floor": null,
+  "negative_Jensen_gap_clipped": false,
+  "new_minus_matched_cached_controls": {
+    "expert_pool_quintet_anytime_hedge_v1": {
+      "10y-base": {
+        "execution": {
+          "annualized_two_sided_turnover": 0.4589625971396223,
+          "model_order_count": -100,
+          "total_cost_usd": -55.316689408803086
+        },
+        "metrics": {
+          "cagr": 0.017952454338114654,
+          "max_drawdown": 0.02705713978780233,
+          "sharpe": -0.003203659922419555
+        }
+      },
+      "10y-stress": {
+        "execution": {
+          "annualized_two_sided_turnover": 0.44288196412157044,
+          "model_order_count": -119,
+          "total_cost_usd": 49.56897898746274
+        },
+        "metrics": {
+          "cagr": 0.01656252926535795,
+          "max_drawdown": 0.02462884169684676,
+          "sharpe": -0.003536616433430062
+        }
+      },
+      "5y-base": {
+        "execution": {
+          "annualized_two_sided_turnover": 0.6232571534758122,
+          "model_order_count": -77,
+          "total_cost_usd": -59.28391128795943
+        },
+        "metrics": {
+          "cagr": 0.031122219515794525,
+          "max_drawdown": 0.027205654053941486,
+          "sharpe": 0.022233061317258995
+        }
+      },
+      "5y-stress": {
+        "execution": {
+          "annualized_two_sided_turnover": 0.6169375041503873,
+          "model_order_count": -86,
+          "total_cost_usd": -21.10927172586753
+        },
+        "metrics": {
+          "cagr": 0.026625022443458546,
+          "max_drawdown": 0.026863435097515653,
+          "sharpe": 0.015216220262283642
+        }
+      }
+    },
+    "expert_pool_quintet_hedge_risk_units_v1": {
+      "10y-base": {
+        "execution": {
+          "annualized_two_sided_turnover": -0.14811160135139412,
+          "model_order_count": -332,
+          "total_cost_usd": -306.2123460067637
+        },
+        "metrics": {
+          "cagr": 0.048917572651457686,
+          "max_drawdown": 0.0691694857605335,
+          "sharpe": 0.0727218630395432
+        }
+      },
+      "10y-stress": {
+        "execution": {
+          "annualized_two_sided_turnover": -0.15206042529490071,
+          "model_order_count": -331,
+          "total_cost_usd": -241.51065135879207
+        },
+        "metrics": {
+          "cagr": 0.04596378193526629,
+          "max_drawdown": 0.07068252274507913,
+          "sharpe": 0.07097292805280075
+        }
+      },
+      "5y-base": {
+        "execution": {
+          "annualized_two_sided_turnover": 0.37044633656202297,
+          "model_order_count": -191,
+          "total_cost_usd": -172.08608471626985
+        },
+        "metrics": {
+          "cagr": 0.07722475615736024,
+          "max_drawdown": 0.021718235068647784,
+          "sharpe": 0.16610495857939767
+        }
+      },
+      "5y-stress": {
+        "execution": {
+          "annualized_two_sided_turnover": 0.3570833933636184,
+          "model_order_count": -200,
+          "total_cost_usd": -134.9752522536926
+        },
+        "metrics": {
+          "cagr": 0.06818471679409055,
+          "max_drawdown": 0.022318640526989286,
+          "sharpe": 0.15242536603482937
+        }
+      }
+    }
+  },
+  "new_source_RF_views": 0,
+  "new_source_requests": 0,
+  "normalized_source_regret_is_main_wealth": false,
+  "old_learner_or_source_or_control_reexecuted": false,
+  "order_authority": false,
+  "rate_or_window_sweep": false,
+  "raw_prices_targets_or_daily_book_rows_exported": false,
+  "schema_version": 1,
+  "status": "rejected",
+  "study_id": "ssd_quintet_adaptive_hedge_20261106_v1"
+}
