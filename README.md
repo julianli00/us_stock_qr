@@ -45,21 +45,21 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
-### Direct commitment quartet: preregistered, not a financial result
+### Direct commitment quartet: both complete rules rejected
 
-The new commitment/confirmation/defense/hedge study keeps the original
-three-role trio and uses the admitted complete equity-first month-end
-commitment policy directly instead of nesting a growth meta-controller.
-The exact four-source roster was not found in prior declared configurations;
-membership is justified by policy role, not complete-window return ranking.
-Both equal quarters and the original126/84/42six-pair law are unchanged.
+The [complete eight-path result](research/workbench/evidence/commitment_macro_defense_hedge_20261106_results_v1.json)
+keeps the original trio and uses admitted direct equity-first month-end
+commitment instead of a nested growth controller. Membership changes,not
+the equal-quarter or126/84/42six-pair laws. Both actual packets were published
+at`5f34d7a`and checked before the original funded accounts.
 
-Both new identities are registered and their full121-decision targets proved
-atJ1324before any new capital. **Two pending candidates,zero new accounts or
-performance results;289completed/zero qualified is not changed by registration.**
-Both complete actual packets must be remotely published before the first
-of eight original funded paths. Historical source failures, scopes and
-the current-opinion calibration remain preserved; no risk model is promoted.
+All eight paths have netCAGR>12%,but none has RFSharpe>1 or beatsQQQ.
+Only equal5y-base meets the15%DDlimit;this partial gate is not qualification.
+Compared with matched cached nested controls,annual two-sided turnover rises
+on all eight paths despite fewer model tickets;all four stress fees rise.
+No cached source account or failed risk forecast is replayed or promoted.
+**J1343/124registered/113completed/11technical/zero pending/
+452funded paths/291combined completions/zero qualifiers;goal remains unmet.**
 
 ### Current opinions do not automatically improve risk calibration
 

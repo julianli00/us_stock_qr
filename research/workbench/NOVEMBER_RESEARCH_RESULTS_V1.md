@@ -4,7 +4,65 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Direct commitment quartet: actual preregistration, funding pending
+## Direct commitment quartet: all eight paths complete, both rules rejected
+
+The [complete financial outcome](evidence/commitment_macro_defense_hedge_20261106_results_v1.json)
+retains every original funded path of both preregistered laws. These are new
+freshUSD10000main accounts,not averaged source CAGR/DD or summed expert wealth.
+The matched nested-growth controls are cached and are not replayed.
+
+| Direct commitment law | Path | Net CAGR | RF Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Fees USD |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Equal | 10y-base | 14.372016% | 0.924749 | 22.925921% | 2.988199x | 787 | 1047.35 |
+| Equal | 10y-stress | 13.640713% | 0.875448 | 22.499678% | 2.996039x | 796 | 1800.62 |
+| Equal | 5y-base | 16.824073% | 0.979647 | 14.877917% | 3.305645x | 445 | 545.19 |
+| Equal | 5y-stress | 15.611044% | 0.898867 | 15.794184% | 3.312118x | 445 | 832.53 |
+| Rolling pair | 10y-base | 14.259324% | 0.890091 | 16.468516% | 6.023422x | 786 | 1333.65 |
+| Rolling pair | 10y-stress | 13.481439% | 0.834304 | 16.145188% | 6.029662x | 789 | 2916.85 |
+| Rolling pair | 5y-base | 16.814352% | 0.864157 | 15.399052% | 6.442834x | 387 | 602.64 |
+| Rolling pair | 5y-stress | 15.293385% | 0.772292 | 15.492515% | 6.439459x | 381 | 1217.62 |
+
+Original gates: netCAGR>12%passes8/8;strict RFSharpe>1passes0/8;
+QQQpasses0/8;SPYpasses only the four five-year paths;DD<=15%passes
+only equal5y-base. The extra stress/base-cost-SPYgate passes the two
+five-year stress paths. Equal5y-base still fails Sharpe andQQQ;
+its partial DDpass is not a qualifying configuration. Both complete
+same-rule reviews1334/1343reject their policy.
+
+Relative to the matched cached nested-growth quartet,annual two-sided
+turnover is higher in all eight paths by0.2684--0.4644x,while tickets
+are lower by22--83. All four stress fees are higher byUSD13.84--63.28.
+Three base-cost fees fall,but rolling5y-base fees rise. Fewer tickets
+therefore does not mean lower proportional turnover or universally lower costs.
+The direct role improves five-year rolling CAGR by2.2981/1.7034percentage
+points for base/stress,but all ten-year DDs worsen and the rolling
+five-year stress DDalso worsens. These are whole-policy differences,
+not isolated source alpha,independent-risk evidence or forward proof.
+
+Registrations1321/1322precede targets;proofs1323/1324and both complete
+actual packets are published at`5f34d7af1239cb0b562a679b7686fbc4e2b7cc2f`.
+Each actual registered identity passes the original396public-file and
+28import-pin checks before capital. Actual checkpoint683precedes the
+publication fence1325at2026-11-06T06:52:03.878069Z and all eight starts.
+Every initial/monthly actual-holding gap,target and original delay is
+independently checked:121decisions per ten-year path and61per five-year path.
+
+Actual once-only financial evaluation exits0 in106.87553095899057seconds,
+Darwin peakRSS451919872bytes. Minimum cash isUSD185.19497846206306,
+maximum gross exposure0.9828605972161103,maximum independentBT NAV
+differenceUSD4.001776687800884e-11,and actual broker orders0.
+Model tickets above are offline accounting events,not broker authority.
+
+**CurrentJ1343/124registered/113completed/11technical/zero pending/
+452funded paths/291combined completions/zero qualifiers.** Every original
+window,RF,initial peak,cost,delay,SPY/QQQand extra gate remains. Failed
+policies,earlier syntax/test failures,source/PIT/refusal scopes and original
+178/94/96legacy history are preserved. No financial target is met and no
+live deployment or technical exclusion of the valid sources follows.
+
+## Historical preregistration snapshot: direct commitment quartet
+
+The following is the publishedJ1324snapshot,not current pending work.
 
 Study`ssd_commitment_macro_defense_hedge_20261106_v1`changes only the fourth
 role of the previous compact quartet: the complete admitted direct
