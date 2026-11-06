@@ -4,6 +4,53 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Retained original pair: improved cached ERC control, still rejected
+
+The [complete four-path result](evidence/retained_pair_equal_allocation_20261105_results_v1.json)
+keeps every frozen advisor choice, source, criterion and execution parameter.
+Actual complete-packet publication is`0750e720298900b8b485d4214b8accff509b028c`;
+its schema2packet,340scientific public blobs and28original import pins are
+verified before any capital. Prefund checkpoint634is saved and exactly
+read back. Fence1214precedes every new funded path; review1223rejects the
+complete unchanged policy.
+
+| Original path | Net CAGR | RF Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Model fees USD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 10y-base | 12.801569% | 0.792320 | 22.806452% | 6.497649x | 883 | 1444.51 |
+| 10y-stress | 12.138523% | 0.745788 | 21.342863% | 6.499468x | 883 | 3056.21 |
+| 5y-base | 13.136407% | 0.667583 | 23.097217% | 7.114612x | 460 | 669.48 |
+| 5y-stress | 12.387166% | 0.619528 | 21.634113% | 7.121924x | 460 | 1286.94 |
+
+Only the four strict CAGRgates pass. Every Sharpe,DD,SPY,QQQand additional
+stress/base-SPYgate fails. Preferred15/20%returns or improved fragments do
+not replace complete qualification. The original source advisor retains
+its own learning/cost-proxy state; no new allocation feeds back into it.
+Actual main costs, not that retained nominal proxy, determine these results.
+
+| Original path | CAGR change versus cached ERC, percentage points | Sharpe change | DD change, percentage points | Annual turnover change | Model ticket change | Fee change USD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 10y-base | +0.426576 | +0.005082 | -0.126047 | -0.483695x | -16 | -50.07 |
+| 10y-stress | +0.708454 | +0.025949 | -0.610619 | -0.481222x | -16 | -114.60 |
+| 5y-base | +0.876798 | +0.037399 | -0.197477 | -0.414076x | -9 | -16.95 |
+| 5y-stress | +1.275324 | +0.064464 | -0.835121 | -0.415417x | -9 | -31.15 |
+
+All four improve CAGR/Sharpe/DD and reduce actual turnover,tickets and fees
+against the matched original-ERC control. They still fail every non-CAGR
+qualification gate. Against the predeclared cached full-pool equal control,
+all four have lower CAGR/Sharpe,higher DD/turnover/fees and fewer tickets.
+Lower ticket counts therefore do not establish lower whole-path fees.
+Both full control contrasts remain in the result. They are whole-policy
+model comparisons, not isolated causal fee effects, a guarantee of
+prospective improvement or permission to retune this closed policy.
+Neither old control, selector, source, shadow or benchmark is replayed.
+
+The once-only actual financial process exits0 in38.17599879100453seconds,
+Darwin peakRSS416092160bytes. All original2512/1254returns, freshUSD10000,
+initialpeak, canonicalRF,5/20bps+$1,1/2later-open delays, holdings feedback
+and independentBT remain. All paths are cash-funded<=1x; actual broker orders0.
+**J1223:112registered,103completed,nine technical,zero pending,
+412funded paths,281combined completions,zero qualifiers; goal unmet.**
+
 ## Retained original pair: preserved preregistration J1213
 
 The [new symmetric allocation](RETAINED_PAIR_EQUAL_ALLOCATION_V1.md) uses
