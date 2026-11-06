@@ -4,6 +4,75 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Current-opinion covariance calibration: no drop-in improvement
+
+The [risk-only result](evidence/current_opinion_risk_calibration_20261106_v1.json)
+uses the unchanged four complete quartet experts and both saved outer
+weight tapes. This is a measurement question after the closed paired-loss
+accounting, not a new portfolio rule or financial trial.
+
+At each original initial/month-end origin, use exactly126mature sessions,
+sample covariance ddof=1 and the existing admitted assessment RF.
+The comparator uses source NET-RF returns. The alternative projects the
+same mature underlying ETF returns through current98%-invested opinions,
+with2%idle cash and full-capital RF subtraction. It deliberately omits
+fees and future policy changes; it is not a NET-return forecast.
+
+The label is variance of the next21source NET-RF observations with the
+known outer expert fractions held fixed statistically. Source policies
+may keep changing internally. Neither this label nor either covariance
+is a new funded or tradable account, actual main-account risk, a sum of
+shadow capital, CAGR, Sharpe or portfolio qualification.
+
+| Saved outer view | Risk description | Labelled origins | Mean absolute daily variance error | Median absolute error | Mean signed error | Underforecasts |
+| --- | --- | ---: | ---: | ---: | ---: | ---: |
+| Equal | Trailing expert NET-RF | 113 | 4.8712670135626295e-05 | 2.1179842203015568e-05 | -3.8042167332035547e-06 | 50 |
+| Equal | Current-opinion gross-mark-RF | 113 | 5.878606791900821e-05 | 2.865557446030674e-05 | 4.4777101059892295e-06 | 50 |
+| Recorded rolling | Trailing expert NET-RF | 113 | 4.415419416710079e-05 | 2.93697733395876e-05 | -6.3187933823399485e-06 | 48 |
+| Recorded rolling | Current-opinion gross-mark-RF | 113 | 4.6977156060257085e-05 | 2.7030092879876618e-05 | -5.475406760934287e-06 | 53 |
+
+These are daily return-variance units, not returns or percentage CAGR.
+Current-opinion mean absolute error is20.6792149873%higher for equal
+fractions and6.3934173104%higher for recorded rolling fractions. The
+rolling median is lower, but mean error and underforecast count are
+higher. Report all four frozen comparisons, not only the favorable median.
+There is no uniform dominance or automatic model/admission decision.
+
+All121source origins are retained:7unscored warmups,114forecast origins
+and113complete subsequent horizons per model/view. The2026-09-30forecast
+has only3available future sessions and is retained without a label.
+No zero or shorter horizon replaces missing observations. Five exact
+forecast-prefix checks pass at2016-10-05,2017-03-31,2017-09-29,
+2021-09-30and2026-09-30. Maximum independent scalar/matrix variance
+difference is1.0842021724855044e-19, below the frozen1e-12bound.
+
+The market reader has2805underlying close rows including2015warmup.
+The statistical NET reference remains all2512original formal sessions
+2016-10-06through2026-10-05. All four source date/RF series and admission
+clocks match the preserved source scope; no new native RF bridge is made.
+The calibration is not a cropped or replacement5y/base/stress financial gate.
+
+The first23synthetic checks and Ruffpass before frozen`d05889a2`and
+actual pre-calibration checkpoint678. Actual calibration exits0 in
+24.222770166001283seconds,Darwin peakRSS461438976bytes. Private469streamed
+records retain121forecast inputs,121forecast resolutions,113future-label
+inputs and114label resolutions. Raw returns/targets and source inputs
+remain private. No old strategy,target,fit,shadow,main account,BT or
+benchmark is replayed.
+
+Historical outcomes motivated this question after exposure. Overlapping
+21-session labels and two related outer views are not independent trials
+or independent forward proof. Forecast errors jointly reflect different
+inventories, future policy changes and gross/NET cost scope; differences
+do not establish the causal contribution of any one mechanism. A later
+allocator would still need a separately frozen law and every original
+full-window funded path and net-cost gate.
+
+**J1320/122registered/111completed/11technical/zero pending/
+444funded paths/289combined completions/zero qualifiers is unchanged.
+No new allocator, model selection or financial qualification;the investment
+goal remains unmet.**
+
 ## Paired saved quartet/trio losses: sixteen books, no new financial trial
 
 The [complete V2 bookkeeping result](evidence/quartet_trio_loss_accounting_20261106_v2.json)

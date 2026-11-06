@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_current_opinion_risk_calibration_20261106_v1",
+  "actual_native_event_seq": 181145,
+  "prior_journal_sequence": 1320,
+  "history_sessions": 126,
+  "future_label_sessions": 21,
+  "sample_covariance_ddof": 1,
+  "numeric_variance_agreement_tolerance": 1e-12,
+  "models": ["trailing_expert_NET_RF", "current_opinion_gross_mark_RF"],
+  "recorded_outer_views": ["equal", "recorded_rolling"],
+  "source_inputs": {
+    "path": "reports/ssd-continuous-research-v1/current-opinion-risk-calibration-20261106-v1/source-inputs-v1.json",
+    "sha256": "a228cb81d09de8e74521fee6e5250c087f0e0294aca8630274e5fe2677ec0b59"
+  },
+  "unmatured_history": "retain_decision_unscored_no_fallback",
+  "incomplete_future_label": "retain_forecast_unlabelled_no_filling",
+  "current_opinion_projection_includes_fees_or_future_policy_changes": false,
+  "labels_are_main_accounts_or_tradable_portfolio_returns": false,
+  "new_allocation_or_model_selection": false,
+  "new_financial_trials": 0,
+  "new_source_requests_or_RF_views": 0,
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "order_authority": false
+}

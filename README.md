@@ -45,6 +45,25 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
+### Current opinions do not automatically improve risk calibration
+
+The [risk-only calibration](research/workbench/evidence/current_opinion_risk_calibration_20261106_v1.json)
+compares trailing expert NET covariance with current-opinion gross-mark
+scenarios using the same126mature sessions and both recorded quartet
+weight tapes. All121origins remain:7unscored,114forecasts,113complete
+21-session labels. The terminal forecast has only3future sessions and
+stays unlabelled, without filling or shortening.
+
+Current-opinion scenarios have higher mean absolute daily variance error
+in both views:20.6792%higher for equal weights and6.3934%for recorded
+rolling weights. The rolling median improves but underforecasts rise
+from48to53of113. This does not support a drop-in replacement of this NET
+covariance comparator. Gross marks omit fees and future policy changes;
+labels are fixed-fraction statistical source mixtures, not main accounts
+or tradable portfolio returns. No model or allocator is promoted.
+**No new financial trial;J1320/289completed/zero qualified and the unmet
+investment objective are unchanged.**
+
 ### Paired loss bookkeeping: equity marks dominate, not a fee-only explanation
 
 The [sixteen-book diagnosis](research/workbench/evidence/quartet_trio_loss_accounting_20261106_v2.json)

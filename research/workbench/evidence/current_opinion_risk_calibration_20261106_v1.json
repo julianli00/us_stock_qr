@@ -1,0 +1,78 @@
+{
+  "actual_authoritative_counts": {
+    "current_journal_event_count": 1320,
+    "current_journal_head_sha256": "ef00d3856e2cd2fa0d18f9d8614a0d7e2ece8f8e64c2872cb94e0e09214ba41d",
+    "new_account_paths": 444,
+    "new_completed_strategy_evaluations": 111,
+    "new_historical_point_gate_passes": 0,
+    "new_pending_candidates": 0,
+    "new_registered_candidates": 122,
+    "new_reviews": 111,
+    "new_technical_failures": 11,
+    "original_completed_configurations": 178,
+    "original_registered_versions": 96,
+    "original_reviews": 94,
+    "total_legacy_plus_ssd_completed_configurations": 289
+  },
+  "completed_at": "2026-11-06T06:15:47.099667+00:00",
+  "current_opinion_projection_includes_fees_or_future_policy_changes": false,
+  "forecast_origins": 114,
+  "forecast_prefixes": [
+    "2016-10-05",
+    "2017-03-31",
+    "2017-09-29",
+    "2021-09-30",
+    "2026-09-30"
+  ],
+  "incomplete_future_origins": 1,
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "labels_are_main_accounts_or_tradable_portfolio_returns": false,
+  "new_financial_trials": 0,
+  "new_model_selected_or_pool_or_financial_acceptance_changed": false,
+  "order_authority": false,
+  "raw_prices_targets_returns_or_daily_rows_exported": false,
+  "schema_version": 1,
+  "source_origins": 121,
+  "source_strategy_account_BT_or_CAGR_Sharpe_replayed": false,
+  "study_id": "ssd_current_opinion_risk_calibration_20261106_v1",
+  "summary": [
+    {
+      "labelled_origins": 113,
+      "mean_absolute_daily_variance_error": 4.8712670135626295e-05,
+      "mean_signed_daily_variance_error": -3.8042167332035547e-06,
+      "median_absolute_daily_variance_error": 2.1179842203015568e-05,
+      "model": "trailing_expert_NET_RF",
+      "underforecast_count": 50,
+      "view": "equal"
+    },
+    {
+      "labelled_origins": 113,
+      "mean_absolute_daily_variance_error": 5.878606791900821e-05,
+      "mean_signed_daily_variance_error": 4.4777101059892295e-06,
+      "median_absolute_daily_variance_error": 2.865557446030674e-05,
+      "model": "current_opinion_gross_mark_RF",
+      "underforecast_count": 50,
+      "view": "equal"
+    },
+    {
+      "labelled_origins": 113,
+      "mean_absolute_daily_variance_error": 4.415419416710079e-05,
+      "mean_signed_daily_variance_error": -6.3187933823399485e-06,
+      "median_absolute_daily_variance_error": 2.93697733395876e-05,
+      "model": "trailing_expert_NET_RF",
+      "underforecast_count": 48,
+      "view": "recorded_rolling"
+    },
+    {
+      "labelled_origins": 113,
+      "mean_absolute_daily_variance_error": 4.6977156060257085e-05,
+      "mean_signed_daily_variance_error": -5.475406760934287e-06,
+      "median_absolute_daily_variance_error": 2.7030092879876618e-05,
+      "model": "current_opinion_gross_mark_RF",
+      "underforecast_count": 53,
+      "view": "recorded_rolling"
+    }
+  ],
+  "unscored_origins": 7
+}
