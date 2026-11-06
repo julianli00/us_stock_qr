@@ -4,7 +4,51 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Read-only J1478 opinion clock: one source changes between month ends
+## Confidence-rated Prod preregistration snapshot J1480
+
+The [actual singleton packet](evidence/confidence_rated_prod_20261106_registration_v1.json)
+registers one new conditional excess-loss policy at 1479, before new confidence
+values, learning states and targets. Proof 1480 retains all 121 decisions,
+119 mature complete source months, 242 input/resolution records, 714 unchanged
+cached loss labels and 14,946 native NET values. All six genuine factor families
+remain in both original horizons. All 121 targets differ materially from the
+cached flat-six construction.
+
+The [frozen method](CONFIDENCE_RATED_PROD_V1.md) uses Adapt-ML-Prod with the
+primary paper's confidence reduction. Five experts remain fully participating;
+the protection specialist uses one minus its original, then-known own-shadow
+protection scale. Participation is not calibrated probability, source admission
+or a minimum capital allocation. The source remains admitted when asleep.
+The confidence known at the prior source-month origin governs that month's loss;
+the end-month value only affects the next allocation. Initial partial-month
+learning is excluded, and five-year capital does not reset source learning.
+
+The 160-digit primary implementation and independent 100-digit modified-loss
+reduction agree within 1.1102230246251565e-16 for weights and targets.
+The maximum decimal-state difference is 9.944476076786632e-98; the reduction
+identity error is 3e-100. All five prefixes are exact. These are source-game
+and target proofs, not financial returns or drawdown insurance.
+Raw masses are not renormalized after adaptive updates; actual capital
+fractions are normalized separately. No floor, restart or rate/window scan
+is fitted after these observations.
+
+First 42 synthetic checks, six exact prototypes and freeze `9275cf0b` precede
+new real learning. Actual checkpoint 776 saved at
+2026-11-06T20:41:03.043244+00:00 with covered_seq 194274 is prospectively
+linked to original native receipt 194277 before registration.
+The actual registered frozen body is `e49fd60b`, not the bare intent hash.
+PID 11819 completed once in 50.396843917 seconds, peak RSS 475,627,520 bytes.
+No source learner, shadow, account, benchmark or old control is replayed.
+
+**J1480 / 138 registered / 124 completed / 13 workflow terminations /
+one pending / 496 funded paths / 302 combined completions / zero qualifiers.**
+Four new main paths are unrun. Remote preregistration, exact published inputs,
+environment and an actual saved prefunding checkpoint still must precede
+capital. The latest complete financial result remains rejected equal-role V2.
+Source admission, monthly execution, costs, delays, RF and every joint gate
+remain unchanged; exposed-history learning is not independent forward proof.
+
+## Preserved read-only J1478 opinion clock: one source changes between month ends
 
 The [complete same-six clock review](evidence/expert_opinion_clock_review_20261106_v1.json)
 consumes only existing admitted archive Interfaces at the original information
