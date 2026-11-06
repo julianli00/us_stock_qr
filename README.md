@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 120 SSD identities, 107 completed/rejected, 11 retained technical failures and two pending; 428 funded paths | Journal1278 current summary: 285 combined completions, zero qualifiers; investment goal remains unmet |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 120 SSD identities, 109 completed/rejected, 11 retained technical failures and zero pending; 436 funded paths | Journal1297 current summary: 287 combined completions, zero qualifiers; investment goal remains unmet |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -45,7 +45,31 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
-### Forecast opportunity gate: explicit participation or BIL, preregistration J1278
+### Forecast opportunity gate: drawdown passes, return/Sharpe/benchmarks fail
+
+The [complete eight-path result](research/workbench/evidence/forecast_opportunity_gate_20261106_results_v1.json)
+keeps both strict-positive participation laws and their explicit BIL standby.
+Every maximum DD is11.506920--11.865216%, below15%, but netCAGR is only
+4.848202--7.173572%andRFSharpe0.157567--0.480277. Every CAGR,Sharpe,SPY,
+QQQand additional stress/base-SPYgate fails. Reviews1288/1297therefore
+reject both complete unchanged policies.
+
+Compared with each cached always-invested advisor, DDfalls9.01--14.58percentage
+points but CAGR and Sharpe fall on every path. Model tickets/fees decrease.
+Unconditional turnover decreases; contextual turnover increases on all four
+paths despite frequent standby. Parking more often is not automatically
+lower turnover. Both full matched contrasts and all costs remain published;
+the old accounts are not replayed.
+
+Actual preregistration`14b9f09`,both complete packets,360scientific blobs
+and28original import pins per candidate, prefund checkpoint657and fence1279
+precede all eight accounts. Original fees/delays/RF/peak,cashfunding1x,
+holding feedback and independentBT remain; broker orders0.
+Do not combine the old always-invested rule's return/Sharpe passes with this
+different rule's DDpasses. **J1297:287completions,zero qualifiers;
+investment goal remains unmet.**
+
+### Forecast opportunity gate: preserved preregistration J1278
 
 The [new participation law](research/workbench/FORECAST_OPPORTUNITY_GATE_V1.md)
 keeps both retained advisors, original eight experts and their frozen ranking.

@@ -4,6 +4,63 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Forecast opportunity gate: all DD gates pass, every other performance gate fails
+
+The [complete result](evidence/forecast_opportunity_gate_20261106_results_v1.json)
+retains both full strict-positive participation policies and every original path.
+Actual full-cohort preregistration is`14b9f094364fd631fd81b9cdfa2eedd0866b2b55`;
+both complete schema2packets,360scientific public blobs plus each packet
+and28original import pins per candidate are verified before any funds.
+Prefund checkpoint657is saved and exactly read back. Fence1279at
+**2026-11-06T03:03:02.726839Z** precedes the first account start at
+**03:03:05.017117Z** and every later path.
+
+| Complete rule | Original path | Net CAGR | RF Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Model fees USD |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Unconditional gate | 10y-base | 5.684621% | 0.408495 | 11.750158% | 1.531827x | 92 | 190.17 |
+| Unconditional gate | 10y-stress | 4.848202% | 0.312525 | 11.815855% | 1.528937x | 92 | 473.80 |
+| Unconditional gate | 5y-base | 6.638548% | 0.325207 | 11.750158% | 1.570419x | 48 | 93.07 |
+| Unconditional gate | 5y-stress | 5.180264% | 0.176545 | 11.824286% | 1.568100x | 48 | 222.11 |
+| Contextual gate | 10y-base | 6.872760% | 0.480277 | 11.506920% | 3.944270x | 181 | 461.75 |
+| Contextual gate | 10y-stress | 5.739840% | 0.370764 | 11.830575% | 3.932496x | 176 | 1274.71 |
+| Contextual gate | 5y-base | 7.173572% | 0.348320 | 11.517485% | 3.851311x | 89 | 203.05 |
+| Contextual gate | 5y-stress | 5.057237% | 0.157567 | 11.865216% | 3.832716x | 84 | 524.85 |
+
+All eight maximumDDgates pass15%, but every strictCAGR>12%,RFSharpe>1,
+SPYandQQQgate fails, as do all four additional stress/base-SPYcomparisons.
+Reviews1288/1297reject both complete unchanged rules. There is no qualified
+configuration. Do not splice the old advisors' strong returns and Sharpe
+with these different gated policies' DDpasses or relax any hard gate.
+
+Against each matched cached always-invested advisor, every path has lower
+CAGR/Sharpe and lower DD. DDfalls9.012958--14.578436percentage points;
+the restrictive participation removes substantial return as well as loss.
+Every model ticket count and USDfee total falls. Unconditional annual
+turnover falls1.336739--1.605286x, while contextual turnover increases
+0.611454--0.744149x. Frequent BIL standby can create extra underlying
+transitions; it is not automatically low turnover. These are whole-policy
+contrasts, not an isolated causal cost or return attribution.
+All eight matched contrasts are published and no old account is replayed.
+
+The declared121origin intentions retain22/34participation and99/87BIL
+standby origins, including seven explicitly unscored origins each. Those
+are source intention counts, not inferred daily main holdings. Original
+delays, actual holdings feedback and the2.5pprequest band determine execution.
+Standby never becomes a ninth expert; the old advisor statistical state and
+nominal cost proxy remain unchanged and are not the new main cost forecast.
+
+The once-only actual financial process exits0 in133.51781737498823seconds,
+Darwin peakRSS429330432bytes. Minimum recorded main cash isUSD199.0421731535204,
+maximum gross0.983203761064139 and independentBT maximum equity gap
+USD2.1827872842550278e-11. Actual broker orders0. All original2512/1254returns,
+freshUSD10000,initialpeak,canonicalRF,5/20bps+$1,1/2later-open delays,
+actual holdings feedback,cash funding<=1x and independentBT remain.
+No source fit/ranking/target builder,shadow,old control,benchmark,RFview or
+missed forward observation is rerun,changed or backfilled.
+**J1297:120registered,109completed,11technical,zero pending,
+436funded paths,287combined completions,zero qualifiers;
+investment goal remains unmet.**
+
 ## Forecast opportunity gate: preserved preregistration J1278
 
 The [fixed feasibility-first law](FORECAST_OPPORTUNITY_GATE_V1.md) separates

@@ -1,17 +1,17 @@
 {
   "schema_version": 1,
   "current_ssd_journal_summary": {
-    "snapshot_scope": "Current J1278:both feasibility-first participation identities register before new target composition. Strictly positive nominal source opportunity copies retained advice,otherwise explicit BIL standby including unscored origins. Two pending;no funded outcomes;both complete remote packets required.",
-    "journal_summary_derived_at_utc": "2026-11-06T02:59:01.542050+00:00",
-    "journal_sequence": 1278,
-    "journal_head_sha256": "34bf2af4c75caad8e08a8f5fed0931fcb0f01eebea276a7e947b9113f75b41be",
+    "snapshot_scope": "Current J1297:both feasibility-first opportunity gates complete all eight original paths;all DD gates pass but every CAGR/Sharpe/SPY/QQQ gate fails, so both reject. Retained advisor states and all original criteria unchanged.",
+    "journal_summary_derived_at_utc": "2026-11-06T03:06:43.487259+00:00",
+    "journal_sequence": 1297,
+    "journal_head_sha256": "689bed6d71de7e4851b13380482bd5ae1f42c420ef74eb33876630dbe0555d73",
     "legacy_completed": 178,
     "registered": 120,
-    "completed": 107,
+    "completed": 109,
     "technical_failures": 11,
-    "pending": 2,
-    "funded_paths": 428,
-    "combined_completed": 285,
+    "pending": 0,
+    "funded_paths": 436,
+    "combined_completed": 287,
     "qualified": 0,
     "latest_study_id": "ssd_forecast_opportunity_gate_20261106_v1",
     "latest_registrations": [
@@ -32,7 +32,7 @@
     ],
     "complete_cohort_packet_schema": 2,
     "fixed_financial_cohort_size": 2,
-    "latest_study_status": "both_registered_prepared_pending_complete_remote_publication",
+    "latest_study_status": "both_complete_policies_rejected_only_drawdown_gates_pass",
     "historical_target_derivation_proof": {
       "expert_pool_contextual_forecast_opportunity_gate_v1": {
         "path": "reports/ssd-continuous-research-v1/forecast-opportunity-gate-20261106-v1/targets/expert_pool_contextual_forecast_opportunity_gate_v1/proof.json",
@@ -45,21 +45,24 @@
     },
     "historical_target_proof_complete": true,
     "historical_new_policy_indicators_or_targets_computed": true,
-    "candidate_accounts_or_metrics_computed": false,
-    "actual_new_formal_funded_paths": 0,
+    "candidate_accounts_or_metrics_computed": true,
+    "actual_new_formal_funded_paths": 8,
     "planned_original_funded_paths": 8,
     "actual_remote_publication_required_before_funding": true,
-    "actual_remote_publication_verified_before_accounts": false,
-    "actual_preregistration_commit": null,
-    "actual_publication_fence_sequence": null,
-    "actual_first_path_started_at": null,
-    "actual_review_sequences": {},
-    "all_candidate_status": {
-      "expert_pool_unconditional_forecast_opportunity_gate_v1": "pending",
-      "expert_pool_contextual_forecast_opportunity_gate_v1": "pending"
+    "actual_remote_publication_verified_before_accounts": true,
+    "actual_preregistration_commit": "14b9f094364fd631fd81b9cdfa2eedd0866b2b55",
+    "actual_publication_fence_sequence": 1279,
+    "actual_first_path_started_at": "2026-11-06T03:03:05.017117+00:00",
+    "actual_review_sequences": {
+      "expert_pool_unconditional_forecast_opportunity_gate_v1": 1288,
+      "expert_pool_contextual_forecast_opportunity_gate_v1": 1297
     },
-    "latest_results": null,
-    "latest_results_sha256": null,
+    "all_candidate_status": {
+      "expert_pool_unconditional_forecast_opportunity_gate_v1": "rejected",
+      "expert_pool_contextual_forecast_opportunity_gate_v1": "rejected"
+    },
+    "latest_results": "research/workbench/evidence/forecast_opportunity_gate_20261106_results_v1.json",
+    "latest_results_sha256": "8bdfde89396f9e211af0b318d4bb3f111aa4fd80ae8ceea8dd547e9766debbf1",
     "financial_program_freeze_sha256": "4598c3b94cf776afb8d10b88b4606eddea0e6640d4a946ff3f5b4f5048860abd",
     "financial_program_dependency_count": 170,
     "financial_program_source_reference_count": 1362,
@@ -801,7 +804,294 @@
     },
     "independent_forward_validation": false,
     "investment_objective_verified": false,
-    "order_authority": false
+    "order_authority": false,
+    "actual_publication_fence_at": "2026-11-06T03:03:02.726839+00:00",
+    "actual_review_times": {
+      "expert_pool_unconditional_forecast_opportunity_gate_v1": "2026-11-06T03:03:15.082659+00:00",
+      "expert_pool_contextual_forecast_opportunity_gate_v1": "2026-11-06T03:04:20.076973+00:00"
+    },
+    "actual_eight_path_outcome_and_cost_rows": [
+      {
+        "candidate_id": "expert_pool_unconditional_forecast_opportunity_gate_v1",
+        "path": "10y-base",
+        "net_CAGR_percent": 5.684621305128612,
+        "RF_Sharpe": 0.4084948603685919,
+        "max_DD_percent": 11.750158494024676,
+        "annual_two_sided_turnover": 1.5318271674055175,
+        "model_tickets": 92,
+        "model_fees_USD": 190.17201734997855,
+        "gates": {
+          "beats_qqq": false,
+          "beats_spy": false,
+          "cagr_above_12pct": false,
+          "drawdown_at_most_15pct": true,
+          "sharpe_above_1": false
+        },
+        "all_point_gates_pass": false
+      },
+      {
+        "candidate_id": "expert_pool_unconditional_forecast_opportunity_gate_v1",
+        "path": "10y-stress",
+        "net_CAGR_percent": 4.848201701676813,
+        "RF_Sharpe": 0.3125250661046323,
+        "max_DD_percent": 11.81585532845838,
+        "annual_two_sided_turnover": 1.5289374467443595,
+        "model_tickets": 92,
+        "model_fees_USD": 473.8004599957512,
+        "gates": {
+          "also_beats_base_cost_spy": false,
+          "beats_qqq": false,
+          "beats_spy": false,
+          "cagr_above_12pct": false,
+          "drawdown_at_most_15pct": true,
+          "sharpe_above_1": false
+        },
+        "all_point_gates_pass": false
+      },
+      {
+        "candidate_id": "expert_pool_unconditional_forecast_opportunity_gate_v1",
+        "path": "5y-base",
+        "net_CAGR_percent": 6.638547793225258,
+        "RF_Sharpe": 0.32520714413427493,
+        "max_DD_percent": 11.750158494024731,
+        "annual_two_sided_turnover": 1.5704187217472454,
+        "model_tickets": 48,
+        "model_fees_USD": 93.06877746669754,
+        "gates": {
+          "beats_qqq": false,
+          "beats_spy": false,
+          "cagr_above_12pct": false,
+          "drawdown_at_most_15pct": true,
+          "sharpe_above_1": false
+        },
+        "all_point_gates_pass": false
+      },
+      {
+        "candidate_id": "expert_pool_unconditional_forecast_opportunity_gate_v1",
+        "path": "5y-stress",
+        "net_CAGR_percent": 5.180263508742899,
+        "RF_Sharpe": 0.17654458963410408,
+        "max_DD_percent": 11.82428579902125,
+        "annual_two_sided_turnover": 1.5680998129010468,
+        "model_tickets": 48,
+        "model_fees_USD": 222.11249525200645,
+        "gates": {
+          "also_beats_base_cost_spy": false,
+          "beats_qqq": false,
+          "beats_spy": false,
+          "cagr_above_12pct": false,
+          "drawdown_at_most_15pct": true,
+          "sharpe_above_1": false
+        },
+        "all_point_gates_pass": false
+      },
+      {
+        "candidate_id": "expert_pool_contextual_forecast_opportunity_gate_v1",
+        "path": "10y-base",
+        "net_CAGR_percent": 6.8727597219863545,
+        "RF_Sharpe": 0.4802771220626945,
+        "max_DD_percent": 11.506919583492758,
+        "annual_two_sided_turnover": 3.9442698932964397,
+        "model_tickets": 181,
+        "model_fees_USD": 461.7543243284607,
+        "gates": {
+          "beats_qqq": false,
+          "beats_spy": false,
+          "cagr_above_12pct": false,
+          "drawdown_at_most_15pct": true,
+          "sharpe_above_1": false
+        },
+        "all_point_gates_pass": false
+      },
+      {
+        "candidate_id": "expert_pool_contextual_forecast_opportunity_gate_v1",
+        "path": "10y-stress",
+        "net_CAGR_percent": 5.739840270091001,
+        "RF_Sharpe": 0.37076402964251637,
+        "max_DD_percent": 11.83057509935903,
+        "annual_two_sided_turnover": 3.9324955075449934,
+        "model_tickets": 176,
+        "model_fees_USD": 1274.7137731130488,
+        "gates": {
+          "also_beats_base_cost_spy": false,
+          "beats_qqq": false,
+          "beats_spy": false,
+          "cagr_above_12pct": false,
+          "drawdown_at_most_15pct": true,
+          "sharpe_above_1": false
+        },
+        "all_point_gates_pass": false
+      },
+      {
+        "candidate_id": "expert_pool_contextual_forecast_opportunity_gate_v1",
+        "path": "5y-base",
+        "net_CAGR_percent": 7.173572293814767,
+        "RF_Sharpe": 0.3483202330409514,
+        "max_DD_percent": 11.517484532991018,
+        "annual_two_sided_turnover": 3.851310909900143,
+        "model_tickets": 89,
+        "model_fees_USD": 203.05132888036144,
+        "gates": {
+          "beats_qqq": false,
+          "beats_spy": false,
+          "cagr_above_12pct": false,
+          "drawdown_at_most_15pct": true,
+          "sharpe_above_1": false
+        },
+        "all_point_gates_pass": false
+      },
+      {
+        "candidate_id": "expert_pool_contextual_forecast_opportunity_gate_v1",
+        "path": "5y-stress",
+        "net_CAGR_percent": 5.057236922699659,
+        "RF_Sharpe": 0.15756726721668657,
+        "max_DD_percent": 11.865215893711289,
+        "annual_two_sided_turnover": 3.832716189959938,
+        "model_tickets": 84,
+        "model_fees_USD": 524.8513364450023,
+        "gates": {
+          "also_beats_base_cost_spy": false,
+          "beats_qqq": false,
+          "beats_spy": false,
+          "cagr_above_12pct": false,
+          "drawdown_at_most_15pct": true,
+          "sharpe_above_1": false
+        },
+        "all_point_gates_pass": false
+      }
+    ],
+    "actual_gate_pass_counts": {
+      "also_beats_base_cost_spy": 0,
+      "beats_qqq": 0,
+      "beats_spy": 0,
+      "cagr_above_12pct": 0,
+      "drawdown_at_most_15pct": 8,
+      "sharpe_above_1": 0
+    },
+    "minimum_main_cash_USD": 199.0421731535204,
+    "maximum_gross_exposure": 0.983203761064139,
+    "maximum_independent_BT_gap_USD": 2.1827872842550278e-11,
+    "actual_broker_orders": 0,
+    "actual_financial_process_wall_seconds": 133.51781737498823,
+    "actual_financial_process_Darwin_peak_RSS_bytes": 429330432,
+    "matched_cached_advisor_contrasts": {
+      "expert_pool_contextual_forecast_opportunity_gate_v1": {
+        "all_original_paths": {
+          "10y-base": {
+            "execution": {
+              "annualized_two_sided_turnover": 0.7441486589135762,
+              "model_order_count": -261,
+              "total_cost_usd": -357.517965304291
+            },
+            "metrics": {
+              "cagr": -0.16114492530662283,
+              "max_drawdown": -0.14302171515893602,
+              "sharpe": -0.5680865283989751
+            }
+          },
+          "10y-stress": {
+            "execution": {
+              "annualized_two_sided_turnover": 0.7416534227185987,
+              "model_order_count": -266,
+              "total_cost_usd": -620.52503665977
+            },
+            "metrics": {
+              "cagr": -0.16315121964208323,
+              "max_drawdown": -0.14134058105334713,
+              "sharpe": -0.6351858286537444
+            }
+          },
+          "5y-base": {
+            "execution": {
+              "annualized_two_sided_turnover": 0.611453738938097,
+              "model_order_count": -166,
+              "total_cost_usd": -165.78254010134197
+            },
+            "metrics": {
+              "cagr": -0.19756282645454792,
+              "max_drawdown": -0.1457843568347129,
+              "sharpe": -0.7540983998243116
+            }
+          },
+          "5y-stress": {
+            "execution": {
+              "annualized_two_sided_turnover": 0.6167423889656276,
+              "model_order_count": -166,
+              "total_cost_usd": -159.85412095026652
+            },
+            "metrics": {
+              "cagr": -0.20039898491732222,
+              "max_drawdown": -0.1439253547621635,
+              "sharpe": -0.8692543066099123
+            }
+          }
+        },
+        "matched_cached_advisor_id": "expert_pool_eight_contextual_forecast_pair_v2",
+        "old_control_replayed": false
+      },
+      "expert_pool_unconditional_forecast_opportunity_gate_v1": {
+        "all_original_paths": {
+          "10y-base": {
+            "execution": {
+              "annualized_two_sided_turnover": -1.3464819647061692,
+              "model_order_count": -327,
+              "total_cost_usd": -568.5313060575614
+            },
+            "metrics": {
+              "cagr": -0.16801647665757358,
+              "max_drawdown": -0.13168831352475396,
+              "sharpe": -0.6270021963892245
+            }
+          },
+          "10y-stress": {
+            "execution": {
+              "annualized_two_sided_turnover": -1.3367393354121464,
+              "model_order_count": -322,
+              "total_cost_usd": -1281.782568626622
+            },
+            "metrics": {
+              "cagr": -0.17224117167293063,
+              "max_drawdown": -0.12578184371901313,
+              "sharpe": -0.7022979534678329
+            }
+          },
+          "5y-base": {
+            "execution": {
+              "annualized_two_sided_turnover": -1.6052862651164357,
+              "model_order_count": -191,
+              "total_cost_usd": -255.58475457411294
+            },
+            "metrics": {
+              "cagr": -0.19466289330721454,
+              "max_drawdown": -0.09012957770913343,
+              "sharpe": -0.7704866212989219
+            }
+          },
+          "5y-stress": {
+            "execution": {
+              "annualized_two_sided_turnover": -1.589615053251608,
+              "model_order_count": -186,
+              "total_cost_usd": -436.02326054127076
+            },
+            "metrics": {
+              "cagr": -0.19539421781940813,
+              "max_drawdown": -0.09026313047291357,
+              "sharpe": -0.8596990192802962
+            }
+          }
+        },
+        "matched_cached_advisor_id": "expert_pool_eight_unconditional_forecast_pair_v2",
+        "old_control_replayed": false
+      }
+    },
+    "preserved_opportunity_gate_preregistration_snapshot_J1278": {
+      "journal_sequence": 1278,
+      "pending": 2,
+      "combined_completed": 285,
+      "complete_old_projection_commit": "14b9f094364fd631fd81b9cdfa2eedd0866b2b55",
+      "complete_old_projection_path": "docs/research_progress.json",
+      "snapshot_is_current": false
+    }
   },
   "updated_on": "2026-10-31",
   "phase": "legacy_term_expert_v2_eligibility_complete_blocked",
