@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_quartet_trio_loss_accounting_20261106_v1",
+  "actual_native_event_seq": 179917,
+  "prior_journal_sequence": 1320,
+  "prior_journal_head_sha256": "ef00d3856e2cd2fa0d18f9d8614a0d7e2ece8f8e64c2872cb94e0e09214ba41d",
+  "quartet_ids": [
+    "expert_pool_growth_macro_defense_hedge_equal_v1",
+    "expert_pool_growth_macro_defense_hedge_rolling_pair_v1"
+  ],
+  "matched_trio_ids": [
+    "expert_pool_macro_defense_hedge_equal_v1",
+    "expert_pool_macro_defense_hedge_rolling_pair_v1"
+  ],
+  "path_keys": ["10y-base", "10y-stress", "5y-base", "5y-stress"],
+  "paired_cases": 8,
+  "existing_full_books": 16,
+  "asset_groups": {
+    "equity_ETFs": ["SPY", "MTUM", "VLUE", "QUAL", "USMV", "QQQ", "XLK", "SOXX", "IJR", "PKW"],
+    "duration_ETFs": ["IEF", "TLT"],
+    "gold_ETF": ["GLD"],
+    "bill_ETF": ["BIL"]
+  },
+  "monetary_reconciliation_tolerance_USD": 1e-6,
+  "cached_drawdown_agreement_tolerance": 1e-10,
+  "peak_convention": "latest_preceding_running_max_including_initial_USD10000",
+  "trough_convention": "earliest_maximum_observed_drawdown",
+  "both_own_episode_common_clocks_required": true,
+  "source_data_reader": "unchanged_canonical_review_market",
+  "new_strategy_target_account_BT_or_financial_trials": 0,
+  "source_CAGR_Sharpe_or_qualification_recomputed": false,
+  "fee_free_or_expert_causal_counterfactual_claimed": false,
+  "financial_criteria_or_global_pool_changed": false,
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "order_authority": false,
+  "source_inputs": {
+    "path": "reports/ssd-continuous-research-v1/quartet-trio-loss-accounting-20261106-v1/source-inputs-v1.json",
+    "sha256": "1175cd392a03f46b46440e035064be6b26d7d9fea675d6eac875713e998bcf02"
+  }
+}

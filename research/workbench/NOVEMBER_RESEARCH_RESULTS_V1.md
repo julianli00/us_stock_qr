@@ -4,6 +4,131 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Paired saved quartet/trio losses: sixteen books, no new financial trial
+
+The [complete V2 bookkeeping result](evidence/quartet_trio_loss_accounting_20261106_v2.json)
+retains all eight quartet paths and their eight predeclared cached trio
+controls. It adds no strategy,target,shadow,main account,BT or financial
+trial. Every original2512/1254date and all fourteen assets remain.
+Per-asset previous-unit overnight marks plus current-unit intraday marks
+minus saved fees reconcile to net NAV changes. Model units are not broker
+shares or reconstructed expert capital.
+
+### All eight quartet own worst intervals
+
+Amounts below are mechanical stored-book marks inUSD, not source-expert
+causal alpha. Positive and zero offsets remain in the full result.
+
+| Quartet law | Path | Retained peak to first worst trough | DD | Equity marks | Duration marks | Gold marks | BIL marks | Fees | Net NAV change |
+| --- | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| Equal | 10y-base | 2020-02-19 to 2020-03-20 | 20.943984% | -2966.89 | 85.13 | -135.80 | 6.08 | 13.59 | -3025.07 |
+| Equal | 10y-stress | 2020-02-19 to 2020-03-20 | 20.357403% | -2819.53 | 87.11 | -130.36 | 5.86 | 21.54 | -2878.46 |
+| Equal | 5y-base | 2021-12-27 to 2022-10-14 | 16.313931% | -1487.01 | -33.61 | -205.31 | 34.39 | 92.31 | -1783.85 |
+| Equal | 5y-stress | 2021-12-27 to 2022-10-14 | 16.823790% | -1464.61 | -36.28 | -210.03 | 33.86 | 133.78 | -1810.84 |
+| Rolling | 10y-base | 2018-09-20 to 2018-12-24 | 16.180314% | -2188.13 | 0.00 | 105.60 | 5.87 | 25.00 | -2101.66 |
+| Rolling | 10y-stress | 2018-01-26 to 2018-12-24 | 16.064701% | -1509.78 | 0.00 | -335.71 | 7.46 | 196.53 | -2034.55 |
+| Rolling | 5y-base | 2022-01-04 to 2023-03-10 | 15.587952% | -1607.40 | 0.00 | -114.21 | 101.05 | 118.15 | -1738.70 |
+| Rolling | 5y-stress | 2021-12-27 to 2023-03-10 | 14.726934% | -1368.82 | 0.00 | -105.85 | 101.69 | 234.78 | -1607.77 |
+
+| Quartet law | Path | Overnight marks USD | Intraday marks USD | Recorded fees / actual net loss |
+| --- | --- | ---: | ---: | ---: |
+| Equal | 10y-base | -2002.65 | -1008.82 | 0.4494% |
+| Equal | 10y-stress | -1908.00 | -948.92 | 0.7482% |
+| Equal | 5y-base | -1270.21 | -421.33 | 5.1749% |
+| Equal | 5y-stress | -1208.84 | -468.22 | 7.3880% |
+| Rolling | 10y-base | 361.71 | -2438.37 | 1.1894% |
+| Rolling | 10y-stress | 794.09 | -2632.11 | 9.6595% |
+| Rolling | 5y-base | -1343.65 | -276.90 | 6.7952% |
+| Rolling | 5y-stress | -1011.37 | -361.61 | 14.6032% |
+
+The equity group is negative in all eight own intervals. SOXX is the largest
+negative individual mark in seven; GLD is largest in rolling10y-stress.
+Gold marks are negative in seven and positive only in rolling10y-base.
+Duration marks offset part of the2020equal losses, are negative in both
+2022equal episodes,and are zero in all rolling own episodes. BIL marks
+are positive, not invented idle-cash interest. Fees are material in some
+long stress intervals but account for only0.4494--14.6032%of the actual net
+losses. This is not a fee-free-policy counterfactual.
+
+Overnight marks are negative in six own intervals, but positive in both
+rolling2018episodes while intraday marks are strongly negative. A blanket
+overnight-loss explanation is therefore not supported by these accounts.
+Different expert labels and zero mature canonical-channel overlap do not
+imply effective instrument hedging or economic risk independence.
+
+### Both episode origins, both already-held accounts at identical clocks
+
+These are interval changes from each account's own retained start NAV,
+not freshUSD10000, replacement maximumDDs or equal-capital counterfactuals.
+Both episode origins are shown to avoid selecting only the new policy's
+worst dates. The full result preserves start/end NAVs, all fourteen asset
+marks and recorded fees for all32book-interval views.
+
+| Law | Path | Episode origin | Exact close clocks | Quartet held NAV change | Cached trio held NAV change |
+| --- | --- | --- | --- | ---: | ---: |
+| Equal | 10y-base | Quartet | 2020-02-19 to 2020-03-20 | -20.943984% | -19.403121% |
+| Equal | 10y-base | Trio | 2020-02-19 to 2020-03-23 | -20.936123% | -19.404371% |
+| Equal | 10y-stress | Quartet | 2020-02-19 to 2020-03-20 | -20.357403% | -18.863537% |
+| Equal | 10y-stress | Trio | 2020-02-19 to 2020-03-20 | -20.357403% | -18.863537% |
+| Equal | 5y-base | Quartet | 2021-12-27 to 2022-10-14 | -16.313931% | -14.758357% |
+| Equal | 5y-base | Trio | 2021-12-27 to 2022-10-14 | -16.313931% | -14.758357% |
+| Equal | 5y-stress | Quartet | 2021-12-27 to 2022-10-14 | -16.823790% | -15.483161% |
+| Equal | 5y-stress | Trio | 2021-12-27 to 2022-10-14 | -16.823790% | -15.483161% |
+| Rolling | 10y-base | Quartet | 2018-09-20 to 2018-12-24 | -16.180314% | -12.159964% |
+| Rolling | 10y-base | Trio | 2022-01-04 to 2022-09-30 | -14.362911% | -15.068381% |
+| Rolling | 10y-stress | Quartet | 2018-01-26 to 2018-12-24 | -16.064701% | -14.216490% |
+| Rolling | 10y-stress | Trio | 2022-01-04 to 2023-03-09 | -13.755391% | -14.712494% |
+| Rolling | 5y-base | Quartet | 2022-01-04 to 2023-03-10 | -15.587952% | -14.719885% |
+| Rolling | 5y-base | Trio | 2022-01-04 to 2022-09-30 | -14.585956% | -15.225173% |
+| Rolling | 5y-stress | Quartet | 2021-12-27 to 2023-03-10 | -14.726934% | -14.374302% |
+| Rolling | 5y-stress | Trio | 2022-01-04 to 2023-03-09 | -14.095957% | -14.938440% |
+
+The rolling own worst intervals differ from their controls. In particular
+rolling5y-stress has a lower own maximumDD, yet loses more over its own
+worst interval than the trio held on those exact dates; over the trio's
+own episode it loses less. Neither one maximum nor one selected common
+window establishes uniform risk dominance. These are retrospective
+bookkeeping descriptions, not predictive filters or unique loss causes.
+
+### Preserved V1 failure and separately frozen V2 numeric Interface
+
+The [V1 failure](evidence/quartet_trio_loss_accounting_20261106_failure_v1.json)
+remains terminal after two completed pairs/four books. The first-row
+equal5y-base prefix differs only in the auxiliary NumPy
+`reconstructed_net_change` sum by2ULP,USD1.4210854715202004e-14.
+All primitive economic fields and independent `math.fsum` marks are
+bit-exact. V1's original all-column prefix criterion is not declared passed.
+
+V2 is the same economic question with an explicitly versioned canonical
+prefix Interface: every primitive economic column plus row-local scalar
+reconstruction remains exact. The original NumPy column is retained raw
+and only its redundant representation is noncanonical. All primary/cash/
+NAV/scalar USD1e-6and cached-DD1e-10checks remain. No rounding,allclose,
+larger tolerance,source correction,financial gate change or old V1 retry
+is used. A synthetic Fortran3x14decimal example independently reproduces
+the shape-dependent reduction; private daily values are not copied into tests.
+
+The first25V2synthetic checks and Ruffpass after a retained pre-test literal
+layout failure. Freeze`0a835a49`and checkpoint672precede actual V2 use.
+Two completed V1paired reports/four daily files are reused unchanged,
+including their stronger original prefix evidence; only the remaining
+six pairs need full diagnostic arithmetic. V1's code,criteria,completed/
+partial outputs,22checks and both lint prototypes remain.
+
+Actual V2 exits0 in16.577615082991542seconds,Darwin peakRSS478294016bytes.
+All80canonical primitive/scalar prefix checks pass exactly. One check
+records the auxiliary2ULPdifference without hiding it. Full-book maximum
+errors are NAVUSD1.659827830735594e-11,cashflowUSD1.1937117960769683e-11,
+closing cash marksUSD1.6711965145077556e-11,scalar/vectorUSD4.547473508864641e-13,
+and cachedDD1.6653345369377348e-15. All are within their original limits.
+
+Every source selector,forecaster,target builder,account,BT,benchmark,CAGR,
+Sharpe,financial qualification,RF/PIT/refusal gate and global roster is
+unchanged. No new financial trial or independent forward validation follows.
+**J1320/122registered/111completed/11technical/zero pending/
+444funded paths/289combined completions/zero qualifiers is unchanged;
+investment goal remains unmet.**
+
 ## Nested growth allocation mass: no mature duplicated canonical channel
 
 The [complete read-only audit](evidence/nested_growth_allocation_audit_20261106_v1.json)

@@ -45,6 +45,26 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
+### Paired loss bookkeeping: equity marks dominate, not a fee-only explanation
+
+The [sixteen-book diagnosis](research/workbench/evidence/quartet_trio_loss_accounting_20261106_v2.json)
+keeps both completed quartet laws and matched cached trio controls on
+their own and both common episode clocks. All eight quartet own worst
+intervals have negative equity-ETF marks; SOXX is the largest negative
+individual mark in seven. Gold is negative in seven. Saved fees are
+0.4494--14.6032%of own interval net losses, not the whole loss explanation.
+The rolling2018episodes lose intraday despite positive overnight marks;
+other episodes cannot be reduced to the same timing story.
+
+The [terminal V1 failure](research/workbench/evidence/quartet_trio_loss_accounting_20261106_failure_v1.json)
+remains failed after two complete pairs: only a redundant NumPy sum column
+differs by2ULP. Separately frozen V2 keeps the original vector column,
+all primitive marks and USD1e-6/cached-DD1e-10limits. All80canonical
+primitive-plus-scalar prefixes are bit-exact. It reuses V1's two completed
+pairs and diagnoses only six remaining pairs; no account or BT is rerun.
+No fee-free strategy, causal expert alpha or new financial trial follows.
+**J1320/289completed/zero qualified is unchanged; investment goal remains unmet.**
+
 ### Nested allocation audit: no mature same-source channel overlap
 
 The [read-only nested-mass audit](research/workbench/evidence/nested_growth_allocation_audit_20261106_v1.json)
