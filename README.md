@@ -45,6 +45,24 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
+### Completed forecast controllers: scoped expert eligibility, not qualification
+
+The [source-scoped technical review](research/workbench/evidence/funded_meta_expert_eligibility_20261106_v1.json)
+checks both always-invested forecast controllers and both opportunity/BIL
+controllers through the existing `StrategyExpert.observe` Interface.
+All four are technically eligible, **not selected**. They are one overlapping
+mechanism family, not four independent risks; their financial rejections
+and the global seven/eight pools remain unchanged.
+
+All16cached original funded paths retain exact native/canonicalRF, full dates,
+cash funding<=1x and independent accounting. Every controller retains121native
+opinions,2513checked observations including initialization,and five exact
+prefixes. The declared2016-10-05initial policy opinion is independently bound
+to the retained source record. A2021-10-05capital seed instead carries the
+known2021-09-30opinion and is not a new policy refresh. No nominal target/RF
+view, source rerun or new funded trial is created.
+**J1297/287completed/zero qualified is unchanged; investment goal remains unmet.**
+
 ### Forecast opportunity gate: drawdown passes, return/Sharpe/benchmarks fail
 
 The [complete eight-path result](research/workbench/evidence/forecast_opportunity_gate_20261106_results_v1.json)

@@ -4,6 +4,71 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Four funded forecast controllers: technically eligible, not selected
+
+The [complete scoped review](evidence/funded_meta_expert_eligibility_20261106_v1.json)
+checks every completed controller rather than selecting a return winner.
+`funded_meta_experts_v1.load_expert` validates the actual schema2 source,
+canonical target-proof contract, complete original funding fence and every
+cached path before returning the existing `StrategyExpert.observe` Interface.
+The source-specific initial-plus-monthly Adapter is a real reusable Module,
+not another economic strategy or an empty platform.
+
+| Complete source | Technical result | Original paths | Native opinions | Observations plus initial | Source issued requests: 10y-base / stress / 5y-base / stress |
+| --- | --- | ---: | ---: | ---: | --- |
+| Unconditional always-invested | Eligible, not selected | 4 | 121 | 2513 | 65 / 64 / 39 / 38 |
+| Contextual always-invested | Eligible, not selected | 4 | 121 | 2513 | 68 / 68 / 41 / 40 |
+| Unconditional opportunity/BIL | Eligible, not selected | 4 | 121 | 2513 | 16 / 16 / 9 / 9 |
+| Contextual opportunity/BIL | Eligible, not selected | 4 | 121 | 2513 | 31 / 30 / 16 / 15 |
+
+These are16existing source paths and10052observation checks, not new
+financial evaluations. Every nativeRFseries equals the original canonical
+default-reader RFexactly, without another assessment view. All original
+2512/1254dates, freshUSD10000,initialpeak,5/20bps+$1,one/two-later-open
+execution,cash funding<=1x,holding feedback and cached independentBT remain.
+Minimum source cash isUSD176.946558584518,maxgross0.9851929552190198
+and maximum saved independentBTgapUSD8.731149137020111e-11.
+These are cached-source technical checks, not a new portfolio result.
+
+Every controller has one declared original initial policy opinion plus120
+genuine month-end opinions, all bit-exact against its retained resolved tape.
+The2016-10-05initial opinion is established by its original frozen policy
+and source record, not inferred from a capital date. A five-year
+2021-10-05capital initialization instead uses the known2021-09-30opinion.
+Observing a carried opinion, refreshing a native opinion, initializing
+capital and issuing an actual holding-feedback request are distinct events.
+Source requests in the table are not model asset tickets or independent
+opinions. No old actual holdings become nominal recommendations.
+
+Each expert checks every formal observation and five exact truncated prefixes:
+2016-10-06,2016-10-31,2017-04-06,2021-10-05and2026-10-05.
+Initial empty history and126-session score maturity remain explicit.
+The successful V2 always-invested identities retain their V1-derived
+targets and original earlier derivation/later attestation chronology;
+the terminal V1 identities are not admitted.
+
+All four remain **financially rejected**. They are one overlapping forecast
+program family, not four independent economic risks. No representative,
+new pool membership or global seven/eight roster change follows. Other
+archives retain their prior unreviewed/invalid/scoped status; this Adapter
+does not cover the blocked term/RF/full-native-event source or grant a
+source waiver. Any future combination needs its own frozen pool, clocks,
+learning and unified fresh-main-capital rule.
+
+One metadata preflight failed after preserving its invocation and baseline
+because it guessed a V2 closure basename. Its helper and failure remain;
+a separate metadata-only continuation used the pinned cycle and source
+constants without replaying the baseline or any source calculation.
+The first42synthetic checks and Ruffpass before freeze`85dab6ce`.
+The once-only actual review/export exits0 in38.22948870799155seconds,
+Darwin peakRSS447606784bytes. No original forecaster,rank,target builder,
+shadow,main account,benchmark,performance metric or historical verification
+pipeline is rerun. No nominal target or RFview is created.
+All287prior completions are exposed; this is not independent forward proof.
+**J1297:120registered,109completed,11technical,zero pending,
+436funded paths,287combined completions,zero qualifiers;
+investment goal remains unmet and no new financial trial is counted.**
+
 ## Forecast opportunity gate: all DD gates pass, every other performance gate fails
 
 The [complete result](evidence/forecast_opportunity_gate_20261106_results_v1.json)
