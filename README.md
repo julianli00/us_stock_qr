@@ -45,6 +45,23 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
+### Conditional-variance quintet: preregistered, funding pending
+
+The new study keeps the direct quartet and appends the admitted complete
+symmetric GARCH growth/BIL policy as a conditional-variance complement.
+Distinct risk models and source labels do not imply independent factors;
+underlying equity exposures can overlap. No source fit or risk/cost
+parameter is retuned.
+
+Equal fifths and the original126/84/42rolling two-expert law retain all
+ten pairs. Both identities are registered1347/1348and proved1349/1350
+before new funds. The new equal and rolling targets differ from their
+matched cached controls at121and56origins,respectively.
+**J1350/127registered/113completed/12technical/2pending/452existing
+funded paths/291combined completions/zero qualifiers.** No new account or
+performance result exists;both complete actual packets must be remotely
+published and checked before eight original funded paths.
+
 ### Cross-origin cost reference: duplicate targets, no new funding
 
 The [deduplication result](research/workbench/evidence/expert_total_target_cost_20261106_duplicate_v1.json)
@@ -60,7 +77,7 @@ Do not rerun four identical accounts or relabel cached metrics as new results.
 This is sample-specific duplication,not general future-equivalence or invalidity
 of the source policies.
 
-**J1346/125registered/113completed/12technical-workflow terminations/
+**Closed-workflow snapshot J1346/125registered/113completed/12technical-workflow terminations/
 zero pending/452funded paths/291combined completions/zero qualifiers.**
 The technical counter includes this one operational duplicate termination,
 not a code/data invalidity or a new financial failure. No new funded path,

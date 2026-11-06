@@ -4,6 +4,44 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Conditional-variance quintet: actual preregistration, funding pending
+
+Study`ssd_conditional_volatility_quintet_20261106_v1`keeps the completed
+direct quartet and appends admitted`symmetric_garch_growth_bil_v1`.
+Canonical slots4,5,7,0,2cover confirmation,defense,conditional hedge,
+commitment and conditional-variance growth. The hedge already contains
+related risk information;no independent factor or diversification is
+guaranteed. This exact five-member roster was not found in prior declared
+configurations;membership is justified by policy role,not full-window rank.
+
+Equal fifths and the original126mature/84training-ERC/42validation weaker
+NET-RF/two-selected rule enumerate all10pairs. Same-origin nominal cost
+coefficients,12decimal keys,source scopes,initial opinions,1x cash funding
+and original acceptance remain. No current-opinion risk model,cross-origin
+cost variant,source fit,shadow or source account is promoted or replayed.
+
+The first21synthetic checks and Ruffpass before frozen`bcfeee17`and
+actual checkpoint691. Real registrations1347/1348precede either new
+target derivation;proofs1349/1350retain all121decisions,242input/resolved
+records,all10pairs,5exact prefixes and independent target/weight/score
+checks. Actual registration takes35.472055040998384seconds,Darwin
+peakRSS437321728bytes. Actual registered digest`5b60195a`is distinct
+from the bare intent hash.
+
+Both target histories are distinct from both completed cached controls.
+Against matched equal/rolling controls,the new targets differ at121/56
+origins,respectively. This is target identity evidence,not new main-account
+performance or an independent economic effect.
+
+**J1350/127registered/113completed/12technical/2pending/452existing
+funded paths/291combined completions/zero qualifiers.** Technical12
+includes the previous operational duplicate termination,not source
+invalidity. There is no new account or performance result at this
+preregistration. Both complete actual packets must be remotely published
+and verified before the first of eight original freshUSD10000paths.
+All original full windows,costs,lags,RF,initial peak,SPY/QQQand extra
+gates remain. The investment target is not met.
+
 ## Cross-origin desired-target costs: exact duplicate, no new accounts
 
 The [terminal identity result](evidence/expert_total_target_cost_20261106_duplicate_v1.json)
@@ -49,7 +87,7 @@ funded paths/completions/economic financial trials. This is not a broken
 source,an invalid cost law,a new financial failure,or a source admission
 exclusion. The identity is terminal and must not be retried.
 
-**CurrentJ1346/125registered/113completed/12technical-workflow terminations/
+**Closed-workflow snapshot J1346/125registered/113completed/12technical-workflow terminations/
 zero pending/452funded paths/291combined completions/zero qualifiers.**
 The12includes one duplicate workflow termination in addition to the prior11.
 The last complete financial study remains the direct quartet atJ1343;
