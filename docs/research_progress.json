@@ -134,102 +134,217 @@
       "order_authority": false
     },
     "latest_read_only_diagnosis": {
-      "study_id": "ssd_expert_opinion_clock_review_20261106_v1",
-      "status": "complete_sanitized_readonly_admitted_opinion_clock_review",
-      "path": "research/workbench/evidence/expert_opinion_clock_review_20261106_v1.json",
-      "sha256": "8b6c87b70f990b202e1ff368cf888c9b410eb71af5a194e4b56e2666701d50f3",
-      "implementation_freeze_sha256": "e9e75ccb4c30b101f7d2f6c749c83c11ed1333720a3de4b7439721d415b82fdb",
-      "journal_snapshot": 1478,
-      "observation_sessions": 2513,
-      "admitted_sources": 6,
-      "source_observations": 15078,
-      "input_resolution_records": 30156,
+      "study_id": "ssd_confidence_regret_scope_20261106_v1",
+      "status": "complete_sanitized_readonly_confidence_regret_scope",
+      "path": "research/workbench/evidence/confidence_regret_scope_20261106_v1.json",
+      "sha256": "5c3a4bc2e3c2aff40c032b4493786164bd0a3da8a5716bef5786270cf920712a",
+      "journal_snapshot": 1490,
+      "source_decisions": 121,
+      "mature_source_months": 119,
+      "complete_main_month_cases": 356,
+      "original_main_return_rows": 7532,
+      "retained_boundary_return_rows": 84,
+      "input_resolution_records": 962,
       "exact_retained_prefixes": 5,
       "actual_summary": {
-        "all_observations": 15078,
-        "current_monthly_execution_accepts_extra_non_month_end_targets": false,
-        "future_consumer_requires_separately_frozen_execution_and_native_clock_review": true,
-        "global_membership_or_source_scope_changed": false,
-        "new_rankings_targets_accounts_or_financial_trials": 0,
-        "source_known_rows_are_native_requests": false,
-        "sources": {
-          "benchmark_opportunity_joint_tail_v1": {
-            "carried_known_timestamp": 0,
-            "initial_observation": 1,
-            "initial_observes_prior_dated_opinion": 0,
-            "new_same_day_known_row": 2512,
-            "new_same_day_row_same_numeric_target": 2431,
-            "newly_observed_prior_dated_row": 0,
-            "numeric_target_changed": 81,
-            "observations": 2513,
-            "off_month_end_changed_opinion": 0,
-            "off_month_end_new_same_day_row": 2392,
-            "source_score_mature": 2387
+        "source_game_summary": {
+          "comparator_identity_exact": true,
+          "complete_source_months": 119,
+          "confidence_sum_is_independent_sample_size": false,
+          "new_learner_state_or_allocation_generated": false,
+          "source_decisions": 121,
+          "source_game_units_are_main_returns_or_USD": false,
+          "sources": {
+            "benchmark_opportunity_joint_tail_v1": {
+              "complete_source_months": 119,
+              "confidence_weighted_source_game_regret": -12.346862318330487,
+              "exact_confidence_groups": {
+                "full": 119,
+                "partial": 0,
+                "zero": 0
+              },
+              "maximum_final_rounding_difference": 4.54e-159,
+              "omitted_participation_excess": 0.0,
+              "recorded_final_confidence_regret": -12.346862318330487,
+              "sum_confidence_ratings": 119.0,
+              "unweighted_excess_negative_months": 74,
+              "unweighted_excess_positive_months": 45,
+              "unweighted_source_game_regret": -12.346862318330487
+            },
+            "conditional_covariance_hedge_expert_v1": {
+              "complete_source_months": 119,
+              "confidence_weighted_source_game_regret": -3.7756183714026315,
+              "exact_confidence_groups": {
+                "full": 119,
+                "partial": 0,
+                "zero": 0
+              },
+              "maximum_final_rounding_difference": 2.54e-159,
+              "omitted_participation_excess": 0.0,
+              "recorded_final_confidence_regret": -3.7756183714026315,
+              "sum_confidence_ratings": 119.0,
+              "unweighted_excess_negative_months": 61,
+              "unweighted_excess_positive_months": 58,
+              "unweighted_source_game_regret": -3.7756183714026315
+            },
+            "equity_first_month_end_commitment_v1": {
+              "complete_source_months": 119,
+              "confidence_weighted_source_game_regret": 4.861425616975369,
+              "exact_confidence_groups": {
+                "full": 119,
+                "partial": 0,
+                "zero": 0
+              },
+              "maximum_final_rounding_difference": 2.54e-159,
+              "omitted_participation_excess": 0.0,
+              "recorded_final_confidence_regret": 4.861425616975369,
+              "sum_confidence_ratings": 119.0,
+              "unweighted_excess_negative_months": 49,
+              "unweighted_excess_positive_months": 70,
+              "unweighted_source_game_regret": 4.861425616975369
+            },
+            "four_factor_defense_diversified": {
+              "complete_source_months": 119,
+              "confidence_weighted_source_game_regret": -19.190804611867875,
+              "exact_confidence_groups": {
+                "full": 119,
+                "partial": 0,
+                "zero": 0
+              },
+              "maximum_final_rounding_difference": 5.46e-159,
+              "omitted_participation_excess": 0.0,
+              "recorded_final_confidence_regret": -19.190804611867875,
+              "sum_confidence_ratings": 119.0,
+              "unweighted_excess_negative_months": 73,
+              "unweighted_excess_positive_months": 46,
+              "unweighted_source_game_regret": -19.190804611867875
+            },
+            "semiconductor_option_dollar_profit_share_confirmation": {
+              "complete_source_months": 119,
+              "confidence_weighted_source_game_regret": -1.6314988650540918,
+              "exact_confidence_groups": {
+                "full": 119,
+                "partial": 0,
+                "zero": 0
+              },
+              "maximum_final_rounding_difference": 5.4e-160,
+              "omitted_participation_excess": 0.0,
+              "recorded_final_confidence_regret": -1.6314988650540918,
+              "sum_confidence_ratings": 119.0,
+              "unweighted_excess_negative_months": 61,
+              "unweighted_excess_positive_months": 58,
+              "unweighted_source_game_regret": -1.6314988650540918
+            },
+            "semiconductor_ratchet_protection": {
+              "complete_source_months": 119,
+              "confidence_weighted_source_game_regret": -2.9175205668563935,
+              "exact_confidence_groups": {
+                "full": 0,
+                "partial": 110,
+                "zero": 9
+              },
+              "maximum_final_rounding_difference": 4.58708781732699e-159,
+              "omitted_participation_excess": -11.382945074393463,
+              "recorded_final_confidence_regret": -2.9175205668563935,
+              "sum_confidence_ratings": 30.65085611138482,
+              "unweighted_excess_negative_months": 72,
+              "unweighted_excess_positive_months": 47,
+              "unweighted_source_game_regret": -14.300465641249858
+            }
+          }
+        },
+        "four_original_main_books": {
+          "10y-base": {
+            "all_original_return_rows_retained": true,
+            "boundary_returns_and_initial_costs_remain_in_original_verdict": true,
+            "complete_main_months": 119,
+            "complete_main_return_rows": 2491,
+            "confidence_is_calibrated_loss_probability": false,
+            "main_loss_months": 35,
+            "main_loss_months_by_later_confidence_change": {
+              "decreased": 6,
+              "increased": 29,
+              "same": 0
+            },
+            "main_loss_months_by_origin_confidence": {
+              "full": 0,
+              "partial": 32,
+              "zero": 3
+            },
+            "main_loss_months_zero_origin_then_positive_end_confidence": 3,
+            "original_formal_return_rows": 2512,
+            "overlapping_windows_or_scenarios_are_independent": false,
+            "retained_boundary_return_rows": 21,
+            "source_game_regret_is_main_drawdown_protection": false
           },
-          "conditional_covariance_hedge_expert_v1": {
-            "carried_known_timestamp": 2392,
-            "initial_observation": 1,
-            "initial_observes_prior_dated_opinion": 1,
-            "new_same_day_known_row": 120,
-            "new_same_day_row_same_numeric_target": 113,
-            "newly_observed_prior_dated_row": 0,
-            "numeric_target_changed": 7,
-            "observations": 2513,
-            "off_month_end_changed_opinion": 0,
-            "off_month_end_new_same_day_row": 0,
-            "source_score_mature": 2387
+          "10y-stress": {
+            "all_original_return_rows_retained": true,
+            "boundary_returns_and_initial_costs_remain_in_original_verdict": true,
+            "complete_main_months": 119,
+            "complete_main_return_rows": 2491,
+            "confidence_is_calibrated_loss_probability": false,
+            "main_loss_months": 39,
+            "main_loss_months_by_later_confidence_change": {
+              "decreased": 8,
+              "increased": 31,
+              "same": 0
+            },
+            "main_loss_months_by_origin_confidence": {
+              "full": 0,
+              "partial": 36,
+              "zero": 3
+            },
+            "main_loss_months_zero_origin_then_positive_end_confidence": 3,
+            "original_formal_return_rows": 2512,
+            "overlapping_windows_or_scenarios_are_independent": false,
+            "retained_boundary_return_rows": 21,
+            "source_game_regret_is_main_drawdown_protection": false
           },
-          "equity_first_month_end_commitment_v1": {
-            "carried_known_timestamp": 0,
-            "initial_observation": 1,
-            "initial_observes_prior_dated_opinion": 0,
-            "new_same_day_known_row": 2512,
-            "new_same_day_row_same_numeric_target": 2494,
-            "newly_observed_prior_dated_row": 0,
-            "numeric_target_changed": 18,
-            "observations": 2513,
-            "off_month_end_changed_opinion": 0,
-            "off_month_end_new_same_day_row": 2392,
-            "source_score_mature": 2387
+          "5y-base": {
+            "all_original_return_rows_retained": true,
+            "boundary_returns_and_initial_costs_remain_in_original_verdict": true,
+            "complete_main_months": 59,
+            "complete_main_return_rows": 1233,
+            "confidence_is_calibrated_loss_probability": false,
+            "main_loss_months": 18,
+            "main_loss_months_by_later_confidence_change": {
+              "decreased": 3,
+              "increased": 15,
+              "same": 0
+            },
+            "main_loss_months_by_origin_confidence": {
+              "full": 0,
+              "partial": 17,
+              "zero": 1
+            },
+            "main_loss_months_zero_origin_then_positive_end_confidence": 1,
+            "original_formal_return_rows": 1254,
+            "overlapping_windows_or_scenarios_are_independent": false,
+            "retained_boundary_return_rows": 21,
+            "source_game_regret_is_main_drawdown_protection": false
           },
-          "four_factor_defense_diversified": {
-            "carried_known_timestamp": 2392,
-            "initial_observation": 1,
-            "initial_observes_prior_dated_opinion": 1,
-            "new_same_day_known_row": 120,
-            "new_same_day_row_same_numeric_target": 23,
-            "newly_observed_prior_dated_row": 0,
-            "numeric_target_changed": 97,
-            "observations": 2513,
-            "off_month_end_changed_opinion": 0,
-            "off_month_end_new_same_day_row": 0,
-            "source_score_mature": 2387
-          },
-          "semiconductor_option_dollar_profit_share_confirmation": {
-            "carried_known_timestamp": 2392,
-            "initial_observation": 1,
-            "initial_observes_prior_dated_opinion": 1,
-            "new_same_day_known_row": 120,
-            "new_same_day_row_same_numeric_target": 0,
-            "newly_observed_prior_dated_row": 0,
-            "numeric_target_changed": 120,
-            "observations": 2513,
-            "off_month_end_changed_opinion": 0,
-            "off_month_end_new_same_day_row": 0,
-            "source_score_mature": 2387
-          },
-          "semiconductor_ratchet_protection": {
-            "carried_known_timestamp": 0,
-            "initial_observation": 1,
-            "initial_observes_prior_dated_opinion": 0,
-            "new_same_day_known_row": 2512,
-            "new_same_day_row_same_numeric_target": 77,
-            "newly_observed_prior_dated_row": 0,
-            "numeric_target_changed": 2435,
-            "observations": 2513,
-            "off_month_end_changed_opinion": 2315,
-            "off_month_end_new_same_day_row": 2392,
-            "source_score_mature": 2387
+          "5y-stress": {
+            "all_original_return_rows_retained": true,
+            "boundary_returns_and_initial_costs_remain_in_original_verdict": true,
+            "complete_main_months": 59,
+            "complete_main_return_rows": 1233,
+            "confidence_is_calibrated_loss_probability": false,
+            "main_loss_months": 20,
+            "main_loss_months_by_later_confidence_change": {
+              "decreased": 4,
+              "increased": 16,
+              "same": 0
+            },
+            "main_loss_months_by_origin_confidence": {
+              "full": 0,
+              "partial": 19,
+              "zero": 1
+            },
+            "main_loss_months_zero_origin_then_positive_end_confidence": 1,
+            "original_formal_return_rows": 1254,
+            "overlapping_windows_or_scenarios_are_independent": false,
+            "retained_boundary_return_rows": 21,
+            "source_game_regret_is_main_drawdown_protection": false
           }
         }
       },
@@ -5821,8 +5936,8 @@
     "funded_paths": 500,
     "combined_completed": 303,
     "qualified": 0,
-    "snapshot_scope": "Current complete confidence-rated Prod J1490;all four original paths retained with actual costs. Confidence regret is not main wealth or drawdown insurance.",
-    "journal_summary_derived_at_utc": "2026-11-06T20:56:41.972521+00:00",
+    "snapshot_scope": "Financial J1490/340b remains303completed/zero qualified. Separate saved confidence-regret scope retains119source months/356main cases/all7532rows. Conditional and plain comparators differ;most main loss months were partially participating already. This is retrospective,not a new financial trial.",
+    "journal_summary_derived_at_utc": "2026-11-06T21:26:13.095186+00:00",
     "latest_study_id": "ssd_confidence_rated_prod_20261106_v1",
     "latest_study_status": "complete_all_original_paths_retained",
     "latest_registrations": {
@@ -6443,7 +6558,113 @@
     "maximum_independent_BT_gap_USD": 8.003553375601768e-11,
     "actual_broker_orders": 0,
     "actual_financial_process_wall_seconds": 61.05277966699214,
-    "actual_financial_process_Darwin_peak_RSS_bytes": 500109312
+    "actual_financial_process_Darwin_peak_RSS_bytes": 500109312,
+    "previous_read_only_before_confidence_regret_scope": {
+      "study_id": "ssd_expert_opinion_clock_review_20261106_v1",
+      "status": "complete_sanitized_readonly_admitted_opinion_clock_review",
+      "path": "research/workbench/evidence/expert_opinion_clock_review_20261106_v1.json",
+      "sha256": "8b6c87b70f990b202e1ff368cf888c9b410eb71af5a194e4b56e2666701d50f3",
+      "implementation_freeze_sha256": "e9e75ccb4c30b101f7d2f6c749c83c11ed1333720a3de4b7439721d415b82fdb",
+      "journal_snapshot": 1478,
+      "observation_sessions": 2513,
+      "admitted_sources": 6,
+      "source_observations": 15078,
+      "input_resolution_records": 30156,
+      "exact_retained_prefixes": 5,
+      "actual_summary": {
+        "all_observations": 15078,
+        "current_monthly_execution_accepts_extra_non_month_end_targets": false,
+        "future_consumer_requires_separately_frozen_execution_and_native_clock_review": true,
+        "global_membership_or_source_scope_changed": false,
+        "new_rankings_targets_accounts_or_financial_trials": 0,
+        "source_known_rows_are_native_requests": false,
+        "sources": {
+          "benchmark_opportunity_joint_tail_v1": {
+            "carried_known_timestamp": 0,
+            "initial_observation": 1,
+            "initial_observes_prior_dated_opinion": 0,
+            "new_same_day_known_row": 2512,
+            "new_same_day_row_same_numeric_target": 2431,
+            "newly_observed_prior_dated_row": 0,
+            "numeric_target_changed": 81,
+            "observations": 2513,
+            "off_month_end_changed_opinion": 0,
+            "off_month_end_new_same_day_row": 2392,
+            "source_score_mature": 2387
+          },
+          "conditional_covariance_hedge_expert_v1": {
+            "carried_known_timestamp": 2392,
+            "initial_observation": 1,
+            "initial_observes_prior_dated_opinion": 1,
+            "new_same_day_known_row": 120,
+            "new_same_day_row_same_numeric_target": 113,
+            "newly_observed_prior_dated_row": 0,
+            "numeric_target_changed": 7,
+            "observations": 2513,
+            "off_month_end_changed_opinion": 0,
+            "off_month_end_new_same_day_row": 0,
+            "source_score_mature": 2387
+          },
+          "equity_first_month_end_commitment_v1": {
+            "carried_known_timestamp": 0,
+            "initial_observation": 1,
+            "initial_observes_prior_dated_opinion": 0,
+            "new_same_day_known_row": 2512,
+            "new_same_day_row_same_numeric_target": 2494,
+            "newly_observed_prior_dated_row": 0,
+            "numeric_target_changed": 18,
+            "observations": 2513,
+            "off_month_end_changed_opinion": 0,
+            "off_month_end_new_same_day_row": 2392,
+            "source_score_mature": 2387
+          },
+          "four_factor_defense_diversified": {
+            "carried_known_timestamp": 2392,
+            "initial_observation": 1,
+            "initial_observes_prior_dated_opinion": 1,
+            "new_same_day_known_row": 120,
+            "new_same_day_row_same_numeric_target": 23,
+            "newly_observed_prior_dated_row": 0,
+            "numeric_target_changed": 97,
+            "observations": 2513,
+            "off_month_end_changed_opinion": 0,
+            "off_month_end_new_same_day_row": 0,
+            "source_score_mature": 2387
+          },
+          "semiconductor_option_dollar_profit_share_confirmation": {
+            "carried_known_timestamp": 2392,
+            "initial_observation": 1,
+            "initial_observes_prior_dated_opinion": 1,
+            "new_same_day_known_row": 120,
+            "new_same_day_row_same_numeric_target": 0,
+            "newly_observed_prior_dated_row": 0,
+            "numeric_target_changed": 120,
+            "observations": 2513,
+            "off_month_end_changed_opinion": 0,
+            "off_month_end_new_same_day_row": 0,
+            "source_score_mature": 2387
+          },
+          "semiconductor_ratchet_protection": {
+            "carried_known_timestamp": 0,
+            "initial_observation": 1,
+            "initial_observes_prior_dated_opinion": 0,
+            "new_same_day_known_row": 2512,
+            "new_same_day_row_same_numeric_target": 77,
+            "newly_observed_prior_dated_row": 0,
+            "numeric_target_changed": 2435,
+            "observations": 2513,
+            "off_month_end_changed_opinion": 2315,
+            "off_month_end_new_same_day_row": 2392,
+            "source_score_mature": 2387
+          }
+        }
+      },
+      "new_financial_trials": 0,
+      "financial_result_or_qualification_changed": false,
+      "independent_forward_validation": false,
+      "investment_objective_verified": false,
+      "order_authority": false
+    }
   },
   "updated_on": "2026-10-31",
   "phase": "legacy_term_expert_v2_eligibility_complete_blocked",

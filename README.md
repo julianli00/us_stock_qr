@@ -45,6 +45,21 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
+### Read-only J1490 diagnosis: conditional regret is a different comparator
+
+The [saved confidence-scope diagnosis](research/workbench/evidence/confidence_regret_scope_20261106_v1.json)
+keeps the same played source-game sequence. The protection specialist's plain
+regret is -14.300466, versus -2.917521 after confidence weighting; the omitted
+participation term is -11.382945. These signed bounded-loss units are not
+returns, dollars or a counterfactual always-active portfolio.
+
+Most complete main loss months already began with partial specialist
+participation: 32/35, 36/39, 17/18 and 19/20 across the four original paths.
+Later confidence increases are retrospective, not information available at
+the month's origin. The [frozen diagnostic](research/workbench/CONFIDENCE_REGRET_SCOPE_V1.md)
+retains all formal and boundary returns, adds no financial trial and does not
+repair the rejected policy. **J1490 / 303 completions / zero qualifiers.**
+
 ### Confidence-rated Prod: all four paths complete, rule rejected
 
 The [complete outcome](research/workbench/evidence/confidence_rated_prod_20261106_results_v1.json)

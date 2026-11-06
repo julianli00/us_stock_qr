@@ -4,6 +4,75 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Read-only J1490 confidence scope: different comparator, mostly active loss months
+
+The [complete saved-record diagnosis](evidence/confidence_regret_scope_20261106_v1.json)
+uses the same saved played-loss sequence. It does not execute a second learner,
+replace confidence ratings, generate targets or replay any account.
+The [frozen method](CONFIDENCE_REGRET_SCOPE_V1.md) decomposes plain excess into
+confidence-weighted excess plus omitted-participation excess using exact
+Fractions of saved decimal and binary64 operands.
+
+| Complete source policy | Plain source-game regret | Confidence-weighted regret | Omitted-participation excess |
+| --- | ---: | ---: | ---: |
+| Profit-share confirmation | -1.631499 | -1.631499 | 0.000000 |
+| Diversified defense | -19.190805 | -19.190805 | 0.000000 |
+| Conditional covariance hedge | -3.775618 | -3.775618 | 0.000000 |
+| Month-end commitment | 4.861426 | 4.861426 | 0.000000 |
+| Benchmark opportunity | -12.346862 | -12.346862 | 0.000000 |
+| Wealth-feedback protection | -14.300466 | -2.917521 | -11.382945 |
+
+Positive regret means the learner's source-game loss exceeds the expert's;
+negative means less. For the specialist, confidence weighting makes that
+negative learner advantage smaller in magnitude. It is not automatically
+an improvement in financial performance. The source-game comparator changes
+which periods receive weight, not what the actual played loss was.
+There is no always-active alternative account or new unweighted learner.
+
+The other five policies have confidence exactly one in all 119 complete
+months, so their two comparator values coincide. The specialist has nine
+exact-zero and 110 partial prior-origin ratings, never a full rating.
+Their sum is 30.6508561114, not an independent sample count, time-in-market
+claim or calibrated probability. Exact whole-history comparator identities
+hold; differences from saved rounded cumulative regret are at most
+5.46e-159, within the original 1e-12 coherence limit. No old state is repaired.
+
+| Original main path | Complete source months | Main loss months | Partial rating at origin in loss months | Zero rating at origin in loss months | Rating increased by month end in loss months |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| 10y-base | 119 | 35 | 32 | 3 | 29 |
+| 10y-stress | 119 | 39 | 36 | 3 | 31 |
+| 5y-base | 59 | 18 | 17 | 1 | 15 |
+| 5y-stress | 59 | 20 | 19 | 1 | 16 |
+
+Thus most loss months do not begin with a completely sleeping specialist.
+In every zero-origin loss case above, its rating becomes positive by month end.
+That later value was not available at the prior origin and cannot be backdated
+into the month's decision. An increase after loss is a retrospective
+association, not causal evidence that earlier or larger participation would
+have prevented loss. The four paths and their overlapping horizons are not
+independent observations; no forecast calibration or new trading rule follows.
+
+The original four books retain all 7,532 formal return rows. Complete matched
+months contain 2,491/2,491/1,233/1,233 rows; each book separately retains 21
+initial-crossing or terminal boundary rows. These 84 boundary rows and initial
+fees remain in the original financial verdict. Monthly loss signs use exact
+products of saved NET return relatives, not new annual performance estimates.
+
+First 28 synthetic checks, six exact prototypes, freeze `fb14b0ec` and actual
+checkpoint 781 saved at 2026-11-06T21:22:19.938127+00:00 with covered_seq 194859
+precede new labels. The original save receipt is prospectively linked and
+actual start/process receipts contain the checkpoint fields. PID 16348 ran
+once for 18.426593250 seconds, peak RSS 470,671,360 bytes.
+All 121 source decisions, 119 mature source months, 356 complete-main-month
+cases, 962 input/resolution records and five retained-record prefixes remain.
+
+**No new learner, source, target, account, BT, prior diagnosis replay or
+financial trial. Current financial J1490 / 138 registered / 125 completed /
+13 workflow terminations / zero pending / 500 funded paths /
+303 combined completions / zero qualifiers is unchanged.**
+The rejected financial result below remains separate. Investment objective
+unmet; source-game regret is not main drawdown protection or forward proof.
+
 ## Confidence-rated Prod: four original paths complete, rule rejected
 
 The [complete outcome](evidence/confidence_rated_prod_20261106_results_v1.json)
