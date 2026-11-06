@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 128 SSD identities, 116 completed/rejected, 12 retained technical-workflow terminations and zero pending; 464 funded paths | Journal1381 current summary: 294 combined completions, zero qualifiers; investment goal remains unmet |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 129 SSD identities, 116 completed/rejected, 12 retained technical-workflow terminations and one pending; 464 funded paths | Journal1383 current summary: 294 combined completions, zero qualifiers; investment goal remains unmet |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -45,6 +45,26 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
+### Fixed-five risk hierarchy: registered, funding pending
+
+One new construction keeps the current five complete source policies.
+Use their126mature NET-RF observations for the preserved canonical
+single-linkage/recursive child-IVP variance allocation,with only the
+array dimension generalized. All five policies are considered without
+return ranking,median tuning,covariance regularization or a failed solver.
+Risk clusters do not establish independent factors or a DDguarantee.
+
+The first40synthetic checks pass before frozen`ecc5666b`and
+checkpoint702,including exact six-coordinate regression against the
+old kernel. Actual registration1382precedes new risk fits/targets;
+proof1383checks121decisions,242records,5exact prefixes,every merge/
+split and all six original factor symbols. The114mature targets differ
+materially from every cached fixed-five control. No old account is rerun.
+**J1383/129registered/116completed/12technical/1pending/464existing
+funded paths/294combined completions/zero qualifiers.** No new capital
+or performance result exists;publish and verify the actual singleton
+packet before its four original freshUSD10000paths.
+
 ### Median equity budget: lower drawdowns, still rejected
 
 The [complete four-path outcome](research/workbench/evidence/median_equity_budget_20261106_results_v1.json)
@@ -59,7 +79,7 @@ All four CAGRgates pass,but every Sharpe andDDgate fails. The best
 Sharpe improve in all four paths and annual turnover falls,but every
 fee/ticket count rises and five-year CAGRfalls. Partial improvement
 is not qualification or a reason to retune this frozen median.
-**J1381/128registered/116completed/12technical-workflow terminations/
+**Completed-financial snapshot J1381/128registered/116completed/12technical-workflow terminations/
 zero pending/464funded paths/294combined completions/zero qualifiers.**
 Original gates,costs,source refusals and the unmet investment goal remain.
 

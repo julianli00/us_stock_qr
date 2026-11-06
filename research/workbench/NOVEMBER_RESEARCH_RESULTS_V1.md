@@ -4,6 +4,50 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Fixed-five risk hierarchy: actual preregistration, funding pending
+
+Study`ssd_five_hierarchical_risk_20261106_v1`keeps the already fixed
+confirmation/defense/hedge/commitment/conditional-variance five-source
+pool. One construction uses all126mature NET-minus-assessment-RF
+observations rather than discrete return-score pair selection. The old
+canonical single-linkage/seriation/floor-half recursive child-IVP
+variance method is generalized only in array dimension. Synthetic
+six-coordinate inputs reproduce its covariance,weights and full audit
+bit-exactly. The old six-expert strategy/accounts are not replayed.
+
+Original ddof1,12decimal distance keys,coordinate lexical ties,
+1e-12roundoff/proof tolerances and exact zero-child rules remain.
+There is no covariance inverse,regularization,variance floor,failed
+solver,cost-proxy allocation or retuned median budget. All126rows
+are risk fitting,not held-out validation. Clusters are not independent
+factors and previous statistical weights are not actual main holdings.
+The seven initial unscored equal-fifth origins remain,without filling.
+
+The first40synthetic checks and Ruffpass before frozen`ecc5666b`
+and actual checkpoint702. Registration1382precedes new risk fits,
+weights or targets;proof1383retains all121decisions,242exact
+input/resolved records,5exact prefixes and every minimum-distance
+merge/recursive split. All114mature origins have risk allocations.
+Both horizons retain MTUM,VLUE,QUAL,USMV,IJRandPKW.
+Independent maximum covariance difference is4.336808689942018e-19;
+weight and target differences are each2.220446049250313e-16.
+
+Registration takes31.221341875003418seconds,Darwin peakRSS456732672bytes.
+Actual registered digest`cf5c3541`is not the bare intent hash.
+New targets differ materially from each of the cached equal,rolling
+and median-budget fixed-five controls at114/121origins. That is
+allocation identity evidence,not new NAV,fees,independent risk or
+an isolated source effect. The three controls remain cached.
+
+**J1383/129registered/116completed/12technical-workflow terminations/
+1pending/464existing funded paths/294combined completions/zero qualifiers.**
+The technical12still includes one earlier duplicate workflow,not
+source invalidity. There is no new capital or performance result at
+this preregistration. Publish and verify the complete actual singleton
+packet before four original freshUSD10000paths. Original full windows,
+RF,initial peak,costs,delays,actual-holding band,SPY/QQQand every
+extra gate remain. The investment objective is unmet.
+
 ## Median equity budget: all four paths complete, rule rejected
 
 The [complete financial outcome](evidence/median_equity_budget_20261106_results_v1.json)
@@ -50,7 +94,7 @@ maximum gross exposure0.9832458302596905,maximum independentBT NAV
 differenceUSD8.003553375601768e-11,and actual broker orders0.
 Offline model tickets are not brokerage authority.
 
-**J1381/128registered/116completed/12technical-workflow terminations/
+**Completed-financial snapshot J1381/128registered/116completed/12technical-workflow terminations/
 zero pending/464funded paths/294combined completions/zero qualifiers.**
 The technical12still includes one earlier operational duplicate,not
 source invalidity. Original full windows,RF,initial peak,costs,delays,
