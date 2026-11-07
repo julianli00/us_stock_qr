@@ -126,65 +126,258 @@
       "order_authority": false
     },
     "latest_read_only_diagnosis": {
-      "study_id": "ssd_shield_ticket_anatomy_20261107_v1",
-      "status": "complete_sanitized_saved_ticket_anatomy",
-      "path": "research/workbench/evidence/shield_ticket_anatomy_20261107_v1.json",
-      "sha256": "ff29e96c60dd71ba86c0008270c69ac90cb766dd2fb59976e57933d396d98329",
-      "journal_snapshot": 1506,
-      "formal_return_rows": 7532,
-      "model_tickets": 9164,
-      "input_resolution_records": 15064,
-      "bit_exact_saved_record_prefixes": 20,
+      "study_id": "ssd_confidence_decision_factorial_20261107_v1",
+      "status": "complete_sanitized_saved_confidence_decision_factorial",
+      "path": "research/workbench/evidence/confidence_decision_factorial_20261107_v1.json",
+      "sha256": "81ab2d3833c5df03ee64df4187eb800414dfaba535d13dcbaa0f00c7ff275d7a",
+      "journal_snapshot": 1518,
+      "saved_decision_pairs": 364,
+      "algebraic_views": 2912,
+      "input_resolution_records": 728,
+      "saved_record_prefix_inspections": 20,
+      "exact_additivity_zero_residual": true,
       "actual_summary": {
         "10y-base": {
-          "actual_tickets": 2795,
-          "below_USD1_tickets": 151,
-          "below_USD1_notional_USD": 44.01431383432639,
-          "below_USD10_tickets": 853,
-          "same_nominal_changed_fraction_fills": 205,
-          "same_nominal_changed_fraction_tickets": 1938,
-          "same_nominal_changed_fraction_ticket_share": 0.693381037567084,
-          "same_issued_target_fills": 1,
-          "prefee_noop_to_executed_ticket_count": 0
+          "initial_capital": {
+            "both_held": 0,
+            "both_requested": 1,
+            "cases": 1,
+            "joint_mass_rate_state_changed": 0,
+            "mean_axis_target_L1": {
+              "learner_mass_and_rates": 0.0,
+              "participation": 0.0,
+              "source_opinion_vintage": 0.0
+            },
+            "mean_cancelling_L1": 0.0,
+            "mean_net_target_displacement_L1": 0.0,
+            "native_opinion_clock_changed": 0,
+            "numeric_source_opinions_changed": 0,
+            "only_original_requested": 0,
+            "only_recent_requested": 0,
+            "participation_changed": 0,
+            "source_snapshot_date_changed": 0
+          },
+          "overall": {
+            "both_held": 52,
+            "both_requested": 58,
+            "cases": 121,
+            "joint_mass_rate_state_changed": 119,
+            "mean_axis_target_L1": {
+              "learner_mass_and_rates": 0.008002976230519685,
+              "participation": 0.014224259412187938,
+              "source_opinion_vintage": 0.0
+            },
+            "mean_cancelling_L1": 0.00874110843919404,
+            "mean_net_target_displacement_L1": 0.013486127203513583,
+            "native_opinion_clock_changed": 0,
+            "numeric_source_opinions_changed": 0,
+            "only_original_requested": 6,
+            "only_recent_requested": 5,
+            "participation_changed": 117,
+            "source_snapshot_date_changed": 0
+          },
+          "regular_month_end": {
+            "both_held": 52,
+            "both_requested": 57,
+            "cases": 120,
+            "joint_mass_rate_state_changed": 119,
+            "mean_axis_target_L1": {
+              "learner_mass_and_rates": 0.00806966769910735,
+              "participation": 0.014342794907289505,
+              "source_opinion_vintage": 0.0
+            },
+            "mean_cancelling_L1": 0.008813951009520657,
+            "mean_net_target_displacement_L1": 0.013598511596876197,
+            "native_opinion_clock_changed": 0,
+            "numeric_source_opinions_changed": 0,
+            "only_original_requested": 6,
+            "only_recent_requested": 5,
+            "participation_changed": 117,
+            "source_snapshot_date_changed": 0
+          }
         },
         "10y-stress": {
-          "actual_tickets": 2395,
-          "below_USD1_tickets": 142,
-          "below_USD1_notional_USD": 40.33222688048109,
-          "below_USD10_tickets": 761,
-          "same_nominal_changed_fraction_fills": 165,
-          "same_nominal_changed_fraction_tickets": 1544,
-          "same_nominal_changed_fraction_ticket_share": 0.6446764091858037,
-          "same_issued_target_fills": 1,
-          "prefee_noop_to_executed_ticket_count": 0
+          "initial_capital": {
+            "both_held": 0,
+            "both_requested": 1,
+            "cases": 1,
+            "joint_mass_rate_state_changed": 0,
+            "mean_axis_target_L1": {
+              "learner_mass_and_rates": 0.0,
+              "participation": 0.0,
+              "source_opinion_vintage": 0.0
+            },
+            "mean_cancelling_L1": 0.0,
+            "mean_net_target_displacement_L1": 0.0,
+            "native_opinion_clock_changed": 0,
+            "numeric_source_opinions_changed": 0,
+            "only_original_requested": 0,
+            "only_recent_requested": 0,
+            "participation_changed": 0,
+            "source_snapshot_date_changed": 0
+          },
+          "overall": {
+            "both_held": 56,
+            "both_requested": 62,
+            "cases": 121,
+            "joint_mass_rate_state_changed": 119,
+            "mean_axis_target_L1": {
+              "learner_mass_and_rates": 0.0088065525410582,
+              "participation": 0.014637162117763742,
+              "source_opinion_vintage": 0.0
+            },
+            "mean_cancelling_L1": 0.01026013630154734,
+            "mean_net_target_displacement_L1": 0.013183578357274602,
+            "native_opinion_clock_changed": 0,
+            "numeric_source_opinions_changed": 0,
+            "only_original_requested": 2,
+            "only_recent_requested": 1,
+            "participation_changed": 119,
+            "source_snapshot_date_changed": 0
+          },
+          "regular_month_end": {
+            "both_held": 56,
+            "both_requested": 61,
+            "cases": 120,
+            "joint_mass_rate_state_changed": 119,
+            "mean_axis_target_L1": {
+              "learner_mass_and_rates": 0.008879940478900351,
+              "participation": 0.014759138468745107,
+              "source_opinion_vintage": 0.0
+            },
+            "mean_cancelling_L1": 0.010345637437393567,
+            "mean_net_target_displacement_L1": 0.01329344151025189,
+            "native_opinion_clock_changed": 0,
+            "numeric_source_opinions_changed": 0,
+            "only_original_requested": 2,
+            "only_recent_requested": 1,
+            "participation_changed": 119,
+            "source_snapshot_date_changed": 0
+          }
         },
         "5y-base": {
-          "actual_tickets": 2130,
-          "below_USD1_tickets": 152,
-          "below_USD1_notional_USD": 51.347152558094265,
-          "below_USD10_tickets": 712,
-          "same_nominal_changed_fraction_fills": 168,
-          "same_nominal_changed_fraction_tickets": 1588,
-          "same_nominal_changed_fraction_ticket_share": 0.7455399061032864,
-          "same_issued_target_fills": 0,
-          "prefee_noop_to_executed_ticket_count": 0
+          "initial_capital": {
+            "both_held": 0,
+            "both_requested": 1,
+            "cases": 1,
+            "joint_mass_rate_state_changed": 1,
+            "mean_axis_target_L1": {
+              "learner_mass_and_rates": 0.6714939096402976,
+              "participation": 0.04928443531382552,
+              "source_opinion_vintage": 2.6229655073045862e-05
+            },
+            "mean_cancelling_L1": 0.08410886566193673,
+            "mean_net_target_displacement_L1": 0.6366957089472596,
+            "native_opinion_clock_changed": 1,
+            "numeric_source_opinions_changed": 1,
+            "only_original_requested": 0,
+            "only_recent_requested": 0,
+            "participation_changed": 1,
+            "source_snapshot_date_changed": 1
+          },
+          "overall": {
+            "both_held": 3,
+            "both_requested": 22,
+            "cases": 61,
+            "joint_mass_rate_state_changed": 61,
+            "mean_axis_target_L1": {
+              "learner_mass_and_rates": 0.7696725904707226,
+              "participation": 0.006990202746411604,
+              "source_opinion_vintage": 4.2999434545976825e-07
+            },
+            "mean_cancelling_L1": 0.005851375800201097,
+            "mean_net_target_displacement_L1": 0.7708118474112785,
+            "native_opinion_clock_changed": 1,
+            "numeric_source_opinions_changed": 1,
+            "only_original_requested": 2,
+            "only_recent_requested": 34,
+            "participation_changed": 58,
+            "source_snapshot_date_changed": 1
+          },
+          "regular_month_end": {
+            "both_held": 3,
+            "both_requested": 21,
+            "cases": 60,
+            "joint_mass_rate_state_changed": 60,
+            "mean_axis_target_L1": {
+              "learner_mass_and_rates": 0.7713089018178964,
+              "participation": 0.006285298870288039,
+              "source_opinion_vintage": 0.0
+            },
+            "mean_cancelling_L1": 0.004547084302505503,
+            "mean_net_target_displacement_L1": 0.7730471163856788,
+            "native_opinion_clock_changed": 0,
+            "numeric_source_opinions_changed": 0,
+            "only_original_requested": 2,
+            "only_recent_requested": 34,
+            "participation_changed": 57,
+            "source_snapshot_date_changed": 0
+          }
         },
         "5y-stress": {
-          "actual_tickets": 1844,
-          "below_USD1_tickets": 145,
-          "below_USD1_notional_USD": 47.925036519219084,
-          "below_USD10_tickets": 645,
-          "same_nominal_changed_fraction_fills": 138,
-          "same_nominal_changed_fraction_tickets": 1315,
-          "same_nominal_changed_fraction_ticket_share": 0.7131236442516269,
-          "same_issued_target_fills": 0,
-          "prefee_noop_to_executed_ticket_count": 0
+          "initial_capital": {
+            "both_held": 0,
+            "both_requested": 1,
+            "cases": 1,
+            "joint_mass_rate_state_changed": 1,
+            "mean_axis_target_L1": {
+              "learner_mass_and_rates": 0.6714939096402976,
+              "participation": 0.04928443531382552,
+              "source_opinion_vintage": 2.6229655073045862e-05
+            },
+            "mean_cancelling_L1": 0.08410886566193673,
+            "mean_net_target_displacement_L1": 0.6366957089472596,
+            "native_opinion_clock_changed": 1,
+            "numeric_source_opinions_changed": 1,
+            "only_original_requested": 0,
+            "only_recent_requested": 0,
+            "participation_changed": 1,
+            "source_snapshot_date_changed": 1
+          },
+          "overall": {
+            "both_held": 2,
+            "both_requested": 21,
+            "cases": 61,
+            "joint_mass_rate_state_changed": 61,
+            "mean_axis_target_L1": {
+              "learner_mass_and_rates": 0.7695152187783922,
+              "participation": 0.007925153100241226,
+              "source_opinion_vintage": 4.2999434545976825e-07
+            },
+            "mean_cancelling_L1": 0.0060539262401653185,
+            "mean_net_target_displacement_L1": 0.7713868756328136,
+            "native_opinion_clock_changed": 1,
+            "numeric_source_opinions_changed": 1,
+            "only_original_requested": 3,
+            "only_recent_requested": 35,
+            "participation_changed": 59,
+            "source_snapshot_date_changed": 1
+          },
+          "regular_month_end": {
+            "both_held": 2,
+            "both_requested": 20,
+            "cases": 60,
+            "joint_mass_rate_state_changed": 60,
+            "mean_axis_target_L1": {
+              "learner_mass_and_rates": 0.7711489072640272,
+              "participation": 0.007235831730014821,
+              "source_opinion_vintage": 0.0
+            },
+            "mean_cancelling_L1": 0.004753010583135795,
+            "mean_net_target_displacement_L1": 0.7736317284109062,
+            "native_opinion_clock_changed": 0,
+            "numeric_source_opinions_changed": 0,
+            "only_original_requested": 3,
+            "only_recent_requested": 35,
+            "participation_changed": 58,
+            "source_snapshot_date_changed": 0
+          }
         }
       },
       "new_financial_trials": 0,
+      "new_executable_recommendations_or_accounts": 0,
       "financial_result_or_qualification_changed": false,
-      "causal_fee_or_expert_alpha_attribution": false,
-      "independent_forward_validation": false,
+      "causal_profit_attribution_or_independent_forecast_validation": false,
       "investment_objective_verified": false,
       "order_authority": false
     },
@@ -7455,10 +7648,10 @@
     "funded_paths": 508,
     "combined_completed": 305,
     "qualified": 0,
-    "journal_summary_derived_at_utc": "2026-11-07T01:28:53.342087+00:00",
+    "journal_summary_derived_at_utc": "2026-11-07T02:14:13.144584+00:00",
     "latest_study_id": "ssd_main_risk_confidence_prod_20261107_v1",
     "latest_study_status": "complete_all_original_main_risk_confidence_paths_retained",
-    "snapshot_scope": "Allfour original actual-main confidence paths complete,exactcash/account/positions andcoupledlearning-prefixproofs retained;not a riskcertificateorisolatedconfidencecausality orindependentforwardvalidation.",
+    "snapshot_scope": "Financial6eda/J1518 remains305completed/zeroqualified. Separatesaved-decision contrast retains364pairs/2912algebraicviews/exact3axisShapley/20prefixes. Not executable recommendations or causal wealth attribution.",
     "latest_results": "research/workbench/evidence/main_risk_confidence_prod_20261107_results_v1.json",
     "latest_results_sha256": "6eda5c2291561bbaf9b204840e2b311abbeb29cd74b5571f27b1c77fca3187a8",
     "financial_result_snapshot_journal_sequence": 1518,
@@ -7886,6 +8079,69 @@
     "actual_review_sequence": 1518,
     "all_candidate_status": {
       "expert_pool_six_main_risk_confidence_prod_v1": "rejected"
+    },
+    "previous_read_only_before_confidence_decision_factorial": {
+      "study_id": "ssd_shield_ticket_anatomy_20261107_v1",
+      "status": "complete_sanitized_saved_ticket_anatomy",
+      "path": "research/workbench/evidence/shield_ticket_anatomy_20261107_v1.json",
+      "sha256": "ff29e96c60dd71ba86c0008270c69ac90cb766dd2fb59976e57933d396d98329",
+      "journal_snapshot": 1506,
+      "formal_return_rows": 7532,
+      "model_tickets": 9164,
+      "input_resolution_records": 15064,
+      "bit_exact_saved_record_prefixes": 20,
+      "actual_summary": {
+        "10y-base": {
+          "actual_tickets": 2795,
+          "below_USD1_tickets": 151,
+          "below_USD1_notional_USD": 44.01431383432639,
+          "below_USD10_tickets": 853,
+          "same_nominal_changed_fraction_fills": 205,
+          "same_nominal_changed_fraction_tickets": 1938,
+          "same_nominal_changed_fraction_ticket_share": 0.693381037567084,
+          "same_issued_target_fills": 1,
+          "prefee_noop_to_executed_ticket_count": 0
+        },
+        "10y-stress": {
+          "actual_tickets": 2395,
+          "below_USD1_tickets": 142,
+          "below_USD1_notional_USD": 40.33222688048109,
+          "below_USD10_tickets": 761,
+          "same_nominal_changed_fraction_fills": 165,
+          "same_nominal_changed_fraction_tickets": 1544,
+          "same_nominal_changed_fraction_ticket_share": 0.6446764091858037,
+          "same_issued_target_fills": 1,
+          "prefee_noop_to_executed_ticket_count": 0
+        },
+        "5y-base": {
+          "actual_tickets": 2130,
+          "below_USD1_tickets": 152,
+          "below_USD1_notional_USD": 51.347152558094265,
+          "below_USD10_tickets": 712,
+          "same_nominal_changed_fraction_fills": 168,
+          "same_nominal_changed_fraction_tickets": 1588,
+          "same_nominal_changed_fraction_ticket_share": 0.7455399061032864,
+          "same_issued_target_fills": 0,
+          "prefee_noop_to_executed_ticket_count": 0
+        },
+        "5y-stress": {
+          "actual_tickets": 1844,
+          "below_USD1_tickets": 145,
+          "below_USD1_notional_USD": 47.925036519219084,
+          "below_USD10_tickets": 645,
+          "same_nominal_changed_fraction_fills": 138,
+          "same_nominal_changed_fraction_tickets": 1315,
+          "same_nominal_changed_fraction_ticket_share": 0.7131236442516269,
+          "same_issued_target_fills": 0,
+          "prefee_noop_to_executed_ticket_count": 0
+        }
+      },
+      "new_financial_trials": 0,
+      "financial_result_or_qualification_changed": false,
+      "causal_fee_or_expert_alpha_attribution": false,
+      "independent_forward_validation": false,
+      "investment_objective_verified": false,
+      "order_authority": false
     }
   },
   "updated_on": "2026-10-31",

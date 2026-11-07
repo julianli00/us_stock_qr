@@ -45,6 +45,26 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
+### Read-only J1518 decision contrast: five-year learner state is the large target axis
+
+The [saved-decision contrast](research/workbench/evidence/confidence_decision_factorial_20261107_v1.json)
+keeps all364paired capital reviews and2,912retrospective algebraic views,
+without retraining learners or rerunning strategies/accounts.
+
+On five-year base/stress, the mean target-vector L1 contribution of saved
+learner mass/rate state is0.769673/0.769515, versus0.006990/0.007925 for
+current participation. The original source-opinion snapshot differs only at
+each five-year initialization; its mean contribution is about0.000000430.
+The large five-year target displacement therefore cannot simply be labelled
+a confidence-only change: fresh versus warm learning state also differs.
+
+These are exact, order-averaged arithmetic allocations of desired-target
+differences, **not causal return effects, new executable policies or realized
+turnover**. Absolute contributions can cancel and are not percentage shares.
+Twenty saved-input prefixes remain exact.
+**Zero new financial trials: J1518 / 305 completions / zero qualifiers.
+Financial result6eda and the unmet investment objective are unchanged.**
+
 ### Complete J1518 main-risk confidence: four verified paths, financial rejection
 
 The [complete monthly main-risk confidence results](research/workbench/evidence/main_risk_confidence_prod_20261107_results_v1.json)

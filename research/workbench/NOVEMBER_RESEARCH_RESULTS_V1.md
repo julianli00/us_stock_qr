@@ -4,6 +4,96 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Read-only J1518 saved-decision contrast: state, participation and opinion vintage
+
+The [complete descriptive contrast](evidence/confidence_decision_factorial_20261107_v1.json)
+inspects the newly closed main-risk confidence strategy against the saved
+original confidence-Prod control. It does not retrain either learner, call
+their weights/update/target generators, rerun sources/accounts/BT, recalculate
+CAGR/Sharpe/DD or evaluate a new executable policy.
+
+All364original initial/month-end capital review pairs remain:121/121/61/61.
+Each pair fixes three coordinates before inspection: joint saved raw masses
+and learning rates; recorded participation; source-opinion vectors. The eight
+crossings are retrospective algebraic views of information then known, not
+policies which actually ran or realized-wealth counterfactuals.
+
+### Fixed equal-order vector accounting, not return attribution
+
+| Saved path | Reviews | Mean state-axis target L1 | Mean participation-axis target L1 | Mean opinion-axis target L1 | Mean net target-displacement L1 |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| 10y-base | 121 | 0.008002976 | 0.014224259 | 0.000000000 | 0.013486127 |
+| 10y-stress | 121 | 0.008806553 | 0.014637162 | 0.000000000 | 0.013183578 |
+| 5y-base | 61 | 0.769672590 | 0.006990203 | 0.000000430 | 0.770811847 |
+| 5y-stress | 61 | 0.769515219 | 0.007925153 | 0.000000430 | 0.771386876 |
+
+L1 is the sum of absolute desired underlying-asset target fractions.
+It is not a return, dollar PnL, two-sided realized turnover or fee estimate.
+Each coordinate's signed displacement is allocated equally over all six
+factor orders; every exact rational contribution sum has zero residual.
+Absolute component magnitudes can cancel. Mean cancelling L1 is
+0.008741108/0.010260136/0.005851376/0.006053926 respectively, so component
+magnitudes are not additive percentage shares of net displacement.
+
+The raw mass/rate state differs at119/119/61/61 reviews, while participation
+differs at117/119/58/59. These are exact saved-value comparisons without a
+fitted significance threshold; changed-value counts alone do not measure
+economic importance. Five-year state-axis displacement is much larger than
+the current participation-axis displacement in this particular comparison.
+The fresh-versus-warm initialization and its subsequent state history
+cannot be attributed to a confidence-only intervention.
+
+### Capital initialization and native source updates are different clocks
+
+The old capital seed reads its last already-known saved master target, as
+the original frozen seed lookup specifies. At the two five-year initial
+anchors, that master snapshot is2021-09-30; the recent actual main review
+is2021-10-05. Some complete sources may already have newer opinions by then.
+The inspection preserves their actual stored native known-at dates; it
+does not invent a native policy refresh at capital initialization.
+
+Numerical source opinions differ only at the two five-year initial reviews,
+not on later matched month ends or either ten-year path. The equal-order
+opinion-axis L1 contribution at each of those two initial reviews is
+0.000026229655; averaging over61reviews gives0.000000429994.
+Thus this boundary is real but numerically small in the saved target contrast.
+A changed timestamp is never assumed to imply changed values.
+
+Actual saved request counts are64/64/24/24 for the original strategy and
+63/63/56/56 for the recent one. They come from stored issue/hold records,
+not a newly simulated holding-feedback path. Different capital/holding
+trajectories prevent assigning those request differences or eventual fees
+causally to one factor. No crossed view is sent to an account.
+
+### Actual verification and unchanged financial history
+
+First25synthetic checks and six preserved prototypes precede freeze`14f9ba08`.
+Actual checkpoint811 saved2026-11-07T02:07:36.009451+00:00 with
+covered_seq199173 and original native save199176 was prospectively linked
+before the single inspection. PID71505 exits0 after127.695897291seconds,
+Darwin peakRSS505569280bytes.
+
+All728actual input/resolution records are retained before/after inspection.
+The largest saved endpoint discrepancy is1.3638708635427298e-16; the
+independent160-digit Decimal discrepancy is3.2148742608831456e-160, within
+unchanged1e-12 coherence. Twenty independently retained saved-decision
+prefix inspections at1/2/12/half/full per path preserve every input and
+resolution hash. They are auxiliary checks, not twenty extra strategies.
+
+All raw masses, ratings, opinions, dated projections, eight-view vectors and
+contribution vectors remain private on the SSD. Only aggregates and hash
+references are published. Repeated horizons/cost scenarios are not
+independent observations; exact algebra is not causal profit attribution,
+forecast calibration or independent OOS/forward proof.
+
+**Zero new financial trials: J1518 / 141 registered / 127 completed /
+14 workflow terminations / zero pending / 508 verified funded paths /
+305 combined financial completions / zero qualifiers is unchanged.**
+Last financial6eda remains separate from this read-only81ab diagnosis;
+prior read-onlyff29, financialcaca/340b, every failure and original one-day
+prospective identity remain. Investment objective unmet; no next policy,
+capital cap, window or minimum-ticket threshold is selected here.
+
 ## Complete J1518 actual-main confidence: verified, but no joint financial pass
 
 The [complete actual outcome](evidence/main_risk_confidence_prod_20261107_results_v1.json)
