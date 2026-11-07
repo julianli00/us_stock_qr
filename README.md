@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 141 SSD identities, 126 completed, 14 retained technical-workflow terminations and one pending; 504 funded paths | Journal1507 preregistration: 304 combined completions, zero qualifiers; latest complete financial result remains J1506; investment goal remains unmet |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 141 SSD identities, 127 completed, 14 retained technical-workflow terminations and zero pending; 508 funded paths | Journal1518 complete financial summary: 305 combined completions, zero qualifiers; investment goal remains unmet |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -45,7 +45,34 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
-### Registered J1507 main-risk confidence: no historical main outputs yet
+### Complete J1518 main-risk confidence: four verified paths, financial rejection
+
+The [complete monthly main-risk confidence results](research/workbench/evidence/main_risk_confidence_prod_20261107_results_v1.json)
+retain all four original fresh accounts. Main risk now defines specialist
+participation, but is not a direct portfolio-risk cap.
+
+| Actual path | Net CAGR | RF Sharpe | Maximum DD |
+| --- | ---: | ---: | ---: |
+| 10y base | 19.231132% | 0.904224 | 29.101885% |
+| 10y stress | 18.125929% | 0.854014 | 28.818984% |
+| 5y base | 16.097576% | 0.881800 | 15.039323% |
+| 5y stress | 15.196579% | 0.825061 | 15.422617% |
+
+Net CAGR and matched-cost SPY pass4/4; Sharpe, maximum drawdown and QQQ
+each pass0/4. The five-year base drawdown is **above**15%, not a rounded pass.
+Model tickets are630/631/534/534, with actual fees
+USD927.50/1789.21/630.46/910.20 and annual two-sided turnover
+3.390703/3.405394/3.160884/3.162041.
+
+Every cash-frame/position bit matches and five coupled capital/learning
+prefixes are exact. Compared with the cached original Prod, all CAGR/Sharpe
+values fall and all drawdowns fall. The five-year learner also starts fresh
+instead of warm; these are whole-policy outcomes, not isolated confidence
+effects or independent forward evidence.
+**J1518 / 305 completed financial trials / zero qualifiers.
+Investment objective unmet.**
+
+### Preserved J1507 main-risk preregistration: no historical main outputs then
 
 The [independent decision-program registration](research/workbench/evidence/main_risk_confidence_prod_20261107_registration_v1.json)
 keeps the original six admitted experts and confidence-Prod learning kernel.

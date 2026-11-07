@@ -4,7 +4,69 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Registered J1507 actual-main confidence: original monthly execution, no real outputs yet
+## Complete J1518 actual-main confidence: verified, but no joint financial pass
+
+The [complete actual outcome](evidence/main_risk_confidence_prod_20261107_results_v1.json)
+retains the same frozen rule on every original full path. The six admitted
+source policies,119sealed source months, RF, initial DD peak, freshUSD10000,
+original5/20bp plus USD1tickets,1/2later opens and actual-holding band remain.
+No source learner, shadow, cached control or old account is replayed.
+
+| Actual path | Net CAGR | RF Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Actual fees USD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 10y-base | 19.231132% | 0.904224 | 29.101885% | 3.390703 | 630 | 927.50 |
+| 10y-stress | 18.125929% | 0.854014 | 28.818984% | 3.405394 | 631 | 1789.21 |
+| 5y-base | 16.097576% | 0.881800 | 15.039323% | 3.160884 | 534 | 630.46 |
+| 5y-stress | 15.196579% | 0.825061 | 15.422617% | 3.162041 | 534 | 910.20 |
+
+Review1518 rejects the complete rule. Strict net CAGR>12% and matched-cost
+SPY pass4/4; original extra stress/base-cost-SPY passes2/2. RF Sharpe>1,
+DD<=15% and QQQ each pass0/4, so no complete path qualifies. Five-year base
+DD15.039323% exceeds15%; it must not be rounded into acceptance.
+The participation rule therefore does not establish net main-capital risk
+control, even though its conditional learning-game checks pass.
+
+Compared with cached original confidence-Prod, every CAGR and Sharpe falls
+while every DD falls. Ten-year model tickets fall by11/10 and fees by
+USD13.84/13.12; five-year tickets rise by308each and fees byUSD281.71/216.69,
+despite lower five-year turnover. Stress ten-year turnover rises slightly;
+it falls in the other three paths. These are whole-policy comparisons.
+Five-year learning now has59fresh main-local updates instead of the old
+expanding warm-source context, so neither confidence alone nor fee removal
+can be assigned a causal wealth effect.
+
+All7,532original formal return rows and364monthly/initial decisions remain.
+Each actual close updates the main peak, including freshUSD10000; each
+prior-origin confidence governs that completed month's loss, not an
+end-month backdate. Independent learning checks confirm119/59full updates.
+The maximum160-versus100-digit state discrepancy is6.045128413409674e-98;
+the largest independent expert-fraction or rational-target gap is
+1.1102230246251565e-16, within the original1e-12.
+
+Every actual cash financial-column and position bit difference is zero.
+Complete actual/replay frames and positions precede unchanged exact
+assertions. Independent BT maximum equity difference is
+USD8.003553375601768e-11. Five new-policy prefixes at
+125/503/1006/1509/2012 retain both operands and exactly preserve account
+columns, positions, desired/issued targets and main-risk/learner decisions,
+including signed zero. They are auxiliary checks, not five extra trials.
+
+Actual remote preregistration`4092e634` and checkpoint806
+saved2026-11-07T01:20:14.020766+00:00, covered_seq198504 with original
+native save198507, were prospectively linked before the single new child.
+Publication fence1508 precedes original paths1509--1516, proof1517 and
+review1518. PID66438 exits0 after144.360955250seconds, peakRSS499994624bytes.
+Private full result`fa0270b1` and aggregate`6eda5c22` remain separate from
+original financial340b, shieldcaca and read-onlyff29. Exposed historical
+research is not independent OOS or forward proof.
+
+**J1518 / 141 registered / 127 completed / 14 workflow terminations /
+zero pending / 508 verified funded paths / 305 combined financial completions /
+zero qualifiers. Investment objective unmet.**
+All failures and prototype versions remain; no next rule or threshold is
+selected in this bounded round.
+
+## Preserved J1507 actual-main preregistration: original monthly execution, no real outputs then
 
 The [actual schema3registration](evidence/main_risk_confidence_prod_20261107_registration_v1.json)
 defines one independent economic question, not a daily shield repair or a
