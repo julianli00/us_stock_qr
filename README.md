@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 143 SSD identities, 129 completed, 14 retained technical-workflow terminations and zero pending; 516 funded paths | Journal1542: 307 combined completions, zero qualifiers; all four gap-adaptive switching-loss paths complete and rejected; investment goal remains unmet |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 143 SSD identities, 129 completed, 14 retained technical-workflow terminations and zero pending; 516 funded paths | Journal1542: 307 combined completions, zero qualifiers; the new read-only utility audit leaves all financial outcomes unchanged; investment goal remains unmet |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -44,6 +44,28 @@ November authorization.
 The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
+
+### Read-only J1542 utility geometry: rescaled evidence, not new source opinions
+
+The [retained source-utility audit](research/workbench/evidence/source_utility_geometry_20261107_v1.json)
+compares switching wealth and adaptive switching loss without another learner
+or account. All121source-opinion and known-date pairs match. All119monthly
+loss-utility vectors lie on their original NET-log utility rays within1e-12;
+there are no rank reversals or created/broken ties.
+
+Across7,140already-known past-month views, the stored rate and normalization
+give effective utility multipliers1.955291--208.446323 relative to raw logs.
+These are source-evidence units, **not position leverage or portfolio risk**.
+Relative historical-month utility magnitudes change by meanL1distance
+0.460828(max0.529524). The common rate cancels exactly from those119shares,
+but it does not cancel from the source posterior with its switching prior.
+
+Cached source-weight and underlying-target L1displacements average
+0.262929and0.149787. These are differences between saved recommendations,
+not realized turnover or causal return effects. The audit retains14,522
+input/result records and five exact prefixes.
+**Zero new financial trials: J1542 / 307 completions / zero qualifiers.
+Financialb011 and the unmet investment objective are unchanged.**
 
 ### Complete J1542 adaptive switching loss: higher returns, still rejected
 

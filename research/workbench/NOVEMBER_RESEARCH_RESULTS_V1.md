@@ -4,6 +4,90 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Read-only J1542 source utility geometry: normalization changes historical evidence magnitudes
+
+The [complete retained-utility audit](evidence/source_utility_geometry_20261107_v1.json)
+compares the newly completed switching-wealth and gap-adaptive switching-loss
+records. Both retain the same six complete experts, original source clocks
+and global warm source history. No old learner, utility model, target
+generator, shadow, main account, BT or earlier diagnosis is replayed.
+
+All121pairs of source-opinion signatures and known-at dates match exactly.
+All119original monthly negative-loss utility vectors agree with their
+centered NET-log utility ray within original1e-12. Maximum unscaled
+orthogonal residual is6.082927925286427e-17; there are zero strict rank
+reversals, created ties or broken ties. This is agreement within tolerance,
+not a claim that every binary64 residual is exactly zero.
+
+| Actual descriptive quantity | Observations | Minimum | Median | Mean | Maximum |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Unscaled normalized-loss/log-utility ray coefficient | 119 | 5.826847246 | 22.133884250 | 29.996913029 | 186.511093490 |
+| Stored-current-rate effective ray coefficient | 7140 | 1.955291275 | 10.446347375 | 14.421851712 | 208.446323215 |
+| Natural versus bounded historical-magnitude share L1distance | 119 | 0.000000000 | 0.466952854 | 0.460827581 | 0.529523688 |
+| Cached source-weight L1displacement | 121 | 0.000000000 | 0.240188449 | 0.262928602 | 0.691986493 |
+| Cached underlying-target L1displacement | 121 | 0.000000000 | 0.136066790 | 0.149787015 | 0.353733538 |
+
+The coefficients are dimensionless **source-utility evidence units**, not
+position sizes, borrowed capital or portfolio leverage. Normalization and
+the stored adaptive rate jointly amplify source evidence relative to raw
+NET logs; the amplification differs across the known historical months.
+Do not infer a new risk judgment merely from unchanged monthly rankings.
+The7140views repeat source months across successive stored rate origins;
+they are not7140independent observations or economic trials.
+
+A common finite positive rate cancels exactly from relative L1utility-
+magnitude shares at all119trained origins. These shares are neither source
+posterior importance nor calendar probability, marginal portfolio risk or
+allocation budgets. Scaling still matters to the posterior with its fixed
+switching prior. This result cannot be used to claim a rate-invariant learner
+or to attribute the previous Sharpe/drawdown changes to the rate alone.
+The two untrained analytic-infinite origins have explicitly undefined
+zero-magnitude shares, not uniform or successful-looking replacements.
+
+Parallel and orthogonal displacement energies add exactly in Fraction
+arithmetic. Their aggregate values are1018.0517087146355and
+3.403706296134704e-30, with orthogonal fraction3.3433530605553736e-33.
+The displayed total rounds to the parallel value; the nonzero residual is
+not deleted. This is geometric source-utility energy, **not a share of
+actual main profit, drawdown or causal capital risk**. Absolute vector
+components can cancel and are not additive L1percentage shares.
+
+The cached weight/target displacements above confirm different saved
+recommendations despite identical source opinions. They are not newly
+generated targets, requested trades or realized turnover. Original costs,
+delays, RF, fresh capital and all financial thresholds remain unchanged;
+no passing metric is spliced from either already completed rule.
+
+Keep121origins,119matured months,7140past-month cells and14522retained
+input/result records. Primary exact Fraction and independent160-digit
+Decimal results agree within5E-158; cached target-mixture error is at most
+1.0292822821787536e-16. Five original cutoffs preserve earlier result hashes;
+their complete retained input/result trace prefixes are also byte-checked
+before publication. No future labels or rates enter earlier views.
+
+The first synthetic attempt retains3passes/30failures from using a scalar
+Fraction encoder on nested records. A wrong-direction decimal parser was
+also found before real analysis. Representation, strict-iteration and test
+setup fixes precede the second34/34passes; both sets of six source prototypes
+remain. The earlier pre-capture nested-root-marker failure and its exact
+prototype are preserved, not counted as a financial rejection.
+
+Intent`20f681a1`, actual checkpoint828saved
+2026-11-07T05:43:45.158081+00:00(covered_seq201808, original native201811)
+and its prospective link precede the sole child. PID95790exits0 after
+112.81842741701985seconds, Darwin peakRSS733581312bytes. This is the actual
+observed resource measurement, not an invented memory limit.
+Private result`31f8fcc6` and sanitized aggregate`3b9b03ce` are separate.
+Raw source logs, losses, rates, utilities, states and targets remain private.
+
+**No new financial trial: J1542 / 143 registered / 129 completed /
+14 workflow terminations / zero pending / 516 funded paths /
+307 combined financial completions / zero qualifiers.**
+Financialb011, prior read-only81ab, all failures and original single-day
+prospective identities remain. Investment objective is unmet. No new
+policy, normalization threshold, temperature, prior or window is selected,
+and no independent forward or causal wealth claim follows.
+
 ## Complete J1542 gap-adaptive switching loss: exact source game, rejected financial rule
 
 The [complete actual result](evidence/expert_switching_loss_20261107_results_v1.json)

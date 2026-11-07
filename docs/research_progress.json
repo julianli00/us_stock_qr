@@ -126,258 +126,94 @@
       "order_authority": false
     },
     "latest_read_only_diagnosis": {
-      "study_id": "ssd_confidence_decision_factorial_20261107_v1",
-      "status": "complete_sanitized_saved_confidence_decision_factorial",
-      "path": "research/workbench/evidence/confidence_decision_factorial_20261107_v1.json",
-      "sha256": "81ab2d3833c5df03ee64df4187eb800414dfaba535d13dcbaa0f00c7ff275d7a",
-      "journal_snapshot": 1518,
-      "saved_decision_pairs": 364,
-      "algebraic_views": 2912,
-      "input_resolution_records": 728,
-      "saved_record_prefix_inspections": 20,
-      "exact_additivity_zero_residual": true,
+      "study_id": "ssd_source_utility_geometry_20261107_v1",
+      "status": "complete_sanitized_retained_source_utility_geometry",
+      "path": "research/workbench/evidence/source_utility_geometry_20261107_v1.json",
+      "sha256": "3b9b03ce7d530a2ec308ea1b16773c98725fbce68349760ddea3d44deea5f7c2",
+      "journal_snapshot": 1542,
+      "source_origins": 121,
+      "complete_source_months": 119,
+      "past_month_views": 7140,
+      "input_resolution_records": 14522,
+      "exact_prefix_inspections": 5,
       "actual_summary": {
-        "10y-base": {
-          "initial_capital": {
-            "both_held": 0,
-            "both_requested": 1,
-            "cases": 1,
-            "joint_mass_rate_state_changed": 0,
-            "mean_axis_target_L1": {
-              "learner_mass_and_rates": 0.0,
-              "participation": 0.0,
-              "source_opinion_vintage": 0.0
-            },
-            "mean_cancelling_L1": 0.0,
-            "mean_net_target_displacement_L1": 0.0,
-            "native_opinion_clock_changed": 0,
-            "numeric_source_opinions_changed": 0,
-            "only_original_requested": 0,
-            "only_recent_requested": 0,
-            "participation_changed": 0,
-            "source_snapshot_date_changed": 0
+        "analytic_infinite_origins": 2,
+        "cached_source_weight_L1": {
+          "maximum": 0.6919864925277313,
+          "mean": 0.2629286020818485,
+          "median": 0.24018844949391235,
+          "minimum": 0.0,
+          "observations": 121
+        },
+        "cached_underlying_target_L1": {
+          "maximum": 0.35373353845294175,
+          "mean": 0.14978701483167023,
+          "median": 0.1360667902781146,
+          "minimum": 0.0,
+          "observations": 121
+        },
+        "complete_source_months": 119,
+        "current_rate_effective_ray_scales": {
+          "maximum": 208.44632321509684,
+          "mean": 14.421851712202766,
+          "median": 10.446347374634712,
+          "minimum": 1.9552912746072086,
+          "observations": 7140
+        },
+        "history_utility_magnitude_shares": {
+          "common_positive_rate_cancellations_exact": 119,
+          "comparable_origins": 119,
+          "natural_versus_bounded_share_L1": {
+            "maximum": 0.5295236884751582,
+            "mean": 0.46082758084944786,
+            "median": 0.4669528536238911,
+            "minimum": 0.0,
+            "observations": 119
           },
-          "overall": {
-            "both_held": 52,
-            "both_requested": 58,
-            "cases": 121,
-            "joint_mass_rate_state_changed": 119,
-            "mean_axis_target_L1": {
-              "learner_mass_and_rates": 0.008002976230519685,
-              "participation": 0.014224259412187938,
-              "source_opinion_vintage": 0.0
-            },
-            "mean_cancelling_L1": 0.00874110843919404,
-            "mean_net_target_displacement_L1": 0.013486127203513583,
-            "native_opinion_clock_changed": 0,
-            "numeric_source_opinions_changed": 0,
-            "only_original_requested": 6,
-            "only_recent_requested": 5,
-            "participation_changed": 117,
-            "source_snapshot_date_changed": 0
-          },
-          "regular_month_end": {
-            "both_held": 52,
-            "both_requested": 57,
-            "cases": 120,
-            "joint_mass_rate_state_changed": 119,
-            "mean_axis_target_L1": {
-              "learner_mass_and_rates": 0.00806966769910735,
-              "participation": 0.014342794907289505,
-              "source_opinion_vintage": 0.0
-            },
-            "mean_cancelling_L1": 0.008813951009520657,
-            "mean_net_target_displacement_L1": 0.013598511596876197,
-            "native_opinion_clock_changed": 0,
-            "numeric_source_opinions_changed": 0,
-            "only_original_requested": 6,
-            "only_recent_requested": 5,
-            "participation_changed": 117,
-            "source_snapshot_date_changed": 0
+          "source_posterior_is_rate_invariant": false,
+          "undefined_zero_magnitude_origins": 2
+        },
+        "investment_objective_verified": false,
+        "maximum_cached_target_mixture_error": 1.0292822821787536e-16,
+        "maximum_independent_decimal_error": "5E-158",
+        "monthly_geometry": {
+          "affine_ray_within_original_tolerance_months": 119,
+          "bounded_flat_months": 0,
+          "broken_ties": 0,
+          "created_ties": 0,
+          "maximum_unscaled_ray_residual": 6.082927925286427e-17,
+          "natural_flat_months": 0,
+          "strict_rank_reversals": 0,
+          "unscaled_ray_slopes": {
+            "maximum": 186.51109349041778,
+            "mean": 29.996913029285405,
+            "median": 22.13388425000033,
+            "minimum": 5.826847245685129,
+            "observations": 119
           }
         },
-        "10y-stress": {
-          "initial_capital": {
-            "both_held": 0,
-            "both_requested": 1,
-            "cases": 1,
-            "joint_mass_rate_state_changed": 0,
-            "mean_axis_target_L1": {
-              "learner_mass_and_rates": 0.0,
-              "participation": 0.0,
-              "source_opinion_vintage": 0.0
-            },
-            "mean_cancelling_L1": 0.0,
-            "mean_net_target_displacement_L1": 0.0,
-            "native_opinion_clock_changed": 0,
-            "numeric_source_opinions_changed": 0,
-            "only_original_requested": 0,
-            "only_recent_requested": 0,
-            "participation_changed": 0,
-            "source_snapshot_date_changed": 0
-          },
-          "overall": {
-            "both_held": 56,
-            "both_requested": 62,
-            "cases": 121,
-            "joint_mass_rate_state_changed": 119,
-            "mean_axis_target_L1": {
-              "learner_mass_and_rates": 0.0088065525410582,
-              "participation": 0.014637162117763742,
-              "source_opinion_vintage": 0.0
-            },
-            "mean_cancelling_L1": 0.01026013630154734,
-            "mean_net_target_displacement_L1": 0.013183578357274602,
-            "native_opinion_clock_changed": 0,
-            "numeric_source_opinions_changed": 0,
-            "only_original_requested": 2,
-            "only_recent_requested": 1,
-            "participation_changed": 119,
-            "source_snapshot_date_changed": 0
-          },
-          "regular_month_end": {
-            "both_held": 56,
-            "both_requested": 61,
-            "cases": 120,
-            "joint_mass_rate_state_changed": 119,
-            "mean_axis_target_L1": {
-              "learner_mass_and_rates": 0.008879940478900351,
-              "participation": 0.014759138468745107,
-              "source_opinion_vintage": 0.0
-            },
-            "mean_cancelling_L1": 0.010345637437393567,
-            "mean_net_target_displacement_L1": 0.01329344151025189,
-            "native_opinion_clock_changed": 0,
-            "numeric_source_opinions_changed": 0,
-            "only_original_requested": 2,
-            "only_recent_requested": 1,
-            "participation_changed": 119,
-            "source_snapshot_date_changed": 0
-          }
-        },
-        "5y-base": {
-          "initial_capital": {
-            "both_held": 0,
-            "both_requested": 1,
-            "cases": 1,
-            "joint_mass_rate_state_changed": 1,
-            "mean_axis_target_L1": {
-              "learner_mass_and_rates": 0.6714939096402976,
-              "participation": 0.04928443531382552,
-              "source_opinion_vintage": 2.6229655073045862e-05
-            },
-            "mean_cancelling_L1": 0.08410886566193673,
-            "mean_net_target_displacement_L1": 0.6366957089472596,
-            "native_opinion_clock_changed": 1,
-            "numeric_source_opinions_changed": 1,
-            "only_original_requested": 0,
-            "only_recent_requested": 0,
-            "participation_changed": 1,
-            "source_snapshot_date_changed": 1
-          },
-          "overall": {
-            "both_held": 3,
-            "both_requested": 22,
-            "cases": 61,
-            "joint_mass_rate_state_changed": 61,
-            "mean_axis_target_L1": {
-              "learner_mass_and_rates": 0.7696725904707226,
-              "participation": 0.006990202746411604,
-              "source_opinion_vintage": 4.2999434545976825e-07
-            },
-            "mean_cancelling_L1": 0.005851375800201097,
-            "mean_net_target_displacement_L1": 0.7708118474112785,
-            "native_opinion_clock_changed": 1,
-            "numeric_source_opinions_changed": 1,
-            "only_original_requested": 2,
-            "only_recent_requested": 34,
-            "participation_changed": 58,
-            "source_snapshot_date_changed": 1
-          },
-          "regular_month_end": {
-            "both_held": 3,
-            "both_requested": 21,
-            "cases": 60,
-            "joint_mass_rate_state_changed": 60,
-            "mean_axis_target_L1": {
-              "learner_mass_and_rates": 0.7713089018178964,
-              "participation": 0.006285298870288039,
-              "source_opinion_vintage": 0.0
-            },
-            "mean_cancelling_L1": 0.004547084302505503,
-            "mean_net_target_displacement_L1": 0.7730471163856788,
-            "native_opinion_clock_changed": 0,
-            "numeric_source_opinions_changed": 0,
-            "only_original_requested": 2,
-            "only_recent_requested": 34,
-            "participation_changed": 57,
-            "source_snapshot_date_changed": 0
-          }
-        },
-        "5y-stress": {
-          "initial_capital": {
-            "both_held": 0,
-            "both_requested": 1,
-            "cases": 1,
-            "joint_mass_rate_state_changed": 1,
-            "mean_axis_target_L1": {
-              "learner_mass_and_rates": 0.6714939096402976,
-              "participation": 0.04928443531382552,
-              "source_opinion_vintage": 2.6229655073045862e-05
-            },
-            "mean_cancelling_L1": 0.08410886566193673,
-            "mean_net_target_displacement_L1": 0.6366957089472596,
-            "native_opinion_clock_changed": 1,
-            "numeric_source_opinions_changed": 1,
-            "only_original_requested": 0,
-            "only_recent_requested": 0,
-            "participation_changed": 1,
-            "source_snapshot_date_changed": 1
-          },
-          "overall": {
-            "both_held": 2,
-            "both_requested": 21,
-            "cases": 61,
-            "joint_mass_rate_state_changed": 61,
-            "mean_axis_target_L1": {
-              "learner_mass_and_rates": 0.7695152187783922,
-              "participation": 0.007925153100241226,
-              "source_opinion_vintage": 4.2999434545976825e-07
-            },
-            "mean_cancelling_L1": 0.0060539262401653185,
-            "mean_net_target_displacement_L1": 0.7713868756328136,
-            "native_opinion_clock_changed": 1,
-            "numeric_source_opinions_changed": 1,
-            "only_original_requested": 3,
-            "only_recent_requested": 35,
-            "participation_changed": 59,
-            "source_snapshot_date_changed": 1
-          },
-          "regular_month_end": {
-            "both_held": 2,
-            "both_requested": 20,
-            "cases": 60,
-            "joint_mass_rate_state_changed": 60,
-            "mean_axis_target_L1": {
-              "learner_mass_and_rates": 0.7711489072640272,
-              "participation": 0.007235831730014821,
-              "source_opinion_vintage": 0.0
-            },
-            "mean_cancelling_L1": 0.004753010583135795,
-            "mean_net_target_displacement_L1": 0.7736317284109062,
-            "native_opinion_clock_changed": 0,
-            "numeric_source_opinions_changed": 0,
-            "only_original_requested": 3,
-            "only_recent_requested": 35,
-            "participation_changed": 58,
-            "source_snapshot_date_changed": 0
-          }
+        "new_financial_trials": 0,
+        "old_learner_source_target_or_account_replayed": false,
+        "order_authority": false,
+        "past_month_utility_views": 7140,
+        "same_source_known_date_pairs": 121,
+        "same_source_opinion_pairs": 121,
+        "source_origins": 121,
+        "source_rate_or_forecast_regenerated": false,
+        "untrained_origins": 2,
+        "utility_energy": {
+          "additivity_exact": true,
+          "is_main_risk_or_wealth_attribution": false,
+          "orthogonal": 3.403706296134704e-30,
+          "orthogonal_energy_fraction": 3.3433530605553736e-33,
+          "parallel": 1018.0517087146355,
+          "total": 1018.0517087146355
         }
       },
       "new_financial_trials": 0,
       "new_executable_recommendations_or_accounts": 0,
       "financial_result_or_qualification_changed": false,
-      "causal_profit_attribution_or_independent_forecast_validation": false,
+      "causal_profit_attribution_or_independent_forward_validation": false,
       "investment_objective_verified": false,
       "order_authority": false
     },
@@ -8565,10 +8401,10 @@
     "funded_paths": 516,
     "combined_completed": 307,
     "qualified": 0,
-    "journal_summary_derived_at_utc": "2026-11-07T04:26:21.774658+00:00",
+    "journal_summary_derived_at_utc": "2026-11-07T06:02:55.419903+00:00",
     "latest_study_id": "ssd_expert_switching_loss_20261107_v1",
     "latest_study_status": "complete_all_original_adaptive_switching_loss_paths_retained",
-    "snapshot_scope": "Allfour original adaptive-loss fundedpaths complete,source121forecasts/119maturedlabels/current-rate refilter/independentgap-rate-partition/cash+positions+BT/source-capitalprefixproofs retained.No source-game wealth orstaticregret guarantee.",
+    "snapshot_scope": "Financialb011/J1542 remains307complete/zeroqualified. Separateretainedsource-utility geometry121origins/119months/7140pastviews/exactrationalenergy andrate-sharecancellation/5prefixes. Notposteriorimportance,causalmainwealth orqualification.",
     "latest_results": "research/workbench/evidence/expert_switching_loss_20261107_results_v1.json",
     "latest_results_sha256": "b011507c6d524767b143bb846a4e097d7bdf749aa3a530637e798c6e9c6585b4",
     "financial_result_snapshot_journal_sequence": 1542,
@@ -8965,6 +8801,262 @@
     "actual_review_sequence": 1542,
     "all_candidate_status": {
       "expert_pool_six_gap_adaptive_switching_loss_v1": "rejected"
+    },
+    "previous_read_only_before_source_utility_geometry": {
+      "study_id": "ssd_confidence_decision_factorial_20261107_v1",
+      "status": "complete_sanitized_saved_confidence_decision_factorial",
+      "path": "research/workbench/evidence/confidence_decision_factorial_20261107_v1.json",
+      "sha256": "81ab2d3833c5df03ee64df4187eb800414dfaba535d13dcbaa0f00c7ff275d7a",
+      "journal_snapshot": 1518,
+      "saved_decision_pairs": 364,
+      "algebraic_views": 2912,
+      "input_resolution_records": 728,
+      "saved_record_prefix_inspections": 20,
+      "exact_additivity_zero_residual": true,
+      "actual_summary": {
+        "10y-base": {
+          "initial_capital": {
+            "both_held": 0,
+            "both_requested": 1,
+            "cases": 1,
+            "joint_mass_rate_state_changed": 0,
+            "mean_axis_target_L1": {
+              "learner_mass_and_rates": 0.0,
+              "participation": 0.0,
+              "source_opinion_vintage": 0.0
+            },
+            "mean_cancelling_L1": 0.0,
+            "mean_net_target_displacement_L1": 0.0,
+            "native_opinion_clock_changed": 0,
+            "numeric_source_opinions_changed": 0,
+            "only_original_requested": 0,
+            "only_recent_requested": 0,
+            "participation_changed": 0,
+            "source_snapshot_date_changed": 0
+          },
+          "overall": {
+            "both_held": 52,
+            "both_requested": 58,
+            "cases": 121,
+            "joint_mass_rate_state_changed": 119,
+            "mean_axis_target_L1": {
+              "learner_mass_and_rates": 0.008002976230519685,
+              "participation": 0.014224259412187938,
+              "source_opinion_vintage": 0.0
+            },
+            "mean_cancelling_L1": 0.00874110843919404,
+            "mean_net_target_displacement_L1": 0.013486127203513583,
+            "native_opinion_clock_changed": 0,
+            "numeric_source_opinions_changed": 0,
+            "only_original_requested": 6,
+            "only_recent_requested": 5,
+            "participation_changed": 117,
+            "source_snapshot_date_changed": 0
+          },
+          "regular_month_end": {
+            "both_held": 52,
+            "both_requested": 57,
+            "cases": 120,
+            "joint_mass_rate_state_changed": 119,
+            "mean_axis_target_L1": {
+              "learner_mass_and_rates": 0.00806966769910735,
+              "participation": 0.014342794907289505,
+              "source_opinion_vintage": 0.0
+            },
+            "mean_cancelling_L1": 0.008813951009520657,
+            "mean_net_target_displacement_L1": 0.013598511596876197,
+            "native_opinion_clock_changed": 0,
+            "numeric_source_opinions_changed": 0,
+            "only_original_requested": 6,
+            "only_recent_requested": 5,
+            "participation_changed": 117,
+            "source_snapshot_date_changed": 0
+          }
+        },
+        "10y-stress": {
+          "initial_capital": {
+            "both_held": 0,
+            "both_requested": 1,
+            "cases": 1,
+            "joint_mass_rate_state_changed": 0,
+            "mean_axis_target_L1": {
+              "learner_mass_and_rates": 0.0,
+              "participation": 0.0,
+              "source_opinion_vintage": 0.0
+            },
+            "mean_cancelling_L1": 0.0,
+            "mean_net_target_displacement_L1": 0.0,
+            "native_opinion_clock_changed": 0,
+            "numeric_source_opinions_changed": 0,
+            "only_original_requested": 0,
+            "only_recent_requested": 0,
+            "participation_changed": 0,
+            "source_snapshot_date_changed": 0
+          },
+          "overall": {
+            "both_held": 56,
+            "both_requested": 62,
+            "cases": 121,
+            "joint_mass_rate_state_changed": 119,
+            "mean_axis_target_L1": {
+              "learner_mass_and_rates": 0.0088065525410582,
+              "participation": 0.014637162117763742,
+              "source_opinion_vintage": 0.0
+            },
+            "mean_cancelling_L1": 0.01026013630154734,
+            "mean_net_target_displacement_L1": 0.013183578357274602,
+            "native_opinion_clock_changed": 0,
+            "numeric_source_opinions_changed": 0,
+            "only_original_requested": 2,
+            "only_recent_requested": 1,
+            "participation_changed": 119,
+            "source_snapshot_date_changed": 0
+          },
+          "regular_month_end": {
+            "both_held": 56,
+            "both_requested": 61,
+            "cases": 120,
+            "joint_mass_rate_state_changed": 119,
+            "mean_axis_target_L1": {
+              "learner_mass_and_rates": 0.008879940478900351,
+              "participation": 0.014759138468745107,
+              "source_opinion_vintage": 0.0
+            },
+            "mean_cancelling_L1": 0.010345637437393567,
+            "mean_net_target_displacement_L1": 0.01329344151025189,
+            "native_opinion_clock_changed": 0,
+            "numeric_source_opinions_changed": 0,
+            "only_original_requested": 2,
+            "only_recent_requested": 1,
+            "participation_changed": 119,
+            "source_snapshot_date_changed": 0
+          }
+        },
+        "5y-base": {
+          "initial_capital": {
+            "both_held": 0,
+            "both_requested": 1,
+            "cases": 1,
+            "joint_mass_rate_state_changed": 1,
+            "mean_axis_target_L1": {
+              "learner_mass_and_rates": 0.6714939096402976,
+              "participation": 0.04928443531382552,
+              "source_opinion_vintage": 2.6229655073045862e-05
+            },
+            "mean_cancelling_L1": 0.08410886566193673,
+            "mean_net_target_displacement_L1": 0.6366957089472596,
+            "native_opinion_clock_changed": 1,
+            "numeric_source_opinions_changed": 1,
+            "only_original_requested": 0,
+            "only_recent_requested": 0,
+            "participation_changed": 1,
+            "source_snapshot_date_changed": 1
+          },
+          "overall": {
+            "both_held": 3,
+            "both_requested": 22,
+            "cases": 61,
+            "joint_mass_rate_state_changed": 61,
+            "mean_axis_target_L1": {
+              "learner_mass_and_rates": 0.7696725904707226,
+              "participation": 0.006990202746411604,
+              "source_opinion_vintage": 4.2999434545976825e-07
+            },
+            "mean_cancelling_L1": 0.005851375800201097,
+            "mean_net_target_displacement_L1": 0.7708118474112785,
+            "native_opinion_clock_changed": 1,
+            "numeric_source_opinions_changed": 1,
+            "only_original_requested": 2,
+            "only_recent_requested": 34,
+            "participation_changed": 58,
+            "source_snapshot_date_changed": 1
+          },
+          "regular_month_end": {
+            "both_held": 3,
+            "both_requested": 21,
+            "cases": 60,
+            "joint_mass_rate_state_changed": 60,
+            "mean_axis_target_L1": {
+              "learner_mass_and_rates": 0.7713089018178964,
+              "participation": 0.006285298870288039,
+              "source_opinion_vintage": 0.0
+            },
+            "mean_cancelling_L1": 0.004547084302505503,
+            "mean_net_target_displacement_L1": 0.7730471163856788,
+            "native_opinion_clock_changed": 0,
+            "numeric_source_opinions_changed": 0,
+            "only_original_requested": 2,
+            "only_recent_requested": 34,
+            "participation_changed": 57,
+            "source_snapshot_date_changed": 0
+          }
+        },
+        "5y-stress": {
+          "initial_capital": {
+            "both_held": 0,
+            "both_requested": 1,
+            "cases": 1,
+            "joint_mass_rate_state_changed": 1,
+            "mean_axis_target_L1": {
+              "learner_mass_and_rates": 0.6714939096402976,
+              "participation": 0.04928443531382552,
+              "source_opinion_vintage": 2.6229655073045862e-05
+            },
+            "mean_cancelling_L1": 0.08410886566193673,
+            "mean_net_target_displacement_L1": 0.6366957089472596,
+            "native_opinion_clock_changed": 1,
+            "numeric_source_opinions_changed": 1,
+            "only_original_requested": 0,
+            "only_recent_requested": 0,
+            "participation_changed": 1,
+            "source_snapshot_date_changed": 1
+          },
+          "overall": {
+            "both_held": 2,
+            "both_requested": 21,
+            "cases": 61,
+            "joint_mass_rate_state_changed": 61,
+            "mean_axis_target_L1": {
+              "learner_mass_and_rates": 0.7695152187783922,
+              "participation": 0.007925153100241226,
+              "source_opinion_vintage": 4.2999434545976825e-07
+            },
+            "mean_cancelling_L1": 0.0060539262401653185,
+            "mean_net_target_displacement_L1": 0.7713868756328136,
+            "native_opinion_clock_changed": 1,
+            "numeric_source_opinions_changed": 1,
+            "only_original_requested": 3,
+            "only_recent_requested": 35,
+            "participation_changed": 59,
+            "source_snapshot_date_changed": 1
+          },
+          "regular_month_end": {
+            "both_held": 2,
+            "both_requested": 20,
+            "cases": 60,
+            "joint_mass_rate_state_changed": 60,
+            "mean_axis_target_L1": {
+              "learner_mass_and_rates": 0.7711489072640272,
+              "participation": 0.007235831730014821,
+              "source_opinion_vintage": 0.0
+            },
+            "mean_cancelling_L1": 0.004753010583135795,
+            "mean_net_target_displacement_L1": 0.7736317284109062,
+            "native_opinion_clock_changed": 0,
+            "numeric_source_opinions_changed": 0,
+            "only_original_requested": 3,
+            "only_recent_requested": 35,
+            "participation_changed": 58,
+            "source_snapshot_date_changed": 0
+          }
+        }
+      },
+      "new_financial_trials": 0,
+      "new_executable_recommendations_or_accounts": 0,
+      "financial_result_or_qualification_changed": false,
+      "causal_profit_attribution_or_independent_forecast_validation": false,
+      "investment_objective_verified": false,
+      "order_authority": false
     }
   },
   "updated_on": "2026-10-31",
