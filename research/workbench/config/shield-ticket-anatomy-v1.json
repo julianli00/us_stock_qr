@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_shield_ticket_anatomy_20261107_v1",
+  "actual_native_event_seq": 197248,
+  "prior_journal_sequence": 1506,
+  "prior_combined_completed": 304,
+  "source_inputs": {
+    "path": "reports/ssd-continuous-research-v1/shield-ticket-anatomy-20261107-v1/source-inputs-v1.json",
+    "sha256": "d67bc2788ecea37516ba7bae3db498bbca7c0dd64b322e108085f7c3d5da7872"
+  },
+  "original_formal_rows": {
+    "10y-base": 2512,
+    "10y-stress": 2512,
+    "5y-base": 1254,
+    "5y-stress": 1254
+  },
+  "original_model_tickets": {
+    "10y-base": 2795,
+    "10y-stress": 2395,
+    "5y-base": 2130,
+    "5y-stress": 1844
+  },
+  "ticket_notional_threshold_USD": 0.000001,
+  "fixed_model_commission_USD": 1.0,
+  "notional_bucket_boundaries_USD": [1.0, 10.0, 100.0],
+  "bucket_lower_endpoint_included": true,
+  "money_coherence_USD": 0.000001,
+  "target_and_return_coherence": 0.000000000001,
+  "source_RF_exact_original_review_market": true,
+  "prefix_positions": [1, 21, 126, "half", "full"],
+  "provenance_compared_to_previous": "issued_instruction_not_unissued_review",
+  "fee_base_crossing": "prefee_gap_at_most_original_noop_but_executed_ticket_above",
+  "fee_base_component": "minus_known_issued_weight_times_actual_paid_fee",
+  "boundary_or_aggregate_tolerance_relaxed": false,
+  "strategy_account_solver_BT_or_old_diagnosis_replayed": false,
+  "source_CAGR_Sharpe_drawdown_or_qualification_recomputed": false,
+  "fee_free_or_fee_removed_policy_counterfactual_claimed": false,
+  "causal_fee_or_expert_alpha_attribution_claimed": false,
+  "new_financial_trials": 0,
+  "new_source_requests": 0,
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "order_authority": false
+}

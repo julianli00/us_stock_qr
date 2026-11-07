@@ -45,7 +45,21 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
-### Complete J1506 shield V2: drawdown passes, net performance rejected
+### Read-only J1506 ticket anatomy: risk-fraction changes, not repeated targets
+
+The [saved-ticket inspection](research/workbench/evidence/shield_ticket_anatomy_20261107_v1.json)
+retains all 7,532 formal days and 9,164 actual model tickets without replaying
+accounts. At 1,938/1,544/1,588/1,315 tickets, the filled target changes while
+the cached nominal opinion is unchanged. Exactly repeated targets account
+for only 1/1/0/0 fills; arithmetic prefee-noop-to-ticket crossings are zero.
+
+There are 151/142/152/145 tickets below USD1, with total notionals
+USD44.01/40.33/51.35/47.93 yet the original USD1 fixed fee on each ticket.
+These observations do not establish causal wealth effects or a fee-free
+policy, and the descriptive buckets are not new execution thresholds.
+**No new financial trial: J1506 / 304 completions / zero qualifiers.**
+
+### Preserved complete J1506 shield V2: drawdown passes, net performance rejected
 
 The [complete V2 outcome](research/workbench/evidence/execution_gap_shield_20261106_results_v2.json)
 retains all four original paths under one unchanged economic law.

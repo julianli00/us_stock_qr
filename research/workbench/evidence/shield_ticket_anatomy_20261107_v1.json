@@ -1,0 +1,281 @@
+{
+  "actual_authoritative_counts": {
+    "current_journal_event_count": 1506,
+    "current_journal_head_sha256": "e3979be6b5fb3ac3783e59c1232663aa6a27ea2be938941473e20b268467aadc",
+    "new_account_paths": 504,
+    "new_completed_strategy_evaluations": 126,
+    "new_historical_point_gate_passes": 0,
+    "new_pending_candidates": 0,
+    "new_registered_candidates": 140,
+    "new_reviews": 126,
+    "new_technical_failures": 14,
+    "original_completed_configurations": 178,
+    "original_registered_versions": 96,
+    "original_reviews": 94,
+    "total_legacy_plus_ssd_completed_configurations": 304
+  },
+  "all_twenty_saved_record_prefixes_bit_exact": true,
+  "causal_fee_or_expert_alpha_attribution_claimed": false,
+  "completed_at": "2026-11-07T00:19:22.375711+00:00",
+  "fee_free_or_fee_removed_policy_counterfactual_claimed": false,
+  "four_original_books": {
+    "10y-base": {
+      "actual_notional_USD": 440560.3109353181,
+      "causal_fee_or_expert_alpha_attribution": false,
+      "fee_base_identity_applicable_days": 293,
+      "filled_instruction_provenance": {
+        "changed_nominal_and_target": {
+          "paid_fees_USD": 898.9366448025019,
+          "scheduled_fills": 86,
+          "tickets": 836
+        },
+        "initial_funded_request": {
+          "paid_fees_USD": 15.892212815720296,
+          "scheduled_fills": 1,
+          "tickets": 11
+        },
+        "same_issued_target_rebalance": {
+          "paid_fees_USD": 10.382145156132042,
+          "scheduled_fills": 1,
+          "tickets": 10
+        },
+        "same_nominal_changed_fraction_target": {
+          "paid_fees_USD": 2090.069152693305,
+          "scheduled_fills": 205,
+          "tickets": 1938
+        }
+      },
+      "formal_rows": 2512,
+      "maximum_fee_base_identity_error_USD": 2.8403945862010005e-12,
+      "maximum_money_identity_error_USD": 4.4861891979053325e-12,
+      "maximum_return_identity_error": 0.0,
+      "model_tickets": 2795,
+      "new_financial_trials": 0,
+      "notional_buckets": {
+        "100_plus": {
+          "fixed_commission_USD": 794.0,
+          "notional_USD": 392759.4582117804,
+          "tickets": 794
+        },
+        "10_to_100": {
+          "fixed_commission_USD": 1148.0,
+          "notional_USD": 44784.354658905315,
+          "tickets": 1148
+        },
+        "1_to_10": {
+          "fixed_commission_USD": 702.0,
+          "notional_USD": 2972.4837507977068,
+          "tickets": 702
+        },
+        "below_1": {
+          "fixed_commission_USD": 151.0,
+          "notional_USD": 44.01431383432639,
+          "tickets": 151
+        }
+      },
+      "paid_fees_USD": 3015.280155467659,
+      "prefee_noop_to_executed_ticket_count": 0,
+      "scheduled_zero_ticket_fills": 0,
+      "unfilled_terminal_requests": [],
+      "unticketed_subthreshold_notional_USD": 0.0
+    },
+    "10y-stress": {
+      "actual_notional_USD": 324925.80306722247,
+      "causal_fee_or_expert_alpha_attribution": false,
+      "fee_base_identity_applicable_days": 253,
+      "filled_instruction_provenance": {
+        "changed_nominal_and_target": {
+          "paid_fees_USD": 1024.9489832353229,
+          "scheduled_fills": 86,
+          "tickets": 830
+        },
+        "initial_funded_request": {
+          "paid_fees_USD": 30.54014132300691,
+          "scheduled_fills": 1,
+          "tickets": 11
+        },
+        "same_issued_target_rebalance": {
+          "paid_fees_USD": 11.745486796926471,
+          "scheduled_fills": 1,
+          "tickets": 10
+        },
+        "same_nominal_changed_fraction_target": {
+          "paid_fees_USD": 1977.6169947791893,
+          "scheduled_fills": 165,
+          "tickets": 1544
+        }
+      },
+      "formal_rows": 2512,
+      "maximum_fee_base_identity_error_USD": 3.625544309215911e-12,
+      "maximum_money_identity_error_USD": 5.4569682106375694e-12,
+      "maximum_return_identity_error": 0.0,
+      "model_tickets": 2395,
+      "new_financial_trials": 0,
+      "notional_buckets": {
+        "100_plus": {
+          "fixed_commission_USD": 593.0,
+          "notional_USD": 283096.1057748396,
+          "tickets": 593
+        },
+        "10_to_100": {
+          "fixed_commission_USD": 1041.0,
+          "notional_USD": 39133.5649414373,
+          "tickets": 1041
+        },
+        "1_to_10": {
+          "fixed_commission_USD": 619.0,
+          "notional_USD": 2655.8001240647354,
+          "tickets": 619
+        },
+        "below_1": {
+          "fixed_commission_USD": 142.0,
+          "notional_USD": 40.33222688048109,
+          "tickets": 142
+        }
+      },
+      "paid_fees_USD": 3044.851606134445,
+      "prefee_noop_to_executed_ticket_count": 0,
+      "scheduled_zero_ticket_fills": 0,
+      "unfilled_terminal_requests": [],
+      "unticketed_subthreshold_notional_USD": 0.0
+    },
+    "5y-base": {
+      "actual_notional_USD": 524280.0548926629,
+      "causal_fee_or_expert_alpha_attribution": false,
+      "fee_base_identity_applicable_days": 226,
+      "filled_instruction_provenance": {
+        "changed_nominal_and_target": {
+          "paid_fees_USD": 557.3784842253491,
+          "scheduled_fills": 57,
+          "tickets": 531
+        },
+        "initial_funded_request": {
+          "paid_fees_USD": 15.892212815720297,
+          "scheduled_fills": 1,
+          "tickets": 11
+        },
+        "same_issued_target_rebalance": {
+          "paid_fees_USD": 0.0,
+          "scheduled_fills": 0,
+          "tickets": 0
+        },
+        "same_nominal_changed_fraction_target": {
+          "paid_fees_USD": 1818.8693304052617,
+          "scheduled_fills": 168,
+          "tickets": 1588
+        }
+      },
+      "formal_rows": 1254,
+      "maximum_fee_base_identity_error_USD": 3.1530333899354446e-12,
+      "maximum_money_identity_error_USD": 4.179767643108789e-12,
+      "maximum_return_identity_error": 0.0,
+      "model_tickets": 2130,
+      "new_financial_trials": 0,
+      "notional_buckets": {
+        "100_plus": {
+          "fixed_commission_USD": 639.0,
+          "notional_USD": 495243.7967868525,
+          "tickets": 639
+        },
+        "10_to_100": {
+          "fixed_commission_USD": 779.0,
+          "notional_USD": 26826.161748137794,
+          "tickets": 779
+        },
+        "1_to_10": {
+          "fixed_commission_USD": 560.0,
+          "notional_USD": 2158.749205114312,
+          "tickets": 560
+        },
+        "below_1": {
+          "fixed_commission_USD": 152.0,
+          "notional_USD": 51.347152558094265,
+          "tickets": 152
+        }
+      },
+      "paid_fees_USD": 2392.1400274463313,
+      "prefee_noop_to_executed_ticket_count": 0,
+      "scheduled_zero_ticket_fills": 0,
+      "unfilled_terminal_requests": [],
+      "unticketed_subthreshold_notional_USD": 0.0
+    },
+    "5y-stress": {
+      "actual_notional_USD": 375358.63552234747,
+      "causal_fee_or_expert_alpha_attribution": false,
+      "fee_base_identity_applicable_days": 194,
+      "filled_instruction_provenance": {
+        "changed_nominal_and_target": {
+          "paid_fees_USD": 654.9726933059504,
+          "scheduled_fills": 55,
+          "tickets": 518
+        },
+        "initial_funded_request": {
+          "paid_fees_USD": 30.54014132300691,
+          "scheduled_fills": 1,
+          "tickets": 11
+        },
+        "same_issued_target_rebalance": {
+          "paid_fees_USD": 0.0,
+          "scheduled_fills": 0,
+          "tickets": 0
+        },
+        "same_nominal_changed_fraction_target": {
+          "paid_fees_USD": 1909.204436415738,
+          "scheduled_fills": 138,
+          "tickets": 1315
+        }
+      },
+      "formal_rows": 1254,
+      "maximum_fee_base_identity_error_USD": 3.0482283364108298e-12,
+      "maximum_money_identity_error_USD": 7.275957614183426e-12,
+      "maximum_return_identity_error": 0.0,
+      "model_tickets": 1844,
+      "new_financial_trials": 0,
+      "notional_buckets": {
+        "100_plus": {
+          "fixed_commission_USD": 522.0,
+          "notional_USD": 351681.2012607707,
+          "tickets": 522
+        },
+        "10_to_100": {
+          "fixed_commission_USD": 677.0,
+          "notional_USD": 21641.801749199825,
+          "tickets": 677
+        },
+        "1_to_10": {
+          "fixed_commission_USD": 500.0,
+          "notional_USD": 1987.7074758575359,
+          "tickets": 500
+        },
+        "below_1": {
+          "fixed_commission_USD": 145.0,
+          "notional_USD": 47.925036519219084,
+          "tickets": 145
+        }
+      },
+      "paid_fees_USD": 2594.717271044695,
+      "prefee_noop_to_executed_ticket_count": 0,
+      "scheduled_zero_ticket_fills": 0,
+      "unfilled_terminal_requests": [],
+      "unticketed_subthreshold_notional_USD": 0.0
+    }
+  },
+  "independent_forward_validation": false,
+  "input_resolution_records": 15064,
+  "investment_objective_verified": false,
+  "new_financial_trials": 0,
+  "order_authority": false,
+  "original_formal_rows": 7532,
+  "private_diagnostic_sha256": "8bdbb13c437e1132cc1ecda631cb7d04fbb61240e36fdaab412ee6868226aac5",
+  "raw_prices_units_targets_daily_rows_or_per_ticket_rows_exported": false,
+  "record_type": "saved_shield_ticket_anatomy_aggregate",
+  "schema_version": 1,
+  "source_CAGR_Sharpe_drawdown_or_qualification_recomputed": false,
+  "source_complete_financial_result": {
+    "path": "evidence/execution_gap_shield_20261106_results_v2.json",
+    "sha256": "caca0b17b98051ad2881c96bced59d3759c0200dbfedd4f9bd05eb4a78091e4e"
+  },
+  "status": "complete_read_only_saved_ticket_anatomy",
+  "strategy_account_solver_BT_or_old_diagnosis_replayed": false,
+  "study_id": "ssd_shield_ticket_anatomy_20261107_v1"
+}

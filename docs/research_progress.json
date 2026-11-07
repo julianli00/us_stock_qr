@@ -126,106 +126,64 @@
       "order_authority": false
     },
     "latest_read_only_diagnosis": {
-      "study_id": "ssd_execution_gap_envelope_20261106_v1",
-      "status": "complete_sanitized_readonly_execution_gap_reference",
-      "path": "research/workbench/evidence/execution_gap_envelope_20261106_v1.json",
-      "sha256": "da7dfb9808ca28ba413722624dd28eae1b6bd17e4ef492868e02278abc04d5ec",
-      "journal_snapshot": 1490,
-      "saved_main_contexts": 364,
-      "input_resolution_records": 728,
-      "known_price_prefixes": 5,
+      "study_id": "ssd_shield_ticket_anatomy_20261107_v1",
+      "status": "complete_sanitized_saved_ticket_anatomy",
+      "path": "research/workbench/evidence/shield_ticket_anatomy_20261107_v1.json",
+      "sha256": "ff29e96c60dd71ba86c0008270c69ac90cb766dd2fb59976e57933d396d98329",
+      "journal_snapshot": 1506,
+      "formal_return_rows": 7532,
+      "model_tickets": 9164,
+      "input_resolution_records": 15064,
+      "bit_exact_saved_record_prefixes": 20,
       "actual_summary": {
-        "four_original_contexts": {
-          "10y-base": {
-            "actual_source_band_or_request_policy_reexecuted": false,
-            "conditional_reference_status_counts": {
-              "finite_interval_certified": 75,
-              "no_finite_sufficient_interval": 3,
-              "outside_at_current_mark": 11,
-              "unavoidable_prefill_reference_breach": 32,
-              "uncertified_conservative_cost_bound": 0
-            },
-            "feasible_display_fraction_min_mean_max": [
-              0.025198017560134713,
-              0.8622949521558636,
-              1.0
-            ],
-            "finite_support_is_future_or_full_month_guarantee": false,
-            "fully_known_historical_windows_examined": 186894,
-            "maximum_independent_scalar_money_error_USD": 2.1827872842550278e-11,
-            "saved_main_decisions": 121
-          },
-          "10y-stress": {
-            "actual_source_band_or_request_policy_reexecuted": false,
-            "conditional_reference_status_counts": {
-              "finite_interval_certified": 72,
-              "no_finite_sufficient_interval": 1,
-              "outside_at_current_mark": 15,
-              "unavoidable_prefill_reference_breach": 33,
-              "uncertified_conservative_cost_bound": 0
-            },
-            "feasible_display_fraction_min_mean_max": [
-              0.26198614734762443,
-              0.8949342317738544,
-              1.0
-            ],
-            "finite_support_is_future_or_full_month_guarantee": false,
-            "fully_known_historical_windows_examined": 186894,
-            "maximum_independent_scalar_money_error_USD": 1.4551915228366852e-11,
-            "saved_main_decisions": 121
-          },
-          "5y-base": {
-            "actual_source_band_or_request_policy_reexecuted": false,
-            "conditional_reference_status_counts": {
-              "finite_interval_certified": 26,
-              "no_finite_sufficient_interval": 3,
-              "outside_at_current_mark": 10,
-              "unavoidable_prefill_reference_breach": 22,
-              "uncertified_conservative_cost_bound": 0
-            },
-            "feasible_display_fraction_min_mean_max": [
-              0.2955018328523456,
-              0.7142387278309678,
-              1.0
-            ],
-            "finite_support_is_future_or_full_month_guarantee": false,
-            "fully_known_historical_windows_examined": 132568,
-            "maximum_independent_scalar_money_error_USD": 1.4551915228366852e-11,
-            "saved_main_decisions": 61
-          },
-          "5y-stress": {
-            "actual_source_band_or_request_policy_reexecuted": false,
-            "conditional_reference_status_counts": {
-              "finite_interval_certified": 24,
-              "no_finite_sufficient_interval": 0,
-              "outside_at_current_mark": 13,
-              "unavoidable_prefill_reference_breach": 24,
-              "uncertified_conservative_cost_bound": 0
-            },
-            "feasible_display_fraction_min_mean_max": [
-              0.29856604737843123,
-              0.7423679019707,
-              1.0
-            ],
-            "finite_support_is_future_or_full_month_guarantee": false,
-            "fully_known_historical_windows_examined": 132568,
-            "maximum_independent_scalar_money_error_USD": 1.0913936421275139e-11,
-            "saved_main_decisions": 61
-          }
+        "10y-base": {
+          "actual_tickets": 2795,
+          "below_USD1_tickets": 151,
+          "below_USD1_notional_USD": 44.01431383432639,
+          "below_USD10_tickets": 853,
+          "same_nominal_changed_fraction_fills": 205,
+          "same_nominal_changed_fraction_tickets": 1938,
+          "same_nominal_changed_fraction_ticket_share": 0.693381037567084,
+          "same_issued_target_fills": 1,
+          "prefee_noop_to_executed_ticket_count": 0
         },
-        "all_reference_status_counts": {
-          "outside_at_current_mark": 49,
-          "unavoidable_prefill_reference_breach": 111,
-          "uncertified_conservative_cost_bound": 0,
-          "finite_interval_certified": 197,
-          "no_finite_sufficient_interval": 7
+        "10y-stress": {
+          "actual_tickets": 2395,
+          "below_USD1_tickets": 142,
+          "below_USD1_notional_USD": 40.33222688048109,
+          "below_USD10_tickets": 761,
+          "same_nominal_changed_fraction_fills": 165,
+          "same_nominal_changed_fraction_tickets": 1544,
+          "same_nominal_changed_fraction_ticket_share": 0.6446764091858037,
+          "same_issued_target_fills": 1,
+          "prefee_noop_to_executed_ticket_count": 0
         },
-        "overlapping_historical_windows_examined": 638924,
-        "maximum_independent_scalar_money_error_USD": 2.1827872842550278e-11,
-        "finite_reference_is_future_or_full_month_guarantee": false
+        "5y-base": {
+          "actual_tickets": 2130,
+          "below_USD1_tickets": 152,
+          "below_USD1_notional_USD": 51.347152558094265,
+          "below_USD10_tickets": 712,
+          "same_nominal_changed_fraction_fills": 168,
+          "same_nominal_changed_fraction_tickets": 1588,
+          "same_nominal_changed_fraction_ticket_share": 0.7455399061032864,
+          "same_issued_target_fills": 0,
+          "prefee_noop_to_executed_ticket_count": 0
+        },
+        "5y-stress": {
+          "actual_tickets": 1844,
+          "below_USD1_tickets": 145,
+          "below_USD1_notional_USD": 47.925036519219084,
+          "below_USD10_tickets": 645,
+          "same_nominal_changed_fraction_fills": 138,
+          "same_nominal_changed_fraction_tickets": 1315,
+          "same_nominal_changed_fraction_ticket_share": 0.7131236442516269,
+          "same_issued_target_fills": 0,
+          "prefee_noop_to_executed_ticket_count": 0
+        }
       },
       "new_financial_trials": 0,
       "financial_result_or_qualification_changed": false,
+      "causal_fee_or_expert_alpha_attribution": false,
       "independent_forward_validation": false,
       "investment_objective_verified": false,
       "order_authority": false
@@ -6778,7 +6736,7 @@
     "latest_results_sha256": "caca0b17b98051ad2881c96bced59d3759c0200dbfedd4f9bd05eb4a78091e4e",
     "financial_result_snapshot_journal_sequence": 1506,
     "latest_results_belong_to_preceding_completed_financial_study": false,
-    "journal_summary_derived_at_utc": "2026-11-06T23:47:52.704001+00:00",
+    "journal_summary_derived_at_utc": "2026-11-07T00:22:33.350854+00:00",
     "latest_study_id": "ssd_execution_gap_shield_20261106_v2",
     "latest_study_status": "complete_all_original_V2_paths_retained",
     "complete_cohort_packet_schema": 3,
@@ -6801,7 +6759,7 @@
     "independent_forward_validation": false,
     "investment_objective_verified": false,
     "order_authority": false,
-    "snapshot_scope": "All four actual separately registered V2 paths complete; exact cash and new-policy prefix proofs retained. Same economic law68b3; V1terminal1494 remains unverified. No future/full-month guarantee.",
+    "snapshot_scope": "Financialcaca/J1506 remains304completed/zeroqualified. Separate saved-ticket anatomy retains7532days/9164tickets:small-dollar tickets and same-nominal fraction changes,zero arithmetic fee-base noop crossings. Not a fee-free policy or causal wealth attribution.",
     "actual_registered_frozen_sha256": "d465af81677f8985894124a303b77e93d8a2abd904f0538d7e26b303ebdf66e9",
     "latest_registrations": [
       {
@@ -7379,6 +7337,111 @@
     "actual_review_sequence": 1506,
     "all_candidate_status": {
       "expert_pool_six_execution_gap_shield_v2": "rejected"
+    },
+    "previous_read_only_before_shield_ticket_anatomy": {
+      "study_id": "ssd_execution_gap_envelope_20261106_v1",
+      "status": "complete_sanitized_readonly_execution_gap_reference",
+      "path": "research/workbench/evidence/execution_gap_envelope_20261106_v1.json",
+      "sha256": "da7dfb9808ca28ba413722624dd28eae1b6bd17e4ef492868e02278abc04d5ec",
+      "journal_snapshot": 1490,
+      "saved_main_contexts": 364,
+      "input_resolution_records": 728,
+      "known_price_prefixes": 5,
+      "actual_summary": {
+        "four_original_contexts": {
+          "10y-base": {
+            "actual_source_band_or_request_policy_reexecuted": false,
+            "conditional_reference_status_counts": {
+              "finite_interval_certified": 75,
+              "no_finite_sufficient_interval": 3,
+              "outside_at_current_mark": 11,
+              "unavoidable_prefill_reference_breach": 32,
+              "uncertified_conservative_cost_bound": 0
+            },
+            "feasible_display_fraction_min_mean_max": [
+              0.025198017560134713,
+              0.8622949521558636,
+              1.0
+            ],
+            "finite_support_is_future_or_full_month_guarantee": false,
+            "fully_known_historical_windows_examined": 186894,
+            "maximum_independent_scalar_money_error_USD": 2.1827872842550278e-11,
+            "saved_main_decisions": 121
+          },
+          "10y-stress": {
+            "actual_source_band_or_request_policy_reexecuted": false,
+            "conditional_reference_status_counts": {
+              "finite_interval_certified": 72,
+              "no_finite_sufficient_interval": 1,
+              "outside_at_current_mark": 15,
+              "unavoidable_prefill_reference_breach": 33,
+              "uncertified_conservative_cost_bound": 0
+            },
+            "feasible_display_fraction_min_mean_max": [
+              0.26198614734762443,
+              0.8949342317738544,
+              1.0
+            ],
+            "finite_support_is_future_or_full_month_guarantee": false,
+            "fully_known_historical_windows_examined": 186894,
+            "maximum_independent_scalar_money_error_USD": 1.4551915228366852e-11,
+            "saved_main_decisions": 121
+          },
+          "5y-base": {
+            "actual_source_band_or_request_policy_reexecuted": false,
+            "conditional_reference_status_counts": {
+              "finite_interval_certified": 26,
+              "no_finite_sufficient_interval": 3,
+              "outside_at_current_mark": 10,
+              "unavoidable_prefill_reference_breach": 22,
+              "uncertified_conservative_cost_bound": 0
+            },
+            "feasible_display_fraction_min_mean_max": [
+              0.2955018328523456,
+              0.7142387278309678,
+              1.0
+            ],
+            "finite_support_is_future_or_full_month_guarantee": false,
+            "fully_known_historical_windows_examined": 132568,
+            "maximum_independent_scalar_money_error_USD": 1.4551915228366852e-11,
+            "saved_main_decisions": 61
+          },
+          "5y-stress": {
+            "actual_source_band_or_request_policy_reexecuted": false,
+            "conditional_reference_status_counts": {
+              "finite_interval_certified": 24,
+              "no_finite_sufficient_interval": 0,
+              "outside_at_current_mark": 13,
+              "unavoidable_prefill_reference_breach": 24,
+              "uncertified_conservative_cost_bound": 0
+            },
+            "feasible_display_fraction_min_mean_max": [
+              0.29856604737843123,
+              0.7423679019707,
+              1.0
+            ],
+            "finite_support_is_future_or_full_month_guarantee": false,
+            "fully_known_historical_windows_examined": 132568,
+            "maximum_independent_scalar_money_error_USD": 1.0913936421275139e-11,
+            "saved_main_decisions": 61
+          }
+        },
+        "all_reference_status_counts": {
+          "outside_at_current_mark": 49,
+          "unavoidable_prefill_reference_breach": 111,
+          "uncertified_conservative_cost_bound": 0,
+          "finite_interval_certified": 197,
+          "no_finite_sufficient_interval": 7
+        },
+        "overlapping_historical_windows_examined": 638924,
+        "maximum_independent_scalar_money_error_USD": 2.1827872842550278e-11,
+        "finite_reference_is_future_or_full_month_guarantee": false
+      },
+      "new_financial_trials": 0,
+      "financial_result_or_qualification_changed": false,
+      "independent_forward_validation": false,
+      "investment_objective_verified": false,
+      "order_authority": false
     }
   },
   "updated_on": "2026-10-31",

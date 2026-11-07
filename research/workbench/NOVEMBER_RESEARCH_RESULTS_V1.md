@@ -4,7 +4,81 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Complete J1506 shield V2: verified accounting, rejected net economics
+## Read-only J1506 ticket anatomy: saved risk adjustments carry most tickets
+
+The [complete descriptive inspection](evidence/shield_ticket_anatomy_20261107_v1.json)
+links actual retained units, original admitted opens and original issued
+instructions, without replaying a strategy, source, account, rebalance solver,
+BT or prior diagnosis. All 7,532 formal days and 9,164 model tickets remain,
+including initialization and no-fill days; no source CAGR, Sharpe, drawdown
+or qualification is recomputed.
+
+### Fixed notional buckets, not proposed trading thresholds
+
+| Saved path | All tickets | Below USD1 | USD1 to below10 | USD10 to below100 | USD100 plus |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| 10y-base | 2795 | 151 | 702 | 1148 | 794 |
+| 10y-stress | 2395 | 142 | 619 | 1041 | 593 |
+| 5y-base | 2130 | 152 | 560 | 779 | 639 |
+| 5y-stress | 1844 | 145 | 500 | 677 | 522 |
+
+USD1/10/100 boundaries were frozen before new labels as fixed commission
+multiples. They are descriptive partitions, not a chosen minimum order,
+turnover cap, altered original USD1e-6 noop or a promised cost fix.
+The below-USD1 ticket notionals total only
+USD44.014314/40.332227/51.347153/47.925037 respectively, while the actual
+USD1-per-ticket fixed charges remain USD151/142/152/145.
+No fees are removed or compounded into a fictitious alternative NAV.
+
+### Previous issued values, not unissued reviews
+
+| Saved path | Same nominal/new fraction fills | Their tickets | Identical-target fills | Prefee-noop to charged-ticket crossings |
+| --- | ---: | ---: | ---: | ---: |
+| 10y-base | 205 | 1938 | 1 | 0 |
+| 10y-stress | 165 | 1544 | 1 | 0 |
+| 5y-base | 168 | 1588 | 0 | 0 |
+| 5y-stress | 138 | 1315 | 0 | 0 |
+
+The unchanged-nominal, changed-fraction group carries roughly64--75% of each
+book's tickets. Changed nominal/target instructions carry836/830/531/518
+tickets; real initialization carries11 in every book. Exactly repeated
+issued targets are rare in this saved scope. A refreshed monthly date with
+unchanged values is not conflated with a new numerical opinion or automatic
+execution. These are provenance categories, not isolated causal effects.
+
+The arithmetic fee-base crossing count is zero on all four books.
+For each retained asset coordinate, issued-weight times actual pre-open NAV
+minus held opening value plus minus issued-weight times the actual paid fee
+reconciles to executed unit-change dollars. The largest fee-base identity
+difference is USD3.625544309215911e-12; the largest cash/NAV/fee/notional
+difference is USD7.275957614183426e-12, within original USD1e-6.
+This rejects that specific observed noop-crossing explanation here, not all
+possible effects of transaction costs on future holdings or policy state.
+It is not a fee-free replay, causal fee attribution or proof that deleting
+small trades would meet financial goals.
+
+Every saved paid-fee and original ticket/notional total reconciles. There
+are no zero-ticket scheduled fills, terminal unfilled requests or nonzero
+subthreshold unticketed notionals in these particular four books; the
+Interface and synthetic checks retain those cases explicitly when present.
+The original canonical RF reader is unchanged. Twenty saved-record prefixes
+retain every prior input-derived scalar/provenance bit, including signed
+zero, without rerunning the underlying accounts.
+
+First25 synthetic checks, six versioned prototypes and freeze `1d8343f2`
+precede new real labels. Actual checkpoint800 saved
+2026-11-07T00:17:10.843201+00:00 with covered_seq197492 and original native
+event197495 was prospectively linked before the single inspection.
+PID61692 exits0 after55.573258917 seconds, peak RSS538,398,720 bytes.
+All15,064 input/resolution records remain privately on the SSD.
+
+**Zero new financial trials: J1506 / 140 registered / 126 completed /
+14 workflow terminations / zero pending / 504 verified funded paths /
+304 combined financial completions / zero qualifiers is unchanged.**
+The rejected financial result caca remains separate from this read-only
+inspection. Investment objective unmet; no new model or parameter is selected.
+
+## Preserved complete J1506 shield V2: verified accounting, rejected net economics
 
 The [complete new V2 results](evidence/execution_gap_shield_20261106_results_v2.json)
 retain one frozen economic law on every original full path, with no parameter
