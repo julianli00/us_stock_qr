@@ -4,7 +4,80 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Registered J1519 expert switching: dynamic source comparator, no real outputs yet
+## Complete J1530 expert switching: verified source sequence, rejected financial rule
+
+The [complete actual result](evidence/expert_switching_wealth_20261107_results_v1.json)
+retains one fixed Jeffreys switching-identity source-game law on every
+original full10y/5y/base/stress path. Six complete admitted policies and
+fourteen underlying assets remain; no source generator, old learner,
+fixed-policy integral, shadow, control or old account is replayed.
+
+| Actual path | Net CAGR | RF Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Actual fees USD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 10y-base | 13.176880% | 0.950610 | 18.519697% | 2.765426 | 1058 | 1282.46 |
+| 10y-stress | 12.653455% | 0.908501 | 18.080686% | 2.767142 | 1059 | 1942.64 |
+| 5y-base | 15.951858% | 1.002917 | 13.174355% | 2.805748 | 507 | 592.31 |
+| 5y-stress | 14.872562% | 0.921135 | 13.443374% | 2.816283 | 509 | 843.39 |
+
+Review1530 rejects the complete rule. Strict net CAGR>12% passes4/4;
+DD<=15%2/4, RF Sharpe>1 only1/4, matched-cost SPY2/4 and QQQ0/4.
+The original extra stress/base-cost-SPY gate passes1/2. The five-year base
+path clears CAGR/Sharpe/DD/SPY but fails QQQ. Its small historical Sharpe
+margin is not independent forward validation or permission to select a
+favorable path while ignoring the other three.
+
+Against the cached preceding main-risk confidence context, all CAGR and
+annual turnover values fall, while Sharpe improves and every DD falls.
+Ten-year tickets rise by428each and costs byUSD354.96/153.44 despite lower
+turnover. Five-year tickets fall by27/25 and costs byUSD38.15/66.81.
+The new global source learner also has different initialization and
+statistical history from the path-local main-risk learner. These are
+whole-policy comparisons, not an isolated hazard/cost causal effect.
+No fees are deleted to construct a hypothetical successful account.
+
+Actual rebalance sessions are105/105/52/52. Fixed USD1 commissions are
+82.497703%/54.513347%/85.596880%/60.351666% of paid costs.
+The final posterior mean latent source-switch rate is0.4954387372808506.
+That is a source-sequence prior statistic, not a market probability,
+physical rebalance frequency, realized turnover cap or funded wealth bound.
+
+One new causal source learner retains121initial/month-end decisions,
+119original complete NET source-log intervals and242input/result records.
+The initial partial month is untrained. Each old interval's forecast is
+recorded before assimilation; current evidence predicts the next identity.
+Maximum primary mass cells are714. Independent60-node hazard integration
+matches forecasts within8.326672684688674e-17, source log score within
+4.440892098500626e-16 and mean latent hazard within1.1102230246251565e-16.
+Rational underlying-target mixture error is at most5.551115123125783e-17,
+all inside unchanged1e-12. These validate a source-game calculation, not
+the financial acceptance gates.
+
+All7,532original formal return rows and364actual capital reviews remain.
+Every exact cash financial-column and position bit difference is zero.
+Both compared cash frames/position matrices precede unchanged assertions.
+Independent BT maximum equity difference isUSD4.3655745685100555e-11.
+Five new source and five new capital prefixes at125/503/1006/1509/2012
+retain both operands and preserve prior source forecasts/states/targets and
+actual main account/position/decision coordinates, including signed zero.
+These ten auxiliary checks are not ten independent economic trials.
+
+Actual remote preregistration`23754062` and checkpoint817 saved
+2026-11-07T03:09:48.231301+00:00 with covered_seq199992 and original
+native save199995 were prospectively linked before the only child.
+Publication fence1520 precedes new source learning and paths1521--1528,
+proof1529 and review1530. PID79920 exits0 after130.473403625seconds,
+Darwin peakRSS519630848bytes. Private full result`c806e454` and sanitized
+aggregate`bf47e1eb` remain distinct from old financial6eda/340b/caca and
+read-only81ab/ff29/da7d. No raw source/state/target or daily book is public.
+
+**J1530 / 142 registered / 128 completed / 14 workflow terminations /
+zero pending / 512 verified funded paths / 306 combined financial completions /
+zero qualifiers. Investment objective unmet.**
+Both synthetic attempts and all twelve prototypes remain, together with
+every prior failure and original single-day prospective identity.
+No next policy, hazard-prior sweep, window or execution threshold is selected.
+
+## Preserved J1519 expert switching preregistration: no real outputs then
 
 The [actual schema3registration](evidence/expert_switching_wealth_20261107_registration_v1.json)
 defines one new economic question over the original six admitted complete
