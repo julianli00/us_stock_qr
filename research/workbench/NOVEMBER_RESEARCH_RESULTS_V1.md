@@ -4,6 +4,61 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Registered J1531 gap-adaptive switching loss: new source utility, no real outputs yet
+
+The [actual schema3registration](evidence/expert_switching_loss_20261107_registration_v1.json)
+keeps the original six complete experts and uniform-identity/Jeffreys
+Beta-half-half switch prior. It uses their original saved binary64 bounded
+NET-loss labels rather than natural source-wealth relatives. No hazard
+prior, temperature, window or gain is selected from later portfolio outcomes.
+
+The new adaptive source Module records a prior-rate next-identity forecast,
+source played loss, mix loss and nonnegative gap for each matured source
+month. The rate is log-six divided by **past** cumulative mixability gap.
+Only after the label matures is the gap updated and the new source history
+refiltered at its new current rate. Keeping an old-rate posterior would be a
+different rule. Per-month common-loss centering is an analytic invariant;
+the original labels are unchanged.
+
+Exactly equal labels and zero-gap infinite-rate cases use their analytic
+identities. There is no negative-gap clipping, epsilon floor or repair of
+an old learner. No static finite-source AdaHedge reference bound is asserted
+for this different expert-sequence class. Source gaps, rates, partitions
+and posteriors are not main NET wealth, calibrated market probability,
+physical turnover or funded DD protection.
+
+Primary160-digit switch-count/identity integration is independently checked
+by60Chebyshev hazard nodes at the independently updated current rate.
+Both methods use only past original source labels and correctly weight hazard
+nodes by evidence. The degree119predictive numerator is covered.
+Cached complete-policy and memory Adapters use the same opinion Interface.
+No old source learner, gap model, target generator, shadow, account or
+diagnostic program is executed.
+
+All35first synthetic checks pass:119-matured-label gap/rate/partition/
+forecast/hazard coherence, finite expert-sequence enumeration, current-rate
+refilter rather than stale posterior power, analytic neutral/infinite
+limits, no invalid-input fallback, original source/capital clocks,
+actual schema3packet, retained full cash/position comparisons, independent
+BT and causal source/capital prefixes. Six exact source prototypes remain.
+
+Freeze intent`db6b7e9c` precedes checkpoint822 saved
+2026-11-07T04:02:37.938785+00:00, covered_seq200544 with original native
+save200547. Its prospective link precedes registration1531 at
+2026-11-07T04:05:09.804913+00:00; registered frozen body is`88680a41`.
+PID86441 exits0 after78.485397208seconds, peakRSS473645056bytes.
+No new real source gap/rate/forecast, target or funded account exists yet.
+Actual remote preregistration and an actual prefunding checkpoint still
+precede the one child required to preserve all four original funded paths.
+
+**J1531 / 143 registered / 128 completed / 14 workflow terminations /
+one pending / 512 verified funded paths / 306 combined financial completions /
+zero qualifiers. Investment objective unmet.**
+Financialbf47/J1530 and read-only81ab remain distinct preserved results;
+old failures, single-day prospective identities and source refusals stay
+unchanged. Synthetic source-game checks are not portfolio qualification
+or independent OOS/forward proof.
+
 ## Complete J1530 expert switching: verified source sequence, rejected financial rule
 
 The [complete actual result](evidence/expert_switching_wealth_20261107_results_v1.json)
