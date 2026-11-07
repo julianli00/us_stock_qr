@@ -4,6 +4,64 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Registered J1519 expert switching: dynamic source comparator, no real outputs yet
+
+The [actual schema3registration](evidence/expert_switching_wealth_20261107_registration_v1.json)
+defines one new economic question over the original six admitted complete
+policies. This is not a repair or approximation of the old constant
+four/five-policy Dirichlet integrals, three asset sleeves or ONS, nor another
+main-risk confidence or forgetting-rate sweep.
+
+Start with uniform expert identity. Put a fixed proper Jeffreys
+Beta-half-half prior over unknown monthly identity-switch rate; conditional
+on a switch, choose uniformly among the other five sources. Integrate the
+rate instead of selecting a gain, window or hazard from future outcomes.
+Sequences are scored by original positive complete NET source-month relatives.
+These are source-game scores, not actual main-account wealth or probability
+that a policy will meet financial gates.
+
+The new SwitchCountWealth Module tracks joint source identity and switch
+count behind advance/predict/snapshot. Cached original full-policy opinion
+records and memory opinion Adapters cross the same Interface; no old
+learner weights/update/target generator, shadow or account is invoked.
+The160-digit primary recursion has at most714mass cells. Its independent
+60-node first-kind Chebyshev filter correctly weights each hazard-node
+posterior by accumulated source evidence; degree119forecast numerators are
+covered, not only degree118historical likelihoods. Exact prior moments and
+finite expert-sequence enumeration exercise the distinct representation.
+
+Original119complete source months and121initial/month-end decisions remain.
+The initial partial month is untrained. At a matured source label, preserve
+the forecast before assimilation, update on that then-known log vector,
+then allocate the next interval. One global causal **source** learning history
+is shared by original fresh10y/5ycapital. This is not nonexistent pre-capital
+main NAV or risk history. Five-year capital uses its last already-known master
+opinion, not a new native policy refresh at initialization.
+
+The first synthetic attempt retains35passes and one test-setup AttributeError
+from naming a nonexistent old five-policy oracle. The corrected fixture
+forbids that actual independent_prefix_weights and PackedFiveMoments
+weights/update. The second complete suite passes36/36. No switching math,
+data, execution timing, RF or financial acceptance was changed; both sets
+of six source prototypes and every prior failure remain.
+
+Freeze intent`abf3471f` precedes actual checkpoint816 saved
+2026-11-07T02:57:01.480082+00:00, covered_seq199881 and original native
+save199884. Its prospective link precedes registration1519 at
+2026-11-07T02:59:29.210736+00:00; registered frozen body is`6ed2f9df`.
+PID78886 exits0 after74.955994167seconds, peakRSS461451264bytes.
+No new real source learning, forecast, target or account exists yet.
+Actual remote publication and a real prefunding checkpoint precede the
+single child that must retain every original funded path, source/capital
+prefix, full cash/position comparison and independent BT check.
+
+**J1519 / 142 registered / 127 completed / 14 workflow terminations /
+one pending / 508 verified funded paths / 305 combined financial completions /
+zero qualifiers. Investment objective unmet.**
+The complete financial6eda/J1518 and read-only81ab remain separate snapshots.
+Source-game integration cannot replace original Sharpe/CAGR/DD/SPY/QQQand
+extra gates; no independent OOS/forward proof or deployment authority follows.
+
 ## Read-only J1518 saved-decision contrast: state, participation and opinion vintage
 
 The [complete descriptive contrast](evidence/confidence_decision_factorial_20261107_v1.json)

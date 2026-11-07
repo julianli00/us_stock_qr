@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 141 SSD identities, 127 completed, 14 retained technical-workflow terminations and zero pending; 508 funded paths | Journal1518 complete financial summary: 305 combined completions, zero qualifiers; investment goal remains unmet |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 142 SSD identities, 127 completed, 14 retained technical-workflow terminations and one pending; 508 funded paths | Journal1519 preregistration: 305 combined completions, zero qualifiers; last complete financial result remains J1518; investment goal remains unmet |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -44,6 +44,28 @@ November authorization.
 The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
+
+### Registered J1519 expert-sequence mixture: no real source forecasts or accounts yet
+
+The [independent switching-program registration](research/workbench/evidence/expert_switching_wealth_20261107_registration_v1.json)
+keeps the six admitted complete experts but changes the source comparator
+from fixed policies/fractions to expert-identity sequences. Unknown monthly
+switch frequency has a fixed Jeffreys prior, integrated rather than tuned;
+a switch selects among the other five experts.
+
+One causal source learner uses original completed NET source months and
+forecasts the **next** identity after matured observations. Fresh five-year
+capital may use already-known source history without fabricating pre-capital
+main NAV/risk. Source-game scores and latent switch rates are not actual main
+wealth, calibrated market probability, physical turnover or a DD guarantee.
+
+Thirty-six synthetic checks pass, with the first test-setup failure and both
+source prototype sets preserved. Actual checkpoint816 and registration1519
+precede new real learning, forecasts, targets or capital. The schema3packet
+defers historical target proof; actual remote verification and a prefunding
+checkpoint still precede all four original fresh funded paths.
+**One pending identity; 305 completed financial trials / zero qualifiers.
+No performance result is claimed for this new rule.**
 
 ### Read-only J1518 decision contrast: five-year learner state is the large target axis
 
