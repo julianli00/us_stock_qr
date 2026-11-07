@@ -4,7 +4,80 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Read-only J1542 source utility geometry: normalization changes historical evidence magnitudes
+## Complete J1554 original AdaNormalHedge: original source units, rejected main-capital risk
+
+The [complete retained result](evidence/expert_adanormalhedge_20261107_results_v1.json)
+tests original fixed-expert Algorithm1 with the same six complete experts,
+fourteen assets and unchanged sealed source-loss labels. Expert-wise signed
+relative regret and cumulative absolute regret replace the previous common
+rate/switching evidence. No gain, hazard, prior or window is selected from
+the new main-capital outcomes.
+
+| Actual path | Net CAGR | RF Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Actual fees USD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 10y-base | 21.252745% | 0.911130 | 32.904938% | 3.903661 | 396 | 769.39 |
+| 10y-stress | 19.878285% | 0.855467 | 32.959017% | 3.905146 | 393 | 1823.28 |
+| 5y-base | 27.495861% | 1.079257 | 22.743366% | 4.660201 | 140 | 278.92 |
+| 5y-stress | 24.561574% | 0.970103 | 22.798775% | 4.632403 | 130 | 652.85 |
+
+Review1554 rejects the complete rule. Original strict CAGR>12% passes4/4,
+RF Sharpe>1 passes1/4, DD<=15% passes0/4, matched-cost SPY4/4 and QQQ3/4.
+The ten-year stress QQQ comparison fails; extra stress/base-cost-SPY passes2/2.
+Three CAGRs exceed the user's ultimate20% preference, but every drawdown
+violates15%. The five-year base Sharpe margin cannot qualify another path.
+
+Against the retained J1542 bounded-loss rule, all CAGRs, drawdowns and
+annual turnover rise. Three Sharpes improve, but ten-year stress Sharpe
+falls. Tickets and fees fall on all four paths; actual rebalance sessions
+are51/50/23/21. These are whole-policy observations, not isolated causal
+effects or proof that risk/turnover objectives have been solved.
+Original one/two-session delays, base5bps/stress20bps per side, USD1
+offline tickets, fresh USD10000 and original RF remain. There are zero
+broker orders, no leverage and no averaged expert capital accounts.
+
+The primary320-digit and independent160-digit positive-polynomial
+Implementations keep separate source states. All119matured intervals,
+121decisions and242before/after records remain. Float forecast, regret
+and magnitude differences are zero; played-loss discrepancy is at most
+8.364251144548459e-153 and target-mixture error1.1102230246251565e-16.
+These are source-game checks, not net portfolio wealth guarantees.
+Equal-label arithmetic is neutral without a floor; an all-zero score uses
+the declared uniform source prior without resetting regret/magnitude.
+
+Every original formal return row and all364capital decisions remain.
+All compared cash financial-column and position bits match exactly.
+Independent BT maximum equity difference isUSD1.3096723705530167e-10.
+Five source and five capital prefixes at125/503/1006/1509/2012 retain
+exact earlier source states/targets and actual main books/decisions.
+These ten auxiliary checks are not ten new economic trials.
+
+First synthetics retain33passes/3failures. Equal-label rounding, a test
+caller's implicit28-digit absolute value and stale borrowed globals were
+corrected before the second46/46passes and immutable freeze. Both versions'
+six exact code/test prototypes, XML, logs and runner receipts remain.
+Direct, borrowed and alias content-read/hash guards are tested with fakes;
+the protected stored-main-cost configuration is not accessed again.
+Its old SHA is archival, not a fresh live validation success.
+The retired one-time native probe is not reused or a future permission guarantee.
+
+Intent`f266f610`, actual freeze checkpoint920, registration`28863c9b`,
+schema3packet`7a353f00` and exact remote preregistration`1bf0c4e` precede
+actual prefunding checkpoint921:2026-11-07T12:51:32.884153+00:00,
+covered_seq208308. Start`ef02368e` at12:56:31.310166+00:00 precedes
+sole quantitative child19207, observer19206. It exits0 after
+140.77137133298675seconds, Darwin peakRSS453111808bytes.
+Private full result`e69d506b` and sanitized aggregate`6a6cd8c6` are separate.
+No source rows, states, targets, prices or daily books are published.
+
+**J1554 / 144 registered / 130 completed / 14 retained workflow terminations /
+zero pending / 520 funded paths / 308 combined financial completions /
+zero qualifiers. Investment objective unmet.**
+All earlier failures, financialb011, read-only3b9b and original single-day
+prospective identities remain. Next research must address actual main-capital
+risk rather than retune a common source-evidence scalar or relax the gates.
+No independent forward result or trading authority is claimed.
+
+## Read-only J1542 source utility geometry: preserved historical diagnosis
 
 The [complete retained-utility audit](evidence/source_utility_geometry_20261107_v1.json)
 compares the newly completed switching-wealth and gap-adaptive switching-loss

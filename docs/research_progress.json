@@ -1,6 +1,118 @@
 {
   "schema_version": 1,
   "current_ssd_journal_summary": {
+    "journal_sequence": 1554,
+    "journal_head_sha256": "bc187b91eaac1cd1e206167ec62f0c97778bc7ee22bbc1c187822e748843a9cb",
+    "legacy_completed": 178,
+    "registered": 144,
+    "completed": 130,
+    "technical_failures": 14,
+    "pending": 0,
+    "funded_paths": 520,
+    "combined_completed": 308,
+    "qualified": 0,
+    "journal_summary_derived_at_utc": "2026-11-07T14:12:54.965530+00:00",
+    "latest_study_id": "ssd_expert_adanormalhedge_20261107_v1",
+    "latest_study_status": "complete_all_original_AdaNormalHedge_paths_retained_rejected",
+    "snapshot_scope": "One new original six-expert AdaNormalHedge financial rule completed. All four drawdowns fail15%; only five-year base Sharpe passes. Higher returns and three CAGRs above20% do not qualify the rule. J1554/308complete/zeroqualified; all prior financial and read-only evidence preserved.",
+    "latest_results": "research/workbench/evidence/expert_adanormalhedge_20261107_results_v1.json",
+    "latest_results_sha256": "6a6cd8c69b7609eaec3c271e8dcc780edc066aaf1a071f32217d90c964a25074",
+    "financial_result_snapshot_journal_sequence": 1554,
+    "latest_results_belong_to_preceding_completed_financial_study": false,
+    "financial_program_freeze_sha256": "f266f610d63e264d028598f04d48f766fc8d45d171f858894ac26b95c7088814",
+    "actual_registered_frozen_sha256": "518ca1a84205c08d4cb53f962427654b13eae0e3d10e4fdeee7af57a8f9bead1",
+    "latest_registrations": [
+      {
+        "candidate_id": "expert_pool_six_adanormalhedge_v1",
+        "sequence": 1543,
+        "at": "2026-11-07T12:31:39.821971+00:00",
+        "sha256": "28863c9ba236ab8ba236791b8432b17e01b80ed955225c958539dcc499eba3f9",
+        "packet": "research/workbench/evidence/expert_adanormalhedge_20261107_registration_v1.json",
+        "packet_sha256": "7a353f00d8882f00854e1722809f159c41a74183195e2afbeb2a2e358b4704e5"
+      }
+    ],
+    "complete_cohort_packet_schema": 3,
+    "fixed_financial_cohort_size": 1,
+    "candidate_accounts_or_metrics_computed": true,
+    "new_complete_financial_metrics_available": true,
+    "historical_target_proof_complete": true,
+    "actual_new_formal_funded_paths": 4,
+    "planned_original_funded_paths": 4,
+    "actual_remote_publication_required_before_funding": true,
+    "actual_remote_publication_verified_before_accounts": true,
+    "actual_preregistration_commit": "1bf0c4e48f84ea56899aadf2238994f12b04ba07",
+    "source_comparator": "unchanged_sealed_six_matured_input_loss_labels",
+    "source_allocation_algorithm": "AdaNormalHedge_original_fixed_expert_Algorithm1",
+    "primary_decimal_precision": 320,
+    "independent_decimal_precision": 160,
+    "all_zero_source_scores": "logged_uniform_prior_without_regret_state_reset",
+    "source_regret_potential_is_actual_main_wealth_or_bound": false,
+    "weight_floor_or_regret_clipping": false,
+    "planned_complete_source_intervals": 119,
+    "planned_source_decisions": 121,
+    "shared_source_history_is_actual_main_capital_history": false,
+    "five_year_source_learning_state_reset": false,
+    "source_expert_pool_or_admission_changed": false,
+    "old_source_learner_or_account_replayed": false,
+    "new_source_requests": 0,
+    "new_source_RF_views": 0,
+    "actual_broker_orders": 0,
+    "independent_forward_validation": false,
+    "investment_objective_verified": false,
+    "actual_funded_process_wall_seconds": 140.77137133298675,
+    "actual_funded_process_Darwin_peak_RSS_bytes": 453111808,
+    "order_authority": false,
+    "actual_four_path_outcome_and_cost_rows": {
+      "10y-base": {
+        "path_key": "10y-base",
+        "metrics": {"cagr": 0.21252744909504062, "sharpe": 0.9111303424254121, "max_drawdown": 0.32904938125038796, "sessions": 2512},
+        "execution": {"annualized_two_sided_turnover": 3.9036614779589107, "model_order_count": 396, "total_cost_usd": 769.3858944012102},
+        "gates": {"beats_qqq": true, "beats_spy": true, "cagr_above_12pct": true, "drawdown_at_most_15pct": false, "sharpe_above_1": false},
+        "all_point_gates_pass": false,
+        "independent_bt_max_equity_difference_usd": 1.3096723705530167e-10
+      },
+      "10y-stress": {
+        "path_key": "10y-stress",
+        "metrics": {"cagr": 0.19878285480116165, "sharpe": 0.8554669908275074, "max_drawdown": 0.32959017261883394, "sessions": 2512},
+        "execution": {"annualized_two_sided_turnover": 3.9051461999528985, "model_order_count": 393, "total_cost_usd": 1823.2800459486857},
+        "gates": {"also_beats_base_cost_spy": true, "beats_qqq": false, "beats_spy": true, "cagr_above_12pct": true, "drawdown_at_most_15pct": false, "sharpe_above_1": false},
+        "all_point_gates_pass": false,
+        "independent_bt_max_equity_difference_usd": 5.820766091346741e-11
+      },
+      "5y-base": {
+        "path_key": "5y-base",
+        "metrics": {"cagr": 0.274958609848003, "sharpe": 1.0792568399213085, "max_drawdown": 0.2274336637983272, "sessions": 1254},
+        "execution": {"annualized_two_sided_turnover": 4.660201489285327, "model_order_count": 140, "total_cost_usd": 278.9168741682038},
+        "gates": {"beats_qqq": true, "beats_spy": true, "cagr_above_12pct": true, "drawdown_at_most_15pct": false, "sharpe_above_1": true},
+        "all_point_gates_pass": false,
+        "independent_bt_max_equity_difference_usd": 1.0913936421275139e-11
+      },
+      "5y-stress": {
+        "path_key": "5y-stress",
+        "metrics": {"cagr": 0.24561573732775033, "sharpe": 0.9701032939623482, "max_drawdown": 0.2279877483584256, "sessions": 1254},
+        "execution": {"annualized_two_sided_turnover": 4.632402720437219, "model_order_count": 130, "total_cost_usd": 652.849618802855},
+        "gates": {"also_beats_base_cost_spy": true, "beats_qqq": true, "beats_spy": true, "cagr_above_12pct": true, "drawdown_at_most_15pct": false, "sharpe_above_1": false},
+        "all_point_gates_pass": false,
+        "independent_bt_max_equity_difference_usd": 2.546585164964199e-11
+      }
+    },
+    "actual_source_forecast_verification": {
+      "source_decisions": 121,
+      "complete_source_intervals": 119,
+      "input_resolution_records": 242,
+      "maximum_independent_forecast_difference": 0.0,
+      "maximum_independent_regret_difference": 0.0,
+      "maximum_independent_magnitude_difference": 0.0,
+      "maximum_independent_played_difference": 8.364251144548459e-153,
+      "maximum_independent_target_difference": 1.1102230246251565e-16,
+      "all_source_inputs_matured_before_next_forecast": true,
+      "source_regret_potential_is_actual_main_wealth_or_bound": false,
+      "source_prefixes_exact": 5,
+      "capital_prefixes_exact": 5,
+      "all_four_cash_financial_columns_and_positions_exact": true
+    },
+    "actual_review_sequence": 1554,
+    "all_candidate_status": {"expert_pool_six_adanormalhedge_v1": "rejected"},
     "latest_technical_failure": {
       "candidate_id": "expert_pool_six_execution_gap_shield_v1",
       "sequence": 1494,
@@ -10,6 +122,16 @@
       "public_failure_sha256": "b2ca65004c9b6195667f3fa78062327432672d61e30405f4b1285bb40f2c373d"
     },
     "previous_complete_financial_study": {
+      "study_id": "ssd_expert_switching_loss_20261107_v1",
+      "journal_sequence": 1542,
+      "status": "rejected_all_original_paths_retained",
+      "results": "research/workbench/evidence/expert_switching_loss_20261107_results_v1.json",
+      "results_sha256": "b011507c6d524767b143bb846a4e097d7bdf749aa3a530637e798c6e9c6585b4",
+      "complete_previous_projection_commit": "48914fe42bacfdd137a8856663dda711f25e64df",
+      "complete_previous_projection_path": "docs/research_progress.json",
+      "snapshot_is_current": false
+    },
+    "preserved_previous_complete_financial_study_before_adanormalhedge": {
       "study_id": "ssd_median_equity_budget_20261106_v1",
       "journal_sequence": 1381,
       "status": "complete_policy_rejected_all_original_paths_retained",
@@ -8391,6 +8513,7 @@
         "expert_pool_six_universal_switching_wealth_v1": "rejected"
       }
     },
+    "preserved_financial_before_adanormalhedge_J1542": {
     "journal_sequence": 1542,
     "journal_head_sha256": "efa86b900b0a476f517519a429a5604fd2c109e242b59d6e17534fb90da2c8a0",
     "legacy_completed": 178,
@@ -8801,6 +8924,7 @@
     "actual_review_sequence": 1542,
     "all_candidate_status": {
       "expert_pool_six_gap_adaptive_switching_loss_v1": "rejected"
+    }
     },
     "previous_read_only_before_source_utility_geometry": {
       "study_id": "ssd_confidence_decision_factorial_20261107_v1",

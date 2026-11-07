@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 143 SSD identities, 129 completed, 14 retained technical-workflow terminations and zero pending; 516 funded paths | Journal1542: 307 combined completions, zero qualifiers; the new read-only utility audit leaves all financial outcomes unchanged; investment goal remains unmet |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 144 SSD identities, 130 completed, 14 retained technical-workflow terminations and zero pending; 520 funded paths | Journal1554: 308 combined completions, zero qualifiers; original AdaNormalHedge is financially rejected despite higher returns; investment goal remains unmet |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -45,7 +45,43 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
-### Read-only J1542 utility geometry: rescaled evidence, not new source opinions
+### Complete J1554 original AdaNormalHedge: higher returns, excessive drawdown
+
+The [complete original-potential result](research/workbench/evidence/expert_adanormalhedge_20261107_results_v1.json)
+keeps the same six complete experts and original source-loss labels.
+Expert-wise signed relative regret and cumulative absolute regret determine
+the original Algorithm1 potential; no common gain, hazard or window is tuned.
+The source potential is not a guarantee about actual net main capital.
+
+| Actual path | Net CAGR | RF Sharpe | Maximum DD |
+| --- | ---: | ---: | ---: |
+| 10y base | 21.252745% | 0.911130 | 32.904938% |
+| 10y stress | 19.878285% | 0.855467 | 32.959017% |
+| 5y base | 27.495861% | 1.079257 | 22.743366% |
+| 5y stress | 24.561574% | 0.970103 | 22.798775% |
+
+Strict CAGR>12% passes4/4, RF Sharpe>1 passes1/4, DD<=15% passes0/4,
+matched-cost SPY4/4 and QQQ3/4. The ten-year stress QQQ gate fails.
+The original extra stress/base-cost-SPY gate passes2/2.
+Higher returns, including three CAGRs above20%, do not override any risk gate.
+**All four paths are rejected; there is no qualified strategy.**
+
+Annual two-sided turnover is3.903661/3.905146/4.660201/4.632403.
+Model tickets are396/393/140/130 and actual fees are
+USD769.39/1823.28/278.92/652.85. These are offline model tickets,
+not broker orders or a user-imposed turnover ceiling.
+Compared with the preceding bounded-loss rule, turnover and drawdown rise
+on every path; fewer tickets and lower fees are not overall qualification.
+
+The new source learner retains121decisions,119matured intervals and242records.
+All four exact cash/position comparisons, independent BT and five source/five
+capital prefixes complete. Preregistration`1bf0c4e` and actual checkpoint921
+preceded sole PID19207:140.771371seconds, peakRSS453111808Darwin bytes.
+This is exposed-history research, not independent forward evidence.
+**J1554 / 308 completed financial trials / zero qualifiers.
+Investment objective unmet.** Earlier financialb011 and read-only3b9b remain.
+
+### Read-only J1542 utility geometry: preserved rescaled-evidence diagnosis
 
 The [retained source-utility audit](research/workbench/evidence/source_utility_geometry_20261107_v1.json)
 compares switching wealth and adaptive switching loss without another learner
