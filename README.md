@@ -45,6 +45,40 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
+### Read-only J1554 main risk: one dominant source, different capital drawdowns
+
+The [retained main-risk diagnosis](research/workbench/evidence/retained_main_risk_20261108_v1.json)
+reads the existing four AdaNormalHedge books and source tape without another
+learner or account. `equity_first_month_end_commitment_v1` has mean source
+probability92.558842% over the ten-year dates and99.883366% over the five-year
+dates. Its mean defined contribution to the **recommendation's sample
+variance** is93.848615%/99.943554%. Six admitted experts do not imply a
+diversified source allocation, and source weights are not literal main holdings.
+Probability means use2512/1254days; variance-share means use2511/1254defined
+days, retaining the first ten-year unavailable covariance rather than filling it.
+
+| Existing path | First DD strictly above15% | Worst trough | Maximum DD |
+| --- | --- | --- | ---: |
+| 10y-base | 2020-03-09 | 2020-03-23 | 32.904938% |
+| 10y-stress | 2020-03-09 | 2020-03-23 | 32.959017% |
+| 5y-base | 2022-05-10 | 2022-12-28 | 22.743366% |
+| 5y-stress | 2022-02-23 | 2023-03-13 | 22.798775% |
+
+Both ten-year worst episodes start at2020-02-19 and have zero additional
+model tickets, turnover or fees. Both five-year peaks are2021-12-27, but the
+base/stress first breaches and troughs differ despite the same source history.
+These are retained main-account path facts, not per-expert realized PnL
+attribution, an isolated causal cost effect or a future drawdown certificate.
+
+All7,532original capital closes and12,334diagnostic-prefix views remain;
+39,750input/result records are private. Fourteen applicable **new diagnostic**
+prefixes are exact; six before-funding cutoffs are not applicable,not passes.
+Independent covariance/Euler error is at most1.6263032587282567e-18.
+Frozen`cc602efd` and actual checkpoint928 precede sole PID34464:
+34.604465seconds, peakRSS483057664Darwin bytes.
+**Zero new financial trials: J1554 / 308 completions / zero qualifiers.
+Investment objective unmet.** The original financial result below is unchanged.
+
 ### Complete J1554 original AdaNormalHedge: higher returns, excessive drawdown
 
 The [complete original-potential result](research/workbench/evidence/expert_adanormalhedge_20261107_results_v1.json)

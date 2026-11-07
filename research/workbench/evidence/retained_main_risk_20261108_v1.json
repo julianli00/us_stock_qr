@@ -1,0 +1,529 @@
+{
+  "actual_authoritative_counts": {
+    "current_journal_event_count": 1554,
+    "current_journal_head_sha256": "bc187b91eaac1cd1e206167ec62f0c97778bc7ee22bbc1c187822e748843a9cb",
+    "new_account_paths": 520,
+    "new_completed_strategy_evaluations": 130,
+    "new_historical_point_gate_passes": 0,
+    "new_pending_candidates": 0,
+    "new_registered_candidates": 144,
+    "new_reviews": 130,
+    "new_technical_failures": 14,
+    "original_completed_configurations": 178,
+    "original_registered_versions": 96,
+    "original_reviews": 94,
+    "total_legacy_plus_ssd_completed_configurations": 308
+  },
+  "completed_at": "2026-11-07T22:03:07.514593+00:00",
+  "financial_gates_changed": false,
+  "full_window_drawdown_contexts_are_hindsight_not_prefix_causal": true,
+  "independent_forward_validation": false,
+  "intent": {
+    "path": "reports/ssd-continuous-research-v1/retained-main-risk-20261108-v1/analysis-intent-v1.json",
+    "sha256": "cc602efdc6dad141ef43b9982cb03dc54836ca0488a3664d25c712f81313c66d"
+  },
+  "investment_objective_verified": false,
+  "new_financial_trials": 0,
+  "old_learner_account_BT_or_prefix_runs": 0,
+  "order_authority": false,
+  "paths": {
+    "10y-base": {
+      "first_strict_15pct_breach": {
+        "actual_invested_asset_hhi": 0.2704306007847987,
+        "actual_sample_variance": 0.00011976192867626349,
+        "actual_to_saved_mixture_L1": 0.06867597895488534,
+        "date": "2020-03-09",
+        "drawdown": 0.1894110247533073,
+        "gross": 0.9783232332077192,
+        "known_returns": 860,
+        "risk_status": "defined",
+        "source_complete_intervals": 40,
+        "source_mixture_sample_variance": 0.00012127396780888284,
+        "source_origin": "2020-02-28",
+        "source_probability_hhi": 0.8727725622010346,
+        "source_probability_leader": "equity_first_month_end_commitment_v1"
+      },
+      "maximum_independent_risk_error": 1.6263032587282567e-18,
+      "maximum_recorded_mixture_error": 5.551115123125783e-17,
+      "summary": {
+        "actual_model_cost_sum": 769.3858944012101,
+        "actual_model_ticket_sum": 396,
+        "actual_turnover_sum": 39.031270958264024,
+        "defined_covariance_days": 2511,
+        "defined_source_variance_share_days": 2511,
+        "last_known_return_count": 2512,
+        "maximum_drawdown_from_saved_NAV": 0.32904938125038796,
+        "mean_actual_invested_asset_hhi": 0.39738307575828724,
+        "mean_actual_to_saved_mixture_L1": 0.04144074662698629,
+        "mean_defined_actual_sample_annualized_volatility": 0.17598977153078782,
+        "mean_source_probability_hhi": 0.8899390842624109,
+        "rows": 2512,
+        "source_profiles": {
+          "benchmark_opportunity_joint_tail_v1": {
+            "mean_defined_signed_variance_share": 0.001215619493535178,
+            "mean_source_probability": 0.003357456789689105,
+            "negative_variance_contribution_days": 1,
+            "probability_leader_days": 0
+          },
+          "conditional_covariance_hedge_expert_v1": {
+            "mean_defined_signed_variance_share": 0.04757490657057047,
+            "mean_source_probability": 0.04721340650375751,
+            "negative_variance_contribution_days": 0,
+            "probability_leader_days": 21
+          },
+          "equity_first_month_end_commitment_v1": {
+            "mean_defined_signed_variance_share": 0.9384861502692284,
+            "mean_source_probability": 0.9255884180705624,
+            "negative_variance_contribution_days": 0,
+            "probability_leader_days": 2453
+          },
+          "four_factor_defense_diversified": {
+            "mean_defined_signed_variance_share": 0.0013689839434358427,
+            "mean_source_probability": 0.002899692123730539,
+            "negative_variance_contribution_days": 1,
+            "probability_leader_days": 0
+          },
+          "semiconductor_option_dollar_profit_share_confirmation": {
+            "mean_defined_signed_variance_share": 0.008842343478520583,
+            "mean_source_probability": 0.0178116162166352,
+            "negative_variance_contribution_days": 1,
+            "probability_leader_days": 38
+          },
+          "semiconductor_ratchet_protection": {
+            "mean_defined_signed_variance_share": 0.0025119962447120634,
+            "mean_source_probability": 0.0031294102956276083,
+            "negative_variance_contribution_days": 1,
+            "probability_leader_days": 0
+          }
+        },
+        "undefined_covariance_days": 1
+      },
+      "worst_drawdown": {
+        "model_cost_since_peak": 0.0,
+        "model_tickets_since_peak": 0,
+        "peak_date": "2020-02-19",
+        "trough": {
+          "actual_invested_asset_hhi": 0.286378929314039,
+          "actual_sample_variance": 0.00017896393427918546,
+          "actual_to_saved_mixture_L1": 0.04990245117063581,
+          "date": "2020-03-23",
+          "drawdown": 0.32904938125038796,
+          "gross": 0.9738118608288021,
+          "known_returns": 870,
+          "risk_status": "defined",
+          "source_complete_intervals": 40,
+          "source_mixture_sample_variance": 0.0001776277251563302,
+          "source_origin": "2020-02-28",
+          "source_probability_hhi": 0.8727725622010346,
+          "source_probability_leader": "equity_first_month_end_commitment_v1"
+        },
+        "turnover_since_peak": 0.0
+      }
+    },
+    "10y-stress": {
+      "first_strict_15pct_breach": {
+        "actual_invested_asset_hhi": 0.2820248423190843,
+        "actual_sample_variance": 0.00012223377637523875,
+        "actual_to_saved_mixture_L1": 0.0617053578010994,
+        "date": "2020-03-09",
+        "drawdown": 0.1898997115236627,
+        "gross": 0.9766358219078665,
+        "known_returns": 860,
+        "risk_status": "defined",
+        "source_complete_intervals": 40,
+        "source_mixture_sample_variance": 0.00012127396780888284,
+        "source_origin": "2020-02-28",
+        "source_probability_hhi": 0.8727725622010346,
+        "source_probability_leader": "equity_first_month_end_commitment_v1"
+      },
+      "maximum_independent_risk_error": 1.6263032587282567e-18,
+      "maximum_recorded_mixture_error": 5.551115123125783e-17,
+      "summary": {
+        "actual_model_cost_sum": 1823.2800459486857,
+        "actual_model_ticket_sum": 393,
+        "actual_turnover_sum": 39.04611614573028,
+        "defined_covariance_days": 2511,
+        "defined_source_variance_share_days": 2511,
+        "last_known_return_count": 2512,
+        "maximum_drawdown_from_saved_NAV": 0.32959017261883383,
+        "mean_actual_invested_asset_hhi": 0.3964727572733789,
+        "mean_actual_to_saved_mixture_L1": 0.05627735297104457,
+        "mean_defined_actual_sample_annualized_volatility": 0.17572699058796198,
+        "mean_source_probability_hhi": 0.8899390842624109,
+        "rows": 2512,
+        "source_profiles": {
+          "benchmark_opportunity_joint_tail_v1": {
+            "mean_defined_signed_variance_share": 0.001215619493535178,
+            "mean_source_probability": 0.003357456789689105,
+            "negative_variance_contribution_days": 1,
+            "probability_leader_days": 0
+          },
+          "conditional_covariance_hedge_expert_v1": {
+            "mean_defined_signed_variance_share": 0.04757490657057047,
+            "mean_source_probability": 0.04721340650375751,
+            "negative_variance_contribution_days": 0,
+            "probability_leader_days": 21
+          },
+          "equity_first_month_end_commitment_v1": {
+            "mean_defined_signed_variance_share": 0.9384861502692284,
+            "mean_source_probability": 0.9255884180705624,
+            "negative_variance_contribution_days": 0,
+            "probability_leader_days": 2453
+          },
+          "four_factor_defense_diversified": {
+            "mean_defined_signed_variance_share": 0.0013689839434358427,
+            "mean_source_probability": 0.002899692123730539,
+            "negative_variance_contribution_days": 1,
+            "probability_leader_days": 0
+          },
+          "semiconductor_option_dollar_profit_share_confirmation": {
+            "mean_defined_signed_variance_share": 0.008842343478520583,
+            "mean_source_probability": 0.0178116162166352,
+            "negative_variance_contribution_days": 1,
+            "probability_leader_days": 38
+          },
+          "semiconductor_ratchet_protection": {
+            "mean_defined_signed_variance_share": 0.0025119962447120634,
+            "mean_source_probability": 0.0031294102956276083,
+            "negative_variance_contribution_days": 1,
+            "probability_leader_days": 0
+          }
+        },
+        "undefined_covariance_days": 1
+      },
+      "worst_drawdown": {
+        "model_cost_since_peak": 0.0,
+        "model_tickets_since_peak": 0,
+        "peak_date": "2020-02-19",
+        "trough": {
+          "actual_invested_asset_hhi": 0.29892700996203014,
+          "actual_sample_variance": 0.00018254172214200373,
+          "actual_to_saved_mixture_L1": 0.05501862044670176,
+          "date": "2020-03-23",
+          "drawdown": 0.32959017261883383,
+          "gross": 0.9717675269075544,
+          "known_returns": 870,
+          "risk_status": "defined",
+          "source_complete_intervals": 40,
+          "source_mixture_sample_variance": 0.0001776277251563302,
+          "source_origin": "2020-02-28",
+          "source_probability_hhi": 0.8727725622010346,
+          "source_probability_leader": "equity_first_month_end_commitment_v1"
+        },
+        "turnover_since_peak": 0.0
+      }
+    },
+    "5y-base": {
+      "first_strict_15pct_breach": {
+        "actual_invested_asset_hhi": 1.0,
+        "actual_sample_variance": 6.921090595704705e-05,
+        "actual_to_saved_mixture_L1": 0.0008716315846332146,
+        "date": "2022-05-10",
+        "drawdown": 0.15646824887324973,
+        "gross": 0.9791283684153668,
+        "known_returns": 1408,
+        "risk_status": "defined",
+        "source_complete_intervals": 66,
+        "source_mixture_sample_variance": 6.933418552941067e-05,
+        "source_origin": "2022-04-29",
+        "source_probability_hhi": 1.0,
+        "source_probability_leader": "equity_first_month_end_commitment_v1"
+      },
+      "maximum_independent_risk_error": 1.6263032587282567e-18,
+      "maximum_recorded_mixture_error": 0.0,
+      "summary": {
+        "actual_model_cost_sum": 278.9168741682038,
+        "actual_model_ticket_sum": 140,
+        "actual_turnover_sum": 23.29781771234773,
+        "defined_covariance_days": 1254,
+        "defined_source_variance_share_days": 1254,
+        "last_known_return_count": 2512,
+        "maximum_drawdown_from_saved_NAV": 0.2274336637983262,
+        "mean_actual_invested_asset_hhi": 0.4868323120127319,
+        "mean_actual_to_saved_mixture_L1": 0.04163235802328738,
+        "mean_defined_actual_sample_annualized_volatility": 0.1989040254599284,
+        "mean_source_probability_hhi": 0.9976880573284619,
+        "rows": 1254,
+        "source_profiles": {
+          "benchmark_opportunity_joint_tail_v1": {
+            "mean_defined_signed_variance_share": 0.0,
+            "mean_source_probability": 0.0,
+            "negative_variance_contribution_days": 0,
+            "probability_leader_days": 0
+          },
+          "conditional_covariance_hedge_expert_v1": {
+            "mean_defined_signed_variance_share": 0.0005570351986190036,
+            "mean_source_probability": 0.0011506939418350355,
+            "negative_variance_contribution_days": 0,
+            "probability_leader_days": 0
+          },
+          "equity_first_month_end_commitment_v1": {
+            "mean_defined_signed_variance_share": 0.9994355361948314,
+            "mean_source_probability": 0.9988336603608758,
+            "negative_variance_contribution_days": 0,
+            "probability_leader_days": 1254
+          },
+          "four_factor_defense_diversified": {
+            "mean_defined_signed_variance_share": 0.0,
+            "mean_source_probability": 0.0,
+            "negative_variance_contribution_days": 0,
+            "probability_leader_days": 0
+          },
+          "semiconductor_option_dollar_profit_share_confirmation": {
+            "mean_defined_signed_variance_share": 7.428606549691128e-06,
+            "mean_source_probability": 1.5645697289998816e-05,
+            "negative_variance_contribution_days": 0,
+            "probability_leader_days": 0
+          },
+          "semiconductor_ratchet_protection": {
+            "mean_defined_signed_variance_share": 0.0,
+            "mean_source_probability": 0.0,
+            "negative_variance_contribution_days": 0,
+            "probability_leader_days": 0
+          }
+        },
+        "undefined_covariance_days": 0
+      },
+      "worst_drawdown": {
+        "model_cost_since_peak": 43.76606568197286,
+        "model_tickets_since_peak": 14,
+        "peak_date": "2021-12-27",
+        "trough": {
+          "actual_invested_asset_hhi": 0.2978183489841439,
+          "actual_sample_variance": 0.00022971843022883564,
+          "actual_to_saved_mixture_L1": 0.03939850709476743,
+          "date": "2022-12-28",
+          "drawdown": 0.2274336637983262,
+          "gross": 0.9779123499383509,
+          "known_returns": 1568,
+          "risk_status": "defined",
+          "source_complete_intervals": 73,
+          "source_mixture_sample_variance": 0.00023628103902193523,
+          "source_origin": "2022-11-30",
+          "source_probability_hhi": 0.9997049496549262,
+          "source_probability_leader": "equity_first_month_end_commitment_v1"
+        },
+        "turnover_since_peak": 5.872982622483828
+      }
+    },
+    "5y-stress": {
+      "first_strict_15pct_breach": {
+        "actual_invested_asset_hhi": 0.3010552070956193,
+        "actual_sample_variance": 0.00020721829832744446,
+        "actual_to_saved_mixture_L1": 0.04518601489869602,
+        "date": "2022-02-23",
+        "drawdown": 0.1503549869041534,
+        "gross": 0.9778701767787386,
+        "known_returns": 1355,
+        "risk_status": "defined",
+        "source_complete_intervals": 63,
+        "source_mixture_sample_variance": 0.00021221729346929965,
+        "source_origin": "2022-01-31",
+        "source_probability_hhi": 1.0,
+        "source_probability_leader": "equity_first_month_end_commitment_v1"
+      },
+      "maximum_independent_risk_error": 1.6263032587282567e-18,
+      "maximum_recorded_mixture_error": 0.0,
+      "summary": {
+        "actual_model_cost_sum": 652.8496188028549,
+        "actual_model_ticket_sum": 130,
+        "actual_turnover_sum": 23.15884289532749,
+        "defined_covariance_days": 1254,
+        "defined_source_variance_share_days": 1254,
+        "last_known_return_count": 2512,
+        "maximum_drawdown_from_saved_NAV": 0.22798774835842517,
+        "mean_actual_invested_asset_hhi": 0.48607774453162905,
+        "mean_actual_to_saved_mixture_L1": 0.05701147510503945,
+        "mean_defined_actual_sample_annualized_volatility": 0.19853845550726062,
+        "mean_source_probability_hhi": 0.9976880573284619,
+        "rows": 1254,
+        "source_profiles": {
+          "benchmark_opportunity_joint_tail_v1": {
+            "mean_defined_signed_variance_share": 0.0,
+            "mean_source_probability": 0.0,
+            "negative_variance_contribution_days": 0,
+            "probability_leader_days": 0
+          },
+          "conditional_covariance_hedge_expert_v1": {
+            "mean_defined_signed_variance_share": 0.0005570351986190036,
+            "mean_source_probability": 0.0011506939418350355,
+            "negative_variance_contribution_days": 0,
+            "probability_leader_days": 0
+          },
+          "equity_first_month_end_commitment_v1": {
+            "mean_defined_signed_variance_share": 0.9994355361948314,
+            "mean_source_probability": 0.9988336603608758,
+            "negative_variance_contribution_days": 0,
+            "probability_leader_days": 1254
+          },
+          "four_factor_defense_diversified": {
+            "mean_defined_signed_variance_share": 0.0,
+            "mean_source_probability": 0.0,
+            "negative_variance_contribution_days": 0,
+            "probability_leader_days": 0
+          },
+          "semiconductor_option_dollar_profit_share_confirmation": {
+            "mean_defined_signed_variance_share": 7.428606549691128e-06,
+            "mean_source_probability": 1.5645697289998816e-05,
+            "negative_variance_contribution_days": 0,
+            "probability_leader_days": 0
+          },
+          "semiconductor_ratchet_protection": {
+            "mean_defined_signed_variance_share": 0.0,
+            "mean_source_probability": 0.0,
+            "negative_variance_contribution_days": 0,
+            "probability_leader_days": 0
+          }
+        },
+        "undefined_covariance_days": 0
+      },
+      "worst_drawdown": {
+        "model_cost_since_peak": 214.993161040086,
+        "model_tickets_since_peak": 28,
+        "peak_date": "2021-12-27",
+        "trough": {
+          "actual_invested_asset_hhi": 0.31487279510329347,
+          "actual_sample_variance": 0.00023465382622776977,
+          "actual_to_saved_mixture_L1": 0.014021087766560594,
+          "date": "2023-03-13",
+          "drawdown": 0.22798774835842517,
+          "gross": 0.9786718952101412,
+          "known_returns": 1618,
+          "risk_status": "defined",
+          "source_complete_intervals": 76,
+          "source_mixture_sample_variance": 0.00023319689457017978,
+          "source_origin": "2023-02-28",
+          "source_probability_hhi": 0.9930222445663941,
+          "source_probability_leader": "equity_first_month_end_commitment_v1"
+        },
+        "turnover_since_peak": 9.773063011420746
+      }
+    }
+  },
+  "prefix_checks": [
+    {
+      "cutoff": "2017-04-06",
+      "days_checked": 126,
+      "path": "10y-base",
+      "status": "then_known_daily_statistics_exact"
+    },
+    {
+      "cutoff": "2018-10-05",
+      "days_checked": 504,
+      "path": "10y-base",
+      "status": "then_known_daily_statistics_exact"
+    },
+    {
+      "cutoff": "2020-10-06",
+      "days_checked": 1007,
+      "path": "10y-base",
+      "status": "then_known_daily_statistics_exact"
+    },
+    {
+      "cutoff": "2022-10-05",
+      "days_checked": 1510,
+      "path": "10y-base",
+      "status": "then_known_daily_statistics_exact"
+    },
+    {
+      "cutoff": "2024-10-07",
+      "days_checked": 2013,
+      "path": "10y-base",
+      "status": "then_known_daily_statistics_exact"
+    },
+    {
+      "cutoff": "2017-04-06",
+      "days_checked": 126,
+      "path": "10y-stress",
+      "status": "then_known_daily_statistics_exact"
+    },
+    {
+      "cutoff": "2018-10-05",
+      "days_checked": 504,
+      "path": "10y-stress",
+      "status": "then_known_daily_statistics_exact"
+    },
+    {
+      "cutoff": "2020-10-06",
+      "days_checked": 1007,
+      "path": "10y-stress",
+      "status": "then_known_daily_statistics_exact"
+    },
+    {
+      "cutoff": "2022-10-05",
+      "days_checked": 1510,
+      "path": "10y-stress",
+      "status": "then_known_daily_statistics_exact"
+    },
+    {
+      "cutoff": "2024-10-07",
+      "days_checked": 2013,
+      "path": "10y-stress",
+      "status": "then_known_daily_statistics_exact"
+    },
+    {
+      "cutoff": "2017-04-06",
+      "path": "5y-base",
+      "status": "not_applicable_before_funding"
+    },
+    {
+      "cutoff": "2018-10-05",
+      "path": "5y-base",
+      "status": "not_applicable_before_funding"
+    },
+    {
+      "cutoff": "2020-10-06",
+      "path": "5y-base",
+      "status": "not_applicable_before_funding"
+    },
+    {
+      "cutoff": "2022-10-05",
+      "days_checked": 252,
+      "path": "5y-base",
+      "status": "then_known_daily_statistics_exact"
+    },
+    {
+      "cutoff": "2024-10-07",
+      "days_checked": 755,
+      "path": "5y-base",
+      "status": "then_known_daily_statistics_exact"
+    },
+    {
+      "cutoff": "2017-04-06",
+      "path": "5y-stress",
+      "status": "not_applicable_before_funding"
+    },
+    {
+      "cutoff": "2018-10-05",
+      "path": "5y-stress",
+      "status": "not_applicable_before_funding"
+    },
+    {
+      "cutoff": "2020-10-06",
+      "path": "5y-stress",
+      "status": "not_applicable_before_funding"
+    },
+    {
+      "cutoff": "2022-10-05",
+      "days_checked": 252,
+      "path": "5y-stress",
+      "status": "then_known_daily_statistics_exact"
+    },
+    {
+      "cutoff": "2024-10-07",
+      "days_checked": 755,
+      "path": "5y-stress",
+      "status": "then_known_daily_statistics_exact"
+    }
+  ],
+  "private_result": {
+    "path": "reports/ssd-continuous-research-v1/retained-main-risk-20261108-v1/diagnostic-v1.json",
+    "sha256": "84d6161c2edf735ae9a0f3d5f357527a3832d7289223eeb18c75d641be86db92"
+  },
+  "raw_prices_targets_covariances_daily_books_or_states_exported": false,
+  "record_type": "retained_main_risk_source_selection_diagnostic",
+  "sample_covariance_is_a_future_drawdown_certificate": false,
+  "schema_version": 1,
+  "source_risk_contribution_is_realized_main_PnL_or_wealth_bound": false,
+  "study_id": "ssd_retained_main_risk_20261108_v1"
+}

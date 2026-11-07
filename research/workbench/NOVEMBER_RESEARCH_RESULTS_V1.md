@@ -4,6 +4,85 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Read-only J1554 main risk: source concentration and actual capital paths
+
+The [retained risk/source-selection audit](evidence/retained_main_risk_20261108_v1.json)
+uses the already completed AdaNormalHedge source tape and original four main
+books. It does not execute any old learner,target builder,account,BT,source or
+capital prefix verifier. Sample risk is measured from **actual closing asset
+weights**; source Euler contributions describe the **saved recommendation**,
+not realized expert-owned capital or a portfolio wealth guarantee.
+
+`equity_first_month_end_commitment_v1` is the dominant source:
+
+| Existing window | Mean source probability | Mean defined recommendation-variance share | Source probability-leader days | Mean source-probability HHI |
+| --- | ---: | ---: | ---: | ---: |
+| 10y base/stress | 92.558842% | 93.848615% | 2453/2512 | 0.889939 |
+| 5y base/stress | 99.883366% | 99.943554% | 1254/1254 | 0.997688 |
+
+The probability denominator is all2512/1254dates; the variance-share denominator
+is2511/1254defined covariance dates. The first ten-year covariance is explicitly
+unavailable because two known returns are necessary; no formal return is dropped.
+The five-year account is fresh even though the original market/source history
+is shared. Source-probability concentration is not underlying-asset concentration:
+mean actual invested-asset HHI is0.397383/0.396473/0.486832/0.486078.
+The five-year means for diversified-defense,joint-tail opportunity and
+semiconductor-ratchet source probabilities are zero. They remain admitted
+complete sources; zero allocation is not a missing or invalid expert.
+
+| Actual retained path | First DD>15% | DD at first breach | Worst peak | Worst trough | Maximum DD |
+| --- | --- | ---: | --- | --- | ---: |
+| 10y-base | 2020-03-09 | 18.941102% | 2020-02-19 | 2020-03-23 | 32.904938% |
+| 10y-stress | 2020-03-09 | 18.989971% | 2020-02-19 | 2020-03-23 | 32.959017% |
+| 5y-base | 2022-05-10 | 15.646825% | 2021-12-27 | 2022-12-28 | 22.743366% |
+| 5y-stress | 2022-02-23 | 15.035499% | 2021-12-27 | 2023-03-13 | 22.798775% |
+
+Both ten-year worst intervals contain zero model tickets,turnover and new fees.
+That fact does not remove earlier cost/exposure effects or attribute net loss
+to any source's hypothetical separate account. Five-year base/stress have
+different first-breach/trough dates; costs since their common peak areUSD43.77/
+214.99 with14/28model tickets. Costs,delay and actual holding feedback move
+together,so this is not an isolated causal execution-cost experiment.
+Mean actual-to-source-target L1distance is0.041441/0.056277/0.041632/0.057011;
+these are recommendation/holding differences,not executed turnover.
+
+Covariance expands from the original source-clock anchor2016-10-05 using only
+then-known adjusted closes. Symmetric Welford and independent raw moments,
+scalar covariance products and source-mixture conservation all pass unchanged
+1e-12criteria. Maximum independent covariance/Euler error is
+1.6263032587282567e-18; maximum recorded-mixture discrepancy5.551115123125783e-17.
+Signed hedging contributions are retained,not clipped; zero-variance shares
+are undefined,not uniform. Estimated variance is not a future DD certificate.
+
+The Module's SourceFeed Interface is exercised by MemoryFeed and a real stored
+JSONL ArchiveFeed Adapter. New17/17synthetic tests,Ruff checks and exact six
+tested-input prototypes precede intent`cc602efd` and actual checkpoint928,
+saved2026-11-07T22:00:23.343663+00:00. The private checkpoint receipt`737565f9`
+is a post-freeze read-only fence,not new capital funding.
+Sole quant PID34464/observer34463 finishes0 in34.60446491697803seconds,
+Darwin peakRSS483057664bytes. The early two-second readiness check observes
+the process before it owns the lock; its false ownership result is preserved.
+Subsequently observed lock34464 spans22:02:41.725549--22:03:09.388438;
+the actual audit-start marker is22:02:42.900518. No early lock proof is invented.
+
+All7,532existing capital closes and12,334new diagnostic-prefix views are
+retained in39,750input/result records. Fourteen applicable new diagnostic
+prefixes are exact;six cutoffs before five-year funding are explicitly
+not applicable,not passes. These checks do not replay old source/account
+prefix pipelines. Full-window,worst-DD and source-mean summaries are
+outcome-exposed descriptions,not independent forward evidence.
+
+Private result`84d6161c` and sanitized aggregate`19c23cad` are separate.
+Raw covariance matrices,prices,targets,daily books and source states stay
+private. Sixteen archival protection references are separate from15permitted
+live checks and5permitted user checks; stored-main-cost content is not read
+again. Its prior read/hash boundary error remains preserved.
+**Zero new financial trials:J1554 / 308 completions / zero qualifiers.
+Investment objective unmet.** Current financial projection and all previous
+results remain unchanged. The next independent financial question must address
+actual main-risk-aware allocation/execution,not tune another common source
+gain or impose an invented user concentration/turnover cap.
+
 ## Complete J1554 original AdaNormalHedge: original source units, rejected main-capital risk
 
 The [complete retained result](evidence/expert_adanormalhedge_20261107_results_v1.json)

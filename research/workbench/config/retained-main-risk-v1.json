@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "study_id": "ssd_retained_main_risk_20261108_v1",
+  "actual_native_event_seq": 209368,
+  "prior_journal_sequence": 1554,
+  "prior_combined_completed": 308,
+  "closed_financial_cycle": {
+    "path": "reports/ssd-continuous-research-v1/expert-adanormalhedge-20261107-v1/cycle-closure-v1.json",
+    "sha256": "2d5017e34dbb3c01ee7e0a8a81b1461fdd2831dc4296043e695b3639eeb7b46a"
+  },
+  "price_history_anchor": "2016-10-05",
+  "covariance": "expanding_unbiased_adjusted_asset_return_sample_at_original_close",
+  "primary_moments": "symmetric_Welford_scatter",
+  "independent_moments": "raw_second_moment_minus_mean_outer_product",
+  "minimum_known_returns": 2,
+  "actual_main_risk": "actual_closing_asset_weights_transpose_covariance_weights",
+  "source_contribution": "probability_times_source_target_transpose_covariance_saved_mixture",
+  "source_contribution_is_realized_main_PnL_attribution": false,
+  "signed_hedging_contributions_clipped": false,
+  "zero_variance_shares": "explicit_undefined_not_uniform",
+  "insufficient_history": "explicit_unavailable_no_imputed_returns",
+  "initial_drawdown_peak_usd": 10000.0,
+  "drawdown_contexts": [
+    "full_window",
+    "first_strictly_above_15pct",
+    "worst_drawdown_first_peak_and_trough"
+  ],
+  "numeric_tolerance": 1e-12,
+  "diagnostic_prefix_cutoffs": [
+    "2017-04-06",
+    "2018-10-05",
+    "2020-10-06",
+    "2022-10-05",
+    "2024-10-07"
+  ],
+  "prefixes_before_funding": "explicit_not_applicable_not_a_pass",
+  "new_source_requests": 0,
+  "old_learner_account_BT_or_prefix_runs": 0,
+  "new_financial_trials": 0,
+  "counterfactual_policy_evaluated": false,
+  "financial_gates_changed": false,
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "order_authority": false
+}
