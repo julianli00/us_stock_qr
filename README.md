@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 138 SSD identities, 125 completed, 13 retained technical-workflow terminations and zero pending; 500 funded paths | Journal1490 complete financial summary: 303 combined completions, zero qualifiers; investment goal remains unmet |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 141 SSD identities, 126 completed, 14 retained technical-workflow terminations and one pending; 504 funded paths | Journal1507 preregistration: 304 combined completions, zero qualifiers; latest complete financial result remains J1506; investment goal remains unmet |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -45,7 +45,31 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
-### Read-only J1506 ticket anatomy: risk-fraction changes, not repeated targets
+### Registered J1507 main-risk confidence: no historical main outputs yet
+
+The [independent decision-program registration](research/workbench/evidence/main_risk_confidence_prod_20261107_registration_v1.json)
+keeps the original six admitted experts and confidence-Prod learning kernel.
+The protection specialist's participation now reads actual main net NAV and
+its all-closing peak, not the source expert's shadow. Five ratings stay one.
+Every close updates that context; allocation remains initial/month-end only.
+Participation is not a capital cap, source judgment or drawdown guarantee.
+
+Prior-origin ratings weight that completed month's sealed source losses;
+end-month risk applies only to the next allocation. Each fresh account has
+fresh main risk and learning state, so five years plans59full updates rather
+than importing nonexistent pre-capital main-risk history; ten years plans119.
+This also changes the old five-year warm-learning initialization, so the
+comparison cannot isolate confidence causality.
+
+Thirty-seven synthetic checks pass; the first fixture failure and all source
+snapshots remain. Actual checkpoint805, its original native save receipt and
+registration1507 precede new real main ratings, learning, targets or capital.
+The schema3packet explicitly defers historical target proof. All four original
+paths and financial gates remain required after verified remote publication.
+**One pending identity; 304 completed financial trials / zero qualifiers.
+No historical performance result is claimed for this new rule.**
+
+### Preserved read-only J1506 ticket anatomy: risk-fraction changes, not repeated targets
 
 The [saved-ticket inspection](research/workbench/evidence/shield_ticket_anatomy_20261107_v1.json)
 retains all 7,532 formal days and 9,164 actual model tickets without replaying

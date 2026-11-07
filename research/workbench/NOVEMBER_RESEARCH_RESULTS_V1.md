@@ -4,7 +4,55 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Read-only J1506 ticket anatomy: saved risk adjustments carry most tickets
+## Registered J1507 actual-main confidence: original monthly execution, no real outputs yet
+
+The [actual schema3registration](evidence/main_risk_confidence_prod_20261107_registration_v1.json)
+defines one independent economic question, not a daily shield repair or a
+ticket-size sweep. The same six admitted complete policies, their cached
+causal opinions and original sealed monthly losses remain unchanged.
+
+Five participation ratings stay one. The protection specialist uses one minus
+the original clipped protection scale, now evaluated on this actual main net
+NAV and its peak over **every** known main close including initialUSD10000.
+The MainRiskContext Module exposes an ordered-mark Interface; actual cash
+marks and memory marks exercise the same Seam. Only real initialization and
+genuine NYSE month ends allocate. This is conditional learning participation,
+not a direct risky-capital limit, calibrated probability, source-admission
+decision or guarantee that the main portfolio cannot breach15% drawdown.
+
+The rating recorded at a full-month origin weights that month's matured
+source loss. The end-month rating cannot backdate participation. Original
+160-digit Adapt-ML-Prod and unnormalized raw masses remain; a100-digit generic
+confidence reduction checks states and rational mixtures independently.
+Fresh ten-year/five-year accounts own separate fresh states, with119/59full
+updates and no partial initial month training. The five-year reset differs
+from the old warm-source learner, so later comparisons are whole-policy
+context, not isolated confidence causality.
+
+The first synthetic attempt retains36passes and one fixture assertion failure
+that incorrectly expected mixed holdings on the stress account's mandatory
+cash-only day before its two-session initial fill. Corrected checks require
+zero positions/cost/tickets and USD10000 cash while waiting, then mixed held
+assets after the unchanged fill. The second complete suite passes37/37.
+Both attempts, twelve source prototypes and complete comparison operands
+remain; financial timing, exact equality and acceptance were not relaxed.
+
+Freeze intent`6f70a7fe` precedes actual checkpoint805
+saved2026-11-07T01:03:09.547902+00:00, covered_seq198291 and original native
+save198294. The prospectively linked registration1507 occurs at
+2026-11-07T01:08:12.669252+00:00; registered frozen body is`e6ea33fa`.
+The unique PID65117 exits0 after91.340702125seconds, peakRSS508342272bytes.
+No new real main confidence, learning state, target or capital outcome has
+been computed. Remote publication and an actual prefunding checkpoint still
+precede the four fresh original accounts. The packet truthfully leaves the
+historical target proof null.
+
+**J1507 / 141 registered / 126 completed / 14 workflow terminations /
+one pending / 504 verified funded paths / 304 combined financial completions /
+zero qualifiers. Investment objective unmet.**
+Last complete financial caca/J1506 and read-only ff29 remain distinct.
+
+## Preserved read-only J1506 ticket anatomy: saved risk adjustments carry most tickets
 
 The [complete descriptive inspection](evidence/shield_ticket_anatomy_20261107_v1.json)
 links actual retained units, original admitted opens and original issued
