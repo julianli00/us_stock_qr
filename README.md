@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 143 SSD identities, 128 completed, 14 retained technical-workflow terminations and one pending; 512 funded paths | Journal1531 preregistration: 306 combined completions, zero qualifiers; last complete financial result remains J1530; investment goal remains unmet |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 143 SSD identities, 129 completed, 14 retained technical-workflow terminations and zero pending; 516 funded paths | Journal1542: 307 combined completions, zero qualifiers; all four gap-adaptive switching-loss paths complete and rejected; investment goal remains unmet |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -45,7 +45,40 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
-### Registered J1531 adaptive switching loss: no real learning or capital yet
+### Complete J1542 adaptive switching loss: higher returns, still rejected
+
+The [complete gap-adaptive outcome](research/workbench/evidence/expert_switching_loss_20261107_results_v1.json)
+retains the same six complete experts and switching prior. Original bounded
+NET-loss labels and past source mixability gap determine the new source
+partition; neither a gain nor a window is selected from portfolio outcomes.
+
+| Actual path | Net CAGR | RF Sharpe | Maximum DD |
+| --- | ---: | ---: | ---: |
+| 10y base | 13.721620% | 0.899961 | 19.759285% |
+| 10y stress | 13.144934% | 0.859369 | 19.258378% |
+| 5y base | 16.843373% | 0.971377 | 14.411326% |
+| 5y stress | 15.503229% | 0.882409 | 15.054133% |
+
+CAGR passes4/4, RF Sharpe0/4, DD1/4, matched-cost SPY2/4 and QQQ0/4.
+The five-year stress drawdown is **above**15%, not a rounded pass.
+Model tickets are1066/1066/514/514, actual fees
+USD1295.80/1969.63/602.48/856.11 and annual two-sided turnover
+2.862840/2.868958/2.962942/2.962535. These are offline model tickets,
+not broker orders or a user-selected turnover cap.
+
+Compared with the cached J1530 whole-policy outcome, all CAGRs rise but all
+Sharpes fall, and every drawdown and annual turnover rises. Source utility
+and adaptive evidence intensity change together; this is not an isolated
+causal effect of the gap rule or a transfer of source-game guarantees.
+
+The121source forecasts,119matured loss updates, exact cash/position
+comparisons, independent BT and five source/five capital prefixes pass.
+Actual remote preregistration`d710c3d5` and checkpoint823 preceded the
+only child. No independent forward result is claimed.
+**J1542 / 307 completed financial trials / zero qualifiers.
+Investment objective unmet.**
+
+### Preserved J1531 adaptive-loss preregistration: no real outputs then
 
 The [independent gap-adaptive program](research/workbench/evidence/expert_switching_loss_20261107_registration_v1.json)
 keeps the six admitted experts and Jeffreys switching prior. It changes

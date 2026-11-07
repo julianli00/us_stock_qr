@@ -4,7 +4,85 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
-## Registered J1531 gap-adaptive switching loss: new source utility, no real outputs yet
+## Complete J1542 gap-adaptive switching loss: exact source game, rejected financial rule
+
+The [complete actual result](evidence/expert_switching_loss_20261107_results_v1.json)
+retains every original10y/5y/base/stress path under one frozen rule.
+The six complete experts, fourteen assets, Jeffreys switching prior,
+original costs, execution delays, RF and fresh USD10000 accounts remain.
+Original source loss labels replace natural source-wealth evidence; past
+mixability gap determines current-rate evidence intensity without a gain
+or window sweep.
+
+| Actual path | Net CAGR | RF Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Actual fees USD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 10y-base | 13.721620% | 0.899961 | 19.759285% | 2.862840 | 1066 | 1295.80 |
+| 10y-stress | 13.144934% | 0.859369 | 19.258378% | 2.868958 | 1066 | 1969.63 |
+| 5y-base | 16.843373% | 0.971377 | 14.411326% | 2.962942 | 514 | 602.48 |
+| 5y-stress | 15.503229% | 0.882409 | 15.054133% | 2.962535 | 514 | 856.11 |
+
+Review1542 rejects the complete rule. Strict net CAGR>12% passes4/4;
+RF Sharpe>1 passes0/4, DD<=15%1/4, matched-cost SPY2/4 and QQQ0/4.
+The original extra stress/base-cost-SPY gate passes1/2.
+Five-year stress DD15.054133% is above15%, not a rounded pass.
+Passing CAGR or the five-year base DD gate does not qualify any path.
+
+Against the cached J1530 switching-wealth context, all CAGRs rise, all
+RF Sharpes fall and every DD and annual turnover rises. The five-year base
+loses its prior small Sharpe margin; five-year stress now also fails DD.
+Both source utility and adaptive path evidence change, so these are
+whole-policy observations, not an isolated causal gain from the gap rule.
+No old account is replayed or fee-free counterfactual constructed.
+Actual rebalance sessions are106/106/53/53. Fixed USD1 commissions remain
+USD1066/1066/514/514; proportional costs areUSD229.80/903.63/88.48/342.11.
+The inherited holding band is not a new user turnover ceiling.
+
+One new causal source learner retains121initial/month-end decisions,
+119original matured loss vectors and242input/result records. The initial
+partial month is untrained. Prior-rate forecasts precede their labels;
+only then is the gap updated and this new loss history refiltered at its
+new current rate. The global source history supplies fresh five-year
+capital without inventing pre-capital main NAV/risk or refreshing its
+last-known initialization opinion.
+
+The160-digit identity/switch-count partition uses at most714mass cells.
+Independent60-node evidence-weighted hazard integration and independently
+updated gaps/rates preserve all119matured intervals. Maximum errors are
+7.216449660063518e-16 for source forecasts,
+4.440892098500626e-16 for rates,
+1.7763568394002505e-15 for cumulative source gaps,
+7.105427357601002e-15 for centered partitions,
+6.661338147750939e-16 for hazard means and
+1.1102230246251565e-16 for rational underlying-target mixtures, all below
+unchanged1e-12. Analytic neutral/infinite-rate identities remain; no gap
+clipping, floor, old learner repair or static AdaHedge sequence bound is
+introduced. These source statistics are not actual main NET wealth,
+market probabilities, physical turnover or DD protection.
+
+All7,532original formal return rows and364capital reviews remain.
+Every compared cash financial-column and position bit matches exactly.
+Both full comparison operands precede the unchanged assertions.
+Independent BT maximum equity difference isUSD3.637978807091713e-11.
+Five new source and five new capital prefixes at125/503/1006/1509/2012
+retain exact causal source/state/target and main account/position/decision
+coordinates. These ten auxiliary checks are not ten financial trials.
+
+Actual remote preregistration`d710c3d5` and checkpoint823 saved
+2026-11-07T04:13:10.685911+00:00, covered_seq200646 with original native
+save200649, were prospectively linked before the sole child.
+PID87391 exits0 after167.1898419999925seconds, Darwin peakRSS476037120bytes.
+Private full result`6f3f9863` and sanitized aggregate`b011507c` remain
+distinct from financialbf47/6eda/340b/caca and read-only81ab/ff29/da7d.
+No raw source states, targets, prices or daily books are public.
+
+**J1542 / 143 registered / 129 completed / 14 workflow terminations /
+zero pending / 516 verified funded paths / 307 combined financial completions /
+zero qualifiers. Investment objective unmet.**
+The first35synthetic passes, six source prototypes, all previous failures
+and original single-day prospective identities remain. No independent
+forward validation or next policy/rate/threshold selection is claimed.
+
+## Preserved J1531 adaptive-loss preregistration: no real outputs then
 
 The [actual schema3registration](evidence/expert_switching_loss_20261107_registration_v1.json)
 keeps the original six complete experts and uniform-identity/Jeffreys
