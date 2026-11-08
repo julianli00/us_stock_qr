@@ -1,0 +1,798 @@
+{
+  "actual_authoritative_counts": {
+    "current_journal_event_count": 1570,
+    "current_journal_head_sha256": "559b8a37b8e27e6f8938e8cafe82be5a92f3c597d18d0598d1abd9b1d47523ed",
+    "new_account_paths": 524,
+    "new_completed_strategy_evaluations": 131,
+    "new_historical_point_gate_passes": 0,
+    "new_pending_candidates": 0,
+    "new_registered_candidates": 146,
+    "new_reviews": 131,
+    "new_technical_failures": 15,
+    "original_completed_configurations": 178,
+    "original_registered_versions": 96,
+    "original_reviews": 94,
+    "total_legacy_plus_ssd_completed_configurations": 309
+  },
+  "actual_completed_at": "2026-11-08T04:13:53.027833+00:00",
+  "actual_exact_diagnostic_prefixes": 28,
+  "analysis_intent_sha256": "7dc5fa97c3816b1039e3175f12251138c0f0a3fe1c2f69d2cd00af1646b25815",
+  "books": {
+    "adanormalhedge:10y-base": {
+      "actual_notional_usd": 746771.7888024201,
+      "asset_ticket_groups": {
+        "BIL": {
+          "notional_usd": 63471.75823552247,
+          "tickets": 24
+        },
+        "GLD": {
+          "notional_usd": 307256.41971982503,
+          "tickets": 39
+        },
+        "IEF": {
+          "notional_usd": 4638.463411553496,
+          "tickets": 10
+        },
+        "IJR": {
+          "notional_usd": 4721.782663087351,
+          "tickets": 33
+        },
+        "MTUM": {
+          "notional_usd": 44469.3324705389,
+          "tickets": 50
+        },
+        "PKW": {
+          "notional_usd": 4809.081346654175,
+          "tickets": 33
+        },
+        "QQQ": {
+          "notional_usd": 0.0,
+          "tickets": 0
+        },
+        "QUAL": {
+          "notional_usd": 45559.749386011514,
+          "tickets": 50
+        },
+        "SOXX": {
+          "notional_usd": 176240.0810805845,
+          "tickets": 49
+        },
+        "SPY": {
+          "notional_usd": 0.0,
+          "tickets": 0
+        },
+        "TLT": {
+          "notional_usd": 3546.9285723477265,
+          "tickets": 8
+        },
+        "USMV": {
+          "notional_usd": 48357.102513224185,
+          "tickets": 50
+        },
+        "VLUE": {
+          "notional_usd": 43701.08940307096,
+          "tickets": 50
+        },
+        "XLK": {
+          "notional_usd": 0.0,
+          "tickets": 0
+        }
+      },
+      "average_notional_per_ticket_usd": 1885.787345460657,
+      "commission_notional_crossover_usd": 2000.0,
+      "crossover_is_user_trade_cap": false,
+      "decision_records": 121,
+      "fixed_commission_usd": 396.0,
+      "fixed_fee_dominant_ticket_count": 316,
+      "formal_closes": 2512,
+      "initial_request_is_band_spillover": false,
+      "maximum_coherence_error_usd": 1.4551915228366852e-11,
+      "median_notional_per_ticket_usd": 288.7555221854418,
+      "model_tickets": 396,
+      "new_financial_trials": 0,
+      "paid_cost_usd": 769.3858944012101,
+      "pending_after_cutoff": false,
+      "proportional_cost_usd": 373.3858944012101,
+      "recorded_fills": 51,
+      "ticket_groups": {
+        "band_boundary": {
+          "notional_usd": 0.0,
+          "tickets": 0
+        },
+        "below_band_spillover": {
+          "notional_usd": 31454.262765995856,
+          "tickets": 218
+        },
+        "direct_band_coordinate": {
+          "notional_usd": 705533.1004049835,
+          "tickets": 167
+        },
+        "initial": {
+          "notional_usd": 9784.425631440594,
+          "tickets": 11
+        }
+      }
+    },
+    "adanormalhedge:10y-stress": {
+      "actual_notional_usd": 715140.0229743428,
+      "asset_ticket_groups": {
+        "BIL": {
+          "notional_usd": 62107.554607896825,
+          "tickets": 24
+        },
+        "GLD": {
+          "notional_usd": 295148.31042895134,
+          "tickets": 39
+        },
+        "IEF": {
+          "notional_usd": 4613.253471679926,
+          "tickets": 10
+        },
+        "IJR": {
+          "notional_usd": 4968.679377144051,
+          "tickets": 34
+        },
+        "MTUM": {
+          "notional_usd": 42581.179317779584,
+          "tickets": 49
+        },
+        "PKW": {
+          "notional_usd": 5057.20085677713,
+          "tickets": 34
+        },
+        "QQQ": {
+          "notional_usd": 0.0,
+          "tickets": 0
+        },
+        "QUAL": {
+          "notional_usd": 43529.232088363715,
+          "tickets": 49
+        },
+        "SOXX": {
+          "notional_usd": 166981.16166126914,
+          "tickets": 48
+        },
+        "SPY": {
+          "notional_usd": 0.0,
+          "tickets": 0
+        },
+        "TLT": {
+          "notional_usd": 3550.5731579061257,
+          "tickets": 8
+        },
+        "USMV": {
+          "notional_usd": 45494.05456330979,
+          "tickets": 49
+        },
+        "VLUE": {
+          "notional_usd": 41108.823443265246,
+          "tickets": 49
+        },
+        "XLK": {
+          "notional_usd": 0.0,
+          "tickets": 0
+        }
+      },
+      "average_notional_per_ticket_usd": 1819.6947149474372,
+      "commission_notional_crossover_usd": 500.0,
+      "crossover_is_user_trade_cap": false,
+      "decision_records": 121,
+      "fixed_commission_usd": 393.0,
+      "fixed_fee_dominant_ticket_count": 240,
+      "formal_closes": 2512,
+      "initial_request_is_band_spillover": false,
+      "maximum_coherence_error_usd": 7.275957614183426e-12,
+      "median_notional_per_ticket_usd": 281.43609609123826,
+      "model_tickets": 393,
+      "new_financial_trials": 0,
+      "paid_cost_usd": 1823.2800459486857,
+      "pending_after_cutoff": false,
+      "proportional_cost_usd": 1430.280045948686,
+      "recorded_fills": 50,
+      "ticket_groups": {
+        "band_boundary": {
+          "notional_usd": 0.0,
+          "tickets": 0
+        },
+        "below_band_spillover": {
+          "notional_usd": 28526.236521864845,
+          "tickets": 216
+        },
+        "direct_band_coordinate": {
+          "notional_usd": 676843.715790974,
+          "tickets": 166
+        },
+        "initial": {
+          "notional_usd": 9770.070661503454,
+          "tickets": 11
+        }
+      }
+    },
+    "adanormalhedge:5y-base": {
+      "actual_notional_usd": 277833.7483364076,
+      "asset_ticket_groups": {
+        "BIL": {
+          "notional_usd": 19866.420904845425,
+          "tickets": 7
+        },
+        "GLD": {
+          "notional_usd": 115593.22809305585,
+          "tickets": 11
+        },
+        "IEF": {
+          "notional_usd": 0.0,
+          "tickets": 0
+        },
+        "IJR": {
+          "notional_usd": 99.409712306364,
+          "tickets": 6
+        },
+        "MTUM": {
+          "notional_usd": 17279.59193571073,
+          "tickets": 22
+        },
+        "PKW": {
+          "notional_usd": 99.57458038011121,
+          "tickets": 6
+        },
+        "QQQ": {
+          "notional_usd": 0.0,
+          "tickets": 0
+        },
+        "QUAL": {
+          "notional_usd": 17993.799708587605,
+          "tickets": 22
+        },
+        "SOXX": {
+          "notional_usd": 70592.83165412223,
+          "tickets": 22
+        },
+        "SPY": {
+          "notional_usd": 0.0,
+          "tickets": 0
+        },
+        "TLT": {
+          "notional_usd": 0.0,
+          "tickets": 0
+        },
+        "USMV": {
+          "notional_usd": 19087.975620688216,
+          "tickets": 22
+        },
+        "VLUE": {
+          "notional_usd": 17220.916126711007,
+          "tickets": 22
+        },
+        "XLK": {
+          "notional_usd": 0.0,
+          "tickets": 0
+        }
+      },
+      "average_notional_per_ticket_usd": 1984.5267738314828,
+      "commission_notional_crossover_usd": 2000.0,
+      "crossover_is_user_trade_cap": false,
+      "decision_records": 61,
+      "fixed_commission_usd": 140.0,
+      "fixed_fee_dominant_ticket_count": 113,
+      "formal_closes": 1254,
+      "initial_request_is_band_spillover": false,
+      "maximum_coherence_error_usd": 7.275957614183426e-12,
+      "median_notional_per_ticket_usd": 995.8291519421737,
+      "model_tickets": 140,
+      "new_financial_trials": 0,
+      "paid_cost_usd": 278.9168741682038,
+      "pending_after_cutoff": false,
+      "proportional_cost_usd": 138.91687416820378,
+      "recorded_fills": 23,
+      "ticket_groups": {
+        "band_boundary": {
+          "notional_usd": 0.0,
+          "tickets": 0
+        },
+        "below_band_spillover": {
+          "notional_usd": 8034.168976703707,
+          "tickets": 61
+        },
+        "direct_band_coordinate": {
+          "notional_usd": 260009.27660805223,
+          "tickets": 74
+        },
+        "initial": {
+          "notional_usd": 9790.302751651692,
+          "tickets": 5
+        }
+      }
+    },
+    "adanormalhedge:5y-stress": {
+      "actual_notional_usd": 261424.80940142754,
+      "asset_ticket_groups": {
+        "BIL": {
+          "notional_usd": 19039.796009249407,
+          "tickets": 7
+        },
+        "GLD": {
+          "notional_usd": 109722.9878029727,
+          "tickets": 11
+        },
+        "IEF": {
+          "notional_usd": 0.0,
+          "tickets": 0
+        },
+        "IJR": {
+          "notional_usd": 59.760192500972224,
+          "tickets": 6
+        },
+        "MTUM": {
+          "notional_usd": 16346.429169275707,
+          "tickets": 20
+        },
+        "PKW": {
+          "notional_usd": 60.094987305670564,
+          "tickets": 6
+        },
+        "QQQ": {
+          "notional_usd": 0.0,
+          "tickets": 0
+        },
+        "QUAL": {
+          "notional_usd": 16969.009092594773,
+          "tickets": 20
+        },
+        "SOXX": {
+          "notional_usd": 65675.49082338261,
+          "tickets": 20
+        },
+        "SPY": {
+          "notional_usd": 0.0,
+          "tickets": 0
+        },
+        "TLT": {
+          "notional_usd": 0.0,
+          "tickets": 0
+        },
+        "USMV": {
+          "notional_usd": 17621.053943347066,
+          "tickets": 20
+        },
+        "VLUE": {
+          "notional_usd": 15930.187380798596,
+          "tickets": 20
+        },
+        "XLK": {
+          "notional_usd": 0.0,
+          "tickets": 0
+        }
+      },
+      "average_notional_per_ticket_usd": 2010.9600723186734,
+      "commission_notional_crossover_usd": 500.0,
+      "crossover_is_user_trade_cap": false,
+      "decision_records": 61,
+      "fixed_commission_usd": 130.0,
+      "fixed_fee_dominant_ticket_count": 57,
+      "formal_closes": 1254,
+      "initial_request_is_band_spillover": false,
+      "maximum_coherence_error_usd": 3.637978807091713e-12,
+      "median_notional_per_ticket_usd": 1139.7399831653445,
+      "model_tickets": 130,
+      "new_financial_trials": 0,
+      "paid_cost_usd": 652.8496188028549,
+      "pending_after_cutoff": false,
+      "proportional_cost_usd": 522.8496188028549,
+      "recorded_fills": 21,
+      "ticket_groups": {
+        "band_boundary": {
+          "notional_usd": 0.0,
+          "tickets": 0
+        },
+        "below_band_spillover": {
+          "notional_usd": 6042.147958297992,
+          "tickets": 53
+        },
+        "direct_band_coordinate": {
+          "notional_usd": 245606.7222838816,
+          "tickets": 72
+        },
+        "initial": {
+          "notional_usd": 9775.939159247873,
+          "tickets": 5
+        }
+      }
+    },
+    "dyadic:10y-base": {
+      "actual_notional_usd": 514129.4814000807,
+      "asset_ticket_groups": {
+        "BIL": {
+          "notional_usd": 135503.03384672976,
+          "tickets": 114
+        },
+        "GLD": {
+          "notional_usd": 128368.14175746779,
+          "tickets": 114
+        },
+        "IEF": {
+          "notional_usd": 36815.64284556314,
+          "tickets": 68
+        },
+        "IJR": {
+          "notional_usd": 12433.580830903406,
+          "tickets": 103
+        },
+        "MTUM": {
+          "notional_usd": 23812.135600966736,
+          "tickets": 114
+        },
+        "PKW": {
+          "notional_usd": 12622.842428274358,
+          "tickets": 103
+        },
+        "QQQ": {
+          "notional_usd": 0.0,
+          "tickets": 0
+        },
+        "QUAL": {
+          "notional_usd": 23474.699466761205,
+          "tickets": 114
+        },
+        "SOXX": {
+          "notional_usd": 75638.339448091,
+          "tickets": 114
+        },
+        "SPY": {
+          "notional_usd": 0.0,
+          "tickets": 0
+        },
+        "TLT": {
+          "notional_usd": 17850.92297958862,
+          "tickets": 64
+        },
+        "USMV": {
+          "notional_usd": 24440.054404380422,
+          "tickets": 114
+        },
+        "VLUE": {
+          "notional_usd": 23170.08779135419,
+          "tickets": 114
+        },
+        "XLK": {
+          "notional_usd": 0.0,
+          "tickets": 0
+        }
+      },
+      "average_notional_per_ticket_usd": 452.5787688380992,
+      "commission_notional_crossover_usd": 2000.0,
+      "crossover_is_user_trade_cap": false,
+      "decision_records": 121,
+      "fixed_commission_usd": 1136.0,
+      "fixed_fee_dominant_ticket_count": 1087,
+      "formal_closes": 2512,
+      "initial_request_is_band_spillover": false,
+      "maximum_coherence_error_usd": 1.4551915228366852e-11,
+      "median_notional_per_ticket_usd": 182.48331632036195,
+      "model_tickets": 1136,
+      "new_financial_trials": 0,
+      "paid_cost_usd": 1393.0647407000408,
+      "pending_after_cutoff": false,
+      "proportional_cost_usd": 257.0647407000404,
+      "recorded_fills": 114,
+      "ticket_groups": {
+        "band_boundary": {
+          "notional_usd": 0.0,
+          "tickets": 0
+        },
+        "below_band_spillover": {
+          "notional_usd": 108441.99274425508,
+          "tickets": 776
+        },
+        "direct_band_coordinate": {
+          "notional_usd": 395903.0630243845,
+          "tickets": 349
+        },
+        "initial": {
+          "notional_usd": 9784.425631440594,
+          "tickets": 11
+        }
+      }
+    },
+    "dyadic:10y-stress": {
+      "actual_notional_usd": 507741.36339958874,
+      "asset_ticket_groups": {
+        "BIL": {
+          "notional_usd": 134353.50178624762,
+          "tickets": 117
+        },
+        "GLD": {
+          "notional_usd": 126966.6460916328,
+          "tickets": 117
+        },
+        "IEF": {
+          "notional_usd": 36096.606380454235,
+          "tickets": 70
+        },
+        "IJR": {
+          "notional_usd": 12310.743114758656,
+          "tickets": 106
+        },
+        "MTUM": {
+          "notional_usd": 23610.71341895271,
+          "tickets": 117
+        },
+        "PKW": {
+          "notional_usd": 12580.795340461755,
+          "tickets": 106
+        },
+        "QQQ": {
+          "notional_usd": 0.0,
+          "tickets": 0
+        },
+        "QUAL": {
+          "notional_usd": 23327.711605389104,
+          "tickets": 117
+        },
+        "SOXX": {
+          "notional_usd": 73836.36585296165,
+          "tickets": 117
+        },
+        "SPY": {
+          "notional_usd": 0.0,
+          "tickets": 0
+        },
+        "TLT": {
+          "notional_usd": 17394.086625982367,
+          "tickets": 64
+        },
+        "USMV": {
+          "notional_usd": 24346.16581327139,
+          "tickets": 117
+        },
+        "VLUE": {
+          "notional_usd": 22918.027369476476,
+          "tickets": 117
+        },
+        "XLK": {
+          "notional_usd": 0.0,
+          "tickets": 0
+        }
+      },
+      "average_notional_per_ticket_usd": 435.82949648033366,
+      "commission_notional_crossover_usd": 500.0,
+      "crossover_is_user_trade_cap": false,
+      "decision_records": 121,
+      "fixed_commission_usd": 1165.0,
+      "fixed_fee_dominant_ticket_count": 879,
+      "formal_closes": 2512,
+      "initial_request_is_band_spillover": false,
+      "maximum_coherence_error_usd": 1.0913936421275139e-11,
+      "median_notional_per_ticket_usd": 176.89234112181236,
+      "model_tickets": 1165,
+      "new_financial_trials": 0,
+      "paid_cost_usd": 2180.482726799177,
+      "pending_after_cutoff": false,
+      "proportional_cost_usd": 1015.4827267991776,
+      "recorded_fills": 117,
+      "ticket_groups": {
+        "band_boundary": {
+          "notional_usd": 0.0,
+          "tickets": 0
+        },
+        "below_band_spillover": {
+          "notional_usd": 109572.77552304005,
+          "tickets": 803
+        },
+        "direct_band_coordinate": {
+          "notional_usd": 388398.51721504534,
+          "tickets": 351
+        },
+        "initial": {
+          "notional_usd": 9770.070661503454,
+          "tickets": 11
+        }
+      }
+    },
+    "dyadic:5y-base": {
+      "actual_notional_usd": 195359.06779643535,
+      "asset_ticket_groups": {
+        "BIL": {
+          "notional_usd": 50496.485166359074,
+          "tickets": 56
+        },
+        "GLD": {
+          "notional_usd": 50229.232411984834,
+          "tickets": 56
+        },
+        "IEF": {
+          "notional_usd": 11488.80620578048,
+          "tickets": 28
+        },
+        "IJR": {
+          "notional_usd": 3656.08028607643,
+          "tickets": 46
+        },
+        "MTUM": {
+          "notional_usd": 9698.4195535332,
+          "tickets": 56
+        },
+        "PKW": {
+          "notional_usd": 3681.78978523882,
+          "tickets": 46
+        },
+        "QQQ": {
+          "notional_usd": 0.0,
+          "tickets": 0
+        },
+        "QUAL": {
+          "notional_usd": 9600.786750740017,
+          "tickets": 56
+        },
+        "SOXX": {
+          "notional_usd": 31466.879333573856,
+          "tickets": 56
+        },
+        "SPY": {
+          "notional_usd": 0.0,
+          "tickets": 0
+        },
+        "TLT": {
+          "notional_usd": 5575.252272820922,
+          "tickets": 25
+        },
+        "USMV": {
+          "notional_usd": 9903.222194478452,
+          "tickets": 56
+        },
+        "VLUE": {
+          "notional_usd": 9562.113835849243,
+          "tickets": 56
+        },
+        "XLK": {
+          "notional_usd": 0.0,
+          "tickets": 0
+        }
+      },
+      "average_notional_per_ticket_usd": 363.7971467345165,
+      "commission_notional_crossover_usd": 2000.0,
+      "crossover_is_user_trade_cap": false,
+      "decision_records": 61,
+      "fixed_commission_usd": 537.0,
+      "fixed_fee_dominant_ticket_count": 518,
+      "formal_closes": 1254,
+      "initial_request_is_band_spillover": false,
+      "maximum_coherence_error_usd": 7.275957614183426e-12,
+      "median_notional_per_ticket_usd": 158.46621019108215,
+      "model_tickets": 537,
+      "new_financial_trials": 0,
+      "paid_cost_usd": 634.6795338982179,
+      "pending_after_cutoff": false,
+      "proportional_cost_usd": 97.67953389821766,
+      "recorded_fills": 56,
+      "ticket_groups": {
+        "band_boundary": {
+          "notional_usd": 0.0,
+          "tickets": 0
+        },
+        "below_band_spillover": {
+          "notional_usd": 39442.24464705799,
+          "tickets": 365
+        },
+        "direct_band_coordinate": {
+          "notional_usd": 146132.39751793683,
+          "tickets": 161
+        },
+        "initial": {
+          "notional_usd": 9784.425631440594,
+          "tickets": 11
+        }
+      }
+    },
+    "dyadic:5y-stress": {
+      "actual_notional_usd": 191062.73587853598,
+      "asset_ticket_groups": {
+        "BIL": {
+          "notional_usd": 49688.52694418205,
+          "tickets": 58
+        },
+        "GLD": {
+          "notional_usd": 49229.06311562749,
+          "tickets": 58
+        },
+        "IEF": {
+          "notional_usd": 10996.449794049422,
+          "tickets": 29
+        },
+        "IJR": {
+          "notional_usd": 3562.6146043922686,
+          "tickets": 48
+        },
+        "MTUM": {
+          "notional_usd": 9475.822457432569,
+          "tickets": 58
+        },
+        "PKW": {
+          "notional_usd": 3636.82803634554,
+          "tickets": 48
+        },
+        "QQQ": {
+          "notional_usd": 0.0,
+          "tickets": 0
+        },
+        "QUAL": {
+          "notional_usd": 9548.872721275666,
+          "tickets": 58
+        },
+        "SOXX": {
+          "notional_usd": 30405.825896720544,
+          "tickets": 58
+        },
+        "SPY": {
+          "notional_usd": 0.0,
+          "tickets": 0
+        },
+        "TLT": {
+          "notional_usd": 5320.387978110477,
+          "tickets": 25
+        },
+        "USMV": {
+          "notional_usd": 9897.759603332452,
+          "tickets": 58
+        },
+        "VLUE": {
+          "notional_usd": 9300.584727067555,
+          "tickets": 58
+        },
+        "XLK": {
+          "notional_usd": 0.0,
+          "tickets": 0
+        }
+      },
+      "average_notional_per_ticket_usd": 343.6380141700287,
+      "commission_notional_crossover_usd": 500.0,
+      "crossover_is_user_trade_cap": false,
+      "decision_records": 61,
+      "fixed_commission_usd": 556.0,
+      "fixed_fee_dominant_ticket_count": 461,
+      "formal_closes": 1254,
+      "initial_request_is_band_spillover": false,
+      "maximum_coherence_error_usd": 3.637978807091713e-12,
+      "median_notional_per_ticket_usd": 152.22521240364227,
+      "model_tickets": 556,
+      "new_financial_trials": 0,
+      "paid_cost_usd": 938.1254717570722,
+      "pending_after_cutoff": false,
+      "proportional_cost_usd": 382.125471757072,
+      "recorded_fills": 58,
+      "ticket_groups": {
+        "band_boundary": {
+          "notional_usd": 0.0,
+          "tickets": 0
+        },
+        "below_band_spillover": {
+          "notional_usd": 39708.95666839004,
+          "tickets": 382
+        },
+        "direct_band_coordinate": {
+          "notional_usd": 141583.70854864258,
+          "tickets": 163
+        },
+        "initial": {
+          "notional_usd": 9770.070661503454,
+          "tickets": 11
+        }
+      }
+    }
+  },
+  "causal_fee_or_expert_alpha_attribution": false,
+  "counterfactual_selective_rebalance_policy_evaluated": false,
+  "full_original_book_count": 8,
+  "full_original_close_count": 15064,
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "new_financial_trials": 0,
+  "order_authority": false,
+  "prefixes_before_funding_not_applicable_not_passes": 12,
+  "private_result_sha256": "b8b8484eba2ea5762f1df0a33578d0435cbb792556658f98842b062b206d3cdc",
+  "raw_prices_targets_holdings_or_ticket_records_exported": false,
+  "record_type": "paired_full_target_ticket_spillover_diagnosis",
+  "schema_version": 1,
+  "source_CAGR_Sharpe_DD_recomputed": false,
+  "status": "complete_readonly_diagnostic",
+  "study_id": "ssd_rebalance_ticket_spillover_20261108_v1"
+}

@@ -4,6 +4,85 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Read-only J1570 paired ticket spillover: smaller dollars, more fixed commissions
+
+The [complete paired diagnosis](evidence/rebalance_ticket_spillover_20261108_v1.json)
+reads all eight original AdaNormalHedge/dyadic capital books. It does not run
+their learners, account solvers, BT, earlier diagnoses or financial verifiers.
+Recorded opening/closing inventory and actual adjusted open/close coordinates
+identify actual modeled tickets; Decimal64 exact binary64 operands independently
+check the opening marking. The original strict1e-6USD ticket threshold,
+USD1commission,5/20bps and one/two-session delays are unchanged.
+
+An original noninitial max-coordinate2.5pp holding-band trigger funds the whole
+target. Coordinates strictly below that signal-day band can therefore generate
+filled tickets. Initial deployment and numerical band boundaries are separate
+groups; execution-price drift and fees are not signal-day information.
+
+| Original book | Model tickets | Below-band spillover tickets | Share of all tickets | Median ticketUSD | Fixed-fee-dominant tickets |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| AH10y base | 396 | 218 | 55.050505% | 288.755522 | 316 |
+| AH10y stress | 393 | 216 | 54.961832% | 281.436096 | 240 |
+| AH5y base | 140 | 61 | 43.571429% | 995.829152 | 113 |
+| AH5y stress | 130 | 53 | 40.769231% | 1139.739983 | 57 |
+| Dyadic10y base | 1136 | 776 | 68.309859% | 182.483316 | 1087 |
+| Dyadic10y stress | 1165 | 803 | 68.927039% | 176.892341 | 879 |
+| Dyadic5y base | 537 | 365 | 67.970205% | 158.466210 | 518 |
+| Dyadic5y stress | 556 | 382 | 68.705036% | 152.225212 | 461 |
+
+Dyadic below-band coordinates account for67.9702--68.9270%of all tickets,
+or68.9778--70.0917%of noninitial tickets, but only20.1896--21.5804%of executed
+dollars. Every dyadic book has11initial tickets; the AH books have11/11/5/5.
+Initial tickets are included in the all-ticket denominator, not the spillover
+numerator. No numerical band-boundary ticket occurred in any of the eight books.
+
+The exact original fixed/proportional crossover isUSD2000at5bps andUSD500at20bps.
+Fixed fees exceed proportional fees on95.686620%/75.450644%/96.461825%/82.913669%
+of dyadic tickets in10ybase/stress,5ybase/stress order. These are descriptive
+categories, not user minimum trades or a new turnover ceiling.
+
+| Matched path | Fixed fee differenceUSD | Proportional fee differenceUSD | Paid fee differenceUSD |
+| --- | ---: | ---: | ---: |
+| 10y base | +740 | -116.321154 | +623.678846 |
+| 10y stress | +772 | -414.797319 | +357.202681 |
+| 5y base | +397 | -41.237340 | +355.762660 |
+| 5y stress | +426 | -140.724147 | +285.275853 |
+
+Differences are dyadic minus AH on the same original scenario. Proportional
+costs fall with lower actual executed notional, but the additional USD1tickets
+more than offset those savings. This is exact cost accounting, not isolated
+causal fee/alpha attribution, proof that those tickets are dispensable, or
+a selective/fee-free rebalance counterfactual. No CAGR,Sharpe or DD is recomputed.
+
+Initial V1synthetics preserve15tests/14passes/one bad fake20bps-delay1tuple.
+Only the fixture delay changed to2; the unchanged original scenario guard was
+correct. V2's16checks pass, including nonconstant open/close marking, real JSONL,
+initial/noninitial partitions, forbidden-reader guards and the fake full-eight-
+book/prefix/export Interface. Six exact prototypes/XML/logs per version remain.
+Frozen`7dc5fa97` at2026-11-08T03:51:21.935040Z binds203dependencies and the
+accepted58distribution rows/57package names. Actual whole-state checkpoint945,
+saved03:54:03.129422Z, and private fence`1c0627a2` precede the single real audit.
+
+Sole quant55543/observer55538 runs03:56:17.079881--04:13:55.396293Z:
+1058.3135963749955seconds, peak childRSS480890880Darwin bytes, exit0.
+The early alive/no-lock observation is retained; later actual ownership spans
+03:56:24.107317--04:13:50.395357Z. All eight source ticket/cost/notional totals
+and15064original closes agree. Maximum independent money-coherence discrepancy
+is1.4551915228366852e-11USD, within this diagnostic's frozen1e-6USD criterion,
+not a change to original financial acceptance. All28applicable new diagnostic
+prefixes match exact record bytes;12before-five-year-funding prefixes are N/A,
+not passes. The new transformation alone is replayed for those prefixes.
+
+Private result`b8b8484e`, postrun verification`2b1a79ae` and public aggregate
+`b20e76e7` remain distinct. Raw prices, targets, inventories and ticket records
+stay private on the SSD. Sixteen archival protection references are not sixteen
+live hashes: only15permitted live and5permitted user checks occurred. The banned
+configuration's old SHA remains archival only; no new content access occurred.
+**Zero new financial trials: J1570 / 146 registered / 131 completed /
+15 technical terminations / zero pending / 524 funded paths /
+309 combined completions / zero qualifiers. Investment objective unmet.**
+All earlier financial, technical and read-only chapters below remain unchanged.
+
 ## Complete J1570 dyadic intervals: lower drawdown and turnover, rejected net risk
 
 The [complete retained dyadic result](evidence/expert_dyadic_meta_20261108_results_v1.json)

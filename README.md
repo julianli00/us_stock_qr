@@ -45,6 +45,35 @@ The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
 
+### Read-only J1570 ticket spillover: smaller turnover, more fixed fees
+
+The [paired execution diagnosis](research/workbench/evidence/rebalance_ticket_spillover_20261108_v1.json)
+retains all eight completed AdaNormalHedge/dyadic books without another learner,
+account, BT or financial evaluation. An original max-coordinate2.5pp trigger
+funds the complete target, including coordinates below that signal-day band.
+Initial deployment is separate, not labeled spillover.
+
+| Existing path | AH / dyadic tickets | Dyadic below-band tickets | Share of all dyadic tickets | Total fee increaseUSD |
+| --- | ---: | ---: | ---: | ---: |
+| 10y base | 396 / 1136 | 776 | 68.309859% | 623.68 |
+| 10y stress | 393 / 1165 | 803 | 68.927039% | 357.20 |
+| 5y base | 140 / 537 | 365 | 67.970205% | 355.76 |
+| 5y stress | 130 / 556 | 382 | 68.705036% | 285.28 |
+
+Those below-band tickets carry only20.1896--21.5804%of dyadic executed dollars.
+Fixed commissions riseUSD740/772/397/426, exceeding proportional-fee savings
+USD116.321154/414.797319/41.237340/140.724147. This exact accounting explains
+how smaller dollar turnover coexists with higher fees; it does not establish
+avoidable trades, isolated causal fee effects or a selective-rebalance result.
+The USD2000base/USD500stress fixed/proportional crossover is arithmetic,
+not a user minimum trade or turnover cap.
+
+All15064original closes and28applicable new diagnostic prefixes remain;
+12before-funding prefixes are not applicable,not passes. Frozen`7dc5fa97`,
+actual checkpoint945 and sole PID55543 precede this read-only result.
+**Zero new financial trials: J1570 / 309 completions / zero qualifiers.
+Investment goal remains unmet.** All financial results below are unchanged.
+
 ### Complete J1570 dyadic meta: lower drawdown, still no joint pass
 
 The [complete dyadic-interval result](research/workbench/evidence/expert_dyadic_meta_20261108_results_v1.json)
