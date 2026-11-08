@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
   "current_ssd_journal_summary": {
-    "journal_sequence": 1558,
-    "journal_head_sha256": "0e63b8fc8d86baca7259c82112628c4b1b15913bc8394c346600f3fb64973675",
+    "journal_sequence": 1570,
+    "journal_head_sha256": "559b8a37b8e27e6f8938e8cafe82be5a92f3c597d18d0598d1abd9b1d47523ed",
     "legacy_completed": 178,
-    "registered": 145,
-    "completed": 130,
+    "registered": 146,
+    "completed": 131,
     "technical_failures": 15,
     "pending": 0,
-    "funded_paths": 520,
-    "combined_completed": 308,
+    "funded_paths": 524,
+    "combined_completed": 309,
     "qualified": 0,
-    "journal_summary_derived_at_utc": "2026-11-08T01:29:20.123586+00:00",
-    "latest_study_id": "ssd_expert_adanormalhedge_20261107_v1",
-    "latest_study_status": "complete_all_original_AdaNormalHedge_paths_retained_rejected",
-    "snapshot_scope": "Current J1558 counts include one terminal inventory-scenario workflow, not a completed financial trial. First 10y-base execution stopped at daily JSONL serialization; zero new complete paths, metrics, BT or prefix acceptance. All financial result/source-allocation fields below remain the explicitly preceding completed AdaNormalHedge J1554 snapshot. 308 financial completions/zero qualified; investment objective unmet.",
-    "financial_projection_scope": "preceding_last_completed_financial_study_J1554",
-    "latest_execution_study_id": "ssd_main_risk_scenario_control_20261108_v1",
-    "latest_execution_status": "technical_workflow_terminated_preserved",
+    "journal_summary_derived_at_utc": "2026-11-08T02:53:46.358317+00:00",
+    "latest_study_id": "ssd_expert_dyadic_meta_20261108_v1",
+    "latest_study_status": "complete_all_original_dyadic_meta_paths_retained_rejected",
+    "snapshot_scope": "One new dyadic-interval meta financial rule completed all four original paths. CAGR>12% passes4/4; RFSharpe>1 and DD<=15% pass0/4; matched-costSPY2/4 andQQQ1/4,extra stress/baseSPY1/2. Lower drawdown and turnover than preceding AdaNormalHedge do not qualify the rule; tickets and total fees rise. J1570/309complete/zeroqualified; all preceding financial,read-only and technical outcomes preserved.",
+    "financial_projection_scope": "current_complete_financial_study_J1570",
+    "latest_execution_study_id": "ssd_expert_dyadic_meta_20261108_v1",
+    "latest_execution_status": "complete_financial_rule_rejected",
     "preserved_current_scope_before_inventory_scenario_J1554": {
       "journal_sequence": 1554,
       "journal_head_sha256": "bc187b91eaac1cd1e206167ec62f0c97778bc7ee22bbc1c187822e748843a9cb",
@@ -77,20 +77,20 @@
       "investment_objective_verified": false,
       "order_authority": false
     },
-    "latest_results": "research/workbench/evidence/expert_adanormalhedge_20261107_results_v1.json",
-    "latest_results_sha256": "6a6cd8c69b7609eaec3c271e8dcc780edc066aaf1a071f32217d90c964a25074",
-    "financial_result_snapshot_journal_sequence": 1554,
-    "latest_results_belong_to_preceding_completed_financial_study": true,
-    "financial_program_freeze_sha256": "f266f610d63e264d028598f04d48f766fc8d45d171f858894ac26b95c7088814",
-    "actual_registered_frozen_sha256": "518ca1a84205c08d4cb53f962427654b13eae0e3d10e4fdeee7af57a8f9bead1",
+    "latest_results": "research/workbench/evidence/expert_dyadic_meta_20261108_results_v1.json",
+    "latest_results_sha256": "220994baf7ca5fa26812bbb258380943929e0a4dcc2cc72e2b4961176c0b822b",
+    "financial_result_snapshot_journal_sequence": 1570,
+    "latest_results_belong_to_preceding_completed_financial_study": false,
+    "financial_program_freeze_sha256": "ea6885c2bf42e1dc654e3ff4bd4a791eada16fda443bd597e290df2244268de0",
+    "actual_registered_frozen_sha256": "bf6da326d7e04251817e154456bf0d4a488a340e139071106d52cb5a423acd46",
     "latest_registrations": [
       {
-        "candidate_id": "expert_pool_six_adanormalhedge_v1",
-        "sequence": 1543,
-        "at": "2026-11-07T12:31:39.821971+00:00",
-        "sha256": "28863c9ba236ab8ba236791b8432b17e01b80ed955225c958539dcc499eba3f9",
-        "packet": "research/workbench/evidence/expert_adanormalhedge_20261107_registration_v1.json",
-        "packet_sha256": "7a353f00d8882f00854e1722809f159c41a74183195e2afbeb2a2e358b4704e5"
+        "at": "2026-11-08T02:34:33.140181+00:00",
+        "candidate_id": "expert_pool_six_dyadic_interval_meta_v1",
+        "packet": "research/workbench/evidence/expert_dyadic_meta_20261108_registration_v1.json",
+        "packet_sha256": "11ef82ab27fc5b8c461d0b51db2e16cecf2547090f90e6ccf9e853c1edee61bc",
+        "sequence": 1559,
+        "sha256": "551023d51419d7c0e4e3b005e0312aea9c0c3e234ab800e9e01f9f2c05d1f5ff"
       }
     ],
     "complete_cohort_packet_schema": 3,
@@ -102,12 +102,12 @@
     "planned_original_funded_paths": 4,
     "actual_remote_publication_required_before_funding": true,
     "actual_remote_publication_verified_before_accounts": true,
-    "actual_preregistration_commit": "1bf0c4e48f84ea56899aadf2238994f12b04ba07",
+    "actual_preregistration_commit": "fcf26804a7bc2ad6d4781cf21f43c50b080f6cb4",
     "source_comparator": "unchanged_sealed_six_matured_input_loss_labels",
-    "source_allocation_algorithm": "AdaNormalHedge_original_fixed_expert_Algorithm1",
+    "source_allocation_algorithm": "shifted_dyadic_calendar_base_Hedge_weighted_meta_potential",
     "primary_decimal_precision": 320,
     "independent_decimal_precision": 160,
-    "all_zero_source_scores": "logged_uniform_prior_without_regret_state_reset",
+    "all_zero_source_scores": "logged_active_interval_priors_without_global_state_reset",
     "source_regret_potential_is_actual_main_wealth_or_bound": false,
     "weight_floor_or_regret_clipping": false,
     "planned_complete_source_intervals": 119,
@@ -121,60 +121,130 @@
     "actual_broker_orders": 0,
     "independent_forward_validation": false,
     "investment_objective_verified": false,
-    "actual_funded_process_wall_seconds": 140.77137133298675,
-    "actual_funded_process_Darwin_peak_RSS_bytes": 453111808,
+    "actual_funded_process_wall_seconds": 262.2762430830044,
+    "actual_funded_process_Darwin_peak_RSS_bytes": 521093120,
     "order_authority": false,
     "actual_four_path_outcome_and_cost_rows": {
       "10y-base": {
-        "path_key": "10y-base",
-        "metrics": {"cagr": 0.21252744909504062, "sharpe": 0.9111303424254121, "max_drawdown": 0.32904938125038796, "sessions": 2512},
-        "execution": {"annualized_two_sided_turnover": 3.9036614779589107, "model_order_count": 396, "total_cost_usd": 769.3858944012102},
-        "gates": {"beats_qqq": true, "beats_spy": true, "cagr_above_12pct": true, "drawdown_at_most_15pct": false, "sharpe_above_1": false},
         "all_point_gates_pass": false,
-        "independent_bt_max_equity_difference_usd": 1.3096723705530167e-10
+        "execution": {
+          "annualized_two_sided_turnover": 3.2077610644855503,
+          "model_order_count": 1136,
+          "total_cost_usd": 1393.0647407000404
+        },
+        "gates": {
+          "beats_qqq": false,
+          "beats_spy": false,
+          "cagr_above_12pct": true,
+          "drawdown_at_most_15pct": false,
+          "sharpe_above_1": false
+        },
+        "independent_bt_max_equity_difference_usd": 3.637978807091713e-11,
+        "metrics": {
+          "cagr": 0.13971384225482741,
+          "max_drawdown": 0.19135835075783214,
+          "sessions": 2512,
+          "sharpe": 0.9044499003413952
+        },
+        "path_key": "10y-base"
       },
       "10y-stress": {
-        "path_key": "10y-stress",
-        "metrics": {"cagr": 0.19878285480116165, "sharpe": 0.8554669908275074, "max_drawdown": 0.32959017261883394, "sessions": 2512},
-        "execution": {"annualized_two_sided_turnover": 3.9051461999528985, "model_order_count": 393, "total_cost_usd": 1823.2800459486857},
-        "gates": {"also_beats_base_cost_spy": true, "beats_qqq": false, "beats_spy": true, "cagr_above_12pct": true, "drawdown_at_most_15pct": false, "sharpe_above_1": false},
         "all_point_gates_pass": false,
-        "independent_bt_max_equity_difference_usd": 5.820766091346741e-11
+        "execution": {
+          "annualized_two_sided_turnover": 3.2330961410282435,
+          "model_order_count": 1165,
+          "total_cost_usd": 2180.4827267991777
+        },
+        "gates": {
+          "also_beats_base_cost_spy": false,
+          "beats_qqq": false,
+          "beats_spy": false,
+          "cagr_above_12pct": true,
+          "drawdown_at_most_15pct": false,
+          "sharpe_above_1": false
+        },
+        "independent_bt_max_equity_difference_usd": 3.637978807091713e-11,
+        "metrics": {
+          "cagr": 0.13191307985199585,
+          "max_drawdown": 0.187179608290567,
+          "sessions": 2512,
+          "sharpe": 0.8490143834452947
+        },
+        "path_key": "10y-stress"
       },
       "5y-base": {
-        "path_key": "5y-base",
-        "metrics": {"cagr": 0.274958609848003, "sharpe": 1.0792568399213085, "max_drawdown": 0.2274336637983272, "sessions": 1254},
-        "execution": {"annualized_two_sided_turnover": 4.660201489285327, "model_order_count": 140, "total_cost_usd": 278.9168741682038},
-        "gates": {"beats_qqq": true, "beats_spy": true, "cagr_above_12pct": true, "drawdown_at_most_15pct": false, "sharpe_above_1": true},
         "all_point_gates_pass": false,
-        "independent_bt_max_equity_difference_usd": 1.0913936421275139e-11
+        "execution": {
+          "annualized_two_sided_turnover": 3.2458261525892005,
+          "model_order_count": 537,
+          "total_cost_usd": 634.6795338982176
+        },
+        "gates": {
+          "beats_qqq": true,
+          "beats_spy": true,
+          "cagr_above_12pct": true,
+          "drawdown_at_most_15pct": false,
+          "sharpe_above_1": false
+        },
+        "independent_bt_max_equity_difference_usd": 7.275957614183426e-11,
+        "metrics": {
+          "cagr": 0.17386113211928178,
+          "max_drawdown": 0.15598420014587489,
+          "sessions": 1254,
+          "sharpe": 0.9850650320398346
+        },
+        "path_key": "5y-base"
       },
       "5y-stress": {
-        "path_key": "5y-stress",
-        "metrics": {"cagr": 0.24561573732775033, "sharpe": 0.9701032939623482, "max_drawdown": 0.2279877483584256, "sessions": 1254},
-        "execution": {"annualized_two_sided_turnover": 4.632402720437219, "model_order_count": 130, "total_cost_usd": 652.849618802855},
-        "gates": {"also_beats_base_cost_spy": true, "beats_qqq": true, "beats_spy": true, "cagr_above_12pct": true, "drawdown_at_most_15pct": false, "sharpe_above_1": false},
         "all_point_gates_pass": false,
-        "independent_bt_max_equity_difference_usd": 2.546585164964199e-11
+        "execution": {
+          "annualized_two_sided_turnover": 3.2833688610014664,
+          "model_order_count": 556,
+          "total_cost_usd": 938.1254717570721
+        },
+        "gates": {
+          "also_beats_base_cost_spy": true,
+          "beats_qqq": false,
+          "beats_spy": true,
+          "cagr_above_12pct": true,
+          "drawdown_at_most_15pct": false,
+          "sharpe_above_1": false
+        },
+        "independent_bt_max_equity_difference_usd": 3.637978807091713e-11,
+        "metrics": {
+          "cagr": 0.15672535038848867,
+          "max_drawdown": 0.1627881768906433,
+          "sessions": 1254,
+          "sharpe": 0.8716556154258076
+        },
+        "path_key": "5y-stress"
       }
     },
     "actual_source_forecast_verification": {
-      "source_decisions": 121,
+      "all_four_cash_financial_columns_and_positions_exact": true,
+      "all_source_inputs_matured_before_next_forecast": true,
+      "auxiliary_interval_learners_are_independent_economic_trials": false,
+      "capital_prefixes_exact": 5,
       "complete_source_intervals": 119,
       "input_resolution_records": 242,
+      "maximum_active_meta_learners": 8,
       "maximum_independent_forecast_difference": 0.0,
-      "maximum_independent_regret_difference": 0.0,
-      "maximum_independent_magnitude_difference": 0.0,
-      "maximum_independent_played_difference": 8.364251144548459e-153,
+      "maximum_independent_magnitude_difference": 9.029541032384602e-153,
+      "maximum_independent_played_difference": 2.1284280595566985e-153,
+      "maximum_independent_regret_difference": 2.1793627784503427e-153,
       "maximum_independent_target_difference": 1.1102230246251565e-16,
-      "all_source_inputs_matured_before_next_forecast": true,
-      "source_regret_potential_is_actual_main_wealth_or_bound": false,
-      "source_prefixes_exact": 5,
-      "capital_prefixes_exact": 5,
-      "all_four_cash_financial_columns_and_positions_exact": true
+      "new_main_accounts_previously_started": false,
+      "old_learner_or_policy_replayed": false,
+      "order_authority": false,
+      "retired_auxiliary_interval_learners": 232,
+      "source_decisions": 121,
+      "source_game_score_is_actual_main_net_wealth": false,
+      "source_prefixes_exact": 5
     },
-    "actual_review_sequence": 1554,
-    "all_candidate_status": {"expert_pool_six_adanormalhedge_v1": "rejected"},
+    "actual_review_sequence": 1570,
+    "all_candidate_status": {
+      "expert_pool_six_dyadic_interval_meta_v1": "rejected"
+    },
     "latest_technical_failure": {
       "candidate_id": "expert_pool_six_inventory_scenario_viability_v1",
       "study_id": "ssd_main_risk_scenario_control_20261108_v1",
@@ -212,14 +282,14 @@
       "public_failure_sha256": "b2ca65004c9b6195667f3fa78062327432672d61e30405f4b1285bb40f2c373d"
     },
     "previous_complete_financial_study": {
-      "study_id": "ssd_expert_switching_loss_20261107_v1",
-      "journal_sequence": 1542,
-      "status": "rejected_all_original_paths_retained",
-      "results": "research/workbench/evidence/expert_switching_loss_20261107_results_v1.json",
-      "results_sha256": "b011507c6d524767b143bb846a4e097d7bdf749aa3a530637e798c6e9c6585b4",
-      "complete_previous_projection_commit": "48914fe42bacfdd137a8856663dda711f25e64df",
+      "complete_previous_projection_commit": "c459b278da524eab4235deb3fffa134e70347f77",
       "complete_previous_projection_path": "docs/research_progress.json",
-      "snapshot_is_current": false
+      "journal_sequence": 1554,
+      "results": "research/workbench/evidence/expert_adanormalhedge_20261107_results_v1.json",
+      "results_sha256": "6a6cd8c69b7609eaec3c271e8dcc780edc066aaf1a071f32217d90c964a25074",
+      "snapshot_is_current": false,
+      "status": "complete_all_original_AdaNormalHedge_paths_retained_rejected",
+      "study_id": "ssd_expert_adanormalhedge_20261107_v1"
     },
     "preserved_previous_complete_financial_study_before_adanormalhedge": {
       "study_id": "ssd_median_equity_budget_20261106_v1",
@@ -9271,7 +9341,181 @@
       "causal_profit_attribution_or_independent_forecast_validation": false,
       "investment_objective_verified": false,
       "order_authority": false
-    }
+    },
+    "auxiliary_learners_are_complete_experts_or_independent_trials": false,
+    "dyadic_interval_lengths": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64,
+      128
+    ],
+    "maximum_active_auxiliary_meta_learners": 8,
+    "preserved_financial_before_dyadic_J1558": {
+      "actual_four_path_outcome_and_cost_rows": {
+        "10y-base": {
+          "all_point_gates_pass": false,
+          "execution": {
+            "annualized_two_sided_turnover": 3.9036614779589107,
+            "model_order_count": 396,
+            "total_cost_usd": 769.3858944012102
+          },
+          "gates": {
+            "beats_qqq": true,
+            "beats_spy": true,
+            "cagr_above_12pct": true,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": false
+          },
+          "independent_bt_max_equity_difference_usd": 1.3096723705530167e-10,
+          "metrics": {
+            "cagr": 0.21252744909504062,
+            "max_drawdown": 0.32904938125038796,
+            "sessions": 2512,
+            "sharpe": 0.9111303424254121
+          },
+          "path_key": "10y-base"
+        },
+        "10y-stress": {
+          "all_point_gates_pass": false,
+          "execution": {
+            "annualized_two_sided_turnover": 3.9051461999528985,
+            "model_order_count": 393,
+            "total_cost_usd": 1823.2800459486857
+          },
+          "gates": {
+            "also_beats_base_cost_spy": true,
+            "beats_qqq": false,
+            "beats_spy": true,
+            "cagr_above_12pct": true,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": false
+          },
+          "independent_bt_max_equity_difference_usd": 5.820766091346741e-11,
+          "metrics": {
+            "cagr": 0.19878285480116165,
+            "max_drawdown": 0.32959017261883394,
+            "sessions": 2512,
+            "sharpe": 0.8554669908275074
+          },
+          "path_key": "10y-stress"
+        },
+        "5y-base": {
+          "all_point_gates_pass": false,
+          "execution": {
+            "annualized_two_sided_turnover": 4.660201489285327,
+            "model_order_count": 140,
+            "total_cost_usd": 278.9168741682038
+          },
+          "gates": {
+            "beats_qqq": true,
+            "beats_spy": true,
+            "cagr_above_12pct": true,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": true
+          },
+          "independent_bt_max_equity_difference_usd": 1.0913936421275139e-11,
+          "metrics": {
+            "cagr": 0.274958609848003,
+            "max_drawdown": 0.2274336637983272,
+            "sessions": 1254,
+            "sharpe": 1.0792568399213085
+          },
+          "path_key": "5y-base"
+        },
+        "5y-stress": {
+          "all_point_gates_pass": false,
+          "execution": {
+            "annualized_two_sided_turnover": 4.632402720437219,
+            "model_order_count": 130,
+            "total_cost_usd": 652.849618802855
+          },
+          "gates": {
+            "also_beats_base_cost_spy": true,
+            "beats_qqq": true,
+            "beats_spy": true,
+            "cagr_above_12pct": true,
+            "drawdown_at_most_15pct": false,
+            "sharpe_above_1": false
+          },
+          "independent_bt_max_equity_difference_usd": 2.546585164964199e-11,
+          "metrics": {
+            "cagr": 0.24561573732775033,
+            "max_drawdown": 0.2279877483584256,
+            "sessions": 1254,
+            "sharpe": 0.9701032939623482
+          },
+          "path_key": "5y-stress"
+        }
+      },
+      "actual_funded_process_Darwin_peak_RSS_bytes": 453111808,
+      "actual_funded_process_wall_seconds": 140.77137133298675,
+      "actual_preregistration_commit": "1bf0c4e48f84ea56899aadf2238994f12b04ba07",
+      "actual_registered_frozen_sha256": "518ca1a84205c08d4cb53f962427654b13eae0e3d10e4fdeee7af57a8f9bead1",
+      "actual_review_sequence": 1554,
+      "actual_source_forecast_verification": {
+        "all_four_cash_financial_columns_and_positions_exact": true,
+        "all_source_inputs_matured_before_next_forecast": true,
+        "capital_prefixes_exact": 5,
+        "complete_source_intervals": 119,
+        "input_resolution_records": 242,
+        "maximum_independent_forecast_difference": 0.0,
+        "maximum_independent_magnitude_difference": 0.0,
+        "maximum_independent_played_difference": 8.364251144548459e-153,
+        "maximum_independent_regret_difference": 0.0,
+        "maximum_independent_target_difference": 1.1102230246251565e-16,
+        "source_decisions": 121,
+        "source_prefixes_exact": 5,
+        "source_regret_potential_is_actual_main_wealth_or_bound": false
+      },
+      "all_candidate_status": {
+        "expert_pool_six_adanormalhedge_v1": "rejected"
+      },
+      "all_zero_source_scores": "logged_uniform_prior_without_regret_state_reset",
+      "combined_completed": 308,
+      "completed": 130,
+      "financial_program_freeze_sha256": "f266f610d63e264d028598f04d48f766fc8d45d171f858894ac26b95c7088814",
+      "financial_projection_scope": "preceding_last_completed_financial_study_J1554",
+      "financial_result_snapshot_journal_sequence": 1554,
+      "funded_paths": 520,
+      "journal_head_sha256": "0e63b8fc8d86baca7259c82112628c4b1b15913bc8394c346600f3fb64973675",
+      "journal_sequence": 1558,
+      "journal_summary_derived_at_utc": "2026-11-08T01:29:20.123586+00:00",
+      "latest_execution_status": "technical_workflow_terminated_preserved",
+      "latest_execution_study_id": "ssd_main_risk_scenario_control_20261108_v1",
+      "latest_registrations": [
+        {
+          "at": "2026-11-07T12:31:39.821971+00:00",
+          "candidate_id": "expert_pool_six_adanormalhedge_v1",
+          "packet": "research/workbench/evidence/expert_adanormalhedge_20261107_registration_v1.json",
+          "packet_sha256": "7a353f00d8882f00854e1722809f159c41a74183195e2afbeb2a2e358b4704e5",
+          "sequence": 1543,
+          "sha256": "28863c9ba236ab8ba236791b8432b17e01b80ed955225c958539dcc499eba3f9"
+        }
+      ],
+      "latest_results": "research/workbench/evidence/expert_adanormalhedge_20261107_results_v1.json",
+      "latest_results_belong_to_preceding_completed_financial_study": true,
+      "latest_results_sha256": "6a6cd8c69b7609eaec3c271e8dcc780edc066aaf1a071f32217d90c964a25074",
+      "latest_study_id": "ssd_expert_adanormalhedge_20261107_v1",
+      "latest_study_status": "complete_all_original_AdaNormalHedge_paths_retained_rejected",
+      "previous_complete_financial_study": {
+        "complete_previous_projection_commit": "48914fe42bacfdd137a8856663dda711f25e64df",
+        "complete_previous_projection_path": "docs/research_progress.json",
+        "journal_sequence": 1542,
+        "results": "research/workbench/evidence/expert_switching_loss_20261107_results_v1.json",
+        "results_sha256": "b011507c6d524767b143bb846a4e097d7bdf749aa3a530637e798c6e9c6585b4",
+        "snapshot_is_current": false,
+        "status": "rejected_all_original_paths_retained",
+        "study_id": "ssd_expert_switching_loss_20261107_v1"
+      },
+      "registered": 145,
+      "snapshot_scope": "Current J1558 counts include one terminal inventory-scenario workflow, not a completed financial trial. First 10y-base execution stopped at daily JSONL serialization; zero new complete paths, metrics, BT or prefix acceptance. All financial result/source-allocation fields below remain the explicitly preceding completed AdaNormalHedge J1554 snapshot. 308 financial completions/zero qualified; investment objective unmet.",
+      "source_allocation_algorithm": "AdaNormalHedge_original_fixed_expert_Algorithm1"
+    },
+    "retired_auxiliary_interval_learners": 232
   },
   "updated_on": "2026-10-31",
   "phase": "legacy_term_expert_v2_eligibility_complete_blocked",

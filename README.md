@@ -11,7 +11,7 @@ not authority to trade or to modify user-maintained holdings.
 | Incumbent Top30 | Static 699-stock, 126-day momentum, inverse-volatility monthly strategy; saved 2015-01-02 through 2026-05-08 result | CAGR 29.54%, Sharpe 1.1867, drawdown 28.31%; full-sample selection, not independent OOS; fails the 15% drawdown gate |
 | Early watch | Price/volume plus optional event evidence; legacy prices/signals through 2026-08-20 | September evidence cannot validate August signals; historical news/Reddit coverage incomplete |
 | [Isolated workbench](research/workbench/README.md) | Initial imported snapshot: 52 registered configurations through 2026-10-05; zero joint 10-year/5-year passes | Separate package/environment; original snapshot and subsequent historical protocols remain preserved |
-| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 145 SSD identities, 130 completed, 15 retained technical-workflow terminations and zero pending; 520 completed funded paths | Journal1558: inventory-scenario V1 terminated at JSONL serialization; no new complete financial result. 308 combined completions, zero qualifiers; investment goal remains unmet |
+| [SSD dual-benchmark research](research/workbench/NOVEMBER_RESEARCH_RESULTS_V1.md) | 178 legacy completions preserved; 146 SSD identities, 131 completed, 15 retained technical-workflow terminations and zero pending; 524 completed funded paths | Journal1570: all four dyadic-meta paths complete and rejected; 309 combined completions, zero qualifiers; investment goal remains unmet |
 | Manual holdings | Private user-maintained facts | Never loaded, overwritten or published by the research reporter |
 
 The checked baseline is in
@@ -44,6 +44,39 @@ November authorization.
 The closed October authorization, all failed outcomes and actual late timer
 cleanup remain historical evidence. No November authority retroactively changes
 them, resets counts, reopens terminal data probes or grants trading authority.
+
+### Complete J1570 dyadic meta: lower drawdown, still no joint pass
+
+The [complete dyadic-interval result](research/workbench/evidence/expert_dyadic_meta_20261108_results_v1.json)
+uses the same six complete experts and unchanged source-loss labels.
+Fixed geometric interval memories replace a single full-history source learner;
+their rates and priors are calendar-derived, not a gain/hazard/window sweep.
+Eight auxiliary memories and232retirements are not new independent experts
+or trials. Source-game potential is not actual net main wealth or a DD guarantee.
+
+| Actual path | Net CAGR | RF Sharpe | Maximum DD |
+| --- | ---: | ---: | ---: |
+| 10y base | 13.971384% | 0.904450 | 19.135835% |
+| 10y stress | 13.191308% | 0.849014 | 18.717961% |
+| 5y base | 17.386113% | 0.985065 | 15.598420% |
+| 5y stress | 15.672535% | 0.871656 | 16.278818% |
+
+CAGR>12% passes4/4, but Sharpe>1 and DD<=15% pass0/4.
+Matched-cost SPY passes2/4 and QQQ1/4; extra stress/base-SPY passes1/2.
+All four paths are rejected. Compared with AdaNormalHedge, drawdown and
+annual two-sided turnover fall on every path, but returns/Sharpe fall and
+model tickets/total fees rise. This comparison is not isolated cost causality.
+Turnover3.207761/3.233096/3.245826/3.283369, tickets1136/1165/537/556 and
+feesUSD1393.06/2180.48/634.68/938.13 remain disclosed, not user-imposed caps.
+
+Frozen`ea6885c2`, real registrationJ1559/program`fcf2680` and actual
+checkpoints939/940 precede sole worker45917/observer45913:
+262.276243seconds, peak childRSS521093120Darwin bytes.
+All121source decisions/119matured intervals/242records, exact cash/position
+comparisons, independent BT and five source/five capital prefixes complete.
+This is exposed-history research, not independent forward evidence.
+**J1570 / 309 financial completions / zero qualifiers. Investment goal unmet.**
+The prior scenario termination and all earlier evidence below remain intact.
 
 ### J1558 inventory-scenario V1: terminal workflow failure, no financial conclusion
 

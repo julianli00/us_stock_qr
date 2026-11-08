@@ -4,6 +4,85 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## Complete J1570 dyadic intervals: lower drawdown and turnover, rejected net risk
+
+The [complete retained dyadic result](evidence/expert_dyadic_meta_20261108_results_v1.json)
+uses the unchanged six complete admitted source policies, original normalized
+bounded loss labels and original source/opinion/capital clocks.
+The new question is temporal geometric-cover memory, not a repair of the
+failed scenario V1 or a repeat of second-order growth/contextual contests.
+Lengths1,2,4,8,16,32,64,128and summable calendar priors are fixed before
+outcomes. Eight active auxiliary learners and232expired intervals are
+not complete strategy experts, separate evaluated configurations or independent
+validation. No common gain, hazard or best-window parameter is tuned.
+
+| Actual path | Net CAGR | RF Sharpe | Maximum DD | Annual two-sided turnover | Model tickets | Total feesUSD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 10y base | 13.971384% | 0.904450 | 19.135835% | 3.207761 | 1136 | 1393.06 |
+| 10y stress | 13.191308% | 0.849014 | 18.717961% | 3.233096 | 1165 | 2180.48 |
+| 5y base | 17.386113% | 0.985065 | 15.598420% | 3.245826 | 537 | 634.68 |
+| 5y stress | 15.672535% | 0.871656 | 16.278818% | 3.283369 | 556 | 938.13 |
+
+Strict net CAGR>12% passes4/4, RFSharpe>1 passes0/4, DD<=15% passes0/4.
+Fair matched-cost SPY passes2/4 and QQQ1/4; the extra original
+stress/base-cost-SPY gate passes1/2. None is jointly qualified.
+Five-year base Sharpe0.985065 and DD15.598420% do not become passing values
+through rounding or relaxation. Returns above15% are preferences, not waivers.
+
+Compared with the preceding completed AdaNormalHedge rule, maximum DD and
+annual two-sided turnover fall on every path; net returns/Sharpe also fall.
+Model tickets and total fees increase on all four paths despite lower
+turnover. Target mixture and exposure change together, so this is not an
+isolated causal fee or source-loss comparison. Modeled tickets are not broker
+orders, and no numeric turnover/concentration cap is attributed to the user.
+
+Initial V1 synthetic evidence has15tests/14passes/one mixed-boolean-label
+failure. A legacy helper accepted the mixed list through numeric coercion.
+Only the new unfrozen inlet was guarded before conversion; original labels
+and the frozen legacy helper are unchanged. V2passes18tests but fails a
+format check; native formatting precedes final V3's18/18passes and Ruff0.
+All exact six input prototypes, failure logs/XML and successful checks remain.
+The actual source and capital JSONL and the complete synthetic four-path/
+source-prefix/cash-BT/export delivery were exercised, not only memory callbacks.
+
+Intent`ea6885c2` is frozen2026-11-08T02:31:56.765608+00:00 with202dependencies
+and the accepted58distribution rows/57package names. Actual checkpoint939,
+saved02:33:58.075602, precedes the only registrationJ1559 at02:34:33.140181.
+Schema3packet`11ef82ab` defers actual target proof.
+Program`fcf2680` is actually published and verified before checkpoint940,
+saved02:39:59.294672, and funding fence`8c85a0f4`.
+The original import manifest and guarded publication checks remain unchanged.
+
+Sole quant45917/observer45913 Popen02:41:41.327985 and completes0 at
+02:46:03.605409:262.2762430830044seconds, peak childRSS521093120Darwin bytes.
+Early two-second readiness sees a running process but no lock ownership;
+that false ownership result is retained. Later actual lock observations span
+02:41:48.343521--02:45:58.600289. One additional actual process/lock check is
+an observation, not future availability or financial-success proof.
+
+All121original source decisions,119matured intervals and242input/result
+records are retained. Primary320-digit epoch recursion agrees with
+160-digit recomputed regrets/multiplicative evidence: forecast error0,
+maximum magnitude error9.029541032384602e-153, played-loss error
+2.1284280595566985e-153 and target error1.1102230246251565e-16.
+Source-game accuracy is not main-wealth or drawdown protection.
+All four full financial-frame/actual-position cash comparisons are exact;
+independent BT equity error is at most7.275957614183426e-11USD.
+Five actual source and five actual main-capital prefixes are exact at
+2017-04-06/2018-10-05/2020-10-06/2022-10-05/2024-10-07.
+No formal return is removed; five-year capital is fresh while source history
+remains shared. Auxiliary prefixes add no independent economic trial.
+
+The public PMLR2015 paper motivates interval calendars, but no faithful SAOL,
+strong-adaptivity theorem or independent forward validation is claimed.
+Private mathematical source, prices, target tapes, books and source states
+are not published. The protection boundary violation and every failed study
+remain preserved;16archival references are distinct from15permitted live and
+5permitted user checks, with no new access to the prohibited configuration.
+**J1570 / 146 registrations / 131 financial completions / 15 technical
+terminations / zero pending / 524 complete funded paths / 309 combined
+completions / zero qualifiers. Investment objective unmet.**
+
 ## J1558 inventory-scenario V1: frozen technical termination, no financial result
 
 The [actual termination](evidence/main_risk_scenario_control_20261108_results_v1.json)
