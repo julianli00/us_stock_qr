@@ -1,0 +1,97 @@
+{
+  "actual_authoritative_counts": {
+    "current_journal_event_count": 1558,
+    "current_journal_head_sha256": "0e63b8fc8d86baca7259c82112628c4b1b15913bc8394c346600f3fb64973675",
+    "new_account_paths": 520,
+    "new_completed_strategy_evaluations": 130,
+    "new_historical_point_gate_passes": 0,
+    "new_pending_candidates": 0,
+    "new_registered_candidates": 145,
+    "new_reviews": 130,
+    "new_technical_failures": 15,
+    "original_completed_configurations": 178,
+    "original_registered_versions": 96,
+    "original_reviews": 94,
+    "total_legacy_plus_ssd_completed_configurations": 308
+  },
+  "actual_execution": {
+    "early_lock_owner": false,
+    "elapsed_seconds": 32.07763170899125,
+    "exit_code": 1,
+    "observer_pid": 40842,
+    "peak_child_rss_Darwin_bytes": 541089792,
+    "sole_quant_pid": 40846,
+    "subsequent_worker_lock_observed": true
+  },
+  "actual_failure_at": "2026-11-08T01:23:13.295094+00:00",
+  "actual_prefunding_checkpoint_revision": 934,
+  "actual_preregistration_commit": "cff0b7e7131a59d901fd4172b41bfd30e71bd7c5",
+  "actual_remote_publication_sha256": "5e44f51ae0bb92e68b854271aba3ea43be8eb33d336062c62a00819a1d67fa02",
+  "actual_termination_event": {
+    "at": "2026-11-08T01:23:13.273096+00:00",
+    "candidate_id": "expert_pool_six_inventory_scenario_viability_v1",
+    "kind": "technical_failure",
+    "previous_sha256": "a1658d1da84bdae8461bab63631a92ffd4fa8ec6f7fd72104edc115e3452dbee",
+    "schema_version": 1,
+    "sequence": 1558,
+    "sha256": "0e63b8fc8d86baca7259c82112628c4b1b15913bc8394c346600f3fb64973675"
+  },
+  "archival_protection_references": 16,
+  "banned_configuration_new_live_access": false,
+  "candidate_id": "expert_pool_six_inventory_scenario_viability_v1",
+  "completed_path_keys": [],
+  "failure": {
+    "authorization_interrupted": false,
+    "failed_at": "2026-11-08T01:23:13.295094+00:00",
+    "partial_outputs_retained": true,
+    "reason": "Object of type bool is not JSON serializable",
+    "stage": "funding_or_causality"
+  },
+  "four_path_financial_status": "not_evaluated_to_completion",
+  "frozen_source_or_parameters_changed_after_failure": false,
+  "frozen_specification_sha256": "fc10fc6f4a54aef9c48fb32dd7416ca00edd4f776a1d92ae1b3d5eba605d91e7",
+  "full_account_cash_BT_and_prefix_acceptance_completed": false,
+  "independent_forward_validation": false,
+  "investment_objective_verified": false,
+  "last_retained_partial_day": "2016-10-06",
+  "method_freeze_sha256": "efa2a175a60cb2676b643d8d30c2c0145aa6c4d2dda0b83c8e2db536ca5ec0ea",
+  "new_capital_prefix_runs_completed": 0,
+  "new_financial_metrics_available": false,
+  "new_financial_rules_completed": 0,
+  "new_financial_rules_registered": 1,
+  "new_formal_paths_completed": 0,
+  "new_source_prefix_checks_completed": 0,
+  "old_source_learner_or_account_replayed": false,
+  "order_authority": false,
+  "partial_chronological_records": 5,
+  "partial_outputs_retained": true,
+  "partial_record_kind_counts": {
+    "main_close": 1,
+    "main_decision_input": 2,
+    "main_decision_resolved": 1,
+    "modeled_execution_input": 1
+  },
+  "partial_trace_sha256": "eaa0d814eaa31fcdf9f487ced1b390ba275c7ef473b35f56c600c811cddaedf8",
+  "permitted_live_checks": 15,
+  "permitted_live_user_checks": 5,
+  "planned_original_paths": 4,
+  "raw_prices_targets_holdings_or_books_exported": false,
+  "record_type": "actual_inventory_scenario_workflow_termination",
+  "registration": {
+    "path": "evidence/main_risk_scenario_control_20261108_registration_v1.json",
+    "sha256": "2866448ad02b573f506d32cc770523f9b1628a34a8bb6444d8ad6c0c3f26f03a"
+  },
+  "same_failed_identity_retried": false,
+  "schema_version": 1,
+  "started_path_keys": [
+    "10y-base"
+  ],
+  "status": "technical_workflow_terminated_preserved",
+  "study_id": "ssd_main_risk_scenario_control_20261108_v1",
+  "synthetic_acceptance": {
+    "does_not_prove_actual_JSONL_delivery_complete": true,
+    "exact_validation_sha256": "7453e708a2e0e9cf5b26d0e041d6337a5d7e0634394872f94d37e43782cc19e7",
+    "failures": 0,
+    "tests": 39
+  }
+}

@@ -4,6 +4,51 @@ The November lifecycle is separately authorized through 2026-11-30 23:59
 Beijing. October's closed lifecycle, actual late cleanup, original financial
 protocol, source refusals and forward identities remain unchanged.
 
+## J1558 inventory-scenario V1: frozen technical termination, no financial result
+
+The [actual termination](evidence/main_risk_scenario_control_20261108_results_v1.json)
+preserves the new finite-action current-main-inventory scenario study.
+Method`efa2a175` binds203dependencies and the accepted58distribution rows/
+57package names. The initial10test kernel evidence remains; later34-test V2
+has two rejected future-price fixtures and four lint faults, all retained.
+The fixtures'3xprice jump breached the unchanged60%ETF quality gate. Only
+synthetic data and unfrozen style were corrected; V3passes38checks and final
+V4passes39checks. That acceptance did not exercise the actual failing JSONL
+scalar delivery and is not a full historical-execution proof.
+
+Actual checkpoint933 at2026-11-08T01:11:18.061106+00:00 precedes the sole
+registrationJ1555. Its schema3packet`2866448a` defers actual target proof.
+Program`cff0b7e` is published on the existing handoff branch before remote
+verification at01:18:24.138186. A distinct actual checkpoint934, saved
+01:19:56.513425, precedes funding fence`46436b98` and the first real output.
+No benchmark, RF, original calendar, cost, delay, initial peak or gate is waived.
+
+Sole quant40846/observer40842 starts at01:22:45.279022 and terminates1 at
+01:23:17.357151:32.07763170899125seconds, peak childRSS541089792Darwin bytes.
+Early readiness sees a running process without lock ownership; that false
+ownership result remains. Subsequently observed worker lock spans
+01:22:52.307291--01:23:12.346757.
+
+The first10ybase path reaches its first2016-10-06closing observation, then
+`json.dumps` of the next daily resolved decision raises
+`TypeError: Object of type bool is not JSON serializable`.
+Five chronological records remain: two input records, one initial resolved
+decision, one modeled execution input and one main close. The failed resolved
+decision is not silently serialized with a fallback. No complete account,
+four-path financial metrics, cash/position comparison, independent BT or
+source/main prefix completion follows. Later three formal paths never start.
+Do not turn partial capital, 39synthetic passes or publication into qualification.
+
+The frozen rule/source/criteria are unchanged and this identity is terminal:
+no repair, retuning, retry or old learner/account/prefix replay.
+The historical protection read/hash violation remains recorded;16archival
+references are distinct from15permitted live and5permitted user checks.
+The prohibited configuration is not accessed again.
+**J1558 / 145 registrations / 130 financial completions / 15 retained technical
+terminations / zero pending / 520 complete funded paths / 308 combined
+completions / zero qualifiers. Investment objective unmet.**
+All earlier financial and read-only chapters below remain intact.
+
 ## Read-only J1554 main risk: source concentration and actual capital paths
 
 The [retained risk/source-selection audit](evidence/retained_main_risk_20261108_v1.json)
